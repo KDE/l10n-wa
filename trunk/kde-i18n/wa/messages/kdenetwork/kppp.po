@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Kppp 0.4\n"
-"POT-Creation-Date: 2001-06-01 12:27+0200\n"
+"POT-Creation-Date: 2002-02-03 03:09+0100\n"
 "PO-Revision-Date: 1999-03-10 22:10+01:00\n"
 "Last-Translator: Lorint Hendschel <LorintHendschel@skynet.be>\n"
 "Language-Team: <linux-wa@chanae.alphanet.ch>\n"
@@ -17,24 +17,323 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: general.cpp:52
+#: kpppwidget.cpp:98
+msgid "Connect to: "
+msgstr "Si raloyî a: "
+
+#: kpppwidget.cpp:107
+msgid "Login ID:"
+msgstr "No po moussî dvins:"
+
+#: kpppwidget.cpp:115
+#, fuzzy
+msgid ""
+"<p>Type in the username that you got from your\n"
+"ISP. This is especially important for PAP\n"
+"and CHAP. You may omit this when you use\n"
+"terminal-based or script-based authentication.\n"
+"\n"
+"<b>Important</b>: case is important here:\n"
+"<i>myusername</i> is not the same as <i>MyUserName</i>!"
+msgstr ""
+"Tapez li no d' ûzeu ki vos avoz rçût di voste ahesseu\n"
+"Eternet. C' est pår consecant po PAP eyet\n"
+"CHAP. Vos poloz leyî çouci vûde vos vos fjhoz rconoxhe\n"
+"a pårti d' on terminå ou d' on scrip.\n"
+"\n"
+"<b>Asteme</b>: ni vos brouyîz nén dins les ptites et les grandès letes:\n"
+"<i>mino</i>, ci n' est nén li minme ki <i>MiNo</i>!"
+
+#: kpppwidget.cpp:126 providerdb.cpp:346
+msgid "Password:"
+msgstr "Secret:"
+
+#: kpppwidget.cpp:135
+#, fuzzy
+msgid ""
+"<p>Type in the password that you got from your\n"
+"ISP. This is especially important for PAP\n"
+"and CHAP. You may omit this when you use\n"
+"terminal-based or script-based authentication.\n"
+"\n"
+"<b>Important</b>: case is important here:\n"
+"<i>mypassword</i> is not the same as <i>MyPassword</i>!"
+msgstr ""
+"Tapez droci li scret (mot di passe) ki voste ahesseu Eternet\n"
+"vos a dné. C' est pår consecant po PAP eyet\n"
+"CHAP. Vos poloz leyî çouci vûde vos vos fjhoz rconoxhe\n"
+"a pårti d' on terminå ou d' on scrip.\n"
+"\n"
+"<b>Asteme</b>: ni vos brouyîz nén dins les ptites et les grandès letes:\n"
+"<i>miscret</i>, ci n' est nén li minme ki <i>MiScret</i>!"
+
+#: kpppwidget.cpp:151
+msgid "Show Log Window"
+msgstr "Mostrer li purnea avou l' istwere"
+
+#: kpppwidget.cpp:158
+#, fuzzy
+msgid ""
+"<p>This controls whether a log window is shown.\n"
+"A log window shows the communication between\n"
+"<i>kppp</i> and your modem. This will help you\n"
+"in tracking down problems.\n"
+"\n"
+"Turn it off if <i>kppp</i> routinely connects without\n"
+"problems"
+msgstr ""
+"Po dîre s' i fåt mostrer on purnea avou l' istwere\n"
+"di l' atauchaedje inte\n"
+"<i>kppp</i> eyet vosse modem. Çoula vos pout aidî\n"
+"a vey wice k' i gn a yåk ki n' va nén.\n"
+"\n"
+"Disclitchîz çouchal si <i>kppp</i> si raloye sins aroke\n"
+"d' acostumance"
+
+#: kpppwidget.cpp:178
+#, fuzzy
+msgid "&Setup"
+msgstr "Apontyî"
+
+#: kpppwidget.cpp:186
+msgid "?"
+msgstr ""
+
+#: kpppwidget.cpp:191
+#, fuzzy
+msgid "&Connect"
+msgstr "Si raloyî"
+
+#: kpppwidget.cpp:283
+#, fuzzy, c-format
+msgid ""
+"No such Account:\n"
+"%1"
+msgstr ""
+"Ci conte ci n' egzisteye nén:\n"
+"%s"
+
+#: kpppwidget.cpp:339
+msgid "kppp Configuration"
+msgstr "Apontiaedje di kppp"
+
+#: kpppwidget.cpp:357
+msgid "Accounts"
+msgstr "Contes"
+
+#: kpppwidget.cpp:358
+msgid "Device"
+msgstr "Indjin"
+
+#: general.cpp:444 kpppwidget.cpp:359
+msgid "Modem"
+msgstr "Modem"
+
+#: kpppwidget.cpp:360
+msgid "Graph"
+msgstr "Grafike"
+
+#: kpppwidget.cpp:361
+msgid "Misc."
+msgstr ""
+
+#: kpppwidget.cpp:509
+msgid "Timeout expired while waiting for the PPP interface to come up!"
+msgstr "Li tins ki dji dveu ratinde PPP est hute!"
+
+#: kpppwidget.cpp:512
+#, fuzzy
+msgid "<p>The pppd daemon died unexpectedly!</p>"
+msgstr "Li demon pppd a moru tot d' on côp!"
+
+#: kpppwidget.cpp:515
+#, c-format
+msgid "<p>Exit status: %1"
+msgstr ""
+
+#: kpppwidget.cpp:516
+msgid ""
+"</p>"
+"<p>See 'man pppd' for an explanation of the error codes or take a look at "
+"the kppp FAQ on   <a "
+"href=http://devel-home.kde.org/~kppp/index.html>"
+"http://devel-home.kde.org/~kppp/index.html</a></p>"
+msgstr ""
+
+#: kpppwidget.cpp:523
+#, fuzzy
+msgid "&Details..."
+msgstr "Savu did pus..."
+
+#: kpppwidget.cpp:553
+#, fuzzy
+msgid ""
+"Sorry. kppp's helper process just died.\n"
+"Since a further execution would be pointless, kppp will shut down right now."
+msgstr ""
+"Dji rgrete. L' aidant processus di kppp vént do mori.\n"
+"\n"
+"Come i gn åreut pont d' avance di s' renonder, kppp si va cloyu sol côp."
+
+#: kpppwidget.cpp:585
+#, fuzzy
+msgid ""
+"Cannot find the PPP daemon!\n"
+"Make sure that pppd is installed and that you have entered the correct path."
+msgstr ""
+"Dji n' trove nén li demon pppd!\n"
+"\n"
+"Estoz-ve sheure ki pppd e-st astalé\n"
+"et ki vos avoz dné li bon tchmin?\n"
+
+#: kpppwidget.cpp:594
+#, fuzzy
+msgid ""
+"kppp cannot execute:\n"
+" %1\n"
+"Please make sure that you have given kppp setuid permission and that pppd is "
+"executable."
+msgstr ""
+"kppp ni sait enonder:\n"
+" %s\n"
+"Waitîz ki kppp a li permission setuid et ki\n"
+"pppd sait esse enondé po do bon."
+
+#: kpppwidget.cpp:608
+#, fuzzy
+msgid ""
+"kppp can not find:\n"
+" %1\n"
+"Please make sure you have setup your modem device properly and/or adjust the "
+"location of the modem device on the modem tab of the setup dialog.\n"
+"Thank You"
+msgstr ""
+"kppp ni trove nén:\n"
+" %s\n"
+"Waitîz ki l' indjin di vosse modem\n"
+"e-st apontyî comufåt\n"
+"eyet/ou adjustez\n"
+"li plaece di l' indjin do modem el pårteye modem del\n"
+"divize d' apontiaedje.\n"
+"Merci"
+
+#: kpppwidget.cpp:627
+#, fuzzy
+msgid ""
+"You have selected the authentication method PAP or CHAP. This requires that "
+"you supply a username and a password!"
+msgstr ""
+"Vos avoz tchwezi di vos fé ricnoxhe avou li metôde\n"
+"CHAP. Mins po ça, vos dvoz dner\n"
+"on no d' ûzeu eyet on scret!"
+
+#: kpppwidget.cpp:637
+#, fuzzy
+msgid ""
+"Cannot create PAP/CHAP authentication\n"
+"file \"%1\""
+msgstr ""
+"Dji n' parvén nén a fé li fitchî po vos fé ricnoxhe\n"
+"avou li metôde CHAP:\n"
+"\"%s\""
+
+#: kpppwidget.cpp:646
+msgid "You must specify a telephone number!"
+msgstr "Vos dvoz dner on limerô di telefone!"
+
+#: connect.cpp:200 kpppwidget.cpp:653
+#, fuzzy, c-format
+msgid "Connecting to: %1"
+msgstr "Dji m' raloye a: "
+
+#: kpppwidget.cpp:676
+#, fuzzy
+msgid "Disconnecting ..."
+msgstr "Disraloyî"
+
+#: kpppwidget.cpp:677
+#, fuzzy
+msgid "Executing command before disconnection."
+msgstr ""
+"Programe a-z enonder divant\n"
+"di m' disraloyî:"
+
+#: kpppwidget.cpp:731
+msgid "Exiting kPPP will close your PPP Session."
+msgstr "Si vos moussîz foû di kppp, vosse session PPP serè cloyuwe eto."
+
+#: kpppwidget.cpp:732
+msgid "Quit kPPP?"
+msgstr "Moussî foû di kppp?"
+
+#: kpppwidget.cpp:775
+#, fuzzy
+msgid "Can not load the accounting ruleset \"%1\"!"
+msgstr ""
+"Dji n' sai tcherdjî les rûles di\n"
+"contaedje \""
+
+#: kpppwidget.cpp:864
+#, fuzzy
+msgid "Recent Changes in KPPP"
+msgstr "Dierins candjmints di kppp"
+
+#: kpppwidget.cpp:877
+msgid ""
+"From version 1.4.8 on, kppp has a new feature\n"
+"called \"Quickhelp\". It's similar to a tooltip,\n"
+"but you can activate it whenever you want.\n"
+"\n"
+"To activate it, simply click on a control like\n"
+"a button or a label with the right mouse button.\n"
+"If the item supports Quickhelp, a popup menu\n"
+"will appear leading to Quickhelp.\n"
+"\n"
+"To test it, right-click somewhere in this text."
+msgstr ""
+"A pårti del modeye 1.4.8, kppp a ene novele usteye\n"
+"lomeye \"Côp di Spale al Vole\". Ele rishonne ås racsegnetes,\n"
+"mins vos l' poloz enonder cwand vos voloz.\n"
+"\n"
+"Po l' enonder, vos n' avoz k' a clitchî so on\n"
+"boton, ene etikete evnd. avou li droet boton.\n"
+"Si li cayet ki vos avoz clitchî sait dner on Côp di Spale al Vole,\n"
+"vos vieroz spiter on menu ki vos aidrè.\n"
+"\n"
+"Po sayî, clitchîz avou li droet boton ene sawice è ci texe ci."
+
+#: kpppwidget.cpp:889
+msgid "Don't show this hint again"
+msgstr "Ni pus mostrer cisse racsegne"
+
+#: kpppwidget.cpp:905
+msgid ""
+"This is an example for <b>QuickHelp</b>.\n"
+"This window will stay open until you\n"
+"click a mouse button or a hit a key.\n"
+msgstr ""
+"Çouci e-st èn egzimpe di <b>Côp di Spale al Vole</b>.\n"
+"Li purnea dimorrè drovu djusk' a tant ki vos\n"
+"clitchîxhe avou li soris ou ki vos tapexhe so ene tape.\n"
+
+#: general.cpp:49
 msgid "kppp Setup"
 msgstr "Apontyî kppp"
 
-#: general.cpp:57
+#: general.cpp:54
 #, fuzzy
 msgid "pppd Version:"
 msgstr "Ratinde pppd:"
 
-#: general.cpp:69
+#: general.cpp:66
 msgid "pppd Timeout:"
 msgstr "Ratinde pppd:"
 
-#: general.cpp:71 general.cpp:386 general.cpp:468
+#: general.cpp:68 general.cpp:383 general.cpp:465
 msgid "s"
 msgstr ""
 
-#: general.cpp:75
+#: general.cpp:72
 msgid ""
 "<i>kppp</i> will wait this number of seconds\n"
 "to see if a PPP connection is established.\n"
@@ -46,11 +345,11 @@ msgstr ""
 "Si vos n' estoz nén raloyî passé ci tins la,\n"
 "<i>kppp</i> si djocrè et tuwer pppd."
 
-#: general.cpp:92
+#: general.cpp:89
 msgid "Dock into Panel on Connect"
 msgstr "Herer è scriftôr on côp raloyî"
 
-#: general.cpp:94
+#: general.cpp:91
 #, fuzzy
 msgid ""
 "<p>After a connection is established, the\n"
@@ -69,11 +368,11 @@ msgstr ""
 "si rmetrè al plaece et al grandeu k' elle\n"
 "esteut dvant."
 
-#: general.cpp:107
+#: general.cpp:104
 msgid "Automatic Redial on Disconnect"
 msgstr "Rifé li limerô si nos estans disraloyîs"
 
-#: general.cpp:113
+#: general.cpp:110
 #, fuzzy
 msgid ""
 "<p>When a connection is established and\n"
@@ -88,11 +387,11 @@ msgstr ""
 "\n"
 "Waitîz <link #redial>vêci</link> po-z è savu d' pus."
 
-#: general.cpp:119
+#: general.cpp:116
 msgid "Show Clock on Caption"
 msgstr "Mostrer l' ôrlodje el ledjinde"
 
-#: general.cpp:125
+#: general.cpp:122
 msgid ""
 "When this option is checked, the window\n"
 "title shows the time since a connection\n"
@@ -104,11 +403,11 @@ msgstr ""
 "ki vos estoz raloyî. Ahessåve, edon?\n"
 "Vos duvrîz mete ciste usteye èn alaedje!"
 
-#: general.cpp:130
+#: general.cpp:127
 msgid "Disconnect on X-server shutdown"
 msgstr "Disraloyî cwand li sierveu X est cloyu"
 
-#: general.cpp:136
+#: general.cpp:133
 #, fuzzy
 msgid ""
 "<p>Checking this option will close any\n"
@@ -125,11 +424,11 @@ msgstr ""
 "\n"
 "Waitîz <link #disxserver>chal</link> po-z è savu did pus."
 
-#: general.cpp:143
+#: general.cpp:140
 msgid "Quit on Disconnect"
 msgstr "Cwiter å moumint di s' disraloyî"
 
-#: general.cpp:149
+#: general.cpp:146
 msgid ""
 "When this option is turned on, <i>kppp</i>\n"
 "will be closed when you disconnect"
@@ -137,11 +436,11 @@ msgstr ""
 "Cwand çouci est tchwezi, <i>kppp</i>\n"
 "serè cloyu cwand vos vos disraloyîz."
 
-#: general.cpp:152
+#: general.cpp:149
 msgid "Minimize Window on Connect"
 msgstr "Raptiti li purnea do côp ki vos estoz raloyî"
 
-#: general.cpp:158
+#: general.cpp:155
 msgid ""
 "Iconifies <i>kppp</i>'s window when a\n"
 "connection is established"
@@ -149,11 +448,11 @@ msgstr ""
 "Po mete li purnea di <i>kppp</i> a imådjete\n"
 "do côp ki vos estoz raloyî."
 
-#: general.cpp:205
+#: general.cpp:202
 msgid "About kppp"
 msgstr "Å dfait di kppp"
 
-#: general.cpp:213
+#: general.cpp:210
 #, fuzzy
 msgid ""
 "\n"
@@ -189,15 +488,15 @@ msgstr ""
 "Ci programe est spårdu dzo li GNU GPL\n"
 "(GNU General Public License)."
 
-#: general.cpp:235
+#: general.cpp:232
 msgid "Serial device"
 msgstr "Indjin di sereye"
 
-#: general.cpp:241
+#: general.cpp:238
 msgid "Modem Device:"
 msgstr "Indjin do modem:"
 
-#: general.cpp:252
+#: general.cpp:249
 msgid ""
 "This specifies the serial port your modem is attached \n"
 "to. On Linux/x86, typically this is either /dev/ttyS0 \n"
@@ -215,15 +514,15 @@ msgstr ""
 "AT (et d' abôrd tote les cåtes dizo Linux el fijhèt), vos duvrîz\n"
 "tchûzi èn indjin del sereye /dev/ttyIx."
 
-#: general.cpp:264
+#: general.cpp:261
 msgid "Flow Control:"
 msgstr "Maistriaedje do corant:"
 
-#: general.cpp:270
+#: general.cpp:267
 msgid "None"
 msgstr "Nouk"
 
-#: general.cpp:275
+#: general.cpp:272
 #, fuzzy
 msgid ""
 "<p>Specifies how the serial port and modem\n"
@@ -238,11 +537,11 @@ msgstr ""
 "\n"
 "<b>Tchwezi por vos</b>: CRTSCTS"
 
-#: general.cpp:284
+#: general.cpp:281
 msgid "Line Termination:"
 msgstr "Côper li lene"
 
-#: general.cpp:293
+#: general.cpp:290
 #, fuzzy
 msgid ""
 "<p>Specifies how AT commands are send to your\n"
@@ -261,11 +560,11 @@ msgstr ""
 "\n"
 "<b>Tchwezi por vos</b>: CR/LF"
 
-#: general.cpp:304
+#: general.cpp:301
 msgid "Connection Speed:"
 msgstr "Roedeu do Raloyaedje:"
 
-#: general.cpp:343
+#: general.cpp:340
 msgid ""
 "Specifies the speed your modem and the serial\n"
 "port talk to each other. You should begin with\n"
@@ -281,11 +580,11 @@ msgstr ""
 "pus hôt ki 115200 bits/seg. (a pus ki vos savoz\n"
 "ki vosse pôrt sereye divize bén a des pus hôtès roedeu)."
 
-#: general.cpp:360
+#: general.cpp:357
 msgid "Use Lock File"
 msgstr "Eployî on fitchî di seraedje"
 
-#: general.cpp:371
+#: general.cpp:368
 #, fuzzy
 msgid ""
 "<p>To prevent other programs from accessing the\n"
@@ -308,11 +607,11 @@ msgstr ""
 "\n"
 "<b>Tchwezi por vos</b>: Eclitchî"
 
-#: general.cpp:384
+#: general.cpp:381
 msgid "Modem Timeout:"
 msgstr "Ratinde li modem:"
 
-#: general.cpp:392
+#: general.cpp:389
 msgid ""
 "This specifies how long <i>kppp</i> waits for a\n"
 "<i>CONNECT</i> response from your modem. The\n"
@@ -322,15 +621,11 @@ msgstr ""
 "ene response <i>CONNECT</i> di vosse modem. Nos vos\n"
 "consians do prinde 30 segondes."
 
-#: general.cpp:447 main.cpp:692
-msgid "Modem"
-msgstr "Modem"
-
-#: general.cpp:452
+#: general.cpp:449
 msgid "Wait for Dial Tone Before Dialing"
 msgstr ""
 
-#: general.cpp:457
+#: general.cpp:454
 msgid ""
 "Normally the modem waits for a dial tone\n"
 "from your phone line indicating that it can\n"
@@ -341,11 +636,11 @@ msgid ""
 "<b>Default:</b>: on"
 msgstr ""
 
-#: general.cpp:466
+#: general.cpp:463
 msgid "Busy Wait:"
 msgstr "Ratinde (Ocupé):"
 
-#: general.cpp:473
+#: general.cpp:470
 msgid ""
 "Specifies the number of seconds to wait before\n"
 "redial if all dialed numbers are busy. This is\n"
@@ -363,12 +658,12 @@ msgstr ""
 "Li tins tchwezi por vos est di 0 segondes. Ni candjîz nén\n"
 "çouchal, såf si vos estoz oblidjî."
 
-#: general.cpp:487
+#: general.cpp:484
 #, fuzzy
 msgid "Modem Volume:"
 msgstr "Son do modem"
 
-#: general.cpp:497
+#: general.cpp:494
 #, fuzzy
 msgid ""
 "Most modems have a speaker which makes\n"
@@ -387,11 +682,11 @@ msgstr ""
 "Si cisse tchûze voci ni va nén po vosse modem,\n"
 "vos dvoz candjî li cmande ki maistreye li son do modem."
 
-#: general.cpp:513
+#: general.cpp:510
 msgid "Modem Asserts CD Line."
 msgstr "Li modem acertineye ene roye CD."
 
-#: general.cpp:521
+#: general.cpp:518
 msgid ""
 "This controls how <i>kppp</i> detects that the modem\n"
 "is not responding. Unless you are having\n"
@@ -405,11 +700,11 @@ msgstr ""
 "\n"
 "<b>Tchwezi por vos</b>: disclitchî"
 
-#: general.cpp:534
+#: general.cpp:531
 msgid "Modem Commands"
 msgstr "Comandes do modem"
 
-#: general.cpp:536
+#: general.cpp:533
 msgid ""
 "Allows you to change the AT command for\n"
 "your modem."
@@ -417,17 +712,18 @@ msgstr ""
 "Por vos candjî les cmandes AT di\n"
 "vosse modem."
 
-#: general.cpp:539
+#: general.cpp:536
 msgid "Query Modem"
 msgstr "Interodjî li modem"
 
-#: general.cpp:541
+#: general.cpp:538
+#, fuzzy
 msgid ""
 "Most modems support the ATI command set to\n"
 "find out vendor and revision of your modem.\n"
 "\n"
 "Press this button to query your modem for\n"
-"this information.  It can be useful to help\n"
+"this information. It can be useful to help\n"
 "you setup the modem"
 msgstr ""
 "D' abôrd tos les modems compurdèt les cmandes ATI, ki\n"
@@ -437,11 +733,11 @@ msgstr ""
 "dmander ces informåcions la. Ele polèt esse ahessåves po vos aidî\n"
 "a apontyî vosse modem"
 
-#: general.cpp:548
+#: general.cpp:545
 msgid "Terminal"
 msgstr "Terminå"
 
-#: general.cpp:550
+#: general.cpp:547
 msgid ""
 "Opens the built-in terminal program. You\n"
 "can use this if you want to play around\n"
@@ -451,43 +747,43 @@ msgstr ""
 "so vos voloz djower ene miete avou\n"
 "les cmandes AT di vosse modem."
 
-#: general.cpp:616
+#: general.cpp:612
 msgid "Throughput graph"
 msgstr "Grafike di l' ovraedje"
 
-#: general.cpp:625
+#: general.cpp:621
 msgid "Background color"
 msgstr "Coleur di drî"
 
-#: general.cpp:632
+#: general.cpp:628
 msgid "Text color"
 msgstr "Coleur do scrît"
 
-#: general.cpp:639
+#: general.cpp:635
 msgid "Input bytes color"
 msgstr "Coleur po les bytes aberwetés"
 
-#: general.cpp:646
+#: general.cpp:642
 msgid "Output bytes color"
 msgstr "Coleur po les bytes eberwetés"
 
-#: accounts.cpp:51
+#: accounts.cpp:50
 msgid "Account Setup"
 msgstr "Apontiaedje do conte"
 
-#: accounts.cpp:70
+#: accounts.cpp:69
 msgid "Edit..."
 msgstr "Candjî..."
 
-#: accounts.cpp:72
+#: accounts.cpp:71
 msgid "Allows you to modify the selected account"
 msgstr "Po candjî li conte tchwezi"
 
-#: accounts.cpp:80
+#: accounts.cpp:79
 msgid "New..."
 msgstr "Novea..."
 
-#: accounts.cpp:83
+#: accounts.cpp:82
 msgid ""
 "Create a new dialup connection\n"
 "to the internet"
@@ -495,7 +791,7 @@ msgstr ""
 "Fé on novea loyén a l' Eternet\n"
 "på telefone"
 
-#: accounts.cpp:90
+#: accounts.cpp:89
 msgid ""
 "Makes a copy of the selected account. All\n"
 "settings of the selected account are copied\n"
@@ -507,7 +803,7 @@ msgstr ""
 "dins li novea conte. Après, vos l' poloz candjîs\n"
 "a vosse môde."
 
-#: accounts.cpp:99
+#: accounts.cpp:98
 #, fuzzy
 msgid ""
 "<p>Deletes the selected account\n"
@@ -518,11 +814,11 @@ msgstr ""
 "\n"
 "<red><b>Loukîz a vosse sogne!"
 
-#: accounts.cpp:109
+#: accounts.cpp:108
 msgid "Phone Costs:"
 msgstr "Costindjes di telefone:"
 
-#: accounts.cpp:119
+#: accounts.cpp:118
 #, fuzzy
 msgid ""
 "<p>This shows the accumulated phone costs\n"
@@ -538,11 +834,11 @@ msgstr ""
 "conte, çouci n' est <b>NÉN</b> li some\n"
 "des costindjes di tos vos contes!"
 
-#: accounts.cpp:128 conwindow.cpp:54
+#: accounts.cpp:127 conwindow.cpp:52
 msgid "Volume:"
 msgstr "Volume:"
 
-#: accounts.cpp:137
+#: accounts.cpp:136
 #, fuzzy
 msgid ""
 "<p>This shows the number of bytes transferred\n"
@@ -559,46 +855,44 @@ msgstr ""
 "\n"
 "<link #volaccounting>Savu did pus so li volume</link>"
 
-#: accounts.cpp:152
+#: accounts.cpp:151
 msgid "Reset..."
 msgstr ""
 
-#: accounts.cpp:158
+#: accounts.cpp:157
 msgid "View Logs"
 msgstr "Mostrer l' istwere"
 
-#: accounts.cpp:259 accounts.cpp:303
+#: accounts.cpp:253 accounts.cpp:298
 msgid "Maximum number of accounts reached."
 msgstr "Vos n' sårîz pus radjouter di contes."
 
-#: accounts.cpp:265
+#: accounts.cpp:259
+msgid ""
+"Do you want to use the wizard to create the new account or the standard, "
+"dialog-based setup?\n"
+"The wizard is easier and sufficient in most cases. If you need very special "
+"settings, you might want to try the standard, dialog-based setup."
+msgstr ""
+
+#: accounts.cpp:264
 msgid "Create a new account..."
 msgstr ""
 
-#: accounts.cpp:266
-msgid ""
-"Do you want to use the wizard to create the new account or the\n"
-"standard, dialog-based setup?\n"
-"\n"
-"The wizard is easier and sufficient in most cases. If you need\n"
-"very special settings, you might want to try the standard,\n"
-"dialog-based setup.\n"
-msgstr ""
-
-#: accounts.cpp:270
+#: accounts.cpp:265
 msgid "Wizard"
 msgstr ""
 
-#: accounts.cpp:270
+#: accounts.cpp:265
 #, fuzzy
 msgid "Dialog setup"
 msgstr "Apontiaedje do raloyaedje"
 
-#: accounts.cpp:308
+#: accounts.cpp:303
 msgid "No account selected."
 msgstr "Vos n' avoz pont tchwezi di conte."
 
-#: accounts.cpp:322
+#: accounts.cpp:317
 #, fuzzy
 msgid ""
 "Are you sure you want to delete\n"
@@ -607,50 +901,50 @@ msgstr ""
 "Estoz-ve sheur(e) ki vos voloz disfacer\n"
 "li conte \"%s\"?"
 
-#: accounts.cpp:325
+#: accounts.cpp:320
 msgid "Confirm"
 msgstr "Acertinez"
 
-#: accounts.cpp:345
+#: accounts.cpp:340
 msgid "New Account"
 msgstr "Novea Conte"
 
-#: accounts.cpp:348
+#: accounts.cpp:343
 msgid "Edit Account: "
 msgstr "Candjî li conte: "
 
-#: accounts.cpp:366
+#: accounts.cpp:361
 msgid "Dial"
 msgstr "Fé li limerô"
 
-#: accounts.cpp:367
+#: accounts.cpp:362
 msgid "IP"
 msgstr "Ahesseu Eternet"
 
-#: accounts.cpp:368
+#: accounts.cpp:363
 msgid "Gateway"
 msgstr "xxx Gateway "
 
-#: accounts.cpp:369
+#: accounts.cpp:364
 msgid "DNS"
 msgstr "DNS"
 
-#: accounts.cpp:370
+#: accounts.cpp:365
 msgid "Login Script"
 msgstr "Scrip po moussî"
 
-#: accounts.cpp:371
+#: accounts.cpp:366
 #, fuzzy
 msgid "Execute"
 msgstr ""
 "Programe a-z enonder\n"
 "å moumint ki dji so raloyî:"
 
-#: accounts.cpp:372
+#: accounts.cpp:367
 msgid "Accounting"
 msgstr "Contes"
 
-#: accounts.cpp:391
+#: accounts.cpp:386
 msgid ""
 "You must enter an unique\n"
 "account name"
@@ -658,348 +952,326 @@ msgstr ""
 "Vos dvoz taper on no di\n"
 "conte unike"
 
-#: accounts.cpp:396
+#: accounts.cpp:391
 msgid "Login script has unbalanced loop Start/End"
 msgstr "Li scrip po moussî n' est nén d' assene avou Start/End"
 
-#: accounts.cpp:410
+#: accounts.cpp:405 conwindow.cpp:98
 #, fuzzy
 msgid "Byte"
 msgstr "Bytes aberwetés"
 
-#: accounts.cpp:410
+#: accounts.cpp:405 conwindow.cpp:98
 msgid "KB"
 msgstr ""
 
-#: accounts.cpp:411
+#: accounts.cpp:406 conwindow.cpp:99
 msgid "MB"
 msgstr ""
 
-#: accounts.cpp:411
+#: accounts.cpp:406 conwindow.cpp:99
 msgid "GB"
 msgstr ""
 
-#: accounts.cpp:436
+#: accounts.cpp:431
 #, fuzzy
-msgid "Reset accounting"
+msgid "Reset Accounting"
 msgstr "Nou conteu"
 
-#: accounts.cpp:439
+#: accounts.cpp:434
 msgid "What to reset..."
 msgstr ""
 
-#: accounts.cpp:442
+#: accounts.cpp:437
 msgid "Reset the accumulated phone costs"
 msgstr ""
 
-#: accounts.cpp:445
+#: accounts.cpp:440
 msgid ""
 "Check this to set the phone costs\n"
 "to zero. Typically you'll want to\n"
 "do this once a month."
 msgstr ""
 
-#: accounts.cpp:449
+#: accounts.cpp:444
 #, fuzzy
 msgid "Reset volume accounting"
 msgstr "Contaedje del cwantité:"
 
-#: accounts.cpp:452
+#: accounts.cpp:447
 msgid ""
 "Check this to set the volume accounting\n"
 "to zero. Typically you'll want to do this\n"
 "once a month."
 msgstr ""
 
-#: connect.cpp:101
+#: connect.cpp:102
 msgid "Connecting to: "
 msgstr "Dji m' raloye a: "
 
-#: connect.cpp:110 connect.cpp:228 miniterm.cpp:151 modeminfo.cpp:58
-#: modeminfo.cpp:135
+#: connect.cpp:111 connect.cpp:231 miniterm.cpp:126 modeminfo.cpp:57
+#: modeminfo.cpp:134
 msgid "Sorry, can't create modem lock file."
 msgstr "Dji rgrete, dji n' sai fé on fitchî po rasserer li modem al clé"
 
-#: connect.cpp:115 connect.cpp:170 modeminfo.cpp:63
+#: connect.cpp:116 connect.cpp:172 modeminfo.cpp:62
 msgid "Looking for Modem ..."
 msgstr "Dji cache après li modem ..."
 
-#: connect.cpp:124 debug.cpp:80 main.cpp:1002
+#: connect.cpp:125
 msgid "Log"
 msgstr "Istwere"
 
-#: connect.cpp:197 main.cpp:990
-#, fuzzy, c-format
-msgid "Connecting to: %1"
-msgstr "Dji m' raloye a: "
-
-#: connect.cpp:204 connect.cpp:205
+#: connect.cpp:207 connect.cpp:208
 #, fuzzy
 msgid "Running pre-startup command..."
 msgstr "Dj' enonde li cmande d' enondeye ..."
 
-#: connect.cpp:222 miniterm.cpp:146 modeminfo.cpp:129
+#: connect.cpp:225 miniterm.cpp:121 modeminfo.cpp:128
 msgid "Sorry, modem device is locked."
 msgstr "Dji rgrete, li modem est rasseré"
 
-#: connect.cpp:272 connect.cpp:273
+#: connect.cpp:278 connect.cpp:279
 msgid "Initializing Modem..."
 msgstr "Dj' enonde li modem ..."
 
-#: connect.cpp:296 connect.cpp:297
+#: connect.cpp:306
+#, fuzzy
+msgid "Setting "
+msgstr "Dj' evoye "
+
+#: connect.cpp:329 connect.cpp:330
 msgid "Setting speaker volume..."
 msgstr "Dj' apresteye li volume do son ..."
 
-#: connect.cpp:312
+#: connect.cpp:345
 msgid "Turning off dial tone waiting..."
 msgstr ""
 
-#: connect.cpp:333
+#: connect.cpp:366
 #, fuzzy, c-format
 msgid "Dialing %1"
 msgstr "Dji fwai li limerô"
 
-#: connect.cpp:364
+#: connect.cpp:397
 msgid "Line Busy. Hanging up ..."
 msgstr "Ocupé. Dji racrotche ..."
 
-#: connect.cpp:369
+#: connect.cpp:402
 #, fuzzy
 msgid "Line Busy. Waiting: %1 seconds"
 msgstr "Ocupé. Dji rawåde:"
 
-#: connect.cpp:387
+#: connect.cpp:421
 msgid "No Dialtone"
 msgstr "Ni respond nén"
 
-#: connect.cpp:396
+#: connect.cpp:430
 msgid "No Carrier"
 msgstr "Nou carrier"
 
-#: connect.cpp:434
+#: connect.cpp:468
 #, fuzzy, c-format
 msgid "Scanning %1"
 msgstr "Dji rawaite "
 
-#: connect.cpp:444
+#: connect.cpp:478
 #, fuzzy, c-format
 msgid "Saving %1"
 msgstr "Dji schape "
 
-#: connect.cpp:462
+#: connect.cpp:496
 #, fuzzy, c-format
 msgid "Sending %1"
 msgstr "Dj' evoye "
 
-#: connect.cpp:487
+#: connect.cpp:521
 #, fuzzy, c-format
 msgid "Expecting %1"
 msgstr "Dji rawåde "
 
-#: connect.cpp:498
+#: connect.cpp:532
 #, fuzzy
 msgid "Pause %1 seconds"
 msgstr " segondes"
 
-#: connect.cpp:515
+#: connect.cpp:549
 #, fuzzy
 msgid "Timeout %1 seconds"
 msgstr " segondes"
 
-#: connect.cpp:527 connect.cpp:528
+#: connect.cpp:561 connect.cpp:562
 msgid "Hangup"
 msgstr "Racrotchî"
 
-#: connect.cpp:541 connect.cpp:542
+#: connect.cpp:575 connect.cpp:576
 msgid "Answer"
 msgstr "Responde"
 
-#: connect.cpp:550
+#: connect.cpp:584
 #, fuzzy, c-format
 msgid "ID %1"
 msgstr "ID "
 
-#: connect.cpp:586
+#: connect.cpp:620
 #, fuzzy, c-format
 msgid "Password %1"
 msgstr "Mot di passe "
 
-#: connect.cpp:623
+#: connect.cpp:657
 #, fuzzy, c-format
 msgid "Prompting %1"
 msgstr "Arinnaedje "
 
-#: connect.cpp:660
+#: connect.cpp:694
 #, fuzzy, c-format
 msgid "PW Prompt %1"
 msgstr "Arinnaedje pol mot di passe "
 
-#: connect.cpp:685
+#: connect.cpp:719
 #, fuzzy, c-format
 msgid "Loop Start %1"
 msgstr "Dj' enonde li blouke"
 
-#: connect.cpp:688
+#: connect.cpp:722
 msgid "ERROR: Nested too deep, ignored."
 msgstr "Berwete: trop di bloukes, dji passe hute"
 
-#: connect.cpp:692
+#: connect.cpp:726
 msgid "Loops nested too deeply!"
 msgstr "Trop di bloukes yene divins l' ôte!"
 
-#: connect.cpp:707
+#: connect.cpp:741
 #, fuzzy, c-format
 msgid "Loop End %1"
 msgstr "Dji toûne el blouke: "
 
-#: connect.cpp:709
+#: connect.cpp:743
 #, fuzzy, c-format
 msgid "LoopEnd without matching Start! Line: %1"
 msgstr "LoopEnd sins roye Start po-z aler avou: "
 
-#: connect.cpp:792
+#: connect.cpp:826
 msgid "Starting pppd ..."
 msgstr "Dj' enonde pppd ..."
 
-#: connect.cpp:874
+#: connect.cpp:908
 #, fuzzy, c-format
 msgid "Scan Var: %1"
 msgstr "Scan Var: "
 
-#: connect.cpp:884
+#: connect.cpp:918
 #, fuzzy, c-format
 msgid "Found: %1"
 msgstr "Trové: "
 
-#: connect.cpp:895
+#: connect.cpp:929
 #, fuzzy, c-format
 msgid "Looping: %1"
 msgstr "Dji toûne el blouke: "
 
-#: connect.cpp:928 modeminfo.cpp:226
+#: connect.cpp:962 modeminfo.cpp:225
 msgid "One Moment Please ..."
 msgstr "Atårdjîz on pô s' i vos plait ..."
 
-#: connect.cpp:972
+#: connect.cpp:1006
 msgid "Script timed out!"
 msgstr "Trop tård po li scrip!"
 
-#: connect.cpp:991
+#: connect.cpp:1021
 #, fuzzy, c-format
 msgid "Scanning: %1"
 msgstr "Dji rawaite: "
 
-#: connect.cpp:1000
+#: connect.cpp:1030
 #, fuzzy, c-format
 msgid "Expecting: %1"
 msgstr "Dji rawåde: "
 
-#: connect.cpp:1035
+#: connect.cpp:1065
 msgid "Logging on to Network ..."
 msgstr "Dji mousse el Rantoele ..."
 
-#: connect.cpp:1066
+#: connect.cpp:1096
 msgid "Running Startup Command ..."
 msgstr "Dj' enonde li cmande d' enondeye ..."
 
-#: connect.cpp:1071 connect.cpp:1078
+#: connect.cpp:1101 connect.cpp:1108
 msgid "Done"
 msgstr "Fwait"
 
-#: connect.cpp:1189
+#: connect.cpp:1219
+#, fuzzy
 msgid ""
-"pppd command + command-line arguments exeed\n"
-"2024 characters in length. What are you doing?"
+"pppd command + command-line arguments exceed 2024 characters in length. What "
+"are you doing?"
 msgstr ""
 "li cmande di pppd + les årgumints del roye di cmande passèt\n"
 "2024 caracteres. Cwè-ce ki vos fjhoz, don?"
 
-#: conwindow.cpp:48
+#: conwindow.cpp:46
 msgid "Connected at:"
 msgstr "Raloyî a:"
 
-#: conwindow.cpp:51
+#: conwindow.cpp:49
 msgid "Time connected:"
 msgstr "Raloyî dispû:"
 
-#: conwindow.cpp:58
+#: conwindow.cpp:56
 msgid "Session Bill:"
 msgstr "Costindje po cisse session"
 
-#: conwindow.cpp:60
+#: conwindow.cpp:58
 msgid "Total Bill:"
 msgstr "Costindje totåle:"
 
-#: conwindow.cpp:66 docking.cpp:61
+#: conwindow.cpp:64 docking.cpp:56
 msgid "Disconnect"
 msgstr "Disraloyî"
 
-#: conwindow.cpp:70 docking.cpp:59
+#: conwindow.cpp:68 docking.cpp:54
 msgid "Details"
 msgstr "Vey totafwait"
 
-#: conwindow.cpp:227
+#: conwindow.cpp:263
 msgid ""
 "Connection: %1\n"
 "Connected at: %2\n"
 "Time connected: %3"
 msgstr ""
 
-#: conwindow.cpp:234
+#: conwindow.cpp:270
 msgid ""
 "\n"
 "Session Bill: %1\n"
 "Total Bill: %2"
 msgstr ""
 
-#: conwindow.cpp:240
-#, fuzzy
-msgid "%1 Byte"
-msgstr "Bytes aberwetés"
-
-#: conwindow.cpp:242
-#, fuzzy
-msgid "%1 KB"
-msgstr "Bytes aberwetés"
-
-#: conwindow.cpp:244
-#, fuzzy
-msgid "%1 MB"
-msgstr "Bytes aberwetés"
-
-#: conwindow.cpp:246
-#, fuzzy
-msgid "%1 GB"
-msgstr "Bytes aberwetés"
-
-#: conwindow.cpp:249
-#, fuzzy, c-format
-msgid ""
-"\n"
-"Volume: %1"
-msgstr "Volume:"
-
-#: debug.cpp:48
+#: debug.cpp:51
 msgid "Login Script Debug Window"
 msgstr "Finiesse po shûre li disrômint do scrip"
 
-#: edit.cpp:46
+#: edit.cpp:45
 msgid "Dial Setup"
 msgstr "Apontiaedje do raloyaedje"
 
-#: edit.cpp:52
+#: edit.cpp:51
 msgid "Connection Name:"
 msgstr "No do raloyaedje:"
 
-#: edit.cpp:58
+#: edit.cpp:57
 msgid "Type in a unique name for this connection"
 msgstr "Tapez on no po ci raloyaedje ci"
 
-#: edit.cpp:64
+#: edit.cpp:63
 msgid "Phone Number:"
 msgstr "Limerô di telefone"
 
-#: edit.cpp:101
+#: edit.cpp:74
+msgid "&Add"
+msgstr ""
+
+#: edit.cpp:100
 #, fuzzy
 msgid ""
 "<p>Specifies the phone numbers to dial. You\n"
@@ -1016,37 +1288,37 @@ msgstr ""
 "inte tchaeke limerô. Cwand on limerô e-st ocupé on fwait,\n"
 "berwete, <i>kppp</i>saye li shûvant."
 
-#: edit.cpp:112
+#: edit.cpp:111
 msgid "Authentication:"
 msgstr "Ricnoxhance:"
 
-#: edit.cpp:116
+#: edit.cpp:115
 msgid "Script-based"
 msgstr "Avou on scrip"
 
-#: edit.cpp:117
+#: edit.cpp:116
 msgid "PAP"
 msgstr "PAP"
 
-#: edit.cpp:118
+#: edit.cpp:117
 msgid "Terminal-based"
 msgstr "So terminå"
 
-#: edit.cpp:119
+#: edit.cpp:118
 msgid "CHAP"
 msgstr "CHAP"
 
-#: edit.cpp:120
+#: edit.cpp:119
 #, fuzzy
 msgid "PAP/CHAP"
 msgstr "CHAP"
 
-#: edit.cpp:122
+#: edit.cpp:121
 #, fuzzy
 msgid ""
 "<p>Specifies the method used to identify yourself to\n"
 "the PPP server. Most universities still use\n"
-"<b>Terminal</b>- or <b>Script</b>-based authtentication,\n"
+"<b>Terminal</b>- or <b>Script</b>-based authentication,\n"
 "while most ISP use <b>PAP</b> and/or <b>CHAP</b>. If\n"
 "unsure, contact your ISP.\n"
 "\n"
@@ -1063,16 +1335,16 @@ msgstr ""
 "Si vos poloz bén tchwezi inte PAP eyet CHAP,\n"
 "purdoz CHAP, k' est bråmint pus sheur."
 
-#: edit.cpp:135
+#: edit.cpp:134
 msgid "Store password"
 msgstr "Ritni li mot di passe"
 
-#: edit.cpp:139
+#: edit.cpp:138
 #, fuzzy
 msgid ""
 "<p>When this is turned on, your ISP password\n"
 "will be saved in <i>kppp</i>'s config file, so\n"
-"you do not need to type it in everytime.\n"
+"you do not need to type it in every time.\n"
 "\n"
 "<b><font color=\"red\">Warning:</font> your password will be stored as\n"
 "plain text in the config file, which is\n"
@@ -1088,35 +1360,35 @@ msgstr ""
 "tot seu a savu lere. Tirez vosse plan po ki nolu d' ôte\n"
 "ni våye herer si narene è ci fitchî la!"
 
-#: edit.cpp:148
+#: edit.cpp:147
 #, fuzzy
-msgid "Customize pppd arguments..."
+msgid "Customize pppd Arguments..."
 msgstr "Candjîz les årgumints di pppd a vosse môde"
 
-#: edit.cpp:273
+#: edit.cpp:272
 #, fuzzy
 msgid "Execute programs"
 msgstr ""
 "Programe a-z enonder\n"
 "å moumint ki dji so raloyî:"
 
-#: edit.cpp:278
+#: edit.cpp:277
 msgid ""
 "Here you can select commands to run at certain stages of the\n"
 "connection. The commands are run with your real user id, so\n"
-"you cannot run any commands here requirering root permissions\n"
-"(except if you are root of course).\n"
+"you cannot run any commands here requiring root permissions\n"
+"(unless, of course, you are root).\n"
 "\n"
 "Make sure to supply the whole path to the program otherwise\n"
 "kppp might be unable to find it!"
 msgstr ""
 
-#: edit.cpp:293
+#: edit.cpp:292
 #, fuzzy
 msgid "Before connect:"
 msgstr "Raloyî dispû:"
 
-#: edit.cpp:299
+#: edit.cpp:298
 #, fuzzy
 msgid ""
 "Allows you to run a program <b>before</b> a connection\n"
@@ -1133,19 +1405,20 @@ msgstr ""
 "\n"
 "Foirt ahessåve po-z aler cweri ses emiles ou les noveles."
 
-#: edit.cpp:308
+#: edit.cpp:307
 #, fuzzy
 msgid "Upon connect:"
 msgstr "Cwiter å moumint di s' disraloyî"
 
-#: edit.cpp:314
+#: edit.cpp:313
+#, fuzzy
 msgid ""
 "Allows you to run a program <b>after</b> a connection\n"
 "is established. When your program is called, all\n"
 "all preparations for an internet connection are\n"
 "finished.\n"
 "\n"
-"Very usefull for fetching mail and news"
+"Very useful for fetching mail and news"
 msgstr ""
 "Po-z enonder on programe <b>après</b> ki vos estoz\n"
 "raloyî. Cwand vosse programe s' enonde, c' est ki totes\n"
@@ -1154,14 +1427,14 @@ msgstr ""
 "\n"
 "Foirt ahessåve po-z aler cweri ses emiles ou les noveles."
 
-#: edit.cpp:324
+#: edit.cpp:323
 #, fuzzy
 msgid "Before disconnect:"
 msgstr ""
 "Programe a-z enonder divant\n"
 "di m' disraloyî:"
 
-#: edit.cpp:331
+#: edit.cpp:330
 msgid ""
 "Allows you to run a program <b>before</b> a connection\n"
 "is closed. The connection will stay open until\n"
@@ -1171,12 +1444,12 @@ msgstr ""
 "disraloyî. Vos seroz raloyî ossi lontins ki\n"
 "li programe toûne."
 
-#: edit.cpp:338
+#: edit.cpp:337
 #, fuzzy
 msgid "Upon disconnect:"
 msgstr "Cwiter å moumint di s' disraloyî"
 
-#: edit.cpp:346
+#: edit.cpp:345
 msgid ""
 "Allows you to run a program <b>after</b> a connection\n"
 "has been closed."
@@ -1184,27 +1457,28 @@ msgstr ""
 "Po-z enonder on programe <b>après</b> ki vos\n"
 "estoz disraloyî."
 
-#: edit.cpp:385
+#: edit.cpp:384
 msgid "IP Setup"
 msgstr "Apontiedje di l' ahesseu Eternet"
 
-#: edit.cpp:391
+#: edit.cpp:390
 msgid "IP Address:"
 msgstr "Adresse di l' ahesseu"
 
-#: edit.cpp:392
+#: edit.cpp:391
+#, fuzzy
 msgid ""
 "If your computer has a permanent internet\n"
-"address, you must supply your IP address here"
+"address, you must supply your IP address here."
 msgstr ""
 "Si voste éndjole a ene adresse Eternet da lu,\n"
 "vos l' divoz taper chal"
 
-#: edit.cpp:400
+#: edit.cpp:399
 msgid "Subnet Mask:"
 msgstr "xxx Subnet Mask:"
 
-#: edit.cpp:401
+#: edit.cpp:400
 #, fuzzy
 msgid ""
 "<p>If your computer has a static Internet address,\n"
@@ -1221,11 +1495,11 @@ msgstr ""
 "\n"
 "Si vos n' savoz nén, atauchîz voste ahesseu Eternet."
 
-#: edit.cpp:416
+#: edit.cpp:415
 msgid "Dynamic IP Address"
 msgstr "Adresse Eternet dinamike"
 
-#: edit.cpp:418
+#: edit.cpp:417
 msgid ""
 "Select this option when your computer gets an\n"
 "internet address (IP) everytime a\n"
@@ -1241,17 +1515,18 @@ msgstr ""
 "D' abôrd tos les ahesseus Eternet fijhèt insi,\n"
 "do côp vos duvrîz dandjureu tchwezi çouci."
 
-#: edit.cpp:426
+#: edit.cpp:425
 msgid "Static IP Address"
 msgstr "Adress Eternet estatike"
 
-#: edit.cpp:430
+#: edit.cpp:429
+#, fuzzy
 msgid ""
 "Select this option when your computer has a\n"
 "fixed internet address (IP). Most computers\n"
 "don't have this, so you should probably select\n"
 "dynamic IP addressing unless you know what you\n"
-"are doing"
+"are doing."
 msgstr ""
 "Tchwezixhoz çouci si voste éndjole a\n"
 "ene adresse Eternet metuwe on côp po totes. Gn a waire di copiutreces\n"
@@ -1259,11 +1534,11 @@ msgstr ""
 "l' adresse dinamike, a pus ki vos savoz\n"
 "çu ki vos fjhoz."
 
-#: edit.cpp:436
+#: edit.cpp:435
 msgid "Auto-configure hostname from this IP"
 msgstr "Apontyî tot seu li no do lodjeu a pårti di ciste adresse"
 
-#: edit.cpp:441
+#: edit.cpp:440
 #, fuzzy
 msgid ""
 "<p>Whenever you connect, this reconfigures\n"
@@ -1273,7 +1548,7 @@ msgid ""
 "on this information, but it can also cause several\n"
 "<a href=\"kppp-7.html#autohostname\">problems</a>.\n"
 "\n"
-"Don't enable this unless you really need it"
+"Don't enable this unless you really need it."
 msgstr ""
 "A tchaeke côp ki vos vos raloyîz, cisse tchûze chal rapontieye\n"
 "vosse no di lodjeu po-z aler avou l' adresse Eternet ki vos rçuvoz\n"
@@ -1285,27 +1560,24 @@ msgstr ""
 "Do côp, ni tchwezixhoz nén çouci, a pus ki vos nd årîz dandjî po do "
 "bon."
 
-#: edit.cpp:528
+#: edit.cpp:527
 msgid ""
-"Selecting this option might cause some weird\n"
-"problems with the X-server and applications\n"
-"while kppp is connected. Don't use it until\n"
-"you know what you are doing!\n"
-"\n"
-"For more information take a look into the\n"
-"handbook (or help) in the section \"Frequently\n"
-"asked questions\""
+"Selecting this option might cause some weird problems with the X-server and "
+"applications while kppp is connected. Don't use it until you know what you "
+"are doing!\n"
+"For more information take a look at the handbook (or help) in the section "
+"\"Frequently asked questions\"."
 msgstr ""
 
-#: edit.cpp:571
+#: edit.cpp:570
 msgid "DNS Servers"
 msgstr "Sierveus DNS"
 
-#: edit.cpp:576
+#: edit.cpp:575
 msgid "Domain Name:"
 msgstr "No di dominne:"
 
-#: edit.cpp:582
+#: edit.cpp:581
 msgid ""
 "If you enter a domain name here, this domain\n"
 "name is used for your computer while you are\n"
@@ -1325,24 +1597,24 @@ msgstr ""
 "Si vos n' metoz rén vaici, vosse no di dominne\n"
 "ni serè nén candjî."
 
-#: edit.cpp:594
+#: edit.cpp:593
 #, fuzzy
 msgid "Configuration:"
 msgstr "Apontiaedje di kppp"
 
-#: edit.cpp:601
+#: edit.cpp:600
 msgid "Automatic"
 msgstr ""
 
-#: edit.cpp:608
+#: edit.cpp:607
 msgid "Manual"
 msgstr ""
 
-#: edit.cpp:612
+#: edit.cpp:611
 msgid "DNS IP Address:"
 msgstr "Adresse Eternet DNS"
 
-#: edit.cpp:624
+#: edit.cpp:623
 #, fuzzy
 msgid ""
 "<p>Allows you to specify a new DNS server to be\n"
@@ -1361,7 +1633,7 @@ msgstr ""
 "Po radjouter on sierveu DNS, tapez l' adresse Eternet\n"
 "do sierveu DNS chal, et adon clitchîz so <b>Radjouter</b>"
 
-#: edit.cpp:645
+#: edit.cpp:644
 msgid ""
 "Click this button to add the DNS server\n"
 "specified in the field above. The entry\n"
@@ -1371,7 +1643,7 @@ msgstr ""
 "vaici pa dzeu. Ciste intreye la\n"
 "serè radjouteye al djîveye pa dzo."
 
-#: edit.cpp:656
+#: edit.cpp:655
 msgid ""
 "Click this button to remove the selected DNS\n"
 "server entry from the list below"
@@ -1379,11 +1651,11 @@ msgstr ""
 "Clitchîz chal po bodjî li DNS tchwezi foû\n"
 "del djîveye pa dzo."
 
-#: edit.cpp:659
+#: edit.cpp:658
 msgid "DNS Address List:"
 msgstr "Djîveye des adresses DNS:"
 
-#: edit.cpp:668
+#: edit.cpp:667
 #, fuzzy
 msgid ""
 "<p>This shows all defined DNS servers to use\n"
@@ -1394,13 +1666,13 @@ msgstr ""
 "tins ki vos estoz raloyî. Eployîz les botons <b>Radjouter</b>\n"
 "eyet <b>Rssaetchî</b> po candjî li djîveye."
 
-#: edit.cpp:676
+#: edit.cpp:675
 msgid "Disable existing DNS Servers during Connection"
 msgstr ""
 "Disclitchîz les sierveu DNS ki vos avoz\n"
 "tins ki vos estoz raloyî."
 
-#: edit.cpp:681
+#: edit.cpp:680
 #, fuzzy
 msgid ""
 "<p>When this option is selected, all DNS\n"
@@ -1411,7 +1683,7 @@ msgid ""
 "\n"
 "Typically, there is no reason to use this\n"
 "option, but it may become useful under \n"
-"some circumstances"
+"some circumstances."
 msgstr ""
 "Avou cisse tchûze lan tos les sierveus DNS\n"
 "dins <i>/etc/resolv.conf</i> seront\n"
@@ -1432,6 +1704,7 @@ msgid "Default Gateway"
 msgstr "Pontea tchwezi por vos"
 
 #: edit.cpp:777
+#, fuzzy
 msgid ""
 "This makes the PPP peer computer (the computer\n"
 "you are connected to with your modem) to act as\n"
@@ -1440,7 +1713,7 @@ msgid ""
 "computer, which will route this packets.\n"
 "\n"
 "This is the default for most ISPs, so you should\n"
-"probably leave this option on"
+"probably leave this option on."
 msgstr ""
 "C' est ci 'pontea' la ki permet al copiutrece PPP (li cine\n"
 "ki vos estoz raloyî avou vosse modem) di fé do\n"
@@ -1496,7 +1769,7 @@ msgstr "Candjî li Scrip"
 
 #: edit.cpp:1218
 #, fuzzy
-msgid "Add a phone number..."
+msgid "Add a Phone Number..."
 msgstr "Limerô di telefone"
 
 #: edit.cpp:1224
@@ -1504,80 +1777,42 @@ msgstr "Limerô di telefone"
 msgid "Phone number:"
 msgstr "Limerô di telefone"
 
-#: main.cpp:89
+#: main.cpp:68
 msgid "A dialer and front-end to pppd."
 msgstr ""
 
-#: main.cpp:93
+#: main.cpp:72
 msgid "Connect using 'account_name'"
 msgstr ""
 
-#: main.cpp:94
+#: main.cpp:73
 #, fuzzy
 msgid "Terminate an existing connection"
 msgstr "Tapez on no po ci raloyaedje ci"
 
-#: main.cpp:95
+#: main.cpp:74
 #, fuzzy
 msgid "Quit after end of connection"
 msgstr "Cwiter å moumint di s' disraloyî"
 
-#: main.cpp:96
+#: main.cpp:75
 msgid "Check syntax of rule_file"
 msgstr ""
 
-#: main.cpp:97
+#: main.cpp:76
 msgid "Enable test-mode"
 msgstr ""
 
-#: main.cpp:136
-msgid "Recent changes in kppp"
-msgstr "Dierins candjmints di kppp"
-
-#: main.cpp:149
-msgid ""
-"From version 1.4.8 on, kppp has a new feature\n"
-"called \"Quickhelp\". It's similar to a tooltip,\n"
-"but you can activate it whenever you want.\n"
-"\n"
-"To activate it, simply click on a control like\n"
-"a button or a label with the right mouse button.\n"
-"If the item supports Quickhelp, a popup menu\n"
-"will appear leading to Quickhelp.\n"
-"\n"
-"To test it, right-click somewhere in this text."
-msgstr ""
-"A pårti del modeye 1.4.8, kppp a ene novele usteye\n"
-"lomeye \"Côp di Spale al Vole\". Ele rishonne ås racsegnetes,\n"
-"mins vos l' poloz enonder cwand vos voloz.\n"
-"\n"
-"Po l' enonder, vos n' avoz k' a clitchî so on\n"
-"boton, ene etikete evnd. avou li droet boton.\n"
-"Si li cayet ki vos avoz clitchî sait dner on Côp di Spale al Vole,\n"
-"vos vieroz spiter on menu ki vos aidrè.\n"
-"\n"
-"Po sayî, clitchîz avou li droet boton ene sawice è ci texe ci."
-
-#: main.cpp:161
-msgid "Don't show this hint again"
-msgstr "Ni pus mostrer cisse racsegne"
-
-#: main.cpp:177
-msgid ""
-"This is an example for <b>QuickHelp</b>.\n"
-"This window will stay open until you\n"
-"click a mouse button or a hit a key.\n"
-msgstr ""
-"Çouci e-st èn egzimpe di <b>Côp di Spale al Vole</b>.\n"
-"Li purnea dimorrè drovu djusk' a tant ki vos\n"
-"clitchîxhe avou li soris ou ki vos tapexhe so ene tape.\n"
-
-#: main.cpp:304
+#: main.cpp:196
 #, fuzzy
 msgid "KPPP"
 msgstr "PPP"
 
-#: main.cpp:354
+#: main.cpp:198
+msgid "(c) 1999-2002, The KPPP Developers"
+msgstr ""
+
+#: main.cpp:236
 #, fuzzy, c-format
 msgid ""
 "kppp can't create or read from\n"
@@ -1586,16 +1821,15 @@ msgstr ""
 "kppp ni sait fé ou lere\n"
 "%s."
 
-#: main.cpp:383
+#: main.cpp:268
 #, fuzzy
 msgid ""
 "kppp has detected a %1 file.\n"
-"\n"
-"Another instance of kppp seems to be running under\n"
-"process-ID %2.\n"
-"\n"
-"Make sure that you are not running another kppp,\n"
-"delete the pid file, and restart kppp."
+"Another instance of kppp seems to be running under process-ID %2.\n"
+"Please click Exit, make sure that you are not running another kppp, delete "
+"the pid file, and restart kppp.\n"
+"Alternatively, if you have determined that there is no other kppp running, "
+"please click Continue to begin."
 msgstr ""
 "kppp a trové on fitchî %s.\n"
 "\n"
@@ -1605,298 +1839,41 @@ msgstr ""
 "Si vos estoz sheur ki kppp ni toûne nén co,\n"
 "disfacez li fitchî pid et 's renondez kppp."
 
-#: main.cpp:389
+#: main.cpp:279
 msgid "Exit"
 msgstr "Moussî foû"
 
-#: main.cpp:454
-msgid "Connect to: "
-msgstr "Si raloyî a: "
-
-#: main.cpp:463
-msgid "Login ID:"
-msgstr "No po moussî dvins:"
-
-#: main.cpp:471
-#, fuzzy
-msgid ""
-"<p>Type in the username that you got from your\n"
-"ISP. This is especially important for PAP\n"
-"and CHAP. You may omit this when you use\n"
-"terminal-based or script-based authentication.\n"
-"\n"
-"<b>Important</b>: case is important here:\n"
-"<i>myusername</i> is not the same as <i>MyUserName</i>!"
-msgstr ""
-"Tapez li no d' ûzeu ki vos avoz rçût di voste ahesseu\n"
-"Eternet. C' est pår consecant po PAP eyet\n"
-"CHAP. Vos poloz leyî çouci vûde vos vos fjhoz rconoxhe\n"
-"a pårti d' on terminå ou d' on scrip.\n"
-"\n"
-"<b>Asteme</b>: ni vos brouyîz nén dins les ptites et les grandès letes:\n"
-"<i>mino</i>, ci n' est nén li minme ki <i>MiNo</i>!"
-
-#: main.cpp:482 providerdb.cpp:350
-msgid "Password:"
-msgstr "Secret:"
-
-#: main.cpp:491
-#, fuzzy
-msgid ""
-"<p>Type in the password that you got from your\n"
-"ISP. This is especially important for PAP\n"
-"and CHAP. You may omit this when you use\n"
-"terminal-based or script-based authentication.\n"
-"\n"
-"<b>Important</b>: case is important here:\n"
-"<i>mypassword</i> is not the same as <i>MyPassword</i>!"
-msgstr ""
-"Tapez droci li scret (mot di passe) ki voste ahesseu Eternet\n"
-"vos a dné. C' est pår consecant po PAP eyet\n"
-"CHAP. Vos poloz leyî çouci vûde vos vos fjhoz rconoxhe\n"
-"a pårti d' on terminå ou d' on scrip.\n"
-"\n"
-"<b>Asteme</b>: ni vos brouyîz nén dins les ptites et les grandès letes:\n"
-"<i>miscret</i>, ci n' est nén li minme ki <i>MiScret</i>!"
-
-#: main.cpp:507
-msgid "Show Log Window"
-msgstr "Mostrer li purnea avou l' istwere"
-
-#: main.cpp:514
-#, fuzzy
-msgid ""
-"<p>This controls whether a log window is shown.\n"
-"A log window shows the communication between\n"
-"<i>kppp</i> and your modem. This will help you\n"
-"in tracking down problems.\n"
-"\n"
-"Turn it off if <i>kppp</i> routinely connects without\n"
-"problems"
-msgstr ""
-"Po dîre s' i fåt mostrer on purnea avou l' istwere\n"
-"di l' atauchaedje inte\n"
-"<i>kppp</i> eyet vosse modem. Çoula vos pout aidî\n"
-"a vey wice k' i gn a yåk ki n' va nén.\n"
-"\n"
-"Disclitchîz çouchal si <i>kppp</i> si raloye sins aroke\n"
-"d' acostumance"
-
-#: main.cpp:534
-#, fuzzy
-msgid "&Setup"
-msgstr "Apontyî"
-
-#: main.cpp:542
-msgid "?"
-msgstr ""
-
-#: main.cpp:547
-#, fuzzy
-msgid "&Connect"
-msgstr "Si raloyî"
-
-#: main.cpp:625
-#, fuzzy, c-format
-msgid ""
-"No such Account:\n"
-"%1"
-msgstr ""
-"Ci conte ci n' egzisteye nén:\n"
-"%s"
-
-#: main.cpp:672
-msgid "kppp Configuration"
-msgstr "Apontiaedje di kppp"
-
-#: main.cpp:690
-msgid "Accounts"
-msgstr "Contes"
-
-#: main.cpp:691
-msgid "Device"
-msgstr "Indjin"
-
-#: main.cpp:693
-msgid "Graph"
-msgstr "Grafike"
-
-#: main.cpp:694
-msgid "Misc."
-msgstr ""
-
-#: main.cpp:846
-msgid "Timeout expired while waiting for the PPP interface to come up!"
-msgstr "Li tins ki dji dveu ratinde PPP est hute!"
-
-#: main.cpp:849
-msgid "The pppd daemon died unexpectedly!"
-msgstr "Li demon pppd a moru tot d' on côp!"
-
-#: main.cpp:852
-#, c-format
-msgid ""
-"\n"
-"\n"
-"Exit status: %1"
-msgstr ""
-
-#: main.cpp:853
-msgid ""
-"\n"
-"\n"
-"See 'man pppd' for an explanation of the error codes\n"
-"or take a look at the kppp FAQ on\n"
-"\n"
-"  http://devel-home.kde.org/~kppp/index.html"
-msgstr ""
-
-#: main.cpp:859
-msgid "Details..."
-msgstr "Savu did pus..."
-
-#: main.cpp:889
-msgid ""
-"Sorry. kppp's helper process just died.\n"
-"\n"
-"Since a further execution would be pointless, kppp will shut down right now."
-msgstr ""
-"Dji rgrete. L' aidant processus di kppp vént do mori.\n"
-"\n"
-"Come i gn åreut pont d' avance di s' renonder, kppp si va cloyu sol côp."
-
-#: main.cpp:921
-#, fuzzy
-msgid ""
-"Cannot find the PPP daemon!\n"
-"\n"
-"Make sure that pppd is installed and\n"
-"you have entered the correct path."
-msgstr ""
-"Dji n' trove nén li demon pppd!\n"
-"\n"
-"Estoz-ve sheure ki pppd e-st astalé\n"
-"et ki vos avoz dné li bon tchmin?\n"
-
-#: main.cpp:930
-#, fuzzy
-msgid ""
-"kppp cannot execute:\n"
-" %1\n"
-"Please make sure that you have given kppp setuid permission and that\n"
-"pppd is executable."
-msgstr ""
-"kppp ni sait enonder:\n"
-" %s\n"
-"Waitîz ki kppp a li permission setuid et ki\n"
-"pppd sait esse enondé po do bon."
-
-#: main.cpp:944
-#, fuzzy
-msgid ""
-"kppp can not find:\n"
-" %1\n"
-"Please make sure you have setup\n"
-"your modem device properly\n"
-"and/or adjust\n"
-" the location of the modem device on the modem tab of\n"
-"the setup dialog.\n"
-" Thank You"
-msgstr ""
-"kppp ni trove nén:\n"
-" %s\n"
-"Waitîz ki l' indjin di vosse modem\n"
-"e-st apontyî comufåt\n"
-"eyet/ou adjustez\n"
-"li plaece di l' indjin do modem el pårteye modem del\n"
-"divize d' apontiaedje.\n"
-"Merci"
-
-#: main.cpp:963
-#, fuzzy
-msgid ""
-"You have selected the authentication\n"
-"method PAP or CHAP. This requires that you\n"
-"supply a username and a password!"
-msgstr ""
-"Vos avoz tchwezi di vos fé ricnoxhe avou li metôde\n"
-"CHAP. Mins po ça, vos dvoz dner\n"
-"on no d' ûzeu eyet on scret!"
-
-#: main.cpp:973
-#, fuzzy
-msgid ""
-"Cannot create PAP/CHAP authentication\n"
-"file \"%1\""
-msgstr ""
-"Dji n' parvén nén a fé li fitchî po vos fé ricnoxhe\n"
-"avou li metôde CHAP:\n"
-"\"%s\""
-
-#: main.cpp:983
-msgid "You must specify a telephone number!"
-msgstr "Vos dvoz dner on limerô di telefone!"
-
-#: main.cpp:1013
-#, fuzzy
-msgid "Disconnecting ..."
-msgstr "Disraloyî"
-
-#: main.cpp:1014
-#, fuzzy
-msgid "Executing command before disconnection."
-msgstr ""
-"Programe a-z enonder divant\n"
-"di m' disraloyî:"
-
-#: main.cpp:1068
-msgid "Exiting kPPP will close your PPP Session."
-msgstr "Si vos moussîz foû di kppp, vosse session PPP serè cloyuwe eto."
-
-#: main.cpp:1069
-msgid "Quit kPPP?"
-msgstr "Moussî foû di kppp?"
-
-#: main.cpp:1112
-#, fuzzy
-msgid ""
-"Can not load the accounting\n"
-"ruleset \"%1\"!"
-msgstr ""
-"Dji n' sai tcherdjî les rûles di\n"
-"contaedje \""
-
-#: modem.cpp:119
+#: modem.cpp:117
 msgid "Sorry, can't open modem."
 msgstr "Dji rgrete. Dji n' sai enonder li modem."
 
-#: modem.cpp:126
+#: modem.cpp:124
 msgid "Sorry, can't detect state of CD line."
 msgstr "Dji rgrete, dji n' sai trover dins ké etat ki li lene CD est."
 
-#: modem.cpp:132
+#: modem.cpp:130
 msgid "Sorry, the modem is not ready."
 msgstr "Dji rgrete, vosse modem n' est nén presse."
 
-#: modem.cpp:148 modem.cpp:193
+#: modem.cpp:146 modem.cpp:191
 msgid "Sorry, the modem is busy."
 msgstr "Dji rgrete, vosse modem e-st ocupé."
 
-#: modem.cpp:199
+#: modem.cpp:197
 msgid "Modem Ready."
 msgstr "Vosse modem est presse."
 
-#: modem.cpp:211
+#: modem.cpp:209
 msgid ""
 "Can't restore tty settings: tcsetattr()\n"
 msgstr ""
 "Dji n' sai rmete d' adram les apresses po tty: tcsetattr()\n"
 
-#: modem.cpp:350
+#: modem.cpp:358
 msgid "Sorry, the modem doesn't respond."
 msgstr "Dji rgrete, mins vosse modem ni respond nén."
 
-#: modem.cpp:452
+#: modem.cpp:495
 msgid "Unknown speed"
 msgstr "Dji n' conoxhe nén li roedeu"
 
@@ -1904,81 +1881,86 @@ msgstr "Dji n' conoxhe nén li roedeu"
 msgid "Edit Modem Commands"
 msgstr "Candjî les cmandes do modem"
 
-#: modemcmds.cpp:73
+#: modemcmds.cpp:74
 msgid "Pre-Init Delay (sec/100):"
 msgstr "Tins a ratinde divant l' enondaedje (seg./100)"
 
-#: modemcmds.cpp:77
-msgid "Initialization String:"
+#: modemcmds.cpp:79
+#, fuzzy
+msgid "Initialization String %1:"
 msgstr "Tchinne po l' enondaedje"
 
-#: modemcmds.cpp:94
+#: modemcmds.cpp:98
 msgid "Post-Init Delay (sec/100):"
 msgstr "Tins a ratinde après l' enondaedje (seg./100)"
 
-#: modemcmds.cpp:98
+#: modemcmds.cpp:114
+msgid "Dialing speed (sec/100):"
+msgstr ""
+
+#: modemcmds.cpp:119
 msgid "Init Response:"
 msgstr "Response a l' enondaedje:"
 
-#: modemcmds.cpp:104
+#: modemcmds.cpp:125
 #, fuzzy
 msgid "No Dial Tone Detection:"
 msgstr "Response s' i gn a nou xhuflet:"
 
-#: modemcmds.cpp:110
+#: modemcmds.cpp:131
 msgid "Dial String:"
 msgstr "Tchinne po fé li limerô:"
 
-#: modemcmds.cpp:116
+#: modemcmds.cpp:137
 msgid "Connect Response:"
 msgstr "Response å raloyaedje:"
 
-#: modemcmds.cpp:122
+#: modemcmds.cpp:143
 msgid "Busy Response:"
 msgstr "Response si c' e-st ocupé:"
 
-#: modemcmds.cpp:128
+#: modemcmds.cpp:149
 msgid "No Carrier Response:"
 msgstr "Response s' i gn a nou carrier:"
 
-#: modemcmds.cpp:134
+#: modemcmds.cpp:155
 #, fuzzy
 msgid "No Dial Tone Response:"
 msgstr "Response s' i gn a nou xhuflet:"
 
-#: modemcmds.cpp:140
+#: modemcmds.cpp:161
 msgid "Hangup String:"
 msgstr "Tchinne po racrotchî:"
 
-#: modemcmds.cpp:146
+#: modemcmds.cpp:167
 msgid "Hangup Response:"
 msgstr "Response å racrotchaedje:"
 
-#: modemcmds.cpp:152
+#: modemcmds.cpp:173
 msgid "Answer String:"
 msgstr "Tchinne di response:"
 
-#: modemcmds.cpp:158
+#: modemcmds.cpp:179
 msgid "Ring Response:"
 msgstr "Response al son'reye:"
 
-#: modemcmds.cpp:164
+#: modemcmds.cpp:185
 msgid "Answer Response:"
 msgstr "Response å respondaedje:"
 
-#: modemcmds.cpp:170
+#: modemcmds.cpp:191
 msgid "Escape String:"
 msgstr "Tchinne d' echapmint:"
 
-#: modemcmds.cpp:176
+#: modemcmds.cpp:197
 msgid "Escape Response:"
 msgstr "Response a l' echapmint:"
 
-#: modemcmds.cpp:194
+#: modemcmds.cpp:215
 msgid "Guard Time (sec/50):"
 msgstr "Tins di wåde (seg./50):"
 
-#: modemcmds.cpp:197
+#: modemcmds.cpp:218
 msgid "Volume off/low/high"
 msgstr "Son: pont/bas/foirt"
 
@@ -1994,14 +1976,13 @@ msgstr "Årgumints:"
 msgid "Defaults"
 msgstr "Tchwezi por vos"
 
-#: pppdata.cpp:61
+#: pppdata.cpp:59
+#, fuzzy
 msgid ""
-"The application-specific config file could not be\n"
-"opened neither read-write nor read-only.\n"
-"\n"
-"The superuser might have to change its ownership\n"
-"by issuing the following command in your home directory:\n"
-"\n"
+"The application-specific config file could not be opened neither read-write "
+"nor read-only.\n"
+"The superuser might have to change its ownership by issuing the following "
+"command in your home directory:\n"
 "chown {YourUsername} .kde/share/config/kppprc"
 msgstr ""
 "Dji n' a seu drovi li fitchî d' apontiaedje do programe\n"
@@ -2012,95 +1993,95 @@ msgstr ""
 "\n"
 "chown {VosseNoÛzeu} .kde/share/config/kppprc"
 
-#: modeminfo.cpp:41
+#: modeminfo.cpp:40
 msgid "ATI Query"
 msgstr "Interodjî ATI"
 
-#: modeminfo.cpp:117
+#: modeminfo.cpp:116
 msgid "Modem Query timed out."
 msgstr "Pupont di tins po-z interodjî li modem"
 
-#: miniterm.cpp:167 miniterm.cpp:229 modeminfo.cpp:145
+#: miniterm.cpp:142 miniterm.cpp:204 modeminfo.cpp:144
 msgid "Modem Ready"
 msgstr "Li modem est presse"
 
-#: modeminfo.cpp:248
+#: modeminfo.cpp:247
 msgid "Modem Query Results"
 msgstr "Rezultats di l' interodjaedje do modem"
 
-#: pppstatdlg.cpp:50
+#: pppstatdlg.cpp:48
 msgid "kppp Statistics"
 msgstr "Statistikes di kppp"
 
-#: pppstatdlg.cpp:56
+#: pppstatdlg.cpp:54
 msgid "Statistics"
 msgstr "Statistikes"
 
-#: pppstatdlg.cpp:84
+#: pppstatdlg.cpp:82
 msgid "Local Addr:"
 msgstr "Adresse locåle:"
 
-#: pppstatdlg.cpp:90
+#: pppstatdlg.cpp:88
 msgid "Remote Addr:"
 msgstr "Adresse å lon:"
 
-#: pppstatdlg.cpp:117
+#: pppstatdlg.cpp:115
 msgid "bytes in"
 msgstr "bytes aberwetés"
 
-#: pppstatdlg.cpp:118
+#: pppstatdlg.cpp:116
 msgid "bytes out"
 msgstr "bytes eberwetés"
 
-#: pppstatdlg.cpp:120
+#: pppstatdlg.cpp:118
 msgid "packets in"
 msgstr "pakets aberwetés"
 
-#: pppstatdlg.cpp:121
+#: pppstatdlg.cpp:119
 msgid "packets out"
 msgstr "pakets eberwetés"
 
-#: pppstatdlg.cpp:123
+#: pppstatdlg.cpp:121
 msgid "vjcomp in"
 msgstr "vjcomp aberwetés"
 
-#: pppstatdlg.cpp:124
+#: pppstatdlg.cpp:122
 msgid "vjcomp out"
 msgstr "vjcomp eberwetés"
 
-#: pppstatdlg.cpp:126
+#: pppstatdlg.cpp:124
 msgid "vjunc in"
 msgstr "vjunc aberwetés"
 
-#: pppstatdlg.cpp:127
+#: pppstatdlg.cpp:125
 msgid "vjunc out"
 msgstr "vjunc eberwetés"
 
-#: pppstatdlg.cpp:129
+#: pppstatdlg.cpp:127
 msgid "vjerr"
 msgstr "vjerr"
 
-#: pppstatdlg.cpp:130
+#: pppstatdlg.cpp:128
 msgid "non-vj"
 msgstr "nén vj"
 
-#: pppstatdlg.cpp:270
+#: pppstatdlg.cpp:284
 msgid "%1 (max. %2) kb/sec"
 msgstr ""
 
-#: pppstatdlg.cpp:386 pppstatdlg.cpp:393
+#: pppstatdlg.cpp:400 pppstatdlg.cpp:407
 msgid "unavailable"
 msgstr "nén presse por vos"
 
-#: miniterm.cpp:49
+#: miniterm.cpp:44
 msgid "Kppp Mini-Terminal"
 msgstr "Miniterminå di kppp"
 
-#: miniterm.cpp:55
+#: miniterm.cpp:50
 msgid "&Reset Modem"
 msgstr "&Rimete li modem a zerô"
 
-#: miniterm.cpp:58
+#: miniterm.cpp:53
 msgid ""
 "MiniTerm - A terminal emulation for KPPP\n"
 "\n"
@@ -2120,121 +2101,121 @@ msgstr ""
 "Li programe est publiyî dizo li GNU GPL\n"
 "(GNU General Public License)"
 
-#: miniterm.cpp:68
+#: miniterm.cpp:63
 msgid "&Modem"
 msgstr "&Modem"
 
-#: miniterm.cpp:110
+#: miniterm.cpp:98
 msgid "Close MiniTerm"
 msgstr "Cloyu MiniTerm"
 
-#: miniterm.cpp:115
+#: miniterm.cpp:102
 msgid "Reset Modem"
 msgstr "Rimete li Modem a zerô"
 
-#: miniterm.cpp:141
+#: miniterm.cpp:116
 msgid "Initializing Modem"
 msgstr "Enondaedje do modem"
 
-#: miniterm.cpp:208
+#: miniterm.cpp:183
 msgid "Hanging up ..."
 msgstr "Dji racrotche ..."
 
-#: miniterm.cpp:222
+#: miniterm.cpp:197
 msgid "Resetting Modem"
 msgstr "Dji rmet li modem a zerô"
 
-#: acctselect.cpp:56
+#: acctselect.cpp:53
 msgid "Enable accounting"
 msgstr "Dispierter li conteu"
 
-#: acctselect.cpp:70
+#: acctselect.cpp:67
 msgid "<i>Look for updates on<br/>%1</i>"
 msgstr ""
 
-#: acctselect.cpp:79
+#: acctselect.cpp:76
 msgid "Selected:"
 msgstr "Tchwezi:"
 
-#: acctselect.cpp:92
+#: acctselect.cpp:89
 msgid "Volume accounting:"
 msgstr "Contaedje del cwantité:"
 
-#: acctselect.cpp:94
+#: acctselect.cpp:91
 msgid "No accounting"
 msgstr "Nou conteu"
 
-#: acctselect.cpp:95
+#: acctselect.cpp:92
 msgid "Bytes in"
 msgstr "Bytes aberwetés"
 
-#: acctselect.cpp:96
+#: acctselect.cpp:93
 msgid "Bytes out"
 msgstr "Bytes eberwetés"
 
-#: acctselect.cpp:97
+#: acctselect.cpp:94
 msgid "Bytes in and out"
 msgstr "Bytes aberwetés eyet eberwetés"
 
-#: acctselect.cpp:249
+#: acctselect.cpp:246
 msgid "Available rules"
 msgstr "Rûles"
 
-#: acctselect.cpp:277
+#: acctselect.cpp:274
 msgid "(none)"
 msgstr "(nole)"
 
-#: ruleset.cpp:528
+#: ruleset.cpp:526
 msgid ""
 "kppp: no rulefile specified\n"
 msgstr ""
 "kppp: nou fitchî di rûle\n"
 
-#: ruleset.cpp:534
+#: ruleset.cpp:532
 #, c-format
 msgid ""
 "kppp: rulefile \"%s\" not found\n"
 msgstr ""
 "kppp: dji n' trove nén li fitchî di rûles \"%s\"\n"
 
-#: ruleset.cpp:539
+#: ruleset.cpp:537
 msgid ""
 "kppp: rulefiles must have the extension \".rst\"\n"
 msgstr ""
 "kppp: les fitchîs di rûles divèt avu li cawete \".rst\"\n"
 
-#: ruleset.cpp:548
+#: ruleset.cpp:546
 msgid ""
 "kppp: error parsing the ruleset\n"
 msgstr ""
 "kppp: dj' a aroké come dji cowaitîve les rûles\n"
 
-#: ruleset.cpp:553
+#: ruleset.cpp:551
 #, c-format
 msgid ""
 "kppp: parse error in line %d\n"
 msgstr ""
 "kppp: dj' a aroké come dji cowaitîve les rûles. C' esteut al roye %d\n"
 
-#: ruleset.cpp:559
+#: ruleset.cpp:557
 msgid ""
 "kppp: rulefile does not contain a default rule\n"
 msgstr ""
 "kppp: li fitchî des rûles n' a nole rûle tchwezeye po l' ûzeu\n"
 
-#: ruleset.cpp:564
+#: ruleset.cpp:562
 msgid ""
 "kppp: rulefile does not contain a \"name=...\" line\n"
 msgstr ""
 "kppp: li fitchî des rûles n' a nole roye \"name=...\"\n"
 
-#: ruleset.cpp:568
+#: ruleset.cpp:566
 msgid ""
 "kppp: rulefile is ok\n"
 msgstr ""
 "kppp: li fitchî des rûles est bén emantchî\n"
 
-#: docking.cpp:130
+#: docking.cpp:125
 msgid "Minimize"
 msgstr "Raptiti"
 
@@ -2251,7 +2232,6 @@ msgstr ""
 #, fuzzy
 msgid ""
 "Cannot find the PPP daemon!\n"
-"\n"
 "Make sure that pppd is installed."
 msgstr ""
 "Dji n' trove nén li demon pppd!\n"
@@ -2260,12 +2240,10 @@ msgstr ""
 "et ki vos avoz dné li bon tchmin?\n"
 
 #: runtests.cpp:240
+#, fuzzy
 msgid ""
-"You do not have the permission\n"
-"to start pppd!\n"
-"\n"
-"Contact your system administrator\n"
-"and ask to get access to pppd."
+"You do not have the permission to start pppd!\n"
+"Contact your system administrator and ask to get access to pppd."
 msgstr ""
 "Vos n' avoz nén li permission\n"
 "d' enonder pppd!\n"
@@ -2276,21 +2254,16 @@ msgstr ""
 #: runtests.cpp:253
 msgid ""
 "You don't have sufficient permission to run\n"
-"\n"
 "%1\n"
-"\n"
-"Please make sure that kppp is owned by root\n"
-"and has the SUID bit set.\n"
+"Please make sure that kppp is owned by root and has the SUID bit set."
 msgstr ""
 
 #: runtests.cpp:265
 #, fuzzy
 msgid ""
 "%1 is missing or can't be read!\n"
-"\n"
-"Ask your system administrator to create\n"
-"this file (can be empty) with appropriate\n"
-"read and write permissions."
+"Ask your system administrator to create this file (can be empty) with "
+"appropriate read and write permissions."
 msgstr ""
 "n' est nén la!\n"
 "\n"
@@ -2298,24 +2271,24 @@ msgstr ""
 "on fitchî nén vûde avou les permissions (lere\n"
 "eyet scrîre) ki convnèt."
 
-#: loginterm.cpp:100
+#: loginterm.cpp:97
 #, fuzzy
 msgid "Login Terminal Window"
 msgstr "Côper li lene"
 
-#: loginterm.cpp:119
+#: loginterm.cpp:116
 msgid "Ca&ncel"
 msgstr "Ri&noncî"
 
-#: loginterm.cpp:124
+#: loginterm.cpp:121
 msgid "&Continue"
 msgstr "&Tcheryî pus lon"
 
-#: ppplog.cpp:64
+#: ppplog.cpp:61
 msgid "Cannot open any of the following logfiles:"
 msgstr ""
 
-#: ppplog.cpp:138
+#: ppplog.cpp:135
 msgid ""
 "You have launched pppd before the remote server was ready to establish a PPP "
 "connection.\n"
@@ -2325,15 +2298,15 @@ msgstr ""
 "onraloyaedje PPP.\n"
 "Moussî dvins avou li terminå po vey cwè."
 
-#: ppplog.cpp:143
+#: ppplog.cpp:140
 msgid "You haven't started the PPP software on the peer system."
 msgstr "Vos n' avoz nén enondé li programe PPP do sistinme acoplé"
 
-#: ppplog.cpp:146
+#: ppplog.cpp:143
 msgid "Check that you supplied the correct username and password!"
 msgstr "Waitîz si vos avoz dné li bon no d' ûzeu eyet li bon scret!"
 
-#: ppplog.cpp:149
+#: ppplog.cpp:146
 msgid ""
 "You shouldn't pass 'lock' as an argument to pppd. Check /etc/ppp/options and "
 "~/.ppprc"
@@ -2341,7 +2314,7 @@ msgstr ""
 "Vos n' duvrîz nén bouter 'lock' come årgumint po pppd. Loukîz dins "
 "/etc/ppp/options eyet~/.ppprc"
 
-#: ppplog.cpp:153
+#: ppplog.cpp:150
 msgid ""
 "The remote system does not seem to answer to\n"
 "configuration request! Contact your provider!"
@@ -2349,7 +2322,7 @@ msgstr ""
 "Dj' a l' ideye ki li sistinme å lon ni respond nén a vosse\n"
 "dimande! Atauchîz voste ahesseu!"
 
-#: ppplog.cpp:157
+#: ppplog.cpp:154
 msgid ""
 "You have passed an invalid option to pppd. See `man pppd' for a complete "
 "list of valid arguments."
@@ -2357,7 +2330,7 @@ msgstr ""
 "Yene di vos tchûzes po pppd est mwaijhe. Waitîz è manuel (`man pppd') po "
 "veyene djîveye di tos les årgumints ki convnèt."
 
-#: ppplog.cpp:175
+#: ppplog.cpp:172
 #, fuzzy
 msgid ""
 "Notice that the remote system has sent the following message:\n"
@@ -2368,19 +2341,17 @@ msgstr ""
 "\"%s\"\n"
 "Ça pôreut volu dîre ki li raloyaedje ni s' a nén fwait."
 
-#: ppplog.cpp:194
+#: ppplog.cpp:191
 msgid "Sorry. Can't help you here."
 msgstr "Dji rgrete, la, dji n' vos såreu aidî."
 
-#: ppplog.cpp:218
+#: ppplog.cpp:215
 #, fuzzy
 msgid ""
-"KPPP could not prepare a PPP log. It's very likely\n"
-"that pppd was started without the \"debug\" option.\n"
-"\n"
-"Without this option it's difficult to find out PPP\n"
-"problems, so you should turn on the debug option.\n"
-"\n"
+"KPPP could not prepare a PPP log. It's very likely that pppd was started "
+"without the \"debug\" option.\n"
+"Without this option it's difficult to find out PPP problems, so you should "
+"turn on the debug option.\n"
 "Shall I turn it on now?"
 msgstr ""
 "KPPP n' a nén parvinu a-z aprester ene istwere di PPP. C' est dandjureu\n"
@@ -2391,31 +2362,32 @@ msgstr ""
 "\n"
 "Voloz-ve ki djel mete por vos tot d' shûte?"
 
-#: ppplog.cpp:227
+#: ppplog.cpp:224
+#, fuzzy
 msgid ""
-"The \"debug\" option has been added. You\n"
-"should now try to reconnect. If that fails\n"
-"again, you will get a PPP log that may help\n"
-"you to track down the connection problem."
+"The \"debug\" option has been added. You should now try to reconnect. If "
+"that fails again, you will get a PPP log that may help you to track down the "
+"connection problem."
 msgstr ""
 "Dj' a radjouté li tchûze \"debug\". Asteure,\n"
 "vos duvrîz rsayî di v' raloyî. Si vos fjhoz co on côp\n"
 "berwete, vos åroz ene istwere di PPP ki vos pôrè mutwè\n"
 "aidî a vey çu ki n' va nén."
 
-#: ppplog.cpp:241
+#: ppplog.cpp:238
 msgid "PPP log"
 msgstr "Istwere di PPP"
 
-#: ppplog.cpp:245
+#: ppplog.cpp:242
 msgid "kppp's diagnosis (just guessing):"
 msgstr "Diagnostic di kppp (dji saye d' adviner):"
 
-#: ppplog.cpp:250
-msgid "Write to file"
+#: ppplog.cpp:247
+#, fuzzy
+msgid "Write to File"
 msgstr "Sicrîre è fitchî"
 
-#: ppplog.cpp:284
+#: ppplog.cpp:281
 msgid ""
 "The PPP log has been saved\n"
 "as \"%1\"!\n"
@@ -2426,11 +2398,12 @@ msgid ""
 "to find the bug and to improve KPPP"
 msgstr ""
 
-#: modemdb.cpp:46
-msgid "Select modem type..."
+#: modemdb.cpp:44
+#, fuzzy
+msgid "Select Modem Type..."
 msgstr "Tchwezixhoz ene sôrte di modem ..."
 
-#: modemdb.cpp:48
+#: modemdb.cpp:46
 #, fuzzy
 msgid ""
 "To setup your modem, first choose its vendor in the list to the left, and "
@@ -2441,19 +2414,20 @@ msgstr ""
 "gautche.Adon, tchwezixhoz li modele el djîveye di droete. Si vos n' savoz "
 "nén ké modem kivos avoz, sayîz on modem ki \"chine bén tot\"."
 
-#: modemdb.cpp:148 modemdb.cpp:150 modemdb.cpp:221 modemdb.cpp:236
+#: modemdb.cpp:146 modemdb.cpp:148 modemdb.cpp:219 modemdb.cpp:234
 msgid "<Generic>"
 msgstr "<Chine bén tot>"
 
-#: modemdb.cpp:218
+#: modemdb.cpp:216
 msgid "Hayes(tm) compatible modem"
 msgstr "Modem ki sait chiner Hayes(tm)"
 
-#: providerdb.cpp:60
-msgid "Create new account..."
-msgstr ""
+#: providerdb.cpp:56
+#, fuzzy
+msgid "Create New Account..."
+msgstr "Novea Conte"
 
-#: providerdb.cpp:175
+#: providerdb.cpp:171
 msgid ""
 "You will be asked a few questions on informations\n"
 "which are needed to establish an Internet connection\n"
@@ -2465,7 +2439,7 @@ msgid ""
 "your ISP."
 msgstr ""
 
-#: providerdb.cpp:193
+#: providerdb.cpp:189
 msgid ""
 "Select the location where you plan to use this\n"
 "account from the list below. If your country or\n"
@@ -2476,7 +2450,7 @@ msgid ""
 "will start."
 msgstr ""
 
-#: providerdb.cpp:264
+#: providerdb.cpp:260
 msgid ""
 "Select your Internet Service Provider (ISP) from\n"
 "the list below. If the ISP is not in this list,\n"
@@ -2487,7 +2461,7 @@ msgid ""
 "selection."
 msgstr ""
 
-#: providerdb.cpp:339
+#: providerdb.cpp:335
 msgid ""
 "To log on to your ISP, kppp needs the username\n"
 "and the password you got from your ISP. Type\n"
@@ -2496,11 +2470,11 @@ msgid ""
 "Word case is important here."
 msgstr ""
 
-#: providerdb.cpp:348
+#: providerdb.cpp:344
 msgid "Username:"
 msgstr ""
 
-#: providerdb.cpp:393
+#: providerdb.cpp:389
 msgid ""
 "If you need a special dial prefix (e.g. if you\n"
 "are using a telephone switch) you can specify\n"
@@ -2511,12 +2485,12 @@ msgid ""
 "to write \"0\" or \"0,\" here."
 msgstr ""
 
-#: providerdb.cpp:404
+#: providerdb.cpp:400
 #, fuzzy
 msgid "Dial prefix:"
 msgstr "Tchinne po fé li limerô:"
 
-#: providerdb.cpp:429
+#: providerdb.cpp:425
 msgid ""
 "Finished!\n"
 "\n"
@@ -2537,6 +2511,28 @@ msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
 msgstr ""
+
+#, fuzzy
+#~ msgid "%1 Byte"
+#~ msgstr "Bytes aberwetés"
+
+#, fuzzy
+#~ msgid "%1 KB"
+#~ msgstr "Bytes aberwetés"
+
+#, fuzzy
+#~ msgid "%1 MB"
+#~ msgstr "Bytes aberwetés"
+
+#, fuzzy
+#~ msgid "%1 GB"
+#~ msgstr "Bytes aberwetés"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "Volume: %1"
+#~ msgstr "Volume:"
 
 #, fuzzy
 #~ msgid "Setting mode to %1"
