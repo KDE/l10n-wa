@@ -14,7 +14,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdict\n"
-"POT-Creation-Date: 2003-09-21 01:29+0200\n"
+"POT-Creation-Date: 2004-07-16 01:24+0200\n"
 "PO-Revision-Date: 2003-09-10 00:03+0200\n"
 "Last-Translator: Lorint Hendschel <LorintHendschel@skynet.be>\n"
 "Language-Team: walon <linux-wa@chanae.alphanet.ch>\n"
@@ -36,7 +36,8 @@ msgid ""
 msgstr "<LorintHendschel@skynet.be>"
 
 #: dict.cpp:207
-msgid "No definitions found for '%1'!"
+#, fuzzy
+msgid "No definitions found for '%1'."
 msgstr "Nou definixha di trové po «%1»!"
 
 #: dict.cpp:212
@@ -67,24 +68,25 @@ msgstr "Li raloyaedje èn va pus."
 #, fuzzy
 msgid ""
 "Internal error:\n"
-"Failed to open pipes for internal communication!"
+"Failed to open pipes for internal communication."
 msgstr ""
 "Divintrinne aroke:\n"
 "Dji n' a savou drovi des buzes pol divintrin comunicaedje!"
 
 #: dict.cpp:1215
+#, fuzzy
 msgid ""
 "Internal error:\n"
-"Unable to create thread!"
+"Unable to create thread."
 msgstr ""
 "Divintrinne aroke:\n"
 "Dji n' a savou fé on thread!"
 
-#: dict.cpp:1387
+#: dict.cpp:1387 options.cpp:178
 msgid "All Databases"
 msgstr "Totes les båzes di dnêyes"
 
-#: dict.cpp:1393 options.cpp:146
+#: dict.cpp:1393 options.cpp:146 options.cpp:151
 msgid "Spell Check"
 msgstr "Verifyî l' ortografeye"
 
@@ -152,7 +154,7 @@ msgid ""
 "Unable to connect to:\n"
 "%1:%2\n"
 "\n"
-"Can't resolve hostname."
+"Cannot resolve hostname."
 msgstr ""
 
 #: dict.cpp:1460
@@ -261,11 +263,12 @@ msgid " Updating server information... "
 msgstr ""
 
 #: main.cpp:25
-msgid "define X11-clipboard content (selected text)"
-msgstr ""
+#, fuzzy
+msgid "Define X11-clipboard content (selected text)"
+msgstr "&Defini çou k' i gn a e tchapea emacralé"
 
 #: main.cpp:26
-msgid "lookup the given word/phrase"
+msgid "Lookup the given word/phrase"
 msgstr ""
 
 #: main.cpp:34
@@ -311,11 +314,11 @@ msgstr ""
 msgid "&Get"
 msgstr ""
 
-#: matchview.cpp:390 toplevel.cpp:397
+#: matchview.cpp:390 toplevel.cpp:398
 msgid "&Match"
 msgstr ""
 
-#: matchview.cpp:391 toplevel.cpp:396
+#: matchview.cpp:391 toplevel.cpp:397
 msgid "&Define"
 msgstr "&Defini"
 
@@ -374,14 +377,6 @@ msgstr ""
 #: options.cpp:148
 msgid "Prefix"
 msgstr ""
-
-#: options.cpp:151
-msgid "spell check"
-msgstr "verifyî l' ortografeye"
-
-#: options.cpp:178
-msgid "all databases"
-msgstr "totes les båzes di dnêyes"
 
 #: options.cpp:498
 msgid "Server"
@@ -516,8 +511,9 @@ msgid "D&efine selected text on start"
 msgstr ""
 
 #: queryview.cpp:57
-msgid "Unable to save remote file!"
-msgstr ""
+#, fuzzy
+msgid "Unable to save remote file."
+msgstr "Dji n' sai schaper l' fitchî!"
 
 #: queryview.cpp:77
 msgid ""
@@ -530,12 +526,14 @@ msgid "&Replace"
 msgstr "&Replaecî"
 
 #: queryview.cpp:84
-msgid "Unable to save file!"
+#, fuzzy
+msgid "Unable to save file."
 msgstr "Dji n' sai schaper l' fitchî!"
 
 #: queryview.cpp:92
-msgid "Unable to create temporary file!"
-msgstr ""
+#, fuzzy
+msgid "Unable to create temporary file."
+msgstr "Dji n' sai schaper l' fitchî!"
 
 #: queryview.cpp:411
 msgid "Define &Synonym"
@@ -561,11 +559,11 @@ msgstr "&Defini tchuze"
 msgid "&Match Selection"
 msgstr ""
 
-#: queryview.cpp:455 toplevel.cpp:339
+#: queryview.cpp:455 toplevel.cpp:338
 msgid "&Define Clipboard Content"
 msgstr "&Defini çou k' i gn a e tchapea emacralé"
 
-#: queryview.cpp:457 toplevel.cpp:341
+#: queryview.cpp:457 toplevel.cpp:340
 msgid "&Match Clipboard Content"
 msgstr ""
 
@@ -577,7 +575,7 @@ msgstr "En &erî: Informåcion"
 msgid "&Back: '%1'"
 msgstr "En &erî: «%1»"
 
-#: queryview.cpp:475 queryview.cpp:589 toplevel.cpp:346
+#: queryview.cpp:475 queryview.cpp:589 toplevel.cpp:345
 msgid "&Back"
 msgstr "En &erî"
 
@@ -589,23 +587,27 @@ msgstr "En a&vant: Informåcion"
 msgid "&Forward: '%1'"
 msgstr "En a&vant: «%1»"
 
-#: queryview.cpp:489 queryview.cpp:613 toplevel.cpp:351
+#: queryview.cpp:489 queryview.cpp:613 toplevel.cpp:350
 msgid "&Forward"
 msgstr "En a&vant"
 
-#: rc.cpp:3
+#: rc.cpp:6
+#, no-c-format
 msgid "Hist&ory"
 msgstr "&Istwere"
 
-#: rc.cpp:4
+#: rc.cpp:8
+#, no-c-format
 msgid "Ser&ver"
 msgstr "Sier&veu"
 
-#: rc.cpp:5
+#: rc.cpp:10
+#, no-c-format
 msgid "Database &Information"
 msgstr "&Informåcion sol båze di dnêyes"
 
-#: rc.cpp:8
+#: rc.cpp:16
+#, no-c-format
 msgid "Query Toolbar"
 msgstr "Bår ås usteyes des cweraedjes"
 
@@ -637,74 +639,85 @@ msgstr "Båzes di dnêyes k' i gn &a:"
 msgid "New Set"
 msgstr "Novea eshonna"
 
-#: toplevel.cpp:59
+#: toplevel.cpp:58
 msgid "The KDE Dict(ionary) Client"
 msgstr "Li cliyint di diccionairaedje di KDE"
 
-#: toplevel.cpp:324
-msgid "&Save..."
+#: toplevel.cpp:323
+#, fuzzy
+msgid "&Save As..."
 msgstr "&Schaper..."
 
-#: toplevel.cpp:328
+#: toplevel.cpp:327
 msgid "St&art Query"
 msgstr "&Enonder cweraedje"
 
-#: toplevel.cpp:330
+#: toplevel.cpp:329
 msgid "St&op Query"
 msgstr "&Arester cweraedje"
 
-#: toplevel.cpp:356
+#: toplevel.cpp:355
 msgid "&Clear History"
 msgstr "&Netyî l' istwere"
 
-#: toplevel.cpp:360
+#: toplevel.cpp:359
 msgid "&Get Capabilities"
 msgstr ""
 
-#: toplevel.cpp:362
+#: toplevel.cpp:361
 msgid "Edit &Database Sets..."
 msgstr ""
 
-#: toplevel.cpp:364
+#: toplevel.cpp:363
 msgid "&Summary"
 msgstr "&Rascourti"
 
-#: toplevel.cpp:366
+#: toplevel.cpp:365
 msgid "S&trategy Information"
 msgstr ""
 
-#: toplevel.cpp:368
+#: toplevel.cpp:367
 msgid "&Server Information"
 msgstr "Informåcion sol &sierveu"
 
-#: toplevel.cpp:375
+#: toplevel.cpp:374
 msgid "Show &Match List"
+msgstr ""
+
+#: toplevel.cpp:376
+msgid "Hide &Match List"
 msgstr ""
 
 #: toplevel.cpp:377
 msgid "Swallow Match &List"
 msgstr ""
 
-#: toplevel.cpp:386
+#: toplevel.cpp:387
 msgid "Clear Input Field"
 msgstr "Netyî l' intrêye"
 
-#: toplevel.cpp:389
+#: toplevel.cpp:390
 msgid "&Look for:"
 msgstr "&Cweri après:"
 
-#: toplevel.cpp:390
+#: toplevel.cpp:391
 msgid "Query"
 msgstr "Cweri"
 
-#: toplevel.cpp:393
+#: toplevel.cpp:394
 msgid "&in"
 msgstr ""
 
-#: toplevel.cpp:394
+#: toplevel.cpp:395
 msgid "Databases"
 msgstr "Båzes di dnêyes"
 
-#: toplevel.cpp:405 toplevel.cpp:614
+#: toplevel.cpp:406 toplevel.cpp:615
 msgid " Ready "
 msgstr " Presse"
+
+#~ msgid "spell check"
+#~ msgstr "verifyî l' ortografeye"
+
+#~ msgid "all databases"
+#~ msgstr "totes les båzes di dnêyes"
