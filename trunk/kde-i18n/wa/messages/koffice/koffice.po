@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
-"POT-Creation-Date: 2003-06-07 01:36+0200\n"
+"POT-Creation-Date: 2003-06-25 01:31+0200\n"
 "PO-Revision-Date: 2003-06-10 10:36+0200\n"
 "Last-Translator: Lorint HENDSCHEL <LorintHendschel@skynet.be>\n"
 "Language-Team: Walon <linux-wa@chanae.alphanet.ch>\n"
@@ -31,6 +31,10 @@ msgstr "S&ititchî:"
 #: parts.cc:8
 msgid "TextLabel1"
 msgstr "EtiketeTecse1"
+
+#: kformula/MatrixDialog.cc:34 kformula/sequenceelement.cc:1026
+msgid "Add Matrix"
+msgstr ""
 
 #: kformula/MatrixDialog.cc:44
 msgid "Rows:"
@@ -110,15 +114,15 @@ msgid "Font Style"
 msgstr "Stîle del fonte"
 
 #: kformula/kformulaconfigpage.cc:169
-msgid "Esstix Font Style"
+msgid "Esstix font style"
 msgstr ""
 
 #: kformula/kformulaconfigpage.cc:172
-msgid "Computer Modern (TeX) Style"
+msgid "Computer modern (TeX) style"
 msgstr ""
 
 #: kformula/kformulaconfigpage.cc:175
-msgid "Symbol Font Style"
+msgid "Symbol font style"
 msgstr ""
 
 #: kformula/kformulaconfigpage.cc:195
@@ -294,7 +298,7 @@ msgid "Symbol Names"
 msgstr "Nos des simboles"
 
 #: kformula/kformuladocument.cc:669 kotext/koSearchDia.cc:608
-#: kotext/kotextformat.cc:1149
+#: kotext/kotextformat.cc:1206
 msgid "Normal"
 msgstr "Normå"
 
@@ -358,10 +362,6 @@ msgstr ""
 msgid "Add Symbol"
 msgstr ""
 
-#: kformula/sequenceelement.cc:1026
-msgid "Add Matrix"
-msgstr ""
-
 #: kformula/sequenceelement.cc:1103
 msgid "Change Char to Symbol"
 msgstr ""
@@ -378,19 +378,36 @@ msgstr ""
 msgid "Add Element"
 msgstr ""
 
-#: kofficecore/koApplication.cc:39
+#: kofficecore/koApplication.cc:42
 msgid "Only print and exit"
 msgstr ""
 
-#: kofficecore/koApplication.cc:67
+#: kofficecore/koApplication.cc:43
+msgid "Open a new document with a template"
+msgstr ""
+
+#: kofficecore/koApplication.cc:71
 msgid "KOffice"
 msgstr ""
 
-#: kofficecore/koDocument.cc:358
-msgid "Internal error: not a KOffice application, saving not allowed"
+#: kofficecore/koApplication.cc:152
+msgid "No template found for: %1 "
 msgstr ""
 
-#: kofficecore/koDocument.cc:415
+#: kofficecore/koApplication.cc:155
+#, c-format
+msgid "Too many templates found for: %1"
+msgstr ""
+
+#: kofficecore/koApplication.cc:174
+msgid "Template %1 failed to load."
+msgstr ""
+
+#: kofficecore/koDocument.cc:349
+msgid "Internal error: not a KOffice application, saving not allowed."
+msgstr ""
+
+#: kofficecore/koDocument.cc:406
 #, c-format
 msgid ""
 "Could not save\n"
@@ -399,7 +416,7 @@ msgstr ""
 "Dji n' sai schaper\n"
 "%1"
 
-#: kofficecore/koDocument.cc:418
+#: kofficecore/koDocument.cc:409
 msgid ""
 "Could not save %1\n"
 "Reason: %2"
@@ -407,19 +424,19 @@ msgstr ""
 "Dji n' a savou schaper %1\n"
 "Vochal li råjhon: %2"
 
-#: kofficecore/koDocument.cc:918
+#: kofficecore/koDocument.cc:894
 msgid "Couldn't open the file for saving"
 msgstr ""
 
-#: kofficecore/koDocument.cc:927
+#: kofficecore/koDocument.cc:903
 msgid "Error while saving embedded documents"
 msgstr ""
 
-#: kofficecore/koDocument.cc:946
-msgid "Not able to write maindoc.xml"
+#: kofficecore/koDocument.cc:922
+msgid "Not able to write 'maindoc.xml'."
 msgstr ""
 
-#: kofficecore/koDocument.cc:1127
+#: kofficecore/koDocument.cc:1103
 msgid ""
 "An autosaved file for an unnamed document exists in %1.\n"
 "This file is dated %2\n"
@@ -430,7 +447,7 @@ msgstr ""
 "Li date di ç' fitchî la est %2\n"
 "Voloz vs ki djel drove?"
 
-#: kofficecore/koDocument.cc:1185
+#: kofficecore/koDocument.cc:1156
 #, c-format
 msgid ""
 "Malformed URL\n"
@@ -439,7 +456,7 @@ msgstr ""
 "URL må basti\n"
 "%1"
 
-#: kofficecore/koDocument.cc:1201
+#: kofficecore/koDocument.cc:1172
 msgid ""
 "An autosaved file exists for this document.\n"
 "Do you want to open it instead?"
@@ -447,12 +464,12 @@ msgstr ""
 "On fitchî ki dj' a schapé tot seu egzistêye po ci documint ci\n"
 "Voloz vs ki djel drove ?"
 
-#: kofficecore/koDocument.cc:1240
+#: kofficecore/koDocument.cc:1211 kofficeui/koTemplateChooseDia.cc:79
 msgid "The file %1 doesn't exist."
 msgstr "Li fitchî %1 n' egzisteye nén"
 
-#: kofficecore/koDocument.cc:1297 kofficecore/koDocument.cc:1313
-#: kofficecore/koDocument.cc:1334
+#: kofficecore/koDocument.cc:1268 kofficecore/koDocument.cc:1284
+#: kofficecore/koDocument.cc:1305
 #, c-format
 msgid ""
 "Could not open\n"
@@ -461,7 +478,7 @@ msgstr ""
 "Dji n' a savu drovi\n"
 "%1"
 
-#: kofficecore/koDocument.cc:1336
+#: kofficecore/koDocument.cc:1307
 msgid ""
 "Could not open %1\n"
 "Reason: %2"
@@ -469,39 +486,39 @@ msgstr ""
 "Dji n' a savou drovi li fitchî %1\n"
 "Vochal li råjhon: %2"
 
-#: kofficecore/koDocument.cc:1409
-msgid "Couldn't open the file for reading (check read permissions)"
+#: kofficecore/koDocument.cc:1380
+msgid "Couldn't open the file for reading (check read permissions)."
 msgstr ""
 
-#: kofficecore/koDocument.cc:1419
-msgid "Couldn't read the beginning of the file"
+#: kofficecore/koDocument.cc:1390
+msgid "Couldn't read the beginning of the file."
 msgstr ""
 
-#: kofficecore/koDocument.cc:1445 kofficecore/koDocument.cc:1479
+#: kofficecore/koDocument.cc:1416 kofficecore/koDocument.cc:1450
 msgid ""
 "parsing error in the main document at line %1, column %2\n"
 "Error message: %3"
 msgstr ""
 
-#: kofficecore/koDocument.cc:1462
-msgid "Not a valid KOffice file"
+#: kofficecore/koDocument.cc:1433
+msgid "Not a valid KOffice file."
 msgstr ""
 
-#: kofficecore/koDocument.cc:1495
-msgid "Invalid document: no file 'maindoc.xml'"
+#: kofficecore/koDocument.cc:1466
+msgid "Invalid document: no file 'maindoc.xml'."
 msgstr ""
 
-#: kofficecore/koDocument.cc:1507
-msgid "Couldn't load embedded objects"
+#: kofficecore/koDocument.cc:1478
+msgid "Couldn't load embedded objects."
 msgstr ""
 
-#: kofficecore/koDocument.cc:1645 kofficecore/koMainWindow.cc:969
+#: kofficecore/koDocument.cc:1616 kofficecore/koMainWindow.cc:971
 msgid ""
 "<p>The document <b>'%1'</b> has been modified.</p>"
 "<p>Do you want to save it?</p>"
 msgstr "<p>Li documint <b>«%1»</b> a stî candjî.</p><p>El voloz schaper?</p>"
 
-#: kofficecore/koDocument.cc:1786
+#: kofficecore/koDocument.cc:1757
 msgid "Internal error: saveXML not implemented"
 msgstr ""
 
@@ -530,8 +547,8 @@ msgid "Skip"
 msgstr "Passer houte"
 
 #: kofficecore/koDocumentChild.cc:250
-msgid "Couldn't load embedded object"
-msgstr ""
+msgid "Couldn't load embedded object."
+msgstr "Dji n' a savou tcherdjî l' ravalé objet."
 
 #: kofficecore/koDocumentChild.cc:252
 #, c-format
@@ -548,7 +565,7 @@ msgstr "Informåcion sol Documint"
 msgid "Author"
 msgstr "Auteur"
 
-#: kofficecore/koDocumentInfoDlg.cc:144 kofficeui/koTemplateChooseDia.cc:625
+#: kofficecore/koDocumentInfoDlg.cc:144 kofficeui/koTemplateChooseDia.cc:636
 #: kofficeui/koTemplateCreateDia.cc:96 kotext/koStylist.cc:184
 #: kotext/koVariableDlgs.cc:69 kotext/koVariableDlgs.cc:299
 msgid "Name:"
@@ -604,15 +621,23 @@ msgstr "Å dfait"
 msgid "Abstract:"
 msgstr ""
 
-#: kofficecore/koFilterManager.cc:146 kofficecore/koFilterManager.cc:155
+#: kofficecore/koFilterManager.cc:45
+msgid "Choose Filter"
+msgstr "Tchoezi passete"
+
+#: kofficecore/koFilterManager.cc:57
+msgid "Select a filter:"
+msgstr "Tchoezi ene passete:"
+
+#: kofficecore/koFilterManager.cc:256 kofficecore/koFilterManager.cc:265
 msgid "Could not export file."
 msgstr "Dji n' a savou ebaguer l' fitchî."
 
-#: kofficecore/koFilterManager.cc:146 kofficecore/koFilterManager.cc:155
+#: kofficecore/koFilterManager.cc:256 kofficecore/koFilterManager.cc:265
 msgid "Missing Export Filter"
 msgstr "Passete d' ebagaedje mankante"
 
-#: kofficecore/koFilterManager.cc:374
+#: kofficecore/koFilterManager.cc:484
 #, c-format
 msgid ""
 "Could not import file of type\n"
@@ -621,7 +646,7 @@ msgstr ""
 "Dji n' a savou abaguer on fitchî del sôre\n"
 "%1"
 
-#: kofficecore/koFilterManager.cc:377
+#: kofficecore/koFilterManager.cc:487
 msgid "Missing Import Filter"
 msgstr "Passete d' abagaedje mankante"
 
@@ -745,91 +770,91 @@ msgstr "US Tabloyide"
 msgid "without name"
 msgstr "sins no"
 
-#: kofficecore/koMainWindow.cc:103
+#: kofficecore/koMainWindow.cc:105
 msgid "%1 (KOffice-1.1 Format)"
 msgstr ""
 
-#: kofficecore/koMainWindow.cc:104
+#: kofficecore/koMainWindow.cc:106
 msgid "%1 (Uncompressed XML Files)"
 msgstr ""
 
-#: kofficecore/koMainWindow.cc:118
+#: kofficecore/koMainWindow.cc:120
 msgid "%1 (%2 Compatible)"
 msgstr ""
 
-#: kofficecore/koMainWindow.cc:252
+#: kofficecore/koMainWindow.cc:254
 msgid "Send File..."
 msgstr "Evoyî fitchî..."
 
-#: kofficecore/koMainWindow.cc:259
+#: kofficecore/koMainWindow.cc:261
 msgid "I&mport..."
 msgstr "&Aberweter"
 
-#: kofficecore/koMainWindow.cc:262
+#: kofficecore/koMainWindow.cc:264
 msgid "E&xport..."
 msgstr "&Eberweter..."
 
-#: kofficecore/koMainWindow.cc:266
+#: kofficecore/koMainWindow.cc:268
 msgid "&Document Information"
 msgstr "Informåcion sol &documint"
 
-#: kofficecore/koMainWindow.cc:289
+#: kofficecore/koMainWindow.cc:291
 msgid "&Close All Views"
 msgstr "&Clôre tos les Håynaedjes"
 
-#: kofficecore/koMainWindow.cc:294
+#: kofficecore/koMainWindow.cc:296
 msgid "&Split View"
 msgstr "Di&spårti li Håynaedje"
 
-#: kofficecore/koMainWindow.cc:297
+#: kofficecore/koMainWindow.cc:299
 msgid "&Remove View"
 msgstr "&Oister ci Håynaedje"
 
-#: kofficecore/koMainWindow.cc:302
+#: kofficecore/koMainWindow.cc:304
 msgid "Splitter &Orientation"
 msgstr ""
 
-#: kofficecore/koMainWindow.cc:306
+#: kofficecore/koMainWindow.cc:308
 msgid "&Vertical"
 msgstr "&Astampé"
 
-#: kofficecore/koMainWindow.cc:307
+#: kofficecore/koMainWindow.cc:309
 msgid "&Horizontal"
 msgstr "&Coûtchî"
 
-#: kofficecore/koMainWindow.cc:633
+#: kofficecore/koMainWindow.cc:635
 msgid "%1 (unknown file type)"
 msgstr "%1 (sôre di fitchî nén cnoxhowe)"
 
-#: kofficecore/koMainWindow.cc:643
+#: kofficecore/koMainWindow.cc:645
 msgid ""
 "<qt>Saving as a %1 may result in some loss of formatting."
 "<p>Do you still want to save in this format?</qt>"
 msgstr ""
 
-#: kofficecore/koMainWindow.cc:646
+#: kofficecore/koMainWindow.cc:648
 msgid "Confirm Save"
 msgstr ""
 
-#: kofficecore/koMainWindow.cc:657
+#: kofficecore/koMainWindow.cc:659
 msgid ""
 "<qt>Exporting as a %1 may result in some loss of formatting."
 "<p>Do you still want to export to this format?</qt>"
 msgstr ""
 
-#: kofficecore/koMainWindow.cc:660
+#: kofficecore/koMainWindow.cc:662
 msgid "Confirm Export"
 msgstr ""
 
-#: kofficecore/koMainWindow.cc:732
+#: kofficecore/koMainWindow.cc:734
 msgid "Save Document As"
 msgstr "Schaper eyet (r)lomer"
 
-#: kofficecore/koMainWindow.cc:734
+#: kofficecore/koMainWindow.cc:736
 msgid "Export Document As"
 msgstr "Ebaguer documint come"
 
-#: kofficecore/koMainWindow.cc:792
+#: kofficecore/koMainWindow.cc:794
 msgid ""
 "A document with this name already exists.\n"
 "Do you want to overwrite it?"
@@ -837,31 +862,31 @@ msgstr ""
 "I gn a ddja on documint avou ci no la.\n"
 "El voloz spotchî?"
 
-#: kofficecore/koMainWindow.cc:1029 kofficeui/koTemplateChooseDia.cc:148
+#: kofficecore/koMainWindow.cc:1031 kofficeui/koTemplateChooseDia.cc:160
 msgid "Open Document"
 msgstr "Drovi on documint"
 
-#: kofficecore/koMainWindow.cc:1031
+#: kofficecore/koMainWindow.cc:1033
 msgid "Import Document"
 msgstr "Aberweter on documint"
 
-#: kofficecore/koMainWindow.cc:1450
+#: kofficecore/koMainWindow.cc:1452
 msgid "Show %1 Toolbar"
 msgstr "Håyner %1 Bår ås Usteyes"
 
-#: kofficecore/koMainWindow.cc:1520
+#: kofficecore/koMainWindow.cc:1522
 msgid "ERROR: File not found."
 msgstr ""
 
-#: kofficecore/koMainWindow.cc:1521
+#: kofficecore/koMainWindow.cc:1523
 msgid "To send a file you must first have saved the file to the filesystem."
 msgstr ""
 
-#: kofficecore/koMainWindow.cc:1522
+#: kofficecore/koMainWindow.cc:1524
 msgid "Error: File Not Found!"
 msgstr ""
 
-#: kofficecore/koMainWindow.cc:1532
+#: kofficecore/koMainWindow.cc:1534
 msgid ""
 "You will lose all your changes!\n"
 "Do you want to continue?"
@@ -1230,43 +1255,43 @@ msgstr ""
 msgid "Tabulator &Decimal Point"
 msgstr ""
 
-#: kofficeui/koTemplateChooseDia.cc:320
+#: kofficeui/koTemplateChooseDia.cc:333
 msgid "Selected Template"
 msgstr ""
 
-#: kofficeui/koTemplateChooseDia.cc:377
+#: kofficeui/koTemplateChooseDia.cc:389
 msgid "Empty Document"
 msgstr "Documint vude"
 
-#: kofficeui/koTemplateChooseDia.cc:377
+#: kofficeui/koTemplateChooseDia.cc:389
 msgid "Creates an empty document"
 msgstr "Ahiver on documint vude"
 
-#: kofficeui/koTemplateChooseDia.cc:393
+#: kofficeui/koTemplateChooseDia.cc:405
 msgid "Always start %1 with the selected template"
 msgstr ""
 
-#: kofficeui/koTemplateChooseDia.cc:445
+#: kofficeui/koTemplateChooseDia.cc:457
 msgid "&Create Document"
 msgstr "A&hiver on documint"
 
-#: kofficeui/koTemplateChooseDia.cc:450
+#: kofficeui/koTemplateChooseDia.cc:462
 msgid "Open &Existing Document"
 msgstr "Drovi on documint k' &egzistêye dedja"
 
-#: kofficeui/koTemplateChooseDia.cc:455
+#: kofficeui/koTemplateChooseDia.cc:467
 msgid "Open &Recent Document"
 msgstr "Ridrovi onk des &dierins documints drovous"
 
-#: kofficeui/koTemplateChooseDia.cc:478
+#: kofficeui/koTemplateChooseDia.cc:490
 msgid "Create Document"
 msgstr "Ahiver documint"
 
-#: kofficeui/koTemplateChooseDia.cc:628
+#: kofficeui/koTemplateChooseDia.cc:639
 msgid "Description:"
 msgstr "Discrijhaedje:"
 
-#: kofficeui/koTemplateChooseDia.cc:630
+#: kofficeui/koTemplateChooseDia.cc:641
 msgid "No description available"
 msgstr "I n' a nou discrijhaedje"
 
@@ -2308,8 +2333,6 @@ msgid "%1 arguments are not needed"
 msgstr ""
 
 #: koscript/koscript_eval.cc:800 koscript/koscript_eval.cc:1695
-#: koscript/koscript_eval.cc:1725 koscript/koscript_eval.cc:2432
-#: koscript/koscript_eval.cc:2501
 msgid "Expected a left expression in assignment"
 msgstr ""
 
@@ -2359,7 +2382,7 @@ msgid "From %1 to Map"
 msgstr ""
 
 #: koscript/koscript_eval.cc:1120
-msgid "Expected a left expression"
+msgid "Expected a left expression."
 msgstr ""
 
 #: koscript/koscript_eval.cc:1166 koscript/koscript_eval.cc:1198
@@ -2384,6 +2407,11 @@ msgstr ""
 msgid "From %1 to Boolean"
 msgstr ""
 
+#: koscript/koscript_eval.cc:1725 koscript/koscript_eval.cc:2432
+#: koscript/koscript_eval.cc:2501
+msgid "Expected a left expression in assignment."
+msgstr ""
+
 #: koscript/koscript_eval.cc:1796
 #, c-format
 msgid "Operator < not defined for type %1"
@@ -2395,7 +2423,7 @@ msgid "Operator > not defined for type %1"
 msgstr ""
 
 #: koscript/koscript_eval.cc:1980
-msgid "Expected a left expression in substitute"
+msgid "Expected a left expression in substitute."
 msgstr ""
 
 #: koscript/koscript_eval.cc:2037
@@ -2423,19 +2451,19 @@ msgid "Invalid date format: %1"
 msgstr ""
 
 #: koscript/koscript_func.cc:135
-msgid "Cannot calculate length of a %1 value"
+msgid "Cannot calculate length of a %1 value."
 msgstr ""
 
 #: koscript/koscript_func.cc:188
-msgid "Cannot determine emptiness of a %1 value"
+msgid "Cannot determine emptiness of a %1 value."
 msgstr ""
 
 #: koscript/koscript_func.cc:222
-msgid "Cannot calculate a numerical value from a %1 value"
+msgid "Cannot calculate a numerical value from a %1 value."
 msgstr ""
 
 #: koscript/koscript_func.cc:253
-msgid "Cannot calculate a floating point value from a %1 value"
+msgid "Cannot calculate a floating point value from a %1 value."
 msgstr ""
 
 #: koscript/koscript_scriptmenu.cc:81
@@ -2460,7 +2488,7 @@ msgid "The variable '%1' in object of struct '%2' is readonly"
 msgstr ""
 
 #: koscript/koscript_util.cc:87
-msgid "Arguments did not match the methods %1 parameter list"
+msgid "Arguments did not match the methods %1 parameter list."
 msgstr ""
 
 #: koscript/koscript_util.cc:93
@@ -2486,13 +2514,14 @@ msgid "KOffice script interpreter."
 msgstr ""
 
 #: koscript/main.cc:54
-msgid "You must specify a script.\n"
+msgid ""
+"You must specify a script.\n"
 msgstr ""
 
 #: kotext/dateformatwidget_impl.cc:24
 msgid ""
 "_: DateFormat\n"
-"This dialog allows you to set the format of the date variable"
+"Format of Date Variable"
 msgstr ""
 
 #: kotext/dateformatwidget_impl.cc:28 kotext/dateformatwidget_impl.cc:83
@@ -3477,7 +3506,7 @@ msgid "Value:"
 msgstr "Valixhance:"
 
 #: kotext/kocommand.cc:377
-msgid "Change Variable SubType"
+msgid "Change Variable Subtype"
 msgstr ""
 
 #: kotext/kocommand.cc:412
@@ -3592,55 +3621,55 @@ msgid ""
 "Unknown"
 msgstr "Nén cnoxhou"
 
-#: kotext/kotextformat.cc:1128 kotext/kotextformat.cc:1139
+#: kotext/kotextformat.cc:1185 kotext/kotextformat.cc:1196
 msgid "Without"
 msgstr ""
 
-#: kotext/kotextformat.cc:1129 kotext/kotextformat.cc:1140
+#: kotext/kotextformat.cc:1186 kotext/kotextformat.cc:1197
 msgid "Single"
 msgstr ""
 
-#: kotext/kotextformat.cc:1130 kotext/kotextformat.cc:1141
+#: kotext/kotextformat.cc:1187 kotext/kotextformat.cc:1198
 msgid "Simple Bold"
 msgstr ""
 
-#: kotext/kotextformat.cc:1131 kotext/kotextformat.cc:1142
+#: kotext/kotextformat.cc:1188 kotext/kotextformat.cc:1199
 msgid "Double"
 msgstr "Dobe"
 
-#: kotext/kotextformat.cc:1132
+#: kotext/kotextformat.cc:1189
 msgid "Wave"
 msgstr "Wache"
 
-#: kotext/kotextformat.cc:1150
+#: kotext/kotextformat.cc:1207
 msgid "Uppercase"
 msgstr ""
 
-#: kotext/kotextformat.cc:1151
+#: kotext/kotextformat.cc:1208
 msgid "Lowercase"
 msgstr ""
 
-#: kotext/kotextformat.cc:1152
+#: kotext/kotextformat.cc:1209
 msgid "Small Caps"
 msgstr ""
 
-#: kotext/kotextformat.cc:1159 kotext/kotextformat.cc:1170
+#: kotext/kotextformat.cc:1216 kotext/kotextformat.cc:1227
 msgid "Solid Line"
 msgstr ""
 
-#: kotext/kotextformat.cc:1160 kotext/kotextformat.cc:1171
+#: kotext/kotextformat.cc:1217 kotext/kotextformat.cc:1228
 msgid "Dash Line"
 msgstr ""
 
-#: kotext/kotextformat.cc:1161 kotext/kotextformat.cc:1172
+#: kotext/kotextformat.cc:1218 kotext/kotextformat.cc:1229
 msgid "Dot Line"
 msgstr ""
 
-#: kotext/kotextformat.cc:1162 kotext/kotextformat.cc:1173
+#: kotext/kotextformat.cc:1219 kotext/kotextformat.cc:1230
 msgid "Dash Dot Line"
 msgstr ""
 
-#: kotext/kotextformat.cc:1163 kotext/kotextformat.cc:1174
+#: kotext/kotextformat.cc:1220 kotext/kotextformat.cc:1231
 msgid "Dash Dot Dot Line"
 msgstr ""
 
@@ -3723,7 +3752,7 @@ msgid "Insert Line Break"
 msgstr ""
 
 #: kotext/kotextview.cc:1109
-msgid "Insert non-breaking Space"
+msgid "Insert Non-Breaking Space"
 msgstr ""
 
 #: kotext/kotextview.cc:1122 kotext/kotextview.cc:1130
@@ -3979,7 +4008,7 @@ msgid "File Name"
 msgstr "No do fitchî"
 
 #: kotext/kovariable.cc:1596
-msgid "File Name Without Extension"
+msgid "File Name without Extension"
 msgstr "No do fitchî sins cawete"
 
 #: kotext/kovariable.cc:1598
@@ -4257,9 +4286,6 @@ msgstr "Coridjeu d' ortografeye"
 #~ msgid "Name : "
 #~ msgstr "No: "
 
-#~ msgid "Choose"
-#~ msgstr "Tchoezi"
-
 #~ msgid "C&hoose..."
 #~ msgstr "Tc&hoezi..."
 
@@ -4339,4 +4365,3 @@ msgstr "Coridjeu d' ortografeye"
 #~ "<qt>Vos vos aprestez a schaper li documint avou li cogne %1. <p>Do côp, "
 #~ "vos pôrîz piede ene pårteye di l' adjinçnaedje di vosse documint. Dji "
 #~ "continowe?</qt>"
-
