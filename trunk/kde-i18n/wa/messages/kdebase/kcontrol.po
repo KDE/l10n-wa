@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kcontrol 0.4\n"
-"POT-Creation-Date: 2000-09-25 01:22+0200\n"
+"POT-Creation-Date: 2001-02-09 01:27+0100\n"
 "PO-Revision-Date: 1999-03-18 23:11+0100\n"
 "Last-Translator: Lorint Hendschel <LorintHendschel@skynet.be>\n"
 "Language-Team: walon <linux-wa@chanae.alphanet.ch>\n"
@@ -17,66 +17,68 @@ msgstr ""
 "Content-Type: text/plain; charset=iso-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: aboutwidget.cpp:52 main.cpp:78 toplevel.cpp:60 toplevel.cpp:270
-msgid "KDE Control Center"
-msgstr "KDE Control Center"
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr ""
 
-#: aboutwidget.cpp:55
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr ""
+
+#: aboutwidget.cpp:35
 msgid "Configure your desktop environment."
 msgstr ""
 
-#: aboutwidget.cpp:66
+#: aboutwidget.cpp:37
 msgid ""
 "Welcome to the \"KDE Control Center\", a central place to configure your "
 "desktop environment. Select an item from the index on the left to load a "
 "configuration module."
 msgstr ""
 
-#: aboutwidget.cpp:91
-#, fuzzy
-msgid "KDE version:"
-msgstr "KDE, modeye: "
-
-#: aboutwidget.cpp:99
-#, fuzzy
-msgid "User:"
-msgstr "Ûzeu: "
-
-#: aboutwidget.cpp:107
-#, fuzzy
-msgid "Hostname:"
-msgstr "Lodjeu: "
-
-#: aboutwidget.cpp:115
-#, fuzzy
-msgid "System:"
-msgstr "Sistinme: "
-
-#: aboutwidget.cpp:123
-#, fuzzy
-msgid "Release:"
-msgstr "Modeye el modeye: "
-
-#: aboutwidget.cpp:131
-#, fuzzy
-msgid "Machine:"
-msgstr "Éndjole: "
-
-#: aboutwidget.cpp:147
+#: aboutwidget.cpp:43
 msgid ""
 "Click on the \"<b>Help</b>\" tab on the left to view help for the active "
 "control module. Use the \"<b>Search</b>\" tab if you are unsure where to "
 "look for a particular configuration option."
 msgstr ""
 
-#: dockcontainer.cpp:41 modules.cpp:140
-msgid "<big>Loading ...</big>"
-msgstr ""
+#: aboutwidget.cpp:49
+#, fuzzy
+msgid "KDE version:"
+msgstr "KDE, modeye: "
 
-#: dockcontainer.cpp:46
-msgid ""
-"<big>You need super user privileges to run this control "
-"module.</big><br>Click on the \"Modify\" button below."
+#: aboutwidget.cpp:50
+#, fuzzy
+msgid "User:"
+msgstr "Ûzeu: "
+
+#: aboutwidget.cpp:51
+#, fuzzy
+msgid "Hostname:"
+msgstr "Lodjeu: "
+
+#: aboutwidget.cpp:52
+#, fuzzy
+msgid "System:"
+msgstr "Sistinme: "
+
+#: aboutwidget.cpp:53
+#, fuzzy
+msgid "Release:"
+msgstr "Modeye el modeye: "
+
+#: aboutwidget.cpp:54
+#, fuzzy
+msgid "Machine:"
+msgstr "Éndjole: "
+
+#: dockcontainer.cpp:43 modules.cpp:146
+msgid "<big>Loading ...</big>"
 msgstr ""
 
 #: dockcontainer.cpp:77
@@ -87,14 +89,21 @@ msgid ""
 msgstr ""
 
 #: dockcontainer.cpp:82
+msgid ""
+"There are unsaved changes in the active module.\n"
+"Do you want to apply the changes before exiting\n"
+"the Control Center or forget the changes?"
+msgstr ""
+
+#: dockcontainer.cpp:87
 msgid "Unsaved changes"
 msgstr ""
 
-#: dockcontainer.cpp:83 proxywidget.cpp:85
+#: dockcontainer.cpp:88 proxywidget.cpp:154
 msgid "&Apply"
 msgstr ""
 
-#: dockcontainer.cpp:84
+#: dockcontainer.cpp:89
 msgid "&Forget"
 msgstr ""
 
@@ -109,44 +118,74 @@ msgid ""
 "\"kcontrol/index.html\">here</a> to read the general control center manual."
 msgstr ""
 
-#: kcdialog.cpp:37 proxywidget.cpp:82
-msgid "&Reset"
+#: kcdialog.cpp:36 kecdialog.cpp:39 proxywidget.cpp:153
+msgid "Use &Defaults"
 msgstr ""
 
-#: kcminit.cpp:36 kcmshell.cpp:47
+#: kcminit.cpp:35 kcmshell.cpp:50
 msgid "Configuration module to open."
 msgstr ""
 
-#: kcminit.cpp:43
+#: kcminit.cpp:42
 msgid "KCMInit"
 msgstr ""
 
-#: kcminit.cpp:45
+#: kcminit.cpp:44
 msgid "KCMInit - runs startups initialisation for Control Modules."
 msgstr ""
 
-#: kcminit.cpp:79 kcmshell.cpp:139
+#: kcminit.cpp:78 kcmshell.cpp:78
 msgid "Module %1 not found!"
 msgstr ""
 
-#: kcmshell.cpp:46
+#: kcmshell.cpp:49
 msgid "List all possible modules"
 msgstr ""
 
-#: kcmshell.cpp:48
+#: kcmshell.cpp:51
 msgid "Window ID to embed into."
 msgstr ""
 
-#: kcmshell.cpp:54
+#: kcmshell.cpp:128
 #, fuzzy
 msgid "KDE Control Module"
 msgstr "KDE Control Center"
 
-#: kcmshell.cpp:56
+#: kcmshell.cpp:130
 msgid "A tool to start single KDE control modules"
 msgstr ""
 
-#: main.cpp:79
+#: kcmshell.cpp:243
+#, c-format
+msgid ""
+"There was an error loading the module.\n"
+"The diagnostics is:\n"
+"%1"
+msgstr ""
+
+#: kcrootonly.cpp:31
+msgid ""
+"<big>You need super user privileges to run this control "
+"module.</big><br>Click on the \"Modify\" button below."
+msgstr ""
+
+#: kecdialog.cpp:38
+msgid "Settings"
+msgstr ""
+
+#: kecdialog.cpp:85
+msgid ""
+"There was an error loading module\n"
+"'%1'\n"
+"The diagnostics is:\n"
+"%2"
+msgstr ""
+
+#: main.cpp:80
+msgid "KDE Control Center"
+msgstr "KDE Control Center"
+
+#: main.cpp:81
 #, fuzzy
 msgid "The KDE Control Center"
 msgstr "KDE Control Center"
@@ -169,11 +208,11 @@ msgstr ""
 msgid "The currently loaded configuration module."
 msgstr ""
 
-#: proxywidget.cpp:81
-msgid "&Default"
+#: proxywidget.cpp:155
+msgid "&Reset"
 msgstr ""
 
-#: proxywidget.cpp:86
+#: proxywidget.cpp:156
 msgid "&Modify"
 msgstr ""
 
@@ -185,63 +224,63 @@ msgstr ""
 msgid "Icon &size"
 msgstr ""
 
-#: searchwidget.cpp:60
+#: searchwidget.cpp:90
 msgid "Se&arch:"
 msgstr ""
 
-#: searchwidget.cpp:67
+#: searchwidget.cpp:97
 msgid "&Keywords:"
 msgstr ""
 
-#: searchwidget.cpp:74
+#: searchwidget.cpp:104
 msgid "&Results:"
 msgstr ""
 
-#: toplevel.cpp:95
+#: toplevel.cpp:94
 msgid "Choose between Index, Search and Quick Help"
 msgstr ""
 
-#: toplevel.cpp:101
+#: toplevel.cpp:100
 msgid "In&dex"
 msgstr ""
 
-#: toplevel.cpp:109
+#: toplevel.cpp:108
 msgid "S&earch"
 msgstr ""
 
-#: toplevel.cpp:113
+#: toplevel.cpp:112
 msgid "Hel&p"
 msgstr ""
 
-#: toplevel.cpp:177
+#: toplevel.cpp:194
 msgid "&Icon View"
 msgstr ""
 
-#: toplevel.cpp:182
+#: toplevel.cpp:199
 msgid "&Tree View"
 msgstr ""
 
-#: toplevel.cpp:187
+#: toplevel.cpp:204
 msgid "&Small"
 msgstr ""
 
-#: toplevel.cpp:192
+#: toplevel.cpp:209
 msgid "&Medium"
 msgstr ""
 
-#: toplevel.cpp:197
+#: toplevel.cpp:214
 msgid "&Large"
 msgstr ""
 
-#: toplevel.cpp:204 toplevel.cpp:285
+#: toplevel.cpp:223 toplevel.cpp:294
 msgid "&Report Bug..."
 msgstr ""
 
-#: toplevel.cpp:212
+#: toplevel.cpp:229
 msgid "&Modules"
 msgstr ""
 
-#: toplevel.cpp:287
+#: toplevel.cpp:296
 msgid "Report Bug on Module %1..."
 msgstr ""
 
