@@ -14,7 +14,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwm 0.4\n"
-"POT-Creation-Date: 2004-05-29 01:11+0200\n"
+"POT-Creation-Date: 2004-07-20 01:19+0200\n"
 "PO-Revision-Date: 2004-06-11 07:26+0200\n"
 "Last-Translator: Pablo Saratxaga <pablo@walon.org>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -55,7 +55,19 @@ msgstr "&Bodjant"
 msgid "Ad&vanced"
 msgstr "&Sipepieus"
 
-#: main.cpp:151
+#: main.cpp:109
+msgid "kcmkwinoptions"
+msgstr ""
+
+#: main.cpp:109
+msgid "Window Behavior Configuration Module"
+msgstr "Module d' apontiaedje del dujhance des purneas"
+
+#: main.cpp:111
+msgid "(c) 1997 - 2002 KWin and KControl Authors"
+msgstr "© 1997-2002 Les oteurs di KWin eyet KControl"
+
+#: main.cpp:167
 msgid ""
 "<h1>Window Behavior</h1> Here you can customize the way windows behave when "
 "being moved, resized or clicked on. You can also specify a focus policy as "
@@ -64,18 +76,6 @@ msgid ""
 "use KWin as your window manager. If you do use a different window manager, "
 "please refer to its documentation for how to customize window behavior."
 msgstr ""
-
-#: main.cpp:162
-msgid "kcmkwinoptions"
-msgstr ""
-
-#: main.cpp:162
-msgid "Window Behavior Configuration Module"
-msgstr "Module d' apontiaedje del dujhance des purneas"
-
-#: main.cpp:164
-msgid "(c) 1997 - 2002 KWin and KControl Authors"
-msgstr "© 1997-2002 Les oteurs di KWin eyet KControl"
 
 #: mouse.cpp:63
 msgid "&Titlebar double-click:"
@@ -384,11 +384,11 @@ msgstr ""
 msgid "Auto &raise"
 msgstr "Rimonte tote &seule"
 
-#: windows.cpp:163 windows.cpp:176 windows.cpp:537
+#: windows.cpp:163 windows.cpp:176 windows.cpp:531
 msgid "Dela&y:"
 msgstr "&Tårdjaedje:"
 
-#: windows.cpp:166 windows.cpp:179 windows.cpp:540 windows.cpp:568
+#: windows.cpp:166 windows.cpp:179 windows.cpp:534 windows.cpp:562
 msgid " msec"
 msgstr " ms"
 
@@ -436,174 +436,167 @@ msgid "Navigation"
 msgstr "Naiviaedje"
 
 #: windows.cpp:211
-msgid "Walk through windows mode:"
+msgid "Show window list while switching windows"
 msgstr ""
 
-#: windows.cpp:213
-msgid "&KDE"
-msgstr "&KDE"
-
-#: windows.cpp:215
-msgid "CD&E"
-msgstr "CD&E"
-
-#: windows.cpp:218
+#: windows.cpp:214
 msgid ""
 "Hold down the Alt key and press the Tab key repeatedly to walk through the "
 "windows on the current desktop (the Alt+Tab combination can be "
-"reconfigured). The two different modes mean:"
-"<ul>"
-"<li><b>KDE</b>: a nice widget is shown, displaying the icons of all windows "
-"to walk through and the title of the currently selected one;"
-"<li><b>CDE</b>: the focus is passed to a new window each time Tab is "
-"pressed. No fancy widget.</li></ul>"
+"reconfigured).\n"
+"\n"
+"If this checkbox is checked a popup widget is shown, displaying the icons of "
+"all windows to walk through and the title of the currently selected one.\n"
+"\n"
+"Otherwise, the focus is passed to a new window each time Tab is pressed, "
+"with no popup widget.  In addition, the previously activated window will be "
+"sent to the back in this mode."
 msgstr ""
 
-#: windows.cpp:229
+#: windows.cpp:225
 msgid "&Traverse windows on all desktops"
 msgstr ""
 
-#: windows.cpp:232
+#: windows.cpp:228
 msgid ""
 "Leave this option disabled if you want to limit walking through windows to "
 "the current desktop."
 msgstr ""
 
-#: windows.cpp:236
+#: windows.cpp:232
 msgid "Desktop navi&gation wraps around"
 msgstr ""
 
-#: windows.cpp:239
+#: windows.cpp:235
 msgid ""
 "Enable this option if you want keyboard or active desktop border navigation "
 "beyond the edge of a desktop to take you to the opposite edge of the new "
 "desktop."
 msgstr ""
 
-#: windows.cpp:243
+#: windows.cpp:239
 msgid "Popup desktop name on desktop &switch"
 msgstr ""
 
-#: windows.cpp:246
+#: windows.cpp:242
 msgid ""
 "Enable this option if you wish to see the current desktop name popup "
 "whenever the current desktop is changed."
 msgstr ""
 
-#: windows.cpp:526
+#: windows.cpp:520
 msgid "Shading"
 msgstr ""
 
-#: windows.cpp:528
+#: windows.cpp:522
 msgid "Anima&te"
 msgstr ""
 
-#: windows.cpp:529
+#: windows.cpp:523
 msgid ""
 "Animate the action of reducing the window to its titlebar (shading) as well "
 "as the expansion of a shaded window"
 msgstr ""
 
-#: windows.cpp:532
+#: windows.cpp:526
 msgid "&Enable hover"
 msgstr ""
 
-#: windows.cpp:542
+#: windows.cpp:536
 msgid ""
 "If Shade Hover is enabled, a shaded window will un-shade automatically when "
 "the mouse pointer has been over the title bar for some time."
 msgstr ""
 
-#: windows.cpp:545
+#: windows.cpp:539
 msgid ""
 "Sets the time in milliseconds before the window unshades when the mouse "
 "pointer goes over the shaded window."
 msgstr ""
 
-#: windows.cpp:556
+#: windows.cpp:550
 msgid "Active Desktop Borders"
 msgstr ""
 
-#: windows.cpp:559
+#: windows.cpp:553
 msgid ""
 "If this option is enabled, moving the mouse to a screen border will change "
 "your desktop. This is e.g. useful if you want to drag windows from one "
 "desktop to the other."
 msgstr ""
 
-#: windows.cpp:562
+#: windows.cpp:556
 msgid "D&isabled"
 msgstr ""
 
-#: windows.cpp:563
+#: windows.cpp:557
 msgid "Only &when moving windows"
 msgstr ""
 
-#: windows.cpp:564
+#: windows.cpp:558
 msgid "A&lways enabled"
 msgstr ""
 
-#: windows.cpp:569
+#: windows.cpp:563
 msgid "Desktop &switch delay:"
 msgstr ""
 
-#: windows.cpp:570
+#: windows.cpp:564
 msgid ""
 "Here you can set a delay for switching desktops using the active borders "
 "feature. Desktops will be switched after the mouse has been pushed against a "
 "screen border for the specified number of milliseconds."
 msgstr ""
 
-#: windows.cpp:583
+#: windows.cpp:577
 msgid "Focus stealing prevention level:"
 msgstr ""
 
-#: windows.cpp:585
+#: windows.cpp:579
 msgid ""
 "_: Focus Stealing Prevention Level\n"
 "None"
 msgstr ""
 
-#: windows.cpp:586
+#: windows.cpp:580
 msgid ""
 "_: Focus Stealing Prevention Level\n"
 "Low"
 msgstr ""
 
-#: windows.cpp:587
+#: windows.cpp:581
 msgid ""
 "_: Focus Stealing Prevention Level\n"
 "Normal"
 msgstr ""
 
-#: windows.cpp:588
+#: windows.cpp:582
 msgid ""
 "_: Focus Stealing Prevention Level\n"
 "High"
 msgstr ""
 
-#: windows.cpp:589
+#: windows.cpp:583
 msgid ""
 "_: Focus Stealing Prevention Level\n"
 "Extreme"
 msgstr ""
 
-#: windows.cpp:593
+#: windows.cpp:587
 msgid ""
 "This option specifies how much KWin will try to prevent unwanted focus "
 "stealing caused by unexpected activation of new windows. (Note: This feature "
 "does not work with the Focus Under Mouse or Focus Strictly Under Mouse focus "
 "policies.)"
 "<ul>"
-"<li><em>None:</em> The standard old behavior - prevention is turned off and "
-"new windows always become activated.</li>"
+"<li><em>None:</em> Prevention is turned off and new windows always become "
+"activated.</li>"
 "<li><em>Low:</em> Prevention is enabled; when some window does not have "
 "support for the underlying mechanism and KWin cannot reliably decide whether "
 "to activate the window or not, it will be activated. This setting may have "
 "both worse and better results than normal level, depending on the "
 "applications.</li>"
-"<li><em>Normal:</em> Prevention is enabled; the default "
-"setting.</li>"
+"<li><em>Normal:</em> Prevention is enabled.</li>"
 "<li><em>High:</em> New windows get activated only if no window is currently "
 "active or if they belong to the currently active application. This setting "
 "is probably not really usable when not using mouse focus "
@@ -612,102 +605,102 @@ msgid ""
 "user.</li></ul>"
 msgstr ""
 
-#: windows.cpp:754
+#: windows.cpp:748
 msgid "Windows"
 msgstr "Purneas"
 
-#: windows.cpp:762
+#: windows.cpp:756
 msgid "Di&splay content in moving windows"
 msgstr ""
 
-#: windows.cpp:764
+#: windows.cpp:758
 msgid ""
 "Enable this option if you want a window's content to be fully shown while "
 "moving it, instead of just showing a window 'skeleton'. The result may not "
 "be satisfying on slow machines without graphic acceleration."
 msgstr ""
 
-#: windows.cpp:768
+#: windows.cpp:762
 msgid "Display content in &resizing windows"
 msgstr ""
 
-#: windows.cpp:770
+#: windows.cpp:764
 msgid ""
 "Enable this option if you want a window's content to be shown while resizing "
 "it, instead of just showing a window 'skeleton'. The result may not be "
 "satisfying on slow machines."
 msgstr ""
 
-#: windows.cpp:774
+#: windows.cpp:768
 msgid "Display window &geometry when moving or resizing"
 msgstr ""
 
-#: windows.cpp:776
+#: windows.cpp:770
 msgid ""
 "Enable this option if you want a window's geometry to be displayed while it "
 "is being moved or resized. The window position relative to the top-left "
 "corner of the screen is displayed together with its size."
 msgstr ""
 
-#: windows.cpp:786
+#: windows.cpp:780
 msgid "Animate minimi&ze and restore"
 msgstr ""
 
-#: windows.cpp:788
+#: windows.cpp:782
 msgid ""
 "Enable this option if you want an animation shown when windows are minimized "
 "or restored."
 msgstr ""
 
-#: windows.cpp:802
+#: windows.cpp:796
 msgid "Slow"
 msgstr "Doûçmint"
 
-#: windows.cpp:806
+#: windows.cpp:800
 msgid "Fast"
 msgstr "Roed"
 
-#: windows.cpp:810
+#: windows.cpp:804
 msgid ""
 "Here you can set the speed of the animation shown when windows are minimized "
 "and restored. "
 msgstr ""
 
-#: windows.cpp:816
+#: windows.cpp:810
 msgid "Allow moving and resizing o&f maximized windows"
 msgstr ""
 
-#: windows.cpp:818
+#: windows.cpp:812
 msgid ""
 "When enabled, this feature activates the border of maximized windows and "
 "allows you to move or resize them, just like for normal windows"
 msgstr ""
 
-#: windows.cpp:824
+#: windows.cpp:818
 msgid "&Placement:"
 msgstr "&Plaeçmint:"
 
-#: windows.cpp:827
+#: windows.cpp:821
 msgid "Smart"
 msgstr "Malén"
 
-#: windows.cpp:828
+#: windows.cpp:822
 msgid "Cascade"
 msgstr "A pertinne"
 
-#: windows.cpp:829
+#: windows.cpp:823
 msgid "Random"
 msgstr "A l' astcheyance"
 
-#: windows.cpp:830
+#: windows.cpp:824
 msgid "Centered"
 msgstr "Å mitan"
 
-#: windows.cpp:831
+#: windows.cpp:825
 msgid "Zero-Cornered"
 msgstr ""
 
-#: windows.cpp:838
+#: windows.cpp:832
 msgid ""
 "The placement policy determines where a new window will appear on the "
 "desktop. For now, there are three different policies: "
@@ -717,48 +710,53 @@ msgid ""
 "<li><em>Random</em> will use a random position</li></ul>"
 msgstr ""
 
-#: windows.cpp:870
+#: windows.cpp:864
 msgid "Snap Zones"
 msgstr ""
 
-#: windows.cpp:874 windows.cpp:884
+#: windows.cpp:868 windows.cpp:878
 msgid "none"
 msgstr "nouk"
 
-#: windows.cpp:876
+#: windows.cpp:870
 msgid "&Border snap zone:"
 msgstr ""
 
-#: windows.cpp:877 windows.cpp:887
+#: windows.cpp:871 windows.cpp:881
 msgid " pixels"
 msgstr " picsels"
 
-#: windows.cpp:879
+#: windows.cpp:873
 msgid ""
 "Here you can set the snap zone for screen borders, i.e. the 'strength' of "
 "the magnetic field which will make windows snap to the border when moved "
 "near it."
 msgstr ""
 
-#: windows.cpp:886
+#: windows.cpp:880
 msgid "&Window snap zone:"
 msgstr ""
 
-#: windows.cpp:889
+#: windows.cpp:883
 msgid ""
 "Here you can set the snap zone for windows, i.e. the 'strength' of the "
 "magnetic field which will make windows snap to each other when they're moved "
 "near another window."
 msgstr ""
 
-#: windows.cpp:893
+#: windows.cpp:887
 msgid "Snap windows onl&y when overlapping"
 msgstr ""
 
-#: windows.cpp:894
+#: windows.cpp:888
 msgid ""
 "Here you can set that windows will be only snapped if you try to overlap "
 "them, i.e. they will not be snapped if the windows comes only near another "
 "window or border."
 msgstr ""
 
+#~ msgid "&KDE"
+#~ msgstr "&KDE"
+
+#~ msgid "CD&E"
+#~ msgstr "CD&E"
