@@ -1,3 +1,4 @@
 
 TOPLEVEL_LANG = wa
 
+SUBDIRS = $(AUTODIRS)
