@@ -1,0 +1,3 @@
+
+TOPLEVEL_LANG = wa
+
