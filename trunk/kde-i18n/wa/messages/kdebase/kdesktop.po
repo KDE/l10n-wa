@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdesktop\n"
-"POT-Creation-Date: 2004-01-12 01:57+0100\n"
-"PO-Revision-Date: 2004-01-17 11:55+0100\n"
+"POT-Creation-Date: 2004-06-10 01:19+0200\n"
+"PO-Revision-Date: 2004-06-11 07:21+0200\n"
 "Last-Translator: Pablo Saratxaga <pablo@walon.org>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,32 +16,32 @@ msgstr ""
 "X-Generator: KBabel 1.0.2\n"
 
 #: lock/lockdlg.cc:75
-msgid "<nobr><b>The screen is locked</b><br>"
-msgstr "<nobr><b>Li waitroûle est aclawêye</b><br>"
+msgid "<nobr><b>The session is locked</b><br>"
+msgstr "<nobr><b>Li session est aclawêye</b><br>"
 
 #: lock/lockdlg.cc:76
-msgid "<nobr><b>The screen is locked by %1</b><br>"
-msgstr "<nobr><b>Li waitroûle est aclawêye pa %1</b><br>"
+msgid "<nobr><b>The session is locked by %1</b><br>"
+msgstr "<nobr><b>Li session est aclawêye pa %1</b><br>"
 
 #: lock/lockdlg.cc:86
-msgid "&Start New Session"
-msgstr "&Enonder ene nouve session"
+msgid "&Start New Session..."
+msgstr "&Enonder ene nouve session..."
 
-#: lock/lockdlg.cc:186
+#: lock/lockdlg.cc:187
 msgid "<b>Unlocking failed</b>"
 msgstr "<b>Li disclawaedje a fwait berwete</b>"
 
-#: lock/lockdlg.cc:192
+#: lock/lockdlg.cc:193
 msgid "<b>Warning: Caps Lock on</b>"
-msgstr ""
+msgstr "<b>Asteme: Madjuscules eclawêyes</b>"
 
-#: lock/lockdlg.cc:416
+#: lock/lockdlg.cc:419
 msgid ""
-"Cannot unlock the screen, as the authentication system fails to work.\n"
+"Cannot unlock the session because the authentication system failed to work.\n"
 "You must kill kdesktop_lock (pid %1) manually."
 msgstr ""
 
-#: lock/lockdlg.cc:489
+#: lock/lockdlg.cc:517
 msgid ""
 "You have chosen to open another desktop session instead of resuming the "
 "current one."
@@ -52,25 +52,29 @@ msgid ""
 "sessions by pressing CTRL, ALT and the appropriate F-key at the same time."
 msgstr ""
 
-#: lock/lockprocess.cc:651
-msgid "Will not lock the screen, as unlocking would be impossible:\n"
+#: krootwm.cc:748 lock/lockdlg.cc:528
+msgid "&Start New Session"
+msgstr "&Enonder ene nouve session"
+
+#: lock/lockprocess.cc:659
+msgid "Will not lock the session, as unlocking would be impossible:\n"
 msgstr ""
 
-#: lock/lockprocess.cc:655
+#: lock/lockprocess.cc:663
 msgid "Cannot start <i>kcheckpass</i>."
-msgstr ""
+msgstr "Dji n' sai enonder <i>kcheckpass</i>"
 
-#: lock/lockprocess.cc:656
+#: lock/lockprocess.cc:664
 msgid "<i>kcheckpass</i> is unable to operate. Possibly it is not SetUID root."
 msgstr ""
 
-#: lock/lockprocess.cc:700
+#: lock/lockprocess.cc:708
 msgid "No appropriate greeter plugin configured."
 msgstr ""
 
 #: lock/main.cc:51
-msgid "Force screen locking"
-msgstr "Foirci l' aclawaedje del waitroûle"
+msgid "Force session locking"
+msgstr "Foirci l' aclawaedje del session"
 
 #: lock/main.cc:52
 msgid "Only start screensaver"
@@ -85,34 +89,34 @@ msgid "KDesktop Locker"
 msgstr "KAclaweu d' waitroûle"
 
 #: lock/main.cc:63
-msgid "Screen Locker for KDesktop"
-msgstr "Aclaweu d' waitroûle pol sicribanne di KDE"
+msgid "Session Locker for KDesktop"
+msgstr "Aclaweu d' session pol sicribanne di KDE"
 
-#: desktop.cc:661
+#: desktop.cc:666
 msgid "Set as Primary Background Color"
 msgstr "Prinde come prumire coleur di fond"
 
-#: desktop.cc:662
+#: desktop.cc:667
 msgid "Set as Secondary Background Color"
 msgstr "Prinde come deujhinme coleur di fond"
 
-#: desktop.cc:678
+#: desktop.cc:683
 msgid "&Save to Desktop..."
 msgstr "&Schaper sol sicribanne..."
 
-#: desktop.cc:680
+#: desktop.cc:685
 msgid "Set as &Wallpaper"
 msgstr "Prinde come &Tapisreye"
 
-#: desktop.cc:688
+#: desktop.cc:693
 msgid "Enter a name for the image below:"
 msgstr "Dinez on no po l' imådje chal pa dzo:"
 
-#: desktop.cc:697
+#: desktop.cc:702
 msgid "image.png"
 msgstr "imådje.png"
 
-#: desktop.cc:745
+#: desktop.cc:754
 msgid ""
 "Could not logout properly.\n"
 "The session manager cannot be contacted. You can try to force a shutdown by "
@@ -124,17 +128,13 @@ msgstr ""
 "foirci on distindaedje del session X avou Ctrl+Alt+Backspace. Mins notez kel "
 "session do moumint n' serè nén schapêye avou on distindaedje foirci."
 
-#: kdiconview.cc:380
+#: kdiconview.cc:395
 msgid "&Rename"
 msgstr "&Rilomer"
 
-#: kdiconview.cc:381
+#: kdiconview.cc:396
 msgid "&Move to Trash"
 msgstr "&Taper è Batch"
-
-#: kdiconview.cc:384
-msgid "&Shred"
-msgstr "&Kihiyî"
 
 #: krootwm.cc:129
 msgid "Run Command..."
@@ -144,7 +144,7 @@ msgstr "Enonder ene Kimande..."
 msgid "Configure Desktop..."
 msgstr "Apontyî li Scribanne..."
 
-#: krootwm.cc:135 krootwm.cc:332
+#: krootwm.cc:135 krootwm.cc:350
 msgid "Disable Desktop Menu"
 msgstr "Dismete li dressêye do Scribanne"
 
@@ -157,105 +157,121 @@ msgid "Cascade Windows"
 msgstr "Purneas a Cwårdjeus"
 
 #: krootwm.cc:147
-msgid "By Name"
-msgstr "Sol no"
+msgid "By Name (Case Sensitive)"
+msgstr "sol no (avou diferince di casse)"
 
 #: krootwm.cc:149
-msgid "By Size"
-msgstr "sol Grandeu"
+msgid "By Name (Case Insensitive)"
+msgstr "sol no (sins diferince di casse)"
 
 #: krootwm.cc:151
-msgid "By Type"
-msgstr "sol Sôre"
+msgid "By Size"
+msgstr "sol grandeu"
 
-#: krootwm.cc:154
+#: krootwm.cc:153
+msgid "By Type"
+msgstr "sol sôre"
+
+#: krootwm.cc:155
+msgid "By Date"
+msgstr "sol date"
+
+#: krootwm.cc:158
 msgid "Directories First"
 msgstr "Ridants å dzeu"
 
-#: krootwm.cc:157
+#: krootwm.cc:161
 msgid "Line Up Horizontally"
 msgstr "Aroyî di coûtchî"
 
-#: krootwm.cc:160
+#: krootwm.cc:164
 msgid "Line Up Vertically"
 msgstr "Aroyî d' astampé"
 
-#: krootwm.cc:163
+#: krootwm.cc:167
 msgid "Align to Grid"
 msgstr "Aroyî sol grile"
 
-#: krootwm.cc:169
+#: krootwm.cc:174
 msgid "Refresh Desktop"
 msgstr "Rafrister li scribanne"
 
-#: kdesktopbindings.cpp:30 krootwm.cc:175
-msgid "Lock Screen"
-msgstr "Eclawer li waitroûle"
+#: kdesktopbindings.cpp:30 krootwm.cc:180
+msgid "Lock Session"
+msgstr "Eclawer li session"
 
-#: krootwm.cc:180
+#: krootwm.cc:185
 msgid "Logout \"%1\"..."
 msgstr "Dislodjaedje di «%1»..."
 
-#: krootwm.cc:191
-msgid "Start New Session"
-msgstr "Enonder ene nouve session"
+#: krootwm.cc:196
+msgid "Start New Session..."
+msgstr "Enonder ene nouve session..."
 
-#: krootwm.cc:310 krootwm.cc:388
+#: krootwm.cc:328 krootwm.cc:406
 msgid "Sort Icons"
 msgstr "Arindjî les imådjetes"
 
-#: krootwm.cc:312
+#: krootwm.cc:330
 msgid "Line Up Icons"
 msgstr "Aroyî les imådjetes"
 
-#: krootwm.cc:339
+#: krootwm.cc:357
 msgid "Enable Desktop Menu"
 msgstr "Mete li dressêye do Scribanne"
 
-#: krootwm.cc:395
+#: krootwm.cc:413
 msgid "Icons"
 msgstr "Imådjetes"
 
-#: krootwm.cc:401 krootwm.cc:458
+#: krootwm.cc:419 krootwm.cc:473
 msgid "Windows"
 msgstr "Purneas"
 
-#: krootwm.cc:451
+#: krootwm.cc:466
 msgid "New"
 msgstr "Novea"
 
-#: kdesktopbindings.cpp:14 krootwm.cc:457 krootwm.cc:628
+#: kdesktopbindings.cpp:14 krootwm.cc:472 krootwm.cc:679
 msgid "Desktop"
 msgstr "Scribanne"
 
-#: krootwm.cc:693
+#: krootwm.cc:743
+msgid "Warning - New Session"
+msgstr "Adviertixhmint - Nouve session"
+
+#: krootwm.cc:751
 msgid ""
 "<p>You have chosen to open another desktop session."
 "<br>The current session will be hidden and a new login screen will be "
 "displayed."
 "<br>An F-key is assigned to each session; F%1 is usually assigned to the "
 "first session, F%2 to the second session and so on. You can switch between "
-"sessions by pressing CTRL, ALT and the appropriate F-key at the same "
+"sessions by pressing Ctrl, Alt and the appropriate F-key at the same "
 "time.</p>"
 msgstr ""
 
-#: main.cc:40
+#: krootwm.cc:763
+msgid "&Lock current session"
+msgstr "&Eclawer li session do moumint"
+
+#: main.cc:43
 msgid "The KDE Desktop."
 msgstr "Li Scribanne KDE"
 
-#: main.cc:46
+#: main.cc:49
 msgid "Use this if the desktop window appears as a real window"
 msgstr ""
 
-#: main.cc:47
+#: main.cc:50
 msgid "Use this to disable the Autostart folder"
 msgstr "Eployî çouchal po dismete li ridant d' otoenondaedje"
 
-#: main.cc:48
+#: main.cc:51
 msgid "Wait for kded to finish building database"
 msgstr "Tårdjîz ki kded åye fini di fé si båze di dnêyes"
 
-#: main.cc:140
+#: main.cc:143
 msgid "KDesktop"
 msgstr "KDesktop"
 
@@ -299,7 +315,7 @@ msgstr "Djoker li copiutrece sins acertinaedje"
 msgid "Reboot without Confirmation"
 msgstr "Renonder li copiutrece sins acertinaedje"
 
-#: minicli.cpp:90 minicli.cpp:617
+#: minicli.cpp:90 minicli.cpp:624
 msgid "&Options >>"
 msgstr "&Tchuzes >>"
 
@@ -307,79 +323,70 @@ msgstr "&Tchuzes >>"
 msgid "&Run"
 msgstr "&Enonder"
 
-#: minicli.cpp:385
+#: minicli.cpp:394
 msgid "<qt>The user <b>%1</b> does not exist on this system.</qt>"
 msgstr "<qt>L' uzeu <b>%1</b> n' egzistêye nén dins ci sistinme chal.</qt>"
 
-#: minicli.cpp:395
-msgid "You don't exist!\n"
-msgstr "Vos n' egzistez nén!\n"
+#: minicli.cpp:404
+msgid "You do not exist.\n"
+msgstr "Vos n' egzistez nén.\n"
 
-#: minicli.cpp:420
-msgid "Incorrect password! Please try again."
-msgstr "Ci scret la n' est nén djusse!  Sayîz co on côp."
+#: minicli.cpp:429
+msgid "Incorrect password; please try again."
+msgstr "Ci scret la n' est nén djusse. Rissayîz s' i vs plait."
 
-#: minicli.cpp:531
+#: minicli.cpp:537
 msgid ""
 "<center><b>%1</b></center>\n"
-"You do not have permission to execute this command!"
+"You do not have permission to execute this command."
 msgstr ""
 "<center><b>%1</b></center>\n"
-"Vos n' avoz nén les permissions po-z enonder cisse comande ci!"
+"Vos n' avoz nén les permissions po-z enonder cisse comande ci."
 
-#: minicli.cpp:556
+#: minicli.cpp:563
 msgid ""
 "<center><b>%1</b></center>\n"
-"Could not run the specified command!"
+"Could not run the specified command."
 msgstr ""
 "<center><b>%1</b></center>\n"
-"Dji n' a savu enonder cisse kimande la!"
+"Dji n' a savou enonder cisse kimande la."
 
-#: minicli.cpp:568
+#: minicli.cpp:575
 msgid ""
 "<center><b>%1</b></center>\n"
-"The specified command does not exist!"
+"The specified command does not exist."
 msgstr ""
 "<center><b>%1</b></center>\n"
-"Li cmande specifieye n' egzistêye nén!"
+"Li cmande specifieye n' egzistêye nén."
 
-#: minicli.cpp:605
+#: minicli.cpp:612
 msgid "&Options <<"
 msgstr "&Tchuzes <<"
 
-#: minicli.cpp:813
+#: minicli.cpp:820
 msgid ""
 "Running a realtime application can be very dangerous. If the application "
 "misbehaves, the system might hang unrecoverably.\n"
 "Are you sure you want to continue?"
 msgstr ""
 
-#: minicli.cpp:816
+#: minicli.cpp:823
 msgid "Warning - Run Command"
 msgstr "Adviertixhmint - Enonder ene kimande"
 
-#: rc.cpp:2
-msgid "Enter the name of the application you want to run or the URL you want to view"
-msgstr ""
-"Tapez li no di l' aplicåcion ki vos voloz enonder oudonbén l' URL ki vos "
-"voloz vey."
-
-#: rc.cpp:3
-msgid "Com&mand:"
-msgstr "Ki&mande:"
-
-#: rc.cpp:4 rc.cpp:29
-msgid ""
-"Enter the command you wish to execute or the address of the resource you "
-"want to open. This can be a remote URL like \"www.kde.org\" or a local one "
-"like \"~/.kderc\"."
+#: minicli.cpp:823
+msgid "&Run Realtime"
 msgstr ""
 
-#: rc.cpp:8
+#: rc.cpp:1
+msgid "MinicliDlgUI"
+msgstr ""
+
+#: rc.cpp:5
 msgid "Run with realtime &scheduling"
 msgstr ""
 
-#: rc.cpp:9
+#: rc.cpp:6
 msgid ""
 "<qt>Select whether realtime scheduling should be enabled for the "
 "application. The scheduler governs which process will run and which will "
@@ -396,37 +403,37 @@ msgid ""
 "</qt>"
 msgstr ""
 
-#: rc.cpp:10
+#: rc.cpp:7
 msgid "User&name:"
 msgstr "&No d' uzeu:"
 
-#: rc.cpp:11 rc.cpp:21
+#: rc.cpp:8 rc.cpp:18
 msgid "Enter the user you want to run the application as here."
 msgstr "Dinez chal li no d' l' uzeu ki vos vloz enonder les programes avou."
 
-#: rc.cpp:12 rc.cpp:14
+#: rc.cpp:9 rc.cpp:11
 msgid "Enter the password here for the user you specified above."
 msgstr "Tapez chal li scret po l' uzeu specifyî pus hôt."
 
-#: rc.cpp:13
+#: rc.cpp:10
 msgid "Pass&word:"
 msgstr "&Sicret:"
 
-#: rc.cpp:15
+#: rc.cpp:12
 msgid "Run in &terminal window"
 msgstr "Enonder dvins on &terminå"
 
-#: rc.cpp:16
+#: rc.cpp:13
 msgid ""
 "Check this option if the application you want to run is a text mode "
 "application. The application will then be run in a terminal emulator window."
 msgstr ""
 
-#: rc.cpp:17
+#: rc.cpp:14
 msgid "&Priority:"
 msgstr "&Prumiristé:"
 
-#: rc.cpp:18 rc.cpp:23 rc.cpp:25 rc.cpp:26
+#: rc.cpp:15 rc.cpp:20 rc.cpp:22 rc.cpp:23
 msgid ""
 "The priority that the command will be run with can be set here. From left to "
 "right, it goes from low to high. The center position is the default value. "
@@ -434,34 +441,51 @@ msgid ""
 "password."
 msgstr ""
 
-#: rc.cpp:19
+#: rc.cpp:16
 msgid "Run with a &different priority"
 msgstr "Enonder avou ene &diferinne prumiristé"
 
-#: rc.cpp:20
+#: rc.cpp:17
 msgid ""
 "Check this option if you want to run the application with a different "
 "priority. A higher priority tells the operating system to give more "
 "processing time to your application."
 msgstr ""
 
-#: rc.cpp:22
+#: rc.cpp:19
 msgid "Low"
 msgstr "Basse"
 
-#: rc.cpp:24
+#: rc.cpp:21
 msgid "High"
 msgstr "Hôte"
 
-#: rc.cpp:27
+#: rc.cpp:24
 msgid "Run as a different &user"
 msgstr "Enonder come on &uzeu diferin"
 
-#: rc.cpp:28
+#: rc.cpp:25
 msgid ""
 "Check this option if you want to run the application with a different user "
 "id. Every process has a user id associated with it. This id code determines "
 "file access and other permissions. The password of the user is required to "
 "do this."
 msgstr ""
+
+#: rc.cpp:26
+msgid "Com&mand:"
+msgstr "Ki&mande:"
+
+#: rc.cpp:27 rc.cpp:29
+msgid ""
+"Enter the command you wish to execute or the address of the resource you "
+"want to open. This can be a remote URL like \"www.kde.org\" or a local one "
+"like \"~/.kderc\"."
+msgstr ""
+
+#: rc.cpp:30
+msgid "Enter the name of the application you want to run or the URL you want to view"
+msgstr ""
+"Tapez li no di l' aplicåcion ki vos voloz enonder oudonbén l' URL ki vos "
+"voloz vey."
 
