@@ -12,8 +12,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kcminfo 0.4\n"
-"POT-Creation-Date: 2003-06-30 01:42+0200\n"
-"PO-Revision-Date: 2003-07-05 13:35+0200\n"
+"POT-Creation-Date: 2003-08-28 01:26+0200\n"
+"PO-Revision-Date: 2003-09-12 15:22+0200\n"
 "Last-Translator: Lorint Hendschel <LorintHendschel@skynet.be>\n"
 "Language-Team: Walon <linux-wa@chanae.alphanet.ch>\n"
 "MIME-Version: 1.0\n"
@@ -44,7 +44,7 @@ msgstr "(Prémetowe waitroûle)"
 
 #: info.cpp:151
 msgid "Dimensions"
-msgstr ""
+msgstr "Grandeu"
 
 #: info.cpp:152
 msgid "%1 x %2 Pixel (%3 x %4 mm)"
@@ -146,6 +146,8 @@ msgid ""
 "_n: 1 Bit\n"
 "%n Bits"
 msgstr ""
+"1 octet\n"
+"%n octets"
 
 #: info.cpp:241
 msgid "1 Byte"
@@ -156,7 +158,7 @@ msgid "%1 Bytes"
 msgstr "%1 octets"
 
 #: info.cpp:265 info_aix.cpp:299 info_hpux.cpp:372 info_hpux.cpp:662
-#: info_linux.cpp:128 info_netbsd.cpp:74 info_openbsd.cpp:71
+#: info_linux.cpp:131 info_netbsd.cpp:74 info_openbsd.cpp:71
 #: info_solaris.cpp:688
 msgid "Value"
 msgstr "Valixhance"
@@ -248,7 +250,7 @@ msgstr ""
 
 #: info.cpp:431 memory.cpp:273
 msgid "kcminfo"
-msgstr ""
+msgstr "kcminfo"
 
 #: info.cpp:432
 msgid "KDE Panel System Information Control Module"
@@ -274,33 +276,33 @@ msgstr "Eplaeçmint"
 msgid "Description"
 msgstr "Discrijhaedje"
 
-#: info_aix.cpp:445 info_hpux.cpp:441 info_hpux.cpp:567 info_linux.cpp:260
-#: info_linux.cpp:368 info_netbsd.cpp:284
+#: info_aix.cpp:445 info_hpux.cpp:441 info_hpux.cpp:567 info_linux.cpp:345
+#: info_linux.cpp:453 info_netbsd.cpp:284
 msgid "MB"
 msgstr "Mo"
 
-#: info_aix.cpp:450 info_fbsd.cpp:301 info_hpux.cpp:572 info_linux.cpp:398
+#: info_aix.cpp:450 info_fbsd.cpp:301 info_hpux.cpp:572 info_linux.cpp:483
 #: info_netbsd.cpp:182 info_netbsd.cpp:285 info_openbsd.cpp:199
 #: info_openbsd.cpp:282 info_solaris.cpp:185
 msgid "Device"
 msgstr "Éndjin"
 
-#: info_aix.cpp:451 info_fbsd.cpp:302 info_hpux.cpp:573 info_linux.cpp:399
+#: info_aix.cpp:451 info_fbsd.cpp:302 info_hpux.cpp:573 info_linux.cpp:484
 #: info_netbsd.cpp:286 info_openbsd.cpp:283 info_solaris.cpp:186
 msgid "Mount Point"
 msgstr "Plaece di montaedje"
 
-#: info_aix.cpp:452 info_fbsd.cpp:303 info_hpux.cpp:574 info_linux.cpp:400
+#: info_aix.cpp:452 info_fbsd.cpp:303 info_hpux.cpp:574 info_linux.cpp:485
 #: info_netbsd.cpp:287 info_openbsd.cpp:284 info_solaris.cpp:187
 msgid "FS Type"
 msgstr "Sôre di sistinme di fitchîs"
 
-#: info_aix.cpp:453 info_hpux.cpp:575 info_linux.cpp:401 info_netbsd.cpp:288
+#: info_aix.cpp:453 info_hpux.cpp:575 info_linux.cpp:486 info_netbsd.cpp:288
 #: info_solaris.cpp:188
 msgid "Total Size"
 msgstr "Grandeu å totå"
 
-#: info_aix.cpp:454 info_hpux.cpp:576 info_linux.cpp:402 info_netbsd.cpp:289
+#: info_aix.cpp:454 info_hpux.cpp:576 info_linux.cpp:487 info_netbsd.cpp:289
 #: info_solaris.cpp:191
 msgid "Free Size"
 msgstr "Grandeu libe"
@@ -347,7 +349,7 @@ msgstr ""
 msgid "Could not check filesystem info: "
 msgstr ""
 
-#: info_fbsd.cpp:304 info_linux.cpp:403 info_netbsd.cpp:290
+#: info_fbsd.cpp:304 info_linux.cpp:488 info_netbsd.cpp:290
 #: info_openbsd.cpp:285 info_solaris.cpp:195
 msgid "Mount Options"
 msgstr "Tchuzes pol montaedje"
@@ -410,7 +412,7 @@ msgstr "dismetou"
 
 #: info_hpux.cpp:435
 msgid "Numerical Coprocessor (FPU)"
-msgstr ""
+msgstr "Coprocessu aritmetike (FPU)"
 
 #: info_hpux.cpp:442
 msgid "Total Physical Memory"
@@ -526,7 +528,7 @@ msgstr ""
 
 #: info_hpux.cpp:719
 msgid "Input Channels"
-msgstr ""
+msgstr "Canås d' intrêye"
 
 #: info_hpux.cpp:721 info_hpux.cpp:745
 msgid "Mono-Channel"
@@ -570,7 +572,7 @@ msgstr ""
 
 #: info_hpux.cpp:743
 msgid "Output Channels"
-msgstr ""
+msgstr "Canås di rexhowe"
 
 #: info_hpux.cpp:753
 msgid "Gain"
@@ -616,17 +618,41 @@ msgstr ""
 msgid "Ext Number"
 msgstr ""
 
-#: info_linux.cpp:141 main.cpp:67
+#: info_linux.cpp:146 main.cpp:67
 msgid "DMA-Channel"
 msgstr "Canå DMA"
 
-#: info_linux.cpp:142 info_linux.cpp:165
+#: info_linux.cpp:147 info_linux.cpp:190
 msgid "Used By"
 msgstr "Eployî pa"
 
-#: info_linux.cpp:164
+#: info_linux.cpp:189
 msgid "I/O-Range"
 msgstr "Fortchete intrêye/rexhowe"
+
+#: info_linux.cpp:213 main.cpp:103
+msgid "Devices"
+msgstr "Éndjins"
+
+#: info_linux.cpp:214
+msgid "Major Number"
+msgstr "Limero madjeur"
+
+#: info_linux.cpp:215
+msgid "Minor Number"
+msgstr "Limero mineur"
+
+#: info_linux.cpp:227
+msgid "Character Devices"
+msgstr "Éndjins môde caractere"
+
+#: info_linux.cpp:231
+msgid "Block Devices"
+msgstr "Éndjins môde bloc"
+
+#: info_linux.cpp:260
+msgid "Miscellaneous Devices"
+msgstr "Éndjins di totes sôres"
 
 #: info_netbsd.cpp:181 info_openbsd.cpp:198
 msgid "IRQ"
@@ -708,7 +734,7 @@ msgstr ""
 
 #: info_solaris.cpp:472
 msgid "Major/Minor:"
-msgstr ""
+msgstr "Madjeur/mineur:"
 
 #: info_solaris.cpp:542
 msgid "(no value)"
@@ -732,7 +758,7 @@ msgstr ""
 
 #: info_solaris.cpp:633
 msgid "Physical Path:"
-msgstr ""
+msgstr "Tchimin fizike:"
 
 #: info_solaris.cpp:651
 msgid "Type:"
@@ -773,10 +799,6 @@ msgstr "Cåte son"
 #: main.cpp:94
 msgid "SCSI"
 msgstr "SCSI"
-
-#: main.cpp:103
-msgid "Devices"
-msgstr "Éndjins"
 
 #: main.cpp:112
 msgid "Partitions"
