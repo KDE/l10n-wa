@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
-"POT-Creation-Date: 2004-01-14 02:10+0100\n"
-"PO-Revision-Date: 2004-01-17 12:59+0100\n"
+"POT-Creation-Date: 2004-04-03 01:46+0200\n"
+"PO-Revision-Date: 2004-04-05 21:08+0200\n"
 "Last-Translator: Pablo Saratxaga <pablo@walon.org>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
 "MIME-Version: 1.0\n"
@@ -69,7 +69,7 @@ msgid "Index"
 msgstr "Indecse"
 
 #: kformula/kformulacommand.cc:127 kformula/kformulacommand.cc:184
-#: kotext/kotextobject.cc:1360 kotext/kotextobject.cc:1399
+#: kotext/kotextobject.cc:1355 kotext/kotextobject.cc:1394
 msgid "Remove Selected Text"
 msgstr "Oister li tecse tchoezi"
 
@@ -121,19 +121,19 @@ msgstr ""
 msgid "Symbol font style"
 msgstr ""
 
-#: kformula/kformulaconfigpage.cc:195
+#: kformula/kformulaconfigpage.cc:201
 msgid "Choose..."
 msgstr "Tchoezi..."
 
-#: kformula/kformulaconfigpage.cc:253 kformula/kformulaconfigpage.cc:275
+#: kformula/kformulaconfigpage.cc:261 kformula/kformulaconfigpage.cc:283
 msgid "The fonts '%1' are missing. Do you want to change the font style anyway?"
 msgstr ""
 
-#: kformula/kformulaconfigpage.cc:291
+#: kformula/kformulaconfigpage.cc:299
 msgid "The font 'symbol' is missing. Do you want to change the font style anyway?"
 msgstr ""
 
-#: kformula/kformulacontainer.cc:473
+#: kformula/kformulacontainer.cc:474
 msgid "Base Size Change"
 msgstr ""
 
@@ -294,7 +294,7 @@ msgid "Symbol Names"
 msgstr "Nos des simboles"
 
 #: kformula/kformuladocument.cc:669 kotext/koSearchDia.cc:619
-#: kotext/kotextformat.cc:1199
+#: kotext/kotextformat.cc:1428
 msgid "Normal"
 msgstr "Normå"
 
@@ -403,15 +403,15 @@ msgstr ""
 msgid "Template %1 failed to load."
 msgstr ""
 
-#: kofficecore/koDocument.cc:358
+#: kofficecore/koDocument.cc:357
 msgid "Internal error: not a KOffice application, saving not allowed."
 msgstr ""
 
-#: kofficecore/koDocument.cc:378
+#: kofficecore/koDocument.cc:377
 msgid "Making backup..."
 msgstr ""
 
-#: kofficecore/koDocument.cc:399
+#: kofficecore/koDocument.cc:398
 msgid "Saving..."
 msgstr "Schapant.."
 
@@ -432,23 +432,27 @@ msgstr ""
 "Dji n' a savou schaper %1\n"
 "Vochal li råjhon: %2"
 
-#: kofficecore/koDocument.cc:517
+#: kofficecore/koDocument.cc:527
 msgid "Autosaving..."
 msgstr ""
 
-#: kofficecore/koDocument.cc:919
+#: kofficecore/koDocument.cc:537
+msgid "Error during autosave! Partition full?"
+msgstr ""
+
+#: kofficecore/koDocument.cc:932
 msgid "Couldn't open the file for saving"
 msgstr ""
 
-#: kofficecore/koDocument.cc:928
+#: kofficecore/koDocument.cc:941
 msgid "Error while saving embedded documents"
 msgstr ""
 
-#: kofficecore/koDocument.cc:947
-msgid "Not able to write 'maindoc.xml'."
+#: kofficecore/koDocument.cc:961
+msgid "Not able to write 'maindoc.xml'. Partition full?"
 msgstr ""
 
-#: kofficecore/koDocument.cc:1128
+#: kofficecore/koDocument.cc:1143
 msgid ""
 "An autosaved file for an unnamed document exists in %1.\n"
 "This file is dated %2\n"
@@ -459,7 +463,7 @@ msgstr ""
 "Li date di ç' fitchî la est %2\n"
 "Voloz vs ki djel drove?"
 
-#: kofficecore/koDocument.cc:1181
+#: kofficecore/koDocument.cc:1196
 #, c-format
 msgid ""
 "Malformed URL\n"
@@ -468,7 +472,7 @@ msgstr ""
 "URL må basti\n"
 "%1"
 
-#: kofficecore/koDocument.cc:1197
+#: kofficecore/koDocument.cc:1212
 msgid ""
 "An autosaved file exists for this document.\n"
 "Do you want to open it instead?"
@@ -476,22 +480,22 @@ msgstr ""
 "On fitchî ki dj' a schapé tot seu egzistêye po ci documint ci\n"
 "Voloz vs ki djel drove ?"
 
-#: kofficecore/koDocument.cc:1236 kofficeui/koTemplateChooseDia.cc:84
+#: kofficecore/koDocument.cc:1251 kofficeui/koTemplateChooseDia.cc:84
 #: kofficeui/koTemplateChooseDia.cc:643
 msgid "The file %1 doesn't exist."
 msgstr "Li fitchî %1 n' egzistêye nén"
 
-#: kofficecore/koDocument.cc:1293 kofficecore/koDocument.cc:1309
-#: kofficecore/koDocument.cc:1330
+#: kofficecore/koDocument.cc:1308 kofficecore/koDocument.cc:1324
+#: kofficecore/koDocument.cc:1345
 #, c-format
 msgid ""
 "Could not open\n"
 "%1"
 msgstr ""
-"Dji n' a savu drovi\n"
+"Dji n' a savou drovi\n"
 "%1"
 
-#: kofficecore/koDocument.cc:1332
+#: kofficecore/koDocument.cc:1347
 msgid ""
 "Could not open %1\n"
 "Reason: %2"
@@ -499,43 +503,50 @@ msgstr ""
 "Dji n' a savou drovi li fitchî %1\n"
 "Vochal li råjhon: %2"
 
-#: kofficecore/koDocument.cc:1395
+#: kofficecore/koDocument.cc:1414
+#, c-format
+msgid "Could not find %1"
+msgstr "Dji n' a savou trover %1"
+
+#: kofficecore/koDocument.cc:1426
+msgid ""
+"Parsing error in the main document at line %1, column %2\n"
+"Error message: %3"
+msgstr ""
+
+#: kofficecore/koDocument.cc:1439
 msgid "%1 is not a file."
 msgstr ""
 
-#: kofficecore/koDocument.cc:1411
+#: kofficecore/koDocument.cc:1455
 msgid "Couldn't open the file for reading (check read permissions)."
 msgstr ""
 
-#: kofficecore/koDocument.cc:1421
+#: kofficecore/koDocument.cc:1465
 msgid "Couldn't read the beginning of the file."
 msgstr ""
 
-#: kofficecore/koDocument.cc:1447 kofficecore/koDocument.cc:1481
+#: kofficecore/koDocument.cc:1491
 msgid ""
 "parsing error in the main document at line %1, column %2\n"
 "Error message: %3"
 msgstr ""
 
-#: kofficecore/koDocument.cc:1464
+#: kofficecore/koDocument.cc:1515
 msgid "Not a valid KOffice file."
 msgstr ""
 
-#: kofficecore/koDocument.cc:1497
+#: kofficecore/koDocument.cc:1568
 msgid "Invalid document: no file 'maindoc.xml'."
 msgstr ""
 
-#: kofficecore/koDocument.cc:1509
-msgid "Couldn't load embedded objects."
-msgstr ""
-
-#: kofficecore/koDocument.cc:1649 kofficecore/koMainWindow.cc:999
+#: kofficecore/koDocument.cc:1722 kofficecore/koMainWindow.cc:999
 msgid ""
 "<p>The document <b>'%1'</b> has been modified.</p>"
 "<p>Do you want to save it?</p>"
 msgstr "<p>Li documint <b>«%1»</b> a stî candjî.</p><p>El voloz schaper?</p>"
 
-#: kofficecore/koDocument.cc:1790
+#: kofficecore/koDocument.cc:1863
 msgid "Internal error: saveXML not implemented"
 msgstr "Divintrinne aroke: saveXML nén co epleminté"
 
@@ -585,7 +596,7 @@ msgid "Author"
 msgstr "Oteur"
 
 #: kofficecore/koDocumentInfoDlg.cc:185 kofficeui/koTemplateChooseDia.cc:668
-#: kofficeui/koTemplateCreateDia.cc:96 kotext/koStylist.cc:185
+#: kofficeui/koTemplateCreateDia.cc:102 kotext/koStylist.cc:185
 #: kotext/koVariableDlgs.cc:69 kotext/koVariableDlgs.cc:299
 msgid "Name:"
 msgstr "No:"
@@ -652,15 +663,15 @@ msgstr "Tchoezi passete"
 msgid "Select a filter:"
 msgstr "Tchoezi ene passete:"
 
-#: kofficecore/koFilterManager.cc:269 kofficecore/koFilterManager.cc:277
+#: kofficecore/koFilterManager.cc:274 kofficecore/koFilterManager.cc:282
 msgid "Could not export file."
 msgstr "Dji n' a savou ebaguer l' fitchî."
 
-#: kofficecore/koFilterManager.cc:269 kofficecore/koFilterManager.cc:277
+#: kofficecore/koFilterManager.cc:274 kofficecore/koFilterManager.cc:282
 msgid "Missing Export Filter"
 msgstr "Passete d' ebagaedje mancante"
 
-#: kofficecore/koFilterManager.cc:496
+#: kofficecore/koFilterManager.cc:501
 #, c-format
 msgid ""
 "Could not import file of type\n"
@@ -669,123 +680,123 @@ msgstr ""
 "Dji n' a savou abaguer on fitchî del sôre\n"
 "%1"
 
-#: kofficecore/koFilterManager.cc:498
+#: kofficecore/koFilterManager.cc:503
 msgid "Missing Import Filter"
 msgstr "Passete d' abagaedje mancante"
 
-#: kofficecore/koGlobal.cc:53
+#: kofficecore/koGlobal.cc:54
 msgid "ISO A3"
 msgstr "ISO A3"
 
-#: kofficecore/koGlobal.cc:54
+#: kofficecore/koGlobal.cc:55
 msgid "ISO A4"
 msgstr "ISO A4"
 
-#: kofficecore/koGlobal.cc:55
+#: kofficecore/koGlobal.cc:56
 msgid "ISO A5"
 msgstr "ISO A5"
 
-#: kofficecore/koGlobal.cc:56
+#: kofficecore/koGlobal.cc:57
 msgid "US Letter"
 msgstr "US Letter"
 
-#: kofficecore/koGlobal.cc:57
+#: kofficecore/koGlobal.cc:58
 msgid "US Legal"
 msgstr "US Legal"
 
-#: kofficecore/koGlobal.cc:58
+#: kofficecore/koGlobal.cc:59
 msgid "Screen"
 msgstr "Waitroûle"
 
-#: kofficecore/koGlobal.cc:59 kofficeui/koTemplateCreateDia.cc:139
+#: kofficecore/koGlobal.cc:60 kofficeui/koTemplateCreateDia.cc:145
 msgid "Custom"
 msgstr "A vosse môde"
 
-#: kofficecore/koGlobal.cc:60
+#: kofficecore/koGlobal.cc:61
 msgid "ISO B5"
 msgstr "ISO B5"
 
-#: kofficecore/koGlobal.cc:61
+#: kofficecore/koGlobal.cc:63
 msgid "US Executive"
 msgstr "US Executive"
 
-#: kofficecore/koGlobal.cc:62
+#: kofficecore/koGlobal.cc:64
 msgid "ISO A0"
 msgstr "ISO A0"
 
-#: kofficecore/koGlobal.cc:63
+#: kofficecore/koGlobal.cc:65
 msgid "ISO A1"
 msgstr "ISO A1"
 
-#: kofficecore/koGlobal.cc:64
+#: kofficecore/koGlobal.cc:66
 msgid "ISO A2"
 msgstr "ISO A2"
 
-#: kofficecore/koGlobal.cc:65
+#: kofficecore/koGlobal.cc:67
 msgid "ISO A6"
 msgstr "ISO A6"
 
-#: kofficecore/koGlobal.cc:66
+#: kofficecore/koGlobal.cc:68
 msgid "ISO A7"
 msgstr "ISO A7"
 
-#: kofficecore/koGlobal.cc:67
+#: kofficecore/koGlobal.cc:69
 msgid "ISO A8"
 msgstr "ISO A8"
 
-#: kofficecore/koGlobal.cc:68
+#: kofficecore/koGlobal.cc:70
 msgid "ISO A9"
 msgstr "ISO A9"
 
-#: kofficecore/koGlobal.cc:69
+#: kofficecore/koGlobal.cc:71
 msgid "ISO B0"
 msgstr "ISO B0"
 
-#: kofficecore/koGlobal.cc:70
+#: kofficecore/koGlobal.cc:72
 msgid "ISO B1"
 msgstr "ISO B1"
 
-#: kofficecore/koGlobal.cc:71
+#: kofficecore/koGlobal.cc:73
 msgid "ISO B10"
 msgstr "ISO B10"
 
-#: kofficecore/koGlobal.cc:72
+#: kofficecore/koGlobal.cc:74
 msgid "ISO B2"
 msgstr "ISO B2"
 
-#: kofficecore/koGlobal.cc:73
+#: kofficecore/koGlobal.cc:75
 msgid "ISO B3"
 msgstr "ISO B3"
 
-#: kofficecore/koGlobal.cc:74
+#: kofficecore/koGlobal.cc:76
 msgid "ISO B4"
 msgstr "ISO B4"
 
-#: kofficecore/koGlobal.cc:75
+#: kofficecore/koGlobal.cc:77
 msgid "ISO B6"
 msgstr "ISO B6"
 
-#: kofficecore/koGlobal.cc:76
+#: kofficecore/koGlobal.cc:78
 msgid "ISO C5"
 msgstr "ISO C5"
 
-#: kofficecore/koGlobal.cc:77
+#: kofficecore/koGlobal.cc:79
 msgid "US Common 10"
 msgstr "US Common 10"
 
-#: kofficecore/koGlobal.cc:78
+#: kofficecore/koGlobal.cc:80
 msgid "ISO DL"
 msgstr "ISO DL"
 
-#: kofficecore/koGlobal.cc:79
+#: kofficecore/koGlobal.cc:81
 msgid "US Folio"
 msgstr "US Folio"
 
-#: kofficecore/koGlobal.cc:80
+#: kofficecore/koGlobal.cc:82
 msgid "US Ledger"
 msgstr "US Ledger"
 
-#: kofficecore/koGlobal.cc:81
+#: kofficecore/koGlobal.cc:83
 msgid "US Tabloid"
 msgstr "US Tabloyide"
 
@@ -903,92 +914,92 @@ msgid ""
 "Do you want to continue?"
 msgstr ""
 
-#: kofficecore/koUnit.cc:43
+#: kofficecore/koUnit.cc:44
 msgid "Millimeters (mm)"
 msgstr "Milimetes (mm)"
 
-#: kofficecore/koUnit.cc:45
+#: kofficecore/koUnit.cc:46
 msgid "Centimeters (cm)"
 msgstr "Cintimetes (cm)"
 
-#: kofficecore/koUnit.cc:47
+#: kofficecore/koUnit.cc:48
 msgid "Decimeters (dm)"
 msgstr "Decimetes (dm)"
 
-#: kofficecore/koUnit.cc:49
+#: kofficecore/koUnit.cc:50
 msgid "Inches (in)"
 msgstr "Pôces (in)"
 
-#: kofficecore/koUnit.cc:51
+#: kofficecore/koUnit.cc:52
 msgid "Pica (pi)"
 msgstr "Picas (pi)"
 
-#: kofficecore/koUnit.cc:53
+#: kofficecore/koUnit.cc:54
 msgid "Didot (dd)"
 msgstr ""
 
-#: kofficecore/koUnit.cc:55
+#: kofficecore/koUnit.cc:56
 msgid "Cicero (cc)"
 msgstr ""
 
-#: kofficecore/koUnit.cc:57
+#: kofficecore/koUnit.cc:58
 msgid "Points (pt)"
 msgstr "Ponts (pt)"
 
-#: kofficecore/koUnit.cc:59
+#: kofficecore/koUnit.cc:60
 msgid "Error!"
 msgstr "Aroke!"
 
-#: kofficeui/koCharSelectDia.cc:33 kofficeui/koCharSelectDia.cc:43
+#: kofficeui/koCharSelectDia.cc:33 kofficeui/koCharSelectDia.cc:44
 msgid "Select Character"
 msgstr "Tchoezi on caractere"
 
-#: kofficeui/koCharSelectDia.cc:38 kofficeui/koCharSelectDia.cc:48
+#: kofficeui/koCharSelectDia.cc:39 kofficeui/koCharSelectDia.cc:49
 msgid "Insert the selected character in the text"
 msgstr ""
 
-#: kofficeui/koInsertLink.cc:38
+#: kofficeui/koInsertLink.cc:39
 msgid "Insert Link"
 msgstr "Sititchî on loyén"
 
-#: kofficeui/koInsertLink.cc:43
+#: kofficeui/koInsertLink.cc:44
 msgid "Internet"
 msgstr "Daegntoele"
 
-#: kofficeui/koInsertLink.cc:47
+#: kofficeui/koInsertLink.cc:48
 msgid "Mail & News"
 msgstr ""
 
-#: kofficeui/koInsertLink.cc:57
+#: kofficeui/koInsertLink.cc:58
 msgid "Bookmark"
 msgstr "Rimåke"
 
-#: kofficeui/koInsertLink.cc:195 kofficeui/koInsertLink.cc:267
-#: kofficeui/koInsertLink.cc:348 kofficeui/koInsertLink.cc:417
+#: kofficeui/koInsertLink.cc:196 kofficeui/koInsertLink.cc:268
+#: kofficeui/koInsertLink.cc:349 kofficeui/koInsertLink.cc:418
 msgid "Comment:"
 msgstr "Rawete:"
 
-#: kofficeui/koInsertLink.cc:203
+#: kofficeui/koInsertLink.cc:204
 msgid "Internet address:"
 msgstr "Adresse rantoele:"
 
-#: kofficeui/koInsertLink.cc:275
+#: kofficeui/koInsertLink.cc:276
 msgid "Bookmark name:"
 msgstr "No del rimåke:"
 
-#: kofficeui/koInsertLink.cc:356
+#: kofficeui/koInsertLink.cc:357
 msgid "Target:"
 msgstr "Såme:"
 
-#: kofficeui/koInsertLink.cc:424
+#: kofficeui/koInsertLink.cc:425
 msgid "Recent file:"
 msgstr ""
 
-#: kofficeui/koInsertLink.cc:442
+#: kofficeui/koInsertLink.cc:443
 msgid "No Entries"
 msgstr "Nole intrêye"
 
-#: kofficeui/koInsertLink.cc:452
+#: kofficeui/koInsertLink.cc:453
 msgid "File location:"
 msgstr "Eplaeçmint do fitchî:"
 
@@ -996,96 +1007,96 @@ msgstr "Eplaeçmint do fitchî:"
 msgid "Page Preview"
 msgstr "Prévey li Pådje"
 
-#: kofficeui/koPageLayoutDia.cc:121 kofficeui/koPageLayoutDia.cc:153
+#: kofficeui/koPageLayoutDia.cc:121 kofficeui/koPageLayoutDia.cc:152
 msgid "Page Layout"
 msgstr "Arindjmint del Pådje"
 
-#: kofficeui/koPageLayoutDia.cc:291
+#: kofficeui/koPageLayoutDia.cc:289
 msgid "Page Size && &Margins"
 msgstr "Grandeu del pådje eyet &mådjes"
 
-#: kofficeui/koPageLayoutDia.cc:303
+#: kofficeui/koPageLayoutDia.cc:301
 msgid "Unit:"
 msgstr "Unité:"
 
-#: kofficeui/koPageLayoutDia.cc:314
+#: kofficeui/koPageLayoutDia.cc:312
 #, c-format
 msgid "All values are given in %1."
 msgstr "Totes les valixhances sont dnêyes e %1"
 
-#: kofficeui/koPageLayoutDia.cc:319
+#: kofficeui/koPageLayoutDia.cc:317
 msgid "Page Size"
 msgstr "Grandeu del pådje"
 
-#: kofficeui/koPageLayoutDia.cc:326
+#: kofficeui/koPageLayoutDia.cc:324
 msgid "&Size:"
 msgstr "&Grandeu:"
 
-#: kofficeui/koPageLayoutDia.cc:337 kotext/koParagDia.cc:1291
+#: kofficeui/koPageLayoutDia.cc:335 kotext/koParagDia.cc:1293
 msgid "&Width:"
 msgstr "&Lårdjeu:"
 
-#: kofficeui/koPageLayoutDia.cc:349
+#: kofficeui/koPageLayoutDia.cc:347
 msgid "&Height:"
 msgstr "&Hôteu:"
 
-#: kofficeui/koPageLayoutDia.cc:370
+#: kofficeui/koPageLayoutDia.cc:368
 msgid "&Portrait"
 msgstr "D' &astampé"
 
-#: kofficeui/koPageLayoutDia.cc:375
+#: kofficeui/koPageLayoutDia.cc:373
 msgid "La&ndscape"
 msgstr ""
 
-#: kofficeui/koPageLayoutDia.cc:382
+#: kofficeui/koPageLayoutDia.cc:380
 msgid "Margins"
 msgstr "Mådjes"
 
-#: kofficeui/koPageLayoutDia.cc:389
+#: kofficeui/koPageLayoutDia.cc:387
 msgid "&Left:"
 msgstr "&Hintche:"
 
-#: kofficeui/koPageLayoutDia.cc:399
+#: kofficeui/koPageLayoutDia.cc:397
 msgid "&Right:"
 msgstr "&Droete:"
 
-#: kofficeui/koPageLayoutDia.cc:409
+#: kofficeui/koPageLayoutDia.cc:407
 msgid "&Top:"
 msgstr "Al cope&te:"
 
-#: kofficeui/koPageLayoutDia.cc:419
+#: kofficeui/koPageLayoutDia.cc:417
 msgid "&Bottom:"
 msgstr "Al &valeye:"
 
-#: kofficeui/koPageLayoutDia.cc:495 kofficeui/koPageLayoutDia.cc:630
+#: kofficeui/koPageLayoutDia.cc:493 kofficeui/koPageLayoutDia.cc:628
 msgid "H&eader && Footer"
 msgstr "&Tiestire eyet pî"
 
-#: kofficeui/koPageLayoutDia.cc:499
+#: kofficeui/koPageLayoutDia.cc:497
 msgid "Head Line"
 msgstr ""
 
-#: kofficeui/koPageLayoutDia.cc:504 kofficeui/koPageLayoutDia.cc:533
+#: kofficeui/koPageLayoutDia.cc:502 kofficeui/koPageLayoutDia.cc:531
 msgid "Left:"
 msgstr "Hintche:"
 
-#: kofficeui/koPageLayoutDia.cc:511 kofficeui/koPageLayoutDia.cc:540
+#: kofficeui/koPageLayoutDia.cc:509 kofficeui/koPageLayoutDia.cc:538
 msgid "Mid:"
 msgstr "Mitan:"
 
-#: kofficeui/koPageLayoutDia.cc:518 kofficeui/koPageLayoutDia.cc:547
+#: kofficeui/koPageLayoutDia.cc:516 kofficeui/koPageLayoutDia.cc:545
 msgid "Right:"
 msgstr "Droete:"
 
-#: kofficeui/koPageLayoutDia.cc:528
+#: kofficeui/koPageLayoutDia.cc:526
 msgid "Foot Line"
 msgstr ""
 
-#: kofficeui/koPageLayoutDia.cc:556
+#: kofficeui/koPageLayoutDia.cc:554
 msgid "You can insert several tags in the text:"
 msgstr ""
 
-#: kofficeui/koPageLayoutDia.cc:559
+#: kofficeui/koPageLayoutDia.cc:557
 msgid ""
 "<qt>"
 "<ul>"
@@ -1104,7 +1115,7 @@ msgstr ""
 "<li>&lt;file&gt; Li no do fitchî avous si tchmin en etir ou li hårdêye "
 "(URL)</li></ul></qt>"
 
-#: kofficeui/koPageLayoutDia.cc:566
+#: kofficeui/koPageLayoutDia.cc:564
 msgid ""
 "<qt>"
 "<ul>"
@@ -1122,67 +1133,67 @@ msgstr ""
 "<li>&lt;org&gt; Voste organizåcion</li>"
 "<li>&lt;email&gt; Voste adresse emile</li></ul></qt>"
 
-#: kofficeui/koPageLayoutDia.cc:577
+#: kofficeui/koPageLayoutDia.cc:575
 msgid "Col&umns"
 msgstr "C&olones:"
 
-#: kofficeui/koPageLayoutDia.cc:581
+#: kofficeui/koPageLayoutDia.cc:579
 msgid "Co&lumns:"
 msgstr "Co&lones:"
 
-#: kofficeui/koPageLayoutDia.cc:592
+#: kofficeui/koPageLayoutDia.cc:590
 msgid "Column &spacing (%1):"
 msgstr "E&spåce etur les Colones (%1):"
 
-#: kofficeui/koPageLayoutDia.cc:633
+#: kofficeui/koPageLayoutDia.cc:631
 msgid "&Header"
 msgstr "&Tiestire"
 
-#: kofficeui/koPageLayoutDia.cc:638
+#: kofficeui/koPageLayoutDia.cc:636
 msgid "Different header for the first page"
 msgstr "Ôte tiestire pol prumire pådje"
 
-#: kofficeui/koPageLayoutDia.cc:644
+#: kofficeui/koPageLayoutDia.cc:642
 msgid "Different header for even and odd pages"
 msgstr "Diferinnès tiestires po les pådjes paires eyet impaires"
 
-#: kofficeui/koPageLayoutDia.cc:650
+#: kofficeui/koPageLayoutDia.cc:648
 msgid "Spacing between header and body (%1):"
 msgstr ""
 
-#: kofficeui/koPageLayoutDia.cc:663
+#: kofficeui/koPageLayoutDia.cc:661
 msgid "&Footer"
 msgstr "&Pî del pådje"
 
-#: kofficeui/koPageLayoutDia.cc:668
+#: kofficeui/koPageLayoutDia.cc:666
 msgid "Different footer for the first page"
 msgstr "Ôte pî pol prumire pådje"
 
-#: kofficeui/koPageLayoutDia.cc:674
+#: kofficeui/koPageLayoutDia.cc:672
 msgid "Different footer for even and odd pages"
 msgstr "Pîs diferins po les pådjes paires eyet impaires"
 
-#: kofficeui/koPageLayoutDia.cc:680
+#: kofficeui/koPageLayoutDia.cc:678
 msgid "Spacing between footer and body (%1):"
 msgstr "Espåce inte li pî eyet li coir (%1):"
 
-#: kofficeui/koPageLayoutDia.cc:693
+#: kofficeui/koPageLayoutDia.cc:691
 msgid "Foot&note/Endnote"
 msgstr ""
 
-#: kofficeui/koPageLayoutDia.cc:698
+#: kofficeui/koPageLayoutDia.cc:696
 msgid "Spacing between footnote and body (%1):"
 msgstr "Espåce inte li pî eyet li coir (%1):"
 
-#: kofficeui/koPageLayoutDia.cc:866
+#: kofficeui/koPageLayoutDia.cc:864
 msgid "The page width is smaller than the left and right margins."
 msgstr ""
 
-#: kofficeui/koPageLayoutDia.cc:867 kofficeui/koPageLayoutDia.cc:874
+#: kofficeui/koPageLayoutDia.cc:865 kofficeui/koPageLayoutDia.cc:872
 msgid "Page Layout Problem"
 msgstr "Åk n' a nén stî avou l' arindjmint del pådje"
 
-#: kofficeui/koPageLayoutDia.cc:873
+#: kofficeui/koPageLayoutDia.cc:871
 msgid "The page height is smaller than the top and bottom margins."
 msgstr "Li hôteu del pådje est pus ptite ki les mådjes di dzeur et di dzo."
 
@@ -1202,11 +1213,11 @@ msgstr "Rawete"
 msgid "*.svg *.wmf|Clipart (*.svg *.wmf)"
 msgstr ""
 
-#: kofficeui/koRuler.cc:970
+#: kofficeui/koRuler.cc:998
 msgid "Page Layout..."
 msgstr "Arindjmint del Pådje..."
 
-#: kofficeui/koRuler.cc:972
+#: kofficeui/koRuler.cc:1000
 msgid "Remove Tabulator"
 msgstr ""
 
@@ -1298,75 +1309,75 @@ msgstr "Discrijhaedje:"
 msgid "No description available"
 msgstr "I n' a nou discrijhaedje"
 
-#: kofficeui/koTemplateCreateDia.cc:86
+#: kofficeui/koTemplateCreateDia.cc:92
 msgid "Create Template"
 msgstr "Ahiver on modele"
 
-#: kofficeui/koTemplateCreateDia.cc:106
+#: kofficeui/koTemplateCreateDia.cc:112
 msgid "Group:"
 msgstr "Hopea:"
 
-#: kofficeui/koTemplateCreateDia.cc:120
+#: kofficeui/koTemplateCreateDia.cc:126
 msgid "&Add Group..."
 msgstr "&Radjouter on hopea..."
 
-#: kofficeui/koTemplateCreateDia.cc:128
+#: kofficeui/koTemplateCreateDia.cc:134
 msgid "Picture"
 msgstr "Imådje"
 
-#: kofficeui/koTemplateCreateDia.cc:134
+#: kofficeui/koTemplateCreateDia.cc:140
 msgid "&Default"
 msgstr "&Prémetou"
 
-#: kofficeui/koTemplateCreateDia.cc:143
+#: kofficeui/koTemplateCreateDia.cc:149
 msgid "&Select..."
 msgstr "&Tchoezi..."
 
-#: kofficeui/koTemplateCreateDia.cc:148
+#: kofficeui/koTemplateCreateDia.cc:154
 msgid "Preview:"
 msgstr "Vey divant:"
 
-#: kofficeui/koTemplateCreateDia.cc:245
+#: kofficeui/koTemplateCreateDia.cc:258
 msgid "Do you really want to overwrite the existing '%1' template?"
 msgstr "Voloz po do bon spotchî li modele '%1' k' egzistêye dedja?"
 
-#: kofficeui/koTemplateCreateDia.cc:316
+#: kofficeui/koTemplateCreateDia.cc:333
 msgid "Select Picture"
 msgstr "Tchoezi ene imådje"
 
-#: kofficeui/koTemplateCreateDia.cc:330
-msgid "Only local files are currently supported."
-msgstr "Pol moumint vos n' poloz eployî ki des fitchîs locås"
+#: kofficeui/koTemplateCreateDia.cc:360
+msgid "Remote file could not be downloaded."
+msgstr ""
 
-#: kofficeui/koTemplateCreateDia.cc:348
+#: kofficeui/koTemplateCreateDia.cc:379
 msgid "Add Group"
 msgstr "Radjouter on groupe"
 
-#: kofficeui/koTemplateCreateDia.cc:348
+#: kofficeui/koTemplateCreateDia.cc:379
 msgid "Enter group name:"
 msgstr "Tapez li no do groupe:"
 
-#: kofficeui/koTemplateCreateDia.cc:376
+#: kofficeui/koTemplateCreateDia.cc:407
 msgid "Do you really want to remove that group?"
 msgstr "Voloz vs po do bon oister ci groupe la?"
 
-#: kofficeui/koTemplateCreateDia.cc:377
+#: kofficeui/koTemplateCreateDia.cc:408
 msgid "Remove Group"
 msgstr "Oister groupe"
 
-#: kofficeui/koTemplateCreateDia.cc:379
+#: kofficeui/koTemplateCreateDia.cc:410
 msgid "Do you really want to remove that template?"
 msgstr "Voloz vs po do bon oister ci modele la?"
 
-#: kofficeui/koTemplateCreateDia.cc:380
+#: kofficeui/koTemplateCreateDia.cc:411
 msgid "Remove Template"
 msgstr "Oister li modele"
 
-#: kofficeui/koTemplateCreateDia.cc:424
+#: kofficeui/koTemplateCreateDia.cc:459
 msgid "Could not load picture."
 msgstr "Dji n' a savou tcherdjî l' imådje"
 
-#: kofficeui/koTemplateCreateDia.cc:427
+#: kofficeui/koTemplateCreateDia.cc:462
 msgid "No picture available."
 msgstr "Dji n' a nole imådje por vos"
 
@@ -2101,7 +2112,7 @@ msgstr ""
 msgid ""
 "_: Color\n"
 "Chocolate"
-msgstr "Tchocolåt"
+msgstr "Tchôcolåt"
 
 #: kofficeui/kotoolbutton.cc:266
 msgid ""
@@ -2295,7 +2306,7 @@ msgstr ""
 #: koscript/koscript.cc:160
 #, c-format
 msgid "Could not open file %1"
-msgstr "Dji n' a savu drovi li fitchî %1"
+msgstr "Dji n' a savou drovi li fitchî %1"
 
 #: koscript/koscript.cc:254
 msgid "The interpreter does not support an extended syntax you are using."
@@ -2623,72 +2634,72 @@ msgstr "AM/PM"
 msgid "Correct in Days"
 msgstr ""
 
-#: kotext/koAutoFormat.cc:799 kotext/koAutoFormat.cc:814
+#: kotext/koAutoFormat.cc:852 kotext/koAutoFormat.cc:867
 msgid "Completion Word"
 msgstr ""
 
-#: kotext/koAutoFormat.cc:934 kotext/koAutoFormat.cc:944
-#: kotext/koAutoFormat.cc:956 kotext/koAutoFormat.cc:1968
-#: kotext/koAutoFormat.cc:1979 kotext/koAutoFormat.cc:1991
+#: kotext/koAutoFormat.cc:988 kotext/koAutoFormat.cc:998
+#: kotext/koAutoFormat.cc:1010 kotext/koAutoFormat.cc:2041
+#: kotext/koAutoFormat.cc:2052 kotext/koAutoFormat.cc:2064
 #: kotext/koAutoFormatDia.cc:176
 msgid "Autocorrection"
 msgstr "Coridjaedje tot seu"
 
-#: kotext/koAutoFormat.cc:1036 kotext/koAutoFormat.cc:1046
-#: kotext/koAutoFormat.cc:1369
+#: kotext/koAutoFormat.cc:1105 kotext/koAutoFormat.cc:1115
+#: kotext/koAutoFormat.cc:1436
 msgid "Autocorrect Word"
 msgstr ""
 
-#: kotext/koAutoFormat.cc:1043
+#: kotext/koAutoFormat.cc:1112
 msgid "Autocorrect Word with Format"
 msgstr ""
 
-#: kotext/koAutoFormat.cc:1107
+#: kotext/koAutoFormat.cc:1174
 msgid "Typographic Quote"
 msgstr ""
 
-#: kotext/koAutoFormat.cc:1159
+#: kotext/koAutoFormat.cc:1226
 msgid "Autocorrect (capitalize first letter)"
 msgstr ""
 
-#: kotext/koAutoFormat.cc:1184
+#: kotext/koAutoFormat.cc:1251
 msgid ""
 "Autocorrect (Convert two upper case letters to one upper case and one lower "
 "case letter.)"
 msgstr ""
 
-#: kotext/koAutoFormat.cc:1223
+#: kotext/koAutoFormat.cc:1290
 msgid "Autocorrect (replace 1/2... with "
 msgstr ""
 
-#: kotext/koAutoFormat.cc:1264
+#: kotext/koAutoFormat.cc:1331
 msgid "Insert Variable"
 msgstr "Sititchî variåve"
 
-#: kotext/koAutoFormat.cc:1359
+#: kotext/koAutoFormat.cc:1426
 msgid "Autocorrection: Change Format"
 msgstr ""
 
-#: kotext/koAutoFormat.cc:1405
+#: kotext/koAutoFormat.cc:1472
 msgid "Autocorrect (use bullet style)"
 msgstr ""
 
-#: kotext/koAutoFormat.cc:1489
+#: kotext/koAutoFormat.cc:1556
 msgid "Autocorrect (use number style)"
 msgstr ""
 
-#: kotext/koAutoFormat.cc:1569 kotext/koAutoFormat.cc:1598
+#: kotext/koAutoFormat.cc:1636 kotext/koAutoFormat.cc:1665
 msgid "Autocorrect (remove start and end line space)"
 msgstr ""
 
-#: kotext/koAutoFormat.cc:1636
+#: kotext/koAutoFormat.cc:1703
 msgid "Capitalize Name of Days"
 msgstr ""
 
-#: kotext/koAutoFormat.cc:1887 kotext/koAutoFormat.cc:1910
-#: kotext/koAutoFormat.cc:1920 kotext/koAutoFormat.cc:1938
-#: kotext/koAutoFormat.cc:1953 kotext/koAutoFormat.cc:1998
-#: kotext/koAutoFormat.cc:2007
+#: kotext/koAutoFormat.cc:1960 kotext/koAutoFormat.cc:1983
+#: kotext/koAutoFormat.cc:1993 kotext/koAutoFormat.cc:2011
+#: kotext/koAutoFormat.cc:2026 kotext/koAutoFormat.cc:2071
+#: kotext/koAutoFormat.cc:2080
 msgid "Apply Autoformat"
 msgstr ""
 
@@ -2696,8 +2707,8 @@ msgstr ""
 msgid "Autoinclude"
 msgstr ""
 
-#: kotext/koAutoFormatDia.cc:177 kotext/koAutoFormatDia.cc:1140
-#: kotext/koFontDia.cc:1096
+#: kotext/koAutoFormatDia.cc:177 kotext/koAutoFormatDia.cc:1141
+#: kotext/koFontDia.cc:1101
 msgid "&Reset"
 msgstr "&Rimete come divant"
 
@@ -2763,198 +2774,198 @@ msgstr ""
 
 #: kotext/koAutoFormatDia.cc:284
 msgid "Automatically do &bold and underline formatting"
-msgstr ""
+msgstr "Mete otomaticmint e &cråssès letes et sorlignî"
 
 #: kotext/koAutoFormatDia.cc:286
 msgid ""
 "When you use _underline_ or *bold*, the text between the underscores or "
 "asterisks will be converted to underlined or bold text."
-msgstr ""
+msgstr "Cwand vos tapez avou des _sorlignaedjes_ ou des *cråssès letes*, li tecse inte les sorlignîs ou les stoeles serè cviersé e sorlignî ou cråssès letes."
 
 #: kotext/koAutoFormatDia.cc:294
 msgid ""
 "_: We add the 1/2 char at the %1\n"
 "Re&place 1/2... with %1..."
-msgstr ""
+msgstr "Re&plaecî « 1/2 » avou « %1 »..."
 
 #: kotext/koAutoFormatDia.cc:297
 msgid "Most standard fraction notations will be converted when available"
-msgstr ""
+msgstr "Li plupårt des fraccions standård seront cviersêyes si possibe"
 
 #: kotext/koAutoFormatDia.cc:304
 msgid "Use &autonumbering for numbered paragraphs"
-msgstr ""
+msgstr "Eployî l' oto&limerotaedje po les hagnons"
 
 #: kotext/koAutoFormatDia.cc:306
 msgid ""
 "When typing '1)' or similar in front of a paragraph, automatically convert "
 "the paragraph to use that numbering style. This has the advantage that "
 "further paragraphs will also be numbered and the spacing is done correctly."
-msgstr ""
+msgstr "Cwand vos tapez « 1) » ou ene sacwè insi pa dvant on hagnon d' tecse, li hagnon est otomaticmint cviersé po-z eployî ci stîle di limerotaedje la. Eployî on stîle di limerotaedje ça vout dire ki les hagnons shuvants seront eto limerotés avou l' minme sitîle."
 
 #: kotext/koAutoFormatDia.cc:314
 msgid "Rep&lace 1st... with 1^st..."
-msgstr ""
+msgstr "Replaecî « &1st » avou « 1^st »"
 
 #: kotext/koAutoFormatDia.cc:319
 msgid "Capitalize name of days"
-msgstr ""
+msgstr "No des djoûs e grandès letes"
 
 #: kotext/koAutoFormatDia.cc:324
 msgid "Use l&ist-formatting for bulleted paragraphs"
-msgstr ""
+msgstr "Eployî l' epådjnaedje des d&jivêyes po fé des hagnons come djivêyes a boles"
 
 #: kotext/koAutoFormatDia.cc:326
 msgid ""
 "When typing '*' or '-' in front of a paragraph, automatically convert the "
 "paragraph to use that list-style. Using a list-style formatting means that a "
 "correct bullet is used to draw the list."
-msgstr ""
+msgstr "Cwand vos tapez on « * » ou on « - » pa dvant on hagnon d' tecse, li hagnon est otomaticmint cviersé po-z eployî ci stîle di djivêye la. Eployî on stîle di djivêye ça vout dire k' i gn årè pa dvant ene bole ou ene loyeure di dessinêye, po ndè fé on cayet dins ene djivêye."
 
 #: kotext/koAutoFormatDia.cc:384
 msgid "Custom Quotes"
-msgstr ""
+msgstr "Wiyemets da vosse"
 
 #: kotext/koAutoFormatDia.cc:391
 msgid "Replace &double quotes with typographical quotes"
-msgstr ""
+msgstr "Replaecî les wiyemets &dobes ascii avou des wiyemets tipografikes"
 
 #: kotext/koAutoFormatDia.cc:432
 msgid "Replace &single quotes with typographical quotes"
-msgstr ""
+msgstr "Replaecî les wiyemets &faflotes ascii avou des wiyemets tipografikes"
 
 #: kotext/koAutoFormatDia.cc:493
 msgid "Advanced Autocorrection"
-msgstr ""
+msgstr "Sipepieus coridjaedje otomatike"
 
-#: kotext/koAutoFormatDia.cc:535
+#: kotext/koAutoFormatDia.cc:504 kotext/koAutoFormatDia.cc:506
+msgid "All Languages"
+msgstr "Tos les lingaedjes"
+
+#: kotext/koAutoFormatDia.cc:537
 msgid "Replacements and exceptions for language:"
 msgstr ""
 
-#: kotext/koAutoFormatDia.cc:539
+#: kotext/koAutoFormatDia.cc:541
 msgid "Enable word replacement"
 msgstr ""
 
-#: kotext/koAutoFormatDia.cc:544
+#: kotext/koAutoFormatDia.cc:546
 msgid "Replace text with format"
 msgstr ""
 
-#: kotext/koAutoFormatDia.cc:547
+#: kotext/koAutoFormatDia.cc:549
 msgid "&Find:"
 msgstr "&Trover:"
 
-#: kotext/koAutoFormatDia.cc:566
+#: kotext/koAutoFormatDia.cc:568
 msgid "&Replace:"
 msgstr "&Replaecî:"
 
-#: kotext/koAutoFormatDia.cc:585 kotext/koAutoFormatDia.cc:749
-#: kotext/koAutoFormatDia.cc:768 kotext/koAutoFormatDia.cc:815
-#: kotext/koAutoFormatDia.cc:833 kotext/koAutoFormatDia.cc:909
+#: kotext/koAutoFormatDia.cc:587 kotext/koAutoFormatDia.cc:750
+#: kotext/koAutoFormatDia.cc:769 kotext/koAutoFormatDia.cc:816
+#: kotext/koAutoFormatDia.cc:834 kotext/koAutoFormatDia.cc:910
 msgid "&Add"
 msgstr "R&adjouter"
 
-#: kotext/koAutoFormatDia.cc:591
+#: kotext/koAutoFormatDia.cc:593
 msgid "Find"
 msgstr "Trover"
 
-#: kotext/koAutoFormatDia.cc:606
+#: kotext/koAutoFormatDia.cc:608
 msgid "Change Format..."
 msgstr "Candjî l' cogne..."
 
-#: kotext/koAutoFormatDia.cc:612
+#: kotext/koAutoFormatDia.cc:614
 msgid "Clear Format"
 msgstr "Netyî l' cogne"
 
-#: kotext/koAutoFormatDia.cc:715
+#: kotext/koAutoFormatDia.cc:716
 msgid "Exceptions"
 msgstr ""
 
-#: kotext/koAutoFormatDia.cc:720
+#: kotext/koAutoFormatDia.cc:721
 msgid "Do not treat as the end of a sentence:"
 msgstr ""
 
-#: kotext/koAutoFormatDia.cc:727
+#: kotext/koAutoFormatDia.cc:728
 msgid "Accept two uppercase letters in:"
 msgstr ""
 
-#: kotext/koAutoFormatDia.cc:791
+#: kotext/koAutoFormatDia.cc:792
 msgid "Change Text Format"
 msgstr "Candjî l' cogne do tecse"
 
-#: kotext/koAutoFormatDia.cc:899
+#: kotext/koAutoFormatDia.cc:900
 msgid "An area is empty"
 msgstr ""
 
-#: kotext/koAutoFormatDia.cc:904
+#: kotext/koAutoFormatDia.cc:905
 msgid "Find string is the same as replace string!"
 msgstr ""
 
-#: kotext/koAutoFormatDia.cc:1139
+#: kotext/koAutoFormatDia.cc:1140
 msgid "Completion"
 msgstr ""
 
-#: kotext/koAutoFormatDia.cc:1171
+#: kotext/koAutoFormatDia.cc:1172
 msgid "E&nable completion"
 msgstr ""
 
-#: kotext/koAutoFormatDia.cc:1175
+#: kotext/koAutoFormatDia.cc:1176
 msgid "&Automatically add new words to completion list"
 msgstr ""
 
-#: kotext/koAutoFormatDia.cc:1176
+#: kotext/koAutoFormatDia.cc:1177
 msgid ""
 "If this option is enabled, any word typed in this document will "
 "automatically be added to the list of words used by the completion."
 msgstr ""
 
-#: kotext/koAutoFormatDia.cc:1182
+#: kotext/koAutoFormatDia.cc:1183
 msgid "Add Completion Entry..."
 msgstr ""
 
-#: kotext/koAutoFormatDia.cc:1185
+#: kotext/koAutoFormatDia.cc:1186
 msgid "R&emove Completion Entry"
 msgstr ""
 
-#: kotext/koAutoFormatDia.cc:1188
+#: kotext/koAutoFormatDia.cc:1189
 msgid "&Save Completion List"
 msgstr ""
 
-#: kotext/koAutoFormatDia.cc:1194
+#: kotext/koAutoFormatDia.cc:1195
 msgid "&Minimum word length:"
 msgstr ""
 
-#: kotext/koAutoFormatDia.cc:1198
+#: kotext/koAutoFormatDia.cc:1199
 msgid "Ma&ximum number of completion words:"
 msgstr ""
 
-#: kotext/koAutoFormatDia.cc:1201
+#: kotext/koAutoFormatDia.cc:1202
 msgid "A&ppend space"
 msgstr ""
 
-#: kotext/koAutoFormatDia.cc:1229
+#: kotext/koAutoFormatDia.cc:1230
 msgid ""
 "Completion list saved.\n"
 "It will be used for all documents from now on."
 msgstr ""
 
-#: kotext/koAutoFormatDia.cc:1230
+#: kotext/koAutoFormatDia.cc:1231
 msgid "Completion List Saved"
 msgstr ""
 
-#: kotext/koAutoFormatDia.cc:1236
+#: kotext/koAutoFormatDia.cc:1237
 msgid "Add Completion Entry"
 msgstr ""
 
-#: kotext/koAutoFormatDia.cc:1236
+#: kotext/koAutoFormatDia.cc:1237
 msgid "Enter entry:"
 msgstr ""
 
-#: kotext/koBgSpellCheck.cc:187
-msgid "Spell Checking"
-msgstr "Waitî l' ôrtografeye"
-
-#: kotext/koChangeCaseDia.cc:34 kotext/kotextobject.cc:1726
-#: kotext/kotextobject.cc:1802
+#: kotext/koChangeCaseDia.cc:34 kotext/kotextobject.cc:1727
+#: kotext/kotextobject.cc:1803
 msgid "Change Case"
 msgstr ""
 
@@ -3006,11 +3017,17 @@ msgstr "Dinez on novea no di stîle s' i vs plait:"
 msgid "Name already exists! Please choose another name"
 msgstr "Li no egzistêye dedja! Tchoezixhoz è èn ôte s' i vs plait"
 
+#: kotext/koFontDia.cc:56
+msgid ""
+"_: Test string for shadow dialog\n"
+"KOffice"
+msgstr ""
+
 #: kotext/koFontDia.cc:80
 msgid "Shadow"
 msgstr "Ombion"
 
-#: kotext/koFontDia.cc:85 kotext/koParagDia.cc:1301
+#: kotext/koFontDia.cc:85 kotext/koParagDia.cc:1303
 msgid "Co&lor:"
 msgstr "Co&leur:"
 
@@ -3018,83 +3035,83 @@ msgstr "Co&leur:"
 msgid "&Distance (pt):"
 msgstr ""
 
-#: kotext/koFontDia.cc:98
+#: kotext/koFontDia.cc:99
 msgid "pt"
 msgstr "pt"
 
-#: kotext/koFontDia.cc:103
+#: kotext/koFontDia.cc:104
 msgid "Di&rection:"
 msgstr ""
 
-#: kotext/koFontDia.cc:288
+#: kotext/koFontDia.cc:289
 msgid "S&hadow"
 msgstr ""
 
-#: kotext/koFontDia.cc:381
+#: kotext/koFontDia.cc:382
 msgid "Position"
 msgstr "Eplaeçmint"
 
-#: kotext/koFontDia.cc:387
+#: kotext/koFontDia.cc:390
 msgid "Su&perscript"
 msgstr ""
 
-#: kotext/koFontDia.cc:390
+#: kotext/koFontDia.cc:393
 msgid "Su&bscript"
 msgstr ""
 
-#: kotext/koFontDia.cc:393
+#: kotext/koFontDia.cc:396
 msgid "Relative &size:"
 msgstr ""
 
-#: kotext/koFontDia.cc:405
+#: kotext/koFontDia.cc:408
 msgid "Offse&t from baseline:"
 msgstr ""
 
-#: kotext/koFontDia.cc:424
+#: kotext/koFontDia.cc:427
 msgid "Colors"
 msgstr "Coleurs"
 
-#: kotext/koFontDia.cc:427 kotext/koFontDia.cc:476
+#: kotext/koFontDia.cc:430 kotext/koFontDia.cc:479
 msgid "Change Co&lor..."
 msgstr "Candjî l' co&leur..."
 
-#: kotext/koFontDia.cc:430
+#: kotext/koFontDia.cc:433
 msgid "Change Bac&kground Color..."
 msgstr "Candjî l' coleur di &fond..."
 
-#: kotext/koFontDia.cc:452
+#: kotext/koFontDia.cc:455
 msgid "Font &Effects"
 msgstr "&Efets des fontes"
 
-#: kotext/koFontDia.cc:462
+#: kotext/koFontDia.cc:465
 msgid "&Underlining:"
 msgstr "&Sorlignî:"
 
-#: kotext/koFontDia.cc:480
+#: kotext/koFontDia.cc:483
 msgid "&Strikethrough:"
 msgstr "&Båré:"
 
-#: kotext/koFontDia.cc:492
+#: kotext/koFontDia.cc:495
 msgid "&Word by word"
 msgstr ""
 
-#: kotext/koFontDia.cc:496
+#: kotext/koFontDia.cc:499
 msgid "A&ttribute:"
 msgstr ""
 
-#: kotext/koFontDia.cc:506
+#: kotext/koFontDia.cc:509
 msgid "Capitalization"
 msgstr ""
 
-#: kotext/koFontDia.cc:515
+#: kotext/koFontDia.cc:518
 msgid "La&nguage:"
 msgstr "&Lingaedje:"
 
-#: kotext/koFontDia.cc:523
+#: kotext/koFontDia.cc:526
 msgid "Auto h&yphenation"
 msgstr ""
 
-#: kotext/koFontDia.cc:1093
+#: kotext/koFontDia.cc:1098
 msgid "Select Font"
 msgstr "Tchoezi fonte"
 
@@ -3122,15 +3139,15 @@ msgstr ""
 msgid "Counter alignment:"
 msgstr ""
 
-#: kotext/koParagDia.cc:126 kotext/koParagDia.cc:192 kotext/koParagDia.cc:292
+#: kotext/koParagDia.cc:126 kotext/koParagDia.cc:192 kotext/koParagDia.cc:294
 msgid "Align Auto"
 msgstr "Aroymint otomatike"
 
-#: kotext/koParagDia.cc:127 kotext/koParagDia.cc:188 kotext/koParagDia.cc:288
+#: kotext/koParagDia.cc:127 kotext/koParagDia.cc:188 kotext/koParagDia.cc:290
 msgid "Align Left"
 msgstr "Aroymint a hintche"
 
-#: kotext/koParagDia.cc:128 kotext/koParagDia.cc:190 kotext/koParagDia.cc:290
+#: kotext/koParagDia.cc:128 kotext/koParagDia.cc:190 kotext/koParagDia.cc:292
 msgid "Align Right"
 msgstr "Aroymint a droete"
 
@@ -3146,277 +3163,277 @@ msgstr "Håyner les li&veas:"
 msgid "&Restart numbering at this paragraph"
 msgstr ""
 
-#: kotext/koParagDia.cc:330
+#: kotext/koParagDia.cc:332
 msgid "Arabic Numbers"
 msgstr ""
 
-#: kotext/koParagDia.cc:332
+#: kotext/koParagDia.cc:334
 msgid "Lower Alphabetical"
 msgstr ""
 
-#: kotext/koParagDia.cc:334
+#: kotext/koParagDia.cc:336
 msgid "Upper Alphabetical"
 msgstr ""
 
-#: kotext/koParagDia.cc:336
+#: kotext/koParagDia.cc:338
 msgid "Lower Roman Numbers"
 msgstr ""
 
-#: kotext/koParagDia.cc:338
+#: kotext/koParagDia.cc:340
 msgid "Upper Roman Numbers"
 msgstr ""
 
-#: kotext/koParagDia.cc:342
+#: kotext/koParagDia.cc:344
 msgid "Disc Bullet"
 msgstr ""
 
-#: kotext/koParagDia.cc:344
+#: kotext/koParagDia.cc:346
 msgid "Square Bullet"
 msgstr ""
 
-#: kotext/koParagDia.cc:346
+#: kotext/koParagDia.cc:348
 msgid "Box Bullet"
 msgstr ""
 
-#: kotext/koParagDia.cc:348
+#: kotext/koParagDia.cc:350
 msgid "Circle Bullet"
 msgstr ""
 
-#: kotext/koParagDia.cc:350
+#: kotext/koParagDia.cc:352
 msgid "Custom Bullet"
 msgstr ""
 
-#: kotext/koParagDia.cc:353
+#: kotext/koParagDia.cc:355
 msgid "None"
 msgstr "Nouk"
 
-#: kotext/koParagDia.cc:489 kotext/koParagDia.cc:563 kotext/koParagDia.cc:1333
-#: kotext/koParagDia.cc:1563 kotext/koStylist.cc:213
+#: kotext/koParagDia.cc:491 kotext/koParagDia.cc:565 kotext/koParagDia.cc:1335
+#: kotext/koParagDia.cc:1565 kotext/koStylist.cc:213
 msgid "Preview"
 msgstr "Prévey"
 
-#: kotext/koParagDia.cc:816
+#: kotext/koParagDia.cc:818
 #, c-format
 msgid "Frame width: %1"
 msgstr ""
 
-#: kotext/koParagDia.cc:820
+#: kotext/koParagDia.cc:822
 msgid "Indent"
 msgstr "Ritrait"
 
-#: kotext/koParagDia.cc:830
+#: kotext/koParagDia.cc:832
 msgid "&Left (%1):"
 msgstr "&Hintche (%1):"
 
-#: kotext/koParagDia.cc:840
+#: kotext/koParagDia.cc:842
 msgid "&Right (%1):"
 msgstr "&Droete (%1):"
 
-#: kotext/koParagDia.cc:850
+#: kotext/koParagDia.cc:852
 msgid "&First line (%1):"
 msgstr "&Prumire roye (%1):"
 
-#: kotext/koParagDia.cc:867
+#: kotext/koParagDia.cc:869
 msgid "Behavior at &End of Frame/Page"
 msgstr ""
 
-#: kotext/koParagDia.cc:871
+#: kotext/koParagDia.cc:873
 msgid "&Keep lines together"
 msgstr ""
 
-#: kotext/koParagDia.cc:873
+#: kotext/koParagDia.cc:875
 msgid "Insert break before paragraph"
 msgstr ""
 
-#: kotext/koParagDia.cc:875
+#: kotext/koParagDia.cc:877
 msgid "Insert break after paragraph"
 msgstr ""
 
-#: kotext/koParagDia.cc:887
+#: kotext/koParagDia.cc:889
 msgid "Line &Spacing"
 msgstr ""
 
-#: kotext/koParagDia.cc:893
+#: kotext/koParagDia.cc:895
 msgid ""
 "_: Line spacing value\n"
 "Single"
 msgstr "Simpe"
 
-#: kotext/koParagDia.cc:894
+#: kotext/koParagDia.cc:896
 msgid ""
 "_: Line spacing value\n"
 "1.5 Lines"
 msgstr "Ene roye et dmeye"
 
-#: kotext/koParagDia.cc:895
+#: kotext/koParagDia.cc:897
 msgid ""
 "_: Line spacing value\n"
 "Double"
 msgstr "Dobe"
 
-#: kotext/koParagDia.cc:896
-msgid "Multiply"
-msgstr "Mopliyî"
+#: kotext/koParagDia.cc:898
+msgid "Proportional"
+msgstr ""
 
-#: kotext/koParagDia.cc:897
+#: kotext/koParagDia.cc:899
 msgid "Line Distance (%1)"
 msgstr ""
 
-#: kotext/koParagDia.cc:898
+#: kotext/koParagDia.cc:900
 msgid "At Least (%1)"
 msgstr "Pol moens (%1)"
 
-#: kotext/koParagDia.cc:899
+#: kotext/koParagDia.cc:901
 msgid "Fixed (%1)"
 msgstr ""
 
-#: kotext/koParagDia.cc:918
+#: kotext/koParagDia.cc:920
 msgid "Para&graph Space"
 msgstr ""
 
-#: kotext/koParagDia.cc:922
+#: kotext/koParagDia.cc:924
 msgid "Before (%1):"
 msgstr "Divant (%1):"
 
-#: kotext/koParagDia.cc:931
+#: kotext/koParagDia.cc:933
 msgid "After (%1):"
 msgstr "Après (%1):"
 
-#: kotext/koParagDia.cc:1099 kotext/koParagDia.cc:2064
+#: kotext/koParagDia.cc:1101 kotext/koParagDia.cc:2066
 msgid "Indent && S&pacing"
 msgstr ""
 
-#: kotext/koParagDia.cc:1162
+#: kotext/koParagDia.cc:1164
 msgid "Align:"
 msgstr "Aroymint:"
 
-#: kotext/koParagDia.cc:1165 kotext/koParagDia.cc:1719
+#: kotext/koParagDia.cc:1167 kotext/koParagDia.cc:1721
 msgid "&Left"
 msgstr "&Hintche"
 
-#: kotext/koParagDia.cc:1169 kotext/koParagDia.cc:1723
+#: kotext/koParagDia.cc:1171 kotext/koParagDia.cc:1725
 msgid "C&enter"
 msgstr ""
 
-#: kotext/koParagDia.cc:1173 kotext/koParagDia.cc:1727
+#: kotext/koParagDia.cc:1175 kotext/koParagDia.cc:1729
 msgid "&Right"
 msgstr "&Droete"
 
-#: kotext/koParagDia.cc:1177
+#: kotext/koParagDia.cc:1179
 msgid "&Justify"
 msgstr ""
 
-#: kotext/koParagDia.cc:1233 kotext/koParagDia.cc:2069
+#: kotext/koParagDia.cc:1235 kotext/koParagDia.cc:2071
 msgid "Al&ignment"
 msgstr "A&roymint"
 
-#: kotext/koParagDia.cc:1277
+#: kotext/koParagDia.cc:1279
 msgid "St&yle:"
 msgstr "&Stîle:"
 
-#: kotext/koParagDia.cc:1505 kotext/koParagDia.cc:2074
+#: kotext/koParagDia.cc:1507 kotext/koParagDia.cc:2076
 msgid "&Borders"
 msgstr "&Boirdeures"
 
-#: kotext/koParagDia.cc:1518
+#: kotext/koParagDia.cc:1520
 msgid "Numbering"
 msgstr "Limerotaedje"
 
-#: kotext/koParagDia.cc:1529
+#: kotext/koParagDia.cc:1531
 msgid "&None"
 msgstr "&Nouk"
 
-#: kotext/koParagDia.cc:1535
+#: kotext/koParagDia.cc:1537
 msgid "&List"
 msgstr "&Djivêye"
 
-#: kotext/koParagDia.cc:1540
+#: kotext/koParagDia.cc:1542
 msgid "Chapt&er"
 msgstr ""
 
-#: kotext/koParagDia.cc:1563
+#: kotext/koParagDia.cc:1565
 msgid "Normal paragraph text"
 msgstr ""
 
-#: kotext/koParagDia.cc:1589 kotext/koParagDia.cc:2079
+#: kotext/koParagDia.cc:1591 kotext/koParagDia.cc:2081
 msgid "B&ullets/Numbers"
 msgstr ""
 
-#: kotext/koParagDia.cc:1660
+#: kotext/koParagDia.cc:1662
 #, c-format
 msgid ""
 "\n"
 "Frame width: %1"
 msgstr ""
 
-#: kotext/koParagDia.cc:1681
+#: kotext/koParagDia.cc:1683
 msgid "Po&sition"
 msgstr ""
 
-#: kotext/koParagDia.cc:1704
+#: kotext/koParagDia.cc:1706
 #, c-format
 msgid ""
 "_: 1 is a unit name\n"
 "Tabulator positions are given in %1"
 msgstr ""
 
-#: kotext/koParagDia.cc:1709
+#: kotext/koParagDia.cc:1711
 msgid "Alignment"
 msgstr "Aroymint"
 
-#: kotext/koParagDia.cc:1735
+#: kotext/koParagDia.cc:1737
 msgid "On followin&g character: "
 msgstr ""
 
-#: kotext/koParagDia.cc:1748
+#: kotext/koParagDia.cc:1750
 msgid "Tab Leader"
 msgstr ""
 
-#: kotext/koParagDia.cc:1756
+#: kotext/koParagDia.cc:1758
 msgid "The space a tab uses can be filled with a pattern."
 msgstr ""
 
-#: kotext/koParagDia.cc:1762
+#: kotext/koParagDia.cc:1764
 msgid "&Filling:"
 msgstr "&Rimplixhaedje:"
 
-#: kotext/koParagDia.cc:1767
+#: kotext/koParagDia.cc:1769
 msgid "Blank"
 msgstr "Vude"
 
-#: kotext/koParagDia.cc:1768
+#: kotext/koParagDia.cc:1770
 msgid "Dots"
 msgstr "Ponts"
 
-#: kotext/koParagDia.cc:1769
+#: kotext/koParagDia.cc:1771
 msgid "Line"
 msgstr "Roye"
 
-#: kotext/koParagDia.cc:1770
+#: kotext/koParagDia.cc:1772
 msgid "DashLine"
 msgstr ""
 
-#: kotext/koParagDia.cc:1771
+#: kotext/koParagDia.cc:1773
 msgid "DashDotLine"
 msgstr ""
 
-#: kotext/koParagDia.cc:1772
+#: kotext/koParagDia.cc:1774
 msgid "DashDotDotLine"
 msgstr ""
 
-#: kotext/koParagDia.cc:1777
+#: kotext/koParagDia.cc:1779
 msgid "&Width (%1):"
 msgstr "&Lårdjeu (%1):"
 
-#: kotext/koParagDia.cc:1797
+#: kotext/koParagDia.cc:1799
 msgid "&New"
 msgstr "&Novea"
 
-#: kotext/koParagDia.cc:2049 kotext/koParagDia.cc:2084
+#: kotext/koParagDia.cc:2051 kotext/koParagDia.cc:2086
 msgid "&Tabulators"
 msgstr ""
 
-#: kotext/koParagDia.cc:2060 kotext/koSearchDia.cc:536
+#: kotext/koParagDia.cc:2062 kotext/koSearchDia.cc:536
 msgid "Reset"
 msgstr "Rimete a zero"
 
@@ -3518,7 +3535,7 @@ msgstr ""
 "Mi trûte a les balzins, co pés ki l' grijhe cawe di m' pôve fayé "
 "vexhåd!"
 
-#: kotext/koStylist.cc:219 kotext/kovariable.cc:1571 kotext/kovariable.cc:1817
+#: kotext/koStylist.cc:219 kotext/kovariable.cc:1816 kotext/kovariable.cc:2062
 msgid "<None>"
 msgstr "<Nouk>"
 
@@ -3534,7 +3551,7 @@ msgstr "No del intrêye"
 msgid "Variable Name"
 msgstr "No del variåve"
 
-#: kotext/koVariableDlgs.cc:165 kotext/kovariable.cc:642
+#: kotext/koVariableDlgs.cc:165 kotext/kovariable.cc:826
 msgid "Variable"
 msgstr "Variåve"
 
@@ -3578,25 +3595,25 @@ msgstr ""
 msgid "Load..."
 msgstr "Tcherdjî..."
 
-#: kospell/koSconfig.cpp:591 kotext/kospell.cc:610 kotext/kospell.cc:663
+#: kospell/koSconfig.cpp:593 kotext/kospell.cc:610 kotext/kospell.cc:663
 msgid ""
 "_: default spelling dictionary\n"
 "Default - %1 [%2]"
 msgstr "Prémetou - %1 [%2]"
 
-#: kospell/koSconfig.cpp:384 kotext/kospell.cc:696
+#: kospell/koSconfig.cpp:386 kotext/kospell.cc:696
 msgid "English"
 msgstr "Inglès"
 
-#: kospell/koSconfig.cpp:387 kotext/kospell.cc:699
+#: kospell/koSconfig.cpp:389 kotext/kospell.cc:699
 msgid "Spanish"
 msgstr "Espagnol"
 
-#: kospell/koSconfig.cpp:390 kotext/kospell.cc:702
+#: kospell/koSconfig.cpp:392 kotext/kospell.cc:702
 msgid "Danish"
 msgstr "Daenwès"
 
-#: kospell/koSconfig.cpp:393 kotext/kospell.cc:705
+#: kospell/koSconfig.cpp:395 kotext/kospell.cc:705
 msgid "German"
 msgstr "Almand"
 
@@ -3604,125 +3621,125 @@ msgstr "Almand"
 msgid "German (new orth.)"
 msgstr "Almand (novele ortografeye)"
 
-#: kospell/koSconfig.cpp:399 kotext/kospell.cc:711
+#: kospell/koSconfig.cpp:401 kotext/kospell.cc:711
 msgid "Brazilian Portuguese"
 msgstr "Portuguès do Braezi"
 
-#: kospell/koSconfig.cpp:402 kotext/kospell.cc:714
+#: kospell/koSconfig.cpp:404 kotext/kospell.cc:714
 msgid "Portuguese"
 msgstr "Portuguès"
 
-#: kospell/koSconfig.cpp:405 kotext/kospell.cc:717
+#: kospell/koSconfig.cpp:407 kotext/kospell.cc:717
 msgid "Esperanto"
 msgstr "Esperanto"
 
-#: kospell/koSconfig.cpp:408 kotext/kospell.cc:720
+#: kospell/koSconfig.cpp:410 kotext/kospell.cc:720
 msgid "Norwegian"
 msgstr "Norvedjyin"
 
-#: kospell/koSconfig.cpp:411 kotext/kospell.cc:723
+#: kospell/koSconfig.cpp:413 kotext/kospell.cc:723
 msgid "Polish"
 msgstr "Polonès"
 
-#: kospell/koSconfig.cpp:414 kotext/kospell.cc:726
+#: kospell/koSconfig.cpp:416 kotext/kospell.cc:726
 msgid "Russian"
 msgstr "Rûsse"
 
-#: kospell/koSconfig.cpp:417 kotext/kospell.cc:729
+#: kospell/koSconfig.cpp:419 kotext/kospell.cc:729
 msgid "Slovenian"
 msgstr "Eslovenyin"
 
-#: kospell/koSconfig.cpp:420 kotext/kospell.cc:732
+#: kospell/koSconfig.cpp:422 kotext/kospell.cc:732
 msgid "Slovak"
 msgstr "Slovake"
 
-#: kospell/koSconfig.cpp:422 kotext/kospell.cc:735
+#: kospell/koSconfig.cpp:424 kotext/kospell.cc:735
 msgid "Czech"
 msgstr "Tcheke"
 
-#: kospell/koSconfig.cpp:425 kotext/kospell.cc:738
+#: kospell/koSconfig.cpp:427 kotext/kospell.cc:738
 msgid "Swedish"
 msgstr "Suwedwès"
 
-#: kospell/koSconfig.cpp:428 kotext/kospell.cc:741
+#: kospell/koSconfig.cpp:430 kotext/kospell.cc:741
 msgid "Swiss German"
 msgstr "Almand (Swisse)"
 
-#: kospell/koSconfig.cpp:431 kotext/kospell.cc:744
+#: kospell/koSconfig.cpp:433 kotext/kospell.cc:744
 msgid "Ukrainian"
 msgstr "Oucrinnyin"
 
-#: kospell/koSconfig.cpp:434 kotext/kospell.cc:747
+#: kospell/koSconfig.cpp:436 kotext/kospell.cc:747
 msgid "Lithuanian"
 msgstr "Litwanyin"
 
-#: kospell/koSconfig.cpp:437 kotext/kospell.cc:750
+#: kospell/koSconfig.cpp:439 kotext/kospell.cc:750
 msgid "French"
 msgstr "Francès"
 
-#: kospell/koSconfig.cpp:440 kotext/kospell.cc:753
+#: kospell/koSconfig.cpp:442 kotext/kospell.cc:753
 msgid "Belarusian"
 msgstr "Bielorûsse"
 
-#: kospell/koSconfig.cpp:443 kotext/kospell.cc:756
+#: kospell/koSconfig.cpp:445 kotext/kospell.cc:756
 msgid "Hungarian"
 msgstr "Hongrwès"
 
-#: kospell/koSconfig.cpp:447 kotext/kospell.cc:759
+#: kospell/koSconfig.cpp:449 kotext/kospell.cc:759
 msgid ""
 "_: Unknown ispell dictionary\n"
 "Unknown"
 msgstr "Nén cnoxhou"
 
-#: kotext/kotextformat.cc:1178 kotext/kotextformat.cc:1189
+#: kotext/kotextformat.cc:1407 kotext/kotextformat.cc:1418
 msgid "Without"
 msgstr ""
 
-#: kotext/kotextformat.cc:1179 kotext/kotextformat.cc:1190
+#: kotext/kotextformat.cc:1408 kotext/kotextformat.cc:1419
 msgid "Single"
 msgstr ""
 
-#: kotext/kotextformat.cc:1180 kotext/kotextformat.cc:1191
+#: kotext/kotextformat.cc:1409 kotext/kotextformat.cc:1420
 msgid "Simple Bold"
 msgstr ""
 
-#: kotext/kotextformat.cc:1181 kotext/kotextformat.cc:1192
+#: kotext/kotextformat.cc:1410 kotext/kotextformat.cc:1421
 msgid "Double"
 msgstr "Dobe"
 
-#: kotext/kotextformat.cc:1182
+#: kotext/kotextformat.cc:1411
 msgid "Wave"
 msgstr "Wache"
 
-#: kotext/kotextformat.cc:1200
+#: kotext/kotextformat.cc:1429
 msgid "Uppercase"
 msgstr ""
 
-#: kotext/kotextformat.cc:1201
+#: kotext/kotextformat.cc:1430
 msgid "Lowercase"
 msgstr ""
 
-#: kotext/kotextformat.cc:1202
+#: kotext/kotextformat.cc:1431
 msgid "Small Caps"
 msgstr ""
 
-#: kotext/kotextformat.cc:1209 kotext/kotextformat.cc:1220
+#: kotext/kotextformat.cc:1438 kotext/kotextformat.cc:1449
 msgid "Solid Line"
 msgstr ""
 
-#: kotext/kotextformat.cc:1210 kotext/kotextformat.cc:1221
+#: kotext/kotextformat.cc:1439 kotext/kotextformat.cc:1450
 msgid "Dash Line"
 msgstr ""
 
-#: kotext/kotextformat.cc:1211 kotext/kotextformat.cc:1222
+#: kotext/kotextformat.cc:1440 kotext/kotextformat.cc:1451
 msgid "Dot Line"
 msgstr ""
 
-#: kotext/kotextformat.cc:1212 kotext/kotextformat.cc:1223
+#: kotext/kotextformat.cc:1441 kotext/kotextformat.cc:1452
 msgid "Dash Dot Line"
 msgstr ""
 
-#: kotext/kotextformat.cc:1213 kotext/kotextformat.cc:1224
+#: kotext/kotextformat.cc:1442 kotext/kotextformat.cc:1453
 msgid "Dash Dot Dot Line"
 msgstr ""
 
@@ -3735,52 +3752,52 @@ msgstr "Disfacer tecse"
 msgid "Insert Text"
 msgstr "Sititchî tecse"
 
-#: kotext/kotextobject.cc:695 kotext/kotextview.cc:1193
+#: kotext/kotextobject.cc:691 kotext/kotextview.cc:1193
 msgid "Paste Text"
 msgstr "Aclaper tecse"
 
-#: kotext/kotextobject.cc:733
+#: kotext/kotextobject.cc:728
 #, c-format
 msgid "Apply Style %1"
 msgstr ""
 
-#: kotext/kotextobject.cc:988
+#: kotext/kotextobject.cc:983
 msgid "Format Text"
 msgstr ""
 
-#: kotext/kotextobject.cc:1075
+#: kotext/kotextobject.cc:1070
 msgid "Change List Type"
 msgstr ""
 
-#: kotext/kotextobject.cc:1111
+#: kotext/kotextobject.cc:1106
 msgid "Change Alignment"
 msgstr "Candjî l' aroymint"
 
-#: kotext/kotextobject.cc:1148
+#: kotext/kotextobject.cc:1143
 msgid "Change First Line Indent"
 msgstr ""
 
-#: kotext/kotextobject.cc:1150
+#: kotext/kotextobject.cc:1145
 msgid "Change Indent"
 msgstr ""
 
-#: kotext/kotextobject.cc:1152
+#: kotext/kotextobject.cc:1147
 msgid "Change Paragraph Spacing"
 msgstr ""
 
-#: kotext/kotextobject.cc:1202
+#: kotext/kotextobject.cc:1197
 msgid "Change Line Spacing"
 msgstr ""
 
-#: kotext/kotextobject.cc:1262
+#: kotext/kotextobject.cc:1257
 msgid "Change Borders"
 msgstr "Candjî les boirdeures"
 
-#: kotext/kotextobject.cc:1301
+#: kotext/kotextobject.cc:1296
 msgid "Change Tabulator"
 msgstr ""
 
-#: kotext/kotextobject.cc:1343
+#: kotext/kotextobject.cc:1338
 msgid "Change Shadow"
 msgstr ""
 
@@ -3820,263 +3837,263 @@ msgstr "Oister rawete"
 msgid "Remove Link"
 msgstr "Oister on loyén"
 
-#: kotext/kovariable.cc:169
+#: kotext/kovariable.cc:176
 msgid "No date set"
 msgstr "Nole date di defineye"
 
-#: kotext/kovariable.cc:241
+#: kotext/kovariable.cc:253
 msgid "Locale date format"
 msgstr "Cogne locåle pol date"
 
-#: kotext/kovariable.cc:242
+#: kotext/kovariable.cc:254
 msgid "Short locale date format"
 msgstr "Coûte cogne locåle pol date"
 
-#: kotext/kovariable.cc:243
+#: kotext/kovariable.cc:255
 msgid "Locale date & time format"
 msgstr "Cogne locåle pol date et l' eure"
 
-#: kotext/kovariable.cc:244
+#: kotext/kovariable.cc:256
 msgid "Short locale date & time format"
 msgstr "Coûte cogne locåle pol date et l' eure"
 
-#: kotext/kovariable.cc:319
+#: kotext/kovariable.cc:331
 msgid "Locale format"
 msgstr "Cogne locåle"
 
-#: kotext/kovariable.cc:477
+#: kotext/kovariable.cc:489
 msgid "No value"
 msgstr "Nole valixhance"
 
-#: kotext/kovariable.cc:840
+#: kotext/kovariable.cc:944
 msgid "Date (Fixed)"
 msgstr ""
 
-#: kotext/kovariable.cc:842 kotext/kovariable.cc:850
+#: kotext/kovariable.cc:946 kotext/kovariable.cc:954
 msgid "Date"
 msgstr "Date"
 
-#: kotext/kovariable.cc:844
+#: kotext/kovariable.cc:948
 msgid "Last Printing"
 msgstr "Dierin imprimaedje"
 
-#: kotext/kovariable.cc:846
+#: kotext/kovariable.cc:950
 msgid "File Creation"
 msgstr "Askepiaedje do fitchî"
 
-#: kotext/kovariable.cc:848
+#: kotext/kovariable.cc:952
 msgid "File Modification"
 msgstr "Dierin candjmint do fitchî"
 
-#: kotext/kovariable.cc:946
+#: kotext/kovariable.cc:1075
 msgid "Current Date (fixed)"
 msgstr ""
 
-#: kotext/kovariable.cc:947
+#: kotext/kovariable.cc:1076
 msgid "Current Date (variable)"
 msgstr ""
 
-#: kotext/kovariable.cc:948
+#: kotext/kovariable.cc:1077
 msgid "Date of Last Printing"
 msgstr "Date do dierin imprimaedje"
 
-#: kotext/kovariable.cc:949
+#: kotext/kovariable.cc:1078
 msgid "Date of File Creation"
 msgstr "Date di l' askepiaedje do fitchî"
 
-#: kotext/kovariable.cc:950
+#: kotext/kovariable.cc:1079
 msgid "Date of File Modification"
 msgstr "Date do dierin candjmint do fitchî"
 
-#: kotext/kovariable.cc:968
+#: kotext/kovariable.cc:1097
 msgid "Date Format"
 msgstr "Cogne del date"
 
-#: kotext/kovariable.cc:1038
+#: kotext/kovariable.cc:1167
 msgid "Time (Fixed)"
 msgstr ""
 
-#: kotext/kovariable.cc:1038
+#: kotext/kovariable.cc:1167
 msgid "Time"
 msgstr "Eure"
 
-#: kotext/kovariable.cc:1116
+#: kotext/kovariable.cc:1264
 msgid "Current Time (fixed)"
 msgstr ""
 
-#: kotext/kovariable.cc:1117
+#: kotext/kovariable.cc:1265
 msgid "Current Time (variable)"
 msgstr ""
 
-#: kotext/kovariable.cc:1130
+#: kotext/kovariable.cc:1278
 msgid "Time Format"
 msgstr "Cogne di l' eure"
 
-#: kotext/kovariable.cc:1205
+#: kotext/kovariable.cc:1353
 msgid "Custom Variable"
 msgstr "Variåve da vosse"
 
-#: kotext/kovariable.cc:1249
+#: kotext/kovariable.cc:1411
 msgid "Custom..."
 msgstr "Da vosse..."
 
-#: kotext/kovariable.cc:1268
+#: kotext/kovariable.cc:1430
 msgid "Mail Merge"
 msgstr ""
 
-#: kotext/kovariable.cc:1303
+#: kotext/kovariable.cc:1465
 msgid "&Mail Merge..."
 msgstr ""
 
-#: kotext/kovariable.cc:1317
+#: kotext/kovariable.cc:1479
 msgid "Page Current Num"
 msgstr ""
 
-#: kotext/kovariable.cc:1319
+#: kotext/kovariable.cc:1481
 msgid "Total Page Num"
 msgstr "Nombe totå di pådjes"
 
-#: kotext/kovariable.cc:1321 kotext/kovariable.cc:1328
+#: kotext/kovariable.cc:1483 kotext/kovariable.cc:1490
 msgid "Current Section"
 msgstr "Seccion do moumint"
 
-#: kotext/kovariable.cc:1323
+#: kotext/kovariable.cc:1485
 msgid "Previous Page Number"
 msgstr ""
 
-#: kotext/kovariable.cc:1325
+#: kotext/kovariable.cc:1487
 msgid "Next Page Number"
 msgstr ""
 
-#: kotext/kovariable.cc:1361
+#: kotext/kovariable.cc:1549
 msgid "Page Number"
 msgstr "Limero d' pådje"
 
-#: kotext/kovariable.cc:1362
+#: kotext/kovariable.cc:1550
 msgid "Number of Pages"
 msgstr "Nombe di pådjes"
 
-#: kotext/kovariable.cc:1363
+#: kotext/kovariable.cc:1551
 msgid "Section Title"
 msgstr "Tite del seccion"
 
-#: kotext/kovariable.cc:1364
+#: kotext/kovariable.cc:1552
 msgid "Previous Page"
 msgstr "Pådje di dvant"
 
-#: kotext/kovariable.cc:1365
+#: kotext/kovariable.cc:1553
 msgid "Next Page"
 msgstr "Pådje shuvante"
 
-#: kotext/kovariable.cc:1394
+#: kotext/kovariable.cc:1582
 msgid "Filename"
 msgstr "No do fitchî"
 
-#: kotext/kovariable.cc:1397 kotext/kovariable.cc:1598
+#: kotext/kovariable.cc:1585 kotext/kovariable.cc:1843
 msgid "Directory Name"
 msgstr "No do ridant"
 
-#: kotext/kovariable.cc:1400
+#: kotext/kovariable.cc:1588
 msgid "Path Filename"
 msgstr "Tchimin et no do fitchî"
 
-#: kotext/kovariable.cc:1403
+#: kotext/kovariable.cc:1591
 msgid "Filename Without Extension"
 msgstr ""
 
-#: kotext/kovariable.cc:1406 kotext/kovariable.cc:1582
+#: kotext/kovariable.cc:1594 kotext/kovariable.cc:1827
 msgid "Author Name"
 msgstr "No d' l' Oteur"
 
-#: kotext/kovariable.cc:1409 kotext/kovariable.cc:1585
+#: kotext/kovariable.cc:1597 kotext/kovariable.cc:1830
 msgid "Email"
 msgstr "Emile"
 
-#: kotext/kovariable.cc:1412
+#: kotext/kovariable.cc:1600
 msgid "Company Name"
 msgstr "No del eterprijhe"
 
-#: kotext/kovariable.cc:1415 kotext/kovariable.cc:1586
+#: kotext/kovariable.cc:1603 kotext/kovariable.cc:1831
 msgid "Telephone"
 msgstr "Telefone"
 
-#: kotext/kovariable.cc:1418 kotext/kovariable.cc:1587
+#: kotext/kovariable.cc:1606 kotext/kovariable.cc:1832
 msgid "Fax"
 msgstr "Facs"
 
-#: kotext/kovariable.cc:1421 kotext/kovariable.cc:1591
+#: kotext/kovariable.cc:1609 kotext/kovariable.cc:1836
 msgid "Country"
 msgstr "Payis"
 
-#: kotext/kovariable.cc:1424 kotext/kovariable.cc:1589
+#: kotext/kovariable.cc:1612 kotext/kovariable.cc:1834
 msgid "Postal Code"
 msgstr "Côde del posse"
 
-#: kotext/kovariable.cc:1427 kotext/kovariable.cc:1590
+#: kotext/kovariable.cc:1615 kotext/kovariable.cc:1835
 msgid "City"
 msgstr "Veye"
 
-#: kotext/kovariable.cc:1430 kotext/kovariable.cc:1588
+#: kotext/kovariable.cc:1618 kotext/kovariable.cc:1833
 msgid "Street"
 msgstr "Rowe"
 
-#: kotext/kovariable.cc:1433
+#: kotext/kovariable.cc:1621
 msgid "Author Title"
 msgstr "Tite di l' oteur"
 
-#: kotext/kovariable.cc:1436 kotext/kovariable.cc:1583
+#: kotext/kovariable.cc:1624 kotext/kovariable.cc:1828
 msgid "Title"
 msgstr "Tite"
 
-#: kotext/kovariable.cc:1439
+#: kotext/kovariable.cc:1627
 msgid "Abstract"
 msgstr "Rascourti"
 
-#: kotext/kovariable.cc:1442 kotext/kovariable.cc:1600
+#: kotext/kovariable.cc:1630 kotext/kovariable.cc:1845
 msgid "Initials"
 msgstr ""
 
-#: kotext/kovariable.cc:1445
+#: kotext/kovariable.cc:1633
 msgid "Field"
 msgstr "Tchamp"
 
-#: kotext/kovariable.cc:1584
+#: kotext/kovariable.cc:1829
 msgid "Company"
 msgstr "Eterprijhe"
 
-#: kotext/kovariable.cc:1593
+#: kotext/kovariable.cc:1838
 msgid "Document Title"
 msgstr "Tite do documint"
 
-#: kotext/kovariable.cc:1594
+#: kotext/kovariable.cc:1839
 msgid "Document Abstract"
 msgstr "Rascourti do documint"
 
-#: kotext/kovariable.cc:1596
+#: kotext/kovariable.cc:1841
 msgid "File Name"
 msgstr "No do fitchî"
 
-#: kotext/kovariable.cc:1597
+#: kotext/kovariable.cc:1842
 msgid "File Name without Extension"
 msgstr "No do fitchî sins cawete"
 
-#: kotext/kovariable.cc:1599
+#: kotext/kovariable.cc:1844
 msgid "Directory && File Name"
 msgstr "Ridant eyet no do fitchî"
 
-#: kotext/kovariable.cc:1673
+#: kotext/kovariable.cc:1918
 msgid "Link"
 msgstr "Loyén"
 
-#: kotext/kovariable.cc:1710
+#: kotext/kovariable.cc:1955
 msgid "Link..."
 msgstr "Loyén..."
 
-#: kotext/kovariable.cc:1740
+#: kotext/kovariable.cc:1985
 msgid "Note"
 msgstr "Note"
 
-#: kotext/kovariable.cc:1767
+#: kotext/kovariable.cc:2012
 msgid "Note..."
 msgstr "Note..."
 
@@ -4136,6 +4153,17 @@ msgstr ""
 #, c-format
 msgid "Redo: %1"
 msgstr "Rifé: %1"
+
+#: kofficeui/kozoomaction.cpp:72 kofficeui/kozoomaction.cpp:75
+#: kofficeui/kozoomaction.cpp:95 kofficeui/kozoomaction.cpp:96
+#: kofficeui/kozoomaction.cpp:97 kofficeui/kozoomaction.cpp:98
+#: kofficeui/kozoomaction.cpp:99 kofficeui/kozoomaction.cpp:100
+#: kofficeui/kozoomaction.cpp:101 kofficeui/kozoomaction.cpp:102
+#: kofficeui/kozoomaction.cpp:103 kofficeui/kozoomaction.cpp:104
+#: kofficeui/kozoomaction.cpp:105 kofficeui/kozoomaction.cpp:106
+#: kofficeui/kozoomaction.cpp:109
+msgid "%1%"
+msgstr ""
 
 #: kofficeui/tkcoloractions.cpp:83
 msgid "More Text Colors..."
@@ -4564,7 +4592,7 @@ msgstr "Vete prétins"
 
 #: kofficeui/tkcoloractions.cpp:505
 msgid "Peru"
-msgstr ""
+msgstr "Perou"
 
 #: kofficeui/tkcoloractions.cpp:506
 msgid "Cornflower Blue"
@@ -4612,7 +4640,7 @@ msgstr ""
 
 #: kofficeui/tkcoloractions.cpp:517
 msgid "Chocolate"
-msgstr "Tchocolåt"
+msgstr "Tchôcolåt"
 
 #: kofficeui/tkcoloractions.cpp:518
 msgid "Medium Sea Green"
@@ -4734,88 +4762,88 @@ msgstr "Bleu moyén"
 msgid "Navy"
 msgstr "Bleu marine"
 
-#: kospell/koSconfig.cpp:123
+#: kospell/koSconfig.cpp:125
 msgid "Create root/affix combinations not in dictionary"
 msgstr "Fé des loyéns bodje/sititchete ki n' sont nén e motî"
 
-#: kospell/koSconfig.cpp:128
+#: kospell/koSconfig.cpp:130
 msgid "Consider run-together words as spelling errors"
 msgstr "Fé come si les mots aclapés serént des måcules"
 
-#: kospell/koSconfig.cpp:139
+#: kospell/koSconfig.cpp:141
 msgid "Dictionary:"
 msgstr "Diccionaire:"
 
-#: kospell/koSconfig.cpp:163
+#: kospell/koSconfig.cpp:165
 msgid "Encoding:"
 msgstr "Ecôdaedje:"
 
-#: kospell/koSconfig.cpp:167
+#: kospell/koSconfig.cpp:169
 msgid "International Ispell"
 msgstr "Ispell eternåcionå"
 
-#: kospell/koSconfig.cpp:168
+#: kospell/koSconfig.cpp:170
 msgid "Aspell"
 msgstr "Aspell"
 
-#: kospell/koSconfig.cpp:169
+#: kospell/koSconfig.cpp:171
 msgid "Hspell"
 msgstr "Hspell"
 
-#: kospell/koSconfig.cpp:174
+#: kospell/koSconfig.cpp:176
 msgid "Client:"
 msgstr "Cliyint:"
 
-#: kospell/koSconfig.cpp:184
+#: kospell/koSconfig.cpp:186
 msgid "Ignore case when checking words"
 msgstr ""
 
-#: kospell/koSconfig.cpp:187
+#: kospell/koSconfig.cpp:189
 msgid "Ignore accents when checking words"
 msgstr ""
 
-#: kospell/koSconfig.cpp:190
+#: kospell/koSconfig.cpp:192
 msgid "Check words with numbers"
 msgstr ""
 
-#: kospell/koSconfig.cpp:193
+#: kospell/koSconfig.cpp:195
 msgid "Ignore uppercase words"
 msgstr ""
 
-#: kospell/koSconfig.cpp:196
+#: kospell/koSconfig.cpp:198
 msgid ""
 "This option tells the spell-checker to accept words that are written in "
 "uppercase, such as KDE."
 msgstr ""
 
-#: kospell/koSconfig.cpp:198
+#: kospell/koSconfig.cpp:200
 msgid "Ignore title case words"
 msgstr ""
 
-#: kospell/koSconfig.cpp:201
+#: kospell/koSconfig.cpp:203
 msgid ""
 "This option tells the spell-checker to accept words starting with an "
 "uppercase letter, such as United States."
 msgstr ""
 
-#: kospell/koSconfig.cpp:323 kospell/koSconfig.cpp:516
-#: kospell/koSconfig.cpp:687 kospell/koSconfig.cpp:764
+#: kospell/koSconfig.cpp:325 kospell/koSconfig.cpp:518
+#: kospell/koSconfig.cpp:689 kospell/koSconfig.cpp:766
 msgid "Hebrew"
 msgstr "Ebreu"
 
-#: kospell/koSconfig.cpp:396
+#: kospell/koSconfig.cpp:398
 msgid "German (new spelling)"
 msgstr "Almand (novele ortografeye)"
 
-#: kospell/koSconfig.cpp:549
+#: kospell/koSconfig.cpp:551
 msgid "ISpell Default"
 msgstr "Ispell - Prémetou"
 
-#: kospell/koSconfig.cpp:960
+#: kospell/koSconfig.cpp:962
 msgid "ASpell Default"
 msgstr "Aspell - Prémetou"
 
-#: kospell/koSconfig.cpp:1005
+#: kospell/koSconfig.cpp:1007
 #, c-format
 msgid ""
 "_: default spelling dictionary\n"
@@ -4870,7 +4898,7 @@ msgstr "&Radjouter"
 msgid "AutoCorrection"
 msgstr "Coridjaedje otomatike"
 
-#: kospell/koaspell.cpp:563 kospell/koispell.cpp:1226
+#: kospell/koaspell.cpp:563 kospell/koispell.cpp:1232
 msgid "Spell Checker"
 msgstr "Coridjeu d' ortografeye"
 
