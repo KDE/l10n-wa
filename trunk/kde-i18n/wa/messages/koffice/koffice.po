@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
-"POT-Creation-Date: 2003-07-02 01:31+0200\n"
+"POT-Creation-Date: 2003-07-04 01:38+0200\n"
 "PO-Revision-Date: 2003-07-02 22:51+0200\n"
 "Last-Translator: Lorint HENDSCHEL <LorintHendschel@skynet.be>\n"
 "Language-Team: Walon <linux-wa@chanae.alphanet.ch>\n"
@@ -407,7 +407,15 @@ msgstr ""
 msgid "Internal error: not a KOffice application, saving not allowed."
 msgstr ""
 
-#: kofficecore/koDocument.cc:408
+#: kofficecore/koDocument.cc:367
+msgid "Making backup..."
+msgstr ""
+
+#: kofficecore/koDocument.cc:388
+msgid "Saving..."
+msgstr "Schapant.."
+
+#: kofficecore/koDocument.cc:413
 #, c-format
 msgid ""
 "Could not save\n"
@@ -416,7 +424,7 @@ msgstr ""
 "Dji n' sai schaper\n"
 "%1"
 
-#: kofficecore/koDocument.cc:411
+#: kofficecore/koDocument.cc:416
 msgid ""
 "Could not save %1\n"
 "Reason: %2"
@@ -424,19 +432,23 @@ msgstr ""
 "Dji n' a savou schaper %1\n"
 "Vochal li råjhon: %2"
 
-#: kofficecore/koDocument.cc:896
+#: kofficecore/koDocument.cc:502
+msgid "Autosaving..."
+msgstr ""
+
+#: kofficecore/koDocument.cc:904
 msgid "Couldn't open the file for saving"
 msgstr ""
 
-#: kofficecore/koDocument.cc:905
+#: kofficecore/koDocument.cc:913
 msgid "Error while saving embedded documents"
 msgstr ""
 
-#: kofficecore/koDocument.cc:924
+#: kofficecore/koDocument.cc:932
 msgid "Not able to write 'maindoc.xml'."
 msgstr ""
 
-#: kofficecore/koDocument.cc:1105
+#: kofficecore/koDocument.cc:1113
 msgid ""
 "An autosaved file for an unnamed document exists in %1.\n"
 "This file is dated %2\n"
@@ -447,7 +459,7 @@ msgstr ""
 "Li date di ç' fitchî la est %2\n"
 "Voloz vs ki djel drove?"
 
-#: kofficecore/koDocument.cc:1158
+#: kofficecore/koDocument.cc:1166
 #, c-format
 msgid ""
 "Malformed URL\n"
@@ -456,7 +468,7 @@ msgstr ""
 "URL må basti\n"
 "%1"
 
-#: kofficecore/koDocument.cc:1174
+#: kofficecore/koDocument.cc:1182
 msgid ""
 "An autosaved file exists for this document.\n"
 "Do you want to open it instead?"
@@ -464,13 +476,13 @@ msgstr ""
 "On fitchî ki dj' a schapé tot seu egzistêye po ci documint ci\n"
 "Voloz vs ki djel drove ?"
 
-#: kofficecore/koDocument.cc:1213 kofficeui/koTemplateChooseDia.cc:79
+#: kofficecore/koDocument.cc:1221 kofficeui/koTemplateChooseDia.cc:79
 #: kofficeui/koTemplateChooseDia.cc:617
 msgid "The file %1 doesn't exist."
 msgstr "Li fitchî %1 n' egzisteye nén"
 
-#: kofficecore/koDocument.cc:1270 kofficecore/koDocument.cc:1286
-#: kofficecore/koDocument.cc:1307
+#: kofficecore/koDocument.cc:1278 kofficecore/koDocument.cc:1294
+#: kofficecore/koDocument.cc:1315
 #, c-format
 msgid ""
 "Could not open\n"
@@ -479,7 +491,7 @@ msgstr ""
 "Dji n' a savu drovi\n"
 "%1"
 
-#: kofficecore/koDocument.cc:1309
+#: kofficecore/koDocument.cc:1317
 msgid ""
 "Could not open %1\n"
 "Reason: %2"
@@ -487,39 +499,39 @@ msgstr ""
 "Dji n' a savou drovi li fitchî %1\n"
 "Vochal li råjhon: %2"
 
-#: kofficecore/koDocument.cc:1382
+#: kofficecore/koDocument.cc:1390
 msgid "Couldn't open the file for reading (check read permissions)."
 msgstr ""
 
-#: kofficecore/koDocument.cc:1392
+#: kofficecore/koDocument.cc:1400
 msgid "Couldn't read the beginning of the file."
 msgstr ""
 
-#: kofficecore/koDocument.cc:1418 kofficecore/koDocument.cc:1452
+#: kofficecore/koDocument.cc:1426 kofficecore/koDocument.cc:1460
 msgid ""
 "parsing error in the main document at line %1, column %2\n"
 "Error message: %3"
 msgstr ""
 
-#: kofficecore/koDocument.cc:1435
+#: kofficecore/koDocument.cc:1443
 msgid "Not a valid KOffice file."
 msgstr ""
 
-#: kofficecore/koDocument.cc:1468
+#: kofficecore/koDocument.cc:1476
 msgid "Invalid document: no file 'maindoc.xml'."
 msgstr ""
 
-#: kofficecore/koDocument.cc:1480
+#: kofficecore/koDocument.cc:1488
 msgid "Couldn't load embedded objects."
 msgstr ""
 
-#: kofficecore/koDocument.cc:1618 kofficecore/koMainWindow.cc:971
+#: kofficecore/koDocument.cc:1626 kofficecore/koMainWindow.cc:971
 msgid ""
 "<p>The document <b>'%1'</b> has been modified.</p>"
 "<p>Do you want to save it?</p>"
 msgstr "<p>Li documint <b>«%1»</b> a stî candjî.</p><p>El voloz schaper?</p>"
 
-#: kofficecore/koDocument.cc:1759
+#: kofficecore/koDocument.cc:1767
 msgid "Internal error: saveXML not implemented"
 msgstr ""
 
@@ -871,23 +883,23 @@ msgstr "Drovi on documint"
 msgid "Import Document"
 msgstr "Aberweter on documint"
 
-#: kofficecore/koMainWindow.cc:1460
+#: kofficecore/koMainWindow.cc:1461
 msgid "Show %1 Toolbar"
 msgstr "Håyner %1 Bår ås Usteyes"
 
-#: kofficecore/koMainWindow.cc:1530
+#: kofficecore/koMainWindow.cc:1531
 msgid "ERROR: File not found."
 msgstr ""
 
-#: kofficecore/koMainWindow.cc:1531
+#: kofficecore/koMainWindow.cc:1532
 msgid "To send a file you must first have saved the file to the filesystem."
 msgstr ""
 
-#: kofficecore/koMainWindow.cc:1532
+#: kofficecore/koMainWindow.cc:1533
 msgid "Error: File Not Found!"
 msgstr ""
 
-#: kofficecore/koMainWindow.cc:1542
+#: kofficecore/koMainWindow.cc:1543
 msgid ""
 "You will lose all your changes!\n"
 "Do you want to continue?"
@@ -2515,7 +2527,8 @@ msgid "KOffice script interpreter."
 msgstr ""
 
 #: koscript/main.cc:54
-msgid "You must specify a script.\n"
+msgid ""
+"You must specify a script.\n"
 msgstr ""
 
 #: kotext/dateformatwidget_impl.cc:24
@@ -3463,7 +3476,9 @@ msgstr ""
 
 #: kotext/koStylist.cc:212
 msgid "The quick brown fox jumps over the lazy dog"
-msgstr "Mi trûte a les balzins, co pés ki l' grijhe cawe di m' pôve fayé vexhåd!"
+msgstr ""
+"Mi trûte a les balzins, co pés ki l' grijhe cawe di m' pôve fayé "
+"vexhåd!"
 
 #: kotext/koStylist.cc:218 kotext/kovariable.cc:1570
 msgid "<None>"
@@ -4365,4 +4380,3 @@ msgstr "Coridjeu d' ortografeye"
 #~ "<qt>Vos vos aprestez a schaper li documint avou li cogne %1. <p>Do côp, "
 #~ "vos pôrîz piede ene pårteye di l' adjinçnaedje di vosse documint. Dji "
 #~ "continowe?</qt>"
-
