@@ -13,8 +13,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kuser\n"
-"POT-Creation-Date: 2003-12-10 01:40+0100\n"
-"PO-Revision-Date: 2004-01-12 17:46+0100\n"
+"POT-Creation-Date: 2004-05-29 01:15+0200\n"
+"PO-Revision-Date: 2004-06-10 21:56+0200\n"
 "Last-Translator: Pablo Saratxaga <pablo@walon.org>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
 "MIME-Version: 1.0\n"
@@ -34,27 +34,27 @@ msgid ""
 "Your emails"
 msgstr "<LorintHendschel@skynet.be>"
 
-#: addUser.cpp:55
+#: addUser.cpp:45
 msgid "New Account Options"
 msgstr "Tchuzes po les noveas contes"
 
-#: addUser.cpp:59 userDefaultsPage.cpp:65
+#: addUser.cpp:49 rc.cpp:25 rc.cpp:61
 msgid "Create home folder"
 msgstr "Fé on ridant måjhon"
 
-#: addUser.cpp:61
+#: addUser.cpp:51
 msgid "Copy skeleton"
 msgstr "Copyî ene tcherpinte"
 
-#: addUser.cpp:62
-msgid "Use private group"
-msgstr "Eployî on groupe privé"
+#: addUser.cpp:67
+msgid "User with UID %1 already exists."
+msgstr "I gn a ddja èn uzeu avou èn UID %1."
 
-#: addUser.cpp:74 propdlg.cpp:701
-msgid "User with UID %1 already exists"
-msgstr "I gn a ddja èn uzeu avou èn UID %1"
+#: addUser.cpp:73
+msgid "User with RID %1 already exists."
+msgstr "I gn a ddja èn uzeu avou èn RID %1."
 
-#: addUser.cpp:113
+#: addUser.cpp:115
 msgid ""
 "Folder %1 already exists!\n"
 "%2 may become owner and permissions may change.\n"
@@ -64,21 +64,22 @@ msgstr ""
 "%2 pout divni li prôpietaire et les permissions si polèt candjî.\n"
 "Voloz vs vormint eployî %3?"
 
-#: addUser.cpp:113 kuser.cpp:1109
-msgid "&Continue"
-msgstr "&Continouwer"
+#: addUser.cpp:122
+msgid "%1 is not a folder."
+msgstr "%1 n' est nén on ridant."
 
-#: addUser.cpp:118
-msgid "%1 is not a folder"
-msgstr "%1 n' est nén on ridant"
-
-#: addUser.cpp:141
-msgid "Mailbox %1 already exists (uid=%2)"
-msgstr "Li boesse ås letes %1 egzistêye dedja (uid=%2)"
+#: addUser.cpp:124 addUser.cpp:152
+#, c-format
+msgid "stat() failed on %1."
+msgstr ""
 
 #: addUser.cpp:145
-msgid "%1 exists but is not a regular file"
-msgstr "%1 egzistêye dedja, mins ci n' est nén on fitchî normål"
+msgid "Mailbox %1 already exists (uid=%2)."
+msgstr "Li boesse ås letes %1 egzistêye dedja (uid=%2)."
+
+#: addUser.cpp:149
+msgid "%1 exists but is not a regular file."
+msgstr "%1 egzistêye dedja, mins ci n' est nén on fitchî normå."
 
 #: delUser.cpp:27
 msgid "Delete User"
@@ -98,178 +99,241 @@ msgstr "Disfacer l' ridant &måjhon: %1"
 msgid "Delete &mailbox: %1"
 msgstr "Disfacer &boesse ås emiles: %1"
 
-#: editDefaults.cpp:36
-msgid "User"
-msgstr "Uzeu"
+#: editDefaults.cpp:43
+msgid "General"
+msgstr "Djenerå"
 
-#: editDefaults.cpp:41
-msgid "Sources"
-msgstr "Sourdants"
+#: editDefaults.cpp:43
+msgid "General Settings"
+msgstr "Djenerålès tchuzes"
 
-#: editGroup.cpp:33
+#: editDefaults.cpp:44 propdlg.cpp:151
+msgid "<Empty>"
+msgstr "<Vude>"
+
+#: editDefaults.cpp:48
+msgid "File Source Settings"
+msgstr ""
+
+#: editDefaults.cpp:55
+msgid "Connection"
+msgstr "Raloyaedje"
+
+#: editDefaults.cpp:58
+msgid "Settings"
+msgstr "Apontiaedjes"
+
+#: editDefaults.cpp:59 rc.cpp:20
+msgid "LDAP"
+msgstr "LDAP"
+
+#: editDefaults.cpp:59
+msgid "LDAP Source Settings"
+msgstr ""
+
+#: editGroup.cpp:39
 msgid "Group Properties"
 msgstr "Prôpietés des groupes"
 
-#: editGroup.cpp:41
-msgid "Users in Group '%1'"
-msgstr "Uzeus do groupe «%1»"
+#: editGroup.cpp:48
+msgid "Domain Admins"
+msgstr ""
 
-#: editGroup.cpp:42
-msgid "Select the users that should be in this group."
-msgstr "Tchoezixhoz les uzeus ki sont mimbes di ç' groupe chal."
+#: editGroup.cpp:48
+msgid "Admins"
+msgstr ""
 
-#: grpnamedlg.cpp:32
-msgid "Add Group"
-msgstr "Radjouter on groupe"
+#: editGroup.cpp:49
+msgid "Domain Users"
+msgstr ""
 
-#: grpnamedlg.cpp:40
-msgid "Group name:"
-msgstr "No do groupe:"
+#: editGroup.cpp:49 mainView.cpp:52
+msgid "Users"
+msgstr "Uzeus"
 
-#: grpnamedlg.cpp:55
+#: editGroup.cpp:50
+msgid "Domain Guests"
+msgstr ""
+
+#: editGroup.cpp:50
+msgid "Guests"
+msgstr ""
+
+#: editGroup.cpp:57
 msgid "Group number:"
 msgstr "Limero do groupe:"
 
-#: grpnamedlg.cpp:80
+#: editGroup.cpp:70
+msgid "Group rid:"
+msgstr ""
+
+#: editGroup.cpp:88
+msgid "Group name:"
+msgstr "No do groupe:"
+
+#: editGroup.cpp:101
+msgid "Description:"
+msgstr "Discrijhaedje:"
+
+#: editGroup.cpp:109
+msgid "Display name:"
+msgstr ""
+
+#: editGroup.cpp:117
+msgid "Type:"
+msgstr "Sôre:"
+
+#: editGroup.cpp:119 kgroupvw.cpp:65
+msgid "Domain"
+msgstr "Dominne"
+
+#: editGroup.cpp:120 kgroupvw.cpp:66
+msgid "Local"
+msgstr "Locå"
+
+#: editGroup.cpp:121 kgroupvw.cpp:67
+msgid "Builtin"
+msgstr ""
+
+#: editGroup.cpp:138 propdlg.cpp:285
+msgid "Domain SID:"
+msgstr ""
+
+#: editGroup.cpp:148
+msgid "Users in Group"
+msgstr "Uzeus do groupe"
+
+#: editGroup.cpp:153
+msgid "Add <-"
+msgstr ""
+
+#: editGroup.cpp:154
+msgid "Remove ->"
+msgstr ""
+
+#: editGroup.cpp:159
+msgid "Users NOT in Group"
+msgstr "Uzeus NÉN el groupe"
+
+#: editGroup.cpp:244
+msgid "You need to type a group name."
+msgstr ""
+
+#: editGroup.cpp:252
 msgid "Group with name %1 already exists."
 msgstr "I gn a ddja on groupe lomé %1."
 
-#: grpnamedlg.cpp:86
+#: editGroup.cpp:259
+msgid "Group with SID %1 already exists."
+msgstr "I gn a ddja on groupe avou li SID %1."
+
+#: editGroup.cpp:264
 msgid "Group with gid %1 already exists."
 msgstr "I gn a ddja on groupe avou li gid %1."
 
-#: kgroup.cpp:165 kuser.cpp:513
+#: kgroupfiles.cpp:96
 msgid ""
 "stat call on file %1 failed: %2\n"
-"Check KUser Settings (Sources)\n"
+"Check KUser Settings"
 msgstr ""
 "Li houcaedje del fonccion stat() sol fitchî %1 a fwait berwete: %2\n"
-"Verifyîz les apontiaedjes di KUser (les sourdants)\n"
+"Verifyîz les apontiaedjes di KUser"
 
-#: kgroup.cpp:192 kuser.cpp:540
-msgid "Error opening %1 for reading"
-msgstr "Dj' a aroké cwand dj' a volou drovi %1 po lére"
+#: kgroupfiles.cpp:123 kuserfiles.cpp:158 kuserfiles.cpp:240
+msgid "Error opening %1 for reading."
+msgstr "Dj' a aroké cwand dj' a volou drovi %1 po lére."
 
-#: kgroup.cpp:286 kgroup.cpp:291 kuser.cpp:771 kuser.cpp:776 kuser.cpp:918
-msgid "Error opening %1 for writing"
-msgstr "Dj' a aroké cwand dj' a volou drovi %1 po scrire"
+#: kgroupfiles.cpp:232 kgroupfiles.cpp:239 kgroupfiles.cpp:247
+#: kuserfiles.cpp:344 kuserfiles.cpp:350 kuserfiles.cpp:522
+msgid "Error opening %1 for writing."
+msgstr "Dj' a aroké cwand dj' a volou drovi %1 po scrire."
 
-#: kgroup.cpp:352
+#: kgroupfiles.cpp:353
 msgid ""
 "Unable to process NIS group file without a minimum GID specified.\n"
-"Please update KUser Settings (Sources)"
+"Please update KUser Settings (Sources)."
 msgstr ""
 "Dji n' sai ovrer avou l' fitchî di groupes pol NIS sins saveur li GID "
 "minimom pol NIS.\n"
-"Metoz a djoû les apontiaedjes di KUser (les sourdants)"
+"Metoz a djoû les apontiaedjes di KUser (les sourdants)."
 
-#: kgroup.cpp:357
+#: kgroupfiles.cpp:357
 msgid ""
 "Specifying NIS minimum GID requires NIS file(s).\n"
-"Please update KUser Settings (Sources)"
+"Please update KUser Settings (Sources)."
 msgstr ""
 "Po specifyî l' GID minimom pol NIS i vs fåt les fitchîs NIS.\n"
-"Metoz a djoû les apontiaedjes di KUser (les sourdants)"
+"Metoz a djoû les apontiaedjes di KUser (les sourdants)."
 
-#: kgroup.cpp:364
-msgid "Unable to build NIS group databases"
-msgstr "Dji n' sai fé li båze di dnêyes des groupes pol NIS"
+#: kgroupfiles.cpp:363
+msgid "Unable to build NIS group databases."
+msgstr "Dji n' sai fé li båze di dnêyes des groupes pol NIS."
 
-#: kgroup.cpp:394
-msgid "You have more than 65534 groups!?!? You have run out of gid space!"
-msgstr "Vos avoz di pus di 65534 groupes!!! I gn a pupont di plaece po les gid!"
+#: kgroupldap.cpp:162
+msgid "Loading Groups From LDAP"
+msgstr ""
 
-#: kgroupvw.cpp:81
+#: kgroupldap.cpp:192 kuserldap.cpp:482
+msgid "LDAP Operation"
+msgstr "Operåcion LDAP"
+
+#: kgroupvw.cpp:68
+msgid "Unknown"
+msgstr "Nén cnoxhou"
+
+#: kgroupvw.cpp:117
 msgid "GID"
 msgstr "GID"
 
-#: kgroupvw.cpp:83
+#: kgroupvw.cpp:119
 msgid "Group Name"
 msgstr "No do groupe"
 
-#: kuser.cpp:491
-msgid ""
-"KUser Sources were not configured.\n"
-"Local passwd source set to %1\n"
-"Local group source set to %2\n"
+#: kgroupvw.cpp:122 kuservw.cpp:126
+msgid "RID"
+msgstr "RID"
+
+#: kgroupvw.cpp:123
+msgid "Type"
+msgstr "Sôre"
+
+#: kgroupvw.cpp:124
+msgid "Display Name"
 msgstr ""
-"Les sourdants KUser n' ont nén stî apontyîs.\n"
-"Li sourdant locå des screts metou come %1\n"
-"Li sourdant locå des groupes metou come %2\n"
 
-#: kuser.cpp:624
+#: kgroupvw.cpp:125
+msgid "Description"
+msgstr "Discrijhaedje"
+
+#: kuser.cpp:514
+msgid "Cannot create home folder for %1: it is null or empty."
+msgstr "Dji n' parvén nén a fé on ridant måjhon po %1: nol ou vude."
+
+#: kuser.cpp:520
 msgid ""
-"No /etc/passwd entry for %1.\n"
-"Entry will be removed at the next `Save'-operation."
-msgstr ""
-"I gn a nole intrêye po %1 dins /etc/passwd.\n"
-"L' intrêye serè disfacêye li schapaedje ki vént."
-
-#: kuser.cpp:868
-msgid ""
-"Unable to process NIS passwd file without a minimum UID specified.\n"
-"Please update KUser Settings (Sources)"
-msgstr ""
-"Dji n' sai ovrer avou l' fitchî di screts pol NIS sins saveur l' UID "
-"minimom pol NIS.\n"
-"Metoz a djoû les apontiaedjes di KUser (les sourdants)"
-
-#: kuser.cpp:873
-msgid ""
-"Specifying NIS minimum UID requires NIS file(s).\n"
-"Please update KUser Settings (Sources)"
-msgstr ""
-"Po specifyî l' UID minimom pol NIS i vs fåt les fitchîs NIS.\n"
-"Metoz a djoû les apontiaedjes di KUser (les sourdants)"
-
-#: kuser.cpp:881
-msgid "Unable to build password database"
-msgstr "Dji n' a seu fé ene båze di dnêyes po les mots di passe"
-
-#: kuser.cpp:887
-msgid "Unable to build password databases"
-msgstr "Dji n' a seu fé des båzes di dnêyes po les mots di passe"
-
-#: kuser.cpp:928
-#, c-format
-msgid "No shadow entry for %1."
-msgstr "Nole intrêye ombrêye po %1."
-
-#: kuser.cpp:978
-msgid "You have more than 65534 users!?!? You have run out of uid space!"
-msgstr "Vos avoz di pus di 65534 uzeus!?!? I gn a pupont di plaece po les uid!"
-
-#: kuser.cpp:1018
-msgid ""
-"Cannot create home folder for %1: it is null or empty\n"
-msgstr ""
-"Dji n' parvén nén a fé on ridant måjhon po %1: nol ou vude\n"
-
-#: kuser.cpp:1025
-msgid ""
-"Cannot create home folder %1\n"
+"Cannot create home folder %1.\n"
 "Error: %2"
 msgstr ""
-"Dji n' parvén nén a fé on ridant måjhon %1\n"
+"Dji n' parvén nén a fé on ridant måjhon %1.\n"
 "Aroke: %2"
 
-#: kuser.cpp:1032
+#: kuser.cpp:526
 msgid ""
-"Cannot change owner of home folder %1\n"
+"Cannot change owner of home folder %1.\n"
 "Error: %2"
 msgstr ""
-"Dji n' sai candjî li prôpietaire do ridant måjhon %1\n"
+"Dji n' sai candjî li prôpietaire do ridant måjhon %1.\n"
 "Aroke: %2"
 
-#: kuser.cpp:1038
+#: kuser.cpp:531
 msgid ""
-"Cannot change permissions on home folder %1\n"
+"Cannot change permissions on home folder %1.\n"
 "Error: %2"
 msgstr ""
-"Dji n' sai candjî les permissions pol ridant måjhon %1\n"
+"Dji n' sai candjî les permissions pol ridant måjhon %1.\n"
 "Aroke: %2"
 
-#: kuser.cpp:1108
+#: kuser.cpp:546
 msgid ""
 "Folder %1 already exists!\n"
 "Will make %2 owner and change permissions.\n"
@@ -279,23 +343,15 @@ msgstr ""
 "Dji m' va fé di %2 li prôpietaire eyet candjî les permissions.\n"
 "Voloz vs continouwer?"
 
-#: kuser.cpp:1112 kuser.cpp:1143
+#: kuser.cpp:550 kuser.cpp:568
 msgid ""
-"Cannot change owner of %1 folder\n"
+"Cannot change owner of %1 folder.\n"
 "Error: %2"
 msgstr ""
-"Dji n' sai candjî li prôpietaire do ridant %1\n"
+"Dji n' sai candjî li prôpietaire do ridant %1.\n"
 "Aroke: %2"
 
-#: kuser.cpp:1117 kuser.cpp:1148
-msgid ""
-"Cannot change permissions on %1 folder\n"
-"Error: %2"
-msgstr ""
-"Dji n' sai candjî les permissions pol ridant %1\n"
-"Aroke: %2"
-
-#: kuser.cpp:1123
+#: kuser.cpp:554
 msgid ""
 "Folder %1 left 'as is'.\n"
 "Verify ownership and permissions for user %2 who may not be able to log in!"
@@ -304,21 +360,21 @@ msgstr ""
 "Verifyîz les permissions po l' uzeu %2 ki pôreut bén n' si nén pleur "
 "elodjî!"
 
-#: kuser.cpp:1129
+#: kuser.cpp:558
 msgid "%1 exists and is not a folder. User %2 will not be able to log in!"
 msgstr ""
 "%1 egzistêye mins n' est nén on ridant. L' uzeu %2 ni s' pôrè nén "
 "elodjî!"
 
-#: kuser.cpp:1137
+#: kuser.cpp:564
 msgid ""
-"Cannot create %1 folder\n"
+"Cannot create %1 folder.\n"
 "Error: %2"
 msgstr ""
-"Dji n' parvén nén a fé on ridant %1\n"
+"Dji n' parvén nén a fé on ridant %1.\n"
 "Aroke: %2"
 
-#: kuser.cpp:1154
+#: kuser.cpp:572
 msgid ""
 "stat call on %1 failed.\n"
 "Error: %2"
@@ -326,11 +382,11 @@ msgstr ""
 "Li houcaedje del fonccion stat() so %1 a fwait berwete\n"
 "Aroke: %2"
 
-#: kuser.cpp:1196
+#: kuser.cpp:587
 msgid "Cannot create %1: %2"
 msgstr "Dji n' sai ahiver %1: %2"
 
-#: kuser.cpp:1207
+#: kuser.cpp:597
 msgid ""
 "Cannot change owner on mailbox: %1\n"
 "Error: %2"
@@ -338,7 +394,7 @@ msgstr ""
 "Dji n' sai candjî li prôpietaire del boesse: %1\n"
 "Aroke: %2"
 
-#: kuser.cpp:1214
+#: kuser.cpp:603
 msgid ""
 "Cannot change permissions on mailbox: %1\n"
 "Error: %2"
@@ -346,127 +402,199 @@ msgstr ""
 "Dji n' sai candjî les permissions pol boesse: %1\n"
 "Aroke: %2"
 
-#: kuser.cpp:1255
+#: kuser.cpp:641
 msgid ""
-"Cannot change owner of folder %1\n"
+"Cannot change owner of folder %1.\n"
 "Error: %2"
 msgstr ""
-"Dji n' sai candjî li prôpietaire do ridant %1\n"
+"Dji n' sai candjî li prôpietaire do ridant %1.\n"
 "Aroke: %2"
 
-#: kuser.cpp:1261
+#: kuser.cpp:646
 msgid ""
-"Cannot change permissions on folder %1\n"
+"Cannot change permissions on folder %1.\n"
 "Error: %2"
 msgstr ""
-"Dji n' sai candjî les permissions pol ridant %1\n"
+"Dji n' sai candjî les permissions pol ridant %1.\n"
 "Aroke: %2"
 
-#: kuser.cpp:1286
+#: kuser.cpp:670
 msgid ""
-"Cannot change owner of file %1\n"
+"Cannot change owner of file %1.\n"
 "Error: %2"
 msgstr ""
-"Dji n' sai candjî li prôpietaire do fitchî %1\n"
+"Dji n' sai candjî li prôpietaire do fitchî %1.\n"
 "Aroke: %2"
 
-#: kuser.cpp:1292
+#: kuser.cpp:675
 msgid ""
-"Cannot change permissions on file %1\n"
+"Cannot change permissions on file %1.\n"
 "Error: %2"
 msgstr ""
-"Dji n' sai candjî les permissions pol fitchî %1\n"
+"Dji n' sai candjî les permissions pol fitchî %1.\n"
 "Aroke: %2"
 
-#: kuser.cpp:1306
-msgid "Folder %1 does not exist, cannot copy skeleton for %2"
-msgstr "Li ridant %1 n' egzistêye nén, dji n' pout copyî li tcherpinte po %2"
+#: kuser.cpp:689
+msgid "Folder %1 does not exist, cannot copy skeleton for %2."
+msgstr "Li ridant %1 n' egzistêye nén, dji n' pout copyî li tcherpinte po %2."
 
-#: kuser.cpp:1312
-msgid "Folder %1 does not exist, cannot copy skeleton"
-msgstr "Li ridant %1 n' egzistêye nén, dji n' pout copyî li tcherpinte"
+#: kuser.cpp:694
+msgid "Folder %1 does not exist, cannot copy skeleton."
+msgstr "Li ridant %1 n' egzistêye nén, dji n' pout copyî li tcherpinte."
 
-#: kuser.cpp:1338
+#: kuser.cpp:720
 msgid ""
-"Cannot remove home folder %1\n"
+"Cannot remove home folder %1.\n"
 "Error: %2"
 msgstr ""
-"Dji n' sai disfacer li ridant måjhon %1\n"
+"Dji n' sai disfacer li ridant måjhon %1.\n"
 "Aroke: %2"
 
-#: kuser.cpp:1343
-msgid "Removal of home folder %1 failed (uid = %2, gid = %3)"
-msgstr "Li oistaedje do ridant måjhon %1 a fwait berwete (uid = %2, gid = %3)"
+#: kuser.cpp:724
+msgid "Removal of home folder %1 failed (uid = %2, gid = %3)."
+msgstr "Li oistaedje do ridant måjhon %1 a fwait berwete (uid = %2, gid = %3)."
 
-#: kuser.cpp:1347
+#: kuser.cpp:727
 msgid ""
-"stat call on file %1 failed\n"
+"stat call on file %1 failed.\n"
 "Error: %2"
 msgstr ""
-"Li houcaedje del fonccion stat() sol fitchî %1 a fwait berwete\n"
+"Li houcaedje del fonccion stat() sol fitchî %1 a fwait berwete.\n"
 "Aroke: %2"
 
-#: kuser.cpp:1365
+#: kuser.cpp:745
 msgid ""
-"Cannot remove crontab %1\n"
+"Cannot remove crontab %1.\n"
 "Error: %2"
 msgstr ""
-"Dji n' sai disfacer crontab %1\n"
+"Dji n' sai disfacer li fitchî crontab %1.\n"
 "Aroke: %2"
 
-#: kuser.cpp:1379
+#: kuser.cpp:759
 msgid ""
-"Cannot remove mailbox %1\n"
+"Cannot remove mailbox %1.\n"
 "Error: %2"
 msgstr ""
-"Dji n' sai disfacer li boesse ås letes %1\n"
+"Dji n' sai disfacer li boesse ås letes %1.\n"
 "Aroke: %2"
 
-#: kuser.cpp:1398
-msgid "Cannot fork()"
-msgstr "Dji n' sai fé on fork()"
+#: kuser.cpp:779
+#, c-format
+msgid "Cannot fork while trying to kill processes for uid %1."
+msgstr ""
 
-#: kuservw.cpp:82
+#: kuserfiles.cpp:118
+msgid ""
+"KUser Sources were not configured.\n"
+"Local passwd source set to %1\n"
+"Local group source set to %2."
+msgstr ""
+"Les sourdants KUser n' ont nén stî apontyîs.\n"
+"Li sourdant locå des screts metou come %1.\n"
+"Li sourdant locå des groupes metou come %2."
+
+#: kuserfiles.cpp:131
+msgid ""
+"Stat call on file %1 failed: %2\n"
+"Check KUser settings."
+msgstr ""
+"Li houcaedje del fonccion stat() sol fitchî %1 a fwait berwete: %2\n"
+"Verifyîz les apontiaedjes di KUser."
+
+#: kuserfiles.cpp:251
+msgid ""
+"No /etc/passwd entry for %1.\n"
+"Entry will be removed at the next `Save'-operation."
+msgstr ""
+"I gn a nole intrêye po %1 dins /etc/passwd.\n"
+"L' intrêye serè disfacêye li schapaedje ki vént."
+
+#: kuserfiles.cpp:473
+msgid ""
+"Unable to process NIS passwd file without a minimum UID specified.\n"
+"Please update KUser settings (Files)."
+msgstr ""
+"Dji n' sai ovrer avou l' fitchî di screts pol NIS sins saveur l' UID "
+"minimom pol NIS.\n"
+"Metoz a djoû les apontiaedjes di KUser (les fitchîs)."
+
+#: kuserfiles.cpp:477
+msgid ""
+"Specifying NIS minimum UID requires NIS file(s).\n"
+"Please update KUser settings (Files)."
+msgstr ""
+"Po specifyî l' UID minimom pol NIS i vs fåt les fitchîs NIS.\n"
+"Metoz a djoû les apontiaedjes di KUser (les fitchîs)."
+
+#: kuserfiles.cpp:484
+msgid "Unable to build password database."
+msgstr "Dji n' a seu fé ene båze di dnêyes po les screts."
+
+#: kuserfiles.cpp:490
+msgid "Unable to build password databases."
+msgstr "Dji n' a seu fé des båzes di dnêyes po les screts."
+
+#: kuserldap.cpp:209
+msgid "Loading Users From LDAP"
+msgstr "Tcherdjant les uzeus foû do LDAP"
+
+#: kuservw.cpp:117
 msgid "UID"
 msgstr "UID"
 
-#: kuservw.cpp:84
+#: kuservw.cpp:119
 msgid "User Login"
 msgstr "No d' elodjaedje"
 
-#: kuservw.cpp:85
+#: kuservw.cpp:120
 msgid "Full Name"
 msgstr "No en etir"
 
-#: main.cpp:39
+#: kuservw.cpp:121
+msgid "Home Directory"
+msgstr "Ridant måjhon"
+
+#: kuservw.cpp:122
+msgid "Login Shell"
+msgstr "Shell d' elodjaedje"
+
+#: kuservw.cpp:127
+msgid "Samba Login Script"
+msgstr "Sicripe d' elodjaedje po Samba:"
+
+#: kuservw.cpp:128
+msgid "Samba Profile Path"
+msgstr "Tchimin des profils po Samba"
+
+#: kuservw.cpp:129
+msgid "Samba Home Drive"
+msgstr "Éndjin måjhon po Samba:"
+
+#: kuservw.cpp:130
+msgid "Samba Home Path"
+msgstr "Ridant måjhon po Samba:"
+
+#: main.cpp:36
 msgid "KDE User Editor"
 msgstr "Aspougneu des uzeus po KDE"
 
-#: main.cpp:71
+#: main.cpp:43
 msgid "KUser"
 msgstr "KUser"
 
-#: main.cpp:74
+#: main.cpp:46 main.cpp:48
 msgid "kuser author"
 msgstr "oteur di kuser"
 
-#: main.cpp:84
-msgid "Only root is allowed to manage users."
-msgstr "I gn a ki «root» ki pout bén manaedjî les uzeus."
-
-#: main.cpp:96
+#: main.cpp:62
 msgid "KDE User Manager"
 msgstr "Manaedjmint des uzeus po KDE"
 
-#: mainView.cpp:58
-msgid "Users"
-msgstr "Uzeus"
-
-#: mainView.cpp:61 propdlg.cpp:354 propdlg.cpp:376
+#: mainView.cpp:55 propdlg.cpp:291 propdlg.cpp:296
 msgid "Groups"
 msgstr "Groupes"
 
-#: mainView.cpp:163
+#: mainView.cpp:158
 msgid ""
 "You are using private groups.\n"
 "Do you want to delete the user's private group '%1'?"
@@ -474,284 +602,282 @@ msgstr ""
 "Vos vos siervoz di groupes privés.\n"
 "Voloz vs po do bon disfacer li groupe privé di l' uzeu «%1» ?"
 
+#: mainView.cpp:180
+msgid "You have run out of uid space."
+msgstr "I gn a pupont di plaece po les uid!"
+
+#: mainView.cpp:184
+msgid "You have run out of user RID space."
+msgstr ""
+
+#: mainView.cpp:190
+msgid "Please type the name of the new user."
+msgstr "Tapez l' no do novea uzeu s' i vs plait."
+
 #: mainView.cpp:196
-msgid "Add User"
-msgstr "Radjouter uzeu"
-
-#: mainView.cpp:197
-msgid "Enter user name:"
-msgstr "Tapez li no di l' uzeu:"
-
-#: mainView.cpp:209
 msgid "User with name %1 already exists."
 msgstr "I gn a ddja èn uzeu lomé %1."
 
-#: mainView.cpp:326
-msgid "Would you like to save your changes?"
-msgstr "Voloz vs schaper les candjmints?"
+#: mainView.cpp:384
+msgid "You have run out of gid space."
+msgstr "I gn a pupont di plaece po les gid!"
 
-#: mainView.cpp:327
-msgid "Data Was Modified"
-msgstr "Les dnêyes ont stî candjeyes"
+#: mainView.cpp:389
+msgid "You have run out of group RID space."
+msgstr ""
 
-#: mainView.cpp:328
-msgid "&Discard Changes"
-msgstr "&Rinoncî åzès candjmints"
+#: mainView.cpp:432
+msgid ""
+"The group '%1' is the primary group of one or more users (such as '%2'); it "
+"cannot be deleted."
+msgstr ""
 
-#: mainView.cpp:348
-msgid "Edit Defaults"
-msgstr "Candjî les prémetowes valixhances"
-
-#: mainView.cpp:458
+#: mainView.cpp:445
 msgid "Do you really want to delete the group '%1'?"
 msgstr "Voloz vs po do bon disfacer li groupe «%1» ?"
 
-#: mainWidget.cpp:41
+#: mainView.cpp:450
+msgid "Do you really want to delete the %1 selected groups?"
+msgstr "Voloz vs po do bon disfacer les %1 groupes di tchoezis?"
+
+#: mainWidget.cpp:43
 msgid "Reading configuration"
 msgstr "Léjhant l' apontiaedje"
 
-#: mainWidget.cpp:47
+#: mainWidget.cpp:49
 msgid "Ready"
 msgstr "Presse"
 
-#: mainWidget.cpp:74 mainWidget.cpp:88
+#: mainWidget.cpp:77 mainWidget.cpp:91
 msgid "&Add..."
 msgstr "&Radjouter..."
 
-#: mainWidget.cpp:77 mainWidget.cpp:91
+#: mainWidget.cpp:80 mainWidget.cpp:94
 msgid "&Edit..."
 msgstr "&Candjî..."
 
-#: mainWidget.cpp:81
+#: mainWidget.cpp:84
 msgid "&Delete..."
 msgstr "&Disfacer..."
 
-#: mainWidget.cpp:85
+#: mainWidget.cpp:88
 msgid "&Set Password..."
 msgstr "Defini on &scret..."
 
-#: misc.cpp:55
+#: mainWidget.cpp:102
+msgid "&Select Connection..."
+msgstr "&Tchoezi raloyaedje..."
+
+#: mainWidget.cpp:106
+msgid "Show System Users/Groups"
+msgstr "Mostrer les groupes/uzeus sistinme"
+
+#: mainWidget.cpp:109
+msgid "Hide System Users/Groups"
+msgstr "Catchî les groupes/uzeus sistinme"
+
+#: misc.cpp:46
 #, c-format
 msgid "Can't create backup file for %1"
 msgstr "Dji n' sai fé ene copeye di såvrité po %1"
 
-#: misc.cpp:123
+#: misc.cpp:71
 msgid "File %1 does not exist."
 msgstr "Li fitchî %1 n' egzistêye nén."
 
-#: misc.cpp:129
+#: misc.cpp:76
 msgid "Cannot open file %1 for reading."
 msgstr "Dji n' sai drovi li fitchî %1 pol lére."
 
-#: misc.cpp:135
+#: misc.cpp:81
 msgid "Cannot open file %1 for writing."
 msgstr "Dji n' sai drovi li fitchî %1 po scrire."
 
-#: nisDefaultsPage.cpp:70
-msgid "Local passwd source:"
-msgstr "Sourdant locå des screts:"
+#: propdlg.cpp:60 propdlg.cpp:94 propdlg.cpp:445
+msgid "Do not change"
+msgstr "Èn nén candjî"
 
-#: nisDefaultsPage.cpp:73
-msgid "Local group source:"
-msgstr "Sourdant locå des groupes:"
-
-#: nisDefaultsPage.cpp:88
-msgid "NIS passwd source:"
-msgstr "Sourdant des screts pol NIS:"
-
-#: nisDefaultsPage.cpp:91
-msgid "NIS group source:"
-msgstr "Sourdant des groupes pol NIS:"
-
-#: nisDefaultsPage.cpp:106
-msgid "NIS minimum UID:"
-msgstr "UID minimom pol NIS:"
-
-#: nisDefaultsPage.cpp:109
-msgid "NIS minimum GID:"
-msgstr "GID minimom pol NIS:"
-
-#: nisDefaultsPage.cpp:124
-msgid "Enable NIS support"
-msgstr "Mete en alaedje li sopoirt NIS"
-
-#: nisDefaultsPage.cpp:195
-msgid "This is the Sources Help text"
-msgstr "Çouchal c' est li tecse d' aidance des sourdants"
-
-#: propdlg.cpp:83 propdlg.cpp:109
-msgid "Never"
-msgstr "Måy"
-
-#: propdlg.cpp:104
+#: propdlg.cpp:76
 msgid " days"
 msgstr " djoûs"
 
-#: propdlg.cpp:131
-msgid "User Properties"
-msgstr "Prôpietés di l' uzeu"
+#: propdlg.cpp:81 propdlg.cpp:243
+msgid "Never"
+msgstr "Måy"
 
-#: propdlg.cpp:159
+#: propdlg.cpp:108
 msgid "User Info"
 msgstr "Info so l' uzeu"
 
-#: propdlg.cpp:168
+#: propdlg.cpp:117
 msgid "User login:"
 msgstr "No d' elodjaedje:"
 
-#: propdlg.cpp:172
+#: propdlg.cpp:123
 msgid "&User ID:"
 msgstr "ID di l' &uzeu:"
 
-#: propdlg.cpp:175
+#: propdlg.cpp:126
 msgid "Set &Password..."
 msgstr "Defini li &scret..."
 
-#: propdlg.cpp:181
+#: propdlg.cpp:133
 msgid "Full &name:"
 msgstr "&No en etir:"
 
-#: propdlg.cpp:186 userDefaultsPage.cpp:48
-msgid "<Empty>"
-msgstr "<Vude>"
+#: propdlg.cpp:140
+msgid "Surname:"
+msgstr ""
 
-#: propdlg.cpp:194
+#: propdlg.cpp:145
+msgid "Email address:"
+msgstr "Adresse emile:"
+
+#: propdlg.cpp:159
 msgid "&Login shell:"
 msgstr "Shell d' e&lodjaedje:"
 
-#: propdlg.cpp:199
+#: propdlg.cpp:164
 msgid "&Home folder:"
 msgstr "Ridant &måjhon:"
 
-#: propdlg.cpp:207
+#: propdlg.cpp:172
 msgid "&Office:"
 msgstr "&Buro:"
 
-#: propdlg.cpp:212
+#: propdlg.cpp:177
 msgid "Offi&ce Phone:"
 msgstr "&Tel. å buro:"
 
-#: propdlg.cpp:217
+#: propdlg.cpp:182
 msgid "Ho&me Phone:"
 msgstr "Tel. må&jhon:"
 
-#: propdlg.cpp:222
-msgid "&Office #1:"
-msgstr "&Buro lº1:"
-
-#: propdlg.cpp:227
-msgid "O&ffice #2:"
-msgstr "B&uro lº2:"
-
-#: propdlg.cpp:232
-msgid "&Address:"
-msgstr "&Adresse:"
-
-#: propdlg.cpp:240
-msgid "Password Management"
-msgstr "Manaedjmint des screts"
-
-#: propdlg.cpp:247
-msgid "Last password change:"
-msgstr "Dierin candjmint do scret:"
-
-#: propdlg.cpp:252
-msgid "Password may &not be changed before"
-msgstr "Li scret n' pout &nén esse candjî dvant"
-
-#: propdlg.cpp:252 propdlg.cpp:253
-msgid "after last password change."
-msgstr "après l' dierin candjmint do scret."
-
-#: propdlg.cpp:253
-msgid "Password &expires"
-msgstr "Li scret n' est pus &valåbe"
-
-#: propdlg.cpp:254
-msgid "&Issue expire warning"
-msgstr "&Håyner èn adviertixhmint"
-
-#: propdlg.cpp:254
-msgid "before password expires."
-msgstr "divant ki l' sicret n' soeye pus valåbe."
-
-#: propdlg.cpp:255
-msgid "Account will be &disabled"
-msgstr "Li conte serè &dismetou"
-
-#: propdlg.cpp:255
-msgid "after expiration of password."
-msgstr "après ki l' sicret n' soeye pus valåbe."
-
-#: propdlg.cpp:260
-msgid "&Account will expire on:"
-msgstr "Li &conte ni serè pus valåbe:"
-
-#: propdlg.cpp:267
-msgid "Quota"
-msgstr "Cwota"
-
-#: propdlg.cpp:272
-msgid "&Filesystem with quotas:"
-msgstr "Sistinme di &fitchîs avou des cwotas:"
-
-#: propdlg.cpp:284
-msgid "Disk Space"
-msgstr "Plaece eployeye sol plake"
-
-#: propdlg.cpp:294
-msgid "Disk space &soft quota:"
-msgstr "&Doûs cwota pol plaece sol plake:"
-
-#: propdlg.cpp:300
-msgid "Disk space &hard quota:"
-msgstr "De&ur cwota pol plaece sol plake:"
-
-#: propdlg.cpp:304
-msgid "Disk space in &use:"
-msgstr "Plaece &eployeye sol plake:"
-
-#: propdlg.cpp:311
-msgid "&Grace period:"
-msgstr "Termene di &gråce:"
-
-#: propdlg.cpp:319
-msgid "Number of Files"
-msgstr "Nombe di fitchîs"
-
-#: propdlg.cpp:329
-msgid "File &number soft quota:"
-msgstr "&Nombe di fitchîs pol doûs cwota:"
-
-#: propdlg.cpp:335
-msgid "File num&ber hard quota:"
-msgstr "Nom&be di fitchîs pol deur cwota:"
-
-#: propdlg.cpp:339
-msgid "Numbe&r of files in use:"
-msgstr "N&ombe di fitchîs eployîs:"
-
-#: propdlg.cpp:346
-msgid "Grac&e period:"
-msgstr "Termene di gråc&e:"
-
-#: propdlg.cpp:360
-msgid "&Primary group:"
-msgstr "M&waisse groupe:"
-
-#: propdlg.cpp:365
-msgid "Groups User '%1' Belongs To"
-msgstr "Les groupes ki l' uzeu «%1» endè est mimbe"
-
-#: propdlg.cpp:383
+#: propdlg.cpp:187
 msgid "Login class:"
 msgstr "Classe d' elodjaedje:"
 
-#: propdlg.cpp:385
-msgid "Account will expire after:"
-msgstr "Li conte ni serè pus valåbe après:"
+#: propdlg.cpp:192
+msgid "&Office #1:"
+msgstr "&Buro lº1:"
 
-#: propdlg.cpp:715
+#: propdlg.cpp:197
+msgid "O&ffice #2:"
+msgstr "B&uro lº2:"
+
+#: propdlg.cpp:202
+msgid "&Address:"
+msgstr "&Adresse:"
+
+#: propdlg.cpp:206
+msgid "Account &disabled"
+msgstr "Li conte serè &dismetou"
+
+#: propdlg.cpp:216
+msgid "Password Management"
+msgstr "Manaedjmint des screts"
+
+#: propdlg.cpp:222
+msgid "Last password change:"
+msgstr "Dierin candjmint do scret:"
+
+#: propdlg.cpp:229
+msgid "Password may &not be changed before"
+msgstr "Li scret n' pout &nén esse candjî dvant"
+
+#: propdlg.cpp:229 propdlg.cpp:230
+msgid "after last password change."
+msgstr "après l' dierin candjmint do scret."
+
+#: propdlg.cpp:230
+msgid "Password &expires"
+msgstr "Li scret n' est pus &valåbe"
+
+#: propdlg.cpp:231
+msgid "&Issue expire warning"
+msgstr "&Håyner èn adviertixhmint"
+
+#: propdlg.cpp:231
+msgid "before password expires."
+msgstr "divant ki l' sicret n' soeye pus valåbe."
+
+#: propdlg.cpp:232
+msgid "Account will be &disabled"
+msgstr "Li conte serè &dismetou"
+
+#: propdlg.cpp:232
+msgid "after expiration of password."
+msgstr "après ki l' sicret n' soeye pus valåbe."
+
+#: propdlg.cpp:237
+msgid "&Account will expire on:"
+msgstr "Li &conte ni serè pus valåbe:"
+
+#: propdlg.cpp:253
+msgid "Samba"
+msgstr "Samba"
+
+#: propdlg.cpp:260
+msgid "RID:"
+msgstr "RID:"
+
+#: propdlg.cpp:265
+msgid "Login script:"
+msgstr "Sicripe d' elodjaedje:"
+
+#: propdlg.cpp:270
+msgid "Profile path:"
+msgstr "Tchimin des profils:"
+
+#: propdlg.cpp:275 rc.cpp:52
+msgid "Home drive:"
+msgstr "Éndjin måjhon:"
+
+#: propdlg.cpp:280
+msgid "Home path:"
+msgstr "Ridant måjhon:"
+
+#: propdlg.cpp:300 propdlg.cpp:566 propdlg.cpp:601
+msgid "Primary group: "
+msgstr "Mwaisse groupe: "
+
+#: propdlg.cpp:302
+msgid "Set as Primary"
+msgstr ""
+
+#: propdlg.cpp:312 propdlg.cpp:327
+msgid "User Properties"
+msgstr "Prôpietés di l' uzeu"
+
+#: propdlg.cpp:317
+msgid "User Properties - %1 Selected Users"
+msgstr "Prôpietés di l' uzeu - %1 uzeus di tchoezis"
+
+#: propdlg.cpp:774
+msgid "You need to specify an UID."
+msgstr ""
+
+#: propdlg.cpp:779
+msgid "You must specify a home directory."
+msgstr ""
+
+#: propdlg.cpp:785
+msgid "You must fill the surname field."
+msgstr ""
+
+#: propdlg.cpp:792
+msgid "You need to specify a samba RID."
+msgstr ""
+
+#: propdlg.cpp:824
+msgid "User with UID %1 already exists"
+msgstr "I gn a ddja èn uzeu avou èn UID %1"
+
+#: propdlg.cpp:834
+msgid "User with RID %1 already exists"
+msgstr "I gn a ddja èn uzeu avou èn RID %1."
+
+#: propdlg.cpp:848
 msgid ""
 "<p>"
 "The shell %1 is not yet listed in the file %2. In order to use this shell "
@@ -761,58 +887,423 @@ msgstr ""
 "uzeus eployî ci shell chal, vos l' duvoz d' aprume radjouter å "
 "fitchî.<p> El voloz radjouter tot d' shûte?"
 
-#: propdlg.cpp:719
+#: propdlg.cpp:852
 msgid "Unlisted Shell"
 msgstr "Shell nén el djivêye"
 
-#: propdlg.cpp:720
+#: propdlg.cpp:853
 msgid "&Add Shell"
 msgstr "&Radjouter shell"
 
-#: propdlg.cpp:721
+#: propdlg.cpp:854
 msgid "Do &Not Add"
 msgstr "Èn &nén radjouter"
 
-#: pwddlg.cpp:37
+#: pwddlg.cpp:29
 msgid "Enter Password"
 msgstr "Tapez li scret"
 
-#: pwddlg.cpp:43
+#: pwddlg.cpp:34
 msgid "Password:"
 msgstr "Sicret:"
 
-#: pwddlg.cpp:59
+#: pwddlg.cpp:50
 msgid "Verify:"
 msgstr "Verifyî:"
 
-#: pwddlg.cpp:86
+#: pwddlg.cpp:74
 msgid ""
 "Passwords are not identical.\n"
-"Try again"
+"Try again."
 msgstr ""
 "Les screts èn sont nén les minmes.\n"
 "Rissayîz co on côp."
 
-#: rc.cpp:1
+#: rc.cpp:2
 msgid "&User"
 msgstr "&Uzeu"
 
-#: rc.cpp:2
+#: rc.cpp:3
 msgid "&Group"
 msgstr "&Groupe"
 
-#: userDefaultsPage.cpp:40
+#: rc.cpp:5
+msgid "Form2"
+msgstr ""
+
+#: rc.cpp:6
+msgid "Local User Database Files"
+msgstr ""
+
+#: rc.cpp:7
+msgid "Group file:"
+msgstr "Fitchî des groupes:"
+
+#: rc.cpp:8
+msgid "Password file:"
+msgstr "Fitchî des screts:"
+
+#: rc.cpp:9
+msgid "Shadow password file:"
+msgstr ""
+
+#: rc.cpp:10
+msgid "Shadow group file:"
+msgstr ""
+
+#: rc.cpp:11
+msgid "MD5 shadow passwords"
+msgstr ""
+
+#: rc.cpp:12
+msgid "NIS Settings"
+msgstr "Apontiaedjes NIS"
+
+#: rc.cpp:13
+msgid "NIS password source:"
+msgstr "Sourdant des screts pol NIS:"
+
+#: rc.cpp:14
+msgid "NIS group source:"
+msgstr "Sourdant des groupes pol NIS:"
+
+#: rc.cpp:15
+msgid "NIS minimum UID:"
+msgstr "UID minimom pol NIS:"
+
+#: rc.cpp:16
+msgid "NIS minimum GID:"
+msgstr "GID minimom pol NIS:"
+
+#: rc.cpp:17 rc.cpp:28
+msgid "Form1"
+msgstr "Form1"
+
+#: rc.cpp:18
+msgid "Source of user/group database:"
+msgstr "Sourdant del båze di dnêyes des uzeus/groupes:"
+
+#: rc.cpp:21
+msgid "First normal GID:"
+msgstr "Prumî GID normå:"
+
+#: rc.cpp:22 rc.cpp:50
+msgid "Home path template:"
+msgstr "Patron des tchmins des ridants måjhon:"
+
+#: rc.cpp:23
 msgid "Shell:"
 msgstr "Shell:"
 
-#: userDefaultsPage.cpp:56
-msgid "Base of home folders:"
-msgstr "Båze des ridants måjhons:"
+#: rc.cpp:24
+msgid "First normal UID:"
+msgstr "Prumî UID normå:"
 
-#: userDefaultsPage.cpp:69
+#: rc.cpp:26 rc.cpp:62
 msgid "Copy skeleton to home folder"
 msgstr "Copyî ene tcherpinte el ridant måjhon"
 
-#: userDefaultsPage.cpp:73
-msgid "User private group"
-msgstr "Eployî on groupe privé"
+#: rc.cpp:27 rc.cpp:63
+msgid "User private groups"
+msgstr "Groupes privés d' l' uzeu"
+
+#: rc.cpp:29
+msgid "User base:"
+msgstr "Båze uzeu:"
+
+#: rc.cpp:30
+msgid "User RDN prefix:"
+msgstr ""
+
+#: rc.cpp:31
+msgid "uid"
+msgstr "uid"
+
+#: rc.cpp:32
+msgid "uidNumber"
+msgstr ""
+
+#: rc.cpp:33
+msgid "Group RDN prefix:"
+msgstr ""
+
+#: rc.cpp:34
+msgid "cn"
+msgstr ""
+
+#: rc.cpp:35
+msgid "gidNumber"
+msgstr ""
+
+#: rc.cpp:36
+msgid "Group base:"
+msgstr "Båze do groupe:"
+
+#: rc.cpp:37
+msgid "Plain Text"
+msgstr "Peur tecse"
+
+#: rc.cpp:38
+msgid "CRYPT"
+msgstr "CRYPT"
+
+#: rc.cpp:39
+msgid "MD5"
+msgstr "MD5"
+
+#: rc.cpp:40
+msgid "SMD5"
+msgstr "SMD5"
+
+#: rc.cpp:41
+msgid "SHA"
+msgstr "SHA"
+
+#: rc.cpp:42
+msgid "SSHA"
+msgstr "SSHA"
+
+#: rc.cpp:43
+msgid "Structural objectclass:"
+msgstr ""
+
+#: rc.cpp:44
+msgid "account"
+msgstr "conte"
+
+#: rc.cpp:45
+msgid "inetOrgPerson"
+msgstr ""
+
+#: rc.cpp:46
+msgid "Password hash:"
+msgstr ""
+
+#: rc.cpp:47
+msgid "Manage shadowAccount objectclass"
+msgstr ""
+
+#: rc.cpp:48
+msgid "Samba Settings"
+msgstr "Apontiaedjes di Samba"
+
+#: rc.cpp:49
+msgid "Default login script:"
+msgstr "Prémetou scripe d' elodjaedje:"
+
+#: rc.cpp:51
+msgid "Profile path template:"
+msgstr "Patron des tchmins des profils:"
+
+#: rc.cpp:53
+msgid "Domain SID (you can obtain with 'net getlocalsid domain_name'):"
+msgstr ""
+
+#: rc.cpp:54
+msgid "Main window geometry"
+msgstr "Djeyometreye do mwaisse purnea"
+
+#: rc.cpp:55
+msgid "Default connection"
+msgstr "Prémetou raloyaedje"
+
+#: rc.cpp:56
+msgid "Manage extended user info"
+msgstr "Manaedjî les spepieuzès infos des uzeus"
+
+#: rc.cpp:57
+msgid "Shell"
+msgstr "Shell"
+
+#: rc.cpp:58
+msgid "Home path template"
+msgstr "Patron des tchmins des ridants måjhon"
+
+#: rc.cpp:59
+msgid "First UID"
+msgstr "Prumî UID"
+
+#: rc.cpp:60
+msgid "First GID"
+msgstr "Prumî GID"
+
+#: rc.cpp:64
+msgid "Password file"
+msgstr "Fitchî des screts"
+
+#: rc.cpp:65
+msgid "Group file"
+msgstr "Fitchî des groupes"
+
+#: rc.cpp:66
+msgid "MD5 Shadow passwords"
+msgstr ""
+
+#: rc.cpp:67
+msgid "Shadow password file"
+msgstr ""
+
+#: rc.cpp:68
+msgid "Group shadow file"
+msgstr ""
+
+#: rc.cpp:69
+msgid "NIS password source"
+msgstr "Sourdant des screts pol NIS"
+
+#: rc.cpp:70
+msgid "NIS minimum UID"
+msgstr "UID minimom pol NIS"
+
+#: rc.cpp:71
+msgid "NIS group source"
+msgstr "Sourdant des groupes pol NIS"
+
+#: rc.cpp:72
+msgid "NIS minimum GID"
+msgstr "GID minimom pol NIS"
+
+#: rc.cpp:73
+msgid "LDAP User"
+msgstr "Uzeu LDAP"
+
+#: rc.cpp:74
+msgid "LDAP Password"
+msgstr "Sicret LDAP"
+
+#: rc.cpp:75
+msgid "LDAP SASL Realm"
+msgstr ""
+
+#: rc.cpp:76
+msgid "LDAP Bind DN"
+msgstr ""
+
+#: rc.cpp:77
+msgid "LDAP Host"
+msgstr "Lodjoe LDAP"
+
+#: rc.cpp:78
+msgid "LDAP Port"
+msgstr "Pôrt LDAP"
+
+#: rc.cpp:79
+msgid "LDAP version"
+msgstr "Modêye LDAP"
+
+#: rc.cpp:80
+msgid "LDAP Size limit"
+msgstr "Limite di grandeu LDAP"
+
+#: rc.cpp:81
+msgid "LDAP Time limit"
+msgstr "Limite di tins LDAP"
+
+#: rc.cpp:82
+msgid "LDAP Base DN"
+msgstr ""
+
+#: rc.cpp:83
+msgid "LDAP Filter"
+msgstr "Passete LDAP"
+
+#: rc.cpp:84
+msgid "LDAP no encryption"
+msgstr "LDAP sins ecriptaedje"
+
+#: rc.cpp:85
+msgid "LDAP TLS"
+msgstr ""
+
+#: rc.cpp:86
+msgid "LDAP SSL"
+msgstr "LDAP ecripté SSL"
+
+#: rc.cpp:87
+msgid "LDAP Anonymous"
+msgstr "LDAP anonime"
+
+#: rc.cpp:88
+msgid "LDAP Simple auth"
+msgstr ""
+
+#: rc.cpp:89
+msgid "LDAP SASL auth"
+msgstr ""
+
+#: rc.cpp:90
+msgid "LDAP SASL mechanism"
+msgstr ""
+
+#: rc.cpp:91
+msgid "LDAP User container"
+msgstr ""
+
+#: rc.cpp:92
+msgid "LDAP Group container"
+msgstr ""
+
+#: rc.cpp:93
+msgid "LDAP User RDN prefix"
+msgstr ""
+
+#: rc.cpp:94
+msgid "Manage LDAP shadowAccount objectclass"
+msgstr ""
+
+#: rc.cpp:95
+msgid "LDAP Structural objectclass"
+msgstr ""
+
+#: rc.cpp:96
+msgid "LDAP Group RDN prefix"
+msgstr ""
+
+#: rc.cpp:97
+msgid "LDAP Password hash method"
+msgstr ""
+
+#: rc.cpp:98
+msgid "Enable samba account management"
+msgstr "Mete en alaedje li manaedjmint d' contes pa Samba"
+
+#: rc.cpp:99
+msgid "Samba domain SID"
+msgstr "SID di dominne po Samba"
+
+#: rc.cpp:100
+msgid "Samba login script"
+msgstr "Sicripe d' elodjaedje po Samba"
+
+#: rc.cpp:101
+msgid "Samba home drive"
+msgstr "Éndjin måjhon po Samba"
+
+#: rc.cpp:102
+msgid "Samba profile path template"
+msgstr "Patron des tchmins des profils po Samba"
+
+#: rc.cpp:103
+msgid "Samba home path template"
+msgstr "Patron des tchmins des ridants måjhon po Samba"
+
+#: selectconn.cpp:38
+msgid "Connection Selection"
+msgstr "Tchoezi l' raloyaedje"
+
+#: selectconn.cpp:42
+msgid "New..."
+msgstr "Novea..."
+
+#: selectconn.cpp:48
+msgid "Defined connections:"
+msgstr "Raloyaedjes di definis:"
+
+#: selectconn.cpp:81
+msgid "Please type the name of the new connection:"
+msgstr "Tapez l' no do novea raloyaedje s' i vs plait:"
+
+#: selectconn.cpp:84
+msgid "A connection with this name already exists."
+msgstr "I gn a ddja on raloyaedje avou ç' no la."
+
