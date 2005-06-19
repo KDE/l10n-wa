@@ -12,7 +12,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ksnapshot 0.4\n"
-"POT-Creation-Date: 2005-05-08 01:22+0200\n"
+"POT-Creation-Date: 2005-06-19 01:30+0200\n"
 "PO-Revision-Date: 2003-09-10 01:06+0200\n"
 "Last-Translator: Lorint Hendschel <LorintHendschel@skynet.be>\n"
 "Language-Team: Walon <linux-wa@chanae.alphanet.ch>\n"
@@ -128,9 +128,15 @@ msgstr "Purnea dizo l' cursoe"
 msgid "Region"
 msgstr "Redjon"
 
-#. i18n: file ksnapshotwidget.ui line 155
+#. i18n: file ksnapshotwidget.ui line 149
 #: rc.cpp:50
 #, no-c-format
+msgid "Section of Window"
+msgstr ""
+
+#. i18n: file ksnapshotwidget.ui line 161
+#: rc.cpp:53
+#, fuzzy, no-c-format
 msgid ""
 "<qt>Using this menu, you can select from the three following snapshot modes:\n"
 "<p>\n"
@@ -141,7 +147,10 @@ msgid ""
 "<br>\n"
 "<b>Region</b> - captures only the region of the desktop that you specify. When "
 "taking a new snapshot in this mode you will be able to select any area of the "
-"screen by clicking and dragging the mouse.</p></qt>"
+"screen by clicking and dragging the mouse.</p></qt>\n"
+"<b>Section of Window</b> - captures only a section of the window. When taking a "
+"new snapshot in this mode you will be able to select any child window by moving "
+"the mouse over it.</p></qt>"
 msgstr ""
 "<qt>Avou ç' menu chal, vos ploz tchoezi emey ces troes sôres di waitroûlêyes:\n"
 "<p>\n"
@@ -154,26 +163,26 @@ msgstr ""
 "specifyîz li redjon tot clitchant eyet haetchant l' sori po fé on rectangue.</p>"
 "</qt>"
 
-#. i18n: file ksnapshotwidget.ui line 171
-#: rc.cpp:57
+#. i18n: file ksnapshotwidget.ui line 177
+#: rc.cpp:61
 #, no-c-format
 msgid "&New Snapshot"
 msgstr "&Novele waitroûlêye"
 
-#. i18n: file ksnapshotwidget.ui line 177
-#: rc.cpp:60
+#. i18n: file ksnapshotwidget.ui line 183
+#: rc.cpp:64
 #, no-c-format
 msgid "Click this button to take a new snapshot."
 msgstr "Clitchîz so ç' boton chal po prinde ene nouve waitroûlêye."
 
-#. i18n: file ksnapshotwidget.ui line 202
-#: rc.cpp:63
+#. i18n: file ksnapshotwidget.ui line 208
+#: rc.cpp:67
 #, fuzzy, no-c-format
 msgid "&Save As..."
 msgstr "&Schaper..."
 
-#. i18n: file ksnapshotwidget.ui line 208
-#: rc.cpp:66
+#. i18n: file ksnapshotwidget.ui line 214
+#: rc.cpp:70
 #, fuzzy, no-c-format
 msgid ""
 "Click this button to save the current snapshot. To quickly save the snapshot "
@@ -185,7 +194,19 @@ msgstr ""
 "no do fitchî est otomaticmint increminté après tchaeke schapaedje."
 
 #. i18n: file ksnapshotwidget.ui line 222
-#: rc.cpp:72
+#: rc.cpp:73
+#, no-c-format
+msgid "&Copy to Clipboard"
+msgstr ""
+
+#. i18n: file ksnapshotwidget.ui line 228
+#: rc.cpp:76
+#, fuzzy, no-c-format
+msgid "Click this button to copy the current snapshot to the clipboard."
+msgstr "Clitchîz so ç' boton chal po-z evoyî li waitroûlêye sol sicrirece."
+
+#. i18n: file ksnapshotwidget.ui line 242
+#: rc.cpp:82
 #, no-c-format
 msgid "Click this button to print the current screenshot."
 msgstr "Clitchîz so ç' boton chal po-z evoyî li waitroûlêye sol sicrirece."
@@ -206,15 +227,15 @@ msgstr ""
 "<LorintHendschel@skynet.be>\n"
 "<pablo@walon.org>"
 
-#: ksnapshot.cpp:109
+#: ksnapshot.cpp:102
 msgid "snapshot"
 msgstr "waitroûlêye"
 
-#: ksnapshot.cpp:127
+#: ksnapshot.cpp:120
 msgid "Quick Save Snapshot &As..."
 msgstr "Abeye schapaedje eyet r&lomaedje del waitroûlêye..."
 
-#: ksnapshot.cpp:128
+#: ksnapshot.cpp:121
 #, fuzzy
 msgid ""
 "Save the snapshot to the file specified by the user without showing the file "
@@ -223,28 +244,28 @@ msgstr ""
 "Schaper li waitroûlêye dins on fitchî specifyî pa l' uzeu, sins håyner li "
 "purnea di schapaedje di fitchîs."
 
-#: ksnapshot.cpp:132
+#: ksnapshot.cpp:125
 msgid "Save Snapshot &As..."
 msgstr "Schaper eyet r&lomer li waitroûlêye..."
 
-#: ksnapshot.cpp:133
+#: ksnapshot.cpp:126
 #, fuzzy
 msgid "Save the snapshot to the file specified by the user."
 msgstr "Schaper li waitroûlêye dins on fitchî specifyî pa l' uzeu."
 
-#: ksnapshot.cpp:171
+#: ksnapshot.cpp:164
 msgid "File Exists"
 msgstr "Li fitchî egzistêye"
 
-#: ksnapshot.cpp:172
+#: ksnapshot.cpp:165
 msgid "<qt>Do you really want to overwrite <b>%1</b>?</qt>"
 msgstr "<qt>Voloz vs vormint spotchî l' fitchî <b>%1</b>?</qt>"
 
-#: ksnapshot.cpp:207
+#: ksnapshot.cpp:200
 msgid "Unable to save image"
 msgstr "Dji n' a nén savou schaper l' imådje"
 
-#: ksnapshot.cpp:208
+#: ksnapshot.cpp:201
 #, c-format
 msgid ""
 "KSnapshot was unable to save the image to\n"
@@ -253,11 +274,11 @@ msgstr ""
 "KWaitroûlêye n' a nén parvinou a schaper l' imådje dins\n"
 "%1."
 
-#: ksnapshot.cpp:291
+#: ksnapshot.cpp:284
 msgid "Print Screenshot"
 msgstr "Eprimî l' waitroûlêye"
 
-#: ksnapshot.cpp:430
+#: ksnapshot.cpp:437
 msgid "The screen has been successfully grabbed."
 msgstr "Li waitroûlêye a stî fwaite comifåt."
 
