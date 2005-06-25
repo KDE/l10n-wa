@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
-"POT-Creation-Date: 2005-06-23 01:31+0200\n"
+"POT-Creation-Date: 2005-06-25 01:30+0200\n"
 "PO-Revision-Date: 2004-04-05 21:08+0200\n"
 "Last-Translator: Pablo Saratxaga <pablo@walon.org>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -284,7 +284,7 @@ msgid "Symbol Names"
 msgstr "Nos des simboles"
 
 #: kformula/kformuladocument.cc:646 kotext/koSearchDia.cc:629
-#: kotext/kotextformat.cc:1560
+#: kotext/kotextformat.cc:1561
 msgid "Normal"
 msgstr "Normå"
 
@@ -2761,7 +2761,7 @@ msgid "Autoinclude"
 msgstr ""
 
 #: kotext/koAutoFormatDia.cc:180 kotext/koAutoFormatDia.cc:1162
-#: kotext/koFontDia.cc:1157
+#: kotext/koFontDia.cc:53
 msgid "&Reset"
 msgstr "&Rimete come divant"
 
@@ -3112,103 +3112,29 @@ msgstr "Dinez on novea no di stîle s' i vs plait:"
 msgid "Name already exists! Please choose another name"
 msgstr "Li no egzistêye dedja! Tchoezixhoz è èn ôte s' i vs plait"
 
-#: kotext/koFontDia.cc:56
-msgid ""
-"_: Test string for shadow dialog\n"
-"KOffice"
-msgstr ""
-
-#: kotext/koFontDia.cc:80
-msgid "Shadow"
-msgstr "Ombion"
-
-#: kotext/koFontDia.cc:85 kotext/koParagDia.cc:1307
-msgid "Co&lor:"
-msgstr "Co&leur:"
-
-#: kotext/koFontDia.cc:94
-msgid "&Distance (pt):"
-msgstr ""
-
-#: kotext/koFontDia.cc:99
-msgid "pt"
-msgstr "pt"
-
-#: kotext/koFontDia.cc:104
-msgid "Di&rection:"
-msgstr ""
-
-#: kotext/koFontDia.cc:289
-msgid "S&hadow"
-msgstr ""
-
-#: kotext/koFontDia.cc:392
-msgid "Colors"
-msgstr "Coleurs"
-
-#: kotext/koFontDia.cc:395 kotext/koFontDia.cc:437
-msgid "Change Co&lor..."
-msgstr "Candjî l' co&leur..."
-
-#: kotext/koFontDia.cc:398
-msgid "Change Bac&kground Color..."
-msgstr "Candjî l' coleur di &fond..."
-
-#: kotext/koFontDia.cc:413
-msgid "Font &Effects"
-msgstr "&Efets des fontes"
-
-#: kotext/koFontDia.cc:423
-msgid "&Underlining:"
-msgstr "&Sorlignî:"
-
-#: kotext/koFontDia.cc:441
-msgid "&Strikethrough:"
-msgstr "&Båré:"
-
-#: kotext/koFontDia.cc:453
-msgid "&Word by word"
-msgstr ""
-
-#: kotext/koFontDia.cc:456 kotext/kovariable.cc:2295
-msgid "Position"
-msgstr "Eplaeçmint"
-
-#: kotext/koFontDia.cc:464
-msgid "Su&perscript"
-msgstr ""
-
-#: kotext/koFontDia.cc:467
-msgid "Su&bscript"
-msgstr ""
-
-#: kotext/koFontDia.cc:470
-msgid "Relative &size:"
-msgstr ""
-
-#: kotext/koFontDia.cc:482
-msgid "Offse&t from baseline:"
-msgstr ""
-
-#: kotext/koFontDia.cc:503
-msgid "A&ttribute:"
-msgstr ""
-
-#: kotext/koFontDia.cc:513
-msgid "Capitalization"
-msgstr ""
-
-#: kotext/koFontDia.cc:522
-msgid "La&nguage:"
-msgstr "&Lingaedje:"
-
-#: kotext/koFontDia.cc:546
-msgid "Auto h&yphenation"
-msgstr ""
-
-#: kotext/koFontDia.cc:1133 kotext/koFontDia.cc:1146
+#: kotext/kfontdialog_local.cpp:752 kotext/koFontDia.cc:50
 msgid "Select Font"
 msgstr "Tchoezi fonte"
+
+#: kotext/koFontDia.cc:71 kotext/koStylist.cc:683
+#, fuzzy
+msgid "Highlighting"
+msgstr "Metaedje e valeur del sintacse"
+
+#: kotext/koFontDia.cc:83 kotext/koStylist.cc:682
+#, fuzzy
+msgid "Decoration"
+msgstr "Discrijhaedje:"
+
+#: kotext/koFontDia.cc:93 kotext/koStylist.cc:684
+#, fuzzy
+msgid "Layout"
+msgstr "Arindjmint del Pådje"
+
+#: kotext/koFontDia.cc:101 kotext/koStylist.cc:685
+#, fuzzy
+msgid "Language"
+msgstr "Lingaedje:"
 
 #: kotext/koParagDia.cc:56
 msgid "St&yle"
@@ -3427,6 +3353,10 @@ msgstr "Djenerå"
 msgid "St&yle:"
 msgstr "&Stîle:"
 
+#: kotext/koParagDia.cc:1307
+msgid "Co&lor:"
+msgstr "Co&leur:"
+
 #: kotext/koParagDia.cc:1333
 msgid "Merge with next paragraph"
 msgstr ""
@@ -3534,7 +3464,7 @@ msgstr "Discandjî Tecse"
 msgid "Family:"
 msgstr "Famile:"
 
-#: kotext/koSearchDia.cc:554
+#: kotext/kfontdialog_local.cpp:188 kotext/koSearchDia.cc:554
 msgid "Size:"
 msgstr "Grandeu:"
 
@@ -3669,6 +3599,16 @@ msgstr ""
 msgid "Change Variable Format"
 msgstr ""
 
+#: kotext/kofontdiapreview.cc:40 kotext/kofontdiapreview.cc:41
+#, fuzzy
+msgid "The quick brown dog jumps over the lazy cat."
+msgstr ""
+"Mi trûte a les balzins, co pés ki l' grijhe cawe di m' pôve fayé vexhåd!"
+
+#: kotext/kofontdiapreview.cc:196
+msgid "Font too large for the preview pane"
+msgstr ""
+
 #: kotext/koimportstyledia.cc:34
 #, fuzzy
 msgid "Import Styles"
@@ -3693,43 +3633,43 @@ msgstr ""
 msgid "Numbering Style for %1"
 msgstr ""
 
-#: kotext/kotextformat.cc:1539
+#: kotext/kotextformat.cc:1540
 msgid ""
 "_: Underline Style\n"
 "None"
 msgstr ""
 
-#: kotext/kotextformat.cc:1540 kotext/kotextformat.cc:1551
-msgid "Single"
-msgstr ""
-
 #: kotext/kotextformat.cc:1541 kotext/kotextformat.cc:1552
-msgid "Simple Bold"
+msgid "Single"
 msgstr ""
 
 #: kotext/kotextformat.cc:1542 kotext/kotextformat.cc:1553
 msgid "Double"
 msgstr "Dobe"
 
-#: kotext/kotextformat.cc:1543
+#: kotext/kotextformat.cc:1543 kotext/kotextformat.cc:1554
+msgid "Simple Bold"
+msgstr ""
+
+#: kotext/kotextformat.cc:1544
 msgid "Wave"
 msgstr "Wache"
 
-#: kotext/kotextformat.cc:1550
+#: kotext/kotextformat.cc:1551
 msgid ""
 "_: Strikeout Style\n"
 "None"
 msgstr ""
 
-#: kotext/kotextformat.cc:1561
+#: kotext/kotextformat.cc:1562
 msgid "Uppercase"
 msgstr ""
 
-#: kotext/kotextformat.cc:1562
+#: kotext/kotextformat.cc:1563
 msgid "Lowercase"
 msgstr ""
 
-#: kotext/kotextformat.cc:1563
+#: kotext/kotextformat.cc:1564
 msgid "Small Caps"
 msgstr ""
 
@@ -4072,6 +4012,10 @@ msgstr ""
 #: kotext/kovariable.cc:2006
 msgid "Field"
 msgstr "Tchamp"
+
+#: kotext/kovariable.cc:2295
+msgid "Position"
+msgstr "Eplaeçmint"
 
 #: kotext/kovariable.cc:2296
 msgid "Company"
@@ -4530,6 +4474,121 @@ msgstr ""
 msgid "Name"
 msgstr "No:"
 
+#: kotext/kfontdialog_local.cpp:106
+msgid "Here you can choose the font to be used."
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:118
+#, fuzzy
+msgid "Requested Font"
+msgstr "Tchoezi fonte"
+
+#: kotext/kfontdialog_local.cpp:141
+#, fuzzy
+msgid "Change font family?"
+msgstr "Famile del fonte"
+
+#: kotext/kfontdialog_local.cpp:143
+msgid "Enable this checkbox to change the font family settings."
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:149
+#, fuzzy
+msgid "Font:"
+msgstr "Payis:"
+
+#: kotext/kfontdialog_local.cpp:156
+#, fuzzy
+msgid "Font style"
+msgstr "Stîle del fonte"
+
+#: kotext/kfontdialog_local.cpp:160
+msgid "Change font style?"
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:162
+msgid "Enable this checkbox to change the font style settings."
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:168
+#, fuzzy
+msgid "Font style:"
+msgstr "Stîle del fonte"
+
+#: kotext/kfontdialog_local.cpp:176
+#, fuzzy
+msgid "Size"
+msgstr "Grandeu:"
+
+#: kotext/kfontdialog_local.cpp:180
+#, fuzzy
+msgid "Change font size?"
+msgstr "Candjî les boirdeures"
+
+#: kotext/kfontdialog_local.cpp:182
+msgid "Enable this checkbox to change the font size settings."
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:204
+msgid "Here you can choose the font family to be used."
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:226
+msgid "Here you can choose the font style to be used."
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:229 kotext/kfontdialog_local.cpp:484
+#: kotext/kfontdialog_local.cpp:486 kotext/kfontdialog_local.cpp:495
+#: kotext/kfontdialog_local.cpp:496
+msgid "Regular"
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:231
+#, fuzzy
+msgid "Bold"
+msgstr "Cråssès letes:"
+
+#: kotext/kfontdialog_local.cpp:232
+#, fuzzy
+msgid "Bold Italic"
+msgstr "Clintcheyès letes:"
+
+#: kotext/kfontdialog_local.cpp:249
+msgid "Relative"
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:251
+msgid "Font size<br><i>fixed</i> or <i>relative</i><br>to environment"
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:253
+msgid ""
+"Here you can switch between fixed font size and font size to be calculated "
+"dynamically and adjusted to changing environment (e.g. widget dimensions, paper "
+"size)."
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:277
+msgid "Here you can choose the font size to be used."
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:300
+#, fuzzy
+msgid "The Quick Brown Fox Jumps Over The Lazy Dog"
+msgstr ""
+"Mi trûte a les balzins, co pés ki l' grijhe cawe di m' pôve fayé vexhåd!"
+
+#: kotext/kfontdialog_local.cpp:305
+msgid ""
+"This sample text illustrates the current settings. You may edit it to test "
+"special characters."
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:314 kotext/kfontdialog_local.cpp:324
+#, fuzzy
+msgid "Actual Font"
+msgstr "Tchoezi fonte"
+
 #: _translatorinfo.cpp:1
 msgid ""
 "_: NAME OF TRANSLATORS\n"
@@ -4541,6 +4600,33 @@ msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
 msgstr ""
+
+#~ msgid "Shadow"
+#~ msgstr "Ombion"
+
+#~ msgid "pt"
+#~ msgstr "pt"
+
+#~ msgid "Colors"
+#~ msgstr "Coleurs"
+
+#~ msgid "Change Co&lor..."
+#~ msgstr "Candjî l' co&leur..."
+
+#~ msgid "Change Bac&kground Color..."
+#~ msgstr "Candjî l' coleur di &fond..."
+
+#~ msgid "Font &Effects"
+#~ msgstr "&Efets des fontes"
+
+#~ msgid "&Underlining:"
+#~ msgstr "&Sorlignî:"
+
+#~ msgid "&Strikethrough:"
+#~ msgstr "&Båré:"
+
+#~ msgid "La&nguage:"
+#~ msgstr "&Lingaedje:"
 
 #~ msgid "Select Picture"
 #~ msgstr "Tchoezi ene imådje"
@@ -4839,9 +4925,6 @@ msgstr ""
 
 #~ msgid "Al&ignment"
 #~ msgstr "A&roymint"
-
-#~ msgid "The quick brown fox jumps over the lazy dog"
-#~ msgstr "Mi trûte a les balzins, co pés ki l' grijhe cawe di m' pôve fayé vexhåd!"
 
 #, fuzzy
 #~ msgid "Internal error: saveOasis not implemented"
