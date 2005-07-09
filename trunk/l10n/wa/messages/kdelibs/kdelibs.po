@@ -12,7 +12,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs 0.4\n"
-"POT-Creation-Date: 2005-07-08 01:30+0200\n"
+"POT-Creation-Date: 2005-07-09 01:30+0200\n"
 "PO-Revision-Date: 2004-05-17 05:10+0200\n"
 "Last-Translator: Pablo Saratxaga <pablo@walon.org>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -780,7 +780,7 @@ msgstr "Moussî foû"
 msgid "&Quit"
 msgstr "C&witer"
 
-#: common_texts.cpp:88 kdecore/kstdaccel.cpp:84
+#: common_texts.cpp:88 kdecore/kstdaccel.cpp:84 kded/kbuildsycoca.cpp:781
 msgid "Reload"
 msgstr "Ritcherdjî"
 
@@ -917,8 +917,10 @@ msgstr "Raloyî coinreçmint"
 msgid "Browse..."
 msgstr "Foyter..."
 
-#: common_texts.cpp:137 kdecore/kkeyserver_x11.cpp:127
-#: kdeui/kstdguiitem.cpp:257 khtml/ecma/kjs_debugwin.cpp:458
+#: common_texts.cpp:137 kdecore/kkeyserver_x11.cpp:127 kdeui/keditcl2.cpp:107
+#: kdeui/keditcl2.cpp:120 kdeui/keditcl2.cpp:377 kdeui/keditcl2.cpp:390
+#: kdeui/keditcl2.cpp:456 kdeui/keditcl2.cpp:469 kdeui/kstdguiitem.cpp:257
+#: khtml/ecma/kjs_debugwin.cpp:458 kutils/kreplace.cpp:319
 msgid "Stop"
 msgstr "Åwe"
 
@@ -1038,8 +1040,9 @@ msgstr ""
 msgid "&Previous"
 msgstr "Di D&vant"
 
-#: common_texts.cpp:170 kdecore/kstdaccel.cpp:69 kdeui/keditcl2.cpp:456
-#: kdeui/keditcl2.cpp:469 kdeui/keditcl2.cpp:830 kutils/kreplace.cpp:45
+#: common_texts.cpp:170 kcert/kcertpart.cc:730 kcert/kcertpart.cc:746
+#: kdecore/kstdaccel.cpp:69 kdeui/keditcl2.cpp:456 kdeui/keditcl2.cpp:469
+#: kdeui/keditcl2.cpp:830 kutils/kreplace.cpp:45 kutils/kreplace.cpp:49
 msgid "Replace"
 msgstr "Mete el plaece"
 
@@ -2411,6 +2414,11 @@ msgstr "Apontiaedje des rsources KDE"
 #: kded/kbuildsycoca.cpp:781
 msgid "Do you want to reload KDE configuration?"
 msgstr ""
+
+#: kded/kbuildsycoca.cpp:781
+#, fuzzy
+msgid "Do Not Reload"
+msgstr "&Ni nén schaper"
 
 #: kded/kbuildsycoca.cpp:964
 msgid "Configuration information reloaded successfully."
@@ -4397,9 +4405,17 @@ msgstr "Tapez li no, s' i vs plait:"
 msgid "Old upload information found, fill out fields?"
 msgstr ""
 
+#: knewstuff/uploaddialog.cpp:173
+msgid "Fill Out"
+msgstr ""
+
+#: knewstuff/uploaddialog.cpp:173
+msgid "Do Not Fill Out"
+msgstr ""
+
 #: knewstuff/knewstuffgeneric.cpp:133
 #, fuzzy
-msgid "The file '%1' already exists. Do you want to override it?"
+msgid "The file '%1' already exists. Do you want to overwrite it?"
 msgstr ""
 "Li fitchî <quote>%1</quote> egzistêye dedja. Estoz seur(e) ki vos l' voloz "
 "spotchî?"
@@ -4862,6 +4878,11 @@ msgid ""
 "The '%1' key combination has already been allocated to the \"%2\" action.\n"
 "Do you want to reassign it from that action to the current one?"
 msgstr ""
+
+#: kdeui/kkeydialog.cpp:975
+#, fuzzy
+msgid "Reassign"
+msgstr "Rûsse"
 
 #: kdeui/kkeydialog.cpp:1089 kdeui/kkeydialog.cpp:1101
 msgid "Configure Shortcuts"
@@ -6144,7 +6165,7 @@ msgstr ""
 "bug.\n"
 "Si vs tchôkîz so «evoyî», èn emile serè evoyî å mintneu do programe.\n"
 
-#: kdeui/kbugreport.cpp:253
+#: kdeui/kbugreport.cpp:252
 #, fuzzy
 msgid ""
 "To submit a bug report, click on the button below.\n"
@@ -6157,24 +6178,24 @@ msgstr ""
 "http://bugs.kde.org. Vaila, vos trovroz on formulaire a rimpli.\n"
 "L' informåcion po dzeu serè evoyeye a ç' sierveu la."
 
-#: kdeui/kbugreport.cpp:261
+#: kdeui/kbugreport.cpp:260
 msgid "&Launch Bug Report Wizard"
 msgstr ""
 
-#: kdeui/kbugreport.cpp:299
+#: kdeui/kbugreport.cpp:298
 msgid ""
 "_: unknown program name\n"
 "unknown"
 msgstr "nén cnoxhou"
 
-#: kdeui/kbugreport.cpp:377
+#: kdeui/kbugreport.cpp:376
 msgid ""
 "You must specify both a subject and a description before the report can be "
 "sent."
 msgstr ""
 "Vos dvoz dner on sudjet et on discrijhaedje divant ki l' rapoirt soeye evoyî."
 
-#: kdeui/kbugreport.cpp:387
+#: kdeui/kbugreport.cpp:386
 msgid ""
 "<p>You chose the severity <b>Critical</b>. Please note that this severity is "
 "intended only for bugs that</p>"
@@ -6197,7 +6218,7 @@ msgstr ""
 "<p>Est çki li bug ki vos voloz rapoirter fé ene di ces afaires la? Si l' "
 "response est 'neni',vos duvrîz prinde on pus bas livea di såvrité. Gråces!</p>"
 
-#: kdeui/kbugreport.cpp:398
+#: kdeui/kbugreport.cpp:397
 msgid ""
 "<p>You chose the severity <b>Grave</b>. Please note that this severity is "
 "intended only for bugs that</p>"
@@ -6219,7 +6240,7 @@ msgstr ""
 "<p>Est çki li bug ki vos voloz rapoirter fé ene di ces afaires la? Si l' "
 "response est 'neni',vos duvrîz prinde on pus bas livea di såvrité. Gråces!</p>"
 
-#: kdeui/kbugreport.cpp:410
+#: kdeui/kbugreport.cpp:409
 msgid ""
 "Unable to send the bug report.\n"
 "Please submit a bug report manually...\n"
@@ -6229,11 +6250,11 @@ msgstr ""
 "I vs fårè evoyî vosse rapoirt al mwin...\n"
 "Waitîz kimint çk' on fwait a l' adresse http://bugs.kde.org/."
 
-#: kdeui/kbugreport.cpp:419
+#: kdeui/kbugreport.cpp:417
 msgid "Bug report sent, thank you for your input."
 msgstr "Li rapoirt di bug a bén stî evoyî.  Gråces po vosse côp di spale."
 
-#: kdeui/kbugreport.cpp:428
+#: kdeui/kbugreport.cpp:426
 msgid ""
 "Close and discard\n"
 "edited message?"
@@ -6241,7 +6262,7 @@ msgstr ""
 "Clôre eyet abandner\n"
 "li messaedje kimincî?"
 
-#: kdeui/kbugreport.cpp:429
+#: kdeui/kbugreport.cpp:427
 msgid "Close Message"
 msgstr "Clôre li messaedje"
 
@@ -7143,7 +7164,7 @@ msgstr ""
 "<qt>Li formulaire serè prezinté a<BR><B>%1</B><BR>so vosse sistinme di fitchî "
 "locå .<BR> Voloz prezinter li formulaire?"
 
-#: khtml/html/html_formimpl.cpp:1470 khtml/khtml_part.cpp:4777
+#: khtml/html/html_formimpl.cpp:1469 khtml/khtml_part.cpp:4777
 #: khtml/khtmlview.cpp:2408 khtml/khtmlview.cpp:2450
 #: khtml/rendering/render_form.cpp:296
 msgid "Submit"
@@ -7384,6 +7405,16 @@ msgstr ""
 "<p>%1</p> en on novea purnea di vosse betchteu avou Javascript.<br />\n"
 "Estoz d' acoird?</qt>"
 
+#: khtml/ecma/kjs_html.cpp:2166 khtml/ecma/kjs_window.cpp:1330
+#, fuzzy
+msgid "Allow"
+msgstr "Tot a Fwait"
+
+#: khtml/ecma/kjs_html.cpp:2166 khtml/ecma/kjs_window.cpp:1330
+#, fuzzy
+msgid "Do Not Allow"
+msgstr "Aberweter &totafwait"
+
 #: khtml/ecma/kjs_window.cpp:1563
 msgid "Close window?"
 msgstr "Clôre li purnea?"
@@ -7391,6 +7422,11 @@ msgstr "Clôre li purnea?"
 #: khtml/ecma/kjs_window.cpp:1563
 msgid "Confirmation Required"
 msgstr "Racertinaedje dimandé"
+
+#: khtml/ecma/kjs_window.cpp:1563
+#, fuzzy
+msgid "Do Not Close"
+msgstr "&Ni nén schaper"
 
 #: khtml/ecma/kjs_window.cpp:2326
 msgid ""
@@ -7498,8 +7534,18 @@ msgid "Save Login Information"
 msgstr ""
 
 #: khtml/html/html_formimpl.cpp:610
+#, fuzzy
+msgid "Store"
+msgstr "Rowe"
+
+#: khtml/html/html_formimpl.cpp:610
 msgid "Ne&ver for This Site"
 msgstr ""
+
+#: khtml/html/html_formimpl.cpp:610
+#, fuzzy
+msgid "Do Not Store"
+msgstr "&Ni nén schaper"
 
 #: khtml/html/html_formimpl.cpp:614
 msgid ""
@@ -7665,6 +7711,14 @@ msgstr ""
 #: khtml/rendering/render_frames.cpp:824
 msgid "Missing Plugin"
 msgstr "Tchôke-divins mancant"
+
+#: khtml/rendering/render_frames.cpp:824
+msgid "Download"
+msgstr ""
+
+#: khtml/rendering/render_frames.cpp:824
+msgid "Do Not Download"
+msgstr ""
 
 #: kinit/kinit.cpp:440
 msgid ""
@@ -8204,6 +8258,11 @@ msgstr ""
 msgid "Do you want to restart search at the beginning?"
 msgstr ""
 
+#: kutils/kreplace.cpp:319
+#, fuzzy
+msgid "Restart"
+msgstr "Rifé"
+
 #: kutils/kpluginselector.cpp:111
 msgid ""
 "<qt>"
@@ -8599,6 +8658,11 @@ msgstr ""
 msgid "No Such File"
 msgstr ""
 
+#: kab/addressbook.cc:625
+#, fuzzy
+msgid "Create"
+msgstr "Mitan"
+
 #: kab/addressbook.cc:629
 msgid "New file."
 msgstr "Novea fitchî."
@@ -8910,6 +8974,10 @@ msgstr "Sicret del acertineure"
 msgid "The certificate file could not be loaded. Try a different password?"
 msgstr ""
 "L' acertineure n' a nén polou esse tcherdjeye. Sayî avou èn ôte sicret?"
+
+#: kcert/kcertpart.cc:496
+msgid "Try Different"
+msgstr ""
 
 #: kcert/kcertpart.cc:532 kcert/kcertpart.cc:566
 msgid "This file cannot be opened."
