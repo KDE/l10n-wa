@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
-"POT-Creation-Date: 2005-12-13 08:16+0100\n"
+"POT-Creation-Date: 2005-12-17 08:31+0100\n"
 "PO-Revision-Date: 2004-04-05 21:37+0200\n"
 "Last-Translator: Pablo Saratxaga <pablo@walon.org>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -35,7 +35,7 @@ msgid "F&ormat"
 msgstr "C&ogne"
 
 #. i18n: file kword.rc line 78
-#: rc.cpp:21 rc.cpp:78
+#: KWConfig.cpp:98 rc.cpp:21 rc.cpp:78
 #, no-c-format
 msgid "Formula"
 msgstr "Formule"
@@ -149,13 +149,15 @@ msgid "Configure Table Borders"
 msgstr "Apontyî les boirdeures do tåvlea"
 
 #. i18n: file KWCreateBookmarkDiaBase.ui line 16
-#: rc.cpp:120
+#: KWCreateBookmarkDia.cpp:36 rc.cpp:120
 #, no-c-format
 msgid "Create New Bookmark"
 msgstr "Ahiver ene nouve rimåke"
 
 #. i18n: file KWCreateBookmarkDiaBase.ui line 35
-#: mailmerge/sql/KWQtSqlMailMergeOpen.cpp:98 rc.cpp:123
+#: KWFrameStyleManager.cpp:256 KWMailMergeDataBase.cpp:521
+#: KWTableStyleManager.cpp:288 mailmerge/sql/KWQtSqlMailMergeOpen.cpp:98
+#: rc.cpp:123
 #, no-c-format
 msgid "Name:"
 msgstr "No:"
@@ -169,7 +171,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file KWSelectBookmarkDiaBase.ui line 16
-#: rc.cpp:130
+#: KWCreateBookmarkDia.cpp:86 rc.cpp:130
 #, no-c-format
 msgid "Select Bookmark"
 msgstr ""
@@ -407,218 +409,4034 @@ msgstr ""
 msgid "&Selected Addresses"
 msgstr "Tecse di tchoezi"
 
+#: KWCanvas.cpp:206 KWView.cpp:1871
+msgid "Printing..."
+msgstr "Dji rexhe..."
+
+#: KWCanvas.cpp:401 KWView.cpp:6130
+msgid "Move Frame"
+msgstr "Bodjî l' cåde"
+
+#: KWCanvas.cpp:546 KWCanvas.cpp:2344 KWTableFrameSet.cpp:2708
+msgid "Read-only content cannot be changed. No modifications will be accepted."
+msgstr ""
+
+#: KWCanvas.cpp:690
+#, fuzzy
+msgid "Insert Inline Table"
+msgstr "Sititchî ene Tåve"
+
+#: KWCanvas.cpp:1251
+msgid "Bookmark target: "
+msgstr ""
+
+#: KWCanvas.cpp:1302 KWFrameDia.cpp:2215 KWFrameDia.cpp:2217
+msgid "Resize Frame"
+msgstr "Candjî l' grandeu do cåde"
+
+#: KWCanvas.cpp:1387 KWFrameDia.cpp:880 KWFrameDia.cpp:1786
+#: KWTextFrameSet.cpp:110
+#, c-format
+msgid "Text Frameset %1"
+msgstr "Cåde di tecse %1"
+
+#: KWCanvas.cpp:1391 KWFrameDia.cpp:2115 KWFrameDia.cpp:2116
+msgid "Create Text Frame"
+msgstr "Ahiver cåde di tecse"
+
+#: KWCanvas.cpp:1408
+msgid "Connect Frame"
+msgstr "Raloyî les cådes di tecse"
+
+#: KWCanvas.cpp:1454
+msgid "Create Picture Frame"
+msgstr "Ahiver on cåde d' imådje"
+
+#: KWCanvas.cpp:1484
+msgid "Create Formula Frame"
+msgstr "Ahiver on cåde di formule"
+
+#: KWCanvas.cpp:1498
+msgid ""
+"KWord is unable to insert the table because there is not enough space "
+"available."
+msgstr ""
+
+#: KWCanvas.cpp:1503 KWTableFrameSet.cpp:127
+#, fuzzy
+msgid "Create Table"
+msgstr "Ahiver ene tåve."
+
+#: KWCanvas.cpp:1675
+msgid "Change Frame Background Color"
+msgstr "Candjî l' coleur di fond do cåde"
+
+#: KWCommand.cpp:1736 KWInsertPageDia.cpp:31 KWInsertPageDia.cpp:35
+#: KWTextFrameSet.cpp:3861
+msgid "Insert Page"
+msgstr "Sititchî ene pådje"
+
+#: KWCommand.cpp:1737
+#, c-format
+msgid "Delete Page %1"
+msgstr "Disfacer pådje %1"
+
+#: KWCommand.cpp:1975 KWResizeTableDia.cpp:35 KWResizeTableDia.cpp:67
+msgid "Resize Column"
+msgstr "Candjî l' grandeu del colone"
+
+#: KWCommand.cpp:1996
+#, fuzzy
+msgid "Resize Row"
+msgstr "Candjî l' grandeu do cåde"
+
+#: KWConfig.cpp:80
+msgid "Configure KWord"
+msgstr "Apontyî KWord"
+
+#: KWConfig.cpp:85 KWConfig.cpp:244
+msgid "Interface"
+msgstr "Eterface"
+
+#: KWConfig.cpp:85
+msgid "Interface Settings"
+msgstr "Apontiaedjes di l' eterface"
+
+#: KWConfig.cpp:89
+msgid "Document"
+msgstr "Documint"
+
+#: KWConfig.cpp:89 KWConfig.cpp:742
+msgid "Document Settings"
+msgstr "Apontiaedjes do documint"
+
+#: KWConfig.cpp:94
+msgid "Spelling"
+msgstr "Speli"
+
+#: KWConfig.cpp:94
+msgid "Spell Checker Behavior"
+msgstr "Dujhance del coridjrece"
+
+#: KWConfig.cpp:98
+#, fuzzy
+msgid "Formula Defaults"
+msgstr "Prémetowes valixhances des documints"
+
+#: KWConfig.cpp:103 KWConfig.cpp:474
+msgid "Misc"
+msgstr "Totes sôres"
+
+#: KWConfig.cpp:103
+msgid "Misc Settings"
+msgstr "Apontiaedjes di totes sôres"
+
+#: KWConfig.cpp:107 KWConfig.cpp:918 KWConfig.cpp:925
+msgid "Path"
+msgstr "Tchimin"
+
+#: KWConfig.cpp:107
+msgid "Path Settings"
+msgstr "Apontiaedjes des tchmins"
+
+#: KWConfig.cpp:112
+msgid ""
+"_: Abbreviation for Text-to-Speech\n"
+"TTS"
+msgstr ""
+
+#: KWConfig.cpp:113
+#, fuzzy
+msgid "Text-to-Speech Settings"
+msgstr "Schaper les apontiaedjes"
+
+#: KWConfig.cpp:161 KWConfig.cpp:169
+msgid "Change Config"
+msgstr "Candjî l' apontiaedje"
+
+#: KWConfig.cpp:272
+msgid "&Units:"
+msgstr ""
+
+#: KWConfig.cpp:278
+msgid ""
+"Select the unit type used every time a distance or width/height is displayed or "
+"entered. This one setting is for the whole of KWord: all dialogs, the rulers "
+"etc. Note that KWord documents specify the unit which was used to create them, "
+"so this setting only affects this document and all documents that will be "
+"created later."
+msgstr ""
+
+#: KWConfig.cpp:285
+msgid "Show &status bar"
+msgstr "Mostrer l' bår ås &messaedjes"
+
+#: KWConfig.cpp:288
+msgid "Show s&crollbar"
+msgstr ""
+
+#: KWConfig.cpp:291
+msgid "PageUp/PageDown &moves the caret"
+msgstr ""
+
+#: KWConfig.cpp:294
+msgid ""
+"If this option is enabled, the PageUp and PageDown keys move the text caret, as "
+"in other KDE applications. If it is disabled, they move the scrollbars, as in "
+"most other word processors."
+msgstr ""
+
+#: KWConfig.cpp:299
+#, fuzzy
+msgid "Number of recent &files:"
+msgstr "Nombe di tåves:"
+
+#: KWConfig.cpp:303
+msgid ""
+"The number of files remembered in the file open dialog and in the recent files "
+"menu item"
+msgstr ""
+
+#: KWConfig.cpp:307
+#, fuzzy
+msgid "&Horizontal grid size:"
+msgstr "Royes di coûtchî"
+
+#: KWConfig.cpp:315
+msgid ""
+"The grid size on which frames, tabs and other content snaps while moving and "
+"scaling"
+msgstr ""
+
+#: KWConfig.cpp:319
+#, fuzzy
+msgid "&Vertical grid size:"
+msgstr "Royes d' astampé"
+
+#: KWConfig.cpp:328
+msgid ""
+"The grid size on which frames and other content snaps while moving and scaling"
+msgstr ""
+
+#: KWConfig.cpp:332
+msgid "&Paragraph indent by toolbar buttons:"
+msgstr ""
+
+#: KWConfig.cpp:340
+msgid ""
+"Configure the indent width used when using the 'Increase' or 'Decrease' "
+"indentation buttons on a paragraph."
+"<p>The lower the value, the more often the buttons will have to be pressed to "
+"gain the same indentation."
+msgstr ""
+
+#: KWConfig.cpp:346
+msgid "Number of pa&ges per row in preview mode:"
+msgstr ""
+
+#: KWConfig.cpp:351
+msgid ""
+"After selecting preview mode (via the \"View\" menu, option \"Preview mode\") "
+"this is the amount of pages KWord will position on one horizontal row"
+msgstr ""
+
+#: KWConfig.cpp:490
+msgid "Undo/&redo limit:"
+msgstr "Limite po disfé/&rifé:"
+
+#: KWConfig.cpp:494
+msgid "Limit the amount of undo/redo actions remembered to save memory"
+msgstr ""
+"Limite do nombe d' accions a s' rimimbrer po les poleur disfé/rifé, pus li "
+"limite est hôte, pus ça prind del memwere"
+
+#: KWConfig.cpp:498
+msgid "Display &links"
+msgstr "Håyner les &loyéns"
+
+#: KWConfig.cpp:500
+msgid "&Underline all links"
+msgstr "&Sorlignî tos les loyéns"
+
+#: KWConfig.cpp:504
+msgid "Display c&omments"
+msgstr "Håyner les tecse di ra&wete"
+
+#: KWConfig.cpp:507
+msgid "Display field code"
+msgstr "Håyner l' côde des tchamps"
+
+#: KWConfig.cpp:511
+#, fuzzy
+msgid "View Formatting"
+msgstr "Vey li caractere di metaedje e pådje des espåces"
+
+#: KWConfig.cpp:520
+msgid "View formatting end paragraph"
+msgstr "Vey les caracteres di metaedje e pådje di fén di hagnon"
+
+#: KWConfig.cpp:523
+msgid "View formatting space"
+msgstr "Vey li caractere di metaedje e pådje des espåces"
+
+#: KWConfig.cpp:526
+#, fuzzy
+msgid "View formatting tabs"
+msgstr "Vey li caractere di metaedje e pådje des espåces"
+
+#: KWConfig.cpp:529
+#, fuzzy
+msgid "View formatting break"
+msgstr "Vey li caractere di metaedje e pådje des espåces"
+
+#: KWConfig.cpp:555 KWConfig.cpp:557 KWConfig.cpp:567 KWConfig.cpp:569
+#: KWConfig.cpp:579 KWConfig.cpp:581
+msgid "Change Display Link Command"
+msgstr ""
+
+#: KWConfig.cpp:590 KWConfig.cpp:592
+#, fuzzy
+msgid "Change Display Field Code Command"
+msgstr "Håyner l' côde des tchamps"
+
+#: KWConfig.cpp:659
+msgid "Document Defaults"
+msgstr "Prémetowes valixhances des documints"
+
+#: KWConfig.cpp:674
+msgid "Default column spacing:"
+msgstr "Prémetou spåce inte les colones:"
+
+#: KWConfig.cpp:682
+msgid ""
+"When setting a document to use more than one column this distance will be used "
+"to separate the columns. This value is merely a default setting as the column "
+"spacing can be changed per document"
+msgstr ""
+
+#: KWConfig.cpp:694
+msgid "Default font:"
+msgstr "Prémetowe fonte:"
+
+#: KWConfig.cpp:703
+msgid "Choose..."
+msgstr "Tchoezi..."
+
+#: KWConfig.cpp:730
+msgid "Global language:"
+msgstr ""
+
+#: KWConfig.cpp:739
+#, fuzzy
+msgid "Automatic hyphenation"
+msgstr "Tot seu"
+
+#: KWConfig.cpp:747
+msgid "Autosave every (min):"
+msgstr "Schapaedje tot seu (min.):"
+
+#: KWConfig.cpp:751
+msgid ""
+"A backup copy of the current document is created when a change has been made. "
+"The interval used to create backup documents is set here."
+msgstr ""
+
+#: KWConfig.cpp:753
+msgid "No autosave"
+msgstr "Nou schapaedje tot seu"
+
+#: KWConfig.cpp:754
+msgid " min"
+msgstr " min"
+
+#: KWConfig.cpp:763
+msgid "Create backup file"
+msgstr "Ahiver copeye di såvrité"
+
+#: KWConfig.cpp:767
+msgid "Starting page number:"
+msgstr ""
+
+#: KWConfig.cpp:776
+msgid "Tab stop (%1):"
+msgstr ""
+
+#: KWConfig.cpp:785
+msgid "Cursor"
+msgstr "Cursoe"
+
+#: KWConfig.cpp:789
+msgid "Cursor in protected area"
+msgstr ""
+
+#: KWConfig.cpp:853 KWConfig.cpp:854
+msgid "Change Starting Page Number"
+msgstr ""
+
+#: KWConfig.cpp:863 KWConfig.cpp:866
+#, fuzzy
+msgid "Change Tab Stop Value"
+msgstr "Candjî variåve da vosse"
+
+#: KWConfig.cpp:907
+#, fuzzy
+msgid "Tab stop:"
+msgstr "Copete:"
+
+#: KWConfig.cpp:924
+msgid "Type"
+msgstr "Sôre"
+
+#: KWConfig.cpp:926 KWConfig.cpp:947 KWConfig.cpp:976 KWConfig.cpp:989
+#, fuzzy
+msgid "Personal Expression"
+msgstr "Sititchî ratourneure"
+
+#: KWConfig.cpp:927 KWConfig.cpp:954 KWConfig.cpp:979 KWConfig.cpp:1000
+msgid "Picture Path"
+msgstr "Tchimin po ls imådjes"
+
+#: KWConfig.cpp:928 KWConfig.cpp:964 KWConfig.cpp:982 KWConfig.cpp:1011
+msgid "Backup Path"
+msgstr "Tchimin po les copeyes di såvrité"
+
+#: KWConfig.cpp:930
+msgid "Modify Path..."
+msgstr "Candjî l' tchimin..."
+
+#: KWConfig.cpp:1034
+msgid "Speak widget under &mouse pointer"
+msgstr ""
+
+#: KWConfig.cpp:1035
+msgid "Speak widget with &focus"
+msgstr ""
+
+#: KWConfig.cpp:1039
+msgid "Speak &tool tips"
+msgstr ""
+
+#: KWConfig.cpp:1040
+msgid "Speak &What's This"
+msgstr ""
+
+#: KWConfig.cpp:1042
+msgid ""
+"_: Verbal indication if widget is disabled (grayed)\n"
+"&Say whether disabled"
+msgstr ""
+
+#: KWConfig.cpp:1043
+msgid "Spea&k accelerators"
+msgstr ""
+
+#: KWConfig.cpp:1048
+msgid ""
+"_: A word spoken before another word\n"
+"Pr&efaced by the word:"
+msgstr ""
+
+#: KWConfig.cpp:1050 KWConfig.cpp:1070 KWConfig.cpp:1087
+msgid ""
+"_: Keyboard accelerator, such as Alt+F\n"
+"Accelerator"
+msgstr ""
+
+#: KWConfig.cpp:1055
+msgid "&Polling interval:"
+msgstr ""
+
+#: KWConfigFootNoteDia.cpp:43
+msgid "Configure Endnote/Footnote"
+msgstr "Apontyî pînotes"
+
+#: KWConfigFootNoteDia.cpp:54 KWTextFrameSet.cpp:2978
+msgid "Footnotes"
+msgstr "Pînotes"
+
+#: KWConfigFootNoteDia.cpp:62
+msgid "Endnotes"
+msgstr "Pînote di documint"
+
+#: KWConfigFootNoteDia.cpp:71
+msgid "Separator Line"
+msgstr ""
+
+#: KWConfigFootNoteDia.cpp:72
+msgid ""
+"Configure the separator line. The separator line is drawn directly above the "
+"frame for the footnotes."
+msgstr ""
+
+#: KWConfigFootNoteDia.cpp:77 KWFrameDia.cpp:961
+msgid "Position"
+msgstr "Eplaeçmint"
+
+#: KWConfigFootNoteDia.cpp:78
+msgid ""
+"The separator can be positioned horizontally by picking one of the three "
+"alignments."
+msgstr ""
+
+#: KWConfigFootNoteDia.cpp:86
+#, fuzzy
+msgid ""
+"_: Position\n"
+"Left"
+msgstr "Eplaeçmint"
+
+#: KWConfigFootNoteDia.cpp:89
+msgid ""
+"_: Position\n"
+"Centered"
+msgstr ""
+
+#: KWConfigFootNoteDia.cpp:92
+#, fuzzy
+msgid ""
+"_: Position\n"
+"Right"
+msgstr "Eplaeçmint"
+
+#: KWConfigFootNoteDia.cpp:116
+#, c-format
+msgid " %"
+msgstr ""
+
+#: KWConfigFootNoteDia.cpp:119 KWFrameDia.cpp:1250
+#, fuzzy
+msgid "&Width:"
+msgstr "Lårdjeu:"
+
+#: KWConfigFootNoteDia.cpp:121
+msgid ""
+"The width is the thickness of the separator line, set to 0 for no separator "
+"line."
+msgstr ""
+
+#: KWConfigFootNoteDia.cpp:129
+#, fuzzy
+msgid "&Size on page:"
+msgstr "Nombe di pådjes:"
+
+#: KWConfigFootNoteDia.cpp:131
+msgid ""
+"The size of the separator line can be defined as a percentage of the width of "
+"the page."
+msgstr ""
+
+#: KWConfigFootNoteDia.cpp:139
+msgid "Style:"
+msgstr "Stîle:"
+
+#: KWConfigFootNoteDia.cpp:144
+msgid "Solid"
+msgstr "Solide"
+
+#: KWConfigFootNoteDia.cpp:145
+msgid "Dash Line"
+msgstr ""
+
+#: KWConfigFootNoteDia.cpp:146
+msgid "Dot Line"
+msgstr ""
+
+#: KWConfigFootNoteDia.cpp:147
+msgid "Dash Dot Line"
+msgstr ""
+
+#: KWConfigFootNoteDia.cpp:148
+msgid "Dash Dot Dot Line"
+msgstr ""
+
+#: KWConfigFootNoteDia.cpp:151
+msgid ""
+"The separator line can be drawn as a solid line or as a line which has a "
+"pattern; the pattern can be set in the style-type."
+msgstr ""
+
+#: KWConfigFootNoteDia.cpp:172 KWConfigFootNoteDia.cpp:173
+#: KWConfigFootNoteDia.cpp:180 KWConfigFootNoteDia.cpp:181
+#, fuzzy
+msgid "Change End-/Footnote Variable Settings"
+msgstr "Candjî variåve da vosse"
+
+#: KWConfigFootNoteDia.cpp:202 KWConfigFootNoteDia.cpp:203
+msgid "Change Footnote Line Separator Settings"
+msgstr ""
+
+#: KWCreateBookmarkDia.cpp:44 KWCreateBookmarkDia.cpp:99
+#: KWCreateBookmarkDia.cpp:123
+#, fuzzy
+msgid "Rename Bookmark"
+msgstr "Disfacer rmåke"
+
+#: KWCreateBookmarkDia.cpp:64
+msgid "That name already exists, please choose another name."
+msgstr ""
+
+#: KWCreateBookmarkDia.cpp:103
+msgid "Delete Bookmark"
+msgstr "Disfacer rmåke"
+
+#: KWDeleteDia.cpp:29
+msgid "Delete Row"
+msgstr "Disfacer Roye"
+
+#: KWDeleteDia.cpp:29
+msgid "Delete Column"
+msgstr "Disfacer Colone"
+
+#: KWDeleteDia.cpp:40
+msgid "Delete the row from the table."
+msgstr "Disfacer cisse roye foû del tåve"
+
+#: KWDeleteDia.cpp:41
+msgid "Delete the column from the table."
+msgstr "Disfacer cisse colone foû del tåve"
+
+#: KWDeleteDia.cpp:54
+msgid "Delete the whole table?"
+msgstr "Disfacer li tåve en etir?"
+
+#: KWDeleteDia.cpp:57
+msgid "Delete all selected rows?"
+msgstr "Disfacer totes les royes di tchoezeyes?"
+
+#: KWDeleteDia.cpp:57
+msgid "Delete all selected cells?"
+msgstr "Disfacer totes les boesses di tchoezeyes?"
+
+#: KWDeleteDia.cpp:59
+msgid "Delete row number %1?"
+msgstr "Disfacer l' roye limero %1?"
+
+#: KWDeleteDia.cpp:59
+msgid "Delete column number %1?"
+msgstr "Disfacer l' colone limero %1?"
+
+#: KWDeleteDia.cpp:63
+msgid "Delete rows: %1 ?"
+msgstr "Disfacer royes: %1 ?"
+
+#: KWDeleteDia.cpp:63
+msgid "Delete columns: %1 ?"
+msgstr "Disfacer colones: %1 ?"
+
+#: KWDocStruct.cpp:386
+#, c-format
+msgid "Page %1"
+msgstr "Pådje %1"
+
+#: KWDocStruct.cpp:388
+#, c-format
+msgid "Column %1"
+msgstr "Colone %1"
+
+#: KWDocStruct.cpp:391
+#, c-format
+msgid "Text Frame %1"
+msgstr "Cåde di Tecse %1"
+
+#: KWDocStruct.cpp:822 KWDocStruct.cpp:831 KWDocStruct.cpp:880
+#: KWDocStruct.cpp:904 KWDocStruct.cpp:911 KWDocStruct.cpp:958
+#: KWDocStruct.cpp:982 KWDocStruct.cpp:1006
+msgid "Empty"
+msgstr "Vude"
+
+#: KWDocStruct.cpp:898
+#, c-format
+msgid "Formula Frame %1"
+msgstr "Cåde di formule %1"
+
+#: KWDocStruct.cpp:976
+msgid "Picture (%1) %2"
+msgstr "Imådje (%1) %2"
+
+#: KWDocStruct.cpp:1048
+msgid "Embedded Objects"
+msgstr "Ravalés objets"
+
+#: KWDocStruct.cpp:1049
+msgid "Formula Frames"
+msgstr "Cådes di formules"
+
+#: KWDocStruct.cpp:1050
+msgid "Tables"
+msgstr "Tåves"
+
+#: KWDocStruct.cpp:1051
+msgid "Pictures"
+msgstr "Imådjes"
+
+#: KWDocStruct.cpp:1052
+msgid "Text Frames/Frame Sets"
+msgstr "Cådes di Tecse/Eshonna di cådes"
+
+#: KWDocStruct.cpp:1055
+msgid "Document Structure"
+msgstr "Tcherpinte do documint"
+
+#: KWDocument.cpp:1084
+msgid "Invalid OASIS OpenDocument file. No office:body tag found."
+msgstr ""
+
+#: KWDocument.cpp:1097
+msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
+msgstr ""
+
+#: KWDocument.cpp:1099
+msgid ""
+"This is not a word processing document, but %1. Please try opening it with the "
+"appropriate application."
+msgstr ""
+
+#: KWDocument.cpp:1125
+msgid ""
+"Invalid document. 'fo' has the wrong namespace. The application which produced "
+"this document is not OASIS-compliant."
+msgstr ""
+
+#: KWDocument.cpp:1127 KWDocument.cpp:1520
+#, c-format
+msgid "Invalid document. Paper size: %1x%2"
+msgstr ""
+
+#: KWDocument.cpp:1252
+msgid "Main Text Frameset"
+msgstr "Mwaisse cåde di tecse"
+
+#: KWDocument.cpp:1464
+msgid "Invalid document. No mimetype specified."
+msgstr ""
+
+#: KWDocument.cpp:1470
+#, c-format
+msgid ""
+"Invalid document. Expected mimetype application/x-kword or "
+"application/vnd.kde.kword, got %1"
+msgstr ""
+
+#: KWDocument.cpp:1477
+msgid ""
+"This document was created with a newer version of KWord (syntax version: %1)\n"
+"Opening it in this version of KWord will lose some information."
+msgstr ""
+
+#: KWDocument.cpp:1479
+msgid "File Format Mismatch"
+msgstr ""
+
+#: KWDocument.cpp:1767 KWOasisLoader.cpp:182
+msgid "First Page Header"
+msgstr "Tiestire prumire pådje"
+
+#: KWDocument.cpp:1781 KWOasisLoader.cpp:174
+msgid "Odd Pages Header"
+msgstr "Tiestire des pådjes impaires"
+
+#: KWDocument.cpp:1795 KWOasisLoader.cpp:176
+msgid "Even Pages Header"
+msgstr "Tiestire des pådjes paires"
+
+#: KWDocument.cpp:1809 KWOasisLoader.cpp:184
+msgid "First Page Footer"
+msgstr "Pî d' pådje del prumire Pådje"
+
+#: KWDocument.cpp:1823 KWOasisLoader.cpp:178
+msgid "Odd Pages Footer"
+msgstr "Pî d' pådje des pådjes impaires"
+
+#: KWDocument.cpp:1837 KWOasisLoader.cpp:180
+msgid "Even Pages Footer"
+msgstr "Pî d' pådje des pådjes paires"
+
+#: KWDocument.cpp:2509 KWDocument.cpp:2515
+msgid "Copy%1-%2"
+msgstr "Copyî %1-%2"
+
+#: KWDocument.cpp:3805
+#, fuzzy
+msgid "Create Part Frame"
+msgstr "Ahiver cåde di tecse"
+
+#: KWDocument.cpp:4597 KWTableFrameSet.cpp:132 KWView.cpp:2713 KWView.cpp:7445
+msgid "Delete Table"
+msgstr "Disfacer tåve"
+
+#: KWDocument.cpp:4611
+msgid "Delete Text Frame"
+msgstr "Disfacer cåde di tecse"
+
+#: KWDocument.cpp:4615
+msgid "Delete Formula Frame"
+msgstr "Disfacer cåde di formule"
+
+#: KWDocument.cpp:4624
+msgid "Delete Picture Frame"
+msgstr "Disfacer cåde d' imådje"
+
+#: KWDocument.cpp:4628
+#, fuzzy
+msgid "Delete Object Frame"
+msgstr "Disfacer cåde di tecse"
+
+#: KWEditPersonnalExpression.cpp:36
+#, fuzzy
+msgid "Edit Personal Expression"
+msgstr "Sititchî ratourneure"
+
+#: KWEditPersonnalExpression.cpp:45
+msgid "Group name:"
+msgstr "No do groupe:"
+
+#: KWEditPersonnalExpression.cpp:55
+msgid "Expressions"
+msgstr "Ratourneures"
+
+#: KWEditPersonnalExpression.cpp:73
+msgid "&New"
+msgstr "&Novea"
+
+#: KWEditPersonnalExpression.cpp:91 KWFrameStyleManager.cpp:217
+#: KWTableStyleManager.cpp:257
+msgid "New"
+msgstr "Novea"
+
+#: KWEditPersonnalExpression.cpp:251
+msgid "empty"
+msgstr "vude"
+
+#: KWEditPersonnalExpression.cpp:293
+msgid "new group"
+msgstr ""
+
+#: KWFootNoteDia.cpp:43
+msgid "Insert Footnote/Endnote"
+msgstr "Sititchî pînote"
+
+#: KWFootNoteDia.cpp:47
+msgid "Numbering"
+msgstr "Limerotaedje"
+
+#: KWFootNoteDia.cpp:49
+msgid "&Automatic"
+msgstr "&Otomatike"
+
+#: KWFootNoteDia.cpp:50
+msgid "&Manual"
+msgstr "Al &mwin"
+
+#: KWFootNoteDia.cpp:69
+msgid "&Footnote"
+msgstr "Pînote di &pådje"
+
+#: KWFootNoteDia.cpp:70
+msgid "&Endnote"
+msgstr "Pînote di &documint"
+
+#: KWFootNoteDia.cpp:81
+msgid "C&onfigure..."
+msgstr "&Apontyî..."
+
+#: KWFormulaFrameSet.cpp:76
+#, c-format
+msgid "Formula %1"
+msgstr "Formule %1"
+
+#: KWFrameDia.cpp:105
+#, c-format
+msgid "Frame Properties for %1"
+msgstr "Prôpietés do cåde po %1"
+
+#: KWFrameDia.cpp:122
+msgid "Frame Properties for New Frame"
+msgstr "Prôpietés do cåde po on novea cåde"
+
+#: KWFrameDia.cpp:140
+msgid "Frames Properties"
+msgstr "Prôpietés des cådes"
+
+#: KWFrameDia.cpp:152
+#, c-format
+msgid "Frame Settings for %1"
+msgstr "Apontiaedjes do cåde po %1"
+
+#: KWFrameDia.cpp:299
+msgid "Frame is a copy of the previous frame"
+msgstr "Li cåde est ene copeye do cåde di dvant"
+
+#: KWFrameDia.cpp:334 KWInsertPicDia.cpp:102
+msgid "Retain original aspect ratio"
+msgstr ""
+
+#: KWFrameDia.cpp:373
+msgid "If Text is Too Long for Frame"
+msgstr "Si l' tecse est trop long pol cåde"
+
+#: KWFrameDia.cpp:377
+msgid "Create a new page"
+msgstr "Ahiver ene novele pådje"
+
+#: KWFrameDia.cpp:385
+msgid "Resize last frame"
+msgstr "Candjî l' grandeu do dierin cåde"
+
+#: KWFrameDia.cpp:393
+msgid "Don't show the extra text"
+msgstr "Èn nén håyner l' tecse di trop"
+
+#: KWFrameDia.cpp:442
+msgid "On New Page Creation"
+msgstr "Å moumint d' ahiver ene nouve pådje"
+
+#: KWFrameDia.cpp:446
+msgid "Reconnect frame to current flow"
+msgstr ""
+
+#: KWFrameDia.cpp:447
+msgid ""
+"<b>Reconnect frame to current flow:</b>"
+"<br/>When a new page is created, a new frame will be created for this frameset, "
+"so that the text can flow from one page to the next if necessary. This is what "
+"happens for the \"main text frameset\", but this option makes it possible to "
+"choose the same behavior for other framesets, for instance in magazine layouts."
+msgstr ""
+
+#: KWFrameDia.cpp:457
+msgid "Do not create a followup frame"
+msgstr ""
+
+#: KWFrameDia.cpp:458
+msgid ""
+"<b>Do not create a followup frame:</b>"
+"<br/>When a new page is created, no frame will be created for this frameset."
+msgstr ""
+
+#: KWFrameDia.cpp:464
+msgid "Place a copy of this frame"
+msgstr "Bouter ene copeye di ci cåde ci"
+
+#: KWFrameDia.cpp:465
+msgid ""
+"<b>Place a copy of this frame:</b>"
+"<br/>When a new page is created, a frame will be created for this frameset, "
+"which will always show the exact same thing as the frame on the previous page. "
+"This is what happens for headers and footers, but this option makes it possible "
+"to choose the same behavior for other framesets, for instance a company logo "
+"and/or title that should appear exactly the same on every page."
+msgstr ""
+
+#: KWFrameDia.cpp:516
+msgid "SideHead Definition"
+msgstr ""
+
+#: KWFrameDia.cpp:521
+msgid "Size (%1):"
+msgstr "Grandeu (%1):"
+
+#: KWFrameDia.cpp:527
+#, fuzzy
+msgid "Gap size (%1):"
+msgstr "Grandeu (%1):"
+
+#: KWFrameDia.cpp:537
+msgid "Closest to Binding"
+msgstr ""
+
+#: KWFrameDia.cpp:538
+msgid "Closest to Page Edge"
+msgstr ""
+
+#: KWFrameDia.cpp:552
+msgid "Changes will be applied to all frames in frameset"
+msgstr ""
+
+#: KWFrameDia.cpp:556
+msgid "Protect content"
+msgstr ""
+
+#: KWFrameDia.cpp:557
+msgid ""
+"<b>Protect content:</b>"
+"<br/>Disallow changes to be made to the contents of the frame(s)."
+msgstr ""
+
+#: KWFrameDia.cpp:610
+msgid "Text Run Around"
+msgstr "Tecse åtoû"
+
+#: KWFrameDia.cpp:615
+msgid "Layout of Text in Other Frames"
+msgstr ""
+
+#: KWFrameDia.cpp:621
+msgid "Text will run &through this frame"
+msgstr ""
+
+#: KWFrameDia.cpp:624
+msgid "Text will run &around the frame"
+msgstr ""
+
+#: KWFrameDia.cpp:627
+msgid "Text will &not run around this frame"
+msgstr ""
+
+#: KWFrameDia.cpp:651
+msgid "Run Around Side"
+msgstr "Tecse åtoû di costé"
+
+#: KWFrameDia.cpp:658
+msgid ""
+"_: Run Around\n"
+"&Left"
+msgstr "&hintche"
+
+#: KWFrameDia.cpp:661
+msgid ""
+"_: Run Around\n"
+"&Right"
+msgstr "&droet"
+
+#: KWFrameDia.cpp:664
+msgid ""
+"_: Run Around\n"
+"Lon&gest side"
+msgstr "li pus &lådje"
+
+#: KWFrameDia.cpp:689
+msgid "Distance Between Frame && Text"
+msgstr ""
+
+#: KWFrameDia.cpp:794
+msgid "Connect Text Frames"
+msgstr "Raloyî les cådes di tecse"
+
+#: KWFrameDia.cpp:802
+msgid "Select existing frameset to connect frame to:"
+msgstr ""
+
+#: KWFrameDia.cpp:812
+msgid "No."
+msgstr "Lº"
+
+#: KWFrameDia.cpp:813
+#, fuzzy
+msgid "Frameset Name"
+msgstr "Cåde di tecse %1"
+
+#: KWFrameDia.cpp:823
+#, fuzzy
+msgid "Create a new frameset"
+msgstr "Ahiver on novea cåde di tecse."
+
+#: KWFrameDia.cpp:835
+#, fuzzy
+msgid "Name of frameset:"
+msgstr "Nombe di cådes:"
+
+#: KWFrameDia.cpp:928 KWTableDia.cpp:98
+msgid "Geometry"
+msgstr "Djeyometreye"
+
+#: KWFrameDia.cpp:931
+msgid "Frame is inline"
+msgstr ""
+
+#: KWFrameDia.cpp:938
+msgid "Protect size and position"
+msgstr ""
+
+#: KWFrameDia.cpp:964 KWFrameDia.cpp:2400
+msgid "Left:"
+msgstr "Hintche:"
+
+#: KWFrameDia.cpp:973 KWFrameDia.cpp:2408
+msgid "Top:"
+msgstr "Copete:"
+
+#: KWFrameDia.cpp:981 KWResizeTableDia.cpp:52
+msgid "Width:"
+msgstr "Lårdjeu:"
+
+#: KWFrameDia.cpp:993
+msgid "Height:"
+msgstr "Hôteu:"
+
+#: KWFrameDia.cpp:1011
+#, fuzzy
+msgid "Margins"
+msgstr "Mådjes (%1)"
+
+#: KWFrameDia.cpp:1087 KWFrameDia.cpp:1148
+msgid "Table is inline"
+msgstr ""
+
+#: KWFrameDia.cpp:1157 KWFrameStyleManager.cpp:606
+msgid "Background"
+msgstr "Fond"
+
+#: KWFrameDia.cpp:1162
+msgid "Set new color on all selected frames"
+msgstr "Mete li nouve coleur dins tos les cådes di tchoezis"
+
+#: KWFrameDia.cpp:1169
+msgid "Transparent background"
+msgstr ""
+
+#: KWFrameDia.cpp:1173 KWFrameStyleManager.cpp:580
+msgid "Background color:"
+msgstr "Coleur di fond:"
+
+#: KWFrameDia.cpp:1188
+msgid "Background style:"
+msgstr "Estîle do fond:"
+
+#: KWFrameDia.cpp:1194
+msgid "No Background Fill"
+msgstr "Èn nén rimpli l' fond"
+
+#: KWFrameDia.cpp:1196
+#, no-c-format
+msgid "100% Fill Pattern"
+msgstr "Motif di rimplixhaedje a 100%"
+
+#: KWFrameDia.cpp:1198
+#, no-c-format
+msgid "94% Fill Pattern"
+msgstr "Motif di rimplixhaedje a 94%"
+
+#: KWFrameDia.cpp:1200
+#, no-c-format
+msgid "88% Fill Pattern"
+msgstr "Motif di rimplixhaedje a 88%"
+
+#: KWFrameDia.cpp:1202
+#, no-c-format
+msgid "63% Fill Pattern"
+msgstr "Motif di rimplixhaedje a 63%"
+
+#: KWFrameDia.cpp:1204
+#, no-c-format
+msgid "50% Fill Pattern"
+msgstr "Motif di rimplixhaedje a 50%"
+
+#: KWFrameDia.cpp:1206
+#, no-c-format
+msgid "37% Fill Pattern"
+msgstr "Motif di rimplixhaedje a 37%"
+
+#: KWFrameDia.cpp:1208
+#, no-c-format
+msgid "12% Fill Pattern"
+msgstr "Motif di rimplixhaedje a 12%"
+
+#: KWFrameDia.cpp:1210
+#, no-c-format
+msgid "6% Fill Pattern"
+msgstr "Motif di rimplixhaedje a 6%"
+
+#: KWFrameDia.cpp:1211
+msgid "Horizontal Lines"
+msgstr "Royes di coûtchî"
+
+#: KWFrameDia.cpp:1212
+msgid "Vertical Lines"
+msgstr "Royes d' astampé"
+
+#: KWFrameDia.cpp:1213
+#, fuzzy
+msgid "Crossing Lines"
+msgstr "Royes di coûtchî"
+
+#: KWFrameDia.cpp:1214
+#, fuzzy
+msgid "Diagonal Lines ( / )"
+msgstr "Royes di coûtchî"
+
+#: KWFrameDia.cpp:1215
+#, fuzzy
+msgid "Diagonal Lines ( \\ )"
+msgstr "Royes di coûtchî"
+
+#: KWFrameDia.cpp:1216
+msgid "Diagonal Crossing Lines"
+msgstr ""
+
+#: KWFrameDia.cpp:1233
+#, fuzzy
+msgid "&Borders"
+msgstr "Boirdeures"
+
+#: KWFrameDia.cpp:1237
+#, fuzzy
+msgid "St&yle:"
+msgstr "Stîle:"
+
+#: KWFrameDia.cpp:1259
+#, fuzzy
+msgid "Co&lor:"
+msgstr "&Pôrt:"
+
+#: KWFrameDia.cpp:1292 KWFrameStyleManager.cpp:237 KWTableStyleManager.cpp:276
+#: KWTableTemplateSelector.cpp:571
+msgid "Preview"
+msgstr "Vey divant"
+
+#: KWFrameDia.cpp:1811 KWFrameDia.cpp:1814
+#, fuzzy
+msgid "Rename Frameset"
+msgstr "Mwaisse cåde di tecse"
+
+#: KWFrameDia.cpp:1858
+msgid ""
+"A new frameset with the name '%1' can not be made because a frameset with that "
+"name already exists. Please enter another name or select an existing frameset "
+"from the list."
+msgstr ""
+
+#: KWFrameDia.cpp:1864
+msgid ""
+"A frameset with the name '%1' already exists. Please enter another name."
+msgstr ""
+
+#: KWFrameDia.cpp:1915 KWFrameDia.cpp:1916 KWFrameDia.cpp:1933
+#: KWFrameDia.cpp:1934 KWView.cpp:4400 KWView.cpp:4402
+msgid "Protect Content"
+msgstr ""
+
+#: KWFrameDia.cpp:1978 KWFrameDia.cpp:1992 KWFrameDia.cpp:2131
+msgid "Frame Properties"
+msgstr "Prôpietés do cåde"
+
+#: KWFrameDia.cpp:2110 KWFrameDia.cpp:2223
+msgid ""
+"The frame will not be resized because the new size would be greater than the "
+"size of the page."
+msgstr ""
+
+#: KWFrameDia.cpp:2154 KWView.cpp:6118 KWView.cpp:6124
+#, fuzzy
+msgid "Make Frameset Inline"
+msgstr "Mwaisse cåde di tecse"
+
+#: KWFrameDia.cpp:2178 KWView.cpp:6138
+msgid "Make Frameset Non-Inline"
+msgstr ""
+
+#: KWFrameDia.cpp:2188
+#, fuzzy
+msgid "Protect Size"
+msgstr "Prôpietés do cåde"
+
+#: KWFrameDia.cpp:2234 KWFrameDia.cpp:2235
+#, fuzzy
+msgid "Change Margin Frame"
+msgstr "Candjî l' boirdeure do dzeu do cåde"
+
+#: KWFrameDia.cpp:2265 KWFrameDia.cpp:2282 KWFrameDia.cpp:2299
+#: KWFrameDia.cpp:2316
+msgid "Change Border"
+msgstr "Candjî l' boirdeure"
+
+#: KWFrameDia.cpp:2266
+msgid "Change Left Border Frame"
+msgstr "Candjî l' boirdeure di hintche do cåde"
+
+#: KWFrameDia.cpp:2283
+msgid "Change Right Border Frame"
+msgstr "Candjî l' boirdeure di droete do cåde"
+
+#: KWFrameDia.cpp:2300
+msgid "Change Top Border Frame"
+msgstr "Candjî l' boirdeure do dzeu do cåde"
+
+#: KWFrameDia.cpp:2317
+msgid "Change Bottom Border Frame"
+msgstr "Candjî l' boirdeure do dzo do cåde"
+
+#: KWFrameDia.cpp:2375
+msgid ""
+"You are about to m_reconnect the last frame of the frameset '%1'. The contents "
+"of this frameset will be deleted.\n"
+"Are you sure you want to do that?"
+msgstr ""
+
+#: KWFrameDia.cpp:2379
+#, fuzzy
+msgid "Reconnect Frame"
+msgstr "Raloyî les cådes di tecse"
+
+#: KWFrameDia.cpp:2379
+msgid "&Reconnect"
+msgstr ""
+
+#: KWFrameDia.cpp:2395
+msgid "Synchronize changes"
+msgstr "Sincronijhî les candjmints"
+
+#: KWFrameDia.cpp:2396
+msgid ""
+"<b>Synchronize changes:</b>"
+"<br/>When this is checked any change in margins will be used for all "
+"directions."
+msgstr ""
+
+#: KWFrameDia.cpp:2418
+msgid "Right:"
+msgstr "Droete:"
+
+#: KWFrameDia.cpp:2427
+msgid "Bottom:"
+msgstr "Valeye:"
+
+#: KWFrameStyleManager.cpp:133
+msgid "Frame Style Manager"
+msgstr "Manaedjeu di stîle des cådes"
+
+#: KWFrameStyleManager.cpp:160 KWTableStyleManager.cpp:203
+#, fuzzy
+msgid "Import From File..."
+msgstr "Abaguer stîle..."
+
+#: KWFrameStyleManager.cpp:262 KWStatisticsDialog.cpp:53
+msgid "General"
+msgstr "Djenerå"
+
+#: KWFrameStyleManager.cpp:386
+msgid "New Framestyle Template (%1)"
+msgstr ""
+
+#: KWFrameView.cpp:380
+msgid "Go to Footnote"
+msgstr "Aler al pînote"
+
+#: KWFrameView.cpp:380
+msgid "Go to Endnote"
+msgstr "Aler al pînote do documint"
+
+#: KWImportStyleDia.cpp:59 KWImportStyleDia.cpp:68 KWImportStyleDia.cpp:150
+#: KWImportStyleDia.cpp:162 KWImportStyleDia.cpp:172 KWImportStyleDia.cpp:215
+#: KWImportStyleDia.cpp:224 KWImportStyleDia.cpp:264 KWImportStyleDia.cpp:276
+#, fuzzy
+msgid "Import Style"
+msgstr "Abaguer stîle..."
+
+#: KWImportStyleDia.cpp:67 KWImportStyleDia.cpp:223 KWView.cpp:6659
+msgid "File name is empty."
+msgstr "Li no do fitchî est vude"
+
+#: KWImportStyleDia.cpp:149 KWImportStyleDia.cpp:263
+msgid "File does not contain any styles. It may be the wrong version."
+msgstr ""
+
+#: KWImportStyleDia.cpp:161 KWImportStyleDia.cpp:275 KWView.cpp:6685
+msgid "This file is not a KWord file!"
+msgstr ""
+
+#: KWImportStyleDia.cpp:177
+msgid "Select style to import:"
+msgstr ""
+
+#: KWInsertDia.cpp:33 KWTableDia.cpp:278 KWView.cpp:4188
+msgid "Insert Row"
+msgstr "Sititchî Roye"
+
+#: KWInsertDia.cpp:33 KWTableDia.cpp:308 KWView.cpp:4226
+msgid "Insert Column"
+msgstr "Sititchî colone"
+
+#: KWInsertDia.cpp:47
+msgid "Insert New Row"
+msgstr "Sititchî Colone"
+
+#: KWInsertDia.cpp:47
+msgid "Insert New Column"
+msgstr "Sititchî Novele Colone"
+
+#: KWInsertDia.cpp:51 KWInsertPageDia.cpp:39
+msgid "Before"
+msgstr "Divant"
+
+#: KWInsertDia.cpp:55 KWInsertPageDia.cpp:38
+msgid "After"
+msgstr "Drî"
+
+#: KWInsertDia.cpp:64
+msgid "Row:"
+msgstr "Roye:"
+
+#: KWInsertDia.cpp:64 KWResizeTableDia.cpp:45
+msgid "Column:"
+msgstr "Colone:"
+
+#: KWInsertPicDia.cpp:88
+msgid "Insert Picture"
+msgstr "Sititchî Imådje"
+
+#: KWInsertPicDia.cpp:95
+msgid "Choose &Picture..."
+msgstr "Tchoezi &imådje..."
+
+#: KWInsertPicDia.cpp:99
+#, fuzzy
+msgid "Insert picture inline"
+msgstr "Sititchî Imådje"
+
+#: KWInsertPicDia.cpp:155
+msgid "Choose Picture"
+msgstr "Tchoezi imådje"
+
+#: KWInsertTOCCommand.cpp:51
+msgid "Table of Contents"
+msgstr "Tåve di l' Ådvins"
+
+#: KWMailMergeDataBase.cpp:132
+msgid "No plugins supporting the requested action were found."
+msgstr ""
+
+#: KWMailMergeDataBase.cpp:250
+#, fuzzy
+msgid "Do you really want to replace the current datasource?"
+msgstr "Voloz disfacer ci cåde ci?"
+
+#: KWMailMergeDataBase.cpp:327 KWMailMergeDataBase.cpp:385
+msgid "Mail Merge Setup"
+msgstr ""
+
+#: KWMailMergeDataBase.cpp:333
+msgid "&Available sources:"
+msgstr ""
+
+#: KWMailMergeDataBase.cpp:396
+msgid "Datasource:"
+msgstr ""
+
+#: KWMailMergeDataBase.cpp:403
+#, fuzzy
+msgid "Edit Current..."
+msgstr "Candjî l' rawete..."
+
+#: KWMailMergeDataBase.cpp:404
+#, fuzzy
+msgid "Create New..."
+msgstr "Ahiver ene tåve."
+
+#: KWMailMergeDataBase.cpp:405
+msgid "Open Existing..."
+msgstr ""
+
+#: KWMailMergeDataBase.cpp:410
+#, fuzzy
+msgid "Merging:"
+msgstr "Mådjes (%1)"
+
+#: KWMailMergeDataBase.cpp:416
+msgid "Print Preview..."
+msgstr "Vey divant d' imprimer..."
+
+#: KWMailMergeDataBase.cpp:417
+msgid "Create New Document"
+msgstr "Ahiver novea documint"
+
+#: KWMailMergeDataBase.cpp:512
+msgid "Mail Merge - Variable Name"
+msgstr ""
+
+#: KWOasisLoader.cpp:174
+#, fuzzy
+msgid "Header"
+msgstr "Mostrer l' tiestire"
+
+#: KWOasisLoader.cpp:178
+#, fuzzy
+msgid "Footer"
+msgstr "Pînote"
+
+#: KWOasisLoader.cpp:343
+#, fuzzy
+msgid "Unnamed Table"
+msgstr "Ahiver tåve"
+
+#: KWPartFrameSet.cpp:44
+#, fuzzy, c-format
+msgid "Object %1"
+msgstr "Cå&de po on Cayet"
+
+#: KWPartFrameSet.cpp:191
+msgid "Move/Resize Frame"
+msgstr "Bodjî ou candjî l' grandeu do cåde"
+
+#: KWPartFrameSet.cpp:297
+#, fuzzy
+msgid "Make Document External"
+msgstr "Prémetowes valixhances des documints"
+
+#: KWPartFrameSet.cpp:303
+#, fuzzy
+msgid "Make Document Internal"
+msgstr "Prémetowes valixhances des documints"
+
+#: KWPictureFrameSet.cpp:39
+#, c-format
+msgid "Picture %1"
+msgstr "Imådje %1"
+
+#: KWResizeTableDia.cpp:34
+msgid "Reset"
+msgstr ""
+
+#: KWSortDia.cpp:31
+msgid "Sort Text"
+msgstr "Relére li tecse"
+
+#: KWSortDia.cpp:35
+msgid "Sort"
+msgstr "Relére"
+
+#: KWSortDia.cpp:38
+#, fuzzy
+msgid "Increase"
+msgstr "Ritrait pus grand"
+
+#: KWSortDia.cpp:39
+#, fuzzy
+msgid "Decrease"
+msgstr "Ritrait pus ptit"
+
+#: KWSplitCellDia.cpp:31
+#, fuzzy
+msgid "Split Cell"
+msgstr "Dispårti Boesses"
+
+#: KWSplitCellDia.cpp:41 KWTableDia.cpp:102
+msgid "Number of rows:"
+msgstr "Nombe di royes:"
+
+#: KWSplitCellDia.cpp:48 KWTableDia.cpp:109
+msgid "Number of columns:"
+msgstr "Nombe di colones:"
+
+#: KWStatisticsDialog.cpp:30 KWStatisticsDialog.cpp:231
+#: KWStatisticsDialog.cpp:290 KWView.cpp:555
+msgid "Statistics"
+msgstr "Sitatistikes"
+
+#: KWStatisticsDialog.cpp:60
+msgid "Text"
+msgstr "Tecse"
+
+#: KWStatisticsDialog.cpp:66
+msgid "Selected Text"
+msgstr "Tecse di tchoezi"
+
+#: KWStatisticsDialog.cpp:178
+msgid "Counting..."
+msgstr "Dji conte..."
+
+#: KWStatisticsDialog.cpp:212 KWStatisticsDialog.cpp:301
+#, c-format
+msgid "approximately %1"
+msgstr "a pô près %1"
+
+#: KWStatisticsDialog.cpp:241
+msgid "Number of pages:"
+msgstr "Nombe di pådjes:"
+
+#: KWStatisticsDialog.cpp:246
+msgid "Number of frames:"
+msgstr "Nombe di cådes:"
+
+#: KWStatisticsDialog.cpp:251
+msgid "Number of pictures:"
+msgstr "Nombe d' imådjes:"
+
+#: KWStatisticsDialog.cpp:257
+msgid "Number of tables:"
+msgstr "Nombe di tåves:"
+
+#: KWStatisticsDialog.cpp:262
+#, fuzzy
+msgid "Number of embedded objects:"
+msgstr "Ravalés objets"
+
+#: KWStatisticsDialog.cpp:267
+#, fuzzy
+msgid "Number of formula frameset:"
+msgstr "Nombe di cådes:"
+
+#: KWStatisticsDialog.cpp:284
+msgid "&Include text from foot- and endnotes"
+msgstr ""
+
+#: KWStatisticsDialog.cpp:304
+msgid "Characters including spaces:"
+msgstr "Caracteres, tot contant les vudes:"
+
+#: KWStatisticsDialog.cpp:309
+msgid "Characters without spaces:"
+msgstr "Caracteres, sins conter les vudes:"
+
+#: KWStatisticsDialog.cpp:314
+msgid "Syllables:"
+msgstr "Sillabes:"
+
+#: KWStatisticsDialog.cpp:319
+msgid "Words:"
+msgstr "Mots:"
+
+#: KWStatisticsDialog.cpp:324
+msgid "Sentences:"
+msgstr "Fråzes:"
+
+#: KWStatisticsDialog.cpp:329
+msgid "Lines:"
+msgstr "Royes:"
+
+#: KWStatisticsDialog.cpp:335
+msgid "Flesch reading ease:"
+msgstr ""
+
+#: KWTableDia.cpp:74
+msgid "Table Settings"
+msgstr "Apontiaedjes del tåve"
+
+#: KWTableDia.cpp:119
+msgid "Cell heights:"
+msgstr "Hôteu des boesses:"
+
+#: KWTableDia.cpp:123 KWTableDia.cpp:132
+msgid "Automatic"
+msgstr "Tot seu"
+
+#: KWTableDia.cpp:124 KWTableDia.cpp:133
+msgid "Manual"
+msgstr "Al mwin"
+
+#: KWTableDia.cpp:128
+msgid "Cell widths:"
+msgstr "Lårdjeu des boesses:"
+
+#: KWTableDia.cpp:151
+msgid "The table is &inline"
+msgstr ""
+
+#: KWTableDia.cpp:162 KWTableDia.cpp:231
+msgid "Reapply template to table"
+msgstr ""
+
+#: KWTableDia.cpp:222
+msgid "Templates"
+msgstr "Modeles"
+
+#: KWTableDia.cpp:271
+msgid "Add New Rows to Table"
+msgstr "Radjouter novelès royes al tåve"
+
+#: KWTableDia.cpp:271
+msgid "Remove Rows From Table"
+msgstr "Oister royes foû del tåve"
+
+#: KWTableDia.cpp:275 KWView.cpp:4109
+msgid "Remove Row"
+msgstr "Oister roye"
+
+#: KWTableDia.cpp:300
+msgid "Add New Columns to Table"
+msgstr "Radjouter novelès colones al tåve"
+
+#: KWTableDia.cpp:300
+msgid "Remove Columns From Table"
+msgstr "Oister colones foû del tåve"
+
+#: KWTableDia.cpp:305 KWView.cpp:4135
+msgid "Remove Column"
+msgstr "Oister colone"
+
+#: KWTableDia.cpp:321 KWTableDia.cpp:322
+msgid "Apply Template to Table"
+msgstr ""
+
+#: KWTableFrameSet.cpp:65
+#, c-format
+msgid "Table %1"
+msgstr "Tåve %1"
+
+#: KWTableFrameSet.cpp:1274 KWView.cpp:4300
+msgid "Join Cells"
+msgstr "Rifonde Boesses"
+
+#: KWTableFrameSet.cpp:1412 KWView.cpp:4325 KWView.cpp:4334
+msgid "Split Cells"
+msgstr "Dispårti Boesses"
+
+#: KWTableFrameSet.cpp:2331
+msgid ""
+"_: Hello dear translator :), 1 is the table name, 2 and 3 are row and column\n"
+"%1 Cell %2,%3"
+msgstr ""
+
+#: KWTableStyleManager.cpp:187
+msgid "Table Style Manager"
+msgstr "Manaedjeu di stîle des tåves"
+
+#: KWTableStyleManager.cpp:276
+msgid "Tablestyles preview"
+msgstr ""
+
+#: KWTableStyleManager.cpp:294
+msgid "Adjust"
+msgstr ""
+
+#: KWTableStyleManager.cpp:300
+#, fuzzy
+msgid "Framestyle:"
+msgstr "&Cådes"
+
+#: KWTableStyleManager.cpp:304
+#, fuzzy
+msgid "Textstyle:"
+msgstr "Stîle:"
+
+#: KWTableStyleManager.cpp:315 KWTableStyleManager.cpp:319
+msgid "Change..."
+msgstr "Candjî..."
+
+#: KWTableStyleManager.cpp:414
+msgid "New Tablestyle Template (%1)"
+msgstr ""
+
+#: KWTableTemplateSelector.cpp:564
+msgid "&Customize"
+msgstr "A vosse &môde"
+
+#: KWTableTemplateSelector.cpp:574
+msgid "Apply To"
+msgstr ""
+
+#: KWTableTemplateSelector.cpp:576
+msgid "First row"
+msgstr "Prumire roye"
+
+#: KWTableTemplateSelector.cpp:577
+msgid "Last row"
+msgstr "Dierinne roye"
+
+#: KWTableTemplateSelector.cpp:578
+msgid "Body"
+msgstr "Coir"
+
+#: KWTableTemplateSelector.cpp:579
+msgid "First column"
+msgstr "Prumire colone"
+
+#: KWTableTemplateSelector.cpp:580
+msgid "Last column"
+msgstr "Dierinne colone"
+
+#: KWTextFrameSet.cpp:1330 KWTextParag.cpp:77
+#, fuzzy
+msgid "--- Frame Break ---"
+msgstr "Côpaedje do Cåde C&hal"
+
+#: KWTextFrameSet.cpp:2541
+msgid "Change Paragraph Attribute"
+msgstr ""
+
+#: KWTextFrameSet.cpp:2579
+msgid "Insert Table of Contents"
+msgstr "Sititchî tåve di l' ådvins"
+
+#: KWTextFrameSet.cpp:2626
+msgid "Insert Break After Paragraph"
+msgstr ""
+
+#: KWTextFrameSet.cpp:2900
+#, c-format
+msgid "Endnote %1"
+msgstr "Pînote di documint %1"
+
+#: KWTextFrameSet.cpp:2900
+#, c-format
+msgid "Footnote %1"
+msgstr "Pînote %1"
+
+#: KWTextFrameSet.cpp:3561
+#, fuzzy
+msgid "Move Text"
+msgstr "Relére li tecse"
+
+#: KWTextFrameSet.cpp:3718 KWTextFrameSet.cpp:3720
+msgid "Insert Expression"
+msgstr "Sititchî ratourneure"
+
+#: KWTextFrameSet.cpp:3843
+msgid "Insert Variable"
+msgstr "Sititchî variåve"
+
+#: KWVariable.cpp:437
+msgid "ERROR"
+msgstr "AROKE"
+
+#: KWVariable.cpp:485
+msgid "Footnote"
+msgstr "Pînote"
+
+#: KWVariable.cpp:485
+msgid "Endnote"
+msgstr "Pînote di documint"
+
+#: KWView.cpp:549
+msgid "&Create Template From Document..."
+msgstr "&Fé on modele a pårti di ci documint ci..."
+
+#: KWView.cpp:552
+msgid "Save this document and use it later as a template"
+msgstr ""
+
+#: KWView.cpp:553
+msgid ""
+"You can save this document as a template."
+"<br>"
+"<br>You can use this new template as a starting point for another document."
+msgstr ""
+
+#: KWView.cpp:556
+msgid "Sentence, word and letter counts for this document"
+msgstr ""
+
+#: KWView.cpp:557
+msgid ""
+"Information on the number of letters, words, syllables and sentences for this "
+"document."
+"<p>Evaluates readability using the Flesch reading score."
+msgstr ""
+
+#: KWView.cpp:567
+#, fuzzy
+msgid "Select All Frames"
+msgstr "Disfacer cådes"
+
+#: KWView.cpp:568
+#, fuzzy
+msgid "Select Frame"
+msgstr "Disfacer Cåde"
+
+#: KWView.cpp:572
+msgid "Delete Page"
+msgstr "Disfacer pådje"
+
+#: KWView.cpp:577
+#, fuzzy
+msgid "Configure Mai&l Merge..."
+msgstr "Apontyî l' c&ompletaedje..."
+
+#: KWView.cpp:582
+msgid "Drag Mail Merge Variable"
+msgstr ""
+
+#: KWView.cpp:588
+msgid "&Delete Frame"
+msgstr "&Disfacer Cåde"
+
+#: KWView.cpp:591 KWView.cpp:592
+msgid "Delete the currently selected frame(s)."
+msgstr "Disfacer les cåde(s) di tchoezi(s) pol moumint."
+
+#: KWView.cpp:594 KWView.cpp:2799
+#, fuzzy
+msgid "Create Linked Copy"
+msgstr "Ahiver ene novele pådje"
+
+#: KWView.cpp:595
+msgid "Create a copy of the current frame, always showing the same contents"
+msgstr ""
+
+#: KWView.cpp:596
+msgid ""
+"Create a copy of the current frame, that remains linked to it. This means they "
+"always show the same contents: modifying the contents in such a frame will "
+"update all its linked copies."
+msgstr ""
+
+#: KWView.cpp:598
+#, fuzzy
+msgid "Ra&ise Frame"
+msgstr "Candjî l' grandeu do cåde"
+
+#: KWView.cpp:601
+msgid ""
+"Raise the currently selected frame so that it appears above all the other "
+"frames"
+msgstr ""
+
+#: KWView.cpp:602
+msgid ""
+"Raise the currently selected frame so that it appears above all the other "
+"frames. This is only useful if frames overlap each other. If multiple frames "
+"are selected they are all raised in turn."
+msgstr ""
+
+#: KWView.cpp:604
+#, fuzzy
+msgid "&Lower Frame"
+msgstr "Bodjî l' cåde"
+
+#: KWView.cpp:607
+msgid ""
+"Lower the currently selected frame so that it disappears under any frame that "
+"overlaps it"
+msgstr ""
+
+#: KWView.cpp:608
+msgid ""
+"Lower the currently selected frame so that it disappears under any frame that "
+"overlaps it. If multiple frames are selected they are all lowered in turn."
+msgstr ""
+
+#: KWView.cpp:610 KWView.cpp:2548
+#, fuzzy
+msgid "Bring to Front"
+msgstr "Candjî l' fonte do tecse"
+
+#: KWView.cpp:614 KWView.cpp:2552
+msgid "Send to Back"
+msgstr ""
+
+#: KWView.cpp:620
+msgid "Text Mode"
+msgstr "Môde tecse"
+
+#: KWView.cpp:623
+#, fuzzy
+msgid "Only show the text of the document."
+msgstr "Èn nén håyner l' tecse di trop"
+
+#: KWView.cpp:624
+msgid ""
+"Do not show any pictures, formatting or layout. KWord will display only the "
+"text for editing."
+msgstr ""
+
+#: KWView.cpp:627
+msgid "&Page Mode"
+msgstr "Môde &pådje"
+
+#: KWView.cpp:630
+msgid ""
+"Switch to page mode."
+"<br>"
+"<br> Page mode is designed to make editing your text easy."
+"<br>"
+"<br>This function is most frequently used to return to text editing after "
+"switching to preview mode."
+msgstr ""
+
+#: KWView.cpp:631
+msgid "Switch to page editing mode."
+msgstr ""
+
+#: KWView.cpp:635
+#, fuzzy
+msgid "Pre&view Mode"
+msgstr "Vey divant"
+
+#: KWView.cpp:638
+msgid ""
+"Zoom out from your document to get a look at several pages of your document."
+"<br>"
+"<br>The number of pages per line can be customized."
+msgstr ""
+
+#: KWView.cpp:639
+msgid "Zoom out to a multiple page view."
+msgstr ""
+
+#: KWView.cpp:643
+msgid "&Formatting Characters"
+msgstr "Caracteres po l' &Metaedje è Pådje"
+
+#: KWView.cpp:646
+msgid "Toggle the display of non-printing characters."
+msgstr "Discandjî li håynaedje des caracteres di controle nén veyåves."
+
+#: KWView.cpp:647
+msgid ""
+"Toggle the display of non-printing characters."
+"<br>"
+"<br>When this is enabled, KWord shows you tabs, spaces, carriage returns and "
+"other non-printing characters."
+msgstr ""
+"Discandjî li håynaedje des caracteres di controle nén veyåves. "
+"<br>"
+"<br> Cwand çouchal est metou, KWord mostere les tabulåcions, les féns d' roye "
+"et d' ôtes caracteres di controle normålmint nén veyåves."
+
+#: KWView.cpp:649
+msgid "Frame &Borders"
+msgstr "&Boirdeure des Cådes"
+
+#: KWView.cpp:652
+msgid "Turns the border display on and off."
+msgstr ""
+
+#: KWView.cpp:653
+msgid ""
+"Turns the border display on and off."
+"<br>"
+"<br>The borders are never printed. This option is useful to see how the "
+"document will appear on the printed page."
+msgstr ""
+
+#: KWView.cpp:655
+msgid "Enable Document &Headers"
+msgstr ""
+
+#: KWView.cpp:658
+msgid "Disable Document &Headers"
+msgstr ""
+
+#: KWView.cpp:659
+#, fuzzy
+msgid "Shows and hides header display."
+msgstr "Mostrer les rîles"
+
+#: KWView.cpp:660
+msgid ""
+"Selecting this option toggles the display of headers in KWord."
+"<br>"
+"<br>Headers are special frames at the top of each page which can contain page "
+"numbers or other information."
+msgstr ""
+
+#: KWView.cpp:662
+msgid "Enable Document Foo&ters"
+msgstr ""
+
+#: KWView.cpp:665
+msgid "Disable Document Foo&ters"
+msgstr ""
+
+#: KWView.cpp:666
+#, fuzzy
+msgid "Shows and hides footer display."
+msgstr "Mostrer les rîles"
+
+#: KWView.cpp:667
+msgid ""
+"Selecting this option toggles the display of footers in KWord. "
+"<br>"
+"<br>Footers are special frames at the bottom of each page which can contain "
+"page numbers or other information."
+msgstr ""
+
+#: KWView.cpp:678
+msgid "Sp&ecial Character..."
+msgstr "Caract&ere Especiå..."
+
+#: KWView.cpp:682 KWView.cpp:683
+msgid "Insert one or more symbols or letters not found on the keyboard."
+msgstr ""
+
+#: KWView.cpp:689
+#, fuzzy
+msgid "Page Break"
+msgstr "&Pådje"
+
+#: KWView.cpp:690
+msgid "Force the remainder of the text into the next page."
+msgstr ""
+
+#: KWView.cpp:691
+msgid ""
+"This inserts a non-printing character at the current cursor position. All text "
+"after this point will be moved into the next page."
+msgstr ""
+
+#: KWView.cpp:693
+msgid "&Hard Frame Break"
+msgstr "Côpaedje do Cåde C&hal"
+
+#: KWView.cpp:694
+msgid "Force the remainder of the text into the next frame."
+msgstr ""
+
+#: KWView.cpp:695
+msgid ""
+"This inserts a non-printing character at the current cursor position. All text "
+"after this point will be moved into the next frame in the frameset."
+msgstr ""
+
+#: KWView.cpp:698
+msgid "Page..."
+msgstr "Pådje..."
+
+#: KWView.cpp:702
+msgid "Link..."
+msgstr "Loyén..."
+
+#: KWView.cpp:705 KWView.cpp:706
+msgid "Insert a Web address, email address or hyperlink to a file."
+msgstr ""
+"Sititchîz ene hårdêye waibe, adresse emile ou loyén viè on fitchî locå."
+
+#: KWView.cpp:708
+msgid "Comment..."
+msgstr "Rawete..."
+
+#: KWView.cpp:711
+msgid "Insert a comment about the selected text."
+msgstr ""
+
+#: KWView.cpp:712
+msgid ""
+"Insert a comment about the selected text. These comments are not designed to "
+"appear on the final page."
+msgstr ""
+
+#: KWView.cpp:714
+msgid "Edit Comment..."
+msgstr "Candjî l' rawete..."
+
+#: KWView.cpp:717 KWView.cpp:718
+msgid "Change the content of a comment."
+msgstr "Candjî l' tecse di rawete."
+
+#: KWView.cpp:720
+msgid "Remove Comment"
+msgstr "Oister rawete"
+
+#: KWView.cpp:723 KWView.cpp:724
+msgid "Remove the selected document comment."
+msgstr "Oister li tchoezeye rawete do documint."
+
+#: KWView.cpp:725
+msgid "Copy Text of Comment..."
+msgstr "Copyî tecse del rawete..."
+
+#: KWView.cpp:730
+#, fuzzy
+msgid "&Footnote/Endnote..."
+msgstr "&Pînote..."
+
+#: KWView.cpp:733 KWView.cpp:734
+msgid "Insert a footnote referencing the selected text."
+msgstr ""
+
+#: KWView.cpp:736 KWView.cpp:3582
+msgid "Table of &Contents"
+msgstr "Tåve di l' Å&dvins"
+
+#: KWView.cpp:739 KWView.cpp:740
+#, fuzzy
+msgid "Insert table of contents at the current cursor position."
+msgstr "Candjî l' tecse del pînote tchoezeye pol moumint."
+
+#: KWView.cpp:743
+msgid "&Variable"
+msgstr "&Variåve"
+
+#: KWView.cpp:747
+#, fuzzy
+msgid "Document &Information"
+msgstr "Prémetowes valixhances des documints"
+
+#: KWView.cpp:748
+msgid "&Date"
+msgstr "&Date"
+
+#: KWView.cpp:749
+msgid "&Time"
+msgstr "E&ure"
+
+#: KWView.cpp:750
+msgid "&Page"
+msgstr "&Pådje"
+
+#: KWView.cpp:751
+#, fuzzy
+msgid "&Statistic"
+msgstr "Sitatistikes"
+
+#: KWView.cpp:753 KWView.cpp:1544
+msgid "&Custom"
+msgstr "A vosse &Môde"
+
+#: KWView.cpp:762
+msgid "&Refresh All Variables"
+msgstr "&Rafrister totes les variåves"
+
+#: KWView.cpp:765
+msgid "Update all variables to current values."
+msgstr ""
+
+#: KWView.cpp:766
+msgid ""
+"Update all variables in the document to current values."
+"<br>"
+"<br>This will update page numbers, dates or any other variables that need "
+"updating."
+msgstr ""
+
+#: KWView.cpp:770
+msgid "&Expression"
+msgstr "Ra&tourneure"
+
+#: KWView.cpp:774
+msgid "Te&xt Frame"
+msgstr "Cåde di Te&cse"
+
+#: KWView.cpp:777 KWView.cpp:778
+msgid "Create a new text frame."
+msgstr "Ahiver on novea cåde di tecse."
+
+#: KWView.cpp:781
+msgid "For&mula"
+msgstr "For&mule"
+
+#: KWView.cpp:784 KWView.cpp:785
+msgid "Insert a formula into a new frame."
+msgstr "Sititchî ene formule en on novea cåde."
+
+#: KWView.cpp:787
+msgid "&Table..."
+msgstr "&Tåve..."
+
+#: KWView.cpp:791
+msgid "Create a table."
+msgstr "Ahiver ene tåve."
+
+#: KWView.cpp:792
+msgid ""
+"Create a table."
+"<br>"
+"<br>The table can either exist in a frame of its own or inline."
+msgstr ""
+
+#: KWView.cpp:794
+msgid "P&icture..."
+msgstr "&Imådje..."
+
+#: KWView.cpp:798
+msgid "Create a new frame for a picture."
+msgstr "Ahiver on novea cåde po ene imådje."
+
+#: KWView.cpp:799
+#, fuzzy
+msgid "Create a new frame for a picture or diagram."
+msgstr "Ahiver on novea cåde po ene imådje."
+
+#: KWView.cpp:802
+msgid "&Object Frame"
+msgstr "Cå&de po on Cayet"
+
+#: KWView.cpp:805 KWView.cpp:806
+#, fuzzy
+msgid "Insert an object into a new frame."
+msgstr "Sititchî ene formule en on novea cåde."
+
+#: KWView.cpp:808
+msgid "Fi&le..."
+msgstr "&Fitchî..."
+
+#: KWView.cpp:814
+msgid "&Font..."
+msgstr "&Fonte..."
+
+#: KWView.cpp:817
+msgid "Change character size, font, boldface, italics etc."
+msgstr ""
+
+#: KWView.cpp:818
+#, fuzzy
+msgid "Change the attributes of the currently selected characters."
+msgstr "Candjî l' tecse del pînote tchoezeye pol moumint."
+
+#: KWView.cpp:820
+msgid "&Paragraph..."
+msgstr "&Hagnon..."
+
+#: KWView.cpp:823
+msgid "Change paragraph margins, text flow, borders, bullets, numbering etc."
+msgstr ""
+
+#: KWView.cpp:824
+msgid ""
+"Change paragraph margins, text flow, borders, bullets, numbering etc."
+"<p>Select text in multiple paragraphs to change the formatting of all selected "
+"paragraphs."
+"<p>If no text is selected, the paragraph where the cursor is located will be "
+"changed."
+msgstr ""
+
+#: KWView.cpp:826
+#, fuzzy
+msgid "F&rame/Frameset Properties"
+msgstr "Prôpietés &cåde/eshonna di cådes..."
+
+#: KWView.cpp:829
+#, fuzzy
+msgid "Alter frameset properties."
+msgstr "Prôpietés des cådes"
+
+#: KWView.cpp:830
+msgid ""
+"Alter frameset properties."
+"<p>Currently you can change the frame background."
+msgstr ""
+
+#: KWView.cpp:832
+msgid "Page &Layout..."
+msgstr "&Arindjmint del pådje..."
+
+#: KWView.cpp:835
+#, fuzzy
+msgid "Change properties of entire page."
+msgstr "Prôpietés do cåde po on novea cåde"
+
+#: KWView.cpp:836
+msgid ""
+"Change properties of the entire page."
+"<p>Currently you can change paper size, paper orientation, header and footer "
+"sizes, and column settings."
+msgstr ""
+
+#: KWView.cpp:839
+#, fuzzy
+msgid "&Frame Style Manager"
+msgstr "Manaedjeu di stîle des cådes"
+
+#: KWView.cpp:842
+msgid "Change attributes of framestyles."
+msgstr "Candjî les atributs di stîle des cådes."
+
+#: KWView.cpp:843
+msgid ""
+"Change background and borders of framestyles."
+"<p>Multiple framestyles can be changed using the dialog box."
+msgstr ""
+
+#: KWView.cpp:846
+#, fuzzy
+msgid "&Style Manager"
+msgstr "Manaedjeu des &stîles"
+
+#: KWView.cpp:849
+#, fuzzy
+msgid "Change attributes of styles."
+msgstr "Candjî les atributs di stîle des cådes."
+
+#: KWView.cpp:850
+msgid ""
+"Change font and paragraph attributes of styles."
+"<p>Multiple styles can be changed using the dialog box."
+msgstr ""
+
+#: KWView.cpp:857
+msgid "Increase Font Size"
+msgstr "Ragrandi l' fonte"
+
+#: KWView.cpp:858
+msgid "Decrease Font Size"
+msgstr "Raptiti l' fonte"
+
+#: KWView.cpp:862 KWView.cpp:865
+msgid "Font Family"
+msgstr "Famile del Fonte"
+
+#: KWView.cpp:871 KWView.cpp:873
+msgid "St&yle"
+msgstr "S&tîle"
+
+#: KWView.cpp:881 KWView.cpp:5185
+msgid "Default Format"
+msgstr "Prémetowe cogne"
+
+#: KWView.cpp:884 KWView.cpp:885
+msgid "Change font and paragraph attributes to their default values."
+msgstr ""
+
+#: KWView.cpp:889
+msgid "&Bold"
+msgstr "&Cråsse"
+
+#: KWView.cpp:892
+msgid "&Italic"
+msgstr "C&lintcheye"
+
+#: KWView.cpp:895
+msgid "&Underline"
+msgstr "&Sorlignî"
+
+#: KWView.cpp:898
+msgid "&Strike Out"
+msgstr "&Bårer"
+
+#: KWView.cpp:902
+msgid "Align &Left"
+msgstr "Aroymint &Hintche"
+
+#: KWView.cpp:907
+msgid "Align &Center"
+msgstr "Aroymint &Mitan"
+
+#: KWView.cpp:911
+msgid "Align &Right"
+msgstr "Aroymint &Droete"
+
+#: KWView.cpp:915
+msgid "Align &Block"
+msgstr "Aroymint &bloc"
+
+#: KWView.cpp:920
+msgid "Line Spacing &1"
+msgstr ""
+
+#: KWView.cpp:924
+msgid "Line Spacing 1.&5"
+msgstr ""
+
+#: KWView.cpp:928
+msgid "Line Spacing &2"
+msgstr ""
+
+#: KWView.cpp:933
+msgid "Superscript"
+msgstr "Dizeu li Roye"
+
+#: KWView.cpp:937
+msgid "Subscript"
+msgstr "Dizo li Roye"
+
+#: KWView.cpp:942
+msgid "Increase Indent"
+msgstr "Ritrait pus grand"
+
+#: KWView.cpp:947
+msgid "Decrease Indent"
+msgstr "Ritrait pus ptit"
+
+#: KWView.cpp:952
+msgid "Text Color..."
+msgstr "Coleur do Tecse..."
+
+#: KWView.cpp:963
+msgid "Number"
+msgstr "Limero"
+
+#: KWView.cpp:966
+msgid "Bullet"
+msgstr ""
+
+#: KWView.cpp:991
+#, fuzzy
+msgid "Fra&mestyle"
+msgstr "&Cådes"
+
+#: KWView.cpp:993
+#, fuzzy
+msgid "Framest&yle"
+msgstr "&Cådes"
+
+#: KWView.cpp:998
+msgid "Border Outline"
+msgstr "Håyner Boirdeure"
+
+#: KWView.cpp:1000
+msgid "Border Left"
+msgstr "Boirdeure Hintche"
+
+#: KWView.cpp:1002
+msgid "Border Right"
+msgstr "Boirdeure Droete"
+
+#: KWView.cpp:1004
+msgid "Border Top"
+msgstr "Boirdeure Copete"
+
+#: KWView.cpp:1006
+msgid "Border Bottom"
+msgstr "Boirdeure Valeye"
+
+#: KWView.cpp:1008
+msgid "Border Style"
+msgstr "Stîle del boirdeure"
+
+#: KWView.cpp:1019
+msgid "Border Width"
+msgstr "Lårdjeu del boirdeure"
+
+#: KWView.cpp:1027
+msgid "Border Color"
+msgstr "Coleur del boirdeure"
+
+#: KWView.cpp:1031 KWView.cpp:1954
+msgid "Text Background Color..."
+msgstr "Coleur di fond do tecse..."
+
+#: KWView.cpp:1032 KWView.cpp:1033
+#, fuzzy
+msgid "Change background color for currently selected text."
+msgstr "Candjî l' tecse del pînote tchoezeye pol moumint."
+
+#: KWView.cpp:1039
+#, fuzzy
+msgid "&Properties"
+msgstr "Prôpietés do cåde"
+
+#: KWView.cpp:1042 KWView.cpp:1043
+#, fuzzy
+msgid "Adjust properties of the current table."
+msgstr "Disfacer les royes di tchoezeyes foû del tåve do moumint."
+
+#: KWView.cpp:1045
+msgid "&Insert Row..."
+msgstr "S&ititchî Roye..."
+
+#: KWView.cpp:1048
+msgid "Insert one or more rows at cursor location."
+msgstr ""
+
+#: KWView.cpp:1049
+msgid "Insert one or more rows at current cursor location."
+msgstr ""
+
+#: KWView.cpp:1051
+msgid "I&nsert Column..."
+msgstr "Si&titchî Colone..."
+
+#: KWView.cpp:1054 KWView.cpp:1055
+#, fuzzy
+msgid "Insert one or more columns into the current table."
+msgstr "Disfacer les colones colones di tchoezeyes foû del tåve do moumint."
+
+#: KWView.cpp:1060 KWView.cpp:1061
+msgid "Delete selected rows from the current table."
+msgstr "Disfacer les royes di tchoezeyes foû del tåve do moumint."
+
+#: KWView.cpp:1066 KWView.cpp:1067
+msgid "Delete selected columns from the current table."
+msgstr "Disfacer les colones colones di tchoezeyes foû del tåve do moumint."
+
+#: KWView.cpp:1069
+msgid "Resize Column..."
+msgstr "Candjî l' grandeu del colone..."
+
+#: KWView.cpp:1072 KWView.cpp:1073
+#, fuzzy
+msgid "Change the width of the currently selected column."
+msgstr "Candjî l' tecse del pînote tchoezeye pol moumint."
+
+#: KWView.cpp:1076
+msgid "&Join Cells"
+msgstr "Rif&onde Boesses..."
+
+#: KWView.cpp:1079
+msgid "Join two or more cells into one large cell."
+msgstr ""
+
+#: KWView.cpp:1080
+msgid ""
+"Join two or more cells into one large cell."
+"<p>This is a good way to create titles and labels within a table."
+msgstr ""
+
+#: KWView.cpp:1082
+#, fuzzy
+msgid "&Split Cell..."
+msgstr "Dis&pårti Boesses..."
+
+#: KWView.cpp:1085
+msgid "Split one cell into two or more cells."
+msgstr ""
+
+#: KWView.cpp:1086
+msgid ""
+"Split one cell into two or more cells."
+"<p>Cells can be split horizontally, vertically or both directions at once."
+msgstr ""
+
+#: KWView.cpp:1088
+#, fuzzy
+msgid "Protect Cells"
+msgstr "Rifonde Boesses"
+
+#: KWView.cpp:1090
+#, fuzzy
+msgid "Prevent changes to content of selected cells."
+msgstr "Candjî l' tecse del pînote tchoezeye pol moumint."
+
+#: KWView.cpp:1094
+msgid ""
+"Toggles cell protection on and off."
+"<br>"
+"<br>When cell protection is on, the user can not alter the content or "
+"formatting of the text within the cell."
+msgstr ""
+
+#: KWView.cpp:1096
+#, fuzzy
+msgid "&Ungroup Table"
+msgstr "Sititchî ene Tåve"
+
+#: KWView.cpp:1099
+msgid "Break a table into individual frames."
+msgstr ""
+
+#: KWView.cpp:1100
+msgid ""
+"Break a table into individual frames"
+"<p>Each frame can be moved independently around the page."
+msgstr ""
+
+#: KWView.cpp:1102
+msgid "Delete &Table"
+msgstr "Disfacer &Tåve"
+
+#: KWView.cpp:1105
+msgid "Delete the entire table."
+msgstr "Disfacer l' tåve en etir."
+
+#: KWView.cpp:1106
+#, fuzzy
+msgid ""
+"Deletes all cells and the content within the cells of the currently selected "
+"table."
+msgstr "Candjî l' tecse del pînote tchoezeye pol moumint."
+
+#: KWView.cpp:1109
+#, fuzzy
+msgid "T&able Style Manager"
+msgstr "Manaedjeu di stîle des tåves"
+
+#: KWView.cpp:1112
+#, fuzzy
+msgid "Change attributes of tablestyles."
+msgstr "Candjî les atributs di stîle des cådes."
+
+#: KWView.cpp:1113
+msgid ""
+"Change textstyle and framestyle of the tablestyles."
+"<p>Multiple tablestyles can be changed using the dialog box."
+msgstr ""
+
+#: KWView.cpp:1115 KWView.cpp:1117
+#, fuzzy
+msgid "Table&style"
+msgstr "Tåves"
+
+#: KWView.cpp:1123 KWView.cpp:7122
+#, fuzzy
+msgid "Convert Table to Text"
+msgstr "Sititchî tåve di l' ådvins"
+
+#: KWView.cpp:1126
+#, fuzzy
+msgid "Sort Text..."
+msgstr "Relére li tecse"
+
+#: KWView.cpp:1130
+msgid "Add Expression"
+msgstr "Radjouter ratourneure"
+
+#: KWView.cpp:1138
+msgid "Enable Autocorrection"
+msgstr "Mete en alaedje li coridjaedje otomatike"
+
+#: KWView.cpp:1141
+#, fuzzy
+msgid "Disable Autocorrection"
+msgstr "Mete en alaedje li coridjaedje otomatike"
+
+#: KWView.cpp:1142 KWView.cpp:1143
+#, fuzzy
+msgid "Toggle autocorrection on and off."
+msgstr "Candjî les tchuzes do coridjaedje otomatike."
+
+#: KWView.cpp:1145
+msgid "Configure &Autocorrection..."
+msgstr "Apontyî li &coridjaedje otomatike..."
+
+#: KWView.cpp:1148
+msgid "Change autocorrection options."
+msgstr "Candjî les tchuzes do coridjaedje otomatike."
+
+#: KWView.cpp:1149
+msgid ""
+"Change autocorrection options including:"
+"<p> <UL><LI><P>exceptions to autocorrection</P> <LI><P>"
+"add/remove autocorrection replacement text</P> <LI><P>"
+"and basic autocorrection options</P>."
+msgstr ""
+
+#: KWView.cpp:1151
+msgid "Custom &Variables..."
+msgstr "&Variåves da vosse..."
+
+#: KWView.cpp:1155
+msgid "Edit &Personal Expressions..."
+msgstr ""
+
+#: KWView.cpp:1158
+msgid "Add or change one or more personal expressions."
+msgstr ""
+
+#: KWView.cpp:1159
+msgid ""
+"Add or change one or more personal expressions."
+"<p>Personal expressions are a way to quickly insert commonly used phrases or "
+"text into your document."
+msgstr ""
+
+#: KWView.cpp:1161
+#, fuzzy
+msgid "Change Case..."
+msgstr "Candjî..."
+
+#: KWView.cpp:1164
+msgid "Alter the capitalization of selected text."
+msgstr ""
+
+#: KWView.cpp:1165
+msgid ""
+"Alter the capitalization of selected text to one of five pre-defined patterns."
+"<p>You can also switch all letters from upper case to lower case and from lower "
+"case to upper case in one move."
+msgstr ""
+
+#: KWView.cpp:1171
+msgid "Change Picture..."
+msgstr "Candjî imådje..."
+
+#: KWView.cpp:1174
+#, fuzzy
+msgid "Change the picture in the currently selected frame."
+msgstr "Candjî l' tecse del pînote tchoezeye pol moumint."
+
+#: KWView.cpp:1175
+msgid ""
+"You can specify a different picture in the current frame."
+"<br>"
+"<br>KWord automatically resizes the new picture to fit within the old frame."
+msgstr ""
+
+#: KWView.cpp:1177
+#, fuzzy
+msgid "Configure Header/Footer..."
+msgstr "Apontyî pînotes"
+
+#: KWView.cpp:1180 KWView.cpp:1181
+#, fuzzy
+msgid "Configure the currently selected header or footer."
+msgstr "Candjî l' tecse del pînote tchoezeye pol moumint."
+
+#: KWView.cpp:1183
+#, fuzzy
+msgid "Inline Frame"
+msgstr "Raloyî les cådes di tecse"
+
+#: KWView.cpp:1186
+#, fuzzy
+msgid "Convert current frame to an inline frame."
+msgstr "Sititchî ene formule en on novea cåde."
+
+#: KWView.cpp:1187
+msgid ""
+"Convert the current frame to an inline frame."
+"<br>"
+"<br>Place the inline frame within the text at the point nearest to the frames "
+"current position."
+msgstr ""
+
+#: KWView.cpp:1189
+msgid "Open Link"
+msgstr "Drovi hårdêye"
+
+#: KWView.cpp:1192
+msgid "Open the link with the appropriate application."
+msgstr "Drovi l' hårdêye avou l' bon programe."
+
+#: KWView.cpp:1193
+msgid ""
+"Open the link with the appropriate application."
+"<br>"
+"<br>Web addresses are opened in a browser."
+"<br>Email addresses begin a new message addressed to the link."
+"<br>File links are opened by the appropriate viewer or editor."
+msgstr ""
+"Drovi l' hårdêye avou l' bon programe. "
+"<br> "
+"<br>Les pådjes waibe (http://) sont  drovowes avou on betchteu. "
+"<br>Les adresses emile (mailto:) enondèt on novea messaedje po l' adresse del "
+"hårdêye. "
+"<br>Des loyéns locås (file://) sont drovous avou li bon håyneu ou aspougneu, "
+"sorlon li sôre do fitchî."
+
+#: KWView.cpp:1195
+msgid "Change Link..."
+msgstr "Candjî loyén..."
+
+#: KWView.cpp:1198
+#, fuzzy
+msgid "Change the content of the currently selected link."
+msgstr "Candjî l' tecse del pînote tchoezeye pol moumint."
+
+#: KWView.cpp:1199
+#, fuzzy
+msgid "Change the details of the currently selected link."
+msgstr "Candjî l' tecse del pînote tchoezeye pol moumint."
+
+#: KWView.cpp:1201
+msgid "Copy Link"
+msgstr "Copyî loyén"
+
+#: KWView.cpp:1205
+msgid "Add to Bookmark"
+msgstr "Radjouter åzès rmåkes"
+
+#: KWView.cpp:1209
+msgid "Remove Link"
+msgstr "Oister on loyén"
+
+#: KWView.cpp:1213
+#, fuzzy
+msgid "Show Doc Structure"
+msgstr "Tcherpinte do documint"
+
+#: KWView.cpp:1216
+#, fuzzy
+msgid "Hide Doc Structure"
+msgstr "Tcherpinte do documint"
+
+#: KWView.cpp:1217
+#, fuzzy
+msgid "Open document structure sidebar."
+msgstr "Tcherpinte do documint"
+
+#: KWView.cpp:1218
+msgid ""
+"Open document structure sidebar."
+"<p>This sidebar helps you organize your document and quickly find pictures, "
+"tables etc."
+msgstr ""
+
+#: KWView.cpp:1220
+#, fuzzy
+msgid "Show Rulers"
+msgstr "Mostrer l' pînote"
+
+#: KWView.cpp:1223
+#, fuzzy
+msgid "Hide Rulers"
+msgstr "Catchî l' pînote"
+
+#: KWView.cpp:1224
+msgid "Shows or hides rulers."
+msgstr "Mostrer les rîles"
+
+#: KWView.cpp:1225
+msgid ""
+"The rulers are the white measuring spaces top and left of the document. The "
+"rulers show the position and width of pages and of frames and can be used to "
+"position tabulators among others."
+"<p>Uncheck this to disable the rulers from being displayed."
+msgstr ""
+
+#: KWView.cpp:1230
+#, fuzzy
+msgid "Show Grid"
+msgstr "Mostrer l' pînote"
+
+#: KWView.cpp:1233
+#, fuzzy
+msgid "Hide Grid"
+msgstr "Catchî l' pînote"
+
+#: KWView.cpp:1235
+#, fuzzy
+msgid "Snap to Grid"
+msgstr "Mostrer l' pînote"
+
+#: KWView.cpp:1239
+msgid "Configure C&ompletion..."
+msgstr "Apontyî l' c&ompletaedje..."
+
+#: KWView.cpp:1242
+#, fuzzy
+msgid "Change the words and options for autocompletion."
+msgstr "Candjî l' tecse di rawete."
+
+#: KWView.cpp:1243
+msgid "Add words or change the options for autocompletion."
+msgstr ""
+
+#: KWView.cpp:1247
+msgid "Insert Non-Breaking Space"
+msgstr "Sititchî espåce nén côpåve"
+
+#: KWView.cpp:1249
+#, fuzzy
+msgid "Insert Non-Breaking Hyphen"
+msgstr "Sititchî espåce nén côpåve"
+
+#: KWView.cpp:1251
+#, fuzzy
+msgid "Insert Soft Hyphen"
+msgstr "Sititchî espåce nén côpåve"
+
+#: KWView.cpp:1253
+msgid "Line Break"
+msgstr ""
+
+#: KWView.cpp:1256
+#, fuzzy
+msgid "Completion"
+msgstr "Condicion"
+
+#: KWView.cpp:1258
+#, fuzzy
+msgid "Increase Numbering Level"
+msgstr "Ragrandi l' fonte"
+
+#: KWView.cpp:1260
+#, fuzzy
+msgid "Decrease Numbering Level"
+msgstr "Raptiti l' fonte"
+
+#: KWView.cpp:1265
+msgid "Edit Variable..."
+msgstr "Candjî variåve..."
+
+#: KWView.cpp:1268
+#, fuzzy
+msgid "Apply Autocorrection"
+msgstr "Coridjaedje tot seu"
+
+#: KWView.cpp:1271 KWView.cpp:1272
+msgid ""
+"Manually force KWord to scan the entire document and apply autocorrection."
+msgstr ""
+
+#: KWView.cpp:1274
+msgid "Create Style From Selection..."
+msgstr "Fé on stîle a pårti di çou k' est tchoezi..."
+
+#: KWView.cpp:1277 KWView.cpp:1278
+msgid "Create a new style based on the currently selected text."
+msgstr "Fé on novea stîle a pårti do tecse tchoezi."
+
+#: KWView.cpp:1280
+msgid "&Footnote..."
+msgstr "&Pînote..."
+
+#: KWView.cpp:1283 KWView.cpp:1284
+msgid "Change the look of footnotes."
+msgstr "Candjî l' rivnance des pînotes."
+
+#: KWView.cpp:1286 KWView.cpp:5743
+msgid "Edit Footnote"
+msgstr "Candjî pînote"
+
+#: KWView.cpp:1289 KWView.cpp:1290
+msgid "Change the content of the currently selected footnote."
+msgstr "Candjî l' tecse del pînote tchoezeye pol moumint."
+
+#: KWView.cpp:1293
+#, fuzzy
+msgid "Change Footnote/Endnote Parameter"
+msgstr "Sititchî pînote"
+
+#: KWView.cpp:1297
+msgid "Save Picture..."
+msgstr "Schaper imådje..."
+
+#: KWView.cpp:1300
+msgid "Save the picture in a separate file."
+msgstr ""
+
+#: KWView.cpp:1301
+msgid ""
+"Save the picture in the currently selected frame in a separate file, outside "
+"the KWord document."
+msgstr ""
+
+#: KWView.cpp:1303
+#, fuzzy
+msgid "Autospellcheck"
+msgstr "Waitî l' ortografeye"
+
+#: KWView.cpp:1312
+#, fuzzy
+msgid "Edit Text Frameset"
+msgstr "Mwaisse cåde di tecse"
+
+#: KWView.cpp:1316
+#, fuzzy
+msgid "Delete Frameset"
+msgstr "Disfacer cådes"
+
+#: KWView.cpp:1320
+#, fuzzy
+msgid "Edit Frameset Properties"
+msgstr "Prôpietés des cådes"
+
+#: KWView.cpp:1324
+#, fuzzy
+msgid "Speak Text"
+msgstr "Relére li tecse"
+
+#: KWView.cpp:1328
+#, fuzzy
+msgid "Select Frameset"
+msgstr "Disfacer cådes"
+
+#: KWView.cpp:1332
+msgid "&Bookmark..."
+msgstr "&Rimåke"
+
+#: KWView.cpp:1335
+msgid "Select &Bookmark..."
+msgstr "Tchoezi &rmåke..."
+
+#: KWView.cpp:1339
+#, fuzzy
+msgid "Import Styles..."
+msgstr "Abaguer stîle..."
+
+#: KWView.cpp:1343
+#, fuzzy
+msgid "&Create Framestyle From Frame..."
+msgstr "Fé on stîle a pårti di çou k' est tchoezi..."
+
+#: KWView.cpp:1346
+#, fuzzy
+msgid "Create a new style based on the currently selected frame."
+msgstr "Fé on novea stîle a pårti do tecse tchoezi."
+
+#: KWView.cpp:1347
+#, fuzzy
+msgid "Create a new framestyle based on the currently selected frame."
+msgstr "Fé on novea stîle a pårti do tecse tchoezi."
+
+#: KWView.cpp:1350
+msgid "Type Anywhere Cursor"
+msgstr ""
+
+#: KWView.cpp:1355 KWView.cpp:7161
+msgid "Convert to Text Box"
+msgstr ""
+
+#: KWView.cpp:1360
+msgid "Ignore All"
+msgstr ""
+
+#: KWView.cpp:1364
+msgid "Add Word to Dictionary"
+msgstr ""
+
+#: KWView.cpp:1368
+msgid "Store Document Internally"
+msgstr ""
+
+#: KWView.cpp:1372
+#, fuzzy
+msgid "Go to Document Structure"
+msgstr "Tcherpinte do documint"
+
+#: KWView.cpp:1375
+#, fuzzy
+msgid "Go to Document"
+msgstr "Documint"
+
+#: KWView.cpp:1522
+msgid "Insert variable \"%1\" into the text"
+msgstr ""
+
+#: KWView.cpp:1575
+msgid "New..."
+msgstr "Novea..."
+
+#: KWView.cpp:1637
+#, fuzzy
+msgid "Page %1 of %2"
+msgstr "Pådje %1/%2"
+
+#: KWView.cpp:1670
+msgid ""
+"_: Statusbar info\n"
+"%1: %2, %3 - %4, %5 (width: %6, height: %7)"
+msgstr ""
+
+#: KWView.cpp:1680
+msgid "%1 frames selected"
+msgstr ""
+
+#: KWView.cpp:1952 KWView.cpp:5843
+msgid "Frame Background Color..."
+msgstr "Coleur di fond do cåde..."
+
+#: KWView.cpp:2220
+msgid "Apply a paragraph style"
+msgstr ""
+
+#: KWView.cpp:2274
+msgid "Apply a frame style"
+msgstr ""
+
+#: KWView.cpp:2324
+msgid "Apply a table style"
+msgstr ""
+
+#: KWView.cpp:2384
+#, fuzzy
+msgid "Image"
+msgstr "&Pådje"
+
+#: KWView.cpp:2385
+#, fuzzy
+msgid "Plain text"
+msgstr "Aclaper tecse"
+
+#: KWView.cpp:2387
+msgid "Select paste format:"
+msgstr ""
+
+#: KWView.cpp:2540
+#, fuzzy
+msgid "Raise Frame"
+msgstr "Candjî l' grandeu do cåde"
+
+#: KWView.cpp:2544
+#, fuzzy
+msgid "Lower Frame"
+msgstr "Bodjî l' cåde"
+
+#: KWView.cpp:2710
+msgid ""
+"You are about to delete a table.\n"
+"Doing so will delete all the text in the table.\n"
+"Are you sure you want to do that?"
+msgstr ""
+
+#: KWView.cpp:2735
+msgid ""
+"You are about to delete the last Frame of the Frameset '%1'. The contents of "
+"this Frameset will not appear anymore!\n"
+"Are you sure you want to do that?"
+msgstr ""
+
+#: KWView.cpp:2740 KWView.cpp:2756 KWView.cpp:2773 KWView.cpp:7464
+msgid "Delete Frame"
+msgstr "Disfacer Cåde"
+
+#: KWView.cpp:2755 KWView.cpp:2772
+msgid "Do you want to delete this frame?"
+msgstr "Voloz disfacer ci cåde ci?"
+
+#: KWView.cpp:2820 KWView.cpp:2852 KWView.cpp:2853
+msgid "Change Custom Variable"
+msgstr "Candjî variåve da vosse"
+
+#: KWView.cpp:3029 KWView.cpp:3033 KWView.cpp:3034 KWView.cpp:3035
+#: KWView.cpp:3036 KWView.cpp:3037 KWView.cpp:3038 KWView.cpp:3039
+#: KWView.cpp:3040 KWView.cpp:3041 KWView.cpp:3042 KWView.cpp:3043
+#: KWView.cpp:3044 KWView.cpp:3052
+msgid "%1%"
+msgstr ""
+
+#: KWView.cpp:3079
+#, fuzzy
+msgid "Enable Document Headers"
+msgstr "Prémetowes valixhances des documints"
+
+#: KWView.cpp:3079
+msgid "Disable Document Headers"
+msgstr ""
+
+#: KWView.cpp:3126
+msgid "Enable Document Footers"
+msgstr ""
+
+#: KWView.cpp:3126
+msgid "Disable Document Footers"
+msgstr ""
+
+#: KWView.cpp:3340 KWView.cpp:3365
+#, fuzzy
+msgid "Insert Picture Inline"
+msgstr "Sititchî Imådje"
+
+#: KWView.cpp:3384 KWView.cpp:3389
+msgid "Set cursor where you want to insert inline frame."
+msgstr ""
+
+#: KWView.cpp:3385
+#, fuzzy
+msgid "Insert Inline Frame"
+msgstr "Sititchî Imådje"
+
+#: KWView.cpp:3557
+msgid "You can only insert footnotes or endnotes into the first frameset."
+msgstr ""
+
+#: KWView.cpp:3559
+msgid "Insert Footnote"
+msgstr "Sititchî Pînote"
+
+#: KWView.cpp:3582
+msgid "Update Table of &Contents"
+msgstr "Mete a djoû li tåve di l' å&dvins"
+
+#: KWView.cpp:3620
+msgid "Change Font"
+msgstr "Candjî fonte"
+
+#: KWView.cpp:3651 KWView.cpp:3685 KWView.cpp:3698 KWView.cpp:3709
+#: KWView.cpp:3719 KWView.cpp:3729 KWView.cpp:3742 KWView.cpp:3752
+#: KWView.cpp:3762 KWView.cpp:3773 KWView.cpp:3785 KWView.cpp:3796
+#: KWView.cpp:3807
+msgid "Paragraph Settings"
+msgstr "Apontiaedjes des hagnons"
+
+#: KWView.cpp:3886 KWView.cpp:5399 KWView.cpp:6094
+msgid "Change Layout"
+msgstr "Candjî Arindjmint"
+
+#: KWView.cpp:3905
+msgid "You must select a frame first."
+msgstr "Vos dvoz tchoezi on cåde d' aprume."
+
+#: KWView.cpp:3906
+#, fuzzy
+msgid "Format Frameset"
+msgstr "Cådes di formules"
+
+#: KWView.cpp:4032
+msgid "Insert Table"
+msgstr "Sititchî ene Tåve"
+
+#: KWView.cpp:4055
+msgid "Insert Formula"
+msgstr "Sititchî ene Formule"
+
+#: KWView.cpp:4106
+msgid "Remove Rows"
+msgstr "Oister royes"
+
+#: KWView.cpp:4132
+msgid "Remove Columns"
+msgstr "Oister colones"
+
+#: KWView.cpp:4160
+#, fuzzy
+msgid "Adjust Table"
+msgstr "Sititchî ene Tåve"
+
+#: KWView.cpp:4279
+msgid ""
+"More then one table has selected cells, please make sure the selected cells are "
+"in one table and are connecting"
+msgstr ""
+
+#: KWView.cpp:4281
+#, fuzzy
+msgid "Join Cells Failed"
+msgstr "Rifonde Boesses"
+
+#: KWView.cpp:4298
+msgid ""
+"You have to select some cells which are next to each other and are not already "
+"joined."
+msgstr ""
+
+#: KWView.cpp:4323
+msgid "You have to put the cursor into a table before splitting cells."
+msgstr ""
+
+#: KWView.cpp:4333
+msgid ""
+"There is not enough space to split the cell into that many parts, make it "
+"bigger first"
+msgstr ""
+
+#: KWView.cpp:4353
+#, fuzzy
+msgid "Ungroup Table"
+msgstr "Sititchî ene Tåve"
+
+#: KWView.cpp:4452
+msgid "Apply Style to Frame"
+msgstr ""
+
+#: KWView.cpp:4452
+msgid "Apply Style to Frames"
+msgstr ""
+
+#: KWView.cpp:4495 KWView.cpp:4509
+msgid "Apply Framestyle to Frame"
+msgstr ""
+
+#: KWView.cpp:4509
+msgid "Apply Framestyle to Frames"
+msgstr ""
+
+#: KWView.cpp:4514
+msgid "Apply Framestyle"
+msgstr ""
+
+#: KWView.cpp:4559 KWView.cpp:4572 KWView.cpp:4578
+msgid "Apply Tablestyle to Frame"
+msgstr ""
+
+#: KWView.cpp:4572
+msgid "Apply Tablestyle to Frames"
+msgstr ""
+
+#: KWView.cpp:4620
+msgid "Change Text Size"
+msgstr "Candjî l' grandeu do tecse"
+
+#: KWView.cpp:4643
+msgid "Change Text Font"
+msgstr "Candjî l' fonte do tecse"
+
+#: KWView.cpp:4717
+msgid "Make Text Bold"
+msgstr "Mete li tecse e cråssès letes"
+
+#: KWView.cpp:4737
+#, fuzzy
+msgid "Make Text Italic"
+msgstr "Mete li tecse e cråssès letes"
+
+#: KWView.cpp:4757
+msgid "Underline Text"
+msgstr "Sorlignî l' tecse"
+
+#: KWView.cpp:4776
+msgid "Strike Out Text"
+msgstr "Bårer l' tecse"
+
+#: KWView.cpp:4802
+msgid "Set Text Color"
+msgstr "Defini l' coleur do tecse"
+
+#: KWView.cpp:4823
+#, fuzzy
+msgid "Left-Align Text"
+msgstr "Sorlignî l' tecse"
+
+#: KWView.cpp:4847
+#, fuzzy
+msgid "Center Text"
+msgstr "Tecse di tchoezi"
+
+#: KWView.cpp:4871
+msgid "Right-Align Text"
+msgstr ""
+
+#: KWView.cpp:4895
+msgid "Justify Text"
+msgstr ""
+
+#: KWView.cpp:4932
+msgid "Set Single Line Spacing"
+msgstr ""
+
+#: KWView.cpp:4940
+msgid "Set One and a Half Line Spacing"
+msgstr ""
+
+#: KWView.cpp:4948
+msgid "Set Double Line Spacing"
+msgstr ""
+
+#: KWView.cpp:4990
+#, fuzzy
+msgid "Change List Type"
+msgstr "Candjî loyén"
+
+#: KWView.cpp:5010
+#, fuzzy
+msgid "Make Text Superscript"
+msgstr "Dizeu li Roye"
+
+#: KWView.cpp:5032
+#, fuzzy
+msgid "Make Text Subscript"
+msgstr "Dizo li Roye"
+
+#: KWView.cpp:5057
+#, fuzzy
+msgid "Change Case of Text"
+msgstr "Candjî l' fonte do tecse"
+
+#: KWView.cpp:5093
+msgid "Increase Paragraph Depth"
+msgstr ""
+
+#: KWView.cpp:5142
+msgid "Decrease Paragraph Depth"
+msgstr ""
+
+#: KWView.cpp:5241
+#, fuzzy
+msgid "Change Left Frame Border"
+msgstr "Candjî l' boirdeure di hintche do cåde"
+
+#: KWView.cpp:5245
+#, fuzzy
+msgid "Change Right Frame Border"
+msgstr "Candjî l' boirdeure di droete do cåde"
+
+#: KWView.cpp:5249
+#, fuzzy
+msgid "Change Top Frame Border"
+msgstr "Apontyî  li boirdeure des cådes"
+
+#: KWView.cpp:5254
+#, fuzzy
+msgid "Change Bottom Frame Border"
+msgstr "Candjî l' boirdeure do dzo do cåde"
+
+#: KWView.cpp:5367
+#, fuzzy
+msgid "Change Tabulator"
+msgstr "Candjî Arindjmint"
+
+#: KWView.cpp:5424
+msgid "Change First Line Indent"
+msgstr ""
+
+#: KWView.cpp:5444 KWView.cpp:5466
+#, fuzzy
+msgid "Change Indent"
+msgstr "Candjî fonte"
+
+#: KWView.cpp:5544
+msgid "Correct Misspelled Word"
+msgstr ""
+
+#: KWView.cpp:5743
+#, fuzzy
+msgid "Edit Endnote"
+msgstr "Pînote di documint"
+
+#: KWView.cpp:5744
+#, fuzzy
+msgid "Change Footnote Parameter"
+msgstr "Candjî l' boirdeure do dzo do cåde"
+
+#: KWView.cpp:5744
+#, fuzzy
+msgid "Change Endnote Parameter"
+msgstr "Candjî l' boirdeure do dzo do cåde"
+
+#: KWView.cpp:5897
+#, fuzzy
+msgid "D&elete Current Column..."
+msgstr "Dis&facer les tchoezeyès colones..."
+
+#: KWView.cpp:5899
+msgid "D&elete Selected Columns..."
+msgstr "Dis&facer les tchoezeyès colones..."
+
+#: KWView.cpp:5902
+#, fuzzy
+msgid "&Delete Current Row..."
+msgstr "&Disfacer les royes di tchoezeyes..."
+
+#: KWView.cpp:5904
+msgid "&Delete Selected Rows..."
+msgstr "&Disfacer les royes di tchoezeyes..."
+
+#: KWView.cpp:5987
+msgid "Change Picture"
+msgstr "Candjî imådje"
+
+#: KWView.cpp:6018 KWView.cpp:6037 KWView.cpp:6061 KWView.cpp:6066
+#: KWView.cpp:6070
+msgid "Save Picture"
+msgstr "Schaper imådje"
+
+#: KWView.cpp:6036
+msgid "Error during saving. Could not open '%1' for writing"
+msgstr ""
+
+#: KWView.cpp:6054
+msgid "Unable to save the file to '%1'. %2."
+msgstr ""
+
+#: KWView.cpp:6055
+#, fuzzy
+msgid "Save Failed"
+msgstr "Schaper imådje"
+
+#: KWView.cpp:6060
+msgid "Error during saving. Could not open '%1' temporary file for writing"
+msgstr ""
+
+#: KWView.cpp:6065
+#, c-format
+msgid "Error during saving. Could not create temporary file: %1."
+msgstr ""
+
+#: KWView.cpp:6070
+msgid "URL %1 is invalid."
+msgstr ""
+
+#: KWView.cpp:6169
+msgid "Change Link"
+msgstr "Candjî loyén"
+
+#: KWView.cpp:6322
+#, fuzzy
+msgid "Change Note Text"
+msgstr "Candjî l' grandeu do tecse"
+
+#: KWView.cpp:6377
+msgid "Apply Autoformat"
+msgstr ""
+
+#: KWView.cpp:6547
+#, fuzzy
+msgid "Change Footnote Parameters"
+msgstr "Candjî l' boirdeure do dzo do cåde"
+
+#: KWView.cpp:6651 KWView.cpp:6660 KWView.cpp:6686 KWView.cpp:6706
+#: KWView.cpp:6929 KWView.cpp:6941
+msgid "Insert File"
+msgstr "Sititchî on fitchî"
+
+#: KWView.cpp:6705
+msgid "File name is not a KWord file!"
+msgstr ""
+
+#: KWView.cpp:7261 KWView.cpp:7266 KWView.cpp:7272
+msgid "Normal"
+msgstr "Miernowe"
+
+#: KWView.cpp:7379
+msgid "Replace Word"
+msgstr "Replaecî mot"
+
+#: KWView.cpp:7425
+msgid "Delete Frames"
+msgstr "Disfacer cådes"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Lorint Hendschel"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "<LorintHendschel@skynet.be>"
+
+#: main.cpp:27
+msgid "File to open"
+msgstr "Fitchî a drovi"
+
+#: stylenames.cpp:21
+msgid ""
+"_: Style name\n"
+"Standard"
+msgstr "Sitandård"
+
+#: stylenames.cpp:22
+msgid ""
+"_: Style name\n"
+"Head 1"
+msgstr "Tite 1"
+
+#: stylenames.cpp:23
+msgid ""
+"_: Style name\n"
+"Head 2"
+msgstr "Tite 2"
+
+#: stylenames.cpp:24
+msgid ""
+"_: Style name\n"
+"Head 3"
+msgstr "Tite 3"
+
+#: stylenames.cpp:25
+msgid ""
+"_: Style name\n"
+"Enumerated List"
+msgstr "Djivêye a limeros"
+
+#: stylenames.cpp:26
+msgid ""
+"_: Style name\n"
+"Alphabetical List"
+msgstr "Djivêye åbécé"
+
+#: stylenames.cpp:27
+msgid ""
+"_: Style name\n"
+"Bullet List"
+msgstr "Djivêye a ponts"
+
+#: stylenames.cpp:28
+msgid ""
+"_: Style name\n"
+"Contents Title"
+msgstr "Tite di l' ådvins"
+
+#: stylenames.cpp:29
+msgid ""
+"_: Style name\n"
+"Contents Head 1"
+msgstr "Tite 1 di l' ådvins"
+
+#: stylenames.cpp:30
+msgid ""
+"_: Style name\n"
+"Contents Head 2"
+msgstr "Tite 2 di l' ådvins"
+
+#: stylenames.cpp:31
+msgid ""
+"_: Style name\n"
+"Contents Head 3"
+msgstr "Tite 3 di l' ådvins"
+
+#: stylenames.cpp:32
+msgid ""
+"_: Style name\n"
+"Document Title"
+msgstr "Tite do documint"
+
+#: stylenames.cpp:33
+msgid ""
+"_: Style name\n"
+"Header"
+msgstr "Tiestire"
+
+#: stylenames.cpp:34
+msgid ""
+"_: Style name\n"
+"Footer"
+msgstr "Pînote"
+
+#: stylenames.cpp:37
+msgid ""
+"_: Style name\n"
+"Plain"
+msgstr "Normå"
+
+#: stylenames.cpp:38
+msgid ""
+"_: Style name\n"
+"Borders 1"
+msgstr "Boirdeure 1"
+
+#: stylenames.cpp:39
+msgid ""
+"_: Style name\n"
+"Borders 2"
+msgstr "Boirdeure 2"
+
+#: stylenames.cpp:40
+msgid ""
+"_: Style name\n"
+"Borders 3"
+msgstr "Boirdeure 3"
+
+#: stylenames.cpp:41
+msgid ""
+"_: Style name\n"
+"Row"
+msgstr "Roye"
+
+#: stylenames.cpp:42
+msgid ""
+"_: Style name\n"
+"Column"
+msgstr "Colone"
+
+#: stylenames.cpp:43
+msgid ""
+"_: Style name\n"
+"Light Gray"
+msgstr "Gris clair"
+
+#: stylenames.cpp:44
+msgid ""
+"_: Style name\n"
+"Dark Gray"
+msgstr "Gris foncé"
+
+#: stylenames.cpp:45
+msgid ""
+"_: Style name\n"
+"Black"
+msgstr "Noer"
+
+#: stylenames.cpp:46
+msgid ""
+"_: Style name\n"
+"Light Blue"
+msgstr "Bleu clair"
+
+#: stylenames.cpp:47
+msgid ""
+"_: Style name\n"
+"Dark Blue"
+msgstr "Bleu foncé"
+
+#: stylenames.cpp:48
+msgid ""
+"_: Style name\n"
+"Red"
+msgstr "Rodje"
+
+#: stylenames.cpp:49
+msgid ""
+"_: Style name\n"
+"Yellow"
+msgstr "Djaene"
+
+#: stylenames.cpp:50
+#, fuzzy
+msgid ""
+"_: Style name\n"
+"Colorful"
+msgstr "Colone"
+
+#: stylenames.cpp:51
+msgid ""
+"_: Style name\n"
+"Bluish"
+msgstr "bleuwåsse"
+
+#: stylenames.cpp:54
+msgid ""
+"_: Style name\n"
+"Simple 1"
+msgstr "Simpe 1"
+
+#: stylenames.cpp:55
+msgid ""
+"_: Style name\n"
+"Simple 2"
+msgstr "Simpe 2"
+
+#: stylenames.cpp:56
+msgid ""
+"_: Style name\n"
+"Simple 3"
+msgstr "Simpe 3"
+
+#: stylenames.cpp:57
+msgid ""
+"_: Style name\n"
+"Header 1"
+msgstr "Tiestire 1"
+
+#: stylenames.cpp:58
+msgid ""
+"_: Style name\n"
+"Header 2"
+msgstr "Tiestire 2"
+
+#: stylenames.cpp:59
+msgid ""
+"_: Style name\n"
+"Header 3"
+msgstr "Tiestire 3"
+
+#: stylenames.cpp:60
+msgid ""
+"_: Style name\n"
+"Header 4"
+msgstr "Tiestire 4"
+
+#: stylenames.cpp:63
+#, fuzzy
+msgid ""
+"_: Style name\n"
+"Columns 1"
+msgstr "Colone"
+
+#: stylenames.cpp:64
+#, fuzzy
+msgid ""
+"_: Style name\n"
+"Columns 2"
+msgstr "Colone"
+
+#: stylenames.cpp:65
+msgid ""
+"_: Style name\n"
+"Grid 1"
+msgstr "Grile 1"
+
+#: stylenames.cpp:66
+msgid ""
+"_: Style name\n"
+"Grid 2"
+msgstr "Grile 2"
+
+#: stylenames.cpp:67
+msgid ""
+"_: Style name\n"
+"Grid 3"
+msgstr "Grile 3"
+
+#: stylenames.cpp:68
+msgid ""
+"_: Style name\n"
+"Gray Heading"
+msgstr "Gris tite"
+
+#: stylenames.cpp:69
+msgid ""
+"_: Style name\n"
+"Blue Heading"
+msgstr "Bleu tite"
+
+#: stylenames.cpp:70
+msgid ""
+"_: Style name\n"
+"Blue Traditional"
+msgstr "Bleu wårdiveus"
+
+#: stylenames.cpp:71
+msgid ""
+"_: Style name\n"
+"Gray Traditional"
+msgstr "Gris wårdiveus"
+
+#: stylenames.cpp:72
+msgid ""
+"_: Style name\n"
+"Blue Top and Bottom"
+msgstr "Bleu al copete et al valeye"
+
+#: stylenames.cpp:73
+msgid ""
+"_: Style name\n"
+"Gray Top and Bottom"
+msgstr "Gris copete et al valeye"
+
 #. i18n: file expression/expression.xml line 4
-#: xml_doc.cc:3
+#: xml_doc.cpp:3
 #, no-c-format
 msgid "Personal"
 msgstr "Personel"
 
 #. i18n: file expression/expression.xml line 6
-#: xml_doc.cc:6
+#: xml_doc.cpp:6
 #, no-c-format
 msgid "Hi!"
 msgstr ""
 
 #. i18n: file expression/expression.xml line 9
-#: xml_doc.cc:9
+#: xml_doc.cpp:9
 #, no-c-format
 msgid "Hello!"
 msgstr ""
 
 #. i18n: file expression/expression.xml line 12
-#: xml_doc.cc:12
+#: xml_doc.cpp:12
 #, no-c-format
 msgid "Bye!"
 msgstr ""
 
 #. i18n: file expression/expression.xml line 15
-#: xml_doc.cc:15
+#: xml_doc.cpp:15
 #, no-c-format
 msgid "Good bye"
 msgstr "A rvey"
 
 #. i18n: file expression/expression.xml line 19
-#: xml_doc.cc:18
+#: xml_doc.cpp:18
 #, no-c-format
 msgid "Professional"
 msgstr ""
 
 #. i18n: file expression/expression.xml line 21
-#: xml_doc.cc:21
+#: xml_doc.cpp:21
 #, no-c-format
 msgid "Good Morning"
 msgstr ""
 
 #. i18n: file expression/expression.xml line 24
-#: xml_doc.cc:24
+#: xml_doc.cpp:24
 #, no-c-format
 msgid "Good Afternoon"
 msgstr ""
 
 #. i18n: file expression/expression.xml line 27
-#: xml_doc.cc:27
+#: xml_doc.cpp:27
 #, no-c-format
 msgid "Good Evening"
 msgstr "Bonswer"
 
 #. i18n: file expression/expression.xml line 31
-#: mailmerge/kabc/KWMailMergeKABC.cpp:75 xml_doc.cc:30
+#: mailmerge/kabc/KWMailMergeKABC.cpp:75 xml_doc.cpp:30
 #, no-c-format
 msgid "Email"
 msgstr "Emile"
 
 #. i18n: file expression/expression.xml line 33
-#: xml_doc.cc:33
+#: xml_doc.cpp:33
 #, no-c-format
 msgid "To:"
 msgstr "A:"
 
 #. i18n: file expression/expression.xml line 36
-#: xml_doc.cc:36
+#: xml_doc.cpp:36
 #, no-c-format
 msgid "From:"
 msgstr "Di:"
 
 #. i18n: file expression/expression.xml line 39
-#: xml_doc.cc:39
+#: xml_doc.cpp:39
 #, no-c-format
 msgid "Subject:"
 msgstr "Sudjet:"
 
 #. i18n: file expression/expression.xml line 42
-#: xml_doc.cc:42
+#: xml_doc.cpp:42
 #, no-c-format
 msgid "CC:"
 msgstr ""
 
 #. i18n: file expression/expression.xml line 45
-#: xml_doc.cc:45
+#: xml_doc.cpp:45
 #, no-c-format
 msgid "BCC:"
 msgstr ""
 
 #. i18n: file expression/expression.xml line 48
-#: xml_doc.cc:48
+#: xml_doc.cpp:48
 #, no-c-format
 msgid "Fwd:"
 msgstr ""
 
 #. i18n: file expression/expression.xml line 52
-#: xml_doc.cc:51
+#: xml_doc.cpp:51
 #, no-c-format
 msgid "Closing"
 msgstr "Cloyant"
 
 #. i18n: file expression/expression.xml line 54
-#: xml_doc.cc:54
+#: xml_doc.cpp:54
 #, no-c-format
 msgid "Best regards,"
 msgstr "Ki ça vos våye bén,"
 
 #. i18n: file expression/expression.xml line 57
-#: xml_doc.cc:57
+#: xml_doc.cpp:57
 #, no-c-format
 msgid "Best wishes"
 msgstr ""
 
 #. i18n: file expression/expression.xml line 60
-#: xml_doc.cc:60
+#: xml_doc.cpp:60
 #, no-c-format
 msgid "Cordially,"
 msgstr "Amitieusmint,"
 
 #. i18n: file expression/expression.xml line 63
-#: xml_doc.cc:63
+#: xml_doc.cpp:63
 #, no-c-format
 msgid "Love,"
 msgstr ""
 
 #. i18n: file expression/expression.xml line 66
-#: xml_doc.cc:66
+#: xml_doc.cpp:66
 #, no-c-format
 msgid "Regards,"
 msgstr "Ki ça vos våye bén,"
 
 #. i18n: file expression/expression.xml line 69
-#: xml_doc.cc:69
+#: xml_doc.cpp:69
 #, no-c-format
 msgid "Thank you,"
 msgstr "Gråces,"
 
 #. i18n: file expression/expression.xml line 72
-#: xml_doc.cc:72
+#: xml_doc.cpp:72
 #, no-c-format
 msgid "Thanks,"
 msgstr "Gråces,"
 
 #. i18n: file expression/expression.xml line 76
-#: xml_doc.cc:75 xml_doc.cc:78
+#: xml_doc.cpp:75 xml_doc.cpp:78
 #, no-c-format
 msgid "Subject"
 msgstr "Sudjet"
 
 #. i18n: file expression/expression.xml line 82
-#: xml_doc.cc:81
+#: xml_doc.cpp:81
 #, no-c-format
 msgid "Salutation"
 msgstr ""
 
 #. i18n: file expression/expression.xml line 84
-#: xml_doc.cc:84
+#: xml_doc.cpp:84
 #, no-c-format
 msgid "Dear Sir or Madam:"
 msgstr ""
 
 #. i18n: file expression/expression.xml line 87
-#: xml_doc.cc:87
+#: xml_doc.cpp:87
 #, no-c-format
 msgid "Ladies and Gentlemen:"
 msgstr ""
 
 #. i18n: file expression/expression.xml line 91
-#: xml_doc.cc:90
+#: xml_doc.cpp:90
 #, no-c-format
 msgid "Attention"
 msgstr ""
 
 #. i18n: file expression/expression.xml line 93
-#: xml_doc.cc:93
+#: xml_doc.cpp:93
 #, no-c-format
 msgid "Attention:"
 msgstr ""
 
 #. i18n: file expression/expression.xml line 96
-#: xml_doc.cc:96
+#: xml_doc.cpp:96
 #, no-c-format
 msgid "ATTN:"
 msgstr ""
 
 #. i18n: file expression/expression.xml line 100
-#: xml_doc.cc:99
+#: xml_doc.cpp:99
 #, no-c-format
 msgid "Instructions"
 msgstr ""
 
 #. i18n: file expression/expression.xml line 102
-#: xml_doc.cc:102
+#: xml_doc.cpp:102
 #, no-c-format
 msgid "CERTIFIED"
 msgstr ""
 
 #. i18n: file expression/expression.xml line 105
-#: xml_doc.cc:105
+#: xml_doc.cpp:105
 #, no-c-format
 msgid "CONFIDENTIAL"
 msgstr ""
 
 #. i18n: file expression/expression.xml line 108
-#: xml_doc.cc:108
+#: xml_doc.cpp:108
 #, no-c-format
 msgid "PERSONAL"
 msgstr ""
 
 #. i18n: file expression/expression.xml line 111
-#: xml_doc.cc:111
+#: xml_doc.cpp:111
 #, no-c-format
 msgid "FACSIMILE"
 msgstr ""
@@ -1007,894 +4825,12 @@ msgstr "© 1998-2004, L' ekipe KWord"
 msgid "KFormula"
 msgstr "KFormula"
 
-#: _translatorinfo.cpp:1
-msgid ""
-"_: NAME OF TRANSLATORS\n"
-"Your names"
-msgstr "Lorint Hendschel"
-
-#: _translatorinfo.cpp:3
-msgid ""
-"_: EMAIL OF TRANSLATORS\n"
-"Your emails"
-msgstr "<LorintHendschel@skynet.be>"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Standard"
-#~ msgstr "Sitandård"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Head 1"
-#~ msgstr "Tite 1"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Head 2"
-#~ msgstr "Tite 2"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Head 3"
-#~ msgstr "Tite 3"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Enumerated List"
-#~ msgstr "Djivêye a limeros"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Alphabetical List"
-#~ msgstr "Djivêye åbécé"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Bullet List"
-#~ msgstr "Djivêye a ponts"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Contents Title"
-#~ msgstr "Tite di l' ådvins"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Contents Head 1"
-#~ msgstr "Tite 1 di l' ådvins"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Contents Head 2"
-#~ msgstr "Tite 2 di l' ådvins"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Contents Head 3"
-#~ msgstr "Tite 3 di l' ådvins"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Document Title"
-#~ msgstr "Tite do documint"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Header"
-#~ msgstr "Tiestire"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Footer"
-#~ msgstr "Pînote"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Plain"
-#~ msgstr "Normå"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Borders 1"
-#~ msgstr "Boirdeure 1"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Borders 2"
-#~ msgstr "Boirdeure 2"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Borders 3"
-#~ msgstr "Boirdeure 3"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Row"
-#~ msgstr "Roye"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Column"
-#~ msgstr "Colone"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Light Gray"
-#~ msgstr "Gris clair"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Dark Gray"
-#~ msgstr "Gris foncé"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Black"
-#~ msgstr "Noer"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Light Blue"
-#~ msgstr "Bleu clair"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Dark Blue"
-#~ msgstr "Bleu foncé"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Red"
-#~ msgstr "Rodje"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Yellow"
-#~ msgstr "Djaene"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Bluish"
-#~ msgstr "bleuwåsse"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Simple 1"
-#~ msgstr "Simpe 1"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Simple 2"
-#~ msgstr "Simpe 2"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Simple 3"
-#~ msgstr "Simpe 3"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Header 1"
-#~ msgstr "Tiestire 1"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Header 2"
-#~ msgstr "Tiestire 2"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Header 3"
-#~ msgstr "Tiestire 3"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Header 4"
-#~ msgstr "Tiestire 4"
-
-#, fuzzy
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Columns 1"
-#~ msgstr "Colone"
-
-#, fuzzy
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Columns 2"
-#~ msgstr "Colone"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Grid 1"
-#~ msgstr "Grile 1"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Grid 2"
-#~ msgstr "Grile 2"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Grid 3"
-#~ msgstr "Grile 3"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Gray Heading"
-#~ msgstr "Gris tite"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Blue Heading"
-#~ msgstr "Bleu tite"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Blue Traditional"
-#~ msgstr "Bleu wårdiveus"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Gray Traditional"
-#~ msgstr "Gris wårdiveus"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Blue Top and Bottom"
-#~ msgstr "Bleu al copete et al valeye"
-
-#~ msgid ""
-#~ "_: Style name\n"
-#~ "Gray Top and Bottom"
-#~ msgstr "Gris copete et al valeye"
-
-#~ msgid "Configure Endnote/Footnote"
-#~ msgstr "Apontyî pînotes"
-
-#~ msgid "Footnotes"
-#~ msgstr "Pînotes"
-
-#~ msgid "Endnotes"
-#~ msgstr "Pînote di documint"
-
-#~ msgid "Position"
-#~ msgstr "Eplaeçmint"
-
-#, fuzzy
-#~ msgid "&Width:"
-#~ msgstr "Lårdjeu:"
-
-#~ msgid "Style:"
-#~ msgstr "Stîle:"
-
-#~ msgid "Solid"
-#~ msgstr "Solide"
-
-#~ msgid "Table of Contents"
-#~ msgstr "Tåve di l' Ådvins"
-
-#~ msgid "Delete the row from the table."
-#~ msgstr "Disfacer cisse roye foû del tåve"
-
-#~ msgid "Delete the column from the table."
-#~ msgstr "Disfacer cisse colone foû del tåve"
-
-#~ msgid "Delete the whole table?"
-#~ msgstr "Disfacer li tåve en etir?"
-
-#~ msgid "Delete all selected rows?"
-#~ msgstr "Disfacer totes les royes di tchoezeyes?"
-
-#~ msgid "Delete all selected cells?"
-#~ msgstr "Disfacer totes les boesses di tchoezeyes?"
-
-#~ msgid "Delete row number %1?"
-#~ msgstr "Disfacer l' roye limero %1?"
-
-#~ msgid "Delete column number %1?"
-#~ msgstr "Disfacer l' colone limero %1?"
-
-#~ msgid "Delete rows: %1 ?"
-#~ msgstr "Disfacer royes: %1 ?"
-
-#~ msgid "Delete columns: %1 ?"
-#~ msgstr "Disfacer colones: %1 ?"
-
 #~ msgid "Arrangement"
 #~ msgstr "Arindjmint"
-
-#~ msgid "Text Frames/Frame Sets"
-#~ msgstr "Cådes di Tecse/Eshonna di cådes"
-
-#~ msgid "Formula Frames"
-#~ msgstr "Cådes di formules"
-
-#~ msgid "Tables"
-#~ msgstr "Tåves"
-
-#~ msgid "Pictures"
-#~ msgstr "Imådjes"
-
-#~ msgid "Embedded Objects"
-#~ msgstr "Ravalés objets"
-
-#~ msgid "Empty"
-#~ msgstr "Vude"
-
-#~ msgid "Page %1"
-#~ msgstr "Pådje %1"
-
-#~ msgid "Column %1"
-#~ msgstr "Colone %1"
-
-#~ msgid "Text Frame %1"
-#~ msgstr "Cåde di Tecse %1"
-
-#~ msgid "Formula Frame %1"
-#~ msgstr "Cåde di formule %1"
-
-#~ msgid "Table %1"
-#~ msgstr "Tåve %1"
-
-#~ msgid "Picture (%1) %2"
-#~ msgstr "Imådje (%1) %2"
-
-#~ msgid "Document Structure"
-#~ msgstr "Tcherpinte do documint"
-
-#~ msgid "Insert Footnote/Endnote"
-#~ msgstr "Sititchî pînote"
-
-#~ msgid "Numbering"
-#~ msgstr "Limerotaedje"
-
-#~ msgid "&Automatic"
-#~ msgstr "&Otomatike"
-
-#~ msgid "&Manual"
-#~ msgstr "Al &mwin"
-
-#~ msgid "&Footnote"
-#~ msgstr "Pînote di &pådje"
-
-#~ msgid "&Endnote"
-#~ msgstr "Pînote di &documint"
-
-#~ msgid "C&onfigure..."
-#~ msgstr "&Apontyî..."
-
-#~ msgid "Frame Properties for %1"
-#~ msgstr "Prôpietés do cåde po %1"
-
-#~ msgid "Frame Properties for New Frame"
-#~ msgstr "Prôpietés do cåde po on novea cåde"
-
-#~ msgid "Frames Properties"
-#~ msgstr "Prôpietés des cådes"
-
-#~ msgid "Frame Settings for %1"
-#~ msgstr "Apontiaedjes do cåde po %1"
-
-#~ msgid "Frame is a copy of the previous frame"
-#~ msgstr "Li cåde est ene copeye do cåde di dvant"
-
-#~ msgid "If Text is Too Long for Frame"
-#~ msgstr "Si l' tecse est trop long pol cåde"
-
-#~ msgid "Create a new page"
-#~ msgstr "Ahiver ene novele pådje"
-
-#~ msgid "Resize last frame"
-#~ msgstr "Candjî l' grandeu do dierin cåde"
-
-#~ msgid "Don't show the extra text"
-#~ msgstr "Èn nén håyner l' tecse di trop"
-
-#~ msgid "On New Page Creation"
-#~ msgstr "Å moumint d' ahiver ene nouve pådje"
-
-#~ msgid "Place a copy of this frame"
-#~ msgstr "Bouter ene copeye di ci cåde ci"
-
-#~ msgid "Size (%1):"
-#~ msgstr "Grandeu (%1):"
-
-#~ msgid "Text Run Around"
-#~ msgstr "Tecse åtoû"
-
-#~ msgid "Run Around Side"
-#~ msgstr "Tecse åtoû di costé"
-
-#~ msgid ""
-#~ "_: Run Around\n"
-#~ "&Left"
-#~ msgstr "&hintche"
-
-#~ msgid ""
-#~ "_: Run Around\n"
-#~ "&Right"
-#~ msgstr "&droet"
-
-#~ msgid ""
-#~ "_: Run Around\n"
-#~ "Lon&gest side"
-#~ msgstr "li pus &lådje"
-
-#~ msgid "Connect Text Frames"
-#~ msgstr "Raloyî les cådes di tecse"
-
-#~ msgid "No."
-#~ msgstr "Lº"
-
-#~ msgid "Text Frameset %1"
-#~ msgstr "Cåde di tecse %1"
-
-#~ msgid "Geometry"
-#~ msgstr "Djeyometreye"
-
-#~ msgid "Left:"
-#~ msgstr "Hintche:"
-
-#~ msgid "Top:"
-#~ msgstr "Copete:"
-
-#~ msgid "Width:"
-#~ msgstr "Lårdjeu:"
-
-#~ msgid "Height:"
-#~ msgstr "Hôteu:"
-
-#, fuzzy
-#~ msgid "Margins"
-#~ msgstr "Mådjes (%1)"
-
-#~ msgid "Background"
-#~ msgstr "Fond"
-
-#~ msgid "Set new color on all selected frames"
-#~ msgstr "Mete li nouve coleur dins tos les cådes di tchoezis"
-
-#~ msgid "Background color:"
-#~ msgstr "Coleur di fond:"
-
-#~ msgid "Background style:"
-#~ msgstr "Estîle do fond:"
-
-#~ msgid "No Background Fill"
-#~ msgstr "Èn nén rimpli l' fond"
-
-#~ msgid "100% Fill Pattern"
-#~ msgstr "Motif di rimplixhaedje a 100%"
-
-#~ msgid "94% Fill Pattern"
-#~ msgstr "Motif di rimplixhaedje a 94%"
-
-#~ msgid "88% Fill Pattern"
-#~ msgstr "Motif di rimplixhaedje a 88%"
-
-#~ msgid "63% Fill Pattern"
-#~ msgstr "Motif di rimplixhaedje a 63%"
-
-#~ msgid "50% Fill Pattern"
-#~ msgstr "Motif di rimplixhaedje a 50%"
-
-#~ msgid "37% Fill Pattern"
-#~ msgstr "Motif di rimplixhaedje a 37%"
-
-#~ msgid "12% Fill Pattern"
-#~ msgstr "Motif di rimplixhaedje a 12%"
-
-#~ msgid "6% Fill Pattern"
-#~ msgstr "Motif di rimplixhaedje a 6%"
-
-#~ msgid "Horizontal Lines"
-#~ msgstr "Royes di coûtchî"
-
-#~ msgid "Vertical Lines"
-#~ msgstr "Royes d' astampé"
-
-#, fuzzy
-#~ msgid "&Borders"
-#~ msgstr "Boirdeures"
-
-#, fuzzy
-#~ msgid "St&yle:"
-#~ msgstr "Stîle:"
-
-#, fuzzy
-#~ msgid "Co&lor:"
-#~ msgstr "&Pôrt:"
-
-#~ msgid "Preview"
-#~ msgstr "Vey divant"
-
-#~ msgid "Frame Properties"
-#~ msgstr "Prôpietés do cåde"
-
-#~ msgid "Create Text Frame"
-#~ msgstr "Ahiver cåde di tecse"
-
-#~ msgid "Resize Frame"
-#~ msgstr "Candjî l' grandeu do cåde"
-
-#~ msgid "Change Border"
-#~ msgstr "Candjî l' boirdeure"
-
-#~ msgid "Change Left Border Frame"
-#~ msgstr "Candjî l' boirdeure di hintche do cåde"
-
-#~ msgid "Change Right Border Frame"
-#~ msgstr "Candjî l' boirdeure di droete do cåde"
-
-#~ msgid "Change Top Border Frame"
-#~ msgstr "Candjî l' boirdeure do dzeu do cåde"
-
-#~ msgid "Change Bottom Border Frame"
-#~ msgstr "Candjî l' boirdeure do dzo do cåde"
-
-#~ msgid "Synchronize changes"
-#~ msgstr "Sincronijhî les candjmints"
-
-#~ msgid "Right:"
-#~ msgstr "Droete:"
-
-#~ msgid "Bottom:"
-#~ msgstr "Valeye:"
-
-#~ msgid "Insert Row"
-#~ msgstr "Sititchî Roye"
-
-#~ msgid "Insert Column"
-#~ msgstr "Sititchî colone"
-
-#~ msgid "Insert New Row"
-#~ msgstr "Sititchî Colone"
-
-#~ msgid "Insert New Column"
-#~ msgstr "Sititchî Novele Colone"
-
-#~ msgid "Before"
-#~ msgstr "Divant"
-
-#~ msgid "After"
-#~ msgstr "Drî"
-
-#~ msgid "Row:"
-#~ msgstr "Roye:"
-
-#~ msgid "Column:"
-#~ msgstr "Colone:"
-
-#~ msgid "Printing..."
-#~ msgstr "Dji rexhe..."
-
-#~ msgid "Move Frame"
-#~ msgstr "Bodjî l' cåde"
-
-#~ msgid "Connect Frame"
-#~ msgstr "Raloyî les cådes di tecse"
-
-#~ msgid "Create Picture Frame"
-#~ msgstr "Ahiver on cåde d' imådje"
-
-#~ msgid "Create Formula Frame"
-#~ msgstr "Ahiver on cåde di formule"
-
-#~ msgid "Change Frame Background Color"
-#~ msgstr "Candjî l' coleur di fond do cåde"
-
-#~ msgid "Insert Page"
-#~ msgstr "Sititchî ene pådje"
-
-#~ msgid "Delete Page %1"
-#~ msgstr "Disfacer pådje %1"
 
 #, fuzzy
 #~ msgid "Resize column"
 #~ msgstr "Candjî l' grandeu del colone"
-
-#, fuzzy
-#~ msgid "Resize row"
-#~ msgstr "Candjî l' grandeu do cåde"
-
-#~ msgid "Configure KWord"
-#~ msgstr "Apontyî KWord"
-
-#~ msgid "Interface"
-#~ msgstr "Eterface"
-
-#~ msgid "Interface Settings"
-#~ msgstr "Apontiaedjes di l' eterface"
-
-#~ msgid "Document"
-#~ msgstr "Documint"
-
-#~ msgid "Document Settings"
-#~ msgstr "Apontiaedjes do documint"
-
-#~ msgid "Spelling"
-#~ msgstr "Speli"
-
-#~ msgid "Spell Checker Behavior"
-#~ msgstr "Dujhance del coridjrece"
-
-#~ msgid "Misc"
-#~ msgstr "Totes sôres"
-
-#~ msgid "Misc Settings"
-#~ msgstr "Apontiaedjes di totes sôres"
-
-#~ msgid "Path"
-#~ msgstr "Tchimin"
-
-#~ msgid "Path Settings"
-#~ msgstr "Apontiaedjes des tchmins"
-
-#~ msgid "Change Config"
-#~ msgstr "Candjî l' apontiaedje"
-
-#~ msgid "Show &status bar"
-#~ msgstr "Mostrer l' bår ås &messaedjes"
-
-#~ msgid "Undo/&redo limit:"
-#~ msgstr "Limite po disfé/&rifé:"
-
-#~ msgid "Limit the amount of undo/redo actions remembered to save memory"
-#~ msgstr "Limite do nombe d' accions a s' rimimbrer po les poleur disfé/rifé, pus li limite est hôte, pus ça prind del memwere"
-
-#~ msgid "Display &links"
-#~ msgstr "Håyner les &loyéns"
-
-#~ msgid "&Underline all links"
-#~ msgstr "&Sorlignî tos les loyéns"
-
-#~ msgid "Display c&omments"
-#~ msgstr "Håyner les tecse di ra&wete"
-
-#~ msgid "Display field code"
-#~ msgstr "Håyner l' côde des tchamps"
-
-#~ msgid "View formatting end paragraph"
-#~ msgstr "Vey les caracteres di metaedje e pådje di fén di hagnon"
-
-#~ msgid "View formatting space"
-#~ msgstr "Vey li caractere di metaedje e pådje des espåces"
-
-#~ msgid "Document Defaults"
-#~ msgstr "Prémetowes valixhances des documints"
-
-#~ msgid "Default column spacing:"
-#~ msgstr "Prémetou spåce inte les colones:"
-
-#~ msgid "Default font:"
-#~ msgstr "Prémetowe fonte:"
-
-#~ msgid "Choose..."
-#~ msgstr "Tchoezi..."
-
-#~ msgid "Autosave every (min):"
-#~ msgstr "Schapaedje tot seu (min.):"
-
-#~ msgid "No autosave"
-#~ msgstr "Nou schapaedje tot seu"
-
-#~ msgid " min"
-#~ msgstr " min"
-
-#~ msgid "Create backup file"
-#~ msgstr "Ahiver copeye di såvrité"
-
-#~ msgid "Cursor"
-#~ msgstr "Cursoe"
-
-#~ msgid "Type"
-#~ msgstr "Sôre"
-
-#~ msgid "Picture Path"
-#~ msgstr "Tchimin po ls imådjes"
-
-#~ msgid "Backup Path"
-#~ msgstr "Tchimin po les copeyes di såvrité"
-
-#~ msgid "Modify Path..."
-#~ msgstr "Candjî l' tchimin..."
-
-#~ msgid "Delete Bookmark"
-#~ msgstr "Disfacer rmåke"
-
-#~ msgid "Main Text Frameset"
-#~ msgstr "Mwaisse cåde di tecse"
-
-#~ msgid "First Page Header"
-#~ msgstr "Tiestire prumire pådje"
-
-#~ msgid "Odd Pages Header"
-#~ msgstr "Tiestire des pådjes impaires"
-
-#~ msgid "Even Pages Header"
-#~ msgstr "Tiestire des pådjes paires"
-
-#~ msgid "First Page Footer"
-#~ msgstr "Pî d' pådje del prumire Pådje"
-
-#~ msgid "Odd Pages Footer"
-#~ msgstr "Pî d' pådje des pådjes impaires"
-
-#~ msgid "Even Pages Footer"
-#~ msgstr "Pî d' pådje des pådjes paires"
-
-#~ msgid "Copy%1-%2"
-#~ msgstr "Copyî %1-%2"
-
-#~ msgid "Delete Table"
-#~ msgstr "Disfacer tåve"
-
-#~ msgid "Delete Text Frame"
-#~ msgstr "Disfacer cåde di tecse"
-
-#~ msgid "Delete Formula Frame"
-#~ msgstr "Disfacer cåde di formule"
-
-#~ msgid "Delete Picture Frame"
-#~ msgstr "Disfacer cåde d' imådje"
-
-#~ msgid "Delete Frames"
-#~ msgstr "Disfacer cådes"
-
-#~ msgid "Delete Frame"
-#~ msgstr "Disfacer Cåde"
-
-#~ msgid "Group name:"
-#~ msgstr "No do groupe:"
-
-#~ msgid "Expressions"
-#~ msgstr "Ratourneures"
-
-#~ msgid "&New"
-#~ msgstr "&Novea"
-
-#~ msgid "New"
-#~ msgstr "Novea"
-
-#~ msgid "empty"
-#~ msgstr "vude"
-
-#~ msgid "Formula %1"
-#~ msgstr "Formule %1"
-
-#~ msgid "Picture %1"
-#~ msgstr "Imådje %1"
-
-#~ msgid "Frame Style Manager"
-#~ msgstr "Manaedjeu di stîle des cådes"
-
-#~ msgid "General"
-#~ msgstr "Djenerå"
-
-#~ msgid "File name is empty."
-#~ msgstr "Li no do fitchî est vude"
-
-#~ msgid "Insert Picture"
-#~ msgstr "Sititchî Imådje"
-
-#~ msgid "Choose &Picture..."
-#~ msgstr "Tchoezi &imådje..."
-
-#~ msgid "Choose Picture"
-#~ msgstr "Tchoezi imådje"
-
-#, fuzzy
-#~ msgid "Header"
-#~ msgstr "Mostrer l' tiestire"
-
-#, fuzzy
-#~ msgid "Footer"
-#~ msgstr "Pînote"
-
-#, fuzzy
-#~ msgid "Unnamed Table"
-#~ msgstr "Ahiver tåve"
-
-#~ msgid "Move/Resize Frame"
-#~ msgstr "Bodjî ou candjî l' grandeu do cåde"
-
-#~ msgid "Join Cells"
-#~ msgstr "Rifonde Boesses"
-
-#~ msgid "Split Cells"
-#~ msgstr "Dispårti Boesses"
-
-#~ msgid "Table Style Manager"
-#~ msgstr "Manaedjeu di stîle des tåves"
-
-#~ msgid "Change..."
-#~ msgstr "Candjî..."
-
-#~ msgid "&Customize"
-#~ msgstr "A vosse &môde"
-
-#~ msgid "First row"
-#~ msgstr "Prumire roye"
-
-#~ msgid "Last row"
-#~ msgstr "Dierinne roye"
-
-#~ msgid "Body"
-#~ msgstr "Coir"
-
-#~ msgid "First column"
-#~ msgstr "Prumire colone"
-
-#~ msgid "Last column"
-#~ msgstr "Dierinne colone"
-
-#~ msgid "Insert Table of Contents"
-#~ msgstr "Sititchî tåve di l' ådvins"
-
-#~ msgid "Endnote %1"
-#~ msgstr "Pînote di documint %1"
-
-#~ msgid "Footnote %1"
-#~ msgstr "Pînote %1"
-
-#, fuzzy
-#~ msgid "Move Text"
-#~ msgstr "Relére li tecse"
-
-#~ msgid "Insert Expression"
-#~ msgstr "Sititchî ratourneure"
-
-#~ msgid "Insert Variable"
-#~ msgstr "Sititchî variåve"
-
-#~ msgid "ERROR"
-#~ msgstr "AROKE"
-
-#~ msgid "Footnote"
-#~ msgstr "Pînote"
-
-#~ msgid "Endnote"
-#~ msgstr "Pînote di documint"
-
-#~ msgid "&Create Template From Document..."
-#~ msgstr "&Fé on modele a pårti di ci documint ci..."
-
-#~ msgid "Statistics"
-#~ msgstr "Sitatistikes"
-
-#, fuzzy
-#~ msgid "Select All Frames"
-#~ msgstr "Disfacer cådes"
-
-#~ msgid "Delete Page"
-#~ msgstr "Disfacer pådje"
-
-#~ msgid "&Delete Frame"
-#~ msgstr "&Disfacer Cåde"
-
-#~ msgid "Delete the currently selected frame(s)."
-#~ msgstr "Disfacer les cåde(s) di tchoezi(s) pol moumint."
-
-#~ msgid "Text Mode"
-#~ msgstr "Môde tecse"
-
-#~ msgid "&Page Mode"
-#~ msgstr "Môde &pådje"
-
-#~ msgid "&Formatting Characters"
-#~ msgstr "Caracteres po l' &Metaedje è Pådje"
-
-#~ msgid "Toggle the display of non-printing characters."
-#~ msgstr "Discandjî li håynaedje des caracteres di controle nén veyåves."
-
-#~ msgid "Toggle the display of non-printing characters.<br><br>When this is enabled, KWord shows you tabs, spaces, carriage returns and other non-printing characters."
-#~ msgstr "Discandjî li håynaedje des caracteres di controle nén veyåves. <br><br> Cwand çouchal est metou, KWord mostere les tabulåcions, les féns d' roye et d' ôtes caracteres di controle normålmint nén veyåves."
-
-#~ msgid "Frame &Borders"
-#~ msgstr "&Boirdeure des Cådes"
 
 #~ msgid "Show &Header"
 #~ msgstr "Mostrer l' &tiestire"
@@ -1907,587 +4843,14 @@ msgstr "<LorintHendschel@skynet.be>"
 #~ msgid "Hide Foo&ter"
 #~ msgstr "Catchî l' pînote"
 
-#~ msgid "Sp&ecial Character..."
-#~ msgstr "Caract&ere Especiå..."
-
-#~ msgid "&Hard Frame Break"
-#~ msgstr "Côpaedje do Cåde C&hal"
-
-#~ msgid "Page..."
-#~ msgstr "Pådje..."
-
-#~ msgid "Link..."
-#~ msgstr "Loyén..."
-
-#~ msgid "Insert a Web address, email address or hyperlink to a file."
-#~ msgstr "Sititchîz ene hårdêye waibe, adresse emile ou loyén viè on fitchî locå."
-
-#~ msgid "Comment..."
-#~ msgstr "Rawete..."
-
-#~ msgid "Edit Comment..."
-#~ msgstr "Candjî l' rawete..."
-
-#~ msgid "Change the content of a comment."
-#~ msgstr "Candjî l' tecse di rawete."
-
-#~ msgid "Remove Comment"
-#~ msgstr "Oister rawete"
-
-#~ msgid "Remove the selected document comment."
-#~ msgstr "Oister li tchoezeye rawete do documint."
-
-#~ msgid "Copy Text of Comment..."
-#~ msgstr "Copyî tecse del rawete..."
-
-#~ msgid "Table of &Contents"
-#~ msgstr "Tåve di l' Å&dvins"
-
-#~ msgid "&Variable"
-#~ msgstr "&Variåve"
-
-#, fuzzy
-#~ msgid "Document &Information"
-#~ msgstr "Prémetowes valixhances des documints"
-
-#~ msgid "&Date"
-#~ msgstr "&Date"
-
-#~ msgid "&Time"
-#~ msgstr "E&ure"
-
-#~ msgid "&Page"
-#~ msgstr "&Pådje"
-
-#, fuzzy
-#~ msgid "&Statistic"
-#~ msgstr "Sitatistikes"
-
-#~ msgid "&Custom"
-#~ msgstr "A vosse &Môde"
-
-#~ msgid "&Refresh All Variables"
-#~ msgstr "&Rafrister totes les variåves"
-
-#~ msgid "&Expression"
-#~ msgstr "Ra&tourneure"
-
-#~ msgid "Te&xt Frame"
-#~ msgstr "Cåde di Te&cse"
-
-#~ msgid "Create a new text frame."
-#~ msgstr "Ahiver on novea cåde di tecse."
-
-#~ msgid "For&mula"
-#~ msgstr "For&mule"
-
-#~ msgid "Insert a formula into a new frame."
-#~ msgstr "Sititchî ene formule en on novea cåde."
-
-#~ msgid "&Table..."
-#~ msgstr "&Tåve..."
-
-#~ msgid "Create a table."
-#~ msgstr "Ahiver ene tåve."
-
-#~ msgid "P&icture..."
-#~ msgstr "&Imådje..."
-
-#~ msgid "Create a new frame for a picture."
-#~ msgstr "Ahiver on novea cåde po ene imådje."
-
-#~ msgid "&Object Frame"
-#~ msgstr "Cå&de po on Cayet"
-
-#~ msgid "Fi&le..."
-#~ msgstr "&Fitchî..."
-
-#~ msgid "&Font..."
-#~ msgstr "&Fonte..."
-
-#~ msgid "&Paragraph..."
-#~ msgstr "&Hagnon..."
-
-#, fuzzy
-#~ msgid "F&rame/Frameset Properties"
-#~ msgstr "Prôpietés &cåde/eshonna di cådes..."
-
-#~ msgid "Page &Layout..."
-#~ msgstr "&Arindjmint del pådje..."
-
-#, fuzzy
-#~ msgid "&Frame Style Manager"
-#~ msgstr "Manaedjeu di stîle des cådes"
-
-#~ msgid "Change attributes of framestyles."
-#~ msgstr "Candjî les atributs di stîle des cådes."
-
-#, fuzzy
-#~ msgid "&Style Manager"
-#~ msgstr "Manaedjeu des &stîles"
-
-#~ msgid "Increase Font Size"
-#~ msgstr "Ragrandi l' fonte"
-
-#~ msgid "Decrease Font Size"
-#~ msgstr "Raptiti l' fonte"
-
-#~ msgid "Font Family"
-#~ msgstr "Famile del Fonte"
-
-#~ msgid "St&yle"
-#~ msgstr "S&tîle"
-
-#~ msgid "Default Format"
-#~ msgstr "Prémetowe cogne"
-
-#~ msgid "&Bold"
-#~ msgstr "&Cråsse"
-
-#~ msgid "&Italic"
-#~ msgstr "C&lintcheye"
-
-#~ msgid "&Underline"
-#~ msgstr "&Sorlignî"
-
-#~ msgid "&Strike Out"
-#~ msgstr "&Bårer"
-
-#~ msgid "Align &Left"
-#~ msgstr "Aroymint &Hintche"
-
-#~ msgid "Align &Center"
-#~ msgstr "Aroymint &Mitan"
-
-#~ msgid "Align &Right"
-#~ msgstr "Aroymint &Droete"
-
-#~ msgid "Align &Block"
-#~ msgstr "Aroymint &bloc"
-
-#~ msgid "Superscript"
-#~ msgstr "Dizeu li Roye"
-
-#~ msgid "Subscript"
-#~ msgstr "Dizo li Roye"
-
-#~ msgid "Increase Indent"
-#~ msgstr "Ritrait pus grand"
-
-#~ msgid "Decrease Indent"
-#~ msgstr "Ritrait pus ptit"
-
-#~ msgid "Text Color..."
-#~ msgstr "Coleur do Tecse..."
-
-#~ msgid "Number"
-#~ msgstr "Limero"
-
-#~ msgid "Border Outline"
-#~ msgstr "Håyner Boirdeure"
-
-#~ msgid "Border Left"
-#~ msgstr "Boirdeure Hintche"
-
-#~ msgid "Border Right"
-#~ msgstr "Boirdeure Droete"
-
-#~ msgid "Border Top"
-#~ msgstr "Boirdeure Copete"
-
-#~ msgid "Border Bottom"
-#~ msgstr "Boirdeure Valeye"
-
-#~ msgid "Border Style"
-#~ msgstr "Stîle del boirdeure"
-
-#~ msgid "Border Width"
-#~ msgstr "Lårdjeu del boirdeure"
-
-#~ msgid "Border Color"
-#~ msgstr "Coleur del boirdeure"
-
-#~ msgid "Text Background Color..."
-#~ msgstr "Coleur di fond do tecse..."
-
-#, fuzzy
-#~ msgid "&Properties"
-#~ msgstr "Prôpietés do cåde"
-
-#~ msgid "&Insert Row..."
-#~ msgstr "S&ititchî Roye..."
-
-#~ msgid "I&nsert Column..."
-#~ msgstr "Si&titchî Colone..."
-
-#~ msgid "&Delete Selected Rows..."
-#~ msgstr "&Disfacer les royes di tchoezeyes..."
-
-#~ msgid "Delete selected rows from the current table."
-#~ msgstr "Disfacer les royes di tchoezeyes foû del tåve do moumint."
-
-#~ msgid "D&elete Selected Columns..."
-#~ msgstr "Dis&facer les tchoezeyès colones..."
-
-#~ msgid "Delete selected columns from the current table."
-#~ msgstr "Disfacer les colones colones di tchoezeyes foû del tåve do moumint."
-
-#~ msgid "Resize Column..."
-#~ msgstr "Candjî l' grandeu del colone..."
-
-#~ msgid "&Join Cells"
-#~ msgstr "Rif&onde Boesses..."
-
-#, fuzzy
-#~ msgid "&Split Cell..."
-#~ msgstr "Dis&pårti Boesses..."
-
-#~ msgid "Delete &Table"
-#~ msgstr "Disfacer &Tåve"
-
-#~ msgid "Delete the entire table."
-#~ msgstr "Disfacer l' tåve en etir."
-
-#, fuzzy
-#~ msgid "T&able Style Manager"
-#~ msgstr "Manaedjeu di stîle des tåves"
-
-#, fuzzy
-#~ msgid "Sort Text..."
-#~ msgstr "Relére li tecse"
-
-#~ msgid "Add Expression"
-#~ msgstr "Radjouter ratourneure"
-
-#~ msgid "Enable Autocorrection"
-#~ msgstr "Mete en alaedje li coridjaedje otomatike"
-
-#, fuzzy
-#~ msgid "Disable Autocorrection"
-#~ msgstr "Mete en alaedje li coridjaedje otomatike"
-
-#~ msgid "Configure &Autocorrection..."
-#~ msgstr "Apontyî li &coridjaedje otomatike..."
-
-#~ msgid "Change autocorrection options."
-#~ msgstr "Candjî les tchuzes do coridjaedje otomatike."
-
-#~ msgid "Custom &Variables..."
-#~ msgstr "&Variåves da vosse..."
-
-#~ msgid "Change Picture..."
-#~ msgstr "Candjî imådje..."
-
-#~ msgid "Open Link"
-#~ msgstr "Drovi hårdêye"
-
-#~ msgid "Open the link with the appropriate application."
-#~ msgstr "Drovi l' hårdêye avou l' bon programe."
-
-#~ msgid "Open the link with the appropriate application.<br><br>Web addresses are opened in a browser.<br>Email addresses begin a new message addressed to the link.<br>File links are opened by the appropriate viewer or editor."
-#~ msgstr "Drovi l' hårdêye avou l' bon programe. <br> <br>Les pådjes waibe (http://) sont  drovowes avou on betchteu. <br>Les adresses emile (mailto:) enondèt on novea messaedje po l' adresse del hårdêye. <br>Des loyéns locås (file://) sont drovous avou li bon håyneu ou aspougneu, sorlon li sôre do fitchî."
-
-#~ msgid "Change Link..."
-#~ msgstr "Candjî loyén..."
-
-#~ msgid "Copy Link"
-#~ msgstr "Copyî loyén"
-
-#~ msgid "Add to Bookmark"
-#~ msgstr "Radjouter åzès rmåkes"
-
-#~ msgid "Remove Link"
-#~ msgstr "Oister on loyén"
-
-#, fuzzy
-#~ msgid "Hide Doc Structure"
-#~ msgstr "Tcherpinte do documint"
-
-#, fuzzy
-#~ msgid "Hide Rulers"
-#~ msgstr "Catchî l' pînote"
-
-#~ msgid "Shows or hides rulers."
-#~ msgstr "Mostrer les rîles"
-
-#, fuzzy
-#~ msgid "Show Grid"
-#~ msgstr "Mostrer l' pînote"
-
-#, fuzzy
-#~ msgid "Hide Grid"
-#~ msgstr "Catchî l' pînote"
-
-#~ msgid "Configure C&ompletion..."
-#~ msgstr "Apontyî l' c&ompletaedje..."
-
-#~ msgid "Insert Non-Breaking Space"
-#~ msgstr "Sititchî espåce nén côpåve"
-
-#, fuzzy
-#~ msgid "Insert Non-Breaking Hyphen"
-#~ msgstr "Sititchî espåce nén côpåve"
-
-#, fuzzy
-#~ msgid "Increase Numbering Level"
-#~ msgstr "Ragrandi l' fonte"
-
-#, fuzzy
-#~ msgid "Decrease Numbering Level"
-#~ msgstr "Raptiti l' fonte"
-
-#~ msgid "Edit Variable..."
-#~ msgstr "Candjî variåve..."
-
-#~ msgid "Create Style From Selection..."
-#~ msgstr "Fé on stîle a pårti di çou k' est tchoezi..."
-
-#~ msgid "Create a new style based on the currently selected text."
-#~ msgstr "Fé on novea stîle a pårti do tecse tchoezi."
-
-#~ msgid "&Footnote..."
-#~ msgstr "&Pînote..."
-
-#~ msgid "Change the look of footnotes."
-#~ msgstr "Candjî l' rivnance des pînotes."
-
-#~ msgid "Edit Footnote"
-#~ msgstr "Candjî pînote"
-
-#~ msgid "Change the content of the currently selected footnote."
-#~ msgstr "Candjî l' tecse del pînote tchoezeye pol moumint."
-
-#~ msgid "Save Picture..."
-#~ msgstr "Schaper imådje..."
-
-#~ msgid "&Bookmark..."
-#~ msgstr "&Rimåke"
-
-#~ msgid "Select &Bookmark..."
-#~ msgstr "Tchoezi &rmåke..."
-
-#, fuzzy
-#~ msgid "Import Styles..."
-#~ msgstr "Abaguer stîle..."
-
-#~ msgid "New..."
-#~ msgstr "Novea..."
-
-#~ msgid "Page %1/%2"
-#~ msgstr "Pådje %1/%2"
-
-#~ msgid "Frame Background Color..."
-#~ msgstr "Coleur di fond do cåde..."
-
-#, fuzzy
-#~ msgid "Image"
-#~ msgstr "&Pådje"
-
-#, fuzzy
-#~ msgid "Plain text"
-#~ msgstr "Aclaper tecse"
-
-#~ msgid "Do you want to delete this frame?"
-#~ msgstr "Voloz disfacer ci cåde ci?"
-
-#~ msgid "Change Custom Variable"
-#~ msgstr "Candjî variåve da vosse"
-
 #~ msgid "Show Header"
 #~ msgstr "Mostrer l' tiestire"
 
 #~ msgid "Hide Header"
 #~ msgstr "Catchî l' tiestire"
 
-#~ msgid "Show Footer"
-#~ msgstr "Mostrer l' pînote"
-
 #~ msgid "Hide Footer"
 #~ msgstr "Catchî l' pînote"
-
-#~ msgid "Insert Footnote"
-#~ msgstr "Sititchî Pînote"
-
-#~ msgid "Update Table of &Contents"
-#~ msgstr "Mete a djoû li tåve di l' å&dvins"
-
-#~ msgid "Change Font"
-#~ msgstr "Candjî fonte"
-
-#~ msgid "Paragraph Settings"
-#~ msgstr "Apontiaedjes des hagnons"
-
-#~ msgid "Change Layout"
-#~ msgstr "Candjî Arindjmint"
-
-#~ msgid "You must select a frame first."
-#~ msgstr "Vos dvoz tchoezi on cåde d' aprume."
-
-#~ msgid "Insert Table"
-#~ msgstr "Sititchî ene Tåve"
-
-#~ msgid "Insert Formula"
-#~ msgstr "Sititchî ene Formule"
-
-#~ msgid "Remove Rows"
-#~ msgstr "Oister royes"
-
-#~ msgid "Remove Row"
-#~ msgstr "Oister roye"
-
-#~ msgid "Remove Columns"
-#~ msgstr "Oister colones"
-
-#~ msgid "Remove Column"
-#~ msgstr "Oister colone"
-
-#~ msgid "Delete Row"
-#~ msgstr "Disfacer Roye"
-
-#~ msgid "Delete Column"
-#~ msgstr "Disfacer Colone"
-
-#~ msgid "Resize Column"
-#~ msgstr "Candjî l' grandeu del colone"
-
-#~ msgid "Change Text Size"
-#~ msgstr "Candjî l' grandeu do tecse"
-
-#~ msgid "Change Text Font"
-#~ msgstr "Candjî l' fonte do tecse"
-
-#~ msgid "Make Text Bold"
-#~ msgstr "Mete li tecse e cråssès letes"
-
-#~ msgid "Underline Text"
-#~ msgstr "Sorlignî l' tecse"
-
-#~ msgid "Strike Out Text"
-#~ msgstr "Bårer l' tecse"
-
-#~ msgid "Set Text Color"
-#~ msgstr "Defini l' coleur do tecse"
-
-#~ msgid "Go to Footnote"
-#~ msgstr "Aler al pînote"
-
-#~ msgid "Go to Endnote"
-#~ msgstr "Aler al pînote do documint"
-
-#~ msgid "Change Picture"
-#~ msgstr "Candjî imådje"
-
-#~ msgid "Save Picture"
-#~ msgstr "Schaper imådje"
-
-#, fuzzy
-#~ msgid "Save Failed"
-#~ msgstr "Schaper imådje"
-
-#~ msgid "Change Link"
-#~ msgstr "Candjî loyén"
-
-#~ msgid "Insert File"
-#~ msgstr "Sititchî on fitchî"
-
-#~ msgid "Normal"
-#~ msgstr "Miernowe"
-
-#~ msgid "Replace Word"
-#~ msgstr "Replaecî mot"
-
-#~ msgid "Text"
-#~ msgstr "Tecse"
-
-#~ msgid "Selected Text"
-#~ msgstr "Tecse di tchoezi"
-
-#~ msgid "Counting..."
-#~ msgstr "Dji conte..."
-
-#~ msgid "approximately %1"
-#~ msgstr "a pô près %1"
-
-#~ msgid "Number of pages:"
-#~ msgstr "Nombe di pådjes:"
-
-#~ msgid "Number of frames:"
-#~ msgstr "Nombe di cådes:"
-
-#~ msgid "Number of pictures:"
-#~ msgstr "Nombe d' imådjes:"
-
-#~ msgid "Number of tables:"
-#~ msgstr "Nombe di tåves:"
-
-#~ msgid "Characters including spaces:"
-#~ msgstr "Caracteres, tot contant les vudes:"
-
-#~ msgid "Characters without spaces:"
-#~ msgstr "Caracteres, sins conter les vudes:"
-
-#~ msgid "Syllables:"
-#~ msgstr "Sillabes:"
-
-#~ msgid "Words:"
-#~ msgstr "Mots:"
-
-#~ msgid "Sentences:"
-#~ msgstr "Fråzes:"
-
-#~ msgid "Lines:"
-#~ msgstr "Royes:"
-
-#~ msgid "Print Preview..."
-#~ msgstr "Vey divant d' imprimer..."
-
-#~ msgid "Create New Document"
-#~ msgstr "Ahiver novea documint"
-
-#~ msgid "File to open"
-#~ msgstr "Fitchî a drovi"
-
-#~ msgid "Sort Text"
-#~ msgstr "Relére li tecse"
-
-#~ msgid "Sort"
-#~ msgstr "Relére"
-
-#~ msgid "Number of rows:"
-#~ msgstr "Nombe di royes:"
-
-#~ msgid "Number of columns:"
-#~ msgstr "Nombe di colones:"
-
-#~ msgid "Table Settings"
-#~ msgstr "Apontiaedjes del tåve"
-
-#~ msgid "Cell heights:"
-#~ msgstr "Hôteu des boesses:"
-
-#~ msgid "Automatic"
-#~ msgstr "Tot seu"
-
-#~ msgid "Manual"
-#~ msgstr "Al mwin"
-
-#~ msgid "Cell widths:"
-#~ msgstr "Lårdjeu des boesses:"
-
-#~ msgid "Templates"
-#~ msgstr "Modeles"
-
-#~ msgid "Add New Rows to Table"
-#~ msgstr "Radjouter novelès royes al tåve"
-
-#~ msgid "Remove Rows From Table"
-#~ msgstr "Oister royes foû del tåve"
-
-#~ msgid "Add New Columns to Table"
-#~ msgstr "Radjouter novelès colones al tåve"
-
-#~ msgid "Remove Columns From Table"
-#~ msgstr "Oister colones foû del tåve"
 
 #~ msgid "Height (%1):"
 #~ msgstr "Hôteu (%1):"
@@ -2510,10 +4873,6 @@ msgstr "<LorintHendschel@skynet.be>"
 #, fuzzy
 #~ msgid "Number of Table"
 #~ msgstr "Nombe di tåves:"
-
-#, fuzzy
-#~ msgid "Number of Embedded Object"
-#~ msgstr "Ravalés objets"
 
 #, fuzzy
 #~ msgid "Number of Word"
