@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
-"POT-Creation-Date: 2006-02-12 10:57+0100\n"
+"POT-Creation-Date: 2006-02-13 10:38+0100\n"
 "PO-Revision-Date: 2004-04-05 21:08+0200\n"
 "Last-Translator: Pablo Saratxaga <pablo@walon.org>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -754,7 +754,7 @@ msgstr "Sititchî caractere sipeciå"
 msgid "&Replace:"
 msgstr "&Replaecî:"
 
-#: kofficecore/koversiondialog.cc:56 kotext/KoAutoFormatDia.cpp:582
+#: kofficecore/Koversiondialog.cpp:56 kotext/KoAutoFormatDia.cpp:582
 #: kotext/KoAutoFormatDia.cpp:743 kotext/KoAutoFormatDia.cpp:762
 #: kotext/KoAutoFormatDia.cpp:809 kotext/KoAutoFormatDia.cpp:827
 #: kotext/KoAutoFormatDia.cpp:903
@@ -1054,7 +1054,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./kofficeui/KoGeneralPropertyUi.ui line 16
-#: kofficecore/koDocumentInfoDlg.cc:257 kotext/KoStyleManager.cpp:233
+#: kofficecore/KoDocumentInfoDlg.cpp:257 kotext/KoStyleManager.cpp:233
 #: rc.cpp:303
 #, no-c-format
 msgid "General"
@@ -3072,7 +3072,7 @@ msgstr "Sititchî on Cayet"
 msgid "Object"
 msgstr "Cayet"
 
-#: kofficecore/koversiondialog.cc:52 kofficecore/koversiondialog.cc:125
+#: kofficecore/Koversiondialog.cpp:52 kofficecore/Koversiondialog.cpp:125
 #: kofficeui/koPartSelectDia.cc:37
 msgid "Comment"
 msgstr "Rawete"
@@ -3296,14 +3296,14 @@ msgid ""
 "DeepSkyBlue"
 msgstr "Bleu"
 
-#: kofficecore/koDocument.cc:1392 kofficecore/koDocument.cc:1643
-#: kofficecore/koMainWindow.cc:546 kofficeui/koTemplateChooseDia.cc:87
+#: kofficecore/KoDocument.cpp:1392 kofficecore/KoDocument.cpp:1643
+#: kofficecore/KoMainWindow.cpp:546 kofficeui/koTemplateChooseDia.cc:87
 #: kofficeui/koTemplateChooseDia.cc:709
 #, fuzzy
 msgid "The file %1 does not exist."
 msgstr "Li fitchî %1 n' egzistêye nén"
 
-#: kofficecore/koMainWindow.cc:1100 kofficeui/koTemplateChooseDia.cc:187
+#: kofficecore/KoMainWindow.cpp:1100 kofficeui/koTemplateChooseDia.cc:187
 msgid "Open Document"
 msgstr "Drovi on documint"
 
@@ -4123,52 +4123,63 @@ msgstr ""
 msgid " plus "
 msgstr "pt"
 
-#: kofficecore/koUnit.cc:48
-msgid "Millimeters (mm)"
-msgstr "Milimetes (mm)"
+#: kofficecore/KoDocument.cpp:1616 kofficecore/KoOasisStore.cpp:148
+#, c-format
+msgid "Could not find %1"
+msgstr "Dji n' a savou trover %1"
 
-#: kofficecore/koUnit.cc:50
-msgid "Centimeters (cm)"
-msgstr "Cintimetes (cm)"
-
-#: kofficecore/koUnit.cc:52
-msgid "Decimeters (dm)"
-msgstr "Decimetes (dm)"
-
-#: kofficecore/koUnit.cc:54
-msgid "Inches (in)"
-msgstr "Pôces (in)"
-
-#: kofficecore/koUnit.cc:56
-msgid "Pica (pi)"
-msgstr "Picas (pi)"
-
-#: kofficecore/koUnit.cc:58
-msgid "Didot (dd)"
+#: kofficecore/KoOasisStore.cpp:170
+msgid ""
+"Parsing error in the main document at line %1, column %2\n"
+"Error message: %3"
 msgstr ""
 
-#: kofficecore/koUnit.cc:60
-msgid "Cicero (cc)"
+#: kofficecore/KoFilterManager.cpp:52
+msgid "Choose Filter"
+msgstr "Tchoezi passete"
+
+#: kofficecore/KoFilterManager.cpp:64
+msgid "Select a filter:"
+msgstr "Tchoezi ene passete:"
+
+#: kofficecore/KoFilterManager.cpp:294 kofficecore/KoFilterManager.cpp:303
+msgid "Could not export file."
+msgstr "Dji n' a savou ebaguer l' fitchî."
+
+#: kofficecore/KoFilterManager.cpp:294 kofficecore/KoFilterManager.cpp:303
+msgid "Missing Export Filter"
+msgstr "Passete d' ebagaedje mancante"
+
+#: kofficecore/KoFilterManager.cpp:591
+#, c-format
+msgid ""
+"Could not import file of type\n"
+"%1"
+msgstr ""
+"Dji n' a savou abaguer on fitchî del sôre\n"
+"%1"
+
+#: kofficecore/KoFilterManager.cpp:593
+msgid "Missing Import Filter"
+msgstr "Passete d' abagaedje mancante"
+
+#: kofficecore/KoDocumentInfoDlg.cpp:95
+msgid "Document Information"
+msgstr "Informåcion sol Documint"
+
+#: kofficecore/KoDocumentInfoDlg.cpp:146
+msgid ""
+"No personal contact data set, please use the option                             "
+"      \"Set as Personal Contact Data\" from the \"Edit\" menu in KAddressbook "
+"to set one."
 msgstr ""
 
-#: kofficecore/koUnit.cc:62
-msgid "Points (pt)"
-msgstr "Ponts (pt)"
+#: kofficecore/KoDocumentInfoDlg.cpp:203
+msgid "Author"
+msgstr "Oteur"
 
-#: kofficecore/koUnit.cc:64
-msgid "Error!"
-msgstr "Aroke!"
-
-#: kofficecore/kofiledialog.cpp:93
-msgid "%1 (Uncompressed XML Files)"
-msgstr ""
-
-#: kofficecore/kofiledialog.cpp:95
-msgid "%1 (Flat XML File)"
-msgstr ""
-
-#: kofficecore/kofiledialog.cpp:112
-msgid "%1 (%2 Compatible)"
+#: kofficecore/KoDocumentInfoDlg.cpp:293
+msgid "User-Defined Metadata"
 msgstr ""
 
 #: kofficecore/KoApplicationIface.cc:48
@@ -4176,144 +4187,45 @@ msgstr ""
 msgid "Unknown KOffice MimeType %s. Check your installation."
 msgstr ""
 
-#: kofficecore/koDocumentInfoDlg.cc:95
-msgid "Document Information"
-msgstr "Informåcion sol Documint"
-
-#: kofficecore/koDocumentInfoDlg.cc:146
-msgid ""
-"No personal contact data set, please use the option                             "
-"      \"Set as Personal Contact Data\" from the \"Edit\" menu in KAddressbook "
-"to set one."
-msgstr ""
-
-#: kofficecore/koDocumentInfoDlg.cc:203
-msgid "Author"
-msgstr "Oteur"
-
-#: kofficecore/koDocumentInfoDlg.cc:293
-msgid "User-Defined Metadata"
-msgstr ""
-
-#: kofficecore/koMainWindow.cc:223
-msgid "Versions..."
-msgstr ""
-
-#: kofficecore/koMainWindow.cc:227
-msgid "I&mport..."
-msgstr "&Aberweter"
-
-#: kofficecore/koMainWindow.cc:230
-msgid "E&xport..."
-msgstr "&Eberweter..."
-
-#: kofficecore/koMainWindow.cc:236
-msgid "&Document Information"
-msgstr "Informåcion sol &documint"
-
-#: kofficecore/koMainWindow.cc:261
-msgid "&Close All Views"
-msgstr "&Clôre tos les Håynaedjes"
-
-#: kofficecore/koMainWindow.cc:266
-msgid "&Split View"
-msgstr "Di&spårti li Håynaedje"
-
-#: kofficecore/koMainWindow.cc:269
-msgid "&Remove View"
-msgstr "&Oister ci Håynaedje"
-
-#: kofficecore/koMainWindow.cc:274
-msgid "Splitter &Orientation"
-msgstr ""
-
-#: kofficecore/koMainWindow.cc:278
-msgid "&Vertical"
-msgstr "&Astampé"
-
-#: kofficecore/koMainWindow.cc:279
-msgid "&Horizontal"
-msgstr "&Coûtchî"
-
-#: kofficecore/koMainWindow.cc:513
+#: kofficecore/KoDocumentChild.cpp:216 kofficecore/KoDocumentChild.cpp:255
 #, c-format
-msgid "Save as %1"
+msgid "No handler found for %1"
 msgstr ""
 
-#: kofficecore/koMainWindow.cc:674
-msgid "%1 (unknown file type)"
-msgstr "%1 (sôre di fitchî nén cnoxhowe)"
-
-#: kofficecore/koMainWindow.cc:684
+#: kofficecore/KoDocumentChild.cpp:309
+#, c-format
 msgid ""
-"<qt>Saving as a %1 may result in some loss of formatting."
-"<p>Do you still want to save in this format?</qt>"
+"This document contains an external link to a remote document\n"
+"%1"
+msgstr ""
+"Ci documint chal a-st å dvins on loyén viè ene hårdêye å lon\n"
+"%1"
+
+#: kofficecore/KoDocumentChild.cpp:310
+msgid "Confirmation Required"
 msgstr ""
 
-#: kofficecore/koMainWindow.cc:687
-msgid "Confirm Save"
-msgstr ""
+#: kofficecore/KoDocumentChild.cpp:310
+msgid "Download"
+msgstr "Aberweter"
 
-#: kofficecore/koMainWindow.cc:698
-msgid ""
-"<qt>Exporting as a %1 may result in some loss of formatting."
-"<p>Do you still want to export to this format?</qt>"
-msgstr ""
+#: kofficecore/KoDocumentChild.cpp:310
+msgid "Skip"
+msgstr "Passer houte"
 
-#: kofficecore/koMainWindow.cc:701
-msgid "Confirm Export"
-msgstr ""
-
-#: kofficecore/koMainWindow.cc:790
-msgid "Save Document As"
-msgstr "Schaper eyet (r)lomer"
-
-#: kofficecore/koMainWindow.cc:792
-msgid "Export Document As"
-msgstr "Ebaguer documint come"
-
-#: kofficecore/koMainWindow.cc:839
-msgid ""
-"A document with this name already exists.\n"
-"Do you want to overwrite it?"
-msgstr ""
-"I gn a ddja on documint avou ci no la.\n"
-"El voloz spotchî?"
-
-#: kofficecore/koDocument.cc:1971 kofficecore/koMainWindow.cc:1029
-msgid ""
-"<p>The document <b>'%1'</b> has been modified.</p>"
-"<p>Do you want to save it?</p>"
-msgstr "<p>Li documint <b>«%1»</b> a stî candjî.</p><p>El voloz schaper?</p>"
-
-#: kofficecore/koMainWindow.cc:1102
-msgid "Import Document"
-msgstr "Aberweter on documint"
-
-#: kofficecore/koMainWindow.cc:1514
-msgid "Show %1 Toolbar"
-msgstr "Håyner %1 Bår ås Usteyes"
-
-#: kofficecore/koMainWindow.cc:1516
-#, fuzzy
-msgid "Hide %1 Toolbar"
-msgstr "Håyner %1 Bår ås Usteyes"
-
-#: kofficecore/koMainWindow.cc:1593
-#, fuzzy
-msgid "Document"
-msgstr "Drovi on documint"
-
-#: kofficecore/koMainWindow.cc:1603
+#: kofficecore/KoDocumentChild.cpp:338
 #, fuzzy, c-format
-msgid "Document - %1"
-msgstr "Tite do documint"
-
-#: kofficecore/koMainWindow.cc:1632
 msgid ""
-"You will lose all your changes!\n"
-"Do you want to continue?"
-msgstr ""
+"Could not load embedded object:\n"
+"%1"
+msgstr "Dji n' a savou tcherdjî l' ravalé objet."
+
+#: kofficecore/KoDocumentChild.cpp:340
+#, fuzzy
+msgid ""
+"Could not load external document %1:\n"
+"%2"
+msgstr "Dji n' a savou tcherdjî l' ravalé objet."
 
 #: kofficecore/kkbdaccessextensions.cpp:166
 msgid "Resize Panel Forward"
@@ -4327,17 +4239,17 @@ msgstr ""
 msgid "Access Keys"
 msgstr ""
 
-#: kofficecore/koDetailsPane.cc:97
+#: kofficecore/KoDetailsPane.cpp:97
 #, fuzzy
 msgid "Use This Template"
 msgstr "Ahiver on modele"
 
-#: kofficecore/koDetailsPane.cc:288
+#: kofficecore/KoDetailsPane.cpp:288
 #, fuzzy
 msgid "Open This Document"
 msgstr "Drovi on documint"
 
-#: kofficecore/koDetailsPane.cc:380
+#: kofficecore/KoDetailsPane.cpp:380
 msgid ""
 "_: File modification date and time. %1 is date time\n"
 "<tr>"
@@ -4345,7 +4257,7 @@ msgid ""
 "<td>%1</td></tr>"
 msgstr ""
 
-#: kofficecore/koDetailsPane.cc:382
+#: kofficecore/KoDetailsPane.cpp:382
 msgid ""
 "_: File access date and time. %1 is date time\n"
 "<tr>"
@@ -4353,109 +4265,105 @@ msgid ""
 "<td>%1</td></tr>"
 msgstr ""
 
-#: kofficecore/koDocumentChild.cc:216 kofficecore/koDocumentChild.cc:255
+#: kofficecore/KoUnit.cpp:48
+msgid "Millimeters (mm)"
+msgstr "Milimetes (mm)"
+
+#: kofficecore/KoUnit.cpp:50
+msgid "Centimeters (cm)"
+msgstr "Cintimetes (cm)"
+
+#: kofficecore/KoUnit.cpp:52
+msgid "Decimeters (dm)"
+msgstr "Decimetes (dm)"
+
+#: kofficecore/KoUnit.cpp:54
+msgid "Inches (in)"
+msgstr "Pôces (in)"
+
+#: kofficecore/KoUnit.cpp:56
+msgid "Pica (pi)"
+msgstr "Picas (pi)"
+
+#: kofficecore/KoUnit.cpp:58
+msgid "Didot (dd)"
+msgstr ""
+
+#: kofficecore/KoUnit.cpp:60
+msgid "Cicero (cc)"
+msgstr ""
+
+#: kofficecore/KoUnit.cpp:62
+msgid "Points (pt)"
+msgstr "Ponts (pt)"
+
+#: kofficecore/KoUnit.cpp:64
+msgid "Error!"
+msgstr "Aroke!"
+
+#: kofficecore/KoApplication.cpp:41
+msgid "Only print and exit"
+msgstr ""
+
+#: kofficecore/KoApplication.cpp:42
+msgid "Open a new document with a template"
+msgstr ""
+
+#: kofficecore/KoApplication.cpp:43
+msgid "Override display DPI"
+msgstr ""
+
+#: kofficecore/KoApplication.cpp:76
+msgid "KOffice"
+msgstr ""
+
+#: kofficecore/KoApplication.cpp:183
+msgid "No template found for: %1 "
+msgstr ""
+
+#: kofficecore/KoApplication.cpp:186
 #, c-format
-msgid "No handler found for %1"
+msgid "Too many templates found for: %1"
 msgstr ""
 
-#: kofficecore/koDocumentChild.cc:309
-#, c-format
-msgid ""
-"This document contains an external link to a remote document\n"
-"%1"
-msgstr ""
-"Ci documint chal a-st å dvins on loyén viè ene hårdêye å lon\n"
-"%1"
-
-#: kofficecore/koDocumentChild.cc:310
-msgid "Confirmation Required"
+#: kofficecore/KoApplication.cpp:206
+msgid "Template %1 failed to load."
 msgstr ""
 
-#: kofficecore/koDocumentChild.cc:310
-msgid "Download"
-msgstr "Aberweter"
-
-#: kofficecore/koDocumentChild.cc:310
-msgid "Skip"
-msgstr "Passer houte"
-
-#: kofficecore/koDocumentChild.cc:338
-#, fuzzy, c-format
-msgid ""
-"Could not load embedded object:\n"
-"%1"
-msgstr "Dji n' a savou tcherdjî l' ravalé objet."
-
-#: kofficecore/koDocumentChild.cc:340
-#, fuzzy
-msgid ""
-"Could not load external document %1:\n"
-"%2"
-msgstr "Dji n' a savou tcherdjî l' ravalé objet."
-
-#: kofficecore/koFilterManager.cc:52
-msgid "Choose Filter"
-msgstr "Tchoezi passete"
-
-#: kofficecore/koFilterManager.cc:64
-msgid "Select a filter:"
-msgstr "Tchoezi ene passete:"
-
-#: kofficecore/koFilterManager.cc:294 kofficecore/koFilterManager.cc:303
-msgid "Could not export file."
-msgstr "Dji n' a savou ebaguer l' fitchî."
-
-#: kofficecore/koFilterManager.cc:294 kofficecore/koFilterManager.cc:303
-msgid "Missing Export Filter"
-msgstr "Passete d' ebagaedje mancante"
-
-#: kofficecore/koFilterManager.cc:591
-#, c-format
-msgid ""
-"Could not import file of type\n"
-"%1"
-msgstr ""
-"Dji n' a savou abaguer on fitchî del sôre\n"
-"%1"
-
-#: kofficecore/koFilterManager.cc:593
-msgid "Missing Import Filter"
-msgstr "Passete d' abagaedje mancante"
-
-#: kofficecore/koDocument.cc:391
+#: kofficecore/KoDocument.cpp:391
 msgid "Making backup..."
 msgstr ""
 
-#: kofficecore/koDocument.cc:405
+#: kofficecore/KoDocument.cpp:405
 msgid "Saving..."
 msgstr "Schapant.."
 
-#: kofficecore/koDocument.cc:537
+#: kofficecore/KoDocument.cpp:537
 msgid "Autosaving..."
 msgstr ""
 
-#: kofficecore/koDocument.cc:549
+#: kofficecore/KoDocument.cpp:549
 msgid "Error during autosave! Partition full?"
 msgstr ""
 
-#: kofficecore/koDocument.cc:982
+#: kofficecore/KoDocument.cpp:982
 msgid "Could not create the file for saving"
 msgstr ""
 
-#: kofficecore/koDocument.cc:1020 kofficecore/koDocument.cc:1036
-#: kofficecore/koDocument.cc:1075
+#: kofficecore/KoDocument.cpp:1020 kofficecore/KoDocument.cpp:1036
+#: kofficecore/KoDocument.cpp:1075
 msgid "Not able to write '%1'. Partition full?"
 msgstr ""
 
-#: kofficecore/koDocument.cc:1028 kofficecore/koDocument.cc:1044
+#: kofficecore/KoDocument.cpp:1028 kofficecore/KoDocument.cpp:1044
 msgid "Error while trying to write '%1'. Partition full?"
 msgstr ""
 
-#: kofficecore/koDocument.cc:1057
+#: kofficecore/KoDocument.cpp:1057
 msgid "Error while saving embedded documents"
 msgstr ""
 
-#: kofficecore/koDocument.cc:1280
+#: kofficecore/KoDocument.cpp:1280
 msgid ""
 "An autosaved file for an unnamed document exists in %1.\n"
 "This file is dated %2\n"
@@ -4465,7 +4373,7 @@ msgstr ""
 "Li date di ç' fitchî la est %2\n"
 "Voloz vs ki djel drove?"
 
-#: kofficecore/koDocument.cc:1333
+#: kofficecore/KoDocument.cpp:1333
 #, c-format
 msgid ""
 "Malformed URL\n"
@@ -4474,7 +4382,7 @@ msgstr ""
 "URL må basti\n"
 "%1"
 
-#: kofficecore/koDocument.cc:1351
+#: kofficecore/KoDocument.cpp:1351
 msgid ""
 "An autosaved file exists for this document.\n"
 "Do you want to open it instead?"
@@ -4482,7 +4390,7 @@ msgstr ""
 "On fitchî ki dj' a schapé tot seu egzistêye po ci documint ci\n"
 "Voloz vs ki djel drove ?"
 
-#: kofficecore/koDocument.cc:1441 kofficecore/koDocument.cc:2337
+#: kofficecore/KoDocument.cpp:1441 kofficecore/KoDocument.cpp:2337
 #, c-format
 msgid ""
 "Could not open\n"
@@ -4491,57 +4399,57 @@ msgstr ""
 "Dji n' a savou drovi\n"
 "%1"
 
-#: kofficecore/koDocument.cc:1461
+#: kofficecore/KoDocument.cpp:1461
 msgid "Creation error"
 msgstr ""
 
-#: kofficecore/koDocument.cc:1464
+#: kofficecore/KoDocument.cpp:1464
 #, fuzzy
 msgid "File not found"
 msgstr "Eplaeçmint do fitchî:"
 
-#: kofficecore/koDocument.cc:1467
+#: kofficecore/KoDocument.cpp:1467
 msgid "Cannot create storage"
 msgstr ""
 
-#: kofficecore/koDocument.cc:1470
+#: kofficecore/KoDocument.cpp:1470
 msgid "Bad MIME type"
 msgstr ""
 
-#: kofficecore/koDocument.cc:1473
+#: kofficecore/KoDocument.cpp:1473
 msgid "Error in embedded document"
 msgstr ""
 
-#: kofficecore/koDocument.cc:1476
+#: kofficecore/KoDocument.cpp:1476
 msgid "Format not recognized"
 msgstr ""
 
-#: kofficecore/koDocument.cc:1479
+#: kofficecore/KoDocument.cpp:1479
 msgid "Not implemented"
 msgstr ""
 
-#: kofficecore/koDocument.cc:1482
+#: kofficecore/KoDocument.cpp:1482
 msgid "Parsing error"
 msgstr ""
 
-#: kofficecore/koDocument.cc:1485
+#: kofficecore/KoDocument.cpp:1485
 msgid "Document is password protected"
 msgstr ""
 
-#: kofficecore/koDocument.cc:1492
+#: kofficecore/KoDocument.cpp:1492
 #, fuzzy
 msgid "Internal error"
 msgstr "Daegntoele"
 
-#: kofficecore/koDocument.cc:1495
+#: kofficecore/KoDocument.cpp:1495
 msgid "Out of memory"
 msgstr ""
 
-#: kofficecore/koDocument.cc:1502
+#: kofficecore/KoDocument.cpp:1502
 msgid "Unknown error"
 msgstr ""
 
-#: kofficecore/koDocument.cc:1507
+#: kofficecore/KoDocument.cpp:1507
 #, fuzzy
 msgid ""
 "Could not open\n"
@@ -4551,50 +4459,51 @@ msgstr ""
 "Dji n' a savou drovi li fitchî %1\n"
 "Vochal li råjhon: %2"
 
-#: kofficecore/koDocument.cc:1616 kofficecore/koOasisStore.cpp:148
-#, c-format
-msgid "Could not find %1"
-msgstr "Dji n' a savou trover %1"
-
-#: kofficecore/koDocument.cc:1628
+#: kofficecore/KoDocument.cpp:1628
 msgid ""
 "Parsing error in %1 at line %2, column %3\n"
 "Error message: %4"
 msgstr ""
 
-#: kofficecore/koDocument.cc:1648
+#: kofficecore/KoDocument.cpp:1648
 msgid "%1 is not a file."
 msgstr ""
 
-#: kofficecore/koDocument.cc:1664
+#: kofficecore/KoDocument.cpp:1664
 msgid "Could not open the file for reading (check read permissions)."
 msgstr ""
 
-#: kofficecore/koDocument.cc:1674
+#: kofficecore/KoDocument.cpp:1674
 #, fuzzy
 msgid "Could not read the beginning of the file."
 msgstr "Dji n' a savou ebaguer l' fitchî."
 
-#: kofficecore/koDocument.cc:1701
+#: kofficecore/KoDocument.cpp:1701
 msgid ""
 "parsing error in the main document at line %1, column %2\n"
 "Error message: %3"
 msgstr ""
 
-#: kofficecore/koDocument.cc:1725
+#: kofficecore/KoDocument.cpp:1725
 #, c-format
 msgid "Not a valid KOffice file: %1"
 msgstr ""
 
-#: kofficecore/koDocument.cc:1771
+#: kofficecore/KoDocument.cpp:1771
 msgid "Invalid document: no file 'maindoc.xml'."
 msgstr ""
 
-#: kofficecore/koDocument.cc:2148
+#: kofficecore/KoDocument.cpp:1971 kofficecore/KoMainWindow.cpp:1029
+msgid ""
+"<p>The document <b>'%1'</b> has been modified.</p>"
+"<p>Do you want to save it?</p>"
+msgstr "<p>Li documint <b>«%1»</b> a stî candjî.</p><p>El voloz schaper?</p>"
+
+#: kofficecore/KoDocument.cpp:2148
 msgid "Internal error: saveXML not implemented"
 msgstr "Divintrinne aroke: saveXML nén co epleminté"
 
-#: kofficecore/koDocument.cc:2325
+#: kofficecore/KoDocument.cpp:2325
 #, c-format
 msgid ""
 "Could not save\n"
@@ -4603,7 +4512,7 @@ msgstr ""
 "Dji n' sai schaper\n"
 "%1"
 
-#: kofficecore/koDocument.cc:2329
+#: kofficecore/KoDocument.cpp:2329
 msgid ""
 "Could not save %1\n"
 "Reason: %2"
@@ -4611,7 +4520,7 @@ msgstr ""
 "Dji n' a savou schaper %1\n"
 "Vochal li råjhon: %2"
 
-#: kofficecore/koDocument.cc:2341
+#: kofficecore/KoDocument.cpp:2341
 msgid ""
 "Could not open %1\n"
 "Reason: %2"
@@ -4619,217 +4528,308 @@ msgstr ""
 "Dji n' a savou drovi li fitchî %1\n"
 "Vochal li råjhon: %2"
 
-#: kofficecore/koDocument.cc:2458
+#: kofficecore/KoDocument.cpp:2458
 msgid "a word processing"
 msgstr ""
 
-#: kofficecore/koDocument.cc:2459
+#: kofficecore/KoDocument.cpp:2459
 msgid "a spreadsheet"
 msgstr ""
 
-#: kofficecore/koDocument.cc:2460
+#: kofficecore/KoDocument.cpp:2460
 msgid "a presentation"
 msgstr ""
 
-#: kofficecore/koDocument.cc:2461
+#: kofficecore/KoDocument.cpp:2461
 msgid "a chart"
 msgstr ""
 
-#: kofficecore/koDocument.cc:2462
+#: kofficecore/KoDocument.cpp:2462
 msgid "a drawing"
 msgstr ""
 
-#: kofficecore/koDocument.cc:2615
+#: kofficecore/KoDocument.cpp:2615
 #, fuzzy
 msgid "Embedding Object"
 msgstr "Dji n' a savou tcherdjî l' ravalé objet."
 
-#: kofficecore/koDocumentInfo.cc:722
-msgid "Unknown"
+#: kofficecore/KoMainWindow.cpp:223
+msgid "Versions..."
 msgstr ""
 
-#: kofficecore/koOpenPane.cc:114
+#: kofficecore/KoMainWindow.cpp:227
+msgid "I&mport..."
+msgstr "&Aberweter"
+
+#: kofficecore/KoMainWindow.cpp:230
+msgid "E&xport..."
+msgstr "&Eberweter..."
+
+#: kofficecore/KoMainWindow.cpp:236
+msgid "&Document Information"
+msgstr "Informåcion sol &documint"
+
+#: kofficecore/KoMainWindow.cpp:261
+msgid "&Close All Views"
+msgstr "&Clôre tos les Håynaedjes"
+
+#: kofficecore/KoMainWindow.cpp:266
+msgid "&Split View"
+msgstr "Di&spårti li Håynaedje"
+
+#: kofficecore/KoMainWindow.cpp:269
+msgid "&Remove View"
+msgstr "&Oister ci Håynaedje"
+
+#: kofficecore/KoMainWindow.cpp:274
+msgid "Splitter &Orientation"
+msgstr ""
+
+#: kofficecore/KoMainWindow.cpp:278
+msgid "&Vertical"
+msgstr "&Astampé"
+
+#: kofficecore/KoMainWindow.cpp:279
+msgid "&Horizontal"
+msgstr "&Coûtchî"
+
+#: kofficecore/KoMainWindow.cpp:513
+#, c-format
+msgid "Save as %1"
+msgstr ""
+
+#: kofficecore/KoMainWindow.cpp:674
+msgid "%1 (unknown file type)"
+msgstr "%1 (sôre di fitchî nén cnoxhowe)"
+
+#: kofficecore/KoMainWindow.cpp:684
+msgid ""
+"<qt>Saving as a %1 may result in some loss of formatting."
+"<p>Do you still want to save in this format?</qt>"
+msgstr ""
+
+#: kofficecore/KoMainWindow.cpp:687
+msgid "Confirm Save"
+msgstr ""
+
+#: kofficecore/KoMainWindow.cpp:698
+msgid ""
+"<qt>Exporting as a %1 may result in some loss of formatting."
+"<p>Do you still want to export to this format?</qt>"
+msgstr ""
+
+#: kofficecore/KoMainWindow.cpp:701
+msgid "Confirm Export"
+msgstr ""
+
+#: kofficecore/KoMainWindow.cpp:790
+msgid "Save Document As"
+msgstr "Schaper eyet (r)lomer"
+
+#: kofficecore/KoMainWindow.cpp:792
+msgid "Export Document As"
+msgstr "Ebaguer documint come"
+
+#: kofficecore/KoMainWindow.cpp:839
+msgid ""
+"A document with this name already exists.\n"
+"Do you want to overwrite it?"
+msgstr ""
+"I gn a ddja on documint avou ci no la.\n"
+"El voloz spotchî?"
+
+#: kofficecore/KoMainWindow.cpp:1102
+msgid "Import Document"
+msgstr "Aberweter on documint"
+
+#: kofficecore/KoMainWindow.cpp:1514
+msgid "Show %1 Toolbar"
+msgstr "Håyner %1 Bår ås Usteyes"
+
+#: kofficecore/KoMainWindow.cpp:1516
+#, fuzzy
+msgid "Hide %1 Toolbar"
+msgstr "Håyner %1 Bår ås Usteyes"
+
+#: kofficecore/KoMainWindow.cpp:1593
+#, fuzzy
+msgid "Document"
+msgstr "Drovi on documint"
+
+#: kofficecore/KoMainWindow.cpp:1603
+#, fuzzy, c-format
+msgid "Document - %1"
+msgstr "Tite do documint"
+
+#: kofficecore/KoMainWindow.cpp:1632
+msgid ""
+"You will lose all your changes!\n"
+"Do you want to continue?"
+msgstr ""
+
+#: kofficecore/KoOpenPane.cpp:114
 #, fuzzy
 msgid "Open Existing Document..."
 msgstr "Drovi on documint k' &egzistêye dedja"
 
-#: kofficecore/koOpenPane.cc:172
+#: kofficecore/KoOpenPane.cpp:172
 #, fuzzy
 msgid "Recent Documents"
 msgstr "Ridrovi onk des &dierins documints drovous"
 
-#: kofficecore/koOpenPane.cc:245
+#: kofficecore/KoOpenPane.cpp:245
 #, fuzzy
 msgid "Custom Document"
 msgstr "Ahiver documint"
 
-#: kofficecore/koApplication.cc:41
-msgid "Only print and exit"
+#: kofficecore/KoFileDialog.cpp:93
+msgid "%1 (Uncompressed XML Files)"
 msgstr ""
 
-#: kofficecore/koApplication.cc:42
-msgid "Open a new document with a template"
+#: kofficecore/KoFileDialog.cpp:95
+msgid "%1 (Flat XML File)"
 msgstr ""
 
-#: kofficecore/koApplication.cc:43
-msgid "Override display DPI"
+#: kofficecore/KoFileDialog.cpp:112
+msgid "%1 (%2 Compatible)"
 msgstr ""
 
-#: kofficecore/koApplication.cc:76
-msgid "KOffice"
-msgstr ""
-
-#: kofficecore/koApplication.cc:183
-msgid "No template found for: %1 "
-msgstr ""
-
-#: kofficecore/koApplication.cc:186
-#, c-format
-msgid "Too many templates found for: %1"
-msgstr ""
-
-#: kofficecore/koApplication.cc:206
-msgid "Template %1 failed to load."
-msgstr ""
-
-#: kofficecore/koPageLayout.cpp:116
+#: kofficecore/KoPageLayout.cpp:116
 msgid "ISO A3"
 msgstr "ISO A3"
 
-#: kofficecore/koPageLayout.cpp:117
+#: kofficecore/KoPageLayout.cpp:117
 msgid "ISO A4"
 msgstr "ISO A4"
 
-#: kofficecore/koPageLayout.cpp:118
+#: kofficecore/KoPageLayout.cpp:118
 msgid "ISO A5"
 msgstr "ISO A5"
 
-#: kofficecore/koPageLayout.cpp:119
+#: kofficecore/KoPageLayout.cpp:119
 msgid "US Letter"
 msgstr "US Letter"
 
-#: kofficecore/koPageLayout.cpp:120
+#: kofficecore/KoPageLayout.cpp:120
 msgid "US Legal"
 msgstr "US Legal"
 
-#: kofficecore/koPageLayout.cpp:121
+#: kofficecore/KoPageLayout.cpp:121
 msgid "Screen"
 msgstr "Waitroûle"
 
-#: kofficecore/koPageLayout.cpp:122
+#: kofficecore/KoPageLayout.cpp:122
 msgid ""
 "_: Custom size\n"
 "Custom"
 msgstr ""
 
-#: kofficecore/koPageLayout.cpp:123
+#: kofficecore/KoPageLayout.cpp:123
 msgid "ISO B5"
 msgstr "ISO B5"
 
-#: kofficecore/koPageLayout.cpp:125
+#: kofficecore/KoPageLayout.cpp:125
 msgid "US Executive"
 msgstr "US Executive"
 
-#: kofficecore/koPageLayout.cpp:126
+#: kofficecore/KoPageLayout.cpp:126
 msgid "ISO A0"
 msgstr "ISO A0"
 
-#: kofficecore/koPageLayout.cpp:127
+#: kofficecore/KoPageLayout.cpp:127
 msgid "ISO A1"
 msgstr "ISO A1"
 
-#: kofficecore/koPageLayout.cpp:128
+#: kofficecore/KoPageLayout.cpp:128
 msgid "ISO A2"
 msgstr "ISO A2"
 
-#: kofficecore/koPageLayout.cpp:129
+#: kofficecore/KoPageLayout.cpp:129
 msgid "ISO A6"
 msgstr "ISO A6"
 
-#: kofficecore/koPageLayout.cpp:130
+#: kofficecore/KoPageLayout.cpp:130
 msgid "ISO A7"
 msgstr "ISO A7"
 
-#: kofficecore/koPageLayout.cpp:131
+#: kofficecore/KoPageLayout.cpp:131
 msgid "ISO A8"
 msgstr "ISO A8"
 
-#: kofficecore/koPageLayout.cpp:132
+#: kofficecore/KoPageLayout.cpp:132
 msgid "ISO A9"
 msgstr "ISO A9"
 
-#: kofficecore/koPageLayout.cpp:133
+#: kofficecore/KoPageLayout.cpp:133
 msgid "ISO B0"
 msgstr "ISO B0"
 
-#: kofficecore/koPageLayout.cpp:134
+#: kofficecore/KoPageLayout.cpp:134
 msgid "ISO B1"
 msgstr "ISO B1"
 
-#: kofficecore/koPageLayout.cpp:135
+#: kofficecore/KoPageLayout.cpp:135
 msgid "ISO B10"
 msgstr "ISO B10"
 
-#: kofficecore/koPageLayout.cpp:136
+#: kofficecore/KoPageLayout.cpp:136
 msgid "ISO B2"
 msgstr "ISO B2"
 
-#: kofficecore/koPageLayout.cpp:137
+#: kofficecore/KoPageLayout.cpp:137
 msgid "ISO B3"
 msgstr "ISO B3"
 
-#: kofficecore/koPageLayout.cpp:138
+#: kofficecore/KoPageLayout.cpp:138
 msgid "ISO B4"
 msgstr "ISO B4"
 
-#: kofficecore/koPageLayout.cpp:139
+#: kofficecore/KoPageLayout.cpp:139
 msgid "ISO B6"
 msgstr "ISO B6"
 
-#: kofficecore/koPageLayout.cpp:140
+#: kofficecore/KoPageLayout.cpp:140
 msgid "ISO C5"
 msgstr "ISO C5"
 
-#: kofficecore/koPageLayout.cpp:141
+#: kofficecore/KoPageLayout.cpp:141
 msgid "US Common 10"
 msgstr "US Common 10"
 
-#: kofficecore/koPageLayout.cpp:142
+#: kofficecore/KoPageLayout.cpp:142
 msgid "ISO DL"
 msgstr "ISO DL"
 
-#: kofficecore/koPageLayout.cpp:143
+#: kofficecore/KoPageLayout.cpp:143
 msgid "US Folio"
 msgstr "US Folio"
 
-#: kofficecore/koPageLayout.cpp:144
+#: kofficecore/KoPageLayout.cpp:144
 msgid "US Ledger"
 msgstr "US Ledger"
 
-#: kofficecore/koPageLayout.cpp:145
+#: kofficecore/KoPageLayout.cpp:145
 msgid "US Tabloid"
 msgstr "US Tabloyide"
 
-#: kofficecore/koOasisStore.cpp:170
-msgid ""
-"Parsing error in the main document at line %1, column %2\n"
-"Error message: %3"
-msgstr ""
-
-#: kofficecore/koversiondialog.cc:42
+#: kofficecore/Koversiondialog.cpp:42
 msgid "Version"
 msgstr ""
 
-#: kofficecore/koversiondialog.cc:50
+#: kofficecore/Koversiondialog.cpp:50
 msgid "Date & Time"
 msgstr ""
 
-#: kofficecore/koversiondialog.cc:51
+#: kofficecore/Koversiondialog.cpp:51
 msgid "Saved By"
 msgstr ""
 
-#: kofficecore/koversiondialog.cc:65
+#: kofficecore/Koversiondialog.cpp:65
 msgid "&Open"
+msgstr ""
+
+#: kofficecore/KoDocumentInfo.cpp:722
+msgid "Unknown"
 msgstr ""
 
 #: kformula/kformulaconfigpage.cc:80
