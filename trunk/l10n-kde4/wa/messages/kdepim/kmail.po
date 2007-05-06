@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-05-05 05:45+0200\n"
+"POT-Creation-Date: 2007-05-06 05:49+0200\n"
 "PO-Revision-Date: 2003-09-10 00:08+0200\n"
 "Last-Translator: Lorint Hendschel <lorint.hendschel@skynet.be>\n"
 "Language-Team: Walon <linux-wa@chanae.alphanet.ch>\n"
@@ -211,7 +211,7 @@ msgstr "Waitî totes les (e &munutes):"
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 446
 #: accountdialog.cpp:443 accountdialog.cpp:544 accountdialog.cpp:748
-#: accountdialog.cpp:1116 configuredialog.cpp:2741 rc.cpp:946
+#: accountdialog.cpp:1116 configuredialog.cpp:2741 rc.cpp:952
 msgid " min"
 msgstr " min"
 
@@ -532,7 +532,7 @@ msgstr "<nouk>"
 
 #: accountdialog.cpp:1496 accountdialog.cpp:1503 kmfoldercachedimap.cpp:244
 #: kmfoldercachedimap.cpp:2059 kmfolderimap.cpp:229 kmfolderimap.cpp:918
-#: kmkernel.cpp:1220 subscriptiondialog.cpp:171
+#: kmkernel.cpp:1323 subscriptiondialog.cpp:171
 msgid "inbox"
 msgstr "dierins emiles"
 
@@ -1073,19 +1073,19 @@ msgstr ""
 "Åk n' a nén stî come dji scrijheu e fitchî:\n"
 "%1"
 
-#: callback.cpp:145
+#: callback.cpp:161
 msgid ""
 "<qt>None of your identities match the receiver of this message,<br>please "
 "choose which of the following addresses is yours, if any:"
 msgstr ""
 
-#: callback.cpp:150
+#: callback.cpp:166
 msgid ""
 "<qt>Several of your identities match the receiver of this message,<br>please "
 "choose which of the following addresses is yours:"
 msgstr ""
 
-#: callback.cpp:157
+#: callback.cpp:173
 msgid "Select Address"
 msgstr ""
 
@@ -1222,8 +1222,8 @@ msgid "Common Options"
 msgstr "Kimonès Tchuzes"
 
 #. i18n: tag label
-#. i18n: file kmail.kcfg line 314
-#: configuredialog.cpp:745 rc.cpp:501
+#. i18n: file kmail.kcfg line 320
+#: configuredialog.cpp:745 rc.cpp:507
 msgid "Confirm &before send"
 msgstr "Acertiner &divant d' evoyî"
 
@@ -1510,7 +1510,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file templatesconfiguration_base.ui line 74
-#: configuredialog.cpp:1817 rc.cpp:1164
+#: configuredialog.cpp:1817 rc.cpp:1170
 #, fuzzy
 msgid "New Message"
 msgstr "Novea messaedje"
@@ -1751,8 +1751,8 @@ msgid "Show s&pam status in fancy headers"
 msgstr "Håyner totes les tiestires do messaedje"
 
 #. i18n: tag label
-#. i18n: file kmail.kcfg line 447
-#: configuredialog.cpp:2311 rc.cpp:556
+#. i18n: file kmail.kcfg line 453
+#: configuredialog.cpp:2311 rc.cpp:562
 msgid "Replace smileys by emoticons"
 msgstr ""
 
@@ -1761,8 +1761,8 @@ msgid "Use smaller font for quoted text"
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kmail.kcfg line 452
-#: configuredialog.cpp:2319 rc.cpp:562
+#. i18n: file kmail.kcfg line 458
+#: configuredialog.cpp:2319 rc.cpp:568
 msgid "Show expand/collapse quote marks"
 msgstr ""
 
@@ -1888,7 +1888,7 @@ msgstr "Rica&ssî:"
 
 #. i18n: tag string
 #. i18n: file templatesconfiguration_base.ui line 318
-#: configuredialog.cpp:2980 rc.cpp:1176
+#: configuredialog.cpp:2980 rc.cpp:1182
 msgid "&Quote indicator:"
 msgstr ""
 
@@ -1986,8 +1986,8 @@ msgid "&Value:"
 msgstr "&Valixhance:"
 
 #. i18n: tag label
-#. i18n: file kmail.kcfg line 291
-#: configuredialog.cpp:3591 rc.cpp:495
+#. i18n: file kmail.kcfg line 297
+#: configuredialog.cpp:3591 rc.cpp:501
 msgid "Outlook-compatible attachment naming"
 msgstr ""
 
@@ -2047,7 +2047,7 @@ msgstr "Aspougneu"
 #. i18n: file encryptionconfigurationdialog.ui line 397
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 478
-#: configuredialog.cpp:3706 rc.cpp:268 rc.cpp:949
+#: configuredialog.cpp:3706 rc.cpp:268 rc.cpp:955
 msgid "Warnings"
 msgstr "Advertixhmints"
 
@@ -2205,7 +2205,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file smimeconfiguration.ui line 187
-#: configuredialog.cpp:4437 rc.cpp:1118
+#: configuredialog.cpp:4437 rc.cpp:1124
 msgid "no proxy"
 msgstr ""
 
@@ -2470,19 +2470,33 @@ msgid ""
 "invitations"
 msgstr ""
 
+#: configuredialog.cpp:5018
+msgid "Exchange compatible invitation naming"
+msgstr ""
+
+#. i18n: tag whatsthis
+#. i18n: file kmail.kcfg line 169
+#: configuredialog.cpp:5019 rc.cpp:430
+msgid ""
+"Microsoft Outlook, when used in combination with a Microsoft Exchange "
+"server, has a problem understanding standards-compliant groupware e-mail. "
+"Turn this option on to send groupware invitations in a way that Microsoft "
+"Exchange understands."
+msgstr ""
+
 #. i18n: tag label
-#. i18n: file kmail.kcfg line 168
-#: configuredialog.cpp:5017 rc.cpp:427
+#. i18n: file kmail.kcfg line 174
+#: configuredialog.cpp:5025 rc.cpp:433
 msgid "Automatic invitation sending"
 msgstr ""
 
-#: configuredialog.cpp:5018
+#: configuredialog.cpp:5026
 msgid ""
 "When this is on, the user will not see the mail composer window. Invitation "
 "mails are sent automatically"
 msgstr ""
 
-#: configuredialog.cpp:5030
+#: configuredialog.cpp:5038
 msgid ""
 "<qt>Invitations are normally sent as attachments to a mail. This switch "
 "changes the invitation mails to be sent in the text of the mail instead; "
@@ -2494,16 +2508,16 @@ msgid ""
 "to work with this.</qt>"
 msgstr ""
 
-#: configuredialog.cpp:5079
+#: configuredialog.cpp:5089
 #, fuzzy
 msgid "<Choose a Folder>"
 msgstr "Ahiver on ridant"
 
-#: configuredialog.cpp:5154
+#: configuredialog.cpp:5177
 msgid "&Resource folders are subfolders of:"
 msgstr ""
 
-#: configuredialog.cpp:5157
+#: configuredialog.cpp:5180
 msgid "&Resource folders are in account:"
 msgstr ""
 
@@ -3649,7 +3663,7 @@ msgstr ""
 msgid "Replace &All"
 msgstr "&Replaecî"
 
-#: keditcl2.cpp:847 kmcommands.cpp:637 kmcommands.cpp:939 kmkernel.cpp:1741
+#: keditcl2.cpp:847 kmcommands.cpp:637 kmcommands.cpp:939 kmkernel.cpp:1844
 msgid "&Replace"
 msgstr "&Replaecî"
 
@@ -4202,7 +4216,7 @@ msgstr ""
 "Li fitchî %1 egzistêye dedja.\n"
 "El voloz-vs replaecî?"
 
-#: kmcommands.cpp:637 kmcommands.cpp:939 kmkernel.cpp:1741
+#: kmcommands.cpp:637 kmcommands.cpp:939 kmkernel.cpp:1844
 msgid "Save to File"
 msgstr "Schaper en on fitchî"
 
@@ -4214,7 +4228,7 @@ msgstr "Messaedje e peur tecse"
 msgid "The message was removed while saving it. It has not been saved."
 msgstr ""
 
-#: kmcommands.cpp:938 kmkernel.cpp:1740
+#: kmcommands.cpp:938 kmkernel.cpp:1843
 #, qt-format
 msgid ""
 "File %1 exists.\n"
@@ -4682,8 +4696,8 @@ msgid "Cl&ean Spaces"
 msgstr "Rinetyî les Es&påçmints"
 
 #. i18n: tag label
-#. i18n: file kmail.kcfg line 273
-#: kmcomposewin.cpp:1305 kmreaderwin.cpp:647 rc.cpp:491
+#. i18n: file kmail.kcfg line 279
+#: kmcomposewin.cpp:1305 kmreaderwin.cpp:647 rc.cpp:497
 msgid "Use Fi&xed Font"
 msgstr ""
 
@@ -4975,7 +4989,7 @@ msgstr "Ataetchî on fitchî"
 
 #. i18n: tag text
 #. i18n: file kmcomposerui.rc line 64
-#: kmcomposewin.cpp:2631 rc.cpp:670
+#: kmcomposewin.cpp:2631 rc.cpp:676
 msgid "&Attach"
 msgstr "&Ataetchî"
 
@@ -5098,7 +5112,7 @@ msgid ""
 "until you go online."
 msgstr ""
 
-#: kmcomposewin.cpp:3887 kmkernel.cpp:1087
+#: kmcomposewin.cpp:3887 kmkernel.cpp:1190
 msgid "Online/Offline"
 msgstr ""
 
@@ -5698,7 +5712,7 @@ msgstr "Rilomer..."
 #. i18n: file kmail_part.rc line 10
 #. i18n: tag text
 #. i18n: file kmmainwin.rc line 10
-#: kmfilterdlg.cpp:637 kmmainwidget.cpp:2929 rc.cpp:619 rc.cpp:685
+#: kmfilterdlg.cpp:637 kmmainwidget.cpp:2929 rc.cpp:625 rc.cpp:691
 #: kmsearchpattern.h:234
 msgid "New"
 msgstr "Novea"
@@ -5967,12 +5981,12 @@ msgid ""
 "you want to move these messages to another folder now?</p>"
 msgstr ""
 
-#: kmfoldercachedimap.cpp:1351 kmkernel.cpp:1640
+#: kmfoldercachedimap.cpp:1351 kmkernel.cpp:1743
 #, fuzzy
 msgid "Move"
 msgstr "&Bodjî dvins"
 
-#: kmfoldercachedimap.cpp:1352 kmkernel.cpp:1642
+#: kmfoldercachedimap.cpp:1352 kmkernel.cpp:1745
 msgid "Do Not Move"
 msgstr ""
 
@@ -6422,21 +6436,21 @@ msgid ""
 "Please move the file out of the way."
 msgstr ""
 
-#: kmfoldermgr.cpp:145 kmkernel.cpp:1169
+#: kmfoldermgr.cpp:145 kmkernel.cpp:1272
 #, qt-format
 msgid ""
 "The permissions of the folder '%1' are incorrect;\n"
 "please make sure that you can view and modify the content of this folder."
 msgstr ""
 
-#: kmfoldermgr.cpp:155 kmkernel.cpp:1161
+#: kmfoldermgr.cpp:155 kmkernel.cpp:1264
 #, qt-format
 msgid ""
 "KMail could not create folder '%1';\n"
 "please make sure that you can view and modify the content of the folder '%2'."
 msgstr ""
 
-#: kmfoldermgr.cpp:302 kmkernel.cpp:1447
+#: kmfoldermgr.cpp:302 kmkernel.cpp:1550
 #, qt-format
 msgid ""
 "Cannot create file `%1' in %2.\n"
@@ -6758,93 +6772,93 @@ msgid ""
 "(No space left on device?)"
 msgstr ""
 
-#: kmkernel.cpp:568
+#: kmkernel.cpp:671
 msgid "Certificate Signature Request"
 msgstr ""
 
-#: kmkernel.cpp:571
+#: kmkernel.cpp:674
 #, fuzzy
 msgid "Please create a certificate from attachment and return to sender."
 msgstr "Fijhoz on conte po-z evoyî et s' rissayîz s' i vs plait."
 
-#: kmkernel.cpp:1053
+#: kmkernel.cpp:1156
 msgid "KMail is set to be offline; all network jobs are suspended"
 msgstr ""
 
-#: kmkernel.cpp:1064
+#: kmkernel.cpp:1167
 msgid "KMail is set to be online; all network jobs resumed"
 msgstr ""
 
-#: kmkernel.cpp:1085
+#: kmkernel.cpp:1188
 msgid "KMail is currently in offline mode. How do you want to proceed?"
 msgstr ""
 
-#: kmkernel.cpp:1088 kmmainwidget.cpp:1882
+#: kmkernel.cpp:1191 kmmainwidget.cpp:1882
 msgid "Work Online"
 msgstr ""
 
-#: kmkernel.cpp:1089 kmmainwidget.cpp:1880
+#: kmkernel.cpp:1192 kmmainwidget.cpp:1880
 msgid "Work Offline"
 msgstr ""
 
-#: kmkernel.cpp:1225
+#: kmkernel.cpp:1328
 msgid "You do not have read/write permission to your inbox folder."
 msgstr ""
 
-#: kmkernel.cpp:1233
+#: kmkernel.cpp:1336
 #, fuzzy
 msgid "outbox"
 msgstr "Tot seu"
 
-#: kmkernel.cpp:1235
+#: kmkernel.cpp:1338
 msgid "You do not have read/write permission to your outbox folder."
 msgstr ""
 
-#: kmkernel.cpp:1252
+#: kmkernel.cpp:1355
 #, fuzzy
 msgid "sent-mail"
 msgstr "Sendmail"
 
-#: kmkernel.cpp:1254
+#: kmkernel.cpp:1357
 msgid "You do not have read/write permission to your sent-mail folder."
 msgstr ""
 
-#: kmkernel.cpp:1261
+#: kmkernel.cpp:1364
 #, fuzzy
 msgid "trash"
 msgstr "Ra&wetes"
 
-#: kmkernel.cpp:1263
+#: kmkernel.cpp:1366
 msgid "You do not have read/write permission to your trash folder."
 msgstr ""
 
-#: kmkernel.cpp:1270
+#: kmkernel.cpp:1373
 msgid "drafts"
 msgstr ""
 
-#: kmkernel.cpp:1272
+#: kmkernel.cpp:1375
 msgid "You do not have read/write permission to your drafts folder."
 msgstr ""
 
-#: kmkernel.cpp:1279
+#: kmkernel.cpp:1382
 #, fuzzy
 msgid "templates"
 msgstr "&Replaecî"
 
-#: kmkernel.cpp:1281
+#: kmkernel.cpp:1384
 #, fuzzy
 msgid "You do not have read/write permission to your templates folder."
 msgstr ""
 "Vos n' avoz nén li permission di lere ci fitchî la\n"
 "%1"
 
-#: kmkernel.cpp:1321 searchwindow.cpp:278 searchwindow.cpp:489
+#: kmkernel.cpp:1424 searchwindow.cpp:278 searchwindow.cpp:489
 #: searchwindow.cpp:639
 #, fuzzy
 msgid "Last Search"
 msgstr "&Cweri"
 
-#: kmkernel.cpp:1615
+#: kmkernel.cpp:1718
 #, qt-format
 msgctxt "%1-%3 is the application name, %4-%7 are folder path"
 msgid ""
@@ -6854,7 +6868,7 @@ msgid ""
 "<p><strong>Would you like %3 to move the mail files now?</strong></qt>"
 msgstr ""
 
-#: kmkernel.cpp:1629
+#: kmkernel.cpp:1732
 #, qt-format
 msgctxt "%1-%3 is the application name, %4-%6 are folder path"
 msgid ""
@@ -6863,15 +6877,15 @@ msgid ""
 "<p><strong>Would you like %3 to move the mail files now?</strong></qt>"
 msgstr ""
 
-#: kmkernel.cpp:1639
+#: kmkernel.cpp:1742
 msgid "Migrate Mail Files?"
 msgstr ""
 
-#: kmkernel.cpp:1819
+#: kmkernel.cpp:1922
 msgid "KMail encountered a fatal error and will terminate now"
 msgstr ""
 
-#: kmkernel.cpp:1822
+#: kmkernel.cpp:1925
 #, qt-format
 msgid ""
 "KMail encountered a fatal error and will terminate now.\n"
@@ -6879,11 +6893,11 @@ msgid ""
 "%1"
 msgstr ""
 
-#: kmkernel.cpp:1944 kmmainwidget.cpp:1133
+#: kmkernel.cpp:2047 kmmainwidget.cpp:1133
 msgid "Empty Trash"
 msgstr "Vudî li batch"
 
-#: kmkernel.cpp:1945
+#: kmkernel.cpp:2048
 #, fuzzy
 msgid "Are you sure you want to empty the trash folders of all accounts?"
 msgstr "Estoz seur di voleur vudî l' batch?"
@@ -7581,7 +7595,7 @@ msgstr "Mete les &Passetes èn Alaedje"
 #. i18n: file kmail_part.rc line 141
 #. i18n: tag text
 #. i18n: file kmmainwin.rc line 144
-#: kmmainwidget.cpp:3188 rc.cpp:643 rc.cpp:709
+#: kmmainwidget.cpp:3188 rc.cpp:649 rc.cpp:715
 #, fuzzy
 msgid "A&pply Filter"
 msgstr "Mete les &Passetes èn Alaedje"
@@ -10198,8 +10212,8 @@ msgstr ""
 #. i18n: file warningconfiguration.ui line 228
 #. i18n: tag string
 #. i18n: file warningconfiguration.ui line 255
-#: rc.cpp:240 rc.cpp:285 rc.cpp:313 rc.cpp:980 rc.cpp:1022 rc.cpp:1036
-#: rc.cpp:1242 rc.cpp:1256 rc.cpp:1270 rc.cpp:1284 rc.cpp:1298 rc.cpp:1312
+#: rc.cpp:240 rc.cpp:285 rc.cpp:313 rc.cpp:986 rc.cpp:1028 rc.cpp:1042
+#: rc.cpp:1248 rc.cpp:1262 rc.cpp:1276 rc.cpp:1290 rc.cpp:1304 rc.cpp:1318
 #: rulewidgethandlermanager.cpp:1438
 msgid " days"
 msgstr " djoûs"
@@ -10253,7 +10267,7 @@ msgstr ""
 #. i18n: file encryptionconfigurationdialog.ui line 409
 #. i18n: tag string
 #. i18n: file warningconfiguration.ui line 40
-#: rc.cpp:271 rc.cpp:1205
+#: rc.cpp:271 rc.cpp:1211
 msgid "&Warn when trying to send unencrypted messages"
 msgstr "M' ad&vierti cwand dji saye d' evoyî des messaedjes nén ecriptés"
 
@@ -10261,7 +10275,7 @@ msgstr "M' ad&vierti cwand dji saye d' evoyî des messaedjes nén ecriptés"
 #. i18n: file encryptionconfigurationdialog.ui line 415
 #. i18n: tag string
 #. i18n: file warningconfiguration.ui line 46
-#: rc.cpp:274 rc.cpp:1208
+#: rc.cpp:274 rc.cpp:1214
 msgid "Check to be warned when sending unencrypted messages."
 msgstr ""
 
@@ -10269,7 +10283,7 @@ msgstr ""
 #. i18n: file encryptionconfigurationdialog.ui line 423
 #. i18n: tag string
 #. i18n: file warningconfiguration.ui line 54
-#: rc.cpp:277 rc.cpp:1211
+#: rc.cpp:277 rc.cpp:1217
 msgid ""
 "<qt>\n"
 "<h1>Warn When Trying To Send Unencrypted Messages</h1>\n"
@@ -10302,8 +10316,8 @@ msgstr ""
 #. i18n: file warningconfiguration.ui line 240
 #. i18n: tag string
 #. i18n: file warningconfiguration.ui line 267
-#: rc.cpp:288 rc.cpp:316 rc.cpp:983 rc.cpp:1025 rc.cpp:1039 rc.cpp:1245
-#: rc.cpp:1259 rc.cpp:1273 rc.cpp:1287 rc.cpp:1301 rc.cpp:1315
+#: rc.cpp:288 rc.cpp:316 rc.cpp:989 rc.cpp:1031 rc.cpp:1045 rc.cpp:1251
+#: rc.cpp:1265 rc.cpp:1279 rc.cpp:1293 rc.cpp:1307 rc.cpp:1321
 msgid "Select the number of days here"
 msgstr ""
 
@@ -10311,7 +10325,7 @@ msgstr ""
 #. i18n: file encryptionconfigurationdialog.ui line 447
 #. i18n: tag string
 #. i18n: file warningconfiguration.ui line 194
-#: rc.cpp:291 rc.cpp:1276
+#: rc.cpp:291 rc.cpp:1282
 msgid ""
 "<qt>\n"
 "<h1>Warn If A Certificate In The Chain Expires</h1>\n"
@@ -10338,7 +10352,7 @@ msgstr ""
 #. i18n: file signatureconfigurationdialog.ui line 562
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 583
-#: rc.cpp:302 rc.cpp:330 rc.cpp:969 rc.cpp:997 rc.cpp:1011
+#: rc.cpp:302 rc.cpp:330 rc.cpp:975 rc.cpp:1003 rc.cpp:1017
 msgid "Check to be warned if the certificate expires soon"
 msgstr ""
 
@@ -10363,7 +10377,7 @@ msgstr ""
 #. i18n: file encryptionconfigurationdialog.ui line 492
 #. i18n: tag string
 #. i18n: file warningconfiguration.ui line 167
-#: rc.cpp:319 rc.cpp:1262
+#: rc.cpp:319 rc.cpp:1268
 msgid ""
 "<qt>\n"
 "<h1>Warn If Encryption Certificate Expires</h1>\n"
@@ -10392,7 +10406,7 @@ msgstr ""
 #. i18n: file signatureconfigurationdialog.ui line 652
 #. i18n: tag string
 #. i18n: file warningconfiguration.ui line 67
-#: rc.cpp:344 rc.cpp:1053 rc.cpp:1222
+#: rc.cpp:344 rc.cpp:1059 rc.cpp:1228
 msgid "Check to be warned if the address is not in the certificate"
 msgstr ""
 
@@ -10400,7 +10414,7 @@ msgstr ""
 #. i18n: file encryptionconfigurationdialog.ui line 550
 #. i18n: tag string
 #. i18n: file warningconfiguration.ui line 75
-#: rc.cpp:347 rc.cpp:1225
+#: rc.cpp:347 rc.cpp:1231
 msgid ""
 "<qt>\n"
 "<h1>Warn If Receiver's Email Address Is Not In Certificate</h1>\n"
@@ -10550,9 +10564,15 @@ msgid ""
 "setting this option."
 msgstr ""
 
+#. i18n: tag label
+#. i18n: file kmail.kcfg line 168
+#: rc.cpp:427
+msgid "Exchange compatible invitations naming"
+msgstr ""
+
 #. i18n: tag whatsthis
-#. i18n: file kmail.kcfg line 169
-#: rc.cpp:430
+#. i18n: file kmail.kcfg line 175
+#: rc.cpp:436
 msgid ""
 "When this is checked, you will not see the mail composer window. Instead, "
 "all invitation mails are sent automatically. If you want to see the mail "
@@ -10562,8 +10582,8 @@ msgid ""
 msgstr ""
 
 #. i18n: tag whatsthis
-#. i18n: file kmail.kcfg line 176
-#: rc.cpp:433
+#. i18n: file kmail.kcfg line 182
+#: rc.cpp:439
 msgid ""
 "<p>Enabling this makes it possible to store the entries from the Kontact "
 "applications (KOrganizer, KAddressBook, and KNotes.)</p><p>If you want to "
@@ -10572,16 +10592,16 @@ msgid ""
 msgstr ""
 
 #. i18n: tag whatsthis
-#. i18n: file kmail.kcfg line 181
-#: rc.cpp:436
+#. i18n: file kmail.kcfg line 187
+#: rc.cpp:442
 msgid ""
 "<p>Usually you will not have any reason to see the folders that hold the "
 "IMAP resources. But if you need to see them, you can set that here.</p>"
 msgstr ""
 
 #. i18n: tag whatsthis
-#. i18n: file kmail.kcfg line 190
-#: rc.cpp:439
+#. i18n: file kmail.kcfg line 196
+#: rc.cpp:445
 msgid ""
 "<p>If the account used for storing groupware information \"\n"
 "          \"is not used to manage normal mail, set this option to make KMail "
@@ -10592,8 +10612,8 @@ msgid ""
 msgstr ""
 
 #. i18n: tag whatsthis
-#. i18n: file kmail.kcfg line 194
-#: rc.cpp:445
+#. i18n: file kmail.kcfg line 200
+#: rc.cpp:451
 msgid ""
 "<p>Choose the storage format of the groupware folders. <ul><li>The default "
 "format is to use the ical (for calendar folders) and vcard (for addressbook "
@@ -10604,22 +10624,22 @@ msgid ""
 msgstr ""
 
 #. i18n: tag whatsthis
-#. i18n: file kmail.kcfg line 203
-#: rc.cpp:448
+#. i18n: file kmail.kcfg line 209
+#: rc.cpp:454
 msgid ""
 "<p>This chooses the parent of the IMAP resource folders.</p><p>By default, "
 "the Kolab server sets the IMAP inbox to be the parent.</p>"
 msgstr ""
 
 #. i18n: tag whatsthis
-#. i18n: file kmail.kcfg line 208
-#: rc.cpp:451
+#. i18n: file kmail.kcfg line 214
+#: rc.cpp:457
 msgid "<p>This is the ID of the account holding the IMAP resource folders.</p>"
 msgstr ""
 
 #. i18n: tag whatsthis
-#. i18n: file kmail.kcfg line 213
-#: rc.cpp:454
+#. i18n: file kmail.kcfg line 219
+#: rc.cpp:460
 msgid ""
 "<p>If you want to set the folder names of the IMAP storage to your local "
 "language, you can choose between these available languages.</p><p> Please "
@@ -10629,36 +10649,36 @@ msgid ""
 msgstr ""
 
 #. i18n: tag whatsthis
-#. i18n: file kmail.kcfg line 223
-#: rc.cpp:457
+#. i18n: file kmail.kcfg line 229
+#: rc.cpp:463
 msgid ""
 "This value is used to decide whether the KMail Introduction should be "
 "displayed."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kmail.kcfg line 230
-#: rc.cpp:460
+#. i18n: file kmail.kcfg line 236
+#: rc.cpp:466
 msgid "Maximal number of connections per host"
 msgstr ""
 
 #. i18n: tag whatsthis
-#. i18n: file kmail.kcfg line 231
-#: rc.cpp:463
+#. i18n: file kmail.kcfg line 237
+#: rc.cpp:469
 msgid ""
 "This can be used to restrict the number of connections per host while "
 "checking for new mail. By default the number of connections is unlimited (0)."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kmail.kcfg line 239
-#: rc.cpp:466
+#. i18n: file kmail.kcfg line 245
+#: rc.cpp:472
 msgid "Show quick search line edit"
 msgstr ""
 
 #. i18n: tag whatsthis
-#. i18n: file kmail.kcfg line 240
-#: rc.cpp:469
+#. i18n: file kmail.kcfg line 246
+#: rc.cpp:475
 msgid ""
 "This option enables or disables the search line edit above the message list "
 "which can be used to quickly search the information shown in the message "
@@ -10666,20 +10686,20 @@ msgid ""
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kmail.kcfg line 248
-#: rc.cpp:472
+#. i18n: file kmail.kcfg line 254
+#: rc.cpp:478
 msgid "Keep original charset when replying or forwarding if possible"
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kmail.kcfg line 252
-#: rc.cpp:475
+#. i18n: file kmail.kcfg line 258
+#: rc.cpp:481
 msgid "A&utomatically append signature"
 msgstr ""
 
 #. i18n: tag whatsthis
-#. i18n: file kmail.kcfg line 257
-#: rc.cpp:478
+#. i18n: file kmail.kcfg line 263
+#: rc.cpp:484
 msgid ""
 "Remember this identity, so that it will be used in future composer windows "
 "as well.\n"
@@ -10687,44 +10707,44 @@ msgid ""
 msgstr ""
 
 #. i18n: tag whatsthis
-#. i18n: file kmail.kcfg line 261
-#: rc.cpp:482
+#. i18n: file kmail.kcfg line 267
+#: rc.cpp:488
 msgid ""
 "Remember this folder for sent items, so that it will be used in future "
 "composer windows as well."
 msgstr ""
 
 #. i18n: tag whatsthis
-#. i18n: file kmail.kcfg line 265
-#: rc.cpp:485
+#. i18n: file kmail.kcfg line 271
+#: rc.cpp:491
 msgid ""
 "Remember this mail transport, so that it will be used in future composer "
 "windows as well."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kmail.kcfg line 269
-#: rc.cpp:488
+#. i18n: file kmail.kcfg line 275
+#: rc.cpp:494
 msgid "Word &wrap at column:"
 msgstr ""
 
 #. i18n: tag whatsthis
-#. i18n: file kmail.kcfg line 292
-#: rc.cpp:498
+#. i18n: file kmail.kcfg line 298
+#: rc.cpp:504
 msgid ""
 "Turn this option on to make Outlook &#8482; understand attachment names "
 "containing non-English characters"
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kmail.kcfg line 318
-#: rc.cpp:504
+#. i18n: file kmail.kcfg line 324
+#: rc.cpp:510
 msgid "Automatically request &message disposition notifications"
 msgstr ""
 
 #. i18n: tag whatsthis
-#. i18n: file kmail.kcfg line 319
-#: rc.cpp:507
+#. i18n: file kmail.kcfg line 325
+#: rc.cpp:513
 msgid ""
 "<qt><p>Enable this option if you want KMail to request Message Disposition "
 "Notifications (MDNs) for each of your outgoing messages.</p><p>This option "
@@ -10734,29 +10754,29 @@ msgid ""
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kmail.kcfg line 323
-#: rc.cpp:510
+#. i18n: file kmail.kcfg line 329
+#: rc.cpp:516
 msgid "Use recent addresses for autocompletion"
 msgstr ""
 
 #. i18n: tag whatsthis
-#. i18n: file kmail.kcfg line 324
-#: rc.cpp:513
+#. i18n: file kmail.kcfg line 330
+#: rc.cpp:519
 msgid ""
 "Disable this option if you do not want recently used addresses to appear in "
 "the autocompletion list in the composer's address fields."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kmail.kcfg line 345
-#: rc.cpp:516
+#. i18n: file kmail.kcfg line 351
+#: rc.cpp:522
 #, fuzzy
 msgid "Autosave interval:"
 msgstr "Waitî totes les (e &munutes):"
 
 #. i18n: tag whatsthis
-#. i18n: file kmail.kcfg line 346
-#: rc.cpp:519
+#. i18n: file kmail.kcfg line 352
+#: rc.cpp:525
 msgid ""
 "A backup copy of the text in the composer window can be created regularly. "
 "The interval used to create the backups is set here. You can disable "
@@ -10764,61 +10784,61 @@ msgid ""
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kmail.kcfg line 353
-#: rc.cpp:522
+#. i18n: file kmail.kcfg line 359
+#: rc.cpp:528
 msgid "Replace recognized prefi&x with \"Re:\""
 msgstr "Replaecî les ricno&xhowès betchetes avou «Re:»"
 
 #. i18n: tag label
-#. i18n: file kmail.kcfg line 360
-#: rc.cpp:525
+#. i18n: file kmail.kcfg line 366
+#: rc.cpp:531
 msgid "Replace recognized prefix with \"&Fwd:\""
 msgstr "Replaecî les ricnoxhowès betchetes avou «&Fwd:»"
 
 #. i18n: tag label
-#. i18n: file kmail.kcfg line 364
-#: rc.cpp:528
+#. i18n: file kmail.kcfg line 370
+#: rc.cpp:534
 msgid "Use smart &quoting"
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kmail.kcfg line 369
-#: rc.cpp:531
+#. i18n: file kmail.kcfg line 375
+#: rc.cpp:537
 #, fuzzy
 msgid "Type of addressee selector"
 msgstr "Tchoezixhaedje des adresses"
 
 #. i18n: tag whatsthis
-#. i18n: file kmail.kcfg line 371
-#: rc.cpp:534
+#. i18n: file kmail.kcfg line 377
+#: rc.cpp:540
 msgid ""
 "Sets the type of the dialog for selecting recipients for To,\n"
 "        CC and BCC."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kmail.kcfg line 379
-#: rc.cpp:538
+#. i18n: file kmail.kcfg line 385
+#: rc.cpp:544
 msgid "Type of recipients editor"
 msgstr ""
 
 #. i18n: tag whatsthis
-#. i18n: file kmail.kcfg line 381
-#: rc.cpp:541
+#. i18n: file kmail.kcfg line 387
+#: rc.cpp:547
 msgid ""
 "Sets the type of the recipients editor for editing To,\n"
 "        CC and BCC."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kmail.kcfg line 396
-#: rc.cpp:545
+#. i18n: file kmail.kcfg line 402
+#: rc.cpp:551
 msgid "Maximum number of recipient editor lines."
 msgstr ""
 
 #. i18n: tag whatsthis
-#. i18n: file kmail.kcfg line 436
-#: rc.cpp:549
+#. i18n: file kmail.kcfg line 442
+#: rc.cpp:555
 msgid ""
 "Some emails, especially those generated automatically, do not specify the "
 "character encoding which needs to be used to properly display them. In such "
@@ -10828,71 +10848,71 @@ msgid ""
 msgstr ""
 
 #. i18n: tag whatsthis
-#. i18n: file kmail.kcfg line 442
-#: rc.cpp:553
+#. i18n: file kmail.kcfg line 448
+#: rc.cpp:559
 msgid ""
 "Changing this from its default 'Auto' will force the use of the specified "
 "encoding for all emails, regardless of what they specify themselves."
 msgstr ""
 
 #. i18n: tag whatsthis
-#. i18n: file kmail.kcfg line 448
-#: rc.cpp:559
+#. i18n: file kmail.kcfg line 454
+#: rc.cpp:565
 msgid ""
 "Enable this if you want smileys like :-) appearing in the message text to be "
 "replaced by emoticons (small pictures)."
 msgstr ""
 
 #. i18n: tag whatsthis
-#. i18n: file kmail.kcfg line 453
-#: rc.cpp:565
+#. i18n: file kmail.kcfg line 459
+#: rc.cpp:571
 msgid ""
 "Enable this option to show different levels of quoted text. Disable to hide "
 "the levels of quoted text."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kmail.kcfg line 456
-#: rc.cpp:568
+#. i18n: file kmail.kcfg line 462
+#: rc.cpp:574
 msgid "Automatic collapse level:"
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kmail.kcfg line 464
-#: rc.cpp:571
+#. i18n: file kmail.kcfg line 470
+#: rc.cpp:577
 msgid "Reduce font size for quoted text"
 msgstr ""
 
 #. i18n: tag whatsthis
-#. i18n: file kmail.kcfg line 465
-#: rc.cpp:574
+#. i18n: file kmail.kcfg line 471
+#: rc.cpp:580
 msgid "Enable this option to show quoted text with a smaller font."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kmail.kcfg line 476
-#: rc.cpp:577
+#. i18n: file kmail.kcfg line 482
+#: rc.cpp:583
 #, fuzzy
 msgid "Show user agent in fancy headers"
 msgstr "Håyner totes les tiestires do messaedje"
 
 #. i18n: tag whatsthis
-#. i18n: file kmail.kcfg line 477
-#: rc.cpp:580
+#. i18n: file kmail.kcfg line 483
+#: rc.cpp:586
 msgid ""
 "Enable this option to get the User-Agent and X-Mailer header lines displayed "
 "when using fancy headers."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kmail.kcfg line 492
-#: rc.cpp:584
+#. i18n: file kmail.kcfg line 498
+#: rc.cpp:590
 msgid "Send Message Disposition Notifications with an empty sender."
 msgstr ""
 
 #. i18n: tag whatsthis
-#. i18n: file kmail.kcfg line 493
-#: rc.cpp:587
+#. i18n: file kmail.kcfg line 499
+#: rc.cpp:593
 msgid ""
 "Send Message Disposition Notifications with an empty sender string. Some "
 "servers might be configure to reject such messages, so if you are "
@@ -10900,46 +10920,46 @@ msgid ""
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kmail.kcfg line 499
-#: rc.cpp:590
+#. i18n: file kmail.kcfg line 505
+#: rc.cpp:596
 msgid "Phrases has been converted to templates"
 msgstr ""
 
 #. i18n: tag whatsthis
-#. i18n: file kmail.kcfg line 500
-#: rc.cpp:593
+#. i18n: file kmail.kcfg line 506
+#: rc.cpp:599
 msgid "Old phrases have been converted to templates"
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kmail.kcfg line 504
-#: rc.cpp:596
+#. i18n: file kmail.kcfg line 510
+#: rc.cpp:602
 #, fuzzy
 msgid "Message template for new message"
 msgstr "Djivêye des Messaedjes - Tchamp Date"
 
 #. i18n: tag label
-#. i18n: file kmail.kcfg line 509
-#: rc.cpp:600
+#. i18n: file kmail.kcfg line 515
+#: rc.cpp:606
 msgid "Message template for reply"
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kmail.kcfg line 514
-#: rc.cpp:604
+#. i18n: file kmail.kcfg line 520
+#: rc.cpp:610
 msgid "Message template for reply to all"
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file kmail.kcfg line 519
-#: rc.cpp:608
+#. i18n: file kmail.kcfg line 525
+#: rc.cpp:614
 #, fuzzy
 msgid "Message template for forward"
 msgstr "Marker li Messaedje come Ra&cassî"
 
 #. i18n: tag label
-#. i18n: file kmail.kcfg line 524
-#: rc.cpp:612
+#. i18n: file kmail.kcfg line 530
+#: rc.cpp:618
 msgid "Quote characters"
 msgstr ""
 
@@ -10949,7 +10969,7 @@ msgstr ""
 #. i18n: file kmmainwin.rc line 8
 #. i18n: tag text
 #. i18n: file kmreadermainwin.rc line 5
-#: rc.cpp:616 rc.cpp:682 rc.cpp:724
+#: rc.cpp:622 rc.cpp:688 rc.cpp:730
 #, fuzzy
 msgid "&File"
 msgstr "d' on fitchî"
@@ -10960,7 +10980,7 @@ msgstr "d' on fitchî"
 #. i18n: file kmcomposerui.rc line 22
 #. i18n: tag text
 #. i18n: file kmmainwin.rc line 40
-#: rc.cpp:622 rc.cpp:661 rc.cpp:688
+#: rc.cpp:628 rc.cpp:667 rc.cpp:694
 #, fuzzy
 msgid "&Edit"
 msgstr "Aspougnî..."
@@ -10973,7 +10993,7 @@ msgstr "Aspougnî..."
 #. i18n: file kmmainwin.rc line 64
 #. i18n: tag text
 #. i18n: file kmreadermainwin.rc line 13
-#: rc.cpp:625 rc.cpp:667 rc.cpp:691 rc.cpp:727
+#: rc.cpp:631 rc.cpp:673 rc.cpp:697 rc.cpp:733
 msgid "&View"
 msgstr ""
 
@@ -10981,7 +11001,7 @@ msgstr ""
 #. i18n: file kmail_part.rc line 79
 #. i18n: tag text
 #. i18n: file kmmainwin.rc line 82
-#: rc.cpp:628 rc.cpp:694
+#: rc.cpp:634 rc.cpp:700
 msgid "&Go"
 msgstr "&Evoye"
 
@@ -10989,7 +11009,7 @@ msgstr "&Evoye"
 #. i18n: file kmail_part.rc line 91
 #. i18n: tag text
 #. i18n: file kmmainwin.rc line 94
-#: rc.cpp:631 rc.cpp:697
+#: rc.cpp:637 rc.cpp:703
 msgid "F&older"
 msgstr "R&idant"
 
@@ -11001,7 +11021,7 @@ msgstr "R&idant"
 #. i18n: file kmmainwin.rc line 117
 #. i18n: tag text
 #. i18n: file kmreadermainwin.rc line 23
-#: rc.cpp:634 rc.cpp:658 rc.cpp:700 rc.cpp:730
+#: rc.cpp:640 rc.cpp:664 rc.cpp:706 rc.cpp:736
 msgid "&Message"
 msgstr "&Messaedje"
 
@@ -11009,7 +11029,7 @@ msgstr "&Messaedje"
 #. i18n: file kmail_part.rc line 120
 #. i18n: tag text
 #. i18n: file kmmainwin.rc line 123
-#: rc.cpp:637 rc.cpp:703
+#: rc.cpp:643 rc.cpp:709
 msgid "Reply Special"
 msgstr ""
 
@@ -11019,7 +11039,7 @@ msgstr ""
 #. i18n: file kmmainwin.rc line 129
 #. i18n: tag text
 #. i18n: file kmreadermainwin.rc line 33
-#: rc.cpp:640 rc.cpp:706 rc.cpp:733
+#: rc.cpp:646 rc.cpp:712 rc.cpp:739
 #, fuzzy
 msgid "&Forward"
 msgstr "Rica&ssî:"
@@ -11028,7 +11048,7 @@ msgstr "Rica&ssî:"
 #. i18n: file kmail_part.rc line 147
 #. i18n: tag text
 #. i18n: file kmmainwin.rc line 150
-#: rc.cpp:646 rc.cpp:712
+#: rc.cpp:652 rc.cpp:718
 #, fuzzy
 msgid "&Tools"
 msgstr "&Po"
@@ -11041,7 +11061,7 @@ msgstr "&Po"
 #. i18n: file kmmainwin.rc line 166
 #. i18n: tag text
 #. i18n: file kmreadermainwin.rc line 40
-#: rc.cpp:649 rc.cpp:673 rc.cpp:715 rc.cpp:736
+#: rc.cpp:655 rc.cpp:679 rc.cpp:721 rc.cpp:742
 #, fuzzy
 msgid "&Settings"
 msgstr "E&voyî"
@@ -11050,7 +11070,7 @@ msgstr "E&voyî"
 #. i18n: file kmail_part.rc line 173
 #. i18n: tag text
 #. i18n: file kmmainwin.rc line 179
-#: rc.cpp:652 rc.cpp:718
+#: rc.cpp:658 rc.cpp:724
 #, fuzzy
 msgid "&Help"
 msgstr "&Xhilter"
@@ -11063,38 +11083,38 @@ msgstr "&Xhilter"
 #. i18n: file kmmainwin.rc line 184
 #. i18n: tag text
 #. i18n: file kmreadermainwin.rc line 49
-#: rc.cpp:655 rc.cpp:676 rc.cpp:721 rc.cpp:739
+#: rc.cpp:661 rc.cpp:682 rc.cpp:727 rc.cpp:745
 msgid "Main Toolbar"
 msgstr ""
 
 #. i18n: tag text
 #. i18n: file kmcomposerui.rc line 31
-#: rc.cpp:664
+#: rc.cpp:670
 #, fuzzy
 msgid "&Options"
 msgstr "Kimonès Tchuzes"
 
 #. i18n: tag text
 #. i18n: file kmcomposerui.rc line 98
-#: rc.cpp:679
+#: rc.cpp:685
 msgid "HTML Toolbar"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 16
-#: rc.cpp:752
+#: rc.cpp:758
 msgid "Signature Configuration"
 msgstr "Apontiaedje del sinateure"
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 22
-#: rc.cpp:755
+#: rc.cpp:761
 msgid "Sending Certificates"
 msgstr "Dj' evoye les acertineures"
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 37
-#: rc.cpp:758
+#: rc.cpp:764
 #, fuzzy
 msgid "&Do not send certificates"
 msgstr "Ni &nén evoyî les acertineures"
@@ -11107,7 +11127,7 @@ msgstr "Ni &nén evoyî les acertineures"
 #. i18n: file signatureconfigurationdialog.ui line 69
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 82
-#: rc.cpp:761 rc.cpp:770 rc.cpp:779 rc.cpp:788
+#: rc.cpp:767 rc.cpp:776 rc.cpp:785 rc.cpp:794
 msgid "Selects which certificates to send"
 msgstr "Tchoezi les kénès acertineures a-z evoyî"
 
@@ -11119,7 +11139,7 @@ msgstr "Tchoezi les kénès acertineures a-z evoyî"
 #. i18n: file signatureconfigurationdialog.ui line 72
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 85
-#: rc.cpp:764 rc.cpp:773 rc.cpp:782 rc.cpp:791
+#: rc.cpp:770 rc.cpp:779 rc.cpp:788 rc.cpp:797
 msgid ""
 "<qt> <h1>Sending Certificates</h1> Without your certificate, the receiver "
 "will not be able to determine whether it was really you who sent the message "
@@ -11135,43 +11155,43 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 50
-#: rc.cpp:767
+#: rc.cpp:773
 msgid "Send &your own certificate"
 msgstr "Evoyî vosse &prôpe acertineure"
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 66
-#: rc.cpp:776
+#: rc.cpp:782
 msgid "Send certificate chain &without root"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 79
-#: rc.cpp:785
+#: rc.cpp:791
 msgid "Send certificate c&hain with root"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 111
-#: rc.cpp:794
+#: rc.cpp:800
 msgid "Signatures"
 msgstr "Sinateures"
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 139
-#: rc.cpp:797
+#: rc.cpp:803
 msgid "Sign all message &parts"
 msgstr "Siner totes les &pårteyes des messaedjes"
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 145
-#: rc.cpp:800
+#: rc.cpp:806
 msgid "Check to have all message parts signed by default"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 153
-#: rc.cpp:803
+#: rc.cpp:809
 msgid ""
 "<qt>\n"
 "<h1>Sign All Message Parts By Default</h1>\n"
@@ -11185,19 +11205,19 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 160
-#: rc.cpp:811
+#: rc.cpp:817
 msgid "Ask &before signing each part"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 163
-#: rc.cpp:814
+#: rc.cpp:820
 msgid "Check to be asked for each part whether to sign"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 169
-#: rc.cpp:817
+#: rc.cpp:823
 msgid ""
 "<qt>\n"
 "<h1>Ask Before Signing Each Part</h1>\n"
@@ -11209,20 +11229,20 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 176
-#: rc.cpp:823
+#: rc.cpp:829
 #, fuzzy
 msgid "Do no&t sign messages"
 msgstr "Èn &nén siner les messaedjes"
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 179
-#: rc.cpp:826
+#: rc.cpp:832
 msgid "Check for not signing a message by default"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 187
-#: rc.cpp:829
+#: rc.cpp:835
 msgid ""
 "<qt>\n"
 "<h1>Do Not Sign Messages</h1>\n"
@@ -11235,20 +11255,20 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 194
-#: rc.cpp:837
+#: rc.cpp:843
 msgid ""
 "The signature certificate is configured on the <em>Certificates</em> page."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 207
-#: rc.cpp:840
+#: rc.cpp:846
 msgid "Selects the signature algorithm"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 217
-#: rc.cpp:843
+#: rc.cpp:849
 msgid ""
 "<qt>\n"
 "<h1>Signature Algorithm</h1>\n"
@@ -11268,31 +11288,31 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 221
-#: rc.cpp:853
+#: rc.cpp:859
 msgid "RSA + SHA-1"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 229
-#: rc.cpp:856
+#: rc.cpp:862
 msgid "Signature &algorithm:"
 msgstr "&Algorite pol sinateure:"
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 245
-#: rc.cpp:859
+#: rc.cpp:865
 msgid "&Store messages with signatures"
 msgstr "&Wårder les messaedjes avou les sinateures"
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 251
-#: rc.cpp:862
+#: rc.cpp:868
 msgid "Check to store messages with their signatures"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 257
-#: rc.cpp:865
+#: rc.cpp:871
 msgid ""
 "<qt>\n"
 "<h1>Store Messages With Signatures</h1>\n"
@@ -11304,25 +11324,25 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 279
-#: rc.cpp:871
+#: rc.cpp:877
 msgid "Compound mode:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 295
-#: rc.cpp:874
+#: rc.cpp:880
 msgid "Standa&rd MIME"
 msgstr "MIME standå&rd"
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 298
-#: rc.cpp:877
+#: rc.cpp:883
 msgid "A Multipart/Signed holding Signature and signed data."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 304
-#: rc.cpp:880
+#: rc.cpp:886
 msgid ""
 "<qt>\n"
 "<h1>Multipart detached signature</h1>\n"
@@ -11335,19 +11355,19 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 317
-#: rc.cpp:886
+#: rc.cpp:892
 msgid "Opa&que (only recommended for SPHINX)"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 320
-#: rc.cpp:889
+#: rc.cpp:895
 msgid "Signature and signed data encoded in one ASN.1 block."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 326
-#: rc.cpp:892
+#: rc.cpp:898
 msgid ""
 "<qt>\n"
 "<h1>Opaque signed messages</h1>\n"
@@ -11359,13 +11379,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 346
-#: rc.cpp:898
+#: rc.cpp:904
 msgid "Entering PIN is required:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 356
-#: rc.cpp:901
+#: rc.cpp:907
 msgid "When adding certificates"
 msgstr "Å moumint di radjouter les acertineures"
 
@@ -11379,7 +11399,7 @@ msgstr "Å moumint di radjouter les acertineures"
 #. i18n: file signatureconfigurationdialog.ui line 404
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 433
-#: rc.cpp:904 rc.cpp:913 rc.cpp:922 rc.cpp:931 rc.cpp:940
+#: rc.cpp:910 rc.cpp:919 rc.cpp:928 rc.cpp:937 rc.cpp:946
 msgid "Select how often the PIN must be entered"
 msgstr ""
 
@@ -11393,7 +11413,7 @@ msgstr ""
 #. i18n: file signatureconfigurationdialog.ui line 407
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 436
-#: rc.cpp:907 rc.cpp:916 rc.cpp:925 rc.cpp:934 rc.cpp:943
+#: rc.cpp:913 rc.cpp:922 rc.cpp:931 rc.cpp:940 rc.cpp:949
 msgid ""
 "<qt> <h1>PIN Entry</h1> Here, you can select how often you need to enter the "
 "PIN in order to access your personal security environment (PSE) that "
@@ -11406,25 +11426,25 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 372
-#: rc.cpp:910
+#: rc.cpp:916
 msgid "Once per session"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 385
-#: rc.cpp:919
+#: rc.cpp:925
 msgid "Always when signing"
 msgstr "Tofer å moumint d' siner"
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 398
-#: rc.cpp:928
+#: rc.cpp:934
 msgid "Always"
 msgstr "Tofer"
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 430
-#: rc.cpp:937
+#: rc.cpp:943
 msgid "After"
 msgstr "Après"
 
@@ -11432,7 +11452,7 @@ msgstr "Après"
 #. i18n: file signatureconfigurationdialog.ui line 490
 #. i18n: tag string
 #. i18n: file warningconfiguration.ui line 19
-#: rc.cpp:952 rc.cpp:1191
+#: rc.cpp:958 rc.cpp:1197
 #, fuzzy
 msgid "Warn when trying to send &unsigned messages"
 msgstr "M' ad&vierti cwand dji saye d' evoyî des messaedjes nén ecriptés"
@@ -11441,7 +11461,7 @@ msgstr "M' ad&vierti cwand dji saye d' evoyî des messaedjes nén ecriptés"
 #. i18n: file signatureconfigurationdialog.ui line 496
 #. i18n: tag string
 #. i18n: file warningconfiguration.ui line 25
-#: rc.cpp:955 rc.cpp:1194
+#: rc.cpp:961 rc.cpp:1200
 msgid "Check to be warned when sending unsigned messages."
 msgstr ""
 
@@ -11449,7 +11469,7 @@ msgstr ""
 #. i18n: file signatureconfigurationdialog.ui line 504
 #. i18n: tag string
 #. i18n: file warningconfiguration.ui line 33
-#: rc.cpp:958 rc.cpp:1197
+#: rc.cpp:964 rc.cpp:1203
 msgid ""
 "<qt>\n"
 "<h1>Warn When Trying To Send Unsigned Messages</h1>\n"
@@ -11462,7 +11482,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 511
-#: rc.cpp:966
+#: rc.cpp:972
 msgid "Warn if CA certificate e&xpires in less than:"
 msgstr ""
 
@@ -11472,7 +11492,7 @@ msgstr ""
 #. i18n: file signatureconfigurationdialog.ui line 570
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 591
-#: rc.cpp:972 rc.cpp:1000 rc.cpp:1014
+#: rc.cpp:978 rc.cpp:1006 rc.cpp:1020
 msgid ""
 "<qt>\n"
 "<h1>Warn If Certificate Expires</h1>\n"
@@ -11488,7 +11508,7 @@ msgstr ""
 #. i18n: file signatureconfigurationdialog.ui line 549
 #. i18n: tag string
 #. i18n: file warningconfiguration.ui line 140
-#: rc.cpp:986 rc.cpp:1248
+#: rc.cpp:992 rc.cpp:1254
 msgid ""
 "<qt>\n"
 "<h1>Warn If Signature Certificate Expires</h1>\n"
@@ -11501,13 +11521,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 556
-#: rc.cpp:994
+#: rc.cpp:1000
 msgid "Warn if s&ignature certificate expires in less than:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 577
-#: rc.cpp:1008
+#: rc.cpp:1014
 msgid "Warn if root certificate expires in &less than:"
 msgstr ""
 
@@ -11515,7 +11535,7 @@ msgstr ""
 #. i18n: file signatureconfigurationdialog.ui line 615
 #. i18n: tag string
 #. i18n: file warningconfiguration.ui line 221
-#: rc.cpp:1028 rc.cpp:1290
+#: rc.cpp:1034 rc.cpp:1296
 msgid ""
 "<qt>\n"
 "<h1>Warn If CA Certificate Expires</h1>\n"
@@ -11532,7 +11552,7 @@ msgstr ""
 #. i18n: file warningconfiguration.ui line 248
 #. i18n: tag string
 #. i18n: file warningconfiguration.ui line 275
-#: rc.cpp:1042 rc.cpp:1304 rc.cpp:1318
+#: rc.cpp:1048 rc.cpp:1310 rc.cpp:1324
 msgid ""
 "<qt>\n"
 "<h1>Warn If Root Certificate Expires</h1>\n"
@@ -11545,13 +11565,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 646
-#: rc.cpp:1050
+#: rc.cpp:1056
 msgid "Warn if signer's email address is &not in certificate"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file signatureconfigurationdialog.ui line 660
-#: rc.cpp:1056
+#: rc.cpp:1062
 msgid ""
 "<qt>\n"
 "<h1>Warn If Signer's Email Address Is Not In Certificate</h1>\n"
@@ -11564,13 +11584,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file smimeconfiguration.ui line 19
-#: rc.cpp:1064
+#: rc.cpp:1070
 msgid "Validate certificates using CRLs"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file smimeconfiguration.ui line 25
-#: rc.cpp:1067
+#: rc.cpp:1073
 msgid ""
 "If this option is selected, S/MIME certificates are validated using "
 "Certificate Revocation Lists (CRLs)."
@@ -11578,13 +11598,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file smimeconfiguration.ui line 32
-#: rc.cpp:1070
+#: rc.cpp:1076
 msgid "Validate certificates online (OCSP)"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file smimeconfiguration.ui line 35
-#: rc.cpp:1073
+#: rc.cpp:1079
 msgid ""
 "If this option is selected, S/MIME certificates are validated online using "
 "the Online Certificates Status Protocol (OCSP). Fill in the URL of the OCSP "
@@ -11593,20 +11613,20 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file smimeconfiguration.ui line 42
-#: rc.cpp:1076
+#: rc.cpp:1082
 #, fuzzy
 msgid "Online Certificate Validation"
 msgstr "Fijhaedje d' ene acertineure"
 
 #. i18n: tag string
 #. i18n: file smimeconfiguration.ui line 56
-#: rc.cpp:1079
+#: rc.cpp:1085
 msgid "OCSP responder URL:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file smimeconfiguration.ui line 66
-#: rc.cpp:1082
+#: rc.cpp:1088
 msgid ""
 "Enter here the address of the server for online validation of certificates "
 "(OCSP responder). The URL is usually starting with http://."
@@ -11614,28 +11634,28 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file smimeconfiguration.ui line 80
-#: rc.cpp:1085
+#: rc.cpp:1091
 #, fuzzy
 msgid "OCSP responder signature:"
 msgstr "Boune sinateure"
 
 #. i18n: tag string
 #. i18n: file smimeconfiguration.ui line 111
-#: rc.cpp:1088
+#: rc.cpp:1094
 #, fuzzy
 msgid "Ignore service URL of certificates"
 msgstr "Cweri après des ôtès acertineures"
 
 #. i18n: tag string
 #. i18n: file smimeconfiguration.ui line 121
-#: rc.cpp:1091
+#: rc.cpp:1097
 #, fuzzy
 msgid "Do not check certificate policies"
 msgstr "Ni &nén evoyî les acertineures"
 
 #. i18n: tag string
 #. i18n: file smimeconfiguration.ui line 124
-#: rc.cpp:1094
+#: rc.cpp:1100
 msgid ""
 "By default GnuPG uses the file ~/.gnupg/policies.txt to check if a "
 "certificate policy is allowed. If this option is selected, policies are not "
@@ -11644,13 +11664,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file smimeconfiguration.ui line 131
-#: rc.cpp:1097
+#: rc.cpp:1103
 msgid "Never consult a CRL"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file smimeconfiguration.ui line 134
-#: rc.cpp:1100
+#: rc.cpp:1106
 msgid ""
 "If this option is checked, Certificate Revocation Lists are never used to "
 "validate S/MIME certificates."
@@ -11658,14 +11678,14 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file smimeconfiguration.ui line 141
-#: rc.cpp:1103
+#: rc.cpp:1109
 #, fuzzy
 msgid "Fetch missing issuer certificates"
 msgstr "Å moumint di radjouter les acertineures"
 
 #. i18n: tag string
 #. i18n: file smimeconfiguration.ui line 144
-#: rc.cpp:1106
+#: rc.cpp:1112
 msgid ""
 "If this option is checked, missing issuer certificates are fetched when "
 "necessary (this applies to both validation methods, CRLs and OCSP)"
@@ -11673,37 +11693,37 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file smimeconfiguration.ui line 151
-#: rc.cpp:1109
+#: rc.cpp:1115
 msgid "HTTP Requests"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file smimeconfiguration.ui line 160
-#: rc.cpp:1112
+#: rc.cpp:1118
 msgid "Do not perform any HTTP requests"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file smimeconfiguration.ui line 163
-#: rc.cpp:1115
+#: rc.cpp:1121
 msgid "Entirely disables the use of HTTP for S/MIME."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file smimeconfiguration.ui line 197
-#: rc.cpp:1121
+#: rc.cpp:1127
 msgid "Use this proxy for HTTP requests: "
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file smimeconfiguration.ui line 204
-#: rc.cpp:1124
+#: rc.cpp:1130
 msgid "Use system HTTP proxy:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file smimeconfiguration.ui line 207
-#: rc.cpp:1127
+#: rc.cpp:1133
 msgid ""
 "If this option is selected, the value of the HTTP proxy shown on the right "
 "(which comes from the environment variable http_proxy) will be used for any "
@@ -11712,7 +11732,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file smimeconfiguration.ui line 214
-#: rc.cpp:1130
+#: rc.cpp:1136
 msgid ""
 "Enter here the location of your HTTP Proxy, which will be used for all HTTP "
 "requests relating to S/MIME. The syntax is host:port, for instance myproxy."
@@ -11721,13 +11741,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file smimeconfiguration.ui line 223
-#: rc.cpp:1133
+#: rc.cpp:1139
 msgid "Ignore HTTP CRL distribution point of certificates"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file smimeconfiguration.ui line 226
-#: rc.cpp:1136
+#: rc.cpp:1142
 msgid ""
 "When looking for the location of a CRL, the to-be-tested certificate usually "
 "contains what are known as \"CRL Distribution Point\" (DP) entries, which "
@@ -11738,31 +11758,31 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file smimeconfiguration.ui line 239
-#: rc.cpp:1139
+#: rc.cpp:1145
 msgid "LDAP Requests"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file smimeconfiguration.ui line 248
-#: rc.cpp:1142
+#: rc.cpp:1148
 msgid "Do not perform any LDAP requests"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file smimeconfiguration.ui line 251
-#: rc.cpp:1145
+#: rc.cpp:1151
 msgid "Entirely disables the use of LDAP for S/MIME."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file smimeconfiguration.ui line 270
-#: rc.cpp:1148
+#: rc.cpp:1154
 msgid "Ignore LDAP CRL distribution point of certificates"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file smimeconfiguration.ui line 273
-#: rc.cpp:1151
+#: rc.cpp:1157
 msgid ""
 "When looking for the location of a CRL, the to-be-tested certificate usually "
 "contains what are known as \"CRL Distribution Point\" (DP) entries, which "
@@ -11773,13 +11793,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file smimeconfiguration.ui line 285
-#: rc.cpp:1154
+#: rc.cpp:1160
 msgid "Primary host for LDAP requests:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file smimeconfiguration.ui line 296
-#: rc.cpp:1157
+#: rc.cpp:1163
 msgid ""
 "Entering a LDAP server here will make all LDAP requests go to that server "
 "first. More precisely, this setting overrides any specified host and port "
@@ -11792,91 +11812,91 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file templatesconfiguration_base.ui line 30
-#: rc.cpp:1161
+#: rc.cpp:1167
 #, fuzzy
 msgid "TemplatesConfiguration"
 msgstr "Apontiaedje del sinateure"
 
 #. i18n: tag string
 #. i18n: file templatesconfiguration_base.ui line 142
-#: rc.cpp:1167
+#: rc.cpp:1173
 #, fuzzy
 msgid "Reply to Sender"
 msgstr "&Responde a l' evoyeu:"
 
 #. i18n: tag string
 #. i18n: file templatesconfiguration_base.ui line 195
-#: rc.cpp:1170
+#: rc.cpp:1176
 #, fuzzy
 msgid "Reply to All / Reply to List"
 msgstr "Responde a &Tertos..."
 
 #. i18n: tag string
 #. i18n: file templatesconfiguration_base.ui line 248
-#: rc.cpp:1173
+#: rc.cpp:1179
 #, fuzzy
 msgid "Forward Message"
 msgstr "Messaedje rcassî"
 
 #. i18n: tag string
 #. i18n: file warningconfiguration.ui line 61
-#: rc.cpp:1219
+#: rc.cpp:1225
 msgid "Warn if &Receiver's Email Address is Not in Certificate"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file warningconfiguration.ui line 82
-#: rc.cpp:1233
+#: rc.cpp:1239
 msgid "Warn if certificates/keys expire soon (configure thresholds below)"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file warningconfiguration.ui line 94
-#: rc.cpp:1236
+#: rc.cpp:1242
 #, fuzzy
 msgid "For signing"
 msgstr "Plaece do Ridant"
 
 #. i18n: tag string
 #. i18n: file warningconfiguration.ui line 107
-#: rc.cpp:1239
+#: rc.cpp:1245
 #, fuzzy
 msgid "For encryption"
 msgstr "Ecriptaedje"
 
 #. i18n: tag string
 #. i18n: file warningconfiguration.ui line 282
-#: rc.cpp:1326
+#: rc.cpp:1332
 #, fuzzy
 msgid "For root certificates:"
 msgstr "Cweri après des ôtès acertineures"
 
 #. i18n: tag string
 #. i18n: file warningconfiguration.ui line 295
-#: rc.cpp:1329
+#: rc.cpp:1335
 #, fuzzy
 msgid "For intermediate CA certificates:"
 msgstr "Cweri après des ôtès acertineures"
 
 #. i18n: tag string
 #. i18n: file warningconfiguration.ui line 308
-#: rc.cpp:1332
+#: rc.cpp:1338
 #, fuzzy
 msgid "For end-user certificates/keys:"
 msgstr "Ni &nén evoyî les acertineures"
 
 #. i18n: tag string
 #. i18n: file warningconfiguration.ui line 377
-#: rc.cpp:1335
+#: rc.cpp:1341
 msgid "Re-enable All \"Don't Ask Again\" Warnings"
 msgstr ""
 
-#: rc.cpp:1336
+#: rc.cpp:1342
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Lorint Hendschel"
 
-#: rc.cpp:1337
+#: rc.cpp:1343
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "lorint.hendschel@skynet.be"
