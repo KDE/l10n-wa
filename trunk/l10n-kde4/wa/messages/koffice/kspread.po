@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kspread\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-07-14 05:36+0200\n"
+"POT-Creation-Date: 2007-07-15 05:35+0200\n"
 "PO-Revision-Date: 2004-04-05 22:29+0200\n"
 "Last-Translator: Pablo Saratxaga <pablo@walon.org>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -2728,10 +2728,11 @@ msgstr "Tiestire"
 msgid "Header1"
 msgstr ""
 
-#: StyleManager.cpp:382 dialogs/StylesDialog.cpp:117
-#: dialogs/StylesDialog.cpp:161 dialogs/StylesDialog.cpp:204
-#: dialogs/StylesDialog.cpp:220 dialogs/StylesDialog.cpp:263
-#: dialogs/StylesDialog.cpp:285 dialogs/StylesDialog.cpp:308 ui/View.cpp:541
+#: StyleManager.cpp:382 dialogs/StyleManagerDialog.cpp:100
+#: dialogs/StyleManagerDialog.cpp:144 dialogs/StyleManagerDialog.cpp:182
+#: dialogs/StyleManagerDialog.cpp:196 dialogs/StyleManagerDialog.cpp:239
+#: dialogs/StyleManagerDialog.cpp:259 dialogs/StyleManagerDialog.cpp:280
+#: ui/View.cpp:541
 msgid "Default"
 msgstr ""
 
@@ -4399,6 +4400,17 @@ msgstr ""
 msgid "Merging of columns or rows is not supported."
 msgstr ""
 
+#: commands/NamedAreaCommand.cpp:33 commands/NamedAreaCommand.cpp:49
+#: dialogs/AddNamedAreaDialog.cpp:49
+#, fuzzy
+msgid "Add Named Area"
+msgstr "Oister ttafwait"
+
+#: commands/NamedAreaCommand.cpp:51 dialogs/NamedAreaDialog.cpp:191
+#, fuzzy
+msgid "Remove Named Area"
+msgstr "Oister ttafwait"
+
 #: commands/RowColumnManipulators.cpp:42 dialogs/Resize2Dialog.cpp:124
 msgid "Resize Column"
 msgstr "Candjî l' grandeu del colone"
@@ -4530,25 +4542,26 @@ msgstr "Criptografeye"
 msgid "Non-empty"
 msgstr "Nouk"
 
-#: dialogs/AngleDialog.cpp:62
-msgid "Angle:"
-msgstr "Ingleye:"
-
-#: dialogs/AreaDialog.cpp:46
-msgid "Area Name"
-msgstr ""
-
-#: dialogs/AreaDialog.cpp:60
+#: dialogs/AddNamedAreaDialog.cpp:58
 msgid "Enter the area name:"
 msgstr ""
 
-#: dialogs/AreaDialog.cpp:95 ui/View.cpp:6591
-msgid "This name is already used."
+#: dialogs/AddNamedAreaDialog.cpp:91
+#, qt-format
+msgid ""
+"The named area '%1' already exists.\n"
+"Do you want to replace it?"
 msgstr ""
 
-#: dialogs/AreaDialog.cpp:99
-msgid "Area text is empty."
-msgstr ""
+#: dialogs/AddNamedAreaDialog.cpp:93 dialogs/AddNamedAreaDialog.cpp:99
+#: dialogs/NamedAreaDialog.cpp:309
+#, fuzzy
+msgid "Replace Named Area"
+msgstr "Oister ttafwait"
+
+#: dialogs/AngleDialog.cpp:62
+msgid "Angle:"
+msgstr "Ingleye:"
 
 #: dialogs/CSVDialog.cpp:73 dialogs/CSVDialog.cpp:170
 msgid "Inserting From Clipboard"
@@ -4724,7 +4737,7 @@ msgid "&Add"
 msgstr "&Radjouter"
 
 #: dialogs/ConsolidateDialog.cpp:125 dialogs/ListDialog.cpp:76
-#: dialogs/NamedAreaDialog.cpp:68
+#: dialogs/NamedAreaDialog.cpp:70
 #, fuzzy
 msgid "&Remove"
 msgstr "&Oister rawete"
@@ -5195,7 +5208,7 @@ msgstr ""
 msgid "Remove columns"
 msgstr ""
 
-#: dialogs/LayoutDialog.cpp:173
+#: dialogs/LayoutDialog.cpp:173 dialogs/StyleManagerDialog.cpp:60
 msgid "Style"
 msgstr "Stîle"
 
@@ -5606,68 +5619,54 @@ msgid ""
 "Do you want to continue?"
 msgstr ""
 
-#: dialogs/NamedAreaDialog.cpp:67
+#: dialogs/NamedAreaDialog.cpp:69
 #, fuzzy
 #| msgid "&Sheet"
 msgid "&Select"
 msgstr "&Foye"
 
-#: dialogs/NamedAreaDialog.cpp:69
+#: dialogs/NamedAreaDialog.cpp:71
 msgid "&Edit..."
 msgstr ""
 
-#: dialogs/NamedAreaDialog.cpp:70 dialogs/StylesDialog.cpp:80
+#: dialogs/NamedAreaDialog.cpp:72 dialogs/StyleManagerDialog.cpp:48
 msgid "&New..."
 msgstr "&Novea..."
 
-#: dialogs/NamedAreaDialog.cpp:71
+#: dialogs/NamedAreaDialog.cpp:73
 #, fuzzy
 msgid "Named Areas"
 msgstr "Oister ttafwait"
 
-#: dialogs/NamedAreaDialog.cpp:87 dialogs/NamedAreaDialog.cpp:115
+#: dialogs/NamedAreaDialog.cpp:89 dialogs/NamedAreaDialog.cpp:117
 #, qt-format
 msgid "Area: %1"
 msgstr ""
 
-#: dialogs/NamedAreaDialog.cpp:150
+#: dialogs/NamedAreaDialog.cpp:152
 #, fuzzy
 msgid "New Named Area"
 msgstr "Oister ttafwait"
 
-#: dialogs/NamedAreaDialog.cpp:176
+#: dialogs/NamedAreaDialog.cpp:178
 msgid "Edit Named Area"
 msgstr ""
 
-#: dialogs/NamedAreaDialog.cpp:188
+#: dialogs/NamedAreaDialog.cpp:190
 msgid "Do you really want to remove this named area?"
 msgstr ""
 
-#: dialogs/NamedAreaDialog.cpp:189
-#, fuzzy
-msgid "Remove Named Area"
-msgstr "Oister ttafwait"
-
-#: dialogs/NamedAreaDialog.cpp:233
+#: dialogs/NamedAreaDialog.cpp:239
 msgid "Cells:"
 msgstr ""
 
-#: dialogs/NamedAreaDialog.cpp:240
+#: dialogs/NamedAreaDialog.cpp:246
 msgid "Sheet:"
 msgstr ""
 
-#: dialogs/NamedAreaDialog.cpp:247
+#: dialogs/NamedAreaDialog.cpp:253
 msgid "Area name:"
 msgstr ""
-
-#: dialogs/NamedAreaDialog.cpp:304
-msgid "Do you really want to replace this named area?"
-msgstr ""
-
-#: dialogs/NamedAreaDialog.cpp:305
-#, fuzzy
-msgid "Replace Named Area"
-msgstr "Oister ttafwait"
 
 #: dialogs/PaperLayoutDialog.cpp:83
 msgid "&Apply to all sheets"
@@ -6325,40 +6324,32 @@ msgstr ""
 msgid "Special Paste"
 msgstr ""
 
-#: dialogs/StylesDialog.cpp:49 dialogs/StylesDialog.cpp:56
-msgid "Styles"
-msgstr "Stîles"
-
-#: dialogs/StylesDialog.cpp:58
-msgid "All Styles"
-msgstr "Tos les stîles"
-
-#: dialogs/StylesDialog.cpp:59
-msgid "Applied Styles"
-msgstr "Stîles en alaedje"
-
-#: dialogs/StylesDialog.cpp:60
-msgid "Custom Styles"
-msgstr "Stîles da vosse"
-
-#: dialogs/StylesDialog.cpp:61
-msgid "Hierarchical"
-msgstr ""
-
-#: dialogs/StylesDialog.cpp:78 ui/View.cpp:1189
-msgid "Style Manager"
-msgstr "Manaedjeu des stîles"
-
-#: dialogs/StylesDialog.cpp:81
+#: dialogs/StyleManagerDialog.cpp:49
 #, fuzzy
 msgid "&Modify..."
 msgstr "&Radjouter/candjî ene rawete..."
 
-#: dialogs/StylesDialog.cpp:82
+#: dialogs/StyleManagerDialog.cpp:50
 msgid "&Delete..."
 msgstr ""
 
-#: dialogs/StylesDialog.cpp:229 dialogs/StylesDialog.cpp:233
+#: dialogs/StyleManagerDialog.cpp:52 ui/View.cpp:1189
+msgid "Style Manager"
+msgstr "Manaedjeu des stîles"
+
+#: dialogs/StyleManagerDialog.cpp:64
+msgid "All Styles"
+msgstr "Tos les stîles"
+
+#: dialogs/StyleManagerDialog.cpp:65
+msgid "Custom Styles"
+msgstr "Stîles da vosse"
+
+#: dialogs/StyleManagerDialog.cpp:66
+msgid "Hierarchical"
+msgstr ""
+
+#: dialogs/StyleManagerDialog.cpp:205 dialogs/StyleManagerDialog.cpp:209
 #, qt-format
 msgid "style%1"
 msgstr "stîle%1"
@@ -6764,11 +6755,11 @@ msgstr "Sititchî on loyén"
 msgid "Cell Tool"
 msgstr "Valixhances"
 
-#: ui/Editors.cpp:1715
+#: ui/Editors.cpp:1710
 msgid "Select Single Cell"
 msgstr ""
 
-#: ui/Editors.cpp:1719
+#: ui/Editors.cpp:1714
 #, fuzzy
 msgid "Select Multiple Cells"
 msgstr "Tchoezi fonte..."
@@ -8012,6 +8003,10 @@ msgstr ""
 msgid "Sheet name cannot be empty."
 msgstr ""
 
+#: ui/View.cpp:6591
+msgid "This name is already used."
+msgstr ""
+
 #: ui/View.cpp:6835
 msgid "Sum: "
 msgstr ""
@@ -8040,6 +8035,12 @@ msgstr "Conter"
 #, fuzzy
 msgid "CountA: "
 msgstr "Conter"
+
+#~ msgid "Styles"
+#~ msgstr "Stîles"
+
+#~ msgid "Applied Styles"
+#~ msgstr "Stîles en alaedje"
 
 #, fuzzy
 #~ msgid "Sheets"
