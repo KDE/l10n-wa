@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-08-23 05:40+0200\n"
+"POT-Creation-Date: 2007-08-24 05:35+0200\n"
 "PO-Revision-Date: 2003-09-10 00:07+0200\n"
 "Last-Translator: Lorint Hendschel <LorintHendschel@skynet.be>\n"
 "Language-Team: walon <linux-wa@chanae.alphanet.ch>\n"
@@ -165,7 +165,7 @@ msgstr "Nou fitchî di tchoezi"
 msgid "Start / Resume"
 msgstr ""
 
-#: mainwindow.cpp:195 core/transfergrouphandler.cpp:320
+#: mainwindow.cpp:195 core/transfergrouphandler.cpp:321
 #, fuzzy
 msgid "Stop"
 msgstr "Roedeu"
@@ -184,71 +184,81 @@ msgstr "<LorintHendschel@skynet.be>"
 msgid "Copy URL to Clipboard"
 msgstr ""
 
-#: mainwindow.cpp:250
+#. i18n: tag string
+#. i18n: file conf/dlgappearance.ui line 37
+#: mainwindow.cpp:219 mainwindow.cpp:288 rc.cpp:27
+msgid "Show drop target"
+msgstr ""
+
+#: mainwindow.cpp:220 mainwindow.cpp:289
+msgid "Hide drop target"
+msgstr ""
+
+#: mainwindow.cpp:259
 msgid ""
 "This is the first time you have run KGet.\n"
 "Would you like to enable KGet as the download manager for Konqueror?"
 msgstr ""
 
-#: mainwindow.cpp:252
+#: mainwindow.cpp:261
 msgid "Konqueror Integration"
 msgstr ""
 
-#: mainwindow.cpp:252
+#: mainwindow.cpp:261
 msgid "Enable"
 msgstr ""
 
-#: mainwindow.cpp:253
+#: mainwindow.cpp:262
 msgid "Do Not Enable"
 msgstr ""
 
-#: mainwindow.cpp:284
+#: mainwindow.cpp:303
 #, fuzzy
 msgid "All Openable Files"
 msgstr "Drovi &fitchî"
 
-#: mainwindow.cpp:285
+#: mainwindow.cpp:304
 #, fuzzy
 msgid "Open File"
 msgstr "Drovi &fitchî"
 
-#: mainwindow.cpp:301
+#: mainwindow.cpp:320
 msgid ""
 "Some transfers are still running.\n"
 "Are you sure you want to close KGet?"
 msgstr ""
 
-#: mainwindow.cpp:303
+#: mainwindow.cpp:322
 msgid "Confirm Quit"
 msgstr ""
 
-#: mainwindow.cpp:336
+#: mainwindow.cpp:355
 #, fuzzy
 msgid "KGet Transfer List"
 msgstr " Transfers: %1"
 
-#: mainwindow.cpp:338
+#: mainwindow.cpp:357
 #, fuzzy
 msgid "Export Transfers"
 msgstr " Transfers: %1"
 
-#: mainwindow.cpp:361 conf/transfersgroupwidget.cpp:70
+#: mainwindow.cpp:380 conf/transfersgroupwidget.cpp:70
 msgid "Enter Group Name"
 msgstr ""
 
-#: mainwindow.cpp:362 conf/transfersgroupwidget.cpp:71
+#: mainwindow.cpp:381 conf/transfersgroupwidget.cpp:71
 #, fuzzy
 msgid "Group name:"
 msgstr "Lorint Hendschel"
 
-#: mainwindow.cpp:540
+#: mainwindow.cpp:559
 msgid ""
 "KGet has been temporarily disabled as download manager for Konqueror. If you "
 "want to disable it forever, go to Settings->Advanced and disable \"Use as "
 "download manager for Konqueror\"."
 msgstr ""
 
-#: mainwindow.cpp:543
+#: mainwindow.cpp:562
 msgid "Konqueror Integration disabled"
 msgstr ""
 
@@ -299,12 +309,6 @@ msgstr ""
 #. i18n: file conf/dlgappearance.ui line 31
 #: rc.cpp:24 ui/droptarget.cpp:340
 msgid "Drop Target"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file conf/dlgappearance.ui line 37
-#: rc.cpp:27
-msgid "Show drop target"
 msgstr ""
 
 #. i18n: tag string
@@ -531,7 +535,6 @@ msgid "Folder and extension can not be empty."
 msgstr ""
 
 #: conf/dlgdirectories.cpp:120 core/kget.cpp:416 core/kget.cpp:636
-#: core/kget.cpp:663
 msgid "Error"
 msgstr ""
 
@@ -591,6 +594,7 @@ msgid ""
 msgstr ""
 
 #: conf/transfersgroupwidget.cpp:99 core/kget.cpp:481
+#: core/transfergrouphandler.cpp:186
 #, fuzzy
 msgid "My Downloads"
 msgstr "Manaedjeu des aberwetaedjes"
@@ -656,14 +660,7 @@ msgstr ""
 msgid "Download URL again?"
 msgstr "Manaedjeu des aberwetaedjes"
 
-#: core/kget.cpp:662
-#, qt-format
-msgid ""
-"Already saving URL\n"
-"%1"
-msgstr ""
-
-#: core/kget.cpp:681
+#: core/kget.cpp:678
 #, qt-format
 msgid ""
 "Destination file \n"
@@ -672,14 +669,14 @@ msgid ""
 "Do you want to overwrite it?"
 msgstr ""
 
-#: core/kget.cpp:809
+#: core/kget.cpp:806
 #, qt-format
 msgid ""
 "<p>KLibLoader could not load the plugin:<br/><i>%1</i></p><p>Error message:"
 "<br/><i>%2</i></p>"
 msgstr ""
 
-#: core/kget.cpp:834
+#: core/kget.cpp:831
 #, qt-format
 msgid ""
 "Not deleting\n"
@@ -687,11 +684,11 @@ msgid ""
 "as it is a directory."
 msgstr ""
 
-#: core/kget.cpp:836 core/kget.cpp:847
+#: core/kget.cpp:833 core/kget.cpp:844
 msgid "Not Deleted"
 msgstr ""
 
-#: core/kget.cpp:845
+#: core/kget.cpp:842
 #, qt-format
 msgid ""
 "Not deleting\n"
@@ -730,7 +727,7 @@ msgstr "Djoké"
 msgid "%1/s"
 msgstr "%1/s"
 
-#: core/transfergrouphandler.cpp:314
+#: core/transfergrouphandler.cpp:315
 #, fuzzy
 msgid "Start"
 msgstr "Re&nonder"
