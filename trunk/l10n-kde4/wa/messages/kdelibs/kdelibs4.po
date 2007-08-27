@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4 0.4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-08-26 05:29+0200\n"
+"POT-Creation-Date: 2007-08-27 05:28+0200\n"
 "PO-Revision-Date: 2004-05-17 05:10+0200\n"
 "Last-Translator: Pablo Saratxaga <pablo@walon.org>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -1817,7 +1817,10 @@ msgstr "Apontiaedje des rsources KDE"
 msgid "Do you want to reload KDE configuration?"
 msgstr ""
 
-#: kded/kbuildsycoca.cpp:749 kfile/kdiroperator.cpp:1377
+#: kded/kbuildsycoca.cpp:749
+#, fuzzy
+#| msgid "Reload"
+msgctxt "Reload KDE configuration messagebox"
 msgid "Reload"
 msgstr "Ritcherdjî"
 
@@ -5095,7 +5098,7 @@ msgstr ""
 #, qt-format
 msgid ""
 "<qt>Enter passphrase for key <b>0x%1</b>, belonging to<br /><i>%2&lt;%3&gt;</"
-"i></br />:</qt>"
+"i><br />:</qt>"
 msgstr ""
 
 #: knewstuff/knewstuff2/core/security.cpp:304
@@ -5726,9 +5729,9 @@ msgstr ""
 #: kdeui/dialogs/kaboutkdedialog.cpp:106
 #, fuzzy
 msgid ""
-"KDE is available free of charge, but making it is not free.<br><br>Thus, the "
-"KDE team formed the KDE e.V., a non-profit organization legally founded in "
-"Tuebingen, Germany. The KDE e.V. represents the KDE project in legal and "
+"KDE is available free of charge, but making it is not free.<br /><br />Thus, "
+"the KDE team formed the KDE e.V., a non-profit organization legally founded "
+"in Tuebingen, Germany. The KDE e.V. represents the KDE project in legal and "
 "financial matters. See <a href=\"http://www.kde-ev.org/\">http://www.kde-ev."
 "org</a> for information on the KDE e.V.<br /><br />The KDE team does need "
 "financial support. Most of the money is used to reimburse members and others "
@@ -5948,7 +5951,7 @@ msgid "About %1"
 msgstr "Å dfait di %1"
 
 #: kdeui/dialogs/kconfigdialog.cpp:60 kdeui/actions/kcodecaction.cpp:120
-#: kfile/kfilewidget.cpp:316 kutils/kcmultidialog.cpp:99
+#: kfile/kfilewidget.cpp:318 kutils/kcmultidialog.cpp:99
 msgid "Configure"
 msgstr "Apontyî"
 
@@ -6049,8 +6052,7 @@ msgstr ""
 
 #: kdeui/dialogs/kaboutapplicationdialog.cpp:83
 #, qt-format
-msgid ""
-"<font size=\"5\">%1</font><br /><b>Version %2</b><br />Using KDE %3</html>"
+msgid "<font size=\"5\">%1</font><br /><b>Version %2</b><br />Using KDE %3"
 msgstr ""
 
 #: kdeui/dialogs/kaboutapplicationdialog.cpp:111
@@ -8696,7 +8698,7 @@ msgstr "Enonder l' replaeçmint"
 msgid "Unknown"
 msgstr "Nén cnoxhou"
 
-#: kdeui/widgets/kkeysequencewidget.cpp:311
+#: kdeui/widgets/kkeysequencewidget.cpp:269
 #, fuzzy
 msgctxt "What the user inputs now will be taken as the new shortcut"
 msgid "Input"
@@ -8947,7 +8949,7 @@ msgstr "Ôte"
 msgid "Group"
 msgstr "Prôpietés"
 
-#: kfile/kfilefiltercombo.cpp:33 kfile/kfilewidget.cpp:1377
+#: kfile/kfilefiltercombo.cpp:33 kfile/kfilewidget.cpp:1406
 #, fuzzy
 msgid "*|All Files"
 msgstr "Fitchîs"
@@ -8967,51 +8969,39 @@ msgstr "Di D&vant"
 msgid "No preview available."
 msgstr "Rén d' trové.\n"
 
-#: kfile/kfilewidget.cpp:175
+#: kfile/kfilewidget.cpp:179
 msgid ""
 "<qt>While typing in the text area, you may be presented with possible "
 "matches. This feature can be controlled by clicking with the right mouse "
 "button and selecting a preferred mode from the <b>Text Completion</b> menu."
 msgstr ""
 
-#: kfile/kfilewidget.cpp:207
-#, fuzzy
-msgid "Current location"
-msgstr "Accions di pol &moumint:"
-
-#: kfile/kfilewidget.cpp:208
-msgid ""
-"This is the currently listed location. The drop-down list also lists "
-"commonly used locations. This includes standard locations, such as your home "
-"folder, as well as locations that have been visited recently."
-msgstr ""
-
-#: kfile/kfilewidget.cpp:218
+#: kfile/kfilewidget.cpp:220
 #, fuzzy, qt-format
 msgid "Drive: %1"
 msgstr "Catchî %1"
 
-#: kfile/kfilewidget.cpp:225
+#: kfile/kfilewidget.cpp:227
 #, qt-format
 msgid "Root Folder: %1"
 msgstr ""
 
-#: kfile/kfilewidget.cpp:232
+#: kfile/kfilewidget.cpp:234
 #, qt-format
 msgid "Home Folder: %1"
 msgstr ""
 
-#: kfile/kfilewidget.cpp:241
+#: kfile/kfilewidget.cpp:243
 #, qt-format
 msgid "Documents: %1"
 msgstr ""
 
-#: kfile/kfilewidget.cpp:248
+#: kfile/kfilewidget.cpp:250
 #, fuzzy, qt-format
 msgid "Desktop: %1"
 msgstr "Sicribanne '%1'"
 
-#: kfile/kfilewidget.cpp:290
+#: kfile/kfilewidget.cpp:292
 #, qt-format
 msgid ""
 "<qt>Click this button to enter the parent folder.<br /><br />For instance, "
@@ -9019,32 +9009,32 @@ msgid ""
 "to file:/home.</qt>"
 msgstr ""
 
-#: kfile/kfilewidget.cpp:294
+#: kfile/kfilewidget.cpp:296
 msgid "Click this button to move backwards one step in the browsing history."
 msgstr ""
 
-#: kfile/kfilewidget.cpp:296
+#: kfile/kfilewidget.cpp:298
 msgid "Click this button to move forward one step in the browsing history."
 msgstr ""
 
-#: kfile/kfilewidget.cpp:298
+#: kfile/kfilewidget.cpp:300
 msgid "Click this button to reload the contents of the current location."
 msgstr ""
 
-#: kfile/kfilewidget.cpp:301
+#: kfile/kfilewidget.cpp:303
 msgid "Click this button to create a new folder."
 msgstr ""
 
-#: kfile/kfilewidget.cpp:304
+#: kfile/kfilewidget.cpp:306
 msgid "Show Quick Access Navigation Panel"
 msgstr ""
 
-#: kfile/kfilewidget.cpp:311
+#: kfile/kfilewidget.cpp:313
 #, fuzzy
 msgid "Show Bookmarks"
 msgstr "Rimåkes"
 
-#: kfile/kfilewidget.cpp:318
+#: kfile/kfilewidget.cpp:320
 msgid ""
 "<qt>This is the configuration menu for the file dialog. Various options can "
 "be accessed from this menu including: <ul><li>how files are sorted in the "
@@ -9053,12 +9043,12 @@ msgid ""
 "previews</li><li>separating folders from files</li></ul></qt>"
 msgstr ""
 
-#: kfile/kfilewidget.cpp:369
+#: kfile/kfilewidget.cpp:366
 #, fuzzy
 msgid "&Location:"
 msgstr "Alfabet Latén"
 
-#: kfile/kfilewidget.cpp:391
+#: kfile/kfilewidget.cpp:390
 msgid ""
 "<qt>This is the filter to apply to the file list. File names that do not "
 "match the filter will not be shown.<p>You may select from one of the preset "
@@ -9066,67 +9056,67 @@ msgid ""
 "into the text area.</p><p>Wildcards such as * and ? are allowed.</p></qt>"
 msgstr ""
 
-#: kfile/kfilewidget.cpp:397
+#: kfile/kfilewidget.cpp:396
 #, fuzzy
 msgid "&Filter:"
 msgstr "Passete:"
 
-#: kfile/kfilewidget.cpp:559
+#: kfile/kfilewidget.cpp:558
 msgid "Please specify the filename to save to."
 msgstr ""
 
-#: kfile/kfilewidget.cpp:561
+#: kfile/kfilewidget.cpp:560
 #, fuzzy
 msgid "Please select the file to open."
 msgstr "Tchoezixhoz li sôre del novele rissource:"
 
-#: kfile/kfilewidget.cpp:618 kfile/kfilewidget.cpp:661
-#: kfile/kfilewidget.cpp:1322
+#: kfile/kfilewidget.cpp:617 kfile/kfilewidget.cpp:660
+#: kfile/kfilewidget.cpp:1340
 msgid "You can only select local files."
 msgstr ""
 
-#: kfile/kfilewidget.cpp:619 kfile/kfilewidget.cpp:662
-#: kfile/kfilewidget.cpp:1323
+#: kfile/kfilewidget.cpp:618 kfile/kfilewidget.cpp:661
+#: kfile/kfilewidget.cpp:1341
 msgid "Remote Files Not Accepted"
 msgstr ""
 
-#: kfile/kfilewidget.cpp:653
+#: kfile/kfilewidget.cpp:652
 #, qt-format
 msgid ""
 "%1\n"
 "does not appear to be a valid URL.\n"
 msgstr ""
 
-#: kfile/kfilewidget.cpp:653
+#: kfile/kfilewidget.cpp:652
 msgid "Invalid URL"
 msgstr ""
 
-#: kfile/kfilewidget.cpp:973
+#: kfile/kfilewidget.cpp:979
 msgid "This is the name to save the file as."
 msgstr ""
 
-#: kfile/kfilewidget.cpp:978
+#: kfile/kfilewidget.cpp:984
 msgid ""
 "This is the list of files to open. More than one file can be specified by "
 "listing several files, separated by spaces."
 msgstr ""
 
-#: kfile/kfilewidget.cpp:985
+#: kfile/kfilewidget.cpp:991
 msgid "This is the name of the file to open."
 msgstr ""
 
-#: kfile/kfilewidget.cpp:1254
+#: kfile/kfilewidget.cpp:1272
 msgid ""
 "The chosen filenames do not\n"
 "appear to be valid."
 msgstr ""
 
-#: kfile/kfilewidget.cpp:1256
+#: kfile/kfilewidget.cpp:1274
 #, fuzzy
 msgid "Invalid Filenames"
 msgstr "mwaijhe valixhance po 'ai_flags'"
 
-#: kfile/kfilewidget.cpp:1285
+#: kfile/kfilewidget.cpp:1303
 #, qt-format
 msgid ""
 "The requested filenames\n"
@@ -9135,38 +9125,38 @@ msgid ""
 "make sure every filename is enclosed in double quotes."
 msgstr ""
 
-#: kfile/kfilewidget.cpp:1289
+#: kfile/kfilewidget.cpp:1307
 #, fuzzy
 msgid "Filename Error"
 msgstr "Åk ni va nén e fitchî"
 
-#: kfile/kfilewidget.cpp:1374
+#: kfile/kfilewidget.cpp:1403
 msgid "*|All Folders"
 msgstr ""
 
-#: kfile/kfilewidget.cpp:1501 kparts/browserrun.cpp:370
+#: kfile/kfilewidget.cpp:1545 kparts/browserrun.cpp:370
 msgid "&Open"
 msgstr "Dr&ovi"
 
-#: kfile/kfilewidget.cpp:1644
+#: kfile/kfilewidget.cpp:1688
 #, qt-format
 msgid "Automatically select filename e&xtension (%1)"
 msgstr ""
 
-#: kfile/kfilewidget.cpp:1645
+#: kfile/kfilewidget.cpp:1689
 #, qt-format
 msgid "the extension <b>%1</b>"
 msgstr ""
 
-#: kfile/kfilewidget.cpp:1653
+#: kfile/kfilewidget.cpp:1697
 msgid "Automatically select filename e&xtension"
 msgstr ""
 
-#: kfile/kfilewidget.cpp:1654
+#: kfile/kfilewidget.cpp:1698
 msgid "a suitable extension"
 msgstr ""
 
-#: kfile/kfilewidget.cpp:1664
+#: kfile/kfilewidget.cpp:1708
 #, qt-format
 msgid ""
 "This option enables some convenient features for saving files with "
@@ -9182,11 +9172,11 @@ msgid ""
 "enabled as it makes your files more manageable."
 msgstr ""
 
-#: kfile/kfilewidget.cpp:1932
+#: kfile/kfilewidget.cpp:1976
 msgid "Bookmarks"
 msgstr "Rimåkes"
 
-#: kfile/kfilewidget.cpp:1935
+#: kfile/kfilewidget.cpp:1979
 msgid ""
 "<qt>This button allows you to bookmark specific locations. Click on this "
 "button to open the bookmark menu where you may add, edit or select a "
@@ -9241,7 +9231,7 @@ msgstr "Åk n' a nén stî tot tcherdjant <B>%1</B>:"
 msgid "An error occurred while accessing '%1'"
 msgstr "Åk n' a nén stî tot tcherdjant <B>%1</B>:"
 
-#: kfile/kurlnavigator.cpp:582
+#: kfile/kurlnavigator.cpp:585
 #, fuzzy
 msgid "Custom Path"
 msgstr "A vosse môde"
@@ -9440,6 +9430,10 @@ msgstr "Rexhe li tiestire"
 msgid "Home Folder"
 msgstr "Måjhon"
 
+#: kfile/kdiroperator.cpp:1377
+msgid "Reload"
+msgstr "Ritcherdjî"
+
 #: kfile/kdiroperator.cpp:1390
 msgid "Move to Trash"
 msgstr ""
@@ -9495,11 +9489,11 @@ msgstr ""
 msgid "Show Preview"
 msgstr ""
 
-#: kfile/kurltogglebutton.cpp:77
+#: kfile/kurltogglebutton.cpp:81
 msgid "Click for Location Navigation"
 msgstr ""
 
-#: kfile/kurltogglebutton.cpp:79
+#: kfile/kurltogglebutton.cpp:83
 #, fuzzy
 msgid "Click to Edit Location"
 msgstr "Clitchîz po tchoezi ene fonte"
@@ -10076,7 +10070,7 @@ msgstr " - BCC: "
 #, fuzzy, qt-format
 msgid ""
 "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to follow "
-"the link?"
+"the link?</qt>"
 msgstr ""
 "<qt>Cisse pådje nén fiyåve contént ene hårdêye <BR><B>%1</B><BR>viè vosse "
 "sistinme di fitchîs locå."
@@ -10162,7 +10156,7 @@ msgstr "Evoyî imådje"
 #| "filesystem.<BR>Do you want to submit the form?"
 msgid ""
 "<qt>The form will be submitted to <br /><b>%1</b><br />on your local "
-"filesystem.<br />Do you want to submit the form?"
+"filesystem.<br />Do you want to submit the form?</qt>"
 msgstr ""
 "<qt>Li formulaire serè prezinté a<BR><B>%1</B><BR>so vosse sistinme di "
 "fitchî locå .<BR> Voloz prezinter li formulaire?"
@@ -10191,7 +10185,7 @@ msgstr "Adviertixhmint di Såvrité"
 
 #: khtml/khtml_part.cpp:6875
 #, fuzzy, qt-format
-msgid "<qt>Access by untrusted page to<br /><b>%1</b><br /> denied."
+msgid "<qt>Access by untrusted page to<br /><b>%1</b><br /> denied.</qt>"
 msgstr ""
 "<qt>Cisse pådje nén fiyåve contént ene hårdêye <BR><B>%1</B><BR>viè vosse "
 "sistinme di fitchîs locå."
@@ -11333,7 +11327,8 @@ msgstr "Li module %1 n' a nén stî trové!"
 #: kutils/kcmoduleloader.cpp:138
 #, qt-format
 msgid ""
-"<qt><p>The diagnostics is:<br />The desktop file %1 could not be found.</qt>"
+"<qt><p>The diagnostics is:<br />The desktop file %1 could not be found.</p></"
+"qt>"
 msgstr ""
 
 #: kutils/kcmoduleloader.cpp:140
@@ -11364,11 +11359,11 @@ msgid ""
 "</qt>"
 msgstr ""
 
-#: kutils/kcmoduleloader.cpp:190
+#: kutils/kcmoduleloader.cpp:189
 msgid "There was an error loading the module."
 msgstr "Åk n' a nén stî come dji voleu tcherdjî li môdule."
 
-#: kutils/kcmoduleloader.cpp:190
+#: kutils/kcmoduleloader.cpp:189
 #, qt-format
 msgid ""
 "<qt>The diagnostics is:<br />%1<p>Possible reasons:</p><ul><li>An error "
@@ -11379,14 +11374,15 @@ msgid ""
 "p></qt>"
 msgstr ""
 
-#: kutils/kcmoduleloader.cpp:205
+#: kutils/kcmoduleloader.cpp:204
 #, qt-format
 msgid ""
 "<qt>The diagnostics is:<br />%1<p>Possible reasons:<ul><li>An error occurred "
 "during your last KDE upgrade leaving an orphaned control module</li><li>You "
-"have old third party modules lying around.</li></ul><p>Check these points "
-"carefully and try to remove the module mentioned in the error message. If "
-"this fails, consider contacting your distributor or packager.</p></qt>"
+"have old third party modules lying around.</li></ul></p><p>Check these "
+"points carefully and try to remove the module mentioned in the error "
+"message. If this fails, consider contacting your distributor or packager.</"
+"p></qt>"
 msgstr ""
 
 #: kutils/kpluginselector.cpp:64
@@ -11489,13 +11485,13 @@ msgid ""
 "\t%1"
 msgstr "Catchî %1"
 
-#: kutils/kcmoduleproxy.cpp:131
+#: kutils/kcmoduleproxy.cpp:133
 msgid ""
 "<b>Changes in this section requires root access.</b><br />On applying your "
 "changes you will have to supply your root password."
 msgstr ""
 
-#: kutils/kcmoduleproxy.cpp:138
+#: kutils/kcmoduleproxy.cpp:140
 msgid ""
 "This section requires special permissions, probably for system-wide changes; "
 "therefore, it is required that you provide the root password to be able to "
@@ -11503,7 +11499,7 @@ msgid ""
 "changes of the module cannot be saved "
 msgstr ""
 
-#: kutils/kcmoduleproxy.cpp:159
+#: kutils/kcmoduleproxy.cpp:161
 #, qt-format
 msgctxt "Argument is application name"
 msgid "This configuration section is already opened in %1"
@@ -12523,6 +12519,10 @@ msgid ""
 "<qt><font size=\"+4\" face=\"%1\">%2</font><br />%3<br />Unicode code point: "
 "%4<br />(In decimal: %5)</qt>"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Current location"
+#~ msgstr "Accions di pol &moumint:"
 
 #, fuzzy
 #~| msgid "Options"
