@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-09-23 05:37+0200\n"
+"POT-Creation-Date: 2007-09-28 05:49+0200\n"
 "PO-Revision-Date: 2007-09-10 23:20+0200\n"
 "Last-Translator: Pablo Saratxaga <pablo@walon.org>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -486,7 +486,7 @@ msgstr "Waitroûlêye do scribanne viè l' tchapea emacralé"
 msgid "Block Global Shortcuts"
 msgstr "Bloker les rascourtis globås"
 
-#: main.cpp:66
+#: main.cpp:73
 msgid ""
 "kwin: it looks like there's already a window manager running. kwin not "
 "started.\n"
@@ -494,56 +494,67 @@ msgstr ""
 "kwin: i shonnreut k' i gn a ddja on manaedjeu d' purneas en alaedje. kwin "
 "nén enondé.\n"
 
-#: main.cpp:81
+#: main.cpp:88
 msgid "kwin: failure during initialization; aborting"
 msgstr "kwin: åk n' a nén stî tins d' l' inicialijhaedje; dji lai toumer"
 
 #: main.cpp:104
 msgid ""
+"KWin is unstable.\n"
+"It seems to have crashed several times in a row.\n"
+"You can select another window manager to run:"
+msgstr ""
+
+#: main.cpp:156
+msgid ""
 "kwin: unable to claim manager selection, another wm running? (try using --"
 "replace)\n"
 msgstr ""
 
-#: main.cpp:185
+#: main.cpp:286
 msgid "KDE window manager"
 msgstr "Manaedjeu d' purneas d' KDE"
 
-#: main.cpp:257 killer/killer.cpp:37
+#: main.cpp:358 killer/killer.cpp:37
 msgid "KWin"
 msgstr "KWin"
 
-#: main.cpp:259
+#: main.cpp:360
 msgid "(c) 1999-2005, The KDE Developers"
 msgstr "© 1999-2005, Les diswalpeus di KDE"
 
-#: main.cpp:260
+#: main.cpp:361
 msgid "Matthias Ettrich"
 msgstr "Matthias Ettrich"
 
-#: main.cpp:261
+#: main.cpp:362
 msgid "Cristian Tibirna"
 msgstr "Christian Tibirna"
 
-#: main.cpp:262
+#: main.cpp:363
 msgid "Daniel M. Duley"
 msgstr "Daniel Molkentin"
 
-#: main.cpp:263
+#: main.cpp:364
 msgid "Luboš Luňák"
 msgstr "Luboš Luňák"
 
-#: main.cpp:263
+#: main.cpp:364
 msgid "Maintainer"
 msgstr "Mintneu"
 
-#: main.cpp:268
+#: main.cpp:369
 msgid "Disable configuration options"
 msgstr "Dismete les tchuzes d' apontiaedje"
 
-#: main.cpp:269
+#: main.cpp:370
 msgid "Replace already-running ICCCM2.0-compliant window manager"
 msgstr ""
 "Replaecî l' manaedje d' purneas ICCCM2.0-copative k' est ddja en alaedje"
+
+#: main.cpp:371
+msgid "Indicate that KWin has recently crashed n times"
+msgstr ""
 
 #: plugins.cpp:32
 msgid "KWin: "
@@ -648,12 +659,12 @@ msgstr "Evoyî å &scribanne"
 msgid "&All Desktops"
 msgstr "Evoyî a &tos les scribannes"
 
-#: workspace.cpp:1089 workspace.cpp:1109
+#: workspace.cpp:1090 workspace.cpp:1110
 #, qt-format
 msgid "Desktop %1"
 msgstr "Sicribanne «%1»"
 
-#: workspace.cpp:2439
+#: workspace.cpp:2440
 #, qt-format
 msgid ""
 "You have selected to show a window without its border.\n"
@@ -662,7 +673,7 @@ msgid ""
 "keyboard shortcut."
 msgstr ""
 
-#: workspace.cpp:2453
+#: workspace.cpp:2454
 #, qt-format
 msgid ""
 "You have selected to show a window in fullscreen mode.\n"
@@ -671,9 +682,13 @@ msgid ""
 "window operations menu instead, activated using the %1 keyboard shortcut."
 msgstr ""
 
-#: effects/desktopgrid.cpp:38
+#: effects/desktopgrid.cpp:38 effects/desktopgrid_config.cpp:44
 msgid "Show Desktop Grid"
 msgstr "Mostrer grile do scribanne"
+
+#: effects/desktopgrid_config.cpp:37
+msgid "Animate desktop changes"
+msgstr ""
 
 #: effects/invert.cpp:30
 #, fuzzy
@@ -685,12 +700,12 @@ msgstr "Efet &racsegnes:"
 msgid "ClearMouseMarks"
 msgstr "Di&strure çou k' est tchoezi"
 
-#: effects/presentwindows.cpp:46
+#: effects/presentwindows.cpp:46 effects/presentwindows_config.cpp:61
 #, fuzzy
 msgid "Toggle Expose effect"
 msgstr "Efet &racsegnes:"
 
-#: effects/presentwindows.cpp:50
+#: effects/presentwindows.cpp:50 effects/presentwindows_config.cpp:64
 msgid "Toggle Expose effect (incl other desktops)"
 msgstr ""
 
@@ -703,69 +718,55 @@ msgstr ""
 "Passete:\n"
 "%1"
 
-#: effects/presentwindows_config.cpp:35
+#: effects/presentwindows_config.cpp:39
 msgid "Activate when cursor is at a specific edge or corner of the screen:"
 msgstr ""
 
-#: effects/presentwindows_config.cpp:39
+#: effects/presentwindows_config.cpp:43
 #, fuzzy
 #| msgid "Window to Next Desktop"
 msgid "for windows on current desktop: "
 msgstr "Evoyî l' purnea sol sicribanne shuvant"
 
-#: effects/presentwindows_config.cpp:45
+#: effects/presentwindows_config.cpp:49
 #, fuzzy
 #| msgid "Keep Window on All Desktops"
 msgid "for windows on all desktops: "
 msgstr "Purnea håyné so tos les scribannes"
 
-#: effects/presentwindows_config.cpp:53
-msgid "Activation shortcuts:"
-msgstr ""
-
-#: effects/presentwindows_config.cpp:55
-msgid "for windows on current desktop: Ctrl+F10"
-msgstr ""
-
-#: effects/presentwindows_config.cpp:56
-#, fuzzy
-#| msgid "Keep Window on All Desktops"
-msgid "for windows on all desktops: Ctrl+F11"
-msgstr "Purnea håyné so tos les scribannes"
-
-#: effects/presentwindows_config.cpp:70
+#: effects/presentwindows_config.cpp:84
 msgid "Top"
 msgstr "Al copete"
 
-#: effects/presentwindows_config.cpp:71
+#: effects/presentwindows_config.cpp:85
 msgid "Top-right"
 msgstr "Coine do dzeu a droete"
 
-#: effects/presentwindows_config.cpp:72
+#: effects/presentwindows_config.cpp:86
 msgid "Right"
 msgstr "A droete"
 
-#: effects/presentwindows_config.cpp:73
+#: effects/presentwindows_config.cpp:87
 msgid "Bottom-right"
 msgstr "Coine do dzo a droete"
 
-#: effects/presentwindows_config.cpp:74
+#: effects/presentwindows_config.cpp:88
 msgid "Bottom"
 msgstr "Al valêye"
 
-#: effects/presentwindows_config.cpp:75
+#: effects/presentwindows_config.cpp:89
 msgid "Bottom-left"
 msgstr "Coine do dzo a hintche"
 
-#: effects/presentwindows_config.cpp:76
+#: effects/presentwindows_config.cpp:90
 msgid "Left"
 msgstr "A hintche"
 
-#: effects/presentwindows_config.cpp:77
+#: effects/presentwindows_config.cpp:91
 msgid "Top-left"
 msgstr "Coine do dzeu a hintche"
 
-#: effects/presentwindows_config.cpp:78
+#: effects/presentwindows_config.cpp:92
 msgid "None"
 msgstr "Nole"
 
@@ -935,3 +936,8 @@ msgstr ""
 #, qt-format
 msgid "The library %1 is not a KWin plugin."
 msgstr "Li livrêye %1 n' est nén on tchôke-divins KWin."
+
+#, fuzzy
+#~| msgid "Keep Window on All Desktops"
+#~ msgid "for windows on all desktops: Ctrl+F11"
+#~ msgstr "Purnea håyné so tos les scribannes"
