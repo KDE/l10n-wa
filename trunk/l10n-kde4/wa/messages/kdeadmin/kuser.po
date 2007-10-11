@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kuser\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-10-10 05:33+0200\n"
+"POT-Creation-Date: 2007-10-11 05:42+0200\n"
 "PO-Revision-Date: 2004-09-05 02:55+0200\n"
 "Last-Translator: Pablo Saratxaga <pablo@walon.org>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -41,17 +41,17 @@ msgid "Copy skeleton"
 msgstr "Copyî ene tcherpinte"
 
 #: ku_adduser.cpp:71
-#, qt-format
+#, kde-format
 msgid "User with UID %1 already exists."
 msgstr "I gn a ddja èn uzeu avou èn UID %1."
 
 #: ku_adduser.cpp:78
-#, qt-format
+#, kde-format
 msgid "User with RID %1 already exists."
 msgstr "I gn a ddja èn uzeu avou èn RID %1."
 
 #: ku_adduser.cpp:120
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid ""
 "Folder %1 already exists.\n"
 "%2 may become owner and permissions may change.\n"
@@ -62,22 +62,23 @@ msgstr ""
 "Voloz vs vormint eployî %3?"
 
 #: ku_adduser.cpp:127
-#, qt-format
+#, kde-format
 msgid "%1 is not a folder."
 msgstr "%1 n' est nén on ridant."
 
 #: ku_adduser.cpp:129 ku_adduser.cpp:156
-#, qt-format
+#, kde-format
+#| msgid "stat() failed on %1."
 msgid "stat() failed on %1."
 msgstr ""
 
 #: ku_adduser.cpp:149
-#, qt-format
+#, kde-format
 msgid "Mailbox %1 already exists (uid=%2)."
 msgstr "Li boesse ås letes %1 egzistêye dedja (uid=%2)."
 
 #: ku_adduser.cpp:153
-#, qt-format
+#, kde-format
 msgid "%1 exists but is not a regular file."
 msgstr "%1 egzistêye dedja, mins ci n' est nén on fitchî normå."
 
@@ -136,19 +137,19 @@ msgid "Delete User"
 msgstr "Disfacer uzeu"
 
 #: ku_deluser.cpp:38
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 #| msgid "<p>Deleting user <b>%1</b><p>Also perform the following actions:"
 msgid "<p>Deleting user <b>%1</b><br />Also perform the following actions:</p>"
 msgstr ""
 "<p>Dji disface l' uzeu <b>%1</b> <p>Dji fwai ossu les accions shuvantes:"
 
 #: ku_deluser.cpp:41
-#, qt-format
+#, kde-format
 msgid "Delete &home folder: %1"
 msgstr "Disfacer l' ridant &måjhon: %1"
 
 #: ku_deluser.cpp:43
-#, qt-format
+#, kde-format
 msgid "Delete &mailbox: %1"
 msgstr "Disfacer &boesse ås emiles: %1"
 
@@ -245,17 +246,17 @@ msgid "You need to type a group name."
 msgstr ""
 
 #: ku_editgroup.cpp:287
-#, qt-format
+#, kde-format
 msgid "Group with name %1 already exists."
 msgstr "I gn a ddja on groupe lomé %1."
 
 #: ku_editgroup.cpp:294
-#, qt-format
+#, kde-format
 msgid "Group with SID %1 already exists."
 msgstr "I gn a ddja on groupe avou li SID %1."
 
 #: ku_editgroup.cpp:299
-#, qt-format
+#, kde-format
 msgid "Group with gid %1 already exists."
 msgstr "I gn a ddja on groupe avou li gid %1."
 
@@ -452,7 +453,7 @@ msgid "User Properties"
 msgstr "Prôpietés di l' uzeu"
 
 #: ku_edituser.cpp:357
-#, qt-format
+#, kde-format
 msgid "User Properties - %1 Selected Users"
 msgstr "Prôpietés di l' uzeu - %1 uzeus di tchoezis"
 
@@ -477,17 +478,17 @@ msgid "You need to specify a samba RID."
 msgstr ""
 
 #: ku_edituser.cpp:972
-#, qt-format
+#, kde-format
 msgid "User with UID %1 already exists"
 msgstr "I gn a ddja èn uzeu avou èn UID %1"
 
 #: ku_edituser.cpp:982
-#, qt-format
+#, kde-format
 msgid "User with RID %1 already exists"
 msgstr "I gn a ddja èn uzeu avou èn RID %1."
 
 #: ku_edituser.cpp:996
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 #| msgid ""
 #| "<p>The shell %1 is not yet listed in the file %2. In order to use this "
 #| "shell you must add it to this file first.<p>Do you want to add it now?"
@@ -516,7 +517,7 @@ msgid "Groups file name not set, please check 'Settings/Files'"
 msgstr ""
 
 #: ku_groupfiles.cpp:82
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid ""
 "stat() call on file %1 failed: %2\n"
 "Check KUser settings."
@@ -525,13 +526,13 @@ msgstr ""
 "Verifyîz les apontiaedjes di KUser."
 
 #: ku_groupfiles.cpp:96 ku_userfiles.cpp:194
-#, qt-format
+#, kde-format
 msgid "Error opening %1 for reading."
 msgstr "Dj' a aroké cwand dj' a volou drovi %1 po lére."
 
 #: ku_groupfiles.cpp:172 ku_groupfiles.cpp:179 ku_userfiles.cpp:293
 #: ku_userfiles.cpp:300
-#, qt-format
+#, kde-format
 msgid "Error opening %1 for writing."
 msgstr "Dj' a aroké cwand dj' a volou drovi %1 po scrire."
 
@@ -607,7 +608,10 @@ msgid "KDE User Manager"
 msgstr "Manaedjmint des uzeus po KDE"
 
 #: ku_mainview.cpp:144
-#, qt-format
+#, kde-format
+#| msgid ""
+#| "You have selected %1 users. Do you really want to change the password for "
+#| "all the selected users?"
 msgid ""
 "You have selected %1 users. Do you really want to change the password for "
 "all the selected users?"
@@ -627,12 +631,12 @@ msgid "Please type the name of the new user:"
 msgstr "Tapez l' no do novea uzeu s' i vs plait:"
 
 #: ku_mainview.cpp:204
-#, qt-format
+#, kde-format
 msgid "User with name %1 already exists."
 msgstr "I gn a ddja èn uzeu lomé %1."
 
 #: ku_mainview.cpp:357
-#, qt-format
+#, kde-format
 msgid ""
 "You are using private groups.\n"
 "Do you want to delete the user's private group '%1'?"
@@ -650,19 +654,22 @@ msgid "You have run out of gid space."
 msgstr "I gn a pupont di plaece po les gid!"
 
 #: ku_mainview.cpp:455
-#, qt-format
+#, kde-format
+#| msgid ""
+#| "The group '%1' is the primary group of one or more users (such as '%2'); "
+#| "it cannot be deleted."
 msgid ""
 "The group '%1' is the primary group of one or more users (such as '%2'); it "
 "cannot be deleted."
 msgstr ""
 
 #: ku_mainview.cpp:464
-#, qt-format
+#, kde-format
 msgid "Do you really want to delete the group '%1'?"
 msgstr "Voloz vs po do bon disfacer li groupe «%1» ?"
 
 #: ku_mainview.cpp:468
-#, qt-format
+#, kde-format
 msgid "Do you really want to delete the %1 selected groups?"
 msgstr "Voloz vs po do bon disfacer les %1 groupes di tchoezis?"
 
@@ -708,13 +715,13 @@ msgid "Hide System Users/Groups"
 msgstr "Catchî les groupes/uzeus sistinme"
 
 #: ku_misc.cpp:54
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 #| msgid "Can't create backup file for %1"
 msgid "Can not create backup file for %1"
 msgstr "Dji n' sai fé ene copeye di såvrité po %1"
 
 #: ku_misc.cpp:104
-#, qt-format
+#, kde-format
 msgid ""
 "Error creating symlink %1.\n"
 "Error: %2"
@@ -723,7 +730,7 @@ msgstr ""
 "Aroke: %2"
 
 #: ku_misc.cpp:114
-#, qt-format
+#, kde-format
 msgid ""
 "Cannot change owner of folder %1.\n"
 "Error: %2"
@@ -732,7 +739,7 @@ msgstr ""
 "Aroke: %2"
 
 #: ku_misc.cpp:119
-#, qt-format
+#, kde-format
 msgid ""
 "Cannot change permissions on folder %1.\n"
 "Error: %2"
@@ -741,7 +748,7 @@ msgstr ""
 "Aroke: %2"
 
 #: ku_misc.cpp:129
-#, qt-format
+#, kde-format
 msgid ""
 "Cannot change owner of file %1.\n"
 "Error: %2"
@@ -750,7 +757,7 @@ msgstr ""
 "Aroke: %2"
 
 #: ku_misc.cpp:134
-#, qt-format
+#, kde-format
 msgid ""
 "Cannot change permissions on file %1.\n"
 "Error: %2"
@@ -759,17 +766,17 @@ msgstr ""
 "Aroke: %2"
 
 #: ku_misc.cpp:153
-#, qt-format
+#, kde-format
 msgid "File %1 does not exist."
 msgstr "Li fitchî %1 n' egzistêye nén."
 
 #: ku_misc.cpp:158
-#, qt-format
+#, kde-format
 msgid "Cannot open file %1 for reading."
 msgstr "Dji n' sai drovi li fitchî %1 pol lére."
 
 #: ku_misc.cpp:163
-#, qt-format
+#, kde-format
 msgid "Cannot open file %1 for writing."
 msgstr "Dji n' sai drovi li fitchî %1 po scrire."
 
@@ -824,7 +831,7 @@ msgid "A connection with this name already exists."
 msgstr "I gn a ddja on raloyaedje avou ç' no la."
 
 #: ku_selectconn.cpp:128
-#, qt-format
+#, kde-format
 msgid "Do you really want to delete the connection '%1'?"
 msgstr "Voloz vs po do bon disfacer li raloyaedje «%1» ?"
 
@@ -833,12 +840,12 @@ msgid "Delete Connection"
 msgstr "Disfacer raloyaedje"
 
 #: ku_user.cpp:161
-#, qt-format
+#, kde-format
 msgid "Cannot create home folder for %1: it is null or empty."
 msgstr "Dji n' parvén nén a fé on ridant måjhon po %1: nol ou vude."
 
 #: ku_user.cpp:167
-#, qt-format
+#, kde-format
 msgid ""
 "Cannot create home folder %1.\n"
 "Error: %2"
@@ -847,7 +854,7 @@ msgstr ""
 "Aroke: %2"
 
 #: ku_user.cpp:173
-#, qt-format
+#, kde-format
 msgid ""
 "Cannot change owner of home folder %1.\n"
 "Error: %2"
@@ -856,7 +863,7 @@ msgstr ""
 "Aroke: %2"
 
 #: ku_user.cpp:178
-#, qt-format
+#, kde-format
 msgid ""
 "Cannot change permissions on home folder %1.\n"
 "Error: %2"
@@ -865,7 +872,7 @@ msgstr ""
 "Aroke: %2"
 
 #: ku_user.cpp:193
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid ""
 "Folder %1 already exists.\n"
 "Will make %2 owner and change permissions.\n"
@@ -876,7 +883,7 @@ msgstr ""
 "Voloz vs continouwer?"
 
 #: ku_user.cpp:197 ku_user.cpp:215
-#, qt-format
+#, kde-format
 msgid ""
 "Cannot change owner of %1 folder.\n"
 "Error: %2"
@@ -885,7 +892,7 @@ msgstr ""
 "Aroke: %2"
 
 #: ku_user.cpp:201
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid ""
 "Folder %1 left 'as is'.\n"
 "Verify ownership and permissions for user %2 who may not be able to log in."
@@ -894,13 +901,13 @@ msgstr ""
 "Verifyîz les permissions po l' uzeu %2 ki pôreut bén n' si nén pleur elodjî!"
 
 #: ku_user.cpp:205
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "%1 exists and is not a folder. User %2 will not be able to log in."
 msgstr ""
 "%1 egzistêye mins n' est nén on ridant. L' uzeu %2 ni s' pôrè nén elodjî!"
 
 #: ku_user.cpp:211
-#, qt-format
+#, kde-format
 msgid ""
 "Cannot create %1 folder.\n"
 "Error: %2"
@@ -909,7 +916,7 @@ msgstr ""
 "Aroke: %2"
 
 #: ku_user.cpp:219
-#, qt-format
+#, kde-format
 msgid ""
 "stat call on %1 failed.\n"
 "Error: %2"
@@ -918,12 +925,12 @@ msgstr ""
 "Aroke: %2"
 
 #: ku_user.cpp:234
-#, qt-format
+#, kde-format
 msgid "Cannot create %1: %2"
 msgstr "Dji n' sai ahiver %1: %2"
 
 #: ku_user.cpp:244
-#, qt-format
+#, kde-format
 msgid ""
 "Cannot change owner on mailbox: %1\n"
 "Error: %2"
@@ -932,7 +939,7 @@ msgstr ""
 "Aroke: %2"
 
 #: ku_user.cpp:250
-#, qt-format
+#, kde-format
 msgid ""
 "Cannot change permissions on mailbox: %1\n"
 "Error: %2"
@@ -941,17 +948,17 @@ msgstr ""
 "Aroke: %2"
 
 #: ku_user.cpp:265
-#, qt-format
+#, kde-format
 msgid "Folder %1 does not exist, cannot copy skeleton for %2."
 msgstr "Li ridant %1 n' egzistêye nén, dji n' pout copyî li tcherpinte po %2."
 
 #: ku_user.cpp:270
-#, qt-format
+#, kde-format
 msgid "Folder %1 does not exist, cannot copy skeleton."
 msgstr "Li ridant %1 n' egzistêye nén, dji n' pout copyî li tcherpinte."
 
 #: ku_user.cpp:288
-#, qt-format
+#, kde-format
 msgid ""
 "Cannot remove home folder %1.\n"
 "Error: %2"
@@ -960,12 +967,12 @@ msgstr ""
 "Aroke: %2"
 
 #: ku_user.cpp:292
-#, qt-format
+#, kde-format
 msgid "Removal of home folder %1 failed (uid = %2, gid = %3)."
 msgstr "Li oistaedje do ridant måjhon %1 a fwait berwete (uid = %2, gid = %3)."
 
 #: ku_user.cpp:295
-#, qt-format
+#, kde-format
 msgid ""
 "stat call on file %1 failed.\n"
 "Error: %2"
@@ -974,7 +981,7 @@ msgstr ""
 "Aroke: %2"
 
 #: ku_user.cpp:313
-#, qt-format
+#, kde-format
 msgid ""
 "Cannot remove crontab %1.\n"
 "Error: %2"
@@ -983,7 +990,7 @@ msgstr ""
 "Aroke: %2"
 
 #: ku_user.cpp:327
-#, qt-format
+#, kde-format
 msgid ""
 "Cannot remove mailbox %1.\n"
 "Error: %2"
@@ -1002,7 +1009,7 @@ msgstr ""
 "Li sourdant locå des groupes metou come %2."
 
 #: ku_userfiles.cpp:110
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid ""
 "Stat call on file %1 failed: %2\n"
 "Check KUser settings."
@@ -1011,12 +1018,12 @@ msgstr ""
 "Verifyîz les apontiaedjes di KUser."
 
 #: ku_userfiles.cpp:124
-#, fuzzy, qt-format
+#, fuzzy, kde-format
 msgid "Error opening %1 for reading.\n"
 msgstr "Dj' a aroké cwand dj' a volou drovi %1 po lére."
 
 #: ku_userfiles.cpp:206
-#, qt-format
+#, kde-format
 msgid ""
 "No /etc/passwd entry for %1.\n"
 "Entry will be removed at the next `Save'-operation."
