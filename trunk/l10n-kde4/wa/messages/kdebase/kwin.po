@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-04 06:29+0100\n"
+"POT-Creation-Date: 2008-01-09 07:17+0100\n"
 "PO-Revision-Date: 2008-01-02 18:27+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@tele2allin.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -26,7 +26,21 @@ msgstr "Li purnea «%1» dimande voste atincion."
 msgid "Required X extensions (XComposite and XDamage) are not available."
 msgstr ""
 
-#: compositingprefs.cpp:112
+#: compositingprefs.cpp:92
+msgid "GLX/OpenGL are not available and only OpenGL support is compiled."
+msgstr ""
+
+#: compositingprefs.cpp:95
+msgid ""
+"XRender/XFixes extensions are not available and only XRender support is "
+"compiled."
+msgstr ""
+
+#: compositingprefs.cpp:101
+msgid "GLX/OpenGL and XRender/XFixes are not available."
+msgstr ""
+
+#: compositingprefs.cpp:106
 msgid ""
 "Compositing was disabled at compile time.\n"
 "Probably Xorg development headers were not installed."
@@ -479,11 +493,15 @@ msgid "Kill Window"
 msgstr "Touwer on purnea"
 
 #: kwinbindings.cpp:195
-msgid "Window Screenshot To Clipboard"
+#, fuzzy
+#| msgid "Window Screenshot To Clipboard"
+msgid "Window Screenshot to Clipboard"
 msgstr "Waitroûlêye d' on purnea viè l' tchapea emacralé"
 
 #: kwinbindings.cpp:196
-msgid "Desktop Screenshot To Clipboard"
+#, fuzzy
+#| msgid "Desktop Screenshot To Clipboard"
+msgid "Desktop Screenshot to Clipboard"
 msgstr "Waitroûlêye do scribanne viè l' tchapea emacralé"
 
 #: kwinbindings.cpp:197
@@ -695,7 +713,7 @@ msgstr ""
 
 #: effects/invert.cpp:39 effects/invert_config.cpp:48
 #, fuzzy
-msgid "Toggle Invert effect"
+msgid "Toggle Invert Effect"
 msgstr "Efet &racsegnes:"
 
 #: effects/maketransparent_config.cpp:47
@@ -714,7 +732,17 @@ msgstr "Bodjîs/agrandis purneas"
 msgid "Dialogs:"
 msgstr "Divizes:"
 
-#: effects/mousemark.cpp:50 effects/mousemark_config.cpp:68
+#: effects/mousemark.cpp:52
+#, fuzzy
+msgid "Clear All Mouse Marks"
+msgstr "Di&strure çou k' est tchoezi"
+
+#: effects/mousemark.cpp:56 effects/mousemark_config.cpp:71
+#, fuzzy
+msgid "Clear Last Mouse Mark"
+msgstr "Di&strure çou k' est tchoezi"
+
+#: effects/mousemark_config.cpp:68
 #, fuzzy
 msgid "Clear Mouse Marks"
 msgstr "Di&strure çou k' est tchoezi"
@@ -725,8 +753,9 @@ msgid "Toggle Expose Effect"
 msgstr "Efet &racsegnes:"
 
 #: effects/presentwindows.cpp:61 effects/presentwindows_config.cpp:75
-msgid "Toggle Expose effect (incl other desktops)"
-msgstr ""
+#, fuzzy
+msgid "Toggle Expose Effect (incl other desktops)"
+msgstr "Efet &racsegnes:"
 
 #: effects/presentwindows.cpp:991
 #, kde-format
@@ -812,8 +841,18 @@ msgstr "Li purnea en alaedje a on ombion pu foirt"
 
 #: effects/sharpen.cpp:40 effects/sharpen_config.cpp:48
 #, fuzzy
-msgid "Toggle Sharpen effect"
+msgid "Toggle Sharpen Effect"
 msgstr "Efet &racsegnes:"
+
+#: effects/snow.cpp:63
+msgid "Snow"
+msgstr ""
+
+#: effects/snow_config.cpp:65
+#, fuzzy
+#| msgid "for windows on current desktop: "
+msgid "Toggle Snow on the desktop"
+msgstr "po les purneas sol sicribanne do moumint:"
 
 #: effects/thumbnailaside.cpp:40 effects/thumbnailaside_config.cpp:71
 #, fuzzy
