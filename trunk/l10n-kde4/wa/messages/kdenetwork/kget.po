@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-09 07:18+0100\n"
+"POT-Creation-Date: 2008-01-10 10:26+0100\n"
 "PO-Revision-Date: 2003-09-10 00:07+0200\n"
 "Last-Translator: Lorint Hendschel <LorintHendschel@skynet.be>\n"
 "Language-Team: walon <linux-wa@chanae.alphanet.ch>\n"
@@ -120,8 +120,8 @@ msgstr ""
 msgid "Folder and extension can not be empty."
 msgstr ""
 
-#: conf/dlgdirectories.cpp:140 core/transfergroup.cpp:115 core/kget.cpp:450
-#: core/kget.cpp:736 ui/transferhistory.cpp:168 ui/transferhistory.cpp:214
+#: conf/dlgdirectories.cpp:140 core/transfergroup.cpp:117 core/kget.cpp:450
+#: core/kget.cpp:736 ui/transferhistory.cpp:177 ui/transferhistory.cpp:224
 msgid "Error"
 msgstr ""
 
@@ -156,8 +156,20 @@ msgctxt "speed of download"
 msgid "Speed"
 msgstr "Roedeu"
 
-#: core/transfergroup.cpp:115 ui/transferhistory.cpp:168
-#: ui/transferhistory.cpp:214
+#: core/transfergroup.cpp:112 ui/transferhistory.cpp:52
+#, fuzzy
+#| msgid "Finished"
+msgctxt "the transfer has been finished"
+msgid "Finished"
+msgstr "Fini"
+
+#: core/transfergroup.cpp:114
+msgctxt "the transfer has been aborted"
+msgid "Aborted"
+msgstr ""
+
+#: core/transfergroup.cpp:117 ui/transferhistory.cpp:177
+#: ui/transferhistory.cpp:224
 msgid "History-File cannot be opened correctly!"
 msgstr ""
 
@@ -338,6 +350,10 @@ msgid "Aborted"
 msgstr ""
 
 #: transfer-plugins/kio/transferKio.cpp:153
+#, fuzzy
+msgid "Downloading..."
+msgstr "Manaedjeu des aberwetaedjes"
+
 #: transfer-plugins/kio/transferKio.cpp:167
 #: transfer-plugins/kio/transferKio.cpp:182
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:240
@@ -701,7 +717,7 @@ msgstr ""
 msgid "Transfer details"
 msgstr " Transfers: %1"
 
-#: ui/transferhistory.cpp:30
+#: ui/transferhistory.cpp:33
 #, fuzzy
 msgid "Transfer History"
 msgstr " Transfers: %1"
@@ -850,54 +866,54 @@ msgstr ""
 msgid "Show:"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:92
-#: extensions/konqueror/kget_linkview.cpp:249
+#: extensions/konqueror/kget_linkview.cpp:90
+#: extensions/konqueror/kget_linkview.cpp:247
 msgid "Select all"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:93
+#: extensions/konqueror/kget_linkview.cpp:91
 msgid "Show web content"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:94
+#: extensions/konqueror/kget_linkview.cpp:92
 #, fuzzy
 msgid "Download checked"
 msgstr "Prémetou ridant"
 
-#: extensions/konqueror/kget_linkview.cpp:96
+#: extensions/konqueror/kget_linkview.cpp:94
 msgid "Cancel"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:132
+#: extensions/konqueror/kget_linkview.cpp:130
 msgid "Auxiliar header"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:133
+#: extensions/konqueror/kget_linkview.cpp:131
 #, fuzzy
 msgid "File Name"
 msgstr "No do fitchî locå"
 
-#: extensions/konqueror/kget_linkview.cpp:134
+#: extensions/konqueror/kget_linkview.cpp:132
 msgid "Description"
 msgstr "Discrijhaedje"
 
-#: extensions/konqueror/kget_linkview.cpp:135
+#: extensions/konqueror/kget_linkview.cpp:133
 #, fuzzy
 #| msgid "File Type"
 msgctxt "list header: type of file"
 msgid "File Type"
 msgstr "Sôre di Fitchî"
 
-#: extensions/konqueror/kget_linkview.cpp:136
+#: extensions/konqueror/kget_linkview.cpp:134
 msgid "Location (URL)"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:197
+#: extensions/konqueror/kget_linkview.cpp:195
 #, kde-format
 msgid "Links in: %1 - KGet"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:249
+#: extensions/konqueror/kget_linkview.cpp:247
 msgid "Select all filtered"
 msgstr ""
 
@@ -1787,7 +1803,7 @@ msgstr "Roedeu"
 #: rc.cpp:375
 #, fuzzy
 #| msgid "Source:"
-msgid "Source"
+msgid "Source-File"
 msgstr "Sourdant:"
 
 #. i18n: tag string
@@ -1810,73 +1826,84 @@ msgstr "Tins ki dmeure"
 #. i18n: file ui/transferhistory.ui line 62
 #: rc.cpp:384
 #, fuzzy
-msgid "State"
+msgid "File-Size"
+msgstr "No do fitchî"
+
+#. i18n: tag string
+#. i18n: file ui/transferhistory.ui line 67
+#: rc.cpp:387
+#, fuzzy
+msgid "Status"
 msgstr "Re&nonder"
 
 #. i18n: tag string
-#. i18n: file ui/transferhistory.ui line 78
-#: rc.cpp:387
+#. i18n: file ui/transferhistory.ui line 83
+#: rc.cpp:390
 msgid "Clear History"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ui/transferhistory.ui line 104
-#: rc.cpp:390
+#. i18n: file ui/transferhistory.ui line 109
+#: rc.cpp:393
 msgid "Filter history..."
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ui/transferhistory.ui line 113
-#: rc.cpp:393
+#. i18n: file ui/transferhistory.ui line 118
+#: rc.cpp:396
 #, fuzzy
 msgctxt "delete selected transfer"
 msgid "Delete Selected"
 msgstr "Nou fitchî di tchoezi"
 
 #. i18n: tag string
-#. i18n: file ui/transferhistory.ui line 118
-#: rc.cpp:396
+#. i18n: file ui/transferhistory.ui line 123
+#: rc.cpp:399
 #, fuzzy
 msgid "Download"
 msgstr "Manaedjeu des aberwetaedjes"
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 4
-#: rc.cpp:399
+#: rc.cpp:402
 #, fuzzy
 msgid "&File"
 msgstr "Drovi &fitchî"
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 14
-#: rc.cpp:402
+#: rc.cpp:405
 #, fuzzy
 msgid "&Downloads"
 msgstr "Manaedjeu des aberwetaedjes"
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 23
-#: rc.cpp:405
+#: rc.cpp:408
 msgid "&Settings"
 msgstr ""
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 35
-#: rc.cpp:408
+#: rc.cpp:411
 msgid "&Help"
 msgstr ""
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 38
-#: rc.cpp:411
+#: rc.cpp:414
 msgid "Main Toolbar"
 msgstr ""
 
 #. i18n: tag Text
 #. i18n: file extensions/konqueror/kget_plug_in.rc line 4
-#: rc.cpp:414
+#: rc.cpp:417
 msgid "&Tools"
 msgstr ""
+
+#, fuzzy
+#~ msgid "State"
+#~ msgstr "Re&nonder"
 
 #, fuzzy
 #~ msgid "Extension:"
