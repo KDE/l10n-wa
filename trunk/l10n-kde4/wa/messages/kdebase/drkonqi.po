@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: drkonqi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-15 09:40+0100\n"
+"POT-Creation-Date: 2008-01-21 07:42+0100\n"
 "PO-Revision-Date: 2007-09-08 03:33+0200\n"
 "Last-Translator: Pablo Saratxaga <pablo@walon.org>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -20,57 +20,60 @@ msgstr ""
 "X-Generator: KBabel 1.0.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: backtrace.cpp:80
+#: backtrace.cpp:76
 #, kde-format
 msgid "Could not generate a backtrace as the debugger '%1' was not found."
 msgstr ""
 
-#: debugger.cpp:75
+#: debugger.cpp:71
 msgid "C&opy"
 msgstr "&Copyî"
 
-#: debugger.cpp:96
+#: debugger.cpp:92
+#, fuzzy
+#| msgid "Done."
+msgctxt "debugging finished"
 msgid "Done."
 msgstr "Fwait."
 
-#: debugger.cpp:121
+#: debugger.cpp:117
 #, kde-format
 msgid "Backtrace saved to %1"
 msgstr ""
 
-#: debugger.cpp:125
+#: debugger.cpp:121
 msgid "Cannot create a file to save the backtrace in"
 msgstr ""
 
-#: debugger.cpp:130
+#: debugger.cpp:126
 msgid "Select Filename"
 msgstr "Tchoezi on no d' fitchî"
 
-#: debugger.cpp:138
+#: debugger.cpp:134
 #, kde-format
 msgid ""
 "A file named \"%1\" already exists. Are you sure you want to overwrite it?"
 msgstr ""
 "On fitchî lomé «%1»  egzistêye dedja. Estoz seur(e) ki vos l' voloz spotchî?"
 
-#: debugger.cpp:140
+#: debugger.cpp:136
 msgid "Overwrite File?"
 msgstr "Sipotchî l' fitchî?"
 
-#: debugger.cpp:141
+#: debugger.cpp:137
 msgid "&Overwrite"
 msgstr "&Sipotchî"
 
-#: debugger.cpp:153
+#: debugger.cpp:149
 #, kde-format
 msgid "Cannot open file %1 for writing"
 msgstr "Dji n' sai drovi li fitchî %1 po scrire didins"
 
-#: debugger.cpp:161
+#: debugger.cpp:157
 msgid "Unable to create a valid backtrace."
 msgstr "Dji n' sai ahiver li backtrace."
 
-#: debugger.cpp:162
+#: debugger.cpp:158
 msgid ""
 "This backtrace appears to be of no use.\n"
 "This is probably because your packages are built in a way which prevents "
@@ -79,17 +82,17 @@ msgid ""
 "\n"
 msgstr ""
 
-#: debugger.cpp:171
+#: debugger.cpp:167
 msgid "Loading backtrace..."
 msgstr "Dji tchedje li backtrace..."
 
-#: debugger.cpp:194
+#: debugger.cpp:190
 msgid ""
 "The following options are enabled:\n"
 "\n"
 msgstr ""
 
-#: debugger.cpp:196
+#: debugger.cpp:192
 msgid ""
 "\n"
 "As the usage of these options is not recommended - because they can, in rare "
@@ -98,15 +101,15 @@ msgid ""
 "to get a backtrace.\n"
 msgstr ""
 
-#: debugger.cpp:201
+#: debugger.cpp:197
 msgid "Backtrace will not be created."
 msgstr ""
 
-#: debugger.cpp:209
+#: debugger.cpp:205
 msgid "Loading symbols..."
 msgstr "Dji tchedje les simboles..."
 
-#: debugger.cpp:230
+#: debugger.cpp:226
 msgid "System configuration startup check disabled.\n"
 msgstr ""
 
@@ -115,6 +118,9 @@ msgid "You have to edit the description before the report can be sent."
 msgstr "Vos dvoz aspougnî l' discrijhaedje divant d' poleur evoyî li rapoirt."
 
 #: krashconf.cpp:78
+#, fuzzy
+#| msgid "unknown"
+msgctxt "unknown application"
 msgid "unknown"
 msgstr "nén cnoxhou"
 
@@ -190,47 +196,38 @@ msgstr ""
 "laurent.hendschel@skynet.be\n"
 "pablo@walon.org"
 
-#: toplevel.cpp:64
+#: toplevel.cpp:54
 #, fuzzy
 #| msgid "&Bug report"
 msgid "&Bug Report"
 msgstr "Rapoirt di &Bug"
 
-#: toplevel.cpp:65
+#: toplevel.cpp:55
 msgid "&Debugger"
 msgstr "&Disbugueu"
 
-#: toplevel.cpp:71
-msgid "General"
-msgstr "Djenerå"
-
-#: toplevel.cpp:95
-msgid "Backtrace"
+#: toplevel.cpp:88
+msgid "Please attach the following backtrace to your bugreport."
 msgstr ""
 
-#: toplevel.cpp:119
-#, kde-format
-msgid "<p><b>Short description</b></p><p>%1</p>"
-msgstr "<p><b>Court discrijhaedje</b></p><p>%1</p>"
+#: toplevel.cpp:130
+msgid "A fatal error occurred"
+msgstr ""
 
-#: toplevel.cpp:123
-#, kde-format
-msgid "<p><b>What is this?</b></p><p>%1</p>"
-msgstr "<p><b>Di cwè s' adjit i?</b></p><p>%1</p>"
+#: toplevel.cpp:134
+msgid "What can I do?"
+msgstr ""
 
-#: toplevel.cpp:127
-#, kde-format
-msgid "<p><b>What can I do?</b></p><p>%1</p>"
-msgstr "<p><b>Cwè çki dji pou fé?</b></p><p>%1</p>"
-
-#: toplevel.cpp:132
-#, c-format
-msgid "<p><b>Application crashed</b></p><p>The program %appname crashed.</p>"
+#: toplevel.cpp:139
+#, fuzzy, c-format
+#| msgid ""
+#| "<p><b>Application crashed</b></p><p>The program %appname crashed.</p>"
+msgid "<p>Application crashed</p><p>The program %appname crashed.</p>"
 msgstr ""
 "<p><b>L' aplicåcion a tcheyou an rak</b></p><p>Li programe %appname a "
 "tcheyou an rak.</p>"
 
-#: toplevel.cpp:151
+#: toplevel.cpp:158
 msgid ""
 "<p>Do you want to generate a backtrace? This will help the developers to "
 "figure out what went wrong.</p>\n"
@@ -246,22 +243,34 @@ msgstr ""
 "eyet aprume del façon k' i gn a moyén del repeter. Nén moyén di coridjî on "
 "bug s' i n' a nén stî discrît comifåt.</b></p>"
 
-#: toplevel.cpp:163
+#: toplevel.cpp:170
 msgid "Include Backtrace"
 msgstr "Mete li Backtrace avou"
 
-#: toplevel.cpp:163
+#: toplevel.cpp:170
 msgid "Generate"
 msgstr "Djenerer"
 
-#: toplevel.cpp:163
+#: toplevel.cpp:170
 msgid "Do Not Generate"
 msgstr "Èn nén djenerer"
 
-#: toplevel.cpp:230
+#: toplevel.cpp:237
 msgid "It was not possible to generate a backtrace."
 msgstr "Dji n' sai ahiver li backtrace."
 
-#: toplevel.cpp:231
+#: toplevel.cpp:238
 msgid "Backtrace Not Possible"
 msgstr "Nén possibe di fé on bactktrace"
+
+#~ msgid "General"
+#~ msgstr "Djenerå"
+
+#~ msgid "<p><b>Short description</b></p><p>%1</p>"
+#~ msgstr "<p><b>Court discrijhaedje</b></p><p>%1</p>"
+
+#~ msgid "<p><b>What is this?</b></p><p>%1</p>"
+#~ msgstr "<p><b>Di cwè s' adjit i?</b></p><p>%1</p>"
+
+#~ msgid "<p><b>What can I do?</b></p><p>%1</p>"
+#~ msgstr "<p><b>Cwè çki dji pou fé?</b></p><p>%1</p>"
