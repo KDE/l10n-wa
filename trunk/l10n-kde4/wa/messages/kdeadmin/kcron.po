@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcron\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-02-25 13:33+0100\n"
+"POT-Creation-Date: 2008-02-26 14:46+0100\n"
 "PO-Revision-Date: 2004-09-05 02:44+0200\n"
 "Last-Translator: Pablo Saratxaga <pablo@walon.org>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -25,35 +25,23 @@ msgstr ""
 "X-Generator: KBabel 1.0.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: src/crontabWidget.cpp:127
+#: src/crontabWidget.cpp:128
 msgid "Show the following Cron:"
 msgstr ""
 
-#: src/crontabWidget.cpp:131
+#: src/crontabWidget.cpp:132
 msgid "Personal Cron"
 msgstr ""
 
-#: src/crontabWidget.cpp:136
+#: src/crontabWidget.cpp:137
 #, fuzzy
 #| msgid "(System Crontab)"
 msgid "System Cron"
 msgstr "(Intrêye cron do sistinme)"
 
-#: src/crontabWidget.cpp:140
+#: src/crontabWidget.cpp:141
 msgid "Cron of User:"
 msgstr ""
-
-#: src/crontabWidget.cpp:303
-#, kde-format
-msgctxt "user on host"
-msgid "%1 <placeholder>%2</placeholder> on %3"
-msgstr ""
-
-#: src/crontabWidget.cpp:308
-#, fuzzy
-#| msgid "Scheduled Tasks"
-msgid "Scheduled Tasks"
-msgstr "Programêyès bouyes"
 
 #: src/crontablib/cthost.cpp:53
 msgid ""
@@ -63,7 +51,7 @@ msgid ""
 "Check the crontab man page for further details."
 msgstr ""
 
-#: src/crontablib/cttask.cpp:232 src/taskWidget.cpp:69
+#: src/crontablib/cttask.cpp:232
 msgid "At system startup"
 msgstr ""
 
@@ -143,7 +131,7 @@ msgstr "(Intrêye cron do sistinme)"
 msgid "No password entry found for uid '%1'"
 msgstr "Nou scret di trové po l' uid «%1»"
 
-#: src/crontablib/ctcron.cpp:332
+#: src/crontablib/ctcron.cpp:333
 msgid "An error occurred while updating crontab."
 msgstr "Åk n' a nén stî tot metant a djoû les intrêyes crontab."
 
@@ -394,58 +382,42 @@ msgstr ""
 msgid "Sunday"
 msgstr "dim"
 
-#: src/tasksWidget.cpp:41
+#: src/tasksWidget.cpp:40
 msgid "<b>Tasks</b>"
 msgstr ""
 
-#: src/tasksWidget.cpp:51
+#: src/tasksWidget.cpp:50 src/crontabPrinter.cpp:135
 msgid "Scheduling"
 msgstr ""
 
-#: src/tasksWidget.cpp:52
+#: src/tasksWidget.cpp:51 src/crontabPrinter.cpp:135
 #, fuzzy
 #| msgid "Modify Task"
 msgid "Command"
 msgstr "Candjî l' bouye"
 
-#: src/tasksWidget.cpp:53 src/variablesWidget.cpp:47
+#: src/tasksWidget.cpp:52 src/variablesWidget.cpp:48
 #, fuzzy
 #| msgid "Sat"
 msgid "Status"
 msgstr "sem"
 
-#: src/tasksWidget.cpp:54
+#: src/tasksWidget.cpp:53 src/crontabPrinter.cpp:135
 msgid "Description"
 msgstr "Discrijhaedje"
 
-#: src/tasksWidget.cpp:55
+#: src/tasksWidget.cpp:54
 #, fuzzy
 #| msgid "Scheduled Tasks"
 msgid "Scheduling Details"
 msgstr "Programêyès bouyes"
 
-#: src/tasksWidget.cpp:73
-msgid "Task name:"
-msgstr "No del bouye:"
-
-#: src/tasksWidget.cpp:74
-msgid "Program:"
-msgstr "Programe:"
-
-#: src/tasksWidget.cpp:75 src/variablesWidget.cpp:105
-msgid "Description:"
-msgstr "Discrijhaedje:"
-
-#: src/tasksWidget.cpp:80
-msgid "No tasks..."
-msgstr "Nole bouye..."
-
-#: src/tasksWidget.cpp:161
+#: src/tasksWidget.cpp:130
 msgctxt "Do not use any quote characters (') in this string"
 msgid "End of script execution. Type Enter or Ctrl+C to exit."
 msgstr ""
 
-#: src/tasksWidget.cpp:194
+#: src/tasksWidget.cpp:163
 #, fuzzy
 #| msgid "Tasks"
 msgid "New Task"
@@ -610,80 +582,51 @@ msgstr ""
 msgid "Alberto G. Hierro"
 msgstr ""
 
-#: src/variablesWidget.cpp:35
+#: src/variablesWidget.cpp:36
 #, fuzzy
 #| msgid "Variables"
 msgid "<b>Environment Variables</b>"
 msgstr "Variåves"
 
-#: src/variablesWidget.cpp:45
+#: src/variablesWidget.cpp:46
 #, fuzzy
 #| msgid "Variables"
 msgid "Variable"
 msgstr "Variåves"
 
-#: src/variablesWidget.cpp:46
+#: src/variablesWidget.cpp:47
 msgid "Value"
 msgstr "Valixhance"
 
-#: src/variablesWidget.cpp:48
+#: src/variablesWidget.cpp:49
 #, fuzzy
 #| msgid "Co&mment:"
 msgid "Comment"
 msgstr "Ra&wete:"
 
-#: src/variablesWidget.cpp:103
-#, fuzzy
-#| msgid "Variable:"
-msgctxt "The environmental variable name ie HOME, MAILTO etc"
-msgid "Variable:"
-msgstr "Variåve:"
-
-#: src/variablesWidget.cpp:104
-msgid "Value:"
-msgstr "Valixhance:"
-
-#: src/variablesWidget.cpp:110
-msgid "No variables..."
-msgstr "Nole variåve..."
-
-#: src/variablesWidget.cpp:142
+#: src/variablesWidget.cpp:112
 #, fuzzy
 #| msgid "Variables"
 msgid "New Variable"
 msgstr "Variåves"
 
-#: src/taskWidget.cpp:36 src/variableWidget.cpp:36
+#: src/taskWidget.cpp:35 src/variableWidget.cpp:35
 #, fuzzy
 #| msgid "&Enabled"
 msgid "Enabled"
 msgstr "&Mete en alaedje"
 
-#: src/taskWidget.cpp:39 src/variableWidget.cpp:40
+#: src/taskWidget.cpp:38 src/variableWidget.cpp:39
 #, fuzzy
 #| msgid "Disabled"
 msgid "Disabled"
 msgstr "Essocté"
 
-#: src/taskWidget.cpp:73
-#, fuzzy
-#| msgid "Disabled."
-msgctxt "The cron task had been disabled"
-msgid "Disabled."
-msgstr "Essocté."
-
-#: src/taskWidget.cpp:77
+#: src/taskWidget.cpp:63
 msgid "Modify Task"
 msgstr "Candjî l' bouye"
 
-#: src/variableWidget.cpp:67
-#, fuzzy
-#| msgid "Disabled."
-msgctxt "The cron variable has been disabled"
-msgid "Disabled."
-msgstr "Essocté."
-
-#: src/variableWidget.cpp:73
+#: src/variableWidget.cpp:61
 msgid "Modify Variable"
 msgstr "Candjî li variåve"
 
@@ -869,19 +812,39 @@ msgstr "Dinez l' no del variåve."
 msgid "<i>Please enter the variable value ...</i>"
 msgstr "Dinez l' valixhance del variåve."
 
-#: src/crontabPrinter.cpp:78
-msgid "Print Cron Tab"
-msgstr "Imprimer l' intrêye crontab"
+#: src/crontabPrinter.cpp:120
+#, fuzzy
+#| msgid "Scheduled Tasks"
+msgid "Scheduled Tasks"
+msgstr "Programêyès bouyes"
 
-#: src/ktprintopt.cpp:25
+#: src/crontabPrinter.cpp:159
+#, fuzzy
+#| msgid "Variables"
+msgid "Environment Variables"
+msgstr "Variåves"
+
+#: src/crontabPrinter.cpp:182
+#, fuzzy
+#| msgid "(System Crontab)"
+msgid "System Crontab"
+msgstr "(Intrêye cron do sistinme)"
+
+#: src/crontabPrinter.cpp:184
+#, kde-format
+msgctxt "Crontab of user login"
+msgid "Crontab of user %1"
+msgstr ""
+
+#: src/crontabPrinterWidget.cpp:24
 msgid "Cron Options"
 msgstr "Tchuzes po cron"
 
-#: src/ktprintopt.cpp:31
+#: src/crontabPrinterWidget.cpp:30
 msgid "Print cron&tab"
 msgstr "Imprimer l' intrêye cron&tab"
 
-#: src/ktprintopt.cpp:35
+#: src/crontabPrinterWidget.cpp:34
 msgid "Print &all users"
 msgstr "Imprimer &tos les uzeus"
 
@@ -894,6 +857,45 @@ msgstr "Pablo Saratxaga"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "pablo@mandrakesoft.com"
+
+#~ msgid "Task name:"
+#~ msgstr "No del bouye:"
+
+#~ msgid "Program:"
+#~ msgstr "Programe:"
+
+#~ msgid "Description:"
+#~ msgstr "Discrijhaedje:"
+
+#~ msgid "No tasks..."
+#~ msgstr "Nole bouye..."
+
+#, fuzzy
+#~| msgid "Variable:"
+#~ msgctxt "The environmental variable name ie HOME, MAILTO etc"
+#~ msgid "Variable:"
+#~ msgstr "Variåve:"
+
+#~ msgid "Value:"
+#~ msgstr "Valixhance:"
+
+#~ msgid "No variables..."
+#~ msgstr "Nole variåve..."
+
+#, fuzzy
+#~| msgid "Disabled."
+#~ msgctxt "The cron task had been disabled"
+#~ msgid "Disabled."
+#~ msgstr "Essocté."
+
+#, fuzzy
+#~| msgid "Disabled."
+#~ msgctxt "The cron variable has been disabled"
+#~ msgid "Disabled."
+#~ msgstr "Essocté."
+
+#~ msgid "Print Cron Tab"
+#~ msgstr "Imprimer l' intrêye crontab"
 
 #~ msgid "No password entry found for user '%1'"
 #~ msgstr "Nou scret di trové po l' uzeu «%1»"
