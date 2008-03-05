@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-03-03 14:20+0100\n"
+"POT-Creation-Date: 2008-03-05 10:19+0100\n"
 "PO-Revision-Date: 2003-09-10 00:07+0200\n"
 "Last-Translator: Lorint Hendschel <LorintHendschel@skynet.be>\n"
 "Language-Team: walon <linux-wa@chanae.alphanet.ch>\n"
@@ -232,12 +232,12 @@ msgstr "Djoké"
 msgid "%1/s"
 msgstr "%1/s"
 
-#: core/transferhandler.cpp:300 core/transferhandler.cpp:306
+#: core/transferhandler.cpp:301 core/transferhandler.cpp:307
 #: ui/droptarget.cpp:94
 msgid "Quit KGet"
 msgstr ""
 
-#: core/transferhandler.cpp:301 core/transferhandler.cpp:307
+#: core/transferhandler.cpp:302 core/transferhandler.cpp:308
 msgid "KGet quits now because all downloads have been completed."
 msgstr ""
 
@@ -260,26 +260,26 @@ msgctxt "stop transfergroup downloads"
 msgid "Stop"
 msgstr "Roedeu"
 
-#: core/transfer.cpp:39 core/transfer.cpp:76 core/transfer.cpp:142
+#: core/transfer.cpp:39 core/transfer.cpp:93 core/transfer.cpp:159
 #: transfer-plugins/kio/transferKio.cpp:57
 #: transfer-plugins/metalink/metalink.cpp:53
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:62
-#: transfer-plugins/bittorrent/bttransfer.cpp:263
+#: transfer-plugins/bittorrent/bttransfer.cpp:265
 #, fuzzy
 msgctxt "transfer state: stopped"
 msgid "Stopped"
 msgstr "Roedeu"
 
-#: core/transfer.cpp:69
+#: core/transfer.cpp:86
 #, fuzzy
 msgctxt "transfer state: delayed"
 msgid "Delayed"
 msgstr "Prémetou ridant"
 
-#: core/transfer.cpp:138 transfer-plugins/kio/transferKio.cpp:133
+#: core/transfer.cpp:155 transfer-plugins/kio/transferKio.cpp:133
 #: transfer-plugins/metalink/metalink.cpp:113
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:220
-#: transfer-plugins/bittorrent/bttransfer.cpp:260
+#: transfer-plugins/bittorrent/bttransfer.cpp:262
 #, fuzzy
 #| msgid "Finished"
 msgctxt "transfer state: finished"
@@ -309,7 +309,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ui/newtransferwidget.ui line 24
-#: core/kget.cpp:734 ui/newtransferdialog.cpp:35 rc.cpp:360
+#: core/kget.cpp:734 ui/newtransferdialog.cpp:35 rc.cpp:342
 #, fuzzy
 msgid "New Download"
 msgstr "Manaedjeu des aberwetaedjes"
@@ -430,7 +430,7 @@ msgstr "No do fitchî"
 #. i18n: file ui/transferhistory.ui line 52
 #: transfer-plugins/bittorrent/advanceddetails/torrentfiletreemodel.cpp:257
 #: transfer-plugins/bittorrent/advanceddetails/torrentfilelistmodel.cpp:72
-#: rc.cpp:420
+#: rc.cpp:402
 msgid "Size"
 msgstr ""
 
@@ -509,7 +509,7 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 154
 #: transfer-plugins/bittorrent/advanceddetails/btadvanceddetailswidget.cpp:70
-#: rc.cpp:219 rc.cpp:318
+#: rc.cpp:219 rc.cpp:297
 msgid "Chunks"
 msgstr ""
 
@@ -519,12 +519,12 @@ msgid "Trackers"
 msgstr " Transfers: %1"
 
 #: transfer-plugins/bittorrent/advanceddetails/trackerview.cpp:76
-#: transfer-plugins/bittorrent/bttransfer.cpp:218
+#: transfer-plugins/bittorrent/bttransfer.cpp:220
 msgid "Cannot add a tracker to a private torrent."
 msgstr ""
 
 #: transfer-plugins/bittorrent/advanceddetails/trackerview.cpp:93
-#: transfer-plugins/bittorrent/bttransfer.cpp:224
+#: transfer-plugins/bittorrent/bttransfer.cpp:226
 #, fuzzy
 #| msgid "Malformed URL:\n"
 msgid "Malformed URL."
@@ -727,12 +727,6 @@ msgstr "Sipepieusès tchuzes"
 
 #: transfer-plugins/bittorrent/bttransferfactory.cpp:80
 #, fuzzy
-#| msgid "Speed"
-msgid "&Speed Limits"
-msgstr "Roedeu"
-
-#: transfer-plugins/bittorrent/bttransferfactory.cpp:86
-#, fuzzy
 msgid "&Scan Files"
 msgstr "No do fitchî"
 
@@ -741,18 +735,18 @@ msgstr "No do fitchî"
 msgid "Downloading Torrent-File.."
 msgstr "Manaedjeu des aberwetaedjes"
 
-#: transfer-plugins/bittorrent/bttransfer.cpp:243
+#: transfer-plugins/bittorrent/bttransfer.cpp:245
 #, fuzzy
 msgctxt "transfer state: downloading"
 msgid "Downloading.."
 msgstr "Manaedjeu des aberwetaedjes"
 
-#: transfer-plugins/bittorrent/bttransfer.cpp:306
+#: transfer-plugins/bittorrent/bttransfer.cpp:308
 #, fuzzy
 msgid "Analyzing torrent.."
 msgstr "Manaedjeu des aberwetaedjes"
 
-#: transfer-plugins/bittorrent/bttransfer.cpp:380
+#: transfer-plugins/bittorrent/bttransfer.cpp:382
 msgctxt "Transfer status: seeding"
 msgid "Seeding.."
 msgstr ""
@@ -834,7 +828,7 @@ msgstr "Sourdant:"
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 247
 #. i18n: tag string
 #. i18n: file ui/transferdetailsfrm.ui line 64
-#: ui/transferdetails.cpp:38 rc.cpp:348 rc.cpp:375
+#: ui/transferdetails.cpp:38 rc.cpp:327 rc.cpp:357
 msgid "Saving to:"
 msgstr ""
 
@@ -842,7 +836,7 @@ msgstr ""
 #. i18n: file transfer-plugins/bittorrent/advanceddetails/trackerview.ui line 60
 #. i18n: tag string
 #. i18n: file ui/transferdetailsfrm.ui line 143
-#: ui/transferdetails.cpp:39 rc.cpp:246 rc.cpp:384
+#: ui/transferdetails.cpp:39 rc.cpp:246 rc.cpp:366
 msgid "Status:"
 msgstr ""
 
@@ -1672,14 +1666,10 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btsettingswidget.ui line 75
 #. i18n: tag string
-#. i18n: file transfer-plugins/bittorrent/btspeedlimits.ui line 26
-#. i18n: tag string
-#. i18n: file transfer-plugins/bittorrent/btspeedlimits.ui line 46
-#. i18n: tag string
 #. i18n: file ui/groupsettingsdialog.ui line 49
 #. i18n: tag string
 #. i18n: file ui/groupsettingsdialog.ui line 75
-#: rc.cpp:189 rc.cpp:195 rc.cpp:276 rc.cpp:282 rc.cpp:402 rc.cpp:408
+#: rc.cpp:189 rc.cpp:195 rc.cpp:384 rc.cpp:390
 msgid "KiB"
 msgstr ""
 
@@ -1748,7 +1738,7 @@ msgstr ""
 #. i18n: file transfer-plugins/bittorrent/advanceddetails/chunkdownloadview.ui line 95
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 163
-#: rc.cpp:228 rc.cpp:321
+#: rc.cpp:228 rc.cpp:300
 #, fuzzy
 msgid "Downloaded:"
 msgstr "Manaedjeu des aberwetaedjes"
@@ -1757,7 +1747,7 @@ msgstr "Manaedjeu des aberwetaedjes"
 #. i18n: file transfer-plugins/bittorrent/advanceddetails/chunkdownloadview.ui line 131
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 205
-#: rc.cpp:231 rc.cpp:339
+#: rc.cpp:231 rc.cpp:318
 msgid "Excluded:"
 msgstr ""
 
@@ -1765,7 +1755,7 @@ msgstr ""
 #. i18n: file transfer-plugins/bittorrent/advanceddetails/chunkdownloadview.ui line 167
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 177
-#: rc.cpp:234 rc.cpp:327
+#: rc.cpp:234 rc.cpp:306
 msgctxt "chunks left"
 msgid "Left:"
 msgstr ""
@@ -1824,50 +1814,15 @@ msgid "Restore Defaults"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file transfer-plugins/bittorrent/btspeedlimits.ui line 13
-#: rc.cpp:270
-#, fuzzy
-#| msgid "Speed"
-msgid "Bittorrent-Speedlimits"
-msgstr "Roedeu"
-
-#. i18n: tag string
-#. i18n: file transfer-plugins/bittorrent/btspeedlimits.ui line 19
-#: rc.cpp:273
-#, fuzzy
-msgid "Download-Limit:"
-msgstr "Manaedjeu des aberwetaedjes"
-
-#. i18n: tag string
-#. i18n: file transfer-plugins/bittorrent/btspeedlimits.ui line 39
-#: rc.cpp:279
-msgid "Upload-Limit:"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file transfer-plugins/bittorrent/btspeedlimits.ui line 65
-#: rc.cpp:285
-#, fuzzy
-#| msgid "Speed"
-msgid "Speed-Limits"
-msgstr "Roedeu"
-
-#. i18n: tag string
-#. i18n: file transfer-plugins/bittorrent/btspeedlimits.ui line 72
-#: rc.cpp:288
-msgid "Maximum Shared-Ratio:"
-msgstr ""
-
-#. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 29
-#: rc.cpp:291
+#: rc.cpp:270
 #, fuzzy
 msgid "Stats"
 msgstr "Re&nonder"
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 47
-#: rc.cpp:294
+#: rc.cpp:273
 #, fuzzy
 #| msgid "Speed"
 msgid "Seeders:"
@@ -1889,33 +1844,33 @@ msgstr "Roedeu"
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 198
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 212
-#: rc.cpp:297 rc.cpp:303 rc.cpp:309 rc.cpp:315 rc.cpp:324 rc.cpp:330
-#: rc.cpp:336 rc.cpp:342
+#: rc.cpp:276 rc.cpp:282 rc.cpp:288 rc.cpp:294 rc.cpp:303 rc.cpp:309
+#: rc.cpp:315 rc.cpp:321
 msgid "<n>"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 73
-#: rc.cpp:300
+#: rc.cpp:279
 #, fuzzy
 msgid "Download-Speed:"
 msgstr "Prémetou ridant"
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 99
-#: rc.cpp:306
+#: rc.cpp:285
 msgid "Leechers:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 125
-#: rc.cpp:312
+#: rc.cpp:291
 msgid "Upload-Speed:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 191
-#: rc.cpp:333
+#: rc.cpp:312
 msgctxt "all chunks"
 msgid "All:"
 msgstr ""
@@ -1924,7 +1879,7 @@ msgstr ""
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 240
 #. i18n: tag string
 #. i18n: file ui/transferdetailsfrm.ui line 71
-#: rc.cpp:345 rc.cpp:378
+#: rc.cpp:324 rc.cpp:360
 #, fuzzy
 #| msgid "Source:"
 msgctxt "source-file"
@@ -1933,34 +1888,40 @@ msgstr "Sourdant:"
 
 #. i18n: tag string
 #. i18n: file ui/transfersettingsdialog.ui line 22
-#: rc.cpp:351
+#: rc.cpp:330
 #, fuzzy
 msgid "Transfer-Settings"
 msgstr " Transfers: %1"
 
 #. i18n: tag string
 #. i18n: file ui/transfersettingsdialog.ui line 29
-#: rc.cpp:354
+#: rc.cpp:333
 #, fuzzy
 msgid "Upload Limit"
 msgstr "Manaedjeu des aberwetaedjes"
 
 #. i18n: tag string
 #. i18n: file ui/transfersettingsdialog.ui line 52
-#: rc.cpp:357
+#: rc.cpp:336
 #, fuzzy
 msgid "Download Limit"
 msgstr "Manaedjeu des aberwetaedjes"
 
 #. i18n: tag string
+#. i18n: file ui/transfersettingsdialog.ui line 75
+#: rc.cpp:339
+msgid "Maximum Share Ratio"
+msgstr ""
+
+#. i18n: tag string
 #. i18n: file ui/newtransferwidget.ui line 39
-#: rc.cpp:363
+#: rc.cpp:345
 msgid "Url"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ui/newtransferwidget.ui line 49
-#: rc.cpp:366
+#: rc.cpp:348
 #, fuzzy
 #| msgid "Destination:"
 msgid "Destination"
@@ -1968,91 +1929,91 @@ msgstr "Destinåcion:"
 
 #. i18n: tag string
 #. i18n: file ui/newtransferwidget.ui line 59
-#: rc.cpp:369
+#: rc.cpp:351
 #, fuzzy
 msgid "Transfer Group"
 msgstr " Transfers: %1"
 
 #. i18n: tag string
 #. i18n: file ui/newtransferwidget.ui line 89
-#: rc.cpp:372
+#: rc.cpp:354
 #, fuzzy
 msgid "Set as default folder"
 msgstr "Prémetou ridant"
 
 #. i18n: tag string
 #. i18n: file ui/transferdetailsfrm.ui line 123
-#: rc.cpp:381
+#: rc.cpp:363
 msgid "<done> MiB of <todo> MiB"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ui/transferdetailsfrm.ui line 150
-#: rc.cpp:387
+#: rc.cpp:369
 msgid "<icon>"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ui/transferdetailsfrm.ui line 157
-#: rc.cpp:390
+#: rc.cpp:372
 msgid "<status>"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ui/transferdetailsfrm.ui line 183
-#: rc.cpp:393
+#: rc.cpp:375
 #, fuzzy
 msgid "<speed>"
 msgstr "Roedeu"
 
 #. i18n: tag string
 #. i18n: file ui/groupsettingsdialog.ui line 26
-#: rc.cpp:396
+#: rc.cpp:378
 msgid "Group-Settings"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ui/groupsettingsdialog.ui line 33
-#: rc.cpp:399
+#: rc.cpp:381
 #, fuzzy
 msgid "Max download Speed"
 msgstr "Prémetou ridant"
 
 #. i18n: tag string
 #. i18n: file ui/groupsettingsdialog.ui line 59
-#: rc.cpp:405
+#: rc.cpp:387
 msgid "Max upload Speed"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ui/groupsettingsdialog.ui line 85
-#: rc.cpp:411
+#: rc.cpp:393
 #, fuzzy
 msgid "Default folder:"
 msgstr "Prémetou ridant"
 
 #. i18n: tag string
 #. i18n: file ui/transferhistory.ui line 26
-#: rc.cpp:414
+#: rc.cpp:396
 msgid "Clear History"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ui/transferhistory.ui line 47
-#: rc.cpp:417
+#: rc.cpp:399
 #, fuzzy
 msgid "Date"
 msgstr "Re&nonder"
 
 #. i18n: tag string
 #. i18n: file ui/transferhistory.ui line 66
-#: rc.cpp:423
+#: rc.cpp:405
 msgid "Filter history..."
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ui/transferhistory.ui line 77
-#: rc.cpp:426
+#: rc.cpp:408
 #, fuzzy
 msgctxt "delete selected transfer"
 msgid "Delete Selected"
@@ -2060,48 +2021,67 @@ msgstr "Nou fitchî di tchoezi"
 
 #. i18n: tag string
 #. i18n: file ui/transferhistory.ui line 82
-#: rc.cpp:429
+#: rc.cpp:411
 #, fuzzy
 msgid "Download"
 msgstr "Manaedjeu des aberwetaedjes"
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 4
-#: rc.cpp:432
+#: rc.cpp:414
 #, fuzzy
 msgid "&File"
 msgstr "Drovi &fitchî"
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 14
-#: rc.cpp:435
+#: rc.cpp:417
 #, fuzzy
 msgid "&Downloads"
 msgstr "Manaedjeu des aberwetaedjes"
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 23
-#: rc.cpp:438
+#: rc.cpp:420
 msgid "&Settings"
 msgstr ""
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 35
-#: rc.cpp:441
+#: rc.cpp:423
 msgid "&Help"
 msgstr ""
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 38
-#: rc.cpp:444
+#: rc.cpp:426
 msgid "Main Toolbar"
 msgstr ""
 
 #. i18n: tag Text
 #. i18n: file extensions/konqueror/kget_plug_in.rc line 4
-#: rc.cpp:447
+#: rc.cpp:429
 msgid "&Tools"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Speed"
+#~ msgid "&Speed Limits"
+#~ msgstr "Roedeu"
+
+#, fuzzy
+#~| msgid "Speed"
+#~ msgid "Bittorrent-Speedlimits"
+#~ msgstr "Roedeu"
+
+#, fuzzy
+#~ msgid "Download-Limit:"
+#~ msgstr "Manaedjeu des aberwetaedjes"
+
+#, fuzzy
+#~| msgid "Speed"
+#~ msgid "Speed-Limits"
+#~ msgstr "Roedeu"
 
 #, fuzzy
 #~ msgid "Remove"
