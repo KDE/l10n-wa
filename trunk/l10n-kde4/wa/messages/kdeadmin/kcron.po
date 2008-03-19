@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcron\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-03-01 18:05+0100\n"
+"POT-Creation-Date: 2008-03-19 11:22+0100\n"
 "PO-Revision-Date: 2004-09-05 02:44+0200\n"
 "Last-Translator: Pablo Saratxaga <pablo@walon.org>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -25,121 +25,190 @@ msgstr ""
 "X-Generator: KBabel 1.0.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: src/crontabWidget.cpp:138
+#: src/crontabWidget.cpp:164
 msgid "Show the following Cron:"
 msgstr ""
 
-#: src/crontabWidget.cpp:142
+#: src/crontabWidget.cpp:168
 msgid "Personal Cron"
 msgstr ""
 
-#: src/crontabWidget.cpp:147
+#: src/crontabWidget.cpp:173
 #, fuzzy
 #| msgid "(System Crontab)"
 msgid "System Cron"
 msgstr "(Intrêye cron do sistinme)"
 
-#: src/crontabWidget.cpp:151
+#: src/crontabWidget.cpp:177
 msgid "Cron of User:"
 msgstr ""
 
-#: src/crontabWidget.cpp:174
+#: src/crontabWidget.cpp:200
 msgid "Show All Personal Crons"
 msgstr ""
 
-#: src/crontablib/cthost.cpp:53
+#: src/crontablib/ctvariable.cpp:126
+msgid "Override default home folder."
+msgstr "Candjî l' prémetou ridant måjhon."
+
+#: src/crontablib/ctvariable.cpp:129
+msgid "Email output to specified account."
+msgstr "Emiler li rexhowe a l' adresse dinêye."
+
+#: src/crontablib/ctvariable.cpp:132
+msgid "Override default shell."
+msgstr "Candjî l' prémetou shell."
+
+#: src/crontablib/ctvariable.cpp:135
+msgid "Folders to search for program files."
+msgstr "Ridants po cweri après les programes."
+
+#: src/crontablib/ctvariable.cpp:138
+msgid "Dynamic libraries location."
+msgstr ""
+
+#: src/crontablib/ctvariable.cpp:141
+#, fuzzy
+#| msgid "Variables"
+msgid "Local Variable"
+msgstr "Variåves"
+
+#: src/crontablib/ctSystemCron.cpp:53 src/crontabPrinter.cpp:182
+#, fuzzy
+#| msgid "(System Crontab)"
+msgid "System Crontab"
+msgstr "(Intrêye cron do sistinme)"
+
+#: src/crontablib/cthost.cpp:60
 msgid ""
-"You have been blocked from using KCron                      by either the /"
-"etc/cron.allow file or the /etc/cron.deny file.                      \n"
+"You have been blocked from using KCron\t                      by either the /"
+"etc/cron.allow file or the /etc/cron.deny file.\t                      \n"
 "\n"
 "Check the crontab man page for further details."
 msgstr ""
 
-#: src/crontablib/cttask.cpp:233
+#: src/crontablib/cthost.cpp:142
+#, fuzzy, kde-format
+#| msgid "%H:%M"
+msgctxt "User login: errorMessage"
+msgid "User %1: %2"
+msgstr "%H:%M"
+
+#: src/crontablib/cttask.cpp:240
 msgid "At system startup"
 msgstr ""
 
-#: src/crontablib/cttask.cpp:240
+#: src/crontablib/cttask.cpp:247
 #, kde-format
 msgctxt "1:Time Description, 2:Date Description"
 msgid "%1, %2"
 msgstr ""
 
-#: src/crontablib/cttask.cpp:244
+#: src/crontablib/cttask.cpp:251
 #, fuzzy, kde-format
 #| msgid "every day "
 msgctxt "Every 'days of week'"
 msgid "every %1"
 msgstr "tchaeke djoû "
 
-#: src/crontablib/cttask.cpp:248
+#: src/crontablib/cttask.cpp:255
 #, kde-format
 msgctxt "'Days of month' of 'Months'"
 msgid "%1 of %2"
 msgstr ""
 
-#: src/crontablib/cttask.cpp:259 src/crontablib/ctdom.cpp:23
+#: src/crontablib/cttask.cpp:266 src/crontablib/ctdom.cpp:23
 #: src/crontablib/ctdow.cpp:44
 msgid "every day "
 msgstr "tchaeke djoû "
 
-#: src/crontablib/cttask.cpp:270
+#: src/crontablib/cttask.cpp:277
 #, kde-format
 msgctxt "1:Day of month, 2:Day of week"
 msgid "%1 as well as %2"
 msgstr ""
 
-#: src/crontablib/cttask.cpp:300
+#: src/crontablib/cttask.cpp:307
 #, fuzzy, kde-format
 #| msgid "%H:%M"
 msgctxt "1:Hour, 2:Minute"
 msgid "%1:%2"
 msgstr "%H:%M"
 
-#: src/crontablib/cttask.cpp:309
+#: src/crontablib/cttask.cpp:316
 msgid ", and "
 msgstr ", et "
 
-#: src/crontablib/cttask.cpp:311 src/crontablib/ctunit.cpp:171
+#: src/crontablib/cttask.cpp:318 src/crontablib/ctunit.cpp:173
 msgid " and "
 msgstr " et "
 
-#: src/crontablib/cttask.cpp:314 src/crontablib/ctunit.cpp:174
+#: src/crontablib/cttask.cpp:321 src/crontablib/ctunit.cpp:176
 msgid ", "
 msgstr ", "
 
-#: src/crontablib/cttask.cpp:322
+#: src/crontablib/cttask.cpp:329
 #, kde-format
 msgctxt "Hour::Minute list"
 msgid "At %1"
 msgstr ""
 
-#: src/crontablib/cttask.cpp:330
+#: src/crontablib/cttask.cpp:337
 #, fuzzy
 #| msgid "the minutes"
 msgid "Every minutes"
 msgstr "les munutes"
 
-#: src/crontablib/cttask.cpp:332
+#: src/crontablib/cttask.cpp:339
 #, fuzzy, kde-format
 #| msgid "the minutes"
 msgid "Every %1 minutes"
 msgstr "les munutes"
 
-#: src/crontablib/ctcron.cpp:130 src/crontabPrinter.cpp:182
+#: src/crontablib/ctHelper.cpp:22
 #, fuzzy
-#| msgid "(System Crontab)"
-msgid "System Crontab"
-msgstr "(Intrêye cron do sistinme)"
+#| msgid "Co&mment:"
+msgid "No comment"
+msgstr "Ra&wete:"
 
-#: src/crontablib/ctcron.cpp:193
+#: src/crontablib/ctcron.cpp:98
 #, kde-format
 msgid "No password entry found for uid '%1'"
 msgstr "Nou scret di trové po l' uid «%1»"
 
-#: src/crontablib/ctcron.cpp:352
+#: src/crontablib/ctcron.cpp:229
+#, kde-format
+msgctxt "Generation Message + current date"
+msgid "File generated by KCron the %1."
+msgstr ""
+
+#: src/crontablib/ctcron.cpp:267
+msgid "<em>No output.</em>"
+msgstr ""
+
+#: src/crontablib/ctcron.cpp:273
+msgid "<em>No error.</em>"
+msgstr ""
+
+#: src/crontablib/ctcron.cpp:277
+#, kde-format
+msgid ""
+"<p><strong>Command:</strong> %1</p><strong>Standard Output :</strong><pre>%"
+"2</pre><strong>Error Output :</strong><pre>%3</pre>"
+msgstr ""
+
+#: src/crontablib/ctcron.cpp:279
 msgid "An error occurred while updating crontab."
 msgstr "Åk n' a nén stî tot metant a djoû les intrêyes crontab."
+
+#: src/crontablib/ctcron.cpp:286
+msgid "Unable to open crontab file for writing"
+msgstr ""
+
+#: src/crontablib/ctcron.cpp:286
+#, kde-format
+msgid "The file %1 could not be opened."
+msgstr ""
 
 #: src/crontablib/ctmonth.cpp:23
 #, fuzzy
@@ -199,13 +268,13 @@ msgstr "nôvimbe"
 msgid "December"
 msgstr "decimbe"
 
-#: src/crontablib/ctGlobalCron.cpp:31
+#: src/crontablib/ctGlobalCron.cpp:39
 #, fuzzy
 #| msgid "Print &all users"
 msgid "All users"
 msgstr "Imprimer &tos les uzeus"
 
-#: src/crontablib/ctunit.cpp:170
+#: src/crontablib/ctunit.cpp:172
 #, fuzzy
 msgid ","
 msgstr ", "
@@ -394,106 +463,133 @@ msgstr ""
 msgid "Sunday"
 msgstr "dim"
 
-#: src/tasksWidget.cpp:40
+#: src/tasksWidget.cpp:57
 #, fuzzy
 #| msgid "Scheduled Tasks"
 msgid "<b>Scheduled Tasks</b>"
 msgstr "Programêyès bouyes"
 
-#: src/tasksWidget.cpp:89
+#: src/tasksWidget.cpp:111
 msgctxt "Do not use any quote characters (') in this string"
 msgid "End of script execution. Type Enter or Ctrl+C to exit."
 msgstr ""
 
-#: src/tasksWidget.cpp:122
+#: src/tasksWidget.cpp:144
 #, fuzzy
 #| msgid "Tasks"
 msgid "New Task"
 msgstr "Bouyes"
 
-#: src/tasksWidget.cpp:153
+#: src/tasksWidget.cpp:180
 msgid "Modify Task"
 msgstr "Candjî l' bouye"
 
-#: src/tasksWidget.cpp:202 src/variablesWidget.cpp:156
+#: src/tasksWidget.cpp:240 src/variablesWidget.cpp:197
 msgid "User"
 msgstr ""
 
-#: src/tasksWidget.cpp:205 src/crontabPrinter.cpp:135
+#: src/tasksWidget.cpp:243 src/crontabPrinter.cpp:135
 msgid "Scheduling"
 msgstr ""
 
-#: src/tasksWidget.cpp:207 src/crontabPrinter.cpp:135
+#: src/tasksWidget.cpp:245 src/crontabPrinter.cpp:135
 #, fuzzy
 #| msgid "Modify Task"
 msgid "Command"
 msgstr "Candjî l' bouye"
 
-#: src/tasksWidget.cpp:208 src/variablesWidget.cpp:161
+#: src/tasksWidget.cpp:246 src/variablesWidget.cpp:202
 #, fuzzy
 #| msgid "Sat"
 msgid "Status"
 msgstr "sem"
 
-#: src/tasksWidget.cpp:209 src/crontabPrinter.cpp:135
+#: src/tasksWidget.cpp:247 src/crontabPrinter.cpp:135
 msgid "Description"
 msgstr "Discrijhaedje"
 
-#: src/tasksWidget.cpp:210
+#: src/tasksWidget.cpp:248
 #, fuzzy
 #| msgid "Scheduled Tasks"
 msgid "Scheduling Details"
 msgstr "Programêyès bouyes"
 
-#: src/kcmCron.cpp:95
+#: src/tasksWidget.cpp:272
+#, fuzzy
+#| msgid "No tasks..."
+msgctxt "Adds a new task"
+msgid "New &Task..."
+msgstr "Nole bouye..."
+
+#: src/tasksWidget.cpp:273
+#, fuzzy
+#| msgid "Create a new task or variable."
+msgid "Create a new task."
+msgstr "Fé ene nouve bouye ou variåve."
+
+#: src/tasksWidget.cpp:277 src/variablesWidget.cpp:223
+msgid "M&odify..."
+msgstr "C&andjî..."
+
+#: src/tasksWidget.cpp:279
+#, fuzzy
+#| msgid "Run the selected task now."
+msgid "Modify the selected task."
+msgstr "Enonder tot d' shûte li tchoezeye bouye."
+
+#: src/tasksWidget.cpp:283 src/variablesWidget.cpp:229
+msgid "&Delete"
+msgstr ""
+
+#: src/tasksWidget.cpp:285
+#, fuzzy
+#| msgid "Delete the selected task or variable."
+msgid "Delete the selected task."
+msgstr "Disfacer li tchoezeye bouye ou variåve."
+
+#: src/tasksWidget.cpp:289
+msgid "&Run Now"
+msgstr "&Enonder tot d' shûte"
+
+#: src/tasksWidget.cpp:291
+msgid "Run the selected task now."
+msgstr "Enonder tot d' shûte li tchoezeye bouye."
+
+#: src/kcmCron.cpp:75
 msgid "Task Scheduler"
 msgstr "Programeu des bouyes"
 
-#: src/kcmCron.cpp:96
+#: src/kcmCron.cpp:76
 msgid "KDE Task Scheduler"
 msgstr "Programeu des bouyes di KDE"
 
-#: src/kcmCron.cpp:96
+#: src/kcmCron.cpp:76
 msgid ""
 "(c) 2008, Nicolas Ternisien\n"
 "(c) 1999-2000, Gary Meyer"
 msgstr ""
 
-#: src/kcmCron.cpp:98
+#: src/kcmCron.cpp:78
 msgid "Nicolas Ternisien"
 msgstr ""
 
-#: src/kcmCron.cpp:99
+#: src/kcmCron.cpp:79
 msgid "Gary Meyer"
 msgstr ""
 
-#: src/kcmCron.cpp:100
+#: src/kcmCron.cpp:80
 msgid "Robert Berry"
 msgstr ""
 
-#: src/kcmCron.cpp:101
+#: src/kcmCron.cpp:81
 msgid "James Ots"
 msgstr ""
 
-#: src/kcmCron.cpp:102
+#: src/kcmCron.cpp:82
 msgid "Alberto G. Hierro"
 msgstr ""
 
-#: src/kcmCron.cpp:161
-#, fuzzy
-#| msgid "Saving..."
-msgctxt "Saving the file to the hard drive"
-msgid "Saving..."
-msgstr "Dji schape..."
-
-#: src/kcmCron.cpp:163
-#, fuzzy
-#| msgid "Ready."
-msgctxt "Ready for user input"
-msgid "Ready."
-msgstr "Presse."
-
-#: src/kcmCron.cpp:183
+#: src/kcmCron.cpp:91
 #, kde-format
 msgid ""
 "The following error occurred while initializing KCron:\n"
@@ -508,7 +604,7 @@ msgstr ""
 "\n"
 "KCron va cwiter asteure.\n"
 
-#: src/kcmCron.cpp:199
+#: src/kcmCron.cpp:158
 msgid ""
 "You can use this application to schedule programs to run in the background.\n"
 "To schedule a new task now, click on the Tasks folder and select Edit/New "
@@ -519,91 +615,66 @@ msgstr ""
 "Po programe ene novele bouye, clitchîz sol ridant des Bouyes eyet "
 "tchoezixhoz Candjî/Novea a pårti di ç' menu la."
 
-#: src/kcmCron.cpp:199
+#: src/kcmCron.cpp:158
 msgid "Welcome to the Task Scheduler"
 msgstr "Bénvnowe å programeu des bouyes"
 
-#: src/kcmCron.cpp:260
+#: src/variablesWidget.cpp:48
 #, fuzzy
-#| msgid "No tasks..."
-msgctxt "Adds a new task"
-msgid "New &Task..."
-msgstr "Nole bouye..."
+#| msgid "Variables"
+msgid "<b>Environment Variables</b>"
+msgstr "Variåves"
 
-#: src/kcmCron.cpp:265
+#: src/variablesWidget.cpp:83
+msgid "Modify Variable"
+msgstr "Candjî li variåve"
+
+#: src/variablesWidget.cpp:159
+#, fuzzy
+#| msgid "Variables"
+msgid "New Variable"
+msgstr "Variåves"
+
+#: src/variablesWidget.cpp:200
+#, fuzzy
+#| msgid "Variables"
+msgid "Variable"
+msgstr "Variåves"
+
+#: src/variablesWidget.cpp:201
+msgid "Value"
+msgstr "Valixhance"
+
+#: src/variablesWidget.cpp:203
+#, fuzzy
+#| msgid "Co&mment:"
+msgid "Comment"
+msgstr "Ra&wete:"
+
+#: src/variablesWidget.cpp:218
 #, fuzzy
 #| msgid "No variables..."
 msgctxt "Adds a new variable"
 msgid "New &Variable..."
 msgstr "Nole variåve..."
 
-#: src/kcmCron.cpp:269
-msgid "M&odify..."
-msgstr "C&andjî..."
-
-#: src/kcmCron.cpp:275
-msgid "&Delete"
-msgstr ""
-
-#: src/kcmCron.cpp:281
-msgid "&Run Now"
-msgstr "&Enonder tot d' shûte"
-
-#: src/kcmCron.cpp:354
-#, fuzzy
-#| msgid "Create a new task or variable."
-msgid "Create a new task."
-msgstr "Fé ene nouve bouye ou variåve."
-
-#: src/kcmCron.cpp:357
+#: src/variablesWidget.cpp:219
 #, fuzzy
 #| msgid "Create a new task or variable."
 msgid "Create a new variable."
 msgstr "Fé ene nouve bouye ou variåve."
 
-#: src/kcmCron.cpp:360
-msgid "Edit the selected task or variable."
+#: src/variablesWidget.cpp:225
+#, fuzzy
+#| msgid "Edit the selected task or variable."
+msgid "Modify the selected variable."
 msgstr "Candjî li tchoezeye bouye ou variåve."
 
-#: src/kcmCron.cpp:363
-msgid "Delete the selected task or variable."
+#: src/variablesWidget.cpp:231
+#, fuzzy
+#| msgid "Delete the selected task or variable."
+msgid "Delete the selected variable."
 msgstr "Disfacer li tchoezeye bouye ou variåve."
-
-#: src/kcmCron.cpp:366
-msgid "Run the selected task now."
-msgstr "Enonder tot d' shûte li tchoezeye bouye."
-
-#: src/variablesWidget.cpp:36
-#, fuzzy
-#| msgid "Variables"
-msgid "<b>Environment Variables</b>"
-msgstr "Variåves"
-
-#: src/variablesWidget.cpp:58
-msgid "Modify Variable"
-msgstr "Candjî li variåve"
-
-#: src/variablesWidget.cpp:123
-#, fuzzy
-#| msgid "Variables"
-msgid "New Variable"
-msgstr "Variåves"
-
-#: src/variablesWidget.cpp:159
-#, fuzzy
-#| msgid "Variables"
-msgid "Variable"
-msgstr "Variåves"
-
-#: src/variablesWidget.cpp:160
-msgid "Value"
-msgstr "Valixhance"
-
-#: src/variablesWidget.cpp:162
-#, fuzzy
-#| msgid "Co&mment:"
-msgid "Comment"
-msgstr "Ra&wete:"
 
 #: src/taskWidget.cpp:49 src/variableWidget.cpp:44
 #, fuzzy
@@ -617,37 +688,39 @@ msgstr "&Mete en alaedje"
 msgid "Disabled"
 msgstr "Essocté"
 
-#: src/taskEditorDialog.cpp:75
+#: src/taskEditorDialog.cpp:76
 #, fuzzy
 #| msgid "Modify Variable"
 msgid "Add or modify a scheduled task"
 msgstr "Candjî li variåve"
 
-#: src/taskEditorDialog.cpp:76 src/taskEditorDialog.cpp:738
+#: src/taskEditorDialog.cpp:77 src/taskEditorDialog.cpp:846
 msgid "<i>This task will be executed at the specified intervals.</i>"
 msgstr ""
 
-#: src/taskEditorDialog.cpp:84
-msgid "&Program:"
-msgstr "&Programe:"
+#: src/taskEditorDialog.cpp:86
+#, fuzzy
+#| msgid "Modify Task"
+msgid "&Command:"
+msgstr "Candjî l' bouye"
 
-#: src/taskEditorDialog.cpp:104 src/variableEditorDialog.cpp:102
+#: src/taskEditorDialog.cpp:106 src/variableEditorDialog.cpp:103
 msgid "&Run as:"
 msgstr "&Enonder come:"
 
-#: src/taskEditorDialog.cpp:121
-msgid "&Comment:"
-msgstr "&Rawete:"
+#: src/taskEditorDialog.cpp:122 src/variableEditorDialog.cpp:121
+msgid "Co&mment:"
+msgstr "Ra&wete:"
 
-#: src/taskEditorDialog.cpp:134
+#: src/taskEditorDialog.cpp:135
 msgid "&Enable this task"
 msgstr ""
 
-#: src/taskEditorDialog.cpp:139
+#: src/taskEditorDialog.cpp:140
 msgid "Run at system &bootup"
 msgstr ""
 
-#: src/taskEditorDialog.cpp:144
+#: src/taskEditorDialog.cpp:146
 #, fuzzy
 #| msgid "Run every day"
 msgid "Run &every day"
@@ -657,77 +730,143 @@ msgstr "Enonder tchaeke djoû"
 msgid "Days of Month"
 msgstr "Djoûs do moes"
 
-#: src/taskEditorDialog.cpp:283
+#: src/taskEditorDialog.cpp:288
 msgid "Months"
 msgstr "Moes"
 
-#: src/taskEditorDialog.cpp:320
+#: src/taskEditorDialog.cpp:325
 msgid "Days of Week"
 msgstr "Djoûs del samwinne"
 
-#: src/taskEditorDialog.cpp:355
+#: src/taskEditorDialog.cpp:461
 msgid "Minutes"
 msgstr "Munutes"
 
-#: src/taskEditorDialog.cpp:397
+#: src/taskEditorDialog.cpp:471
+#, fuzzy
+#| msgid "Description:"
+msgid "Preselection:"
+msgstr "Discrijhaedje:"
+
+#: src/taskEditorDialog.cpp:478
+msgid "Clear selection"
+msgstr ""
+
+#: src/taskEditorDialog.cpp:479
+msgid "Custom selection"
+msgstr ""
+
+#: src/taskEditorDialog.cpp:480
+#, fuzzy
+#| msgid "the minutes"
+msgid "Each minute"
+msgstr "les munutes"
+
+#: src/taskEditorDialog.cpp:481
+#, fuzzy
+#| msgid "the minutes"
+msgid "Every 2 minutes"
+msgstr "les munutes"
+
+#: src/taskEditorDialog.cpp:482
+#, fuzzy
+#| msgid "the minutes"
+msgid "Every 5 minutes"
+msgstr "les munutes"
+
+#: src/taskEditorDialog.cpp:483
+#, fuzzy
+#| msgid "the minutes"
+msgid "Every 10 minutes"
+msgstr "les munutes"
+
+#: src/taskEditorDialog.cpp:484
+#, fuzzy
+#| msgid "the minutes"
+msgid "Every 15 minutes"
+msgstr "les munutes"
+
+#: src/taskEditorDialog.cpp:485
+#, fuzzy
+#| msgid "the minutes"
+msgid "Every 20 minutes"
+msgstr "les munutes"
+
+#: src/taskEditorDialog.cpp:486
+#, fuzzy
+#| msgid "the minutes"
+msgid "Every 30 minutes"
+msgstr "les munutes"
+
+#: src/taskEditorDialog.cpp:520
 msgid "Hours"
 msgstr "Eures"
 
-#: src/taskEditorDialog.cpp:400
-msgid "AM"
+#: src/taskEditorDialog.cpp:524
+#, fuzzy
+#| msgid "AM"
+msgid "AM:"
 msgstr "Matén"
 
-#: src/taskEditorDialog.cpp:426
-msgid "PM"
+#: src/taskEditorDialog.cpp:541
+#, fuzzy
+#| msgid "PM"
+msgid "PM:"
 msgstr "Après-nonne"
 
-#: src/taskEditorDialog.cpp:614
-msgid "<i>This task is disabled.</i>"
-msgstr ""
+#: src/taskEditorDialog.cpp:707 src/taskEditorDialog.cpp:718
+#, fuzzy
+#| msgid "Please enter the variable name."
+msgid "<i>Please type a valid command line...</i>"
+msgstr "Dinez l' no del variåve."
 
-#: src/taskEditorDialog.cpp:621
-msgid "<i>This task will be run on system bootup.</i>"
-msgstr ""
-
-#: src/taskEditorDialog.cpp:627 src/taskEditorDialog.cpp:669
-msgid "<i>Please browse for a program to execute...</i>"
-msgstr ""
-
-#: src/taskEditorDialog.cpp:661
+#: src/taskEditorDialog.cpp:740
 #, fuzzy
 #| msgid "Please enter the variable name."
 msgid "<i>Please select an executable program...</i>"
 msgstr "Dinez l' no del variåve."
 
-#: src/taskEditorDialog.cpp:684
+#: src/taskEditorDialog.cpp:748 src/taskEditorDialog.cpp:774
+msgid "<i>Please browse for a program to execute...</i>"
+msgstr ""
+
+#: src/taskEditorDialog.cpp:761
+msgid "<i>This task is disabled.</i>"
+msgstr ""
+
+#: src/taskEditorDialog.cpp:768
+msgid "<i>This task will be run on system bootup.</i>"
+msgstr ""
+
+#: src/taskEditorDialog.cpp:793
 #, fuzzy
 #| msgid "Please enter the variable name."
 msgid "<i>Please select from the 'Months' section...</i>"
 msgstr "Dinez l' no del variåve."
 
-#: src/taskEditorDialog.cpp:702
+#: src/taskEditorDialog.cpp:811
 msgid ""
 "<i>Please select from either the 'Days of Month' or the 'Days of Week' "
 "section...</i>"
 msgstr ""
 
-#: src/taskEditorDialog.cpp:716
+#: src/taskEditorDialog.cpp:825
 #, fuzzy
 #| msgid "Please enter the variable name."
 msgid "<i>Please select from the 'Hours' section...</i>"
 msgstr "Dinez l' no del variåve."
 
-#: src/taskEditorDialog.cpp:730
+#: src/taskEditorDialog.cpp:839
 #, fuzzy
 #| msgid "Please enter the variable name."
 msgid "<i>Please select from the 'Minutes' section...</i>"
 msgstr "Dinez l' no del variåve."
 
-#: src/taskEditorDialog.cpp:910
+#: src/taskEditorDialog.cpp:1045
 msgid "Set All"
 msgstr "Defini ttafwait"
 
-#: src/taskEditorDialog.cpp:912
+#: src/taskEditorDialog.cpp:1047
 #, fuzzy
 msgid "Clear All"
 msgstr "Defini ttafwait"
@@ -745,55 +884,29 @@ msgctxt "The environmental variable name ie HOME, MAILTO etc"
 msgid "&Variable:"
 msgstr "&Variåve:"
 
-#: src/variableEditorDialog.cpp:93
+#: src/variableEditorDialog.cpp:94
 msgid "Va&lue:"
 msgstr "Vali&xhance:"
 
-#: src/variableEditorDialog.cpp:120
-msgid "Co&mment:"
-msgstr "Ra&wete:"
-
-#: src/variableEditorDialog.cpp:128
+#: src/variableEditorDialog.cpp:129
 msgid "&Enable this variable"
 msgstr ""
 
-#: src/variableEditorDialog.cpp:155
+#: src/variableEditorDialog.cpp:156
 msgid "<i>This variable will be used by scheduled tasks.</i>"
 msgstr ""
 
-#: src/variableEditorDialog.cpp:193
-msgid "Override default home folder."
-msgstr "Candjî l' prémetou ridant måjhon."
-
-#: src/variableEditorDialog.cpp:197
-msgid "Email output to specified account."
-msgstr "Emiler li rexhowe a l' adresse dinêye."
-
-#: src/variableEditorDialog.cpp:201
-msgid "Override default shell."
-msgstr "Candjî l' prémetou shell."
-
-#: src/variableEditorDialog.cpp:205
-msgid "Folders to search for program files."
-msgstr "Ridants po cweri après les programes."
-
-#: src/variableEditorDialog.cpp:209
-#, fuzzy
-#| msgid "Variables"
-msgid "Local Variable"
-msgstr "Variåves"
-
-#: src/variableEditorDialog.cpp:215
+#: src/variableEditorDialog.cpp:200
 msgid "<i>This variable is disabled.</i>"
 msgstr ""
 
-#: src/variableEditorDialog.cpp:222
+#: src/variableEditorDialog.cpp:207
 #, fuzzy
 #| msgid "Please enter the variable name."
 msgid "<i>Please enter the variable name...</i>"
 msgstr "Dinez l' no del variåve."
 
-#: src/variableEditorDialog.cpp:229
+#: src/variableEditorDialog.cpp:214
 #, fuzzy
 #| msgid "Please enter the variable value."
 msgid "<i>Please enter the variable value ...</i>"
@@ -845,6 +958,24 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "pablo@mandrakesoft.com"
 
+#, fuzzy
+#~| msgid "Saving..."
+#~ msgctxt "Saving the file to the hard drive"
+#~ msgid "Saving..."
+#~ msgstr "Dji schape..."
+
+#, fuzzy
+#~| msgid "Ready."
+#~ msgctxt "Ready for user input"
+#~ msgid "Ready."
+#~ msgstr "Presse."
+
+#~ msgid "&Program:"
+#~ msgstr "&Programe:"
+
+#~ msgid "&Comment:"
+#~ msgstr "&Rawete:"
+
 #~ msgid ""
 #~ "Scheduled tasks have been modified.\n"
 #~ "Do you want to save changes?"
@@ -881,9 +1012,6 @@ msgstr "pablo@mandrakesoft.com"
 
 #~ msgid "Program:"
 #~ msgstr "Programe:"
-
-#~ msgid "Description:"
-#~ msgstr "Discrijhaedje:"
 
 #~ msgid "No tasks..."
 #~ msgstr "Nole bouye..."
