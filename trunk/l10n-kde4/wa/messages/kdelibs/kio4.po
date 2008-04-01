@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-03-29 21:25+0100\n"
+"POT-Creation-Date: 2008-03-31 20:06+0200\n"
 "PO-Revision-Date: 2007-09-11 05:04+0200\n"
 "Last-Translator: Pablo Saratxaga <pablo@walon.org>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -324,9 +324,10 @@ msgid "C&ontinue Loading"
 msgstr "C&ontinouwer a tcherdjî"
 
 #: kio/tcpslavebase.cpp:319
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid "Authentication Failed."
-msgid ": SSL negotiation failed"
+msgctxt "%1 is a host name"
+msgid "%1: SSL negotiation failed"
 msgstr "L' otintifiaedje a fwait berwete!"
 
 #: kio/tcpslavebase.cpp:476
@@ -370,7 +371,7 @@ msgstr ""
 #, fuzzy, kde-format
 #| msgid "The server certificate failed the authenticity test (%1)."
 msgid ""
-"The server failed the authenticity check (%1)\n"
+"The server failed the authenticity check (%1).\n"
 "\n"
 msgstr ""
 "L' acertineure do sierveu n' a nén a fwait berwete po l' aveurixhmint (%1)."
@@ -2845,21 +2846,27 @@ msgstr ""
 #| "The IP address of the host %1 does not match the one the certificate was "
 #| "issued to."
 msgid ""
-"The certificate's CA's (Certificate Authority) does not match the CA name of "
+"The certificate's CA (Certificate Authority) does not match the CA name of "
 "the certificate."
 msgstr ""
 "L' adresse IP do lodjoe %1 ni corespond nén al cene ki l' acertineure a stî "
 "evoyeye."
 
 #: kssl/ksslcertificate.cpp:1112
+#, fuzzy
+#| msgid ""
+#| "The IP address of the host %1 does not match the one the certificate was "
+#| "issued to."
 msgid ""
-"The CA's (Certificate Authority) certificate's key ID does not match the key "
+"The CA (Certificate Authority) certificate's key ID does not match the key "
 "ID in the 'Issuer' section of the certificate you are trying to use."
 msgstr ""
+"L' adresse IP do lodjoe %1 ni corespond nén al cene ki l' acertineure a stî "
+"evoyeye."
 
 #: kssl/ksslcertificate.cpp:1114
 msgid ""
-"The CA's (Certificate Authority) certificate's key ID and name do not match "
+"The CA (Certificate Authority) certificate's key ID and name do not match "
 "the key ID and name in the 'Issuer' section of the certificate you are "
 "trying to use."
 msgstr ""
@@ -2890,7 +2897,7 @@ msgid ""
 "CRL (Certificate Revocation List) is not valid. Any of them could not be "
 "valid yet or not valid any more. If you see this message, please let the "
 "author of the software you are using know that he or she should use the new, "
-"morespecific error messages."
+"more specific error messages."
 msgstr ""
 
 #: kssl/ksslcertificate.cpp:1131
@@ -3522,7 +3529,8 @@ msgstr "&Ritni l' aloyaedje etur l' aplicåcion et cisse sôre di fitchî ci"
 #: kfile/kopenwithdialog.cpp:794
 #, kde-format
 msgid ""
-"Could not extract executable name from '%1', please type a valid program name"
+"Could not extract executable name from '%1', please type a valid program "
+"name."
 msgstr ""
 
 #: kfile/kmetaprops.cpp:101
@@ -5769,8 +5777,9 @@ msgid "&Unmount '%1'"
 msgstr "&Dismonter «%1»"
 
 #: ../kfile/kfileplacesmodel.cpp:727
-#, kde-format
-msgid "An error occurred while accessing '%1', the system said: %2"
+#, fuzzy, kde-format
+#| msgid "An error occurred while accessing '%1', the system said: %2"
+msgid "An error occurred while accessing '%1', the system responded: %2"
 msgstr ""
 "Åk n' a nén stî come dji sayive d' acceder a «%1», li sistinme a dit: %2"
 
