@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: processui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-04-16 15:50+0200\n"
+"POT-Creation-Date: 2008-04-24 01:46+0200\n"
 "PO-Revision-Date: 2008-01-02 18:24+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon\n"
@@ -26,10 +26,10 @@ msgstr ""
 #: DisplayProcessDlg.cpp:45
 #, kde-format
 msgid ""
-"The program '%1' (Pid: %2) is being monitored for input and output through "
+"The program '%1' (PID: %2) is being monitored for input and output through "
 "any file descriptor (stdin, stdout, stderr, open files, network connections, "
-"etc).  Data being written by the process is shown in red and data being read "
-"by the process is shown in blue."
+"etc.).  Data being written by the process is shown in red and data being "
+"read by the process is shown in blue."
 msgstr ""
 
 #: DisplayProcessDlg.cpp:47 DisplayProcessDlg.cpp:82 DisplayProcessDlg.cpp:91
@@ -111,7 +111,9 @@ msgid "Hangup (HUP)"
 msgstr "Leyî pinde (HUP)"
 
 #: ksysguardprocesslist.cpp:158
-msgid "Interupt (INT)"
+#, fuzzy
+#| msgid "Interupt (INT)"
+msgid "Interrupt (INT)"
 msgstr "Sitater (INT)"
 
 #: ksysguardprocesslist.cpp:159
@@ -157,19 +159,27 @@ msgid "Display Units"
 msgstr "Håyner unités"
 
 #: ksysguardprocesslist.cpp:531
-msgid "KiloBytes"
+#, fuzzy
+#| msgid "KiloBytes"
+msgid "Kilobytes"
 msgstr "KiloBites"
 
 #: ksysguardprocesslist.cpp:536
-msgid "MegaBytes"
+#, fuzzy
+#| msgid "MegaBytes"
+msgid "Megabytes"
 msgstr "MegaBites"
 
 #: ksysguardprocesslist.cpp:541
-msgid "GigaBytes"
+#, fuzzy
+#| msgid "GigaBytes"
+msgid "Gigabytes"
 msgstr "GigaBites"
 
 #: ksysguardprocesslist.cpp:736 ksysguardprocesslist.cpp:969
-msgid "You need to select a process first."
+#, fuzzy
+#| msgid "You need to select a process first."
+msgid "You must select a process first."
 msgstr "Vos dvoz aprume tchoezi on processus."
 
 #: ksysguardprocesslist.cpp:813
@@ -179,15 +189,23 @@ msgstr ""
 "Vos n' avoz nén d' droets assez po candjî l' programeu d' CPU. Dj' abandene."
 
 #: ksysguardprocesslist.cpp:821
+#, fuzzy
+#| msgid ""
+#| "You do not have sufficient privileges to change the CPU priority.  "
+#| "Aborting"
 msgid ""
-"You do not have sufficient privileges to change the CPU priority.  Aborting"
+"You do not have sufficient privileges to change the CPU priority. Aborting"
 msgstr ""
 "Vos n' avoz nén d' droets assez po candjî l' prumiristé d' CPU. Dj' abandene."
 
 #: ksysguardprocesslist.cpp:827
+#, fuzzy
+#| msgid ""
+#| "You do not have sufficient privileges to change the IO scheduler and "
+#| "priority. Aborting."
 msgid ""
 "You do not have sufficient privileges to change the IO scheduler and "
-"priority. Aborting."
+"priority. Aborting"
 msgstr ""
 "Vos n' avoz nén d' droets assez po candjî l' programeu eyet l' prumiristé d' "
 "Intrêye-Rexhowe (IO). Dj' abandene."
@@ -239,7 +257,7 @@ msgstr "Normå"
 #. i18n: file DisplayProcessUi.ui line 28
 #: rc.cpp:6
 msgid ""
-"Interpret output as containing VT100 commands. For based console prgrams."
+"Interpret output as containing VT100 commands. For console-based programs."
 msgstr ""
 
 #. i18n: tag string
@@ -259,7 +277,7 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file DisplayProcessUi.ui line 44
 #: rc.cpp:15
-msgid "Show the ouput from processes launched by this process"
+msgid "Show the output from processes launched by this process."
 msgstr ""
 
 #. i18n: tag string
@@ -284,9 +302,9 @@ msgstr ""
 #. i18n: file DisplayProcessUi.ui line 65
 #: rc.cpp:27
 msgid ""
-"Stop reading the output from the process  This will cause the process to "
-"block, effectivey pausing it  The process can be resumed by resuming, by "
-"detaching or by closing the dialog"
+"Stop reading the output from the process. This will cause the process to be "
+"blocked, effectively pausing it. The process can be resumed by resuming, "
+"detaching or closing the dialog."
 msgstr ""
 
 #. i18n: tag string
@@ -310,7 +328,9 @@ msgstr "&Touwer processus"
 #. i18n: tag string
 #. i18n: file ProcessWidgetUI.ui line 55
 #: rc.cpp:45
-msgid " Quick search"
+#, fuzzy
+#| msgid " Quick search"
+msgid "Quick search"
 msgstr "Trover raddimint"
 
 #. i18n: tag string
@@ -509,7 +529,7 @@ msgid ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\">Process will run whenever "
-"runnable.  Higher priority that Normal or Batch.  No timeslicing.</p></"
+"runnable.  Higher priority than Normal or Batch.  No timeslicing.</p></"
 "body></html>"
 msgstr ""
 
@@ -555,7 +575,7 @@ msgid ""
 "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\">Processes priority is "
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Process's priority is "
 "based on the CPU priority</p></body></html>"
 msgstr ""
 
@@ -805,7 +825,7 @@ msgid ""
 msgstr ""
 
 #: ProcessModel.cc:558
-msgid "<qt>The command that this process was launched with</qt>"
+msgid "<qt>The command with which this process was launched</qt>"
 msgstr ""
 
 #: ProcessModel.cc:560
@@ -822,7 +842,7 @@ msgid "Login Name: %1<br/>"
 msgstr "No d' elodjaedje: %1<br/>"
 
 #: ProcessModel.cc:647
-msgid "This user is not recognised for some reason"
+msgid "This user is not recognized for some reason."
 msgstr ""
 
 #: ProcessModel.cc:650
@@ -910,7 +930,7 @@ msgstr ""
 #: ProcessModel.cc:833
 msgid ""
 "<b>KThreadd</b> manages kernel threads. The children processes run in the "
-"kernel, controlling hard disk access etc.<br/>"
+"kernel, controlling hard disk access, etc.<br/>"
 msgstr ""
 
 #: ProcessModel.cc:835
@@ -1049,8 +1069,12 @@ msgid "RSS Memory usage: %1"
 msgstr "Eployaedje memwere RSS: %1"
 
 #: ProcessModel.cc:949
+#, fuzzy
+#| msgid ""
+#| "<qt>Your system does not seem to have this information for us to read, "
+#| "sorry.</qt>"
 msgid ""
-"<qt>Your system does not seem to have this information for us to read, sorry."
+"<qt>Your system does not seem to have this information available to be read."
 "</qt>"
 msgstr ""
 "<qt>Vosse sistinme ni shonne aveur pont d' informåcion po nsôte a lére, "
@@ -1078,13 +1102,13 @@ msgstr "No d' uzeu"
 
 #: ProcessModel.cc:1154
 msgctxt "process heading"
-msgid "Pid"
-msgstr "Pid"
+msgid "PID"
+msgstr ""
 
 #: ProcessModel.cc:1155
 msgctxt "process heading"
-msgid "Tty"
-msgstr "Tty"
+msgid "TTY"
+msgstr ""
 
 #: ProcessModel.cc:1156
 msgctxt "process heading"
@@ -1123,20 +1147,37 @@ msgid "Window Title"
 msgstr "Tite purnea"
 
 #: ProcessModel.cc:1229
-#, kde-format
-msgid "%1 k"
+#, fuzzy, kde-format
+#| msgid "%1 k"
+msgid "%1 K"
 msgstr "%1 k"
 
 #: ProcessModel.cc:1231
-#, kde-format
-msgid "%1 m"
-msgstr "%1 m"
+#, fuzzy, kde-format
+#| msgid "%1 k"
+msgid "%1 M"
+msgstr "%1 k"
 
 #: ProcessModel.cc:1233
-#, kde-format
-msgid "%1 g"
-msgstr "%1 g"
+#, fuzzy, kde-format
+#| msgid "%1 k"
+msgid "%1 G"
+msgstr "%1 k"
 
 #: ReniceDlg.cc:39
 msgid "Renice Process"
 msgstr "Rifé l' nice do processus"
+
+#~ msgctxt "process heading"
+#~ msgid "Pid"
+#~ msgstr "Pid"
+
+#~ msgctxt "process heading"
+#~ msgid "Tty"
+#~ msgstr "Tty"
+
+#~ msgid "%1 m"
+#~ msgstr "%1 m"
+
+#~ msgid "%1 g"
+#~ msgstr "%1 g"
