@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kopete\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-09-14 09:47+0200\n"
+"POT-Creation-Date: 2008-09-15 09:41+0200\n"
 "PO-Revision-Date: 2008-07-18 22:45+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -241,64 +241,43 @@ msgstr "Disraloyî"
 msgid "Unknown"
 msgstr "Nén cnoxhou"
 
-#: libkopete/kopetetransfermanager.cpp:142
+#: libkopete/kopetetransfermanager.cpp:144
 msgid "Copying"
 msgstr "Copiaedje"
 
-#: libkopete/kopetetransfermanager.cpp:143
+#: libkopete/kopetetransfermanager.cpp:145
 msgid "Source"
 msgstr "Sourdant"
 
-#: libkopete/kopetetransfermanager.cpp:144
+#: libkopete/kopetetransfermanager.cpp:146
 msgid "Destination"
 msgstr "Destinåcion"
 
-#: libkopete/kopetetransfermanager.cpp:154
+#: libkopete/kopetetransfermanager.cpp:156
 #, kde-format
 msgid "File transfer %1 completed. :)"
 msgstr "Li transfer di fitchî %1 est tot fwait. :)"
 
-#: libkopete/kopetetransfermanager.cpp:163
+#: libkopete/kopetetransfermanager.cpp:165
 #, kde-format
 msgid "File transfer %1 failed. :("
 msgstr "Li transfer di fitchî %1 a fwait berwete. :("
 
-#: libkopete/kopetetransfermanager.cpp:171
+#: libkopete/kopetetransfermanager.cpp:173
 #, kde-format
 msgid "You cancelled file transfer %1"
 msgstr "Vos avoz rinoncî å transfer di fitchî %1"
 
-#: libkopete/kopetetransfermanager.cpp:178
+#: libkopete/kopetetransfermanager.cpp:180
 #, kde-format
 msgid "File transfer %1 cancelled."
 msgstr "Li transfer di fitchî %1 a fwait berwete."
 
-#: libkopete/kopetetransfermanager.cpp:227
+#: libkopete/kopetetransfermanager.cpp:229
 msgid "<unknown>"
 msgstr "<nén cnoxhou>"
 
-#: libkopete/kopetetransfermanager.cpp:257
-msgid "File Transfer"
-msgstr "Transfer di fitchîs"
-
-#: libkopete/kopetetransfermanager.cpp:268
-msgid "You must provide a valid local filename"
-msgstr "Vos dvoz dner on no d' fitchî locå valide"
-
-#: libkopete/kopetetransfermanager.cpp:274
-#, kde-format
-msgid ""
-"The file '%1' already exists.\n"
-"Do you want to overwrite it ?"
-msgstr ""
-"Li fitchî «%1» egzistêye dedja.\n"
-"El voloz vs sipotchî?"
-
-#: libkopete/kopetetransfermanager.cpp:275
-msgid "Overwrite File"
-msgstr "Sipotchî l' fitchî"
-
-#: libkopete/kopetetransfermanager.cpp:333 protocols/qq/qqcontact.cpp:418
+#: libkopete/kopetetransfermanager.cpp:321 protocols/qq/qqcontact.cpp:418
 #: protocols/msn/msncontact.cpp:615 protocols/gadu/gaducontact.cpp:100
 #: protocols/oscar/oscarcontact.cpp:350
 #: protocols/jabber/jabbercontact.cpp:1054
@@ -307,12 +286,57 @@ msgstr "Sipotchî l' fitchî"
 msgid "Kopete File Transfer"
 msgstr "Transfer di fitchîs d' Kopete"
 
-#: libkopete/kopetetransfermanager.cpp:354
+#: libkopete/kopetetransfermanager.cpp:342
 msgid ""
 "Sorry, sending files which are not stored locally is not yet supported by "
 "this protocol.\n"
 "Please copy this file to your computer and try again."
 msgstr ""
+
+#: libkopete/kopetetransfermanager.cpp:365
+#: libkopete/kopetetransfermanager.cpp:414
+msgid "File Transfer"
+msgstr "Transfer di fitchîs"
+
+#: libkopete/kopetetransfermanager.cpp:371
+msgid "You must provide a valid local filename"
+msgstr "Vos dvoz dner on no d' fitchî locå valide"
+
+#: libkopete/kopetetransfermanager.cpp:380
+#, fuzzy
+msgid "You do not have permission to write to selected file"
+msgstr "Vos n' avoz nén les droets po-z aveur accès å protocole %1."
+
+#: libkopete/kopetetransfermanager.cpp:384
+#, kde-format
+msgid ""
+"The file '%1' already exists.\n"
+"Do you want to overwrite it ?"
+msgstr ""
+"Li fitchî «%1» egzistêye dedja.\n"
+"El voloz vs sipotchî?"
+
+#: libkopete/kopetetransfermanager.cpp:385
+msgid "Overwrite File"
+msgstr "Sipotchî l' fitchî"
+
+#: libkopete/kopetetransfermanager.cpp:394
+#: libkopete/kopetetransfermanager.cpp:427
+#, kde-format
+msgid "The directory %1 does not exist"
+msgstr ""
+
+#: libkopete/kopetetransfermanager.cpp:399
+#: libkopete/kopetetransfermanager.cpp:432
+#, fuzzy
+msgid "You do not have permission to write to selected directory"
+msgstr "Vos n' avoz nén les droets po-z aveur accès å protocole %1."
+
+#: libkopete/kopetetransfermanager.cpp:420
+#, fuzzy
+#| msgid "You must provide a valid local filename"
+msgid "You must provide a valid local directory"
+msgstr "Vos dvoz dner on no d' fitchî locå valide"
 
 #: libkopete/tests/avatarselectortest_program.cpp:24
 msgid "KopeteAvatarSelectorWidgetTest"
@@ -17470,7 +17494,7 @@ msgstr "axhlåve"
 #: protocols/oscar/aim/aimstatusmanager.cpp:87
 #: protocols/oscar/icq/ui/icqeditaccountwidget.cpp:305
 #: protocols/oscar/icq/icqprotocol.cpp:121
-#: protocols/oscar/oscaraccount.cpp:1079 protocols/yahoo/yahooprotocol.cpp:75
+#: protocols/oscar/oscaraccount.cpp:1083 protocols/yahoo/yahooprotocol.cpp:75
 #, fuzzy
 msgid "ICQ"
 msgstr "ICO"
@@ -17484,7 +17508,7 @@ msgstr "Vos dvoz mete li sopoirt dins l' lijheu po continouwer"
 
 #: protocols/oscar/aim/aimprotocol.cpp:181
 #: protocols/oscar/icq/icqstatusmanager.cpp:94
-#: protocols/oscar/oscaraccount.cpp:1079 protocols/yahoo/yahooprotocol.cpp:74
+#: protocols/oscar/oscaraccount.cpp:1083 protocols/yahoo/yahooprotocol.cpp:74
 #, fuzzy
 msgid "AIM"
 msgstr "AM"
@@ -19009,104 +19033,104 @@ msgstr "Tchoezi l' ecôdaedje"
 msgid "Default"
 msgstr "Prémetou"
 
-#: protocols/oscar/oscaraccount.cpp:278 protocols/oscar/oscaraccount.cpp:775
-#: protocols/oscar/oscaraccount.cpp:781
+#: protocols/oscar/oscaraccount.cpp:278 protocols/oscar/oscaraccount.cpp:779
+#: protocols/oscar/oscaraccount.cpp:785
 msgid "Buddies"
 msgstr "Soçons"
 
-#: protocols/oscar/oscaraccount.cpp:564
+#: protocols/oscar/oscaraccount.cpp:568
 #, fuzzy
 msgid "ICQ Web Express"
 msgstr "Sititchî ratourneure"
 
-#: protocols/oscar/oscaraccount.cpp:566
+#: protocols/oscar/oscaraccount.cpp:570
 #, fuzzy
 msgid "ICQ Email Express"
 msgstr "Copyî adresse emile"
 
-#: protocols/oscar/oscaraccount.cpp:894 protocols/oscar/oscaraccount.cpp:911
+#: protocols/oscar/oscaraccount.cpp:898 protocols/oscar/oscaraccount.cpp:915
 #, fuzzy, kde-format
 msgctxt "account has been disconnected"
 msgid "%1 disconnected"
 msgstr "%s disraloyî"
 
-#: protocols/oscar/oscaraccount.cpp:935
+#: protocols/oscar/oscaraccount.cpp:939
 msgid ""
 "There was an error in the protocol handling; it was not fatal, so you will "
 "not be disconnected."
 msgstr ""
 
-#: protocols/oscar/oscaraccount.cpp:937
+#: protocols/oscar/oscaraccount.cpp:941
 msgid ""
 "There was an error in the protocol handling; automatic reconnection "
 "occurring."
 msgstr ""
 
-#: protocols/oscar/oscaraccount.cpp:939
+#: protocols/oscar/oscaraccount.cpp:943
 msgid "OSCAR Protocol error"
 msgstr ""
 
-#: protocols/oscar/oscaraccount.cpp:1080
+#: protocols/oscar/oscaraccount.cpp:1084
 #, fuzzy
 msgctxt "ICQ user id"
 msgid "UIN"
 msgstr "UIN"
 
-#: protocols/oscar/oscaraccount.cpp:1080
+#: protocols/oscar/oscaraccount.cpp:1084
 #, fuzzy
 msgctxt "AIM user id"
 msgid "screen name"
 msgstr "_No d' uzeu:"
 
-#: protocols/oscar/oscaraccount.cpp:1090
+#: protocols/oscar/oscaraccount.cpp:1094
 #, kde-format
 msgid ""
 "You have logged in more than once with the same %1, account %2 is now "
 "disconnected."
 msgstr ""
 
-#: protocols/oscar/oscaraccount.cpp:1096
+#: protocols/oscar/oscaraccount.cpp:1100
 #, kde-format
 msgid ""
 "Sign on failed because either your %1 or password are invalid. Please check "
 "your settings for account %2."
 msgstr ""
 
-#: protocols/oscar/oscaraccount.cpp:1104
+#: protocols/oscar/oscaraccount.cpp:1108
 #, fuzzy, kde-format
 msgid "The %1 service is temporarily unavailable. Please try again later."
 msgstr ""
 "Les siervices waibe di Mandriva èn sont nén disponibes pol moumint\n"
 "Rissayîz pus tård s' i vs plait"
 
-#: protocols/oscar/oscaraccount.cpp:1109
+#: protocols/oscar/oscaraccount.cpp:1113
 #, kde-format
 msgid ""
 "Could not sign on to %1 with account %2 because the password was incorrect."
 msgstr ""
 
-#: protocols/oscar/oscaraccount.cpp:1114
+#: protocols/oscar/oscaraccount.cpp:1118
 #, kde-format
 msgid "Could not sign on to %1 with nonexistent account %2."
 msgstr ""
 
-#: protocols/oscar/oscaraccount.cpp:1118
+#: protocols/oscar/oscaraccount.cpp:1122
 #, kde-format
 msgid "Sign on to %1 failed because your account %2 expired."
 msgstr ""
 
-#: protocols/oscar/oscaraccount.cpp:1122
+#: protocols/oscar/oscaraccount.cpp:1126
 #, kde-format
 msgid "Sign on to %1 failed because your account %2 is currently suspended."
 msgstr ""
 
-#: protocols/oscar/oscaraccount.cpp:1128
+#: protocols/oscar/oscaraccount.cpp:1132
 #, kde-format
 msgid ""
 "Could not sign on to %1 as there are too many clients from the same computer."
 msgstr ""
 
-#: protocols/oscar/oscaraccount.cpp:1134
+#: protocols/oscar/oscaraccount.cpp:1138
 #, kde-format
 msgid ""
 "Account %1 was blocked on the %2 server for sending messages too quickly. "
@@ -19114,7 +19138,7 @@ msgid ""
 "wait even longer."
 msgstr ""
 
-#: protocols/oscar/oscaraccount.cpp:1143
+#: protocols/oscar/oscaraccount.cpp:1147
 #, kde-format
 msgid ""
 "Account %1 was blocked on the %2 server for reconnecting too quickly. Wait "
@@ -19122,19 +19146,19 @@ msgid ""
 "even longer."
 msgstr ""
 
-#: protocols/oscar/oscaraccount.cpp:1155 protocols/oscar/oscaraccount.cpp:1175
+#: protocols/oscar/oscaraccount.cpp:1159 protocols/oscar/oscaraccount.cpp:1179
 #, kde-format
 msgid "Sign on to %1 with your account %2 failed."
 msgstr ""
 
-#: protocols/oscar/oscaraccount.cpp:1162
+#: protocols/oscar/oscaraccount.cpp:1166
 #, kde-format
 msgid ""
 "The %1 server thinks the client you are using is too old. Please report this "
 "as a bug at http://bugs.kde.org"
 msgstr ""
 
-#: protocols/oscar/oscaraccount.cpp:1168
+#: protocols/oscar/oscaraccount.cpp:1172
 #, kde-format
 msgid ""
 "Account %1 was disabled on the %2 server because of your age (under than 13)."
@@ -19169,36 +19193,36 @@ msgstr "Cliyint"
 msgid "Protocol Version"
 msgstr "Modêye do protocole"
 
-#: protocols/oscar/liboscar/tasks/filetransfertask.cpp:291
+#: protocols/oscar/liboscar/tasks/filetransfertask.cpp:296
 msgid "file is empty: "
 msgstr "li fitchî est vude: "
 
-#: protocols/oscar/liboscar/tasks/filetransfertask.cpp:547
+#: protocols/oscar/liboscar/tasks/filetransfertask.cpp:552
 #, fuzzy
 msgid "Bad Request"
 msgstr "Si dmandé"
 
-#: protocols/oscar/liboscar/tasks/filetransfertask.cpp:550
+#: protocols/oscar/liboscar/tasks/filetransfertask.cpp:555
 #, fuzzy
 msgid "Request Timed Out"
 msgstr "Fonte dimandêye"
 
-#: protocols/oscar/liboscar/tasks/filetransfertask.cpp:553
+#: protocols/oscar/liboscar/tasks/filetransfertask.cpp:558
 msgid "Acceptance Period Timed Out"
 msgstr ""
 
-#: protocols/oscar/liboscar/tasks/filetransfertask.cpp:556
+#: protocols/oscar/liboscar/tasks/filetransfertask.cpp:561
 #, fuzzy
 msgid "Unknown Error: "
 msgstr "Aroke nén cnoxhowe"
 
-#: protocols/oscar/liboscar/tasks/filetransfertask.cpp:629
+#: protocols/oscar/liboscar/tasks/filetransfertask.cpp:664
 #, fuzzy
 msgid "missing IP or port"
 msgstr "Passete d' abagaedje mancante"
 
-#: protocols/oscar/liboscar/tasks/filetransfertask.cpp:720
-#: protocols/oscar/liboscar/tasks/filetransfertask.cpp:730
+#: protocols/oscar/liboscar/tasks/filetransfertask.cpp:755
+#: protocols/oscar/liboscar/tasks/filetransfertask.cpp:765
 #, fuzzy
 msgid "Timeout"
 msgstr "Tårdjaedje:"
