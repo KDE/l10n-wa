@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-09-30 09:42+0200\n"
+"POT-Creation-Date: 2008-10-01 10:40+0200\n"
 "PO-Revision-Date: 2008-07-21 22:02+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -133,15 +133,13 @@ msgid "&Filtering"
 msgstr "&Passetes"
 
 #: accountdialog.cpp:781
-#, fuzzy
-#| msgid "<none>"
 msgctxt "Placeholder for the case that there is no folder."
-msgid "<none>"
-msgstr "<nouk>"
+msgid "<placeholder>none</placeholder>"
+msgstr ""
 
 #: accountdialog.cpp:801 accountdialog.cpp:808 kmfoldercachedimap.cpp:262
-#: kmfoldercachedimap.cpp:2188 kmfolderimap.cpp:208 kmfolderimap.cpp:923
-#: kmkernel.cpp:1297 subscriptiondialog.cpp:167
+#: kmfoldercachedimap.cpp:2188 kmfolderimap.cpp:208 kmfolderimap.cpp:924
+#: kmkernel.cpp:1299 subscriptiondialog.cpp:167
 msgid "inbox"
 msgstr "dierins emiles"
 
@@ -825,17 +823,23 @@ msgid "Answer: "
 msgstr "Response:"
 
 #: callback.cpp:76
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Declined: %1"
+msgctxt "Not able to attend."
 msgid "Declined: %1"
 msgstr "Ridjeté: %1 "
 
 #: callback.cpp:78
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Tentative: %1"
+msgctxt "Unsure if it is possible to attend."
 msgid "Tentative: %1"
 msgstr "Esprouve: %1"
 
 #: callback.cpp:80
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Accepted: %1"
+msgctxt "Accepted the invitation."
 msgid "Accepted: %1"
 msgstr "Accepté: %1"
 
@@ -2576,7 +2580,7 @@ msgstr ""
 msgid "Rename Favorite..."
 msgstr "Rilomer favori..."
 
-#: favoritefolderview.cpp:347 kmfoldertree.cpp:1193 kmmainwidget.cpp:2862
+#: favoritefolderview.cpp:347 kmfoldertree.cpp:1193 kmmainwidget.cpp:2863
 msgid "&Assign Shortcut..."
 msgstr "&Aroyî rascourti..."
 
@@ -2937,6 +2941,9 @@ msgid "No Subject"
 msgstr "Nou sudjet"
 
 #: headerlistquicksearch.cpp:60
+#, fuzzy
+#| msgid "Search"
+msgctxt "Search for messages."
 msgid "Search"
 msgstr "Trover"
 
@@ -3900,16 +3907,22 @@ msgid "Failed to add message:\n"
 msgstr ""
 
 #: kmacctimap.cpp:304
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Checking account: %1"
+msgctxt "@info:status"
 msgid "Checking account: %1"
 msgstr "Dji verifeye l' conte: %1"
 
-#: kmacctimap.cpp:401 kmfolderimap.cpp:864
+#: kmacctimap.cpp:402
+#, fuzzy
+#| msgid " completed"
+msgctxt "@info:status Number of emails retrieved."
 msgid " completed"
 msgstr " fini"
 
-#: kmacctimap.cpp:606 kmheaders.cpp:1323
+#: kmacctimap.cpp:608
 #, fuzzy
+msgctxt "@info:status"
 msgid "Unable to process messages: "
 msgstr "Dji n' a savou drovi l' fitchî %1"
 
@@ -4032,7 +4045,7 @@ msgstr ""
 #: kmailicalifaceimpl.cpp:1753
 #, kde-format
 msgid ""
-"<qt>KMail found the following groupware folders in %1 andneeds to perform "
+"<qt>KMail found the following groupware folders in %1 and needs to perform "
 "the following operations: %2<nl/>If you do not want this, cancel and the "
 "IMAP resource will be disabled</qt>"
 msgstr ""
@@ -4092,11 +4105,11 @@ msgid "File <filename>%1</filename> exists.<nl/>Do you want to replace it?"
 msgstr ""
 "Li fitchî <filename>%1</filename> egzistêye dedja.<nl/>El voloz vs replaecî?"
 
-#: kmcommands.cpp:643 kmcommands.cpp:952 kmkernel.cpp:1881
+#: kmcommands.cpp:643 kmcommands.cpp:952 kmkernel.cpp:1883
 msgid "Save to File"
 msgstr "Schaper en on fitchî"
 
-#: kmcommands.cpp:643 kmcommands.cpp:952 kmkernel.cpp:1881
+#: kmcommands.cpp:643 kmcommands.cpp:952 kmkernel.cpp:1883
 msgid "&Replace"
 msgstr "&Replaecî"
 
@@ -4108,7 +4121,7 @@ msgstr "Messaedje e peur tecse"
 msgid "The message was removed while saving it. It has not been saved."
 msgstr ""
 
-#: kmcommands.cpp:951 kmkernel.cpp:1880
+#: kmcommands.cpp:951 kmkernel.cpp:1882
 #, kde-format
 msgid ""
 "File %1 exists.\n"
@@ -4154,11 +4167,11 @@ msgid ""
 "\n"
 msgstr ""
 
-#: kmcommands.cpp:1714 kmheaders.cpp:1459
+#: kmcommands.cpp:1714 kmheaders.cpp:1460
 msgid "Filtering messages"
 msgstr "Dji passe les messaedjes al passete"
 
-#: kmcommands.cpp:1723 kmheaders.cpp:1467
+#: kmcommands.cpp:1723 kmheaders.cpp:1468
 #, kde-format
 msgid "Filtering message %1 of %2"
 msgstr "Dji passe li messaedje %1 di %2 al passete"
@@ -4464,7 +4477,7 @@ msgstr "&Sititchî on Fitchî..."
 msgid "&Insert File Recent"
 msgstr "&Sititchî on fitchî eployî dierinnmint"
 
-#: kmcomposewin.cpp:1088 kmmainwidget.cpp:2729
+#: kmcomposewin.cpp:1088 kmmainwidget.cpp:2730
 msgid "&Address Book"
 msgstr "Cal&pin d' Adresses"
 
@@ -4892,7 +4905,7 @@ msgid ""
 "until you go online."
 msgstr ""
 
-#: kmcomposewin.cpp:3382 kmkernel.cpp:1165
+#: kmcomposewin.cpp:3382 kmkernel.cpp:1167
 msgid "Online/Offline"
 msgstr "Raloyî/disraloyî"
 
@@ -5803,11 +5816,11 @@ msgid ""
 "another folder now?</p>"
 msgstr ""
 
-#: kmfoldercachedimap.cpp:3131 kmkernel.cpp:1771
+#: kmfoldercachedimap.cpp:3131 kmkernel.cpp:1773
 msgid "Move"
 msgstr "Bodjî"
 
-#: kmfoldercachedimap.cpp:3131 kmkernel.cpp:1773
+#: kmfoldercachedimap.cpp:3131 kmkernel.cpp:1775
 msgid "Do Not Move"
 msgstr "En nén bodjî"
 
@@ -6028,45 +6041,52 @@ msgstr "Åk n' a nén stî come dj' eberwetéve li ridant"
 msgid "Destination folder: %1"
 msgstr "Ridant &såme:"
 
-#: kmfolderimap.cpp:1082
+#: kmfolderimap.cpp:865
+#, fuzzy
+#| msgid " completed"
+msgctxt "@info:status Number of folders for which update is completed."
+msgid " completed"
+msgstr " fini"
+
+#: kmfolderimap.cpp:1083
 msgid "checking"
 msgstr ""
 
-#: kmfolderimap.cpp:1143
+#: kmfolderimap.cpp:1144
 #, fuzzy
 msgid "Error while querying the server status."
 msgstr "Åk n' a nén stî come dj' eberwetéve li messaedje"
 
-#: kmfolderimap.cpp:1263
+#: kmfolderimap.cpp:1264
 #, fuzzy
 msgid "Retrieving message status"
 msgstr "&Wårder les messaedjes avou les sinateures"
 
-#: kmfolderimap.cpp:1281 kmfolderimap.cpp:1385
+#: kmfolderimap.cpp:1282 kmfolderimap.cpp:1386
 #, fuzzy
 msgid "Retrieving messages"
 msgstr "Disfacer les Messaedjes"
 
-#: kmfolderimap.cpp:1310
+#: kmfolderimap.cpp:1311
 #, kde-format
 msgid "Error while listing the contents of the folder %1."
 msgstr ""
 
-#: kmfolderimap.cpp:1735
+#: kmfolderimap.cpp:1736
 #, fuzzy
 msgid "Error while retrieving messages."
 msgstr "Åk n' a nén stî come dj' eberwetéve li messaedje"
 
-#: kmfolderimap.cpp:1803
+#: kmfolderimap.cpp:1804
 #, fuzzy
 msgid "Error while creating a folder."
 msgstr "Åk n' a nén stî come dj' eberwetéve li ridant"
 
-#: kmfolderimap.cpp:2171
+#: kmfolderimap.cpp:2172
 msgid "updating message counts"
 msgstr ""
 
-#: kmfolderimap.cpp:2195
+#: kmfolderimap.cpp:2196
 #, fuzzy
 msgid "Error while getting folder information."
 msgstr "Åk n' a nén stî come dj' eberwetéve li ridant"
@@ -6206,14 +6226,14 @@ msgid ""
 "Please move the file out of the way."
 msgstr ""
 
-#: kmfoldermgr.cpp:146 kmkernel.cpp:1247
+#: kmfoldermgr.cpp:146 kmkernel.cpp:1249
 #, kde-format
 msgid ""
 "The permissions of the folder '%1' are incorrect;\n"
 "please make sure that you can view and modify the content of this folder."
 msgstr ""
 
-#: kmfoldermgr.cpp:156 kmkernel.cpp:1239
+#: kmfoldermgr.cpp:156 kmkernel.cpp:1241
 #, kde-format
 msgid ""
 "KMail could not create folder '%1';\n"
@@ -6231,7 +6251,7 @@ msgstr ""
 msgid "Could Not Create Folder"
 msgstr "Dji n' a nén parvinou a fé l' ridant"
 
-#: kmfoldermgr.cpp:322 kmkernel.cpp:1555
+#: kmfoldermgr.cpp:322 kmkernel.cpp:1557
 #, kde-format
 msgid ""
 "Cannot create file `%1' in %2.\n"
@@ -6281,11 +6301,11 @@ msgstr "&Copyî dins"
 msgid "Do Not Go To"
 msgstr ""
 
-#: kmfoldertree.cpp:1095 kmmainwidget.cpp:2849
+#: kmfoldertree.cpp:1095 kmmainwidget.cpp:2850
 msgid "&New Folder..."
 msgstr "&Novea ridant..."
 
-#: kmfoldertree.cpp:1106 kmmainwidget.cpp:2684
+#: kmfoldertree.cpp:1106 kmmainwidget.cpp:2685
 msgid "Check &Mail"
 msgstr "Waitî s' i gn a des e&miles"
 
@@ -6317,7 +6337,7 @@ msgstr "Locå abounmint..."
 msgid "Refresh Folder List"
 msgstr "Rafrister l' djivêye des ridants"
 
-#: kmfoldertree.cpp:1174 kmmainwidget.cpp:4013
+#: kmfoldertree.cpp:1174 kmmainwidget.cpp:4015
 msgid "&Troubleshoot IMAP Cache..."
 msgstr ""
 
@@ -6356,27 +6376,27 @@ msgstr "Bodjî e ci ridant ci"
 msgid "Copy to This Folder"
 msgstr "Copyî e ci ridant ci"
 
-#: kmfoldertree.cpp:1997
+#: kmfoldertree.cpp:1998
 #, fuzzy, kde-format
 msgid ""
 "<qt>Cannot move or copy folder <b>%1</b> here because a folder with the same "
 "name already exists.</qt>"
 msgstr "Dji n' sai fé l' ridant '%1' ca il egzistêye dedja."
 
-#: kmfoldertree.cpp:2006
+#: kmfoldertree.cpp:2007
 #, kde-format
 msgid ""
 "<qt>Cannot move or copy folder <b>%1</b> because it is not completely copied "
 "itself.</qt>"
 msgstr ""
 
-#: kmfoldertree.cpp:2014
+#: kmfoldertree.cpp:2015
 #, fuzzy, kde-format
 msgid ""
 "<qt>Cannot move or copy folder <b>%1</b> into a subfolder below itself.</qt>"
 msgstr "Dji n' sai fé l' ridant '%1' ca il egzistêye dedja."
 
-#: kmfoldertree.cpp:2055
+#: kmfoldertree.cpp:2056
 msgid "Moving the selected folders is not possible"
 msgstr ""
 
@@ -6385,6 +6405,9 @@ msgid "Status"
 msgstr "Estat"
 
 #: kmheaders.cpp:145
+#, fuzzy
+#| msgid "Important"
+msgctxt "@action:inmenu Mark message as important."
 msgid "Important"
 msgstr "Impôrtant"
 
@@ -6417,7 +6440,10 @@ msgstr "Ecriptaedje"
 msgid "Receiver"
 msgstr "Riçuveu"
 
-#: kmheaders.cpp:210 kmheaders.cpp:790 kmheaders.cpp:2666
+#: kmheaders.cpp:210
+#, fuzzy
+#| msgid "Subject"
+msgctxt "@title:column Subject of message."
 msgid "Subject"
 msgstr "Sudjet"
 
@@ -6426,18 +6452,30 @@ msgstr "Sudjet"
 msgid "Sender"
 msgstr "Evoyeu"
 
-#: kmheaders.cpp:212 kmheaders.cpp:785 kmheaders.cpp:2661
+#: kmheaders.cpp:212 kmheaders.cpp:785 kmheaders.cpp:2662
 #: templatesinsertcommand.cpp:68 templatesinsertcommand.cpp:192
 msgid "Date"
 msgstr "Date"
 
-#: kmheaders.cpp:787 kmheaders.cpp:2663
+#: kmheaders.cpp:787 kmheaders.cpp:2664
 msgid "Date (Order of Arrival)"
 msgstr "Date (ôre d' arivêye)"
 
-#: kmheaders.cpp:792 kmheaders.cpp:2668
+#: kmheaders.cpp:790
+#, fuzzy
+#| msgid "Subject"
+msgctxt "@title:column Subject of email."
+msgid "Subject"
+msgstr "Sudjet"
+
+#: kmheaders.cpp:792 kmheaders.cpp:2669
 msgid " (Status)"
 msgstr " (Sitatut)"
+
+#: kmheaders.cpp:1323
+#, fuzzy
+msgid "Unable to process messages: "
+msgstr "Dji n' a savou drovi l' fitchî %1"
 
 #: kmheaders.cpp:1410
 #, kde-format
@@ -6451,34 +6489,40 @@ msgid "0 unsent"
 msgstr "0 nén evoyî"
 
 #: kmheaders.cpp:1412
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "1 unread"
+#| msgid_plural "%1 unread"
+msgctxt "Number of unread messages."
 msgid "1 unread"
 msgid_plural "%1 unread"
 msgstr[0] "1 nén léjhou"
 msgstr[1] "%1 nén léjhous"
 
-#: kmheaders.cpp:1412
+#: kmheaders.cpp:1413
+#, fuzzy
+#| msgid "0 unread"
+msgctxt "No unread messages."
 msgid "0 unread"
 msgstr "O nén léjhou"
 
-#: kmheaders.cpp:1414
+#: kmheaders.cpp:1415
 #, kde-format
 msgid "1 message, %2."
 msgid_plural "%1 messages, %2."
 msgstr[0] "1 messaedje, %2."
 msgstr[1] "%1 messaedjes, %2."
 
-#: kmheaders.cpp:1415
+#: kmheaders.cpp:1416
 msgid "0 messages"
 msgstr "0 messaedje"
 
-#: kmheaders.cpp:1417
+#: kmheaders.cpp:1418
 #, kde-format
 msgctxt "%1 = n messages, m unread."
 msgid "%1 Folder is read-only."
 msgstr "Li ridant %1 n' sait esse ki léjhou."
 
-#: kmheaders.cpp:1609
+#: kmheaders.cpp:1610
 #, kde-format
 msgid ""
 "<qt>Do you really want to delete the selected message?<br />Once deleted, it "
@@ -6489,137 +6533,144 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: kmheaders.cpp:1613
+#: kmheaders.cpp:1614
 msgid "Delete Messages"
 msgstr "Disfacer les messaedjes"
 
-#: kmheaders.cpp:1613
+#: kmheaders.cpp:1614
 msgid "Delete Message"
 msgstr "Disfacer l' messaedje"
 
-#: kmheaders.cpp:1639
+#: kmheaders.cpp:1640
 msgid "Messages deleted successfully."
 msgstr "Messaedjes disfacés comifåt."
 
-#: kmheaders.cpp:1639
+#: kmheaders.cpp:1640
 msgid "Messages moved successfully"
 msgstr "Messaedjes bodjîs comifåt"
 
-#: kmheaders.cpp:1662
+#: kmheaders.cpp:1663
 msgid "Deleting messages failed."
 msgstr "Li disfaçaedje des messaedjes a fwait berwete."
 
-#: kmheaders.cpp:1662
+#: kmheaders.cpp:1663
 msgid "Moving messages failed."
 msgstr "Li bodjaedje des messaedjes a fwait berwete."
 
-#: kmheaders.cpp:1665
+#: kmheaders.cpp:1666
 msgid "Deleting messages canceled."
 msgstr "Dj' a rnoncî a disfacé les messaedjes."
 
-#: kmheaders.cpp:1665
+#: kmheaders.cpp:1666
 msgid "Moving messages canceled."
 msgstr "Dj' a rnoncî a bodjî les messaedjes"
 
-#: kmheaders.cpp:2491 kmmainwidget.cpp:3098 kmreadermainwin.cpp:330
+#: kmheaders.cpp:2492 kmmainwidget.cpp:3099 kmreadermainwin.cpp:330
 #: searchwindow.cpp:839
 msgid "&Copy To"
 msgstr "&Copyî dvins"
 
-#: kmheaders.cpp:2495 kmheaders.cpp:2501 kmmainwidget.cpp:3095
+#: kmheaders.cpp:2496 kmheaders.cpp:2502 kmmainwidget.cpp:3096
 #: searchwindow.cpp:841
 msgid "&Move To"
 msgstr "&Bodjî dvins"
 
-#: kmheaders.cpp:2838 kmheaders.cpp:2878
+#: kmheaders.cpp:2667
+#, fuzzy
+#| msgid "Subject"
+msgctxt "@title:column Subject of the email."
+msgid "Subject"
+msgstr "Sudjet"
+
+#: kmheaders.cpp:2839 kmheaders.cpp:2879
 #, kde-format
 msgid ""
 "Failure modifying %1\n"
 "(No space left on device?)"
 msgstr ""
 
-#: kmkernel.cpp:671
+#: kmkernel.cpp:673
 msgid "Certificate Signature Request"
 msgstr ""
 
-#: kmkernel.cpp:674
+#: kmkernel.cpp:676
 #, fuzzy
 msgid "Please create a certificate from attachment and return to sender."
 msgstr "Fijhoz on conte po-z evoyî et s' rissayîz s' i vs plait."
 
-#: kmkernel.cpp:1131
+#: kmkernel.cpp:1133
 msgid "KMail is set to be offline; all network jobs are suspended"
 msgstr ""
 
-#: kmkernel.cpp:1142
+#: kmkernel.cpp:1144
 msgid "KMail is set to be online; all network jobs resumed"
 msgstr ""
 
-#: kmkernel.cpp:1163
+#: kmkernel.cpp:1165
 msgid "KMail is currently in offline mode. How do you want to proceed?"
 msgstr ""
 
-#: kmkernel.cpp:1166 kmmainwidget.cpp:2028
+#: kmkernel.cpp:1168 kmmainwidget.cpp:2029
 msgid "Work Online"
 msgstr "Ovrer raloyî"
 
-#: kmkernel.cpp:1167 kmmainwidget.cpp:2024
+#: kmkernel.cpp:1169 kmmainwidget.cpp:2025
 msgid "Work Offline"
 msgstr "Ovrer disraloyî"
 
-#: kmkernel.cpp:1302
+#: kmkernel.cpp:1304
 msgid "You do not have read/write permission to your inbox folder."
 msgstr ""
 
-#: kmkernel.cpp:1310
+#: kmkernel.cpp:1312
 msgid "outbox"
 msgstr "boesse di rexhowe"
 
-#: kmkernel.cpp:1312
+#: kmkernel.cpp:1314
 msgid "You do not have read/write permission to your outbox folder."
 msgstr ""
 
-#: kmkernel.cpp:1329
+#: kmkernel.cpp:1331
 msgid "sent-mail"
 msgstr "emiles evoyîs"
 
-#: kmkernel.cpp:1331
+#: kmkernel.cpp:1333
 msgid "You do not have read/write permission to your sent-mail folder."
 msgstr ""
 
-#: kmkernel.cpp:1338
+#: kmkernel.cpp:1340
 msgid "trash"
 msgstr "batch"
 
-#: kmkernel.cpp:1340
+#: kmkernel.cpp:1342
 msgid "You do not have read/write permission to your trash folder."
 msgstr ""
 
-#: kmkernel.cpp:1347
+#: kmkernel.cpp:1349
 msgid "drafts"
 msgstr "brouyons"
 
-#: kmkernel.cpp:1349
+#: kmkernel.cpp:1351
 msgid "You do not have read/write permission to your drafts folder."
 msgstr ""
 
-#: kmkernel.cpp:1356
+#: kmkernel.cpp:1358
 msgid "templates"
 msgstr "modeles"
 
-#: kmkernel.cpp:1358
+#: kmkernel.cpp:1360
 #, fuzzy
 msgid "You do not have read/write permission to your templates folder."
 msgstr ""
 "Vos n' avoz nén li permission di lere ci fitchî la\n"
 "%1"
 
-#: kmkernel.cpp:1425 searchwindow.cpp:256 searchwindow.cpp:481
+#: kmkernel.cpp:1427 searchwindow.cpp:256 searchwindow.cpp:481
 #: searchwindow.cpp:635
 msgid "Last Search"
 msgstr "dierin cweraedje"
 
-#: kmkernel.cpp:1746
+#: kmkernel.cpp:1748
 #, kde-format
 msgctxt "%1-%3 is the application name, %4-%7 are folder path"
 msgid ""
@@ -6629,7 +6680,7 @@ msgid ""
 "p><p><strong>Would you like %3 to move the mail files now?</strong></p></qt>"
 msgstr ""
 
-#: kmkernel.cpp:1760
+#: kmkernel.cpp:1762
 #, kde-format
 msgctxt "%1-%3 is the application name, %4-%6 are folder path"
 msgid ""
@@ -6638,15 +6689,15 @@ msgid ""
 "<p><strong>Would you like %3 to move the mail files now?</strong></p></qt>"
 msgstr ""
 
-#: kmkernel.cpp:1770
+#: kmkernel.cpp:1772
 msgid "Migrate Mail Files?"
 msgstr ""
 
-#: kmkernel.cpp:1962
+#: kmkernel.cpp:1964
 msgid "KMail encountered a fatal error and will terminate now"
 msgstr ""
 
-#: kmkernel.cpp:1965
+#: kmkernel.cpp:1967
 #, kde-format
 msgid ""
 "KMail encountered a fatal error and will terminate now.\n"
@@ -6654,16 +6705,16 @@ msgid ""
 "%1"
 msgstr ""
 
-#: kmkernel.cpp:2086 kmmainwidget.cpp:1302
+#: kmkernel.cpp:2088 kmmainwidget.cpp:1302
 msgid "Empty Trash"
 msgstr "Vudî li batch"
 
-#: kmkernel.cpp:2087
+#: kmkernel.cpp:2089
 #, fuzzy
 msgid "Are you sure you want to empty the trash folders of all accounts?"
 msgstr "Estoz seur di voleur vudî l' batch?"
 
-#: kmkernel.cpp:2349
+#: kmkernel.cpp:2351
 #, kde-format
 msgid "This identity has been changed to use the default transport:"
 msgid_plural ""
@@ -6671,7 +6722,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: kmkernel.cpp:2372
+#: kmkernel.cpp:2374
 #, kde-format
 msgid "This identity has been changed to use the modified transport:"
 msgid_plural ""
@@ -6884,7 +6935,7 @@ msgid ""
 "deleted.</p></qt>"
 msgstr ""
 
-#: kmmainwidget.cpp:1385 kmmainwidget.cpp:2809
+#: kmmainwidget.cpp:1385 kmmainwidget.cpp:2810
 msgid "&Delete"
 msgstr "&Disfacer"
 
@@ -6990,322 +7041,322 @@ msgid ""
 "installation."
 msgstr ""
 
-#: kmmainwidget.cpp:2655 kmmimeparttree.cpp:168
+#: kmmainwidget.cpp:2656 kmmimeparttree.cpp:168
 msgid "Save &As..."
 msgstr "Sch&aper et rlomer..."
 
-#: kmmainwidget.cpp:2664
+#: kmmainwidget.cpp:2665
 msgid "&Compact All Folders"
 msgstr "Rastrinde Tos les &Ridants"
 
-#: kmmainwidget.cpp:2669
+#: kmmainwidget.cpp:2670
 msgid "&Expire All Folders"
 msgstr "Fé &espirer tos les ridants"
 
-#: kmmainwidget.cpp:2674
+#: kmmainwidget.cpp:2675
 msgid "&Refresh Local IMAP Cache"
 msgstr ""
 
-#: kmmainwidget.cpp:2679
+#: kmmainwidget.cpp:2680
 msgid "Empty All &Trash Folders"
 msgstr "Vudî tos les ridants &batch"
 
-#: kmmainwidget.cpp:2691
+#: kmmainwidget.cpp:2692
 msgid "Check Mail in Favorite Folders"
 msgstr "Waitî s' i gn a des emiles dins les favoris ridants"
 
-#: kmmainwidget.cpp:2699
+#: kmmainwidget.cpp:2700
 msgid "Check Ma&il"
 msgstr "Waitî s' i gn a des e&miles"
 
-#: kmmainwidget.cpp:2709
+#: kmmainwidget.cpp:2710
 msgid "&Send Queued Messages"
 msgstr "Evoyî li &cawêye des messaedjes"
 
-#: kmmainwidget.cpp:2714
+#: kmmainwidget.cpp:2715
 msgid "Onlinestatus (unknown)"
 msgstr "Estat d' raloyaedje (nén cnoxhou)"
 
-#: kmmainwidget.cpp:2719
+#: kmmainwidget.cpp:2720
 msgid "Send Queued Messages Via"
 msgstr "Evoyî li &cawêye des messaedjes via"
 
-#: kmmainwidget.cpp:2736
+#: kmmainwidget.cpp:2737
 #, fuzzy
 #| msgid "Certificate Manager..."
 msgid "Certificate Manager"
 msgstr "Manaedjeu d' acertineures..."
 
-#: kmmainwidget.cpp:2743
+#: kmmainwidget.cpp:2744
 #, fuzzy
 #| msgid "Filter Log Viewer"
 msgid "GnuPG Log Viewer"
 msgstr "Håyneu des djournås des passetes"
 
-#: kmmainwidget.cpp:2755
+#: kmmainwidget.cpp:2756
 #, fuzzy
 msgid "&Import Messages"
 msgstr "&Trover les Messaedjes..."
 
-#: kmmainwidget.cpp:2763
+#: kmmainwidget.cpp:2764
 #, fuzzy
 msgid "&Debug Sieve..."
 msgstr "&Radjouter siervice..."
 
-#: kmmainwidget.cpp:2770
+#: kmmainwidget.cpp:2771
 msgid "Filter &Log Viewer..."
 msgstr ""
 
-#: kmmainwidget.cpp:2775
+#: kmmainwidget.cpp:2776
 msgid "&Anti-Spam Wizard..."
 msgstr "M&acrea sconte sipam..."
 
-#: kmmainwidget.cpp:2780
+#: kmmainwidget.cpp:2781
 msgid "&Anti-Virus Wizard..."
 msgstr "Macrea sconte &waerbea..."
 
-#: kmmainwidget.cpp:2785
+#: kmmainwidget.cpp:2786
 #, fuzzy
 #| msgid "&Anti-Spam Wizard..."
 msgid "&Account Wizard..."
 msgstr "M&acrea sconte sipam..."
 
-#: kmmainwidget.cpp:2791
+#: kmmainwidget.cpp:2792
 msgid "Edit \"Out of Office\" Replies..."
 msgstr ""
 
-#: kmmainwidget.cpp:2797 kmreadermainwin.cpp:276
+#: kmmainwidget.cpp:2798 kmreadermainwin.cpp:276
 msgid "&Move to Trash"
 msgstr "Taper å &batch"
 
-#: kmmainwidget.cpp:2800 kmreadermainwin.cpp:277
+#: kmmainwidget.cpp:2801 kmreadermainwin.cpp:277
 msgid "Trash"
 msgstr "Batch"
 
-#: kmmainwidget.cpp:2802 kmreadermainwin.cpp:278
+#: kmmainwidget.cpp:2803 kmreadermainwin.cpp:278
 msgid "Move message to trashcan"
 msgstr "Taper li messaedje å batch"
 
-#: kmmainwidget.cpp:2814
+#: kmmainwidget.cpp:2815
 msgid "M&ove Thread to Trash"
 msgstr "&Taper l' lignoûle å batch"
 
-#: kmmainwidget.cpp:2818
+#: kmmainwidget.cpp:2819
 msgid "Move thread to trashcan"
 msgstr "Taper l' lignoûle å batch"
 
-#: kmmainwidget.cpp:2821
+#: kmmainwidget.cpp:2822
 msgid "Delete T&hread"
 msgstr "Disfacer li f&yis di messaedjes"
 
-#: kmmainwidget.cpp:2827
+#: kmmainwidget.cpp:2828
 msgid "&Find Messages..."
 msgstr "&Trover des messaedjes..."
 
-#: kmmainwidget.cpp:2833
+#: kmmainwidget.cpp:2834
 msgid "&Find in Message..."
 msgstr "&Cweri e messaedjes..."
 
-#: kmmainwidget.cpp:2842
+#: kmmainwidget.cpp:2843
 msgid "Select &All Messages"
 msgstr "T&choezi tos les messaedjes"
 
-#: kmmainwidget.cpp:2853
+#: kmmainwidget.cpp:2854
 msgid "&Properties"
 msgstr "&Prôpietés"
 
-#: kmmainwidget.cpp:2857
+#: kmmainwidget.cpp:2858
 msgid "&Mailing List Management..."
 msgstr ""
 
-#: kmmainwidget.cpp:2867
+#: kmmainwidget.cpp:2868
 msgid "Mark All Messages as &Read"
 msgstr "Marker tos les Messaedjes come &Léjhous"
 
-#: kmmainwidget.cpp:2871
+#: kmmainwidget.cpp:2872
 #, fuzzy
 msgid "&Expiration Settings"
 msgstr "&Idintités egzistantes:"
 
-#: kmmainwidget.cpp:2875
+#: kmmainwidget.cpp:2876
 msgid "&Compact Folder"
 msgstr "Rastrinde les &ridants"
 
-#: kmmainwidget.cpp:2879
+#: kmmainwidget.cpp:2880
 msgid "Check Mail &in This Folder"
 msgstr "Waitî s' i gn a des emiles &dins c' ridant"
 
-#: kmmainwidget.cpp:2885
+#: kmmainwidget.cpp:2886
 msgid "Rebuild Index..."
 msgstr "Dji rcostrût l' indecse..."
 
-#: kmmainwidget.cpp:2899
+#: kmmainwidget.cpp:2900
 msgid "Prefer &HTML to Plain Text"
 msgstr "&HTML pus rade ki peur tecse"
 
-#: kmmainwidget.cpp:2903
+#: kmmainwidget.cpp:2904
 msgid "Load E&xternal References"
 msgstr ""
 
-#: kmmainwidget.cpp:2907
+#: kmmainwidget.cpp:2908
 msgid "&Thread Messages"
 msgstr "Ralo&yî les messaedjes sorlon leus sudjets (lignoûle)"
 
-#: kmmainwidget.cpp:2911
+#: kmmainwidget.cpp:2912
 #, fuzzy
 msgid "Thread Messages also by &Subject"
 msgstr "Marker li Messaedje come E&voyî"
 
-#: kmmainwidget.cpp:2916
+#: kmmainwidget.cpp:2917
 msgid "Copy Folder"
 msgstr "Copyî ridant"
 
-#: kmmainwidget.cpp:2922
+#: kmmainwidget.cpp:2923
 msgid "Cut Folder"
 msgstr "Côper ridant"
 
-#: kmmainwidget.cpp:2928
+#: kmmainwidget.cpp:2929
 msgid "Paste Folder"
 msgstr "Aclaper ridant"
 
-#: kmmainwidget.cpp:2934
+#: kmmainwidget.cpp:2935
 msgid "Copy Messages"
 msgstr "Copyî messaedjes"
 
-#: kmmainwidget.cpp:2940
+#: kmmainwidget.cpp:2941
 msgid "Cut Messages"
 msgstr "Côper messaedjes"
 
-#: kmmainwidget.cpp:2946
+#: kmmainwidget.cpp:2947
 msgid "Paste Messages"
 msgstr "Aclaper messaedjes"
 
-#: kmmainwidget.cpp:2954
+#: kmmainwidget.cpp:2955
 msgid "&New Message..."
 msgstr "&Novea Messaedje..."
 
-#: kmmainwidget.cpp:2956
+#: kmmainwidget.cpp:2957
 msgctxt "@action:intoolbar New Empty Message"
 msgid "New"
 msgstr "Novea"
 
-#: kmmainwidget.cpp:2964
+#: kmmainwidget.cpp:2965
 msgid "Message From &Template"
 msgstr "&Messaedje a pårti s' on modele"
 
-#: kmmainwidget.cpp:2974
+#: kmmainwidget.cpp:2975
 msgid "New Message t&o Mailing-List..."
 msgstr "Novea messaedje po 'ne &djåspinreye"
 
-#: kmmainwidget.cpp:2981 kmreadermainwin.cpp:295 searchwindow.cpp:324
+#: kmmainwidget.cpp:2982 kmreadermainwin.cpp:295 searchwindow.cpp:324
 msgctxt "Message->"
 msgid "&Forward"
 msgstr "&Ricassî"
 
-#: kmmainwidget.cpp:2986 kmreadermainwin.cpp:300 searchwindow.cpp:333
+#: kmmainwidget.cpp:2987 kmreadermainwin.cpp:300 searchwindow.cpp:333
 msgctxt "Message->Forward->"
 msgid "As &Attachment..."
 msgstr "Come &Ataetchmint..."
 
-#: kmmainwidget.cpp:2992
+#: kmmainwidget.cpp:2993
 #, fuzzy
 #| msgid "&Inline..."
 msgctxt "@action:inmenu Message->Forward->"
 msgid "&Inline..."
 msgstr "&Dins l' messaedje..."
 
-#: kmmainwidget.cpp:2999
+#: kmmainwidget.cpp:3000
 msgid "Send A&gain..."
 msgstr "Revo&yî..."
 
-#: kmmainwidget.cpp:3003 kmreadermainwin.cpp:313
+#: kmmainwidget.cpp:3004 kmreadermainwin.cpp:313
 msgctxt "Message->Forward->"
 msgid "&Redirect..."
 msgstr "&Rimoenner"
 
-#: kmmainwidget.cpp:3010
+#: kmmainwidget.cpp:3011
 msgid "&Create Filter"
 msgstr "Fé 'ne &passete"
 
-#: kmmainwidget.cpp:3014
+#: kmmainwidget.cpp:3015
 msgid "Filter on &Subject..."
 msgstr "Fé 'ne passete sol &sudjet..."
 
-#: kmmainwidget.cpp:3019
+#: kmmainwidget.cpp:3020
 msgid "Filter on &From..."
 msgstr "Fé 'ne passete so l' &evoyeu..."
 
-#: kmmainwidget.cpp:3024
+#: kmmainwidget.cpp:3025
 msgid "Filter on &To..."
 msgstr "Fé 'ne passete sol &riçuveu..."
 
-#: kmmainwidget.cpp:3029
+#: kmmainwidget.cpp:3030
 msgid "Filter on Mailing-&List..."
 msgstr "Fé 'ne passete sol &djåspinsreye..."
 
-#: kmmainwidget.cpp:3036
+#: kmmainwidget.cpp:3037
 msgid "New Message From &Template"
 msgstr "Novea Messaedje a pårti d' on &modele"
 
-#: kmmainwidget.cpp:3042
+#: kmmainwidget.cpp:3043
 msgid "Mark &Thread"
 msgstr "Marker li Li&gnoûle"
 
-#: kmmainwidget.cpp:3045
+#: kmmainwidget.cpp:3046
 msgid "Mark Thread as &Read"
 msgstr "Marker li Lignoûle come &Léjhowe"
 
-#: kmmainwidget.cpp:3048
+#: kmmainwidget.cpp:3049
 msgid "Mark all messages in the selected thread as read"
 msgstr "Marker tos les messaedjes di cisse lignoûle come léjhous"
 
-#: kmmainwidget.cpp:3051
+#: kmmainwidget.cpp:3052
 msgid "Mark Thread as &New"
 msgstr "Marker li Lignoûle come &Novele"
 
-#: kmmainwidget.cpp:3054
+#: kmmainwidget.cpp:3055
 msgid "Mark all messages in the selected thread as new"
 msgstr "Marker tos les messaedjes di cisse lignoûle come noveas"
 
-#: kmmainwidget.cpp:3057
+#: kmmainwidget.cpp:3058
 msgid "Mark Thread as &Unread"
 msgstr "Marker li Lignoûle come &Nén Léjhowe"
 
-#: kmmainwidget.cpp:3060
+#: kmmainwidget.cpp:3061
 msgid "Mark all messages in the selected thread as unread"
 msgstr "Marker tos les messaedjes di cisse lignoûle come nén léjhous."
 
-#: kmmainwidget.cpp:3066
+#: kmmainwidget.cpp:3067
 msgid "Mark Thread as &Important"
 msgstr "Marker li Lignoûle come &Impôrtante"
 
-#: kmmainwidget.cpp:3069
+#: kmmainwidget.cpp:3070
 #, fuzzy
 msgid "Remove &Important Thread Mark"
 msgstr "Messaedje impôrtant"
 
-#: kmmainwidget.cpp:3072
+#: kmmainwidget.cpp:3073
 msgid "Mark Thread as &Action Item"
 msgstr "Marker li Lignoûle come cayet f&aitindje"
 
-#: kmmainwidget.cpp:3075
+#: kmmainwidget.cpp:3076
 #, fuzzy
 msgid "Remove &Action Item Thread Mark"
 msgstr "Messaedje impôrtant"
 
-#: kmmainwidget.cpp:3079
+#: kmmainwidget.cpp:3080
 msgid "&Watch Thread"
 msgstr "Marker li Li&gnoûle"
 
-#: kmmainwidget.cpp:3083
+#: kmmainwidget.cpp:3084
 msgid "&Ignore Thread"
 msgstr "&Passer houte li lignoûle"
 
-#: kmmainwidget.cpp:3091 kmreadermainwin.cpp:273
+#: kmmainwidget.cpp:3092 kmreadermainwin.cpp:273
 msgid "Save A&ttachments..."
 msgstr "Schaper a&taetchmints..."
 
-#: kmmainwidget.cpp:3101
+#: kmmainwidget.cpp:3102
 msgid "Appl&y All Filters"
 msgstr "Mete totes les &passetes èn alaedje"
 
@@ -7313,256 +7364,256 @@ msgstr "Mete totes les &passetes èn alaedje"
 #. i18n: ectx: Menu (apply_filter_actions)
 #. i18n: file: kmmainwin.rc:151
 #. i18n: ectx: Menu (apply_filter_actions)
-#: kmmainwidget.cpp:3106 rc.cpp:611 rc.cpp:677
+#: kmmainwidget.cpp:3107 rc.cpp:611 rc.cpp:677
 msgid "A&pply Filter"
 msgstr "Mete les &passetes èn alaedje"
 
-#: kmmainwidget.cpp:3111
+#: kmmainwidget.cpp:3112
 msgctxt "View->"
 msgid "&Unread Count"
 msgstr "Conter les &nén léjhous"
 
-#: kmmainwidget.cpp:3113
+#: kmmainwidget.cpp:3114
 #, fuzzy
 msgid "Choose how to display the count of unread messages"
 msgstr "Potchî å messaedje nén léjhou shuvant"
 
-#: kmmainwidget.cpp:3116
+#: kmmainwidget.cpp:3117
 msgctxt "View->Unread Count"
 msgid "View in &Separate Column"
 msgstr ""
 
-#: kmmainwidget.cpp:3124
+#: kmmainwidget.cpp:3125
 msgctxt "View->Unread Count"
 msgid "View After &Folder Name"
 msgstr ""
 
-#: kmmainwidget.cpp:3132
+#: kmmainwidget.cpp:3133
 msgctxt "View->"
 msgid "&Total Column"
 msgstr ""
 
-#: kmmainwidget.cpp:3136
+#: kmmainwidget.cpp:3137
 msgid ""
 "Toggle display of column showing the total number of messages in folders."
 msgstr ""
 
-#: kmmainwidget.cpp:3138
+#: kmmainwidget.cpp:3139
 #, fuzzy
 msgctxt "View->"
 msgid "&Size Column"
 msgstr "Vey colones"
 
-#: kmmainwidget.cpp:3143
+#: kmmainwidget.cpp:3144
 msgid "Toggle display of column showing the total size of messages in folders."
 msgstr ""
 
-#: kmmainwidget.cpp:3147
+#: kmmainwidget.cpp:3148
 msgctxt "View->"
 msgid "&Expand Thread"
 msgstr ""
 
-#: kmmainwidget.cpp:3150
+#: kmmainwidget.cpp:3151
 msgid "Expand the current thread"
 msgstr ""
 
-#: kmmainwidget.cpp:3154
+#: kmmainwidget.cpp:3155
 msgctxt "View->"
 msgid "&Collapse Thread"
 msgstr ""
 
-#: kmmainwidget.cpp:3157
+#: kmmainwidget.cpp:3158
 msgid "Collapse the current thread"
 msgstr ""
 
-#: kmmainwidget.cpp:3161
+#: kmmainwidget.cpp:3162
 msgctxt "View->"
 msgid "Ex&pand All Threads"
 msgstr ""
 
-#: kmmainwidget.cpp:3164
+#: kmmainwidget.cpp:3165
 msgid "Expand all threads in the current folder"
 msgstr ""
 
-#: kmmainwidget.cpp:3168
+#: kmmainwidget.cpp:3169
 msgctxt "View->"
 msgid "C&ollapse All Threads"
 msgstr ""
 
-#: kmmainwidget.cpp:3171
+#: kmmainwidget.cpp:3172
 msgid "Collapse all threads in the current folder"
 msgstr ""
 
-#: kmmainwidget.cpp:3175 kmreadermainwin.cpp:289
+#: kmmainwidget.cpp:3176 kmreadermainwin.cpp:289
 msgid "&View Source"
 msgstr "&Vey li sourdant"
 
-#: kmmainwidget.cpp:3180
+#: kmmainwidget.cpp:3181
 #, fuzzy
 msgid "&Display Message"
 msgstr "Mostrer li &grandeu des messaedjes"
 
-#: kmmainwidget.cpp:3187
+#: kmmainwidget.cpp:3188
 msgid "&Next Message"
 msgstr "Messaedje &shuvant"
 
-#: kmmainwidget.cpp:3190
+#: kmmainwidget.cpp:3191
 msgid "Go to the next message"
 msgstr "Potchî å messaedje shuvant"
 
-#: kmmainwidget.cpp:3194
+#: kmmainwidget.cpp:3195
 msgid "Next &Unread Message"
 msgstr "Messaedje &nén léjhou shuvant"
 
-#: kmmainwidget.cpp:3202
+#: kmmainwidget.cpp:3203
 msgctxt "@action:inmenu Goto next unread message"
 msgid "Next"
 msgstr ""
 
-#: kmmainwidget.cpp:3203
+#: kmmainwidget.cpp:3204
 msgid "Go to the next unread message"
 msgstr "Potchî å messaedje nén léjhou shuvant"
 
-#: kmmainwidget.cpp:3207
+#: kmmainwidget.cpp:3208
 msgid "&Previous Message"
 msgstr "Messaedje di d&vant"
 
-#: kmmainwidget.cpp:3209
+#: kmmainwidget.cpp:3210
 msgid "Go to the previous message"
 msgstr "Potchî å messaedje di dvant"
 
-#: kmmainwidget.cpp:3214
+#: kmmainwidget.cpp:3215
 msgid "Previous Unread &Message"
 msgstr "&Messaedje di dvant nén léjhou"
 
-#: kmmainwidget.cpp:3222
+#: kmmainwidget.cpp:3223
 #, fuzzy
 #| msgid "Previous"
 msgctxt "@action:inmenu Goto previous unread message."
 msgid "Previous"
 msgstr "Di dvant"
 
-#: kmmainwidget.cpp:3223
+#: kmmainwidget.cpp:3224
 msgid "Go to the previous unread message"
 msgstr "Potchî å messaedje nén léjhou di dvant"
 
-#: kmmainwidget.cpp:3227
+#: kmmainwidget.cpp:3228
 msgid "Next Unread &Folder"
 msgstr "&Ridant shuvant nén léjhou"
 
-#: kmmainwidget.cpp:3231
+#: kmmainwidget.cpp:3232
 msgid "Go to the next folder with unread messages"
 msgstr "Potchî å ridant d' après k' a des messaedjes nén léjhous"
 
-#: kmmainwidget.cpp:3237
+#: kmmainwidget.cpp:3238
 msgid "Previous Unread F&older"
 msgstr "Ri&dant di dvant nén léjhou"
 
-#: kmmainwidget.cpp:3240
+#: kmmainwidget.cpp:3241
 msgid "Go to the previous folder with unread messages"
 msgstr "Potchî å ridant di dvant k' a des messaedjes nén léjhous"
 
-#: kmmainwidget.cpp:3247
+#: kmmainwidget.cpp:3248
 msgctxt "Go->"
 msgid "Next Unread &Text"
 msgstr "&messaedje nén léjhou shuvant"
 
-#: kmmainwidget.cpp:3250
+#: kmmainwidget.cpp:3251
 msgid "Go to the next unread text"
 msgstr "Potchî å messaedje nén léjhou shuvant"
 
-#: kmmainwidget.cpp:3251
+#: kmmainwidget.cpp:3252
 msgid ""
 "Scroll down current message. If at end of current message, go to next unread "
 "message."
 msgstr ""
 
-#: kmmainwidget.cpp:3259
+#: kmmainwidget.cpp:3260
 msgid "Configure &Filters..."
 msgstr "Apontyî les &passetes..."
 
-#: kmmainwidget.cpp:3265
+#: kmmainwidget.cpp:3266
 msgid "Configure &POP Filters..."
 msgstr "Apontyî les passetes &POP..."
 
-#: kmmainwidget.cpp:3271
+#: kmmainwidget.cpp:3272
 #, fuzzy
 msgid "Manage &Sieve Scripts..."
 msgstr "Profils k' i gn a"
 
-#: kmmainwidget.cpp:3276
+#: kmmainwidget.cpp:3277
 msgid "KMail &Introduction"
 msgstr ""
 
-#: kmmainwidget.cpp:3278
+#: kmmainwidget.cpp:3279
 msgid "Display KMail's Welcome Page"
 msgstr ""
 
-#: kmmainwidget.cpp:3287
+#: kmmainwidget.cpp:3288
 msgid "Configure &Notifications..."
 msgstr "Apontyî les &Notifiaedjes..."
 
-#: kmmainwidget.cpp:3295
+#: kmmainwidget.cpp:3296
 msgid "&Configure KMail..."
 msgstr "Apont&yî KMail..."
 
-#: kmmainwidget.cpp:3593
+#: kmmainwidget.cpp:3595
 msgid "E&mpty Trash"
 msgstr "&Vudî li batch"
 
-#: kmmainwidget.cpp:3593
+#: kmmainwidget.cpp:3595
 msgid "&Move All Messages to Trash"
 msgstr "&Taper tos les messaedjes å batch"
 
-#: kmmainwidget.cpp:3595
+#: kmmainwidget.cpp:3597
 msgid "&Delete Search"
 msgstr "&Disfacer cweraedje"
 
-#: kmmainwidget.cpp:3595
+#: kmmainwidget.cpp:3597
 msgid "&Delete Folder"
 msgstr "&Disfacer ridant"
 
-#: kmmainwidget.cpp:3707
+#: kmmainwidget.cpp:3709
 #, fuzzy, kde-format
 msgid "Toggle Message Tag %1"
 msgstr "Aspou&gnî li Messaedje"
 
-#: kmmainwidget.cpp:3778
+#: kmmainwidget.cpp:3780
 #, fuzzy, kde-format
 msgid "Message Tag %1"
 msgstr "Djivêye des Messaedjes"
 
-#: kmmainwidget.cpp:3882
+#: kmmainwidget.cpp:3884
 #, kde-format
 msgid "Removed %1 duplicate message."
 msgid_plural "Removed %1 duplicate messages."
 msgstr[0] ""
 msgstr[1] ""
 
-#: kmmainwidget.cpp:3885
+#: kmmainwidget.cpp:3887
 #, fuzzy
 msgid "No duplicate messages found."
 msgstr "Disfacer les messaedjes e dobe"
 
-#: kmmainwidget.cpp:3952
+#: kmmainwidget.cpp:3954
 #, kde-format
 msgid "Filter %1"
 msgstr "Passete %1"
 
-#: kmmainwidget.cpp:4043 kmmainwidget.cpp:4044
+#: kmmainwidget.cpp:4045 kmmainwidget.cpp:4046
 #, kde-format
 msgid "Folder Shortcut %1"
 msgstr "Racourti viè l' ridant %1"
 
-#: kmmainwidget.cpp:4103
+#: kmmainwidget.cpp:4105
 msgid "Subscription"
 msgstr "Abounmint"
 
-#: kmmainwidget.cpp:4122
+#: kmmainwidget.cpp:4124
 msgid "Local Subscription"
 msgstr "Locå abounmint"
 
-#: kmmainwidget.cpp:4250
+#: kmmainwidget.cpp:4252
 msgid "Out of office reply active"
 msgstr ""
 
@@ -9133,9 +9184,10 @@ msgstr "&Novea ridant..."
 msgid "New Subfolder of %1"
 msgstr "&Novea Ridant Efant..."
 
-#. i18n: file: snippetdlgbase.ui:19
-#. i18n: ectx: property (text), widget (QLabel, nameLabel)
-#: newfolderdialog.cpp:85 rc.cpp:1030
+#: newfolderdialog.cpp:85
+#, fuzzy
+#| msgid "&Name:"
+msgctxt "@label:textbox Name of the new folder."
 msgid "&Name:"
 msgstr "&No:"
 
@@ -11607,6 +11659,12 @@ msgstr ""
 msgid "Add Snippet"
 msgstr ""
 
+#. i18n: file: snippetdlgbase.ui:19
+#. i18n: ectx: property (text), widget (QLabel, nameLabel)
+#: rc.cpp:1030
+msgid "&Name:"
+msgstr "&No:"
+
 #. i18n: file: snippetdlgbase.ui:35
 #. i18n: ectx: property (text), widget (QLabel, textLabelGroup)
 #: rc.cpp:1033
@@ -13183,14 +13241,15 @@ msgstr "Sititchî on Fitchî"
 msgid ""
 "I am out of office till %1.\n"
 "\n"
-"In urgent cases, please contact Mrs. <vacation replacement>\n"
+"In urgent cases, please contact Mrs. <placeholder>vacation replacement</"
+"placeholder>\n"
 "\n"
-"email: <email address of vacation replacement>\n"
+"email: <placeholder>email address of vacation replacement</placeholder>\n"
 "phone: +49 711 1111 11\n"
 "fax.:  +49 711 1111 12\n"
 "\n"
 "Yours sincerely,\n"
-"-- <enter your name and email address here>\n"
+"-- <placeholder>enter your name and email address here</placeholder>\n"
 msgstr ""
 
 #: vacation.cpp:612
@@ -13497,6 +13556,12 @@ msgstr "Come ataetchmint"
 #, kde-format
 msgid "%1 of %2 %3 used"
 msgstr ""
+
+#, fuzzy
+#~| msgid "<none>"
+#~ msgctxt "Placeholder for the case that there is no folder."
+#~ msgid "<none>"
+#~ msgstr "<nouk>"
 
 #~ msgid "<p>Messages classified as spam are marked as read."
 #~ msgstr "<p>Marker les messaedjes classifyî spam com léjhous."
