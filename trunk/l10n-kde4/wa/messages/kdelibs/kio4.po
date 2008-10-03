@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-10-02 09:44+0200\n"
+"POT-Creation-Date: 2008-10-03 09:40+0200\n"
 "PO-Revision-Date: 2008-06-27 22:13+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -92,7 +92,7 @@ msgctxt "@title job"
 msgid "Unmounting"
 msgstr "Dji dismonte"
 
-#: kio/job.cpp:1987 kio/paste.cpp:63 kio/copyjob.cpp:1185 kio/copyjob.cpp:1715
+#: kio/job.cpp:1987 kio/paste.cpp:63 kio/copyjob.cpp:1191 kio/copyjob.cpp:1722
 #: kio/global.cpp:652
 msgid "File Already Exists"
 msgstr "Ci fitchî la egzistêye dedja"
@@ -142,7 +142,7 @@ msgstr ""
 msgid "The clipboard is empty"
 msgstr "Li tchapea emacralé est vude"
 
-#: kio/paste.cpp:203 kio/renamedialog.cpp:392 kio/kdirlister.cpp:321
+#: kio/paste.cpp:203 kio/renamedialog.cpp:400 kio/kdirlister.cpp:321
 #: kio/krun.cpp:820
 #, kde-format
 msgid ""
@@ -199,27 +199,82 @@ msgstr "Sudjestion d' on &novea no"
 msgid "&Skip"
 msgstr "&Passer"
 
-#: kio/renamedialog.cpp:113
+#: kio/renamedialog.cpp:111
+msgid "Do not copy or move this folder, skip to the next item instead"
+msgstr ""
+
+#: kio/renamedialog.cpp:112
+msgid "Do not copy or move this file, skip to the next item instead"
+msgstr ""
+
+#: kio/renamedialog.cpp:115
 msgid "&Auto Skip"
 msgstr "Passer &otomaticmint"
 
-#: kio/renamedialog.cpp:118
+#: kio/renamedialog.cpp:116
+msgid ""
+"Do not copy or move any folder that already exists in the destination "
+"folder.\n"
+"You will be prompted again in case of a conflict with an existing file "
+"though."
+msgstr ""
+
+#: kio/renamedialog.cpp:117
+msgid ""
+"Do not copy or move any file that already exists in the destination folder.\n"
+"You will be prompted again in case of a conflict with an existing directory "
+"though."
+msgstr ""
+
+#: kio/renamedialog.cpp:122
+#, fuzzy
+#| msgid "Write"
+msgctxt "Write files into an existing folder"
+msgid "&Write Into"
+msgstr "Sicrire"
+
+#: kio/renamedialog.cpp:122
 msgid "&Overwrite"
 msgstr "&Sipotchî"
 
-#: kio/renamedialog.cpp:122
-msgid "O&verwrite All"
+#: kio/renamedialog.cpp:124
+msgid ""
+"Files and folders will be copied into the existing directory, alongside its "
+"existing contents.\n"
+"You will be prompted again in case of a conflict with an existing file in "
+"the directory."
+msgstr ""
+
+#: kio/renamedialog.cpp:128
+#, fuzzy
+#| msgid "O&verwrite All"
+msgctxt "Write files into any existing directory"
+msgid "&Write Into All"
 msgstr "Si&potchî tot a fwait"
 
 #: kio/renamedialog.cpp:128
+#, fuzzy
+#| msgid "O&verwrite All"
+msgid "&Overwrite All"
+msgstr "Si&potchî tot a fwait"
+
+#: kio/renamedialog.cpp:130
+msgid ""
+"Files and folders will be copied into any existing directory, alongside its "
+"existing contents.\n"
+"You will be prompted again in case of a conflict with an existing file in a "
+"directory, but not in case of another existing directory."
+msgstr ""
+
+#: kio/renamedialog.cpp:136
 msgid "&Resume"
 msgstr "&Rataker"
 
-#: kio/renamedialog.cpp:133
+#: kio/renamedialog.cpp:141
 msgid "R&esume All"
 msgstr "Ratak&er tot"
 
-#: kio/renamedialog.cpp:145
+#: kio/renamedialog.cpp:153
 #, kde-format
 msgid ""
 "This action would overwrite '%1' with itself.\n"
@@ -228,41 +283,41 @@ msgstr ""
 "Ciste accion la spotchreut «%1» avou lu minme.\n"
 "Dinez on novea no s' i vs plait:"
 
-#: kio/renamedialog.cpp:147
+#: kio/renamedialog.cpp:155
 msgid "C&ontinue"
 msgstr "&Continouwer"
 
-#: kio/renamedialog.cpp:194 kio/renamedialog.cpp:272
+#: kio/renamedialog.cpp:202 kio/renamedialog.cpp:280
 #, kde-format
 msgid "An older item named '%1' already exists."
 msgstr "I gn a ddja åk di pus vî lomé «%1»"
 
-#: kio/renamedialog.cpp:196 kio/renamedialog.cpp:274
+#: kio/renamedialog.cpp:204 kio/renamedialog.cpp:282
 #, kde-format
 msgid "A similar file named '%1' already exists."
 msgstr "Gn a ddja fitchî lomé « %1 » k' egzistêye dedja et k' est l' minme."
 
-#: kio/renamedialog.cpp:198 kio/renamedialog.cpp:276
+#: kio/renamedialog.cpp:206 kio/renamedialog.cpp:284
 #, kde-format
 msgid "A newer item named '%1' already exists."
 msgstr "I gn a ddja åk di pus noû lomé «%1»"
 
-#: kio/renamedialog.cpp:210 kio/renamedialog.cpp:245
+#: kio/renamedialog.cpp:218 kio/renamedialog.cpp:253
 #, kde-format
 msgid "size %1"
 msgstr "grandeu %1"
 
-#: kio/renamedialog.cpp:218 kio/renamedialog.cpp:252
+#: kio/renamedialog.cpp:226 kio/renamedialog.cpp:260
 #, kde-format
 msgid "created on %1"
 msgstr "ahivé li %1"
 
-#: kio/renamedialog.cpp:225 kio/renamedialog.cpp:259
+#: kio/renamedialog.cpp:233 kio/renamedialog.cpp:267
 #, kde-format
 msgid "modified on %1"
 msgstr "candjî li %1"
 
-#: kio/renamedialog.cpp:234
+#: kio/renamedialog.cpp:242
 #, kde-format
 msgid "The source file is '%1'"
 msgstr "Li fitchî sourdant est « %1 »"
@@ -413,14 +468,14 @@ msgstr ""
 "L' acertineure SSL est retchesseye, come vos avoz dmandé. vos poloz essocter "
 "çoula e l' Aisse di Minaedje di KDE."
 
-#: kio/jobuidelegate.cpp:130 ../kfile/kdiroperator.cpp:748
+#: kio/jobuidelegate.cpp:130 ../kfile/kdiroperator.cpp:766
 #, kde-format
 msgid "Do you really want to delete this item?"
 msgid_plural "Do you really want to delete these %1 items?"
 msgstr[0] "Voloz vs po do bon disfacer ci cayet ci?"
 msgstr[1] "Voloz vs po do bon disfacer ces %1 cayets ci?"
 
-#: kio/jobuidelegate.cpp:132 ../kfile/kdiroperator.cpp:750
+#: kio/jobuidelegate.cpp:132 ../kfile/kdiroperator.cpp:768
 msgid "Delete Files"
 msgstr "Disfacer fitchîs"
 
@@ -433,7 +488,7 @@ msgid_plural "Do you really want to move these %1 items to the trash?"
 msgstr[0] "Voloz vs po do bon disfacer ci cayet ci?"
 msgstr[1] "Voloz vs po do bon disfacer ces %1 cayets ci?"
 
-#: kio/jobuidelegate.cpp:144 ../kfile/kdiroperator.cpp:1653
+#: kio/jobuidelegate.cpp:144 ../kfile/kdiroperator.cpp:1733
 msgid "Move to Trash"
 msgstr "Taper å batch"
 
@@ -457,11 +512,11 @@ msgstr "Passer houte"
 msgid "AutoSkip"
 msgstr "Passer houte tot seu"
 
-#: kio/copyjob.cpp:902 kio/global.cpp:662
+#: kio/copyjob.cpp:910 kio/global.cpp:662
 msgid "Folder Already Exists"
 msgstr "Li ridant egzistêye dedja"
 
-#: kio/copyjob.cpp:1185 kio/copyjob.cpp:1715
+#: kio/copyjob.cpp:1191 kio/copyjob.cpp:1722
 msgid "Already Exists as Folder"
 msgstr "Egzistêye dedja come ridant"
 
@@ -2611,39 +2666,39 @@ msgstr ""
 msgid "Unable to create io-slave: %1"
 msgstr "Dji n' sai fé li module vårlet d' intrêye/sôrteye: %1"
 
-#: kio/kdirmodel.cpp:767
+#: kio/kdirmodel.cpp:771
 msgctxt "@title:column"
 msgid "Name"
 msgstr "No"
 
-#: kio/kdirmodel.cpp:769
+#: kio/kdirmodel.cpp:773
 msgctxt "@title:column"
 msgid "Size"
 msgstr "Grandeu"
 
-#: kio/kdirmodel.cpp:771
+#: kio/kdirmodel.cpp:775
 #, fuzzy
 #| msgid "Date"
 msgctxt "@title:column"
 msgid "Date"
 msgstr "Date"
 
-#: kio/kdirmodel.cpp:773
+#: kio/kdirmodel.cpp:777
 msgctxt "@title:column"
 msgid "Permissions"
 msgstr "Droets"
 
-#: kio/kdirmodel.cpp:775
+#: kio/kdirmodel.cpp:779
 msgctxt "@title:column"
 msgid "Owner"
 msgstr "Da"
 
-#: kio/kdirmodel.cpp:777
+#: kio/kdirmodel.cpp:781
 msgctxt "@title:column"
 msgid "Group"
 msgstr "Groupe"
 
-#: kio/kdirmodel.cpp:779
+#: kio/kdirmodel.cpp:783
 msgctxt "@title:column"
 msgid "Type"
 msgstr "Sôre"
@@ -3267,7 +3322,7 @@ msgstr "Foû payis"
 msgid "Mimetypes"
 msgstr "Sôres MIME"
 
-#: kfile/kicondialog.cpp:364 ../kfile/kfilewidget.cpp:1022
+#: kfile/kicondialog.cpp:364 ../kfile/kfilewidget.cpp:1063
 msgid "Places"
 msgstr "Plaeces"
 
@@ -4466,7 +4521,7 @@ msgstr ""
 
 #. i18n: file: kfile/kpropertiesdesktopbase.ui:102
 #. i18n: ectx: property (text), widget (QLabel, nameLabel)
-#: rc.cpp:184 ../kfile/kfilewidget.cpp:467
+#: rc.cpp:184 ../kfile/kfilewidget.cpp:500
 msgid "&Name:"
 msgstr "&No:"
 
@@ -4632,7 +4687,7 @@ msgid "<!-- This file was generated by Konqueror -->"
 msgstr "<!-- Ci fitchî a stî ahivé pa Konqueror -->"
 
 #: bookmarks/kbookmarkimporter_ns.cc:165 bookmarks/kbookmarkimporter_ns.cc:166
-#: bookmarks/kbookmarkdialog.cc:325 ../kfile/kfilewidget.cpp:2105
+#: bookmarks/kbookmarkdialog.cc:325 ../kfile/kfilewidget.cpp:2146
 msgid "Bookmarks"
 msgstr "Rimåkes"
 
@@ -4653,7 +4708,7 @@ msgstr "Drovi l' ridant dins l' aspougneu di rmåkes"
 msgid "Delete Folder"
 msgstr "Disfacer l' ridant"
 
-#: bookmarks/kbookmarkmenu.cc:281 ../kfile/kdiroperator.cpp:1731
+#: bookmarks/kbookmarkmenu.cc:281 ../kfile/kdiroperator.cpp:1829
 msgid "Properties"
 msgstr "Prôpietés"
 
@@ -5431,7 +5486,7 @@ msgctxt "@action:button"
 msgid "Empty Trash"
 msgstr "Batch"
 
-#: ../kfile/kfilefiltercombo.cpp:36 ../kfile/kfilewidget.cpp:1479
+#: ../kfile/kfilefiltercombo.cpp:36 ../kfile/kfilewidget.cpp:1520
 msgid "*|All Files"
 msgstr "*|Tos les fitchîs"
 
@@ -5439,7 +5494,7 @@ msgstr "*|Tos les fitchîs"
 msgid "All Supported Files"
 msgstr "Tos les fitchîs sopoirtés"
 
-#: ../kfile/kfilewidget.cpp:270
+#: ../kfile/kfilewidget.cpp:277
 msgid ""
 "<qt>While typing in the text area, you may be presented with possible "
 "matches. This feature can be controlled by clicking with the right mouse "
@@ -5450,12 +5505,12 @@ msgstr ""
 "avou l' boton d' droete del sori eyet tchoezi l' metôde ki vos inmez l' mî "
 "dins l' menu <b>Completaedje do tecse</b>."
 
-#: ../kfile/kfilewidget.cpp:331
+#: ../kfile/kfilewidget.cpp:338
 #, kde-format
 msgid "Drive: %1"
 msgstr "Lijheu: %1"
 
-#: ../kfile/kfilewidget.cpp:386
+#: ../kfile/kfilewidget.cpp:393
 #, kde-format
 msgid ""
 "<qt>Click this button to enter the parent folder.<br /><br />For instance, "
@@ -5466,41 +5521,41 @@ msgstr ""
 ">Si vos estoz, metans, dins file:/home/%1, et k' vos clitchîz sol boton, vos "
 "vos rtrovroz dins file:/home.</qt>"
 
-#: ../kfile/kfilewidget.cpp:390
+#: ../kfile/kfilewidget.cpp:397
 msgid "Click this button to move backwards one step in the browsing history."
 msgstr ""
 "Clitchîz so ç' boton chal po rivni en erî d' ene asdjamblêye dins "
 "l' istorike di vosse betchtaedje."
 
-#: ../kfile/kfilewidget.cpp:391
+#: ../kfile/kfilewidget.cpp:398
 msgid "Click this button to move forward one step in the browsing history."
 msgstr ""
 "Clitchîz so ç' boton chal po-z avanci d' ene asdjamblêye dins l' istorike do "
 "betchtaedje."
 
-#: ../kfile/kfilewidget.cpp:393
+#: ../kfile/kfilewidget.cpp:400
 msgid "Click this button to reload the contents of the current location."
 msgstr ""
 "Clitchîz so ç' boton chal po rtcherdjî l' å dvins di l' eplaeçmint do "
 "moumint."
 
-#: ../kfile/kfilewidget.cpp:395
+#: ../kfile/kfilewidget.cpp:402
 msgid "Click this button to create a new folder."
 msgstr "Clitchîz so ç' boton chal po fé on novea ridant."
 
-#: ../kfile/kfilewidget.cpp:401
+#: ../kfile/kfilewidget.cpp:408
 msgid "Show Places Navigation Panel"
 msgstr "Mostrer li rascourti après l' panea di naiviaedje"
 
-#: ../kfile/kfilewidget.cpp:408
+#: ../kfile/kfilewidget.cpp:415
 msgid "Show Bookmarks"
 msgstr "Mostrer rmåkes"
 
-#: ../kfile/kfilewidget.cpp:413
+#: ../kfile/kfilewidget.cpp:420
 msgid "Options"
 msgstr "Tchuzes"
 
-#: ../kfile/kfilewidget.cpp:415
+#: ../kfile/kfilewidget.cpp:422
 msgid ""
 "<qt>This is the preferences menu for the file dialog. Various options can be "
 "accessed from this menu including: <ul><li>how files are sorted in the list</"
@@ -5515,7 +5570,19 @@ msgstr ""
 "après l' panea di naiviaedje</li><li>prévoeyaedje des fitchîs</li><li>mete "
 "les ridant eshonne eyet les fitchîs eshonne</li></ul></qt>"
 
-#: ../kfile/kfilewidget.cpp:507
+#: ../kfile/kfilewidget.cpp:449
+#, fuzzy
+#| msgid "Show Preview"
+msgid "Show Inline Preview"
+msgstr "Prévey"
+
+#: ../kfile/kfilewidget.cpp:466
+#, fuzzy
+#| msgid "Icon View"
+msgid "Icon Size"
+msgstr "Mostrer des imådjetes"
+
+#: ../kfile/kfilewidget.cpp:540
 msgid ""
 "<qt>This is the filter to apply to the file list. File names that do not "
 "match the filter will not be shown.<p>You may select from one of the preset "
@@ -5528,37 +5595,37 @@ msgstr ""
 "da vosse el boesse di tecse.</p><p>Vos poloz bén eployî des djokers come * "
 "ou ? </p></qt>"
 
-#: ../kfile/kfilewidget.cpp:513
+#: ../kfile/kfilewidget.cpp:546
 msgid "&Filter:"
 msgstr "&Passete:"
 
-#: ../kfile/kfilewidget.cpp:693
+#: ../kfile/kfilewidget.cpp:734
 #, fuzzy
 #| msgid "You can only select local files."
 msgid "You can only select one file"
 msgstr "Vos n' poloz tchoezi ki des fitchîs locås."
 
-#: ../kfile/kfilewidget.cpp:694
+#: ../kfile/kfilewidget.cpp:735
 msgid "More than one file provided"
 msgstr ""
 
-#: ../kfile/kfilewidget.cpp:715
+#: ../kfile/kfilewidget.cpp:756
 #, fuzzy
 #| msgid "You can only select local files."
 msgid "You can only select local files"
 msgstr "Vos n' poloz tchoezi ki des fitchîs locås."
 
-#: ../kfile/kfilewidget.cpp:716
+#: ../kfile/kfilewidget.cpp:757
 #, fuzzy
 #| msgid "Remote Files Not Accepted"
 msgid "Remote files not accepted"
 msgstr "Fitchîs å lon nén acceptés"
 
-#: ../kfile/kfilewidget.cpp:996
+#: ../kfile/kfilewidget.cpp:1037
 msgid "This is the name to save the file as."
 msgstr "Li no k' i fåt dner å fitchî pol schaper."
 
-#: ../kfile/kfilewidget.cpp:1001
+#: ../kfile/kfilewidget.cpp:1042
 msgid ""
 "This is the list of files to open. More than one file can be specified by "
 "listing several files, separated by spaces."
@@ -5566,22 +5633,22 @@ msgstr ""
 "Li djivêye des fitchîs a drovi.  Vos poloz tchoezi di pus d' on fitchî: "
 "fijhoz è 'ne djivêye avou on blanc inte tchaeke no."
 
-#: ../kfile/kfilewidget.cpp:1008
+#: ../kfile/kfilewidget.cpp:1049
 msgid "This is the name of the file to open."
 msgstr "No do fitchî a drovi."
 
-#: ../kfile/kfilewidget.cpp:1210
+#: ../kfile/kfilewidget.cpp:1251
 #, kde-format
 msgid "The file \"%1\" already exists. Do you wish to overwrite it?"
 msgstr ""
 
-#: ../kfile/kfilewidget.cpp:1211
+#: ../kfile/kfilewidget.cpp:1252
 #, fuzzy
 #| msgid "O&verwrite All"
 msgid "Overwrite File?"
 msgstr "Si&potchî tot a fwait"
 
-#: ../kfile/kfilewidget.cpp:1342
+#: ../kfile/kfilewidget.cpp:1383
 msgid ""
 "The chosen filenames do not\n"
 "appear to be valid."
@@ -5589,45 +5656,45 @@ msgstr ""
 "Il avize ki les nos di fitchîs tchoezis\n"
 "ni sont nén valåbes."
 
-#: ../kfile/kfilewidget.cpp:1344
+#: ../kfile/kfilewidget.cpp:1385
 msgid "Invalid Filenames"
 msgstr "Måva no(s) di fitchî(s)"
 
-#: ../kfile/kfilewidget.cpp:1405
+#: ../kfile/kfilewidget.cpp:1446
 msgid "You can only select local files."
 msgstr "Vos n' poloz tchoezi ki des fitchîs locås."
 
-#: ../kfile/kfilewidget.cpp:1406
+#: ../kfile/kfilewidget.cpp:1447
 msgid "Remote Files Not Accepted"
 msgstr "Fitchîs å lon nén acceptés"
 
-#: ../kfile/kfilewidget.cpp:1476
+#: ../kfile/kfilewidget.cpp:1517
 msgid "*|All Folders"
 msgstr "*|Tos les ridants"
 
-#: ../kfile/kfilewidget.cpp:1630
+#: ../kfile/kfilewidget.cpp:1671
 msgid "&Open"
 msgstr "Dr&ovi"
 
-#: ../kfile/kfilewidget.cpp:1797
+#: ../kfile/kfilewidget.cpp:1838
 #, kde-format
 msgid "Automatically select filename e&xtension (%1)"
 msgstr "Tchoezi &otomaticmint l' cawete des fitchîs (%1)"
 
-#: ../kfile/kfilewidget.cpp:1798
+#: ../kfile/kfilewidget.cpp:1839
 #, kde-format
 msgid "the extension <b>%1</b>"
 msgstr "li cawete <b>%1</b>"
 
-#: ../kfile/kfilewidget.cpp:1806
+#: ../kfile/kfilewidget.cpp:1847
 msgid "Automatically select filename e&xtension"
 msgstr "Tchoezi &otomaticmint l' cawete des fitchîs"
 
-#: ../kfile/kfilewidget.cpp:1807
+#: ../kfile/kfilewidget.cpp:1848
 msgid "a suitable extension"
 msgstr "ene cawete ki va bén"
 
-#: ../kfile/kfilewidget.cpp:1817
+#: ../kfile/kfilewidget.cpp:1858
 #, kde-format
 msgid ""
 "This option enables some convenient features for saving files with "
@@ -5643,7 +5710,7 @@ msgid ""
 "enabled as it makes your files more manageable."
 msgstr ""
 
-#: ../kfile/kfilewidget.cpp:2109
+#: ../kfile/kfilewidget.cpp:2150
 msgid ""
 "<qt>This button allows you to bookmark specific locations. Click on this "
 "button to open the bookmark menu where you may add, edit or select a "
@@ -5737,12 +5804,12 @@ msgstr ""
 "Fé on novea ridant dins:\n"
 "%1"
 
-#: ../kfile/kdirselectdialog.cpp:143 ../kfile/kdiroperator.cpp:701
+#: ../kfile/kdirselectdialog.cpp:143 ../kfile/kdiroperator.cpp:719
 #, kde-format
 msgid "A file or folder named %1 already exists."
 msgstr "On fitchî ou on ridant.lomé %1 egzistêye dedja."
 
-#: ../kfile/kdirselectdialog.cpp:147 ../kfile/kdiroperator.cpp:704
+#: ../kfile/kdirselectdialog.cpp:147 ../kfile/kdiroperator.cpp:722
 msgid "You do not have permission to create that folder."
 msgstr "Vos n' avoz nén les bons droets po fé ci ridant la."
 
@@ -5834,11 +5901,11 @@ msgstr ""
 msgid "Show Hidden Folders"
 msgstr "Mostrer fitchîs catchîs"
 
-#: ../kfile/kdiroperator.cpp:666 ../kfile/kdiroperator.cpp:674
+#: ../kfile/kdiroperator.cpp:684 ../kfile/kdiroperator.cpp:692
 msgid "New Folder"
 msgstr "Novea ridant"
 
-#: ../kfile/kdiroperator.cpp:675
+#: ../kfile/kdiroperator.cpp:693
 #, kde-format
 msgid ""
 "Create new folder in:\n"
@@ -5847,15 +5914,15 @@ msgstr ""
 "Fé on novea ridant dins:\n"
 "%1"
 
-#: ../kfile/kdiroperator.cpp:719
+#: ../kfile/kdiroperator.cpp:737
 msgid "You did not select a file to delete."
 msgstr "Vos n' avoz pont tchoezi di fitchî a disfacer."
 
-#: ../kfile/kdiroperator.cpp:720
+#: ../kfile/kdiroperator.cpp:738
 msgid "Nothing to Delete"
 msgstr "Gn a rén a disfacer"
 
-#: ../kfile/kdiroperator.cpp:741
+#: ../kfile/kdiroperator.cpp:759
 #, kde-format
 msgid ""
 "<qt>Do you really want to delete\n"
@@ -5864,19 +5931,19 @@ msgstr ""
 "<qt>Voloz v' po do bon disfacer\n"
 " «<b>%1</b>»?</qt>"
 
-#: ../kfile/kdiroperator.cpp:743
+#: ../kfile/kdiroperator.cpp:761
 msgid "Delete File"
 msgstr "Disfacer fitchî"
 
-#: ../kfile/kdiroperator.cpp:781
+#: ../kfile/kdiroperator.cpp:799
 msgid "You did not select a file to trash."
 msgstr "Vos n' avoz pont tchoezi di fitchî a taper å batch."
 
-#: ../kfile/kdiroperator.cpp:782
+#: ../kfile/kdiroperator.cpp:800
 msgid "Nothing to Trash"
 msgstr "I n' a rén a taper å batch"
 
-#: ../kfile/kdiroperator.cpp:799
+#: ../kfile/kdiroperator.cpp:817
 #, kde-format
 msgid ""
 "<qt>Do you really want to trash\n"
@@ -5885,109 +5952,121 @@ msgstr ""
 "<qt>Voloz vs po do bon taper å batch\n"
 " «<b>%1</b>»?</qt>"
 
-#: ../kfile/kdiroperator.cpp:801
+#: ../kfile/kdiroperator.cpp:819
 #, fuzzy
 msgid "Trash File"
 msgstr "Fitchîs timporaires"
 
-#: ../kfile/kdiroperator.cpp:802 ../kfile/kdiroperator.cpp:809
+#: ../kfile/kdiroperator.cpp:820 ../kfile/kdiroperator.cpp:827
 msgctxt "to trash"
 msgid "&Trash"
 msgstr "&Taper å batch"
 
-#: ../kfile/kdiroperator.cpp:806
+#: ../kfile/kdiroperator.cpp:824
 #, kde-format
 msgid "translators: not called for n == 1"
 msgid_plural "Do you really want to trash these %1 items?"
 msgstr[0] "Voloz vs po do bon taper å batch ci cayet ci?"
 msgstr[1] "Voloz vs po do bon taper å batch ces %1 cayets ci?"
 
-#: ../kfile/kdiroperator.cpp:808
+#: ../kfile/kdiroperator.cpp:826
 #, fuzzy
 msgid "Trash Files"
 msgstr "Fitchîs timporaires"
 
-#: ../kfile/kdiroperator.cpp:935 ../kfile/kdiroperator.cpp:1052
+#: ../kfile/kdiroperator.cpp:1014 ../kfile/kdiroperator.cpp:1131
 msgid "The specified folder does not exist or was not readable."
 msgstr "Ci ridant la n' egzistêye nén oudonbén dji nel sai lére."
 
-#: ../kfile/kdiroperator.cpp:1631
+#: ../kfile/kdiroperator.cpp:1711
 msgid "Menu"
 msgstr "Menu"
 
-#: ../kfile/kdiroperator.cpp:1635
+#: ../kfile/kdiroperator.cpp:1715
 msgid "Parent Folder"
 msgstr "Ridant parint"
 
-#: ../kfile/kdiroperator.cpp:1642
+#: ../kfile/kdiroperator.cpp:1722
 msgid "Home Folder"
 msgstr "Ridant måjhon"
 
-#: ../kfile/kdiroperator.cpp:1645
+#: ../kfile/kdiroperator.cpp:1725
 msgid "Reload"
 msgstr "Ritcherdjî"
 
-#: ../kfile/kdiroperator.cpp:1648
+#: ../kfile/kdiroperator.cpp:1728
 msgid "New Folder..."
 msgstr "Novea ridant..."
 
-#: ../kfile/kdiroperator.cpp:1659
+#: ../kfile/kdiroperator.cpp:1739
 msgid "Delete"
 msgstr "Disfacer"
 
-#: ../kfile/kdiroperator.cpp:1666
+#: ../kfile/kdiroperator.cpp:1746
 msgid "Sorting"
 msgstr "Dji relî"
 
-#: ../kfile/kdiroperator.cpp:1669
+#: ../kfile/kdiroperator.cpp:1749
 msgid "By Name"
 msgstr "Sol no"
 
-#: ../kfile/kdiroperator.cpp:1673
+#: ../kfile/kdiroperator.cpp:1753
 msgid "By Size"
 msgstr "Sol grandeu"
 
-#: ../kfile/kdiroperator.cpp:1677
+#: ../kfile/kdiroperator.cpp:1757
 msgid "By Date"
 msgstr "Sol date"
 
-#: ../kfile/kdiroperator.cpp:1681
+#: ../kfile/kdiroperator.cpp:1761
 msgid "By Type"
 msgstr "Sol sôre"
 
-#: ../kfile/kdiroperator.cpp:1685
+#: ../kfile/kdiroperator.cpp:1765
 msgid "Descending"
 msgstr "Discrexhant"
 
-#: ../kfile/kdiroperator.cpp:1695
+#: ../kfile/kdiroperator.cpp:1775
+msgid "Icon Position"
+msgstr ""
+
+#: ../kfile/kdiroperator.cpp:1778
+msgid "Next to the filename"
+msgstr ""
+
+#: ../kfile/kdiroperator.cpp:1782
+msgid "Above the filename"
+msgstr ""
+
+#: ../kfile/kdiroperator.cpp:1793
 msgid "Short View"
 msgstr "Court håynaedje"
 
-#: ../kfile/kdiroperator.cpp:1700
+#: ../kfile/kdiroperator.cpp:1798
 msgid "Detailed View"
 msgstr "Håyner totafwait"
 
-#: ../kfile/kdiroperator.cpp:1705
+#: ../kfile/kdiroperator.cpp:1803
 #, fuzzy
 #| msgid "Detailed View"
 msgid "Tree View"
 msgstr "Håyner totafwait"
 
-#: ../kfile/kdiroperator.cpp:1710
+#: ../kfile/kdiroperator.cpp:1808
 #, fuzzy
 #| msgid "Detailed View"
 msgid "Detailed Tree View"
 msgstr "Håyner totafwait"
 
-#: ../kfile/kdiroperator.cpp:1721
+#: ../kfile/kdiroperator.cpp:1819
 msgid "Show Hidden Files"
 msgstr "Mostrer fitchîs catchîs"
 
-#: ../kfile/kdiroperator.cpp:1725
+#: ../kfile/kdiroperator.cpp:1823
 msgid "Show Preview"
 msgstr "Prévey"
 
-#: ../kfile/kdiroperator.cpp:1738
+#: ../kfile/kdiroperator.cpp:1836
 msgid "&View"
 msgstr "&Vey"
 
@@ -6247,9 +6326,6 @@ msgstr ""
 
 #~ msgid "Thumbnail Previews"
 #~ msgstr "Préveyaedje avou des ptitès imådjes"
-
-#~ msgid "Icon View"
-#~ msgstr "Mostrer des imådjetes"
 
 #~ msgid "Size"
 #~ msgstr "Grandeu"
