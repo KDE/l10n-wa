@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpresenter\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-10 10:15+0100\n"
+"POT-Creation-Date: 2008-11-11 09:59+0100\n"
 "PO-Revision-Date: 2008-08-25 01:16+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@tele2allin.be>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -84,46 +84,117 @@ msgstr "Tos les fitchîs"
 msgid "Configure Slide Show"
 msgstr "Drî cisse pådje chal"
 
-#: part/KPrView.cpp:97
+#: part/KPrView.cpp:62
+#, fuzzy
+#| msgid "Show rulers"
+msgid "Show Master Slides"
+msgstr "Mostrer les rîles"
+
+#: part/KPrView.cpp:63
+#, fuzzy
+#| msgid "Insert New Slide"
+msgid "Insert Slide"
+msgstr "Sititchî ene novele pådje"
+
+#: part/KPrView.cpp:64 part/KPrView.cpp:65
+msgid "Insert a new slide after the current one"
+msgstr ""
+
+#: part/KPrView.cpp:66
+#, fuzzy
+#| msgid "Slide Title"
+msgid "Copy Slide"
+msgstr "Tite del pådje"
+
+#: part/KPrView.cpp:67 part/KPrView.cpp:68
+#, fuzzy
+#| msgid "Before Current Slide"
+msgid "Copy the current slide"
+msgstr "Divant cisse pådje chal"
+
+#. i18n: file: part/ui/KPrCustomSlideShowsDialog.ui:136
+#. i18n: ectx: property (text), widget (QPushButton, deleteSlideButton)
+#: part/KPrView.cpp:69 rc.cpp:170
+#, fuzzy
+msgid "Delete Slide"
+msgstr "Tchoezi &totafwait"
+
+#: part/KPrView.cpp:70 part/KPrView.cpp:71
+#, fuzzy
+#| msgid "Before Current Slide"
+msgid "Delete the current slide"
+msgstr "Divant cisse pådje chal"
+
+#: part/KPrView.cpp:72
+#, fuzzy
+#| msgid "Goto Slide..."
+msgid "Master Slide..."
+msgstr "Potchî al Pådje..."
+
+#: part/KPrView.cpp:73
+#, fuzzy
+#| msgid "Previous"
+msgid "Previous Slide"
+msgstr "Di dvant"
+
+#: part/KPrView.cpp:74 part/KPrPresenterViewInterface.cpp:67
+msgid "Next Slide"
+msgstr "Diya d' après"
+
+#: part/KPrView.cpp:75
+#, fuzzy
+#| msgid "Next Slide"
+msgid "First Slide"
+msgstr "Diya d' après"
+
+#: part/KPrView.cpp:76
+#, fuzzy
+#| msgid "Next Slide"
+msgid "Last Slide"
+msgstr "Diya d' après"
+
+#: part/KPrView.cpp:114
 msgid "Normal"
 msgstr "Miernowe"
 
-#: part/KPrView.cpp:103
+#: part/KPrView.cpp:120
 #, fuzzy
 #| msgid "Note"
 msgid "Notes"
 msgstr "Note"
 
-#: part/KPrView.cpp:112
+#: part/KPrView.cpp:129
 msgid "Create Appear Animation"
 msgstr ""
 
-#: part/KPrView.cpp:116
+#: part/KPrView.cpp:133
 #, fuzzy
 msgid "Edit Custom Slide Shows..."
 msgstr "Potchî al Pådje..."
 
-#: part/KPrView.cpp:120
+#: part/KPrView.cpp:137
 #, fuzzy
 #| msgid "Presentation"
 msgid "Start Presentation"
 msgstr "Prezintaedje"
 
-#: part/KPrView.cpp:123
-msgid "From Current Page"
+#: part/KPrView.cpp:140
+#, fuzzy
+#| msgid "Before Current Slide"
+msgid "From Current Slide"
+msgstr "Divant cisse pådje chal"
+
+#: part/KPrView.cpp:144
+msgid "From First Slide"
 msgstr ""
 
-#: part/KPrView.cpp:126
-msgid "From First Page"
-msgstr ""
-
-#: part/KPrView.cpp:130
+#: part/KPrView.cpp:148
 #, fuzzy
 #| msgid "&Configure Completion..."
 msgid "Configure Slide Show..."
 msgstr "&Apontyî l' completaedje..."
 
-#: part/KPrView.cpp:134
+#: part/KPrView.cpp:152
 #, fuzzy
 #| msgid "Configure KPresenter..."
 msgid "Configure Presenter View..."
@@ -178,7 +249,7 @@ msgstr "Cogne"
 #: part/dockers/KPrPageLayoutDocker.cpp:45
 #, fuzzy
 #| msgid "Page &Layout..."
-msgid "Page Layouts"
+msgid "Slide Layouts"
 msgstr "&Arindjmint del pådje..."
 
 #: part/KPrPlaceholderShapeFactory.cpp:30
@@ -352,10 +423,6 @@ msgstr "Sven Langkamp "
 #: part/KPrAboutData.h:55
 msgid "Timothée Lacroix "
 msgstr "Timothée Lacroix "
-
-#: part/KPrPresenterViewInterface.cpp:67
-msgid "Next Slide"
-msgstr "Diya d' après"
 
 #: part/KPrPresenterViewInterface.cpp:77
 msgid "Speaker Notes"
@@ -737,13 +804,6 @@ msgstr "Drî cisse pådje chal"
 msgid "Add Slide"
 msgstr "Sititchî ene novele pådje"
 
-#. i18n: file: part/ui/KPrCustomSlideShowsDialog.ui:136
-#. i18n: ectx: property (text), widget (QPushButton, deleteSlideButton)
-#: rc.cpp:170
-#, fuzzy
-msgid "Delete Slide"
-msgstr "Tchoezi &totafwait"
-
 #. i18n: file: part/ui/KPrCustomSlideShowsDialog.ui:182
 #. i18n: ectx: property (text), widget (QPushButton, undoButton)
 #: rc.cpp:173
@@ -890,8 +950,10 @@ msgstr "Copete:"
 #. i18n: file: part/kpresenter.rc:55
 #. i18n: ectx: Menu (page)
 #: rc.cpp:251
-msgid "&Page"
-msgstr "&Pådje"
+#, fuzzy
+#| msgid "Slide Title"
+msgid "&Slide"
+msgstr "Tite del pådje"
 
 #: plugins/eventactions/sound/KPrSoundEventActionWidget.cpp:102
 #, fuzzy
@@ -2026,6 +2088,14 @@ msgid "Box"
 msgstr ""
 
 #, fuzzy
+#~| msgid "Page &Layout..."
+#~ msgid "Page Layouts"
+#~ msgstr "&Arindjmint del pådje..."
+
+#~ msgid "&Page"
+#~ msgstr "&Pådje"
+
+#, fuzzy
 #~| msgid "Image &effect:"
 #~ msgid "Page effects"
 #~ msgstr "&Efet po l' imådje:"
@@ -2176,9 +2246,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Cover down effect"
 #~ msgstr "Nol efet"
-
-#~ msgid "Before Current Slide"
-#~ msgstr "Divant cisse pådje chal"
 
 #~ msgid "Insert &new slide:"
 #~ msgstr "Sititchî ene &novele pådje:"
@@ -2535,9 +2602,6 @@ msgstr ""
 #~ msgid "Path Settings"
 #~ msgstr "Apontiaedjes des tchmins"
 
-#~ msgid "Show rulers"
-#~ msgstr "Mostrer les rîles"
-
 #~ msgid "Show status bar"
 #~ msgstr "Mostrer li bår ås messaedjes"
 
@@ -2648,9 +2712,6 @@ msgstr ""
 #~ msgid "Insert File"
 #~ msgstr "Sititchî on fitchî"
 
-#~ msgid "Insert New Slide"
-#~ msgstr "Sititchî ene novele pådje"
-
 #~ msgid "Number of copies:"
 #~ msgstr "Nombe si copeyes: "
 
@@ -2682,9 +2743,6 @@ msgstr ""
 
 #~ msgid "All Supported Files"
 #~ msgstr "Tos les fitchîs sopoirtés"
-
-#~ msgid "Goto Slide..."
-#~ msgstr "Potchî al Pådje..."
 
 #~ msgid "Go to slide:"
 #~ msgstr "Potchî al Pådje:"
@@ -3183,9 +3241,6 @@ msgstr ""
 
 #~ msgid "First"
 #~ msgstr "Prumî"
-
-#~ msgid "Previous"
-#~ msgstr "Di dvant"
 
 #~ msgid "Next"
 #~ msgstr "Shuvant"
