@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksysguard\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-18 09:55+0100\n"
+"POT-Creation-Date: 2008-12-27 11:10+0100\n"
 "PO-Revision-Date: 2008-01-01 20:32+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@tele2allin.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -83,6 +83,7 @@ msgstr ""
 
 #: ksgrd/SensorAgent.cc:105
 #, kde-format
+msgctxt "%1 is a host name"
 msgid ""
 "Message from %1:\n"
 "%2"
@@ -122,9 +123,10 @@ msgstr ""
 msgid "User Load"
 msgstr "Tchedje uzeu"
 
-#. i18n: tag WorkSheet attribute title
-#. i18n: file: ./SystemLoad.sgrd:3
-#: ksgrd/SensorManager.cc:63 rc.cpp:149
+#: ksgrd/SensorManager.cc:63
+#, fuzzy
+#| msgid "System Load"
+msgctxt "@item sensor description"
 msgid "System Load"
 msgstr "Tchedje sistinme"
 
@@ -298,6 +300,7 @@ msgid "Packets"
 msgstr "Pakets"
 
 #: ksgrd/SensorManager.cc:106
+msgctxt "@item sensor description ('carrier' is a type of network signal)"
 msgid "Carrier"
 msgstr ""
 
@@ -657,6 +660,9 @@ msgid "Size ratio:"
 msgstr ""
 
 #: KSGAppletSettings.cc:63
+#, fuzzy
+#| msgid "%"
+msgctxt "Number suffix in spinbox"
 msgid "%"
 msgstr "%"
 
@@ -762,6 +768,9 @@ msgid "Upper limit:"
 msgstr ""
 
 #: SensorDisplayLib/DancingBarsSettings.cc:157
+#, fuzzy
+#| msgid "Look"
+msgctxt "@title:tab Appearance of the bar graph"
 msgid "Look"
 msgstr "Loukî"
 
@@ -995,11 +1004,13 @@ msgstr ""
 
 #: SensorDisplayLib/FancyPlotter.cc:344
 #, kde-format
+msgctxt "%1 is what is being shown statistics for, like 'Memory', 'Swap', etc."
 msgid "<p><b>%1:</b><br>"
 msgstr ""
 
 #: SensorDisplayLib/FancyPlotter.cc:391
 #, kde-format
+msgctxt "%1 and %2 are sensor's last and maximum value"
 msgid "%1 of %2"
 msgstr ""
 
@@ -1072,8 +1083,12 @@ msgid "Foreground color:"
 msgstr ""
 
 #: SensorDisplayLib/MultiMeterSettings.cc:31
+#, fuzzy
+#| msgid "&Multimeter"
+msgctxt ""
+"Multimeter is a sensor display that mimics 'digital multimeter' aparatus"
 msgid "Multimeter Settings"
-msgstr ""
+msgstr "&Multimete"
 
 #: SensorDisplayLib/ListViewSettings.cc:30
 msgid "List View Settings"
@@ -1256,6 +1271,12 @@ msgstr "&Candjî"
 msgid "Process Table"
 msgstr "Tåvlea des processus"
 
+#. i18n: tag WorkSheet attribute title
+#. i18n: file: ./SystemLoad.sgrd:3
+#: rc.cpp:149
+msgid "System Load"
+msgstr "Tchedje sistinme"
+
 #. i18n: tag display attribute title
 #. i18n: file: ./SystemLoad.sgrd:5
 #: rc.cpp:152
@@ -1363,8 +1384,10 @@ msgstr "&Prôpietés"
 
 #: ksysguard.cc:449
 #, kde-format
-msgid " %1 processes "
-msgstr ""
+msgid " 1 process "
+msgid_plural " %1 processes "
+msgstr[0] ""
+msgstr[1] ""
 
 #: ksysguard.cc:455
 #, kde-format
@@ -1372,7 +1395,9 @@ msgid " CPU: %1% "
 msgstr " CPU: %1% "
 
 #: ksysguard.cc:469
-#, kde-format
+#, fuzzy, kde-format
+#| msgid " Memory: %1 / %2 "
+msgctxt "Arguments are formatted byte sizes (used/total)"
 msgid " Memory: %1 / %2 "
 msgstr " Memwere: %1 / %2 "
 
@@ -1381,7 +1406,9 @@ msgid " No swap space available "
 msgstr ""
 
 #: ksysguard.cc:498
-#, kde-format
+#, fuzzy, kde-format
+#| msgid " Swap: %1 / %2 "
+msgctxt "Arguments are formatted byte sizes (used/total)"
 msgid " Swap: %1 / %2 "
 msgstr " Swap: %1 / %2 "
 
@@ -1450,9 +1477,6 @@ msgstr ""
 
 #~ msgid "Worksheet Properties"
 #~ msgstr "Prôpietés del foye d' ovraedje"
-
-#~ msgid "&Multimeter"
-#~ msgstr "&Multimete"
 
 #~ msgid "Count:"
 #~ msgstr "Contaedje:"
