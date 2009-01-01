@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmlocale\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-12-31 11:06+0100\n"
+"POT-Creation-Date: 2009-01-01 09:42+0100\n"
 "PO-Revision-Date: 2008-06-29 15:48+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -470,7 +470,63 @@ msgstr "DJOÛ_SAMWINNE_RASCOURTI"
 msgid "WEEKDAY"
 msgstr "DJOÛ_SAMWINNE"
 
-#: localetime.cpp:458
+#: localetime.cpp:207
+msgid "Calendar system:"
+msgstr "Sistinme di calindrî:"
+
+#. i18n: file: localetime.ui:60
+#. i18n: ectx: property (text), widget (QLabel, m_labTimeFmt)
+#: localetime.cpp:215 rc.cpp:81
+msgid "Time format:"
+msgstr "Cogne di l' eure:"
+
+#. i18n: file: localetime.ui:74
+#. i18n: ectx: property (text), widget (QLabel, m_labDateFmt)
+#: localetime.cpp:220 rc.cpp:84
+msgid "Date format:"
+msgstr "Cogne del date:"
+
+#. i18n: file: localetime.ui:88
+#. i18n: ectx: property (text), widget (QLabel, m_labDateFmtShort)
+#: localetime.cpp:225 rc.cpp:87
+msgid "Short date format:"
+msgstr "Cogne del coûte date:"
+
+#. i18n: file: localetime.ui:100
+#. i18n: ectx: property (text), widget (QCheckBox, m_chDateMonthNamePossessive)
+#: localetime.cpp:230 rc.cpp:90
+msgid "Use declined form of month name"
+msgstr "Eployî fômes des moes avou l' possessif"
+
+#. i18n: file: localetime.ui:118
+#. i18n: ectx: property (text), widget (QLabel, labWeekStartDay)
+#: localetime.cpp:234 rc.cpp:93
+msgid "First day of the week:"
+msgstr "Prumî djoû del samwinne:"
+
+#. i18n: file: localetime.ui:132
+#. i18n: ectx: property (text), widget (QLabel, labWorkingWeekStartDay)
+#: localetime.cpp:239 rc.cpp:96
+#, fuzzy
+#| msgid "First day of the week:"
+msgid "First working day of the week:"
+msgstr "Prumî djoû del samwinne:"
+
+#. i18n: file: localetime.ui:146
+#. i18n: ectx: property (text), widget (QLabel, labWorkingWeekEndDay)
+#: localetime.cpp:244 rc.cpp:99
+#, fuzzy
+#| msgid "First day of the week:"
+msgid "Last working day of the week:"
+msgstr "Prumî djoû del samwinne:"
+
+#. i18n: file: localetime.ui:160
+#. i18n: ectx: property (text), widget (QLabel, labWeekDayOfPray)
+#: localetime.cpp:249 rc.cpp:102
+msgid "Day of the week for religious observance:"
+msgstr ""
+
+#: localetime.cpp:469
 msgctxt "some reasonable time formats for the language"
 msgid ""
 "HH:MM:SS\n"
@@ -479,7 +535,7 @@ msgstr ""
 "HH:MM:SS\n"
 "pH:MM:SS AMPM"
 
-#: localetime.cpp:466
+#: localetime.cpp:477
 msgctxt "some reasonable date formats for the language"
 msgid ""
 "WEEKDAY MONTH dD YYYY\n"
@@ -488,7 +544,7 @@ msgstr ""
 "DJOÛ_SAMWINNE dD MOES AAAA\n"
 "DJOÛ_SAMWINNE_RASCOURTI dD MOES_RASCOURTI AAAA"
 
-#: localetime.cpp:474
+#: localetime.cpp:485
 msgctxt "some reasonable short date formats for the language"
 msgid ""
 "YYYY-MM-DD\n"
@@ -499,27 +555,27 @@ msgstr ""
 "AAAA-MM-DD\n"
 "dD/mM/AA"
 
-#: localetime.cpp:485
+#: localetime.cpp:496
 msgctxt "Calendar System Gregorian"
 msgid "Gregorian"
 msgstr "Gregoryin"
 
-#: localetime.cpp:487
+#: localetime.cpp:498
 msgctxt "Calendar System Hijri"
 msgid "Hijri"
 msgstr "Mozlimî (Hijri)"
 
-#: localetime.cpp:489
+#: localetime.cpp:500
 msgctxt "Calendar System Hebrew"
 msgid "Hebrew"
 msgstr "Djwif"
 
-#: localetime.cpp:491
+#: localetime.cpp:502
 msgctxt "Calendar System Jalali"
 msgid "Jalali"
 msgstr "Iranyin (Jalali)"
 
-#: localetime.cpp:494
+#: localetime.cpp:505
 msgid ""
 "<p>The text in this textbox will be used to format time strings. The "
 "sequences below will be replaced:</p><table><tr><td><b>HH</b></td><td>The "
@@ -545,7 +601,7 @@ msgstr ""
 "td><td>Soeye-t i «am» ou «pm» sorlon l' eure. Nonne est «pm» eyet meynute est "
 "«am».</td></tr></table>"
 
-#: localetime.cpp:517
+#: localetime.cpp:528
 msgid ""
 "<table><tr><td><b>YYYY</b></td><td>The year with century as a decimal number."
 "</td></tr><tr><td><b>YY</b></td><td>The year without century as a decimal "
@@ -571,7 +627,7 @@ msgstr ""
 "caracteres do djoû del samwinne.</td></tr><tr><td><b>DJOÛ_SAMWINNE</b></"
 "td><td>Li no do djoû del samwinne tot etir.</td></tr></table>"
 
-#: localetime.cpp:538
+#: localetime.cpp:549
 msgid ""
 "<p>The text in this textbox will be used to format long dates. The sequences "
 "below will be replaced:</p>"
@@ -579,7 +635,7 @@ msgstr ""
 "<p>Li tecse dins l' boesse serè eployî pol façon di håyner les longuès "
 "dates. Les shûtes pa dzo seront discandjeyes:</p>"
 
-#: localetime.cpp:544
+#: localetime.cpp:555
 msgid ""
 "<p>The text in this textbox will be used to format short dates. For "
 "instance, this is used when listing files. The sequences below will be "
@@ -589,7 +645,7 @@ msgstr ""
 "dates. C' est dins cisse cogne la, metans, ki vos voeroz cwand vos dmandroz "
 "ene djivêye di fitchîs. Les shûtes pa dzo seront discandjeyes:</p>"
 
-#: localetime.cpp:551
+#: localetime.cpp:562
 msgid ""
 "<p>This option determines which day will be considered as the first one of "
 "the week.</p>"
@@ -597,7 +653,7 @@ msgstr ""
 "<p>Cisse tchuze chal definixh li djoû a prinde come li prumî del samwinne.</"
 "p>"
 
-#: localetime.cpp:556
+#: localetime.cpp:567
 #, fuzzy
 #| msgid ""
 #| "<p>This option determines which day will be considered as the first one "
@@ -609,7 +665,7 @@ msgstr ""
 "<p>Cisse tchuze chal definixh li djoû a prinde come li prumî del samwinne.</"
 "p>"
 
-#: localetime.cpp:561
+#: localetime.cpp:572
 #, fuzzy
 #| msgid ""
 #| "<p>This option determines which day will be considered as the first one "
@@ -621,7 +677,7 @@ msgstr ""
 "<p>Cisse tchuze chal definixh li djoû a prinde come li prumî del samwinne.</"
 "p>"
 
-#: localetime.cpp:566
+#: localetime.cpp:577
 #, fuzzy
 #| msgid ""
 #| "<p>This option determines which day will be considered as the first one "
@@ -633,7 +689,7 @@ msgstr ""
 "<p>Cisse tchuze chal definixh li djoû a prinde come li prumî del samwinne.</"
 "p>"
 
-#: localetime.cpp:573
+#: localetime.cpp:584
 msgid ""
 "<p>This option determines whether possessive form of month names should be "
 "used in dates.</p>"
@@ -642,7 +698,7 @@ msgstr ""
 "des moes dins les dates (c' est come çoula e walon: «djanvî» mins «15 "
 "d' awousse»).</p>"
 
-#: localetime.cpp:583
+#: localetime.cpp:594
 #, fuzzy
 #| msgid "Money:"
 msgctxt "Day name list, option for no day of religious observance"
@@ -676,58 +732,6 @@ msgstr "Cogne"
 #| msgid "Calendar system:"
 msgid "Calendar system"
 msgstr "Sistinme di calindrî:"
-
-#. i18n: file: localetime.ui:60
-#. i18n: ectx: property (text), widget (QLabel, m_labTimeFmt)
-#: rc.cpp:81
-msgid "Time format:"
-msgstr "Cogne di l' eure:"
-
-#. i18n: file: localetime.ui:74
-#. i18n: ectx: property (text), widget (QLabel, m_labDateFmt)
-#: rc.cpp:84
-msgid "Date format:"
-msgstr "Cogne del date:"
-
-#. i18n: file: localetime.ui:88
-#. i18n: ectx: property (text), widget (QLabel, m_labDateFmtShort)
-#: rc.cpp:87
-msgid "Short date format:"
-msgstr "Cogne del coûte date:"
-
-#. i18n: file: localetime.ui:100
-#. i18n: ectx: property (text), widget (QCheckBox, m_chDateMonthNamePossessive)
-#: rc.cpp:90
-msgid "Use declined form of month name"
-msgstr "Eployî fômes des moes avou l' possessif"
-
-#. i18n: file: localetime.ui:118
-#. i18n: ectx: property (text), widget (QLabel, labWeekStartDay)
-#: rc.cpp:93
-msgid "First day of the week:"
-msgstr "Prumî djoû del samwinne:"
-
-#. i18n: file: localetime.ui:132
-#. i18n: ectx: property (text), widget (QLabel, labWorkingWeekStartDay)
-#: rc.cpp:96
-#, fuzzy
-#| msgid "First day of the week:"
-msgid "First working day of the week:"
-msgstr "Prumî djoû del samwinne:"
-
-#. i18n: file: localetime.ui:146
-#. i18n: ectx: property (text), widget (QLabel, labWorkingWeekEndDay)
-#: rc.cpp:99
-#, fuzzy
-#| msgid "First day of the week:"
-msgid "Last working day of the week:"
-msgstr "Prumî djoû del samwinne:"
-
-#. i18n: file: localetime.ui:160
-#. i18n: ectx: property (text), widget (QLabel, labWeekDayOfPray)
-#: rc.cpp:102
-msgid "Day of the week for religious observance:"
-msgstr ""
 
 #: rc.cpp:103
 msgctxt "NAME OF TRANSLATORS"
@@ -810,9 +814,6 @@ msgstr "&Eure && dates"
 #: toplevel.cpp:266
 msgid "&Other"
 msgstr "Ô&te"
-
-#~ msgid "Calendar system:"
-#~ msgstr "Sistinme di calindrî:"
 
 #~ msgctxt "@item:Country"
 #~ msgid "Default"
