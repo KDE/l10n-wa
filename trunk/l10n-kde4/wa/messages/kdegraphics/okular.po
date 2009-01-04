@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: okular\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2009-01-04 10:28+0100\n"
-"PO-Revision-Date: 2009-01-03 22:39+0100\n"
+"PO-Revision-Date: 2009-01-04 17:51+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
 "MIME-Version: 1.0\n"
@@ -79,6 +79,14 @@ msgid ""
 "If %f is not specified, then the file name is appended to the specified "
 "command."
 msgstr ""
+"<qt>Defini l' comande d' èn aspougneu d' tecse da vosse a enonder.<br />\n"
+"Vos ploz mete kékès secwinces, eto:\n"
+"<ul>\n"
+"  <li>%f - li no do fitchî</li>\n"
+"  <li>%l - li roye do fitchî a awou potchî</li>\n"
+"  <li>%c - li colone do fitchî a awou potchî</li>\n"
+"</ul>\n"
+"Si %f n' est nén specifyî, li fitchî srè adon radjouté al comande dinêye."
 
 #: conf/preferencesdialog.cpp:37
 msgid "General"
@@ -250,10 +258,8 @@ msgstr ""
 "Fåt i rataker pal valêye?"
 
 #: core/document.cpp:1562
-msgid ""
-"Can not find a plugin which is able to handle the document being passed."
-msgstr ""
-"Dji n' sai trover d' tchôke-divins ki pout apougnî l' documint ki passe."
+msgid "Can not find a plugin which is able to handle the document being passed."
+msgstr "Dji n' sai trover d' tchôke-divins ki pout apougnî l' documint ki passe."
 
 #: core/document.cpp:1936
 msgid "File Size"
@@ -561,7 +567,7 @@ msgstr "Prôpietés del note"
 
 #: ui/annotationpropertiesdialog.cpp:154
 msgid "Inline Note Properties"
-msgstr "Prôpietés del note dins l' messaedje"
+msgstr "Prôpietés del note dins l' fitchî"
 
 #: ui/annotationpropertiesdialog.cpp:157
 msgid "Line Properties"
@@ -573,7 +579,7 @@ msgstr "Prôpietés del djeyometreye"
 
 #: ui/annotationpropertiesdialog.cpp:163
 msgid "Highlight Properties"
-msgstr "Prôpietés del sorbriyance"
+msgstr "Prôpietés do meteaedje en evidince"
 
 #: ui/annotationpropertiesdialog.cpp:166
 msgid "Stamp Properties"
@@ -613,7 +619,7 @@ msgstr "Note"
 #. i18n: file: ui/data/tools.xml:27
 #: ui/guiutils.cpp:74 rc.cpp:311
 msgid "Inline Note"
-msgstr "Note dins l' messaedje"
+msgstr "Note dins l' fitchî"
 
 #: ui/guiutils.cpp:77
 msgid "Line"
@@ -625,7 +631,7 @@ msgstr "Djeyometreye"
 
 #: ui/guiutils.cpp:83 ui/annotationwidgets.cpp:397
 msgid "Highlight"
-msgstr "Sorbiyance"
+msgstr "Mete en evidince"
 
 #. i18n: tag tool attribute name
 #. i18n: file: ui/data/tools.xml:62
@@ -666,10 +672,8 @@ msgstr "Wice voloz schaper %1?"
 #: ui/guiutils.cpp:208 ui/propertiesdialog.cpp:203 part.cpp:1410 part.cpp:1424
 #: part.cpp:1460
 #, kde-format
-msgid ""
-"A file named \"%1\" already exists. Are you sure you want to overwrite it?"
-msgstr ""
-"On fitchî « %1 » egzistêye dedja. Estoz seur(e) ki vos l' voloz spotchî?"
+msgid "A file named \"%1\" already exists. Are you sure you want to overwrite it?"
+msgstr "On fitchî « %1 » egzistêye dedja. Estoz seur(e) ki vos l' voloz spotchî?"
 
 #: ui/guiutils.cpp:208 ui/propertiesdialog.cpp:203
 msgctxt "@action:button"
@@ -1948,8 +1952,7 @@ msgstr "Candjî &coleurs"
 #. i18n: ectx: property (text), widget (QLabel, warn)
 #: rc.cpp:77
 msgid "Warning: these options can badly affect drawing speed."
-msgstr ""
-"Asteme: ces tchuzes polèt aveur on mwais efet sol radisté d' dessinaedje."
+msgstr "Asteme: ces tchuzes polèt aveur on mwais efet sol radisté d' dessinaedje."
 
 #. i18n: file: conf/dlgaccessibilitybase.ui:78
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -2230,12 +2233,15 @@ msgid ""
 "<b>Note</b>: the information here is used only for comments and reviews. "
 "Information inserted here will not be transmitted without your knowledge."
 msgstr ""
+"<b>Note</b>: l' informåcion chal n' est eployeye ki po les rawetes et rilevêyes."
+" "
+"L' informåcion stitcheye chal ni srè nén evoyeye sins vos l' dire."
 
 #. i18n: file: conf/dlgeditorbase.ui:25
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:227
 msgid "Editor:"
-msgstr ""
+msgstr "Aspougneu d' tecse:"
 
 #. i18n: file: conf/dlgeditorbase.ui:32
 #. i18n: ectx: property (whatsThis), widget (QComboBox, kcfg_ExternalEditor)
@@ -2244,208 +2250,210 @@ msgctxt "@info:whatsthis"
 msgid ""
 "Choose the editor you want to launch when Okular wants to open a source file."
 msgstr ""
+"Tchoezixhoz l' aspougneu k' vos vloz k' Okular enonde cwand i vout drovi on "
+"fitchî sourdant."
 
 #. i18n: file: conf/dlgeditorbase.ui:70
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:233
 msgid "Command:"
-msgstr ""
+msgstr "Comande :"
 
 #. i18n: file: conf/dlggeneralbase.ui:66
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowScrollBars)
 #: rc.cpp:239
 msgid "Show scroll&bars"
-msgstr ""
+msgstr "Mostrer les &acinceus"
 
 #. i18n: file: conf/dlggeneralbase.ui:76
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_SyncThumbnailsViewport)
 #: rc.cpp:242
 msgid "Link the &thumbnails with the page"
-msgstr ""
+msgstr "Loyî les &prévoeyaedjes al pådje"
 
 #. i18n: file: conf/dlggeneralbase.ui:83
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowOSD)
 #: rc.cpp:245
 msgid "Show &hints and info messages"
-msgstr ""
+msgstr "Mostrer les &conseys eyet messaedjes d' informåcion"
 
 #. i18n: file: conf/dlggeneralbase.ui:143
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: rc.cpp:248
 msgid "Program Features"
-msgstr ""
+msgstr "Fonccionålités do programe"
 
 #. i18n: file: conf/dlggeneralbase.ui:181
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ObeyDRM)
 #: rc.cpp:251
 msgid "&Obey DRM limitations"
-msgstr ""
+msgstr "&Schoûter les rastrindaedjes DRM"
 
 #. i18n: file: conf/dlggeneralbase.ui:188
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_WatchFile)
 #: rc.cpp:254
 msgid "&Reload document on file change"
-msgstr ""
+msgstr "&Ritcherdjî documint å candjmint d' on fitchî"
 
 #. i18n: file: conf/dlggeneralbase.ui:195
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ChooseGenerators)
 #: rc.cpp:257
 msgid "Show backend selection dialog"
-msgstr ""
+msgstr "Mostrer l' divize di tchoes del bouye di fond"
 
 #. i18n: file: conf/dlggeneralbase.ui:255
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
 #: rc.cpp:260
 msgid "View Options"
-msgstr ""
+msgstr "Tchuzes di voeyaedje"
 
 #. i18n: file: conf/dlggeneralbase.ui:261
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_CenterFirstPageInRow)
 #: rc.cpp:263
 msgid "Center &first page"
-msgstr ""
+msgstr "Mete å mitan l' &prumire pådje"
 
 #. i18n: file: conf/dlggeneralbase.ui:276
 #. i18n: ectx: property (text), widget (QLabel, columnLabel)
 #: rc.cpp:266
 msgid "Overview columns:"
-msgstr ""
+msgstr "Mwaisse vuwe des colones:"
 
 #. i18n: file: conf/dlgperformancebase.ui:25
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: rc.cpp:269
 msgid "CPU Usage"
-msgstr ""
+msgstr "Eployaedje CPU"
 
 #. i18n: file: conf/dlgperformancebase.ui:53
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnableCompositing)
 #: rc.cpp:272
 msgid "Enable &transparency effects"
-msgstr ""
+msgstr "Permete les efets d' &transparince"
 
 #. i18n: file: conf/dlgperformancebase.ui:60
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnableThreading)
 #: rc.cpp:275
 msgid "Enable &background generation"
-msgstr ""
+msgstr "Permete l' ahivaedje d' on &fond"
 
 #. i18n: file: conf/dlgperformancebase.ui:115
 #. i18n: ectx: property (title), widget (KButtonGroup, kcfg_MemoryLevel)
 #: rc.cpp:278
 msgid "Memory Usage"
-msgstr ""
+msgstr "Eployaedje del memwere"
 
 #. i18n: file: conf/dlgperformancebase.ui:143
 #. i18n: ectx: property (text), widget (QRadioButton, lowRadio)
 #: rc.cpp:281
 msgid "&Low"
-msgstr ""
+msgstr "&Basse"
 
 #. i18n: file: conf/dlgperformancebase.ui:150
 #. i18n: ectx: property (text), widget (QRadioButton, normalRadio)
 #: rc.cpp:284
 msgid "&Normal (default)"
-msgstr ""
+msgstr "&Normåle (prémetou)"
 
 #. i18n: file: conf/dlgperformancebase.ui:157
 #. i18n: ectx: property (text), widget (QRadioButton, aggressiveRadio)
 #: rc.cpp:287
 msgid "&Aggressive"
-msgstr ""
+msgstr "&Hagnant"
 
 #. i18n: file: ui/data/tools.xml:21
 #: rc.cpp:289
 msgctxt "Annotation tool"
 msgid "Text Annotation"
-msgstr ""
+msgstr "Anotåcion di tecse"
 
 #. i18n: file: ui/data/tools.xml:28
 #: rc.cpp:291
 msgctxt "Annotation tool"
 msgid "Inline Text Annotation (drag to select a zone)"
-msgstr ""
+msgstr "Anotåcion di tecse dins l' fitchî (bodjîz po tchoezi ene redjon)"
 
 #. i18n: file: ui/data/tools.xml:35
 #: rc.cpp:293
 msgctxt "Annotation tool"
 msgid "Green Ink"
-msgstr ""
+msgstr "Vete intche"
 
 #. i18n: file: ui/data/tools.xml:42
 #: rc.cpp:295
 msgctxt "Annotation tool"
 msgid "Yellow Highlight"
-msgstr ""
+msgstr "Djaene metaedje en evidince"
 
 #. i18n: file: ui/data/tools.xml:49
 #: rc.cpp:297
 msgctxt "Annotation tool"
 msgid "Straight Yellow Line"
-msgstr ""
+msgstr "Droete djaene roye"
 
 #. i18n: file: ui/data/tools.xml:56
 #: rc.cpp:299
 msgctxt "Annotation tool"
 msgid "Draw a polygon (click on the first point to close it)"
-msgstr ""
+msgstr "Dessiner on poligone (clitchîz sol prumî pont pol clôre)"
 
 #. i18n: file: ui/data/tools.xml:63
 #: rc.cpp:301
 msgctxt "Annotation tool"
 msgid "Put a stamp symbol"
-msgstr ""
+msgstr "Mete on simbole tampon"
 
 #. i18n: file: ui/data/tools.xml:70
 #: rc.cpp:303
 msgctxt "Annotation tool"
 msgid "Underline the text with a black line"
-msgstr ""
+msgstr "Sorlignî l' tecse avou ene noere roye"
 
 #. i18n: file: ui/data/tools.xml:77
 #: rc.cpp:305
 msgctxt "Annotation tool"
 msgid "A cyan ellipse"
-msgstr ""
+msgstr "On bleu ceke asplati"
 
 #. i18n: tag tool attribute name
 #. i18n: file: ui/data/tools.xml:34
 #: rc.cpp:314
 msgid "Green Highlighter"
-msgstr ""
+msgstr "Vert meteu en evidince"
 
 #. i18n: tag tool attribute name
 #. i18n: file: ui/data/tools.xml:41
 #: rc.cpp:317
 msgid "Yellow Highlighter"
-msgstr ""
+msgstr "Djaene meteu en evidince"
 
 #. i18n: tag tool attribute name
 #. i18n: file: ui/data/tools.xml:48
 #: rc.cpp:320
 msgid "Straight Yellow Line"
-msgstr ""
+msgstr "Droete djaene roye"
 
 #. i18n: tag tool attribute name
 #. i18n: file: ui/data/tools.xml:55
 #: rc.cpp:323
 msgid "Blue Polygon"
-msgstr ""
+msgstr "Bleu poligone"
 
 #. i18n: tag tool attribute name
 #. i18n: file: ui/data/tools.xml:69
 #: rc.cpp:329
 msgid "Black Underlining"
-msgstr ""
+msgstr "Noer sorlignaedje"
 
 #. i18n: tag tool attribute name
 #. i18n: file: ui/data/tools.xml:76
 #: rc.cpp:332
 msgid "Cyan Ellipse"
-msgstr ""
+msgstr "Bleu ceke asplati"
 
 #: aboutdata.h:24
 msgid "Okular, a universal document viewer"
-msgstr ""
+msgstr "Okular, en univiersel håyneu di documints"
 
 #: aboutdata.h:26
 msgid ""
@@ -2476,6 +2484,7 @@ msgstr "Tobias Koenig"
 #: aboutdata.h:36
 msgid "Lots of framework work, ODT and FictionBook backends"
 msgstr ""
+"Beacôp d' ovraedje so l' evironmint, bouyes di fond ODT eyet Binde d' Imådjes"
 
 #: aboutdata.h:37
 msgid "Albert Astals Cid"
@@ -2500,3 +2509,4 @@ msgstr "Enrico Ros"
 #: aboutdata.h:39
 msgid "KPDF developer"
 msgstr "Programeu po KPDF"
+
