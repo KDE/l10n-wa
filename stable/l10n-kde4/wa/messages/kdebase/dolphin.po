@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dolphin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-01-27 08:23+0100\n"
+"POT-Creation-Date: 2009-01-29 07:19+0100\n"
 "PO-Revision-Date: 2008-12-04 21:36+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -18,15 +18,43 @@ msgstr ""
 "X-Generator: Lokalize 0.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: filterbar.cpp:43
+#: filterbar.cpp:41
+msgctxt "@info:tooltip"
+msgid "Hide Filter Bar"
+msgstr "Catchî l' båre des passetes"
+
+#: filterbar.cpp:45
 msgctxt "@label:textbox"
 msgid "Filter:"
 msgstr "Passete:"
 
-#: filterbar.cpp:56
+#: iconsizegroupbox.cpp:35
+msgctxt "@title:group"
+msgid "Icon Size"
+msgstr "Grandeu imådjete"
+
+#: iconsizegroupbox.cpp:39
+msgctxt "@label:listbox"
+msgid "Default:"
+msgstr "Prémetou:"
+
+#: iconsizegroupbox.cpp:46
+msgctxt "@label:listbox"
+msgid "Preview:"
+msgstr "Prévey:"
+
+#: iconsizegroupbox.cpp:109 dolphinstatusbar.cpp:309
+#, kde-format
 msgctxt "@info:tooltip"
-msgid "Hide Filter Bar"
-msgstr "Catchî l' båre des passetes"
+msgid "Size: 1 pixel"
+msgid_plural "Size: %1 pixels"
+msgstr[0] "Grandeu : 1 picsel"
+msgstr[1] "Grandeu : %1 picsels"
+
+#: draganddrophelper.cpp:108
+msgctxt "@info:status"
+msgid "A folder cannot be dropped into itself"
+msgstr "On pout nén bodjî on ridant dins lu minme"
 
 #: dolphinfontrequester.cpp:40
 msgctxt "@item:inlistbox Font"
@@ -43,22 +71,65 @@ msgctxt "@action:button Choose font"
 msgid "Choose..."
 msgstr "Tchoezi..."
 
-#: dolphindetailsview.cpp:521
+#: dolphindetailsview.cpp:561
 msgctxt "@title:menu"
 msgid "Columns"
 msgstr "Colones"
 
-#: dolphinview.cpp:909
+#: dolphinview.cpp:554
+#, kde-format
+msgctxt "@info:status"
+msgid "<filename>%1</filename> selected"
+msgstr "<filename>%1</filename> tchoezi"
+
+#: dolphinview.cpp:555
+#, kde-format
+msgctxt "@info:status"
+msgid "<filename>%1</filename> selected (%2)"
+msgstr "<filename>%1</filename> tchoezi (%2)"
+
+#: dolphinview.cpp:559
+#, kde-format
+msgctxt "@info:status"
+msgid "1 Folder selected"
+msgid_plural "%1 Folders selected"
+msgstr[0] "%1 ridant di tchoezi"
+msgstr[1] "%1 ridants di tchoezis"
+
+#: dolphinview.cpp:560
+#, fuzzy, kde-format
+#| msgctxt "@info:status"
+#| msgid "1 Folder selected"
+#| msgid_plural "%1 Folders selected"
+msgctxt "@info:status"
+msgid "1 File selected"
+msgid_plural "%1 Files selected"
+msgstr[0] "%1 ridant di tchoezi"
+msgstr[1] "%1 ridants di tchoezis"
+
+#: dolphinview.cpp:562
+#, kde-format
+msgctxt "@info:status folders, files (size)"
+msgid "%1, %2 (%3)"
+msgstr "%1, %2 (%3)"
+
+#: dolphinview.cpp:565
+#, kde-format
+msgctxt "@info:status files (size)"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: dolphinview.cpp:1029
 msgctxt "@action:inmenu"
 msgid "Paste One Folder"
 msgstr "Aclaper on ridant"
 
-#: dolphinview.cpp:910
+#: dolphinview.cpp:1030
 msgctxt "@action:inmenu"
 msgid "Paste One File"
 msgstr "Aclaper on fitchî"
 
-#: dolphinview.cpp:913
+#: dolphinview.cpp:1033
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Paste One Item"
@@ -66,82 +137,97 @@ msgid_plural "Paste %1 Items"
 msgstr[0] "Aclaper on cayet"
 msgstr[1] "Aclaper %1 cayets"
 
-#: dolphinview.cpp:917 treeviewcontextmenu.cpp:67
+#: dolphinview.cpp:1037 treeviewcontextmenu.cpp:67
 msgctxt "@action:inmenu"
 msgid "Paste"
 msgstr "Claper"
 
-#: dolphinview.cpp:959
+#: dolphinview.cpp:1084
 msgctxt "@info:status"
 msgid "Delete operation completed."
 msgstr "Dj' a stî å coron di l' operåcion di disfaçaedje."
 
-#: dolphinview.cpp:985
+#: dolphinview.cpp:1125
 msgctxt "@info:status"
 msgid "The location is empty."
 msgstr "L' eplaeçmint est vude."
 
-#: dolphinview.cpp:987
+#: dolphinview.cpp:1127
 #, kde-format
 msgctxt "@info:status"
 msgid "The location '%1' is invalid."
 msgstr "L' eplaeçmint «%1» n' est nén valide."
 
-#: generalsettingspage.cpp:54
+#: generalsettingspage.cpp:57
 msgctxt "@title:group"
 msgid "Ask For Confirmation When"
 msgstr "Dimander èn acertinaedje cwand"
 
-#: generalsettingspage.cpp:56
+#: generalsettingspage.cpp:59
 msgctxt "@option:check Ask for Confirmation When"
 msgid "Moving files or folders to trash"
 msgstr "on tape des fitchîs ou ridants å batch"
 
-#: generalsettingspage.cpp:59
+#: generalsettingspage.cpp:62
 msgctxt "@option:check Ask for Confirmation When"
 msgid "Deleting files or folders"
 msgstr "on disface des fitchîs ou ridants"
 
-#: generalsettingspage.cpp:66
+#: generalsettingspage.cpp:69
 msgctxt "@title:group"
 msgid "Context Menu"
 msgstr "Dressêye di contecse"
 
-#: generalsettingspage.cpp:69
+#: generalsettingspage.cpp:72
 msgctxt "@option:check"
 msgid "Show 'Delete' command"
 msgstr "Håyner comande «Disfacer»"
 
-#: generalsettingspage.cpp:72
+#: generalsettingspage.cpp:75
 msgctxt "@option:check"
 msgid "Show 'Copy To' and 'Move To' commands"
 msgstr "Håyner comandes « Aclaper viè » eyet « Bodjî viè »"
 
-#: generalsettingspage.cpp:79
+#: generalsettingspage.cpp:82
+msgctxt "@title:group"
+msgid "Status Bar"
+msgstr "Bår d' estat"
+
+#: generalsettingspage.cpp:84
+msgctxt "@option:check"
+msgid "Show zoom slider"
+msgstr "Håyner l' boton d' acinseu pol zoumaedje"
+
+#: generalsettingspage.cpp:87
+msgctxt "@option:check"
+msgid "Show space information"
+msgstr "Håyner l' infôrmåcion sol plaece"
+
+#: generalsettingspage.cpp:94
 msgctxt "@option:check"
 msgid "Browse through archives"
 msgstr "Foyter dins ls årtchives"
 
-#: generalsettingspage.cpp:82
+#: generalsettingspage.cpp:97
 msgctxt "@option:check"
 msgid "Rename inline"
 msgstr "Rilomer dvins"
 
-#: statusbarspaceinfo.cpp:76
-#, kde-format
-msgctxt "@info:status Free disk space"
-msgid "%1 free"
-msgstr "%1 libe"
+#: generalsettingspage.cpp:100
+msgctxt "option:check"
+msgid "Open folders during drag operations"
+msgstr "Drovi les ridants tins ls operåcions d' bodjaedje"
 
-#: statusbarspaceinfo.cpp:92 statusbarspaceinfo.cpp:101
+#: statusbarspaceinfo.cpp:78 statusbarspaceinfo.cpp:91
 msgctxt "@info:status"
 msgid "Unknown size"
 msgstr "Grandeu nén cnoxhowe"
 
-#: statusbarspaceinfo.cpp:137
-msgctxt "@info:status"
-msgid "Getting size..."
-msgstr "Dji cwir après l' grandeu..."
+#: statusbarspaceinfo.cpp:102
+#, kde-format
+msgctxt "@info:status Free disk space"
+msgid "%1 free"
+msgstr "%1 libe"
 
 #: treeviewcontextmenu.cpp:60
 msgctxt "@action:inmenu"
@@ -168,7 +254,7 @@ msgctxt "@action:inmenu"
 msgid "Delete"
 msgstr "Disfacer"
 
-#: treeviewcontextmenu.cpp:111 dolphincontextmenu.cpp:262
+#: treeviewcontextmenu.cpp:111 dolphincontextmenu.cpp:282
 msgctxt "@action:inmenu"
 msgid "Properties"
 msgstr "Prôpietés"
@@ -178,31 +264,28 @@ msgctxt "@action:inmenu"
 msgid "Show Hidden Files"
 msgstr "Håyner fitchîs catchîs"
 
-#: dolphinviewcontainer.cpp:218
+#: dolphinviewcontainer.cpp:239
 msgctxt "@info:progress"
 msgid "Loading folder..."
 msgstr "Dji tchedje li ridant..."
 
-#: dolphinviewcontainer.cpp:324
-#, kde-format
+#: dolphinviewcontainer.cpp:380
 msgctxt "@info:status"
-msgid "1 Folder selected"
-msgid_plural "%1 Folders selected"
-msgstr[0] "%1 ridant di tchoezi"
-msgstr[1] "%1 ridants di tchoezis"
+msgid "Dolphin does not support web pages, the web browser has been launched"
+msgstr ""
+"Dolphin ni sait nén drovi les pådjes waibes, li betchteu waibe a stî enondé"
 
-#: dolphinviewcontainer.cpp:332
-#, fuzzy, kde-format
-#| msgctxt "@info:status"
-#| msgid "1 File selected"
-#| msgid_plural "%1 Files selected"
+#: dolphinviewcontainer.cpp:388
 msgctxt "@info:status"
-msgid "1 File selected (%2)"
-msgid_plural "%1 Files selected (%2)"
-msgstr[0] "1 fitchî di tchoezi"
-msgstr[1] "%1 fitchîs di tchoezis"
+msgid "Protocol not supported by Dolphin, Konqueror has been launched"
+msgstr "Protocole nén sopoirté pa Dolphin, Konqueror a stî enondé"
 
-#: infosidebarpage.cpp:192
+#: dolphinviewcontainer.cpp:393
+msgctxt "@info:status"
+msgid "Invalid protocol"
+msgstr "Protocole nén valåbe"
+
+#: infosidebarpage.cpp:199
 #, kde-format
 msgctxt "@info"
 msgid "%1 item selected"
@@ -210,30 +293,70 @@ msgid_plural "%1 items selected"
 msgstr[0] "%1 cayet di tchoezi"
 msgstr[1] "%1 cayets di tchoezis"
 
-#: infosidebarpage.cpp:369
+#: infosidebarpage.cpp:376
 msgctxt "@label"
 msgid "Total size:"
 msgstr "Grandeu å totå :"
 
-#: infosidebarpage.cpp:373 infosidebarpage.cpp:376
+#: infosidebarpage.cpp:380 infosidebarpage.cpp:383 infosidebarpage.cpp:434
 msgctxt "@label"
 msgid "Type:"
 msgstr "Sôre :"
 
-#: infosidebarpage.cpp:373
+#: infosidebarpage.cpp:380
 msgctxt "@label"
 msgid "Folder"
 msgstr "Ridant"
 
-#: infosidebarpage.cpp:374 infosidebarpage.cpp:379
+#: infosidebarpage.cpp:381 infosidebarpage.cpp:386
 msgctxt "@label"
 msgid "Modified:"
 msgstr "Candjî :"
 
-#: infosidebarpage.cpp:378
+#: infosidebarpage.cpp:385
 msgctxt "@label"
 msgid "Size:"
 msgstr "Grandeu :"
+
+#: infosidebarpage.cpp:428
+msgctxt "@label"
+msgid "Album:"
+msgstr "Albom :"
+
+#: infosidebarpage.cpp:429
+msgctxt "@label"
+msgid "Artist:"
+msgstr "Årtisse :"
+
+#: infosidebarpage.cpp:430
+msgctxt "@label"
+msgid "Genre:"
+msgstr "Djinre :"
+
+#: infosidebarpage.cpp:431
+msgctxt "@label"
+msgid "Height:"
+msgstr "Hôteur :"
+
+#: infosidebarpage.cpp:432
+msgctxt "@label"
+msgid "Lines:"
+msgstr "Royes :"
+
+#: infosidebarpage.cpp:433
+msgctxt "@label"
+msgid "Title:"
+msgstr "Tite :"
+
+#: infosidebarpage.cpp:435
+msgctxt "@label"
+msgid "Track:"
+msgstr "Djive :"
+
+#: infosidebarpage.cpp:436
+msgctxt "@label"
+msgid "Width:"
+msgstr "Lårdjeur :"
 
 #: viewpropsprogressinfo.cpp:49
 msgctxt "@title:window"
@@ -283,12 +406,9 @@ msgid "Use thumbnails embedded in files"
 msgstr "Eployî l' prévoeyaedje ravalé dins les fitchîs"
 
 #: generalviewsettingspage.cpp:101
-#, fuzzy
-#| msgctxt "@label"
-#| msgid "Show selection toggle"
 msgctxt "@option:check"
-msgid "Show selection toggle"
-msgstr "Mostrer les tchoes catchîs"
+msgid "Show selection marker"
+msgstr "Mostrer les markeu d' tchoes"
 
 #: generalviewsettingspage.cpp:104
 msgctxt "@option:check"
@@ -365,7 +485,7 @@ msgstr "Manaedjeu di fitchîs"
 #| msgctxt "@info:credit"
 #| msgid "(C) 2006-2008 Peter Penz"
 msgctxt "@info:credit"
-msgid "(C) 2006, 2007 Peter Penz"
+msgid "(C) 2006-2008 Peter Penz"
 msgstr "© 2006, 2008 Peter Penz"
 
 #: main.cpp:40
@@ -428,49 +548,54 @@ msgctxt "@info:shell"
 msgid "Document to open"
 msgstr "Documint a drovi"
 
-#: dolphincontextmenu.cpp:112
+#: dolphincontextmenu.cpp:114
 msgctxt "@action:inmenu"
 msgid "Empty Trash"
 msgstr "Vudî l' batch"
 
-#: dolphincontextmenu.cpp:118 dolphincontextmenu.cpp:259
+#: dolphincontextmenu.cpp:120 dolphincontextmenu.cpp:279
 msgctxt "@action:inmenu Add current folder to places"
 msgid "Add to Places"
 msgstr "Radjouter a des plaeces"
 
-#: dolphincontextmenu.cpp:125
+#: dolphincontextmenu.cpp:127
 msgctxt "@info"
 msgid "Do you really want to empty the Trash? All items will be deleted."
 msgstr "Voloz vs vudî l' batch podbon ? Tos ses cayets sront disfacés."
 
-#: dolphincontextmenu.cpp:129
+#: dolphincontextmenu.cpp:131
 msgctxt "@action:button"
 msgid "Empty Trash"
 msgstr "Vudî l' batch"
 
-#: dolphincontextmenu.cpp:138
+#: dolphincontextmenu.cpp:140
 msgctxt "@label"
 msgid "Trash"
 msgstr "Batch"
 
-#: dolphincontextmenu.cpp:154
+#: dolphincontextmenu.cpp:156
 msgctxt "@action:inmenu"
 msgid "Restore"
 msgstr "Rapexhî"
 
-#: dolphincontextmenu.cpp:184
+#: dolphincontextmenu.cpp:185 dolphinmainwindow.cpp:967
+msgctxt "@title:menu Create new folder, file, link, etc."
+msgid "Create New"
+msgstr "Ahiver novea"
+
+#: dolphincontextmenu.cpp:204
 msgctxt "@action:inmenu Add selected folder to places"
 msgid "Add to Places"
 msgstr "Radjouter a des plaeces"
 
 #. i18n: file: dolphinui.rc:21
 #. i18n: ectx: Menu (view_mode)
-#: dolphincontextmenu.cpp:243 rc.cpp:174 rc.cpp:272
+#: dolphincontextmenu.cpp:263 rc.cpp:201 rc.cpp:311
 msgctxt "@title:menu"
 msgid "View Mode"
 msgstr "Môde di Vuwe"
 
-#: dolphincontextmenu.cpp:348
+#: dolphincontextmenu.cpp:362
 msgctxt "@action:inmenu"
 msgid "Paste Into Folder"
 msgstr "Aclaper dins ridant"
@@ -480,276 +605,245 @@ msgctxt "@title:group Name"
 msgid "Others"
 msgstr "Ôtes"
 
-#: dolphinmodel.cpp:195
+#: dolphinmodel.cpp:192
 msgctxt "@title:group Size"
 msgid "Folders"
 msgstr "Ridants"
 
-#: dolphinmodel.cpp:197
+#: dolphinmodel.cpp:194
 msgctxt "@title:group Size"
 msgid "Small"
 msgstr "Pitit"
 
-#: dolphinmodel.cpp:199
+#: dolphinmodel.cpp:196
 msgctxt "@title:group Size"
 msgid "Medium"
 msgstr "Moyén"
 
-#: dolphinmodel.cpp:201
+#: dolphinmodel.cpp:198
 msgctxt "@title:group Size"
 msgid "Big"
 msgstr "Grand"
 
-#: dolphinmodel.cpp:222
+#: dolphinmodel.cpp:229
 msgctxt "@title:group Date"
 msgid "Today"
 msgstr "Ådjourdu"
 
-#: dolphinmodel.cpp:223
+#: dolphinmodel.cpp:230
 msgctxt "@title:group Date"
 msgid "Yesterday"
 msgstr "Ayir"
 
-#: dolphinmodel.cpp:224
+#: dolphinmodel.cpp:231
 #, c-format
 msgctxt "@title:group The week day name: %A"
 msgid "%A"
 msgstr "%A"
 
-#: dolphinmodel.cpp:228
+#: dolphinmodel.cpp:235
 msgctxt "@title:group Date"
 msgid "Last Week"
 msgstr "Samwinne di dvant"
 
-#: dolphinmodel.cpp:231
+#: dolphinmodel.cpp:238
 msgctxt "@title:group Date"
 msgid "Two Weeks Ago"
 msgstr "Gn a deus samwinnes"
 
-#: dolphinmodel.cpp:234
+#: dolphinmodel.cpp:241
 msgctxt "@title:group Date"
 msgid "Three Weeks Ago"
 msgstr "Gn a troes samwinnes"
 
-#: dolphinmodel.cpp:237
+#: dolphinmodel.cpp:245
 msgctxt "@title:group Date"
 msgid "Earlier this Month"
 msgstr "Pus rade ci moes"
 
-#: dolphinmodel.cpp:245
+#: dolphinmodel.cpp:253
 msgctxt ""
 "@title:group Date: %B is full month name in current locale, and %Y is full "
 "year number"
 msgid "Yesterday (%B, %Y)"
 msgstr "Ayir (%B, %Y)"
 
-#: dolphinmodel.cpp:247
+#: dolphinmodel.cpp:255
 msgctxt ""
 "@title:group The week day name: %A, %B is full month name in current locale, "
 "and %Y is full year number"
 msgid "%A (%B, %Y)"
 msgstr "%A (%B, %Y)"
 
-#: dolphinmodel.cpp:249
+#: dolphinmodel.cpp:257
 msgctxt ""
 "@title:group Date: %B is full month name in current locale, and %Y is full "
 "year number"
 msgid "Last Week (%B, %Y)"
 msgstr "Samwinne di dvant (%B, %Y)"
 
-#: dolphinmodel.cpp:251
+#: dolphinmodel.cpp:259
 msgctxt ""
 "@title:group Date: %B is full month name in current locale, and %Y is full "
 "year number"
 msgid "Two Weeks Ago (%B, %Y)"
 msgstr "Gn a deus samwinnes (%B, %Y)"
 
-#: dolphinmodel.cpp:253
+#: dolphinmodel.cpp:261
 msgctxt ""
 "@title:group Date: %B is full month name in current locale, and %Y is full "
 "year number"
 msgid "Three Weeks Ago (%B, %Y)"
 msgstr "Gn a troes samwinnes (%B, %Y)"
 
-#: dolphinmodel.cpp:255
+#: dolphinmodel.cpp:263
 msgctxt ""
 "@title:group Date: %B is full month name in current locale, and %Y is full "
 "year number"
 msgid "Earlier on %B, %Y"
 msgstr "Pus rade ci moes %B, %Y"
 
-#: dolphinmodel.cpp:258
+#: dolphinmodel.cpp:266
 msgctxt ""
 "@title:group The month and year: %B is full month name in current locale, "
 "and %Y is full year number"
 msgid "%B, %Y"
 msgstr "%B, %Y"
 
-#: dolphinmodel.cpp:273 dolphinmodel.cpp:285 dolphinmodel.cpp:297
+#: dolphinmodel.cpp:281 dolphinmodel.cpp:293 dolphinmodel.cpp:305
 msgctxt "@item:intext Access permission, concatenated"
 msgid "Read, "
 msgstr "Lére, "
 
-#: dolphinmodel.cpp:276 dolphinmodel.cpp:288 dolphinmodel.cpp:300
+#: dolphinmodel.cpp:284 dolphinmodel.cpp:296 dolphinmodel.cpp:308
 msgctxt "@item:intext Access permission, concatenated"
 msgid "Write, "
 msgstr "Sicrire, "
 
-#: dolphinmodel.cpp:279 dolphinmodel.cpp:291 dolphinmodel.cpp:303
+#: dolphinmodel.cpp:287 dolphinmodel.cpp:299 dolphinmodel.cpp:311
 msgctxt "@item:intext Access permission, concatenated"
 msgid "Execute, "
 msgstr "Enonder, "
 
-#: dolphinmodel.cpp:281 dolphinmodel.cpp:293 dolphinmodel.cpp:305
+#: dolphinmodel.cpp:289 dolphinmodel.cpp:301 dolphinmodel.cpp:313
 msgctxt "@item:intext Access permission, concatenated"
 msgid "Forbidden"
 msgstr "Disfindou"
 
-#: dolphinmodel.cpp:307
+#: dolphinmodel.cpp:315
 #, kde-format
 msgctxt "@title:group Files and folders by permissions"
 msgid "(User: %1) (Group: %2) (Others: %3)"
 msgstr "(Uzeu: %1) (Groupe: %2) (Ôtes: %3)"
 
-#: dolphinmodel.cpp:333
+#: dolphinmodel.cpp:341
 msgctxt "@title:group Tags"
 msgid "Not yet tagged"
 msgstr "Nén co d' etikete"
 
-#: columnviewsettingspage.cpp:54
-msgctxt "@title:group"
-msgid "Column Width"
-msgstr "Grandeu del colone"
-
-#: columnviewsettingspage.cpp:57
-msgctxt "@item:inrange Column Width"
-msgid "Small"
-msgstr "Pitite"
-
-#: columnviewsettingspage.cpp:63
-msgctxt "@item:inrange Column Width"
-msgid "Large"
-msgstr "Grande"
-
-#: columnviewsettingspage.cpp:72 iconsizedialog.cpp:61
-#: detailsviewsettingspage.cpp:54
-msgctxt "@title:group"
-msgid "Icon Size"
-msgstr "Grandeu imådjete"
-
-#: columnviewsettingspage.cpp:75 detailsviewsettingspage.cpp:57
-msgctxt "@option:radio Icon Size"
-msgid "Small"
-msgstr "Pitite"
-
-#: columnviewsettingspage.cpp:76 detailsviewsettingspage.cpp:58
-msgctxt "@option:radio Icon Size"
-msgid "Medium"
-msgstr "Moyene"
-
-#: columnviewsettingspage.cpp:77 detailsviewsettingspage.cpp:59
-msgctxt "@option:radio Icon Size"
-msgid "Large"
-msgstr "Grande"
-
-#: columnviewsettingspage.cpp:93 iconsviewsettingspage.cpp:67
-#: detailsviewsettingspage.cpp:75
+#: columnviewsettingspage.cpp:68 iconsviewsettingspage.cpp:76
+#: detailsviewsettingspage.cpp:68
 msgctxt "@title:group"
 msgid "Text"
 msgstr "Tecse"
 
-#: columnviewsettingspage.cpp:96 iconsviewsettingspage.cpp:70
-#: detailsviewsettingspage.cpp:78
+#: columnviewsettingspage.cpp:71 iconsviewsettingspage.cpp:79
+#: detailsviewsettingspage.cpp:71
 msgctxt "@label:listbox"
 msgid "Font:"
 msgstr "Fonte:"
 
-#: viewsettingspage.cpp:53 kcmdolphin.cpp:59
-msgctxt "@title:tab General settings"
-msgid "General"
-msgstr "Djenerå"
-
-#: viewsettingspage.cpp:58 kcmdolphin.cpp:64
-msgctxt "@title:tab"
-msgid "Icons"
-msgstr "Imådjetes"
-
-#: viewsettingspage.cpp:63 kcmdolphin.cpp:69
-msgctxt "@title:tab"
-msgid "Details"
-msgstr "Detays"
-
-#: viewsettingspage.cpp:68 kcmdolphin.cpp:74
-msgctxt "@title:tab"
-msgid "Column"
-msgstr "Colone"
-
-#: iconsviewsettingspage.cpp:61
-msgctxt "@action:button"
-msgid "Change Icon && Preview Size..."
-msgstr "Candjî grandeu di l' imådjete eyet do prévoeyaedje..."
-
-#: iconsviewsettingspage.cpp:74
-msgctxt "@label:textbox"
-msgid "Number of lines:"
-msgstr "Nombe di royes:"
-
-#: iconsviewsettingspage.cpp:80
+#: columnviewsettingspage.cpp:75 iconsviewsettingspage.cpp:89
 msgctxt "@label:listbox"
 msgid "Text width:"
 msgstr "Lårdjeu do tecse:"
 
-#: iconsviewsettingspage.cpp:82
+#: columnviewsettingspage.cpp:77 iconsviewsettingspage.cpp:91
 msgctxt "@item:inlistbox Text width"
 msgid "Small"
 msgstr "Pitite"
 
-#: iconsviewsettingspage.cpp:83
+#: columnviewsettingspage.cpp:78 iconsviewsettingspage.cpp:92
 msgctxt "@item:inlistbox Text width"
 msgid "Medium"
 msgstr "Moyene"
 
-#: iconsviewsettingspage.cpp:84
+#: columnviewsettingspage.cpp:79 iconsviewsettingspage.cpp:93
 msgctxt "@item:inlistbox Text width"
 msgid "Large"
 msgstr "Grande"
 
-#: iconsviewsettingspage.cpp:96
+#: viewsettingspage.cpp:54 kcmdolphin.cpp:60
+msgctxt "@title:tab General settings"
+msgid "General"
+msgstr "Djenerå"
+
+#: viewsettingspage.cpp:59 kcmdolphin.cpp:65
+msgctxt "@title:tab"
+msgid "Icons"
+msgstr "Imådjetes"
+
+#: viewsettingspage.cpp:64 kcmdolphin.cpp:70
+msgctxt "@title:tab"
+msgid "Details"
+msgstr "Detays"
+
+#: viewsettingspage.cpp:69 kcmdolphin.cpp:75
+msgctxt "@title:tab"
+msgid "Column"
+msgstr "Colone"
+
+#: iconsviewsettingspage.cpp:83
+msgctxt "@label:textbox"
+msgid "Number of lines:"
+msgstr "Nombe di royes:"
+
+#: iconsviewsettingspage.cpp:94
+msgctxt "@item:inlistbox Text width"
+msgid "Huge"
+msgstr "Foû grande"
+
+#: iconsviewsettingspage.cpp:106
 msgctxt "@title:group"
 msgid "Grid"
 msgstr "Grile"
 
-#: iconsviewsettingspage.cpp:99
+#: iconsviewsettingspage.cpp:109
 msgctxt "@label:listbox"
 msgid "Arrangement:"
 msgstr "Arindjmint:"
 
-#: iconsviewsettingspage.cpp:101
+#: iconsviewsettingspage.cpp:111
 msgctxt "@item:inlistbox Arrangement"
-msgid "Left to Right"
-msgstr "Di hintche a droete"
+msgid "Columns"
+msgstr "Colones"
 
-#: iconsviewsettingspage.cpp:102
+#: iconsviewsettingspage.cpp:112
 msgctxt "@item:inlistbox Arrangement"
-msgid "Top to Bottom"
-msgstr "Del copete al valêye"
+msgid "Rows"
+msgstr "Royes"
 
-#: iconsviewsettingspage.cpp:105
+#: iconsviewsettingspage.cpp:115
 msgctxt "@label:listbox"
 msgid "Grid spacing:"
 msgstr "Espåçmint del grile:"
 
-#: iconsviewsettingspage.cpp:107
+#: iconsviewsettingspage.cpp:117
+msgctxt "@item:inlistbox Grid spacing"
+msgid "None"
+msgstr "Nouk"
+
+#: iconsviewsettingspage.cpp:118
 msgctxt "@item:inlistbox Grid spacing"
 msgid "Small"
 msgstr "Pitit"
 
-#: iconsviewsettingspage.cpp:108
+#: iconsviewsettingspage.cpp:119
 msgctxt "@item:inlistbox Grid spacing"
 msgid "Medium"
 msgstr "Moyén"
 
-#: iconsviewsettingspage.cpp:109
+#: iconsviewsettingspage.cpp:120
 msgctxt "@item:inlistbox Grid spacing"
 msgid "Large"
 msgstr "Grand"
@@ -786,7 +880,7 @@ msgstr ""
 #| msgctxt "@label"
 #| msgid "Add Comment..."
 msgctxt "@label"
-msgid "Add comment..."
+msgid "Add Comment..."
 msgstr "Radjouter ene rawete di tecse..."
 
 #: commentwidget.cpp:58
@@ -794,57 +888,57 @@ msgstr "Radjouter ene rawete di tecse..."
 #| msgctxt "@label"
 #| msgid "Change Comment..."
 msgctxt "@label"
-msgid "Change comment..."
+msgid "Change Comment..."
 msgstr "Candjî l' rawete di tecse..."
 
-#: startupsettingspage.cpp:57
+#: startupsettingspage.cpp:58
 msgctxt "@title:group"
 msgid "Home Folder"
 msgstr "Ridant måjhon"
 
-#: startupsettingspage.cpp:62
+#: startupsettingspage.cpp:63
 msgctxt "@label:textbox"
 msgid "Location:"
 msgstr "Eplaeçmint:"
 
-#: startupsettingspage.cpp:73
+#: startupsettingspage.cpp:74
 msgctxt "@action:button"
 msgid "Use Current Location"
 msgstr "Eployî eplaeçmint do moumint"
 
-#: startupsettingspage.cpp:76
+#: startupsettingspage.cpp:77
 msgctxt "@action:button"
 msgid "Use Default Location"
 msgstr "Eployî prémetou eplaeçmint"
 
-#: startupsettingspage.cpp:85
+#: startupsettingspage.cpp:86
 msgctxt "@option:check Startup Settings"
 msgid "Split view mode"
 msgstr "Dispårti li Håynaedje"
 
-#: startupsettingspage.cpp:86
+#: startupsettingspage.cpp:87
 msgctxt "@option:check Startup Settings"
 msgid "Editable location bar"
 msgstr "Aspougnåve båre  d' eplaeçmint"
 
-#: startupsettingspage.cpp:87
+#: startupsettingspage.cpp:88
+msgctxt "@option:check Startup Settings"
+msgid "Show full path inside location bar"
+msgstr "Mostrer l' tchimin en etir dins l' båre d' eplaeçmint"
+
+#: startupsettingspage.cpp:89
 msgctxt "@option:check Startup Settings"
 msgid "Show filter bar"
 msgstr "Mostrer båre des passetes"
 
-#: startupsettingspage.cpp:119
+#: startupsettingspage.cpp:122
 msgctxt "@info"
 msgid "The location for the home folder is invalid and will not be applied."
 msgstr ""
 "L' eplaeçmint do ridant måjhon n' est nén valide eyet n' sårè nén metou en "
 "ouve."
 
-#: tagcloud/newtagdialog.cpp:31
-msgctxt "@title:window"
-msgid "Create new Tag"
-msgstr "Ahiver novele etikete"
-
-#: tagcloud/newtagdialog.cpp:68
+#: tagcloud/newtagdialog.cpp:31 tagcloud/newtagdialog.cpp:68
 msgctxt "@title:window"
 msgid "Create New Tag"
 msgstr "Ahiver novele etikete"
@@ -854,12 +948,12 @@ msgctxt "@title:window subtitle to previous message"
 msgid "with optional icon and description"
 msgstr "avou ene opcionele imådjete eyet on discrijhaedje"
 
-#: tagcloud/resourcetaggingwidget.cpp:108
+#: tagcloud/resourcetaggingwidget.cpp:122
 #, fuzzy
 #| msgctxt "@label"
 #| msgid "Change Tags..."
 msgctxt "@label"
-msgid "Change tags..."
+msgid "Change Tags..."
 msgstr "Candjî etiketes..."
 
 #: tagcloud/tagcloud.cpp:134
@@ -867,52 +961,47 @@ msgctxt "@label"
 msgid "New Tag..."
 msgstr "Novele etikete..."
 
-#: tagcloud/tagcloud.cpp:737
+#: tagcloud/tagcloud.cpp:739
 msgctxt "@label Indicator when no tags defined"
 msgid "No Tags"
 msgstr "Pont d' etikete"
 
-#: dolphinpart.cpp:142
+#: dolphinpart.cpp:152
 msgctxt "@action:inmenu Edit"
 msgid "&Edit File Type..."
 msgstr "&Candjî sôre di fitchî..."
 
-#: dolphinpart.cpp:146
-msgctxt "@action:inmenu Edit"
-msgid "Properties"
-msgstr "Prôpietés"
-
-#: dolphinpart.cpp:159
+#: dolphinpart.cpp:164
 msgctxt "@action:inmenu Go"
 msgid "App&lications"
 msgstr "Pro&grames"
 
-#: dolphinpart.cpp:162
+#: dolphinpart.cpp:167
 msgctxt "@action:inmenu Go"
 msgid "&Network Folders"
 msgstr "Rida&nts rantoele"
 
-#: dolphinpart.cpp:165
+#: dolphinpart.cpp:170
 msgctxt "@action:inmenu Go"
 msgid "Sett&ings"
 msgstr "Apont&iaedjes"
 
-#: dolphinpart.cpp:168
+#: dolphinpart.cpp:173
 msgctxt "@action:inmenu Go"
 msgid "Trash"
 msgstr "Batch"
 
-#: dolphinpart.cpp:171
+#: dolphinpart.cpp:176
 msgctxt "@action:inmenu Go"
 msgid "Autostart"
 msgstr "Enonde tot seu"
 
-#: dolphinpart.cpp:178
+#: dolphinpart.cpp:183
 msgctxt "@action:inmenu Tools"
 msgid "Open &Terminal"
 msgstr "Drovi &terminå"
 
-#: dolphinpart.cpp:248
+#: dolphinpart.cpp:253
 msgctxt "@title"
 msgid "Dolphin Part"
 msgstr "Pårt di Dolphin"
@@ -929,7 +1018,7 @@ msgstr "Pårt di Dolphin"
 #. i18n: ectx: label, entry (FontFamily), group (IconsMode)
 #. i18n: file: dolphin_columnmodesettings.kcfg:9
 #. i18n: ectx: label, entry (FontFamily), group (ColumnMode)
-#: rc.cpp:3 rc.cpp:24 rc.cpp:132 rc.cpp:236 rc.cpp:302 rc.cpp:332
+#: rc.cpp:3 rc.cpp:27 rc.cpp:150 rc.cpp:263 rc.cpp:341 rc.cpp:371
 msgctxt "@label"
 msgid "Font family"
 msgstr "Famile del fonte"
@@ -946,7 +1035,7 @@ msgstr "Famile del fonte"
 #. i18n: ectx: label, entry (UseSystemFont), group (IconsMode)
 #. i18n: file: dolphin_columnmodesettings.kcfg:13
 #. i18n: ectx: label, entry (UseSystemFont), group (ColumnMode)
-#: rc.cpp:6 rc.cpp:27 rc.cpp:129 rc.cpp:239 rc.cpp:299 rc.cpp:335
+#: rc.cpp:6 rc.cpp:30 rc.cpp:147 rc.cpp:266 rc.cpp:338 rc.cpp:374
 msgctxt "@label"
 msgid "Use system font"
 msgstr "Si siervi del fonte sistinme"
@@ -963,7 +1052,7 @@ msgstr "Si siervi del fonte sistinme"
 #. i18n: ectx: label, entry (FontSize), group (IconsMode)
 #. i18n: file: dolphin_columnmodesettings.kcfg:17
 #. i18n: ectx: label, entry (FontSize), group (ColumnMode)
-#: rc.cpp:9 rc.cpp:30 rc.cpp:135 rc.cpp:242 rc.cpp:305 rc.cpp:338
+#: rc.cpp:9 rc.cpp:33 rc.cpp:153 rc.cpp:269 rc.cpp:344 rc.cpp:377
 msgctxt "@label"
 msgid "Font size"
 msgstr "Grandeu des caracteres"
@@ -980,7 +1069,7 @@ msgstr "Grandeu des caracteres"
 #. i18n: ectx: label, entry (ItalicFont), group (IconsMode)
 #. i18n: file: dolphin_columnmodesettings.kcfg:21
 #. i18n: ectx: label, entry (ItalicFont), group (ColumnMode)
-#: rc.cpp:12 rc.cpp:33 rc.cpp:138 rc.cpp:245 rc.cpp:308 rc.cpp:341
+#: rc.cpp:12 rc.cpp:36 rc.cpp:156 rc.cpp:272 rc.cpp:347 rc.cpp:380
 msgctxt "@label Font style"
 msgid "Italic"
 msgstr "Clintcheyès letes"
@@ -997,7 +1086,7 @@ msgstr "Clintcheyès letes"
 #. i18n: ectx: label, entry (FontWeight), group (IconsMode)
 #. i18n: file: dolphin_columnmodesettings.kcfg:25
 #. i18n: ectx: label, entry (FontWeight), group (ColumnMode)
-#: rc.cpp:15 rc.cpp:36 rc.cpp:141 rc.cpp:248 rc.cpp:311 rc.cpp:344
+#: rc.cpp:15 rc.cpp:39 rc.cpp:159 rc.cpp:275 rc.cpp:350 rc.cpp:383
 msgctxt "@label"
 msgid "Font weight"
 msgstr "Pwès del fonte"
@@ -1014,21 +1103,38 @@ msgstr "Pwès del fonte"
 #. i18n: ectx: label, entry (IconSize), group (IconsMode)
 #. i18n: file: dolphin_columnmodesettings.kcfg:29
 #. i18n: ectx: label, entry (IconSize), group (ColumnMode)
-#: rc.cpp:18 rc.cpp:39 rc.cpp:153 rc.cpp:251 rc.cpp:323 rc.cpp:347
+#: rc.cpp:18 rc.cpp:42 rc.cpp:171 rc.cpp:278 rc.cpp:362 rc.cpp:386
 msgctxt "@label"
 msgid "Icon size"
 msgstr "Grandeu des imådjetes"
 
 #. i18n: file: dolphin_columnmodesettings.kcfg:33
+#. i18n: ectx: label, entry (PreviewSize), group (ColumnMode)
+#. i18n: file: dolphin_detailsmodesettings.kcfg:33
+#. i18n: ectx: label, entry (PreviewSize), group (DetailsMode)
+#. i18n: file: dolphin_iconsmodesettings.kcfg:63
+#. i18n: ectx: label, entry (PreviewSize), group (IconsMode)
+#. i18n: file: dolphin_detailsmodesettings.kcfg:33
+#. i18n: ectx: label, entry (PreviewSize), group (DetailsMode)
+#. i18n: file: dolphin_iconsmodesettings.kcfg:63
+#. i18n: ectx: label, entry (PreviewSize), group (IconsMode)
+#. i18n: file: dolphin_columnmodesettings.kcfg:33
+#. i18n: ectx: label, entry (PreviewSize), group (ColumnMode)
+#: rc.cpp:21 rc.cpp:45 rc.cpp:177 rc.cpp:281 rc.cpp:368 rc.cpp:389
+msgctxt "@label"
+msgid "Preview size"
+msgstr "Grandeu d' prévoeyaedje"
+
+#. i18n: file: dolphin_columnmodesettings.kcfg:37
 #. i18n: ectx: label, entry (ColumnWidth), group (ColumnMode)
-#: rc.cpp:21 rc.cpp:350
+#: rc.cpp:24 rc.cpp:392
 msgctxt "@label"
 msgid "Column width"
 msgstr "Lårdjeu d' colone:"
 
-#. i18n: file: dolphin_detailsmodesettings.kcfg:33
+#. i18n: file: dolphin_detailsmodesettings.kcfg:37
 #. i18n: ectx: label, entry (ExpandableFolders), group (DetailsMode)
-#: rc.cpp:42 rc.cpp:254
+#: rc.cpp:48 rc.cpp:284
 msgctxt "@label"
 msgid "Expandable folders"
 msgstr "Agrandixhåves ridants"
@@ -1041,14 +1147,14 @@ msgstr "Agrandixhåves ridants"
 #. i18n: ectx: label, entry (ShowHiddenFiles), group (Settings)
 #. i18n: file: dolphin_folderspanelsettings.kcfg:7
 #. i18n: ectx: label, entry (ShowHiddenFiles), group (FoldersPanel)
-#: rc.cpp:45 rc.cpp:87 rc.cpp:194 rc.cpp:269
+#: rc.cpp:51 rc.cpp:93 rc.cpp:221 rc.cpp:308
 msgctxt "@label"
 msgid "Show hidden files"
 msgstr "Mostrer fitchîs catchîs"
 
 #. i18n: file: dolphin_directoryviewpropertysettings.kcfg:12
 #. i18n: ectx: whatsthis, entry (ShowHiddenFiles), group (Settings)
-#: rc.cpp:48 rc.cpp:197
+#: rc.cpp:54 rc.cpp:224
 msgctxt "@info:whatsthis"
 msgid ""
 "When this option is enabled hidden files, such as those starting with a '.', "
@@ -1059,14 +1165,14 @@ msgstr ""
 
 #. i18n: file: dolphin_directoryviewpropertysettings.kcfg:19
 #. i18n: ectx: label, entry (ViewMode), group (Dolphin)
-#: rc.cpp:51 rc.cpp:200
+#: rc.cpp:57 rc.cpp:227
 msgctxt "@label"
 msgid "View Mode"
 msgstr "Môde di Vuwe"
 
 #. i18n: file: dolphin_directoryviewpropertysettings.kcfg:20
 #. i18n: ectx: whatsthis, entry (ViewMode), group (Dolphin)
-#: rc.cpp:54 rc.cpp:203
+#: rc.cpp:60 rc.cpp:230
 msgctxt "@info:whatsthis"
 msgid ""
 "This option controls the style of the view. Currently supported values "
@@ -1077,14 +1183,14 @@ msgstr ""
 
 #. i18n: file: dolphin_directoryviewpropertysettings.kcfg:27
 #. i18n: ectx: label, entry (ShowPreview), group (Dolphin)
-#: rc.cpp:57 rc.cpp:206
+#: rc.cpp:63 rc.cpp:233
 msgctxt "@label"
 msgid "Show preview"
 msgstr "Mostrer prévoeyaedje"
 
 #. i18n: file: dolphin_directoryviewpropertysettings.kcfg:28
 #. i18n: ectx: whatsthis, entry (ShowPreview), group (Dolphin)
-#: rc.cpp:60 rc.cpp:209
+#: rc.cpp:66 rc.cpp:236
 msgctxt "@info:whatsthis"
 msgid ""
 "When this option is enabled, a preview of the file content is shown as an "
@@ -1095,14 +1201,14 @@ msgstr ""
 
 #. i18n: file: dolphin_directoryviewpropertysettings.kcfg:33
 #. i18n: ectx: label, entry (CategorizedSorting), group (Dolphin)
-#: rc.cpp:63 rc.cpp:212
+#: rc.cpp:69 rc.cpp:239
 msgctxt "@label"
 msgid "Categorized Sorting"
 msgstr "Relére pa categoreyes"
 
 #. i18n: file: dolphin_directoryviewpropertysettings.kcfg:34
 #. i18n: ectx: whatsthis, entry (CategorizedSorting), group (Dolphin)
-#: rc.cpp:66 rc.cpp:215
+#: rc.cpp:72 rc.cpp:242
 msgctxt "@info:whatsthis"
 msgid ""
 "When this option is enabled, the sorted items are summarized by their "
@@ -1113,14 +1219,14 @@ msgstr ""
 
 #. i18n: file: dolphin_directoryviewpropertysettings.kcfg:39
 #. i18n: ectx: label, entry (Sorting), group (Dolphin)
-#: rc.cpp:69 rc.cpp:218
+#: rc.cpp:75 rc.cpp:245
 msgctxt "@label"
 msgid "Sort files by"
 msgstr "Relére les fitchîs pa"
 
 #. i18n: file: dolphin_directoryviewpropertysettings.kcfg:40
 #. i18n: ectx: whatsthis, entry (Sorting), group (Dolphin)
-#: rc.cpp:72 rc.cpp:221
+#: rc.cpp:78 rc.cpp:248
 msgctxt "@info:whatsthis"
 msgid ""
 "This option defines which attribute (name, size, date, etc.) sorting is "
@@ -1131,158 +1237,192 @@ msgstr ""
 
 #. i18n: file: dolphin_directoryviewpropertysettings.kcfg:47
 #. i18n: ectx: label, entry (SortOrder), group (Dolphin)
-#: rc.cpp:75 rc.cpp:224
+#: rc.cpp:81 rc.cpp:251
 msgctxt "@label"
 msgid "Order in which to sort files"
 msgstr "Ôre po relére les fitchîs"
 
 #. i18n: file: dolphin_directoryviewpropertysettings.kcfg:54
 #. i18n: ectx: label, entry (AdditionalInfo), group (Dolphin)
-#: rc.cpp:78 rc.cpp:227
+#: rc.cpp:84 rc.cpp:254
 msgctxt "@label"
 msgid "Additional information"
 msgstr "Infôrmåcion di pus"
 
 #. i18n: file: dolphin_directoryviewpropertysettings.kcfg:59
 #. i18n: ectx: label, entry (Timestamp), group (Dolphin)
-#: rc.cpp:81 rc.cpp:230
+#: rc.cpp:87 rc.cpp:257
 msgctxt "@label"
 msgid "Properties last changed"
 msgstr "Prôpietés dierin candjmint"
 
 #. i18n: file: dolphin_directoryviewpropertysettings.kcfg:60
 #. i18n: ectx: whatsthis, entry (Timestamp), group (Dolphin)
-#: rc.cpp:84 rc.cpp:233
+#: rc.cpp:90 rc.cpp:260
 msgctxt "@info:whatsthis"
 msgid "The last time these properties were changed by the user."
 msgstr "Li dierin côp k' ces prôpietés ont stî candjeyes pa l' uzeu."
 
 #. i18n: file: dolphin_generalsettings.kcfg:8
 #. i18n: ectx: label, entry (EditableUrl), group (General)
-#: rc.cpp:90 rc.cpp:353
+#: rc.cpp:96 rc.cpp:395
 msgctxt "@label"
 msgid "Should the URL be editable for the user"
 msgstr "L' adresse URL duvreut ele esse léjhåve pa l' uzeu?"
 
 #. i18n: file: dolphin_generalsettings.kcfg:12
+#. i18n: ectx: label, entry (ShowFullPath), group (General)
+#: rc.cpp:99 rc.cpp:398
+msgctxt "@label"
+msgid "Should the full path be shown inside the location bar"
+msgstr "Est c' ki tot l' tchimin dvreut esse mostré dins l' båre d' eplaeçmint"
+
+#. i18n: file: dolphin_generalsettings.kcfg:16
 #. i18n: ectx: label, entry (FirstRun), group (General)
-#: rc.cpp:93 rc.cpp:356
+#: rc.cpp:102 rc.cpp:401
 msgctxt "@label"
 msgid "Is the application started the first time"
 msgstr "Est ç' ki c' est l' prumî côp kel programe est enondé?"
 
-#. i18n: file: dolphin_generalsettings.kcfg:16
+#. i18n: file: dolphin_generalsettings.kcfg:20
 #. i18n: ectx: label, entry (HomeUrl), group (General)
-#: rc.cpp:96 rc.cpp:359
+#: rc.cpp:105 rc.cpp:404
 msgctxt "@label"
 msgid "Home URL"
 msgstr "Hårdêye måjhon"
 
-#. i18n: file: dolphin_generalsettings.kcfg:20
+#. i18n: file: dolphin_generalsettings.kcfg:24
 #. i18n: ectx: label, entry (SplitView), group (General)
-#: rc.cpp:99 rc.cpp:362
+#: rc.cpp:108 rc.cpp:407
 msgctxt "@label"
 msgid "Split the view into two panes"
 msgstr "Dispårti l' vuwe hintche/droete"
 
-#. i18n: file: dolphin_generalsettings.kcfg:24
+#. i18n: file: dolphin_generalsettings.kcfg:28
 #. i18n: ectx: label, entry (FilterBar), group (General)
-#: rc.cpp:102 rc.cpp:365
+#: rc.cpp:111 rc.cpp:410
 msgctxt "@label"
 msgid "Should the filter bar be shown"
 msgstr "Li båre des passetes duvreut ele esse mostrêye?"
 
-#. i18n: file: dolphin_generalsettings.kcfg:28
+#. i18n: file: dolphin_generalsettings.kcfg:32
 #. i18n: ectx: label, entry (GlobalViewProps), group (General)
-#: rc.cpp:105 rc.cpp:368
+#: rc.cpp:114 rc.cpp:413
 msgctxt "@label"
 msgid "Should the view properties be used for all directories"
 msgstr "Les prôpietés di vuwe duvrént ele esse eployeyes po tos les ridants?"
 
-#. i18n: file: dolphin_generalsettings.kcfg:32
+#. i18n: file: dolphin_generalsettings.kcfg:36
 #. i18n: ectx: label, entry (BrowseThroughArchives), group (General)
-#: rc.cpp:108 rc.cpp:371
+#: rc.cpp:117 rc.cpp:416
 msgctxt "@label"
 msgid "Browse through archives"
 msgstr "Foyter dvins les årtchives"
 
-#. i18n: file: dolphin_generalsettings.kcfg:36
+#. i18n: file: dolphin_generalsettings.kcfg:40
 #. i18n: ectx: label, entry (RenameInline), group (General)
-#: rc.cpp:111 rc.cpp:374
+#: rc.cpp:120 rc.cpp:419
 msgctxt "@label"
 msgid "Rename inline"
 msgstr "Rilomer dvins"
 
-#. i18n: file: dolphin_generalsettings.kcfg:40
+#. i18n: file: dolphin_generalsettings.kcfg:44
 #. i18n: ectx: label, entry (ShowSelectionToggle), group (General)
-#: rc.cpp:114 rc.cpp:377
+#: rc.cpp:123 rc.cpp:422
 msgctxt "@label"
 msgid "Show selection toggle"
 msgstr "Mostrer les tchoes catchîs"
 
-#. i18n: file: dolphin_generalsettings.kcfg:44
+#. i18n: file: dolphin_generalsettings.kcfg:48
 #. i18n: ectx: label, entry (ShowToolTips), group (General)
-#: rc.cpp:117 rc.cpp:380
+#: rc.cpp:126 rc.cpp:425
 msgctxt "@label"
 msgid "Show tooltips"
 msgstr "Håyner racsegnes"
 
-#. i18n: file: dolphin_generalsettings.kcfg:48
+#. i18n: file: dolphin_generalsettings.kcfg:52
 #. i18n: ectx: label, entry (ShowCopyMoveMenu), group (General)
-#: rc.cpp:120 rc.cpp:383
+#: rc.cpp:129 rc.cpp:428
 msgctxt "@label"
 msgid "Show 'Copy To' and 'Move To' commands in context menu"
 msgstr ""
 "Håyner comandes « Aclaper viè » eyet « Bodjî viè » el dressêye di contecse"
 
-#. i18n: file: dolphin_generalsettings.kcfg:52
+#. i18n: file: dolphin_generalsettings.kcfg:56
 #. i18n: ectx: label, entry (ViewPropsTimestamp), group (General)
-#: rc.cpp:123 rc.cpp:386
+#: rc.cpp:132 rc.cpp:431
 msgctxt "@label"
 msgid "Timestamp since when the view properties are valid"
 msgstr "Moumint dispoy ki les prôpietés di vuwe sont valides"
 
+#. i18n: file: dolphin_generalsettings.kcfg:59
+#. i18n: ectx: label, entry (AutoExpandFolders), group (General)
+#: rc.cpp:135 rc.cpp:434
+msgctxt "@label"
+msgid "Use auto-expanding folders for all view types"
+msgstr ""
+"Si siervi d' ridants ki s' agrandixhèt tot seu po totes les sôres di vuwe"
+
+#. i18n: file: dolphin_generalsettings.kcfg:63
+#. i18n: ectx: label, entry (ShowZoomSlider), group (General)
+#: rc.cpp:138 rc.cpp:437
+msgctxt "@label"
+msgid "Show zoom slider in the statusbar"
+msgstr "Håyner l' boton d' acinseu pol zoumaedje dins l' båre d' estat"
+
+#. i18n: file: dolphin_generalsettings.kcfg:67
+#. i18n: ectx: label, entry (ShowSpaceInfo), group (General)
+#: rc.cpp:141 rc.cpp:440
+msgctxt "@label"
+msgid "Show the space information in the statusbar"
+msgstr "Håyner ls informåcions sol plaece dins l' båre d' estat"
+
 #. i18n: file: dolphin_iconsmodesettings.kcfg:10
 #. i18n: ectx: label, entry (Arrangement), group (IconsMode)
-#: rc.cpp:126 rc.cpp:296
+#: rc.cpp:144 rc.cpp:335
 msgctxt "@label"
 msgid "Arrangement"
 msgstr "Arindjmint"
 
 #. i18n: file: dolphin_iconsmodesettings.kcfg:34
 #. i18n: ectx: label, entry (ItemHeight), group (IconsMode)
-#: rc.cpp:144 rc.cpp:314
+#: rc.cpp:162 rc.cpp:353
 msgctxt "@label"
 msgid "Item height"
 msgstr "Hôteu do cayet"
 
 #. i18n: file: dolphin_iconsmodesettings.kcfg:42
 #. i18n: ectx: label, entry (ItemWidth), group (IconsMode)
-#: rc.cpp:147 rc.cpp:317
+#: rc.cpp:165 rc.cpp:356
 msgctxt "@label"
 msgid "Item width"
 msgstr "Lårdjeu do cayet"
 
 #. i18n: file: dolphin_iconsmodesettings.kcfg:50
 #. i18n: ectx: label, entry (GridSpacing), group (IconsMode)
-#: rc.cpp:150 rc.cpp:320
+#: rc.cpp:168 rc.cpp:359
 msgctxt "@label"
 msgid "Grid spacing"
 msgstr "Espåçmint del greye"
 
 #. i18n: file: dolphin_iconsmodesettings.kcfg:58
 #. i18n: ectx: label, entry (NumberOfTextlines), group (IconsMode)
-#: rc.cpp:156 rc.cpp:326
+#: rc.cpp:174 rc.cpp:365
 msgctxt "@label"
 msgid "Number of textlines"
 msgstr "Nombe di royes di tecse"
 
-#. i18n: file: dolphin_iconsmodesettings.kcfg:63
-#. i18n: ectx: label, entry (PreviewSize), group (IconsMode)
-#: rc.cpp:159 rc.cpp:329
-msgctxt "@label"
-msgid "Preview size"
-msgstr "Grandeu d' prévoeyaedje"
+#. i18n: file: dolphinpart.rc:4
+#. i18n: ectx: Menu (edit)
+#: rc.cpp:180 rc.cpp:287
+msgid "&Edit"
+msgstr "&Candjî"
+
+#. i18n: file: dolphinpart.rc:16
+#. i18n: ectx: Menu (view)
+#: rc.cpp:183 rc.cpp:290
+msgid "&View"
+msgstr "&Vey"
 
 #. i18n: file: dolphinpart.rc:18
 #. i18n: ectx: Menu (sort)
@@ -1292,7 +1432,7 @@ msgstr "Grandeu d' prévoeyaedje"
 #. i18n: ectx: Menu (sort)
 #. i18n: file: dolphinui.rc:27
 #. i18n: ectx: Menu (sort)
-#: rc.cpp:162 rc.cpp:177 rc.cpp:257 rc.cpp:275
+#: rc.cpp:186 rc.cpp:204 rc.cpp:293 rc.cpp:314
 msgctxt "@title:menu"
 msgid "Sort By"
 msgstr "Relére pa"
@@ -1305,54 +1445,60 @@ msgstr "Relére pa"
 #. i18n: ectx: Menu (additional_info)
 #. i18n: file: dolphinui.rc:41
 #. i18n: ectx: Menu (additional_info)
-#: rc.cpp:165 rc.cpp:180 rc.cpp:260 rc.cpp:278
+#: rc.cpp:189 rc.cpp:207 rc.cpp:296 rc.cpp:317
 msgctxt "@title:menu"
 msgid "Additional Information"
 msgstr "Infôrmåcion di rawete"
 
+#. i18n: file: dolphinpart.rc:46
+#. i18n: ectx: Menu (go)
+#: rc.cpp:192 rc.cpp:299
+msgid "&Go"
+msgstr "&Potchî"
+
 #. i18n: file: dolphinpart.rc:54
 #. i18n: ectx: Menu (tools)
-#: rc.cpp:168 rc.cpp:263
+#: rc.cpp:195 rc.cpp:302
 msgctxt "@title:menu"
 msgid "Tools"
 msgstr "Usteyes"
 
 #. i18n: file: dolphinpart.rc:61
 #. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:171 rc.cpp:266
+#: rc.cpp:198 rc.cpp:305
 msgctxt "@title:menu"
 msgid "Dolphin Toolbar"
 msgstr "Båre ås Usteyes da Dolphin"
 
 #. i18n: file: dolphinui.rc:58
 #. i18n: ectx: Menu (panels)
-#: rc.cpp:183 rc.cpp:281
+#: rc.cpp:210 rc.cpp:320
 msgctxt "@title:menu"
 msgid "Panels"
 msgstr "Sicriftôrs"
 
 #. i18n: file: dolphinui.rc:65
 #. i18n: ectx: Menu (navigation_bar)
-#: rc.cpp:186 rc.cpp:284
+#: rc.cpp:213 rc.cpp:323
 msgctxt "@title:menu"
 msgid "Navigation Bar"
 msgstr "Båre di naiviaedje"
 
-#. i18n: file: dolphinui.rc:115
+#. i18n: file: dolphinui.rc:116
 #. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:189 rc.cpp:287
+#: rc.cpp:216 rc.cpp:326
 msgctxt "@title:menu"
 msgid "Main Toolbar"
 msgstr "Mwaisse båre ås Usteyes"
 
-#: rc.cpp:190
+#: rc.cpp:217
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr ""
 "Lorint Hendschel\n"
 "Djan Cayron"
 
-#: rc.cpp:191
+#: rc.cpp:218
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
@@ -1361,170 +1507,185 @@ msgstr ""
 
 #. i18n: file: tagcloud/newtagdialog.ui:39
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:290
+#: rc.cpp:329
 msgctxt "@label Tag name"
 msgid "Name:"
 msgstr "No :"
 
 #. i18n: file: tagcloud/newtagdialog.ui:82
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:293
+#: rc.cpp:332
 #, fuzzy
 #| msgctxt "@label"
 #| msgid "Detailed description (optional):"
 msgctxt "@label"
-msgid "Detailed Description (optional):"
+msgid "Detailed description (optional):"
 msgstr "Sipepieus discrijhaedje (opcionel) :"
 
-#: dolphinmainwindow.cpp:400
+#: dolphinmainwindow.cpp:148
 msgctxt "@info:status"
 msgid "Copy operation completed."
 msgstr "Dj' a stî å coron di l' operåcion di copiaedje."
 
-#: dolphinmainwindow.cpp:404
+#: dolphinmainwindow.cpp:152
 msgctxt "@info:status"
 msgid "Move operation completed."
 msgstr "Dj' a stî å coron di l' operåcion di bodjaedje."
 
-#: dolphinmainwindow.cpp:408
+#: dolphinmainwindow.cpp:156
 msgctxt "@info:status"
 msgid "Link operation completed."
 msgstr "Dj' a stî å coron di l' operåcion di loyaedje."
 
-#: dolphinmainwindow.cpp:412
+#: dolphinmainwindow.cpp:160
 msgctxt "@info:status"
 msgid "Move to trash operation completed."
 msgstr "Dj' a bén tapé å batch comifåt."
 
-#: dolphinmainwindow.cpp:416
+#: dolphinmainwindow.cpp:164
 msgctxt "@info:status"
 msgid "Renaming operation completed."
 msgstr "Dj' a stî å coron di l' operåcion di rilomaedje."
 
-#: dolphinmainwindow.cpp:421
+#: dolphinmainwindow.cpp:169
 msgctxt "@info:status"
 msgid "Created folder."
 msgstr "Ahiver on ridant"
 
-#: dolphinmainwindow.cpp:740
+#: dolphinmainwindow.cpp:798
 msgctxt "@action:inmenu"
 msgid "New Tab"
 msgstr "Novele linwete"
 
-#: dolphinmainwindow.cpp:743
+#: dolphinmainwindow.cpp:801
 msgctxt "@action:inmenu"
 msgid "Close Other Tabs"
 msgstr "Clôre ôtès linwetes"
 
-#: dolphinmainwindow.cpp:745
+#: dolphinmainwindow.cpp:803
 msgctxt "@action:inmenu"
 msgid "Close Tab"
 msgstr "Clôre linwete"
 
-#: dolphinmainwindow.cpp:898
-msgctxt "@title:menu Create new folder, file, link, etc."
-msgid "Create New"
-msgstr "Ahiver novea"
-
-#: dolphinmainwindow.cpp:905
+#: dolphinmainwindow.cpp:974
 msgctxt "@action:inmenu File"
 msgid "New &Window"
 msgstr "Novea &purnea"
 
-#: dolphinmainwindow.cpp:911
+#: dolphinmainwindow.cpp:980
 msgctxt "@action:inmenu File"
 msgid "New Tab"
 msgstr "Novele linwete"
 
-#: dolphinmainwindow.cpp:915
+#: dolphinmainwindow.cpp:984
 msgctxt "@action:inmenu File"
 msgid "Close Tab"
 msgstr "Clôre linwete"
 
-#: dolphinmainwindow.cpp:922
-msgctxt "@action:inmenu File"
-msgid "Properties"
-msgstr "Prôpietés"
-
-#: dolphinmainwindow.cpp:943
+#: dolphinmainwindow.cpp:1007
 msgctxt "@action:inmenu Edit"
 msgid "Select All"
 msgstr "Tchoezi totafwait"
 
-#: dolphinmainwindow.cpp:948
+#: dolphinmainwindow.cpp:1012
 msgctxt "@action:inmenu Edit"
 msgid "Invert Selection"
 msgstr "Tchoezi å rvier"
 
-#: dolphinmainwindow.cpp:961
+#: dolphinmainwindow.cpp:1025
 msgctxt "@action:inmenu View"
 msgid "Reload"
 msgstr "Ritcherdjî"
 
-#: dolphinmainwindow.cpp:967
+#: dolphinmainwindow.cpp:1031
 msgctxt "@action:inmenu View"
 msgid "Stop"
 msgstr "Arester"
 
-#: dolphinmainwindow.cpp:973
-msgctxt "@action:inmenu Navigation Bar"
-msgid "Show Full Location"
-msgstr "Mostrer l' eplaeçmint en etir"
-
-#: dolphinmainwindow.cpp:978
+#: dolphinmainwindow.cpp:1036
 #, fuzzy
 #| msgctxt "@action:inmenu Navigation Bar"
 #| msgid "Editable Location"
 msgctxt "@action:inmenu Navigation Bar"
-msgid "Edit Location"
+msgid "Editable Location"
 msgstr "Eplaeçmint candjåve"
 
-#: dolphinmainwindow.cpp:994
+#: dolphinmainwindow.cpp:1041
+msgctxt "@action:inmenu Navigation Bar"
+msgid "Replace Location"
+msgstr "Replaecî l' eplaeçmint"
+
+#: dolphinmainwindow.cpp:1057
 msgctxt "@action:inmenu Tools"
 msgid "Show Filter Bar"
 msgstr "Mostrer bår di passete"
 
-#: dolphinmainwindow.cpp:999
+#: dolphinmainwindow.cpp:1062
 msgctxt "@action:inmenu Tools"
 msgid "Compare Files"
 msgstr "Vey les diferinces inte fitchîs"
 
-#: dolphinmainwindow.cpp:1012 dolphinmainwindow.cpp:1018
+#: dolphinmainwindow.cpp:1070
+msgctxt "@action:inmenu Tools"
+msgid "Quick View"
+msgstr "Vey rade"
+
+#: dolphinmainwindow.cpp:1083
+msgctxt "@action:inmenu"
+msgid "Activate Next Tab"
+msgstr "Mete en alaedje linwete shuvante"
+
+#: dolphinmainwindow.cpp:1089
+msgctxt "@action:inmenu"
+msgid "Activate Previous Tab"
+msgstr "Mete en alaedje linwete di dvant"
+
+#: dolphinmainwindow.cpp:1096
+msgctxt "@action:inmenu"
+msgid "Open in New Tab"
+msgstr "Drovi dins ene novele linwete"
+
+#: dolphinmainwindow.cpp:1101
+msgctxt "@action:inmenu"
+msgid "Open in New Window"
+msgstr "Drovi dins on novea purnea"
+
+#: dolphinmainwindow.cpp:1109 dolphinmainwindow.cpp:1116
 msgctxt "@title:window"
 msgid "Information"
 msgstr "Infôrmåcion"
 
-#: dolphinmainwindow.cpp:1031 dolphinmainwindow.cpp:1037
+#: dolphinmainwindow.cpp:1130 dolphinmainwindow.cpp:1137
 msgctxt "@title:window"
 msgid "Folders"
 msgstr "Ridants"
 
-#: dolphinmainwindow.cpp:1053 dolphinmainwindow.cpp:1061
+#: dolphinmainwindow.cpp:1152 dolphinmainwindow.cpp:1161
 msgctxt "@title:window Shell terminal"
 msgid "Terminal"
 msgstr "Terminå"
 
-#: dolphinmainwindow.cpp:1078 dolphinmainwindow.cpp:1087
+#: dolphinmainwindow.cpp:1179 dolphinmainwindow.cpp:1189
 msgctxt "@title:window"
 msgid "Places"
 msgstr "Plaeces"
 
-#: dolphinmainwindow.cpp:1182
+#: dolphinmainwindow.cpp:1283
 msgctxt "@action:intoolbar Close right view"
 msgid "Close"
 msgstr "Clôre"
 
-#: dolphinmainwindow.cpp:1185
+#: dolphinmainwindow.cpp:1286
 msgctxt "@action:intoolbar Close left view"
 msgid "Close"
 msgstr "Clôre"
 
-#: dolphinmainwindow.cpp:1189
+#: dolphinmainwindow.cpp:1290
 msgctxt "@action:intoolbar Split view"
 msgid "Split"
 msgstr "Dispårti"
 
-#: statusbarmessagelabel.cpp:54
+#: statusbarmessagelabel.cpp:50
 msgctxt "@action:button"
 msgid "Close"
 msgstr "Clôre"
@@ -1677,185 +1838,142 @@ msgid ""
 "The view properties of all folders will be changed. Do you want to continue?"
 msgstr "Les prôpietés di tos les ridants seront candjîs. Tcheryî pus lon?"
 
-#: iconsizedialog.cpp:53
-msgctxt "@title:window"
-msgid "Change Icon & Preview Size"
-msgstr "Candjî l' grandeu di l' imådjete di &prévoeyaedje"
-
-#: iconsizedialog.cpp:67
-msgctxt "@item:inrange Icon Size"
-msgid "Small"
-msgstr "Pitite"
-
-#: iconsizedialog.cpp:76
-msgctxt "@item:inrange Icon Size"
-msgid "Large"
-msgstr "Grande"
-
-#: iconsizedialog.cpp:91
-msgctxt "@title:group"
-msgid "Preview Size"
-msgstr "Grandeu do prévoeyaedje"
-
-#: iconsizedialog.cpp:95
-msgctxt "@item:inrange Preview Size"
-msgid "Small"
-msgstr "Pitite"
-
-#: iconsizedialog.cpp:104
-msgctxt "@item:inrange Preview Size"
-msgid "Large"
-msgstr "Grande"
-
-#: dolphindropcontroller.cpp:79
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "&Move Here\t<shortcut>%1</shortcut>"
-msgstr "&Bodjî chal\t<shortcut>%1</shortcut>"
-
-#: dolphindropcontroller.cpp:85
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "&Copy Here\t<shortcut>%1</shortcut>"
-msgstr "&Copyî chal\t<shortcut>%1</shortcut>"
-
-#: dolphindropcontroller.cpp:91
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "&Link Here\t<shortcut>%1</shortcut>"
-msgstr "&Loyî chal\t<shortcut>%1</shortcut>"
-
-#: dolphindropcontroller.cpp:94
-msgctxt "@action:inmenu"
-msgid "Cancel"
-msgstr "Rinoncî"
-
-#: dolphinviewactionhandler.cpp:72
+#: dolphinviewactionhandler.cpp:76
 msgctxt "@action"
 msgid "Create Folder..."
 msgstr "Ahiver ridant..."
 
-#: dolphinviewactionhandler.cpp:79
+#: dolphinviewactionhandler.cpp:84
 msgctxt "@action:inmenu File"
 msgid "Rename..."
 msgstr "Rilomer..."
 
-#: dolphinviewactionhandler.cpp:84
+#: dolphinviewactionhandler.cpp:89
 msgctxt "@action:inmenu File"
 msgid "Move to Trash"
 msgstr "Taper å batch"
 
-#: dolphinviewactionhandler.cpp:92 dolphinviewactionhandler.cpp:102
+#: dolphinviewactionhandler.cpp:97
 msgctxt "@action:inmenu File"
 msgid "Delete"
 msgstr "Disfacer"
 
-#: dolphinviewactionhandler.cpp:124
+#: dolphinviewactionhandler.cpp:107
+msgctxt "@action:inmenu File"
+msgid "Delete (using shortcut for Trash)"
+msgstr "Disfacer (e s' siervant do rascourti pol Batch)"
+
+#: dolphinviewactionhandler.cpp:114
+msgctxt "@action:inmenu File"
+msgid "Properties"
+msgstr "Prôpietés"
+
+#: dolphinviewactionhandler.cpp:135
 msgctxt "@action:intoolbar"
 msgid "Preview"
 msgstr "Vey divant"
 
-#: dolphinviewactionhandler.cpp:129
+#: dolphinviewactionhandler.cpp:140
 msgctxt "@action:inmenu Sort"
 msgid "Descending"
 msgstr "Discrexhant"
 
-#: dolphinviewactionhandler.cpp:139
+#: dolphinviewactionhandler.cpp:150
 msgctxt "@action:inmenu View"
 msgid "Show in Groups"
 msgstr "Håyner e groupes"
 
-#: dolphinviewactionhandler.cpp:143
+#: dolphinviewactionhandler.cpp:154
 msgctxt "@action:inmenu View"
 msgid "Show Hidden Files"
 msgstr "Mostrer fitchîs catchîs"
 
-#: dolphinviewactionhandler.cpp:148
+#: dolphinviewactionhandler.cpp:159
 msgctxt "@action:inmenu View"
 msgid "Adjust View Properties..."
 msgstr "Adjuster les prôpietés di vuwe..."
 
-#: dolphinviewactionhandler.cpp:154
+#: dolphinviewactionhandler.cpp:165
 msgctxt "@action:inmenu Tools"
 msgid "Find File..."
 msgstr "Trover fitchî..."
 
-#: dolphinviewactionhandler.cpp:166
+#: dolphinviewactionhandler.cpp:177
 msgctxt "@action:inmenu Additional information"
 msgid "Size"
 msgstr "Grandeu"
 
-#: dolphinviewactionhandler.cpp:171
+#: dolphinviewactionhandler.cpp:182
 msgctxt "@action:inmenu Additional information"
 msgid "Date"
 msgstr "Date"
 
-#: dolphinviewactionhandler.cpp:176
+#: dolphinviewactionhandler.cpp:187
 msgctxt "@action:inmenu Additional information"
 msgid "Permissions"
 msgstr "Permissions"
 
-#: dolphinviewactionhandler.cpp:181
+#: dolphinviewactionhandler.cpp:192
 msgctxt "@action:inmenu Additional information"
 msgid "Owner"
 msgstr "Prôpietaire"
 
-#: dolphinviewactionhandler.cpp:186
+#: dolphinviewactionhandler.cpp:197
 msgctxt "@action:inmenu Additional information"
 msgid "Group"
 msgstr "Groupe"
 
-#: dolphinviewactionhandler.cpp:191
+#: dolphinviewactionhandler.cpp:202
 msgctxt "@action:inmenu Additional information"
 msgid "Type"
 msgstr "Sôre"
 
-#: dolphinviewactionhandler.cpp:206
+#: dolphinviewactionhandler.cpp:217
 msgctxt "@action:inmenu Sort By"
 msgid "Name"
 msgstr "No"
 
-#: dolphinviewactionhandler.cpp:211
+#: dolphinviewactionhandler.cpp:222
 msgctxt "@action:inmenu Sort By"
 msgid "Size"
 msgstr "Grandeu"
 
-#: dolphinviewactionhandler.cpp:216
+#: dolphinviewactionhandler.cpp:227
 msgctxt "@action:inmenu Sort By"
 msgid "Date"
 msgstr "Date"
 
-#: dolphinviewactionhandler.cpp:221
+#: dolphinviewactionhandler.cpp:232
 msgctxt "@action:inmenu Sort By"
 msgid "Permissions"
 msgstr "Permissions"
 
-#: dolphinviewactionhandler.cpp:226
+#: dolphinviewactionhandler.cpp:237
 msgctxt "@action:inmenu Sort By"
 msgid "Owner"
 msgstr "Prôpietaire"
 
-#: dolphinviewactionhandler.cpp:231
+#: dolphinviewactionhandler.cpp:242
 msgctxt "@action:inmenu Sort By"
 msgid "Group"
 msgstr "Groupe"
 
-#: dolphinviewactionhandler.cpp:236
+#: dolphinviewactionhandler.cpp:247
 msgctxt "@action:inmenu Sort By"
 msgid "Type"
 msgstr "Sôre"
 
-#: dolphinviewactionhandler.cpp:423
+#: dolphinviewactionhandler.cpp:427
 msgctxt "@action:inmenu View Mode"
 msgid "Icons"
 msgstr "Imådjetes"
 
-#: dolphinviewactionhandler.cpp:433
+#: dolphinviewactionhandler.cpp:437
 msgctxt "@action:inmenu View Mode"
 msgid "Details"
 msgstr "Detays"
 
-#: dolphinviewactionhandler.cpp:443
+#: dolphinviewactionhandler.cpp:447
 msgctxt "@action:inmenu View Mode"
 msgid "Columns"
 msgstr "Colones"
@@ -1870,9 +1988,9 @@ msgctxt "@action:button"
 msgid "Cancel"
 msgstr "Rinoncî"
 
-#: detailsviewsettingspage.cpp:87
+#: detailsviewsettingspage.cpp:80
 msgctxt "@option:check"
-msgid "Expandable Folders"
+msgid "Expandable folders"
 msgstr "Agrandixhåves ridants"
 
 #: additionalinfodialog.cpp:38
@@ -1910,184 +2028,117 @@ msgctxt "@option:check Additional Information"
 msgid "Type"
 msgstr "Sôre"
 
-#~ msgctxt "@label:listbox"
-#~ msgid "Default:"
-#~ msgstr "Prémetou:"
-
-#~ msgctxt "@label:listbox"
-#~ msgid "Preview:"
-#~ msgstr "Prévey:"
-
-#~ msgctxt "@info:tooltip"
-#~ msgid "Size: 1 pixel"
-#~ msgid_plural "Size: %1 pixels"
-#~ msgstr[0] "Grandeu : 1 picsel"
-#~ msgstr[1] "Grandeu : %1 picsels"
-
 #~ msgctxt "@info:status"
-#~ msgid "A folder cannot be dropped into itself"
-#~ msgstr "On pout nén bodjî on ridant dins lu minme"
+#~ msgid "Getting size..."
+#~ msgstr "Dji cwir après l' grandeu..."
 
+#, fuzzy
+#~| msgctxt "@info:status"
+#~| msgid "1 File selected"
+#~| msgid_plural "%1 Files selected"
 #~ msgctxt "@info:status"
-#~ msgid "<filename>%1</filename> selected"
-#~ msgstr "<filename>%1</filename> tchoezi"
+#~ msgid "1 File selected (%2)"
+#~ msgid_plural "%1 Files selected (%2)"
+#~ msgstr[0] "1 fitchî di tchoezi"
+#~ msgstr[1] "%1 fitchîs di tchoezis"
 
-#~ msgctxt "@info:status"
-#~ msgid "<filename>%1</filename> selected (%2)"
-#~ msgstr "<filename>%1</filename> tchoezi (%2)"
-
-#~ msgctxt "@info:status folders, files (size)"
-#~ msgid "%1, %2 (%3)"
-#~ msgstr "%1, %2 (%3)"
-
-#~ msgctxt "@info:status files (size)"
-#~ msgid "%1 (%2)"
-#~ msgstr "%1 (%2)"
+#, fuzzy
+#~| msgctxt "@label"
+#~| msgid "Show selection toggle"
+#~ msgctxt "@option:check"
+#~ msgid "Show selection toggle"
+#~ msgstr "Mostrer les tchoes catchîs"
 
 #~ msgctxt "@title:group"
-#~ msgid "Status Bar"
-#~ msgstr "Bår d' estat"
+#~ msgid "Column Width"
+#~ msgstr "Grandeu del colone"
 
-#~ msgctxt "@option:check"
-#~ msgid "Show zoom slider"
-#~ msgstr "Håyner l' boton d' acinseu pol zoumaedje"
+#~ msgctxt "@item:inrange Column Width"
+#~ msgid "Small"
+#~ msgstr "Pitite"
 
-#~ msgctxt "@option:check"
-#~ msgid "Show space information"
-#~ msgstr "Håyner l' infôrmåcion sol plaece"
+#~ msgctxt "@item:inrange Column Width"
+#~ msgid "Large"
+#~ msgstr "Grande"
 
-#~ msgctxt "option:check"
-#~ msgid "Open folders during drag operations"
-#~ msgstr "Drovi les ridants tins ls operåcions d' bodjaedje"
+#~ msgctxt "@option:radio Icon Size"
+#~ msgid "Small"
+#~ msgstr "Pitite"
 
-#~ msgctxt "@info:status"
-#~ msgid ""
-#~ "Dolphin does not support web pages, the web browser has been launched"
-#~ msgstr ""
-#~ "Dolphin ni sait nén drovi les pådjes waibes, li betchteu waibe a stî "
-#~ "enondé"
+#~ msgctxt "@option:radio Icon Size"
+#~ msgid "Medium"
+#~ msgstr "Moyene"
 
-#~ msgctxt "@info:status"
-#~ msgid "Protocol not supported by Dolphin, Konqueror has been launched"
-#~ msgstr "Protocole nén sopoirté pa Dolphin, Konqueror a stî enondé"
+#~ msgctxt "@option:radio Icon Size"
+#~ msgid "Large"
+#~ msgstr "Grande"
 
-#~ msgctxt "@info:status"
-#~ msgid "Invalid protocol"
-#~ msgstr "Protocole nén valåbe"
-
-#~ msgctxt "@label"
-#~ msgid "Album:"
-#~ msgstr "Albom :"
-
-#~ msgctxt "@label"
-#~ msgid "Artist:"
-#~ msgstr "Årtisse :"
-
-#~ msgctxt "@label"
-#~ msgid "Genre:"
-#~ msgstr "Djinre :"
-
-#~ msgctxt "@label"
-#~ msgid "Height:"
-#~ msgstr "Hôteur :"
-
-#~ msgctxt "@label"
-#~ msgid "Lines:"
-#~ msgstr "Royes :"
-
-#~ msgctxt "@label"
-#~ msgid "Title:"
-#~ msgstr "Tite :"
-
-#~ msgctxt "@label"
-#~ msgid "Track:"
-#~ msgstr "Djive :"
-
-#~ msgctxt "@label"
-#~ msgid "Width:"
-#~ msgstr "Lårdjeur :"
-
-#~ msgctxt "@option:check"
-#~ msgid "Show selection marker"
-#~ msgstr "Mostrer les markeu d' tchoes"
-
-#~ msgctxt "@item:inlistbox Text width"
-#~ msgid "Huge"
-#~ msgstr "Foû grande"
+#~ msgctxt "@action:button"
+#~ msgid "Change Icon && Preview Size..."
+#~ msgstr "Candjî grandeu di l' imådjete eyet do prévoeyaedje..."
 
 #~ msgctxt "@item:inlistbox Arrangement"
-#~ msgid "Columns"
-#~ msgstr "Colones"
+#~ msgid "Left to Right"
+#~ msgstr "Di hintche a droete"
 
 #~ msgctxt "@item:inlistbox Arrangement"
-#~ msgid "Rows"
-#~ msgstr "Royes"
+#~ msgid "Top to Bottom"
+#~ msgstr "Del copete al valêye"
 
-#~ msgctxt "@item:inlistbox Grid spacing"
-#~ msgid "None"
-#~ msgstr "Nouk"
+#~ msgctxt "@title:window"
+#~ msgid "Create new Tag"
+#~ msgstr "Ahiver novele etikete"
 
-#~ msgctxt "@option:check Startup Settings"
-#~ msgid "Show full path inside location bar"
-#~ msgstr "Mostrer l' tchimin en etir dins l' båre d' eplaeçmint"
-
-#~ msgctxt "@label"
-#~ msgid "Should the full path be shown inside the location bar"
-#~ msgstr ""
-#~ "Est c' ki tot l' tchimin dvreut esse mostré dins l' båre d' eplaeçmint"
-
-#~ msgctxt "@label"
-#~ msgid "Use auto-expanding folders for all view types"
-#~ msgstr ""
-#~ "Si siervi d' ridants ki s' agrandixhèt tot seu po totes les sôres di vuwe"
-
-#~ msgctxt "@label"
-#~ msgid "Show zoom slider in the statusbar"
-#~ msgstr "Håyner l' boton d' acinseu pol zoumaedje dins l' båre d' estat"
-
-#~ msgctxt "@label"
-#~ msgid "Show the space information in the statusbar"
-#~ msgstr "Håyner ls informåcions sol plaece dins l' båre d' estat"
-
-#~ msgid "&Edit"
-#~ msgstr "&Candjî"
-
-#~ msgid "&View"
-#~ msgstr "&Vey"
-
-#~ msgid "&Go"
-#~ msgstr "&Potchî"
+#~ msgctxt "@action:inmenu Edit"
+#~ msgid "Properties"
+#~ msgstr "Prôpietés"
 
 #~ msgctxt "@action:inmenu Navigation Bar"
-#~ msgid "Replace Location"
-#~ msgstr "Replaecî l' eplaeçmint"
+#~ msgid "Show Full Location"
+#~ msgstr "Mostrer l' eplaeçmint en etir"
 
-#~ msgctxt "@action:inmenu Tools"
-#~ msgid "Quick View"
-#~ msgstr "Vey rade"
+#~ msgctxt "@title:window"
+#~ msgid "Change Icon & Preview Size"
+#~ msgstr "Candjî l' grandeu di l' imådjete di &prévoeyaedje"
+
+#~ msgctxt "@item:inrange Icon Size"
+#~ msgid "Small"
+#~ msgstr "Pitite"
+
+#~ msgctxt "@item:inrange Icon Size"
+#~ msgid "Large"
+#~ msgstr "Grande"
+
+#~ msgctxt "@title:group"
+#~ msgid "Preview Size"
+#~ msgstr "Grandeu do prévoeyaedje"
+
+#~ msgctxt "@item:inrange Preview Size"
+#~ msgid "Small"
+#~ msgstr "Pitite"
+
+#~ msgctxt "@item:inrange Preview Size"
+#~ msgid "Large"
+#~ msgstr "Grande"
 
 #~ msgctxt "@action:inmenu"
-#~ msgid "Activate Next Tab"
-#~ msgstr "Mete en alaedje linwete shuvante"
+#~ msgid "&Move Here\t<shortcut>%1</shortcut>"
+#~ msgstr "&Bodjî chal\t<shortcut>%1</shortcut>"
 
 #~ msgctxt "@action:inmenu"
-#~ msgid "Activate Previous Tab"
-#~ msgstr "Mete en alaedje linwete di dvant"
+#~ msgid "&Copy Here\t<shortcut>%1</shortcut>"
+#~ msgstr "&Copyî chal\t<shortcut>%1</shortcut>"
 
 #~ msgctxt "@action:inmenu"
-#~ msgid "Open in New Tab"
-#~ msgstr "Drovi dins ene novele linwete"
+#~ msgid "&Link Here\t<shortcut>%1</shortcut>"
+#~ msgstr "&Loyî chal\t<shortcut>%1</shortcut>"
 
 #~ msgctxt "@action:inmenu"
-#~ msgid "Open in New Window"
-#~ msgstr "Drovi dins on novea purnea"
-
-#~ msgctxt "@action:inmenu File"
-#~ msgid "Delete (using shortcut for Trash)"
-#~ msgstr "Disfacer (e s' siervant do rascourti pol Batch)"
+#~ msgid "Cancel"
+#~ msgstr "Rinoncî"
 
 #~ msgctxt "@option:check"
-#~ msgid "Expandable folders"
+#~ msgid "Expandable Folders"
 #~ msgstr "Agrandixhåves ridants"
 
 #~ msgctxt "@info:status"

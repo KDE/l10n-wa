@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krunner\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-01-27 08:23+0100\n"
+"POT-Creation-Date: 2009-01-29 07:19+0100\n"
 "PO-Revision-Date: 2009-01-04 18:57+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -15,6 +15,50 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 0.2\n"
+
+#: interfaces/default/interface.cpp:76 interfaces/default/interface.cpp:77
+#: interfaces/quicksand/qs_dialog.cpp:50 interfaces/quicksand/qs_dialog.cpp:51
+msgid "Settings"
+msgstr "Apontiaedjes"
+
+#: interfaces/default/interface.cpp:96 interfaces/default/interface.cpp:97
+#: krunnerapp.cpp:202 krunnerapp.cpp:203
+msgid "Show System Activity"
+msgstr "Mostrer l' activité do sistinme"
+
+#: interfaces/default/interface.cpp:456
+#, kde-format
+msgid "%1: %2"
+msgstr "%1: %2"
+
+#: interfaces/quicksand/qs_dialog.cpp:80
+msgid "Actions"
+msgstr "Accions"
+
+#: interfaces/quicksand/qs_dialog.cpp:81
+msgid "actions"
+msgstr "accions"
+
+#: interfaces/quicksand/qs_matchview.cpp:122
+msgid "items"
+msgstr "cayets"
+
+#: interfaces/quicksand/qs_matchview.cpp:176
+msgid "Type to search."
+msgstr "Tapez po cweri."
+
+#: interfaces/quicksand/qs_matchview.cpp:251
+#, kde-format
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: interfaces/quicksand/qs_matchview.cpp:334
+msgid "Loading..."
+msgstr "Dji tchedje..."
+
+#: interfaces/quicksand/qs_matchview.cpp:418
+msgid "No results found."
+msgstr "Dji n' a pont trové d' rizultat."
 
 #: lock/autologout.cc:44
 msgid "<qt><nobr><b>Automatic Log Out</b></nobr></qt>"
@@ -62,50 +106,54 @@ msgstr "N' enonder kel sipårgneu di waitroûle"
 msgid "Only use the blank screen saver"
 msgstr "N' eployî kel vude sipårgneu di waitroûle"
 
-#: lock/lockprocess.cc:764
+#: lock/main.cc:67
+msgid "start with plasma unlocked for configuring"
+msgstr "enonder avou plasma disaclawé po l' apontiaedje"
+
+#: lock/lockprocess.cc:796
 msgid "Will not lock the session, as unlocking would be impossible:\n"
 msgstr ""
 "Dji n' va nén aclawer l' session paski l' aclawaedje sereut nén possibe:\n"
 
-#: lock/lockprocess.cc:768
+#: lock/lockprocess.cc:800
 msgid "Cannot start <i>kcheckpass</i>."
 msgstr "Dji n' sai enonder <i>kcheckpass</i>"
 
-#: lock/lockprocess.cc:769
+#: lock/lockprocess.cc:801
 msgid "<i>kcheckpass</i> is unable to operate. Possibly it is not setuid root."
 msgstr ""
 "Dji n' sai nén fé aler <i>kcheckpass</i>. Motoit i n' est nén setuid root."
 
-#: lock/lockprocess.cc:812
+#: lock/lockprocess.cc:863
 msgid "No appropriate greeter plugin configured."
 msgstr "Pont d' bon tchôke-divins d' bénvnowe d' apontyî."
 
-#: lock/lockdlg.cc:96
+#: lock/lockdlg.cc:98
 msgid "<nobr><b>The session is locked</b></nobr><br />"
 msgstr "<nobr><b>Li session est aclawé</b></nobr><br />"
 
-#: lock/lockdlg.cc:97
+#: lock/lockdlg.cc:99
 #, kde-format
 msgid "<nobr><b>The session was locked by %1</b></nobr><br />"
 msgstr "<nobr><b>Li session a stî aclawêye pa %1</b></nobr><br />"
 
-#: lock/lockdlg.cc:108
+#: lock/lockdlg.cc:112
 msgid "Unl&ock"
 msgstr "Dis&aclawer"
 
-#: lock/lockdlg.cc:110
+#: lock/lockdlg.cc:114
 msgid "Sw&itch User..."
 msgstr "D&iscandjî d' uzeu..."
 
-#: lock/lockdlg.cc:178
+#: lock/lockdlg.cc:182
 msgid "<b>Unlocking failed</b>"
 msgstr "<b>Li disclawaedje a fwait berwete</b>"
 
-#: lock/lockdlg.cc:186
+#: lock/lockdlg.cc:190
 msgid "<b>Warning: Caps Lock on</b>"
 msgstr "<b>Asteme: Madjuscules eclawêyes</b>"
 
-#: lock/lockdlg.cc:418
+#: lock/lockdlg.cc:422
 #, kde-format
 msgid ""
 "Cannot unlock the session because the authentication system failed to work;\n"
@@ -115,11 +163,11 @@ msgstr ""
 "rote nén;\n"
 "vos dvoz touwer al mwin krunner_lock (pid %1)."
 
-#: lock/lockdlg.cc:507
+#: lock/lockdlg.cc:511
 msgid "&Start New Session"
 msgstr "&Enonder ene nouve session"
 
-#: lock/lockdlg.cc:515
+#: lock/lockdlg.cc:519
 #, kde-format
 msgid ""
 "You have chosen to open another desktop session instead of resuming the "
@@ -142,187 +190,122 @@ msgstr ""
 "eyet les dressêyes des scribannes ont ossu des faitindjes po passer d' ene "
 "session viè ene ôte."
 
-#: lock/lockdlg.cc:528
+#: lock/lockdlg.cc:532
 msgid "&Do not ask again"
 msgstr "&Ni nén dmander co on côp"
 
-#: lock/lockdlg.cc:584
+#: lock/lockdlg.cc:588
 msgid "Session"
 msgstr "Session"
 
-#: lock/lockdlg.cc:584
+#: lock/lockdlg.cc:588
 msgid "Location"
 msgstr "Eplaeçmint"
 
-#: lock/lockdlg.cc:612
+#: lock/lockdlg.cc:616
 msgctxt "session"
 msgid "&Activate"
 msgstr "Mete en &alaedje"
 
-#: lock/lockdlg.cc:621
+#: lock/lockdlg.cc:625
 msgid "Start &New Session"
 msgstr "E&nonder ene nouve session"
 
-#: main.cpp:33
-msgid "KDE run command interface"
-msgstr "Eterface d' enondaedje di comande di KDE"
-
-#: main.cpp:39
-msgid "Run Command Interface"
-msgstr "Eterface d' enondaedje di comande"
-
-#: main.cpp:41
-msgid "(c) 2006, Aaron Seigo"
-msgstr "© 2006, Aaron Seigo"
-
-#: main.cpp:42
-msgid "Aaron J. Seigo"
-msgstr "Aaron J. Seigo"
-
-#: main.cpp:43
-msgid "Author and maintainer"
-msgstr "Oteur et mintneu"
-
-#: interface.cpp:70 krunnerapp.cpp:143 krunnerapp.cpp:144
+#: krunnerdialog.cpp:57 krunnerapp.cpp:191 krunnerapp.cpp:192
 msgid "Run Command"
 msgstr "Enonder ene kimande"
 
-#: interface.cpp:84 interface.cpp:85
-msgid "Settings"
-msgstr "Apontiaedjes"
+#: main.cpp:37
+msgid "KDE run command interface"
+msgstr "Eterface d' enondaedje di comande di KDE"
 
-#: interface.cpp:104 interface.cpp:105 krunnerapp.cpp:154 krunnerapp.cpp:155
-msgid "Show System Activity"
-msgstr "Mostrer l' activité do sistinme"
+#: main.cpp:43
+msgid "Run Command Interface"
+msgstr "Eterface d' enondaedje di comande"
 
-#: interface.cpp:112
-msgid "Launch"
-msgstr ""
+#: main.cpp:45
+msgid "(c) 2006, Aaron Seigo"
+msgstr "© 2006, Aaron Seigo"
 
-#: interface.cpp:113
-msgid "Click to execute the selected item above"
-msgstr ""
+#: main.cpp:46
+msgid "Aaron J. Seigo"
+msgstr "Aaron J. Seigo"
 
-#: interface.cpp:114
-msgid "Show Options"
-msgstr ""
+#: main.cpp:47
+msgid "Author and maintainer"
+msgstr "Oteur et mintneu"
 
-#: configdialog.cpp:44
+#: configdialog.cpp:53
+msgid "Plugins"
+msgstr "Tchôkes-divins"
+
+#: configdialog.cpp:60
+msgid "Command oriented"
+msgstr "Tuzé po les cmandes"
+
+#: configdialog.cpp:61
+msgid "Task oriented"
+msgstr "Tuzé po les bouyes"
+
+#: configdialog.cpp:75
+msgid "Preview"
+msgstr "Prévey"
+
+#: configdialog.cpp:83
+msgid "User Interface"
+msgstr "Eterface di l' uzeu"
+
+#: configdialog.cpp:86
 msgid "KRunner Settings"
 msgstr "Tchuzes di KRunner"
 
-#: configdialog.cpp:51
-#, fuzzy
-#| msgid "KRunner Settings"
-msgid "Runners"
-msgstr "Tchuzes di KRunner"
+#: configdialog.cpp:93
+msgid "Available Features"
+msgstr "Fonccionålités k' i gn a"
 
-#. i18n: file: krunner.kcfg:16
-#. i18n: ectx: label, entry, group (TaskDialog)
-#: rc.cpp:11
-msgid "Completion mode used for the query text."
-msgstr ""
-
-#. i18n: file: krunner.kcfg:21
-#. i18n: ectx: label, entry (PastQueries), group (TaskDialog)
-#: rc.cpp:14
-msgid "History if past queries successfully completed"
-msgstr ""
-
-#. i18n: file: krunner.kcfg:27
-#. i18n: ectx: label, entry (KeepTaskDialogAbove), group (TaskDialog)
-#: rc.cpp:18
-msgid "Whether to keep the tasks dialog above other windows when shown."
-msgstr ""
-
-#. i18n: file: kscreensaversettings.kcfg:11
-#. i18n: ectx: label, entry (ScreenSaverEnabled), group (ScreenSaver)
-#: rc.cpp:22
-#, fuzzy
-#| msgid "Only start screen saver"
-msgid "Enable screen saver"
-msgstr "N' enonder kel sipårgneu di waitroûle"
-
-#. i18n: file: kscreensaversettings.kcfg:12
-#. i18n: ectx: whatsthis, entry (ScreenSaverEnabled), group (ScreenSaver)
-#: rc.cpp:25
-#, fuzzy
-#| msgid "Only use the blank screen saver"
-msgid "Enables the screen saver."
-msgstr "N' eployî kel vude sipårgneu di waitroûle"
-
-#. i18n: file: kscreensaversettings.kcfg:16
-#. i18n: ectx: label, entry, group (ScreenSaver)
-#: rc.cpp:28
-msgid "Screen saver timeout"
-msgstr ""
-
-#. i18n: file: kscreensaversettings.kcfg:17
-#. i18n: ectx: whatsthis, entry, group (ScreenSaver)
-#: rc.cpp:31
-msgid "Sets the seconds after which the screen saver is started."
-msgstr ""
-
-#. i18n: file: kscreensaversettings.kcfg:21
-#. i18n: ectx: label, entry (SuspendWhenInvisible), group (ScreenSaver)
-#: rc.cpp:34
-msgid "Suspend screen saver when DPMS kicks in"
-msgstr ""
-
-#. i18n: file: kscreensaversettings.kcfg:24
-#. i18n: ectx: whatsthis, entry (SuspendWhenInvisible), group (ScreenSaver)
-#: rc.cpp:37
-msgid ""
-"Usually the screen saver is suspended when display power saving kicks in,\n"
-"       as nothing can be seen on the screen anyway, obviously. However, some "
-"screen savers\n"
-"       actually perform useful computations, so it is not desirable to "
-"suspend them."
-msgstr ""
-
-#: rc.cpp:64
+#: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Djan Cayron"
 
-#: rc.cpp:65
+#: rc.cpp:2
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "jean.cayron@gmail.com"
 
-#: krunnerapp.cpp:148 krunnerapp.cpp:149
+#: krunnerapp.cpp:196 krunnerapp.cpp:197
 msgid "Run Command on clipboard contents"
 msgstr "Enonder comande so les ådvins do tchapea emacralé"
 
-#: krunnerapp.cpp:166 krunnerapp.cpp:167
+#: krunnerapp.cpp:214 krunnerapp.cpp:215
 msgid "Switch User"
 msgstr "Discandjî d' uzeu"
 
-#: krunnerapp.cpp:172 krunnerapp.cpp:173
+#: krunnerapp.cpp:221 krunnerapp.cpp:222
 msgid "Lock Session"
 msgstr "Aclawer li session"
 
-#: krunnerapp.cpp:179 krunnerapp.cpp:180
+#: krunnerapp.cpp:229 krunnerapp.cpp:230
 msgid "Log Out"
 msgstr "Si dislodjî"
 
-#: krunnerapp.cpp:184 krunnerapp.cpp:185
+#: krunnerapp.cpp:234 krunnerapp.cpp:235
 msgid "Log Out Without Confirmation"
 msgstr "Si dislodjî sins acertinaedje"
 
-#: krunnerapp.cpp:189 krunnerapp.cpp:190
+#: krunnerapp.cpp:239 krunnerapp.cpp:240
 msgid "Halt Without Confirmation"
 msgstr "Distinde sins acertinaedje"
 
-#: krunnerapp.cpp:194 krunnerapp.cpp:195
+#: krunnerapp.cpp:244 krunnerapp.cpp:245
 msgid "Reboot Without Confirmation"
 msgstr "Renonder l' sistinme sins acertinaedje"
 
-#: krunnerapp.cpp:243
+#: krunnerapp.cpp:296
 msgid "System Activity"
 msgstr "Activité do sistinme"
 
-#: krunnerapp.cpp:322
+#: krunnerapp.cpp:405
 msgid ""
 "Could not log out properly.\n"
 "The session manager cannot be contacted. You can try to force a shutdown by "
@@ -334,47 +317,17 @@ msgstr ""
 "foirci on distindaedje del session X avou Ctrl+Alt+Backspace. Mins notez kel "
 "session do moumint n' serè nén schapêye avou on distindaedje foirci."
 
-#~ msgid "%1: %2"
-#~ msgstr "%1: %2"
+#, fuzzy
+#~| msgid "KRunner Settings"
+#~ msgid "Runners"
+#~ msgstr "Tchuzes di KRunner"
 
-#~ msgid "Actions"
-#~ msgstr "Accions"
+#, fuzzy
+#~| msgid "Only start screen saver"
+#~ msgid "Enable screen saver"
+#~ msgstr "N' enonder kel sipårgneu di waitroûle"
 
-#~ msgid "actions"
-#~ msgstr "accions"
-
-#~ msgid "items"
-#~ msgstr "cayets"
-
-#~ msgid "Type to search."
-#~ msgstr "Tapez po cweri."
-
-#~ msgid "%1 %2"
-#~ msgstr "%1 %2"
-
-#~ msgid "Loading..."
-#~ msgstr "Dji tchedje..."
-
-#~ msgid "No results found."
-#~ msgstr "Dji n' a pont trové d' rizultat."
-
-#~ msgid "start with plasma unlocked for configuring"
-#~ msgstr "enonder avou plasma disaclawé po l' apontiaedje"
-
-#~ msgid "Plugins"
-#~ msgstr "Tchôkes-divins"
-
-#~ msgid "Command oriented"
-#~ msgstr "Tuzé po les cmandes"
-
-#~ msgid "Task oriented"
-#~ msgstr "Tuzé po les bouyes"
-
-#~ msgid "Preview"
-#~ msgstr "Prévey"
-
-#~ msgid "User Interface"
-#~ msgstr "Eterface di l' uzeu"
-
-#~ msgid "Available Features"
-#~ msgstr "Fonccionålités k' i gn a"
+#, fuzzy
+#~| msgid "Only use the blank screen saver"
+#~ msgid "Enables the screen saver."
+#~ msgstr "N' eployî kel vude sipårgneu di waitroûle"
