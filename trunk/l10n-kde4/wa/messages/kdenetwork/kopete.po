@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kopete\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-07 11:36+0100\n"
+"POT-Creation-Date: 2009-02-09 10:16+0100\n"
 "PO-Revision-Date: 2009-01-11 16:20+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -351,7 +351,7 @@ msgid "Kopete Avatar Selector Widget Test"
 msgstr "Sayaedje di l' ahesse tchoezixheuse di vizaedje"
 
 #: libkopete/tests/avatarselectortest_program.cpp:26 kopete/main.cpp:47
-#: kopete/chatwindow/krichtexteditpart.cpp:254
+#: kopete/chatwindow/chattexteditpart.cpp:528
 msgid "Michaël Larouche"
 msgstr "Michaël Larouche"
 
@@ -1283,7 +1283,7 @@ msgstr "Defini &estat"
 #. i18n: ectx: property (text), widget (AccountTreeWidget, mAccountList)
 #. i18n: file: kopete/chatwindow/kopeteemailwindow.rc:42
 #. i18n: ectx: ToolBar (statusToolBar)
-#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:68
+#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:62
 #. i18n: ectx: ToolBar (statusToolBar)
 #. i18n: file: plugins/otr/otrprefs.ui:206
 #. i18n: ectx: property (text), widget (QTableWidget, tbFingerprints)
@@ -1293,7 +1293,7 @@ msgstr "Defini &estat"
 #. i18n: ectx: property (text), widget (AccountTreeWidget, mAccountList)
 #. i18n: file: kopete/chatwindow/kopeteemailwindow.rc:42
 #. i18n: ectx: ToolBar (statusToolBar)
-#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:68
+#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:62
 #. i18n: ectx: ToolBar (statusToolBar)
 #. i18n: file: plugins/otr/otrprefs.ui:206
 #. i18n: ectx: property (text), widget (QTableWidget, tbFingerprints)
@@ -1485,7 +1485,7 @@ msgstr "Programeu et mintneu do tchôke-divins Gadu"
 msgid "Gustavo Pichorim Boiko"
 msgstr "Gustavo Pichorim Boiko"
 
-#: kopete/main.cpp:44 kopete/chatwindow/krichtexteditpart.cpp:253
+#: kopete/main.cpp:44 kopete/chatwindow/chattexteditpart.cpp:527
 msgid "Jason Keirstead"
 msgstr "Jason Keirstead"
 
@@ -2613,123 +2613,101 @@ msgstr "Berdeler"
 msgid "<qt><i>%1</i> is now %2.</qt>"
 msgstr "<qt><i>%1</i> est asteure %2.</qt>"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:245
+#: kopete/chatwindow/kopetechatwindow.cpp:246
 msgctxt "@action:button"
 msgid "Send"
 msgstr "Evoyî"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:256
+#: kopete/chatwindow/kopetechatwindow.cpp:257
 msgctxt "@info:status"
 msgid "Ready."
 msgstr "Presse."
 
-#: kopete/chatwindow/kopetechatwindow.cpp:356
+#: kopete/chatwindow/kopetechatwindow.cpp:357
 #: kopete/chatwindow/kopeteemailwindow.cpp:219
 msgid "&Send Message"
 msgstr "&Evoyî messaedje"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:363
+#: kopete/chatwindow/kopetechatwindow.cpp:364
 msgid "Send File"
 msgstr "Evoyî fitchî"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:371
+#: kopete/chatwindow/kopetechatwindow.cpp:372
 msgid "Close All Chats"
 msgstr "Clôre totes les berdelaedjes"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:376
+#: kopete/chatwindow/kopetechatwindow.cpp:377
 msgid "&Activate Next Active Tab"
 msgstr "&Mete en alaedje li linwete ovrante shuvante"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:382
+#: kopete/chatwindow/kopetechatwindow.cpp:383
 msgid "&Activate Next Tab"
 msgstr "&Mete en alaedje li linwete shuvante"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:388
+#: kopete/chatwindow/kopetechatwindow.cpp:389
 msgid "&Activate Previous Tab"
 msgstr "&Mete en alaedje li linwete di dvant"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:396
+#: kopete/chatwindow/kopetechatwindow.cpp:397
 msgid "Nic&k Completion"
 msgstr "Completaedje do tecse Nick"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:400
+#: kopete/chatwindow/kopetechatwindow.cpp:401
 msgid "&Detach Chat"
 msgstr "&Distaetchî berdelaedje"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:405
+#: kopete/chatwindow/kopetechatwindow.cpp:406
 msgid "&Move Tab to Window"
 msgstr "&Bodjî linwete viè purnea"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:412
+#: kopete/chatwindow/kopetechatwindow.cpp:413
 msgid "&Tab Placement"
 msgstr "Plaeçmint del linwe&te"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:424
-msgid "Set &Font..."
-msgstr "Tchoezi &fonte..."
-
-#: kopete/chatwindow/kopetechatwindow.cpp:428
-msgid "Reset Font And Color"
-msgstr "Rimete a zero fonte et coleur"
-
-#: kopete/chatwindow/kopetechatwindow.cpp:432
-#: kopete/chatwindow/kopeteemailwindow.cpp:236
-msgid "Set Text &Color..."
-msgstr "Tchoezi &coleur do tecse..."
-
-#: kopete/chatwindow/kopetechatwindow.cpp:436
-#: kopete/chatwindow/kopeteemailwindow.cpp:240
-msgid "Set &Background Color..."
-msgstr "Tchoezi coleur di fo&nd..."
-
-#: kopete/chatwindow/kopetechatwindow.cpp:440
-#: kopete/chatwindow/krichtexteditpart.cpp:261
-msgid "Enable &Rich Text"
-msgstr "Permete li tecse e&ritchî"
-
-#: kopete/chatwindow/kopetechatwindow.cpp:444
+#: kopete/chatwindow/kopetechatwindow.cpp:426
 msgid "Previous History"
 msgstr "Istwere di dvant"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:449
+#: kopete/chatwindow/kopetechatwindow.cpp:431
 msgid "Next History"
 msgstr "Istwere shuvante"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:461
+#: kopete/chatwindow/kopetechatwindow.cpp:443
+#: kopete/chatwindow/kopeterichtextwidget.cpp:129
 msgid "Automatic Spell Checking"
 msgstr "Coridjrece otomatike"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:467
+#: kopete/chatwindow/kopetechatwindow.cpp:449
 msgid "Show Participants"
 msgstr "Mostrer pårticipants"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:468
+#: kopete/chatwindow/kopetechatwindow.cpp:450
 msgid "Participants"
 msgstr "Pårticipants"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:477
+#: kopete/chatwindow/kopetechatwindow.cpp:459
 msgid "Co&ntacts"
 msgstr "Soço&ns"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:500
+#: kopete/chatwindow/kopetechatwindow.cpp:482
 #: kopete/chatwindow/kopeteemailwindow.cpp:272
 msgid "Toolbar Animation"
 msgstr "Animåcion del bår ås usteyes"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:678
+#: kopete/chatwindow/kopetechatwindow.cpp:645
 msgctxt "@info:tooltip"
 msgid "Close the current tab"
 msgstr "Clôre li linwete do moumint"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:1111
+#: kopete/chatwindow/kopetechatwindow.cpp:1076
 msgid "More..."
 msgstr "Co des ôtes..."
 
-#: kopete/chatwindow/kopetechatwindow.cpp:1127
+#: kopete/chatwindow/kopetechatwindow.cpp:1092
 msgid "Top"
 msgstr "Al copete"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:1130
+#: kopete/chatwindow/kopetechatwindow.cpp:1095
 msgid "Bottom"
 msgstr "Al valêye"
 
@@ -2755,6 +2733,32 @@ msgstr "Åk n' a nén stî come dji schapéve"
 msgid "User Has Left"
 msgstr "L' uzeu a cwité"
 
+#: kopete/chatwindow/chattexteditpart.cpp:523
+#, fuzzy
+#| msgid "KRichTextEditPart"
+msgid "ChatTextEditPart"
+msgstr "KAspougneu di tecse eritchî"
+
+#: kopete/chatwindow/chattexteditpart.cpp:524
+msgid "A simple rich text editor part"
+msgstr "On simpe aspougneu di tecse eritchî"
+
+#: kopete/chatwindow/chattexteditpart.cpp:526
+msgid "Richard J. Moore"
+msgstr "Richard J. Moore"
+
+#: kopete/chatwindow/chattexteditpart.cpp:529
+msgid "Benson Tsai"
+msgstr ""
+
+#: kopete/chatwindow/kopeterichtextwidget.cpp:137
+msgid "Enable &Rich Text"
+msgstr "Permete li tecse e&ritchî"
+
+#: kopete/chatwindow/kopeterichtextwidget.cpp:144
+msgid "Reset Font And Color"
+msgstr "Rimete a zero fonte et coleur"
+
 #: kopete/chatwindow/kopeteemailwindow.cpp:167
 msgid "<< Prev"
 msgstr "<< Di dvant"
@@ -2767,6 +2771,14 @@ msgstr "(0) Shuvant >>"
 msgid "&Set Font..."
 msgstr "Tchoezi &fonte..."
 
+#: kopete/chatwindow/kopeteemailwindow.cpp:236
+msgid "Set Text &Color..."
+msgstr "Tchoezi &coleur do tecse..."
+
+#: kopete/chatwindow/kopeteemailwindow.cpp:240
+msgid "Set &Background Color..."
+msgstr "Tchoezi coleur di fo&nd..."
+
 #: kopete/chatwindow/kopeteemailwindow.cpp:269
 msgid "Spacer for animation"
 msgstr "Espåceu pos animåcion"
@@ -2777,7 +2789,7 @@ msgid "(%1) Next >>"
 msgstr "(%1) Shuvant >>"
 
 #: kopete/chatwindow/kopeteemailwindow.cpp:458
-#: kopete/chatwindow/chatview.cpp:363
+#: kopete/chatwindow/chatview.cpp:368
 #, kde-format
 msgid ""
 "<qt>You are about to leave the groupchat session <b>%1</b>.<br />You will "
@@ -2785,7 +2797,7 @@ msgid ""
 msgstr ""
 
 #: kopete/chatwindow/kopeteemailwindow.cpp:459
-#: kopete/chatwindow/chatview.cpp:364
+#: kopete/chatwindow/chatview.cpp:369
 msgid "Closing Group Chat"
 msgstr "Cloyaedje do berdelaedje di groupe"
 
@@ -2796,7 +2808,7 @@ msgid "Cl&ose Chat"
 msgstr "&Clôre berdelaedje"
 
 #: kopete/chatwindow/kopeteemailwindow.cpp:465
-#: kopete/chatwindow/chatview.cpp:370
+#: kopete/chatwindow/chatview.cpp:375
 #, kde-format
 msgid ""
 "<qt>You have received a message from <b>%1</b> in the last second. Are you "
@@ -2804,19 +2816,19 @@ msgid ""
 msgstr ""
 
 #: kopete/chatwindow/kopeteemailwindow.cpp:466
-#: kopete/chatwindow/chatview.cpp:371
+#: kopete/chatwindow/chatview.cpp:376
 msgid "Unread Message"
 msgstr "Messaedjes nén léjhou"
 
 #: kopete/chatwindow/kopeteemailwindow.cpp:472
-#: kopete/chatwindow/chatview.cpp:377
+#: kopete/chatwindow/chatview.cpp:382
 msgid ""
 "You have a message send in progress, which will be aborted if this chat is "
 "closed. Are you sure you want to close this chat?"
 msgstr ""
 
 #: kopete/chatwindow/kopeteemailwindow.cpp:473
-#: kopete/chatwindow/chatview.cpp:378
+#: kopete/chatwindow/chatview.cpp:383
 msgid "Message in Transit"
 msgstr "Messaedje di passaedje"
 
@@ -2834,116 +2846,56 @@ msgstr "Responde"
 msgid "Add Smiley"
 msgstr "Radjouter xhinåd"
 
-#: kopete/chatwindow/krichtexteditpart.cpp:249
-msgid "KRichTextEditPart"
-msgstr "KAspougneu di tecse eritchî"
-
-#: kopete/chatwindow/krichtexteditpart.cpp:250
-msgid "A simple rich text editor part"
-msgstr "On simpe aspougneu di tecse eritchî"
-
-#: kopete/chatwindow/krichtexteditpart.cpp:252
-msgid "Richard J. Moore"
-msgstr "Richard J. Moore"
-
-#: kopete/chatwindow/krichtexteditpart.cpp:263
-msgid "Disable &Rich Text"
-msgstr "Dismete li tecse e&ritchî"
-
-#: kopete/chatwindow/krichtexteditpart.cpp:267
-msgid "Check &Spelling"
-msgstr "Verifyî l' orto&grafeye"
-
-#: kopete/chatwindow/krichtexteditpart.cpp:272
-msgid "Text &Color..."
-msgstr "&Coleur do tecse..."
-
-#: kopete/chatwindow/krichtexteditpart.cpp:280
-msgid "&Font"
-msgstr "&Fonte"
-
-#: kopete/chatwindow/krichtexteditpart.cpp:285
-msgid "Font &Size"
-msgstr "&Grandeu del fonte"
-
-#: kopete/chatwindow/krichtexteditpart.cpp:290
-msgid "&Bold"
-msgstr "&Cråssès letes"
-
-#: kopete/chatwindow/krichtexteditpart.cpp:295
-msgid "&Italic"
-msgstr "C&lintcheyès letes"
-
-#: kopete/chatwindow/krichtexteditpart.cpp:301
-msgid "&Underline"
-msgstr "&Sorlignî"
-
-#: kopete/chatwindow/krichtexteditpart.cpp:313
-msgid "Align &Left"
-msgstr "Aroymint &Hintche"
-
-#: kopete/chatwindow/krichtexteditpart.cpp:318
-msgid "Align &Center"
-msgstr "Aroymint &Mitan"
-
-#: kopete/chatwindow/krichtexteditpart.cpp:323
-msgid "Align &Right"
-msgstr "Aroymint &Droete"
-
-#: kopete/chatwindow/krichtexteditpart.cpp:328
-msgid "&Justify"
-msgstr "D&justifyî"
-
-#: kopete/chatwindow/chatview.cpp:365 kopete/chatwindow/chatview.cpp:372
-#: kopete/chatwindow/chatview.cpp:379
+#: kopete/chatwindow/chatview.cpp:370 kopete/chatwindow/chatview.cpp:377
+#: kopete/chatwindow/chatview.cpp:384
 msgctxt "@action:button"
 msgid "Close Chat"
 msgstr "Clôre berdelaedje"
 
-#: kopete/chatwindow/chatview.cpp:419
+#: kopete/chatwindow/chatview.cpp:424
 #, kde-format
 msgid "One other person in the chat"
 msgid_plural "%1 other people in the chat"
 msgstr[0] "Ene ôte sakî e berdelaedje"
 msgstr[1] "%1 ôtès sakîs e berdelaedje"
 
-#: kopete/chatwindow/chatview.cpp:461
+#: kopete/chatwindow/chatview.cpp:476
 #, kde-format
 msgid "%1 is typing a message"
 msgstr "%1 est ki tape"
 
-#: kopete/chatwindow/chatview.cpp:465
+#: kopete/chatwindow/chatview.cpp:480
 #, kde-format
 msgctxt "%1 is a list of names"
 msgid "%1 are typing a message"
 msgstr "%1 sont ki tapèt"
 
-#: kopete/chatwindow/chatview.cpp:522 kopete/chatwindow/chatview.cpp:531
+#: kopete/chatwindow/chatview.cpp:537 kopete/chatwindow/chatview.cpp:546
 #, kde-format
 msgid "%1 is now known as %2"
 msgstr "%1 est asteure cnoxhou come %2"
 
-#: kopete/chatwindow/chatview.cpp:550
+#: kopete/chatwindow/chatview.cpp:565
 #, kde-format
 msgid "%1 has joined the chat."
 msgstr "%1 a-st arivé al såle di berdelaedje %s"
 
-#: kopete/chatwindow/chatview.cpp:595
+#: kopete/chatwindow/chatview.cpp:610
 #, kde-format
 msgid "%1 has left the chat."
 msgstr "%1 a cwité l' berdelaedje."
 
-#: kopete/chatwindow/chatview.cpp:597
+#: kopete/chatwindow/chatview.cpp:612
 #, kde-format
 msgid "%1 has left the chat (%2)."
 msgstr "%1 a cwité l' berdelaedje (%2)."
 
-#: kopete/chatwindow/chatview.cpp:704
+#: kopete/chatwindow/chatview.cpp:719
 #, kde-format
 msgid "You are now marked as %1."
 msgstr "Vos estoz asteure marké come %1."
 
-#: kopete/chatwindow/chatview.cpp:709
+#: kopete/chatwindow/chatview.cpp:724
 #, kde-format
 msgid "%2 is now %1."
 msgstr "%2 est asteure %1"
@@ -4889,7 +4841,7 @@ msgstr "&Candjî"
 #. i18n: ectx: Menu (settings)
 #. i18n: file: kopete/chatwindow/kopeteemailwindow.rc:22
 #. i18n: ectx: Menu (settings)
-#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:41
+#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:34
 #. i18n: ectx: Menu (settings)
 #. i18n: file: plugins/otr/otrprefs.ui:23
 #. i18n: ectx: attribute (title), widget (QWidget, settings)
@@ -4897,7 +4849,7 @@ msgstr "&Candjî"
 #. i18n: ectx: Menu (settings)
 #. i18n: file: kopete/chatwindow/kopeteemailwindow.rc:22
 #. i18n: ectx: Menu (settings)
-#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:41
+#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:34
 #. i18n: ectx: Menu (settings)
 #. i18n: file: plugins/otr/otrprefs.ui:23
 #. i18n: ectx: attribute (title), widget (QWidget, settings)
@@ -4911,7 +4863,7 @@ msgstr "A&pontiaedjes"
 #. i18n: ectx: ToolBar (mainToolBar)
 #. i18n: file: kopete/chatwindow/kopeteemailwindow.rc:29
 #. i18n: ectx: ToolBar (mainToolBar)
-#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:52
+#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:45
 #. i18n: ectx: ToolBar (mainToolBar)
 #. i18n: file: kopete/kopeteui.rc:47
 #. i18n: ectx: ToolBar (mainToolBar)
@@ -4919,7 +4871,7 @@ msgstr "A&pontiaedjes"
 #. i18n: ectx: ToolBar (mainToolBar)
 #. i18n: file: kopete/chatwindow/kopeteemailwindow.rc:29
 #. i18n: ectx: ToolBar (mainToolBar)
-#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:52
+#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:45
 #. i18n: ectx: ToolBar (mainToolBar)
 #: rc.cpp:914 rc.cpp:1082 rc.cpp:1097 rc.cpp:1115
 msgid "Main Toolbar"
@@ -5268,11 +5220,11 @@ msgstr "&Aroymint"
 
 #. i18n: file: kopete/chatwindow/kopeterichtexteditpartfull.rc:32
 #. i18n: ectx: ToolBar (formatToolBar)
-#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:71
+#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:66
 #. i18n: ectx: ToolBar (formatToolBar)
 #. i18n: file: kopete/chatwindow/kopeterichtexteditpartfull.rc:32
 #. i18n: ectx: ToolBar (formatToolBar)
-#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:71
+#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:66
 #. i18n: ectx: ToolBar (formatToolBar)
 #: rc.cpp:1085 rc.cpp:1124
 msgid "Format Toolbar"
@@ -5327,13 +5279,13 @@ msgstr "&Berdeler"
 msgid "&Format"
 msgstr "&Epådjnaedje"
 
-#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:31
+#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:24
 #. i18n: ectx: Menu (tabs)
 #: rc.cpp:1109
 msgid "&Tabs"
 msgstr "&Linwetes"
 
-#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:56
+#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:50
 #. i18n: ectx: ToolBar (chatToolBar)
 #: rc.cpp:1118
 msgid "Chat Toolbar"
@@ -22483,6 +22435,45 @@ msgid ""
 "Sorry, we are unable to connect to the local mDNS server. Please ensure the "
 "Avahi daemon is running."
 msgstr ""
+
+#~ msgid "Set &Font..."
+#~ msgstr "Tchoezi &fonte..."
+
+#~ msgid "Disable &Rich Text"
+#~ msgstr "Dismete li tecse e&ritchî"
+
+#~ msgid "Check &Spelling"
+#~ msgstr "Verifyî l' orto&grafeye"
+
+#~ msgid "Text &Color..."
+#~ msgstr "&Coleur do tecse..."
+
+#~ msgid "&Font"
+#~ msgstr "&Fonte"
+
+#~ msgid "Font &Size"
+#~ msgstr "&Grandeu del fonte"
+
+#~ msgid "&Bold"
+#~ msgstr "&Cråssès letes"
+
+#~ msgid "&Italic"
+#~ msgstr "C&lintcheyès letes"
+
+#~ msgid "&Underline"
+#~ msgstr "&Sorlignî"
+
+#~ msgid "Align &Left"
+#~ msgstr "Aroymint &Hintche"
+
+#~ msgid "Align &Center"
+#~ msgstr "Aroymint &Mitan"
+
+#~ msgid "Align &Right"
+#~ msgstr "Aroymint &Droete"
+
+#~ msgid "&Justify"
+#~ msgstr "D&justifyî"
 
 #, fuzzy
 #~ msgid "A fatal error occurred while downloading buddy icon."
