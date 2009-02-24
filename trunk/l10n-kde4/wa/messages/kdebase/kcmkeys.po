@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkeys\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-22 09:47+0100\n"
+"POT-Creation-Date: 2009-02-24 11:00+0100\n"
 "PO-Revision-Date: 2008-12-14 18:28+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -21,19 +21,19 @@ msgstr ""
 #: kglobalshortcutseditor.cpp:114
 #, fuzzy
 #| msgid "Import Scheme..."
-msgid "Import Scheme ..."
+msgid "Import Scheme..."
 msgstr "Abaguer djeu..."
 
 #: kglobalshortcutseditor.cpp:115
 #, fuzzy
 #| msgid "Export Scheme..."
-msgid "Export Scheme ..."
+msgid "Export Scheme..."
 msgstr "Ebaguer djeu..."
 
 #: kglobalshortcutseditor.cpp:116
 #, fuzzy
 #| msgid "KDE component:"
-msgid "Revise Component"
+msgid "Remove Component"
 msgstr "Componint di KDE:"
 
 #: kglobalshortcutseditor.cpp:234
@@ -73,20 +73,28 @@ msgstr ""
 "Li saye di contak avou l' démon des globås rascourtis d' KDE a a fwait "
 "berwete\n"
 
-#: kglobalshortcutseditor.cpp:385
+#: kglobalshortcutseditor.cpp:387
 #, kde-format
 msgid ""
-"This will remove all currently not active global shortcuts for %1 from this "
-"list. %1 is removed too if no shortcut is left.\n"
-"All global shortcuts will reregister themselves whenever they are activated "
-"the next time!"
+"Component '%1' is currently active. Only global shortcuts currently not "
+"active will be removed from the list.\n"
+"All global shortcuts will reregister themselves with their default when they "
+"are started the next time!"
 msgstr ""
 
-#: kglobalshortcutseditor.cpp:387
+#: kglobalshortcutseditor.cpp:389 kglobalshortcutseditor.cpp:399
 #, fuzzy
 #| msgid "KDE component:"
-msgid "Clean component"
+msgid "Remove component"
 msgstr "Componint di KDE:"
+
+#: kglobalshortcutseditor.cpp:395
+#, kde-format
+msgid ""
+"Are you sure you want to remove the registered shortcuts for component '%1'?."
+"The component and shortcuts will reregister themselves with their default "
+"setting when they are started the next time."
+msgstr ""
 
 #. i18n: file: kglobalshortcutseditor.ui:19
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -129,6 +137,11 @@ msgstr "Tchoezi on fitchî di djeu d' tapes rascourti"
 #: rc.cpp:21
 msgid "&Path:"
 msgstr "&Tchimin :"
+
+#, fuzzy
+#~| msgid "KDE component:"
+#~ msgid "Clean component"
+#~ msgstr "Componint di KDE:"
 
 #~ msgid "Shortcuts:"
 #~ msgstr "Rascourtis:"
