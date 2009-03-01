@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkeys\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-27 10:50+0100\n"
+"POT-Creation-Date: 2009-03-01 10:33+0100\n"
 "PO-Revision-Date: 2008-12-14 18:28+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -18,25 +18,51 @@ msgstr ""
 "X-Generator: Lokalize 0.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: kglobalshortcutseditor.cpp:114
+#: globalshortcuts.cpp:67
+msgid "You are about to reset all shortcuts to their default value!"
+msgstr ""
+
+#: globalshortcuts.cpp:68
+#, fuzzy
+#| msgid "Prefer 4-modifier defaults"
+msgid "Reset to defaults"
+msgstr "Prémetous avou 4 tapes modifieuses"
+
+#: globalshortcuts.cpp:69
+#, fuzzy
+#| msgid "KDE component:"
+msgid "Current Component"
+msgstr "Componint di KDE:"
+
+#: globalshortcuts.cpp:70
+#, fuzzy
+#| msgid "KDE component:"
+msgid "All Components"
+msgstr "Componint di KDE:"
+
+#: kglobalshortcutseditor.cpp:116
 #, fuzzy
 #| msgid "Import Scheme..."
 msgid "Import Scheme..."
 msgstr "Abaguer djeu..."
 
-#: kglobalshortcutseditor.cpp:115
+#: kglobalshortcutseditor.cpp:117
 #, fuzzy
 #| msgid "Export Scheme..."
 msgid "Export Scheme..."
 msgstr "Ebaguer djeu..."
 
-#: kglobalshortcutseditor.cpp:116
+#: kglobalshortcutseditor.cpp:118
+msgid "Set All Shortcuts to None"
+msgstr ""
+
+#: kglobalshortcutseditor.cpp:119
 #, fuzzy
 #| msgid "KDE component:"
 msgid "Remove Component"
 msgstr "Componint di KDE:"
 
-#: kglobalshortcutseditor.cpp:234
+#: kglobalshortcutseditor.cpp:282
 msgid ""
 "Your current changes will be lost if you load another scheme before saving "
 "this one"
@@ -44,23 +70,23 @@ msgstr ""
 "Vos candjmints si vont piede si vos tcherdjîz èn ôte djeu d' tapes rascourti "
 "sins schaper ci chal"
 
-#: kglobalshortcutseditor.cpp:235
+#: kglobalshortcutseditor.cpp:283
 #, fuzzy
 #| msgid "Load Shortcurt Scheme"
 msgid "Load Shortcut Scheme"
 msgstr "Tcherdjî djeu d' tapes rascourti"
 
-#: kglobalshortcutseditor.cpp:236
+#: kglobalshortcutseditor.cpp:284
 msgid "Load"
 msgstr "Tcherdjî"
 
-#: kglobalshortcutseditor.cpp:249
+#: kglobalshortcutseditor.cpp:297
 #, kde-format
 msgid "This file (%1) does not exist. You can only select local files."
 msgstr ""
 "Ci fitchî (%1) n' egzistêye nén. Vos n' poloz tchoezi k' des locås fitchîs."
 
-#: kglobalshortcutseditor.cpp:278 kglobalshortcutseditor.cpp:301
+#: kglobalshortcutseditor.cpp:325 kglobalshortcutseditor.cpp:348
 #, kde-format
 msgid ""
 "Message: %1\n"
@@ -69,13 +95,13 @@ msgstr ""
 "Messaedje: %1\n"
 "Aroke: %2"
 
-#: kglobalshortcutseditor.cpp:283 kglobalshortcutseditor.cpp:306
+#: kglobalshortcutseditor.cpp:330 kglobalshortcutseditor.cpp:353
 msgid "Failed to contact the KDE global shortcuts daemon\n"
 msgstr ""
 "Li saye di contak avou l' démon des globås rascourtis d' KDE a a fwait "
 "berwete\n"
 
-#: kglobalshortcutseditor.cpp:387
+#: kglobalshortcutseditor.cpp:462
 #, kde-format
 msgid ""
 "Component '%1' is currently active. Only global shortcuts currently not "
@@ -84,13 +110,13 @@ msgid ""
 "they are next started."
 msgstr ""
 
-#: kglobalshortcutseditor.cpp:389 kglobalshortcutseditor.cpp:399
+#: kglobalshortcutseditor.cpp:464 kglobalshortcutseditor.cpp:474
 #, fuzzy
 #| msgid "KDE component:"
 msgid "Remove component"
 msgstr "Componint di KDE:"
 
-#: kglobalshortcutseditor.cpp:395
+#: kglobalshortcutseditor.cpp:470
 #, kde-format
 msgid ""
 "Are you sure you want to remove the registered shortcuts for component '%1'? "
@@ -98,52 +124,75 @@ msgid ""
 "settings when they are next started."
 msgstr ""
 
+#. i18n: file: export_scheme_dialog.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, ExportSchemeDialog)
+#: rc.cpp:3
+msgid "Form"
+msgstr ""
+
+#. i18n: file: export_scheme_dialog.ui:20
+#. i18n: ectx: property (text), widget (QLabel, components_label)
+#: rc.cpp:6
+msgid "Select the components to export"
+msgstr ""
+
+#. i18n: file: export_scheme_dialog.ui:30
+#. i18n: ectx: property (title), widget (QGroupBox, components)
+#: rc.cpp:9
+#, fuzzy
+#| msgid "KDE component:"
+msgid "Components"
+msgstr "Componint di KDE:"
+
 #. i18n: file: kglobalshortcutseditor.ui:19
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:3
+#: rc.cpp:12
 msgid "KDE component:"
 msgstr "Componint di KDE:"
 
 #. i18n: file: kglobalshortcutseditor.ui:36
 #. i18n: ectx: property (text), widget (QPushButton, menu_button)
-#: rc.cpp:6
+#: rc.cpp:15
 msgid "File"
 msgstr ""
 
 #. i18n: file: select_scheme_dialog.ui:15
 #. i18n: ectx: property (windowTitle), widget (KDialog, SelectSchemeDialog)
-#: rc.cpp:9
+#. i18n: file: select_scheme_dialog.ui:123
+#. i18n: ectx: property (clickMessage), widget (KUrlRequester, m_url)
+#: rc.cpp:18 rc.cpp:36
 msgid "Select Shortcut Scheme"
 msgstr "Tchoezi on djeu d' tapes rascourti"
 
 #. i18n: file: select_scheme_dialog.ui:39
 #. i18n: ectx: property (whatsThis), widget (QLabel, label)
-#: rc.cpp:12
+#: rc.cpp:21
 msgid "Select one of the standard KDE shortcut schemes"
 msgstr "Tchoezixhoz onk des standårds djeus d' tapes rascourti di KDE"
 
 #. i18n: file: select_scheme_dialog.ui:42
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:15
+#: rc.cpp:24
 msgid "&Standard scheme:"
 msgstr "&Sitandård djeu :"
 
 #. i18n: file: select_scheme_dialog.ui:92
 #. i18n: ectx: property (whatsThis), widget (QLabel, label_2)
-#: rc.cpp:18
+#: rc.cpp:27
 msgid "Select a shortcut scheme file"
 msgstr "Tchoezi on fitchî di djeu d' tapes rascourti"
 
 #. i18n: file: select_scheme_dialog.ui:95
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:21
+#: rc.cpp:30
 msgid "&Path:"
 msgstr "&Tchimin :"
 
-#, fuzzy
-#~| msgid "KDE component:"
-#~ msgid "Clean component"
-#~ msgstr "Componint di KDE:"
+#. i18n: file: select_scheme_dialog.ui:120
+#. i18n: ectx: property (filter), widget (KUrlRequester, m_url)
+#: rc.cpp:33
+msgid "*.kksrc"
+msgstr ""
 
 #~ msgid "Shortcuts:"
 #~ msgstr "Rascourtis:"
@@ -200,12 +249,6 @@ msgstr "&Tchimin :"
 #~ "Clitchîz so ç' boton ci po oister l' djeu d' tapes rascourtis tchoezi. "
 #~ "Vos n' poloz nén oister les djeus d' tapes rascourti standård do "
 #~ "sistinme, «Djeu d' rascourtis do moumint» et nerén «Prémetou KDE»."
-
-#, fuzzy
-#~| msgid "Prefer 4-modifier defaults"
-#~ msgctxt "@option:check"
-#~ msgid "Prefer 4-modifier defaults"
-#~ msgstr "Prémetous avou 4 tapes modifieuses"
 
 #, fuzzy
 #~| msgid ""
