@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: filetypes\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-24 10:59+0100\n"
+"POT-Creation-Date: 2009-03-22 10:17+0100\n"
 "PO-Revision-Date: 2008-06-24 19:24+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -77,7 +77,7 @@ msgid ""
 "text files."
 msgstr ""
 
-#: filetypedetails.cpp:110 filetypesview.cpp:124 kservicelistwidget.cpp:129
+#: filetypedetails.cpp:110 filetypesview.cpp:121 kservicelistwidget.cpp:129
 msgid "Add..."
 msgstr "Radjouter..."
 
@@ -146,7 +146,7 @@ msgstr "Sôre di fitchî %1"
 msgid "Use settings for '%1' group"
 msgstr "Eployî les apontiaedjes do groupe «%1»"
 
-#: filetypesview.cpp:63
+#: filetypesview.cpp:60
 msgid ""
 "<p><h1>File Associations</h1> This module allows you to choose which "
 "applications are associated with a given type of file. File types are also "
@@ -167,22 +167,24 @@ msgid ""
 "examining the contents of the file.</p>"
 msgstr ""
 
-#: filetypesview.cpp:94
-msgid "F&ind file type or filename pattern:"
+#: filetypesview.cpp:91
+#, fuzzy
+#| msgid "F&ind file type or filename pattern:"
+msgid "Find file type or filename pattern"
 msgstr "&Trover sôre di fitchî oudonbén modele di no d' fitchî:"
 
-#: filetypesview.cpp:100
+#: filetypesview.cpp:97
 msgid ""
 "Enter a part of a filename pattern, and only file types with a matching file "
 "pattern will appear in the list. Alternatively, enter a part of a file type "
 "name as it appears in the list."
 msgstr ""
 
-#: filetypesview.cpp:108
+#: filetypesview.cpp:105
 msgid "Known Types"
 msgstr "Sôres di fitchîs di cnoxhowes"
 
-#: filetypesview.cpp:115
+#: filetypesview.cpp:112
 msgid ""
 "Here you can see a hierarchical list of the file types which are known on "
 "your system. Click on the '+' sign to expand a category, or the '-' sign to "
@@ -190,21 +192,49 @@ msgid ""
 "the information for that file type using the controls on the right."
 msgstr ""
 
-#: filetypesview.cpp:129
+#: filetypesview.cpp:126
 msgid "Click here to add a new file type."
 msgstr "Clitchîz chal po radjouter ene novele sôre di fitchî."
 
-#: filetypesview.cpp:131
+#: filetypesview.cpp:128 filetypesview.cpp:389
 msgid "&Remove"
 msgstr "&Oister"
 
-#: filetypesview.cpp:137
-msgid "Click here to remove the selected file type."
-msgstr "Clitchîz chal po oister li sôre di fitchî di tchoezeye."
-
-#: filetypesview.cpp:159
+#: filetypesview.cpp:155
 msgid "Select a file type by name or by extension"
 msgstr "Tchoezixhoz ene sôre di fitchîs pa s' no ou si cawete"
+
+#: filetypesview.cpp:385
+#, fuzzy
+#| msgid "&Remove"
+msgid "&Revert"
+msgstr "&Oister"
+
+#: filetypesview.cpp:386
+msgid "Revert this file type to its initial system-wide definition"
+msgstr ""
+
+#: filetypesview.cpp:387
+msgid ""
+"Click here to revert this file type to its initial system-wide definition, "
+"which undoes any changes made to the file type. Note that system-wide file "
+"types cannot be deleted. You can however empty their pattern list, to "
+"minimize the chances of them being used (but the file type determination "
+"from file contents can still end up using them)."
+msgstr ""
+
+#: filetypesview.cpp:390
+msgid "Delete this file type definition completely"
+msgstr ""
+
+#: filetypesview.cpp:391
+msgid ""
+"Click here to delete this file type definition completely. This is only "
+"possible for user-defined file types. System-wide file types cannot be "
+"deleted. You can however empty their pattern list, to minimize the chances "
+"of them being used (but the file type determination from file contents can "
+"still end up using them)."
+msgstr ""
 
 #: keditfiletype.cpp:122
 msgid "KEditFileType"
@@ -365,15 +395,15 @@ msgstr "Ahiver ene novele sôre di fitchî"
 msgid "Group:"
 msgstr "Groupe:"
 
-#: newtypedlg.cpp:56
+#: newtypedlg.cpp:57
 msgid "Select the category under which the new file type should be added."
 msgstr "Tchoezixhoz li categoreye wice radjouter li novele sôre di fitchî"
 
-#: newtypedlg.cpp:61
+#: newtypedlg.cpp:62
 msgid "Type name:"
 msgstr "No del sôre:"
 
-#: newtypedlg.cpp:66
+#: newtypedlg.cpp:67
 msgid ""
 "Type the name of the file type. For instance, if you selected 'image' as "
 "category and you type 'custom' here, the file type 'image/custom' will be "
@@ -395,6 +425,9 @@ msgstr ""
 "Laurent.Hendschel@skynet.be\n"
 "pablo@walon.org\n"
 "jean.cayron@gmail.com"
+
+#~ msgid "Click here to remove the selected file type."
+#~ msgstr "Clitchîz chal po oister li sôre di fitchî di tchoezeye."
 
 #~ msgid "None"
 #~ msgstr "Nouk"
