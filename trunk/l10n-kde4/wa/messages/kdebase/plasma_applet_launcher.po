@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_launcher\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-04-07 11:07+0200\n"
+"POT-Creation-Date: 2009-04-08 11:57+0200\n"
 "PO-Revision-Date: 2009-01-04 19:26+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: Lokalize 0.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: ui/flipscrollview.cpp:138 simpleapplet/simpleapplet.cpp:543
+#: ui/flipscrollview.cpp:138 core/applicationmodel.cpp:377
 msgid "All Applications"
 msgstr "Tos les programes"
 
@@ -50,11 +50,12 @@ msgstr "Fé rexhe"
 msgid "Safely Remove"
 msgstr "Ositer e såvrité"
 
-#: ui/launcher.cpp:161 simpleapplet/simpleapplet.cpp:189
+#: ui/launcher.cpp:161 core/leavemodel.cpp:106
+#: simpleapplet/simpleapplet.cpp:189
 msgid "Leave"
 msgstr "End aler"
 
-#: ui/launcher.cpp:172 core/favoritesmodel.cpp:44
+#: ui/launcher.cpp:172 core/favoritesmodel.cpp:44 core/favoritesmodel.cpp:265
 #: simpleapplet/simpleapplet.cpp:171
 msgid "Favorites"
 msgstr "Favoris"
@@ -72,7 +73,8 @@ msgstr "Relére alfabeticmint (Z a A)"
 msgid "Applications"
 msgstr "Programes"
 
-#: ui/launcher.cpp:213 simpleapplet/simpleapplet.cpp:175
+#: ui/launcher.cpp:213 core/recentlyusedmodel.cpp:176
+#: simpleapplet/simpleapplet.cpp:175
 msgid "Recently Used"
 msgstr "Eployîs dierinnmint"
 
@@ -84,7 +86,8 @@ msgstr "Netyîs programes eployîs dierinnmint"
 msgid "Clear Recent Documents"
 msgstr "Netyîs documints eployîs dierinnmint"
 
-#: ui/launcher.cpp:233 simpleapplet/simpleapplet.cpp:174
+#: ui/launcher.cpp:233 core/systemmodel.cpp:369
+#: simpleapplet/simpleapplet.cpp:174
 msgid "Computer"
 msgstr "Copiutrece"
 
@@ -177,17 +180,13 @@ msgstr "Mete e woeye sol plake"
 msgid "Suspend to RAM"
 msgstr "Mete e woeye sol RAM"
 
-#: core/leavemodel.cpp:103
+#: core/leavemodel.cpp:118
 msgid "Session"
 msgstr "Session"
 
-#: core/leavemodel.cpp:125
+#: core/leavemodel.cpp:140
 msgid "System"
 msgstr "Sistinme"
-
-#: core/applicationmodel.cpp:377
-msgid "Known Applications"
-msgstr "Conoxhous programes"
 
 #: core/models.cpp:117
 msgid "Home Folder"
@@ -200,6 +199,18 @@ msgstr "Ridantes rantoele"
 #: core/recentlyusedmodel.cpp:107 core/searchmodel.cpp:221
 msgid "Documents"
 msgstr "Documints"
+
+#: core/recentlyusedmodel.cpp:178 simpleapplet/simpleapplet.cpp:177
+#, fuzzy
+#| msgid "Recently Used"
+msgid "Recently Used Documents"
+msgstr "Eployîs dierinnmint"
+
+#: core/recentlyusedmodel.cpp:180 simpleapplet/simpleapplet.cpp:176
+#, fuzzy
+#| msgid "Clear Recent Applications"
+msgid "Recently Used Applications"
+msgstr "Netyîs programes eployîs dierinnmint"
 
 #: core/systemmodel.cpp:89
 msgid "Places"
@@ -299,18 +310,6 @@ msgstr "jean.cayron@gmail.com"
 msgid "Bookmarks"
 msgstr "Rimåkes"
 
-#: simpleapplet/simpleapplet.cpp:176 simpleapplet/simpleapplet.cpp:559
-#, fuzzy
-#| msgid "Clear Recent Applications"
-msgid "Recently Used Applications"
-msgstr "Netyîs programes eployîs dierinnmint"
-
-#: simpleapplet/simpleapplet.cpp:177 simpleapplet/simpleapplet.cpp:566
-#, fuzzy
-#| msgid "Recently Used"
-msgid "Recently Used Documents"
-msgstr "Eployîs dierinnmint"
-
 #: simpleapplet/simpleapplet.cpp:178
 msgid "System Settings"
 msgstr ""
@@ -379,11 +378,14 @@ msgstr ""
 msgid "Options"
 msgstr "Programes"
 
-#: simpleapplet/simpleapplet.cpp:545
+#: simpleapplet/simpleapplet.cpp:546
 #, fuzzy
 #| msgid "Applications"
 msgid "Actions"
 msgstr "Programes"
+
+#~ msgid "Known Applications"
+#~ msgstr "Conoxhous programes"
 
 #, fuzzy
 #~| msgid "Lock the screen"
