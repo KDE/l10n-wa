@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-04-06 06:46+0200\n"
+"POT-Creation-Date: 2009-04-10 06:30+0200\n"
 "PO-Revision-Date: 2009-04-04 15:54+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -724,7 +724,7 @@ msgstr "US Letter"
 msgid "US Legal"
 msgstr "US Legal"
 
-#: main/KoPageFormat.cpp:64
+#: main/KoPageFormat.cpp:64 pigment/compositeops/KoCompositeOpScreen.h:35
 msgid "Screen"
 msgstr "Waitroûle"
 
@@ -1517,7 +1517,7 @@ msgstr "Astaler pacaedje di scripe so fyis"
 #. i18n: file: guiutils/KoEditColorSet.ui:45
 #. i18n: ectx: property (toolTip), widget (QToolButton, add)
 #: kokross/KoScriptManagerAdd.cpp:304 kokross/KoScriptManagerAdd.cpp:307
-#: rc.cpp:433
+#: rc.cpp:433 pigment/compositeops/KoCompositeOpAdd.h:35
 msgid "Add"
 msgstr "Radjouter"
 
@@ -3222,6 +3222,57 @@ msgstr "Prévey li Pådje"
 msgid "SVG Gradient"
 msgstr ""
 
+#: pigment/compositeops/KoCompositeOpDodge.h:36
+#, fuzzy
+msgid "Dodge"
+msgstr "Bleu"
+
+#: pigment/compositeops/KoCompositeOpMultiply.h:34
+msgid "Multiply"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOpOverlay.h:35
+#, fuzzy
+msgid "Overlay"
+msgstr "Orandje"
+
+#: pigment/compositeops/KoCompositeOpDivide.h:35
+msgid "Divide"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOpErase.h:39
+#: pigment/colorspaces/KoAlphaColorSpace.cpp:217
+msgid "Erase"
+msgstr "Disfacer"
+
+#: pigment/compositeops/KoCompositeOpSubstract.h:35
+#: pigment/colorspaces/KoAlphaColorSpace.cpp:282
+#, fuzzy
+msgid "Subtract"
+msgstr "Rascourti"
+
+#: pigment/compositeops/KoCompositeOpBurn.h:35
+#, fuzzy
+msgid "Burn"
+msgstr "Brun"
+
+#: pigment/compositeops/KoCompositeOpOver.h:35
+#: pigment/colorspaces/KoAlphaColorSpace.cpp:43
+msgid "Normal"
+msgstr "Normå"
+
+#: pigment/compositeops/KoCompositeOpAlphaDarken.h:40
+#, fuzzy
+#| msgid "Alpha mask"
+msgid "Alphadarken"
+msgstr "Masse alfa"
+
+#: pigment/KoColorSpaceAbstract.h:45
+#, fuzzy
+#| msgid "Company"
+msgid "Copy"
+msgstr "Eterprijhe"
+
 #: pigment/tests/CCSGraph.cpp:39
 msgid "CCSGraph"
 msgstr "Grafike CCS"
@@ -3264,22 +3315,14 @@ msgstr "sipecifyî l' rexhowe (pout esse ps oudonbén dot, prémetou c' est ps)"
 msgid "name of the output file"
 msgstr "no do fitchî d' rexhowe"
 
-#: pigment/colorspaces/KoAlphaColorSpace.cpp:43
-msgid "Normal"
-msgstr "Normå"
+#: pigment/colorspaces/KoRgbU8ColorSpace.h:62
+#: pigment/colorspaces/KoRgbU8ColorSpace.cc:71
+msgid "RGB (8-bit integer/channel)"
+msgstr "RVB (8-bit etir/canå)"
 
 #: pigment/colorspaces/KoAlphaColorSpace.cpp:142
 msgid "Clear"
 msgstr "Netyî"
-
-#: pigment/colorspaces/KoAlphaColorSpace.cpp:217
-msgid "Erase"
-msgstr "Disfacer"
-
-#: pigment/colorspaces/KoAlphaColorSpace.cpp:282
-#, fuzzy
-msgid "Subtract"
-msgstr "Rascourti"
 
 #: pigment/colorspaces/KoAlphaColorSpace.cpp:350
 msgid "Alpha mask"
@@ -3294,12 +3337,24 @@ msgid "Alpha"
 msgstr "Alfa"
 
 #: pigment/colorspaces/KoRgbU16ColorSpace.cpp:29
+#: pigment/colorspaces/KoRgbU16ColorSpace.h:53
 msgid "RGB (16-bit integer/channel)"
 msgstr "RVB (16-bit etir/canå)"
 
-#: pigment/colorspaces/KoRgbU8ColorSpace.cc:71
-msgid "RGB (8-bit integer/channel)"
-msgstr "RVB (8-bit etir/canå)"
+#: pigment/colorspaces/KoAlphaColorSpace.h:125
+#: pigment/colorspaces/KoAlphaColorSpace.h:130
+#: pigment/colorspaces/KoAlphaColorSpace.h:135
+#: pigment/colorspaces/KoAlphaColorSpace.h:140
+#: pigment/colorspaces/KoAlphaColorSpace.h:145
+#: pigment/colorspaces/KoAlphaColorSpace.h:149
+#: pigment/colorspaces/KoAlphaColorSpace.h:153
+msgid "Undefined operation in the alpha colorspace"
+msgstr ""
+
+#: pigment/colorspaces/KoLabColorSpace.h:65
+#: pigment/colorspaces/KoLabColorSpace.cpp:33
+msgid "L*a*b* (16-bit integer/channel)"
+msgstr "L*a*b* (16-bit etir/canå)"
 
 #: pigment/colorspaces/KoRgbU8ColorSpace.cc:81
 #, fuzzy
@@ -3318,10 +3373,6 @@ msgstr "Valixhance"
 msgid "Color"
 msgstr "Coleur"
 
-#: pigment/colorspaces/KoLabColorSpace.cpp:33
-msgid "L*a*b* (16-bit integer/channel)"
-msgstr "L*a*b* (16-bit etir/canå)"
-
 #: pigment/colorspaces/KoLabColorSpace.cpp:36
 #: pigment/KoBasicHistogramProducers.cpp:418
 msgid "a*"
@@ -3333,6 +3384,7 @@ msgid "b*"
 msgstr "b*"
 
 #: pigment/KoBasicHistogramProducers.cpp:348
+#: pigment/KoBasicHistogramProducers.h:162
 msgid "Generic RGB Histogram"
 msgstr "Istograme RVB djenerike"
 
@@ -3404,6 +3456,12 @@ msgstr ""
 #: pigment/KoIccColorSpaceEngine.cpp:109
 msgid "ICC Engine"
 msgstr "Éndjin ICC"
+
+#: pigment/KoBasicHistogramProducers.h:191
+#, fuzzy
+#| msgid "Generic RGB Histogram"
+msgid "Generic L*a*b* Histogram"
+msgstr "Istograme RVB djenerike"
 
 #: pigment/KoColorSpaceRegistry.cpp:168
 msgid "RGB8 Histogram"
@@ -4233,9 +4291,6 @@ msgstr "Disfacer tecse"
 #~ msgid "Abstract"
 #~ msgstr "Rascourti"
 
-#~ msgid "Company"
-#~ msgstr "Eterprijhe"
-
 #, fuzzy
 #~ msgid "Telephone (private)"
 #~ msgstr "Telefone"
@@ -4729,11 +4784,6 @@ msgstr "Disfacer tecse"
 #~ msgctxt "color"
 #~ msgid "Yellow"
 #~ msgstr "Djaene"
-
-#, fuzzy
-#~ msgctxt "color"
-#~ msgid "Brown"
-#~ msgstr "Brun"
 
 #, fuzzy
 #~ msgctxt "color"
@@ -5262,11 +5312,6 @@ msgstr "Disfacer tecse"
 
 #, fuzzy
 #~ msgctxt "color"
-#~ msgid "DodgerBlue"
-#~ msgstr "Bleu"
-
-#, fuzzy
-#~ msgctxt "color"
 #~ msgid "OrangeRed"
 #~ msgstr "Orandje"
 
@@ -5284,11 +5329,6 @@ msgstr "Disfacer tecse"
 #~ msgctxt "color"
 #~ msgid "SlateBlue"
 #~ msgstr "Bleu"
-
-#, fuzzy
-#~ msgctxt "color"
-#~ msgid "OliveDrab"
-#~ msgstr "Orandje"
 
 #, fuzzy
 #~ msgctxt "color"
