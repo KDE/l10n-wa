@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gwenview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-04-24 11:14+0200\n"
+"POT-Creation-Date: 2009-04-27 11:00+0200\n"
 "PO-Revision-Date: 2009-01-02 22:51+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -226,16 +226,16 @@ msgctxt "@info"
 msgid "Gwenview cannot save images as %1."
 msgstr "Gwenview n' sai schaper les imådjes come %1."
 
-#: app/gvcore.cpp:188
+#: app/gvcore.cpp:197
 msgctxt "@info:progress saving all image changes"
 msgid "Saving..."
 msgstr "Dji schape..."
 
-#: app/gvcore.cpp:189
+#: app/gvcore.cpp:198
 msgid "&Stop"
 msgstr "Å&we"
 
-#: app/gvcore.cpp:222
+#: app/gvcore.cpp:231
 #, kde-format
 msgctxt "@info"
 msgid "One document could not be saved:"
@@ -243,7 +243,7 @@ msgid_plural "%1 documents could not be saved:"
 msgstr[0] "Dji n' a savou schaper on documint:"
 msgstr[1] "Dji n' a savou schaper %1 documints:"
 
-#: app/gvcore.cpp:229
+#: app/gvcore.cpp:238
 #, kde-format
 msgctxt ""
 "@info %1 is the name of the document which failed to save, %2 is the reason "
@@ -251,22 +251,22 @@ msgctxt ""
 msgid "<filename>%1</filename>: %2"
 msgstr "<filename>%1</filename>: %2"
 
-#: app/gvcore.cpp:247
+#: app/gvcore.cpp:256
 #, kde-format
 msgctxt "@info"
 msgid "<b>Saving <filename>%1</filename> failed:</b><br>%2"
 msgstr "<b>Li schapaedje di <filename>%1</filename> a fwait berwete:</b><br>%2"
 
-#: app/gvcore.cpp:257
+#: app/gvcore.cpp:266
 msgid "Save using another format"
 msgstr "Schaper avou ene ôte cogne"
 
-#: app/gvcore.cpp:260
+#: app/gvcore.cpp:269
 #, kde-format
 msgid "Gwenview cannot save images in '%1' format."
 msgstr "Gwenview n' sai schaper les imådjes el cogne « %1 »."
 
-#: app/gvcore.cpp:282
+#: app/gvcore.cpp:291
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -276,7 +276,7 @@ msgstr ""
 "On fitchî <filename>%1</filename> egzistêye dedja.\n"
 "Estoz seur(e) ki vos l' voloz spotchî?"
 
-#: app/gvcore.cpp:339
+#: app/gvcore.cpp:348
 msgctxt "@info"
 msgid "Gwenview cannot edit this kind of image."
 msgstr "Gwenview n' sai candjî les imådjes di c' djinre la."
@@ -388,17 +388,19 @@ msgid_plural "%1 (%2 images)"
 msgstr[0] "%1 (%2 imådje)"
 msgstr[1] "%1 (%2 imådjes)"
 
-#: app/configdialog.cpp:68
+#: app/configdialog.cpp:69
 msgid "General"
 msgstr "Djenerå"
 
-#: app/configdialog.cpp:89
+#: app/configdialog.cpp:90
 msgid "Image View"
 msgstr "Voeyaedje d' ene imådje"
 
-#: app/configdialog.cpp:94
-msgid "Performance"
-msgstr "Performances"
+#: app/configdialog.cpp:95
+#, fuzzy
+#| msgid "Image Settings"
+msgid "Advanced"
+msgstr "Tchuzes di l' imådje"
 
 #: app/kipiinterface.cpp:252
 msgid "No Plugin"
@@ -412,26 +414,26 @@ msgstr ""
 "Dji rgrete mins l' foytaedje pas etikete n' est nén disponibe. Soeyoz seur "
 "ki Nepomuk est astalé comifåt so vosse copiutrece."
 
-#: app/startpage.cpp:241
+#: app/startpage.cpp:252
 #, fuzzy
 #| msgctxt "@action:inmenu"
 #| msgid "Add Folder to Places"
 msgid "Add to Places"
 msgstr "Radjouter l' ridant a des plaeces"
 
-#: app/startpage.cpp:242
+#: app/startpage.cpp:253
 #, fuzzy
 #| msgid "Create Folder"
 msgid "Forget this Url"
 msgstr "Ahiver ridant"
 
-#: app/startpage.cpp:242
+#: app/startpage.cpp:253
 #, fuzzy
 #| msgid "Create Folder"
 msgid "Forget this Folder"
 msgstr "Ahiver ridant"
 
-#: app/startpage.cpp:244
+#: app/startpage.cpp:255
 msgid "Forget All"
 msgstr ""
 
@@ -596,7 +598,7 @@ msgstr "Candjî di grandeu"
 #. i18n: file: lib/crop/cropwidget.ui:32
 #. i18n: ectx: property (text), widget (QToolButton, cropButton)
 #: app/imageopscontextmanageritem.cpp:100 lib/crop/cropimageoperation.cpp:48
-#: rc.cpp:153 rc.cpp:159
+#: rc.cpp:165 rc.cpp:171
 msgid "Crop"
 msgstr "Côper dvins"
 
@@ -1066,51 +1068,41 @@ msgstr "Etiketes:"
 msgid "Description:"
 msgstr "Discrijhaedje :"
 
-#. i18n: file: app/performanceconfigpage.ui:16
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DeleteThumbnailCacheOnExit)
-#: rc.cpp:65
-msgid "Delete thumbnail cache folder on exit"
-msgstr "Disfacer l' ridant del muchete des prévoeyaedjes cwand dj' mousse foû"
-
-#. i18n: file: app/performanceconfigpage.ui:24
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:68
-msgid ""
-"Enable this option if you do not have a lot of disk space.\n"
-"Be careful: this will delete the folder named <filename>.thumbnails</"
-"filename> in your home folder, deleting all thumbnails previously generated "
-"by Gwenview and other applications."
-msgstr ""
-
 #. i18n: file: app/startpage.ui:30
 #. i18n: ectx: attribute (title), widget (QWidget, placesTab)
 #. i18n: file: app/startpage.ui:42
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:72 rc.cpp:75
+#: rc.cpp:65 rc.cpp:68
 msgid "Places"
 msgstr "Eplaeçmints"
 
 #. i18n: file: app/startpage.ui:58
 #. i18n: ectx: property (text), widget (QLabel, mTagTitleLabel)
-#: rc.cpp:78
+#: rc.cpp:71
 msgid "Tags"
 msgstr "Etiketes"
 
 #. i18n: file: app/startpage.ui:130
 #. i18n: ectx: attribute (title), widget (QWidget, historyTab)
-#: rc.cpp:81
+#: rc.cpp:74
 msgid "History"
 msgstr ""
 
-#. i18n: file: app/startpage.ui:142
+#. i18n: file: app/startpage.ui:136
+#. i18n: ectx: property (text), widget (QLabel, mHistoryDisabledLabel)
+#: rc.cpp:77
+msgid "History has been disabled."
+msgstr ""
+
+#. i18n: file: app/startpage.ui:158
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:84
+#: rc.cpp:80
 msgid "Recent Folders"
 msgstr "Ridants eployîs dierinnmint"
 
-#. i18n: file: app/startpage.ui:158
+#. i18n: file: app/startpage.ui:174
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:87
+#: rc.cpp:83
 #, fuzzy
 #| msgid "Recent Folders"
 msgid "Recent URLs"
@@ -1118,61 +1110,61 @@ msgstr "Ridants eployîs dierinnmint"
 
 #. i18n: file: app/gwenviewui.rc:49
 #. i18n: ectx: Menu (rating)
-#: rc.cpp:90
+#: rc.cpp:86
 msgid "&Rating"
 msgstr "P&réjhaedje"
 
 #. i18n: file: app/gwenviewui.rc:76
 #. i18n: ectx: Menu (plugins)
-#: rc.cpp:93
+#: rc.cpp:89
 msgid "&Plugins"
 msgstr "&Tchôke-divins"
 
 #. i18n: file: app/gwenviewui.rc:78
 #. i18n: ectx: Menu (kipi_images)
-#: rc.cpp:96
+#: rc.cpp:92
 msgid "Images"
 msgstr "Imådjes"
 
 #. i18n: file: app/gwenviewui.rc:82
 #. i18n: ectx: Menu (kipi_effects)
-#: rc.cpp:99
+#: rc.cpp:95
 msgid "Effects"
 msgstr "Efets"
 
 #. i18n: file: app/gwenviewui.rc:86
 #. i18n: ectx: Menu (kipi_tools)
-#: rc.cpp:102
+#: rc.cpp:98
 msgid "Tools"
 msgstr "Usteyes"
 
 #. i18n: file: app/gwenviewui.rc:90
 #. i18n: ectx: Menu (kipi_batch)
-#: rc.cpp:105
+#: rc.cpp:101
 msgid "Batch Processing"
 msgstr "Ovraedje pa lots"
 
 #. i18n: file: app/gwenviewui.rc:94
 #. i18n: ectx: Menu (kipi_import)
-#: rc.cpp:108
+#: rc.cpp:104
 msgid "Import"
 msgstr "Abaguer"
 
 #. i18n: file: app/gwenviewui.rc:98
 #. i18n: ectx: Menu (kipi_export)
-#: rc.cpp:111
+#: rc.cpp:107
 msgid "Export"
 msgstr "Ebaguer"
 
 #. i18n: file: app/gwenviewui.rc:102
 #. i18n: ectx: Menu (kipi_collections)
-#: rc.cpp:114
+#: rc.cpp:110
 msgid "Collections"
 msgstr "Ramexhnêyes"
 
 #. i18n: file: app/gwenviewui.rc:107
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:117
+#: rc.cpp:113
 msgid "&Settings"
 msgstr "A&pontiaedjes"
 
@@ -1180,44 +1172,44 @@ msgstr "A&pontiaedjes"
 #. i18n: ectx: ToolBar (mainToolBar)
 #. i18n: file: part/gvpart.rc:15
 #. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:120 rc.cpp:243
+#: rc.cpp:116 rc.cpp:255
 msgid "Main Toolbar"
 msgstr "Mwaisse bår ås usteyes"
 
 #. i18n: file: app/imageviewconfigpage.ui:17
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:123
+#: rc.cpp:119
 msgid "Transparent background:"
 msgstr "Transparinte coleur di fond:"
 
 #. i18n: file: app/imageviewconfigpage.ui:35
 #. i18n: ectx: property (text), widget (QRadioButton, checkBoardRadioButton)
-#: rc.cpp:126
+#: rc.cpp:122
 msgid "&Check board"
 msgstr "&Pitits cwårés"
 
 #. i18n: file: app/imageviewconfigpage.ui:68
 #. i18n: ectx: property (text), widget (QRadioButton, solidColorRadioButton)
-#: rc.cpp:129
+#: rc.cpp:125
 msgid "&Solid color:"
 msgstr "&Coleur li minme:"
 
 #. i18n: file: app/imageviewconfigpage.ui:116
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:132
+#: rc.cpp:128
 msgid "Mouse wheel behavior:"
 msgstr "Dujhance del rôlete del sori:"
 
 #. i18n: file: app/imageviewconfigpage.ui:128
 #. i18n: ectx: property (text), widget (QRadioButton, mouseWheelScrollRadioButton)
-#: rc.cpp:135
+#: rc.cpp:131
 msgctxt "@option:radio action on mouse wheel"
 msgid "Scroll"
 msgstr "Disrôler"
 
 #. i18n: file: app/imageviewconfigpage.ui:155
 #. i18n: ectx: property (text), widget (QRadioButton, mouseWheelBrowseRadioButton)
-#: rc.cpp:138
+#: rc.cpp:134
 msgctxt "@option:radio action on mouse wheel"
 msgid "Browse"
 msgstr "Foyter"
@@ -1226,13 +1218,13 @@ msgstr "Foyter"
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnlargeSmallerImages)
 #. i18n: file: lib/print/printoptionspage.ui:157
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrintEnlargeSmallerImages)
-#: rc.cpp:141 rc.cpp:192
+#: rc.cpp:137 rc.cpp:204
 msgid "Enlarge smaller images"
 msgstr "Rinde pus grandes les pus ptitès imådjes "
 
 #. i18n: file: app/imageviewconfigpage.ui:233
 #. i18n: ectx: property (text), widget (QLabel, label_9)
-#: rc.cpp:144
+#: rc.cpp:140
 #, fuzzy
 #| msgctxt "@action:inmenu"
 #| msgid "Thumbnail Details"
@@ -1241,19 +1233,55 @@ msgstr "Detays do prévoeyaedje"
 
 #. i18n: file: app/imageviewconfigpage.ui:245
 #. i18n: ectx: property (text), widget (QRadioButton, horizontalRadioButton)
-#: rc.cpp:147
+#: rc.cpp:143
 msgid "Horizontal"
 msgstr ""
 
 #. i18n: file: app/imageviewconfigpage.ui:269
 #. i18n: ectx: property (text), widget (QRadioButton, verticalRadioButton)
-#: rc.cpp:150
+#: rc.cpp:146
 msgid "Vertical"
+msgstr ""
+
+#. i18n: file: app/advancedconfigpage.ui:17
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:149
+#, fuzzy
+#| msgid "Cancel"
+msgid "Cache:"
+msgstr "Rinoncî"
+
+#. i18n: file: app/advancedconfigpage.ui:29
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DeleteThumbnailCacheOnExit)
+#: rc.cpp:152
+msgid "Delete thumbnail cache folder on exit"
+msgstr "Disfacer l' ridant del muchete des prévoeyaedjes cwand dj' mousse foû"
+
+#. i18n: file: app/advancedconfigpage.ui:52
+#. i18n: ectx: property (text), widget (QLabel, cacheHelpLabel)
+#: rc.cpp:155
+msgid ""
+"Enable this option if you do not have a lot of disk space.\n"
+"Be careful: this will delete the folder named <filename>.thumbnails</"
+"filename> in your home folder, deleting all thumbnails previously generated "
+"by Gwenview and other applications."
+msgstr ""
+
+#. i18n: file: app/advancedconfigpage.ui:78
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:159
+msgid "History:"
+msgstr ""
+
+#. i18n: file: app/advancedconfigpage.ui:90
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_HistoryEnabled)
+#: rc.cpp:162
+msgid "Remember folders and URLs"
 msgstr ""
 
 #. i18n: file: lib/crop/cropwidget.ui:25
 #. i18n: ectx: property (text), widget (QCheckBox, advancedCheckBox)
-#: rc.cpp:156
+#: rc.cpp:168
 #, fuzzy
 #| msgid "Image Settings"
 msgid "Advanced settings"
@@ -1261,7 +1289,7 @@ msgstr "Tchuzes di l' imådje"
 
 #. i18n: file: lib/crop/cropwidget.ui:50
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:162
+#: rc.cpp:174
 #, fuzzy
 #| msgid "Rating:"
 msgid "Ratio:"
@@ -1269,7 +1297,7 @@ msgstr "Préjhaedje:"
 
 #. i18n: file: lib/crop/cropwidget.ui:76
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:165
+#: rc.cpp:177
 #, fuzzy
 #| msgid "Image Position"
 msgid "Position:"
@@ -1277,7 +1305,7 @@ msgstr "Eplaeçmint d' l' imådje"
 
 #. i18n: file: lib/crop/cropwidget.ui:109
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:168
+#: rc.cpp:180
 #, fuzzy
 #| msgid "Size"
 msgid "Size:"
@@ -1285,145 +1313,148 @@ msgstr "Grandeu"
 
 #. i18n: file: lib/redeyereduction/redeyereductionhud.ui:16
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:171
+#: rc.cpp:183
 msgid "Size"
 msgstr "Grandeu"
 
 #. i18n: file: lib/redeyereduction/redeyereductionhud.ui:43
 #. i18n: ectx: property (text), widget (QToolButton, applyButton)
-#: rc.cpp:174
+#: rc.cpp:186
 msgid "Apply"
 msgstr "Mete en ouve"
 
 #. i18n: file: lib/print/printoptionspage.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, PrintOptionsPage)
-#: rc.cpp:177
+#: rc.cpp:189
 msgid "Image Settings"
 msgstr "Tchuzes di l' imådje"
 
 #. i18n: file: lib/print/printoptionspage.ui:34
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:180
+#: rc.cpp:192
 msgid "Image Position"
 msgstr "Eplaeçmint d' l' imådje"
 
 #. i18n: file: lib/print/printoptionspage.ui:77
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:183
+#: rc.cpp:195
 msgid "Scaling"
 msgstr "Metaedje al schåle"
 
 #. i18n: file: lib/print/printoptionspage.ui:101
 #. i18n: ectx: property (text), widget (QRadioButton, mNoScale)
-#: rc.cpp:186
+#: rc.cpp:198
 msgid "&No scaling"
 msgstr "&Pont d' metaedje al schåle"
 
 #. i18n: file: lib/print/printoptionspage.ui:111
 #. i18n: ectx: property (text), widget (QRadioButton, mScaleToPage)
-#: rc.cpp:189
+#: rc.cpp:201
 msgid "&Fit image to page"
 msgstr "For&rimpli l' imådje al pådje"
 
 #. i18n: file: lib/print/printoptionspage.ui:182
 #. i18n: ectx: property (text), widget (QRadioButton, mScaleTo)
-#: rc.cpp:195
+#: rc.cpp:207
 msgid "&Scale to:"
 msgstr "&Mete al schåle:"
 
 #. i18n: file: lib/print/printoptionspage.ui:232
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:198
+#: rc.cpp:210
 msgctxt "Dimension separator, as in: '15 x 10 centimeters'"
 msgid "x"
 msgstr "x"
 
 #. i18n: file: lib/print/printoptionspage.ui:259
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
-#: rc.cpp:201
+#: rc.cpp:213
 msgid "Millimeters"
 msgstr "Milimetes"
 
 #. i18n: file: lib/print/printoptionspage.ui:264
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
-#: rc.cpp:204
+#: rc.cpp:216
 msgid "Centimeters"
 msgstr "Cintimetes"
 
 #. i18n: file: lib/print/printoptionspage.ui:269
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
-#: rc.cpp:207
+#: rc.cpp:219
 msgid "Inches"
 msgstr "Pôces"
 
 #. i18n: file: lib/print/printoptionspage.ui:280
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrintKeepRatio)
-#: rc.cpp:210
+#: rc.cpp:222
 msgid "Keep ratio"
 msgstr "Wårder li rapoirt"
 
-#. i18n: file: lib/gwenviewconfig.kcfg:26
+#. i18n: file: lib/gwenviewconfig.kcfg:30
 #. i18n: ectx: whatsthis, entry (PercentageOfMemoryUsageWarning), group (General)
-#: rc.cpp:213
+#: rc.cpp:225
 msgid ""
 "The percentage of memory used by Gwenview before it\n"
 "\t\t\twarns the user and suggest saving changes."
 msgstr ""
 
-#. i18n: file: lib/gwenviewconfig.kcfg:33
+#. i18n: file: lib/gwenviewconfig.kcfg:37
 #. i18n: ectx: whatsthis, entry (BlackListedExtensions), group (General)
-#: rc.cpp:217
+#: rc.cpp:229
 msgid ""
 "A list of filename extensions Gwenview should not try to\n"
 "\t\t\tload. This is useful to exclude raw files which are recognized as\n"
 "\t\t\tTIFF or JPEG."
 msgstr ""
 
-#. i18n: file: lib/gwenviewconfig.kcfg:178
+#. i18n: file: lib/gwenviewconfig.kcfg:182
 #. i18n: ectx: label, entry (random), group (slide show)
-#: rc.cpp:222
+#: rc.cpp:234
 msgid "Display slide show images in random order"
 msgstr ""
 
-#. i18n: file: lib/gwenviewconfig.kcfg:182
+#. i18n: file: lib/gwenviewconfig.kcfg:186
 #. i18n: ectx: label, entry (fullscreen), group (slide show)
-#: rc.cpp:225
+#: rc.cpp:237
 #, fuzzy
 #| msgid "Start in fullscreen mode"
 msgid "Show slideshow in fullscreen mode"
 msgstr "Enonder e môde tote li waitroûle"
 
-#. i18n: file: lib/gwenviewconfig.kcfg:186
+#. i18n: file: lib/gwenviewconfig.kcfg:190
 #. i18n: ectx: label, entry (loop), group (slide show)
-#: rc.cpp:228
+#: rc.cpp:240
 msgid "Loop on images"
 msgstr ""
 
-#. i18n: file: lib/gwenviewconfig.kcfg:190
+#. i18n: file: lib/gwenviewconfig.kcfg:194
 #. i18n: ectx: label, entry (stopAtEnd), group (slide show)
-#: rc.cpp:231
+#: rc.cpp:243
 #, fuzzy
 #| msgid "A starting file or folder"
 msgid "Stop at last image of folder"
 msgstr "On fitchî oudonbén on ridant d' kimince"
 
-#. i18n: file: lib/gwenviewconfig.kcfg:194
+#. i18n: file: lib/gwenviewconfig.kcfg:198
 #. i18n: ectx: label, entry (interval), group (slide show)
-#: rc.cpp:234
+#: rc.cpp:246
 msgid "Interval between images (in seconds)"
 msgstr ""
 
 #. i18n: file: part/gvpart.rc:4
 #. i18n: ectx: Menu (file)
-#: rc.cpp:237
+#: rc.cpp:249
 msgid "&File"
 msgstr "&Fitchî"
 
 #. i18n: file: part/gvpart.rc:8
 #. i18n: ectx: Menu (view)
-#: rc.cpp:240
+#: rc.cpp:252
 msgid "&View"
 msgstr "&Vey"
+
+#~ msgid "Performance"
+#~ msgstr "Performances"
 
 #~ msgid "Show Sidebar"
 #~ msgstr "Håyner l' bår di costé"
