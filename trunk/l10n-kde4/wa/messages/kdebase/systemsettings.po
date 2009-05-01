@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: systemsettings\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-04-15 12:00+0200\n"
+"POT-Creation-Date: 2009-05-01 11:12+0200\n"
 "PO-Revision-Date: 2008-10-23 21:09+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@tele2allin.be>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -17,90 +17,131 @@ msgstr ""
 "X-Generator: Lokalize 0.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: kcmultiwidget.cpp:378
+#: app/main.cpp:37 classic/CategoryList.cpp:37
+msgid "System Settings"
+msgstr "Apontiaedjes do sistinme"
+
+#: app/main.cpp:37
+msgid "Central configuration center for KDE."
+msgstr ""
+
+#: app/main.cpp:38 icons/IconMode.cpp:67 classic/ClassicMode.cpp:67
+msgid "(c) 2009, Ben Cooksley"
+msgstr ""
+
+#: app/main.cpp:39 icons/IconMode.cpp:68 classic/ClassicMode.cpp:68
+msgid "Ben Cooksley"
+msgstr ""
+
+#: app/main.cpp:39
+msgid "Maintainer"
+msgstr ""
+
+#: app/main.cpp:40 icons/IconMode.cpp:69 classic/ClassicMode.cpp:69
+msgid "Mathias Soeken"
+msgstr ""
+
+#: app/main.cpp:40 icons/IconMode.cpp:69 classic/ClassicMode.cpp:69
+msgid "Developer"
+msgstr ""
+
+#: app/main.cpp:41
+msgid "Will Stephenson"
+msgstr ""
+
+#: app/main.cpp:41
+msgid "Internal module representation, internal module model"
+msgstr ""
+
+#: app/SettingsBase.cpp:105 app/SettingsBase.cpp:145
+msgid "Configure"
+msgstr "Apontyî"
+
+#: app/SettingsBase.cpp:108
+#, fuzzy
+#| msgctxt "Help menu->about <modulename>"
+#| msgid "About %1"
+msgid "About"
+msgstr "Åd fwait di %1"
+
+#: app/SettingsBase.cpp:134
+#, fuzzy
+#| msgid "S&earch:"
+msgctxt "Search through a list of control modules"
+msgid "Search"
+msgstr "C&weri:"
+
+#: app/SettingsBase.cpp:215
+msgid ""
+"System Settings was unable to find any views, and hence nothing is available "
+"to configure."
+msgstr ""
+
+#: app/SettingsBase.cpp:215 app/SettingsBase.cpp:272
+msgid "No views found"
+msgstr ""
+
+#. i18n: file: app/systemsettingsui.rc:12
+#. i18n: ectx: ToolBar (mainToolBar)
+#: app/SettingsBase.cpp:239 rc.cpp:14
+#, fuzzy
+#| msgid "System Settings"
+msgid "About System Settings"
+msgstr "Apontiaedjes do sistinme"
+
+#: app/SettingsBase.cpp:272
+msgid ""
+"System Settings was unable to find any views, and hence has nothing to "
+"display."
+msgstr ""
+
+#: core/ToolTipManager.cpp:140
+#, kde-format
+msgid "<i>Contains 1 submodule</i>"
+msgid_plural "<i>Contains %1 submodules</i>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/ModuleView.cpp:196
 #, fuzzy
 #| msgid ""
 #| "There are unsaved changes in the active module.\n"
 #| "Do you want to apply the changes or discard them?"
 msgid ""
-"The current page has been modified.\n"
+"The settings of the current module have changed.\n"
 "Do you want to apply the changes or discard them?"
 msgstr ""
 "I gn a des candjmints nén schapés dins l' module en alaedje.\n"
 "Voloz vs mete en ouve les candjmint oudonbén les rovyî?"
 
-#: kcmultiwidget.cpp:380
+#: core/ModuleView.cpp:198
 #, fuzzy
 #| msgid "System Settings"
 msgid "Apply Settings"
 msgstr "Apontiaedjes do sistinme"
 
-#: main.cpp:36 main.cpp:37
-msgid "System Settings"
-msgstr "Apontiaedjes do sistinme"
+#: icons/IconMode.cpp:65
+msgid "Control Center Icons View"
+msgstr ""
 
-#: main.cpp:38
-msgid "(c) 2005, Benjamin C. Meyer; (c) 2007, Canonical Ltd"
-msgstr "© 2005, Benjamin C. Meyer; © 2007, Canonical Ltd"
+#: icons/IconMode.cpp:66
+msgid "Provides a categorized icons view of control modules."
+msgstr ""
 
-#: main.cpp:39
-msgid "Benjamin C. Meyer"
-msgstr "Benjamin C. Meyer"
-
-#: main.cpp:39
+#: icons/IconMode.cpp:68 classic/ClassicMode.cpp:68
 msgid "Author"
 msgstr "Oteur"
 
-#: main.cpp:41
-msgid "Jonathan Riddell"
-msgstr "Jonathan Riddell"
-
-#: main.cpp:41 main.cpp:43 main.cpp:45
-msgid "Contributor"
-msgstr "Contribouweu"
-
-#: main.cpp:43
-msgid "Michael D. Stemle"
-msgstr "Michael D. Stemle"
-
-#: main.cpp:45
-msgid "Simon Edwards"
-msgstr "Simon Edwards"
-
-#: main.cpp:47
-msgid "Ellen Reitmayr"
-msgstr "Ellen Reitmayr"
-
-#: main.cpp:47
-msgid "Usability"
-msgstr "Eployåvté"
-
-#: mainwindow.cpp:231
-#, kde-format
-msgid "Overview (%1)"
+#: icons/IconMode.cpp:73
+#, fuzzy
+#| msgid "Overview (%1)"
+msgid "Overview"
 msgstr "Mwaisse vuwe (%1)"
 
-#: mainwindow.cpp:238
-msgid "S&earch:"
-msgstr "C&weri:"
-
-#: mainwindow.cpp:292
-msgid "Search Bar<p>Enter a search term.</p>"
-msgstr "Bår di cweraedje<p>Tapez l' tchinne a cweri.</p>"
-
-#: mainwindow.cpp:404
+#: icons/IconMode.cpp:74
 #, kde-format
-msgid "%1 hit in General"
-msgid_plural "%1 hits in General"
-msgstr[0] "%1 di trové dins «Djenerå»"
-msgstr[1] "%1 di trovés dins «Djenerå»"
-
-#: mainwindow.cpp:407
-#, kde-format
-msgid "%1 hit in Advanced"
-msgid_plural "%1 hits in Advanced"
-msgstr[0] "%1 di trové dins «Spepieus»"
-msgstr[1] "%1 di trovés dins «Spepieus»"
+msgid "Keyboard Shortcut: %1"
+msgstr ""
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -112,11 +153,83 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "jean.cayron@gmail.com,laurent.hendschel@skynet.be,pablo@walon.org"
 
+#. i18n: file: app/configDialog.ui:23
+#. i18n: ectx: property (text), widget (QLabel, LblPlugins)
+#: rc.cpp:5
+msgid "View style:"
+msgstr ""
+
+#. i18n: file: app/configDialog.ui:33
+#. i18n: ectx: property (text), widget (QLabel, LblTitle)
+#: rc.cpp:8
+msgid "Below you can select your preferred style for viewing System Settings"
+msgstr ""
+
+#. i18n: file: app/configDialog.ui:46
+#. i18n: ectx: property (text), widget (QCheckBox, ChTooltips)
+#: rc.cpp:11
+msgid "Show detailed tooltips"
+msgstr ""
+
+#: classic/ClassicMode.cpp:65
+msgid "Control Center Tree View"
+msgstr ""
+
+#: classic/ClassicMode.cpp:66
+msgid "Provides a classic tree-based view of control modules."
+msgstr ""
+
+#: classic/CategoryList.cpp:38
+#, fuzzy
+#| msgid "Configure"
+msgid "Configure your system"
+msgstr "Apontyî"
+
+#: classic/CategoryList.cpp:39
+msgid ""
+"Welcome to \"System Settings\", a central place to configure your computer "
+"system."
+msgstr ""
+
+#~ msgid "(c) 2005, Benjamin C. Meyer; (c) 2007, Canonical Ltd"
+#~ msgstr "© 2005, Benjamin C. Meyer; © 2007, Canonical Ltd"
+
+#~ msgid "Benjamin C. Meyer"
+#~ msgstr "Benjamin C. Meyer"
+
+#~ msgid "Jonathan Riddell"
+#~ msgstr "Jonathan Riddell"
+
+#~ msgid "Contributor"
+#~ msgstr "Contribouweu"
+
+#~ msgid "Michael D. Stemle"
+#~ msgstr "Michael D. Stemle"
+
+#~ msgid "Simon Edwards"
+#~ msgstr "Simon Edwards"
+
+#~ msgid "Ellen Reitmayr"
+#~ msgstr "Ellen Reitmayr"
+
+#~ msgid "Usability"
+#~ msgstr "Eployåvté"
+
+#~ msgid "Search Bar<p>Enter a search term.</p>"
+#~ msgstr "Bår di cweraedje<p>Tapez l' tchinne a cweri.</p>"
+
+#~ msgid "%1 hit in General"
+#~ msgid_plural "%1 hits in General"
+#~ msgstr[0] "%1 di trové dins «Djenerå»"
+#~ msgstr[1] "%1 di trovés dins «Djenerå»"
+
+#~ msgid "%1 hit in Advanced"
+#~ msgid_plural "%1 hits in Advanced"
+#~ msgstr[0] "%1 di trové dins «Spepieus»"
+#~ msgstr[1] "%1 di trovés dins «Spepieus»"
+
 #~ msgid "Unsaved Changes"
 #~ msgstr "Candjmints nén schapés"
-
-#~ msgid "Configure"
-#~ msgstr "Apontyî"
 
 #~ msgid "Undo Changes"
 #~ msgstr "Disfé les candjmints"
@@ -129,10 +242,6 @@ msgstr "jean.cayron@gmail.com,laurent.hendschel@skynet.be,pablo@walon.org"
 
 #~ msgid "About Current Module"
 #~ msgstr "Åd fwait do module do moumint"
-
-#~ msgctxt "Help menu->about <modulename>"
-#~ msgid "About %1"
-#~ msgstr "Åd fwait di %1"
 
 #~ msgid "&File"
 #~ msgstr "&Fitchî"
