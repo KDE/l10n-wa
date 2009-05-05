@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_systemtray\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-05-04 12:01+0200\n"
+"POT-Creation-Date: 2009-05-05 11:20+0200\n"
 "PO-Revision-Date: 2009-01-04 19:26+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -123,61 +123,68 @@ msgstr ""
 msgid "Hardware control"
 msgstr ""
 
-#: ui/applet.cpp:160
+#: ui/applet.cpp:174
 msgid "No notifications and no jobs"
 msgstr "Nou notifiaedje et nole bouye"
 
-#: ui/applet.cpp:402
+#: ui/applet.cpp:416
 msgid "Visible icons:"
 msgstr "Imådjetes veyåves :"
 
-#: ui/applet.cpp:403
+#: ui/applet.cpp:417
 msgid "Hidden icons:"
 msgstr "Imådjetes catcheyes :"
 
-#: ui/applet.cpp:411
+#: ui/applet.cpp:425
 msgid "Information"
 msgstr ""
 
-#: ui/applet.cpp:413
+#: ui/applet.cpp:427
 msgid "Choose which information to show"
 msgstr ""
 
-#: ui/applet.cpp:414
+#: ui/applet.cpp:428
 msgid "Auto Hide"
 msgstr "Catche tot seu"
 
-#: ui/applet.cpp:554
+#: ui/applet.cpp:568
 msgid "clear all"
 msgstr ""
 
-#: ui/applet.cpp:609
+#: ui/applet.cpp:655
 #, fuzzy, kde-format
 #| msgctxt ""
 #| "%1 is the name of the job, can be things like Copying, deleting, moving"
 #| msgid "(finished) %1"
-msgid "%1 [finished]"
+msgid "%1 [Finished]"
 msgstr "(fini) %1"
 
-#: ui/applet.cpp:640
-msgid "Completed jobs"
+#: ui/applet.cpp:689
+msgid "Recently Completed Jobs"
 msgstr ""
 
-#: ui/extendertask.cpp:94
+#: ui/extendertask.cpp:73
+#, kde-format
+msgid "%1 Recently Completed Job:"
+msgid_plural "%1 Recently Completed Jobs:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ui/extendertask.cpp:96
 #, kde-format
 msgid "%1 running job"
 msgid_plural "%1 running jobs"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ui/extendertask.cpp:97
+#: ui/extendertask.cpp:99
 #, kde-format
 msgid "%1 suspended job"
 msgid_plural "%1 suspended jobs"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ui/extendertask.cpp:100
+#: ui/extendertask.cpp:102
 #, fuzzy, kde-format
 #| msgid "Notification from %1"
 msgid "%1 notification"
@@ -185,18 +192,18 @@ msgid_plural "%1 notifications"
 msgstr[0] "Notifiaedje di %1"
 msgstr[1] "Notifiaedje di %1"
 
-#: ui/extendertask.cpp:104
+#: ui/extendertask.cpp:106
 #, fuzzy
 #| msgid "No notifications and no jobs"
 msgid "Notifications and jobs"
 msgstr "Nou notifiaedje et nole bouye"
 
-#: ui/extendertask.cpp:176
+#: ui/extendertask.cpp:178
 msgid "Show or hide notifications and jobs"
 msgstr "Mostrer oudonbén catchî les notifiaedjes eyet bouyes"
 
-#: ui/jobwidget.cpp:95 ui/jobwidget.cpp:269
-msgid "more"
+#: ui/jobwidget.cpp:95
+msgid "More"
 msgstr ""
 
 #: ui/jobwidget.cpp:107
@@ -211,55 +218,75 @@ msgstr "Rataker l' bouye"
 msgid "Cancel job"
 msgstr "Rinoncî al bouye"
 
-#: ui/jobwidget.cpp:178
+#: ui/jobwidget.cpp:179
 #, kde-format
 msgid "%1 (%2 remaining)"
 msgstr ""
 
-#: ui/jobwidget.cpp:183
-#, kde-format
+#: ui/jobwidget.cpp:187
+#, fuzzy, kde-format
+#| msgctxt ""
+#| "%1 is the name of the job, can be things like Copying, deleting, moving"
+#| msgid "(finished) %1"
 msgctxt ""
 "%1 is the name of the job, can be things like Copying, deleting, moving"
-msgid "(paused) %1"
-msgstr "(djoké) %1"
+msgid "%1 [Paused]"
+msgstr "(fini) %1"
 
-#: ui/jobwidget.cpp:184
+#: ui/jobwidget.cpp:188
 #, fuzzy
 #| msgctxt ""
 #| "%1 is the name of the job, can be things like Copying, deleting, moving"
 #| msgid "(paused) %1"
-msgid "paused"
+msgid "Paused"
 msgstr "(djoké) %1"
 
-#: ui/jobwidget.cpp:188
-#, kde-format
+#: ui/jobwidget.cpp:192
+#, fuzzy, kde-format
+#| msgctxt ""
+#| "%1 is the name of the job, can be things like Copying, deleting, moving"
+#| msgid "(finished) %1"
 msgctxt ""
 "%1 is the name of the job, can be things like Copying, deleting, moving"
-msgid "(finished) %1"
+msgid "%1 [Finished]"
 msgstr "(fini) %1"
 
-#: ui/jobwidget.cpp:214
+#: ui/jobwidget.cpp:218
 #, kde-format
 msgid "%2 / 1 folder"
 msgid_plural "%2 / %1 folders"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ui/jobwidget.cpp:219
+#: ui/jobwidget.cpp:223
 #, kde-format
 msgid "%2 / 1 file"
 msgid_plural "%2 / %1 files"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ui/jobwidget.cpp:260
+#: ui/jobwidget.cpp:264
 msgid "less"
+msgstr ""
+
+#: ui/jobwidget.cpp:273
+msgid "more"
 msgstr ""
 
 #: ui/notificationwidget.cpp:161
 #, kde-format
 msgid "Notification from %1"
 msgstr "Notifiaedje di %1"
+
+#~ msgctxt ""
+#~ "%1 is the name of the job, can be things like Copying, deleting, moving"
+#~ msgid "(paused) %1"
+#~ msgstr "(djoké) %1"
+
+#~ msgctxt ""
+#~ "%1 is the name of the job, can be things like Copying, deleting, moving"
+#~ msgid "(finished) %1"
+#~ msgstr "(fini) %1"
 
 #, fuzzy
 #~| msgid "Notification from %1"
