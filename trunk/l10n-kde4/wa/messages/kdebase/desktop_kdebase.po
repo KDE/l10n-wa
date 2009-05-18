@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: desktop_kdebase\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-05-17 09:24+0000\n"
+"POT-Creation-Date: 2009-05-18 09:29+0000\n"
 "PO-Revision-Date: 2008-12-13 18:12+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -8380,9 +8380,9 @@ msgstr "Cweraedje PHP"
 #: workspace/khotkeys/data/kde32b1.khotkeys:399
 #: workspace/khotkeys/data/kde32b1.khotkeys:567
 #: workspace/khotkeys/data/kde32b1.khotkeys:785
-#: workspace/khotkeys/data/kde32b1.khotkeys:969
-#: workspace/khotkeys/data/kde32b1.khotkeys:1298
-#: workspace/khotkeys/data/kde32b1.khotkeys:2314
+#: workspace/khotkeys/data/kde32b1.khotkeys:1126
+#: workspace/khotkeys/data/kde32b1.khotkeys:1455
+#: workspace/khotkeys/data/kde32b1.khotkeys:2471
 #: workspace/khotkeys/data/printscreen.khotkeys:273
 msgctxt "Comment"
 msgid "Simple_action"
@@ -8455,17 +8455,45 @@ msgstr "Enonder «Konsole»"
 #: workspace/khotkeys/data/kde32b1.khotkeys:850
 msgctxt "Comment"
 msgid ""
+"Read the comment on the \"Type 'Hello'\" action first.\\n\\nQt Designer uses "
+"Ctrl+F4 for closing windows.  In KDE, however, Ctrl+F4 is the shortcut for "
+"going to virtual desktop 4, so this shortcut does not work in QT Designer.  "
+"Further, Qt Designer does not use KDE's standard Ctrl+W for closing the "
+"window.\\n\\nThis problem can be solved by remapping Ctrl+W to Ctrl+F4 when "
+"the active window is Qt Designer. When Qt Designer is active, every time Ctrl"
+"+W is pressed, Ctrl+F4 will be sent to Qt Designer instead. In other "
+"applications, the effect of Ctrl+W is unchanged.\\n\\nWe now need to specify "
+"three things: A new shortcut trigger on 'Ctrl+W', a new keyboard input "
+"action sending Ctrl+F4, and a new condition that the active window is Qt "
+"Designer.\\nQt Designer seems to always have title 'Qt Designer by "
+"Trolltech', so the condition will check for the active window having that "
+"title."
+msgstr ""
+
+#: workspace/khotkeys/data/kde32b1.khotkeys:866
+msgctxt "Name"
+msgid "Remap Ctrl+W to Ctrl+F4 in Qt Designer"
+msgstr "Rimaper CTRL+W viè CTRL+F4 e Qt Designer"
+
+#: workspace/khotkeys/data/kde32b1.khotkeys:946
+msgctxt "Comment"
+msgid "Qt Designer"
+msgstr "Qt Designer"
+
+#: workspace/khotkeys/data/kde32b1.khotkeys:1007
+msgctxt "Comment"
+msgid ""
 "By pressing Alt+Ctrl+W a D-Bus call will be performed that will show the "
 "minicli. You can use any kind of D-Bus call, just like using the command "
 "line 'qdbus' tool."
 msgstr ""
 
-#: workspace/khotkeys/data/kde32b1.khotkeys:898
+#: workspace/khotkeys/data/kde32b1.khotkeys:1055
 msgctxt "Name"
 msgid "Perform D-Bus call 'kdesktop KDesktopIface popupExecuteCommand()'"
 msgstr ""
 
-#: workspace/khotkeys/data/kde32b1.khotkeys:1034
+#: workspace/khotkeys/data/kde32b1.khotkeys:1191
 msgctxt "Comment"
 msgid ""
 "Read the comment on the \"Type 'Hello'\" action first.\\n\\nJust like the "
@@ -8478,22 +8506,22 @@ msgid ""
 "on the XMMS window and search for WM_CLASS to see 'XMMS_Player')."
 msgstr ""
 
-#: workspace/khotkeys/data/kde32b1.khotkeys:1051
+#: workspace/khotkeys/data/kde32b1.khotkeys:1208
 msgctxt "Name"
 msgid "Next in XMMS"
 msgstr "Shuvant dins XMMS"
 
-#: workspace/khotkeys/data/kde32b1.khotkeys:1134
+#: workspace/khotkeys/data/kde32b1.khotkeys:1291
 msgctxt "Comment"
 msgid "XMMS window"
 msgstr "Purnea XMMS"
 
-#: workspace/khotkeys/data/kde32b1.khotkeys:1216
+#: workspace/khotkeys/data/kde32b1.khotkeys:1373
 msgctxt "Comment"
 msgid "XMMS Player window"
 msgstr "Purnea do djouweu XMMS"
 
-#: workspace/khotkeys/data/kde32b1.khotkeys:1363
+#: workspace/khotkeys/data/kde32b1.khotkeys:1520
 msgctxt "Comment"
 msgid ""
 "Konqueror in KDE3.1 has tabs, and now you can also have gestures.\\n\\nJust "
@@ -8516,35 +8544,35 @@ msgid ""
 "window is Konqueror (class contains 'konqueror')."
 msgstr ""
 
-#: workspace/khotkeys/data/kde32b1.khotkeys:1381
+#: workspace/khotkeys/data/kde32b1.khotkeys:1538
 msgctxt "Name"
 msgid "Konqi Gestures"
 msgstr "Djesses di Konqi"
 
-#: workspace/khotkeys/data/kde32b1.khotkeys:1449
+#: workspace/khotkeys/data/kde32b1.khotkeys:1606
 #: workspace/khotkeys/data/konqueror_gestures_kde321.khotkeys:150
 msgctxt "Comment"
 msgid "Konqueror window"
 msgstr "Purnea di Konqueror"
 
-#: workspace/khotkeys/data/kde32b1.khotkeys:1532
-#: workspace/khotkeys/data/kde32b1.khotkeys:1554
+#: workspace/khotkeys/data/kde32b1.khotkeys:1689
+#: workspace/khotkeys/data/kde32b1.khotkeys:1711
 #: workspace/khotkeys/data/konqueror_gestures_kde321.khotkeys:233
 #: workspace/khotkeys/data/konqueror_gestures_kde321.khotkeys:255
 msgctxt "Comment"
 msgid "Konqueror"
 msgstr "Konqueror"
 
-#: workspace/khotkeys/data/kde32b1.khotkeys:1581
+#: workspace/khotkeys/data/kde32b1.khotkeys:1738
 #: workspace/khotkeys/data/konqueror_gestures_kde321.khotkeys:348
 msgctxt "Name"
 msgid "Back"
 msgstr "En erî"
 
-#: workspace/khotkeys/data/kde32b1.khotkeys:1675
-#: workspace/khotkeys/data/kde32b1.khotkeys:1833
-#: workspace/khotkeys/data/kde32b1.khotkeys:1989
-#: workspace/khotkeys/data/kde32b1.khotkeys:2147
+#: workspace/khotkeys/data/kde32b1.khotkeys:1832
+#: workspace/khotkeys/data/kde32b1.khotkeys:1990
+#: workspace/khotkeys/data/kde32b1.khotkeys:2146
+#: workspace/khotkeys/data/kde32b1.khotkeys:2304
 #: workspace/khotkeys/data/konqueror_gestures_kde321.khotkeys:579
 #: workspace/khotkeys/data/konqueror_gestures_kde321.khotkeys:781
 #: workspace/khotkeys/data/konqueror_gestures_kde321.khotkeys:964
@@ -8563,25 +8591,25 @@ msgctxt "Comment"
 msgid "Gesture_triggers"
 msgstr "Rascourtis_bodjaedje_des_purneas"
 
-#: workspace/khotkeys/data/kde32b1.khotkeys:1739
+#: workspace/khotkeys/data/kde32b1.khotkeys:1896
 #: workspace/khotkeys/data/konqueror_gestures_kde321.khotkeys:1973
 msgctxt "Name"
 msgid "Forward"
 msgstr "En avant"
 
-#: workspace/khotkeys/data/kde32b1.khotkeys:1897
+#: workspace/khotkeys/data/kde32b1.khotkeys:2054
 #: workspace/khotkeys/data/konqueror_gestures_kde321.khotkeys:689
 msgctxt "Name"
 msgid "Up"
 msgstr "Monter"
 
-#: workspace/khotkeys/data/kde32b1.khotkeys:2053
+#: workspace/khotkeys/data/kde32b1.khotkeys:2210
 #: workspace/khotkeys/data/konqueror_gestures_kde321.khotkeys:3019
 msgctxt "Name"
 msgid "Reload"
 msgstr "Ritcherdjî"
 
-#: workspace/khotkeys/data/kde32b1.khotkeys:2209
+#: workspace/khotkeys/data/kde32b1.khotkeys:2366
 msgctxt "Comment"
 msgid ""
 "After pressing Win+E (Tux+E) a WWW browser will be launched, and it will "
@@ -8589,7 +8617,7 @@ msgid ""
 "minicli (Alt+F2)."
 msgstr ""
 
-#: workspace/khotkeys/data/kde32b1.khotkeys:2229
+#: workspace/khotkeys/data/kde32b1.khotkeys:2386
 msgctxt "Name"
 msgid "Go to KDE Website"
 msgstr "Potchî al waibe di KDE"
@@ -11264,7 +11292,7 @@ msgctxt "Name"
 msgid "Plasma Desktop Workspace"
 msgstr ""
 
-#: workspace/plasma/tools/desktopthemedetails/desktopthemedetails.desktop:11
+#: workspace/plasma/tools/desktopthemedetails/desktopthemedetails.desktop:12
 #, fuzzy
 #| msgctxt "Name"
 #| msgid "Desktop Grid"
@@ -11272,7 +11300,7 @@ msgctxt "Name"
 msgid "Desktop Theme Details"
 msgstr "Glindisse do scribanne"
 
-#: workspace/plasma/tools/desktopthemedetails/desktopthemedetails.desktop:69
+#: workspace/plasma/tools/desktopthemedetails/desktopthemedetails.desktop:70
 msgctxt "Comment"
 msgid "Customize individual desktop theme items"
 msgstr ""
@@ -12281,14 +12309,6 @@ msgstr "Solea-djus d' royes"
 #~ msgctxt "Name"
 #~ msgid "File Manager"
 #~ msgstr "Manaedjeu di fitchîs"
-
-#~ msgctxt "Name"
-#~ msgid "Remap Ctrl+W to Ctrl+F4 in Qt Designer"
-#~ msgstr "Rimaper CTRL+W viè CTRL+F4 e Qt Designer"
-
-#~ msgctxt "Comment"
-#~ msgid "Qt Designer"
-#~ msgstr "Qt Designer"
 
 #~ msgctxt "Name"
 #~ msgid "UADescription (Mozilla 1.7 on current)"
