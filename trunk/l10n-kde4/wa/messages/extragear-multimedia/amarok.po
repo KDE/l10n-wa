@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-06-13 12:16+0200\n"
+"POT-Creation-Date: 2009-06-14 11:10+0200\n"
 "PO-Revision-Date: 2009-05-19 21:22+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -353,7 +353,7 @@ msgstr ""
 #: collection/audiocd/AudioCdCollection.cpp:428
 #: collection/audiocd/AudioCdCollection.cpp:429
 #: context/applets/albums/AlbumItem.cpp:70 MediaDevicePluginManager.cpp:531
-#: MainWindow.cpp:977 amarokurls/BookmarkTreeView.cpp:318
+#: MainWindow.cpp:971 amarokurls/BookmarkTreeView.cpp:318
 #: amarokurls/BookmarkTreeView.cpp:319 amarokurls/BookmarkTreeView.cpp:320
 msgid "Unknown"
 msgstr "Nén cnoxhou"
@@ -390,7 +390,7 @@ msgstr ""
 #: collection/audiocd/FormatSelectionDialog.cpp:116
 #, fuzzy
 #| msgid "Sound System - Amarok"
-msgid "Audiocd settings - Amarok"
+msgid "Audio CD settings - Amarok"
 msgstr "Sistinme di son - Amarok"
 
 #: collection/CollectionManager.cpp:124
@@ -512,6 +512,49 @@ msgctxt ""
 msgid "One of install, remove, upgrade or list is required."
 msgstr ""
 
+#: context/engines/videoclip/VideoclipEngine.cpp:121
+#: context/engines/wikipedia/WikipediaEngine.cpp:172
+#: context/engines/wikipedia/WikipediaEngine.cpp:395
+msgid "Fetching content.."
+msgstr "Dji cwîr l' ådvins..."
+
+#: context/engines/videoclip/VideoclipEngine.cpp:187
+#, fuzzy, kde-format
+#| msgid "Unable to retrieve Wikipedia information: %1"
+msgid "Unable to retrieve Youtube information: %1"
+msgstr "Dji n' a sepou obtini les pondants et djondants di Wikipedia: %1"
+
+#: context/engines/videoclip/VideoclipEngine.cpp:286
+#, fuzzy, kde-format
+#| msgid "Unable to retrieve Wikipedia information: %1"
+msgid "Unable to retrieve Dailymotion information: %1"
+msgstr "Dji n' a sepou obtini les pondants et djondants di Wikipedia: %1"
+
+#: context/engines/videoclip/VideoclipEngine.cpp:355
+#, fuzzy, kde-format
+#| msgid "Unable to retrieve Wikipedia information: %1"
+msgid "Unable to retrieve Vimeo information: %1"
+msgstr "Dji n' a sepou obtini les pondants et djondants di Wikipedia: %1"
+
+#: context/engines/videoclip/VideoclipEngine.cpp:391
+#: context/engines/videoclip/VideoclipEngine.cpp:446
+#, fuzzy, kde-format
+#| msgid "Unable to retrieve Wikipedia information: %1"
+msgid "Unable to retrieve one Vimeo song information: %1"
+msgstr "Dji n' a sepou obtini les pondants et djondants di Wikipedia: %1"
+
+#: context/engines/videoclip/VideoclipEngine.cpp:475
+#, fuzzy
+#| msgid "Unable to retrieve Wikipedia information: %1"
+msgid "Unable to retrieve an image information"
+msgstr "Dji n' a sepou obtini les pondants et djondants di Wikipedia: %1"
+
+#: context/engines/videoclip/VideoclipEngine.cpp:510
+#, fuzzy
+#| msgid "No information found..."
+msgid "No video clip found..."
+msgstr "Nole informåcion di trovêye..."
+
 #: context/engines/current/CurrentEngine.cpp:137
 #: context/applets/albums/Albums.cpp:62
 msgid "Recently added albums"
@@ -529,11 +572,6 @@ msgstr "e tournêye"
 #: context/engines/songkick/SongkickEngine.cpp:45
 msgid "dates"
 msgstr "dates"
-
-#: context/engines/wikipedia/WikipediaEngine.cpp:172
-#: context/engines/wikipedia/WikipediaEngine.cpp:395
-msgid "Fetching content.."
-msgstr "Dji cwîr l' ådvins..."
 
 #: context/engines/wikipedia/WikipediaEngine.cpp:187
 #, kde-format
@@ -647,9 +685,13 @@ msgstr "Radjouter aplikete..."
 msgid "no applet name"
 msgstr "nou no d' aplikete"
 
-#: context/LyricsManager.cpp:110
+#: context/LyricsManager.cpp:108
 msgid "Lyrics data could not be parsed"
 msgstr "Dji n' a sepou analijhî les dnêyes"
+
+#: context/applets/videoclip/VideoclipApplet.cpp:97
+msgid "Video Clip"
+msgstr ""
 
 #: context/applets/currenttrack/CurrentTrack.cpp:76
 msgctxt "What artist is this track by"
@@ -690,7 +732,7 @@ msgid "Favorite tracks"
 msgstr "Colåds bokets"
 
 #: context/applets/albums/AlbumsView.cpp:109 Systray.cpp:243
-#: browsers/CollectionTreeView.cpp:716
+#: browsers/CollectionTreeView.cpp:750
 #: browsers/filebrowser/MyDirOperator.cpp:271
 #: browsers/playlistbrowser/UserPlaylistModel.cpp:452
 #: browsers/playlistbrowser/PodcastModel.cpp:693
@@ -894,7 +936,7 @@ msgstr "&Boket"
 msgid "&Album"
 msgstr "&Albom"
 
-#: ActionClasses.cpp:359 MainWindow.cpp:835
+#: ActionClasses.cpp:359 MainWindow.cpp:829
 msgid "&Playlist"
 msgstr "&Djivêye a djouwer"
 
@@ -1194,13 +1236,13 @@ msgstr "Tite"
 #. i18n: file: dialogs/EditFilterDialog.ui:81
 #. i18n: ectx: property (text), item, widget (KComboBox, keywordCombo)
 #: dialogs/FilenameLayoutDialog.cpp:117 dialogs/FilenameLayoutDialog.cpp:332
-#: dialogs/transferdialog.cpp:89 browsers/CollectionTreeItemModelBase.cpp:764
+#: dialogs/transferdialog.cpp:89 browsers/CollectionTreeItemModelBase.cpp:761
 #: browsers/collectionbrowser/CollectionWidget.cpp:88
 #: browsers/collectionbrowser/CollectionWidget.cpp:117
 #: browsers/collectionbrowser/CollectionWidget.cpp:149
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:245 rc.cpp:951
 #: services/lastfm/LastFmService.cpp:545
-#: services/magnatune/MagnatuneStore.cpp:199
+#: services/magnatune/MagnatuneStore.cpp:202
 #: services/jamendo/JamendoInfoParser.cpp:54 playlist/PlaylistHeader.cpp:42
 #: playlist/PlaylistModel.cpp:696 widgets/SmartPlaylistEditor.cpp:184
 #: widgets/SmartPlaylistEditor.cpp:198
@@ -1210,7 +1252,7 @@ msgstr "Årtisse"
 #. i18n: file: dialogs/EditFilterDialog.ui:86
 #. i18n: ectx: property (text), item, widget (KComboBox, keywordCombo)
 #: dialogs/FilenameLayoutDialog.cpp:118
-#: browsers/CollectionTreeItemModelBase.cpp:765
+#: browsers/CollectionTreeItemModelBase.cpp:762
 #: browsers/collectionbrowser/CollectionWidget.cpp:97
 #: browsers/collectionbrowser/CollectionWidget.cpp:126
 #: browsers/collectionbrowser/CollectionWidget.cpp:158
@@ -1223,7 +1265,7 @@ msgstr "Compôzeu"
 #. i18n: file: dialogs/EditFilterDialog.ui:106
 #. i18n: ectx: property (text), item, widget (KComboBox, keywordCombo)
 #: dialogs/FilenameLayoutDialog.cpp:119 dialogs/FilenameLayoutDialog.cpp:342
-#: browsers/CollectionTreeItemModelBase.cpp:767
+#: browsers/CollectionTreeItemModelBase.cpp:764
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:250
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:693 rc.cpp:966
 #: playlist/PlaylistModel.cpp:699 widgets/SmartPlaylistEditor.cpp:185
@@ -1234,12 +1276,12 @@ msgstr "Anêye"
 #. i18n: file: dialogs/EditFilterDialog.ui:76
 #. i18n: ectx: property (text), item, widget (KComboBox, keywordCombo)
 #: dialogs/FilenameLayoutDialog.cpp:120 dialogs/FilenameLayoutDialog.cpp:347
-#: dialogs/transferdialog.cpp:90 browsers/CollectionTreeItemModelBase.cpp:763
+#: dialogs/transferdialog.cpp:90 browsers/CollectionTreeItemModelBase.cpp:760
 #: browsers/collectionbrowser/CollectionWidget.cpp:91
 #: browsers/collectionbrowser/CollectionWidget.cpp:120
 #: browsers/collectionbrowser/CollectionWidget.cpp:152
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:247 rc.cpp:948
-#: services/magnatune/MagnatuneStore.cpp:205
+#: services/magnatune/MagnatuneStore.cpp:208
 #: services/jamendo/JamendoInfoParser.cpp:86 playlist/PlaylistHeader.cpp:42
 #: playlist/PlaylistModel.cpp:700 widgets/SmartPlaylistEditor.cpp:184
 #: widgets/SmartPlaylistEditor.cpp:198
@@ -1255,7 +1297,7 @@ msgstr "Rawete"
 #. i18n: file: dialogs/EditFilterDialog.ui:91
 #. i18n: ectx: property (text), item, widget (KComboBox, keywordCombo)
 #: dialogs/FilenameLayoutDialog.cpp:122 dialogs/FilenameLayoutDialog.cpp:357
-#: dialogs/transferdialog.cpp:91 browsers/CollectionTreeItemModelBase.cpp:766
+#: dialogs/transferdialog.cpp:91 browsers/CollectionTreeItemModelBase.cpp:763
 #: browsers/collectionbrowser/CollectionWidget.cpp:94
 #: browsers/collectionbrowser/CollectionWidget.cpp:123
 #: browsers/collectionbrowser/CollectionWidget.cpp:155
@@ -1805,7 +1847,7 @@ msgstr "Tchuzes"
 msgid "Convert spaces to underscores"
 msgstr "Covierser espåces e båres pa dzo"
 
-#: dialogs/ScriptManager.cpp:117 MainWindow.cpp:665
+#: dialogs/ScriptManager.cpp:117 MainWindow.cpp:659
 msgid "Script Manager"
 msgstr "Manaedjeu des scripes"
 
@@ -2403,7 +2445,7 @@ msgstr "Corespondance:"
 msgid "Current Track"
 msgstr "Schoûte voltî l' boket do moumint"
 
-#: dynamic/biases/EchoNest.cpp:113 MainWindow.cpp:231
+#: dynamic/biases/EchoNest.cpp:113 MainWindow.cpp:232
 msgid "Playlist"
 msgstr "Djivêye a djouwer"
 
@@ -2702,32 +2744,32 @@ msgstr "Stefan Bogner"
 msgid "Home"
 msgstr "Måjhon"
 
-#: browsers/CollectionTreeView.cpp:236
+#: browsers/CollectionTreeView.cpp:237
 #: browsers/filebrowser/MyDirOperator.cpp:114
 msgid "Copy to Collection"
 msgstr "Copyî el ramexhnêye"
 
-#: browsers/CollectionTreeView.cpp:247
+#: browsers/CollectionTreeView.cpp:248
 #: browsers/filebrowser/MyDirOperator.cpp:105
 msgid "Move to Collection"
 msgstr "Bodjî el ramexhnêye"
 
-#: browsers/CollectionTreeView.cpp:488 services/lastfm/LastFmTreeView.cpp:204
+#: browsers/CollectionTreeView.cpp:494 services/lastfm/LastFmTreeView.cpp:204
 msgid "More..."
 msgstr "Pus..."
 
-#: browsers/CollectionTreeView.cpp:724
+#: browsers/CollectionTreeView.cpp:758
 #: browsers/filebrowser/MyDirOperator.cpp:272
 #: services/lastfm/LastFmTreeView.cpp:124
 msgctxt "Replace the currently loaded tracks with these"
 msgid "&Replace Playlist"
 msgstr "&Replaecî djivêye a djouwer"
 
-#: browsers/CollectionTreeView.cpp:742
+#: browsers/CollectionTreeView.cpp:776
 msgid "&Edit Track Details"
 msgstr "&Candjî detays do boket"
 
-#: browsers/CollectionTreeView.cpp:777
+#: browsers/CollectionTreeView.cpp:811
 msgctxt "Organize Files"
 msgid "Organize Files"
 msgstr "Assonrer fitchîs"
@@ -2800,7 +2842,7 @@ msgstr "gn a deus moes"
 msgid "three months ago"
 msgstr "gn a troes moes"
 
-#: browsers/CollectionTreeItemModelBase.cpp:763
+#: browsers/CollectionTreeItemModelBase.cpp:760
 msgid "Year - Album"
 msgstr "Anêye - Albom"
 
@@ -2809,18 +2851,18 @@ msgid "Search collection"
 msgstr "Cweri ramexhnêye"
 
 #: browsers/collectionbrowser/CollectionWidget.cpp:72
-#: services/magnatune/MagnatuneStore.cpp:202
+#: services/magnatune/MagnatuneStore.cpp:205
 msgid "Artist / Album"
 msgstr "Årtisse / Albom"
 
 #: browsers/collectionbrowser/CollectionWidget.cpp:76
-#: services/magnatune/MagnatuneStore.cpp:208
+#: services/magnatune/MagnatuneStore.cpp:211
 #: services/jamendo/JamendoService.cpp:144
 msgid "Genre / Artist"
 msgstr "Djinre / Årtisse"
 
 #: browsers/collectionbrowser/CollectionWidget.cpp:80
-#: services/magnatune/MagnatuneStore.cpp:211
+#: services/magnatune/MagnatuneStore.cpp:214
 #: services/jamendo/JamendoService.cpp:147
 msgid "Genre / Artist / Album"
 msgstr "Djinre / Årtisse / Albom"
@@ -2846,7 +2888,7 @@ msgid "Show Cover Art"
 msgstr "Mostrer potchete"
 
 #: browsers/collectionbrowser/CollectionWidget.cpp:257
-#: services/magnatune/MagnatuneStore.cpp:214
+#: services/magnatune/MagnatuneStore.cpp:217
 #: services/jamendo/JamendoService.cpp:150
 msgid "Sort Options"
 msgstr "Tchuzes di relijhaedje"
@@ -2857,7 +2899,7 @@ msgid ""
 "audio players and cd's."
 msgstr ""
 
-#: browsers/filebrowser/FileBrowser.cpp:78 widgets/SearchWidget.cpp:61
+#: browsers/filebrowser/FileBrowser.cpp:78 widgets/SearchWidget.cpp:63
 #: covermanager/CoverManager.cpp:173
 msgid "Enter search terms here"
 msgstr "Tapez chal li mot a trover"
@@ -2901,7 +2943,7 @@ msgstr ""
 #: browsers/filebrowser/FileBrowser.cpp:126
 msgid ""
 "The file browser lets you browse files anywhere on your system, regardless "
-"of wheter these files are part of your local collection. You can then add "
+"of whether these files are part of your local collection. You can then add "
 "these files to the playlist as well as perform basic file operations."
 msgstr ""
 
@@ -3094,47 +3136,47 @@ msgid ""
 "selecting tracks for you, based on a number of parameters that you select."
 msgstr ""
 
-#: browsers/playlistbrowser/DynamicCategory.cpp:72
+#: browsers/playlistbrowser/DynamicCategory.cpp:67
 msgid "On"
 msgstr "Eclitchî"
 
-#: browsers/playlistbrowser/DynamicCategory.cpp:73
+#: browsers/playlistbrowser/DynamicCategory.cpp:68
 msgid "Turn dynamic mode on."
 msgstr "Eclitchî môde dinamike."
 
-#: browsers/playlistbrowser/DynamicCategory.cpp:81
+#: browsers/playlistbrowser/DynamicCategory.cpp:76
 msgid "Repopulate"
 msgstr "Ripeupler"
 
-#: browsers/playlistbrowser/DynamicCategory.cpp:82
+#: browsers/playlistbrowser/DynamicCategory.cpp:77
 msgid "Replace the upcoming tracks with fresh ones."
 msgstr "Replaecî les bokets ki vnèt avou des pus frisses."
 
-#: browsers/playlistbrowser/DynamicCategory.cpp:93
+#: browsers/playlistbrowser/DynamicCategory.cpp:88
 msgid "Playlist:"
 msgstr "Djivêye a djouwer:"
 
-#: browsers/playlistbrowser/DynamicCategory.cpp:123
+#: browsers/playlistbrowser/DynamicCategory.cpp:118
 msgid "Save the preset."
 msgstr "Defini l' prézapontiaedje."
 
-#: browsers/playlistbrowser/DynamicCategory.cpp:133
+#: browsers/playlistbrowser/DynamicCategory.cpp:128
 msgid "Delete the preset."
 msgstr "Disfacer l' prézapontiaedje."
 
-#: browsers/playlistbrowser/DynamicCategory.cpp:279
+#: browsers/playlistbrowser/DynamicCategory.cpp:274
 msgid "Playlist Name"
 msgstr "No del djivêye a djouwer"
 
-#: browsers/playlistbrowser/DynamicCategory.cpp:280
+#: browsers/playlistbrowser/DynamicCategory.cpp:275
 msgid "Enter a name for the playlist:"
 msgstr "Dinez on no al djivêye a djouwer:"
 
-#: browsers/playlistbrowser/DynamicCategory.cpp:290
+#: browsers/playlistbrowser/DynamicCategory.cpp:285
 msgid "Warning"
 msgstr "Asteme"
 
-#: browsers/playlistbrowser/DynamicCategory.cpp:290
+#: browsers/playlistbrowser/DynamicCategory.cpp:285
 msgid "Cannot overwrite the random playlist."
 msgstr "Dji n' sai spotchî l' djivêye a djouwer a l' astcheyance."
 
@@ -3378,51 +3420,51 @@ msgstr ""
 msgid "Error Removing File"
 msgstr "Åk n' a nén stî come dji oisteu l' fitchî"
 
-#: MainWindow.cpp:220
+#: MainWindow.cpp:221
 msgid "Browsers"
 msgstr ""
 
-#: MainWindow.cpp:254
+#: MainWindow.cpp:255
 #, fuzzy
 #| msgid "Center"
 msgid "Context"
 msgstr "Mitan"
 
-#: MainWindow.cpp:287
+#: MainWindow.cpp:288
 #, fuzzy
 #| msgid "Collection"
 msgid "Collections"
 msgstr "Ramexhnêye"
 
-#: MainWindow.cpp:289
+#: MainWindow.cpp:290
 msgid "The list of available collections"
 msgstr ""
 
-#: MainWindow.cpp:297
+#: MainWindow.cpp:298
 msgid "Internet"
 msgstr "Daegntoele"
 
-#: MainWindow.cpp:299
+#: MainWindow.cpp:300
 msgid "Sources  of online content"
 msgstr ""
 
-#: MainWindow.cpp:308
+#: MainWindow.cpp:309
 msgid "Playlists"
 msgstr "Djivêyes a djouwer"
 
-#: MainWindow.cpp:310
+#: MainWindow.cpp:311
 msgid "Different kinds of playlists"
 msgstr ""
 
-#: MainWindow.cpp:317
+#: MainWindow.cpp:318
 msgid "Files"
 msgstr "Fitchîs"
 
-#: MainWindow.cpp:319
+#: MainWindow.cpp:320
 msgid "Browse local files"
 msgstr ""
 
-#: MainWindow.cpp:442
+#: MainWindow.cpp:436
 msgid ""
 "<qt>Closing the main window will keep Amarok running in the System Tray. Use "
 "<B>Quit</B> from the menu, or the Amarok tray icon to exit the application.</"
@@ -3432,153 +3474,153 @@ msgstr ""
 "sicriftôr. Eployîz <B>Cwiter</B> dins l' dressêye oudonbén l' imådjete d' "
 "Amarok e scriftôr po moussî foû do programe.</qt>"
 
-#: MainWindow.cpp:444
+#: MainWindow.cpp:438
 msgid "Docking in System Tray"
 msgstr "Mete el boesse ås imådjetes sistinme"
 
-#: MainWindow.cpp:469
+#: MainWindow.cpp:463
 msgid "Use relative path for &saving"
 msgstr "Eployi tchimin relatif pol &schapaedje"
 
-#: MainWindow.cpp:474
+#: MainWindow.cpp:468
 msgid "Save As"
 msgstr "Schaper eyet rlomer"
 
-#: MainWindow.cpp:512
+#: MainWindow.cpp:506
 msgid "Play Media (Files or URLs)"
 msgstr "Djouwer media (Fitchîs ou URL)"
 
-#: MainWindow.cpp:512
+#: MainWindow.cpp:506
 msgid "Add Media (Files or URLs)"
 msgstr "Radjouter media (Fitchîs ou URL)"
 
-#: MainWindow.cpp:527
+#: MainWindow.cpp:521
 msgid "Add Stream"
 msgstr "Radjouter floû"
 
-#: MainWindow.cpp:527
+#: MainWindow.cpp:521
 msgid "Enter Stream URL:"
 msgstr "Diner l' URL do floû:"
 
-#: MainWindow.cpp:621
+#: MainWindow.cpp:615
 msgid "&Add Media..."
 msgstr "&Radjouter media..."
 
-#: MainWindow.cpp:626
+#: MainWindow.cpp:620
 msgctxt "clear playlist"
 msgid "&Clear Playlist"
 msgstr "&Netyî djivêye a djouwer"
 
-#: MainWindow.cpp:630
+#: MainWindow.cpp:624
 msgid "&Add Stream..."
 msgstr "&Radjouter floû..."
 
-#: MainWindow.cpp:634
+#: MainWindow.cpp:628
 msgid "&Export Playlist As..."
 msgstr "&Ebaguer djivêye a djouwer eyet l' rilomer..."
 
-#: MainWindow.cpp:638
+#: MainWindow.cpp:632
 msgid "&Save Playlist"
 msgstr "&Schaper djivêye a djouwer"
 
-#: MainWindow.cpp:642 covermanager/CoverManager.cpp:98
+#: MainWindow.cpp:636 covermanager/CoverManager.cpp:98
 msgid "Cover Manager"
 msgstr "Manaedjeu des potchetes"
 
-#: MainWindow.cpp:654
+#: MainWindow.cpp:648
 msgid "Play Media..."
 msgstr "Djouwer media..."
 
-#: MainWindow.cpp:660
+#: MainWindow.cpp:654
 msgid "Play Audio CD"
 msgstr "Djouwer plake lazer odio"
 
-#: MainWindow.cpp:669
+#: MainWindow.cpp:663
 msgid "&Seek Forward"
 msgstr "&Aler en avant"
 
-#: MainWindow.cpp:675
+#: MainWindow.cpp:669
 msgid "&Seek Backward"
 msgstr "&Aler en erî"
 
-#: MainWindow.cpp:682
+#: MainWindow.cpp:676
 msgid "Update Collection"
 msgstr "Mete a djoû ramexhnêye"
 
-#: MainWindow.cpp:689
+#: MainWindow.cpp:683
 msgid "Previous Track"
 msgstr "Boket di dvant"
 
-#: MainWindow.cpp:697
+#: MainWindow.cpp:691
 msgid "Next Track"
 msgstr "Boket d' après"
 
-#: MainWindow.cpp:700
+#: MainWindow.cpp:694
 msgid "Increase Volume"
 msgstr "Monter volume"
 
-#: MainWindow.cpp:706
+#: MainWindow.cpp:700
 msgid "Decrease Volume"
 msgstr "Dischinde volume"
 
-#: MainWindow.cpp:712
+#: MainWindow.cpp:706
 msgid "Toggle Main Window"
 msgstr "(Dis)mete mwaisse purnea"
 
-#: MainWindow.cpp:717
+#: MainWindow.cpp:711
 msgid "Show On Screen Display"
 msgstr "Håynaedje Mostrer sol waitroûle"
 
-#: MainWindow.cpp:722
+#: MainWindow.cpp:716
 msgid "Mute Volume"
 msgstr "Volume moya"
 
-#: MainWindow.cpp:727
+#: MainWindow.cpp:721
 msgid "Love Current Track"
 msgstr "Schoûte voltî l' boket do moumint"
 
-#: MainWindow.cpp:732
+#: MainWindow.cpp:726
 msgid "Rate Current Track: 1"
 msgstr "Préjhaedje do boket do moumint: 1"
 
-#: MainWindow.cpp:737
+#: MainWindow.cpp:731
 msgid "Rate Current Track: 2"
 msgstr "Préjhaedje do boket do moumint: 2"
 
-#: MainWindow.cpp:742
+#: MainWindow.cpp:736
 msgid "Rate Current Track: 3"
 msgstr "Préjhaedje do boket do moumint: 3"
 
-#: MainWindow.cpp:747
+#: MainWindow.cpp:741
 msgid "Rate Current Track: 4"
 msgstr "Préjhaedje do boket do moumint: 4"
 
-#: MainWindow.cpp:752
+#: MainWindow.cpp:746
 msgid "Rate Current Track: 5"
 msgstr "Préjhaedje do boket do moumint: 5"
 
-#: MainWindow.cpp:813
+#: MainWindow.cpp:807
 msgid "&Music"
 msgstr "&Muzike"
 
-#: MainWindow.cpp:817
+#: MainWindow.cpp:811
 msgid "&Amarok"
 msgstr "&Amarok"
 
-#: MainWindow.cpp:858
+#: MainWindow.cpp:852
 msgid "&Tools"
 msgstr "&Usteyes"
 
-#: MainWindow.cpp:869
+#: MainWindow.cpp:863
 msgid "&Settings"
 msgstr "A&pontiaedjes"
 
-#: MainWindow.cpp:965
+#: MainWindow.cpp:959
 #, kde-format
 msgid "Paused  ::  %1"
 msgstr "Djoké :: %1"
 
-#: MainWindow.cpp:977
+#: MainWindow.cpp:971
 #, kde-format
 msgid "%1 - %2  ::  %3"
 msgstr "%1 - %2  ::  %3"
@@ -6972,11 +7014,11 @@ msgstr "Last.fm: li revolucion sociåle del muzike"
 #: services/lastfm/LastFmService.cpp:190
 msgid ""
 "Last.fm is a popular online service that provides personal radio stations "
-"and music reccomendations. Based on your listening habbits it tailor makes a "
-"personal station for you and provides you with reccomendations for new "
-"music. It is also possible to play stations with music that is simmilar to a "
-"particular artits as well as listen to streams from people you have added as "
-"friends or that last.fm considders your musical \"neighbours\""
+"and music recommendations. A personal listening station is tailored based on "
+"your listening habits and provides you with recommendations for new music. "
+"It is also possible to play stations with music that is similar to a "
+"particular artist as well as listen to streams from people you have added as "
+"friends or that last.fm considers your musical \"neighbors\""
 msgstr ""
 
 #: services/lastfm/LastFmService.cpp:287
@@ -7136,38 +7178,45 @@ msgstr "Rizultats po: %1"
 msgid "Go to artist in %1 service"
 msgstr "Aler a l' årtisse e siervice %1"
 
-#: services/magnatune/MagnatuneInfoParser.cpp:33
+#: services/magnatune/MagnatuneInfoParser.cpp:34
 msgid "Loading artist info..."
 msgstr "Dji tchedje les pondants et les djondants d' l' årtisse..."
 
-#: services/magnatune/MagnatuneInfoParser.cpp:45
+#: services/magnatune/MagnatuneInfoParser.cpp:46
 #, kde-format
 msgid "Fetching %1 Artist Info"
 msgstr "Dji cwîr les pondants et les djondants d' l' årtisse %1..."
 
-#: services/magnatune/MagnatuneInfoParser.cpp:54
+#: services/magnatune/MagnatuneInfoParser.cpp:55
 msgid "Loading album info..."
 msgstr "Dji tchedje les pondants et les djondants d' l' albom..."
 
-#: services/magnatune/MagnatuneInfoParser.cpp:75
+#: services/magnatune/MagnatuneInfoParser.cpp:76
 msgid "Release Year: "
 msgstr "Anêye d' rexhowe:"
 
-#: services/magnatune/MagnatuneInfoParser.cpp:80
+#: services/magnatune/MagnatuneInfoParser.cpp:81
 msgid "Description:"
 msgstr "Discrijhaedje:"
 
-#: services/magnatune/MagnatuneInfoParser.cpp:84
+#: services/magnatune/MagnatuneInfoParser.cpp:85
 msgid "From Magnatune.com"
 msgstr "Di Magnatune.com"
 
-#: services/magnatune/MagnatuneInfoParser.cpp:159
+#: services/magnatune/MagnatuneInfoParser.cpp:160
 msgid "Loading Magnatune.com frontpage..."
 msgstr "Dji tchedje li prumire pådje di Magnatune.com..."
 
-#: services/magnatune/MagnatuneInfoParser.cpp:162
+#: services/magnatune/MagnatuneInfoParser.cpp:163
 msgid "Fetching Magnatune.com front page"
 msgstr "Dji cwîr li prumire pådje di Magnatune.com..."
+
+#: services/magnatune/MagnatuneInfoParser.cpp:176
+#: services/magnatune/MagnatuneInfoParser.cpp:187
+#, fuzzy
+#| msgid "Loading Magnatune.com frontpage..."
+msgid "Loading your Magnatune.com favorites page..."
+msgstr "Dji tchedje li prumire pådje di Magnatune.com..."
 
 #: services/magnatune/MagnatuneCollectionLocation.cpp:43
 msgid "Preview Tracks"
@@ -7265,11 +7314,11 @@ msgstr ""
 "I shonne k' i gn a ene rujhe avou l' fitchî d' informåcion tchoezi pos esse "
 "raberweté."
 
-#: services/magnatune/MagnatuneStore.cpp:100
+#: services/magnatune/MagnatuneStore.cpp:103
 msgid "\"Fair trade\" online music store."
 msgstr ""
 
-#: services/magnatune/MagnatuneStore.cpp:103
+#: services/magnatune/MagnatuneStore.cpp:106
 #, c-format
 msgid ""
 "Magnatune.com is a different kind of record company with the motto \"We are "
@@ -7279,35 +7328,35 @@ msgid ""
 "lets you download as much of their music as you like."
 msgstr ""
 
-#: services/magnatune/MagnatuneStore.cpp:226
+#: services/magnatune/MagnatuneStore.cpp:229
 msgid "Re-download"
 msgstr "Raberweter"
 
-#: services/magnatune/MagnatuneStore.cpp:229
+#: services/magnatune/MagnatuneStore.cpp:232
 msgid "Update Database"
 msgstr "Mete a djoû båze di dnêyes"
 
-#: services/magnatune/MagnatuneStore.cpp:232
+#: services/magnatune/MagnatuneStore.cpp:235
 msgid "Tools"
 msgstr "Usteyes"
 
-#: services/magnatune/MagnatuneStore.cpp:252
+#: services/magnatune/MagnatuneStore.cpp:255
 msgid "Download Album"
 msgstr "Aberweter albom"
 
-#: services/magnatune/MagnatuneStore.cpp:254
+#: services/magnatune/MagnatuneStore.cpp:257
 msgid "Purchase Album"
 msgstr "Atchter albom"
 
-#: services/magnatune/MagnatuneStore.cpp:291
+#: services/magnatune/MagnatuneStore.cpp:294
 msgid "Downloading Magnatune.com Database"
 msgstr "Dj' aberwete li båze di dnêyes di Magnatune.com"
 
-#: services/magnatune/MagnatuneStore.cpp:322
+#: services/magnatune/MagnatuneStore.cpp:325
 msgid "Updating the local Magnatune database."
 msgstr "Dji met a djoû li båze di dnêyes di Magnatune."
 
-#: services/magnatune/MagnatuneStore.cpp:607
+#: services/magnatune/MagnatuneStore.cpp:622
 #, c-format
 msgid ""
 "The Magnatune.com service accepts the following messages: \n"
@@ -7322,23 +7371,23 @@ msgstr ""
 "avou l' umeur sipecifieye el djivêye a djouwer. L' årgumint d' umeur (mood) "
 "doet awè des espåces schapés avou %%20"
 
-#: services/magnatune/MagnatuneStore.cpp:618
+#: services/magnatune/MagnatuneStore.cpp:633
 msgid "ERROR: No arguments supplied"
 msgstr "AROKE: Nol årgumint dné"
 
-#: services/magnatune/MagnatuneStore.cpp:623
+#: services/magnatune/MagnatuneStore.cpp:638
 msgid "ERROR: Wrong number of arguments for addMoodyTracks"
 msgstr "AROKE: Mwais limero ou årgumins po addMoodyTracks"
 
-#: services/magnatune/MagnatuneStore.cpp:633
+#: services/magnatune/MagnatuneStore.cpp:648
 msgid "ERROR: Parse error for argument 2 ( count )"
 msgstr "AROKE: Aroke d' analijhe del sintake pol årgumint 2 ( contaedje )"
 
-#: services/magnatune/MagnatuneStore.cpp:637
+#: services/magnatune/MagnatuneStore.cpp:652
 msgid "ok"
 msgstr "i va"
 
-#: services/magnatune/MagnatuneStore.cpp:640
+#: services/magnatune/MagnatuneStore.cpp:655
 msgid "ERROR: Unknown argument."
 msgstr "AROKE: Årgumint nén cnoxhou."
 
@@ -8166,22 +8215,22 @@ msgstr "Fé ene rimåke po cist årtisse"
 msgid "Add Position Marker"
 msgstr "Radjouter markeu d' eplaeçmint"
 
-#: amarokurls/NavigationUrlGenerator.cpp:227
+#: amarokurls/NavigationUrlGenerator.cpp:148
 #, kde-format
 msgid "Album \"%1\" from %2"
 msgstr "Albom «%1» di %2"
 
-#: amarokurls/NavigationUrlGenerator.cpp:229
+#: amarokurls/NavigationUrlGenerator.cpp:150
 #, kde-format
 msgid "Album \"%1\""
 msgstr "Albom «%1»"
 
-#: amarokurls/NavigationUrlGenerator.cpp:279
+#: amarokurls/NavigationUrlGenerator.cpp:200
 #, kde-format
 msgid "Artist \"%1\" from %2"
 msgstr "Årtisse «%1» di %2"
 
-#: amarokurls/NavigationUrlGenerator.cpp:281
+#: amarokurls/NavigationUrlGenerator.cpp:202
 #, kde-format
 msgid "Artist \"%1\""
 msgstr "Årtisse «%1»"
@@ -8255,11 +8304,11 @@ msgstr "Èn mostrer ki çki corespond"
 msgid "Search Preferences"
 msgstr "Preferinces do cweraedje"
 
-#: widgets/SearchWidget.cpp:65
+#: widgets/SearchWidget.cpp:67
 msgid "Enter space-separated terms to search."
 msgstr "Tapez des mots metous a pårt avou ds espåces po cweri."
 
-#: widgets/SearchWidget.cpp:75 widgets/SearchWidget.cpp:109
+#: widgets/SearchWidget.cpp:77 widgets/SearchWidget.cpp:111
 msgid "Edit filter"
 msgstr "Candjî passete"
 
