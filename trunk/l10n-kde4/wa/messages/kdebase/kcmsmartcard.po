@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmsmartcard\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-07-23 07:08+0200\n"
+"POT-Creation-Date: 2009-07-24 06:16+0200\n"
 "PO-Revision-Date: 2008-07-06 16:10+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -18,31 +18,52 @@ msgstr ""
 
 #. i18n: file: nosmartcardbase.ui:24
 #. i18n: ectx: property (text), widget (QLabel)
-#: rc.cpp:3 rc.cpp:53
+#: rc.cpp:3 rc.cpp:59
 msgid "<b>Unable to contact the KDE smartcard service.</b>"
 msgstr "<b>Dji n' a sepou contacter l' siervice di smartcard di KDE.</b>"
 
 #. i18n: file: nosmartcardbase.ui:35
 #. i18n: ectx: property (title), widget (QGroupBox)
-#: rc.cpp:6 rc.cpp:56
+#: rc.cpp:6 rc.cpp:62
 msgid "Possible Reasons"
 msgstr "Possibès råjhons"
 
+#. i18n: file: nosmartcardbase.ui:49
+#. i18n: ectx: property (text), widget (QLabel)
+#: rc.cpp:9 rc.cpp:65
+msgid ""
+"\n"
+"1) The KDE daemon, 'kded' is not running. You can restart it by running the "
+"command 'kdeinit' and then try reloading the KDE Control Center to see if "
+"this message goes away.\n"
+"\n"
+"2) You do not appear to have smartcard support in the KDE libraries. You "
+"will need to recompile the kdelibs package with libpcsclite installed."
+msgstr ""
+"\n"
+"1) Li démon KDE, « kded » n' est nén enondé. Vos l' polz renonder en enondant "
+"l' comande « kdeinit » ey adon sayî d' ritcherdjî les Apontiaedjes do "
+"sistinme di KDE po vey si ç' messaedje eva.\n"
+"\n"
+"2) Vos n' avizez nén aveur di sopoirt pol simartcard ezès livreyes di KDE. "
+"Voz alez aveur dandjî d' ricopiler l' pacaedje kdelibs avou libpcsclite "
+"astalé."
+
 #. i18n: file: smartcardbase.ui:31
 #. i18n: ectx: attribute (title), widget (QWidget)
-#: rc.cpp:9 rc.cpp:59
+#: rc.cpp:15 rc.cpp:71
 msgid "Smartcard Support"
 msgstr "Sopoirt del simartcard"
 
 #. i18n: file: smartcardbase.ui:42
 #. i18n: ectx: property (text), widget (QCheckBox)
-#: rc.cpp:12 rc.cpp:62
+#: rc.cpp:18 rc.cpp:74
 msgid "&Enable smartcard support"
 msgstr "&Mete en alaedje li sopoirt del simartcard"
 
 #. i18n: file: smartcardbase.ui:61
 #. i18n: ectx: property (text), widget (QCheckBox)
-#: rc.cpp:15 rc.cpp:65
+#: rc.cpp:21 rc.cpp:77
 msgid "Enable &polling to autodetect card events"
 msgstr ""
 "Mete en alaedje li &saye di cweraedje pol deteccion otomatike des evenmints "
@@ -50,7 +71,7 @@ msgstr ""
 
 #. i18n: file: smartcardbase.ui:64
 #. i18n: ectx: property (whatsThis), widget (QCheckBox)
-#: rc.cpp:18 rc.cpp:68
+#: rc.cpp:24 rc.cpp:80
 msgid ""
 "In most cases you should have this enabled. It allows KDE to automatically "
 "detect card insertion and reader hotplug events."
@@ -61,7 +82,7 @@ msgstr ""
 
 #. i18n: file: smartcardbase.ui:92
 #. i18n: ectx: property (text), widget (QCheckBox)
-#: rc.cpp:21 rc.cpp:71
+#: rc.cpp:27 rc.cpp:83
 msgid "Automatically &launch card manager if inserted card is unclaimed"
 msgstr ""
 "&Enonder otomaticmint l' manaedjeu d' cwåte si ene cwåte intrêye n' est nén "
@@ -69,7 +90,7 @@ msgstr ""
 
 #. i18n: file: smartcardbase.ui:95
 #. i18n: ectx: property (whatsThis), widget (QCheckBox)
-#: rc.cpp:24 rc.cpp:74
+#: rc.cpp:30 rc.cpp:86
 msgid ""
 "When you insert a smartcard, KDE can automatically launch a management tool "
 "if no other application attempts to use the card."
@@ -77,60 +98,60 @@ msgstr ""
 
 #. i18n: file: smartcardbase.ui:106
 #. i18n: ectx: property (text), widget (QCheckBox)
-#: rc.cpp:27 rc.cpp:77
+#: rc.cpp:33 rc.cpp:89
 msgid "&Beep on card insert and removal"
 msgstr "&Xhufler cwand on intere ou oistêye ene cwåte"
 
 #. i18n: file: smartcardbase.ui:135
 #. i18n: ectx: attribute (title), widget (QWidget)
-#: rc.cpp:30 rc.cpp:80
+#: rc.cpp:36 rc.cpp:92
 msgid "Readers"
 msgstr "Lijheus"
 
 #. i18n: file: smartcardbase.ui:152
 #. i18n: ectx: property (text), widget (K3ListView)
-#: rc.cpp:33 rc.cpp:83
+#: rc.cpp:39 rc.cpp:95
 msgid "Reader"
 msgstr "Lijheu"
 
 #. i18n: file: smartcardbase.ui:163
 #. i18n: ectx: property (text), widget (K3ListView)
-#: rc.cpp:36 rc.cpp:86
+#: rc.cpp:42 rc.cpp:98
 msgid "Type"
 msgstr "Sôre"
 
 #. i18n: file: smartcardbase.ui:174
 #. i18n: ectx: property (text), widget (K3ListView)
-#: rc.cpp:39 rc.cpp:89
+#: rc.cpp:45 rc.cpp:101
 msgid "Subtype"
 msgstr "Sorsôre"
 
 #. i18n: file: smartcardbase.ui:185
 #. i18n: ectx: property (text), widget (K3ListView)
-#: rc.cpp:42 rc.cpp:92
+#: rc.cpp:48 rc.cpp:104
 msgid "SubSubtype"
 msgstr "Sorsorsôre"
 
 #. i18n: file: smartcardbase.ui:228
 #. i18n: ectx: property (title), widget (QGroupBox)
-#: rc.cpp:45 rc.cpp:95
+#: rc.cpp:51 rc.cpp:107
 msgid "PCSCLite Configuration"
 msgstr "Apontiaedje di PCSCLite"
 
 #. i18n: file: smartcardbase.ui:251
 #. i18n: ectx: property (text), widget (QLabel)
-#: rc.cpp:48 rc.cpp:98
+#: rc.cpp:54 rc.cpp:110
 msgid ""
 "To add new readers you have to modify /etc/readers.conf file and re-start "
 "pcscd"
 msgstr ""
 
-#: rc.cpp:49
+#: rc.cpp:55
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Djan Cayron"
 
-#: rc.cpp:50
+#: rc.cpp:56
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "jean.cayron@gmail.com"
@@ -189,21 +210,3 @@ msgid ""
 "smartcards. These can be used for various tasks such as storing SSL "
 "certificates and logging in to the system."
 msgstr ""
-
-#~ msgid ""
-#~ "\n"
-#~ "1) The KDE daemon, 'kded' is not running. You can restart it by running "
-#~ "the command 'kdeinit' and then try reloading the KDE Control Center to "
-#~ "see if this message goes away.\n"
-#~ "\n"
-#~ "2) You do not appear to have smartcard support in the KDE libraries. You "
-#~ "will need to recompile the kdelibs package with libpcsclite installed."
-#~ msgstr ""
-#~ "\n"
-#~ "1) Li démon KDE, « kded » n' est nén enondé. Vos l' polz renonder en "
-#~ "enondant l' comande « kdeinit » ey adon sayî d' ritcherdjî les "
-#~ "Apontiaedjes do sistinme di KDE po vey si ç' messaedje eva.\n"
-#~ "\n"
-#~ "2) Vos n' avizez nén aveur di sopoirt pol simartcard ezès livreyes di "
-#~ "KDE. Voz alez aveur dandjî d' ricopiler l' pacaedje kdelibs avou "
-#~ "libpcsclite astalé."
