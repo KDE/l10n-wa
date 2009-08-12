@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: marble_qt\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-11 06:43+0200\n"
+"POT-Creation-Date: 2009-08-12 07:20+0200\n"
 "PO-Revision-Date: 2008-12-29 17:13+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -256,7 +256,7 @@ msgstr "Åk n' a nén stî come dji sayîve di schaper l' fitchî.\n"
 
 #: src/QtMainWindow.cpp:554
 #: src/plugins/render/fileview/FileViewFloatItem.cpp:229
-#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:193
+#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:228
 msgid "Open File"
 msgstr "Drovi fitchî"
 
@@ -887,32 +887,42 @@ msgctxt "air pressure falls"
 msgid "falling"
 msgstr ""
 
-#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:65
+#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:74
 #, fuzzy
 #| msgid "Stars Plugin"
 msgid "OSM Annotation Plugin"
 msgstr "Tchôke-divins Stoeles"
 
-#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:70
+#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:79
 msgid "&OSM Annotation Plugin"
 msgstr ""
 
-#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:80
+#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:89
 msgid "This is a render and interaciton plugin used for annotating OSM data."
 msgstr ""
 
-#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:195
+#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:230
 msgid "All Supported Files (*.osm);;Open Street Map Data (*.osm)"
 msgstr ""
 
-#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:248
-#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:455
+#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:252
+msgid "Please select an area before trying to download an OSM file"
+msgstr ""
+
+#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:275
+msgid ""
+"One of the selection points is not on the Globe. Please only select a region "
+"on the globe"
+msgstr ""
+
+#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:324
+#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:566
 #, fuzzy
 #| msgid "Stars Plugin"
 msgid "Save Annotation File"
 msgstr "Tchôke-divins Stoeles"
 
-#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:250
+#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:326
 #, fuzzy
 #| msgid ""
 #| "All Supported Files (*.gpx *.kml);;GPS Data (*.gpx);;Google Earth KML (*."
@@ -922,13 +932,13 @@ msgstr ""
 "Tos les fitchîs sopoirtés (*.gpx *.kml);;dinêyes GPS (*.gpx);;KML di Google "
 "Earth (*.kml)"
 
-#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:273
+#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:349
 #, fuzzy
 #| msgid "Stars Plugin"
 msgid "Open Annotation File"
 msgstr "Tchôke-divins Stoeles"
 
-#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:275
+#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:351
 #, fuzzy
 #| msgid ""
 #| "All Supported Files (*.gpx *.kml);;GPS Data (*.gpx);;Google Earth KML (*."
@@ -938,28 +948,42 @@ msgstr ""
 "Tos les fitchîs sopoirtés (*.gpx *.kml);;dinêyes GPS (*.gpx);;KML di Google "
 "Earth (*.kml)"
 
-#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:436
+#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:547
 #, fuzzy
 #| msgid "Placemarks Plugin"
 msgid "Add Placemark"
 msgstr "Tchôke-divins des Markes di plaeces"
 
-#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:444
+#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:555
 msgid "Draw Polygon"
 msgstr ""
 
-#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:450
+#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:561
 msgid "Load Osm File"
 msgstr ""
 
-#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:460
+#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:571
 #, fuzzy
 #| msgid "Stars Plugin"
 msgid "Load Annotation File"
 msgstr "Tchôke-divins Stoeles"
 
-#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:470
+#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:581
 msgid "Enable Marble Input"
+msgstr ""
+
+#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:589
+msgid "Select Map Area"
+msgstr ""
+
+#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:596
+#, fuzzy
+#| msgid "Download failed: %1."
+msgid "Download Osm File"
+msgstr "L' aberwetaedje a fwait berwete : %1."
+
+#: src/plugins/render/osmannotate/OsmAnnotatePlugin.cpp:597
+msgid "Download Osm File for selected area"
 msgstr ""
 
 #: src/plugins/render/osmannotate/TextEditor.cpp:47
@@ -1791,11 +1815,6 @@ msgstr ""
 #~ msgstr "L' aberwetaedje a fni."
 
 #~ msgid "Download failed: %1."
-#~ msgstr "L' aberwetaedje a fwait berwete : %1."
-
-#, fuzzy
-#~| msgid "Download failed: %1."
-#~ msgid "Download failed."
 #~ msgstr "L' aberwetaedje a fwait berwete : %1."
 
 #, fuzzy
