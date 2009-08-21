@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-08-20 06:17+0200\n"
+"POT-Creation-Date: 2009-08-21 06:05+0200\n"
 "PO-Revision-Date: 2009-08-20 10:18+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -318,7 +318,7 @@ msgid "Type of estimate"
 msgstr "Sôre d' avirance"
 
 #: kernel/kptglobal.cpp:83
-msgid "The calendar used when estimate type is Length"
+msgid "The calendar used when estimate type is Duration"
 msgstr ""
 
 #: kernel/kptglobal.cpp:84
@@ -547,7 +547,7 @@ msgstr "Nole rissource acoirdêye"
 msgid "Cannot fullfill constraints"
 msgstr "Dji n' sai passer les stronnas"
 
-#: kernel/kptnode.cpp:122 kernel/kptnode.cpp:1439 kernel/kpttask.cpp:3415
+#: kernel/kptnode.cpp:122 kernel/kptnode.cpp:1438 kernel/kpttask.cpp:3372
 #: models/kptnodeitemmodel.cpp:280 models/kptnodeitemmodel.cpp:285
 #: models/kptnodeitemmodel.cpp:295 models/kptnodeitemmodel.cpp:453
 #: models/kptnodeitemmodel.cpp:459 models/kptnodeitemmodel.cpp:469
@@ -625,20 +625,15 @@ msgstr "Tins ewal inte les deus"
 msgid "Effort"
 msgstr "Efoirt"
 
-#: kernel/kptnode.cpp:1407
-#, fuzzy
-msgid "FixedDuration"
+#: kernel/kptnode.cpp:1407 models/kptnodeitemmodel.cpp:1722
+msgid "Duration"
 msgstr "Durêye"
 
-#: kernel/kptnode.cpp:1408
-msgid "Length"
-msgstr "Longueur"
-
-#: kernel/kptnode.cpp:1440
+#: kernel/kptnode.cpp:1439
 msgid "Low"
 msgstr "Bas"
 
-#: kernel/kptnode.cpp:1441
+#: kernel/kptnode.cpp:1440
 msgid "High"
 msgstr "Hôt"
 
@@ -860,70 +855,70 @@ msgstr "Aroke:"
 msgid "Baselined"
 msgstr "Referince"
 
-#: kernel/kpttask.cpp:999
+#: kernel/kpttask.cpp:997
 msgid "Calculate early finish "
 msgstr "Cårculer finixhaedje timpe"
 
-#: kernel/kpttask.cpp:1026 kernel/kpttask.cpp:1043 kernel/kpttask.cpp:1057
-#: kernel/kpttask.cpp:1079 kernel/kpttask.cpp:1086 kernel/kpttask.cpp:1093
-#: kernel/kpttask.cpp:1100 kernel/kpttask.cpp:1219 kernel/kpttask.cpp:1237
-#: kernel/kpttask.cpp:1252
+#: kernel/kpttask.cpp:1024 kernel/kpttask.cpp:1041 kernel/kpttask.cpp:1055
+#: kernel/kpttask.cpp:1077 kernel/kpttask.cpp:1084 kernel/kpttask.cpp:1091
+#: kernel/kpttask.cpp:1098 kernel/kpttask.cpp:1217 kernel/kpttask.cpp:1235
+#: kernel/kpttask.cpp:1250
 #, kde-format
 msgctxt "1=type of constraint"
 msgid "%1: Failed to meet constraint"
 msgstr "%1: Li passaedje do stronna a fwait berwete"
 
-#: kernel/kpttask.cpp:1118 kernel/kpttask.cpp:1305 kernel/kpttask.cpp:1660
-#: kernel/kpttask.cpp:2019
+#: kernel/kpttask.cpp:1116 kernel/kpttask.cpp:1303 kernel/kpttask.cpp:1654
+#: kernel/kpttask.cpp:1978
 #, kde-format
 msgid "Resource %1 booked from %2 to %3"
 msgstr "Rissource %1 rezervé di %2 a %3"
 
-#: kernel/kpttask.cpp:1120
+#: kernel/kpttask.cpp:1118
 #, kde-format
 msgid "Early finish calculated: %1"
 msgstr "Timpe finixhaedje cårculé: %1"
 
-#: kernel/kpttask.cpp:1193
+#: kernel/kpttask.cpp:1191
 #, fuzzy
 msgid "Calculate late start"
 msgstr "Cårculer"
 
-#: kernel/kpttask.cpp:1307
+#: kernel/kpttask.cpp:1305
 #, kde-format
 msgid "Late start calculated: %1"
 msgstr "Tård cominçmint cårculé: %1"
 
-#: kernel/kpttask.cpp:1383
+#: kernel/kpttask.cpp:1381
 #, kde-format
 msgid "Schedule from start %1"
 msgstr "Programer a pårti do cominçmint %1"
 
-#: kernel/kpttask.cpp:1456 kernel/kpttask.cpp:1480 kernel/kpttask.cpp:1506
-#: kernel/kpttask.cpp:1534 kernel/kpttask.cpp:1552 kernel/kpttask.cpp:1594
-#: kernel/kpttask.cpp:1610 kernel/kpttask.cpp:1623 kernel/kpttask.cpp:1637
-#: kernel/kpttask.cpp:1819 kernel/kpttask.cpp:1842 kernel/kpttask.cpp:1868
-#: kernel/kpttask.cpp:1891 kernel/kpttask.cpp:1914 kernel/kpttask.cpp:1957
-#: kernel/kpttask.cpp:1969 kernel/kpttask.cpp:1985 kernel/kpttask.cpp:1998
+#: kernel/kpttask.cpp:1450 kernel/kpttask.cpp:1474 kernel/kpttask.cpp:1500
+#: kernel/kpttask.cpp:1528 kernel/kpttask.cpp:1546 kernel/kpttask.cpp:1588
+#: kernel/kpttask.cpp:1604 kernel/kpttask.cpp:1617 kernel/kpttask.cpp:1631
+#: kernel/kpttask.cpp:1799 kernel/kpttask.cpp:1818 kernel/kpttask.cpp:1840
+#: kernel/kpttask.cpp:1859 kernel/kpttask.cpp:1878 kernel/kpttask.cpp:1916
+#: kernel/kpttask.cpp:1928 kernel/kpttask.cpp:1944 kernel/kpttask.cpp:1957
 #, kde-format
 msgctxt "1=type of constraint"
 msgid "%1: Failed to meet constraint. Negative float=%2"
 msgstr "%1: Li passaedje do stronna a fwait berwete. Flotant negatif=%2"
 
-#: kernel/kpttask.cpp:1663 kernel/kpttask.cpp:2022
+#: kernel/kpttask.cpp:1657 kernel/kpttask.cpp:1981
 msgid "Starting earlier than early start"
 msgstr "Cominçmint pus timpe kel timpe cominçmint"
 
-#: kernel/kpttask.cpp:1666 kernel/kpttask.cpp:2025
+#: kernel/kpttask.cpp:1660 kernel/kpttask.cpp:1984
 msgid "Finishing later than late finish"
 msgstr "Finixhaedje pus tård kel tårdfinixhaedje"
 
-#: kernel/kpttask.cpp:1668 kernel/kpttask.cpp:2027
+#: kernel/kpttask.cpp:1662 kernel/kpttask.cpp:1986
 #, fuzzy, kde-format
 msgid "Scheduled: %1 to %2"
 msgstr "Programaedje:"
 
-#: kernel/kpttask.cpp:1759
+#: kernel/kpttask.cpp:1751
 #, kde-format
 msgctxt "1=type of constraint"
 msgid "%1: Failed to schedule within late finish. Negative float=%2"
@@ -931,7 +926,7 @@ msgstr ""
 "%1: Li programaedje divant l' tård finixhaedje a fwait berwete. Flotant "
 "negatif=%2"
 
-#: kernel/kpttask.cpp:1763
+#: kernel/kpttask.cpp:1755
 #, kde-format
 msgctxt "1=type of constraint"
 msgid "%1: Failed to schedule within successors start time"
@@ -939,7 +934,7 @@ msgstr ""
 "%1: Li programaedje divant l' tins d' enondaedje do ci d' après a fwait "
 "berwete"
 
-#: kernel/kpttask.cpp:1794 kernel/kpttask.cpp:1939
+#: kernel/kpttask.cpp:1779 kernel/kpttask.cpp:1898
 #, kde-format
 msgctxt "1=type of constraint"
 msgid "%1: Failed to schedule after early start. Negative float=%2"
@@ -947,26 +942,22 @@ msgstr ""
 "%1: Li programaedje après l' timpe cominçmint a fwait berwete. Flotant "
 "negatif=%2 "
 
-#: kernel/kpttask.cpp:2016
+#: kernel/kpttask.cpp:1975
 msgid "Failed to schedule within project target time"
 msgstr "Li programaedje do pordjet divant l' date/eure såme a fwait berwete"
 
-#: kernel/kpttask.cpp:2119
-msgid "Estimate of type length has no calendar defined"
-msgstr "L' avirance del longueur del sôre n' a pont d' calindrî defini"
-
-#: kernel/kpttask.cpp:2233
+#: kernel/kpttask.cpp:2190
 #, kde-format
 msgid "Could not match work duration. Want: %1 got: %2"
 msgstr ""
 "Dji n' a savou fé coresponde li durêye d' ovraedje. Dji vout: %1, dj' a yeu: "
 "%2"
 
-#: kernel/kpttask.cpp:3418
+#: kernel/kpttask.cpp:3375
 msgid "Send"
 msgstr "Evoyî"
 
-#: kernel/kpttask.cpp:3421
+#: kernel/kpttask.cpp:3378
 #, fuzzy
 msgid "Receive"
 msgstr "Oister"
@@ -1449,10 +1440,10 @@ msgstr "Radjouter loyaedje"
 msgid "Estimate Type"
 msgstr "Avirance:"
 
-#: models/kptnodeitemmodel.cpp:1686
+#: models/kptnodeitemmodel.cpp:1686 models/kptresourcemodel.cpp:365
 #, fuzzy
-msgid "Estimate Calendar"
-msgstr "Candjî calindrî"
+msgid "Calendar"
+msgstr "Radjouter calindrî"
 
 #: models/kptnodeitemmodel.cpp:1687
 #, fuzzy
@@ -1561,10 +1552,6 @@ msgstr "Fini-Ataker"
 #: models/kptnodeitemmodel.cpp:1719
 msgid "Assigments"
 msgstr ""
-
-#: models/kptnodeitemmodel.cpp:1722
-msgid "Duration"
-msgstr "Durêye"
 
 #: models/kptnodeitemmodel.cpp:1723
 msgid "Variance (Dur)"
@@ -1973,11 +1960,6 @@ msgstr "Iniciåles:"
 #: models/kptresourcemodel.cpp:364
 msgid "Email"
 msgstr "Emile"
-
-#: models/kptresourcemodel.cpp:365
-#, fuzzy
-msgid "Calendar"
-msgstr "Radjouter calindrî"
 
 #: models/kptresourcemodel.cpp:366
 msgid "Limit (%)"
@@ -2680,45 +2662,59 @@ msgstr "Controle do pacaedje d' ovraedje"
 msgid "Send To..."
 msgstr "Emiler a..."
 
-msgid "ForInformation"
-msgstr "Pos informåcion"
+#, fuzzy
+#~ msgid "FixedDuration"
+#~ msgstr "Durêye"
 
-msgid "Cancel"
-msgstr "Rinoncî"
+#~ msgid "Length"
+#~ msgstr "Longueur"
 
-msgid "Accepted"
-msgstr "Accepté"
-
-msgid "Tentative"
-msgstr "Esprouve"
-
-msgid "Refused"
-msgstr "Rifuzé"
+#~ msgid "Estimate of type length has no calendar defined"
+#~ msgstr "L' avirance del longueur del sôre n' a pont d' calindrî defini"
 
 #, fuzzy
-msgid "Execute"
-msgstr "Ratindou "
+#~ msgid "Estimate Calendar"
+#~ msgstr "Candjî calindrî"
 
-msgid "E-mail"
-msgstr "Emile"
+#~ msgid "ForInformation"
+#~ msgstr "Pos informåcion"
 
-msgid "Previous year"
-msgstr "Anêye di dvant"
+#~ msgid "Cancel"
+#~ msgstr "Rinoncî"
 
-msgid "Next month"
-msgstr "Moes shuvant"
+#~ msgid "Accepted"
+#~ msgstr "Accepté"
 
-msgid "Select a week"
-msgstr "Tchoezi ene samwinne"
+#~ msgid "Tentative"
+#~ msgstr "Esprouve"
 
-msgid "Select a month"
-msgstr "Tchoezi on moes"
+#~ msgid "Refused"
+#~ msgstr "Rifuzé"
 
-msgid "Select a year"
-msgstr "Tchoezi ene anêye"
+#, fuzzy
+#~ msgid "Execute"
+#~ msgstr "Ratindou "
 
-msgid "Select the current day"
-msgstr "Tchoezi l' djoû d' ouy"
+#~ msgid "E-mail"
+#~ msgstr "Emile"
+
+#~ msgid "Previous year"
+#~ msgstr "Anêye di dvant"
+
+#~ msgid "Next month"
+#~ msgstr "Moes shuvant"
+
+#~ msgid "Select a week"
+#~ msgstr "Tchoezi ene samwinne"
+
+#~ msgid "Select a month"
+#~ msgstr "Tchoezi on moes"
+
+#~ msgid "Select a year"
+#~ msgstr "Tchoezi ene anêye"
+
+#~ msgid "Select the current day"
+#~ msgstr "Tchoezi l' djoû d' ouy"
 
 #, fuzzy
 #~ msgid "Next year"
