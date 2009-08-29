@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-08-27 07:20+0200\n"
+"POT-Creation-Date: 2009-08-29 07:29+0200\n"
 "PO-Revision-Date: 2009-04-28 21:14+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -61,7 +61,7 @@ msgstr "Rawete"
 msgid "&Add"
 msgstr "R&adjouter"
 
-#: main/KoVersionDialog.cpp:76 widgets/openpane/KoTemplateCreateDia.cpp:156
+#: main/KoVersionDialog.cpp:76 main/KoTemplateCreateDia.cpp:156
 msgid "&Remove"
 msgstr "&Oister"
 
@@ -82,9 +82,34 @@ msgstr "Dji n' a savou radjouter ene novele modêye"
 msgid "Date: %1"
 msgstr "Date: %1"
 
-#: main/KoColorDocker.cpp:32
-msgid "Color Chooser"
-msgstr "Tchoezixheu di coleur"
+#: main/KoRecentDocumentsPane.cpp:75
+msgid "Open This Document"
+msgstr "Drovi c' documint"
+
+#: main/KoRecentDocumentsPane.cpp:148
+#, kde-format
+msgctxt "File modification date and time. %1 is date time"
+msgid "<tr><td><b>Modified:</b></td><td>%1</td></tr>"
+msgstr "<tr><td><b>Candjî:</b></td><td>%1</td></tr>"
+
+#: main/KoRecentDocumentsPane.cpp:151
+#, kde-format
+msgctxt "File access date and time. %1 is date time"
+msgid "<tr><td><b>Accessed:</b></td><td>%1</td></tr>"
+msgstr "<tr><td><b>Eployî:</b></td><td>%1</td></tr>"
+
+#: main/KoDocumentSectionDelegate.cpp:485
+#, kde-format
+msgid "%1 %"
+msgstr "%1 %"
+
+#: main/KoDocumentSectionToolTip.cpp:50
+msgid "Yes"
+msgstr "Oyi"
+
+#: main/KoDocumentSectionToolTip.cpp:50
+msgid "No"
+msgstr "Neni"
 
 #: main/KoFilterManager.cpp:223 main/KoFilterManager.cpp:232
 msgid "Could not export file."
@@ -110,6 +135,11 @@ msgstr "Passete d' abagaedje mancante"
 #: main/KoView.cpp:433
 msgid "&New View"
 msgstr "&Novele vuwe"
+
+#: main/KoExistingDocumentPane.cpp:45 main/KoMainWindow.cpp:1182
+#: main/KoOpenPane.cpp:356 main/KoOpenPane.cpp:360
+msgid "Open Document"
+msgstr "Drovi on documint"
 
 #: main/KoFilterManager_p.cpp:43
 msgid "Choose Filter"
@@ -261,6 +291,10 @@ msgstr ""
 "<qt>Li documint a stî candjî dispoy k' il  a stî drovou. Po fini l' "
 "ecriptaedje i fåt schaper l' documint.<p>Voloz vs schaper l' documint sol "
 "côp ?<qt>"
+
+#: main/KoTemplatesPane.cpp:47
+msgid "Use This Template"
+msgstr "Si siervi di c' modele ci"
 
 #: main/KoPrintingDialog.cpp:140 main/KoPrintingDialog.cpp:326
 #, kde-format
@@ -670,6 +704,98 @@ msgstr "on dessin"
 msgid "Embedding Object"
 msgstr "Ravalaedje d' objet"
 
+#: main/KoTemplateCreateDia.cpp:117
+msgid "Create Template"
+msgstr "Ahiver on modele"
+
+#. i18n: file: main/koDocumentInfoAuthorWidget.ui:16
+#. i18n: ectx: property (text), widget (QLabel, fullNameLabel)
+#: main/KoTemplateCreateDia.cpp:127 rc.cpp:56
+msgid "Name:"
+msgstr "No:"
+
+#: main/KoTemplateCreateDia.cpp:138
+msgid "Group:"
+msgstr "Hopea:"
+
+#: main/KoTemplateCreateDia.cpp:153
+msgid "&Add Group..."
+msgstr "&Radjouter on hopea..."
+
+#: main/KoTemplateCreateDia.cpp:162
+msgid "Picture"
+msgstr "Imådje"
+
+#: main/KoTemplateCreateDia.cpp:169
+msgid "&Default"
+msgstr "&Prémetou"
+
+#: main/KoTemplateCreateDia.cpp:175
+msgid "Custom"
+msgstr "A vosse môde"
+
+#: main/KoTemplateCreateDia.cpp:179
+msgid "&Select..."
+msgstr "&Tchoezi..."
+
+#: main/KoTemplateCreateDia.cpp:184
+msgid "Preview:"
+msgstr "Prévoeyaedje:"
+
+#: main/KoTemplateCreateDia.cpp:194
+msgid "Use the new template as default"
+msgstr "Si siervi do novea modele come prémetou"
+
+#: main/KoTemplateCreateDia.cpp:196
+#, kde-format
+msgid "Use the new template every time %1 starts"
+msgstr "Si siervi do novea modele a tchaeke côp k' %1 enonde"
+
+#: main/KoTemplateCreateDia.cpp:306
+#, kde-format
+msgid "Do you really want to overwrite the existing '%1' template?"
+msgstr "Voloz po do bon spotchî li modele '%1' k' egzistêye dedja?"
+
+#: main/KoTemplateCreateDia.cpp:420 main/KoTemplateCreateDia.cpp:426
+msgid "Add Group"
+msgstr "Radjouter on hopea"
+
+#: main/KoTemplateCreateDia.cpp:420
+msgid "Enter group name:"
+msgstr "Tapez li no do hopea:"
+
+#: main/KoTemplateCreateDia.cpp:426
+msgid "This name is already used."
+msgstr "Ci no la est ddja eployî."
+
+#: main/KoTemplateCreateDia.cpp:450
+msgid "Do you really want to remove that group?"
+msgstr "Voloz vs po do bon oister ci hopea la?"
+
+#: main/KoTemplateCreateDia.cpp:451
+msgid "Remove Group"
+msgstr "Oister hopea"
+
+#: main/KoTemplateCreateDia.cpp:453
+msgid "Do you really want to remove that template?"
+msgstr "Voloz vs po do bon oister ci modele la?"
+
+#: main/KoTemplateCreateDia.cpp:454
+msgid "Remove Template"
+msgstr "Oister li modele"
+
+#: main/KoTemplateCreateDia.cpp:458
+msgid "&Delete"
+msgstr "&Disfacer"
+
+#: main/KoTemplateCreateDia.cpp:505
+msgid "Could not load picture."
+msgstr "Dji n' a savou tcherdjî l' imådje"
+
+#: main/KoTemplateCreateDia.cpp:508
+msgid "No picture available."
+msgstr "Dji n' a nole imådje por vos"
+
 #: main/KoApplicationAdaptor.cpp:50
 #, kde-format
 msgid "Unknown KOffice MimeType %1. Check your installation."
@@ -811,11 +937,6 @@ msgstr ""
 msgid "Warning"
 msgstr "Adviertixhmint"
 
-#: main/KoMainWindow.cpp:1182 widgets/openpane/KoExistingDocumentPane.cpp:45
-#: widgets/openpane/KoOpenPane.cpp:356 widgets/openpane/KoOpenPane.cpp:360
-msgid "Open Document"
-msgstr "Drovi on documint"
-
 #: main/KoMainWindow.cpp:1184 kopageapp/KoPAView.cpp:421
 msgid "Import Document"
 msgstr "Abaguer on documint"
@@ -850,6 +971,14 @@ msgid ""
 msgstr ""
 "Vos aloz piede tos les candjmints fwaits dispoy vosse dierin schapaedje\n"
 "Voloz tcheryî pus lon ?"
+
+#: main/KoOpenPane.cpp:190
+msgid "Recent Documents"
+msgstr "Documints d' enawaire"
+
+#: main/KoOpenPane.cpp:272
+msgid "Custom Document"
+msgstr "Documint a vosse môde"
 
 #: main/KoFileDialog.cpp:98
 #, kde-format
@@ -1419,7 +1548,7 @@ msgstr "Astaler pacaedje di scripe so fyis"
 #. i18n: file: widgets/colorwidgets/KoEditColorSet.ui:45
 #. i18n: ectx: property (toolTip), widget (QToolButton, add)
 #: kokross/KoScriptManagerAdd.cpp:272 kokross/KoScriptManagerAdd.cpp:275
-#: rc.cpp:323 pigment/compositeops/KoCompositeOpAdd.h:35
+#: rc.cpp:332 pigment/compositeops/KoCompositeOpAdd.h:35
 #: pigment/colorspaces/KoRgbU8ColorSpace.cc:91
 msgid "Add"
 msgstr "Radjouter"
@@ -1486,7 +1615,7 @@ msgstr "Disfacer"
 
 #. i18n: file: widgets/csvimportdialog/KoCsvImportDialog.ui:147
 #. i18n: ectx: attribute (title), widget (QWidget, m_formatTab)
-#: kotext/KoTextEditor.cpp:253 kotext/KoTextEditor.cpp:289 rc.cpp:191
+#: kotext/KoTextEditor.cpp:253 kotext/KoTextEditor.cpp:289 rc.cpp:200
 msgid "Format"
 msgstr "Cogne"
 
@@ -1923,7 +2052,7 @@ msgstr "Rawetes:"
 #. i18n: ectx: property (text), widget (QLabel, lblTypeDesc)
 #. i18n: file: flake/KoConnectionShapeConfigWidget.ui:19
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:29 rc.cpp:176
+#: rc.cpp:29 rc.cpp:185
 msgid "Type:"
 msgstr "Sôre :"
 
@@ -1968,12 +2097,6 @@ msgstr "Limero d' rivizion:"
 #: rc.cpp:50
 msgid "Encryption:"
 msgstr "Ecriptaedje:"
-
-#. i18n: file: main/koDocumentInfoAuthorWidget.ui:16
-#. i18n: ectx: property (text), widget (QLabel, fullNameLabel)
-#: rc.cpp:56 widgets/openpane/KoTemplateCreateDia.cpp:127
-msgid "Name:"
-msgstr "No:"
 
 #. i18n: file: main/koDocumentInfoAuthorWidget.ui:40
 #. i18n: ectx: property (text), widget (QLabel, lblInitialsDesc)
@@ -2053,51 +2176,69 @@ msgstr "&Tcherdjî a pårti do calpin d' adresses"
 msgid "&Delete Personal Data"
 msgstr "&Disfacer dinêyes da vosse"
 
+#. i18n: file: main/KoDetailsPaneBase.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, KoDetailsPaneBase)
+#: rc.cpp:101
+msgid "DetailsPaneBase"
+msgstr ""
+
+#. i18n: file: main/KoDetailsPaneBase.ui:102
+#. i18n: ectx: property (toolTip), widget (QCheckBox, m_alwaysUseCheckBox)
+#: rc.cpp:104
+msgid "Always use this template at application start up"
+msgstr "Tofer si siervi di c' modele ci a l' enondaedje do programe"
+
+#. i18n: file: main/KoDetailsPaneBase.ui:105
+#. i18n: ectx: property (text), widget (QCheckBox, m_alwaysUseCheckBox)
+#: rc.cpp:107
+msgid "Always use this template"
+msgstr "Tofer si siervi di c' modele ci"
+
 #. i18n: file: flake/SnapGuideConfigWidget.ui:36
 #. i18n: ectx: property (toolTip), widget (QCheckBox, nodeSnapGuide)
-#: rc.cpp:101
+#: rc.cpp:110
 msgid "Nodes"
 msgstr "Nuks"
 
 #. i18n: file: flake/SnapGuideConfigWidget.ui:56
 #. i18n: ectx: property (toolTip), widget (QCheckBox, extensionSnapGuide)
-#: rc.cpp:104
+#: rc.cpp:113
 msgid "Extension of lines"
 msgstr "Sitindaedje des royes"
 
 #. i18n: file: flake/SnapGuideConfigWidget.ui:76
 #. i18n: ectx: property (toolTip), widget (QCheckBox, boundingBoxSnapGuide)
-#: rc.cpp:107
+#: rc.cpp:116
 msgid "Bounding box of shape"
 msgstr "Ewalpaedje djeyometrike del cogne"
 
 #. i18n: file: flake/SnapGuideConfigWidget.ui:96
 #. i18n: ectx: property (toolTip), widget (QSpinBox, snapDistance)
-#: rc.cpp:110
+#: rc.cpp:119
 msgid "Proximity distance where snapping happens"
 msgstr "Li distance a costé d' ewou çki l' assaetchaedje magnetike si fwait"
 
 #. i18n: file: flake/SnapGuideConfigWidget.ui:99
 #. i18n: ectx: property (suffix), widget (QSpinBox, snapDistance)
-#: rc.cpp:113
+#: rc.cpp:122
 msgid " px"
 msgstr " px"
 
 #. i18n: file: flake/SnapGuideConfigWidget.ui:112
 #. i18n: ectx: property (toolTip), widget (QCheckBox, orthogonalSnapGuide)
-#: rc.cpp:116
+#: rc.cpp:125
 msgid "Orthogonal"
 msgstr "Ortogonå"
 
 #. i18n: file: flake/SnapGuideConfigWidget.ui:132
 #. i18n: ectx: property (toolTip), widget (QCheckBox, intersectionSnapGuide)
-#: rc.cpp:119
+#: rc.cpp:128
 msgid "Intersection of lines"
 msgstr "Croejhlåde des royes"
 
 #. i18n: file: flake/SnapGuideConfigWidget.ui:152
 #. i18n: ectx: property (toolTip), widget (QCheckBox, lineGuideSnapGuide)
-#: rc.cpp:122
+#: rc.cpp:131
 msgid "Guide lines"
 msgstr "Royes di moennaedje"
 
@@ -2135,117 +2276,117 @@ msgstr "Royes di moennaedje"
 #. i18n: ectx: property (text), widget (QToolButton, open)
 #. i18n: file: widgets/colorwidgets/KoEditColorSet.ui:78
 #. i18n: ectx: property (text), widget (QToolButton, save)
-#: rc.cpp:125 rc.cpp:128 rc.cpp:131 rc.cpp:134 rc.cpp:137 rc.cpp:140
-#: rc.cpp:143 rc.cpp:146 rc.cpp:149 rc.cpp:152 rc.cpp:155 rc.cpp:158
-#: rc.cpp:161 rc.cpp:326 rc.cpp:332 rc.cpp:338 rc.cpp:344
+#: rc.cpp:134 rc.cpp:137 rc.cpp:140 rc.cpp:143 rc.cpp:146 rc.cpp:149
+#: rc.cpp:152 rc.cpp:155 rc.cpp:158 rc.cpp:161 rc.cpp:164 rc.cpp:167
+#: rc.cpp:170 rc.cpp:335 rc.cpp:341 rc.cpp:347 rc.cpp:353
 msgid "..."
 msgstr "..."
 
 #. i18n: file: flake/tools/PathToolOptionWidgetBase.ui:169
 #. i18n: ectx: property (text), widget (QPushButton, convertToPath)
-#: rc.cpp:164
+#: rc.cpp:173
 msgid "Convert To Path"
 msgstr "Covierser e tchmin"
 
 #. i18n: file: flake/tools/KoZoomToolWidget.ui:16
 #. i18n: ectx: property (text), widget (QRadioButton, zoomInButton)
-#: rc.cpp:167
+#: rc.cpp:176
 msgid "Zoom In"
 msgstr "Zoumer"
 
 #. i18n: file: flake/tools/KoZoomToolWidget.ui:23
 #. i18n: ectx: property (text), widget (QRadioButton, zoomOutButton)
-#: rc.cpp:170
+#: rc.cpp:179
 msgid "Zoom Out"
 msgstr "Diszoumer"
 
 #. i18n: file: flake/KoConnectionShapeConfigWidget.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, KoConnectionShapeConfigWidget)
-#: rc.cpp:173
+#: rc.cpp:182
 msgid "Ellipse Shape"
 msgstr "Cogne e ceke asplati"
 
 #. i18n: file: widgets/csvimportdialog/KoCsvImportDialog.ui:52
 #. i18n: ectx: attribute (title), widget (QWidget, m_dataTab)
-#: rc.cpp:179
+#: rc.cpp:188
 msgid "Data"
 msgstr "Dinêyes"
 
 #. i18n: file: widgets/csvimportdialog/KoCsvImportDialog.ui:66
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
-#: rc.cpp:182
+#: rc.cpp:191
 msgid "E&ncoding:"
 msgstr "E&côdaedje:"
 
 #. i18n: file: widgets/csvimportdialog/KoCsvImportDialog.ui:110
 #. i18n: ectx: property (text), widget (QCheckBox, m_firstRowHeader)
-#: rc.cpp:185
+#: rc.cpp:194
 msgid "First row contains headers"
 msgstr "Les tiestires sont dins l' prumire roye"
 
 #. i18n: file: widgets/csvimportdialog/KoCsvImportDialog.ui:123
 #. i18n: ectx: property (text), widget (QCheckBox, m_firstColHeader)
-#: rc.cpp:188
+#: rc.cpp:197
 msgid "First column contains headers"
 msgstr "Les tiestires sont dins l' prumire colone"
 
 #. i18n: file: widgets/csvimportdialog/KoCsvImportDialog.ui:159
 #. i18n: ectx: property (title), widget (QGroupBox, m_delimiterBox)
-#: rc.cpp:194
+#: rc.cpp:203
 msgid "Delimiter"
 msgstr "Pårtixhant"
 
 #. i18n: file: widgets/csvimportdialog/KoCsvImportDialog.ui:165
 #. i18n: ectx: property (text), widget (QRadioButton, m_radioComma)
-#: rc.cpp:197
+#: rc.cpp:206
 msgid "Comma"
 msgstr "Coma"
 
 #. i18n: file: widgets/csvimportdialog/KoCsvImportDialog.ui:175
 #. i18n: ectx: property (text), widget (QRadioButton, m_radioSemicolon)
-#: rc.cpp:200
+#: rc.cpp:209
 msgid "Semicolon"
 msgstr "Dimey colone"
 
 #. i18n: file: widgets/csvimportdialog/KoCsvImportDialog.ui:182
 #. i18n: ectx: property (text), widget (QRadioButton, m_radioOther)
-#: rc.cpp:203
+#: rc.cpp:212
 msgid "Other"
 msgstr "Ôte"
 
 #. i18n: file: widgets/csvimportdialog/KoCsvImportDialog.ui:189
 #. i18n: ectx: property (text), widget (QRadioButton, m_radioTab)
-#: rc.cpp:206
+#: rc.cpp:215
 msgid "Tabulator"
 msgstr "Tabulåcion"
 
 #. i18n: file: widgets/csvimportdialog/KoCsvImportDialog.ui:196
 #. i18n: ectx: property (text), widget (QRadioButton, m_radioSpace)
-#: rc.cpp:209
+#: rc.cpp:218
 msgid "Space"
 msgstr "Espåce"
 
 #. i18n: file: widgets/csvimportdialog/KoCsvImportDialog.ui:241
 #. i18n: ectx: property (text), widget (QLabel, label2)
-#: rc.cpp:212
+#: rc.cpp:221
 msgid "Text&quote:"
 msgstr "D&ireye di tecse:"
 
 #. i18n: file: widgets/csvimportdialog/KoCsvImportDialog.ui:258
 #. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
-#: rc.cpp:215
+#: rc.cpp:224
 msgid "\""
 msgstr "«"
 
 #. i18n: file: widgets/csvimportdialog/KoCsvImportDialog.ui:263
 #. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
-#: rc.cpp:218
+#: rc.cpp:227
 msgid "'"
 msgstr "‘"
 
 #. i18n: file: widgets/csvimportdialog/KoCsvImportDialog.ui:268
 #. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
-#: rc.cpp:221 widgets/csvimportdialog/KoCsvImportDialog.cpp:221
+#: rc.cpp:230 widgets/csvimportdialog/KoCsvImportDialog.cpp:221
 #: widgets/csvimportdialog/KoCsvImportDialog.cpp:570
 #: widgets/csvimportdialog/KoCsvImportDialog.cpp:672
 msgid "None"
@@ -2253,49 +2394,49 @@ msgstr "Nole"
 
 #. i18n: file: widgets/csvimportdialog/KoCsvImportDialog.ui:292
 #. i18n: ectx: property (text), widget (QLabel, label3)
-#: rc.cpp:224
+#: rc.cpp:233
 msgid "Decimal symbol:"
 msgstr "Pont decimå:"
 
 #. i18n: file: widgets/csvimportdialog/KoCsvImportDialog.ui:321
 #. i18n: ectx: property (text), widget (QLabel, label4)
-#: rc.cpp:227
+#: rc.cpp:236
 msgid "Thousands separator:"
 msgstr "Separateu po les meye:"
 
 #. i18n: file: widgets/csvimportdialog/KoCsvImportDialog.ui:366
 #. i18n: ectx: property (text), widget (QCheckBox, m_ignoreDuplicates)
-#: rc.cpp:230
+#: rc.cpp:239
 msgid "Ignore duplicate delimiters"
 msgstr "Passer houte les pårtixhant e dobe"
 
 #. i18n: file: widgets/csvimportdialog/KoCsvImportDialog.ui:373
 #. i18n: ectx: property (text), widget (QLabel, label1)
-#: rc.cpp:233
+#: rc.cpp:242
 msgid "&Format:"
 msgstr "Co&gne:"
 
 #. i18n: file: widgets/csvimportdialog/KoCsvImportDialog.ui:387
 #. i18n: ectx: attribute (title), widget (QWidget, m_rangesTab)
-#: rc.cpp:236
+#: rc.cpp:245
 msgid "Ranges"
 msgstr "Fortchetes"
 
 #. i18n: file: widgets/csvimportdialog/KoCsvImportDialog.ui:393
 #. i18n: ectx: property (text), widget (QPushButton, m_updateButton)
-#: rc.cpp:239
+#: rc.cpp:248
 msgid "Update"
 msgstr "Mete a djoû"
 
 #. i18n: file: widgets/csvimportdialog/KoCsvImportDialog.ui:460
 #. i18n: ectx: property (text), widget (QLabel, TextLabel3_2)
-#: rc.cpp:242
+#: rc.cpp:251
 msgid "Import columns:"
 msgstr "Abaguer des colones:"
 
 #. i18n: file: widgets/csvimportdialog/KoCsvImportDialog.ui:479
 #. i18n: ectx: property (text), widget (QLabel, TextLabel3)
-#: rc.cpp:245
+#: rc.cpp:254
 msgid "Import lines:"
 msgstr "Abaguer des royes:"
 
@@ -2303,183 +2444,165 @@ msgstr "Abaguer des royes:"
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
 #. i18n: file: widgets/csvimportdialog/KoCsvImportDialog.ui:512
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:248 rc.cpp:251
+#: rc.cpp:257 rc.cpp:260
 msgid "to"
 msgstr "viè"
 
 #. i18n: file: widgets/pagelayout/KoPageLayoutWidget.ui:16
 #. i18n: ectx: property (text), widget (QLabel, unitsLabel)
-#: rc.cpp:254
+#: rc.cpp:263
 msgid "Unit:"
 msgstr "Unité:"
 
 #. i18n: file: widgets/pagelayout/KoPageLayoutWidget.ui:52
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:257
+#: rc.cpp:266
 msgid "Size:"
 msgstr "Grandeu:"
 
 #. i18n: file: widgets/pagelayout/KoPageLayoutWidget.ui:65
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:260
+#: rc.cpp:269
 msgid "Width:"
 msgstr "Lårdjeur:"
 
 #. i18n: file: widgets/pagelayout/KoPageLayoutWidget.ui:92
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:263
+#: rc.cpp:272
 msgid "Height:"
 msgstr "Hôteur:"
 
 #. i18n: file: widgets/pagelayout/KoPageLayoutWidget.ui:107
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:266
+#: rc.cpp:275
 msgid "Orientation:"
 msgstr "Ashidaedje:"
 
 #. i18n: file: widgets/pagelayout/KoPageLayoutWidget.ui:114
 #. i18n: ectx: property (text), widget (QRadioButton, portrait)
-#: rc.cpp:269
+#: rc.cpp:278
 msgid "Portrait"
 msgstr "Portrait"
 
 #. i18n: file: widgets/pagelayout/KoPageLayoutWidget.ui:121
 #. i18n: ectx: property (text), widget (QRadioButton, landscape)
-#: rc.cpp:272
+#: rc.cpp:281
 msgid "Landscape"
 msgstr "Payisaedje"
 
 #. i18n: file: widgets/pagelayout/KoPageLayoutWidget.ui:128
 #. i18n: ectx: property (text), widget (QLabel, facingPageLabel)
-#: rc.cpp:275
+#: rc.cpp:284
 msgid "Facing pages:"
 msgstr "Pådjes pa deus:"
 
 #. i18n: file: widgets/pagelayout/KoPageLayoutWidget.ui:135
 #. i18n: ectx: property (text), widget (QRadioButton, singleSided)
-#: rc.cpp:278
+#: rc.cpp:287
 msgid "Single sided"
 msgstr "Ene seule pådje"
 
 #. i18n: file: widgets/pagelayout/KoPageLayoutWidget.ui:142
 #. i18n: ectx: property (text), widget (QRadioButton, facingPages)
-#: rc.cpp:281 widgets/pagelayout/KoPageLayoutWidget.cpp:272
+#: rc.cpp:290 widgets/pagelayout/KoPageLayoutWidget.cpp:272
 msgid "Facing pages"
 msgstr "Pådjes pa deus:"
 
 #. i18n: file: widgets/pagelayout/KoPageLayoutWidget.ui:149
 #. i18n: ectx: property (text), widget (QLabel, directionLabel)
-#: rc.cpp:284
+#: rc.cpp:293
 msgid "Text direction:"
 msgstr "Direccion do scrijhaedje"
 
 #. i18n: file: widgets/pagelayout/KoPageLayoutWidget.ui:157
 #. i18n: ectx: property (text), item, widget (QComboBox, textDirection)
-#: rc.cpp:287
+#: rc.cpp:296
 msgid "Automatic"
 msgstr "Otomatike"
 
 #. i18n: file: widgets/pagelayout/KoPageLayoutWidget.ui:162
 #. i18n: ectx: property (text), item, widget (QComboBox, textDirection)
-#: rc.cpp:290
+#: rc.cpp:299
 msgid "Left to right"
 msgstr "Di hintche a droete"
 
 #. i18n: file: widgets/pagelayout/KoPageLayoutWidget.ui:167
 #. i18n: ectx: property (text), item, widget (QComboBox, textDirection)
-#: rc.cpp:293
+#: rc.cpp:302
 msgid "Right to left"
 msgstr "Di droete a hintche"
 
 #. i18n: file: widgets/pagelayout/KoPageLayoutWidget.ui:175
 #. i18n: ectx: property (title), widget (QGroupBox, margins)
-#: rc.cpp:296
+#: rc.cpp:305
 msgid "Margins"
 msgstr "Mådjes"
 
 #. i18n: file: widgets/pagelayout/KoPageLayoutWidget.ui:203
 #. i18n: ectx: property (text), widget (QLabel, rightLabel)
-#: rc.cpp:299
+#: rc.cpp:308
 msgid "Page edge:"
 msgstr "Boird del pådje:"
 
 #. i18n: file: widgets/pagelayout/KoPageLayoutWidget.ui:213
 #. i18n: ectx: property (text), widget (QLabel, leftLabel)
-#: rc.cpp:302
+#: rc.cpp:311
 msgid "Binding edge:"
 msgstr "Boird di l' assoçnaedje:"
 
 #. i18n: file: widgets/pagelayout/KoPageLayoutWidget.ui:223
 #. i18n: ectx: property (text), widget (QLabel, label_12)
-#: rc.cpp:305
+#: rc.cpp:314
 msgid "Bottom:"
 msgstr "Valêye:"
 
 #. i18n: file: widgets/pagelayout/KoPageLayoutWidget.ui:240
 #. i18n: ectx: property (text), widget (QLabel, label_9)
-#: rc.cpp:308
+#: rc.cpp:317
 msgid "Top:"
 msgstr "Copete:"
 
 #. i18n: file: widgets/colorwidgets/KoShadowConfigWidget.ui:17
 #. i18n: ectx: property (text), widget (QCheckBox, shadowVisible)
-#: rc.cpp:311
+#: rc.cpp:320
 msgid "Show Shadow"
 msgstr "Mostrer l' ombion"
 
 #. i18n: file: widgets/colorwidgets/KoShadowConfigWidget.ui:27
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:314
+#: rc.cpp:323
 msgid "Shadow Angle:"
 msgstr "Inglêye di l' ombion"
 
 #. i18n: file: widgets/colorwidgets/KoShadowConfigWidget.ui:37
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:317
+#: rc.cpp:326
 msgid "Shadow Offset:"
 msgstr "Displaeçmint di l' ombion:"
 
 #. i18n: file: widgets/colorwidgets/KoShadowConfigWidget.ui:47
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:320
+#: rc.cpp:329
 msgid "Shadow Color:"
 msgstr "Coleur di l' ombion:"
 
 #. i18n: file: widgets/colorwidgets/KoEditColorSet.ui:55
 #. i18n: ectx: property (toolTip), widget (QToolButton, remove)
-#: rc.cpp:329
+#: rc.cpp:338
 msgid "Remove"
 msgstr "Oister"
 
 #. i18n: file: widgets/colorwidgets/KoEditColorSet.ui:65
 #. i18n: ectx: property (toolTip), widget (QToolButton, open)
-#: rc.cpp:335
+#: rc.cpp:344
 msgid "Open palette"
 msgstr "Drovi palete"
 
 #. i18n: file: widgets/colorwidgets/KoEditColorSet.ui:75
 #. i18n: ectx: property (toolTip), widget (QToolButton, save)
-#: rc.cpp:341
+#: rc.cpp:350
 msgid "Save palette"
 msgstr "Schaper palete"
-
-#. i18n: file: widgets/openpane/koDetailsPaneBase.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, KoDetailsPaneBase)
-#: rc.cpp:347
-msgid "DetailsPaneBase"
-msgstr ""
-
-#. i18n: file: widgets/openpane/koDetailsPaneBase.ui:102
-#. i18n: ectx: property (toolTip), widget (QCheckBox, m_alwaysUseCheckBox)
-#: rc.cpp:350
-msgid "Always use this template at application start up"
-msgstr "Tofer si siervi di c' modele ci a l' enondaedje do programe"
-
-#. i18n: file: widgets/openpane/koDetailsPaneBase.ui:105
-#. i18n: ectx: property (text), widget (QCheckBox, m_alwaysUseCheckBox)
-#: rc.cpp:353
-msgid "Always use this template"
-msgstr "Tofer si siervi di c' modele ci"
 
 #. i18n: file: kopageapp/tools/backgroundTool/BackgroundToolWidget.ui:18
 #. i18n: ectx: property (text), widget (QPushButton, backgroundImage)
@@ -2998,121 +3121,6 @@ msgstr "Palete"
 msgid "Add/Remove Colors"
 msgstr "Radjouter/oister coleurs"
 
-#: widgets/openpane/KoRecentDocumentsPane.cpp:75
-msgid "Open This Document"
-msgstr "Drovi c' documint"
-
-#: widgets/openpane/KoRecentDocumentsPane.cpp:148
-#, kde-format
-msgctxt "File modification date and time. %1 is date time"
-msgid "<tr><td><b>Modified:</b></td><td>%1</td></tr>"
-msgstr "<tr><td><b>Candjî:</b></td><td>%1</td></tr>"
-
-#: widgets/openpane/KoRecentDocumentsPane.cpp:151
-#, kde-format
-msgctxt "File access date and time. %1 is date time"
-msgid "<tr><td><b>Accessed:</b></td><td>%1</td></tr>"
-msgstr "<tr><td><b>Eployî:</b></td><td>%1</td></tr>"
-
-#: widgets/openpane/KoTemplatesPane.cpp:47
-msgid "Use This Template"
-msgstr "Si siervi di c' modele ci"
-
-#: widgets/openpane/KoTemplateCreateDia.cpp:117
-msgid "Create Template"
-msgstr "Ahiver on modele"
-
-#: widgets/openpane/KoTemplateCreateDia.cpp:138
-msgid "Group:"
-msgstr "Hopea:"
-
-#: widgets/openpane/KoTemplateCreateDia.cpp:153
-msgid "&Add Group..."
-msgstr "&Radjouter on hopea..."
-
-#: widgets/openpane/KoTemplateCreateDia.cpp:162
-msgid "Picture"
-msgstr "Imådje"
-
-#: widgets/openpane/KoTemplateCreateDia.cpp:169
-msgid "&Default"
-msgstr "&Prémetou"
-
-#: widgets/openpane/KoTemplateCreateDia.cpp:175
-msgid "Custom"
-msgstr "A vosse môde"
-
-#: widgets/openpane/KoTemplateCreateDia.cpp:179
-msgid "&Select..."
-msgstr "&Tchoezi..."
-
-#: widgets/openpane/KoTemplateCreateDia.cpp:184
-msgid "Preview:"
-msgstr "Prévoeyaedje:"
-
-#: widgets/openpane/KoTemplateCreateDia.cpp:194
-msgid "Use the new template as default"
-msgstr "Si siervi do novea modele come prémetou"
-
-#: widgets/openpane/KoTemplateCreateDia.cpp:196
-#, kde-format
-msgid "Use the new template every time %1 starts"
-msgstr "Si siervi do novea modele a tchaeke côp k' %1 enonde"
-
-#: widgets/openpane/KoTemplateCreateDia.cpp:306
-#, kde-format
-msgid "Do you really want to overwrite the existing '%1' template?"
-msgstr "Voloz po do bon spotchî li modele '%1' k' egzistêye dedja?"
-
-#: widgets/openpane/KoTemplateCreateDia.cpp:420
-#: widgets/openpane/KoTemplateCreateDia.cpp:426
-msgid "Add Group"
-msgstr "Radjouter on hopea"
-
-#: widgets/openpane/KoTemplateCreateDia.cpp:420
-msgid "Enter group name:"
-msgstr "Tapez li no do hopea:"
-
-#: widgets/openpane/KoTemplateCreateDia.cpp:426
-msgid "This name is already used."
-msgstr "Ci no la est ddja eployî."
-
-#: widgets/openpane/KoTemplateCreateDia.cpp:450
-msgid "Do you really want to remove that group?"
-msgstr "Voloz vs po do bon oister ci hopea la?"
-
-#: widgets/openpane/KoTemplateCreateDia.cpp:451
-msgid "Remove Group"
-msgstr "Oister hopea"
-
-#: widgets/openpane/KoTemplateCreateDia.cpp:453
-msgid "Do you really want to remove that template?"
-msgstr "Voloz vs po do bon oister ci modele la?"
-
-#: widgets/openpane/KoTemplateCreateDia.cpp:454
-msgid "Remove Template"
-msgstr "Oister li modele"
-
-#: widgets/openpane/KoTemplateCreateDia.cpp:458
-msgid "&Delete"
-msgstr "&Disfacer"
-
-#: widgets/openpane/KoTemplateCreateDia.cpp:505
-msgid "Could not load picture."
-msgstr "Dji n' a savou tcherdjî l' imådje"
-
-#: widgets/openpane/KoTemplateCreateDia.cpp:508
-msgid "No picture available."
-msgstr "Dji n' a nole imådje por vos"
-
-#: widgets/openpane/KoOpenPane.cpp:190
-msgid "Recent Documents"
-msgstr "Documints d' enawaire"
-
-#: widgets/openpane/KoOpenPane.cpp:272
-msgid "Custom Document"
-msgstr "Documint a vosse môde"
-
 #: widgets/resources/KoResourceItemChooser.cpp:68
 msgid "Import"
 msgstr "Abaguer"
@@ -3121,34 +3129,6 @@ msgstr "Abaguer"
 #, fuzzy
 msgid "Choose File to Add"
 msgstr "Tchoezi passete"
-
-#: widgets/characterselectiondialog/KoCharSelectDia.cpp:46
-#: widgets/characterselectiondialog/KoCharSelectDia.cpp:64
-msgid "Select Character"
-msgstr "Tchoezi on caractere"
-
-#: widgets/characterselectiondialog/KoCharSelectDia.cpp:55
-#: widgets/characterselectiondialog/KoCharSelectDia.cpp:72
-msgid "&Insert"
-msgstr "S&ititchî:"
-
-#: widgets/characterselectiondialog/KoCharSelectDia.cpp:56
-#: widgets/characterselectiondialog/KoCharSelectDia.cpp:73
-msgid "Insert the selected character in the text"
-msgstr "Sititchî l' caractere di tchoezi e tecse"
-
-#: widgets/documentsectionbox/KoDocumentSectionDelegate.cpp:516
-#, kde-format
-msgid "%1 %"
-msgstr "%1 %"
-
-#: widgets/documentsectionbox/KoDocumentSectionToolTip.cpp:51
-msgid "Yes"
-msgstr "Oyi"
-
-#: widgets/documentsectionbox/KoDocumentSectionToolTip.cpp:51
-msgid "No"
-msgstr "Neni"
 
 #: kopageapp/dialogs/KoPAMasterPageDialog.cpp:41
 msgid "Select a master slide design:"
@@ -3501,6 +3481,18 @@ msgstr "Aclawé"
 #: kopageapp/KoPADocumentModel.cpp:505 kopageapp/KoPADocumentModel.cpp:526
 msgid "Reparent shapes"
 msgstr "Ramete fômes"
+
+#~ msgid "Color Chooser"
+#~ msgstr "Tchoezixheu di coleur"
+
+#~ msgid "Select Character"
+#~ msgstr "Tchoezi on caractere"
+
+#~ msgid "&Insert"
+#~ msgstr "S&ititchî:"
+
+#~ msgid "Insert the selected character in the text"
+#~ msgstr "Sititchî l' caractere di tchoezi e tecse"
 
 #, fuzzy
 #~| msgid "Set Horizontal Alignment"
