@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kopete\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-08-27 07:13+0200\n"
+"POT-Creation-Date: 2009-09-05 06:43+0200\n"
 "PO-Revision-Date: 2009-05-24 22:35+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -187,7 +187,8 @@ msgstr "Evoye"
 #: libkopete/kopeteonlinestatus.cpp:163 protocols/sms/smsprotocol.cpp:40
 #: protocols/wlm/wlmprotocol.cpp:71 protocols/gadu/gaduprotocol.cpp:89
 #: protocols/skype/skypeprotocol.cpp:65
-#: protocols/skype/skypecalldialog.cpp:210
+#: protocols/skype/skypecalldialog.cpp:101
+#: protocols/skype/skypecalldialog.cpp:211
 #: protocols/yahoo/yahooprotocol.cpp:57 protocols/jabber/jabberprotocol.cpp:72
 #: protocols/groupwise/gwprotocol.cpp:70
 msgid "Connecting"
@@ -5694,7 +5695,7 @@ msgstr "1"
 
 #. i18n: file: kopete/addaccountwizard/addaccountwizardpage2.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, AddAccountWizardPage2)
-#: rc.cpp:1163 protocols/skype/skypecalldialog.cpp:163
+#: rc.cpp:1163 protocols/skype/skypecalldialog.cpp:164
 msgid "Finished"
 msgstr "Fini"
 
@@ -13026,11 +13027,11 @@ msgid ""
 "The Skype plugin serves as a bridge to an externally running copy of Skype. "
 "This has some consequences on how it functions: you need an instance of "
 "Skype to be running, and only one Skype account can be used.<br /><br />Note "
-"that you need to install the original dynamic linked Skype version 2.0 "
-"binary from <a href=\"http://www.skype.com\">http://www.skype.com</a><br /"
-"><br />This plugin only work if language in Skype client set to english. "
-"Kopete show notifications (incomming call, message, ...), so you can turn "
-"off Skype notifications"
+"that you need to install the original dynamic linked Skype version 2.0 or "
+"2.1 from <a href=\"http://www.skype.com\">http://www.skype.com</a><br /><br /"
+">This plugin only work if language in Skype client set to english. Kopete "
+"show notifications (incomming call, message, ...), so you can turn off Skype "
+"notifications"
 msgstr ""
 
 #. i18n: file: protocols/skype/ui/skypeeditaccountbase.ui:88
@@ -20817,81 +20818,81 @@ msgstr "Tchoezi soçon"
 msgid "Call"
 msgstr "Påjhûle"
 
-#: protocols/skype/skypecalldialog.cpp:101
+#: protocols/skype/skypecalldialog.cpp:102
 #, kde-format
 msgid "Call with %1"
 msgstr ""
 
-#: protocols/skype/skypecalldialog.cpp:133
+#: protocols/skype/skypecalldialog.cpp:134
 #, fuzzy
 #| msgid "Cancel"
 msgid "Canceled"
 msgstr "Rinoncî"
 
-#: protocols/skype/skypecalldialog.cpp:140
+#: protocols/skype/skypecalldialog.cpp:141
 #, fuzzy
 msgid "Other person is busy"
 msgstr "Fitchîs pol sierveu:"
 
-#: protocols/skype/skypecalldialog.cpp:147
+#: protocols/skype/skypecalldialog.cpp:148
 #, fuzzy
 #| msgid "&Refuse"
 msgid "Refused"
 msgstr "&Rifuzer"
 
-#: protocols/skype/skypecalldialog.cpp:154
+#: protocols/skype/skypecalldialog.cpp:155
 msgid "Call Back"
 msgstr ""
 
-#: protocols/skype/skypecalldialog.cpp:155
+#: protocols/skype/skypecalldialog.cpp:156
 #, fuzzy
 #| msgid "Disgusted"
 msgid "Missed"
 msgstr "Disgosté"
 
-#: protocols/skype/skypecalldialog.cpp:168
+#: protocols/skype/skypecalldialog.cpp:169
 #, fuzzy
 #| msgid "&Resume"
 msgid "Resume"
 msgstr "&Rataker"
 
-#: protocols/skype/skypecalldialog.cpp:171
+#: protocols/skype/skypecalldialog.cpp:172
 msgid "On hold (local)"
 msgstr ""
 
-#: protocols/skype/skypecalldialog.cpp:177
+#: protocols/skype/skypecalldialog.cpp:178
 msgid "On hold (remote)"
 msgstr ""
 
-#: protocols/skype/skypecalldialog.cpp:183
+#: protocols/skype/skypecalldialog.cpp:184
 msgid "On hold"
 msgstr ""
 
-#: protocols/skype/skypecalldialog.cpp:187
+#: protocols/skype/skypecalldialog.cpp:188
 #, fuzzy
 #| msgid "Cold"
 msgid "Hold"
 msgstr "Froed"
 
-#: protocols/skype/skypecalldialog.cpp:190
+#: protocols/skype/skypecalldialog.cpp:191
 #, fuzzy
 #| msgid "Session in progress."
 msgid "In progress"
 msgstr "Session en alaedje."
 
-#: protocols/skype/skypecalldialog.cpp:196
+#: protocols/skype/skypecalldialog.cpp:197
 #, fuzzy
 #| msgid "Religion"
 msgid "Ringing"
 msgstr "Rilidjon"
 
-#: protocols/skype/skypecalldialog.cpp:204
+#: protocols/skype/skypecalldialog.cpp:205
 #, fuzzy
 #| msgid "&File"
 msgid "Failed"
 msgstr "&Fitchî"
 
-#: protocols/skype/skypecalldialog.cpp:216
+#: protocols/skype/skypecalldialog.cpp:217
 msgctxt ""
 "Early media means the media played before the call is established. For "
 "example it can be a calling tone or a waiting message such as all operators "
@@ -20899,29 +20900,25 @@ msgctxt ""
 msgid "Early media (waiting for operator...)"
 msgstr ""
 
-#: protocols/skype/skypecalldialog.cpp:220
-msgid "Unplaced (please wait...)"
-msgstr ""
-
-#: protocols/skype/skypecalldialog.cpp:268
+#: protocols/skype/skypecalldialog.cpp:272
 #, fuzzy, kde-format
 #| msgctxt "a contact's online status in parenthesis."
 #| msgid " (%1)"
 msgid "Failed (%1)"
 msgstr " (%1)"
 
-#: protocols/skype/skypecalldialog.cpp:288
+#: protocols/skype/skypecalldialog.cpp:292
 #, kde-format
 msgid ""
 "%1 active\n"
 "%2 total"
 msgstr ""
 
-#: protocols/skype/skypecalldialog.cpp:297
+#: protocols/skype/skypecalldialog.cpp:301
 msgid "€"
 msgstr ""
 
-#: protocols/skype/skypecalldialog.cpp:300
+#: protocols/skype/skypecalldialog.cpp:304
 msgid "Skypeout inactive"
 msgstr ""
 
