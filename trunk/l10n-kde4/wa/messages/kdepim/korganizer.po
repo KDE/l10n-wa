@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-07 06:25+0200\n"
+"POT-Creation-Date: 2009-09-08 06:03+0200\n"
 "PO-Revision-Date: 2009-01-11 16:21+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -3046,8 +3046,8 @@ msgstr ""
 msgid "Do you want to dissociate the occurrence at %1 from the recurrence?"
 msgstr ""
 
-#: calendarview.cpp:1307 calendarview.cpp:1319 calendarview.cpp:2203
-#: calendarview.cpp:2266 calendarview.cpp:2297
+#: calendarview.cpp:1307 calendarview.cpp:1319 calendarview.cpp:2211
+#: calendarview.cpp:2274 calendarview.cpp:2305
 msgid "KOrganizer Confirmation"
 msgstr "Acertinaedje di KOrganizer"
 
@@ -3218,7 +3218,7 @@ msgstr "Li sam&winne ki vént"
 msgid "No filter"
 msgstr "Nole passete"
 
-#: calendarview.cpp:2198
+#: calendarview.cpp:2206
 #, kde-format
 msgid ""
 "The item \"%1\" has sub-to-dos. Do you want to delete just this item and "
@@ -3226,107 +3226,111 @@ msgid ""
 "dos?"
 msgstr ""
 
-#: calendarview.cpp:2204
+#: calendarview.cpp:2212
 msgid "Delete Only This"
 msgstr ""
 
-#: calendarview.cpp:2205 calendarview.cpp:2267
+#: calendarview.cpp:2213 calendarview.cpp:2275
 msgid "Delete All"
 msgstr ""
 
-#: calendarview.cpp:2207
+#: calendarview.cpp:2215
 msgid "Deleting sub-to-dos"
 msgstr ""
 
-#: calendarview.cpp:2231
+#: calendarview.cpp:2239
 #, kde-format
 msgid ""
 "The item \"%1\" is marked read-only and cannot be deleted; it probably "
 "belongs to a read-only calendar."
 msgstr ""
 
-#: calendarview.cpp:2235
+#: calendarview.cpp:2243
 msgid "Removing not possible"
 msgstr ""
 
-#: calendarview.cpp:2263
+#: calendarview.cpp:2271
 #, kde-format
 msgid ""
 "The calendar item \"%1\" recurs over multiple dates; are you sure you want "
 "to delete it and all its recurrences?"
 msgstr ""
 
-#: calendarview.cpp:2274
+#: calendarview.cpp:2282
 #, fuzzy
 #| msgid "Dissociate &Future Occurrences"
 msgid "Also Delete &Future"
 msgstr "Disassocyî &futeurès ocurinces"
 
-#: calendarview.cpp:2278
+#: calendarview.cpp:2286
 #, kde-format
 msgid ""
 "The calendar item \"%1\" recurs over multiple dates. Do you want to delete "
 "only the current one on %2, also future occurrences, or all its occurrences?"
 msgstr ""
 
-#: calendarview.cpp:2285
+#: calendarview.cpp:2293
 #, kde-format
 msgid ""
 "The calendar item \"%1\" recurs over multiple dates. Do you want to delete "
 "only the current one on %2 or all its occurrences?"
 msgstr ""
 
-#: calendarview.cpp:2298
+#: calendarview.cpp:2306
 msgid "Delete C&urrent"
 msgstr ""
 
-#: calendarview.cpp:2300
+#: calendarview.cpp:2308
 msgid "Delete &All"
 msgstr "Tot-&a-fwait disfacer"
 
-#: calendarview.cpp:2390
+#: calendarview.cpp:2398
 msgid "Delete all completed to-dos?"
 msgstr ""
 
-#: calendarview.cpp:2391
+#: calendarview.cpp:2399
 msgid "Purge To-dos"
 msgstr ""
 
-#: calendarview.cpp:2392
+#: calendarview.cpp:2400
 msgid "Purge"
 msgstr ""
 
-#: calendarview.cpp:2396
+#: calendarview.cpp:2404
 msgid "Purging completed to-dos"
 msgstr ""
 
-#: calendarview.cpp:2413
+#: calendarview.cpp:2423
+msgctxt "@info"
 msgid "Unable to purge to-dos with uncompleted children."
 msgstr ""
 
-#: calendarview.cpp:2414
+#: calendarview.cpp:2424
 msgid "Delete To-do"
 msgstr "Disfacer afé"
 
-#: calendarview.cpp:2423
-msgid "Unable to edit item: it is locked by another process."
-msgstr ""
+#: calendarview.cpp:2436
+#, fuzzy, kde-format
+#| msgid "Unable to modify this to-do, because it cannot be locked."
+msgctxt "@info"
+msgid "Unable to edit \"%1\" because it is locked by another process."
+msgstr "Dji n' a sepou candjî cist afé a cåze k' i n' pout nén esse aclawé."
 
-#: calendarview.cpp:2456
+#: calendarview.cpp:2471
 #, kde-format
 msgid "Unable to copy the item to %1."
 msgstr ""
 
-#: calendarview.cpp:2457
+#: calendarview.cpp:2472
 msgid "Copying Failed"
 msgstr ""
 
-#: calendarview.cpp:2501
+#: calendarview.cpp:2516
 #, kde-format
 msgid "Unable to move the item to  %1."
 msgstr ""
 
-#: calendarview.cpp:2502
+#: calendarview.cpp:2517
 msgid "Moving Failed"
 msgstr ""
 
@@ -3703,19 +3707,31 @@ msgid ""
 "input."
 msgstr ""
 
-#: korgac/alarmdialog.cpp:333
+#: korgac/alarmdialog.cpp:340
+#, kde-format
 msgctxt "@info"
-msgid "Could not start KOrganizer."
+msgid "\"%1\" is a read-only item so modifications are not possible."
 msgstr ""
 
-#: korgac/alarmdialog.cpp:529
+#: korgac/alarmdialog.cpp:350
+msgctxt "@info"
+msgid "Could not start KOrganizer so editing is not possible."
+msgstr ""
+
+#: korgac/alarmdialog.cpp:362
+#, kde-format
+msgctxt "@info"
+msgid "An internal KOrganizer error occurred attempting to modify \"%1\""
+msgstr ""
+
+#: korgac/alarmdialog.cpp:548
 #, fuzzy
 #| msgid "Reminder"
 msgctxt "@title"
 msgid "Reminder"
 msgstr "Rimimbreu"
 
-#: korgac/alarmdialog.cpp:531 korgac/alarmdialog.cpp:534
+#: korgac/alarmdialog.cpp:550 korgac/alarmdialog.cpp:553
 #, fuzzy, kde-format
 #| msgid "Reminder:"
 msgctxt "@title"
