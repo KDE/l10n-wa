@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcontrol\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-08-01 06:17+0200\n"
+"POT-Creation-Date: 2009-09-20 06:17+0200\n"
 "PO-Revision-Date: 2008-12-21 20:46+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -46,9 +46,11 @@ msgstr "Informåcions"
 msgid "Value"
 msgstr "Valixhance"
 
-#: base/info_aix.cpp:307 base/info_hpux.cpp:356 base/info_linux.cpp:334
-#: base/info_linux.cpp:445
-msgid "MB"
+#: base/info_aix.cpp:307
+#, fuzzy
+#| msgid "MB"
+msgctxt "Mebibyte"
+msgid "MiB "
 msgstr "MB"
 
 #: base/info_aix.cpp:312 base/info_fbsd.cpp:277 base/info_fbsd.cpp:305
@@ -198,10 +200,11 @@ msgstr "essocté"
 msgid "Numerical Coprocessor (FPU)"
 msgstr "Coprocesseu limerike (FPU)"
 
-#: base/info_hpux.cpp:242
+#: base/info_hpux.cpp:242 base/info_linux.cpp:334 base/info_linux.cpp:445
 #, fuzzy
 #| msgid "MB"
-msgid " MB"
+msgctxt "Mebibyte"
+msgid "MiB"
 msgstr "MB"
 
 #: base/info_hpux.cpp:243
@@ -217,6 +220,10 @@ msgstr "Bites"
 #: base/info_hpux.cpp:246
 msgid "Size of One Page"
 msgstr "Grandeu d' ene pådje"
+
+#: base/info_hpux.cpp:356
+msgid "MB"
+msgstr "MB"
 
 #: base/info_hpux.cpp:441
 msgid "Audio Name"
@@ -981,6 +988,11 @@ msgstr "Åd fwait di %1"
 #, kde-format
 msgid "Report Bug on Module %1..."
 msgstr "Rapoirter on bug pol module %1..."
+
+#, fuzzy
+#~| msgid "MB"
+#~ msgid " MB"
+#~ msgstr "MB"
 
 #~ msgid "Kernel is configured for %1 CPUs"
 #~ msgstr "Li nawea est apontyî po des CPU %1"
