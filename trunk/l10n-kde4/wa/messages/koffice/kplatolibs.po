@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-25 06:28+0200\n"
+"POT-Creation-Date: 2009-09-26 06:18+0200\n"
 "PO-Revision-Date: 2009-08-20 10:18+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -99,12 +99,12 @@ msgctxt "@info:tooltip"
 msgid "Effortbased performance index"
 msgstr ""
 
-#: ui/kpttaskstatusview.cpp:974 ui/kpttaskstatusview.cpp:987
+#: ui/kpttaskstatusview.cpp:975 ui/kpttaskstatusview.cpp:988
 #: ui/kptganttview.cpp:120
 msgid "Chart"
 msgstr "Grafike"
 
-#: ui/kpttaskstatusview.cpp:974 ui/kpttaskstatusview.cpp:988
+#: ui/kpttaskstatusview.cpp:975 ui/kpttaskstatusview.cpp:989
 msgid "Chart Settings"
 msgstr "Apontiaedjes do grafike"
 
@@ -1692,7 +1692,8 @@ msgstr "Oister"
 
 #. i18n: file: ui/kptscheduleeditor.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, projectGroupBox)
-#: kernel/kptnode.cpp:123 models/kptpertcpmmodel.cpp:420 rc.cpp:714
+#: kernel/kptnode.cpp:123 models/kptpertcpmmodel.cpp:420
+#: models/kptresourceappointmentsmodel.cpp:1244 rc.cpp:714
 msgid "Project"
 msgstr "Pordjet"
 
@@ -2005,6 +2006,23 @@ msgstr "Efoirt"
 msgctxt "Actual Cost of Work Performed"
 msgid "ACWP (Effort)"
 msgstr "Efoirt"
+
+#: models/kptnodechartmodel.cpp:430 models/kptnodeitemmodel.cpp:1764
+#, fuzzy
+msgid "Time"
+msgstr "Durêye"
+
+#. i18n: file: ui/resourcedialogbase.ui:307
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#. i18n: file: ui/kptperformancestatusviewsettingspanel.ui:19
+#. i18n: ectx: property (title), widget (QGroupBox, ui_cost)
+#: models/kptnodechartmodel.cpp:441 rc.cpp:64 rc.cpp:305
+msgid "Cost"
+msgstr "Costindje"
+
+#: models/kptnodechartmodel.cpp:445
+msgid "Hours"
+msgstr ""
 
 #: models/kptresourcemodel.cpp:192 models/kptresourcemodel.cpp:203
 #, kde-format
@@ -2397,14 +2415,15 @@ msgid "Interval"
 msgstr "Tins ewal inte les deus"
 
 #: models/kptresourceappointmentsmodel.cpp:1490
+#: models/kptnodeitemmodel.cpp:1708
 #, fuzzy
-msgid "Start"
-msgstr "Cominçmint"
+msgid "Start Time"
+msgstr "Ataké"
 
 #: models/kptresourceappointmentsmodel.cpp:1491
-#, fuzzy
-msgid "Finish"
-msgstr "Fini"
+#: models/kptnodeitemmodel.cpp:1709
+msgid "End Time"
+msgstr ""
 
 #: models/kptresourceappointmentsmodel.cpp:1492
 #, fuzzy
@@ -2713,15 +2732,6 @@ msgstr "Distinde"
 msgid "Variance (Est)"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:1708
-#, fuzzy
-msgid "Start Time"
-msgstr "Ataké"
-
-#: models/kptnodeitemmodel.cpp:1709
-msgid "End Time"
-msgstr ""
-
 #: models/kptnodeitemmodel.cpp:1710
 #, fuzzy
 msgid "Early Start"
@@ -2867,11 +2877,6 @@ msgstr "SPI:"
 #: models/kptnodeitemmodel.cpp:1762
 msgid "Owner"
 msgstr ""
-
-#: models/kptnodeitemmodel.cpp:1764
-#, fuzzy
-msgid "Time"
-msgstr "Durêye"
 
 #: models/kptnodeitemmodel.cpp:1849
 #, fuzzy
@@ -3039,14 +3044,6 @@ msgstr "<p align=\"right\">Di:</p>"
 #: rc.cpp:61
 msgid "<p align=\"right\">Until:</p>"
 msgstr "<p align=\"right\">Disk' a:</p>"
-
-#. i18n: file: ui/resourcedialogbase.ui:307
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#. i18n: file: ui/kptperformancestatusviewsettingspanel.ui:19
-#. i18n: ectx: property (title), widget (QGroupBox, ui_cost)
-#: rc.cpp:64 rc.cpp:305
-msgid "Cost"
-msgstr "Costindje"
 
 #. i18n: file: ui/resourcedialogbase.ui:319
 #. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
@@ -4169,6 +4166,14 @@ msgstr "Di dvant"
 #, fuzzy
 msgid "Next"
 msgstr "Shuvante"
+
+#, fuzzy
+#~ msgid "Start"
+#~ msgstr "Cominçmint"
+
+#, fuzzy
+#~ msgid "Finish"
+#~ msgstr "Fini"
 
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
