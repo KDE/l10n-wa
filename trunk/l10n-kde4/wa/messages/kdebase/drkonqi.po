@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: drkonqi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-24 06:15+0200\n"
+"POT-Creation-Date: 2009-09-28 06:14+0200\n"
 "PO-Revision-Date: 2007-09-08 03:33+0200\n"
 "Last-Translator: Pablo Saratxaga <pablo@walon.org>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -524,26 +524,35 @@ msgctxt "@info"
 msgid "Cannot open file <filename>%1</filename> for writing."
 msgstr "Dji n' sai drovi li fitchî %1 po scrire didins"
 
-#: drkonqidialog.cpp:62
+#: drkonqidialog.cpp:63
 #, fuzzy
 #| msgid "General"
 msgctxt "@title:tab general information"
 msgid "&General"
 msgstr "Djenerå"
 
-#: drkonqidialog.cpp:66
+#: drkonqidialog.cpp:67
 msgctxt "@title:tab"
 msgid "&Developer Information"
 msgstr ""
 
-#: drkonqidialog.cpp:95
+#: drkonqidialog.cpp:98
 #, kde-format
 msgctxt "@info"
 msgid ""
 "<para>We are sorry, <application>%1</application> closed unexpectedly.</para>"
 msgstr ""
 
-#: drkonqidialog.cpp:101
+#: drkonqidialog.cpp:104
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<para>The reporting assistant is disabled because the crash handler dialog "
+"was started in safe mode.<nl />You can manually report this bug to %1 "
+"(including the backtrace from the Developer Information tab)</para>"
+msgstr ""
+
+#: drkonqidialog.cpp:110
 msgctxt "@info"
 msgid ""
 "<para>You can help us improve KDE by reporting this error.<nl /><link "
@@ -552,14 +561,14 @@ msgid ""
 "report this bug.</note></para>"
 msgstr ""
 
-#: drkonqidialog.cpp:107
+#: drkonqidialog.cpp:117
 msgctxt "@info"
 msgid ""
 "<para>You can't report this error because the application does not provide a "
 "bug reporting address</para>"
 msgstr ""
 
-#: drkonqidialog.cpp:137
+#: drkonqidialog.cpp:127
 #, fuzzy
 #| msgctxt "EMAIL OF TRANSLATORS"
 #| msgid "Your emails"
@@ -569,7 +578,7 @@ msgstr ""
 "laurent.hendschel@skynet.be\n"
 "pablo@walon.org"
 
-#: drkonqidialog.cpp:139
+#: drkonqidialog.cpp:129
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -577,17 +586,17 @@ msgid ""
 "Signal: %3 (%4)</para>"
 msgstr ""
 
-#: drkonqidialog.cpp:160
+#: drkonqidialog.cpp:144
 msgctxt "@action:button"
 msgid "Report Bug"
 msgstr ""
 
-#: drkonqidialog.cpp:163
+#: drkonqidialog.cpp:147
 msgctxt "@info:tooltip"
 msgid "Starts the bug report assistant."
 msgstr ""
 
-#: drkonqidialog.cpp:171
+#: drkonqidialog.cpp:156
 #, fuzzy
 #| msgid "&Debugger"
 msgctxt ""
@@ -596,27 +605,27 @@ msgctxt ""
 msgid "Debug"
 msgstr "&Disbugueu"
 
-#: drkonqidialog.cpp:172
+#: drkonqidialog.cpp:157
 msgctxt "@info:tooltip"
 msgid "Starts a program to debug the crashed application."
 msgstr ""
 
-#: drkonqidialog.cpp:191
+#: drkonqidialog.cpp:176
 msgctxt "@action:button"
 msgid "Restart Application"
 msgstr ""
 
-#: drkonqidialog.cpp:193
+#: drkonqidialog.cpp:178
 msgctxt "@info:tooltip"
 msgid "Use this button to restart the crashed application."
 msgstr ""
 
-#: drkonqidialog.cpp:200
+#: drkonqidialog.cpp:185
 msgctxt "@info:tooltip"
 msgid "Close this dialog (you will lose the crash information.)"
 msgstr ""
 
-#: drkonqidialog.cpp:211
+#: drkonqidialog.cpp:196
 #, kde-format
 msgctxt "@action:inmenu 1 is the debugger name"
 msgid "Debug in <application>%1</application>"
@@ -914,6 +923,12 @@ msgstr ""
 msgid "Restart the application when clicking the Finish button"
 msgstr ""
 
+#. i18n: file: ui/maindialog.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, MainWidget)
+#: rc.cpp:75
+msgid "Form"
+msgstr ""
+
 #: reportassistantdialog.cpp:47
 msgctxt "@title:window"
 msgid "Crash Reporting Assistant"
@@ -979,8 +994,7 @@ msgid ""
 "Use this button to show the generated report information about this crash."
 msgstr ""
 
-#: reportassistantpages_base.cpp:171 reportassistantpages_base.cpp:340
-#: reportassistantpages_bugzilla.cpp:547
+#: reportassistantpages_base.cpp:171
 #, kde-format
 msgctxt "@info/plain"
 msgid "Report to %1"
@@ -1106,17 +1120,23 @@ msgid ""
 "<interface>Finish</interface> to close the assistant."
 msgstr ""
 
-#: reportassistantpages_base.cpp:366
+#: reportassistantpages_base.cpp:334
+#, kde-format
+msgctxt "@info/plain report to url/mail address"
+msgid "Report to %1"
+msgstr ""
+
+#: reportassistantpages_base.cpp:361
 msgctxt "@title:window"
 msgid "Contents of the Report"
 msgstr ""
 
-#: reportassistantpages_base.cpp:371
+#: reportassistantpages_base.cpp:366
 msgctxt "@action:button"
 msgid "&Save to File..."
 msgstr ""
 
-#: reportassistantpages_base.cpp:373
+#: reportassistantpages_base.cpp:368
 msgctxt "@info:tooltip"
 msgid ""
 "Use this button to save the generated crash report information to a file. "
@@ -1334,6 +1354,12 @@ msgstr ""
 #, kde-format
 msgctxt "@info:status"
 msgid "Error sending the crash report:  <message>%1.</message>"
+msgstr ""
+
+#: reportassistantpages_bugzilla.cpp:547
+#, kde-format
+msgctxt "@info/plain report to KDE bugtracker addres"
+msgid "Report to %1"
 msgstr ""
 
 #: reportassistantpages_bugzilla_duplicates.cpp:62
