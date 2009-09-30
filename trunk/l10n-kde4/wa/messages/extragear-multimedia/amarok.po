@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-29 06:20+0200\n"
+"POT-Creation-Date: 2009-09-30 07:26+0200\n"
 "PO-Revision-Date: 2009-05-19 21:22+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 
 #: mac/GrowlInterface.cpp:37 context/engines/current/CurrentEngine.cpp:150
 #: context/applets/currenttrack/CurrentTrack.cpp:107
-#: context/applets/photos/PhotosApplet.cpp:129 widgets/Osd.cpp:576
+#: context/applets/photos/PhotosApplet.cpp:129 App.cpp:981 widgets/Osd.cpp:576
 msgid "No track playing"
 msgstr "Nou boket di djouwé"
 
@@ -623,7 +623,7 @@ msgstr ""
 #: collection/audiocd/AudioCdCollection.cpp:413
 #: collection/audiocd/AudioCdCollection.cpp:414
 #: collection/audiocd/AudioCdCollection.cpp:415
-#: context/applets/albums/AlbumItem.cpp:72 MainWindow.cpp:1049
+#: context/applets/albums/AlbumItem.cpp:72 MainWindow.cpp:1063
 #: amarokurls/BookmarkTreeView.cpp:319 amarokurls/BookmarkTreeView.cpp:320
 #: amarokurls/BookmarkTreeView.cpp:321
 msgid "Unknown"
@@ -1070,7 +1070,7 @@ msgstr "Côps djouwés"
 #. i18n: file: dialogs/EditFilterDialog.ui:105
 #. i18n: ectx: property (text), item, widget (KComboBox, keywordCombo)
 #: context/applets/currenttrack/CurrentTrack.cpp:114
-#: context/applets/currenttrack/CurrentTrack.cpp:541 Systray.cpp:169
+#: context/applets/currenttrack/CurrentTrack.cpp:541 Systray.cpp:156
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:251
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:694 rc.cpp:1157
 #: playlist/PlaylistModel.cpp:671 widgets/SmartPlaylistEditor.cpp:185
@@ -1078,7 +1078,7 @@ msgid "Score"
 msgstr "Ponts"
 
 #: context/applets/currenttrack/CurrentTrack.cpp:115
-#: context/applets/currenttrack/CurrentTrack.cpp:542 Systray.cpp:199
+#: context/applets/currenttrack/CurrentTrack.cpp:542 Systray.cpp:186
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:256
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:699
 msgid "Last Played"
@@ -1092,7 +1092,7 @@ msgstr "Dierin djouwé"
 msgid "Favorite tracks"
 msgstr "Colåds bokets"
 
-#: context/applets/albums/AlbumsView.cpp:112 Systray.cpp:241
+#: context/applets/albums/AlbumsView.cpp:112 Systray.cpp:220
 #: browsers/CollectionTreeView.cpp:809
 #: browsers/filebrowser/MyDirOperator.cpp:270
 #: browsers/playlistbrowser/UserPlaylistModel.cpp:539
@@ -1131,43 +1131,46 @@ msgid_plural "%1 tracks"
 msgstr[0] "%1 boket"
 msgstr[1] "%1 bokets"
 
-#: context/applets/lyrics/LyricsApplet.cpp:45
-#: context/applets/lyrics/LyricsApplet.cpp:78
-#: context/applets/lyrics/LyricsApplet.cpp:215
-#: context/applets/lyrics/LyricsApplet.cpp:273 dialogs/TagDialog.cpp:584
+#: context/applets/lyrics/LyricsApplet.cpp:46
+#: context/applets/lyrics/LyricsApplet.cpp:79
+#: context/applets/lyrics/LyricsApplet.cpp:217
+#: context/applets/lyrics/LyricsApplet.cpp:225
+#: context/applets/lyrics/LyricsApplet.cpp:235
+#: context/applets/lyrics/LyricsApplet.cpp:277
+#: context/applets/lyrics/LyricsApplet.cpp:289 dialogs/TagDialog.cpp:584
 msgid "Lyrics"
 msgstr "Paroles"
 
-#: context/applets/lyrics/LyricsApplet.cpp:85
+#: context/applets/lyrics/LyricsApplet.cpp:86
 #, fuzzy
 #| msgid "Lyrics"
 msgid "Edit Lyrics"
 msgstr "Paroles"
 
-#: context/applets/lyrics/LyricsApplet.cpp:94
+#: context/applets/lyrics/LyricsApplet.cpp:95
 #: firstruntutorial/FirstRunTutorialPage.cpp:56
 msgid "Close"
 msgstr "Clôre"
 
-#: context/applets/lyrics/LyricsApplet.cpp:103
+#: context/applets/lyrics/LyricsApplet.cpp:104
 #, fuzzy
 #| msgid "Lyrics"
 msgid "Save Lyrics"
 msgstr "Paroles"
 
-#: context/applets/lyrics/LyricsApplet.cpp:112
+#: context/applets/lyrics/LyricsApplet.cpp:113
 msgid "Reload Lyrics"
 msgstr "Ritcherdjî paroles"
 
-#: context/applets/lyrics/LyricsApplet.cpp:210
+#: context/applets/lyrics/LyricsApplet.cpp:212
 msgid "No lyrics script is running."
 msgstr "I gn a pont d' sicripe des paroles enondé."
 
-#: context/applets/lyrics/LyricsApplet.cpp:223
+#: context/applets/lyrics/LyricsApplet.cpp:226
 msgid "Lyrics are being fetched."
 msgstr "Les paroles ont stî analijheyes."
 
-#: context/applets/lyrics/LyricsApplet.cpp:232
+#: context/applets/lyrics/LyricsApplet.cpp:236
 #, fuzzy, kde-format
 #| msgid ""
 #| "Lyrics were not able to be downloaded. Please check your internet "
@@ -1181,9 +1184,22 @@ msgstr ""
 "Dji n' a sepou aberweter les paroles. Waitîz vosse raloyaedje al daegntoele, "
 "s' i vs plait: %1"
 
-#: context/applets/lyrics/LyricsApplet.cpp:285
+#: context/applets/lyrics/LyricsApplet.cpp:290
 msgid "There were no lyrics found for this track"
 msgstr "Dji n' a nén trové d' parole po ç' boket ci"
+
+#: context/applets/lyrics/LyricsApplet.cpp:371
+msgctxt "@info"
+msgid ""
+"Do you really want to refetch lyrics for this track ? All changes you may "
+"have made will be lost."
+msgstr ""
+
+#: context/applets/lyrics/LyricsApplet.cpp:372
+#, fuzzy
+#| msgid "Repeat Playlist"
+msgid "Refetch lyrics"
+msgstr "Repeter djivêye a djouwer"
 
 #: context/applets/photos/PhotosApplet.cpp:68
 #: context/applets/photos/PhotosApplet.cpp:129
@@ -1449,7 +1465,7 @@ msgstr "&Boket"
 msgid "&Album"
 msgstr "&Albom"
 
-#: ActionClasses.cpp:365 MainWindow.cpp:860
+#: ActionClasses.cpp:365 MainWindow.cpp:874
 msgid "&Playlist"
 msgstr "&Djivêye a djouwer"
 
@@ -2384,7 +2400,7 @@ msgstr "Tchuzes"
 msgid "Convert spaces to underscores"
 msgstr "Covierser espåces e båres pa dzo"
 
-#: dialogs/ScriptManager.cpp:90 MainWindow.cpp:687
+#: dialogs/ScriptManager.cpp:90 MainWindow.cpp:696
 msgid "Script Manager"
 msgstr "Manaedjeu des scripes"
 
@@ -2465,15 +2481,15 @@ msgstr ""
 
 #. i18n: file: collection/audiocd/FormatSelectionDialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QDialog, FormatSelectionDialog)
-#: App.cpp:116 rc.cpp:536
+#: App.cpp:119 rc.cpp:536
 msgid "Amarok"
 msgstr "Amarok"
 
-#: App.cpp:117
+#: App.cpp:120
 msgid "The audio player for KDE"
 msgstr "Li djouweu d' sons po KDE"
 
-#: App.cpp:118
+#: App.cpp:121
 msgid ""
 "(C) 2002-2003, Mark Kretschmann\n"
 "(C) 2003-2009, The Amarok Development Squad"
@@ -2481,7 +2497,7 @@ msgstr ""
 "© 2002-2003, Mark Kretschmann\n"
 "© 2003-2009, l' escadreye di diswalpaedje d' Amarok"
 
-#: App.cpp:119
+#: App.cpp:122
 #, kde-format
 msgid ""
 "IRC:\n"
@@ -2500,161 +2516,161 @@ msgstr ""
 "\n"
 "(Date di costrujhaedje: %1)"
 
-#: App.cpp:467
+#: App.cpp:470
 msgid "Files/URLs to open"
 msgstr "Fitchîs/URL a drovi"
 
-#: App.cpp:469
+#: App.cpp:472
 msgid "Skip backwards in playlist"
 msgstr "Passer å shuvant el djivêye a djouwer"
 
-#: App.cpp:471
+#: App.cpp:474
 msgid "Start playing current playlist"
 msgstr "Ataker a djouwer l' djivêye a djouwer do moumint"
 
-#: App.cpp:473
+#: App.cpp:476
 msgid "Play if stopped, pause if playing"
 msgstr "Djouwer si aresté, djoker si tot djouwant"
 
-#: App.cpp:474
+#: App.cpp:477
 msgid "Pause playback"
 msgstr "Djoker djouwaedje"
 
-#: App.cpp:476
+#: App.cpp:479
 msgid "Stop playback"
 msgstr "Arester djouwaedje"
 
-#: App.cpp:478
+#: App.cpp:481
 msgid "Skip forwards in playlist"
 msgstr "Passer å shuvant el djivêye a djouwer"
 
-#: App.cpp:479
+#: App.cpp:482
 msgid "Additional options:"
 msgstr "Ôtès tchuzes:"
 
-#: App.cpp:481
+#: App.cpp:484
 msgid "Append files/URLs to playlist"
 msgstr "Adjouter fitchîs/URL al djivêye a djouwer"
 
-#: App.cpp:482
+#: App.cpp:485
 msgid "Queue URLs after the currently playing track"
 msgstr "Mete al cawêye des URL après l' boket djouwé pol moumint"
 
-#: App.cpp:484
+#: App.cpp:487
 msgid "Load URLs, replacing current playlist"
 msgstr "Tcherdjî des URL, e rplaeçant l' djivêye a djouwer do moumint"
 
-#: App.cpp:486
+#: App.cpp:489
 msgid "Print verbose debugging information"
 msgstr "Rexhe vierbeusmint des informåcions di disbugaedje"
 
-#: App.cpp:488
+#: App.cpp:491
 msgid "Allow running multiple Amarok instances"
 msgstr "Permet l' alaedje di sacwantès instances d' Amarok"
 
-#: App.cpp:489
+#: App.cpp:492
 msgid "Base for relative filenames/URLs"
 msgstr "Båze po nos d' fitchî/URL relatifs"
 
-#: App.cpp:490
+#: App.cpp:493
 msgid "Run integrated unit tests, if your build supports it"
 msgstr ""
 
-#: App.cpp:492
+#: App.cpp:495
 msgid "Subscribe to podcast feed"
 msgstr ""
 
-#: App.cpp:764
+#: App.cpp:767
 msgid "Moving files to trash"
 msgstr "Tapaedje di fitchîs å batch"
 
-#: App.cpp:846
+#: App.cpp:849
 #, fuzzy
 #| msgid "Unknown"
 msgctxt "When this track was last played"
 msgid "Unknown"
 msgstr "Nén cnoxhou"
 
-#: App.cpp:851
+#: App.cpp:854
 #, kde-format
 msgctxt "monthname year"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: App.cpp:858
+#: App.cpp:861
 #, kde-format
 msgid "One week ago"
 msgid_plural "%1 weeks ago"
 msgstr[0] "I gn a ene samwinne"
 msgstr[1] "I gn a %1 samwinnes"
 
-#: App.cpp:864
+#: App.cpp:867
 msgid "Yesterday"
 msgstr "Ayir"
 
-#: App.cpp:865
+#: App.cpp:868
 #, kde-format
 msgid "One day ago"
 msgid_plural "%1 days ago"
 msgstr[0] "I gn a on djoû"
 msgstr[1] "I gn a %1 djoûs"
 
-#: App.cpp:868
+#: App.cpp:871
 #, kde-format
 msgid "One hour ago"
 msgid_plural "%1 hours ago"
 msgstr[0] "I gn a ene eure"
 msgstr[1] "I gn a %1 eures"
 
-#: App.cpp:874
+#: App.cpp:877
 #, kde-format
 msgid "One minute ago"
 msgid_plural "%1 minutes ago"
 msgstr[0] "I gn a ene munute"
 msgstr[1] "I gn a %1 munutes"
 
-#: App.cpp:875
+#: App.cpp:878
 msgid "Within the last minute"
 msgstr "Divins l' dierinne munute"
 
-#: App.cpp:877
+#: App.cpp:880
 msgid "The future"
 msgstr "Li futeur"
 
-#: App.cpp:883
+#: App.cpp:886
 msgctxt "The amount of time since last played"
 msgid "Never"
 msgstr "Måy"
 
-#: App.cpp:893
+#: App.cpp:896
 msgctxt "The amount of time since last played"
 msgid "0"
 msgstr "0"
 
-#: App.cpp:902
+#: App.cpp:905
 #, kde-format
 msgctxt "number of months ago"
 msgid "%1M"
 msgstr "%1M"
 
-#: App.cpp:906
+#: App.cpp:909
 #, kde-format
 msgctxt "w for weeks"
 msgid "%1w"
 msgstr "%1s"
 
-#: App.cpp:909
+#: App.cpp:912
 msgctxt "When this track was last played"
 msgid "Tomorrow"
 msgstr "Dimwin"
 
-#: App.cpp:915
+#: App.cpp:918
 #, no-c-format, kde-format
 msgctxt "d for days"
 msgid "%1d"
 msgstr "%1dj"
 
-#: App.cpp:918
+#: App.cpp:921
 #, kde-format
 msgctxt "h for hours"
 msgid "%1h"
@@ -2682,10 +2698,36 @@ msgstr "%1e"
 #. i18n: ectx: property (text), widget (QLabel, eqBand8Value)
 #. i18n: file: configdialog/dialogs/PlaybackConfig.ui:1335
 #. i18n: ectx: property (text), widget (QLabel, eqBand9Value)
-#: App.cpp:927 rc.cpp:680 rc.cpp:686 rc.cpp:692 rc.cpp:698 rc.cpp:704
+#: App.cpp:930 rc.cpp:680 rc.cpp:686 rc.cpp:692 rc.cpp:698 rc.cpp:704
 #: rc.cpp:710 rc.cpp:716 rc.cpp:722 rc.cpp:728 rc.cpp:734 rc.cpp:740
 msgid "0"
 msgstr "0"
+
+#: App.cpp:947
+#, kde-format
+msgctxt "track by artist on album"
+msgid "<b>%1</b> by <b>%2</b> on <b>%3</b>"
+msgstr "<b>%1</b> pa <b>%2</b> so <b>%3</b>"
+
+#: App.cpp:950
+#, kde-format
+msgctxt "track by artist"
+msgid "<b>%1</b> by <b>%2</b>"
+msgstr "<b>%1</b> pa <b>%2</b>"
+
+#: App.cpp:954
+#, kde-format
+msgctxt "track on album"
+msgid "<b>%1</b> on <b>%2</b>"
+msgstr "<b>%1</b> so <b>%2</b>"
+
+#: App.cpp:959
+msgid "Unknown track"
+msgstr "Boket nén cnoxhou"
+
+#: App.cpp:966
+msgid "from"
+msgstr "di"
 
 #: aboutdialog/ExtendedAboutDialog.cpp:73
 msgid ""
@@ -3015,54 +3057,33 @@ msgstr ""
 msgid "%1 is not an RSS version 2.0 feed."
 msgstr ""
 
-#: Systray.cpp:133 KNotificationBackend.cpp:84
-#, kde-format
-msgid " by <b>%1</b>"
-msgstr " pa <b>%1</b>"
-
-#: Systray.cpp:138 KNotificationBackend.cpp:90
-#, kde-format
-msgid " on <b>%1</b>"
-msgstr " so <b>%1</b>"
-
-#: Systray.cpp:159
+#: Systray.cpp:146
 msgid "Muted"
 msgstr "Moya"
 
-#: Systray.cpp:163 widgets/SliderWidget.cpp:255
+#: Systray.cpp:150 widgets/SliderWidget.cpp:255
 msgid "Volume"
 msgstr "Volume"
 
-#: Systray.cpp:187 browsers/playlistbrowser/DynamicBiasWidgets.cpp:250
+#: Systray.cpp:174 browsers/playlistbrowser/DynamicBiasWidgets.cpp:250
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:693
 #: playlist/PlaylistModel.cpp:672 widgets/SmartPlaylistEditor.cpp:185
 msgid "Rating"
 msgstr "Préjhaedje"
 
-#: Systray.cpp:194 browsers/playlistbrowser/DynamicBiasWidgets.cpp:249
+#: Systray.cpp:181 browsers/playlistbrowser/DynamicBiasWidgets.cpp:249
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:692
 #: playlist/PlaylistModel.cpp:673
 msgid "Play Count"
 msgstr "Contaedje des djouwaedjes"
 
-#: Systray.cpp:204 browsers/playlistbrowser/DynamicBiasWidgets.cpp:252
-#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:695
-#: playlist/PlaylistHeader.cpp:40 playlist/PlaylistModel.cpp:668
-#: widgets/SmartPlaylistEditor.cpp:183
-msgid "Length"
-msgstr "Longueur"
-
-#: Systray.cpp:219
-msgid "Amarok - No track playing"
-msgstr "Amarok - Nou boket di djouwé"
-
-#: Systray.cpp:242
+#: Systray.cpp:221
 #, fuzzy
 #| msgid "Append && &Play"
 msgid "Add && &Play"
 msgstr "Mete dins l' djivêye eyet &djouwer"
 
-#: Systray.cpp:244
+#: Systray.cpp:223
 msgid "&Queue Track"
 msgstr "&Mete boket el cawêye"
 
@@ -3070,7 +3091,7 @@ msgstr "&Mete boket el cawêye"
 #. i18n: ectx: property (text), widget (QPushButton, pushButton_cancel)
 #. i18n: file: services/magnatune/MagnatuneRedownloadDialogBase.ui:36
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
-#: Systray.cpp:247 rc.cpp:1088 rc.cpp:1545
+#: Systray.cpp:226 rc.cpp:1088 rc.cpp:1545
 msgid "&Cancel"
 msgstr "&Rinoncî"
 
@@ -3267,7 +3288,7 @@ msgstr "Corespondance:"
 msgid "Current Track"
 msgstr "Schoûte voltî l' boket do moumint"
 
-#: dynamic/biases/EchoNest.cpp:116 MainWindow.cpp:264
+#: dynamic/biases/EchoNest.cpp:116 MainWindow.cpp:265
 msgid "Playlist"
 msgstr "Djivêye a djouwer"
 
@@ -4192,6 +4213,13 @@ msgstr "Radjouter on novea coridjaedje."
 msgid "Remove this bias."
 msgstr "Ositer ç' coridjaedje."
 
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:252
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:695
+#: playlist/PlaylistHeader.cpp:40 playlist/PlaylistModel.cpp:668
+#: widgets/SmartPlaylistEditor.cpp:183
+msgid "Length"
+msgstr "Longueur"
+
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:253
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:696
 #: widgets/SmartPlaylistEditor.cpp:184
@@ -4411,59 +4439,59 @@ msgid_plural "%1 tracks"
 msgstr[0] "1 boket"
 msgstr[1] "%1 bokets"
 
-#: MainWindow.cpp:253
+#: MainWindow.cpp:254
 msgid "Browsers"
 msgstr ""
 
-#: MainWindow.cpp:287
+#: MainWindow.cpp:288
 #, fuzzy
 #| msgid "Center"
 msgid "Context"
 msgstr "Mitan"
 
-#: MainWindow.cpp:312
+#: MainWindow.cpp:313
 msgid "Local Music"
 msgstr ""
 
-#: MainWindow.cpp:314
+#: MainWindow.cpp:315
 msgid "Local sources of content"
 msgstr ""
 
-#: MainWindow.cpp:322
+#: MainWindow.cpp:323
 msgid "Internet"
 msgstr "Daegntoele"
 
-#: MainWindow.cpp:324
+#: MainWindow.cpp:325
 msgid "Online sources of content"
 msgstr ""
 
-#: MainWindow.cpp:330
+#: MainWindow.cpp:331
 msgid "Playlists"
 msgstr "Djivêyes a djouwer"
 
-#: MainWindow.cpp:332
+#: MainWindow.cpp:333
 #, fuzzy
 #| msgid "Various Artists"
 msgid "Various types of playlists"
 msgstr "Sacwants årtisses"
 
-#: MainWindow.cpp:339
+#: MainWindow.cpp:340
 msgid "Files"
 msgstr "Fitchîs"
 
-#: MainWindow.cpp:341
+#: MainWindow.cpp:342
 msgid "Browse local hard drive for content"
 msgstr ""
 
 #. i18n: file: configdialog/dialogs/GeneralConfig.ui:56
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_LockLayout)
-#: MainWindow.cpp:386 rc.cpp:770
+#: MainWindow.cpp:387 rc.cpp:770
 #, fuzzy
 #| msgid "Layout"
 msgid "Lock layout"
 msgstr "Adjinçmint"
 
-#: MainWindow.cpp:480
+#: MainWindow.cpp:481
 msgid ""
 "<qt>Closing the main window will keep Amarok running in the System Tray. Use "
 "<B>Quit</B> from the menu, or the Amarok tray icon to exit the application.</"
@@ -4473,157 +4501,161 @@ msgstr ""
 "sicriftôr. Eployîz <B>Cwiter</B> dins l' dressêye oudonbén l' imådjete d' "
 "Amarok e scriftôr po moussî foû do programe.</qt>"
 
-#: MainWindow.cpp:482
+#: MainWindow.cpp:483
 msgid "Docking in System Tray"
 msgstr "Mete el boesse ås imådjetes sistinme"
 
-#: MainWindow.cpp:507
+#: MainWindow.cpp:508
 msgid "Use relative path for &saving"
 msgstr "Eployi tchimin relatif pol &schapaedje"
 
-#: MainWindow.cpp:518
+#: MainWindow.cpp:519
 msgid "Save As"
 msgstr "Schaper eyet rlomer"
 
-#: MainWindow.cpp:555
+#: MainWindow.cpp:556
 msgid "Play Media (Files or URLs)"
 msgstr "Djouwer media (Fitchîs ou URL)"
 
-#: MainWindow.cpp:555
+#: MainWindow.cpp:556
 msgid "Add Media (Files or URLs)"
 msgstr "Radjouter media (Fitchîs ou URL)"
 
-#: MainWindow.cpp:570
+#: MainWindow.cpp:571
 msgid "Add Stream"
 msgstr "Radjouter floû"
 
-#: MainWindow.cpp:570
+#: MainWindow.cpp:571
 msgid "Enter Stream URL:"
 msgstr "Diner l' URL do floû:"
 
-#: MainWindow.cpp:650
+#: MainWindow.cpp:659
 msgid "&Add Media..."
 msgstr "&Radjouter media..."
 
-#: MainWindow.cpp:655
+#: MainWindow.cpp:664
 msgctxt "clear playlist"
 msgid "&Clear Playlist"
 msgstr "&Netyî djivêye a djouwer"
 
-#: MainWindow.cpp:659
+#: MainWindow.cpp:668
 msgid "&Add Stream..."
 msgstr "&Radjouter floû..."
 
-#: MainWindow.cpp:663
+#: MainWindow.cpp:672
 msgid "&Export Playlist As..."
 msgstr "&Ebaguer djivêye a djouwer eyet l' rilomer..."
 
-#: MainWindow.cpp:667 MainWindow.cpp:675
+#: MainWindow.cpp:676 MainWindow.cpp:684
 #, fuzzy
 #| msgid "Bookmark this Artist"
 msgid "Bookmark This Location"
 msgstr "Fé ene rimåke po cist årtisse"
 
-#: MainWindow.cpp:671 amarokurls/BookmarkManager.cpp:42
+#: MainWindow.cpp:680 amarokurls/BookmarkManager.cpp:42
 #, fuzzy
 #| msgid "Cover Manager"
 msgid "Bookmark Manager"
 msgstr "Manaedjeu des potchetes"
 
-#: MainWindow.cpp:679 covermanager/CoverManager.cpp:97
+#: MainWindow.cpp:688 covermanager/CoverManager.cpp:97
 msgid "Cover Manager"
 msgstr "Manaedjeu des potchetes"
 
-#: MainWindow.cpp:683
+#: MainWindow.cpp:692
 msgid "Play Media..."
 msgstr "Djouwer media..."
 
-#: MainWindow.cpp:691
+#: MainWindow.cpp:700
 msgid "&Seek Forward"
 msgstr "&Aler en avant"
 
-#: MainWindow.cpp:697
+#: MainWindow.cpp:706
 msgid "&Seek Backward"
 msgstr "&Aler en erî"
 
-#: MainWindow.cpp:704
+#: MainWindow.cpp:713
 msgid "Update Collection"
 msgstr "Mete a djoû ramexhnêye"
 
-#: MainWindow.cpp:711
+#: MainWindow.cpp:720
 msgid "Previous Track"
 msgstr "Boket di dvant"
 
-#: MainWindow.cpp:719
+#: MainWindow.cpp:728
 msgid "Next Track"
 msgstr "Boket d' après"
 
-#: MainWindow.cpp:722
+#: MainWindow.cpp:731
 msgid "Increase Volume"
 msgstr "Monter volume"
 
-#: MainWindow.cpp:728
+#: MainWindow.cpp:737
 msgid "Decrease Volume"
 msgstr "Dischinde volume"
 
-#: MainWindow.cpp:734
+#: MainWindow.cpp:743
 msgid "Toggle Main Window"
 msgstr "(Dis)mete mwaisse purnea"
 
-#: MainWindow.cpp:739
+#: MainWindow.cpp:748
+msgid "Jump to"
+msgstr ""
+
+#: MainWindow.cpp:753
 msgid "Show On Screen Display"
 msgstr "Håynaedje Mostrer sol waitroûle"
 
-#: MainWindow.cpp:744
+#: MainWindow.cpp:758
 msgid "Mute Volume"
 msgstr "Volume moya"
 
-#: MainWindow.cpp:749
+#: MainWindow.cpp:763
 msgid "Love Current Track"
 msgstr "Schoûte voltî l' boket do moumint"
 
-#: MainWindow.cpp:754
+#: MainWindow.cpp:768
 msgid "Rate Current Track: 1"
 msgstr "Préjhaedje do boket do moumint: 1"
 
-#: MainWindow.cpp:759
+#: MainWindow.cpp:773
 msgid "Rate Current Track: 2"
 msgstr "Préjhaedje do boket do moumint: 2"
 
-#: MainWindow.cpp:764
+#: MainWindow.cpp:778
 msgid "Rate Current Track: 3"
 msgstr "Préjhaedje do boket do moumint: 3"
 
-#: MainWindow.cpp:769
+#: MainWindow.cpp:783
 msgid "Rate Current Track: 4"
 msgstr "Préjhaedje do boket do moumint: 4"
 
-#: MainWindow.cpp:774
+#: MainWindow.cpp:788
 msgid "Rate Current Track: 5"
 msgstr "Préjhaedje do boket do moumint: 5"
 
-#: MainWindow.cpp:837
+#: MainWindow.cpp:851
 msgid "&Music"
 msgstr "&Muzike"
 
-#: MainWindow.cpp:841
+#: MainWindow.cpp:855
 msgid "&Amarok"
 msgstr "&Amarok"
 
-#: MainWindow.cpp:884
+#: MainWindow.cpp:898
 msgid "&Tools"
 msgstr "&Usteyes"
 
-#: MainWindow.cpp:897
+#: MainWindow.cpp:911
 msgid "&Settings"
 msgstr "A&pontiaedjes"
 
-#: MainWindow.cpp:1025
+#: MainWindow.cpp:1039
 #, kde-format
 msgid "Paused  ::  %1"
 msgstr "Djoké :: %1"
 
-#: MainWindow.cpp:1049
+#: MainWindow.cpp:1063
 #, kde-format
 msgid "%1 - %2  ::  %3"
 msgstr "%1 - %2  ::  %3"
@@ -6028,8 +6060,10 @@ msgstr ""
 #. i18n: file: configdialog/dialogs/PlaybackConfig.ui:43
 #. i18n: ectx: property (title), widget (QGroupBox, opt_crossfade_2)
 #: rc.cpp:611
-msgid "Fadeout on track end"
-msgstr "Fondou d' difén al difén do boket"
+#, fuzzy
+#| msgid "Fadeout on e&xit"
+msgid "Fadeout on stop"
+msgstr "Fondou d' difén å mous&saedje foû"
 
 #. i18n: file: configdialog/dialogs/PlaybackConfig.ui:49
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_Fadeout)
@@ -8074,7 +8108,7 @@ msgstr ""
 msgid "Peak acceleration: "
 msgstr ""
 
-#: KNotificationBackend.cpp:93
+#: KNotificationBackend.cpp:82
 #, fuzzy
 #| msgid "No track playing"
 msgid "Now playing"
@@ -9247,14 +9281,14 @@ msgstr "Rilomer adjinçmint d' djivêye a djouwer"
 msgid "Encountered an unknown element name while reading layout."
 msgstr ""
 
-#: playlist/layouts/LayoutManager.cpp:357
+#: playlist/layouts/LayoutManager.cpp:374
 #, kde-format
 msgid "The layout '%1' is one of the default layouts and cannot be deleted."
 msgstr ""
 "L' adjinçmints «%1» est on des adjinçmints prémetous eyet n' pout nén esse "
 "disfacé."
 
-#: playlist/layouts/LayoutManager.cpp:357
+#: playlist/layouts/LayoutManager.cpp:374
 msgid "Cannot Delete Default Layouts"
 msgstr "Dji n' sai disfacer les adjinçmints prémetous"
 
@@ -9483,21 +9517,21 @@ msgstr "Preferinces do cweraedje"
 msgid "Track Number - Title"
 msgstr "Limero do boket - Tite"
 
-#: playlist/PlaylistWidget.cpp:59
+#: playlist/PlaylistWidget.cpp:58
 msgid "Dynamic Mode Enabled"
 msgstr ""
 
-#: playlist/PlaylistWidget.cpp:115
+#: playlist/PlaylistWidget.cpp:113
 msgid "Show active track"
 msgstr "Mostrer boket ovrant"
 
-#: playlist/PlaylistWidget.cpp:124
+#: playlist/PlaylistWidget.cpp:122
 #, fuzzy
 #| msgid "Current Playlist"
 msgid "&Save Current Playlist"
 msgstr "Djivêye a djouwer do moumint"
 
-#: playlist/PlaylistWidget.cpp:179
+#: playlist/PlaylistWidget.cpp:176
 #, fuzzy, kde-format
 #| msgid "Save playlist"
 msgid "&Save playlist to \"%1\""
@@ -9581,42 +9615,16 @@ msgstr "Grandeu do fitchî"
 msgid "Add a sorting level to the playlist."
 msgstr "Li nombe di liveas po \"Disfé\" el djivêye a djouwer."
 
-#: statusbar/StatusBar.cpp:216
+#: statusbar/StatusBar.cpp:214
 msgid "Amarok is paused"
 msgstr "Amarok est djoké"
 
-#: statusbar/StatusBar.cpp:260
-#, kde-format
-msgctxt "track by artist on album"
-msgid "<b>%1</b> by <b>%2</b> on <b>%3</b>"
-msgstr "<b>%1</b> pa <b>%2</b> so <b>%3</b>"
-
-#: statusbar/StatusBar.cpp:263
-#, kde-format
-msgctxt "track by artist"
-msgid "<b>%1</b> by <b>%2</b>"
-msgstr "<b>%1</b> pa <b>%2</b>"
-
-#: statusbar/StatusBar.cpp:267
-#, kde-format
-msgctxt "track on album"
-msgid "<b>%1</b> on <b>%2</b>"
-msgstr "<b>%1</b> so <b>%2</b>"
-
-#: statusbar/StatusBar.cpp:272
-msgid "Unknown track"
-msgstr "Boket nén cnoxhou"
-
-#: statusbar/StatusBar.cpp:284
-msgid "from"
-msgstr "di"
-
-#: statusbar/StatusBar.cpp:303
+#: statusbar/StatusBar.cpp:266
 #, kde-format
 msgid "Playing: %1"
 msgstr "Djouwé: %1"
 
-#: statusbar/StatusBar.cpp:341
+#: statusbar/StatusBar.cpp:304
 #, kde-format
 msgctxt "%1 is number of tracks, %2 is time"
 msgid "%1 track (%2)"
@@ -9624,13 +9632,13 @@ msgid_plural "%1 tracks (%2)"
 msgstr[0] "%1 boket (%2)"
 msgstr[1] "%1 bokets (%2)"
 
-#: statusbar/StatusBar.cpp:343
+#: statusbar/StatusBar.cpp:306
 #, fuzzy, kde-format
 #| msgid "Save playlist"
 msgid "Total playlist size: %1"
 msgstr "Schaper djivêye a djouwer"
 
-#: statusbar/StatusBar.cpp:348
+#: statusbar/StatusBar.cpp:311
 #, kde-format
 msgctxt "%1 is number of tracks"
 msgid "%1 track"
@@ -10233,6 +10241,18 @@ msgstr "Imådje del potchete"
 #: covermanager/CoverManager.cpp:805
 msgid "No Artist"
 msgstr "Nol årtisse"
+
+#~ msgid " by <b>%1</b>"
+#~ msgstr " pa <b>%1</b>"
+
+#~ msgid " on <b>%1</b>"
+#~ msgstr " so <b>%1</b>"
+
+#~ msgid "Amarok - No track playing"
+#~ msgstr "Amarok - Nou boket di djouwé"
+
+#~ msgid "Fadeout on track end"
+#~ msgstr "Fondou d' difén al difén do boket"
 
 #~ msgid "Shoutcast Directory"
 #~ msgstr "Ridant des shoutcasts"
