@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kopete\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-10-01 05:53+0200\n"
+"POT-Creation-Date: 2009-10-10 06:25+0200\n"
 "PO-Revision-Date: 2009-05-24 22:35+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -1231,7 +1231,7 @@ msgstr "Metou no"
 msgid "Photo"
 msgstr "Foto"
 
-#: kopete/infoeventwidget.cpp:229
+#: kopete/infoeventwidget.cpp:229 plugins/otr/authenticationwizard.cpp:78
 msgid "View"
 msgstr "Vey"
 
@@ -16195,7 +16195,7 @@ msgid ""
 msgstr ""
 
 #: plugins/otr/otrlchatinterface.cpp:461
-#: plugins/otr/authenticationwizard.cpp:302
+#: plugins/otr/authenticationwizard.cpp:318
 #, kde-format
 msgid ""
 "<b>%1</b> has successfully authenticated you. You may want to authenticate "
@@ -16216,27 +16216,27 @@ msgid ""
 "<b>Authentication failed. Note that the conversation is now insecure.</b>"
 msgstr ""
 
-#: plugins/otr/otrlchatinterface.cpp:509
+#: plugins/otr/otrlchatinterface.cpp:510
 #, fuzzy
 msgid "<b>Authentication error.</b>"
 msgstr "L' operåcion a fwait berwete"
 
-#: plugins/otr/otrlchatinterface.cpp:560
+#: plugins/otr/otrlchatinterface.cpp:565
 #, fuzzy
 msgid "Encryption error"
 msgstr "Åk n' a nén stî avou l' raloyaedje"
 
-#: plugins/otr/otrlchatinterface.cpp:590
+#: plugins/otr/otrlchatinterface.cpp:595
 msgid "Terminating OTR session."
 msgstr ""
 
-#: plugins/otr/otrlchatinterface.cpp:744
+#: plugins/otr/otrlchatinterface.cpp:749
 msgid ""
 "<b>Authentication aborted. Note that the conversation is now insecure.</b>"
 msgstr ""
 
-#: plugins/otr/otrlchatinterface.cpp:755 plugins/otr/otrlchatinterface.cpp:767
-#: plugins/otr/otrlchatinterface.cpp:780
+#: plugins/otr/otrlchatinterface.cpp:760 plugins/otr/otrlchatinterface.cpp:772
+#: plugins/otr/otrlchatinterface.cpp:785
 msgid "<b>Authenticating contact...</b>"
 msgstr ""
 
@@ -16292,59 +16292,71 @@ msgctxt "@item:intable The fingerprint is not trusted"
 msgid "No"
 msgstr "Neni"
 
-#: plugins/otr/authenticationwizard.cpp:49
+#: plugins/otr/authenticationwizard.cpp:52
 #, fuzzy, kde-format
 msgid "Waiting for %1..."
 msgstr "Dji cwir après des nouvès scrireces..."
 
-#: plugins/otr/authenticationwizard.cpp:50
+#: plugins/otr/authenticationwizard.cpp:53
 msgid "Checking if answers match..."
 msgstr ""
 
-#: plugins/otr/authenticationwizard.cpp:88
+#: plugins/otr/authenticationwizard.cpp:75
+#, kde-format
+msgid "Incoming authentication request from %1"
+msgstr ""
+
+#: plugins/otr/authenticationwizard.cpp:78
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Ignore"
+msgid "Ignore"
+msgstr "Passer houte"
+
+#: plugins/otr/authenticationwizard.cpp:102
 #, fuzzy
 msgctxt "@title"
 msgid "Select authentication method"
 msgstr "Messaedjes d' infôrmåcion"
 
-#: plugins/otr/authenticationwizard.cpp:90
+#: plugins/otr/authenticationwizard.cpp:104
 msgid "Question and Answer"
 msgstr ""
 
-#: plugins/otr/authenticationwizard.cpp:91
+#: plugins/otr/authenticationwizard.cpp:105
 msgid "Shared Secret"
 msgstr ""
 
-#: plugins/otr/authenticationwizard.cpp:92
+#: plugins/otr/authenticationwizard.cpp:106
 #, fuzzy
 msgid "Manual fingerprint verification"
 msgstr "L' operåcion a fwait berwete"
 
-#: plugins/otr/authenticationwizard.cpp:121
+#: plugins/otr/authenticationwizard.cpp:135
 msgctxt "@title"
 msgid "Question and Answer"
 msgstr ""
 
-#: plugins/otr/authenticationwizard.cpp:123
+#: plugins/otr/authenticationwizard.cpp:137
 #, kde-format
 msgctxt "@info"
 msgid "Enter a question that only %1 is able to answer:"
 msgstr ""
 
-#: plugins/otr/authenticationwizard.cpp:127
+#: plugins/otr/authenticationwizard.cpp:141
 #, fuzzy
 #| msgid "Please enter the name for the new group:"
 msgctxt "@info"
 msgid "Enter the answer to your question:"
 msgstr "Dinez l' no po l' novea groupe s' i vs plait:"
 
-#: plugins/otr/authenticationwizard.cpp:131
+#: plugins/otr/authenticationwizard.cpp:145
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Authentication with %1"
 msgstr "L' operåcion a fwait berwete"
 
-#: plugins/otr/authenticationwizard.cpp:132
+#: plugins/otr/authenticationwizard.cpp:146
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -16352,38 +16364,38 @@ msgid ""
 "question in the field below:"
 msgstr ""
 
-#: plugins/otr/authenticationwizard.cpp:152
+#: plugins/otr/authenticationwizard.cpp:167
 msgctxt "@title"
 msgid "Shared Secret"
 msgstr ""
 
-#: plugins/otr/authenticationwizard.cpp:154
+#: plugins/otr/authenticationwizard.cpp:169
 #, fuzzy, kde-format
 #| msgid "Please enter the same password twice."
 msgctxt "@info"
 msgid "Enter a secret passphrase known only to you and %1:"
 msgstr "Dinez on scret eyet l' acertiner s' i vs plait."
 
-#: plugins/otr/authenticationwizard.cpp:156
+#: plugins/otr/authenticationwizard.cpp:171
 #, fuzzy, kde-format
 msgctxt "@title"
 msgid "Authentication with %1"
 msgstr "L' operåcion a fwait berwete"
 
-#: plugins/otr/authenticationwizard.cpp:157
+#: plugins/otr/authenticationwizard.cpp:172
 #, fuzzy, kde-format
 #| msgid "Please enter the same password twice."
 msgctxt "@info"
 msgid "Enter the secret passphrase known only to you and %1:"
 msgstr "Dinez on scret eyet l' acertiner s' i vs plait."
 
-#: plugins/otr/authenticationwizard.cpp:168
+#: plugins/otr/authenticationwizard.cpp:184
 #, fuzzy
 msgctxt "@title"
 msgid "Manual Verification"
 msgstr "L' operåcion a fwait berwete"
 
-#: plugins/otr/authenticationwizard.cpp:172
+#: plugins/otr/authenticationwizard.cpp:188
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -16391,47 +16403,47 @@ msgid ""
 "fingerprint is correct:"
 msgstr ""
 
-#: plugins/otr/authenticationwizard.cpp:178
+#: plugins/otr/authenticationwizard.cpp:194
 #, fuzzy
 #| msgid "Remove"
 msgctxt "@item:inlistbox ...verified that"
 msgid "I have not"
 msgstr "Oister"
 
-#: plugins/otr/authenticationwizard.cpp:179
+#: plugins/otr/authenticationwizard.cpp:195
 #, fuzzy
 #| msgid "Remove"
 msgctxt "@item:inlistbox ...verified that"
 msgid "I have"
 msgstr "Oister"
 
-#: plugins/otr/authenticationwizard.cpp:188
+#: plugins/otr/authenticationwizard.cpp:204
 #, kde-format
 msgctxt "@info:label I have..."
 msgid "verified that this is in fact the correct fingerprint for %1"
 msgstr ""
 
-#: plugins/otr/authenticationwizard.cpp:292
+#: plugins/otr/authenticationwizard.cpp:308
 #, fuzzy
 msgid "Authentication successful"
 msgstr "L' operåcion a fwait berwete"
 
-#: plugins/otr/authenticationwizard.cpp:296
-#: plugins/otr/authenticationwizard.cpp:300
-#: plugins/otr/authenticationwizard.cpp:306
+#: plugins/otr/authenticationwizard.cpp:312
+#: plugins/otr/authenticationwizard.cpp:316
+#: plugins/otr/authenticationwizard.cpp:322
 #, kde-format
 msgid ""
 "The authentication with %1 was completed successfully. The conversation is "
 "now secure."
 msgstr ""
 
-#: plugins/otr/authenticationwizard.cpp:309
+#: plugins/otr/authenticationwizard.cpp:325
 #: protocols/groupwise/libgroupwise/gwerror.cpp:107
 #, fuzzy
 msgid "Authentication failed"
 msgstr "L' operåcion a fwait berwete"
 
-#: plugins/otr/authenticationwizard.cpp:310
+#: plugins/otr/authenticationwizard.cpp:326
 #, kde-format
 msgid ""
 "The authentication with %1 failed. To make sure you are not talking to an "
@@ -16439,14 +16451,26 @@ msgid ""
 "that the conversation is now insecure."
 msgstr ""
 
-#: plugins/otr/authenticationwizard.cpp:317
+#: plugins/otr/authenticationwizard.cpp:344
+#, fuzzy
+msgid "Authentication aborted"
+msgstr "L' operåcion a fwait berwete"
+
+#: plugins/otr/authenticationwizard.cpp:345
+#, kde-format
+msgid ""
+"%1 has aborted the authentication process. To make sure you are not talking "
+"to an imposter, try again using the manual fingerprint verification method."
+msgstr ""
+
+#: plugins/otr/authenticationwizard.cpp:352
 #, kde-format
 msgid ""
 "Ask %1 a question, the answer to which is known only to you and them. If the "
 "answer does not match, you may be talking to an imposter."
 msgstr ""
 
-#: plugins/otr/authenticationwizard.cpp:319
+#: plugins/otr/authenticationwizard.cpp:354
 #, kde-format
 msgid ""
 "Pick a secret known only to you and %1. If the secret does not match, you "
@@ -16454,14 +16478,14 @@ msgid ""
 "window, or this authentication method could be compromised with ease."
 msgstr ""
 
-#: plugins/otr/authenticationwizard.cpp:321
+#: plugins/otr/authenticationwizard.cpp:356
 #, kde-format
 msgid ""
 "Verify %1's fingerprint manually. For example via a phone call or signed "
 "(and verified) email."
 msgstr ""
 
-#: plugins/otr/authenticationwizard.cpp:327
+#: plugins/otr/authenticationwizard.cpp:373
 #, fuzzy
 #| msgid "Authorize Contact"
 msgctxt "@title"

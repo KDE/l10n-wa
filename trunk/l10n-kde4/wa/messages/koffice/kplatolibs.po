@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-26 06:18+0200\n"
+"POT-Creation-Date: 2009-10-10 06:45+0200\n"
 "PO-Revision-Date: 2009-08-20 10:18+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -62,7 +62,7 @@ msgstr "Emiler a..."
 #. i18n: ectx: property (text), item, widget (KComboBox, risk)
 #: ui/kpttaskcostpanel.cpp:41 ui/kpttaskgeneralpanel.cpp:70
 #: ui/kptresourcedialog.cpp:152 ui/kptpertresult.cpp:138
-#: ui/kptpertresult.cpp:483 kernel/kpttask.cpp:3377 kernel/kptnode.cpp:122
+#: ui/kptpertresult.cpp:483 kernel/kpttask.cpp:3406 kernel/kptnode.cpp:122
 #: kernel/kptnode.cpp:1438 models/kptschedulemodel.cpp:441
 #: models/kptschedulemodel.cpp:443 models/kptresourcemodel.cpp:186
 #: models/kptresourcemodel.cpp:201 models/kptnodeitemmodel.cpp:280
@@ -1633,6 +1633,10 @@ msgctxt "1=type of constraint"
 msgid "%1: Failed to meet constraint. Negative float=%2"
 msgstr "%1: Li passaedje do stronna a fwait berwete. Flotant negatif=%2"
 
+#: kernel/kpttask.cpp:1651 kernel/kpttask.cpp:1975
+msgid "Failed to schedule within project target time"
+msgstr "Li programaedje do pordjet divant l' date/eure såme a fwait berwete"
+
 #: kernel/kpttask.cpp:1657 kernel/kpttask.cpp:1981
 msgid "Starting earlier than early start"
 msgstr "Cominçmint pus timpe kel timpe cominçmint"
@@ -1645,6 +1649,12 @@ msgstr "Finixhaedje pus tård kel tårdfinixhaedje"
 #, fuzzy, kde-format
 msgid "Scheduled: %1 to %2"
 msgstr "Programaedje:"
+
+#: kernel/kpttask.cpp:1737
+#, fuzzy, kde-format
+#| msgid "Schedule from start %1"
+msgid "Schedule from end time: %1"
+msgstr "Programer a pårti do cominçmint %1"
 
 #: kernel/kpttask.cpp:1751
 #, kde-format
@@ -1670,9 +1680,11 @@ msgstr ""
 "%1: Li programaedje après l' timpe cominçmint a fwait berwete. Flotant "
 "negatif=%2 "
 
-#: kernel/kpttask.cpp:1975
-msgid "Failed to schedule within project target time"
-msgstr "Li programaedje do pordjet divant l' date/eure såme a fwait berwete"
+#: kernel/kpttask.cpp:2048
+#, fuzzy
+#| msgid "No resource allocated"
+msgid "No resource has been allocated"
+msgstr "Nole rissource acoirdêye"
 
 #: kernel/kpttask.cpp:2190
 #, kde-format
@@ -1681,11 +1693,11 @@ msgstr ""
 "Dji n' a savou fé coresponde li durêye d' ovraedje. Dji vout: %1, dj' a yeu: "
 "%2"
 
-#: kernel/kpttask.cpp:3380
+#: kernel/kpttask.cpp:3409
 msgid "Send"
 msgstr "Evoyî"
 
-#: kernel/kpttask.cpp:3383
+#: kernel/kpttask.cpp:3412
 #, fuzzy
 msgid "Receive"
 msgstr "Oister"
@@ -1888,7 +1900,7 @@ msgstr "En avant"
 #. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
 #: models/kptschedulemodel.cpp:717 models/kptschedulemodel.cpp:944
 #: models/kptresourcemodel.cpp:361 models/kptaccountsmodel.cpp:121
-#: models/kptaccountsmodel.cpp:963 models/kptcalendarmodel.cpp:418
+#: models/kptaccountsmodel.cpp:961 models/kptcalendarmodel.cpp:418
 #: models/kptresourceallocationmodel.cpp:305
 #: models/kptresourceappointmentsmodel.cpp:901
 #: models/kptresourceappointmentsmodel.cpp:916
@@ -2126,7 +2138,7 @@ msgctxt "1=account name"
 msgid "%1 (Default account)"
 msgstr "Difacer conte"
 
-#: models/kptaccountsmodel.cpp:122 models/kptaccountsmodel.cpp:966
+#: models/kptaccountsmodel.cpp:122 models/kptaccountsmodel.cpp:964
 #: models/kptnodeitemmodel.cpp:1699
 msgid "Description"
 msgstr "Discrijhaedje"
@@ -2153,16 +2165,16 @@ msgid_plural "Delete %1 Accounts"
 msgstr[0] "Disfacer les contes di tchoezis"
 msgstr[1] "Disfacer les contes di tchoezis"
 
-#: models/kptaccountsmodel.cpp:820
+#: models/kptaccountsmodel.cpp:833
 #, kde-format
 msgid "Actual total cost: %1, planned total cost: %2"
 msgstr ""
 
-#: models/kptaccountsmodel.cpp:969 models/kptresourceappointmentsmodel.cpp:902
+#: models/kptaccountsmodel.cpp:967 models/kptresourceappointmentsmodel.cpp:902
 msgid "Total"
 msgstr "Totå"
 
-#: models/kptaccountsmodel.cpp:998
+#: models/kptaccountsmodel.cpp:996
 msgid "The total cost for the account shown as: Actual cost [ Planned cost ]"
 msgstr ""
 
