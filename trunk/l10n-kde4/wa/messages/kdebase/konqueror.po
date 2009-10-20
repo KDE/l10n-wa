@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konqueror\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-10-17 06:44+0200\n"
+"POT-Creation-Date: 2009-10-20 06:07+0200\n"
 "PO-Revision-Date: 2009-07-15 18:39+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -1304,11 +1304,18 @@ msgstr ""
 msgid "Location to open"
 msgstr "Eplaeçmint a drovi"
 
-#: sidebar/trees/konqsidebar_tree.cpp:138
+#: sidebar/test/modulemanagertest.cpp:87
+#: sidebar/test/modulemanagertest.cpp:114
+#, fuzzy
+#| msgid "Web SideBar Plugin"
+msgid "SideBar Test Plugin"
+msgstr "Tchôke-divins båre di costé"
+
+#: sidebar/trees/konqsidebar_tree.cpp:161
 msgid "Select Type"
 msgstr "Tchoezi l' sôre"
 
-#: sidebar/trees/konqsidebar_tree.cpp:139
+#: sidebar/trees/konqsidebar_tree.cpp:162
 msgid "Select type:"
 msgstr "Tchoezi l' sôre:"
 
@@ -1352,7 +1359,7 @@ msgid "&Create New Folder"
 msgstr "&Fé on novea ridant"
 
 #: sidebar/trees/bookmark_module/bookmark_module.cpp:77
-#: sidebar/trees/konq_sidebartree.cpp:932
+#: sidebar/trees/konq_sidebartree.cpp:905
 msgid "Delete Folder"
 msgstr "Disfacer l' ridant"
 
@@ -1361,17 +1368,17 @@ msgid "Delete Bookmark"
 msgstr "Disfacer rmåke"
 
 #: sidebar/trees/bookmark_module/bookmark_module.cpp:85
-#: sidebar/trees/konq_sidebartree.cpp:941
+#: sidebar/trees/konq_sidebartree.cpp:914
 msgid "Properties"
 msgstr "Prôpietés"
 
 #: sidebar/trees/bookmark_module/bookmark_module.cpp:89
-#: sidebar/trees/konq_sidebartree.cpp:944
+#: sidebar/trees/konq_sidebartree.cpp:917
 msgid "Open in New Window"
 msgstr "Drovi dins on novea purnea"
 
 #: sidebar/trees/bookmark_module/bookmark_module.cpp:93
-#: sidebar/trees/konq_sidebartree.cpp:947
+#: sidebar/trees/konq_sidebartree.cpp:920
 msgid "Open in New Tab"
 msgstr "Drovi dins ene nouve linwete"
 
@@ -1380,7 +1387,7 @@ msgid "Open Folder in Tabs"
 msgstr "Drovi les ridants dins des linwetes"
 
 #: sidebar/trees/bookmark_module/bookmark_module.cpp:101
-#: sidebar/trees/konq_sidebartree.cpp:950
+#: sidebar/trees/konq_sidebartree.cpp:923
 msgid "Copy Link Address"
 msgstr "Copyî l' adresse do loyén"
 
@@ -1430,27 +1437,27 @@ msgstr "Eplaeçmint:"
 msgid "Add Bookmark"
 msgstr "Radjouter ene rimåke"
 
-#: sidebar/trees/konq_sidebartree.cpp:929
+#: sidebar/trees/konq_sidebartree.cpp:902
 msgid "&Create New Folder..."
 msgstr "&Fé on novea ridant..."
 
-#: sidebar/trees/konq_sidebartree.cpp:935
+#: sidebar/trees/konq_sidebartree.cpp:908
 msgid "Rename"
 msgstr "Rilomer"
 
-#: sidebar/trees/konq_sidebartree.cpp:938
+#: sidebar/trees/konq_sidebartree.cpp:911
 msgid "Delete Link"
 msgstr "Disfacer loyén"
 
-#: sidebar/trees/konq_sidebartree.cpp:989
+#: sidebar/trees/konq_sidebartree.cpp:962
 msgid "New Folder"
 msgstr "Novea ridant"
 
-#: sidebar/trees/konq_sidebartree.cpp:993
+#: sidebar/trees/konq_sidebartree.cpp:966
 msgid "Create New Folder"
 msgstr "Fé on novea ridant..."
 
-#: sidebar/trees/konq_sidebartree.cpp:994
+#: sidebar/trees/konq_sidebartree.cpp:967
 msgid "Enter folder name:"
 msgstr "Tapez li no do ridant:"
 
@@ -1458,11 +1465,39 @@ msgstr "Tapez li no do ridant:"
 msgid "Extended Sidebar"
 msgstr "Sitindowe bår di costé"
 
-#: sidebar/sidebar_widget.cpp:99
+#: sidebar/sidebar_widget.cpp:84
 msgid "Rollback to System Default"
 msgstr "Rivni ås prémetous sistinme"
 
-#: sidebar/sidebar_widget.cpp:105
+#: sidebar/sidebar_widget.cpp:171
+msgid "Configure Navigation Panel"
+msgstr "Apontyî li panea di naiviaedje"
+
+#: sidebar/sidebar_widget.cpp:173
+msgid "Add New"
+msgstr "Radjouter novea"
+
+#: sidebar/sidebar_widget.cpp:177
+msgid "Multiple Views"
+msgstr "Sacwantès vuwes"
+
+#: sidebar/sidebar_widget.cpp:179 sidebar/sidebar_widget.cpp:276
+msgid "Show Tabs Left"
+msgstr "Mostrer les linwetes sol hintche"
+
+#: sidebar/sidebar_widget.cpp:180
+msgid "Show Configuration Button"
+msgstr "Mostrer l' boton d' apontiaedje"
+
+#: sidebar/sidebar_widget.cpp:183
+msgid "Close Navigation Panel"
+msgstr "Clôre li panea di naiviaedje"
+
+#: sidebar/sidebar_widget.cpp:211
+msgid "This entry already exists."
+msgstr "Ciste intrêye egzistêye dedja."
+
+#: sidebar/sidebar_widget.cpp:234
 msgid ""
 "<qt>This removes all your entries from the sidebar and adds the system "
 "default ones.<br /><b>This procedure is irreversible</b><br />Do you want to "
@@ -1472,65 +1507,28 @@ msgstr ""
 "tchoezeyes por vos pal sistinme.<br /><b>Vos n' pôroz nén rivni en erî</"
 "b><br />El voloz vs fé?</qt>"
 
-#: sidebar/sidebar_widget.cpp:234
-msgid "Configure Navigation Panel"
-msgstr "Apontyî li panea di naiviaedje"
-
-#: sidebar/sidebar_widget.cpp:236
-msgid "Add New"
-msgstr "Radjouter novea"
-
-#: sidebar/sidebar_widget.cpp:238
-msgid "Multiple Views"
-msgstr "Sacwantès vuwes"
-
-#: sidebar/sidebar_widget.cpp:240 sidebar/sidebar_widget.cpp:353
-msgid "Show Tabs Left"
-msgstr "Mostrer les linwetes sol hintche"
-
-#: sidebar/sidebar_widget.cpp:241
-msgid "Show Configuration Button"
-msgstr "Mostrer l' boton d' apontiaedje"
-
-#: sidebar/sidebar_widget.cpp:244
-msgid "Close Navigation Panel"
-msgstr "Clôre li panea di naiviaedje"
-
-#: sidebar/sidebar_widget.cpp:287
-msgid "This entry already exists."
-msgstr "Ciste intrêye egzistêye dedja."
-
-#: sidebar/sidebar_widget.cpp:301 sidebar/web_module/web_module.cpp:217
-msgid "Web SideBar Plugin"
-msgstr "Tchôke-divins båre di costé"
-
-#: sidebar/sidebar_widget.cpp:353
+#: sidebar/sidebar_widget.cpp:276
 msgid "Show Tabs Right"
 msgstr "Mostrer les linwetes a droete"
 
-#: sidebar/sidebar_widget.cpp:424
+#: sidebar/sidebar_widget.cpp:286
 msgid "Set Name"
 msgstr "Defini l'no"
 
-#: sidebar/sidebar_widget.cpp:424
+#: sidebar/sidebar_widget.cpp:286
 msgid "Enter the name:"
 msgstr "Tapez l' no:"
 
-#: sidebar/sidebar_widget.cpp:442
+#: sidebar/sidebar_widget.cpp:301
 msgid "Enter a URL:"
 msgstr "Tapez èn URL:"
 
-#: sidebar/sidebar_widget.cpp:450
-#, kde-format
-msgid "<qt><b>%1</b> does not exist</qt>"
-msgstr "<qt><b>%1</b> n' egzistêye nén</qt>"
-
-#: sidebar/sidebar_widget.cpp:481
+#: sidebar/sidebar_widget.cpp:324
 #, kde-format
 msgid "<qt>Do you really want to remove the <b>%1</b> tab?</qt>"
 msgstr "<qt>Voloz vs po do bon oister li linwete <b>%1</b> ?</qt>"
 
-#: sidebar/sidebar_widget.cpp:529
+#: sidebar/sidebar_widget.cpp:370
 msgid ""
 "You have hidden the navigation panel configuration button. To make it "
 "visible again, click the right mouse button on any of the navigation panel "
@@ -1540,37 +1538,41 @@ msgstr ""
 "veyåve cor on côp, clitchîz sol droet boton del sori so tolminme ké boton do "
 "panea d' naiviaedje et tchoezixhoz «Mostrer l' boton d' apontiaedje»."
 
-#: sidebar/sidebar_widget.cpp:598
+#: sidebar/sidebar_widget.cpp:438
 msgid "Configure Sidebar"
 msgstr "Apontyî li Båre di Costé"
 
-#: sidebar/sidebar_widget.cpp:715
+#: sidebar/sidebar_widget.cpp:551
 msgid "Set Name..."
 msgstr "Defini li no..."
 
-#: sidebar/sidebar_widget.cpp:716
+#: sidebar/sidebar_widget.cpp:552
 msgid "Set URL..."
 msgstr "Defini li hårdêye..."
 
-#: sidebar/sidebar_widget.cpp:717
+#: sidebar/sidebar_widget.cpp:553
 msgid "Set Icon..."
 msgstr "Defini l' imådjete..."
 
-#: sidebar/sidebar_widget.cpp:719
+#: sidebar/sidebar_widget.cpp:555
 msgid "Remove"
 msgstr "Oister"
 
-#: sidebar/web_module/web_module.cpp:90
+#: sidebar/web_module/web_module.cpp:86
 msgid "Set Refresh Timeout (0 disables)"
 msgstr "Defini l' tins d' rafristaedje (0=dismetou)"
 
-#: sidebar/web_module/web_module.cpp:98
+#: sidebar/web_module/web_module.cpp:94
 msgid " min"
 msgstr " min"
 
-#: sidebar/web_module/web_module.cpp:100
+#: sidebar/web_module/web_module.cpp:96
 msgid " sec"
 msgstr " seg"
+
+#: sidebar/web_module/web_module.cpp:210
+msgid "Web SideBar Plugin"
+msgstr "Tchôke-divins båre di costé"
 
 #: sidebar/web_module/web_module.h:52
 msgid "&Open Link"
@@ -2458,6 +2460,9 @@ msgid ""
 "If true, when opening a session from within the sessions dialog the tabs "
 "will be opened inside current window."
 msgstr ""
+
+#~ msgid "<qt><b>%1</b> does not exist</qt>"
+#~ msgstr "<qt><b>%1</b> n' egzistêye nén</qt>"
 
 #~ msgid "Minutes"
 #~ msgstr "Munutes"
