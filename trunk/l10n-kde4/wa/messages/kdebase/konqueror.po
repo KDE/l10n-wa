@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konqueror\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-10-30 06:16+0100\n"
+"POT-Creation-Date: 2009-10-31 06:20+0100\n"
 "PO-Revision-Date: 2009-07-15 18:39+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -555,8 +555,7 @@ msgstr "Schaper eyet rlomer..."
 msgid "Manage..."
 msgstr "Manaedjî..."
 
-#: src/konqmainwindow.cpp:3507 src/konqhistorydialog.cpp:77
-#: sidebar/trees/history_module/history_module.cpp:88
+#: src/konqmainwindow.cpp:3507
 msgid "New &Window"
 msgstr "Novea &purnea"
 
@@ -960,7 +959,8 @@ msgstr "Drovi dins &ci purnea ci"
 msgid "Open the document in current window"
 msgstr "Drovi l' documint e purnea do moumint"
 
-#: src/konqmainwindow.cpp:4638 sidebar/web_module/web_module.h:54
+#: src/konqmainwindow.cpp:4638 src/konqhistoryview.cpp:58
+#: sidebar/web_module/web_module.h:54
 msgid "Open in New &Window"
 msgstr "Drovi dins on novea &purnea"
 
@@ -1087,7 +1087,6 @@ msgid "Session exists. Overwrite?"
 msgstr "Li session egzitêye. El sipotchî?"
 
 #: src/konqhistorymodel.cpp:137
-#: sidebar/trees/history_module/history_item.cpp:120
 #, kde-format
 msgid ""
 "<qt><center><b>%1</b></center><hr />Last visited: %2<br />First visited: %"
@@ -1097,60 +1096,20 @@ msgstr ""
 "pol prumî côp: %3<br />Nombe di vizites: %4</qt>"
 
 #: src/konqhistorymodel.cpp:232
-#: sidebar/trees/history_module/history_module.h:62
 msgid "Miscellaneous"
 msgstr "Totès sôres"
 
-#: src/konqhistorydialog.cpp:51
+#: src/konqhistorydialog.cpp:43
+#, fuzzy
+#| msgid "History"
+msgctxt "@title:window"
 msgid "History"
 msgstr "Istwere"
 
-#: src/konqhistorydialog.cpp:81
-#: sidebar/trees/history_module/history_module.cpp:92
-msgid "&Remove Entry"
-msgstr "&Oister foû ciste intrêye"
-
-#: src/konqhistorydialog.cpp:85
-#: sidebar/trees/history_module/history_module.cpp:96
-msgid "C&lear History"
-msgstr "&Netyî l' istwere"
-
-#: src/konqhistorydialog.cpp:89
-#: sidebar/trees/history_module/history_module.cpp:100
-msgid "&Preferences..."
-msgstr "&Preferinces..."
-
-#: src/konqhistorydialog.cpp:96
-#: sidebar/trees/history_module/history_module.cpp:107
-msgid "By &Name"
-msgstr "Sol &No"
-
-#: src/konqhistorydialog.cpp:102
-#: sidebar/trees/history_module/history_module.cpp:113
-msgid "By &Date"
-msgstr "Sol &Date"
-
-#: src/konqhistorydialog.cpp:113 src/konqhistorydialog.cpp:168
-#: sidebar/trees/history_module/history_module.cpp:261
+#: src/konqhistorydialog.cpp:58 src/konqhistoryview.cpp:123
 msgctxt "@action:inmenu Parent of 'By Name' and 'By Date'"
 msgid "Sort"
 msgstr "Relére"
-
-#: src/konqhistorydialog.cpp:126
-msgid "Search in history"
-msgstr "Trover e l' istwere"
-
-#: src/konqhistorydialog.cpp:214
-#: sidebar/trees/history_module/history_module.cpp:370
-#: sidebar/trees/history_module/kcmhistory.cpp:252
-msgid "Do you really want to clear the entire history?"
-msgstr "Voloz vs po do bon soprimer tote l' istwere?"
-
-#: src/konqhistorydialog.cpp:215
-#: sidebar/trees/history_module/history_module.cpp:372
-#: sidebar/trees/history_module/kcmhistory.cpp:254
-msgid "Clear History?"
-msgstr "Soprimer l' istwere?"
 
 #: src/konqview.cpp:1314
 msgid ""
@@ -1240,6 +1199,38 @@ msgstr "%1/s"
 msgid "Stalled"
 msgstr "Djoké"
 
+#: src/konqhistoryview.cpp:62
+msgid "&Remove Entry"
+msgstr "&Oister foû ciste intrêye"
+
+#: src/konqhistoryview.cpp:66
+msgid "C&lear History"
+msgstr "&Netyî l' istwere"
+
+#: src/konqhistoryview.cpp:70
+msgid "&Preferences..."
+msgstr "&Preferinces..."
+
+#: src/konqhistoryview.cpp:77
+msgid "By &Name"
+msgstr "Sol &No"
+
+#: src/konqhistoryview.cpp:83
+msgid "By &Date"
+msgstr "Sol &Date"
+
+#: src/konqhistoryview.cpp:93
+msgid "Search in history"
+msgstr "Trover e l' istwere"
+
+#: src/konqhistoryview.cpp:150 sidebar/history_module/kcmhistory.cpp:251
+msgid "Do you really want to clear the entire history?"
+msgstr "Voloz vs po do bon soprimer tote l' istwere?"
+
+#: src/konqhistoryview.cpp:151 sidebar/history_module/kcmhistory.cpp:253
+msgid "Clear History?"
+msgstr "Soprimer l' istwere?"
+
 #: src/konqguiclients.cpp:66
 #, kde-format
 msgid "Preview &in %1"
@@ -1315,6 +1306,50 @@ msgstr "Eplaeçmint a drovi"
 msgid "SideBar Test Plugin"
 msgstr "Tchôke-divins båre di costé"
 
+#: sidebar/history_module/history_module.cpp:106
+#, fuzzy
+#| msgid "Web Sidebar"
+msgctxt "@action:inmenu Add"
+msgid "History Sidebar Module"
+msgstr "Båre di costé pol naiviaedje waibe"
+
+#: sidebar/history_module/history_module.cpp:129
+#, fuzzy
+#| msgid "History"
+msgctxt "@title:tab"
+msgid "History"
+msgstr "Istwere"
+
+#: sidebar/history_module/kcmhistory.cpp:68
+msgid " day"
+msgid_plural " days"
+msgstr[0] " djoû"
+msgstr[1] " djoûs"
+
+#: sidebar/history_module/kcmhistory.cpp:74
+#: sidebar/history_module/kcmhistory.cpp:79
+#: sidebar/history_module/kcmhistory.cpp:212
+#: sidebar/history_module/kcmhistory.cpp:224
+msgid "Minute"
+msgid_plural "Minutes"
+msgstr[0] "Munute"
+msgstr[1] "Munutes"
+
+#: sidebar/history_module/kcmhistory.cpp:76
+#: sidebar/history_module/kcmhistory.cpp:81
+#: sidebar/history_module/kcmhistory.cpp:210
+#: sidebar/history_module/kcmhistory.cpp:222
+msgid "Day"
+msgid_plural "Days"
+msgstr[0] "Djoû"
+msgstr[1] "Djoûs"
+
+#: sidebar/history_module/kcmhistory.cpp:195
+msgid "<h1>History Sidebar</h1> You can configure the history sidebar here."
+msgstr ""
+"<h1>Istwere el bår di costé</h1> Vos ploz apontyî l' istwere el bår di costé "
+"chal."
+
 #: sidebar/trees/konqsidebar_tree.cpp:192
 #: sidebar/web_module/web_module.cpp:251
 #, fuzzy
@@ -1333,36 +1368,6 @@ msgstr ""
 msgctxt "@title:window"
 msgid "Add folder sidebar module"
 msgstr ""
-
-#: sidebar/trees/history_module/kcmhistory.cpp:69
-msgid " day"
-msgid_plural " days"
-msgstr[0] " djoû"
-msgstr[1] " djoûs"
-
-#: sidebar/trees/history_module/kcmhistory.cpp:75
-#: sidebar/trees/history_module/kcmhistory.cpp:80
-#: sidebar/trees/history_module/kcmhistory.cpp:213
-#: sidebar/trees/history_module/kcmhistory.cpp:225
-msgid "Minute"
-msgid_plural "Minutes"
-msgstr[0] "Munute"
-msgstr[1] "Munutes"
-
-#: sidebar/trees/history_module/kcmhistory.cpp:77
-#: sidebar/trees/history_module/kcmhistory.cpp:82
-#: sidebar/trees/history_module/kcmhistory.cpp:211
-#: sidebar/trees/history_module/kcmhistory.cpp:223
-msgid "Day"
-msgid_plural "Days"
-msgstr[0] "Djoû"
-msgstr[1] "Djoûs"
-
-#: sidebar/trees/history_module/kcmhistory.cpp:196
-msgid "<h1>History Sidebar</h1> You can configure the history sidebar here."
-msgstr ""
-"<h1>Istwere el bår di costé</h1> Vos ploz apontyî l' istwere el bår di costé "
-"chal."
 
 #: sidebar/trees/dirtree_module/dirtree_module.cpp:414
 #, kde-format
@@ -1876,7 +1881,7 @@ msgstr "Djenerå"
 msgid "Feature"
 msgstr "Fonccionålité"
 
-#. i18n: file: sidebar/trees/history_module/history_dlg.ui:128
+#. i18n: file: sidebar/history_module/history_dlg.ui:128
 #. i18n: ectx: property (title), widget (QGroupBox, gbDetails)
 #: about/konq_aboutpage.cc:234 rc.cpp:92
 msgid "Details"
@@ -2268,51 +2273,51 @@ msgstr "Schaper les linwetes eyet purneas drovous pos åjhey rapaxhaedje"
 msgid "&Session name:"
 msgstr "No del &session:"
 
-#. i18n: file: sidebar/trees/history_module/history_dlg.ui:16
+#. i18n: file: sidebar/history_module/history_dlg.ui:16
 #. i18n: ectx: property (title), widget (QGroupBox, gbLimits)
 #: rc.cpp:68
 msgid "Limits"
 msgstr "Limites"
 
-#. i18n: file: sidebar/trees/history_module/history_dlg.ui:38
+#. i18n: file: sidebar/history_module/history_dlg.ui:38
 #. i18n: ectx: property (text), widget (QCheckBox, cbExpire)
 #: rc.cpp:71
 msgid "URLs e&xpire after"
 msgstr "L' URL est &fini après"
 
-#. i18n: file: sidebar/trees/history_module/history_dlg.ui:48
+#. i18n: file: sidebar/history_module/history_dlg.ui:48
 #. i18n: ectx: property (text), widget (QLabel, lEntries)
 #: rc.cpp:74
 msgid "Maximum &number of URLs:"
 msgstr "&Nombe macsimom d' URL:"
 
-#. i18n: file: sidebar/trees/history_module/history_dlg.ui:67
+#. i18n: file: sidebar/history_module/history_dlg.ui:67
 #. i18n: ectx: property (title), widget (QGroupBox, gbFonts)
 #: rc.cpp:77
 msgid "Custom Fonts For"
 msgstr "Fontes tchoezeyes par vos"
 
-#. i18n: file: sidebar/trees/history_module/history_dlg.ui:82
+#. i18n: file: sidebar/history_module/history_dlg.ui:82
 #. i18n: ectx: property (text), widget (QLabel, lbNewer)
 #: rc.cpp:80
 msgid "URLs newer than"
 msgstr "URL pus djonnes ki"
 
-#. i18n: file: sidebar/trees/history_module/history_dlg.ui:98
+#. i18n: file: sidebar/history_module/history_dlg.ui:98
 #. i18n: ectx: property (text), widget (QPushButton, btnFontOlder)
-#. i18n: file: sidebar/trees/history_module/history_dlg.ui:118
+#. i18n: file: sidebar/history_module/history_dlg.ui:118
 #. i18n: ectx: property (text), widget (QPushButton, btnFontNewer)
 #: rc.cpp:83 rc.cpp:89
 msgid "Choose Font..."
 msgstr "Tchoezi fonte..."
 
-#. i18n: file: sidebar/trees/history_module/history_dlg.ui:105
+#. i18n: file: sidebar/history_module/history_dlg.ui:105
 #. i18n: ectx: property (text), widget (QLabel, lbOlder)
 #: rc.cpp:86
 msgid "URLs older than"
 msgstr "URL pus vîs ki"
 
-#. i18n: file: sidebar/trees/history_module/history_dlg.ui:134
+#. i18n: file: sidebar/history_module/history_dlg.ui:134
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbDetailedTips)
 #: rc.cpp:95
 msgid ""
@@ -2322,13 +2327,13 @@ msgstr ""
 "Mostere li nombe di côps k' l' URL a stî vizitêye eyet les date del prumire "
 "et del dierinne vizite, e pus di l' URL"
 
-#. i18n: file: sidebar/trees/history_module/history_dlg.ui:137
+#. i18n: file: sidebar/history_module/history_dlg.ui:137
 #. i18n: ectx: property (text), widget (QCheckBox, cbDetailedTips)
 #: rc.cpp:98
 msgid "Detailed tooltips"
 msgstr "Racsegnes detayîs"
 
-#. i18n: file: sidebar/trees/history_module/history_dlg.ui:149
+#. i18n: file: sidebar/history_module/history_dlg.ui:149
 #. i18n: ectx: property (text), widget (QPushButton, btnClearHistory)
 #: rc.cpp:101
 msgid "Clear History"
