@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konqueror\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-11-10 06:08+0100\n"
+"POT-Creation-Date: 2009-11-11 06:19+0100\n"
 "PO-Revision-Date: 2009-07-15 18:39+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -418,7 +418,7 @@ msgstr ""
 #: src/konqmainwindow.cpp:2421 src/konqmainwindow.cpp:2510
 #: src/konqmainwindow.cpp:2528 src/konqmainwindow.cpp:2548
 #: src/konqmainwindow.cpp:2596 src/konqmainwindow.cpp:2629
-#: src/konqmainwindow.cpp:5078 src/konqviewmanager.cpp:1396
+#: src/konqmainwindow.cpp:5078 src/konqviewmanager.cpp:1398
 msgid "Discard Changes?"
 msgstr "Disfacer les candjmints?"
 
@@ -426,7 +426,7 @@ msgstr "Disfacer les candjmints?"
 #: src/konqmainwindow.cpp:2421 src/konqmainwindow.cpp:2510
 #: src/konqmainwindow.cpp:2528 src/konqmainwindow.cpp:2548
 #: src/konqmainwindow.cpp:2596 src/konqmainwindow.cpp:2629
-#: src/konqmainwindow.cpp:5078 src/konqviewmanager.cpp:1396
+#: src/konqmainwindow.cpp:5078 src/konqviewmanager.cpp:1398
 msgid "&Discard Changes"
 msgstr "&Disfacer les candjmints"
 
@@ -997,7 +997,7 @@ msgstr ""
 "Vos avoz sacwantès linwetes di drovowes dins ç' purnea chal; estoz seur di "
 "voleur cwiter?"
 
-#: src/konqmainwindow.cpp:5040 src/konqviewmanager.cpp:1378
+#: src/konqmainwindow.cpp:5040 src/konqviewmanager.cpp:1380
 msgid "Confirmation"
 msgstr "Acertinaedje"
 
@@ -1151,7 +1151,7 @@ msgstr "Dis&fé: purnea cloyou"
 msgid "Und&o"
 msgstr "Dis&fé"
 
-#: src/konqviewmanager.cpp:1376
+#: src/konqviewmanager.cpp:1378
 msgid ""
 "You have multiple tabs open in this window.\n"
 "Loading a view profile will close them."
@@ -1159,11 +1159,11 @@ msgstr ""
 "Vos avoz sacwantès linwetes di drovowes dins ç' purnea chal.\n"
 "Tcherdjî on profil di vuwes les clôrè."
 
-#: src/konqviewmanager.cpp:1379
+#: src/konqviewmanager.cpp:1381
 msgid "Load View Profile"
 msgstr "Tcherdjî on profil di vuwes"
 
-#: src/konqviewmanager.cpp:1395
+#: src/konqviewmanager.cpp:1397
 msgid ""
 "This tab contains changes that have not been submitted.\n"
 "Loading a profile will discard these changes."
@@ -1350,7 +1350,12 @@ msgstr ""
 "<h1>Istwere el bår di costé</h1> Vos ploz apontyî l' istwere el bår di costé "
 "chal."
 
-#: sidebar/trees/konqsidebar_tree.cpp:173
+#: sidebar/trees/dirtree_module/dirtree_module.cpp:417
+#, kde-format
+msgid "Cannot find parent item %1 in the tree. Internal error."
+msgstr "Dji n' sai trover li parint %1 dins li coxhlaedje. Divintrinne aroke."
+
+#: sidebar/trees/konqsidebar_oldtreemodule.cpp:179
 #: sidebar/web_module/web_module.cpp:251
 #, fuzzy
 #| msgid "Name:"
@@ -1358,60 +1363,55 @@ msgctxt "@label"
 msgid "Name:"
 msgstr "No:"
 
-#: sidebar/trees/konqsidebar_tree.cpp:173
+#: sidebar/trees/konqsidebar_oldtreemodule.cpp:179
 #: sidebar/web_module/web_module.cpp:251
 msgctxt "@label"
 msgid "Path or URL:"
 msgstr ""
 
-#: sidebar/trees/konqsidebar_tree.cpp:174
+#: sidebar/trees/konqsidebar_oldtreemodule.cpp:180
 msgctxt "@title:window"
 msgid "Add folder sidebar module"
 msgstr ""
 
-#: sidebar/trees/dirtree_module/dirtree_module.cpp:415
-#, kde-format
-msgid "Cannot find parent item %1 in the tree. Internal error."
-msgstr "Dji n' sai trover li parint %1 dins li coxhlaedje. Divintrinne aroke."
-
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:73
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:74
 msgid "&Create New Folder"
 msgstr "&Fé on novea ridant"
 
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:77
-#: sidebar/trees/konq_sidebartree.cpp:204
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:78
+#: sidebar/trees/konq_sidebartree.cpp:210
 msgid "Delete Folder"
 msgstr "Disfacer l' ridant"
 
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:81
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:82
 msgid "Delete Bookmark"
 msgstr "Disfacer rmåke"
 
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:85
-#: sidebar/trees/konq_sidebartree.cpp:220
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:86
+#: sidebar/trees/konq_sidebartree.cpp:227
 msgid "Properties"
 msgstr "Prôpietés"
 
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:89
-#: sidebar/trees/konq_sidebartree.cpp:224
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:90
+#: sidebar/trees/konq_sidebartree.cpp:231
 msgid "Open in New Window"
 msgstr "Drovi dins on novea purnea"
 
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:93
-#: sidebar/trees/konq_sidebartree.cpp:228
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:94
+#: sidebar/trees/konq_sidebartree.cpp:235
 msgid "Open in New Tab"
 msgstr "Drovi dins ene nouve linwete"
 
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:97
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:98
 msgid "Open Folder in Tabs"
 msgstr "Drovi les ridants dins des linwetes"
 
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:101
-#: sidebar/trees/konq_sidebartree.cpp:232
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:102
+#: sidebar/trees/konq_sidebartree.cpp:239
 msgid "Copy Link Address"
 msgstr "Copyî l' adresse do loyén"
 
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:333
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:334
 #, kde-format
 msgid ""
 "Are you sure you wish to remove the bookmark folder\n"
@@ -1420,7 +1420,7 @@ msgstr ""
 "Estoz seur di voleur oister l' ridant d' rimåkes\n"
 "«%1»?"
 
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:334
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:335
 #, kde-format
 msgid ""
 "Are you sure you wish to remove the bookmark\n"
@@ -1429,27 +1429,27 @@ msgstr ""
 "Estoz seur di voleur oister l' rimåke\n"
 "«%1»?"
 
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:335
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:336
 msgid "Bookmark Folder Deletion"
 msgstr "Oistaedje ridant di rmåkes"
 
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:336
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:337
 msgid "Bookmark Deletion"
 msgstr "Disfaçaedje di rmåke"
 
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:378
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:379
 msgid "Bookmark Properties"
 msgstr "Prôpietés del rimåke"
 
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:558
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:559
 msgid "&Update"
 msgstr "&Mete a djoû"
 
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:566
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:567
 msgid "Name:"
 msgstr "No:"
 
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:574
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:575
 msgid "Location:"
 msgstr "Eplaeçmint:"
 
@@ -1457,31 +1457,31 @@ msgstr "Eplaeçmint:"
 msgid "Add Bookmark"
 msgstr "Radjouter ene rimåke"
 
-#: sidebar/trees/konq_sidebartree.cpp:200
+#: sidebar/trees/konq_sidebartree.cpp:206
 msgid "&Create New Folder..."
 msgstr "&Fé on novea ridant..."
 
-#: sidebar/trees/konq_sidebartree.cpp:208
+#: sidebar/trees/konq_sidebartree.cpp:214
 msgid "Move to Trash"
 msgstr ""
 
-#: sidebar/trees/konq_sidebartree.cpp:212
+#: sidebar/trees/konq_sidebartree.cpp:218
 msgid "Rename"
 msgstr "Rilomer"
 
-#: sidebar/trees/konq_sidebartree.cpp:216
+#: sidebar/trees/konq_sidebartree.cpp:223
 msgid "Delete Link"
 msgstr "Disfacer loyén"
 
-#: sidebar/trees/konq_sidebartree.cpp:943
+#: sidebar/trees/konq_sidebartree.cpp:954
 msgid "New Folder"
 msgstr "Novea ridant"
 
-#: sidebar/trees/konq_sidebartree.cpp:947
+#: sidebar/trees/konq_sidebartree.cpp:958
 msgid "Create New Folder"
 msgstr "Fé on novea ridant..."
 
-#: sidebar/trees/konq_sidebartree.cpp:948
+#: sidebar/trees/konq_sidebartree.cpp:959
 msgid "Enter folder name:"
 msgstr "Tapez li no do ridant:"
 
@@ -1493,9 +1493,9 @@ msgstr "Sitindowe bår di costé"
 msgid "Rollback to System Default"
 msgstr "Rivni ås prémetous sistinme"
 
-#: sidebar/sidebar_widget.cpp:152
-msgid "Configure Navigation Panel"
-msgstr "Apontyî li panea di naiviaedje"
+#: sidebar/sidebar_widget.cpp:152 sidebar/sidebar_widget.cpp:412
+msgid "Configure Sidebar"
+msgstr "Apontyî li Båre di Costé"
 
 #: sidebar/sidebar_widget.cpp:154
 msgid "Add New"
@@ -1514,8 +1514,10 @@ msgid "Show Configuration Button"
 msgstr "Mostrer l' boton d' apontiaedje"
 
 #: sidebar/sidebar_widget.cpp:164
-msgid "Close Navigation Panel"
-msgstr "Clôre li panea di naiviaedje"
+#, fuzzy
+#| msgid "Web Sidebar"
+msgid "Close Sidebar"
+msgstr "Båre di costé pol naiviaedje waibe"
 
 #: sidebar/sidebar_widget.cpp:192
 msgid "This entry already exists."
@@ -1562,23 +1564,19 @@ msgstr ""
 "veyåve cor on côp, clitchîz sol droet boton del sori so tolminme ké boton do "
 "panea d' naiviaedje et tchoezixhoz «Mostrer l' boton d' apontiaedje»."
 
-#: sidebar/sidebar_widget.cpp:421
-msgid "Configure Sidebar"
-msgstr "Apontyî li Båre di Costé"
-
-#: sidebar/sidebar_widget.cpp:539
+#: sidebar/sidebar_widget.cpp:530
 msgid "Set Name..."
 msgstr "Defini li no..."
 
-#: sidebar/sidebar_widget.cpp:540
+#: sidebar/sidebar_widget.cpp:531
 msgid "Set URL..."
 msgstr "Defini li hårdêye..."
 
-#: sidebar/sidebar_widget.cpp:541
+#: sidebar/sidebar_widget.cpp:532
 msgid "Set Icon..."
 msgstr "Defini l' imådjete..."
 
-#: sidebar/sidebar_widget.cpp:543
+#: sidebar/sidebar_widget.cpp:534
 msgid "Remove"
 msgstr "Oister"
 
@@ -2492,6 +2490,12 @@ msgid ""
 "If true, when opening a session from within the sessions dialog the tabs "
 "will be opened inside current window."
 msgstr ""
+
+#~ msgid "Configure Navigation Panel"
+#~ msgstr "Apontyî li panea di naiviaedje"
+
+#~ msgid "Close Navigation Panel"
+#~ msgstr "Clôre li panea di naiviaedje"
 
 #~ msgid "Select Type"
 #~ msgstr "Tchoezi l' sôre"
