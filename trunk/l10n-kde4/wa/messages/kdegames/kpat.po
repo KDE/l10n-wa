@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpat\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-11-14 06:13+0100\n"
+"POT-Creation-Date: 2009-11-18 06:40+0100\n"
 "PO-Revision-Date: 2009-07-16 22:12+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -22,15 +22,43 @@ msgstr ""
 msgid "Grandfather's Clock"
 msgstr "L' ôrlodje do Grand-Pere"
 
-#: dealer.cpp:832
+#: dealer.cpp:284
+msgid "Solver: This game is lost."
+msgstr "Rezoudeu: Ci djeu est pierdou."
+
+#: dealer.cpp:838
 msgid "Congratulations! We have won."
 msgstr "Alabouneur! Nos avans wangnî!"
 
-#: dealer.cpp:834
+#: dealer.cpp:840
 msgid "Congratulations! You have won."
 msgstr "Alabouneur! Vos avoz wangnî!"
 
-#: dealer.cpp:2066
+#: dealer.cpp:1329
+msgid "Solver: Calculating..."
+msgstr "Rezoudeu: Dji carcule..."
+
+#: dealer.cpp:1355
+msgid "Solver: This game is winnable."
+msgstr "Rezoudeu: Ci djeu est wangnåve."
+
+#: dealer.cpp:1360
+#, fuzzy
+#| msgid "Solver: This game is winnable."
+msgid "Solver: This game is no longer winnable."
+msgstr "Rezoudeu: Ci djeu est wangnåve."
+
+#: dealer.cpp:1362
+#, fuzzy
+#| msgid "Nope, this game cannot be won anymore."
+msgid "Solver: This game cannot be won."
+msgstr "Neni m' fi, ci djeu ci n' pout pus esse wangnî."
+
+#: dealer.cpp:1366
+msgid "Solver: Unable to determine if this game is winnable."
+msgstr "Rezoudeu: Dji n' sai nén dire si ci djeu est wangnåve."
+
+#: dealer.cpp:2076
 msgid ""
 "A new game has been requested, but there is already a game in progress.\n"
 "\n"
@@ -41,11 +69,11 @@ msgstr ""
 "Dji va edjîstré k' c' est kine ezès statistikes sel djeu do moumint est leyî "
 "la."
 
-#: dealer.cpp:2068
+#: dealer.cpp:2078
 msgid "Abandon Current Game?"
 msgstr "Abandner l' djeu do moumint?"
 
-#: dealer.cpp:2069
+#: dealer.cpp:2079
 msgid "Abandon Current Game"
 msgstr "Abandner l' djeu do moumint"
 
@@ -266,77 +294,77 @@ msgstr ", "
 msgid "File to load"
 msgstr "Fitchî a tcherdjî"
 
-#: mainwindow.cpp:110
+#: mainwindow.cpp:147
 #, fuzzy
 #| msgid "&Choose Game..."
 msgid "&Choose Numbered Deal..."
 msgstr "T&choezi on djeu..."
 
-#: mainwindow.cpp:114
-msgid "Change Game Type..."
-msgstr "Candjî d' sôre di djeu..."
-
-#: mainwindow.cpp:118
-msgid "Random Cards"
-msgstr "Cwårdjeus a l' abaye"
-
-#: mainwindow.cpp:125
-msgid "Take Game Preview Snapshots"
-msgstr "Prinde des waitroulêyes des prévoeyaedjes do djeu"
-
-#: mainwindow.cpp:131
-msgid "Select Deck..."
-msgstr "Tchoezi l' cwårdjeu..."
-
 #. i18n: file: statisticsdialog.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, GameStats)
-#: mainwindow.cpp:137 rc.cpp:9 statisticsdialog.cpp:59
+#: mainwindow.cpp:153 rc.cpp:9 statisticsdialog.cpp:59
 msgid "Statistics"
 msgstr "Sitatistikes"
 
-#: mainwindow.cpp:152
+#: mainwindow.cpp:170
 msgctxt ""
 "Take one or more cards from the deck, flip them, and place them in play"
 msgid "Dra&w"
 msgstr "N&ul"
 
-#: mainwindow.cpp:157
+#: mainwindow.cpp:175
 msgctxt "Deal a new row of cards from the deck"
 msgid "Dea&l"
 msgstr "&Diner"
 
-#: mainwindow.cpp:162
+#: mainwindow.cpp:180
 msgctxt "Collect the cards in play, shuffle them and redeal them"
 msgid "&Redeal"
 msgstr "&Ridner"
 
-#: mainwindow.cpp:167
+#: mainwindow.cpp:185
 msgctxt "Automatically move cards to the foundation piles"
 msgid "Dro&p"
 msgstr "&Poizer"
 
-#: mainwindow.cpp:174
+#: mainwindow.cpp:192
+msgid "Change Game Type..."
+msgstr "Candjî d' sôre di djeu..."
+
+#: mainwindow.cpp:196
+msgid "Select Deck..."
+msgstr "Tchoezi l' cwårdjeu..."
+
+#: mainwindow.cpp:200
 msgid "&Enable Autodrop"
 msgstr "&Mete en alaedje les côps otomatikes"
 
-#: mainwindow.cpp:179
+#: mainwindow.cpp:204
 msgid "E&nable Solver"
 msgstr "Mete e&n alaedje li rezoudeu"
 
-#: mainwindow.cpp:184
+#: mainwindow.cpp:208
 msgid "&Remember State on Exit"
 msgstr "Si &sovni di l' estat cwand on mouss foû"
 
-#: mainwindow.cpp:376
+#: mainwindow.cpp:224
+msgid "Take Game Preview Snapshots"
+msgstr "Prinde des waitroulêyes des prévoeyaedjes do djeu"
+
+#: mainwindow.cpp:229
+msgid "Random Cards"
+msgstr "Cwårdjeus a l' abaye"
+
+#: mainwindow.cpp:393
 #, kde-format
 msgid "Help &with %1"
 msgstr "Aidance p&o %1"
 
-#: mainwindow.cpp:413
+#: mainwindow.cpp:425
 msgid "Help &with Current Game"
 msgstr "Aidance pol djeu do moumint"
 
-#: mainwindow.cpp:551
+#: mainwindow.cpp:563
 #, fuzzy
 #| msgid ""
 #| "Enter a game number (Freecell deals are the same as in the Freecell FAQ):"
@@ -347,25 +375,25 @@ msgstr ""
 "Tapeez on limero d' pårt (les dones di Freecell sont les minmes k' el FÅK di "
 "Freecell):"
 
-#: mainwindow.cpp:552
+#: mainwindow.cpp:564
 #, fuzzy
 #| msgid "Enter a game number:"
 msgid "Enter a deal number:"
 msgstr "Tapez on limero d' pårt:"
 
-#: mainwindow.cpp:554
+#: mainwindow.cpp:566
 msgid "Choose Numbered Deal"
 msgstr ""
 
-#: mainwindow.cpp:612
+#: mainwindow.cpp:624
 msgid "The saved game is of an unknown type."
 msgstr "Li djeu di schapé est d' ene sôre nén cnoxhowe."
 
-#: mainwindow.cpp:617
+#: mainwindow.cpp:629
 msgid "The file is not a KPatience saved game."
 msgstr "Li fitchî n' est nén ene pårt schapêye di KPacyince."
 
-#: mainwindow.cpp:622
+#: mainwindow.cpp:634
 #, kde-format
 msgid ""
 "The following error occurred while reading the file:\n"
@@ -374,31 +402,11 @@ msgstr ""
 "Åk n' a nén stî come dji lijheu l' fitchî:\n"
 "\"%1\""
 
-#: mainwindow.cpp:629
+#: mainwindow.cpp:641
 msgid "Unable to load the saved game file."
 msgstr "Dji n' sai tcherdjî l' fitchî del pårt schapêye."
 
-#: mainwindow.cpp:673
-msgid "Solver: Calculating..."
-msgstr "Rezoudeu: Dji carcule..."
-
-#: mainwindow.cpp:678
-msgid "Solver: This game is winnable."
-msgstr "Rezoudeu: Ci djeu est wangnåve."
-
-#: mainwindow.cpp:683
-msgid "Solver: This game is not winnable in its current state."
-msgstr "Rezoudeu: Ci djeu n' est nén wangnåve dins l' estat k' il est."
-
-#: mainwindow.cpp:688
-msgid "Solver: Unable to determine if this game is winnable."
-msgstr "Rezoudeu: Dji n' sai nén dire si ci djeu est wangnåve."
-
-#: mainwindow.cpp:693
-msgid "Solver: This game is lost."
-msgstr "Rezoudeu: Ci djeu est pierdou."
-
-#: mainwindow.cpp:698
+#: mainwindow.cpp:685
 #, kde-format
 msgid "1 move"
 msgid_plural "%1 moves"
@@ -526,6 +534,9 @@ msgstr[1] "%1 di wangnîs"
 msgid "Yukon"
 msgstr "Yukon"
 
+#~ msgid "Solver: This game is not winnable in its current state."
+#~ msgstr "Rezoudeu: Ci djeu n' est nén wangnåve dins l' estat k' il est."
+
 #~ msgid "Game Number"
 #~ msgstr "Limero di pårt"
 
@@ -553,9 +564,6 @@ msgstr "Yukon"
 
 #~ msgid "This game can still be won! Good luck to you."
 #~ msgstr "Ci djeu pout co esse wangnî! Boune tchance."
-
-#~ msgid "Nope, this game cannot be won anymore."
-#~ msgstr "Neni m' fi, ci djeu ci n' pout pus esse wangnî."
 
 #~ msgid "Timeout while playing - unknown if it can be won"
 #~ msgstr "Astådje po djouwer - dji n' sai si ça pout esse wangnî"
