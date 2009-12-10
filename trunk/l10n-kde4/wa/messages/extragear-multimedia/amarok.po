@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-12-09 08:06+0100\n"
+"POT-Creation-Date: 2009-12-10 06:47+0100\n"
 "PO-Revision-Date: 2009-12-01 19:01+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -1132,11 +1132,11 @@ msgstr "&Replaecî djivêye a djouwer"
 
 #: context/applets/albums/AlbumsView.cpp:115
 #: browsers/filebrowser/MyDirOperator.cpp:274
-#: playlist/view/PlaylistViewCommon.cpp:198
+#: playlist/view/PlaylistViewCommon.cpp:203
 msgid "Edit Track Details"
 msgstr "Candjî detays do boket"
 
-#: context/applets/albums/Albums.cpp:178
+#: context/applets/albums/Albums.cpp:182
 #, kde-format
 msgid "Disc %1"
 msgstr "Plake %1"
@@ -1321,7 +1321,8 @@ msgstr "Årtisse"
 #: browsers/collectionbrowser/CollectionWidget.cpp:186
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:250 rc.cpp:1225
 #: services/magnatune/MagnatuneStore.cpp:211
-#: services/jamendo/JamendoInfoParser.cpp:83 playlist/PlaylistHeader.cpp:40
+#: services/jamendo/JamendoInfoParser.cpp:83
+#: playlist/view/PlaylistViewCommon.cpp:52 playlist/PlaylistHeader.cpp:40
 #: playlist/PlaylistModel.cpp:704 widgets/SmartPlaylistEditor.cpp:183
 #: widgets/SmartPlaylistEditor.cpp:197
 msgid "Album"
@@ -4838,17 +4839,23 @@ msgstr "&Radjouter floû..."
 msgid "&Export Playlist As..."
 msgstr "&Ebaguer djivêye a djouwer eyet l' rilomer..."
 
-#: MainWindow.cpp:747 MainWindow.cpp:755
+#: MainWindow.cpp:747 amarokurls/NavigationUrlGenerator.cpp:216
 #, fuzzy
-#| msgid "Bookmark this Artist"
-msgid "Bookmark This Location"
-msgstr "Fé ene rimåke po cist årtisse"
+#| msgid "Bookmark"
+msgid "Bookmark Media Sources View"
+msgstr "Rimåke"
 
 #: MainWindow.cpp:751 amarokurls/BookmarkManager.cpp:42
 #, fuzzy
 #| msgid "Cover Manager"
 msgid "Bookmark Manager"
 msgstr "Manaedjeu des potchetes"
+
+#: MainWindow.cpp:755 playlist/PlaylistViewUrlGenerator.cpp:101
+#, fuzzy
+#| msgid "Smart Playlist"
+msgid "Bookmark Playlist Setup"
+msgstr "Malene djivêye a djouwer"
 
 #: MainWindow.cpp:759
 #, fuzzy
@@ -4937,7 +4944,7 @@ msgstr "Schoûte voltî l' boket do moumint"
 msgid "Last.fm: Skip Current Track"
 msgstr "Schoûte voltî l' boket do moumint"
 
-#: MainWindow.cpp:864 playlist/view/PlaylistViewCommon.cpp:106
+#: MainWindow.cpp:864 playlist/view/PlaylistViewCommon.cpp:111
 msgid "Queue Track"
 msgstr "Mete boket el cawêye"
 
@@ -9623,25 +9630,19 @@ msgstr "Les sourdants shuvants sont disponibes po c' boket:"
 msgid "Ok"
 msgstr "I va"
 
-#: playlist/view/PlaylistViewCommon.cpp:48
-#, fuzzy
-#| msgid "Album"
-msgid " Album"
-msgstr "Albom"
-
-#: playlist/view/PlaylistViewCommon.cpp:99
+#: playlist/view/PlaylistViewCommon.cpp:104
 msgid "Stop Playing After This Track"
 msgstr "Arester d' djouwer ç' boket ci"
 
-#: playlist/view/PlaylistViewCommon.cpp:106
+#: playlist/view/PlaylistViewCommon.cpp:111
 msgid "Dequeue Track"
 msgstr "Oister boket del cawêye"
 
-#: playlist/view/PlaylistViewCommon.cpp:117
+#: playlist/view/PlaylistViewCommon.cpp:122
 msgid "Remove From Playlist"
 msgstr "Oister del djivêye a djouwer"
 
-#: playlist/view/PlaylistViewCommon.cpp:181
+#: playlist/view/PlaylistViewCommon.cpp:186
 msgid "Select Source"
 msgstr "Tchoezi sourdant"
 
@@ -9662,12 +9663,6 @@ msgstr "&Trover"
 #| msgid " plays"
 msgid "%1 layout"
 msgstr " djouwaedjes"
-
-#: playlist/PlaylistViewUrlGenerator.cpp:101
-#, fuzzy
-#| msgid "Smart Playlist"
-msgid "Bookmark Playlist Setup"
-msgstr "Malene djivêye a djouwer"
 
 #: playlist/PlaylistDefines.h:86
 msgctxt "Empty placeholder token used for spacing in playlist layouts"
@@ -10440,12 +10435,6 @@ msgstr "Årtisse «%1» di %2"
 msgid "Artist \"%1\""
 msgstr "Årtisse «%1»"
 
-#: amarokurls/NavigationUrlGenerator.cpp:216
-#, fuzzy
-#| msgid "Bookmark"
-msgid "Bookmark Media Sources View"
-msgstr "Rimåke"
-
 #: widgets/VolumeWidget.cpp:48
 msgid "Mute"
 msgstr "Moya"
@@ -10972,6 +10961,16 @@ msgstr "Radjouter eyet &djouwer"
 #: TrayIcon.cpp:224
 msgid "&Queue Track"
 msgstr "&Mete boket el cawêye"
+
+#, fuzzy
+#~| msgid "Bookmark this Artist"
+#~ msgid "Bookmark This Location"
+#~ msgstr "Fé ene rimåke po cist årtisse"
+
+#, fuzzy
+#~| msgid "Album"
+#~ msgid " Album"
+#~ msgstr "Albom"
 
 #~ msgid "No purchases found."
 #~ msgstr "Dji n' a trové nol atchtaedje."
