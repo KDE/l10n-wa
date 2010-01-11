@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-01-10 06:28+0100\n"
+"POT-Creation-Date: 2010-01-11 06:52+0100\n"
 "PO-Revision-Date: 2010-01-03 19:12+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 
 #: mac/GrowlInterface.cpp:37 context/engines/current/CurrentEngine.cpp:150
 #: context/applets/currenttrack/CurrentTrack.cpp:127
-#: context/applets/photos/PhotosApplet.cpp:132 App.cpp:1003
+#: context/applets/photos/PhotosApplet.cpp:132 App.cpp:1045
 #: widgets/Osd.cpp:578
 msgid "No track playing"
 msgstr "Nou boket di djouwé"
@@ -927,7 +927,7 @@ msgid "Lyrics data could not be parsed"
 msgstr "Dji n' a sepou analijhî les dnêyes"
 
 #: context/applets/videoclip/VideoclipApplet.cpp:107
-#: context/applets/lyrics/LyricsApplet.cpp:130
+#: context/applets/lyrics/LyricsApplet.cpp:124
 #: context/applets/photos/PhotosApplet.cpp:78
 #: context/applets/wikipedia/WikipediaApplet.cpp:141
 #, fuzzy
@@ -1113,49 +1113,49 @@ msgstr[0] "%1 boket"
 msgstr[1] "%1 bokets"
 
 #: context/applets/lyrics/LyricsApplet.cpp:48
-#: context/applets/lyrics/LyricsApplet.cpp:88
-#: context/applets/lyrics/LyricsApplet.cpp:243
-#: context/applets/lyrics/LyricsApplet.cpp:301
-#: context/applets/lyrics/LyricsApplet.cpp:312 dialogs/TagDialog.cpp:685
+#: context/applets/lyrics/LyricsApplet.cpp:82
+#: context/applets/lyrics/LyricsApplet.cpp:227
+#: context/applets/lyrics/LyricsApplet.cpp:281
+#: context/applets/lyrics/LyricsApplet.cpp:292 dialogs/TagDialog.cpp:685
 msgid "Lyrics"
 msgstr "Paroles"
 
-#: context/applets/lyrics/LyricsApplet.cpp:94
+#: context/applets/lyrics/LyricsApplet.cpp:88
 #, fuzzy
 #| msgid "Lyrics"
 msgid "Edit Lyrics"
 msgstr "Paroles"
 
-#: context/applets/lyrics/LyricsApplet.cpp:103
+#: context/applets/lyrics/LyricsApplet.cpp:97
 #: firstruntutorial/FirstRunTutorialPage.cpp:56
 msgid "Close"
 msgstr "Clôre"
 
-#: context/applets/lyrics/LyricsApplet.cpp:112
+#: context/applets/lyrics/LyricsApplet.cpp:106
 #, fuzzy
 #| msgid "Lyrics"
 msgid "Save Lyrics"
 msgstr "Paroles"
 
-#: context/applets/lyrics/LyricsApplet.cpp:121
+#: context/applets/lyrics/LyricsApplet.cpp:115
 msgid "Reload Lyrics"
 msgstr "Ritcherdjî paroles"
 
-#: context/applets/lyrics/LyricsApplet.cpp:252
+#: context/applets/lyrics/LyricsApplet.cpp:234
 msgid "No lyrics script is running."
 msgstr "I gn a pont d' sicripe des paroles enondé."
 
-#: context/applets/lyrics/LyricsApplet.cpp:264
+#: context/applets/lyrics/LyricsApplet.cpp:246
 #, fuzzy
 #| msgid "Fetching content.."
 msgid "Lyrics : Fetching ..."
 msgstr "Dji cwîr l' ådvins..."
 
-#: context/applets/lyrics/LyricsApplet.cpp:265
+#: context/applets/lyrics/LyricsApplet.cpp:247
 msgid "Lyrics are being fetched."
 msgstr "Les paroles ont stî analijheyes."
 
-#: context/applets/lyrics/LyricsApplet.cpp:271
+#: context/applets/lyrics/LyricsApplet.cpp:253
 #, fuzzy, kde-format
 #| msgid ""
 #| "Lyrics were not able to be downloaded. Please check your internet "
@@ -1169,18 +1169,18 @@ msgstr ""
 "Dji n' a sepou aberweter les paroles. Waitîz vosse raloyaedje al daegntoele, "
 "s' i vs plait: %1"
 
-#: context/applets/lyrics/LyricsApplet.cpp:324
+#: context/applets/lyrics/LyricsApplet.cpp:303
 msgid "There were no lyrics found for this track"
 msgstr "Dji n' a nén trové d' parole po ç' boket ci"
 
-#: context/applets/lyrics/LyricsApplet.cpp:422
+#: context/applets/lyrics/LyricsApplet.cpp:388
 msgctxt "@info"
 msgid ""
 "Do you really want to refetch lyrics for this track ? All changes you may "
 "have made will be lost."
 msgstr ""
 
-#: context/applets/lyrics/LyricsApplet.cpp:423
+#: context/applets/lyrics/LyricsApplet.cpp:389
 #, fuzzy
 #| msgid "Repeat Playlist"
 msgid "Refetch lyrics"
@@ -1188,7 +1188,7 @@ msgstr "Repeter djivêye a djouwer"
 
 #. i18n: file: context/applets/lyrics/lyricsSettings.ui:26
 #. i18n: ectx: property (windowTitle), widget (QWidget, lyricsSettings)
-#: context/applets/lyrics/LyricsApplet.cpp:454 rc.cpp:566
+#: context/applets/lyrics/LyricsApplet.cpp:420 rc.cpp:566
 #, fuzzy
 #| msgid "&Settings"
 msgid "Lyrics Settings"
@@ -1546,7 +1546,7 @@ msgid "Configure Equalizer"
 msgstr "Mete en alaedje ewalijheu"
 
 #: configdialog/dialogs/PlaybackConfig.cpp:125
-msgid "Equalizer not supported by this Phonon version."
+msgid "Sorry, equalizer is not supported by your Phonon version."
 msgstr ""
 
 #: configdialog/dialogs/PlaybackConfig.cpp:192
@@ -2555,178 +2555,194 @@ msgstr ""
 "\n"
 "(Date di costrujhaedje: %1)"
 
-#: App.cpp:457
+#: App.cpp:487
 msgid "Files/URLs to open"
 msgstr "Fitchîs/URL a drovi"
 
-#: App.cpp:459
+#: App.cpp:489
 msgid "Skip backwards in playlist"
 msgstr "Passer å shuvant el djivêye a djouwer"
 
-#: App.cpp:461
+#: App.cpp:491
 msgid "Start playing current playlist"
 msgstr "Ataker a djouwer l' djivêye a djouwer do moumint"
 
-#: App.cpp:463
+#: App.cpp:493
 msgid "Play if stopped, pause if playing"
 msgstr "Djouwer si aresté, djoker si tot djouwant"
 
-#: App.cpp:464
+#: App.cpp:494
 msgid "Pause playback"
 msgstr "Djoker djouwaedje"
 
-#: App.cpp:466
+#: App.cpp:496
 msgid "Stop playback"
 msgstr "Arester djouwaedje"
 
-#: App.cpp:468
+#: App.cpp:498
 msgid "Skip forwards in playlist"
 msgstr "Passer å shuvant el djivêye a djouwer"
 
-#: App.cpp:469
+#: App.cpp:499
 msgid "Additional options:"
 msgstr "Ôtès tchuzes:"
 
-#: App.cpp:471
+#: App.cpp:501
 msgid "Append files/URLs to playlist"
 msgstr "Adjouter fitchîs/URL al djivêye a djouwer"
 
-#: App.cpp:472
+#: App.cpp:502
 msgid "Queue URLs after the currently playing track"
 msgstr "Mete al cawêye des URL après l' boket djouwé pol moumint"
 
-#: App.cpp:474
+#: App.cpp:504
 msgid "Load URLs, replacing current playlist"
 msgstr "Tcherdjî des URL, e rplaeçant l' djivêye a djouwer do moumint"
 
-#: App.cpp:476
+#: App.cpp:506
 msgid "Print verbose debugging information"
 msgstr "Rexhe vierbeusmint des informåcions di disbugaedje"
 
-#: App.cpp:478
+#: App.cpp:508
 msgid "Allow running multiple Amarok instances"
 msgstr "Permet l' alaedje di sacwantès instances d' Amarok"
 
-#: App.cpp:479
+#: App.cpp:509
 msgid "Base for relative filenames/URLs"
 msgstr "Båze po nos d' fitchî/URL relatifs"
 
-#: App.cpp:481
-msgid ""
-"Run integrated unit tests. Output can be 'log' for logfiles, 'stdout' for "
-"stdout."
+#: App.cpp:511
+#, fuzzy
+#| msgid "Stream options"
+msgid "Unit test options:"
+msgstr "Tuzes do floû"
+
+#: App.cpp:512
+msgid "Run integrated unit tests"
 msgstr ""
 
-#: App.cpp:730
+#: App.cpp:513
+msgid "Destination of test output: 'stdout', 'log'"
+msgstr ""
+
+#: App.cpp:514
+msgid "Format of test output: 'xml', 'lightxml', 'plaintext'"
+msgstr ""
+
+#: App.cpp:515
+msgid "Verbosity from 0-3 (highest)"
+msgstr ""
+
+#: App.cpp:772
 msgid ""
 "The embedded database was not found; you must set up a database server "
 "connection.\n"
 "You must restart Amarok after doing this."
 msgstr ""
 
-#: App.cpp:731
+#: App.cpp:773
 msgid ""
 "The connection details for the database server were invalid.\n"
 "You must enter correct settings and restart Amarok after doing this."
 msgstr ""
 
-#: App.cpp:732
+#: App.cpp:774
 #, fuzzy
 #| msgid "Database Name"
 msgid "Database Error"
 msgstr "No del båze di dnêyes"
 
-#: App.cpp:777
+#: App.cpp:819
 msgid "Moving files to trash"
 msgstr "Tapaedje di fitchîs å batch"
 
-#: App.cpp:875
+#: App.cpp:917
 #, fuzzy
 #| msgid "Unknown"
 msgctxt "When this track was last played"
 msgid "Unknown"
 msgstr "Nén cnoxhou"
 
-#: App.cpp:880
+#: App.cpp:922
 #, kde-format
 msgctxt "monthname year"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: App.cpp:887
+#: App.cpp:929
 #, kde-format
 msgid "One week ago"
 msgid_plural "%1 weeks ago"
 msgstr[0] "I gn a ene samwinne"
 msgstr[1] "I gn a %1 samwinnes"
 
-#: App.cpp:893
+#: App.cpp:935
 msgid "Yesterday"
 msgstr "Ayir"
 
-#: App.cpp:894
+#: App.cpp:936
 #, kde-format
 msgid "One day ago"
 msgid_plural "%1 days ago"
 msgstr[0] "I gn a on djoû"
 msgstr[1] "I gn a %1 djoûs"
 
-#: App.cpp:897
+#: App.cpp:939
 #, kde-format
 msgid "One hour ago"
 msgid_plural "%1 hours ago"
 msgstr[0] "I gn a ene eure"
 msgstr[1] "I gn a %1 eures"
 
-#: App.cpp:903
+#: App.cpp:945
 #, kde-format
 msgid "One minute ago"
 msgid_plural "%1 minutes ago"
 msgstr[0] "I gn a ene munute"
 msgstr[1] "I gn a %1 munutes"
 
-#: App.cpp:904
+#: App.cpp:946
 msgid "Within the last minute"
 msgstr "Divins l' dierinne munute"
 
-#: App.cpp:906
+#: App.cpp:948
 msgid "The future"
 msgstr "Li futeur"
 
-#: App.cpp:912
+#: App.cpp:954
 msgctxt "The amount of time since last played"
 msgid "Never"
 msgstr "Måy"
 
-#: App.cpp:922
+#: App.cpp:964
 msgctxt "The amount of time since last played"
 msgid "0"
 msgstr "0"
 
-#: App.cpp:931
+#: App.cpp:973
 #, kde-format
 msgctxt "number of months ago"
 msgid "%1M"
 msgstr "%1M"
 
-#: App.cpp:935
+#: App.cpp:977
 #, kde-format
 msgctxt "w for weeks"
 msgid "%1w"
 msgstr "%1s"
 
-#: App.cpp:938
+#: App.cpp:980
 msgctxt "When this track was last played"
 msgid "Tomorrow"
 msgstr "Dimwin"
 
-#: App.cpp:944
+#: App.cpp:986
 #, no-c-format, kde-format
 msgctxt "d for days"
 msgid "%1d"
 msgstr "%1dj"
 
-#: App.cpp:947
+#: App.cpp:989
 #, kde-format
 msgctxt "h for hours"
 msgid "%1h"
@@ -2754,34 +2770,34 @@ msgstr "%1e"
 #. i18n: ectx: property (text), widget (QLabel, eqBand8Value)
 #. i18n: file: configdialog/dialogs/EqualizerConfig.ui:1218
 #. i18n: ectx: property (text), widget (QLabel, eqBand9Value)
-#: App.cpp:956 rc.cpp:749 rc.cpp:755 rc.cpp:761 rc.cpp:767 rc.cpp:773
+#: App.cpp:998 rc.cpp:749 rc.cpp:755 rc.cpp:761 rc.cpp:767 rc.cpp:773
 #: rc.cpp:779 rc.cpp:785 rc.cpp:791 rc.cpp:797 rc.cpp:803 rc.cpp:809
 msgid "0"
 msgstr "0"
 
-#: App.cpp:973
+#: App.cpp:1015
 #, kde-format
 msgctxt "track by artist on album"
 msgid "<b>%1</b> by <b>%2</b> on <b>%3</b>"
 msgstr "<b>%1</b> pa <b>%2</b> so <b>%3</b>"
 
-#: App.cpp:976
+#: App.cpp:1018
 #, kde-format
 msgctxt "track by artist"
 msgid "<b>%1</b> by <b>%2</b>"
 msgstr "<b>%1</b> pa <b>%2</b>"
 
-#: App.cpp:980
+#: App.cpp:1022
 #, kde-format
 msgctxt "track on album"
 msgid "<b>%1</b> on <b>%2</b>"
 msgstr "<b>%1</b> so <b>%2</b>"
 
-#: App.cpp:985
+#: App.cpp:1027
 msgid "Unknown track"
 msgstr "Boket nén cnoxhou"
 
-#: App.cpp:992
+#: App.cpp:1034
 #, fuzzy, kde-format
 #| msgid " on <b>%1</b>"
 msgctxt "track from source"
@@ -3336,7 +3352,7 @@ msgstr ""
 msgid "No MP3 Support"
 msgstr "Nou sopoirt MP3"
 
-#: EngineController.cpp:760
+#: EngineController.cpp:772
 #, fuzzy
 #| msgid "Pre-amp"
 msgid "Preamp"
@@ -6566,7 +6582,7 @@ msgstr "&Riprinde li djouwaedje a l' enondaedje"
 #: rc.cpp:695
 #, fuzzy
 #| msgid "Sound system configuration"
-msgid "Sound configuration"
+msgid "Sound Configuration"
 msgstr "Apontiaedje do son do sistinme"
 
 #. i18n: file: configdialog/dialogs/PlaybackConfig.ui:120
@@ -6586,7 +6602,7 @@ msgstr "Apontyî ramexhnêye"
 #. i18n: file: configdialog/dialogs/PlaybackConfig.ui:136
 #. i18n: ectx: property (toolTip), widget (QPushButton, equalizerButton)
 #: rc.cpp:704
-msgid "The equalizer allows to alter the sound of your music."
+msgid "The equalizer allows you to alter the sound of your music."
 msgstr ""
 
 #. i18n: file: configdialog/dialogs/EqualizerConfig.ui:15
@@ -10861,7 +10877,7 @@ msgstr "Cweraedje di potchete po %1..."
 #: covermanager/CoverFetcher.cpp:266
 #, fuzzy, kde-format
 #| msgid "Fetching cover for %1..."
-msgid "Cancelled fetching cover for '%1'."
+msgid "Canceled fetching cover for '%1'."
 msgstr "Cweraedje di potchete po %1..."
 
 #: covermanager/CoverFetcher.cpp:273
