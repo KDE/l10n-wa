@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-01-10 06:19+0100\n"
+"POT-Creation-Date: 2010-01-12 07:01+0100\n"
 "PO-Revision-Date: 2009-10-23 18:02+0000\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -3821,7 +3821,7 @@ msgstr "&I va"
 #. i18n: ectx: property (text), widget (QPushButton, buttonCancel)
 #. i18n: file: plugins/extensions/dockers/defaultdockers/wdgpalettechooser.ui:74
 #. i18n: ectx: property (text), widget (QPushButton, buttonCancel)
-#: rc.cpp:1169 rc.cpp:2464 plugins/tools/tool_polyline/kis_tool_polyline.cc:63
+#: rc.cpp:1169 rc.cpp:2464 ui/tool/kis_tool_polyline_base.cpp:42
 msgid "&Cancel"
 msgstr "&Rinoncî"
 
@@ -8276,6 +8276,12 @@ msgstr "YCbCr (8 bites etir/canå)"
 msgid "Selection"
 msgstr "Tchoes"
 
+#: ui/tool/kis_tool_polyline_base.cpp:39
+#, fuzzy
+#| msgid "&Finish Polygon"
+msgid "&Finish"
+msgstr "&Fini poligone"
+
 #: ui/tool/kis_tool.cc:103
 #, fuzzy
 #| msgid "Foreground Color"
@@ -8292,7 +8298,7 @@ msgstr "Coleur di dvant"
 msgid "No options"
 msgstr "Nole tchuze"
 
-#: ui/tool/kis_tool_freehand.cc:409 ui/tool/kis_tool_freehand.cc:418
+#: ui/tool/kis_tool_freehand.cc:415 ui/tool/kis_tool_freehand.cc:424
 msgid "Freehand tool"
 msgstr "Usteye mwin libe"
 
@@ -8561,58 +8567,62 @@ msgid "Lukáš Tvrdý"
 msgstr "Lukáš Tvrdý"
 
 #: ui/kis_aboutdata.h:58
+msgid "Marc Pegon"
+msgstr ""
+
+#: ui/kis_aboutdata.h:59
 msgid "Matthias Elter"
 msgstr "Matthias Elter"
 
-#: ui/kis_aboutdata.h:59
+#: ui/kis_aboutdata.h:60
 msgid "Melchior Franz"
 msgstr "Melchior Franz"
 
-#: ui/kis_aboutdata.h:60
+#: ui/kis_aboutdata.h:61
 msgid "Michael Koch"
 msgstr "Michael Koch"
 
-#: ui/kis_aboutdata.h:61
+#: ui/kis_aboutdata.h:62
 msgid "Michael Thaler"
 msgstr "Michael Thaler"
 
-#: ui/kis_aboutdata.h:62
+#: ui/kis_aboutdata.h:63
 msgid "Patrick Julien"
 msgstr "Patrick Julien"
 
-#: ui/kis_aboutdata.h:63
+#: ui/kis_aboutdata.h:64
 msgid "Roger Larsson"
 msgstr "Roger Larsson"
 
-#: ui/kis_aboutdata.h:64
+#: ui/kis_aboutdata.h:65
 msgid "Samy Lange"
 msgstr "Samy Lange"
 
-#: ui/kis_aboutdata.h:65
+#: ui/kis_aboutdata.h:66
 msgid "Sven Langkamp"
 msgstr "Sven Langkamp"
 
-#: ui/kis_aboutdata.h:66
+#: ui/kis_aboutdata.h:67
 msgid "Toshitaka Fujioka"
 msgstr "Toshitaka Fujioka"
 
-#: ui/kis_aboutdata.h:67
+#: ui/kis_aboutdata.h:68
 msgid "Thomas Zander"
 msgstr "Thomas Zander"
 
-#: ui/kis_aboutdata.h:68
+#: ui/kis_aboutdata.h:69
 msgid "Tom Burdick"
 msgstr "Tom Burdick"
 
-#: ui/kis_aboutdata.h:69
+#: ui/kis_aboutdata.h:70
 msgid "Vera Lukman"
 msgstr ""
 
-#: ui/kis_aboutdata.h:70
+#: ui/kis_aboutdata.h:71
 msgid "Sander Koning"
 msgstr "Sander Koning"
 
-#: ui/kis_aboutdata.h:71
+#: ui/kis_aboutdata.h:72
 msgid "Andreas Lundin"
 msgstr "Andreas Lundin"
 
@@ -9662,19 +9672,11 @@ msgstr "Transformer perspective"
 msgid "Draw a polygon. Shift-mouseclick ends the polygon."
 msgstr "Dessiner on poligone. MAJ+clitch del sori fini l' poligone."
 
-#: plugins/tools/tool_polyline/kis_tool_polyline.cc:60
-msgid "&Finish Polyline"
-msgstr "&Fini poliroye"
-
-#: plugins/tools/tool_polyline/kis_tool_polyline.cc:118
+#: plugins/tools/tool_polyline/kis_tool_polyline.cc:55
 msgid "Polyline"
 msgstr "Poliroye"
 
-#: plugins/tools/tool_polyline/kis_tool_polyline.cc:317
-msgid "Press shift-mouseclick to end the polyline."
-msgstr "Tchôkî MAJ+clitch del sori po fini l' poliroye."
-
-#: plugins/tools/tool_polyline/kis_tool_polyline.h:81
+#: plugins/tools/tool_polyline/kis_tool_polyline.h:54
 msgid "Draw a polyline. Shift-mouseclick ends the polyline."
 msgstr "Dessiner ene poliroye. MAJ+clitch del sori fini l' poligone."
 
@@ -9822,8 +9824,8 @@ msgstr "Tchoezi ene redjon pa s' cotoû"
 msgid "Select similar colors"
 msgstr "Tchoezi coleurs k' î rshonnèt"
 
-#: plugins/tools/selectiontools/kis_tool_select_polygonal.cc:71
-#: plugins/tools/selectiontools/kis_tool_select_polygonal.cc:82
+#: plugins/tools/selectiontools/kis_tool_select_polygonal.cc:72
+#: plugins/tools/selectiontools/kis_tool_select_polygonal.cc:83
 msgid "Polygonal Selection"
 msgstr "Tchoes poligonå"
 
@@ -10957,16 +10959,16 @@ msgstr "Coûtche HDR"
 msgid "JPEG 2000 Export Options"
 msgstr "Tchuzes del djeyometreye"
 
+#: plugins/formats/pdf/kis_pdf_import.cpp:100
 #: plugins/formats/pdf/kis_pdf_import.cpp:101
-#: plugins/formats/pdf/kis_pdf_import.cpp:102
 msgid "A password is required to read that pdf"
 msgstr ""
 
-#: plugins/formats/pdf/kis_pdf_import.cpp:111
+#: plugins/formats/pdf/kis_pdf_import.cpp:110
 msgid "PDF Import Options"
 msgstr ""
 
-#: plugins/formats/pdf/kis_pdf_import.cpp:142
+#: plugins/formats/pdf/kis_pdf_import.cpp:141
 #, fuzzy, kde-format
 msgid "Page %1"
 msgstr "Coûtche %1"
@@ -11593,6 +11595,12 @@ msgstr "Macrea des rîles"
 msgid "Ruler assistant editor tool"
 msgstr "Usteye aspougneu do macrea des rîles"
 
+#~ msgid "&Finish Polyline"
+#~ msgstr "&Fini poliroye"
+
+#~ msgid "Press shift-mouseclick to end the polyline."
+#~ msgstr "Tchôkî MAJ+clitch del sori po fini l' poliroye."
+
 #~ msgid "Add"
 #~ msgstr "Radjouter"
 
@@ -11626,9 +11634,6 @@ msgstr "Usteye aspougneu do macrea des rîles"
 
 #~ msgid "Shift-click will end the polygon."
 #~ msgstr "MAJ+clitch finirè l' poligone."
-
-#~ msgid "&Finish Polygon"
-#~ msgstr "&Fini poligone"
 
 #~ msgid "Example curves tool"
 #~ msgstr "Egzimpe d' usteye di coubes"
