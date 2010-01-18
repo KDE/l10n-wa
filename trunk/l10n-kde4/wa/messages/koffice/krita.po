@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-01-17 06:05+0100\n"
+"POT-Creation-Date: 2010-01-18 06:39+0100\n"
 "PO-Revision-Date: 2009-10-23 18:02+0000\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -3064,6 +3064,7 @@ msgstr "Canå"
 #. i18n: file: plugins/paintops/libpaintop/wdgcoloroptions.ui:134
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:856 rc.cpp:1260
+#: plugins/extensions/metadataeditor/kis_meta_data_model.cpp:108
 msgid "Value"
 msgstr "Valixhance"
 
@@ -3253,11 +3254,11 @@ msgid "Proportional"
 msgstr "Proporcionele"
 
 #. i18n: file: plugins/paintops/spray/wdgshapeoptions.ui:217
-#. i18n: ectx: property (text), widget (QCheckBox, jitterShape)
+#. i18n: ectx: property (text), widget (QCheckBox, randomSizeCHBox)
 #. i18n: file: plugins/paintops/experiment/wdgshapeoptions.ui:214
 #. i18n: ectx: property (text), widget (QCheckBox, jitterShape)
 #. i18n: file: plugins/paintops/spray/wdgshapeoptions.ui:217
-#. i18n: ectx: property (text), widget (QCheckBox, jitterShape)
+#. i18n: ectx: property (text), widget (QCheckBox, randomSizeCHBox)
 #. i18n: file: plugins/paintops/experiment/wdgshapeoptions.ui:214
 #. i18n: ectx: property (text), widget (QCheckBox, jitterShape)
 #: rc.cpp:943 rc.cpp:1211
@@ -9046,6 +9047,13 @@ msgstr "%1%"
 msgid "Composite Mode"
 msgstr "Môde compozite"
 
+#: image/metadata/kis_meta_data_value.cc:424
+#: image/metadata/kis_meta_data_value.cc:463
+#, fuzzy
+#| msgid "Invalid image size"
+msgid "Invalid value."
+msgstr "Grandeu d' imådje nén valåbe"
+
 #: image/metadata/kis_meta_data_filter_p.cc:53
 msgid "Anonymizer"
 msgstr "Anonimijheu"
@@ -10678,6 +10686,7 @@ msgid "Drop size"
 msgstr "Grandeu des gotes"
 
 #: plugins/filters/raindropsfilter/kis_raindrops_filter.cpp:403
+#: plugins/extensions/metadataeditor/kis_meta_data_model.cpp:68
 msgid "Number"
 msgstr "Nombe"
 
@@ -10749,7 +10758,7 @@ msgstr "Rilujhance / Contrasse"
 msgid "&Brightness/Contrast curve..."
 msgstr "Coube &rilujhance/contrasse..."
 
-#: plugins/filters/colorsfilters/kis_perchannel_filter.cpp:439
+#: plugins/filters/colorsfilters/kis_perchannel_filter.cpp:446
 msgid "&Color Adjustment curves..."
 msgstr "&Coubes do metaedje a pont del coleur..."
 
@@ -10912,7 +10921,7 @@ msgid "&Bumpmap..."
 msgstr "&Mape e relief"
 
 #: plugins/formats/exr/exr_converter.cc:259
-#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:175
+#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:182
 msgid "HDR Layer"
 msgstr "Coûtche HDR"
 
@@ -11415,6 +11424,77 @@ msgctxt "rotate the layer 90 degrees to the left"
 msgid "Left 90°"
 msgstr "90° a hintche"
 
+#: plugins/extensions/metadataeditor/kis_meta_data_editor.cc:141
+#, fuzzy
+#| msgid "Lines"
+msgid "List"
+msgstr "Royes"
+
+#: plugins/extensions/metadataeditor/kis_meta_data_model.cpp:59
+#, fuzzy
+#| msgid "Initial width"
+msgid "Invalid"
+msgstr "Lårdjeur di cmince"
+
+#: plugins/extensions/metadataeditor/kis_meta_data_model.cpp:65
+#, fuzzy
+#| msgid "Date:"
+msgid "Date"
+msgstr "Date:"
+
+#: plugins/extensions/metadataeditor/kis_meta_data_model.cpp:70
+#, fuzzy
+#| msgid "Scattering"
+msgid "String"
+msgstr "Sipårdaedje"
+
+#: plugins/extensions/metadataeditor/kis_meta_data_model.cpp:72
+#, fuzzy, kde-format
+#| msgid "Percent (%)"
+msgid "Variant (%1)"
+msgstr "Åcint (%)"
+
+#: plugins/extensions/metadataeditor/kis_meta_data_model.cpp:76
+msgid "Ordered array"
+msgstr ""
+
+#: plugins/extensions/metadataeditor/kis_meta_data_model.cpp:78
+msgid "Unordered array"
+msgstr ""
+
+#: plugins/extensions/metadataeditor/kis_meta_data_model.cpp:80
+#, fuzzy
+#| msgctxt "The gradient will repeat alternatingly"
+#| msgid "Alternating"
+msgid "Alternative array"
+msgstr "Candjant"
+
+#: plugins/extensions/metadataeditor/kis_meta_data_model.cpp:82
+msgid "Language array"
+msgstr ""
+
+#: plugins/extensions/metadataeditor/kis_meta_data_model.cpp:84
+msgid "Structure"
+msgstr ""
+
+#: plugins/extensions/metadataeditor/kis_meta_data_model.cpp:86
+#, fuzzy
+#| msgid "Rotation"
+msgid "Rational"
+msgstr "Tournaedje"
+
+#: plugins/extensions/metadataeditor/kis_meta_data_model.cpp:104
+#, fuzzy
+#| msgid "Key:"
+msgid "Key"
+msgstr "Clé:"
+
+#: plugins/extensions/metadataeditor/kis_meta_data_model.cpp:106
+#, fuzzy
+#| msgid "&Type"
+msgid "Type"
+msgstr "&Sôre"
+
 #: plugins/extensions/metadataeditor/metadataeditor.cc:63
 msgid "&Edit metadata..."
 msgstr "&Candjî meta-dnêyes..."
@@ -11470,18 +11550,18 @@ msgstr "Mo&strer %1"
 msgid "HDR Layer from bracketing"
 msgstr "Coûtche HDR a pårti di l' åtchetaedje"
 
-#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:172
-#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:366
+#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:179
+#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:373
 msgid "HDR colorspace RGBAF32 not found, please check your installation."
 msgstr ""
 "Espåce di coleur HDR RGBAF32 nén trové, Waitîz vost astalaedje s' i vs plait "
 "bén."
 
-#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:172
+#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:179
 msgid "Layer Creation Error"
 msgstr "Aroke d' ahivaedje del coûtche"
 
-#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:366
+#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:373
 #, fuzzy
 #| msgid "Calculate camera response"
 msgid "Compute Camera Response Error"
