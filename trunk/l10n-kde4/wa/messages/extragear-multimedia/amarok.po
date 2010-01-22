@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-01-21 06:18+0100\n"
+"POT-Creation-Date: 2010-01-22 06:50+0100\n"
 "PO-Revision-Date: 2010-01-03 19:12+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -502,11 +502,11 @@ msgstr "Ramexhnêye Nepomuk"
 msgid "Nepomuk Collection (slow, Redland)"
 msgstr "Ramexhnêye Nepomuk (slow, Redland)"
 
-#: collection/sqlcollection/CapabilityDelegate.cpp:348
+#: collection/sqlcollection/CapabilityDelegate.cpp:386
 msgid "Do not show under Various Artists"
 msgstr "Èn nén håyner dins Sacwants årtisses"
 
-#: collection/sqlcollection/CapabilityDelegate.cpp:350
+#: collection/sqlcollection/CapabilityDelegate.cpp:388
 msgid "Show under Various Artists"
 msgstr "Håyner dins Sacwants årtisses"
 
@@ -572,7 +572,7 @@ msgstr "Dji corwaite li muzike"
 
 #: collection/sqlcollection/ScanManager.cpp:742
 #: dialogs/OrganizeCollectionDialog.cpp:144
-#: browsers/CollectionTreeItem.cpp:201 covermanager/CoverFoundDialog.cpp:209
+#: browsers/CollectionTreeItem.cpp:198 covermanager/CoverFoundDialog.cpp:209
 #: covermanager/CoverViewDialog.h:45 covermanager/CoverManager.cpp:853
 msgid "Various Artists"
 msgstr "Sacwants årtisses"
@@ -1098,7 +1098,7 @@ msgstr "&Replaecî djivêye a djouwer"
 
 #: context/applets/albums/AlbumsView.cpp:115
 #: browsers/filebrowser/MyDirOperator.cpp:317
-#: playlist/view/PlaylistViewCommon.cpp:203
+#: playlist/view/PlaylistViewCommon.cpp:242
 msgid "Edit Track Details"
 msgstr "Candjî detays do boket"
 
@@ -1288,7 +1288,7 @@ msgstr "Årtisse"
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:250 rc.cpp:1237
 #: services/magnatune/MagnatuneStore.cpp:211
 #: services/jamendo/JamendoInfoParser.cpp:83
-#: playlist/view/PlaylistViewCommon.cpp:52 playlist/PlaylistHeader.cpp:40
+#: playlist/view/PlaylistViewCommon.cpp:66 playlist/PlaylistHeader.cpp:40
 #: playlist/PlaylistModel.cpp:704 widgets/SmartPlaylistEditor.cpp:183
 #: widgets/SmartPlaylistEditor.cpp:197 covermanager/CoverFoundDialog.cpp:93
 msgid "Album"
@@ -4276,7 +4276,7 @@ msgstr "gn a troes moes"
 msgid "Year - Album"
 msgstr "Anêye - Albom"
 
-#: browsers/collectionbrowser/CollectionTreeItemDelegate.cpp:143
+#: browsers/collectionbrowser/CollectionTreeItemDelegate.cpp:144
 #, kde-format
 msgid "%1% used"
 msgstr ""
@@ -4637,7 +4637,9 @@ msgid "By"
 msgstr "Pa"
 
 #: browsers/playlistbrowser/PodcastCategory.cpp:243
-#: browsers/playlistbrowser/DynamicCategory.cpp:70
+#, fuzzy
+#| msgid "On"
+msgctxt "Podcast published on"
 msgid "On"
 msgstr "Eclitchî"
 
@@ -4678,6 +4680,13 @@ msgid ""
 "With a dynamic playlist, Amarok becomes your own personal dj, automatically "
 "selecting tracks for you, based on a number of parameters that you select."
 msgstr ""
+
+#: browsers/playlistbrowser/DynamicCategory.cpp:70
+#, fuzzy
+#| msgid "On"
+msgctxt "Turn dynamic mode on"
+msgid "On"
+msgstr "Eclitchî"
 
 #: browsers/playlistbrowser/DynamicCategory.cpp:71
 msgid "Turn dynamic mode on."
@@ -4746,16 +4755,16 @@ msgstr "Dji n' sai spotchî l' djivêye a djouwer a l' astcheyance."
 msgid "Add Folder"
 msgstr "Radjouter ridant"
 
-#: browsers/CollectionTreeItem.cpp:183
+#: browsers/CollectionTreeItem.cpp:180
 msgctxt "The Name is not known"
 msgid "Unknown"
 msgstr "Nén cnoxhou"
 
-#: browsers/CollectionTreeItem.cpp:212
+#: browsers/CollectionTreeItem.cpp:209
 msgid "Counting"
 msgstr "Contaedje"
 
-#: browsers/CollectionTreeItem.cpp:230
+#: browsers/CollectionTreeItem.cpp:227
 #: playlist/proxymodels/GroupingProxy.cpp:100
 #, kde-format
 msgid "1 track"
@@ -4990,7 +4999,7 @@ msgstr "Schoûte voltî l' boket do moumint"
 msgid "Last.fm: Skip Current Track"
 msgstr "Schoûte voltî l' boket do moumint"
 
-#: MainWindow.cpp:876 playlist/view/PlaylistViewCommon.cpp:111
+#: MainWindow.cpp:876 playlist/view/PlaylistViewCommon.cpp:128
 msgid "Queue Track"
 msgstr "Mete boket el cawêye"
 
@@ -8121,8 +8130,8 @@ msgstr "Info di Magnatune"
 
 #. i18n: file: services/magnatune/MagnatuneDownloadDialogBase.ui:83
 #. i18n: ectx: property (text), widget (QPushButton, downloadButton)
-#: rc.cpp:1504 services/jamendo/JamendoMeta.cpp:137
-#: services/jamendo/JamendoMeta.cpp:377
+#: rc.cpp:1504 services/jamendo/JamendoMeta.cpp:135
+#: services/jamendo/JamendoMeta.cpp:371
 msgid "&Download"
 msgstr "&Aberweter"
 
@@ -9154,11 +9163,6 @@ msgstr "Radio da l' amisse (da sinne)"
 msgid "last.fm"
 msgstr "last.fm"
 
-#: services/ShowInServiceAction.cpp:27
-#, kde-format
-msgid "Go to artist in %1 service"
-msgstr "Aler a l' årtisse e siervice %1"
-
 #: services/magnatune/MagnatuneInfoParser.cpp:31
 msgid "Loading artist info..."
 msgstr "Dji tchedje les pondants et les djondants d' l' årtisse..."
@@ -9218,31 +9222,31 @@ msgid ""
 "buy using Amarok, you support the Amarok project with 10%."
 msgstr ""
 
-#: services/magnatune/MagnatuneMeta.cpp:219
-#: services/magnatune/MagnatuneMeta.cpp:441
+#: services/magnatune/MagnatuneMeta.cpp:217
+#: services/magnatune/MagnatuneMeta.cpp:430
 msgid "&Purchase Album"
 msgstr "&Atchter albom"
 
-#: services/magnatune/MagnatuneMeta.cpp:221
-#: services/magnatune/MagnatuneMeta.cpp:443
+#: services/magnatune/MagnatuneMeta.cpp:219
+#: services/magnatune/MagnatuneMeta.cpp:432
 msgid "&Download Album"
 msgstr "&Aberweter albom"
 
-#: services/magnatune/MagnatuneMeta.cpp:244
+#: services/magnatune/MagnatuneMeta.cpp:242
 msgid "Magnatune.com: &Purchase Album"
 msgstr "Magnatune.com: A&tchter albom"
 
-#: services/magnatune/MagnatuneMeta.cpp:246
+#: services/magnatune/MagnatuneMeta.cpp:244
 msgid "Magnatune.com: &Download Album"
 msgstr "Magnatune.com: &Aberweter albom"
 
-#: services/magnatune/MagnatuneMeta.cpp:277
+#: services/magnatune/MagnatuneMeta.cpp:266
 msgid "The non evil record label that is fair to artists and customers alike"
 msgstr ""
 "Li label d' eredjistraedje ki n' est nén l' må et k' est djusse avou ls "
 "årtisses come avou les pratikes"
 
-#: services/magnatune/MagnatuneMeta.cpp:449
+#: services/magnatune/MagnatuneMeta.cpp:438
 #, fuzzy
 #| msgid "Loading Magnatune.com frontpage..."
 msgid "Add to Magnatune.com &favorites"
@@ -9632,11 +9636,11 @@ msgstr "Eberwetaedje viè MP3tunes ataké"
 msgid "Uploading Track %1/%2"
 msgstr "Dj' eberwete li boket %1/%2"
 
-#: services/jamendo/JamendoMeta.cpp:155
+#: services/jamendo/JamendoMeta.cpp:153
 msgid "Jamendo.com: &Download"
 msgstr "Jamendo.com: &Aberweter"
 
-#: services/jamendo/JamendoMeta.cpp:178
+#: services/jamendo/JamendoMeta.cpp:172
 msgid "A site where artists can freely share their music"
 msgstr "Ene waibe ewou çki ls årtisses polèt libmint påtaedjî leu muzike"
 
@@ -9714,19 +9718,25 @@ msgstr "Les sourdants shuvants sont disponibes po c' boket:"
 msgid "Ok"
 msgstr "I va"
 
-#: playlist/view/PlaylistViewCommon.cpp:104
+#: playlist/view/PlaylistViewCommon.cpp:120
 msgid "Stop Playing After This Track"
 msgstr "Arester d' djouwer ç' boket ci"
 
-#: playlist/view/PlaylistViewCommon.cpp:111
+#: playlist/view/PlaylistViewCommon.cpp:128
 msgid "Dequeue Track"
 msgstr "Oister boket del cawêye"
 
-#: playlist/view/PlaylistViewCommon.cpp:122
+#: playlist/view/PlaylistViewCommon.cpp:150
 msgid "Remove From Playlist"
 msgstr "Oister del djivêye a djouwer"
 
-#: playlist/view/PlaylistViewCommon.cpp:186
+#: playlist/view/PlaylistViewCommon.cpp:182
+#, fuzzy
+#| msgid "File Extension of Source"
+msgid "Find in Source"
+msgstr "Cawete do fitchî do sourdant"
+
+#: playlist/view/PlaylistViewCommon.cpp:225
 msgid "Select Source"
 msgstr "Tchoezi sourdant"
 
@@ -11048,6 +11058,9 @@ msgstr "Radjouter eyet &djouwer"
 #: TrayIcon.cpp:224
 msgid "&Queue Track"
 msgstr "&Mete boket el cawêye"
+
+#~ msgid "Go to artist in %1 service"
+#~ msgstr "Aler a l' årtisse e siervice %1"
 
 #~ msgid "Time position: %1"
 #~ msgstr "Eplaeçmint e tins : %1"

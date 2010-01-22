@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-01-21 06:12+0100\n"
+"POT-Creation-Date: 2010-01-22 06:27+0100\n"
 "PO-Revision-Date: 2009-10-23 18:02+0000\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -1603,7 +1603,7 @@ msgstr "Grandeu del &waitroûle"
 
 #. i18n: file: ui/forms/wdgnewimage.ui:227
 #. i18n: ectx: property (title), widget (QGroupBox, grpMode)
-#: rc.cpp:266 ui/dialogs/kis_dlg_preferences.cc:439
+#: rc.cpp:266 ui/dialogs/kis_dlg_preferences.cc:440
 #: plugins/generators/solid/colorgenerator.h:52
 msgid "Color"
 msgstr "Coleur"
@@ -1797,8 +1797,8 @@ msgstr "Prémetou modele di coleurs po les novelès imådjes:"
 #. i18n: ectx: property (title), widget (QGroupBox, grpDisplay)
 #. i18n: file: ui/forms/wdgdisplaysettings.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgDisplaySettings)
-#: rc.cpp:365 rc.cpp:437 ui/dialogs/kis_dlg_preferences.cc:430
-#: ui/dialogs/kis_dlg_preferences.cc:431
+#: rc.cpp:365 rc.cpp:437 ui/dialogs/kis_dlg_preferences.cc:431
+#: ui/dialogs/kis_dlg_preferences.cc:432
 msgid "Display"
 msgstr "Håynaedje"
 
@@ -8299,34 +8299,58 @@ msgstr "Aroke d' ahivaedje del coûtche"
 msgid "Image Properties"
 msgstr "Prôpietés di l' imådje"
 
-#: ui/dialogs/kis_dlg_preferences.cc:168
+#: ui/dialogs/kis_dlg_preferences.cc:169
 msgid "Monitor profile: "
 msgstr "Profil del waitroûle:"
 
-#: ui/dialogs/kis_dlg_preferences.cc:171
+#: ui/dialogs/kis_dlg_preferences.cc:172
 msgid "&Monitor profile: "
 msgstr "Profil del &waitroûle:"
 
-#: ui/dialogs/kis_dlg_preferences.cc:414
+#: ui/dialogs/kis_dlg_preferences.cc:415
 msgid "Preferences"
 msgstr "Preferinces"
 
-#: ui/dialogs/kis_dlg_preferences.cc:422 ui/dialogs/kis_dlg_preferences.cc:423
+#: ui/dialogs/kis_dlg_preferences.cc:423 ui/dialogs/kis_dlg_preferences.cc:424
 msgid "General"
 msgstr "Djenerå"
 
-#: ui/dialogs/kis_dlg_preferences.cc:438
+#: ui/dialogs/kis_dlg_preferences.cc:439
 msgid "Color Management"
 msgstr "Manaedjmint des coleurs"
 
-#: ui/dialogs/kis_dlg_preferences.cc:447 ui/dialogs/kis_dlg_preferences.cc:448
+#: ui/dialogs/kis_dlg_preferences.cc:448 ui/dialogs/kis_dlg_preferences.cc:449
 msgid "Performance"
 msgstr "Performance"
 
-#: ui/dialogs/kis_dlg_preferences.cc:456 ui/dialogs/kis_dlg_preferences.cc:457
+#: ui/dialogs/kis_dlg_preferences.cc:457 ui/dialogs/kis_dlg_preferences.cc:458
 #: ui/canvas/kis_grid_manager.cpp:46
 msgid "Grid"
 msgstr "Grile"
+
+#: ui/dialogs/kis_dlg_preferences.cc:531
+msgid ""
+"You are trying to enable OpenGL\n"
+"\n"
+"But Krita might have had problems with the OpenGL canvas before,\n"
+"either because of driver issues, or because of issues with window effects.\n"
+"\n"
+"Are you sure you want to enable OpenGL?\n"
+msgstr ""
+
+#: ui/dialogs/kis_dlg_preferences.cc:534 ui/kis_aboutdata.h:31
+#: plugins/formats/gif/gif_export.cpp:64
+#: plugins/extensions/glsl/kis_glsl_widget.cc:59
+#: plugins/extensions/glsl/kis_glsl_widget.cc:60
+#: plugins/extensions/glsl/kis_glsl_widget.cc:74
+#: plugins/extensions/glsl/kis_glsl_widget.cc:174
+#: plugins/extensions/glsl/kis_glsl_widget.cc:185
+#: plugins/extensions/glsl/kis_glsl_widget.cc:186
+#: plugins/extensions/glsl/kis_glsl_widget.cc:202
+#: plugins/extensions/glsl/kis_glsl_widget.cc:223
+#: plugins/extensions/glsl/kis_glsl_widget.cc:228
+msgid "Krita"
+msgstr "Krita"
 
 #: ui/dialogs/kis_dlg_layer_properties.cc:60
 msgid "Layer Properties"
@@ -8349,15 +8373,15 @@ msgstr "Novea masse di transformaedje"
 msgid "Flake shapes %1"
 msgstr "Fômes ploumion %1"
 
-#: ui/kis_paintop_box.cc:77
+#: ui/kis_paintop_box.cc:78
 msgid "Painter's Toolchest"
 msgstr "Ahessaedje då pondeu"
 
-#: ui/kis_paintop_box.cc:83
+#: ui/kis_paintop_box.cc:84
 msgid "Artist's materials"
 msgstr "Haerna da l' årtisse"
 
-#: ui/kis_paintop_box.cc:90
+#: ui/kis_paintop_box.cc:91
 msgid "Edit brush preset"
 msgstr "Candjî prédefinixhas des pinceas"
 
@@ -8430,19 +8454,6 @@ msgstr "Eco mete en ouve li passete"
 #, kde-format
 msgid "Apply Filter Again: %1"
 msgstr "Eco mete en ouve li passete: %1"
-
-#: ui/kis_aboutdata.h:31 plugins/formats/gif/gif_export.cpp:64
-#: plugins/extensions/glsl/kis_glsl_widget.cc:59
-#: plugins/extensions/glsl/kis_glsl_widget.cc:60
-#: plugins/extensions/glsl/kis_glsl_widget.cc:74
-#: plugins/extensions/glsl/kis_glsl_widget.cc:174
-#: plugins/extensions/glsl/kis_glsl_widget.cc:185
-#: plugins/extensions/glsl/kis_glsl_widget.cc:186
-#: plugins/extensions/glsl/kis_glsl_widget.cc:202
-#: plugins/extensions/glsl/kis_glsl_widget.cc:223
-#: plugins/extensions/glsl/kis_glsl_widget.cc:228
-msgid "Krita"
-msgstr "Krita"
 
 #: ui/kis_aboutdata.h:33
 msgid "KOffice image manipulation application"
