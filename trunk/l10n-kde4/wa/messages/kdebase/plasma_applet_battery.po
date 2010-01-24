@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_battery\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-01-12 06:42+0100\n"
+"POT-Creation-Date: 2010-01-24 06:12+0100\n"
 "PO-Revision-Date: 2009-11-30 15:36+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -51,7 +51,7 @@ msgstr "Manaedjmint di l' enerdjeye"
 msgid "Battery:"
 msgstr "Batreye :"
 
-#: battery.cpp:584 battery.cpp:601
+#: battery.cpp:584
 #, kde-format
 msgid "%1% (charged)"
 msgstr "%1% (tcherdjî)"
@@ -73,20 +73,34 @@ msgid "Not present"
 msgstr "Nén la"
 
 #: battery.cpp:599
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "Placeholder is the battery ID"
+#| msgid "<b>Battery %1:</b> "
 msgctxt "Placeholder is the battery ID"
-msgid "<b>Battery %1:</b> "
+msgid "<b>Battery %1:</b>"
 msgstr "<b>Batreye %1 :</b> "
 
+#: battery.cpp:601
+#, fuzzy, kde-format
+#| msgid "%1% (charged)"
+msgctxt "state of battery"
+msgid "%1% (charged)"
+msgstr "%1% (tcherdjî)"
+
 #: battery.cpp:603
-#, kde-format
-msgid "%2% (discharging)"
-msgstr "%2% (si distchedje)"
+#, fuzzy, kde-format
+#| msgctxt "Shown when a time estimate is not available"
+#| msgid "%1% (discharging)"
+msgctxt "state of battery"
+msgid "%1% (discharging)"
+msgstr "%1% (si distchedje)"
 
 #: battery.cpp:605
-#, kde-format
-msgid "%2% (charging)"
-msgstr "%2% (si tchedje)"
+#, fuzzy, kde-format
+#| msgid "%1% (charging)"
+msgctxt "state of battery"
+msgid "%1% (charging)"
+msgstr "%1% (si tchedje)"
 
 #: battery.cpp:609
 msgid "AC Adapter:"
@@ -121,6 +135,12 @@ msgstr "Mostrer &informåcions sol tchedje"
 #: rc.cpp:9 rc.cpp:18
 msgid "Show the state for &each battery present"
 msgstr "Mostrer l' estat po t&chaeke batreye k' i gn a"
+
+#~ msgid "%2% (discharging)"
+#~ msgstr "%2% (si distchedje)"
+
+#~ msgid "%2% (charging)"
+#~ msgstr "%2% (si tchedje)"
 
 #, fuzzy
 #~| msgid "More..."
