@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-02-04 06:49+0100\n"
+"POT-Creation-Date: 2010-02-05 02:50+0100\n"
 "PO-Revision-Date: 2009-10-23 18:02+0000\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -2475,7 +2475,7 @@ msgstr "Ahiver efet d' masse"
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonCancel)
 #. i18n: file: plugins/extensions/tonemapping/wdgtonemappingdialog.ui:93
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonCancel)
-#: rc.cpp:615 rc.cpp:2633 rc.cpp:3375 rc.cpp:3534 ui/kis_view2.cpp:349
+#: rc.cpp:615 rc.cpp:2633 rc.cpp:3375 rc.cpp:3534 ui/kis_view2.cpp:346
 msgid "Cancel"
 msgstr "Rinoncî"
 
@@ -3384,7 +3384,8 @@ msgstr "Fôme:"
 #. i18n: file: plugins/paintops/gridbrush/wdgshapeoptions.ui:36
 #. i18n: ectx: property (text), item, widget (QComboBox, shapeCBox)
 #: rc.cpp:956 rc.cpp:1242 rc.cpp:1566
-#: plugins/tools/defaulttools/kis_tool_ellipse.cc:66
+#: image/recorder/kis_recorded_ellipse_paint_action.cpp:52
+#: plugins/tools/defaulttools/kis_tool_ellipse.cc:67
 msgid "Ellipse"
 msgstr "Ceke asplati"
 
@@ -6116,7 +6117,7 @@ msgstr "Profil del coûtche:"
 
 #. i18n: file: plugins/extensions/compose/wdg_compose.ui:52
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:2357 ui/tool/kis_tool_paint.cc:168
+#: rc.cpp:2357 ui/tool/kis_tool_paint.cc:167
 msgid "Opacity: "
 msgstr "Opacité:"
 
@@ -8421,27 +8422,23 @@ msgstr "Tchoes"
 msgid "&Finish"
 msgstr "&Fini poligone"
 
-#: ui/tool/kis_tool.cc:103
+#: ui/tool/kis_tool.cc:104
 #, fuzzy
 #| msgid "Foreground Color"
 msgid "Swap Foreground and Background Color"
 msgstr "Coleur di dvant"
 
-#: ui/tool/kis_tool.cc:108
+#: ui/tool/kis_tool.cc:109
 #, fuzzy
 #| msgid "Foreground Color"
 msgid "Reset Foreground and Background Color"
 msgstr "Coleur di dvant"
 
-#: ui/tool/kis_tool.cc:378
+#: ui/tool/kis_tool.cc:384
 msgid "No options"
 msgstr "Nole tchuze"
 
-#: ui/tool/kis_tool_freehand.cc:416 ui/tool/kis_tool_freehand.cc:425
-msgid "Freehand tool"
-msgstr "Usteye mwin libe"
-
-#: ui/tool/kis_tool_paint.cc:176
+#: ui/tool/kis_tool_paint.cc:175
 msgid "Mode: "
 msgstr "Môde:"
 
@@ -9076,31 +9073,31 @@ msgstr "Rafristaedje totå"
 msgid "Show Dockers"
 msgstr "Båres di wårdaedje"
 
-#: ui/kis_view2.cpp:238
+#: ui/kis_view2.cpp:240
 msgid "Tools"
 msgstr "Usteyes"
 
-#: ui/kis_view2.cpp:343
+#: ui/kis_view2.cpp:340
 msgid "Insert as New Layer"
 msgstr "Sitchî come novele coûtche"
 
-#: ui/kis_view2.cpp:344
+#: ui/kis_view2.cpp:341
 msgid "Insert as New Layers"
 msgstr "Sitchî come novelès coûtches"
 
-#: ui/kis_view2.cpp:346
+#: ui/kis_view2.cpp:343
 msgid "Open in New Document"
 msgstr "Drovi e novea documint"
 
-#: ui/kis_view2.cpp:347
+#: ui/kis_view2.cpp:344
 msgid "Open in New Documents"
 msgstr "Drovi e noveas documints"
 
-#: ui/kis_view2.cpp:549
+#: ui/kis_view2.cpp:546
 msgid "Edit Palette..."
 msgstr "Candjî palete..."
 
-#: ui/kis_view2.cpp:686 ui/kis_view2.cpp:689
+#: ui/kis_view2.cpp:683 ui/kis_view2.cpp:686
 msgid "Edit Palette"
 msgstr "Candjî palete"
 
@@ -9516,6 +9513,18 @@ msgstr "Dierin eployî"
 msgid "Play macro"
 msgstr "Djouwer macro"
 
+#: image/recorder/kis_recorded_polyline_paint_action.cpp:50
+#, fuzzy
+#| msgid "Polyline"
+msgid "Poly line"
+msgstr "Poliroye"
+
+#: image/recorder/kis_recorded_bezier_curve_paint_action.cpp:56
+#, fuzzy
+#| msgid "Bezier Curve"
+msgid "Bezier curve"
+msgstr "Coube di Bezier"
+
 #: image/kis_clone_layer.cpp:199
 msgid "Copy From"
 msgstr "Copyî di"
@@ -9642,12 +9651,6 @@ msgstr "Distance: "
 msgid "Angle: "
 msgstr "Inglêye:"
 
-#: plugins/tools/defaulttools/kis_tool_ellipse.cc:54
-#, fuzzy
-#| msgid "Ellipse"
-msgid "Ellipse tool"
-msgstr "Ceke asplati"
-
 #: plugins/tools/defaulttools/kis_tool_colorpicker.h:89
 msgid "Select a color from the image or current layer"
 msgstr "Tchoezi ene coleur di l' imådje ou del coûtche do moumint"
@@ -9667,11 +9670,7 @@ msgctxt "a straight drawn line"
 msgid "Line"
 msgstr "Roye"
 
-#: plugins/tools/defaulttools/kis_tool_line.cc:176
-msgid "Line tool"
-msgstr "Usteye roye"
-
-#: plugins/tools/defaulttools/kis_tool_line.cc:269
+#: plugins/tools/defaulttools/kis_tool_line.cc:270
 msgid ""
 "Alt+Drag will move the origin of the currently displayed line around, Shift"
 "+Drag will force you to draw straight lines"
@@ -9846,13 +9845,6 @@ msgstr "Transformer perspective"
 #: plugins/tools/tool_polygon/kis_tool_polygon.h:50
 msgid "Draw a polygon. Shift-mouseclick ends the polygon."
 msgstr "Dessiner on poligone. MAJ+clitch del sori fini l' poligone."
-
-#: plugins/tools/tool_polygon/kis_tool_polygon.cc:65
-#: plugins/tools/tool_polyline/kis_tool_polyline.cc:54
-#, fuzzy
-#| msgid "Polyline"
-msgid "Polyline tool"
-msgstr "Poliroye"
 
 #: plugins/tools/tool_polyline/kis_tool_polyline.cc:66
 msgid "Polyline"
@@ -11765,7 +11757,7 @@ msgstr "Åk n' a nén stî dins %1"
 msgid "Index out of bound"
 msgstr "Indecse foû des limites"
 
-#: plugins/extensions/scripting/scriptingpart.cpp:137
+#: plugins/extensions/scripting/scriptingpart.cpp:138
 #, kde-format
 msgid "&Show %1"
 msgstr "Mo&strer %1"
@@ -11880,6 +11872,22 @@ msgstr "Erîlé"
 #: plugins/assistants/RulerAssistant/kis_ruler_assistant_tool.h:68
 msgid "Ruler assistant editor tool"
 msgstr "Usteye aspougneu do macrea des rîles"
+
+#~ msgid "Freehand tool"
+#~ msgstr "Usteye mwin libe"
+
+#, fuzzy
+#~| msgid "Ellipse"
+#~ msgid "Ellipse tool"
+#~ msgstr "Ceke asplati"
+
+#~ msgid "Line tool"
+#~ msgstr "Usteye roye"
+
+#, fuzzy
+#~| msgid "Polyline"
+#~ msgid "Polyline tool"
+#~ msgstr "Poliroye"
 
 #, fuzzy
 #~| msgid "Formats:"
