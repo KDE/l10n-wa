@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeqt\n"
 "Report-Msgid-Bugs-To: qt-bugs@trolltech.com\n"
-"POT-Creation-Date: 2010-02-18 01:34+0100\n"
+"POT-Creation-Date: 2010-02-21 01:34+0100\n"
 "PO-Revision-Date: 2009-03-30 21:55+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -109,7 +109,7 @@ msgstr "Rimete a zero"
 
 #. i18n: file: gui/dialogs/qprintsettingsoutput.ui:242
 #. i18n: ectx: attribute (title), widget (QWidget, optionsTab)
-#: rc.cpp:36
+#: rc.cpp:36 gui/kernel/qsoftkeymanager.cpp:72
 #, fuzzy
 #| msgid "Options"
 msgid "Options"
@@ -835,6 +835,7 @@ msgid "Commit"
 msgstr "Sipåde"
 
 #: gui/dialogs/qwizard.cpp:659 gui/dialogs/qdialog.cpp:517
+#: gui/kernel/qsoftkeymanager.cpp:69
 msgid "Done"
 msgstr "Fwait"
 
@@ -843,7 +844,7 @@ msgid "&Finish"
 msgstr "&Fini"
 
 #: gui/dialogs/qwizard.cpp:661 gui/dialogs/qprogressdialog.cpp:196
-#: qt3support/dialogs/q3tabdialog.cpp:786
+#: gui/kernel/qsoftkeymanager.cpp:75 qt3support/dialogs/q3tabdialog.cpp:786
 #: qt3support/dialogs/q3progressdialog.cpp:224
 #: qt3support/dialogs/q3progressdialog.cpp:285
 msgid "Cancel"
@@ -1447,7 +1448,6 @@ msgid "Activates the program's main window"
 msgstr "Met en alaedje li mwaisse purnea do programe"
 
 #: gui/kernel/qsoftkeymanager.cpp:63
-msgctxt "QSoftKeyManager"
 msgid "Ok"
 msgstr ""
 
@@ -1455,30 +1455,8 @@ msgstr ""
 #, fuzzy
 #| msgctxt "QShortcut"
 #| msgid "Select"
-msgctxt "QSoftKeyManager"
 msgid "Select"
 msgstr "Tchoezi"
-
-#: gui/kernel/qsoftkeymanager.cpp:69
-#, fuzzy
-#| msgid "Done"
-msgctxt "QSoftKeyManager"
-msgid "Done"
-msgstr "Fwait"
-
-#: gui/kernel/qsoftkeymanager.cpp:72
-#, fuzzy
-#| msgid "Options"
-msgctxt "QSoftKeyManager"
-msgid "Options"
-msgstr "Tchuzes"
-
-#: gui/kernel/qsoftkeymanager.cpp:75
-#, fuzzy
-#| msgid "Cancel"
-msgctxt "QSoftKeyManager"
-msgid "Cancel"
-msgstr "Rinoncî"
 
 #: gui/kernel/qwidget.cpp:5753
 msgid "*"
@@ -2473,7 +2451,7 @@ msgstr "+"
 msgid "F%1"
 msgstr "F%1"
 
-#: gui/kernel/qsoftkeymanager_s60.cpp:311
+#: gui/kernel/qsoftkeymanager_s60.cpp:312
 msgid "Exit"
 msgstr "Moussî foû"
 
@@ -2886,14 +2864,14 @@ msgstr "Dji n' mi sai nén raloyî"
 #: sql/drivers/db2/qsql_db2.cpp:1551 sql/drivers/odbc/qsql_odbc.cpp:2061
 #: sql/drivers/mysql/qsql_mysql.cpp:1448
 #: sql/drivers/sqlite2/qsql_sqlite2.cpp:457
-#: sql/drivers/sqlite/qsql_sqlite.cpp:593
+#: sql/drivers/sqlite/qsql_sqlite.cpp:584
 msgid "Unable to commit transaction"
 msgstr "Dji n' sai spåde li tranzaccion"
 
 #: sql/drivers/db2/qsql_db2.cpp:1568 sql/drivers/odbc/qsql_odbc.cpp:2078
 #: sql/drivers/mysql/qsql_mysql.cpp:1465
 #: sql/drivers/sqlite2/qsql_sqlite2.cpp:474
-#: sql/drivers/sqlite/qsql_sqlite.cpp:608
+#: sql/drivers/sqlite/qsql_sqlite.cpp:599
 msgid "Unable to rollback transaction"
 msgstr "Dji n' sai fé l' rollback del tranzaccion"
 
@@ -3271,7 +3249,7 @@ msgstr "Dji n' sai drovi l' båze di dnêyes '"
 
 #: sql/drivers/mysql/qsql_mysql.cpp:1431
 #: sql/drivers/sqlite2/qsql_sqlite2.cpp:440
-#: sql/drivers/sqlite/qsql_sqlite.cpp:578
+#: sql/drivers/sqlite/qsql_sqlite.cpp:569
 msgid "Unable to begin transaction"
 msgstr "Dji n' sai ataker l' tranzaccion"
 
@@ -3286,7 +3264,7 @@ msgid "Unable to execute statement"
 msgstr "Dji n' sai enonder l' instruccion"
 
 #: sql/drivers/sqlite2/qsql_sqlite2.cpp:399
-#: sql/drivers/sqlite/qsql_sqlite.cpp:547
+#: sql/drivers/sqlite/qsql_sqlite.cpp:538
 msgid "Error opening database"
 msgstr "Åk n' a nén stî come dji droveu l' båze di dnêyes"
 
@@ -3322,7 +3300,7 @@ msgctxt "QSQLiteResult"
 msgid "Parameter count mismatch"
 msgstr "Problinme di contaedje des parametes"
 
-#: sql/drivers/sqlite/qsql_sqlite.cpp:558
+#: sql/drivers/sqlite/qsql_sqlite.cpp:549
 msgid "Error closing database"
 msgstr "Åk n' a nén stî come dji cloyeu l' båze di dnêyes"
 
@@ -3698,22 +3676,22 @@ msgctxt "QRegExp"
 msgid "invalid category"
 msgstr "Caractere XML ki n' clope nén."
 
-#: corelib/global/qglobal.cpp:2096
+#: corelib/global/qglobal.cpp:2094
 msgctxt "QIODevice"
 msgid "Permission denied"
 msgstr ""
 
-#: corelib/global/qglobal.cpp:2099
+#: corelib/global/qglobal.cpp:2097
 msgctxt "QIODevice"
 msgid "Too many open files"
 msgstr "Trop d' drovous fitchîs"
 
-#: corelib/global/qglobal.cpp:2102
+#: corelib/global/qglobal.cpp:2100
 msgctxt "QIODevice"
 msgid "No such file or directory"
 msgstr "Gn a pont d' té fitchî ou ridant"
 
-#: corelib/global/qglobal.cpp:2105
+#: corelib/global/qglobal.cpp:2103
 msgctxt "QIODevice"
 msgid "No space left on device"
 msgstr "Pupont d' espåce di libe so l' éndjin"
@@ -8730,6 +8708,24 @@ msgstr ""
 msgid ""
 "Multiple input method switcher that uses the context menu of the text widgets"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Done"
+#~ msgctxt "QSoftKeyManager"
+#~ msgid "Done"
+#~ msgstr "Fwait"
+
+#, fuzzy
+#~| msgid "Options"
+#~ msgctxt "QSoftKeyManager"
+#~ msgid "Options"
+#~ msgstr "Tchuzes"
+
+#, fuzzy
+#~| msgid "Cancel"
+#~ msgctxt "QSoftKeyManager"
+#~ msgid "Cancel"
+#~ msgstr "Rinoncî"
 
 #, fuzzy
 #~| msgctxt "QShortcut"
