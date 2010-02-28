@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_systemtray\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-02-25 01:24+0100\n"
+"POT-Creation-Date: 2010-02-26 20:28+0100\n"
 "PO-Revision-Date: 2010-01-17 10:57+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -18,18 +18,67 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Poedit-Language: Walloon\n"
 
-#: ui/taskarea.cpp:395
-msgid "Hide icons"
-msgstr "Catchî imådjetes"
+#: statusnotifierwatcher/statusnotifierwatcher.cpp:36
+msgid "statusnotifierwatcher"
+msgstr "statusnotifierwatcher"
 
-#: ui/taskarea.cpp:397
-msgid "Show hidden icons"
-msgstr "Mostrer imådjetes catcheyes"
-
-#: ui/notificationwidget.cpp:166
+#: core/extendertask.cpp:162
 #, kde-format
-msgid "Notification from %1"
-msgstr "Notifiaedje di %1"
+msgid "%1 Recently Completed Job:"
+msgid_plural "%1 Recently Completed Jobs:"
+msgstr[0] "%1 bouye di fineye enawaire:"
+msgstr[1] "%1 bouyes di fineyes enawaire:"
+
+#: core/extendertask.cpp:195
+#, kde-format
+msgid "%1 running job"
+msgid_plural "%1 running jobs"
+msgstr[0] "%1 bouye a l' ovraedje"
+msgstr[1] "%1 bouyes a l' ovraedje"
+
+#: core/extendertask.cpp:202
+#, kde-format
+msgid "%1 suspended job"
+msgid_plural "%1 suspended jobs"
+msgstr[0] "%1 bouye di djokêye"
+msgstr[1] "%1 bouyes di djokêyes"
+
+#: core/extendertask.cpp:209
+#, kde-format
+msgid "%1 notification"
+msgid_plural "%1 notifications"
+msgstr[0] "Notifiaedje di %1"
+msgstr[1] "Notifiaedjes di %1"
+
+#: core/extendertask.cpp:214
+msgid "No active jobs or notifications"
+msgstr "Nole bouye ovrante ou notifiaedje ovrant"
+
+#: core/extendertask.cpp:217
+msgid "Notifications and jobs"
+msgstr "Nou notifiaedje et nole bouye"
+
+#: core/extendertask.cpp:270
+msgid "Show or hide notifications and jobs"
+msgstr "Mostrer oudonbén catchî les notifiaedjes eyet bouyes"
+
+#: core/job.cpp:180
+#, kde-format
+msgid "%1 file, to: %2"
+msgid_plural "%1 files, to: %2"
+msgstr[0] "%1 fitchî, a: %2"
+msgstr[1] "%1 fitchîs, a: %2"
+
+#: core/manager.cpp:227
+#, kde-format
+msgid "1 running job (%2 remaining)"
+msgid_plural "%1 running jobs (%2 remaining)"
+msgstr[0] "%1 bouye a l' ovraedje (i nd è dmore %2)"
+msgstr[1] "%1 bouyes a l' ovraedje (i nd è dmore %2)"
+
+#: core/manager.cpp:232
+msgid "no running jobs"
+msgstr "nole bouye a l' ovraedje"
 
 #: ui/jobwidget.cpp:99 ui/jobwidget.cpp:381
 msgid "More"
@@ -145,67 +194,18 @@ msgstr "%1 [Fini]"
 msgid "Recently Completed Jobs"
 msgstr "Bouyes di fineyes enawaire"
 
-#: core/job.cpp:180
+#: ui/notificationwidget.cpp:166
 #, kde-format
-msgid "%1 file, to: %2"
-msgid_plural "%1 files, to: %2"
-msgstr[0] "%1 fitchî, a: %2"
-msgstr[1] "%1 fitchîs, a: %2"
+msgid "Notification from %1"
+msgstr "Notifiaedje di %1"
 
-#: core/manager.cpp:227
-#, kde-format
-msgid "1 running job (%2 remaining)"
-msgid_plural "%1 running jobs (%2 remaining)"
-msgstr[0] "%1 bouye a l' ovraedje (i nd è dmore %2)"
-msgstr[1] "%1 bouyes a l' ovraedje (i nd è dmore %2)"
+#: ui/taskarea.cpp:395
+msgid "Hide icons"
+msgstr "Catchî imådjetes"
 
-#: core/manager.cpp:232
-msgid "no running jobs"
-msgstr "nole bouye a l' ovraedje"
-
-#: core/extendertask.cpp:162
-#, kde-format
-msgid "%1 Recently Completed Job:"
-msgid_plural "%1 Recently Completed Jobs:"
-msgstr[0] "%1 bouye di fineye enawaire:"
-msgstr[1] "%1 bouyes di fineyes enawaire:"
-
-#: core/extendertask.cpp:195
-#, kde-format
-msgid "%1 running job"
-msgid_plural "%1 running jobs"
-msgstr[0] "%1 bouye a l' ovraedje"
-msgstr[1] "%1 bouyes a l' ovraedje"
-
-#: core/extendertask.cpp:202
-#, kde-format
-msgid "%1 suspended job"
-msgid_plural "%1 suspended jobs"
-msgstr[0] "%1 bouye di djokêye"
-msgstr[1] "%1 bouyes di djokêyes"
-
-#: core/extendertask.cpp:209
-#, kde-format
-msgid "%1 notification"
-msgid_plural "%1 notifications"
-msgstr[0] "Notifiaedje di %1"
-msgstr[1] "Notifiaedjes di %1"
-
-#: core/extendertask.cpp:214
-msgid "No active jobs or notifications"
-msgstr "Nole bouye ovrante ou notifiaedje ovrant"
-
-#: core/extendertask.cpp:217
-msgid "Notifications and jobs"
-msgstr "Nou notifiaedje et nole bouye"
-
-#: core/extendertask.cpp:270
-msgid "Show or hide notifications and jobs"
-msgstr "Mostrer oudonbén catchî les notifiaedjes eyet bouyes"
-
-#: statusnotifierwatcher/statusnotifierwatcher.cpp:36
-msgid "statusnotifierwatcher"
-msgstr "statusnotifierwatcher"
+#: ui/taskarea.cpp:397
+msgid "Show hidden icons"
+msgstr "Mostrer imådjetes catcheyes"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"

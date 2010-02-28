@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: okular\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-02-21 01:27+0100\n"
+"POT-Creation-Date: 2010-02-26 20:28+0100\n"
 "PO-Revision-Date: 2009-01-04 17:51+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -16,30 +16,29 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 0.2\n"
 
-#: conf/dlgperformance.cpp:43
-msgid ""
-"Keeps used memory as low as possible. Do not reuse anything. (For systems "
-"with low memory.)"
-msgstr ""
-"Wåde li memwere eployeye ossu basse ki c' est possibe. Ni reploye rén. (Po "
-"des sistinmes a basse memwere.)"
+#: conf/dlgpresentation.cpp:28
+msgctxt "@label:listbox The current screen, for the presentation mode"
+msgid "Current Screen"
+msgstr "Waitroûle do moumint"
 
-#: conf/dlgperformance.cpp:46
-msgid ""
-"A good compromise between memory usage and speed gain. Preload next page and "
-"boost searches. (For systems with 256MB of memory, typically.)"
-msgstr ""
-"Ene mitan voye inte l' eployaedje del memwere eyet l' wangnaedje di radisté. "
-"Prétchedje li pådje d' après eyet roedi les cweraedjes. (Tipicmint po les "
-"sistinmes avou 256MB di memwere.)"
+#: conf/dlgpresentation.cpp:29
+msgctxt "@label:listbox The default screen for the presentation mode"
+msgid "Default Screen"
+msgstr "Prémetowe waitroûle"
 
-#: conf/dlgperformance.cpp:49
-msgid ""
-"Keeps everything in memory. Preload next pages. Boost searches. (For systems "
-"with more than 512MB of memory.)"
-msgstr ""
-"Wåde totafwait el memwere. Prétchedje les pådjes d' après. Roedi les "
-"cweraedjes. (Po les sistinmes avou pus ki 512MB di memwere.)"
+#: conf/dlgpresentation.cpp:33
+#, kde-format
+msgctxt "@label:listbox %1 is the screen number (0, 1, ...)"
+msgid "Screen %1"
+msgstr "Waitroûle %1"
+
+#: conf/dlgpresentation.cpp:48
+#, fuzzy
+#| msgid " sec."
+msgid " second"
+msgid_plural " seconds"
+msgstr[0] " seg."
+msgstr[1] " seg."
 
 #: conf/dlgeditor.cpp:28
 msgctxt "Text editor"
@@ -130,7 +129,7 @@ msgstr "Tchuzes pol môde prezintaedje"
 
 #. i18n: file: conf/dlgidentitybase.ui:31
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: conf/preferencesdialog.cpp:42 rc.cpp:215
+#: conf/preferencesdialog.cpp:42 rc.cpp:122
 msgid "Identity"
 msgstr "Idintité"
 
@@ -140,7 +139,7 @@ msgstr "Tchuzes d' idintité"
 
 #. i18n: file: conf/dlgeditorbase.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: conf/preferencesdialog.cpp:44 rc.cpp:224
+#: conf/preferencesdialog.cpp:44 rc.cpp:68
 msgid "Editor"
 msgstr "Aspougneu d' tecse"
 
@@ -148,29 +147,30 @@ msgstr "Aspougneu d' tecse"
 msgid "Editor Options"
 msgstr "Tchuzes di l' aspougneu"
 
-#: conf/dlgpresentation.cpp:28
-msgctxt "@label:listbox The current screen, for the presentation mode"
-msgid "Current Screen"
-msgstr "Waitroûle do moumint"
+#: conf/dlgperformance.cpp:43
+msgid ""
+"Keeps used memory as low as possible. Do not reuse anything. (For systems "
+"with low memory.)"
+msgstr ""
+"Wåde li memwere eployeye ossu basse ki c' est possibe. Ni reploye rén. (Po "
+"des sistinmes a basse memwere.)"
 
-#: conf/dlgpresentation.cpp:29
-msgctxt "@label:listbox The default screen for the presentation mode"
-msgid "Default Screen"
-msgstr "Prémetowe waitroûle"
+#: conf/dlgperformance.cpp:46
+msgid ""
+"A good compromise between memory usage and speed gain. Preload next page and "
+"boost searches. (For systems with 256MB of memory, typically.)"
+msgstr ""
+"Ene mitan voye inte l' eployaedje del memwere eyet l' wangnaedje di radisté. "
+"Prétchedje li pådje d' après eyet roedi les cweraedjes. (Tipicmint po les "
+"sistinmes avou 256MB di memwere.)"
 
-#: conf/dlgpresentation.cpp:33
-#, kde-format
-msgctxt "@label:listbox %1 is the screen number (0, 1, ...)"
-msgid "Screen %1"
-msgstr "Waitroûle %1"
-
-#: conf/dlgpresentation.cpp:48
-#, fuzzy
-#| msgid " sec."
-msgid " second"
-msgid_plural " seconds"
-msgstr[0] " seg."
-msgstr[1] " seg."
+#: conf/dlgperformance.cpp:49
+msgid ""
+"Keeps everything in memory. Preload next pages. Boost searches. (For systems "
+"with more than 512MB of memory.)"
+msgstr ""
+"Wåde totafwait el memwere. Prétchedje les pådjes d' après. Roedi les "
+"cweraedjes. (Po les sistinmes avou pus ki 512MB di memwere.)"
 
 #: core/action.cpp:91
 #, kde-format
@@ -241,6 +241,12 @@ msgstr "Sicripe JavaScript"
 #: core/action.cpp:429
 msgid "Play movie..."
 msgstr "Djouwer fime..."
+
+#: core/sourcereference.cpp:91
+#, kde-format
+msgctxt "'source' is a source file"
+msgid "Source: %1"
+msgstr "Sourdant: %1"
 
 #: core/document.cpp:163
 #, kde-format
@@ -367,6 +373,19 @@ msgstr "Grandeu do fitchî"
 msgid "Page Size"
 msgstr "Grandeu do papî"
 
+#: core/chooseenginedialog.cpp:22
+msgid "Backend Selection"
+msgstr "Tchoezi l' programe fondmint"
+
+#: core/chooseenginedialog.cpp:33
+#, kde-format
+msgid ""
+"<qt>More than one backend found for the MIME type:<br /><b>%1</b> (%2).<br /"
+"><br />Please select which one to use:</qt>"
+msgstr ""
+"<qt>Dj' a trové pus k' on programe fondmint pol sôre MIME: <br /><b>%1</b> (%"
+"2).<br /><br />Tchoezixhoz s' i vs plait li ké eployî:</qt>"
+
 #: core/generator.cpp:552
 msgid "Plain &Text..."
 msgstr "Peur &tecse..."
@@ -384,57 +403,6 @@ msgstr "Tecse OpenDocument"
 msgctxt "This is the document format"
 msgid "HTML"
 msgstr "HTML"
-
-#: core/sourcereference.cpp:91
-#, kde-format
-msgctxt "'source' is a source file"
-msgid "Source: %1"
-msgstr "Sourdant: %1"
-
-#: core/chooseenginedialog.cpp:22
-msgid "Backend Selection"
-msgstr "Tchoezi l' programe fondmint"
-
-#: core/chooseenginedialog.cpp:33
-#, kde-format
-msgid ""
-"<qt>More than one backend found for the MIME type:<br /><b>%1</b> (%2).<br /"
-"><br />Please select which one to use:</qt>"
-msgstr ""
-"<qt>Dj' a trové pus k' on programe fondmint pol sôre MIME: <br /><b>%1</b> (%"
-"2).<br /><br />Tchoezixhoz s' i vs plait li ké eployî:</qt>"
-
-#: ui/toolaction.cpp:21
-msgid "Selection Tools"
-msgstr "Usteyes po tchoezi"
-
-#: ui/toolaction.cpp:71 ui/toolaction.cpp:83
-msgid ""
-"Click to use the current selection tool\n"
-"Click and hold to choose another selection tool"
-msgstr ""
-"Clitchîz pos eployî l' usteye di tchoes do moumint\n"
-"Clitchîz eyet wårdez tchôkî po tchoezi ene ôte usteye po tchoezi"
-
-#: ui/pageviewannotator.cpp:159
-msgid "Text of the new note:"
-msgstr "Tecse del novele note:"
-
-#: ui/pageviewannotator.cpp:161
-msgid "New Text Note"
-msgstr "Novele note di tecse"
-
-#: ui/pageviewannotator.cpp:700
-msgid "Please insert your name or initials:"
-msgstr "Intrez, s' i vs plait, vosse no ou iniciåles:"
-
-#: ui/pageviewannotator.cpp:701
-msgid "You must set this name:"
-msgstr "Vos dvoz defini c' no:"
-
-#: ui/pageviewannotator.cpp:702
-msgid "Annotations author"
-msgstr "Oteur des notes"
 
 #: ui/findbar.cpp:36 ui/presentationsearchbar.cpp:64
 msgid "Close"
@@ -482,342 +450,6 @@ msgstr "Diferince po ptitès et grandès letes"
 #: ui/findbar.cpp:68
 msgid "From current page"
 msgstr "A pårti di c' pådje ci"
-
-#: ui/presentationwidget.cpp:142
-#, fuzzy, kde-format
-#| msgid "Presentation"
-msgctxt "[document title/filename] – Presentation"
-msgid "%1 – Presentation"
-msgstr "Prezintaedje"
-
-#: ui/presentationwidget.cpp:184
-msgid "Switch Screen"
-msgstr "Candjî d' waitroûle"
-
-#: ui/presentationwidget.cpp:191
-#, kde-format
-msgctxt "%1 is the screen number (0, 1, ...)"
-msgid "Screen %1"
-msgstr "Waitroûle %1"
-
-#: ui/presentationwidget.cpp:198
-msgid "Exit Presentation Mode"
-msgstr "Moussî foû do môde prezintaedje"
-
-#: ui/presentationwidget.cpp:318
-#, kde-format
-msgid "Title: %1"
-msgstr "Tite: %1"
-
-#: ui/presentationwidget.cpp:320 ui/guiutils.cpp:156
-#, kde-format
-msgid "Author: %1"
-msgstr "Oteur : %1"
-
-#: ui/presentationwidget.cpp:322
-#, kde-format
-msgid "Pages: %1"
-msgstr "Pådjes: %1"
-
-#: ui/presentationwidget.cpp:323
-msgid "Click to begin"
-msgstr "Clitchîz pos ataker"
-
-#: ui/presentationwidget.cpp:1277
-msgid ""
-"There are two ways of exiting presentation mode, you can press either ESC "
-"key or click with the quit button that appears when placing the mouse in the "
-"top-right corner. Of course you can cycle windows (Alt+TAB by default)"
-msgstr ""
-"I gn a deus façons d' moussî foû do môde prezintaedje, vos ploz soeye-t i "
-"tchôkî l' tape ESC, soeye-t i clitchî sol boton po cwiter k' aparexh cwand "
-"on plaece li sori el droete coine al copete. Bén seur, vos ploz passer d' on "
-"purnea a l' ôte (Alt+TAB prémetou)"
-
-#: ui/presentationwidget.cpp:1399
-msgctxt ""
-"Reason for inhibiting the screensaver activation, when the presentation mode "
-"is active"
-msgid "Giving a presentation"
-msgstr "Dji dene on prezintaedje"
-
-#: ui/thumbnaillist.cpp:870
-msgid "Show bookmarked pages only"
-msgstr "Èn mostrer k' les pådjes markêyes"
-
-#: ui/annotationmodel.cpp:297 part.cpp:1731
-#, kde-format
-msgid "Page %1"
-msgstr "Pådje %1"
-
-#: ui/minibar.cpp:87
-msgctxt "Layouted like: '5 [pages] of 10'"
-msgid "of"
-msgstr "di"
-
-#: ui/annotationpropertiesdialog.cpp:58
-msgid "&Appearance"
-msgstr "&Rivnance"
-
-#: ui/annotationpropertiesdialog.cpp:61
-msgid "&Color:"
-msgstr "&Coleur:"
-
-#: ui/annotationpropertiesdialog.cpp:69
-msgid "&Opacity:"
-msgstr "&Opacité:"
-
-#: ui/annotationpropertiesdialog.cpp:74
-msgctxt "Suffix for the opacity level, eg '80 %'"
-msgid " %"
-msgstr " %"
-
-#: ui/annotationpropertiesdialog.cpp:91
-msgid "&General"
-msgstr "&Djenerå"
-
-#. i18n: file: conf/dlgidentitybase.ui:55
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: ui/annotationpropertiesdialog.cpp:94 rc.cpp:218
-msgid "&Author:"
-msgstr "&Oteur:"
-
-#: ui/annotationpropertiesdialog.cpp:102
-#, kde-format
-msgid "Created: %1"
-msgstr "Ahivé: %1"
-
-#: ui/annotationpropertiesdialog.cpp:107 ui/annotationpropertiesdialog.cpp:211
-#, kde-format
-msgid "Modified: %1"
-msgstr "Candjî : %1"
-
-#: ui/annotationpropertiesdialog.cpp:152
-msgid "Note Properties"
-msgstr "Prôpietés del note"
-
-#: ui/annotationpropertiesdialog.cpp:154
-msgid "Inline Note Properties"
-msgstr "Prôpietés del note dins l' fitchî"
-
-#: ui/annotationpropertiesdialog.cpp:157
-msgid "Line Properties"
-msgstr "Prôpietés del roye"
-
-#: ui/annotationpropertiesdialog.cpp:160
-msgid "Geometry Properties"
-msgstr "Prôpietés del djeyometreye"
-
-#: ui/annotationpropertiesdialog.cpp:163
-msgid "Highlight Properties"
-msgstr "Prôpietés do meteaedje en evidince"
-
-#: ui/annotationpropertiesdialog.cpp:166
-msgid "Stamp Properties"
-msgstr "Prôpietés do tampon"
-
-#: ui/annotationpropertiesdialog.cpp:169
-msgid "Ink Properties"
-msgstr "Prôpietés d' l' intche"
-
-#: ui/annotationpropertiesdialog.cpp:172
-msgid "Caret Properties"
-msgstr "Prôpietés do cursoe"
-
-#: ui/annotationpropertiesdialog.cpp:175
-msgid "File Attachment Properties"
-msgstr "Prôpietés di l' ataetchmint d' fitchî"
-
-#: ui/annotationpropertiesdialog.cpp:178
-msgid "Sound Properties"
-msgstr "Prôpietés do son"
-
-#: ui/annotationpropertiesdialog.cpp:181
-msgid "Movie Properties"
-msgstr "Prôpietés do fime"
-
-#: ui/annotationpropertiesdialog.cpp:184
-msgid "Annotation Properties"
-msgstr "Prôpietés di l' anotåcion"
-
-#. i18n: tag tool attribute name
-#. i18n: file: ui/data/tools.xml:20
-#: ui/guiutils.cpp:72 ui/annotationwidgets.cpp:218 rc.cpp:308
-msgid "Note"
-msgstr "Note"
-
-#. i18n: tag tool attribute name
-#. i18n: file: ui/data/tools.xml:27
-#: ui/guiutils.cpp:74 rc.cpp:311
-msgid "Inline Note"
-msgstr "Note dins l' fitchî"
-
-#: ui/guiutils.cpp:77
-msgid "Line"
-msgstr "Roye"
-
-#: ui/guiutils.cpp:80
-msgid "Geometry"
-msgstr "Djeyometreye"
-
-#: ui/guiutils.cpp:83 ui/annotationwidgets.cpp:397
-msgid "Highlight"
-msgstr "Mete en evidince"
-
-#. i18n: tag tool attribute name
-#. i18n: file: ui/data/tools.xml:62
-#: ui/guiutils.cpp:86 rc.cpp:326
-msgid "Stamp"
-msgstr "Tampon"
-
-#: ui/guiutils.cpp:89
-msgid "Ink"
-msgstr "Intche"
-
-#: ui/guiutils.cpp:92
-msgid "Caret"
-msgstr "Cursoe"
-
-#: ui/guiutils.cpp:95
-msgid "File Attachment"
-msgstr "Ataetchmint di fitchî"
-
-#: ui/guiutils.cpp:98
-msgid "Sound"
-msgstr "Son"
-
-#: ui/guiutils.cpp:101
-msgid "Movie"
-msgstr "Fime"
-
-#: ui/guiutils.cpp:113
-msgctxt "Unknown author"
-msgid "Unknown"
-msgstr "Nén cnoxhou"
-
-#: ui/guiutils.cpp:202 ui/propertiesdialog.cpp:261
-#, kde-format
-msgid "Where do you want to save %1?"
-msgstr "Wice voloz schaper %1?"
-
-#: ui/guiutils.cpp:211 ui/propertiesdialog.cpp:274
-#, kde-format
-msgid "Could not open \"%1\" for writing. File was not saved."
-msgstr "Dji n' a savou drovi « %1 » po-z î scrire. Fitchî nén schapé."
-
-#: ui/presentationsearchbar.cpp:78
-msgid "Find Next"
-msgstr "Trover shuvant"
-
-#: ui/side_reviews.cpp:61
-msgid ""
-"<div align=center><h3>No annotations</h3>To create new annotations press F6 "
-"or select <i>Tools -&gt; Review</i> from the menu.</div>"
-msgstr ""
-"<div align=center><h3>Nole anotåcion</h3>Pos ahiver des novelès anotåcions, "
-"tchôkîz F6 oudonbén tchoezi <i>Usteyes -&gt; Rilevêye</i> el dressêye.</div>"
-
-#: ui/side_reviews.cpp:128
-msgid "Group by Page"
-msgstr "Grouper sol pådje"
-
-#: ui/side_reviews.cpp:133
-msgid "Group by Author"
-msgstr "Grouper so l' oteur"
-
-#: ui/side_reviews.cpp:141
-msgid "Show reviews for current page only"
-msgstr "Èn mostrer les rlevêyes ki pol pådje do moumint"
-
-#: ui/ktreeviewsearchline.cpp:461
-#, fuzzy
-#| msgid "Search Columns"
-msgid "Search Options"
-msgstr "Colones a cweri dvins"
-
-#: ui/ktreeviewsearchline.cpp:462
-#, fuzzy
-#| msgid "Case Sensitive"
-msgctxt "Enable case sensitive search in the side navigation panels"
-msgid "Case Sensitive"
-msgstr "Diferince po ptitès et grandès letes"
-
-#: ui/ktreeviewsearchline.cpp:465
-msgctxt "Enable regular expression search in the side navigation panels"
-msgid "Regular Expression"
-msgstr ""
-
-#: ui/ktreeviewsearchline.cpp:471
-msgid "Search Columns"
-msgstr "Colones a cweri dvins"
-
-#: ui/ktreeviewsearchline.cpp:473
-msgid "All Visible Columns"
-msgstr "Totes les veyåvès colones"
-
-#: ui/ktreeviewsearchline.cpp:630
-msgid "S&earch:"
-msgstr "C&weri:"
-
-#: ui/searchwidget.cpp:40
-msgid "Enter at least 3 letters to filter pages"
-msgstr "Sititchîz pol moens 3 letes po passer al passete les pådjes"
-
-#: ui/searchwidget.cpp:50
-msgid "Case Sensitive"
-msgstr "Diferince po ptitès et grandès letes"
-
-#: ui/searchwidget.cpp:52
-msgid "Match Phrase"
-msgstr "Corespond al fråze"
-
-#: ui/searchwidget.cpp:53
-msgid "Match All Words"
-msgstr "Corespond a tos les mots"
-
-#: ui/searchwidget.cpp:54
-msgid "Match Any Word"
-msgstr "Corespond tolminme ké mot"
-
-#: ui/searchwidget.cpp:73
-msgid "Filter Options"
-msgstr "Tchuzes del passete"
-
-#: ui/sidebar.cpp:659 ui/annotationwidgets.cpp:268 shell/main.cpp:39
-#: part.cpp:149
-msgid "Okular"
-msgstr "Okular"
-
-#: ui/sidebar.cpp:660
-msgid "Show Text"
-msgstr "Mostrer tecse"
-
-#: ui/sidebar.cpp:676
-msgid "Small Icons"
-msgstr "Pititès imådjetes"
-
-#: ui/sidebar.cpp:677
-msgid "Normal Icons"
-msgstr "Normålès imådjetes"
-
-#: ui/sidebar.cpp:678
-msgid "Large Icons"
-msgstr "Lådjès imådjetes"
-
-#: ui/videowidget.cpp:115
-msgctxt "start the movie playback"
-msgid "Play"
-msgstr "Djouwer"
-
-#: ui/videowidget.cpp:120
-msgctxt "pause the movie playback"
-msgid "Pause"
-msgstr "Djoker"
-
-#: ui/videowidget.cpp:185
-msgctxt "stop the movie playback"
-msgid "Stop"
-msgstr "Åwe"
 
 #: ui/pageview.cpp:343
 msgid "Zoom"
@@ -1034,14 +666,81 @@ msgstr "Dessinez on rectangue åtoû do tecse/di l' imådje a copyî."
 msgid "Select text"
 msgstr "Tchoezi tecse"
 
-#: ui/pageviewutils.cpp:380
-msgid "Close this message"
-msgstr "Clôre ci messaedje"
+#: ui/videowidget.cpp:115
+msgctxt "start the movie playback"
+msgid "Play"
+msgstr "Djouwer"
 
-#: ui/tts.cpp:52
-#, kde-format
-msgid "Starting KTTSD Failed: %1"
-msgstr "L' enondaedje di KTTSD a fwait berwete: %1"
+#: ui/videowidget.cpp:120
+msgctxt "pause the movie playback"
+msgid "Pause"
+msgstr "Djoker"
+
+#: ui/videowidget.cpp:185
+msgctxt "stop the movie playback"
+msgid "Stop"
+msgstr "Åwe"
+
+#: ui/toolaction.cpp:21
+msgid "Selection Tools"
+msgstr "Usteyes po tchoezi"
+
+#: ui/toolaction.cpp:71 ui/toolaction.cpp:83
+msgid ""
+"Click to use the current selection tool\n"
+"Click and hold to choose another selection tool"
+msgstr ""
+"Clitchîz pos eployî l' usteye di tchoes do moumint\n"
+"Clitchîz eyet wårdez tchôkî po tchoezi ene ôte usteye po tchoezi"
+
+#: ui/thumbnaillist.cpp:870
+msgid "Show bookmarked pages only"
+msgstr "Èn mostrer k' les pådjes markêyes"
+
+#: ui/embeddedfilesdialog.cpp:35
+msgctxt "Unknown date"
+msgid "Unknown"
+msgstr "Nén cnoxhou"
+
+#: ui/embeddedfilesdialog.cpp:40
+msgctxt "@title:window"
+msgid "Embedded Files"
+msgstr "Ravalés fitchîs"
+
+#: ui/embeddedfilesdialog.cpp:48
+msgctxt "@title:column"
+msgid "Name"
+msgstr "No"
+
+#: ui/embeddedfilesdialog.cpp:49
+msgctxt "@title:column"
+msgid "Description"
+msgstr "Discrijhaedje"
+
+#: ui/embeddedfilesdialog.cpp:50
+msgctxt "@title:column"
+msgid "Size"
+msgstr "Grandeu"
+
+#: ui/embeddedfilesdialog.cpp:51
+msgctxt "@title:column"
+msgid "Created"
+msgstr "Ahivé"
+
+#: ui/embeddedfilesdialog.cpp:52
+msgctxt "@title:column"
+msgid "Modified"
+msgstr "Candjî"
+
+#: ui/embeddedfilesdialog.cpp:68 ui/annotationwidgets.cpp:518
+msgctxt "Not available size"
+msgid "N/A"
+msgstr "N/A"
+
+#: ui/embeddedfilesdialog.cpp:106
+msgctxt "@action:inmenu"
+msgid "&Save As..."
+msgstr "&Schaper eyet rlomer..."
 
 #: ui/fileprinterpreview.cpp:114
 msgid "Could not load print preview part"
@@ -1050,6 +749,216 @@ msgstr "Dji n' a savou tcherdjî l' pårt di prévoeyaedje d' imprimaedje"
 #: ui/fileprinterpreview.cpp:129
 msgid "Print Preview"
 msgstr "Prévey divant d' imprimer"
+
+#: ui/side_reviews.cpp:61
+msgid ""
+"<div align=center><h3>No annotations</h3>To create new annotations press F6 "
+"or select <i>Tools -&gt; Review</i> from the menu.</div>"
+msgstr ""
+"<div align=center><h3>Nole anotåcion</h3>Pos ahiver des novelès anotåcions, "
+"tchôkîz F6 oudonbén tchoezi <i>Usteyes -&gt; Rilevêye</i> el dressêye.</div>"
+
+#: ui/side_reviews.cpp:128
+msgid "Group by Page"
+msgstr "Grouper sol pådje"
+
+#: ui/side_reviews.cpp:133
+msgid "Group by Author"
+msgstr "Grouper so l' oteur"
+
+#: ui/side_reviews.cpp:141
+msgid "Show reviews for current page only"
+msgstr "Èn mostrer les rlevêyes ki pol pådje do moumint"
+
+#: ui/formwidgets.cpp:350 shell/shell.cpp:242
+msgid "*|All Files"
+msgstr "*|Tos les fitchîs"
+
+#: ui/bookmarklist.cpp:131
+msgid "Current document only"
+msgstr "Documint do moumint seulmint"
+
+#: ui/bookmarklist.cpp:211
+msgid "Go to This Bookmark"
+msgstr "Potchî a cisse rimåke"
+
+#: ui/bookmarklist.cpp:212
+msgid "Rename Bookmark"
+msgstr "Rilomer li rmåke"
+
+#: ui/bookmarklist.cpp:213 part.cpp:1270 part.cpp:1733
+msgid "Remove Bookmark"
+msgstr "Oister l' rimåke"
+
+#: ui/bookmarklist.cpp:295 ui/bookmarklist.cpp:375
+#, kde-format
+msgctxt "%1 is the file name"
+msgid ""
+"%1\n"
+"\n"
+"One bookmark"
+msgid_plural ""
+"%1\n"
+"\n"
+"%2 bookmarks"
+msgstr[0] ""
+"%1\n"
+"\n"
+"Ene rimåke"
+msgstr[1] ""
+"%1\n"
+"\n"
+"%2 rimåkes"
+
+#: ui/annotationmodel.cpp:297 part.cpp:1731
+#, kde-format
+msgid "Page %1"
+msgstr "Pådje %1"
+
+#. i18n: tag tool attribute name
+#. i18n: file: ui/data/tools.xml:20
+#: ui/guiutils.cpp:72 ui/annotationwidgets.cpp:218 rc.cpp:308
+msgid "Note"
+msgstr "Note"
+
+#. i18n: tag tool attribute name
+#. i18n: file: ui/data/tools.xml:27
+#: ui/guiutils.cpp:74 rc.cpp:311
+msgid "Inline Note"
+msgstr "Note dins l' fitchî"
+
+#: ui/guiutils.cpp:77
+msgid "Line"
+msgstr "Roye"
+
+#: ui/guiutils.cpp:80
+msgid "Geometry"
+msgstr "Djeyometreye"
+
+#: ui/guiutils.cpp:83 ui/annotationwidgets.cpp:397
+msgid "Highlight"
+msgstr "Mete en evidince"
+
+#. i18n: tag tool attribute name
+#. i18n: file: ui/data/tools.xml:62
+#: ui/guiutils.cpp:86 rc.cpp:326
+msgid "Stamp"
+msgstr "Tampon"
+
+#: ui/guiutils.cpp:89
+msgid "Ink"
+msgstr "Intche"
+
+#: ui/guiutils.cpp:92
+msgid "Caret"
+msgstr "Cursoe"
+
+#: ui/guiutils.cpp:95
+msgid "File Attachment"
+msgstr "Ataetchmint di fitchî"
+
+#: ui/guiutils.cpp:98
+msgid "Sound"
+msgstr "Son"
+
+#: ui/guiutils.cpp:101
+msgid "Movie"
+msgstr "Fime"
+
+#: ui/guiutils.cpp:113
+msgctxt "Unknown author"
+msgid "Unknown"
+msgstr "Nén cnoxhou"
+
+#: ui/guiutils.cpp:156 ui/presentationwidget.cpp:320
+#, kde-format
+msgid "Author: %1"
+msgstr "Oteur : %1"
+
+#: ui/guiutils.cpp:202 ui/propertiesdialog.cpp:261
+#, kde-format
+msgid "Where do you want to save %1?"
+msgstr "Wice voloz schaper %1?"
+
+#: ui/guiutils.cpp:211 ui/propertiesdialog.cpp:274
+#, kde-format
+msgid "Could not open \"%1\" for writing. File was not saved."
+msgstr "Dji n' a savou drovi « %1 » po-z î scrire. Fitchî nén schapé."
+
+#: ui/sidebar.cpp:659 ui/annotationwidgets.cpp:268 shell/main.cpp:39
+#: part.cpp:149
+msgid "Okular"
+msgstr "Okular"
+
+#: ui/sidebar.cpp:660
+msgid "Show Text"
+msgstr "Mostrer tecse"
+
+#: ui/sidebar.cpp:676
+msgid "Small Icons"
+msgstr "Pititès imådjetes"
+
+#: ui/sidebar.cpp:677
+msgid "Normal Icons"
+msgstr "Normålès imådjetes"
+
+#: ui/sidebar.cpp:678
+msgid "Large Icons"
+msgstr "Lådjès imådjetes"
+
+#: ui/pageviewutils.cpp:380
+msgid "Close this message"
+msgstr "Clôre ci messaedje"
+
+#: ui/minibar.cpp:87
+msgctxt "Layouted like: '5 [pages] of 10'"
+msgid "of"
+msgstr "di"
+
+#: ui/pageviewannotator.cpp:159
+msgid "Text of the new note:"
+msgstr "Tecse del novele note:"
+
+#: ui/pageviewannotator.cpp:161
+msgid "New Text Note"
+msgstr "Novele note di tecse"
+
+#: ui/pageviewannotator.cpp:700
+msgid "Please insert your name or initials:"
+msgstr "Intrez, s' i vs plait, vosse no ou iniciåles:"
+
+#: ui/pageviewannotator.cpp:701
+msgid "You must set this name:"
+msgstr "Vos dvoz defini c' no:"
+
+#: ui/pageviewannotator.cpp:702
+msgid "Annotations author"
+msgstr "Oteur des notes"
+
+#: ui/annotationpopup.cpp:49
+#, kde-format
+msgid "Annotation"
+msgid_plural "%1 Annotations"
+msgstr[0] "Anotåcion"
+msgstr[1] "%1 anotåcions"
+
+#: ui/annotationpopup.cpp:50
+msgid "&Open Pop-up Note"
+msgstr "&Drovi aspitante note"
+
+#: ui/annotationpopup.cpp:52
+msgid "&Delete"
+msgstr "&Disfacer"
+
+#: ui/annotationpopup.cpp:58 ui/propertiesdialog.cpp:49 part.cpp:521
+msgid "&Properties"
+msgstr "&Prôpietés"
+
+#: ui/annotationpopup.cpp:65
+#, kde-format
+msgctxt "%1 is the name of the file to save"
+msgid "&Save '%1'..."
+msgstr "&Schaper « %1 »..."
 
 #: ui/annotationwidgets.cpp:208
 msgid "Icon"
@@ -1232,11 +1141,6 @@ msgctxt "'File' as normal file, that can be opened, saved, etc.."
 msgid "File"
 msgstr "Fitchî"
 
-#: ui/annotationwidgets.cpp:518 ui/embeddedfilesdialog.cpp:68
-msgctxt "Not available size"
-msgid "N/A"
-msgstr "N/A"
-
 #: ui/annotationwidgets.cpp:519
 msgid "No description available."
 msgstr "Nou discrijhaedje."
@@ -1269,97 +1173,157 @@ msgctxt "Symbol for caret annotations"
 msgid "P"
 msgstr "P"
 
-#: ui/bookmarklist.cpp:131
-msgid "Current document only"
-msgstr "Documint do moumint seulmint"
+#: ui/ktreeviewsearchline.cpp:461
+#, fuzzy
+#| msgid "Search Columns"
+msgid "Search Options"
+msgstr "Colones a cweri dvins"
 
-#: ui/bookmarklist.cpp:211
-msgid "Go to This Bookmark"
-msgstr "Potchî a cisse rimåke"
+#: ui/ktreeviewsearchline.cpp:462
+#, fuzzy
+#| msgid "Case Sensitive"
+msgctxt "Enable case sensitive search in the side navigation panels"
+msgid "Case Sensitive"
+msgstr "Diferince po ptitès et grandès letes"
 
-#: ui/bookmarklist.cpp:212
-msgid "Rename Bookmark"
-msgstr "Rilomer li rmåke"
+#: ui/ktreeviewsearchline.cpp:465
+msgctxt "Enable regular expression search in the side navigation panels"
+msgid "Regular Expression"
+msgstr ""
 
-#: ui/bookmarklist.cpp:213 part.cpp:1270 part.cpp:1733
-msgid "Remove Bookmark"
-msgstr "Oister l' rimåke"
+#: ui/ktreeviewsearchline.cpp:471
+msgid "Search Columns"
+msgstr "Colones a cweri dvins"
 
-#: ui/bookmarklist.cpp:295 ui/bookmarklist.cpp:375
-#, kde-format
-msgctxt "%1 is the file name"
-msgid ""
-"%1\n"
-"\n"
-"One bookmark"
-msgid_plural ""
-"%1\n"
-"\n"
-"%2 bookmarks"
-msgstr[0] ""
-"%1\n"
-"\n"
-"Ene rimåke"
-msgstr[1] ""
-"%1\n"
-"\n"
-"%2 rimåkes"
+#: ui/ktreeviewsearchline.cpp:473
+msgid "All Visible Columns"
+msgstr "Totes les veyåvès colones"
 
-#: ui/embeddedfilesdialog.cpp:35
-msgctxt "Unknown date"
-msgid "Unknown"
-msgstr "Nén cnoxhou"
-
-#: ui/embeddedfilesdialog.cpp:40
-msgctxt "@title:window"
-msgid "Embedded Files"
-msgstr "Ravalés fitchîs"
-
-#: ui/embeddedfilesdialog.cpp:48
-msgctxt "@title:column"
-msgid "Name"
-msgstr "No"
-
-#: ui/embeddedfilesdialog.cpp:49
-msgctxt "@title:column"
-msgid "Description"
-msgstr "Discrijhaedje"
-
-#: ui/embeddedfilesdialog.cpp:50
-msgctxt "@title:column"
-msgid "Size"
-msgstr "Grandeu"
-
-#: ui/embeddedfilesdialog.cpp:51
-msgctxt "@title:column"
-msgid "Created"
-msgstr "Ahivé"
-
-#: ui/embeddedfilesdialog.cpp:52
-msgctxt "@title:column"
-msgid "Modified"
-msgstr "Candjî"
-
-#: ui/embeddedfilesdialog.cpp:106
-msgctxt "@action:inmenu"
-msgid "&Save As..."
-msgstr "&Schaper eyet rlomer..."
+#: ui/ktreeviewsearchline.cpp:630
+msgid "S&earch:"
+msgstr "C&weri:"
 
 #: ui/annotwindow.cpp:48
 msgid "Close this note"
 msgstr "Clôre cisse note ci"
 
-#: ui/formwidgets.cpp:350 shell/shell.cpp:242
-msgid "*|All Files"
-msgstr "*|Tos les fitchîs"
+#: ui/annotationpropertiesdialog.cpp:58
+msgid "&Appearance"
+msgstr "&Rivnance"
+
+#: ui/annotationpropertiesdialog.cpp:61
+msgid "&Color:"
+msgstr "&Coleur:"
+
+#: ui/annotationpropertiesdialog.cpp:69
+msgid "&Opacity:"
+msgstr "&Opacité:"
+
+#: ui/annotationpropertiesdialog.cpp:74
+msgctxt "Suffix for the opacity level, eg '80 %'"
+msgid " %"
+msgstr " %"
+
+#: ui/annotationpropertiesdialog.cpp:91
+msgid "&General"
+msgstr "&Djenerå"
+
+#. i18n: file: conf/dlgidentitybase.ui:55
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/annotationpropertiesdialog.cpp:94 rc.cpp:125
+msgid "&Author:"
+msgstr "&Oteur:"
+
+#: ui/annotationpropertiesdialog.cpp:102
+#, kde-format
+msgid "Created: %1"
+msgstr "Ahivé: %1"
+
+#: ui/annotationpropertiesdialog.cpp:107 ui/annotationpropertiesdialog.cpp:211
+#, kde-format
+msgid "Modified: %1"
+msgstr "Candjî : %1"
+
+#: ui/annotationpropertiesdialog.cpp:152
+msgid "Note Properties"
+msgstr "Prôpietés del note"
+
+#: ui/annotationpropertiesdialog.cpp:154
+msgid "Inline Note Properties"
+msgstr "Prôpietés del note dins l' fitchî"
+
+#: ui/annotationpropertiesdialog.cpp:157
+msgid "Line Properties"
+msgstr "Prôpietés del roye"
+
+#: ui/annotationpropertiesdialog.cpp:160
+msgid "Geometry Properties"
+msgstr "Prôpietés del djeyometreye"
+
+#: ui/annotationpropertiesdialog.cpp:163
+msgid "Highlight Properties"
+msgstr "Prôpietés do meteaedje en evidince"
+
+#: ui/annotationpropertiesdialog.cpp:166
+msgid "Stamp Properties"
+msgstr "Prôpietés do tampon"
+
+#: ui/annotationpropertiesdialog.cpp:169
+msgid "Ink Properties"
+msgstr "Prôpietés d' l' intche"
+
+#: ui/annotationpropertiesdialog.cpp:172
+msgid "Caret Properties"
+msgstr "Prôpietés do cursoe"
+
+#: ui/annotationpropertiesdialog.cpp:175
+msgid "File Attachment Properties"
+msgstr "Prôpietés di l' ataetchmint d' fitchî"
+
+#: ui/annotationpropertiesdialog.cpp:178
+msgid "Sound Properties"
+msgstr "Prôpietés do son"
+
+#: ui/annotationpropertiesdialog.cpp:181
+msgid "Movie Properties"
+msgstr "Prôpietés do fime"
+
+#: ui/annotationpropertiesdialog.cpp:184
+msgid "Annotation Properties"
+msgstr "Prôpietés di l' anotåcion"
+
+#: ui/searchwidget.cpp:40
+msgid "Enter at least 3 letters to filter pages"
+msgstr "Sititchîz pol moens 3 letes po passer al passete les pådjes"
+
+#: ui/searchwidget.cpp:50
+msgid "Case Sensitive"
+msgstr "Diferince po ptitès et grandès letes"
+
+#: ui/searchwidget.cpp:52
+msgid "Match Phrase"
+msgstr "Corespond al fråze"
+
+#: ui/searchwidget.cpp:53
+msgid "Match All Words"
+msgstr "Corespond a tos les mots"
+
+#: ui/searchwidget.cpp:54
+msgid "Match Any Word"
+msgstr "Corespond tolminme ké mot"
+
+#: ui/searchwidget.cpp:73
+msgid "Filter Options"
+msgstr "Tchuzes del passete"
+
+#: ui/tts.cpp:52
+#, kde-format
+msgid "Starting KTTSD Failed: %1"
+msgstr "L' enondaedje di KTTSD a fwait berwete: %1"
 
 #: ui/propertiesdialog.cpp:44
 msgid "Unknown File"
 msgstr "Fitchî nén cnoxhou"
-
-#: ui/propertiesdialog.cpp:49 ui/annotationpopup.cpp:58 part.cpp:521
-msgid "&Properties"
-msgstr "&Prôpietés"
 
 #: ui/propertiesdialog.cpp:58
 msgid "No document opened."
@@ -1521,26 +1485,62 @@ msgstr "Sôre"
 msgid "File"
 msgstr "Fitchî"
 
-#: ui/annotationpopup.cpp:49
+#: ui/presentationsearchbar.cpp:78
+msgid "Find Next"
+msgstr "Trover shuvant"
+
+#: ui/presentationwidget.cpp:142
+#, fuzzy, kde-format
+#| msgid "Presentation"
+msgctxt "[document title/filename] – Presentation"
+msgid "%1 – Presentation"
+msgstr "Prezintaedje"
+
+#: ui/presentationwidget.cpp:184
+msgid "Switch Screen"
+msgstr "Candjî d' waitroûle"
+
+#: ui/presentationwidget.cpp:191
 #, kde-format
-msgid "Annotation"
-msgid_plural "%1 Annotations"
-msgstr[0] "Anotåcion"
-msgstr[1] "%1 anotåcions"
+msgctxt "%1 is the screen number (0, 1, ...)"
+msgid "Screen %1"
+msgstr "Waitroûle %1"
 
-#: ui/annotationpopup.cpp:50
-msgid "&Open Pop-up Note"
-msgstr "&Drovi aspitante note"
+#: ui/presentationwidget.cpp:198
+msgid "Exit Presentation Mode"
+msgstr "Moussî foû do môde prezintaedje"
 
-#: ui/annotationpopup.cpp:52
-msgid "&Delete"
-msgstr "&Disfacer"
-
-#: ui/annotationpopup.cpp:65
+#: ui/presentationwidget.cpp:318
 #, kde-format
-msgctxt "%1 is the name of the file to save"
-msgid "&Save '%1'..."
-msgstr "&Schaper « %1 »..."
+msgid "Title: %1"
+msgstr "Tite: %1"
+
+#: ui/presentationwidget.cpp:322
+#, kde-format
+msgid "Pages: %1"
+msgstr "Pådjes: %1"
+
+#: ui/presentationwidget.cpp:323
+msgid "Click to begin"
+msgstr "Clitchîz pos ataker"
+
+#: ui/presentationwidget.cpp:1277
+msgid ""
+"There are two ways of exiting presentation mode, you can press either ESC "
+"key or click with the quit button that appears when placing the mouse in the "
+"top-right corner. Of course you can cycle windows (Alt+TAB by default)"
+msgstr ""
+"I gn a deus façons d' moussî foû do môde prezintaedje, vos ploz soeye-t i "
+"tchôkî l' tape ESC, soeye-t i clitchî sol boton po cwiter k' aparexh cwand "
+"on plaece li sori el droete coine al copete. Bén seur, vos ploz passer d' on "
+"purnea a l' ôte (Alt+TAB prémetou)"
+
+#: ui/presentationwidget.cpp:1399
+msgctxt ""
+"Reason for inhibiting the screensaver activation, when the presentation mode "
+"is active"
+msgid "Giving a presentation"
+msgstr "Dji dene on prezintaedje"
 
 #: shell/main.cpp:45
 msgid "Page of the document to be shown"
@@ -2002,322 +2002,15 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "jean.cayron@gmail.com"
 
-#. i18n: file: conf/dlgaccessibilitybase.ui:28
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_HighlightImages)
-#: rc.cpp:68
-msgid "Draw border around &Images"
-msgstr "Dessiner des boirdeures åtoû des &imådjes"
-
-#. i18n: file: conf/dlgaccessibilitybase.ui:35
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_HighlightLinks)
-#: rc.cpp:71
-msgid "Draw border around &Links"
-msgstr "Dessiner des boirdeures åtoû des &hårdêyes"
-
-#. i18n: file: conf/dlgaccessibilitybase.ui:45
-#. i18n: ectx: property (title), widget (QGroupBox, kcfg_ChangeColors)
-#: rc.cpp:74
-msgid "Change &colors"
-msgstr "Candjî &coleurs"
-
-#. i18n: file: conf/dlgaccessibilitybase.ui:63
-#. i18n: ectx: property (text), widget (QLabel, warn)
-#: rc.cpp:77
-msgid "Warning: these options can badly affect drawing speed."
-msgstr ""
-"Asteme: ces tchuzes polèt aveur on mwais efet sol radisté d' dessinaedje."
-
-#. i18n: file: conf/dlgaccessibilitybase.ui:78
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:80
-msgid "Color mode:"
-msgstr "Môde di coleur:"
-
-#. i18n: file: conf/dlgaccessibilitybase.ui:89
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RenderMode)
-#: rc.cpp:83
-msgid "Invert Colors"
-msgstr "Coleurs a l' evier"
-
-#. i18n: file: conf/dlgaccessibilitybase.ui:94
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RenderMode)
-#: rc.cpp:86
-msgid "Change Paper Color"
-msgstr "Candjî coleur do papî"
-
-#. i18n: file: conf/dlgaccessibilitybase.ui:99
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RenderMode)
-#: rc.cpp:89
-msgid "Change Dark & Light Colors"
-msgstr "Candjî les foncêyes eyet clairès coleurs"
-
-#. i18n: file: conf/dlgaccessibilitybase.ui:104
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RenderMode)
-#: rc.cpp:92
-msgid "Convert to Black & White"
-msgstr "Covierser e blanc et noer"
-
-#. i18n: file: conf/dlgaccessibilitybase.ui:165
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:95
-msgid "Paper color:"
-msgstr "Coleur do papî:"
-
-#. i18n: file: conf/dlgaccessibilitybase.ui:218
-#. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:98
-msgid "Dark color:"
-msgstr "Foncêye coleur:"
-
-#. i18n: file: conf/dlgaccessibilitybase.ui:250
-#. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
-#: rc.cpp:101
-msgid "Light color:"
-msgstr "Claire coleur:"
-
-#. i18n: file: conf/dlgaccessibilitybase.ui:291
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:104
-msgid "Threshold:"
-msgstr "Soû:"
-
-#. i18n: file: conf/dlgaccessibilitybase.ui:323
-#. i18n: ectx: property (text), widget (QLabel, textLabel2_2)
-#: rc.cpp:107
-msgid "Contrast:"
-msgstr "Contrasse:"
-
-#. i18n: file: conf/dlgpresentationbase.ui:19
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:110
-msgid "Navigation"
-msgstr "Naiviaedje"
-
-#. i18n: file: conf/dlgpresentationbase.ui:39
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SlidesAdvance)
-#: rc.cpp:113
-msgid "Advance every:"
-msgstr "Avancî totes les:"
-
-#. i18n: file: conf/dlgpresentationbase.ui:49
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, kcfg_SlidesAdvanceTime)
-#: rc.cpp:116
-msgid " sec."
-msgstr " seg."
-
-#. i18n: file: conf/dlgpresentationbase.ui:61
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SlidesLoop)
-#: rc.cpp:119
-msgid "Loop after last page"
-msgstr "Tourner el blouke après l' dierinne pådje"
-
-#. i18n: file: conf/dlgpresentationbase.ui:71
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#. i18n: file: conf/dlggeneralbase.ui:28
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:122 rc.cpp:236
-msgid "Appearance"
-msgstr "Rivnance"
-
-#. i18n: file: conf/dlgpresentationbase.ui:79
-#. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:125
-msgid "Background color:"
-msgstr "Coleur di fond:"
-
-#. i18n: file: conf/dlgpresentationbase.ui:92
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:128
-msgid "Pencil color:"
-msgstr "Coleur do pene:"
-
-#. i18n: file: conf/dlgpresentationbase.ui:105
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:131
-msgid "Mouse cursor:"
-msgstr "Cursoe del sori:"
-
-#. i18n: file: conf/dlgpresentationbase.ui:116
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesCursor)
-#: rc.cpp:134
-msgid "Hidden After Delay"
-msgstr "Catchî après on tårdaedje"
-
-#. i18n: file: conf/dlgpresentationbase.ui:121
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesCursor)
-#: rc.cpp:137
-msgid "Always Visible"
-msgstr "Tofer veyåve"
-
-#. i18n: file: conf/dlgpresentationbase.ui:126
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesCursor)
-#: rc.cpp:140
-msgid "Always Hidden"
-msgstr "Tofer catchî"
-
-#. i18n: file: conf/dlgpresentationbase.ui:136
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SlidesShowProgress)
-#: rc.cpp:143
-msgid "Show &progress indicator"
-msgstr "Mostrer l' corwaitoe do &progrès"
-
-#. i18n: file: conf/dlgpresentationbase.ui:143
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SlidesShowSummary)
-#: rc.cpp:146
-msgid "Show s&ummary page"
-msgstr "Mostrer l' pådje di raco&urti"
-
-#. i18n: file: conf/dlgpresentationbase.ui:153
-#. i18n: ectx: property (title), widget (QGroupBox, kcfg_SlidesTransitionsEnabled)
-#: rc.cpp:149
-msgid "Enable transitions"
-msgstr "Mete en alaedje les passaedjes"
-
-#. i18n: file: conf/dlgpresentationbase.ui:165
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:152
-msgid "Default transition:"
-msgstr "Prémetou passaedje:"
-
-#. i18n: file: conf/dlgpresentationbase.ui:176
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:155
-msgid "Blinds Vertical"
-msgstr "Raptiti d' astampé"
-
-#. i18n: file: conf/dlgpresentationbase.ui:181
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:158
-msgid "Blinds Horizontal"
-msgstr "Raptiti di coutchî"
-
-#. i18n: file: conf/dlgpresentationbase.ui:186
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:161
-msgid "Box In"
-msgstr "Abwesner"
-
-#. i18n: file: conf/dlgpresentationbase.ui:191
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:164
-msgid "Box Out"
-msgstr "Ebwesner"
-
-#. i18n: file: conf/dlgpresentationbase.ui:196
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:167
-msgid "Dissolve"
-msgstr "Anixhiler"
-
-#. i18n: file: conf/dlgpresentationbase.ui:201
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:170
-msgid "Glitter Down"
-msgstr "Riglatixh viè l' bas"
-
-#. i18n: file: conf/dlgpresentationbase.ui:206
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:173
-msgid "Glitter Right"
-msgstr "Riglatixh a droete"
-
-#. i18n: file: conf/dlgpresentationbase.ui:211
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:176
-msgid "Glitter Right-Down"
-msgstr "Riglatixh viè l' bas a droete"
-
-#. i18n: file: conf/dlgpresentationbase.ui:216
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:179
-msgid "Random Transition"
-msgstr "Passaedje a l' astcheyance"
-
-#. i18n: file: conf/dlgpresentationbase.ui:221
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:182
-msgid "Replace"
-msgstr "Mete al plaece"
-
-#. i18n: file: conf/dlgpresentationbase.ui:226
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:185
-msgid "Split Horizontal In"
-msgstr "Dispårti l' vuwe dizeu/dizo"
-
-#. i18n: file: conf/dlgpresentationbase.ui:231
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:188
-msgid "Split Horizontal Out"
-msgstr "Dimere dispårtaedje del vuwe dizeu/dizo"
-
-#. i18n: file: conf/dlgpresentationbase.ui:236
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:191
-msgid "Split Vertical In"
-msgstr "Dispårti l' vuwe hintche/droete"
-
-#. i18n: file: conf/dlgpresentationbase.ui:241
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:194
-msgid "Split Vertical Out"
-msgstr "Dismete dispårtaedje l' vuwe hintche/droete"
-
-#. i18n: file: conf/dlgpresentationbase.ui:246
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:197
-msgid "Wipe Down"
-msgstr "Schover evoye viè l' bas"
-
-#. i18n: file: conf/dlgpresentationbase.ui:251
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:200
-msgid "Wipe Right"
-msgstr "Schover evoye viè l' droete"
-
-#. i18n: file: conf/dlgpresentationbase.ui:256
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:203
-msgid "Wipe Left"
-msgstr "Schover evoye viè l' hintche"
-
-#. i18n: file: conf/dlgpresentationbase.ui:261
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
-#: rc.cpp:206
-msgid "Wipe Up"
-msgstr "Schover evoye viè l' hôt"
-
-#. i18n: file: conf/dlgpresentationbase.ui:272
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
-#: rc.cpp:209
-msgid "Placement"
-msgstr "Plaeçmint"
-
-#. i18n: file: conf/dlgpresentationbase.ui:278
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:212
-msgid "Screen:"
-msgstr "Waitroûle:"
-
-#. i18n: file: conf/dlgidentitybase.ui:71
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:221
-msgid ""
-"<b>Note</b>: the information here is used only for comments and reviews. "
-"Information inserted here will not be transmitted without your knowledge."
-msgstr ""
-"<b>Note</b>: l' informåcion chal n' est eployeye ki po les rawetes et "
-"rilevêyes. L' informåcion stitcheye chal ni srè nén evoyeye sins vos l' dire."
-
 #. i18n: file: conf/dlgeditorbase.ui:25
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:227
+#: rc.cpp:71
 msgid "Editor:"
 msgstr "Aspougneu d' tecse:"
 
 #. i18n: file: conf/dlgeditorbase.ui:32
 #. i18n: ectx: property (whatsThis), widget (QComboBox, kcfg_ExternalEditor)
-#: rc.cpp:230
+#: rc.cpp:74
 msgctxt "@info:whatsthis"
 msgid ""
 "Choose the editor you want to launch when Okular wants to open a source file."
@@ -2327,111 +2020,418 @@ msgstr ""
 
 #. i18n: file: conf/dlgeditorbase.ui:70
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:233
+#: rc.cpp:77
 msgid "Command:"
 msgstr "Comande :"
 
-#. i18n: file: conf/dlggeneralbase.ui:66
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowScrollBars)
-#: rc.cpp:239
-msgid "Show scroll&bars"
-msgstr "Mostrer les &acinceus"
+#. i18n: file: conf/dlgaccessibilitybase.ui:28
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_HighlightImages)
+#: rc.cpp:80
+msgid "Draw border around &Images"
+msgstr "Dessiner des boirdeures åtoû des &imådjes"
 
-#. i18n: file: conf/dlggeneralbase.ui:76
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SyncThumbnailsViewport)
-#: rc.cpp:242
-msgid "Link the &thumbnails with the page"
-msgstr "Loyî les &prévoeyaedjes al pådje"
+#. i18n: file: conf/dlgaccessibilitybase.ui:35
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_HighlightLinks)
+#: rc.cpp:83
+msgid "Draw border around &Links"
+msgstr "Dessiner des boirdeures åtoû des &hårdêyes"
 
-#. i18n: file: conf/dlggeneralbase.ui:83
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowOSD)
-#: rc.cpp:245
-msgid "Show &hints and info messages"
-msgstr "Mostrer les &conseys eyet messaedjes d' informåcion"
+#. i18n: file: conf/dlgaccessibilitybase.ui:45
+#. i18n: ectx: property (title), widget (QGroupBox, kcfg_ChangeColors)
+#: rc.cpp:86
+msgid "Change &colors"
+msgstr "Candjî &coleurs"
 
-#. i18n: file: conf/dlggeneralbase.ui:140
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:248
-msgid "Program Features"
-msgstr "Fonccionålités do programe"
+#. i18n: file: conf/dlgaccessibilitybase.ui:63
+#. i18n: ectx: property (text), widget (QLabel, warn)
+#: rc.cpp:89
+msgid "Warning: these options can badly affect drawing speed."
+msgstr ""
+"Asteme: ces tchuzes polèt aveur on mwais efet sol radisté d' dessinaedje."
 
-#. i18n: file: conf/dlggeneralbase.ui:178
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ObeyDRM)
-#: rc.cpp:251
-msgid "&Obey DRM limitations"
-msgstr "&Schoûter les rastrindaedjes DRM"
+#. i18n: file: conf/dlgaccessibilitybase.ui:78
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:92
+msgid "Color mode:"
+msgstr "Môde di coleur:"
 
-#. i18n: file: conf/dlggeneralbase.ui:185
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_WatchFile)
-#: rc.cpp:254
-msgid "&Reload document on file change"
-msgstr "&Ritcherdjî documint å candjmint d' on fitchî"
+#. i18n: file: conf/dlgaccessibilitybase.ui:89
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RenderMode)
+#: rc.cpp:95
+msgid "Invert Colors"
+msgstr "Coleurs a l' evier"
 
-#. i18n: file: conf/dlggeneralbase.ui:192
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ChooseGenerators)
-#: rc.cpp:257
-msgid "Show backend selection dialog"
-msgstr "Mostrer l' divize di tchoes del bouye di fond"
+#. i18n: file: conf/dlgaccessibilitybase.ui:94
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RenderMode)
+#: rc.cpp:98
+msgid "Change Paper Color"
+msgstr "Candjî coleur do papî"
 
-#. i18n: file: conf/dlggeneralbase.ui:249
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: rc.cpp:260
-msgid "View Options"
-msgstr "Tchuzes di voeyaedje"
+#. i18n: file: conf/dlgaccessibilitybase.ui:99
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RenderMode)
+#: rc.cpp:101
+msgid "Change Dark & Light Colors"
+msgstr "Candjî les foncêyes eyet clairès coleurs"
 
-#. i18n: file: conf/dlggeneralbase.ui:255
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_CenterFirstPageInRow)
-#: rc.cpp:263
-msgid "Center &first page"
-msgstr "Mete å mitan l' &prumire pådje"
+#. i18n: file: conf/dlgaccessibilitybase.ui:104
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RenderMode)
+#: rc.cpp:104
+msgid "Convert to Black & White"
+msgstr "Covierser e blanc et noer"
 
-#. i18n: file: conf/dlggeneralbase.ui:270
-#. i18n: ectx: property (text), widget (QLabel, columnLabel)
-#: rc.cpp:266
-msgid "Overview columns:"
-msgstr "Mwaisse vuwe des colones:"
+#. i18n: file: conf/dlgaccessibilitybase.ui:165
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: rc.cpp:107
+msgid "Paper color:"
+msgstr "Coleur do papî:"
+
+#. i18n: file: conf/dlgaccessibilitybase.ui:218
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#: rc.cpp:110
+msgid "Dark color:"
+msgstr "Foncêye coleur:"
+
+#. i18n: file: conf/dlgaccessibilitybase.ui:250
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
+#: rc.cpp:113
+msgid "Light color:"
+msgstr "Claire coleur:"
+
+#. i18n: file: conf/dlgaccessibilitybase.ui:291
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: rc.cpp:116
+msgid "Threshold:"
+msgstr "Soû:"
+
+#. i18n: file: conf/dlgaccessibilitybase.ui:323
+#. i18n: ectx: property (text), widget (QLabel, textLabel2_2)
+#: rc.cpp:119
+msgid "Contrast:"
+msgstr "Contrasse:"
+
+#. i18n: file: conf/dlgidentitybase.ui:71
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:128
+msgid ""
+"<b>Note</b>: the information here is used only for comments and reviews. "
+"Information inserted here will not be transmitted without your knowledge."
+msgstr ""
+"<b>Note</b>: l' informåcion chal n' est eployeye ki po les rawetes et "
+"rilevêyes. L' informåcion stitcheye chal ni srè nén evoyeye sins vos l' dire."
 
 #. i18n: file: conf/dlgperformancebase.ui:22
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:269
+#: rc.cpp:131
 msgid "CPU Usage"
 msgstr "Eployaedje CPU"
 
 #. i18n: file: conf/dlgperformancebase.ui:50
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnableCompositing)
-#: rc.cpp:272
+#: rc.cpp:134
 msgid "Enable &transparency effects"
 msgstr "Permete les efets d' &transparince"
 
 #. i18n: file: conf/dlgperformancebase.ui:57
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnableThreading)
-#: rc.cpp:275
+#: rc.cpp:137
 msgid "Enable &background generation"
 msgstr "Permete l' ahivaedje d' on &fond"
 
 #. i18n: file: conf/dlgperformancebase.ui:109
 #. i18n: ectx: property (title), widget (KButtonGroup, kcfg_MemoryLevel)
-#: rc.cpp:278
+#: rc.cpp:140
 msgid "Memory Usage"
 msgstr "Eployaedje del memwere"
 
 #. i18n: file: conf/dlgperformancebase.ui:137
 #. i18n: ectx: property (text), widget (QRadioButton, lowRadio)
-#: rc.cpp:281
+#: rc.cpp:143
 msgid "&Low"
 msgstr "&Basse"
 
 #. i18n: file: conf/dlgperformancebase.ui:144
 #. i18n: ectx: property (text), widget (QRadioButton, normalRadio)
-#: rc.cpp:284
+#: rc.cpp:146
 msgid "&Normal (default)"
 msgstr "&Normåle (prémetou)"
 
 #. i18n: file: conf/dlgperformancebase.ui:151
 #. i18n: ectx: property (text), widget (QRadioButton, aggressiveRadio)
-#: rc.cpp:287
+#: rc.cpp:149
 msgid "&Aggressive"
 msgstr "&Hagnant"
+
+#. i18n: file: conf/dlgpresentationbase.ui:19
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:152
+msgid "Navigation"
+msgstr "Naiviaedje"
+
+#. i18n: file: conf/dlgpresentationbase.ui:39
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SlidesAdvance)
+#: rc.cpp:155
+msgid "Advance every:"
+msgstr "Avancî totes les:"
+
+#. i18n: file: conf/dlgpresentationbase.ui:49
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, kcfg_SlidesAdvanceTime)
+#: rc.cpp:158
+msgid " sec."
+msgstr " seg."
+
+#. i18n: file: conf/dlgpresentationbase.ui:61
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SlidesLoop)
+#: rc.cpp:161
+msgid "Loop after last page"
+msgstr "Tourner el blouke après l' dierinne pådje"
+
+#. i18n: file: conf/dlgpresentationbase.ui:71
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#. i18n: file: conf/dlggeneralbase.ui:28
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:164 rc.cpp:257
+msgid "Appearance"
+msgstr "Rivnance"
+
+#. i18n: file: conf/dlgpresentationbase.ui:79
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#: rc.cpp:167
+msgid "Background color:"
+msgstr "Coleur di fond:"
+
+#. i18n: file: conf/dlgpresentationbase.ui:92
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:170
+msgid "Pencil color:"
+msgstr "Coleur do pene:"
+
+#. i18n: file: conf/dlgpresentationbase.ui:105
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: rc.cpp:173
+msgid "Mouse cursor:"
+msgstr "Cursoe del sori:"
+
+#. i18n: file: conf/dlgpresentationbase.ui:116
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesCursor)
+#: rc.cpp:176
+msgid "Hidden After Delay"
+msgstr "Catchî après on tårdaedje"
+
+#. i18n: file: conf/dlgpresentationbase.ui:121
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesCursor)
+#: rc.cpp:179
+msgid "Always Visible"
+msgstr "Tofer veyåve"
+
+#. i18n: file: conf/dlgpresentationbase.ui:126
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesCursor)
+#: rc.cpp:182
+msgid "Always Hidden"
+msgstr "Tofer catchî"
+
+#. i18n: file: conf/dlgpresentationbase.ui:136
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SlidesShowProgress)
+#: rc.cpp:185
+msgid "Show &progress indicator"
+msgstr "Mostrer l' corwaitoe do &progrès"
+
+#. i18n: file: conf/dlgpresentationbase.ui:143
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SlidesShowSummary)
+#: rc.cpp:188
+msgid "Show s&ummary page"
+msgstr "Mostrer l' pådje di raco&urti"
+
+#. i18n: file: conf/dlgpresentationbase.ui:153
+#. i18n: ectx: property (title), widget (QGroupBox, kcfg_SlidesTransitionsEnabled)
+#: rc.cpp:191
+msgid "Enable transitions"
+msgstr "Mete en alaedje les passaedjes"
+
+#. i18n: file: conf/dlgpresentationbase.ui:165
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: rc.cpp:194
+msgid "Default transition:"
+msgstr "Prémetou passaedje:"
+
+#. i18n: file: conf/dlgpresentationbase.ui:176
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:197
+msgid "Blinds Vertical"
+msgstr "Raptiti d' astampé"
+
+#. i18n: file: conf/dlgpresentationbase.ui:181
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:200
+msgid "Blinds Horizontal"
+msgstr "Raptiti di coutchî"
+
+#. i18n: file: conf/dlgpresentationbase.ui:186
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:203
+msgid "Box In"
+msgstr "Abwesner"
+
+#. i18n: file: conf/dlgpresentationbase.ui:191
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:206
+msgid "Box Out"
+msgstr "Ebwesner"
+
+#. i18n: file: conf/dlgpresentationbase.ui:196
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:209
+msgid "Dissolve"
+msgstr "Anixhiler"
+
+#. i18n: file: conf/dlgpresentationbase.ui:201
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:212
+msgid "Glitter Down"
+msgstr "Riglatixh viè l' bas"
+
+#. i18n: file: conf/dlgpresentationbase.ui:206
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:215
+msgid "Glitter Right"
+msgstr "Riglatixh a droete"
+
+#. i18n: file: conf/dlgpresentationbase.ui:211
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:218
+msgid "Glitter Right-Down"
+msgstr "Riglatixh viè l' bas a droete"
+
+#. i18n: file: conf/dlgpresentationbase.ui:216
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:221
+msgid "Random Transition"
+msgstr "Passaedje a l' astcheyance"
+
+#. i18n: file: conf/dlgpresentationbase.ui:221
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:224
+msgid "Replace"
+msgstr "Mete al plaece"
+
+#. i18n: file: conf/dlgpresentationbase.ui:226
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:227
+msgid "Split Horizontal In"
+msgstr "Dispårti l' vuwe dizeu/dizo"
+
+#. i18n: file: conf/dlgpresentationbase.ui:231
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:230
+msgid "Split Horizontal Out"
+msgstr "Dimere dispårtaedje del vuwe dizeu/dizo"
+
+#. i18n: file: conf/dlgpresentationbase.ui:236
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:233
+msgid "Split Vertical In"
+msgstr "Dispårti l' vuwe hintche/droete"
+
+#. i18n: file: conf/dlgpresentationbase.ui:241
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:236
+msgid "Split Vertical Out"
+msgstr "Dismete dispårtaedje l' vuwe hintche/droete"
+
+#. i18n: file: conf/dlgpresentationbase.ui:246
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:239
+msgid "Wipe Down"
+msgstr "Schover evoye viè l' bas"
+
+#. i18n: file: conf/dlgpresentationbase.ui:251
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:242
+msgid "Wipe Right"
+msgstr "Schover evoye viè l' droete"
+
+#. i18n: file: conf/dlgpresentationbase.ui:256
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:245
+msgid "Wipe Left"
+msgstr "Schover evoye viè l' hintche"
+
+#. i18n: file: conf/dlgpresentationbase.ui:261
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_SlidesTransition)
+#: rc.cpp:248
+msgid "Wipe Up"
+msgstr "Schover evoye viè l' hôt"
+
+#. i18n: file: conf/dlgpresentationbase.ui:272
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
+#: rc.cpp:251
+msgid "Placement"
+msgstr "Plaeçmint"
+
+#. i18n: file: conf/dlgpresentationbase.ui:278
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:254
+msgid "Screen:"
+msgstr "Waitroûle:"
+
+#. i18n: file: conf/dlggeneralbase.ui:66
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowScrollBars)
+#: rc.cpp:260
+msgid "Show scroll&bars"
+msgstr "Mostrer les &acinceus"
+
+#. i18n: file: conf/dlggeneralbase.ui:76
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SyncThumbnailsViewport)
+#: rc.cpp:263
+msgid "Link the &thumbnails with the page"
+msgstr "Loyî les &prévoeyaedjes al pådje"
+
+#. i18n: file: conf/dlggeneralbase.ui:83
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowOSD)
+#: rc.cpp:266
+msgid "Show &hints and info messages"
+msgstr "Mostrer les &conseys eyet messaedjes d' informåcion"
+
+#. i18n: file: conf/dlggeneralbase.ui:140
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: rc.cpp:269
+msgid "Program Features"
+msgstr "Fonccionålités do programe"
+
+#. i18n: file: conf/dlggeneralbase.ui:178
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ObeyDRM)
+#: rc.cpp:272
+msgid "&Obey DRM limitations"
+msgstr "&Schoûter les rastrindaedjes DRM"
+
+#. i18n: file: conf/dlggeneralbase.ui:185
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_WatchFile)
+#: rc.cpp:275
+msgid "&Reload document on file change"
+msgstr "&Ritcherdjî documint å candjmint d' on fitchî"
+
+#. i18n: file: conf/dlggeneralbase.ui:192
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ChooseGenerators)
+#: rc.cpp:278
+msgid "Show backend selection dialog"
+msgstr "Mostrer l' divize di tchoes del bouye di fond"
+
+#. i18n: file: conf/dlggeneralbase.ui:249
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: rc.cpp:281
+msgid "View Options"
+msgstr "Tchuzes di voeyaedje"
+
+#. i18n: file: conf/dlggeneralbase.ui:255
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_CenterFirstPageInRow)
+#: rc.cpp:284
+msgid "Center &first page"
+msgstr "Mete å mitan l' &prumire pådje"
+
+#. i18n: file: conf/dlggeneralbase.ui:270
+#. i18n: ectx: property (text), widget (QLabel, columnLabel)
+#: rc.cpp:287
+msgid "Overview columns:"
+msgstr "Mwaisse vuwe des colones:"
 
 #. i18n: file: ui/data/tools.xml:21
 #: rc.cpp:289
