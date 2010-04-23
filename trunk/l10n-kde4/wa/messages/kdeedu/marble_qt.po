@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: marble_qt\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-17 04:38+0200\n"
+"POT-Creation-Date: 2010-04-23 04:58+0200\n"
 "PO-Revision-Date: 2009-07-16 19:03+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -295,16 +295,44 @@ msgstr ""
 msgid "Reports the position via the GeoClue Location Framework."
 msgstr ""
 
-#: src/plugins/positionprovider/gpsd/GpsdPositionProviderPlugin.cpp:21
+#: src/plugins/positionprovider/gpsd/GpsdPositionProviderPlugin.cpp:20
 msgid "Gpsd position provider Plugin"
 msgstr ""
 
-#: src/plugins/positionprovider/gpsd/GpsdPositionProviderPlugin.cpp:31
+#: src/plugins/positionprovider/gpsd/GpsdPositionProviderPlugin.cpp:30
 msgid "gpsd"
 msgstr ""
 
-#: src/plugins/positionprovider/gpsd/GpsdPositionProviderPlugin.cpp:36
+#: src/plugins/positionprovider/gpsd/GpsdPositionProviderPlugin.cpp:35
 msgid "Reports the position of a GPS device."
+msgstr ""
+
+#: src/plugins/positionprovider/gpsd/GpsdConnection.cpp:44
+msgid "Internal gpsd error (cannot get service entry)"
+msgstr ""
+
+#: src/plugins/positionprovider/gpsd/GpsdConnection.cpp:47
+msgid "Internal gpsd error (cannot get host entry)"
+msgstr ""
+
+#: src/plugins/positionprovider/gpsd/GpsdConnection.cpp:50
+msgid "Internal gpsd error (cannot get protocol entry)"
+msgstr ""
+
+#: src/plugins/positionprovider/gpsd/GpsdConnection.cpp:53
+msgid "Internal gpsd error (unable to create socket)"
+msgstr ""
+
+#: src/plugins/positionprovider/gpsd/GpsdConnection.cpp:56
+msgid "Internal gpsd error (unable to set socket option)"
+msgstr ""
+
+#: src/plugins/positionprovider/gpsd/GpsdConnection.cpp:59
+msgid "No GPS device found by gpsd."
+msgstr ""
+
+#: src/plugins/positionprovider/gpsd/GpsdConnection.cpp:62
+msgid "Unknown error when opening gpsd connection"
 msgstr ""
 
 #: src/plugins/positionprovider/maemo/MaemoPositionProviderPlugin.cpp:47
@@ -432,7 +460,7 @@ msgid "This is a float item that provides a map scale."
 msgstr "Çouchal est on cayet flotant k' dene ene schåle del mape."
 
 #: src/plugins/render/mapscale/MapScaleFloatItem.cpp:185
-#: src/lib/MarbleControlBox.cpp:440
+#: src/lib/MarbleControlBox.cpp:471
 msgid "m"
 msgstr "m"
 
@@ -569,7 +597,7 @@ msgid "A plugin that shows the Starry Sky."
 msgstr "On tchôke-divins k' håyene li Stoelé Cîr."
 
 #: src/plugins/render/navigation/NavigationFloatItem.cpp:72
-#: src/lib/QtMarbleConfigDialog.cpp:121 src/lib/MarbleControlBox.cpp:485
+#: src/lib/QtMarbleConfigDialog.cpp:121 src/lib/MarbleControlBox.cpp:516
 msgid "Navigation"
 msgstr "Naiviaedje"
 
@@ -835,7 +863,7 @@ msgid "WSW"
 msgstr ""
 
 #: src/plugins/render/weather/WeatherData.cpp:591
-#: src/lib/MarbleControlBox.cpp:438
+#: src/lib/MarbleControlBox.cpp:469
 msgid "km/h"
 msgstr "km/e"
 
@@ -1049,7 +1077,7 @@ msgid "This plugin displays TBD satellites."
 msgstr "Ci tchôke-divins håyene les satelites TBD."
 
 #: src/plugins/render/fileview/FileViewFloatItem.cpp:55
-#: src/lib/MarbleControlBox.cpp:503
+#: src/lib/MarbleControlBox.cpp:534
 msgid "File View"
 msgstr "Vuwe do fitchî"
 
@@ -1218,6 +1246,13 @@ msgstr "Distance totåle : %1 km"
 #, qt-format
 msgid "Total Distance: %1 m"
 msgstr "Distance totåle : %1 m"
+
+#: src/lib/PositionProviderPluginInterface.cpp:28
+#, fuzzy
+#| msgctxt "a planet without data"
+#| msgid "Unknown Planet"
+msgid "Unknown error"
+msgstr "Planete nén cnoxhowe"
 
 #: src/lib/MarbleWidgetPopupMenu.cpp:52 src/lib/MarbleWidgetPopupMenu.cpp:134
 msgid "&Earth"
@@ -1460,28 +1495,40 @@ msgstr "Apontyî l' contrôle do solea"
 msgid "Routing"
 msgstr "Montinne"
 
-#: src/lib/MarbleControlBox.cpp:446
+#: src/lib/MarbleControlBox.cpp:428
+msgid "Waiting for current location information..."
+msgstr ""
+
+#: src/lib/MarbleControlBox.cpp:431
+msgid "Initializing current location service..."
+msgstr ""
+
+#: src/lib/MarbleControlBox.cpp:437
+msgid "Error when determining current location: "
+msgstr ""
+
+#: src/lib/MarbleControlBox.cpp:477
 #, fuzzy
 msgid "m/h"
 msgstr "km/e"
 
-#: src/lib/MarbleControlBox.cpp:448
+#: src/lib/MarbleControlBox.cpp:479
 msgid "ft"
 msgstr ""
 
-#: src/lib/MarbleControlBox.cpp:491
+#: src/lib/MarbleControlBox.cpp:522
 msgid "Legend"
 msgstr "Ledjinde"
 
-#: src/lib/MarbleControlBox.cpp:497
+#: src/lib/MarbleControlBox.cpp:528
 msgid "Map View"
 msgstr "Vuwe del mape"
 
-#: src/lib/MarbleControlBox.cpp:509
+#: src/lib/MarbleControlBox.cpp:540
 msgid "Current Location"
 msgstr "Eplaeçmint do moumint"
 
-#: src/lib/MarbleControlBox.cpp:697
+#: src/lib/MarbleControlBox.cpp:728
 msgid "Disabled"
 msgstr ""
 
