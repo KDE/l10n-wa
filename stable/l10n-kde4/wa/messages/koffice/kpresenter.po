@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpresenter\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-03-08 04:21+0100\n"
+"POT-Creation-Date: 2010-04-24 01:33+0200\n"
 "PO-Revision-Date: 2009-10-20 19:07+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -135,13 +135,13 @@ msgstr "Coutchî årvier"
 #: plugins/pageeffects/matrixwipe/waterfallwipe/KPrWaterfallWipeEffectFactory.cpp:64
 #: plugins/pageeffects/matrixwipe/boxsnakes/KPrBoxSnakesWipeEffectFactory.cpp:69
 #: plugins/pageeffects/iriswipe/ellipseWipe/KPrEllipseWipeEffectFactory.cpp:77
-#: plugins/pageeffects/iriswipe/triangleWipe/KPrTriangleWipeEffectFactory.cpp:100
 #: plugins/pageeffects/iriswipe/roundRectWipe/KPrRoundRectWipeEffectFactory.cpp:68
+#: plugins/pageeffects/iriswipe/triangleWipe/KPrTriangleWipeEffectFactory.cpp:100
 #: plugins/pageeffects/iriswipe/irisWipe/KPrIrisWipeEffectFactory.cpp:71
 #: plugins/pageeffects/iriswipe/starWipe/KPrStarWipeEffectFactory.cpp:116
 #: plugins/pageeffects/iriswipe/pentagonWipe/KPrPentagonWipeEffectFactory.cpp:77
-#: plugins/pageeffects/iriswipe/miscShapeWipe/KPrMiscShapeWipeEffectFactory.cpp:73
 #: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:103
+#: plugins/pageeffects/iriswipe/miscShapeWipe/KPrMiscShapeWipeEffectFactory.cpp:73
 #: plugins/pageeffects/iriswipe/eyeWipe/KPrEyeWipeEffectFactory.cpp:72
 #: plugins/pageeffects/iriswipe/hexagonWipe/KPrHexagonWipeEffectFactory.cpp:89
 msgid "Unknown subtype"
@@ -851,6 +851,10 @@ msgstr "Ceke"
 msgid "Circle Reverse"
 msgstr "Ceke årvier"
 
+#: plugins/pageeffects/iriswipe/roundRectWipe/KPrRoundRectWipeEffectFactory.cpp:32
+msgid "RoundRect"
+msgstr "Rond rectangue"
+
 #: plugins/pageeffects/iriswipe/triangleWipe/KPrTriangleWipeEffectFactory.cpp:31
 msgid "Triangle"
 msgstr "Triyangue"
@@ -876,10 +880,6 @@ msgstr "Hintche"
 #: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:95
 msgid "Left Reverse"
 msgstr "Hintche årvier"
-
-#: plugins/pageeffects/iriswipe/roundRectWipe/KPrRoundRectWipeEffectFactory.cpp:32
-msgid "RoundRect"
-msgstr "Rond rectangue"
 
 #: plugins/pageeffects/iriswipe/irisWipe/KPrIrisWipeEffectFactory.cpp:30
 msgid "Iris"
@@ -933,6 +933,10 @@ msgstr "Sitoele a shijh ponts årvier"
 msgid "Pentagon"
 msgstr "Péntagone"
 
+#: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:31
+msgid "ArrowHead"
+msgstr "Ponte di fletche"
+
 #: plugins/pageeffects/iriswipe/miscShapeWipe/KPrMiscShapeWipeEffectFactory.cpp:30
 msgid "Misc"
 msgstr "Totes sôres"
@@ -952,10 +956,6 @@ msgstr "Trô d' sere"
 #: plugins/pageeffects/iriswipe/miscShapeWipe/KPrMiscShapeWipeEffectFactory.cpp:65
 msgid "Keyhole Reverse"
 msgstr "Trô d' sere årvier"
-
-#: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:31
-msgid "ArrowHead"
-msgstr "Ponte di fletche"
 
 #: plugins/pageeffects/iriswipe/eyeWipe/KPrEyeWipeEffectFactory.cpp:32
 msgid "Eye"
@@ -1093,13 +1093,103 @@ msgstr "Estoz vs seur ki vs voloz disfacer l' diaporama tchoezi?"
 msgid "Confirm action"
 msgstr "Racertiner l' accion"
 
+#: part/KPrView.cpp:65
+msgid "Show Master Slides"
+msgstr "Mostrer mwaissès dias"
+
+#: part/KPrView.cpp:66
+msgid "Import Slideshow..."
+msgstr "Abaguer diaporama..."
+
+#: part/KPrView.cpp:67
+msgid "Insert Slide"
+msgstr "Sititchî dia"
+
+#: part/KPrView.cpp:68 part/KPrView.cpp:69
+msgid "Insert a new slide after the current one"
+msgstr "Sitchî ene novele diya après l' cisse do moumint"
+
+#: part/KPrView.cpp:70
+msgid "Copy Slide"
+msgstr "Copyî dia"
+
+#: part/KPrView.cpp:71 part/KPrView.cpp:72
+msgid "Copy the current slide"
+msgstr "Copyî l' diya do moumint"
+
+#. i18n: file: part/ui/KPrCustomSlideShowsDialog.ui:136
+#. i18n: ectx: property (text), widget (QPushButton, deleteSlideButton)
+#: part/KPrView.cpp:73 rc.cpp:206
+msgid "Delete Slide"
+msgstr "Disfacer dia"
+
+#: part/KPrView.cpp:74 part/KPrView.cpp:75
+msgid "Delete the current slide"
+msgstr "Disfacer l' diya do moumint"
+
+#: part/KPrView.cpp:76
+msgid "Master Slide..."
+msgstr "Mwaisse diya..."
+
+#: part/KPrView.cpp:77
+msgid "Previous Slide"
+msgstr "Diya di dvant"
+
+#: part/KPrView.cpp:78 part/KPrPresenterViewInterface.cpp:67
+msgid "Next Slide"
+msgstr "Diya d' après"
+
+#: part/KPrView.cpp:79
+msgid "First Slide"
+msgstr "Prumire diya"
+
+#: part/KPrView.cpp:80
+msgid "Last Slide"
+msgstr "Dierinne diya"
+
+#: part/KPrView.cpp:81
+msgid "Configure KPresenter..."
+msgstr "Apontyî KPresenter..."
+
+#: part/KPrView.cpp:142
+msgid "Normal"
+msgstr "Normå"
+
+#: part/KPrView.cpp:148
+msgid "Notes"
+msgstr "Notes"
+
+#: part/KPrView.cpp:157
+msgid "Create Appear Animation"
+msgstr "Ahiver animåcion d' aparexhaedje"
+
+#: part/KPrView.cpp:161
+msgid "Edit Custom Slide Shows..."
+msgstr "Aspougnî diaporama da vosse..."
+
+#: part/KPrView.cpp:165
+msgid "Start Presentation"
+msgstr "Enonder prezintaedje"
+
+#: part/KPrView.cpp:168
+msgid "From Current Slide"
+msgstr "A pårti del diya do moumint"
+
+#: part/KPrView.cpp:173
+msgid "From First Slide"
+msgstr "A pårti del prumire diya"
+
+#: part/KPrView.cpp:178
+msgid "Configure Slide Show..."
+msgstr "Apontyî diaporama..."
+
+#: part/KPrView.cpp:182
+msgid "Configure Presenter View..."
+msgstr "Apontyî l' vuwe do prezinteu..."
+
 #: part/KPrPlaceholderShapeFactory.cpp:31
 msgid "Placeholder shape"
 msgstr "Secwince di fômes"
-
-#: part/KPrPresenterViewInterface.cpp:67 part/KPrView.cpp:78
-msgid "Next Slide"
-msgstr "Diya d' après"
 
 #: part/KPrPresenterViewInterface.cpp:77
 msgid "Speaker Notes"
@@ -1250,6 +1340,10 @@ msgstr "Dobe-clitchîz po radjouter on cayet"
 msgid "File to open"
 msgstr "Fitchî a drovi"
 
+#: part/KPrEndOfSlideShowPage.cpp:68
+msgid "End of presentation. Click to exit."
+msgstr "Difén do prezintaedje. Clitchîz po moussî foû."
+
 #: part/KPrPresentationDrawWidget.cpp:102
 msgid "Pen Color"
 msgstr "Coleur del pene"
@@ -1281,100 +1375,6 @@ msgstr "Bleu"
 #: part/KPrPresentationDrawWidget.cpp:110
 msgid "Yellow"
 msgstr "Djaene"
-
-#: part/KPrView.cpp:65
-msgid "Show Master Slides"
-msgstr "Mostrer mwaissès dias"
-
-#: part/KPrView.cpp:66
-msgid "Import Slideshow..."
-msgstr "Abaguer diaporama..."
-
-#: part/KPrView.cpp:67
-msgid "Insert Slide"
-msgstr "Sititchî dia"
-
-#: part/KPrView.cpp:68 part/KPrView.cpp:69
-msgid "Insert a new slide after the current one"
-msgstr "Sitchî ene novele diya après l' cisse do moumint"
-
-#: part/KPrView.cpp:70
-msgid "Copy Slide"
-msgstr "Copyî dia"
-
-#: part/KPrView.cpp:71 part/KPrView.cpp:72
-msgid "Copy the current slide"
-msgstr "Copyî l' diya do moumint"
-
-#. i18n: file: part/ui/KPrCustomSlideShowsDialog.ui:136
-#. i18n: ectx: property (text), widget (QPushButton, deleteSlideButton)
-#: part/KPrView.cpp:73 rc.cpp:206
-msgid "Delete Slide"
-msgstr "Disfacer dia"
-
-#: part/KPrView.cpp:74 part/KPrView.cpp:75
-msgid "Delete the current slide"
-msgstr "Disfacer l' diya do moumint"
-
-#: part/KPrView.cpp:76
-msgid "Master Slide..."
-msgstr "Mwaisse diya..."
-
-#: part/KPrView.cpp:77
-msgid "Previous Slide"
-msgstr "Diya di dvant"
-
-#: part/KPrView.cpp:79
-msgid "First Slide"
-msgstr "Prumire diya"
-
-#: part/KPrView.cpp:80
-msgid "Last Slide"
-msgstr "Dierinne diya"
-
-#: part/KPrView.cpp:81
-msgid "Configure KPresenter..."
-msgstr "Apontyî KPresenter..."
-
-#: part/KPrView.cpp:142
-msgid "Normal"
-msgstr "Normå"
-
-#: part/KPrView.cpp:148
-msgid "Notes"
-msgstr "Notes"
-
-#: part/KPrView.cpp:157
-msgid "Create Appear Animation"
-msgstr "Ahiver animåcion d' aparexhaedje"
-
-#: part/KPrView.cpp:161
-msgid "Edit Custom Slide Shows..."
-msgstr "Aspougnî diaporama da vosse..."
-
-#: part/KPrView.cpp:165
-msgid "Start Presentation"
-msgstr "Enonder prezintaedje"
-
-#: part/KPrView.cpp:168
-msgid "From Current Slide"
-msgstr "A pårti del diya do moumint"
-
-#: part/KPrView.cpp:173
-msgid "From First Slide"
-msgstr "A pårti del prumire diya"
-
-#: part/KPrView.cpp:178
-msgid "Configure Slide Show..."
-msgstr "Apontyî diaporama..."
-
-#: part/KPrView.cpp:182
-msgid "Configure Presenter View..."
-msgstr "Apontyî l' vuwe do prezinteu..."
-
-#: part/KPrEndOfSlideShowPage.cpp:68
-msgid "End of presentation. Click to exit."
-msgstr "Difén do prezintaedje. Clitchîz po moussî foû."
 
 #. i18n: file: kpresenter.rc:3
 #. i18n: ectx: Menu (file)

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TextShape\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-04-19 04:50+0200\n"
+"POT-Creation-Date: 2010-04-24 01:34+0200\n"
 "PO-Revision-Date: 2009-10-20 18:42+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -193,6 +193,10 @@ msgstr "Cogne do hagnon"
 msgid "Paragraph Settings"
 msgstr "Apontiaedjes des hagnons\n"
 
+#: dialogs/TableDialog.cpp:27
+msgid "Insert Table"
+msgstr "Sititchî tåvlea"
+
 #: dialogs/ChangeConfigureDialog.cpp:128
 msgid "This is a line of inserted text."
 msgstr ""
@@ -204,10 +208,6 @@ msgstr ""
 #: dialogs/ChangeConfigureDialog.cpp:140
 msgid "This is a line of text whose format has been changed."
 msgstr ""
-
-#: dialogs/TableDialog.cpp:27
-msgid "Insert Table"
-msgstr "Sititchî tåvlea"
 
 #: commands/TextCutCommand.cpp:34
 msgid "Cut"
@@ -237,6 +237,10 @@ msgstr ""
 msgid "Key Press"
 msgstr "Tchôcaedje di tape"
 
+#: commands/ChangeListLevelCommand.cpp:42
+msgid "Change List Level"
+msgstr "Candjî livea del djivêye"
+
 #: commands/ShowChangesCommand.cpp:53 TextTool.cpp:368
 #, fuzzy
 #| msgid "Change List"
@@ -248,10 +252,6 @@ msgstr "Candjî djivêye"
 #| msgid "Change List"
 msgid "Hide Changes"
 msgstr "Candjî djivêye"
-
-#: commands/ChangeListLevelCommand.cpp:42
-msgid "Change List Level"
-msgstr "Candjî livea del djivêye"
 
 #: commands/ChangeListCommand.cpp:58 commands/ChangeListCommand.cpp:70
 msgid "Change List"
@@ -552,7 +552,7 @@ msgstr "Candjî djivêye"
 
 #. i18n: file: dialogs/ChangeConfigureDialog.ui:17
 #. i18n: ectx: property (windowTitle), widget (QDialog, ChangeConfigureDialog)
-#: TextTool.cpp:378 rc.cpp:44
+#: TextTool.cpp:378 rc.cpp:65
 msgid "Configure Change Tracking"
 msgstr ""
 
@@ -718,21 +718,63 @@ msgid ""
 "Use the Styles docker to apply styles to text.</p></body></html>"
 msgstr ""
 
+#. i18n: file: dialogs/TableDialog.ui:23
+#. i18n: ectx: property (title), widget (QGroupBox, groupLogical)
+#: rc.cpp:38
+msgid "Columns and rows"
+msgstr "Colones eyet royes"
+
+#. i18n: file: dialogs/TableDialog.ui:32
+#. i18n: ectx: property (text), widget (QLabel, labelColumns)
+#: rc.cpp:41
+msgid "Number of columns:"
+msgstr "Nombe di colones :"
+
+#. i18n: file: dialogs/TableDialog.ui:55
+#. i18n: ectx: property (text), widget (QLabel, labelRows)
+#: rc.cpp:44
+msgid "Number of rows:"
+msgstr "Nombe di royes :"
+
+#. i18n: file: dialogs/TableDialog.ui:97
+#. i18n: ectx: property (title), widget (QGroupBox, groupPhysical)
+#: rc.cpp:47
+msgid "Width strategy"
+msgstr "Sitratedjeye d' espåçmint"
+
+#. i18n: file: dialogs/TableDialog.ui:112
+#. i18n: ectx: property (text), widget (QRadioButton, radioFixed)
+#: rc.cpp:50
+msgid "Fixed column width:"
+msgstr "Lårdjeur del colone ewale :"
+
+#. i18n: file: dialogs/TableDialog.ui:125
+#. i18n: ectx: property (text), widget (QRadioButton, radioFitContents)
+#: rc.cpp:53
+msgid "Fit to contents"
+msgstr "Forrimpli sol contnou"
+
+#. i18n: file: dialogs/TableDialog.ui:138
+#. i18n: ectx: property (text), widget (QRadioButton, radioFitAvail)
+#: rc.cpp:56
+msgid "Fit to available surrounding"
+msgstr "Forrimpli so c' k' i gn a åtoû"
+
 #. i18n: file: dialogs/SimpleStyleWidget.ui:174
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:38
+#: rc.cpp:59
 msgid "List Style:"
 msgstr "Stîle del djivêye:"
 
 #. i18n: file: dialogs/SimpleStyleWidget.ui:193
 #. i18n: ectx: property (toolTip), widget (QToolButton, listStyleAgain)
-#: rc.cpp:41
+#: rc.cpp:62
 msgid "Apply again"
 msgstr ""
 
 #. i18n: file: dialogs/ChangeConfigureDialog.ui:52
 #. i18n: ectx: property (title), widget (QGroupBox, insertionGroupBox)
-#: rc.cpp:47
+#: rc.cpp:68
 #, fuzzy
 #| msgid "Insert"
 msgid "Insertions"
@@ -744,7 +786,7 @@ msgstr "Sititchî"
 #. i18n: ectx: property (text), widget (QLabel, deletionColorLabel)
 #. i18n: file: dialogs/ChangeConfigureDialog.ui:221
 #. i18n: ectx: property (text), widget (QLabel, formatColorLabel)
-#: rc.cpp:50 rc.cpp:59 rc.cpp:68
+#: rc.cpp:71 rc.cpp:80 rc.cpp:89
 #, fuzzy
 #| msgid "Background color"
 msgid "Background Color"
@@ -788,7 +830,7 @@ msgstr "Coleur do fond"
 #. i18n: ectx: property (text), widget (QToolButton, deleteStyle)
 #. i18n: file: dialogs/ParagraphBulletsNumbers.ui:138
 #. i18n: ectx: property (text), widget (QToolButton, customCharacter)
-#: rc.cpp:53 rc.cpp:62 rc.cpp:71 rc.cpp:162 rc.cpp:171 rc.cpp:177 rc.cpp:186
+#: rc.cpp:74 rc.cpp:83 rc.cpp:92 rc.cpp:162 rc.cpp:171 rc.cpp:177 rc.cpp:186
 #: rc.cpp:189 rc.cpp:192 rc.cpp:195 rc.cpp:198 rc.cpp:201 rc.cpp:204
 #: rc.cpp:207 rc.cpp:270 rc.cpp:276 rc.cpp:282 rc.cpp:285 rc.cpp:315
 msgid "..."
@@ -796,7 +838,7 @@ msgstr "..."
 
 #. i18n: file: dialogs/ChangeConfigureDialog.ui:127
 #. i18n: ectx: property (title), widget (QGroupBox, deletionGroupBox)
-#: rc.cpp:56
+#: rc.cpp:77
 #, fuzzy
 #| msgid "Delete"
 msgid "Deletions"
@@ -804,7 +846,7 @@ msgstr "Disfacer"
 
 #. i18n: file: dialogs/ChangeConfigureDialog.ui:199
 #. i18n: ectx: property (title), widget (QGroupBox, formatGroupBox)
-#: rc.cpp:65
+#: rc.cpp:86
 #, fuzzy
 #| msgid "Change List"
 msgid "Format Changes"
@@ -812,7 +854,7 @@ msgstr "Candjî djivêye"
 
 #. i18n: file: dialogs/ChangeConfigureDialog.ui:283
 #. i18n: ectx: property (html), widget (QTextEdit, previewTextEdit)
-#: rc.cpp:74
+#: rc.cpp:95
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -863,48 +905,6 @@ msgid ""
 "format-change text. This is a line of text whose format has been changed. "
 "This is a line of text after the format-change text.</span></p></body></html>"
 msgstr ""
-
-#. i18n: file: dialogs/TableDialog.ui:23
-#. i18n: ectx: property (title), widget (QGroupBox, groupLogical)
-#: rc.cpp:90
-msgid "Columns and rows"
-msgstr "Colones eyet royes"
-
-#. i18n: file: dialogs/TableDialog.ui:32
-#. i18n: ectx: property (text), widget (QLabel, labelColumns)
-#: rc.cpp:93
-msgid "Number of columns:"
-msgstr "Nombe di colones :"
-
-#. i18n: file: dialogs/TableDialog.ui:55
-#. i18n: ectx: property (text), widget (QLabel, labelRows)
-#: rc.cpp:96
-msgid "Number of rows:"
-msgstr "Nombe di royes :"
-
-#. i18n: file: dialogs/TableDialog.ui:97
-#. i18n: ectx: property (title), widget (QGroupBox, groupPhysical)
-#: rc.cpp:99
-msgid "Width strategy"
-msgstr "Sitratedjeye d' espåçmint"
-
-#. i18n: file: dialogs/TableDialog.ui:112
-#. i18n: ectx: property (text), widget (QRadioButton, radioFixed)
-#: rc.cpp:102
-msgid "Fixed column width:"
-msgstr "Lårdjeur del colone ewale :"
-
-#. i18n: file: dialogs/TableDialog.ui:125
-#. i18n: ectx: property (text), widget (QRadioButton, radioFitContents)
-#: rc.cpp:105
-msgid "Fit to contents"
-msgstr "Forrimpli sol contnou"
-
-#. i18n: file: dialogs/TableDialog.ui:138
-#. i18n: ectx: property (text), widget (QRadioButton, radioFitAvail)
-#: rc.cpp:108
-msgid "Fit to available surrounding"
-msgstr "Forrimpli so c' k' i gn a åtoû"
 
 #. i18n: file: dialogs/NewStyleWidget.ui:32
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
