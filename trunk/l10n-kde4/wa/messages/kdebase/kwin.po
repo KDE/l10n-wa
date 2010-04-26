@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-03-29 04:26+0200\n"
+"POT-Creation-Date: 2010-04-26 04:38+0200\n"
 "PO-Revision-Date: 2010-01-22 16:08+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: Lokalize 1.0\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: activation.cpp:747
+#: activation.cpp:750
 #, kde-format
 msgid "Window '%1' demands attention."
 msgstr "Li purnea «%1» dimande voste atincion."
@@ -609,6 +609,95 @@ msgstr "Bloker les rascourtis globås"
 msgid "Suspend Compositing"
 msgstr "Djoker môde compôzite"
 
+#: kwinbindings.cpp:223
+msgid "Tiling"
+msgstr ""
+
+#: kwinbindings.cpp:224
+#, fuzzy
+msgid "Toggle Tiling"
+msgstr "Mete en alaedje/essocter les passetes po l' imprimaedje"
+
+#: kwinbindings.cpp:225
+msgid "Toggle Orientation"
+msgstr ""
+
+#: kwinbindings.cpp:226
+msgid "Increase Ratio"
+msgstr ""
+
+#: kwinbindings.cpp:227
+#, fuzzy
+#| msgid "Decorations:"
+msgid "Decrease Ratio"
+msgstr "Candje l' opacité des elemints shuvants:"
+
+#: kwinbindings.cpp:228
+msgid "Toggle Floating"
+msgstr ""
+
+#: kwinbindings.cpp:230
+#, fuzzy
+#| msgid "Switch to Desktop 1"
+msgid "Switch Focus Left"
+msgstr "Potchî sol prumî scribanne"
+
+#: kwinbindings.cpp:231
+msgid "Switch Focus Right"
+msgstr ""
+
+#: kwinbindings.cpp:232
+#, fuzzy
+#| msgid "Switch One Desktop Up"
+msgid "Switch Focus Up"
+msgstr "Potchî sol sicribanne do dzeur"
+
+#: kwinbindings.cpp:233
+#, fuzzy
+#| msgid "Switch One Desktop Down"
+msgid "Switch Focus Down"
+msgstr "Potchî sol sicribanne do dzo"
+
+#: kwinbindings.cpp:234
+#, fuzzy
+#| msgid "Left"
+msgid "Move Left"
+msgstr "A hintche"
+
+#: kwinbindings.cpp:235
+#, fuzzy
+#| msgid "Right"
+msgid "Move Right"
+msgstr "A droete"
+
+#: kwinbindings.cpp:236
+#, fuzzy
+#| msgid "&Move"
+msgid "Move Up"
+msgstr "&Bodjî"
+
+#: kwinbindings.cpp:237
+#, fuzzy
+#| msgid "Move Window"
+msgid "Move Down"
+msgstr "Bodjî l' purnea"
+
+#: kwinbindings.cpp:238
+msgid "Next Layout"
+msgstr ""
+
+#: kwinbindings.cpp:239
+msgid "Previous Layout"
+msgstr ""
+
+#: kwinbindings.cpp:241
+msgid "Test Dump tiles"
+msgstr ""
+
+#: kwinbindings.cpp:242
+msgid "Test Below Cursor"
+msgstr ""
+
 #: main.cpp:178
 msgid ""
 "kwin: it looks like there's already a window manager running. kwin not "
@@ -709,6 +798,19 @@ msgstr ""
 msgctxt "Special entry in alt+tab list for minimizing all windows"
 msgid "Show Desktop"
 msgstr "Mostrer scribanne"
+
+#: tiling.cpp:72
+msgid "Tiling Disabled"
+msgstr ""
+
+#: tiling.cpp:78
+msgid "Tiling Enabled"
+msgstr ""
+
+#: tilinglayoutfactory.cpp:43
+#, kde-format
+msgid "Layout changed to %1"
+msgstr ""
 
 #: useractions.cpp:73
 msgid "Keep &Above Others"
@@ -815,12 +917,12 @@ msgstr "Evoyî a &tos les scribannes"
 msgid "Activate Window (%1)"
 msgstr "Dispierter purnea (%1)"
 
-#: workspace.cpp:1190 workspace.cpp:1210
+#: workspace.cpp:1210 workspace.cpp:1230
 #, kde-format
 msgid "Desktop %1"
 msgstr "Sicribanne %1"
 
-#: workspace.cpp:2603
+#: workspace.cpp:2636
 #, kde-format
 msgid ""
 "You have selected to show a window without its border.\n"
@@ -829,7 +931,7 @@ msgid ""
 "keyboard shortcut."
 msgstr ""
 
-#: workspace.cpp:2617
+#: workspace.cpp:2650
 #, kde-format
 msgid ""
 "You have selected to show a window in fullscreen mode.\n"
@@ -1013,9 +1115,6 @@ msgstr "*** Pont d' purneas ***"
 #~ msgid "Top-Right"
 #~ msgstr "Coine do dzeu a droete"
 
-#~ msgid "Right"
-#~ msgstr "A droete"
-
 #, fuzzy
 #~| msgid "Bottom-right"
 #~ msgid "Bottom-Right"
@@ -1028,9 +1127,6 @@ msgstr "*** Pont d' purneas ***"
 #~| msgid "Bottom-left"
 #~ msgid "Bottom-Left"
 #~ msgstr "Coine do dzo a hintche"
-
-#~ msgid "Left"
-#~ msgstr "A hintche"
 
 #, fuzzy
 #~| msgid "Top-left"
@@ -1091,10 +1187,6 @@ msgstr "*** Pont d' purneas ***"
 #~ msgid "Toggle Thumbnail for Current Window"
 #~ msgstr "Imådjete del waitroûlêye do moumint"
 
-#, fuzzy
-#~ msgid "Toggle Video Recording"
-#~ msgstr "Mete en alaedje/essocter les passetes po l' imprimaedje"
-
 #~ msgid "None"
 #~ msgstr "Nole"
 
@@ -1134,9 +1226,6 @@ msgstr "*** Pont d' purneas ***"
 #~ msgstr "po les purneas so tos les scribannes"
 
 #~ msgid "Changes opacity of following elements:"
-#~ msgstr "Candje l' opacité des elemints shuvants:"
-
-#~ msgid "Decorations:"
 #~ msgstr "Candje l' opacité des elemints shuvants:"
 
 #, fuzzy
