@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_quicklaunch\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-03-14 04:23+0100\n"
+"POT-Creation-Date: 2010-05-01 04:47+0200\n"
 "PO-Revision-Date: 2010-01-17 10:44+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -17,88 +17,110 @@ msgstr ""
 "X-Poedit-Language: Walloon\n"
 "X-Generator: Lokalize 1.0\n"
 
-#: quicklaunchApplet.cpp:378
+#: icongrid.cpp:455
+#, fuzzy
+#| msgid "Configure QuickLaunch"
+msgid "Quicklaunch"
+msgstr "Apontyî EnondeAbeye"
+
+#: icongrid.cpp:456
+msgid "Add launchers by Drag and Drop or by using the context menu."
+msgstr ""
+
+#. i18n: file: quicklaunchConfig.ui:102
+#. i18n: ectx: property (text), widget (QLabel, forceMaxRowsOrColumnsLabel)
+#: quicklaunch.cpp:159 rc.cpp:18 rc.cpp:36
+msgid "Force row settings:"
+msgstr ""
+
+#: quicklaunch.cpp:160
+msgid "Max row count:"
+msgstr ""
+
+#: quicklaunch.cpp:169
+msgid "Force column settings:"
+msgstr ""
+
+#: quicklaunch.cpp:170
+msgid "Max column count:"
+msgstr ""
+
+#: quicklaunch.cpp:184
 msgid "General"
 msgstr "Djenerå"
 
-#: quicklaunchApplet.cpp:428
+#: quicklaunch.cpp:436
 msgid "Add Launcher..."
 msgstr "Radjouter enondeu..."
 
-#: quicklaunchApplet.cpp:437
+#: quicklaunch.cpp:439
 msgid "Remove Launcher"
 msgstr "Oister enondeu"
 
-#: quicklaunchApplet.cpp:444
-msgid "Sort Alphabetically (A to Z)"
-msgstr "Relére alfabeticmint (di A a Z)"
-
-#: quicklaunchApplet.cpp:450
-msgid "Sort Alphabetically (Z to A)"
-msgstr "Relére alfabeticmint (di Z a A)"
-
-#: quicklaunchApplet.cpp:797
-#, no-c-format, kde-format
-msgid ""
-"The following is already in quicklaunch, ignoring it:\n"
-"%2"
-msgid_plural ""
-"The following are already in quicklaunch, ignoring them:\n"
-"%2"
-msgstr[0] ""
-"Li cayet shuvant est ddja dins enondeabeye, el passer foû :\n"
-"%2"
-msgstr[1] ""
-"Les cayets shuvants sont ddja dins enondeabeye, les passer foû :\n"
-"%2"
-
 #. i18n: file: quicklaunchConfig.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, quicklaunchConfig)
-#: rc.cpp:3 rc.cpp:27
-msgid "Configure QuickLaunch"
+#: rc.cpp:3 rc.cpp:21
+#, fuzzy
+#| msgid "Configure QuickLaunch"
+msgid "Configure Quicklaunch"
 msgstr "Apontyî EnondeAbeye"
 
-#. i18n: file: quicklaunchConfig.ui:20
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:6 rc.cpp:30
-msgid "Visible icons:"
-msgstr "Veyåvès imådjetes:"
-
-#. i18n: file: quicklaunchConfig.ui:66
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:9 rc.cpp:33
-msgid "Icon size:"
-msgstr "Grandeu des imådjetes :"
-
-#. i18n: file: quicklaunchConfig.ui:79
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, iconSizeSpin)
-#. i18n: file: quicklaunchConfig.ui:125
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, dialogIconSizeSpin)
-#. i18n: file: quicklaunchConfig.ui:79
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, iconSizeSpin)
-#. i18n: file: quicklaunchConfig.ui:125
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, dialogIconSizeSpin)
-#: rc.cpp:12 rc.cpp:21 rc.cpp:36 rc.cpp:45
-msgid "px"
-msgstr "px"
-
-#. i18n: file: quicklaunchConfig.ui:92
-#. i18n: ectx: property (specialValueText), widget (KIntSpinBox, icons)
-#: rc.cpp:15 rc.cpp:39
-msgid "Unlimited"
-msgstr "Sins limite"
-
-#. i18n: file: quicklaunchConfig.ui:112
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:18 rc.cpp:42
-msgid "Dialog icon size:"
-msgstr "Grandeu di l' imådjete do purnea di dvize :"
-
-#. i18n: file: quicklaunchConfig.ui:132
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:24 rc.cpp:48
+#. i18n: file: quicklaunchConfig.ui:33
+#. i18n: ectx: property (text), widget (QLabel, iconNamesVisibleLabel)
+#: rc.cpp:6 rc.cpp:24
 msgid "Show icon names:"
 msgstr "Mostrer nos des imådjete :"
+
+#. i18n: file: quicklaunchConfig.ui:53
+#. i18n: ectx: property (text), widget (QLabel, dialogEnabledLabel)
+#: rc.cpp:9 rc.cpp:27
+msgid "Enable popup:"
+msgstr ""
+
+#. i18n: file: quicklaunchConfig.ui:73
+#. i18n: ectx: property (text), widget (QLabel, maxRowsOrColumnsLabel)
+#: rc.cpp:12 rc.cpp:30
+msgid "Maximum rows:"
+msgstr ""
+
+#. i18n: file: quicklaunchConfig.ui:86
+#. i18n: ectx: property (specialValueText), widget (KIntSpinBox, maxRowsOrColumnsSpinBox)
+#: rc.cpp:15 rc.cpp:33
+#, fuzzy
+#| msgid "Unlimited"
+msgid "unlimited"
+msgstr "Sins limite"
+
+#~ msgid "Sort Alphabetically (A to Z)"
+#~ msgstr "Relére alfabeticmint (di A a Z)"
+
+#~ msgid "Sort Alphabetically (Z to A)"
+#~ msgstr "Relére alfabeticmint (di Z a A)"
+
+#~ msgid ""
+#~ "The following is already in quicklaunch, ignoring it:\n"
+#~ "%2"
+#~ msgid_plural ""
+#~ "The following are already in quicklaunch, ignoring them:\n"
+#~ "%2"
+#~ msgstr[0] ""
+#~ "Li cayet shuvant est ddja dins enondeabeye, el passer foû :\n"
+#~ "%2"
+#~ msgstr[1] ""
+#~ "Les cayets shuvants sont ddja dins enondeabeye, les passer foû :\n"
+#~ "%2"
+
+#~ msgid "Visible icons:"
+#~ msgstr "Veyåvès imådjetes:"
+
+#~ msgid "Icon size:"
+#~ msgstr "Grandeu des imådjetes :"
+
+#~ msgid "px"
+#~ msgstr "px"
+
+#~ msgid "Dialog icon size:"
+#~ msgstr "Grandeu di l' imådjete do purnea di dvize :"
 
 #~ msgid "Add Shortcut"
 #~ msgstr "Radjouter rascourti"
