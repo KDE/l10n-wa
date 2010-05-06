@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gwenview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-05-05 04:51+0200\n"
+"POT-Creation-Date: 2010-05-06 04:56+0200\n"
 "PO-Revision-Date: 2009-05-30 16:04+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -272,52 +272,27 @@ msgstr "Drovi avou"
 msgid "Other Application..."
 msgstr "Ôtes programes..."
 
-#: app/gvcore.cpp:87
+#: app/gvcore.cpp:83
 msgctxt "@info"
 msgid "No image format selected."
 msgstr "Nole cogne d' imådje tchoezeye."
 
-#: app/gvcore.cpp:100
+#: app/gvcore.cpp:96
 #, kde-format
 msgctxt "@info"
 msgid "Gwenview cannot save images as %1."
 msgstr "Gwenview n' sai schaper les imådjes come %1."
 
-#: app/gvcore.cpp:172
-msgctxt "@info:progress saving all image changes"
-msgid "Saving..."
-msgstr "Dji schape..."
-
-#: app/gvcore.cpp:173
-msgid "&Stop"
-msgstr "Å&we"
-
-#: app/gvcore.cpp:192
-#, kde-format
-msgctxt "@info"
-msgid "One document could not be saved:"
-msgid_plural "%1 documents could not be saved:"
-msgstr[0] "Dji n' a savou schaper on documint:"
-msgstr[1] "Dji n' a savou schaper %1 documints:"
-
-#: app/gvcore.cpp:214
-#, kde-format
-msgctxt ""
-"@info %1 is the name of the document which failed to save, %2 is the reason "
-"for the failure"
-msgid "<filename>%1</filename>: %2"
-msgstr "<filename>%1</filename>: %2"
-
-#: app/gvcore.cpp:240
+#: app/gvcore.cpp:183
 msgid "Save using another format"
 msgstr "Schaper avou ene ôte cogne"
 
-#: app/gvcore.cpp:243
+#: app/gvcore.cpp:186
 #, kde-format
 msgid "Gwenview cannot save images in '%1' format."
 msgstr "Gwenview n' sai schaper les imådjes el cogne « %1 »."
 
-#: app/gvcore.cpp:266
+#: app/gvcore.cpp:209
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -327,21 +302,21 @@ msgstr ""
 "On fitchî <filename>%1</filename> egzistêye dedja.\n"
 "Estoz seur(e) ki vos l' voloz spotchî?"
 
-#: app/gvcore.cpp:301
+#: app/gvcore.cpp:244
 #, kde-format
 msgctxt "@info"
 msgid "<b>Saving <filename>%1</filename> failed:</b><br>%2"
 msgstr "<b>Li schapaedje di <filename>%1</filename> a fwait berwete:</b><br>%2"
 
-#: app/gvcore.cpp:319
+#: app/gvcore.cpp:262
 msgid "You are now viewing the new document."
 msgstr ""
 
-#: app/gvcore.cpp:321
+#: app/gvcore.cpp:264
 msgid "Go back to the original"
 msgstr ""
 
-#: app/gvcore.cpp:364
+#: app/gvcore.cpp:307
 msgctxt "@info"
 msgid "Gwenview cannot edit this kind of image."
 msgstr "Gwenview n' sai candjî les imådjes di c' djinre la."
@@ -367,7 +342,7 @@ msgstr "Muroe"
 msgid "Flip"
 msgstr "Sititchî"
 
-#: app/imageopscontextmanageritem.cpp:97 lib/resizeimageoperation.cpp:47
+#: app/imageopscontextmanageritem.cpp:97 lib/resizeimageoperation.cpp:82
 msgid "Resize"
 msgstr "Candjî di grandeu"
 
@@ -830,6 +805,31 @@ msgstr "Î potchî"
 msgid "Save All"
 msgstr "Totafwait schaper"
 
+#: app/saveallhelper.cpp:57
+msgctxt "@info:progress saving all image changes"
+msgid "Saving..."
+msgstr "Dji schape..."
+
+#: app/saveallhelper.cpp:58
+msgid "&Stop"
+msgstr "Å&we"
+
+#: app/saveallhelper.cpp:82
+#, kde-format
+msgctxt "@info"
+msgid "One document could not be saved:"
+msgid_plural "%1 documents could not be saved:"
+msgstr[0] "Dji n' a savou schaper on documint:"
+msgstr[1] "Dji n' a savou schaper %1 documints:"
+
+#: app/saveallhelper.cpp:106
+#, kde-format
+msgctxt ""
+"@info %1 is the name of the document which failed to save, %2 is the reason "
+"for the failure"
+msgid "<filename>%1</filename>: %2"
+msgstr "<filename>%1</filename>: %2"
+
 #: importer/importer.cpp:76
 msgid "Could not create destination folder."
 msgstr ""
@@ -1086,17 +1086,7 @@ msgctxt "@info"
 msgid "Loading image failed."
 msgstr "Li tcherdjaedje di l' imådje a fwait berwete."
 
-#: lib/document/savejob.cpp:77
-#, kde-format
-msgctxt "@info"
-msgid ""
-"Could not overwrite file, check that you have the necessary rights to write "
-"in <filename>%1</filename>."
-msgstr ""
-"Dji n' a savou spotchî l' fitchî, waitîz k' vos avoz les bons droets dins "
-"<filename>%1</filename>."
-
-#: lib/document/savejob.cpp:101
+#: lib/document/savejob.cpp:104
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1105,6 +1095,16 @@ msgid ""
 msgstr ""
 "Dji n' a savou drovi l' fitchî pos î scrire, waitîz k' vos avoz les bons "
 "droets dins <filename>%1</filename>."
+
+#: lib/document/savejob.cpp:128
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Could not overwrite file, check that you have the necessary rights to write "
+"in <filename>%1</filename>."
+msgstr ""
+"Dji n' a savou spotchî l' fitchî, waitîz k' vos avoz les bons droets dins "
+"<filename>%1</filename>."
 
 #: lib/print/printhelper.cpp:129
 msgid "Print Image"
