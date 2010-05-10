@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gwenview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-05-06 04:56+0200\n"
+"POT-Creation-Date: 2010-05-10 04:43+0200\n"
 "PO-Revision-Date: 2009-05-30 16:04+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -283,16 +283,16 @@ msgctxt "@info"
 msgid "Gwenview cannot save images as %1."
 msgstr "Gwenview n' sai schaper les imådjes come %1."
 
-#: app/gvcore.cpp:183
+#: app/gvcore.cpp:181
 msgid "Save using another format"
 msgstr "Schaper avou ene ôte cogne"
 
-#: app/gvcore.cpp:186
+#: app/gvcore.cpp:184
 #, kde-format
 msgid "Gwenview cannot save images in '%1' format."
 msgstr "Gwenview n' sai schaper les imådjes el cogne « %1 »."
 
-#: app/gvcore.cpp:209
+#: app/gvcore.cpp:207
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -302,21 +302,21 @@ msgstr ""
 "On fitchî <filename>%1</filename> egzistêye dedja.\n"
 "Estoz seur(e) ki vos l' voloz spotchî?"
 
-#: app/gvcore.cpp:244
+#: app/gvcore.cpp:242
 #, kde-format
 msgctxt "@info"
 msgid "<b>Saving <filename>%1</filename> failed:</b><br>%2"
 msgstr "<b>Li schapaedje di <filename>%1</filename> a fwait berwete:</b><br>%2"
 
-#: app/gvcore.cpp:262
+#: app/gvcore.cpp:260
 msgid "You are now viewing the new document."
 msgstr ""
 
-#: app/gvcore.cpp:264
+#: app/gvcore.cpp:262
 msgid "Go back to the original"
 msgstr ""
 
-#: app/gvcore.cpp:307
+#: app/gvcore.cpp:305
 msgctxt "@info"
 msgid "Gwenview cannot edit this kind of image."
 msgstr "Gwenview n' sai candjî les imådjes di c' djinre la."
@@ -326,23 +326,23 @@ msgctxt "@title actions category - means actions changing image"
 msgid "Edit"
 msgstr "Candjî"
 
-#: app/imageopscontextmanageritem.cpp:79 lib/transformimageoperation.cpp:82
+#: app/imageopscontextmanageritem.cpp:79 lib/transformimageoperation.cpp:69
 msgid "Rotate Left"
 msgstr "Fé tourner a hintche"
 
-#: app/imageopscontextmanageritem.cpp:84 lib/transformimageoperation.cpp:79
+#: app/imageopscontextmanageritem.cpp:84 lib/transformimageoperation.cpp:66
 msgid "Rotate Right"
 msgstr "Fé tourné a droete"
 
-#: app/imageopscontextmanageritem.cpp:89 lib/transformimageoperation.cpp:85
+#: app/imageopscontextmanageritem.cpp:89 lib/transformimageoperation.cpp:72
 msgid "Mirror"
 msgstr "Muroe"
 
-#: app/imageopscontextmanageritem.cpp:93 lib/transformimageoperation.cpp:88
+#: app/imageopscontextmanageritem.cpp:93 lib/transformimageoperation.cpp:75
 msgid "Flip"
 msgstr "Sititchî"
 
-#: app/imageopscontextmanageritem.cpp:97 lib/resizeimageoperation.cpp:82
+#: app/imageopscontextmanageritem.cpp:97 lib/resizeimageoperation.cpp:69
 msgid "Resize"
 msgstr "Candjî di grandeu"
 
@@ -350,7 +350,7 @@ msgstr "Candjî di grandeu"
 #. i18n: ectx: property (windowTitle), widget (QWidget, CropWidget)
 #. i18n: file: lib/crop/cropwidget.ui:32
 #. i18n: ectx: property (text), widget (QToolButton, cropButton)
-#: app/imageopscontextmanageritem.cpp:101 lib/crop/cropimageoperation.cpp:48
+#: app/imageopscontextmanageritem.cpp:101 lib/crop/cropimageoperation.cpp:73
 #: rc.cpp:175 rc.cpp:181
 msgid "Crop"
 msgstr "Côper dvins"
@@ -363,11 +363,11 @@ msgstr "Ridujhaedje des rodjes ouys"
 msgid "Image Operations"
 msgstr "Operåcions so ls imådjes"
 
-#: app/imageopscontextmanageritem.cpp:238
+#: app/imageopscontextmanageritem.cpp:237
 msgid "Image Resizing"
 msgstr "Candjî grandeu d' l' imådje"
 
-#: app/imageopscontextmanageritem.cpp:239
+#: app/imageopscontextmanageritem.cpp:238
 msgid "Enter the new size of the image:"
 msgstr "Dinez l' novele grandeu d' l' imådje:"
 
@@ -1062,7 +1062,7 @@ msgstr "Gwenview n' sai comint håyner les documints di c' djinre la."
 msgid "Loading <filename>%1</filename> failed"
 msgstr "Li tcherdjaedje di <filename>%1</filename> a fwait berwete"
 
-#: lib/redeyereduction/redeyereductionimageoperation.cpp:53
+#: lib/redeyereduction/redeyereductionimageoperation.cpp:75
 msgid "RedEyeReduction"
 msgstr "RidujhaedjeRodjesOuys"
 
@@ -1105,6 +1105,13 @@ msgid ""
 msgstr ""
 "Dji n' a savou spotchî l' fitchî, waitîz k' vos avoz les bons droets dins "
 "<filename>%1</filename>."
+
+#: lib/document/loadingjob.cpp:56
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Could not upload file."
+msgid "Could not load document %1"
+msgstr "Dji n' a savou eberweter l' fitchî."
 
 #: lib/print/printhelper.cpp:129
 msgid "Print Image"
@@ -1177,7 +1184,7 @@ msgctxt "@info"
 msgid "No data to store."
 msgstr "Nole dinêye a wårder."
 
-#: lib/transformimageoperation.cpp:93
+#: lib/transformimageoperation.cpp:80
 msgid "Transform"
 msgstr "Candjî e"
 
@@ -1742,10 +1749,6 @@ msgstr "&Fitchî"
 #: rc.cpp:262
 msgid "&View"
 msgstr "&Vey"
-
-#~ msgctxt "@info"
-#~ msgid "Could not upload file."
-#~ msgstr "Dji n' a savou eberweter l' fitchî."
 
 #, fuzzy
 #~| msgid "Copyright 2000-2008 Aurélien Gâteau"
