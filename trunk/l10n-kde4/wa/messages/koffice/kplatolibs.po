@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-07-31 05:38+0200\n"
+"POT-Creation-Date: 2010-08-01 05:12+0200\n"
 "PO-Revision-Date: 2009-08-20 10:18+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -104,46 +104,35 @@ msgctxt "@item:inlistbox resource type"
 msgid "Team"
 msgstr ""
 
-#: kernel/kptresource.cpp:758 kernel/kptresource.cpp:776
+#: kernel/kptresource.cpp:773
 msgid "Make appointments: Invalid time"
 msgstr "Fé des radjoûs: date/eure nén valåbe"
 
-#: kernel/kptresource.cpp:763 kernel/kptresource.cpp:850
-#: kernel/kptresource.cpp:894 kernel/kptresource.cpp:959
+#: kernel/kptresource.cpp:778 kernel/kptresource.cpp:837
+#: kernel/kptresource.cpp:941 kernel/kptresource.cpp:1005
 #, kde-format
 msgid "Resource %1 has no calendar defined"
 msgstr "Li rsource %1 n' a pont d' calindrî defini"
 
-#: kernel/kptresource.cpp:781
-#, kde-format
-msgid "Make appointments: Invalid interval %1 to %2"
-msgstr "Fé des radjoûs: tins inte %1 et %2 nén valåbe"
-
-#: kernel/kptresource.cpp:794
-#, fuzzy
-#| msgid "Make appointments: Node end time is not valid"
-msgid "Make appointments: Required resource not available"
-msgstr "Fé des radjoûs: li date di dfén do nuk n' est nén valåbe"
-
-#: kernel/kptresource.cpp:814
+#: kernel/kptresource.cpp:801
 msgid "Make appointments: Node start time is not valid"
 msgstr "Fé des radjoûs: li date di cominçmint do nuk n' est nén valåbe"
 
-#: kernel/kptresource.cpp:818
+#: kernel/kptresource.cpp:805
 msgid "Make appointments: Node end time is not valid"
 msgstr "Fé des radjoûs: li date di dfén do nuk n' est nén valåbe"
 
-#: kernel/kptresource.cpp:857 kernel/kptresource.cpp:863
+#: kernel/kptresource.cpp:844 kernel/kptresource.cpp:860
 #, kde-format
 msgid "Resource %1 not available in interval: %2 to %3"
 msgstr "Rissource %1 nén disponibe inte %2 et %3"
 
-#: kernel/kptresource.cpp:2194
+#: kernel/kptresource.cpp:2237
 #, kde-format
 msgid "Could not match effort. Want: %1 got: %2"
 msgstr "Dji n' a savou fé coresponde l' efoirt. Djovleu: %1, dj' a yeu: %2"
 
-#: kernel/kptresource.cpp:2197
+#: kernel/kptresource.cpp:2240
 #, kde-format
 msgid "Resource %1 available from %2 to %3"
 msgstr "Rissource %1 disponibe di %2 a %3"
@@ -354,7 +343,7 @@ msgstr ""
 #: models/kptschedulemodel.cpp:460 models/kptresourceallocationmodel.cpp:743
 #: ui/kpttaskcostpanel.cpp:49 ui/kptpertresult.cpp:138
 #: ui/kptpertresult.cpp:489 ui/kpttaskgeneralpanel.cpp:70
-#: ui/kptresourcedialog.cpp:243 ui/kptresourcedialog.cpp:269 rc.cpp:600
+#: ui/kptresourcedialog.cpp:260 ui/kptresourcedialog.cpp:286 rc.cpp:600
 msgid "None"
 msgstr "Nouk"
 
@@ -367,19 +356,19 @@ msgstr "Evoyî"
 msgid "Receive"
 msgstr "Oister"
 
-#: kernel/kptcalendar.h:256 kernel/kptcalendar.h:267
+#: kernel/kptcalendar.h:259 kernel/kptcalendar.h:270
 #: models/kptcalendarmodel.cpp:1006 ui/kptcalendareditor.cpp:205
-#: ui/kptcalendareditor.cpp:639
+#: ui/kptcalendareditor.cpp:643
 msgid "Undefined"
 msgstr "Nén defini"
 
-#: kernel/kptcalendar.h:258 kernel/kptcalendar.h:267
+#: kernel/kptcalendar.h:261 kernel/kptcalendar.h:270
 #: models/kptcalendarmodel.cpp:1009 ui/kptcalendareditor.cpp:203
-#: ui/kptcalendareditor.cpp:637
+#: ui/kptcalendareditor.cpp:641
 msgid "Non-working"
 msgstr "Nén ovråve"
 
-#: kernel/kptcalendar.h:260 kernel/kptcalendar.h:267
+#: kernel/kptcalendar.h:263 kernel/kptcalendar.h:270
 #, fuzzy
 msgid "Working"
 msgstr "Ovraedje"
@@ -657,7 +646,7 @@ msgstr "On n' sait ataker l' pordjet pus tård kel date/eure: %1"
 msgid "Calculation took: %1"
 msgstr ""
 
-#: kernel/kptproject.cpp:2376
+#: kernel/kptproject.cpp:2429
 #, fuzzy
 msgid "Plan"
 msgstr "Parint"
@@ -3279,7 +3268,7 @@ msgstr "Nole bouye "
 msgid "No resource attributed"
 msgstr ""
 
-#: ui/kptcalendareditor.cpp:201 ui/kptcalendareditor.cpp:635
+#: ui/kptcalendareditor.cpp:201 ui/kptcalendareditor.cpp:639
 msgid "Work..."
 msgstr "Ovraedje..."
 
@@ -3295,35 +3284,37 @@ msgid ""
 "be specific to a resource or task, or shared by multiple resources or tasks. "
 "A day can be of type <emphasis>Undefined</emphasis>, <emphasis>Non-working "
 "day</emphasis> or <emphasis>Working day</emphasis>. A working day has one or "
-"more work intervals defined. A calendar can have sub calendars. If a day is "
-"undefined in a calendar, the parent calendar is checked. An "
+"more work intervals defined. </para><para>A calendar can have sub calendars. "
+"If a day is undefined in a calendar, the parent calendar is checked. An "
 "<emphasis>Undefined</emphasis> day defaults to <emphasis>Non-working</"
 "emphasis> if used by a resource, or <emphasis>available all day</emphasis> "
-"if used by a task. </para>"
+"if used by a task.</para><para>A calendar can be defined as the "
+"<emphasis>Default calendar</emphasis>. The default calendar is used by a "
+"working resource, when the resources calendar is not explicitly set.</para>"
 msgstr ""
 
-#: ui/kptcalendareditor.cpp:616
+#: ui/kptcalendareditor.cpp:620
 msgid "Add Calendar"
 msgstr "Radjouter calindrî"
 
-#: ui/kptcalendareditor.cpp:621
+#: ui/kptcalendareditor.cpp:625
 msgid "Add Subcalendar"
 msgstr "Radjouter calindrî efant"
 
-#: ui/kptcalendareditor.cpp:626
+#: ui/kptcalendareditor.cpp:630
 msgid "Delete Selected Calendar"
 msgstr "Disfacer calindrî di tchoezi"
 
-#: ui/kptcalendareditor.cpp:780 ui/kptcalendareditor.cpp:814
+#: ui/kptcalendareditor.cpp:784 ui/kptcalendareditor.cpp:818
 msgid "Modify Calendar"
 msgstr "Candjî calindrî"
 
-#: ui/kptcalendareditor.cpp:789 ui/kptcalendareditor.cpp:795
+#: ui/kptcalendareditor.cpp:793 ui/kptcalendareditor.cpp:799
 #, kde-format
 msgid "%1: Set to Non-Working"
 msgstr "%1 Defini so nén ovråve"
 
-#: ui/kptcalendareditor.cpp:821
+#: ui/kptcalendareditor.cpp:825
 #, kde-format
 msgid "Set %1 to Undefined"
 msgstr "Defini %1 so nén defini"
@@ -3810,11 +3801,11 @@ msgctxt "title:column"
 msgid "Group"
 msgstr "Grouper"
 
-#: ui/kptresourcedialog.cpp:209
+#: ui/kptresourcedialog.cpp:215
 msgid "Resource Settings"
 msgstr "Apontiaedjes del rissource"
 
-#: ui/kptresourcedialog.cpp:348
+#: ui/kptresourcedialog.cpp:365
 msgid "Modify Resource"
 msgstr "Candjî rissource"
 
@@ -4021,7 +4012,7 @@ msgstr "Li no del bouye"
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:55
 #. i18n: ectx: property (text), widget (QLabel, namelabel)
 #. i18n: file: ui/resourcedialogbase.ui:30
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#. i18n: ectx: property (text), widget (QLabel, ui_namelabel)
 #: rc.cpp:147 rc.cpp:447 rc.cpp:510 rc.cpp:758
 msgid "Name:"
 msgstr "No:"
@@ -4403,7 +4394,7 @@ msgstr "Ahiver programaedje efant"
 #. i18n: file: ui/relationpanel.ui:44
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #. i18n: file: ui/resourcedialogbase.ui:265
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#. i18n: ectx: property (title), widget (QGroupBox, ui_fromgroup)
 #: rc.cpp:331 rc.cpp:795
 msgid "From"
 msgstr "Di"
@@ -4657,7 +4648,7 @@ msgstr "SPI:"
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
 #. i18n: file: ui/kpttaskcostpanelbase.ui:176
 #. i18n: ectx: property (text), widget (QLabel, textLabel3_3)
-#. i18n: file: ui/resourcedialogbase.ui:508
+#. i18n: file: ui/resourcedialogbase.ui:486
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:480 rc.cpp:489 rc.cpp:498 rc.cpp:819
 #, fuzzy
@@ -4868,8 +4859,8 @@ msgstr ""
 
 #. i18n: file: ui/kptperformancestatusviewsettingspanel.ui:49
 #. i18n: ectx: property (title), widget (QGroupBox, ui_cost)
-#. i18n: file: ui/resourcedialogbase.ui:430
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#. i18n: file: ui/resourcedialogbase.ui:408
+#. i18n: ectx: property (title), widget (QGroupBox, ui_costgroup)
 #: rc.cpp:662 rc.cpp:810
 msgid "Cost"
 msgstr "Costindje"
@@ -5028,14 +5019,14 @@ msgid "Choose resource from address book"
 msgstr "Sititchî ene djin di vosse calpin d' adresses"
 
 #. i18n: file: ui/resourcedialogbase.ui:73
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#. i18n: ectx: property (text), widget (QLabel, ui_initialslabel)
 #: rc.cpp:767
 #, fuzzy
 msgid "Initials:"
 msgstr "Iniciåles:"
 
 #. i18n: file: ui/resourcedialogbase.ui:113
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_2_2)
+#. i18n: ectx: property (text), widget (QLabel, ui_emaillabel)
 #: rc.cpp:770
 msgid "<p align=\"right\">Email:</p>"
 msgstr "<p align=\"right\">Emile:</p>"
@@ -5055,41 +5046,41 @@ msgid "Team"
 msgstr ""
 
 #. i18n: file: ui/resourcedialogbase.ui:214
-#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#. i18n: ectx: property (text), widget (QLabel, ui_unitslabel)
 #: rc.cpp:785
 #, fuzzy
 msgid "Available:"
 msgstr "Arinnåve:"
 
 #. i18n: file: ui/resourcedialogbase.ui:249
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#. i18n: ectx: property (text), widget (QLabel, ui_calendarlabel)
 #: rc.cpp:792
 msgid "<p align=\"right\">Calendar:</p>"
 msgstr "<p align=\"right\">Calindrî:</p>"
 
-#. i18n: file: ui/resourcedialogbase.ui:286
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#. i18n: file: ui/resourcedialogbase.ui:346
-#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: file: ui/resourcedialogbase.ui:277
+#. i18n: ectx: property (text), widget (QRadioButton, ui_rbfromunlimited)
+#. i18n: file: ui/resourcedialogbase.ui:326
+#. i18n: ectx: property (text), widget (QRadioButton, ui_rbuntilunlimited)
 #: rc.cpp:798 rc.cpp:804
 msgid "Unlimited"
 msgstr ""
 
-#. i18n: file: ui/resourcedialogbase.ui:322
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#. i18n: file: ui/resourcedialogbase.ui:311
+#. i18n: ectx: property (title), widget (QGroupBox, ui_untilgroup)
 #: rc.cpp:801
 #, fuzzy
 msgid "Until"
 msgstr "Iniciåles:"
 
-#. i18n: file: ui/resourcedialogbase.ui:405
+#. i18n: file: ui/resourcedialogbase.ui:383
 #. i18n: ectx: property (text), widget (QCheckBox, useRequired)
 #: rc.cpp:807
 #, fuzzy
 msgid "Required resources:"
 msgstr "Candjî rissource"
 
-#. i18n: file: ui/resourcedialogbase.ui:442
+#. i18n: file: ui/resourcedialogbase.ui:420
 #. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
 #: rc.cpp:813
 #, fuzzy
@@ -5097,11 +5088,19 @@ msgstr "Candjî rissource"
 msgid "Hourly rate:"
 msgstr "Eures pa djoû:"
 
-#. i18n: file: ui/resourcedialogbase.ui:462
+#. i18n: file: ui/resourcedialogbase.ui:440
 #. i18n: ectx: property (text), widget (QLabel, textLabel4_2)
 #: rc.cpp:816
 msgid "Overtime rate:"
 msgstr ""
+
+#~ msgid "Make appointments: Invalid interval %1 to %2"
+#~ msgstr "Fé des radjoûs: tins inte %1 et %2 nén valåbe"
+
+#, fuzzy
+#~| msgid "Make appointments: Node end time is not valid"
+#~ msgid "Make appointments: Required resource not available"
+#~ msgstr "Fé des radjoûs: li date di dfén do nuk n' est nén valåbe"
 
 #, fuzzy
 #~ msgid "Not allocated"
