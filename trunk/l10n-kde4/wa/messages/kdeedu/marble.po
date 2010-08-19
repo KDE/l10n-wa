@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: marble\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-17 05:59+0200\n"
+"POT-Creation-Date: 2010-08-19 05:30+0200\n"
 "PO-Revision-Date: 2009-07-16 19:03+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -3229,7 +3229,9 @@ msgstr "Zoumez e tchôcant c' boton ci po vey pus di detays."
 #. i18n: ectx: property (shortcut), widget (QToolButton, zoomInButton)
 #. i18n: file: src/plugins/render/navigation/navigation.ui:160
 #. i18n: ectx: property (shortcut), widget (QToolButton, zoomInButton)
-#: rc.cpp:1200 rc.cpp:1463 rc.cpp:1646 rc.cpp:1721
+#. i18n: file: src/plugins/render/routing/RoutingWidgetSmall.ui:114
+#. i18n: ectx: property (text), widget (QToolButton, zoomInButton)
+#: rc.cpp:1200 rc.cpp:1463 rc.cpp:1646 rc.cpp:1721 rc.cpp:1947
 msgid "+"
 msgstr "+"
 
@@ -3286,7 +3288,9 @@ msgstr "Zoumez e tchôcant so c' boton po vey moens di detays."
 #. i18n: ectx: property (shortcut), widget (QToolButton, zoomOutButton)
 #. i18n: file: src/plugins/render/navigation/navigation.ui:46
 #. i18n: ectx: property (shortcut), widget (QToolButton, zoomOutButton)
-#: rc.cpp:1218 rc.cpp:1415 rc.cpp:1658 rc.cpp:1673
+#. i18n: file: src/plugins/render/routing/RoutingWidgetSmall.ui:146
+#. i18n: ectx: property (text), widget (QToolButton, zoomOutButton)
+#: rc.cpp:1218 rc.cpp:1415 rc.cpp:1658 rc.cpp:1673 rc.cpp:1953
 msgid "-"
 msgstr "-"
 
@@ -3763,7 +3767,7 @@ msgstr "Plate mape"
 #. i18n: ectx: property (text), item, widget (QComboBox, projectionComboBox)
 #. i18n: file: src/plasmoid/worldclockConfig.ui:77
 #. i18n: ectx: property (text), item, widget (QComboBox, projection)
-#: rc.cpp:1496 rc.cpp:1998
+#: rc.cpp:1496 rc.cpp:2015
 msgid "Mercator"
 msgstr "Mercator"
 
@@ -3811,14 +3815,14 @@ msgstr ""
 msgid "No position available."
 msgstr ""
 
-#. i18n: file: src/lib/CurrentLocationWidget.ui:76
+#. i18n: file: src/lib/CurrentLocationWidget.ui:79
 #. i18n: ectx: property (toolTip), widget (QLabel, recenterLabel)
 #: rc.cpp:1520
 msgctxt "Select the method to use to recenter your GPS location on map."
 msgid "Select the method to use to re-center your GPS location on map."
 msgstr ""
 
-#. i18n: file: src/lib/CurrentLocationWidget.ui:79
+#. i18n: file: src/lib/CurrentLocationWidget.ui:82
 #. i18n: ectx: property (text), widget (QLabel, recenterLabel)
 #: rc.cpp:1523
 #, fuzzy
@@ -3826,35 +3830,35 @@ msgstr ""
 msgid "Re-center"
 msgstr "&Mitan"
 
-#. i18n: file: src/lib/CurrentLocationWidget.ui:87
+#. i18n: file: src/lib/CurrentLocationWidget.ui:93
 #. i18n: ectx: property (text), item, widget (QComboBox, recenterComboBox)
 #: rc.cpp:1526
 msgctxt "Disable Auto Recenter"
 msgid "Disabled"
 msgstr ""
 
-#. i18n: file: src/lib/CurrentLocationWidget.ui:92
+#. i18n: file: src/lib/CurrentLocationWidget.ui:98
 #. i18n: ectx: property (text), item, widget (QComboBox, recenterComboBox)
 #: rc.cpp:1529
 msgctxt "Always keep gps location at the center of the map"
 msgid "Keep at Center"
 msgstr ""
 
-#. i18n: file: src/lib/CurrentLocationWidget.ui:97
+#. i18n: file: src/lib/CurrentLocationWidget.ui:103
 #. i18n: ectx: property (text), item, widget (QComboBox, recenterComboBox)
 #: rc.cpp:1532
 msgctxt "Auto center when required"
 msgid "When required"
 msgstr ""
 
-#. i18n: file: src/lib/CurrentLocationWidget.ui:105
+#. i18n: file: src/lib/CurrentLocationWidget.ui:114
 #. i18n: ectx: property (toolTip), widget (QCheckBox, autoZoomCheckBox)
 #: rc.cpp:1535
 msgctxt "Auto Zoom to appropriate zoom level"
 msgid "Auto Zoom to appropriate zoom level"
 msgstr ""
 
-#. i18n: file: src/lib/CurrentLocationWidget.ui:108
+#. i18n: file: src/lib/CurrentLocationWidget.ui:117
 #. i18n: ectx: property (text), widget (QCheckBox, autoZoomCheckBox)
 #: rc.cpp:1538
 #, fuzzy
@@ -4468,16 +4472,73 @@ msgstr ""
 msgid "Dump file records to the debug stream"
 msgstr ""
 
-#. i18n: file: src/plugins/render/routing/RoutingItemWidget.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, RoutingItemWidget)
+#. i18n: file: src/plugins/render/routing/RoutingWidgetSmall.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, RoutingWidgetSmall)
 #: rc.cpp:1929
 #, fuzzy
-msgid "Routing Widget"
+msgid "RoutingWidget"
 msgstr "Pont"
 
-#. i18n: file: src/plugins/render/routing/RoutingItemWidget.ui:36
-#. i18n: ectx: property (text), widget (QLabel, routingHeaderlabel)
+#. i18n: file: src/plugins/render/routing/RoutingWidgetSmall.ui:38
+#. i18n: ectx: property (toolTip), widget (QToolButton, navigationButton)
 #: rc.cpp:1932
+msgid "Provides options for adjusting navigation"
+msgstr ""
+
+#. i18n: file: src/plugins/render/routing/RoutingWidgetSmall.ui:44
+#. i18n: ectx: property (text), widget (QToolButton, navigationButton)
+#: rc.cpp:1935
+#, fuzzy
+#| msgid "N"
+msgid "N"
+msgstr "B"
+
+#. i18n: file: src/plugins/render/routing/RoutingWidgetSmall.ui:82
+#. i18n: ectx: property (toolTip), widget (QToolButton, routingButton)
+#: rc.cpp:1938
+#, fuzzy
+msgid "Routing Information"
+msgstr "Foû payis"
+
+#. i18n: file: src/plugins/render/routing/RoutingWidgetSmall.ui:85
+#. i18n: ectx: property (text), widget (QToolButton, routingButton)
+#: rc.cpp:1941
+msgid "R"
+msgstr ""
+
+#. i18n: file: src/plugins/render/routing/RoutingWidgetSmall.ui:111
+#. i18n: ectx: property (toolTip), widget (QToolButton, zoomInButton)
+#: rc.cpp:1944
+#, fuzzy
+#| msgid "Zoom In"
+msgid "zoom in"
+msgstr "Zoumer"
+
+#. i18n: file: src/plugins/render/routing/RoutingWidgetSmall.ui:143
+#. i18n: ectx: property (toolTip), widget (QToolButton, zoomOutButton)
+#: rc.cpp:1950
+#, fuzzy
+#| msgid "Zoom Out"
+msgid "zoom out"
+msgstr "Diszoumer"
+
+#. i18n: file: src/plugins/render/routing/RoutingInformationWidgetSmall.ui:20
+#. i18n: ectx: property (windowTitle), widget (QWidget, RoutingInformationWidgetSmall)
+#: rc.cpp:1956
+#, fuzzy
+#| msgid "Farm"
+msgid "Form"
+msgstr "Cinse"
+
+#. i18n: file: src/plugins/render/routing/RoutingInformationWidgetSmall.ui:57
+#. i18n: ectx: property (toolTip), widget (QLabel, remainingTimeLabel)
+#: rc.cpp:1959
+msgid "total time remaining"
+msgstr ""
+
+#. i18n: file: src/plugins/render/routing/RoutingInformationWidgetSmall.ui:67
+#. i18n: ectx: property (text), widget (QLabel, remainingTimeLabel)
+#: rc.cpp:1962
 #, fuzzy
 #| msgid ""
 #| "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -4504,8 +4565,8 @@ msgid ""
 "<td style=\"border: none;\">\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
 "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
-"style=\" font-weight:600; text-decoration: underline;\">Routing Information</"
-"span></p></td></tr></table></body></html>"
+"style=\" font-size:12pt; font-weight:600;\">00:00</span></p></td></tr></"
+"table></body></html>"
 msgstr ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -4518,364 +4579,320 @@ msgstr ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
 "weight:600;\">000,0 km/e</span></p></body></html>"
 
-#. i18n: file: src/plugins/render/routing/RoutingItemWidget.ui:46
-#. i18n: ectx: property (toolTip), widget (QLabel, timeLabel)
-#. i18n: file: src/plugins/render/routing/RoutingItemWidget.ui:72
+#. i18n: file: src/plugins/render/routing/RoutingInformationWidgetSmall.ui:102
+#. i18n: ectx: property (text), widget (QLabel, distanceAndInstructionLabel)
+#. i18n: file: src/plugins/render/routing/RoutingInformationWidget.ui:115
+#. i18n: ectx: property (text), widget (QLabel, distanceAndInstructionLabel)
+#: rc.cpp:1972 rc.cpp:1997
+msgid "Next Instruction On The Route"
+msgstr ""
+
+#. i18n: file: src/plugins/render/routing/RoutingInformationWidgetSmall.ui:144
+#. i18n: ectx: property (toolTip), widget (QProgressBar, distanceCoveredProgressBar)
+#: rc.cpp:1975
+msgid "distance covered on the current instruction"
+msgstr ""
+
+#. i18n: file: src/plugins/render/routing/RoutingInformationWidget.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, RoutingInformationWidget)
+#: rc.cpp:1978
+#, fuzzy
+msgid "Routing Widget"
+msgstr "Pont"
+
+#. i18n: file: src/plugins/render/routing/RoutingInformationWidget.ui:36
+#. i18n: ectx: property (text), widget (QLabel, routingHeaderlabel)
+#: rc.cpp:1981
+#, fuzzy
+#| msgid ""
+#| "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#| "REC-html40/strict.dtd\">\n"
+#| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#| "css\">\n"
+#| "p, li { white-space: pre-wrap; }\n"
+#| "</style></head><body style=\" font-family:'DejaVu Sans'; font-size:10pt; "
+#| "font-weight:400; font-style:normal;\">\n"
+#| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#| "weight:600;\">000,0 km/h</span></p></body></html>"
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<table border=\"0\" style=\"-qt-table-type: root; margin-top:4px; margin-"
+"bottom:4px; margin-left:4px; margin-right:4px;\">\n"
+"<tr>\n"
+"<td style=\"border: none;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+"left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+"style=\" font-weight:600;\">Routing Information</span></p></td></tr></"
+"table></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'DejaVu Sans'; font-size:10pt; "
+"font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">000,0 km/e</span></p></body></html>"
+
+#. i18n: file: src/plugins/render/routing/RoutingInformationWidget.ui:52
 #. i18n: ectx: property (toolTip), widget (QLabel, remainingTimeLabel)
-#: rc.cpp:1942 rc.cpp:1955
+#: rc.cpp:1991
 msgid "Time remaining to reach destination"
 msgstr ""
 
-#. i18n: file: src/plugins/render/routing/RoutingItemWidget.ui:65
-#. i18n: ectx: property (text), widget (QLabel, timeLabel)
-#: rc.cpp:1945
-#, fuzzy
-#| msgid ""
-#| "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#| "REC-html40/strict.dtd\">\n"
-#| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#| "css\">\n"
-#| "p, li { white-space: pre-wrap; }\n"
-#| "</style></head><body style=\" font-family:'DejaVu Sans'; font-size:10pt; "
-#| "font-weight:400; font-style:normal;\">\n"
-#| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#| "weight:600;\">000,0 km/h</span></p></body></html>"
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<table style=\"-qt-table-type: root; margin-top:4px; margin-bottom:4px; "
-"margin-left:4px; margin-right:4px;\">\n"
-"<tr>\n"
-"<td style=\"border: none;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600;\">Time:</span></p></td></tr></table></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'DejaVu Sans'; font-size:10pt; "
-"font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600;\">000,0 km/e</span></p></body></html>"
-
-#. i18n: file: src/plugins/render/routing/RoutingItemWidget.ui:75
+#. i18n: file: src/plugins/render/routing/RoutingInformationWidget.ui:55
 #. i18n: ectx: property (text), widget (QLabel, remainingTimeLabel)
-#. i18n: file: src/plugins/render/routing/RoutingItemWidget.ui:127
-#. i18n: ectx: property (text), widget (QLabel, remainingDistanceLabel)
-#: rc.cpp:1958 rc.cpp:1977
-msgid "0"
+#: rc.cpp:1994
+msgid "0 Hours  0 Minutes"
 msgstr ""
 
-#. i18n: file: src/plugins/render/routing/RoutingItemWidget.ui:91
-#. i18n: ectx: property (text), widget (QLabel, timeUnitLabel)
-#: rc.cpp:1961
-msgid "Minutes"
-msgstr ""
-
-#. i18n: file: src/plugins/render/routing/RoutingItemWidget.ui:101
-#. i18n: ectx: property (toolTip), widget (QLabel, distanceLabel)
-#. i18n: file: src/plugins/render/routing/RoutingItemWidget.ui:124
-#. i18n: ectx: property (toolTip), widget (QLabel, remainingDistanceLabel)
-#: rc.cpp:1964 rc.cpp:1974
-msgid "Total Distance Remaining"
-msgstr ""
-
-#. i18n: file: src/plugins/render/routing/RoutingItemWidget.ui:114
-#. i18n: ectx: property (text), widget (QLabel, distanceLabel)
-#: rc.cpp:1967
-#, fuzzy
-#| msgid ""
-#| "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#| "REC-html40/strict.dtd\">\n"
-#| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#| "css\">\n"
-#| "p, li { white-space: pre-wrap; }\n"
-#| "</style></head><body style=\" font-family:'DejaVu Sans'; font-size:10pt; "
-#| "font-weight:400; font-style:normal;\">\n"
-#| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#| "weight:600;\">000,0 km/h</span></p></body></html>"
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600;\">Distance Remaining:</span></p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'DejaVu Sans'; font-size:10pt; "
-"font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600;\">000,0 km/e</span></p></body></html>"
-
-#. i18n: file: src/plugins/render/routing/RoutingItemWidget.ui:137
-#. i18n: ectx: property (text), widget (QLabel, distanceUnitLabel)
-#: rc.cpp:1980
-#, fuzzy
-#| msgid "Craters"
-msgid "Meters"
-msgstr "Traitoes"
-
-#. i18n: file: src/plugins/render/routing/RoutingItemWidget.ui:153
+#. i18n: file: src/plugins/render/routing/RoutingInformationWidget.ui:159
 #. i18n: ectx: property (toolTip), widget (QProgressBar, distanceCoveredProgressBar)
-#: rc.cpp:1983
-#, fuzzy
-#| msgid "&Distance:"
-msgid "Distance Covered"
-msgstr "&Distance :"
+#: rc.cpp:2000
+msgid "Distance Covered on the current instruction"
+msgstr ""
 
 #. i18n: file: src/plasmoid/worldclockConfig.ui:35
 #. i18n: ectx: property (windowTitle), widget (QWidget, worldclockConfig)
-#: rc.cpp:1986
+#: rc.cpp:2003
 msgid "Worldclock Applet Configuration"
 msgstr "Apontiaedje di l' aplikete Ôrlodje daegnrece"
 
 #. i18n: file: src/plasmoid/worldclockConfig.ui:51
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: rc.cpp:1989
+#: rc.cpp:2006
 msgid "Map Display"
 msgstr "Håynaedje del mape"
 
 #. i18n: file: src/plasmoid/worldclockConfig.ui:57
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:1992
+#: rc.cpp:2009
 msgid "Projection:"
 msgstr "Pordjeccion :"
 
 #. i18n: file: src/plasmoid/worldclockConfig.ui:68
 #. i18n: ectx: property (text), item, widget (QComboBox, projection)
-#: rc.cpp:1995
+#: rc.cpp:2012
 msgid "Equirectangular"
 msgstr "Ecwirectangulaire"
 
 #. i18n: file: src/plasmoid/worldclockConfig.ui:95
 #. i18n: ectx: property (text), widget (QRadioButton, longitudeButton)
-#: rc.cpp:2001
+#: rc.cpp:2018
 msgid "Center map on longitude:"
 msgstr "Mete li mitan del mape sol londjitude :"
 
 #. i18n: file: src/plasmoid/worldclockConfig.ui:114
 #. i18n: ectx: property (text), widget (QRadioButton, daylightButton)
-#: rc.cpp:2004
+#: rc.cpp:2021
 msgid "Center map on daylight"
 msgstr "Mete li mitan del mape sol loumire do djoû"
 
 #. i18n: file: src/plasmoid/worldclockConfig.ui:134
 #. i18n: ectx: property (text), widget (QCheckBox, showdate)
-#: rc.cpp:2007
+#: rc.cpp:2024
 msgid "Show date"
 msgstr "Mostrer l' date"
 
 #. i18n: file: src/plasmoid/worldclockConfig.ui:174
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: rc.cpp:2010
+#: rc.cpp:2027
 msgid "Time Zones"
 msgstr "Coisses d' eurêye"
 
 #. i18n: file: src/plasmoid/worldclockConfig.ui:183
 #. i18n: ectx: property (text), widget (QCheckBox, customTz)
-#: rc.cpp:2013
+#: rc.cpp:2030
 msgid "Use custom timezone selection"
 msgstr "Si siervi do tchoes del coisse d' eurêye da vosse"
 
 #. i18n: file: src/marble.kcfg:55
 #. i18n: ectx: label, entry, group (Time)
-#: rc.cpp:2016
+#: rc.cpp:2033
 msgid "The date and time of marble clock"
 msgstr ""
 
 #. i18n: file: src/marble.kcfg:58
 #. i18n: ectx: label, entry, group (Time)
-#: rc.cpp:2019
+#: rc.cpp:2036
 msgid "The speed of marble clock"
 msgstr ""
 
 #. i18n: file: src/marble.kcfg:84
 #. i18n: ectx: label, entry, group (View)
-#: rc.cpp:2022
+#: rc.cpp:2039
 msgid "The unit chosen to measure distances."
 msgstr "L' unité tchoezeye pol muzuraedje des distances."
 
 #. i18n: file: src/marble.kcfg:92
 #. i18n: ectx: label, entry, group (View)
-#: rc.cpp:2025
+#: rc.cpp:2042
 msgid "The unit chosen to measure angles."
 msgstr "L' unité tchoezeye pol muzuraedje des inglêyes."
 
 #. i18n: file: src/marble.kcfg:101
 #. i18n: ectx: label, entry, group (View)
-#: rc.cpp:2028
+#: rc.cpp:2045
 msgid "The quality at which a still map gets painted."
 msgstr "Li cwålité k' ene mape ki n' bodje nén est pondowe."
 
 #. i18n: file: src/marble.kcfg:112
 #. i18n: ectx: label, entry, group (View)
-#: rc.cpp:2031
+#: rc.cpp:2048
 msgid "The quality at which an animated map gets painted."
 msgstr "Li cwålité k' ene mape candjante est pondowe."
 
 #. i18n: file: src/marble.kcfg:123
 #. i18n: ectx: label, entry, group (View)
-#: rc.cpp:2034
+#: rc.cpp:2051
 msgid "The graphics system that is used by Qt to render the graphics."
 msgstr "Les sistinmes grafikes ki sont-st eployîs pa Qt po l' rindou grafike."
 
 #. i18n: file: src/marble.kcfg:132
 #. i18n: ectx: label, entry, group (View)
-#: rc.cpp:2037
+#: rc.cpp:2054
 msgid "The localization of the labels."
 msgstr "Li locålijhaedje des etiketes."
 
 #. i18n: file: src/marble.kcfg:141
 #. i18n: ectx: label, entry (mapFont), group (View)
-#: rc.cpp:2040
+#: rc.cpp:2057
 msgid "The general font used on the map."
 msgstr "Li mwaisse fonte eployeye sol mape."
 
 #. i18n: file: src/marble.kcfg:158
 #. i18n: ectx: label, entry, group (Navigation)
-#: rc.cpp:2043
+#: rc.cpp:2060
 msgid "The behaviour of the planet's axis on mouse dragging."
 msgstr "Li dujhance di l' acse dal planete cwand on haetche avou l' sori."
 
 #. i18n: file: src/marble.kcfg:166
 #. i18n: ectx: label, entry, group (Navigation)
-#: rc.cpp:2046
+#: rc.cpp:2063
 msgid "The location shown on application startup."
 msgstr "L' eplaeçmint mostré a l' enondaedje do programe."
 
 #. i18n: file: src/marble.kcfg:174
 #. i18n: ectx: label, entry, group (Navigation)
-#: rc.cpp:2049
+#: rc.cpp:2066
 msgid "Display animation on voyage to target."
 msgstr "Håyner ene animåcion do voyaedje viè l' såme."
 
 #. i18n: file: src/marble.kcfg:180
 #. i18n: ectx: label, entry, group (Cache)
-#: rc.cpp:2052
+#: rc.cpp:2069
 msgid "Cache for tiles reserved in the physical memory."
 msgstr "Muchete po les pîces wårdé el memwere fizike."
 
 #. i18n: file: src/marble.kcfg:186
 #. i18n: ectx: label, entry, group (Cache)
-#: rc.cpp:2055
+#: rc.cpp:2072
 msgid "Maximum space on the hard disk that can be used to store tiles."
 msgstr ""
 "Espåce macsimom sol deure plake ki pout esse eployeye po wårder des pîces."
 
 #. i18n: file: src/marble.kcfg:192
 #. i18n: ectx: label, entry (proxyUrl), group (Cache)
-#: rc.cpp:2058
+#: rc.cpp:2075
 msgid "URL for the proxy server."
 msgstr "URL pol sierveu procsi."
 
 #. i18n: file: src/marble.kcfg:196
 #. i18n: ectx: label, entry, group (Cache)
-#: rc.cpp:2061
+#: rc.cpp:2078
 msgid "Port for the proxy server."
 msgstr "Pôrt pol sierveu procsi."
 
 #. i18n: file: src/marble.kcfg:202
 #. i18n: ectx: label, entry (proxyUser), group (Cache)
-#: rc.cpp:2064
+#: rc.cpp:2081
 msgid "Username for authorization."
 msgstr "No d' uzeu po l' otorijhåcion."
 
 #. i18n: file: src/marble.kcfg:205
 #. i18n: ectx: label, entry (proxyPass), group (Cache)
-#: rc.cpp:2067
+#: rc.cpp:2084
 msgid "Password for authorization."
 msgstr "Sicret po l' otorijhåcion."
 
 #. i18n: file: src/marble.kcfg:208
 #. i18n: ectx: label, entry (proxyHttp), group (Cache)
-#: rc.cpp:2070
+#: rc.cpp:2087
 msgid "Proxy type is HTTP"
 msgstr "Li sôre di procsi est l' HTTP"
 
 #. i18n: file: src/marble.kcfg:219
 #. i18n: ectx: label, entry (proxySocks5), group (Cache)
-#: rc.cpp:2073
+#: rc.cpp:2090
 msgid "Proxy type is Socks5"
 msgstr "Li sôre di procsi est l' Socks5"
 
 #. i18n: file: src/marble.kcfg:223
 #. i18n: ectx: label, entry (proxyAuth), group (Cache)
-#: rc.cpp:2076
+#: rc.cpp:2093
 msgid "Proxy requires Authentication"
 msgstr "Li procsi dmande èn otintifiaedje"
 
 #. i18n: file: src/marble.kcfg:229
 #. i18n: ectx: label, entry (pluginNameId), group (Plugins)
-#: rc.cpp:2079
+#: rc.cpp:2096
 msgid "Name Ids of plugins."
 msgstr "Idintitiés des nos des tchôkes-divins."
 
 #. i18n: file: src/marble.kcfg:232
 #. i18n: ectx: label, entry (pluginEnabled), group (Plugins)
-#: rc.cpp:2082
+#: rc.cpp:2099
 msgid "List of toggles for enabling plugins."
 msgstr "Djivêye des tchuzes a (dis)mete po mete en alaedje les tchôkes-divins."
 
 #. i18n: file: src/marble.kcfg:235
 #. i18n: ectx: label, entry (pluginVisible), group (Plugins)
-#: rc.cpp:2085
+#: rc.cpp:2102
 msgid "List of toggles for making plugins visible."
 msgstr "Djivêye des tchuzes a (dis)mete po rinde les tchôkes-divins veyåves."
 
 #. i18n: file: src/marbleui.rc:5
 #. i18n: ectx: Menu (file)
-#: rc.cpp:2088
+#: rc.cpp:2105
 msgid "&File"
 msgstr "&Fitchî"
 
 #. i18n: file: src/marbleui.rc:14
 #. i18n: ectx: Menu (edit)
-#: rc.cpp:2091
+#: rc.cpp:2108
 msgid "&Edit"
 msgstr "&Candjî"
 
 #. i18n: file: src/marbleui.rc:18
 #. i18n: ectx: Menu (view)
-#: rc.cpp:2094
+#: rc.cpp:2111
 msgid "&View"
 msgstr "&Vey"
 
 #. i18n: file: src/marbleui.rc:28
 #. i18n: ectx: Menu (bookmarks)
-#: rc.cpp:2097
+#: rc.cpp:2114
 msgid "&Bookmarks"
 msgstr ""
 
 #. i18n: file: src/marbleui.rc:30
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:2100
+#: rc.cpp:2117
 msgid "&Settings"
 msgstr "A&pontiaedjes"
 
 #. i18n: file: src/marbleui.rc:35
 #. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:2103
+#: rc.cpp:2120
 msgid "Main Toolbar"
 msgstr "Mwaisse bår ås usteyes"
 
@@ -4883,7 +4900,7 @@ msgstr "Mwaisse bår ås usteyes"
 #. i18n: ectx: property (toolTip), widget (Marble::MarbleWidget, MarbleWidget)
 #. i18n: file: examples/example2.ui:43
 #. i18n: ectx: property (toolTip), widget (Marble::MarbleWidget, MarbleWidget)
-#: rc.cpp:2106 rc.cpp:2118
+#: rc.cpp:2123 rc.cpp:2135
 msgid "The Earth"
 msgstr "Li Daegne"
 
@@ -4891,81 +4908,126 @@ msgstr "Li Daegne"
 #. i18n: ectx: property (whatsThis), widget (Marble::MarbleWidget, MarbleWidget)
 #. i18n: file: examples/example2.ui:46
 #. i18n: ectx: property (whatsThis), widget (Marble::MarbleWidget, MarbleWidget)
-#: rc.cpp:2109 rc.cpp:2121
+#: rc.cpp:2126 rc.cpp:2138
 msgid "The Marble widget displays a virtual globe."
 msgstr "L' ahesse Marble håyene ene forveyowe bole."
 
 #. i18n: file: examples/example2.ui:33
 #. i18n: ectx: property (toolTip), widget (Marble::MarbleNavigator, MarbleNavigator)
-#: rc.cpp:2112
+#: rc.cpp:2129
 msgid "Navigation Control"
 msgstr "Controle do naiviaedje"
 
 #. i18n: file: examples/example2.ui:36
 #. i18n: ectx: property (whatsThis), widget (Marble::MarbleNavigator, MarbleNavigator)
-#: rc.cpp:2115
+#: rc.cpp:2132
 msgid "Use this control to navigate."
 msgstr "Siervoz vs di c' controle po naivyî."
 
 #. i18n: file: examples/example2.ui:57
 #. i18n: ectx: property (text), widget (QCheckBox, checkBox)
-#: rc.cpp:2124
+#: rc.cpp:2141
 msgid "Show places"
 msgstr "Mostrer les plaeces"
 
 #. i18n: file: examples/example2.ui:67
 #. i18n: ectx: property (text), widget (QCheckBox, checkBox_5)
-#: rc.cpp:2127
+#: rc.cpp:2144
 msgid "Show relief"
 msgstr "Mostrer l' relief"
 
 #. i18n: file: examples/example2.ui:77
 #. i18n: ectx: property (text), widget (QCheckBox, checkBox_3)
-#: rc.cpp:2130
+#: rc.cpp:2147
 msgid "Show scale bar"
 msgstr "Mostrer l' båre del schåle"
 
 #. i18n: file: examples/example2.ui:87
 #. i18n: ectx: property (text), widget (QCheckBox, checkBox_9)
-#: rc.cpp:2133
+#: rc.cpp:2150
 msgid "Show borders"
 msgstr "Mostrer les boirdeures"
 
 #. i18n: file: examples/example2.ui:97
 #. i18n: ectx: property (text), widget (QCheckBox, checkBox_7)
-#: rc.cpp:2136
+#: rc.cpp:2153
 msgid "Show ice / snow"
 msgstr "Mostrer l' glaece / nive"
 
 #. i18n: file: examples/example2.ui:107
 #. i18n: ectx: property (text), widget (QCheckBox, checkBox_4)
-#: rc.cpp:2139
+#: rc.cpp:2156
 msgid "Show compass"
 msgstr "Mostrer l' rôze des vints"
 
 #. i18n: file: examples/example2.ui:117
 #. i18n: ectx: property (text), widget (QCheckBox, checkBox_2)
-#: rc.cpp:2142
+#: rc.cpp:2159
 msgid "Show grid"
 msgstr "Mostrer l' grile"
 
 #. i18n: file: examples/example2.ui:127
 #. i18n: ectx: property (text), widget (QCheckBox, checkBox_8)
-#: rc.cpp:2145
+#: rc.cpp:2162
 msgid "Show rivers / lakes"
 msgstr "Moster les rivires / basses"
 
 #. i18n: file: examples/example2.ui:137
 #. i18n: ectx: property (text), widget (QCheckBox, checkBox_6)
-#: rc.cpp:2148
+#: rc.cpp:2165
 msgid "Show elevation model"
 msgstr "Mostrer l' modele d' elevåcion"
 
 #. i18n: file: examples/example2.ui:166
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:2151
+#: rc.cpp:2168
 msgid "Coordinates: "
 msgstr "Cordinêyes :"
+
+#, fuzzy
+#~| msgid ""
+#~| "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/"
+#~| "TR/REC-html40/strict.dtd\">\n"
+#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~| "css\">\n"
+#~| "p, li { white-space: pre-wrap; }\n"
+#~| "</style></head><body style=\" font-family:'DejaVu Sans'; font-size:10pt; "
+#~| "font-weight:400; font-style:normal;\">\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~| "weight:600;\">000,0 km/h</span></p></body></html>"
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600;\">Distance Remaining:</span></p></body></html>"
+#~ msgstr ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'DejaVu Sans'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600;\">000,0 km/e</span></p></body></html>"
+
+#, fuzzy
+#~| msgid "Craters"
+#~ msgid "Meters"
+#~ msgstr "Traitoes"
+
+#, fuzzy
+#~| msgid "&Distance:"
+#~ msgid "Distance Covered"
+#~ msgstr "&Distance :"
 
 #~ msgid "&Url:"
 #~ msgstr "&Url :"
@@ -5104,11 +5166,6 @@ msgstr "Cordinêyes :"
 #~ "This control panel allows you to adjust the map according to your needs."
 #~ msgstr ""
 #~ "Ci panea d' controle vos permet d' apontyî l' mape sorlon vos mezåjhes."
-
-#, fuzzy
-#~| msgid "Farm"
-#~ msgid "Form"
-#~ msgstr "Cinse"
 
 #, fuzzy
 #~| msgid ""
