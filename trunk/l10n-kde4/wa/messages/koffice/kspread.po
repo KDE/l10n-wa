@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kspread\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-22 05:49+0200\n"
+"POT-Creation-Date: 2010-08-23 05:34+0200\n"
 "PO-Revision-Date: 2010-08-10 23:39+0200\n"
 "Last-Translator: Jean Cayron et Odile Lambert <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -2756,9 +2756,13 @@ msgstr "Oister"
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #. i18n: file: dialogs/SpecialPasteWidget.ui:70
 #. i18n: ectx: property (text), widget (QRadioButton, formatButton)
+#. i18n: file: kspread.rc:227
+#. i18n: ectx: ToolBar (fontPropertyToolBar)
+#. i18n: file: kspread.rc:231
+#. i18n: ectx: ToolBar (formatToolBar)
 #. i18n: file: functions/conversion.xml:251
-#: rc.cpp:53 rc.cpp:398 xml_doc.cpp:198 dialogs/LayoutDialog.cpp:886
-#: ui/CellToolBase.cpp:183
+#: rc.cpp:53 rc.cpp:398 rc.cpp:812 rc.cpp:815 xml_doc.cpp:198
+#: dialogs/LayoutDialog.cpp:886 ui/CellToolBase.cpp:183
 msgid "Format"
 msgstr "Cogne"
 
@@ -3224,7 +3228,9 @@ msgstr ""
 
 #. i18n: file: dialogs/PositionWidget.ui:179
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox5)
-#: rc.cpp:249 commands/MergeCommand.cpp:134 commands/Undo.cpp:1878
+#. i18n: file: kspread.rc:102
+#. i18n: ectx: Menu (MergeCellMenu)
+#: rc.cpp:249 rc.cpp:773 commands/MergeCommand.cpp:134 commands/Undo.cpp:1878
 #: ui/CellToolBase.cpp:439
 msgid "Merge Cells"
 msgstr "Rimaxhî boesses"
@@ -4266,6 +4272,172 @@ msgstr "Netyî l' tchoes"
 #: rc.cpp:733
 msgid "Move selected sheet to the bottom"
 msgstr "Bodjî l' foye tchoezeye al valêye"
+
+#. i18n: file: kspread.kcfg:12
+#. i18n: ectx: label, entry, group (Editor)
+#: rc.cpp:736
+msgid "Navigate in the text by left/right arrow keys in the cell editor."
+msgstr ""
+"Naivyîz e tecse avou les tapes di fletche di hintche/droete dins l' "
+"aspougneu des boesses."
+
+#. i18n: file: kspread.kcfg:14
+#. i18n: ectx: whatsthis, entry, group (Editor)
+#: rc.cpp:739
+msgid ""
+"If true, you can navigate by left/right arrows in the cell editor.\n"
+"              Otherwise, the editing mode will be left."
+msgstr ""
+"Si vraiy, vos ploz naivyî avou les tapes di fletche di hintche/droete dins "
+"l' aspougneu des boesses.r.\n"
+"              Ôtrumint, li môde aspougnaedje serè leyî."
+
+#. i18n: file: kspread.rc:5
+#. i18n: ectx: Menu (file)
+#: rc.cpp:743
+msgid "&File"
+msgstr "&Fitchî"
+
+#. i18n: file: kspread.rc:10
+#. i18n: ectx: Menu (Edit)
+#. i18n: file: kspread_readonly.rc:3
+#. i18n: ectx: Menu (edit)
+#: rc.cpp:746 rc.cpp:821
+msgid "&Edit"
+msgstr "&Candjî"
+
+#. i18n: file: kspread.rc:19
+#. i18n: ectx: Menu (Fill)
+#: rc.cpp:749
+msgid "Fi&ll"
+msgstr "&Rimpli"
+
+#. i18n: file: kspread.rc:32
+#. i18n: ectx: Menu (Clear)
+#: rc.cpp:752
+msgid "Clear"
+msgstr "Netyî"
+
+#. i18n: file: kspread.rc:41
+#. i18n: ectx: Menu (Delete)
+#: rc.cpp:755 commands/DeleteCommand.cpp:36 commands/Undo.cpp:1292
+#: part/View.cpp:504
+msgid "Delete"
+msgstr "Disfacer"
+
+#. i18n: file: kspread.rc:51
+#. i18n: ectx: Menu (View)
+#. i18n: file: kspread_readonly.rc:8
+#. i18n: ectx: Menu (view)
+#: rc.cpp:758 rc.cpp:824
+msgid "&View"
+msgstr "&Vey"
+
+#. i18n: file: kspread.rc:63
+#. i18n: ectx: Menu (go)
+#: rc.cpp:761
+msgid "&Go"
+msgstr ""
+
+#. i18n: file: kspread.rc:74
+#. i18n: ectx: Menu (Insert)
+#: rc.cpp:764 ui/CharSelectDia.cpp:56 ui/CharSelectDia.cpp:73
+msgid "&Insert"
+msgstr "&Sititchî"
+
+#. i18n: file: kspread.rc:87
+#. i18n: ectx: Menu (ExternalData)
+#: rc.cpp:767
+msgid "&External Data"
+msgstr "Di&foûtrinnès dnêyes"
+
+#. i18n: file: kspread.rc:94
+#. i18n: ectx: Menu (Format)
+#: rc.cpp:770
+msgid "F&ormat"
+msgstr "C&ogne"
+
+#. i18n: file: kspread.rc:110
+#. i18n: ectx: Menu (Row)
+#: rc.cpp:776
+msgid "&Row"
+msgstr "&Roye"
+
+#. i18n: file: kspread.rc:116
+#. i18n: ectx: Menu (Column)
+#: rc.cpp:779
+msgid "&Column"
+msgstr "&Colone"
+
+#. i18n: file: kspread.rc:122
+#. i18n: ectx: Menu (Sheet)
+#: rc.cpp:782
+msgid "&Sheet"
+msgstr "&Foye"
+
+#. i18n: file: kspread.rc:130
+#. i18n: ectx: Menu (PrintRange)
+#: rc.cpp:785
+msgid "&Print Range"
+msgstr "Fôrtchete a-z &imprimer"
+
+#. i18n: file: kspread.rc:135
+#. i18n: ectx: Menu
+#: rc.cpp:788
+#, fuzzy
+#| msgid "Page Borders"
+msgid "Manual Page Breaks"
+msgstr "Boirds des pådjes"
+
+#. i18n: file: kspread.rc:145
+#. i18n: ectx: Menu (Data)
+#: rc.cpp:791
+msgid "&Data"
+msgstr "&Dinêyes"
+
+#. i18n: file: kspread.rc:147
+#. i18n: ectx: Menu (Filter)
+#: rc.cpp:794
+msgid "Filter"
+msgstr "Passete"
+
+#. i18n: file: kspread.rc:162
+#. i18n: ectx: Menu (tools)
+#: rc.cpp:797
+msgid "&Tools"
+msgstr "Us&teyes"
+
+#. i18n: file: kspread.rc:175
+#. i18n: ectx: Menu (settings)
+#: rc.cpp:800
+msgid "&Settings"
+msgstr "Tchu&zes"
+
+#. i18n: file: kspread.rc:205
+#. i18n: ectx: ToolBar (editToolBar)
+#: rc.cpp:803
+msgid "Edit"
+msgstr "Candjî"
+
+#. i18n: file: kspread.rc:215
+#. i18n: ectx: ToolBar (navigationToolBar)
+#: rc.cpp:806
+msgid "Navigation"
+msgstr "Naiviaedje"
+
+#. i18n: file: kspread.rc:221
+#. i18n: ectx: Menu
+#: rc.cpp:809
+#, fuzzy
+#| msgid "Active Sheet"
+msgid "Activate"
+msgstr "Ovrante foye"
+
+#. i18n: file: kspread.rc:255
+#. i18n: ectx: ToolBar (colorAndBorderToolBar)
+#: rc.cpp:818
+msgid "Color/Border"
+msgstr "Coleur/Boirdeure"
 
 #: Sheet.cpp:933
 msgid "Dependency"
@@ -15884,10 +16056,6 @@ msgstr ""
 msgid "Remove Cells"
 msgstr ""
 
-#: commands/DeleteCommand.cpp:36 commands/Undo.cpp:1292 part/View.cpp:504
-msgid "Delete"
-msgstr "Disfacer"
-
 #: commands/IndentationCommand.cpp:38 commands/IndentationCommand.cpp:64
 #, fuzzy
 msgid "Increase Indentation"
@@ -19335,10 +19503,6 @@ msgstr "Abandner les candjmints"
 msgid "Select Character"
 msgstr "Caract&ere especiå..."
 
-#: ui/CharSelectDia.cpp:56 ui/CharSelectDia.cpp:73
-msgid "&Insert"
-msgstr "&Sititchî"
-
 #: ui/CharSelectDia.cpp:57 ui/CharSelectDia.cpp:74
 #, fuzzy
 #| msgid "Unmerge the selected region"
@@ -19377,83 +19541,6 @@ msgstr "Tchoezi ene seule boesse"
 #: ui/RegionSelector.cpp:161
 msgid "Select Multiple Cells"
 msgstr "Tchoezi sacwantès boess"
-
-#~ msgid "Navigate in the text by left/right arrow keys in the cell editor."
-#~ msgstr ""
-#~ "Naivyîz e tecse avou les tapes di fletche di hintche/droete dins l' "
-#~ "aspougneu des boesses."
-
-#~ msgid ""
-#~ "If true, you can navigate by left/right arrows in the cell editor.\n"
-#~ "              Otherwise, the editing mode will be left."
-#~ msgstr ""
-#~ "Si vraiy, vos ploz naivyî avou les tapes di fletche di hintche/droete "
-#~ "dins l' aspougneu des boesses.r.\n"
-#~ "              Ôtrumint, li môde aspougnaedje serè leyî."
-
-#~ msgid "&File"
-#~ msgstr "&Fitchî"
-
-#~ msgid "&Edit"
-#~ msgstr "&Candjî"
-
-#~ msgid "Fi&ll"
-#~ msgstr "&Rimpli"
-
-#~ msgid "Clear"
-#~ msgstr "Netyî"
-
-#~ msgid "&View"
-#~ msgstr "&Vey"
-
-#~ msgid "&External Data"
-#~ msgstr "Di&foûtrinnès dnêyes"
-
-#~ msgid "F&ormat"
-#~ msgstr "C&ogne"
-
-#~ msgid "&Row"
-#~ msgstr "&Roye"
-
-#~ msgid "&Column"
-#~ msgstr "&Colone"
-
-#~ msgid "&Sheet"
-#~ msgstr "&Foye"
-
-#~ msgid "&Print Range"
-#~ msgstr "Fôrtchete a-z &imprimer"
-
-#, fuzzy
-#~| msgid "Page Borders"
-#~ msgid "Manual Page Breaks"
-#~ msgstr "Boirds des pådjes"
-
-#~ msgid "&Data"
-#~ msgstr "&Dinêyes"
-
-#~ msgid "Filter"
-#~ msgstr "Passete"
-
-#~ msgid "&Tools"
-#~ msgstr "Us&teyes"
-
-#~ msgid "&Settings"
-#~ msgstr "Tchu&zes"
-
-#~ msgid "Edit"
-#~ msgstr "Candjî"
-
-#~ msgid "Navigation"
-#~ msgstr "Naiviaedje"
-
-#, fuzzy
-#~| msgid "Active Sheet"
-#~ msgid "Activate"
-#~ msgstr "Ovrante foye"
-
-#~ msgid "Color/Border"
-#~ msgstr "Coleur/Boirdeure"
 
 #~ msgid "Subtotal"
 #~ msgstr "Dizo-totå"
