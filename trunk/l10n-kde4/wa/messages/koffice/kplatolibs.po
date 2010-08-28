@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-01 05:12+0200\n"
+"POT-Creation-Date: 2010-08-28 05:39+0200\n"
 "PO-Revision-Date: 2009-08-20 10:18+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -357,13 +357,13 @@ msgid "Receive"
 msgstr "Oister"
 
 #: kernel/kptcalendar.h:259 kernel/kptcalendar.h:270
-#: models/kptcalendarmodel.cpp:1006 ui/kptcalendareditor.cpp:205
+#: models/kptcalendarmodel.cpp:1012 ui/kptcalendareditor.cpp:205
 #: ui/kptcalendareditor.cpp:643
 msgid "Undefined"
 msgstr "Nén defini"
 
 #: kernel/kptcalendar.h:261 kernel/kptcalendar.h:270
-#: models/kptcalendarmodel.cpp:1009 ui/kptcalendareditor.cpp:203
+#: models/kptcalendarmodel.cpp:1015 ui/kptcalendareditor.cpp:203
 #: ui/kptcalendareditor.cpp:641
 msgid "Non-working"
 msgstr "Nén ovråve"
@@ -646,7 +646,7 @@ msgstr "On n' sait ataker l' pordjet pus tård kel date/eure: %1"
 msgid "Calculation took: %1"
 msgstr ""
 
-#: kernel/kptproject.cpp:2429
+#: kernel/kptproject.cpp:2432
 #, fuzzy
 msgid "Plan"
 msgstr "Parint"
@@ -1622,7 +1622,7 @@ msgstr "Candjî mwaisse pordjet"
 msgid "Resources"
 msgstr "&Rissourses"
 
-#: models/kptnodeitemmodel.cpp:2438 models/kptresourcemodel.cpp:1244
+#: models/kptnodeitemmodel.cpp:2438 models/kptresourcemodel.cpp:1262
 #, fuzzy
 msgid "Add resource"
 msgstr "Radjouter rissource..."
@@ -1780,38 +1780,44 @@ msgstr "Coisse d' eurêye"
 msgid "Re-parent calendar"
 msgstr "Radjouter calindrî"
 
-#: models/kptcalendarmodel.cpp:561
+#: models/kptcalendarmodel.cpp:511
+#, fuzzy
+#| msgid "Add Calendar"
+msgid "Move calendar"
+msgstr "Radjouter calindrî"
+
+#: models/kptcalendarmodel.cpp:567
 #, fuzzy
 #| msgid "Add Calendar"
 msgid "Add calendar"
 msgstr "Radjouter calindrî"
 
-#: models/kptcalendarmodel.cpp:584
+#: models/kptcalendarmodel.cpp:590
 #, fuzzy
 msgid "Delete calendar"
 msgstr "Disfacer calindrî di tchoezi"
 
-#: models/kptcalendarmodel.cpp:752
+#: models/kptcalendarmodel.cpp:758
 msgctxt "Undefined"
 msgid "U"
 msgstr ""
 
-#: models/kptcalendarmodel.cpp:753 models/kptcalendarmodel.cpp:968
+#: models/kptcalendarmodel.cpp:759 models/kptcalendarmodel.cpp:974
 msgctxt "NonWorking"
 msgid "NW"
 msgstr ""
 
-#: models/kptcalendarmodel.cpp:754
+#: models/kptcalendarmodel.cpp:760
 msgctxt "Working"
 msgid "W"
 msgstr ""
 
-#: models/kptcalendarmodel.cpp:783
+#: models/kptcalendarmodel.cpp:789
 #, fuzzy
 msgid "Modify calendar state"
 msgstr "Candjî calindrî"
 
-#: models/kptcalendarmodel.cpp:804 models/kptcalendarmodel.cpp:1014
+#: models/kptcalendarmodel.cpp:810 models/kptcalendarmodel.cpp:1020
 #, kde-format
 msgctxt "1=time 2=The number of hours of work duration (non integer)"
 msgid "%1, %2 hours"
@@ -2464,14 +2470,21 @@ msgstr ""
 msgid "Modify resource account"
 msgstr "Candjî loyaedje"
 
-#: models/kptresourcemodel.cpp:1153
+#: models/kptresourcemodel.cpp:1150
 #, fuzzy, kde-format
 msgid "Move resource"
 msgid_plural "Move %1 resources"
 msgstr[0] "Candjî rissource"
 msgstr[1] "Candjî rissource"
 
-#: models/kptresourcemodel.cpp:1170
+#: models/kptresourcemodel.cpp:1169
+#, fuzzy, kde-format
+msgid "Copy resource"
+msgid_plural "Copy %1 resources"
+msgstr[0] "Candjî rissource"
+msgstr[1] "Candjî rissource"
+
+#: models/kptresourcemodel.cpp:1188
 #: models/kptresourceappointmentsmodel.cpp:1115
 #, fuzzy, kde-format
 msgid "Add resource from address book"
@@ -2479,7 +2492,7 @@ msgid_plural "Add %1 resources from address book"
 msgstr[0] "Sititchî ene djin di vosse calpin d' adresses"
 msgstr[1] "Sititchî ene djin di vosse calpin d' adresses"
 
-#: models/kptresourcemodel.cpp:1233
+#: models/kptresourcemodel.cpp:1251
 #, fuzzy
 msgid "Add resource group"
 msgstr "Radjouter groupe di rsource..."
@@ -3305,16 +3318,16 @@ msgstr "Radjouter calindrî efant"
 msgid "Delete Selected Calendar"
 msgstr "Disfacer calindrî di tchoezi"
 
-#: ui/kptcalendareditor.cpp:784 ui/kptcalendareditor.cpp:818
+#: ui/kptcalendareditor.cpp:786 ui/kptcalendareditor.cpp:820
 msgid "Modify Calendar"
 msgstr "Candjî calindrî"
 
-#: ui/kptcalendareditor.cpp:793 ui/kptcalendareditor.cpp:799
+#: ui/kptcalendareditor.cpp:795 ui/kptcalendareditor.cpp:801
 #, kde-format
 msgid "%1: Set to Non-Working"
 msgstr "%1 Defini so nén ovråve"
 
-#: ui/kptcalendareditor.cpp:825
+#: ui/kptcalendareditor.cpp:827
 #, kde-format
 msgid "Set %1 to Undefined"
 msgstr "Defini %1 so nén defini"
