@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-09-11 06:03+0200\n"
+"POT-Creation-Date: 2010-09-24 06:05+0200\n"
 "PO-Revision-Date: 2009-08-20 10:18+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -137,7 +137,7 @@ msgstr "Dji n' a savou fé coresponde l' efoirt. Djovleu: %1, dj' a yeu: %2"
 msgid "Resource %1 available from %2 to %3"
 msgstr "Rissource %1 disponibe di %2 a %3"
 
-#: kernel/kptaccount.cpp:812 models/kptresourcemodel.cpp:427
+#: kernel/kptaccount.cpp:812 models/kptresourcemodel.cpp:435
 msgid "Account"
 msgstr "Conte"
 
@@ -338,8 +338,8 @@ msgstr ""
 #: models/kptnodeitemmodel.cpp:643 models/kptnodeitemmodel.cpp:649
 #: models/kptnodeitemmodel.cpp:659 models/kpttreecombobox.cpp:124
 #: models/kptresourcemodel.cpp:189 models/kptresourcemodel.cpp:221
-#: models/kptresourcemodel.cpp:334 models/kptresourcemodel.cpp:338
-#: models/kptresourcemodel.cpp:347 models/kptschedulemodel.cpp:458
+#: models/kptresourcemodel.cpp:342 models/kptresourcemodel.cpp:346
+#: models/kptresourcemodel.cpp:355 models/kptschedulemodel.cpp:458
 #: models/kptschedulemodel.cpp:460 models/kptresourceallocationmodel.cpp:743
 #: ui/kpttaskcostpanel.cpp:49 ui/kptpertresult.cpp:138
 #: ui/kptpertresult.cpp:489 ui/kpttaskgeneralpanel.cpp:70
@@ -1686,7 +1686,7 @@ msgstr "Candjî mwaisse pordjet"
 msgid "Resources"
 msgstr "&Rissourses"
 
-#: models/kptnodeitemmodel.cpp:2504 models/kptresourcemodel.cpp:1263
+#: models/kptnodeitemmodel.cpp:2504 models/kptresourcemodel.cpp:1271
 #, fuzzy
 msgid "Add resource"
 msgstr "Radjouter rissource..."
@@ -1826,7 +1826,7 @@ msgstr "Candjî calindrî"
 #. i18n: file: ui/kptresourceassignmentview.ui:27
 #. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
 #: models/kptcalendarmodel.cpp:419 models/kptaccountsmodel.cpp:122
-#: models/kptaccountsmodel.cpp:1026 models/kptresourcemodel.cpp:417
+#: models/kptaccountsmodel.cpp:1026 models/kptresourcemodel.cpp:425
 #: models/kptresourceappointmentsmodel.cpp:908
 #: models/kptresourceappointmentsmodel.cpp:923
 #: models/kptresourceappointmentsmodel.cpp:1484
@@ -1894,7 +1894,7 @@ msgstr "Efant"
 #. i18n: file: ui/kptresourceassignmentview.ui:32
 #. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
 #: models/kptrelationmodel.cpp:148 models/kptdocumentmodel.cpp:172
-#: models/kptresourcemodel.cpp:418
+#: models/kptresourcemodel.cpp:426
 #: models/kptresourceappointmentsmodel.cpp:1485
 #: models/kptresourceallocationmodel.cpp:333 rc.cpp:749
 msgid "Type"
@@ -2649,88 +2649,104 @@ msgctxt "@info:tooltip 1=calendar name"
 msgid "Using default calendar: %1"
 msgstr "Disfacer les contes di tchoezis"
 
-#: models/kptresourcemodel.cpp:267
+#: models/kptresourcemodel.cpp:268
 #, fuzzy, kde-format
+msgctxt "infor:tooltip"
 msgid "Available from: %1"
 msgstr "Arinnåve:"
 
-#: models/kptresourcemodel.cpp:285
+#: models/kptresourcemodel.cpp:270
 #, fuzzy, kde-format
+#| msgid "Can start project later than time: %1"
+msgctxt "infor:tooltip"
+msgid "Available from project target start time: %1"
+msgstr "On n' sait ataker l' pordjet pus tård kel date/eure: %1"
+
+#: models/kptresourcemodel.cpp:290
+#, fuzzy, kde-format
+msgctxt "infor:tooltip"
 msgid "Available until: %1"
 msgstr "Arinnåve:"
 
-#: models/kptresourcemodel.cpp:303
+#: models/kptresourcemodel.cpp:292
+#, fuzzy, kde-format
+#| msgid "Must start project early in order to finish in time: %1"
+msgctxt "infor:tooltip"
+msgid "Available from project target finish time: %1"
+msgstr "I fåt ataker l' pordjet timpe po fini a tinzayeure: %1"
+
+#: models/kptresourcemodel.cpp:311
 #, kde-format
 msgid "Cost per hour, normal time: %1"
 msgstr ""
 
-#: models/kptresourcemodel.cpp:321
+#: models/kptresourcemodel.cpp:329
 #, kde-format
 msgid "Cost per hour, overtime: %1"
 msgstr ""
 
-#: models/kptresourcemodel.cpp:338
+#: models/kptresourcemodel.cpp:346
 #, fuzzy, kde-format
 #| msgid "Account"
 msgid "Account: %1"
 msgstr "Conte"
 
-#: models/kptresourcemodel.cpp:419
+#: models/kptresourcemodel.cpp:427
 #, fuzzy
 msgid "Initials"
 msgstr "Iniciåles:"
 
-#: models/kptresourcemodel.cpp:420
+#: models/kptresourcemodel.cpp:428
 msgid "Email"
 msgstr "Emile"
 
-#: models/kptresourcemodel.cpp:421
+#: models/kptresourcemodel.cpp:429
 #, fuzzy
 msgid "Calendar"
 msgstr "Radjouter calindrî"
 
-#: models/kptresourcemodel.cpp:422
+#: models/kptresourcemodel.cpp:430
 msgid "Limit (%)"
 msgstr "Limite (%)"
 
-#: models/kptresourcemodel.cpp:423
+#: models/kptresourcemodel.cpp:431
 #, fuzzy
 msgid "Available From"
 msgstr "Arinnåve:"
 
-#: models/kptresourcemodel.cpp:424
+#: models/kptresourcemodel.cpp:432
 #, fuzzy
 msgid "Available Until"
 msgstr "Arinnåve:"
 
-#: models/kptresourcemodel.cpp:425
+#: models/kptresourcemodel.cpp:433
 msgid "Normal Rate"
 msgstr ""
 
-#: models/kptresourcemodel.cpp:426
+#: models/kptresourcemodel.cpp:434
 msgid "Overtime Rate"
 msgstr ""
 
-#: models/kptresourcemodel.cpp:923
+#: models/kptresourcemodel.cpp:931
 #, fuzzy
 msgid "Modify resource account"
 msgstr "Candjî loyaedje"
 
-#: models/kptresourcemodel.cpp:1151
+#: models/kptresourcemodel.cpp:1159
 #, fuzzy, kde-format
 msgid "Move resource"
 msgid_plural "Move %1 resources"
 msgstr[0] "Candjî rissource"
 msgstr[1] "Candjî rissource"
 
-#: models/kptresourcemodel.cpp:1170
+#: models/kptresourcemodel.cpp:1178
 #, fuzzy, kde-format
 msgid "Copy resource"
 msgid_plural "Copy %1 resources"
 msgstr[0] "Candjî rissource"
 msgstr[1] "Candjî rissource"
 
-#: models/kptresourcemodel.cpp:1189
+#: models/kptresourcemodel.cpp:1197
 #: models/kptresourceappointmentsmodel.cpp:1115
 #, fuzzy, kde-format
 msgid "Add resource from address book"
@@ -2738,7 +2754,7 @@ msgid_plural "Add %1 resources from address book"
 msgstr[0] "Sititchî ene djin di vosse calpin d' adresses"
 msgstr[1] "Sititchî ene djin di vosse calpin d' adresses"
 
-#: models/kptresourcemodel.cpp:1252
+#: models/kptresourcemodel.cpp:1260
 #, fuzzy
 msgid "Add resource group"
 msgstr "Radjouter groupe di rsource..."
