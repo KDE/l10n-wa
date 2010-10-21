@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-10-20 06:15+0200\n"
+"POT-Creation-Date: 2010-10-21 06:22+0200\n"
 "PO-Revision-Date: 2010-09-24 19:09+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -1517,6 +1517,16 @@ msgstr "&Cawêye"
 msgid "Edit Track Details"
 msgstr "Candjî detays do boket"
 
+#: context/applets/currenttrack/CurrentTrack.h:47
+#: core-impl/collections/mtpcollection/handler/MtpHandler.cpp:417
+msgid "Unknown Artist"
+msgstr "Årtisse nén cnoxhou"
+
+#: context/applets/currenttrack/CurrentTrack.h:48
+#: core-impl/collections/mtpcollection/handler/MtpHandler.cpp:427
+msgid "Unknown Album"
+msgstr "Albom nén cnoxhou"
+
 #: context/applets/currenttrack/CurrentTrack.cpp:86
 msgctxt "What artist is this track by"
 msgid "By"
@@ -1537,40 +1547,30 @@ msgid "No track playing"
 msgstr "Nou boket di djouwé"
 
 #: context/applets/currenttrack/CurrentTrack.cpp:123
-#: context/applets/currenttrack/CurrentTrack.cpp:556
+#: context/applets/currenttrack/CurrentTrack.cpp:551
 msgid "Play count"
 msgstr "Côps djouwés"
 
 #: context/applets/currenttrack/CurrentTrack.cpp:124
-#: context/applets/currenttrack/CurrentTrack.cpp:557
+#: context/applets/currenttrack/CurrentTrack.cpp:552
 #: playlist/PlaylistModel.cpp:821 widgets/SmartPlaylistEditor.cpp:185
-#: widgets/MetaQueryWidget.cpp:231 TrayIcon.cpp:118
+#: widgets/MetaQueryWidget.cpp:231 TrayIcon.cpp:120
 msgid "Score"
 msgstr "Ponts"
 
 #: context/applets/currenttrack/CurrentTrack.cpp:125
-#: context/applets/currenttrack/CurrentTrack.cpp:558
+#: context/applets/currenttrack/CurrentTrack.cpp:553
 #: widgets/MetaQueryWidget.cpp:234
 msgid "Last Played"
 msgstr "Dierin djouwé"
 
 #. i18n: file: context/applets/currenttrack/currentTrackSettings.ui:26
 #. i18n: ectx: property (windowTitle), widget (QWidget, currentTrackSettings)
-#: context/applets/currenttrack/CurrentTrack.cpp:697 rc.cpp:283
+#: context/applets/currenttrack/CurrentTrack.cpp:692 rc.cpp:283
 #, fuzzy
 #| msgid "Love Current Track"
 msgid "Current Track Settings"
 msgstr "Schoûte voltî l' boket do moumint"
-
-#: context/applets/currenttrack/CurrentTrack.h:47
-#: core-impl/collections/mtpcollection/handler/MtpHandler.cpp:417
-msgid "Unknown Artist"
-msgstr "Årtisse nén cnoxhou"
-
-#: context/applets/currenttrack/CurrentTrack.h:48
-#: core-impl/collections/mtpcollection/handler/MtpHandler.cpp:427
-msgid "Unknown Album"
-msgstr "Albom nén cnoxhou"
 
 #: context/applets/labels/LabelGraphicsItem.cpp:43
 #, fuzzy
@@ -2455,21 +2455,21 @@ msgstr "Berwetaedje: %1"
 msgid "Hide menu"
 msgstr "Catchî dressêye"
 
-#: context/widgets/TrackWidget.cpp:39
-msgctxt "Score of a track"
-msgid "Score:"
-msgstr "Ponts:"
-
-#: context/widgets/TrackWidget.cpp:150
-#, kde-format
-msgid "%1 - %2 (%3)"
-msgstr "%1 - %2 (%3)"
-
 #: context/widgets/appletexplorer/AppletItemModel.cpp:93
 #, fuzzy
 #| msgid "Center"
 msgid "Containments"
 msgstr "Mitan"
+
+#: context/widgets/TrackWidget.cpp:39
+msgctxt "Score of a track"
+msgid "Score:"
+msgstr "Ponts:"
+
+#: context/widgets/TrackWidget.cpp:162
+#, kde-format
+msgid "%1 - %2 (%3)"
+msgstr "%1 - %2 (%3)"
 
 #: context/ContextDock.cpp:28
 #, fuzzy
@@ -6105,7 +6105,7 @@ msgstr "Compôzeus"
 
 #: playlist/ProgressiveSearchWidget.cpp:112 playlist/PlaylistModel.cpp:822
 #: widgets/SmartPlaylistEditor.cpp:185 widgets/MetaQueryWidget.cpp:232
-#: TrayIcon.cpp:136
+#: TrayIcon.cpp:138
 msgid "Rating"
 msgstr "Préjhaedje"
 
@@ -6782,7 +6782,7 @@ msgid "Sample Rate"
 msgstr "Frecwince di sampling"
 
 #: playlist/PlaylistModel.cpp:823 widgets/MetaQueryWidget.cpp:235
-#: TrayIcon.cpp:142
+#: TrayIcon.cpp:144
 msgid "Play Count"
 msgstr "Contaedje des djouwaedjes"
 
@@ -7913,7 +7913,7 @@ msgid "User"
 msgstr "Uzeu"
 
 #: services/lastfm/LastFmService.cpp:571
-#: services/lastfm/ScrobblerAdapter.cpp:220
+#: services/lastfm/ScrobblerAdapter.cpp:226
 #, kde-format
 msgctxt "As in, lastfm"
 msgid "Loved Track: %1"
@@ -8546,7 +8546,7 @@ msgstr "Tapez des mots metous a pårt avou ds espåces po cweri."
 msgid "Edit filter"
 msgstr "Candjî passete"
 
-#: widgets/SliderWidget.cpp:243 TrayIcon.cpp:113
+#: widgets/SliderWidget.cpp:243 TrayIcon.cpp:115
 msgid "Volume"
 msgstr "Volume"
 
@@ -8811,7 +8811,7 @@ msgstr "Årtisse « %1 »"
 msgid "empty"
 msgstr "<vude>"
 
-#: widgets/VolumeDial.cpp:301 widgets/VolumeDial.cpp:340 TrayIcon.cpp:107
+#: widgets/VolumeDial.cpp:301 widgets/VolumeDial.cpp:340 TrayIcon.cpp:109
 msgid "Muted"
 msgstr "Moya"
 
@@ -9032,10 +9032,6 @@ msgstr "Boket nén cnoxhou"
 msgctxt "track from source"
 msgid "from <b>%1</b>"
 msgstr " so <b>%1</b>"
-
-#: TrayIcon.cpp:146
-msgid "Last played"
-msgstr "Dierin djouwé"
 
 #: MainWindow.cpp:282
 msgid "Local Music"
@@ -9484,6 +9480,10 @@ msgstr ""
 #: App.cpp:847
 msgid "Moving files to trash"
 msgstr "Tapaedje di fitchîs å batch"
+
+#: TrayIcon.cpp:148
+msgid "Last played"
+msgstr "Dierin djouwé"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
