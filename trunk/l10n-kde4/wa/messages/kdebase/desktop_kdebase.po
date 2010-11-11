@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: desktop_kdebase\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-11-10 05:44+0000\n"
+"POT-Creation-Date: 2010-11-11 05:58+0000\n"
 "PO-Revision-Date: 2010-11-06 09:36+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -1670,6 +1670,11 @@ msgctxt "Name"
 msgid "Images (GIF, PNG, BMP, ...)"
 msgstr "Imådjes (GIF, PNG, BMP...)"
 
+#: runtime/kioslave/thumbnail/jpegrotatedthumbnail.desktop:3
+msgctxt "Name"
+msgid "JPEG Images (Rotated Automatically)"
+msgstr ""
+
 #: runtime/kioslave/thumbnail/jpegthumbnail.desktop:3
 msgctxt "Name"
 msgid "JPEG Images"
@@ -1731,19 +1736,46 @@ msgid "Hardware notifications"
 msgstr "Notifiaedjes di l' éndjolreye"
 
 #: runtime/knotify/hardwarenotifications.notifyrc:59
+#, fuzzy
+#| msgctxt "Comment"
+#| msgid "Notifications triggered by solid"
 msgctxt "Comment"
-msgid "Notifications triggered by solid"
+msgid "Notifications triggered by hardware devices"
 msgstr "Notifiaedjes eclitchîs pa solid"
 
-#: runtime/knotify/hardwarenotifications.notifyrc:113
+#: runtime/knotify/hardwarenotifications.notifyrc:114
+#: workspace/plasma/generic/applets/devicenotifier/plasma-applet-devicenotifier.desktop:2
+#, fuzzy
+#| msgctxt "Name"
+#| msgid "New Device Notifier"
+msgctxt "Name"
+msgid "Device Notifier"
+msgstr "Notifiaedje di novea éndjin"
+
+#: runtime/knotify/hardwarenotifications.notifyrc:115
+msgctxt "Comment"
+msgid "The Plasma device notifier is present"
+msgstr ""
+
+#: runtime/knotify/hardwarenotifications.notifyrc:119
 msgctxt "Name"
 msgid "Mount or unmount error"
 msgstr "Aroke di montaedje ou d' dismontaedje"
 
-#: runtime/knotify/hardwarenotifications.notifyrc:167
+#: runtime/knotify/hardwarenotifications.notifyrc:173
 msgctxt "Comment"
 msgid "There has been a problem mounting or unmounting a device"
 msgstr "Åk n' a nén stî come dji montéve ou dismontéve èn éndjin"
+
+#: runtime/knotify/hardwarenotifications.notifyrc:233
+msgctxt "Name"
+msgid "The device can be safely removed"
+msgstr ""
+
+#: runtime/knotify/hardwarenotifications.notifyrc:234
+msgctxt "Comment"
+msgid "The device which has been just unmounted is now safe to remove."
+msgstr ""
 
 #: runtime/knotify/kde.notifyrc:3
 msgctxt "Comment"
@@ -1801,7 +1833,7 @@ msgid "There was a serious error causing the program to exit"
 msgstr "Åk n' a vormint nén stî k' il a falou kel programe mousse foû."
 
 #: runtime/knotify/kde.notifyrc:866
-#: workspace/powerdevil/powerdevil.notifyrc:165
+#: workspace/powerdevil/powerdevil.notifyrc:177
 msgctxt "Name"
 msgid "Notification"
 msgstr "Notifiaedje"
@@ -1813,7 +1845,7 @@ msgstr "Ene sacwè di speciåle s' a passé dins l' programe"
 
 #: runtime/knotify/kde.notifyrc:1031
 #: workspace/freespacenotifier/freespacenotifier.notifyrc:106
-#: workspace/powerdevil/powerdevil.notifyrc:10
+#: workspace/powerdevil/powerdevil.notifyrc:22
 msgctxt "Name"
 msgid "Warning"
 msgstr "Adviertixhmint"
@@ -6402,7 +6434,7 @@ msgid "Low Disk Space"
 msgstr ""
 
 #: workspace/freespacenotifier/freespacenotifier.notifyrc:190
-#: workspace/powerdevil/powerdevil.notifyrc:94
+#: workspace/powerdevil/powerdevil.notifyrc:106
 msgctxt "Comment"
 msgid "Used for warning notifications"
 msgstr "Eployî po des notifiaedjes d' adviertixhmint"
@@ -9132,7 +9164,7 @@ msgstr "Prezint purnea"
 
 #: workspace/kwin/effects/resize/resize.desktop:64
 msgctxt "Comment"
-msgid "Effect to outline geometry while resizing a window"
+msgid "Resizes windows with a fast texture scale instead of updating contents"
 msgstr ""
 
 #: workspace/kwin/effects/scalein/scalein.desktop:2
@@ -9477,6 +9509,20 @@ msgstr "Transparince"
 #: workspace/kwin/effects/translucency/translucency.desktop:83
 msgctxt "Comment"
 msgid "Make windows translucent under different conditions"
+msgstr ""
+
+#: workspace/kwin/effects/windowgeometry/windowgeometry_config.desktop:9
+#: workspace/kwin/effects/windowgeometry/windowgeometry.desktop:3
+#, fuzzy
+#| msgctxt "Name"
+#| msgid "Window Move Start"
+msgctxt "Name"
+msgid "WindowGeometry"
+msgstr "Cominçmint do movmint do purnea"
+
+#: workspace/kwin/effects/windowgeometry/windowgeometry.desktop:4
+msgctxt "Comment"
+msgid "Display window geometries on move/resize"
 msgstr ""
 
 #: workspace/kwin/effects/wobblywindows/wobblywindows_config.desktop:9
@@ -10214,16 +10260,6 @@ msgctxt "Name"
 msgid "Detailed Memory Information"
 msgstr "Infôrmåcion sol memwere"
 
-#: workspace/libs/solid/control/backends/fakebluetooth/solid_fakebluetooth.desktop:7
-msgctxt "Name"
-msgid "Fake Bluetooth"
-msgstr "Fås Bluetooth"
-
-#: workspace/libs/solid/control/backends/fakebluetooth/solid_fakebluetooth.desktop:85
-msgctxt "Comment"
-msgid "Fake Bluetooth Management"
-msgstr "Manaedmint di Fås Bluetooth"
-
 #: workspace/libs/solid/control/backends/fakenet/solid_fakenet.desktop:7
 msgctxt "Name"
 msgid "Fake Net"
@@ -10501,14 +10537,6 @@ msgstr "Canada"
 msgctxt "Comment"
 msgid "View and pick dates from the calendar"
 msgstr ""
-
-#: workspace/plasma/generic/applets/devicenotifier/plasma-applet-devicenotifier.desktop:2
-#, fuzzy
-#| msgctxt "Name"
-#| msgid "New Device Notifier"
-msgctxt "Name"
-msgid "Device Notifier"
-msgstr "Notifiaedje di novea éndjin"
 
 #: workspace/plasma/generic/applets/devicenotifier/plasma-applet-devicenotifier.desktop:74
 msgctxt "Comment"
@@ -12052,52 +12080,52 @@ msgctxt "Name"
 msgid "KDE Power Management System"
 msgstr "Manaedjmint di l' enerdjeye"
 
-#: workspace/powerdevil/powerdevil.notifyrc:5
+#: workspace/powerdevil/powerdevil.notifyrc:11
 msgctxt "Comment"
 msgid "Notifications for KDE Power Management system"
 msgstr ""
 
-#: workspace/powerdevil/powerdevil.notifyrc:248
+#: workspace/powerdevil/powerdevil.notifyrc:260
 msgctxt "Comment"
 msgid "Used for standard notifications"
 msgstr "Eployî po des standårds notifiaedjes"
 
-#: workspace/powerdevil/powerdevil.notifyrc:321
+#: workspace/powerdevil/powerdevil.notifyrc:333
 msgctxt "Name"
 msgid "Critical notification"
 msgstr "Notifiaedje critike"
 
-#: workspace/powerdevil/powerdevil.notifyrc:394
+#: workspace/powerdevil/powerdevil.notifyrc:406
 msgctxt "Comment"
 msgid "Notifies a critical event"
 msgstr "Notifieye èn evenmint critike"
 
-#: workspace/powerdevil/powerdevil.notifyrc:468
+#: workspace/powerdevil/powerdevil.notifyrc:480
 msgctxt "Name"
 msgid "Low Battery"
 msgstr "Basse batreye"
 
-#: workspace/powerdevil/powerdevil.notifyrc:539
+#: workspace/powerdevil/powerdevil.notifyrc:551
 msgctxt "Comment"
 msgid "Your battery has reached low level"
 msgstr "Vosse batreye a-st arivé å bas livea"
 
-#: workspace/powerdevil/powerdevil.notifyrc:618
+#: workspace/powerdevil/powerdevil.notifyrc:630
 msgctxt "Name"
 msgid "Battery at warning level"
 msgstr "Batreye å livea d' adviertixhmint"
 
-#: workspace/powerdevil/powerdevil.notifyrc:691
+#: workspace/powerdevil/powerdevil.notifyrc:703
 msgctxt "Comment"
 msgid "Your battery has reached warning level"
 msgstr "Vosse batreye a-st arivé å livea d' adviertixhmint"
 
-#: workspace/powerdevil/powerdevil.notifyrc:770
+#: workspace/powerdevil/powerdevil.notifyrc:782
 msgctxt "Name"
 msgid "Battery at critical level"
 msgstr "Batreye a on livea critike"
 
-#: workspace/powerdevil/powerdevil.notifyrc:843
+#: workspace/powerdevil/powerdevil.notifyrc:855
 msgctxt "Comment"
 msgid ""
 "Your battery has reached critical level. This notification triggers a "
@@ -12108,59 +12136,59 @@ msgstr ""
 "munutreye divant d' fé l' faitindje d' apontieye, dabôrd il est mo rcomandé "
 "di låtchî ça."
 
-#: workspace/powerdevil/powerdevil.notifyrc:914
+#: workspace/powerdevil/powerdevil.notifyrc:926
 msgctxt "Name"
 msgid "AC adaptor plugged in"
 msgstr "Adaptateu AC tchôkî"
 
-#: workspace/powerdevil/powerdevil.notifyrc:987
+#: workspace/powerdevil/powerdevil.notifyrc:999
 msgctxt "Comment"
 msgid "The power adaptor has been plugged in"
 msgstr "L' adaptateu d' corant a stî tchôkî"
 
-#: workspace/powerdevil/powerdevil.notifyrc:1066
+#: workspace/powerdevil/powerdevil.notifyrc:1078
 msgctxt "Name"
 msgid "AC adaptor unplugged"
 msgstr "Adaptateu AC distchôkî"
 
-#: workspace/powerdevil/powerdevil.notifyrc:1139
+#: workspace/powerdevil/powerdevil.notifyrc:1151
 msgctxt "Comment"
 msgid "The power adaptor has been unplugged"
 msgstr "L' adaptateu d' corant a stî distchôkî"
 
-#: workspace/powerdevil/powerdevil.notifyrc:1218
+#: workspace/powerdevil/powerdevil.notifyrc:1230
 msgctxt "Name"
 msgid "Job error"
 msgstr "Aroke del bouye"
 
-#: workspace/powerdevil/powerdevil.notifyrc:1291
+#: workspace/powerdevil/powerdevil.notifyrc:1303
 msgctxt "Comment"
 msgid "There was an error while performing a job"
 msgstr "Åk n' a nén stî come dji fjheut ene bouye"
 
-#: workspace/powerdevil/powerdevil.notifyrc:1366
+#: workspace/powerdevil/powerdevil.notifyrc:1378
 msgctxt "Name"
 msgid "Profile Changed"
 msgstr "Profil candjî"
 
-#: workspace/powerdevil/powerdevil.notifyrc:1439
+#: workspace/powerdevil/powerdevil.notifyrc:1451
 msgctxt "Comment"
 msgid "The profile was changed"
 msgstr "Li profil a stî candjî"
 
-#: workspace/powerdevil/powerdevil.notifyrc:1517
+#: workspace/powerdevil/powerdevil.notifyrc:1529
 msgctxt "Name"
 msgid "Performing a suspension job"
 msgstr "Dji fwait on djocaedje di bouye"
 
-#: workspace/powerdevil/powerdevil.notifyrc:1586
+#: workspace/powerdevil/powerdevil.notifyrc:1598
 msgctxt "Comment"
 msgid ""
 "This notification is displayed when a suspension job is about to be done, "
 "and it triggers a countdown. Hence, it is strongly advised to leave it on."
 msgstr ""
 
-#: workspace/powerdevil/powerdevil.notifyrc:1653
+#: workspace/powerdevil/powerdevil.notifyrc:1665
 #, fuzzy
 #| msgctxt "Name"
 #| msgid "Internal PowerDevil Error"
@@ -12168,7 +12196,7 @@ msgctxt "Name"
 msgid "Internal KDE Power Management System Error"
 msgstr "Divintrinne aroke do Diale d' Enerdjeye"
 
-#: workspace/powerdevil/powerdevil.notifyrc:1655
+#: workspace/powerdevil/powerdevil.notifyrc:1673
 #, fuzzy
 #| msgctxt "Comment"
 #| msgid "Hardware power management using freedesktop.org HAL daemon"
@@ -12178,14 +12206,29 @@ msgstr ""
 "Manaedjmint di l' enerdjeye di l' éndjolreye eployant l' démon HAL di "
 "freedesktop.org"
 
-#: workspace/powerdevil/powerdevil.notifyrc:1662
+#: workspace/powerdevil/powerdevil.notifyrc:1686
 msgctxt "Name"
 msgid "Suspension inhibited"
 msgstr ""
 
-#: workspace/powerdevil/powerdevil.notifyrc:1728
+#: workspace/powerdevil/powerdevil.notifyrc:1752
 msgctxt "Comment"
 msgid "The suspension has been inhibited because an application requested it"
+msgstr ""
+
+#: workspace/powerdevil/powerdevil.notifyrc:1821
+#, fuzzy
+#| msgctxt "Name"
+#| msgid "Browser Identification"
+msgctxt "Name"
+msgid "Broken battery notification"
+msgstr "Idintifiaedje do betchteu"
+
+#: workspace/powerdevil/powerdevil.notifyrc:1822
+msgctxt "Comment"
+msgid ""
+"This notifications will pop up if KDE Power Management System detects some "
+"troubles with one of your batteries"
 msgstr ""
 
 #: workspace/solid/hal/solid_hal_power.desktop:7
@@ -12881,6 +12924,14 @@ msgstr "Quadros"
 msgctxt "Name"
 msgid "Red Leaf"
 msgstr "Rodje foye"
+
+#~ msgctxt "Name"
+#~ msgid "Fake Bluetooth"
+#~ msgstr "Fås Bluetooth"
+
+#~ msgctxt "Comment"
+#~ msgid "Fake Bluetooth Management"
+#~ msgstr "Manaedmint di Fås Bluetooth"
 
 #~ msgctxt "Name"
 #~ msgid "US English"
