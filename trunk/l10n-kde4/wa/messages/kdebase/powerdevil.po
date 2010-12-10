@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerdevil\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-09 02:14+0100\n"
+"POT-Creation-Date: 2010-12-10 02:18+0100\n"
 "PO-Revision-Date: 2009-11-30 15:41+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -126,57 +126,64 @@ msgstr "Cwand l' boutoe d' aloumaedje/distindaedje est tchôkî"
 msgid "Unsupported suspend method"
 msgstr "Metôdes di djocaedje sopoirtêyes"
 
-#: kdedpowerdevil.cpp:51
+#: kdedpowerdevil.cpp:58
 #, fuzzy
 #| msgid "A Power Management tool for KDE4"
 msgid "KDE Power Management System"
 msgstr "Ene usteye po manaedjî l' enerdjeye dins KDE4"
 
-#: kdedpowerdevil.cpp:52
+#: kdedpowerdevil.cpp:59
 msgid ""
 "KDE Power Management System is PowerDevil, an advanced, modular and "
 "lightweight Power Management daemon"
 msgstr ""
 
-#: kdedpowerdevil.cpp:55
+#: kdedpowerdevil.cpp:62
 msgid "(c) 2010 MetalWorkers Co."
 msgstr ""
 
-#: kdedpowerdevil.cpp:58
+#: kdedpowerdevil.cpp:65
 msgid "Dario Freddi"
 msgstr "Dario Freddi"
 
-#: kdedpowerdevil.cpp:58
+#: kdedpowerdevil.cpp:65
 msgid "Maintainer"
 msgstr "Mintneu"
 
-#: powerdevilcore.cpp:71
+#: powerdevilcore.cpp:69
 msgid ""
 "No valid Power Management backend plugins are available. A new installation "
 "might solve this problem."
 msgstr ""
 
-#: powerdevilcore.cpp:158
+#: powerdevilcore.cpp:97
+msgid ""
+"Your Power Profiles have been updated to be used with the new KDE Power "
+"Management System. You can tweak them or generate a new set of defaults from "
+"System Settings."
+msgstr ""
+
+#: powerdevilcore.cpp:149
 msgctxt "Global shortcut"
 msgid "Increase Screen Brightness"
 msgstr ""
 
-#: powerdevilcore.cpp:165
+#: powerdevilcore.cpp:156
 msgctxt "Global shortcut"
 msgid "Decrease Screen Brightness"
 msgstr ""
 
-#: powerdevilcore.cpp:172
+#: powerdevilcore.cpp:163
 msgctxt "Global shortcut"
 msgid "Sleep"
 msgstr ""
 
-#: powerdevilcore.cpp:179
+#: powerdevilcore.cpp:170
 msgctxt "Global shortcut"
 msgid "Hibernate"
 msgstr ""
 
-#: powerdevilcore.cpp:193
+#: powerdevilcore.cpp:184
 #, kde-format
 msgid ""
 "Your battery capacity is %2%. This means your battery is broken and needs a "
@@ -188,7 +195,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: powerdevilcore.cpp:206
+#: powerdevilcore.cpp:197
 #, kde-format
 msgid ""
 "Your battery might have been recalled by %2. Usually, when vendors recall "
@@ -203,7 +210,26 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: powerdevilcore.cpp:298
+#: powerdevilcore.cpp:251
+#, fuzzy
+#| msgid "Performance"
+msgctxt "Name of a power profile"
+msgid "Performance"
+msgstr "Performances"
+
+#: powerdevilcore.cpp:253
+#, fuzzy
+#| msgid "Powersave"
+msgctxt "Name of a power profile"
+msgid "Powersave"
+msgstr "Sipårgnaedje d' enerdjeye"
+
+#: powerdevilcore.cpp:255
+msgctxt "Name of a power profile"
+msgid "Aggressive powersave"
+msgstr ""
+
+#: powerdevilcore.cpp:312
 #, kde-format
 msgid ""
 "The profile \"%1\" has been selected, but it does not exist.\n"
@@ -212,14 +238,14 @@ msgstr ""
 "Li profil « %1 » a stî tchoezi mins i n' egzistêye nén.\n"
 "Verifyîz vost apontiaedje do Diale d' Enerdjeye."
 
-#: powerdevilcore.cpp:311
+#: powerdevilcore.cpp:325
 #, kde-format
 msgid ""
 "The profile \"%1\" tried to activate %2, a non existent action. This is "
 "usually due to an installation problem or to a configuration problem."
 msgstr ""
 
-#: powerdevilcore.cpp:353
+#: powerdevilcore.cpp:367
 msgid ""
 "Could not connect to battery interface.\n"
 "Please check your system configuration"
@@ -227,7 +253,7 @@ msgstr ""
 "Dji n' a savou raloyî a l' eterface del batreye !\n"
 " Waitîz si vs plait l' apontiaedje di vosse sistinme"
 
-#: powerdevilcore.cpp:411
+#: powerdevilcore.cpp:425
 #, fuzzy
 #| msgid ""
 #| "The power adaptor has been plugged in. Any pending suspend actions have "
@@ -239,15 +265,15 @@ msgstr ""
 "L' adaptateu d' corant a stî tchôkî. Totes les faitindjes di djocaedje ki "
 "ratindénxhe ont stî rnonceyes."
 
-#: powerdevilcore.cpp:413
+#: powerdevilcore.cpp:427
 msgid "The power adaptor has been plugged in."
 msgstr "L' adaptateu d' corant a stî tchôkî."
 
-#: powerdevilcore.cpp:416
+#: powerdevilcore.cpp:430
 msgid "The power adaptor has been unplugged."
 msgstr "L' adaptateu d' corant a stî distchôkî."
 
-#: powerdevilcore.cpp:422
+#: powerdevilcore.cpp:436
 #, kde-format
 msgid ""
 "KDE Power Management System could not be initialized. The backend reported "
@@ -255,7 +281,7 @@ msgid ""
 "Please check your system configuration"
 msgstr ""
 
-#: powerdevilcore.cpp:449
+#: powerdevilcore.cpp:463
 #, fuzzy
 #| msgid ""
 #| "Your battery level is critical, the computer will be halted in 1 second."
@@ -266,7 +292,7 @@ msgid ""
 msgstr ""
 "Vosse livea batreye est critike, li copiutrece s' distindrè dins 1 segonde."
 
-#: powerdevilcore.cpp:454
+#: powerdevilcore.cpp:468
 #, fuzzy
 #| msgid ""
 #| "Your battery level is critical, the computer will be halted in 1 second."
@@ -278,7 +304,7 @@ msgid ""
 msgstr ""
 "Vosse livea batreye est critike, li copiutrece s' distindrè dins 1 segonde."
 
-#: powerdevilcore.cpp:459
+#: powerdevilcore.cpp:473
 #, fuzzy
 #| msgid ""
 #| "Your battery level is critical, the computer will be suspended to RAM in "
@@ -292,38 +318,19 @@ msgstr ""
 "Vosse livea batreye est critike, li copiutrece serè metou e woeye sol RAM "
 "dins 1 segonde."
 
-#: powerdevilcore.cpp:464
+#: powerdevilcore.cpp:478
 msgid "Your battery level is critical: save your work as soon as possible."
 msgstr ""
 "Vosse livea d' batreye est critike : schapez vost ovraedje ttossu rade ki "
 "possibe."
 
-#: powerdevilcore.cpp:470
+#: powerdevilcore.cpp:484
 msgid "Your battery has reached the warning level."
 msgstr "Vosse batreye a-st arivé å livea d' adviertixhmint."
 
-#: powerdevilcore.cpp:475
+#: powerdevilcore.cpp:489
 msgid "Your battery has reached a low level."
 msgstr "Vosse batreye a-st arivé a on bas livea."
-
-#: powerdevilprofilegenerator.cpp:61
-#, fuzzy
-#| msgid "Performance"
-msgctxt "Name of a power profile"
-msgid "Performance"
-msgstr "Performances"
-
-#: powerdevilprofilegenerator.cpp:111
-#, fuzzy
-#| msgid "Powersave"
-msgctxt "Name of a power profile"
-msgid "Powersave"
-msgstr "Sipårgnaedje d' enerdjeye"
-
-#: powerdevilprofilegenerator.cpp:153
-msgctxt "Name of a power profile"
-msgid "Aggressive powersave"
-msgstr ""
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
