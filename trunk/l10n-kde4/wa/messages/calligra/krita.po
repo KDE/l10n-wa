@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-06 02:59+0100\n"
+"POT-Creation-Date: 2011-01-07 03:02+0100\n"
 "PO-Revision-Date: 2010-12-24 14:34+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -7442,6 +7442,7 @@ msgstr " %"
 #. i18n: ectx: property (text), widget (QLabel, label_10)
 #: rc.cpp:3282 image/kis_adjustment_layer.cc:126
 #: plugins/paintops/libpaintop/kis_filter_option.cpp:51
+#: ui/recorder/kis_recorded_filter_action_creator.cpp:59
 msgid "Filter"
 msgstr "Passete"
 
@@ -9554,10 +9555,6 @@ msgstr ""
 msgid "Invalid value."
 msgstr "Grandeu d' imådje nén valåbe"
 
-#: image/recorder/kis_macro.cc:96
-msgid "Play macro"
-msgstr "Djouwer macro"
-
 #: image/recorder/kis_recorded_fill_paint_action.cpp:42
 #: plugins/tools/defaulttools/kis_tool_fill.cc:127
 msgid "Fill"
@@ -9567,6 +9564,10 @@ msgstr "Rimpli"
 #: plugins/tools/defaulttools/kis_tool_path.cc:188
 msgid "Path"
 msgstr "Tchimin"
+
+#: image/recorder/kis_macro_player.cc:71
+msgid "Play macro"
+msgstr "Djouwer macro"
 
 #: main.cc:41
 msgid "File(s) or URL(s) to open"
@@ -9712,15 +9713,6 @@ msgstr "Dobler l' coûtche ou masse tchoezi pol moumint"
 msgid "Reset to default"
 msgstr "prémetou"
 
-#: plugins/extensions/bigbrother/actionseditor/kis_actions_editor.cpp:89
-msgid "No action is selected."
-msgstr ""
-
-#: plugins/extensions/bigbrother/actionseditor/kis_actions_editor.cpp:92
-#, fuzzy
-msgid "No editor for current action."
-msgstr "&Radjouter å tchoes do moumint"
-
 #: plugins/extensions/bigbrother/actionseditor/kis_actions_editor_dialog.cpp:30
 msgid "Save macro"
 msgstr "Schaper macro"
@@ -9729,24 +9721,39 @@ msgstr "Schaper macro"
 msgid "Discard changes"
 msgstr "Abandner les candjmints"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:82
+#: plugins/extensions/bigbrother/actionseditor/kis_actions_editor.cpp:105
+#, fuzzy
+#| msgid "Create a new action"
+msgid "Failed to create an action."
+msgstr "Ahiver on novea faitindje"
+
+#: plugins/extensions/bigbrother/actionseditor/kis_actions_editor.cpp:137
+msgid "No action is selected."
+msgstr ""
+
+#: plugins/extensions/bigbrother/actionseditor/kis_actions_editor.cpp:140
+#, fuzzy
+msgid "No editor for current action."
+msgstr "&Radjouter å tchoes do moumint"
+
+#: plugins/extensions/bigbrother/bigbrother.cc:87
 msgid "Open and play..."
 msgstr "Drovi eyet djouwer..."
 
-#: plugins/extensions/bigbrother/bigbrother.cc:86
+#: plugins/extensions/bigbrother/bigbrother.cc:91
 #, fuzzy
 msgid "Open and edit..."
 msgstr "Drovi eyet djouwer..."
 
-#: plugins/extensions/bigbrother/bigbrother.cc:90
+#: plugins/extensions/bigbrother/bigbrother.cc:95
 msgid "Save all actions"
 msgstr "Schaper tos les faitindjes"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:94
+#: plugins/extensions/bigbrother/bigbrother.cc:99
 msgid "Start recording macro"
 msgstr "Enonder eredjistraedje del macro"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:98
+#: plugins/extensions/bigbrother/bigbrother.cc:103
 msgid "Stop recording actions"
 msgstr "Arester l' eredjistraedje des faitindjes"
 
@@ -10426,10 +10433,6 @@ msgstr "Mete å pus hôt l' canå"
 msgid "Minimize Channel"
 msgstr "Mete å pus bas li canå"
 
-#: plugins/filters/colorsfilters/kis_brightness_contrast_filter.cpp:146
-msgid "&Brightness/Contrast curve..."
-msgstr "Coube &rilujhance/contrasse..."
-
 #: plugins/filters/colorsfilters/kis_brightness_contrast_filter.h:87
 msgid "Brightness / Contrast"
 msgstr "Rilujhance / Contrasse"
@@ -10461,6 +10464,10 @@ msgstr "Contrasse otomatike"
 #: plugins/filters/colorsfilters/colorsfilters.h:66
 msgid "Desaturate"
 msgstr "Dissaturer"
+
+#: plugins/filters/colorsfilters/kis_brightness_contrast_filter.cpp:146
+msgid "&Brightness/Contrast curve..."
+msgstr "Coube &rilujhance/contrasse..."
 
 #: plugins/filters/convolutionfilters/convolutionfilters.cpp:69
 msgid "&Sharpen"
