@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gwenview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-26 02:58+0100\n"
+"POT-Creation-Date: 2011-01-11 02:40+0100\n"
 "PO-Revision-Date: 2010-08-10 23:36+0200\n"
 "Last-Translator: Jean Cayron et Odile Lambert <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -17,33 +17,27 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 1.0\n"
 
-#: app/kipiexportaction.cpp:50
-msgid "Last Used Plugin"
-msgstr ""
-
-#: app/kipiexportaction.cpp:52
-#, fuzzy
-#| msgid "&Plugins"
-msgid "Other Plugins"
-msgstr "&Tchôke-divins"
-
-#: app/kipiexportaction.cpp:62
-#, fuzzy
-#| msgid "No Plugin"
-msgid "No Plugin Found"
-msgstr "Nou tchôke-divins"
-
-#: app/kipiexportaction.cpp:75
-#, fuzzy
-#| msgid "Square"
-msgid "Share"
-msgstr "Cwåré"
-
-#: app/thumbnailviewpanel.cpp:108 app/mainwindow.cpp:314
-#: app/documentpanel.cpp:291 lib/documentview/documentview.cpp:147
+#: app/documentpanel.cpp:291 app/thumbnailviewpanel.cpp:108
+#: app/mainwindow.cpp:314 lib/documentview/documentview.cpp:147
 msgctxt "@title actions category - means actions changing smth in interface"
 msgid "View"
 msgstr "Vuwe"
+
+#: app/documentpanel.cpp:294
+msgid "Thumbnail Bar"
+msgstr "Bår di prévoeyaedje"
+
+#: app/documentpanel.cpp:482
+msgctxt "@action:button"
+msgid "Discard Changes and Reload"
+msgstr "Abandner les candjmints eyet ritcherdjî"
+
+#: app/documentpanel.cpp:484
+msgctxt "@info"
+msgid ""
+"This image has been modified. Reloading it will discard all your changes."
+msgstr ""
+"Ciste imådje a stî candjeye. El ritcherdjî spotchrè tos vos candjmints."
 
 #: app/thumbnailviewpanel.cpp:110
 msgctxt "@action:inmenu Navigation Bar"
@@ -187,21 +181,9 @@ msgstr "Ramexhnêyes"
 msgid "No Plugin"
 msgstr "Nou tchôke-divins"
 
-#: app/startpage.cpp:278
-msgid "Add to Places"
-msgstr "Radjouter a des plaeces"
-
-#: app/startpage.cpp:279
-msgid "Forget this URL"
-msgstr "Rovyî cist URL"
-
-#: app/startpage.cpp:279
-msgid "Forget this Folder"
-msgstr "Rovyî ç' ridant"
-
-#: app/startpage.cpp:281
-msgid "Forget All"
-msgstr "Rovyî ttafwait"
+#: app/imagemetainfodialog.cpp:120
+msgid "Meta Information"
+msgstr "Meta-informåcion"
 
 #: app/fileopscontextmanageritem.cpp:82
 #, fuzzy
@@ -291,6 +273,98 @@ msgstr "Drovi avou"
 msgid "Other Application..."
 msgstr "Ôtes programes..."
 
+#: app/gvcore.cpp:83
+msgctxt "@info"
+msgid "No image format selected."
+msgstr "Nole cogne d' imådje tchoezeye."
+
+#: app/gvcore.cpp:96
+#, kde-format
+msgctxt "@info"
+msgid "Gwenview cannot save images as %1."
+msgstr "Gwenview n' sai schaper les imådjes come %1."
+
+#: app/gvcore.cpp:181
+msgid "Save using another format"
+msgstr "Schaper avou ene ôte cogne"
+
+#: app/gvcore.cpp:184
+#, kde-format
+msgid "Gwenview cannot save images in '%1' format."
+msgstr "Gwenview n' sai schaper les imådjes el cogne « %1 »."
+
+#: app/gvcore.cpp:207
+#, kde-format
+msgctxt "@info"
+msgid ""
+"A file named <filename>%1</filename> already exists.\n"
+"Are you sure you want to overwrite it?"
+msgstr ""
+"On fitchî <filename>%1</filename> egzistêye dedja.\n"
+"Estoz seur(e) ki vos l' voloz spotchî?"
+
+#: app/gvcore.cpp:238
+#, kde-format
+msgctxt "@info"
+msgid "<b>Saving <filename>%1</filename> failed:</b><br>%2"
+msgstr "<b>Li schapaedje di <filename>%1</filename> a fwait berwete:</b><br>%2"
+
+#: app/gvcore.cpp:256
+msgid "You are now viewing the new document."
+msgstr ""
+
+#: app/gvcore.cpp:258
+msgid "Go back to the original"
+msgstr ""
+
+#: app/gvcore.cpp:303 lib/document/documentjob.cpp:78
+msgctxt "@info"
+msgid "Gwenview cannot edit this kind of image."
+msgstr "Gwenview n' sai candjî les imådjes di c' djinre la."
+
+#: app/imageopscontextmanageritem.cpp:78
+msgctxt "@title actions category - means actions changing image"
+msgid "Edit"
+msgstr "Candjî"
+
+#: app/imageopscontextmanageritem.cpp:80 lib/transformimageoperation.cpp:69
+msgid "Rotate Left"
+msgstr "Fé tourner a hintche"
+
+#: app/imageopscontextmanageritem.cpp:85 lib/transformimageoperation.cpp:66
+msgid "Rotate Right"
+msgstr "Fé tourné a droete"
+
+#: app/imageopscontextmanageritem.cpp:90 lib/transformimageoperation.cpp:72
+msgid "Mirror"
+msgstr "Muroe"
+
+#: app/imageopscontextmanageritem.cpp:94 lib/transformimageoperation.cpp:75
+msgid "Flip"
+msgstr "Sititchî"
+
+#: app/imageopscontextmanageritem.cpp:98 lib/resize/resizeimagedialog.cpp:50
+#: lib/resize/resizeimageoperation.cpp:69
+msgid "Resize"
+msgstr "Candjî di grandeu"
+
+#. i18n: file: lib/crop/cropwidget.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, CropWidget)
+#. i18n: file: lib/crop/cropwidget.ui:32
+#. i18n: ectx: property (text), widget (QToolButton, cropButton)
+#: app/imageopscontextmanageritem.cpp:103 lib/crop/cropimageoperation.cpp:73
+#: rc.cpp:175 rc.cpp:181
+msgid "Crop"
+msgstr "Côper dvins"
+
+#: app/imageopscontextmanageritem.cpp:108
+msgid "Red Eye Reduction"
+msgstr "Ridujhaedje des rodjes ouys"
+
+#: app/imageopscontextmanageritem.cpp:135
+msgid "Image Operations"
+msgstr "Operåcions so ls imådjes"
+
 #: app/fileoperations.cpp:72
 msgid "Copy To"
 msgstr "Copyî viè"
@@ -358,6 +432,52 @@ msgstr "No do fitchî"
 msgid "Rename <filename>%1</filename> to:"
 msgstr "<filename>%1</filename>: %2"
 
+#: app/main.cpp:111
+msgid "Gwenview"
+msgstr "Gwenview"
+
+#: app/main.cpp:113 part/gvpart.cpp:122
+msgid "An Image Viewer"
+msgstr "On håyneu d' imådjes"
+
+#: app/main.cpp:115 part/gvpart.cpp:124
+#, fuzzy
+#| msgid "Copyright 2000-2008 Aurélien Gâteau"
+msgid "Copyright 2000-2010 Aurélien Gâteau"
+msgstr "Copyright 2000-2008 Aurélien Gâteau"
+
+#: app/main.cpp:117 importer/main.cpp:45 part/gvpart.cpp:126
+msgid "Aurélien Gâteau"
+msgstr "Aurélien Gâteau"
+
+#: app/main.cpp:118 importer/main.cpp:46 part/gvpart.cpp:127
+msgid "Main developer"
+msgstr "Mwaisse programeu"
+
+#: app/main.cpp:124
+msgid "Start in fullscreen mode"
+msgstr "Enonder e môde tote li waitroûle"
+
+#: app/main.cpp:125
+msgid "Start in slideshow mode"
+msgstr "Enonder e môde diaporama"
+
+#: app/main.cpp:126
+msgid "A starting file or folder"
+msgstr "On fitchî oudonbén on ridant d' kimince"
+
+#: app/configdialog.cpp:69
+msgid "General"
+msgstr "Djenerå"
+
+#: app/configdialog.cpp:90
+msgid "Image View"
+msgstr "Voeyaedje d' ene imådje"
+
+#: app/configdialog.cpp:95
+msgid "Advanced"
+msgstr "Sipepieus"
+
 #: app/filtercontroller.cpp:124
 msgid "Name contains"
 msgstr "I gn a dins l' no"
@@ -418,6 +538,22 @@ msgctxt "@action:inmenu"
 msgid "Filter by Tag"
 msgstr "Passer al passete so l' etikete"
 
+#: app/startpage.cpp:278
+msgid "Add to Places"
+msgstr "Radjouter a des plaeces"
+
+#: app/startpage.cpp:279
+msgid "Forget this URL"
+msgstr "Rovyî cist URL"
+
+#: app/startpage.cpp:279
+msgid "Forget this Folder"
+msgstr "Rovyî ç' ridant"
+
+#: app/startpage.cpp:281
+msgid "Forget All"
+msgstr "Rovyî ttafwait"
+
 #: app/fullscreencontent.cpp:108
 msgctxt "@info:tooltip"
 msgid "Configure Full Screen Mode"
@@ -435,6 +571,28 @@ msgid "%1 sec"
 msgid_plural "%1 secs"
 msgstr[0] "%1 seg"
 msgstr[1] "%1 segs"
+
+#: app/semanticinfocontextmanageritem.cpp:137
+msgid "Semantic Information"
+msgstr "Infôrmåcions semantikes"
+
+#: app/semanticinfocontextmanageritem.cpp:154
+msgid "Description"
+msgstr "Discrijhaedje"
+
+#: app/semanticinfocontextmanageritem.cpp:168
+msgctxt "@action"
+msgid "Edit Tags"
+msgstr "Candjî les etiketes"
+
+#: app/semanticinfocontextmanageritem.cpp:178
+msgctxt "@action Rating value of zero"
+msgid "Zero"
+msgstr "Zero"
+
+#: app/semanticinfocontextmanageritem.cpp:214
+msgid "Edit"
+msgstr "Candjî"
 
 #: app/infocontextmanageritem.cpp:85
 #, kde-format
@@ -488,6 +646,14 @@ msgstr[1] "%1 fitchîs"
 msgctxt "@label. The two parameters are strings like '2 folders' and '1 file'."
 msgid "%1 and %2 selected"
 msgstr "%1 eyet %2 tchoezis"
+
+#: app/kipiimagecollectionselector.cpp:54
+#, kde-format
+msgctxt "%1 is collection name, %2 is image count in collection"
+msgid "%1 (%2 image)"
+msgid_plural "%1 (%2 images)"
+msgstr[0] "%1 (%2 imådje)"
+msgstr[1] "%1 (%2 imådjes)"
 
 #: app/mainwindow.cpp:323
 msgctxt "@action reload the currently viewed image"
@@ -623,14 +789,6 @@ msgstr[1] "%1 imådjes ont stî candjeyes."
 msgid "If you quit now, your changes will be lost."
 msgstr "Si vs cwitez sol côp, vos candjmints sront pierdous."
 
-#: app/kipiimagecollectionselector.cpp:54
-#, kde-format
-msgctxt "%1 is collection name, %2 is image count in collection"
-msgid "%1 (%2 image)"
-msgid_plural "%1 (%2 images)"
-msgstr[0] "%1 (%2 imådje)"
-msgstr[1] "%1 (%2 imådjes)"
-
 #: app/savebar.cpp:85
 msgid ""
 "You have modified many images. To avoid memory problems, you should save "
@@ -670,75 +828,6 @@ msgstr "Î potchî"
 msgid "Save All"
 msgstr "Totafwait schaper"
 
-#: app/imagemetainfodialog.cpp:120
-msgid "Meta Information"
-msgstr "Meta-informåcion"
-
-#: app/documentpanel.cpp:294
-msgid "Thumbnail Bar"
-msgstr "Bår di prévoeyaedje"
-
-#: app/documentpanel.cpp:482
-msgctxt "@action:button"
-msgid "Discard Changes and Reload"
-msgstr "Abandner les candjmints eyet ritcherdjî"
-
-#: app/documentpanel.cpp:484
-msgctxt "@info"
-msgid ""
-"This image has been modified. Reloading it will discard all your changes."
-msgstr ""
-"Ciste imådje a stî candjeye. El ritcherdjî spotchrè tos vos candjmints."
-
-#: app/gvcore.cpp:83
-msgctxt "@info"
-msgid "No image format selected."
-msgstr "Nole cogne d' imådje tchoezeye."
-
-#: app/gvcore.cpp:96
-#, kde-format
-msgctxt "@info"
-msgid "Gwenview cannot save images as %1."
-msgstr "Gwenview n' sai schaper les imådjes come %1."
-
-#: app/gvcore.cpp:181
-msgid "Save using another format"
-msgstr "Schaper avou ene ôte cogne"
-
-#: app/gvcore.cpp:184
-#, kde-format
-msgid "Gwenview cannot save images in '%1' format."
-msgstr "Gwenview n' sai schaper les imådjes el cogne « %1 »."
-
-#: app/gvcore.cpp:207
-#, kde-format
-msgctxt "@info"
-msgid ""
-"A file named <filename>%1</filename> already exists.\n"
-"Are you sure you want to overwrite it?"
-msgstr ""
-"On fitchî <filename>%1</filename> egzistêye dedja.\n"
-"Estoz seur(e) ki vos l' voloz spotchî?"
-
-#: app/gvcore.cpp:238
-#, kde-format
-msgctxt "@info"
-msgid "<b>Saving <filename>%1</filename> failed:</b><br>%2"
-msgstr "<b>Li schapaedje di <filename>%1</filename> a fwait berwete:</b><br>%2"
-
-#: app/gvcore.cpp:256
-msgid "You are now viewing the new document."
-msgstr ""
-
-#: app/gvcore.cpp:258
-msgid "Go back to the original"
-msgstr ""
-
-#: app/gvcore.cpp:303 lib/document/documentjob.cpp:78
-msgctxt "@info"
-msgid "Gwenview cannot edit this kind of image."
-msgstr "Gwenview n' sai candjî les imådjes di c' djinre la."
-
 #: app/saveallhelper.cpp:57
 msgctxt "@info:progress saving all image changes"
 msgid "Saving..."
@@ -764,116 +853,27 @@ msgctxt ""
 msgid "<filename>%1</filename>: %2"
 msgstr "<filename>%1</filename>: %2"
 
-#: app/imageopscontextmanageritem.cpp:78
-msgctxt "@title actions category - means actions changing image"
-msgid "Edit"
-msgstr "Candjî"
+#: app/kipiexportaction.cpp:50
+msgid "Last Used Plugin"
+msgstr ""
 
-#: app/imageopscontextmanageritem.cpp:80 lib/transformimageoperation.cpp:69
-msgid "Rotate Left"
-msgstr "Fé tourner a hintche"
-
-#: app/imageopscontextmanageritem.cpp:85 lib/transformimageoperation.cpp:66
-msgid "Rotate Right"
-msgstr "Fé tourné a droete"
-
-#: app/imageopscontextmanageritem.cpp:90 lib/transformimageoperation.cpp:72
-msgid "Mirror"
-msgstr "Muroe"
-
-#: app/imageopscontextmanageritem.cpp:94 lib/transformimageoperation.cpp:75
-msgid "Flip"
-msgstr "Sititchî"
-
-#: app/imageopscontextmanageritem.cpp:98 lib/resize/resizeimagedialog.cpp:50
-#: lib/resize/resizeimageoperation.cpp:69
-msgid "Resize"
-msgstr "Candjî di grandeu"
-
-#. i18n: file: lib/crop/cropwidget.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, CropWidget)
-#. i18n: file: lib/crop/cropwidget.ui:32
-#. i18n: ectx: property (text), widget (QToolButton, cropButton)
-#: app/imageopscontextmanageritem.cpp:103 lib/crop/cropimageoperation.cpp:73
-#: rc.cpp:175 rc.cpp:181
-msgid "Crop"
-msgstr "Côper dvins"
-
-#: app/imageopscontextmanageritem.cpp:108
-msgid "Red Eye Reduction"
-msgstr "Ridujhaedje des rodjes ouys"
-
-#: app/imageopscontextmanageritem.cpp:135
-msgid "Image Operations"
-msgstr "Operåcions so ls imådjes"
-
-#: app/main.cpp:111
-msgid "Gwenview"
-msgstr "Gwenview"
-
-#: app/main.cpp:113 part/gvpart.cpp:122
-msgid "An Image Viewer"
-msgstr "On håyneu d' imådjes"
-
-#: app/main.cpp:115 part/gvpart.cpp:124
+#: app/kipiexportaction.cpp:52
 #, fuzzy
-#| msgid "Copyright 2000-2008 Aurélien Gâteau"
-msgid "Copyright 2000-2010 Aurélien Gâteau"
-msgstr "Copyright 2000-2008 Aurélien Gâteau"
+#| msgid "&Plugins"
+msgid "Other Plugins"
+msgstr "&Tchôke-divins"
 
-#: app/main.cpp:117 importer/main.cpp:45 part/gvpart.cpp:126
-msgid "Aurélien Gâteau"
-msgstr "Aurélien Gâteau"
+#: app/kipiexportaction.cpp:62
+#, fuzzy
+#| msgid "No Plugin"
+msgid "No Plugin Found"
+msgstr "Nou tchôke-divins"
 
-#: app/main.cpp:118 importer/main.cpp:46 part/gvpart.cpp:127
-msgid "Main developer"
-msgstr "Mwaisse programeu"
-
-#: app/main.cpp:124
-msgid "Start in fullscreen mode"
-msgstr "Enonder e môde tote li waitroûle"
-
-#: app/main.cpp:125
-msgid "Start in slideshow mode"
-msgstr "Enonder e môde diaporama"
-
-#: app/main.cpp:126
-msgid "A starting file or folder"
-msgstr "On fitchî oudonbén on ridant d' kimince"
-
-#: app/configdialog.cpp:69
-msgid "General"
-msgstr "Djenerå"
-
-#: app/configdialog.cpp:90
-msgid "Image View"
-msgstr "Voeyaedje d' ene imådje"
-
-#: app/configdialog.cpp:95
-msgid "Advanced"
-msgstr "Sipepieus"
-
-#: app/semanticinfocontextmanageritem.cpp:137
-msgid "Semantic Information"
-msgstr "Infôrmåcions semantikes"
-
-#: app/semanticinfocontextmanageritem.cpp:154
-msgid "Description"
-msgstr "Discrijhaedje"
-
-#: app/semanticinfocontextmanageritem.cpp:168
-msgctxt "@action"
-msgid "Edit Tags"
-msgstr "Candjî les etiketes"
-
-#: app/semanticinfocontextmanageritem.cpp:178
-msgctxt "@action Rating value of zero"
-msgid "Zero"
-msgstr "Zero"
-
-#: app/semanticinfocontextmanageritem.cpp:214
-msgid "Edit"
-msgstr "Candjî"
+#: app/kipiexportaction.cpp:75
+#, fuzzy
+#| msgid "Square"
+msgid "Share"
+msgstr "Cwåré"
 
 #: importer/importer.cpp:76
 msgid "Could not create destination folder."
@@ -1131,13 +1131,6 @@ msgctxt "@info"
 msgid "Loading image failed."
 msgstr "Li tcherdjaedje di l' imådje a fwait berwete."
 
-#: lib/document/loadingjob.cpp:56
-#, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid "Could not upload file."
-msgid "Could not load document %1"
-msgstr "Dji n' a savou eberweter l' fitchî."
-
 #: lib/document/savejob.cpp:104
 #, kde-format
 msgctxt "@info"
@@ -1157,6 +1150,13 @@ msgid ""
 msgstr ""
 "Dji n' a savou spotchî l' fitchî, waitîz k' vos avoz les bons droets dins "
 "<filename>%1</filename>."
+
+#: lib/document/loadingjob.cpp:56
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Could not upload file."
+msgid "Could not load document %1"
+msgstr "Dji n' a savou eberweter l' fitchî."
 
 #: lib/print/printhelper.cpp:129
 msgid "Print Image"
@@ -1219,10 +1219,6 @@ msgctxt "@title:column"
 msgid "Value"
 msgstr "Valixhance"
 
-#: lib/transformimageoperation.cpp:80
-msgid "Transform"
-msgstr "Candjî e"
-
 #: lib/jpegcontent.cpp:561
 msgctxt "@info"
 msgid "Could not open file for writing."
@@ -1232,6 +1228,10 @@ msgstr "Dji n' a savou drovi l' fitchî pos î scrire."
 msgctxt "@info"
 msgid "No data to store."
 msgstr "Nole dinêye a wårder."
+
+#: lib/transformimageoperation.cpp:80
+msgid "Transform"
+msgstr "Candjî e"
 
 #: lib/statusbartoolbutton.cpp:118 lib/fullscreenbar.cpp:254
 #, kde-format
@@ -1263,40 +1263,124 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "jean.cayron@gmail.com"
 
+#. i18n: file: app/semanticinfosidebaritem.ui:22
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:5
+msgid "Rating:"
+msgstr "Préjhaedje:"
+
+#. i18n: file: app/semanticinfosidebaritem.ui:42
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:8
+msgid "Tags:"
+msgstr "Etiketes:"
+
+#. i18n: file: app/gwenviewui.rc:56
+#. i18n: ectx: Menu (rating)
+#: rc.cpp:11
+msgid "&Rating"
+msgstr "P&réjhaedje"
+
+#. i18n: file: app/gwenviewui.rc:85
+#. i18n: ectx: Menu (plugins)
+#: rc.cpp:14
+msgid "&Plugins"
+msgstr "&Tchôke-divins"
+
+#. i18n: file: app/gwenviewui.rc:88
+#. i18n: ectx: Menu (settings)
+#: rc.cpp:17
+msgid "&Settings"
+msgstr "A&pontiaedjes"
+
+#. i18n: file: app/gwenviewui.rc:101
+#. i18n: ectx: ToolBar (mainToolBar)
+#. i18n: file: part/gvpart.rc:15
+#. i18n: ectx: ToolBar (mainToolBar)
+#: rc.cpp:20 rc.cpp:286
+msgid "Main Toolbar"
+msgstr "Mwaisse bår ås usteyes"
+
+#. i18n: file: app/generalconfigpage.ui:17
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:23
+#, fuzzy
+#| msgid "&View background color:"
+msgid "Background color:"
+msgstr "&Vey coleur di fond:"
+
+#. i18n: file: app/generalconfigpage.ui:51
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:26
+msgid "Videos:"
+msgstr ""
+
+#. i18n: file: app/generalconfigpage.ui:58
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ListVideos)
+#: rc.cpp:29
+#, fuzzy
+#| msgid "Show Sidebar"
+msgid "Show videos"
+msgstr "Håyner l' bår di costé"
+
+#. i18n: file: app/thumbnailviewpanel.ui:64
+#. i18n: ectx: property (text), widget (Gwenview::StatusBarToolButton, mAddFilterButton)
+#: rc.cpp:32
+msgid "Add Filter"
+msgstr "Radjouter ene passete"
+
+#. i18n: file: app/semanticinfodialog.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, SemanticInfoDialog)
+#: rc.cpp:35
+msgid "Tag Editor"
+msgstr "Aspougneu d' etikete"
+
+#. i18n: file: app/semanticinfodialog.ui:31
+#. i18n: ectx: property (text), widget (QPushButton, mPreviousButton)
+#: rc.cpp:38
+msgid "Previous"
+msgstr "Di dvant"
+
+#. i18n: file: app/semanticinfodialog.ui:38
+#. i18n: ectx: property (text), widget (QPushButton, mNextButton)
+#: rc.cpp:41
+msgid "Next"
+msgstr "Shuvante"
+
 #. i18n: file: app/imageviewconfigpage.ui:17
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:5
+#: rc.cpp:44
 msgid "Transparent background:"
 msgstr "Transparinte coleur di fond:"
 
 #. i18n: file: app/imageviewconfigpage.ui:35
 #. i18n: ectx: property (text), widget (QRadioButton, checkBoardRadioButton)
-#: rc.cpp:8
+#: rc.cpp:47
 msgid "&Check board"
 msgstr "&Pitits cwårés"
 
 #. i18n: file: app/imageviewconfigpage.ui:68
 #. i18n: ectx: property (text), widget (QRadioButton, solidColorRadioButton)
-#: rc.cpp:11
+#: rc.cpp:50
 msgid "&Solid color:"
 msgstr "&Coleur li minme:"
 
 #. i18n: file: app/imageviewconfigpage.ui:116
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:14
+#: rc.cpp:53
 msgid "Mouse wheel behavior:"
 msgstr "Dujhance del rôlete del sori:"
 
 #. i18n: file: app/imageviewconfigpage.ui:128
 #. i18n: ectx: property (text), widget (QRadioButton, mouseWheelScrollRadioButton)
-#: rc.cpp:17
+#: rc.cpp:56
 msgctxt "@option:radio action on mouse wheel"
 msgid "Scroll"
 msgstr "Disrôler"
 
 #. i18n: file: app/imageviewconfigpage.ui:155
 #. i18n: ectx: property (text), widget (QRadioButton, mouseWheelBrowseRadioButton)
-#: rc.cpp:20
+#: rc.cpp:59
 msgctxt "@option:radio action on mouse wheel"
 msgid "Browse"
 msgstr "Foyter"
@@ -1305,125 +1389,121 @@ msgstr "Foyter"
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnlargeSmallerImages)
 #. i18n: file: lib/print/printoptionspage.ui:98
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrintEnlargeSmallerImages)
-#: rc.cpp:23 rc.cpp:214
+#: rc.cpp:62 rc.cpp:214
 msgid "Enlarge smaller images"
 msgstr "Rinde pus grandes les pus ptitès imådjes "
 
 #. i18n: file: app/imageviewconfigpage.ui:233
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:26
+#: rc.cpp:65
 msgid "<b>Thumbnail Bar</b>"
 msgstr "<b>Bår di prévoeyaedje</b>"
 
 #. i18n: file: app/imageviewconfigpage.ui:240
 #. i18n: ectx: property (text), widget (QLabel, label_9)
-#: rc.cpp:29
+#: rc.cpp:68
 msgid "Orientation:"
 msgstr "Ashidaedje :"
 
 #. i18n: file: app/imageviewconfigpage.ui:252
 #. i18n: ectx: property (text), widget (QRadioButton, horizontalRadioButton)
-#: rc.cpp:32
+#: rc.cpp:71
 msgid "Horizontal"
 msgstr "Coûtchî"
 
 #. i18n: file: app/imageviewconfigpage.ui:276
 #. i18n: ectx: property (text), widget (QRadioButton, verticalRadioButton)
-#: rc.cpp:35
+#: rc.cpp:74
 msgid "Vertical"
 msgstr "Astampé"
 
 #. i18n: file: app/imageviewconfigpage.ui:298
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:38
+#: rc.cpp:77
 msgid "Row count:"
 msgstr "Contaedje des royes :"
 
-#. i18n: file: app/gwenviewui.rc:56
-#. i18n: ectx: Menu (rating)
-#: rc.cpp:41
-msgid "&Rating"
-msgstr "P&réjhaedje"
+#. i18n: file: app/fullscreenconfigdialog.ui:16
+#. i18n: ectx: property (text), widget (QLabel, mSlideShowTitle)
+#: rc.cpp:80
+msgid "Slideshow"
+msgstr "Diaporama"
 
-#. i18n: file: app/gwenviewui.rc:85
-#. i18n: ectx: Menu (plugins)
-#: rc.cpp:44
-msgid "&Plugins"
-msgstr "&Tchôke-divins"
+#. i18n: file: app/fullscreenconfigdialog.ui:26
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:83
+msgid "Interval:"
+msgstr "Totes les :"
 
-#. i18n: file: app/gwenviewui.rc:88
-#. i18n: ectx: Menu (settings)
-#: rc.cpp:47
-msgid "&Settings"
-msgstr "A&pontiaedjes"
+#. i18n: file: app/fullscreenconfigdialog.ui:72
+#. i18n: ectx: property (text), widget (QCheckBox, mSlideShowLoopCheckBox)
+#: rc.cpp:86
+msgid "Loop"
+msgstr "È rond"
 
-#. i18n: file: app/gwenviewui.rc:101
-#. i18n: ectx: ToolBar (mainToolBar)
-#. i18n: file: part/gvpart.rc:15
-#. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:50 rc.cpp:286
-msgid "Main Toolbar"
-msgstr "Mwaisse bår ås usteyes"
+#. i18n: file: app/fullscreenconfigdialog.ui:79
+#. i18n: ectx: property (text), widget (QCheckBox, mSlideShowRandomCheckBox)
+#: rc.cpp:89
+msgid "Random"
+msgstr "A l' astcheyance"
 
-#. i18n: file: app/startpage.ui:34
-#. i18n: ectx: property (text), widget (QLabel, mHistoryDisabledLabel)
-#: rc.cpp:53
-msgid "History has been disabled."
-msgstr "L' istwere a stî essoctêye."
+#. i18n: file: app/fullscreenconfigdialog.ui:86
+#. i18n: ectx: property (text), widget (QLabel, mMetaDataTitle)
+#: rc.cpp:92
+msgid "Metadata"
+msgstr "Meta-dnêyes"
 
-#. i18n: file: app/startpage.ui:51
-#. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: rc.cpp:56
-msgid "Recent Folders"
-msgstr "Ridants d' enawaire"
+#. i18n: file: app/fullscreenconfigdialog.ui:98
+#. i18n: ectx: property (text), widget (QPushButton, mConfigureDisplayedInformationButton)
+#: rc.cpp:95
+msgid "Configure Displayed Metadata..."
+msgstr "Apontyî les meta-dnêyes håynêyes..."
 
-#. i18n: file: app/startpage.ui:65
-#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: rc.cpp:59
-msgid "Recent URLs"
-msgstr "URL d' enawaire"
+#. i18n: file: app/fullscreenconfigdialog.ui:120
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:98
+msgid "Appearance"
+msgstr "Rivnance"
 
-#. i18n: file: app/startpage.ui:109
-#. i18n: ectx: attribute (title), widget (QWidget, placesTab)
-#: rc.cpp:62
-msgid "Places"
-msgstr "Eplaeçmints"
+#. i18n: file: app/fullscreenconfigdialog.ui:130
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:101
+msgid "Theme:"
+msgstr "Tinme:"
 
-#. i18n: file: app/startpage.ui:132
-#. i18n: ectx: attribute (title), widget (QWidget, tagsTab)
-#: rc.cpp:65
-msgid "Tags"
-msgstr "Etiketes"
+#. i18n: file: app/fullscreenconfigdialog.ui:143
+#. i18n: ectx: property (text), widget (QCheckBox, mShowThumbnailsCheckBox)
+#: rc.cpp:104
+msgid "Show thumbnails"
+msgstr "Mostrer prévoeyaedjes"
 
-#. i18n: file: app/startpage.ui:138
-#. i18n: ectx: property (text), widget (QLabel, mTagLabel)
-#: rc.cpp:68
-#, fuzzy
-#| msgid ""
-#| "Sorry, browsing by tag is not available. Make sure Nepomuk is properly "
-#| "installed on your computer."
-msgid ""
-"Browsing by tags is not available. Make sure Nepomuk is properly installed "
-"on your computer."
-msgstr ""
-"Dji rgrete mins l' foytaedje pas etikete n' est nén disponibe. Soeyoz seur "
-"ki Nepomuk est astalé comifåt so vosse copiutrece."
+#. i18n: file: app/fullscreenconfigdialog.ui:155
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:107
+msgid "Height:"
+msgstr "Hôteur :"
+
+#. i18n: file: app/fullscreenconfigdialog.ui:223
+#. i18n: ectx: property (text), widget (QPushButton, mCloseButton)
+#: rc.cpp:110
+msgid "Close"
+msgstr "Clôre"
 
 #. i18n: file: app/advancedconfigpage.ui:17
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:71
+#: rc.cpp:113
 msgid "Cache:"
 msgstr "Muchete :"
 
 #. i18n: file: app/advancedconfigpage.ui:29
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_DeleteThumbnailCacheOnExit)
-#: rc.cpp:74
+#: rc.cpp:116
 msgid "Delete thumbnail cache folder on exit"
 msgstr "Disfacer l' ridant del muchete des prévoeyaedjes cwand dj' mousse foû"
 
 #. i18n: file: app/advancedconfigpage.ui:52
 #. i18n: ectx: property (text), widget (QLabel, cacheHelpLabel)
-#: rc.cpp:77
+#: rc.cpp:119
 msgid ""
 "Enable this option if you do not have a lot of disk space.\n"
 "Be careful: this will delete the folder named <filename>.thumbnails</"
@@ -1438,139 +1518,59 @@ msgstr ""
 
 #. i18n: file: app/advancedconfigpage.ui:78
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:81
+#: rc.cpp:123
 msgid "History:"
 msgstr "Istwere :"
 
 #. i18n: file: app/advancedconfigpage.ui:90
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_HistoryEnabled)
-#: rc.cpp:84
+#: rc.cpp:126
 msgid "Remember folders and URLs"
 msgstr "Si sovni des ridants eyet URL"
 
-#. i18n: file: app/semanticinfosidebaritem.ui:22
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:87
-msgid "Rating:"
-msgstr "Préjhaedje:"
-
-#. i18n: file: app/semanticinfosidebaritem.ui:42
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:90
-msgid "Tags:"
-msgstr "Etiketes:"
-
-#. i18n: file: app/generalconfigpage.ui:17
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:93
-#, fuzzy
-#| msgid "&View background color:"
-msgid "Background color:"
-msgstr "&Vey coleur di fond:"
-
-#. i18n: file: app/generalconfigpage.ui:51
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:96
-msgid "Videos:"
-msgstr ""
-
-#. i18n: file: app/generalconfigpage.ui:58
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ListVideos)
-#: rc.cpp:99
-#, fuzzy
-#| msgid "Show Sidebar"
-msgid "Show videos"
-msgstr "Håyner l' bår di costé"
-
-#. i18n: file: app/thumbnailviewpanel.ui:64
-#. i18n: ectx: property (text), widget (Gwenview::StatusBarToolButton, mAddFilterButton)
-#: rc.cpp:102
-msgid "Add Filter"
-msgstr "Radjouter ene passete"
-
-#. i18n: file: app/semanticinfodialog.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, SemanticInfoDialog)
-#: rc.cpp:105
-msgid "Tag Editor"
-msgstr "Aspougneu d' etikete"
-
-#. i18n: file: app/semanticinfodialog.ui:31
-#. i18n: ectx: property (text), widget (QPushButton, mPreviousButton)
-#: rc.cpp:108
-msgid "Previous"
-msgstr "Di dvant"
-
-#. i18n: file: app/semanticinfodialog.ui:38
-#. i18n: ectx: property (text), widget (QPushButton, mNextButton)
-#: rc.cpp:111
-msgid "Next"
-msgstr "Shuvante"
-
-#. i18n: file: app/fullscreenconfigdialog.ui:16
-#. i18n: ectx: property (text), widget (QLabel, mSlideShowTitle)
-#: rc.cpp:114
-msgid "Slideshow"
-msgstr "Diaporama"
-
-#. i18n: file: app/fullscreenconfigdialog.ui:26
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:117
-msgid "Interval:"
-msgstr "Totes les :"
-
-#. i18n: file: app/fullscreenconfigdialog.ui:72
-#. i18n: ectx: property (text), widget (QCheckBox, mSlideShowLoopCheckBox)
-#: rc.cpp:120
-msgid "Loop"
-msgstr "È rond"
-
-#. i18n: file: app/fullscreenconfigdialog.ui:79
-#. i18n: ectx: property (text), widget (QCheckBox, mSlideShowRandomCheckBox)
-#: rc.cpp:123
-msgid "Random"
-msgstr "A l' astcheyance"
-
-#. i18n: file: app/fullscreenconfigdialog.ui:86
-#. i18n: ectx: property (text), widget (QLabel, mMetaDataTitle)
-#: rc.cpp:126
-msgid "Metadata"
-msgstr "Meta-dnêyes"
-
-#. i18n: file: app/fullscreenconfigdialog.ui:98
-#. i18n: ectx: property (text), widget (QPushButton, mConfigureDisplayedInformationButton)
+#. i18n: file: app/startpage.ui:34
+#. i18n: ectx: property (text), widget (QLabel, mHistoryDisabledLabel)
 #: rc.cpp:129
-msgid "Configure Displayed Metadata..."
-msgstr "Apontyî les meta-dnêyes håynêyes..."
+msgid "History has been disabled."
+msgstr "L' istwere a stî essoctêye."
 
-#. i18n: file: app/fullscreenconfigdialog.ui:120
-#. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: file: app/startpage.ui:51
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
 #: rc.cpp:132
-msgid "Appearance"
-msgstr "Rivnance"
+msgid "Recent Folders"
+msgstr "Ridants d' enawaire"
 
-#. i18n: file: app/fullscreenconfigdialog.ui:130
-#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: file: app/startpage.ui:65
+#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
 #: rc.cpp:135
-msgid "Theme:"
-msgstr "Tinme:"
+msgid "Recent URLs"
+msgstr "URL d' enawaire"
 
-#. i18n: file: app/fullscreenconfigdialog.ui:143
-#. i18n: ectx: property (text), widget (QCheckBox, mShowThumbnailsCheckBox)
+#. i18n: file: app/startpage.ui:109
+#. i18n: ectx: attribute (title), widget (QWidget, placesTab)
 #: rc.cpp:138
-msgid "Show thumbnails"
-msgstr "Mostrer prévoeyaedjes"
+msgid "Places"
+msgstr "Eplaeçmints"
 
-#. i18n: file: app/fullscreenconfigdialog.ui:155
-#. i18n: ectx: property (text), widget (QLabel, label_5)
+#. i18n: file: app/startpage.ui:132
+#. i18n: ectx: attribute (title), widget (QWidget, tagsTab)
 #: rc.cpp:141
-msgid "Height:"
-msgstr "Hôteur :"
+msgid "Tags"
+msgstr "Etiketes"
 
-#. i18n: file: app/fullscreenconfigdialog.ui:223
-#. i18n: ectx: property (text), widget (QPushButton, mCloseButton)
+#. i18n: file: app/startpage.ui:138
+#. i18n: ectx: property (text), widget (QLabel, mTagLabel)
 #: rc.cpp:144
-msgid "Close"
-msgstr "Clôre"
+#, fuzzy
+#| msgid ""
+#| "Sorry, browsing by tag is not available. Make sure Nepomuk is properly "
+#| "installed on your computer."
+msgid ""
+"Browsing by tags is not available. Make sure Nepomuk is properly installed "
+"on your computer."
+msgstr ""
+"Dji rgrete mins l' foytaedje pas etikete n' est nén disponibe. Soeyoz seur "
+"ki Nepomuk est astalé comifåt so vosse copiutrece."
 
 #. i18n: file: importer/importerconfigdialog.ui:17
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutoRename)
@@ -1730,45 +1730,9 @@ msgstr "Pôces"
 msgid "Keep ratio"
 msgstr "Wårder li rapoirt"
 
-#. i18n: file: lib/resize/resizeimagewidget.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, ResizeImageWidget)
-#: rc.cpp:235
-msgid "Image Resizing"
-msgstr "Candjî grandeu d' l' imådje"
-
-#. i18n: file: lib/resize/resizeimagewidget.ui:20
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:238
-#, fuzzy
-#| msgid "Enter the new size of the image:"
-msgid "Enter the new size for this image."
-msgstr "Dinez l' novele grandeu d' l' imådje:"
-
-#. i18n: file: lib/resize/resizeimagewidget.ui:32
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:241
-msgid "Current size:"
-msgstr ""
-
-#. i18n: file: lib/resize/resizeimagewidget.ui:88
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:245
-#, fuzzy
-#| msgid "Size:"
-msgid "New Size:"
-msgstr "Grandeu :"
-
-#. i18n: file: lib/resize/resizeimagewidget.ui:135
-#. i18n: ectx: property (text), widget (QCheckBox, mKeepAspectCheckBox)
-#: rc.cpp:249
-#, fuzzy
-#| msgid "Keep ratio"
-msgid "Keep aspect ratio"
-msgstr "Wårder li rapoirt"
-
 #. i18n: file: lib/gwenviewconfig.kcfg:30
 #. i18n: ectx: whatsthis, entry (PercentageOfMemoryUsageWarning), group (General)
-#: rc.cpp:252
+#: rc.cpp:235
 msgid ""
 "The percentage of memory used by Gwenview before it\n"
 "\t\t\twarns the user and suggest saving changes."
@@ -1778,7 +1742,7 @@ msgstr ""
 
 #. i18n: file: lib/gwenviewconfig.kcfg:38
 #. i18n: ectx: whatsthis, entry (BlackListedExtensions), group (General)
-#: rc.cpp:256
+#: rc.cpp:239
 #, fuzzy
 #| msgid ""
 #| "A list of filename extensions Gwenview should not try to\n"
@@ -1797,33 +1761,69 @@ msgstr ""
 
 #. i18n: file: lib/gwenviewconfig.kcfg:190
 #. i18n: ectx: label, entry (random), group (slide show)
-#: rc.cpp:262
+#: rc.cpp:245
 msgid "Display slide show images in random order"
 msgstr "Håyner on diaporama des imådjes dins èn ôre a l' astcheyance."
 
 #. i18n: file: lib/gwenviewconfig.kcfg:194
 #. i18n: ectx: label, entry (fullscreen), group (slide show)
-#: rc.cpp:265
+#: rc.cpp:248
 msgid "Show slideshow in fullscreen mode"
 msgstr "Mostrer diaporama e môde tote li waitroûle"
 
 #. i18n: file: lib/gwenviewconfig.kcfg:198
 #. i18n: ectx: label, entry (loop), group (slide show)
-#: rc.cpp:268
+#: rc.cpp:251
 msgid "Loop on images"
 msgstr "Tourner el blouke so ls imådjes"
 
 #. i18n: file: lib/gwenviewconfig.kcfg:202
 #. i18n: ectx: label, entry (stopAtEnd), group (slide show)
-#: rc.cpp:271
+#: rc.cpp:254
 msgid "Stop at last image of folder"
 msgstr "Arester al dierinne imådje do ridant"
 
 #. i18n: file: lib/gwenviewconfig.kcfg:206
 #. i18n: ectx: label, entry (interval), group (slide show)
-#: rc.cpp:274
+#: rc.cpp:257
 msgid "Interval between images (in seconds)"
 msgstr "Tins inte les imådjes (e segondes)"
+
+#. i18n: file: lib/resize/resizeimagewidget.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, ResizeImageWidget)
+#: rc.cpp:263
+msgid "Image Resizing"
+msgstr "Candjî grandeu d' l' imådje"
+
+#. i18n: file: lib/resize/resizeimagewidget.ui:20
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:266
+#, fuzzy
+#| msgid "Enter the new size of the image:"
+msgid "Enter the new size for this image."
+msgstr "Dinez l' novele grandeu d' l' imådje:"
+
+#. i18n: file: lib/resize/resizeimagewidget.ui:32
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:269
+msgid "Current size:"
+msgstr ""
+
+#. i18n: file: lib/resize/resizeimagewidget.ui:88
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:273
+#, fuzzy
+#| msgid "Size:"
+msgid "New Size:"
+msgstr "Grandeu :"
+
+#. i18n: file: lib/resize/resizeimagewidget.ui:135
+#. i18n: ectx: property (text), widget (QCheckBox, mKeepAspectCheckBox)
+#: rc.cpp:277
+#, fuzzy
+#| msgid "Keep ratio"
+msgid "Keep aspect ratio"
+msgstr "Wårder li rapoirt"
 
 #. i18n: file: part/gvpart.rc:4
 #. i18n: ectx: Menu (file)
