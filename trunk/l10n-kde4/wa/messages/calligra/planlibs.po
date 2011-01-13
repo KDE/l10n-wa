@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-12 03:04+0100\n"
+"POT-Creation-Date: 2011-01-13 03:01+0100\n"
 "PO-Revision-Date: 2009-08-20 10:18+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -289,8 +289,7 @@ msgstr "Lete, pititès letes"
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:344
 #. i18n: ectx: property (text), item, widget (KComboBox, risk)
 #: kernel/kptnode.cpp:136 kernel/kptnode.cpp:1503 kernel/kpttask.cpp:3631
-#: models/kptresourceallocationmodel.cpp:743 models/kptschedulemodel.cpp:458
-#: models/kptschedulemodel.cpp:460 models/kpttreecombobox.cpp:124
+#: models/kptresourceallocationmodel.cpp:743 models/kpttreecombobox.cpp:124
 #: models/kptnodeitemmodel.cpp:355 models/kptnodeitemmodel.cpp:366
 #: models/kptnodeitemmodel.cpp:371 models/kptnodeitemmodel.cpp:381
 #: models/kptnodeitemmodel.cpp:557 models/kptnodeitemmodel.cpp:563
@@ -300,6 +299,7 @@ msgstr "Lete, pititès letes"
 #: models/kptnodeitemmodel.cpp:659 models/kptresourcemodel.cpp:189
 #: models/kptresourcemodel.cpp:221 models/kptresourcemodel.cpp:342
 #: models/kptresourcemodel.cpp:346 models/kptresourcemodel.cpp:355
+#: models/kptschedulemodel.cpp:458 models/kptschedulemodel.cpp:460
 #: ui/kptpertresult.cpp:138 ui/kptpertresult.cpp:489
 #: ui/kptresourcedialog.cpp:260 ui/kptresourcedialog.cpp:286
 #: ui/kpttaskcostpanel.cpp:49 ui/kpttaskgeneralpanel.cpp:70 rc.cpp:536
@@ -338,7 +338,7 @@ msgstr "Frecwince:"
 msgid "Summary"
 msgstr "Rascourti"
 
-#: kernel/kptnode.cpp:602 kernel/kptglobal.cpp:43 kernel/kptschedule.cpp:1748
+#: kernel/kptnode.cpp:602 kernel/kptglobal.cpp:43 kernel/kptschedule.cpp:1770
 #: models/kptschedulemodel.cpp:664
 msgid "Not scheduled"
 msgstr "Nén programé"
@@ -524,47 +524,6 @@ msgstr "Nole rissource acoirdêye"
 msgid "Cannot fulfill constraints"
 msgstr "Dji n' sai passer les stronnas"
 
-#: kernel/kptschedule.cpp:121 kernel/kptschedule.cpp:126
-msgid "Expected"
-msgstr "Ratindou "
-
-#: kernel/kptschedule.cpp:123
-#, fuzzy
-msgid "Optimistic"
-msgstr "Optimisse:"
-
-#: kernel/kptschedule.cpp:125
-#, fuzzy
-msgid "Pessimistic"
-msgstr "Pessimisse:"
-
-#: kernel/kptschedule.cpp:1336
-msgid "Info"
-msgstr "Informåcion"
-
-#: kernel/kptschedule.cpp:1337
-msgid "Warning"
-msgstr "Asteme"
-
-#: kernel/kptschedule.cpp:1338 kernel/kptschedule.cpp:1752
-#: kernel/kptschedule.cpp:1757 kernel/kptschedule.cpp:1762
-#: models/kptnodeitemmodel.cpp:1468 models/kptnodeitemmodel.cpp:1490
-#: models/kptnodeitemmodel.cpp:1512 models/kptnodeitemmodel.cpp:1534
-#: models/kptnodeitemmodel.cpp:1556 models/kptnodeitemmodel.cpp:1578
-msgid "Error"
-msgstr "Aroke:"
-
-#: kernel/kptschedule.cpp:1742
-#, fuzzy
-msgid "Baselined"
-msgstr "Referince"
-
-#: kernel/kptschedule.cpp:1745
-#, fuzzy
-#| msgid "Scheduling Log"
-msgid "Scheduling"
-msgstr "Djournå d' programaedje"
-
 #: kernel/kpttask.cpp:1087
 msgid "Calculate early finish "
 msgstr "Cårculer finixhaedje timpe"
@@ -684,6 +643,47 @@ msgstr "Evoyî"
 msgid "Receive"
 msgstr "Oister"
 
+#: kernel/kptschedule.cpp:135 kernel/kptschedule.cpp:140
+msgid "Expected"
+msgstr "Ratindou "
+
+#: kernel/kptschedule.cpp:137
+#, fuzzy
+msgid "Optimistic"
+msgstr "Optimisse:"
+
+#: kernel/kptschedule.cpp:139
+#, fuzzy
+msgid "Pessimistic"
+msgstr "Pessimisse:"
+
+#: kernel/kptschedule.cpp:1358
+msgid "Info"
+msgstr "Informåcion"
+
+#: kernel/kptschedule.cpp:1359
+msgid "Warning"
+msgstr "Asteme"
+
+#: kernel/kptschedule.cpp:1360 kernel/kptschedule.cpp:1774
+#: kernel/kptschedule.cpp:1779 kernel/kptschedule.cpp:1784
+#: models/kptnodeitemmodel.cpp:1468 models/kptnodeitemmodel.cpp:1490
+#: models/kptnodeitemmodel.cpp:1512 models/kptnodeitemmodel.cpp:1534
+#: models/kptnodeitemmodel.cpp:1556 models/kptnodeitemmodel.cpp:1578
+msgid "Error"
+msgstr "Aroke:"
+
+#: kernel/kptschedule.cpp:1764
+#, fuzzy
+msgid "Baselined"
+msgstr "Referince"
+
+#: kernel/kptschedule.cpp:1767
+#, fuzzy
+#| msgid "Scheduling Log"
+msgid "Scheduling"
+msgstr "Djournå d' programaedje"
+
 #: models/kcalendar/kdatepicker.cpp:116
 #, fuzzy, kde-format
 #| msgctxt "Week number"
@@ -743,11 +743,12 @@ msgstr "Difacer conte"
 #. i18n: file: ui/kptresourceassignmentview.ui:27
 #. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
 #: models/kptaccountsmodel.cpp:122 models/kptaccountsmodel.cpp:1020
-#: models/kptresourceallocationmodel.cpp:332 models/kptschedulemodel.cpp:736
-#: models/kptschedulemodel.cpp:962 models/kptresourceappointmentsmodel.cpp:908
+#: models/kptresourceallocationmodel.cpp:332
+#: models/kptresourceappointmentsmodel.cpp:908
 #: models/kptresourceappointmentsmodel.cpp:923
 #: models/kptresourceappointmentsmodel.cpp:1496
-#: models/kptcalendarmodel.cpp:423 models/kptresourcemodel.cpp:425 rc.cpp:316
+#: models/kptcalendarmodel.cpp:423 models/kptresourcemodel.cpp:425
+#: models/kptschedulemodel.cpp:736 models/kptschedulemodel.cpp:994 rc.cpp:316
 msgid "Name"
 msgstr "No"
 
@@ -1601,111 +1602,6 @@ msgstr ""
 msgctxt "@info:tooltip"
 msgid "Team resources cannot have required resources"
 msgstr ""
-
-#: models/kptschedulemodel.cpp:351
-#, fuzzy
-msgid "Modify schedule name"
-msgstr "Candjî calindrî"
-
-#: models/kptschedulemodel.cpp:418 models/kptschedulemodel.cpp:420
-msgid "Allow"
-msgstr "Permete"
-
-#: models/kptschedulemodel.cpp:418 models/kptschedulemodel.cpp:420
-msgid "Avoid"
-msgstr ""
-
-#: models/kptschedulemodel.cpp:440
-msgid "Modify allow overbooking"
-msgstr ""
-
-#: models/kptschedulemodel.cpp:458 models/kptschedulemodel.cpp:460
-msgid "PERT"
-msgstr "PERT"
-
-#: models/kptschedulemodel.cpp:480
-#, fuzzy
-msgid "Modify scheduling distribution"
-msgstr "Candjî completaedje del bouye"
-
-#: models/kptschedulemodel.cpp:498 models/kptschedulemodel.cpp:500
-msgid "All"
-msgstr "Totafwait"
-
-#: models/kptschedulemodel.cpp:498 models/kptschedulemodel.cpp:500
-msgid "Expected only"
-msgstr ""
-
-#: models/kptschedulemodel.cpp:584 models/kptschedulemodel.cpp:586
-msgid "Backwards"
-msgstr ""
-
-#: models/kptschedulemodel.cpp:584 models/kptschedulemodel.cpp:586
-msgid "Forward"
-msgstr "En avant"
-
-#: models/kptschedulemodel.cpp:606
-#, fuzzy
-msgid "Modify scheduling direction"
-msgstr "Candjî completaedje del bouye"
-
-#: models/kptschedulemodel.cpp:624
-#, fuzzy
-#| msgid "Unknown"
-msgid "Unknown"
-msgstr "Nén cnoxhou"
-
-#: models/kptschedulemodel.cpp:646
-#, fuzzy
-#| msgid "Not scheduled"
-msgid "Modify scheduler"
-msgstr "Nén programé"
-
-#: models/kptschedulemodel.cpp:737
-#, fuzzy
-msgid "State"
-msgstr "Ataké"
-
-#: models/kptschedulemodel.cpp:738
-#, fuzzy
-msgid "Direction"
-msgstr "Durêye"
-
-#: models/kptschedulemodel.cpp:739
-msgid "Overbooking"
-msgstr "Forrezervaedje"
-
-#: models/kptschedulemodel.cpp:740
-#, fuzzy
-msgid "Distribution"
-msgstr "Discrijhaedje"
-
-#: models/kptschedulemodel.cpp:742
-#, fuzzy
-msgid "Planned Start"
-msgstr "Efoirt planifyî"
-
-#: models/kptschedulemodel.cpp:743
-msgid "Planned Finish"
-msgstr ""
-
-#: models/kptschedulemodel.cpp:744
-#, fuzzy
-msgid "Scheduler"
-msgstr "Programaedje:"
-
-#: models/kptschedulemodel.cpp:962
-#, fuzzy
-msgid "Phase"
-msgstr "Pådje:"
-
-#: models/kptschedulemodel.cpp:962
-msgid "Severity"
-msgstr "Severité"
-
-#: models/kptschedulemodel.cpp:962
-msgid "Message"
-msgstr "Messaedje"
 
 #: models/kpttaskstatusmodel.cpp:50 ui/kptresourceassignmentview.cpp:255
 #: ui/kptresourceassignmentview.cpp:333
@@ -3019,6 +2915,111 @@ msgstr[1] "Candjî rissource"
 #, fuzzy
 msgid "Add resource group"
 msgstr "Radjouter groupe di rsource..."
+
+#: models/kptschedulemodel.cpp:351
+#, fuzzy
+msgid "Modify schedule name"
+msgstr "Candjî calindrî"
+
+#: models/kptschedulemodel.cpp:418 models/kptschedulemodel.cpp:420
+msgid "Allow"
+msgstr "Permete"
+
+#: models/kptschedulemodel.cpp:418 models/kptschedulemodel.cpp:420
+msgid "Avoid"
+msgstr ""
+
+#: models/kptschedulemodel.cpp:440
+msgid "Modify allow overbooking"
+msgstr ""
+
+#: models/kptschedulemodel.cpp:458 models/kptschedulemodel.cpp:460
+msgid "PERT"
+msgstr "PERT"
+
+#: models/kptschedulemodel.cpp:480
+#, fuzzy
+msgid "Modify scheduling distribution"
+msgstr "Candjî completaedje del bouye"
+
+#: models/kptschedulemodel.cpp:498 models/kptschedulemodel.cpp:500
+msgid "All"
+msgstr "Totafwait"
+
+#: models/kptschedulemodel.cpp:498 models/kptschedulemodel.cpp:500
+msgid "Expected only"
+msgstr ""
+
+#: models/kptschedulemodel.cpp:584 models/kptschedulemodel.cpp:586
+msgid "Backwards"
+msgstr ""
+
+#: models/kptschedulemodel.cpp:584 models/kptschedulemodel.cpp:586
+msgid "Forward"
+msgstr "En avant"
+
+#: models/kptschedulemodel.cpp:606
+#, fuzzy
+msgid "Modify scheduling direction"
+msgstr "Candjî completaedje del bouye"
+
+#: models/kptschedulemodel.cpp:624
+#, fuzzy
+#| msgid "Unknown"
+msgid "Unknown"
+msgstr "Nén cnoxhou"
+
+#: models/kptschedulemodel.cpp:646
+#, fuzzy
+#| msgid "Not scheduled"
+msgid "Modify scheduler"
+msgstr "Nén programé"
+
+#: models/kptschedulemodel.cpp:737
+#, fuzzy
+msgid "State"
+msgstr "Ataké"
+
+#: models/kptschedulemodel.cpp:738
+#, fuzzy
+msgid "Direction"
+msgstr "Durêye"
+
+#: models/kptschedulemodel.cpp:739
+msgid "Overbooking"
+msgstr "Forrezervaedje"
+
+#: models/kptschedulemodel.cpp:740
+#, fuzzy
+msgid "Distribution"
+msgstr "Discrijhaedje"
+
+#: models/kptschedulemodel.cpp:742
+#, fuzzy
+msgid "Planned Start"
+msgstr "Efoirt planifyî"
+
+#: models/kptschedulemodel.cpp:743
+msgid "Planned Finish"
+msgstr ""
+
+#: models/kptschedulemodel.cpp:744
+#, fuzzy
+msgid "Scheduler"
+msgstr "Programaedje:"
+
+#: models/kptschedulemodel.cpp:994
+#, fuzzy
+msgid "Phase"
+msgstr "Pådje:"
+
+#: models/kptschedulemodel.cpp:994
+msgid "Severity"
+msgstr "Severité"
+
+#: models/kptschedulemodel.cpp:994
+msgid "Message"
+msgstr "Messaedje"
 
 #: ui/kptaccountseditor.cpp:224
 msgid "Add Account"
