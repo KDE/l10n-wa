@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-22 02:56+0100\n"
+"POT-Creation-Date: 2011-01-23 02:54+0100\n"
 "PO-Revision-Date: 2011-01-17 21:45+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -1263,22 +1263,6 @@ msgstr "Raddisté"
 msgid "Accuracy"
 msgstr "Sipepieuzisté"
 
-#: browsers/playlistbrowser/DynamicModel.cpp:99
-#: browsers/playlistbrowser/DynamicModel.cpp:179
-#: browsers/playlistbrowser/DynamicModel.cpp:563
-#: widgets/SmartPlaylistEditor.cpp:238
-msgid "Random"
-msgstr "A l' astcheyance"
-
-#: browsers/playlistbrowser/DynamicModel.cpp:229
-#, kde-format
-msgid "%1 (modified) "
-msgstr "%1 (candjî) "
-
-#: browsers/playlistbrowser/DynamicModel.cpp:564
-msgid "Random (modified)"
-msgstr "A l' astcheyance (candjî)"
-
 #: browsers/playlistbrowser/PodcastModel.cpp:73
 msgctxt "toggle the \"new\" status of this podcast episode"
 msgid "&New"
@@ -1413,6 +1397,22 @@ msgstr "Novea no"
 msgctxt "Enter a new name for a folder that already exists"
 msgid "Enter new folder name:"
 msgstr "Tapez li no do novea ridant :"
+
+#: browsers/playlistbrowser/DynamicModel.cpp:95
+#: browsers/playlistbrowser/DynamicModel.cpp:175
+#: browsers/playlistbrowser/DynamicModel.cpp:559
+#: widgets/SmartPlaylistEditor.cpp:238
+msgid "Random"
+msgstr "A l' astcheyance"
+
+#: browsers/playlistbrowser/DynamicModel.cpp:225
+#, kde-format
+msgid "%1 (modified) "
+msgstr "%1 (candjî) "
+
+#: browsers/playlistbrowser/DynamicModel.cpp:560
+msgid "Random (modified)"
+msgstr "A l' astcheyance (candjî)"
 
 #: browsers/servicebrowser/ServiceBrowser.cpp:44
 msgid ""
@@ -1619,7 +1619,7 @@ msgid "Edit Track Details"
 msgstr "Candjî detays do boket"
 
 #: context/applets/albums/Albums.cpp:63
-#: context/engines/current/CurrentEngine.cpp:134
+#: context/engines/current/CurrentEngine.cpp:133
 msgid "Recently added albums"
 msgstr "Alboms radjoutés dierinnmint"
 
@@ -1785,7 +1785,7 @@ msgid "Reload"
 msgstr "Ritcherdjî"
 
 #: context/applets/labels/LabelsApplet.cpp:176
-#: context/engines/current/CurrentEngine.cpp:126 mac/GrowlInterface.cpp:43
+#: context/engines/current/CurrentEngine.cpp:125 mac/GrowlInterface.cpp:43
 #: widgets/Osd.cpp:623 EngineController.cpp:1409
 msgid "No track playing"
 msgstr "Nou boket di djouwé"
@@ -2381,7 +2381,14 @@ msgstr ""
 "Radjoutez s' i vs plait des apliketes del bår ås usteyes al valêye del vuwe "
 "do contecse."
 
-#: context/engines/current/CurrentEngine.cpp:208
+#: context/engines/current/CurrentEngine.cpp:205
+#, fuzzy
+#| msgid "Albums"
+msgctxt "Header text for current album applet"
+msgid "Albums"
+msgstr "Alboms"
+
+#: context/engines/current/CurrentEngine.cpp:216
 #, kde-format
 msgid "Albums by %1"
 msgstr "Alboms di %1"
@@ -3405,18 +3412,18 @@ msgstr ""
 "p><p>I gn a trop d' arokes k' ont stî trovêyes sol corwaitaedje.</p>"
 
 #: core-impl/meta/default/DefaultMetaTypes.h:39
-#: core-impl/meta/default/DefaultMetaTypes.h:77
-#: core-impl/meta/default/DefaultMetaTypes.h:94
-#: services/scriptable/ScriptableServiceMeta_p.h:108
-#: services/scriptable/ScriptableServiceMeta_p.h:166
-#: services/scriptable/ScriptableServiceMeta_p.h:215
-#: services/scriptable/ScriptableServiceMeta_p.h:258
-#: services/scriptable/ScriptableServiceMeta_p.h:300
+#: core-impl/meta/default/DefaultMetaTypes.h:75
+#: core-impl/meta/default/DefaultMetaTypes.h:92
+#: services/scriptable/ScriptableServiceMeta_p.h:103
+#: services/scriptable/ScriptableServiceMeta_p.h:161
+#: services/scriptable/ScriptableServiceMeta_p.h:210
+#: services/scriptable/ScriptableServiceMeta_p.h:253
+#: services/scriptable/ScriptableServiceMeta_p.h:295
 msgctxt "The value is not known"
 msgid "Unknown"
 msgstr "Nén cnoxhou"
 
-#: core-impl/meta/default/DefaultMetaTypes.h:60
+#: core-impl/meta/default/DefaultMetaTypes.h:58
 msgctxt "The Value is not known"
 msgid "Unknown"
 msgstr "Nén cnoxhou"
@@ -5393,97 +5400,91 @@ msgstr "Nén cnoxhou"
 msgid "Tracks by this Artist"
 msgstr "Fé ene rimåke po cist årtisse"
 
-#: dialogs/TagDialog.cpp:938
-#, fuzzy
-#| msgid "Album Artist"
-msgid "Albums by this Artist"
-msgstr "Albom Årtisse"
-
-#: dialogs/TagDialog.cpp:995
+#: dialogs/TagDialog.cpp:1000
 #, kde-format
 msgid "Track Details: %1 by %2"
 msgstr "Detays do boket: %1 di %2"
 
-#: dialogs/TagDialog.cpp:1019 dialogs/TagDialog.cpp:1029
+#: dialogs/TagDialog.cpp:1024 dialogs/TagDialog.cpp:1034
 #, kde-format
 msgid "<b>%1</b> by <b>%2</b>"
 msgstr "<b>%1</b> di <b>%2</b>"
 
-#: dialogs/TagDialog.cpp:1027
+#: dialogs/TagDialog.cpp:1032
 #, kde-format
 msgid "<b>%1</b> by <b>%2</b> on <b>%3</b>"
 msgstr "<b>%1</b> di <b>%2</b> e <b>%3</b>"
 
-#: dialogs/TagDialog.cpp:1031
+#: dialogs/TagDialog.cpp:1036
 #, kde-format
 msgid "<b>%1</b>"
 msgstr "<b>%1</b>"
 
-#: dialogs/TagDialog.cpp:1078
+#: dialogs/TagDialog.cpp:1083
 msgid "Length:"
 msgstr "Longueur:"
 
-#: dialogs/TagDialog.cpp:1079
+#: dialogs/TagDialog.cpp:1084
 msgid "Bit rate:"
 msgstr "Roedeur des bites:"
 
-#: dialogs/TagDialog.cpp:1080
+#: dialogs/TagDialog.cpp:1085
 msgid "Sample rate:"
 msgstr "Frecwince di sampling:"
 
-#: dialogs/TagDialog.cpp:1081
+#: dialogs/TagDialog.cpp:1086
 msgid "Size:"
 msgstr "Grandeu:"
 
-#: dialogs/TagDialog.cpp:1082
+#: dialogs/TagDialog.cpp:1087
 msgid "Format:"
 msgstr "Cogne:"
 
 #. i18n: file: dialogs/TagDialogBase.ui:654
 #. i18n: ectx: property (text), widget (QLabel, scoreLabel)
-#: dialogs/TagDialog.cpp:1085 rc.cpp:1118
+#: dialogs/TagDialog.cpp:1090 rc.cpp:1118
 msgid "Score:"
 msgstr "Ponts:"
 
 #. i18n: file: dialogs/TagDialogBase.ui:686
 #. i18n: ectx: property (text), widget (QLabel, ratingLabel)
-#: dialogs/TagDialog.cpp:1087 rc.cpp:1121
+#: dialogs/TagDialog.cpp:1092 rc.cpp:1121
 msgid "Rating:"
 msgstr "Préjhaedje:"
 
-#: dialogs/TagDialog.cpp:1089
+#: dialogs/TagDialog.cpp:1094
 msgid "Play Count:"
 msgstr "Contaedje des djouwaedjes:"
 
-#: dialogs/TagDialog.cpp:1092
+#: dialogs/TagDialog.cpp:1097
 msgid "First Played:"
 msgstr "Djouwé pol prumî côp:"
 
-#: dialogs/TagDialog.cpp:1093
+#: dialogs/TagDialog.cpp:1098
 msgctxt "When this track was first played"
 msgid "Never"
 msgstr "Måy"
 
-#: dialogs/TagDialog.cpp:1094
+#: dialogs/TagDialog.cpp:1099
 msgctxt "a single item (singular)"
 msgid "Last Played:"
 msgstr "Djouwé pol dierin côp:"
 
-#: dialogs/TagDialog.cpp:1095
+#: dialogs/TagDialog.cpp:1100
 msgctxt "When this track was last played"
 msgid "Never"
 msgstr "Måy"
 
-#: dialogs/TagDialog.cpp:1099
+#: dialogs/TagDialog.cpp:1104
 msgid "Collection:"
 msgstr "Ramexhnêye"
 
-#: dialogs/TagDialog.cpp:1101
+#: dialogs/TagDialog.cpp:1106
 msgctxt "The collection this track is part of"
 msgid "None"
 msgstr "Nole"
 
-#: dialogs/TagDialog.cpp:1190
+#: dialogs/TagDialog.cpp:1195
 #, kde-format
 msgctxt "The amount of tracks being edited"
 msgid "1 Track"
@@ -5491,30 +5492,30 @@ msgid_plural "Information for %1 Tracks"
 msgstr[0] "1 boket"
 msgstr[1] "Informåcions po %1 bokets"
 
-#: dialogs/TagDialog.cpp:1330
+#: dialogs/TagDialog.cpp:1335
 #, kde-format
 msgid "Editing 1 file"
 msgid_plural "Editing %1 files"
 msgstr[0] "Candjaedje d' 1 fitchî"
 msgstr[1] "Candjaedje di %1 fitchîs"
 
-#: dialogs/TagDialog.cpp:1335
+#: dialogs/TagDialog.cpp:1340
 msgid "Rated Songs:"
 msgstr "Tchansons préjheyes:"
 
-#: dialogs/TagDialog.cpp:1337
+#: dialogs/TagDialog.cpp:1342
 msgid "Average Rating:"
 msgstr "Préjaedje moyén:"
 
-#: dialogs/TagDialog.cpp:1339
+#: dialogs/TagDialog.cpp:1344
 msgid "Scored Songs:"
 msgstr "Tchansons avou des ponts:"
 
-#: dialogs/TagDialog.cpp:1341
+#: dialogs/TagDialog.cpp:1346
 msgid "Average Score:"
 msgstr "Ponts moyéns:"
 
-#: dialogs/TagDialog.cpp:1731
+#: dialogs/TagDialog.cpp:1736
 msgid ""
 "Writing to file failed. Please check permissions and available disc space."
 msgstr ""
@@ -5523,7 +5524,7 @@ msgstr ""
 
 #. i18n: file: dialogs/MusicBrainzTagger.ui:20
 #. i18n: ectx: property (windowTitle), widget (QWidget, MusicBrainzTagger)
-#: dialogs/TagDialog.cpp:1919 rc.cpp:919
+#: dialogs/TagDialog.cpp:1924 rc.cpp:919
 msgid "MusicBrainz Tagger"
 msgstr "Etiketeu MusicBrainz"
 
@@ -7426,31 +7427,6 @@ msgid ""
 "constraints to find more tracks."
 msgstr ""
 
-#: playlistgenerator/Preset.cpp:41 playlistgenerator/Preset.cpp:54
-#, fuzzy
-#| msgid "New playlist layout"
-msgid "New playlist preset"
-msgstr "Novea adjinçmint d' djivêye a djouwer"
-
-#: playlistgenerator/Preset.cpp:44 playlistgenerator/Preset.cpp:66
-#, fuzzy
-#| msgid "&Save Playlist"
-msgid "Unnamed playlist preset"
-msgstr "&Schaper djivêye a djouwer"
-
-#: playlistgenerator/Preset.cpp:128
-#, fuzzy
-#| msgid "Generating playlist..."
-msgid "Generating a new playlist"
-msgstr "Ahivaedje del djivêye a djouwer..."
-
-#: playlistgenerator/Preset.cpp:148
-msgid ""
-"The playlist generator created a playlist which does not meet all of your "
-"constraints.  If you are not satisfied with the results, try loosening or "
-"removing some constraints and then generating a new playlist."
-msgstr ""
-
 #: playlistgenerator/PresetModel.cpp:157 playlistgenerator/PresetModel.cpp:286
 msgid "Preset files (*.xml)"
 msgstr ""
@@ -7506,6 +7482,31 @@ msgstr ""
 #: playlistgenerator/PresetModel.cpp:295
 #, kde-format
 msgid "Export `%1' preset"
+msgstr ""
+
+#: playlistgenerator/Preset.cpp:40 playlistgenerator/Preset.cpp:53
+#, fuzzy
+#| msgid "New playlist layout"
+msgid "New playlist preset"
+msgstr "Novea adjinçmint d' djivêye a djouwer"
+
+#: playlistgenerator/Preset.cpp:43 playlistgenerator/Preset.cpp:65
+#, fuzzy
+#| msgid "&Save Playlist"
+msgid "Unnamed playlist preset"
+msgstr "&Schaper djivêye a djouwer"
+
+#: playlistgenerator/Preset.cpp:127
+#, fuzzy
+#| msgid "Generating playlist..."
+msgid "Generating a new playlist"
+msgstr "Ahivaedje del djivêye a djouwer..."
+
+#: playlistgenerator/Preset.cpp:147
+msgid ""
+"The playlist generator created a playlist which does not meet all of your "
+"constraints.  If you are not satisfied with the results, try loosening or "
+"removing some constraints and then generating a new playlist."
 msgstr ""
 
 #: playlistmanager/SyncedPlaylist.cpp:40 playlistmanager/SyncedPlaylist.cpp:48
@@ -14669,6 +14670,11 @@ msgstr "Pont d' groupaedje (ene seule roye)"
 #: rc.cpp:2415
 msgid "Verbose"
 msgstr "Badjawe"
+
+#, fuzzy
+#~| msgid "Album Artist"
+#~ msgid "Albums by this Artist"
+#~ msgstr "Albom Årtisse"
 
 #, fuzzy
 #~| msgid "bitrate"
