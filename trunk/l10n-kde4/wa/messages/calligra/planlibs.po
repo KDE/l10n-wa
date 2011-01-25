@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-23 03:22+0100\n"
+"POT-Creation-Date: 2011-01-25 03:40+0100\n"
 "PO-Revision-Date: 2009-08-20 10:18+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -51,7 +51,7 @@ msgctxt "@item Send the reference (url) of the document"
 msgid "Reference"
 msgstr "Referince"
 
-#: kernel/kptdocuments.cpp:211
+#: kernel/kptdocuments.cpp:211 kernel/KPlatoXmlLoaderBase.cpp:1108
 #, fuzzy, kde-format
 msgid "Document loaded, URL=%1"
 msgstr "URL do documint dedja ataetcheye: %1"
@@ -443,47 +443,6 @@ msgstr ""
 msgid "Plan"
 msgstr "Parint"
 
-#: kernel/kptschedule.cpp:135 kernel/kptschedule.cpp:140
-msgid "Expected"
-msgstr "Ratindou "
-
-#: kernel/kptschedule.cpp:137
-#, fuzzy
-msgid "Optimistic"
-msgstr "Optimisse:"
-
-#: kernel/kptschedule.cpp:139
-#, fuzzy
-msgid "Pessimistic"
-msgstr "Pessimisse:"
-
-#: kernel/kptschedule.cpp:1389
-msgid "Info"
-msgstr "Informåcion"
-
-#: kernel/kptschedule.cpp:1390
-msgid "Warning"
-msgstr "Asteme"
-
-#: kernel/kptschedule.cpp:1391 kernel/kptschedule.cpp:1805
-#: kernel/kptschedule.cpp:1810 kernel/kptschedule.cpp:1815
-#: models/kptnodeitemmodel.cpp:1468 models/kptnodeitemmodel.cpp:1490
-#: models/kptnodeitemmodel.cpp:1512 models/kptnodeitemmodel.cpp:1534
-#: models/kptnodeitemmodel.cpp:1556 models/kptnodeitemmodel.cpp:1578
-msgid "Error"
-msgstr "Aroke:"
-
-#: kernel/kptschedule.cpp:1795
-#, fuzzy
-msgid "Baselined"
-msgstr "Referince"
-
-#: kernel/kptschedule.cpp:1798
-#, fuzzy
-#| msgid "Scheduling Log"
-msgid "Scheduling"
-msgstr "Djournå d' programaedje"
-
 #: kernel/kpttask.cpp:1088
 msgid "Calculate early finish "
 msgstr "Cårculer finixhaedje timpe"
@@ -656,7 +615,7 @@ msgid "Make appointments: Invalid time"
 msgstr "Fé des radjoûs: date/eure nén valåbe"
 
 #: kernel/kptresource.cpp:799 kernel/kptresource.cpp:858
-#: kernel/kptresource.cpp:1088 kernel/kptresource.cpp:1152
+#: kernel/kptresource.cpp:1085 kernel/kptresource.cpp:1149
 #, kde-format
 msgid "Resource %1 has no calendar defined"
 msgstr "Li rsource %1 n' a pont d' calindrî defini"
@@ -674,15 +633,56 @@ msgstr "Fé des radjoûs: li date di dfén do nuk n' est nén valåbe"
 msgid "Resource %1 not available in interval: %2 to %3"
 msgstr "Rissource %1 nén disponibe inte %2 et %3"
 
-#: kernel/kptresource.cpp:2413
+#: kernel/kptresource.cpp:2410
 #, kde-format
 msgid "Could not match effort. Want: %1 got: %2"
 msgstr "Dji n' a savou fé coresponde l' efoirt. Djovleu: %1, dj' a yeu: %2"
 
-#: kernel/kptresource.cpp:2416
+#: kernel/kptresource.cpp:2413
 #, kde-format
 msgid "Resource %1 available from %2 to %3"
 msgstr "Rissource %1 disponibe di %2 a %3"
+
+#: kernel/kptschedule.cpp:135 kernel/kptschedule.cpp:140
+msgid "Expected"
+msgstr "Ratindou "
+
+#: kernel/kptschedule.cpp:137
+#, fuzzy
+msgid "Optimistic"
+msgstr "Optimisse:"
+
+#: kernel/kptschedule.cpp:139
+#, fuzzy
+msgid "Pessimistic"
+msgstr "Pessimisse:"
+
+#: kernel/kptschedule.cpp:1389
+msgid "Info"
+msgstr "Informåcion"
+
+#: kernel/kptschedule.cpp:1390
+msgid "Warning"
+msgstr "Asteme"
+
+#: kernel/kptschedule.cpp:1391 kernel/kptschedule.cpp:1805
+#: kernel/kptschedule.cpp:1810 kernel/kptschedule.cpp:1815
+#: models/kptnodeitemmodel.cpp:1468 models/kptnodeitemmodel.cpp:1490
+#: models/kptnodeitemmodel.cpp:1512 models/kptnodeitemmodel.cpp:1534
+#: models/kptnodeitemmodel.cpp:1556 models/kptnodeitemmodel.cpp:1578
+msgid "Error"
+msgstr "Aroke:"
+
+#: kernel/kptschedule.cpp:1795
+#, fuzzy
+msgid "Baselined"
+msgstr "Referince"
+
+#: kernel/kptschedule.cpp:1798
+#, fuzzy
+#| msgid "Scheduling Log"
+msgid "Scheduling"
+msgstr "Djournå d' programaedje"
 
 #: models/kcalendar/kdatepicker.cpp:116
 #, fuzzy, kde-format
