@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwordmswordfilter\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-25 03:40+0100\n"
+"POT-Creation-Date: 2011-01-27 03:26+0100\n"
 "PO-Revision-Date: 2010-12-04 13:34+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -151,8 +151,8 @@ msgstr "Dji n' sai trover l' pårteye pol sôre %1"
 #: tables/xlsx/XlsxXmlCommentsReader.cpp:103
 #: tables/xlsx/XlsxXmlDocumentReader.cpp:130
 #: tables/xlsx/XlsxXmlStylesReader.cpp:890
-#: tables/xlsx/XlsxXmlWorksheetReader.cpp:201
 #: tables/xlsx/XlsxXmlSharedStringsReader.cpp:115
+#: tables/xlsx/XlsxXmlWorksheetReader.cpp:201
 #, kde-format
 msgid "Namespace \"%1\" not found"
 msgstr "Espåce di no « %1 » nén trové"
@@ -190,6 +190,33 @@ msgstr "Lårdjeur (%):"
 #: libdialogfilter/exportsizedia.cpp:105
 msgid "Height (%):"
 msgstr "Hôteur (%):"
+
+#: libmsooxml/MsooXmlImport.cpp:93
+#, kde-format
+msgid "Could not open the requested file %1"
+msgstr "Dji n' a savou drovi l' fitchî %1 dimandé"
+
+#: libmsooxml/MsooXmlImport.cpp:116
+#, kde-format
+msgid "Could not read ZIP directory of the requested file %1"
+msgstr "Dji n' a savou lére li ridant ZIP do fitchî dmandé %1"
+
+#: libmsooxml/MsooXmlImport.cpp:333 libmsooxml/MsooXmlImport.cpp:446
+msgid "Enter password"
+msgstr ""
+
+#: libmsooxml/MsooXmlImport.cpp:335 libmsooxml/MsooXmlImport.cpp:448
+msgid "This document is encrypted, please enter the password to decrypt it:"
+msgstr ""
+
+#: libmsooxml/MsooXmlImport.cpp:336 libmsooxml/MsooXmlImport.cpp:449
+msgid "Incorrect password, please enter the password to decrypt this document:"
+msgstr ""
+
+#: libmsooxml/MsooXmlImport.cpp:624
+#, kde-format
+msgid "Could not find path for type %1"
+msgstr "Dji n' a savou trover l' tchimin pol sôre %1"
 
 #: libmsooxml/MsooXmlRelationships.cpp:83
 #, kde-format
@@ -247,33 +274,6 @@ msgstr "Cloyaedje di l' elemint « %1 » ratindou"
 msgid "None of expected elements found: %1"
 msgstr "Nouk des elemints ratindous di trové : %1"
 
-#: libmsooxml/MsooXmlImport.cpp:91
-#, kde-format
-msgid "Could not open the requested file %1"
-msgstr "Dji n' a savou drovi l' fitchî %1 dimandé"
-
-#: libmsooxml/MsooXmlImport.cpp:114
-#, kde-format
-msgid "Could not read ZIP directory of the requested file %1"
-msgstr "Dji n' a savou lére li ridant ZIP do fitchî dmandé %1"
-
-#: libmsooxml/MsooXmlImport.cpp:331 libmsooxml/MsooXmlImport.cpp:444
-msgid "Enter password"
-msgstr ""
-
-#: libmsooxml/MsooXmlImport.cpp:333 libmsooxml/MsooXmlImport.cpp:446
-msgid "This document is encrypted, please enter the password to decrypt it:"
-msgstr ""
-
-#: libmsooxml/MsooXmlImport.cpp:334 libmsooxml/MsooXmlImport.cpp:447
-msgid "Incorrect password, please enter the password to decrypt this document:"
-msgstr ""
-
-#: libmsooxml/MsooXmlImport.cpp:586
-#, kde-format
-msgid "Could not find path for type %1"
-msgstr "Dji n' a savou trover l' tchimin pol sôre %1"
-
 #: libmsooxml/MsooXmlUtils.cpp:180 words/abiword/abiwordimport.cc:1440
 #: words/libexport/KWEFKWordLeader.cc:1205
 msgid "QXml"
@@ -298,12 +298,14 @@ msgstr "Intrêye « %1 » nén trovêye."
 msgid "Entry '%1' is not a file."
 msgstr "L' intrêye « %1 » n' est nén on fitchî."
 
-#: libmsooxml/MsooXmlUtils.cpp:309 libmsooxml/MsooXmlUtils.cpp:358
+#: libmsooxml/MsooXmlUtils.cpp:309 libmsooxml/MsooXmlUtils.cpp:353
+#: libmsooxml/MsooXmlUtils.cpp:396
 #, kde-format
 msgid "Could not open entry \"%1\" for writing."
 msgstr "Dji n' a savou drovi l' intrêye « %1 » po scrire."
 
-#: libmsooxml/MsooXmlUtils.cpp:323 libmsooxml/MsooXmlUtils.cpp:369
+#: libmsooxml/MsooXmlUtils.cpp:323 libmsooxml/MsooXmlUtils.cpp:363
+#: libmsooxml/MsooXmlUtils.cpp:407
 msgid "Could not write block"
 msgstr "Dji n' a savou scrire di blok"
 
@@ -781,6 +783,11 @@ msgstr "Li nombe declaré ou les stîles di rimplixhaedje sont trop ptits (%1)"
 msgid "Declared number of border styles too small (%1)"
 msgstr "Li nombe declaré ou les stîles des boirdeures sont trop ptits (%1)"
 
+#: tables/xlsx/XlsxXmlSharedStringsReader.cpp:182
+#, kde-format
+msgid "Declared number of shared strings too small (%1)"
+msgstr "Li nombe declaré ou les tchinnes pårtaedjeyes sont trop ptits (%1)"
+
 #: tables/xlsx/XlsxXmlWorksheetReader.cpp:216
 msgid ""
 "The data could not be loaded completely because the maximum size of sheet "
@@ -792,11 +799,6 @@ msgstr ""
 #: tables/xlsx/XlsxXmlWorksheetReader.cpp:931
 msgid "Expected integer or floating point number"
 msgstr "Dji ratindeu on nombe etir ou avou flotant coma"
-
-#: tables/xlsx/XlsxXmlSharedStringsReader.cpp:182
-#, kde-format
-msgid "Declared number of shared strings too small (%1)"
-msgstr "Li nombe declaré ou les tchinnes pårtaedjeyes sont trop ptits (%1)"
 
 #. i18n: file: karbon/png/PngExportOptionsWidget.ui:16
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
