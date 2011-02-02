@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-26 03:29+0100\n"
+"POT-Creation-Date: 2011-02-02 03:38+0100\n"
 "PO-Revision-Date: 2011-01-17 21:09+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -53,10 +53,6 @@ msgstr "Simpe cogne di tchmin"
 msgid "A simple path shape"
 msgstr "Ene simpe cogne di tchmin"
 
-#: flake/KoToolBase.cpp:172 flake/KoToolManager.cpp:351
-msgid "Tool Options"
-msgstr "Tchuzes des usteyes"
-
 #: flake/KoShapeController.cpp:64 kotext/InsertTextReferenceAction.cpp:63
 #: kotext/InsertVariableAction.cpp:51
 #: main/rdf/InsertSemanticObjectCreateAction.cpp:59
@@ -65,14 +61,28 @@ msgstr "Tchuzes des usteyes"
 msgid "%1 Options"
 msgstr "Tchuzes di %1"
 
+#: flake/KoShapePaste.cpp:100
+msgid "Paste Shapes"
+msgstr "Aclaper cognes"
+
+#: flake/KoToolBase.cpp:172 flake/KoToolManager.cpp:351
+msgid "Tool Options"
+msgstr "Tchuzes des usteyes"
+
 #: flake/KoToolManager.cpp:350
 #, kde-format
 msgid "Active tool: %1"
 msgstr "Usteye en alaedje : %1"
 
-#: flake/KoShapePaste.cpp:100
-msgid "Paste Shapes"
-msgstr "Aclaper cognes"
+#: flake/commands/KoConnectionShapeTypeCommand.cpp:31
+msgid "Change Connection"
+msgstr "Candjî raloyaedje"
+
+#: flake/commands/KoParameterHandleMoveCommand.cpp:34
+#, fuzzy
+#| msgid "Change parameter"
+msgid "Change Parameter"
+msgstr "Candjî parametes"
 
 #: flake/commands/KoParameterToPathCommand.cpp:43
 #: flake/commands/KoParameterToPathCommand.cpp:52
@@ -283,15 +293,29 @@ msgstr "Radjonde tchimins efants"
 msgid "Remove Subpath"
 msgstr "Oister tchimin efant"
 
-#: flake/commands/KoConnectionShapeTypeCommand.cpp:31
-msgid "Change Connection"
-msgstr "Candjî raloyaedje"
+#: flake/tools/KoCreatePathTool.cpp:369 flake/tools/KoPathTool.cpp:181
+msgid "Snapping"
+msgstr "Assaetchaedje magnetike"
 
-#: flake/commands/KoParameterHandleMoveCommand.cpp:34
-#, fuzzy
-#| msgid "Change parameter"
-msgid "Change Parameter"
-msgstr "Candjî parametes"
+#: flake/tools/KoCreatePathTool.cpp:374
+msgid "Angle snapping delta"
+msgstr "Delta di l' inglêye d' assaetchaedje magnetike"
+
+#: flake/tools/KoCreatePathTool.cpp:379
+msgid "Angle Constraints"
+msgstr "Stronnas d' inglêye"
+
+#: flake/tools/KoCreatePathToolFactory.cpp:33
+msgid "Create Path"
+msgstr "Ahiver on tchmin"
+
+#: flake/tools/KoCreateShapesToolFactory.cpp:33
+msgid "Create object"
+msgstr "Ahiver èn objet"
+
+#: flake/tools/KoPanToolFactory.cpp:29
+msgid "Pan"
+msgstr "Panoramike"
 
 #: flake/tools/KoPathSegmentChangeStrategy.cpp:145
 msgid "Change Segment"
@@ -357,10 +381,6 @@ msgstr "Viè l' tchimin"
 msgid "Line/Curve"
 msgstr "Roye/Coube"
 
-#: flake/tools/KoPathTool.cpp:181 flake/tools/KoCreatePathTool.cpp:369
-msgid "Snapping"
-msgstr "Assaetchaedje magnetike"
-
 #: flake/tools/KoPathTool.cpp:515
 msgid "Drag to move handle."
 msgstr "Bodjî eyet saetchî po displaecî l' pougneye."
@@ -386,26 +406,6 @@ msgstr "Tchôkî B po djoker on tchmin ås segmints tchoezis."
 #: flake/tools/KoPathToolFactory.cpp:29
 msgid "Path editing tool"
 msgstr "Usteye d' aspougnaedje di tchmin"
-
-#: flake/tools/KoCreatePathTool.cpp:374
-msgid "Angle snapping delta"
-msgstr "Delta di l' inglêye d' assaetchaedje magnetike"
-
-#: flake/tools/KoCreatePathTool.cpp:379
-msgid "Angle Constraints"
-msgstr "Stronnas d' inglêye"
-
-#: flake/tools/KoCreatePathToolFactory.cpp:33
-msgid "Create Path"
-msgstr "Ahiver on tchmin"
-
-#: flake/tools/KoCreateShapesToolFactory.cpp:33
-msgid "Create object"
-msgstr "Ahiver èn objet"
-
-#: flake/tools/KoPanToolFactory.cpp:29
-msgid "Pan"
-msgstr "Panoramike"
 
 #: flake/tools/KoZoomToolFactory.cpp:29 widgets/KoZoomAction.cpp:248
 #: widgets/KoZoomController.cpp:38 widgets/KoZoomInput.cpp:52
@@ -939,6 +939,28 @@ msgstr[1] "Dj' a trové %1 sacwès ki corespondèt"
 msgid "Found no match"
 msgstr "Dji n' a rén trové ki corespond"
 
+#: kotext/KoReplaceStrategy.cpp:58
+msgid ""
+"Found no match\n"
+"\n"
+"No text was replaced"
+msgstr ""
+"Dji n' a rén trové ki corespond\n"
+"\n"
+"Dji n' a replaecî nou tecse"
+
+#: kotext/KoReplaceStrategy.cpp:61
+#, kde-format
+msgid "1 replacement made"
+msgid_plural "%1 replacements made"
+msgstr[0] "1 replaeçmint di fwait"
+msgstr[1] "%1 replaeçmints di fwaits"
+
+#: kotext/KoReplaceStrategy.cpp:74
+#, kde-format
+msgid "Replace %1 with %2?"
+msgstr "Replaecî %1 avou %2 ?"
+
 #: kotext/KoText.cpp:29
 msgctxt "Underline Style"
 msgid "None"
@@ -1066,28 +1088,6 @@ msgstr "Djocaedje di roye"
 #: kotext/KoTextEditor_p.h:83 kotext/KoTextEditor_p.h:120 rc.cpp:348
 msgid "Format"
 msgstr "Cogne"
-
-#: kotext/KoReplaceStrategy.cpp:58
-msgid ""
-"Found no match\n"
-"\n"
-"No text was replaced"
-msgstr ""
-"Dji n' a rén trové ki corespond\n"
-"\n"
-"Dji n' a replaecî nou tecse"
-
-#: kotext/KoReplaceStrategy.cpp:61
-#, kde-format
-msgid "1 replacement made"
-msgid_plural "%1 replacements made"
-msgstr[0] "1 replaeçmint di fwait"
-msgstr[1] "%1 replaeçmints di fwaits"
-
-#: kotext/KoReplaceStrategy.cpp:74
-#, kde-format
-msgid "Replace %1 with %2?"
-msgstr "Replaecî %1 avou %2 ?"
 
 #: main/KoApplication.cpp:77
 msgid "Only print and exit"
@@ -2035,6 +2035,23 @@ msgstr "Tchoezixhoz l' objet ki vs voloz referincer"
 msgid "Reference"
 msgstr "Referince"
 
+#: main/rdf/KoDocumentRdfEditWidget.cpp:270
+#, kde-format
+msgctxt "statement is an Rdf related term"
+msgid "<qt>Edits will be lost.<p>There is %1 invalid statement left.</qt>"
+msgid_plural ""
+"<qt>Edits will be lost.<p>There are %1 invalid statements left.</qt>"
+msgstr[0] ""
+"<qt>Les candjmints sront pierdous.<p>I dmeure %1 instruccion nén valåbe.</qt>"
+msgstr[1] ""
+"<qt>Les candjmints sront pierdous.<p>I dmeure %1 instruccions nén valåbes.</"
+"qt>"
+
+#: main/rdf/KoDocumentRdfEditWidget.cpp:273
+msgctxt "statement is an Rdf related term"
+msgid "Discard invalid statements?"
+msgstr "Abandner ls instruccions nén valåbes ?"
+
 #: main/rdf/KoRdfCalendarEvent.cpp:201
 msgid "Area"
 msgstr "Zone"
@@ -2183,23 +2200,6 @@ msgstr "Sôre di dnêyes"
 #: main/rdf/KoSopranoTableModel.cpp:140
 msgid "Stored In"
 msgstr "Wårdé divins"
-
-#: main/rdf/KoDocumentRdfEditWidget.cpp:270
-#, kde-format
-msgctxt "statement is an Rdf related term"
-msgid "<qt>Edits will be lost.<p>There is %1 invalid statement left.</qt>"
-msgid_plural ""
-"<qt>Edits will be lost.<p>There are %1 invalid statements left.</qt>"
-msgstr[0] ""
-"<qt>Les candjmints sront pierdous.<p>I dmeure %1 instruccion nén valåbe.</qt>"
-msgstr[1] ""
-"<qt>Les candjmints sront pierdous.<p>I dmeure %1 instruccions nén valåbes.</"
-"qt>"
-
-#: main/rdf/KoDocumentRdfEditWidget.cpp:273
-msgctxt "statement is an Rdf related term"
-msgid "Discard invalid statements?"
-msgstr "Abandner ls instruccions nén valåbes ?"
 
 #: main/config/KoConfigDocumentPage.cpp:75
 msgid "Auto save (min):"

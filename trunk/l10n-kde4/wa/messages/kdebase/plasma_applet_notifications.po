@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-11 02:36+0100\n"
+"POT-Creation-Date: 2011-02-02 03:07+0100\n"
 "PO-Revision-Date: 2011-01-09 11:22+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -25,6 +25,13 @@ msgstr "%1 [Fini]"
 msgid "Open"
 msgstr "Drovi"
 
+#: core/job.cpp:196
+#, kde-format
+msgid "%1 file, to: %2"
+msgid_plural "%1 files, to: %2"
+msgstr[0] "%1 fitchî, a : %2"
+msgstr[1] "%1 fitchîs, a : %2"
+
 #: core/notificationsmanager.cpp:192
 #, kde-format
 msgid "1 running job (%2 remaining)"
@@ -36,12 +43,46 @@ msgstr[1] "%1 bouyes a l' ovraedje (i nd è dmeure %2)"
 msgid "no running jobs"
 msgstr "nole bouye a l' ovraedje"
 
-#: core/job.cpp:196
+#: ui/busywidget.cpp:274
 #, kde-format
-msgid "%1 file, to: %2"
-msgid_plural "%1 files, to: %2"
-msgstr[0] "%1 fitchî, a : %2"
-msgstr[1] "%1 fitchîs, a : %2"
+msgid "%1 running job"
+msgid_plural "%1 running jobs"
+msgstr[0] "%1 bouye a l' ovraedje"
+msgstr[1] "%1 bouyes a l' ovraedje"
+
+#: ui/busywidget.cpp:281
+#, kde-format
+msgid "%1 suspended job"
+msgid_plural "%1 suspended jobs"
+msgstr[0] "%1 bouye di djokêye"
+msgstr[1] "%1 bouyes di djokêyes"
+
+#: ui/busywidget.cpp:288
+#, kde-format
+msgid "%1 completed job"
+msgid_plural "%1 completed jobs"
+msgstr[0] "%1 bouye di fineye"
+msgstr[1] "%1 bouyes di fineyes"
+
+#: ui/busywidget.cpp:295
+#, kde-format
+msgid "%1 notification"
+msgid_plural "%1 notifications"
+msgstr[0] "%1 notifiaedje"
+msgstr[1] "%1 notifiaedjes"
+
+#: ui/busywidget.cpp:300
+msgid "No active jobs or notifications"
+msgstr "Nole bouye ovrante ou notifiaedje ovrant"
+
+#: ui/busywidget.cpp:303
+msgid "Notifications and jobs"
+msgstr "Nou notifiaedje et nole bouye"
+
+#: ui/jobtotalswidget.cpp:83
+msgctxt "Generic title for the job transfer popup"
+msgid "Jobs"
+msgstr "Bouyes"
 
 #: ui/jobwidget.cpp:65
 msgid "KiB/s"
@@ -104,64 +145,6 @@ msgstr[1] "%2 / %1 fitchîs"
 msgid "Less"
 msgstr "Moens"
 
-#: ui/jobtotalswidget.cpp:83
-msgctxt "Generic title for the job transfer popup"
-msgid "Jobs"
-msgstr "Bouyes"
-
-#: ui/notifications.cpp:123
-msgid "No notifications and no jobs"
-msgstr "Nou notifiaedje et nole bouye"
-
-#: ui/notifications.cpp:211
-msgid "Information"
-msgstr "Infôrmåcion"
-
-#: ui/notifications.cpp:213
-msgid "Choose which information to show"
-msgstr "Tchoezi kés pondants et djondants k' i fåt mostrer"
-
-#: ui/notificationwidget.cpp:325 ui/notificationgroup.cpp:92
-#, kde-format
-msgid "Notification from %1"
-msgstr "Notifiaedje di %1"
-
-#: ui/busywidget.cpp:274
-#, kde-format
-msgid "%1 running job"
-msgid_plural "%1 running jobs"
-msgstr[0] "%1 bouye a l' ovraedje"
-msgstr[1] "%1 bouyes a l' ovraedje"
-
-#: ui/busywidget.cpp:281
-#, kde-format
-msgid "%1 suspended job"
-msgid_plural "%1 suspended jobs"
-msgstr[0] "%1 bouye di djokêye"
-msgstr[1] "%1 bouyes di djokêyes"
-
-#: ui/busywidget.cpp:288
-#, kde-format
-msgid "%1 completed job"
-msgid_plural "%1 completed jobs"
-msgstr[0] "%1 bouye di fineye"
-msgstr[1] "%1 bouyes di fineyes"
-
-#: ui/busywidget.cpp:295
-#, kde-format
-msgid "%1 notification"
-msgid_plural "%1 notifications"
-msgstr[0] "%1 notifiaedje"
-msgstr[1] "%1 notifiaedjes"
-
-#: ui/busywidget.cpp:300
-msgid "No active jobs or notifications"
-msgstr "Nole bouye ovrante ou notifiaedje ovrant"
-
-#: ui/busywidget.cpp:303
-msgid "Notifications and jobs"
-msgstr "Nou notifiaedje et nole bouye"
-
 #: ui/notificationgroup.cpp:42
 msgid "Notifications"
 msgstr "Notifiaedjes"
@@ -170,6 +153,23 @@ msgstr "Notifiaedjes"
 msgctxt "Show all  notifications"
 msgid "All"
 msgstr "Totafwait"
+
+#: ui/notificationgroup.cpp:94 ui/notificationwidget.cpp:324
+#, kde-format
+msgid "Notification from %1"
+msgstr "Notifiaedje di %1"
+
+#: ui/notifications.cpp:126
+msgid "No notifications and no jobs"
+msgstr "Nou notifiaedje et nole bouye"
+
+#: ui/notifications.cpp:214
+msgid "Information"
+msgstr "Infôrmåcion"
+
+#: ui/notifications.cpp:216
+msgid "Choose which information to show"
+msgstr "Tchoezi kés pondants et djondants k' i fåt mostrer"
 
 #. i18n: file: ui/notificationsconfig.ui:26
 #. i18n: ectx: property (text), widget (QLabel, label_2)
