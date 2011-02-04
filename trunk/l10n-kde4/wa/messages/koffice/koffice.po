@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-02 03:38+0100\n"
+"POT-Creation-Date: 2011-02-04 02:57+0100\n"
 "PO-Revision-Date: 2011-01-17 21:09+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -89,12 +89,6 @@ msgstr "Candjî parametes"
 msgid "Convert to Path"
 msgstr "Covierser e tchmin"
 
-#: flake/commands/KoPathBreakAtPointCommand.cpp:38
-#, fuzzy
-#| msgid "Break subpath at points"
-msgid "Break Subpath at Points"
-msgstr "Djoker tchimin efant ås ponts"
-
 #: flake/commands/KoPathCombineCommand.cpp:58
 msgid "Combine paths"
 msgstr "Combiner tchmins"
@@ -110,6 +104,18 @@ msgstr "Bodjî pont d' controle"
 #| msgid "Set fill rule"
 msgid "Set Fill Rule"
 msgstr "Defini rîle di rimplixhaedje"
+
+#: flake/commands/KoShapeGroupCommand.cpp:93
+#, fuzzy
+#| msgid "Group shapes"
+msgid "Group Shapes"
+msgstr "Grouper cognes"
+
+#: flake/commands/KoShapeGroupCommand.cpp:95
+#, fuzzy
+#| msgid "Add shapes to group"
+msgid "Add Shapes to Group"
+msgstr "Radjouter des fômes å groupe"
 
 #: flake/commands/KoPathPointMergeCommand.cpp:152
 #, fuzzy
@@ -211,18 +217,6 @@ msgstr "Disfacer cognes"
 msgid "Distribute Shapes"
 msgstr "Cossemer cognes"
 
-#: flake/commands/KoShapeGroupCommand.cpp:93
-#, fuzzy
-#| msgid "Group shapes"
-msgid "Group Shapes"
-msgstr "Grouper cognes"
-
-#: flake/commands/KoShapeGroupCommand.cpp:95
-#, fuzzy
-#| msgid "Add shapes to group"
-msgid "Add Shapes to Group"
-msgstr "Radjouter des fômes å groupe"
-
 #: flake/commands/KoShapeKeepAspectRatioCommand.cpp:40
 msgid "Keep Aspect Ratio"
 msgstr "Wårder l' rapoirt lårdjeur/hôteur"
@@ -293,6 +287,12 @@ msgstr "Radjonde tchimins efants"
 msgid "Remove Subpath"
 msgstr "Oister tchimin efant"
 
+#: flake/commands/KoPathBreakAtPointCommand.cpp:38
+#, fuzzy
+#| msgid "Break subpath at points"
+msgid "Break Subpath at Points"
+msgstr "Djoker tchimin efant ås ponts"
+
 #: flake/tools/KoCreatePathTool.cpp:369 flake/tools/KoPathTool.cpp:181
 msgid "Snapping"
 msgstr "Assaetchaedje magnetike"
@@ -316,10 +316,6 @@ msgstr "Ahiver èn objet"
 #: flake/tools/KoPanToolFactory.cpp:29
 msgid "Pan"
 msgstr "Panoramike"
-
-#: flake/tools/KoPathSegmentChangeStrategy.cpp:145
-msgid "Change Segment"
-msgstr "Candjî segmint"
 
 #: flake/tools/KoPathTool.cpp:87
 msgid "Corner point"
@@ -411,6 +407,10 @@ msgstr "Usteye d' aspougnaedje di tchmin"
 #: widgets/KoZoomController.cpp:38 widgets/KoZoomInput.cpp:52
 msgid "Zoom"
 msgstr "Zoumaedje"
+
+#: flake/tools/KoPathSegmentChangeStrategy.cpp:145
+msgid "Change Segment"
+msgstr "Candjî segmint"
 
 #: kokross/KoScriptManager.cpp:177
 msgid "Install Script Package"
@@ -678,11 +678,6 @@ msgstr "Copyî"
 msgid "Paste"
 msgstr "Aclaper"
 
-#: kopageapp/KoPAPageThumbnailModel.cpp:69
-#, kde-format
-msgid "Page %1"
-msgstr "Pådje %1"
-
 #: kopageapp/KoPAPastePage.cpp:132
 msgid "Paste Slide"
 msgid_plural "Paste Slides"
@@ -911,6 +906,11 @@ msgstr "Usteye pos aspougnî l' fond"
 msgid "Change background image"
 msgstr "Candjî imådje di fond"
 
+#: kopageapp/KoPAPageThumbnailModel.cpp:69
+#, kde-format
+msgid "Page %1"
+msgstr "Pådje %1"
+
 #: kotext/InsertTextLocator.cpp:29
 msgid "Index Reference"
 msgstr "Referince di l' indecse"
@@ -960,21 +960,6 @@ msgstr[1] "%1 replaeçmints di fwaits"
 #, kde-format
 msgid "Replace %1 with %2?"
 msgstr "Replaecî %1 avou %2 ?"
-
-#: kotext/KoText.cpp:29
-msgctxt "Underline Style"
-msgid "None"
-msgstr "Nouk"
-
-#: kotext/KoText.cpp:30
-msgctxt "Underline Style"
-msgid "Single"
-msgstr "Simpe"
-
-#: kotext/KoText.cpp:31
-msgctxt "Underline Style"
-msgid "Double"
-msgstr "Dobe"
 
 #: kotext/KoTextEditor.cpp:105 kotext/KoTextEditor.cpp:161
 #: kotext/KoTextEditor.cpp:319 widgets/KoCsvImportDialog.cpp:216
@@ -1088,6 +1073,21 @@ msgstr "Djocaedje di roye"
 #: kotext/KoTextEditor_p.h:83 kotext/KoTextEditor_p.h:120 rc.cpp:348
 msgid "Format"
 msgstr "Cogne"
+
+#: kotext/KoText.cpp:47
+msgctxt "Underline Style"
+msgid "None"
+msgstr "Nouk"
+
+#: kotext/KoText.cpp:48
+msgctxt "Underline Style"
+msgid "Single"
+msgstr "Simpe"
+
+#: kotext/KoText.cpp:49
+msgctxt "Underline Style"
+msgid "Double"
+msgstr "Dobe"
 
 #: main/KoApplication.cpp:77
 msgid "Only print and exit"
@@ -1430,7 +1430,7 @@ msgstr "on grafike"
 msgid "a drawing"
 msgstr "on dessin"
 
-#: main/KoDocument.cpp:2504
+#: main/KoDocument.cpp:2499
 msgid "Embedding Object"
 msgstr "Ravalaedje d' objet"
 
@@ -2563,10 +2563,6 @@ msgstr "a*"
 msgid "b*"
 msgstr "b*"
 
-#: pigment/KoBasicHistogramProducers.h:231
-msgid "Generic L*a*b* Histogram"
-msgstr "Istograme L*a*b* djenerike"
-
 #: pigment/KoColorModelStandardIds.cpp:25
 #: pigment/colorspaces/KoAlphaColorSpace.cpp:261
 #: pigment/colorspaces/KoLabColorSpace.cpp:44
@@ -2718,10 +2714,6 @@ msgstr "Operåcion nén defineye dins l' espåce di coleurs %1"
 msgid "Simple Color Conversion Engine"
 msgstr "Simpe éndjin d' coviertixhaedje di coleur"
 
-#: pigment/compositeops/KoCompositeOpAlphaDarken.h:42
-msgid "Alpha darken"
-msgstr "Alfa noeri"
-
 #: pigment/compositeops/KoCompositeOpBurn.h:36
 msgid "Burn"
 msgstr "Broûler"
@@ -2762,9 +2754,17 @@ msgstr "Waitroûle"
 msgid "Soft light"
 msgstr "Doûce loumire"
 
+#: pigment/compositeops/KoCompositeOpAlphaDarken.h:42
+msgid "Alpha darken"
+msgstr "Alfa noeri"
+
 #: pigment/resources/KoStopGradient.cpp:421
 msgid "SVG Gradient"
 msgstr "Gradyint SVG"
+
+#: pigment/KoBasicHistogramProducers.h:231
+msgid "Generic L*a*b* Histogram"
+msgstr "Istograme L*a*b* djenerike"
 
 #: widgets/KoColorPopupAction.cpp:85 widgets/KoUniColorChooser.cpp:418
 msgid "Opacity"
