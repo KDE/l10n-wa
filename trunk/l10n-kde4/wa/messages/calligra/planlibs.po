@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-16 03:02+0100\n"
+"POT-Creation-Date: 2011-02-17 04:47+0100\n"
 "PO-Revision-Date: 2009-08-20 10:18+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -15,11 +15,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 0.3\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-
-#: kernel/KPlatoXmlLoaderBase.cpp:1108 kernel/kptdocuments.cpp:211
-#, fuzzy, kde-format
-msgid "Document loaded, URL=%1"
-msgstr "URL do documint dedja ataetcheye: %1"
 
 #: kernel/kptaccount.cpp:857 models/kptresourcemodel.cpp:443
 msgid "Account"
@@ -77,6 +72,11 @@ msgctxt "@item Send the reference (url) of the document"
 msgid "Reference"
 msgstr "Referince"
 
+#: kernel/kptdocuments.cpp:211 kernel/KPlatoXmlLoaderBase.cpp:1108
+#, fuzzy, kde-format
+msgid "Document loaded, URL=%1"
+msgstr "URL do documint dedja ataetcheye: %1"
+
 #: kernel/kptduration.cpp:188
 #, kde-format
 msgctxt "<hours>h:<minutes>m"
@@ -133,6 +133,272 @@ msgstr "est"
 msgctxt "Millisecond. Note: Letter(s) only!"
 msgid "ms"
 msgstr "ms"
+
+#. i18n: file: ui/relationpanel.ui:114
+#. i18n: ectx: property (text), widget (QRadioButton, bFinishStart)
+#: kernel/kptrelation.cpp:87 rc.cpp:715
+msgid "Finish-Start"
+msgstr "Fini-Ataker"
+
+#. i18n: file: ui/relationpanel.ui:121
+#. i18n: ectx: property (text), widget (QRadioButton, bFinishFinish)
+#: kernel/kptrelation.cpp:88 rc.cpp:718
+msgid "Finish-Finish"
+msgstr "Fini-Fini"
+
+#. i18n: file: ui/relationpanel.ui:128
+#. i18n: ectx: property (text), widget (QRadioButton, bStartStart)
+#: kernel/kptrelation.cpp:89 rc.cpp:721
+msgid "Start-Start"
+msgstr "Ataker-Ataker"
+
+#: kernel/kptwbsdefinition.cpp:40
+#, fuzzy
+msgid "Number"
+msgstr "No"
+
+#: kernel/kptwbsdefinition.cpp:41
+msgid "Roman, upper case"
+msgstr "Roman, grandès letes"
+
+#: kernel/kptwbsdefinition.cpp:42
+msgid "Roman, lower case"
+msgstr "Raman, pititès letes"
+
+#: kernel/kptwbsdefinition.cpp:43
+msgid "Letter, upper case"
+msgstr "Lete, grandès letes"
+
+#: kernel/kptwbsdefinition.cpp:44
+msgid "Letter, lower case"
+msgstr "Lete, pititès letes"
+
+#. i18n: file: ui/resourcedialogbase.ui:169
+#. i18n: ectx: property (text), item, widget (QComboBox, type)
+#: kernel/kptresource.cpp:123 ui/kptresourceassignmentview.cpp:82 rc.cpp:769
+msgid "Work"
+msgstr "Ovraedje"
+
+#. i18n: file: ui/resourcedialogbase.ui:174
+#. i18n: ectx: property (text), item, widget (QComboBox, type)
+#: kernel/kptresource.cpp:124 ui/kptresourceassignmentview.cpp:86 rc.cpp:772
+msgid "Material"
+msgstr "Haerna"
+
+#: kernel/kptresource.cpp:441
+#, fuzzy
+#| msgid "Work"
+msgctxt "@item:inlistbox resource type"
+msgid "Work"
+msgstr "Ovraedje"
+
+#: kernel/kptresource.cpp:442
+#, fuzzy
+#| msgid "Material"
+msgctxt "@item:inlistbox resource type"
+msgid "Material"
+msgstr "Haerna"
+
+#: kernel/kptresource.cpp:443
+msgctxt "@item:inlistbox resource type"
+msgid "Team"
+msgstr ""
+
+#: kernel/kptresource.cpp:819
+msgid "Make appointments: Invalid time"
+msgstr "Fé des radjoûs: date/eure nén valåbe"
+
+#: kernel/kptresource.cpp:824 kernel/kptresource.cpp:883
+#: kernel/kptresource.cpp:1112 kernel/kptresource.cpp:1176
+#, kde-format
+msgid "Resource %1 has no calendar defined"
+msgstr "Li rsource %1 n' a pont d' calindrî defini"
+
+#: kernel/kptresource.cpp:847
+msgid "Make appointments: Node start time is not valid"
+msgstr "Fé des radjoûs: li date di cominçmint do nuk n' est nén valåbe"
+
+#: kernel/kptresource.cpp:851
+msgid "Make appointments: Node end time is not valid"
+msgstr "Fé des radjoûs: li date di dfén do nuk n' est nén valåbe"
+
+#: kernel/kptresource.cpp:890 kernel/kptresource.cpp:906
+#, kde-format
+msgid "Resource %1 not available in interval: %2 to %3"
+msgstr "Rissource %1 nén disponibe inte %2 et %3"
+
+#: kernel/kptresource.cpp:2437
+#, kde-format
+msgid "Could not match effort. Want: %1 got: %2"
+msgstr "Dji n' a savou fé coresponde l' efoirt. Djovleu: %1, dj' a yeu: %2"
+
+#: kernel/kptresource.cpp:2440
+#, kde-format
+msgid "Resource %1 available from %2 to %3"
+msgstr "Rissource %1 disponibe di %2 a %3"
+
+#: kernel/kptglobal.cpp:41
+#, fuzzy
+msgid "Deleted"
+msgstr "Disfacer"
+
+#: kernel/kptglobal.cpp:43 kernel/kptnode.cpp:602 kernel/kptschedule.cpp:1821
+#: models/kptschedulemodel.cpp:687
+msgid "Not scheduled"
+msgstr "Nén programé"
+
+#: kernel/kptglobal.cpp:45 models/kptschedulemodel.cpp:687
+#: models/kptschedulemodel.cpp:768
+#, fuzzy
+msgid "Scheduled"
+msgstr "Programaedje:"
+
+#: kernel/kptglobal.cpp:47
+#, fuzzy
+msgid "Resource overbooked"
+msgstr "Rissource forrezervêye"
+
+#: kernel/kptglobal.cpp:49
+#, fuzzy
+msgid "Resource not available"
+msgstr "Nou pordjet disponibe"
+
+#: kernel/kptglobal.cpp:51
+msgid "No resource allocated"
+msgstr "Nole rissource acoirdêye"
+
+#: kernel/kptglobal.cpp:53
+#, fuzzy
+#| msgid "Cannot fullfill constraints"
+msgid "Cannot fulfill constraints"
+msgstr "Dji n' sai passer les stronnas"
+
+#: kernel/kptglobal.cpp:55
+#, fuzzy
+msgid "Effort not met"
+msgstr "Efoirt"
+
+#: kernel/kptglobal.cpp:57
+#, fuzzy
+#| msgid "Scheduling Log"
+msgid "Scheduling error"
+msgstr "Djournå d' programaedje"
+
+#. i18n: file: ui/kpttaskgeneralpanelbase.ui:344
+#. i18n: ectx: property (text), item, widget (KComboBox, risk)
+#: kernel/kptnode.cpp:136 kernel/kptnode.cpp:1512 kernel/kpttask.cpp:3688
+#: models/kptresourceallocationmodel.cpp:743 models/kptresourcemodel.cpp:197
+#: models/kptresourcemodel.cpp:229 models/kptresourcemodel.cpp:350
+#: models/kptresourcemodel.cpp:354 models/kptresourcemodel.cpp:363
+#: models/kptschedulemodel.cpp:481 models/kptschedulemodel.cpp:483
+#: models/kpttreecombobox.cpp:124 models/kptnodeitemmodel.cpp:376
+#: models/kptnodeitemmodel.cpp:387 models/kptnodeitemmodel.cpp:392
+#: models/kptnodeitemmodel.cpp:402 models/kptnodeitemmodel.cpp:578
+#: models/kptnodeitemmodel.cpp:584 models/kptnodeitemmodel.cpp:594
+#: models/kptnodeitemmodel.cpp:612 models/kptnodeitemmodel.cpp:619
+#: models/kptnodeitemmodel.cpp:629 models/kptnodeitemmodel.cpp:664
+#: models/kptnodeitemmodel.cpp:670 models/kptnodeitemmodel.cpp:680
+#: ui/kptpertresult.cpp:138 ui/kptpertresult.cpp:489
+#: ui/kptresourcedialog.cpp:266 ui/kptresourcedialog.cpp:292
+#: ui/kpttaskcostpanel.cpp:50 ui/kpttaskgeneralpanel.cpp:74 rc.cpp:536
+msgid "None"
+msgstr "Nouk"
+
+#. i18n: file: ui/kptscheduleeditor.ui:19
+#. i18n: ectx: property (title), widget (QGroupBox, projectGroupBox)
+#: kernel/kptnode.cpp:137 models/kptpertcpmmodel.cpp:425
+#: models/kptresourceappointmentsmodel.cpp:1263 rc.cpp:328
+msgid "Project"
+msgstr "Pordjet"
+
+#: kernel/kptnode.cpp:138
+#, fuzzy
+msgid "Sub-Project"
+msgstr "Pordjet"
+
+#. i18n: file: ui/kptscheduleeditor.ui:167
+#. i18n: ectx: property (text), widget (QTreeWidget, treeWidgetTaskResult)
+#: kernel/kptnode.cpp:139 rc.cpp:349
+msgid "Task"
+msgstr "Bouye"
+
+#: kernel/kptnode.cpp:140
+#, fuzzy
+msgid "Milestone"
+msgstr "Radjouter etape..."
+
+#: kernel/kptnode.cpp:141
+#, fuzzy
+msgid "Periodic"
+msgstr "Frecwince:"
+
+#: kernel/kptnode.cpp:142
+msgid "Summary"
+msgstr "Rascourti"
+
+#: kernel/kptnode.cpp:708
+#, fuzzy
+msgid "As Soon As Possible"
+msgstr "Totossu rade ki possibe"
+
+#: kernel/kptnode.cpp:709
+#, fuzzy
+msgid "As Late As Possible"
+msgstr "Totossu tård ki possibe"
+
+#. i18n: file: ui/kpttaskgeneralpanelbase.ui:192
+#. i18n: ectx: property (text), item, widget (KComboBox, scheduleType)
+#: kernel/kptnode.cpp:710 rc.cpp:491
+msgid "Must Start On"
+msgstr "Doet ataker li"
+
+#. i18n: file: ui/kpttaskgeneralpanelbase.ui:197
+#. i18n: ectx: property (text), item, widget (KComboBox, scheduleType)
+#: kernel/kptnode.cpp:711 rc.cpp:494
+msgid "Must Finish On"
+msgstr "Doet fini li"
+
+#: kernel/kptnode.cpp:712
+#, fuzzy
+msgid "Start Not Earlier"
+msgstr "En nén ataker pus timpe ki"
+
+#: kernel/kptnode.cpp:713
+#, fuzzy
+msgid "Finish Not Later"
+msgstr "En nén fini pus tård ki"
+
+#. i18n: file: ui/kpttaskgeneralpanelbase.ui:212
+#. i18n: ectx: property (text), item, widget (KComboBox, scheduleType)
+#: kernel/kptnode.cpp:714 rc.cpp:503
+msgid "Fixed Interval"
+msgstr "Tins ewal inte les deus"
+
+#. i18n: file: ui/kptperformancestatusviewsettingspanel.ui:88
+#. i18n: ectx: property (title), widget (QGroupBox, ui_effort)
+#. i18n: file: ui/kpttaskgeneralpanelbase.ui:281
+#. i18n: ectx: property (text), item, widget (KComboBox, estimateType)
+#: kernel/kptnode.cpp:1479 rc.cpp:238 rc.cpp:509
+msgid "Effort"
+msgstr "Efoirt"
+
+#. i18n: file: ui/kpttaskgeneralpanelbase.ui:286
+#. i18n: ectx: property (text), item, widget (KComboBox, estimateType)
+#: kernel/kptnode.cpp:1480 rc.cpp:512
+msgid "Duration"
+msgstr "Durêye"
+
+#. i18n: file: ui/kpttaskgeneralpanelbase.ui:349
+#. i18n: ectx: property (text), item, widget (KComboBox, risk)
+#: kernel/kptnode.cpp:1513 rc.cpp:539
+msgid "Low"
+msgstr "Bas"
+
+#. i18n: file: ui/kpttaskgeneralpanelbase.ui:354
+#. i18n: ectx: property (text), item, widget (KComboBox, risk)
+#: kernel/kptnode.cpp:1514 rc.cpp:542
+msgid "High"
+msgstr "Hôt"
 
 #: kernel/kptproject.cpp:169 kernel/kptproject.cpp:287
 #: kernel/kptproject.cpp:317
@@ -269,266 +535,6 @@ msgstr ""
 msgid "Plan"
 msgstr "Parint"
 
-#. i18n: file: ui/relationpanel.ui:114
-#. i18n: ectx: property (text), widget (QRadioButton, bFinishStart)
-#: kernel/kptrelation.cpp:87 rc.cpp:715
-msgid "Finish-Start"
-msgstr "Fini-Ataker"
-
-#. i18n: file: ui/relationpanel.ui:121
-#. i18n: ectx: property (text), widget (QRadioButton, bFinishFinish)
-#: kernel/kptrelation.cpp:88 rc.cpp:718
-msgid "Finish-Finish"
-msgstr "Fini-Fini"
-
-#. i18n: file: ui/relationpanel.ui:128
-#. i18n: ectx: property (text), widget (QRadioButton, bStartStart)
-#: kernel/kptrelation.cpp:89 rc.cpp:721
-msgid "Start-Start"
-msgstr "Ataker-Ataker"
-
-#: kernel/kptwbsdefinition.cpp:40
-#, fuzzy
-msgid "Number"
-msgstr "No"
-
-#: kernel/kptwbsdefinition.cpp:41
-msgid "Roman, upper case"
-msgstr "Roman, grandès letes"
-
-#: kernel/kptwbsdefinition.cpp:42
-msgid "Roman, lower case"
-msgstr "Raman, pititès letes"
-
-#: kernel/kptwbsdefinition.cpp:43
-msgid "Letter, upper case"
-msgstr "Lete, grandès letes"
-
-#: kernel/kptwbsdefinition.cpp:44
-msgid "Letter, lower case"
-msgstr "Lete, pititès letes"
-
-#. i18n: file: ui/resourcedialogbase.ui:169
-#. i18n: ectx: property (text), item, widget (QComboBox, type)
-#: kernel/kptresource.cpp:123 ui/kptresourceassignmentview.cpp:82 rc.cpp:769
-msgid "Work"
-msgstr "Ovraedje"
-
-#. i18n: file: ui/resourcedialogbase.ui:174
-#. i18n: ectx: property (text), item, widget (QComboBox, type)
-#: kernel/kptresource.cpp:124 ui/kptresourceassignmentview.cpp:86 rc.cpp:772
-msgid "Material"
-msgstr "Haerna"
-
-#: kernel/kptresource.cpp:441
-#, fuzzy
-#| msgid "Work"
-msgctxt "@item:inlistbox resource type"
-msgid "Work"
-msgstr "Ovraedje"
-
-#: kernel/kptresource.cpp:442
-#, fuzzy
-#| msgid "Material"
-msgctxt "@item:inlistbox resource type"
-msgid "Material"
-msgstr "Haerna"
-
-#: kernel/kptresource.cpp:443
-msgctxt "@item:inlistbox resource type"
-msgid "Team"
-msgstr ""
-
-#: kernel/kptresource.cpp:819
-msgid "Make appointments: Invalid time"
-msgstr "Fé des radjoûs: date/eure nén valåbe"
-
-#: kernel/kptresource.cpp:824 kernel/kptresource.cpp:883
-#: kernel/kptresource.cpp:1112 kernel/kptresource.cpp:1176
-#, kde-format
-msgid "Resource %1 has no calendar defined"
-msgstr "Li rsource %1 n' a pont d' calindrî defini"
-
-#: kernel/kptresource.cpp:847
-msgid "Make appointments: Node start time is not valid"
-msgstr "Fé des radjoûs: li date di cominçmint do nuk n' est nén valåbe"
-
-#: kernel/kptresource.cpp:851
-msgid "Make appointments: Node end time is not valid"
-msgstr "Fé des radjoûs: li date di dfén do nuk n' est nén valåbe"
-
-#: kernel/kptresource.cpp:890 kernel/kptresource.cpp:906
-#, kde-format
-msgid "Resource %1 not available in interval: %2 to %3"
-msgstr "Rissource %1 nén disponibe inte %2 et %3"
-
-#: kernel/kptresource.cpp:2437
-#, kde-format
-msgid "Could not match effort. Want: %1 got: %2"
-msgstr "Dji n' a savou fé coresponde l' efoirt. Djovleu: %1, dj' a yeu: %2"
-
-#: kernel/kptresource.cpp:2440
-#, kde-format
-msgid "Resource %1 available from %2 to %3"
-msgstr "Rissource %1 disponibe di %2 a %3"
-
-#: kernel/kptglobal.cpp:41
-#, fuzzy
-msgid "Deleted"
-msgstr "Disfacer"
-
-#: kernel/kptglobal.cpp:43 kernel/kptnode.cpp:602 kernel/kptschedule.cpp:1813
-#: models/kptschedulemodel.cpp:687
-msgid "Not scheduled"
-msgstr "Nén programé"
-
-#: kernel/kptglobal.cpp:45 models/kptschedulemodel.cpp:687
-#: models/kptschedulemodel.cpp:768
-#, fuzzy
-msgid "Scheduled"
-msgstr "Programaedje:"
-
-#: kernel/kptglobal.cpp:47
-#, fuzzy
-msgid "Resource overbooked"
-msgstr "Rissource forrezervêye"
-
-#: kernel/kptglobal.cpp:49
-#, fuzzy
-msgid "Resource not available"
-msgstr "Nou pordjet disponibe"
-
-#: kernel/kptglobal.cpp:51
-msgid "No resource allocated"
-msgstr "Nole rissource acoirdêye"
-
-#: kernel/kptglobal.cpp:53
-#, fuzzy
-#| msgid "Cannot fullfill constraints"
-msgid "Cannot fulfill constraints"
-msgstr "Dji n' sai passer les stronnas"
-
-#: kernel/kptglobal.cpp:55
-#, fuzzy
-msgid "Effort not met"
-msgstr "Efoirt"
-
-#. i18n: file: ui/kpttaskgeneralpanelbase.ui:344
-#. i18n: ectx: property (text), item, widget (KComboBox, risk)
-#: kernel/kptnode.cpp:136 kernel/kptnode.cpp:1506 kernel/kpttask.cpp:3682
-#: models/kptresourceallocationmodel.cpp:743 models/kptresourcemodel.cpp:197
-#: models/kptresourcemodel.cpp:229 models/kptresourcemodel.cpp:350
-#: models/kptresourcemodel.cpp:354 models/kptresourcemodel.cpp:363
-#: models/kptschedulemodel.cpp:481 models/kptschedulemodel.cpp:483
-#: models/kpttreecombobox.cpp:124 models/kptnodeitemmodel.cpp:376
-#: models/kptnodeitemmodel.cpp:387 models/kptnodeitemmodel.cpp:392
-#: models/kptnodeitemmodel.cpp:402 models/kptnodeitemmodel.cpp:578
-#: models/kptnodeitemmodel.cpp:584 models/kptnodeitemmodel.cpp:594
-#: models/kptnodeitemmodel.cpp:612 models/kptnodeitemmodel.cpp:619
-#: models/kptnodeitemmodel.cpp:629 models/kptnodeitemmodel.cpp:664
-#: models/kptnodeitemmodel.cpp:670 models/kptnodeitemmodel.cpp:680
-#: ui/kptpertresult.cpp:138 ui/kptpertresult.cpp:489
-#: ui/kptresourcedialog.cpp:266 ui/kptresourcedialog.cpp:292
-#: ui/kpttaskcostpanel.cpp:50 ui/kpttaskgeneralpanel.cpp:74 rc.cpp:536
-msgid "None"
-msgstr "Nouk"
-
-#. i18n: file: ui/kptscheduleeditor.ui:19
-#. i18n: ectx: property (title), widget (QGroupBox, projectGroupBox)
-#: kernel/kptnode.cpp:137 models/kptpertcpmmodel.cpp:425
-#: models/kptresourceappointmentsmodel.cpp:1263 rc.cpp:328
-msgid "Project"
-msgstr "Pordjet"
-
-#: kernel/kptnode.cpp:138
-#, fuzzy
-msgid "Sub-Project"
-msgstr "Pordjet"
-
-#. i18n: file: ui/kptscheduleeditor.ui:167
-#. i18n: ectx: property (text), widget (QTreeWidget, treeWidgetTaskResult)
-#: kernel/kptnode.cpp:139 rc.cpp:349
-msgid "Task"
-msgstr "Bouye"
-
-#: kernel/kptnode.cpp:140
-#, fuzzy
-msgid "Milestone"
-msgstr "Radjouter etape..."
-
-#: kernel/kptnode.cpp:141
-#, fuzzy
-msgid "Periodic"
-msgstr "Frecwince:"
-
-#: kernel/kptnode.cpp:142
-msgid "Summary"
-msgstr "Rascourti"
-
-#: kernel/kptnode.cpp:702
-#, fuzzy
-msgid "As Soon As Possible"
-msgstr "Totossu rade ki possibe"
-
-#: kernel/kptnode.cpp:703
-#, fuzzy
-msgid "As Late As Possible"
-msgstr "Totossu tård ki possibe"
-
-#. i18n: file: ui/kpttaskgeneralpanelbase.ui:192
-#. i18n: ectx: property (text), item, widget (KComboBox, scheduleType)
-#: kernel/kptnode.cpp:704 rc.cpp:491
-msgid "Must Start On"
-msgstr "Doet ataker li"
-
-#. i18n: file: ui/kpttaskgeneralpanelbase.ui:197
-#. i18n: ectx: property (text), item, widget (KComboBox, scheduleType)
-#: kernel/kptnode.cpp:705 rc.cpp:494
-msgid "Must Finish On"
-msgstr "Doet fini li"
-
-#: kernel/kptnode.cpp:706
-#, fuzzy
-msgid "Start Not Earlier"
-msgstr "En nén ataker pus timpe ki"
-
-#: kernel/kptnode.cpp:707
-#, fuzzy
-msgid "Finish Not Later"
-msgstr "En nén fini pus tård ki"
-
-#. i18n: file: ui/kpttaskgeneralpanelbase.ui:212
-#. i18n: ectx: property (text), item, widget (KComboBox, scheduleType)
-#: kernel/kptnode.cpp:708 rc.cpp:503
-msgid "Fixed Interval"
-msgstr "Tins ewal inte les deus"
-
-#. i18n: file: ui/kptperformancestatusviewsettingspanel.ui:88
-#. i18n: ectx: property (title), widget (QGroupBox, ui_effort)
-#. i18n: file: ui/kpttaskgeneralpanelbase.ui:281
-#. i18n: ectx: property (text), item, widget (KComboBox, estimateType)
-#: kernel/kptnode.cpp:1473 rc.cpp:238 rc.cpp:509
-msgid "Effort"
-msgstr "Efoirt"
-
-#. i18n: file: ui/kpttaskgeneralpanelbase.ui:286
-#. i18n: ectx: property (text), item, widget (KComboBox, estimateType)
-#: kernel/kptnode.cpp:1474 rc.cpp:512
-msgid "Duration"
-msgstr "Durêye"
-
-#. i18n: file: ui/kpttaskgeneralpanelbase.ui:349
-#. i18n: ectx: property (text), item, widget (KComboBox, risk)
-#: kernel/kptnode.cpp:1507 rc.cpp:539
-msgid "Low"
-msgstr "Bas"
-
-#. i18n: file: ui/kpttaskgeneralpanelbase.ui:354
-#. i18n: ectx: property (text), item, widget (KComboBox, risk)
-#: kernel/kptnode.cpp:1508 rc.cpp:542
-msgid "High"
-msgstr "Hôt"
-
 #: kernel/kptschedule.cpp:141 kernel/kptschedule.cpp:146
 msgid "Expected"
 msgstr "Ratindou "
@@ -543,28 +549,29 @@ msgstr "Optimisse:"
 msgid "Pessimistic"
 msgstr "Pessimisse:"
 
-#: kernel/kptschedule.cpp:1401
+#: kernel/kptschedule.cpp:1409
 msgid "Info"
 msgstr "Informåcion"
 
-#: kernel/kptschedule.cpp:1402
+#: kernel/kptschedule.cpp:1410
 msgid "Warning"
 msgstr "Asteme"
 
-#: kernel/kptschedule.cpp:1403 kernel/kptschedule.cpp:1817
-#: kernel/kptschedule.cpp:1822 kernel/kptschedule.cpp:1827
+#: kernel/kptschedule.cpp:1411 kernel/kptschedule.cpp:1825
+#: kernel/kptschedule.cpp:1830 kernel/kptschedule.cpp:1835
 #: models/kptnodeitemmodel.cpp:1489 models/kptnodeitemmodel.cpp:1522
 #: models/kptnodeitemmodel.cpp:1555 models/kptnodeitemmodel.cpp:1588
 #: models/kptnodeitemmodel.cpp:1621 models/kptnodeitemmodel.cpp:1654
+#: models/kptnodeitemmodel.cpp:1687
 msgid "Error"
 msgstr "Aroke:"
 
-#: kernel/kptschedule.cpp:1807
+#: kernel/kptschedule.cpp:1815
 #, fuzzy
 msgid "Baselined"
 msgstr "Referince"
 
-#: kernel/kptschedule.cpp:1810
+#: kernel/kptschedule.cpp:1818
 #, fuzzy
 #| msgid "Scheduling Log"
 msgid "Scheduling"
@@ -584,8 +591,8 @@ msgctxt "1=type of constraint"
 msgid "%1: Failed to meet constraint"
 msgstr "%1: Li passaedje do stronna a fwait berwete"
 
-#: kernel/kpttask.cpp:1258 kernel/kpttask.cpp:1483 kernel/kpttask.cpp:1865
-#: kernel/kpttask.cpp:2199
+#: kernel/kpttask.cpp:1258 kernel/kpttask.cpp:1483 kernel/kpttask.cpp:1874
+#: kernel/kpttask.cpp:2205
 #, kde-format
 msgid "Resource %1 booked from %2 to %3"
 msgstr "Rissource %1 rezervé di %2 a %3"
@@ -610,54 +617,61 @@ msgstr "Tård cominçmint cårculé: %1"
 msgid "Schedule from start %1"
 msgstr "Programer a pårti do cominçmint %1"
 
-#: kernel/kpttask.cpp:1606 kernel/kpttask.cpp:1873 kernel/kpttask.cpp:2207
+#: kernel/kpttask.cpp:1606 kernel/kpttask.cpp:1882 kernel/kpttask.cpp:2213
 #, fuzzy, kde-format
 msgid "Scheduled: %1 to %2"
 msgstr "Programaedje:"
 
-#: kernel/kpttask.cpp:1664 kernel/kpttask.cpp:1688 kernel/kpttask.cpp:1714
-#: kernel/kpttask.cpp:1738 kernel/kpttask.cpp:1756 kernel/kpttask.cpp:1813
-#: kernel/kpttask.cpp:1830 kernel/kpttask.cpp:1842 kernel/kpttask.cpp:2021
-#: kernel/kpttask.cpp:2040 kernel/kpttask.cpp:2062 kernel/kpttask.cpp:2078
-#: kernel/kpttask.cpp:2097 kernel/kpttask.cpp:2148 kernel/kpttask.cpp:2161
-#: kernel/kpttask.cpp:2178
+#: kernel/kpttask.cpp:1638
+#, kde-format
+msgid "%1: Scheduling failed using late finish, trying early finish instead."
+msgstr ""
+
+#: kernel/kpttask.cpp:1673 kernel/kpttask.cpp:1697 kernel/kpttask.cpp:1723
+#: kernel/kpttask.cpp:1747 kernel/kpttask.cpp:1765 kernel/kpttask.cpp:1822
+#: kernel/kpttask.cpp:1839 kernel/kpttask.cpp:1851 kernel/kpttask.cpp:2028
+#: kernel/kpttask.cpp:2047 kernel/kpttask.cpp:2069 kernel/kpttask.cpp:2085
+#: kernel/kpttask.cpp:2104 kernel/kpttask.cpp:2154 kernel/kpttask.cpp:2167
+#: kernel/kpttask.cpp:2184
 #, kde-format
 msgctxt "1=type of constraint"
 msgid "%1: Failed to meet constraint. Negative float=%2"
 msgstr "%1: Li passaedje do stronna a fwait berwete. Flotant negatif=%2"
 
-#: kernel/kpttask.cpp:1775 kernel/kpttask.cpp:2114
+#: kernel/kpttask.cpp:1784 kernel/kpttask.cpp:2121
 #, kde-format
 msgid "Effort not met. Estimate: %1, planned: %2"
 msgstr ""
 
-#: kernel/kpttask.cpp:1862 kernel/kpttask.cpp:2196
+#: kernel/kpttask.cpp:1871 kernel/kpttask.cpp:2202
 msgid "Failed to schedule within project target time"
 msgstr "Li programaedje do pordjet divant l' date/eure såme a fwait berwete"
 
-#: kernel/kpttask.cpp:1868 kernel/kpttask.cpp:2202
+#: kernel/kpttask.cpp:1877 kernel/kpttask.cpp:2208
 msgid "Starting earlier than early start"
 msgstr "Cominçmint pus timpe kel timpe cominçmint"
 
-#: kernel/kpttask.cpp:1871 kernel/kpttask.cpp:2205
+#: kernel/kpttask.cpp:1880 kernel/kpttask.cpp:2211
 msgid "Finishing later than late finish"
 msgstr "Finixhaedje pus tård kel tårdfinixhaedje"
 
-#: kernel/kpttask.cpp:1949
+#: kernel/kpttask.cpp:1958
 #, fuzzy, kde-format
 #| msgid "Schedule from start %1"
 msgid "Schedule from end time: %1"
 msgstr "Programer a pårti do cominçmint %1"
 
-#: kernel/kpttask.cpp:1963
-#, kde-format
+#: kernel/kpttask.cpp:1971
+#, fuzzy, kde-format
+#| msgctxt "1=type of constraint"
+#| msgid "%1: Failed to schedule within late finish. Negative float=%2"
 msgctxt "1=type of constraint"
-msgid "%1: Failed to schedule within late finish. Negative float=%2"
+msgid "%1: Failed to schedule within late finish."
 msgstr ""
 "%1: Li programaedje divant l' tård finixhaedje a fwait berwete. Flotant "
 "negatif=%2"
 
-#: kernel/kpttask.cpp:1969
+#: kernel/kpttask.cpp:1977
 #, kde-format
 msgctxt "1=type of constraint"
 msgid "%1: Failed to schedule within successors start time"
@@ -665,32 +679,34 @@ msgstr ""
 "%1: Li programaedje divant l' tins d' enondaedje do ci d' après a fwait "
 "berwete"
 
-#: kernel/kpttask.cpp:1997 kernel/kpttask.cpp:2122
-#, kde-format
+#: kernel/kpttask.cpp:2004 kernel/kpttask.cpp:2128
+#, fuzzy, kde-format
+#| msgctxt "1=type of constraint"
+#| msgid "%1: Failed to schedule after early start. Negative float=%2"
 msgctxt "1=type of constraint"
-msgid "%1: Failed to schedule after early start. Negative float=%2"
+msgid "%1: Failed to schedule after early start."
 msgstr ""
 "%1: Li programaedje après l' timpe cominçmint a fwait berwete. Flotant "
 "negatif=%2 "
 
-#: kernel/kpttask.cpp:2271
+#: kernel/kpttask.cpp:2277
 #, fuzzy
 #| msgid "No resource allocated"
 msgid "No resource has been allocated"
 msgstr "Nole rissource acoirdêye"
 
-#: kernel/kpttask.cpp:2432
+#: kernel/kpttask.cpp:2438
 #, kde-format
 msgid "Could not match work duration. Want: %1 got: %2"
 msgstr ""
 "Dji n' a savou fé coresponde li durêye d' ovraedje. Dji vout: %1, dj' a yeu: "
 "%2"
 
-#: kernel/kpttask.cpp:3685
+#: kernel/kpttask.cpp:3691
 msgid "Send"
 msgstr "Evoyî"
 
-#: kernel/kpttask.cpp:3688
+#: kernel/kpttask.cpp:3694
 #, fuzzy
 msgid "Receive"
 msgstr "Oister"
@@ -879,6 +895,611 @@ msgstr "Candjî calindrî"
 #, kde-format
 msgctxt "1=time 2=The number of hours of work duration (non integer)"
 msgid "%1, %2 hours"
+msgstr ""
+
+#: models/kptdocumentmodel.cpp:171
+msgid "Url"
+msgstr "Url"
+
+#. i18n: file: ui/kptresourceassignmentview.ui:32
+#. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
+#: models/kptdocumentmodel.cpp:172 models/kptrelationmodel.cpp:148
+#: models/kptresourceallocationmodel.cpp:333 models/kptresourcemodel.cpp:434
+#: models/kptresourceappointmentsmodel.cpp:1501 rc.cpp:319
+msgid "Type"
+msgstr "Sôre"
+
+#: models/kptdocumentmodel.cpp:173
+#, fuzzy
+msgid "Status"
+msgstr "Enondaedje"
+
+#: models/kptdocumentmodel.cpp:174
+msgid "Send As"
+msgstr ""
+
+#: models/kptflatproxymodel.cpp:273 models/kptrelationmodel.cpp:146
+#, fuzzy
+msgid "Parent"
+msgstr "Pordjet"
+
+#: models/kptpertcpmmodel.cpp:151
+msgid "Path"
+msgstr "Tchimin"
+
+#: models/kptpertcpmmodel.cpp:430 ui/kptscheduleeditor.cpp:682
+msgid "Critical Path"
+msgstr "Tchimin critike"
+
+#: models/kptpertcpmmodel.cpp:450
+#, fuzzy
+msgid "Critical"
+msgstr "Tchimin critike"
+
+#: models/kptpertcpmmodel.cpp:454
+msgid "Non-critical"
+msgstr ""
+
+#: models/kptrelationmodel.cpp:147
+msgid "Child"
+msgstr "Efant"
+
+#: models/kptrelationmodel.cpp:149
+msgid "Lag"
+msgstr ""
+
+#: models/kptrelationmodel.cpp:352
+#, fuzzy
+msgid "Modify relation time lag"
+msgstr "Candjî loyaedje"
+
+#: models/kptresourceallocationmodel.cpp:170
+#: models/kptresourceallocationmodel.cpp:228
+#: models/kptresourceallocationmodel.cpp:650
+#, no-c-format, kde-format
+msgctxt "<value>%"
+msgid "%1%"
+msgstr ""
+
+#: models/kptresourceallocationmodel.cpp:177
+#: models/kptresourceallocationmodel.cpp:656
+#, fuzzy
+msgctxt "@info:tooltip"
+msgid "Not allocated"
+msgstr "Nén co ataké"
+
+#: models/kptresourceallocationmodel.cpp:180
+#, fuzzy, no-c-format, kde-format
+msgctxt "@info:tooltip"
+msgid "Allocated units: %1%"
+msgstr "Radjouter rissource..."
+
+#: models/kptresourceallocationmodel.cpp:233
+#, no-c-format, kde-format
+msgid "Maximum units available: %1%"
+msgstr ""
+
+#: models/kptresourceallocationmodel.cpp:273
+#, kde-format
+msgid "There is %1 resource available in this group"
+msgid_plural "There are %1 resources available in this group"
+msgstr[0] ""
+msgstr[1] ""
+
+#: models/kptresourceallocationmodel.cpp:334
+#, fuzzy
+msgid "Allocation"
+msgstr "Radjouter loyaedje"
+
+#: models/kptresourceallocationmodel.cpp:335
+#, fuzzy
+msgctxt "@title:column"
+msgid "Available"
+msgstr "Arinnåve:"
+
+#: models/kptresourceallocationmodel.cpp:336
+#, fuzzy
+#| msgid "Resource"
+msgctxt "@title:column"
+msgid "Required Resources"
+msgstr "Rissource"
+
+#: models/kptresourceallocationmodel.cpp:348
+#, fuzzy
+msgid "Resource allocation"
+msgstr "Apontiaedjes del rissource"
+
+#: models/kptresourceallocationmodel.cpp:349
+msgctxt "@info:tootip"
+msgid "Available resources or resource units"
+msgstr ""
+
+#: models/kptresourceallocationmodel.cpp:350
+#, fuzzy
+#| msgid "Resource"
+msgctxt "@info:tootip"
+msgid "Required Resources"
+msgstr "Rissource"
+
+#: models/kptresourceallocationmodel.cpp:658
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "%1 allocated out of %2 available"
+msgstr ""
+
+#: models/kptresourceallocationmodel.cpp:681
+#, fuzzy, kde-format
+msgid "%1 resource allocated"
+msgid_plural "%1 resources allocated"
+msgstr[0] "Nole rissource acoirdêye"
+msgstr[1] "Nole rissource acoirdêye"
+
+#: models/kptresourceallocationmodel.cpp:757
+#, fuzzy
+msgctxt "@info:tooltip"
+msgid "No required resources"
+msgstr "Candjî rissource"
+
+#: models/kptresourceallocationmodel.cpp:760
+msgctxt "@info:tooltip"
+msgid "Material resources cannot have required resources"
+msgstr ""
+
+#: models/kptresourceallocationmodel.cpp:762
+msgctxt "@info:tooltip"
+msgid "Team resources cannot have required resources"
+msgstr ""
+
+#: models/kptresourcemodel.cpp:205 models/kptresourcemodel.cpp:231
+#, kde-format
+msgctxt "Default (calendar name)"
+msgid "Default (%1)"
+msgstr ""
+
+#: models/kptresourcemodel.cpp:212
+msgctxt "@info:tooltip"
+msgid "A team resource does not have a calendar"
+msgstr ""
+
+#: models/kptresourcemodel.cpp:214
+#, fuzzy
+#| msgid "Add Calendar"
+msgctxt "@info:tooltip"
+msgid "No calendar"
+msgstr "Radjouter calindrî"
+
+#: models/kptresourcemodel.cpp:222
+#, fuzzy, kde-format
+msgctxt "@info:tooltip 1=calendar name"
+msgid "Using default calendar: %1"
+msgstr "Disfacer les contes di tchoezis"
+
+#: models/kptresourcemodel.cpp:276
+#, fuzzy, kde-format
+msgctxt "infor:tooltip"
+msgid "Available from: %1"
+msgstr "Arinnåve:"
+
+#: models/kptresourcemodel.cpp:278
+#, fuzzy, kde-format
+#| msgid "Can start project later than time: %1"
+msgctxt "infor:tooltip"
+msgid "Available from project target start time: %1"
+msgstr "On n' sait ataker l' pordjet pus tård kel date/eure: %1"
+
+#: models/kptresourcemodel.cpp:298
+#, fuzzy, kde-format
+msgctxt "infor:tooltip"
+msgid "Available until: %1"
+msgstr "Arinnåve:"
+
+#: models/kptresourcemodel.cpp:300
+#, fuzzy, kde-format
+#| msgid "Must start project early in order to finish in time: %1"
+msgctxt "infor:tooltip"
+msgid "Available from project target finish time: %1"
+msgstr "I fåt ataker l' pordjet timpe po fini a tinzayeure: %1"
+
+#: models/kptresourcemodel.cpp:319
+#, kde-format
+msgid "Cost per hour, normal time: %1"
+msgstr ""
+
+#: models/kptresourcemodel.cpp:337
+#, kde-format
+msgid "Cost per hour, overtime: %1"
+msgstr ""
+
+#: models/kptresourcemodel.cpp:354
+#, fuzzy, kde-format
+#| msgid "Account"
+msgid "Account: %1"
+msgstr "Conte"
+
+#: models/kptresourcemodel.cpp:435
+#, fuzzy
+msgid "Initials"
+msgstr "Iniciåles:"
+
+#: models/kptresourcemodel.cpp:436
+msgid "Email"
+msgstr "Emile"
+
+#: models/kptresourcemodel.cpp:437
+#, fuzzy
+msgid "Calendar"
+msgstr "Radjouter calindrî"
+
+#: models/kptresourcemodel.cpp:438
+msgid "Limit (%)"
+msgstr "Limite (%)"
+
+#: models/kptresourcemodel.cpp:439
+#, fuzzy
+msgid "Available From"
+msgstr "Arinnåve:"
+
+#: models/kptresourcemodel.cpp:440
+#, fuzzy
+msgid "Available Until"
+msgstr "Arinnåve:"
+
+#: models/kptresourcemodel.cpp:441
+msgid "Normal Rate"
+msgstr ""
+
+#: models/kptresourcemodel.cpp:442
+msgid "Overtime Rate"
+msgstr ""
+
+#: models/kptresourcemodel.cpp:981
+#, fuzzy
+msgid "Modify resource account"
+msgstr "Candjî loyaedje"
+
+#: models/kptresourcemodel.cpp:1209
+#, fuzzy, kde-format
+msgid "Move resource"
+msgid_plural "Move %1 resources"
+msgstr[0] "Candjî rissource"
+msgstr[1] "Candjî rissource"
+
+#: models/kptresourcemodel.cpp:1228
+#, fuzzy, kde-format
+msgid "Copy resource"
+msgid_plural "Copy %1 resources"
+msgstr[0] "Candjî rissource"
+msgstr[1] "Candjî rissource"
+
+#: models/kptresourcemodel.cpp:1247
+#: models/kptresourceappointmentsmodel.cpp:1115
+#, fuzzy, kde-format
+msgid "Add resource from address book"
+msgid_plural "Add %1 resources from address book"
+msgstr[0] "Sititchî ene djin di vosse calpin d' adresses"
+msgstr[1] "Sititchî ene djin di vosse calpin d' adresses"
+
+#: models/kptresourcemodel.cpp:1310
+#, fuzzy
+msgid "Add resource group"
+msgstr "Radjouter groupe di rsource..."
+
+#: models/kptresourcemodel.cpp:1321 models/kptnodeitemmodel.cpp:2653
+#, fuzzy
+msgid "Add resource"
+msgstr "Radjouter rissource..."
+
+#: models/kptschedulemodel.cpp:374
+#, fuzzy
+msgid "Modify schedule name"
+msgstr "Candjî calindrî"
+
+#: models/kptschedulemodel.cpp:441 models/kptschedulemodel.cpp:443
+msgid "Allow"
+msgstr "Permete"
+
+#: models/kptschedulemodel.cpp:441 models/kptschedulemodel.cpp:443
+msgid "Avoid"
+msgstr ""
+
+#: models/kptschedulemodel.cpp:463
+msgid "Modify allow overbooking"
+msgstr ""
+
+#: models/kptschedulemodel.cpp:481 models/kptschedulemodel.cpp:483
+msgid "PERT"
+msgstr "PERT"
+
+#: models/kptschedulemodel.cpp:503
+#, fuzzy
+msgid "Modify scheduling distribution"
+msgstr "Candjî completaedje del bouye"
+
+#: models/kptschedulemodel.cpp:521 models/kptschedulemodel.cpp:523
+msgid "All"
+msgstr "Totafwait"
+
+#: models/kptschedulemodel.cpp:521 models/kptschedulemodel.cpp:523
+msgid "Expected only"
+msgstr ""
+
+#: models/kptschedulemodel.cpp:607 models/kptschedulemodel.cpp:609
+msgid "Backwards"
+msgstr ""
+
+#: models/kptschedulemodel.cpp:607 models/kptschedulemodel.cpp:609
+msgid "Forward"
+msgstr "En avant"
+
+#: models/kptschedulemodel.cpp:629
+#, fuzzy
+msgid "Modify scheduling direction"
+msgstr "Candjî completaedje del bouye"
+
+#: models/kptschedulemodel.cpp:647
+#, fuzzy
+#| msgid "Unknown"
+msgid "Unknown"
+msgstr "Nén cnoxhou"
+
+#: models/kptschedulemodel.cpp:669
+#, fuzzy
+#| msgid "Not scheduled"
+msgid "Modify scheduler"
+msgstr "Nén programé"
+
+#: models/kptschedulemodel.cpp:760
+#, fuzzy
+msgid "State"
+msgstr "Ataké"
+
+#: models/kptschedulemodel.cpp:761
+#, fuzzy
+msgid "Direction"
+msgstr "Durêye"
+
+#: models/kptschedulemodel.cpp:762
+msgid "Overbooking"
+msgstr "Forrezervaedje"
+
+#: models/kptschedulemodel.cpp:763
+#, fuzzy
+msgid "Distribution"
+msgstr "Discrijhaedje"
+
+#: models/kptschedulemodel.cpp:765
+#, fuzzy
+msgid "Planned Start"
+msgstr "Efoirt planifyî"
+
+#: models/kptschedulemodel.cpp:766
+msgid "Planned Finish"
+msgstr ""
+
+#: models/kptschedulemodel.cpp:767
+#, fuzzy
+msgid "Scheduler"
+msgstr "Programaedje:"
+
+#: models/kptschedulemodel.cpp:1017
+#, fuzzy
+msgid "Phase"
+msgstr "Pådje:"
+
+#: models/kptschedulemodel.cpp:1017
+msgid "Severity"
+msgstr "Severité"
+
+#: models/kptschedulemodel.cpp:1017
+msgid "Message"
+msgstr "Messaedje"
+
+#: models/kpttaskstatusmodel.cpp:50 ui/kptresourceassignmentview.cpp:255
+#: ui/kptresourceassignmentview.cpp:333
+msgid "Not Started"
+msgstr "Nén co ataké"
+
+#: models/kpttaskstatusmodel.cpp:51
+msgid "Tasks that should have been started"
+msgstr ""
+
+#. i18n: file: ui/kpttaskcostpanelbase.ui:24
+#. i18n: ectx: property (title), widget (QGroupBox, runningGroup)
+#: models/kpttaskstatusmodel.cpp:54 models/kptnodeitemmodel.cpp:1216
+#: rc.cpp:404
+msgid "Running"
+msgstr "En alaedje"
+
+#: models/kpttaskstatusmodel.cpp:55
+msgid "Tasks that are running"
+msgstr ""
+
+#. i18n: file: ui/kptmilestoneprogresspanelbase.ui:23
+#. i18n: ectx: property (text), widget (QCheckBox, finished)
+#: models/kpttaskstatusmodel.cpp:58 models/kptnodeitemmodel.cpp:1213
+#: ui/kptresourceassignmentview.cpp:257 ui/kptresourceassignmentview.cpp:335
+#: rc.cpp:193
+msgid "Finished"
+msgstr "Fini"
+
+#: models/kpttaskstatusmodel.cpp:59
+msgid "Tasks that have finished during this period"
+msgstr ""
+
+#: models/kpttaskstatusmodel.cpp:62
+msgid "Next Period"
+msgstr ""
+
+#: models/kpttaskstatusmodel.cpp:63
+msgid "Tasks that are scheduled to start next period"
+msgstr ""
+
+#: models/kpttaskstatusmodel.cpp:383 models/kptnodeitemmodel.cpp:2996
+#, fuzzy, no-c-format
+#| msgid "Modify task completion"
+msgid "Modify completion"
+msgstr "Candjî completaedje del bouye"
+
+#: models/kpttaskstatusmodel.cpp:412 models/kptnodeitemmodel.cpp:3025
+#, fuzzy
+msgid "Set finished"
+msgstr "Fini"
+
+#: models/kpttaskstatusmodel.cpp:433 models/kptnodeitemmodel.cpp:3046
+#, fuzzy
+msgid "Modify remaining effort"
+msgstr "Efoirt ki dmeure"
+
+#: models/kpttaskstatusmodel.cpp:446 models/kptnodeitemmodel.cpp:3059
+#, fuzzy
+msgid "Modify actual effort"
+msgstr "Candjî costindje del bouye"
+
+#: models/kpttaskstatusmodel.cpp:460 models/kptnodeitemmodel.cpp:3073
+#, fuzzy
+msgid "Modify actual start time"
+msgstr "Candjî standårdès eures ovråves"
+
+#: models/kpttaskstatusmodel.cpp:488 models/kptnodeitemmodel.cpp:3101
+#, fuzzy
+msgid "Modify actual finish time"
+msgstr "Candjî standårdès eures ovråves"
+
+#: models/kptworkpackagemodel.cpp:76
+#, kde-format
+msgid "Sent to %1 at %2"
+msgstr ""
+
+#: models/kptworkpackagemodel.cpp:79
+#, fuzzy, kde-format
+msgid "Received from %1 at %2"
+msgstr "Rissource %1 rezervé di %2 a %3"
+
+#: models/kptworkpackagemodel.cpp:81 models/kptworkpackagemodel.cpp:106
+#: models/kptnodeitemmodel.cpp:1874 models/kptnodeitemmodel.cpp:1937
+#, fuzzy
+msgid "Not available"
+msgstr "Nou pordjet disponibe"
+
+#: models/kptworkpackagemodel.cpp:101
+#, fuzzy, kde-format
+msgid "Work package sent at: %1"
+msgstr "Controle do pacaedje d' ovraedje"
+
+#: models/kptworkpackagemodel.cpp:104
+#, fuzzy, kde-format
+msgid "Work package transmission received at: %1"
+msgstr "Controle do pacaedje d' ovraedje"
+
+#: models/kptworkpackagemodel.cpp:131
+#, kde-format
+msgid "Task reported %1% completed"
+msgstr ""
+
+#: models/kptresourceappointmentsmodel.cpp:581
+#, fuzzy, kde-format
+msgid "External project: %1"
+msgstr "Pordjet: %1"
+
+#: models/kptresourceappointmentsmodel.cpp:657
+#, kde-format
+msgid "The total booking on %1, along with the maximum hours for the resource"
+msgstr ""
+
+#: models/kptresourceappointmentsmodel.cpp:689
+msgid "Total booking by this task"
+msgstr ""
+
+#: models/kptresourceappointmentsmodel.cpp:691
+msgid "Total booking by the external project"
+msgstr ""
+
+#: models/kptresourceappointmentsmodel.cpp:734
+#, kde-format
+msgid "Booking by this task on %1"
+msgstr ""
+
+#: models/kptresourceappointmentsmodel.cpp:736
+#, kde-format
+msgid "Booking by external project on %1"
+msgstr ""
+
+#: models/kptresourceappointmentsmodel.cpp:924
+msgid "The total hours booked"
+msgstr ""
+
+#: models/kptresourceappointmentsmodel.cpp:928
+#, kde-format
+msgid "Bookings on %1"
+msgstr ""
+
+#: models/kptresourceappointmentsmodel.cpp:1298
+#, fuzzy
+msgid "Interval"
+msgstr "Tins ewal inte les deus"
+
+#: models/kptresourceappointmentsmodel.cpp:1502
+#, fuzzy
+msgid "Start Time"
+msgstr "Ataké"
+
+#: models/kptresourceappointmentsmodel.cpp:1503
+msgid "End Time"
+msgstr ""
+
+#: models/kptresourceappointmentsmodel.cpp:1504
+#, fuzzy
+#| msgid "Load"
+msgctxt "@title:column noun"
+msgid "Load"
+msgstr "Tcherdjî"
+
+#: models/kptnodechartmodel.cpp:157
+#, fuzzy
+#| msgctxt "Budgeted Cost of Work Scheduled"
+#| msgid "BCWS (Cost)"
+msgctxt "Cost based Budgeted Cost of Work Scheduled"
+msgid "BCWS Cost"
+msgstr "BCWS (costindje)"
+
+#: models/kptnodechartmodel.cpp:158
+#, fuzzy
+#| msgctxt "Budgeted Cost of Work Performed"
+#| msgid "BCWP (Cost)"
+msgctxt "Cost based Budgeted Cost of Work Performed"
+msgid "BCWP Cost"
+msgstr "BCWP (costindje)"
+
+#: models/kptnodechartmodel.cpp:159
+#, fuzzy
+#| msgctxt "Actual Cost of Work Performed"
+#| msgid "ACWP (Cost)"
+msgctxt "Cost based Actual Cost of Work Performed"
+msgid "ACWP Cost"
+msgstr "ACWP (costindje)"
+
+#: models/kptnodechartmodel.cpp:160
+#, fuzzy
+msgctxt "Effort based Budgeted Cost of Work Scheduled"
+msgid "BCWS Effort"
+msgstr "Efoirt"
+
+#: models/kptnodechartmodel.cpp:161
+#, fuzzy
+msgctxt "Effort based Budgeted Cost of Work Performed"
+msgid "BCWP Effort"
+msgstr "Efoirt"
+
+#: models/kptnodechartmodel.cpp:162
+#, fuzzy
+msgctxt "Effort based Actual Cost of Work Performed"
+msgid "ACWP Effort"
+msgstr "Efoirt"
+
+#: models/kptnodechartmodel.cpp:166
+msgctxt ""
+"Date format used as chart axis labels. Must follow QDate specification."
+msgid "MM.dd"
 msgstr ""
 
 #: models/kptcommonstrings.cpp:27
@@ -1292,116 +1913,123 @@ msgctxt "@info:tooltip"
 msgid "The assigned resource could not meet the estimated effort"
 msgstr "Li rissource aroyeye n' a nén savou rescontrer l' efoirt aviré"
 
-#: models/kptcommonstrings.cpp:104
+#: models/kptcommonstrings.cpp:103
+#, fuzzy
+#| msgid "Scheduling Log"
+msgctxt "@info:tooltip"
+msgid "A scheduling error occured"
+msgstr "Djournå d' programaedje"
+
+#: models/kptcommonstrings.cpp:105
 msgctxt "@info:tooltip"
 msgid "Budgeted Cost of Work Scheduled"
 msgstr ""
 
-#: models/kptcommonstrings.cpp:105
+#: models/kptcommonstrings.cpp:106
 msgctxt "@info:tooltip"
 msgid "Budgeted Cost of Work Performed"
 msgstr ""
 
-#: models/kptcommonstrings.cpp:106
+#: models/kptcommonstrings.cpp:107
 msgctxt "@info:tooltip"
 msgid "Actual Cost of Work Performed"
 msgstr ""
 
-#: models/kptcommonstrings.cpp:107
+#: models/kptcommonstrings.cpp:108
 msgid "Schedule performance index (BCWP/BCWS)"
 msgstr "Programer l' indecse di performance (BCWP/BCWS)"
 
-#: models/kptcommonstrings.cpp:109
+#: models/kptcommonstrings.cpp:110
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "The name of the resource or resource group"
 msgstr "Ahiver programaedje efant"
 
-#: models/kptcommonstrings.cpp:110
+#: models/kptcommonstrings.cpp:111
 msgctxt "@info:tooltip"
 msgid "The type of the resource or resource group"
 msgstr ""
 
-#: models/kptcommonstrings.cpp:111
+#: models/kptcommonstrings.cpp:112
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "The initials of the resource"
 msgstr "Ahiver programaedje efant"
 
-#: models/kptcommonstrings.cpp:112
+#: models/kptcommonstrings.cpp:113
 msgctxt "@info:tooltip"
 msgid "The e-mail address of the resource"
 msgstr ""
 
-#: models/kptcommonstrings.cpp:113
+#: models/kptcommonstrings.cpp:114
 msgctxt "@info:tooltip"
 msgid "The calendar defines when the resource is working"
 msgstr ""
 
-#: models/kptcommonstrings.cpp:114
+#: models/kptcommonstrings.cpp:115
 msgctxt "@info:tooltip"
 msgid "The maximum load that can be assigned"
 msgstr ""
 
-#: models/kptcommonstrings.cpp:115 models/kptcommonstrings.cpp:116
+#: models/kptcommonstrings.cpp:116 models/kptcommonstrings.cpp:117
 #, fuzzy
 #| msgid "Resource %1 available from %2 to %3"
 msgctxt "@info:tooltip"
 msgid "Defines when the resource is available to the project"
 msgstr "Rissource %1 disponibe di %2 a %3"
 
-#: models/kptcommonstrings.cpp:117
+#: models/kptcommonstrings.cpp:118
 msgctxt "@info:tooltip"
 msgid "The cost pr hour, normal hours"
 msgstr ""
 
-#: models/kptcommonstrings.cpp:118
+#: models/kptcommonstrings.cpp:119
 msgctxt "@info:tooltip"
 msgid "The cost pr hour, overtime hours"
 msgstr ""
 
-#: models/kptcommonstrings.cpp:119
+#: models/kptcommonstrings.cpp:120
 msgctxt "@info:tooltip"
 msgid "The fixed cost"
 msgstr ""
 
-#: models/kptcommonstrings.cpp:120
+#: models/kptcommonstrings.cpp:121
 msgctxt "@info:tooltip"
 msgid "The account where the resource cost is accumulated"
 msgstr ""
 
-#: models/kptcommonstrings.cpp:122
+#: models/kptcommonstrings.cpp:123
 #, fuzzy
 #| msgid "The name of the task"
 msgctxt "@info:tooltip"
 msgid "The name of the account"
 msgstr "Li no del bouye"
 
-#: models/kptcommonstrings.cpp:123
+#: models/kptcommonstrings.cpp:124
 #, fuzzy
 #| msgid "The variance of the duration"
 msgctxt "@info:tooltip"
 msgid "The description of the account"
 msgstr "Li variance del durêye"
 
-#: models/kptcommonstrings.cpp:125
+#: models/kptcommonstrings.cpp:126
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "The name of the schedule"
 msgstr "Ahiver programaedje efant"
 
-#: models/kptcommonstrings.cpp:126
+#: models/kptcommonstrings.cpp:127
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "The schedules state"
 msgstr "Programaedje:"
 
-#: models/kptcommonstrings.cpp:128
+#: models/kptcommonstrings.cpp:129
 msgctxt "@info:tooltip"
 msgid "Controls resource overbooking when scheduling"
 msgstr ""
 
-#: models/kptcommonstrings.cpp:130
+#: models/kptcommonstrings.cpp:131
 msgctxt "@info:whatsthis"
 msgid ""
 "<para>Controls resource overbooking when scheduling.</para><para>If "
@@ -1413,12 +2041,12 @@ msgid ""
 "</para>"
 msgstr ""
 
-#: models/kptcommonstrings.cpp:136
+#: models/kptcommonstrings.cpp:137
 msgctxt "@info:tooltip"
 msgid "The distribution to be used during scheduling"
 msgstr ""
 
-#: models/kptcommonstrings.cpp:138
+#: models/kptcommonstrings.cpp:139
 msgctxt "@info:whatsthis"
 msgid ""
 "<para>The distribution to be used during scheduling</para><para>If "
@@ -1428,30 +2056,30 @@ msgid ""
 "estimate. The formula used for this is (O + 4 * M + P) / 6.<para>"
 msgstr ""
 
-#: models/kptcommonstrings.cpp:144
+#: models/kptcommonstrings.cpp:145
 msgctxt "@info:tooltip"
 msgid "Defines the schedules to be calculated"
 msgstr ""
 
-#: models/kptcommonstrings.cpp:145
+#: models/kptcommonstrings.cpp:146
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "The scheduled start time"
 msgstr "Programaedje:"
 
-#: models/kptcommonstrings.cpp:146
+#: models/kptcommonstrings.cpp:147
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "The scheduled finish time"
 msgstr "Programaedje:"
 
-#: models/kptcommonstrings.cpp:147
+#: models/kptcommonstrings.cpp:148
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "The scheduling direction"
 msgstr "Candjî completaedje del bouye"
 
-#: models/kptcommonstrings.cpp:149
+#: models/kptcommonstrings.cpp:150
 msgctxt "@info:whatsthis"
 msgid ""
 "<para>The scheduling direction.</para><para>If direction is Forward, the "
@@ -1461,12 +2089,12 @@ msgid ""
 "in the main project dialog.</para>"
 msgstr ""
 
-#: models/kptcommonstrings.cpp:155
+#: models/kptcommonstrings.cpp:156
 msgctxt "@info:tooltip"
 msgid "The scheduler used for calculating the project schedule"
 msgstr ""
 
-#: models/kptcommonstrings.cpp:157
+#: models/kptcommonstrings.cpp:158
 msgctxt "@info:whatsthis"
 msgid ""
 "<para>The scheduler used for calculating the project schedule.</"
@@ -1476,672 +2104,67 @@ msgid ""
 "project scheduler.</para>"
 msgstr ""
 
-#: models/kptcommonstrings.cpp:164
+#: models/kptcommonstrings.cpp:165
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "The url of the document"
 msgstr "Ahiver programaedje efant"
 
-#: models/kptcommonstrings.cpp:165
+#: models/kptcommonstrings.cpp:166
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "The type of the document"
 msgstr "Ahiver programaedje efant"
 
-#: models/kptcommonstrings.cpp:166
+#: models/kptcommonstrings.cpp:167
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "The status of the document"
 msgstr "Ahiver programaedje efant"
 
-#: models/kptcommonstrings.cpp:167
+#: models/kptcommonstrings.cpp:168
 msgctxt "@info:tooltip"
 msgid "Defines how this document is send"
 msgstr ""
 
-#: models/kptcommonstrings.cpp:169
+#: models/kptcommonstrings.cpp:170
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "The name of the calendar"
 msgstr "Disfacer calindrî"
 
-#: models/kptcommonstrings.cpp:170
+#: models/kptcommonstrings.cpp:171
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "The timezone of the calendar"
 msgstr "Disfacer calindrî"
 
-#: models/kptcommonstrings.cpp:172
+#: models/kptcommonstrings.cpp:173
 #, fuzzy
 #| msgid "The name of the task"
 msgctxt "@info:tooltip"
 msgid "The name of the required task"
 msgstr "Li no del bouye"
 
-#: models/kptcommonstrings.cpp:173
+#: models/kptcommonstrings.cpp:174
 #, fuzzy
 #| msgid "The name of the task"
 msgctxt "@info:tooltip"
 msgid "The name of the dependent task"
 msgstr "Li no del bouye"
 
-#: models/kptcommonstrings.cpp:174
+#: models/kptcommonstrings.cpp:175
 #, fuzzy
 #| msgid "The planned duration"
 msgctxt "@info:tooltip"
 msgid "The type of relation"
 msgstr "Li longueur planifieye"
 
-#: models/kptcommonstrings.cpp:175
+#: models/kptcommonstrings.cpp:176
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "The relations time lag"
 msgstr "Candjî loyaedje"
-
-#: models/kptdocumentmodel.cpp:171
-msgid "Url"
-msgstr "Url"
-
-#. i18n: file: ui/kptresourceassignmentview.ui:32
-#. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
-#: models/kptdocumentmodel.cpp:172 models/kptrelationmodel.cpp:148
-#: models/kptresourceallocationmodel.cpp:333 models/kptresourcemodel.cpp:434
-#: models/kptresourceappointmentsmodel.cpp:1501 rc.cpp:319
-msgid "Type"
-msgstr "Sôre"
-
-#: models/kptdocumentmodel.cpp:173
-#, fuzzy
-msgid "Status"
-msgstr "Enondaedje"
-
-#: models/kptdocumentmodel.cpp:174
-msgid "Send As"
-msgstr ""
-
-#: models/kptflatproxymodel.cpp:273 models/kptrelationmodel.cpp:146
-#, fuzzy
-msgid "Parent"
-msgstr "Pordjet"
-
-#: models/kptpertcpmmodel.cpp:151
-msgid "Path"
-msgstr "Tchimin"
-
-#: models/kptpertcpmmodel.cpp:430 ui/kptscheduleeditor.cpp:682
-msgid "Critical Path"
-msgstr "Tchimin critike"
-
-#: models/kptpertcpmmodel.cpp:450
-#, fuzzy
-msgid "Critical"
-msgstr "Tchimin critike"
-
-#: models/kptpertcpmmodel.cpp:454
-msgid "Non-critical"
-msgstr ""
-
-#: models/kptrelationmodel.cpp:147
-msgid "Child"
-msgstr "Efant"
-
-#: models/kptrelationmodel.cpp:149
-msgid "Lag"
-msgstr ""
-
-#: models/kptrelationmodel.cpp:352
-#, fuzzy
-msgid "Modify relation time lag"
-msgstr "Candjî loyaedje"
-
-#: models/kptresourceallocationmodel.cpp:170
-#: models/kptresourceallocationmodel.cpp:228
-#: models/kptresourceallocationmodel.cpp:650
-#, no-c-format, kde-format
-msgctxt "<value>%"
-msgid "%1%"
-msgstr ""
-
-#: models/kptresourceallocationmodel.cpp:177
-#: models/kptresourceallocationmodel.cpp:656
-#, fuzzy
-msgctxt "@info:tooltip"
-msgid "Not allocated"
-msgstr "Nén co ataké"
-
-#: models/kptresourceallocationmodel.cpp:180
-#, fuzzy, no-c-format, kde-format
-msgctxt "@info:tooltip"
-msgid "Allocated units: %1%"
-msgstr "Radjouter rissource..."
-
-#: models/kptresourceallocationmodel.cpp:233
-#, no-c-format, kde-format
-msgid "Maximum units available: %1%"
-msgstr ""
-
-#: models/kptresourceallocationmodel.cpp:273
-#, kde-format
-msgid "There is %1 resource available in this group"
-msgid_plural "There are %1 resources available in this group"
-msgstr[0] ""
-msgstr[1] ""
-
-#: models/kptresourceallocationmodel.cpp:334
-#, fuzzy
-msgid "Allocation"
-msgstr "Radjouter loyaedje"
-
-#: models/kptresourceallocationmodel.cpp:335
-#, fuzzy
-msgctxt "@title:column"
-msgid "Available"
-msgstr "Arinnåve:"
-
-#: models/kptresourceallocationmodel.cpp:336
-#, fuzzy
-#| msgid "Resource"
-msgctxt "@title:column"
-msgid "Required Resources"
-msgstr "Rissource"
-
-#: models/kptresourceallocationmodel.cpp:348
-#, fuzzy
-msgid "Resource allocation"
-msgstr "Apontiaedjes del rissource"
-
-#: models/kptresourceallocationmodel.cpp:349
-msgctxt "@info:tootip"
-msgid "Available resources or resource units"
-msgstr ""
-
-#: models/kptresourceallocationmodel.cpp:350
-#, fuzzy
-#| msgid "Resource"
-msgctxt "@info:tootip"
-msgid "Required Resources"
-msgstr "Rissource"
-
-#: models/kptresourceallocationmodel.cpp:658
-#, kde-format
-msgctxt "@info:tooltip"
-msgid "%1 allocated out of %2 available"
-msgstr ""
-
-#: models/kptresourceallocationmodel.cpp:681
-#, fuzzy, kde-format
-msgid "%1 resource allocated"
-msgid_plural "%1 resources allocated"
-msgstr[0] "Nole rissource acoirdêye"
-msgstr[1] "Nole rissource acoirdêye"
-
-#: models/kptresourceallocationmodel.cpp:757
-#, fuzzy
-msgctxt "@info:tooltip"
-msgid "No required resources"
-msgstr "Candjî rissource"
-
-#: models/kptresourceallocationmodel.cpp:760
-msgctxt "@info:tooltip"
-msgid "Material resources cannot have required resources"
-msgstr ""
-
-#: models/kptresourceallocationmodel.cpp:762
-msgctxt "@info:tooltip"
-msgid "Team resources cannot have required resources"
-msgstr ""
-
-#: models/kptresourcemodel.cpp:205 models/kptresourcemodel.cpp:231
-#, kde-format
-msgctxt "Default (calendar name)"
-msgid "Default (%1)"
-msgstr ""
-
-#: models/kptresourcemodel.cpp:212
-msgctxt "@info:tooltip"
-msgid "A team resource does not have a calendar"
-msgstr ""
-
-#: models/kptresourcemodel.cpp:214
-#, fuzzy
-#| msgid "Add Calendar"
-msgctxt "@info:tooltip"
-msgid "No calendar"
-msgstr "Radjouter calindrî"
-
-#: models/kptresourcemodel.cpp:222
-#, fuzzy, kde-format
-msgctxt "@info:tooltip 1=calendar name"
-msgid "Using default calendar: %1"
-msgstr "Disfacer les contes di tchoezis"
-
-#: models/kptresourcemodel.cpp:276
-#, fuzzy, kde-format
-msgctxt "infor:tooltip"
-msgid "Available from: %1"
-msgstr "Arinnåve:"
-
-#: models/kptresourcemodel.cpp:278
-#, fuzzy, kde-format
-#| msgid "Can start project later than time: %1"
-msgctxt "infor:tooltip"
-msgid "Available from project target start time: %1"
-msgstr "On n' sait ataker l' pordjet pus tård kel date/eure: %1"
-
-#: models/kptresourcemodel.cpp:298
-#, fuzzy, kde-format
-msgctxt "infor:tooltip"
-msgid "Available until: %1"
-msgstr "Arinnåve:"
-
-#: models/kptresourcemodel.cpp:300
-#, fuzzy, kde-format
-#| msgid "Must start project early in order to finish in time: %1"
-msgctxt "infor:tooltip"
-msgid "Available from project target finish time: %1"
-msgstr "I fåt ataker l' pordjet timpe po fini a tinzayeure: %1"
-
-#: models/kptresourcemodel.cpp:319
-#, kde-format
-msgid "Cost per hour, normal time: %1"
-msgstr ""
-
-#: models/kptresourcemodel.cpp:337
-#, kde-format
-msgid "Cost per hour, overtime: %1"
-msgstr ""
-
-#: models/kptresourcemodel.cpp:354
-#, fuzzy, kde-format
-#| msgid "Account"
-msgid "Account: %1"
-msgstr "Conte"
-
-#: models/kptresourcemodel.cpp:435
-#, fuzzy
-msgid "Initials"
-msgstr "Iniciåles:"
-
-#: models/kptresourcemodel.cpp:436
-msgid "Email"
-msgstr "Emile"
-
-#: models/kptresourcemodel.cpp:437
-#, fuzzy
-msgid "Calendar"
-msgstr "Radjouter calindrî"
-
-#: models/kptresourcemodel.cpp:438
-msgid "Limit (%)"
-msgstr "Limite (%)"
-
-#: models/kptresourcemodel.cpp:439
-#, fuzzy
-msgid "Available From"
-msgstr "Arinnåve:"
-
-#: models/kptresourcemodel.cpp:440
-#, fuzzy
-msgid "Available Until"
-msgstr "Arinnåve:"
-
-#: models/kptresourcemodel.cpp:441
-msgid "Normal Rate"
-msgstr ""
-
-#: models/kptresourcemodel.cpp:442
-msgid "Overtime Rate"
-msgstr ""
-
-#: models/kptresourcemodel.cpp:981
-#, fuzzy
-msgid "Modify resource account"
-msgstr "Candjî loyaedje"
-
-#: models/kptresourcemodel.cpp:1209
-#, fuzzy, kde-format
-msgid "Move resource"
-msgid_plural "Move %1 resources"
-msgstr[0] "Candjî rissource"
-msgstr[1] "Candjî rissource"
-
-#: models/kptresourcemodel.cpp:1228
-#, fuzzy, kde-format
-msgid "Copy resource"
-msgid_plural "Copy %1 resources"
-msgstr[0] "Candjî rissource"
-msgstr[1] "Candjî rissource"
-
-#: models/kptresourcemodel.cpp:1247
-#: models/kptresourceappointmentsmodel.cpp:1115
-#, fuzzy, kde-format
-msgid "Add resource from address book"
-msgid_plural "Add %1 resources from address book"
-msgstr[0] "Sititchî ene djin di vosse calpin d' adresses"
-msgstr[1] "Sititchî ene djin di vosse calpin d' adresses"
-
-#: models/kptresourcemodel.cpp:1310
-#, fuzzy
-msgid "Add resource group"
-msgstr "Radjouter groupe di rsource..."
-
-#: models/kptresourcemodel.cpp:1321 models/kptnodeitemmodel.cpp:2617
-#, fuzzy
-msgid "Add resource"
-msgstr "Radjouter rissource..."
-
-#: models/kptschedulemodel.cpp:374
-#, fuzzy
-msgid "Modify schedule name"
-msgstr "Candjî calindrî"
-
-#: models/kptschedulemodel.cpp:441 models/kptschedulemodel.cpp:443
-msgid "Allow"
-msgstr "Permete"
-
-#: models/kptschedulemodel.cpp:441 models/kptschedulemodel.cpp:443
-msgid "Avoid"
-msgstr ""
-
-#: models/kptschedulemodel.cpp:463
-msgid "Modify allow overbooking"
-msgstr ""
-
-#: models/kptschedulemodel.cpp:481 models/kptschedulemodel.cpp:483
-msgid "PERT"
-msgstr "PERT"
-
-#: models/kptschedulemodel.cpp:503
-#, fuzzy
-msgid "Modify scheduling distribution"
-msgstr "Candjî completaedje del bouye"
-
-#: models/kptschedulemodel.cpp:521 models/kptschedulemodel.cpp:523
-msgid "All"
-msgstr "Totafwait"
-
-#: models/kptschedulemodel.cpp:521 models/kptschedulemodel.cpp:523
-msgid "Expected only"
-msgstr ""
-
-#: models/kptschedulemodel.cpp:607 models/kptschedulemodel.cpp:609
-msgid "Backwards"
-msgstr ""
-
-#: models/kptschedulemodel.cpp:607 models/kptschedulemodel.cpp:609
-msgid "Forward"
-msgstr "En avant"
-
-#: models/kptschedulemodel.cpp:629
-#, fuzzy
-msgid "Modify scheduling direction"
-msgstr "Candjî completaedje del bouye"
-
-#: models/kptschedulemodel.cpp:647
-#, fuzzy
-#| msgid "Unknown"
-msgid "Unknown"
-msgstr "Nén cnoxhou"
-
-#: models/kptschedulemodel.cpp:669
-#, fuzzy
-#| msgid "Not scheduled"
-msgid "Modify scheduler"
-msgstr "Nén programé"
-
-#: models/kptschedulemodel.cpp:760
-#, fuzzy
-msgid "State"
-msgstr "Ataké"
-
-#: models/kptschedulemodel.cpp:761
-#, fuzzy
-msgid "Direction"
-msgstr "Durêye"
-
-#: models/kptschedulemodel.cpp:762
-msgid "Overbooking"
-msgstr "Forrezervaedje"
-
-#: models/kptschedulemodel.cpp:763
-#, fuzzy
-msgid "Distribution"
-msgstr "Discrijhaedje"
-
-#: models/kptschedulemodel.cpp:765
-#, fuzzy
-msgid "Planned Start"
-msgstr "Efoirt planifyî"
-
-#: models/kptschedulemodel.cpp:766
-msgid "Planned Finish"
-msgstr ""
-
-#: models/kptschedulemodel.cpp:767
-#, fuzzy
-msgid "Scheduler"
-msgstr "Programaedje:"
-
-#: models/kptschedulemodel.cpp:1017
-#, fuzzy
-msgid "Phase"
-msgstr "Pådje:"
-
-#: models/kptschedulemodel.cpp:1017
-msgid "Severity"
-msgstr "Severité"
-
-#: models/kptschedulemodel.cpp:1017
-msgid "Message"
-msgstr "Messaedje"
-
-#: models/kpttaskstatusmodel.cpp:50 ui/kptresourceassignmentview.cpp:255
-#: ui/kptresourceassignmentview.cpp:333
-msgid "Not Started"
-msgstr "Nén co ataké"
-
-#: models/kpttaskstatusmodel.cpp:51
-msgid "Tasks that should have been started"
-msgstr ""
-
-#. i18n: file: ui/kpttaskcostpanelbase.ui:24
-#. i18n: ectx: property (title), widget (QGroupBox, runningGroup)
-#: models/kpttaskstatusmodel.cpp:54 models/kptnodeitemmodel.cpp:1216
-#: rc.cpp:404
-msgid "Running"
-msgstr "En alaedje"
-
-#: models/kpttaskstatusmodel.cpp:55
-msgid "Tasks that are running"
-msgstr ""
-
-#. i18n: file: ui/kptmilestoneprogresspanelbase.ui:23
-#. i18n: ectx: property (text), widget (QCheckBox, finished)
-#: models/kpttaskstatusmodel.cpp:58 models/kptnodeitemmodel.cpp:1213
-#: ui/kptresourceassignmentview.cpp:257 ui/kptresourceassignmentview.cpp:335
-#: rc.cpp:193
-msgid "Finished"
-msgstr "Fini"
-
-#: models/kpttaskstatusmodel.cpp:59
-msgid "Tasks that have finished during this period"
-msgstr ""
-
-#: models/kpttaskstatusmodel.cpp:62
-msgid "Next Period"
-msgstr ""
-
-#: models/kpttaskstatusmodel.cpp:63
-msgid "Tasks that are scheduled to start next period"
-msgstr ""
-
-#: models/kpttaskstatusmodel.cpp:383 models/kptnodeitemmodel.cpp:2960
-#, fuzzy, no-c-format
-#| msgid "Modify task completion"
-msgid "Modify completion"
-msgstr "Candjî completaedje del bouye"
-
-#: models/kpttaskstatusmodel.cpp:412 models/kptnodeitemmodel.cpp:2989
-#, fuzzy
-msgid "Set finished"
-msgstr "Fini"
-
-#: models/kpttaskstatusmodel.cpp:433 models/kptnodeitemmodel.cpp:3010
-#, fuzzy
-msgid "Modify remaining effort"
-msgstr "Efoirt ki dmeure"
-
-#: models/kpttaskstatusmodel.cpp:446 models/kptnodeitemmodel.cpp:3023
-#, fuzzy
-msgid "Modify actual effort"
-msgstr "Candjî costindje del bouye"
-
-#: models/kpttaskstatusmodel.cpp:460 models/kptnodeitemmodel.cpp:3037
-#, fuzzy
-msgid "Modify actual start time"
-msgstr "Candjî standårdès eures ovråves"
-
-#: models/kpttaskstatusmodel.cpp:488 models/kptnodeitemmodel.cpp:3065
-#, fuzzy
-msgid "Modify actual finish time"
-msgstr "Candjî standårdès eures ovråves"
-
-#: models/kptworkpackagemodel.cpp:76
-#, kde-format
-msgid "Sent to %1 at %2"
-msgstr ""
-
-#: models/kptworkpackagemodel.cpp:79
-#, fuzzy, kde-format
-msgid "Received from %1 at %2"
-msgstr "Rissource %1 rezervé di %2 a %3"
-
-#: models/kptworkpackagemodel.cpp:81 models/kptworkpackagemodel.cpp:106
-#: models/kptnodeitemmodel.cpp:1841 models/kptnodeitemmodel.cpp:1904
-#, fuzzy
-msgid "Not available"
-msgstr "Nou pordjet disponibe"
-
-#: models/kptworkpackagemodel.cpp:101
-#, fuzzy, kde-format
-msgid "Work package sent at: %1"
-msgstr "Controle do pacaedje d' ovraedje"
-
-#: models/kptworkpackagemodel.cpp:104
-#, fuzzy, kde-format
-msgid "Work package transmission received at: %1"
-msgstr "Controle do pacaedje d' ovraedje"
-
-#: models/kptworkpackagemodel.cpp:131
-#, kde-format
-msgid "Task reported %1% completed"
-msgstr ""
-
-#: models/kptresourceappointmentsmodel.cpp:581
-#, fuzzy, kde-format
-msgid "External project: %1"
-msgstr "Pordjet: %1"
-
-#: models/kptresourceappointmentsmodel.cpp:657
-#, kde-format
-msgid "The total booking on %1, along with the maximum hours for the resource"
-msgstr ""
-
-#: models/kptresourceappointmentsmodel.cpp:689
-msgid "Total booking by this task"
-msgstr ""
-
-#: models/kptresourceappointmentsmodel.cpp:691
-msgid "Total booking by the external project"
-msgstr ""
-
-#: models/kptresourceappointmentsmodel.cpp:734
-#, kde-format
-msgid "Booking by this task on %1"
-msgstr ""
-
-#: models/kptresourceappointmentsmodel.cpp:736
-#, kde-format
-msgid "Booking by external project on %1"
-msgstr ""
-
-#: models/kptresourceappointmentsmodel.cpp:924
-msgid "The total hours booked"
-msgstr ""
-
-#: models/kptresourceappointmentsmodel.cpp:928
-#, kde-format
-msgid "Bookings on %1"
-msgstr ""
-
-#: models/kptresourceappointmentsmodel.cpp:1298
-#, fuzzy
-msgid "Interval"
-msgstr "Tins ewal inte les deus"
-
-#: models/kptresourceappointmentsmodel.cpp:1502
-#, fuzzy
-msgid "Start Time"
-msgstr "Ataké"
-
-#: models/kptresourceappointmentsmodel.cpp:1503
-msgid "End Time"
-msgstr ""
-
-#: models/kptresourceappointmentsmodel.cpp:1504
-#, fuzzy
-#| msgid "Load"
-msgctxt "@title:column noun"
-msgid "Load"
-msgstr "Tcherdjî"
-
-#: models/kptnodechartmodel.cpp:157
-#, fuzzy
-#| msgctxt "Budgeted Cost of Work Scheduled"
-#| msgid "BCWS (Cost)"
-msgctxt "Cost based Budgeted Cost of Work Scheduled"
-msgid "BCWS Cost"
-msgstr "BCWS (costindje)"
-
-#: models/kptnodechartmodel.cpp:158
-#, fuzzy
-#| msgctxt "Budgeted Cost of Work Performed"
-#| msgid "BCWP (Cost)"
-msgctxt "Cost based Budgeted Cost of Work Performed"
-msgid "BCWP Cost"
-msgstr "BCWP (costindje)"
-
-#: models/kptnodechartmodel.cpp:159
-#, fuzzy
-#| msgctxt "Actual Cost of Work Performed"
-#| msgid "ACWP (Cost)"
-msgctxt "Cost based Actual Cost of Work Performed"
-msgid "ACWP Cost"
-msgstr "ACWP (costindje)"
-
-#: models/kptnodechartmodel.cpp:160
-#, fuzzy
-msgctxt "Effort based Budgeted Cost of Work Scheduled"
-msgid "BCWS Effort"
-msgstr "Efoirt"
-
-#: models/kptnodechartmodel.cpp:161
-#, fuzzy
-msgctxt "Effort based Budgeted Cost of Work Performed"
-msgid "BCWP Effort"
-msgstr "Efoirt"
-
-#: models/kptnodechartmodel.cpp:162
-#, fuzzy
-msgctxt "Effort based Actual Cost of Work Performed"
-msgid "ACWP Effort"
-msgstr "Efoirt"
-
-#: models/kptnodechartmodel.cpp:166
-msgctxt ""
-"Date format used as chart axis labels. Must follow QDate specification."
-msgid "MM.dd"
-msgstr ""
 
 #: models/kptnodeitemmodel.cpp:148
 #, fuzzy
@@ -2421,416 +2444,430 @@ msgctxt "@info:tooltip"
 msgid "The assigned resources cannot deliver the required estimated effort"
 msgstr "Li rissource aroyeye n' a nén savou rescontrer l' efoirt aviré"
 
-#: models/kptnodeitemmodel.cpp:1689
+#: models/kptnodeitemmodel.cpp:1694
+#, fuzzy
+#| msgid "Scheduling Log"
+msgctxt "@info:tooltip"
+msgid "Scheduling error"
+msgstr "Djournå d' programaedje"
+
+#: models/kptnodeitemmodel.cpp:1722
 #, kde-format
 msgid "Work breakdown structure code: %1"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:1703
+#: models/kptnodeitemmodel.cpp:1736
 #, kde-format
 msgid "Node level: %1"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:1717
+#: models/kptnodeitemmodel.cpp:1750
 #, kde-format
 msgid "Budgeted Cost of Work Scheduled at %1: %2"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:1731
+#: models/kptnodeitemmodel.cpp:1764
 #, kde-format
 msgid "Budgeted Cost of Work Performed at %1: %2"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:1745
+#: models/kptnodeitemmodel.cpp:1778
 #, kde-format
 msgid "Actual Cost of Work Performed at %1: %2"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:1759
+#: models/kptnodeitemmodel.cpp:1792
 #, kde-format
 msgid "Schedule Performance Index at %1: %2"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:1824 models/kptnodeitemmodel.cpp:1859
-#: models/kptnodeitemmodel.cpp:1887
+#: models/kptnodeitemmodel.cpp:1857 models/kptnodeitemmodel.cpp:1892
+#: models/kptnodeitemmodel.cpp:1920
 msgctxt "Not available"
 msgid "NA"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:1836
+#: models/kptnodeitemmodel.cpp:1869
 #, kde-format
 msgid "Latest work package sent to %1 at %2"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:1839
+#: models/kptnodeitemmodel.cpp:1872
 #, kde-format
 msgid "Latest work package received from %1 at %2"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:1899
+#: models/kptnodeitemmodel.cpp:1932
 #, fuzzy, kde-format
 msgid "Latest work package sent: %1"
 msgstr "Tård cominçmint cårculé: %1"
 
-#: models/kptnodeitemmodel.cpp:1902
+#: models/kptnodeitemmodel.cpp:1935
 #, kde-format
 msgid "Latest work package received: %1"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:2027
+#: models/kptnodeitemmodel.cpp:2061
 #, fuzzy
 #| msgid "Name"
 msgctxt "@title:column"
 msgid "Name"
 msgstr "No"
 
-#: models/kptnodeitemmodel.cpp:2028
+#: models/kptnodeitemmodel.cpp:2062
 #, fuzzy
 #| msgid "Type"
 msgctxt "@title:column"
 msgid "Type"
 msgstr "Sôre"
 
-#: models/kptnodeitemmodel.cpp:2029
+#: models/kptnodeitemmodel.cpp:2063
 #, fuzzy
 msgctxt "@title:column"
 msgid "Responsible"
 msgstr "Responsåve:"
 
-#: models/kptnodeitemmodel.cpp:2030
+#: models/kptnodeitemmodel.cpp:2064
 #, fuzzy
 msgctxt "@title:column"
 msgid "Allocation"
 msgstr "Radjouter loyaedje"
 
-#: models/kptnodeitemmodel.cpp:2031
+#: models/kptnodeitemmodel.cpp:2065
 #, fuzzy
 msgctxt "@title:column"
 msgid "Estimate Type"
 msgstr "Avirance:"
 
-#: models/kptnodeitemmodel.cpp:2032
+#: models/kptnodeitemmodel.cpp:2066
 #, fuzzy
 msgctxt "@title:column"
 msgid "Calendar"
 msgstr "Radjouter calindrî"
 
-#: models/kptnodeitemmodel.cpp:2033
+#: models/kptnodeitemmodel.cpp:2067
 #, fuzzy
 msgctxt "@title:column"
 msgid "Estimate"
 msgstr "Avirance:"
 
-#: models/kptnodeitemmodel.cpp:2034 models/kptnodeitemmodel.cpp:2050
+#: models/kptnodeitemmodel.cpp:2068 models/kptnodeitemmodel.cpp:2084
 #, fuzzy
 msgctxt "@title:column"
 msgid "Optimistic"
 msgstr "Optimisse:"
 
-#: models/kptnodeitemmodel.cpp:2035 models/kptnodeitemmodel.cpp:2051
+#: models/kptnodeitemmodel.cpp:2069 models/kptnodeitemmodel.cpp:2085
 #, fuzzy
 msgctxt "@title:column"
 msgid "Pessimistic"
 msgstr "Pessimisse:"
 
-#: models/kptnodeitemmodel.cpp:2036
+#: models/kptnodeitemmodel.cpp:2070
 #, fuzzy
 msgctxt "@title:column"
 msgid "Risk"
 msgstr "Risse:"
 
-#: models/kptnodeitemmodel.cpp:2037
+#: models/kptnodeitemmodel.cpp:2071
 #, fuzzy
 msgctxt "@title:column"
 msgid "Constraint"
 msgstr "Soçons:"
 
-#: models/kptnodeitemmodel.cpp:2038
+#: models/kptnodeitemmodel.cpp:2072
 #, fuzzy
 msgctxt "@title:column"
 msgid "Constraint Start"
 msgstr "Stronna"
 
-#: models/kptnodeitemmodel.cpp:2039
+#: models/kptnodeitemmodel.cpp:2073
 #, fuzzy
 msgctxt "@title:column"
 msgid "Constraint End"
 msgstr "Soçons:"
 
-#: models/kptnodeitemmodel.cpp:2040
+#: models/kptnodeitemmodel.cpp:2074
 #, fuzzy
 msgctxt "@title:column"
 msgid "Running Account"
 msgstr "En alaedje"
 
-#: models/kptnodeitemmodel.cpp:2041
+#: models/kptnodeitemmodel.cpp:2075
 #, fuzzy
 msgctxt "@title:column"
 msgid "Startup Account"
 msgstr "Enondaedje"
 
-#: models/kptnodeitemmodel.cpp:2042
+#: models/kptnodeitemmodel.cpp:2076
 #, fuzzy
 msgctxt "@title:column"
 msgid "Startup Cost"
 msgstr "Enondaedje"
 
-#: models/kptnodeitemmodel.cpp:2043
+#: models/kptnodeitemmodel.cpp:2077
 #, fuzzy
 msgctxt "@title:column"
 msgid "Shutdown Account"
 msgstr "Radjouter on conte"
 
-#: models/kptnodeitemmodel.cpp:2044
+#: models/kptnodeitemmodel.cpp:2078
 #, fuzzy
 msgctxt "@title:column"
 msgid "Shutdown Cost"
 msgstr "Distinde"
 
-#: models/kptnodeitemmodel.cpp:2045
+#: models/kptnodeitemmodel.cpp:2079
 #, fuzzy
 #| msgid "Description"
 msgctxt "@title:column"
 msgid "Description"
 msgstr "Discrijhaedje"
 
-#: models/kptnodeitemmodel.cpp:2048
+#: models/kptnodeitemmodel.cpp:2082
 #, fuzzy
 #| msgid "Expected"
 msgctxt "@title:column"
 msgid "Expected"
 msgstr "Ratindou "
 
-#: models/kptnodeitemmodel.cpp:2049
+#: models/kptnodeitemmodel.cpp:2083
 msgctxt "@title:column"
 msgid "Variance (Est)"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:2054
+#: models/kptnodeitemmodel.cpp:2088
 #, fuzzy
 msgctxt "@title:column"
 msgid "Start Time"
 msgstr "Ataké"
 
-#: models/kptnodeitemmodel.cpp:2055
+#: models/kptnodeitemmodel.cpp:2089
 #, fuzzy
 msgctxt "@title:column"
 msgid "End Time"
 msgstr "Durêye"
 
-#: models/kptnodeitemmodel.cpp:2056
+#: models/kptnodeitemmodel.cpp:2090
 #, fuzzy
 msgctxt "@title:column"
 msgid "Early Start"
 msgstr "Ataker-Ataker"
 
-#: models/kptnodeitemmodel.cpp:2057
+#: models/kptnodeitemmodel.cpp:2091
 #, fuzzy
 msgctxt "@title:column"
 msgid "Early Finish"
 msgstr "Fini"
 
-#: models/kptnodeitemmodel.cpp:2058
+#: models/kptnodeitemmodel.cpp:2092
 #, fuzzy
 msgctxt "@title:column"
 msgid "Late Start"
 msgstr "Nén co ataké"
 
-#: models/kptnodeitemmodel.cpp:2059
+#: models/kptnodeitemmodel.cpp:2093
 #, fuzzy
 msgctxt "@title:column"
 msgid "Late Finish"
 msgstr "Doet fini li"
 
-#: models/kptnodeitemmodel.cpp:2060
+#: models/kptnodeitemmodel.cpp:2094
 #, fuzzy
 #| msgid "Project:"
 msgctxt "@title:column"
 msgid "Positive Float"
 msgstr "Pordjet:"
 
-#: models/kptnodeitemmodel.cpp:2061
+#: models/kptnodeitemmodel.cpp:2095
 #, fuzzy
 msgctxt "@title:column"
 msgid "Free Float"
 msgstr "Flotant"
 
-#: models/kptnodeitemmodel.cpp:2062
+#: models/kptnodeitemmodel.cpp:2096
 #, fuzzy
 #| msgid "Tentative"
 msgctxt "@title:column"
 msgid "Negative Float"
 msgstr "Esprouve"
 
-#: models/kptnodeitemmodel.cpp:2063
+#: models/kptnodeitemmodel.cpp:2097
 #, fuzzy
 msgctxt "@title:column"
 msgid "Start Float"
 msgstr "Ataker-Ataker"
 
-#: models/kptnodeitemmodel.cpp:2064
+#: models/kptnodeitemmodel.cpp:2098
 #, fuzzy
 msgctxt "@title:column"
 msgid "Finish Float"
 msgstr "Fini-Ataker"
 
-#: models/kptnodeitemmodel.cpp:2065
+#: models/kptnodeitemmodel.cpp:2099
 msgctxt "@title:column"
 msgid "Assignments"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:2068
+#: models/kptnodeitemmodel.cpp:2102
 #, fuzzy
 #| msgid "Duration"
 msgctxt "@title:column"
 msgid "Duration"
 msgstr "Durêye"
 
-#: models/kptnodeitemmodel.cpp:2069
+#: models/kptnodeitemmodel.cpp:2103
 msgctxt "@title:column"
 msgid "Variance (Dur)"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:2070
+#: models/kptnodeitemmodel.cpp:2104
 #, fuzzy
 msgctxt "@title:column"
 msgid "Optimistic (Dur)"
 msgstr "Optimisse:"
 
-#: models/kptnodeitemmodel.cpp:2071
+#: models/kptnodeitemmodel.cpp:2105
 #, fuzzy
 msgctxt "@title:column"
 msgid "Pessimistic (Dur)"
 msgstr "Pessimisse:"
 
-#: models/kptnodeitemmodel.cpp:2074 models/kptnodeitemmodel.cpp:2110
+#: models/kptnodeitemmodel.cpp:2108 models/kptnodeitemmodel.cpp:2145
 #, fuzzy
 msgctxt "@title:column"
 msgid "Status"
 msgstr "Enondaedje"
 
-#: models/kptnodeitemmodel.cpp:2076
+#: models/kptnodeitemmodel.cpp:2110
 #, fuzzy, no-c-format
 #| msgid "% Completed"
 msgctxt "@title:column"
 msgid "% Completed"
 msgstr "% fwait"
 
-#: models/kptnodeitemmodel.cpp:2077
+#: models/kptnodeitemmodel.cpp:2111
 #, fuzzy
 #| msgid "Planned Effort"
 msgctxt "@title:column"
 msgid "Planned Effort"
 msgstr "Efoirt planifyî"
 
-#: models/kptnodeitemmodel.cpp:2078
+#: models/kptnodeitemmodel.cpp:2112
 #, fuzzy
 msgctxt "@title:column"
 msgid "Actual Effort"
 msgstr "Efoirt"
 
-#: models/kptnodeitemmodel.cpp:2079
+#: models/kptnodeitemmodel.cpp:2113
 #, fuzzy
 #| msgid "Remaining Effort"
 msgctxt "@title:column"
 msgid "Remaining Effort"
 msgstr "Efoirt ki dmeure"
 
-#: models/kptnodeitemmodel.cpp:2080
+#: models/kptnodeitemmodel.cpp:2114
 #, fuzzy
 msgctxt "@title:column"
 msgid "Planned Cost"
 msgstr "Efoirt planifyî"
 
-#: models/kptnodeitemmodel.cpp:2081
+#: models/kptnodeitemmodel.cpp:2115
 #, fuzzy
 #| msgid "Actual Cost"
 msgctxt "@title:column"
 msgid "Actual Cost"
 msgstr "Vraiy costindje"
 
-#: models/kptnodeitemmodel.cpp:2082
+#: models/kptnodeitemmodel.cpp:2116
 #, fuzzy
 msgctxt "@title:column"
 msgid "Actual Start"
 msgstr "Nén co ataké"
 
-#: models/kptnodeitemmodel.cpp:2083
+#: models/kptnodeitemmodel.cpp:2117
 #, fuzzy
 #| msgid "Started"
 msgctxt "@title:column"
 msgid "Started"
 msgstr "Ataké"
 
-#: models/kptnodeitemmodel.cpp:2084
+#: models/kptnodeitemmodel.cpp:2118
 #, fuzzy
 msgctxt "@title:column"
 msgid "Actual Finish"
 msgstr "Fén: %1"
 
-#: models/kptnodeitemmodel.cpp:2085
+#: models/kptnodeitemmodel.cpp:2119
 #, fuzzy
 #| msgid "Finished"
 msgctxt "@title:column"
 msgid "Finished"
 msgstr "Fini"
 
-#: models/kptnodeitemmodel.cpp:2086
+#: models/kptnodeitemmodel.cpp:2120
 #, fuzzy
 msgctxt "@title:column"
 msgid "Status Note"
 msgstr "Enondaedje"
 
-#: models/kptnodeitemmodel.cpp:2089
+#: models/kptnodeitemmodel.cpp:2123
 #, fuzzy
 #| msgid "Scheduling Log"
 msgctxt "@title:column"
 msgid "Scheduling Status"
 msgstr "Djournå d' programaedje"
 
-#: models/kptnodeitemmodel.cpp:2090
+#: models/kptnodeitemmodel.cpp:2124
 #, fuzzy
 msgctxt "@title:column"
 msgid "Not Scheduled"
 msgstr "Nén programé"
 
-#: models/kptnodeitemmodel.cpp:2091
+#: models/kptnodeitemmodel.cpp:2125
 msgctxt "@title:column"
 msgid "Assignment Missing"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:2092
+#: models/kptnodeitemmodel.cpp:2126
 #, fuzzy
 #| msgid "Resource Overbooked"
 msgctxt "@title:column"
 msgid "Resource Overbooked"
 msgstr "Rissource forrezervêye"
 
-#: models/kptnodeitemmodel.cpp:2093
+#: models/kptnodeitemmodel.cpp:2127
 #, fuzzy
 msgctxt "@title:column"
 msgid "Resource Unavailable"
 msgstr "Nou pordjet disponibe"
 
-#: models/kptnodeitemmodel.cpp:2094
+#: models/kptnodeitemmodel.cpp:2128
 #, fuzzy
 msgctxt "@title:column"
 msgid "Constraints Error"
 msgstr "Soçons:"
 
-#: models/kptnodeitemmodel.cpp:2095
+#: models/kptnodeitemmodel.cpp:2129
 #, fuzzy
 msgctxt "@title:column"
 msgid "Effort Not Met"
 msgstr "Efoirt"
 
-#: models/kptnodeitemmodel.cpp:2097
+#: models/kptnodeitemmodel.cpp:2130
+#, fuzzy
+#| msgid "Scheduling Log"
+msgctxt "@title:column"
+msgid "Scheduling Error"
+msgstr "Djournå d' programaedje"
+
+#: models/kptnodeitemmodel.cpp:2132
 #, fuzzy
 msgctxt "@title:column"
 msgid "WBS Code"
 msgstr "Côde"
 
-#: models/kptnodeitemmodel.cpp:2098
+#: models/kptnodeitemmodel.cpp:2133
 #, fuzzy
 #| msgctxt "Node level"
 #| msgid "Level"
@@ -2838,7 +2875,7 @@ msgctxt "@title:column Node level"
 msgid "Level"
 msgstr "Livea"
 
-#: models/kptnodeitemmodel.cpp:2101
+#: models/kptnodeitemmodel.cpp:2136
 #, fuzzy
 #| msgctxt "Budgeted Cost of Work Scheduled"
 #| msgid "BCWS"
@@ -2846,7 +2883,7 @@ msgctxt "@title:column Budgeted Cost of Work Scheduled"
 msgid "BCWS"
 msgstr "BCWS"
 
-#: models/kptnodeitemmodel.cpp:2102
+#: models/kptnodeitemmodel.cpp:2137
 #, fuzzy
 #| msgctxt "Budgeted Cost of Work Performed"
 #| msgid "BCWP"
@@ -2854,7 +2891,7 @@ msgctxt "@title:column Budgeted Cost of Work Performed"
 msgid "BCWP"
 msgstr "BCWP"
 
-#: models/kptnodeitemmodel.cpp:2103
+#: models/kptnodeitemmodel.cpp:2138
 #, fuzzy
 #| msgctxt "Actual Cost of Work Performed"
 #| msgid "ACWP"
@@ -2864,169 +2901,169 @@ msgstr "ACWP"
 
 #. i18n: file: ui/kptperformancestatus.ui:152
 #. i18n: ectx: property (text), widget (QLabel, labelSPI)
-#: models/kptnodeitemmodel.cpp:2104 rc.cpp:205
+#: models/kptnodeitemmodel.cpp:2139 rc.cpp:205
 #, fuzzy
 msgctxt "@title:column Schedule Performance Index"
 msgid "SPI"
 msgstr "SPI:"
 
-#: models/kptnodeitemmodel.cpp:2105
+#: models/kptnodeitemmodel.cpp:2140
 #, fuzzy
 msgctxt "@title:column"
 msgid "Critical"
 msgstr "Tchimin critike"
 
-#: models/kptnodeitemmodel.cpp:2106
+#: models/kptnodeitemmodel.cpp:2141
 #, fuzzy
 #| msgid "Critical Path"
 msgctxt "@title:column"
 msgid "Critical Path"
 msgstr "Tchimin critike"
 
-#: models/kptnodeitemmodel.cpp:2109
+#: models/kptnodeitemmodel.cpp:2144
 #, fuzzy
 #| msgid "Low"
 msgctxt "@title:column"
 msgid "Owner"
 msgstr "Bas"
 
-#: models/kptnodeitemmodel.cpp:2111
+#: models/kptnodeitemmodel.cpp:2146
 #, fuzzy
 msgctxt "@title:column"
 msgid "Time"
 msgstr "Durêye"
 
-#: models/kptnodeitemmodel.cpp:2197
+#: models/kptnodeitemmodel.cpp:2233
 #, fuzzy
 msgctxt "@title:column"
 msgid "Work package owner"
 msgstr "Controle do pacaedje d' ovraedje"
 
-#: models/kptnodeitemmodel.cpp:2198
+#: models/kptnodeitemmodel.cpp:2234
 #, fuzzy
 msgctxt "@title:column"
 msgid "Work package status"
 msgstr "Controle do pacaedje d' ovraedje"
 
-#: models/kptnodeitemmodel.cpp:2199
+#: models/kptnodeitemmodel.cpp:2235
 #, fuzzy
 msgctxt "@title:column"
 msgid "Work package send/receive time"
 msgstr "Controle do pacaedje d' ovraedje"
 
-#: models/kptnodeitemmodel.cpp:2559
+#: models/kptnodeitemmodel.cpp:2595
 #, fuzzy
 #| msgid "Modify Task"
 msgid "Modify Name"
 msgstr "Candjî bouye"
 
-#: models/kptnodeitemmodel.cpp:2561
+#: models/kptnodeitemmodel.cpp:2597
 #, fuzzy
 #| msgid "Modify Task"
 msgid "Modify Task Name"
 msgstr "Candjî bouye"
 
-#: models/kptnodeitemmodel.cpp:2562
+#: models/kptnodeitemmodel.cpp:2598
 #, fuzzy
 #| msgid "Modify milestone completion"
 msgid "Modify Milestone Name"
 msgstr "Candjî completaedje di l' etape"
 
-#: models/kptnodeitemmodel.cpp:2563
+#: models/kptnodeitemmodel.cpp:2599
 #, fuzzy
 #| msgid "Modify Summary Task"
 msgid "Modify Summarytask Name"
 msgstr "Candjî bouye di racourti"
 
-#: models/kptnodeitemmodel.cpp:2564
+#: models/kptnodeitemmodel.cpp:2600
 #, fuzzy
 #| msgid "Project manager"
 msgid "Modify Project Name"
 msgstr "Manaedjeu di pordjet"
 
-#: models/kptnodeitemmodel.cpp:2580
+#: models/kptnodeitemmodel.cpp:2616
 #, fuzzy
 #| msgid "Modify Task"
 msgid "Modify name"
 msgstr "Candjî bouye"
 
-#: models/kptnodeitemmodel.cpp:2582
+#: models/kptnodeitemmodel.cpp:2618
 #, fuzzy
 #| msgid "Modify Task"
 msgid "Modify task name"
 msgstr "Candjî bouye"
 
-#: models/kptnodeitemmodel.cpp:2583
+#: models/kptnodeitemmodel.cpp:2619
 #, fuzzy
 #| msgid "Modify milestone completion"
 msgid "Modify milestone name"
 msgstr "Candjî completaedje di l' etape"
 
-#: models/kptnodeitemmodel.cpp:2584
+#: models/kptnodeitemmodel.cpp:2620
 #, fuzzy
 #| msgid "Modify Summary Task"
 msgid "Modify summarytask name"
 msgstr "Candjî bouye di racourti"
 
-#: models/kptnodeitemmodel.cpp:2585
+#: models/kptnodeitemmodel.cpp:2621
 #, fuzzy
 #| msgid "Modify main project"
 msgid "Modify project name"
 msgstr "Candjî mwaisse pordjet"
 
-#: models/kptnodeitemmodel.cpp:2611 models/kptnodeitemmodel.cpp:2620
-#: models/kptnodeitemmodel.cpp:2655 models/kptnodeitemmodel.cpp:2658
+#: models/kptnodeitemmodel.cpp:2647 models/kptnodeitemmodel.cpp:2656
+#: models/kptnodeitemmodel.cpp:2691 models/kptnodeitemmodel.cpp:2694
 #: ui/reports/reportview.cpp:953
 #, fuzzy
 msgid "Resources"
 msgstr "&Rissourses"
 
-#: models/kptnodeitemmodel.cpp:2632 ui/kptrequestresourcespanel.cpp:64
+#: models/kptnodeitemmodel.cpp:2668 ui/kptrequestresourcespanel.cpp:64
 #, fuzzy
 msgid "Modify resource allocations"
 msgstr "Candjî loyaedje"
 
-#: models/kptnodeitemmodel.cpp:2808 models/kptnodeitemmodel.cpp:2812
+#: models/kptnodeitemmodel.cpp:2844 models/kptnodeitemmodel.cpp:2848
 #, fuzzy
 msgid "Modify estimate"
 msgstr "Candjî estat do djoû del samwinne"
 
-#: models/kptnodeitemmodel.cpp:2876 models/kptnodeitemmodel.cpp:4263
+#: models/kptnodeitemmodel.cpp:2912 models/kptnodeitemmodel.cpp:4299
 #, fuzzy
 msgid "Modify running account"
 msgstr "Candjî standårdès eures ovråves"
 
-#: models/kptnodeitemmodel.cpp:2896 models/kptnodeitemmodel.cpp:4283
+#: models/kptnodeitemmodel.cpp:2932 models/kptnodeitemmodel.cpp:4319
 #, fuzzy
 msgid "Modify startup account"
 msgstr "Candjî standårdès eures ovråves"
 
-#: models/kptnodeitemmodel.cpp:2911 models/kptnodeitemmodel.cpp:4298
+#: models/kptnodeitemmodel.cpp:2947 models/kptnodeitemmodel.cpp:4334
 #, fuzzy
 msgid "Modify startup cost"
 msgstr "Candjî costindje del bouye"
 
-#: models/kptnodeitemmodel.cpp:2929 models/kptnodeitemmodel.cpp:4316
+#: models/kptnodeitemmodel.cpp:2965 models/kptnodeitemmodel.cpp:4352
 #, fuzzy
 msgid "Modify shutdown account"
 msgstr "Candjî documints"
 
-#: models/kptnodeitemmodel.cpp:2944 models/kptnodeitemmodel.cpp:4331
+#: models/kptnodeitemmodel.cpp:2980 models/kptnodeitemmodel.cpp:4367
 #, fuzzy
 msgid "Modify shutdown cost"
 msgstr "Candjî costindje del bouye"
 
-#: models/kptnodeitemmodel.cpp:3372 models/kptnodeitemmodel.cpp:4588
+#: models/kptnodeitemmodel.cpp:3408 models/kptnodeitemmodel.cpp:4624
 msgid "Move tasks"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:3414 ui/kpttaskdialog.cpp:167
+#: models/kptnodeitemmodel.cpp:3450 ui/kpttaskdialog.cpp:167
 #: ui/kpttaskdialog.cpp:204
 #, fuzzy
 msgid "Add task"
 msgstr "Radjouter bouye..."
 
-#: models/kptnodeitemmodel.cpp:3429 ui/kpttaskdialog.cpp:202
+#: models/kptnodeitemmodel.cpp:3465 ui/kpttaskdialog.cpp:202
 #, fuzzy
 msgid "Add sub-task"
 msgstr "Radjouter bouye efant..."
@@ -4374,29 +4411,28 @@ msgid "Task dependencies"
 msgstr "Oister aloyance di bouye"
 
 #. i18n: file: ui/kptganttchartdisplayoptions.ui:62
-#. i18n: ectx: property (text), widget (QCheckBox, ui_showCriticalPath)
-#: rc.cpp:97
-#, fuzzy
-#| msgid "Critical Path"
-msgid "Critical path"
-msgstr "Tchimin critike"
-
-#. i18n: file: ui/kptganttchartdisplayoptions.ui:69
 #. i18n: ectx: property (text), widget (QCheckBox, ui_showCompletion)
-#: rc.cpp:100
+#: rc.cpp:97
 #, fuzzy
 msgid "Task completion"
 msgstr "Candjî completaedje del bouye"
 
-#. i18n: file: ui/kptganttchartdisplayoptions.ui:76
-#. i18n: ectx: property (text), widget (QCheckBox, ui_showCriticalTasks)
+#. i18n: file: ui/kptganttchartdisplayoptions.ui:69
+#. i18n: ectx: property (text), widget (QCheckBox, ui_showTimeConstraint)
+#: rc.cpp:100
+#, fuzzy
+msgid "Time constraints"
+msgstr "Soçons:"
+
+#. i18n: file: ui/kptganttchartdisplayoptions.ui:89
+#. i18n: ectx: property (text), widget (QCheckBox, ui_showSchedulingError)
 #: rc.cpp:103
 #, fuzzy
-#| msgid "Critical Path"
-msgid "Critical tasks"
-msgstr "Tchimin critike"
+#| msgid "Scheduling Log"
+msgid "Scheduling errors"
+msgstr "Djournå d' programaedje"
 
-#. i18n: file: ui/kptganttchartdisplayoptions.ui:83
+#. i18n: file: ui/kptganttchartdisplayoptions.ui:96
 #. i18n: ectx: property (text), widget (QCheckBox, ui_showPositiveFloat)
 #: rc.cpp:106
 #, fuzzy
@@ -4404,28 +4440,29 @@ msgstr "Tchimin critike"
 msgid "Positive float"
 msgstr "Pordjet:"
 
-#. i18n: file: ui/kptganttchartdisplayoptions.ui:90
-#. i18n: ectx: property (text), widget (QCheckBox, ui_showTimeConstraint)
-#: rc.cpp:109
-#, fuzzy
-msgid "Time constraints"
-msgstr "Soçons:"
-
-#. i18n: file: ui/kptganttchartdisplayoptions.ui:97
+#. i18n: file: ui/kptganttchartdisplayoptions.ui:103
 #. i18n: ectx: property (text), widget (QCheckBox, ui_showNegativeFloat)
-#: rc.cpp:112
+#: rc.cpp:109
 #, fuzzy
 #| msgid "Tentative"
 msgid "Negative float"
 msgstr "Esprouve"
 
-#. i18n: file: ui/kptganttchartdisplayoptions.ui:104
-#. i18n: ectx: property (text), widget (QCheckBox, ui_showSchedulingError)
+#. i18n: file: ui/kptganttchartdisplayoptions.ui:110
+#. i18n: ectx: property (text), widget (QCheckBox, ui_showCriticalPath)
+#: rc.cpp:112
+#, fuzzy
+#| msgid "Critical Path"
+msgid "Critical path"
+msgstr "Tchimin critike"
+
+#. i18n: file: ui/kptganttchartdisplayoptions.ui:117
+#. i18n: ectx: property (text), widget (QCheckBox, ui_showCriticalTasks)
 #: rc.cpp:115
 #, fuzzy
-#| msgid "Scheduling Log"
-msgid "Scheduling errors"
-msgstr "Djournå d' programaedje"
+#| msgid "Critical Path"
+msgid "Critical tasks"
+msgstr "Tchimin critike"
 
 #. i18n: file: ui/kptganttprintingoptions.ui:19
 #. i18n: ectx: property (text), widget (QCheckBox, ui_printRowLabels)
