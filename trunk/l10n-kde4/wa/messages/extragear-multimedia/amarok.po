@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-21 03:29+0100\n"
+"POT-Creation-Date: 2011-02-23 03:16+0100\n"
 "PO-Revision-Date: 2011-01-17 21:45+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -315,6 +315,7 @@ msgid "<b>%1</b> on <b>%2</b>"
 msgstr "<b>%1</b> so <b>%2</b>"
 
 #: EngineController.cpp:1386
+#: core-impl/collections/mediadevicecollection/MediaDeviceMeta.cpp:152
 msgid "Unknown track"
 msgstr "Boket nén cnoxhou"
 
@@ -1998,6 +1999,7 @@ msgid "Show Year In Media Sources"
 msgstr "Mostrer l' anêye ezès sourdants des medias"
 
 #: context/applets/currenttrack/CurrentTrack.h:38
+#: core-impl/collections/mediadevicecollection/MediaDeviceMeta.cpp:150
 #: core-impl/collections/mtpcollection/handler/MtpHandler.cpp:417
 #: core/meta/Meta.cpp:394 covermanager/CoverFetchUnit.cpp:595
 #: covermanager/CoverFetchUnit.cpp:605
@@ -4754,64 +4756,6 @@ msgstr "Cweraedje di potchete po %1..."
 msgid "Unable to find a cover for '%1'."
 msgstr "Dji n' a sepou trover d' potchete po %1."
 
-#: covermanager/CoverFetchingActions.cpp:47
-msgid "Fetch Cover"
-msgid_plural "Fetch Covers"
-msgstr[0] "Cweri potchete"
-msgstr[1] "Cweri potchetes"
-
-#: covermanager/CoverFetchingActions.cpp:49
-#, kde-format
-msgid "Fetch the artwork for this album"
-msgid_plural "Fetch artwork for %1 albums"
-msgstr[0] "Cweri l' ovraedje grafike po cist albom"
-msgstr[1] "Cweri ls ovraedjes grafikes po %1 alboms"
-
-#: covermanager/CoverFetchingActions.cpp:69
-#: covermanager/CoverFoundDialog.cpp:358
-msgid "Display Cover"
-msgstr "Håyner potchete"
-
-#: covermanager/CoverFetchingActions.cpp:71
-msgid "Display artwork for this album"
-msgstr "Häyner ovraedje grafike po cist albom"
-
-#: covermanager/CoverFetchingActions.cpp:89
-msgid "Unset Cover"
-msgid_plural "Unset Covers"
-msgstr[0] "Disfé potchete"
-msgstr[1] "Disfé potchetes"
-
-#: covermanager/CoverFetchingActions.cpp:91
-#, kde-format
-msgid "Remove artwork for this album"
-msgid_plural "Remove artwork for %1 albums"
-msgstr[0] "Oister l' ovraedje grafike po cist albom"
-msgstr[1] "Oister ls ovraedjes grafikes po %1 alboms"
-
-#: covermanager/CoverFetchingActions.cpp:104
-#, kde-format
-msgid "Are you sure you want to remove this cover from the Collection?"
-msgid_plural ""
-"Are you sure you want to delete these %1 covers from the Collection?"
-msgstr[0] "Voloz oister podbon cisse potchete del ramexhnêye?"
-msgstr[1] "Voloz oister podbon ces %1 potchetes del ramexhnêye?"
-
-#: covermanager/CoverFetchingActions.cpp:127
-msgid "Set Custom Cover"
-msgstr "Tchoezi potchete da vosse"
-
-#: covermanager/CoverFetchingActions.cpp:129
-#, kde-format
-msgid "Set custom artwork for this album"
-msgid_plural "Set custom artwork for these %1 albums"
-msgstr[0] "Tchoezi ovraedje grafike da vosse po cist albom"
-msgstr[1] "Tchoezi ovraedje grafike da vosse po ces %1 alboms"
-
-#: covermanager/CoverFetchingActions.cpp:155
-msgid "Select Cover Image File"
-msgstr "Tchoezi fitchî d' imådje del potchete"
-
 #: covermanager/CoverFoundDialog.cpp:81
 #, fuzzy
 #| msgid "Fetching cover for %1..."
@@ -4843,6 +4787,11 @@ msgstr "Discogs"
 #: covermanager/CoverFoundDialog.cpp:141
 msgid "Sort by size"
 msgstr "Relére sol grandeu"
+
+#: covermanager/CoverFoundDialog.cpp:358
+#: covermanager/CoverFetchingActions.cpp:69
+msgid "Display Cover"
+msgstr "Håyner potchete"
 
 #: covermanager/CoverFoundDialog.cpp:376
 #, fuzzy
@@ -5083,6 +5032,59 @@ msgstr "Nol årtisse"
 #: covermanager/CoverViewDialog.cpp:32 covermanager/CoverViewDialog.cpp:43
 msgid "Cover View"
 msgstr "Vuwe del potchete"
+
+#: covermanager/CoverFetchingActions.cpp:47
+msgid "Fetch Cover"
+msgid_plural "Fetch Covers"
+msgstr[0] "Cweri potchete"
+msgstr[1] "Cweri potchetes"
+
+#: covermanager/CoverFetchingActions.cpp:49
+#, kde-format
+msgid "Fetch the artwork for this album"
+msgid_plural "Fetch artwork for %1 albums"
+msgstr[0] "Cweri l' ovraedje grafike po cist albom"
+msgstr[1] "Cweri ls ovraedjes grafikes po %1 alboms"
+
+#: covermanager/CoverFetchingActions.cpp:71
+msgid "Display artwork for this album"
+msgstr "Häyner ovraedje grafike po cist albom"
+
+#: covermanager/CoverFetchingActions.cpp:89
+msgid "Unset Cover"
+msgid_plural "Unset Covers"
+msgstr[0] "Disfé potchete"
+msgstr[1] "Disfé potchetes"
+
+#: covermanager/CoverFetchingActions.cpp:91
+#, kde-format
+msgid "Remove artwork for this album"
+msgid_plural "Remove artwork for %1 albums"
+msgstr[0] "Oister l' ovraedje grafike po cist albom"
+msgstr[1] "Oister ls ovraedjes grafikes po %1 alboms"
+
+#: covermanager/CoverFetchingActions.cpp:104
+#, kde-format
+msgid "Are you sure you want to remove this cover from the Collection?"
+msgid_plural ""
+"Are you sure you want to delete these %1 covers from the Collection?"
+msgstr[0] "Voloz oister podbon cisse potchete del ramexhnêye?"
+msgstr[1] "Voloz oister podbon ces %1 potchetes del ramexhnêye?"
+
+#: covermanager/CoverFetchingActions.cpp:127
+msgid "Set Custom Cover"
+msgstr "Tchoezi potchete da vosse"
+
+#: covermanager/CoverFetchingActions.cpp:129
+#, kde-format
+msgid "Set custom artwork for this album"
+msgid_plural "Set custom artwork for these %1 albums"
+msgstr[0] "Tchoezi ovraedje grafike da vosse po cist albom"
+msgstr[1] "Tchoezi ovraedje grafike da vosse po ces %1 alboms"
+
+#: covermanager/CoverFetchingActions.cpp:155
+msgid "Select Cover Image File"
+msgstr "Tchoezi fitchî d' imådje del potchete"
 
 #: databaseimporter/amarok14/FastForwardImporterConfig.cpp:39
 msgid "Connection"
@@ -5506,28 +5508,6 @@ msgid ""
 "Multiple ambiguous matches found for <b><font color='red'>%1</font></b>, has "
 "been discarded."
 msgstr "<b><font color='red'>Aroke:</font></b> %1"
-
-#. i18n: file: dialogs/EditFilterDialog.ui:172
-#. i18n: ectx: property (text), item, widget (QComboBox, cbAndOr)
-#: dialogs/EditFilterDialog.cpp:37 rc.cpp:1231
-msgid "AND"
-msgstr "ET"
-
-#. i18n: file: dialogs/EditFilterDialog.ui:177
-#. i18n: ectx: property (text), item, widget (QComboBox, cbAndOr)
-#: dialogs/EditFilterDialog.cpp:38 rc.cpp:1234
-msgid "OR"
-msgstr "OU"
-
-#: dialogs/EditFilterDialog.cpp:39
-#, fuzzy
-#| msgid "Sample Rate"
-msgid "Simple text"
-msgstr "Frecwince di sampling"
-
-#: dialogs/EditFilterDialog.cpp:46
-msgid "Edit Filter"
-msgstr "Candjî passete"
 
 #: dialogs/EqualizerDialog.cpp:45
 #, fuzzy
@@ -6222,6 +6202,28 @@ msgstr "Taper l' no do prézapontiaedje:"
 #| msgid "Delete the preset."
 msgid "New Preset"
 msgstr "Disfacer l' prézapontiaedje."
+
+#. i18n: file: dialogs/EditFilterDialog.ui:172
+#. i18n: ectx: property (text), item, widget (QComboBox, cbAndOr)
+#: dialogs/EditFilterDialog.cpp:37 rc.cpp:1231
+msgid "AND"
+msgstr "ET"
+
+#. i18n: file: dialogs/EditFilterDialog.ui:177
+#. i18n: ectx: property (text), item, widget (QComboBox, cbAndOr)
+#: dialogs/EditFilterDialog.cpp:38 rc.cpp:1234
+msgid "OR"
+msgstr "OU"
+
+#: dialogs/EditFilterDialog.cpp:39
+#, fuzzy
+#| msgid "Sample Rate"
+msgid "Simple text"
+msgstr "Frecwince di sampling"
+
+#: dialogs/EditFilterDialog.cpp:46
+msgid "Edit Filter"
+msgstr "Candjî passete"
 
 #: dynamic/BiasedPlaylist.cpp:142
 msgid "Generating playlist..."
@@ -8121,7 +8123,7 @@ msgstr "pus coûte ki"
 #: playlistgenerator/constraints/PlaylistDuration.cpp:273
 #: playlistgenerator/constraints/PlaylistLength.cpp:210
 #: playlistgenerator/constraints/TagMatch.cpp:473
-#: widgets/MetaQueryWidget.cpp:922
+#: widgets/MetaQueryWidget.cpp:918
 #, fuzzy
 #| msgid "Unknown Genre"
 msgid "unknown comparison"
@@ -8169,7 +8171,7 @@ msgstr "pus ki"
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonRating)
 #: playlistgenerator/constraints/PlaylistLength.cpp:208
 #: playlistgenerator/constraints/TagMatch.cpp:448
-#: widgets/MetaQueryWidget.cpp:903 rc.cpp:2075 rc.cpp:2159 rc.cpp:2192
+#: widgets/MetaQueryWidget.cpp:899 rc.cpp:2075 rc.cpp:2159 rc.cpp:2192
 msgid "less than"
 msgstr "moens ki"
 
@@ -8247,7 +8249,7 @@ msgid "\"%1\""
 msgstr ""
 
 #: playlistgenerator/constraints/TagMatch.cpp:444
-#: widgets/MetaQueryWidget.cpp:905
+#: widgets/MetaQueryWidget.cpp:901
 #, fuzzy
 #| msgid "equal to"
 msgctxt "a numerical tag (like year or track number) equals a value"
@@ -8261,7 +8263,7 @@ msgstr "ewal ki"
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:614
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonRating)
 #: playlistgenerator/constraints/TagMatch.cpp:446
-#: widgets/MetaQueryWidget.cpp:907 rc.cpp:2081 rc.cpp:2165 rc.cpp:2198
+#: widgets/MetaQueryWidget.cpp:903 rc.cpp:2081 rc.cpp:2165 rc.cpp:2198
 msgid "greater than"
 msgstr "pus grand ki"
 
@@ -8303,7 +8305,7 @@ msgid "equals"
 msgstr "ewal ki"
 
 #: playlistgenerator/constraints/TagMatch.cpp:464
-#: widgets/MetaQueryWidget.cpp:915
+#: widgets/MetaQueryWidget.cpp:911
 #, fuzzy
 #| msgid "starts with"
 msgctxt ""
@@ -8312,7 +8314,7 @@ msgid "starts with"
 msgstr "atake avou"
 
 #: playlistgenerator/constraints/TagMatch.cpp:466
-#: widgets/MetaQueryWidget.cpp:917
+#: widgets/MetaQueryWidget.cpp:913
 #, fuzzy
 #| msgid "ends with"
 msgctxt "an alphabetical tag (like title or artist name) ends with some string"
@@ -8320,7 +8322,7 @@ msgid "ends with"
 msgstr "fini avou"
 
 #: playlistgenerator/constraints/TagMatch.cpp:468
-#: widgets/MetaQueryWidget.cpp:911
+#: widgets/MetaQueryWidget.cpp:907
 #, fuzzy
 #| msgid "contains"
 msgctxt "an alphabetical tag (like title or artist name) contains some string"
@@ -9712,129 +9714,6 @@ msgstr "Rimarkes d' Amarok"
 msgid "Copy Current View Bookmark to Clipboard"
 msgstr ""
 
-#: widgets/MetaQueryWidget.cpp:124
-#, fuzzy
-#| msgid "Seconds"
-msgid "second"
-msgid_plural "seconds"
-msgstr[0] "Segondes"
-msgstr[1] "Segondes"
-
-#: widgets/MetaQueryWidget.cpp:125
-#, fuzzy
-#| msgid "Minutes"
-msgid "minute"
-msgid_plural "minutes"
-msgstr[0] "Munutes"
-msgstr[1] "Munutes"
-
-#: widgets/MetaQueryWidget.cpp:126
-#, fuzzy
-#| msgid "Hours"
-msgid "hour"
-msgid_plural "hours"
-msgstr[0] "Eures"
-msgstr[1] "Eures"
-
-#: widgets/MetaQueryWidget.cpp:127
-#, fuzzy
-#| msgid "Days"
-msgid "day"
-msgid_plural "days"
-msgstr[0] "Djoûs"
-msgstr[1] "Djoûs"
-
-#: widgets/MetaQueryWidget.cpp:128
-#, fuzzy
-#| msgid "Months"
-msgid "month"
-msgid_plural "months"
-msgstr[0] "Moes"
-msgstr[1] "Moes"
-
-#: widgets/MetaQueryWidget.cpp:229
-msgid "Simple Search"
-msgstr "Simpe cweraedje"
-
-#: widgets/MetaQueryWidget.cpp:445 widgets/SmartPlaylistEditor.cpp:934
-#: widgets/SmartPlaylistEditor.cpp:956 widgets/SmartPlaylistEditor.cpp:984
-#: widgets/SmartPlaylistEditor.cpp:1003
-msgid "and"
-msgstr "eyet"
-
-#: widgets/MetaQueryWidget.cpp:555
-msgctxt "Unit for data rate kilo bit per seconds"
-msgid "kbps"
-msgstr ""
-
-#: widgets/MetaQueryWidget.cpp:557
-#, fuzzy
-#| msgid "Hz"
-msgctxt "Unit for sample rate"
-msgid "Hz"
-msgstr "Hz"
-
-#: widgets/MetaQueryWidget.cpp:559
-msgctxt "Unit for file size in mega byte"
-msgid "MiB"
-msgstr ""
-
-#: widgets/MetaQueryWidget.cpp:883
-#, fuzzy
-#| msgid "is before"
-msgctxt "The date lies before the given fixed date"
-msgid "before"
-msgstr "est dvant"
-
-#: widgets/MetaQueryWidget.cpp:885
-#, fuzzy
-#| msgid "none"
-msgctxt "The date is the same as the given fixed date"
-msgid "on"
-msgstr "nouk"
-
-#: widgets/MetaQueryWidget.cpp:887
-#, fuzzy
-#| msgid "is after"
-msgctxt "The date is after the given fixed date"
-msgid "after"
-msgstr "est après"
-
-#: widgets/MetaQueryWidget.cpp:889
-#, fuzzy
-#| msgid "Between"
-msgctxt "The date is between the given fixed dates"
-msgid "between"
-msgstr "Etur"
-
-#: widgets/MetaQueryWidget.cpp:891
-#, fuzzy
-#| msgid "Smaller Than"
-msgctxt "The date lies before the given time interval"
-msgid "older than"
-msgstr "Pus ptite ki"
-
-#: widgets/MetaQueryWidget.cpp:893
-#, fuzzy
-#| msgid "with"
-msgctxt "The date lies after the given time interval"
-msgid "within"
-msgstr "avou"
-
-#: widgets/MetaQueryWidget.cpp:909
-#, fuzzy
-#| msgid "Between"
-msgctxt "a numerical tag (like year or track number) is between two values"
-msgid "between"
-msgstr "Etur"
-
-#: widgets/MetaQueryWidget.cpp:913
-#, fuzzy
-#| msgid "dates"
-msgctxt "an alphabetical tag (like title or artist name) equals some string"
-msgid "matches"
-msgstr "dates"
-
 #: widgets/Osd.cpp:134
 msgid "Rating changed"
 msgstr "Préjhaedje candjî"
@@ -10082,6 +9961,12 @@ msgstr "est pus ptit ki"
 msgid "is before"
 msgstr "est dvant"
 
+#: widgets/SmartPlaylistEditor.cpp:934 widgets/SmartPlaylistEditor.cpp:956
+#: widgets/SmartPlaylistEditor.cpp:984 widgets/SmartPlaylistEditor.cpp:1003
+#: widgets/MetaQueryWidget.cpp:441
+msgid "and"
+msgstr "eyet"
+
 #: widgets/SmartPlaylistEditor.cpp:974
 msgid "Days"
 msgstr "Djoûs"
@@ -10170,6 +10055,123 @@ msgstr "Li tins k' a ddja passé el tchanson do moumint"
 #: widgets/ProgressWidget.cpp:121
 msgid "The amount of time remaining in current song"
 msgstr "Li tins ki dmere el tchanson do moumint"
+
+#: widgets/MetaQueryWidget.cpp:124
+#, fuzzy
+#| msgid "Seconds"
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] "Segondes"
+msgstr[1] "Segondes"
+
+#: widgets/MetaQueryWidget.cpp:125
+#, fuzzy
+#| msgid "Minutes"
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "Munutes"
+msgstr[1] "Munutes"
+
+#: widgets/MetaQueryWidget.cpp:126
+#, fuzzy
+#| msgid "Hours"
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] "Eures"
+msgstr[1] "Eures"
+
+#: widgets/MetaQueryWidget.cpp:127
+#, fuzzy
+#| msgid "Days"
+msgid "day"
+msgid_plural "days"
+msgstr[0] "Djoûs"
+msgstr[1] "Djoûs"
+
+#: widgets/MetaQueryWidget.cpp:128
+#, fuzzy
+#| msgid "Months"
+msgid "month"
+msgid_plural "months"
+msgstr[0] "Moes"
+msgstr[1] "Moes"
+
+#: widgets/MetaQueryWidget.cpp:229
+msgid "Simple Search"
+msgstr "Simpe cweraedje"
+
+#: widgets/MetaQueryWidget.cpp:551
+msgctxt "Unit for data rate kilo bit per seconds"
+msgid "kbps"
+msgstr ""
+
+#: widgets/MetaQueryWidget.cpp:553
+#, fuzzy
+#| msgid "Hz"
+msgctxt "Unit for sample rate"
+msgid "Hz"
+msgstr "Hz"
+
+#: widgets/MetaQueryWidget.cpp:555
+msgctxt "Unit for file size in mega byte"
+msgid "MiB"
+msgstr ""
+
+#: widgets/MetaQueryWidget.cpp:879
+#, fuzzy
+#| msgid "is before"
+msgctxt "The date lies before the given fixed date"
+msgid "before"
+msgstr "est dvant"
+
+#: widgets/MetaQueryWidget.cpp:881
+#, fuzzy
+#| msgid "none"
+msgctxt "The date is the same as the given fixed date"
+msgid "on"
+msgstr "nouk"
+
+#: widgets/MetaQueryWidget.cpp:883
+#, fuzzy
+#| msgid "is after"
+msgctxt "The date is after the given fixed date"
+msgid "after"
+msgstr "est après"
+
+#: widgets/MetaQueryWidget.cpp:885
+#, fuzzy
+#| msgid "Between"
+msgctxt "The date is between the given fixed dates"
+msgid "between"
+msgstr "Etur"
+
+#: widgets/MetaQueryWidget.cpp:887
+#, fuzzy
+#| msgid "Smaller Than"
+msgctxt "The date lies before the given time interval"
+msgid "older than"
+msgstr "Pus ptite ki"
+
+#: widgets/MetaQueryWidget.cpp:889
+#, fuzzy
+#| msgid "with"
+msgctxt "The date lies after the given time interval"
+msgid "within"
+msgstr "avou"
+
+#: widgets/MetaQueryWidget.cpp:905
+#, fuzzy
+#| msgid "Between"
+msgctxt "a numerical tag (like year or track number) is between two values"
+msgid "between"
+msgstr "Etur"
+
+#: widgets/MetaQueryWidget.cpp:909
+#, fuzzy
+#| msgid "dates"
+msgctxt "an alphabetical tag (like title or artist name) equals some string"
+msgid "matches"
+msgstr "dates"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
