@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-18 03:39+0100\n"
+"POT-Creation-Date: 2011-02-26 03:41+0100\n"
 "PO-Revision-Date: 2011-01-14 17:53+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -1428,7 +1428,7 @@ msgstr "Cisse tchuze a dandjî di dirmngr ≽ 0.9.0"
 
 #. i18n: file: ui/smimeconfiguration.ui:182
 #. i18n: ectx: property (text), widget (QLabel, systemHTTPProxy)
-#: configuredialog.cpp:3507 rc.cpp:740
+#: configuredialog.cpp:3507 rc.cpp:872
 msgid "no proxy"
 msgstr "nou procsi"
 
@@ -5714,246 +5714,15 @@ msgstr "Ataetchmints åyant ene clé && ene acertineure"
 msgid "Automatically import keys and certificate"
 msgstr "Abaguer otomaticmint les clés eyet l' acertineure"
 
-#. i18n: file: ui/smimeconfiguration.ui:16
-#. i18n: ectx: property (whatsThis), widget (QRadioButton, CRLRB)
-#: rc.cpp:671
-msgid ""
-"If this option is selected, S/MIME certificates are validated using "
-"Certificate Revocation Lists (CRLs)."
-msgstr ""
-
-#. i18n: file: ui/smimeconfiguration.ui:19
-#. i18n: ectx: property (text), widget (QRadioButton, CRLRB)
-#: rc.cpp:674
-msgid "Validate certificates using CRLs"
-msgstr ""
-
-#. i18n: file: ui/smimeconfiguration.ui:29
-#. i18n: ectx: property (whatsThis), widget (QRadioButton, OCSPRB)
-#: rc.cpp:677
-msgid ""
-"If this option is selected, S/MIME certificates are validated online using "
-"the Online Certificates Status Protocol (OCSP). Fill in the URL of the OCSP "
-"responder below."
-msgstr ""
-
-#. i18n: file: ui/smimeconfiguration.ui:32
-#. i18n: ectx: property (text), widget (QRadioButton, OCSPRB)
-#: rc.cpp:680
-msgid "Validate certificates online (OCSP)"
-msgstr ""
-
-#. i18n: file: ui/smimeconfiguration.ui:39
-#. i18n: ectx: property (title), widget (QGroupBox, OCSPGroupBox)
-#: rc.cpp:683
-#, fuzzy
-msgid "Online Certificate Validation"
-msgstr "Fijhaedje d' ene acertineure"
-
-#. i18n: file: ui/smimeconfiguration.ui:49
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:686
-#, fuzzy
-msgid "OCSP responder URL:"
-msgstr "Boune sinateure"
-
-#. i18n: file: ui/smimeconfiguration.ui:59
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:689
-#, fuzzy
-msgid "OCSP responder signature:"
-msgstr "Boune sinateure"
-
-#. i18n: file: ui/smimeconfiguration.ui:73
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, OCSPResponderURL)
-#: rc.cpp:692
-msgid ""
-"Enter here the address of the server for online validation of certificates "
-"(OCSP responder). The URL is usually starting with http://."
-msgstr ""
-
-#. i18n: file: ui/smimeconfiguration.ui:87
-#. i18n: ectx: property (text), widget (QCheckBox, ignoreServiceURLCB)
-#: rc.cpp:695
-#, fuzzy
-msgid "Ignore service URL of certificates"
-msgstr "Cweri après des ôtès acertineures"
-
-#. i18n: file: ui/smimeconfiguration.ui:97
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, doNotCheckCertPolicyCB)
-#: rc.cpp:698
-msgid ""
-"By default GnuPG uses the file ~/.gnupg/policies.txt to check if a "
-"certificate policy is allowed. If this option is selected, policies are not "
-"checked."
-msgstr ""
-
-#. i18n: file: ui/smimeconfiguration.ui:100
-#. i18n: ectx: property (text), widget (QCheckBox, doNotCheckCertPolicyCB)
-#: rc.cpp:701
-#, fuzzy
-msgid "Do not check certificate policies"
-msgstr "Ni &nén evoyî les acertineures"
-
-#. i18n: file: ui/smimeconfiguration.ui:107
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, neverConsultCB)
-#: rc.cpp:704
-msgid ""
-"If this option is checked, Certificate Revocation Lists are never used to "
-"validate S/MIME certificates."
-msgstr ""
-
-#. i18n: file: ui/smimeconfiguration.ui:110
-#. i18n: ectx: property (text), widget (QCheckBox, neverConsultCB)
-#: rc.cpp:707
-msgid "Never consult a CRL"
-msgstr ""
-
-#. i18n: file: ui/smimeconfiguration.ui:117
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, fetchMissingCB)
-#: rc.cpp:710
-msgid ""
-"If this option is checked, missing issuer certificates are fetched when "
-"necessary (this applies to both validation methods, CRLs and OCSP)"
-msgstr ""
-
-#. i18n: file: ui/smimeconfiguration.ui:120
-#. i18n: ectx: property (text), widget (QCheckBox, fetchMissingCB)
-#: rc.cpp:713
-#, fuzzy
-msgid "Fetch missing issuer certificates"
-msgstr "Å moumint di radjouter les acertineures"
-
-#. i18n: file: ui/smimeconfiguration.ui:131
-#. i18n: ectx: attribute (title), widget (QWidget, tabHTTP)
-#: rc.cpp:716
-msgid "HTTP Requests"
-msgstr "Ricweraedjes HTTP"
-
-#. i18n: file: ui/smimeconfiguration.ui:137
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, disableHTTPCB)
-#: rc.cpp:719
-msgid "Entirely disables the use of HTTP for S/MIME."
-msgstr ""
-
-#. i18n: file: ui/smimeconfiguration.ui:140
-#. i18n: ectx: property (text), widget (QCheckBox, disableHTTPCB)
-#: rc.cpp:722
-msgid "Do not perform any HTTP requests"
-msgstr ""
-
-#. i18n: file: ui/smimeconfiguration.ui:147
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, ignoreHTTPDPCB)
-#: rc.cpp:725
-msgid ""
-"When looking for the location of a CRL, the to-be-tested certificate usually "
-"contains what are known as \"CRL Distribution Point\" (DP) entries, which "
-"are URLs describing the way to access the URL. The first found DP entry is "
-"used.  With this option all entries using the HTTP scheme are ignored when "
-"looking for a suitable DP."
-msgstr ""
-
-#. i18n: file: ui/smimeconfiguration.ui:150
-#. i18n: ectx: property (text), widget (QCheckBox, ignoreHTTPDPCB)
-#: rc.cpp:728
-#, fuzzy
-msgid "Ignore HTTP CRL distribution point of certificates"
-msgstr "Cweri après des ôtès acertineures"
-
-#. i18n: file: ui/smimeconfiguration.ui:161
-#. i18n: ectx: property (whatsThis), widget (QRadioButton, honorHTTPProxyRB)
-#: rc.cpp:731
-msgid ""
-"If this option is selected, the value of the HTTP proxy shown on the right "
-"(which comes from the environment variable http_proxy) will be used for any "
-"HTTP request."
-msgstr ""
-
-#. i18n: file: ui/smimeconfiguration.ui:164
-#. i18n: ectx: property (text), widget (QRadioButton, honorHTTPProxyRB)
-#: rc.cpp:734
-msgid "Use system HTTP proxy:"
-msgstr ""
-
-#. i18n: file: ui/smimeconfiguration.ui:171
-#. i18n: ectx: property (text), widget (QRadioButton, useCustomHTTPProxyRB)
-#: rc.cpp:737
-msgid "Use this proxy for HTTP requests: "
-msgstr ""
-
-#. i18n: file: ui/smimeconfiguration.ui:192
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, customHTTPProxy)
-#: rc.cpp:743
-msgid ""
-"Enter here the location of your HTTP Proxy, which will be used for all HTTP "
-"requests relating to S/MIME. The syntax is host:port, for instance myproxy."
-"nowhere.com:3128."
-msgstr ""
-
-#. i18n: file: ui/smimeconfiguration.ui:217
-#. i18n: ectx: attribute (title), widget (QWidget, tabLDAP)
-#: rc.cpp:746
-msgid "LDAP Requests"
-msgstr "Ricweraedjes LDAP"
-
-#. i18n: file: ui/smimeconfiguration.ui:225
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, disableLDAPCB)
-#: rc.cpp:749
-msgid "Entirely disables the use of LDAP for S/MIME."
-msgstr ""
-
-#. i18n: file: ui/smimeconfiguration.ui:228
-#. i18n: ectx: property (text), widget (QCheckBox, disableLDAPCB)
-#: rc.cpp:752
-msgid "Do not perform any LDAP requests"
-msgstr ""
-
-#. i18n: file: ui/smimeconfiguration.ui:235
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, ignoreLDAPDPCB)
-#: rc.cpp:755
-msgid ""
-"When looking for the location of a CRL, the to-be-tested certificate usually "
-"contains what are known as \"CRL Distribution Point\" (DP) entries, which "
-"are URLs describing the way to access the URL. The first found DP entry is "
-"used.  With this option all entries using the LDAP scheme are ignored when "
-"looking for a suitable DP."
-msgstr ""
-
-#. i18n: file: ui/smimeconfiguration.ui:238
-#. i18n: ectx: property (text), widget (QCheckBox, ignoreLDAPDPCB)
-#: rc.cpp:758
-#, fuzzy
-msgid "Ignore LDAP CRL distribution point of certificates"
-msgstr "Cweri après des ôtès acertineures"
-
-#. i18n: file: ui/smimeconfiguration.ui:247
-#. i18n: ectx: property (text), widget (QLabel, customLDAPLabel)
-#: rc.cpp:761
-msgid "Primary host for LDAP requests:"
-msgstr ""
-
-#. i18n: file: ui/smimeconfiguration.ui:258
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, customLDAPProxy)
-#: rc.cpp:764
-msgid ""
-"Entering a LDAP server here will make all LDAP requests go to that server "
-"first. More precisely, this setting overrides any specified host and port "
-"part in a LDAP URL and will also be used if host and port have been omitted "
-"from the URL. Other LDAP servers will be used only if the connection to the "
-"\"proxy\" failed.\n"
-"The syntax is \"HOST\" or \"HOST:PORT\". If PORT is omitted, port 389 "
-"(standard LDAP port) is used."
-msgstr ""
-
 #. i18n: file: ui/warningconfiguration.ui:17
 #. i18n: ectx: property (toolTip), widget (QCheckBox, mWarnUnsigned)
-#: rc.cpp:768
+#: rc.cpp:671
 msgid "Check to be warned when sending unsigned messages."
 msgstr "M' advierti cwand dji saye d' evoyî des messaedjes nén sinés."
 
 #. i18n: file: ui/warningconfiguration.ui:25
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mWarnUnsigned)
-#: rc.cpp:771
+#: rc.cpp:674
 msgid ""
 "<qt>\n"
 "<h1>Warn When Trying To Send Unsigned Messages</h1>\n"
@@ -5966,14 +5735,14 @@ msgstr ""
 
 #. i18n: file: ui/warningconfiguration.ui:28
 #. i18n: ectx: property (text), widget (QCheckBox, mWarnUnsigned)
-#: rc.cpp:779
+#: rc.cpp:682
 #, fuzzy
 msgid "Warn when trying to send &unsigned messages"
 msgstr "M' ad&vierti cwand dji saye d' evoyî des messaedjes nén ecriptés"
 
 #. i18n: file: ui/warningconfiguration.ui:38
 #. i18n: ectx: property (toolTip), widget (QCheckBox, warnUnencryptedCB)
-#: rc.cpp:782
+#: rc.cpp:685
 #, fuzzy
 #| msgid "&Warn when trying to send unencrypted messages"
 msgid "Check to be warned when sending unencrypted messages."
@@ -5981,7 +5750,7 @@ msgstr "M' ad&vierti cwand dji saye d' evoyî des messaedjes nén ecriptés"
 
 #. i18n: file: ui/warningconfiguration.ui:46
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, warnUnencryptedCB)
-#: rc.cpp:785
+#: rc.cpp:688
 msgid ""
 "<qt>\n"
 "<h1>Warn When Trying To Send Unencrypted Messages</h1>\n"
@@ -5994,19 +5763,19 @@ msgstr ""
 
 #. i18n: file: ui/warningconfiguration.ui:49
 #. i18n: ectx: property (text), widget (QCheckBox, warnUnencryptedCB)
-#: rc.cpp:793
+#: rc.cpp:696
 msgid "&Warn when trying to send unencrypted messages"
 msgstr "M' ad&vierti cwand dji saye d' evoyî des messaedjes nén ecriptés"
 
 #. i18n: file: ui/warningconfiguration.ui:59
 #. i18n: ectx: property (toolTip), widget (QCheckBox, warnReceiverNotInCertificateCB)
-#: rc.cpp:796
+#: rc.cpp:699
 msgid "Check to be warned if the address is not in the certificate"
 msgstr ""
 
 #. i18n: file: ui/warningconfiguration.ui:67
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, warnReceiverNotInCertificateCB)
-#: rc.cpp:799
+#: rc.cpp:702
 msgid ""
 "<qt>\n"
 "<h1>Warn if receiver's email address is not in certificate</h1>\n"
@@ -6019,25 +5788,25 @@ msgstr ""
 
 #. i18n: file: ui/warningconfiguration.ui:70
 #. i18n: ectx: property (text), widget (QCheckBox, warnReceiverNotInCertificateCB)
-#: rc.cpp:807
+#: rc.cpp:710
 msgid "Warn if &Receiver's Email Address is Not in Certificate"
 msgstr ""
 
 #. i18n: file: ui/warningconfiguration.ui:80
 #. i18n: ectx: property (title), widget (QGroupBox, warnGroupBox)
-#: rc.cpp:810
+#: rc.cpp:713
 msgid "Warn if certificates/keys expire soon (configure thresholds below)"
 msgstr ""
 
 #. i18n: file: ui/warningconfiguration.ui:89
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:813
+#: rc.cpp:716
 msgid "For Signing"
 msgstr "Pol sinateure"
 
 #. i18n: file: ui/warningconfiguration.ui:102
 #. i18n: ectx: property (text), widget (QLabel, textLabel2_2)
-#: rc.cpp:816
+#: rc.cpp:719
 msgid "For Encryption"
 msgstr "Po l' ecriptaedje"
 
@@ -6053,13 +5822,13 @@ msgstr "Po l' ecriptaedje"
 #. i18n: ectx: property (toolTip), widget (KIntSpinBox, mWarnSignRootCertExpiresSB)
 #. i18n: file: ui/warningconfiguration.ui:289
 #. i18n: ectx: property (toolTip), widget (KIntSpinBox, mWarnEncrRootCertExpiresSB)
-#: rc.cpp:819 rc.cpp:830 rc.cpp:841 rc.cpp:852 rc.cpp:863 rc.cpp:874
+#: rc.cpp:722 rc.cpp:733 rc.cpp:744 rc.cpp:755 rc.cpp:766 rc.cpp:777
 msgid "Select the number of days here"
 msgstr ""
 
 #. i18n: file: ui/warningconfiguration.ui:129
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, mWarnSignKeyExpiresSB)
-#: rc.cpp:822
+#: rc.cpp:725
 msgid ""
 "<qt>\n"
 "<h1>Warn If Signature Certificate Expires</h1>\n"
@@ -6072,7 +5841,7 @@ msgstr ""
 
 #. i18n: file: ui/warningconfiguration.ui:165
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, mWarnEncrKeyExpiresSB)
-#: rc.cpp:833
+#: rc.cpp:736
 msgid ""
 "<qt>\n"
 "<h1>Warn If Encryption Certificate Expires</h1>\n"
@@ -6085,7 +5854,7 @@ msgstr ""
 
 #. i18n: file: ui/warningconfiguration.ui:201
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, mWarnEncrChainCertExpiresSB)
-#: rc.cpp:844
+#: rc.cpp:747
 msgid ""
 "<qt>\n"
 "<h1>Warn If A Certificate In The Chain Expires</h1>\n"
@@ -6098,7 +5867,7 @@ msgstr ""
 
 #. i18n: file: ui/warningconfiguration.ui:231
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, mWarnSignChainCertExpiresSB)
-#: rc.cpp:855
+#: rc.cpp:758
 msgid ""
 "<qt>\n"
 "<h1>Warn If CA Certificate Expires</h1>\n"
@@ -6113,7 +5882,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, mWarnSignRootCertExpiresSB)
 #. i18n: file: ui/warningconfiguration.ui:297
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, mWarnEncrRootCertExpiresSB)
-#: rc.cpp:866 rc.cpp:877
+#: rc.cpp:769 rc.cpp:780
 msgid ""
 "<qt>\n"
 "<h1>Warn If Root Certificate Expires</h1>\n"
@@ -6126,34 +5895,34 @@ msgstr ""
 
 #. i18n: file: ui/warningconfiguration.ui:313
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2_2)
-#: rc.cpp:885
+#: rc.cpp:788
 #, fuzzy
 msgid "For root certificates:"
 msgstr "Cweri après des ôtès acertineures"
 
 #. i18n: file: ui/warningconfiguration.ui:326
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: rc.cpp:888
+#: rc.cpp:791
 #, fuzzy
 msgid "For intermediate CA certificates:"
 msgstr "Cweri après des ôtès acertineures"
 
 #. i18n: file: ui/warningconfiguration.ui:339
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:891
+#: rc.cpp:794
 #, fuzzy
 msgid "For end-user certificates/keys:"
 msgstr "Ni &nén evoyî les acertineures"
 
 #. i18n: file: ui/warningconfiguration.ui:402
 #. i18n: ectx: property (text), widget (QPushButton, gnupgButton)
-#: rc.cpp:894
+#: rc.cpp:797
 msgid "GnuPG Settings..."
 msgstr "Apontiaedjes GnuPG..."
 
 #. i18n: file: ui/warningconfiguration.ui:426
 #. i18n: ectx: property (text), widget (QPushButton, chiasmusButton)
-#: rc.cpp:897
+#: rc.cpp:800
 #, fuzzy
 #| msgid "GnuPG Settings..."
 msgid "Chiasmus Settings..."
@@ -6161,8 +5930,239 @@ msgstr "Apontiaedjes GnuPG..."
 
 #. i18n: file: ui/warningconfiguration.ui:456
 #. i18n: ectx: property (text), widget (QPushButton, enableAllWarningsPB)
-#: rc.cpp:900
+#: rc.cpp:803
 msgid "Re-enable All \"Do not Ask Again\" Warnings"
+msgstr ""
+
+#. i18n: file: ui/smimeconfiguration.ui:16
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, CRLRB)
+#: rc.cpp:806
+msgid ""
+"If this option is selected, S/MIME certificates are validated using "
+"Certificate Revocation Lists (CRLs)."
+msgstr ""
+
+#. i18n: file: ui/smimeconfiguration.ui:19
+#. i18n: ectx: property (text), widget (QRadioButton, CRLRB)
+#: rc.cpp:809
+msgid "Validate certificates using CRLs"
+msgstr ""
+
+#. i18n: file: ui/smimeconfiguration.ui:29
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, OCSPRB)
+#: rc.cpp:812
+msgid ""
+"If this option is selected, S/MIME certificates are validated online using "
+"the Online Certificates Status Protocol (OCSP). Fill in the URL of the OCSP "
+"responder below."
+msgstr ""
+
+#. i18n: file: ui/smimeconfiguration.ui:32
+#. i18n: ectx: property (text), widget (QRadioButton, OCSPRB)
+#: rc.cpp:815
+msgid "Validate certificates online (OCSP)"
+msgstr ""
+
+#. i18n: file: ui/smimeconfiguration.ui:39
+#. i18n: ectx: property (title), widget (QGroupBox, OCSPGroupBox)
+#: rc.cpp:818
+#, fuzzy
+msgid "Online Certificate Validation"
+msgstr "Fijhaedje d' ene acertineure"
+
+#. i18n: file: ui/smimeconfiguration.ui:49
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: rc.cpp:821
+#, fuzzy
+msgid "OCSP responder URL:"
+msgstr "Boune sinateure"
+
+#. i18n: file: ui/smimeconfiguration.ui:59
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: rc.cpp:824
+#, fuzzy
+msgid "OCSP responder signature:"
+msgstr "Boune sinateure"
+
+#. i18n: file: ui/smimeconfiguration.ui:73
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, OCSPResponderURL)
+#: rc.cpp:827
+msgid ""
+"Enter here the address of the server for online validation of certificates "
+"(OCSP responder). The URL is usually starting with http://."
+msgstr ""
+
+#. i18n: file: ui/smimeconfiguration.ui:87
+#. i18n: ectx: property (text), widget (QCheckBox, ignoreServiceURLCB)
+#: rc.cpp:830
+#, fuzzy
+msgid "Ignore service URL of certificates"
+msgstr "Cweri après des ôtès acertineures"
+
+#. i18n: file: ui/smimeconfiguration.ui:97
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, doNotCheckCertPolicyCB)
+#: rc.cpp:833
+msgid ""
+"By default GnuPG uses the file ~/.gnupg/policies.txt to check if a "
+"certificate policy is allowed. If this option is selected, policies are not "
+"checked."
+msgstr ""
+
+#. i18n: file: ui/smimeconfiguration.ui:100
+#. i18n: ectx: property (text), widget (QCheckBox, doNotCheckCertPolicyCB)
+#: rc.cpp:836
+#, fuzzy
+msgid "Do not check certificate policies"
+msgstr "Ni &nén evoyî les acertineures"
+
+#. i18n: file: ui/smimeconfiguration.ui:107
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, neverConsultCB)
+#: rc.cpp:839
+msgid ""
+"If this option is checked, Certificate Revocation Lists are never used to "
+"validate S/MIME certificates."
+msgstr ""
+
+#. i18n: file: ui/smimeconfiguration.ui:110
+#. i18n: ectx: property (text), widget (QCheckBox, neverConsultCB)
+#: rc.cpp:842
+msgid "Never consult a CRL"
+msgstr ""
+
+#. i18n: file: ui/smimeconfiguration.ui:117
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, fetchMissingCB)
+#: rc.cpp:845
+msgid ""
+"If this option is checked, missing issuer certificates are fetched when "
+"necessary (this applies to both validation methods, CRLs and OCSP)"
+msgstr ""
+
+#. i18n: file: ui/smimeconfiguration.ui:120
+#. i18n: ectx: property (text), widget (QCheckBox, fetchMissingCB)
+#: rc.cpp:848
+#, fuzzy
+msgid "Fetch missing issuer certificates"
+msgstr "Å moumint di radjouter les acertineures"
+
+#. i18n: file: ui/smimeconfiguration.ui:131
+#. i18n: ectx: attribute (title), widget (QWidget, tabHTTP)
+#: rc.cpp:851
+msgid "HTTP Requests"
+msgstr "Ricweraedjes HTTP"
+
+#. i18n: file: ui/smimeconfiguration.ui:137
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, disableHTTPCB)
+#: rc.cpp:854
+msgid "Entirely disables the use of HTTP for S/MIME."
+msgstr ""
+
+#. i18n: file: ui/smimeconfiguration.ui:140
+#. i18n: ectx: property (text), widget (QCheckBox, disableHTTPCB)
+#: rc.cpp:857
+msgid "Do not perform any HTTP requests"
+msgstr ""
+
+#. i18n: file: ui/smimeconfiguration.ui:147
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, ignoreHTTPDPCB)
+#: rc.cpp:860
+msgid ""
+"When looking for the location of a CRL, the to-be-tested certificate usually "
+"contains what are known as \"CRL Distribution Point\" (DP) entries, which "
+"are URLs describing the way to access the URL. The first found DP entry is "
+"used.  With this option all entries using the HTTP scheme are ignored when "
+"looking for a suitable DP."
+msgstr ""
+
+#. i18n: file: ui/smimeconfiguration.ui:150
+#. i18n: ectx: property (text), widget (QCheckBox, ignoreHTTPDPCB)
+#: rc.cpp:863
+#, fuzzy
+msgid "Ignore HTTP CRL distribution point of certificates"
+msgstr "Cweri après des ôtès acertineures"
+
+#. i18n: file: ui/smimeconfiguration.ui:172
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, honorHTTPProxyRB)
+#: rc.cpp:866
+msgid ""
+"If this option is selected, the value of the HTTP proxy shown on the right "
+"(which comes from the environment variable http_proxy) will be used for any "
+"HTTP request."
+msgstr ""
+
+#. i18n: file: ui/smimeconfiguration.ui:175
+#. i18n: ectx: property (text), widget (QRadioButton, honorHTTPProxyRB)
+#: rc.cpp:869
+msgid "Use system HTTP proxy:"
+msgstr ""
+
+#. i18n: file: ui/smimeconfiguration.ui:192
+#. i18n: ectx: property (text), widget (QRadioButton, useCustomHTTPProxyRB)
+#: rc.cpp:875
+msgid "Use this proxy for HTTP requests: "
+msgstr ""
+
+#. i18n: file: ui/smimeconfiguration.ui:199
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, customHTTPProxy)
+#: rc.cpp:878
+msgid ""
+"Enter here the location of your HTTP Proxy, which will be used for all HTTP "
+"requests relating to S/MIME. The syntax is host:port, for instance myproxy."
+"nowhere.com:3128."
+msgstr ""
+
+#. i18n: file: ui/smimeconfiguration.ui:209
+#. i18n: ectx: attribute (title), widget (QWidget, tabLDAP)
+#: rc.cpp:881
+msgid "LDAP Requests"
+msgstr "Ricweraedjes LDAP"
+
+#. i18n: file: ui/smimeconfiguration.ui:217
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, disableLDAPCB)
+#: rc.cpp:884
+msgid "Entirely disables the use of LDAP for S/MIME."
+msgstr ""
+
+#. i18n: file: ui/smimeconfiguration.ui:220
+#. i18n: ectx: property (text), widget (QCheckBox, disableLDAPCB)
+#: rc.cpp:887
+msgid "Do not perform any LDAP requests"
+msgstr ""
+
+#. i18n: file: ui/smimeconfiguration.ui:227
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, ignoreLDAPDPCB)
+#: rc.cpp:890
+msgid ""
+"When looking for the location of a CRL, the to-be-tested certificate usually "
+"contains what are known as \"CRL Distribution Point\" (DP) entries, which "
+"are URLs describing the way to access the URL. The first found DP entry is "
+"used.  With this option all entries using the LDAP scheme are ignored when "
+"looking for a suitable DP."
+msgstr ""
+
+#. i18n: file: ui/smimeconfiguration.ui:230
+#. i18n: ectx: property (text), widget (QCheckBox, ignoreLDAPDPCB)
+#: rc.cpp:893
+#, fuzzy
+msgid "Ignore LDAP CRL distribution point of certificates"
+msgstr "Cweri après des ôtès acertineures"
+
+#. i18n: file: ui/smimeconfiguration.ui:239
+#. i18n: ectx: property (text), widget (QLabel, customLDAPLabel)
+#: rc.cpp:896
+msgid "Primary host for LDAP requests:"
+msgstr ""
+
+#. i18n: file: ui/smimeconfiguration.ui:250
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, customLDAPProxy)
+#: rc.cpp:899
+msgid ""
+"Entering a LDAP server here will make all LDAP requests go to that server "
+"first. More precisely, this setting overrides any specified host and port "
+"part in a LDAP URL and will also be used if host and port have been omitted "
+"from the URL. Other LDAP servers will be used only if the connection to the "
+"\"proxy\" failed.\n"
+"The syntax is \"HOST\" or \"HOST:PORT\". If PORT is omitted, port 389 "
+"(standard LDAP port) is used."
 msgstr ""
 
 #. i18n: file: tips:2
