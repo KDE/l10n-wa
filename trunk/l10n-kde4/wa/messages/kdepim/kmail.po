@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-26 03:41+0100\n"
+"POT-Creation-Date: 2011-02-27 03:40+0100\n"
 "PO-Revision-Date: 2011-01-14 17:53+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -2450,7 +2450,7 @@ msgid ""
 "until you go online."
 msgstr ""
 
-#: kmcomposewin.cpp:2385 kmkernel.cpp:964
+#: kmcomposewin.cpp:2385 kmkernel.cpp:988
 msgid "Online/Offline"
 msgstr "Raloyî/disraloyî"
 
@@ -2869,38 +2869,76 @@ msgid ""
 "(leave the field empty for automatic naming)"
 msgstr ""
 
-#: kmkernel.cpp:892
+#: kmkernel.cpp:256
+msgid ""
+"<b>Thanks for using KMail2!</b><br/><p>KMail2 uses a new storage technology "
+"that requires migration of your current KMail data and configuration.\n"
+"<p>The conversion process can take a lot of time (depending on the amount of "
+"email you have) and it <emph>must not be interrupted</emph>.</p>\n"
+"<p>You can:</p><ul><li>Migrate now (be prepared to wait)</li><li>Skip the "
+"migration and start with fresh data and configuration</li><li>Cancel and "
+"exit KMail2.</li></ul><p><a href=\"http://userbase.kde.org/Akonadi\">More "
+"Information...</a></p>"
+msgstr ""
+
+#: kmkernel.cpp:265
+#, fuzzy
+#| msgid "KMail Question"
+msgid "KMail Migration"
+msgstr "Kesse di KMail"
+
+#: kmkernel.cpp:265
+msgid "Migrate Now"
+msgstr ""
+
+#: kmkernel.cpp:265
+msgid "Skip Migration"
+msgstr ""
+
+#: kmkernel.cpp:298
+msgid ""
+"Migration to KMail 2 failed. In case you want to try again, run 'kmail-"
+"migrator --interactive' manually."
+msgstr ""
+
+#: kmkernel.cpp:299
+#, fuzzy
+#| msgid "Folder &location:"
+msgid "Migration Failed"
+msgstr "P&laece do Ridant:"
+
+#: kmkernel.cpp:916
 msgid "KMail is set to be offline; all network jobs are suspended"
 msgstr ""
 
-#: kmkernel.cpp:911
+#: kmkernel.cpp:935
 msgid "KMail is set to be online; all network jobs resumed"
 msgstr ""
 
-#: kmkernel.cpp:962
+#: kmkernel.cpp:986
 msgid "KMail is currently in offline mode. How do you want to proceed?"
 msgstr ""
 
-#: kmkernel.cpp:965 kmmainwidget.cpp:2408
+#: kmkernel.cpp:989 kmmainwidget.cpp:2408
 msgid "Work Online"
 msgstr "Ovrer raloyî"
 
-#: kmkernel.cpp:966 kmmainwidget.cpp:2404
+#: kmkernel.cpp:990 kmmainwidget.cpp:2404
 msgid "Work Offline"
 msgstr "Ovrer disraloyî"
 
-#: kmkernel.cpp:1064
+#: kmkernel.cpp:1088
 #, kde-format
 msgid ""
 "Failed to open autosave file at %1.\n"
 "Reason: %2"
 msgstr ""
 
-#: kmkernel.cpp:1066
+#: kmkernel.cpp:1090
 msgid "Opening Autosave File Failed"
 msgstr ""
 
-#: kmkernel.cpp:1562
+#: kmkernel.cpp:1586
 #, kde-format
 msgid "This identity has been changed to use the default transport:"
 msgid_plural ""
@@ -2908,7 +2946,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: kmkernel.cpp:1585
+#: kmkernel.cpp:1609
 #, kde-format
 msgid "This identity has been changed to use the modified transport:"
 msgid_plural ""
@@ -2916,12 +2954,12 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: kmkernel.cpp:1599
+#: kmkernel.cpp:1623
 #, fuzzy
 msgid "Sending messages"
 msgstr "&Siner li Messaedje"
 
-#: kmkernel.cpp:1600
+#: kmkernel.cpp:1624
 msgid "Initiating sending process..."
 msgstr ""
 
@@ -3727,7 +3765,7 @@ msgstr "Prôpietés pol ridant %1"
 msgid "New &Window"
 msgstr "Novele &finiesse"
 
-#: kmmainwin.cpp:192
+#: kmmainwin.cpp:187
 msgid "Starting..."
 msgstr "Dj' enonde..."
 
@@ -7100,11 +7138,6 @@ msgstr ""
 #~ msgid "Could not create folder: %1"
 #~ msgstr "Dji n' a nén parvinou a fé l' ridant"
 
-#, fuzzy
-#~| msgid "Folder &location:"
-#~ msgid "Folder creation failed"
-#~ msgstr "P&laece do Ridant:"
-
 #~ msgid "Username"
 #~ msgstr "No d' uzeu"
 
@@ -7802,9 +7835,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Overwrite &All"
 #~ msgstr "Sititchî on Fitchî"
-
-#~ msgid "KMail Question"
-#~ msgstr "Kesse di KMail"
 
 #, fuzzy
 #~ msgid "Keep Encryption"
