@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-03-05 03:38+0100\n"
+"POT-Creation-Date: 2011-03-06 03:22+0100\n"
 "PO-Revision-Date: 2011-01-17 21:45+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -31,12 +31,12 @@ msgid "Volume"
 msgstr "Volume"
 
 #: TrayIcon.cpp:153 context/applets/currenttrack/CurrentTrack.cpp:448
-#: core/meta/support/MetaConstants.cpp:121 playlist/PlaylistModel.cpp:905
+#: core/meta/support/MetaConstants.cpp:122 playlist/PlaylistModel.cpp:905
 #: widgets/SmartPlaylistEditor.cpp:185
 msgid "Score"
 msgstr "Ponts"
 
-#: TrayIcon.cpp:171 core/meta/support/MetaConstants.cpp:122
+#: TrayIcon.cpp:171 core/meta/support/MetaConstants.cpp:123
 #: playlist/ProgressiveSearchWidget.cpp:109 playlist/PlaylistModel.cpp:906
 #: widgets/SmartPlaylistEditor.cpp:185
 msgid "Rating"
@@ -505,7 +505,7 @@ msgid "Album Artist"
 msgstr "Albom Årtisse"
 
 #: browsers/CollectionTreeItemModelBase.cpp:1163
-#: core/meta/support/MetaConstants.cpp:109
+#: core/meta/support/MetaConstants.cpp:110
 #: dialogs/FilenameLayoutDialog.cpp:234 dialogs/FilenameLayoutDialog.cpp:598
 #: playlist/PlaylistModel.cpp:892 widgets/SmartPlaylistEditor.cpp:183
 #: widgets/SmartPlaylistEditor.cpp:197
@@ -513,7 +513,7 @@ msgid "Composer"
 msgstr "Compôzeu"
 
 #: browsers/CollectionTreeItemModelBase.cpp:1164
-#: core/meta/support/MetaConstants.cpp:108 dialogs/transferdialog.cpp:90
+#: core/meta/support/MetaConstants.cpp:109 dialogs/transferdialog.cpp:90
 #: dialogs/FilenameLayoutDialog.cpp:254 dialogs/FilenameLayoutDialog.cpp:633
 #: playlist/ProgressiveSearchWidget.cpp:95 playlist/PlaylistModel.cpp:898
 #: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
@@ -521,7 +521,7 @@ msgid "Genre"
 msgstr "Djinre"
 
 #: browsers/CollectionTreeItemModelBase.cpp:1165
-#: core/meta/support/MetaConstants.cpp:110
+#: core/meta/support/MetaConstants.cpp:111
 #: dialogs/FilenameLayoutDialog.cpp:238 dialogs/FilenameLayoutDialog.cpp:605
 #: playlist/PlaylistModel.cpp:893 widgets/SmartPlaylistEditor.cpp:184
 #: widgets/SmartPlaylistEditor.cpp:197 widgets/SmartPlaylistEditor.cpp:921
@@ -529,7 +529,7 @@ msgid "Year"
 msgstr "Anêye"
 
 #: browsers/CollectionTreeItemModelBase.cpp:1166
-#: core/meta/support/MetaConstants.cpp:134 widgets/SmartPlaylistEditor.cpp:187
+#: core/meta/support/MetaConstants.cpp:135 widgets/SmartPlaylistEditor.cpp:187
 #: widgets/SmartPlaylistEditor.cpp:197
 msgid "Label"
 msgstr "Etikete"
@@ -1125,7 +1125,7 @@ msgstr[1] "%1 canås"
 #. i18n: file: context/applets/tabs/ReloadEditDialog.ui:86
 #. i18n: ectx: property (text), widget (QLabel, titleLabel)
 #: browsers/playlistbrowser/PodcastModel.cpp:336
-#: core/meta/support/MetaConstants.cpp:105
+#: core/meta/support/MetaConstants.cpp:106
 #: dialogs/FilenameLayoutDialog.cpp:226 dialogs/FilenameLayoutDialog.cpp:577
 #: musicbrainz/MusicBrainzTags.cpp:358 playlist/PlaylistModel.cpp:889
 #: widgets/SmartPlaylistEditor.cpp:183 rc.cpp:1031
@@ -1440,7 +1440,7 @@ msgid "Genres"
 msgstr "Djinres"
 
 #: context/applets/currenttrack/CurrentTrack.cpp:449
-#: core/meta/support/MetaConstants.cpp:124
+#: core/meta/support/MetaConstants.cpp:125
 msgid "Last Played"
 msgstr "Dierin djouwé"
 
@@ -2522,12 +2522,6 @@ msgstr "Èn nén håyner dins Sacwants årtisses"
 msgid "Show under Various Artists"
 msgstr "Håyner dins Sacwants årtisses"
 
-#: core-impl/collections/db/sql/SqlMeta.cpp:272
-#: covermanager/CoverManager.cpp:846 services/lastfm/meta/LastFmMeta.cpp:133
-#, kde-format
-msgid "%1 - %2"
-msgstr "%1 - %2"
-
 #. i18n: file: dialogs/OrganizeCollectionDialogBase.ui:21
 #. i18n: ectx: property (windowTitle), widget (QWidget, OrganizeCollectionDialogBase)
 #: core-impl/collections/db/sql/SqlCollection.cpp:81 rc.cpp:1515
@@ -2580,6 +2574,12 @@ msgstr "Coviersaedje : %1"
 #, kde-format
 msgid "Removing: %1"
 msgstr "Dji oistêye : %1"
+
+#: core-impl/collections/db/sql/SqlMeta.cpp:272
+#: covermanager/CoverManager.cpp:846 services/lastfm/meta/LastFmMeta.cpp:133
+#, kde-format
+msgid "%1 - %2"
+msgstr "%1 - %2"
 
 #: core-impl/collections/db/ScanManager.cpp:134
 msgid "Database import requested"
@@ -3348,361 +3348,6 @@ msgstr "Aberwetaedje do media Podcasse"
 msgid "Downloading Podcast \"%1\""
 msgstr "Dj' aberwete li Podcasse «%1»"
 
-#: core/meta/support/MetaConstants.cpp:103
-#, fuzzy
-#| msgid "rating"
-msgctxt ""
-"The field name in case nothing specific is selected e.g. in the automatic "
-"playlist generator"
-msgid "anything"
-msgstr "préjhaedje"
-
-#: core/meta/support/MetaConstants.cpp:104
-#, fuzzy
-#| msgctxt "The name of the file this track is stored in"
-#| msgid "Filename"
-msgctxt "The name of the file this track is stored in"
-msgid "filename"
-msgstr "No do fitchî"
-
-#: core/meta/support/MetaConstants.cpp:106
-#, fuzzy
-#| msgid "Playlist name:"
-msgid "Artist Name"
-msgstr "No del djivêye a djouwer:"
-
-#: core/meta/support/MetaConstants.cpp:107
-#, fuzzy
-#| msgid "album"
-msgid "Album Name"
-msgstr "albom"
-
-#: core/meta/support/MetaConstants.cpp:111
-#: dialogs/FilenameLayoutDialog.cpp:250 dialogs/FilenameLayoutDialog.cpp:626
-#: playlist/PlaylistModel.cpp:899 widgets/SmartPlaylistEditor.cpp:184
-msgid "Comment"
-msgstr "Rawete"
-
-#: core/meta/support/MetaConstants.cpp:112
-#: dialogs/OrganizeCollectionDialog.cpp:157
-msgid "Track Number"
-msgstr "Limero do boket"
-
-#: core/meta/support/MetaConstants.cpp:113 playlist/PlaylistModel.cpp:895
-msgid "Disc Number"
-msgstr "Limero del plake"
-
-#: core/meta/support/MetaConstants.cpp:114
-#, fuzzy
-#| msgid "bpm"
-msgid "Bpm"
-msgstr "bpm"
-
-#. i18n: file: network/NetworkRequests.ui:56
-#. i18n: ectx: property (text), widget (QTreeWidget, requestList)
-#: core/meta/support/MetaConstants.cpp:115 playlist/PlaylistModel.cpp:902
-#: widgets/SmartPlaylistEditor.cpp:183 rc.cpp:1875
-msgid "Length"
-msgstr "Longueur"
-
-#: core/meta/support/MetaConstants.cpp:116
-#, fuzzy
-#| msgid "Bit rate:"
-msgid "Bit Rate"
-msgstr "Roedeur des bites:"
-
-#: core/meta/support/MetaConstants.cpp:117 playlist/PlaylistModel.cpp:904
-msgid "Sample Rate"
-msgstr "Frecwince di sampling"
-
-#: core/meta/support/MetaConstants.cpp:118 playlist/PlaylistModel.cpp:910
-msgid "File Size"
-msgstr "Grandeu do fitchî"
-
-#: core/meta/support/MetaConstants.cpp:119
-#, fuzzy
-#| msgctxt "@item::intable File Format"
-#| msgid "Format"
-msgid "Format"
-msgstr "Cogne"
-
-#: core/meta/support/MetaConstants.cpp:120
-#, fuzzy
-#| msgid "Move to Collection"
-msgid "Added to Collection"
-msgstr "Bodjî el ramexhnêye"
-
-#: core/meta/support/MetaConstants.cpp:123
-msgid "First Played"
-msgstr "Djouwé pol prumî côp"
-
-#: core/meta/support/MetaConstants.cpp:125
-#, fuzzy
-#| msgid "Play count"
-msgid "Playcount"
-msgstr "Côps djouwés"
-
-#: core/meta/support/MetaConstants.cpp:126
-#, fuzzy
-#| msgid "Unique ID:"
-msgid "Unique Id"
-msgstr "Idintifiant unike:"
-
-#: core/meta/support/MetaConstants.cpp:128
-#, fuzzy
-#| msgid "No track playing"
-msgid "track gain"
-msgstr "Nou boket di djouwé"
-
-#: core/meta/support/MetaConstants.cpp:129
-msgid "track gain peak"
-msgstr ""
-
-#: core/meta/support/MetaConstants.cpp:130
-#, fuzzy
-#| msgid "album"
-msgid "album gain"
-msgstr "albom"
-
-#: core/meta/support/MetaConstants.cpp:131
-#, fuzzy
-#| msgid "album"
-msgid "album gain peak"
-msgstr "albom"
-
-#: core/meta/support/MetaConstants.cpp:133
-#, fuzzy
-#| msgid "Album Artist"
-msgid "Album Artist Name"
-msgstr "Albom Årtisse"
-
-#: core/meta/support/MetaConstants.cpp:135
-#, fuzzy
-#| msgid "%1 (modified) "
-msgid "Last Modified"
-msgstr "%1 (candjî) "
-
-#: core/meta/support/MetaConstants.cpp:146
-#, fuzzy
-#| msgid "rating"
-msgctxt ""
-"The field name in case nothing specific is selected e.g. in the automatic "
-"playlist generator. Use a one word translation."
-msgid "anything"
-msgstr "préjhaedje"
-
-#: core/meta/support/MetaConstants.cpp:147
-msgctxt ""
-"One word translation used in the collection filter. The name of the file "
-"this track is stored in"
-msgid "filename"
-msgstr "no do fitchî"
-
-#: core/meta/support/MetaConstants.cpp:148
-msgctxt "One word translation used in the collection filter"
-msgid "title"
-msgstr "tite"
-
-#: core/meta/support/MetaConstants.cpp:149
-#, fuzzy
-#| msgid "artist"
-msgctxt "One word translation used in the collection filter"
-msgid "artist"
-msgstr "årtisse"
-
-#: core/meta/support/MetaConstants.cpp:150
-#, fuzzy
-#| msgid "album"
-msgctxt "One word translation used in the collection filter"
-msgid "album"
-msgstr "albom"
-
-#: core/meta/support/MetaConstants.cpp:151
-#, fuzzy
-#| msgid "genre"
-msgctxt "One word translation used in the collection filter"
-msgid "genre"
-msgstr "djinre"
-
-#: core/meta/support/MetaConstants.cpp:152
-#, fuzzy
-#| msgid "composer"
-msgctxt "One word translation used in the collection filter"
-msgid "composer"
-msgstr "compôzeu"
-
-#: core/meta/support/MetaConstants.cpp:153
-#, fuzzy
-#| msgid "year"
-msgctxt "One word translation used in the collection filter"
-msgid "year"
-msgstr "anêye"
-
-#: core/meta/support/MetaConstants.cpp:154
-#, fuzzy
-#| msgid "comment"
-msgctxt "One word translation used in the collection filter"
-msgid "comment"
-msgstr "rawete"
-
-#: core/meta/support/MetaConstants.cpp:155
-#, fuzzy
-#| msgid "tracknumber"
-msgctxt "One word translation used in the collection filter"
-msgid "tracknumber"
-msgstr "limero do boket"
-
-#: core/meta/support/MetaConstants.cpp:156
-#, fuzzy
-#| msgid "discnumber"
-msgctxt "One word translation used in the collection filter"
-msgid "discnumber"
-msgstr "limero del plake"
-
-#: core/meta/support/MetaConstants.cpp:157
-#, fuzzy
-#| msgid "bpm"
-msgctxt "One word translation used in the collection filter"
-msgid "bpm"
-msgstr "bpm"
-
-#: core/meta/support/MetaConstants.cpp:158
-#, fuzzy
-#| msgid "length"
-msgctxt "One word translation used in the collection filter"
-msgid "length"
-msgstr "longueur"
-
-#: core/meta/support/MetaConstants.cpp:159
-#, fuzzy
-#| msgid "bitrate"
-msgctxt "One word translation used in the collection filter"
-msgid "bitrate"
-msgstr "roedeu des bits"
-
-#: core/meta/support/MetaConstants.cpp:160
-#, fuzzy
-#| msgid "samplerate"
-msgctxt "One word translation used in the collection filter"
-msgid "samplerate"
-msgstr "frecwince di sampling"
-
-#: core/meta/support/MetaConstants.cpp:161
-#, fuzzy
-#| msgid "filesize"
-msgctxt "One word translation used in the collection filter"
-msgid "filesize"
-msgstr "grandeu do fitchî"
-
-#: core/meta/support/MetaConstants.cpp:162
-#, fuzzy
-#| msgid "format"
-msgctxt "One word translation used in the collection filter"
-msgid "format"
-msgstr "cogne"
-
-#: core/meta/support/MetaConstants.cpp:163
-#, fuzzy
-#| msgid "added"
-msgctxt "One word translation used in the collection filter"
-msgid "added"
-msgstr "radjouté"
-
-#: core/meta/support/MetaConstants.cpp:164
-#, fuzzy
-#| msgid "score"
-msgctxt "One word translation used in the collection filter"
-msgid "score"
-msgstr "ponts"
-
-#: core/meta/support/MetaConstants.cpp:165
-#, fuzzy
-#| msgid "rating"
-msgctxt "One word translation used in the collection filter"
-msgid "rating"
-msgstr "préjhaedje"
-
-#: core/meta/support/MetaConstants.cpp:166
-#, fuzzy
-#| msgid "First Played"
-msgctxt ""
-"One word translation used in the collection filter. First played time / "
-"access date"
-msgid "firstplay"
-msgstr "Djouwé pol prumî côp"
-
-#: core/meta/support/MetaConstants.cpp:167
-#, fuzzy
-#| msgid "Last played"
-msgctxt ""
-"One word translation used in the collection filter. Last played time / "
-"access date"
-msgid "lastplay"
-msgstr "Dierin djouwé"
-
-#: core/meta/support/MetaConstants.cpp:168
-#, fuzzy
-#| msgid "playcount"
-msgctxt "One word translation used in the collection filter"
-msgid "playcount"
-msgstr "contaedje des djouwaedjes"
-
-#: core/meta/support/MetaConstants.cpp:169
-#, fuzzy
-#| msgid "Unique ID:"
-msgctxt "One word translation used in the collection filter"
-msgid "uniqueid"
-msgstr "Idintifiant unike:"
-
-#: core/meta/support/MetaConstants.cpp:171
-#, fuzzy
-#| msgid "No track playing"
-msgctxt "One word translation used in the collection filter"
-msgid "trackgain"
-msgstr "Nou boket di djouwé"
-
-#: core/meta/support/MetaConstants.cpp:172
-#, fuzzy
-#| msgid "No track playing"
-msgctxt "One word translation used in the collection filter"
-msgid "trackgainpeak"
-msgstr "Nou boket di djouwé"
-
-#: core/meta/support/MetaConstants.cpp:173
-#, fuzzy
-#| msgid "album"
-msgctxt "One word translation used in the collection filter"
-msgid "albumgain"
-msgstr "albom"
-
-#: core/meta/support/MetaConstants.cpp:174
-#, fuzzy
-#| msgid "album"
-msgctxt "One word translation used in the collection filter"
-msgid "albumgainpeak"
-msgstr "albom"
-
-#: core/meta/support/MetaConstants.cpp:176
-#, fuzzy
-#| msgid "albumartist"
-msgctxt "One word translation used in the collection filter"
-msgid "albumartist"
-msgstr "albomårtisse"
-
-#: core/meta/support/MetaConstants.cpp:177
-#, fuzzy
-#| msgid "label"
-msgctxt "One word translation used in the collection filter"
-msgid "label"
-msgstr "etikete"
-
-#: core/meta/support/MetaConstants.cpp:178
-#, fuzzy
-#| msgid "%1 (modified) "
-msgctxt "One word translation used in the collection filter"
-msgid "modified"
-msgstr "%1 (candjî) "
-
 #: core/meta/support/MetaUtility.cpp:392
 msgctxt ""
 "the time format for a time length when the time is below 1 hour see QTime "
@@ -3771,6 +3416,361 @@ msgid "%1 second"
 msgid_plural "%1 seconds"
 msgstr[0] "Segondes"
 msgstr[1] "Segondes"
+
+#: core/meta/support/MetaConstants.cpp:104
+#, fuzzy
+#| msgid "rating"
+msgctxt ""
+"The field name in case nothing specific is selected e.g. in the automatic "
+"playlist generator"
+msgid "anything"
+msgstr "préjhaedje"
+
+#: core/meta/support/MetaConstants.cpp:105
+#, fuzzy
+#| msgctxt "The name of the file this track is stored in"
+#| msgid "Filename"
+msgctxt "The name of the file this track is stored in"
+msgid "filename"
+msgstr "No do fitchî"
+
+#: core/meta/support/MetaConstants.cpp:107
+#, fuzzy
+#| msgid "Playlist name:"
+msgid "Artist Name"
+msgstr "No del djivêye a djouwer:"
+
+#: core/meta/support/MetaConstants.cpp:108
+#, fuzzy
+#| msgid "album"
+msgid "Album Name"
+msgstr "albom"
+
+#: core/meta/support/MetaConstants.cpp:112
+#: dialogs/FilenameLayoutDialog.cpp:250 dialogs/FilenameLayoutDialog.cpp:626
+#: playlist/PlaylistModel.cpp:899 widgets/SmartPlaylistEditor.cpp:184
+msgid "Comment"
+msgstr "Rawete"
+
+#: core/meta/support/MetaConstants.cpp:113
+#: dialogs/OrganizeCollectionDialog.cpp:157
+msgid "Track Number"
+msgstr "Limero do boket"
+
+#: core/meta/support/MetaConstants.cpp:114 playlist/PlaylistModel.cpp:895
+msgid "Disc Number"
+msgstr "Limero del plake"
+
+#: core/meta/support/MetaConstants.cpp:115
+#, fuzzy
+#| msgid "bpm"
+msgid "Bpm"
+msgstr "bpm"
+
+#. i18n: file: network/NetworkRequests.ui:56
+#. i18n: ectx: property (text), widget (QTreeWidget, requestList)
+#: core/meta/support/MetaConstants.cpp:116 playlist/PlaylistModel.cpp:902
+#: widgets/SmartPlaylistEditor.cpp:183 rc.cpp:1875
+msgid "Length"
+msgstr "Longueur"
+
+#: core/meta/support/MetaConstants.cpp:117
+#, fuzzy
+#| msgid "Bit rate:"
+msgid "Bit Rate"
+msgstr "Roedeur des bites:"
+
+#: core/meta/support/MetaConstants.cpp:118 playlist/PlaylistModel.cpp:904
+msgid "Sample Rate"
+msgstr "Frecwince di sampling"
+
+#: core/meta/support/MetaConstants.cpp:119 playlist/PlaylistModel.cpp:910
+msgid "File Size"
+msgstr "Grandeu do fitchî"
+
+#: core/meta/support/MetaConstants.cpp:120
+#, fuzzy
+#| msgctxt "@item::intable File Format"
+#| msgid "Format"
+msgid "Format"
+msgstr "Cogne"
+
+#: core/meta/support/MetaConstants.cpp:121
+#, fuzzy
+#| msgid "Move to Collection"
+msgid "Added to Collection"
+msgstr "Bodjî el ramexhnêye"
+
+#: core/meta/support/MetaConstants.cpp:124
+msgid "First Played"
+msgstr "Djouwé pol prumî côp"
+
+#: core/meta/support/MetaConstants.cpp:126
+#, fuzzy
+#| msgid "Play count"
+msgid "Playcount"
+msgstr "Côps djouwés"
+
+#: core/meta/support/MetaConstants.cpp:127
+#, fuzzy
+#| msgid "Unique ID:"
+msgid "Unique Id"
+msgstr "Idintifiant unike:"
+
+#: core/meta/support/MetaConstants.cpp:129
+#, fuzzy
+#| msgid "No track playing"
+msgid "track gain"
+msgstr "Nou boket di djouwé"
+
+#: core/meta/support/MetaConstants.cpp:130
+msgid "track gain peak"
+msgstr ""
+
+#: core/meta/support/MetaConstants.cpp:131
+#, fuzzy
+#| msgid "album"
+msgid "album gain"
+msgstr "albom"
+
+#: core/meta/support/MetaConstants.cpp:132
+#, fuzzy
+#| msgid "album"
+msgid "album gain peak"
+msgstr "albom"
+
+#: core/meta/support/MetaConstants.cpp:134
+#, fuzzy
+#| msgid "Album Artist"
+msgid "Album Artist Name"
+msgstr "Albom Årtisse"
+
+#: core/meta/support/MetaConstants.cpp:136
+#, fuzzy
+#| msgid "%1 (modified) "
+msgid "Last Modified"
+msgstr "%1 (candjî) "
+
+#: core/meta/support/MetaConstants.cpp:147
+#, fuzzy
+#| msgid "rating"
+msgctxt ""
+"The field name in case nothing specific is selected e.g. in the automatic "
+"playlist generator. Use a one word translation."
+msgid "anything"
+msgstr "préjhaedje"
+
+#: core/meta/support/MetaConstants.cpp:148
+msgctxt ""
+"One word translation used in the collection filter. The name of the file "
+"this track is stored in"
+msgid "filename"
+msgstr "no do fitchî"
+
+#: core/meta/support/MetaConstants.cpp:149
+msgctxt "One word translation used in the collection filter"
+msgid "title"
+msgstr "tite"
+
+#: core/meta/support/MetaConstants.cpp:150
+#, fuzzy
+#| msgid "artist"
+msgctxt "One word translation used in the collection filter"
+msgid "artist"
+msgstr "årtisse"
+
+#: core/meta/support/MetaConstants.cpp:151
+#, fuzzy
+#| msgid "album"
+msgctxt "One word translation used in the collection filter"
+msgid "album"
+msgstr "albom"
+
+#: core/meta/support/MetaConstants.cpp:152
+#, fuzzy
+#| msgid "genre"
+msgctxt "One word translation used in the collection filter"
+msgid "genre"
+msgstr "djinre"
+
+#: core/meta/support/MetaConstants.cpp:153
+#, fuzzy
+#| msgid "composer"
+msgctxt "One word translation used in the collection filter"
+msgid "composer"
+msgstr "compôzeu"
+
+#: core/meta/support/MetaConstants.cpp:154
+#, fuzzy
+#| msgid "year"
+msgctxt "One word translation used in the collection filter"
+msgid "year"
+msgstr "anêye"
+
+#: core/meta/support/MetaConstants.cpp:155
+#, fuzzy
+#| msgid "comment"
+msgctxt "One word translation used in the collection filter"
+msgid "comment"
+msgstr "rawete"
+
+#: core/meta/support/MetaConstants.cpp:156
+#, fuzzy
+#| msgid "tracknumber"
+msgctxt "One word translation used in the collection filter"
+msgid "tracknumber"
+msgstr "limero do boket"
+
+#: core/meta/support/MetaConstants.cpp:157
+#, fuzzy
+#| msgid "discnumber"
+msgctxt "One word translation used in the collection filter"
+msgid "discnumber"
+msgstr "limero del plake"
+
+#: core/meta/support/MetaConstants.cpp:158
+#, fuzzy
+#| msgid "bpm"
+msgctxt "One word translation used in the collection filter"
+msgid "bpm"
+msgstr "bpm"
+
+#: core/meta/support/MetaConstants.cpp:159
+#, fuzzy
+#| msgid "length"
+msgctxt "One word translation used in the collection filter"
+msgid "length"
+msgstr "longueur"
+
+#: core/meta/support/MetaConstants.cpp:160
+#, fuzzy
+#| msgid "bitrate"
+msgctxt "One word translation used in the collection filter"
+msgid "bitrate"
+msgstr "roedeu des bits"
+
+#: core/meta/support/MetaConstants.cpp:161
+#, fuzzy
+#| msgid "samplerate"
+msgctxt "One word translation used in the collection filter"
+msgid "samplerate"
+msgstr "frecwince di sampling"
+
+#: core/meta/support/MetaConstants.cpp:162
+#, fuzzy
+#| msgid "filesize"
+msgctxt "One word translation used in the collection filter"
+msgid "filesize"
+msgstr "grandeu do fitchî"
+
+#: core/meta/support/MetaConstants.cpp:163
+#, fuzzy
+#| msgid "format"
+msgctxt "One word translation used in the collection filter"
+msgid "format"
+msgstr "cogne"
+
+#: core/meta/support/MetaConstants.cpp:164
+#, fuzzy
+#| msgid "added"
+msgctxt "One word translation used in the collection filter"
+msgid "added"
+msgstr "radjouté"
+
+#: core/meta/support/MetaConstants.cpp:165
+#, fuzzy
+#| msgid "score"
+msgctxt "One word translation used in the collection filter"
+msgid "score"
+msgstr "ponts"
+
+#: core/meta/support/MetaConstants.cpp:166
+#, fuzzy
+#| msgid "rating"
+msgctxt "One word translation used in the collection filter"
+msgid "rating"
+msgstr "préjhaedje"
+
+#: core/meta/support/MetaConstants.cpp:167
+#, fuzzy
+#| msgid "First Played"
+msgctxt ""
+"One word translation used in the collection filter. First played time / "
+"access date"
+msgid "firstplay"
+msgstr "Djouwé pol prumî côp"
+
+#: core/meta/support/MetaConstants.cpp:168
+#, fuzzy
+#| msgid "Last played"
+msgctxt ""
+"One word translation used in the collection filter. Last played time / "
+"access date"
+msgid "lastplay"
+msgstr "Dierin djouwé"
+
+#: core/meta/support/MetaConstants.cpp:169
+#, fuzzy
+#| msgid "playcount"
+msgctxt "One word translation used in the collection filter"
+msgid "playcount"
+msgstr "contaedje des djouwaedjes"
+
+#: core/meta/support/MetaConstants.cpp:170
+#, fuzzy
+#| msgid "Unique ID:"
+msgctxt "One word translation used in the collection filter"
+msgid "uniqueid"
+msgstr "Idintifiant unike:"
+
+#: core/meta/support/MetaConstants.cpp:172
+#, fuzzy
+#| msgid "No track playing"
+msgctxt "One word translation used in the collection filter"
+msgid "trackgain"
+msgstr "Nou boket di djouwé"
+
+#: core/meta/support/MetaConstants.cpp:173
+#, fuzzy
+#| msgid "No track playing"
+msgctxt "One word translation used in the collection filter"
+msgid "trackgainpeak"
+msgstr "Nou boket di djouwé"
+
+#: core/meta/support/MetaConstants.cpp:174
+#, fuzzy
+#| msgid "album"
+msgctxt "One word translation used in the collection filter"
+msgid "albumgain"
+msgstr "albom"
+
+#: core/meta/support/MetaConstants.cpp:175
+#, fuzzy
+#| msgid "album"
+msgctxt "One word translation used in the collection filter"
+msgid "albumgainpeak"
+msgstr "albom"
+
+#: core/meta/support/MetaConstants.cpp:177
+#, fuzzy
+#| msgid "albumartist"
+msgctxt "One word translation used in the collection filter"
+msgid "albumartist"
+msgstr "albomårtisse"
+
+#: core/meta/support/MetaConstants.cpp:178
+#, fuzzy
+#| msgid "label"
+msgctxt "One word translation used in the collection filter"
+msgid "label"
+msgstr "etikete"
+
+#: core/meta/support/MetaConstants.cpp:179
+#, fuzzy
+#| msgid "%1 (modified) "
+msgctxt "One word translation used in the collection filter"
+msgid "modified"
+msgstr "%1 (candjî) "
 
 #: core/podcasts/PodcastReader.cpp:455
 #, kde-format
