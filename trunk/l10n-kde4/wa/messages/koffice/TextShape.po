@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TextShape\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-03-09 03:50+0100\n"
+"POT-Creation-Date: 2011-03-10 03:47+0100\n"
 "PO-Revision-Date: 2010-06-06 15:05+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -133,19 +133,6 @@ msgstr "Abjad Mineur"
 msgid "ArabicAlphabet"
 msgstr "Åbécé arabe"
 
-#: TextShapeFactory.cpp:42 TextShapeFactory.cpp:52
-#: commands/ChangeTrackedDeleteCommand.cpp:470 commands/DeleteCommand.cpp:215
-msgid "Text"
-msgstr "Tecse"
-
-#: TextShapeFactory.cpp:44
-msgid "A shape that shows text"
-msgstr "Ene fôme ki moster do tecse"
-
-#: TextShapeFactory.cpp:54
-msgid "Text Shape"
-msgstr "Fôme tecse"
-
 #: TextToolFactory.cpp:29
 msgid "Text editing tool"
 msgstr "Usteye d' aspougnaedje do tecse"
@@ -164,13 +151,18 @@ msgstr "Candjî livea del djivêye"
 
 #: commands/ChangeTrackedDeleteCommand.cpp:76
 #: commands/ChangeTrackedDeleteCommand.cpp:288 commands/DeleteCommand.cpp:43
-#: TextTool.cpp:487
+#: TextTool.cpp:491
 msgid "Deletion"
 msgstr "Disfaçaedje"
 
-#: commands/ChangeTrackedDeleteCommand.cpp:182 TextTool.cpp:1867
+#: commands/ChangeTrackedDeleteCommand.cpp:182 TextTool.cpp:1896
 msgid "Key Press"
 msgstr "Tchôcaedje di tape"
+
+#: commands/ChangeTrackedDeleteCommand.cpp:470 commands/DeleteCommand.cpp:215
+#: TextShapeFactory.cpp:42 TextShapeFactory.cpp:52
+msgid "Text"
+msgstr "Tecse"
 
 #: commands/ListItemNumberingCommand.cpp:35
 msgid "Change List Numbering"
@@ -180,7 +172,7 @@ msgstr "Candjî l' limerotaedje del djivêye"
 msgid "Reject change"
 msgstr "Rifuzer candjmint"
 
-#: commands/ShowChangesCommand.cpp:53 TextTool.cpp:378
+#: commands/ShowChangesCommand.cpp:53 TextTool.cpp:380
 msgid "Show Changes"
 msgstr "Mostrer candjmints"
 
@@ -207,6 +199,21 @@ msgstr "Çouci est ene roye di tecse disfacé."
 #: dialogs/ChangeConfigureDialog.cpp:140
 msgid "This is a line of text whose format has been changed."
 msgstr "Çouci est ene roye di tecse k' ons a candjî l' cogne."
+
+#: dialogs/SimpleStyleWidget.cpp:264
+msgctxt "Short for LeftToRight"
+msgid "LTR"
+msgstr "LTR"
+
+#: dialogs/SimpleStyleWidget.cpp:267
+msgctxt "Short for RightToLeft"
+msgid "RTL"
+msgstr "RTL"
+
+#: dialogs/SimpleStyleWidget.cpp:271
+msgctxt "Automatic direction detection"
+msgid "Auto"
+msgstr "Otomatike"
 
 #: dialogs/FormattingPreview.cpp:49 dialogs/CharacterGeneral.cpp:58
 #: dialogs/FontDia.cpp:103
@@ -268,7 +275,7 @@ msgstr "Cogne do hagnon"
 msgid "Paragraph Settings"
 msgstr "Apontiaedjes des hagnons"
 
-#: dialogs/StyleManagerDialog.cpp:29 TextTool.cpp:392
+#: dialogs/StyleManagerDialog.cpp:29 TextTool.cpp:394
 msgid "Style Manager"
 msgstr "Manaedjeu des stîles"
 
@@ -389,21 +396,6 @@ msgctxt "Inherit style"
 msgid "None"
 msgstr "Nouk"
 
-#: dialogs/SimpleStyleWidget.cpp:266
-msgctxt "Short for LeftToRight"
-msgid "LTR"
-msgstr "LTR"
-
-#: dialogs/SimpleStyleWidget.cpp:269
-msgctxt "Short for RightToLeft"
-msgid "RTL"
-msgstr "RTL"
-
-#: dialogs/SimpleStyleWidget.cpp:273
-msgctxt "Automatic direction detection"
-msgid "Auto"
-msgstr "Otomatike"
-
 #: dialogs/StyleManager.cpp:109
 msgid "Document defaults"
 msgstr ""
@@ -439,159 +431,167 @@ msgstr "Accepter"
 msgid "Reject"
 msgstr "Rifuzer"
 
-#: TextTool.cpp:118
+#: TextShapeFactory.cpp:44
+msgid "A shape that shows text"
+msgstr "Ene fôme ki moster do tecse"
+
+#: TextShapeFactory.cpp:54
+msgid "Text Shape"
+msgstr "Fôme tecse"
+
+#: TextTool.cpp:120
 msgid "Bold"
 msgstr "Cråsses"
 
-#: TextTool.cpp:124
+#: TextTool.cpp:126
 msgid "Italic"
 msgstr "Clintcheyes"
 
-#: TextTool.cpp:130
+#: TextTool.cpp:132
 msgctxt "Text formatting"
 msgid "Underline"
 msgstr "Sorlignî"
 
-#: TextTool.cpp:136
+#: TextTool.cpp:138
 msgid "Strike Out"
 msgstr "Båré"
 
-#: TextTool.cpp:142
+#: TextTool.cpp:144
 msgid "Align Left"
 msgstr "Aroymint a hintche"
 
-#: TextTool.cpp:149
+#: TextTool.cpp:151
 msgid "Align Right"
 msgstr "Aroymint a droete"
 
-#: TextTool.cpp:156
+#: TextTool.cpp:158
 msgid "Align Center"
 msgstr "Aroymint å mitan"
 
-#: TextTool.cpp:163
+#: TextTool.cpp:165
 msgid "Align Block"
 msgstr "Aroymint bloc"
 
 #. i18n: file: dialogs/FontLayoutTab.ui:108
 #. i18n: ectx: property (text), widget (QRadioButton, superscript)
-#: TextTool.cpp:170 rc.cpp:103
+#: TextTool.cpp:172 rc.cpp:103
 msgid "Superscript"
 msgstr "Dizeu l' roye"
 
 #. i18n: file: dialogs/FontLayoutTab.ui:115
 #. i18n: ectx: property (text), widget (QRadioButton, subscript)
-#: TextTool.cpp:175 rc.cpp:106
+#: TextTool.cpp:177 rc.cpp:106
 msgid "Subscript"
 msgstr "Dizo l' roye"
 
-#: TextTool.cpp:182
+#: TextTool.cpp:184
 msgid "Increase Indent"
 msgstr "Ritrait pus grand"
 
-#: TextTool.cpp:188
+#: TextTool.cpp:190
 msgid "Decrease Indent"
 msgstr "Ritrait pus ptit"
 
-#: TextTool.cpp:192
+#: TextTool.cpp:194
 msgid "Increase Font Size"
 msgstr "Ragrandi l' fonte"
 
-#: TextTool.cpp:197
+#: TextTool.cpp:199
 msgid "Decrease Font Size"
 msgstr "Raptiti l' fonte"
 
-#: TextTool.cpp:269
+#: TextTool.cpp:271
 msgid "Insert Non-Breaking Space"
 msgstr "Sititchî espåce nén côpåve"
 
-#: TextTool.cpp:274
+#: TextTool.cpp:276
 msgid "Insert Non-Breaking Hyphen"
 msgstr "Sititchî loyeure nén côpåve"
 
-#: TextTool.cpp:279
+#: TextTool.cpp:281
 msgid "Insert Index"
 msgstr "Sititchî indecse"
 
-#: TextTool.cpp:284
+#: TextTool.cpp:286
 msgid "Insert Bookmark..."
 msgstr ""
 
-#: TextTool.cpp:288
+#: TextTool.cpp:290
 msgid "Jump To..."
 msgstr ""
 
-#: TextTool.cpp:292
+#: TextTool.cpp:294
 msgid "Insert Soft Hyphen"
 msgstr "Sititchî loyeure condicionele"
 
-#: TextTool.cpp:297
+#: TextTool.cpp:299
 msgid "Line Break"
 msgstr "Djocaedje di roye"
 
-#: TextTool.cpp:302
+#: TextTool.cpp:304
 msgid "Font..."
 msgstr "Fonte..."
 
-#: TextTool.cpp:305
+#: TextTool.cpp:307
 msgid "Change character size, font, boldface, italics etc."
 msgstr ""
 "Candjî l' grandeu des caracteres, fonte, cråssès letes, clintcheyès letes et "
 "tchik et tchak."
 
-#: TextTool.cpp:306
+#: TextTool.cpp:308
 msgid "Change the attributes of the currently selected characters."
 msgstr "Candjî les atributs des caracteres tchoezis pol moumint."
 
-#: TextTool.cpp:309
+#: TextTool.cpp:311
 msgid "Font Size"
 msgstr "Grandeu del fonte"
 
-#: TextTool.cpp:315
+#: TextTool.cpp:317
 msgid "Text Color..."
 msgstr "Coleur do Tecse..."
 
-#: TextTool.cpp:321
+#: TextTool.cpp:323
 msgid "Background Color..."
 msgstr "Coleur do fond..."
 
 #. i18n: file: dialogs/ParagraphDecorations.ui:31
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: TextTool.cpp:322 rc.cpp:115
+#: TextTool.cpp:324 rc.cpp:115
 msgid "Background"
 msgstr "Fond"
 
-#: TextTool.cpp:326
+#: TextTool.cpp:328
 msgid "Default Format"
 msgstr "Prémetowe cogne"
 
-#: TextTool.cpp:328
+#: TextTool.cpp:330
 msgid "Change text attributes to their default values"
 msgstr "Candjî les atributs d' tecse viè leus prémetowès valixhances"
 
-#: TextTool.cpp:356
+#: TextTool.cpp:358
 #, kde-format
 msgid "Apply %1"
 msgstr "Mete en ouve %1"
 
-#: TextTool.cpp:366
+#: TextTool.cpp:368
 msgid "Table..."
 msgstr "Tåvlea..."
 
-#: TextTool.cpp:368
+#: TextTool.cpp:370
 msgid "Insert a table into the document."
 msgstr "Sititchî on tåvlea e documint."
 
-#: TextTool.cpp:371
+#: TextTool.cpp:373
 msgid "Paragraph..."
 msgstr "Hagnon..."
 
-#: TextTool.cpp:374
+#: TextTool.cpp:376
 msgid "Change paragraph margins, text flow, borders, bullets, numbering etc."
 msgstr ""
 "Candjî les mådjes des hagnons, li floû d' sicrijhaedje, les boirdeures, "
 "tchikes, limerotaedje et tchik et tchak."
 
-#: TextTool.cpp:375
+#: TextTool.cpp:377
 msgid ""
 "Change paragraph margins, text flow, borders, bullets, numbering etc."
 "<p>Select text in multiple paragraphs to change the formatting of all "
@@ -603,21 +603,21 @@ msgstr ""
 "candjî l' epådjnaedje di tos les hagnons d' tchoezis.<p>Si gn a nou tecse di "
 "tchoezi, li hagnon ewou çkel cursoe est srè candjî.</p>"
 
-#: TextTool.cpp:383
+#: TextTool.cpp:385
 msgid "Record Changes"
 msgstr "Eredjistrî les candjmints"
 
-#: TextTool.cpp:388
+#: TextTool.cpp:390
 #, fuzzy
 #| msgid "Configure Change Tracking"
 msgid "Configure Change Tracking..."
 msgstr "Apontyî l' shuvaedje des candjmints"
 
-#: TextTool.cpp:394
+#: TextTool.cpp:396
 msgid "Change attributes of styles"
 msgstr "Candjî les atributs des stîles"
 
-#: TextTool.cpp:395
+#: TextTool.cpp:397
 msgid ""
 "Change font and paragraph attributes of styles.<p>Multiple styles can be "
 "changed using the dialog box."
@@ -625,31 +625,35 @@ msgstr ""
 "Candjî les atributs ou stîles del fonte et del hagnon.<p>Sacwants stîles "
 "savèt esse candjîs e siervant del boesse di dvize."
 
-#: TextTool.cpp:402
+#: TextTool.cpp:404
 msgid "Special Character..."
 msgstr "Caractere especiå..."
 
-#: TextTool.cpp:406
+#: TextTool.cpp:408
 msgid "Insert one or more symbols or characters not found on the keyboard"
 msgstr ""
 "Sititchî onk ou sacwants simbôles ou caracteres k' on n' trove nén sol "
 "taprece"
 
-#: TextTool.cpp:407
+#: TextTool.cpp:409
 msgid "Insert one or more symbols or characters not found on the keyboard."
 msgstr ""
 "Sititchî onk ou sacwants simbôles ou caracteres k' on n' trove nén sol "
 "taprece."
 
-#: TextTool.cpp:485
+#: TextTool.cpp:489
 msgid "Insertion"
 msgstr "Stitchaedje"
 
-#: TextTool.cpp:489
+#: TextTool.cpp:493
 msgid "Formatting"
 msgstr "Epådjnaedje"
 
-#: TextTool.cpp:963
+#: TextTool.cpp:878
+msgid "Variable Options"
+msgstr ""
+
+#: TextTool.cpp:993
 #, kde-format
 msgid ""
 "This link points to the program or script '%1'.\n"
@@ -660,25 +664,25 @@ msgstr ""
 "Des måhaitîs programes polèt fé do må a vosse copiutrece. Estoz seur di "
 "voleur enonder ci programe ?"
 
-#: TextTool.cpp:969
+#: TextTool.cpp:999
 msgid "Open Link?"
 msgstr "Drovi hårdêye?"
 
-#: TextTool.cpp:1518
+#: TextTool.cpp:1547
 msgid "Abc"
 msgstr "Abc"
 
-#: TextTool.cpp:1521
+#: TextTool.cpp:1550
 msgid "Styles"
 msgstr "Stîles"
 
-#: TextTool.cpp:1769
+#: TextTool.cpp:1798
 msgid ""
 "Failed to mark word for inclusion in index.\n"
 "Please reposition cursor and try again"
 msgstr ""
 
-#: TextTool.cpp:1867 TextTool.cpp:1872
+#: TextTool.cpp:1896 TextTool.cpp:1901
 msgid "Autocorrection"
 msgstr "Coridjaedje tot seu"
 
@@ -686,7 +690,7 @@ msgstr "Coridjaedje tot seu"
 #. i18n: ectx: property (text), widget (QPushButton, bDelete)
 #. i18n: file: dialogs/StyleManager.ui:98
 #. i18n: ectx: property (text), widget (QPushButton, bDelete)
-#: TextTool.cpp:1872 rc.cpp:184 rc.cpp:379
+#: TextTool.cpp:1901 rc.cpp:184 rc.cpp:379
 msgid "Delete"
 msgstr "Disfacer"
 

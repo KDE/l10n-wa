@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_phonon\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-03-06 03:30+0100\n"
+"POT-Creation-Date: 2011-03-10 03:29+0100\n"
 "PO-Revision-Date: 2010-01-20 15:21+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -96,29 +96,31 @@ msgstr ""
 msgid "Unknown Channel"
 msgstr ""
 
-#: devicepreference.cpp:103
+#: devicepreference.cpp:105
 msgid "Audio Output"
 msgstr "Rexhowe do son"
 
-#: devicepreference.cpp:106
+#: devicepreference.cpp:119
 msgid "Audio Capture"
 msgstr "Egaloyaedje do son"
 
-#: devicepreference.cpp:109
+#: devicepreference.cpp:122
 #, fuzzy
 #| msgid "Audio Capture"
 msgid "Video Capture"
 msgstr "Egaloyaedje do son"
 
-#: devicepreference.cpp:112
+#: devicepreference.cpp:125
 msgid "Invalid"
 msgstr ""
 
-#: devicepreference.cpp:150
-msgid "Play a test sound on the selected device"
-msgstr "Djouwer on son d' asprouvaedje so l' éndjin tchoezi"
+#: devicepreference.cpp:165
+#, fuzzy
+#| msgid "prefer the selected device"
+msgid "Test the selected device"
+msgstr "pus rade l' éndjin tchoezi"
 
-#: devicepreference.cpp:171 devicepreference.cpp:178 devicepreference.cpp:185
+#: devicepreference.cpp:189 devicepreference.cpp:196 devicepreference.cpp:203
 msgid ""
 "Defines the default ordering of devices which can be overridden by "
 "individual categories."
@@ -126,43 +128,43 @@ msgstr ""
 "Defini l' prémetou ôre des éndjins ki pout esse candjî pas des mierseulès "
 "categoreyes."
 
-#: devicepreference.cpp:284
+#: devicepreference.cpp:323
 #, fuzzy
 #| msgid "Default Output Device Preference"
 msgid "Default Audio Output Device Preference"
 msgstr "Prémetowès preferinces di l' endjin e rexhowe"
 
-#: devicepreference.cpp:287
+#: devicepreference.cpp:326
 #, fuzzy
 #| msgid "Default Capture Device Preference"
 msgid "Default Audio Capture Device Preference"
 msgstr "Prémetowès preferinces di l' endjin a l' egaloyaedje"
 
-#: devicepreference.cpp:290
+#: devicepreference.cpp:329
 #, fuzzy
 #| msgid "Default Capture Device Preference"
 msgid "Default Video Capture Device Preference"
 msgstr "Prémetowès preferinces di l' endjin a l' egaloyaedje"
 
-#: devicepreference.cpp:297
+#: devicepreference.cpp:336
 #, fuzzy, kde-format
 #| msgid "Output Device Preference for the '%1' Category"
 msgid "Audio Output Device Preference for the '%1' Category"
 msgstr "Prémetowès preferinces di rexhowe pol categoreye « %1 »"
 
-#: devicepreference.cpp:301
+#: devicepreference.cpp:340
 #, fuzzy, kde-format
 #| msgid "Capture Device Preference for the '%1' Category"
 msgid "Audio Capture Device Preference for the '%1' Category"
 msgstr "Prémetowès preferinces d' egaloyaedje pol categoreye « %1 »"
 
-#: devicepreference.cpp:305
+#: devicepreference.cpp:344
 #, fuzzy, kde-format
 #| msgid "Capture Device Preference for the '%1' Category"
 msgid "Video Capture Device Preference for the '%1' Category "
 msgstr "Prémetowès preferinces d' egaloyaedje pol categoreye « %1 »"
 
-#: devicepreference.cpp:726
+#: devicepreference.cpp:818
 msgid ""
 "Apply the currently shown device preference list to the following other "
 "audio output categories:"
@@ -170,9 +172,22 @@ msgstr ""
 "Mete en ouve l' djivêye des preferinces di l' éndjin mostrêye pol moumint po "
 "ls ôtès categoreyes d' rexhowe di son ki shuvèt:"
 
-#: devicepreference.cpp:736
+#: devicepreference.cpp:829
 msgid "Default/Unspecified Category"
 msgstr "Prémetowe/nén specifieye categoreye"
+
+#: devicepreference.cpp:947
+msgid "Your backend may not support audio capture"
+msgstr ""
+
+#: devicepreference.cpp:966
+msgid "Your backend may not support video capture"
+msgstr ""
+
+#: devicepreference.cpp:976
+#, kde-format
+msgid "Testing %1"
+msgstr ""
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -196,93 +211,105 @@ msgstr ""
 
 #. i18n: file: backendselection.ui:58
 #. i18n: ectx: property (text), widget (QToolButton, m_up)
-#. i18n: file: devicepreference.ui:197
+#. i18n: file: devicepreference.ui:203
 #. i18n: ectx: property (text), widget (QToolButton, preferButton)
-#: rc.cpp:11 rc.cpp:45
+#: rc.cpp:11 rc.cpp:50
 msgid "Prefer"
 msgstr "Pus rade"
 
 #. i18n: file: backendselection.ui:71
 #. i18n: ectx: property (text), widget (QToolButton, m_down)
-#. i18n: file: devicepreference.ui:213
+#. i18n: file: devicepreference.ui:219
 #. i18n: ectx: property (text), widget (QToolButton, deferButton)
-#: rc.cpp:14 rc.cpp:51
+#: rc.cpp:14 rc.cpp:56
 msgid "Defer"
 msgstr "Moens rade"
 
-#. i18n: file: devicepreference.ui:28
+#. i18n: file: devicepreference.ui:29
 #. i18n: ectx: property (toolTip), widget (QTreeView, categoryTree)
-#. i18n: file: devicepreference.ui:31
+#. i18n: file: devicepreference.ui:32
 #. i18n: ectx: property (whatsThis), widget (QTreeView, categoryTree)
 #: rc.cpp:17 rc.cpp:20
 msgid ""
-"Various categories of outputs.  For each category you may choose what device "
-"you wish to output to."
+"Various categories of media use cases.  For each category, you may choose "
+"what device you prefer to be used by the Phonon applications."
 msgstr ""
 
-#. i18n: file: devicepreference.ui:46
+#. i18n: file: devicepreference.ui:47
 #. i18n: ectx: property (text), widget (QCheckBox, showCheckBox)
 #: rc.cpp:23
 msgid "Show advanced devices"
 msgstr "Mostrer spepieus éndjins"
 
-#. i18n: file: devicepreference.ui:76
+#. i18n: file: devicepreference.ui:77
+#. i18n: ectx: property (toolTip), widget (QPushButton, applyPreferencesButton)
+#. i18n: file: devicepreference.ui:80
+#. i18n: ectx: property (whatsThis), widget (QPushButton, applyPreferencesButton)
+#: rc.cpp:26 rc.cpp:29
+#, fuzzy
+#| msgid ""
+#| "Apply the currently shown device preference list to the following other "
+#| "audio output categories:"
+msgid "Use the currently shown device list for more categories."
+msgstr ""
+"Mete en ouve l' djivêye des preferinces di l' éndjin mostrêye pol moumint po "
+"ls ôtès categoreyes d' rexhowe di son ki shuvèt:"
+
+#. i18n: file: devicepreference.ui:83
 #. i18n: ectx: property (text), widget (QPushButton, applyPreferencesButton)
-#: rc.cpp:26
+#: rc.cpp:32
 msgid "Apply Device List To..."
 msgstr "Mete en ouve l' djivêye des éndjins po..."
 
-#. i18n: file: devicepreference.ui:106
+#. i18n: file: devicepreference.ui:113
 #. i18n: ectx: property (toolTip), widget (QTreeView, deviceList)
-#: rc.cpp:29
+#: rc.cpp:35
 msgid ""
-"Audio Outputs found on your system.  Choose the device that you wish sound "
-"to come out of."
+"Devices found on your system, suitable for the selected category.  Choose "
+"the device that you wish to be used by the applications."
 msgstr ""
 
-#. i18n: file: devicepreference.ui:110
+#. i18n: file: devicepreference.ui:116
 #. i18n: ectx: property (whatsThis), widget (QTreeView, deviceList)
-#: rc.cpp:32
+#: rc.cpp:38
 msgid ""
-"The order determines the preference of the output devices. If for some "
-"reason the first device cannot be used Phonon will try to use the second, "
-"and\n"
-"so on."
+"The order determines the preference of the devices. If for some reason the "
+"first device cannot be used Phonon will try to use the second, and so on."
 msgstr ""
 
-#. i18n: file: devicepreference.ui:155
+#. i18n: file: devicepreference.ui:161
 #. i18n: ectx: property (text), widget (QToolButton, removeButton)
-#: rc.cpp:36
+#: rc.cpp:41
 msgid "Remove"
 msgstr "Oister"
 
-#. i18n: file: devicepreference.ui:178
+#. i18n: file: devicepreference.ui:184
 #. i18n: ectx: property (text), widget (QToolButton, testPlaybackButton)
-#: rc.cpp:39
+#: rc.cpp:44
 msgid "Test"
 msgstr "Sayî"
 
-#. i18n: file: devicepreference.ui:194
+#. i18n: file: devicepreference.ui:200
 #. i18n: ectx: property (toolTip), widget (QToolButton, preferButton)
-#: rc.cpp:42
+#: rc.cpp:47
 msgid "prefer the selected device"
 msgstr "pus rade l' éndjin tchoezi"
 
-#. i18n: file: devicepreference.ui:210
+#. i18n: file: devicepreference.ui:216
 #. i18n: ectx: property (toolTip), widget (QToolButton, deferButton)
-#: rc.cpp:48
+#: rc.cpp:53
 msgid "no preference for the selected device"
 msgstr "pont d' preferince po l' éndjin tchoezi"
 
 #. i18n: file: speakersetup.ui:18
 #. i18n: ectx: property (title), widget (QGroupBox, hardwareGroupBox)
-#: rc.cpp:54
+#: rc.cpp:59
 msgid "Hardware"
 msgstr ""
 
 #. i18n: file: speakersetup.ui:44
 #. i18n: ectx: property (text), widget (QLabel, profileLabel)
-#: rc.cpp:57
+#: rc.cpp:62
 #, fuzzy
 #| msgid "Prefer"
 msgid "Profile"
@@ -290,13 +317,13 @@ msgstr "Pus rade"
 
 #. i18n: file: speakersetup.ui:54
 #. i18n: ectx: property (text), widget (QLabel, cardLabel)
-#: rc.cpp:60
+#: rc.cpp:65
 msgid "Sound Card"
 msgstr ""
 
 #. i18n: file: speakersetup.ui:67
 #. i18n: ectx: property (title), widget (QGroupBox, outputGroupBox)
-#: rc.cpp:63
+#: rc.cpp:68
 #, fuzzy
 #| msgid "Audio Output"
 msgid "Output"
@@ -304,13 +331,13 @@ msgstr "Rexhowe do son"
 
 #. i18n: file: speakersetup.ui:83
 #. i18n: ectx: property (text), widget (QLabel, portLabel)
-#: rc.cpp:66
+#: rc.cpp:71
 msgid "Connector"
 msgstr ""
 
 #. i18n: file: speakersetup.ui:103
 #. i18n: ectx: property (text), widget (QLabel, sinkLabel)
-#: rc.cpp:69
+#: rc.cpp:74
 #, fuzzy
 #| msgid "Audio Output"
 msgid "Sound Output"
@@ -318,6 +345,9 @@ msgstr "Rexhowe do son"
 
 #. i18n: file: speakersetup.ui:122
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:72
+#: rc.cpp:77
 msgid "Speaker Placement and Testing"
 msgstr ""
+
+#~ msgid "Play a test sound on the selected device"
+#~ msgstr "Djouwer on son d' asprouvaedje so l' éndjin tchoezi"
