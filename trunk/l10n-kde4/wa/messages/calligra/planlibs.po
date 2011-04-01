@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-03-10 03:12+0100\n"
+"POT-Creation-Date: 2011-04-01 03:26+0200\n"
 "PO-Revision-Date: 2009-08-20 10:18+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -224,7 +224,6 @@ msgstr "Djournå d' programaedje"
 #: models/kptresourceallocationmodel.cpp:743 models/kptresourcemodel.cpp:197
 #: models/kptresourcemodel.cpp:229 models/kptresourcemodel.cpp:350
 #: models/kptresourcemodel.cpp:354 models/kptresourcemodel.cpp:363
-#: models/kptschedulemodel.cpp:481 models/kptschedulemodel.cpp:483
 #: models/kpttreecombobox.cpp:124 models/kptnodeitemmodel.cpp:376
 #: models/kptnodeitemmodel.cpp:387 models/kptnodeitemmodel.cpp:392
 #: models/kptnodeitemmodel.cpp:402 models/kptnodeitemmodel.cpp:578
@@ -232,6 +231,7 @@ msgstr "Djournå d' programaedje"
 #: models/kptnodeitemmodel.cpp:612 models/kptnodeitemmodel.cpp:619
 #: models/kptnodeitemmodel.cpp:629 models/kptnodeitemmodel.cpp:664
 #: models/kptnodeitemmodel.cpp:670 models/kptnodeitemmodel.cpp:680
+#: models/kptschedulemodel.cpp:481 models/kptschedulemodel.cpp:483
 #: ui/kptpertresult.cpp:138 ui/kptpertresult.cpp:489
 #: ui/kptresourcedialog.cpp:266 ui/kptresourcedialog.cpp:292
 #: ui/kpttaskcostpanel.cpp:50 ui/kpttaskgeneralpanel.cpp:74 rc.cpp:536
@@ -240,8 +240,8 @@ msgstr "Nouk"
 
 #. i18n: file: ui/kptscheduleeditor.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, projectGroupBox)
-#: kernel/kptnode.cpp:137 models/kptpertcpmmodel.cpp:425
-#: models/kptresourceappointmentsmodel.cpp:1271 rc.cpp:328
+#: kernel/kptnode.cpp:137 models/kptresourceappointmentsmodel.cpp:1271
+#: models/kptpertcpmmodel.cpp:425 rc.cpp:328
 msgid "Project"
 msgstr "Pordjet"
 
@@ -769,10 +769,10 @@ msgstr "Difacer conte"
 #. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
 #: models/kptaccountsmodel.cpp:131 models/kptaccountsmodel.cpp:1037
 #: models/kptresourceallocationmodel.cpp:332 models/kptresourcemodel.cpp:433
-#: models/kptschedulemodel.cpp:759 models/kptschedulemodel.cpp:1017
 #: models/kptcalendarmodel.cpp:424 models/kptresourceappointmentsmodel.cpp:908
 #: models/kptresourceappointmentsmodel.cpp:923
-#: models/kptresourceappointmentsmodel.cpp:1519 rc.cpp:316
+#: models/kptresourceappointmentsmodel.cpp:1519
+#: models/kptschedulemodel.cpp:759 models/kptschedulemodel.cpp:1017 rc.cpp:316
 msgid "Name"
 msgstr "No"
 
@@ -816,52 +816,23 @@ msgstr "Totå"
 msgid "The total cost for the account shown as: Actual cost [ Planned cost ]"
 msgstr ""
 
-#: models/kptdocumentmodel.cpp:171
-msgid "Url"
-msgstr "Url"
-
-#. i18n: file: ui/kptresourceassignmentview.ui:32
-#. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
-#: models/kptdocumentmodel.cpp:172 models/kptrelationmodel.cpp:148
-#: models/kptresourceallocationmodel.cpp:333 models/kptresourcemodel.cpp:434
-#: models/kptresourceappointmentsmodel.cpp:1520 rc.cpp:319
-msgid "Type"
-msgstr "Sôre"
-
-#: models/kptdocumentmodel.cpp:173
-#, fuzzy
-msgid "Status"
-msgstr "Enondaedje"
-
-#: models/kptdocumentmodel.cpp:174
-msgid "Send As"
-msgstr ""
-
 #: models/kptflatproxymodel.cpp:273 models/kptrelationmodel.cpp:146
 #, fuzzy
 msgid "Parent"
 msgstr "Pordjet"
 
-#: models/kptpertcpmmodel.cpp:151
-msgid "Path"
-msgstr "Tchimin"
-
-#: models/kptpertcpmmodel.cpp:430 ui/kptscheduleeditor.cpp:682
-msgid "Critical Path"
-msgstr "Tchimin critike"
-
-#: models/kptpertcpmmodel.cpp:450
-#, fuzzy
-msgid "Critical"
-msgstr "Tchimin critike"
-
-#: models/kptpertcpmmodel.cpp:454
-msgid "Non-critical"
-msgstr ""
-
 #: models/kptrelationmodel.cpp:147
 msgid "Child"
 msgstr "Efant"
+
+#. i18n: file: ui/kptresourceassignmentview.ui:32
+#. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
+#: models/kptrelationmodel.cpp:148 models/kptresourceallocationmodel.cpp:333
+#: models/kptresourcemodel.cpp:434
+#: models/kptresourceappointmentsmodel.cpp:1520
+#: models/kptdocumentmodel.cpp:172 rc.cpp:319
+msgid "Type"
+msgstr "Sôre"
 
 #: models/kptrelationmodel.cpp:149
 msgid "Lag"
@@ -1108,182 +1079,6 @@ msgstr "Radjouter groupe di rsource..."
 msgid "Add resource"
 msgstr "Radjouter rissource..."
 
-#: models/kptschedulemodel.cpp:374
-#, fuzzy
-msgid "Modify schedule name"
-msgstr "Candjî calindrî"
-
-#: models/kptschedulemodel.cpp:441 models/kptschedulemodel.cpp:443
-msgid "Allow"
-msgstr "Permete"
-
-#: models/kptschedulemodel.cpp:441 models/kptschedulemodel.cpp:443
-msgid "Avoid"
-msgstr ""
-
-#: models/kptschedulemodel.cpp:463
-msgid "Modify allow overbooking"
-msgstr ""
-
-#: models/kptschedulemodel.cpp:481 models/kptschedulemodel.cpp:483
-msgid "PERT"
-msgstr "PERT"
-
-#: models/kptschedulemodel.cpp:503
-#, fuzzy
-msgid "Modify scheduling distribution"
-msgstr "Candjî completaedje del bouye"
-
-#: models/kptschedulemodel.cpp:521 models/kptschedulemodel.cpp:523
-msgid "All"
-msgstr "Totafwait"
-
-#: models/kptschedulemodel.cpp:521 models/kptschedulemodel.cpp:523
-msgid "Expected only"
-msgstr ""
-
-#: models/kptschedulemodel.cpp:607 models/kptschedulemodel.cpp:609
-msgid "Backwards"
-msgstr ""
-
-#: models/kptschedulemodel.cpp:607 models/kptschedulemodel.cpp:609
-msgid "Forward"
-msgstr "En avant"
-
-#: models/kptschedulemodel.cpp:629
-#, fuzzy
-msgid "Modify scheduling direction"
-msgstr "Candjî completaedje del bouye"
-
-#: models/kptschedulemodel.cpp:647
-#, fuzzy
-#| msgid "Unknown"
-msgid "Unknown"
-msgstr "Nén cnoxhou"
-
-#: models/kptschedulemodel.cpp:669
-#, fuzzy
-#| msgid "Not scheduled"
-msgid "Modify scheduler"
-msgstr "Nén programé"
-
-#: models/kptschedulemodel.cpp:760
-#, fuzzy
-msgid "State"
-msgstr "Ataké"
-
-#: models/kptschedulemodel.cpp:761
-#, fuzzy
-msgid "Direction"
-msgstr "Durêye"
-
-#: models/kptschedulemodel.cpp:762
-msgid "Overbooking"
-msgstr "Forrezervaedje"
-
-#: models/kptschedulemodel.cpp:763
-#, fuzzy
-msgid "Distribution"
-msgstr "Discrijhaedje"
-
-#: models/kptschedulemodel.cpp:765
-#, fuzzy
-msgid "Planned Start"
-msgstr "Efoirt planifyî"
-
-#: models/kptschedulemodel.cpp:766
-msgid "Planned Finish"
-msgstr ""
-
-#: models/kptschedulemodel.cpp:767
-#, fuzzy
-msgid "Scheduler"
-msgstr "Programaedje:"
-
-#: models/kptschedulemodel.cpp:1017
-#, fuzzy
-msgid "Phase"
-msgstr "Pådje:"
-
-#: models/kptschedulemodel.cpp:1017
-msgid "Severity"
-msgstr "Severité"
-
-#: models/kptschedulemodel.cpp:1017
-msgid "Message"
-msgstr "Messaedje"
-
-#: models/kpttaskstatusmodel.cpp:50 ui/kptresourceassignmentview.cpp:255
-#: ui/kptresourceassignmentview.cpp:333
-msgid "Not Started"
-msgstr "Nén co ataké"
-
-#: models/kpttaskstatusmodel.cpp:51
-msgid "Tasks that should have been started"
-msgstr ""
-
-#. i18n: file: ui/kpttaskcostpanelbase.ui:24
-#. i18n: ectx: property (title), widget (QGroupBox, runningGroup)
-#: models/kpttaskstatusmodel.cpp:54 models/kptnodeitemmodel.cpp:1216
-#: rc.cpp:404
-msgid "Running"
-msgstr "En alaedje"
-
-#: models/kpttaskstatusmodel.cpp:55
-msgid "Tasks that are running"
-msgstr ""
-
-#. i18n: file: ui/kptmilestoneprogresspanelbase.ui:23
-#. i18n: ectx: property (text), widget (QCheckBox, finished)
-#: models/kpttaskstatusmodel.cpp:58 models/kptnodeitemmodel.cpp:1213
-#: ui/kptresourceassignmentview.cpp:257 ui/kptresourceassignmentview.cpp:335
-#: rc.cpp:193
-msgid "Finished"
-msgstr "Fini"
-
-#: models/kpttaskstatusmodel.cpp:59
-msgid "Tasks that have finished during this period"
-msgstr ""
-
-#: models/kpttaskstatusmodel.cpp:62
-msgid "Next Period"
-msgstr ""
-
-#: models/kpttaskstatusmodel.cpp:63
-msgid "Tasks that are scheduled to start next period"
-msgstr ""
-
-#: models/kpttaskstatusmodel.cpp:383 models/kptnodeitemmodel.cpp:2996
-#, fuzzy, no-c-format
-#| msgid "Modify task completion"
-msgid "Modify completion"
-msgstr "Candjî completaedje del bouye"
-
-#: models/kpttaskstatusmodel.cpp:412 models/kptnodeitemmodel.cpp:3025
-#, fuzzy
-msgid "Set finished"
-msgstr "Fini"
-
-#: models/kpttaskstatusmodel.cpp:433 models/kptnodeitemmodel.cpp:3046
-#, fuzzy
-msgid "Modify remaining effort"
-msgstr "Efoirt ki dmeure"
-
-#: models/kpttaskstatusmodel.cpp:446 models/kptnodeitemmodel.cpp:3059
-#, fuzzy
-msgid "Modify actual effort"
-msgstr "Candjî costindje del bouye"
-
-#: models/kpttaskstatusmodel.cpp:460 models/kptnodeitemmodel.cpp:3073
-#, fuzzy
-msgid "Modify actual start time"
-msgstr "Candjî standårdès eures ovråves"
-
-#: models/kpttaskstatusmodel.cpp:488 models/kptnodeitemmodel.cpp:3101
-#, fuzzy
-msgid "Modify actual finish time"
-msgstr "Candjî standårdès eures ovråves"
-
 #: models/kptworkpackagemodel.cpp:76
 #, kde-format
 msgid "Sent to %1 at %2"
@@ -1516,6 +1311,21 @@ msgstr "Fini"
 #, fuzzy
 msgid "Finished early"
 msgstr "Fini"
+
+#. i18n: file: ui/kptmilestoneprogresspanelbase.ui:23
+#. i18n: ectx: property (text), widget (QCheckBox, finished)
+#: models/kptnodeitemmodel.cpp:1213 models/kpttaskstatusmodel.cpp:58
+#: ui/kptresourceassignmentview.cpp:257 ui/kptresourceassignmentview.cpp:335
+#: rc.cpp:193
+msgid "Finished"
+msgstr "Fini"
+
+#. i18n: file: ui/kpttaskcostpanelbase.ui:24
+#. i18n: ectx: property (title), widget (QGroupBox, runningGroup)
+#: models/kptnodeitemmodel.cpp:1216 models/kpttaskstatusmodel.cpp:54
+#: rc.cpp:404
+msgid "Running"
+msgstr "En alaedje"
 
 #: models/kptnodeitemmodel.cpp:1220
 #, fuzzy
@@ -2249,6 +2059,37 @@ msgstr "Candjî documints"
 #, fuzzy
 msgid "Modify shutdown cost"
 msgstr "Candjî costindje del bouye"
+
+#: models/kptnodeitemmodel.cpp:2996 models/kpttaskstatusmodel.cpp:383
+#, fuzzy, no-c-format
+#| msgid "Modify task completion"
+msgid "Modify completion"
+msgstr "Candjî completaedje del bouye"
+
+#: models/kptnodeitemmodel.cpp:3025 models/kpttaskstatusmodel.cpp:412
+#, fuzzy
+msgid "Set finished"
+msgstr "Fini"
+
+#: models/kptnodeitemmodel.cpp:3046 models/kpttaskstatusmodel.cpp:433
+#, fuzzy
+msgid "Modify remaining effort"
+msgstr "Efoirt ki dmeure"
+
+#: models/kptnodeitemmodel.cpp:3059 models/kpttaskstatusmodel.cpp:446
+#, fuzzy
+msgid "Modify actual effort"
+msgstr "Candjî costindje del bouye"
+
+#: models/kptnodeitemmodel.cpp:3073 models/kpttaskstatusmodel.cpp:460
+#, fuzzy
+msgid "Modify actual start time"
+msgstr "Candjî standårdès eures ovråves"
+
+#: models/kptnodeitemmodel.cpp:3101 models/kpttaskstatusmodel.cpp:488
+#, fuzzy
+msgid "Modify actual finish time"
+msgstr "Candjî standårdès eures ovråves"
 
 #: models/kptnodeitemmodel.cpp:3408 models/kptnodeitemmodel.cpp:4624
 msgid "Move tasks"
@@ -3104,6 +2945,166 @@ msgstr ""
 msgctxt "@title:column noun"
 msgid "Load"
 msgstr "Tcherdjî"
+
+#: models/kptdocumentmodel.cpp:171
+msgid "Url"
+msgstr "Url"
+
+#: models/kptdocumentmodel.cpp:173
+#, fuzzy
+msgid "Status"
+msgstr "Enondaedje"
+
+#: models/kptdocumentmodel.cpp:174
+msgid "Send As"
+msgstr ""
+
+#: models/kptpertcpmmodel.cpp:151
+msgid "Path"
+msgstr "Tchimin"
+
+#: models/kptpertcpmmodel.cpp:430 ui/kptscheduleeditor.cpp:682
+msgid "Critical Path"
+msgstr "Tchimin critike"
+
+#: models/kptpertcpmmodel.cpp:450
+#, fuzzy
+msgid "Critical"
+msgstr "Tchimin critike"
+
+#: models/kptpertcpmmodel.cpp:454
+msgid "Non-critical"
+msgstr ""
+
+#: models/kptschedulemodel.cpp:374
+#, fuzzy
+msgid "Modify schedule name"
+msgstr "Candjî calindrî"
+
+#: models/kptschedulemodel.cpp:441 models/kptschedulemodel.cpp:443
+msgid "Allow"
+msgstr "Permete"
+
+#: models/kptschedulemodel.cpp:441 models/kptschedulemodel.cpp:443
+msgid "Avoid"
+msgstr ""
+
+#: models/kptschedulemodel.cpp:463
+msgid "Modify allow overbooking"
+msgstr ""
+
+#: models/kptschedulemodel.cpp:481 models/kptschedulemodel.cpp:483
+msgid "PERT"
+msgstr "PERT"
+
+#: models/kptschedulemodel.cpp:503
+#, fuzzy
+msgid "Modify scheduling distribution"
+msgstr "Candjî completaedje del bouye"
+
+#: models/kptschedulemodel.cpp:521 models/kptschedulemodel.cpp:523
+msgid "All"
+msgstr "Totafwait"
+
+#: models/kptschedulemodel.cpp:521 models/kptschedulemodel.cpp:523
+msgid "Expected only"
+msgstr ""
+
+#: models/kptschedulemodel.cpp:607 models/kptschedulemodel.cpp:609
+msgid "Backwards"
+msgstr ""
+
+#: models/kptschedulemodel.cpp:607 models/kptschedulemodel.cpp:609
+msgid "Forward"
+msgstr "En avant"
+
+#: models/kptschedulemodel.cpp:629
+#, fuzzy
+msgid "Modify scheduling direction"
+msgstr "Candjî completaedje del bouye"
+
+#: models/kptschedulemodel.cpp:647
+#, fuzzy
+#| msgid "Unknown"
+msgid "Unknown"
+msgstr "Nén cnoxhou"
+
+#: models/kptschedulemodel.cpp:669
+#, fuzzy
+#| msgid "Not scheduled"
+msgid "Modify scheduler"
+msgstr "Nén programé"
+
+#: models/kptschedulemodel.cpp:760
+#, fuzzy
+msgid "State"
+msgstr "Ataké"
+
+#: models/kptschedulemodel.cpp:761
+#, fuzzy
+msgid "Direction"
+msgstr "Durêye"
+
+#: models/kptschedulemodel.cpp:762
+msgid "Overbooking"
+msgstr "Forrezervaedje"
+
+#: models/kptschedulemodel.cpp:763
+#, fuzzy
+msgid "Distribution"
+msgstr "Discrijhaedje"
+
+#: models/kptschedulemodel.cpp:765
+#, fuzzy
+msgid "Planned Start"
+msgstr "Efoirt planifyî"
+
+#: models/kptschedulemodel.cpp:766
+msgid "Planned Finish"
+msgstr ""
+
+#: models/kptschedulemodel.cpp:767
+#, fuzzy
+msgid "Scheduler"
+msgstr "Programaedje:"
+
+#: models/kptschedulemodel.cpp:1017
+#, fuzzy
+msgid "Phase"
+msgstr "Pådje:"
+
+#: models/kptschedulemodel.cpp:1017
+msgid "Severity"
+msgstr "Severité"
+
+#: models/kptschedulemodel.cpp:1017
+msgid "Message"
+msgstr "Messaedje"
+
+#: models/kpttaskstatusmodel.cpp:50 ui/kptresourceassignmentview.cpp:255
+#: ui/kptresourceassignmentview.cpp:333
+msgid "Not Started"
+msgstr "Nén co ataké"
+
+#: models/kpttaskstatusmodel.cpp:51
+msgid "Tasks that should have been started"
+msgstr ""
+
+#: models/kpttaskstatusmodel.cpp:55
+msgid "Tasks that are running"
+msgstr ""
+
+#: models/kpttaskstatusmodel.cpp:59
+msgid "Tasks that have finished during this period"
+msgstr ""
+
+#: models/kpttaskstatusmodel.cpp:62
+msgid "Next Period"
+msgstr ""
+
+#: models/kpttaskstatusmodel.cpp:63
+msgid "Tasks that are scheduled to start next period"
+msgstr ""
 
 #: ui/kptaccountseditor.cpp:227
 msgid "Add Account"
