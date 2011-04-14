@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwordmswordfilter\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-04-12 03:42+0200\n"
+"POT-Creation-Date: 2011-04-14 03:32+0200\n"
 "PO-Revision-Date: 2010-12-04 13:34+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -143,13 +143,13 @@ msgstr "Dji n' sai trover l' pårteye pol sôre %1"
 #: kpresenter/pptx/PptxXmlDocumentReader.cpp:152
 #: kpresenter/pptx/PptxXmlSlideReader.cpp:305
 #: libmsooxml/MsooXmlDocPropertiesReader.cpp:75
-#: libmsooxml/MsooXmlReader.cpp:182 libmsooxml/MsooXmlThemesReader.cpp:357
+#: libmsooxml/MsooXmlThemesReader.cpp:357 libmsooxml/MsooXmlReader.cpp:184
+#: tables/xlsx/XlsxXmlStylesReader.cpp:453
 #: tables/xlsx/XlsxXmlCommentsReader.cpp:108
-#: tables/xlsx/XlsxXmlSharedStringsReader.cpp:113
 #: tables/xlsx/XlsxXmlDocumentReader.cpp:130
 #: tables/xlsx/XlsxXmlTableReader.cpp:78
-#: tables/xlsx/XlsxXmlStylesReader.cpp:453
-#: tables/xlsx/XlsxXmlWorksheetReader.cpp:247
+#: tables/xlsx/XlsxXmlSharedStringsReader.cpp:113
+#: tables/xlsx/XlsxXmlWorksheetReader.cpp:268
 #: words/docx/DocxXmlFontTableReader.cpp:89
 #: words/docx/DocxXmlNotesReader.cpp:94
 #: words/docx/DocxXmlNumberingReader.cpp:89
@@ -224,46 +224,6 @@ msgstr ""
 msgid "Could not find path for type %1"
 msgstr "Dji n' a savou trover l' tchimin pol sôre %1"
 
-#: libmsooxml/MsooXmlReader.cpp:146
-#, kde-format
-msgid "%1 (line %2, column %3)"
-msgstr "%1 (roye %2, colone %3)"
-
-#: libmsooxml/MsooXmlReader.cpp:148
-#, kde-format
-msgid "%1 (%2, line %3, column %4)"
-msgstr "%1 (%2, roye %3, colone %4)"
-
-#: libmsooxml/MsooXmlReader.cpp:172
-#, kde-format
-msgid "Element \"%1\" not found"
-msgstr "Elemint « %1 » nén trové"
-
-#: libmsooxml/MsooXmlReader.cpp:177
-#, kde-format
-msgid "Attribute \"%1\" not found"
-msgstr "Atribut « %1 » nén trové"
-
-#: libmsooxml/MsooXmlReader.cpp:187
-#, kde-format
-msgid "Unexpected value \"%1\" of attribute \"%2\""
-msgstr "Valixhance « %1 » di l' atribut « %2 » nén ratindowe"
-
-#: libmsooxml/MsooXmlReader.cpp:192
-#, kde-format
-msgid "Unexpected second occurrence of \"%1\" element"
-msgstr "Deujhinme ocurince di l' elemint « %1 » nén ratindowe"
-
-#: libmsooxml/MsooXmlReader.cpp:209 libmsooxml/MsooXmlReader.cpp:260
-#, kde-format
-msgid "Expected closing of element \"%1\""
-msgstr "Cloyaedje di l' elemint « %1 » ratindou"
-
-#: libmsooxml/MsooXmlReader.cpp:251
-#, kde-format
-msgid "None of expected elements found: %1"
-msgstr "Nouk des elemints ratindous di trové : %1"
-
 #: libmsooxml/MsooXmlRelationships.cpp:83
 #, kde-format
 msgid "Could not find target for id \"%1\" in file \"%2\""
@@ -314,6 +274,46 @@ msgstr "Dji n' a savou drovi l' intrêye « %1 » po scrire."
 #: libmsooxml/MsooXmlUtils.cpp:407
 msgid "Could not write block"
 msgstr "Dji n' a savou scrire di blok"
+
+#: libmsooxml/MsooXmlReader.cpp:146
+#, kde-format
+msgid "%1 (line %2, column %3)"
+msgstr "%1 (roye %2, colone %3)"
+
+#: libmsooxml/MsooXmlReader.cpp:148
+#, kde-format
+msgid "%1 (%2, line %3, column %4)"
+msgstr "%1 (%2, roye %3, colone %4)"
+
+#: libmsooxml/MsooXmlReader.cpp:174
+#, kde-format
+msgid "Element \"%1\" not found"
+msgstr "Elemint « %1 » nén trové"
+
+#: libmsooxml/MsooXmlReader.cpp:179
+#, kde-format
+msgid "Attribute \"%1\" not found"
+msgstr "Atribut « %1 » nén trové"
+
+#: libmsooxml/MsooXmlReader.cpp:189
+#, kde-format
+msgid "Unexpected value \"%1\" of attribute \"%2\""
+msgstr "Valixhance « %1 » di l' atribut « %2 » nén ratindowe"
+
+#: libmsooxml/MsooXmlReader.cpp:194
+#, kde-format
+msgid "Unexpected second occurrence of \"%1\" element"
+msgstr "Deujhinme ocurince di l' elemint « %1 » nén ratindowe"
+
+#: libmsooxml/MsooXmlReader.cpp:211 libmsooxml/MsooXmlReader.cpp:262
+#, kde-format
+msgid "Expected closing of element \"%1\""
+msgstr "Cloyaedje di l' elemint « %1 » ratindou"
+
+#: libmsooxml/MsooXmlReader.cpp:253
+#, kde-format
+msgid "None of expected elements found: %1"
+msgstr "Nouk des elemints ratindous di trové : %1"
 
 #: tables/csv/csvdialog.cpp:61
 msgid "Import"
@@ -466,28 +466,28 @@ msgstr ""
 "Dji n' sai drovi les fitchîs waerantis pas on scret.\n"
 "L' algorite di scret n' a nén stî publiyî"
 
-#: tables/xlsx/XlsxXmlSharedStringsReader.cpp:180
-#, kde-format
-msgid "Declared number of shared strings too small (%1)"
-msgstr "Li nombe declaré ou les tchinnes pårtaedjeyes sont trop ptits (%1)"
-
-#: tables/xlsx/XlsxXmlStylesReader.cpp:543
+#: tables/xlsx/XlsxXmlStylesReader.cpp:544
 #, kde-format
 msgid "Declared number of font styles too small (%1)"
 msgstr "Li nombe declaré ou les stîles des fontes sont trop ptits (%1)"
 
-#: tables/xlsx/XlsxXmlStylesReader.cpp:891
+#: tables/xlsx/XlsxXmlStylesReader.cpp:893
 #, kde-format
 msgid "Declared number of cell formats too small (%1)"
 msgstr "Li nombe declaré ou ls abwesnaedjes des boesses sont trop ptits (%1)"
 
-#: tables/xlsx/XlsxXmlStylesReader.cpp:1013
-#: tables/xlsx/XlsxXmlStylesReader.cpp:1358
+#: tables/xlsx/XlsxXmlStylesReader.cpp:1016
+#: tables/xlsx/XlsxXmlStylesReader.cpp:1362
 #, kde-format
 msgid "Declared number of fill styles too small (%1)"
 msgstr "Li nombe declaré ou les stîles di rimplixhaedje sont trop ptits (%1)"
 
-#: tables/xlsx/XlsxXmlWorksheetReader.cpp:262
+#: tables/xlsx/XlsxXmlSharedStringsReader.cpp:181
+#, kde-format
+msgid "Declared number of shared strings too small (%1)"
+msgstr "Li nombe declaré ou les tchinnes pårtaedjeyes sont trop ptits (%1)"
+
+#: tables/xlsx/XlsxXmlWorksheetReader.cpp:283
 msgid ""
 "The data could not be loaded completely because the maximum size of sheet "
 "was exceeded."
@@ -495,7 +495,7 @@ msgstr ""
 "Dji n' a savou tcherdjî ttafwait les dnêyes a cåze kel grandeu macsimom del "
 "foye esteut houte."
 
-#: tables/xlsx/XlsxXmlWorksheetReader.cpp:1105
+#: tables/xlsx/XlsxXmlWorksheetReader.cpp:1220
 msgid "Expected integer or floating point number"
 msgstr "Dji ratindeu on nombe etir ou avou flotant coma"
 
