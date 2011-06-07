@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-06 04:17+0200\n"
+"POT-Creation-Date: 2011-06-07 04:35+0200\n"
 "PO-Revision-Date: 2011-01-17 21:58+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -53,13 +53,13 @@ msgctxt "@title:window"
 msgid "Add Bookmarks"
 msgstr "Radjouter ene rimåke"
 
-#: bookmarks/kbookmarkdialog.cc:132 ../kfile/kdirselectdialog.cpp:278
+#: bookmarks/kbookmarkdialog.cc:132 ../kfile/kdirselectdialog.cpp:281
 msgctxt "@title:window"
 msgid "Select Folder"
 msgstr "Tchoezi ridant"
 
-#: bookmarks/kbookmarkdialog.cc:159 ../kfile/kdirselectdialog.cpp:132
-#: ../kfile/knewfilemenu.cpp:1015
+#: bookmarks/kbookmarkdialog.cc:159 ../kfile/knewfilemenu.cpp:1015
+#: ../kfile/kdirselectdialog.cpp:135
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "Novea ridant"
@@ -6149,62 +6149,6 @@ msgstr "kio_metainfo"
 msgid "No metainfo for %1"
 msgstr "Nole meta-infôrmåcion po %1"
 
-#: ../kfile/kdirselectdialog.cpp:128
-msgctxt "folder name"
-msgid "New Folder"
-msgstr "Novea ridant"
-
-#: ../kfile/kdirselectdialog.cpp:133
-#, kde-format
-msgctxt "@label:textbox"
-msgid ""
-"Create new folder in:\n"
-"%1"
-msgstr ""
-"Fé on novea ridant dins:\n"
-"%1"
-
-#: ../kfile/kdirselectdialog.cpp:156 ../kfile/kdiroperator.cpp:766
-#, kde-format
-msgid "A file or folder named %1 already exists."
-msgstr "On fitchî ou on ridant.lomé %1 egzistêye dedja."
-
-#: ../kfile/kdirselectdialog.cpp:160 ../kfile/kdiroperator.cpp:768
-msgid "You do not have permission to create that folder."
-msgstr "Vos n' avoz nén les bons droets po fé ci ridant la."
-
-#: ../kfile/kdirselectdialog.cpp:280
-msgctxt "@action:button"
-msgid "New Folder..."
-msgstr "Novea ridant..."
-
-#: ../kfile/kdirselectdialog.cpp:321
-msgctxt "@action:inmenu"
-msgid "New Folder..."
-msgstr "Novea ridant..."
-
-#: ../kfile/kdirselectdialog.cpp:328
-#, fuzzy
-#| msgid "Move to Trash"
-msgctxt "@action:inmenu"
-msgid "Move to Trash"
-msgstr "Taper å batch"
-
-#: ../kfile/kdirselectdialog.cpp:335
-msgctxt "@action:inmenu"
-msgid "Delete"
-msgstr "Disfacer"
-
-#: ../kfile/kdirselectdialog.cpp:344
-msgctxt "@option:check"
-msgid "Show Hidden Folders"
-msgstr "Mostrer fitchîs catchîs"
-
-#: ../kfile/kdirselectdialog.cpp:351
-msgctxt "@action:inmenu"
-msgid "Properties"
-msgstr "Prôpietés"
-
 #: ../kfile/kfileplaceeditdialog.cpp:90
 #, fuzzy
 #| msgid "Edit Places Entry"
@@ -6322,10 +6266,6 @@ msgid "Do you really want to empty the Trash? All items will be deleted."
 msgstr ""
 "Voloz vs po do bon vudî l' batch? Tos les cayets ki sont ddins seront "
 "disfacés."
-
-#: ../kfile/kfiletreeview.cpp:187
-msgid "Show Hidden Folders"
-msgstr "Mostrer ridants catchîs"
 
 #: ../kfile/kurlnavigatorprotocolcombo.cpp:168
 msgctxt "@item:inmenu"
@@ -6820,6 +6760,15 @@ msgstr ""
 "purnea des fitchîs.  Mins sinon, il ovrèt come des rmåkes ôte pårt dins KDE."
 "</qt>"
 
+#: ../kfile/kdiroperator.cpp:766 ../kfile/kdirselectdialog.cpp:159
+#, kde-format
+msgid "A file or folder named %1 already exists."
+msgstr "On fitchî ou on ridant.lomé %1 egzistêye dedja."
+
+#: ../kfile/kdiroperator.cpp:768 ../kfile/kdirselectdialog.cpp:163
+msgid "You do not have permission to create that folder."
+msgstr "Vos n' avoz nén les bons droets po fé ci ridant la."
+
 #: ../kfile/kdiroperator.cpp:783
 msgid "You did not select a file to delete."
 msgstr "Vos n' avoz pont tchoezi di fitchî a disfacer."
@@ -6985,6 +6934,57 @@ msgstr "Boesse di drovaedje des fitchîs"
 #: ../kfile/kdiroperator.cpp:1990
 msgid "&View"
 msgstr "&Vey"
+
+#: ../kfile/kdirselectdialog.cpp:131
+msgctxt "folder name"
+msgid "New Folder"
+msgstr "Novea ridant"
+
+#: ../kfile/kdirselectdialog.cpp:136
+#, kde-format
+msgctxt "@label:textbox"
+msgid ""
+"Create new folder in:\n"
+"%1"
+msgstr ""
+"Fé on novea ridant dins:\n"
+"%1"
+
+#: ../kfile/kdirselectdialog.cpp:283
+msgctxt "@action:button"
+msgid "New Folder..."
+msgstr "Novea ridant..."
+
+#: ../kfile/kdirselectdialog.cpp:324
+msgctxt "@action:inmenu"
+msgid "New Folder..."
+msgstr "Novea ridant..."
+
+#: ../kfile/kdirselectdialog.cpp:331
+#, fuzzy
+#| msgid "Move to Trash"
+msgctxt "@action:inmenu"
+msgid "Move to Trash"
+msgstr "Taper å batch"
+
+#: ../kfile/kdirselectdialog.cpp:338
+msgctxt "@action:inmenu"
+msgid "Delete"
+msgstr "Disfacer"
+
+#: ../kfile/kdirselectdialog.cpp:347
+msgctxt "@option:check"
+msgid "Show Hidden Folders"
+msgstr "Mostrer fitchîs catchîs"
+
+#: ../kfile/kdirselectdialog.cpp:354
+msgctxt "@action:inmenu"
+msgid "Properties"
+msgstr "Prôpietés"
+
+#: ../kfile/kfiletreeview.cpp:187
+msgid "Show Hidden Folders"
+msgstr "Mostrer ridants catchîs"
 
 #~ msgid "A newer item named '%1' already exists."
 #~ msgstr "I gn a ddja åk di pus noû lomé «%1»"
