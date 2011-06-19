@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-18 04:35+0200\n"
+"POT-Creation-Date: 2011-06-19 04:29+0200\n"
 "PO-Revision-Date: 2011-01-17 21:09+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -21,10 +21,6 @@ msgstr ""
 "X-Generator: Lokalize 1.0\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: flake/KoToolBase.cpp:173 flake/KoToolManager.cpp:352
-msgid "Tool Options"
-msgstr "Tchuzes des usteyes"
-
 #: flake/KPathShapeFactory.cpp:32
 msgid "Simple path shape"
 msgstr "Simpe cogne di tchmin"
@@ -33,14 +29,18 @@ msgstr "Simpe cogne di tchmin"
 msgid "A simple path shape"
 msgstr "Ene simpe cogne di tchmin"
 
-#: flake/KShapePaste.cpp:100
-msgid "Paste Shapes"
-msgstr "Aclaper cognes"
+#: flake/KToolBase.cpp:173 flake/KToolManager.cpp:352
+msgid "Tool Options"
+msgstr "Tchuzes des usteyes"
 
-#: flake/KoToolManager.cpp:351
+#: flake/KToolManager.cpp:351
 #, kde-format
 msgid "Active tool: %1"
 msgstr "Usteye en alaedje : %1"
+
+#: flake/KShapePaste.cpp:100
+msgid "Paste Shapes"
+msgstr "Aclaper cognes"
 
 #: flake/commands/KPathSegmentBreakCommand.cpp:40
 #, fuzzy
@@ -124,6 +124,12 @@ msgstr "Rélére cognes"
 msgid "Resize Shapes"
 msgstr "Candjî l' grandeu des cognes"
 
+#: flake/commands/KSubpathRemoveCommand.cpp:30
+#, fuzzy
+#| msgid "Remove subpath"
+msgid "Remove Subpath"
+msgstr "Oister tchimin efant"
+
 #: flake/commands/KParameterHandleMoveCommand.cpp:34
 #, fuzzy
 #| msgid "Change parameter"
@@ -167,13 +173,6 @@ msgstr "Rimaxhî des ponts"
 #: flake/commands/KPathPointMoveCommand.cpp:58
 msgid "Move points"
 msgstr "Bodjî ponts"
-
-#: flake/commands/KPathPointRemoveCommand.cpp:104
-#: flake/commands/KPathPointRemoveCommand.cpp:133
-#, fuzzy
-#| msgid "Remove points"
-msgid "Remove Points"
-msgstr "Oister ponts"
 
 #: flake/commands/KPathPointTypeCommand.cpp:46
 #, fuzzy
@@ -219,59 +218,44 @@ msgstr "Eclawer cognes"
 msgid "Set Shadow"
 msgstr "Defini ombion"
 
-#: flake/commands/KoShapeTransparencyCommand.cpp:49
-#: flake/commands/KoShapeTransparencyCommand.cpp:60
-#: flake/commands/KoShapeTransparencyCommand.cpp:73
+#: flake/commands/KPathPointRemoveCommand.cpp:104
+#: flake/commands/KPathPointRemoveCommand.cpp:133
+#, fuzzy
+#| msgid "Remove points"
+msgid "Remove Points"
+msgstr "Oister ponts"
+
+#: flake/commands/KShapeTransparencyCommand.cpp:49
+#: flake/commands/KShapeTransparencyCommand.cpp:60
+#: flake/commands/KShapeTransparencyCommand.cpp:73
 #, fuzzy
 #| msgid "Set opacity"
 msgid "Set Opacity"
 msgstr "Defini zeroveyaedje"
 
-#: flake/commands/KoShapeUngroupCommand.cpp:57
+#: flake/commands/KShapeUngroupCommand.cpp:57
 #, fuzzy
 #| msgid "Ungroup shapes"
 msgid "Ungroup Shapes"
 msgstr "Disgrouper cognes"
 
-#: flake/commands/KoSubpathJoinCommand.cpp:51
+#: flake/commands/KSubpathJoinCommand.cpp:51
 #, fuzzy
 #| msgid "Close subpath"
 msgid "Close Subpath"
 msgstr "Clôre tchimin efant"
 
-#: flake/commands/KoSubpathJoinCommand.cpp:53
+#: flake/commands/KSubpathJoinCommand.cpp:53
 #, fuzzy
 #| msgid "Join subpaths"
 msgid "Join Subpaths"
 msgstr "Radjonde tchimins efants"
-
-#: flake/commands/KoSubpathRemoveCommand.cpp:30
-#, fuzzy
-#| msgid "Remove subpath"
-msgid "Remove Subpath"
-msgstr "Oister tchimin efant"
 
 #: flake/commands/KShapeShearCommand.cpp:51
 #, fuzzy
 #| msgid "Shear shapes"
 msgid "Shear Shapes"
 msgstr "Fé èn efet d' cizetes so les cognes"
-
-#: flake/tools/KCreatePathTool.cpp:369 flake/tools/KPathTool.cpp:180
-msgid "Snapping"
-msgstr "Assaetchaedje magnetike"
-
-#: flake/tools/KCreatePathTool.cpp:374
-msgid "Angle snapping delta"
-msgstr "Delta di l' inglêye d' assaetchaedje magnetike"
-
-#: flake/tools/KCreatePathTool.cpp:379
-msgid "Angle Constraints"
-msgstr "Stronnas d' inglêye"
-
-#: flake/tools/KCreatePathToolFactory.cpp:33
-msgid "Create Path"
-msgstr "Ahiver on tchmin"
 
 #: flake/tools/KCreateShapesToolFactory.cpp:33
 msgid "Create object"
@@ -280,10 +264,6 @@ msgstr "Ahiver èn objet"
 #: flake/tools/KPanToolFactory.cpp:29
 msgid "Pan"
 msgstr "Panoramike"
-
-#: flake/tools/KPathSegmentChangeStrategy.cpp:140
-msgid "Change Segment"
-msgstr "Candjî segmint"
 
 #: flake/tools/KPathTool.cpp:87
 msgid "Corner point"
@@ -345,6 +325,10 @@ msgstr "Viè l' tchimin"
 msgid "Line/Curve"
 msgstr "Roye/Coube"
 
+#: flake/tools/KPathTool.cpp:180 flake/tools/KCreatePathTool.cpp:369
+msgid "Snapping"
+msgstr "Assaetchaedje magnetike"
+
 #: flake/tools/KPathTool.cpp:514
 msgid "Drag to move handle."
 msgstr "Bodjî eyet saetchî po displaecî l' pougneye."
@@ -367,14 +351,30 @@ msgstr "Tchôkî B po djoker on tchmin å pont tchoezi."
 msgid "Press B to break path at selected segments."
 msgstr "Tchôkî B po djoker on tchmin ås segmints tchoezis."
 
-#: flake/tools/KoZoomToolFactory.cpp:29 widgets/KoZoomAction.cpp:248
+#: flake/tools/KPathToolFactory.cpp:29
+msgid "Path editing tool"
+msgstr "Usteye d' aspougnaedje di tchmin"
+
+#: flake/tools/KZoomToolFactory.cpp:29 widgets/KoZoomAction.cpp:248
 #: widgets/KoZoomController.cpp:38 widgets/KoZoomInput.cpp:52
 msgid "Zoom"
 msgstr "Zoumaedje"
 
-#: flake/tools/KPathToolFactory.cpp:29
-msgid "Path editing tool"
-msgstr "Usteye d' aspougnaedje di tchmin"
+#: flake/tools/KCreatePathTool.cpp:374
+msgid "Angle snapping delta"
+msgstr "Delta di l' inglêye d' assaetchaedje magnetike"
+
+#: flake/tools/KCreatePathTool.cpp:379
+msgid "Angle Constraints"
+msgstr "Stronnas d' inglêye"
+
+#: flake/tools/KCreatePathToolFactory.cpp:33
+msgid "Create Path"
+msgstr "Ahiver on tchmin"
+
+#: flake/tools/KPathSegmentChangeStrategy.cpp:140
+msgid "Change Segment"
+msgstr "Candjî segmint"
 
 #: kokross/KoScriptManager.cpp:177
 msgid "Install Script Package"
@@ -756,6 +756,10 @@ msgstr "Tchoezi on mwaisse atuzlaedje des pådjes:"
 msgid "Master Page"
 msgstr "Mwaisse pådje"
 
+#: kopageapp/tools/backgroundTool/KoPABackgroundToolWidget.cpp:93
+msgid "Change background image"
+msgstr "Candjî imådje di fond"
+
 #: kopageapp/tools/backgroundTool/KoPABackgroundTool.cpp:105
 msgid "Background Tool"
 msgstr "Usteye pol fond"
@@ -767,10 +771,6 @@ msgstr "Si siervi do panea des stîles pos apougnî l' fond."
 #: kopageapp/tools/backgroundTool/KoPABackgroundToolFactory.cpp:30
 msgid "Background editing tool"
 msgstr "Usteye pos aspougnî l' fond"
-
-#: kopageapp/tools/backgroundTool/KoPABackgroundToolWidget.cpp:93
-msgid "Change background image"
-msgstr "Candjî imådje di fond"
 
 #: kopageapp/KoPAPastePage.cpp:132
 msgid "Paste Slide"
@@ -892,45 +892,6 @@ msgstr[1] "Dj' a trové %1 sacwès ki corespondèt"
 msgid "Found no match"
 msgstr "Dji n' a rén trové ki corespond"
 
-#: kotext/InsertTextLocator.cpp:29
-msgid "Index Reference"
-msgstr "Referince di l' indecse"
-
-#: kotext/InsertTextReferenceAction.cpp:35
-#: kotext/InsertTextReferenceAction.cpp:63
-msgid "Text Reference"
-msgstr "Referince di tecse"
-
-#: kotext/InsertTextReferenceAction.cpp:44
-msgid "Please create an index to reference first."
-msgstr "Ahivez èn indecse a referincer aprume, s' i vs plait."
-
-#: kotext/InsertTextReferenceAction.cpp:53
-msgid "Select the index you want to reference"
-msgstr "Tchoezixhoz l' indecse ki vs voloz referincer"
-
-#: kotext/InsertTextReferenceAction.cpp:63 kotext/InsertVariableAction.cpp:51
-#: main/rdf/InsertSemanticObjectCreateAction.cpp:59
-#: main/rdf/InsertSemanticObjectReferenceAction.cpp:63
-#, kde-format
-msgid "%1 Options"
-msgstr "Tchuzes di %1"
-
-#: kotext/KoText.cpp:47
-msgctxt "Underline Style"
-msgid "None"
-msgstr "Nouk"
-
-#: kotext/KoText.cpp:48
-msgctxt "Underline Style"
-msgid "Single"
-msgstr "Simpe"
-
-#: kotext/KoText.cpp:49
-msgctxt "Underline Style"
-msgid "Double"
-msgstr "Dobe"
-
 #: kotext/commands/DeleteTableColumnCommand.cpp:40
 #: kotext/KoTextEditor.cpp:1058
 #, fuzzy
@@ -969,6 +930,69 @@ msgstr "Sititchî roye"
 #| msgid "Insert Row"
 msgid "Insert Row Above"
 msgstr "Sititchî roye"
+
+#: kotext/KoText.cpp:47
+msgctxt "Underline Style"
+msgid "None"
+msgstr "Nouk"
+
+#: kotext/KoText.cpp:48
+msgctxt "Underline Style"
+msgid "Single"
+msgstr "Simpe"
+
+#: kotext/KoText.cpp:49
+msgctxt "Underline Style"
+msgid "Double"
+msgstr "Dobe"
+
+#: kotext/KReplaceStrategy.cpp:58
+msgid ""
+"Found no match\n"
+"\n"
+"No text was replaced"
+msgstr ""
+"Dji n' a rén trové ki corespond\n"
+"\n"
+"Dji n' a replaecî nou tecse"
+
+#: kotext/KReplaceStrategy.cpp:61
+#, kde-format
+msgid "1 replacement made"
+msgid_plural "%1 replacements made"
+msgstr[0] "1 replaeçmint di fwait"
+msgstr[1] "%1 replaeçmints di fwaits"
+
+#: kotext/KReplaceStrategy.cpp:74
+#, kde-format
+msgid "Replace %1 with %2?"
+msgstr "Replaecî %1 avou %2 ?"
+
+#. i18n: file: widgets/KoCsvImportDialog.ui:147
+#. i18n: ectx: attribute (title), widget (QWidget, m_formatTab)
+#: kotext/KoTextEditor_p.h:93 kotext/KoTextEditor_p.h:130 rc.cpp:344
+msgid "Format"
+msgstr "Cogne"
+
+#: kotext/InsertTextReferenceAction.cpp:35
+#: kotext/InsertTextReferenceAction.cpp:63
+msgid "Text Reference"
+msgstr "Referince di tecse"
+
+#: kotext/InsertTextReferenceAction.cpp:44
+msgid "Please create an index to reference first."
+msgstr "Ahivez èn indecse a referincer aprume, s' i vs plait."
+
+#: kotext/InsertTextReferenceAction.cpp:53
+msgid "Select the index you want to reference"
+msgstr "Tchoezixhoz l' indecse ki vs voloz referincer"
+
+#: kotext/InsertTextReferenceAction.cpp:63 kotext/InsertVariableAction.cpp:51
+#: main/rdf/InsertSemanticObjectReferenceAction.cpp:63
+#: main/rdf/InsertSemanticObjectCreateAction.cpp:59
+#, kde-format
+msgid "%1 Options"
+msgstr "Tchuzes di %1"
 
 #: kotext/KoTextEditor.cpp:111 kotext/KoTextEditor.cpp:167
 #: kotext/KoTextEditor.cpp:325 widgets/KoCsvImportDialog.cpp:216
@@ -1090,33 +1114,9 @@ msgstr "&Astampé"
 msgid "Line Break"
 msgstr "Djocaedje di roye"
 
-#: kotext/KReplaceStrategy.cpp:58
-msgid ""
-"Found no match\n"
-"\n"
-"No text was replaced"
-msgstr ""
-"Dji n' a rén trové ki corespond\n"
-"\n"
-"Dji n' a replaecî nou tecse"
-
-#: kotext/KReplaceStrategy.cpp:61
-#, kde-format
-msgid "1 replacement made"
-msgid_plural "%1 replacements made"
-msgstr[0] "1 replaeçmint di fwait"
-msgstr[1] "%1 replaeçmints di fwaits"
-
-#: kotext/KReplaceStrategy.cpp:74
-#, kde-format
-msgid "Replace %1 with %2?"
-msgstr "Replaecî %1 avou %2 ?"
-
-#. i18n: file: widgets/KoCsvImportDialog.ui:147
-#. i18n: ectx: attribute (title), widget (QWidget, m_formatTab)
-#: kotext/KoTextEditor_p.h:93 kotext/KoTextEditor_p.h:130 rc.cpp:344
-msgid "Format"
-msgstr "Cogne"
+#: kotext/InsertTextLocator.cpp:29
+msgid "Index Reference"
+msgstr "Referince di l' indecse"
 
 #: main/KoApplication.cpp:77
 msgid "Only print and exit"
@@ -2177,6 +2177,10 @@ msgstr "Evenmints"
 msgid "Locations"
 msgstr "Eplaeçmints"
 
+#: main/rdf/KoDocumentRdf.cpp:851
+msgid "Reference"
+msgstr "Referince"
+
 #: main/rdf/KoSopranoTableModel.cpp:80
 msgid "Empty"
 msgstr "Vude"
@@ -2227,10 +2231,6 @@ msgstr "Wårdé divins"
 #: main/rdf/InsertSemanticObjectReferenceAction.cpp:55
 msgid "Select the object you want to reference"
 msgstr "Tchoezixhoz l' objet ki vs voloz referincer"
-
-#: main/rdf/KoDocumentRdf.cpp:851
-msgid "Reference"
-msgstr "Referince"
 
 #: main/config/KoConfigDocumentPage.cpp:75
 msgid "Auto save (min):"
@@ -3071,13 +3071,13 @@ msgstr "Croejhlåde des royes"
 msgid "Guide lines"
 msgstr "Royes di moennaedje"
 
-#. i18n: file: flake/tools/KoZoomToolWidget.ui:20
+#. i18n: file: flake/tools/KZoomToolWidget.ui:20
 #. i18n: ectx: property (text), widget (QRadioButton, zoomInButton)
 #: rc.cpp:27
 msgid "Zoom In"
 msgstr "Zoumer"
 
-#. i18n: file: flake/tools/KoZoomToolWidget.ui:30
+#. i18n: file: flake/tools/KZoomToolWidget.ui:30
 #. i18n: ectx: property (text), widget (QRadioButton, zoomOutButton)
 #: rc.cpp:30
 msgid "Zoom Out"
