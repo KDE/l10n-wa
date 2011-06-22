@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-19 03:43+0200\n"
+"POT-Creation-Date: 2011-06-22 03:41+0200\n"
 "PO-Revision-Date: 2011-01-17 21:09+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -265,31 +265,6 @@ msgstr "Ahiver èn objet"
 msgid "Pan"
 msgstr "Panoramike"
 
-#: flake/tools/KoPathSegmentChangeStrategy.cpp:145
-msgid "Change Segment"
-msgstr "Candjî segmint"
-
-#: flake/tools/KoPathToolFactory.cpp:29
-msgid "Path editing tool"
-msgstr "Usteye d' aspougnaedje di tchmin"
-
-#: flake/tools/KoZoomToolFactory.cpp:29 widgets/KoZoomAction.cpp:255
-#: widgets/KoZoomController.cpp:39
-msgid "Zoom"
-msgstr "Zoumaedje"
-
-#: flake/tools/KoCreatePathTool.cpp:369 flake/tools/KoPathTool.cpp:184
-msgid "Snapping"
-msgstr "Assaetchaedje magnetike"
-
-#: flake/tools/KoCreatePathTool.cpp:375
-msgid "Angle snapping delta"
-msgstr "Delta di l' inglêye d' assaetchaedje magnetike"
-
-#: flake/tools/KoCreatePathTool.cpp:380
-msgid "Angle Constraints"
-msgstr "Stronnas d' inglêye"
-
 #: flake/tools/KoPathTool.cpp:90
 msgid "Corner point"
 msgstr "Pont avou coines"
@@ -346,6 +321,10 @@ msgstr "Viè l' tchimin"
 msgid "Line/Curve"
 msgstr "Roye/Coube"
 
+#: flake/tools/KoPathTool.cpp:184 flake/tools/KoCreatePathTool.cpp:369
+msgid "Snapping"
+msgstr "Assaetchaedje magnetike"
+
 #: flake/tools/KoPathTool.cpp:519
 msgid "Drag to move handle."
 msgstr "Bodjî eyet saetchî po displaecî l' pougneye."
@@ -367,6 +346,27 @@ msgstr "Tchôkî B po djoker on tchmin å pont tchoezi."
 #: flake/tools/KoPathTool.cpp:612
 msgid "Press B to break path at selected segments."
 msgstr "Tchôkî B po djoker on tchmin ås segmints tchoezis."
+
+#: flake/tools/KoPathToolFactory.cpp:29
+msgid "Path editing tool"
+msgstr "Usteye d' aspougnaedje di tchmin"
+
+#: flake/tools/KoZoomToolFactory.cpp:29 widgets/KoZoomAction.cpp:255
+#: widgets/KoZoomController.cpp:39
+msgid "Zoom"
+msgstr "Zoumaedje"
+
+#: flake/tools/KoCreatePathTool.cpp:375
+msgid "Angle snapping delta"
+msgstr "Delta di l' inglêye d' assaetchaedje magnetike"
+
+#: flake/tools/KoCreatePathTool.cpp:380
+msgid "Angle Constraints"
+msgstr "Stronnas d' inglêye"
+
+#: flake/tools/KoPathSegmentChangeStrategy.cpp:145
+msgid "Change Segment"
+msgstr "Candjî segmint"
 
 #: kokross/KoScriptManager.cpp:177
 msgid "Install Script Package"
@@ -502,57 +502,15 @@ msgstr "Manaedjeu des scripes"
 msgid "Execute Script File"
 msgstr "Enonder l' fitchî scripe"
 
-#: kopageapp/KoPADocumentModel.cpp:166 kopageapp/KoPAPageThumbnailModel.cpp:67
+#: kopageapp/KoPAPageThumbnailModel.cpp:67 kopageapp/KoPADocumentModel.cpp:166
 #, kde-format
 msgid "Slide %1"
 msgstr "Diya %1"
-
-#: kopageapp/KoPADocumentModel.cpp:168
-#, kde-format
-msgid "Page  %1"
-msgstr "Pådje  %1"
-
-#: kopageapp/KoPADocumentModel.cpp:172
-#: kopageapp/KoPADocumentStructureDocker.cpp:118
-msgid "Layer"
-msgstr "Coûtche"
-
-#: kopageapp/KoPADocumentModel.cpp:175
-msgid "Group"
-msgstr "Groupe"
-
-#: kopageapp/KoPADocumentModel.cpp:178
-msgid "Shape"
-msgstr "Fôme"
-
-#: kopageapp/KoPADocumentModel.cpp:291
-msgid "Visible"
-msgstr "Veyåve"
-
-#: kopageapp/KoPADocumentModel.cpp:292
-msgid "Locked"
-msgstr "Eclawé"
-
-#: kopageapp/KoPADocumentModel.cpp:505 kopageapp/KoPADocumentModel.cpp:526
-msgid "Reparent shapes"
-msgstr "Ramete fômes"
 
 #: kopageapp/KoPAPageThumbnailModel.cpp:69
 #, kde-format
 msgid "Page %1"
 msgstr "Pådje %1"
-
-#: kopageapp/KoPAPastePage.cpp:131
-msgid "Paste Slide"
-msgid_plural "Paste Slides"
-msgstr[0] "Aclaper dia"
-msgstr[1] "Aclaper dias"
-
-#: kopageapp/KoPAPastePage.cpp:134
-msgid "Paste Page"
-msgid_plural "Paste Pages"
-msgstr[0] "Aclaper pådje"
-msgstr[1] "Aclaper pådjes"
 
 #: kopageapp/commands/KoPAChangeMasterPageCommand.cpp:35
 msgid "Change master slide"
@@ -561,10 +519,6 @@ msgstr "Candjî mwaisse pådje"
 #: kopageapp/commands/KoPAChangeMasterPageCommand.cpp:38
 msgid "Change master page"
 msgstr "Candjî mwaisse pådje"
-
-#: kopageapp/commands/KoPAChangePageLayoutCommand.cpp:33
-msgid "Set Page Layout"
-msgstr "Defini adjinçmint del pådje"
 
 #: kopageapp/commands/KoPADisplayMasterBackgroundCommand.cpp:31
 msgid "Display master background"
@@ -585,6 +539,10 @@ msgstr "Mostrer mwaissès fômes"
 #: kopageapp/commands/KoPADisplayMasterShapesCommand.cpp:34
 msgid "Hide master shapes"
 msgstr "Catchî mwaissès fômes"
+
+#: kopageapp/commands/KoPAChangePageLayoutCommand.cpp:33
+msgid "Set Page Layout"
+msgstr "Defini adjinçmint del pådje"
 
 #: kopageapp/commands/KoPAPageDeleteCommand.cpp:39
 #: kopageapp/commands/KoPAPageDeleteCommand.cpp:63
@@ -664,10 +622,6 @@ msgstr "Documint"
 msgid "Document Settings"
 msgstr "Apontiaedjes do documint"
 
-#: kopageapp/tools/backgroundTool/KoPABackgroundToolWidget.cpp:93
-msgid "Change background image"
-msgstr "Candjî imådje di fond"
-
 #: kopageapp/tools/backgroundTool/KoPABackgroundTool.cpp:105
 msgid "Background Tool"
 msgstr "Usteye pol fond"
@@ -679,6 +633,40 @@ msgstr "Si siervi do panea des stîles pos apougnî l' fond."
 #: kopageapp/tools/backgroundTool/KoPABackgroundToolFactory.cpp:30
 msgid "Background editing tool"
 msgstr "Usteye pos aspougnî l' fond"
+
+#: kopageapp/tools/backgroundTool/KoPABackgroundToolWidget.cpp:93
+msgid "Change background image"
+msgstr "Candjî imådje di fond"
+
+#: kopageapp/KoPADocumentModel.cpp:168
+#, kde-format
+msgid "Page  %1"
+msgstr "Pådje  %1"
+
+#: kopageapp/KoPADocumentModel.cpp:172
+#: kopageapp/KoPADocumentStructureDocker.cpp:118
+msgid "Layer"
+msgstr "Coûtche"
+
+#: kopageapp/KoPADocumentModel.cpp:175
+msgid "Group"
+msgstr "Groupe"
+
+#: kopageapp/KoPADocumentModel.cpp:178
+msgid "Shape"
+msgstr "Fôme"
+
+#: kopageapp/KoPADocumentModel.cpp:291
+msgid "Visible"
+msgstr "Veyåve"
+
+#: kopageapp/KoPADocumentModel.cpp:292
+msgid "Locked"
+msgstr "Eclawé"
+
+#: kopageapp/KoPADocumentModel.cpp:505 kopageapp/KoPADocumentModel.cpp:526
+msgid "Reparent shapes"
+msgstr "Ramete fômes"
 
 #: kopageapp/KoPADocumentStructureDocker.cpp:95 main/KoMainWindow.cpp:1723
 msgid "Document"
@@ -779,6 +767,18 @@ msgstr "Copyî"
 #: koreport/wrtembed/KoReportDesigner.cpp:834
 msgid "Paste"
 msgstr "Aclaper"
+
+#: kopageapp/KoPAPastePage.cpp:131
+msgid "Paste Slide"
+msgid_plural "Paste Slides"
+msgstr[0] "Aclaper dia"
+msgstr[1] "Aclaper dias"
+
+#: kopageapp/KoPAPastePage.cpp:134
+msgid "Paste Page"
+msgid_plural "Paste Pages"
+msgstr[0] "Aclaper pådje"
+msgstr[1] "Aclaper pådjes"
 
 #: kopageapp/KoPAView.cpp:241 main/KoToolBoxFactory.cpp:37
 msgid "Tools"
@@ -2210,12 +2210,12 @@ msgid "Export to PDF"
 msgstr "Ebaguer come PDF..."
 
 #: main/KoMainWindow.cpp:1385 main/KoUndoStackAction.cpp:36
-#: main/KoUndoStackAction.cpp:52
+#: main/KoUndoStackAction.cpp:52 kundo2/kundo2stack.cpp:1093
 msgid "Undo"
 msgstr "Disfé: %1"
 
 #: main/KoMainWindow.cpp:1386 main/KoUndoStackAction.cpp:44
-#: main/KoUndoStackAction.cpp:52
+#: main/KoUndoStackAction.cpp:52 kundo2/kundo2stack.cpp:1074
 msgid "Redo"
 msgstr "Rodje"
 
@@ -4034,6 +4034,32 @@ msgstr ""
 #: textlayout/ListItemsHelper.cpp:212
 msgid "ArabicAlphabet"
 msgstr ""
+
+#: kundo2/kundo2group.cpp:359 kundo2/kundo2stack.cpp:841
+#, fuzzy, kde-format
+#| msgid "&Undo: %1"
+msgid "Undo %1"
+msgstr "&Disfé: %1"
+
+#: kundo2/kundo2group.cpp:359 kundo2/kundo2stack.cpp:841
+#, fuzzy
+#| msgid "Undo"
+msgctxt "Default text for undo action"
+msgid "Undo"
+msgstr "Disfé: %1"
+
+#: kundo2/kundo2group.cpp:386 kundo2/kundo2stack.cpp:867
+#, fuzzy, kde-format
+#| msgid "Redo: %1"
+msgid "Redo %1"
+msgstr "Rifé: %1"
+
+#: kundo2/kundo2group.cpp:386 kundo2/kundo2stack.cpp:867
+#, fuzzy
+#| msgid "Redo"
+msgctxt "Default text for redo action"
+msgid "Redo"
+msgstr "Rodje"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -7053,9 +7079,6 @@ msgstr "Reyon del pougneye :"
 #~ msgid "Actual Font"
 #~ msgstr "Tchoezi fonte"
 
-#~ msgid "&Undo: %1"
-#~ msgstr "&Disfé: %1"
-
 #~ msgid "&Redo: %1"
 #~ msgstr "&Rifé: %1"
 
@@ -7068,9 +7091,6 @@ msgstr "Reyon del pougneye :"
 #~ msgid_plural "Redo %1 actions"
 #~ msgstr[0] "Rifé %1 accion"
 #~ msgstr[1] "Rifé %1 accions"
-
-#~ msgid "Redo: %1"
-#~ msgstr "Rifé: %1"
 
 #~ msgid "More Fill Colors..."
 #~ msgstr "Ôtès coleurs di Rimplixhaedje..."
