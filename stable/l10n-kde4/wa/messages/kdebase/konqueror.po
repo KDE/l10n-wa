@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konqueror\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-20 04:05+0200\n"
+"POT-Creation-Date: 2011-07-05 04:21+0200\n"
 "PO-Revision-Date: 2011-01-17 21:53+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -19,6 +19,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 1.0\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: src/konqextensionmanager.cpp:54
+#, fuzzy
+#| msgid "Configure"
+msgctxt "@title:window"
+msgid "Configure"
+msgstr "Apontyî"
+
+#: src/konqextensionmanager.cpp:74 src/konqextensionmanager.cpp:77
+#: src/konqextensionmanager.cpp:78
+msgid "Extensions"
+msgstr "Rawetes"
 
 #: src/konqclosedwindowsmanager.cpp:418 src/konqmainwindow.cpp:5010
 #: src/konqmainwindow.cpp:5070
@@ -331,26 +343,6 @@ msgstr "%1/s"
 msgid "Stalled"
 msgstr "Djoké"
 
-#: src/konqguiclients.cpp:66
-#, kde-format
-msgid "Preview &in %1"
-msgstr "Prévey d&ins %1"
-
-#: src/konqguiclients.cpp:135
-#, kde-format
-msgid "Show %1"
-msgstr "Håyner %1"
-
-#: src/konqhistorydialog.cpp:45
-msgctxt "@title:window"
-msgid "History"
-msgstr "Istwere"
-
-#: src/konqhistorydialog.cpp:61 src/konqhistoryview.cpp:143
-msgctxt "@action:inmenu Parent of 'By Name' and 'By Date'"
-msgid "Sort"
-msgstr "Relére"
-
 #: src/konqhistorymodel.cpp:137
 #, kde-format
 msgid ""
@@ -368,53 +360,60 @@ msgstr "Coinrece"
 msgid "Miscellaneous"
 msgstr "Totès sôres"
 
-#: src/konqmain.cpp:96
+#: src/konqhistoryview.cpp:62 src/konqmainwindow.cpp:4537
+#: sidebar/web_module/web_module.cpp:61
+msgid "Open in New &Window"
+msgstr "Drovi en ene novele &finiesse"
+
+#: src/konqhistoryview.cpp:67
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:94
+#: sidebar/trees/konq_sidebartree.cpp:232
+msgid "Open in New Tab"
+msgstr "Drovi dins ene nouve linwete"
+
+#: src/konqhistoryview.cpp:71
+msgid "&Copy Link Address"
+msgstr "&Copyî l' adresse do loyén"
+
+#: src/konqhistoryview.cpp:76
+msgid "&Remove Entry"
+msgstr "&Oister foû ciste intrêye"
+
+#: src/konqhistoryview.cpp:83
+msgid "C&lear History"
+msgstr "&Netyî l' istwere"
+
+#: src/konqhistoryview.cpp:88
+msgid "&Preferences..."
+msgstr "&Preferinces..."
+
+#: src/konqhistoryview.cpp:95
+msgid "By &Name"
+msgstr "Sol &No"
+
+#: src/konqhistoryview.cpp:101
+msgid "By &Date"
+msgstr "Sol &Date"
+
+#: src/konqhistoryview.cpp:111
+msgid "Search in history"
+msgstr "Trover e l' istwere"
+
+#: src/konqhistoryview.cpp:143 src/konqhistorydialog.cpp:61
+msgctxt "@action:inmenu Parent of 'By Name' and 'By Date'"
+msgid "Sort"
+msgstr "Relére"
+
+#: src/konqhistoryview.cpp:171 sidebar/history_module/kcmhistory.cpp:254
+msgid "Do you really want to clear the entire history?"
+msgstr "Voloz vs po do bon soprimer tote l' istwere?"
+
+#: src/konqhistoryview.cpp:172 sidebar/history_module/kcmhistory.cpp:256
 #, fuzzy
-#| msgid "Start without a default window"
-msgid "Start without a default window, when called without URLs"
-msgstr "Enonder sins on prémetou purnea"
-
-#: src/konqmain.cpp:98
-msgid ""
-"Preload for later use. This mode does not support URLs on the command line"
-msgstr ""
-
-#: src/konqmain.cpp:100
-msgid "Profile to open"
-msgstr "Profil a drovi"
-
-#: src/konqmain.cpp:102
-msgid "List available profiles"
-msgstr "Djivêye des profils k' i gn a"
-
-#: src/konqmain.cpp:104
-msgid "List available sessions"
-msgstr "Fé l' djivêye des sessions k' i gn a"
-
-#: src/konqmain.cpp:106
-msgid "Session to open"
-msgstr "Session a drovi"
-
-#: src/konqmain.cpp:108
-msgid "Mimetype to use for this URL (e.g. text/html or inode/directory)"
-msgstr ""
-"Sôre MIME a eployî po cist URL ci (metans: text/html ou inode/directory)"
-
-#: src/konqmain.cpp:109
-msgid "Part to use (e.g. khtml or kwebkitpart)"
-msgstr ""
-
-#: src/konqmain.cpp:111
-msgid ""
-"For URLs that point to files, opens the directory and selects the file, "
-"instead of opening the actual file"
-msgstr ""
-"Po ls URL ki loyèt après des fitchîs, drouve li ridant et tchoezixhe li "
-"fitchî purade ki drovi l' vraiy fitchî"
-
-#: src/konqmain.cpp:113
-msgid "Location to open"
-msgstr "Eplaeçmint a drovi"
+#| msgid "Clear History?"
+msgctxt "@title:window"
+msgid "Clear History?"
+msgstr "Soprimer l' istwere?"
 
 #: src/konqtabs.cpp:66
 msgid ""
@@ -485,83 +484,6 @@ msgstr "Dis&fé : finiesse cloyowe"
 msgid "Und&o"
 msgstr "Dis&fé"
 
-#: src/konqextensionmanager.cpp:54
-#, fuzzy
-#| msgid "Configure"
-msgctxt "@title:window"
-msgid "Configure"
-msgstr "Apontyî"
-
-#: src/konqextensionmanager.cpp:74 src/konqextensionmanager.cpp:77
-#: src/konqextensionmanager.cpp:78
-msgid "Extensions"
-msgstr "Rawetes"
-
-#: src/konqhistoryview.cpp:62 src/konqmainwindow.cpp:4537
-#: sidebar/web_module/web_module.cpp:61
-msgid "Open in New &Window"
-msgstr "Drovi en ene novele &finiesse"
-
-#: src/konqhistoryview.cpp:67
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:94
-#: sidebar/trees/konq_sidebartree.cpp:232
-msgid "Open in New Tab"
-msgstr "Drovi dins ene nouve linwete"
-
-#: src/konqhistoryview.cpp:71
-msgid "&Copy Link Address"
-msgstr "&Copyî l' adresse do loyén"
-
-#: src/konqhistoryview.cpp:76
-msgid "&Remove Entry"
-msgstr "&Oister foû ciste intrêye"
-
-#: src/konqhistoryview.cpp:83
-msgid "C&lear History"
-msgstr "&Netyî l' istwere"
-
-#: src/konqhistoryview.cpp:88
-msgid "&Preferences..."
-msgstr "&Preferinces..."
-
-#: src/konqhistoryview.cpp:95
-msgid "By &Name"
-msgstr "Sol &No"
-
-#: src/konqhistoryview.cpp:101
-msgid "By &Date"
-msgstr "Sol &Date"
-
-#: src/konqhistoryview.cpp:111
-msgid "Search in history"
-msgstr "Trover e l' istwere"
-
-#: src/konqhistoryview.cpp:171 sidebar/history_module/kcmhistory.cpp:254
-msgid "Do you really want to clear the entire history?"
-msgstr "Voloz vs po do bon soprimer tote l' istwere?"
-
-#: src/konqhistoryview.cpp:172 sidebar/history_module/kcmhistory.cpp:256
-#, fuzzy
-#| msgid "Clear History?"
-msgctxt "@title:window"
-msgid "Clear History?"
-msgstr "Soprimer l' istwere?"
-
-#: src/konqprofiledlg.cpp:111
-#, fuzzy
-#| msgid "Profile Management"
-msgctxt "@title:window"
-msgid "Profile Management"
-msgstr "Manaedjmint des profils"
-
-#: src/konqprofiledlg.cpp:114
-msgid "&Rename Profile"
-msgstr "&Rilomer l' profil"
-
-#: src/konqprofiledlg.cpp:115
-msgid "&Delete Profile"
-msgstr "&Disfacer l' profil"
-
 #: src/konqsessiondlg.cpp:77
 #, fuzzy
 #| msgid "Manage Sessions"
@@ -601,95 +523,68 @@ msgctxt "@title:window"
 msgid "Session exists. Overwrite?"
 msgstr "Li session egzitêye. El sipotchî?"
 
-#: src/konqsessionmanager.cpp:330
-msgid ""
-"Konqueror did not close correctly. Would you like to restore the previous "
-"session?"
-msgstr "Konqueror n' a nén cloyou comifåt. Vôrîz rapexhî l' session di dvant?"
+#: src/konqguiclients.cpp:66
+#, kde-format
+msgid "Preview &in %1"
+msgstr "Prévey d&ins %1"
 
-#: src/konqsessionmanager.cpp:332
-#, fuzzy
-#| msgid "Restore Session?"
+#: src/konqguiclients.cpp:135
+#, kde-format
+msgid "Show %1"
+msgstr "Håyner %1"
+
+#: src/konqhistorydialog.cpp:45
 msgctxt "@title:window"
-msgid "Restore Session?"
-msgstr "Rapexhî session?"
+msgid "History"
+msgstr "Istwere"
 
-#: src/konqsessionmanager.cpp:333
-msgid "Restore Session"
-msgstr "Rapexhî session"
+#: src/konqmain.cpp:96
+#, fuzzy
+#| msgid "Start without a default window"
+msgid "Start without a default window, when called without URLs"
+msgstr "Enonder sins on prémetou purnea"
 
-#: src/konqsessionmanager.cpp:334
-msgid "Do Not Restore"
-msgstr "Èn nén rapexhî"
-
-#: src/konqsessionmanager.cpp:335
-msgid "Ask Me Later"
-msgstr "Èm dimander pus tård"
-
-#: src/konqviewmanager.cpp:1411
+#: src/konqmain.cpp:98
 msgid ""
-"You have multiple tabs open in this window.\n"
-"Loading a view profile will close them."
+"Preload for later use. This mode does not support URLs on the command line"
 msgstr ""
-"Vos avoz sacwantès linwetes di drovowes dins cisse finiesse chal.\n"
-"Tcherdjî on profil di vuwes les clôrè."
 
-#: src/konqviewmanager.cpp:1413 src/konqmainwindow.cpp:4937
-#, fuzzy
-#| msgid "Confirmation"
-msgctxt "@title:window"
-msgid "Confirmation"
-msgstr "Acertinaedje"
+#: src/konqmain.cpp:100
+msgid "Profile to open"
+msgstr "Profil a drovi"
 
-#: src/konqviewmanager.cpp:1414
-msgid "Load View Profile"
-msgstr "Tcherdjî on profil di vuwes"
+#: src/konqmain.cpp:102
+msgid "List available profiles"
+msgstr "Djivêye des profils k' i gn a"
 
-#: src/konqviewmanager.cpp:1426
-msgid ""
-"This tab contains changes that have not been submitted.\n"
-"Loading a profile will discard these changes."
+#: src/konqmain.cpp:104
+msgid "List available sessions"
+msgstr "Fé l' djivêye des sessions k' i gn a"
+
+#: src/konqmain.cpp:106
+msgid "Session to open"
+msgstr "Session a drovi"
+
+#: src/konqmain.cpp:108
+msgid "Mimetype to use for this URL (e.g. text/html or inode/directory)"
 msgstr ""
-"Cisse linwete a des candjmint ki n' ont nén stî sormetous.\n"
-"Tcherdjî on profil disfaçrè ces candjmints."
+"Sôre MIME a eployî po cist URL ci (metans: text/html ou inode/directory)"
 
-#: src/konqviewmanager.cpp:1427 src/konqmainwindow.cpp:1615
-#: src/konqmainwindow.cpp:2342 src/konqmainwindow.cpp:2420
-#: src/konqmainwindow.cpp:2450 src/konqmainwindow.cpp:2492
-#: src/konqmainwindow.cpp:2514 src/konqmainwindow.cpp:4972
-#, fuzzy
-#| msgid "Discard Changes?"
-msgctxt "@title:window"
-msgid "Discard Changes?"
-msgstr "Disfacer les candjmints?"
-
-#: src/konqviewmanager.cpp:1427 src/konqmainwindow.cpp:1615
-#: src/konqmainwindow.cpp:2342 src/konqmainwindow.cpp:2420
-#: src/konqmainwindow.cpp:2450 src/konqmainwindow.cpp:2492
-#: src/konqmainwindow.cpp:2515 src/konqmainwindow.cpp:4972
-msgid "&Discard Changes"
-msgstr "&Disfacer les candjmints"
-
-#: src/konqview.cpp:1203
-msgid ""
-"The page you are trying to view is the result of posted form data. If you "
-"resend the data, any action the form carried out (such as search or online "
-"purchase) will be repeated. "
+#: src/konqmain.cpp:109
+msgid "Part to use (e.g. khtml or kwebkitpart)"
 msgstr ""
-"Li pådje ki vs sayîz d' vey est l' rizultat di dnêyes d' on formulaire "
-"evoyî. Si vs revoyîz les dnêyes, tote accion kel formulaire poirtéve (come "
-"trover ou atchter so fyis) serè rfwaite. "
 
-#: src/konqview.cpp:1205
-#, fuzzy
-#| msgid "Warning"
-msgctxt "@title:window"
-msgid "Warning"
-msgstr "Adviertixhmint"
+#: src/konqmain.cpp:111
+msgid ""
+"For URLs that point to files, opens the directory and selects the file, "
+"instead of opening the actual file"
+msgstr ""
+"Po ls URL ki loyèt après des fitchîs, drouve li ridant et tchoezixhe li "
+"fitchî purade ki drovi l' vraiy fitchî"
 
-#: src/konqview.cpp:1205
-msgid "Resend"
-msgstr "Revoyî"
+#: src/konqmain.cpp:113
+msgid "Location to open"
+msgstr "Eplaeçmint a drovi"
 
 #: src/konqmainwindow.cpp:574
 msgctxt "@title:tab"
@@ -707,6 +602,23 @@ msgid ""
 msgstr ""
 "Cisse pådje a des candjmints ki n' ont nén stî sormetous.\n"
 "Ritcherdjî l' pådje disfaçrè ces candjmints."
+
+#: src/konqmainwindow.cpp:1615 src/konqmainwindow.cpp:2342
+#: src/konqmainwindow.cpp:2420 src/konqmainwindow.cpp:2450
+#: src/konqmainwindow.cpp:2492 src/konqmainwindow.cpp:2514
+#: src/konqmainwindow.cpp:4972 src/konqviewmanager.cpp:1427
+#, fuzzy
+#| msgid "Discard Changes?"
+msgctxt "@title:window"
+msgid "Discard Changes?"
+msgstr "Disfacer les candjmints?"
+
+#: src/konqmainwindow.cpp:1615 src/konqmainwindow.cpp:2342
+#: src/konqmainwindow.cpp:2420 src/konqmainwindow.cpp:2450
+#: src/konqmainwindow.cpp:2492 src/konqmainwindow.cpp:2515
+#: src/konqmainwindow.cpp:4972 src/konqviewmanager.cpp:1427
+msgid "&Discard Changes"
+msgstr "&Disfacer les candjmints"
 
 #: src/konqmainwindow.cpp:1725
 msgid "File Management"
@@ -1274,6 +1186,13 @@ msgstr ""
 "Vos avoz sacwantès linwetes di drovowes dins cisse finiesse chal; estoz seur "
 "di voleur cwiter?"
 
+#: src/konqmainwindow.cpp:4937 src/konqviewmanager.cpp:1413
+#, fuzzy
+#| msgid "Confirmation"
+msgctxt "@title:window"
+msgid "Confirmation"
+msgstr "Acertinaedje"
+
 #: src/konqmainwindow.cpp:4939
 msgid "C&lose Current Tab"
 msgstr "C&lôre li linwete do moumint"
@@ -1329,6 +1248,87 @@ msgid ""
 msgstr ""
 "Dj' a l' idêye k' ene sacwè n' va nén dins voste apontiaedje. Vos avoz aloyî "
 "Konqueror avou %1, mins i n' sait cwè fé avou cisse sôre di fitchî la."
+
+#: src/konqprofiledlg.cpp:111
+#, fuzzy
+#| msgid "Profile Management"
+msgctxt "@title:window"
+msgid "Profile Management"
+msgstr "Manaedjmint des profils"
+
+#: src/konqprofiledlg.cpp:114
+msgid "&Rename Profile"
+msgstr "&Rilomer l' profil"
+
+#: src/konqprofiledlg.cpp:115
+msgid "&Delete Profile"
+msgstr "&Disfacer l' profil"
+
+#: src/konqsessionmanager.cpp:330
+msgid ""
+"Konqueror did not close correctly. Would you like to restore the previous "
+"session?"
+msgstr "Konqueror n' a nén cloyou comifåt. Vôrîz rapexhî l' session di dvant?"
+
+#: src/konqsessionmanager.cpp:332
+#, fuzzy
+#| msgid "Restore Session?"
+msgctxt "@title:window"
+msgid "Restore Session?"
+msgstr "Rapexhî session?"
+
+#: src/konqsessionmanager.cpp:333
+msgid "Restore Session"
+msgstr "Rapexhî session"
+
+#: src/konqsessionmanager.cpp:334
+msgid "Do Not Restore"
+msgstr "Èn nén rapexhî"
+
+#: src/konqsessionmanager.cpp:335
+msgid "Ask Me Later"
+msgstr "Èm dimander pus tård"
+
+#: src/konqviewmanager.cpp:1411
+msgid ""
+"You have multiple tabs open in this window.\n"
+"Loading a view profile will close them."
+msgstr ""
+"Vos avoz sacwantès linwetes di drovowes dins cisse finiesse chal.\n"
+"Tcherdjî on profil di vuwes les clôrè."
+
+#: src/konqviewmanager.cpp:1414
+msgid "Load View Profile"
+msgstr "Tcherdjî on profil di vuwes"
+
+#: src/konqviewmanager.cpp:1426
+msgid ""
+"This tab contains changes that have not been submitted.\n"
+"Loading a profile will discard these changes."
+msgstr ""
+"Cisse linwete a des candjmint ki n' ont nén stî sormetous.\n"
+"Tcherdjî on profil disfaçrè ces candjmints."
+
+#: src/konqview.cpp:1203
+msgid ""
+"The page you are trying to view is the result of posted form data. If you "
+"resend the data, any action the form carried out (such as search or online "
+"purchase) will be repeated. "
+msgstr ""
+"Li pådje ki vs sayîz d' vey est l' rizultat di dnêyes d' on formulaire "
+"evoyî. Si vs revoyîz les dnêyes, tote accion kel formulaire poirtéve (come "
+"trover ou atchter so fyis) serè rfwaite. "
+
+#: src/konqview.cpp:1205
+#, fuzzy
+#| msgid "Warning"
+msgctxt "@title:window"
+msgid "Warning"
+msgstr "Adviertixhmint"
+
+#: src/konqview.cpp:1205
+msgid "Resend"
+msgstr "Revoyî"
 
 #: sidebar/history_module/history_module.cpp:126
 msgctxt "@action:inmenu Add"

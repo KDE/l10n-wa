@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: okular\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-20 04:21+0200\n"
+"POT-Creation-Date: 2011-07-05 05:04+0200\n"
 "PO-Revision-Date: 2011-01-17 21:56+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -257,6 +257,30 @@ msgstr ""
 "<qt>Dj' a trové pus k' on programe fondmint pol sôre MIME: <br /><b>%1</b> (%"
 "2).<br /><br />Tchoezixhoz s' i vs plait li ké eployî:</qt>"
 
+#: core/generator.cpp:557
+msgid "Plain &Text..."
+msgstr "Peur &tecse..."
+
+#: core/generator.cpp:560
+msgid "PDF"
+msgstr "PDF"
+
+#: core/generator.cpp:565
+msgctxt "This is the document format"
+msgid "OpenDocument Text"
+msgstr "Tecse OpenDocument"
+
+#: core/generator.cpp:569
+msgctxt "This is the document format"
+msgid "HTML"
+msgstr "HTML"
+
+#: core/sourcereference.cpp:92
+#, kde-format
+msgctxt "'source' is a source file"
+msgid "Source: %1"
+msgstr "Sourdant: %1"
+
 #: core/document.cpp:167
 #, kde-format
 msgid "%1 x %2 in"
@@ -424,31 +448,7 @@ msgstr "Grandeu do fitchî"
 msgid "Page Size"
 msgstr "Grandeu do papî"
 
-#: core/generator.cpp:557
-msgid "Plain &Text..."
-msgstr "Peur &tecse..."
-
-#: core/generator.cpp:560
-msgid "PDF"
-msgstr "PDF"
-
-#: core/generator.cpp:565
-msgctxt "This is the document format"
-msgid "OpenDocument Text"
-msgstr "Tecse OpenDocument"
-
-#: core/generator.cpp:569
-msgctxt "This is the document format"
-msgid "HTML"
-msgstr "HTML"
-
-#: core/sourcereference.cpp:92
-#, kde-format
-msgctxt "'source' is a source file"
-msgid "Source: %1"
-msgstr "Sourdant: %1"
-
-#: ui/annotationmodel.cpp:297 part.cpp:1827
+#: ui/annotationmodel.cpp:297 part.cpp:1831
 #, kde-format
 msgid "Page %1"
 msgstr "Pådje %1"
@@ -837,7 +837,7 @@ msgstr "Potchî a cisse rimarke ci"
 msgid "Rename Bookmark"
 msgstr "Rilomer li rmåke"
 
-#: ui/bookmarklist.cpp:248 part.cpp:1356 part.cpp:1829
+#: ui/bookmarklist.cpp:248 part.cpp:1360 part.cpp:1833
 msgid "Remove Bookmark"
 msgstr "Oister l' rimarke"
 
@@ -989,18 +989,6 @@ msgstr "Totes les veyåvès colones"
 #: ui/ktreeviewsearchline.cpp:630
 msgid "S&earch:"
 msgstr "C&weri:"
-
-#: ui/pageviewannotator.cpp:159
-msgid "Text of the new note:"
-msgstr "Tecse del novele note:"
-
-#: ui/pageviewannotator.cpp:161
-msgid "New Text Note"
-msgstr "Novele note di tecse"
-
-#: ui/pageviewutils.cpp:409
-msgid "Close this message"
-msgstr "Clôre ci messaedje"
 
 #: ui/presentationsearchbar.cpp:64 ui/findbar.cpp:36
 msgid "Close"
@@ -1216,10 +1204,6 @@ msgstr "Normålès imådjetes"
 msgid "Large Icons"
 msgstr "Lådjès imådjetes"
 
-#: ui/thumbnaillist.cpp:1014
-msgid "Show bookmarked pages only"
-msgstr "Èn mostrer k' les pådjes markêyes"
-
 #: ui/toolaction.cpp:21
 msgid "Selection Tools"
 msgstr "Usteyes po tchoezi"
@@ -1252,10 +1236,6 @@ msgstr "Djoker"
 msgctxt "stop the movie playback"
 msgid "Stop"
 msgstr "Hôw"
-
-#: ui/formwidgets.cpp:350 shell/shell.cpp:262
-msgid "*|All Files"
-msgstr "*|Tos les fitchîs"
 
 #: ui/findbar.cpp:40
 msgctxt "Find text"
@@ -1295,6 +1275,10 @@ msgstr "Diferince po ptitès et grandès letes"
 #: ui/findbar.cpp:69
 msgid "From current page"
 msgstr "A pårti di c' pådje ci"
+
+#: ui/formwidgets.cpp:350 shell/shell.cpp:262
+msgid "*|All Files"
+msgstr "*|Tos les fitchîs"
 
 #: ui/minibar.cpp:87
 msgctxt "Layouted like: '5 [pages] of 10'"
@@ -1494,7 +1478,7 @@ msgstr "Imådje [%1x%2] schapêye dins l' fitchî %3."
 msgid "Copy Text"
 msgstr "Copyî tecse"
 
-#: ui/pageview.cpp:2792 part.cpp:1833
+#: ui/pageview.cpp:2792 part.cpp:1837
 msgid "Fit Width"
 msgstr "Al lårdjeur del pådje"
 
@@ -1544,6 +1528,18 @@ msgstr "Oteur des notes"
 #: ui/pageview.cpp:3545
 msgid "Please insert your name or initials:"
 msgstr "Intrez, s' i vs plait, vosse no ou iniciåles:"
+
+#: ui/pageviewannotator.cpp:159
+msgid "Text of the new note:"
+msgstr "Tecse del novele note:"
+
+#: ui/pageviewannotator.cpp:161
+msgid "New Text Note"
+msgstr "Novele note di tecse"
+
+#: ui/pageviewutils.cpp:409
+msgid "Close this message"
+msgstr "Clôre ci messaedje"
 
 #: ui/presentationwidget.cpp:142
 #, kde-format
@@ -1596,6 +1592,10 @@ msgctxt ""
 "is active"
 msgid "Giving a presentation"
 msgstr "Dji dene on prezintaedje"
+
+#: ui/thumbnaillist.cpp:1014
+msgid "Show bookmarked pages only"
+msgstr "Èn mostrer k' les pådjes markêyes"
 
 #: shell/main.cpp:48
 msgid "Page of the document to be shown"
@@ -1886,30 +1886,30 @@ msgstr ""
 "Ciste hårdêye moenne a ene accion « cwiter l' programe » ki n' rote nén cwand "
 "on s' sieve do ravalé håyneu."
 
-#: part.cpp:1243
+#: part.cpp:1246
 msgid "Reloading the document..."
 msgstr "Dji rtchedje li documint..."
 
-#: part.cpp:1404
+#: part.cpp:1408
 msgid "Go to Page"
 msgstr "Potchî al pådje"
 
-#: part.cpp:1419
+#: part.cpp:1423
 msgid "&Page:"
 msgstr "&Pådje:"
 
-#: part.cpp:1596
+#: part.cpp:1600
 msgid "Could not open the temporary file for saving."
 msgstr "Dji n' sai drovi l' fitchî timporaire po schaper."
 
-#: part.cpp:1607 part.cpp:1618 part.cpp:1661 part.cpp:1986
+#: part.cpp:1611 part.cpp:1622 part.cpp:1665 part.cpp:1990
 #, kde-format
 msgid "File could not be saved in '%1'. Try to save it to another location."
 msgstr ""
 "Dji n' a savou schaper l' fitchî dins « %1 ». Sayîz del schaper a ene ôte "
 "plaece."
 
-#: part.cpp:1611
+#: part.cpp:1615
 #, fuzzy, kde-format
 #| msgid "File could not be saved in '%1'. Try to save it to another location."
 msgid "File could not be saved in '%1'. %2"
@@ -1917,7 +1917,7 @@ msgstr ""
 "Dji n' a savou schaper l' fitchî dins « %1 ». Sayîz del schaper a ene ôte "
 "plaece."
 
-#: part.cpp:1646
+#: part.cpp:1650
 #, kde-format
 msgid ""
 "Okular cannot copy %1 to the specified location.\n"
@@ -1928,26 +1928,26 @@ msgstr ""
 "\n"
 "Li documint n' egzistêye pus."
 
-#: part.cpp:1831
+#: part.cpp:1835
 msgid "Add Bookmark"
 msgstr "Radjouter ene rimarke"
 
-#: part.cpp:1848
+#: part.cpp:1852
 msgid "Tools"
 msgstr "Usteyes"
 
-#: part.cpp:2099
+#: part.cpp:2103
 msgid "Printing this document is not allowed."
 msgstr "L' imprimaedje di c' documint ci n' nén permetou."
 
-#: part.cpp:2108
+#: part.cpp:2112
 msgid ""
 "Could not print the document. Unknown error. Please report to bugs.kde.org"
 msgstr ""
 "Dji n' sai rexhe li documint. Aroke nén cnoxhowe. Rapoirtez on bug a bugs."
 "kde.org, s' i vs plait"
 
-#: part.cpp:2112
+#: part.cpp:2116
 #, kde-format
 msgid ""
 "Could not print the document. Detailed error is \"%1\". Please report to "
@@ -1956,15 +1956,15 @@ msgstr ""
 "Dji n' sai rexhe li documint. Li spepieus discrijhaedje di l' aroke est \"%1"
 "\". Rapoirtez on bug a bugs.kde.org, s' i vs plait"
 
-#: part.cpp:2167
+#: part.cpp:2171
 msgid "Go to the place you were before"
 msgstr "Potchî al plaece ki vs estîz dvant"
 
-#: part.cpp:2170
+#: part.cpp:2174
 msgid "Go to the place you were after"
 msgstr "Potchî al plaece ki vs estîz après"
 
-#: part.cpp:2194
+#: part.cpp:2198
 #, kde-format
 msgid ""
 "<qt><strong>File Error!</strong> Could not create temporary file "
@@ -1973,7 +1973,7 @@ msgstr ""
 "<qt><strong>Aroke di fitchî!</strong> Dji n' sai ahiver l' fitchî timporaire "
 "<nobr><strong>%1</strong></nobr>.</qt>"
 
-#: part.cpp:2212
+#: part.cpp:2216
 #, kde-format
 msgid ""
 "<qt><strong>File Error!</strong> Could not open the file <nobr><strong>%1</"
@@ -1983,7 +1983,7 @@ msgstr ""
 "<nobr><strong>%1</strong></nobr> po disrastrindaedje. Li fitchî n' serè nén "
 "tcherdjî.</qt>"
 
-#: part.cpp:2215
+#: part.cpp:2219
 msgid ""
 "<qt>This error typically occurs if you do not have enough permissions to "
 "read the file. You can check ownership and permissions if you right-click on "
@@ -1995,7 +1995,7 @@ msgstr ""
 "sol fitchî dins l' manaedjeu des fitchîs Dolphin eyet adon tchoezi l' "
 "linwete « Prôpietés ».</qt>"
 
-#: part.cpp:2239
+#: part.cpp:2243
 #, kde-format
 msgid ""
 "<qt><strong>File Error!</strong> Could not uncompress the file <nobr><strong>"
@@ -2004,7 +2004,7 @@ msgstr ""
 "<qt><strong>Aroke di fitchî!</strong> Dji n' sai disrastrinde l' fitchî "
 "<nobr><strong>%1</strong></nobr>. Li fitchî n' serè nén tcherdjî.</qt>"
 
-#: part.cpp:2242
+#: part.cpp:2246
 msgid ""
 "<qt>This error typically occurs if the file is corrupt. If you want to be "
 "sure, try to decompress the file manually using command-line tools.</qt>"
@@ -2013,7 +2013,7 @@ msgstr ""
 "sayîz d' disrastrinde li fitchî al mwin e vs siervant des usteyes e roye di "
 "cmande.</qt>"
 
-#: part.cpp:2271
+#: part.cpp:2275
 msgid "No Bookmarks"
 msgstr "Nole rimarke"
 
