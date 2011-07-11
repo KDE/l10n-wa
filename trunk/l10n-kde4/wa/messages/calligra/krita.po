@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-07-09 03:46+0200\n"
+"POT-Creation-Date: 2011-07-11 04:33+0200\n"
 "PO-Revision-Date: 2011-01-17 21:35+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -6320,8 +6320,8 @@ msgstr "Pression del sori"
 #. i18n: file: plugins/tools/selectiontools/kis_tool_select_magnetic_option_widget.ui:57
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:2521 rc.cpp:3118
-#: plugins/filters/imageenhancement/kis_wavelet_noise_reduction.cpp:53
 #: plugins/filters/imageenhancement/kis_simple_noise_reducer.cpp:56
+#: plugins/filters/imageenhancement/kis_wavelet_noise_reduction.cpp:53
 #: plugins/paintops/libpaintop/kis_pressure_sharpness_option_widget.cpp:37
 msgid "Threshold"
 msgstr "Soû"
@@ -7548,8 +7548,8 @@ msgstr "Sôre di toirdaedje"
 
 #. i18n: file: plugins/tools/tool_transform2/wdg_tool_transform.ui:1062
 #. i18n: ectx: property (text), widget (QPushButton, lockUnlockPointsButton)
-#: rc.cpp:3324 plugins/tools/tool_transform2/kis_tool_transform.cc:2509
-#: plugins/tools/tool_transform2/kis_tool_transform.cc:2900
+#: rc.cpp:3324 plugins/tools/tool_transform2/kis_tool_transform.cc:2501
+#: plugins/tools/tool_transform2/kis_tool_transform.cc:2892
 msgid "Lock Points"
 msgstr "Eclawer ponts"
 
@@ -9397,7 +9397,7 @@ msgstr "YCbCr (8 bites etir/canå)"
 
 #: benchmarks/kis_floodfill_benchmark.cpp:87
 #: plugins/tools/defaulttools/kis_tool_fill.cc:100
-#: plugins/tools/defaulttools/kis_tool_fill.cc:142
+#: plugins/tools/defaulttools/kis_tool_fill.cc:141
 msgid "Flood Fill"
 msgstr "Pot d' pondeure"
 
@@ -9667,7 +9667,7 @@ msgstr "Mete en ouve profil"
 msgid "Convert Projection Color Space"
 msgstr ""
 
-#: image/kis_image.cc:730 ui/kis_layer_manager.cc:768
+#: image/kis_image.cc:730 ui/kis_layer_manager.cc:758
 msgid "Flatten Image"
 msgstr "Asplati imådje"
 
@@ -9785,7 +9785,7 @@ msgid "Play macro"
 msgstr "Djouwer macro"
 
 #: image/recorder/kis_recorded_fill_paint_action.cpp:42
-#: plugins/tools/defaulttools/kis_tool_fill.cc:127
+#: plugins/tools/defaulttools/kis_tool_fill.cc:126
 msgid "Fill"
 msgstr "Rimpli"
 
@@ -10497,7 +10497,7 @@ msgid "Rotate Layer of 90° to the Left"
 msgstr ""
 
 #: plugins/extensions/rotateimage/rotateimage.cc:151
-#: ui/kis_layer_manager.cc:706
+#: ui/kis_layer_manager.cc:696
 msgid "Rotate Layer"
 msgstr "Tourner coûtche"
 
@@ -10556,7 +10556,7 @@ msgid "Separate Image"
 msgstr "Distrocler imådje"
 
 #: plugins/extensions/separate_channels/kis_channel_separator.cc:242
-#: ui/kis_layer_manager.cc:859
+#: ui/kis_layer_manager.cc:849
 msgid "Export Layer"
 msgstr "Ebaguer coûtche"
 
@@ -10679,6 +10679,10 @@ msgstr "Mete å pus hôt l' canå"
 msgid "Minimize Channel"
 msgstr "Mete å pus bas li canå"
 
+#: plugins/filters/colors/kis_color_to_alpha.cpp:40
+msgid "&Color to Alpha..."
+msgstr "&Coleur viè alfa..."
+
 #: plugins/filters/colors/kis_minmax_filters.cpp:70
 msgid "M&aximize Channel"
 msgstr "Mete å pus &hôt li canå"
@@ -10686,10 +10690,6 @@ msgstr "Mete å pus &hôt li canå"
 #: plugins/filters/colors/kis_minmax_filters.cpp:113
 msgid "M&inimize Channel"
 msgstr "Mete å pus &bas li canå"
-
-#: plugins/filters/colors/kis_color_to_alpha.cpp:40
-msgid "&Color to Alpha..."
-msgstr "&Coleur viè alfa..."
 
 #: plugins/filters/colorsfilters/colorsfilters.h:51
 msgid "Auto Contrast"
@@ -10699,10 +10699,6 @@ msgstr "Contrasse otomatike"
 msgid "Desaturate"
 msgstr "Dissaturer"
 
-#: plugins/filters/colorsfilters/kis_brightness_contrast_filter.cpp:146
-msgid "&Brightness/Contrast curve..."
-msgstr "Coube &rilujhance/contrasse..."
-
 #: plugins/filters/colorsfilters/kis_brightness_contrast_filter.h:87
 msgid "Brightness / Contrast"
 msgstr "Rilujhance / Contrasse"
@@ -10711,14 +10707,6 @@ msgstr "Rilujhance / Contrasse"
 msgid "&HSV Adjustment..."
 msgstr "Metaedje a pont &HSV..."
 
-#: plugins/filters/colorsfilters/colorsfilters.cpp:91
-msgid "&Auto Contrast"
-msgstr "Contrasse otom&atike"
-
-#: plugins/filters/colorsfilters/colorsfilters.cpp:198
-msgid "&Desaturate"
-msgstr "&Dissaturer"
-
 #: plugins/filters/colorsfilters/kis_perchannel_filter.h:85
 msgid "Color Adjustment"
 msgstr "Metaedje a pont del coleur"
@@ -10726,6 +10714,18 @@ msgstr "Metaedje a pont del coleur"
 #: plugins/filters/colorsfilters/kis_perchannel_filter.cpp:369
 msgid "&Color Adjustment curves..."
 msgstr "&Coubes do metaedje a pont del coleur..."
+
+#: plugins/filters/colorsfilters/colorsfilters.cpp:91
+msgid "&Auto Contrast"
+msgstr "Contrasse otom&atike"
+
+#: plugins/filters/colorsfilters/colorsfilters.cpp:197
+msgid "&Desaturate"
+msgstr "&Dissaturer"
+
+#: plugins/filters/colorsfilters/kis_brightness_contrast_filter.cpp:143
+msgid "&Brightness/Contrast curve..."
+msgstr "Coube &rilujhance/contrasse..."
 
 #: plugins/filters/convolutionfilters/convolutionfilters.h:34
 msgid "Sharpen"
@@ -10857,12 +10857,6 @@ msgstr "Raptitixheu do brut Gausyin"
 msgid "Wavelet Noise Reducer"
 msgstr "Raptitixheu do brut des wachletes"
 
-#: plugins/filters/imageenhancement/kis_wavelet_noise_reduction.cpp:38
-#, fuzzy
-#| msgid "&Wavelet Noise Reducer"
-msgid "&Wavelet Noise Reducer..."
-msgstr "Raptitixheu do brut des &wachletes"
-
 #: plugins/filters/imageenhancement/kis_simple_noise_reducer.cpp:41
 #, fuzzy
 #| msgid "&Gaussian Noise Reduction"
@@ -10873,19 +10867,25 @@ msgstr "Raptitixheu do brut &Gausyin"
 msgid "Window size"
 msgstr "Grandeu del finiesse"
 
+#: plugins/filters/imageenhancement/kis_wavelet_noise_reduction.cpp:38
+#, fuzzy
+#| msgid "&Wavelet Noise Reducer"
+msgid "&Wavelet Noise Reducer..."
+msgstr "Raptitixheu do brut des &wachletes"
+
 #: plugins/filters/levelfilter/kis_level_filter.cpp:49
 #, fuzzy
 #| msgid "&Levels"
 msgid "&Levels..."
 msgstr "&Liveas"
 
-#: plugins/filters/noisefilter/noisefilter.cpp:70
-msgid "&Random Noise..."
-msgstr "Brut a l' &astcheyance..."
-
 #: plugins/filters/noisefilter/noisefilter.h:52
 msgid "Noise"
 msgstr "Brut"
+
+#: plugins/filters/noisefilter/noisefilter.cpp:70
+msgid "&Random Noise..."
+msgstr "Brut a l' &astcheyance..."
 
 #: plugins/filters/oilpaintfilter/kis_oilpaint_filter.cpp:58
 msgid "&Oilpaint..."
@@ -10954,13 +10954,13 @@ msgstr "Ouys di pexhon"
 msgid "Raindrops"
 msgstr "Gotes di plouve"
 
-#: plugins/filters/randompickfilter/randompickfilter.cpp:71
-msgid "&Random Pick..."
-msgstr "&Apicaedje a l' astcheyance..."
-
 #: plugins/filters/randompickfilter/randompickfilter.h:50
 msgid "Random Pick"
 msgstr "Apicaedje a l' astcheyance"
+
+#: plugins/filters/randompickfilter/randompickfilter.cpp:71
+msgid "&Random Pick..."
+msgstr "&Apicaedje a l' astcheyance..."
 
 #: plugins/filters/roundcorners/kis_round_corners_filter.cpp:53
 msgid "&Round Corners..."
@@ -10970,17 +10970,17 @@ msgstr "A&rondeyès coines..."
 msgid "Round Corners"
 msgstr "Arondeyès coines"
 
+#: plugins/filters/smalltilesfilter/kis_small_tiles_filter.h:43
+msgid "Small Tiles"
+msgstr "Pitits cwåreas"
+
 #: plugins/filters/smalltilesfilter/kis_small_tiles_filter.cpp:58
 msgid "&Small Tiles..."
 msgstr "&Pitits cwåreas..."
 
-#: plugins/filters/smalltilesfilter/kis_small_tiles_filter.cpp:104
+#: plugins/filters/smalltilesfilter/kis_small_tiles_filter.cpp:103
 msgid "Number of tiles"
 msgstr "Nombe di cwåreas"
-
-#: plugins/filters/smalltilesfilter/kis_small_tiles_filter.h:43
-msgid "Small Tiles"
-msgstr "Pitits cwåreas"
 
 #: plugins/filters/sobelfilter/kis_sobel_filter.cpp:79
 msgid "&Sobel..."
@@ -11014,18 +11014,23 @@ msgstr "Masse di netisté"
 msgid "&Unsharp Mask..."
 msgstr "Masse di &netisté..."
 
-#: plugins/filters/wavefilter/wavefilter.cpp:106
-msgid "&Wave..."
-msgstr "&Wache..."
-
 #: plugins/filters/wavefilter/wavefilter.h:53
 msgid "Wave"
 msgstr "Wache"
+
+#: plugins/filters/wavefilter/wavefilter.cpp:106
+msgid "&Wave..."
+msgstr "&Wache..."
 
 #: plugins/formats/exr/exr_export.cc:63
 #: plugins/formats/tiff/kis_dlg_options_tiff.cpp:36
 msgid "TIFF Export Options"
 msgstr ""
+
+#: plugins/formats/jp2/jp2_export.cc:71
+#, fuzzy
+msgid "JPEG 2000 Export Options"
+msgstr "Tchuzes del djeyometreye"
 
 #: plugins/formats/jp2/jp2_converter.cc:344
 #: plugins/formats/jp2/jp2_converter.cc:355
@@ -11037,17 +11042,12 @@ msgstr ""
 msgid "Cannot export images in %1.\n"
 msgstr "Dji n' sai ebaguer imådjes e %1.\n"
 
-#: plugins/formats/jp2/jp2_export.cc:71
-#, fuzzy
-msgid "JPEG 2000 Export Options"
-msgstr "Tchuzes del djeyometreye"
-
 #: plugins/formats/jpeg/kis_jpeg_export.cc:69
 #, fuzzy
 msgid "JPEG Export Options"
 msgstr "Tchuzes del djeyometreye"
 
-#: plugins/formats/odg/kis_odg_import.cc:152
+#: plugins/formats/odg/kis_odg_import.cc:146
 #, fuzzy
 #| msgid "Flake shapes %1"
 msgid "Flake shapes"
@@ -12337,39 +12337,6 @@ msgstr ""
 msgid "Assistant Magnetism"
 msgstr "Magnetisse:"
 
-#: plugins/tools/defaulttools/kis_tool_fill.cc:208
-msgid "Threshold: "
-msgstr "Soû:"
-
-#: plugins/tools/defaulttools/kis_tool_fill.cc:216
-msgid "Use pattern"
-msgstr "Eployî patron"
-
-#: plugins/tools/defaulttools/kis_tool_fill.cc:217
-msgid ""
-"When checked do not use the foreground color, but the gradient selected to "
-"fill with"
-msgstr ""
-"Cwand c' est clitchî, dji n' eploye nén l' coleur di dvant mins l' gradyint "
-"tchoezi po rimpli"
-
-#: plugins/tools/defaulttools/kis_tool_fill.cc:221
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:141
-msgid "Limit to current layer"
-msgstr "Limiter al coûtche do moumint"
-
-#: plugins/tools/defaulttools/kis_tool_fill.cc:225
-msgid "Fill entire selection"
-msgstr "Rimpli tot l' tchoes"
-
-#: plugins/tools/defaulttools/kis_tool_fill.cc:226
-msgid ""
-"When checked do not look at the current layer colors, but just fill all of "
-"the selected area"
-msgstr ""
-"Cwand c' est clitchî, dji n' riwaite nén les coleurs del coûtche do mumint "
-"mins dj' rimpli djusse li redjon tchoezeye"
-
 #: plugins/tools/defaulttools/kis_tool_line.cc:85
 #, fuzzy
 #| msgid "X-Tilt"
@@ -12449,6 +12416,39 @@ msgstr "Ponde avou des pinceas"
 msgid "MultiBrush"
 msgstr "Pincea"
 
+#: plugins/tools/defaulttools/kis_tool_fill.cc:207
+msgid "Threshold: "
+msgstr "Soû:"
+
+#: plugins/tools/defaulttools/kis_tool_fill.cc:215
+msgid "Use pattern"
+msgstr "Eployî patron"
+
+#: plugins/tools/defaulttools/kis_tool_fill.cc:216
+msgid ""
+"When checked do not use the foreground color, but the gradient selected to "
+"fill with"
+msgstr ""
+"Cwand c' est clitchî, dji n' eploye nén l' coleur di dvant mins l' gradyint "
+"tchoezi po rimpli"
+
+#: plugins/tools/defaulttools/kis_tool_fill.cc:220
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:141
+msgid "Limit to current layer"
+msgstr "Limiter al coûtche do moumint"
+
+#: plugins/tools/defaulttools/kis_tool_fill.cc:224
+msgid "Fill entire selection"
+msgstr "Rimpli tot l' tchoes"
+
+#: plugins/tools/defaulttools/kis_tool_fill.cc:225
+msgid ""
+"When checked do not look at the current layer colors, but just fill all of "
+"the selected area"
+msgstr ""
+"Cwand c' est clitchî, dji n' riwaite nén les coleurs del coûtche do mumint "
+"mins dj' rimpli djusse li redjon tchoezeye"
+
 #: plugins/tools/selectiontools/kis_tool_select_brush.h:74
 #, fuzzy
 #| msgid "Selection Brush"
@@ -12509,14 +12509,9 @@ msgid "Contiguous Area Selection"
 msgstr "Tchoes d' ene redjon avou tot c' k' est a costé"
 
 #: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:129
-#: plugins/tools/selectiontools/kis_tool_select_similar.cc:147
+#: plugins/tools/selectiontools/kis_tool_select_similar.cc:144
 msgid "Fuzziness: "
 msgstr "Nén precis - livea: "
-
-#: plugins/tools/selectiontools/kis_tool_select_similar.cc:123
-#: plugins/tools/selectiontools/kis_tool_select_similar.cc:142
-msgid "Similar Selection"
-msgstr "Tchoes k' î rshonnèt"
 
 #: plugins/tools/selectiontools/kis_tool_select_path.cc:143
 #, fuzzy
@@ -12559,6 +12554,11 @@ msgstr "Tchoes poligonå"
 #: plugins/tools/selectiontools/kis_tool_select_rectangular.cc:83
 msgid "Rectangular Selection"
 msgstr "Tchoes rectangulåre"
+
+#: plugins/tools/selectiontools/kis_tool_select_similar.cc:120
+#: plugins/tools/selectiontools/kis_tool_select_similar.cc:139
+msgid "Similar Selection"
+msgstr "Tchoes k' î rshonnèt"
 
 #: plugins/tools/tool_crop/kis_tool_crop.h:148
 msgid "Crop the image to an area"
@@ -12711,35 +12711,6 @@ msgstr "Dessiner ene sitoele avou l' pincea do moumint"
 msgid "Star"
 msgstr "Sitoele"
 
-#: plugins/tools/tool_transform2/kis_tool_transform.cc:2106
-#, fuzzy
-#| msgid "Tool information"
-msgid "Apply Transformation"
-msgstr "Pondants et djondants d' l' usteye"
-
-#: plugins/tools/tool_transform2/kis_tool_transform.cc:2363
-#, fuzzy
-#| msgid "fine"
-msgid "Affine"
-msgstr "fén"
-
-#: plugins/tools/tool_transform2/kis_tool_transform.cc:2364
-#, fuzzy
-#| msgid "Amplitude:"
-msgid "Similitude"
-msgstr "Amplitude:"
-
-#: plugins/tools/tool_transform2/kis_tool_transform.cc:2365
-#, fuzzy
-#| msgid "Right"
-msgid "Rigid"
-msgstr "Droete"
-
-#: plugins/tools/tool_transform2/kis_tool_transform.cc:2511
-#: plugins/tools/tool_transform2/kis_tool_transform.cc:2896
-msgid "Unlock Points"
-msgstr ""
-
 #: plugins/tools/tool_transform2/kis_tool_transform.h:435
 msgid "Transform a layer or a selection"
 msgstr "Candjî ene coûtche ou on tchoes"
@@ -12756,6 +12727,35 @@ msgstr "Pondants et djondants d' l' usteye"
 msgctxt "(qtundo-format)"
 msgid "Transform"
 msgstr "Transformer"
+
+#: plugins/tools/tool_transform2/kis_tool_transform.cc:2098
+#, fuzzy
+#| msgid "Tool information"
+msgid "Apply Transformation"
+msgstr "Pondants et djondants d' l' usteye"
+
+#: plugins/tools/tool_transform2/kis_tool_transform.cc:2355
+#, fuzzy
+#| msgid "fine"
+msgid "Affine"
+msgstr "fén"
+
+#: plugins/tools/tool_transform2/kis_tool_transform.cc:2356
+#, fuzzy
+#| msgid "Amplitude:"
+msgid "Similitude"
+msgstr "Amplitude:"
+
+#: plugins/tools/tool_transform2/kis_tool_transform.cc:2357
+#, fuzzy
+#| msgid "Right"
+msgid "Rigid"
+msgstr "Droete"
+
+#: plugins/tools/tool_transform2/kis_tool_transform.cc:2503
+#: plugins/tools/tool_transform2/kis_tool_transform.cc:2888
+msgid "Unlock Points"
+msgstr ""
 
 #: ui/kis_filter_handler.cc:110
 #, kde-format
@@ -13422,7 +13422,7 @@ msgstr "As&plati imådje"
 msgid "&Flatten Layer"
 msgstr "A&splati coûtche"
 
-#: ui/kis_layer_manager.cc:147 ui/kis_layer_manager.cc:831
+#: ui/kis_layer_manager.cc:147 ui/kis_layer_manager.cc:821
 #, fuzzy
 #| msgid "Rotate Layer"
 msgid "Rasterize Layer"
@@ -13436,56 +13436,56 @@ msgstr "Schaper coûtche come imådje..."
 msgid "Size Canvas to Size of Current Layer"
 msgstr "Grandeu del toele come li cene del coûtche do moumint"
 
-#: ui/kis_layer_manager.cc:205
+#: ui/kis_layer_manager.cc:203
 msgid "Resize Image to Size of Current Layer"
 msgstr "Candjî l' grandeu come li cene del coûtche do moumint"
 
-#: ui/kis_layer_manager.cc:236
+#: ui/kis_layer_manager.cc:226
 msgid "Filter Layer Properties"
 msgstr "Prôpietés del coûtche passete"
 
-#: ui/kis_layer_manager.cc:265
+#: ui/kis_layer_manager.cc:255
 msgid "Generator Layer Properties"
 msgstr "Prôpietés del coûtche djeneratresse"
 
-#: ui/kis_layer_manager.cc:318 ui/kis_layer_manager.cc:334
-#: ui/kis_layer_manager.cc:378 ui/kis_layer_manager.cc:411
-#: ui/kis_layer_manager.cc:549
+#: ui/kis_layer_manager.cc:308 ui/kis_layer_manager.cc:324
+#: ui/kis_layer_manager.cc:368 ui/kis_layer_manager.cc:401
+#: ui/kis_layer_manager.cc:539
 msgid "Could not add layer to image."
 msgstr "Dji n' a savou radjouter l' coûtche a l' imådje."
 
-#: ui/kis_layer_manager.cc:318 ui/kis_layer_manager.cc:334
-#: ui/kis_layer_manager.cc:378 ui/kis_layer_manager.cc:411
-#: ui/kis_layer_manager.cc:549
+#: ui/kis_layer_manager.cc:308 ui/kis_layer_manager.cc:324
+#: ui/kis_layer_manager.cc:368 ui/kis_layer_manager.cc:401
+#: ui/kis_layer_manager.cc:539
 msgid "Layer Error"
 msgstr "Aroke di coûtche"
 
-#: ui/kis_layer_manager.cc:441
+#: ui/kis_layer_manager.cc:431
 msgid "New Filter Layer"
 msgstr "Novele coûtche di passete"
 
-#: ui/kis_layer_manager.cc:626 ui/kis_layer_manager.cc:636
+#: ui/kis_layer_manager.cc:616 ui/kis_layer_manager.cc:626
 msgid "Mirror Layer X"
 msgstr "Coûtche e muroe X"
 
-#: ui/kis_layer_manager.cc:653 ui/kis_layer_manager.cc:663
+#: ui/kis_layer_manager.cc:643 ui/kis_layer_manager.cc:653
 #: ui/kis_mask_manager.cc:378
 msgid "Mirror Layer Y"
 msgstr "Coûtche muroe Y"
 
-#: ui/kis_layer_manager.cc:685
+#: ui/kis_layer_manager.cc:675
 msgid "Scale Layer"
 msgstr "Mete al schåle coûtche"
 
-#: ui/kis_layer_manager.cc:738 ui/kis_layer_manager.cc:741
+#: ui/kis_layer_manager.cc:728 ui/kis_layer_manager.cc:731
 msgid "Shear layer"
 msgstr "Taeyî coûtche"
 
-#: ui/kis_layer_manager.cc:767
+#: ui/kis_layer_manager.cc:757
 msgid "The image contains hidden layers that will be lost."
 msgstr "I gn a dins l' imådje des coûtches catcheyes: ele seront pierdowes."
 
-#: ui/kis_layer_manager.cc:769
+#: ui/kis_layer_manager.cc:759
 msgid "&Flatten Image"
 msgstr "&Asplati imådje"
 
