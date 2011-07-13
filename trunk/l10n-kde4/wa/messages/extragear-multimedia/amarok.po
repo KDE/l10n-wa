@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-07-12 04:01+0200\n"
+"POT-Creation-Date: 2011-07-13 03:51+0200\n"
 "PO-Revision-Date: 2011-07-02 20:37+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -3379,7 +3379,7 @@ msgstr "Etiketes a vosse môde po c' cayet ci :"
 
 #. i18n: file: dialogs/TagDialogBase.ui:1073
 #. i18n: ectx: property (text), widget (QPushButton, removeButton)
-#: rc.cpp:1558 playlistmanager/file/PlaylistFileProvider.cpp:198
+#: rc.cpp:1558 playlistmanager/file/PlaylistFileProvider.cpp:200
 msgid "Remove"
 msgstr "Oister"
 
@@ -6502,19 +6502,6 @@ msgstr ""
 msgid "This bias has no settings."
 msgstr ""
 
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:173
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:222
-#, kde-format
-msgctxt "number of playlists from one source"
-msgid "One Playlist"
-msgid_plural "%1 playlists"
-msgstr[0] "Ene djivêye a djouwer"
-msgstr[1] "%1 djivêyes a djouwer"
-
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:439
-msgid "Source"
-msgstr "Sourdant"
-
 #: browsers/playlistbrowser/APGCategory.cpp:42
 msgid "Automated Playlist Generator"
 msgstr "Djenerateu d' djivêyes a djouwer otomatijhî"
@@ -6813,7 +6800,7 @@ msgstr "Tapez li no do novea ridant :"
 
 #: browsers/playlistbrowser/PlaylistsInFoldersProxy.cpp:333
 #: core-impl/collections/umscollection/podcasts/UmsPodcastProvider.cpp:251
-#: playlistmanager/file/PlaylistFileProvider.cpp:418
+#: playlistmanager/file/PlaylistFileProvider.cpp:453
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:117
 msgid "Confirm Delete"
 msgstr "Racertiner disfaçaedje"
@@ -6849,6 +6836,19 @@ msgstr ""
 "radjoute otomaticmint tolminme kéne djivêye a djouwer k' i trove cwand i "
 "scane vosse ramexhnêye eyet tolminme kéne djivêye a djouwer ki vs schapez "
 "sont mostrêyes chal, eto."
+
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:173
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:222
+#, kde-format
+msgctxt "number of playlists from one source"
+msgid "One Playlist"
+msgid_plural "%1 playlists"
+msgstr[0] "Ene djivêye a djouwer"
+msgstr[1] "%1 djivêyes a djouwer"
+
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:439
+msgid "Source"
+msgstr "Sourdant"
 
 #: browsers/servicebrowser/ServiceBrowser.cpp:40
 msgid ""
@@ -8677,14 +8677,14 @@ msgstr[1] "Dji disface des bokets di l' iPod"
 
 #: core-impl/collections/mediadevicecollection/playlist/MediaDeviceUserPlaylistProvider.cpp:115
 #: playlistmanager/PlaylistManager.cpp:342
-#: playlistmanager/file/PlaylistFileProvider.cpp:446
+#: playlistmanager/file/PlaylistFileProvider.cpp:481
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:148
 msgid "Change playlist"
 msgstr "Candjî d' djivêye a djouwer"
 
 #: core-impl/collections/mediadevicecollection/playlist/MediaDeviceUserPlaylistProvider.cpp:116
 #: playlistmanager/PlaylistManager.cpp:343
-#: playlistmanager/file/PlaylistFileProvider.cpp:447
+#: playlistmanager/file/PlaylistFileProvider.cpp:482
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:149
 msgid "Enter new name for playlist:"
 msgstr "Taper novea no pol djivêye a djouwer:"
@@ -13109,34 +13109,34 @@ msgstr "Abaguer ramexhnêye"
 msgid "Downloading Playlist"
 msgstr "Dj' aberwete ene djivêye a djouwer"
 
-#: playlistmanager/file/PlaylistFileProvider.cpp:82
+#: playlistmanager/file/PlaylistFileProvider.cpp:84
 #, fuzzy
 #| msgid "Playlist Files"
 msgid "Playlist Files on Disk"
 msgstr "Fitchîs d' djivêye a djouwer"
 
-#: playlistmanager/file/PlaylistFileProvider.cpp:124
+#: playlistmanager/file/PlaylistFileProvider.cpp:126
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:190
 #, fuzzy
 #| msgid "&Rename"
 msgid "&Rename..."
 msgstr "&Rilomer"
 
-#: playlistmanager/file/PlaylistFileProvider.cpp:136
+#: playlistmanager/file/PlaylistFileProvider.cpp:138
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:202
 #, fuzzy
 #| msgid "&Delete"
 msgid "&Delete..."
 msgstr "&Disfacer"
 
-#: playlistmanager/file/PlaylistFileProvider.cpp:192
+#: playlistmanager/file/PlaylistFileProvider.cpp:194
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:247
 #, fuzzy
 #| msgid "Repeat Track"
 msgid "Remove tracks"
 msgstr "Repeter boket"
 
-#: playlistmanager/file/PlaylistFileProvider.cpp:195
+#: playlistmanager/file/PlaylistFileProvider.cpp:197
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:250
 #, fuzzy, kde-format
 #| msgid "Remove From Playlist"
@@ -13144,13 +13144,13 @@ msgctxt "Remove a track from a saved playlist"
 msgid "Remove From \"%1\""
 msgstr "Oister del djivêye a djouwer"
 
-#: playlistmanager/file/PlaylistFileProvider.cpp:363
-#: playlistmanager/file/PlaylistFileProvider.cpp:391
+#: playlistmanager/file/PlaylistFileProvider.cpp:365
+#: playlistmanager/file/PlaylistFileProvider.cpp:393
 #, kde-format
 msgid "The playlist file \"%1\" could not be loaded."
 msgstr "Dji n' a sepou tcherdjî l' djivêye a djouwer « %1 »."
 
-#: playlistmanager/file/PlaylistFileProvider.cpp:420
+#: playlistmanager/file/PlaylistFileProvider.cpp:455
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:119
 #, fuzzy, kde-format
 #| msgid "Are you sure you want to uninstall the script '%1'?"
@@ -13159,7 +13159,7 @@ msgid_plural "Are you sure you want to delete these %1 playlist files?"
 msgstr[0] "Estoz seur di voleur disastaler l' sicripe «%1» podbon?"
 msgstr[1] "Estoz seur di voleur disastaler l' sicripe «%1» podbon?"
 
-#: playlistmanager/file/PlaylistFileProvider.cpp:426
+#: playlistmanager/file/PlaylistFileProvider.cpp:461
 msgid "Yes, delete from disk."
 msgstr "Oyi, l' disfacer del plake."
 
