@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-07-26 03:52+0200\n"
+"POT-Creation-Date: 2011-07-27 03:41+0200\n"
 "PO-Revision-Date: 2011-01-17 22:02+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -132,6 +132,25 @@ msgstr "Dji n' a savou tcherdjî l' tchôke-divins « %1 »."
 msgctxt "database connection"
 msgid "(connection %1)"
 msgstr "(raloyaedje %1)"
+
+#: core/KexiWindow.cpp:612
+msgid ""
+"Design has been changed. You must save it before switching to other view."
+msgstr ""
+"L' atuzlaedje a candjî. Vos l' divoz schaper divant d' passer a l' ôte vuwe."
+
+#: core/KexiWindow.cpp:677 main/KexiMainWindow.cpp:3582
+#, kde-format
+msgid "Switching to other view failed (%1)."
+msgstr "Li passaedje a l' ôte vuwe a fwait berwete (%1)."
+
+#: core/KexiWindow.cpp:859
+msgid "Saving object's definition failed."
+msgstr "Li schapaedje do definixha da l' objet a fwait berwete."
+
+#: core/KexiWindow.cpp:943
+msgid "Saving object's data failed."
+msgstr "Li schapaedje des dinêyes da l' objet a fwait berwete."
 
 #: core/kexicmdlineargs.h:32
 msgid "Options related to entire projects:"
@@ -751,25 +770,6 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "jean.cayron@gmail.com"
 
-#: core/KexiWindow.cpp:612
-msgid ""
-"Design has been changed. You must save it before switching to other view."
-msgstr ""
-"L' atuzlaedje a candjî. Vos l' divoz schaper divant d' passer a l' ôte vuwe."
-
-#: core/KexiWindow.cpp:677 main/KexiMainWindow.cpp:3582
-#, kde-format
-msgid "Switching to other view failed (%1)."
-msgstr "Li passaedje a l' ôte vuwe a fwait berwete (%1)."
-
-#: core/KexiWindow.cpp:859
-msgid "Saving object's definition failed."
-msgstr "Li schapaedje do definixha da l' objet a fwait berwete."
-
-#: core/KexiWindow.cpp:943
-msgid "Saving object's data failed."
-msgstr "Li schapaedje des dinêyes da l' objet a fwait berwete."
-
 #: core/kexi.cpp:122
 msgid "&No View"
 msgstr "&Nole vuwe"
@@ -807,7 +807,8 @@ msgstr "estat_sql"
 #| msgid ""
 #| "You can correct data in this row or use \"Cancel row changes\" function."
 msgid ""
-"You can correct data in this row or use \"Cancel record changes\" function."
+"You can correct data in this record or use \"Cancel record changes\" "
+"function."
 msgstr ""
 "Vos savoz coridjî les dnêyes di cisse roye e vs siervant del fonccion "
 "« Rinoncî ås candjmints del roye »."
@@ -2620,22 +2621,6 @@ msgstr "Oister cayet"
 msgid "file"
 msgstr ""
 
-#: kexidb/cursor.cpp:145
-msgid "No query statement or schema defined."
-msgstr ""
-
-#: kexidb/cursor.cpp:155
-msgid "Query statement is empty."
-msgstr ""
-
-#: kexidb/cursor.cpp:165
-msgid "Error opening database cursor."
-msgstr ""
-
-#: kexidb/cursor.cpp:410 kexidb/cursor.cpp:433
-msgid "Cannot fetch next record."
-msgstr ""
-
 #: kexidb/dbobjectnamevalidator.cpp:46
 #, kde-format
 msgid ""
@@ -3466,6 +3451,22 @@ msgstr "Li disfaçaedje del roye a fwait berwete."
 #: kexidb/queryschema.cpp:263
 msgctxt "short for 'expression' word, e.g. 'expr' (only latin letters, please)"
 msgid "expr"
+msgstr ""
+
+#: kexidb/cursor.cpp:145
+msgid "No query statement or schema defined."
+msgstr ""
+
+#: kexidb/cursor.cpp:155
+msgid "Query statement is empty."
+msgstr ""
+
+#: kexidb/cursor.cpp:165
+msgid "Error opening database cursor."
+msgstr ""
+
+#: kexidb/cursor.cpp:410 kexidb/cursor.cpp:433
+msgid "Cannot fetch next record."
 msgstr ""
 
 #: kexiutils/identifier.cpp:92
@@ -7221,26 +7222,6 @@ msgstr "Coridjîz les candjmints"
 msgid "Discard Changes"
 msgstr "Rinoncî åzès candjmints"
 
-#: widget/tableview/kexitableview.cpp:120
-#, fuzzy
-#| msgid "Contains a pointer to the currently selected row"
-msgid "Contains a pointer to the currently selected record"
-msgstr "A on pwinteu viè l' roye tchoezeye pol moumint"
-
-#: widget/tableview/kexitableview.cpp:122
-#, fuzzy
-#| msgid "Row navigator"
-msgid "Record navigator"
-msgstr "Naivieu de royes"
-
-#: widget/tableview/kexitableview.cpp:242
-msgid "Add Record"
-msgstr "Radjouter eredjistraedje"
-
-#: widget/tableview/kexitableview.cpp:245
-msgid "Remove Record"
-msgstr "Oister eredjistraedje"
-
 #: widget/tableview/kexitableviewdata.cpp:596
 #: widget/tableview/kexitableviewdata.cpp:607
 #, kde-format
@@ -7264,6 +7245,26 @@ msgstr "Li candjaedje del roye a fwait berwete."
 #| msgid "Row deleting failed."
 msgid "Record deleting failed."
 msgstr "Li disfaçaedje del roye a fwait berwete."
+
+#: widget/tableview/kexitableview.cpp:120
+#, fuzzy
+#| msgid "Contains a pointer to the currently selected row"
+msgid "Contains a pointer to the currently selected record"
+msgstr "A on pwinteu viè l' roye tchoezeye pol moumint"
+
+#: widget/tableview/kexitableview.cpp:122
+#, fuzzy
+#| msgid "Row navigator"
+msgid "Record navigator"
+msgstr "Naivieu de royes"
+
+#: widget/tableview/kexitableview.cpp:242
+msgid "Add Record"
+msgstr "Radjouter eredjistraedje"
+
+#: widget/tableview/kexitableview.cpp:245
+msgid "Remove Record"
+msgstr "Oister eredjistraedje"
 
 #: widget/utils/kexidatetimeformatter.cpp:303
 msgid "pm"
