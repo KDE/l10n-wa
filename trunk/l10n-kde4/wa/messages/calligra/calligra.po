@@ -11,10 +11,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-07-30 03:40+0200\n"
+"POT-Creation-Date: 2011-08-02 03:59+0200\n"
 "PO-Revision-Date: 2011-01-17 21:09+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -280,6 +281,12 @@ msgctxt "(qtundo-format)"
 msgid "Move shapes"
 msgstr "Bodjî cognes"
 
+#: flake/commands/KoShapeRenameCommand.cpp:44
+#, fuzzy
+#| msgid "Create Shapes"
+msgid "Rename Shape"
+msgstr "Ahiver des cognes"
+
 #: flake/commands/KoShapeReorderCommand.cpp:51
 #, fuzzy
 #| msgid "Reorder shapes"
@@ -524,8 +531,8 @@ msgstr ""
 msgid ""
 "A script package with the name \"%1\" already exists. Replace this package?"
 msgstr ""
-"On pacaedje di scripe avou l' no « %1 » egzistêye dedja. Replaecî c' pacaedje "
-"la ?"
+"On pacaedje di scripe avou l' no « %1 » egzistêye dedja. Replaecî c' "
+"pacaedje la ?"
 
 #: kokross/KoScriptManager.cpp:246
 msgid "Replace"
@@ -555,8 +562,8 @@ msgid ""
 "Could not uninstall the script package \"%1\". You may not have sufficient "
 "permissions to delete the folder \"%1\"."
 msgstr ""
-"Dji n' a savou disastaler l' pacaedje di scripe « %1 ». Motoit k' vos n' avoz "
-"pont d' droets assez po disfacer l' ridant « %1 »."
+"Dji n' a savou disastaler l' pacaedje di scripe « %1 ». Motoit k' vos n' "
+"avoz pont d' droets assez po disfacer l' ridant « %1 »."
 
 #: kokross/KoScriptManager.cpp:297 kokross/KoScriptingDocker.cpp:111
 msgid "Script Manager"
@@ -625,7 +632,7 @@ msgstr "Manaedjeu des scripes"
 msgid "Execute Script File"
 msgstr "Enonder l' fitchî scripe"
 
-#: kopageapp/KoPAPageThumbnailModel.cpp:67 kopageapp/KoPADocumentModel.cpp:166
+#: kopageapp/KoPAPageThumbnailModel.cpp:67 kopageapp/KoPADocumentModel.cpp:172
 #, kde-format
 msgid "Slide %1"
 msgstr "Diya %1"
@@ -810,38 +817,116 @@ msgctxt "(qtundo-format)"
 msgid "Change background image"
 msgstr "Candjî imådje di fond"
 
-#: kopageapp/KoPADocumentModel.cpp:168
-#, kde-format
-msgid "Page  %1"
-msgstr "Pådje  %1"
+#: kopageapp/KoPADocumentStructureDocker.cpp:96 main/KoMainWindow.cpp:1732
+msgid "Document"
+msgstr "Documint"
 
-#: kopageapp/KoPADocumentModel.cpp:172
-#: kopageapp/KoPADocumentStructureDocker.cpp:118
+#: kopageapp/KoPADocumentStructureDocker.cpp:105
+msgid "Add a new slide or layer"
+msgstr "Radjouter ene novele diapo ou coûtche"
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:107
+msgid "Add a new page or layer"
+msgstr "Radjouter ene novele pådje ou coûtche"
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:115
+msgid "Slide"
+msgstr "Diya"
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:117
+#: widgets/KoPageLayoutDialog.cpp:50
+msgid "Page"
+msgstr "Pådje"
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:119
+#: kopageapp/KoPADocumentModel.cpp:178
 msgid "Layer"
 msgstr "Coûtche"
 
-#: kopageapp/KoPADocumentModel.cpp:175
-msgid "Group"
-msgstr "Groupe"
+#: kopageapp/KoPADocumentStructureDocker.cpp:126
+#: kopageapp/KoPADocumentStructureDocker.cpp:647
+msgid "Delete selected objects"
+msgstr "Oister les objets tchoezis"
 
-#: kopageapp/KoPADocumentModel.cpp:178
-msgid "Shape"
-msgstr "Fôme"
+#: kopageapp/KoPADocumentStructureDocker.cpp:132
+msgid "Raise selected objects"
+msgstr "Agrandi les objets tchoezis"
 
-#: kopageapp/KoPADocumentModel.cpp:291
-msgid "Visible"
-msgstr "Veyåve"
+#: kopageapp/KoPADocumentStructureDocker.cpp:138
+msgid "Lower selected objects"
+msgstr "Raptiti les objets tchoezis"
 
-#: kopageapp/KoPADocumentModel.cpp:292
-msgid "Locked"
-msgstr "Eclawé"
+#: kopageapp/KoPADocumentStructureDocker.cpp:147
+msgid "Minimal View"
+msgstr "Vuwe minimåle"
 
-#: kopageapp/KoPADocumentModel.cpp:505 kopageapp/KoPADocumentModel.cpp:526
+#: kopageapp/KoPADocumentStructureDocker.cpp:149
+msgid "Detailed View"
+msgstr "Sipepieuse vuwe"
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:151
+msgid "Thumbnail View"
+msgstr "Vuwe avou prévoeyaedje"
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:161
+msgid "View mode"
+msgstr "Môde di vuwe"
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:330
+msgid "New Layer"
+msgstr "Novele coûtche"
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:330
+msgid "Enter the name of the new layer:"
+msgstr "Tapez l' no del novele coûtche:"
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:331
+msgid "New layer"
+msgstr "Novele coûtche"
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:345
 #, fuzzy
-#| msgid "Reparent shapes"
+#| msgid "Create Layer"
 msgctxt "(qtundo-format)"
-msgid "Reparent shapes"
-msgstr "Ramete fômes"
+msgid "Create Layer"
+msgstr "Ahiver coûtche"
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:374
+#, fuzzy
+#| msgid "Delete Layer"
+msgctxt "(qtundo-format)"
+msgid "Delete Layer"
+msgstr "Disfacer coûtche"
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:378
+msgid "Could not delete all layers. At least one layer is required."
+msgstr ""
+"Dji n' a savou disfacer totes les coûtches. I fåt pol moens ene coûtche."
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:378
+msgid "Error deleting layers"
+msgstr "Åk n' a nén stî come dji disfacéve des coûtches"
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:646
+msgid "Add a new slide"
+msgstr "Radjouter ene novele diya"
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:649
+#: koreport/wrtembed/KoReportDesigner.cpp:830
+msgid "Cut"
+msgstr "Côper"
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:650
+#: koreport/wrtembed/KoReportDesigner.cpp:831
+#: pigment/compositeops/KoCompositeOpCopy.h:37
+#: pigment/compositeops/KoCompositeOpCopy2.h:42
+msgid "Copy"
+msgstr "Copyî"
+
+#: kopageapp/KoPADocumentStructureDocker.cpp:651
+#: koreport/wrtembed/KoReportDesigner.cpp:834
+msgid "Paste"
+msgstr "Aclaper"
 
 #: kopageapp/KoPAPastePage.cpp:131
 #, fuzzy
@@ -957,111 +1042,71 @@ msgctxt "(qtundo-format)"
 msgid "Change page layout"
 msgstr "Candjî adjinçmint del pådje"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:95 main/KoMainWindow.cpp:1732
-msgid "Document"
-msgstr "Documint"
+#: kopageapp/KoPADocumentModel.cpp:174
+#, kde-format
+msgid "Page  %1"
+msgstr "Pådje  %1"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:104
-msgid "Add a new slide or layer"
-msgstr "Radjouter ene novele diapo ou coûtche"
+#: kopageapp/KoPADocumentModel.cpp:181
+msgid "Group"
+msgstr "Groupe"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:106
-msgid "Add a new page or layer"
-msgstr "Radjouter ene novele pådje ou coûtche"
+#: kopageapp/KoPADocumentModel.cpp:184
+msgid "Shape"
+msgstr "Fôme"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:114
-msgid "Slide"
-msgstr "Diya"
+#: kopageapp/KoPADocumentModel.cpp:270
+#, fuzzy
+#| msgid "Paste Slide"
+#| msgid_plural "Paste Slides"
+msgid "Rename Slide"
+msgstr "Aclaper dia"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:116
-#: widgets/KoPageLayoutDialog.cpp:50
-msgid "Page"
-msgstr "Pådje"
+#: kopageapp/KoPADocumentModel.cpp:273
+#, fuzzy
+#| msgid "Home Page"
+msgid "Rename Page"
+msgstr "Pådje måjhon"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:125
-#: kopageapp/KoPADocumentStructureDocker.cpp:644
-msgid "Delete selected objects"
-msgstr "Oister les objets tchoezis"
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:131
-msgid "Raise selected objects"
-msgstr "Agrandi les objets tchoezis"
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:137
-msgid "Lower selected objects"
-msgstr "Raptiti les objets tchoezis"
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:146
-msgid "Minimal View"
-msgstr "Vuwe minimåle"
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:148
-msgid "Detailed View"
-msgstr "Sipepieuse vuwe"
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:150
-msgid "Thumbnail View"
-msgstr "Vuwe avou prévoeyaedje"
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:160
-msgid "View mode"
-msgstr "Môde di vuwe"
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:327
-msgid "New Layer"
-msgstr "Novele coûtche"
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:327
-msgid "Enter the name of the new layer:"
-msgstr "Tapez l' no del novele coûtche:"
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:328
-msgid "New layer"
-msgstr "Novele coûtche"
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:342
+#: kopageapp/KoPADocumentModel.cpp:277
 #, fuzzy
 #| msgid "Create Layer"
-msgctxt "(qtundo-format)"
-msgid "Create Layer"
+msgid "Rename Layer"
 msgstr "Ahiver coûtche"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:371
+#: kopageapp/KoPADocumentModel.cpp:307
+msgid "Visible"
+msgstr "Veyåve"
+
+#: kopageapp/KoPADocumentModel.cpp:308
+msgid "Locked"
+msgstr "Eclawé"
+
+#: kopageapp/KoPADocumentModel.cpp:532 kopageapp/KoPADocumentModel.cpp:553
 #, fuzzy
-#| msgid "Delete Layer"
+#| msgid "Reparent shapes"
 msgctxt "(qtundo-format)"
-msgid "Delete Layer"
-msgstr "Disfacer coûtche"
+msgid "Reparent shapes"
+msgstr "Ramete fômes"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:375
-msgid "Could not delete all layers. At least one layer is required."
-msgstr ""
-"Dji n' a savou disfacer totes les coûtches. I fåt pol moens ene coûtche."
+#: kopageapp/KoPADocumentModel.cpp:674
+#, fuzzy
+#| msgid "Move page"
+#| msgid_plural "Move pages"
+msgid "&Move Here"
+msgstr "Bodjî pådje"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:375
-msgid "Error deleting layers"
-msgstr "Åk n' a nén stî come dji disfacéve des coûtches"
+#: kopageapp/KoPADocumentModel.cpp:678
+#, fuzzy
+#| msgid "Green"
+msgid "&Copy Here"
+msgstr "Vert"
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:643
-msgid "Add a new slide"
-msgstr "Radjouter ene novele diya"
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:646
-#: koreport/wrtembed/KoReportDesigner.cpp:830
-msgid "Cut"
-msgstr "Côper"
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:647
-#: koreport/wrtembed/KoReportDesigner.cpp:831
-#: pigment/compositeops/KoCompositeOpCopy.h:37
-#: pigment/compositeops/KoCompositeOpCopy2.h:42
-msgid "Copy"
-msgstr "Copyî"
-
-#: kopageapp/KoPADocumentStructureDocker.cpp:648
-#: koreport/wrtembed/KoReportDesigner.cpp:834
-msgid "Paste"
-msgstr "Aclaper"
+#: kopageapp/KoPADocumentModel.cpp:682
+#, fuzzy
+#| msgid "&Cancel"
+msgid "C&ancel"
+msgstr "&Rinoncî"
 
 #. i18n: file: main/rdf/KoRdfFoaFEditWidget.ui:26
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1274,8 +1319,8 @@ msgid "Label"
 msgstr "Etikete"
 
 #: koreport/items/text/KoReportTextPlugin.cpp:34 kotext/KoTextEditor.cpp:169
-#: kotext/KoTextEditor.cpp:322 widgets/KoCsvImportDialog.cpp:216
-#: widgets/KoCsvImportDialog.cpp:569
+#: kotext/KoTextEditor.cpp:322 widgets/KoCsvImportDialog.cpp:217
+#: widgets/KoCsvImportDialog.cpp:581
 msgid "Text"
 msgstr "Tecse"
 
@@ -3877,61 +3922,6 @@ msgstr "Catchî coleurs avou on mwais contrasse"
 msgid "Add / Remove Colors..."
 msgstr "Radjouter / oister des coleurs..."
 
-#: widgets/KoCsvImportDialog.cpp:92
-msgid "Import Data"
-msgstr "Abaguer des dnêyes"
-
-#: widgets/KoCsvImportDialog.cpp:95
-#, kde-format
-msgctxt "Descriptive encoding name"
-msgid "Recommended ( %1 )"
-msgstr "Ricmandé ( %1 )"
-
-#: widgets/KoCsvImportDialog.cpp:96
-#, kde-format
-msgctxt "Descriptive encoding name"
-msgid "Locale ( %1 )"
-msgstr "Locåle ( %1 )"
-
-#: widgets/KoCsvImportDialog.cpp:99
-#, kde-format
-msgctxt "Descriptive encoding name"
-msgid "Other ( %1 )"
-msgstr "Ôte ( %1 )"
-
-#: widgets/KoCsvImportDialog.cpp:214 widgets/KoCsvImportDialog.cpp:544
-#: widgets/KoCsvImportDialog.cpp:567
-msgid "Generic"
-msgstr "Djenerike"
-
-#: widgets/KoCsvImportDialog.cpp:218 widgets/KoCsvImportDialog.cpp:571
-msgid "Date"
-msgstr "Date"
-
-#: widgets/KoCsvImportDialog.cpp:220 widgets/KoCsvImportDialog.cpp:573
-msgid "Currency"
-msgstr "Manoye"
-
-#. i18n: file: widgets/KoCsvImportDialog.ui:268
-#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
-#: widgets/KoCsvImportDialog.cpp:222 widgets/KoCsvImportDialog.cpp:575
-#: widgets/KoCsvImportDialog.cpp:682 rc.cpp:499
-msgid "None"
-msgstr "Nole"
-
-#: widgets/KoCsvImportDialog.cpp:709
-msgid ""
-"Please check the ranges you specified. The start value must be lower than "
-"the end value."
-msgstr ""
-"Waitîz s' i vs plait les fortchetes ki vs avoz specifyî. Li valixhance di "
-"cmince doet esse pus ptite kele cisse di dfén."
-
-#: widgets/KoCsvImportDialog.cpp:755
-#, kde-format
-msgid "Cannot find encoding: %1"
-msgstr "Dji n' sai trover l' ecôdaedje: %1"
-
 #: widgets/KoEditColorSetDialog.cpp:159
 msgid "Add Color To Palette"
 msgstr "Radjouter coleur al palete"
@@ -3953,6 +3943,73 @@ msgstr "Palete"
 #: widgets/KoEditColorSetDialog.cpp:211
 msgid "Add/Remove Colors"
 msgstr "Radjouter/oister coleurs"
+
+#: widgets/KoCsvImportDialog.cpp:93
+msgid "Import Data"
+msgstr "Abaguer des dnêyes"
+
+#: widgets/KoCsvImportDialog.cpp:96
+#, kde-format
+msgctxt "Descriptive encoding name"
+msgid "Recommended ( %1 )"
+msgstr "Ricmandé ( %1 )"
+
+#: widgets/KoCsvImportDialog.cpp:97
+#, kde-format
+msgctxt "Descriptive encoding name"
+msgid "Locale ( %1 )"
+msgstr "Locåle ( %1 )"
+
+#: widgets/KoCsvImportDialog.cpp:100
+#, kde-format
+msgctxt "Descriptive encoding name"
+msgid "Other ( %1 )"
+msgstr "Ôte ( %1 )"
+
+#: widgets/KoCsvImportDialog.cpp:215 widgets/KoCsvImportDialog.cpp:556
+#: widgets/KoCsvImportDialog.cpp:579
+msgid "Generic"
+msgstr "Djenerike"
+
+#: widgets/KoCsvImportDialog.cpp:219 widgets/KoCsvImportDialog.cpp:583
+msgid "Date"
+msgstr "Date"
+
+#: widgets/KoCsvImportDialog.cpp:221 widgets/KoCsvImportDialog.cpp:585
+msgid "Currency"
+msgstr "Manoye"
+
+#. i18n: file: widgets/KoCsvImportDialog.ui:268
+#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
+#: widgets/KoCsvImportDialog.cpp:223 widgets/KoCsvImportDialog.cpp:587
+#: widgets/KoCsvImportDialog.cpp:694 rc.cpp:499
+msgid "None"
+msgstr "Nole"
+
+#: widgets/KoCsvImportDialog.cpp:721
+msgid ""
+"Please check the ranges you specified. The start value must be lower than "
+"the end value."
+msgstr ""
+"Waitîz s' i vs plait les fortchetes ki vs avoz specifyî. Li valixhance di "
+"cmince doet esse pus ptite kele cisse di dfén."
+
+#: widgets/KoCsvImportDialog.cpp:767
+#, kde-format
+msgid "Cannot find encoding: %1"
+msgstr "Dji n' sai trover l' ecôdaedje: %1"
+
+#: widgets/KoSelectionToggle.cpp:133
+msgctxt "@info:tooltip"
+msgid "Deselect Item"
+msgstr ""
+
+#: widgets/KoSelectionToggle.cpp:134
+#, fuzzy
+#| msgid "Select Character"
+msgctxt "@info:tooltip"
+msgid "Select Item"
+msgstr "Tchoezi on caractere"
 
 #: widgets/KoUniColorChooser.cpp:134
 msgid "Value (brightness)"
@@ -5551,9 +5608,6 @@ msgstr "Reyon del pougneye :"
 #~ msgid "Pan Tool"
 #~ msgstr "Usteye panoramike"
 
-#~ msgid "Create Shapes"
-#~ msgstr "Ahiver des cognes"
-
 #~ msgid "Path tool"
 #~ msgstr "Usteye di tchmin"
 
@@ -5580,9 +5634,6 @@ msgstr "Reyon del pougneye :"
 
 #~ msgid "Add Bookmark"
 #~ msgstr "Radjouter ene rimåke"
-
-#~ msgid "Select Character"
-#~ msgstr "Tchoezi on caractere"
 
 #~ msgid "&Insert"
 #~ msgstr "S&ititchî:"
@@ -6384,10 +6435,10 @@ msgstr "Reyon del pougneye :"
 #~ "paragraph to use that list-style. Using a list-style formatting means "
 #~ "that a correct bullet is used to draw the list."
 #~ msgstr ""
-#~ "Cwand vos tapez on « * » ou on « - » pa dvant on hagnon d' tecse, li hagnon "
-#~ "est otomaticmint cviersé po-z eployî ci stîle di djivêye la. Eployî on "
-#~ "stîle di djivêye ça vout dire k' i gn årè pa dvant ene bole ou ene "
-#~ "loyeure di dessinêye, po ndè fé on cayet dins ene djivêye."
+#~ "Cwand vos tapez on « * » ou on « - » pa dvant on hagnon d' tecse, li "
+#~ "hagnon est otomaticmint cviersé po-z eployî ci stîle di djivêye la. "
+#~ "Eployî on stîle di djivêye ça vout dire k' i gn årè pa dvant ene bole ou "
+#~ "ene loyeure di dessinêye, po ndè fé on cayet dins ene djivêye."
 
 #~ msgid "Custom Quotes"
 #~ msgstr "Wiyemets da vosse"
