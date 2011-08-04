@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-02 17:50+0200\n"
+"POT-Creation-Date: 2011-08-04 02:20+0200\n"
 "PO-Revision-Date: 2011-01-17 22:02+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -49,54 +49,6 @@ msgstr ""
 "Relé les dnêyes èn ôre discrexhant (di Z a A eyet d' 9 a 0). Les dnêyes del "
 "colone di tchoezeye sont-st eployeyes po relére."
 
-#: core/KexiView.cpp:66
-msgid "Switch to data view"
-msgstr "Passer al vuwe des dnêyes"
-
-#: core/KexiView.cpp:67
-msgid "Switches to data view."
-msgstr "Passe al vuwe des dnêyes."
-
-#: core/KexiView.cpp:70
-msgid "Switch to design view"
-msgstr "Passer al vuwe di l' atuzlaedje"
-
-#: core/KexiView.cpp:71
-msgid "Switches to design view."
-msgstr "Passe al vuwe di l' atuzlaedje."
-
-#: core/KexiView.cpp:74
-msgid "Switch to text view"
-msgstr "Passer al vuwe e môde tecse"
-
-#: core/KexiView.cpp:75
-msgid "Switches to text view."
-msgstr "Passe al vuwe e môde tecse."
-
-#: core/KexiView.cpp:232
-msgid "Save"
-msgstr "Schaper"
-
-#: core/KexiView.cpp:233
-msgid "Save current design"
-msgstr "Schaper l' atuzlaedje do moumint"
-
-#: core/KexiView.cpp:234
-msgid "Saves changes made to the current design."
-msgstr "Schape les candjmints fwaits a l' atuzlaedje do moumint."
-
-#: core/KexiView.cpp:580
-msgid "Show:"
-msgstr "Mostrer :"
-
-#: core/KexiView.cpp:591 main/KexiMainWindow_p.h:198
-msgid "Data"
-msgstr "Dinêyes"
-
-#: core/KexiView.cpp:602
-msgid "Design"
-msgstr "Atuzlaedje"
-
 #: core/kexicontexthelp.cpp:34 core/KoContextHelp.cpp:518
 #: core/KoContextHelp.cpp:550 core/KoContextHelp.cpp:560
 #: core/KoContextHelp.cpp:579 core/KoContextHelp.cpp:591
@@ -134,22 +86,49 @@ msgctxt "database connection"
 msgid "(connection %1)"
 msgstr "(raloyaedje %1)"
 
-#: core/KexiWindow.cpp:612
+#: core/KexiWindow.cpp:608 widget/kexidbconnectionwidget.cpp:89
+msgid "Save Changes"
+msgstr "Schaper candjmints"
+
+#: core/KexiWindow.cpp:611
+#, fuzzy
+#| msgctxt "Do Not Add Database Primary Key to a Table"
+#| msgid "Do Not Add"
+msgid "Do Not Switch"
+msgstr "Èn nén radjouter"
+
+#: core/KexiWindow.cpp:614
+#, fuzzy, kde-format
+#| msgid ""
+#| "Design has been changed. You must save it before switching to other view."
+msgid ""
+"There are unsaved changes in object \"%1\". Do you want to save these "
+"changes before switching to other view?"
+msgstr ""
+"L' atuzlaedje a candjî. Vos l' divoz schaper divant d' passer a l' ôte vuwe."
+
+#: core/KexiWindow.cpp:617
+#, fuzzy
+#| msgid "Save Changes"
+msgid "Confirm Saving Changes"
+msgstr "Schaper candjmints"
+
+#: core/KexiWindow.cpp:638
 msgid ""
 "Design has been changed. You must save it before switching to other view."
 msgstr ""
 "L' atuzlaedje a candjî. Vos l' divoz schaper divant d' passer a l' ôte vuwe."
 
-#: core/KexiWindow.cpp:677 main/KexiMainWindow.cpp:3582
+#: core/KexiWindow.cpp:703 main/KexiMainWindow.cpp:3582
 #, kde-format
 msgid "Switching to other view failed (%1)."
 msgstr "Li passaedje a l' ôte vuwe a fwait berwete (%1)."
 
-#: core/KexiWindow.cpp:859
+#: core/KexiWindow.cpp:885
 msgid "Saving object's definition failed."
 msgstr "Li schapaedje do definixha da l' objet a fwait berwete."
 
-#: core/KexiWindow.cpp:943
+#: core/KexiWindow.cpp:969
 msgid "Saving object's data failed."
 msgstr "Li schapaedje des dinêyes da l' objet a fwait berwete."
 
@@ -823,6 +802,54 @@ msgstr "Cisse fonccion n' est nén disponibe pol modêye %1 do programe %2."
 #, kde-format
 msgid "\"%1\" function is not available for version %2 of %3 application."
 msgstr "Li fonccion « %1 » n' est nén disponibe pol modêye %2 do programe %3."
+
+#: core/KexiView.cpp:66
+msgid "Switch to data view"
+msgstr "Passer al vuwe des dnêyes"
+
+#: core/KexiView.cpp:67
+msgid "Switches to data view."
+msgstr "Passe al vuwe des dnêyes."
+
+#: core/KexiView.cpp:70
+msgid "Switch to design view"
+msgstr "Passer al vuwe di l' atuzlaedje"
+
+#: core/KexiView.cpp:71
+msgid "Switches to design view."
+msgstr "Passe al vuwe di l' atuzlaedje."
+
+#: core/KexiView.cpp:74
+msgid "Switch to text view"
+msgstr "Passer al vuwe e môde tecse"
+
+#: core/KexiView.cpp:75
+msgid "Switches to text view."
+msgstr "Passe al vuwe e môde tecse."
+
+#: core/KexiView.cpp:232
+msgid "Save"
+msgstr "Schaper"
+
+#: core/KexiView.cpp:233
+msgid "Save current design"
+msgstr "Schaper l' atuzlaedje do moumint"
+
+#: core/KexiView.cpp:234
+msgid "Saves changes made to the current design."
+msgstr "Schape les candjmints fwaits a l' atuzlaedje do moumint."
+
+#: core/KexiView.cpp:595
+msgid "Show:"
+msgstr "Mostrer :"
+
+#: core/KexiView.cpp:606 main/KexiMainWindow_p.h:198
+msgid "Data"
+msgstr "Dinêyes"
+
+#: core/KexiView.cpp:617
+msgid "Design"
+msgstr "Atuzlaedje"
 
 #: formeditor/WidgetTreeWidget.cpp:96 formeditor/commands.cpp:2217
 #: main/printing/kexisimpleprintingengine.cpp:326
@@ -6960,10 +6987,6 @@ msgstr ""
 "Tchedje li djivêye des båzes di dnêyes a pårti do sierveu po vos ndè ploxhe "
 "tchoezi ene e s' siervant del dressêye disrôlante « No »."
 
-#: widget/kexidbconnectionwidget.cpp:89
-msgid "Save Changes"
-msgstr "Schaper candjmints"
-
 #: widget/kexidbconnectionwidget.cpp:90
 msgid "Save all changes made to this connection information"
 msgstr "Schape tos les candjmints fwaits a ciste informåcion d' raloyaedje"
@@ -7165,21 +7188,65 @@ msgstr "&Drovi tåve/ricweraedje tchoezi"
 msgid "Click to show available actions for this cell"
 msgstr "Clitchîz po mostrer les accions k' i gn a po cisse boesse ci"
 
+#: widget/tableview/kexitableviewdata.cpp:596
+#: widget/tableview/kexitableviewdata.cpp:607
+#, kde-format
+msgid "\"%1\" column requires a value to be entered."
+msgstr "I fåt diner ene valixhance pol colone « %1 »."
+
+#: widget/tableview/kexitableviewdata.cpp:598
+#: widget/tableview/kexidataawareobjectiface.cpp:949
+msgid "The column's constraint is declared as NOT NULL."
+msgstr "Li stronna dal colone est dit come NOT NULL."
+
+#: widget/tableview/kexitableviewdata.cpp:609
+#: widget/tableview/kexidataawareobjectiface.cpp:968
+msgid "The column's constraint is declared as NOT EMPTY."
+msgstr "Li stronna dal colone est dit come NOT EMPTY."
+
+#: widget/tableview/kexitableviewdata.cpp:620
+#, fuzzy
+#| msgid "Row inserting failed."
+msgid "Record inserting failed."
+msgstr "Li stitchaedje del roye a fwait berwete."
+
+#: widget/tableview/kexitableviewdata.cpp:638
+#, fuzzy
+#| msgid "Row changing failed."
+msgid "Record changing failed."
+msgstr "Li candjaedje del roye a fwait berwete."
+
+#: widget/tableview/kexitableviewdata.cpp:706
+#, fuzzy
+#| msgid "Row deleting failed."
+msgid "Record deleting failed."
+msgstr "Li disfaçaedje del roye a fwait berwete."
+
+#: widget/tableview/kexitableview.cpp:120
+#, fuzzy
+#| msgid "Contains a pointer to the currently selected row"
+msgid "Contains a pointer to the currently selected record"
+msgstr "A on pwinteu viè l' roye tchoezeye pol moumint"
+
+#: widget/tableview/kexitableview.cpp:122
+#, fuzzy
+#| msgid "Row navigator"
+msgid "Record navigator"
+msgstr "Naivieu de royes"
+
+#: widget/tableview/kexitableview.cpp:242
+msgid "Add Record"
+msgstr "Radjouter eredjistraedje"
+
+#: widget/tableview/kexitableview.cpp:245
+msgid "Remove Record"
+msgstr "Oister eredjistraedje"
+
 #: widget/tableview/kexidataawareobjectiface.cpp:933
 #, kde-format
 msgctxt "Question"
 msgid "Error: %1?"
 msgstr "Aroke : %1 ?"
-
-#: widget/tableview/kexidataawareobjectiface.cpp:949
-#: widget/tableview/kexitableviewdata.cpp:598
-msgid "The column's constraint is declared as NOT NULL."
-msgstr "Li stronna dal colone est dit come NOT NULL."
-
-#: widget/tableview/kexidataawareobjectiface.cpp:968
-#: widget/tableview/kexitableviewdata.cpp:609
-msgid "The column's constraint is declared as NOT EMPTY."
-msgstr "Li stronna dal colone est dit come NOT EMPTY."
 
 #: widget/tableview/kexidataawareobjectiface.cpp:983
 msgid "The column's constraint is declared as NOT EMPTY and NOT NULL."
@@ -7224,50 +7291,6 @@ msgstr "Coridjîz les candjmints"
 #: widget/tableview/kexidataawareobjectiface.cpp:1851
 msgid "Discard Changes"
 msgstr "Rinoncî åzès candjmints"
-
-#: widget/tableview/kexitableviewdata.cpp:596
-#: widget/tableview/kexitableviewdata.cpp:607
-#, kde-format
-msgid "\"%1\" column requires a value to be entered."
-msgstr "I fåt diner ene valixhance pol colone « %1 »."
-
-#: widget/tableview/kexitableviewdata.cpp:620
-#, fuzzy
-#| msgid "Row inserting failed."
-msgid "Record inserting failed."
-msgstr "Li stitchaedje del roye a fwait berwete."
-
-#: widget/tableview/kexitableviewdata.cpp:638
-#, fuzzy
-#| msgid "Row changing failed."
-msgid "Record changing failed."
-msgstr "Li candjaedje del roye a fwait berwete."
-
-#: widget/tableview/kexitableviewdata.cpp:706
-#, fuzzy
-#| msgid "Row deleting failed."
-msgid "Record deleting failed."
-msgstr "Li disfaçaedje del roye a fwait berwete."
-
-#: widget/tableview/kexitableview.cpp:120
-#, fuzzy
-#| msgid "Contains a pointer to the currently selected row"
-msgid "Contains a pointer to the currently selected record"
-msgstr "A on pwinteu viè l' roye tchoezeye pol moumint"
-
-#: widget/tableview/kexitableview.cpp:122
-#, fuzzy
-#| msgid "Row navigator"
-msgid "Record navigator"
-msgstr "Naivieu de royes"
-
-#: widget/tableview/kexitableview.cpp:242
-msgid "Add Record"
-msgstr "Radjouter eredjistraedje"
-
-#: widget/tableview/kexitableview.cpp:245
-msgid "Remove Record"
-msgstr "Oister eredjistraedje"
 
 #: widget/utils/kexidatetimeformatter.cpp:303
 msgid "pm"
