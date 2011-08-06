@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: yakuake\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-02 05:10+0200\n"
+"POT-Creation-Date: 2011-08-06 03:09+0200\n"
 "PO-Revision-Date: 2009-03-12 19:05+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -31,7 +31,7 @@ msgstr "jean.cayron@gmail.com"
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_1)
 #. i18n: file: app/config/behaviorsettings.ui:20
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_1)
-#: rc.cpp:5 rc.cpp:219
+#: rc.cpp:5 rc.cpp:110
 msgctxt "@title:group Group box label"
 msgid "General"
 msgstr "Djenerå"
@@ -114,7 +114,7 @@ msgstr ""
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_Width)
 #. i18n: file: app/config/windowsettings.ui:169
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_Height)
-#: rc.cpp:33 rc.cpp:274 rc.cpp:281
+#: rc.cpp:33 rc.cpp:64 rc.cpp:71
 #, no-c-format
 msgctxt "@label Spinbox unit suffix"
 msgid "%"
@@ -141,474 +141,159 @@ msgctxt "@action:button"
 msgid "Remove Skin"
 msgstr "Oister pea"
 
-#. i18n: file: app/config/yakuake.kcfg:9
-#. i18n: ectx: label, entry (Screen), group (Window)
+#. i18n: file: app/config/windowsettings.ui:23
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_1)
 #: rc.cpp:45
-msgctxt "@label"
-msgid "Screen to use"
-msgstr "Waitroûle a eployî"
+msgctxt "@title:group"
+msgid "Tab Bar"
+msgstr "Bår ås linwetes"
 
-#. i18n: file: app/config/yakuake.kcfg:10
-#. i18n: ectx: whatsthis, entry (Screen), group (Window)
+#. i18n: file: app/config/windowsettings.ui:29
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowTabBar)
 #: rc.cpp:48
-msgctxt "@info:whatsthis"
-msgid ""
-"The screen on which the application window will appear. 0 is understood to "
-"be the screen the mouse pointer is on."
-msgstr ""
-"Li waitroûle kel purnea do programe aparetrè ddins. 0 est comprins come "
-"estant l' waitroûle ewou ç' kel pwinteu est."
+msgctxt "@option:check"
+msgid "Show the tab bar"
+msgstr "Mostrer l' bår ås linwetes"
 
-#. i18n: file: app/config/yakuake.kcfg:14
-#. i18n: ectx: label, entry (Width), group (Window)
+#. i18n: file: app/config/windowsettings.ui:61
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_DynamicTabTitles)
 #: rc.cpp:51
-msgctxt "@label"
-msgid "Window width"
-msgstr "Lårdjeur do purnea"
+msgctxt "@info:whatsthis"
+msgid ""
+"If this option is enabled, the information about the active terminal's "
+"contents that is normally shown in the title bar will also be shown on the "
+"tab bar. You can modify the format of the information in the terminal "
+"profile."
+msgstr ""
+"Si cisse tchuze est en alaedje, les pondants et les djondants so ç' k' i gn "
+"a dins l' terminå en alaedje et k' est normålmint mostré el bår des tites "
+"serè mostrêye dins l' bår ås linwetes eto. Vos ploz candjî l' cogne des "
+"informåcions dins l' profil do terminå."
 
-#. i18n: file: app/config/yakuake.kcfg:15
-#. i18n: ectx: whatsthis, entry (Width), group (Window)
+#. i18n: file: app/config/windowsettings.ui:64
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DynamicTabTitles)
 #: rc.cpp:54
-msgctxt "@info:whatsthis"
-msgid "Width of the application window as a percentage of the screen."
-msgstr "Lårdjeur do purnea do programe en åcintaedje del waitroûle."
+msgctxt "@option:check"
+msgid "Show title bar contents in tab labels"
+msgstr "Mostrer ådvins del bår di tite ezès etiketes des linwetes"
 
-#. i18n: file: app/config/yakuake.kcfg:21
-#. i18n: ectx: label, entry (Height), group (Window)
+#. i18n: file: app/config/windowsettings.ui:74
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: rc.cpp:57
-msgctxt "@label"
-msgid "Window height"
-msgstr "Hôteur do purnea"
+msgctxt "@title:group"
+msgid "Size and Animation"
+msgstr "Grandeur eyet animåcion"
 
-#. i18n: file: app/config/yakuake.kcfg:22
-#. i18n: ectx: whatsthis, entry (Height), group (Window)
+#. i18n: file: app/config/windowsettings.ui:80
+#. i18n: ectx: property (text), widget (QLabel, widthLabel)
 #: rc.cpp:60
-msgctxt "@info:whatsthis"
-msgid "Height of the application window as a percentage of the screen."
-msgstr "Hôteur do purnea do programe en åcintaedje del waitroûle."
+msgctxt "@label:slider"
+msgid "Width:"
+msgstr "Lårdjeur:"
 
-#. i18n: file: app/config/yakuake.kcfg:28
-#. i18n: ectx: label, entry (Position), group (Window)
-#: rc.cpp:63
-msgctxt "@label"
-msgid "Window position"
-msgstr "Eplaeçmint do purnea"
+#. i18n: file: app/config/windowsettings.ui:134
+#. i18n: ectx: property (text), widget (QLabel, heightLabel)
+#: rc.cpp:67
+msgctxt "@label:slider"
+msgid "Height:"
+msgstr "Hôteur:"
 
-#. i18n: file: app/config/yakuake.kcfg:29
-#. i18n: ectx: whatsthis, entry (Position), group (Window)
-#: rc.cpp:66
-msgctxt "@info:whatsthis"
+#. i18n: file: app/config/windowsettings.ui:188
+#. i18n: ectx: property (text), widget (QLabel, durationLabel)
+#: rc.cpp:74
+msgctxt "@label:slider"
+msgid "Duration:"
+msgstr ""
+
+#. i18n: file: app/config/windowsettings.ui:220
+#. i18n: ectx: property (suffix), widget (QSpinBox, framesSpinBox)
+#: rc.cpp:77
+msgctxt "@label Spinbox unit suffix"
+msgid "ms"
+msgstr "ms"
+
+#. i18n: file: app/config/windowsettings.ui:223
+#. i18n: ectx: property (prefix), widget (QSpinBox, framesSpinBox)
+#: rc.cpp:80
+msgctxt "@label Spinbox unit prefix"
+msgid "~"
+msgstr "~"
+
+#. i18n: file: app/config/windowsettings.ui:239
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_UseWMAssist)
+#: rc.cpp:83
 msgid ""
-"Center point of the application window, as a percentage, measured from the "
-"left-hand edge of the screen."
-msgstr ""
-"Pont do cinte do purnea do programe en åcintaedje, muzuré a pårti do boird "
-"hintche del waitroûle."
-
-#. i18n: file: app/config/yakuake.kcfg:35
-#. i18n: ectx: label, entry (ShowOnAllDesktops), group (Window)
-#: rc.cpp:69
-msgctxt "@label"
-msgid "Show window on all desktops"
-msgstr "Mostrer l' purnea so tos les scribannes"
-
-#. i18n: file: app/config/yakuake.kcfg:36
-#. i18n: ectx: whatsthis, entry (ShowOnAllDesktops), group (Window)
-#: rc.cpp:72
-msgctxt "@info:whatsthis"
-msgid "Whether to show the window on all desktops."
-msgstr "S' i fåt mostrer l' purnea so tos les scribannes."
-
-#. i18n: file: app/config/yakuake.kcfg:40
-#. i18n: ectx: label, entry (KeepOpen), group (Window)
-#: rc.cpp:75
-msgctxt "@label"
-msgid "Keep window open"
-msgstr "Wårder drovou l' purnea"
-
-#. i18n: file: app/config/yakuake.kcfg:41
-#. i18n: ectx: whatsthis, entry (KeepOpen), group (Window)
-#: rc.cpp:78
-msgctxt "@info:whatsthis"
-msgid "Whether to keep the application window open when it loses focus."
-msgstr ""
-"S' i fåt wårder l' purnea do programe drovou cwand i piede li prumî plan."
-
-#. i18n: file: app/config/yakuake.kcfg:45
-#. i18n: ectx: label, entry (ToggleToFocus), group (Window)
-#: rc.cpp:81
-msgctxt "@label"
-msgid "Use open/retract shortcut to focus window"
-msgstr "Si siervi di rascourtis drovi/rerôler po mete li purnea å prumî plan"
-
-#. i18n: file: app/config/yakuake.kcfg:46
-#. i18n: ectx: whatsthis, entry (ToggleToFocus), group (Window)
-#: rc.cpp:84
-msgctxt "@info:whatsthis"
-msgid ""
-"Whether the open/retract keyboard shortcut can be used to focus the "
-"application window when it is already open."
-msgstr ""
-"S' i fåt kel rascourti del taprece drovi/rerôler fuxhe eployî po mete å "
-"prumî plan li purnea do programe cwand il est ddja drovou."
-
-#. i18n: file: app/config/yakuake.kcfg:50
-#. i18n: ectx: label, entry (KeepAbove), group (Window)
-#: rc.cpp:87
-msgctxt "@label"
-msgid "Keep window on top"
-msgstr "Wårder purne pa dzeu"
-
-#. i18n: file: app/config/yakuake.kcfg:51
-#. i18n: ectx: whatsthis, entry (KeepAbove), group (Window)
-#: rc.cpp:90
-msgctxt "@info:whatsthis"
-msgid ""
-"Whether to keep the application window above other windows on the screen."
-msgstr ""
-"S' i fåt wårder l' purnea do programe pa dzeu les ôtes purneas sol waitroûle."
-
-#. i18n: file: app/config/yakuake.kcfg:55
-#. i18n: ectx: label, entry (ShowTabBar), group (Window)
-#: rc.cpp:93
-msgctxt "@label"
-msgid "Show tab bar"
-msgstr "Mostrer bår ås linwetes"
-
-#. i18n: file: app/config/yakuake.kcfg:56
-#. i18n: ectx: whatsthis, entry (ShowTabBar), group (Window)
-#: rc.cpp:96
-msgctxt "@info:whatsthis"
-msgid "Whether to show the tab bar in the application window."
-msgstr "S' i fåt mostrer l' bår ås linwetes e purnea do programe."
-
-#. i18n: file: app/config/yakuake.kcfg:60
-#. i18n: ectx: label, entry (DynamicTabTitles), group (Window)
-#: rc.cpp:99
-msgctxt "@label"
-msgid "Dynamic tab titles"
-msgstr "Candjants tites des linwetes"
-
-#. i18n: file: app/config/yakuake.kcfg:61
-#. i18n: ectx: whatsthis, entry (DynamicTabTitles), group (Window)
-#: rc.cpp:102
-msgctxt "@info:whatsthis"
-msgid "Whether to update tab titles along with the title bar."
-msgstr ""
-"S' i fåt mete a djoû les tites des linwetes sol minme tins kel bår di tite."
-
-#. i18n: file: app/config/yakuake.kcfg:67
-#. i18n: ectx: label, entry (FocusFollowsMouse), group (Behavior)
-#: rc.cpp:105
-msgctxt "@label"
-msgid "Focus follows mouse"
-msgstr "Metaedje å prumî plan shuvant l' sori"
-
-#. i18n: file: app/config/yakuake.kcfg:68
-#. i18n: ectx: whatsthis, entry (FocusFollowsMouse), group (Behavior)
-#: rc.cpp:108
-msgctxt "@info:whatsthis"
-msgid ""
-"Whether an individual terminal in a session will be given focus when the "
-"mouse pointer is moved above it."
-msgstr ""
-"S' on mierseu terminå dins ene session s' met å prumî plan cwand l' pwinteu "
-"del sori est bodjî pa dzeu lyi."
-
-#. i18n: file: app/config/yakuake.kcfg:72
-#. i18n: ectx: label, entry (OpenAfterStart), group (Behavior)
-#: rc.cpp:111
-msgctxt "@label"
-msgid "Open after start"
+"If this option is enabled, Yakuake will ask the window manager to perform "
+"the window open/retract animation. If the window manager is unable to "
+"provide the requested service, Yakuake will fall back to an animation "
+"strategy of progressively adjusting the window mask."
 msgstr ""
 
-#. i18n: file: app/config/yakuake.kcfg:73
-#. i18n: ectx: whatsthis, entry (OpenAfterStart), group (Behavior)
-#: rc.cpp:114
-#, fuzzy
-#| msgctxt "@info:whatsthis"
-#| msgid ""
-#| "Whether to keep the application window above other windows on the screen."
-msgctxt "@info:whatsthis"
-msgid "Whether the application window should be opened after program start."
-msgstr ""
-"S' i fåt wårder l' purnea do programe pa dzeu les ôtes purneas sol waitroûle."
-
-#. i18n: file: app/config/yakuake.kcfg:79
-#. i18n: ectx: label, entry (Skin), group (Appearance)
-#: rc.cpp:117
-msgctxt "@label"
-msgid "Skin"
-msgstr "Pea"
-
-#. i18n: file: app/config/yakuake.kcfg:80
-#. i18n: ectx: whatsthis, entry (Skin), group (Appearance)
-#: rc.cpp:120
-msgctxt "@info:whatsthis"
-msgid "The skin to be used by the application window."
-msgstr "Li pea (stîle) a eployî på purnea do programe."
-
-#. i18n: file: app/config/yakuake.kcfg:84
-#. i18n: ectx: label, entry (Translucency), group (Appearance)
-#: rc.cpp:123
-msgctxt "@label"
-msgid "Use translucent background"
-msgstr "Si siervi d' on transparint fond"
-
-#. i18n: file: app/config/yakuake.kcfg:85
-#. i18n: ectx: whatsthis, entry (Translucency), group (Appearance)
-#: rc.cpp:126
-msgctxt "@info:whatsthis"
-msgid "Whether to make use of XComposite ARGB translucency."
-msgstr "S' i fåt s' siervi del transparince d' XComposite ARGB."
-
-#. i18n: file: app/config/yakuake.kcfg:89
-#. i18n: ectx: label, entry (BackgroundColor), group (Appearance)
-#: rc.cpp:129
-msgctxt "@label"
-msgid "Window background color"
-msgstr "Coleur do fond do purnea"
-
-#. i18n: file: app/config/yakuake.kcfg:90
-#. i18n: ectx: whatsthis, entry (BackgroundColor), group (Appearance)
-#: rc.cpp:132
-msgctxt "@info:whatsthis"
-msgid "Background color painted below skin elements."
-msgstr "Coleur do fond pondowe pa dzo les elemints del pea."
-
-#. i18n: file: app/config/yakuake.kcfg:94
-#. i18n: ectx: label, entry (BackgroundColorOpacity), group (Appearance)
-#: rc.cpp:135
-msgctxt "@label"
-msgid "Background color opacity"
-msgstr "Opacité del coleur do fond"
-
-#. i18n: file: app/config/yakuake.kcfg:95
-#. i18n: ectx: whatsthis, entry (BackgroundColorOpacity), group (Appearance)
-#: rc.cpp:138
-msgctxt "@info:whatsthis"
-msgid "The opacity of the background color fill when using translucency."
-msgstr "L' opacité del coleur do fond cwand on s' sieve del transparince."
-
-#. i18n: file: app/config/yakuake.kcfg:101
-#. i18n: ectx: label, entry (TerminalHighlightOnManualActivation), group (Appearance)
-#: rc.cpp:141
-msgctxt "@label"
-msgid "Highlight newly focused terminals"
+#. i18n: file: app/config/windowsettings.ui:242
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_UseWMAssist)
+#: rc.cpp:86
+msgid "Ask the window manager to perform the animation"
 msgstr ""
 
-#. i18n: file: app/config/yakuake.kcfg:102
-#. i18n: ectx: whatsthis, entry (TerminalHighlightOnManualActivation), group (Appearance)
-#: rc.cpp:144
-msgctxt "@info:whatsthis"
-msgid ""
-"Whether to briefly display a colored overlay above the newly focused "
-"terminal when moving focus between multiple terminals in a session, as well "
-"as over the currently focused terminal when switching to a session with "
-"multiple terminals."
-msgstr ""
+#. i18n: file: app/config/windowsettings.ui:252
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: rc.cpp:89
+msgctxt "@title:group"
+msgid "Position"
+msgstr "Eplaeçmint"
 
-#. i18n: file: app/config/yakuake.kcfg:106
-#. i18n: ectx: label, entry (TerminalHighlightOpacity), group (Appearance)
-#: rc.cpp:147
-msgctxt "@label"
-msgid "Terminal highlight opacity"
-msgstr ""
+#. i18n: file: app/config/windowsettings.ui:260
+#. i18n: ectx: property (text), widget (QLabel, leftLabel)
+#: rc.cpp:92
+msgctxt "@item:inrange Direction to move the window in"
+msgid "Left"
+msgstr "Hintche"
 
-#. i18n: file: app/config/yakuake.kcfg:107
-#. i18n: ectx: whatsthis, entry (TerminalHighlightOpacity), group (Appearance)
-#: rc.cpp:150
-msgctxt "@info:whatsthis"
-msgid "The opacity of the colored overlay used to highlight a terminal."
-msgstr ""
+#. i18n: file: app/config/windowsettings.ui:292
+#. i18n: ectx: property (text), widget (QLabel, rightLabel)
+#: rc.cpp:95
+msgctxt "@item:inrange Direction to move the window in"
+msgid "Right"
+msgstr "Droete"
 
-#. i18n: file: app/config/yakuake.kcfg:113
-#. i18n: ectx: label, entry (TerminalHighlightDuration), group (Appearance)
-#: rc.cpp:153
-msgctxt "@label"
-msgid "Terminal highlight duration"
-msgstr ""
+#. i18n: file: app/config/windowsettings.ui:306
+#. i18n: ectx: property (text), widget (QLabel, screenLabel)
+#: rc.cpp:98
+msgctxt "@label:listbox"
+msgid "Open on screen:"
+msgstr "Drovi sol waitroûle:"
 
-#. i18n: file: app/config/yakuake.kcfg:114
-#. i18n: ectx: whatsthis, entry (TerminalHighlightDuration), group (Appearance)
-#: rc.cpp:156
-msgctxt "@info:whatsthis"
-msgid "The duration of the terminal highlight overlay."
-msgstr ""
+#. i18n: file: app/config/windowsettings.ui:317
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_Screen)
+#: rc.cpp:101
+msgctxt "@item:inlistbox"
+msgid "At mouse location"
+msgstr "Al plaece del sori"
 
-#. i18n: file: app/config/yakuake.kcfg:120
-#. i18n: ectx: label, entry (KeyboardInputBlockIndicatorColor), group (Appearance)
-#: rc.cpp:159
-msgctxt "@label"
-msgid "Keyboard input block indicator color"
-msgstr ""
+#. i18n: file: app/config/windowsettings.ui:322
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_Screen)
+#: rc.cpp:104
+msgctxt "@item:inlistbox"
+msgid "Screen 1"
+msgstr "Waitroûle 1"
 
-#. i18n: file: app/config/yakuake.kcfg:121
-#. i18n: ectx: whatsthis, entry (KeyboardInputBlockIndicatorColor), group (Appearance)
-#: rc.cpp:162
-msgctxt "@info:whatsthis"
-msgid "The color of the keyboard input block indicator overlay."
-msgstr ""
-
-#. i18n: file: app/config/yakuake.kcfg:125
-#. i18n: ectx: label, entry (KeyboardInputBlockIndicatorOpacity), group (Appearance)
-#: rc.cpp:165
-msgctxt "@label"
-msgid "Keyboard input block indicator opacity"
-msgstr ""
-
-#. i18n: file: app/config/yakuake.kcfg:126
-#. i18n: ectx: whatsthis, entry (KeyboardInputBlockIndicatorOpacity), group (Appearance)
-#: rc.cpp:168
-msgctxt "@info:whatsthis"
-msgid "The opacity of the keyboard input block indicator overlay."
-msgstr ""
-
-#. i18n: file: app/config/yakuake.kcfg:132
-#. i18n: ectx: label, entry (KeyboardInputBlockIndicatorDuration), group (Appearance)
-#: rc.cpp:171
-msgctxt "@label"
-msgid "Keyboard input block indicator duration"
-msgstr ""
-
-#. i18n: file: app/config/yakuake.kcfg:133
-#. i18n: ectx: whatsthis, entry (KeyboardInputBlockIndicatorDuration), group (Appearance)
-#: rc.cpp:174
-msgctxt "@info:whatsthis"
-msgid "The duration of the keyboard input block indicator overlay."
-msgstr ""
-
-#. i18n: file: app/config/yakuake.kcfg:141
-#. i18n: ectx: label, entry (UseWMAssist), group (Animation)
-#: rc.cpp:177
-msgctxt "@label"
-msgid "Attempt to use the window manager to animate the window"
-msgstr ""
-
-#. i18n: file: app/config/yakuake.kcfg:142
-#. i18n: ectx: whatsthis, entry (UseWMAssist), group (Animation)
-#: rc.cpp:180
-msgctxt "@info:whatsthis"
-msgid ""
-"Whether to try and let the window manager perform the window open/retract "
-"animation. Yakuake will fall back to an animation strategy of progressively "
-"adjusting the window mask if the window manager is unable to provide the "
-"requested service."
-msgstr ""
-
-#. i18n: file: app/config/yakuake.kcfg:146
-#. i18n: ectx: label, entry (Frames), group (Animation)
-#: rc.cpp:183
-msgctxt "@label"
-msgid "Animation frames"
-msgstr "Imådjes po l' animåcion"
-
-#. i18n: file: app/config/yakuake.kcfg:147
-#. i18n: ectx: whatsthis, entry (Frames), group (Animation)
-#: rc.cpp:186
-#, fuzzy
-#| msgctxt "@info:whatsthis"
-#| msgid "The number of frames of the open/retract animation."
-msgctxt "@info:whatsthis"
-msgid ""
-"The number of frames of the open/retract animation. One frame is taken to be "
-"10 miliseconds."
-msgstr "Li nombe d' imådjes di l' animåcion drovi/rerôler. "
-
-#. i18n: file: app/config/yakuake.kcfg:155
-#. i18n: ectx: label, entry (PollMouse), group (AutoOpen)
-#: rc.cpp:189
-msgctxt "@label"
-msgid "Auto-open window"
-msgstr "Oto-drovaedje do purnea"
-
-#. i18n: file: app/config/yakuake.kcfg:156
-#. i18n: ectx: whatsthis, entry (PollMouse), group (AutoOpen)
-#: rc.cpp:192
-msgctxt "@info:whatsthis"
-msgid ""
-"Whether to automatically open the application window when the mouse pointer "
-"is found at the edge of the screen."
-msgstr ""
-"S' i fåt drovi otomaticmint li purnea do programe cwand l' pwinteu del sori "
-"si trove sol boirdeure del waitroûle."
-
-#. i18n: file: app/config/yakuake.kcfg:160
-#. i18n: ectx: label, entry (PollInterval), group (AutoOpen)
-#: rc.cpp:195
-msgctxt "@label"
-msgid "Mouse pointer poll interval"
-msgstr "Tins inte les deteccions del sori"
-
-#. i18n: file: app/config/yakuake.kcfg:161
-#. i18n: ectx: whatsthis, entry (PollInterval), group (AutoOpen)
-#: rc.cpp:198
-msgctxt "@info:whatsthis"
-msgid ""
-"The interval during which the mouse pointer position will be checked to "
-"determine whether or not it is at the same edge of the screen as the window."
-msgstr ""
-"Li tins inte tchaeke côp k' l' eplaeçmint do pwinteu del sori srè waiteye po "
-"dire s' il est, ou nonna, al minme boirdeure del waitroûle kel purnea."
-
-#. i18n: file: app/config/yakuake.kcfg:167
-#. i18n: ectx: label, entry (FirstRun), group (Dialogs)
-#: rc.cpp:201
-msgctxt "@label"
-msgid "Application first run"
-msgstr "Prumî enondaedje do programe"
-
-#. i18n: file: app/config/yakuake.kcfg:168
-#. i18n: ectx: whatsthis, entry (FirstRun), group (Dialogs)
-#: rc.cpp:204
-msgctxt "@info:whatsthis"
-msgid "Whether this is the first time the application is run."
-msgstr "S' i c' est l' prumî côp kel programe est enondé."
-
-#. i18n: file: app/config/yakuake.kcfg:172
-#. i18n: ectx: label, entry (ShowPopup), group (Dialogs)
-#: rc.cpp:207
-msgctxt "@label"
-msgid "Show startup notification"
-msgstr "Mostrer l' notifiaedje di l' enondaedje"
-
-#. i18n: file: app/config/yakuake.kcfg:173
-#. i18n: ectx: whatsthis, entry (ShowPopup), group (Dialogs)
-#: rc.cpp:210
-msgctxt "@info:whatsthis"
-msgid "Whether to show a notification popup at application startup."
-msgstr ""
-"S' i fåt mostrer èn aspitant purnea di notifiaedje a l' enondaedje do "
-"programe."
-
-#. i18n: file: app/config/yakuake.kcfg:177
-#. i18n: ectx: label, entry (ConfirmQuit), group (Dialogs)
-#: rc.cpp:213
-msgctxt "@label"
-msgid "Confirm quit with multiple sessions"
-msgstr "Racertiner cwand on cwite des multi-sessions"
-
-#. i18n: file: app/config/yakuake.kcfg:178
-#. i18n: ectx: whatsthis, entry (ConfirmQuit), group (Dialogs)
-#: rc.cpp:216
-msgctxt "@info:whatsthis"
-msgid ""
-"Whether to prompt the user before quitting the application when multiple "
-"sessions are open."
-msgstr ""
-"S' i fåt dmander a l' uzeu divant d' cwiter l' programe cwand des multi-"
-"sessions sont drovowes."
+#. i18n: file: app/config/windowsettings.ui:345
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowOnAllDesktops)
+#: rc.cpp:107
+msgctxt "@option:check"
+msgid "Show on all desktops"
+msgstr "Mostrer so tos les scribannes"
 
 #. i18n: file: app/config/behaviorsettings.ui:26
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_OpenAfterStart)
-#: rc.cpp:222
+#: rc.cpp:113
 msgctxt "@option:check"
 msgid "Open window after program start"
 msgstr ""
 
 #. i18n: file: app/config/behaviorsettings.ui:33
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_PollMouse)
-#: rc.cpp:225
+#: rc.cpp:116
 msgctxt "@info:whatsthis"
 msgid ""
 "If this option is enabled, the window will automatically open when the mouse "
@@ -621,28 +306,28 @@ msgstr ""
 
 #. i18n: file: app/config/behaviorsettings.ui:36
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PollMouse)
-#: rc.cpp:228
+#: rc.cpp:119
 msgctxt "@option:check"
 msgid "Open window when the mouse pointer touches the screen edge"
 msgstr "Drovi purnea cwand l' pwinteu del sori totche li boird del waitroûle"
 
 #. i18n: file: app/config/behaviorsettings.ui:43
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_KeepOpen)
-#: rc.cpp:231
+#: rc.cpp:122
 msgctxt "@option:check"
 msgid "Keep window open when it loses focus"
 msgstr "Wårder purnea drovou cwand i piede si prumî plan"
 
 #. i18n: file: app/config/behaviorsettings.ui:75
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_KeepAbove)
-#: rc.cpp:234
+#: rc.cpp:125
 msgctxt "@option:check"
 msgid "Keep window above other windows"
 msgstr "Wårder purnea pa dzo ls ôtes"
 
 #. i18n: file: app/config/behaviorsettings.ui:107
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_ToggleToFocus)
-#: rc.cpp:237
+#: rc.cpp:128
 #, fuzzy
 #| msgctxt "@info:whatsthis"
 #| msgid ""
@@ -663,14 +348,14 @@ msgstr ""
 
 #. i18n: file: app/config/behaviorsettings.ui:110
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ToggleToFocus)
-#: rc.cpp:240
+#: rc.cpp:131
 msgctxt "@option:check"
 msgid "Use Open/Retract action to focus window"
 msgstr "Si siervi do faitindje Drovi/Rerôler po mete li purnea å prumî plan"
 
 #. i18n: file: app/config/behaviorsettings.ui:117
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_FocusFollowsMouse)
-#: rc.cpp:243
+#: rc.cpp:134
 msgctxt "@option:check"
 msgid "Focus terminals when the mouse pointer is moved over them"
 msgstr ""
@@ -679,180 +364,472 @@ msgstr ""
 
 #. i18n: file: app/config/behaviorsettings.ui:127
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:246
+#: rc.cpp:137
 msgctxt "@title:group"
 msgid "Dialogs"
 msgstr "Purneas di dvize"
 
 #. i18n: file: app/config/behaviorsettings.ui:133
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowPopup)
-#: rc.cpp:249
-msgctxt "@option:check"
-msgid "Show startup notification popup"
-msgstr "Mostrer aspitant purnea di notifiaedje a l' enondaedje"
-
-#. i18n: file: app/config/behaviorsettings.ui:140
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ConfirmQuit)
-#: rc.cpp:252
+#: rc.cpp:140
 msgctxt "@option:check"
 msgid "Confirm quit when more than one session is open"
 msgstr ""
 "Dimander d' racertiner dvant d' moussî foû cwand sacwantès sessions sont "
 "drovowes"
 
-#. i18n: file: app/config/windowsettings.ui:23
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_1)
-#: rc.cpp:255
-msgctxt "@title:group"
-msgid "Tab Bar"
-msgstr "Bår ås linwetes"
+#. i18n: file: app/config/yakuake.kcfg:9
+#. i18n: ectx: label, entry (Screen), group (Window)
+#: rc.cpp:143
+msgctxt "@label"
+msgid "Screen to use"
+msgstr "Waitroûle a eployî"
 
-#. i18n: file: app/config/windowsettings.ui:29
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowTabBar)
-#: rc.cpp:258
-msgctxt "@option:check"
-msgid "Show the tab bar"
-msgstr "Mostrer l' bår ås linwetes"
-
-#. i18n: file: app/config/windowsettings.ui:61
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_DynamicTabTitles)
-#: rc.cpp:261
+#. i18n: file: app/config/yakuake.kcfg:10
+#. i18n: ectx: whatsthis, entry (Screen), group (Window)
+#: rc.cpp:146
 msgctxt "@info:whatsthis"
 msgid ""
-"If this option is enabled, the information about the active terminal's "
-"contents that is normally shown in the title bar will also be shown on the "
-"tab bar. You can modify the format of the information in the terminal "
-"profile."
+"The screen on which the application window will appear. 0 is understood to "
+"be the screen the mouse pointer is on."
 msgstr ""
-"Si cisse tchuze est en alaedje, les pondants et les djondants so ç' k' i gn "
-"a dins l' terminå en alaedje et k' est normålmint mostré el bår des tites "
-"serè mostrêye dins l' bår ås linwetes eto. Vos ploz candjî l' cogne des "
-"informåcions dins l' profil do terminå."
+"Li waitroûle kel purnea do programe aparetrè ddins. 0 est comprins come "
+"estant l' waitroûle ewou ç' kel pwinteu est."
 
-#. i18n: file: app/config/windowsettings.ui:64
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DynamicTabTitles)
-#: rc.cpp:264
-msgctxt "@option:check"
-msgid "Show title bar contents in tab labels"
-msgstr "Mostrer ådvins del bår di tite ezès etiketes des linwetes"
+#. i18n: file: app/config/yakuake.kcfg:14
+#. i18n: ectx: label, entry (Width), group (Window)
+#: rc.cpp:149
+msgctxt "@label"
+msgid "Window width"
+msgstr "Lårdjeur do purnea"
 
-#. i18n: file: app/config/windowsettings.ui:74
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:267
-msgctxt "@title:group"
-msgid "Size and Animation"
-msgstr "Grandeur eyet animåcion"
+#. i18n: file: app/config/yakuake.kcfg:15
+#. i18n: ectx: whatsthis, entry (Width), group (Window)
+#: rc.cpp:152
+msgctxt "@info:whatsthis"
+msgid "Width of the application window as a percentage of the screen."
+msgstr "Lårdjeur do purnea do programe en åcintaedje del waitroûle."
 
-#. i18n: file: app/config/windowsettings.ui:80
-#. i18n: ectx: property (text), widget (QLabel, widthLabel)
-#: rc.cpp:270
-msgctxt "@label:slider"
-msgid "Width:"
-msgstr "Lårdjeur:"
+#. i18n: file: app/config/yakuake.kcfg:21
+#. i18n: ectx: label, entry (Height), group (Window)
+#: rc.cpp:155
+msgctxt "@label"
+msgid "Window height"
+msgstr "Hôteur do purnea"
 
-#. i18n: file: app/config/windowsettings.ui:134
-#. i18n: ectx: property (text), widget (QLabel, heightLabel)
-#: rc.cpp:277
-msgctxt "@label:slider"
-msgid "Height:"
-msgstr "Hôteur:"
+#. i18n: file: app/config/yakuake.kcfg:22
+#. i18n: ectx: whatsthis, entry (Height), group (Window)
+#: rc.cpp:158
+msgctxt "@info:whatsthis"
+msgid "Height of the application window as a percentage of the screen."
+msgstr "Hôteur do purnea do programe en åcintaedje del waitroûle."
 
-#. i18n: file: app/config/windowsettings.ui:188
-#. i18n: ectx: property (text), widget (QLabel, durationLabel)
-#: rc.cpp:284
-msgctxt "@label:slider"
-msgid "Duration:"
-msgstr ""
+#. i18n: file: app/config/yakuake.kcfg:28
+#. i18n: ectx: label, entry (Position), group (Window)
+#: rc.cpp:161
+msgctxt "@label"
+msgid "Window position"
+msgstr "Eplaeçmint do purnea"
 
-#. i18n: file: app/config/windowsettings.ui:220
-#. i18n: ectx: property (suffix), widget (QSpinBox, framesSpinBox)
-#: rc.cpp:287
-msgctxt "@label Spinbox unit suffix"
-msgid "ms"
-msgstr "ms"
-
-#. i18n: file: app/config/windowsettings.ui:223
-#. i18n: ectx: property (prefix), widget (QSpinBox, framesSpinBox)
-#: rc.cpp:290
-msgctxt "@label Spinbox unit prefix"
-msgid "~"
-msgstr "~"
-
-#. i18n: file: app/config/windowsettings.ui:239
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_UseWMAssist)
-#: rc.cpp:293
+#. i18n: file: app/config/yakuake.kcfg:29
+#. i18n: ectx: whatsthis, entry (Position), group (Window)
+#: rc.cpp:164
+msgctxt "@info:whatsthis"
 msgid ""
-"If this option is enabled, Yakuake will ask the window manager to perform "
-"the window open/retract animation. If the window manager is unable to "
-"provide the requested service, Yakuake will fall back to an animation "
-"strategy of progressively adjusting the window mask."
+"Center point of the application window, as a percentage, measured from the "
+"left-hand edge of the screen."
+msgstr ""
+"Pont do cinte do purnea do programe en åcintaedje, muzuré a pårti do boird "
+"hintche del waitroûle."
+
+#. i18n: file: app/config/yakuake.kcfg:35
+#. i18n: ectx: label, entry (ShowOnAllDesktops), group (Window)
+#: rc.cpp:167
+msgctxt "@label"
+msgid "Show window on all desktops"
+msgstr "Mostrer l' purnea so tos les scribannes"
+
+#. i18n: file: app/config/yakuake.kcfg:36
+#. i18n: ectx: whatsthis, entry (ShowOnAllDesktops), group (Window)
+#: rc.cpp:170
+msgctxt "@info:whatsthis"
+msgid "Whether to show the window on all desktops."
+msgstr "S' i fåt mostrer l' purnea so tos les scribannes."
+
+#. i18n: file: app/config/yakuake.kcfg:40
+#. i18n: ectx: label, entry (KeepOpen), group (Window)
+#: rc.cpp:173
+msgctxt "@label"
+msgid "Keep window open"
+msgstr "Wårder drovou l' purnea"
+
+#. i18n: file: app/config/yakuake.kcfg:41
+#. i18n: ectx: whatsthis, entry (KeepOpen), group (Window)
+#: rc.cpp:176
+msgctxt "@info:whatsthis"
+msgid "Whether to keep the application window open when it loses focus."
+msgstr ""
+"S' i fåt wårder l' purnea do programe drovou cwand i piede li prumî plan."
+
+#. i18n: file: app/config/yakuake.kcfg:45
+#. i18n: ectx: label, entry (ToggleToFocus), group (Window)
+#: rc.cpp:179
+msgctxt "@label"
+msgid "Use open/retract shortcut to focus window"
+msgstr "Si siervi di rascourtis drovi/rerôler po mete li purnea å prumî plan"
+
+#. i18n: file: app/config/yakuake.kcfg:46
+#. i18n: ectx: whatsthis, entry (ToggleToFocus), group (Window)
+#: rc.cpp:182
+msgctxt "@info:whatsthis"
+msgid ""
+"Whether the open/retract keyboard shortcut can be used to focus the "
+"application window when it is already open."
+msgstr ""
+"S' i fåt kel rascourti del taprece drovi/rerôler fuxhe eployî po mete å "
+"prumî plan li purnea do programe cwand il est ddja drovou."
+
+#. i18n: file: app/config/yakuake.kcfg:50
+#. i18n: ectx: label, entry (KeepAbove), group (Window)
+#: rc.cpp:185
+msgctxt "@label"
+msgid "Keep window on top"
+msgstr "Wårder purne pa dzeu"
+
+#. i18n: file: app/config/yakuake.kcfg:51
+#. i18n: ectx: whatsthis, entry (KeepAbove), group (Window)
+#: rc.cpp:188
+msgctxt "@info:whatsthis"
+msgid ""
+"Whether to keep the application window above other windows on the screen."
+msgstr ""
+"S' i fåt wårder l' purnea do programe pa dzeu les ôtes purneas sol waitroûle."
+
+#. i18n: file: app/config/yakuake.kcfg:55
+#. i18n: ectx: label, entry (ShowTabBar), group (Window)
+#: rc.cpp:191
+msgctxt "@label"
+msgid "Show tab bar"
+msgstr "Mostrer bår ås linwetes"
+
+#. i18n: file: app/config/yakuake.kcfg:56
+#. i18n: ectx: whatsthis, entry (ShowTabBar), group (Window)
+#: rc.cpp:194
+msgctxt "@info:whatsthis"
+msgid "Whether to show the tab bar in the application window."
+msgstr "S' i fåt mostrer l' bår ås linwetes e purnea do programe."
+
+#. i18n: file: app/config/yakuake.kcfg:60
+#. i18n: ectx: label, entry (DynamicTabTitles), group (Window)
+#: rc.cpp:197
+msgctxt "@label"
+msgid "Dynamic tab titles"
+msgstr "Candjants tites des linwetes"
+
+#. i18n: file: app/config/yakuake.kcfg:61
+#. i18n: ectx: whatsthis, entry (DynamicTabTitles), group (Window)
+#: rc.cpp:200
+msgctxt "@info:whatsthis"
+msgid "Whether to update tab titles along with the title bar."
+msgstr ""
+"S' i fåt mete a djoû les tites des linwetes sol minme tins kel bår di tite."
+
+#. i18n: file: app/config/yakuake.kcfg:67
+#. i18n: ectx: label, entry (FocusFollowsMouse), group (Behavior)
+#: rc.cpp:203
+msgctxt "@label"
+msgid "Focus follows mouse"
+msgstr "Metaedje å prumî plan shuvant l' sori"
+
+#. i18n: file: app/config/yakuake.kcfg:68
+#. i18n: ectx: whatsthis, entry (FocusFollowsMouse), group (Behavior)
+#: rc.cpp:206
+msgctxt "@info:whatsthis"
+msgid ""
+"Whether an individual terminal in a session will be given focus when the "
+"mouse pointer is moved above it."
+msgstr ""
+"S' on mierseu terminå dins ene session s' met å prumî plan cwand l' pwinteu "
+"del sori est bodjî pa dzeu lyi."
+
+#. i18n: file: app/config/yakuake.kcfg:72
+#. i18n: ectx: label, entry (OpenAfterStart), group (Behavior)
+#: rc.cpp:209
+msgctxt "@label"
+msgid "Open after start"
 msgstr ""
 
-#. i18n: file: app/config/windowsettings.ui:242
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_UseWMAssist)
+#. i18n: file: app/config/yakuake.kcfg:73
+#. i18n: ectx: whatsthis, entry (OpenAfterStart), group (Behavior)
+#: rc.cpp:212
+#, fuzzy
+#| msgctxt "@info:whatsthis"
+#| msgid ""
+#| "Whether to keep the application window above other windows on the screen."
+msgctxt "@info:whatsthis"
+msgid "Whether the application window should be opened after program start."
+msgstr ""
+"S' i fåt wårder l' purnea do programe pa dzeu les ôtes purneas sol waitroûle."
+
+#. i18n: file: app/config/yakuake.kcfg:79
+#. i18n: ectx: label, entry (Skin), group (Appearance)
+#: rc.cpp:215
+msgctxt "@label"
+msgid "Skin"
+msgstr "Pea"
+
+#. i18n: file: app/config/yakuake.kcfg:80
+#. i18n: ectx: whatsthis, entry (Skin), group (Appearance)
+#: rc.cpp:218
+msgctxt "@info:whatsthis"
+msgid "The skin to be used by the application window."
+msgstr "Li pea (stîle) a eployî på purnea do programe."
+
+#. i18n: file: app/config/yakuake.kcfg:84
+#. i18n: ectx: label, entry (Translucency), group (Appearance)
+#: rc.cpp:221
+msgctxt "@label"
+msgid "Use translucent background"
+msgstr "Si siervi d' on transparint fond"
+
+#. i18n: file: app/config/yakuake.kcfg:85
+#. i18n: ectx: whatsthis, entry (Translucency), group (Appearance)
+#: rc.cpp:224
+msgctxt "@info:whatsthis"
+msgid "Whether to make use of XComposite ARGB translucency."
+msgstr "S' i fåt s' siervi del transparince d' XComposite ARGB."
+
+#. i18n: file: app/config/yakuake.kcfg:89
+#. i18n: ectx: label, entry (BackgroundColor), group (Appearance)
+#: rc.cpp:227
+msgctxt "@label"
+msgid "Window background color"
+msgstr "Coleur do fond do purnea"
+
+#. i18n: file: app/config/yakuake.kcfg:90
+#. i18n: ectx: whatsthis, entry (BackgroundColor), group (Appearance)
+#: rc.cpp:230
+msgctxt "@info:whatsthis"
+msgid "Background color painted below skin elements."
+msgstr "Coleur do fond pondowe pa dzo les elemints del pea."
+
+#. i18n: file: app/config/yakuake.kcfg:94
+#. i18n: ectx: label, entry (BackgroundColorOpacity), group (Appearance)
+#: rc.cpp:233
+msgctxt "@label"
+msgid "Background color opacity"
+msgstr "Opacité del coleur do fond"
+
+#. i18n: file: app/config/yakuake.kcfg:95
+#. i18n: ectx: whatsthis, entry (BackgroundColorOpacity), group (Appearance)
+#: rc.cpp:236
+msgctxt "@info:whatsthis"
+msgid "The opacity of the background color fill when using translucency."
+msgstr "L' opacité del coleur do fond cwand on s' sieve del transparince."
+
+#. i18n: file: app/config/yakuake.kcfg:101
+#. i18n: ectx: label, entry (TerminalHighlightOnManualActivation), group (Appearance)
+#: rc.cpp:239
+msgctxt "@label"
+msgid "Highlight newly focused terminals"
+msgstr ""
+
+#. i18n: file: app/config/yakuake.kcfg:102
+#. i18n: ectx: whatsthis, entry (TerminalHighlightOnManualActivation), group (Appearance)
+#: rc.cpp:242
+msgctxt "@info:whatsthis"
+msgid ""
+"Whether to briefly display a colored overlay above the newly focused "
+"terminal when moving focus between multiple terminals in a session, as well "
+"as over the currently focused terminal when switching to a session with "
+"multiple terminals."
+msgstr ""
+
+#. i18n: file: app/config/yakuake.kcfg:106
+#. i18n: ectx: label, entry (TerminalHighlightOpacity), group (Appearance)
+#: rc.cpp:245
+msgctxt "@label"
+msgid "Terminal highlight opacity"
+msgstr ""
+
+#. i18n: file: app/config/yakuake.kcfg:107
+#. i18n: ectx: whatsthis, entry (TerminalHighlightOpacity), group (Appearance)
+#: rc.cpp:248
+msgctxt "@info:whatsthis"
+msgid "The opacity of the colored overlay used to highlight a terminal."
+msgstr ""
+
+#. i18n: file: app/config/yakuake.kcfg:113
+#. i18n: ectx: label, entry (TerminalHighlightDuration), group (Appearance)
+#: rc.cpp:251
+msgctxt "@label"
+msgid "Terminal highlight duration"
+msgstr ""
+
+#. i18n: file: app/config/yakuake.kcfg:114
+#. i18n: ectx: whatsthis, entry (TerminalHighlightDuration), group (Appearance)
+#: rc.cpp:254
+msgctxt "@info:whatsthis"
+msgid "The duration of the terminal highlight overlay."
+msgstr ""
+
+#. i18n: file: app/config/yakuake.kcfg:120
+#. i18n: ectx: label, entry (KeyboardInputBlockIndicatorColor), group (Appearance)
+#: rc.cpp:257
+msgctxt "@label"
+msgid "Keyboard input block indicator color"
+msgstr ""
+
+#. i18n: file: app/config/yakuake.kcfg:121
+#. i18n: ectx: whatsthis, entry (KeyboardInputBlockIndicatorColor), group (Appearance)
+#: rc.cpp:260
+msgctxt "@info:whatsthis"
+msgid "The color of the keyboard input block indicator overlay."
+msgstr ""
+
+#. i18n: file: app/config/yakuake.kcfg:125
+#. i18n: ectx: label, entry (KeyboardInputBlockIndicatorOpacity), group (Appearance)
+#: rc.cpp:263
+msgctxt "@label"
+msgid "Keyboard input block indicator opacity"
+msgstr ""
+
+#. i18n: file: app/config/yakuake.kcfg:126
+#. i18n: ectx: whatsthis, entry (KeyboardInputBlockIndicatorOpacity), group (Appearance)
+#: rc.cpp:266
+msgctxt "@info:whatsthis"
+msgid "The opacity of the keyboard input block indicator overlay."
+msgstr ""
+
+#. i18n: file: app/config/yakuake.kcfg:132
+#. i18n: ectx: label, entry (KeyboardInputBlockIndicatorDuration), group (Appearance)
+#: rc.cpp:269
+msgctxt "@label"
+msgid "Keyboard input block indicator duration"
+msgstr ""
+
+#. i18n: file: app/config/yakuake.kcfg:133
+#. i18n: ectx: whatsthis, entry (KeyboardInputBlockIndicatorDuration), group (Appearance)
+#: rc.cpp:272
+msgctxt "@info:whatsthis"
+msgid "The duration of the keyboard input block indicator overlay."
+msgstr ""
+
+#. i18n: file: app/config/yakuake.kcfg:141
+#. i18n: ectx: label, entry (UseWMAssist), group (Animation)
+#: rc.cpp:275
+msgctxt "@label"
+msgid "Attempt to use the window manager to animate the window"
+msgstr ""
+
+#. i18n: file: app/config/yakuake.kcfg:142
+#. i18n: ectx: whatsthis, entry (UseWMAssist), group (Animation)
+#: rc.cpp:278
+msgctxt "@info:whatsthis"
+msgid ""
+"Whether to try and let the window manager perform the window open/retract "
+"animation. Yakuake will fall back to an animation strategy of progressively "
+"adjusting the window mask if the window manager is unable to provide the "
+"requested service."
+msgstr ""
+
+#. i18n: file: app/config/yakuake.kcfg:146
+#. i18n: ectx: label, entry (Frames), group (Animation)
+#: rc.cpp:281
+msgctxt "@label"
+msgid "Animation frames"
+msgstr "Imådjes po l' animåcion"
+
+#. i18n: file: app/config/yakuake.kcfg:147
+#. i18n: ectx: whatsthis, entry (Frames), group (Animation)
+#: rc.cpp:284
+#, fuzzy
+#| msgctxt "@info:whatsthis"
+#| msgid "The number of frames of the open/retract animation."
+msgctxt "@info:whatsthis"
+msgid ""
+"The number of frames of the open/retract animation. One frame is taken to be "
+"10 miliseconds."
+msgstr "Li nombe d' imådjes di l' animåcion drovi/rerôler. "
+
+#. i18n: file: app/config/yakuake.kcfg:155
+#. i18n: ectx: label, entry (PollMouse), group (AutoOpen)
+#: rc.cpp:287
+msgctxt "@label"
+msgid "Auto-open window"
+msgstr "Oto-drovaedje do purnea"
+
+#. i18n: file: app/config/yakuake.kcfg:156
+#. i18n: ectx: whatsthis, entry (PollMouse), group (AutoOpen)
+#: rc.cpp:290
+msgctxt "@info:whatsthis"
+msgid ""
+"Whether to automatically open the application window when the mouse pointer "
+"is found at the edge of the screen."
+msgstr ""
+"S' i fåt drovi otomaticmint li purnea do programe cwand l' pwinteu del sori "
+"si trove sol boirdeure del waitroûle."
+
+#. i18n: file: app/config/yakuake.kcfg:160
+#. i18n: ectx: label, entry (PollInterval), group (AutoOpen)
+#: rc.cpp:293
+msgctxt "@label"
+msgid "Mouse pointer poll interval"
+msgstr "Tins inte les deteccions del sori"
+
+#. i18n: file: app/config/yakuake.kcfg:161
+#. i18n: ectx: whatsthis, entry (PollInterval), group (AutoOpen)
 #: rc.cpp:296
-msgid "Ask the window manager to perform the animation"
+msgctxt "@info:whatsthis"
+msgid ""
+"The interval during which the mouse pointer position will be checked to "
+"determine whether or not it is at the same edge of the screen as the window."
 msgstr ""
+"Li tins inte tchaeke côp k' l' eplaeçmint do pwinteu del sori srè waiteye po "
+"dire s' il est, ou nonna, al minme boirdeure del waitroûle kel purnea."
 
-#. i18n: file: app/config/windowsettings.ui:252
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#. i18n: file: app/config/yakuake.kcfg:167
+#. i18n: ectx: label, entry (FirstRun), group (Dialogs)
 #: rc.cpp:299
-msgctxt "@title:group"
-msgid "Position"
-msgstr "Eplaeçmint"
+msgctxt "@label"
+msgid "Application first run"
+msgstr "Prumî enondaedje do programe"
 
-#. i18n: file: app/config/windowsettings.ui:260
-#. i18n: ectx: property (text), widget (QLabel, leftLabel)
+#. i18n: file: app/config/yakuake.kcfg:168
+#. i18n: ectx: whatsthis, entry (FirstRun), group (Dialogs)
 #: rc.cpp:302
-msgctxt "@item:inrange Direction to move the window in"
-msgid "Left"
-msgstr "Hintche"
+msgctxt "@info:whatsthis"
+msgid "Whether this is the first time the application is run."
+msgstr "S' i c' est l' prumî côp kel programe est enondé."
 
-#. i18n: file: app/config/windowsettings.ui:292
-#. i18n: ectx: property (text), widget (QLabel, rightLabel)
+#. i18n: file: app/config/yakuake.kcfg:172
+#. i18n: ectx: label, entry (ConfirmQuit), group (Dialogs)
 #: rc.cpp:305
-msgctxt "@item:inrange Direction to move the window in"
-msgid "Right"
-msgstr "Droete"
+msgctxt "@label"
+msgid "Confirm quit with multiple sessions"
+msgstr "Racertiner cwand on cwite des multi-sessions"
 
-#. i18n: file: app/config/windowsettings.ui:306
-#. i18n: ectx: property (text), widget (QLabel, screenLabel)
+#. i18n: file: app/config/yakuake.kcfg:173
+#. i18n: ectx: whatsthis, entry (ConfirmQuit), group (Dialogs)
 #: rc.cpp:308
-msgctxt "@label:listbox"
-msgid "Open on screen:"
-msgstr "Drovi sol waitroûle:"
-
-#. i18n: file: app/config/windowsettings.ui:317
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_Screen)
-#: rc.cpp:311
-msgctxt "@item:inlistbox"
-msgid "At mouse location"
-msgstr "Al plaece del sori"
-
-#. i18n: file: app/config/windowsettings.ui:322
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_Screen)
-#: rc.cpp:314
-msgctxt "@item:inlistbox"
-msgid "Screen 1"
-msgstr "Waitroûle 1"
-
-#. i18n: file: app/config/windowsettings.ui:345
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowOnAllDesktops)
-#: rc.cpp:317
-msgctxt "@option:check"
-msgid "Show on all desktops"
-msgstr "Mostrer so tos les scribannes"
+msgctxt "@info:whatsthis"
+msgid ""
+"Whether to prompt the user before quitting the application when multiple "
+"sessions are open."
+msgstr ""
+"S' i fåt dmander a l' uzeu divant d' cwiter l' programe cwand des multi-"
+"sessions sont drovowes."
 
 #. i18n: file: app/firstrundialog.ui:46
 #. i18n: ectx: property (text), widget (KTitleWidget, titleWidget)
-#: rc.cpp:320
+#: rc.cpp:311
 msgctxt "@title"
 msgid "Welcome to Yakuake"
 msgstr "Bénvnowe dins Yakuake"
 
 #. i18n: file: app/firstrundialog.ui:53
 #. i18n: ectx: property (text), widget (QLabel, introLabel)
-#: rc.cpp:323
+#: rc.cpp:314
 msgctxt "@info"
 msgid ""
 "Before starting to use the application, you might want to change the "
@@ -863,7 +840,7 @@ msgstr ""
 
 #. i18n: file: app/firstrundialog.ui:130
 #. i18n: ectx: property (text), widget (QLabel, outroLabel)
-#: rc.cpp:326
+#: rc.cpp:317
 msgctxt "@info"
 msgid "You can change the shortcut later at any time via the menu."
 msgstr ""
@@ -1054,12 +1031,12 @@ msgctxt "@info:shell"
 msgid "Yakuake is already running, opening window...."
 msgstr ""
 
-#: app/mainwindow.cpp:132
+#: app/mainwindow.cpp:133
 msgctxt "@info"
 msgid "Are you sure you want to quit?"
 msgstr ""
 
-#: app/mainwindow.cpp:140
+#: app/mainwindow.cpp:141
 #, fuzzy
 #| msgctxt "@info"
 #| msgid ""
@@ -1074,7 +1051,7 @@ msgstr ""
 "<warning>Vos avoz sacwantès sessions di drovowes. Ele vont esse touwêye si "
 "vs tcheryîz pus lon.</warning><nl/><nl/>Voloz moussî foû podbon?"
 
-#: app/mainwindow.cpp:142
+#: app/mainwindow.cpp:143
 #, fuzzy
 #| msgctxt "@info"
 #| msgid ""
@@ -1088,226 +1065,226 @@ msgstr ""
 "<warning>Vos avoz sacwantès sessions di drovowes. Ele vont esse touwêye si "
 "vs tcheryîz pus lon.</warning><nl/><nl/>Voloz moussî foû podbon?"
 
-#: app/mainwindow.cpp:146
+#: app/mainwindow.cpp:147
 msgctxt "@info"
 msgid ""
 "<warning>There are one or more open sessions that you have locked to prevent "
 "closing them accidentally. These will be killed if you continue.</warning>"
 msgstr ""
 
-#: app/mainwindow.cpp:151
+#: app/mainwindow.cpp:152
 msgctxt "@title:window"
 msgid "Really Quit?"
 msgstr "Cwiter podbon?"
 
-#: app/mainwindow.cpp:185
+#: app/mainwindow.cpp:187
 msgctxt "@action"
 msgid "Open/Retract Yakuake"
 msgstr "Drovi/Rerôler Yakuake"
 
-#: app/mainwindow.cpp:191
+#: app/mainwindow.cpp:193
 msgctxt "@action"
 msgid "Keep window open when it loses focus"
 msgstr "Wårder purnea drovou cwand i piede si prumî plan"
 
-#: app/mainwindow.cpp:196
+#: app/mainwindow.cpp:198
 msgctxt "@action"
 msgid "Manage Profiles..."
 msgstr "Manaedjî les profils..."
 
-#: app/mainwindow.cpp:201
+#: app/mainwindow.cpp:203
 msgctxt "@action"
 msgid "Edit Current Profile..."
 msgstr "Candjî profil do moumint..."
 
-#: app/mainwindow.cpp:207
+#: app/mainwindow.cpp:209
 msgctxt "@action"
 msgid "Increase Window Width"
 msgstr "Agrandi l' lårdjeur do purnea"
 
-#: app/mainwindow.cpp:212
+#: app/mainwindow.cpp:214
 msgctxt "@action"
 msgid "Decrease Window Width"
 msgstr "Raptiti l' lårdjeur do purnea"
 
-#: app/mainwindow.cpp:217
+#: app/mainwindow.cpp:219
 msgctxt "@action"
 msgid "Increase Window Height"
 msgstr "Agrandi l' hôteur do purnea"
 
-#: app/mainwindow.cpp:222
+#: app/mainwindow.cpp:224
 msgctxt "@action"
 msgid "Decrease Window Height"
 msgstr "Raptiti l' hôteur do purnea"
 
-#: app/mainwindow.cpp:227
+#: app/mainwindow.cpp:229
 msgctxt "@action"
 msgid "New Session"
 msgstr "Novele session"
 
-#: app/mainwindow.cpp:233
+#: app/mainwindow.cpp:235
 msgctxt "@action"
 msgid "Two Terminals, Horizontally"
 msgstr "Deus terminås, coutchîs"
 
-#: app/mainwindow.cpp:238
+#: app/mainwindow.cpp:240
 msgctxt "@action"
 msgid "Two Terminals, Vertically"
 msgstr "Deus terminås, astampés"
 
-#: app/mainwindow.cpp:243
+#: app/mainwindow.cpp:245
 msgctxt "@action"
 msgid "Four Terminals, Grid"
 msgstr "Cwate terminås, grile"
 
-#: app/mainwindow.cpp:248
+#: app/mainwindow.cpp:250
 msgctxt "@action"
 msgid "Close Session"
 msgstr "Clôre session"
 
-#: app/mainwindow.cpp:255
+#: app/mainwindow.cpp:257
 msgctxt "@action"
 msgid "Previous Session"
 msgstr "Session did divant"
 
-#: app/mainwindow.cpp:261
+#: app/mainwindow.cpp:263
 msgctxt "@action"
 msgid "Next Session"
 msgstr "Session d' après"
 
-#: app/mainwindow.cpp:267
+#: app/mainwindow.cpp:269
 msgctxt "@action"
 msgid "Move Session Left"
 msgstr "Bodjî l' session viè l' hintche"
 
-#: app/mainwindow.cpp:274
+#: app/mainwindow.cpp:276
 msgctxt "@action"
 msgid "Move Session Right"
 msgstr "Bodjî l' session viè l' droete"
 
-#: app/mainwindow.cpp:281
+#: app/mainwindow.cpp:283
 msgctxt "@action"
 msgid "Grow Terminal to the Right"
 msgstr ""
 
-#: app/mainwindow.cpp:288
+#: app/mainwindow.cpp:290
 msgctxt "@action"
 msgid "Grow Terminal to the Left"
 msgstr ""
 
-#: app/mainwindow.cpp:295
+#: app/mainwindow.cpp:297
 msgctxt "@action"
 msgid "Grow Terminal to the Top"
 msgstr ""
 
-#: app/mainwindow.cpp:302
+#: app/mainwindow.cpp:304
 msgctxt "@action"
 msgid "Grow Terminal to the Bottom"
 msgstr ""
 
-#: app/mainwindow.cpp:309
+#: app/mainwindow.cpp:311
 msgctxt "@action"
 msgid "Rename Session..."
 msgstr "Rilomer session..."
 
-#: app/mainwindow.cpp:316
+#: app/mainwindow.cpp:318
 msgctxt "@action"
 msgid "Previous Terminal"
 msgstr "Terminå di dvant"
 
-#: app/mainwindow.cpp:322
+#: app/mainwindow.cpp:324
 msgctxt "@action"
 msgid "Next Terminal"
 msgstr "Terminå d' après"
 
-#: app/mainwindow.cpp:328
+#: app/mainwindow.cpp:330
 msgctxt "@action"
 msgid "Close Active Terminal"
 msgstr "Clôre ovrant terminå"
 
-#: app/mainwindow.cpp:335
+#: app/mainwindow.cpp:337
 msgctxt "@action"
 msgid "Split Left/Right"
 msgstr "Dispårti hintche/droete"
 
-#: app/mainwindow.cpp:342
+#: app/mainwindow.cpp:344
 msgctxt "@action"
 msgid "Split Top/Bottom"
 msgstr "Dispårti hôt/bas"
 
-#: app/mainwindow.cpp:349 app/tabbar.cpp:191
+#: app/mainwindow.cpp:351 app/tabbar.cpp:191
 msgctxt "@action"
 msgid "Disable Keyboard Input"
 msgstr ""
 
-#: app/mainwindow.cpp:355
+#: app/mainwindow.cpp:357
 msgctxt "@action"
 msgid "Prevent Closing"
 msgstr ""
 
-#: app/mainwindow.cpp:363
+#: app/mainwindow.cpp:365
 #, kde-format
 msgctxt "@action"
 msgid "Switch to Session <numid>%1</numid>"
 msgstr "Passer al session <numid>%1</numid>"
 
-#: app/mainwindow.cpp:465
+#: app/mainwindow.cpp:467
 msgctxt "@title:menu"
 msgid "Help"
 msgstr "Aidance"
 
-#: app/mainwindow.cpp:471
+#: app/mainwindow.cpp:473
 msgctxt "@title:menu"
 msgid "Quick Options"
 msgstr "Tchuzes al vole"
 
-#: app/mainwindow.cpp:477
+#: app/mainwindow.cpp:479
 msgctxt "@title:menu"
 msgid "Screen"
 msgstr "Waitroûle"
 
-#: app/mainwindow.cpp:482
+#: app/mainwindow.cpp:484
 msgctxt "@title:menu"
 msgid "Width"
 msgstr "Lårdjeur"
 
-#: app/mainwindow.cpp:487
+#: app/mainwindow.cpp:489
 msgctxt "@title:menu"
 msgid "Height"
 msgstr "Hôteur"
 
-#: app/mainwindow.cpp:490
+#: app/mainwindow.cpp:492
 msgctxt "@title:menu"
 msgid "Settings"
 msgstr "Apontiaedjes"
 
-#: app/mainwindow.cpp:502
+#: app/mainwindow.cpp:505
 msgctxt "@item:inmenu"
 msgid "At mouse location"
 msgstr "Al plaece del sori"
 
-#: app/mainwindow.cpp:509
+#: app/mainwindow.cpp:512
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "Screen <numid>%1</numid>"
 msgstr "Waitroûle <numid>%1</numid>"
 
-#: app/mainwindow.cpp:595
+#: app/mainwindow.cpp:603
 msgctxt "@title Preferences page name"
 msgid "Window"
 msgstr "Purnea"
 
-#: app/mainwindow.cpp:602
+#: app/mainwindow.cpp:610
 msgctxt "@title Preferences page name"
 msgid "Behavior"
 msgstr "Dujhance"
 
-#: app/mainwindow.cpp:606
+#: app/mainwindow.cpp:614
 msgctxt "@title Preferences page name"
 msgid "Appearance"
 msgstr "Rivnance"
 
-#: app/mainwindow.cpp:659
+#: app/mainwindow.cpp:667
 msgctxt "@info"
 msgid ""
 "<application>Yakuake</application> was unable to load a skin. It is likely "
@@ -1317,17 +1294,12 @@ msgstr ""
 "Dandjreus k' elle a stî må astalêye.<nl/><nl/>Li programe va moussî foû do "
 "côp."
 
-#: app/mainwindow.cpp:661
+#: app/mainwindow.cpp:669
 msgctxt "@title:window"
 msgid "Cannot Load Skin"
 msgstr "Dji n' sai tcherdjî l' pea"
 
-#: app/mainwindow.cpp:1212
-msgctxt "@title:window"
-msgid "<application>Yakuake</application> Notification"
-msgstr "Notifiaedje di <application>Yakuake</application>"
-
-#: app/mainwindow.cpp:1213
+#: app/mainwindow.cpp:1220
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid ""
@@ -1341,24 +1313,24 @@ msgstr ""
 "Programe enondé comifåt.<nl/>Tchôkîz <shortcut>%1</shortcut> po s' endè "
 "siervi."
 
-#: app/sessionstack.cpp:483
+#: app/sessionstack.cpp:475
 msgctxt "@info"
 msgid ""
 "<warning>You have locked this session to prevent accidental closing of "
 "terminals.</warning>"
 msgstr ""
 
-#: app/sessionstack.cpp:487
+#: app/sessionstack.cpp:479
 msgctxt "@info"
 msgid "Are you sure you want to close this session?"
 msgstr ""
 
-#: app/sessionstack.cpp:489
+#: app/sessionstack.cpp:481
 msgctxt "@info"
 msgid "Are you sure you want to close this terminal?"
 msgstr ""
 
-#: app/sessionstack.cpp:493
+#: app/sessionstack.cpp:485
 #, fuzzy
 #| msgctxt "@title:window"
 #| msgid "Really Quit?"
@@ -1480,6 +1452,24 @@ msgstr "Cwiter"
 msgctxt "@info:whatsthis"
 msgid "Quits the application."
 msgstr "Mousse foû do programe"
+
+#~ msgctxt "@label"
+#~ msgid "Show startup notification"
+#~ msgstr "Mostrer l' notifiaedje di l' enondaedje"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid "Whether to show a notification popup at application startup."
+#~ msgstr ""
+#~ "S' i fåt mostrer èn aspitant purnea di notifiaedje a l' enondaedje do "
+#~ "programe."
+
+#~ msgctxt "@option:check"
+#~ msgid "Show startup notification popup"
+#~ msgstr "Mostrer aspitant purnea di notifiaedje a l' enondaedje"
+
+#~ msgctxt "@title:window"
+#~ msgid "<application>Yakuake</application> Notification"
+#~ msgstr "Notifiaedje di <application>Yakuake</application>"
 
 #~ msgctxt "@label:slider"
 #~ msgid "Speed:"
