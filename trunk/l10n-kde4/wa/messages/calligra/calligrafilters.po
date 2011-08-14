@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwordmswordfilter\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-13 02:05+0200\n"
+"POT-Creation-Date: 2011-08-14 02:04+0200\n"
 "PO-Revision-Date: 2010-12-04 13:34+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -81,10 +81,12 @@ msgstr "Tchuzes d' ebagaedje PNG"
 #: kchart/svg/svgexport.cc:88 kformula/latex/latexexport.cc:74
 #: kformula/png/pngexportdia.cc:248 kformula/svg/svgexport.cc:94
 #: libdialogfilter/exportsizedia.cpp:268
+#: stage/genericimageexport/genericimageexport.cpp:134
 msgid "Failed to write file."
 msgstr "Li scrijhaedje do fitchî a fwait berwete."
 
 #: kchart/genericimageexport/genericimageexport.cpp:123
+#: stage/genericimageexport/genericimageexport.cpp:135
 #, kde-format
 msgid "%1 Export Error"
 msgstr "Aroke d' ebagaedje %1"
@@ -169,6 +171,8 @@ msgstr "Hôteur (%):"
 #: words/docx/DocxXmlSettingsReader.cpp:87
 #: words/docx/DocxXmlDocumentReader.cpp:194
 #: words/docx/DocxXmlFontTableReader.cpp:89
+#: stage/pptx/PptxXmlDocumentReader.cpp:153
+#: stage/pptx/PptxXmlSlideReader.cpp:307
 #, kde-format
 msgid "Namespace \"%1\" not found"
 msgstr "Espåce di no « %1 » nén trové"
@@ -476,6 +480,7 @@ msgid "Declared number of shared strings too small (%1)"
 msgstr "Li nombe declaré ou les tchinnes pårtaedjeyes sont trop ptits (%1)"
 
 #: tables/xlsx/XlsxImport.cpp:571 words/docx/DocxImport.cpp:168
+#: stage/pptx/PptxImport.cpp:1100
 #, kde-format
 msgid "Unable to find part for type %1"
 msgstr "Dji n' sai trover l' pårteye pol sôre %1"
@@ -745,6 +750,20 @@ msgstr "Drovi documint"
 #: xsltfilter/import/xsltimportdia.cc:56
 msgid "Import XSLT Configuration"
 msgstr "Abaguer apontiaedje XSLT"
+
+#: stage/pptx/PptxXmlDocumentReader.cpp:288
+#, kde-format
+msgid "Slide layout \"%1\" not found"
+msgstr "Adjinçmint del diya «%1» nén trové"
+
+#: stage/pptx/PptxXmlSlideReader.cpp:552
+#, kde-format
+msgid "Slide %1"
+msgstr "Diya %1"
+
+#: stage/words/kprkword.cc:99 stage/words/odp2odt.cpp:287
+msgid "Slide Title"
+msgstr "Tite del diya"
 
 #. i18n: file: flow/imageexport/flow_imageexportwidget.ui:27
 #. i18n: ectx: property (text), widget (QLabel)
@@ -1785,15 +1804,6 @@ msgstr "Fitchîs xslt da vosse"
 #: rc.cpp:649 rc.cpp:667
 msgid "Choose..."
 msgstr "Tchoezi..."
-
-#~ msgid "Slide layout \"%1\" not found"
-#~ msgstr "Adjinçmint del diya «%1» nén trové"
-
-#~ msgid "Slide %1"
-#~ msgstr "Diya %1"
-
-#~ msgid "Slide Title"
-#~ msgstr "Tite del diya"
 
 #~ msgid "Note \"%1\" already exists"
 #~ msgstr "I gn a ddja ene note « %1 »"
