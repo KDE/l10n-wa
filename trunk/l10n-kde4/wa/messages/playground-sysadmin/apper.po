@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-15 04:21+0200\n"
+"POT-Creation-Date: 2011-08-16 06:59+0200\n"
 "PO-Revision-Date: 2011-07-15 10:16+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -610,74 +610,6 @@ msgstr "Categoreyes"
 msgid "Groups"
 msgstr "Groupes"
 
-#: Sentinel/PkInstallPackageFiles.cpp:50
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Installed packages"
-msgid "Install Packages Files"
-msgstr "Pacaedjes astalés"
-
-#: Sentinel/PkInstallPackageFiles.cpp:62
-msgid "Not Supported"
-msgstr ""
-
-#: Sentinel/PkInstallPackageFiles.cpp:63
-msgid "Your current backend does not support installing files"
-msgstr ""
-
-#: Sentinel/PkInstallPackageFiles.cpp:74
-#, fuzzy
-#| msgid "Press <i>Continue</i> if you want to install this file:"
-#| msgid_plural "Press <i>Continue</i> if you want to install these files:"
-msgid "Press <i>Continue</i> if you want to install this file"
-msgid_plural "Press <i>Continue</i> if you want to install these files"
-msgstr[0] "Tchôkî so <i>Continouwer</i> si vs voloz astaler ç' fitchî la :"
-msgstr[1] "Tchôkî so <i>Continouwer</i> si vs voloz astaler ces fitchîs la :"
-
-#: Sentinel/PkInstallPackageFiles.cpp:83 Sentinel/PkInstallPackageNames.cpp:64
-msgid "An application wants to install a package"
-msgid_plural "An application wants to install packages"
-msgstr[0] ""
-msgstr[1] ""
-
-#: Sentinel/PkInstallPackageFiles.cpp:87 Sentinel/PkInstallPackageNames.cpp:68
-#, kde-format
-msgid "The application <i>%2</i> wants to install a package"
-msgid_plural "The application <i>%2</i> wants to install packages"
-msgstr[0] ""
-msgstr[1] ""
-
-#: Sentinel/PkInstallPackageFiles.cpp:110
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Installing file"
-msgid "Installation Complete"
-msgstr "Dj' astale li fitchî"
-
-#: Sentinel/PkInstallPackageFiles.cpp:111
-#, fuzzy
-#| msgid "Failed to install file"
-#| msgid_plural "Failed to install files"
-msgid "File was installed successfully"
-msgid_plural "Files were installed successfully"
-msgstr[0] "L' astalaedje do fitchî a fwait berwete"
-msgstr[1] "L' astalaedje des fitchîs a fwait berwete"
-
-#: Sentinel/PkInstallPackageFiles.cpp:122
-#, fuzzy
-#| msgid "Failed to install file"
-#| msgid_plural "Failed to install files"
-msgid "Failed to install files"
-msgstr "L' astalaedje do fitchî a fwait berwete"
-
-#: Sentinel/PkInstallPackageFiles.cpp:123
-#: Sentinel/PkInstallPackageFiles.cpp:125
-#, fuzzy
-#| msgid "Failed to install file"
-#| msgid_plural "Failed to install files"
-msgid "Could not install files"
-msgstr "L' astalaedje do fitchî a fwait berwete"
-
 #: Sentinel/PkInstallPackageNames.cpp:42
 #, fuzzy
 #| msgctxt "The role of the transaction, in past tense"
@@ -685,39 +617,219 @@ msgstr "L' astalaedje do fitchî a fwait berwete"
 msgid "Install Packages by Name"
 msgstr "Pacaedjes astalés"
 
-#: Sentinel/PkInstallPackageNames.cpp:56
+#: Sentinel/PkInstallPackageNames.cpp:58
 msgid "Do you want to search for and install this package now?"
 msgid_plural "Do you want to search for and install these packages now?"
 msgstr[0] ""
 msgstr[1] ""
 
-#: Sentinel/PkInstallPackageNames.cpp:90 Sentinel/PkIsInstalled.cpp:46
-#: Sentinel/PkInstallCatalogs.cpp:283
+#: Sentinel/PkInstallPackageNames.cpp:66 Sentinel/PkInstallPackageFiles.cpp:90
+msgid "An application wants to install a package"
+msgid_plural "An application wants to install packages"
+msgstr[0] ""
+msgstr[1] ""
+
+#: Sentinel/PkInstallPackageNames.cpp:70 Sentinel/PkInstallPackageFiles.cpp:94
+#, kde-format
+msgid "The application <i>%2</i> wants to install a package"
+msgid_plural "The application <i>%2</i> wants to install packages"
+msgstr[0] ""
+msgstr[1] ""
+
+#: Sentinel/PkInstallPackageNames.cpp:92 Sentinel/PkInstallCatalogs.cpp:292
+#: Sentinel/PkIsInstalled.cpp:46
 msgid "Failed to start resolve transaction"
 msgstr "L' enondaedje del tranzaccion di rezoudaedje A fwait berwete"
 
-#: Sentinel/PkInstallPackageNames.cpp:102
+#: Sentinel/PkInstallPackageNames.cpp:104
 msgid "Failed to install packages"
 msgstr ""
 
-#: Sentinel/PkInstallPackageNames.cpp:103
+#: Sentinel/PkInstallPackageNames.cpp:105
 #, kde-format
 msgid "The package %2 is already installed"
 msgid_plural "The packages %2 are already installed"
 msgstr[0] ""
 msgstr[1] ""
 
-#: Sentinel/PkInstallPackageNames.cpp:111 Sentinel/PkSearchFile.cpp:81
-#: Sentinel/PkRemovePackageByFiles.cpp:117
+#: Sentinel/PkInstallPackageNames.cpp:113 Sentinel/PkSearchFile.cpp:81
+#: Sentinel/PkRemovePackageByFiles.cpp:132
 #, kde-format
 msgid "Could not find %1"
 msgstr "Dji n' a savou trover %1"
 
-#: Sentinel/PkInstallPackageNames.cpp:112
+#: Sentinel/PkInstallPackageNames.cpp:114
 msgid "The package could not be found in any software source"
 msgid_plural "The packages could not be found in any software source"
 msgstr[0] ""
 msgstr[1] ""
+
+#: Sentinel/KpkDistroUpgrade.cpp:69
+msgid "Start upgrade now"
+msgstr "Ataker l' metaedje a livea do côp"
+
+#: Sentinel/KpkDistroUpgrade.cpp:114
+msgid "Distribution upgrade finished. "
+msgstr "Metaedje a livea del distribucion fini. "
+
+#: Sentinel/PkInstallMimeTypes.cpp:39
+msgid "Install Support for File Types"
+msgstr ""
+
+#: Sentinel/PkInstallMimeTypes.cpp:50
+#, fuzzy
+#| msgid "No files were found."
+msgid "No valid file types were provided"
+msgstr "Dji n' a trové nou fitchî."
+
+#: Sentinel/PkInstallMimeTypes.cpp:52
+#, fuzzy
+#| msgid ""
+#| "Do you want to search for packages containing this file and remove it now?"
+#| msgid_plural ""
+#| "Do you want to search for packages containing these files and remove them "
+#| "now?"
+msgid "Do you want to search for a program that can open this file type?"
+msgid_plural ""
+"Do you want to search for a program that can open these file types?"
+msgstr[0] ""
+"Voloz vs trover des pacaedjes k' ont ç' fitchî la eyet les oister do côp ?"
+msgstr[1] ""
+"Voloz vs trover des pacaedjes k' ont ç' fitchî la eyet les oister do côp ?"
+
+#: Sentinel/PkInstallMimeTypes.cpp:61
+#, fuzzy
+#| msgid "A program requires an additional plugin to decode this file"
+#| msgid_plural "A program requires additional plugins to decode this file"
+msgid "A program is requiring support to open this kind of files"
+msgid_plural "A program is requiring support to open these kinds of files"
+msgstr[0] ""
+"On programe a mezåjhe d' on tchôke-divins d' dipus po discôder ç' fitchî la"
+msgstr[1] ""
+"On programe a mezåjhe di tchôkes-divins d' dipus po discôder ç' fitchî la"
+
+#: Sentinel/PkInstallMimeTypes.cpp:65
+#, fuzzy, kde-format
+#| msgid "A program requires an additional plugin to decode this file"
+#| msgid_plural "A program requires additional plugins to decode this file"
+msgid "The application %2 is requiring support to open this kind of files"
+msgid_plural ""
+"The application %2 is requiring support to open these kinds of files"
+msgstr[0] ""
+"On programe a mezåjhe d' on tchôke-divins d' dipus po discôder ç' fitchî la"
+msgstr[1] ""
+"On programe a mezåjhe di tchôkes-divins d' dipus po discôder ç' fitchî la"
+
+#: Sentinel/PkInstallMimeTypes.cpp:91
+#: Sentinel/PkInstallGStreamerResources.cpp:134
+#: Sentinel/PkInstallPlasmaResources.cpp:95
+#: Sentinel/PkInstallPrinterDrivers.cpp:74
+#: Sentinel/PkInstallFontconfigResources.cpp:143
+#: Sentinel/PkInstallFontconfigResources.cpp:164
+msgid "Failed to search for provides"
+msgstr "Li cweraedje des « dene » a fwait berwete"
+
+#: Sentinel/PkInstallMimeTypes.cpp:100
+#, fuzzy
+#| msgid "Failed to find software"
+msgid "Could not find software"
+msgstr "Li cweraedje do programe a fwait berwete"
+
+#: Sentinel/PkInstallMimeTypes.cpp:102
+msgid "No new applications can be found to handle this type of file"
+msgstr ""
+"Dji n' a savou trover nou novea programe pos apougnî cisse sôre di fitchî la"
+
+#: Sentinel/PkInstallCatalogs.cpp:48
+#, fuzzy
+#| msgid "Install catalog"
+#| msgid_plural "Install catalogs"
+msgid "Install Packages Catalogs"
+msgstr "Astaler catalogue"
+
+#: Sentinel/PkInstallCatalogs.cpp:67
+msgid "You can drop more catalogs in here"
+msgstr ""
+
+#: Sentinel/PkInstallCatalogs.cpp:87
+#, fuzzy
+#| msgid "No update description was found."
+msgid "No supported catalog was found"
+msgstr "Nou discrijhaedje trové po l' metaedje a djoû."
+
+#: Sentinel/PkInstallCatalogs.cpp:89
+#, fuzzy
+#| msgid "<h3>Do you want to install this catalog?</h3><ul><li>%2</li></ul>"
+#| msgid_plural ""
+#| "<h3>Do you want to install these catalogs?</h3><ul><li>%2</li></ul>"
+msgid "Do you want to install this catalog?"
+msgid_plural "Do you want to install these catalogs?"
+msgstr[0] "<h3>Voloz astaler ç' catalogue ci ?</h3><ul><li>%2</li></ul>"
+msgstr[1] "<h3>Voloz astaler ces catalogues ci ?</h3><ul><li>%2</li></ul>"
+
+#: Sentinel/PkInstallCatalogs.cpp:98
+#, fuzzy
+#| msgid "A program wants to install a font"
+#| msgid_plural "A program wants to install fonts"
+msgid "An application wants to install a catalog"
+msgid_plural "An application wants to install catalogs"
+msgstr[0] "On programe vout astaler ene fonte"
+msgstr[1] "On programe vout astaler des fontes"
+
+#: Sentinel/PkInstallCatalogs.cpp:102
+#, fuzzy, kde-format
+#| msgid "A program wants to install a font"
+#| msgid_plural "A program wants to install fonts"
+msgid "The application <i>%2</i> wants to install a catalog"
+msgid_plural "The application <i>%2</i> wants to install catalogs"
+msgstr[0] "On programe vout astaler ene fonte"
+msgstr[1] "On programe vout astaler des fontes"
+
+#: Sentinel/PkInstallCatalogs.cpp:139
+msgid "Not supported"
+msgstr ""
+
+#: Sentinel/PkInstallCatalogs.cpp:140
+msgid ""
+"Your backend does not support any of the needed methods to install a catalog"
+msgstr ""
+
+#: Sentinel/PkInstallCatalogs.cpp:179
+#, fuzzy
+#| msgid "Could not find %1"
+msgid "Catalog not found"
+msgstr "Dji n' a savou trover %1"
+
+#: Sentinel/PkInstallCatalogs.cpp:180
+#, fuzzy
+#| msgid "Could not find package"
+msgid "Could not find a catalog to install"
+msgstr "Dji n' a savou trover l' pacaedje"
+
+#: Sentinel/PkInstallCatalogs.cpp:187
+#, kde-format
+msgid "Catalog %2 failed to open"
+msgid_plural "Catalogs %2 failed to open"
+msgstr[0] ""
+msgstr[1] ""
+
+#: Sentinel/PkInstallCatalogs.cpp:191
+msgid "Failed to open"
+msgstr ""
+
+#: Sentinel/PkInstallCatalogs.cpp:197
+#, fuzzy
+#| msgid "Catalog installer"
+msgid "Catalog is Empty"
+msgstr "Astaleu d' catalogue"
+
+#: Sentinel/PkInstallCatalogs.cpp:198
+#, fuzzy
+#| msgid "<h3>Do you want to install this catalog?</h3><ul><li>%2</li></ul>"
+#| msgid_plural ""
+#| "<h3>Do you want to install these catalogs?</h3><ul><li>%2</li></ul>"
+msgid "Could not find any package to install in this catalog"
+msgstr "<h3>Voloz astaler ç' catalogue ci ?</h3><ul><li>%2</li></ul>"
 
 #: Sentinel/TransactionWatcher.cpp:65 Sentinel/TransactionWatcher.cpp:250
 msgid "Hide this icon"
@@ -757,318 +869,6 @@ msgstr "Mostrer messaedjes"
 #: Sentinel/TransactionWatcher.cpp:293
 msgid "Ignore"
 msgstr "Passer houte"
-
-#: Sentinel/PkIsInstalled.cpp:36
-#, fuzzy
-#| msgid "The package is not installed"
-msgid "Quering if a Package is Installed"
-msgstr "Li pacaedje n' est nén astalé"
-
-#: Sentinel/PkIsInstalled.cpp:67
-msgid "User canceled the transaction"
-msgstr "L' uzeu a rnoncî al tranzaccion"
-
-#: Sentinel/PkIsInstalled.cpp:69
-msgid "An unknown error happened"
-msgstr "Åk n' a nén stî, aroke nén cnoxhowe"
-
-#: Sentinel/PkInstallGStreamerResources.cpp:39
-msgid "Install GStreamer Resources"
-msgstr ""
-
-#: Sentinel/PkInstallGStreamerResources.cpp:64
-msgid "The following plugin is required. Do you want to search for this now?"
-msgid_plural ""
-"The following plugins are required. Do you want to search for these now?"
-msgstr[0] "I fåt l' tchôke-divins shuvant. Voloz vs cachî do côp après ci la ?"
-msgstr[1] ""
-"I fåt les tchôkes-divins shuvants. Voloz vs cachî do côp après ces la ?"
-
-#: Sentinel/PkInstallGStreamerResources.cpp:75
-msgid "A program requires an additional plugin to decode this file"
-msgid_plural "A program requires additional plugins to decode this file"
-msgstr[0] ""
-"On programe a mezåjhe d' on tchôke-divins d' dipus po discôder ç' fitchî la"
-msgstr[1] ""
-"On programe a mezåjhe di tchôkes-divins d' dipus po discôder ç' fitchî la"
-
-#: Sentinel/PkInstallGStreamerResources.cpp:80
-msgid "A program requires an additional plugin to encode this file"
-msgid_plural "A program requires additional plugins to encode this file"
-msgstr[0] ""
-"On programe a mezåjhe d' on tchôke-divins d' dipus po-z ecôder ç' fitchî la"
-msgstr[1] ""
-"On programe a mezåjhe di tchôkes-divins d' dipus po-z ecôder ç' fitchî la"
-
-#: Sentinel/PkInstallGStreamerResources.cpp:85
-msgid "A program requires an additional plugin for this operation"
-msgid_plural "A program requires additional plugins for this operation"
-msgstr[0] ""
-"On programe a mezåjhe d' on tchôke-divins d' dipus po ciste operåcion la"
-msgstr[1] ""
-"On programe a mezåjhe di tchôkes-divins d' dipus po ces operåcions lale"
-
-#: Sentinel/PkInstallGStreamerResources.cpp:92
-#, kde-format
-msgid "%2 requires an additional plugin to decode this file"
-msgid_plural "%2 requires additional plugins to decode this file"
-msgstr[0] "%2 a mezåjhe d' on tchôke-divins d' dipus po discôder ç' fitchî la"
-msgstr[1] "%2 a mezåjhe di tchôkes-divins d' dipus po discôder ç' fitchî la"
-
-#: Sentinel/PkInstallGStreamerResources.cpp:98
-#, kde-format
-msgid "%2 requires an additional plugin to encode this file"
-msgid_plural "%2 requires additional plugins to encode this file"
-msgstr[0] "%2 a mezåjhe d' on tchôke-divins d' dipus po-z ecôder ç' fitchî la"
-msgstr[1] "%2 a mezåjhe di tchôkes-divins d' dipus po-z ecôder ç' fitchî la"
-
-#: Sentinel/PkInstallGStreamerResources.cpp:104
-#, kde-format
-msgid "%2 requires an additional plugin for this operation"
-msgid_plural "%2 requires additional plugins for this operation"
-msgstr[0] "%2 a mezåjhe d' on tchôke-divins d' dipus po ciste operåcion la"
-msgstr[1] "%2 a mezåjhe di tchôkes-divins d' dipus po ces operåcions lale"
-
-#: Sentinel/PkInstallGStreamerResources.cpp:131
-#: Sentinel/PkInstallMimeTypes.cpp:89 Sentinel/PkInstallPlasmaResources.cpp:91
-#: Sentinel/PkInstallPrinterDrivers.cpp:74
-#: Sentinel/PkInstallFontconfigResources.cpp:95
-#: Sentinel/PkInstallFontconfigResources.cpp:116
-msgid "Failed to search for provides"
-msgstr "Li cweraedje des « dene » a fwait berwete"
-
-#: Sentinel/PkInstallGStreamerResources.cpp:142
-#, fuzzy
-#| msgid "No files were found."
-msgid "No results found"
-msgstr "Dji n' a trové nou fitchî."
-
-#: Sentinel/PkInstallGStreamerResources.cpp:144
-msgid "Could not find plugin in any configured software source"
-msgstr ""
-"Dji n' a savou trover l' tchôke-divins dins nou sourdant des programes "
-"d' apontyî"
-
-#: Sentinel/PkInstallMimeTypes.cpp:39
-msgid "Install Support for File Types"
-msgstr ""
-
-#: Sentinel/PkInstallMimeTypes.cpp:58
-#, fuzzy
-#| msgid ""
-#| "Do you want to search for packages containing this file and remove it now?"
-#| msgid_plural ""
-#| "Do you want to search for packages containing these files and remove them "
-#| "now?"
-msgid "Do you want to search for a program that can open this file type?"
-msgstr ""
-"Voloz vs trover des pacaedjes k' ont ç' fitchî la eyet les oister do côp ?"
-
-#: Sentinel/PkInstallMimeTypes.cpp:63
-#, fuzzy
-#| msgid "A program requires an additional plugin to decode this file"
-#| msgid_plural "A program requires additional plugins to decode this file"
-msgid "A program is requiring support to open this kind of files"
-msgid_plural "A program is requiring support to open these kinds of files"
-msgstr[0] ""
-"On programe a mezåjhe d' on tchôke-divins d' dipus po discôder ç' fitchî la"
-msgstr[1] ""
-"On programe a mezåjhe di tchôkes-divins d' dipus po discôder ç' fitchî la"
-
-#: Sentinel/PkInstallMimeTypes.cpp:67
-#, fuzzy, kde-format
-#| msgid "A program requires an additional plugin to decode this file"
-#| msgid_plural "A program requires additional plugins to decode this file"
-msgid "The application %2 is requiring support to open this kind of files"
-msgid_plural ""
-"The application %2 is requiring support to open these kinds of files"
-msgstr[0] ""
-"On programe a mezåjhe d' on tchôke-divins d' dipus po discôder ç' fitchî la"
-msgstr[1] ""
-"On programe a mezåjhe di tchôkes-divins d' dipus po discôder ç' fitchî la"
-
-#: Sentinel/PkInstallMimeTypes.cpp:98
-#, fuzzy
-#| msgid "Failed to find software"
-msgid "Could not find software"
-msgstr "Li cweraedje do programe a fwait berwete"
-
-#: Sentinel/PkInstallMimeTypes.cpp:100
-msgid "No new applications can be found to handle this type of file"
-msgstr ""
-"Dji n' a savou trover nou novea programe pos apougnî cisse sôre di fitchî la"
-
-#: Sentinel/PkInstallCatalogs.cpp:49
-#, fuzzy
-#| msgid "Install catalog"
-#| msgid_plural "Install catalogs"
-msgid "Install Packages Catalogs"
-msgstr "Astaler catalogue"
-
-#: Sentinel/PkInstallCatalogs.cpp:81
-#, fuzzy
-#| msgid "<h3>Do you want to install this catalog?</h3><ul><li>%2</li></ul>"
-#| msgid_plural ""
-#| "<h3>Do you want to install these catalogs?</h3><ul><li>%2</li></ul>"
-msgid "Do you want to install this catalog?"
-msgid_plural "Do you want to install these catalogs?"
-msgstr[0] "<h3>Voloz astaler ç' catalogue ci ?</h3><ul><li>%2</li></ul>"
-msgstr[1] "<h3>Voloz astaler ces catalogues ci ?</h3><ul><li>%2</li></ul>"
-
-#: Sentinel/PkInstallCatalogs.cpp:87
-#, fuzzy
-#| msgid "A program wants to install a font"
-#| msgid_plural "A program wants to install fonts"
-msgid "An application wants to install a catalog"
-msgid_plural "An application wants to install catalogs"
-msgstr[0] "On programe vout astaler ene fonte"
-msgstr[1] "On programe vout astaler des fontes"
-
-#: Sentinel/PkInstallCatalogs.cpp:91
-#, fuzzy, kde-format
-#| msgid "A program wants to install a font"
-#| msgid_plural "A program wants to install fonts"
-msgid "The application <i>%2</i> wants to install a catalog"
-msgid_plural "The application <i>%2</i> wants to install catalogs"
-msgstr[0] "On programe vout astaler ene fonte"
-msgstr[1] "On programe vout astaler des fontes"
-
-#: Sentinel/PkInstallCatalogs.cpp:130
-msgid "Not supported"
-msgstr ""
-
-#: Sentinel/PkInstallCatalogs.cpp:131
-msgid ""
-"Your backend does not support any of the needed methods to install a catalog"
-msgstr ""
-
-#: Sentinel/PkInstallCatalogs.cpp:170
-#, fuzzy
-#| msgid "Could not find %1"
-msgid "Catalog not found"
-msgstr "Dji n' a savou trover %1"
-
-#: Sentinel/PkInstallCatalogs.cpp:171
-#, fuzzy
-#| msgid "Could not find package"
-msgid "Could not find a catalog to install"
-msgstr "Dji n' a savou trover l' pacaedje"
-
-#: Sentinel/PkInstallCatalogs.cpp:178
-#, kde-format
-msgid "Catalog %2 failed to open"
-msgid_plural "Catalogs %2 failed to open"
-msgstr[0] ""
-msgstr[1] ""
-
-#: Sentinel/PkInstallCatalogs.cpp:182
-msgid "Failed to open"
-msgstr ""
-
-#: Sentinel/PkInstallCatalogs.cpp:188
-#, fuzzy
-#| msgid "Catalog installer"
-msgid "Catalog is Empty"
-msgstr "Astaleu d' catalogue"
-
-#: Sentinel/PkInstallCatalogs.cpp:189
-#, fuzzy
-#| msgid "<h3>Do you want to install this catalog?</h3><ul><li>%2</li></ul>"
-#| msgid_plural ""
-#| "<h3>Do you want to install these catalogs?</h3><ul><li>%2</li></ul>"
-msgid "Could not find any package to install in this catalog"
-msgstr "<h3>Voloz astaler ç' catalogue ci ?</h3><ul><li>%2</li></ul>"
-
-#: Sentinel/TransactionTrayIcon.cpp:45
-msgid "Transactions"
-msgstr "Tranzaccions"
-
-#: Sentinel/TransactionTrayIcon.cpp:90
-#, kde-format
-msgid "%1% - %2"
-msgstr "%1% - %2"
-
-#: Sentinel/TransactionTrayIcon.cpp:92
-#, kde-format
-msgid "%1"
-msgstr "%1"
-
-#: Sentinel/PkInstallPlasmaResources.cpp:40
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Installed signature"
-msgid "Install Plasma Resources"
-msgstr "Sinateure astalêye"
-
-#: Sentinel/PkInstallPlasmaResources.cpp:49
-#, kde-format
-msgid "%1 data engine"
-msgstr "Moteur di dnêyes %1"
-
-#: Sentinel/PkInstallPlasmaResources.cpp:51
-#, kde-format
-msgid "%1 script engine"
-msgstr "Moteur di scripe %1"
-
-#: Sentinel/PkInstallPlasmaResources.cpp:61
-msgid "The following service is required. Do you want to search for this now?"
-msgid_plural ""
-"The following services are required. Do you want to search for these now?"
-msgstr[0] "I fåt l' siervice shuvant. Voloz vs cachî do côp après ci la ?"
-msgstr[1] "I fåt les siervices shuvants. Voloz vs cachî do côp après ces la ?"
-
-#: Sentinel/PkInstallPlasmaResources.cpp:67
-msgid "Plasma requires an additional service for this operation"
-msgid_plural "Plasma requires additional services for this operation"
-msgstr[0] "Plasma a mezåjhe d' on siervice di dpus po ciste operåcion la"
-msgstr[1] "Plasma a mezåjhe di siervices di dpus po ciste operåcion la"
-
-#: Sentinel/PkInstallPlasmaResources.cpp:102
-msgid "Failed to search for Plasma service"
-msgstr "Li cweraedje do siervice di Plasma a fwait berwete"
-
-#: Sentinel/PkInstallPlasmaResources.cpp:105
-msgid "Could not find service in any configured software source"
-msgstr ""
-"Dji n' a savou trover l' siervice dins nou sourdant des programes d' apontyî"
-
-#: Sentinel/PkInstallPrinterDrivers.cpp:39
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Installing file"
-msgid "Install Printer Drivers"
-msgstr "Dj' astale li fitchî"
-
-#: Sentinel/PkInstallPrinterDrivers.cpp:87
-msgid "Failed to search for printer driver"
-msgstr "Li cweraedje do mineu del sicrirece a fwait berwete"
-
-#: Sentinel/PkInstallPrinterDrivers.cpp:88
-msgid "Could not find printer driver in any configured software source"
-msgstr ""
-"Dji n' a savou trover l' mineu del sicrirece dins nou sourdant des programes "
-"d' apontyî"
-
-#: Sentinel/PkSearchFile.cpp:37
-msgid "Search Packages that Provides Files"
-msgstr ""
-
-#: Sentinel/PkSearchFile.cpp:54 Sentinel/PkRemovePackageByFiles.cpp:105
-#: Sentinel/PkInstallProvideFiles.cpp:87
-msgid "Failed to start search file transaction"
-msgstr "L' enondaedje del tranzaccion di cweraedje do fitchî a fwait berwete"
-
-#: Sentinel/PkSearchFile.cpp:80
-msgid "The file name could not be found in any software source"
-msgstr ""
-
-#: Sentinel/KpkDistroUpgrade.cpp:69
-msgid "Start upgrade now"
-msgstr "Ataker l' metaedje a livea do côp"
-
-#: Sentinel/KpkDistroUpgrade.cpp:114
-msgid "Distribution upgrade finished. "
-msgstr "Metaedje a livea del distribucion fini. "
 
 #: Sentinel/KpkUpdateIcon.cpp:171
 msgid "KPackageKit"
@@ -1114,196 +914,31 @@ msgstr "Li metaedje a djoû do sistinme a stî fwait sins rujhe."
 msgid "The automated software update failed."
 msgstr "Li metaedje a djoû otomatike do programe a fwait berwete."
 
-#: Sentinel/PkRemovePackageByFiles.cpp:42
-msgid "Remove Packages that Provides Files"
-msgstr ""
-
-#: Sentinel/PkRemovePackageByFiles.cpp:61
-#, fuzzy
-#| msgid "Press <i>Continue</i> if you want to install this file:"
-#| msgid_plural "Press <i>Continue</i> if you want to install these files:"
-msgid "Press <i>Continue</i> if you want to remove"
-msgstr "Tchôkî so <i>Continouwer</i> si vs voloz astaler ç' fitchî la :"
-
-#: Sentinel/PkRemovePackageByFiles.cpp:69
-#, fuzzy
-#| msgid "You need to restart the application"
-msgid "Do you want to remove the following application:"
-msgid_plural "Do you want to remove the following applications:"
-msgstr[0] "Vos avoz dandjî d' renonder l' programe"
-msgstr[1] "Vos avoz dandjî d' renonder l' programe"
-
-#: Sentinel/PkRemovePackageByFiles.cpp:73
-#, fuzzy
-#| msgid "Failed to remove package"
-msgid "Do you want to remove a package:"
-msgid_plural "Do you want to remove packages:"
-msgstr[0] "Li oistaedje des pacaedjes a fwait berwete"
-msgstr[1] "Li oistaedje des pacaedjes a fwait berwete"
-
-#: Sentinel/PkRemovePackageByFiles.cpp:79
-#, kde-format
-msgid "The application <i>%2</i> is asking to remove an application:"
-msgid_plural "The application <i>%2</i> is asking to remove applications:"
-msgstr[0] ""
-msgstr[1] ""
-
-#: Sentinel/PkRemovePackageByFiles.cpp:84
-#, kde-format
-msgid "The application <i>%2</i> is asking to remove a package:"
-msgid_plural "The application <i>%2</i> is asking to remove packages:"
-msgstr[0] ""
-msgstr[1] ""
-
-#: Sentinel/PkRemovePackageByFiles.cpp:90
-#, fuzzy
-#| msgid "No update description was found."
-msgid "No application was found"
-msgstr "Nou discrijhaedje trové po l' metaedje a djoû."
-
-#: Sentinel/PkRemovePackageByFiles.cpp:118
-msgid "The file could not be found in any installed package"
-msgid_plural "The files could not be found in any installed package"
-msgstr[0] "Dji n' a savou trover l' fitchî dins nou pacaedje d' astalé"
-msgstr[1] "Dji n' a savou trover les fitchîs dins nou pacaedje d' astalé"
-
-#: Sentinel/ReviewChanges.cpp:67
-msgid "The following package was found"
-msgid_plural "The following packages were found"
-msgstr[0] ""
-msgstr[1] ""
-
-#: Sentinel/PkInstallProvideFiles.cpp:39
-msgid "Install Packages that Provides Files"
-msgstr ""
-
-#: Sentinel/PkInstallProvideFiles.cpp:57
-#, fuzzy
-#| msgid ""
-#| "The following plugin is required. Do you want to search for this now?"
-#| msgid_plural ""
-#| "The following plugins are required. Do you want to search for these now?"
-msgid "Do you want to search for this now?"
-msgid_plural "Do you want to search for these now?"
-msgstr[0] "I fåt l' tchôke-divins shuvant. Voloz vs cachî do côp après ci la ?"
-msgstr[1] ""
-"I fåt les tchôkes-divins shuvants. Voloz vs cachî do côp après ces la ?"
-
-#: Sentinel/PkInstallProvideFiles.cpp:63
-msgid "A program wants to install a file"
-msgid_plural "A program wants to install files"
-msgstr[0] ""
-msgstr[1] ""
-
-#: Sentinel/PkInstallProvideFiles.cpp:67
-#, fuzzy, kde-format
-#| msgid "A program wants to install a font"
-#| msgid_plural "A program wants to install fonts"
-msgid "The application %2 is asking to install a file"
-msgid_plural "The application %2 is asking to install files"
-msgstr[0] "On programe vout astaler ene fonte"
-msgstr[1] "On programe vout astaler des fontes"
-
-#: Sentinel/PkInstallProvideFiles.cpp:100 libapper/PkTransaction.cpp:304
-msgid "Failed to install file"
-msgid_plural "Failed to install files"
-msgstr[0] "L' astalaedje do fitchî a fwait berwete"
-msgstr[1] "L' astalaedje des fitchîs a fwait berwete"
-
-#: Sentinel/PkInstallProvideFiles.cpp:101
-#, kde-format
-msgid "The %1 package already provides this file"
-msgstr ""
-
-#: Sentinel/PkInstallProvideFiles.cpp:107
-msgid "Failed to find package"
-msgstr "Li cweraedje do pacaedje a fwait berwete"
-
-#: Sentinel/PkInstallProvideFiles.cpp:108
-msgid "The file could not be found in any packages"
-msgid_plural "The files could not be found in any packages"
-msgstr[0] "Dji n' a savou trover l' fitchî dins nou pacaedje"
-msgstr[1] "Dji n' a savou trover l' fitchî dins nou pacaedje"
-
-#: Sentinel/main.cpp:36
-msgid "Apper Sentinel"
-msgstr "Gåre d' Apper"
-
-#: Sentinel/main.cpp:41
-msgid "Trever Fischer"
-msgstr "Trever Fischer"
-
-#: Sentinel/PkInstallFontconfigResources.cpp:39
-#, fuzzy
-#| msgid "Installed Software"
-msgid "Installs new Fonts"
-msgstr "Programe d' astalé"
-
-#: Sentinel/PkInstallFontconfigResources.cpp:56
-msgid ""
-"An additional font is required to view this document correctly. Do you want "
-"to search for a suitable package now?"
-msgid_plural ""
-"Additional fonts are required to view this document correctly. Do you want "
-"to search for suitable packages now?"
-msgstr[0] ""
-"I fåt ene fonte di dpus po vey ci documint cial comifåt. Voloz trover do côp "
-"on pacaedje ki fwait ça ?"
-msgstr[1] ""
-"I fåt des fonte di dpus po vey ci documint cial comifåt. Voloz trover do côp "
-"des pacaedjes ki fjhèt ça ?"
-
-#: Sentinel/PkInstallFontconfigResources.cpp:65
-msgid "A program wants to install a font"
-msgid_plural "A program wants to install fonts"
-msgstr[0] "On programe vout astaler ene fonte"
-msgstr[1] "On programe vout astaler des fontes"
-
-#: Sentinel/PkInstallFontconfigResources.cpp:69
-#, fuzzy, kde-format
-#| msgid "%2 wants to install a font"
-#| msgid_plural "%2 wants to install fonts"
-msgid "The application %2 wants to install a font"
-msgid_plural "The application %2 wants to install fonts"
-msgstr[0] "%2 vout astaler ene fonte"
-msgstr[1] "%2 vout astaler des fontes"
-
-#: Sentinel/PkInstallFontconfigResources.cpp:105
-#: Sentinel/PkInstallFontconfigResources.cpp:114
-msgid "Failed to find font"
-msgstr "Li cweraedje del fonte a fwait berwete"
-
-#: Sentinel/PkInstallFontconfigResources.cpp:107
-#, fuzzy
-#| msgid "No new fonts can be found for this document"
-msgid "No new fonts could be found for this document"
-msgstr "Dji n' sai trover d' novele fonte po c' documint ci"
-
 #: Sentinel/SessionTask.cpp:62 libapper/KpkRequirements.cpp:229
 msgid "Continue"
 msgstr "Continouwer"
 
-#: Sentinel/SessionTask.cpp:304
+#: Sentinel/SessionTask.cpp:305
 #, fuzzy
 #| msgid "The package is not installed"
 msgid "There are no packages to Install or Remove"
 msgstr "Li pacaedje n' est nén astalé"
 
-#: Sentinel/SessionTask.cpp:305
+#: Sentinel/SessionTask.cpp:306
 msgid "This action should not happen"
 msgstr ""
 
-#: Sentinel/SessionTask.cpp:334
+#: Sentinel/SessionTask.cpp:335
 #, fuzzy
 #| msgid "Could not find %1"
 msgid "Could not find"
 msgstr "Dji n' a savou trover %1"
 
-#: Sentinel/SessionTask.cpp:335 Sentinel/SessionTask.cpp:344
+#: Sentinel/SessionTask.cpp:336 Sentinel/SessionTask.cpp:345
 msgid "No packages were found that meet the request"
 msgstr ""
 
-#: Sentinel/SessionTask.cpp:343
+#: Sentinel/SessionTask.cpp:344
 #, fuzzy
 #| msgid "Failed to find font"
 msgid "Failed to find"
@@ -1326,8 +961,438 @@ msgid "Task completed"
 msgstr "Trop vî"
 
 #: Sentinel/SessionTask.cpp:371
-msgid "All operations were commited succesfully"
+#, fuzzy
+#| msgid "Failed to install file"
+#| msgid_plural "Failed to install files"
+msgid "All operations were committed successfully"
+msgstr "L' astalaedje do fitchî a fwait berwete"
+
+#: Sentinel/PkIsInstalled.cpp:36
+#, fuzzy
+#| msgid "The package is not installed"
+msgid "Querying if a Package is Installed"
+msgstr "Li pacaedje n' est nén astalé"
+
+#: Sentinel/PkIsInstalled.cpp:67
+msgid "User canceled the transaction"
+msgstr "L' uzeu a rnoncî al tranzaccion"
+
+#: Sentinel/PkIsInstalled.cpp:69
+msgid "An unknown error happened"
+msgstr "Åk n' a nén stî, aroke nén cnoxhowe"
+
+#: Sentinel/PkInstallGStreamerResources.cpp:39
+msgid "Install GStreamer Resources"
 msgstr ""
+
+#: Sentinel/PkInstallGStreamerResources.cpp:67
+msgid "The following plugin is required. Do you want to search for this now?"
+msgid_plural ""
+"The following plugins are required. Do you want to search for these now?"
+msgstr[0] "I fåt l' tchôke-divins shuvant. Voloz vs cachî do côp après ci la ?"
+msgstr[1] ""
+"I fåt les tchôkes-divins shuvants. Voloz vs cachî do côp après ces la ?"
+
+#: Sentinel/PkInstallGStreamerResources.cpp:78
+msgid "A program requires an additional plugin to decode this file"
+msgid_plural "A program requires additional plugins to decode this file"
+msgstr[0] ""
+"On programe a mezåjhe d' on tchôke-divins d' dipus po discôder ç' fitchî la"
+msgstr[1] ""
+"On programe a mezåjhe di tchôkes-divins d' dipus po discôder ç' fitchî la"
+
+#: Sentinel/PkInstallGStreamerResources.cpp:83
+msgid "A program requires an additional plugin to encode this file"
+msgid_plural "A program requires additional plugins to encode this file"
+msgstr[0] ""
+"On programe a mezåjhe d' on tchôke-divins d' dipus po-z ecôder ç' fitchî la"
+msgstr[1] ""
+"On programe a mezåjhe di tchôkes-divins d' dipus po-z ecôder ç' fitchî la"
+
+#: Sentinel/PkInstallGStreamerResources.cpp:88
+msgid "A program requires an additional plugin for this operation"
+msgid_plural "A program requires additional plugins for this operation"
+msgstr[0] ""
+"On programe a mezåjhe d' on tchôke-divins d' dipus po ciste operåcion la"
+msgstr[1] ""
+"On programe a mezåjhe di tchôkes-divins d' dipus po ces operåcions lale"
+
+#: Sentinel/PkInstallGStreamerResources.cpp:95
+#, kde-format
+msgid "%2 requires an additional plugin to decode this file"
+msgid_plural "%2 requires additional plugins to decode this file"
+msgstr[0] "%2 a mezåjhe d' on tchôke-divins d' dipus po discôder ç' fitchî la"
+msgstr[1] "%2 a mezåjhe di tchôkes-divins d' dipus po discôder ç' fitchî la"
+
+#: Sentinel/PkInstallGStreamerResources.cpp:101
+#, kde-format
+msgid "%2 requires an additional plugin to encode this file"
+msgid_plural "%2 requires additional plugins to encode this file"
+msgstr[0] "%2 a mezåjhe d' on tchôke-divins d' dipus po-z ecôder ç' fitchî la"
+msgstr[1] "%2 a mezåjhe di tchôkes-divins d' dipus po-z ecôder ç' fitchî la"
+
+#: Sentinel/PkInstallGStreamerResources.cpp:107
+#, kde-format
+msgid "%2 requires an additional plugin for this operation"
+msgid_plural "%2 requires additional plugins for this operation"
+msgstr[0] "%2 a mezåjhe d' on tchôke-divins d' dipus po ciste operåcion la"
+msgstr[1] "%2 a mezåjhe di tchôkes-divins d' dipus po ces operåcions lale"
+
+#: Sentinel/PkInstallGStreamerResources.cpp:145
+#, fuzzy
+#| msgid "No files were found."
+msgid "No results found"
+msgstr "Dji n' a trové nou fitchî."
+
+#: Sentinel/PkInstallGStreamerResources.cpp:147
+msgid "Could not find plugin in any configured software source"
+msgstr ""
+"Dji n' a savou trover l' tchôke-divins dins nou sourdant des programes "
+"d' apontyî"
+
+#: Sentinel/PkInstallProvideFiles.cpp:39
+msgid "Install Packages that Provides Files"
+msgstr ""
+
+#: Sentinel/PkInstallProvideFiles.cpp:49
+#, fuzzy
+#| msgid ""
+#| "The following plugin is required. Do you want to search for this now?"
+#| msgid_plural ""
+#| "The following plugins are required. Do you want to search for these now?"
+msgid "Do you want to search for this now?"
+msgid_plural "Do you want to search for these now?"
+msgstr[0] "I fåt l' tchôke-divins shuvant. Voloz vs cachî do côp après ci la ?"
+msgstr[1] ""
+"I fåt les tchôkes-divins shuvants. Voloz vs cachî do côp après ces la ?"
+
+#: Sentinel/PkInstallProvideFiles.cpp:55
+msgid "A program wants to install a file"
+msgid_plural "A program wants to install files"
+msgstr[0] ""
+msgstr[1] ""
+
+#: Sentinel/PkInstallProvideFiles.cpp:59
+#, fuzzy, kde-format
+#| msgid "A program wants to install a font"
+#| msgid_plural "A program wants to install fonts"
+msgid "The application %2 is asking to install a file"
+msgid_plural "The application %2 is asking to install files"
+msgstr[0] "On programe vout astaler ene fonte"
+msgstr[1] "On programe vout astaler des fontes"
+
+#: Sentinel/PkInstallProvideFiles.cpp:83 Sentinel/PkSearchFile.cpp:54
+#: Sentinel/PkRemovePackageByFiles.cpp:120
+msgid "Failed to start search file transaction"
+msgstr "L' enondaedje del tranzaccion di cweraedje do fitchî a fwait berwete"
+
+#: Sentinel/PkInstallProvideFiles.cpp:96 libapper/PkTransaction.cpp:304
+msgid "Failed to install file"
+msgid_plural "Failed to install files"
+msgstr[0] "L' astalaedje do fitchî a fwait berwete"
+msgstr[1] "L' astalaedje des fitchîs a fwait berwete"
+
+#: Sentinel/PkInstallProvideFiles.cpp:97
+#, kde-format
+msgid "The %1 package already provides this file"
+msgstr ""
+
+#: Sentinel/PkInstallProvideFiles.cpp:103
+msgid "Failed to find package"
+msgstr "Li cweraedje do pacaedje a fwait berwete"
+
+#: Sentinel/PkInstallProvideFiles.cpp:104
+msgid "The file could not be found in any packages"
+msgid_plural "The files could not be found in any packages"
+msgstr[0] "Dji n' a savou trover l' fitchî dins nou pacaedje"
+msgstr[1] "Dji n' a savou trover l' fitchî dins nou pacaedje"
+
+#: Sentinel/PkInstallPackageFiles.cpp:50
+#, fuzzy
+#| msgctxt "The role of the transaction, in past tense"
+#| msgid "Installed packages"
+msgid "Install Packages Files"
+msgstr "Pacaedjes astalés"
+
+#: Sentinel/PkInstallPackageFiles.cpp:54
+#: Sentinel/PkRemovePackageByFiles.cpp:45
+msgid "You can drop more files in here"
+msgstr ""
+
+#: Sentinel/PkInstallPackageFiles.cpp:64
+msgid "Not Supported"
+msgstr ""
+
+#: Sentinel/PkInstallPackageFiles.cpp:65
+msgid "Your current backend does not support installing files"
+msgstr ""
+
+#: Sentinel/PkInstallPackageFiles.cpp:79
+#: Sentinel/PkRemovePackageByFiles.cpp:66
+#, fuzzy
+#| msgid "No files were found."
+msgid "No supported files were provided"
+msgstr "Dji n' a trové nou fitchî."
+
+#: Sentinel/PkInstallPackageFiles.cpp:81
+#, fuzzy
+#| msgid "Press <i>Continue</i> if you want to install this file:"
+#| msgid_plural "Press <i>Continue</i> if you want to install these files:"
+msgid "Press <i>Continue</i> if you want to install this file"
+msgid_plural "Press <i>Continue</i> if you want to install these files"
+msgstr[0] "Tchôkî so <i>Continouwer</i> si vs voloz astaler ç' fitchî la :"
+msgstr[1] "Tchôkî so <i>Continouwer</i> si vs voloz astaler ces fitchîs la :"
+
+#: Sentinel/PkInstallPackageFiles.cpp:117
+#, fuzzy
+#| msgctxt "The role of the transaction, in present tense"
+#| msgid "Installing file"
+msgid "Installation Complete"
+msgstr "Dj' astale li fitchî"
+
+#: Sentinel/PkInstallPackageFiles.cpp:118
+#, fuzzy
+#| msgid "Failed to install file"
+#| msgid_plural "Failed to install files"
+msgid "File was installed successfully"
+msgid_plural "Files were installed successfully"
+msgstr[0] "L' astalaedje do fitchî a fwait berwete"
+msgstr[1] "L' astalaedje des fitchîs a fwait berwete"
+
+#: Sentinel/PkInstallPackageFiles.cpp:129
+#, fuzzy
+#| msgid "Failed to install file"
+#| msgid_plural "Failed to install files"
+msgid "Failed to install files"
+msgstr "L' astalaedje do fitchî a fwait berwete"
+
+#: Sentinel/PkInstallPackageFiles.cpp:130
+#: Sentinel/PkInstallPackageFiles.cpp:132
+#, fuzzy
+#| msgid "Failed to install file"
+#| msgid_plural "Failed to install files"
+msgid "Could not install files"
+msgstr "L' astalaedje do fitchî a fwait berwete"
+
+#: Sentinel/TransactionTrayIcon.cpp:45
+msgid "Transactions"
+msgstr "Tranzaccions"
+
+#: Sentinel/TransactionTrayIcon.cpp:90
+#, kde-format
+msgid "%1% - %2"
+msgstr "%1% - %2"
+
+#: Sentinel/TransactionTrayIcon.cpp:92
+#, kde-format
+msgid "%1"
+msgstr "%1"
+
+#: Sentinel/PkInstallPlasmaResources.cpp:40
+#, fuzzy
+#| msgctxt "The role of the transaction, in past tense"
+#| msgid "Installed signature"
+msgid "Install Plasma Resources"
+msgstr "Sinateure astalêye"
+
+#: Sentinel/PkInstallPlasmaResources.cpp:53
+#, kde-format
+msgid "%1 data engine"
+msgstr "Moteur di dnêyes %1"
+
+#: Sentinel/PkInstallPlasmaResources.cpp:55
+#, kde-format
+msgid "%1 script engine"
+msgstr "Moteur di scripe %1"
+
+#: Sentinel/PkInstallPlasmaResources.cpp:65
+msgid "The following service is required. Do you want to search for this now?"
+msgid_plural ""
+"The following services are required. Do you want to search for these now?"
+msgstr[0] "I fåt l' siervice shuvant. Voloz vs cachî do côp après ci la ?"
+msgstr[1] "I fåt les siervices shuvants. Voloz vs cachî do côp après ces la ?"
+
+#: Sentinel/PkInstallPlasmaResources.cpp:72
+msgid "Plasma requires an additional service for this operation"
+msgid_plural "Plasma requires additional services for this operation"
+msgstr[0] "Plasma a mezåjhe d' on siervice di dpus po ciste operåcion la"
+msgstr[1] "Plasma a mezåjhe di siervices di dpus po ciste operåcion la"
+
+#: Sentinel/PkInstallPlasmaResources.cpp:106
+msgid "Failed to search for Plasma service"
+msgstr "Li cweraedje do siervice di Plasma a fwait berwete"
+
+#: Sentinel/PkInstallPlasmaResources.cpp:109
+msgid "Could not find service in any configured software source"
+msgstr ""
+"Dji n' a savou trover l' siervice dins nou sourdant des programes d' apontyî"
+
+#: Sentinel/PkInstallPrinterDrivers.cpp:39
+#, fuzzy
+#| msgctxt "The role of the transaction, in present tense"
+#| msgid "Installing file"
+msgid "Install Printer Drivers"
+msgstr "Dj' astale li fitchî"
+
+#: Sentinel/PkInstallPrinterDrivers.cpp:87
+msgid "Failed to search for printer driver"
+msgstr "Li cweraedje do mineu del sicrirece a fwait berwete"
+
+#: Sentinel/PkInstallPrinterDrivers.cpp:88
+msgid "Could not find printer driver in any configured software source"
+msgstr ""
+"Dji n' a savou trover l' mineu del sicrirece dins nou sourdant des programes "
+"d' apontyî"
+
+#: Sentinel/PkSearchFile.cpp:37
+msgid "Search Packages that Provides Files"
+msgstr ""
+
+#: Sentinel/PkSearchFile.cpp:80
+msgid "The file name could not be found in any software source"
+msgstr ""
+
+#: Sentinel/PkRemovePackageByFiles.cpp:42
+msgid "Remove Packages that Provides Files"
+msgstr ""
+
+#: Sentinel/PkRemovePackageByFiles.cpp:69
+#, fuzzy
+#| msgid "You need to restart the application"
+msgid "Do you want to remove the following application?"
+msgid_plural "Do you want to remove the following applications?"
+msgstr[0] "Vos avoz dandjî d' renonder l' programe"
+msgstr[1] "Vos avoz dandjî d' renonder l' programe"
+
+#: Sentinel/PkRemovePackageByFiles.cpp:73
+#, fuzzy
+#| msgid ""
+#| "Do you want to search for packages containing this file and remove it now?"
+#| msgid_plural ""
+#| "Do you want to search for packages containing these files and remove them "
+#| "now?"
+msgid "Do you want to search for a package providing this file?"
+msgid_plural "Do you want to search for a package providing these files?"
+msgstr[0] ""
+"Voloz vs trover des pacaedjes k' ont ç' fitchî la eyet les oister do côp ?"
+msgstr[1] ""
+"Voloz vs trover des pacaedjes k' ont ç' fitchî la eyet les oister do côp ?"
+
+#: Sentinel/PkRemovePackageByFiles.cpp:84
+#, fuzzy
+#| msgid "A program wants to install a font"
+#| msgid_plural "A program wants to install fonts"
+msgid "An application is asking to remove an application"
+msgid_plural "An application is asking to remove applications"
+msgstr[0] "On programe vout astaler ene fonte"
+msgstr[1] "On programe vout astaler des fontes"
+
+#: Sentinel/PkRemovePackageByFiles.cpp:88
+#, fuzzy
+#| msgid "A program wants to install a font"
+#| msgid_plural "A program wants to install fonts"
+msgid "An application is asking to remove a file"
+msgid_plural "An application is asking to remove files"
+msgstr[0] "On programe vout astaler ene fonte"
+msgstr[1] "On programe vout astaler des fontes"
+
+#: Sentinel/PkRemovePackageByFiles.cpp:94
+#, fuzzy, kde-format
+#| msgid "A program wants to install a font"
+#| msgid_plural "A program wants to install fonts"
+msgid "The application <i>%2</i> is asking to remove an application"
+msgid_plural "The application <i>%2</i> is asking to remove applications"
+msgstr[0] "On programe vout astaler ene fonte"
+msgstr[1] "On programe vout astaler des fontes"
+
+#: Sentinel/PkRemovePackageByFiles.cpp:99
+#, fuzzy, kde-format
+#| msgid "A program wants to install a font"
+#| msgid_plural "A program wants to install fonts"
+msgid "The application <i>%2</i> is asking to remove a file"
+msgid_plural "The application <i>%2</i> is asking to remove files"
+msgstr[0] "On programe vout astaler ene fonte"
+msgstr[1] "On programe vout astaler des fontes"
+
+#: Sentinel/PkRemovePackageByFiles.cpp:105
+#, fuzzy
+#| msgid "No update description was found."
+msgid "No application was found"
+msgstr "Nou discrijhaedje trové po l' metaedje a djoû."
+
+#: Sentinel/PkRemovePackageByFiles.cpp:133
+msgid "The file could not be found in any installed package"
+msgid_plural "The files could not be found in any installed package"
+msgstr[0] "Dji n' a savou trover l' fitchî dins nou pacaedje d' astalé"
+msgstr[1] "Dji n' a savou trover les fitchîs dins nou pacaedje d' astalé"
+
+#: Sentinel/ReviewChanges.cpp:67
+msgid "The following package was found"
+msgid_plural "The following packages were found"
+msgstr[0] ""
+msgstr[1] ""
+
+#: Sentinel/main.cpp:36
+msgid "Apper Sentinel"
+msgstr "Gåre d' Apper"
+
+#: Sentinel/main.cpp:41
+msgid "Trever Fischer"
+msgstr "Trever Fischer"
+
+#: Sentinel/PkInstallFontconfigResources.cpp:41
+#, fuzzy
+#| msgid "Installed Software"
+msgid "Installs new Fonts"
+msgstr "Programe d' astalé"
+
+#: Sentinel/PkInstallFontconfigResources.cpp:72
+msgid "Could interpret request"
+msgstr ""
+
+#: Sentinel/PkInstallFontconfigResources.cpp:72
+msgid "Please verify if the request was valid"
+msgstr ""
+
+#: Sentinel/PkInstallFontconfigResources.cpp:104
+msgid ""
+"An additional font is required to view this document correctly. Do you want "
+"to search for a suitable package now?"
+msgid_plural ""
+"Additional fonts are required to view this document correctly. Do you want "
+"to search for suitable packages now?"
+msgstr[0] ""
+"I fåt ene fonte di dpus po vey ci documint cial comifåt. Voloz trover do côp "
+"on pacaedje ki fwait ça ?"
+msgstr[1] ""
+"I fåt des fonte di dpus po vey ci documint cial comifåt. Voloz trover do côp "
+"des pacaedjes ki fjhèt ça ?"
+
+#: Sentinel/PkInstallFontconfigResources.cpp:113
+msgid "A program wants to install a font"
+msgid_plural "A program wants to install fonts"
+msgstr[0] "On programe vout astaler ene fonte"
+msgstr[1] "On programe vout astaler des fontes"
+
+#: Sentinel/PkInstallFontconfigResources.cpp:117
+#, fuzzy, kde-format
+#| msgid "%2 wants to install a font"
+#| msgid_plural "%2 wants to install fonts"
+msgid "The application %2 wants to install a font"
+msgid_plural "The application %2 wants to install fonts"
+msgstr[0] "%2 vout astaler ene fonte"
+msgstr[1] "%2 vout astaler des fontes"
+
+#: Sentinel/PkInstallFontconfigResources.cpp:153
+#: Sentinel/PkInstallFontconfigResources.cpp:162
+msgid "Failed to find font"
+msgstr "Li cweraedje del fonte a fwait berwete"
+
+#: Sentinel/PkInstallFontconfigResources.cpp:155
+#, fuzzy
+#| msgid "No new fonts can be found for this document"
+msgid "No new fonts could be found for this document"
+msgstr "Dji n' sai trover d' novele fonte po c' documint ci"
 
 #: libapper/ApplicationLauncher.cpp:33
 msgid "The following application was just installed. Click on it to launch:"
@@ -1342,7 +1407,7 @@ msgstr ""
 
 #. i18n: file: libapper/KpkLicenseAgreement.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, KpkLicenseAgreement)
-#: libapper/KpkLicenseAgreement.cpp:35 rc.cpp:224
+#: libapper/KpkLicenseAgreement.cpp:35 rc.cpp:221
 msgid "License Agreement Required"
 msgstr "Dandjî d' en acoird di licince"
 
@@ -1358,7 +1423,7 @@ msgstr ""
 
 #. i18n: file: libapper/KpkRepoSig.ui:6
 #. i18n: ectx: property (windowTitle), widget (QWidget, KpkRepoSig)
-#: libapper/KpkRepoSig.cpp:38 rc.cpp:230
+#: libapper/KpkRepoSig.cpp:38 rc.cpp:227
 msgid "Software signature is required"
 msgstr "Li sinateure do programe est dmandêye"
 
@@ -3664,90 +3729,97 @@ msgstr ""
 msgid "Back"
 msgstr ""
 
-#. i18n: file: Sentinel/IntroDialog.ui:29
-#. i18n: ectx: property (toolTip), widget (QListView, listView)
-#: rc.cpp:215
-msgid "You can drop more files in here"
-msgstr ""
-
-#. i18n: file: Sentinel/IntroDialog.ui:69
+#. i18n: file: Sentinel/IntroDialog.ui:59
 #. i18n: ectx: property (text), widget (QLabel, descriptionL)
-#: rc.cpp:218
+#: rc.cpp:215
 msgid "TextLabel"
 msgstr ""
 
 #. i18n: file: libapper/ApplicationLauncher.ui:40
 #. i18n: ectx: property (text), widget (QCheckBox, showCB)
-#: rc.cpp:221
+#: rc.cpp:218
 msgid "Do not show this dialog again"
 msgstr ""
 
 #. i18n: file: libapper/KpkLicenseAgreement.ui:33
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:227
+#: rc.cpp:224
 msgid "Please read the following important information before continuing:"
 msgstr ""
 
 #. i18n: file: libapper/KpkRepoSig.ui:21
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:233
+#: rc.cpp:230
 msgid "Do you trust the origin of packages?"
 msgstr ""
 
 #. i18n: file: libapper/KpkRepoSig.ui:39
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:236
+#: rc.cpp:233
 msgid "Repository name:"
 msgstr "No do depot :"
 
 #. i18n: file: libapper/KpkRepoSig.ui:62
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:239
+#: rc.cpp:236
 msgid "Signature URL:"
 msgstr "URL del sinateure :"
 
 #. i18n: file: libapper/KpkRepoSig.ui:85
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:242
+#: rc.cpp:239
 msgid "Signature user identifier:"
 msgstr "Idintifieu del sinateure di l' uzeu :"
 
 #. i18n: file: libapper/KpkRepoSig.ui:108
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:245
+#: rc.cpp:242
 msgid "Signature identifier:"
 msgstr "Idintifieu del sinateure :"
 
 #. i18n: file: libapper/KpkRequirements.ui:31
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:248
+#: rc.cpp:245
 msgid "Additional changes are required to complete the task"
 msgstr ""
 
 #. i18n: file: libapper/KpkRequirements.ui:57
 #. i18n: ectx: property (windowTitle), widget (QDockWidget, dockWidget)
-#: rc.cpp:251
+#: rc.cpp:248
 msgid "Actions"
 msgstr ""
 
 #. i18n: file: libapper/KpkRequirements.ui:144
 #. i18n: ectx: property (text), widget (QCheckBox, confirmCB)
-#: rc.cpp:254
+#: rc.cpp:251
 msgid ""
 "Do not show this confirmation when installing or updating additional packages"
 msgstr ""
 
 #. i18n: file: libapper/PkTransaction.ui:38
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:257
+#: rc.cpp:254
 msgid "icon"
 msgstr ""
 
 #. i18n: file: libapper/PkTransaction.ui:64
 #. i18n: ectx: property (text), widget (QLabel, currentL)
-#: rc.cpp:260
+#: rc.cpp:257
 msgid "Downloading Packages"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Press <i>Continue</i> if you want to install this file:"
+#~| msgid_plural "Press <i>Continue</i> if you want to install these files:"
+#~ msgid "Press <i>Continue</i> if you want to remove"
+#~ msgstr "Tchôkî so <i>Continouwer</i> si vs voloz astaler ç' fitchî la :"
+
+#, fuzzy
+#~| msgid "Failed to remove package"
+#~ msgid "Do you want to remove a package:"
+#~ msgid_plural "Do you want to remove packages:"
+#~ msgstr[0] "Li oistaedje des pacaedjes a fwait berwete"
+#~ msgstr[1] "Li oistaedje des pacaedjes a fwait berwete"
 
 #~ msgid "Application that can open this type of file"
 #~ msgid_plural "Applications that can open this type of file"
