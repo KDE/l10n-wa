@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-16 06:59+0200\n"
+"POT-Creation-Date: 2011-08-17 04:14+0200\n"
 "PO-Revision-Date: 2011-07-15 10:16+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -24,7 +24,7 @@ msgstr ""
 msgid "Backend Details"
 msgstr "Mostrer totafwait sol bouye di fond"
 
-#: Apper/main.cpp:54 Sentinel/main.cpp:34
+#: Apper/main.cpp:54 Sentinel/UpdateIcon.cpp:171 Sentinel/main.cpp:34
 msgid "Apper"
 msgstr "Apper"
 
@@ -84,11 +84,7 @@ msgstr "Oisteu d' mierseu pacaedje"
 msgid "Package file to install"
 msgstr "Fitchî d' pacaedje a-z astaler"
 
-#: ApperKCM/ScreenShotViewer.cpp:90
-msgid "Could not find screen shot."
-msgstr "Dji n' a savou trover d' waitroûlêye."
-
-#: ApperKCM/Settings/OriginModel.cpp:40 ApperKCM/Settings/OriginModel.cpp:53
+#: ApperKCM/Settings/OriginModel.cpp:39 ApperKCM/Settings/OriginModel.cpp:52
 msgid "Origin of Packages"
 msgstr "Di wice ki les pacaedjes vinèt"
 
@@ -130,7 +126,7 @@ msgctxt "No updates will be automatically installed"
 msgid "None"
 msgstr "Nouk"
 
-#: ApperKCM/Settings/Settings.cpp:261 libapper/KpkStrings.cpp:962
+#: ApperKCM/Settings/Settings.cpp:261 libapper/PkStrings.cpp:962
 msgid "You do not have the necessary privileges to perform this action."
 msgstr "Vos n' avoz nén les droets k' i fåt po fé ç' faitindje la."
 
@@ -138,7 +134,7 @@ msgstr "Vos n' avoz nén les droets k' i fåt po fé ç' faitindje la."
 msgid "Failed to set origin data"
 msgstr "Li definixhaedje di l' oridjinne des dnêyes a fwait berwete"
 
-#: ApperKCM/Updater/DistroUpgrade.cpp:39 Sentinel/KpkDistroUpgrade.cpp:63
+#: ApperKCM/Updater/DistroUpgrade.cpp:39 Sentinel/DistroUpgrade.cpp:63
 msgid "Distribution upgrade available"
 msgstr "I gn a on metaedje a livea del distribucion"
 
@@ -178,18 +174,18 @@ msgstr ""
 msgid "Distribution upgrade complete."
 msgstr "Metaedje a livea del distribucion tot fwait."
 
-#: ApperKCM/Updater/DistroUpgrade.cpp:100 Sentinel/KpkDistroUpgrade.cpp:117
+#: ApperKCM/Updater/DistroUpgrade.cpp:100 Sentinel/DistroUpgrade.cpp:117
 #, kde-format
 msgid "Distribution upgrade process exited with code %1."
 msgstr "Li metaedje a livea del distribucion a moussî foû avou l' côde %1."
 
-#: ApperKCM/Updater/DistroUpgrade.cpp:115 Sentinel/KpkDistroUpgrade.cpp:134
+#: ApperKCM/Updater/DistroUpgrade.cpp:115 Sentinel/DistroUpgrade.cpp:134
 msgid "The distribution upgrade process failed to start."
 msgstr ""
 "L' enondaedje do processus di metaedje a livea del distribucion a fwait "
 "berwete."
 
-#: ApperKCM/Updater/DistroUpgrade.cpp:119 Sentinel/KpkDistroUpgrade.cpp:137
+#: ApperKCM/Updater/DistroUpgrade.cpp:119 Sentinel/DistroUpgrade.cpp:137
 msgid ""
 "The distribution upgrade process crashed some time after starting "
 "successfully."
@@ -197,7 +193,7 @@ msgstr ""
 "Li processus di metaedje a livea del distribucion a tcheyou e rak après s' "
 "aveur enondé comifåt."
 
-#: ApperKCM/Updater/DistroUpgrade.cpp:123 Sentinel/KpkDistroUpgrade.cpp:140
+#: ApperKCM/Updater/DistroUpgrade.cpp:123 Sentinel/DistroUpgrade.cpp:140
 msgid "The distribution upgrade process failed with an unknown error."
 msgstr ""
 "Li processus di metaedje a livea del distribucion a fwait berwete avou ene "
@@ -336,49 +332,100 @@ msgstr "Depot :"
 msgid "No update description was found."
 msgstr "Nou discrijhaedje trové po l' metaedje a djoû."
 
-#: ApperKCM/Updater/Updater.cpp:104 ApperKCM/BrowseView.cpp:89
+#: ApperKCM/Updater/Updater.cpp:101 ApperKCM/BrowseView.cpp:89
 msgid "Show Versions"
 msgstr "Mostrer modêyes"
 
-#: ApperKCM/Updater/Updater.cpp:112 ApperKCM/BrowseView.cpp:97
+#: ApperKCM/Updater/Updater.cpp:109 ApperKCM/BrowseView.cpp:97
 msgid "Show Architectures"
 msgstr "Mostrer årtchitecteures"
 
 #. i18n: file: ApperKCM/ApperKCM.ui:230
 #. i18n: ectx: property (text), widget (QPushButton, checkUpdatesPB)
-#: ApperKCM/Updater/Updater.cpp:276 rc.cpp:200
+#: ApperKCM/Updater/Updater.cpp:273 rc.cpp:200
 msgid "Check for new Updates"
 msgstr "Cachî après des noveas metaedjes a djoû"
 
-#: ApperKCM/TransactionHistory.cpp:66
-msgid "Refresh transactions list"
-msgstr "Rafrister l' djivêye des tranzaccions"
+#: ApperKCM/ApperKCM.cpp:77
+msgid "Application Manager"
+msgstr "Manaedjeu des programes"
 
-#: ApperKCM/TransactionHistory.cpp:87
-#, kde-format
-msgid "Time since last cache refresh: %1"
-msgstr "Tins dispoy li dierin rafristaedje del muchete : %1"
+#: ApperKCM/ApperKCM.cpp:79
+msgid "KDE interface for managing software"
+msgstr "Eterface di KDE po manaedjî les programes"
 
-#: ApperKCM/TransactionModel.cpp:46
-msgid "Date"
-msgstr "Date"
+#: ApperKCM/ApperKCM.cpp:81
+msgid "(C) 2008-2010 Daniel Nicoletti"
+msgstr "© 2008-2010 Daniel Nicoletti"
 
-#: ApperKCM/TransactionModel.cpp:47 libapper/PackageModel.cpp:174
-msgid "Action"
-msgstr "Accion"
+#: ApperKCM/ApperKCM.cpp:109 ApperKCM/ApperKCM.cpp:291
+msgid "Find"
+msgstr "Trover"
 
-#: ApperKCM/TransactionModel.cpp:48 Sentinel/TransactionWatcher.cpp:293
-msgid "Details"
-msgstr "Detays"
+#: ApperKCM/ApperKCM.cpp:205
+msgid "History"
+msgstr "Istwere"
 
-#: ApperKCM/TransactionModel.cpp:49
-msgctxt "Machine user who issued the transaction"
-msgid "Username"
-msgstr "No di l' uzeu"
+#. i18n: file: ApperKCM/Settings/Settings.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
+#: ApperKCM/ApperKCM.cpp:211 rc.cpp:140
+msgid "Settings"
+msgstr "Apontiaedjes"
 
-#: ApperKCM/TransactionModel.cpp:50
-msgid "Application"
-msgstr "Programe"
+#: ApperKCM/ApperKCM.cpp:268 ApperKCM/ApperKCM.cpp:269
+#: ApperKCM/ApperKCM.cpp:270 ApperKCM/ApperKCM.cpp:271
+msgid "&Cancel"
+msgstr "&Rinoncî"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:284
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:278 rc.cpp:206
+msgid "Find by &name"
+msgstr "Trover sol &no"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:294
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:279 rc.cpp:212
+msgid "Find by f&ile name"
+msgstr "Trover sol &no do fitchî"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:289
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: ApperKCM/ApperKCM.cpp:280 rc.cpp:209
+msgid "Find by &description"
+msgstr "Trover sol &discrijhaedje"
+
+#: ApperKCM/ApperKCM.cpp:414
+msgid ""
+"The settings of the current module have changed.\n"
+"Do you want to apply the changes or discard them?"
+msgstr ""
+"Les apontiaedjes do module do moumint ont candjî.\n"
+"Voloz vs mete en ouve les candjmint oudonbén les rovyî ?"
+
+#: ApperKCM/ApperKCM.cpp:416
+msgid "Apply Settings"
+msgstr "Mete èn ouve les apontiaedjes"
+
+#: ApperKCM/CategoryModel.cpp:47
+msgid "Installed Software"
+msgstr "Programe d' astalé"
+
+#: ApperKCM/CategoryModel.cpp:50 ApperKCM/CategoryModel.cpp:58
+msgid "Lists"
+msgstr "Djivêyes"
+
+#: ApperKCM/CategoryModel.cpp:55
+msgid "Updates"
+msgstr "Metaedjes a djoû"
+
+#: ApperKCM/CategoryModel.cpp:155 ApperKCM/CategoryModel.cpp:339
+msgid "Categories"
+msgstr "Categoreyes"
+
+#: ApperKCM/CategoryModel.cpp:208
+msgid "Groups"
+msgstr "Groupes"
 
 #: ApperKCM/FiltersMenu.cpp:37
 msgid "Collections"
@@ -394,7 +441,7 @@ msgstr "Pont d' ramexhnêyes"
 
 #. i18n: file: Apper/BackendDetails.ui:100
 #. i18n: ectx: property (text), widget (QCheckBox, installedCB)
-#: ApperKCM/FiltersMenu.cpp:60 libapper/KpkStrings.cpp:362 rc.cpp:23
+#: ApperKCM/FiltersMenu.cpp:60 libapper/PkStrings.cpp:362 rc.cpp:23
 msgid "Installed"
 msgstr "Astalé"
 
@@ -529,148 +576,94 @@ msgstr "Dji n' sai cweri les detays do programe"
 msgid "Applications"
 msgstr "Programes"
 
-#: ApperKCM/ApperKCM.cpp:77
-msgid "Application Manager"
-msgstr "Manaedjeu des programes"
+#: ApperKCM/ScreenShotViewer.cpp:90
+msgid "Could not find screen shot."
+msgstr "Dji n' a savou trover d' waitroûlêye."
 
-#: ApperKCM/ApperKCM.cpp:79
-msgid "KDE interface for managing software"
-msgstr "Eterface di KDE po manaedjî les programes"
+#: ApperKCM/TransactionHistory.cpp:66
+msgid "Refresh transactions list"
+msgstr "Rafrister l' djivêye des tranzaccions"
 
-#: ApperKCM/ApperKCM.cpp:81
-msgid "(C) 2008-2010 Daniel Nicoletti"
-msgstr "© 2008-2010 Daniel Nicoletti"
-
-#: ApperKCM/ApperKCM.cpp:109 ApperKCM/ApperKCM.cpp:291
-msgid "Find"
-msgstr "Trover"
-
-#: ApperKCM/ApperKCM.cpp:205
-msgid "History"
-msgstr "Istwere"
-
-#. i18n: file: ApperKCM/Settings/Settings.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
-#: ApperKCM/ApperKCM.cpp:211 rc.cpp:140
-msgid "Settings"
-msgstr "Apontiaedjes"
-
-#: ApperKCM/ApperKCM.cpp:268 ApperKCM/ApperKCM.cpp:269
-#: ApperKCM/ApperKCM.cpp:270 ApperKCM/ApperKCM.cpp:271
-msgid "&Cancel"
-msgstr "&Rinoncî"
-
-#. i18n: file: ApperKCM/ApperKCM.ui:284
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:278 rc.cpp:206
-msgid "Find by &name"
-msgstr "Trover sol &no"
-
-#. i18n: file: ApperKCM/ApperKCM.ui:294
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:279 rc.cpp:212
-msgid "Find by f&ile name"
-msgstr "Trover sol &no do fitchî"
-
-#. i18n: file: ApperKCM/ApperKCM.ui:289
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.cpp:280 rc.cpp:209
-msgid "Find by &description"
-msgstr "Trover sol &discrijhaedje"
-
-#: ApperKCM/ApperKCM.cpp:414
-msgid ""
-"The settings of the current module have changed.\n"
-"Do you want to apply the changes or discard them?"
-msgstr ""
-"Les apontiaedjes do module do moumint ont candjî.\n"
-"Voloz vs mete en ouve les candjmint oudonbén les rovyî ?"
-
-#: ApperKCM/ApperKCM.cpp:416
-msgid "Apply Settings"
-msgstr "Mete èn ouve les apontiaedjes"
-
-#: ApperKCM/CategoryModel.cpp:47
-msgid "Installed Software"
-msgstr "Programe d' astalé"
-
-#: ApperKCM/CategoryModel.cpp:50 ApperKCM/CategoryModel.cpp:58
-msgid "Lists"
-msgstr "Djivêyes"
-
-#: ApperKCM/CategoryModel.cpp:55
-msgid "Updates"
-msgstr "Metaedjes a djoû"
-
-#: ApperKCM/CategoryModel.cpp:155 ApperKCM/CategoryModel.cpp:339
-msgid "Categories"
-msgstr "Categoreyes"
-
-#: ApperKCM/CategoryModel.cpp:208
-msgid "Groups"
-msgstr "Groupes"
-
-#: Sentinel/PkInstallPackageNames.cpp:42
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Installed packages"
-msgid "Install Packages by Name"
-msgstr "Pacaedjes astalés"
-
-#: Sentinel/PkInstallPackageNames.cpp:58
-msgid "Do you want to search for and install this package now?"
-msgid_plural "Do you want to search for and install these packages now?"
-msgstr[0] ""
-msgstr[1] ""
-
-#: Sentinel/PkInstallPackageNames.cpp:66 Sentinel/PkInstallPackageFiles.cpp:90
-msgid "An application wants to install a package"
-msgid_plural "An application wants to install packages"
-msgstr[0] ""
-msgstr[1] ""
-
-#: Sentinel/PkInstallPackageNames.cpp:70 Sentinel/PkInstallPackageFiles.cpp:94
+#: ApperKCM/TransactionHistory.cpp:87
 #, kde-format
-msgid "The application <i>%2</i> wants to install a package"
-msgid_plural "The application <i>%2</i> wants to install packages"
-msgstr[0] ""
-msgstr[1] ""
+msgid "Time since last cache refresh: %1"
+msgstr "Tins dispoy li dierin rafristaedje del muchete : %1"
 
-#: Sentinel/PkInstallPackageNames.cpp:92 Sentinel/PkInstallCatalogs.cpp:292
-#: Sentinel/PkIsInstalled.cpp:46
-msgid "Failed to start resolve transaction"
-msgstr "L' enondaedje del tranzaccion di rezoudaedje A fwait berwete"
+#: ApperKCM/TransactionModel.cpp:46
+msgid "Date"
+msgstr "Date"
 
-#: Sentinel/PkInstallPackageNames.cpp:104
-msgid "Failed to install packages"
-msgstr ""
+#: ApperKCM/TransactionModel.cpp:47 libapper/PackageModel.cpp:175
+msgid "Action"
+msgstr "Accion"
 
-#: Sentinel/PkInstallPackageNames.cpp:105
-#, kde-format
-msgid "The package %2 is already installed"
-msgid_plural "The packages %2 are already installed"
-msgstr[0] ""
-msgstr[1] ""
+#: ApperKCM/TransactionModel.cpp:48 Sentinel/TransactionWatcher.cpp:292
+msgid "Details"
+msgstr "Detays"
 
-#: Sentinel/PkInstallPackageNames.cpp:113 Sentinel/PkSearchFile.cpp:81
-#: Sentinel/PkRemovePackageByFiles.cpp:132
-#, kde-format
-msgid "Could not find %1"
-msgstr "Dji n' a savou trover %1"
+#: ApperKCM/TransactionModel.cpp:49
+msgctxt "Machine user who issued the transaction"
+msgid "Username"
+msgstr "No di l' uzeu"
 
-#: Sentinel/PkInstallPackageNames.cpp:114
-msgid "The package could not be found in any software source"
-msgid_plural "The packages could not be found in any software source"
-msgstr[0] ""
-msgstr[1] ""
+#: ApperKCM/TransactionModel.cpp:50
+msgid "Application"
+msgstr "Programe"
 
-#: Sentinel/KpkDistroUpgrade.cpp:69
+#: Sentinel/DistroUpgrade.cpp:69
 msgid "Start upgrade now"
 msgstr "Ataker l' metaedje a livea do côp"
 
-#: Sentinel/KpkDistroUpgrade.cpp:114
+#: Sentinel/DistroUpgrade.cpp:114
 msgid "Distribution upgrade finished. "
 msgstr "Metaedje a livea del distribucion fini. "
+
+#: Sentinel/PkInstallPlasmaResources.cpp:40
+#, fuzzy
+#| msgctxt "The role of the transaction, in past tense"
+#| msgid "Installed signature"
+msgid "Install Plasma Resources"
+msgstr "Sinateure astalêye"
+
+#: Sentinel/PkInstallPlasmaResources.cpp:53
+#, kde-format
+msgid "%1 data engine"
+msgstr "Moteur di dnêyes %1"
+
+#: Sentinel/PkInstallPlasmaResources.cpp:55
+#, kde-format
+msgid "%1 script engine"
+msgstr "Moteur di scripe %1"
+
+#: Sentinel/PkInstallPlasmaResources.cpp:65
+msgid "The following service is required. Do you want to search for this now?"
+msgid_plural ""
+"The following services are required. Do you want to search for these now?"
+msgstr[0] "I fåt l' siervice shuvant. Voloz vs cachî do côp après ci la ?"
+msgstr[1] "I fåt les siervices shuvants. Voloz vs cachî do côp après ces la ?"
+
+#: Sentinel/PkInstallPlasmaResources.cpp:72
+msgid "Plasma requires an additional service for this operation"
+msgid_plural "Plasma requires additional services for this operation"
+msgstr[0] "Plasma a mezåjhe d' on siervice di dpus po ciste operåcion la"
+msgstr[1] "Plasma a mezåjhe di siervices di dpus po ciste operåcion la"
+
+#: Sentinel/PkInstallPlasmaResources.cpp:95 Sentinel/PkInstallMimeTypes.cpp:91
+#: Sentinel/PkInstallGStreamerResources.cpp:134
+#: Sentinel/PkInstallPrinterDrivers.cpp:74
+#: Sentinel/PkInstallFontconfigResources.cpp:143
+#: Sentinel/PkInstallFontconfigResources.cpp:164
+msgid "Failed to search for provides"
+msgstr "Li cweraedje des « dene » a fwait berwete"
+
+#: Sentinel/PkInstallPlasmaResources.cpp:106
+msgid "Failed to search for Plasma service"
+msgstr "Li cweraedje do siervice di Plasma a fwait berwete"
+
+#: Sentinel/PkInstallPlasmaResources.cpp:109
+msgid "Could not find service in any configured software source"
+msgstr ""
+"Dji n' a savou trover l' siervice dins nou sourdant des programes d' apontyî"
 
 #: Sentinel/PkInstallMimeTypes.cpp:39
 msgid "Install Support for File Types"
@@ -720,15 +713,6 @@ msgstr[0] ""
 msgstr[1] ""
 "On programe a mezåjhe di tchôkes-divins d' dipus po discôder ç' fitchî la"
 
-#: Sentinel/PkInstallMimeTypes.cpp:91
-#: Sentinel/PkInstallGStreamerResources.cpp:134
-#: Sentinel/PkInstallPlasmaResources.cpp:95
-#: Sentinel/PkInstallPrinterDrivers.cpp:74
-#: Sentinel/PkInstallFontconfigResources.cpp:143
-#: Sentinel/PkInstallFontconfigResources.cpp:164
-msgid "Failed to search for provides"
-msgstr "Li cweraedje des « dene » a fwait berwete"
-
 #: Sentinel/PkInstallMimeTypes.cpp:100
 #, fuzzy
 #| msgid "Failed to find software"
@@ -740,24 +724,78 @@ msgid "No new applications can be found to handle this type of file"
 msgstr ""
 "Dji n' a savou trover nou novea programe pos apougnî cisse sôre di fitchî la"
 
-#: Sentinel/PkInstallCatalogs.cpp:48
+#: Sentinel/PkInstallPackageNames.cpp:41
+#, fuzzy
+#| msgctxt "The role of the transaction, in past tense"
+#| msgid "Installed packages"
+msgid "Install Packages by Name"
+msgstr "Pacaedjes astalés"
+
+#: Sentinel/PkInstallPackageNames.cpp:57
+msgid "Do you want to search for and install this package now?"
+msgid_plural "Do you want to search for and install these packages now?"
+msgstr[0] ""
+msgstr[1] ""
+
+#: Sentinel/PkInstallPackageNames.cpp:65 Sentinel/PkInstallPackageFiles.cpp:79
+msgid "An application wants to install a package"
+msgid_plural "An application wants to install packages"
+msgstr[0] ""
+msgstr[1] ""
+
+#: Sentinel/PkInstallPackageNames.cpp:69 Sentinel/PkInstallPackageFiles.cpp:83
+#, kde-format
+msgid "The application <i>%2</i> wants to install a package"
+msgid_plural "The application <i>%2</i> wants to install packages"
+msgstr[0] ""
+msgstr[1] ""
+
+#: Sentinel/PkInstallPackageNames.cpp:91 Sentinel/PkInstallCatalogs.cpp:290
+#: Sentinel/PkIsInstalled.cpp:46
+msgid "Failed to start resolve transaction"
+msgstr "L' enondaedje del tranzaccion di rezoudaedje A fwait berwete"
+
+#: Sentinel/PkInstallPackageNames.cpp:103
+msgid "Failed to install packages"
+msgstr ""
+
+#: Sentinel/PkInstallPackageNames.cpp:104
+#, kde-format
+msgid "The package %2 is already installed"
+msgid_plural "The packages %2 are already installed"
+msgstr[0] ""
+msgstr[1] ""
+
+#: Sentinel/PkInstallPackageNames.cpp:112 Sentinel/PkSearchFile.cpp:81
+#: Sentinel/PkRemovePackageByFiles.cpp:131
+#, kde-format
+msgid "Could not find %1"
+msgstr "Dji n' a savou trover %1"
+
+#: Sentinel/PkInstallPackageNames.cpp:113
+msgid "The package could not be found in any software source"
+msgid_plural "The packages could not be found in any software source"
+msgstr[0] ""
+msgstr[1] ""
+
+#: Sentinel/PkInstallCatalogs.cpp:46
 #, fuzzy
 #| msgid "Install catalog"
 #| msgid_plural "Install catalogs"
 msgid "Install Packages Catalogs"
 msgstr "Astaler catalogue"
 
-#: Sentinel/PkInstallCatalogs.cpp:67
+#: Sentinel/PkInstallCatalogs.cpp:65
 msgid "You can drop more catalogs in here"
 msgstr ""
 
-#: Sentinel/PkInstallCatalogs.cpp:87
+#: Sentinel/PkInstallCatalogs.cpp:85
 #, fuzzy
 #| msgid "No update description was found."
 msgid "No supported catalog was found"
 msgstr "Nou discrijhaedje trové po l' metaedje a djoû."
 
-#: Sentinel/PkInstallCatalogs.cpp:89
+#: Sentinel/PkInstallCatalogs.cpp:87
 #, fuzzy
 #| msgid "<h3>Do you want to install this catalog?</h3><ul><li>%2</li></ul>"
 #| msgid_plural ""
@@ -767,7 +805,7 @@ msgid_plural "Do you want to install these catalogs?"
 msgstr[0] "<h3>Voloz astaler ç' catalogue ci ?</h3><ul><li>%2</li></ul>"
 msgstr[1] "<h3>Voloz astaler ces catalogues ci ?</h3><ul><li>%2</li></ul>"
 
-#: Sentinel/PkInstallCatalogs.cpp:98
+#: Sentinel/PkInstallCatalogs.cpp:96
 #, fuzzy
 #| msgid "A program wants to install a font"
 #| msgid_plural "A program wants to install fonts"
@@ -776,7 +814,7 @@ msgid_plural "An application wants to install catalogs"
 msgstr[0] "On programe vout astaler ene fonte"
 msgstr[1] "On programe vout astaler des fontes"
 
-#: Sentinel/PkInstallCatalogs.cpp:102
+#: Sentinel/PkInstallCatalogs.cpp:100
 #, fuzzy, kde-format
 #| msgid "A program wants to install a font"
 #| msgid_plural "A program wants to install fonts"
@@ -785,45 +823,45 @@ msgid_plural "The application <i>%2</i> wants to install catalogs"
 msgstr[0] "On programe vout astaler ene fonte"
 msgstr[1] "On programe vout astaler des fontes"
 
-#: Sentinel/PkInstallCatalogs.cpp:139
+#: Sentinel/PkInstallCatalogs.cpp:137
 msgid "Not supported"
 msgstr ""
 
-#: Sentinel/PkInstallCatalogs.cpp:140
+#: Sentinel/PkInstallCatalogs.cpp:138
 msgid ""
 "Your backend does not support any of the needed methods to install a catalog"
 msgstr ""
 
-#: Sentinel/PkInstallCatalogs.cpp:179
+#: Sentinel/PkInstallCatalogs.cpp:177
 #, fuzzy
 #| msgid "Could not find %1"
 msgid "Catalog not found"
 msgstr "Dji n' a savou trover %1"
 
-#: Sentinel/PkInstallCatalogs.cpp:180
+#: Sentinel/PkInstallCatalogs.cpp:178
 #, fuzzy
 #| msgid "Could not find package"
 msgid "Could not find a catalog to install"
 msgstr "Dji n' a savou trover l' pacaedje"
 
-#: Sentinel/PkInstallCatalogs.cpp:187
+#: Sentinel/PkInstallCatalogs.cpp:185
 #, kde-format
 msgid "Catalog %2 failed to open"
 msgid_plural "Catalogs %2 failed to open"
 msgstr[0] ""
 msgstr[1] ""
 
-#: Sentinel/PkInstallCatalogs.cpp:191
+#: Sentinel/PkInstallCatalogs.cpp:189
 msgid "Failed to open"
 msgstr ""
 
-#: Sentinel/PkInstallCatalogs.cpp:197
+#: Sentinel/PkInstallCatalogs.cpp:195
 #, fuzzy
 #| msgid "Catalog installer"
 msgid "Catalog is Empty"
 msgstr "Astaleu d' catalogue"
 
-#: Sentinel/PkInstallCatalogs.cpp:198
+#: Sentinel/PkInstallCatalogs.cpp:196
 #, fuzzy
 #| msgid "<h3>Do you want to install this catalog?</h3><ul><li>%2</li></ul>"
 #| msgid_plural ""
@@ -831,54 +869,11 @@ msgstr "Astaleu d' catalogue"
 msgid "Could not find any package to install in this catalog"
 msgstr "<h3>Voloz astaler ç' catalogue ci ?</h3><ul><li>%2</li></ul>"
 
-#: Sentinel/TransactionWatcher.cpp:65 Sentinel/TransactionWatcher.cpp:250
-msgid "Hide this icon"
-msgstr "Catchî ciste imådjete cial"
-
-#: Sentinel/TransactionWatcher.cpp:167
-msgid "The system update has completed"
-msgstr "Li metaedje a djoû do sistinme est tot fwait"
-
-#: Sentinel/TransactionWatcher.cpp:173
-#, kde-format
-msgid "Packages: %1"
-msgstr "Pacaedjes : %1"
-
-#: Sentinel/TransactionWatcher.cpp:185
-#, kde-format
-msgid "Package: %2"
-msgid_plural "Packages: %2"
-msgstr[0] "Pacaedje : %2"
-msgstr[1] "Pacaedjes : %2"
-
-#: Sentinel/TransactionWatcher.cpp:232 Sentinel/TransactionWatcher.cpp:272
-msgid "Software Manager Messages"
-msgstr "Messaedjes do Manaedjeu des programes"
-
-#: Sentinel/TransactionWatcher.cpp:233
-#, kde-format
-msgid "One message from the software manager"
-msgid_plural "%1 messages from the software manager"
-msgstr[0] "On messaedje do manaedjeu des programes"
-msgstr[1] "%1 messaedjes do manaedjeu des programes"
-
-#: Sentinel/TransactionWatcher.cpp:241
-msgid "Show messages"
-msgstr "Mostrer messaedjes"
-
-#: Sentinel/TransactionWatcher.cpp:293
-msgid "Ignore"
-msgstr "Passer houte"
-
-#: Sentinel/KpkUpdateIcon.cpp:171
-msgid "KPackageKit"
-msgstr "KPackageKit"
-
-#: Sentinel/KpkUpdateIcon.cpp:173
+#: Sentinel/UpdateIcon.cpp:173
 msgid "Review Updates"
 msgstr "Rilever metaedjes a djoû"
 
-#: Sentinel/KpkUpdateIcon.cpp:176
+#: Sentinel/UpdateIcon.cpp:176
 msgid "Configure"
 msgstr "Apontyî"
 
@@ -886,100 +881,33 @@ msgstr "Apontyî"
 #. i18n: ectx: property (text), widget (QToolButton, hideTB)
 #. i18n: file: ApperKCM/Updater/UpdateDetails.ui:20
 #. i18n: ectx: property (text), widget (QToolButton, hideTB)
-#: Sentinel/KpkUpdateIcon.cpp:180 libapper/PkTransactionDialog.cpp:95
-#: rc.cpp:137 rc.cpp:179
+#: Sentinel/UpdateIcon.cpp:180 libapper/PkTransactionDialog.cpp:85 rc.cpp:137
+#: rc.cpp:179
 msgid "Hide"
 msgstr "Catchî"
 
-#: Sentinel/KpkUpdateIcon.cpp:190
+#: Sentinel/UpdateIcon.cpp:190
 #, kde-format
 msgid "You have one update"
 msgid_plural "You have %1 updates"
 msgstr[0] "Vos avoz on metaedje a djoû"
 msgstr[1] "Vos avoz %1 metaedjes a djoû"
 
-#: Sentinel/KpkUpdateIcon.cpp:243
+#: Sentinel/UpdateIcon.cpp:243
 msgid "Updates are being automatically installed."
 msgstr "Les metaedjes a djoû sont-st astalés otomaticmint."
 
-#: Sentinel/KpkUpdateIcon.cpp:264
+#: Sentinel/UpdateIcon.cpp:264
 msgid "Security updates are being automatically installed."
 msgstr "Les metaedjes a djoû di såvrité sont-st astalés otomaticmint."
 
-#: Sentinel/KpkUpdateIcon.cpp:291
+#: Sentinel/UpdateIcon.cpp:291
 msgid "System update was successful."
 msgstr "Li metaedje a djoû do sistinme a stî fwait sins rujhe."
 
-#: Sentinel/KpkUpdateIcon.cpp:300
+#: Sentinel/UpdateIcon.cpp:300
 msgid "The automated software update failed."
 msgstr "Li metaedje a djoû otomatike do programe a fwait berwete."
-
-#: Sentinel/SessionTask.cpp:62 libapper/KpkRequirements.cpp:229
-msgid "Continue"
-msgstr "Continouwer"
-
-#: Sentinel/SessionTask.cpp:305
-#, fuzzy
-#| msgid "The package is not installed"
-msgid "There are no packages to Install or Remove"
-msgstr "Li pacaedje n' est nén astalé"
-
-#: Sentinel/SessionTask.cpp:306
-msgid "This action should not happen"
-msgstr ""
-
-#: Sentinel/SessionTask.cpp:335
-#, fuzzy
-#| msgid "Could not find %1"
-msgid "Could not find"
-msgstr "Dji n' a savou trover %1"
-
-#: Sentinel/SessionTask.cpp:336 Sentinel/SessionTask.cpp:345
-msgid "No packages were found that meet the request"
-msgstr ""
-
-#: Sentinel/SessionTask.cpp:344
-#, fuzzy
-#| msgid "Failed to find font"
-msgid "Failed to find"
-msgstr "Li cweraedje del fonte a fwait berwete"
-
-#: Sentinel/SessionTask.cpp:363
-#, fuzzy
-#| msgid "Failed to start resolve transaction"
-msgid "Failed to commit transaction"
-msgstr "L' enondaedje del tranzaccion di rezoudaedje A fwait berwete"
-
-#: Sentinel/SessionTask.cpp:365
-msgid "Transaction did not finish with success"
-msgstr "Li tranzaccion n' s' a nén fini comifåt"
-
-#: Sentinel/SessionTask.cpp:371
-#, fuzzy
-#| msgid "Obsoleted"
-msgid "Task completed"
-msgstr "Trop vî"
-
-#: Sentinel/SessionTask.cpp:371
-#, fuzzy
-#| msgid "Failed to install file"
-#| msgid_plural "Failed to install files"
-msgid "All operations were committed successfully"
-msgstr "L' astalaedje do fitchî a fwait berwete"
-
-#: Sentinel/PkIsInstalled.cpp:36
-#, fuzzy
-#| msgid "The package is not installed"
-msgid "Querying if a Package is Installed"
-msgstr "Li pacaedje n' est nén astalé"
-
-#: Sentinel/PkIsInstalled.cpp:67
-msgid "User canceled the transaction"
-msgstr "L' uzeu a rnoncî al tranzaccion"
-
-#: Sentinel/PkIsInstalled.cpp:69
-msgid "An unknown error happened"
-msgstr "Åk n' a nén stî, aroke nén cnoxhowe"
 
 #: Sentinel/PkInstallGStreamerResources.cpp:39
 msgid "Install GStreamer Resources"
@@ -1050,6 +978,237 @@ msgstr ""
 "Dji n' a savou trover l' tchôke-divins dins nou sourdant des programes "
 "d' apontyî"
 
+#: Sentinel/PkInstallPackageFiles.cpp:38
+#, fuzzy
+#| msgctxt "The role of the transaction, in past tense"
+#| msgid "Installed packages"
+msgid "Install Packages Files"
+msgstr "Pacaedjes astalés"
+
+#: Sentinel/PkInstallPackageFiles.cpp:42
+#: Sentinel/PkRemovePackageByFiles.cpp:44
+msgid "You can drop more files in here"
+msgstr ""
+
+#: Sentinel/PkInstallPackageFiles.cpp:52
+msgid "Not Supported"
+msgstr ""
+
+#: Sentinel/PkInstallPackageFiles.cpp:53
+msgid "Your current backend does not support installing files"
+msgstr ""
+
+#: Sentinel/PkInstallPackageFiles.cpp:68
+#: Sentinel/PkRemovePackageByFiles.cpp:65
+#, fuzzy
+#| msgid "No files were found."
+msgid "No supported files were provided"
+msgstr "Dji n' a trové nou fitchî."
+
+#: Sentinel/PkInstallPackageFiles.cpp:70
+#, fuzzy
+#| msgid "Press <i>Continue</i> if you want to install this file:"
+#| msgid_plural "Press <i>Continue</i> if you want to install these files:"
+msgid "Press <i>Continue</i> if you want to install this file"
+msgid_plural "Press <i>Continue</i> if you want to install these files"
+msgstr[0] "Tchôkî so <i>Continouwer</i> si vs voloz astaler ç' fitchî la :"
+msgstr[1] "Tchôkî so <i>Continouwer</i> si vs voloz astaler ces fitchîs la :"
+
+#: Sentinel/PkInstallPackageFiles.cpp:106
+#, fuzzy
+#| msgctxt "The role of the transaction, in present tense"
+#| msgid "Installing file"
+msgid "Installation Complete"
+msgstr "Dj' astale li fitchî"
+
+#: Sentinel/PkInstallPackageFiles.cpp:107
+#, fuzzy
+#| msgid "Failed to install file"
+#| msgid_plural "Failed to install files"
+msgid "File was installed successfully"
+msgid_plural "Files were installed successfully"
+msgstr[0] "L' astalaedje do fitchî a fwait berwete"
+msgstr[1] "L' astalaedje des fitchîs a fwait berwete"
+
+#: Sentinel/PkInstallPackageFiles.cpp:118
+#, fuzzy
+#| msgid "Failed to install file"
+#| msgid_plural "Failed to install files"
+msgid "Failed to install files"
+msgstr "L' astalaedje do fitchî a fwait berwete"
+
+#: Sentinel/PkInstallPackageFiles.cpp:119
+#: Sentinel/PkInstallPackageFiles.cpp:121
+#, fuzzy
+#| msgid "Failed to install file"
+#| msgid_plural "Failed to install files"
+msgid "Could not install files"
+msgstr "L' astalaedje do fitchî a fwait berwete"
+
+#: Sentinel/TransactionWatcher.cpp:64 Sentinel/TransactionWatcher.cpp:249
+msgid "Hide this icon"
+msgstr "Catchî ciste imådjete cial"
+
+#: Sentinel/TransactionWatcher.cpp:166
+msgid "The system update has completed"
+msgstr "Li metaedje a djoû do sistinme est tot fwait"
+
+#: Sentinel/TransactionWatcher.cpp:172
+#, kde-format
+msgid "Packages: %1"
+msgstr "Pacaedjes : %1"
+
+#: Sentinel/TransactionWatcher.cpp:184
+#, kde-format
+msgid "Package: %2"
+msgid_plural "Packages: %2"
+msgstr[0] "Pacaedje : %2"
+msgstr[1] "Pacaedjes : %2"
+
+#: Sentinel/TransactionWatcher.cpp:231 Sentinel/TransactionWatcher.cpp:271
+msgid "Software Manager Messages"
+msgstr "Messaedjes do Manaedjeu des programes"
+
+#: Sentinel/TransactionWatcher.cpp:232
+#, kde-format
+msgid "One message from the software manager"
+msgid_plural "%1 messages from the software manager"
+msgstr[0] "On messaedje do manaedjeu des programes"
+msgstr[1] "%1 messaedjes do manaedjeu des programes"
+
+#: Sentinel/TransactionWatcher.cpp:240
+msgid "Show messages"
+msgstr "Mostrer messaedjes"
+
+#: Sentinel/TransactionWatcher.cpp:292
+msgid "Ignore"
+msgstr "Passer houte"
+
+#: Sentinel/PkInstallPrinterDrivers.cpp:39
+#, fuzzy
+#| msgctxt "The role of the transaction, in present tense"
+#| msgid "Installing file"
+msgid "Install Printer Drivers"
+msgstr "Dj' astale li fitchî"
+
+#: Sentinel/PkInstallPrinterDrivers.cpp:87
+msgid "Failed to search for printer driver"
+msgstr "Li cweraedje do mineu del sicrirece a fwait berwete"
+
+#: Sentinel/PkInstallPrinterDrivers.cpp:88
+msgid "Could not find printer driver in any configured software source"
+msgstr ""
+"Dji n' a savou trover l' mineu del sicrirece dins nou sourdant des programes "
+"d' apontyî"
+
+#: Sentinel/PkIsInstalled.cpp:36
+#, fuzzy
+#| msgid "The package is not installed"
+msgid "Querying if a Package is Installed"
+msgstr "Li pacaedje n' est nén astalé"
+
+#: Sentinel/PkIsInstalled.cpp:67
+msgid "User canceled the transaction"
+msgstr "L' uzeu a rnoncî al tranzaccion"
+
+#: Sentinel/PkIsInstalled.cpp:69
+msgid "An unknown error happened"
+msgstr "Åk n' a nén stî, aroke nén cnoxhowe"
+
+#: Sentinel/PkSearchFile.cpp:37
+msgid "Search Packages that Provides Files"
+msgstr ""
+
+#: Sentinel/PkSearchFile.cpp:54 Sentinel/PkInstallProvideFiles.cpp:83
+#: Sentinel/PkRemovePackageByFiles.cpp:119
+msgid "Failed to start search file transaction"
+msgstr "L' enondaedje del tranzaccion di cweraedje do fitchî a fwait berwete"
+
+#: Sentinel/PkSearchFile.cpp:80
+msgid "The file name could not be found in any software source"
+msgstr ""
+
+#: Sentinel/SessionTask.cpp:62 libapper/Requirements.cpp:229
+msgid "Continue"
+msgstr "Continouwer"
+
+#: Sentinel/SessionTask.cpp:305
+#, fuzzy
+#| msgid "The package is not installed"
+msgid "There are no packages to Install or Remove"
+msgstr "Li pacaedje n' est nén astalé"
+
+#: Sentinel/SessionTask.cpp:306
+msgid "This action should not happen"
+msgstr ""
+
+#: Sentinel/SessionTask.cpp:335
+#, fuzzy
+#| msgid "Could not find %1"
+msgid "Could not find"
+msgstr "Dji n' a savou trover %1"
+
+#: Sentinel/SessionTask.cpp:336 Sentinel/SessionTask.cpp:345
+msgid "No packages were found that meet the request"
+msgstr ""
+
+#: Sentinel/SessionTask.cpp:344
+#, fuzzy
+#| msgid "Failed to find font"
+msgid "Failed to find"
+msgstr "Li cweraedje del fonte a fwait berwete"
+
+#: Sentinel/SessionTask.cpp:363
+#, fuzzy
+#| msgid "Failed to start resolve transaction"
+msgid "Failed to commit transaction"
+msgstr "L' enondaedje del tranzaccion di rezoudaedje A fwait berwete"
+
+#: Sentinel/SessionTask.cpp:365
+msgid "Transaction did not finish with success"
+msgstr "Li tranzaccion n' s' a nén fini comifåt"
+
+#: Sentinel/SessionTask.cpp:371
+#, fuzzy
+#| msgid "Obsoleted"
+msgid "Task completed"
+msgstr "Trop vî"
+
+#: Sentinel/SessionTask.cpp:371
+#, fuzzy
+#| msgid "Failed to install file"
+#| msgid_plural "Failed to install files"
+msgid "All operations were committed successfully"
+msgstr "L' astalaedje do fitchî a fwait berwete"
+
+#: Sentinel/TransactionTrayIcon.cpp:45
+msgid "Transactions"
+msgstr "Tranzaccions"
+
+#: Sentinel/TransactionTrayIcon.cpp:90
+#, kde-format
+msgid "%1% - %2"
+msgstr "%1% - %2"
+
+#: Sentinel/TransactionTrayIcon.cpp:92
+#, kde-format
+msgid "%1"
+msgstr "%1"
+
+#: Sentinel/ReviewChanges.cpp:67
+msgid "The following package was found"
+msgid_plural "The following packages were found"
+msgstr[0] ""
+msgstr[1] ""
+
+#: Sentinel/main.cpp:36
+msgid "Apper Sentinel"
+msgstr "Gåre d' Apper"
+
+#: Sentinel/main.cpp:41
+msgid "Trever Fischer"
+msgstr "Trever Fischer"
+
 #: Sentinel/PkInstallProvideFiles.cpp:39
 msgid "Install Packages that Provides Files"
 msgstr ""
@@ -1081,11 +1240,6 @@ msgid_plural "The application %2 is asking to install files"
 msgstr[0] "On programe vout astaler ene fonte"
 msgstr[1] "On programe vout astaler des fontes"
 
-#: Sentinel/PkInstallProvideFiles.cpp:83 Sentinel/PkSearchFile.cpp:54
-#: Sentinel/PkRemovePackageByFiles.cpp:120
-msgid "Failed to start search file transaction"
-msgstr "L' enondaedje del tranzaccion di cweraedje do fitchî a fwait berwete"
-
 #: Sentinel/PkInstallProvideFiles.cpp:96 libapper/PkTransaction.cpp:304
 msgid "Failed to install file"
 msgid_plural "Failed to install files"
@@ -1107,156 +1261,11 @@ msgid_plural "The files could not be found in any packages"
 msgstr[0] "Dji n' a savou trover l' fitchî dins nou pacaedje"
 msgstr[1] "Dji n' a savou trover l' fitchî dins nou pacaedje"
 
-#: Sentinel/PkInstallPackageFiles.cpp:50
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Installed packages"
-msgid "Install Packages Files"
-msgstr "Pacaedjes astalés"
-
-#: Sentinel/PkInstallPackageFiles.cpp:54
-#: Sentinel/PkRemovePackageByFiles.cpp:45
-msgid "You can drop more files in here"
-msgstr ""
-
-#: Sentinel/PkInstallPackageFiles.cpp:64
-msgid "Not Supported"
-msgstr ""
-
-#: Sentinel/PkInstallPackageFiles.cpp:65
-msgid "Your current backend does not support installing files"
-msgstr ""
-
-#: Sentinel/PkInstallPackageFiles.cpp:79
-#: Sentinel/PkRemovePackageByFiles.cpp:66
-#, fuzzy
-#| msgid "No files were found."
-msgid "No supported files were provided"
-msgstr "Dji n' a trové nou fitchî."
-
-#: Sentinel/PkInstallPackageFiles.cpp:81
-#, fuzzy
-#| msgid "Press <i>Continue</i> if you want to install this file:"
-#| msgid_plural "Press <i>Continue</i> if you want to install these files:"
-msgid "Press <i>Continue</i> if you want to install this file"
-msgid_plural "Press <i>Continue</i> if you want to install these files"
-msgstr[0] "Tchôkî so <i>Continouwer</i> si vs voloz astaler ç' fitchî la :"
-msgstr[1] "Tchôkî so <i>Continouwer</i> si vs voloz astaler ces fitchîs la :"
-
-#: Sentinel/PkInstallPackageFiles.cpp:117
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Installing file"
-msgid "Installation Complete"
-msgstr "Dj' astale li fitchî"
-
-#: Sentinel/PkInstallPackageFiles.cpp:118
-#, fuzzy
-#| msgid "Failed to install file"
-#| msgid_plural "Failed to install files"
-msgid "File was installed successfully"
-msgid_plural "Files were installed successfully"
-msgstr[0] "L' astalaedje do fitchî a fwait berwete"
-msgstr[1] "L' astalaedje des fitchîs a fwait berwete"
-
-#: Sentinel/PkInstallPackageFiles.cpp:129
-#, fuzzy
-#| msgid "Failed to install file"
-#| msgid_plural "Failed to install files"
-msgid "Failed to install files"
-msgstr "L' astalaedje do fitchî a fwait berwete"
-
-#: Sentinel/PkInstallPackageFiles.cpp:130
-#: Sentinel/PkInstallPackageFiles.cpp:132
-#, fuzzy
-#| msgid "Failed to install file"
-#| msgid_plural "Failed to install files"
-msgid "Could not install files"
-msgstr "L' astalaedje do fitchî a fwait berwete"
-
-#: Sentinel/TransactionTrayIcon.cpp:45
-msgid "Transactions"
-msgstr "Tranzaccions"
-
-#: Sentinel/TransactionTrayIcon.cpp:90
-#, kde-format
-msgid "%1% - %2"
-msgstr "%1% - %2"
-
-#: Sentinel/TransactionTrayIcon.cpp:92
-#, kde-format
-msgid "%1"
-msgstr "%1"
-
-#: Sentinel/PkInstallPlasmaResources.cpp:40
-#, fuzzy
-#| msgctxt "The role of the transaction, in past tense"
-#| msgid "Installed signature"
-msgid "Install Plasma Resources"
-msgstr "Sinateure astalêye"
-
-#: Sentinel/PkInstallPlasmaResources.cpp:53
-#, kde-format
-msgid "%1 data engine"
-msgstr "Moteur di dnêyes %1"
-
-#: Sentinel/PkInstallPlasmaResources.cpp:55
-#, kde-format
-msgid "%1 script engine"
-msgstr "Moteur di scripe %1"
-
-#: Sentinel/PkInstallPlasmaResources.cpp:65
-msgid "The following service is required. Do you want to search for this now?"
-msgid_plural ""
-"The following services are required. Do you want to search for these now?"
-msgstr[0] "I fåt l' siervice shuvant. Voloz vs cachî do côp après ci la ?"
-msgstr[1] "I fåt les siervices shuvants. Voloz vs cachî do côp après ces la ?"
-
-#: Sentinel/PkInstallPlasmaResources.cpp:72
-msgid "Plasma requires an additional service for this operation"
-msgid_plural "Plasma requires additional services for this operation"
-msgstr[0] "Plasma a mezåjhe d' on siervice di dpus po ciste operåcion la"
-msgstr[1] "Plasma a mezåjhe di siervices di dpus po ciste operåcion la"
-
-#: Sentinel/PkInstallPlasmaResources.cpp:106
-msgid "Failed to search for Plasma service"
-msgstr "Li cweraedje do siervice di Plasma a fwait berwete"
-
-#: Sentinel/PkInstallPlasmaResources.cpp:109
-msgid "Could not find service in any configured software source"
-msgstr ""
-"Dji n' a savou trover l' siervice dins nou sourdant des programes d' apontyî"
-
-#: Sentinel/PkInstallPrinterDrivers.cpp:39
-#, fuzzy
-#| msgctxt "The role of the transaction, in present tense"
-#| msgid "Installing file"
-msgid "Install Printer Drivers"
-msgstr "Dj' astale li fitchî"
-
-#: Sentinel/PkInstallPrinterDrivers.cpp:87
-msgid "Failed to search for printer driver"
-msgstr "Li cweraedje do mineu del sicrirece a fwait berwete"
-
-#: Sentinel/PkInstallPrinterDrivers.cpp:88
-msgid "Could not find printer driver in any configured software source"
-msgstr ""
-"Dji n' a savou trover l' mineu del sicrirece dins nou sourdant des programes "
-"d' apontyî"
-
-#: Sentinel/PkSearchFile.cpp:37
-msgid "Search Packages that Provides Files"
-msgstr ""
-
-#: Sentinel/PkSearchFile.cpp:80
-msgid "The file name could not be found in any software source"
-msgstr ""
-
-#: Sentinel/PkRemovePackageByFiles.cpp:42
+#: Sentinel/PkRemovePackageByFiles.cpp:41
 msgid "Remove Packages that Provides Files"
 msgstr ""
 
-#: Sentinel/PkRemovePackageByFiles.cpp:69
+#: Sentinel/PkRemovePackageByFiles.cpp:68
 #, fuzzy
 #| msgid "You need to restart the application"
 msgid "Do you want to remove the following application?"
@@ -1264,7 +1273,7 @@ msgid_plural "Do you want to remove the following applications?"
 msgstr[0] "Vos avoz dandjî d' renonder l' programe"
 msgstr[1] "Vos avoz dandjî d' renonder l' programe"
 
-#: Sentinel/PkRemovePackageByFiles.cpp:73
+#: Sentinel/PkRemovePackageByFiles.cpp:72
 #, fuzzy
 #| msgid ""
 #| "Do you want to search for packages containing this file and remove it now?"
@@ -1278,7 +1287,7 @@ msgstr[0] ""
 msgstr[1] ""
 "Voloz vs trover des pacaedjes k' ont ç' fitchî la eyet les oister do côp ?"
 
-#: Sentinel/PkRemovePackageByFiles.cpp:84
+#: Sentinel/PkRemovePackageByFiles.cpp:83
 #, fuzzy
 #| msgid "A program wants to install a font"
 #| msgid_plural "A program wants to install fonts"
@@ -1287,7 +1296,7 @@ msgid_plural "An application is asking to remove applications"
 msgstr[0] "On programe vout astaler ene fonte"
 msgstr[1] "On programe vout astaler des fontes"
 
-#: Sentinel/PkRemovePackageByFiles.cpp:88
+#: Sentinel/PkRemovePackageByFiles.cpp:87
 #, fuzzy
 #| msgid "A program wants to install a font"
 #| msgid_plural "A program wants to install fonts"
@@ -1296,7 +1305,7 @@ msgid_plural "An application is asking to remove files"
 msgstr[0] "On programe vout astaler ene fonte"
 msgstr[1] "On programe vout astaler des fontes"
 
-#: Sentinel/PkRemovePackageByFiles.cpp:94
+#: Sentinel/PkRemovePackageByFiles.cpp:93
 #, fuzzy, kde-format
 #| msgid "A program wants to install a font"
 #| msgid_plural "A program wants to install fonts"
@@ -1305,7 +1314,7 @@ msgid_plural "The application <i>%2</i> is asking to remove applications"
 msgstr[0] "On programe vout astaler ene fonte"
 msgstr[1] "On programe vout astaler des fontes"
 
-#: Sentinel/PkRemovePackageByFiles.cpp:99
+#: Sentinel/PkRemovePackageByFiles.cpp:98
 #, fuzzy, kde-format
 #| msgid "A program wants to install a font"
 #| msgid_plural "A program wants to install fonts"
@@ -1314,31 +1323,17 @@ msgid_plural "The application <i>%2</i> is asking to remove files"
 msgstr[0] "On programe vout astaler ene fonte"
 msgstr[1] "On programe vout astaler des fontes"
 
-#: Sentinel/PkRemovePackageByFiles.cpp:105
+#: Sentinel/PkRemovePackageByFiles.cpp:104
 #, fuzzy
 #| msgid "No update description was found."
 msgid "No application was found"
 msgstr "Nou discrijhaedje trové po l' metaedje a djoû."
 
-#: Sentinel/PkRemovePackageByFiles.cpp:133
+#: Sentinel/PkRemovePackageByFiles.cpp:132
 msgid "The file could not be found in any installed package"
 msgid_plural "The files could not be found in any installed package"
 msgstr[0] "Dji n' a savou trover l' fitchî dins nou pacaedje d' astalé"
 msgstr[1] "Dji n' a savou trover les fitchîs dins nou pacaedje d' astalé"
-
-#: Sentinel/ReviewChanges.cpp:67
-msgid "The following package was found"
-msgid_plural "The following packages were found"
-msgstr[0] ""
-msgstr[1] ""
-
-#: Sentinel/main.cpp:36
-msgid "Apper Sentinel"
-msgstr "Gåre d' Apper"
-
-#: Sentinel/main.cpp:41
-msgid "Trever Fischer"
-msgstr "Trever Fischer"
 
 #: Sentinel/PkInstallFontconfigResources.cpp:41
 #, fuzzy
@@ -1401,951 +1396,969 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: libapper/KpkLicenseAgreement.cpp:34
-msgid "Accept Agreement"
+#: libapper/ChangesDelegate.cpp:45
+#, fuzzy
+#| msgid "Install"
+msgid "Do not Install"
+msgstr "Astaler"
+
+#: libapper/ChangesDelegate.cpp:47
+#, fuzzy
+#| msgid "Remove"
+msgid "Do not Remove"
+msgstr "Oister"
+
+#: libapper/ChangesDelegate.cpp:49 libapper/ApplicationsDelegate.cpp:44
+msgid "Deselect"
 msgstr ""
 
-#. i18n: file: libapper/KpkLicenseAgreement.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, KpkLicenseAgreement)
-#: libapper/KpkLicenseAgreement.cpp:35 rc.cpp:221
-msgid "License Agreement Required"
-msgstr "Dandjî d' en acoird di licince"
-
-#: libapper/KpkLicenseAgreement.cpp:36
-#, kde-format
-msgid "License required for %1 by %2"
-msgstr ""
-
-#: libapper/KpkProgressBar.cpp:38
+#: libapper/CustomProgressBar.cpp:38
 #, kde-format
 msgid "%1 remaining"
 msgstr ""
 
-#. i18n: file: libapper/KpkRepoSig.ui:6
-#. i18n: ectx: property (windowTitle), widget (QWidget, KpkRepoSig)
-#: libapper/KpkRepoSig.cpp:38 rc.cpp:227
-msgid "Software signature is required"
-msgstr "Li sinateure do programe est dmandêye"
+#: libapper/PackageModel.cpp:167
+msgid "Name"
+msgstr "No"
 
-#: libapper/KpkSimulateModel.cpp:132
-msgid "Package"
-msgstr "Pacaedje"
-
-#: libapper/KpkSimulateModel.cpp:134 libapper/PackageModel.cpp:168
+#: libapper/PackageModel.cpp:169 libapper/SimulateModel.cpp:134
 msgid "Version"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:32
+#: libapper/PackageModel.cpp:171
+msgid "Arch"
+msgstr ""
+
+#: libapper/PackageModel.cpp:173
+msgid "Size"
+msgstr ""
+
+#: libapper/PackageModel.cpp:261
+#, kde-format
+msgid ""
+"Version: %1\n"
+"Architecture: %2"
+msgstr ""
+
+#: libapper/PackageModel.cpp:302
+msgid "To be Removed"
+msgstr ""
+
+#: libapper/PackageModel.cpp:304
+msgid "To be Installed"
+msgstr ""
+
+#: libapper/PkStrings.cpp:32
 msgctxt "This is when the transaction status is not known"
 msgid "Unknown state"
 msgstr "Estat nén cnoxhou"
 
-#: libapper/KpkStrings.cpp:35
+#: libapper/PkStrings.cpp:35
 msgctxt "transaction state, the daemon is in the process of starting"
 msgid "Waiting for service to start"
 msgstr "Dji ratind kel siervice s' enonde"
 
-#: libapper/KpkStrings.cpp:38
+#: libapper/PkStrings.cpp:38
 msgctxt "transaction state, the transaction is waiting for another to complete"
 msgid "Waiting for other tasks"
 msgstr "Dji ratind ls ôtès bouyes"
 
-#: libapper/KpkStrings.cpp:41
+#: libapper/PkStrings.cpp:41
 msgctxt "transaction state, just started"
 msgid "Running task"
 msgstr "Dj' enonde li bouye"
 
-#: libapper/KpkStrings.cpp:44
+#: libapper/PkStrings.cpp:44
 msgctxt "transaction state, is querying data"
 msgid "Querying"
 msgstr "Dji cwir"
 
-#: libapper/KpkStrings.cpp:47
+#: libapper/PkStrings.cpp:47
 msgctxt "transaction state, getting data from a server"
 msgid "Getting information"
 msgstr "Dji cache après ls informåcions"
 
-#: libapper/KpkStrings.cpp:50
+#: libapper/PkStrings.cpp:50
 msgctxt "transaction state, removing packages"
 msgid "Removing packages"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:53
+#: libapper/PkStrings.cpp:53
 msgctxt "transaction state, downloading package files"
 msgid "Downloading packages"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:56
+#: libapper/PkStrings.cpp:56
 msgctxt "transaction state, installing packages"
 msgid "Installing packages"
 msgstr "Dj' astale les pacaedjes"
 
-#: libapper/KpkStrings.cpp:59
+#: libapper/PkStrings.cpp:59
 msgctxt "transaction state, refreshing internal lists"
 msgid "Refreshing software list"
 msgstr "Dji rafristêye li djivêye des programes"
 
-#: libapper/KpkStrings.cpp:62
+#: libapper/PkStrings.cpp:62
 msgctxt "transaction state, installing updates"
 msgid "Updating packages"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:65
+#: libapper/PkStrings.cpp:65
 msgctxt "transaction state, removing old packages, and cleaning config files"
 msgid "Cleaning up packages"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:68
+#: libapper/PkStrings.cpp:68
 msgctxt "transaction state, obsoleting old packages"
 msgid "Obsoleting packages"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:71
+#: libapper/PkStrings.cpp:71
 msgctxt "transaction state, checking the transaction before we do it"
 msgid "Resolving dependencies"
 msgstr "Dji rezoud ls aloyances"
 
-#: libapper/KpkStrings.cpp:74
+#: libapper/PkStrings.cpp:74
 msgctxt ""
 "transaction state, checking if we have all the security keys for the "
 "operation"
 msgid "Checking signatures"
 msgstr "Dji verifeye les sinateures"
 
-#: libapper/KpkStrings.cpp:77
+#: libapper/PkStrings.cpp:77
 msgctxt "transaction state, when we return to a previous system state"
 msgid "Rolling back"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:80
+#: libapper/PkStrings.cpp:80
 msgctxt "transaction state, when we're doing a test transaction"
 msgid "Testing changes"
 msgstr "Dji saye les candjmints"
 
-#: libapper/KpkStrings.cpp:83
+#: libapper/PkStrings.cpp:83
 msgctxt "transaction state, when we're writing to the system package database"
 msgid "Committing changes"
 msgstr "Dji spåde les candjmints"
 
-#: libapper/KpkStrings.cpp:86
+#: libapper/PkStrings.cpp:86
 msgctxt "transaction state, requesting data from a server"
 msgid "Requesting data"
 msgstr "Dji dmande les dnêyes"
 
-#: libapper/KpkStrings.cpp:89
+#: libapper/PkStrings.cpp:89
 msgctxt "transaction state, all done!"
 msgid "Finished"
 msgstr "Fini"
 
-#: libapper/KpkStrings.cpp:92
+#: libapper/PkStrings.cpp:92
 msgctxt "transaction state, in the process of cancelling"
 msgid "Cancelling"
 msgstr "Dji rnonce"
 
-#: libapper/KpkStrings.cpp:95
+#: libapper/PkStrings.cpp:95
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading repository information"
 msgstr "Dj' aberwete les informåcions sol depot"
 
-#: libapper/KpkStrings.cpp:98
+#: libapper/PkStrings.cpp:98
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading list of packages"
 msgstr "Dj' aberwete li djivêye des pacaedjes"
 
-#: libapper/KpkStrings.cpp:101
+#: libapper/PkStrings.cpp:101
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading file lists"
 msgstr "Dj' aberwete les djivêyes des fitchîs"
 
-#: libapper/KpkStrings.cpp:104
+#: libapper/PkStrings.cpp:104
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading lists of changes"
 msgstr "Dj' aberwete les djivêyes des candjmints"
 
-#: libapper/KpkStrings.cpp:107
+#: libapper/PkStrings.cpp:107
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading groups"
 msgstr "Dj' aberwete les groupes"
 
-#: libapper/KpkStrings.cpp:110
+#: libapper/PkStrings.cpp:110
 msgctxt "transaction state, downloading metadata"
 msgid "Downloading update information"
 msgstr "Dj' aberwete les informåcions sol metaedje a djoû"
 
-#: libapper/KpkStrings.cpp:113
+#: libapper/PkStrings.cpp:113
 msgctxt "transaction state, repackaging delta files"
 msgid "Repackaging files"
 msgstr "Dji rpacaedje les fitchîs"
 
-#: libapper/KpkStrings.cpp:116
+#: libapper/PkStrings.cpp:116
 msgctxt "transaction state, loading databases"
 msgid "Loading cache"
 msgstr "Dji tchedje li muchete"
 
-#: libapper/KpkStrings.cpp:119
+#: libapper/PkStrings.cpp:119
 msgctxt "transaction state, scanning for running processes"
 msgid "Scanning installed applications"
 msgstr "Dji corwaite les programes astalés"
 
-#: libapper/KpkStrings.cpp:122
+#: libapper/PkStrings.cpp:122
 msgctxt ""
 "transaction state, generating a list of packages installed on the system"
 msgid "Generating package lists"
 msgstr "Dju fwait les djivêyes des pacaedjes"
 
-#: libapper/KpkStrings.cpp:125
+#: libapper/PkStrings.cpp:125
 msgctxt "transaction state, when we're waiting for the native tools to exit"
 msgid "Waiting for package manager lock"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:128
+#: libapper/PkStrings.cpp:128
 msgctxt "waiting for user to type in a password"
 msgid "Waiting for authentication"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:131
+#: libapper/PkStrings.cpp:131
 msgctxt "we are updating the list of processes"
 msgid "Updating the list of running applications"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:134
+#: libapper/PkStrings.cpp:134
 msgctxt "we are checking executable files in use"
 msgid "Checking for applications currently in use"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:137
+#: libapper/PkStrings.cpp:137
 msgctxt "we are checking for libraries in use"
 msgid "Checking for libraries currently in use"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:140
+#: libapper/PkStrings.cpp:140
 msgctxt "we are copying package files to prepare to install"
 msgid "Copying files"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:150
+#: libapper/PkStrings.cpp:150
 msgctxt "The action of the package, in past tense"
 msgid "Downloaded"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:152
+#: libapper/PkStrings.cpp:152
 msgctxt "The action of the package, in past tense"
 msgid "Updated"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:154
+#: libapper/PkStrings.cpp:154
 msgctxt "The action of the package, in past tense"
 msgid "Installed"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:156
+#: libapper/PkStrings.cpp:156
 msgctxt "The action of the package, in past tense"
 msgid "Removed"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:158
+#: libapper/PkStrings.cpp:158
 msgctxt "The action of the package, in past tense"
 msgid "Cleaned Up"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:160
+#: libapper/PkStrings.cpp:160
 msgctxt "The action of the package, in past tense"
 msgid "Obsoleted"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:171
+#: libapper/PkStrings.cpp:171
 msgctxt "The role of the transaction, in present tense"
 msgid "Unknown role type"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:173
+#: libapper/PkStrings.cpp:173
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting dependencies"
 msgstr "Dji cache après les aloyances"
 
-#: libapper/KpkStrings.cpp:175
+#: libapper/PkStrings.cpp:175
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting update detail"
 msgstr "Dji cache après les detays des metaedjes a djoû"
 
-#: libapper/KpkStrings.cpp:177
+#: libapper/PkStrings.cpp:177
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting details"
 msgstr "Dji cache après les detays"
 
-#: libapper/KpkStrings.cpp:179
+#: libapper/PkStrings.cpp:179
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting requires"
 msgstr "Dji cache après les « dimande »"
 
-#: libapper/KpkStrings.cpp:181
+#: libapper/PkStrings.cpp:181
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting updates"
 msgstr "Dji cache après les metaedjes a djoû"
 
-#: libapper/KpkStrings.cpp:183
+#: libapper/PkStrings.cpp:183
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching details"
 msgstr "Detays do cweraedje"
 
-#: libapper/KpkStrings.cpp:185
+#: libapper/PkStrings.cpp:185
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching for file"
 msgstr "Dji cache après on fitchî"
 
-#: libapper/KpkStrings.cpp:187
+#: libapper/PkStrings.cpp:187
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching groups"
 msgstr "Groupes di cweraedje"
 
-#: libapper/KpkStrings.cpp:189
+#: libapper/PkStrings.cpp:189
 msgctxt "The role of the transaction, in present tense"
 msgid "Searching by package name"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:191
+#: libapper/PkStrings.cpp:191
 msgctxt "The role of the transaction, in present tense"
 msgid "Removing"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:193
+#: libapper/PkStrings.cpp:193
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:195
+#: libapper/PkStrings.cpp:195
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing file"
 msgstr "Dj' astale li fitchî"
 
-#: libapper/KpkStrings.cpp:197
+#: libapper/PkStrings.cpp:197
 msgctxt "The role of the transaction, in present tense"
 msgid "Refreshing package cache"
 msgstr "Dji rafristêye li muchete des pacaedje"
 
-#: libapper/KpkStrings.cpp:199
+#: libapper/PkStrings.cpp:199
 msgctxt "The role of the transaction, in present tense"
 msgid "Updating packages"
 msgstr "Dji met a djoû les pacaedjes"
 
-#: libapper/KpkStrings.cpp:201
+#: libapper/PkStrings.cpp:201
 msgctxt "The role of the transaction, in present tense"
 msgid "Updating system"
 msgstr "Dji met a djoû l' sistinme"
 
-#: libapper/KpkStrings.cpp:203
+#: libapper/PkStrings.cpp:203
 msgctxt "The role of the transaction, in present tense"
 msgid "Canceling"
 msgstr "Dji rnonce"
 
-#: libapper/KpkStrings.cpp:205
+#: libapper/PkStrings.cpp:205
 msgctxt "The role of the transaction, in present tense"
 msgid "Rolling back"
 msgstr "Dji rrôle"
 
-#: libapper/KpkStrings.cpp:207
+#: libapper/PkStrings.cpp:207
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting list of repositories"
 msgstr "Dji cache après l' djivêye des depots"
 
-#: libapper/KpkStrings.cpp:209
+#: libapper/PkStrings.cpp:209
 msgctxt "The role of the transaction, in present tense"
 msgid "Enabling repository"
 msgstr "Dji met en alaedje li depot"
 
-#: libapper/KpkStrings.cpp:211
+#: libapper/PkStrings.cpp:211
 msgctxt "The role of the transaction, in present tense"
 msgid "Setting repository data"
 msgstr "Dji defini les dnêyes do depot"
 
-#: libapper/KpkStrings.cpp:213
+#: libapper/PkStrings.cpp:213
 msgctxt "The role of the transaction, in present tense"
 msgid "Resolving"
 msgstr "Dji rezoud"
 
-#: libapper/KpkStrings.cpp:215
+#: libapper/PkStrings.cpp:215
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting file list"
 msgstr "Dji cache après l' djivêye des fitchîs"
 
-#: libapper/KpkStrings.cpp:217
+#: libapper/PkStrings.cpp:217
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting what provides"
 msgstr "Dji cache après çou k' i dene"
 
-#: libapper/KpkStrings.cpp:219
+#: libapper/PkStrings.cpp:219
 msgctxt "The role of the transaction, in present tense"
 msgid "Installing signature"
 msgstr "Dj' astale li sinateure"
 
-#: libapper/KpkStrings.cpp:221
+#: libapper/PkStrings.cpp:221
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting package lists"
 msgstr "Dji cache après les djivêyes des pacaedjes"
 
-#: libapper/KpkStrings.cpp:223
+#: libapper/PkStrings.cpp:223
 msgctxt "The role of the transaction, in present tense"
 msgid "Accepting EULA"
 msgstr "Dj' acceptêye l' EULA"
 
-#: libapper/KpkStrings.cpp:225
+#: libapper/PkStrings.cpp:225
 msgctxt "The role of the transaction, in present tense"
 msgid "Downloading packages"
 msgstr "Dj' aberwete  les pacaedjes"
 
-#: libapper/KpkStrings.cpp:227
+#: libapper/PkStrings.cpp:227
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting distribution upgrade information"
 msgstr "Dji cache après les informåcions d' metaedje a livea del distribucion"
 
-#: libapper/KpkStrings.cpp:229
+#: libapper/PkStrings.cpp:229
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting categories"
 msgstr "Dji cache après les categoreyes"
 
-#: libapper/KpkStrings.cpp:231
+#: libapper/PkStrings.cpp:231
 msgctxt "The role of the transaction, in present tense"
 msgid "Getting old transactions"
 msgstr "Dji cache après les viyès tranzaccions"
 
-#: libapper/KpkStrings.cpp:233
+#: libapper/PkStrings.cpp:233
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating the install of files"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:235
+#: libapper/PkStrings.cpp:235
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating the install"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:237
+#: libapper/PkStrings.cpp:237
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating the remove"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:239
+#: libapper/PkStrings.cpp:239
 msgctxt "The role of the transaction, in present tense"
 msgid "Simulating the update"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:241
+#: libapper/PkStrings.cpp:241
 msgctxt "The role of the transaction, in present tense"
 msgid "Upgrading system"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:251
+#: libapper/PkStrings.cpp:251
 msgctxt "The role of the transaction, in past tense"
 msgid "Unknown role type"
 msgstr "Sôre di role nén cnoxhowe"
 
-#: libapper/KpkStrings.cpp:253
+#: libapper/PkStrings.cpp:253
 msgctxt "The role of the transaction, in past tense"
 msgid "Got dependencies"
 msgstr "Dj' a ls aloyances"
 
-#: libapper/KpkStrings.cpp:255
+#: libapper/PkStrings.cpp:255
 msgctxt "The role of the transaction, in past tense"
 msgid "Got update detail"
 msgstr "Dj' a les detays pol metaedje a djoû"
 
-#: libapper/KpkStrings.cpp:257
+#: libapper/PkStrings.cpp:257
 msgctxt "The role of the transaction, in past tense"
 msgid "Got details"
 msgstr "Dj' a les detays"
 
-#: libapper/KpkStrings.cpp:259
+#: libapper/PkStrings.cpp:259
 msgctxt "The role of the transaction, in past tense"
 msgid "Got requires"
 msgstr "Dj' a les « dimande »"
 
-#: libapper/KpkStrings.cpp:261
+#: libapper/PkStrings.cpp:261
 msgctxt "The role of the transaction, in past tense"
 msgid "Got updates"
 msgstr "Dj' a les metaedjes a djoû"
 
-#: libapper/KpkStrings.cpp:263
+#: libapper/PkStrings.cpp:263
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for package details"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:265
+#: libapper/PkStrings.cpp:265
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for file"
 msgstr "Fitchîs cachîs après"
 
-#: libapper/KpkStrings.cpp:267
+#: libapper/PkStrings.cpp:267
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched groups"
 msgstr "Groupes cachîs après"
 
-#: libapper/KpkStrings.cpp:269
+#: libapper/PkStrings.cpp:269
 msgctxt "The role of the transaction, in past tense"
 msgid "Searched for package name"
 msgstr "No d' fitchîs cachîs après"
 
-#: libapper/KpkStrings.cpp:271
+#: libapper/PkStrings.cpp:271
 msgctxt "The role of the transaction, in past tense"
 msgid "Removed packages"
 msgstr "Pacaedjes oistés"
 
-#: libapper/KpkStrings.cpp:273
+#: libapper/PkStrings.cpp:273
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed packages"
 msgstr "Pacaedjes astalés"
 
-#: libapper/KpkStrings.cpp:275
+#: libapper/PkStrings.cpp:275
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed local files"
 msgstr "Fitchîs locås astalés"
 
-#: libapper/KpkStrings.cpp:277
+#: libapper/PkStrings.cpp:277
 msgctxt "The role of the transaction, in past tense"
 msgid "Refreshed package cache"
 msgstr "Muchete des pacaedjes rafristêye"
 
-#: libapper/KpkStrings.cpp:279
+#: libapper/PkStrings.cpp:279
 msgctxt "The role of the transaction, in past tense"
 msgid "Updated packages"
 msgstr "Pacaedjes metous a djoû"
 
-#: libapper/KpkStrings.cpp:281
+#: libapper/PkStrings.cpp:281
 msgctxt "The role of the transaction, in past tense"
 msgid "Updated system"
 msgstr "Sistinme metou a djoû"
 
-#: libapper/KpkStrings.cpp:283
+#: libapper/PkStrings.cpp:283
 msgctxt "The role of the transaction, in past tense"
 msgid "Canceled"
 msgstr "Rinoncî"
 
-#: libapper/KpkStrings.cpp:285
+#: libapper/PkStrings.cpp:285
 msgctxt "The role of the transaction, in past tense"
 msgid "Rolled back"
 msgstr "Rirôlé"
 
-#: libapper/KpkStrings.cpp:287
+#: libapper/PkStrings.cpp:287
 msgctxt "The role of the transaction, in past tense"
 msgid "Got list of repositories"
 msgstr "Dj' a l' djivêye des depots"
 
-#: libapper/KpkStrings.cpp:289
+#: libapper/PkStrings.cpp:289
 msgctxt "The role of the transaction, in past tense"
 msgid "Enabled repository"
 msgstr "Depot en alaedje"
 
-#: libapper/KpkStrings.cpp:291
+#: libapper/PkStrings.cpp:291
 msgctxt "The role of the transaction, in past tense"
 msgid "Set repository data"
 msgstr "Defini les dinêyes do depot"
 
-#: libapper/KpkStrings.cpp:293
+#: libapper/PkStrings.cpp:293
 msgctxt "The role of the transaction, in past tense"
 msgid "Resolved"
 msgstr "Rezoudou"
 
-#: libapper/KpkStrings.cpp:295
+#: libapper/PkStrings.cpp:295
 msgctxt "The role of the transaction, in past tense"
 msgid "Got file list"
 msgstr "Dj' a yeu l'  djivêye des fitchîs"
 
-#: libapper/KpkStrings.cpp:297
+#: libapper/PkStrings.cpp:297
 msgctxt "The role of the transaction, in past tense"
 msgid "Got what provides"
 msgstr "Dj' a yeu çou ki dene"
 
-#: libapper/KpkStrings.cpp:299
+#: libapper/PkStrings.cpp:299
 msgctxt "The role of the transaction, in past tense"
 msgid "Installed signature"
 msgstr "Sinateure astalêye"
 
-#: libapper/KpkStrings.cpp:301
+#: libapper/PkStrings.cpp:301
 msgctxt "The role of the transaction, in past tense"
 msgid "Got package lists"
 msgstr "Dj' a yeu l' djivêye des pacaedjes"
 
-#: libapper/KpkStrings.cpp:303
+#: libapper/PkStrings.cpp:303
 msgctxt "The role of the transaction, in past tense"
 msgid "Accepted EULA"
 msgstr "EULA accepté"
 
-#: libapper/KpkStrings.cpp:305
+#: libapper/PkStrings.cpp:305
 msgctxt "The role of the transaction, in past tense"
 msgid "Downloaded packages"
 msgstr "Pacaedjes aberwetés"
 
-#: libapper/KpkStrings.cpp:307
+#: libapper/PkStrings.cpp:307
 msgctxt "The role of the transaction, in past tense"
 msgid "Got distribution upgrades"
 msgstr "Dj' a yeu les metaedjes a livea del distribucion"
 
-#: libapper/KpkStrings.cpp:309
+#: libapper/PkStrings.cpp:309
 msgctxt "The role of the transaction, in past tense"
 msgid "Got categories"
 msgstr "Dj' a yeu les categoreyes"
 
-#: libapper/KpkStrings.cpp:311
+#: libapper/PkStrings.cpp:311
 msgctxt "The role of the transaction, in past tense"
 msgid "Got old transactions"
 msgstr "Dj' a yeu les viyès tranzaccions"
 
-#: libapper/KpkStrings.cpp:313
+#: libapper/PkStrings.cpp:313
 msgctxt "The role of the transaction, in past tense"
 msgid "Simulated the install of files"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:315
+#: libapper/PkStrings.cpp:315
 msgctxt "The role of the transaction, in past tense"
 msgid "Simulated the install"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:317
+#: libapper/PkStrings.cpp:317
 msgctxt "The role of the transaction, in past tense"
 msgid "Simulated the remove"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:319
+#: libapper/PkStrings.cpp:319
 msgctxt "The role of the transaction, in past tense"
 msgid "Simulated the update"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:321
+#: libapper/PkStrings.cpp:321
 msgctxt "The role of the transaction, in past tense"
 msgid "Upgraded system"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:331
+#: libapper/PkStrings.cpp:331
 msgid "Downloading"
 msgstr "Dj' aberwete "
 
-#: libapper/KpkStrings.cpp:333
+#: libapper/PkStrings.cpp:333
 msgid "Updating"
 msgstr "Dji met a djoû"
 
-#: libapper/KpkStrings.cpp:335
+#: libapper/PkStrings.cpp:335
 msgid "Installing"
 msgstr "Dj' astale"
 
-#: libapper/KpkStrings.cpp:337
+#: libapper/PkStrings.cpp:337
 msgid "Removing"
 msgstr "Dji oistêye"
 
-#: libapper/KpkStrings.cpp:339
+#: libapper/PkStrings.cpp:339
 msgid "Cleaning up"
 msgstr "Dji rneteye"
 
-#: libapper/KpkStrings.cpp:341
+#: libapper/PkStrings.cpp:341
 msgid "Obsoleting"
 msgstr "Dji rind forpassé"
 
-#: libapper/KpkStrings.cpp:343
+#: libapper/PkStrings.cpp:343
 msgid "Reinstalling"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:345
+#: libapper/PkStrings.cpp:345
 msgid "Preparing"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:347
+#: libapper/PkStrings.cpp:347
 msgid "Decompressing"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:358
+#: libapper/PkStrings.cpp:358
 msgid "Downloaded"
 msgstr "Aberweté"
 
-#: libapper/KpkStrings.cpp:360
+#: libapper/PkStrings.cpp:360
 msgid "Updated"
 msgstr "Metou a djoû"
 
-#: libapper/KpkStrings.cpp:364
+#: libapper/PkStrings.cpp:364
 msgid "Removed"
 msgstr "Oisté"
 
-#: libapper/KpkStrings.cpp:366
+#: libapper/PkStrings.cpp:366
 msgid "Cleaned up"
 msgstr "Netyî"
 
-#: libapper/KpkStrings.cpp:368
+#: libapper/PkStrings.cpp:368
 msgid "Obsoleted"
 msgstr "Trop vî"
 
-#: libapper/KpkStrings.cpp:370
+#: libapper/PkStrings.cpp:370
 msgid "Reinstalled"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:372
+#: libapper/PkStrings.cpp:372
 msgid "Prepared"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:374
+#: libapper/PkStrings.cpp:374
 msgid "Decompressed"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:385
+#: libapper/PkStrings.cpp:385
 msgid "No network connection available"
 msgstr "I gn a pont d' raloyaedje rantoele di disponibe"
 
-#: libapper/KpkStrings.cpp:387
+#: libapper/PkStrings.cpp:387
 msgid "No package cache is available"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:389
+#: libapper/PkStrings.cpp:389
 msgid "Out of memory"
 msgstr "Pupont d' memwere"
 
-#: libapper/KpkStrings.cpp:391
+#: libapper/PkStrings.cpp:391
 msgid "Failed to create a thread"
 msgstr "L' ahivaedje d' ene lignoûle a fwait berwete"
 
-#: libapper/KpkStrings.cpp:393
+#: libapper/PkStrings.cpp:393
 msgid "Not supported by this backend"
 msgstr "Nén sopoirté pa c' fondmint ci"
 
-#: libapper/KpkStrings.cpp:395
+#: libapper/PkStrings.cpp:395
 msgid "An internal system error has occurred"
 msgstr "Ene divintrinne aroke sistinme s' a passé"
 
-#: libapper/KpkStrings.cpp:397
+#: libapper/PkStrings.cpp:397
 msgid "A security trust relationship is not present"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:399
+#: libapper/PkStrings.cpp:399
 msgid "The package is not installed"
 msgstr "Li pacaedje n' est nén astalé"
 
-#: libapper/KpkStrings.cpp:401
+#: libapper/PkStrings.cpp:401
 msgid "The package was not found"
 msgstr "Dji n' a nén trové l' pacaedje"
 
-#: libapper/KpkStrings.cpp:403
+#: libapper/PkStrings.cpp:403
 msgid "The package is already installed"
 msgstr "Li pacaedje est ddja astalé"
 
-#: libapper/KpkStrings.cpp:405
+#: libapper/PkStrings.cpp:405
 msgid "The package download failed"
 msgstr "L' aberwetaedje do pacaedje a fwait berwete"
 
-#: libapper/KpkStrings.cpp:407
+#: libapper/PkStrings.cpp:407
 msgid "The group was not found"
 msgstr "Dji n' a nén trové l' groupe"
 
-#: libapper/KpkStrings.cpp:409
+#: libapper/PkStrings.cpp:409
 msgid "The group list was invalid"
 msgstr "Li djivêye des groupes n' esteut nén valåbe"
 
-#: libapper/KpkStrings.cpp:411
+#: libapper/PkStrings.cpp:411
 msgid "Dependency resolution failed"
 msgstr "Li rezoudaedje des aloyances a fwait berwete"
 
-#: libapper/KpkStrings.cpp:413
+#: libapper/PkStrings.cpp:413
 msgid "Search filter was invalid"
 msgstr "Li passete di cweraedje n' esteut nén valåbe"
 
-#: libapper/KpkStrings.cpp:415
+#: libapper/PkStrings.cpp:415
 msgid "The package identifier was not well formed"
 msgstr "L' idintifieu do pacaedje n' esteut nén bén a môde di djin"
 
-#: libapper/KpkStrings.cpp:417
+#: libapper/PkStrings.cpp:417
 msgid "Transaction error"
 msgstr "Aroke di tranzaccion"
 
-#: libapper/KpkStrings.cpp:419
+#: libapper/PkStrings.cpp:419
 msgid "Repository name was not found"
 msgstr "Dji n' a nén trové l' pno do depot"
 
-#: libapper/KpkStrings.cpp:421
+#: libapper/PkStrings.cpp:421
 msgid "Could not remove a protected system package"
 msgstr "Dji n' a sepou oister on pacaedje sistinme waerantî"
 
-#: libapper/KpkStrings.cpp:423
+#: libapper/PkStrings.cpp:423
 msgid "The task was canceled"
 msgstr "Dj' a rnoncî al bouye"
 
-#: libapper/KpkStrings.cpp:425
+#: libapper/PkStrings.cpp:425
 msgid "The task was forcibly canceled"
 msgstr "Dj' a rnoncî pal foice al bouye"
 
-#: libapper/KpkStrings.cpp:427
+#: libapper/PkStrings.cpp:427
 msgid "Reading the config file failed"
 msgstr "Li ljhaedje do fitchî d' apontiaedje a fwait berwete"
 
-#: libapper/KpkStrings.cpp:429
+#: libapper/PkStrings.cpp:429
 msgid "The task cannot be cancelled"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:431
+#: libapper/PkStrings.cpp:431
 msgid "Source packages cannot be installed"
 msgstr "Les pacaedjes sourdants n' savèt nén esse astalés"
 
-#: libapper/KpkStrings.cpp:433
+#: libapper/PkStrings.cpp:433
 msgid "The license agreement failed"
 msgstr "L' acoird di licince a fwait berwete"
 
-#: libapper/KpkStrings.cpp:435
+#: libapper/PkStrings.cpp:435
 msgid "Local file conflict between packages"
 msgstr "Afrontmint d' fitchîs locås etur pacaedjes"
 
-#: libapper/KpkStrings.cpp:437
+#: libapper/PkStrings.cpp:437
 msgid "Packages are not compatible"
 msgstr "Les pacaedjes ni sont nén copatibes"
 
-#: libapper/KpkStrings.cpp:439
+#: libapper/PkStrings.cpp:439
 msgid "Problem connecting to a software origin"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:441
+#: libapper/PkStrings.cpp:441
 msgid "Failed to initialize"
 msgstr "L' inicialijhaedje a fwait berwete"
 
-#: libapper/KpkStrings.cpp:443
+#: libapper/PkStrings.cpp:443
 msgid "Failed to finalize"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:445
+#: libapper/PkStrings.cpp:445
 msgid "Cannot get lock"
 msgstr "Dji n' sai eclawer"
 
-#: libapper/KpkStrings.cpp:447
+#: libapper/PkStrings.cpp:447
 msgid "No packages to update"
 msgstr "Pont d' pacaedjes a mete a djoû"
 
-#: libapper/KpkStrings.cpp:449
+#: libapper/PkStrings.cpp:449
 msgid "Cannot write repository configuration"
 msgstr "Dji n' sai scrire l' apontiaedje do depot"
 
-#: libapper/KpkStrings.cpp:451
+#: libapper/PkStrings.cpp:451
 msgid "Local install failed"
 msgstr "L' astalaedje locå a fwait berwete"
 
-#: libapper/KpkStrings.cpp:453
+#: libapper/PkStrings.cpp:453
 msgid "Bad GPG signature"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:455
+#: libapper/PkStrings.cpp:455
 msgid "Missing GPG signature"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:457
+#: libapper/PkStrings.cpp:457
 msgid "Repository configuration invalid"
 msgstr "Apontiaedje do depot nén valåbe"
 
-#: libapper/KpkStrings.cpp:459
+#: libapper/PkStrings.cpp:459
 msgid "Invalid package file"
 msgstr "Fitchî pacaedje nén valåbe"
 
-#: libapper/KpkStrings.cpp:461
+#: libapper/PkStrings.cpp:461
 msgid "Package install blocked"
 msgstr "Astalaedje do pacaedje bloké"
 
-#: libapper/KpkStrings.cpp:463
+#: libapper/PkStrings.cpp:463
 msgid "Package is corrupt"
 msgstr "Li pacaedje est cron"
 
-#: libapper/KpkStrings.cpp:465
+#: libapper/PkStrings.cpp:465
 msgid "All packages are already installed"
 msgstr "Tos les pacaedjes sont ddja astalés"
 
-#: libapper/KpkStrings.cpp:467
+#: libapper/PkStrings.cpp:467
 msgid "The specified file could not be found"
 msgstr "Dji n' a savou trover l' sipecifyî fitchî"
 
-#: libapper/KpkStrings.cpp:469
+#: libapper/PkStrings.cpp:469
 msgid "No more mirrors are available"
 msgstr "I gn a pont d' ôte muroe d' disponibe"
 
-#: libapper/KpkStrings.cpp:471
+#: libapper/PkStrings.cpp:471
 msgid "No distribution upgrade data is available"
 msgstr "Nou metaedje a djoû del distribucion di disponibe"
 
-#: libapper/KpkStrings.cpp:473
+#: libapper/PkStrings.cpp:473
 msgid "Package is incompatible with this system"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:475
+#: libapper/PkStrings.cpp:475
 msgid "No space is left on the disk"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:477 libapper/PkTransaction.cpp:671
+#: libapper/PkStrings.cpp:477 libapper/PkTransaction.cpp:671
 msgid "A media change is required"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:479
+#: libapper/PkStrings.cpp:479
 msgid "Authorization failed"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:481
+#: libapper/PkStrings.cpp:481
 msgid "Update not found"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:483
+#: libapper/PkStrings.cpp:483
 msgid "Cannot install from untrusted origin"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:485
+#: libapper/PkStrings.cpp:485
 msgid "Cannot update from untrusted origin"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:487
+#: libapper/PkStrings.cpp:487
 msgid "Cannot get the file list"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:489
+#: libapper/PkStrings.cpp:489
 msgid "Cannot get package requires"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:491
+#: libapper/PkStrings.cpp:491
 msgid "Cannot disable origin"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:493
+#: libapper/PkStrings.cpp:493
 msgid "The download failed"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:495
+#: libapper/PkStrings.cpp:495
 msgid "Package failed to configure"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:497
+#: libapper/PkStrings.cpp:497
 msgid "Package failed to build"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:499
+#: libapper/PkStrings.cpp:499
 msgid "Package failed to install"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:501
+#: libapper/PkStrings.cpp:501
 msgid "Package failed to be removed"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:503
+#: libapper/PkStrings.cpp:503
 msgid "Update failed due to running process"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:505
+#: libapper/PkStrings.cpp:505
 msgid "The package database was changed"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:507
+#: libapper/PkStrings.cpp:507
 msgid "Virtual provide type is not supported"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:509
+#: libapper/PkStrings.cpp:509
 msgid "Install root is invalid"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:511
+#: libapper/PkStrings.cpp:511
 msgid "Cannot fetch install sources"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:513
+#: libapper/PkStrings.cpp:513
 msgid "Rescheduled due to priority"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:515
+#: libapper/PkStrings.cpp:515
 msgid "Unknown error"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:525
+#: libapper/PkStrings.cpp:525
 msgid ""
 "There is no network connection available.\n"
 "Please check your connection settings and try again"
@@ -2353,7 +2366,7 @@ msgstr ""
 "I gn a pont d' raloyaedje rantoele di disponibe.\n"
 "Waitîz vos tchuzes di raloyaedjes s' i vs plait eyet sayîz co on côp"
 
-#: libapper/KpkStrings.cpp:528
+#: libapper/PkStrings.cpp:528
 msgid ""
 "The package list needs to be rebuilt.\n"
 "This should have been done by the backend automatically."
@@ -2361,54 +2374,54 @@ msgstr ""
 "Li djivêye des pacaedjes a dandjî d' esse ricostrute.\n"
 "Ça duvreut ddja esse awè stî fwait otomaticmint pal boye di fond."
 
-#: libapper/KpkStrings.cpp:531
+#: libapper/PkStrings.cpp:531
 msgid ""
 "The service that is responsible for handling user requests is out of "
 "memory.\n"
 "Please close some programs or restart your computer."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:534
+#: libapper/PkStrings.cpp:534
 msgid "A thread could not be created to service the user request."
 msgstr ""
 "Ene lignoûle n' a nén savou esse ahivêye po siervi l' dimande di l' uzeu."
 
-#: libapper/KpkStrings.cpp:536
+#: libapper/PkStrings.cpp:536
 msgid ""
 "The action is not supported by this backend.\n"
 "Please report a bug as this should not have happened."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:539
+#: libapper/PkStrings.cpp:539
 msgid ""
 "A problem that we were not expecting has occurred.\n"
 "Please report this bug with the error description."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:542
+#: libapper/PkStrings.cpp:542
 msgid ""
 "A security trust relationship could not be made with the software origin.\n"
 "Please check your software signature settings."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:545
+#: libapper/PkStrings.cpp:545
 msgid ""
 "The package that is trying to be removed or updated is not already installed."
 msgstr ""
 "Li pacaedje k' on saye di oister oudonbén d' mete a djoû n' est nén co "
 "astalé."
 
-#: libapper/KpkStrings.cpp:547
+#: libapper/PkStrings.cpp:547
 msgid ""
 "The package that is being modified was not found on your system or in any "
 "software origin."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:549
+#: libapper/PkStrings.cpp:549
 msgid "The package that is trying to be installed is already installed."
 msgstr "Li pacaedje k' on saye d' astaler est ddja astalé."
 
-#: libapper/KpkStrings.cpp:551
+#: libapper/PkStrings.cpp:551
 msgid ""
 "The package download failed.\n"
 "Please check your network connectivity."
@@ -2416,7 +2429,7 @@ msgstr ""
 "L' aberwetaedje do pacaedje a fwait berwete.\n"
 "Waitîz vosse raloyaedje al rantoele, s' i vs plait."
 
-#: libapper/KpkStrings.cpp:554
+#: libapper/PkStrings.cpp:554
 msgid ""
 "The group type was not found.\n"
 "Please check your group list and try again."
@@ -2424,50 +2437,50 @@ msgstr ""
 "Dji n' a nén trové sôre do groupe.\n"
 "Waitîz vosse djivêye des groupe, s' i vs plaît, eyet sayîz co on côp."
 
-#: libapper/KpkStrings.cpp:557
+#: libapper/PkStrings.cpp:557
 msgid ""
 "The group list could not be loaded.\n"
 "Refreshing your cache may help, although this is normally a software origin "
 "error."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:561
+#: libapper/PkStrings.cpp:561
 msgid ""
 "A package dependency could not be found.\n"
 "More information is available in the detailed report."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:564
+#: libapper/PkStrings.cpp:564
 msgid "The search filter was not correctly formed."
 msgstr "Li passete di ceraedje n' esteut nén foirmé comifåt."
 
-#: libapper/KpkStrings.cpp:566
+#: libapper/PkStrings.cpp:566
 msgid ""
 "The package identifier was not well formed when sent to the system daemon.\n"
 "This normally indicates an internal bug and should be reported."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:569
+#: libapper/PkStrings.cpp:569
 msgid ""
 "An error occurred while running the transaction.\n"
 "More information is available in the detailed report."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:572
+#: libapper/PkStrings.cpp:572
 msgid ""
 "The remote software origin name was not found.\n"
 "You may need to enable an item in Software Origins."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:575
+#: libapper/PkStrings.cpp:575
 msgid "Removing a protected system package is not allowed."
 msgstr "Oister on pacaedje sistinme waeranti n' est nén permetou."
 
-#: libapper/KpkStrings.cpp:577
+#: libapper/PkStrings.cpp:577
 msgid "The task was canceled successfully and no packages were changed."
 msgstr "Dj' a rnoncî al bouye comifåt eyet nou pacaedje n' a stî candjî."
 
-#: libapper/KpkStrings.cpp:579
+#: libapper/PkStrings.cpp:579
 msgid ""
 "The task was canceled successfully and no packages were changed.\n"
 "The backend did not exit cleanly."
@@ -2475,17 +2488,17 @@ msgstr ""
 "Dj' a rnoncî al bouye comifåt eyet nou pacaedje n' a stî candjî.\n"
 "Li bouye di fond n' a nén moussî foû d' ene façon prôpe."
 
-#: libapper/KpkStrings.cpp:582
+#: libapper/PkStrings.cpp:582
 msgid ""
 "The native package configuration file could not be opened.\n"
 "Please make sure your system's configuration is valid."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:585
+#: libapper/PkStrings.cpp:585
 msgid "The task is not safe to be cancelled at this time."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:587
+#: libapper/PkStrings.cpp:587
 msgid ""
 "Source packages are not normally installed this way.\n"
 "Check the extension of the file you are trying to install."
@@ -2493,7 +2506,7 @@ msgstr ""
 "Les pacaedjess sourdants n' sont normålmint nén astalés d' cisse manire la.\n"
 "Waitîz l' cawete do fitchî k' vos sayîz d' astaler."
 
-#: libapper/KpkStrings.cpp:590
+#: libapper/PkStrings.cpp:590
 msgid ""
 "The license agreement was not agreed to.\n"
 "To use this software you have to accept the license."
@@ -2501,25 +2514,25 @@ msgstr ""
 "L' acoird di licince n' a nén stî accepté.\n"
 "Po vs siervi di c' programe ci, vos dvoz accepter l' licince."
 
-#: libapper/KpkStrings.cpp:593
+#: libapper/PkStrings.cpp:593
 msgid ""
 "Two packages provide the same file.\n"
 "This is usually due to mixing packages for different software origins."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:596
+#: libapper/PkStrings.cpp:596
 msgid ""
 "Multiple packages exist that are not compatible with each other.\n"
 "This is usually due to mixing packages from different software origins."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:599
+#: libapper/PkStrings.cpp:599
 msgid ""
 "There was a (possibly temporary) problem connecting to a software origins.\n"
 "Please check the detailed error for further details."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:602
+#: libapper/PkStrings.cpp:602
 msgid ""
 "Failed to initialize packaging backend.\n"
 "This may occur if other packaging tools are being used simultaneously."
@@ -2528,7 +2541,7 @@ msgstr ""
 "Ça s' pout passer si ds ôtès usteyes di pacaedjaedje sont-st eployîs å minme "
 "moumint."
 
-#: libapper/KpkStrings.cpp:605
+#: libapper/PkStrings.cpp:605
 msgid ""
 "Failed to close down the backend instance.\n"
 "This error can normally be ignored."
@@ -2536,7 +2549,7 @@ msgstr ""
 "Li cloyaedje di l' instance del bouye di fond a fwait berwete.\n"
 "On pout normålmint passer houte ciste aroke la."
 
-#: libapper/KpkStrings.cpp:608
+#: libapper/PkStrings.cpp:608
 msgid ""
 "Cannot get the exclusive lock on the packaging backend.\n"
 "Please close any other legacy packaging tools that may be open."
@@ -2546,15 +2559,15 @@ msgstr ""
 "Cloyoz s' i vs plait tote ôte usteye d' pacaedjaedje eritêye ki pôrént awè "
 "stî drovowe."
 
-#: libapper/KpkStrings.cpp:611
+#: libapper/PkStrings.cpp:611
 msgid "None of the selected packages could be updated."
 msgstr "Nou des pacaedjes tchoezis n' a plou esse metou a djoû."
 
-#: libapper/KpkStrings.cpp:613
+#: libapper/PkStrings.cpp:613
 msgid "The repository configuration could not be modified."
 msgstr "Dji n' a savou candjî l' apontiaedje do depot."
 
-#: libapper/KpkStrings.cpp:615
+#: libapper/PkStrings.cpp:615
 msgid ""
 "Installing the local file failed.\n"
 "More information is available in the detailed report."
@@ -2562,22 +2575,22 @@ msgstr ""
 "L' astalaedje do fitchî locå a fwait berwete.\n"
 "I gn a pus d' informåcions dins l' sipepieus rapoirt."
 
-#: libapper/KpkStrings.cpp:618
+#: libapper/PkStrings.cpp:618
 msgid "The package signature could not be verified."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:620
+#: libapper/PkStrings.cpp:620
 msgid ""
 "The package signature was missing and this package is untrusted.\n"
 "This package was not signed with a GPG key when created."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:623
+#: libapper/PkStrings.cpp:623
 msgid "Repository configuration was invalid and could not be read."
 msgstr ""
 "L' apontiaedje do depot n' esteut nén valåbe eyet dji n' l' a savou lére."
 
-#: libapper/KpkStrings.cpp:625
+#: libapper/PkStrings.cpp:625
 msgid ""
 "The package you are attempting to install is not valid.\n"
 "The package file could be corrupt, or not a proper package."
@@ -2586,384 +2599,384 @@ msgstr ""
 "Li fitchî do pacaedje pôreut esse cron oudonbén ça n' est nén on vraiy "
 "pacaedje."
 
-#: libapper/KpkStrings.cpp:628
+#: libapper/PkStrings.cpp:628
 msgid ""
 "Installation of this package was prevented by your packaging system's "
 "configuration."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:630
+#: libapper/PkStrings.cpp:630
 msgid ""
 "The package that was downloaded is corrupt and needs to be downloaded again."
 msgstr "Li pacaedje aberweté est cron ey a dandjî d' resse aberweté."
 
-#: libapper/KpkStrings.cpp:632
+#: libapper/PkStrings.cpp:632
 msgid ""
 "All of the packages selected for install are already installed on the system."
 msgstr ""
 "Tos les pacaedjes tchoezis po l' astalaedje sont ddja astalés sol sistinme."
 
-#: libapper/KpkStrings.cpp:634
+#: libapper/PkStrings.cpp:634
 msgid ""
 "The specified file could not be found on the system.\n"
 "Check that the file still exists and has not been deleted."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:637
+#: libapper/PkStrings.cpp:637
 msgid ""
 "Required data could not be found on any of the configured software origins.\n"
 "There were no more download mirrors that could be tried."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:640
+#: libapper/PkStrings.cpp:640
 msgid ""
 "Required upgrade data could not be found in any of the configured software "
 "origins.\n"
 "The list of distribution upgrades will be unavailable."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:643
+#: libapper/PkStrings.cpp:643
 msgid ""
 "The package that is trying to be installed is incompatible with this system."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:645
+#: libapper/PkStrings.cpp:645
 msgid ""
 "There is insufficient space on the device.\n"
 "Free some space on the system disk to perform this operation."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:648
+#: libapper/PkStrings.cpp:648
 msgid "Additional media is required to complete the transaction."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:650
+#: libapper/PkStrings.cpp:650
 msgid ""
 "You have failed to provide correct authentication.\n"
 "Please check any passwords or account settings."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:653
+#: libapper/PkStrings.cpp:653
 msgid ""
 "The specified update could not be found.\n"
 "It could have already been installed or no longer available on the remote "
 "server."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:656
+#: libapper/PkStrings.cpp:656
 msgid "The package could not be installed from untrusted origin."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:658
+#: libapper/PkStrings.cpp:658
 msgid "The package could not be updated from untrusted origin."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:660
+#: libapper/PkStrings.cpp:660
 msgid "The file list is not available for this package."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:662
+#: libapper/PkStrings.cpp:662
 msgid "The information about what requires this package could not be obtained."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:664
+#: libapper/PkStrings.cpp:664
 msgid "The specified software origin could not be disabled."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:666
+#: libapper/PkStrings.cpp:666
 msgid ""
 "The download could not be done automatically and should be done manually.\n"
 "More information is available in the detailed report."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:669
+#: libapper/PkStrings.cpp:669
 msgid ""
 "One of the selected packages failed to configure correctly.\n"
 "More information is available in the detailed report."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:672
+#: libapper/PkStrings.cpp:672
 msgid ""
 "One of the selected packages failed to build correctly.\n"
 "More information is available in the detailed report."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:675
+#: libapper/PkStrings.cpp:675
 msgid ""
 "One of the selected packages failed to install correctly.\n"
 "More information is available in the detailed report."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:678
+#: libapper/PkStrings.cpp:678
 msgid ""
 "One of the selected packages failed to be removed correctly.\n"
 "More information is available in the detailed report."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:681
+#: libapper/PkStrings.cpp:681
 msgid ""
 "A program is running that has to be closed before the update can proceed.\n"
 "More information is available in the detailed report."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:684
+#: libapper/PkStrings.cpp:684
 msgid "The package database was changed while the request was running."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:686
+#: libapper/PkStrings.cpp:686
 msgid "The virtual provide type is not supported by this system."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:688
+#: libapper/PkStrings.cpp:688
 msgid "The install root is invalid. Please contact your administrator."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:690
+#: libapper/PkStrings.cpp:690
 msgid "The list of software could not be downloaded."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:692
+#: libapper/PkStrings.cpp:692
 msgid ""
 "The transaction has been cancelled and will be retried when the system is "
 "idle."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:694
+#: libapper/PkStrings.cpp:694
 msgid ""
 "Unknown error, please report a bug.\n"
 "More information is available in the detailed report."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:705
+#: libapper/PkStrings.cpp:705
 msgctxt "The group type"
 msgid "Accessibility"
 msgstr "Accessibilité"
 
-#: libapper/KpkStrings.cpp:707
+#: libapper/PkStrings.cpp:707
 msgctxt "The group type"
 msgid "Accessories"
 msgstr "Usteyes"
 
-#: libapper/KpkStrings.cpp:709
+#: libapper/PkStrings.cpp:709
 msgctxt "The group type"
 msgid "Education"
 msgstr "Sicolaedje"
 
-#: libapper/KpkStrings.cpp:711
+#: libapper/PkStrings.cpp:711
 msgctxt "The group type"
 msgid "Games"
 msgstr "Djeus"
 
-#: libapper/KpkStrings.cpp:713
+#: libapper/PkStrings.cpp:713
 msgctxt "The group type"
 msgid "Graphics"
 msgstr "Imådjes"
 
-#: libapper/KpkStrings.cpp:715
+#: libapper/PkStrings.cpp:715
 msgctxt "The group type"
 msgid "Internet"
 msgstr "Daegntoele"
 
-#: libapper/KpkStrings.cpp:717
+#: libapper/PkStrings.cpp:717
 msgctxt "The group type"
 msgid "Office"
 msgstr "Burotike"
 
-#: libapper/KpkStrings.cpp:719
+#: libapper/PkStrings.cpp:719
 msgctxt "The group type"
 msgid "Others"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:721
+#: libapper/PkStrings.cpp:721
 msgctxt "The group type"
 msgid "Development"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:723
+#: libapper/PkStrings.cpp:723
 msgctxt "The group type"
 msgid "Multimedia"
 msgstr "Multimedia"
 
-#: libapper/KpkStrings.cpp:725
+#: libapper/PkStrings.cpp:725
 msgctxt "The group type"
 msgid "System"
 msgstr "Sistinme"
 
-#: libapper/KpkStrings.cpp:727
+#: libapper/PkStrings.cpp:727
 msgctxt "The group type"
 msgid "GNOME desktop"
 msgstr "Sicribanne GNOME"
 
-#: libapper/KpkStrings.cpp:729
+#: libapper/PkStrings.cpp:729
 msgctxt "The group type"
 msgid "KDE desktop"
 msgstr "Sicribanne KDE"
 
-#: libapper/KpkStrings.cpp:731
+#: libapper/PkStrings.cpp:731
 msgctxt "The group type"
 msgid "XFCE desktop"
 msgstr "Sicribanne XFCE"
 
-#: libapper/KpkStrings.cpp:733
+#: libapper/PkStrings.cpp:733
 msgctxt "The group type"
 msgid "Other desktops"
 msgstr "Ôtes sicribannes"
 
-#: libapper/KpkStrings.cpp:735
+#: libapper/PkStrings.cpp:735
 msgctxt "The group type"
 msgid "Publishing"
 msgstr "Eplaidaedje"
 
-#: libapper/KpkStrings.cpp:737
+#: libapper/PkStrings.cpp:737
 msgctxt "The group type"
 msgid "Servers"
 msgstr "Sierveus"
 
-#: libapper/KpkStrings.cpp:739
+#: libapper/PkStrings.cpp:739
 msgctxt "The group type"
 msgid "Fonts"
 msgstr "Fontes"
 
-#: libapper/KpkStrings.cpp:741
+#: libapper/PkStrings.cpp:741
 msgctxt "The group type"
 msgid "Admin tools"
 msgstr "Usteyes di manaedjmint"
 
-#: libapper/KpkStrings.cpp:743
+#: libapper/PkStrings.cpp:743
 msgctxt "The group type"
 msgid "Legacy"
 msgstr "Eritaedje"
 
-#: libapper/KpkStrings.cpp:745
+#: libapper/PkStrings.cpp:745
 msgctxt "The group type"
 msgid "Localization"
 msgstr "Locålizaedje"
 
-#: libapper/KpkStrings.cpp:747
+#: libapper/PkStrings.cpp:747
 msgctxt "The group type"
 msgid "Virtualization"
 msgstr "Forvoeyaedje"
 
-#: libapper/KpkStrings.cpp:749
+#: libapper/PkStrings.cpp:749
 msgctxt "The group type"
 msgid "Security"
 msgstr "Såvrité"
 
-#: libapper/KpkStrings.cpp:751
+#: libapper/PkStrings.cpp:751
 msgctxt "The group type"
 msgid "Power management"
 msgstr "Manaedjmint di l' enerdjeye"
 
-#: libapper/KpkStrings.cpp:753
+#: libapper/PkStrings.cpp:753
 msgctxt "The group type"
 msgid "Communication"
 msgstr "Comunicåcion"
 
-#: libapper/KpkStrings.cpp:755
+#: libapper/PkStrings.cpp:755
 msgctxt "The group type"
 msgid "Network"
 msgstr "Rantoele"
 
-#: libapper/KpkStrings.cpp:757
+#: libapper/PkStrings.cpp:757
 msgctxt "The group type"
 msgid "Maps"
 msgstr "Mapes"
 
-#: libapper/KpkStrings.cpp:759
+#: libapper/PkStrings.cpp:759
 msgctxt "The group type"
 msgid "Software sources"
 msgstr "Sourdants do programe"
 
-#: libapper/KpkStrings.cpp:761
+#: libapper/PkStrings.cpp:761
 msgctxt "The group type"
 msgid "Science"
 msgstr "Siyince"
 
-#: libapper/KpkStrings.cpp:763
+#: libapper/PkStrings.cpp:763
 msgctxt "The group type"
 msgid "Documentation"
 msgstr "Documintåcion"
 
-#: libapper/KpkStrings.cpp:765
+#: libapper/PkStrings.cpp:765
 msgctxt "The group type"
 msgid "Electronics"
 msgstr "Electronike"
 
-#: libapper/KpkStrings.cpp:767
+#: libapper/PkStrings.cpp:767
 msgctxt "The group type"
 msgid "Package collections"
 msgstr "Ramexhnêye di pacaedjes"
 
-#: libapper/KpkStrings.cpp:769
+#: libapper/PkStrings.cpp:769
 msgctxt "The group type"
 msgid "Vendor"
 msgstr "Vindeu"
 
-#: libapper/KpkStrings.cpp:771
+#: libapper/PkStrings.cpp:771
 msgctxt "The group type"
 msgid "Newest packages"
 msgstr "Pacaedjes les pus noûs"
 
-#: libapper/KpkStrings.cpp:773
+#: libapper/PkStrings.cpp:773
 msgctxt "The group type"
 msgid "Unknown group"
 msgstr "Groupe nén cnoxhou"
 
-#: libapper/KpkStrings.cpp:783
+#: libapper/PkStrings.cpp:783
 msgctxt "The type of update"
 msgid "Trivial update"
 msgstr "Biesse metaedje a djoû"
 
-#: libapper/KpkStrings.cpp:785
+#: libapper/PkStrings.cpp:785
 msgctxt "The type of update"
 msgid "Normal update"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:787
+#: libapper/PkStrings.cpp:787
 msgctxt "The type of update"
 msgid "Important update"
 msgstr "Impôrtant metaedje a djoû"
 
-#: libapper/KpkStrings.cpp:789
+#: libapper/PkStrings.cpp:789
 msgctxt "The type of update"
 msgid "Security update"
 msgstr "Metaedje a djoû di såvrité"
 
-#: libapper/KpkStrings.cpp:791
+#: libapper/PkStrings.cpp:791
 msgctxt "The type of update"
 msgid "Bug fix update"
 msgstr "Metaedje a djoû po coridjî des bugs"
 
-#: libapper/KpkStrings.cpp:793
+#: libapper/PkStrings.cpp:793
 msgctxt "The type of update"
 msgid "Enhancement update"
 msgstr "Metaedje a djoû d' amidraedje"
 
-#: libapper/KpkStrings.cpp:795
+#: libapper/PkStrings.cpp:795
 msgctxt "The type of update"
 msgid "Blocked update"
 msgstr "Metaedje a djoû bloké"
 
-#: libapper/KpkStrings.cpp:798
+#: libapper/PkStrings.cpp:798
 msgctxt "The type of update"
 msgid "Installed"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:801
+#: libapper/PkStrings.cpp:801
 msgctxt "The type of update"
 msgid "Available"
 msgstr "Disponibe"
 
-#: libapper/KpkStrings.cpp:803
+#: libapper/PkStrings.cpp:803
 msgctxt "The type of update"
 msgid "Unknown update"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:814
+#: libapper/PkStrings.cpp:814
 msgid "No Updates Available"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:817
+#: libapper/PkStrings.cpp:817
 #, kde-format
 msgctxt "Some updates were selected on the view"
 msgid "1 Update Selected"
@@ -2971,7 +2984,7 @@ msgid_plural "%1 Updates Selected"
 msgstr[0] ""
 msgstr[1] ""
 
-#: libapper/KpkStrings.cpp:821
+#: libapper/PkStrings.cpp:821
 #, kde-format
 msgctxt "Some updates are being shown on the screen"
 msgid "1 Update"
@@ -2979,7 +2992,7 @@ msgid_plural "%1 Updates"
 msgstr[0] ""
 msgstr[1] ""
 
-#: libapper/KpkStrings.cpp:825
+#: libapper/PkStrings.cpp:825
 #, kde-format
 msgctxt "Part of: %1 Updates, %1 Selected"
 msgid "%1 Update"
@@ -2987,7 +3000,7 @@ msgid_plural "%1 Updates"
 msgstr[0] ""
 msgstr[1] ""
 
-#: libapper/KpkStrings.cpp:826
+#: libapper/PkStrings.cpp:826
 #, kde-format
 msgctxt "Part of: %1 Updates, %1 Selected"
 msgid "%1 Selected"
@@ -2995,297 +3008,212 @@ msgid_plural "%1 Selected"
 msgstr[0] ""
 msgstr[1] ""
 
-#: libapper/KpkStrings.cpp:824
+#: libapper/PkStrings.cpp:824
 #, kde-format
 msgctxt "Type of update, in the case it's just an update"
 msgid "%1, %2"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:830
+#: libapper/PkStrings.cpp:830
 msgid "No Packages"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:832
+#: libapper/PkStrings.cpp:832
 #, kde-format
 msgid "1 Package"
 msgid_plural "%1 Packages"
 msgstr[0] ""
 msgstr[1] ""
 
-#: libapper/KpkStrings.cpp:840
+#: libapper/PkStrings.cpp:840
 msgid "No restart is necessary"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:842
+#: libapper/PkStrings.cpp:842
 msgid "You will be required to restart this application"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:844
+#: libapper/PkStrings.cpp:844
 msgid "You will be required to log out and back in"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:846
+#: libapper/PkStrings.cpp:846
 msgid "A restart will be required"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:848
+#: libapper/PkStrings.cpp:848
 msgid "You will be required to log out and back in due to a security update."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:850
+#: libapper/PkStrings.cpp:850
 msgid "A restart will be required due to a security update."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:863
+#: libapper/PkStrings.cpp:863
 msgid "No restart is required"
 msgstr "Nén dandjî d' renondaedje"
 
-#: libapper/KpkStrings.cpp:865
+#: libapper/PkStrings.cpp:865
 msgid "A restart is required"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:867
+#: libapper/PkStrings.cpp:867
 msgid "You need to log out and log back in"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:869
+#: libapper/PkStrings.cpp:869
 msgid "You need to restart the application"
 msgstr "Vos avoz dandjî d' renonder l' programe"
 
-#: libapper/KpkStrings.cpp:871
+#: libapper/PkStrings.cpp:871
 msgid "You need to log out and log back in to remain secure."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:873
+#: libapper/PkStrings.cpp:873
 msgid "A restart is required to remain secure."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:886
+#: libapper/PkStrings.cpp:886
 msgid "Stable"
 msgstr "Sigur"
 
-#: libapper/KpkStrings.cpp:888
+#: libapper/PkStrings.cpp:888
 msgid "Unstable"
 msgstr "Nén sgur"
 
-#: libapper/KpkStrings.cpp:890
+#: libapper/PkStrings.cpp:890
 msgid "Testing"
 msgstr "Sayes"
 
-#: libapper/KpkStrings.cpp:903
+#: libapper/PkStrings.cpp:903
 #, kde-format
 msgid "Please insert the CD labeled '%1', and press continue."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:905
+#: libapper/PkStrings.cpp:905
 #, kde-format
 msgid "Please insert the DVD labeled '%1', and press continue."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:907
+#: libapper/PkStrings.cpp:907
 #, kde-format
 msgid "Please insert the disc labeled '%1', and press continue."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:909 libapper/KpkStrings.cpp:912
+#: libapper/PkStrings.cpp:909 libapper/PkStrings.cpp:912
 #, kde-format
 msgid "Please insert the medium labeled '%1', and press continue."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:919
+#: libapper/PkStrings.cpp:919
 msgid "A mirror is possibly broken"
 msgstr "On muroe est mutoe scheté"
 
-#: libapper/KpkStrings.cpp:921
+#: libapper/PkStrings.cpp:921
 msgid "The connection was refused"
 msgstr "Li raloyaedje a stî rfuzé"
 
-#: libapper/KpkStrings.cpp:923
+#: libapper/PkStrings.cpp:923
 msgid "The parameter was invalid"
 msgstr "Li paramete n' esteut nén valåbe"
 
-#: libapper/KpkStrings.cpp:925
+#: libapper/PkStrings.cpp:925
 msgid "The priority was invalid"
 msgstr "Li prumiristé n' esteut nén valåbe"
 
-#: libapper/KpkStrings.cpp:927
+#: libapper/PkStrings.cpp:927
 msgid "Backend warning"
 msgstr "Adviertixhmint del bouye di fond"
 
-#: libapper/KpkStrings.cpp:929
+#: libapper/PkStrings.cpp:929
 msgid "Daemon warning"
 msgstr "Adviertixhmint do démon"
 
-#: libapper/KpkStrings.cpp:931
+#: libapper/PkStrings.cpp:931
 msgid "The package list cache is being rebuilt"
 msgstr "Li djivêye des pacaedjes est a esse ricostrute"
 
-#: libapper/KpkStrings.cpp:933
+#: libapper/PkStrings.cpp:933
 msgid "An untrusted package was installed"
 msgstr "On pacaedje nén fiyåve a stî astalé"
 
-#: libapper/KpkStrings.cpp:935
+#: libapper/PkStrings.cpp:935
 msgid "A newer package exists"
 msgstr "On programe pis noûs egzistêye"
 
-#: libapper/KpkStrings.cpp:937
+#: libapper/PkStrings.cpp:937
 msgid "Could not find package"
 msgstr "Dji n' a savou trover l' pacaedje"
 
-#: libapper/KpkStrings.cpp:939
+#: libapper/PkStrings.cpp:939
 msgid "Configuration files were changed"
 msgstr "Les fitchîs d' apontiaedje ont stî candjîs"
 
-#: libapper/KpkStrings.cpp:941
+#: libapper/PkStrings.cpp:941
 msgid "Package is already installed"
 msgstr "Li pacaedje est ddja astalé"
 
-#: libapper/KpkStrings.cpp:943
+#: libapper/PkStrings.cpp:943
 msgid "Automatic cleanup is being ignored"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:945
+#: libapper/PkStrings.cpp:945
 msgid "Software source download failed"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:947
+#: libapper/PkStrings.cpp:947
 msgid "This software source is for developers only"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:949
+#: libapper/PkStrings.cpp:949
 msgid "Other updates have been held back"
 msgstr ""
 
-#: libapper/KpkStrings.cpp:964
+#: libapper/PkStrings.cpp:964
 msgid "Could not get a transaction id from packagekitd."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:966
+#: libapper/PkStrings.cpp:966
 msgid "Cannot connect to this transaction id."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:968
+#: libapper/PkStrings.cpp:968
 msgid "This action is unknown."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:970
+#: libapper/PkStrings.cpp:970
 msgid "The packagekitd service could not be started."
 msgstr "Dji n' a savou enondé l' siervice packagekitd."
 
-#: libapper/KpkStrings.cpp:972
+#: libapper/PkStrings.cpp:972
 msgid "The query is not valid."
 msgstr "Li cweraedje n' est nén valåbe"
 
-#: libapper/KpkStrings.cpp:974
+#: libapper/PkStrings.cpp:974
 msgid "The file is not valid."
 msgstr "Li fitchî n' est nén valåbe."
 
-#: libapper/KpkStrings.cpp:976
+#: libapper/PkStrings.cpp:976
 msgid "This function is not yet supported."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:978
+#: libapper/PkStrings.cpp:978
 msgid "Could not talk to packagekitd."
 msgstr ""
 
-#: libapper/KpkStrings.cpp:982 libapper/KpkStrings.cpp:985
+#: libapper/PkStrings.cpp:982 libapper/PkStrings.cpp:985
 msgid "An unknown error happened."
 msgstr ""
 
-#: libapper/PkTransactionDialog.cpp:97
-msgid ""
-"Allows you to hide the window whilst keeping the transaction task running."
-msgstr ""
+#. i18n: file: libapper/RepoSig.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, RepoSig)
+#: libapper/RepoSig.cpp:38 rc.cpp:221
+msgid "Software signature is required"
+msgstr "Li sinateure do programe est dmandêye"
 
-#: libapper/ApplicationsDelegate.cpp:40
-msgid "Install"
-msgstr "Astaler"
-
-#: libapper/ApplicationsDelegate.cpp:42
-msgid "Remove"
-msgstr "Oister"
-
-#: libapper/ApplicationsDelegate.cpp:44 libapper/KpkDelegate.cpp:49
-msgid "Deselect"
-msgstr ""
-
-#: libapper/PackageModel.cpp:166
-msgid "Name"
-msgstr "No"
-
-#: libapper/PackageModel.cpp:170
-msgid "Arch"
-msgstr ""
-
-#: libapper/PackageModel.cpp:172
-msgid "Size"
-msgstr ""
-
-#: libapper/PackageModel.cpp:260
-#, kde-format
-msgid ""
-"Version: %1\n"
-"Architecture: %2"
-msgstr ""
-
-#: libapper/PackageModel.cpp:301
-msgid "To be Removed"
-msgstr ""
-
-#: libapper/PackageModel.cpp:303
-msgid "To be Installed"
-msgstr ""
-
-#: libapper/KpkDelegate.cpp:45
-#, fuzzy
-#| msgid "Install"
-msgid "Do not Install"
-msgstr "Astaler"
-
-#: libapper/KpkDelegate.cpp:47
-#, fuzzy
-#| msgid "Remove"
-msgid "Do not Remove"
-msgstr "Oister"
-
-#: libapper/KpkRequirements.cpp:227
-msgid "Additional changes"
-msgstr ""
-
-#: libapper/KpkRequirements.cpp:257
-#, kde-format
-msgid "1 package to remove"
-msgid_plural "%1 packages to remove"
-msgstr[0] ""
-msgstr[1] ""
-
-#: libapper/KpkRequirements.cpp:267
-#, kde-format
-msgid "1 package to downgrade"
-msgid_plural "%1 packages to downgrade"
-msgstr[0] ""
-msgstr[1] ""
-
-#: libapper/KpkRequirements.cpp:279
-#, kde-format
-msgid "1 package to reinstall"
-msgid_plural "%1 packages to reinstall"
-msgstr[0] ""
-msgstr[1] ""
-
-#: libapper/KpkRequirements.cpp:291
-#, kde-format
-msgid "1 package to install"
-msgid_plural "%1 packages to install"
-msgstr[0] ""
-msgstr[1] ""
-
-#: libapper/KpkRequirements.cpp:303
-#, kde-format
-msgid "1 package to update"
-msgid_plural "%1 packages to update"
-msgstr[0] ""
-msgstr[1] ""
+#: libapper/SimulateModel.cpp:132
+msgid "Package"
+msgstr "Pacaedje"
 
 #: libapper/PkTransaction.cpp:154
 msgid "Failed to simulate file install"
@@ -3364,6 +3292,73 @@ msgstr ""
 #: libapper/PkTransaction.cpp:703
 msgid "Failed to install signature"
 msgstr "L' astalaedje del sinateure a fwait berwete"
+
+#: libapper/PkTransactionDialog.cpp:87
+msgid ""
+"Allows you to hide the window whilst keeping the transaction task running."
+msgstr ""
+
+#: libapper/Requirements.cpp:227
+msgid "Additional changes"
+msgstr ""
+
+#: libapper/Requirements.cpp:257
+#, kde-format
+msgid "1 package to remove"
+msgid_plural "%1 packages to remove"
+msgstr[0] ""
+msgstr[1] ""
+
+#: libapper/Requirements.cpp:267
+#, kde-format
+msgid "1 package to downgrade"
+msgid_plural "%1 packages to downgrade"
+msgstr[0] ""
+msgstr[1] ""
+
+#: libapper/Requirements.cpp:279
+#, kde-format
+msgid "1 package to reinstall"
+msgid_plural "%1 packages to reinstall"
+msgstr[0] ""
+msgstr[1] ""
+
+#: libapper/Requirements.cpp:291
+#, kde-format
+msgid "1 package to install"
+msgid_plural "%1 packages to install"
+msgstr[0] ""
+msgstr[1] ""
+
+#: libapper/Requirements.cpp:303
+#, kde-format
+msgid "1 package to update"
+msgid_plural "%1 packages to update"
+msgstr[0] ""
+msgstr[1] ""
+
+#: libapper/ApplicationsDelegate.cpp:40
+msgid "Install"
+msgstr "Astaler"
+
+#: libapper/ApplicationsDelegate.cpp:42
+msgid "Remove"
+msgstr "Oister"
+
+#: libapper/LicenseAgreement.cpp:34
+msgid "Accept Agreement"
+msgstr ""
+
+#. i18n: file: libapper/LicenseAgreement.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, LicenseAgreement)
+#: libapper/LicenseAgreement.cpp:35 rc.cpp:254
+msgid "License Agreement Required"
+msgstr "Dandjî d' en acoird di licince"
+
+#: libapper/LicenseAgreement.cpp:36
+#, kde-format
+msgid "License required for %1 by %2"
+msgstr ""
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -3741,72 +3736,75 @@ msgstr ""
 msgid "Do not show this dialog again"
 msgstr ""
 
-#. i18n: file: libapper/KpkLicenseAgreement.ui:33
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:224
-msgid "Please read the following important information before continuing:"
-msgstr ""
-
-#. i18n: file: libapper/KpkRepoSig.ui:21
+#. i18n: file: libapper/RepoSig.ui:29
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:230
+#: rc.cpp:224
 msgid "Do you trust the origin of packages?"
 msgstr ""
 
-#. i18n: file: libapper/KpkRepoSig.ui:39
+#. i18n: file: libapper/RepoSig.ui:47
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:233
+#: rc.cpp:227
 msgid "Repository name:"
 msgstr "No do depot :"
 
-#. i18n: file: libapper/KpkRepoSig.ui:62
+#. i18n: file: libapper/RepoSig.ui:70
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:236
+#: rc.cpp:230
 msgid "Signature URL:"
 msgstr "URL del sinateure :"
 
-#. i18n: file: libapper/KpkRepoSig.ui:85
+#. i18n: file: libapper/RepoSig.ui:93
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:239
+#: rc.cpp:233
 msgid "Signature user identifier:"
 msgstr "Idintifieu del sinateure di l' uzeu :"
 
-#. i18n: file: libapper/KpkRepoSig.ui:108
+#. i18n: file: libapper/RepoSig.ui:116
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:242
+#: rc.cpp:236
 msgid "Signature identifier:"
 msgstr "Idintifieu del sinateure :"
 
-#. i18n: file: libapper/KpkRequirements.ui:31
+#. i18n: file: libapper/PkTransaction.ui:38
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:239
+msgid "icon"
+msgstr ""
+
+#. i18n: file: libapper/PkTransaction.ui:64
+#. i18n: ectx: property (text), widget (QLabel, currentL)
+#: rc.cpp:242
+msgid "Downloading Packages"
+msgstr ""
+
+#. i18n: file: libapper/Requirements.ui:31
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:245
 msgid "Additional changes are required to complete the task"
 msgstr ""
 
-#. i18n: file: libapper/KpkRequirements.ui:57
+#. i18n: file: libapper/Requirements.ui:57
 #. i18n: ectx: property (windowTitle), widget (QDockWidget, dockWidget)
 #: rc.cpp:248
 msgid "Actions"
 msgstr ""
 
-#. i18n: file: libapper/KpkRequirements.ui:144
+#. i18n: file: libapper/Requirements.ui:144
 #. i18n: ectx: property (text), widget (QCheckBox, confirmCB)
 #: rc.cpp:251
 msgid ""
 "Do not show this confirmation when installing or updating additional packages"
 msgstr ""
 
-#. i18n: file: libapper/PkTransaction.ui:38
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:254
-msgid "icon"
+#. i18n: file: libapper/LicenseAgreement.ui:34
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:257
+msgid "Please read the following important information before continuing:"
 msgstr ""
 
-#. i18n: file: libapper/PkTransaction.ui:64
-#. i18n: ectx: property (text), widget (QLabel, currentL)
-#: rc.cpp:257
-msgid "Downloading Packages"
-msgstr ""
+#~ msgid "KPackageKit"
+#~ msgstr "KPackageKit"
 
 #, fuzzy
 #~| msgid "Press <i>Continue</i> if you want to install this file:"
