@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-18 04:21+0200\n"
+"POT-Creation-Date: 2011-08-19 03:59+0200\n"
 "PO-Revision-Date: 2011-07-15 10:16+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -675,7 +675,7 @@ msgstr ""
 #: Sentinel/PkInstallProvideFiles.cpp:49
 #, fuzzy
 #| msgid "No files were found."
-msgid "No files where provided"
+msgid "No files were provided"
 msgstr "Dji n' a trové nou fitchî."
 
 #: Sentinel/PkInstallProvideFiles.cpp:52
@@ -710,7 +710,7 @@ msgstr[1] "On programe vout astaler des fontes"
 msgid "Failed to start search file transaction"
 msgstr "L' enondaedje del tranzaccion di cweraedje do fitchî a fwait berwete"
 
-#: Sentinel/PkInstallProvideFiles.cpp:101 libapper/PkTransaction.cpp:281
+#: Sentinel/PkInstallProvideFiles.cpp:101 libapper/PkTransaction.cpp:263
 msgid "Failed to install file"
 msgid_plural "Failed to install files"
 msgstr[0] "L' astalaedje do fitchî a fwait berwete"
@@ -1067,53 +1067,47 @@ msgstr "L' uzeu a rnoncî al tranzaccion"
 msgid "An unknown error happened"
 msgstr "Åk n' a nén stî, aroke nén cnoxhowe"
 
-#: Sentinel/SessionTask.cpp:63 libapper/Requirements.cpp:229
+#: Sentinel/SessionTask.cpp:63 libapper/Requirements.cpp:43
 msgid "Continue"
 msgstr "Continouwer"
 
-#: Sentinel/SessionTask.cpp:334
+#: Sentinel/SessionTask.cpp:343
 #, fuzzy
 #| msgid "The package is not installed"
 msgid "There are no packages to Install or Remove"
 msgstr "Li pacaedje n' est nén astalé"
 
-#: Sentinel/SessionTask.cpp:335
+#: Sentinel/SessionTask.cpp:344
 msgid "This action should not happen"
 msgstr ""
 
-#: Sentinel/SessionTask.cpp:364
+#: Sentinel/SessionTask.cpp:373
 #, fuzzy
 #| msgid "Could not find %1"
 msgid "Could not find"
 msgstr "Dji n' a savou trover %1"
 
-#: Sentinel/SessionTask.cpp:365 Sentinel/SessionTask.cpp:374
+#: Sentinel/SessionTask.cpp:374 Sentinel/SessionTask.cpp:383
 msgid "No packages were found that meet the request"
 msgstr ""
 
-#: Sentinel/SessionTask.cpp:373
+#: Sentinel/SessionTask.cpp:382
 #, fuzzy
 #| msgid "Failed to find font"
 msgid "Failed to find"
 msgstr "Li cweraedje del fonte a fwait berwete"
 
-#: Sentinel/SessionTask.cpp:391
-#, fuzzy
-#| msgid "Failed to start resolve transaction"
-msgid "Failed to commit transaction"
-msgstr "L' enondaedje del tranzaccion di rezoudaedje A fwait berwete"
-
-#: Sentinel/SessionTask.cpp:393
+#: Sentinel/SessionTask.cpp:404
 msgid "Transaction did not finish with success"
 msgstr "Li tranzaccion n' s' a nén fini comifåt"
 
-#: Sentinel/SessionTask.cpp:399
+#: Sentinel/SessionTask.cpp:410
 #, fuzzy
 #| msgid "Obsoleted"
 msgid "Task completed"
 msgstr "Trop vî"
 
-#: Sentinel/SessionTask.cpp:399
+#: Sentinel/SessionTask.cpp:410
 #, fuzzy
 #| msgid "Failed to install file"
 #| msgid_plural "Failed to install files"
@@ -2286,7 +2280,7 @@ msgstr ""
 msgid "No space is left on the disk"
 msgstr ""
 
-#: libapper/PkStrings.cpp:477 libapper/PkTransaction.cpp:602
+#: libapper/PkStrings.cpp:477 libapper/PkTransaction.cpp:577
 msgid "A media change is required"
 msgstr ""
 
@@ -3213,78 +3207,96 @@ msgstr ""
 msgid "An unknown error happened."
 msgstr ""
 
-#. i18n: file: libapper/RepoSig.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, RepoSig)
-#: libapper/RepoSig.cpp:38 rc.cpp:221
-msgid "Software signature is required"
-msgstr "Li sinateure do programe est dmandêye"
+#: libapper/PkTransactionDialog.cpp:88
+msgid ""
+"Allows you to hide the window whilst keeping the transaction task running."
+msgstr ""
 
-#: libapper/ApplicationLauncher.cpp:77
+#: libapper/SimulateModel.cpp:139
+msgid "Package"
+msgstr "Pacaedje"
+
+#: libapper/ApplicationLauncher.cpp:92
 msgid "The following application was just installed. Click on it to launch:"
 msgid_plural ""
 "The following applications were just installed. Click on them to launch:"
 msgstr[0] ""
 msgstr[1] ""
 
-#: libapper/PkTransaction.cpp:136
+#: libapper/LicenseAgreement.cpp:36
+msgid "Accept Agreement"
+msgstr ""
+
+#. i18n: file: libapper/LicenseAgreement.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, LicenseAgreement)
+#: libapper/LicenseAgreement.cpp:37 rc.cpp:251
+msgid "License Agreement Required"
+msgstr "Dandjî d' en acoird di licince"
+
+#: libapper/LicenseAgreement.cpp:38
+#, kde-format
+msgid "License required for %1 by %2"
+msgstr ""
+
+#: libapper/PkTransaction.cpp:122
 msgid "Failed to simulate file install"
 msgstr ""
 
-#: libapper/PkTransaction.cpp:142
+#: libapper/PkTransaction.cpp:129
 msgid "Current backend does not support installing files."
 msgstr ""
 
-#: libapper/PkTransaction.cpp:142 libapper/PkTransaction.cpp:167
-#: libapper/PkTransaction.cpp:194 libapper/PkTransaction.cpp:217
+#: libapper/PkTransaction.cpp:129 libapper/PkTransaction.cpp:153
+#: libapper/PkTransaction.cpp:179 libapper/PkTransaction.cpp:202
 msgid "Error"
 msgstr ""
 
-#: libapper/PkTransaction.cpp:161
+#: libapper/PkTransaction.cpp:146
 msgid "Failed to simulate package install"
 msgstr ""
 
-#: libapper/PkTransaction.cpp:167
+#: libapper/PkTransaction.cpp:153
 msgid "Current backend does not support installing packages."
 msgstr ""
 
-#: libapper/PkTransaction.cpp:187
+#: libapper/PkTransaction.cpp:171
 msgid "Failed to simulate package removal"
 msgstr ""
 
-#: libapper/PkTransaction.cpp:194
+#: libapper/PkTransaction.cpp:179
 msgid "The current backend does not support removing packages."
 msgstr ""
 
-#: libapper/PkTransaction.cpp:211
+#: libapper/PkTransaction.cpp:195
 msgid "Failed to simulate package update"
 msgstr ""
 
-#: libapper/PkTransaction.cpp:217
+#: libapper/PkTransaction.cpp:202
 msgid "The current backend does not support updating packages."
 msgstr ""
 
-#: libapper/PkTransaction.cpp:229
+#: libapper/PkTransaction.cpp:213
 msgid "Failed to refresh package cache"
 msgstr ""
 
-#: libapper/PkTransaction.cpp:268
+#: libapper/PkTransaction.cpp:251
 msgid "Failed to install package"
 msgstr "L' astalaedje do pacaedje a fwait berwete"
 
-#: libapper/PkTransaction.cpp:296
+#: libapper/PkTransaction.cpp:276
 msgid "Failed to remove package"
 msgstr "Li oistaedje des pacaedjes a fwait berwete"
 
-#: libapper/PkTransaction.cpp:309
+#: libapper/PkTransaction.cpp:288
 msgid "Failed to update package"
 msgstr ""
 
-#: libapper/PkTransaction.cpp:475
+#: libapper/PkTransaction.cpp:453
 #, kde-format
 msgid "Downloading packages at %1/s"
 msgstr ""
 
-#: libapper/PkTransaction.cpp:524
+#: libapper/PkTransaction.cpp:501
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
 "as it is impossible to verify if the software came from a trusted source.\n"
@@ -3292,65 +3304,13 @@ msgid ""
 "Are you sure you want to proceed with the installation?"
 msgstr ""
 
-#: libapper/PkTransaction.cpp:527
+#: libapper/PkTransaction.cpp:504
 msgid "Installing unsigned software"
 msgstr ""
 
-#: libapper/PkTransaction.cpp:586
-msgid "Failed to accept EULA"
-msgstr ""
-
-#: libapper/PkTransaction.cpp:635
+#: libapper/PkTransaction.cpp:562 libapper/PkTransaction.cpp:615
 msgid "Failed to install signature"
 msgstr "L' astalaedje del sinateure a fwait berwete"
-
-#: libapper/PkTransactionDialog.cpp:88
-msgid ""
-"Allows you to hide the window whilst keeping the transaction task running."
-msgstr ""
-
-#: libapper/Requirements.cpp:227
-msgid "Additional changes"
-msgstr ""
-
-#: libapper/Requirements.cpp:257
-#, kde-format
-msgid "1 package to remove"
-msgid_plural "%1 packages to remove"
-msgstr[0] ""
-msgstr[1] ""
-
-#: libapper/Requirements.cpp:267
-#, kde-format
-msgid "1 package to downgrade"
-msgid_plural "%1 packages to downgrade"
-msgstr[0] ""
-msgstr[1] ""
-
-#: libapper/Requirements.cpp:279
-#, kde-format
-msgid "1 package to reinstall"
-msgid_plural "%1 packages to reinstall"
-msgstr[0] ""
-msgstr[1] ""
-
-#: libapper/Requirements.cpp:291
-#, kde-format
-msgid "1 package to install"
-msgid_plural "%1 packages to install"
-msgstr[0] ""
-msgstr[1] ""
-
-#: libapper/Requirements.cpp:303
-#, kde-format
-msgid "1 package to update"
-msgid_plural "%1 packages to update"
-msgstr[0] ""
-msgstr[1] ""
-
-#: libapper/SimulateModel.cpp:139
-msgid "Package"
-msgstr "Pacaedje"
 
 #: libapper/ApplicationsDelegate.cpp:40
 msgid "Install"
@@ -3360,20 +3320,50 @@ msgstr "Astaler"
 msgid "Remove"
 msgstr "Oister"
 
-#: libapper/LicenseAgreement.cpp:34
-msgid "Accept Agreement"
+#. i18n: file: libapper/RepoSig.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, RepoSig)
+#: libapper/RepoSig.cpp:40 rc.cpp:224
+msgid "Software signature is required"
+msgstr "Li sinateure do programe est dmandêye"
+
+#: libapper/Requirements.cpp:41
+msgid "Additional changes"
 msgstr ""
 
-#. i18n: file: libapper/LicenseAgreement.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, LicenseAgreement)
-#: libapper/LicenseAgreement.cpp:35 rc.cpp:254
-msgid "License Agreement Required"
-msgstr "Dandjî d' en acoird di licince"
-
-#: libapper/LicenseAgreement.cpp:36
+#: libapper/Requirements.cpp:62
 #, kde-format
-msgid "License required for %1 by %2"
-msgstr ""
+msgid "1 package to remove"
+msgid_plural "%1 packages to remove"
+msgstr[0] ""
+msgstr[1] ""
+
+#: libapper/Requirements.cpp:77
+#, kde-format
+msgid "1 package to downgrade"
+msgid_plural "%1 packages to downgrade"
+msgstr[0] ""
+msgstr[1] ""
+
+#: libapper/Requirements.cpp:92
+#, kde-format
+msgid "1 package to reinstall"
+msgid_plural "%1 packages to reinstall"
+msgstr[0] ""
+msgstr[1] ""
+
+#: libapper/Requirements.cpp:105
+#, kde-format
+msgid "1 package to install"
+msgid_plural "%1 packages to install"
+msgstr[0] ""
+msgstr[1] ""
+
+#: libapper/Requirements.cpp:118
+#, kde-format
+msgid "1 package to update"
+msgid_plural "%1 packages to update"
+msgstr[0] ""
+msgstr[1] ""
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -3745,78 +3735,77 @@ msgstr ""
 msgid "TextLabel"
 msgstr ""
 
-#. i18n: file: libapper/ApplicationLauncher.ui:40
-#. i18n: ectx: property (text), widget (QCheckBox, showCB)
-#: rc.cpp:218
-msgid "Do not show this dialog again"
-msgstr ""
-
-#. i18n: file: libapper/RepoSig.ui:29
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:224
-msgid "Do you trust the origin of packages?"
-msgstr ""
-
-#. i18n: file: libapper/RepoSig.ui:47
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:227
-msgid "Repository name:"
-msgstr "No do depot :"
-
-#. i18n: file: libapper/RepoSig.ui:70
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:230
-msgid "Signature URL:"
-msgstr "URL del sinateure :"
-
-#. i18n: file: libapper/RepoSig.ui:93
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:233
-msgid "Signature user identifier:"
-msgstr "Idintifieu del sinateure di l' uzeu :"
-
-#. i18n: file: libapper/RepoSig.ui:116
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:236
-msgid "Signature identifier:"
-msgstr "Idintifieu del sinateure :"
-
 #. i18n: file: libapper/PkTransaction.ui:38
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:239
+#: rc.cpp:218
 msgid "icon"
 msgstr ""
 
 #. i18n: file: libapper/PkTransaction.ui:64
 #. i18n: ectx: property (text), widget (QLabel, currentL)
-#: rc.cpp:242
+#: rc.cpp:221
 msgid "Downloading Packages"
 msgstr ""
 
+#. i18n: file: libapper/RepoSig.ui:23
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:227
+msgid "Do you trust the origin of packages?"
+msgstr ""
+
+#. i18n: file: libapper/RepoSig.ui:47
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:230
+msgid "Repository name:"
+msgstr "No do depot :"
+
+#. i18n: file: libapper/RepoSig.ui:73
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:233
+msgid "Signature URL:"
+msgstr "URL del sinateure :"
+
+#. i18n: file: libapper/RepoSig.ui:99
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:236
+msgid "Signature user identifier:"
+msgstr "Idintifieu del sinateure di l' uzeu :"
+
+#. i18n: file: libapper/RepoSig.ui:125
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:239
+msgid "Signature identifier:"
+msgstr "Idintifieu del sinateure :"
+
 #. i18n: file: libapper/Requirements.ui:31
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:245
+#: rc.cpp:242
 msgid "Additional changes are required to complete the task"
 msgstr ""
 
-#. i18n: file: libapper/Requirements.ui:57
-#. i18n: ectx: property (windowTitle), widget (QDockWidget, dockWidget)
-#: rc.cpp:248
-msgid "Actions"
-msgstr ""
-
-#. i18n: file: libapper/Requirements.ui:144
+#. i18n: file: libapper/Requirements.ui:81
 #. i18n: ectx: property (text), widget (QCheckBox, confirmCB)
-#: rc.cpp:251
+#: rc.cpp:245
 msgid ""
 "Do not show this confirmation when installing or updating additional packages"
 msgstr ""
 
-#. i18n: file: libapper/LicenseAgreement.ui:34
+#. i18n: file: libapper/ApplicationLauncher.ui:63
+#. i18n: ectx: property (text), widget (QCheckBox, showCB)
+#: rc.cpp:248
+msgid "Do not show this dialog again"
+msgstr ""
+
+#. i18n: file: libapper/LicenseAgreement.ui:40
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:257
+#: rc.cpp:254
 msgid "Please read the following important information before continuing:"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Failed to start resolve transaction"
+#~ msgid "Failed to commit transaction"
+#~ msgstr "L' enondaedje del tranzaccion di rezoudaedje A fwait berwete"
 
 #~ msgid "(C) 2008-2010 Daniel Nicoletti"
 #~ msgstr "© 2008-2010 Daniel Nicoletti"
