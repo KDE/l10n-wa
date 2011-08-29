@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-13 03:45+0200\n"
+"POT-Creation-Date: 2011-08-29 04:01+0200\n"
 "PO-Revision-Date: 2011-01-17 21:09+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -42,6 +42,18 @@ msgstr "Usteye en alaedje : %1"
 #: flake/KShapePaste.cpp:100
 msgid "Paste Shapes"
 msgstr "Aclaper cognes"
+
+#: flake/commands/KShapeGroupCommand.cpp:107
+#, fuzzy
+#| msgid "Group shapes"
+msgid "Group Shapes"
+msgstr "Grouper cognes"
+
+#: flake/commands/KShapeGroupCommand.cpp:109
+#, fuzzy
+#| msgid "Add shapes to group"
+msgid "Add Shapes to Group"
+msgstr "Radjouter des fômes å groupe"
 
 #: flake/commands/KPathSegmentBreakCommand.cpp:40
 #, fuzzy
@@ -86,18 +98,6 @@ msgstr "Defini boirdeure"
 #| msgid "Distribute shapes"
 msgid "Distribute Shapes"
 msgstr "Cossemer cognes"
-
-#: flake/commands/KShapeGroupCommand.cpp:107
-#, fuzzy
-#| msgid "Group shapes"
-msgid "Group Shapes"
-msgstr "Grouper cognes"
-
-#: flake/commands/KShapeGroupCommand.cpp:109
-#, fuzzy
-#| msgid "Add shapes to group"
-msgid "Add Shapes to Group"
-msgstr "Radjouter des fômes å groupe"
 
 #: flake/commands/KShapeMoveCommand.cpp:42
 #, fuzzy
@@ -275,10 +275,6 @@ msgstr "Usteye d' aspougnaedje di tchmin"
 msgid "Zoom"
 msgstr "Zoumaedje"
 
-#: flake/tools/KCreatePathToolFactory.cpp:33
-msgid "Create Path"
-msgstr "Ahiver on tchmin"
-
 #: flake/tools/KCreatePathTool.cpp:370 flake/tools/KPathTool.cpp:181
 msgid "Snapping"
 msgstr "Assaetchaedje magnetike"
@@ -290,6 +286,10 @@ msgstr "Delta di l' inglêye d' assaetchaedje magnetike"
 #: flake/tools/KCreatePathTool.cpp:380
 msgid "Angle Constraints"
 msgstr "Stronnas d' inglêye"
+
+#: flake/tools/KCreatePathToolFactory.cpp:33
+msgid "Create Path"
+msgstr "Ahiver on tchmin"
 
 #: flake/tools/KPathSegmentChangeStrategy.cpp:140
 msgid "Change Segment"
@@ -511,16 +511,6 @@ msgstr "Sicripe"
 msgid "Collection"
 msgstr "Ramexhnaedje"
 
-#: kopageapp/KoPAPageThumbnailModel.cpp:67 kopageapp/KoPADocumentModel.cpp:158
-#, kde-format
-msgid "Slide %1"
-msgstr "Diya %1"
-
-#: kopageapp/KoPAPageThumbnailModel.cpp:69
-#, kde-format
-msgid "Page %1"
-msgstr "Pådje %1"
-
 #: kopageapp/KoPADocumentStructureDocker.cpp:82 main/KoMainWindow.cpp:1710
 msgid "Document"
 msgstr "Documint"
@@ -623,30 +613,15 @@ msgstr "Copyî"
 msgid "Paste"
 msgstr "Aclaper"
 
-#: kopageapp/KoPADocumentModel.cpp:160
+#: kopageapp/KoPAPageThumbnailModel.cpp:67 kopageapp/KoPADocumentModel.cpp:158
 #, kde-format
-msgid "Page  %1"
-msgstr "Pådje  %1"
+msgid "Slide %1"
+msgstr "Diya %1"
 
-#: kopageapp/KoPADocumentModel.cpp:167
-msgid "Group"
-msgstr "Groupe"
-
-#: kopageapp/KoPADocumentModel.cpp:170
-msgid "Shape"
-msgstr "Fôme"
-
-#: kopageapp/KoPADocumentModel.cpp:283
-msgid "Visible"
-msgstr "Veyåve"
-
-#: kopageapp/KoPADocumentModel.cpp:284
-msgid "Locked"
-msgstr "Eclawé"
-
-#: kopageapp/KoPADocumentModel.cpp:497 kopageapp/KoPADocumentModel.cpp:518
-msgid "Reparent shapes"
-msgstr "Ramete fômes"
+#: kopageapp/KoPAPageThumbnailModel.cpp:69
+#, kde-format
+msgid "Page %1"
+msgstr "Pådje %1"
 
 #: kopageapp/commands/KoPAChangeMasterPageCommand.cpp:35
 msgid "Change master slide"
@@ -882,6 +857,31 @@ msgid_plural "Paste Pages"
 msgstr[0] "Aclaper pådje"
 msgstr[1] "Aclaper pådjes"
 
+#: kopageapp/KoPADocumentModel.cpp:160
+#, kde-format
+msgid "Page  %1"
+msgstr "Pådje  %1"
+
+#: kopageapp/KoPADocumentModel.cpp:167
+msgid "Group"
+msgstr "Groupe"
+
+#: kopageapp/KoPADocumentModel.cpp:170
+msgid "Shape"
+msgstr "Fôme"
+
+#: kopageapp/KoPADocumentModel.cpp:283
+msgid "Visible"
+msgstr "Veyåve"
+
+#: kopageapp/KoPADocumentModel.cpp:284
+msgid "Locked"
+msgstr "Eclawé"
+
+#: kopageapp/KoPADocumentModel.cpp:497 kopageapp/KoPADocumentModel.cpp:518
+msgid "Reparent shapes"
+msgstr "Ramete fômes"
+
 #: kotext/KFindStrategy.cpp:63
 #, kde-format
 msgid "Found 1 match"
@@ -932,21 +932,6 @@ msgstr "Sititchî roye"
 msgid "Insert Row Above"
 msgstr "Sititchî roye"
 
-#: kotext/KoText.cpp:45
-msgctxt "Underline Style"
-msgid "None"
-msgstr "Nouk"
-
-#: kotext/KoText.cpp:46
-msgctxt "Underline Style"
-msgid "Single"
-msgstr "Simpe"
-
-#: kotext/KoText.cpp:47
-msgctxt "Underline Style"
-msgid "Double"
-msgstr "Dobe"
-
 #: kotext/KReplaceStrategy.cpp:58
 msgid ""
 "Found no match\n"
@@ -969,11 +954,20 @@ msgstr[1] "%1 replaeçmints di fwaits"
 msgid "Replace %1 with %2?"
 msgstr "Replaecî %1 avou %2 ?"
 
-#. i18n: file: widgets/KoCsvImportDialog.ui:147
-#. i18n: ectx: attribute (title), widget (QWidget, m_formatTab)
-#: kotext/KoTextEditor_p.h:93 kotext/KoTextEditor_p.h:130 rc.cpp:440
-msgid "Format"
-msgstr "Cogne"
+#: kotext/KOdfText.cpp:45
+msgctxt "Underline Style"
+msgid "None"
+msgstr "Nouk"
+
+#: kotext/KOdfText.cpp:46
+msgctxt "Underline Style"
+msgid "Single"
+msgstr "Simpe"
+
+#: kotext/KOdfText.cpp:47
+msgctxt "Underline Style"
+msgid "Double"
+msgstr "Dobe"
 
 #: kotext/InsertTextReferenceAction.cpp:36
 #: kotext/InsertTextReferenceAction.cpp:64
@@ -994,6 +988,12 @@ msgstr "Tchoezixhoz l' indecse ki vs voloz referincer"
 #, kde-format
 msgid "%1 Options"
 msgstr "Tchuzes di %1"
+
+#. i18n: file: widgets/KoCsvImportDialog.ui:147
+#. i18n: ectx: attribute (title), widget (QWidget, m_formatTab)
+#: kotext/KoTextEditor_p.h:93 kotext/KoTextEditor_p.h:130 rc.cpp:440
+msgid "Format"
+msgstr "Cogne"
 
 #: kotext/KoTextEditor.cpp:111 kotext/KoTextEditor.cpp:167
 #: kotext/KoTextEditor.cpp:325 widgets/KoCsvImportDialog.cpp:216
@@ -2887,6 +2887,40 @@ msgstr "Palete"
 msgid "Add/Remove Colors"
 msgstr "Radjouter/oister coleurs"
 
+#: widgets/KoPageLayoutWidget.cpp:178
+msgid "Left Edge:"
+msgstr "Boird di hintche:"
+
+#: widgets/KoPageLayoutWidget.cpp:179
+msgid "Right Edge:"
+msgstr "Boird di droete:"
+
+#: widgets/KoPageLayoutWidget.cpp:182
+msgid "Binding Edge:"
+msgstr "Boird di l' assoçnaedje:"
+
+#: widgets/KoPageLayoutWidget.cpp:183
+msgid "Page Edge:"
+msgstr "Boird del pådje"
+
+#: widgets/KoPageLayoutWidget.cpp:279
+msgid "Facing Pages:"
+msgstr "Pådjes pa deus:"
+
+#. i18n: file: widgets/KoPageLayoutWidget.ui:143
+#. i18n: ectx: property (text), widget (QRadioButton, facingPages)
+#: widgets/KoPageLayoutWidget.cpp:280 rc.cpp:395
+msgid "Facing pages"
+msgstr "Pådjes pa deus:"
+
+#: widgets/KoPageLayoutWidget.cpp:282
+msgid "Page Layout:"
+msgstr "Adjinçmint del pådje:"
+
+#: widgets/KoPageLayoutWidget.cpp:283
+msgid "Page spread"
+msgstr "Dispårdaedje del pådje"
+
 #: widgets/KoPageLayoutDialog.cpp:47
 msgid "Page Layout"
 msgstr "Adjinçmint del pådje"
@@ -2929,40 +2963,6 @@ msgstr "Zoumer sol tchoes"
 #: widgets/KoZoomAction.cpp:279
 msgid "Zoom to All"
 msgstr "Zoumer so ttafwait"
-
-#: widgets/KoPageLayoutWidget.cpp:178
-msgid "Left Edge:"
-msgstr "Boird di hintche:"
-
-#: widgets/KoPageLayoutWidget.cpp:179
-msgid "Right Edge:"
-msgstr "Boird di droete:"
-
-#: widgets/KoPageLayoutWidget.cpp:182
-msgid "Binding Edge:"
-msgstr "Boird di l' assoçnaedje:"
-
-#: widgets/KoPageLayoutWidget.cpp:183
-msgid "Page Edge:"
-msgstr "Boird del pådje"
-
-#: widgets/KoPageLayoutWidget.cpp:279
-msgid "Facing Pages:"
-msgstr "Pådjes pa deus:"
-
-#. i18n: file: widgets/KoPageLayoutWidget.ui:143
-#. i18n: ectx: property (text), widget (QRadioButton, facingPages)
-#: widgets/KoPageLayoutWidget.cpp:280 rc.cpp:395
-msgid "Facing pages"
-msgstr "Pådjes pa deus:"
-
-#: widgets/KoPageLayoutWidget.cpp:282
-msgid "Page Layout:"
-msgstr "Adjinçmint del pådje:"
-
-#: widgets/KoPageLayoutWidget.cpp:283
-msgid "Page spread"
-msgstr "Dispårdaedje del pådje"
 
 #: widgets/KoZoomMode.cpp:26
 msgid "Fit Page Width"
