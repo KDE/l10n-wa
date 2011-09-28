@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: marble_qt\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-25 04:05+0200\n"
+"POT-Creation-Date: 2011-09-28 03:51+0200\n"
 "PO-Revision-Date: 2011-01-14 10:24+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -286,16 +286,16 @@ msgstr ""
 msgid "A wizard guides you through the creation of your own map theme."
 msgstr ""
 
-#: src/QtMainWindow.cpp:303 src/lib/MarbleControlBox.cpp:169
+#: src/QtMainWindow.cpp:303 src/lib/MarbleControlBox.cpp:175
 msgid "Map View"
 msgstr "Vuwe del mape"
 
-#: src/QtMainWindow.cpp:306 src/lib/MarbleControlBox.cpp:163
+#: src/QtMainWindow.cpp:306 src/lib/MarbleControlBox.cpp:169
 msgid "Legend"
 msgstr "Ledjinde"
 
 #: src/QtMainWindow.cpp:310 src/plugins/render/routing/RoutingPlugin.cpp:461
-#: src/lib/MarbleControlBox.cpp:119 src/lib/MarbleControlBox.cpp:195
+#: src/lib/MarbleControlBox.cpp:119 src/lib/MarbleControlBox.cpp:201
 #: src/lib/QtMarbleConfigDialog.cpp:147
 #, fuzzy
 #| msgid "Mountain"
@@ -658,7 +658,7 @@ msgid "Configuration Plugin"
 msgstr "Tchôke-divins Stoeles"
 
 #: src/plugins/render/fileview/FileViewFloatItem.cpp:56
-#: src/lib/MarbleControlBox.cpp:175
+#: src/lib/MarbleControlBox.cpp:181
 msgid "File View"
 msgstr "Vuwe do fitchî"
 
@@ -826,7 +826,7 @@ msgid "&Ratio Scale"
 msgstr ""
 
 #: src/plugins/render/navigation/NavigationFloatItem.cpp:72
-#: src/lib/MarbleControlBox.cpp:157 src/lib/QtMarbleConfigDialog.cpp:129
+#: src/lib/MarbleControlBox.cpp:163 src/lib/QtMarbleConfigDialog.cpp:129
 msgid "Navigation"
 msgstr "Naiviaedje"
 
@@ -2432,7 +2432,7 @@ msgid ""
 "quality of the installed Flash version."
 msgstr ""
 
-#: src/lib/MarbleControlBox.cpp:181
+#: src/lib/MarbleControlBox.cpp:187
 msgid "Current Location"
 msgstr "Eplaeçmint do moumint"
 
@@ -3612,19 +3612,76 @@ msgstr "&Aidance"
 msgid "Choose Placemark"
 msgstr "Tchôke-divins des Markes di plaeces"
 
-#: src/lib/routing/RoutingWidget.cpp:118
+#: src/lib/routing/RoutingLayer.cpp:186
+msgid "&Remove this destination"
+msgstr ""
+
+#: src/lib/routing/RoutingLayer.cpp:189
+#, fuzzy
+#| msgid "&Export Map..."
+msgid "&Export route..."
+msgstr "&Ebaguer mape..."
+
+#: src/lib/routing/RoutingLayer.cpp:821
+#, fuzzy
+#| msgid "Export Map"
+msgid "Export Route"
+msgstr "Ebaguer mape"
+
+#: src/lib/routing/RoutingLayer.cpp:823
+#, fuzzy
+#| msgid "GpxFile (*.gpx)"
+msgid "GPX and KML files (*.gpx *.kml)"
+msgstr "FitchîGpx (*.gpx)"
+
+#: src/lib/routing/RoutingProfilesWidget.cpp:55
+msgid "New Profile"
+msgstr ""
+
+#: src/lib/routing/RoutingManager.cpp:334
+msgid "Caution: Driving instructions may be incomplete or wrong."
+msgstr ""
+
+#: src/lib/routing/RoutingManager.cpp:335
+msgid ""
+"Road construction, weather and other unforeseen variables can result in the "
+"suggested route not to be the most expedient or safest route to your "
+"destination."
+msgstr ""
+
+#: src/lib/routing/RoutingManager.cpp:336
+msgid "Please use common sense while navigating."
+msgstr ""
+
+#: src/lib/routing/RoutingManager.cpp:337
+msgid "The Marble development team wishes you a pleasant and safe journey."
+msgstr ""
+
+#: src/lib/routing/RoutingManager.cpp:338
+#, fuzzy
+#| msgid "Mountain"
+msgid "Guidance Mode - Marble"
+msgstr "Montinne"
+
+#: src/lib/routing/RoutingManager.cpp:339
+#, fuzzy
+#| msgid "Show Navigation Panel"
+msgid "Show again"
+msgstr "Mostrer l' panea di naiviaedje"
+
+#: src/lib/routing/RoutingWidget.cpp:124
 msgid "Get Directions"
 msgstr ""
 
-#: src/lib/routing/RoutingWidget.cpp:119
+#: src/lib/routing/RoutingWidget.cpp:125
 msgid "Retrieve routing instructions for the selected destinations."
 msgstr ""
 
-#: src/lib/routing/RoutingWidget.cpp:129
+#: src/lib/routing/RoutingWidget.cpp:135
 msgid "Search"
 msgstr ""
 
-#: src/lib/routing/RoutingWidget.cpp:130
+#: src/lib/routing/RoutingWidget.cpp:136
 msgid "Find places matching the search term"
 msgstr ""
 
@@ -3654,63 +3711,6 @@ msgstr "Ebaguer mape"
 
 #: src/lib/routing/RoutingWidget.cpp:612
 msgid "No route found"
-msgstr ""
-
-#: src/lib/routing/RoutingManager.cpp:339
-msgid "Caution: Driving instructions may be incomplete or wrong."
-msgstr ""
-
-#: src/lib/routing/RoutingManager.cpp:340
-msgid ""
-"Road construction, weather and other unforeseen variables can result in the "
-"suggested route not to be the most expedient or safest route to your "
-"destination."
-msgstr ""
-
-#: src/lib/routing/RoutingManager.cpp:341
-msgid "Please use common sense while navigating."
-msgstr ""
-
-#: src/lib/routing/RoutingManager.cpp:342
-msgid "The Marble development team wishes you a pleasant and safe journey."
-msgstr ""
-
-#: src/lib/routing/RoutingManager.cpp:343
-#, fuzzy
-#| msgid "Mountain"
-msgid "Guidance Mode - Marble"
-msgstr "Montinne"
-
-#: src/lib/routing/RoutingManager.cpp:344
-#, fuzzy
-#| msgid "Show Navigation Panel"
-msgid "Show again"
-msgstr "Mostrer l' panea di naiviaedje"
-
-#: src/lib/routing/RoutingLayer.cpp:186
-msgid "&Remove this destination"
-msgstr ""
-
-#: src/lib/routing/RoutingLayer.cpp:189
-#, fuzzy
-#| msgid "&Export Map..."
-msgid "&Export route..."
-msgstr "&Ebaguer mape..."
-
-#: src/lib/routing/RoutingLayer.cpp:821
-#, fuzzy
-#| msgid "Export Map"
-msgid "Export Route"
-msgstr "Ebaguer mape"
-
-#: src/lib/routing/RoutingLayer.cpp:823
-#, fuzzy
-#| msgid "GpxFile (*.gpx)"
-msgid "GPX and KML files (*.gpx *.kml)"
-msgstr "FitchîGpx (*.gpx)"
-
-#: src/lib/routing/RoutingProfilesWidget.cpp:55
-msgid "New Profile"
 msgstr ""
 
 #: src/lib/global.h:252
