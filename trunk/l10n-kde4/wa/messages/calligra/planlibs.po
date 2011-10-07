@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-10-05 02:27+0200\n"
+"POT-Creation-Date: 2011-10-07 02:25+0200\n"
 "PO-Revision-Date: 2009-08-20 10:18+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -1426,54 +1426,6 @@ msgstr "Candjî loyaedje"
 msgid "Parent"
 msgstr "Pordjet"
 
-#: models/kptnodechartmodel.cpp:157
-#, fuzzy
-#| msgctxt "Budgeted Cost of Work Scheduled"
-#| msgid "BCWS (Cost)"
-msgctxt "Cost based Budgeted Cost of Work Scheduled"
-msgid "BCWS Cost"
-msgstr "BCWS (costindje)"
-
-#: models/kptnodechartmodel.cpp:158
-#, fuzzy
-#| msgctxt "Budgeted Cost of Work Performed"
-#| msgid "BCWP (Cost)"
-msgctxt "Cost based Budgeted Cost of Work Performed"
-msgid "BCWP Cost"
-msgstr "BCWP (costindje)"
-
-#: models/kptnodechartmodel.cpp:159
-#, fuzzy
-#| msgctxt "Actual Cost of Work Performed"
-#| msgid "ACWP (Cost)"
-msgctxt "Cost based Actual Cost of Work Performed"
-msgid "ACWP Cost"
-msgstr "ACWP (costindje)"
-
-#: models/kptnodechartmodel.cpp:160
-#, fuzzy
-msgctxt "Effort based Budgeted Cost of Work Scheduled"
-msgid "BCWS Effort"
-msgstr "Efoirt"
-
-#: models/kptnodechartmodel.cpp:161
-#, fuzzy
-msgctxt "Effort based Budgeted Cost of Work Performed"
-msgid "BCWP Effort"
-msgstr "Efoirt"
-
-#: models/kptnodechartmodel.cpp:162
-#, fuzzy
-msgctxt "Effort based Actual Cost of Work Performed"
-msgid "ACWP Effort"
-msgstr "Efoirt"
-
-#: models/kptnodechartmodel.cpp:166
-msgctxt ""
-"Date format used as chart axis labels. Must follow QDate specification."
-msgid "MM.dd"
-msgstr ""
-
 #: models/kptrelationmodel.cpp:147
 msgid "Child"
 msgstr "Efant"
@@ -1526,67 +1478,6 @@ msgstr "Controle do pacaedje d' ovraedje"
 msgid "Task reported %1% completed"
 msgstr ""
 
-#: models/kptaccountsmodel.cpp:87
-#, fuzzy, kde-format
-msgctxt "1=account name"
-msgid "%1 (Default account)"
-msgstr "Difacer conte"
-
-#. i18n: file: ui/kptresourceassignmentview.ui:27
-#. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
-#: models/kptaccountsmodel.cpp:127 models/kptaccountsmodel.cpp:1029
-#: models/kptresourceallocationmodel.cpp:332
-#: models/kptresourceappointmentsmodel.cpp:911
-#: models/kptresourceappointmentsmodel.cpp:926
-#: models/kptresourceappointmentsmodel.cpp:1525
-#: models/kptschedulemodel.cpp:865 models/kptschedulemodel.cpp:1121
-#: models/kptresourcemodel.cpp:437 rc.cpp:316
-msgid "Name"
-msgstr "No"
-
-#: models/kptaccountsmodel.cpp:128 models/kptaccountsmodel.cpp:1032
-msgid "Description"
-msgstr "Discrijhaedje"
-
-#: models/kptaccountsmodel.cpp:337
-#, fuzzy
-msgctxt "(qtundo-format)"
-msgid "De-select as default account"
-msgstr "Disfacer les contes di tchoezis"
-
-#: models/kptaccountsmodel.cpp:343
-#, fuzzy
-msgctxt "(qtundo-format)"
-msgid "Select as default account"
-msgstr "Disfacer les contes di tchoezis"
-
-#: models/kptaccountsmodel.cpp:432
-#, fuzzy
-msgctxt "(qtundo-format)"
-msgid "Add account"
-msgstr "Radjouter on conte"
-
-#: models/kptaccountsmodel.cpp:450
-#, fuzzy, kde-format
-msgid "Delete Account"
-msgid_plural "Delete %1 Accounts"
-msgstr[0] "Disfacer les contes di tchoezis"
-msgstr[1] "Disfacer les contes di tchoezis"
-
-#: models/kptaccountsmodel.cpp:841
-#, kde-format
-msgid "Actual total cost: %1, planned total cost: %2"
-msgstr ""
-
-#: models/kptaccountsmodel.cpp:1035
-#: models/kptresourceappointmentsmodel.cpp:912
-msgid "Total"
-msgstr "Totå"
-
-#: models/kptaccountsmodel.cpp:1064
-msgid "The total cost for the account shown as: Actual cost [ Planned cost ]"
-msgstr ""
-
 #: models/kptpertcpmmodel.cpp:151
 msgid "Path"
 msgstr "Tchimin"
@@ -1636,6 +1527,18 @@ msgid "There is %1 resource available in this group"
 msgid_plural "There are %1 resources available in this group"
 msgstr[0] ""
 msgstr[1] ""
+
+#. i18n: file: ui/kptresourceassignmentview.ui:27
+#. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
+#: models/kptresourceallocationmodel.cpp:332
+#: models/kptresourceappointmentsmodel.cpp:911
+#: models/kptresourceappointmentsmodel.cpp:926
+#: models/kptresourceappointmentsmodel.cpp:1525
+#: models/kptschedulemodel.cpp:865 models/kptschedulemodel.cpp:1121
+#: models/kptresourcemodel.cpp:437 models/kptaccountsmodel.cpp:127
+#: models/kptaccountsmodel.cpp:1029 rc.cpp:316
+msgid "Name"
+msgstr "No"
 
 #: models/kptresourceallocationmodel.cpp:334
 #, fuzzy
@@ -1728,6 +1631,11 @@ msgstr ""
 #, kde-format
 msgid "Booking by external project on %1"
 msgstr ""
+
+#: models/kptresourceappointmentsmodel.cpp:912
+#: models/kptaccountsmodel.cpp:1035
+msgid "Total"
+msgstr "Totå"
 
 #: models/kptresourceappointmentsmodel.cpp:927
 msgid "The total hours booked"
@@ -3518,6 +3426,98 @@ msgctxt "(qtundo-format)"
 msgid "Add resource group"
 msgstr "Radjouter groupe di rsource..."
 
+#: models/kptaccountsmodel.cpp:87
+#, fuzzy, kde-format
+msgctxt "1=account name"
+msgid "%1 (Default account)"
+msgstr "Difacer conte"
+
+#: models/kptaccountsmodel.cpp:128 models/kptaccountsmodel.cpp:1032
+msgid "Description"
+msgstr "Discrijhaedje"
+
+#: models/kptaccountsmodel.cpp:337
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "De-select as default account"
+msgstr "Disfacer les contes di tchoezis"
+
+#: models/kptaccountsmodel.cpp:343
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Select as default account"
+msgstr "Disfacer les contes di tchoezis"
+
+#: models/kptaccountsmodel.cpp:432
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Add account"
+msgstr "Radjouter on conte"
+
+#: models/kptaccountsmodel.cpp:450
+#, fuzzy, kde-format
+msgid "Delete Account"
+msgid_plural "Delete %1 Accounts"
+msgstr[0] "Disfacer les contes di tchoezis"
+msgstr[1] "Disfacer les contes di tchoezis"
+
+#: models/kptaccountsmodel.cpp:841
+#, kde-format
+msgid "Actual total cost: %1, planned total cost: %2"
+msgstr ""
+
+#: models/kptaccountsmodel.cpp:1097
+msgid "The total cost for the account shown as: Actual cost [ Planned cost ]"
+msgstr ""
+
+#: models/kptnodechartmodel.cpp:157
+#, fuzzy
+#| msgctxt "Budgeted Cost of Work Scheduled"
+#| msgid "BCWS (Cost)"
+msgctxt "Cost based Budgeted Cost of Work Scheduled"
+msgid "BCWS Cost"
+msgstr "BCWS (costindje)"
+
+#: models/kptnodechartmodel.cpp:158
+#, fuzzy
+#| msgctxt "Budgeted Cost of Work Performed"
+#| msgid "BCWP (Cost)"
+msgctxt "Cost based Budgeted Cost of Work Performed"
+msgid "BCWP Cost"
+msgstr "BCWP (costindje)"
+
+#: models/kptnodechartmodel.cpp:159
+#, fuzzy
+#| msgctxt "Actual Cost of Work Performed"
+#| msgid "ACWP (Cost)"
+msgctxt "Cost based Actual Cost of Work Performed"
+msgid "ACWP Cost"
+msgstr "ACWP (costindje)"
+
+#: models/kptnodechartmodel.cpp:160
+#, fuzzy
+msgctxt "Effort based Budgeted Cost of Work Scheduled"
+msgid "BCWS Effort"
+msgstr "Efoirt"
+
+#: models/kptnodechartmodel.cpp:161
+#, fuzzy
+msgctxt "Effort based Budgeted Cost of Work Performed"
+msgid "BCWP Effort"
+msgstr "Efoirt"
+
+#: models/kptnodechartmodel.cpp:162
+#, fuzzy
+msgctxt "Effort based Actual Cost of Work Performed"
+msgid "ACWP Effort"
+msgstr "Efoirt"
+
+#: models/kptnodechartmodel.cpp:166
+msgctxt ""
+"Date format used as chart axis labels. Must follow QDate specification."
+msgid "MM.dd"
+msgstr ""
+
 #: ui/kptaccountseditor.cpp:227
 msgid "Add Account"
 msgstr "Radjouter on conte"
@@ -4457,20 +4457,6 @@ msgid ""
 "affects monetary values."
 msgstr ""
 
-#: ui/reports/reportdata.cpp:161
-msgid "Cost Breakdown"
-msgstr ""
-
-#: ui/reports/reportdata.cpp:161
-#, fuzzy
-#| msgid "Schedule performance index (BCWP/BCWS)"
-msgid "Cost Performance"
-msgstr "Programer l' indecse di performance (BCWP/BCWS)"
-
-#: ui/reports/reportdata.cpp:161
-msgid "Effort Performance"
-msgstr ""
-
 #: ui/reports/reportdesignview.cpp:43
 msgid "Cut"
 msgstr ""
@@ -4671,6 +4657,20 @@ msgstr "Apontiaedjes del bouye"
 #| msgid "Resource Assignments View Settings"
 msgid "Resource assignments"
 msgstr "Tchuzes del vuwe di l' aroymint des rsources"
+
+#: ui/reports/reportdata.cpp:163
+msgid "Cost Breakdown"
+msgstr ""
+
+#: ui/reports/reportdata.cpp:163
+#, fuzzy
+#| msgid "Schedule performance index (BCWP/BCWS)"
+msgid "Cost Performance"
+msgstr "Programer l' indecse di performance (BCWP/BCWS)"
+
+#: ui/reports/reportdata.cpp:163
+msgid "Effort Performance"
+msgstr ""
 
 #: ui/kptviewbase.cpp:53
 msgid "Header and Footer"
