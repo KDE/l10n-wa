@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate_plugins\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-08 09:27+0000\n"
+"POT-Creation-Date: 2011-10-10 09:02+0000\n"
 "PO-Revision-Date: 2004-06-10 21:31+0200\n"
 "Last-Translator: Pablo Saratxaga <pablo@walon.org>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -478,7 +478,8 @@ msgstr ""
 #. Tag: title
 #: plugins.docbook:275 plugins.docbook:577 plugins.docbook:693
 #: plugins.docbook:770 plugins.docbook:803 plugins.docbook:847
-#: plugins.docbook:891 plugins.docbook:926 plugins.docbook:1107
+#: plugins.docbook:1086 plugins.docbook:1130 plugins.docbook:1165
+#: plugins.docbook:1346
 #, no-c-format
 msgid "Menu Structure"
 msgstr ""
@@ -1374,32 +1375,387 @@ msgstr ""
 msgid "Toggle the display of &kate;'s <guilabel>Find in Files</guilabel> tool."
 msgstr ""
 
+#. Tag: author
+#: plugins.docbook:882
+#, no-c-format
+msgid "<firstname>T.C.</firstname> <surname>Hollingsworth</surname>"
+msgstr ""
+
+#. Tag: email
+#: plugins.docbook:885
+#, no-c-format
+msgid "tchollingsworth@gmail.com"
+msgstr ""
+
 #. Tag: title
 #: plugins.docbook:888
+#, no-c-format
+msgid "Search in Files"
+msgstr ""
+
+#. Tag: title
+#: plugins.docbook:891
+#, no-c-format
+msgid "Introduction"
+msgstr ""
+
+#. Tag: para
+#: plugins.docbook:892
+#, no-c-format
+msgid ""
+"&kappname;'s Search in Files plugin allows you to search for text or <link "
+"linkend=\"regular-expressions\">regular expressions</link> in many different "
+"files at once. You can search all open files, or all the files in one "
+"directory, and optionally its subdirectories. You can even filter by "
+"filename, for instance searching only files that end with a particular file "
+"extension."
+msgstr ""
+
+#. Tag: para
+#: plugins.docbook:898
+#, no-c-format
+msgid ""
+"The Search in Files plugin is not enabled by default, as it is new in "
+"&kappname; 3.7. Enable it in the <link linkend=\"config-dialog-plugins"
+"\">Plugins</link> panel of &kappname;'s settings. It will replace the old "
+"<link linkend=\"kate-application-plugin-findinfiles\">Find in Files plugin</"
+"link> in the next version of &kappname;."
+msgstr ""
+
+#. Tag: title
+#: plugins.docbook:907 plugins.docbook:1185
+#, no-c-format
+msgid "Interface"
+msgstr ""
+
+#. Tag: title
+#: plugins.docbook:910
+#, no-c-format
+msgid "Search Query"
+msgstr ""
+
+#. Tag: para
+#: plugins.docbook:912
+#, no-c-format
+msgid ""
+"The following options are always displayed at the top of the Search in Files "
+"tool view:"
+msgstr ""
+
+#. Tag: guiicon
+#: plugins.docbook:918
+#, no-c-format
+msgid "New Tab"
+msgstr ""
+
+#. Tag: para
+#: plugins.docbook:919
+#, no-c-format
+msgid ""
+"You can have as many searches as you want open at the same time. Simply "
+"click the <guibutton>New Tab</guibutton> button at the top-left corner of "
+"the Search tool view and a new results tab will open permitting you to "
+"perform another search."
+msgstr ""
+
+#. Tag: term
+#: plugins.docbook:928
+#, no-c-format
+msgid "Query"
+msgstr ""
+
+#. Tag: para
+#: plugins.docbook:929
+#, no-c-format
+msgid ""
+"The long text box at the top is where you type in what you want to find. You "
+"may enter standard text, or a regular expression if enabled."
+msgstr ""
+
+#. Tag: guibutton
+#: plugins.docbook:936
+#, no-c-format
+msgid "Search"
+msgstr ""
+
+#. Tag: para
+#: plugins.docbook:937
+#, no-c-format
+msgid ""
+"When you've finished configuring everything, just press the "
+"<guibutton>Search</guibutton> button to perform your search. You may also "
+"press &Enter; in the Query text box to do the same."
+msgstr ""
+
+#. Tag: guimenu
+#: plugins.docbook:945
+#, no-c-format
+msgid "Location"
+msgstr ""
+
+#. Tag: para
+#: plugins.docbook:946
+#, no-c-format
+msgid ""
+"This has two options. Select <guilabel>in Open Files</guilabel> to search "
+"all files currently open in &kappname;. Select <guilabel>in Folder</"
+"guilabel> to search inside a folder and optionally its subfolders."
+msgstr ""
+
+#. Tag: guimenu
+#: plugins.docbook:954
+#, no-c-format
+msgid "<guimenu>Options</guimenu>"
+msgstr ""
+
+#. Tag: para
+#: plugins.docbook:955
+#, no-c-format
+msgid ""
+"There are two available options. If enabled, <guilabel>Match case</guilabel> "
+"will restrict search results to only those that have the exact same "
+"combination of upper and lower-case letters as your search query. "
+"<guilabel>Regular expressions</guilabel> permits you to use <link linkend="
+"\"regular-expressions\">regular expressions</link> instead of simple text as "
+"your search query."
+msgstr ""
+
+#. Tag: guiicon
+#: plugins.docbook:966
+#, no-c-format
+msgid "Toggle Results"
+msgstr ""
+
+#. Tag: para
+#: plugins.docbook:967
+#, no-c-format
+msgid ""
+"The down arrow in the top right-corner of the Search in Files tool view will "
+"toggle the bottom half of the tool view between displaying additional "
+"options for the Search in Folder mode and the results of your search."
+msgstr ""
+
+#. Tag: title
+#: plugins.docbook:978
+#, no-c-format
+msgid "Search in Folder Options"
+msgstr ""
+
+#. Tag: para
+#: plugins.docbook:980
+#, no-c-format
+msgid ""
+"These options are displayed below the aforementioned query options. If "
+"search results are being displayed instead, press the <guiicon>Toggle "
+"Results</guiicon> button to display them. These options apply only when "
+"Search in Folder mode is enabled. If Search in Open Files is selected, they "
+"will be disabled."
+msgstr ""
+
+#. Tag: guilabel
+#: plugins.docbook:988
+#, no-c-format
+msgid "Folder"
+msgstr ""
+
+#. Tag: para
+#: plugins.docbook:989
+#, no-c-format
+msgid ""
+"You may enter the path of the folder you wish to search. For instance, you "
+"might enter <userinput>~/development/kde/kate/</userinput> if you wished to "
+"search the &kate; source code."
+msgstr ""
+
+#. Tag: guiicon
+#: plugins.docbook:997
+#, no-c-format
+msgid "Open file dialog"
+msgstr ""
+
+#. Tag: para
+#: plugins.docbook:998
+#, no-c-format
+msgid ""
+"Press this button to locate for the folder in your desktop's folder browser."
+msgstr ""
+
+#. Tag: guiicon
+#: plugins.docbook:1004
+#, no-c-format
+msgid "<guiicon>Up</guiicon>"
+msgstr ""
+
+#. Tag: para
+#: plugins.docbook:1005
+#, no-c-format
+msgid ""
+"Press this button to change <guilabel>Folder</guilabel> to the parent of the "
+"currently selected folder."
+msgstr ""
+
+#. Tag: guiicon
+#: plugins.docbook:1012
+#, no-c-format
+msgid "Restore Current Folder"
+msgstr ""
+
+#. Tag: para
+#: plugins.docbook:1013
+#, no-c-format
+msgid ""
+"This button will set the <guilabel>Folder</guilabel> entry to the folder in "
+"which the currently open document is located."
+msgstr ""
+
+#. Tag: guilabel
+#: plugins.docbook:1020
+#, no-c-format
+msgid "Filter"
+msgstr ""
+
+#. Tag: para
+#: plugins.docbook:1021
+#, no-c-format
+msgid ""
+"This permits you to only search filenames that match a particular pattern. "
+"For instance, to only search files written in C++, change it to <userinput>*."
+"cpp</userinput>. To search only files beginning with <literal>kate</"
+"literal>, change it to <userinput>kate*</userinput>."
+msgstr ""
+
+#. Tag: guilabel
+#: plugins.docbook:1030
+#, no-c-format
+msgid "Recursive"
+msgstr ""
+
+#. Tag: para
+#: plugins.docbook:1031
+#, no-c-format
+msgid ""
+"If this option is enabled, &kappname; will also search in all subfolders of "
+"the selected folder."
+msgstr ""
+
+#. Tag: guilabel
+#: plugins.docbook:1038
+#, no-c-format
+msgid "Include hidden"
+msgstr ""
+
+#. Tag: para
+#: plugins.docbook:1039
+#, no-c-format
+msgid ""
+"If this option is enabled, &kappname; will also search in files or folders "
+"that are typically hidden by your &OS;."
+msgstr ""
+
+#. Tag: guilabel
+#: plugins.docbook:1046
+#, no-c-format
+msgid "Follow symbolic links"
+msgstr ""
+
+#. Tag: para
+#: plugins.docbook:1047
+#, no-c-format
+msgid ""
+"The Search in Files plugin typically doesn't follow <ulink url=\"http://en."
+"wikipedia.org/wiki/Symbolic_link\">symbolic links</ulink>. When this option "
+"is enabled, the plugin will follow them instead and search inside the files "
+"or folders they reference."
+msgstr ""
+
+#. Tag: para
+#: plugins.docbook:1053
+#, no-c-format
+msgid ""
+"It's possible for symbolic links to reference a folder that is the parent of "
+"the folder currently being searched, or other folders that contain symbolic "
+"links to their parent. If there is such a link in the folder being searched "
+"and this option is enabled, &kappname; will repeatedly follow the link and "
+"search the folder, and the search will never complete."
+msgstr ""
+
+#. Tag: title
+#: plugins.docbook:1065
+#, no-c-format
+msgid "Search Results"
+msgstr ""
+
+#. Tag: para
+#: plugins.docbook:1067
+#, no-c-format
+msgid ""
+"The results of your search are displayed below the query options. If options "
+"for Search in Folder mode are displayed, simply press the <guiicon>Toggle "
+"Results</guiicon> button to display them. They will also automatically be "
+"displayed as soon as a search is performed."
+msgstr ""
+
+#. Tag: para
+#: plugins.docbook:1072
+#, no-c-format
+msgid ""
+"The search results displays three columns providing information about each "
+"result of your search query. The <guilabel>File</guilabel> column shows the "
+"name of the file. The <guilabel>Line</guilabel> column displays the line "
+"number the contents of your query were found in. The <guilabel>Text</"
+"guilabel> column displays the full text of that line."
+msgstr ""
+
+#. Tag: para
+#: plugins.docbook:1078
+#, no-c-format
+msgid ""
+"To open the file your result was found in, simply double-click it. "
+"&kappname; will open the file if needed, and place the cursor at the "
+"beginning of the text entered as your query as found in the file."
+msgstr ""
+
+#. Tag: menuchoice
+#: plugins.docbook:1104
+#, no-c-format
+msgid ""
+"<guimenu>View</guimenu><guisubmenu>Tool Views</guisubmenu> <guimenuitem>Show "
+"Search in Files</guimenuitem>"
+msgstr ""
+
+#. Tag: para
+#: plugins.docbook:1110
+#, no-c-format
+msgid ""
+"Toggle the display of &kappname;'s <guilabel>Search in Files</guilabel> tool."
+msgstr ""
+
+#. Tag: title
+#: plugins.docbook:1127
 #, no-c-format
 msgid "Mail Files"
 msgstr ""
 
 #. Tag: menuchoice
-#: plugins.docbook:896
+#: plugins.docbook:1135
 #, no-c-format
 msgid "<guimenu>File</guimenu> <guimenuitem>Mail...</guimenuitem>"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:902
+#: plugins.docbook:1141
 #, no-c-format
 msgid "Open your mail client and attach the file in the mail."
 msgstr ""
 
 #. Tag: title
-#: plugins.docbook:920
+#: plugins.docbook:1159
 #, no-c-format
 msgid "Filesystem Browser"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:922
+#: plugins.docbook:1161
 #, no-c-format
 msgid ""
 "The Filesystem Browser is a folder viewer, allowing you to open files from a "
@@ -1407,7 +1763,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: plugins.docbook:932
+#: plugins.docbook:1171
 #, no-c-format
 msgid ""
 "<guimenu>View</guimenu><guisubmenu>Tool Views</guisubmenu> <guimenuitem>Show "
@@ -1415,44 +1771,38 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:938
+#: plugins.docbook:1177
 #, no-c-format
 msgid "Toggle the display of &kate;'s Filesystem Browser"
 msgstr ""
 
-#. Tag: title
-#: plugins.docbook:946
-#, no-c-format
-msgid "Interface"
-msgstr ""
-
 #. Tag: para
-#: plugins.docbook:948
+#: plugins.docbook:1187
 #, no-c-format
 msgid ""
 "From top down, the Filesystem Browser consist of the following elements:"
 msgstr ""
 
 #. Tag: term
-#: plugins.docbook:953
+#: plugins.docbook:1192
 #, no-c-format
 msgid "A Toolbar"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:955
+#: plugins.docbook:1194
 #, no-c-format
 msgid "This contains standard navigations tool buttons:"
 msgstr ""
 
 #. Tag: guibutton
-#: plugins.docbook:958
+#: plugins.docbook:1197
 #, no-c-format
 msgid "Back"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:959
+#: plugins.docbook:1198
 #, no-c-format
 msgid ""
 "Causes the folder view to <command>cd</command> to the previously displayed "
@@ -1460,13 +1810,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guibutton
-#: plugins.docbook:963
+#: plugins.docbook:1202
 #, no-c-format
 msgid "Forward"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:964
+#: plugins.docbook:1203
 #, no-c-format
 msgid ""
 "Causes the folder view to <command>cd</command> to the next folder in the "
@@ -1474,26 +1824,26 @@ msgid ""
 msgstr ""
 
 #. Tag: guibutton
-#: plugins.docbook:973
+#: plugins.docbook:1212
 #, no-c-format
 msgid "Bookmarks"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:974
+#: plugins.docbook:1213
 #, no-c-format
 msgid ""
 "Opens a submenu to edit or add bookmarks and to add a new bookmark folder."
 msgstr ""
 
 #. Tag: guibutton
-#: plugins.docbook:977
+#: plugins.docbook:1216
 #, no-c-format
 msgid "Current Document Folder"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:978
+#: plugins.docbook:1217
 #, no-c-format
 msgid ""
 "This button will cause the folder view to <command>cd</command> to the "
@@ -1503,31 +1853,31 @@ msgid ""
 msgstr ""
 
 #. Tag: guibutton
-#: plugins.docbook:985
+#: plugins.docbook:1224
 #, no-c-format
-msgid "Options"
+msgid "<guibutton>Options</guibutton>"
 msgstr ""
 
 #. Tag: guimenuitem
-#: plugins.docbook:989
+#: plugins.docbook:1228
 #, no-c-format
 msgid "Short View"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:990
+#: plugins.docbook:1229
 #, no-c-format
 msgid "Displays only the filenames."
 msgstr ""
 
 #. Tag: guimenuitem
-#: plugins.docbook:993
+#: plugins.docbook:1232
 #, no-c-format
 msgid "Detailed View"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:994
+#: plugins.docbook:1233
 #, no-c-format
 msgid ""
 "Displays <guilabel>Name</guilabel>, <guilabel>Date</guilabel>, "
@@ -1535,25 +1885,25 @@ msgid ""
 msgstr ""
 
 #. Tag: guimenuitem
-#: plugins.docbook:998
+#: plugins.docbook:1237
 #, no-c-format
 msgid "Tree View"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:999
+#: plugins.docbook:1238
 #, no-c-format
 msgid "Like Short View, but folders can be expanded to view their contents."
 msgstr ""
 
 #. Tag: guimenuitem
-#: plugins.docbook:1002
+#: plugins.docbook:1241
 #, no-c-format
 msgid "Detailed Tree View"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1003
+#: plugins.docbook:1242
 #, no-c-format
 msgid ""
 "This also allows folders to be expanded, but displays the additional columns "
@@ -1561,25 +1911,25 @@ msgid ""
 msgstr ""
 
 #. Tag: guimenuitem
-#: plugins.docbook:1007
+#: plugins.docbook:1246
 #, no-c-format
 msgid "Show Hidden Files"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1008
+#: plugins.docbook:1247
 #, no-c-format
 msgid "Displays files normally hidden by your operating system."
 msgstr ""
 
 #. Tag: guimenuitem
-#: plugins.docbook:1011
+#: plugins.docbook:1250
 #, no-c-format
 msgid "Automatically synchronize with current document"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1012
+#: plugins.docbook:1251
 #, no-c-format
 msgid ""
 "When this option is enabled the filesystem browser will automatically "
@@ -1588,13 +1938,13 @@ msgid ""
 msgstr ""
 
 #. Tag: term
-#: plugins.docbook:1023
+#: plugins.docbook:1262
 #, no-c-format
 msgid "A Location Entry"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1025
+#: plugins.docbook:1264
 #, no-c-format
 msgid ""
 "This displays a breadcrumb navigation to the currently open folder, like "
@@ -1606,7 +1956,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1031
+#: plugins.docbook:1270
 #, no-c-format
 msgid ""
 "You can also click to the right of the breadcrumbs to change them to a text "
@@ -1616,7 +1966,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1035
+#: plugins.docbook:1274
 #, no-c-format
 msgid ""
 "The &URL; entry has folder auto-completion. The completion method can be set "
@@ -1624,25 +1974,25 @@ msgid ""
 msgstr ""
 
 #. Tag: term
-#: plugins.docbook:1042
+#: plugins.docbook:1281
 #, no-c-format
 msgid "A Folder View"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1043
+#: plugins.docbook:1282
 #, no-c-format
 msgid "This is a standard &kde; folder view."
 msgstr ""
 
 #. Tag: term
-#: plugins.docbook:1047
+#: plugins.docbook:1286
 #, no-c-format
 msgid "A Filter Entry"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1049
+#: plugins.docbook:1288
 #, no-c-format
 msgid ""
 "The Filter entry allows you to enter a filter for the files displayed in the "
@@ -1651,13 +2001,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1053
+#: plugins.docbook:1292
 #, no-c-format
 msgid "To display all files, enter a single asterisk <userinput>*</userinput>."
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1055
+#: plugins.docbook:1294
 #, no-c-format
 msgid ""
 "The filter entry saves the last 10 filters entered between sessions. To use "
@@ -1667,13 +2017,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: plugins.docbook:1068 plugins.docbook:1121
+#: plugins.docbook:1307 plugins.docbook:1360
 #, no-c-format
 msgid "Configuration"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1070
+#: plugins.docbook:1309
 #, no-c-format
 msgid ""
 "This plugin can be configured on the <guilabel>Filesystem Browser</guilabel> "
@@ -1682,13 +2032,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: plugins.docbook:1075
+#: plugins.docbook:1314
 #, no-c-format
 msgid "Toolbar"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1076
+#: plugins.docbook:1315
 #, no-c-format
 msgid ""
 "Configure the buttons on the file system browser toolbar by moving the ones "
@@ -1697,13 +2047,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: plugins.docbook:1095
+#: plugins.docbook:1334
 #, no-c-format
 msgid "<title>External Tools</title>"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1097
+#: plugins.docbook:1336
 #, no-c-format
 msgid ""
 "In the <guimenu>Tools</guimenu> menu you will find a submenu labeled "
@@ -1713,7 +2063,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1102
+#: plugins.docbook:1341
 #, no-c-format
 msgid ""
 "External tools are user defined, you can add, edit or remove tools using the "
@@ -1721,19 +2071,19 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: plugins.docbook:1111
+#: plugins.docbook:1350
 #, no-c-format
 msgid "<guimenu>Tools</guimenu><guisubmenu>External Tools</guisubmenu>"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1113
+#: plugins.docbook:1352
 #, no-c-format
 msgid "This submenu contains all the external tools you have configured."
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1123
+#: plugins.docbook:1362
 #, no-c-format
 msgid ""
 "External tools are configured on the <guilabel>External Tools</guilabel> "
@@ -1745,7 +2095,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1129
+#: plugins.docbook:1368
 #, no-c-format
 msgid ""
 "Each external tool is a shell command which contains macros representing the "
@@ -1754,19 +2104,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: plugins.docbook:1134
+#: plugins.docbook:1373
 #, no-c-format
 msgid "Available Commands"
 msgstr ""
 
 #. Tag: guibutton
-#: plugins.docbook:1137
+#: plugins.docbook:1376
 #, no-c-format
 msgid "<guibutton>New</guibutton>"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1138
+#: plugins.docbook:1377
 #, no-c-format
 msgid ""
 "Add a new external tool to the list. This will launch the property sheet "
@@ -1774,13 +2124,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guibutton
-#: plugins.docbook:1143
+#: plugins.docbook:1382
 #, no-c-format
 msgid "Edit"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1144
+#: plugins.docbook:1383
 #, no-c-format
 msgid ""
 "Edit the currently selected external tool, using the property sheet "
@@ -1788,13 +2138,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guibutton
-#: plugins.docbook:1149
+#: plugins.docbook:1388
 #, no-c-format
 msgid "Insert Separator"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1150
+#: plugins.docbook:1389
 #, no-c-format
 msgid ""
 "Adds a separator line that appears in the menu below the currently selected "
@@ -1802,43 +2152,43 @@ msgid ""
 msgstr ""
 
 #. Tag: guibutton
-#: plugins.docbook:1155
+#: plugins.docbook:1394
 #, no-c-format
 msgid "Up Arrow"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1156
+#: plugins.docbook:1395
 #, no-c-format
 msgid "Moves the currently selected item above the previous one."
 msgstr ""
 
 #. Tag: guibutton
-#: plugins.docbook:1161
+#: plugins.docbook:1400
 #, no-c-format
 msgid "Down Arrow"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1162
+#: plugins.docbook:1401
 #, no-c-format
 msgid "Moves the currently selected item below the subsequent one."
 msgstr ""
 
 #. Tag: title
-#: plugins.docbook:1169
+#: plugins.docbook:1408
 #, no-c-format
 msgid "External Tools Properties"
 msgstr ""
 
 #. Tag: guilabel
-#: plugins.docbook:1171
+#: plugins.docbook:1410
 #, no-c-format
 msgid "Label"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1172
+#: plugins.docbook:1411
 #, no-c-format
 msgid ""
 "A friendly label that will appear in the <guisubmenu>External Tools</"
@@ -1846,13 +2196,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guibutton
-#: plugins.docbook:1176
+#: plugins.docbook:1415
 #, no-c-format
 msgid "Icon"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1177
+#: plugins.docbook:1416
 #, no-c-format
 msgid ""
 "Allows you to select an icon that appears next to the label in the "
@@ -1860,13 +2210,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: plugins.docbook:1182
+#: plugins.docbook:1421
 #, no-c-format
 msgid "Script"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1183
+#: plugins.docbook:1422
 #, no-c-format
 msgid ""
 "The script to execute when the tool is activated. Before passing the script "
@@ -1874,13 +2224,13 @@ msgid ""
 msgstr ""
 
 #. Tag: userinput
-#: plugins.docbook:1188
+#: plugins.docbook:1427
 #, no-c-format
 msgid "%URL"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1189
+#: plugins.docbook:1428
 #, no-c-format
 msgid ""
 "The full URL of the current document, or an empty string if the document is "
@@ -1888,13 +2238,13 @@ msgid ""
 msgstr ""
 
 #. Tag: userinput
-#: plugins.docbook:1194
+#: plugins.docbook:1433
 #, no-c-format
 msgid "%URLs"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1195
+#: plugins.docbook:1434
 #, no-c-format
 msgid ""
 "A space separated list of the URLs of all open documents (except unsaved "
@@ -1902,13 +2252,13 @@ msgid ""
 msgstr ""
 
 #. Tag: userinput
-#: plugins.docbook:1200
+#: plugins.docbook:1439
 #, no-c-format
 msgid "%directory"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1201
+#: plugins.docbook:1440
 #, no-c-format
 msgid ""
 "The directory part of the current documents URL or an empty string if the "
@@ -1916,13 +2266,13 @@ msgid ""
 msgstr ""
 
 #. Tag: userinput
-#: plugins.docbook:1206
+#: plugins.docbook:1445
 #, no-c-format
 msgid "%filename"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1207
+#: plugins.docbook:1446
 #, no-c-format
 msgid ""
 "The filename of the current document without the path, or an empty string if "
@@ -1930,37 +2280,37 @@ msgid ""
 msgstr ""
 
 #. Tag: userinput
-#: plugins.docbook:1212
+#: plugins.docbook:1451
 #, no-c-format
 msgid "%line"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1213
+#: plugins.docbook:1452
 #, no-c-format
 msgid "The line number of the insertion cursor is in the current document."
 msgstr ""
 
 #. Tag: userinput
-#: plugins.docbook:1218
+#: plugins.docbook:1457
 #, no-c-format
 msgid "%column"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1219
+#: plugins.docbook:1458
 #, no-c-format
 msgid "The column number of the insertion cursor in the current document."
 msgstr ""
 
 #. Tag: userinput
-#: plugins.docbook:1224
+#: plugins.docbook:1463
 #, no-c-format
 msgid "%selection"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1225
+#: plugins.docbook:1464
 #, no-c-format
 msgid ""
 "The selected text in the current document, or an empty string if no text is "
@@ -1968,13 +2318,13 @@ msgid ""
 msgstr ""
 
 #. Tag: userinput
-#: plugins.docbook:1230
+#: plugins.docbook:1469
 #, no-c-format
 msgid "%text"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1231
+#: plugins.docbook:1470
 #, no-c-format
 msgid ""
 "The full text of the current document. Beware that this may potentially "
@@ -1982,13 +2332,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: plugins.docbook:1242
+#: plugins.docbook:1481
 #, no-c-format
 msgid "Executable"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1243
+#: plugins.docbook:1482
 #, no-c-format
 msgid ""
 "The main executable in the script. This is mandatory, and is used to test if "
@@ -1997,13 +2347,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: plugins.docbook:1249
+#: plugins.docbook:1488
 #, no-c-format
 msgid "Mime types"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1250
+#: plugins.docbook:1489
 #, no-c-format
 msgid ""
 "A semicolon separated list of mimetypes for which this command should be "
@@ -2011,13 +2361,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: plugins.docbook:1255
+#: plugins.docbook:1494
 #, no-c-format
 msgid "Save"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1256
+#: plugins.docbook:1495
 #, no-c-format
 msgid ""
 "You can optionally select to have the current or all documents saved prior "
@@ -2026,13 +2376,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: plugins.docbook:1262
+#: plugins.docbook:1501
 #, no-c-format
 msgid "Command line name"
 msgstr ""
 
 #. Tag: para
-#: plugins.docbook:1263
+#: plugins.docbook:1502
 #, no-c-format
 msgid ""
 "If you fill this, the tool will be available in the <link linkend=\"advanced-"

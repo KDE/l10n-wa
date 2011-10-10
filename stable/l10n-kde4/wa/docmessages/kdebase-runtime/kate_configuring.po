@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate_configuring\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-07-28 12:43+0000\n"
+"POT-Creation-Date: 2011-10-10 09:02+0000\n"
 "PO-Revision-Date: 2004-06-11 05:54+0200\n"
 "Last-Translator: Pablo Saratxaga <pablo@walon.org>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -1781,9 +1781,8 @@ msgstr ""
 msgid ""
 "The editor will search the given number of folder levels upwards for "
 "&kappname; config file and load the settings line from it. Further "
-"information about these hidden folder config files you find in the article "
-"<ulink url=\"http://kate-editor.org/article/.kateconfig\">The File ."
-"kateconfig</ulink>."
+"information about these hidden folder config files you find in the <link "
+"linkend=\"config-variables\">document variables section</link>."
 msgstr ""
 
 #. Tag: guilabel
@@ -2219,10 +2218,10 @@ msgstr ""
 #: configuring.docbook:1351
 #, no-c-format
 msgid ""
-"Kate variables is kateparts implementation of document variables, similar to "
-"emacs and vi modelines. In katepart, the lines have the format "
+"&kate; variables is katepart's implementation of document variables, similar "
+"to emacs and vi modelines. In katepart, the lines have the following format: "
 "<userinput>kate: VARIABLENAME VALUE; [ VARIABLENAME VALUE; ... ]</userinput> "
-"the lines can of course be in a comment, if the file is in a format with "
+"The lines can of course be in a comment, if the file is in a format with "
 "comments. Variable names are single words (no whitespace), and anything up "
 "to the next semicolon is the value. The semicolon is required."
 msgstr ""
@@ -2253,160 +2252,175 @@ msgstr ""
 #: configuring.docbook:1368
 #, no-c-format
 msgid ""
+"Additionally, document variables can be placed in a file called <filename>."
+"kateconfig</filename> in any directory, and the configured settings will be "
+"applied as if the modelines were entered on every file in the directory and "
+"its subdirectories, as far down as the <link linkend=\"pref-open-save-"
+"advanced\">configured search depth.</link> Document variables in <filename>."
+"kateconfig</filename> use the same syntax as in modelines."
+msgstr ""
+
+#. Tag: para
+#: configuring.docbook:1376
+#, no-c-format
+msgid ""
 "There are variables to support almost all configurations in katepart, and "
 "additionally plugins can use variables, in which case it should be "
 "documented in the plugin's documentation."
 msgstr ""
 
 #. Tag: title
-#: configuring.docbook:1373
+#: configuring.docbook:1381
 #, no-c-format
 msgid "How &kate; uses Variables"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1375
+#: configuring.docbook:1383
 #, no-c-format
 msgid ""
 "When reading configuration, katepart looks in the following places (in that "
 "order): <itemizedlist> <listitem><para>The global configuration.</para></"
 "listitem> <listitem><para>Optional session data.</para></listitem> "
 "<listitem><para>The \"Filetype\" configuration.</para></listitem> "
-"<listitem><para>Document variables in the document itself.</para></listitem> "
-"<listitem><para>Settings made during editing from menu or command line.</"
-"para></listitem> </itemizedlist> As you can understand document variables "
-"has the next highest precedence. Whenever a document is saved, the document "
-"variables are reread, and will overwrite changes made using menu items or "
-"the command line."
-msgstr ""
-
-#. Tag: para
-#: configuring.docbook:1390
-#, no-c-format
-msgid ""
-"Any variable not listed below is stored in the document and can be queried "
-"by other objects such as plugins, which can use them for their own purpose. "
-"For example the variable indent mode uses document variables for its "
-"configuration."
-msgstr ""
-
-#. Tag: para
-#: configuring.docbook:1395
-#, no-c-format
-msgid ""
-"The variables listed here documents &kate; version 2.4. More variables may "
-"be added in the future. There are 3 possible types of values for variables, "
-"with the following valid expressions:"
+"<listitem><para>Document variables in <filename>.kateconfig</filename>.</"
+"para></listitem> <listitem><para>Document variables in the document itself.</"
+"para></listitem> <listitem><para>Settings made during editing from menu or "
+"command line.</para></listitem> </itemizedlist> As you see, document "
+"variables are only overriden by changes made at runtime. Whenever a document "
+"is saved, the document variables are reread, and will overwrite changes made "
+"using menu items or the command line."
 msgstr ""
 
 #. Tag: para
 #: configuring.docbook:1399
 #, no-c-format
+msgid ""
+"Any variable not listed below is stored in the document and can be queried "
+"by other objects such as plugins, which can use them for their own purpose. "
+"For example, the variable indent mode uses document variables for its "
+"configuration."
+msgstr ""
+
+#. Tag: para
+#: configuring.docbook:1404
+#, no-c-format
+msgid ""
+"The variables listed here documents &kate; version 3.7. More variables may "
+"be added in the future. There are 3 possible types of values for variables, "
+"with the following valid expressions:"
+msgstr ""
+
+#. Tag: para
+#: configuring.docbook:1408
+#, no-c-format
 msgid "BOOL - on|off|true|false|1|0"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1400
+#: configuring.docbook:1409
 #, no-c-format
 msgid "INTEGER - any integer number"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1401
+#: configuring.docbook:1410
 #, no-c-format
 msgid "STRING - anything else"
 msgstr ""
 
 #. Tag: title
-#: configuring.docbook:1406
+#: configuring.docbook:1415
 #, no-c-format
 msgid "Available Variables"
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1409
+#: configuring.docbook:1418
 #, no-c-format
 msgid "<command>auto-brackets</command><arg>BOOL</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1410
+#: configuring.docbook:1419
 #, no-c-format
 msgid "Set auto insertion of brackets on or off."
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1414
+#: configuring.docbook:1423
 #, no-c-format
 msgid "<command>auto-center-lines</command><arg>INT</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1415
+#: configuring.docbook:1424
 #, no-c-format
 msgid "Set the number of autocenter lines."
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1419
+#: configuring.docbook:1428
 #, no-c-format
 msgid "<command>auto-insert-doxygen</command><arg>BOOL</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1420
+#: configuring.docbook:1429
 #, no-c-format
 msgid ""
 "Turn insertion of the leading asterisk in doxygen comments on or off. This "
-"has no effect unless you use the cstyle auto-indenter."
+"has no effect unless you use the C-style auto-indenter."
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1425
+#: configuring.docbook:1434
 #, no-c-format
 msgid "<command>background-color</command><arg>STRING</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1426
+#: configuring.docbook:1435
 #, no-c-format
 msgid ""
 "Set the document background color. The value must be something that can be "
-"evaluated to a valid color, for example \"#ff0000\"."
-msgstr ""
-
-#. Tag: cmdsynopsis
-#: configuring.docbook:1431
-#, no-c-format
-msgid "<command>backspace-indents</command><arg>BOOL</arg>"
-msgstr ""
-
-#. Tag: para
-#: configuring.docbook:1432
-#, no-c-format
-msgid "Turn backspace indenting on or off."
-msgstr ""
-
-#. Tag: cmdsynopsis
-#: configuring.docbook:1436
-#, no-c-format
-msgid "<command>block-selection</command><arg>BOOL</arg>"
-msgstr ""
-
-#. Tag: para
-#: configuring.docbook:1437
-#, no-c-format
-msgid "Turn block selection on or off."
+"evaluated to a valid color, for example <userinput>#ff0000</userinput>."
 msgstr ""
 
 #. Tag: cmdsynopsis
 #: configuring.docbook:1441
 #, no-c-format
-msgid "<command>bom | byte-order-marker</command><arg>BOOL</arg>"
+msgid "<command>backspace-indents</command><arg>BOOL</arg>"
 msgstr ""
 
 #. Tag: para
 #: configuring.docbook:1442
+#, no-c-format
+msgid "Enable or disable unindenting when &Backspace; is pressed."
+msgstr ""
+
+#. Tag: cmdsynopsis
+#: configuring.docbook:1446
+#, no-c-format
+msgid "<command>block-selection</command><arg>BOOL</arg>"
+msgstr ""
+
+#. Tag: para
+#: configuring.docbook:1447
+#, no-c-format
+msgid ""
+"Turn <link linkend=\"kate-part-selection-block\">block selection</link> on "
+"or off."
+msgstr ""
+
+#. Tag: cmdsynopsis
+#: configuring.docbook:1452
+#, no-c-format
+msgid "<command>bom | byte-order-marker</command><arg>BOOL</arg>"
+msgstr ""
+
+#. Tag: para
+#: configuring.docbook:1453
 #, no-c-format
 msgid ""
 "Enable/disable the byte order marker when saving files in unicode format "
@@ -2414,222 +2428,228 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1443 configuring.docbook:1461
+#: configuring.docbook:1455 configuring.docbook:1475
 #, no-c-format
 msgid "Since: Kate 3.4 (KDE 4.4)"
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1447
+#: configuring.docbook:1459
 #, no-c-format
 msgid "<command>bracket-highlight-color</command><arg>STRING</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1448
+#: configuring.docbook:1460
 #, no-c-format
 msgid ""
 "Set the color for the bracket highlight. The value must be something that "
-"can be evaluated to a valid color, for example \"#ff0000\""
+"can be evaluated to a valid color, for example <userinput>#ff0000</"
+"userinput>."
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1453
+#: configuring.docbook:1466
 #, no-c-format
 msgid "<command>current-line-color</command><arg>STRING</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1454
+#: configuring.docbook:1467
 #, no-c-format
 msgid ""
 "Set the color for the current line. The value must be something that can be "
-"evaluated to a valid color, for example \"#ff0000\"."
+"evaluated to a valid color, for example <userinput>#ff0000</userinput>"
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1459
+#: configuring.docbook:1473
 #, no-c-format
 msgid "<command>default-dictionary</command><arg>STRING</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1460
+#: configuring.docbook:1474
 #, no-c-format
 msgid "Sets the default dictionary used for spell checking."
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1465
+#: configuring.docbook:1479
 #, no-c-format
 msgid "<command>dynamic-word-wrap</command><arg>BOOL</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1466
+#: configuring.docbook:1480
 #, no-c-format
-msgid "Turns dynamic word wrap on or off."
+msgid ""
+"Turns <link linkend=\"kate-part-auto-wrap\">dynamic word wrap</link> on or "
+"off."
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1470
+#: configuring.docbook:1485
 #, no-c-format
 msgid "<command>eol | end-of-line</command><arg>STRING</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1471
+#: configuring.docbook:1486
 #, no-c-format
 msgid ""
-"Set the end of line mode. Valid settings are <quote>unix</quote>, "
-"<quote>mac</quote> and <quote>dos</quote>"
+"Set the end of line mode. Valid settings are <userinput>unix</userinput>, "
+"<userinput>mac</userinput> and <userinput>dos</userinput>"
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1476
+#: configuring.docbook:1491
 #, no-c-format
 msgid "<command>folding-markers</command><arg>BOOL</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1477
+#: configuring.docbook:1492
 #, no-c-format
-msgid "Set the display of folding markers on or off."
+msgid ""
+"Set the display of <link linkend=\"advanced-editing-tools-code-folding"
+"\">folding markers</link> on or off."
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1481
+#: configuring.docbook:1498
 #, no-c-format
 msgid "<command>font-size</command><arg>INT</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1482
+#: configuring.docbook:1499
 #, no-c-format
 msgid "Set the point size of the document font."
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1486
+#: configuring.docbook:1503
 #, no-c-format
 msgid "<command>font</command><arg>STRING</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1487
+#: configuring.docbook:1504
 #, no-c-format
 msgid ""
 "Set the font of the document. The value should be a valid font name, for "
-"example <quote>courier</quote>."
+"example <userinput>courier</userinput>."
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1492
+#: configuring.docbook:1509
 #, no-c-format
 msgid "<command>hl | syntax</command><arg>STRING</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1493
+#: configuring.docbook:1510
 #, no-c-format
 msgid ""
 "Set the syntax highlighting. Valid strings are all the names available in "
-"the menus. For instance, for C++ simply write <literal>C++</literal>."
+"the menus. For instance, for C++ simply write <userinput>C++</userinput>."
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1497
+#: configuring.docbook:1515
 #, no-c-format
 msgid "<command>icon-bar-color</command><arg>STRING</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1498
+#: configuring.docbook:1516
 #, no-c-format
 msgid ""
 "Set the icon bar color. The value must be something that can be evaluated to "
-"a valid color, for example <literal>#ff0000</literal>."
+"a valid color, for example <userinput>#ff0000</userinput>."
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1503
+#: configuring.docbook:1521
 #, no-c-format
 msgid "<command>icon-border</command><arg>BOOL</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1504
+#: configuring.docbook:1522
 #, no-c-format
 msgid "Set the display of the icon border on or off."
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1508
+#: configuring.docbook:1526
 #, no-c-format
 msgid "<command>indent-mode</command><arg>STRING</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1509
+#: configuring.docbook:1527
 #, no-c-format
 msgid ""
-"Set the auto-indentation mode. The options <quote>none</quote>, "
-"<quote>normal</quote>, <quote>cstyle</quote>, <quote>haskell</quote>, "
-"<quote>lilypond</quote>, <quote>lisp</quote>, <quote>python</quote>, "
-"<quote>ruby</quote> and <quote>xml</quote> are recognized. See the section "
+"Set the auto-indentation mode. The options <userinput>none</userinput>, "
+"<userinput>normal</userinput>, <userinput>cstyle</userinput>, "
+"<userinput>haskell</userinput>, <userinput>lilypond</userinput>, "
+"<userinput>lisp</userinput>, <userinput>python</userinput>, <userinput>ruby</"
+"userinput> and <userinput>xml</userinput> are recognized. See the section "
 "<xref linkend=\"kate-part-autoindent\"/> for details."
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1517
+#: configuring.docbook:1535
 #, no-c-format
 msgid "<command>indent-width</command><arg>INT</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1518
+#: configuring.docbook:1536
 #, no-c-format
 msgid "Set the indentation width."
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1522
+#: configuring.docbook:1540
 #, no-c-format
 msgid "<command>keep-extra-spaces</command><arg>BOOL</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1523
+#: configuring.docbook:1541
 #, no-c-format
 msgid "Set whether to keep extra spaces when calculating indentation width."
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1527
+#: configuring.docbook:1545
 #, no-c-format
 msgid "<command>line-numbers</command><arg>BOOL</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1528
+#: configuring.docbook:1546
 #, no-c-format
 msgid "Set the display of line numbers on or off."
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1532
+#: configuring.docbook:1550
 #, no-c-format
 msgid "<command>mixed-indent</command><arg>BOOL</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1533
+#: configuring.docbook:1551
 #, no-c-format
 msgid "Set mixed indentation ala Emacs on or off."
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1534
+#: configuring.docbook:1552
 #, no-c-format
 msgid ""
 "Note: Deprecated since Kate 3 in KDE4. This variable is ignored, set "
@@ -2637,85 +2657,87 @@ msgid ""
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1538
+#: configuring.docbook:1556
 #, no-c-format
 msgid "<command>overwrite-mode</command><arg>BOOL</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1539
+#: configuring.docbook:1557
 #, no-c-format
 msgid "Set overwrite mode on or off."
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1543
+#: configuring.docbook:1561
 #, no-c-format
 msgid "<command>persistent-selection</command><arg>BOOL</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1544
+#: configuring.docbook:1562
 #, no-c-format
-msgid "Set persistent selection on or off."
+msgid ""
+"Set <link linkend=\"kate-part-selection-persistent\">persistent selection</"
+"link> on or off."
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1548
+#: configuring.docbook:1567
 #, no-c-format
 msgid "<command>remove-trailing-space</command><arg>BOOL</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1549
+#: configuring.docbook:1568
 #, no-c-format
 msgid "Set dynamic end of line cleanup on or off."
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1553
+#: configuring.docbook:1572
 #, no-c-format
 msgid "<command>replace-tabs-save</command><arg>BOOL</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1554
+#: configuring.docbook:1573
 #, no-c-format
-msgid "Set tab-&gt;space conversion on save on or off."
+msgid "Set tab to space conversion on save on or off."
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1558
+#: configuring.docbook:1577
 #, no-c-format
 msgid "<command>replace-tabs</command><arg>BOOL</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1559
+#: configuring.docbook:1578
 #, no-c-format
-msgid "Set dynamic tab-&gt;space conversion on or off."
+msgid "Set dynamic tab to space conversion on or off."
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1563
+#: configuring.docbook:1582
 #, no-c-format
 msgid "<command>replace-trailing-space-save</command><arg>BOOL</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1564
+#: configuring.docbook:1583
 #, no-c-format
 msgid "Set end of line cleanup on save on or off."
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1568
+#: configuring.docbook:1587
 #, no-c-format
 msgid "<command>scheme</command><arg>STRING</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1569
+#: configuring.docbook:1588
 #, no-c-format
 msgid ""
 "Set the color scheme. The string must be the name of a color scheme that "
@@ -2723,57 +2745,59 @@ msgid ""
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1574
+#: configuring.docbook:1593
 #, no-c-format
 msgid "<command>selection-color</command><arg>STRING</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1575
+#: configuring.docbook:1594
 #, no-c-format
 msgid ""
 "Set the selection color. The value must be something that can be evaluated "
-"to a valid color, for example \"#ff0000\"."
+"to a valid color, for example <userinput>#ff0000</userinput>."
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1580
+#: configuring.docbook:1599
 #, no-c-format
 msgid "<command>show-tabs</command><arg>BOOL</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1581
+#: configuring.docbook:1600
 #, no-c-format
-msgid "Set the visual TAB character on or off."
+msgid "Set the visual &Tab; character on or off."
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1585
+#: configuring.docbook:1604
 #, no-c-format
 msgid "<command>smart-home</command><arg>BOOL</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1586
+#: configuring.docbook:1605
 #, no-c-format
-msgid "Set smart home navigation on or off."
+msgid ""
+"Set <link linkend=\"pref-edit-cursor-selection\">smart home navigation</"
+"link> on or off."
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1590
+#: configuring.docbook:1610
 #, no-c-format
 msgid "<command>space-indent</command><arg>BOOL</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1591
+#: configuring.docbook:1611
 #, no-c-format
 msgid "Set indentation with spaces on or off."
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1592
+#: configuring.docbook:1612
 #, no-c-format
 msgid ""
 "Note: Deprecated since Kate 3 in KDE4. Mixed indentation is the default "
@@ -2782,43 +2806,43 @@ msgid ""
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1596
+#: configuring.docbook:1617
 #, no-c-format
 msgid "<command>tab-indents</command><arg>BOOL</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1597
+#: configuring.docbook:1618
 #, no-c-format
-msgid "Set the TAB key indentation on or off."
+msgid "Set &Tab; key indentation on or off."
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1601
+#: configuring.docbook:1622
 #, no-c-format
 msgid "<command>tab-width</command><arg>INT</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1602
+#: configuring.docbook:1623
 #, no-c-format
-msgid "Set the tab display width."
+msgid "Set the tab character display width."
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1606
+#: configuring.docbook:1627
 #, no-c-format
 msgid "<command>undo-steps</command><arg>INT</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1607
+#: configuring.docbook:1628
 #, no-c-format
 msgid "Set the number of undo steps to remember."
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1608
+#: configuring.docbook:1629
 #, no-c-format
 msgid ""
 "Note: Deprecated since Kate 3 in KDE4. This variable is ignored. The maximal "
@@ -2826,51 +2850,52 @@ msgid ""
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1612
+#: configuring.docbook:1633
 #, no-c-format
 msgid "<command>word-wrap-column</command><arg>INT</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1613
+#: configuring.docbook:1634
 #, no-c-format
-msgid "Set the hard word wrap width."
+msgid ""
+"Set the <link linkend=\"kate-part-auto-wrap\">static word wrap</link> width."
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1617
+#: configuring.docbook:1639
 #, no-c-format
 msgid "<command>word-wrap-marker-color</command><arg>STRING</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1618
+#: configuring.docbook:1640
 #, no-c-format
 msgid ""
 "Set the word wrap marker color. The value must be something that can be "
-"evaluated to a valid color, for example \"#ff0000\"."
+"evaluated to a valid color, for example <userinput>#ff0000</userinput>."
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1623
+#: configuring.docbook:1645
 #, no-c-format
 msgid "<command>word-wrap</command><arg>BOOL</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1624
+#: configuring.docbook:1646
 #, no-c-format
-msgid "Set hard word wrapping on or off."
+msgid "Set static word wrapping on or off."
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1628
+#: configuring.docbook:1650
 #, no-c-format
 msgid "<command>wrap-cursor</command><arg>BOOL</arg>"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1629
+#: configuring.docbook:1651
 #, no-c-format
 msgid "Set cursor wrapping on or off."
 msgstr ""
