@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-10-20 03:01+0200\n"
+"POT-Creation-Date: 2011-10-21 03:16+0200\n"
 "PO-Revision-Date: 2011-09-21 08:11+0200\n"
 "Last-Translator: Djan Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -2062,6 +2062,7 @@ msgstr ""
 #: amarokurls/BookmarkModel.cpp:265
 #: browsers/playlistbrowser/PlaylistBrowserModel.cpp:450
 #: playlistgenerator/TreeModel.cpp:64
+#: services/amazon/AmazonItemTreeModel.cpp:52
 msgid "Name"
 msgstr "No"
 
@@ -2345,7 +2346,7 @@ msgstr "Tchoezixhoz l' sitîle d' håynaedje di l' umeur"
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MoodbarPaintStyle)
 #. i18n: tag layout attribute name
 #. i18n: file: data/DefaultPlaylistLayouts.xml:3
-#: rc.cpp:728 rc.cpp:2579
+#: rc.cpp:728 rc.cpp:2603
 msgid "Default"
 msgstr "Prémetou"
 
@@ -2983,7 +2984,7 @@ msgstr "Ritcherdjî les tåvlateures avou les tites eyet årtisses shuvants"
 
 #. i18n: file: context/applets/tabs/ReloadEditDialog.ui:73
 #. i18n: ectx: property (text), widget (QLabel, artistLabel)
-#: rc.cpp:1037 browsers/CollectionTreeItemModelBase.cpp:982
+#: rc.cpp:1037 browsers/CollectionTreeItemModelBase.cpp:983
 #: context/applets/wikipedia/WikipediaApplet.cpp:612
 #: dialogs/FilenameLayoutDialog.cpp:62 dialogs/FilenameLayoutDialog.cpp:435
 #: dialogs/transferdialog.cpp:88 musicbrainz/MusicBrainzTags.cpp:359
@@ -3129,7 +3130,9 @@ msgstr "Pådje waibe :"
 
 #. i18n: file: context/applets/upcomingevents/upcomingEventsVenueSettings.ui:257
 #. i18n: ectx: property (text), widget (QLabel, countryLabel)
-#: rc.cpp:1100
+#. i18n: file: services/amazon/AmazonConfigWidget.ui:53
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:1100 rc.cpp:2564
 msgid "Country:"
 msgstr "Payis :"
 
@@ -4229,7 +4232,7 @@ msgstr "<vude>"
 
 #. i18n: file: dialogs/FilenameLayoutDialog.ui:1041
 #. i18n: ectx: property (text), widget (QLabel, label_13)
-#: rc.cpp:1629 browsers/CollectionTreeItemModelBase.cpp:983
+#: rc.cpp:1629 browsers/CollectionTreeItemModelBase.cpp:984
 #: dialogs/FilenameLayoutDialog.cpp:78 dialogs/FilenameLayoutDialog.cpp:456
 #: musicbrainz/MusicBrainzTags.cpp:361 playlist/PlaylistModel.cpp:932
 msgid "Album Artist"
@@ -6085,33 +6088,84 @@ msgstr ""
 "underline; color:#0057ae;\">Aler prinde en eclaweu MP3tunes</span></a></p></"
 "body></html>"
 
+#. i18n: file: services/amazon/AmazonConfigWidget.ui:20
+#. i18n: ectx: property (windowTitle), widget (QWidget, AmazonConfigWidget)
+#: rc.cpp:2558
+#, fuzzy
+#| msgid "Select Importer"
+msgid "Select Your Country"
+msgstr "Tchoezi l' abagueu"
+
+#. i18n: file: services/amazon/AmazonConfigWidget.ui:35
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:2561
+msgid ""
+"The Amazon MP3 Store offers different items depending on your location. "
+"Please select the country you are located in. Please note that changing the "
+"country also invalidates your shopping cart."
+msgstr ""
+
+#. i18n: file: services/amazon/AmazonConfigWidget.ui:61
+#. i18n: ectx: property (text), item, widget (QComboBox, countrySelectionComboBox)
+#: rc.cpp:2567
+#, fuzzy
+#| msgid "Dance"
+msgid "France"
+msgstr "Dance"
+
+#. i18n: file: services/amazon/AmazonConfigWidget.ui:66
+#. i18n: ectx: property (text), item, widget (QComboBox, countrySelectionComboBox)
+#: rc.cpp:2570
+msgid "Germany"
+msgstr "Almagne"
+
+#. i18n: file: services/amazon/AmazonConfigWidget.ui:71
+#. i18n: ectx: property (text), item, widget (QComboBox, countrySelectionComboBox)
+#: rc.cpp:2573
+msgid "Japan"
+msgstr "Djapon"
+
+#. i18n: file: services/amazon/AmazonConfigWidget.ui:76
+#. i18n: ectx: property (text), item, widget (QComboBox, countrySelectionComboBox)
+#: rc.cpp:2576
+msgid "United Kingdom"
+msgstr "Grande Burtagne"
+
+#. i18n: file: services/amazon/AmazonConfigWidget.ui:81
+#. i18n: ectx: property (text), item, widget (QComboBox, countrySelectionComboBox)
+#: rc.cpp:2579
+#, fuzzy
+#| msgid "Mute state"
+msgid "United States"
+msgstr "Estat moya"
+
 #. i18n: file: transcoding/TranscodingAssistantDialog.ui:105
 #. i18n: ectx: property (text), widget (QCommandLinkButton, justCopyButton)
-#: rc.cpp:2558
+#: rc.cpp:2582
 msgid "&Copy"
 msgstr "&Copyî"
 
 #. i18n: file: transcoding/TranscodingAssistantDialog.ui:114
 #. i18n: ectx: property (description), widget (QCommandLinkButton, justCopyButton)
-#: rc.cpp:2561
+#: rc.cpp:2585
 msgid "Just copy the tracks without transcoding them."
 msgstr "Seulmint copyî les boket sins les covierser."
 
 #. i18n: file: transcoding/TranscodingAssistantDialog.ui:127
 #. i18n: ectx: property (text), widget (QCommandLinkButton, transcodeWithDefaultsButton)
-#: rc.cpp:2564
+#: rc.cpp:2588
 msgid "&Transcode"
 msgstr "&Covierser"
 
 #. i18n: file: transcoding/TranscodingAssistantDialog.ui:149
 #. i18n: ectx: property (text), widget (QCommandLinkButton, transcodeWithOptionsButton)
-#: rc.cpp:2567
+#: rc.cpp:2591
 msgid "Transcode With Custom &Parameters"
 msgstr "Covierser avou des &parametes a vosse môde"
 
 #. i18n: file: transcoding/TranscodingAssistantDialog.ui:158
 #. i18n: ectx: property (description), widget (QCommandLinkButton, transcodeWithOptionsButton)
-#: rc.cpp:2570
+#: rc.cpp:2594
 msgid "Configure your own encoding parameters for this transcoding operation."
 msgstr ""
 "Apontyîz les parametes d' ecôdaedje da vosse po ciste operåcion d' "
@@ -6119,32 +6173,32 @@ msgstr ""
 
 #. i18n: file: transcoding/TranscodingAssistantDialog.ui:205
 #. i18n: ectx: property (text), widget (QCommandLinkButton, backButton)
-#: rc.cpp:2573 context/applets/similarartists/SimilarArtistsApplet.cpp:76
+#: rc.cpp:2597 context/applets/similarartists/SimilarArtistsApplet.cpp:76
 #: context/applets/wikipedia/WikipediaApplet.cpp:593
 msgid "Back"
 msgstr "En erî"
 
 #. i18n: file: transcoding/TranscodingAssistantDialog.ui:340
 #. i18n: ectx: property (text), widget (QLabel, formatNameLabel)
-#: rc.cpp:2576
+#: rc.cpp:2600
 msgid "Format Name"
 msgstr "Abwesnaedje do no"
 
 #. i18n: tag layout attribute name
 #. i18n: file: data/DefaultPlaylistLayouts.xml:36
-#: rc.cpp:2582 playlist/layouts/PlaylistLayoutEditDialog.cpp:525
+#: rc.cpp:2606 playlist/layouts/PlaylistLayoutEditDialog.cpp:525
 msgid "No Grouping"
 msgstr "Pont d' groupaedje"
 
 #. i18n: tag layout attribute name
 #. i18n: file: data/DefaultPlaylistLayouts.xml:60
-#: rc.cpp:2585
+#: rc.cpp:2609
 msgid "No Grouping (Single Line)"
 msgstr "Pont d' groupaedje (ene seule roye)"
 
 #. i18n: tag layout attribute name
 #. i18n: file: data/DefaultPlaylistLayouts.xml:77
-#: rc.cpp:2588
+#: rc.cpp:2612
 msgid "Verbose"
 msgstr "Badjawe"
 
@@ -7789,6 +7843,66 @@ msgstr ""
 "s' metèt direk dins Amarok. Amarok vént avou bråmint di ces sourdants la "
 "mins on ndè sait radjouter bråmint ds ôtes e s' siervant d' sicripes."
 
+#: browsers/CollectionTreeItemModelBase.cpp:238
+#: browsers/CollectionTreeItemModelBase.cpp:291
+msgctxt "The Name is not known"
+msgid "Unknown"
+msgstr "Nén cnoxhou"
+
+#: browsers/CollectionTreeItemModelBase.cpp:316
+#: core-impl/collections/db/sql/SqlMeta.cpp:420
+#: core-impl/collections/db/ScanResultProcessor.cpp:270
+#: covermanager/CoverManager.cpp:841 dialogs/TrackOrganizer.cpp:48
+#: playlist/PlaylistModel.cpp:907 widgets/AlbumBreadcrumbWidget.cpp:60
+msgid "Various Artists"
+msgstr "Sacwants årtisses"
+
+#: browsers/CollectionTreeItemModelBase.cpp:982
+msgid "Year - Album"
+msgstr "Anêye - Albom"
+
+#: browsers/CollectionTreeItemModelBase.cpp:982
+#: browsers/CollectionTreeView.cpp:226
+#: context/applets/albums/AlbumsView.cpp:255
+#: context/applets/wikipedia/WikipediaApplet.cpp:618
+#: dialogs/FilenameLayoutDialog.cpp:74 dialogs/FilenameLayoutDialog.cpp:463
+#: dialogs/transferdialog.cpp:89 musicbrainz/MusicBrainzTags.cpp:360
+#: playlist/view/PlaylistViewCommon.cpp:64 playlist/PlaylistModel.cpp:935
+#: services/jamendo/JamendoInfoParser.cpp:83
+#: services/magnatune/MagnatuneStore.cpp:224
+#: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
+msgid "Album"
+msgstr "Albom"
+
+#: browsers/CollectionTreeItemModelBase.cpp:985
+#: core/meta/support/MetaConstants.cpp:110 dialogs/FilenameLayoutDialog.cpp:66
+#: dialogs/FilenameLayoutDialog.cpp:442 playlist/PlaylistModel.cpp:933
+#: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
+msgid "Composer"
+msgstr "Compôzeu"
+
+#: browsers/CollectionTreeItemModelBase.cpp:986
+#: core/meta/support/MetaConstants.cpp:109 dialogs/FilenameLayoutDialog.cpp:86
+#: dialogs/FilenameLayoutDialog.cpp:477 dialogs/transferdialog.cpp:90
+#: playlist/ProgressiveSearchWidget.cpp:95 playlist/PlaylistModel.cpp:939
+#: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
+msgid "Genre"
+msgstr "Djinre"
+
+#: browsers/CollectionTreeItemModelBase.cpp:987
+#: core/meta/support/MetaConstants.cpp:111 dialogs/FilenameLayoutDialog.cpp:70
+#: dialogs/FilenameLayoutDialog.cpp:449 playlist/PlaylistModel.cpp:934
+#: widgets/SmartPlaylistEditor.cpp:184 widgets/SmartPlaylistEditor.cpp:197
+#: widgets/SmartPlaylistEditor.cpp:921
+msgid "Year"
+msgstr "Anêye"
+
+#: browsers/CollectionTreeItemModelBase.cpp:988
+#: core/meta/support/MetaConstants.cpp:135 widgets/SmartPlaylistEditor.cpp:187
+#: widgets/SmartPlaylistEditor.cpp:197
+msgid "Label"
+msgstr "Etikete"
+
 #: browsers/BrowserBreadcrumbItem.cpp:68
 msgid "Media Sources Home"
 msgstr "Måjhon des sourdants des medias"
@@ -7825,66 +7939,6 @@ msgstr[1] "%1 bokets"
 #: browsers/BrowserCategoryList.cpp:52
 msgid "Filter Music Sources"
 msgstr "Passer al passete les sourdants d' muzike"
-
-#: browsers/CollectionTreeItemModelBase.cpp:238
-#: browsers/CollectionTreeItemModelBase.cpp:291
-msgctxt "The Name is not known"
-msgid "Unknown"
-msgstr "Nén cnoxhou"
-
-#: browsers/CollectionTreeItemModelBase.cpp:316
-#: core-impl/collections/db/sql/SqlMeta.cpp:420
-#: core-impl/collections/db/ScanResultProcessor.cpp:270
-#: covermanager/CoverManager.cpp:841 dialogs/TrackOrganizer.cpp:48
-#: playlist/PlaylistModel.cpp:907 widgets/AlbumBreadcrumbWidget.cpp:60
-msgid "Various Artists"
-msgstr "Sacwants årtisses"
-
-#: browsers/CollectionTreeItemModelBase.cpp:981
-msgid "Year - Album"
-msgstr "Anêye - Albom"
-
-#: browsers/CollectionTreeItemModelBase.cpp:981
-#: browsers/CollectionTreeView.cpp:226
-#: context/applets/albums/AlbumsView.cpp:255
-#: context/applets/wikipedia/WikipediaApplet.cpp:618
-#: dialogs/FilenameLayoutDialog.cpp:74 dialogs/FilenameLayoutDialog.cpp:463
-#: dialogs/transferdialog.cpp:89 musicbrainz/MusicBrainzTags.cpp:360
-#: playlist/view/PlaylistViewCommon.cpp:64 playlist/PlaylistModel.cpp:935
-#: services/jamendo/JamendoInfoParser.cpp:83
-#: services/magnatune/MagnatuneStore.cpp:224
-#: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
-msgid "Album"
-msgstr "Albom"
-
-#: browsers/CollectionTreeItemModelBase.cpp:984
-#: core/meta/support/MetaConstants.cpp:110 dialogs/FilenameLayoutDialog.cpp:66
-#: dialogs/FilenameLayoutDialog.cpp:442 playlist/PlaylistModel.cpp:933
-#: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
-msgid "Composer"
-msgstr "Compôzeu"
-
-#: browsers/CollectionTreeItemModelBase.cpp:985
-#: core/meta/support/MetaConstants.cpp:109 dialogs/FilenameLayoutDialog.cpp:86
-#: dialogs/FilenameLayoutDialog.cpp:477 dialogs/transferdialog.cpp:90
-#: playlist/ProgressiveSearchWidget.cpp:95 playlist/PlaylistModel.cpp:939
-#: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
-msgid "Genre"
-msgstr "Djinre"
-
-#: browsers/CollectionTreeItemModelBase.cpp:986
-#: core/meta/support/MetaConstants.cpp:111 dialogs/FilenameLayoutDialog.cpp:70
-#: dialogs/FilenameLayoutDialog.cpp:449 playlist/PlaylistModel.cpp:934
-#: widgets/SmartPlaylistEditor.cpp:184 widgets/SmartPlaylistEditor.cpp:197
-#: widgets/SmartPlaylistEditor.cpp:921
-msgid "Year"
-msgstr "Anêye"
-
-#: browsers/CollectionTreeItemModelBase.cpp:987
-#: core/meta/support/MetaConstants.cpp:135 widgets/SmartPlaylistEditor.cpp:187
-#: widgets/SmartPlaylistEditor.cpp:197
-msgid "Label"
-msgstr "Etikete"
 
 #: browsers/CollectionTreeView.cpp:246 configdialog/ConfigDialog.cpp:59
 msgid "Collection"
@@ -15095,6 +15149,100 @@ msgstr "Ci siervice n' acceptêye nou messaedje"
 msgid "ERROR: unknown message"
 msgstr "AROKE: messaedje nén cnoxhou"
 
+#: services/amazon/AmazonItemTreeModel.cpp:55
+msgid "Price"
+msgstr ""
+
+#: services/amazon/AmazonMeta.cpp:92
+msgid "Amazon: &Add item to cart"
+msgstr ""
+
+#: services/amazon/AmazonMeta.cpp:182
+msgid "Snippet taken from the Amazon MP3 store"
+msgstr ""
+
+#: services/amazon/AmazonStore.cpp:87
+msgid "Access the Amazon MP3 Store directly from Amarok"
+msgstr ""
+
+#: services/amazon/AmazonStore.cpp:91
+msgid ""
+"This plugin allows searching and purchasing songs and albums from the Amazon "
+"MP3 store. Amarok gets a share of the profits made by this service."
+msgstr ""
+
+#: services/amazon/AmazonStore.cpp:151
+msgid "Select results page to show"
+msgstr ""
+
+#: services/amazon/AmazonStore.cpp:174
+#, fuzzy
+#| msgid "Add"
+msgctxt "Add selected item to your shopping cart"
+msgid "Add"
+msgstr "Radjouter"
+
+#: services/amazon/AmazonStore.cpp:175
+msgid "Add selected item to your shopping cart"
+msgstr ""
+
+#: services/amazon/AmazonStore.cpp:191
+#, fuzzy
+#| msgid "View map"
+msgctxt "View your shopping cart contents"
+msgid "View Cart"
+msgstr "Vey li mape"
+
+#: services/amazon/AmazonStore.cpp:192
+msgid "View your shopping cart contents"
+msgstr ""
+
+#: services/amazon/AmazonStore.cpp:199
+#, fuzzy
+#| msgid " on <b>%1</b>"
+msgctxt "Checkout your shopping cart"
+msgid "Checkout"
+msgstr " so <b>%1</b>"
+
+#: services/amazon/AmazonStore.cpp:200
+msgid "Checkout your shopping cart"
+msgstr ""
+
+#: services/amazon/AmazonStore.cpp:254
+#, kde-format
+msgid ""
+"<b>MP3 Music Store</b><br/><br/>The item <em>%1</em> has been added to your "
+"shopping cart."
+msgstr ""
+
+#: services/amazon/AmazonStore.cpp:274 services/amazon/AmazonStore.cpp:315
+msgid "Error: Unable to write temporary file."
+msgstr ""
+
+#: services/amazon/AmazonStore.cpp:294
+msgid ""
+"<b>MP3 Music Store</b><br/><br/>You have to select your country  before you "
+"can search for items in your local Amazon store."
+msgstr ""
+
+#: services/amazon/AmazonStore.cpp:298
+msgid "Select your Amazon locale - Amarok"
+msgstr ""
+
+#: services/amazon/AmazonStore.cpp:360
+msgid "Error: Querying MP3 Music Store database failed. :-("
+msgstr ""
+
+#: services/amazon/AmazonStore.cpp:399
+msgid "Error: Unable to open temporary file."
+msgstr ""
+
+#: services/amazon/AmazonStore.cpp:419
+#, fuzzy
+#| msgid "Unable to parse avatar image data."
+msgid "Error: Unable to parse temporary file."
+msgstr "Dji n' a savou lére les dnêyes des imådjes di vizaedje."
+
 #: statusbar/CompoundProgressBar.cpp:63 statusbar/CompoundProgressBar.cpp:186
 #: statusbar/ProgressBar.cpp:48
 msgid "Abort"
@@ -16929,15 +17077,6 @@ msgstr "Dierin côp djouwé : %1"
 
 #~ msgid "Canada"
 #~ msgstr "Canada"
-
-#~ msgid "Germany"
-#~ msgstr "Almagne"
-
-#~ msgid "Japan"
-#~ msgstr "Djapon"
-
-#~ msgid "United Kingdom"
-#~ msgstr "Grande Burtagne"
 
 #, fuzzy
 #~| msgid "&Previous"
