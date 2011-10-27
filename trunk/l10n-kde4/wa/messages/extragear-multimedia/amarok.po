@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-10-26 03:55+0200\n"
+"POT-Creation-Date: 2011-10-27 03:31+0200\n"
 "PO-Revision-Date: 2011-09-21 08:11+0200\n"
 "Last-Translator: Djan Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -2730,6 +2730,20 @@ msgstr "Apontiaedjes di l' aplikete des alboms"
 msgid "Close"
 msgstr "Clôre"
 
+#: context/applets/currenttrack/CurrentTrack.h:38
+#: core-impl/collections/mediadevicecollection/MediaDeviceMeta.cpp:150
+#: core-impl/collections/mtpcollection/handler/MtpHandler.cpp:421
+#: core/meta/Meta.cpp:394 covermanager/CoverFetchUnit.cpp:596
+#: covermanager/CoverFetchUnit.cpp:606
+msgid "Unknown Artist"
+msgstr "Årtisse nén cnoxhou"
+
+#: context/applets/currenttrack/CurrentTrack.h:39
+#: core-impl/collections/mtpcollection/handler/MtpHandler.cpp:431
+#: core/meta/Meta.cpp:444
+msgid "Unknown Album"
+msgstr "Albom nén cnoxhou"
+
 #: context/applets/currenttrack/CurrentTrack.cpp:104
 #: core-impl/collections/db/sql/mysqlecollection/MySqlEmbeddedCollection.cpp:35
 #: core-impl/collections/db/sql/mysqlservercollection/MySqlServerCollection.cpp:41
@@ -2814,20 +2828,6 @@ msgstr "Mostrer l' djinre ezès sourdants des medias"
 #: context/applets/currenttrack/CurrentTrack.cpp:830
 msgid "Show Year in Media Sources"
 msgstr "Mostrer l' anêye ezès sourdants des medias"
-
-#: context/applets/currenttrack/CurrentTrack.h:38
-#: core-impl/collections/mediadevicecollection/MediaDeviceMeta.cpp:150
-#: core-impl/collections/mtpcollection/handler/MtpHandler.cpp:421
-#: core/meta/Meta.cpp:394 covermanager/CoverFetchUnit.cpp:596
-#: covermanager/CoverFetchUnit.cpp:606
-msgid "Unknown Artist"
-msgstr "Årtisse nén cnoxhou"
-
-#: context/applets/currenttrack/CurrentTrack.h:39
-#: core-impl/collections/mtpcollection/handler/MtpHandler.cpp:431
-#: core/meta/Meta.cpp:444
-msgid "Unknown Album"
-msgstr "Albom nén cnoxhou"
 
 #: context/applets/labels/LabelGraphicsItem.cpp:63
 msgid "Add label"
@@ -9652,55 +9652,6 @@ msgid_plural "%1 artists."
 msgstr[0] "1 årtisse."
 msgstr[1] "%1 årtisses."
 
-#: services/magnatune/MagnatuneInfoParser.cpp:32
-msgid "Loading artist info..."
-msgstr "Dji tchedje les pondants et les djondants d' l' årtisse..."
-
-#: services/magnatune/MagnatuneInfoParser.cpp:44
-#, kde-format
-msgid "Fetching %1 Artist Info"
-msgstr "Dji cwîr les pondants et les djondants d' l' årtisse %1..."
-
-#: services/magnatune/MagnatuneInfoParser.cpp:53
-msgid "Loading album info..."
-msgstr "Dji tchedje les pondants et les djondants d' l' albom..."
-
-#: services/magnatune/MagnatuneInfoParser.cpp:75
-#, fuzzy, kde-format
-#| msgid "Release Year: "
-msgid "Release Year: %1"
-msgstr "Anêye d' rexhowe:"
-
-#: services/magnatune/MagnatuneInfoParser.cpp:80
-msgid "Description:"
-msgstr "Discrijhaedje:"
-
-#: services/magnatune/MagnatuneInfoParser.cpp:84
-msgid "From Magnatune.com"
-msgstr "Di Magnatune.com"
-
-#: services/magnatune/MagnatuneInfoParser.cpp:166
-msgid "Loading Magnatune.com frontpage..."
-msgstr "Dji tchedje li prumire pådje di Magnatune.com..."
-
-#: services/magnatune/MagnatuneInfoParser.cpp:169
-msgid "Fetching Magnatune.com front page"
-msgstr "Dji cwîr li prumire pådje di Magnatune.com..."
-
-#: services/magnatune/MagnatuneInfoParser.cpp:182
-#: services/magnatune/MagnatuneInfoParser.cpp:198
-#, fuzzy
-#| msgid "Loading Magnatune.com frontpage..."
-msgid "Loading your Magnatune.com favorites page..."
-msgstr "Dji tchedje li prumire pådje di Magnatune.com..."
-
-#: services/magnatune/MagnatuneInfoParser.cpp:211
-#: services/magnatune/MagnatuneInfoParser.cpp:227
-#, fuzzy
-#| msgid "Loading Magnatune.com frontpage..."
-msgid "Loading your personal Magnatune.com recommendations page..."
-msgstr "Dji tchedje li prumire pådje di Magnatune.com..."
-
 #: services/magnatune/MagnatuneAlbumDownloader.cpp:68
 #, fuzzy, kde-format
 #| msgid "Downloading Magnatune.com Database"
@@ -9821,6 +9772,55 @@ msgstr "i va"
 #: services/magnatune/MagnatuneStore.cpp:680
 msgid "ERROR: Unknown argument."
 msgstr "AROKE: Årgumint nén cnoxhou."
+
+#: services/magnatune/MagnatuneInfoParser.cpp:32
+msgid "Loading artist info..."
+msgstr "Dji tchedje les pondants et les djondants d' l' årtisse..."
+
+#: services/magnatune/MagnatuneInfoParser.cpp:44
+#, kde-format
+msgid "Fetching %1 Artist Info"
+msgstr "Dji cwîr les pondants et les djondants d' l' årtisse %1..."
+
+#: services/magnatune/MagnatuneInfoParser.cpp:53
+msgid "Loading album info..."
+msgstr "Dji tchedje les pondants et les djondants d' l' albom..."
+
+#: services/magnatune/MagnatuneInfoParser.cpp:75
+#, fuzzy, kde-format
+#| msgid "Release Year: "
+msgid "Release Year: %1"
+msgstr "Anêye d' rexhowe:"
+
+#: services/magnatune/MagnatuneInfoParser.cpp:80
+msgid "Description:"
+msgstr "Discrijhaedje:"
+
+#: services/magnatune/MagnatuneInfoParser.cpp:84
+msgid "From Magnatune.com"
+msgstr "Di Magnatune.com"
+
+#: services/magnatune/MagnatuneInfoParser.cpp:166
+msgid "Loading Magnatune.com frontpage..."
+msgstr "Dji tchedje li prumire pådje di Magnatune.com..."
+
+#: services/magnatune/MagnatuneInfoParser.cpp:169
+msgid "Fetching Magnatune.com front page"
+msgstr "Dji cwîr li prumire pådje di Magnatune.com..."
+
+#: services/magnatune/MagnatuneInfoParser.cpp:182
+#: services/magnatune/MagnatuneInfoParser.cpp:198
+#, fuzzy
+#| msgid "Loading Magnatune.com frontpage..."
+msgid "Loading your Magnatune.com favorites page..."
+msgstr "Dji tchedje li prumire pådje di Magnatune.com..."
+
+#: services/magnatune/MagnatuneInfoParser.cpp:211
+#: services/magnatune/MagnatuneInfoParser.cpp:227
+#, fuzzy
+#| msgid "Loading Magnatune.com frontpage..."
+msgid "Loading your personal Magnatune.com recommendations page..."
+msgstr "Dji tchedje li prumire pådje di Magnatune.com..."
 
 #: services/mp3tunes/Mp3tunesMeta.cpp:45
 msgid ""

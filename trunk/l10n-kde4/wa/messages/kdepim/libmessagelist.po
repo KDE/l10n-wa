@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-10-19 04:01+0200\n"
+"POT-Creation-Date: 2011-10-27 04:10+0200\n"
 "PO-Revision-Date: 2009-01-11 16:21+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -235,7 +235,7 @@ msgctxt "Sort order for mail groups"
 msgid "Descending"
 msgstr "Discrexhant"
 
-#: core/item.cpp:229 core/messageitem.cpp:614
+#: core/item.cpp:229 core/messageitem.cpp:618
 #, fuzzy
 #| msgctxt "Permissions"
 #| msgid "Read"
@@ -243,7 +243,7 @@ msgctxt "Status of an item"
 msgid "Read"
 msgstr "Lére"
 
-#: core/item.cpp:231 core/messageitem.cpp:614
+#: core/item.cpp:231 core/messageitem.cpp:618
 #, fuzzy
 #| msgctxt "msg status"
 #| msgid "Unread"
@@ -259,7 +259,7 @@ msgctxt "Status of an item"
 msgid "Has Attachment"
 msgstr "Come ataetchmint"
 
-#: core/item.cpp:237 core/messageitem.cpp:612
+#: core/item.cpp:237 core/messageitem.cpp:616
 #, fuzzy
 #| msgctxt "msg status"
 #| msgid "Replied"
@@ -328,10 +328,379 @@ msgctxt "Status of an item"
 msgid "Ignored"
 msgstr "Passé houte"
 
-#: core/manager.cpp:98 core/model.cpp:293
+#: core/model.cpp:290
+msgid "Today"
+msgstr "Ouy"
+
+#: core/model.cpp:291
+msgid "Yesterday"
+msgstr "Ayir"
+
+#: core/model.cpp:293 core/manager.cpp:98
 msgctxt "Unknown date"
 msgid "Unknown"
 msgstr "Nén cnoxhou"
+
+#: core/model.cpp:294
+msgid "Last Week"
+msgstr "Samwinne passêye"
+
+#: core/model.cpp:295
+msgid "Two Weeks Ago"
+msgstr "Gn a deus samwinnes"
+
+#: core/model.cpp:296
+msgid "Three Weeks Ago"
+msgstr "Gn a troes samwinnes"
+
+#: core/model.cpp:297
+msgid "Four Weeks Ago"
+msgstr "Gn a cwate samwinnes"
+
+#: core/model.cpp:298
+#, fuzzy
+#| msgid "Four Weeks Ago"
+msgid "Five Weeks Ago"
+msgstr "Gn a cwate samwinnes"
+
+#: core/model.cpp:525 utils/themeeditor.cpp:204
+msgid "Receiver"
+msgstr "Riçuveu"
+
+#: core/model.cpp:526 utils/themeeditor.cpp:203
+msgid "Sender"
+msgstr "Evoyeu"
+
+#: core/model.cpp:1354
+#, fuzzy, kde-format
+#| msgctxt ""
+#| "%1: name; %2: number appended to it to make it unique among a list of "
+#| "names"
+#| msgid "%1 %2"
+msgctxt "Message Aggregation Group Header: Month name and Year number"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: core/model.cpp:3788
+#, fuzzy, kde-format
+#| msgid "Processed %1 Messages of %2"
+msgid "Processed 1 Message of %2"
+msgid_plural "Processed %1 Messages of %2"
+msgstr[0] "%1 messaedjes traitî so %2"
+msgstr[1] "%1 messaedjes traitî so %2"
+
+#: core/model.cpp:3794 core/model.cpp:3800
+#, fuzzy, kde-format
+#| msgid "Threaded %1 Messages of %2"
+msgid "Threaded 1 Message of %2"
+msgid_plural "Threaded %1 Messages of %2"
+msgstr[0] "%1 messaedjes dins l' lignoûle so %2"
+msgstr[1] "%1 messaedjes dins l' lignoûle so %2"
+
+#: core/model.cpp:3806
+#, fuzzy, kde-format
+#| msgid "Grouped %1 Threads of %2"
+msgid "Grouped 1 Thread of %2"
+msgid_plural "Grouped %1 Threads of %2"
+msgstr[0] "%1 lignoûles groupêyes so %2"
+msgstr[1] "%1 lignoûles groupêyes so %2"
+
+#: core/model.cpp:3812
+#, fuzzy, kde-format
+#| msgid "Updated %1 Groups of %2"
+msgid "Updated 1 Group of %2"
+msgid_plural "Updated %1 Groups of %2"
+msgstr[0] "%1 groupes metous a djoû so %2"
+msgstr[1] "%1 groupes metous a djoû so %2"
+
+#: core/model.cpp:3909
+msgctxt "@info:status Finished view fill"
+msgid "Ready"
+msgstr "Presse"
+
+#: core/theme.cpp:81
+msgctxt "Description of Type Subject"
+msgid "Subject"
+msgstr "Sudjet"
+
+#: core/theme.cpp:84
+msgctxt "Description of Type Date"
+msgid "Date"
+msgstr "Date"
+
+#: core/theme.cpp:87 core/manager.cpp:736
+msgid "Sender/Receiver"
+msgstr "Evoyeu/riçuveu"
+
+#: core/theme.cpp:90
+msgctxt "Description of Type Sender"
+msgid "Sender"
+msgstr "Evoyeu"
+
+#: core/theme.cpp:93
+msgctxt "Description of Type Receiver"
+msgid "Receiver"
+msgstr "Riçuveu"
+
+#: core/theme.cpp:96
+msgctxt "Description of Type Size"
+msgid "Size"
+msgstr "Grandeu"
+
+#: core/theme.cpp:99
+#, fuzzy
+#| msgid "New/Unread/Read Icon"
+msgid "Unread/Read Icon"
+msgstr "Imådjete Novea/Nén léjhou/Léjhou"
+
+#: core/theme.cpp:102
+msgid "Attachment Icon"
+msgstr "Imådjete Ataetchmint"
+
+#: core/theme.cpp:105
+msgid "Replied/Forwarded Icon"
+msgstr "Imådjete Respondou/Ricassî"
+
+#: core/theme.cpp:108
+msgid "Combined New/Unread/Read/Replied/Forwarded Icon"
+msgstr "Imådjete Novea/Nén léjhou/Léjhou/Respondou/Ricassî"
+
+#: core/theme.cpp:111
+msgid "Action Item Icon"
+msgstr "Imådjete Cayet di faitindje"
+
+#: core/theme.cpp:114
+msgid "Important Icon"
+msgstr "Imådjete Impôrtant"
+
+#: core/theme.cpp:117
+msgid "Group Header Label"
+msgstr "Etikete tiestire di groupe"
+
+#: core/theme.cpp:120
+msgid "Spam/Ham Icon"
+msgstr "Imådjete Sipam/Normå emile"
+
+#: core/theme.cpp:123
+msgid "Watched/Ignored Icon"
+msgstr "Imådjete Racassî/Passé houte"
+
+#: core/theme.cpp:126
+msgid "Group Header Expand/Collapse Icon"
+msgstr "Imådjete tiestire di groupe Totafwait mostrer/Totafwait catchî"
+
+#: core/theme.cpp:129
+msgid "Encryption State Icon"
+msgstr "Imådjete Estat d' ecriptaedje"
+
+#: core/theme.cpp:132
+msgid "Signature State Icon"
+msgstr "Imådjete Estat del sinateure"
+
+#: core/theme.cpp:135
+msgid "Vertical Separation Line"
+msgstr ""
+
+#: core/theme.cpp:138
+msgid "Horizontal Spacer"
+msgstr ""
+
+#: core/theme.cpp:141
+#, fuzzy
+#| msgid "Date"
+msgid "Max Date"
+msgstr "Date"
+
+#: core/theme.cpp:144
+msgid "Message Tags"
+msgstr "Etiketes des messaedje"
+
+#: core/theme.cpp:147
+#, fuzzy
+#| msgid "Action Item Icon"
+msgid "Note Icon"
+msgstr "Imådjete Cayet di faitindje"
+
+#: core/theme.cpp:149
+#, fuzzy
+#| msgid "Advanced Options"
+msgid "Invitation Icon"
+msgstr "Sipepieusès tchuzes"
+
+#: core/theme.cpp:151
+msgctxt "Description for an Unknown Type"
+msgid "Unknown"
+msgstr "Nén cnoxhou"
+
+#: core/theme.cpp:617
+#, fuzzy
+#| msgctxt "msg status"
+#| msgid "Unread"
+msgid "Unread"
+msgstr "Nén léjhou"
+
+#: core/theme.cpp:770
+msgid "Never Show"
+msgstr "Måy mostrer"
+
+#: core/theme.cpp:771
+msgid "Always Show"
+msgstr "Tofer mostrer"
+
+#: core/theme.cpp:778
+msgid "Plain Rectangles"
+msgstr ""
+
+#: core/theme.cpp:779
+msgid "Plain Joined Rectangle"
+msgstr ""
+
+#: core/theme.cpp:780
+msgid "Rounded Rectangles"
+msgstr ""
+
+#: core/theme.cpp:781
+msgid "Rounded Joined Rectangle"
+msgstr ""
+
+#: core/theme.cpp:782
+msgid "Gradient Rectangles"
+msgstr ""
+
+#: core/theme.cpp:783
+msgid "Gradient Joined Rectangle"
+msgstr ""
+
+#: core/theme.cpp:784
+msgid "Styled Rectangles"
+msgstr ""
+
+#: core/theme.cpp:785
+msgid "Styled Joined Rectangles"
+msgstr ""
+
+#: core/widgetbase.cpp:139
+msgctxt "Search for messages."
+msgid "Search"
+msgstr "Trover"
+
+#: core/widgetbase.cpp:160
+msgid "Open Full Search"
+msgstr "Drovi spepieus cweraedje"
+
+#: core/widgetbase.cpp:234
+msgid "Any Status"
+msgstr "Tolminme ké statut"
+
+#: core/widgetbase.cpp:237
+msgctxt "@action:inmenu Status of a message"
+msgid "Unread"
+msgstr "Nén léjhou"
+
+#: core/widgetbase.cpp:241
+msgctxt "@action:inmenu Status of a message"
+msgid "Replied"
+msgstr "Respondou"
+
+#: core/widgetbase.cpp:245
+msgctxt "@action:inmenu Status of a message"
+msgid "Forwarded"
+msgstr "Ricassî"
+
+#: core/widgetbase.cpp:249
+msgctxt "@action:inmenu Status of a message"
+msgid "Important"
+msgstr "Impôrtant"
+
+#: core/widgetbase.cpp:253
+#, fuzzy
+#| msgid "Action Item"
+msgctxt "@action:inmenu Status of a message"
+msgid "Action Item"
+msgstr "Cayet di faitindje"
+
+#: core/widgetbase.cpp:257
+#, fuzzy
+#| msgid "Watched"
+msgctxt "@action:inmenu Status of a message"
+msgid "Watched"
+msgstr "Racassî"
+
+#: core/widgetbase.cpp:261
+#, fuzzy
+#| msgid "Ignored"
+msgctxt "@action:inmenu Status of a message"
+msgid "Ignored"
+msgstr "Passé houte"
+
+#: core/widgetbase.cpp:265
+#, fuzzy
+#| msgid "Has Attachment"
+msgctxt "@action:inmenu Status of a message"
+msgid "Has Attachment"
+msgstr "Come ataetchmint"
+
+#: core/widgetbase.cpp:269
+#, fuzzy
+#| msgid "Advanced Options"
+msgctxt "@action:inmenu Status of a message"
+msgid "Has Invitation"
+msgstr "Sipepieusès tchuzes"
+
+#: core/widgetbase.cpp:273
+#, fuzzy
+#| msgid "Spam"
+msgctxt "@action:inmenu Status of a message"
+msgid "Spam"
+msgstr "Spam"
+
+#: core/widgetbase.cpp:277
+#, fuzzy
+#| msgid "Ham"
+msgctxt "@action:inmenu Status of a message"
+msgid "Ham"
+msgstr "Normå emilaedje"
+
+#: core/widgetbase.cpp:442 core/view.cpp:1584
+msgid "Theme"
+msgstr "Tinme"
+
+#: core/widgetbase.cpp:485 core/widgetbase.cpp:591
+#: utils/themeconfigbutton.cpp:46 utils/aggregationconfigbutton.cpp:45
+msgid "Configure..."
+msgstr "Apontyî..."
+
+#: core/widgetbase.cpp:548 core/view.cpp:1578
+msgid "Aggregation"
+msgstr ""
+
+#: core/widgetbase.cpp:647
+#, fuzzy
+#| msgid "Message Part Properties"
+msgid "Message Sort Order"
+msgstr "Prôpietés des pårteyes do messaedje"
+
+#: core/widgetbase.cpp:674
+#, fuzzy
+#| msgid "Message tag &icon:"
+msgid "Message Sort Direction"
+msgstr "&Imådjete di l' etikete des messaedjes:"
+
+#: core/widgetbase.cpp:695
+#, fuzzy
+#| msgid "Delete Folder"
+msgid "Group Sort Order"
+msgstr "Disfacer l' ridant"
+
+#: core/widgetbase.cpp:718
+#, fuzzy
+#| msgid "Message tag &icon:"
+msgid "Group Sort Direction"
+msgstr "&Imådjete di l' etikete des messaedjes:"
+
+#: core/widgetbase.cpp:736
+msgid "Folder Always Uses This Sort Order"
+msgstr ""
 
 #: core/manager.cpp:319
 msgid "Current Activity, Threaded"
@@ -434,10 +803,6 @@ msgctxt "@title:column Subject of messages"
 msgid "Subject"
 msgstr "Sudjet"
 
-#: core/manager.cpp:736 core/theme.cpp:87
-msgid "Sender/Receiver"
-msgstr "Evoyeu/riçuveu"
-
 #: core/manager.cpp:738
 msgctxt "Sender of a message"
 msgid "Sender"
@@ -467,12 +832,11 @@ msgctxt "Attachement indication"
 msgid "Attachment"
 msgstr "Ataetchmint"
 
-#: core/manager.cpp:744 core/theme.cpp:617
+#: core/manager.cpp:744
 #, fuzzy
-#| msgctxt "msg status"
-#| msgid "Unread"
-msgid "Unread"
-msgstr "Nén léjhou"
+#| msgid "New/Unread"
+msgid "Read/Unread"
+msgstr "Novea/Nén léjhou"
 
 #: core/manager.cpp:745
 msgid "Replied"
@@ -527,244 +891,9 @@ msgstr ""
 msgid "A fancy multiline and multi item theme with a clickable status column"
 msgstr ""
 
-#: core/manager.cpp:862 core/view.cpp:2354 core/view.cpp:2357
+#: core/manager.cpp:862 core/view.cpp:2377 core/view.cpp:2380
 msgid "Status"
 msgstr "Estat"
-
-#: core/model.cpp:290
-msgid "Today"
-msgstr "Ouy"
-
-#: core/model.cpp:291
-msgid "Yesterday"
-msgstr "Ayir"
-
-#: core/model.cpp:294
-msgid "Last Week"
-msgstr "Samwinne passêye"
-
-#: core/model.cpp:295
-msgid "Two Weeks Ago"
-msgstr "Gn a deus samwinnes"
-
-#: core/model.cpp:296
-msgid "Three Weeks Ago"
-msgstr "Gn a troes samwinnes"
-
-#: core/model.cpp:297
-msgid "Four Weeks Ago"
-msgstr "Gn a cwate samwinnes"
-
-#: core/model.cpp:298
-#, fuzzy
-#| msgid "Four Weeks Ago"
-msgid "Five Weeks Ago"
-msgstr "Gn a cwate samwinnes"
-
-#: core/model.cpp:525 utils/themeeditor.cpp:204
-msgid "Receiver"
-msgstr "Riçuveu"
-
-#: core/model.cpp:526 utils/themeeditor.cpp:203
-msgid "Sender"
-msgstr "Evoyeu"
-
-#: core/model.cpp:1354
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "%1: name; %2: number appended to it to make it unique among a list of "
-#| "names"
-#| msgid "%1 %2"
-msgctxt "Message Aggregation Group Header: Month name and Year number"
-msgid "%1 %2"
-msgstr "%1 %2"
-
-#: core/model.cpp:3788
-#, fuzzy, kde-format
-#| msgid "Processed %1 Messages of %2"
-msgid "Processed 1 Message of %2"
-msgid_plural "Processed %1 Messages of %2"
-msgstr[0] "%1 messaedjes traitî so %2"
-msgstr[1] "%1 messaedjes traitî so %2"
-
-#: core/model.cpp:3794 core/model.cpp:3800
-#, fuzzy, kde-format
-#| msgid "Threaded %1 Messages of %2"
-msgid "Threaded 1 Message of %2"
-msgid_plural "Threaded %1 Messages of %2"
-msgstr[0] "%1 messaedjes dins l' lignoûle so %2"
-msgstr[1] "%1 messaedjes dins l' lignoûle so %2"
-
-#: core/model.cpp:3806
-#, fuzzy, kde-format
-#| msgid "Grouped %1 Threads of %2"
-msgid "Grouped 1 Thread of %2"
-msgid_plural "Grouped %1 Threads of %2"
-msgstr[0] "%1 lignoûles groupêyes so %2"
-msgstr[1] "%1 lignoûles groupêyes so %2"
-
-#: core/model.cpp:3812
-#, fuzzy, kde-format
-#| msgid "Updated %1 Groups of %2"
-msgid "Updated 1 Group of %2"
-msgid_plural "Updated %1 Groups of %2"
-msgstr[0] "%1 groupes metous a djoû so %2"
-msgstr[1] "%1 groupes metous a djoû so %2"
-
-#: core/model.cpp:3909
-msgctxt "@info:status Finished view fill"
-msgid "Ready"
-msgstr "Presse"
-
-#: core/theme.cpp:81
-msgctxt "Description of Type Subject"
-msgid "Subject"
-msgstr "Sudjet"
-
-#: core/theme.cpp:84
-msgctxt "Description of Type Date"
-msgid "Date"
-msgstr "Date"
-
-#: core/theme.cpp:90
-msgctxt "Description of Type Sender"
-msgid "Sender"
-msgstr "Evoyeu"
-
-#: core/theme.cpp:93
-msgctxt "Description of Type Receiver"
-msgid "Receiver"
-msgstr "Riçuveu"
-
-#: core/theme.cpp:96
-msgctxt "Description of Type Size"
-msgid "Size"
-msgstr "Grandeu"
-
-#: core/theme.cpp:99
-#, fuzzy
-#| msgid "New/Unread/Read Icon"
-msgid "Unread/Read Icon"
-msgstr "Imådjete Novea/Nén léjhou/Léjhou"
-
-#: core/theme.cpp:102
-msgid "Attachment Icon"
-msgstr "Imådjete Ataetchmint"
-
-#: core/theme.cpp:105
-msgid "Replied/Forwarded Icon"
-msgstr "Imådjete Respondou/Ricassî"
-
-#: core/theme.cpp:108
-msgid "Combined New/Unread/Read/Replied/Forwarded Icon"
-msgstr "Imådjete Novea/Nén léjhou/Léjhou/Respondou/Ricassî"
-
-#: core/theme.cpp:111
-msgid "Action Item Icon"
-msgstr "Imådjete Cayet di faitindje"
-
-#: core/theme.cpp:114
-msgid "Important Icon"
-msgstr "Imådjete Impôrtant"
-
-#: core/theme.cpp:117
-msgid "Group Header Label"
-msgstr "Etikete tiestire di groupe"
-
-#: core/theme.cpp:120
-msgid "Spam/Ham Icon"
-msgstr "Imådjete Sipam/Normå emile"
-
-#: core/theme.cpp:123
-msgid "Watched/Ignored Icon"
-msgstr "Imådjete Racassî/Passé houte"
-
-#: core/theme.cpp:126
-msgid "Group Header Expand/Collapse Icon"
-msgstr "Imådjete tiestire di groupe Totafwait mostrer/Totafwait catchî"
-
-#: core/theme.cpp:129
-msgid "Encryption State Icon"
-msgstr "Imådjete Estat d' ecriptaedje"
-
-#: core/theme.cpp:132
-msgid "Signature State Icon"
-msgstr "Imådjete Estat del sinateure"
-
-#: core/theme.cpp:135
-msgid "Vertical Separation Line"
-msgstr ""
-
-#: core/theme.cpp:138
-msgid "Horizontal Spacer"
-msgstr ""
-
-#: core/theme.cpp:141
-#, fuzzy
-#| msgid "Date"
-msgid "Max Date"
-msgstr "Date"
-
-#: core/theme.cpp:144
-msgid "Message Tags"
-msgstr "Etiketes des messaedje"
-
-#: core/theme.cpp:147
-#, fuzzy
-#| msgid "Action Item Icon"
-msgid "Note Icon"
-msgstr "Imådjete Cayet di faitindje"
-
-#: core/theme.cpp:149
-#, fuzzy
-#| msgid "Advanced Options"
-msgid "Invitation Icon"
-msgstr "Sipepieusès tchuzes"
-
-#: core/theme.cpp:151
-msgctxt "Description for an Unknown Type"
-msgid "Unknown"
-msgstr "Nén cnoxhou"
-
-#: core/theme.cpp:770
-msgid "Never Show"
-msgstr "Måy mostrer"
-
-#: core/theme.cpp:771
-msgid "Always Show"
-msgstr "Tofer mostrer"
-
-#: core/theme.cpp:778
-msgid "Plain Rectangles"
-msgstr ""
-
-#: core/theme.cpp:779
-msgid "Plain Joined Rectangle"
-msgstr ""
-
-#: core/theme.cpp:780
-msgid "Rounded Rectangles"
-msgstr ""
-
-#: core/theme.cpp:781
-msgid "Rounded Joined Rectangle"
-msgstr ""
-
-#: core/theme.cpp:782
-msgid "Gradient Rectangles"
-msgstr ""
-
-#: core/theme.cpp:783
-msgid "Gradient Joined Rectangle"
-msgstr ""
-
-#: core/theme.cpp:784
-msgid "Styled Rectangles"
-msgstr ""
-
-#: core/theme.cpp:785
-msgid "Styled Joined Rectangles"
-msgstr ""
 
 #: core/view.cpp:725
 msgid "Adjust Column Sizes"
@@ -787,62 +916,54 @@ msgstr ""
 msgid "Sorting"
 msgstr "Rén"
 
-#: core/view.cpp:1578 core/widgetbase.cpp:548
-msgid "Aggregation"
-msgstr ""
-
-#: core/view.cpp:1584 core/widgetbase.cpp:442
-msgid "Theme"
-msgstr "Tinme"
-
-#: core/view.cpp:2335 core/view.cpp:2339
+#: core/view.cpp:2358 core/view.cpp:2362
 #, fuzzy
 #| msgid "&From"
 msgid "From"
 msgstr "&Di"
 
-#: core/view.cpp:2336 core/view.cpp:2340
+#: core/view.cpp:2359 core/view.cpp:2363
 #, fuzzy
 #| msgid "To"
 msgctxt "Receiver of the emial"
 msgid "To"
 msgstr "Po"
 
-#: core/view.cpp:2337 core/view.cpp:2341
+#: core/view.cpp:2360 core/view.cpp:2364
 msgid "Date"
 msgstr "Date"
 
-#: core/view.cpp:2355 core/view.cpp:2358
+#: core/view.cpp:2378 core/view.cpp:2381
 msgid "Size"
 msgstr "Grandeu"
 
-#: core/view.cpp:2363 core/view.cpp:2365
+#: core/view.cpp:2386 core/view.cpp:2388
 #, fuzzy
 #| msgid "Notes"
 msgid "Note"
 msgstr "Notes"
 
-#: core/view.cpp:2372 core/view.cpp:2374
+#: core/view.cpp:2395 core/view.cpp:2397
 #, fuzzy
 #| msgid "Previous"
 msgid "Preview"
 msgstr "Di dvant"
 
-#: core/view.cpp:2393
+#: core/view.cpp:2416
 #, fuzzy, kde-format
 msgid "<b>%1</b> reply"
 msgid_plural "<b>%1</b> replies"
 msgstr[0] "Mwaijhe sinateure."
 msgstr[1] "Mwaijhe sinateure."
 
-#: core/view.cpp:2397
+#: core/view.cpp:2420
 #, kde-format
 msgid "<b>%1</b> message in subtree (<b>%2</b> unread)"
 msgid_plural "<b>%1</b> messages in subtree (<b>%2</b> unread)"
 msgstr[0] ""
 msgstr[1] ""
 
-#: core/view.cpp:2442
+#: core/view.cpp:2465
 #, fuzzy, kde-format
 #| msgid "Threads default to o&pen"
 msgctxt ""
@@ -850,27 +971,27 @@ msgctxt ""
 msgid "Threads started on %1"
 msgstr "Lignoûles prémetou so d&rovi"
 
-#: core/view.cpp:2448
+#: core/view.cpp:2471
 #, fuzzy, kde-format
 #| msgid "Threads default to o&pen"
 msgctxt "@info:tooltip Formats to something like 'Threads started Yesterday'"
 msgid "Threads started %1"
 msgstr "Lignoûles prémetou so d&rovi"
 
-#: core/view.cpp:2453
+#: core/view.cpp:2476
 #, fuzzy, kde-format
 #| msgid "&Threaded message list"
 msgid "Threads with messages dated %1"
 msgstr "Ralo&yî les messaedjes sorlon leus sudjets (lignoûle)"
 
-#: core/view.cpp:2465
+#: core/view.cpp:2488
 #, fuzzy, kde-format
 #| msgid "Message was signed by %1."
 msgctxt "@info:tooltip Formats to something like 'Messages sent on 2008-12-21'"
 msgid "Messages sent on %1"
 msgstr "Li messaedje a stî siné di %1."
 
-#: core/view.cpp:2471
+#: core/view.cpp:2494
 #, fuzzy, kde-format
 #| msgid "Message was signed by %1."
 msgctxt ""
@@ -878,219 +999,104 @@ msgctxt ""
 msgid "Messages received on %1"
 msgstr "Li messaedje a stî siné di %1."
 
-#: core/view.cpp:2478
+#: core/view.cpp:2501
 #, fuzzy, kde-format
 msgctxt "@info:tooltip Formats to something like 'Messages sent Yesterday'"
 msgid "Messages sent %1"
 msgstr "Djivêye des Messaedjes"
 
-#: core/view.cpp:2484
+#: core/view.cpp:2507
 #, fuzzy, kde-format
 #| msgid "Message was signed by %1."
 msgctxt "@info:tooltip Formats to something like 'Messages received Yesterday'"
 msgid "Messages received %1"
 msgstr "Li messaedje a stî siné di %1."
 
-#: core/view.cpp:2496
+#: core/view.cpp:2519
 #, fuzzy, kde-format
 #| msgid "Threads default to o&pen"
 msgid "Threads started within %1"
 msgstr "Lignoûles prémetou so d&rovi"
 
-#: core/view.cpp:2499
+#: core/view.cpp:2522
 #, fuzzy, kde-format
 #| msgid "&Threaded message list"
 msgid "Threads containing messages with dates within %1"
 msgstr "Ralo&yî les messaedjes sorlon leus sudjets (lignoûle)"
 
-#: core/view.cpp:2507
+#: core/view.cpp:2530
 #, fuzzy, kde-format
 #| msgid "Message was signed with key %1."
 msgid "Messages sent within %1"
 msgstr "Li messaedje a stî siné avou l' clé %1."
 
-#: core/view.cpp:2509
+#: core/view.cpp:2532
 #, fuzzy, kde-format
 #| msgid "Message was signed with key %1."
 msgid "Messages received within %1"
 msgstr "Li messaedje a stî siné avou l' clé %1."
 
-#: core/view.cpp:2519
+#: core/view.cpp:2542
 #, fuzzy, kde-format
 #| msgid "Threads default to o&pen"
 msgid "Threads started by %1"
 msgstr "Lignoûles prémetou so d&rovi"
 
-#: core/view.cpp:2522
+#: core/view.cpp:2545
 #, fuzzy, kde-format
 #| msgid "&Threaded message list"
 msgid "Threads with most recent message by %1"
 msgstr "Ralo&yî les messaedjes sorlon leus sudjets (lignoûle)"
 
-#: core/view.cpp:2532 core/view.cpp:2558
+#: core/view.cpp:2555 core/view.cpp:2581
 #, fuzzy, kde-format
 #| msgid "Message was signed by %1."
 msgid "Messages sent to %1"
 msgstr "Li messaedje a stî siné di %1."
 
-#: core/view.cpp:2534
+#: core/view.cpp:2557
 #, fuzzy, kde-format
 #| msgid "Message was signed by %1."
 msgid "Messages sent by %1"
 msgstr "Li messaedje a stî siné di %1."
 
-#: core/view.cpp:2536
+#: core/view.cpp:2559
 #, fuzzy, kde-format
 #| msgid "Message was signed by %1."
 msgid "Messages received from %1"
 msgstr "Li messaedje a stî siné di %1."
 
-#: core/view.cpp:2546
+#: core/view.cpp:2569
 #, fuzzy, kde-format
 #| msgid "Threads default to o&pen"
 msgid "Threads directed to %1"
 msgstr "Lignoûles prémetou so d&rovi"
 
-#: core/view.cpp:2549
+#: core/view.cpp:2572
 #, fuzzy, kde-format
 #| msgid "&Threaded message list"
 msgid "Threads with most recent message directed to %1"
 msgstr "Ralo&yî les messaedjes sorlon leus sudjets (lignoûle)"
 
-#: core/view.cpp:2560
+#: core/view.cpp:2583
 #, fuzzy, kde-format
 #| msgid "Message was signed by %1."
 msgid "Messages received by %1"
 msgstr "Li messaedje a stî siné di %1."
 
-#: core/view.cpp:2589
+#: core/view.cpp:2612
 #, fuzzy, kde-format
 msgid "<b>%1</b> thread"
 msgid_plural "<b>%1</b> threads"
 msgstr[0] "Mwaijhe sinateure."
 msgstr[1] "Mwaijhe sinateure."
 
-#: core/view.cpp:2594
+#: core/view.cpp:2617
 #, kde-format
 msgid "<b>%1</b> message (<b>%2</b> unread)"
 msgid_plural "<b>%1</b> messages (<b>%2</b> unread)"
 msgstr[0] ""
 msgstr[1] ""
-
-#: core/widgetbase.cpp:139
-msgctxt "Search for messages."
-msgid "Search"
-msgstr "Trover"
-
-#: core/widgetbase.cpp:160
-msgid "Open Full Search"
-msgstr "Drovi spepieus cweraedje"
-
-#: core/widgetbase.cpp:234
-msgid "Any Status"
-msgstr "Tolminme ké statut"
-
-#: core/widgetbase.cpp:237
-msgctxt "@action:inmenu Status of a message"
-msgid "Unread"
-msgstr "Nén léjhou"
-
-#: core/widgetbase.cpp:241
-msgctxt "@action:inmenu Status of a message"
-msgid "Replied"
-msgstr "Respondou"
-
-#: core/widgetbase.cpp:245
-msgctxt "@action:inmenu Status of a message"
-msgid "Forwarded"
-msgstr "Ricassî"
-
-#: core/widgetbase.cpp:249
-msgctxt "@action:inmenu Status of a message"
-msgid "Important"
-msgstr "Impôrtant"
-
-#: core/widgetbase.cpp:253
-#, fuzzy
-#| msgid "Action Item"
-msgctxt "@action:inmenu Status of a message"
-msgid "Action Item"
-msgstr "Cayet di faitindje"
-
-#: core/widgetbase.cpp:257
-#, fuzzy
-#| msgid "Watched"
-msgctxt "@action:inmenu Status of a message"
-msgid "Watched"
-msgstr "Racassî"
-
-#: core/widgetbase.cpp:261
-#, fuzzy
-#| msgid "Ignored"
-msgctxt "@action:inmenu Status of a message"
-msgid "Ignored"
-msgstr "Passé houte"
-
-#: core/widgetbase.cpp:265
-#, fuzzy
-#| msgid "Has Attachment"
-msgctxt "@action:inmenu Status of a message"
-msgid "Has Attachment"
-msgstr "Come ataetchmint"
-
-#: core/widgetbase.cpp:269
-#, fuzzy
-#| msgid "Advanced Options"
-msgctxt "@action:inmenu Status of a message"
-msgid "Has Invitation"
-msgstr "Sipepieusès tchuzes"
-
-#: core/widgetbase.cpp:273
-#, fuzzy
-#| msgid "Spam"
-msgctxt "@action:inmenu Status of a message"
-msgid "Spam"
-msgstr "Spam"
-
-#: core/widgetbase.cpp:277
-#, fuzzy
-#| msgid "Ham"
-msgctxt "@action:inmenu Status of a message"
-msgid "Ham"
-msgstr "Normå emilaedje"
-
-#: core/widgetbase.cpp:485 core/widgetbase.cpp:591
-#: utils/themeconfigbutton.cpp:46 utils/aggregationconfigbutton.cpp:45
-msgid "Configure..."
-msgstr "Apontyî..."
-
-#: core/widgetbase.cpp:647
-#, fuzzy
-#| msgid "Message Part Properties"
-msgid "Message Sort Order"
-msgstr "Prôpietés des pårteyes do messaedje"
-
-#: core/widgetbase.cpp:674
-#, fuzzy
-#| msgid "Message tag &icon:"
-msgid "Message Sort Direction"
-msgstr "&Imådjete di l' etikete des messaedjes:"
-
-#: core/widgetbase.cpp:695
-#, fuzzy
-#| msgid "Delete Folder"
-msgid "Group Sort Order"
-msgstr "Disfacer l' ridant"
-
-#: core/widgetbase.cpp:718
-#, fuzzy
-#| msgid "Message tag &icon:"
-msgid "Group Sort Direction"
-msgstr "&Imådjete di l' etikete des messaedjes:"
-
-#: core/widgetbase.cpp:736
-msgid "Folder Always Uses This Sort Order"
-msgstr ""
 
 #: utils/aggregationeditor.cpp:47
 #, fuzzy
@@ -1625,9 +1631,6 @@ msgstr ""
 #~ msgctxt "Status of an item"
 #~ msgid "New"
 #~ msgstr "Novea"
-
-#~ msgid "New/Unread"
-#~ msgstr "Novea/Nén léjhou"
 
 #~ msgctxt "@action:inmenu Status of a message"
 #~ msgid "New"
