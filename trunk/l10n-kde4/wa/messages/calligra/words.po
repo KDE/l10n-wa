@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-10-19 02:58+0200\n"
+"POT-Creation-Date: 2011-10-30 02:02+0100\n"
 "PO-Revision-Date: 2011-09-21 20:33+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -831,26 +831,34 @@ msgstr "Rizultat del coridjrece d' ortografeye"
 msgid "Change Variable To"
 msgstr "Candjî l' valixhance del variåve e"
 
-#: part/KWOdfLoader.cpp:88
-msgid "Invalid OASIS OpenDocument file. No office:body tag found."
-msgstr ""
-"Fitchî OpenDocument OASIS nén valåbe. Dji n' a trové pont d' etikete office:"
-"body."
+#: part/KWDLoader.cpp:74
+msgid "Invalid document. No mimetype specified."
+msgstr "Documint nén valåbe. Pont d' sôre mime di specifieye."
 
-#: part/KWOdfLoader.cpp:100
-msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
-msgstr ""
-"Fitchî OpenDocument OASIS nén valåbe. Dji n' a trové pont d' etikete office:"
-"body."
-
-#: part/KWOdfLoader.cpp:102
-#, kde-format
+#: part/KWDLoader.cpp:78
+#, fuzzy, kde-format
+#| msgid ""
+#| "Invalid document. Expected mimetype application/x-kword or application/"
+#| "vnd.kde.kword, got %1"
 msgid ""
-"This is not a word processing document, but %1. Please try opening it with "
-"the appropriate application."
+"Invalid document. Expected mimetype application/x-words or application/vnd."
+"kde.words, got %1"
 msgstr ""
-"Çouci n' est nén on documint d' sicrijhaedje mins on %1. Sayîz del drovi "
-"avou l' bon programe. "
+"Documint nén valåbe. Li sôre mime ratindowe esteut application/x-kword "
+"oudonbén application/vnd.kde.kword mins dj' a yeu %1"
+
+#: part/KWDLoader.cpp:104
+#, kde-format
+msgid "Invalid document. Paper size: %1x%2"
+msgstr "Documint nén valåbe. Grandeu do papî: %1x%2"
+
+#: part/KWDLoader.cpp:689
+msgid "Unable to locate footnote text"
+msgstr "Dji n' sai trover ewou çk' est l' tecse del note do pî"
+
+#: part/KWDLoader.cpp:715
+msgid "Unable to locate note-text"
+msgstr "Dji n' sai trover ewou çk' est l' tecse del note"
 
 #: part/KWStatusBar.cpp:48
 msgid "Modified"
@@ -922,6 +930,27 @@ msgstr "Controleu do zoumaedje"
 #: part/KWGui.cpp:73
 msgid "Tools"
 msgstr "&Usteyes"
+
+#: part/KWOdfLoader.cpp:88
+msgid "Invalid OASIS OpenDocument file. No office:body tag found."
+msgstr ""
+"Fitchî OpenDocument OASIS nén valåbe. Dji n' a trové pont d' etikete office:"
+"body."
+
+#: part/KWOdfLoader.cpp:100
+msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
+msgstr ""
+"Fitchî OpenDocument OASIS nén valåbe. Dji n' a trové pont d' etikete office:"
+"body."
+
+#: part/KWOdfLoader.cpp:102
+#, kde-format
+msgid ""
+"This is not a word processing document, but %1. Please try opening it with "
+"the appropriate application."
+msgstr ""
+"Çouci n' est nén on documint d' sicrijhaedje mins on %1. Sayîz del drovi "
+"avou l' bon programe. "
 
 #: part/commands/KWFrameDeleteCommand.cpp:29
 #, fuzzy
@@ -1371,6 +1400,64 @@ msgstr "Gris copete et al valeye"
 msgid "File to open"
 msgstr "Fitchî a drovi"
 
+#: part/Words.cpp:58
+msgid "Odd Pages Header"
+msgstr "Tiestire des pådjes impaires"
+
+#: part/Words.cpp:60
+msgid "Even Pages Header"
+msgstr "Tiestire des pådjes paires"
+
+#: part/Words.cpp:62
+msgid "Odd Pages Footer"
+msgstr "Pî d' pådje des pådjes impaires"
+
+#: part/Words.cpp:64
+msgid "Even Pages Footer"
+msgstr "Pî d' pådje des pådjes paires"
+
+#: part/Words.cpp:66
+msgid "Main text"
+msgstr "Mwaisse tecse"
+
+#: part/Words.cpp:68
+#, fuzzy
+#| msgid "Other Pages"
+msgid "Other text"
+msgstr "Ôtès pådjes"
+
+#: part/KWDocument.cpp:488
+msgid "Copy"
+msgstr "Copyî"
+
+#: part/KWDocument.cpp:533
+msgid "Head 1"
+msgstr "Tite 1"
+
+#: part/KWDocument.cpp:540
+msgid "Head 2"
+msgstr "Tite 2"
+
+#: part/KWDocument.cpp:547
+msgid "Head 3"
+msgstr "Tite 3"
+
+#: part/KWDocument.cpp:554
+msgid "Bullet List"
+msgstr "Djivêye a ponts"
+
+#: part/KWDocument.cpp:779
+#, fuzzy
+#| msgid "Can not find needed text component, KWord will quit now"
+msgid "Can not find needed text component, Words will quit now"
+msgstr ""
+"Dji n' sai trover les componints d' sicrijhaedje ki dj' a dandjî, KWord va "
+"moussî foû do côp."
+
+#: part/KWDocument.cpp:780
+msgid "Installation Error"
+msgstr "Aroke d' astalaedje"
+
 #: part/KWView.cpp:252
 #, fuzzy
 #| msgid "Page Properties"
@@ -1770,98 +1857,11 @@ msgctxt "(qtundo-format)"
 msgid "Create Linked Copy"
 msgstr "Ahiver copeye loyeye"
 
-#: part/KWView.cpp:1369
+#: part/KWView.cpp:1370
 #, fuzzy
 #| msgid "Insert Page Style"
 msgid "Insert Image Options"
 msgstr "Sititchî stîle del pådje"
-
-#: part/Words.cpp:58
-msgid "Odd Pages Header"
-msgstr "Tiestire des pådjes impaires"
-
-#: part/Words.cpp:60
-msgid "Even Pages Header"
-msgstr "Tiestire des pådjes paires"
-
-#: part/Words.cpp:62
-msgid "Odd Pages Footer"
-msgstr "Pî d' pådje des pådjes impaires"
-
-#: part/Words.cpp:64
-msgid "Even Pages Footer"
-msgstr "Pî d' pådje des pådjes paires"
-
-#: part/Words.cpp:66
-msgid "Main text"
-msgstr "Mwaisse tecse"
-
-#: part/Words.cpp:68
-#, fuzzy
-#| msgid "Other Pages"
-msgid "Other text"
-msgstr "Ôtès pådjes"
-
-#: part/KWDLoader.cpp:74
-msgid "Invalid document. No mimetype specified."
-msgstr "Documint nén valåbe. Pont d' sôre mime di specifieye."
-
-#: part/KWDLoader.cpp:78
-#, fuzzy, kde-format
-#| msgid ""
-#| "Invalid document. Expected mimetype application/x-kword or application/"
-#| "vnd.kde.kword, got %1"
-msgid ""
-"Invalid document. Expected mimetype application/x-words or application/vnd."
-"kde.words, got %1"
-msgstr ""
-"Documint nén valåbe. Li sôre mime ratindowe esteut application/x-kword "
-"oudonbén application/vnd.kde.kword mins dj' a yeu %1"
-
-#: part/KWDLoader.cpp:104
-#, kde-format
-msgid "Invalid document. Paper size: %1x%2"
-msgstr "Documint nén valåbe. Grandeu do papî: %1x%2"
-
-#: part/KWDLoader.cpp:691
-msgid "Unable to locate footnote text"
-msgstr "Dji n' sai trover ewou çk' est l' tecse del note do pî"
-
-#: part/KWDLoader.cpp:717
-msgid "Unable to locate note-text"
-msgstr "Dji n' sai trover ewou çk' est l' tecse del note"
-
-#: part/KWDocument.cpp:488
-msgid "Copy"
-msgstr "Copyî"
-
-#: part/KWDocument.cpp:533
-msgid "Head 1"
-msgstr "Tite 1"
-
-#: part/KWDocument.cpp:540
-msgid "Head 2"
-msgstr "Tite 2"
-
-#: part/KWDocument.cpp:547
-msgid "Head 3"
-msgstr "Tite 3"
-
-#: part/KWDocument.cpp:554
-msgid "Bullet List"
-msgstr "Djivêye a ponts"
-
-#: part/KWDocument.cpp:779
-#, fuzzy
-#| msgid "Can not find needed text component, KWord will quit now"
-msgid "Can not find needed text component, Words will quit now"
-msgstr ""
-"Dji n' sai trover les componints d' sicrijhaedje ki dj' a dandjî, KWord va "
-"moussî foû do côp."
-
-#: part/KWDocument.cpp:780
-msgid "Installation Error"
-msgstr "Aroke d' astalaedje"
 
 #: part/KWAboutData.h:27
 #, fuzzy
