@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-10-31 03:49+0100\n"
+"POT-Creation-Date: 2011-11-01 04:12+0100\n"
 "PO-Revision-Date: 2011-09-21 08:11+0200\n"
 "Last-Translator: Djan Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -1446,7 +1446,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, labelName)
 #: rc.cpp:581 rc.cpp:1931 rc.cpp:1937 rc.cpp:2326 rc.cpp:2338
 #: amarokurls/BookmarkModel.cpp:265
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:450
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:414
 #: playlistgenerator/TreeModel.cpp:64
 #: services/amazon/AmazonItemTreeModel.cpp:59
 msgid "Name"
@@ -2365,7 +2365,7 @@ msgstr "Ritcherdjî les tåvlateures avou les tites eyet årtisses shuvants"
 #: context/applets/wikipedia/WikipediaApplet.cpp:614
 #: dialogs/FilenameLayoutDialog.cpp:62 dialogs/FilenameLayoutDialog.cpp:435
 #: dialogs/transferdialog.cpp:88 musicbrainz/MusicBrainzTags.cpp:359
-#: playlist/PlaylistModel.cpp:931 services/jamendo/JamendoInfoParser.cpp:51
+#: playlist/PlaylistModel.cpp:863 services/jamendo/JamendoInfoParser.cpp:51
 #: services/lastfm/LastFmService.cpp:507
 #: services/magnatune/MagnatuneStore.cpp:218
 #: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
@@ -2377,7 +2377,7 @@ msgstr "Årtisse"
 #: rc.cpp:1037 browsers/playlistbrowser/PodcastModel.cpp:334
 #: core/meta/support/MetaConstants.cpp:106 dialogs/FilenameLayoutDialog.cpp:58
 #: dialogs/FilenameLayoutDialog.cpp:421 musicbrainz/MusicBrainzTags.cpp:358
-#: playlist/PlaylistModel.cpp:930 widgets/SmartPlaylistEditor.cpp:183
+#: playlist/PlaylistModel.cpp:862 widgets/SmartPlaylistEditor.cpp:183
 msgid "Title"
 msgstr "Tite"
 
@@ -3617,7 +3617,7 @@ msgstr "<vude>"
 #. i18n: ectx: property (text), widget (QLabel, label_13)
 #: rc.cpp:1626 browsers/CollectionTreeItemModelBase.cpp:984
 #: dialogs/FilenameLayoutDialog.cpp:78 dialogs/FilenameLayoutDialog.cpp:456
-#: musicbrainz/MusicBrainzTags.cpp:361 playlist/PlaylistModel.cpp:932
+#: musicbrainz/MusicBrainzTags.cpp:361 playlist/PlaylistModel.cpp:864
 msgid "Album Artist"
 msgstr "Albom Årtisse"
 
@@ -4199,7 +4199,7 @@ msgstr "Response"
 #. i18n: file: network/NetworkRequests.ui:56
 #. i18n: ectx: property (text), widget (QTreeWidget, requestList)
 #: rc.cpp:1916 core/meta/support/MetaConstants.cpp:116
-#: playlist/PlaylistModel.cpp:943 widgets/SmartPlaylistEditor.cpp:183
+#: playlist/PlaylistModel.cpp:875 widgets/SmartPlaylistEditor.cpp:183
 msgid "Length"
 msgstr "Longueur"
 
@@ -7183,13 +7183,13 @@ msgid "Add Position Marker"
 msgstr "Radjouter markeu d' eplaeçmint"
 
 #: amarokurls/BookmarkModel.cpp:86
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:451
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:415
 msgid "Group"
 msgstr "Groupe"
 
 #: amarokurls/BookmarkModel.cpp:266
 #: browsers/playlistbrowser/PodcastModel.cpp:333
-#: playlist/PlaylistModel.cpp:942
+#: playlist/PlaylistModel.cpp:874
 msgid "Type"
 msgstr "Sôre"
 
@@ -7400,7 +7400,7 @@ msgid "Copy to Collection"
 msgstr "Copyî el ramexhnêye"
 
 #: browsers/filebrowser/FileView.cpp:398
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:43
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:49
 #: browsers/CollectionTreeView.cpp:838
 #: context/applets/albums/AlbumsView.cpp:240
 #: services/lastfm/LastFmTreeView.cpp:111
@@ -7408,7 +7408,7 @@ msgid "&Add to Playlist"
 msgstr "&Radjouter el djivêye a djouwer"
 
 #: browsers/filebrowser/FileView.cpp:410
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:50
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:56
 #: browsers/CollectionTreeView.cpp:847
 #: context/applets/albums/AlbumsView.cpp:241
 #: services/lastfm/LastFmTreeView.cpp:120
@@ -7526,6 +7526,68 @@ msgstr "Raddisté"
 msgid "Accuracy"
 msgstr "Sipepieuzisté"
 
+#: browsers/playlistbrowser/PlaylistBrowserCategory.cpp:75
+#: services/opmldirectory/OpmlDirectoryModel.cpp:44
+msgid "Add Folder"
+msgstr "Radjouter ridant"
+
+#: browsers/playlistbrowser/PlaylistBrowserCategory.cpp:80
+msgid "Visible Sources"
+msgstr "Sourdants veyåves"
+
+#: browsers/playlistbrowser/PlaylistBrowserCategory.cpp:184
+msgid "Folders are only shown in <b>merged view</b>."
+msgstr "Les ridants n' sont mostrés k' e <b>vuwe rimaxheye</b>."
+
+#: browsers/playlistbrowser/PlaylistBrowserCategory.cpp:271
+msgctxt "default name for new folder"
+msgid "New Folder"
+msgstr "Novea ridant"
+
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:44
+#, fuzzy
+#| msgid "Create Smart Playlist"
+msgid "Create empty playlist"
+msgstr "Ahiver malene djivêye a djouwer"
+
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:138
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:187
+#, kde-format
+msgctxt "number of playlists from one source"
+msgid "One Playlist"
+msgid_plural "%1 playlists"
+msgstr[0] "Ene djivêye a djouwer"
+msgstr[1] "%1 djivêyes a djouwer"
+
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:416
+msgid "Source"
+msgstr "Sourdant"
+
+#: browsers/playlistbrowser/PodcastModel.cpp:72
+msgctxt "toggle the \"new\" status of this podcast episode"
+msgid "&New"
+msgstr "&Novea"
+
+#: browsers/playlistbrowser/PodcastModel.cpp:260
+#, kde-format
+msgctxt "number of podcasts from one source"
+msgid "One Channel"
+msgid_plural "%1 channels"
+msgstr[0] "On canå"
+msgstr[1] "%1 canås"
+
+#: browsers/playlistbrowser/PodcastModel.cpp:335 dialogs/TagDialog.cpp:509
+msgid "Summary"
+msgstr "Racourti"
+
+#: browsers/playlistbrowser/PodcastModel.cpp:355
+msgid "Add Podcast"
+msgstr "Radjouter podcasse"
+
+#: browsers/playlistbrowser/PodcastModel.cpp:356
+msgid "Enter RSS 1.0/2.0 or Atom feed URL:"
+msgstr "Diner l' URL do floû RSS 1.0/2.0 ou Atom :"
+
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:43
 #, fuzzy
 #| msgid "Edit &case"
@@ -7553,24 +7615,6 @@ msgstr ""
 #, fuzzy
 msgid "This bias has no settings."
 msgstr "Li coridjaedje n' a pont d' apontiaedjes"
-
-#: browsers/playlistbrowser/PlaylistBrowserCategory.cpp:75
-#: services/opmldirectory/OpmlDirectoryModel.cpp:44
-msgid "Add Folder"
-msgstr "Radjouter ridant"
-
-#: browsers/playlistbrowser/PlaylistBrowserCategory.cpp:80
-msgid "Visible Sources"
-msgstr "Sourdants veyåves"
-
-#: browsers/playlistbrowser/PlaylistBrowserCategory.cpp:183
-msgid "Folders are only shown in <b>merged view</b>."
-msgstr "Les ridants n' sont mostrés k' e <b>vuwe rimaxheye</b>."
-
-#: browsers/playlistbrowser/PlaylistBrowserCategory.cpp:278
-msgctxt "default name for new folder"
-msgid "New Folder"
-msgstr "Novea ridant"
 
 #: browsers/playlistbrowser/PodcastCategory.cpp:81
 msgid "List of podcast subscriptions and episodes"
@@ -7776,7 +7820,7 @@ msgstr "Tapez li no do novea ridant :"
 
 #: browsers/playlistbrowser/PlaylistsInFoldersProxy.cpp:333
 #: core-impl/collections/umscollection/podcasts/UmsPodcastProvider.cpp:254
-#: playlistmanager/file/PlaylistFileProvider.cpp:457
+#: playlistmanager/file/PlaylistFileProvider.cpp:458
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:117
 msgid "Confirm Delete"
 msgstr "Racertiner disfaçaedje"
@@ -7808,44 +7852,6 @@ msgstr ""
 "scane vosse ramexhnêye eyet tolminme kéne djivêye a djouwer ki vs schapez "
 "sont mostrêyes chal, eto."
 
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:175
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:224
-#, kde-format
-msgctxt "number of playlists from one source"
-msgid "One Playlist"
-msgid_plural "%1 playlists"
-msgstr[0] "Ene djivêye a djouwer"
-msgstr[1] "%1 djivêyes a djouwer"
-
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:452
-msgid "Source"
-msgstr "Sourdant"
-
-#: browsers/playlistbrowser/PodcastModel.cpp:72
-msgctxt "toggle the \"new\" status of this podcast episode"
-msgid "&New"
-msgstr "&Novea"
-
-#: browsers/playlistbrowser/PodcastModel.cpp:260
-#, kde-format
-msgctxt "number of podcasts from one source"
-msgid "One Channel"
-msgid_plural "%1 channels"
-msgstr[0] "On canå"
-msgstr[1] "%1 canås"
-
-#: browsers/playlistbrowser/PodcastModel.cpp:335 dialogs/TagDialog.cpp:509
-msgid "Summary"
-msgstr "Racourti"
-
-#: browsers/playlistbrowser/PodcastModel.cpp:355
-msgid "Add Podcast"
-msgstr "Radjouter podcasse"
-
-#: browsers/playlistbrowser/PodcastModel.cpp:356
-msgid "Enter RSS 1.0/2.0 or Atom feed URL:"
-msgstr "Diner l' URL do floû RSS 1.0/2.0 ou Atom :"
-
 #: browsers/servicebrowser/ServiceBrowser.cpp:40
 msgid ""
 "The Internet browser lets you browse online sources of content that "
@@ -7865,8 +7871,8 @@ msgstr "Nén cnoxhou"
 #: browsers/CollectionTreeItemModelBase.cpp:316
 #: core-impl/collections/db/sql/SqlMeta.cpp:420
 #: core-impl/collections/db/ScanResultProcessor.cpp:270
-#: covermanager/CoverManager.cpp:841 dialogs/TrackOrganizer.cpp:48
-#: playlist/PlaylistModel.cpp:907 widgets/AlbumBreadcrumbWidget.cpp:60
+#: core/support/Amarok.cpp:213 covermanager/CoverManager.cpp:841
+#: dialogs/TrackOrganizer.cpp:48 widgets/AlbumBreadcrumbWidget.cpp:60
 msgid "Various Artists"
 msgstr "Sacwants årtisses"
 
@@ -7880,7 +7886,7 @@ msgstr "Anêye - Albom"
 #: context/applets/wikipedia/WikipediaApplet.cpp:620
 #: dialogs/FilenameLayoutDialog.cpp:74 dialogs/FilenameLayoutDialog.cpp:463
 #: dialogs/transferdialog.cpp:89 musicbrainz/MusicBrainzTags.cpp:360
-#: playlist/view/PlaylistViewCommon.cpp:64 playlist/PlaylistModel.cpp:935
+#: playlist/view/PlaylistViewCommon.cpp:64 playlist/PlaylistModel.cpp:867
 #: services/jamendo/JamendoInfoParser.cpp:83
 #: services/magnatune/MagnatuneStore.cpp:224
 #: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
@@ -7889,7 +7895,7 @@ msgstr "Albom"
 
 #: browsers/CollectionTreeItemModelBase.cpp:985
 #: core/meta/support/MetaConstants.cpp:110 dialogs/FilenameLayoutDialog.cpp:66
-#: dialogs/FilenameLayoutDialog.cpp:442 playlist/PlaylistModel.cpp:933
+#: dialogs/FilenameLayoutDialog.cpp:442 playlist/PlaylistModel.cpp:865
 #: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
 msgid "Composer"
 msgstr "Compôzeu"
@@ -7897,14 +7903,14 @@ msgstr "Compôzeu"
 #: browsers/CollectionTreeItemModelBase.cpp:986
 #: core/meta/support/MetaConstants.cpp:109 dialogs/FilenameLayoutDialog.cpp:86
 #: dialogs/FilenameLayoutDialog.cpp:477 dialogs/transferdialog.cpp:90
-#: playlist/ProgressiveSearchWidget.cpp:95 playlist/PlaylistModel.cpp:939
+#: playlist/ProgressiveSearchWidget.cpp:95 playlist/PlaylistModel.cpp:871
 #: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
 msgid "Genre"
 msgstr "Djinre"
 
 #: browsers/CollectionTreeItemModelBase.cpp:987
 #: core/meta/support/MetaConstants.cpp:111 dialogs/FilenameLayoutDialog.cpp:70
-#: dialogs/FilenameLayoutDialog.cpp:449 playlist/PlaylistModel.cpp:934
+#: dialogs/FilenameLayoutDialog.cpp:449 playlist/PlaylistModel.cpp:866
 #: widgets/SmartPlaylistEditor.cpp:184 widgets/SmartPlaylistEditor.cpp:197
 #: widgets/SmartPlaylistEditor.cpp:921
 msgid "Year"
@@ -8190,12 +8196,12 @@ msgid "Tracks"
 msgstr "Bokets"
 
 #: context/applets/currenttrack/CurrentTrack.cpp:447
-#: playlist/PlaylistModel.cpp:948
+#: playlist/PlaylistModel.cpp:880
 msgid "Play Count"
 msgstr "Contaedje des djouwaedjes"
 
 #: context/applets/currenttrack/CurrentTrack.cpp:448
-#: core/meta/support/MetaConstants.cpp:122 playlist/PlaylistModel.cpp:946
+#: core/meta/support/MetaConstants.cpp:122 playlist/PlaylistModel.cpp:878
 #: widgets/SmartPlaylistEditor.cpp:185
 msgid "Score"
 msgstr "Ponts"
@@ -9616,14 +9622,14 @@ msgstr[0] "Dji disface li boket di l' éndjin"
 msgstr[1] "Dji disface les bokets di l' éndjin"
 
 #: core-impl/collections/mediadevicecollection/playlist/MediaDeviceUserPlaylistProvider.cpp:115
-#: playlistmanager/file/PlaylistFileProvider.cpp:485
+#: playlistmanager/file/PlaylistFileProvider.cpp:486
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:148
 #: playlistmanager/PlaylistManager.cpp:384
 msgid "Change playlist"
 msgstr "Candjî d' djivêye a djouwer"
 
 #: core-impl/collections/mediadevicecollection/playlist/MediaDeviceUserPlaylistProvider.cpp:116
-#: playlistmanager/file/PlaylistFileProvider.cpp:486
+#: playlistmanager/file/PlaylistFileProvider.cpp:487
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:149
 #: playlistmanager/PlaylistManager.cpp:385
 msgid "Enter new name for playlist:"
@@ -10114,7 +10120,7 @@ msgid "Album Name"
 msgstr "albom"
 
 #: core/meta/support/MetaConstants.cpp:112 dialogs/FilenameLayoutDialog.cpp:82
-#: dialogs/FilenameLayoutDialog.cpp:470 playlist/PlaylistModel.cpp:940
+#: dialogs/FilenameLayoutDialog.cpp:470 playlist/PlaylistModel.cpp:872
 #: widgets/SmartPlaylistEditor.cpp:184
 msgid "Comment"
 msgstr "Rawete"
@@ -10124,7 +10130,7 @@ msgstr "Rawete"
 msgid "Track Number"
 msgstr "Limero do boket"
 
-#: core/meta/support/MetaConstants.cpp:114 playlist/PlaylistModel.cpp:936
+#: core/meta/support/MetaConstants.cpp:114 playlist/PlaylistModel.cpp:868
 msgid "Disc Number"
 msgstr "Limero del plake"
 
@@ -10140,11 +10146,11 @@ msgstr "bpm"
 msgid "Bit Rate"
 msgstr "Roedeur des bites:"
 
-#: core/meta/support/MetaConstants.cpp:118 playlist/PlaylistModel.cpp:945
+#: core/meta/support/MetaConstants.cpp:118 playlist/PlaylistModel.cpp:877
 msgid "Sample Rate"
 msgstr "Frecwince di sampling"
 
-#: core/meta/support/MetaConstants.cpp:119 playlist/PlaylistModel.cpp:951
+#: core/meta/support/MetaConstants.cpp:119 playlist/PlaylistModel.cpp:883
 msgid "File Size"
 msgstr "Grandeu do fitchî"
 
@@ -10162,7 +10168,7 @@ msgid "Added to Collection"
 msgstr "Bodjî el ramexhnêye"
 
 #: core/meta/support/MetaConstants.cpp:123
-#: playlist/ProgressiveSearchWidget.cpp:109 playlist/PlaylistModel.cpp:947
+#: playlist/ProgressiveSearchWidget.cpp:109 playlist/PlaylistModel.cpp:879
 #: widgets/SmartPlaylistEditor.cpp:185
 msgid "Rating"
 msgstr "Préjhaedje"
@@ -10678,6 +10684,49 @@ msgstr "%1dj"
 msgctxt "h for hours"
 msgid "%1h"
 msgstr "%1e"
+
+#: core/support/Amarok.cpp:170
+#, fuzzy, kde-format
+#| msgid "Playlist_%1"
+msgctxt ""
+"A saved playlist with the current time (KLocale::Shortdate) added "
+"between                           the parentheses"
+msgid "Empty Playlist (%1)"
+msgstr "Djivêye a djouwer_%1"
+
+#: core/support/Amarok.cpp:198
+#, fuzzy, kde-format
+#| msgid "Previous Track"
+msgctxt ""
+"A saved playlist with the current time (KLocale::Shortdate) added "
+"between                           the parentheses"
+msgid "Various Tracks (%1)"
+msgstr "Boket di dvant"
+
+#: core/support/Amarok.cpp:205
+#, fuzzy
+#| msgid "Unknown Artist"
+msgid "Unknown Artist(s)"
+msgstr "Årtisse nén cnoxhou"
+
+#: core/support/Amarok.cpp:221
+#, fuzzy
+#| msgid "Unknown Album"
+msgid "Unknown Album(s)"
+msgstr "Albom nén cnoxhou"
+
+#: core/support/Amarok.cpp:225
+#, fuzzy
+#| msgid "Various Artists"
+msgid "Various Albums"
+msgstr "Sacwants årtisses"
+
+#: core/support/Amarok.cpp:228
+#, fuzzy, kde-format
+#| msgid "%1 - %2"
+msgctxt "A saved playlist titled <artist> - <album>"
+msgid "%1 - %2"
+msgstr "%1 - %2"
 
 #: core/transcoding/formats/TranscodingAacFormat.cpp:31
 msgid ""
@@ -13473,91 +13522,6 @@ msgstr[1] "%1 bokets"
 msgid "No tracks"
 msgstr "bokets"
 
-#: playlist/PlaylistModel.cpp:271
-msgid "(...)"
-msgstr ""
-
-#: playlist/PlaylistModel.cpp:286
-#, fuzzy
-#| msgid "No information available for this track"
-msgid "No extra information available"
-msgstr "I gn a nou pondant et djondant po ç' boket ci"
-
-#: playlist/PlaylistModel.cpp:867
-#, fuzzy, kde-format
-#| msgid "Playlist_%1"
-msgctxt ""
-"A saved playlist with the current time (KLocale::Shortdate) added "
-"between                       the parentheses"
-msgid "Empty Playlist (%1)"
-msgstr "Djivêye a djouwer_%1"
-
-#: playlist/PlaylistModel.cpp:895
-#, fuzzy, kde-format
-#| msgid "Previous Track"
-msgctxt ""
-"A saved playlist with the current time (KLocale::Shortdate) added "
-"between                       the parentheses"
-msgid "Various Tracks (%1)"
-msgstr "Boket di dvant"
-
-#: playlist/PlaylistModel.cpp:902
-#, fuzzy
-#| msgid "Unknown Artist"
-msgid "Unknown Artist(s)"
-msgstr "Årtisse nén cnoxhou"
-
-#: playlist/PlaylistModel.cpp:914
-#, fuzzy
-#| msgid "Unknown Album"
-msgid "Unknown Album(s)"
-msgstr "Albom nén cnoxhou"
-
-#: playlist/PlaylistModel.cpp:917
-#, fuzzy
-#| msgid "Various Artists"
-msgid "Various Albums"
-msgstr "Sacwants årtisses"
-
-#: playlist/PlaylistModel.cpp:919
-#, fuzzy, kde-format
-#| msgid "%1 - %2"
-msgctxt "A saved playlist titled <artist> - <album>"
-msgid "%1 - %2"
-msgstr "%1 - %2"
-
-#: playlist/PlaylistModel.cpp:929
-msgctxt "The name of the file this track is stored in"
-msgid "Filename"
-msgstr "No do fitchî"
-
-#: playlist/PlaylistModel.cpp:937
-msgctxt "The Track number for this item"
-msgid "Track"
-msgstr "Boket"
-
-#: playlist/PlaylistModel.cpp:938 widgets/SmartPlaylistEditor.cpp:187
-msgid "BPM"
-msgstr "BPM"
-
-#: playlist/PlaylistModel.cpp:941
-msgctxt "The location on disc of this track"
-msgid "Directory"
-msgstr "Ridant"
-
-#: playlist/PlaylistModel.cpp:944 widgets/SmartPlaylistEditor.cpp:187
-msgid "Bitrate"
-msgstr "Roedeur des bits"
-
-#: playlist/PlaylistModel.cpp:949
-msgctxt "Column name"
-msgid "Last Played"
-msgstr "Dierin côp djouwé"
-
-#: playlist/PlaylistModel.cpp:950
-msgid "Mood"
-msgstr "Umeur"
-
 #: playlist/PlaylistDock.cpp:105
 msgid "Dynamic Mode Enabled"
 msgstr ""
@@ -13573,6 +13537,48 @@ msgstr "Djivêye a djouwer do moumint"
 #| msgid "Save playlist"
 msgid "&Save playlist to \"%1\""
 msgstr "Schaper djivêye a djouwer"
+
+#: playlist/PlaylistModel.cpp:271
+msgid "(...)"
+msgstr ""
+
+#: playlist/PlaylistModel.cpp:286
+#, fuzzy
+#| msgid "No information available for this track"
+msgid "No extra information available"
+msgstr "I gn a nou pondant et djondant po ç' boket ci"
+
+#: playlist/PlaylistModel.cpp:861
+msgctxt "The name of the file this track is stored in"
+msgid "Filename"
+msgstr "No do fitchî"
+
+#: playlist/PlaylistModel.cpp:869
+msgctxt "The Track number for this item"
+msgid "Track"
+msgstr "Boket"
+
+#: playlist/PlaylistModel.cpp:870 widgets/SmartPlaylistEditor.cpp:187
+msgid "BPM"
+msgstr "BPM"
+
+#: playlist/PlaylistModel.cpp:873
+msgctxt "The location on disc of this track"
+msgid "Directory"
+msgstr "Ridant"
+
+#: playlist/PlaylistModel.cpp:876 widgets/SmartPlaylistEditor.cpp:187
+msgid "Bitrate"
+msgstr "Roedeur des bits"
+
+#: playlist/PlaylistModel.cpp:881
+msgctxt "Column name"
+msgid "Last Played"
+msgstr "Dierin côp djouwé"
+
+#: playlist/PlaylistModel.cpp:882
+msgid "Mood"
+msgstr "Umeur"
 
 #: playlistgenerator/PresetEditDialog.cpp:61
 #, fuzzy
@@ -14117,13 +14123,13 @@ msgctxt "Remove a track from a saved playlist"
 msgid "Remove From \"%1\""
 msgstr "Oister del djivêye a djouwer"
 
-#: playlistmanager/file/PlaylistFileProvider.cpp:367
-#: playlistmanager/file/PlaylistFileProvider.cpp:396
+#: playlistmanager/file/PlaylistFileProvider.cpp:368
+#: playlistmanager/file/PlaylistFileProvider.cpp:397
 #, kde-format
 msgid "The playlist file \"%1\" could not be loaded."
 msgstr "Dji n' a sepou tcherdjî l' djivêye a djouwer « %1 »."
 
-#: playlistmanager/file/PlaylistFileProvider.cpp:459
+#: playlistmanager/file/PlaylistFileProvider.cpp:460
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:119
 #, fuzzy, kde-format
 #| msgid "Are you sure you want to uninstall the script '%1'?"
@@ -14132,7 +14138,7 @@ msgid_plural "Are you sure you want to delete these %1 playlist files?"
 msgstr[0] "Estoz seur di voleur disastaler l' sicripe «%1» podbon?"
 msgstr[1] "Estoz seur di voleur disastaler l' sicripe «%1» podbon?"
 
-#: playlistmanager/file/PlaylistFileProvider.cpp:465
+#: playlistmanager/file/PlaylistFileProvider.cpp:466
 msgid "Yes, delete from disk."
 msgstr "Oyi, l' disfacer del plake."
 

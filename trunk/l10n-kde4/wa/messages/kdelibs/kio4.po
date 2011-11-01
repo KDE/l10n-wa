@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-02 06:20+0200\n"
+"POT-Creation-Date: 2011-11-01 05:27+0100\n"
 "PO-Revision-Date: 2011-01-17 21:58+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -59,8 +59,8 @@ msgctxt "@title:window"
 msgid "Select Folder"
 msgstr "Tchoezi ridant"
 
-#: bookmarks/kbookmarkdialog.cc:159 ../kfile/knewfilemenu.cpp:1015
-#: ../kfile/kdirselectdialog.cpp:135
+#: bookmarks/kbookmarkdialog.cc:159 ../kfile/kdirselectdialog.cpp:135
+#: ../kfile/knewfilemenu.cpp:1015
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "Novea ridant"
@@ -122,6 +122,30 @@ msgstr "Rimåkes"
 #: bookmarks/kbookmarkimporter_opera.cc:125
 msgid "*.adr|Opera Bookmark Files (*.adr)"
 msgstr "*.adr|Fitchîs di rmåkes do betchteu Opera (*.adr)"
+
+#: bookmarks/konqbookmarkmenu.cc:61 bookmarks/konqbookmarkmenu.cc:78
+msgid "Hide in toolbar"
+msgstr "Catchî el bår ås usteyes"
+
+#: bookmarks/konqbookmarkmenu.cc:61 bookmarks/konqbookmarkmenu.cc:78
+msgid "Show in toolbar"
+msgstr "Mostrer el bår ås usteyes"
+
+#: bookmarks/konqbookmarkmenu.cc:71
+msgid "Open in New Window"
+msgstr "Drovi dins ene novele finiesse"
+
+#: bookmarks/konqbookmarkmenu.cc:72
+msgid "Open in New Tab"
+msgstr "Drovi dins ene nouve linwete"
+
+#: bookmarks/kbookmarkmanager.cc:443
+#, kde-format
+msgid ""
+"Unable to save bookmarks in %1. Reported error was: %2. This error message "
+"will only be shown once. The cause of the error needs to be fixed as quickly "
+"as possible, which is most likely a full hard drive."
+msgstr ""
 
 #: bookmarks/kbookmarkmenu.cc:267
 msgid "Add Bookmark Here"
@@ -204,30 +228,6 @@ msgstr "Novea ridant di rmåkes..."
 #: bookmarks/kbookmarkmenu.cc:519
 msgid "Create a new bookmark folder in this menu"
 msgstr "Fé on novea ridant di rmåkes e ci menu chal"
-
-#: bookmarks/konqbookmarkmenu.cc:61 bookmarks/konqbookmarkmenu.cc:78
-msgid "Hide in toolbar"
-msgstr "Catchî el bår ås usteyes"
-
-#: bookmarks/konqbookmarkmenu.cc:61 bookmarks/konqbookmarkmenu.cc:78
-msgid "Show in toolbar"
-msgstr "Mostrer el bår ås usteyes"
-
-#: bookmarks/konqbookmarkmenu.cc:71
-msgid "Open in New Window"
-msgstr "Drovi dins ene novele finiesse"
-
-#: bookmarks/konqbookmarkmenu.cc:72
-msgid "Open in New Tab"
-msgstr "Drovi dins ene nouve linwete"
-
-#: bookmarks/kbookmarkmanager.cc:443
-#, kde-format
-msgid ""
-"Unable to save bookmarks in %1. Reported error was: %2. This error message "
-"will only be shown once. The cause of the error needs to be fixed as quickly "
-"as possible, which is most likely a full hard drive."
-msgstr ""
 
 #: httpfilter/httpfilter.cc:179
 msgid "Receiving corrupt data."
@@ -430,7 +430,7 @@ msgctxt "@title:tab"
 msgid "Information"
 msgstr "Infôrmåcion"
 
-#: kfile/knfotranslator.cpp:40 kfile/kfilemetadataprovider.cpp:399
+#: kfile/knfotranslator.cpp:40 kfile/kfilemetadataprovider.cpp:422
 #, fuzzy
 #| msgid "Comment"
 msgctxt "@label"
@@ -784,7 +784,7 @@ msgctxt "@title:tab File properties"
 msgid "&General"
 msgstr "&Djenerå"
 
-#: kfile/kpropertiesdialog.cpp:947 kio/kfileitem.cpp:1089
+#: kfile/kpropertiesdialog.cpp:947 kio/kfileitem.cpp:1130
 msgid "Type:"
 msgstr "Sôre:"
 
@@ -806,7 +806,7 @@ msgstr "Å dvins:"
 msgid "Location:"
 msgstr "Eplaeçmint:"
 
-#: kfile/kpropertiesdialog.cpp:995 kio/kfileitem.cpp:1098
+#: kfile/kpropertiesdialog.cpp:995 kio/kfileitem.cpp:1139
 msgid "Size:"
 msgstr "Grandeu:"
 
@@ -830,7 +830,7 @@ msgstr "Boute après:"
 msgid "Created:"
 msgstr "Fwait:"
 
-#: kfile/kpropertiesdialog.cpp:1056 kio/kfileitem.cpp:1102
+#: kfile/kpropertiesdialog.cpp:1056 kio/kfileitem.cpp:1143
 msgid "Modified:"
 msgstr "Candjî:"
 
@@ -1450,7 +1450,18 @@ msgstr "Estat"
 msgid "*.png *.xpm *.svg *.svgz|Icon Files (*.png *.xpm *.svg *.svgz)"
 msgstr "*.png *.xpm *.svg *.svgz|Fitchîs imådjetes (*.png *.xpm *.svg *.svgz)"
 
-#: kfile/kfilemetadataprovider.cpp:400
+#: kfile/kfilemetadataprovider.cpp:223
+#, fuzzy, kde-format
+#| msgctxt "Items in a folder"
+#| msgid "1 item"
+#| msgid_plural "%1 items"
+msgctxt "@item:intable"
+msgid "%1 item"
+msgid_plural "%1 items"
+msgstr[0] "%1 cayet"
+msgstr[1] "%1 cayets"
+
+#: kfile/kfilemetadataprovider.cpp:423
 #, fuzzy
 #| msgctxt "@title:column"
 #| msgid "Modified"
@@ -1458,49 +1469,49 @@ msgctxt "@label"
 msgid "Modified"
 msgstr "Candjî"
 
-#: kfile/kfilemetadataprovider.cpp:401
+#: kfile/kfilemetadataprovider.cpp:424
 #, fuzzy
 #| msgid "Owner"
 msgctxt "@label"
 msgid "Owner"
 msgstr "Prôpietaire"
 
-#: kfile/kfilemetadataprovider.cpp:402
+#: kfile/kfilemetadataprovider.cpp:425
 #, fuzzy
 #| msgid "Permissions"
 msgctxt "@label"
 msgid "Permissions"
 msgstr "Droets"
 
-#: kfile/kfilemetadataprovider.cpp:403
+#: kfile/kfilemetadataprovider.cpp:426
 #, fuzzy
 #| msgid "Sorting"
 msgctxt "@label"
 msgid "Rating"
 msgstr "Dji relî"
 
-#: kfile/kfilemetadataprovider.cpp:404
+#: kfile/kfilemetadataprovider.cpp:427
 #, fuzzy
 #| msgid "Size"
 msgctxt "@label"
 msgid "Size"
 msgstr "Grandeu"
 
-#: kfile/kfilemetadataprovider.cpp:405
+#: kfile/kfilemetadataprovider.cpp:428
 #, fuzzy
 #| msgid "Trash"
 msgctxt "@label"
 msgid "Tags"
 msgstr "Batch"
 
-#: kfile/kfilemetadataprovider.cpp:406
+#: kfile/kfilemetadataprovider.cpp:429
 #, fuzzy
 #| msgid "Size:"
 msgctxt "@label"
 msgid "Total Size"
 msgstr "Grandeu:"
 
-#: kfile/kfilemetadataprovider.cpp:407
+#: kfile/kfilemetadataprovider.cpp:430
 #, fuzzy
 #| msgid "Type"
 msgctxt "@label"
@@ -1590,7 +1601,7 @@ msgstr ""
 msgid "&Skip File"
 msgstr "&Passer houte do fitchî"
 
-#: kio/connection.cpp:211
+#: kio/connection.cpp:213
 #, kde-format
 msgid "Unable to create io-slave: %1"
 msgstr "Dji n' sai fé li module vårlet d' intrêye/sôrteye: %1"
@@ -1600,7 +1611,7 @@ msgid "Folder Already Exists"
 msgstr "Li ridant egzistêye dedja"
 
 #: kio/copyjob.cpp:1349 kio/copyjob.cpp:1921 kio/global.cpp:669
-#: kio/job.cpp:2209 kio/paste.cpp:116
+#: kio/job.cpp:2218 kio/paste.cpp:116
 msgid "File Already Exists"
 msgstr "Ci fitchî la egzistêye dedja"
 
@@ -3429,7 +3440,7 @@ msgid "The server was too busy responding to other requests to respond."
 msgstr ""
 "Li sierveu esteut trop ocupé a responde a des ôtès dmandes po responde."
 
-#: kio/global.cpp:1094 kio/slavebase.cpp:1324
+#: kio/global.cpp:1094 kio/slavebase.cpp:1331
 msgid "Unknown Error"
 msgstr "Aroke nén cnoxhowe"
 
@@ -3741,39 +3752,39 @@ msgid ""
 "%1"
 msgstr ""
 
-#: kio/kdirmodel.cpp:997
+#: kio/kdirmodel.cpp:998
 msgctxt "@title:column"
 msgid "Name"
 msgstr "No"
 
-#: kio/kdirmodel.cpp:999
+#: kio/kdirmodel.cpp:1000
 msgctxt "@title:column"
 msgid "Size"
 msgstr "Grandeu"
 
-#: kio/kdirmodel.cpp:1001
+#: kio/kdirmodel.cpp:1002
 #, fuzzy
 #| msgid "Date"
 msgctxt "@title:column"
 msgid "Date"
 msgstr "Date"
 
-#: kio/kdirmodel.cpp:1003
+#: kio/kdirmodel.cpp:1004
 msgctxt "@title:column"
 msgid "Permissions"
 msgstr "Droets"
 
-#: kio/kdirmodel.cpp:1005
+#: kio/kdirmodel.cpp:1006
 msgctxt "@title:column"
 msgid "Owner"
 msgstr "Da"
 
-#: kio/kdirmodel.cpp:1007
+#: kio/kdirmodel.cpp:1008
 msgctxt "@title:column"
 msgid "Group"
 msgstr "Groupe"
 
-#: kio/kdirmodel.cpp:1009
+#: kio/kdirmodel.cpp:1010
 msgctxt "@title:column"
 msgid "Type"
 msgstr "Sôre"
@@ -3783,36 +3794,36 @@ msgstr "Sôre"
 msgid "Default"
 msgstr "Prémetou"
 
-#: kio/kfileitem.cpp:1053
+#: kio/kfileitem.cpp:1094
 #, kde-format
 msgid "(Symbolic Link to %1)"
 msgstr "(Loyén simbolike viè %1)"
 
-#: kio/kfileitem.cpp:1055
+#: kio/kfileitem.cpp:1096
 #, kde-format
 msgid "(%1, Link to %2)"
 msgstr "(%1, Loyén viè %2)"
 
-#: kio/kfileitem.cpp:1059
+#: kio/kfileitem.cpp:1100
 #, fuzzy, kde-format
 #| msgid "Points to:"
 msgid " (Points to %1)"
 msgstr "Boute après:"
 
-#: kio/kfileitem.cpp:1088 ../kioslave/http/kcookiejar/kcookiewin.cpp:205
+#: kio/kfileitem.cpp:1129 ../kioslave/http/kcookiejar/kcookiewin.cpp:205
 msgid "Name:"
 msgstr "No:"
 
-#: kio/kfileitem.cpp:1093
+#: kio/kfileitem.cpp:1134
 #, kde-format
 msgid "Link to %1 (%2)"
 msgstr "Loyén viè %1 (%2)"
 
-#: kio/kfileitem.cpp:1105
+#: kio/kfileitem.cpp:1146
 msgid "Owner:"
 msgstr "Prôpietaire:"
 
-#: kio/kfileitem.cpp:1106
+#: kio/kfileitem.cpp:1147
 msgid "Permissions:"
 msgstr "Droets:"
 
@@ -4221,19 +4232,19 @@ msgstr ""
 "Nén moyén do fé on module d' intrêye/rexhowe:\n"
 "S' apinse klauncher: %1"
 
-#: kio/slaveinterface.cpp:415 kio/tcpslavebase.cpp:821 kssl/sslui.cpp:81
+#: kio/slaveinterface.cpp:415 kio/tcpslavebase.cpp:835 kssl/sslui.cpp:81
 msgid "&Details"
 msgstr "&Po les spepieus"
 
-#: kio/slaveinterface.cpp:417 kio/tcpslavebase.cpp:838 kssl/sslui.cpp:120
+#: kio/slaveinterface.cpp:417 kio/tcpslavebase.cpp:852 kssl/sslui.cpp:120
 msgid "&Forever"
 msgstr "&Tofer"
 
-#: kio/slaveinterface.cpp:422 kio/tcpslavebase.cpp:821 kssl/sslui.cpp:82
+#: kio/slaveinterface.cpp:422 kio/tcpslavebase.cpp:835 kssl/sslui.cpp:82
 msgid "Co&ntinue"
 msgstr "&Continouwer"
 
-#: kio/slaveinterface.cpp:424 kio/tcpslavebase.cpp:839 kssl/sslui.cpp:121
+#: kio/slaveinterface.cpp:424 kio/tcpslavebase.cpp:853 kssl/sslui.cpp:121
 #, fuzzy
 #| msgid "&Current Sessions Only"
 msgid "&Current Session only"
@@ -4245,11 +4256,11 @@ msgstr "Session do &moumint seulmint"
 msgid "The peer SSL certificate chain appears to be corrupt."
 msgstr "Dj' a l' idêye ki l' acertineure SSL do fré est crombe."
 
-#: kio/slaveinterface.cpp:485 kio/tcpslavebase.cpp:766
+#: kio/slaveinterface.cpp:485 kio/tcpslavebase.cpp:780
 msgid "SSL"
 msgstr "SSL"
 
-#: kio/tcpslavebase.cpp:325
+#: kio/tcpslavebase.cpp:340
 msgid ""
 "You are about to leave secure mode. Transmissions will no longer be "
 "encrypted.\n"
@@ -4259,22 +4270,22 @@ msgstr ""
 "ecriptêyes.\n"
 "Ça vout dire k' ene sakî d' ôte såreut lére les dnêyes ki vos evoyîz."
 
-#: kio/tcpslavebase.cpp:331 kio/tcpslavebase.cpp:599
+#: kio/tcpslavebase.cpp:346 kio/tcpslavebase.cpp:613
 msgid "Security Information"
 msgstr "Infôrmåcion sol såvrité"
 
-#: kio/tcpslavebase.cpp:332
+#: kio/tcpslavebase.cpp:347
 msgid "C&ontinue Loading"
 msgstr "C&ontinouwer a tcherdjî"
 
-#: kio/tcpslavebase.cpp:381
+#: kio/tcpslavebase.cpp:395
 #, fuzzy, kde-format
 #| msgid "Authentication Failed."
 msgctxt "%1 is a host name"
 msgid "%1: SSL negotiation failed"
 msgstr "L' otintifiaedje a fwait berwete!"
 
-#: kio/tcpslavebase.cpp:593
+#: kio/tcpslavebase.cpp:607
 msgid ""
 "You are about to enter secure mode. All transmissions will be encrypted "
 "unless otherwise noted.\n"
@@ -4286,32 +4297,32 @@ msgstr ""
 "Ça vout dire ki nolu n' sårè loukî vos dnêyes come ele passèt, ou nén "
 "åjheymint, todi."
 
-#: kio/tcpslavebase.cpp:600
+#: kio/tcpslavebase.cpp:614
 msgid "Display SSL &Information"
 msgstr "&Mostrer l' infôrmåcion SSL"
 
-#: kio/tcpslavebase.cpp:601
+#: kio/tcpslavebase.cpp:615
 msgid "C&onnect"
 msgstr "Si ralo&yî"
 
-#: kio/tcpslavebase.cpp:737
+#: kio/tcpslavebase.cpp:751
 msgid "Enter the certificate password:"
 msgstr "Tapez li scret di l' acertineure:"
 
-#: kio/tcpslavebase.cpp:738
+#: kio/tcpslavebase.cpp:752
 msgid "SSL Certificate Password"
 msgstr "Sicret di l' acertineure SSL"
 
-#: kio/tcpslavebase.cpp:751
+#: kio/tcpslavebase.cpp:765
 msgid "Unable to open the certificate. Try a new password?"
 msgstr "Nén moyén do drovi l' acertineure.  Saye dju èn ôte sicret?"
 
-#: kio/tcpslavebase.cpp:764
+#: kio/tcpslavebase.cpp:778
 msgid "The procedure to set the client certificate for the session failed."
 msgstr ""
 "Li metaedje e plaece di l' acertineure cliyint pol session a fwait berwete."
 
-#: kio/tcpslavebase.cpp:810 kssl/sslui.cpp:71
+#: kio/tcpslavebase.cpp:824 kssl/sslui.cpp:71
 #, fuzzy, kde-format
 #| msgid "The server certificate failed the authenticity test (%1)."
 msgid ""
@@ -4320,18 +4331,18 @@ msgid ""
 msgstr ""
 "L' acertineure do sierveu n' a nén a fwait berwete po l' aveurixhmint (%1)."
 
-#: kio/tcpslavebase.cpp:820 kio/tcpslavebase.cpp:837 kio/tcpslavebase.cpp:939
-#: kio/tcpslavebase.cpp:951 kssl/sslui.cpp:80 kssl/sslui.cpp:119
+#: kio/tcpslavebase.cpp:834 kio/tcpslavebase.cpp:851 kio/tcpslavebase.cpp:953
+#: kio/tcpslavebase.cpp:965 kssl/sslui.cpp:80 kssl/sslui.cpp:119
 msgid "Server Authentication"
 msgstr "Aveurixhmint do sierveu"
 
-#: kio/tcpslavebase.cpp:834 kssl/sslui.cpp:116
+#: kio/tcpslavebase.cpp:848 kssl/sslui.cpp:116
 msgid ""
 "Would you like to accept this certificate forever without being prompted?"
 msgstr ""
 "Voloz accepter ciste acertineure disk' a tofer sins k' on vos dmande pus rén?"
 
-#: kio/tcpslavebase.cpp:938
+#: kio/tcpslavebase.cpp:952
 msgid ""
 "You have indicated that you wish to accept this certificate, but it is not "
 "issued to the server who is presenting it. Do you wish to continue loading?"
@@ -4339,7 +4350,7 @@ msgstr ""
 "Vos djhoz k' vos voloz accepter ciste acertineure, mins ele n' est nén "
 "csemêye å sierveu kel prezinte? Voloz vs continouwer al tcherdjî?"
 
-#: kio/tcpslavebase.cpp:950
+#: kio/tcpslavebase.cpp:964
 #, fuzzy
 #| msgid ""
 #| "SSL certificate is being rejected as requested. You can disable this in "
@@ -4874,20 +4885,6 @@ msgstr ""
 msgid "Got an invalid reply when calling %1"
 msgstr ""
 
-#: misc/kpac/proxyscout.cpp:203
-#, kde-format
-msgid ""
-"The proxy configuration script is invalid:\n"
-"%1"
-msgstr ""
-
-#: misc/kpac/proxyscout.cpp:317
-#, kde-format
-msgid ""
-"The proxy configuration script returned an error:\n"
-"%1"
-msgstr ""
-
 #: misc/kpac/downloader.cpp:87
 #, kde-format
 msgid ""
@@ -4901,6 +4898,20 @@ msgstr ""
 
 #: misc/kpac/discovery.cpp:111
 msgid "Could not find a usable proxy configuration script"
+msgstr ""
+
+#: misc/kpac/proxyscout.cpp:224
+#, kde-format
+msgid ""
+"The proxy configuration script is invalid:\n"
+"%1"
+msgstr ""
+
+#: misc/kpac/proxyscout.cpp:337
+#, kde-format
+msgid ""
+"The proxy configuration script returned an error:\n"
+"%1"
 msgstr ""
 
 #: misc/ksendbugmail/main.cpp:43
@@ -5281,7 +5292,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, addFiletypeButton)
 #. i18n: file: kssl/kcm/cacertificates.ui:111
 #. i18n: ectx: property (text), widget (KPushButton, add)
-#: rc.cpp:168 rc.cpp:237
+#: rc.cpp:168 rc.cpp:201
 msgid "Add..."
 msgstr "Radjouter..."
 
@@ -5297,7 +5308,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, delFiletypeButton)
 #. i18n: file: kssl/kcm/cacertificates.ui:104
 #. i18n: ectx: property (text), widget (KPushButton, removeSelection)
-#: rc.cpp:174 rc.cpp:234
+#: rc.cpp:174 rc.cpp:198
 msgid "Remove"
 msgstr "Oister"
 
@@ -5315,81 +5326,9 @@ msgstr ""
 msgid "Ad&vanced Options"
 msgstr "&Sipepieusès tchuzes"
 
-#. i18n: file: kssl/certificateparty.ui:27
-#. i18n: ectx: property (text), widget (QLabel, commonNameTag)
-#: rc.cpp:183
-msgid "Common name:"
-msgstr "Comon no:"
-
-#. i18n: file: kssl/certificateparty.ui:37
-#. i18n: ectx: property (text), widget (QLabel, commonName)
-#: rc.cpp:186
-msgid "Acme Co."
-msgstr "Acme Co."
-
-#. i18n: file: kssl/certificateparty.ui:44
-#. i18n: ectx: property (text), widget (QLabel, organizationTag)
-#: rc.cpp:189
-msgid "Organization:"
-msgstr "Organizåcion:"
-
-#. i18n: file: kssl/certificateparty.ui:54
-#. i18n: ectx: property (text), widget (QLabel, organization)
-#: rc.cpp:192
-msgid "Acme Sundry Products Company"
-msgstr "Copagneye di totes sôres di produts Acme"
-
-#. i18n: file: kssl/certificateparty.ui:61
-#. i18n: ectx: property (text), widget (QLabel, organizationalUnitTag)
-#: rc.cpp:195
-msgid "Organizational unit:"
-msgstr "Unité d' organizåcion:"
-
-#. i18n: file: kssl/certificateparty.ui:71
-#. i18n: ectx: property (text), widget (QLabel, organizationalUnit)
-#: rc.cpp:198
-msgid "Fraud Department"
-msgstr "Dipårtumint des tructaedjes"
-
-#. i18n: file: kssl/certificateparty.ui:78
-#. i18n: ectx: property (text), widget (QLabel, countryTag)
-#: rc.cpp:201
-msgid "Country:"
-msgstr "Payis:"
-
-#. i18n: file: kssl/certificateparty.ui:88
-#. i18n: ectx: property (text), widget (QLabel, country)
-#: rc.cpp:204
-msgid "Canada"
-msgstr "Canada"
-
-#. i18n: file: kssl/certificateparty.ui:95
-#. i18n: ectx: property (text), widget (QLabel, stateTag)
-#: rc.cpp:207
-msgid "State:"
-msgstr "Estat:"
-
-#. i18n: file: kssl/certificateparty.ui:105
-#. i18n: ectx: property (text), widget (QLabel, state)
-#: rc.cpp:210
-msgid "Quebec"
-msgstr "Kebek"
-
-#. i18n: file: kssl/certificateparty.ui:112
-#. i18n: ectx: property (text), widget (QLabel, cityTag)
-#: rc.cpp:213
-msgid "City:"
-msgstr "Veye:"
-
-#. i18n: file: kssl/certificateparty.ui:122
-#. i18n: ectx: property (text), widget (QLabel, city)
-#: rc.cpp:216
-msgid "Lakeridge Meadows"
-msgstr "Lakeridge Meadows"
-
 #. i18n: file: kssl/kcm/cacertificates.ui:24
 #. i18n: ectx: property (text), widget (QTreeWidget, treeWidget)
-#: rc.cpp:219
+#: rc.cpp:183
 #, fuzzy
 #| msgid "Organization:"
 msgid "Organization / Common Name"
@@ -5397,7 +5336,7 @@ msgstr "Organizåcion:"
 
 #. i18n: file: kssl/kcm/cacertificates.ui:29
 #. i18n: ectx: property (text), widget (QTreeWidget, treeWidget)
-#: rc.cpp:222
+#: rc.cpp:186
 #, fuzzy
 #| msgid "Organizational unit:"
 msgid "Organizational Unit"
@@ -5405,25 +5344,25 @@ msgstr "Unité d' organizåcion:"
 
 #. i18n: file: kssl/kcm/cacertificates.ui:42
 #. i18n: ectx: property (text), widget (QPushButton, displaySelection)
-#: rc.cpp:225
+#: rc.cpp:189
 msgid "Display..."
 msgstr ""
 
 #. i18n: file: kssl/kcm/cacertificates.ui:68
 #. i18n: ectx: property (text), widget (KPushButton, disableSelection)
-#: rc.cpp:228
+#: rc.cpp:192
 msgid "Disable"
 msgstr ""
 
 #. i18n: file: kssl/kcm/cacertificates.ui:78
 #. i18n: ectx: property (text), widget (QPushButton, enableSelection)
-#: rc.cpp:231
+#: rc.cpp:195
 msgid "Enable"
 msgstr ""
 
 #. i18n: file: kssl/kcm/displaycert.ui:23
 #. i18n: ectx: property (text), widget (QLabel, subjectHeading)
-#: rc.cpp:240
+#: rc.cpp:204
 #, fuzzy
 #| msgid "Security Information"
 msgid "<b>Subject Information</b>"
@@ -5431,7 +5370,7 @@ msgstr "Infôrmåcion sol såvrité"
 
 #. i18n: file: kssl/kcm/displaycert.ui:39
 #. i18n: ectx: property (text), widget (QLabel, issuerHeading)
-#: rc.cpp:243
+#: rc.cpp:207
 #, fuzzy
 #| msgid " <b>[Cross Domain]</b>"
 msgid "<b>Issuer Information</b>"
@@ -5439,7 +5378,7 @@ msgstr " <b>[Betchfessî dominne]</b>"
 
 #. i18n: file: kssl/kcm/displaycert.ui:55
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:246
+#: rc.cpp:210
 #, fuzzy
 #| msgid "<b>%1</b>"
 msgid "<b>Other</b>"
@@ -5447,7 +5386,7 @@ msgstr "<b>%1</b>"
 
 #. i18n: file: kssl/kcm/displaycert.ui:64
 #. i18n: ectx: property (text), widget (QLabel, validityPeriodLabel)
-#: rc.cpp:249
+#: rc.cpp:213
 #, fuzzy
 #| msgid "Validity period:"
 msgid "Validity period"
@@ -5455,7 +5394,7 @@ msgstr "Moumint d' validité:"
 
 #. i18n: file: kssl/kcm/displaycert.ui:78
 #. i18n: ectx: property (text), widget (QLabel, serialNumberLabel)
-#: rc.cpp:252
+#: rc.cpp:216
 #, fuzzy
 #| msgid "Serial Number:"
 msgid "Serial number"
@@ -5463,7 +5402,7 @@ msgstr "Limero d' séreye:"
 
 #. i18n: file: kssl/kcm/displaycert.ui:92
 #. i18n: ectx: property (text), widget (QLabel, md5DigestLabel)
-#: rc.cpp:255
+#: rc.cpp:219
 #, fuzzy
 #| msgid "MD5 Digest:"
 msgid "MD5 digest"
@@ -5471,7 +5410,7 @@ msgstr "Racourti MD5:"
 
 #. i18n: file: kssl/kcm/displaycert.ui:106
 #. i18n: ectx: property (text), widget (QLabel, sha1DigestLabel)
-#: rc.cpp:258
+#: rc.cpp:222
 #, fuzzy
 #| msgid "MD5 Digest:"
 msgid "SHA1 digest"
@@ -5479,7 +5418,7 @@ msgstr "Racourti MD5:"
 
 #. i18n: file: kssl/keygenwizard.ui:35
 #. i18n: ectx: property (text), widget (QLabel, TextLabel1)
-#: rc.cpp:261
+#: rc.cpp:225
 msgid ""
 "You have indicated that you wish to obtain or purchase a secure certificate. "
 "This wizard is intended to guide you through the procedure. You may cancel "
@@ -5491,7 +5430,7 @@ msgstr ""
 
 #. i18n: file: kssl/keygenwizard2.ui:35
 #. i18n: ectx: property (text), widget (QLabel, TextLabel4)
-#: rc.cpp:264
+#: rc.cpp:228
 msgid ""
 "You must now provide a password for the certificate request. Please choose a "
 "very secure password as this will be used to encrypt your private key."
@@ -5501,30 +5440,102 @@ msgstr ""
 
 #. i18n: file: kssl/keygenwizard2.ui:48
 #. i18n: ectx: property (text), widget (QLabel, TextLabel6)
-#: rc.cpp:267
+#: rc.cpp:231
 msgid "&Repeat password:"
 msgstr "&Ritapez li scret:"
 
 #. i18n: file: kssl/keygenwizard2.ui:58
 #. i18n: ectx: property (text), widget (QLabel, TextLabel5)
-#: rc.cpp:270
+#: rc.cpp:234
 msgid "&Choose password:"
 msgstr "T&choezixhoz on scret:"
 
-#. i18n: file: kssl/sslinfo.ui:16
+#. i18n: file: kssl/certificateparty.ui:28
+#. i18n: ectx: property (text), widget (QLabel, commonNameTag)
+#: rc.cpp:237
+msgid "Common name:"
+msgstr "Comon no:"
+
+#. i18n: file: kssl/certificateparty.ui:38
+#. i18n: ectx: property (text), widget (QLabel, commonName)
+#: rc.cpp:240
+msgid "Acme Co."
+msgstr "Acme Co."
+
+#. i18n: file: kssl/certificateparty.ui:48
+#. i18n: ectx: property (text), widget (QLabel, organizationTag)
+#: rc.cpp:243
+msgid "Organization:"
+msgstr "Organizåcion:"
+
+#. i18n: file: kssl/certificateparty.ui:58
+#. i18n: ectx: property (text), widget (QLabel, organization)
+#: rc.cpp:246
+msgid "Acme Sundry Products Company"
+msgstr "Copagneye di totes sôres di produts Acme"
+
+#. i18n: file: kssl/certificateparty.ui:68
+#. i18n: ectx: property (text), widget (QLabel, organizationalUnitTag)
+#: rc.cpp:249
+msgid "Organizational unit:"
+msgstr "Unité d' organizåcion:"
+
+#. i18n: file: kssl/certificateparty.ui:78
+#. i18n: ectx: property (text), widget (QLabel, organizationalUnit)
+#: rc.cpp:252
+msgid "Fraud Department"
+msgstr "Dipårtumint des tructaedjes"
+
+#. i18n: file: kssl/certificateparty.ui:88
+#. i18n: ectx: property (text), widget (QLabel, countryTag)
+#: rc.cpp:255
+msgid "Country:"
+msgstr "Payis:"
+
+#. i18n: file: kssl/certificateparty.ui:98
+#. i18n: ectx: property (text), widget (QLabel, country)
+#: rc.cpp:258
+msgid "Canada"
+msgstr "Canada"
+
+#. i18n: file: kssl/certificateparty.ui:108
+#. i18n: ectx: property (text), widget (QLabel, stateTag)
+#: rc.cpp:261
+msgid "State:"
+msgstr "Estat:"
+
+#. i18n: file: kssl/certificateparty.ui:118
+#. i18n: ectx: property (text), widget (QLabel, state)
+#: rc.cpp:264
+msgid "Quebec"
+msgstr "Kebek"
+
+#. i18n: file: kssl/certificateparty.ui:128
+#. i18n: ectx: property (text), widget (QLabel, cityTag)
+#: rc.cpp:267
+msgid "City:"
+msgstr "Veye:"
+
+#. i18n: file: kssl/certificateparty.ui:138
+#. i18n: ectx: property (text), widget (QLabel, city)
+#: rc.cpp:270
+msgid "Lakeridge Meadows"
+msgstr "Lakeridge Meadows"
+
+#. i18n: file: kssl/sslinfo.ui:17
 #. i18n: ectx: property (text), widget (QLabel, encryptionIndicator)
 #: rc.cpp:273
 msgid "[padlock]"
 msgstr "[sere]"
 
-#. i18n: file: kssl/sslinfo.ui:30
+#. i18n: file: kssl/sslinfo.ui:34
 #. i18n: ectx: property (text), widget (QLabel, addressTag)
 #: rc.cpp:276
 msgctxt "Web page address"
 msgid "Address:"
 msgstr "Adresse:"
 
-#. i18n: file: kssl/sslinfo.ui:47
+#. i18n: file: kssl/sslinfo.ui:54
 #. i18n: ectx: property (text), widget (QLabel, ipTag)
 #: rc.cpp:279
 #, fuzzy
@@ -5532,19 +5543,19 @@ msgstr "Adresse:"
 msgid "IP address:"
 msgstr "Adresse IP:"
 
-#. i18n: file: kssl/sslinfo.ui:64
+#. i18n: file: kssl/sslinfo.ui:74
 #. i18n: ectx: property (text), widget (QLabel, encryptionTag)
 #: rc.cpp:282
 msgid "Encryption:"
 msgstr "Ecriptaedje:"
 
-#. i18n: file: kssl/sslinfo.ui:81
+#. i18n: file: kssl/sslinfo.ui:94
 #. i18n: ectx: property (text), widget (QLabel, detailsTag)
 #: rc.cpp:285
 msgid "Details:"
 msgstr "Po les spepieus:"
 
-#. i18n: file: kssl/sslinfo.ui:98
+#. i18n: file: kssl/sslinfo.ui:114
 #. i18n: ectx: property (text), widget (QLabel, sslVersionTag)
 #: rc.cpp:288
 #, fuzzy
@@ -5552,7 +5563,7 @@ msgstr "Po les spepieus:"
 msgid "SSL version:"
 msgstr "Modêye SSL:"
 
-#. i18n: file: kssl/sslinfo.ui:115
+#. i18n: file: kssl/sslinfo.ui:134
 #. i18n: ectx: property (text), widget (QLabel, certSelectorTag)
 #: rc.cpp:291
 #, fuzzy
@@ -5560,19 +5571,19 @@ msgstr "Modêye SSL:"
 msgid "Certificate chain:"
 msgstr "Tchinne d' acertineure"
 
-#. i18n: file: kssl/sslinfo.ui:144
+#. i18n: file: kssl/sslinfo.ui:163
 #. i18n: ectx: property (text), widget (QLabel, trustedTag)
 #: rc.cpp:294
 msgid "Trusted:"
 msgstr "Fiyåve:"
 
-#. i18n: file: kssl/sslinfo.ui:161
+#. i18n: file: kssl/sslinfo.ui:183
 #. i18n: ectx: property (text), widget (QLabel, validityPeriodTag)
 #: rc.cpp:297
 msgid "Validity period:"
 msgstr "Moumint d' validité:"
 
-#. i18n: file: kssl/sslinfo.ui:178
+#. i18n: file: kssl/sslinfo.ui:203
 #. i18n: ectx: property (text), widget (QLabel, serialTag)
 #: rc.cpp:300
 #, fuzzy
@@ -5580,7 +5591,7 @@ msgstr "Moumint d' validité:"
 msgid "Serial number:"
 msgstr "Limero d' séreye:"
 
-#. i18n: file: kssl/sslinfo.ui:195
+#. i18n: file: kssl/sslinfo.ui:223
 #. i18n: ectx: property (text), widget (QLabel, digestTag)
 #: rc.cpp:303
 #, fuzzy
@@ -5588,7 +5599,7 @@ msgstr "Limero d' séreye:"
 msgid "MD5 digest:"
 msgstr "Racourti MD5:"
 
-#. i18n: file: kssl/sslinfo.ui:211
+#. i18n: file: kssl/sslinfo.ui:243
 #. i18n: ectx: property (text), widget (QLabel, sha1DigestTag)
 #: rc.cpp:306
 #, fuzzy
@@ -5630,50 +5641,50 @@ msgstr "Dji n' a savou awè l' id do groupe pol no do groupe %1 di dné"
 msgid "Setting ACL for %1"
 msgstr "Dji defini l' ACL po %1"
 
-#: ../kioslave/file/file.cpp:918
+#: ../kioslave/file/file.cpp:923
 msgid "No Media inserted or Media not recognized."
 msgstr "I gn a pont d' media stitchî oudonbén dji nel ricnoxhe nén."
 
-#: ../kioslave/file/file.cpp:928 ../kioslave/file/file.cpp:1137
+#: ../kioslave/file/file.cpp:933 ../kioslave/file/file.cpp:1142
 msgid "\"vold\" is not running."
 msgstr "«vold» n' est nén en alaedje."
 
-#: ../kioslave/file/file.cpp:963
+#: ../kioslave/file/file.cpp:968
 msgid "Could not find program \"mount\""
 msgstr "Dji n' a savou trover li programe «mount»"
 
-#: ../kioslave/file/file.cpp:1042
+#: ../kioslave/file/file.cpp:1047
 #, fuzzy
 #| msgid "Writing to %1 is not supported."
 msgid "mounting is not supported by wince."
 msgstr "Li scrijhaedje dins %1 n' est nén sopoirté."
 
-#: ../kioslave/file/file.cpp:1150
+#: ../kioslave/file/file.cpp:1155
 msgid "Could not find program \"umount\""
 msgstr "Dji n' a savou trover li programe «umount»"
 
-#: ../kioslave/file/file.cpp:1164
+#: ../kioslave/file/file.cpp:1169
 #, fuzzy
 #| msgid "Writing to %1 is not supported."
 msgid "unmounting is not supported by wince."
 msgstr "Li scrijhaedje dins %1 n' est nén sopoirté."
 
-#: ../kioslave/file/file.cpp:1251
+#: ../kioslave/file/file.cpp:1256
 #, kde-format
 msgid "Could not read %1"
 msgstr "Dji n' a savou lére %1"
 
-#: ../kioslave/ftp/ftp.cpp:341
+#: ../kioslave/ftp/ftp.cpp:354
 #, kde-format
 msgid "Opening connection to host %1"
 msgstr "Drovant l' raloyaedje å lodjoe %1"
 
-#: ../kioslave/ftp/ftp.cpp:356
+#: ../kioslave/ftp/ftp.cpp:369
 #, kde-format
 msgid "Connected to host %1"
 msgstr "Raloyî å lodjoe %1"
 
-#: ../kioslave/ftp/ftp.cpp:425
+#: ../kioslave/ftp/ftp.cpp:476
 #, kde-format
 msgid ""
 "%1.\n"
@@ -5684,11 +5695,11 @@ msgstr ""
 "\n"
 "Råjhon: %2"
 
-#: ../kioslave/ftp/ftp.cpp:454
+#: ../kioslave/ftp/ftp.cpp:505
 msgid "Sending login information"
 msgstr "Evoyant l' infôrmåcion d' elodjaedje"
 
-#: ../kioslave/ftp/ftp.cpp:517
+#: ../kioslave/ftp/ftp.cpp:568
 #, kde-format
 msgid ""
 "Message sent:\n"
@@ -5705,28 +5716,53 @@ msgstr ""
 "%2\n"
 "\n"
 
-#: ../kioslave/ftp/ftp.cpp:525 ../kioslave/http/http.cpp:3344
+#: ../kioslave/ftp/ftp.cpp:576 ../kioslave/http/http.cpp:3489
 msgid "You need to supply a username and a password to access this site."
 msgstr ""
 "Vos dvoz dner on no d' uzeu eyet on scret po-z aveur accès a ç' site ci."
 
-#: ../kioslave/ftp/ftp.cpp:527 ../kioslave/http/http.cpp:3346
+#: ../kioslave/ftp/ftp.cpp:578 ../kioslave/http/http.cpp:3491
 msgid "Site:"
 msgstr "Site:"
 
-#: ../kioslave/ftp/ftp.cpp:528
+#: ../kioslave/ftp/ftp.cpp:579
 #, kde-format
 msgid "<b>%1</b>"
 msgstr "<b>%1</b>"
 
-#: ../kioslave/ftp/ftp.cpp:626
+#: ../kioslave/ftp/ftp.cpp:677
 msgid "Login OK"
 msgstr "L' elodjaedje a stî"
 
-#: ../kioslave/ftp/ftp.cpp:655
+#: ../kioslave/ftp/ftp.cpp:706
 #, kde-format
 msgid "Could not login to %1."
 msgstr "Dji n' a savou m' elodjî so %1."
+
+#: ../kioslave/ftp/ftp.cpp:2549 ../kioslave/http/http.cpp:3501
+#: ../kioslave/http/http.cpp:5410
+msgid ""
+"You need to supply a username and a password for the proxy server listed "
+"below before you are allowed to access any sites."
+msgstr ""
+"Vos dvoz dner on no d' uzeu eyet on scret pol sierveu procsi chal pa dzo "
+"dvant di poleur aveur accès a on site."
+
+#: ../kioslave/ftp/ftp.cpp:2553 ../kioslave/http/http.cpp:3504
+#: ../kioslave/http/http.cpp:5414
+msgid "Proxy:"
+msgstr "Procsi:"
+
+#: ../kioslave/ftp/ftp.cpp:2554 ../kioslave/http/http.cpp:3578
+#: ../kioslave/http/http.cpp:5415
+#, kde-format
+msgid "<b>%1</b> at <b>%2</b>"
+msgstr "<b>%1</b> a <b>%2</b>"
+
+#: ../kioslave/ftp/ftp.cpp:2555 ../kioslave/http/http.cpp:3568
+#: ../kioslave/http/http.cpp:5416
+msgid "Proxy Authentication Failed."
+msgstr "L' otintifiaedje do procsi a fwait berwete."
 
 #: ../kioslave/http/http_cache_cleaner.cpp:728
 #: ../kioslave/http/http_cache_cleaner.cpp:729
@@ -5897,74 +5933,70 @@ msgstr "Oister totes les coûkes"
 msgid "Reload configuration file"
 msgstr "Ritcherdjî l' fitchî d' apontiaedje"
 
-#: ../kioslave/http/http.cpp:606
+#: ../kioslave/http/http.cpp:589
 msgid "No host specified."
 msgstr "Nou lodjoe di dné."
 
-#: ../kioslave/http/http.cpp:1487
-msgid "The resource cannot be deleted."
-msgstr "Dji n' sai disfacer li rsoûce."
-
-#: ../kioslave/http/http.cpp:1608
+#: ../kioslave/http/http.cpp:1596
 msgid "Otherwise, the request would have succeeded."
 msgstr "Ôtrumint, li dmande åreut yeu stî comifåt."
 
-#: ../kioslave/http/http.cpp:1612
+#: ../kioslave/http/http.cpp:1600
 msgctxt "request type"
 msgid "retrieve property values"
 msgstr "obtini valixhances di prôpieté"
 
-#: ../kioslave/http/http.cpp:1615
+#: ../kioslave/http/http.cpp:1603
 msgctxt "request type"
 msgid "set property values"
 msgstr "defini valixhances di prôpieté"
 
-#: ../kioslave/http/http.cpp:1618
+#: ../kioslave/http/http.cpp:1606
 msgctxt "request type"
 msgid "create the requested folder"
 msgstr "fé l' ridant dmandé"
 
-#: ../kioslave/http/http.cpp:1621
+#: ../kioslave/http/http.cpp:1609
 msgctxt "request type"
 msgid "copy the specified file or folder"
 msgstr "copyî l' fitchî ou ridant specifyî"
 
-#: ../kioslave/http/http.cpp:1624
+#: ../kioslave/http/http.cpp:1612
 msgctxt "request type"
 msgid "move the specified file or folder"
 msgstr "bodjî li fitchî ou ridant specifyî"
 
-#: ../kioslave/http/http.cpp:1627
+#: ../kioslave/http/http.cpp:1615
 msgctxt "request type"
 msgid "search in the specified folder"
 msgstr "cweri e ridant specifyî"
 
-#: ../kioslave/http/http.cpp:1630
+#: ../kioslave/http/http.cpp:1618
 msgctxt "request type"
 msgid "lock the specified file or folder"
 msgstr "esserer l' fitchî ou ridant specifyî"
 
-#: ../kioslave/http/http.cpp:1633
+#: ../kioslave/http/http.cpp:1621
 msgctxt "request type"
 msgid "unlock the specified file or folder"
 msgstr "disserer l' fitchî ou ridant specifyî"
 
-#: ../kioslave/http/http.cpp:1636
+#: ../kioslave/http/http.cpp:1624
 msgctxt "request type"
 msgid "delete the specified file or folder"
 msgstr "disfacer l' fitchî ou ridant specifyî"
 
-#: ../kioslave/http/http.cpp:1639
+#: ../kioslave/http/http.cpp:1627
 msgctxt "request type"
 msgid "query the server's capabilities"
 msgstr "cweri les ahessaedjes do sierveu"
 
-#: ../kioslave/http/http.cpp:1642
+#: ../kioslave/http/http.cpp:1630
 msgctxt "request type"
 msgid "retrieve the contents of the specified file or folder"
 msgstr "obtini les ådvins do fitchî ou ridant specifyî"
 
-#: ../kioslave/http/http.cpp:1645
+#: ../kioslave/http/http.cpp:1633
 #, fuzzy
 #| msgctxt "request type"
 #| msgid "search in the specified folder"
@@ -5972,17 +6004,17 @@ msgctxt "request type"
 msgid "run a report in the specified folder"
 msgstr "cweri e ridant specifyî"
 
-#: ../kioslave/http/http.cpp:1656
+#: ../kioslave/http/http.cpp:1644
 #, kde-format
 msgctxt "%1: code, %2: request type"
 msgid "An unexpected error (%1) occurred while attempting to %2."
 msgstr "Ene aroke nén ratindowe s' apassé (%1) come dji sayive di %2."
 
-#: ../kioslave/http/http.cpp:1664
+#: ../kioslave/http/http.cpp:1652
 msgid "The server does not support the WebDAV protocol."
 msgstr "Li sierveu n' sopoite nén l' protocole WebDAV."
 
-#: ../kioslave/http/http.cpp:1706
+#: ../kioslave/http/http.cpp:1694
 #, kde-format
 msgctxt "%1: request type, %2: url"
 msgid ""
@@ -5992,17 +6024,17 @@ msgstr ""
 "Åk n' a nén stî come dji sayive di %1, %2. On rascourti del råjhon est chal "
 "pa dzo."
 
-#: ../kioslave/http/http.cpp:1720 ../kioslave/http/http.cpp:1818
+#: ../kioslave/http/http.cpp:1708 ../kioslave/http/http.cpp:1839
 #, kde-format
 msgctxt "%1: request type"
 msgid "Access was denied while attempting to %1."
 msgstr "L' accès a stî rfuzé tot sayant di %1."
 
-#: ../kioslave/http/http.cpp:1726
+#: ../kioslave/http/http.cpp:1714
 msgid "The specified folder already exists."
 msgstr "Li ridant dné egzistêye dedja."
 
-#: ../kioslave/http/http.cpp:1732 ../kioslave/http/http.cpp:1823
+#: ../kioslave/http/http.cpp:1720 ../kioslave/http/http.cpp:1845
 msgid ""
 "A resource cannot be created at the destination until one or more "
 "intermediate collections (folders) have been created."
@@ -6010,7 +6042,7 @@ msgstr ""
 "Ene rissoûce ni pout nén esse ahivêye al destinåcion ttossu lontins ki yene "
 "ou sacwantès ramexhnêyes (ridant) inte les deus n' ont nén stî ahivêyes."
 
-#: ../kioslave/http/http.cpp:1740
+#: ../kioslave/http/http.cpp:1728
 #, kde-format
 msgid ""
 "The server was unable to maintain the liveness of the properties listed in "
@@ -6021,26 +6053,26 @@ msgstr ""
 "djivêye e l' elemint XML propertybehavior oudonbén vs avoz sayî d' sipotchî "
 "on fitchî tot dmandant ki ces fitchîs n' fuxhexhe nén spotchî. %1"
 
-#: ../kioslave/http/http.cpp:1748
+#: ../kioslave/http/http.cpp:1736
 #, kde-format
 msgid "The requested lock could not be granted. %1"
 msgstr "L' esseraedje dimandé n' a nén polou esse waeranti. %1"
 
-#: ../kioslave/http/http.cpp:1754
+#: ../kioslave/http/http.cpp:1742
 msgid "The server does not support the request type of the body."
 msgstr "Li sierveu n' sopoite nén li sôre di coir dimandêye."
 
-#: ../kioslave/http/http.cpp:1759 ../kioslave/http/http.cpp:1830
+#: ../kioslave/http/http.cpp:1747 ../kioslave/http/http.cpp:1853
 #, kde-format
 msgctxt "%1: request type"
 msgid "Unable to %1 because the resource is locked."
 msgstr "Dji n' sai fé %1 paski l' rissoûce est serêye."
 
-#: ../kioslave/http/http.cpp:1763
+#: ../kioslave/http/http.cpp:1751
 msgid "This action was prevented by another error."
 msgstr "Ci faitindje a stî espaitchî pas ene ôte aroke."
 
-#: ../kioslave/http/http.cpp:1769 ../kioslave/http/http.cpp:1835
+#: ../kioslave/http/http.cpp:1757 ../kioslave/http/http.cpp:1859
 #, kde-format
 msgctxt "%1: request type"
 msgid ""
@@ -6050,7 +6082,7 @@ msgstr ""
 "Nén moyén di %1, la kel sierveu såme rifuze d' accepter l' fitchî ou "
 "l' ridant."
 
-#: ../kioslave/http/http.cpp:1776 ../kioslave/http/http.cpp:1841
+#: ../kioslave/http/http.cpp:1764 ../kioslave/http/http.cpp:1866
 msgid ""
 "The destination resource does not have sufficient space to record the state "
 "of the resource after the execution of this method."
@@ -6058,24 +6090,28 @@ msgstr ""
 "Li rsoûce såme n' a pont d' plaece assez pos eredjistrî l' estat del "
 "rissoûce après l' fijhaedje di cisse metôde."
 
-#: ../kioslave/http/http.cpp:1797
+#: ../kioslave/http/http.cpp:1817
+msgid "The resource cannot be deleted."
+msgstr "Dji n' sai disfacer li rsoûce."
+
+#: ../kioslave/http/http.cpp:1830
 #, kde-format
 msgctxt "request type"
 msgid "upload %1"
 msgstr "eberwetaedje %1"
 
-#: ../kioslave/http/http.cpp:1807
+#: ../kioslave/http/http.cpp:1880
 #, kde-format
 msgctxt "%1: response code, %2: request type"
 msgid "An unexpected error (%1) occurred while attempting to %2."
 msgstr "Ene aroke nén ratindowe (%1) s' a passé come dji sayive di %2."
 
-#: ../kioslave/http/http.cpp:2569
+#: ../kioslave/http/http.cpp:2702
 #, kde-format
 msgid "%1 contacted. Waiting for reply..."
 msgstr "%1 atotchî. Tot ratindant k' on m' responde..."
 
-#: ../kioslave/http/http.cpp:2900
+#: ../kioslave/http/http.cpp:3033
 #, kde-format
 msgctxt "@warning: Security check on url being accessed"
 msgid ""
@@ -6084,64 +6120,38 @@ msgid ""
 "<p>Is \"%1\" the site you want to visit?"
 msgstr ""
 
-#: ../kioslave/http/http.cpp:2907
+#: ../kioslave/http/http.cpp:3040
 msgctxt "@title:window"
 msgid "Confirm Website Access"
 msgstr ""
 
-#: ../kioslave/http/http.cpp:2984
+#: ../kioslave/http/http.cpp:3117
 msgid "Server processing request, please wait..."
 msgstr "Li sierveu overe li dmande, tårdjîz s' i vs plait..."
 
-#: ../kioslave/http/http.cpp:3356 ../kioslave/http/http.cpp:5260
-msgid ""
-"You need to supply a username and a password for the proxy server listed "
-"below before you are allowed to access any sites."
-msgstr ""
-"Vos dvoz dner on no d' uzeu eyet on scret pol sierveu procsi chal pa dzo "
-"dvant di poleur aveur accès a on site."
-
-#: ../kioslave/http/http.cpp:3359 ../kioslave/http/http.cpp:5264
-msgid "Proxy:"
-msgstr "Procsi:"
-
-#: ../kioslave/http/http.cpp:3420
+#: ../kioslave/http/http.cpp:3565
 msgid "Authentication Failed."
 msgstr "L' otintifiaedje a fwait berwete."
 
-#: ../kioslave/http/http.cpp:3423 ../kioslave/http/http.cpp:5266
-msgid "Proxy Authentication Failed."
-msgstr "L' otintifiaedje do procsi a fwait berwete."
-
-#: ../kioslave/http/http.cpp:3433 ../kioslave/http/http.cpp:5265
-#, kde-format
-msgid "<b>%1</b> at <b>%2</b>"
-msgstr "<b>%1</b> a <b>%2</b>"
-
-#: ../kioslave/http/http.cpp:3465
+#: ../kioslave/http/http.cpp:3611
 msgid "Authorization failed."
 msgstr "L' otorijhåcion a fwait berwete"
 
-#: ../kioslave/http/http.cpp:3482
+#: ../kioslave/http/http.cpp:3628
 #, fuzzy
 #| msgid "Authorization Dialog"
 msgid "Unknown Authorization method."
 msgstr "Purnea d' otorijhåcion"
 
-#: ../kioslave/http/http.cpp:3871 ../kioslave/http/http.cpp:3925
+#: ../kioslave/http/http.cpp:4017 ../kioslave/http/http.cpp:4071
 #, kde-format
 msgid "Sending data to %1"
 msgstr "Evoyaedje des dnêyes a %1"
 
-#: ../kioslave/http/http.cpp:4387
+#: ../kioslave/http/http.cpp:4533
 #, kde-format
 msgid "Retrieving %1 from %2..."
 msgstr "Riçuvaedje di %1 a pårti di %2..."
-
-#: ../kioslave/http/http.cpp:4393
-#, kde-format
-msgid "Retrieving from %1..."
-msgstr "Riçuvaedje a pårti di %1..."
 
 #: ../kioslave/metainfo/metainfo.cpp:39
 msgid "kio_metainfo"
@@ -6151,90 +6161,6 @@ msgstr "kio_metainfo"
 #, kde-format
 msgid "No metainfo for %1"
 msgstr "Nole meta-infôrmåcion po %1"
-
-#: ../kfile/kfileplaceeditdialog.cpp:90
-#, fuzzy
-#| msgid "Edit Places Entry"
-msgid "Add Places Entry"
-msgstr "Candjî les eplaeçmints d' intrêye"
-
-#: ../kfile/kfileplaceeditdialog.cpp:92
-msgid "Edit Places Entry"
-msgstr "Candjî les eplaeçmints d' intrêye"
-
-#: ../kfile/kfileplaceeditdialog.cpp:103
-#, fuzzy
-#| msgid ""
-#| "<qt>This is the text that will appear in the Places panel.<br /><br />The "
-#| "description should consist of one or two words that will help you "
-#| "remember what this entry refers to.</qt>"
-msgid ""
-"<qt>This is the text that will appear in the Places panel.<br /><br />The "
-"label should consist of one or two words that will help you remember what "
-"this entry refers to. If you do not enter a label, it will be derived from "
-"the location's URL.</qt>"
-msgstr ""
-"<qt>Çouchal, c' est l' tecse k' on voerè e panea des rascourtis.<br /><br /"
-">Li discrijhaedje, ça pout esse onk ou deus mots ki vs aidront a vs sovni "
-"après cwè ki ç' rascourti la vos frè potchî.</qt>"
-
-#: ../kfile/kfileplaceeditdialog.cpp:109
-#, fuzzy
-#| msgid "&Name:"
-msgid "L&abel:"
-msgstr "&No:"
-
-#: ../kfile/kfileplaceeditdialog.cpp:111
-#, fuzzy
-#| msgid "Enter a description"
-msgid "Enter descriptive label here"
-msgstr "Tapez on discrijhaedje"
-
-#: ../kfile/kfileplaceeditdialog.cpp:115
-#, kde-format
-msgid ""
-"<qt>This is the location associated with the entry. Any valid URL may be "
-"used. For example:<br /><br />%1<br />http://www.kde.org<br />ftp://ftp.kde."
-"org/pub/kde/stable<br /><br />By clicking on the button next to the text "
-"edit box you can browse to an appropriate URL.</qt>"
-msgstr ""
-"<qt>C' est l' eplaeçmint loyî a ciste intrêye. Vos poloz eployî tot l' minme "
-"li kéne hårdêye (URL) bén costrûte. Metans:<br /><br />%1<br />http://www."
-"kde.org<br />ftp://ftp.kde.org/pub/kde/stable<br /><br />Si vos clitchîz sol "
-"boton djusse asto del boesse di tecse, vos pôroz betchter po tchoezi "
-"l' hårdêye ki convént.</qt>"
-
-#: ../kfile/kfileplaceeditdialog.cpp:121
-msgid "&Location:"
-msgstr "&Eplaeçmint:"
-
-#: ../kfile/kfileplaceeditdialog.cpp:125
-msgid ""
-"<qt>This is the icon that will appear in the Places panel.<br /><br />Click "
-"on the button to select a different icon.</qt>"
-msgstr ""
-"<qt>L' imådjete k' aparexhrè e panea des rascourtis.<br /><br />Clitchîz sol "
-"boton po tchoezi ene ôte.</qt>"
-
-#: ../kfile/kfileplaceeditdialog.cpp:128
-msgid "Choose an &icon:"
-msgstr "Tchoezixhoz ene &imådjete:"
-
-#: ../kfile/kfileplaceeditdialog.cpp:145
-#, kde-format
-msgid "&Only show when using this application (%1)"
-msgstr "A n' mostrer &ki po ç' programe chal (%1)"
-
-#: ../kfile/kfileplaceeditdialog.cpp:147
-#, kde-format
-msgid ""
-"<qt>Select this setting if you want this entry to show only when using the "
-"current application (%1).<br /><br />If this setting is not selected, the "
-"entry will be available in all applications.</qt>"
-msgstr ""
-"<qt>Tchoezixhoz çoula si vos voloz k' ciste intrêye n' aparexhe ki cwand vos "
-"eployîz l' programe do moumint (%1).<br /><br />Si vos n' purdoz nén cisse "
-"tchuze la, l' intrêye serè eployeye avou tos les programes.</qt>"
 
 #: ../kfile/kfileplacesview.cpp:575
 msgctxt "@action:inmenu"
@@ -6303,107 +6229,6 @@ msgstr "*|Tos les fitchîs"
 msgid "All Files"
 msgstr "*|Tos les fitchîs"
 
-#: ../kfile/knewfilemenu.cpp:368 ../kfile/knewfilemenu.cpp:872
-#, fuzzy
-#| msgid "Store"
-msgid "Sorry"
-msgstr "Wårder"
-
-#: ../kfile/knewfilemenu.cpp:377
-#, fuzzy, kde-format
-#| msgid ""
-#| "<qt>Unable to run the command specified. The file or folder <b>%1</b> "
-#| "does not exist.</qt>"
-msgid "<qt>The template file <b>%1</b> does not exist.</qt>"
-msgstr ""
-"<qt>Nén moyén d' enonder li cmande ki vos djhoz. Motoit ki l' fitchî ou "
-"l' ridant <b>%1</b> n' egzistêye nén.</qt>"
-
-#: ../kfile/knewfilemenu.cpp:396
-#, fuzzy
-#| msgctxt "@title job"
-#| msgid "Creating directory"
-msgctxt "@action:button"
-msgid "Create directory"
-msgstr "Ahivant ridant"
-
-#: ../kfile/knewfilemenu.cpp:398
-#, fuzzy
-#| msgid "Ru&n as a different user"
-msgctxt "@action:button"
-msgid "Enter a different name"
-msgstr "Enonder come èn ôte &uzeu"
-
-#: ../kfile/knewfilemenu.cpp:401
-#, fuzzy
-#| msgctxt "@title job"
-#| msgid "Creating directory"
-msgid "Create hidden directory?"
-msgstr "Ahivant ridant"
-
-#: ../kfile/knewfilemenu.cpp:405
-#, kde-format
-msgid ""
-"The name \"%1\" starts with a dot, so the directory will be hidden by "
-"default."
-msgstr ""
-
-#: ../kfile/knewfilemenu.cpp:407
-msgid "Do not ask again"
-msgstr ""
-
-#: ../kfile/knewfilemenu.cpp:500 ../kfile/knewfilemenu.cpp:558
-#, fuzzy
-#| msgid "Device name"
-msgid "File name:"
-msgstr "No d' l' éndjine"
-
-#: ../kfile/knewfilemenu.cpp:503
-#, fuzzy
-#| msgid "Could Not Create Symbolic Link"
-msgid "Create Symlink"
-msgstr "Dji n' sai fé on loyén simbolike"
-
-#: ../kfile/knewfilemenu.cpp:562
-#, fuzzy
-#| msgid "C&reate"
-msgid "Create link to URL"
-msgstr "A&hiver"
-
-#: ../kfile/knewfilemenu.cpp:882
-msgid ""
-"Basic links can only point to local files or directories.\n"
-"Please use \"Link to Location\" for remote URLs."
-msgstr ""
-
-#: ../kfile/knewfilemenu.cpp:947
-#, fuzzy
-#| msgid "C&reate"
-msgid "Create New"
-msgstr "A&hiver"
-
-#: ../kfile/knewfilemenu.cpp:960
-#, fuzzy
-#| msgid "Device"
-msgid "Link to Device"
-msgstr "Éndjin"
-
-#: ../kfile/knewfilemenu.cpp:1005
-#, fuzzy
-#| msgid "New Folder"
-msgctxt "Default name for a new folder"
-msgid "New Folder"
-msgstr "Novea ridant"
-
-#: ../kfile/knewfilemenu.cpp:1019
-#, kde-format
-msgid ""
-"Create new folder in:\n"
-"%1"
-msgstr ""
-"Fé on novea ridant dins:\n"
-"%1"
-
 #: ../kfile/kfileplacesmodel.cpp:117
 #, fuzzy
 #| msgctxt "Home Directory"
@@ -6470,6 +6295,316 @@ msgstr ""
 #, kde-format
 msgid "An error occurred while accessing '%1'"
 msgstr "Åk n' a nén stî come dji sayive d' acceder a «%1»"
+
+#: ../kfile/kdiroperator.cpp:766 ../kfile/kdirselectdialog.cpp:159
+#, kde-format
+msgid "A file or folder named %1 already exists."
+msgstr "On fitchî ou on ridant.lomé %1 egzistêye dedja."
+
+#: ../kfile/kdiroperator.cpp:768 ../kfile/kdirselectdialog.cpp:163
+msgid "You do not have permission to create that folder."
+msgstr "Vos n' avoz nén les bons droets po fé ci ridant la."
+
+#: ../kfile/kdiroperator.cpp:783
+msgid "You did not select a file to delete."
+msgstr "Vos n' avoz pont tchoezi di fitchî a disfacer."
+
+#: ../kfile/kdiroperator.cpp:784
+msgid "Nothing to Delete"
+msgstr "Gn a rén a disfacer"
+
+#: ../kfile/kdiroperator.cpp:805
+#, kde-format
+msgid ""
+"<qt>Do you really want to delete\n"
+" <b>'%1'</b>?</qt>"
+msgstr ""
+"<qt>Voloz v' po do bon disfacer\n"
+" «<b>%1</b>»?</qt>"
+
+#: ../kfile/kdiroperator.cpp:807
+msgid "Delete File"
+msgstr "Disfacer fitchî"
+
+#: ../kfile/kdiroperator.cpp:845
+msgid "You did not select a file to trash."
+msgstr "Vos n' avoz pont tchoezi di fitchî a taper å batch."
+
+#: ../kfile/kdiroperator.cpp:846
+msgid "Nothing to Trash"
+msgstr "I n' a rén a taper å batch"
+
+#: ../kfile/kdiroperator.cpp:863
+#, kde-format
+msgid ""
+"<qt>Do you really want to trash\n"
+" <b>'%1'</b>?</qt>"
+msgstr ""
+"<qt>Voloz vs po do bon taper å batch\n"
+" «<b>%1</b>»?</qt>"
+
+#: ../kfile/kdiroperator.cpp:865
+msgid "Trash File"
+msgstr "Taper fitchî å batch"
+
+#: ../kfile/kdiroperator.cpp:866 ../kfile/kdiroperator.cpp:873
+msgctxt "to trash"
+msgid "&Trash"
+msgstr "&Taper å batch"
+
+#: ../kfile/kdiroperator.cpp:870
+#, kde-format
+msgid "translators: not called for n == 1"
+msgid_plural "Do you really want to trash these %1 items?"
+msgstr[0] "Voloz vs po do bon taper å batch ci cayet ci?"
+msgstr[1] "Voloz vs po do bon taper å batch ces %1 cayets ci?"
+
+#: ../kfile/kdiroperator.cpp:872
+msgid "Trash Files"
+msgstr "Taper les fitchîs å batch"
+
+#: ../kfile/kdiroperator.cpp:1064 ../kfile/kdiroperator.cpp:1201
+msgid "The specified folder does not exist or was not readable."
+msgstr "Ci ridant la n' egzistêye nén oudonbén dji nel sai lére."
+
+#: ../kfile/kdiroperator.cpp:1852
+msgid "Menu"
+msgstr "Menu"
+
+#: ../kfile/kdiroperator.cpp:1856
+msgid "Parent Folder"
+msgstr "Ridant parint"
+
+#: ../kfile/kdiroperator.cpp:1863
+msgid "Home Folder"
+msgstr "Ridant måjhon"
+
+#: ../kfile/kdiroperator.cpp:1866
+msgid "Reload"
+msgstr "Ritcherdjî"
+
+#: ../kfile/kdiroperator.cpp:1869
+msgid "New Folder..."
+msgstr "Novea ridant..."
+
+#: ../kfile/kdiroperator.cpp:1880
+msgid "Delete"
+msgstr "Disfacer"
+
+#: ../kfile/kdiroperator.cpp:1887
+msgid "Sorting"
+msgstr "Dji relî"
+
+#: ../kfile/kdiroperator.cpp:1890
+msgid "By Name"
+msgstr "Sol no"
+
+#: ../kfile/kdiroperator.cpp:1894
+msgid "By Size"
+msgstr "Sol grandeu"
+
+#: ../kfile/kdiroperator.cpp:1898
+msgid "By Date"
+msgstr "Sol date"
+
+#: ../kfile/kdiroperator.cpp:1902
+msgid "By Type"
+msgstr "Sol sôre"
+
+#: ../kfile/kdiroperator.cpp:1906
+msgid "Descending"
+msgstr "Discrexhant"
+
+#: ../kfile/kdiroperator.cpp:1910
+#, fuzzy
+#| msgid "No Folders"
+msgid "Folders First"
+msgstr "I n' a nou ridant"
+
+#: ../kfile/kdiroperator.cpp:1920
+msgid "Icon Position"
+msgstr "Place di l' imådjete"
+
+#: ../kfile/kdiroperator.cpp:1923
+msgid "Next to File Name"
+msgstr "No do fitchî shuvant"
+
+#: ../kfile/kdiroperator.cpp:1927
+msgid "Above File Name"
+msgstr "No do fitchî å dzeu"
+
+#: ../kfile/kdiroperator.cpp:1938
+msgid "Short View"
+msgstr "Court håynaedje"
+
+#: ../kfile/kdiroperator.cpp:1943
+msgid "Detailed View"
+msgstr "Håyner totafwait"
+
+#: ../kfile/kdiroperator.cpp:1948
+msgid "Tree View"
+msgstr "Vey come èn åbe"
+
+#: ../kfile/kdiroperator.cpp:1953
+msgid "Detailed Tree View"
+msgstr "Sipepieus coxhlaedje"
+
+#: ../kfile/kdiroperator.cpp:1964
+msgid "Show Hidden Files"
+msgstr "Mostrer fitchîs catchîs"
+
+#: ../kfile/kdiroperator.cpp:1968
+msgid "Show Aside Preview"
+msgstr "Mostrer prévoeyaedje l' onk a costé di l' ôte"
+
+#: ../kfile/kdiroperator.cpp:1974
+msgid "Show Preview"
+msgstr "Prévey"
+
+#: ../kfile/kdiroperator.cpp:1978
+#, fuzzy
+#| msgid "Open file dialog"
+msgid "Open File Manager"
+msgstr "Boesse di drovaedje des fitchîs"
+
+#: ../kfile/kdiroperator.cpp:1990
+msgid "&View"
+msgstr "&Vey"
+
+#: ../kfile/kdirselectdialog.cpp:131
+msgctxt "folder name"
+msgid "New Folder"
+msgstr "Novea ridant"
+
+#: ../kfile/kdirselectdialog.cpp:136
+#, kde-format
+msgctxt "@label:textbox"
+msgid ""
+"Create new folder in:\n"
+"%1"
+msgstr ""
+"Fé on novea ridant dins:\n"
+"%1"
+
+#: ../kfile/kdirselectdialog.cpp:283
+msgctxt "@action:button"
+msgid "New Folder..."
+msgstr "Novea ridant..."
+
+#: ../kfile/kdirselectdialog.cpp:324
+msgctxt "@action:inmenu"
+msgid "New Folder..."
+msgstr "Novea ridant..."
+
+#: ../kfile/kdirselectdialog.cpp:331
+#, fuzzy
+#| msgid "Move to Trash"
+msgctxt "@action:inmenu"
+msgid "Move to Trash"
+msgstr "Taper å batch"
+
+#: ../kfile/kdirselectdialog.cpp:338
+msgctxt "@action:inmenu"
+msgid "Delete"
+msgstr "Disfacer"
+
+#: ../kfile/kdirselectdialog.cpp:347
+msgctxt "@option:check"
+msgid "Show Hidden Folders"
+msgstr "Mostrer fitchîs catchîs"
+
+#: ../kfile/kdirselectdialog.cpp:354
+msgctxt "@action:inmenu"
+msgid "Properties"
+msgstr "Prôpietés"
+
+#: ../kfile/kfiletreeview.cpp:187
+msgid "Show Hidden Folders"
+msgstr "Mostrer ridants catchîs"
+
+#: ../kfile/kfileplaceeditdialog.cpp:90
+#, fuzzy
+#| msgid "Edit Places Entry"
+msgid "Add Places Entry"
+msgstr "Candjî les eplaeçmints d' intrêye"
+
+#: ../kfile/kfileplaceeditdialog.cpp:92
+msgid "Edit Places Entry"
+msgstr "Candjî les eplaeçmints d' intrêye"
+
+#: ../kfile/kfileplaceeditdialog.cpp:103
+#, fuzzy
+#| msgid ""
+#| "<qt>This is the text that will appear in the Places panel.<br /><br />The "
+#| "description should consist of one or two words that will help you "
+#| "remember what this entry refers to.</qt>"
+msgid ""
+"<qt>This is the text that will appear in the Places panel.<br /><br />The "
+"label should consist of one or two words that will help you remember what "
+"this entry refers to. If you do not enter a label, it will be derived from "
+"the location's URL.</qt>"
+msgstr ""
+"<qt>Çouchal, c' est l' tecse k' on voerè e panea des rascourtis.<br /><br /"
+">Li discrijhaedje, ça pout esse onk ou deus mots ki vs aidront a vs sovni "
+"après cwè ki ç' rascourti la vos frè potchî.</qt>"
+
+#: ../kfile/kfileplaceeditdialog.cpp:109
+#, fuzzy
+#| msgid "&Name:"
+msgid "L&abel:"
+msgstr "&No:"
+
+#: ../kfile/kfileplaceeditdialog.cpp:111
+#, fuzzy
+#| msgid "Enter a description"
+msgid "Enter descriptive label here"
+msgstr "Tapez on discrijhaedje"
+
+#: ../kfile/kfileplaceeditdialog.cpp:115
+#, kde-format
+msgid ""
+"<qt>This is the location associated with the entry. Any valid URL may be "
+"used. For example:<br /><br />%1<br />http://www.kde.org<br />ftp://ftp.kde."
+"org/pub/kde/stable<br /><br />By clicking on the button next to the text "
+"edit box you can browse to an appropriate URL.</qt>"
+msgstr ""
+"<qt>C' est l' eplaeçmint loyî a ciste intrêye. Vos poloz eployî tot l' minme "
+"li kéne hårdêye (URL) bén costrûte. Metans:<br /><br />%1<br />http://www."
+"kde.org<br />ftp://ftp.kde.org/pub/kde/stable<br /><br />Si vos clitchîz sol "
+"boton djusse asto del boesse di tecse, vos pôroz betchter po tchoezi "
+"l' hårdêye ki convént.</qt>"
+
+#: ../kfile/kfileplaceeditdialog.cpp:121
+msgid "&Location:"
+msgstr "&Eplaeçmint:"
+
+#: ../kfile/kfileplaceeditdialog.cpp:127
+msgid ""
+"<qt>This is the icon that will appear in the Places panel.<br /><br />Click "
+"on the button to select a different icon.</qt>"
+msgstr ""
+"<qt>L' imådjete k' aparexhrè e panea des rascourtis.<br /><br />Clitchîz sol "
+"boton po tchoezi ene ôte.</qt>"
+
+#: ../kfile/kfileplaceeditdialog.cpp:130
+msgid "Choose an &icon:"
+msgstr "Tchoezixhoz ene &imådjete:"
+
+#: ../kfile/kfileplaceeditdialog.cpp:147
+#, kde-format
+msgid "&Only show when using this application (%1)"
+msgstr "A n' mostrer &ki po ç' programe chal (%1)"
+
+#: ../kfile/kfileplaceeditdialog.cpp:149
+#, kde-format
+msgid ""
+"<qt>Select this setting if you want this entry to show only when using the "
+"current application (%1).<br /><br />If this setting is not selected, the "
+"entry will be available in all applications.</qt>"
+msgstr ""
+"<qt>Tchoezixhoz çoula si vos voloz k' ciste intrêye n' aparexhe ki cwand vos "
+"eployîz l' programe do moumint (%1).<br /><br />Si vos n' purdoz nén cisse "
+"tchuze la, l' intrêye serè eployeye avou tos les programes.</qt>"
 
 #: ../kfile/kfilewidget.cpp:286
 msgid ""
@@ -6733,189 +6868,106 @@ msgstr ""
 "purnea des fitchîs.  Mins sinon, il ovrèt come des rmåkes ôte pårt dins KDE."
 "</qt>"
 
-#: ../kfile/kdiroperator.cpp:766 ../kfile/kdirselectdialog.cpp:159
-#, kde-format
-msgid "A file or folder named %1 already exists."
-msgstr "On fitchî ou on ridant.lomé %1 egzistêye dedja."
+#: ../kfile/knewfilemenu.cpp:368 ../kfile/knewfilemenu.cpp:872
+#, fuzzy
+#| msgid "Store"
+msgid "Sorry"
+msgstr "Wårder"
 
-#: ../kfile/kdiroperator.cpp:768 ../kfile/kdirselectdialog.cpp:163
-msgid "You do not have permission to create that folder."
-msgstr "Vos n' avoz nén les bons droets po fé ci ridant la."
+#: ../kfile/knewfilemenu.cpp:377
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt>Unable to run the command specified. The file or folder <b>%1</b> "
+#| "does not exist.</qt>"
+msgid "<qt>The template file <b>%1</b> does not exist.</qt>"
+msgstr ""
+"<qt>Nén moyén d' enonder li cmande ki vos djhoz. Motoit ki l' fitchî ou "
+"l' ridant <b>%1</b> n' egzistêye nén.</qt>"
 
-#: ../kfile/kdiroperator.cpp:783
-msgid "You did not select a file to delete."
-msgstr "Vos n' avoz pont tchoezi di fitchî a disfacer."
+#: ../kfile/knewfilemenu.cpp:396
+#, fuzzy
+#| msgctxt "@title job"
+#| msgid "Creating directory"
+msgctxt "@action:button"
+msgid "Create directory"
+msgstr "Ahivant ridant"
 
-#: ../kfile/kdiroperator.cpp:784
-msgid "Nothing to Delete"
-msgstr "Gn a rén a disfacer"
+#: ../kfile/knewfilemenu.cpp:398
+#, fuzzy
+#| msgid "Ru&n as a different user"
+msgctxt "@action:button"
+msgid "Enter a different name"
+msgstr "Enonder come èn ôte &uzeu"
 
-#: ../kfile/kdiroperator.cpp:805
+#: ../kfile/knewfilemenu.cpp:401
+#, fuzzy
+#| msgctxt "@title job"
+#| msgid "Creating directory"
+msgid "Create hidden directory?"
+msgstr "Ahivant ridant"
+
+#: ../kfile/knewfilemenu.cpp:405
 #, kde-format
 msgid ""
-"<qt>Do you really want to delete\n"
-" <b>'%1'</b>?</qt>"
+"The name \"%1\" starts with a dot, so the directory will be hidden by "
+"default."
 msgstr ""
-"<qt>Voloz v' po do bon disfacer\n"
-" «<b>%1</b>»?</qt>"
 
-#: ../kfile/kdiroperator.cpp:807
-msgid "Delete File"
-msgstr "Disfacer fitchî"
+#: ../kfile/knewfilemenu.cpp:407
+msgid "Do not ask again"
+msgstr ""
 
-#: ../kfile/kdiroperator.cpp:845
-msgid "You did not select a file to trash."
-msgstr "Vos n' avoz pont tchoezi di fitchî a taper å batch."
+#: ../kfile/knewfilemenu.cpp:500 ../kfile/knewfilemenu.cpp:558
+#, fuzzy
+#| msgid "Device name"
+msgid "File name:"
+msgstr "No d' l' éndjine"
 
-#: ../kfile/kdiroperator.cpp:846
-msgid "Nothing to Trash"
-msgstr "I n' a rén a taper å batch"
+#: ../kfile/knewfilemenu.cpp:503
+#, fuzzy
+#| msgid "Could Not Create Symbolic Link"
+msgid "Create Symlink"
+msgstr "Dji n' sai fé on loyén simbolike"
 
-#: ../kfile/kdiroperator.cpp:863
+#: ../kfile/knewfilemenu.cpp:562
+#, fuzzy
+#| msgid "C&reate"
+msgid "Create link to URL"
+msgstr "A&hiver"
+
+#: ../kfile/knewfilemenu.cpp:608 ../kfile/knewfilemenu.cpp:656
 #, kde-format
+msgctxt "@item:inmenu Create New"
+msgid "%1"
+msgstr ""
+
+#: ../kfile/knewfilemenu.cpp:882
 msgid ""
-"<qt>Do you really want to trash\n"
-" <b>'%1'</b>?</qt>"
+"Basic links can only point to local files or directories.\n"
+"Please use \"Link to Location\" for remote URLs."
 msgstr ""
-"<qt>Voloz vs po do bon taper å batch\n"
-" «<b>%1</b>»?</qt>"
 
-#: ../kfile/kdiroperator.cpp:865
-msgid "Trash File"
-msgstr "Taper fitchî å batch"
-
-#: ../kfile/kdiroperator.cpp:866 ../kfile/kdiroperator.cpp:873
-msgctxt "to trash"
-msgid "&Trash"
-msgstr "&Taper å batch"
-
-#: ../kfile/kdiroperator.cpp:870
-#, kde-format
-msgid "translators: not called for n == 1"
-msgid_plural "Do you really want to trash these %1 items?"
-msgstr[0] "Voloz vs po do bon taper å batch ci cayet ci?"
-msgstr[1] "Voloz vs po do bon taper å batch ces %1 cayets ci?"
-
-#: ../kfile/kdiroperator.cpp:872
-msgid "Trash Files"
-msgstr "Taper les fitchîs å batch"
-
-#: ../kfile/kdiroperator.cpp:1064 ../kfile/kdiroperator.cpp:1201
-msgid "The specified folder does not exist or was not readable."
-msgstr "Ci ridant la n' egzistêye nén oudonbén dji nel sai lére."
-
-#: ../kfile/kdiroperator.cpp:1852
-msgid "Menu"
-msgstr "Menu"
-
-#: ../kfile/kdiroperator.cpp:1856
-msgid "Parent Folder"
-msgstr "Ridant parint"
-
-#: ../kfile/kdiroperator.cpp:1863
-msgid "Home Folder"
-msgstr "Ridant måjhon"
-
-#: ../kfile/kdiroperator.cpp:1866
-msgid "Reload"
-msgstr "Ritcherdjî"
-
-#: ../kfile/kdiroperator.cpp:1869
-msgid "New Folder..."
-msgstr "Novea ridant..."
-
-#: ../kfile/kdiroperator.cpp:1880
-msgid "Delete"
-msgstr "Disfacer"
-
-#: ../kfile/kdiroperator.cpp:1887
-msgid "Sorting"
-msgstr "Dji relî"
-
-#: ../kfile/kdiroperator.cpp:1890
-msgid "By Name"
-msgstr "Sol no"
-
-#: ../kfile/kdiroperator.cpp:1894
-msgid "By Size"
-msgstr "Sol grandeu"
-
-#: ../kfile/kdiroperator.cpp:1898
-msgid "By Date"
-msgstr "Sol date"
-
-#: ../kfile/kdiroperator.cpp:1902
-msgid "By Type"
-msgstr "Sol sôre"
-
-#: ../kfile/kdiroperator.cpp:1906
-msgid "Descending"
-msgstr "Discrexhant"
-
-#: ../kfile/kdiroperator.cpp:1910
+#: ../kfile/knewfilemenu.cpp:947
 #, fuzzy
-#| msgid "No Folders"
-msgid "Folders First"
-msgstr "I n' a nou ridant"
+#| msgid "C&reate"
+msgid "Create New"
+msgstr "A&hiver"
 
-#: ../kfile/kdiroperator.cpp:1920
-msgid "Icon Position"
-msgstr "Place di l' imådjete"
-
-#: ../kfile/kdiroperator.cpp:1923
-msgid "Next to File Name"
-msgstr "No do fitchî shuvant"
-
-#: ../kfile/kdiroperator.cpp:1927
-msgid "Above File Name"
-msgstr "No do fitchî å dzeu"
-
-#: ../kfile/kdiroperator.cpp:1938
-msgid "Short View"
-msgstr "Court håynaedje"
-
-#: ../kfile/kdiroperator.cpp:1943
-msgid "Detailed View"
-msgstr "Håyner totafwait"
-
-#: ../kfile/kdiroperator.cpp:1948
-msgid "Tree View"
-msgstr "Vey come èn åbe"
-
-#: ../kfile/kdiroperator.cpp:1953
-msgid "Detailed Tree View"
-msgstr "Sipepieus coxhlaedje"
-
-#: ../kfile/kdiroperator.cpp:1964
-msgid "Show Hidden Files"
-msgstr "Mostrer fitchîs catchîs"
-
-#: ../kfile/kdiroperator.cpp:1968
-msgid "Show Aside Preview"
-msgstr "Mostrer prévoeyaedje l' onk a costé di l' ôte"
-
-#: ../kfile/kdiroperator.cpp:1974
-msgid "Show Preview"
-msgstr "Prévey"
-
-#: ../kfile/kdiroperator.cpp:1978
+#: ../kfile/knewfilemenu.cpp:960
 #, fuzzy
-#| msgid "Open file dialog"
-msgid "Open File Manager"
-msgstr "Boesse di drovaedje des fitchîs"
+#| msgid "Device"
+msgid "Link to Device"
+msgstr "Éndjin"
 
-#: ../kfile/kdiroperator.cpp:1990
-msgid "&View"
-msgstr "&Vey"
-
-#: ../kfile/kdirselectdialog.cpp:131
-msgctxt "folder name"
+#: ../kfile/knewfilemenu.cpp:1005
+#, fuzzy
+#| msgid "New Folder"
+msgctxt "Default name for a new folder"
 msgid "New Folder"
 msgstr "Novea ridant"
 
-#: ../kfile/kdirselectdialog.cpp:136
+#: ../kfile/knewfilemenu.cpp:1019
 #, kde-format
-msgctxt "@label:textbox"
 msgid ""
 "Create new folder in:\n"
 "%1"
@@ -6923,72 +6975,39 @@ msgstr ""
 "Fé on novea ridant dins:\n"
 "%1"
 
-#: ../kfile/kdirselectdialog.cpp:283
-msgctxt "@action:button"
-msgid "New Folder..."
-msgstr "Novea ridant..."
-
-#: ../kfile/kdirselectdialog.cpp:324
-msgctxt "@action:inmenu"
-msgid "New Folder..."
-msgstr "Novea ridant..."
-
-#: ../kfile/kdirselectdialog.cpp:331
-#, fuzzy
-#| msgid "Move to Trash"
-msgctxt "@action:inmenu"
-msgid "Move to Trash"
-msgstr "Taper å batch"
-
-#: ../kfile/kdirselectdialog.cpp:338
-msgctxt "@action:inmenu"
-msgid "Delete"
-msgstr "Disfacer"
-
-#: ../kfile/kdirselectdialog.cpp:347
-msgctxt "@option:check"
-msgid "Show Hidden Folders"
-msgstr "Mostrer fitchîs catchîs"
-
-#: ../kfile/kdirselectdialog.cpp:354
-msgctxt "@action:inmenu"
-msgid "Properties"
-msgstr "Prôpietés"
-
-#: ../kfile/kfiletreeview.cpp:187
-msgid "Show Hidden Folders"
-msgstr "Mostrer ridants catchîs"
-
-#: ../kfile/kurlnavigator.cpp:429
+#: ../kfile/kurlnavigator.cpp:431
 msgid "Copy"
 msgstr "Copyî"
 
-#: ../kfile/kurlnavigator.cpp:433
+#: ../kfile/kurlnavigator.cpp:435
 msgid "Paste"
 msgstr "Claper"
 
-#: ../kfile/kurlnavigator.cpp:440
+#: ../kfile/kurlnavigator.cpp:442
 msgid "Edit"
 msgstr "Candjî"
 
-#: ../kfile/kurlnavigator.cpp:443
+#: ../kfile/kurlnavigator.cpp:445
 msgid "Navigate"
 msgstr "Naivyî"
 
-#: ../kfile/kurlnavigator.cpp:458
+#: ../kfile/kurlnavigator.cpp:460
 msgid "Show Full Path"
 msgstr "Mostrer tot l' tchimin"
 
-#: ../kfile/kurlnavigator.cpp:690
+#: ../kfile/kurlnavigator.cpp:698
 msgid "Custom Path"
 msgstr "Tchimin a vosse môde"
 
-#: ../kfile/kurlnavigatorbutton.cpp:612
+#: ../kfile/kurlnavigatorbutton.cpp:675
 #, fuzzy
 #| msgid "Store"
 msgctxt "@action:inmenu"
 msgid "More"
 msgstr "Wårder"
+
+#~ msgid "Retrieving from %1..."
+#~ msgstr "Riçuvaedje a pårti di %1..."
 
 #~ msgid "Edit file type"
 #~ msgstr "Candjî l' sôre di fitchî"
