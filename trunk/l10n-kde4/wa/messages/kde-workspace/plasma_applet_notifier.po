@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-11-02 04:14+0100\n"
+"POT-Creation-Date: 2011-11-03 04:17+0100\n"
 "PO-Revision-Date: 2010-05-11 19:09+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -17,6 +17,86 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 1.0\n"
 
+#: package/contents/ui/DeviceItem.qml:92
+#, fuzzy
+#| msgid "Unmounting..."
+msgctxt ""
+"Accessing is a less technical word for Mounting; translation should be short "
+"and mean 'Currently mounting this device'"
+msgid "Accessing..."
+msgstr "Dji dismonte..."
+
+#: package/contents/ui/DeviceItem.qml:92
+#, fuzzy
+#| msgid "Unmounting..."
+msgctxt ""
+"Removing is a less technical word for Unmounting; translation shoud be short "
+"and mean 'Currently unmounting this device'"
+msgid "Removing..."
+msgstr "Dji dismonte..."
+
+#: package/contents/ui/DeviceItem.qml:104
+#, fuzzy, kde-format
+#| msgid "1 action for this device"
+#| msgid_plural "%1 actions for this device"
+msgid "%1 actions for this device"
+msgstr "1 accion po cist éndjin"
+
+#: package/contents/ui/DeviceItem.qml:136
+#, kde-format
+msgctxt "@info:status Free disk space"
+msgid "%1 free"
+msgstr "%1 libe"
+
+#: package/contents/ui/DeviceItem.qml:156
+#, fuzzy
+#| msgid "Click to safely remove this device from the computer."
+msgid "Click to mount this device."
+msgstr "Clictchî po oister al coete cist éndjin del copiutrece"
+
+#: package/contents/ui/DeviceItem.qml:158
+#, fuzzy
+#| msgid "Click to safely remove this device from the computer."
+msgid "Click to eject this disc."
+msgstr "Clictchî po oister al coete cist éndjin del copiutrece"
+
+#: package/contents/ui/DeviceItem.qml:160
+#, fuzzy
+#| msgid "Click to safely remove this device from the computer."
+msgid "Click to safely remove this device."
+msgstr "Clictchî po oister al coete cist éndjin del copiutrece"
+
+#: package/contents/ui/DeviceItem.qml:162
+msgid "Click to access this device from other applications."
+msgstr "Clitchîz po k' d' ôtes programes moussexhe dins cist éndjin."
+
+#: package/contents/ui/DeviceItem.qml:172
+msgid ""
+"It is currently <b>not safe</b> to remove this device: applications may be "
+"accessing it. Click the eject button to safely remove this device."
+msgstr ""
+
+#: package/contents/ui/DeviceItem.qml:174
+msgid "This device is currently accessible."
+msgstr ""
+
+#: package/contents/ui/DeviceItem.qml:179
+msgid ""
+"It is currently <b>not safe</b> to remove this device: applications may be "
+"accessing other volumes on this device. Click the eject button on these "
+"other volumes to safely remove this device."
+msgstr ""
+
+#: package/contents/ui/DeviceItem.qml:181
+#, fuzzy
+#| msgid "Click to safely remove this device from the computer."
+msgid "It is currently safe to remove this device."
+msgstr "Clictchî po oister al coete cist éndjin del copiutrece"
+
+#: package/contents/ui/DeviceItem.qml:184
+msgid "This device is not currently accessible."
+msgstr ""
+
 #: package/contents/ui/devicenotifier.qml:118
 msgid "Available Devices"
 msgstr "Éndjins k' i gn a "
@@ -25,35 +105,23 @@ msgstr "Éndjins k' i gn a "
 msgid "No Devices Available"
 msgstr "I gn a pont d' éndjin"
 
-#, fuzzy
-#~| msgid "Click to safely remove this device from the computer."
-#~ msgid "Click to safely remove this device."
-#~ msgstr "Clictchî po oister al coete cist éndjin del copiutrece"
+#. i18n: file: package/contents/ui/config.ui:17
+#. i18n: ectx: property (text), widget (QRadioButton, kcfg_removableDevices)
+#: rc.cpp:3
+msgid "Removable devices only"
+msgstr "Seulmint les éndjins bodjåves"
 
-#, fuzzy
-#~| msgid "Click to safely remove this device from the computer."
-#~ msgid "Click to unmount this device."
-#~ msgstr "Clictchî po oister al coete cist éndjin del copiutrece"
+#. i18n: file: package/contents/ui/config.ui:24
+#. i18n: ectx: property (text), widget (QRadioButton, kcfg_nonRemovableDevices)
+#: rc.cpp:6
+msgid "Non-removable devices only"
+msgstr "Seulmint les éndjins nén bodjåves"
 
-#~ msgid "Click to access this device from other applications."
-#~ msgstr "Clitchîz po k' d' ôtes programes moussexhe dins cist éndjin."
-
-#~ msgctxt "@info:status Free disk space"
-#~ msgid "%1 free"
-#~ msgstr "%1 libe"
-
-#, fuzzy
-#~| msgid "Unmounting..."
-#~ msgctxt ""
-#~ "Removing is a less technical word for Unmounting; translation shoud be "
-#~ "short and mean 'Currently unmounting this device'"
-#~ msgid "Removing..."
-#~ msgstr "Dji dismonte..."
-
-#~ msgid "1 action for this device"
-#~ msgid_plural "%1 actions for this device"
-#~ msgstr[0] "1 accion po cist éndjin"
-#~ msgstr[1] "%1 accions po cist éndjin"
+#. i18n: file: package/contents/ui/config.ui:44
+#. i18n: ectx: property (text), widget (QRadioButton, kcfg_allDevices)
+#: rc.cpp:9
+msgid "All devices"
+msgstr "Tos les éndjins"
 
 #~ msgid "No devices available."
 #~ msgstr "I gn a pont d' éndjin."
@@ -75,15 +143,6 @@ msgstr "I gn a pont d' éndjin"
 #~ msgctxt "Hide a device"
 #~ msgid "Hide %1"
 #~ msgstr "Catchî %1"
-
-#~ msgid "Removable devices only"
-#~ msgstr "Seulmint les éndjins bodjåves"
-
-#~ msgid "Non-removable devices only"
-#~ msgstr "Seulmint les éndjins nén bodjåves"
-
-#~ msgid "All devices"
-#~ msgstr "Tos les éndjins"
 
 #~ msgid "Mounting..."
 #~ msgstr "Dji monte..."
