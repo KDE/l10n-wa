@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwinrules\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-10-06 04:00+0200\n"
+"POT-Creation-Date: 2011-11-10 04:06+0100\n"
 "PO-Revision-Date: 2009-12-26 16:19+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -23,7 +23,7 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (QListWidget, types)
 #. i18n: file: ruleswidgetbase.ui:2164
 #. i18n: ectx: property (text), item, widget (KComboBox, type)
-#: detectwidget.cpp:95 rc.cpp:169 rc.cpp:802
+#: detectwidget.cpp:95 rc.cpp:160 rc.cpp:793
 msgid "Normal Window"
 msgstr "Purnea normå"
 
@@ -31,7 +31,7 @@ msgstr "Purnea normå"
 #. i18n: ectx: property (text), item, widget (QListWidget, types)
 #. i18n: file: ruleswidgetbase.ui:2199
 #. i18n: ectx: property (text), item, widget (KComboBox, type)
-#: detectwidget.cpp:96 rc.cpp:190 rc.cpp:823
+#: detectwidget.cpp:96 rc.cpp:181 rc.cpp:814
 msgid "Desktop"
 msgstr "Sicribanne"
 
@@ -39,7 +39,7 @@ msgstr "Sicribanne"
 #. i18n: ectx: property (text), item, widget (QListWidget, types)
 #. i18n: file: ruleswidgetbase.ui:2179
 #. i18n: ectx: property (text), item, widget (KComboBox, type)
-#: detectwidget.cpp:97 rc.cpp:178 rc.cpp:811
+#: detectwidget.cpp:97 rc.cpp:169 rc.cpp:802
 msgid "Dock (panel)"
 msgstr "Dock (sicriftôr)"
 
@@ -47,7 +47,7 @@ msgstr "Dock (sicriftôr)"
 #. i18n: ectx: property (text), item, widget (QListWidget, types)
 #. i18n: file: ruleswidgetbase.ui:2184
 #. i18n: ectx: property (text), item, widget (KComboBox, type)
-#: detectwidget.cpp:98 rc.cpp:181 rc.cpp:814
+#: detectwidget.cpp:98 rc.cpp:172 rc.cpp:805
 msgid "Toolbar"
 msgstr "Båre ås usteyes"
 
@@ -55,7 +55,7 @@ msgstr "Båre ås usteyes"
 #. i18n: ectx: property (text), item, widget (QListWidget, types)
 #. i18n: file: ruleswidgetbase.ui:2189
 #. i18n: ectx: property (text), item, widget (KComboBox, type)
-#: detectwidget.cpp:99 rc.cpp:184 rc.cpp:817
+#: detectwidget.cpp:99 rc.cpp:175 rc.cpp:808
 msgid "Torn-Off Menu"
 msgstr "Disrîlêye dressêye"
 
@@ -63,7 +63,7 @@ msgstr "Disrîlêye dressêye"
 #. i18n: ectx: property (text), item, widget (QListWidget, types)
 #. i18n: file: ruleswidgetbase.ui:2169
 #. i18n: ectx: property (text), item, widget (KComboBox, type)
-#: detectwidget.cpp:100 rc.cpp:172 rc.cpp:805
+#: detectwidget.cpp:100 rc.cpp:163 rc.cpp:796
 msgid "Dialog Window"
 msgstr "Purnea d' divize"
 
@@ -75,7 +75,7 @@ msgstr "Sipotchî sôre"
 #. i18n: ectx: property (text), item, widget (QListWidget, types)
 #. i18n: file: ruleswidgetbase.ui:2204
 #. i18n: ectx: property (text), item, widget (KComboBox, type)
-#: detectwidget.cpp:102 rc.cpp:196 rc.cpp:826
+#: detectwidget.cpp:102 rc.cpp:187 rc.cpp:817
 msgid "Standalone Menubar"
 msgstr "Båre di dressêye tote seule"
 
@@ -83,7 +83,7 @@ msgstr "Båre di dressêye tote seule"
 #. i18n: ectx: property (text), item, widget (QListWidget, types)
 #. i18n: file: ruleswidgetbase.ui:2174
 #. i18n: ectx: property (text), item, widget (KComboBox, type)
-#: detectwidget.cpp:103 rc.cpp:175 rc.cpp:808
+#: detectwidget.cpp:103 rc.cpp:166 rc.cpp:799
 msgid "Utility Window"
 msgstr "Purnea d' usteye"
 
@@ -91,11 +91,11 @@ msgstr "Purnea d' usteye"
 #. i18n: ectx: property (text), item, widget (QListWidget, types)
 #. i18n: file: ruleswidgetbase.ui:2194
 #. i18n: ectx: property (text), item, widget (KComboBox, type)
-#: detectwidget.cpp:104 rc.cpp:187 rc.cpp:820
+#: detectwidget.cpp:104 rc.cpp:178 rc.cpp:811
 msgid "Splash Screen"
 msgstr "Waitroûle splash"
 
-#: detectwidget.cpp:114
+#: detectwidget.cpp:110
 msgid "Unknown - will be treated as Normal Window"
 msgstr "Nén cnoxhou - serè riwaitî come Normå purnea"
 
@@ -178,101 +178,75 @@ msgid "Your emails"
 msgstr "jean.cayron@gmail.com"
 
 #. i18n: file: detectwidget.ui:17
-#. i18n: ectx: property (text), widget (QLabel, textLabel9)
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: rc.cpp:5
 msgid "Information About Selected Window"
 msgstr "Informåcion sol purnea tchoezi"
 
-#. i18n: file: detectwidget.ui:37
+#. i18n: file: detectwidget.ui:26
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
 #: rc.cpp:8
 msgid "Class:"
 msgstr "Classe:"
 
-#. i18n: file: detectwidget.ui:60
+#. i18n: file: detectwidget.ui:54
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
 #: rc.cpp:11
 msgid "Role:"
 msgstr "Role:"
 
-#. i18n: file: detectwidget.ui:83
+#. i18n: file: detectwidget.ui:82
 #. i18n: ectx: property (text), widget (QLabel, textLabel4)
 #: rc.cpp:14
 msgid "Type:"
 msgstr "Sôre:"
 
-#. i18n: file: detectwidget.ui:106
+#. i18n: file: detectwidget.ui:110
 #. i18n: ectx: property (text), widget (QLabel, textLabel8)
 #: rc.cpp:17
 msgid "Title:"
 msgstr "Tite:"
 
-#. i18n: file: detectwidget.ui:129
+#. i18n: file: detectwidget.ui:138
 #. i18n: ectx: property (text), widget (QLabel, textLabel13)
 #: rc.cpp:20
 msgid "Machine:"
 msgstr "Éndjin:"
 
-#. i18n: file: detectwidget.ui:152
+#. i18n: file: detectwidget.ui:169
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: rc.cpp:23
-msgid "Match Strategy"
+msgid "Match by primary class name and"
 msgstr ""
 
-#. i18n: file: detectwidget.ui:161
-#. i18n: ectx: property (whatsThis), widget (QRadioButton, use_class)
+#. i18n: file: detectwidget.ui:178
+#. i18n: ectx: property (text), widget (QCheckBox, match_whole_class)
 #: rc.cpp:26
-msgid ""
-"For selecting all windows belonging to a specific application, selecting "
-"only window class should usually work."
+msgid "Secondary class name  (resulting in term in brackets)"
 msgstr ""
 
-#. i18n: file: detectwidget.ui:164
-#. i18n: ectx: property (text), widget (QRadioButton, use_class)
+#. i18n: file: detectwidget.ui:185
+#. i18n: ectx: property (text), widget (QCheckBox, match_role)
 #: rc.cpp:29
-msgid "Use window &class (whole application)"
-msgstr "Eployî &classe di purnea (tot l' programe)"
+msgid "Window role (can be used to select windows by function)"
+msgstr ""
 
-#. i18n: file: detectwidget.ui:174
-#. i18n: ectx: property (whatsThis), widget (QRadioButton, use_role)
+#. i18n: file: detectwidget.ui:192
+#. i18n: ectx: property (text), widget (QCheckBox, match_type)
 #: rc.cpp:32
-msgid ""
-"For selecting a specific window in an application, both window class and "
-"window role should be selected. Window class will determine the application, "
-"and window role the specific window in the application; many applications do "
-"not provide useful window roles though."
+msgid "Window type (eg. all dialogs, but not the main windows)"
 msgstr ""
 
-#. i18n: file: detectwidget.ui:177
-#. i18n: ectx: property (text), widget (QRadioButton, use_role)
-#: rc.cpp:35
-msgid "Use window class and window &role (specific window)"
-msgstr "Eployî classe eyet &role di purnea (specifike å purnea)"
-
-#. i18n: file: detectwidget.ui:184
-#. i18n: ectx: property (whatsThis), widget (QRadioButton, use_whole_class)
-#: rc.cpp:38
-msgid ""
-"With some (non-KDE) applications whole window class can be sufficient for "
-"selecting a specific window in an application, as they set whole window "
-"class to contain both application and window role."
-msgstr ""
-
-#. i18n: file: detectwidget.ui:187
-#. i18n: ectx: property (text), widget (QRadioButton, use_whole_class)
-#: rc.cpp:41
-msgid "Use &whole window class (specific window)"
-msgstr "Eployî classe di &tot l' purnea (sipecifike å purnea)"
-
-#. i18n: file: detectwidget.ui:194
+#. i18n: file: detectwidget.ui:199
 #. i18n: ectx: property (text), widget (QCheckBox, match_title)
-#: rc.cpp:44
-msgid "Match also window &title"
-msgstr "Fé coresponde avou l' &tite do purnea eto"
+#: rc.cpp:35
+msgid ""
+"Window title (very specific, can fail due to content changes or translation)"
+msgstr ""
 
 #. i18n: file: editshortcut.ui:18
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:47
+#: rc.cpp:38
 msgid ""
 "A single shortcut can be easily assigned or cleared using the two buttons. "
 "Only shortcuts with modifiers can be used.<p>\n"
@@ -286,61 +260,61 @@ msgstr ""
 
 #. i18n: file: editshortcut.ui:62
 #. i18n: ectx: property (text), widget (QPushButton, pushButton1)
-#: rc.cpp:52
+#: rc.cpp:43
 msgid "&Single Shortcut"
 msgstr "&Simpe rascourti"
 
 #. i18n: file: editshortcut.ui:85
 #. i18n: ectx: property (text), widget (QPushButton, pushButton2)
-#: rc.cpp:55
+#: rc.cpp:46
 msgid "C&lear"
 msgstr "Net&yî"
 
 #. i18n: file: ruleslist.ui:23
 #. i18n: ectx: property (text), widget (KPushButton, new_button)
-#: rc.cpp:58
+#: rc.cpp:49
 msgid "&New..."
 msgstr "&Novea..."
 
 #. i18n: file: ruleslist.ui:30
 #. i18n: ectx: property (text), widget (KPushButton, modify_button)
-#: rc.cpp:61
+#: rc.cpp:52
 msgid "&Modify..."
 msgstr "&Candjî..."
 
 #. i18n: file: ruleslist.ui:37
 #. i18n: ectx: property (text), widget (KPushButton, delete_button)
-#: rc.cpp:64
+#: rc.cpp:55
 msgid "Delete"
 msgstr "Disfacer"
 
 #. i18n: file: ruleslist.ui:47
 #. i18n: ectx: property (text), widget (KPushButton, moveup_button)
-#: rc.cpp:67
+#: rc.cpp:58
 msgid "Move &Up"
 msgstr "&Monter"
 
 #. i18n: file: ruleslist.ui:54
 #. i18n: ectx: property (text), widget (KPushButton, movedown_button)
-#: rc.cpp:70
+#: rc.cpp:61
 msgid "Move &Down"
 msgstr "&Dischinde"
 
 #. i18n: file: ruleslist.ui:91
 #. i18n: ectx: property (text), widget (QPushButton, import_button)
-#: rc.cpp:73
+#: rc.cpp:64
 msgid "&Import"
 msgstr ""
 
 #. i18n: file: ruleslist.ui:98
 #. i18n: ectx: property (text), widget (QPushButton, export_button)
-#: rc.cpp:76
+#: rc.cpp:67
 msgid "&Export"
 msgstr ""
 
 #. i18n: file: ruleswidgetbase.ui:21
 #. i18n: ectx: attribute (title), widget (QWidget, TabPage1)
-#: rc.cpp:79
+#: rc.cpp:70
 #, fuzzy
 #| msgid "&Window"
 msgid "&Window matching"
@@ -348,13 +322,13 @@ msgstr "&Purnea"
 
 #. i18n: file: ruleswidgetbase.ui:27
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:82
+#: rc.cpp:73
 msgid "De&scription:"
 msgstr "Di&scrijhaedje:"
 
 #. i18n: file: ruleswidgetbase.ui:46
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:85
+#: rc.cpp:76
 #, fuzzy
 #| msgid "Window &class (application type):"
 msgid "Window &class (application):"
@@ -368,7 +342,7 @@ msgstr "&Classe di purnea (sôre di programe):"
 #. i18n: ectx: property (text), item, widget (KComboBox, title_match)
 #. i18n: file: ruleswidgetbase.ui:248
 #. i18n: ectx: property (text), item, widget (KComboBox, machine_match)
-#: rc.cpp:88 rc.cpp:109 rc.cpp:130 rc.cpp:148
+#: rc.cpp:79 rc.cpp:100 rc.cpp:121 rc.cpp:139
 msgid "Unimportant"
 msgstr "Nén impôrtant"
 
@@ -380,7 +354,7 @@ msgstr "Nén impôrtant"
 #. i18n: ectx: property (text), item, widget (KComboBox, title_match)
 #. i18n: file: ruleswidgetbase.ui:253
 #. i18n: ectx: property (text), item, widget (KComboBox, machine_match)
-#: rc.cpp:91 rc.cpp:112 rc.cpp:133 rc.cpp:151
+#: rc.cpp:82 rc.cpp:103 rc.cpp:124 rc.cpp:142
 msgid "Exact Match"
 msgstr "Corespond totafwaitmint"
 
@@ -392,7 +366,7 @@ msgstr "Corespond totafwaitmint"
 #. i18n: ectx: property (text), item, widget (KComboBox, title_match)
 #. i18n: file: ruleswidgetbase.ui:258
 #. i18n: ectx: property (text), item, widget (KComboBox, machine_match)
-#: rc.cpp:94 rc.cpp:115 rc.cpp:136 rc.cpp:154
+#: rc.cpp:85 rc.cpp:106 rc.cpp:127 rc.cpp:145
 msgid "Substring Match"
 msgstr "Corespond å boket d' tchinne"
 
@@ -404,7 +378,7 @@ msgstr "Corespond å boket d' tchinne"
 #. i18n: ectx: property (text), item, widget (KComboBox, title_match)
 #. i18n: file: ruleswidgetbase.ui:263
 #. i18n: ectx: property (text), item, widget (KComboBox, machine_match)
-#: rc.cpp:97 rc.cpp:118 rc.cpp:139 rc.cpp:157
+#: rc.cpp:88 rc.cpp:109 rc.cpp:130 rc.cpp:148
 msgid "Regular Expression"
 msgstr "Erîlêye ratourneure"
 
@@ -416,55 +390,55 @@ msgstr "Erîlêye ratourneure"
 #. i18n: ectx: property (text), widget (KPushButton, edit_reg_title)
 #. i18n: file: ruleswidgetbase.ui:274
 #. i18n: ectx: property (text), widget (KPushButton, edit_reg_machine)
-#: rc.cpp:100 rc.cpp:121 rc.cpp:142 rc.cpp:160
+#: rc.cpp:91 rc.cpp:112 rc.cpp:133 rc.cpp:151
 msgid "Edit"
 msgstr "Candjî"
 
 #. i18n: file: ruleswidgetbase.ui:102
 #. i18n: ectx: property (text), widget (QCheckBox, whole_wmclass)
-#: rc.cpp:103
+#: rc.cpp:94
 msgid "Match w&hole window class"
 msgstr "Fé coresponde a t&ote li classe do purnea"
 
 #. i18n: file: ruleswidgetbase.ui:109
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:106
+#: rc.cpp:97
 msgid "Window &role:"
 msgstr "&Role do purnea:"
 
 #. i18n: file: ruleswidgetbase.ui:162
 #. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#: rc.cpp:124
+#: rc.cpp:115
 msgid "Window &types:"
 msgstr "&Sôres di purnea:"
 
 #. i18n: file: ruleswidgetbase.ui:178
 #. i18n: ectx: property (text), widget (QLabel, textLabel5)
-#: rc.cpp:127
+#: rc.cpp:118
 msgid "Window t&itle:"
 msgstr "&Tite do purnea:"
 
 #. i18n: file: ruleswidgetbase.ui:231
 #. i18n: ectx: property (text), widget (QLabel, textLabel7)
-#: rc.cpp:145
+#: rc.cpp:136
 msgid "&Machine (hostname):"
 msgstr "É&ndjin (no d' lodjoe):"
 
 #. i18n: file: ruleswidgetbase.ui:318
 #. i18n: ectx: property (text), widget (KPushButton, detect)
-#: rc.cpp:163
+#: rc.cpp:154
 msgid "&Detect Window Properties"
 msgstr "&Detecter prôpietés do purnea"
 
 #. i18n: file: ruleswidgetbase.ui:325
 #. i18n: ectx: property (suffix), widget (QSpinBox, detection_delay)
-#: rc.cpp:166
+#: rc.cpp:157
 msgid "s delay"
 msgstr ""
 
 #. i18n: file: ruleswidgetbase.ui:468
 #. i18n: ectx: property (text), item, widget (QListWidget, types)
-#: rc.cpp:193
+#: rc.cpp:184
 #, fuzzy
 #| msgid "On Main Window"
 msgid "Unmanaged Window"
@@ -472,7 +446,7 @@ msgstr "Sol mwaisse purnea"
 
 #. i18n: file: ruleswidgetbase.ui:489
 #. i18n: ectx: attribute (title), widget (QWidget, TabPage3)
-#: rc.cpp:199
+#: rc.cpp:190
 #, fuzzy
 #| msgid "&Position"
 msgid "&Size && Position"
@@ -480,7 +454,7 @@ msgstr "&Eplaeçmint"
 
 #. i18n: file: ruleswidgetbase.ui:495
 #. i18n: ectx: property (text), widget (QCheckBox, enable_position)
-#: rc.cpp:202
+#: rc.cpp:193
 msgid "&Position"
 msgstr "&Eplaeçmint"
 
@@ -550,12 +524,12 @@ msgstr "&Eplaeçmint"
 #. i18n: ectx: property (text), item, widget (KComboBox, rule_fsplevel)
 #. i18n: file: ruleswidgetbase.ui:2419
 #. i18n: ectx: property (text), item, widget (KComboBox, rule_moveresizemode)
-#: rc.cpp:205 rc.cpp:232 rc.cpp:262 rc.cpp:286 rc.cpp:310 rc.cpp:331
-#: rc.cpp:379 rc.cpp:391 rc.cpp:406 rc.cpp:424 rc.cpp:442 rc.cpp:466
-#: rc.cpp:488 rc.cpp:503 rc.cpp:524 rc.cpp:548 rc.cpp:560 rc.cpp:572
-#: rc.cpp:593 rc.cpp:617 rc.cpp:641 rc.cpp:662 rc.cpp:683 rc.cpp:698
-#: rc.cpp:719 rc.cpp:735 rc.cpp:756 rc.cpp:778 rc.cpp:793 rc.cpp:832
-#: rc.cpp:841 rc.cpp:850 rc.cpp:884
+#: rc.cpp:196 rc.cpp:223 rc.cpp:253 rc.cpp:277 rc.cpp:301 rc.cpp:322
+#: rc.cpp:370 rc.cpp:382 rc.cpp:397 rc.cpp:415 rc.cpp:433 rc.cpp:457
+#: rc.cpp:479 rc.cpp:494 rc.cpp:515 rc.cpp:539 rc.cpp:551 rc.cpp:563
+#: rc.cpp:584 rc.cpp:608 rc.cpp:632 rc.cpp:653 rc.cpp:674 rc.cpp:689
+#: rc.cpp:710 rc.cpp:726 rc.cpp:747 rc.cpp:769 rc.cpp:784 rc.cpp:823
+#: rc.cpp:832 rc.cpp:841 rc.cpp:875
 msgid "Do Not Affect"
 msgstr "En nén riwaitî"
 
@@ -589,9 +563,9 @@ msgstr "En nén riwaitî"
 #. i18n: ectx: property (text), item, widget (KComboBox, rule_shortcut)
 #. i18n: file: ruleswidgetbase.ui:1873
 #. i18n: ectx: property (text), item, widget (KComboBox, rule_noborder)
-#: rc.cpp:208 rc.cpp:235 rc.cpp:265 rc.cpp:289 rc.cpp:313 rc.cpp:409
-#: rc.cpp:427 rc.cpp:445 rc.cpp:506 rc.cpp:527 rc.cpp:596 rc.cpp:620
-#: rc.cpp:644 rc.cpp:665 rc.cpp:701
+#: rc.cpp:199 rc.cpp:226 rc.cpp:256 rc.cpp:280 rc.cpp:304 rc.cpp:400
+#: rc.cpp:418 rc.cpp:436 rc.cpp:497 rc.cpp:518 rc.cpp:587 rc.cpp:611
+#: rc.cpp:635 rc.cpp:656 rc.cpp:692
 msgid "Apply Initially"
 msgstr "Mete en ouve å cminçmint"
 
@@ -625,9 +599,9 @@ msgstr "Mete en ouve å cminçmint"
 #. i18n: ectx: property (text), item, widget (KComboBox, rule_shortcut)
 #. i18n: file: ruleswidgetbase.ui:1878
 #. i18n: ectx: property (text), item, widget (KComboBox, rule_noborder)
-#: rc.cpp:211 rc.cpp:238 rc.cpp:268 rc.cpp:292 rc.cpp:316 rc.cpp:412
-#: rc.cpp:430 rc.cpp:448 rc.cpp:509 rc.cpp:530 rc.cpp:599 rc.cpp:623
-#: rc.cpp:647 rc.cpp:668 rc.cpp:704
+#: rc.cpp:202 rc.cpp:229 rc.cpp:259 rc.cpp:283 rc.cpp:307 rc.cpp:403
+#: rc.cpp:421 rc.cpp:439 rc.cpp:500 rc.cpp:521 rc.cpp:590 rc.cpp:614
+#: rc.cpp:638 rc.cpp:659 rc.cpp:695
 msgid "Remember"
 msgstr "Rimimbrer"
 
@@ -697,12 +671,12 @@ msgstr "Rimimbrer"
 #. i18n: ectx: property (text), item, widget (KComboBox, rule_fsplevel)
 #. i18n: file: ruleswidgetbase.ui:2424
 #. i18n: ectx: property (text), item, widget (KComboBox, rule_moveresizemode)
-#: rc.cpp:214 rc.cpp:241 rc.cpp:271 rc.cpp:295 rc.cpp:319 rc.cpp:334
-#: rc.cpp:382 rc.cpp:394 rc.cpp:415 rc.cpp:433 rc.cpp:451 rc.cpp:469
-#: rc.cpp:491 rc.cpp:512 rc.cpp:533 rc.cpp:551 rc.cpp:563 rc.cpp:575
-#: rc.cpp:602 rc.cpp:626 rc.cpp:650 rc.cpp:671 rc.cpp:686 rc.cpp:707
-#: rc.cpp:722 rc.cpp:738 rc.cpp:759 rc.cpp:781 rc.cpp:796 rc.cpp:835
-#: rc.cpp:844 rc.cpp:853 rc.cpp:887
+#: rc.cpp:205 rc.cpp:232 rc.cpp:262 rc.cpp:286 rc.cpp:310 rc.cpp:325
+#: rc.cpp:373 rc.cpp:385 rc.cpp:406 rc.cpp:424 rc.cpp:442 rc.cpp:460
+#: rc.cpp:482 rc.cpp:503 rc.cpp:524 rc.cpp:542 rc.cpp:554 rc.cpp:566
+#: rc.cpp:593 rc.cpp:617 rc.cpp:641 rc.cpp:662 rc.cpp:677 rc.cpp:698
+#: rc.cpp:713 rc.cpp:729 rc.cpp:750 rc.cpp:772 rc.cpp:787 rc.cpp:826
+#: rc.cpp:835 rc.cpp:844 rc.cpp:878
 msgid "Force"
 msgstr "Foirci"
 
@@ -736,9 +710,9 @@ msgstr "Foirci"
 #. i18n: ectx: property (text), item, widget (KComboBox, rule_shortcut)
 #. i18n: file: ruleswidgetbase.ui:1888
 #. i18n: ectx: property (text), item, widget (KComboBox, rule_noborder)
-#: rc.cpp:217 rc.cpp:244 rc.cpp:274 rc.cpp:298 rc.cpp:322 rc.cpp:418
-#: rc.cpp:436 rc.cpp:454 rc.cpp:515 rc.cpp:536 rc.cpp:605 rc.cpp:629
-#: rc.cpp:653 rc.cpp:674 rc.cpp:710
+#: rc.cpp:208 rc.cpp:235 rc.cpp:265 rc.cpp:289 rc.cpp:313 rc.cpp:409
+#: rc.cpp:427 rc.cpp:445 rc.cpp:506 rc.cpp:527 rc.cpp:596 rc.cpp:620
+#: rc.cpp:644 rc.cpp:665 rc.cpp:701
 msgid "Apply Now"
 msgstr "Mete en ouve asteure"
 
@@ -808,18 +782,18 @@ msgstr "Mete en ouve asteure"
 #. i18n: ectx: property (text), item, widget (KComboBox, rule_fsplevel)
 #. i18n: file: ruleswidgetbase.ui:2429
 #. i18n: ectx: property (text), item, widget (KComboBox, rule_moveresizemode)
-#: rc.cpp:220 rc.cpp:247 rc.cpp:277 rc.cpp:301 rc.cpp:325 rc.cpp:337
-#: rc.cpp:385 rc.cpp:397 rc.cpp:421 rc.cpp:439 rc.cpp:457 rc.cpp:472
-#: rc.cpp:494 rc.cpp:518 rc.cpp:539 rc.cpp:554 rc.cpp:566 rc.cpp:578
-#: rc.cpp:608 rc.cpp:632 rc.cpp:656 rc.cpp:677 rc.cpp:689 rc.cpp:713
-#: rc.cpp:725 rc.cpp:741 rc.cpp:762 rc.cpp:784 rc.cpp:799 rc.cpp:838
-#: rc.cpp:847 rc.cpp:856 rc.cpp:890
+#: rc.cpp:211 rc.cpp:238 rc.cpp:268 rc.cpp:292 rc.cpp:316 rc.cpp:328
+#: rc.cpp:376 rc.cpp:388 rc.cpp:412 rc.cpp:430 rc.cpp:448 rc.cpp:463
+#: rc.cpp:485 rc.cpp:509 rc.cpp:530 rc.cpp:545 rc.cpp:557 rc.cpp:569
+#: rc.cpp:599 rc.cpp:623 rc.cpp:647 rc.cpp:668 rc.cpp:680 rc.cpp:704
+#: rc.cpp:716 rc.cpp:732 rc.cpp:753 rc.cpp:775 rc.cpp:790 rc.cpp:829
+#: rc.cpp:838 rc.cpp:847 rc.cpp:881
 msgid "Force Temporarily"
 msgstr "Foirci po kék tins"
 
 #. i18n: file: ruleswidgetbase.ui:542
 #. i18n: ectx: property (placeholderText), widget (KRestrictedLine, position)
-#: rc.cpp:223
+#: rc.cpp:214
 msgid "x,y"
 msgstr ""
 
@@ -831,13 +805,13 @@ msgstr ""
 #. i18n: ectx: property (validChars), widget (KRestrictedLine, maxsize)
 #. i18n: file: ruleswidgetbase.ui:1152
 #. i18n: ectx: property (validChars), widget (KRestrictedLine, minsize)
-#: rc.cpp:226 rc.cpp:253 rc.cpp:403 rc.cpp:463
+#: rc.cpp:217 rc.cpp:244 rc.cpp:394 rc.cpp:454
 msgid "0123456789-+,xX:"
 msgstr "0123456789-+,xX:"
 
 #. i18n: file: ruleswidgetbase.ui:552
 #. i18n: ectx: property (text), widget (QCheckBox, enable_size)
-#: rc.cpp:229
+#: rc.cpp:220
 msgid "&Size"
 msgstr "&Grandeu"
 
@@ -847,49 +821,49 @@ msgstr "&Grandeu"
 #. i18n: ectx: property (placeholderText), widget (KRestrictedLine, maxsize)
 #. i18n: file: ruleswidgetbase.ui:1149
 #. i18n: ectx: property (placeholderText), widget (KRestrictedLine, minsize)
-#: rc.cpp:250 rc.cpp:400 rc.cpp:460
+#: rc.cpp:241 rc.cpp:391 rc.cpp:451
 msgid "width,height"
 msgstr ""
 
 #. i18n: file: ruleswidgetbase.ui:616
 #. i18n: ectx: property (text), widget (QCheckBox, enable_maximizehoriz)
-#: rc.cpp:256
+#: rc.cpp:247
 msgid "Maximized &horizontally"
 msgstr "Å pus grand di &coûtchî"
 
 #. i18n: file: ruleswidgetbase.ui:630
 #. i18n: ectx: property (text), widget (QCheckBox, enable_maximizevert)
-#: rc.cpp:259
+#: rc.cpp:250
 msgid "Maximized &vertically"
 msgstr "Å pus grand d' &astampé"
 
 #. i18n: file: ruleswidgetbase.ui:688
 #. i18n: ectx: property (text), widget (QCheckBox, enable_fullscreen)
-#: rc.cpp:280
+#: rc.cpp:271
 msgid "&Fullscreen"
 msgstr "Tote li &waitroûle"
 
 #. i18n: file: ruleswidgetbase.ui:702
 #. i18n: ectx: property (text), widget (QCheckBox, enable_desktop)
-#: rc.cpp:283
+#: rc.cpp:274
 msgid "&Desktop"
 msgstr "&Sicribanne"
 
 #. i18n: file: ruleswidgetbase.ui:760
 #. i18n: ectx: property (text), widget (QCheckBox, enable_minimize)
-#: rc.cpp:304
+#: rc.cpp:295
 msgid "M&inimized"
 msgstr "Å pus &ptit"
 
 #. i18n: file: ruleswidgetbase.ui:774
 #. i18n: ectx: property (text), widget (QCheckBox, enable_shade)
-#: rc.cpp:307
+#: rc.cpp:298
 msgid "Sh&aded"
 msgstr "A l' &ombion"
 
 #. i18n: file: ruleswidgetbase.ui:835
 #. i18n: ectx: property (text), widget (QCheckBox, enable_placement)
-#: rc.cpp:328
+#: rc.cpp:319
 #, fuzzy
 #| msgid "P&lacement"
 msgid "Initial p&lacement"
@@ -897,67 +871,67 @@ msgstr "P&laeçmint"
 
 #. i18n: file: ruleswidgetbase.ui:868
 #. i18n: ectx: property (text), item, widget (KComboBox, placement)
-#: rc.cpp:340
+#: rc.cpp:331
 msgid "Default"
 msgstr "Prémetou"
 
 #. i18n: file: ruleswidgetbase.ui:873
 #. i18n: ectx: property (text), item, widget (KComboBox, placement)
-#: rc.cpp:343
+#: rc.cpp:334
 msgid "No Placement"
 msgstr "Pont d' plaeçmint"
 
 #. i18n: file: ruleswidgetbase.ui:878
 #. i18n: ectx: property (text), item, widget (KComboBox, placement)
-#: rc.cpp:346
+#: rc.cpp:337
 msgid "Smart"
 msgstr "Malén"
 
 #. i18n: file: ruleswidgetbase.ui:883
 #. i18n: ectx: property (text), item, widget (KComboBox, placement)
-#: rc.cpp:349
+#: rc.cpp:340
 msgid "Maximizing"
 msgstr "Å pus grand"
 
 #. i18n: file: ruleswidgetbase.ui:888
 #. i18n: ectx: property (text), item, widget (KComboBox, placement)
-#: rc.cpp:352
+#: rc.cpp:343
 msgid "Cascade"
 msgstr "Riguilite"
 
 #. i18n: file: ruleswidgetbase.ui:893
 #. i18n: ectx: property (text), item, widget (KComboBox, placement)
-#: rc.cpp:355
+#: rc.cpp:346
 msgid "Centered"
 msgstr "Å mitan"
 
 #. i18n: file: ruleswidgetbase.ui:898
 #. i18n: ectx: property (text), item, widget (KComboBox, placement)
-#: rc.cpp:358
+#: rc.cpp:349
 msgid "Random"
 msgstr "Pa accidint"
 
 #. i18n: file: ruleswidgetbase.ui:903
 #. i18n: ectx: property (text), item, widget (KComboBox, placement)
-#: rc.cpp:361
+#: rc.cpp:352
 msgid "Top-Left Corner"
 msgstr "Coine del copete hintche"
 
 #. i18n: file: ruleswidgetbase.ui:908
 #. i18n: ectx: property (text), item, widget (KComboBox, placement)
-#: rc.cpp:364
+#: rc.cpp:355
 msgid "Under Mouse"
 msgstr "Pa dzo l' sori"
 
 #. i18n: file: ruleswidgetbase.ui:913
 #. i18n: ectx: property (text), item, widget (KComboBox, placement)
-#: rc.cpp:367
+#: rc.cpp:358
 msgid "On Main Window"
 msgstr "Sol mwaisse purnea"
 
 #. i18n: file: ruleswidgetbase.ui:924
 #. i18n: ectx: property (toolTip), widget (QCheckBox, enable_ignoreposition)
-#: rc.cpp:370
+#: rc.cpp:361
 msgid ""
 "Windows can ask to appear in a certain position.\n"
 "By default this overrides the placement strategy\n"
@@ -967,25 +941,25 @@ msgstr ""
 
 #. i18n: file: ruleswidgetbase.ui:927
 #. i18n: ectx: property (text), widget (QCheckBox, enable_ignoreposition)
-#: rc.cpp:376
+#: rc.cpp:367
 msgid "Ignore requested &geometry"
 msgstr "Passer houte li d&jeyometreye dimandêye"
 
 #. i18n: file: ruleswidgetbase.ui:970
 #. i18n: ectx: property (text), widget (QCheckBox, enable_maxsize)
-#: rc.cpp:388
+#: rc.cpp:379
 msgid "M&aximum size"
 msgstr "Grandeu m&acsimom"
 
 #. i18n: file: ruleswidgetbase.ui:1181
 #. i18n: ectx: property (text), widget (QCheckBox, enable_minsize)
-#: rc.cpp:475
+#: rc.cpp:466
 msgid "M&inimum size"
 msgstr "Grandeu m&inimom"
 
 #. i18n: file: ruleswidgetbase.ui:1218
 #. i18n: ectx: property (toolTip), widget (QCheckBox, enable_strictgeometry)
-#: rc.cpp:478
+#: rc.cpp:469
 msgid ""
 "Eg. terminals or video players can ask to keep a certain aspect ratio\n"
 "or only grow by values larger than one\n"
@@ -996,55 +970,55 @@ msgstr ""
 
 #. i18n: file: ruleswidgetbase.ui:1224
 #. i18n: ectx: property (text), widget (QCheckBox, enable_strictgeometry)
-#: rc.cpp:485
+#: rc.cpp:476
 msgid "Obey geometry restrictions"
 msgstr ""
 
 #. i18n: file: ruleswidgetbase.ui:1257
 #. i18n: ectx: attribute (title), widget (QWidget, TabPage4)
-#: rc.cpp:497
+#: rc.cpp:488
 msgid "&Arrangement && Access"
 msgstr ""
 
 #. i18n: file: ruleswidgetbase.ui:1263
 #. i18n: ectx: property (text), widget (QCheckBox, enable_above)
-#: rc.cpp:500
+#: rc.cpp:491
 msgid "Keep &above"
 msgstr "Wårder pa dz&eu"
 
 #. i18n: file: ruleswidgetbase.ui:1314
 #. i18n: ectx: property (text), widget (QCheckBox, enable_below)
-#: rc.cpp:521
+#: rc.cpp:512
 msgid "Keep &below"
 msgstr "Wårder pa dz&o"
 
 #. i18n: file: ruleswidgetbase.ui:1372
 #. i18n: ectx: property (text), widget (QCheckBox, enable_autogroup)
-#: rc.cpp:542
+#: rc.cpp:533
 msgid "Autogroup with &identical"
 msgstr "Grouper otomaticmint avou les &minmes"
 
 #. i18n: file: ruleswidgetbase.ui:1379
 #. i18n: ectx: property (text), widget (QCheckBox, enable_autogroupfg)
-#: rc.cpp:545
+#: rc.cpp:536
 msgid "Autog&roup in foreground"
 msgstr "G&rouper otomaticmint dins l' fond"
 
 #. i18n: file: ruleswidgetbase.ui:1415
 #. i18n: ectx: property (text), widget (QCheckBox, enable_autogroupid)
-#: rc.cpp:557
+#: rc.cpp:548
 msgid "Autogroup by I&D"
 msgstr "Grouper otomaticmint so l' &ID"
 
 #. i18n: file: ruleswidgetbase.ui:1484
 #. i18n: ectx: property (text), widget (QCheckBox, enable_tilingoption)
-#: rc.cpp:569
+#: rc.cpp:560
 msgid "T&iling"
 msgstr ""
 
 #. i18n: file: ruleswidgetbase.ui:1517
 #. i18n: ectx: property (text), item, widget (KComboBox, tilingoption)
-#: rc.cpp:581
+#: rc.cpp:572
 #, fuzzy
 #| msgid "Title:"
 msgid "Tiled"
@@ -1052,43 +1026,43 @@ msgstr "Tite:"
 
 #. i18n: file: ruleswidgetbase.ui:1522
 #. i18n: ectx: property (text), item, widget (KComboBox, tilingoption)
-#: rc.cpp:584
+#: rc.cpp:575
 msgid "Floating"
 msgstr ""
 
 #. i18n: file: ruleswidgetbase.ui:1550
 #. i18n: ectx: property (toolTip), widget (QCheckBox, enable_skiptaskbar)
-#: rc.cpp:587
+#: rc.cpp:578
 msgid "Window shall (not) appear in the taskbar."
 msgstr ""
 
 #. i18n: file: ruleswidgetbase.ui:1553
 #. i18n: ectx: property (text), widget (QCheckBox, enable_skiptaskbar)
-#: rc.cpp:590
+#: rc.cpp:581
 msgid "Skip &taskbar"
 msgstr "Passer li båre di &bouyes"
 
 #. i18n: file: ruleswidgetbase.ui:1597
 #. i18n: ectx: property (toolTip), widget (QCheckBox, enable_skippager)
-#: rc.cpp:611
+#: rc.cpp:602
 msgid "Window shall (not) appear in the manager for virtual desktops"
 msgstr ""
 
 #. i18n: file: ruleswidgetbase.ui:1600
 #. i18n: ectx: property (text), widget (QCheckBox, enable_skippager)
-#: rc.cpp:614
+#: rc.cpp:605
 msgid "Skip pa&ger"
 msgstr "Passer pa&ger"
 
 #. i18n: file: ruleswidgetbase.ui:1651
 #. i18n: ectx: property (toolTip), widget (QCheckBox, enable_skipswitcher)
-#: rc.cpp:635
+#: rc.cpp:626
 msgid "Window shall (not) appear in the Alt+Tab list"
 msgstr ""
 
 #. i18n: file: ruleswidgetbase.ui:1654
 #. i18n: ectx: property (text), widget (QCheckBox, enable_skipswitcher)
-#: rc.cpp:638
+#: rc.cpp:629
 #, fuzzy
 #| msgid "Skip pa&ger"
 msgid "Skip &switcher"
@@ -1096,31 +1070,31 @@ msgstr "Passer pa&ger"
 
 #. i18n: file: ruleswidgetbase.ui:1712
 #. i18n: ectx: property (text), widget (QCheckBox, enable_shortcut)
-#: rc.cpp:659
+#: rc.cpp:650
 msgid "Shortcut"
 msgstr "Rascourti"
 
 #. i18n: file: ruleswidgetbase.ui:1769
 #. i18n: ectx: property (text), widget (QPushButton, shortcut_edit)
-#: rc.cpp:680
+#: rc.cpp:671
 msgid "Edit..."
 msgstr "Candjî..."
 
 #. i18n: file: ruleswidgetbase.ui:1851
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: rc.cpp:692
+#: rc.cpp:683
 msgid "Appearance && &Fixes"
 msgstr ""
 
 #. i18n: file: ruleswidgetbase.ui:1857
 #. i18n: ectx: property (text), widget (QCheckBox, enable_noborder)
-#: rc.cpp:695
+#: rc.cpp:686
 msgid "&No titlebar and frame"
 msgstr ""
 
 #. i18n: file: ruleswidgetbase.ui:1908
 #. i18n: ectx: property (text), widget (QCheckBox, enable_opacityactive)
-#: rc.cpp:716
+#: rc.cpp:707
 #, fuzzy
 #| msgid "A&ctive opacity in %"
 msgid "A&ctive opacity"
@@ -1130,14 +1104,14 @@ msgstr "Opacité a&ctive en %"
 #. i18n: ectx: property (suffix), widget (QSpinBox, opacityactive)
 #. i18n: file: ruleswidgetbase.ui:1985
 #. i18n: ectx: property (suffix), widget (QSpinBox, opacityinactive)
-#: rc.cpp:729 rc.cpp:745
+#: rc.cpp:720 rc.cpp:736
 #, no-c-format
 msgid "%"
 msgstr ""
 
 #. i18n: file: ruleswidgetbase.ui:1953
 #. i18n: ectx: property (text), widget (QCheckBox, enable_opacityinactive)
-#: rc.cpp:732
+#: rc.cpp:723
 #, fuzzy
 #| msgid "I&nactive opacity in %"
 msgid "I&nactive opacity"
@@ -1145,7 +1119,7 @@ msgstr "Opacité &nén active en %"
 
 #. i18n: file: ruleswidgetbase.ui:2029
 #. i18n: ectx: property (toolTip), widget (QCheckBox, enable_acceptfocus)
-#: rc.cpp:748
+#: rc.cpp:739
 msgid ""
 "Windows may prevent to get the focus (activate) when being clicked.\n"
 "On the other hand you might wish to prevent a window\n"
@@ -1154,13 +1128,13 @@ msgstr ""
 
 #. i18n: file: ruleswidgetbase.ui:2032
 #. i18n: ectx: property (text), widget (QCheckBox, enable_acceptfocus)
-#: rc.cpp:753
+#: rc.cpp:744
 msgid "Accept &focus"
 msgstr "Accepter &focus"
 
 #. i18n: file: ruleswidgetbase.ui:2075
 #. i18n: ectx: property (toolTip), widget (QCheckBox, enable_disableglobalshortcuts)
-#: rc.cpp:765
+#: rc.cpp:756
 msgid ""
 "When used, a window will receive\n"
 "all keyboard inputs while it is active, including Alt+Tab etc.\n"
@@ -1174,7 +1148,7 @@ msgstr ""
 
 #. i18n: file: ruleswidgetbase.ui:2078
 #. i18n: ectx: property (text), widget (QCheckBox, enable_disableglobalshortcuts)
-#: rc.cpp:775
+#: rc.cpp:766
 #, fuzzy
 #| msgid "Block global shortcuts"
 msgid "Ignore global shortcuts"
@@ -1182,25 +1156,25 @@ msgstr "Espaitchî globås rascourtis"
 
 #. i18n: file: ruleswidgetbase.ui:2124
 #. i18n: ectx: property (text), widget (QCheckBox, enable_closeable)
-#: rc.cpp:787
+#: rc.cpp:778
 msgid "&Closeable"
 msgstr "&Cloyåve"
 
 #. i18n: file: ruleswidgetbase.ui:2131
 #. i18n: ectx: property (text), widget (QCheckBox, enable_type)
-#: rc.cpp:790
+#: rc.cpp:781
 msgid "Window &type"
 msgstr "&Sôre di purnea"
 
 #. i18n: file: ruleswidgetbase.ui:2219
 #. i18n: ectx: property (text), widget (QCheckBox, enable_blockcompositing)
-#: rc.cpp:829
+#: rc.cpp:820
 msgid "Block compositing"
 msgstr ""
 
 #. i18n: file: ruleswidgetbase.ui:2366
 #. i18n: ectx: property (text), item, widget (KComboBox, fsplevel)
-#: rc.cpp:859
+#: rc.cpp:850
 #, fuzzy
 #| msgid "None"
 msgctxt "no focus stealing prevention"
@@ -1209,31 +1183,31 @@ msgstr "Nole"
 
 #. i18n: file: ruleswidgetbase.ui:2371
 #. i18n: ectx: property (text), item, widget (KComboBox, fsplevel)
-#: rc.cpp:862
+#: rc.cpp:853
 msgid "Low"
 msgstr "Basse"
 
 #. i18n: file: ruleswidgetbase.ui:2376
 #. i18n: ectx: property (text), item, widget (KComboBox, fsplevel)
-#: rc.cpp:865
+#: rc.cpp:856
 msgid "Normal"
 msgstr "Normåle"
 
 #. i18n: file: ruleswidgetbase.ui:2381
 #. i18n: ectx: property (text), item, widget (KComboBox, fsplevel)
-#: rc.cpp:868
+#: rc.cpp:859
 msgid "High"
 msgstr "Hôte"
 
 #. i18n: file: ruleswidgetbase.ui:2386
 #. i18n: ectx: property (text), item, widget (KComboBox, fsplevel)
-#: rc.cpp:871
+#: rc.cpp:862
 msgid "Extreme"
 msgstr "Estrinme"
 
 #. i18n: file: ruleswidgetbase.ui:2398
 #. i18n: ectx: property (toolTip), widget (QCheckBox, enable_fsplevel)
-#: rc.cpp:874
+#: rc.cpp:865
 msgid ""
 "KWin tries to prevent windows from taking the focus\n"
 "(\"activate\") while you're working in another window,\n"
@@ -1244,25 +1218,25 @@ msgstr ""
 
 #. i18n: file: ruleswidgetbase.ui:2401
 #. i18n: ectx: property (text), widget (QCheckBox, enable_fsplevel)
-#: rc.cpp:881
+#: rc.cpp:872
 msgid "&Focus stealing prevention"
 msgstr "Hapaedje di &focusse"
 
 #. i18n: file: ruleswidgetbase.ui:2441
 #. i18n: ectx: property (text), item, widget (KComboBox, moveresizemode)
-#: rc.cpp:893
+#: rc.cpp:884
 msgid "Opaque"
 msgstr "Opake"
 
 #. i18n: file: ruleswidgetbase.ui:2446
 #. i18n: ectx: property (text), item, widget (KComboBox, moveresizemode)
-#: rc.cpp:896
+#: rc.cpp:887
 msgid "Transparent"
 msgstr "Transparint"
 
 #. i18n: file: ruleswidgetbase.ui:2454
 #. i18n: ectx: property (text), widget (QCheckBox, enable_moveresizemode)
-#: rc.cpp:899
+#: rc.cpp:890
 msgid "&Moving/resizing"
 msgstr "&Bodjî/candjî grandeu"
 
@@ -1357,6 +1331,18 @@ msgstr "Léjhoz l' documintåcion po pus di detays."
 #: ruleswidget.cpp:789
 msgid "Edit Shortcut"
 msgstr "Candjî rascourti"
+
+#~ msgid "Use window &class (whole application)"
+#~ msgstr "Eployî &classe di purnea (tot l' programe)"
+
+#~ msgid "Use window class and window &role (specific window)"
+#~ msgstr "Eployî classe eyet &role di purnea (specifike å purnea)"
+
+#~ msgid "Use &whole window class (specific window)"
+#~ msgstr "Eployî classe di &tot l' purnea (sipecifike å purnea)"
+
+#~ msgid "Match also window &title"
+#~ msgstr "Fé coresponde avou l' &tite do purnea eto"
 
 #~ msgid "Extra role:"
 #~ msgstr "Role di pus:"
