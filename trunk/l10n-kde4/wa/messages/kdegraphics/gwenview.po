@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gwenview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-11-20 04:13+0100\n"
+"POT-Creation-Date: 2011-11-21 04:41+0100\n"
 "PO-Revision-Date: 2010-08-10 23:36+0200\n"
 "Last-Translator: Jean Cayron et Odile Lambert <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -154,65 +154,72 @@ msgstr "Drovi avou"
 msgid "Other Application..."
 msgstr "Ôtes programes..."
 
-#: app/filtercontroller.cpp:128
-msgid "Name contains"
-msgstr "I gn a dins l' no"
+#: app/fullscreencontent.cpp:111
+msgctxt "@info:tooltip"
+msgid "Configure Full Screen Mode"
+msgstr "Apontyî l' môde tote li waitroûle"
 
-#: app/filtercontroller.cpp:129
-msgid "Name does not contain"
-msgstr "I gn a nén dins l' no"
+#: app/fullscreencontent.cpp:277
+msgctxt "@item:intext fullscreen meta info separator"
+msgid ", "
+msgstr ", "
 
-#: app/filtercontroller.cpp:231
-msgid "Date >="
-msgstr "Date ≥"
+#: app/fullscreencontent.cpp:337
+#, kde-format
+msgctxt "Slideshow interval in seconds"
+msgid "%1 sec"
+msgid_plural "%1 secs"
+msgstr[0] "%1 seg"
+msgstr[1] "%1 segs"
 
-#: app/filtercontroller.cpp:232
-msgid "Date ="
-msgstr "Date ="
+#: app/gvcore.cpp:84
+msgctxt "@info"
+msgid "No image format selected."
+msgstr "Nole cogne d' imådje tchoezeye."
 
-#: app/filtercontroller.cpp:233
-msgid "Date <="
-msgstr "Date ≤"
+#: app/gvcore.cpp:97
+#, kde-format
+msgctxt "@info"
+msgid "Gwenview cannot save images as %1."
+msgstr "Gwenview n' sai schaper les imådjes come %1."
 
-#: app/filtercontroller.cpp:324
-msgid "Rating >="
-msgstr "Préjhaedje ≥"
+#: app/gvcore.cpp:182
+msgid "Save using another format"
+msgstr "Schaper avou ene ôte cogne"
 
-#: app/filtercontroller.cpp:325
-msgid "Rating ="
-msgstr "Préjhaedje ="
+#: app/gvcore.cpp:185
+#, kde-format
+msgid "Gwenview cannot save images in '%1' format."
+msgstr "Gwenview n' sai schaper les imådjes el cogne « %1 »."
 
-#: app/filtercontroller.cpp:326
-msgid "Rating <="
-msgstr "Préjhaedje ≤"
+#: app/gvcore.cpp:208
+#, kde-format
+msgctxt "@info"
+msgid ""
+"A file named <filename>%1</filename> already exists.\n"
+"Are you sure you want to overwrite it?"
+msgstr ""
+"On fitchî <filename>%1</filename> egzistêye dedja.\n"
+"Estoz seur(e) ki vos l' voloz spotchî?"
 
-#: app/filtercontroller.cpp:421
-msgid "Tagged"
-msgstr "A ene etikete"
+#: app/gvcore.cpp:223 app/gvcore.cpp:246
+#, kde-format
+msgctxt "@info"
+msgid "<b>Saving <filename>%1</filename> failed:</b><br>%2"
+msgstr "<b>Li schapaedje di <filename>%1</filename> a fwait berwete:</b><br>%2"
 
-#: app/filtercontroller.cpp:422
-msgid "Not Tagged"
-msgstr "Pont d' etikete"
+#: app/gvcore.cpp:264
+msgid "You are now viewing the new document."
+msgstr ""
 
-#: app/filtercontroller.cpp:556
-msgctxt "@action:inmenu"
-msgid "Filter by Name"
-msgstr "Passer al passete sol no"
+#: app/gvcore.cpp:266
+msgid "Go back to the original"
+msgstr ""
 
-#: app/filtercontroller.cpp:557
-msgctxt "@action:inmenu"
-msgid "Filter by Date"
-msgstr "Passer al passete sol date"
-
-#: app/filtercontroller.cpp:563
-msgctxt "@action:inmenu"
-msgid "Filter by Rating"
-msgstr "Passer al passete sol préjhaedje"
-
-#: app/filtercontroller.cpp:564
-msgctxt "@action:inmenu"
-msgid "Filter by Tag"
-msgstr "Passer al passete so l' etikete"
+#: app/gvcore.cpp:310 lib/document/documentjob.cpp:78
+msgctxt "@info"
+msgid "Gwenview cannot edit this kind of image."
+msgstr "Gwenview n' sai candjî les imådjes di c' djinre la."
 
 #: app/imagemetainfodialog.cpp:125
 #, fuzzy
@@ -220,6 +227,71 @@ msgstr "Passer al passete so l' etikete"
 msgctxt "@title:window"
 msgid "Meta Information"
 msgstr "Meta-informåcion"
+
+#: app/imageopscontextmanageritem.cpp:80
+msgctxt "@title actions category - means actions changing image"
+msgid "Edit"
+msgstr "Candjî"
+
+#: app/imageopscontextmanageritem.cpp:82
+msgid "Rotate Left"
+msgstr "Fé tourner a hintche"
+
+#: app/imageopscontextmanageritem.cpp:87
+msgid "Rotate Right"
+msgstr "Fé tourné a droete"
+
+#: app/imageopscontextmanageritem.cpp:92
+msgid "Mirror"
+msgstr "Muroe"
+
+#: app/imageopscontextmanageritem.cpp:96
+msgid "Flip"
+msgstr "Sititchî"
+
+#: app/imageopscontextmanageritem.cpp:100 lib/resize/resizeimagedialog.cpp:50
+msgid "Resize"
+msgstr "Candjî di grandeu"
+
+#. i18n: file: lib/crop/cropwidget.ui:20
+#. i18n: ectx: property (windowTitle), widget (QWidget, CropWidget)
+#: app/imageopscontextmanageritem.cpp:105 lib/crop/cropimageoperation.cpp:70
+#: lib/crop/cropwidget.cpp:163 rc.cpp:174
+msgid "Crop"
+msgstr "Côper dvins"
+
+#: app/imageopscontextmanageritem.cpp:110
+msgid "Red Eye Reduction"
+msgstr "Ridujhaedje des rodjes ouys"
+
+#: app/imageopscontextmanageritem.cpp:137
+msgid "Image Operations"
+msgstr "Operåcions so ls imådjes"
+
+#: app/saveallhelper.cpp:57
+msgctxt "@info:progress saving all image changes"
+msgid "Saving..."
+msgstr "Dji schape..."
+
+#: app/saveallhelper.cpp:58
+msgid "&Stop"
+msgstr "Hô&w"
+
+#: app/saveallhelper.cpp:83
+#, kde-format
+msgctxt "@info"
+msgid "One document could not be saved:"
+msgid_plural "%1 documents could not be saved:"
+msgstr[0] "Dji n' a savou schaper on documint:"
+msgstr[1] "Dji n' a savou schaper %1 documints:"
+
+#: app/saveallhelper.cpp:107
+#, kde-format
+msgctxt ""
+"@info %1 is the name of the document which failed to save, %2 is the reason "
+"for the failure"
+msgid "<filename>%1</filename>: %2"
+msgstr "<filename>%1</filename>: %2"
 
 #: app/infocontextmanageritem.cpp:168
 #, kde-format
@@ -273,28 +345,6 @@ msgstr[1] "%1 fitchîs"
 msgctxt "@label. The two parameters are strings like '2 folders' and '1 file'."
 msgid "%1 and %2 selected"
 msgstr "%1 eyet %2 tchoezis"
-
-#: app/kipiexportaction.cpp:51
-msgid "Last Used Plugin"
-msgstr ""
-
-#: app/kipiexportaction.cpp:53
-#, fuzzy
-#| msgid "&Plugins"
-msgid "Other Plugins"
-msgstr "&Tchôke-divins"
-
-#: app/kipiexportaction.cpp:63 app/kipiinterface.cpp:303
-#, fuzzy
-#| msgid "No Plugin"
-msgid "No Plugin Found"
-msgstr "Nou tchôke-divins"
-
-#: app/kipiexportaction.cpp:76
-#, fuzzy
-#| msgid "Square"
-msgid "Share"
-msgstr "Cwåré"
 
 #: app/kipiimagecollectionselector.cpp:54
 #, kde-format
@@ -359,6 +409,12 @@ msgstr "Ramexhnêyes"
 #| msgid "Saving..."
 msgid "Loading..."
 msgstr "Dji schape..."
+
+#: app/kipiinterface.cpp:303 app/kipiexportaction.cpp:63
+#, fuzzy
+#| msgid "No Plugin"
+msgid "No Plugin Found"
+msgstr "Nou tchôke-divins"
 
 #: app/kipiuploadwidget.cpp:43
 #, kde-format
@@ -558,31 +614,6 @@ msgstr[1] "%1 imådjes ont stî candjeyes."
 msgid "If you quit now, your changes will be lost."
 msgstr "Si vs cwitez sol côp, vos candjmints sront pierdous."
 
-#: app/saveallhelper.cpp:57
-msgctxt "@info:progress saving all image changes"
-msgid "Saving..."
-msgstr "Dji schape..."
-
-#: app/saveallhelper.cpp:58
-msgid "&Stop"
-msgstr "Hô&w"
-
-#: app/saveallhelper.cpp:83
-#, kde-format
-msgctxt "@info"
-msgid "One document could not be saved:"
-msgid_plural "%1 documents could not be saved:"
-msgstr[0] "Dji n' a savou schaper on documint:"
-msgstr[1] "Dji n' a savou schaper %1 documints:"
-
-#: app/saveallhelper.cpp:107
-#, kde-format
-msgctxt ""
-"@info %1 is the name of the document which failed to save, %2 is the reason "
-"for the failure"
-msgid "<filename>%1</filename>: %2"
-msgstr "<filename>%1</filename>: %2"
-
 #: app/savebar.cpp:86
 msgid ""
 "You have modified many images. To avoid memory problems, you should save "
@@ -670,72 +701,21 @@ msgid ""
 msgstr ""
 "Ciste imådje a stî candjeye. El ritcherdjî spotchrè tos vos candjmints."
 
-#: app/fullscreencontent.cpp:111
-msgctxt "@info:tooltip"
-msgid "Configure Full Screen Mode"
-msgstr "Apontyî l' môde tote li waitroûle"
-
-#: app/fullscreencontent.cpp:277
-msgctxt "@item:intext fullscreen meta info separator"
-msgid ", "
-msgstr ", "
-
-#: app/fullscreencontent.cpp:337
-#, kde-format
-msgctxt "Slideshow interval in seconds"
-msgid "%1 sec"
-msgid_plural "%1 secs"
-msgstr[0] "%1 seg"
-msgstr[1] "%1 segs"
-
-#: app/gvcore.cpp:84
-msgctxt "@info"
-msgid "No image format selected."
-msgstr "Nole cogne d' imådje tchoezeye."
-
-#: app/gvcore.cpp:97
-#, kde-format
-msgctxt "@info"
-msgid "Gwenview cannot save images as %1."
-msgstr "Gwenview n' sai schaper les imådjes come %1."
-
-#: app/gvcore.cpp:182
-msgid "Save using another format"
-msgstr "Schaper avou ene ôte cogne"
-
-#: app/gvcore.cpp:185
-#, kde-format
-msgid "Gwenview cannot save images in '%1' format."
-msgstr "Gwenview n' sai schaper les imådjes el cogne « %1 »."
-
-#: app/gvcore.cpp:208
-#, kde-format
-msgctxt "@info"
-msgid ""
-"A file named <filename>%1</filename> already exists.\n"
-"Are you sure you want to overwrite it?"
-msgstr ""
-"On fitchî <filename>%1</filename> egzistêye dedja.\n"
-"Estoz seur(e) ki vos l' voloz spotchî?"
-
-#: app/gvcore.cpp:223 app/gvcore.cpp:246
-#, kde-format
-msgctxt "@info"
-msgid "<b>Saving <filename>%1</filename> failed:</b><br>%2"
-msgstr "<b>Li schapaedje di <filename>%1</filename> a fwait berwete:</b><br>%2"
-
-#: app/gvcore.cpp:264
-msgid "You are now viewing the new document."
+#: app/kipiexportaction.cpp:51
+msgid "Last Used Plugin"
 msgstr ""
 
-#: app/gvcore.cpp:266
-msgid "Go back to the original"
-msgstr ""
+#: app/kipiexportaction.cpp:53
+#, fuzzy
+#| msgid "&Plugins"
+msgid "Other Plugins"
+msgstr "&Tchôke-divins"
 
-#: app/gvcore.cpp:310 lib/document/documentjob.cpp:78
-msgctxt "@info"
-msgid "Gwenview cannot edit this kind of image."
-msgstr "Gwenview n' sai candjî les imådjes di c' djinre la."
+#: app/kipiexportaction.cpp:76
+#, fuzzy
+#| msgid "Square"
+msgid "Share"
+msgstr "Cwåré"
 
 #: app/semanticinfocontextmanageritem.cpp:140
 msgid "Semantic Information"
@@ -829,45 +809,90 @@ msgid_plural "%1 documents"
 msgstr[0] "%1 documint"
 msgstr[1] "%1 documints"
 
-#: app/imageopscontextmanageritem.cpp:80
-msgctxt "@title actions category - means actions changing image"
-msgid "Edit"
-msgstr "Candjî"
+#: app/filtercontroller.cpp:128
+msgid "Name contains"
+msgstr "I gn a dins l' no"
 
-#: app/imageopscontextmanageritem.cpp:82
-msgid "Rotate Left"
-msgstr "Fé tourner a hintche"
+#: app/filtercontroller.cpp:129
+msgid "Name does not contain"
+msgstr "I gn a nén dins l' no"
 
-#: app/imageopscontextmanageritem.cpp:87
-msgid "Rotate Right"
-msgstr "Fé tourné a droete"
+#: app/filtercontroller.cpp:231
+msgid "Date >="
+msgstr "Date ≥"
 
-#: app/imageopscontextmanageritem.cpp:92
-msgid "Mirror"
-msgstr "Muroe"
+#: app/filtercontroller.cpp:232
+msgid "Date ="
+msgstr "Date ="
 
-#: app/imageopscontextmanageritem.cpp:96
-msgid "Flip"
-msgstr "Sititchî"
+#: app/filtercontroller.cpp:233
+msgid "Date <="
+msgstr "Date ≤"
 
-#: app/imageopscontextmanageritem.cpp:100 lib/resize/resizeimagedialog.cpp:50
-msgid "Resize"
-msgstr "Candjî di grandeu"
+#: app/filtercontroller.cpp:324
+msgid "Rating >="
+msgstr "Préjhaedje ≥"
 
-#. i18n: file: lib/crop/cropwidget.ui:20
-#. i18n: ectx: property (windowTitle), widget (QWidget, CropWidget)
-#: app/imageopscontextmanageritem.cpp:105 lib/crop/cropimageoperation.cpp:70
-#: lib/crop/cropwidget.cpp:163 rc.cpp:174
-msgid "Crop"
-msgstr "Côper dvins"
+#: app/filtercontroller.cpp:325
+msgid "Rating ="
+msgstr "Préjhaedje ="
 
-#: app/imageopscontextmanageritem.cpp:110
-msgid "Red Eye Reduction"
-msgstr "Ridujhaedje des rodjes ouys"
+#: app/filtercontroller.cpp:326
+msgid "Rating <="
+msgstr "Préjhaedje ≤"
 
-#: app/imageopscontextmanageritem.cpp:137
-msgid "Image Operations"
-msgstr "Operåcions so ls imådjes"
+#: app/filtercontroller.cpp:421
+msgid "Tagged"
+msgstr "A ene etikete"
+
+#: app/filtercontroller.cpp:422
+msgid "Not Tagged"
+msgstr "Pont d' etikete"
+
+#: app/filtercontroller.cpp:556
+msgctxt "@action:inmenu"
+msgid "Filter by Name"
+msgstr "Passer al passete sol no"
+
+#: app/filtercontroller.cpp:557
+msgctxt "@action:inmenu"
+msgid "Filter by Date"
+msgstr "Passer al passete sol date"
+
+#: app/filtercontroller.cpp:563
+msgctxt "@action:inmenu"
+msgid "Filter by Rating"
+msgstr "Passer al passete sol préjhaedje"
+
+#: app/filtercontroller.cpp:564
+msgctxt "@action:inmenu"
+msgid "Filter by Tag"
+msgstr "Passer al passete so l' etikete"
+
+#: importer/main.cpp:40
+#, fuzzy
+#| msgid "Gwenview KPart"
+msgid "Gwenview Importer"
+msgstr "KPårt Gwenview"
+
+#: importer/main.cpp:42
+#, fuzzy
+#| msgid "Import"
+msgid "Photo Importer"
+msgstr "Abaguer"
+
+#: importer/main.cpp:44
+#, fuzzy
+#| msgid "Copyright 2000-2008 Aurélien Gâteau"
+msgid "Copyright 2009-2010 Aurélien Gâteau"
+msgstr "Copyright 2000-2008 Aurélien Gâteau"
+
+#: importer/main.cpp:53
+#, fuzzy
+#| msgid "%1 folder"
+#| msgid_plural "%1 folders"
+msgid "Source folder"
+msgstr "%1 ridant"
 
 #: importer/filenameformater.cpp:103
 msgid "Shooting date"
@@ -1014,31 +1039,6 @@ msgctxt "%1 is the importer keyword, %2 is keyword explanation"
 msgid "%1: %2"
 msgstr "%1x%2"
 
-#: importer/main.cpp:40
-#, fuzzy
-#| msgid "Gwenview KPart"
-msgid "Gwenview Importer"
-msgstr "KPårt Gwenview"
-
-#: importer/main.cpp:42
-#, fuzzy
-#| msgid "Import"
-msgid "Photo Importer"
-msgstr "Abaguer"
-
-#: importer/main.cpp:44
-#, fuzzy
-#| msgid "Copyright 2000-2008 Aurélien Gâteau"
-msgid "Copyright 2009-2010 Aurélien Gâteau"
-msgstr "Copyright 2000-2008 Aurélien Gâteau"
-
-#: importer/main.cpp:53
-#, fuzzy
-#| msgid "%1 folder"
-#| msgid_plural "%1 folders"
-msgid "Source folder"
-msgstr "%1 ridant"
-
 #: importer/thumbnailpage.cpp:149
 #, fuzzy
 #| msgctxt "@label"
@@ -1052,12 +1052,6 @@ msgstr "%1 ridant tchoezi"
 #| msgid "Import"
 msgid "Import All"
 msgstr "Abaguer"
-
-#: lib/fullscreenbar.cpp:260 lib/statusbartoolbutton.cpp:119
-#, kde-format
-msgctxt "@info:tooltip of custom toolbar button"
-msgid "%1"
-msgstr "%1"
 
 #: lib/crop/cropwidget.cpp:117
 msgid "Square"
@@ -1176,6 +1170,11 @@ msgstr "100%"
 msgid "No document selected"
 msgstr "Pont d' documint tchoezi"
 
+#: lib/historymodel.cpp:138
+#, kde-format
+msgid "Last visited: %1"
+msgstr "Dierin vizité: %1"
+
 #: lib/jpegcontent.cpp:564
 msgctxt "@info"
 msgid "Could not open file for writing."
@@ -1208,6 +1207,12 @@ msgstr "Candjî di grandeu"
 #: lib/semanticinfo/tagitemdelegate.cpp:66
 msgid "Assign this tag to all selected images"
 msgstr "Aroyî ciste etikete a totes les imådjes tchoezeyes"
+
+#: lib/statusbartoolbutton.cpp:119 lib/fullscreenbar.cpp:260
+#, kde-format
+msgctxt "@info:tooltip of custom toolbar button"
+msgid "%1"
+msgstr "%1"
 
 #: lib/transformimageoperation.cpp:67
 #, fuzzy
@@ -1243,11 +1248,6 @@ msgstr "Sititchî"
 msgctxt "(qtundo-format)"
 msgid "Transform"
 msgstr "Candjî e"
-
-#: lib/historymodel.cpp:138
-#, kde-format
-msgid "Last visited: %1"
-msgstr "Dierin vizité: %1"
 
 #: lib/imagemetainfomodel.cpp:230
 msgctxt "@item:intable Image file name"
