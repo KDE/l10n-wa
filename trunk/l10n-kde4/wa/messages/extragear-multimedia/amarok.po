@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-12-02 03:32+0100\n"
+"POT-Creation-Date: 2011-12-03 03:10+0100\n"
 "PO-Revision-Date: 2011-09-21 08:11+0200\n"
 "Last-Translator: Djan Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -7141,6 +7141,10 @@ msgstr "Tapaedje di fitchîs å batch"
 msgid "Delete Tracks"
 msgstr "Disfacer bokets"
 
+#: browsers/BrowserCategoryList.cpp:52
+msgid "Filter Music Sources"
+msgstr "Passer al passete les sourdants d' muzike"
+
 #: browsers/BrowserBreadcrumbItem.cpp:68
 msgid "Media Sources Home"
 msgstr "Måjhon des sourdants des medias"
@@ -7169,10 +7173,6 @@ msgid "1 track"
 msgid_plural "%1 tracks"
 msgstr[0] "1 boket"
 msgstr[1] "%1 bokets"
-
-#: browsers/BrowserCategoryList.cpp:52
-msgid "Filter Music Sources"
-msgstr "Passer al passete les sourdants d' muzike"
 
 #: configdialog/dialogs/DatabaseConfig.cpp:93
 msgctxt ""
@@ -8222,11 +8222,6 @@ msgstr "Ciste operåcion n' est nén sopoirtêye, %1"
 msgid "print() takes one argument"
 msgstr "print() prind èn årgumint"
 
-#: context/toolbar/AppletItemOverlay.cpp:104
-#: context/toolbar/AppletToolbarAppletItem.cpp:58
-msgid "Remove Applet"
-msgstr "Oister aplikete"
-
 #: context/toolbar/AppletToolbarAddItem.cpp:47
 msgid "Add Applets..."
 msgstr "Radjouter apliketes..."
@@ -8242,6 +8237,11 @@ msgstr "Apontyî apliketes..."
 #: context/toolbar/AppletToolbarAppletItem.cpp:53
 msgid "no applet name"
 msgstr "nou no d' aplikete"
+
+#: context/toolbar/AppletToolbarAppletItem.cpp:58
+#: context/toolbar/AppletItemOverlay.cpp:105
+msgid "Remove Applet"
+msgstr "Oister aplikete"
 
 #: context/tools/amarokpkg.cpp:40
 msgid "Install, list, remove Amarok applets"
@@ -13569,46 +13569,6 @@ msgstr "Dj' aberwete li båze di dnêyes di Jamendo.com"
 msgid "Updating the local Jamendo database."
 msgstr "Dji met a djoû li båze di dnêyes coinrece des Jamendo."
 
-#: services/lastfm/LastFmTreeModel.cpp:182
-msgid "Personal Radio"
-msgstr "Radio da sinne"
-
-#: services/lastfm/LastFmTreeModel.cpp:183
-msgid "Neighborhood"
-msgstr "Vijhnåve"
-
-#: services/lastfm/LastFmTreeModel.cpp:368
-msgid "My Recommendations"
-msgstr "Mes rcomandaedjes"
-
-#: services/lastfm/LastFmTreeModel.cpp:370
-msgid "My Radio Station"
-msgstr "Mi ståcion radio"
-
-#: services/lastfm/LastFmTreeModel.cpp:372
-msgid "My Mix Radio"
-msgstr ""
-
-#: services/lastfm/LastFmTreeModel.cpp:374
-msgid "My Neighborhood"
-msgstr "Mi vijhnåve"
-
-#: services/lastfm/LastFmTreeModel.cpp:379
-msgid "My Top Artists"
-msgstr "Mes årtisses al copete"
-
-#: services/lastfm/LastFmTreeModel.cpp:381
-msgid "My Tags"
-msgstr "Mes etiketes"
-
-#: services/lastfm/LastFmTreeModel.cpp:383
-msgid "Friends"
-msgstr "Amisses"
-
-#: services/lastfm/LastFmTreeModel.cpp:385
-msgid "Neighbors"
-msgstr "Vijhéns"
-
 #: services/lastfm/LoveTrackAction.cpp:25
 #: services/lastfm/LastFmService.cpp:284
 msgid "Last.fm: Love"
@@ -13949,6 +13909,46 @@ msgstr "Uzeu"
 msgctxt "As in, lastfm"
 msgid "Loved Track: %1"
 msgstr "Boket shoûté voltî: %1"
+
+#: services/lastfm/LastFmTreeModel.cpp:172
+msgid "Personal Radio"
+msgstr "Radio da sinne"
+
+#: services/lastfm/LastFmTreeModel.cpp:173
+msgid "Neighborhood"
+msgstr "Vijhnåve"
+
+#: services/lastfm/LastFmTreeModel.cpp:331
+msgid "My Recommendations"
+msgstr "Mes rcomandaedjes"
+
+#: services/lastfm/LastFmTreeModel.cpp:333
+msgid "My Radio Station"
+msgstr "Mi ståcion radio"
+
+#: services/lastfm/LastFmTreeModel.cpp:335
+msgid "My Mix Radio"
+msgstr ""
+
+#: services/lastfm/LastFmTreeModel.cpp:337
+msgid "My Neighborhood"
+msgstr "Mi vijhnåve"
+
+#: services/lastfm/LastFmTreeModel.cpp:342
+msgid "My Top Artists"
+msgstr "Mes årtisses al copete"
+
+#: services/lastfm/LastFmTreeModel.cpp:344
+msgid "My Tags"
+msgstr "Mes etiketes"
+
+#: services/lastfm/LastFmTreeModel.cpp:346
+msgid "Friends"
+msgstr "Amisses"
+
+#: services/lastfm/LastFmTreeModel.cpp:348
+msgid "Neighbors"
+msgstr "Vijhéns"
 
 #: services/magnatune/MagnatuneCollectionLocation.cpp:42
 msgid "Preview Tracks"
@@ -14471,12 +14471,6 @@ msgctxt ""
 msgid "Amazon"
 msgstr "Etonant"
 
-#: services/amazon/AmazonShoppingCartView.cpp:64
-#, fuzzy
-#| msgid "Remove From Playlist"
-msgid "Remove from Cart"
-msgstr "Oister del djivêye a djouwer"
-
 #: services/amazon/AmazonStore.cpp:100
 msgid "Access the Amazon MP3 Store directly from Amarok"
 msgstr ""
@@ -14508,62 +14502,68 @@ msgid ""
 "settings to make the store work."
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:403
+#: services/amazon/AmazonStore.cpp:409
 msgid "Select results page to show"
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:426
+#: services/amazon/AmazonStore.cpp:432
 #, fuzzy
 #| msgid "&Add to Playlist"
 msgctxt "Add selected item to your shopping cart"
 msgid "Add to Cart"
 msgstr "&Radjouter el djivêye a djouwer"
 
-#: services/amazon/AmazonStore.cpp:427
+#: services/amazon/AmazonStore.cpp:433
 msgid "Add selected item to your shopping cart"
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:434
+#: services/amazon/AmazonStore.cpp:440
 #, fuzzy
 #| msgid "View map"
 msgctxt "View your shopping cart contents"
 msgid "View Cart"
 msgstr "Vey li mape"
 
-#: services/amazon/AmazonStore.cpp:435
+#: services/amazon/AmazonStore.cpp:441
 msgid "View your shopping cart contents"
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:442
+#: services/amazon/AmazonStore.cpp:448
 #, fuzzy
 #| msgid " on <b>%1</b>"
 msgctxt "Checkout your shopping cart"
 msgid "Checkout"
 msgstr " so <b>%1</b>"
 
-#: services/amazon/AmazonStore.cpp:443
+#: services/amazon/AmazonStore.cpp:449
 msgid "Checkout your shopping cart"
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:463
+#: services/amazon/AmazonStore.cpp:469
 msgid "Error: Querying MP3 Music Store database failed. :-("
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:498
+#: services/amazon/AmazonStore.cpp:504
 msgid "Error: Received an invalid reply. :-("
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:518
+#: services/amazon/AmazonStore.cpp:524
 #, fuzzy
 #| msgid "Unable to parse avatar image data."
 msgid "Error: Unable to open temporary file. :-("
 msgstr "Dji n' a savou lére les dnêyes des imådjes di vizaedje."
 
-#: services/amazon/AmazonStore.cpp:538
+#: services/amazon/AmazonStore.cpp:544
 #, fuzzy
 #| msgid "Unable to parse avatar image data."
 msgid "Error: Unable to parse temporary file. :-("
 msgstr "Dji n' a savou lére les dnêyes des imådjes di vizaedje."
+
+#: services/amazon/AmazonShoppingCartView.cpp:64
+#, fuzzy
+#| msgid "Remove From Playlist"
+msgid "Remove from Cart"
+msgstr "Oister del djivêye a djouwer"
 
 #: services/amazon/AmazonItemTreeView.cpp:271
 #, fuzzy
