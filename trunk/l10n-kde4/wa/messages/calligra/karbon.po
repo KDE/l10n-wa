@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: karbon\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-11-16 02:58+0100\n"
+"POT-Creation-Date: 2011-12-12 02:31+0100\n"
 "PO-Revision-Date: 2010-11-18 17:47+0100\n"
 "Last-Translator: Djan Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -158,7 +158,7 @@ msgctxt "(qtundo-format)"
 msgid "Lower Layer"
 msgstr "Baxhî l' coûtche"
 
-#: common/commands/KarbonBooleanCommand.cpp:68 ui/KarbonView.cpp:882
+#: common/commands/KarbonBooleanCommand.cpp:68 ui/KarbonView.cpp:880
 #, fuzzy
 #| msgid "Boolean Operation"
 msgctxt "(qtundo-format)"
@@ -356,10 +356,6 @@ msgstr "Candjî nawea"
 msgid "Flood fill"
 msgstr "Rimplixhaedje enaiwaedje"
 
-#: plugins/filtereffects/FloodEffectConfigWidget.cpp:37
-msgid "Flood color"
-msgstr "Coleur d' enaiwaedje"
-
 #: plugins/filtereffects/ImageEffect.cpp:35
 #: plugins/filtereffects/ImageEffectFactory.cpp:26
 msgid "Image"
@@ -410,6 +406,10 @@ msgstr "dx"
 #: plugins/filtereffects/OffsetEffectConfigWidget.cpp:40
 msgid "dy"
 msgstr "dy"
+
+#: plugins/filtereffects/FloodEffectConfigWidget.cpp:37
+msgid "Flood color"
+msgstr "Coleur d' enaiwaedje"
 
 #: plugins/flattenpath/FlattenPathPlugin.cpp:57
 msgid "&Flatten Path..."
@@ -612,57 +612,57 @@ msgstr ""
 msgid "Error deleting layers"
 msgstr "Åk n' a nén stî come dji disfacéve les coûtches"
 
-#: ui/dockers/KarbonLayerModel.cpp:183
+#: ui/dockers/KarbonLayerModel.cpp:161
 msgid "Layer"
 msgstr "Coûtche"
 
-#: ui/dockers/KarbonLayerModel.cpp:185
+#: ui/dockers/KarbonLayerModel.cpp:163
 msgctxt "A group of shapes"
 msgid "Group"
 msgstr "Groupe"
 
-#: ui/dockers/KarbonLayerModel.cpp:187
+#: ui/dockers/KarbonLayerModel.cpp:165
 msgid "Shape"
 msgstr "Fôme"
 
-#: ui/dockers/KarbonLayerModel.cpp:282
+#: ui/dockers/KarbonLayerModel.cpp:260
 msgctxt "Visibility state of the shape"
 msgid "Visible"
 msgstr "Veyåve"
 
-#: ui/dockers/KarbonLayerModel.cpp:283
+#: ui/dockers/KarbonLayerModel.cpp:261
 msgctxt "Lock state of the shape"
 msgid "Locked"
 msgstr "Aclawé"
 
-#: ui/dockers/KarbonLayerModel.cpp:284
+#: ui/dockers/KarbonLayerModel.cpp:262
 msgctxt "The z-index of the shape"
 msgid "zIndex"
 msgstr "zIndecse"
 
-#: ui/dockers/KarbonLayerModel.cpp:285
+#: ui/dockers/KarbonLayerModel.cpp:263
 msgctxt "The opacity of the shape"
 msgid "Opacity"
 msgstr "Opacité"
 
-#: ui/dockers/KarbonLayerModel.cpp:286
+#: ui/dockers/KarbonLayerModel.cpp:264
 msgctxt "Clipped state of the shape"
 msgid "Clipped"
 msgstr ""
 
-#: ui/dockers/KarbonLayerModel.cpp:286
+#: ui/dockers/KarbonLayerModel.cpp:264
 #, fuzzy
 #| msgid "Styles"
 msgid "yes"
 msgstr "Stîles"
 
-#: ui/dockers/KarbonLayerModel.cpp:286
+#: ui/dockers/KarbonLayerModel.cpp:264
 #, fuzzy
 #| msgid "Info"
 msgid "no"
 msgstr "Informåcions"
 
-#: ui/dockers/KarbonLayerModel.cpp:487
+#: ui/dockers/KarbonLayerModel.cpp:465
 #, fuzzy
 #| msgid "Reparent shapes"
 msgctxt "(qtundo-format)"
@@ -748,6 +748,24 @@ msgstr "Båre:"
 msgid "Fill:"
 msgstr "Rimplixhaedje:"
 
+#: ui/widgets/KarbonConfigInterfacePage.cpp:71
+#, fuzzy
+#| msgid "Show status bar"
+msgid "Show status bar:"
+msgstr "Mostrer l' båre ås messaedjes"
+
+#: ui/widgets/KarbonConfigInterfacePage.cpp:76
+msgid "Number of recent files:"
+msgstr "Nombe di fitchîs dierinmint eployîs:"
+
+#: ui/widgets/KarbonConfigInterfacePage.cpp:82
+msgid "Palette font size:"
+msgstr "Grandeu del fonte del palete:"
+
+#: ui/widgets/KarbonConfigInterfacePage.cpp:88
+msgid "Canvas color:"
+msgstr "Coleur del toele:"
+
 #: ui/widgets/KarbonGradientEditWidget.cpp:167
 msgid "Target:"
 msgstr "Såme:"
@@ -814,31 +832,13 @@ msgstr "Coleur do djocaedje."
 msgid "&Add to Predefined Gradients"
 msgstr "&Radjouter a on gradyint prédefini"
 
-#: ui/widgets/KarbonConfigInterfacePage.cpp:71
-#, fuzzy
-#| msgid "Show status bar"
-msgid "Show status bar:"
-msgstr "Mostrer l' båre ås messaedjes"
-
-#: ui/widgets/KarbonConfigInterfacePage.cpp:76
-msgid "Number of recent files:"
-msgstr "Nombe di fitchîs dierinmint eployîs:"
-
-#: ui/widgets/KarbonConfigInterfacePage.cpp:82
-msgid "Palette font size:"
-msgstr "Grandeu del fonte del palete:"
-
-#: ui/widgets/KarbonConfigInterfacePage.cpp:88
-msgid "Canvas color:"
-msgstr "Coleur del toele:"
-
 #: ui/widgets/KarbonPaletteBarWidget.cpp:58
 #, fuzzy
 #| msgid "Select image"
 msgid "Select palette"
 msgstr "Tchoezi imådje"
 
-#: ui/KarbonDocumentMergeCommand.cpp:59 ui/KarbonView.cpp:552
+#: ui/KarbonDocumentMergeCommand.cpp:59 ui/KarbonView.cpp:550
 #, fuzzy
 #| msgid "Insert graphics"
 msgctxt "(qtundo-format)"
@@ -857,210 +857,6 @@ msgstr ""
 #: ui/KarbonPart.cpp:222
 msgid "Invalid OASIS document. No draw:page tag found."
 msgstr "Fitchî OASIS nén valåbe. Dji n' a trové pont d' etikete draw:page."
-
-#: ui/KarbonZoomController.cpp:62
-msgid "Zoom"
-msgstr "Zoumer"
-
-#: ui/KarbonView.cpp:481
-msgid "Choose Graphic to Add"
-msgstr "Tchoezi imådje a radjouter"
-
-#: ui/KarbonView.cpp:523
-msgid "Could not load image."
-msgstr "Dji n' a savou tcherdjî l' imådje."
-
-#: ui/KarbonView.cpp:523 ui/KarbonView.cpp:528 ui/KarbonView.cpp:535
-msgid "Import graphic"
-msgstr "Abaguer imådje"
-
-#: ui/KarbonView.cpp:528 ui/KarbonView.cpp:535
-msgid "Could not create image shape."
-msgstr "Dji n' a savou ahiver l' fôme d' imådje."
-
-#: ui/KarbonView.cpp:779
-#, fuzzy
-#| msgctxt "Horizontal grid spacing"
-#| msgid "&Horizontal:"
-msgctxt "(qtundo-format)"
-msgid "Mirror Horizontally"
-msgstr "D' &astampé:"
-
-#: ui/KarbonView.cpp:781
-#, fuzzy
-#| msgctxt "Horizontal grid spacing"
-#| msgid "&Horizontal:"
-msgctxt "(qtundo-format)"
-msgid "Mirror Vertically"
-msgstr "D' &astampé:"
-
-#: ui/KarbonView.cpp:783
-#, fuzzy
-#| msgctxt "Horizontal grid spacing"
-#| msgid "&Horizontal:"
-msgctxt "(qtundo-format)"
-msgid "Mirror Horizontally and Vertically"
-msgstr "D' &astampé:"
-
-#: ui/KarbonView.cpp:993
-msgid "Outline &Mode"
-msgstr "&Môde cotoû"
-
-#: ui/KarbonView.cpp:997
-msgid "Show Page Margins"
-msgstr "Mostrer les mådjes del pådje"
-
-#: ui/KarbonView.cpp:1015
-msgid "&Import Graphic..."
-msgstr "&Abaguer imådje..."
-
-#: ui/KarbonView.cpp:1019
-msgid "D&elete"
-msgstr "Dis&facer"
-
-#: ui/KarbonView.cpp:1025
-#, fuzzy
-#| msgid "Hide Guides"
-msgid "Edit Guides"
-msgstr "Catchî moennaedjes"
-
-#: ui/KarbonView.cpp:1031
-msgctxt "Duplicate selection"
-msgid "&Duplicate"
-msgstr "&Dobler"
-
-#: ui/KarbonView.cpp:1036
-msgid "Distribute Center (Horizontal)"
-msgstr "Cossemer å mitan (di coutchî)"
-
-#: ui/KarbonView.cpp:1040
-msgid "Distribute Gaps (Horizontal)"
-msgstr "Cossemer les trôs (di coutchî)"
-
-#: ui/KarbonView.cpp:1044
-msgid "Distribute Left Borders"
-msgstr "Cossemer les boirdeures di hintche"
-
-#: ui/KarbonView.cpp:1048
-msgid "Distribute Right Borders"
-msgstr "Cossemer les boirdeures di droete"
-
-#: ui/KarbonView.cpp:1052
-msgid "Distribute Center (Vertical)"
-msgstr "Cossemer å mitan (d' astampé)"
-
-#: ui/KarbonView.cpp:1056
-msgid "Distribute Gaps (Vertical)"
-msgstr "Cossemer les trôs (d' astampé)"
-
-#: ui/KarbonView.cpp:1060
-msgid "Distribute Bottom Borders"
-msgstr "Cossemer les boirdeures dal valêye"
-
-#: ui/KarbonView.cpp:1064
-msgid "Distribute Top Borders"
-msgstr "Cossemer les boirdeures dal copete"
-
-#: ui/KarbonView.cpp:1068
-msgid "Show Rulers"
-msgstr "Mostrer rîles"
-
-#: ui/KarbonView.cpp:1070
-msgid "Shows or hides rulers"
-msgstr "Mostere ou catche les rîles"
-
-#: ui/KarbonView.cpp:1081
-msgid "Show Color Palette"
-msgstr ""
-
-#: ui/KarbonView.cpp:1083
-#, fuzzy
-#| msgid "Shows or hides rulers"
-msgid "Show or hide color palette"
-msgstr "Mostere ou catche les rîles"
-
-#: ui/KarbonView.cpp:1087
-msgid "Snap to Grid"
-msgstr "Claper sol grile"
-
-#: ui/KarbonView.cpp:1089
-msgid "Snaps to grid"
-msgstr "Clape sol grile"
-
-#: ui/KarbonView.cpp:1101
-#, fuzzy
-#| msgid "&Object"
-msgid "&Clip Object"
-msgstr "&Cayet"
-
-#: ui/KarbonView.cpp:1105
-#, fuzzy
-#| msgid "&Ungroup Objects"
-msgid "&Unclip Objects"
-msgstr "&Disgrouper cayets"
-
-#: ui/KarbonView.cpp:1109
-msgid "Mirror Vertically"
-msgstr ""
-
-#: ui/KarbonView.cpp:1113
-#, fuzzy
-#| msgctxt "Horizontal grid spacing"
-#| msgid "&Horizontal:"
-msgid "Mirror Horizontally"
-msgstr "D' &astampé:"
-
-#: ui/KarbonView.cpp:1120
-msgid "&Close Path"
-msgstr "&Clôre tchimin"
-
-#: ui/KarbonView.cpp:1126
-msgid "Com&bine Path"
-msgstr "Com&biner tchimin"
-
-#: ui/KarbonView.cpp:1132
-msgid "Se&parate Path"
-msgstr "Se&parer tchmin"
-
-#: ui/KarbonView.cpp:1138
-msgid "Re&verse Path"
-msgstr "Mete år&vier tchimin"
-
-#: ui/KarbonView.cpp:1144
-msgid "Intersect Paths"
-msgstr "Croejhler tchimins"
-
-#: ui/KarbonView.cpp:1150
-msgid "Subtract Paths"
-msgstr "Sostraire tchimins"
-
-#: ui/KarbonView.cpp:1156
-msgid "Unite Paths"
-msgstr "Elaxhî tchimins"
-
-#: ui/KarbonView.cpp:1162
-msgid "Exclude Paths"
-msgstr "Schovter tchimins evoye"
-
-#: ui/KarbonView.cpp:1168
-msgid "Snap Path to Grid"
-msgstr "Claper tchmin sol grile"
-
-#: ui/KarbonView.cpp:1175
-msgid "Configure Karbon..."
-msgstr "Apontyî Karbon..."
-
-#: ui/KarbonView.cpp:1179
-msgid "Page &Layout..."
-msgstr "&Adjinçmint del pådje..."
-
-#: ui/KarbonView.cpp:1184
-msgid "Zoom to Selection"
-msgstr "Zoumer sol tchoes"
-
-#: ui/KarbonView.cpp:1188
-msgid "Zoom to Drawing"
-msgstr "Zoumer sol dessin"
 
 #: ui/KarbonAboutData.h:26
 msgid "A Vector Graphics Drawing Application."
@@ -1132,6 +928,210 @@ msgstr "Alan Horkan"
 #: ui/KarbonAboutData.h:81
 msgid "Helpful patches and advice"
 msgstr "Coridjaedjes bén a pont eyet conseys"
+
+#: ui/KarbonView.cpp:479
+msgid "Choose Graphic to Add"
+msgstr "Tchoezi imådje a radjouter"
+
+#: ui/KarbonView.cpp:521
+msgid "Could not load image."
+msgstr "Dji n' a savou tcherdjî l' imådje."
+
+#: ui/KarbonView.cpp:521 ui/KarbonView.cpp:526 ui/KarbonView.cpp:533
+msgid "Import graphic"
+msgstr "Abaguer imådje"
+
+#: ui/KarbonView.cpp:526 ui/KarbonView.cpp:533
+msgid "Could not create image shape."
+msgstr "Dji n' a savou ahiver l' fôme d' imådje."
+
+#: ui/KarbonView.cpp:777
+#, fuzzy
+#| msgctxt "Horizontal grid spacing"
+#| msgid "&Horizontal:"
+msgctxt "(qtundo-format)"
+msgid "Mirror Horizontally"
+msgstr "D' &astampé:"
+
+#: ui/KarbonView.cpp:779
+#, fuzzy
+#| msgctxt "Horizontal grid spacing"
+#| msgid "&Horizontal:"
+msgctxt "(qtundo-format)"
+msgid "Mirror Vertically"
+msgstr "D' &astampé:"
+
+#: ui/KarbonView.cpp:781
+#, fuzzy
+#| msgctxt "Horizontal grid spacing"
+#| msgid "&Horizontal:"
+msgctxt "(qtundo-format)"
+msgid "Mirror Horizontally and Vertically"
+msgstr "D' &astampé:"
+
+#: ui/KarbonView.cpp:991
+msgid "Outline &Mode"
+msgstr "&Môde cotoû"
+
+#: ui/KarbonView.cpp:995
+msgid "Show Page Margins"
+msgstr "Mostrer les mådjes del pådje"
+
+#: ui/KarbonView.cpp:1013
+msgid "&Import Graphic..."
+msgstr "&Abaguer imådje..."
+
+#: ui/KarbonView.cpp:1017
+msgid "D&elete"
+msgstr "Dis&facer"
+
+#: ui/KarbonView.cpp:1023
+#, fuzzy
+#| msgid "Hide Guides"
+msgid "Edit Guides"
+msgstr "Catchî moennaedjes"
+
+#: ui/KarbonView.cpp:1029
+msgctxt "Duplicate selection"
+msgid "&Duplicate"
+msgstr "&Dobler"
+
+#: ui/KarbonView.cpp:1034
+msgid "Distribute Center (Horizontal)"
+msgstr "Cossemer å mitan (di coutchî)"
+
+#: ui/KarbonView.cpp:1038
+msgid "Distribute Gaps (Horizontal)"
+msgstr "Cossemer les trôs (di coutchî)"
+
+#: ui/KarbonView.cpp:1042
+msgid "Distribute Left Borders"
+msgstr "Cossemer les boirdeures di hintche"
+
+#: ui/KarbonView.cpp:1046
+msgid "Distribute Right Borders"
+msgstr "Cossemer les boirdeures di droete"
+
+#: ui/KarbonView.cpp:1050
+msgid "Distribute Center (Vertical)"
+msgstr "Cossemer å mitan (d' astampé)"
+
+#: ui/KarbonView.cpp:1054
+msgid "Distribute Gaps (Vertical)"
+msgstr "Cossemer les trôs (d' astampé)"
+
+#: ui/KarbonView.cpp:1058
+msgid "Distribute Bottom Borders"
+msgstr "Cossemer les boirdeures dal valêye"
+
+#: ui/KarbonView.cpp:1062
+msgid "Distribute Top Borders"
+msgstr "Cossemer les boirdeures dal copete"
+
+#: ui/KarbonView.cpp:1066
+msgid "Show Rulers"
+msgstr "Mostrer rîles"
+
+#: ui/KarbonView.cpp:1068
+msgid "Shows or hides rulers"
+msgstr "Mostere ou catche les rîles"
+
+#: ui/KarbonView.cpp:1079
+msgid "Show Color Palette"
+msgstr ""
+
+#: ui/KarbonView.cpp:1081
+#, fuzzy
+#| msgid "Shows or hides rulers"
+msgid "Show or hide color palette"
+msgstr "Mostere ou catche les rîles"
+
+#: ui/KarbonView.cpp:1085
+msgid "Snap to Grid"
+msgstr "Claper sol grile"
+
+#: ui/KarbonView.cpp:1087
+msgid "Snaps to grid"
+msgstr "Clape sol grile"
+
+#: ui/KarbonView.cpp:1099
+#, fuzzy
+#| msgid "&Object"
+msgid "&Clip Object"
+msgstr "&Cayet"
+
+#: ui/KarbonView.cpp:1103
+#, fuzzy
+#| msgid "&Ungroup Objects"
+msgid "&Unclip Objects"
+msgstr "&Disgrouper cayets"
+
+#: ui/KarbonView.cpp:1107
+msgid "Mirror Vertically"
+msgstr ""
+
+#: ui/KarbonView.cpp:1111
+#, fuzzy
+#| msgctxt "Horizontal grid spacing"
+#| msgid "&Horizontal:"
+msgid "Mirror Horizontally"
+msgstr "D' &astampé:"
+
+#: ui/KarbonView.cpp:1118
+msgid "&Close Path"
+msgstr "&Clôre tchimin"
+
+#: ui/KarbonView.cpp:1124
+msgid "Com&bine Path"
+msgstr "Com&biner tchimin"
+
+#: ui/KarbonView.cpp:1130
+msgid "Se&parate Path"
+msgstr "Se&parer tchmin"
+
+#: ui/KarbonView.cpp:1136
+msgid "Re&verse Path"
+msgstr "Mete år&vier tchimin"
+
+#: ui/KarbonView.cpp:1142
+msgid "Intersect Paths"
+msgstr "Croejhler tchimins"
+
+#: ui/KarbonView.cpp:1148
+msgid "Subtract Paths"
+msgstr "Sostraire tchimins"
+
+#: ui/KarbonView.cpp:1154
+msgid "Unite Paths"
+msgstr "Elaxhî tchimins"
+
+#: ui/KarbonView.cpp:1160
+msgid "Exclude Paths"
+msgstr "Schovter tchimins evoye"
+
+#: ui/KarbonView.cpp:1166
+msgid "Snap Path to Grid"
+msgstr "Claper tchmin sol grile"
+
+#: ui/KarbonView.cpp:1173
+msgid "Configure Karbon..."
+msgstr "Apontyî Karbon..."
+
+#: ui/KarbonView.cpp:1177
+msgid "Page &Layout..."
+msgstr "&Adjinçmint del pådje..."
+
+#: ui/KarbonView.cpp:1182
+msgid "Zoom to Selection"
+msgstr "Zoumer sol tchoes"
+
+#: ui/KarbonView.cpp:1186
+msgid "Zoom to Drawing"
+msgstr "Zoumer sol dessin"
+
+#: ui/KarbonZoomController.cpp:62
+msgid "Zoom"
+msgstr "Zoumer"
 
 #: main.cpp:43
 msgid "File to open"
