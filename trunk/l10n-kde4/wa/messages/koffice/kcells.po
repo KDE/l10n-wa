@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kspread\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-13 03:45+0200\n"
+"POT-Creation-Date: 2011-12-21 04:48+0100\n"
 "PO-Revision-Date: 2011-01-17 22:04+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -2681,14 +2681,6 @@ msgstr "Prémetou"
 msgid "Validation for cell %1 failed"
 msgstr "Li validåcion pol boesse %1 a fwait berwete"
 
-#: KCValueConverter.cpp:273
-msgid "True"
-msgstr "Vraiy"
-
-#: KCValueConverter.cpp:274
-msgid "False"
-msgstr "Fås"
-
 #: KCValue.cpp:601
 msgctxt "Error: circular formula dependency"
 msgid "#CIRCLE!"
@@ -2738,6 +2730,14 @@ msgstr "#REF!"
 msgctxt "Error: wrong (number of) function argument(s)"
 msgid "#VALUE!"
 msgstr "#VALUE!"
+
+#: KCValueConverter.cpp:273
+msgid "True"
+msgstr "Vraiy"
+
+#: KCValueConverter.cpp:274
+msgid "False"
+msgstr "Fås"
 
 #: KCValueFormatter.cpp:509 KCValueFormatter.cpp:515
 msgid "PM"
@@ -3680,53 +3680,53 @@ msgstr "Mopliyaedje"
 msgid "Division"
 msgstr "Divizion"
 
-#. i18n: file: dialogs/SubtotalsDetailsWidget.ui:35
-#. i18n: ectx: property (text), widget (QCheckBox, m_replaceSubtotals)
-#: rc.cpp:403
-msgid "&Replace current Subtotals"
-msgstr "&Replaecî subtotås do moumint"
-
-#. i18n: file: dialogs/SubtotalsDetailsWidget.ui:48
-#. i18n: ectx: property (text), widget (QCheckBox, m_pageBreak)
-#: rc.cpp:406
-msgid "&Page break between groups"
-msgstr "Djocaedje di &pådje inte les groupes"
-
-#. i18n: file: dialogs/SubtotalsDetailsWidget.ui:55
-#. i18n: ectx: property (text), widget (QCheckBox, m_summaryBelow)
-#: rc.cpp:409
-msgid "&Summary below data"
-msgstr "&Racourti pa dzo les dnêyes"
-
-#. i18n: file: dialogs/SubtotalsDetailsWidget.ui:68
-#. i18n: ectx: property (text), widget (QCheckBox, m_summaryOnly)
-#: rc.cpp:412
-msgid "Summary &only"
-msgstr "Racourti &seulmint"
-
-#. i18n: file: dialogs/SubtotalsDetailsWidget.ui:75
-#. i18n: ectx: property (text), widget (QCheckBox, m_IgnoreBox)
-#: rc.cpp:415
-msgid "&Ignore empty cells when looking for changes"
-msgstr "Pa&sser houte les vudès boesses cwand on cache après des candjmints"
-
 #. i18n: file: dialogs/SubtotalWidget.ui:35
 #. i18n: ectx: property (text), widget (QLabel, m_eachChangeLabel)
-#: rc.cpp:418
+#: rc.cpp:403
 msgid "At each change in:"
 msgstr "A tchaeke candjmint dins:"
 
 #. i18n: file: dialogs/SubtotalWidget.ui:45
 #. i18n: ectx: property (text), widget (QLabel, m_useFunctionLabel)
-#: rc.cpp:421
+#: rc.cpp:406
 msgid "Use function:"
 msgstr "Eployî l' fonccion:"
 
 #. i18n: file: dialogs/SubtotalWidget.ui:55
 #. i18n: ectx: property (text), widget (QLabel, m_addSubtotalToLabel)
-#: rc.cpp:424
+#: rc.cpp:409
 msgid "Add Subtotal to:"
 msgstr "Radjouterl' dizo-totå a:"
+
+#. i18n: file: dialogs/SubtotalsDetailsWidget.ui:35
+#. i18n: ectx: property (text), widget (QCheckBox, m_replaceSubtotals)
+#: rc.cpp:412
+msgid "&Replace current Subtotals"
+msgstr "&Replaecî subtotås do moumint"
+
+#. i18n: file: dialogs/SubtotalsDetailsWidget.ui:48
+#. i18n: ectx: property (text), widget (QCheckBox, m_pageBreak)
+#: rc.cpp:415
+msgid "&Page break between groups"
+msgstr "Djocaedje di &pådje inte les groupes"
+
+#. i18n: file: dialogs/SubtotalsDetailsWidget.ui:55
+#. i18n: ectx: property (text), widget (QCheckBox, m_summaryBelow)
+#: rc.cpp:418
+msgid "&Summary below data"
+msgstr "&Racourti pa dzo les dnêyes"
+
+#. i18n: file: dialogs/SubtotalsDetailsWidget.ui:68
+#. i18n: ectx: property (text), widget (QCheckBox, m_summaryOnly)
+#: rc.cpp:421
+msgid "Summary &only"
+msgstr "Racourti &seulmint"
+
+#. i18n: file: dialogs/SubtotalsDetailsWidget.ui:75
+#. i18n: ectx: property (text), widget (QCheckBox, m_IgnoreBox)
+#: rc.cpp:424
+msgid "&Ignore empty cells when looking for changes"
+msgstr "Pa&sser houte les vudès boesses cwand on cache après des candjmints"
 
 #. i18n: file: part/dialogs/FileOptionsWidget.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, FileOptionsWidget)
@@ -16281,6 +16281,30 @@ msgstr ""
 msgid "Parsing error in sheet-style XML file %1."
 msgstr ""
 
+#: dialogs/CSVDialog.cpp:64 dialogs/CSVDialog.cpp:174
+msgid "Inserting From Clipboard"
+msgstr ""
+
+#: dialogs/CSVDialog.cpp:67
+msgid "There is no data in the clipboard."
+msgstr ""
+
+#: dialogs/CSVDialog.cpp:71
+msgid "There is no usable data in the clipboard."
+msgstr ""
+
+#: dialogs/CSVDialog.cpp:75 dialogs/CSVDialog.cpp:176
+msgid "Inserting Text File"
+msgstr ""
+
+#: dialogs/CSVDialog.cpp:85 dialogs/CSVDialog.cpp:178
+msgid "Text to Columns"
+msgstr ""
+
+#: dialogs/CSVDialog.cpp:112
+msgid "Cannot open input file."
+msgstr ""
+
 #: dialogs/CharacterSelectDialog.cpp:48 dialogs/CharacterSelectDialog.cpp:66
 #, fuzzy
 #| msgid "S&pecial Character..."
@@ -16466,30 +16490,6 @@ msgid ""
 "The range\n"
 "%1\n"
 " is malformed"
-msgstr ""
-
-#: dialogs/CSVDialog.cpp:64 dialogs/CSVDialog.cpp:174
-msgid "Inserting From Clipboard"
-msgstr ""
-
-#: dialogs/CSVDialog.cpp:67
-msgid "There is no data in the clipboard."
-msgstr ""
-
-#: dialogs/CSVDialog.cpp:71
-msgid "There is no usable data in the clipboard."
-msgstr ""
-
-#: dialogs/CSVDialog.cpp:75 dialogs/CSVDialog.cpp:176
-msgid "Inserting Text File"
-msgstr ""
-
-#: dialogs/CSVDialog.cpp:85 dialogs/CSVDialog.cpp:178
-msgid "Text to Columns"
-msgstr ""
-
-#: dialogs/CSVDialog.cpp:112
-msgid "Cannot open input file."
 msgstr ""
 
 #: dialogs/DatabaseDialog.cpp:74 dialogs/DatabaseDialog.cpp:559
