@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dolphin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-01-29 02:47+0100\n"
+"POT-Creation-Date: 2012-01-31 05:20+0100\n"
 "PO-Revision-Date: 2011-07-17 15:32+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -987,6 +987,17 @@ msgid ""
 "The view properties of all folders will be changed. Do you want to continue?"
 msgstr "Les prôpietés di tos les ridants seront candjîs. Tcheryî pus lon?"
 
+#: statusbar/statusbarspaceinfo.cpp:79 statusbar/statusbarspaceinfo.cpp:87
+msgctxt "@info:status"
+msgid "Unknown size"
+msgstr "Grandeu nén cnoxhowe"
+
+#: statusbar/statusbarspaceinfo.cpp:98
+#, kde-format
+msgctxt "@info:status Free disk space"
+msgid "%1 free"
+msgstr "%1 libe"
+
 #: statusbar/dolphinstatusbar.cpp:65
 #, fuzzy
 #| msgctxt "@option:check"
@@ -1028,17 +1039,6 @@ msgid "Size: 1 pixel"
 msgid_plural "Size: %1 pixels"
 msgstr[0] "Grandeu : 1 picsel"
 msgstr[1] "Grandeu : %1 picsels"
-
-#: statusbar/statusbarspaceinfo.cpp:79 statusbar/statusbarspaceinfo.cpp:87
-msgctxt "@info:status"
-msgid "Unknown size"
-msgstr "Grandeu nén cnoxhowe"
-
-#: statusbar/statusbarspaceinfo.cpp:98
-#, kde-format
-msgctxt "@info:status Free disk space"
-msgid "%1 free"
-msgstr "%1 libe"
 
 #: views/additionalinfoaccessor.cpp:99
 msgctxt "@label"
@@ -1085,6 +1085,19 @@ msgctxt "@info:status"
 msgid "Unknown error."
 msgstr "Aroke nén cnoxhowe."
 
+#: views/draganddrophelper.cpp:34
+#, fuzzy, kde-format
+#| msgctxt "@label:textbox"
+#| msgid "Rename the item <filename>%1</filename> to:"
+msgctxt "@info:status"
+msgid "Access denied. Could not write to <filename>%1</filename>"
+msgstr "Rilomer l' cayet <filename>%1</filename> viè:"
+
+#: views/draganddrophelper.cpp:48
+msgctxt "@info:status"
+msgid "A folder cannot be dropped into itself"
+msgstr "On n' sait nén bodjî on ridant dins lu minme"
+
 #: views/versioncontrol/versioncontrolobserver.cpp:204
 msgctxt "@info:status"
 msgid "Update of version information failed."
@@ -1094,19 +1107,6 @@ msgstr "Li metaedje a djoû d' l' infôrmåcion sol modêye a fwait berwete."
 msgctxt "@info:status"
 msgid "Updating version information..."
 msgstr "Dji met a djoû l' informåcions sol modêye"
-
-#: views/draganddrophelper.cpp:37
-#, fuzzy, kde-format
-#| msgctxt "@label:textbox"
-#| msgid "Rename the item <filename>%1</filename> to:"
-msgctxt "@info:status"
-msgid "Access denied. Could not write to <filename>%1</filename>"
-msgstr "Rilomer l' cayet <filename>%1</filename> viè:"
-
-#: views/draganddrophelper.cpp:51
-msgctxt "@info:status"
-msgid "A folder cannot be dropped into itself"
-msgstr "On n' sait nén bodjî on ridant dins lu minme"
 
 #: views/dolphinremoteencoding.cpp:53
 msgid "Select Remote Charset"
@@ -1239,6 +1239,74 @@ msgctxt "@info"
 msgid "Details view mode"
 msgstr "Môde di håynaedje avou les detays"
 
+#: views/dolphinview.cpp:510
+#, kde-format
+msgctxt "@info:status"
+msgid "<filename>%1</filename> selected"
+msgstr "<filename>%1</filename> tchoezi"
+
+#: views/dolphinview.cpp:513
+#, kde-format
+msgctxt "@info:status"
+msgid "1 Folder selected"
+msgid_plural "%1 Folders selected"
+msgstr[0] "%1 ridant di tchoezi"
+msgstr[1] "%1 ridants di tchoezis"
+
+#: views/dolphinview.cpp:514
+#, kde-format
+msgctxt "@info:status"
+msgid "1 File selected"
+msgid_plural "%1 Files selected"
+msgstr[0] "1 fitchî di tchoezi"
+msgstr[1] "%1 fitchîs di tchoezis"
+
+#: views/dolphinview.cpp:518
+#, fuzzy, kde-format
+#| msgctxt "@label"
+#| msgid "Folder"
+msgctxt "@info:status"
+msgid "1 Folder"
+msgid_plural "%1 Folders"
+msgstr[0] "Ridant"
+msgstr[1] "Ridant"
+
+#: views/dolphinview.cpp:519
+#, kde-format
+msgctxt "@info:status"
+msgid "1 File"
+msgid_plural "%1 Files"
+msgstr[0] ""
+msgstr[1] ""
+
+#: views/dolphinview.cpp:523
+#, kde-format
+msgctxt "@info:status folders, files (size)"
+msgid "%1, %2 (%3)"
+msgstr "%1, %2 (%3)"
+
+#: views/dolphinview.cpp:526
+#, kde-format
+msgctxt "@info:status files (size)"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: views/dolphinview.cpp:1061
+msgctxt "@info:status"
+msgid "Delete operation completed."
+msgstr "Dj' a stî å coron di l' operåcion di disfaçaedje."
+
+#: views/dolphinview.cpp:1136
+msgctxt "@info:status"
+msgid "The location is empty."
+msgstr "L' eplaeçmint est vude."
+
+#: views/dolphinview.cpp:1138
+#, kde-format
+msgctxt "@info:status"
+msgid "The location '%1' is invalid."
+msgstr "L' eplaeçmint «%1» n' est nén valide."
+
 #: views/renamedialog.cpp:57
 msgctxt "@title:window"
 msgid "Rename Item"
@@ -1281,157 +1349,6 @@ msgctxt "@info"
 msgid "# will be replaced by ascending numbers starting with:"
 msgstr "(# serè replaecî pa des nombes do pus ptit å pus grand)"
 
-#: views/dolphinview.cpp:504
-#, kde-format
-msgctxt "@info:status"
-msgid "<filename>%1</filename> selected"
-msgstr "<filename>%1</filename> tchoezi"
-
-#: views/dolphinview.cpp:507
-#, kde-format
-msgctxt "@info:status"
-msgid "1 Folder selected"
-msgid_plural "%1 Folders selected"
-msgstr[0] "%1 ridant di tchoezi"
-msgstr[1] "%1 ridants di tchoezis"
-
-#: views/dolphinview.cpp:508
-#, kde-format
-msgctxt "@info:status"
-msgid "1 File selected"
-msgid_plural "%1 Files selected"
-msgstr[0] "1 fitchî di tchoezi"
-msgstr[1] "%1 fitchîs di tchoezis"
-
-#: views/dolphinview.cpp:512
-#, fuzzy, kde-format
-#| msgctxt "@label"
-#| msgid "Folder"
-msgctxt "@info:status"
-msgid "1 Folder"
-msgid_plural "%1 Folders"
-msgstr[0] "Ridant"
-msgstr[1] "Ridant"
-
-#: views/dolphinview.cpp:513
-#, kde-format
-msgctxt "@info:status"
-msgid "1 File"
-msgid_plural "%1 Files"
-msgstr[0] ""
-msgstr[1] ""
-
-#: views/dolphinview.cpp:517
-#, kde-format
-msgctxt "@info:status folders, files (size)"
-msgid "%1, %2 (%3)"
-msgstr "%1, %2 (%3)"
-
-#: views/dolphinview.cpp:520
-#, kde-format
-msgctxt "@info:status files (size)"
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
-
-#: views/dolphinview.cpp:1060
-msgctxt "@info:status"
-msgid "Delete operation completed."
-msgstr "Dj' a stî å coron di l' operåcion di disfaçaedje."
-
-#: views/dolphinview.cpp:1135
-msgctxt "@info:status"
-msgid "The location is empty."
-msgstr "L' eplaeçmint est vude."
-
-#: views/dolphinview.cpp:1137
-#, kde-format
-msgctxt "@info:status"
-msgid "The location '%1' is invalid."
-msgstr "L' eplaeçmint «%1» n' est nén valide."
-
-#: dolphinpart.cpp:145
-msgctxt "@action:inmenu Edit"
-msgid "&Edit File Type..."
-msgstr "&Candjî sôre di fitchî..."
-
-#: dolphinpart.cpp:149
-msgctxt "@action:inmenu Edit"
-msgid "Select Items Matching..."
-msgstr "Tchoezi cayets k' corespondèt..."
-
-#: dolphinpart.cpp:154
-msgctxt "@action:inmenu Edit"
-msgid "Unselect Items Matching..."
-msgstr "Distchoezi cayets k' corespondèt..."
-
-#: dolphinpart.cpp:160
-msgctxt "@action:inmenu Edit"
-msgid "Unselect All"
-msgstr "Distchoezi ttafwait"
-
-#: dolphinpart.cpp:164 dolphinmainwindow.cpp:1642
-msgctxt "@action:inmenu Edit"
-msgid "Invert Selection"
-msgstr "Tchoezi å rvier"
-
-#: dolphinpart.cpp:177
-msgctxt "@action:inmenu Go"
-msgid "App&lications"
-msgstr "Pro&grames"
-
-#: dolphinpart.cpp:180
-msgctxt "@action:inmenu Go"
-msgid "&Network Folders"
-msgstr "Rida&nts rantoele"
-
-#: dolphinpart.cpp:183
-msgctxt "@action:inmenu Go"
-msgid "Sett&ings"
-msgstr "Apont&iaedjes"
-
-#: dolphinpart.cpp:186
-msgctxt "@action:inmenu Go"
-msgid "Trash"
-msgstr "Batch"
-
-#: dolphinpart.cpp:189
-msgctxt "@action:inmenu Go"
-msgid "Autostart"
-msgstr "Enonde tot seu"
-
-#: dolphinpart.cpp:194
-msgctxt "@action:inmenu Tools"
-msgid "Find File..."
-msgstr "Trover fitchî..."
-
-#: dolphinpart.cpp:202
-msgctxt "@action:inmenu Tools"
-msgid "Open &Terminal"
-msgstr "Drovi &terminå"
-
-#: dolphinpart.cpp:271
-msgctxt "@title"
-msgid "Dolphin Part"
-msgstr "Pårt di Dolphin"
-
-#: dolphinpart.cpp:461
-msgctxt "@title:window"
-msgid "Select"
-msgstr "Tchoezi"
-
-#: dolphinpart.cpp:462
-msgid "Select all items matching this pattern:"
-msgstr "Tchoezi tos les cayets k' corespondèt a c' patron :"
-
-#: dolphinpart.cpp:468
-msgctxt "@title:window"
-msgid "Unselect"
-msgstr "Distchoezi"
-
-#: dolphinpart.cpp:469
-msgid "Unselect all items matching this pattern:"
-msgstr "Distchoezi tos les cayets k' corespondèt a c' patron :"
-
 #: dolphincontextmenu.cpp:173
 msgctxt "@action:inmenu"
 msgid "Empty Trash"
@@ -1452,7 +1369,7 @@ msgctxt "@action:inmenu"
 msgid "Restore"
 msgstr "Rapexhî"
 
-#: dolphincontextmenu.cpp:248 dolphinmainwindow.cpp:1590
+#: dolphincontextmenu.cpp:248 dolphinmainwindow.cpp:1593
 msgctxt "@title:menu Create new folder, file, link, etc."
 msgid "Create New"
 msgstr "Ahiver novea"
@@ -1486,312 +1403,6 @@ msgstr "&Taper å batch"
 msgctxt "@action:inmenu"
 msgid "&Delete"
 msgstr "&Disfacer"
-
-#: dolphinviewcontainer.cpp:337
-msgctxt "@info:progress"
-msgid "Loading folder..."
-msgstr "Dji tchedje li ridant..."
-
-#: dolphinviewcontainer.cpp:348
-msgctxt "@info"
-msgid "Searching..."
-msgstr "Dji cwere..."
-
-#: dolphinviewcontainer.cpp:368
-msgctxt "@info:status"
-msgid "No items found."
-msgstr "Nou cayet d' trové."
-
-#: dolphinviewcontainer.cpp:436
-#, fuzzy, kde-format
-#| msgctxt "@info:status files (size)"
-#| msgid "%1 (%2)"
-msgctxt "@info:status filename (type)"
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
-
-#: dolphinviewcontainer.cpp:516
-msgctxt "@info:status"
-msgid "Dolphin does not support web pages, the web browser has been launched"
-msgstr ""
-"Dolphin ni sait nén drovi les pådjes waibes, li betchteu waibe a stî enondé"
-
-#: dolphinviewcontainer.cpp:528
-msgctxt "@info:status"
-msgid "Protocol not supported by Dolphin, Konqueror has been launched"
-msgstr "Protocole nén sopoirté pa Dolphin, Konqueror a stî enondé"
-
-#: dolphinviewcontainer.cpp:535
-msgctxt "@info:status"
-msgid "Invalid protocol"
-msgstr "Protocole nén valåbe"
-
-#: dolphinmainwindow.cpp:347
-msgctxt "@info:status"
-msgid "Successfully copied."
-msgstr "Copyî comifåt."
-
-#: dolphinmainwindow.cpp:351
-msgctxt "@info:status"
-msgid "Successfully moved."
-msgstr "Bodjî comifåt."
-
-#: dolphinmainwindow.cpp:355
-msgctxt "@info:status"
-msgid "Successfully linked."
-msgstr "Loyî comifåt."
-
-#: dolphinmainwindow.cpp:359
-msgctxt "@info:status"
-msgid "Successfully moved to trash."
-msgstr "Tapé å batch comifåt."
-
-#: dolphinmainwindow.cpp:363
-msgctxt "@info:status"
-msgid "Successfully renamed."
-msgstr "Rilomé comifåt."
-
-#: dolphinmainwindow.cpp:368
-msgctxt "@info:status"
-msgid "Created folder."
-msgstr "Ridant ahivé"
-
-#: dolphinmainwindow.cpp:446
-msgctxt "@info"
-msgid "Go back"
-msgstr "Rivni en erî"
-
-#: dolphinmainwindow.cpp:452
-msgctxt "@info"
-msgid "Go forward"
-msgstr "Aler en avant"
-
-#: dolphinmainwindow.cpp:614
-msgctxt "@title:window"
-msgid "Confirmation"
-msgstr "Racertinaedje"
-
-#: dolphinmainwindow.cpp:618
-msgid "C&lose Current Tab"
-msgstr "C&lôre linwete do moumint"
-
-#: dolphinmainwindow.cpp:626
-msgid ""
-"You have multiple tabs open in this window, are you sure you want to quit?"
-msgstr ""
-"Vos avoz sacwantès linwetes drovous e ç' purnea ci, voloz cwiter podbon?"
-
-#: dolphinmainwindow.cpp:628
-msgid "Do not ask again"
-msgstr "Èn pus rdimander"
-
-#: dolphinmainwindow.cpp:1229
-msgctxt "@action:inmenu"
-msgid "New Tab"
-msgstr "Novele linwete"
-
-#: dolphinmainwindow.cpp:1232
-msgctxt "@action:inmenu"
-msgid "Detach Tab"
-msgstr "Distaetchî linwete"
-
-#: dolphinmainwindow.cpp:1234
-msgctxt "@action:inmenu"
-msgid "Close Other Tabs"
-msgstr "Clôre ôtès linwetes"
-
-#: dolphinmainwindow.cpp:1236
-msgctxt "@action:inmenu"
-msgid "Close Tab"
-msgstr "Clôre linwete"
-
-#: dolphinmainwindow.cpp:1462
-msgctxt "@action:inmenu"
-msgid "Location Bar"
-msgstr "Båre d' eplaeçmints"
-
-#: dolphinmainwindow.cpp:1470
-msgctxt "@action:inmenu"
-msgid "Go"
-msgstr "Potchî"
-
-#: dolphinmainwindow.cpp:1480
-msgctxt "@action:inmenu"
-msgid "Tools"
-msgstr "Usteyes"
-
-#: dolphinmainwindow.cpp:1494
-msgctxt "@action:inmenu"
-msgid "Help"
-msgstr "Aidance"
-
-#: dolphinmainwindow.cpp:1597
-msgctxt "@action:inmenu File"
-msgid "New &Window"
-msgstr "Novea &purnea"
-
-#: dolphinmainwindow.cpp:1603
-msgctxt "@action:inmenu File"
-msgid "New Tab"
-msgstr "Novele linwete"
-
-#: dolphinmainwindow.cpp:1609
-msgctxt "@action:inmenu File"
-msgid "Close Tab"
-msgstr "Clôre linwete"
-
-#: dolphinmainwindow.cpp:1632
-msgctxt "@action:inmenu Edit"
-msgid "Paste"
-msgstr "Aclaper"
-
-#: dolphinmainwindow.cpp:1637
-msgctxt "@action:inmenu Edit"
-msgid "Select All"
-msgstr "Tchoezi totafwait"
-
-#: dolphinmainwindow.cpp:1655
-msgctxt "@action:inmenu View"
-msgid "Reload"
-msgstr "Ritcherdjî"
-
-#: dolphinmainwindow.cpp:1661
-msgctxt "@action:inmenu View"
-msgid "Stop"
-msgstr "Arester"
-
-#: dolphinmainwindow.cpp:1662
-msgctxt "@info"
-msgid "Stop loading"
-msgstr "Arester di tcherdjî"
-
-#: dolphinmainwindow.cpp:1667
-msgctxt "@action:inmenu Navigation Bar"
-msgid "Editable Location"
-msgstr "Eplaeçmint candjåve"
-
-#: dolphinmainwindow.cpp:1672
-msgctxt "@action:inmenu Navigation Bar"
-msgid "Replace Location"
-msgstr "Replaecî l' eplaeçmint"
-
-#: dolphinmainwindow.cpp:1683
-msgid "Recently Closed Tabs"
-msgstr "Linwetes cloyowes enawaire"
-
-#: dolphinmainwindow.cpp:1689
-msgid "Empty Recently Closed Tabs"
-msgstr "Vudî linwetes cloyowes enawaire"
-
-#: dolphinmainwindow.cpp:1707
-msgctxt "@action:inmenu Tools"
-msgid "Show Filter Bar"
-msgstr "Mostrer bår di passete"
-
-#: dolphinmainwindow.cpp:1713
-msgctxt "@action:inmenu Tools"
-msgid "Compare Files"
-msgstr "Vey les diferinces inte fitchîs"
-
-#: dolphinmainwindow.cpp:1719
-msgctxt "@action:inmenu Tools"
-msgid "Open Terminal"
-msgstr "Drovi terminå"
-
-#: dolphinmainwindow.cpp:1740
-msgctxt "@action:inmenu"
-msgid "Activate Next Tab"
-msgstr "Mete en alaedje linwete shuvante"
-
-#: dolphinmainwindow.cpp:1745
-msgctxt "@action:inmenu"
-msgid "Activate Previous Tab"
-msgstr "Mete en alaedje linwete di dvant"
-
-#: dolphinmainwindow.cpp:1751
-msgctxt "@action:inmenu"
-msgid "Open in New Tab"
-msgstr "Drovi dins ene novele linwete"
-
-#: dolphinmainwindow.cpp:1756
-msgctxt "@action:inmenu"
-msgid "Open in New Window"
-msgstr "Drovi dins on novea purnea"
-
-#: dolphinmainwindow.cpp:1766
-msgctxt "@action:inmenu Panels"
-msgid "Unlock Panels"
-msgstr "Dizeclawer paneas"
-
-#: dolphinmainwindow.cpp:1768
-msgctxt "@action:inmenu Panels"
-msgid "Lock Panels"
-msgstr "Eclawer paneas"
-
-#: dolphinmainwindow.cpp:1774
-msgctxt "@title:window"
-msgid "Information"
-msgstr "Infôrmåcion"
-
-#: dolphinmainwindow.cpp:1795
-msgctxt "@title:window"
-msgid "Folders"
-msgstr "Ridants"
-
-#: dolphinmainwindow.cpp:1814
-msgctxt "@title:window Shell terminal"
-msgid "Terminal"
-msgstr "Terminå"
-
-#: dolphinmainwindow.cpp:1836
-msgctxt "@title:window"
-msgid "Search"
-msgstr "Trover"
-
-#: dolphinmainwindow.cpp:1864
-msgctxt "@title:window"
-msgid "Places"
-msgstr "Plaeces"
-
-#: dolphinmainwindow.cpp:1892
-msgctxt "@action:inmenu View"
-msgid "Panels"
-msgstr "Paneas"
-
-#: dolphinmainwindow.cpp:1971
-msgctxt "@info:tooltip"
-msgid "Configure and control Dolphin"
-msgstr "Apontyî eyet controler Dolphin"
-
-#: dolphinmainwindow.cpp:2140
-msgctxt "@action:intoolbar Close right view"
-msgid "Close"
-msgstr "Clôre"
-
-#: dolphinmainwindow.cpp:2141
-msgctxt "@info"
-msgid "Close right view"
-msgstr "Clôre vuwe di droete"
-
-#: dolphinmainwindow.cpp:2144
-msgctxt "@action:intoolbar Close left view"
-msgid "Close"
-msgstr "Clôre"
-
-#: dolphinmainwindow.cpp:2145
-msgctxt "@info"
-msgid "Close left view"
-msgstr "Clôre vuwe di hintche"
-
-#: dolphinmainwindow.cpp:2149
-msgctxt "@action:intoolbar Split view"
-msgid "Split"
-msgstr "Dispårti"
-
-#: dolphinmainwindow.cpp:2150
-msgctxt "@info"
-msgid "Split view"
-msgstr "Dispårti håynaedje"
 
 #: main.cpp:35
 msgctxt "@title"
@@ -1891,6 +1502,395 @@ msgstr "Dolphin s' enondrè avou ene vuwe dispårteye"
 msgctxt "@info:shell"
 msgid "Document to open"
 msgstr "Documint a drovi"
+
+#: dolphinmainwindow.cpp:347
+msgctxt "@info:status"
+msgid "Successfully copied."
+msgstr "Copyî comifåt."
+
+#: dolphinmainwindow.cpp:351
+msgctxt "@info:status"
+msgid "Successfully moved."
+msgstr "Bodjî comifåt."
+
+#: dolphinmainwindow.cpp:355
+msgctxt "@info:status"
+msgid "Successfully linked."
+msgstr "Loyî comifåt."
+
+#: dolphinmainwindow.cpp:359
+msgctxt "@info:status"
+msgid "Successfully moved to trash."
+msgstr "Tapé å batch comifåt."
+
+#: dolphinmainwindow.cpp:363
+msgctxt "@info:status"
+msgid "Successfully renamed."
+msgstr "Rilomé comifåt."
+
+#: dolphinmainwindow.cpp:368
+msgctxt "@info:status"
+msgid "Created folder."
+msgstr "Ridant ahivé"
+
+#: dolphinmainwindow.cpp:446
+msgctxt "@info"
+msgid "Go back"
+msgstr "Rivni en erî"
+
+#: dolphinmainwindow.cpp:452
+msgctxt "@info"
+msgid "Go forward"
+msgstr "Aler en avant"
+
+#: dolphinmainwindow.cpp:614
+msgctxt "@title:window"
+msgid "Confirmation"
+msgstr "Racertinaedje"
+
+#: dolphinmainwindow.cpp:618
+msgid "C&lose Current Tab"
+msgstr "C&lôre linwete do moumint"
+
+#: dolphinmainwindow.cpp:626
+msgid ""
+"You have multiple tabs open in this window, are you sure you want to quit?"
+msgstr ""
+"Vos avoz sacwantès linwetes drovous e ç' purnea ci, voloz cwiter podbon?"
+
+#: dolphinmainwindow.cpp:628
+msgid "Do not ask again"
+msgstr "Èn pus rdimander"
+
+#: dolphinmainwindow.cpp:1232
+msgctxt "@action:inmenu"
+msgid "New Tab"
+msgstr "Novele linwete"
+
+#: dolphinmainwindow.cpp:1235
+msgctxt "@action:inmenu"
+msgid "Detach Tab"
+msgstr "Distaetchî linwete"
+
+#: dolphinmainwindow.cpp:1237
+msgctxt "@action:inmenu"
+msgid "Close Other Tabs"
+msgstr "Clôre ôtès linwetes"
+
+#: dolphinmainwindow.cpp:1239
+msgctxt "@action:inmenu"
+msgid "Close Tab"
+msgstr "Clôre linwete"
+
+#: dolphinmainwindow.cpp:1465
+msgctxt "@action:inmenu"
+msgid "Location Bar"
+msgstr "Båre d' eplaeçmints"
+
+#: dolphinmainwindow.cpp:1473
+msgctxt "@action:inmenu"
+msgid "Go"
+msgstr "Potchî"
+
+#: dolphinmainwindow.cpp:1483
+msgctxt "@action:inmenu"
+msgid "Tools"
+msgstr "Usteyes"
+
+#: dolphinmainwindow.cpp:1497
+msgctxt "@action:inmenu"
+msgid "Help"
+msgstr "Aidance"
+
+#: dolphinmainwindow.cpp:1600
+msgctxt "@action:inmenu File"
+msgid "New &Window"
+msgstr "Novea &purnea"
+
+#: dolphinmainwindow.cpp:1606
+msgctxt "@action:inmenu File"
+msgid "New Tab"
+msgstr "Novele linwete"
+
+#: dolphinmainwindow.cpp:1612
+msgctxt "@action:inmenu File"
+msgid "Close Tab"
+msgstr "Clôre linwete"
+
+#: dolphinmainwindow.cpp:1635
+msgctxt "@action:inmenu Edit"
+msgid "Paste"
+msgstr "Aclaper"
+
+#: dolphinmainwindow.cpp:1640
+msgctxt "@action:inmenu Edit"
+msgid "Select All"
+msgstr "Tchoezi totafwait"
+
+#: dolphinmainwindow.cpp:1645 dolphinpart.cpp:164
+msgctxt "@action:inmenu Edit"
+msgid "Invert Selection"
+msgstr "Tchoezi å rvier"
+
+#: dolphinmainwindow.cpp:1658
+msgctxt "@action:inmenu View"
+msgid "Reload"
+msgstr "Ritcherdjî"
+
+#: dolphinmainwindow.cpp:1664
+msgctxt "@action:inmenu View"
+msgid "Stop"
+msgstr "Arester"
+
+#: dolphinmainwindow.cpp:1665
+msgctxt "@info"
+msgid "Stop loading"
+msgstr "Arester di tcherdjî"
+
+#: dolphinmainwindow.cpp:1670
+msgctxt "@action:inmenu Navigation Bar"
+msgid "Editable Location"
+msgstr "Eplaeçmint candjåve"
+
+#: dolphinmainwindow.cpp:1675
+msgctxt "@action:inmenu Navigation Bar"
+msgid "Replace Location"
+msgstr "Replaecî l' eplaeçmint"
+
+#: dolphinmainwindow.cpp:1686
+msgid "Recently Closed Tabs"
+msgstr "Linwetes cloyowes enawaire"
+
+#: dolphinmainwindow.cpp:1692
+msgid "Empty Recently Closed Tabs"
+msgstr "Vudî linwetes cloyowes enawaire"
+
+#: dolphinmainwindow.cpp:1710
+msgctxt "@action:inmenu Tools"
+msgid "Show Filter Bar"
+msgstr "Mostrer bår di passete"
+
+#: dolphinmainwindow.cpp:1716
+msgctxt "@action:inmenu Tools"
+msgid "Compare Files"
+msgstr "Vey les diferinces inte fitchîs"
+
+#: dolphinmainwindow.cpp:1722
+msgctxt "@action:inmenu Tools"
+msgid "Open Terminal"
+msgstr "Drovi terminå"
+
+#: dolphinmainwindow.cpp:1743
+msgctxt "@action:inmenu"
+msgid "Activate Next Tab"
+msgstr "Mete en alaedje linwete shuvante"
+
+#: dolphinmainwindow.cpp:1748
+msgctxt "@action:inmenu"
+msgid "Activate Previous Tab"
+msgstr "Mete en alaedje linwete di dvant"
+
+#: dolphinmainwindow.cpp:1754
+msgctxt "@action:inmenu"
+msgid "Open in New Tab"
+msgstr "Drovi dins ene novele linwete"
+
+#: dolphinmainwindow.cpp:1759
+msgctxt "@action:inmenu"
+msgid "Open in New Window"
+msgstr "Drovi dins on novea purnea"
+
+#: dolphinmainwindow.cpp:1769
+msgctxt "@action:inmenu Panels"
+msgid "Unlock Panels"
+msgstr "Dizeclawer paneas"
+
+#: dolphinmainwindow.cpp:1771
+msgctxt "@action:inmenu Panels"
+msgid "Lock Panels"
+msgstr "Eclawer paneas"
+
+#: dolphinmainwindow.cpp:1777
+msgctxt "@title:window"
+msgid "Information"
+msgstr "Infôrmåcion"
+
+#: dolphinmainwindow.cpp:1798
+msgctxt "@title:window"
+msgid "Folders"
+msgstr "Ridants"
+
+#: dolphinmainwindow.cpp:1817
+msgctxt "@title:window Shell terminal"
+msgid "Terminal"
+msgstr "Terminå"
+
+#: dolphinmainwindow.cpp:1839
+msgctxt "@title:window"
+msgid "Search"
+msgstr "Trover"
+
+#: dolphinmainwindow.cpp:1867
+msgctxt "@title:window"
+msgid "Places"
+msgstr "Plaeces"
+
+#: dolphinmainwindow.cpp:1895
+msgctxt "@action:inmenu View"
+msgid "Panels"
+msgstr "Paneas"
+
+#: dolphinmainwindow.cpp:1974
+msgctxt "@info:tooltip"
+msgid "Configure and control Dolphin"
+msgstr "Apontyî eyet controler Dolphin"
+
+#: dolphinmainwindow.cpp:2143
+msgctxt "@action:intoolbar Close right view"
+msgid "Close"
+msgstr "Clôre"
+
+#: dolphinmainwindow.cpp:2144
+msgctxt "@info"
+msgid "Close right view"
+msgstr "Clôre vuwe di droete"
+
+#: dolphinmainwindow.cpp:2147
+msgctxt "@action:intoolbar Close left view"
+msgid "Close"
+msgstr "Clôre"
+
+#: dolphinmainwindow.cpp:2148
+msgctxt "@info"
+msgid "Close left view"
+msgstr "Clôre vuwe di hintche"
+
+#: dolphinmainwindow.cpp:2152
+msgctxt "@action:intoolbar Split view"
+msgid "Split"
+msgstr "Dispårti"
+
+#: dolphinmainwindow.cpp:2153
+msgctxt "@info"
+msgid "Split view"
+msgstr "Dispårti håynaedje"
+
+#: dolphinpart.cpp:145
+msgctxt "@action:inmenu Edit"
+msgid "&Edit File Type..."
+msgstr "&Candjî sôre di fitchî..."
+
+#: dolphinpart.cpp:149
+msgctxt "@action:inmenu Edit"
+msgid "Select Items Matching..."
+msgstr "Tchoezi cayets k' corespondèt..."
+
+#: dolphinpart.cpp:154
+msgctxt "@action:inmenu Edit"
+msgid "Unselect Items Matching..."
+msgstr "Distchoezi cayets k' corespondèt..."
+
+#: dolphinpart.cpp:160
+msgctxt "@action:inmenu Edit"
+msgid "Unselect All"
+msgstr "Distchoezi ttafwait"
+
+#: dolphinpart.cpp:177
+msgctxt "@action:inmenu Go"
+msgid "App&lications"
+msgstr "Pro&grames"
+
+#: dolphinpart.cpp:180
+msgctxt "@action:inmenu Go"
+msgid "&Network Folders"
+msgstr "Rida&nts rantoele"
+
+#: dolphinpart.cpp:183
+msgctxt "@action:inmenu Go"
+msgid "Sett&ings"
+msgstr "Apont&iaedjes"
+
+#: dolphinpart.cpp:186
+msgctxt "@action:inmenu Go"
+msgid "Trash"
+msgstr "Batch"
+
+#: dolphinpart.cpp:189
+msgctxt "@action:inmenu Go"
+msgid "Autostart"
+msgstr "Enonde tot seu"
+
+#: dolphinpart.cpp:194
+msgctxt "@action:inmenu Tools"
+msgid "Find File..."
+msgstr "Trover fitchî..."
+
+#: dolphinpart.cpp:202
+msgctxt "@action:inmenu Tools"
+msgid "Open &Terminal"
+msgstr "Drovi &terminå"
+
+#: dolphinpart.cpp:271
+msgctxt "@title"
+msgid "Dolphin Part"
+msgstr "Pårt di Dolphin"
+
+#: dolphinpart.cpp:461
+msgctxt "@title:window"
+msgid "Select"
+msgstr "Tchoezi"
+
+#: dolphinpart.cpp:462
+msgid "Select all items matching this pattern:"
+msgstr "Tchoezi tos les cayets k' corespondèt a c' patron :"
+
+#: dolphinpart.cpp:468
+msgctxt "@title:window"
+msgid "Unselect"
+msgstr "Distchoezi"
+
+#: dolphinpart.cpp:469
+msgid "Unselect all items matching this pattern:"
+msgstr "Distchoezi tos les cayets k' corespondèt a c' patron :"
+
+#: dolphinviewcontainer.cpp:337
+msgctxt "@info:progress"
+msgid "Loading folder..."
+msgstr "Dji tchedje li ridant..."
+
+#: dolphinviewcontainer.cpp:348
+msgctxt "@info"
+msgid "Searching..."
+msgstr "Dji cwere..."
+
+#: dolphinviewcontainer.cpp:368
+msgctxt "@info:status"
+msgid "No items found."
+msgstr "Nou cayet d' trové."
+
+#: dolphinviewcontainer.cpp:436
+#, fuzzy, kde-format
+#| msgctxt "@info:status files (size)"
+#| msgid "%1 (%2)"
+msgctxt "@info:status filename (type)"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: dolphinviewcontainer.cpp:516
+msgctxt "@info:status"
+msgid "Dolphin does not support web pages, the web browser has been launched"
+msgstr ""
+"Dolphin ni sait nén drovi les pådjes waibes, li betchteu waibe a stî enondé"
+
+#: dolphinviewcontainer.cpp:528
+msgctxt "@info:status"
+msgid "Protocol not supported by Dolphin, Konqueror has been launched"
+msgstr "Protocole nén sopoirté pa Dolphin, Konqueror a stî enondé"
+
+#: dolphinviewcontainer.cpp:535
+msgctxt "@info:status"
+msgid "Invalid protocol"
+msgstr "Protocole nén valåbe"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
