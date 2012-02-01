@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: marble_qt\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-31 05:39+0100\n"
+"POT-Creation-Date: 2012-02-01 04:38+0100\n"
 "PO-Revision-Date: 2011-01-14 10:24+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -308,7 +308,7 @@ msgstr "Vuwe del mape"
 msgid "Legend"
 msgstr "Ledjinde"
 
-#: src/QtMainWindow.cpp:332 src/plugins/render/routing/RoutingPlugin.cpp:466
+#: src/QtMainWindow.cpp:332 src/plugins/render/routing/RoutingPlugin.cpp:467
 #: src/lib/MarbleControlBox.cpp:120 src/lib/MarbleControlBox.cpp:205
 #: src/lib/QtMarbleConfigDialog.cpp:157
 #, fuzzy
@@ -1053,34 +1053,34 @@ msgstr "L' aberwetaedje a fni."
 msgid "Shows a pie chart download progress indicator"
 msgstr ""
 
-#: src/plugins/render/routing/RoutingPlugin.cpp:252
+#: src/plugins/render/routing/RoutingPlugin.cpp:255
 msgid "Starting guidance mode, please wait..."
 msgstr ""
 
-#: src/plugins/render/routing/RoutingPlugin.cpp:306
+#: src/plugins/render/routing/RoutingPlugin.cpp:308
 msgid "Calculate a route to get directions."
 msgstr ""
 
-#: src/plugins/render/routing/RoutingPlugin.cpp:309
+#: src/plugins/render/routing/RoutingPlugin.cpp:311
 msgid "Route left."
 msgstr ""
 
-#: src/plugins/render/routing/RoutingPlugin.cpp:312
+#: src/plugins/render/routing/RoutingPlugin.cpp:314
 msgid "Destination ahead."
 msgstr ""
 
-#: src/plugins/render/routing/RoutingPlugin.cpp:326
+#: src/plugins/render/routing/RoutingPlugin.cpp:328
 msgid ""
 "Arrived at destination. <a href=\"#reverse\">Calculate the way back.</a>"
 msgstr ""
 
-#: src/plugins/render/routing/RoutingPlugin.cpp:471
+#: src/plugins/render/routing/RoutingPlugin.cpp:472
 #, fuzzy
 #| msgid "Mountain"
 msgid "&Routing"
 msgstr "Montinne"
 
-#: src/plugins/render/routing/RoutingPlugin.cpp:481
+#: src/plugins/render/routing/RoutingPlugin.cpp:482
 msgid "Routing information and navigation controls"
 msgstr ""
 
@@ -2159,6 +2159,7 @@ msgstr ""
 
 #: src/plugins/runner/openrouteservice/OpenRouteServicePlugin.cpp:27
 #: src/plugins/runner/yours/YoursPlugin.cpp:25
+#: src/plugins/runner/mapquest/MapQuestPlugin.cpp:27
 msgid "This service requires an Internet connection."
 msgstr ""
 
@@ -2167,10 +2168,12 @@ msgid "OpenRouteService Routing"
 msgstr ""
 
 #: src/plugins/runner/openrouteservice/OpenRouteServicePlugin.cpp:46
+#: src/plugins/runner/mapquest/MapQuestPlugin.cpp:46
 msgid "Car (fastest way)"
 msgstr ""
 
 #: src/plugins/runner/openrouteservice/OpenRouteServicePlugin.cpp:47
+#: src/plugins/runner/mapquest/MapQuestPlugin.cpp:47
 msgid "Car (shortest way)"
 msgstr ""
 
@@ -2298,6 +2301,34 @@ msgstr ""
 
 #: src/plugins/runner/kml/KmlPlugin.cpp:22
 msgid "Kml Parser"
+msgstr ""
+
+#: src/plugins/runner/mapquest/MapQuestPlugin.cpp:24
+msgid "MapQuest"
+msgstr ""
+
+#: src/plugins/runner/mapquest/MapQuestPlugin.cpp:26
+msgid "Worldwide routing using mapquest.org"
+msgstr ""
+
+#: src/plugins/runner/mapquest/MapQuestPlugin.cpp:28
+#, fuzzy
+#| msgid "Mountain"
+msgid "MapQuest Routing"
+msgstr "Montinne"
+
+#: src/plugins/runner/mapquest/MapQuestPlugin.cpp:48
+#: src/lib/routing/RoutingProfilesModel.cpp:119
+msgid "Pedestrian"
+msgstr ""
+
+#: src/plugins/runner/mapquest/MapQuestPlugin.cpp:49
+#: src/lib/routing/RoutingProfilesModel.cpp:117
+msgid "Bicycle"
+msgstr ""
+
+#: src/plugins/runner/mapquest/MapQuestPlugin.cpp:50
+msgid "Transit (Public Transport)"
 msgstr ""
 
 #: src/plugins/templates/floatitem/FITemplateFloatItem.cpp:53
@@ -3187,16 +3218,17 @@ msgstr ""
 
 #: src/lib/MarbleAboutDialog.cpp:234
 msgid ""
-"<p><i>OpenStreetMap Icons</i><br />Some placemark icons are taken from <a "
-"href=\"http://www.sjjb.co.uk/mapicons\">SJJB Management</a>. These icons can "
-"be used freely under the terms of the <a href=\"http://creativecommons.org/"
-"publicdomain/zero/1.0/\">CC0 1.0 Universal</a> license.</p>"
+"<p><i>Icons</i><br />Some icons are taken from <a href=\"http://www.sjjb.co."
+"uk/mapicons\">SJJB Management</a> and <a href=\"http://http://thenounproject."
+"com\">NounProject</a>.These icons can be used freely under the terms of the "
+"<a href=\"http://creativecommons.org/publicdomain/zero/1.0/\">CC0 1.0 "
+"Universal</a> license.</p>"
 msgstr ""
 
 #: src/lib/MarbleAboutDialog.cpp:238
 msgid ""
-"<p><i>OpenRouteService</i><br />The routes used in Marble via download are "
-"provided by the <a href=\"http://www.openrouteservice.org"
+"<p><i>OpenRouteService</i><br />Some of the routes used in Marble via "
+"download are provided by the <a href=\"http://www.openrouteservice.org"
 "\">OpenRouteService</a> Project (\"ORS\"). <br /><i>License</i>: "
 "OpenRouteService data can be used freely under the terms of the <a href="
 "\"http://wiki.openstreetmap.org/index.php/OpenStreetMap_License\">Creative "
@@ -3204,16 +3236,28 @@ msgid ""
 msgstr ""
 
 #: src/lib/MarbleAboutDialog.cpp:244
+msgid ""
+"<p><i>MapQuest</i><br />Some of the routes used in Marble via download are "
+"provided by <a href=\"http://www.mapquest.com/\">MapQuest</a> and their Open "
+"Data Map APIs and Web Services.<br />Directions courtesy of MapQuest working "
+"on OpenStreetMap data that can be used freely under the terms of the <a href="
+"\"http://wiki.openstreetmap.org/index.php/OpenStreetMap_License\">Creative "
+"Commons Attribution-ShareAlike 2.0 license</a>. Usage of the MapQuest "
+"routing service is subject to the <a href=\"http://info.mapquest.com/terms-"
+"of-use/\">MapQuest terms of use</a>.</p>"
+msgstr ""
+
+#: src/lib/MarbleAboutDialog.cpp:251
 msgid "<b>Cities and Locations</b>"
 msgstr "<b>Veyes eyet plaeces</b>"
 
-#: src/lib/MarbleAboutDialog.cpp:245
+#: src/lib/MarbleAboutDialog.cpp:252
 msgid ""
 "<p><i>World Gazetteer</i><br />Stefan Helders <a href=\"http://www.world-"
 "gazetteer.com\">http://www.world-gazetteer.com</a></p>"
 msgstr ""
 
-#: src/lib/MarbleAboutDialog.cpp:247
+#: src/lib/MarbleAboutDialog.cpp:254
 msgid ""
 "<p><i>Geonames.org</i><br /><a href=\"http://www.geonames.org/\">http://www."
 "geonames.org/</a><i>License</i>: Geonames.org data can be used freely under "
@@ -3221,17 +3265,17 @@ msgid ""
 "\">Creative Commons Attribution 3.0 license</a>.</p>"
 msgstr ""
 
-#: src/lib/MarbleAboutDialog.cpp:251
+#: src/lib/MarbleAboutDialog.cpp:258
 msgid ""
 "<p><i>Czech Statistical Office</i><br />Public database <a href=\"http://www."
 "czso.cz/eng/redakce.nsf/i/home\">http://www.czso.cz</a></p>"
 msgstr ""
 
-#: src/lib/MarbleAboutDialog.cpp:253
+#: src/lib/MarbleAboutDialog.cpp:260
 msgid "<b>Flags</b>"
 msgstr "<b>Drapeas</b>"
 
-#: src/lib/MarbleAboutDialog.cpp:254
+#: src/lib/MarbleAboutDialog.cpp:261
 msgid ""
 "<p><i>Flags of the World</i><br />The flags were taken from Wikipedia (<a "
 "href=\"http://www.wikipedia.org\">http://www.wikipedia.org</a>) which in "
@@ -3240,11 +3284,11 @@ msgid ""
 "(see comments inside the svg files).</p>"
 msgstr ""
 
-#: src/lib/MarbleAboutDialog.cpp:259
+#: src/lib/MarbleAboutDialog.cpp:266
 msgid "<b>Stars</b>"
 msgstr "<b>Sitoels</b>"
 
-#: src/lib/MarbleAboutDialog.cpp:260
+#: src/lib/MarbleAboutDialog.cpp:267
 msgid ""
 "<p><i>The Bright Star Catalogue</i><br />5th Revised Ed. (Preliminary "
 "Version) Hoffleit D., Warren Jr W.H., Astronomical Data Center, NSSDC/ADC "
@@ -3252,12 +3296,12 @@ msgid ""
 "http://adc.gsfc.nasa.gov</a></p>"
 msgstr ""
 
-#: src/lib/MarbleAboutDialog.cpp:294
+#: src/lib/MarbleAboutDialog.cpp:301
 #, qt-format
 msgid "Using Marble Library version %1"
 msgstr ""
 
-#: src/lib/MarbleAboutDialog.cpp:301
+#: src/lib/MarbleAboutDialog.cpp:308
 #, fuzzy
 msgid ""
 "<br />(c) 2007-2012 by the authors of Marble Virtual Globe<br /><br /><a "
@@ -3700,6 +3744,37 @@ msgstr "Ebaguer mape"
 msgid "No route found"
 msgstr ""
 
+#: src/lib/routing/RoutingManager.cpp:387
+msgid "Caution: Driving instructions may be incomplete or wrong."
+msgstr ""
+
+#: src/lib/routing/RoutingManager.cpp:388
+msgid ""
+"Road construction, weather and other unforeseen variables can result in the "
+"suggested route not to be the most expedient or safest route to your "
+"destination."
+msgstr ""
+
+#: src/lib/routing/RoutingManager.cpp:389
+msgid "Please use common sense while navigating."
+msgstr ""
+
+#: src/lib/routing/RoutingManager.cpp:390
+msgid "The Marble development team wishes you a pleasant and safe journey."
+msgstr ""
+
+#: src/lib/routing/RoutingManager.cpp:391
+#, fuzzy
+#| msgid "Mountain"
+msgid "Guidance Mode - Marble"
+msgstr "Montinne"
+
+#: src/lib/routing/RoutingManager.cpp:392
+#, fuzzy
+#| msgid "Show Navigation Panel"
+msgid "Show again"
+msgstr "Mostrer l' panea di naiviaedje"
+
 #: src/lib/routing/RoutingLayer.cpp:186
 msgid "&Remove this destination"
 msgstr ""
@@ -3844,51 +3919,12 @@ msgstr ""
 msgid "Car (ecological)"
 msgstr ""
 
-#: src/lib/routing/RoutingProfilesModel.cpp:117
-msgid "Bicycle"
-msgstr ""
-
-#: src/lib/routing/RoutingProfilesModel.cpp:119
-msgid "Pedestrian"
-msgstr ""
-
 #: src/lib/routing/RoutingProfilesModel.cpp:123
 #, fuzzy
 #| msgctxt "a planet without data"
 #| msgid "Unknown Planet"
 msgid "Unknown"
 msgstr "Planete nén cnoxhowe"
-
-#: src/lib/routing/RoutingManager.cpp:387
-msgid "Caution: Driving instructions may be incomplete or wrong."
-msgstr ""
-
-#: src/lib/routing/RoutingManager.cpp:388
-msgid ""
-"Road construction, weather and other unforeseen variables can result in the "
-"suggested route not to be the most expedient or safest route to your "
-"destination."
-msgstr ""
-
-#: src/lib/routing/RoutingManager.cpp:389
-msgid "Please use common sense while navigating."
-msgstr ""
-
-#: src/lib/routing/RoutingManager.cpp:390
-msgid "The Marble development team wishes you a pleasant and safe journey."
-msgstr ""
-
-#: src/lib/routing/RoutingManager.cpp:391
-#, fuzzy
-#| msgid "Mountain"
-msgid "Guidance Mode - Marble"
-msgstr "Montinne"
-
-#: src/lib/routing/RoutingManager.cpp:392
-#, fuzzy
-#| msgid "Show Navigation Panel"
-msgid "Show again"
-msgstr "Mostrer l' panea di naiviaedje"
 
 #: src/lib/routing/RoutingProfilesWidget.cpp:55
 msgid "New Profile"
@@ -3935,6 +3971,10 @@ msgstr "&Aidance"
 #, fuzzy
 msgid "Choose Placemark"
 msgstr "Tchôke-divins des Markes di plaeces"
+
+#: src/lib/NewstuffModel.cpp:558 src/lib/NewstuffModel.cpp:567
+msgid "Installation aborted by user."
+msgstr ""
 
 #: src/lib/global.h:235
 msgid "not available"
