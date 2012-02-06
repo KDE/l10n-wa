@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-05 03:47+0100\n"
+"POT-Creation-Date: 2012-02-06 03:31+0100\n"
 "PO-Revision-Date: 2011-09-21 08:11+0200\n"
 "Last-Translator: Djan Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -7877,7 +7877,7 @@ msgid_plural "%1 tracks"
 msgstr[0] "1 boket"
 msgstr[1] "%1 bokets"
 
-#: browsers/CollectionTreeView.cpp:246 configdialog/ConfigDialog.cpp:59
+#: browsers/CollectionTreeView.cpp:246
 msgid "Collection"
 msgstr "Ramexhnêye"
 
@@ -7931,18 +7931,6 @@ msgstr "Radjouter éndjin..."
 msgid "Sound System - Amarok"
 msgstr "Sistinme di son - Amarok"
 
-#: configdialog/dialogs/PluginsConfig.cpp:44
-msgid "Collections"
-msgstr "Ramexhnêye"
-
-#: configdialog/dialogs/PluginsConfig.cpp:48
-msgid "Internet Services"
-msgstr "Siervices daegntoele"
-
-#: configdialog/dialogs/PluginsConfig.cpp:52
-msgid "Devices"
-msgstr "Éndjins"
-
 #: configdialog/dialogs/ScriptSelector.cpp:31 dialogs/ScriptSelector.cpp:30
 msgid "Search Scripts"
 msgstr "Sicripes di cweraedje"
@@ -7977,6 +7965,20 @@ msgstr ""
 "<p>Sicripe disastalé comifåt.</p><p>Renondez Amarok s' i vs plait po oister "
 "ttafwaitmint l' sicripe.</p>"
 
+#: configdialog/dialogs/PluginsConfig.cpp:44
+msgid "Collections"
+msgstr "Ramexhnêye"
+
+#: configdialog/dialogs/PluginsConfig.cpp:48
+msgid "Internet Services"
+msgstr "Siervices daegntoele"
+
+#: configdialog/dialogs/PluginsConfig.cpp:52
+#, fuzzy
+#| msgid "Local Collection"
+msgid "Local Collection Backends"
+msgstr "Ramexhnêye coinrece"
+
 #: configdialog/ConfigDialog.cpp:58
 msgctxt "Miscellaneous settings"
 msgid "General"
@@ -7987,7 +7989,17 @@ msgid "Configure General Options"
 msgstr "Apontyî tchuzes djeneråles"
 
 #: configdialog/ConfigDialog.cpp:59
-msgid "Configure Collection"
+#: context/applets/currenttrack/CurrentTrack.cpp:104
+#: core-impl/collections/db/sql/mysqlecollection/MySqlEmbeddedCollection.cpp:35
+#: core-impl/collections/db/sql/mysqlservercollection/MySqlServerCollection.cpp:41
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:72
+msgid "Local Collection"
+msgstr "Ramexhnêye coinrece"
+
+#: configdialog/ConfigDialog.cpp:59
+#, fuzzy
+#| msgid "Configure Collection"
+msgid "Configure Local Collection"
 msgstr "Apontyî ramexhnêye"
 
 #: configdialog/ConfigDialog.cpp:60
@@ -8100,13 +8112,6 @@ msgstr "Årtisse nén cnoxhou"
 #: core/meta/Meta.cpp:444
 msgid "Unknown Album"
 msgstr "Albom nén cnoxhou"
-
-#: context/applets/currenttrack/CurrentTrack.cpp:104
-#: core-impl/collections/db/sql/mysqlecollection/MySqlEmbeddedCollection.cpp:35
-#: core-impl/collections/db/sql/mysqlservercollection/MySqlServerCollection.cpp:41
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:72
-msgid "Local Collection"
-msgstr "Ramexhnêye coinrece"
 
 #: context/applets/currenttrack/CurrentTrack.cpp:113
 msgctxt "What artist is this track by"
@@ -8687,20 +8692,20 @@ msgid "Append and &Play"
 msgstr "Mete dins l' djivêye eyet &djouwer"
 
 #: context/applets/videoclip/VideoclipApplet.cpp:102
-#: context/applets/videoclip/VideoclipApplet.cpp:279
-#: context/applets/videoclip/VideoclipApplet.cpp:333
+#: context/applets/videoclip/VideoclipApplet.cpp:281
+#: context/applets/videoclip/VideoclipApplet.cpp:335
 msgid "Video Clip"
 msgstr "Clip videyo"
 
-#: context/applets/videoclip/VideoclipApplet.cpp:314
+#: context/applets/videoclip/VideoclipApplet.cpp:316
 msgid "Video Clip: Fetching"
 msgstr "Clip videyo : Dji cwîr l' ådvins"
 
-#: context/applets/videoclip/VideoclipApplet.cpp:323
+#: context/applets/videoclip/VideoclipApplet.cpp:325
 msgid "Video Clip: No Information Found"
 msgstr "Clip videyo : Nole informåcion di trovêye"
 
-#: context/applets/videoclip/VideoclipApplet.cpp:522
+#: context/applets/videoclip/VideoclipApplet.cpp:524
 msgid "Video Clip Settings"
 msgstr "Tchuzes do clip videyo"
 
@@ -9575,7 +9580,6 @@ msgid "Podcasts on %1"
 msgstr "Podcasses so %1"
 
 #: core-impl/collections/mediadevicecollection/MediaDeviceCollection.cpp:249
-#: core-impl/collections/umscollection/UmsCollection.cpp:180
 msgid "&Disconnect Device"
 msgstr "&Disraloyî l' éndjin"
 
@@ -9791,19 +9795,6 @@ msgstr "Oyi, disfacer di %1."
 msgid "&Delete Channel and Episodes"
 msgstr "&Disfacer canå eyet bokets"
 
-#: core-impl/collections/umscollection/UmsCollection.cpp:171
-#, kde-format
-msgid "&Configure %1"
-msgstr "&Apontyî %1"
-
-#: core-impl/collections/umscollection/UmsCollection.cpp:176
-msgid "&Use as Collection"
-msgstr "S' endè &siervi come ramexhnêye"
-
-#: core-impl/collections/umscollection/UmsCollection.cpp:586
-msgid "Configure USB Mass Storage Device"
-msgstr "Apontyî l' éndjin USB d' sitocaedje di dnêyes"
-
 #: core-impl/collections/umscollection/UmsCollectionLocation.cpp:116
 #, fuzzy, kde-format
 #| msgid "Copying tracks"
@@ -9828,6 +9819,36 @@ msgid "Removing one track from %2"
 msgid_plural "Removing %1 tracks from %2"
 msgstr[0] "Dji disface li boket di l' éndjin"
 msgstr[1] "Dji disface li boket di l' éndjin"
+
+#: core-impl/collections/umscollection/UmsCollection.cpp:235
+#, fuzzy
+#| msgid "Configure Media Device"
+msgid "&Configure Device"
+msgstr "Apontyî éndjin media"
+
+#: core-impl/collections/umscollection/UmsCollection.cpp:239
+#, fuzzy
+#| msgid "&Use as Collection"
+msgid "&Activate This Collection"
+msgstr "S' endè &siervi come ramexhnêye"
+
+#: core-impl/collections/umscollection/UmsCollection.cpp:243
+#, fuzzy
+#| msgid "&Read Device"
+msgid "&Eject Device"
+msgstr "&Lére l' éndjins"
+
+#: core-impl/collections/umscollection/UmsCollection.cpp:423
+#, kde-format
+msgctxt ""
+"Name of the USB Mass Storage collection that has not yet been activated. See "
+"also the 'Activate This Collection' action; %1 is actual collection name"
+msgid "%1 (not activated)"
+msgstr ""
+
+#: core-impl/collections/umscollection/UmsCollection.cpp:644
+msgid "Configure USB Mass Storage Device"
+msgstr "Apontyî l' éndjin USB d' sitocaedje di dnêyes"
 
 #: core-impl/collections/upnpcollection/UpnpBrowseCollection.cpp:118
 #, kde-format
@@ -16075,6 +16096,12 @@ msgstr ""
 "On tchmin del muzike, %1, est defini dins les Apontiaedjes do sistinme.\n"
 "Voloz vs vos siervi d' çoula come on ridant del ramexhnêye ?"
 
+#~ msgid "Devices"
+#~ msgstr "Éndjins"
+
+#~ msgid "&Configure %1"
+#~ msgstr "&Apontyî %1"
+
 #~ msgid "%1% used"
 #~ msgstr "%1% eployîs"
 
@@ -17387,9 +17414,6 @@ msgstr ""
 
 #~ msgid "Smart Playlist"
 #~ msgstr "Malene djivêye a djouwer"
-
-#~ msgid "&Read Device"
-#~ msgstr "&Lére l' éndjins"
 
 #~ msgid "Bookmarks"
 #~ msgstr "Rimåkes"
