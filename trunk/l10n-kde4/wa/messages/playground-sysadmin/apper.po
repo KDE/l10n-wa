@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-16 04:48+0100\n"
+"POT-Creation-Date: 2012-02-17 04:16+0100\n"
 "PO-Revision-Date: 2011-09-20 17:14+0200\n"
 "Last-Translator: Djan Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "Backend Details"
 msgstr "Totafwait sol bouye di fond"
 
-#: Apper/main.cpp:54 Sentinel/UpdateIcon.cpp:161 Sentinel/main.cpp:34
+#: Apper/main.cpp:54 Sentinel/UpdateIcon.cpp:158 Sentinel/main.cpp:34
 msgid "Apper"
 msgstr "Apper"
 
@@ -334,50 +334,62 @@ msgstr "Depot :"
 msgid "No update description was found."
 msgstr "Nou discrijhaedje trové po l' metaedje a djoû."
 
-#: ApperKCM/Updater/Updater.cpp:108 ApperKCM/BrowseView.cpp:91
+#: ApperKCM/Updater/Updater.cpp:110 ApperKCM/BrowseView.cpp:95
 msgid "Show Versions"
 msgstr "Mostrer modêyes"
 
-#: ApperKCM/Updater/Updater.cpp:115 ApperKCM/BrowseView.cpp:98
+#: ApperKCM/Updater/Updater.cpp:117
+#, fuzzy
+#| msgid "Show Versions"
+msgid "Show Current Versions"
+msgstr "Mostrer modêyes"
+
+#: ApperKCM/Updater/Updater.cpp:124 ApperKCM/BrowseView.cpp:102
 msgid "Show Architectures"
 msgstr "Mostrer årtchitecteures"
 
-#: ApperKCM/Updater/Updater.cpp:122 ApperKCM/BrowseView.cpp:105
+#: ApperKCM/Updater/Updater.cpp:131 ApperKCM/BrowseView.cpp:109
+#, fuzzy
+#| msgid "Software Origins"
+msgid "Show Origins"
+msgstr "Oridjenes do programe"
+
+#: ApperKCM/Updater/Updater.cpp:138 ApperKCM/BrowseView.cpp:116
 msgid "Show Sizes"
 msgstr "Mostrer grandeus"
 
-#: ApperKCM/Updater/Updater.cpp:217
+#: ApperKCM/Updater/Updater.cpp:255
 #, kde-format
 msgid "Estimated download size: %1"
 msgstr "Grandeu d' aberwetaedje a l' avirance : %1"
 
-#: ApperKCM/Updater/Updater.cpp:254
+#: ApperKCM/Updater/Updater.cpp:292
 msgid "Your system is up to date"
 msgstr "Vosse sistinme est a djoû"
 
-#: ApperKCM/Updater/Updater.cpp:255 ApperKCM/Updater/Updater.cpp:259
+#: ApperKCM/Updater/Updater.cpp:293 ApperKCM/Updater/Updater.cpp:297
 #, kde-format
 msgid "Verified %1 ago"
 msgstr "Verifyî gn a %1"
 
-#: ApperKCM/Updater/Updater.cpp:258
+#: ApperKCM/Updater/Updater.cpp:296
 msgid "You have no updates"
 msgstr "Vos n' avoz nou metaedje a djoû"
 
-#: ApperKCM/Updater/Updater.cpp:262
+#: ApperKCM/Updater/Updater.cpp:300
 msgid "Last check for updates was more than a month ago"
 msgstr ""
 "Li dierin côp k' dj' a waitî après des metaedjes a djoû c' esteut gn a dpus "
 "d' on moes did ci"
 
-#: ApperKCM/Updater/Updater.cpp:263
+#: ApperKCM/Updater/Updater.cpp:301
 msgid "It's strongly recommended that you check for new updates now"
 msgstr ""
 "Dji vs ricomande vormint d' waitî après des noveas metaedjes a djoû do côp"
 
 #. i18n: file: ApperKCM/ApperKCM.ui:230
 #. i18n: ectx: property (text), widget (QPushButton, checkUpdatesPB)
-#: ApperKCM/Updater/Updater.cpp:351 rc.cpp:194
+#: ApperKCM/Updater/Updater.cpp:396 rc.cpp:194
 msgid "Check for new Updates"
 msgstr "Cachî après des noveas metaedjes a djoû"
 
@@ -567,11 +579,11 @@ msgstr "Tins dispoy li dierin rafristaedje del muchete : %1"
 msgid "Date"
 msgstr "Date"
 
-#: ApperKCM/TransactionModel.cpp:47 libapper/PackageModel.cpp:186
+#: ApperKCM/TransactionModel.cpp:47 libapper/PackageModel.cpp:194
 msgid "Action"
 msgstr "Accion"
 
-#: ApperKCM/TransactionModel.cpp:48 Sentinel/TransactionWatcher.cpp:292
+#: ApperKCM/TransactionModel.cpp:48 Sentinel/TransactionWatcher.cpp:308
 msgid "Details"
 msgstr "Detays"
 
@@ -733,11 +745,11 @@ msgstr ""
 "Dji n' a savou trover l' mineu del sicrirece dins nou sourdant des programes "
 "d' apontyî"
 
-#: Sentinel/UpdateIcon.cpp:163
+#: Sentinel/UpdateIcon.cpp:160
 msgid "Review Updates"
 msgstr "Rilever metaedjes a djoû"
 
-#: Sentinel/UpdateIcon.cpp:166
+#: Sentinel/UpdateIcon.cpp:163
 msgid "Configure"
 msgstr "Apontyî"
 
@@ -745,31 +757,31 @@ msgstr "Apontyî"
 #. i18n: ectx: property (text), widget (QToolButton, hideTB)
 #. i18n: file: ApperKCM/Updater/UpdateDetails.ui:20
 #. i18n: ectx: property (text), widget (QToolButton, hideTB)
-#: Sentinel/UpdateIcon.cpp:170 libapper/PkTransactionDialog.cpp:86 rc.cpp:137
-#: rc.cpp:173
+#: Sentinel/UpdateIcon.cpp:167 Sentinel/TransactionWatcher.cpp:186
+#: libapper/PkTransactionDialog.cpp:86 rc.cpp:137 rc.cpp:173
 msgid "Hide"
 msgstr "Catchî"
 
-#: Sentinel/UpdateIcon.cpp:180
+#: Sentinel/UpdateIcon.cpp:177
 #, kde-format
 msgid "You have one update"
 msgid_plural "You have %1 updates"
 msgstr[0] "Vos avoz on metaedje a djoû"
 msgstr[1] "Vos avoz %1 metaedjes a djoû"
 
-#: Sentinel/UpdateIcon.cpp:233
+#: Sentinel/UpdateIcon.cpp:230
 msgid "Updates are being automatically installed."
 msgstr "Les metaedjes a djoû sont-st astalés otomaticmint."
 
-#: Sentinel/UpdateIcon.cpp:254
+#: Sentinel/UpdateIcon.cpp:251
 msgid "Security updates are being automatically installed."
 msgstr "Les metaedjes a djoû di såvrité sont-st astalés otomaticmint."
 
-#: Sentinel/UpdateIcon.cpp:281
+#: Sentinel/UpdateIcon.cpp:278
 msgid "System update was successful."
 msgstr "Li metaedje a djoû do sistinme a stî fwait sins rujhe."
 
-#: Sentinel/UpdateIcon.cpp:290
+#: Sentinel/UpdateIcon.cpp:287
 msgid "The automated software update failed."
 msgstr "Li metaedje a djoû otomatike do programe a fwait berwete."
 
@@ -940,42 +952,42 @@ msgstr "Bouye tote fwaite"
 msgid "All operations were committed successfully"
 msgstr "Totes les operåcions ont stî fwaites comifåt"
 
-#: Sentinel/TransactionWatcher.cpp:64 Sentinel/TransactionWatcher.cpp:249
+#: Sentinel/TransactionWatcher.cpp:66 Sentinel/TransactionWatcher.cpp:265
 msgid "Hide this icon"
 msgstr "Catchî ciste imådjete cial"
 
-#: Sentinel/TransactionWatcher.cpp:166
+#: Sentinel/TransactionWatcher.cpp:168
 msgid "The system update has completed"
 msgstr "Li metaedje a djoû do sistinme est tot fwait"
 
-#: Sentinel/TransactionWatcher.cpp:172
+#: Sentinel/TransactionWatcher.cpp:174
 #, kde-format
 msgid "Packages: %1"
 msgstr "Pacaedjes : %1"
 
-#: Sentinel/TransactionWatcher.cpp:184
+#: Sentinel/TransactionWatcher.cpp:201
 #, kde-format
 msgid "Package: %2"
 msgid_plural "Packages: %2"
 msgstr[0] "Pacaedje : %2"
 msgstr[1] "Pacaedjes : %2"
 
-#: Sentinel/TransactionWatcher.cpp:231 Sentinel/TransactionWatcher.cpp:271
+#: Sentinel/TransactionWatcher.cpp:247 Sentinel/TransactionWatcher.cpp:287
 msgid "Software Manager Messages"
 msgstr "Messaedjes do Manaedjeu des programes"
 
-#: Sentinel/TransactionWatcher.cpp:232
+#: Sentinel/TransactionWatcher.cpp:248
 #, kde-format
 msgid "One message from the software manager"
 msgid_plural "%1 messages from the software manager"
 msgstr[0] "On messaedje do manaedjeu des programes"
 msgstr[1] "%1 messaedjes do manaedjeu des programes"
 
-#: Sentinel/TransactionWatcher.cpp:240
+#: Sentinel/TransactionWatcher.cpp:256
 msgid "Show messages"
 msgstr "Mostrer messaedjes"
 
-#: Sentinel/TransactionWatcher.cpp:292
+#: Sentinel/TransactionWatcher.cpp:308
 msgid "Ignore"
 msgstr "Passer houte"
 
@@ -3181,7 +3193,7 @@ msgstr ""
 msgid "Package"
 msgstr "Pacaedje"
 
-#: libapper/SimulateModel.cpp:141 libapper/PackageModel.cpp:180
+#: libapper/SimulateModel.cpp:141 libapper/PackageModel.cpp:184
 msgid "Version"
 msgstr "Modêye"
 
@@ -3209,19 +3221,32 @@ msgstr "I fåt esse d' acoird avou l' licince"
 msgid "License required for %1 by %2"
 msgstr "I fåt ene licince po %1 di %2"
 
-#: libapper/PackageModel.cpp:178
+#: libapper/PackageModel.cpp:182
 msgid "Name"
 msgstr "No"
 
-#: libapper/PackageModel.cpp:182
+#: libapper/PackageModel.cpp:186
+#, fuzzy
+#| msgctxt "The role of the transaction, in past tense"
+#| msgid "Installed signature"
+msgid "Installed Version"
+msgstr "Sinateure astalêye"
+
+#: libapper/PackageModel.cpp:188
 msgid "Arch"
 msgstr "Årtch"
 
-#: libapper/PackageModel.cpp:184
+#: libapper/PackageModel.cpp:190
+#, fuzzy
+#| msgid "Edit Origins"
+msgid "Origin"
+msgstr "Candjî oridjenes"
+
+#: libapper/PackageModel.cpp:192
 msgid "Size"
 msgstr "Grandeu"
 
-#: libapper/PackageModel.cpp:275
+#: libapper/PackageModel.cpp:283
 #, kde-format
 msgid ""
 "Version: %1\n"
@@ -3230,21 +3255,13 @@ msgstr ""
 "Modêye : %1\n"
 "Årtchitecteure : %2"
 
-#: libapper/PackageModel.cpp:319
+#: libapper/PackageModel.cpp:329
 msgid "To be Removed"
 msgstr "A oister"
 
-#: libapper/PackageModel.cpp:321
+#: libapper/PackageModel.cpp:331
 msgid "To be Installed"
 msgstr "A-z astaler"
-
-#: libapper/ApplicationsDelegate.cpp:40
-msgid "Install"
-msgstr "Astaler"
-
-#: libapper/ApplicationsDelegate.cpp:42
-msgid "Remove"
-msgstr "Oister"
 
 #: libapper/Requirements.cpp:42
 msgid "Additional changes"
@@ -3374,6 +3391,14 @@ msgstr "L' astalaedje del sinateure a fwait berwete"
 #: libapper/RepoSig.cpp:40 rc.cpp:218
 msgid "Software signature is required"
 msgstr "I fåt l' sinateure do programe"
+
+#: libapper/ApplicationsDelegate.cpp:40
+msgid "Install"
+msgstr "Astaler"
+
+#: libapper/ApplicationsDelegate.cpp:42
+msgid "Remove"
+msgstr "Oister"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
