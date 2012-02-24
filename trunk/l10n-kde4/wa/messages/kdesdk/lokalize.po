@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lokalize\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-17 04:01+0100\n"
+"POT-Creation-Date: 2012-02-24 04:24+0100\n"
 "PO-Revision-Date: 2011-01-17 22:00+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -304,7 +304,7 @@ msgstr "&Aler"
 #. i18n: ectx: ToolBar (mainToolBar)
 #. i18n: file: src/tm/translationmemoryrui.rc:10
 #. i18n: ectx: ToolBar (mainToolBar)
-#. i18n: file: src/editorui.rc:232
+#. i18n: file: src/editorui.rc:233
 #. i18n: ectx: ToolBar (mainToolBar)
 #. i18n: file: src/filesearch/filesearchtabui.rc:10
 #. i18n: ectx: ToolBar (mainToolBar)
@@ -1275,13 +1275,13 @@ msgstr "&Rimåkes"
 msgid "S&ync"
 msgstr "&Sincronijhî"
 
-#. i18n: file: src/editorui.rc:187
+#. i18n: file: src/editorui.rc:188
 #. i18n: ectx: Menu (mergesecondary)
 #: rc.cpp:516
 msgid "&Secondary sync source"
 msgstr "&Deujhinme sourdant di sincronijhaedje"
 
-#. i18n: file: src/editorui.rc:209
+#. i18n: file: src/editorui.rc:210
 #. i18n: ectx: Menu (toolviews)
 #. i18n: file: src/lokalizemainwindowui.rc:43
 #. i18n: ectx: Menu (toolviews)
@@ -1451,21 +1451,22 @@ msgctxt "@title:window"
 msgid "Alternate Translations"
 msgstr "Dierin ratournaedje"
 
-#: src/alttransview.cpp:85
+#: src/alttransview.cpp:241
 msgctxt "@info:tooltip"
 msgid ""
-"<p>Sometimes, if original text is changed, its translation becomes "
-"deprecated and is either marked as <emphasis>needing&nbsp;review</emphasis> "
-"(i.e. looses approval status), or (only in case of XLIFF file) moved to the "
+"<p>Sometimes, if source text is changed, its translation becomes deprecated "
+"and is either marked as <emphasis>needing&nbsp;review</emphasis> (i.e. "
+"looses approval status), or (only in case of XLIFF file) moved to the "
 "<emphasis>alternate&nbsp;translations</emphasis> section accompanying the "
-"unit.</p><p>This toolview also shows the difference between new original "
-"string and the old one, so that you can easily see which changes should be "
-"applied to existing translation.</p><p>Double-click any word in this "
-"toolview to insert it into translation.</p><p>Drop translation file onto "
-"this toolview to use it as a source for alternate translations.</p>"
+"unit.</p><p>This toolview also shows the difference between current source "
+"string and the previous source string, so that you can easily see which "
+"changes should be applied to existing translation to make it reflect current "
+"source.</p><p>Double-clicking any word in this toolview inserts it into "
+"translation.</p><p>Drop translation file onto this toolview to use it as a "
+"source for additional alternate translations.</p>"
 msgstr ""
 
-#: src/alttransview.cpp:255
+#: src/alttransview.cpp:262
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Original Diff"
@@ -1473,7 +1474,7 @@ msgctxt "@info:tooltip"
 msgid "Origin: %1"
 msgstr "Dif oridjinne"
 
-#: src/alttransview.cpp:278
+#: src/alttransview.cpp:285
 #, fuzzy
 #| msgctxt "@action:inmenu"
 #| msgid "Copy all new translations"
@@ -1533,7 +1534,7 @@ msgctxt "@info:status message entry"
 msgid "Current: %1"
 msgstr "Li ci do moumint: %1"
 
-#: src/editortab.cpp:165 src/editortab.cpp:834 src/project/projecttab.cpp:274
+#: src/editortab.cpp:165 src/editortab.cpp:840 src/project/projecttab.cpp:334
 #: src/tm/tmtab.cpp:592
 #, kde-format
 msgctxt "@info:status message entries"
@@ -1562,12 +1563,12 @@ msgctxt "percentages in statusbar"
 msgid " (%1%)"
 msgstr ""
 
-#: src/editortab.cpp:211 src/lokalizemainwindow.cpp:443
+#: src/editortab.cpp:211 src/lokalizemainwindow.cpp:455
 msgctxt "@title actions category"
 msgid "File"
 msgstr "Fitchî"
 
-#: src/editortab.cpp:212 src/project/projecttab.cpp:95
+#: src/editortab.cpp:212 src/project/projecttab.cpp:150
 msgctxt "@title actions category"
 msgid "Navigation"
 msgstr "Naiviaedje"
@@ -1589,7 +1590,7 @@ msgstr "Sincronijhaedje 2"
 msgid "Translation Memory"
 msgstr "Memwere di ratournaedje"
 
-#: src/editortab.cpp:217 src/lokalizemainwindow.cpp:445
+#: src/editortab.cpp:217 src/lokalizemainwindow.cpp:457
 msgctxt "@title actions category"
 msgid "Glossary"
 msgstr "Motî"
@@ -1736,7 +1737,7 @@ msgctxt "@action:inmenu"
 msgid "Entry by number"
 msgstr "Intrêye pa limero"
 
-#: src/editortab.cpp:569 src/project/projecttab.cpp:103
+#: src/editortab.cpp:569 src/project/projecttab.cpp:158
 #, fuzzy
 #| msgctxt "@action:inmenu"
 #| msgid "Previous translated but not approved"
@@ -1746,7 +1747,7 @@ msgctxt ""
 msgid "Previous non-empty but not ready"
 msgstr "Ratourné divant mins nén asprouvé"
 
-#: src/editortab.cpp:574 src/project/projecttab.cpp:106
+#: src/editortab.cpp:574 src/project/projecttab.cpp:161
 #, fuzzy
 #| msgctxt "@action:inmenu"
 #| msgid "Next translated but not approved"
@@ -1756,17 +1757,17 @@ msgctxt ""
 msgid "Next non-empty but not ready"
 msgstr "Ratourné shuvant mins nén asprouvé"
 
-#: src/editortab.cpp:579 src/project/projecttab.cpp:109
+#: src/editortab.cpp:579 src/project/projecttab.cpp:164
 msgctxt "@action:inmenu"
 msgid "Previous untranslated"
 msgstr "Nén ratourné di dvant"
 
-#: src/editortab.cpp:584 src/project/projecttab.cpp:112
+#: src/editortab.cpp:584 src/project/projecttab.cpp:167
 msgctxt "@action:inmenu"
 msgid "Next untranslated"
 msgstr "Nén ratourné shuvant"
 
-#: src/editortab.cpp:589 src/project/projecttab.cpp:97
+#: src/editortab.cpp:589 src/project/projecttab.cpp:152
 #, fuzzy
 #| msgctxt "@action:inmenu"
 #| msgid "Previous not approved"
@@ -1776,7 +1777,7 @@ msgctxt ""
 msgid "Previous not ready"
 msgstr "Di dvant nén asprouvé"
 
-#: src/editortab.cpp:594 src/project/projecttab.cpp:100
+#: src/editortab.cpp:594 src/project/projecttab.cpp:155
 #, fuzzy
 #| msgctxt "@action:inmenu"
 #| msgid "Next not approved"
@@ -1829,7 +1830,7 @@ msgctxt "@action:inmenu"
 msgid "Open file for sync/merge"
 msgstr "Drovi fitchî po sincro/rimaxhî"
 
-#: src/editortab.cpp:639 src/editortab.cpp:686
+#: src/editortab.cpp:639 src/editortab.cpp:692
 msgctxt "@info:status"
 msgid ""
 "Open catalog to be merged into the current one / replicate base file changes "
@@ -1838,12 +1839,12 @@ msgstr ""
 "Drovi catalogue a rmaxhî divins l' ci do moumint / ricopyî les candjmints di "
 "båze do fitchî viè"
 
-#: src/editortab.cpp:645 src/editortab.cpp:692
+#: src/editortab.cpp:645 src/editortab.cpp:698
 msgctxt "@action:inmenu"
 msgid "Previous different"
 msgstr "Diferin di dvant"
 
-#: src/editortab.cpp:646 src/editortab.cpp:693
+#: src/editortab.cpp:646 src/editortab.cpp:699
 msgctxt "@info:status"
 msgid ""
 "Previous entry which is translated differently in the file being merged, "
@@ -1852,12 +1853,12 @@ msgstr ""
 "Intrêye di dvant k' est ratournêye diferinnmint e fitchî k' est rmaxhî, tot "
 "contant les vudes ratournaedjes e rmaxhî sourdant"
 
-#: src/editortab.cpp:654 src/editortab.cpp:700
+#: src/editortab.cpp:654 src/editortab.cpp:706
 msgctxt "@action:inmenu"
 msgid "Next different"
 msgstr "Diferin shuvant"
 
-#: src/editortab.cpp:655 src/editortab.cpp:701
+#: src/editortab.cpp:655 src/editortab.cpp:707
 msgctxt "@info:status"
 msgid ""
 "Next entry which is translated differently in the file being merged, "
@@ -1866,17 +1867,25 @@ msgstr ""
 "Intrêye shuvante k' est ratournêye diferinnmint e fitchî k' est rmaxhî, tot "
 "contant les vudes ratournaedjes e rmaxhî sourdant"
 
-#: src/editortab.cpp:663 src/editortab.cpp:708
+#: src/editortab.cpp:663
+#, fuzzy
+#| msgctxt "@action:inmenu"
+#| msgid "Next different"
+msgctxt "@action:inmenu"
+msgid "Next different approved"
+msgstr "Diferin shuvant"
+
+#: src/editortab.cpp:669 src/editortab.cpp:714
 msgctxt "@action:inmenu"
 msgid "Copy from merging source"
 msgstr "Copyî a pårti do sourdant do rmaxhaedje"
 
-#: src/editortab.cpp:669 src/editortab.cpp:713
+#: src/editortab.cpp:675 src/editortab.cpp:719
 msgctxt "@action:inmenu"
 msgid "Copy all new translations"
 msgstr "Copyî tos les noveas ratournaedjes"
 
-#: src/editortab.cpp:670
+#: src/editortab.cpp:676
 #, fuzzy
 #| msgctxt "@info:status"
 #| msgid "This changes only empty entries in base file"
@@ -1884,7 +1893,7 @@ msgctxt "@info:status"
 msgid "This changes only empty and non-ready entries in base file"
 msgstr "Çouci n' candje ki les vudès intrêyes e fitchî d' båze"
 
-#: src/editortab.cpp:678 src/editortab.cpp:720
+#: src/editortab.cpp:684 src/editortab.cpp:726
 #, fuzzy
 #| msgctxt "@action:inmenu"
 #| msgid "Copy from merging source"
@@ -1892,22 +1901,22 @@ msgctxt "@action:inmenu"
 msgid "Copy to merging source"
 msgstr "Copyî a pårti do sourdant do rmaxhaedje"
 
-#: src/editortab.cpp:685
+#: src/editortab.cpp:691
 msgctxt "@action:inmenu"
 msgid "Open file for secondary sync"
 msgstr "Drovi fitchî po deujhinme sincro"
 
-#: src/editortab.cpp:714
+#: src/editortab.cpp:720
 msgctxt "@info:status"
 msgid "This changes only empty entries"
 msgstr "Çouci n' candje ki les vudès intrêyes"
 
-#: src/editortab.cpp:745
+#: src/editortab.cpp:751
 msgctxt "editor tab name"
 msgid "(recovered)"
 msgstr ""
 
-#: src/editortab.cpp:787 src/editortab.cpp:940
+#: src/editortab.cpp:793 src/editortab.cpp:946
 msgctxt "@info"
 msgid ""
 "The document contains unsaved changes.\n"
@@ -1916,13 +1925,13 @@ msgstr ""
 "I gn a des candjmints nén schapés e documint.\n"
 "Voloz vs schaper vos candjmints oudonbén ls abandner?"
 
-#: src/editortab.cpp:788 src/editortab.cpp:941
+#: src/editortab.cpp:794 src/editortab.cpp:947
 #: src/glossary/glossarywindow.cpp:506
 msgctxt "@title:window"
 msgid "Warning"
 msgstr "Adviertixhmint"
 
-#: src/editortab.cpp:884
+#: src/editortab.cpp:890
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "Error opening the file <filename>%1</filename>"
@@ -1930,13 +1939,13 @@ msgctxt "@info"
 msgid "Error opening the file <filename>%1</filename>, line: %2"
 msgstr "Åk n' a nén stî come dji droveu l' fitchî <filename>%1</filename>"
 
-#: src/editortab.cpp:885
+#: src/editortab.cpp:891
 #, kde-format
 msgctxt "@info"
 msgid "Error opening the file <filename>%1</filename>"
 msgstr "Åk n' a nén stî come dji droveu l' fitchî <filename>%1</filename>"
 
-#: src/editortab.cpp:908
+#: src/editortab.cpp:914
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1944,12 +1953,12 @@ msgid ""
 "Do you want to save to another file or cancel?"
 msgstr "Åk n' a nén stî come dji schapéve li fitchî <filename>%1</filename>"
 
-#: src/editortab.cpp:910
+#: src/editortab.cpp:916
 msgctxt "@title"
 msgid "Error"
 msgstr "Aroke"
 
-#: src/editortab.cpp:918
+#: src/editortab.cpp:924
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "Error opening the file <filename>%1</filename>"
@@ -1959,35 +1968,35 @@ msgid ""
 "The target file was <filename>%1</filename>."
 msgstr "Åk n' a nén stî come dji droveu l' fitchî <filename>%1</filename>"
 
-#: src/editortab.cpp:967
+#: src/editortab.cpp:973
 msgctxt "@title"
 msgid "Jump to Entry"
 msgstr "Potchî viè l' intrêye"
 
-#: src/editortab.cpp:968
+#: src/editortab.cpp:974
 msgctxt "@label:spinbox"
 msgid "Enter entry number:"
 msgstr "Intrer l' limero di l' intrêye:"
 
-#: src/editortab.cpp:1043
+#: src/editortab.cpp:1049
 #, kde-format
 msgctxt "@info:status"
 msgid "Current: %1"
 msgstr "Li ci do moumint: %1"
 
-#: src/editortab.cpp:1055 src/cataloglistview/catalogmodel.cpp:185
+#: src/editortab.cpp:1061 src/cataloglistview/catalogmodel.cpp:185
 #: src/tm/tmtab.cpp:238
 msgctxt "@info:status"
 msgid "Untranslated"
 msgstr "Nén ratourné"
 
-#: src/editortab.cpp:1056 src/editortab.cpp:1248
+#: src/editortab.cpp:1062 src/editortab.cpp:1254
 #: src/cataloglistview/catalogmodel.cpp:183 src/tm/tmtab.cpp:236
 msgctxt "@info:status 'non-fuzzy' in gettext terminology"
 msgid "Ready"
 msgstr ""
 
-#: src/editortab.cpp:1057 src/editortab.cpp:1243
+#: src/editortab.cpp:1063 src/editortab.cpp:1249
 #: src/cataloglistview/catalogmodel.cpp:184 src/tm/tmtab.cpp:237
 #, fuzzy
 #| msgctxt "@info:status"
@@ -1996,7 +2005,7 @@ msgctxt "@info:status 'fuzzy' in gettext terminology"
 msgid "Needs review"
 msgstr "Dimande verifiaedje"
 
-#: src/editortab.cpp:1221
+#: src/editortab.cpp:1227
 #, fuzzy
 #| msgctxt "@title:column Number of entries"
 #| msgid "Translated"
@@ -2004,12 +2013,12 @@ msgctxt "@option:check trans-unit state"
 msgid "Translated"
 msgstr "Ratourné"
 
-#: src/editortab.cpp:1222
+#: src/editortab.cpp:1228
 msgctxt "@option:check trans-unit state"
 msgid "Signed-off"
 msgstr ""
 
-#: src/editortab.cpp:1223
+#: src/editortab.cpp:1229
 #, fuzzy
 #| msgctxt "@option:check whether message is marked as Approved"
 #| msgid "Approved"
@@ -2017,22 +2026,22 @@ msgctxt "@option:check trans-unit state"
 msgid "Approved"
 msgstr "Asprouver"
 
-#: src/editortab.cpp:1226
+#: src/editortab.cpp:1232
 msgctxt "@info:tooltip"
 msgid "Translation is done (although still may need a review)"
 msgstr ""
 
-#: src/editortab.cpp:1227
+#: src/editortab.cpp:1233
 msgctxt "@info:tooltip"
 msgid "Translation received positive review"
 msgstr ""
 
-#: src/editortab.cpp:1228
+#: src/editortab.cpp:1234
 msgctxt "@info:tooltip"
 msgid "Entry is fully localized (i.e. final)"
 msgstr ""
 
-#: src/editortab.cpp:1368
+#: src/editortab.cpp:1374
 msgctxt "@info"
 msgid ""
 "Cannot open source files: no scripts to do so are currently loaded. Refer to "
@@ -2112,63 +2121,63 @@ msgctxt "@item Undo action item"
 msgid "Unwrap"
 msgstr "Disnukî"
 
-#: src/lokalizemainwindow.cpp:140
+#: src/lokalizemainwindow.cpp:141
 msgctxt "@info"
 msgid "No Qt Sql modules were found. Translation memory will not work."
 msgstr ""
 
-#: src/lokalizemainwindow.cpp:378 src/project/project.cpp:245
+#: src/lokalizemainwindow.cpp:390 src/project/project.cpp:245
 msgid "TM facility requires SQLite Qt module."
 msgstr ""
 
-#: src/lokalizemainwindow.cpp:378 src/project/project.cpp:245
+#: src/lokalizemainwindow.cpp:390 src/project/project.cpp:245
 msgid "No SQLite module available"
 msgstr ""
 
-#: src/lokalizemainwindow.cpp:446 src/tm/tmtab.cpp:499
+#: src/lokalizemainwindow.cpp:458 src/tm/tmtab.cpp:499
 msgctxt "@title actions category"
 msgid "Translation Memory"
 msgstr "Memwere di ratournaedje"
 
-#: src/lokalizemainwindow.cpp:447 src/project/projecttab.cpp:128
+#: src/lokalizemainwindow.cpp:459 src/project/projecttab.cpp:183
 msgctxt "@title actions category"
 msgid "Project"
 msgstr "Pordjet"
 
-#: src/lokalizemainwindow.cpp:486
+#: src/lokalizemainwindow.cpp:498
 msgid "Next tab"
 msgstr "Linwete shuvante"
 
-#: src/lokalizemainwindow.cpp:489
+#: src/lokalizemainwindow.cpp:501
 msgid "Previous tab"
 msgstr "Linwete di dvant"
 
-#: src/lokalizemainwindow.cpp:495
+#: src/lokalizemainwindow.cpp:507
 msgctxt "@action:inmenu"
 msgid "Glossary"
 msgstr "Motî"
 
-#: src/lokalizemainwindow.cpp:499
+#: src/lokalizemainwindow.cpp:511
 msgctxt "@action:inmenu"
 msgid "Translation memory"
 msgstr "Memwere di ratournaedje"
 
-#: src/lokalizemainwindow.cpp:503 src/tm/tmtab.cpp:502
+#: src/lokalizemainwindow.cpp:515 src/tm/tmtab.cpp:502
 msgctxt "@action:inmenu"
 msgid "Manage translation memories"
 msgstr "Manaedjî memweres di ratournaedje"
 
-#: src/lokalizemainwindow.cpp:507
+#: src/lokalizemainwindow.cpp:519
 msgctxt "@action:inmenu"
 msgid "Project overview"
 msgstr "Vuwe djeneråle do pordjet"
 
-#: src/lokalizemainwindow.cpp:511
+#: src/lokalizemainwindow.cpp:523
 msgctxt "@action:inmenu"
 msgid "Configure project"
 msgstr "Apontyî pordjet"
 
-#: src/lokalizemainwindow.cpp:514
+#: src/lokalizemainwindow.cpp:526 src/project/projecttab.cpp:84
 #, fuzzy
 #| msgctxt "@action:inmenu"
 #| msgid "Create new project"
@@ -2176,27 +2185,28 @@ msgctxt "@action:inmenu"
 msgid "Create new project"
 msgstr "Ahiver novea pordjet"
 
-#: src/lokalizemainwindow.cpp:517 src/project/projecttab.cpp:131
+#: src/lokalizemainwindow.cpp:529 src/project/projecttab.cpp:85
+#: src/project/projecttab.cpp:186
 msgctxt "@action:inmenu"
 msgid "Open project"
 msgstr "Drovi pordjet"
 
-#: src/lokalizemainwindow.cpp:520
+#: src/lokalizemainwindow.cpp:532
 msgctxt "@action:inmenu"
 msgid "Open recent project"
 msgstr "Drovi dierins pordjets"
 
-#: src/lokalizemainwindow.cpp:528
+#: src/lokalizemainwindow.cpp:540
 msgctxt "@action:inmenu"
 msgid "Search and replace in files"
 msgstr ""
 
-#: src/lokalizemainwindow.cpp:531
+#: src/lokalizemainwindow.cpp:543
 msgctxt "@action:inmenu"
 msgid "Find next in files"
 msgstr ""
 
-#: src/lokalizemainwindow.cpp:707
+#: src/lokalizemainwindow.cpp:719
 #, fuzzy
 #| msgctxt "@info"
 #| msgid "Error opening the file <filename>%1</filename>"
@@ -2911,18 +2921,18 @@ msgid "Translation Units"
 msgstr "Ratourné"
 
 #: src/cataloglistview/cataloglistview.cpp:88
-#: src/glossary/glossarywindow.cpp:237 src/project/projecttab.cpp:60
+#: src/glossary/glossarywindow.cpp:237 src/project/projecttab.cpp:115
 msgid "Quick search..."
 msgstr ""
 
 #: src/cataloglistview/cataloglistview.cpp:89
-#: src/glossary/glossarywindow.cpp:239 src/project/projecttab.cpp:61
+#: src/glossary/glossarywindow.cpp:239 src/project/projecttab.cpp:116
 msgctxt "@info:tooltip"
 msgid "Activated by Ctrl+L."
 msgstr ""
 
 #: src/cataloglistview/cataloglistview.cpp:89
-#: src/glossary/glossarywindow.cpp:239 src/project/projecttab.cpp:61
+#: src/glossary/glossarywindow.cpp:239 src/project/projecttab.cpp:116
 msgctxt "@info:tooltip"
 msgid "Accepts regular expressions"
 msgstr ""
@@ -3080,12 +3090,12 @@ msgstr ""
 "I gn a dins l' motî des candjmints nén schapés.\n"
 "Voloz vs schaper vos candjmints oudonbén les abandner?"
 
-#: src/mergemode/mergecatalog.cpp:257
+#: src/mergemode/mergecatalog.cpp:267
 msgctxt "@item Undo action item"
 msgid "Accept change in translation"
 msgstr "Accepter candjmint e ratournaedje"
 
-#: src/mergemode/mergecatalog.cpp:312
+#: src/mergemode/mergecatalog.cpp:322
 msgctxt "@item Undo action item"
 msgid "Accept all new translations"
 msgstr "Accepter tos les noveas ratournaedjes"
@@ -3111,7 +3121,7 @@ msgstr ""
 "Bodjî fitchî ki divrè esse rimaxhî dvins / sincronijhî avou l' ci do moumint "
 "chal"
 
-#: src/mergemode/mergeview.cpp:233
+#: src/mergemode/mergeview.cpp:239
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "Error opening the file <filename>%1</filename>"
@@ -3121,7 +3131,7 @@ msgid ""
 "line: %2"
 msgstr "Åk n' a nén stî come dji droveu l' fitchî <filename>%1</filename>"
 
-#: src/mergemode/mergeview.cpp:358
+#: src/mergemode/mergeview.cpp:375
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -3249,12 +3259,31 @@ msgctxt "@title:column"
 msgid "Last Translator"
 msgstr "Dierin ratourneu"
 
-#: src/project/projecttab.cpp:54
+#: src/project/projecttab.cpp:58
 msgctxt "@title:window"
 msgid "Project Overview"
 msgstr "Vuwe djeneråle do pordjet"
 
-#: src/project/projecttab.cpp:115
+#: src/project/projecttab.cpp:62
+#, kde-format
+msgid ""
+"<html>You do not have to be a software developer to be a member of the KDE "
+"team. You can join the national teams that translate program interfaces. You "
+"can provide graphics, themes, sounds, and improved documentation. You decide!"
+"<br /><br />Visit <a href=\"%1\">%1</a> for information on some projects in "
+"which you can participate.<br /><br />If you need more information or "
+"documentation, then a visit to <a href=\"%2\">%2</a> will provide you with "
+"what you need.</html>"
+msgstr ""
+
+#: src/project/projecttab.cpp:83
+#, fuzzy, kde-format
+#| msgctxt "@action:inmenu"
+#| msgid "Configure project"
+msgid "&Configure %1..."
+msgstr "Apontyî pordjet"
+
+#: src/project/projecttab.cpp:170
 #, fuzzy
 #| msgctxt "@action:inmenu"
 #| msgid "Previous untranslated"
@@ -3262,12 +3291,12 @@ msgctxt "@action:inmenu"
 msgid "Previous template only"
 msgstr "Nén ratourné di dvant"
 
-#: src/project/projecttab.cpp:118
+#: src/project/projecttab.cpp:173
 msgctxt "@action:inmenu"
 msgid "Next template only"
 msgstr ""
 
-#: src/project/projecttab.cpp:121
+#: src/project/projecttab.cpp:176
 #, fuzzy
 #| msgctxt "@action:inmenu"
 #| msgid "Previous untranslated"
@@ -3275,7 +3304,7 @@ msgctxt "@action:inmenu"
 msgid "Previous translation only"
 msgstr "Nén ratourné di dvant"
 
-#: src/project/projecttab.cpp:124
+#: src/project/projecttab.cpp:179
 #, fuzzy
 #| msgctxt "@title:window"
 #| msgid "New Translation Memory"
@@ -3283,12 +3312,12 @@ msgctxt "@action:inmenu"
 msgid "Next translation only"
 msgstr "Novele memwere di ratournaedje"
 
-#: src/project/projecttab.cpp:174
+#: src/project/projecttab.cpp:234
 msgctxt "@action:inmenu"
 msgid "Open"
 msgstr "Drovi"
 
-#: src/project/projecttab.cpp:183
+#: src/project/projecttab.cpp:243
 #, fuzzy
 #| msgctxt "@action:inmenu"
 #| msgid "Translation memory"
@@ -3296,12 +3325,12 @@ msgctxt "@action:inmenu"
 msgid "Add to translation memory"
 msgstr "Memwere di ratournaedje"
 
-#: src/project/projecttab.cpp:185
+#: src/project/projecttab.cpp:245
 msgctxt "@action:inmenu"
 msgid "Search in files"
 msgstr ""
 
-#: src/project/projecttab.cpp:187
+#: src/project/projecttab.cpp:247
 msgctxt "@action:inmenu"
 msgid "Search in files (including templates)"
 msgstr ""
