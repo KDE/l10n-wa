@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwordmswordfilter\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-15 02:46+0100\n"
+"POT-Creation-Date: 2012-03-04 11:30+0100\n"
 "PO-Revision-Date: 2010-12-04 13:34+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -27,10 +27,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 1.0\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-
-#: flow/imageexport/flow_imageexportdialog.cpp:35
-msgid "Export to Image"
-msgstr "Ebaguer come ene imådje"
 
 #: flow/imageexport/flow_imageexport.cpp:91
 #: kchart/genericimageexport/genericimageexport.cpp:67
@@ -52,6 +48,10 @@ msgstr "Aroke d' ebagaedje"
 #: kformula/png/pngexport.cc:65 kformula/svg/svgexport.cc:80
 msgid "Malformed XML data."
 msgstr "Dinêyes XML må foirmêyes"
+
+#: flow/imageexport/flow_imageexportdialog.cpp:35
+msgid "Export to Image"
+msgstr "Ebaguer come ene imådje"
 
 #: karbon/eps/EpsExportDlg.cpp:37
 msgid "EPS Export"
@@ -158,10 +158,11 @@ msgstr "Hôteur (%):"
 #: tables/xlsx/XlsxXmlCommentsReader.cpp:108
 #: tables/xlsx/XlsxXmlDocumentReader.cpp:134
 #: tables/xlsx/XlsxXmlSharedStringsReader.cpp:113
-#: tables/xlsx/XlsxXmlTableReader.cpp:78
 #: tables/xlsx/XlsxXmlStylesReader.cpp:457
+#: tables/xlsx/XlsxXmlTableReader.cpp:78
 #: tables/xlsx/XlsxXmlWorksheetReader.cpp:301
 #: words/docx/DocxXmlCommentsReader.cpp:89
+#: words/docx/DocxXmlDocumentReader.cpp:200
 #: words/docx/DocxXmlEndnoteReader.cpp:90
 #: words/docx/DocxXmlFontTableReader.cpp:89
 #: words/docx/DocxXmlFooterReader.cpp:95
@@ -169,7 +170,6 @@ msgstr "Hôteur (%):"
 #: words/docx/DocxXmlHeaderReader.cpp:95
 #: words/docx/DocxXmlNumberingReader.cpp:87
 #: words/docx/DocxXmlSettingsReader.cpp:87
-#: words/docx/DocxXmlDocumentReader.cpp:200
 #, kde-format
 msgid "Namespace \"%1\" not found"
 msgstr "Espåce di no « %1 » nén trové"
@@ -420,6 +420,10 @@ msgstr "Locåle ( %1 )"
 msgid "Top"
 msgstr "Al copete"
 
+#: tables/opencalc/opencalcexport.cc:915
+msgid "Page "
+msgstr "Pådje"
+
 #: tables/opencalc/opencalcimport.cc:1236
 msgid "The file seems to be corrupt. Skipping a table."
 msgstr "I m' shonne kel fitchî est cron. Dji passe on tåvlea."
@@ -444,10 +448,6 @@ msgstr ""
 #: tables/opencalc/opencalcimport.cc:1948 words/oowriter/oowriterimport.cc:558
 msgid "Unsupported document version"
 msgstr "Modêye do documint nén sopoirtêye"
-
-#: tables/opencalc/opencalcexport.cc:915
-msgid "Page "
-msgstr "Pådje"
 
 #: tables/qpro/qproimport.cc:128
 msgid "QPRO filter cannot open input file - please report."
@@ -495,6 +495,12 @@ msgstr ""
 #: tables/xlsx/XlsxXmlWorksheetReader.cpp:1428
 msgid "Expected integer or floating point number"
 msgstr "Dji ratindeu on nombe etir ou avou flotant coma"
+
+#: words/abiword/ImportField.cc:29
+#, kde-format
+msgctxt "Frameset name"
+msgid "Footnote %1"
+msgstr "Pînote %1"
 
 #: words/abiword/abiwordimport.cc:479
 #, kde-format
@@ -546,12 +552,6 @@ msgstr "Dji n' sai schaper les pondants et les djondants do documint."
 #: words/abiword/abiwordimport.cc:1638
 msgid "Unable to save main document."
 msgstr "Dji n' sai schaper l' mwaisse documint"
-
-#: words/abiword/ImportField.cc:29
-#, kde-format
-msgctxt "Frameset name"
-msgid "Footnote %1"
-msgstr "Pînote %1"
 
 #: words/ascii/ExportDialog.cc:44
 #, fuzzy
@@ -695,18 +695,6 @@ msgstr "Pînote del prumire pådje"
 msgid "Words's MS Write Import Filter"
 msgstr "Passete MS-Write d' intrêye po KWord"
 
-#: words/oowriter/conversion.cc:124
-msgid "Header"
-msgstr "Tiestire"
-
-#: words/oowriter/conversion.cc:128
-msgid "Footer"
-msgstr "Pî d' pådje"
-
-#: words/oowriter/oowriterimport.cc:127
-msgid "Main Text Frameset"
-msgstr "Eshonna di cådes do mwaisse tecse"
-
 #: words/oowriter/ExportFilter.cc:1066
 #, kde-format
 msgctxt "Object name"
@@ -726,6 +714,18 @@ msgstr "Cåde di tåvlea %1"
 msgctxt "Pseudo-author for annotations"
 msgid "KWord 1.3"
 msgstr "KWord 1.3"
+
+#: words/oowriter/conversion.cc:124
+msgid "Header"
+msgstr "Tiestire"
+
+#: words/oowriter/conversion.cc:128
+msgid "Footer"
+msgstr "Pî d' pådje"
+
+#: words/oowriter/oowriterimport.cc:127
+msgid "Main Text Frameset"
+msgstr "Eshonna di cådes do mwaisse tecse"
 
 #: words/rtf/import/rtfimport.cpp:56
 msgid "The file cannot be loaded, as it seems not to be an RTF document."
