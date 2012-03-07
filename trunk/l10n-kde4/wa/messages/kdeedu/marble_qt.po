@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: marble_qt\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-01 04:15+0100\n"
+"POT-Creation-Date: 2012-03-07 04:46+0100\n"
 "PO-Revision-Date: 2011-01-14 10:24+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -308,7 +308,7 @@ msgstr "Vuwe del mape"
 msgid "Legend"
 msgstr "Ledjinde"
 
-#: src/QtMainWindow.cpp:332 src/plugins/render/routing/RoutingPlugin.cpp:466
+#: src/QtMainWindow.cpp:332 src/plugins/render/routing/RoutingPlugin.cpp:461
 #: src/lib/MarbleControlBox.cpp:120 src/lib/MarbleControlBox.cpp:205
 #: src/lib/QtMarbleConfigDialog.cpp:157
 #, fuzzy
@@ -387,9 +387,9 @@ msgstr "Drovi fitchî"
 #| "All Supported Files (*.gpx *.kml);;GPS Data (*.gpx);;Google Earth KML (*."
 #| "kml)"
 msgid ""
-"All Supported Files (*.gpx *.kml *.osm *.pnt *.shp);;GPS Data (*.gpx);;"
-"Google Earth KML (*.kml);;OpenStreetmap Data (*.osm);;Micro World Database "
-"II (*.pnt);;Shapefile map file (*.shp)"
+"All Supported Files (*.gpx *.kml *.log *.osm *.pnt *.shp);;GPS Data (*.gpx);;"
+"Google Earth KML (*.kml);;TangoGPS Log File (*.log);;OpenStreetmap Data (*."
+"osm);;Micro World Database II (*.pnt);;Shapefile map file (*.shp)"
 msgstr ""
 "Tos les fitchîs sopoirtés (*.gpx *.kml);;dinêyes GPS (*.gpx);;KML di Google "
 "Earth (*.kml)"
@@ -487,7 +487,7 @@ msgstr "Tchôke-divins des Markes di plaeces"
 msgid "QNetworkAccessManager based Network Plugin"
 msgstr ""
 
-#: src/plugins/network/qnam/QNamNetworkPlugin.cpp:49
+#: src/plugins/network/qnam/QNamNetworkPlugin.cpp:54
 msgid ""
 "A network plugin which keeps connected to the hosts used to deliver a better "
 "user experience."
@@ -504,18 +504,6 @@ msgstr ""
 
 #: src/plugins/positionprovider/geoclue/GeoCluePositionProviderPlugin.cpp:36
 msgid "Reports the position via the GeoClue Location Framework."
-msgstr ""
-
-#: src/plugins/positionprovider/gpsd/GpsdPositionProviderPlugin.cpp:24
-msgid "Gpsd position provider Plugin"
-msgstr ""
-
-#: src/plugins/positionprovider/gpsd/GpsdPositionProviderPlugin.cpp:34
-msgid "gpsd"
-msgstr ""
-
-#: src/plugins/positionprovider/gpsd/GpsdPositionProviderPlugin.cpp:39
-msgid "Reports the position of a GPS device."
 msgstr ""
 
 #: src/plugins/positionprovider/gpsd/GpsdConnection.cpp:69
@@ -546,6 +534,18 @@ msgstr ""
 msgid "Unknown error when opening gpsd connection"
 msgstr ""
 
+#: src/plugins/positionprovider/gpsd/GpsdPositionProviderPlugin.cpp:24
+msgid "Gpsd position provider Plugin"
+msgstr ""
+
+#: src/plugins/positionprovider/gpsd/GpsdPositionProviderPlugin.cpp:34
+msgid "gpsd"
+msgstr ""
+
+#: src/plugins/positionprovider/gpsd/GpsdPositionProviderPlugin.cpp:44
+msgid "Reports the position of a GPS device."
+msgstr ""
+
 #: src/plugins/positionprovider/maemo/MaemoPositionProviderPlugin.cpp:50
 #, fuzzy
 msgid "Maemo Position Provider Plugin"
@@ -555,7 +555,7 @@ msgstr "Tchôke-divins GeoRender"
 msgid "Maemo"
 msgstr "Maemo"
 
-#: src/plugins/positionprovider/maemo/MaemoPositionProviderPlugin.cpp:65
+#: src/plugins/positionprovider/maemo/MaemoPositionProviderPlugin.cpp:70
 msgid "Reports the GPS position of a Maemo device (e.g. Nokia N900)."
 msgstr ""
 
@@ -568,7 +568,7 @@ msgstr "Tchôke-divins GeoRender"
 msgid "GPS Position Simulation (File Reader)"
 msgstr ""
 
-#: src/plugins/positionprovider/filereader/FileReaderPositionProviderPlugin.cpp:139
+#: src/plugins/positionprovider/filereader/FileReaderPositionProviderPlugin.cpp:144
 msgid "Reports the GPS position from a previously calculated route."
 msgstr ""
 
@@ -582,74 +582,74 @@ msgstr "Tchôke-divins GeoRender"
 msgid "Placemark"
 msgstr "Tchôke-divins des Markes di plaeces"
 
-#: src/plugins/positionprovider/placemark/PlacemarkPositionProviderPlugin.cpp:49
+#: src/plugins/positionprovider/placemark/PlacemarkPositionProviderPlugin.cpp:54
 msgid "Reports the position of a placemark"
 msgstr ""
 
-#: src/plugins/render/aprs/AprsPlugin.cpp:117
+#: src/plugins/render/aprs/AprsPlugin.cpp:113
 msgid "Amateur Radio Aprs Plugin"
 msgstr ""
 
-#: src/plugins/render/aprs/AprsPlugin.cpp:122
+#: src/plugins/render/aprs/AprsPlugin.cpp:118
 msgid "Amateur Radio &Aprs Plugin"
 msgstr ""
 
-#: src/plugins/render/aprs/AprsPlugin.cpp:132
+#: src/plugins/render/aprs/AprsPlugin.cpp:133
 msgid ""
 "This plugin displays APRS data gleaned from the Internet.  APRS is an "
 "Amateur Radio protocol for broadcasting location and other information."
 msgstr ""
 
-#: src/plugins/render/compass/CompassFloatItem.cpp:56
+#: src/plugins/render/compass/CompassFloatItem.cpp:52
 msgid "Compass"
 msgstr "Rôze des vints"
 
-#: src/plugins/render/compass/CompassFloatItem.cpp:61
+#: src/plugins/render/compass/CompassFloatItem.cpp:57
 msgid "&Compass"
 msgstr "&Rôze des vints"
 
-#: src/plugins/render/compass/CompassFloatItem.cpp:71
+#: src/plugins/render/compass/CompassFloatItem.cpp:72
 msgid "This is a float item that provides a compass."
 msgstr "Çouchal est on cayet flotant ki dene ene rôze des vints."
 
-#: src/plugins/render/compass/CompassFloatItem.cpp:126
+#: src/plugins/render/compass/CompassFloatItem.cpp:139
 #: src/plugins/render/weather/WeatherData.cpp:445
 #: src/lib/geodata/data/GeoDataCoordinates.cpp:1003
 msgid "N"
 msgstr "B"
 
-#: src/plugins/render/compass/CompassFloatItem.cpp:128
+#: src/plugins/render/compass/CompassFloatItem.cpp:141
 #: src/plugins/render/weather/WeatherData.cpp:461
 #: src/lib/geodata/data/GeoDataCoordinates.cpp:1003
 msgid "S"
 msgstr "N"
 
-#: src/plugins/render/crosshairs/CrosshairsPlugin.cpp:65
+#: src/plugins/render/crosshairs/CrosshairsPlugin.cpp:61
 msgid "Crosshairs"
 msgstr "Croes"
 
-#: src/plugins/render/crosshairs/CrosshairsPlugin.cpp:70
+#: src/plugins/render/crosshairs/CrosshairsPlugin.cpp:66
 msgid "Cross&hairs"
 msgstr "C&roes"
 
-#: src/plugins/render/crosshairs/CrosshairsPlugin.cpp:80
+#: src/plugins/render/crosshairs/CrosshairsPlugin.cpp:81
 msgid "A plugin that shows crosshairs."
 msgstr "On tchôke-divins k' håyene les croes."
 
-#: src/plugins/render/earthquake/EarthquakePlugin.cpp:52
+#: src/plugins/render/earthquake/EarthquakePlugin.cpp:48
 #, fuzzy
 #| msgctxt "the planet"
 #| msgid "Earth"
 msgid "Earthquakes"
 msgstr "Daegne"
 
-#: src/plugins/render/earthquake/EarthquakePlugin.cpp:57
+#: src/plugins/render/earthquake/EarthquakePlugin.cpp:53
 #, fuzzy
 #| msgid "&Earth"
 msgid "&Earthquakes"
 msgstr "&Daegne"
 
-#: src/plugins/render/earthquake/EarthquakePlugin.cpp:62
+#: src/plugins/render/earthquake/EarthquakePlugin.cpp:63
 msgid "Shows earthquakes on the map."
 msgstr ""
 
@@ -690,55 +690,55 @@ msgstr ""
 "Tos les fitchîs sopoirtés (*.gpx *.kml);;dinêyes GPS (*.gpx);;KML di Google "
 "Earth (*.kml)"
 
-#: src/plugins/render/graticule/GraticulePlugin.cpp:72
+#: src/plugins/render/graticule/GraticulePlugin.cpp:68
 msgid "Coordinate Grid"
 msgstr "Grile des cordinêyes"
 
-#: src/plugins/render/graticule/GraticulePlugin.cpp:77
+#: src/plugins/render/graticule/GraticulePlugin.cpp:73
 msgid "Coordinate &Grid"
 msgstr "&Grile des cordinêyes"
 
-#: src/plugins/render/graticule/GraticulePlugin.cpp:87
+#: src/plugins/render/graticule/GraticulePlugin.cpp:88
 msgid "A plugin that shows a coordinate grid."
 msgstr "On tchôke-divins k' håyene ene grile des cordinêyes."
 
-#: src/plugins/render/graticule/GraticulePlugin.cpp:195
+#: src/plugins/render/graticule/GraticulePlugin.cpp:207
 msgid "Please choose the color for the coordinate grid."
 msgstr ""
 
-#: src/plugins/render/graticule/GraticulePlugin.cpp:207
+#: src/plugins/render/graticule/GraticulePlugin.cpp:219
 msgid "Please choose the color for the tropic circles."
 msgstr ""
 
-#: src/plugins/render/graticule/GraticulePlugin.cpp:219
+#: src/plugins/render/graticule/GraticulePlugin.cpp:231
 msgid "Please choose the color for the equator."
 msgstr ""
 
-#: src/plugins/render/graticule/GraticulePlugin.cpp:349
+#: src/plugins/render/graticule/GraticulePlugin.cpp:361
 msgid "Equator"
 msgstr ""
 
-#: src/plugins/render/graticule/GraticulePlugin.cpp:352
+#: src/plugins/render/graticule/GraticulePlugin.cpp:364
 msgid "Prime Meridian"
 msgstr ""
 
-#: src/plugins/render/graticule/GraticulePlugin.cpp:353
+#: src/plugins/render/graticule/GraticulePlugin.cpp:365
 msgid "Antimeridian"
 msgstr ""
 
-#: src/plugins/render/graticule/GraticulePlugin.cpp:367
+#: src/plugins/render/graticule/GraticulePlugin.cpp:379
 msgid "Tropic of Cancer"
 msgstr "Tropike do Crantche"
 
-#: src/plugins/render/graticule/GraticulePlugin.cpp:368
+#: src/plugins/render/graticule/GraticulePlugin.cpp:380
 msgid "Tropic of Capricorn"
 msgstr "Tropike do Gadot"
 
-#: src/plugins/render/graticule/GraticulePlugin.cpp:371
+#: src/plugins/render/graticule/GraticulePlugin.cpp:383
 msgid "Arctic Circle"
 msgstr "Ceje årtike"
 
-#: src/plugins/render/graticule/GraticulePlugin.cpp:372
+#: src/plugins/render/graticule/GraticulePlugin.cpp:384
 msgid "Antarctic Circle"
 msgstr "Ceke antårtike"
 
@@ -750,27 +750,22 @@ msgstr ""
 msgid "&Inhibit Screensaver"
 msgstr ""
 
-#: src/plugins/render/inhibit-screensaver/InhibitScreensaverPlugin.cpp:94
+#: src/plugins/render/inhibit-screensaver/InhibitScreensaverPlugin.cpp:99
 msgid "Inhibits the screensaver during turn-by-turn navigation"
 msgstr ""
 
 #: src/plugins/render/mapscale/MapScaleFloatItem.cpp:47
-#: src/plugins/render/mapscale/MapScaleFloatItem.cpp:219
+#: src/plugins/render/mapscale/MapScaleFloatItem.cpp:232
 #: src/plugins/render/elevationprofile/ElevationProfilePlotAxis.cpp:142
-#: src/lib/MarbleWidget.cpp:1192
+#: src/lib/MarbleWidget.cpp:1194
 msgid "km"
 msgstr "km"
 
-#: src/plugins/render/mapscale/MapScaleFloatItem.cpp:58
-#, fuzzy
-msgid "Original Developer"
-msgstr "<b>Diswalpeus</b>"
-
-#: src/plugins/render/mapscale/MapScaleFloatItem.cpp:73
+#: src/plugins/render/mapscale/MapScaleFloatItem.cpp:68
 msgid "Scale Bar"
 msgstr "Båre di schåle"
 
-#: src/plugins/render/mapscale/MapScaleFloatItem.cpp:78
+#: src/plugins/render/mapscale/MapScaleFloatItem.cpp:73
 msgid "&Scale Bar"
 msgstr "Båre di &schåle"
 
@@ -778,38 +773,43 @@ msgstr "Båre di &schåle"
 msgid "This is a float item that provides a map scale."
 msgstr "Çouchal est on cayet flotant k' dene ene schåle del mape."
 
-#: src/plugins/render/mapscale/MapScaleFloatItem.cpp:223
-#: src/plugins/render/gpsinfo/GpsInfo.cpp:122
+#: src/plugins/render/mapscale/MapScaleFloatItem.cpp:99
+#, fuzzy
+msgid "Original Developer"
+msgstr "<b>Diswalpeus</b>"
+
+#: src/plugins/render/mapscale/MapScaleFloatItem.cpp:236
+#: src/plugins/render/gpsinfo/GpsInfo.cpp:134
 #: src/plugins/render/elevationprofile/ElevationProfilePlotAxis.cpp:145
 #: src/lib/CurrentLocationWidget.cpp:267
 msgid "m"
 msgstr "m"
 
-#: src/plugins/render/mapscale/MapScaleFloatItem.cpp:229
+#: src/plugins/render/mapscale/MapScaleFloatItem.cpp:242
 #: src/plugins/render/elevationprofile/ElevationProfilePlotAxis.cpp:152
-#: src/lib/MarbleWidget.cpp:1196
+#: src/lib/MarbleWidget.cpp:1198
 #, fuzzy
 #| msgid "m"
 msgid "mi"
 msgstr "m"
 
-#: src/plugins/render/mapscale/MapScaleFloatItem.cpp:341
-#: src/plugins/render/elevationprofile/ElevationProfileFloatItem.cpp:464
+#: src/plugins/render/mapscale/MapScaleFloatItem.cpp:354
+#: src/plugins/render/elevationprofile/ElevationProfileFloatItem.cpp:476
 #: src/lib/AbstractFloatItem.cpp:232
 #, fuzzy
 msgid "&Configure..."
 msgstr "Apontyî l' contrôle do solea"
 
-#: src/plugins/render/mapscale/MapScaleFloatItem.cpp:347
+#: src/plugins/render/mapscale/MapScaleFloatItem.cpp:360
 msgid "&Ratio Scale"
 msgstr ""
 
-#: src/plugins/render/navigation/NavigationFloatItem.cpp:77
+#: src/plugins/render/navigation/NavigationFloatItem.cpp:72
 #: src/lib/MarbleControlBox.cpp:167 src/lib/QtMarbleConfigDialog.cpp:139
 msgid "Navigation"
 msgstr "Naiviaedje"
 
-#: src/plugins/render/navigation/NavigationFloatItem.cpp:82
+#: src/plugins/render/navigation/NavigationFloatItem.cpp:77
 msgid "&Navigation"
 msgstr "&Naiviaedje"
 
@@ -817,15 +817,15 @@ msgstr "&Naiviaedje"
 msgid "A mouse control to zoom and move the map"
 msgstr "On contrôle del sori po zoumer eyet bodjî l' mape"
 
-#: src/plugins/render/opendesktop/OpenDesktopPlugin.cpp:50
+#: src/plugins/render/opendesktop/OpenDesktopPlugin.cpp:46
 msgid "OpenDesktop Items"
 msgstr ""
 
-#: src/plugins/render/opendesktop/OpenDesktopPlugin.cpp:55
+#: src/plugins/render/opendesktop/OpenDesktopPlugin.cpp:51
 msgid "&OpenDesktop Community"
 msgstr ""
 
-#: src/plugins/render/opendesktop/OpenDesktopPlugin.cpp:60
+#: src/plugins/render/opendesktop/OpenDesktopPlugin.cpp:61
 msgid ""
 "Shows OpenDesktop users' avatars and some extra information about them on "
 "the map."
@@ -943,25 +943,25 @@ msgstr "L' aberwetaedje a fwait berwete : %1."
 msgid "Download Osm File for selected area"
 msgstr ""
 
-#: src/plugins/render/overviewmap/OverviewMap.cpp:68
+#: src/plugins/render/overviewmap/OverviewMap.cpp:64
 msgid "Overview Map"
 msgstr "Mwaisse vuwe del mape"
 
-#: src/plugins/render/overviewmap/OverviewMap.cpp:73
+#: src/plugins/render/overviewmap/OverviewMap.cpp:69
 msgid "&Overview Map"
 msgstr "&Mwaisse vuwe del mape"
 
-#: src/plugins/render/overviewmap/OverviewMap.cpp:83
+#: src/plugins/render/overviewmap/OverviewMap.cpp:84
 msgid "This is a float item that provides an overview map."
 msgstr "Çouchal est on cayet flotant ki dene ene mwaisse vuwe del mape."
 
-#: src/plugins/render/overviewmap/OverviewMap.cpp:462
+#: src/plugins/render/overviewmap/OverviewMap.cpp:474
 #, fuzzy
 #| msgid "Overview Map"
 msgid "Choose Overview Map"
 msgstr "Mwaisse vuwe del mape"
 
-#: src/plugins/render/overviewmap/OverviewMap.cpp:494
+#: src/plugins/render/overviewmap/OverviewMap.cpp:506
 msgid "Please choose the color for the position indicator"
 msgstr ""
 
@@ -974,7 +974,7 @@ msgid "&Panoramio"
 msgstr "&Panoramio"
 
 #: src/plugins/render/panoramio/PanoramioPlugin.cpp:41
-#: src/plugins/render/photo/PhotoPlugin.cpp:62
+#: src/plugins/render/photo/PhotoPlugin.cpp:63
 msgid ""
 "Automatically downloads images from around the world in preference to their "
 "popularity"
@@ -994,56 +994,56 @@ msgstr ""
 msgid "The file is not a valid Flickr answer."
 msgstr "Li fitchî n' est nén on fitchî DGML 2.0 valåbe"
 
-#: src/plugins/render/photo/PhotoPlugin.cpp:52
+#: src/plugins/render/photo/PhotoPlugin.cpp:48
 msgid "Photos"
 msgstr "Fotos"
 
-#: src/plugins/render/photo/PhotoPlugin.cpp:57
+#: src/plugins/render/photo/PhotoPlugin.cpp:53
 msgid "&Photos"
 msgstr "&Fotos"
 
-#: src/plugins/render/positionmarker/PositionMarker.cpp:89
+#: src/plugins/render/positionmarker/PositionMarker.cpp:81
 msgid "Position Marker"
 msgstr ""
 
-#: src/plugins/render/positionmarker/PositionMarker.cpp:94
+#: src/plugins/render/positionmarker/PositionMarker.cpp:86
 msgid "&Position Marker"
 msgstr ""
 
-#: src/plugins/render/positionmarker/PositionMarker.cpp:104
+#: src/plugins/render/positionmarker/PositionMarker.cpp:101
 msgid "draws a marker at the current position"
 msgstr ""
 
-#: src/plugins/render/positionmarker/PositionMarker.cpp:343
-#: src/plugins/render/positionmarker/PositionMarker.cpp:462
+#: src/plugins/render/positionmarker/PositionMarker.cpp:354
+#: src/plugins/render/positionmarker/PositionMarker.cpp:473
 #, qt-format
 msgid "Cursor Size: %1"
 msgstr ""
 
-#: src/plugins/render/positionmarker/PositionMarker.cpp:392
+#: src/plugins/render/positionmarker/PositionMarker.cpp:403
 msgid "Choose Custom Cursor"
 msgstr ""
 
-#: src/plugins/render/positionmarker/PositionMarker.cpp:413
+#: src/plugins/render/positionmarker/PositionMarker.cpp:424
 #, fuzzy
 msgid "Position Marker Plugin"
 msgstr "Tchôke-divins GeoRender"
 
-#: src/plugins/render/positionmarker/PositionMarker.cpp:413
+#: src/plugins/render/positionmarker/PositionMarker.cpp:424
 msgid ""
 "Unable to load custom cursor, default cursor will be used. Make sure this is "
 "a valid image file."
 msgstr ""
 
-#: src/plugins/render/positionmarker/PositionMarker.cpp:437
+#: src/plugins/render/positionmarker/PositionMarker.cpp:448
 msgid "Please choose a color"
 msgstr ""
 
-#: src/plugins/render/progress/ProgressFloatItem.cpp:92
+#: src/plugins/render/progress/ProgressFloatItem.cpp:87
 msgid "Download Progress Indicator"
 msgstr ""
 
-#: src/plugins/render/progress/ProgressFloatItem.cpp:97
+#: src/plugins/render/progress/ProgressFloatItem.cpp:92
 #, fuzzy
 #| msgid "Download finished."
 msgid "&Download Progress"
@@ -1074,7 +1074,7 @@ msgid ""
 "Arrived at destination. <a href=\"#reverse\">Calculate the way back.</a>"
 msgstr ""
 
-#: src/plugins/render/routing/RoutingPlugin.cpp:471
+#: src/plugins/render/routing/RoutingPlugin.cpp:466
 #, fuzzy
 #| msgid "Mountain"
 msgid "&Routing"
@@ -1100,65 +1100,65 @@ msgid ""
 "degrees <br />Period: %6 minutes <br />Semi-major axis: %7 km"
 msgstr ""
 
-#: src/plugins/render/satellites/SatellitesPlugin.cpp:43
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:40
 msgid ""
 "Satellites orbital elements from <a href=\"http://www.celestrak.com\">http://"
 "www.celestrak.com</a>"
 msgstr ""
 
-#: src/plugins/render/satellites/SatellitesPlugin.cpp:78
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:75
 msgid "Satellites"
 msgstr "Satelites"
 
-#: src/plugins/render/satellites/SatellitesPlugin.cpp:88
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:85
 msgid "&Satellites"
 msgstr "&Satelites"
 
-#: src/plugins/render/satellites/SatellitesPlugin.cpp:93
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:95
 #, fuzzy
 #| msgid "This plugin displays TBD satellites."
 msgid "This plugin displays satellites and their orbits."
 msgstr "Ci tchôke-divins håyene les satelites TBD."
 
-#: src/plugins/render/satellites/SatellitesPlugin.cpp:243
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:256
 msgid "Special-Interest Satellites"
 msgstr ""
 
-#: src/plugins/render/satellites/SatellitesPlugin.cpp:252
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:265
 msgid "Weather & Earth Resources Satellites"
 msgstr ""
 
-#: src/plugins/render/satellites/SatellitesPlugin.cpp:262
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:275
 msgid "Communications Satellites"
 msgstr ""
 
-#: src/plugins/render/satellites/SatellitesPlugin.cpp:276
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:289
 #, fuzzy
 #| msgid "Show Navigation Panel"
 msgid "Navigation Satellites"
 msgstr "Mostrer l' panea di naiviaedje"
 
-#: src/plugins/render/satellites/SatellitesPlugin.cpp:285
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:298
 #, fuzzy
 #| msgid "Satellites"
 msgid "Scientific Satellites"
 msgstr "Satelites"
 
-#: src/plugins/render/satellites/SatellitesPlugin.cpp:292
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:305
 msgid "Miscellaneous Satellites"
 msgstr ""
 
-#: src/plugins/render/stars/StarsPlugin.cpp:56
+#: src/plugins/render/stars/StarsPlugin.cpp:53
 #, fuzzy
 #| msgid "&Stars"
 msgid "Stars"
 msgstr "&Sitoeles"
 
-#: src/plugins/render/stars/StarsPlugin.cpp:61
+#: src/plugins/render/stars/StarsPlugin.cpp:58
 msgid "&Stars"
 msgstr "&Sitoeles"
 
-#: src/plugins/render/stars/StarsPlugin.cpp:71
+#: src/plugins/render/stars/StarsPlugin.cpp:73
 msgid "A plugin that shows the Starry Sky."
 msgstr "On tchôke-divins k' håyene li Stoelé Cîr."
 
@@ -1329,15 +1329,15 @@ msgid "WSW"
 msgstr ""
 
 #: src/plugins/render/weather/WeatherData.cpp:591
-#: src/plugins/render/gpsinfo/GpsInfo.cpp:120
-#: src/plugins/render/speedometer/Speedometer.cpp:119
+#: src/plugins/render/gpsinfo/GpsInfo.cpp:132
+#: src/plugins/render/speedometer/Speedometer.cpp:131
 #: src/lib/CurrentLocationWidget.cpp:265
 msgid "km/h"
 msgstr "km/e"
 
 #: src/plugins/render/weather/WeatherData.cpp:594
-#: src/plugins/render/gpsinfo/GpsInfo.cpp:111
-#: src/plugins/render/speedometer/Speedometer.cpp:113
+#: src/plugins/render/gpsinfo/GpsInfo.cpp:123
+#: src/plugins/render/speedometer/Speedometer.cpp:125
 #, fuzzy
 #| msgid "km"
 msgid "mph"
@@ -1450,7 +1450,7 @@ msgid ""
 msgstr ""
 
 #: src/plugins/render/weather/WeatherItem.cpp:55
-#: src/plugins/render/weather/WeatherPlugin.cpp:88
+#: src/plugins/render/weather/WeatherPlugin.cpp:84
 #, fuzzy
 msgid "Weather"
 msgstr "Traitoe"
@@ -1527,17 +1527,17 @@ msgstr "Eplaeçmint do moumint"
 msgid "Forecasts"
 msgstr ""
 
-#: src/plugins/render/weather/WeatherPlugin.cpp:49
+#: src/plugins/render/weather/WeatherPlugin.cpp:45
 msgid ""
 "Supported by backstage.bbc.co.uk.\n"
 "Weather data from UK MET Office"
 msgstr ""
 
-#: src/plugins/render/weather/WeatherPlugin.cpp:93
+#: src/plugins/render/weather/WeatherPlugin.cpp:89
 msgid "&Weather"
 msgstr ""
 
-#: src/plugins/render/weather/WeatherPlugin.cpp:98
+#: src/plugins/render/weather/WeatherPlugin.cpp:99
 msgid ""
 "Download weather information from many weather stations all around the world"
 msgstr ""
@@ -1556,35 +1556,35 @@ msgctxt ""
 msgid "<b>%1</b><br>%2"
 msgstr ""
 
-#: src/plugins/render/wikipedia/WikipediaPlugin.cpp:40
+#: src/plugins/render/wikipedia/WikipediaPlugin.cpp:37
 msgid ""
 "Geo positions by geonames.org\n"
 "Texts by wikipedia.org"
 msgstr ""
 
-#: src/plugins/render/wikipedia/WikipediaPlugin.cpp:79
+#: src/plugins/render/wikipedia/WikipediaPlugin.cpp:76
 msgid "Wikipedia Articles"
 msgstr "Årtikes di Wikipedia"
 
-#: src/plugins/render/wikipedia/WikipediaPlugin.cpp:84
+#: src/plugins/render/wikipedia/WikipediaPlugin.cpp:81
 msgid "&Wikipedia"
 msgstr "&Wikipedia"
 
-#: src/plugins/render/wikipedia/WikipediaPlugin.cpp:89
+#: src/plugins/render/wikipedia/WikipediaPlugin.cpp:91
 msgid ""
 "Automatically downloads Wikipedia articles and shows them on the right "
 "position on the map"
 msgstr ""
 
-#: src/plugins/render/sun/SunPlugin.cpp:53
-#: src/plugins/render/sun/SunPlugin.cpp:58
+#: src/plugins/render/sun/SunPlugin.cpp:47
+#: src/plugins/render/sun/SunPlugin.cpp:52
 #, fuzzy
 #| msgctxt "the earth's star"
 #| msgid "Sun"
 msgid "Sun"
 msgstr "Solea"
 
-#: src/plugins/render/sun/SunPlugin.cpp:68
+#: src/plugins/render/sun/SunPlugin.cpp:67
 #, fuzzy
 #| msgid "A plugin that shows the Starry Sky."
 msgid "A plugin that shows the Sun."
@@ -1626,169 +1626,169 @@ msgstr ""
 msgid "Shows caches from OpenCaching.de on the screen."
 msgstr ""
 
-#: src/plugins/render/gpsinfo/GpsInfo.cpp:49
+#: src/plugins/render/gpsinfo/GpsInfo.cpp:45
 msgid "GpsInfo"
 msgstr ""
 
-#: src/plugins/render/gpsinfo/GpsInfo.cpp:54
+#: src/plugins/render/gpsinfo/GpsInfo.cpp:50
 msgid "&GpsInfo"
 msgstr ""
 
-#: src/plugins/render/gpsinfo/GpsInfo.cpp:64
+#: src/plugins/render/gpsinfo/GpsInfo.cpp:65
 #, fuzzy
 #| msgid "This is a float item that provides a compass."
 msgid "This is a float item that provides Gps Information."
 msgstr "Çouchal est on cayet flotant ki dene ene rôze des vints."
 
-#: src/plugins/render/gpsinfo/GpsInfo.cpp:113
+#: src/plugins/render/gpsinfo/GpsInfo.cpp:125
 #: src/plugins/render/elevationprofile/ElevationProfilePlotAxis.cpp:155
 #: src/lib/CurrentLocationWidget.cpp:275
 msgid "ft"
 msgstr "pî"
 
-#: src/plugins/render/elevationprofile/ElevationProfileFloatItem.cpp:103
+#: src/plugins/render/elevationprofile/ElevationProfileFloatItem.cpp:99
 #, fuzzy
 #| msgid "Elevation extreme"
 msgid "Elevation Profile"
 msgstr "Nouzome hôteur"
 
-#: src/plugins/render/elevationprofile/ElevationProfileFloatItem.cpp:108
+#: src/plugins/render/elevationprofile/ElevationProfileFloatItem.cpp:104
 #, fuzzy
 #| msgid "Elevation extreme"
 msgid "&Elevation Profile"
 msgstr "Nouzome hôteur"
 
-#: src/plugins/render/elevationprofile/ElevationProfileFloatItem.cpp:118
+#: src/plugins/render/elevationprofile/ElevationProfileFloatItem.cpp:119
 #, fuzzy
 #| msgid "This is a float item that provides an overview map."
 msgid "This is a float item that provides a route/track elevation profile."
 msgstr "Çouchal est on cayet flotant ki dene ene mwaisse vuwe del mape."
 
-#: src/plugins/render/elevationprofile/ElevationProfileFloatItem.cpp:179
+#: src/plugins/render/elevationprofile/ElevationProfileFloatItem.cpp:191
 msgid "Create a route to view its elevation profile."
 msgstr ""
 
-#: src/plugins/render/elevationprofile/ElevationProfileFloatItem.cpp:186
+#: src/plugins/render/elevationprofile/ElevationProfileFloatItem.cpp:198
 msgid ""
 "Not enough points in the current viewport.\n"
 "Try to disable 'Zoom to viewport'."
 msgstr ""
 
-#: src/plugins/render/elevationprofile/ElevationProfileFloatItem.cpp:269
+#: src/plugins/render/elevationprofile/ElevationProfileFloatItem.cpp:281
 #, qt-format
 msgid "Difference: %1 %2"
 msgstr ""
 
-#: src/plugins/render/elevationprofile/ElevationProfileFloatItem.cpp:470
+#: src/plugins/render/elevationprofile/ElevationProfileFloatItem.cpp:482
 msgid "&Zoom to viewport"
 msgstr ""
 
-#: src/plugins/render/speedometer/Speedometer.cpp:55
+#: src/plugins/render/speedometer/Speedometer.cpp:51
 msgid "Speedometer"
 msgstr ""
 
-#: src/plugins/render/speedometer/Speedometer.cpp:60
+#: src/plugins/render/speedometer/Speedometer.cpp:56
 msgid "&Speedometer"
 msgstr ""
 
-#: src/plugins/render/speedometer/Speedometer.cpp:70
+#: src/plugins/render/speedometer/Speedometer.cpp:71
 msgid "Display the current cruising speed."
 msgstr ""
 
-#: src/plugins/render/measure/MeasureToolPlugin.cpp:79
+#: src/plugins/render/measure/MeasureToolPlugin.cpp:70
 #, fuzzy
 #| msgid "Add &Measure Point"
 msgid "Measure Tool"
 msgstr "Radjouter pont d' &muzuraedje"
 
-#: src/plugins/render/measure/MeasureToolPlugin.cpp:84
+#: src/plugins/render/measure/MeasureToolPlugin.cpp:75
 #, fuzzy
 #| msgid "Add &Measure Point"
 msgid "&Measure Tool"
 msgstr "Radjouter pont d' &muzuraedje"
 
-#: src/plugins/render/measure/MeasureToolPlugin.cpp:94
+#: src/plugins/render/measure/MeasureToolPlugin.cpp:90
 msgid "Measure distances between two or more points."
 msgstr ""
 
-#: src/plugins/render/measure/MeasureToolPlugin.cpp:216
+#: src/plugins/render/measure/MeasureToolPlugin.cpp:228
 #: src/lib/PlacemarkInfoDialog.cpp:159
 #, qt-format
 msgid "%1 km"
 msgstr "%1 km"
 
-#: src/plugins/render/measure/MeasureToolPlugin.cpp:219
+#: src/plugins/render/measure/MeasureToolPlugin.cpp:231
 #: src/lib/PlacemarkInfoDialog.cpp:158
 #, qt-format
 msgid "%1 m"
 msgstr "%1 m"
 
-#: src/plugins/render/measure/MeasureToolPlugin.cpp:288
+#: src/plugins/render/measure/MeasureToolPlugin.cpp:300
 #, qt-format
 msgid "Total Distance: %1 km"
 msgstr "Distance totåle : %1 km"
 
-#: src/plugins/render/measure/MeasureToolPlugin.cpp:291
+#: src/plugins/render/measure/MeasureToolPlugin.cpp:303
 #, qt-format
 msgid "Total Distance: %1 m"
 msgstr "Distance totåle : %1 m"
 
-#: src/plugins/render/measure/MeasureToolPlugin.cpp:334
+#: src/plugins/render/measure/MeasureToolPlugin.cpp:346
 msgid "Add &Measure Point"
 msgstr "Radjouter pont d' &muzuraedje"
 
-#: src/plugins/render/measure/MeasureToolPlugin.cpp:335
+#: src/plugins/render/measure/MeasureToolPlugin.cpp:347
 #, fuzzy
 msgid "Remove &Last Measure Point"
 msgstr "&Oister des ponts d' muzuraedje"
 
-#: src/plugins/render/measure/MeasureToolPlugin.cpp:337
+#: src/plugins/render/measure/MeasureToolPlugin.cpp:349
 msgid "&Remove Measure Points"
 msgstr "&Oister des ponts d' muzuraedje"
 
-#: src/plugins/render/postalcode/PostalCodePlugin.cpp:44
-#: src/plugins/render/postalcode/PostalCodePlugin.cpp:49
+#: src/plugins/render/postalcode/PostalCodePlugin.cpp:40
+#: src/plugins/render/postalcode/PostalCodePlugin.cpp:45
 msgid "Postal Codes"
 msgstr ""
 
-#: src/plugins/render/postalcode/PostalCodePlugin.cpp:54
+#: src/plugins/render/postalcode/PostalCodePlugin.cpp:66
 msgid "Shows postal codes of the area on the map."
 msgstr ""
 
-#: src/plugins/runner/gosmore/GosmorePlugin.cpp:26
+#: src/plugins/runner/gosmore/GosmorePlugin.cpp:30
 msgid "Gosmore"
 msgstr ""
 
-#: src/plugins/runner/gosmore/GosmorePlugin.cpp:28
-msgid "Retrieves routes from gosmore"
-msgstr ""
-
-#: src/plugins/runner/gosmore/GosmorePlugin.cpp:29
+#: src/plugins/runner/gosmore/GosmorePlugin.cpp:35
 #, fuzzy
 #| msgid "Mountain"
 msgid "Gosmore Routing"
 msgstr "Montinne"
 
-#: src/plugins/runner/hostip/HostipPlugin.cpp:24
+#: src/plugins/runner/gosmore/GosmorePlugin.cpp:50
+msgid "Retrieves routes from gosmore"
+msgstr ""
+
+#: src/plugins/runner/hostip/HostipPlugin.cpp:28
 msgid "Hostip.info"
 msgstr ""
 
-#: src/plugins/runner/hostip/HostipPlugin.cpp:26
-msgid "Host name and IP geolocation search using the hostip.info service"
-msgstr ""
-
-#: src/plugins/runner/hostip/HostipPlugin.cpp:27
+#: src/plugins/runner/hostip/HostipPlugin.cpp:33
 msgid "Hostip.info Search"
 msgstr ""
 
-#: src/plugins/runner/latlon/LatLonPlugin.cpp:20
-#: src/plugins/runner/latlon/LatLonPlugin.cpp:23
+#: src/plugins/runner/hostip/HostipPlugin.cpp:48
+msgid "Host name and IP geolocation search using the hostip.info service"
+msgstr ""
+
+#: src/plugins/runner/latlon/LatLonPlugin.cpp:24
+#: src/plugins/runner/latlon/LatLonPlugin.cpp:29
 #, fuzzy
 #| msgid "Copy Coordinates"
 msgid "Geographic Coordinates"
 msgstr "Copyî cordinêyes"
 
-#: src/plugins/runner/latlon/LatLonPlugin.cpp:22
+#: src/plugins/runner/latlon/LatLonPlugin.cpp:44
 msgid "Direct input of geographic coordinates"
 msgstr ""
 
@@ -1984,20 +1984,6 @@ msgstr ""
 msgid "taxi"
 msgstr "Clintcheye"
 
-#: src/plugins/runner/local-osm-search/LocalOsmSearchPlugin.cpp:27
-msgid "Local OSM Search"
-msgstr ""
-
-#: src/plugins/runner/local-osm-search/LocalOsmSearchPlugin.cpp:29
-msgid "Searches for addresses and points of interest in offline maps."
-msgstr ""
-
-#: src/plugins/runner/local-osm-search/LocalOsmSearchPlugin.cpp:30
-#, fuzzy
-#| msgid "OpenStreetMap"
-msgid "Offline OpenStreetMap Search"
-msgstr "OpenStreetMap"
-
 #: src/plugins/runner/local-osm-search/OsmDatabase.cpp:228
 #: src/plugins/runner/local-osm-search/OsmDatabase.cpp:230
 #, fuzzy
@@ -2043,16 +2029,30 @@ msgstr "Levant"
 msgid "north-east"
 msgstr ""
 
-#: src/plugins/runner/localdatabase/LocalDatabasePlugin.cpp:20
+#: src/plugins/runner/local-osm-search/LocalOsmSearchPlugin.cpp:35
+msgid "Local OSM Search"
+msgstr ""
+
+#: src/plugins/runner/local-osm-search/LocalOsmSearchPlugin.cpp:40
+#, fuzzy
+#| msgid "OpenStreetMap"
+msgid "Offline OpenStreetMap Search"
+msgstr "OpenStreetMap"
+
+#: src/plugins/runner/local-osm-search/LocalOsmSearchPlugin.cpp:55
+msgid "Searches for addresses and points of interest in offline maps."
+msgstr ""
+
+#: src/plugins/runner/localdatabase/LocalDatabasePlugin.cpp:24
 msgid "Local Database"
 msgstr ""
 
-#: src/plugins/runner/localdatabase/LocalDatabasePlugin.cpp:22
-msgid "Searches the internal Marble database for placemarks"
+#: src/plugins/runner/localdatabase/LocalDatabasePlugin.cpp:29
+msgid "Local Database Search"
 msgstr ""
 
-#: src/plugins/runner/localdatabase/LocalDatabasePlugin.cpp:23
-msgid "Local Database Search"
+#: src/plugins/runner/localdatabase/LocalDatabasePlugin.cpp:44
+msgid "Searches the internal Marble database for placemarks"
 msgstr ""
 
 #: src/plugins/runner/monav/MonavMapsModel.cpp:45
@@ -2110,112 +2110,112 @@ msgstr "&Copyî mape"
 msgid "Nothing to do."
 msgstr ""
 
-#: src/plugins/runner/monav/MonavPlugin.cpp:224
+#: src/plugins/runner/monav/MonavPlugin.cpp:229
+msgid "No offline maps installed yet."
+msgstr ""
+
+#: src/plugins/runner/monav/MonavPlugin.cpp:232
+msgid "The monav routing daemon does not seem to be installed on your system."
+msgstr ""
+
+#: src/plugins/runner/monav/MonavPlugin.cpp:245
 #, fuzzy
 #| msgctxt "the earth's moon"
 #| msgid "Moon"
 msgid "Monav"
 msgstr "Lune"
 
-#: src/plugins/runner/monav/MonavPlugin.cpp:226
-msgid "Offline routing using the monav daemon"
-msgstr ""
-
-#: src/plugins/runner/monav/MonavPlugin.cpp:227
+#: src/plugins/runner/monav/MonavPlugin.cpp:250
 #, fuzzy
 #| msgid "Mountain"
 msgid "Monav Routing"
 msgstr "Montinne"
 
-#: src/plugins/runner/monav/MonavPlugin.cpp:233
-msgid "No offline maps installed yet."
+#: src/plugins/runner/monav/MonavPlugin.cpp:265
+msgid "Offline routing using the monav daemon"
 msgstr ""
 
-#: src/plugins/runner/monav/MonavPlugin.cpp:236
-msgid "The monav routing daemon does not seem to be installed on your system."
-msgstr ""
-
-#: src/plugins/runner/nominatim/NominatimPlugin.cpp:22
+#: src/plugins/runner/nominatim/NominatimPlugin.cpp:26
 msgid "OSM Nominatim"
 msgstr ""
 
-#: src/plugins/runner/nominatim/NominatimPlugin.cpp:24
-msgid "Searches for placemarks using the OpenStreetMap Nominatim service"
-msgstr ""
-
-#: src/plugins/runner/nominatim/NominatimPlugin.cpp:25
+#: src/plugins/runner/nominatim/NominatimPlugin.cpp:31
 #, fuzzy
 #| msgid "OpenStreetMap"
 msgid "OpenStreetMap Nominatim Search"
 msgstr "OpenStreetMap"
 
+#: src/plugins/runner/nominatim/NominatimPlugin.cpp:46
+msgid "Searches for placemarks using the OpenStreetMap Nominatim service"
+msgstr ""
+
 #: src/plugins/runner/openrouteservice/OpenRouteServicePlugin.cpp:24
-msgid "OpenRouteService"
-msgstr ""
-
-#: src/plugins/runner/openrouteservice/OpenRouteServicePlugin.cpp:26
-msgid "Routing in Europe using openrouteservice.org"
-msgstr ""
-
-#: src/plugins/runner/openrouteservice/OpenRouteServicePlugin.cpp:27
-#: src/plugins/runner/yours/YoursPlugin.cpp:25
-#: src/plugins/runner/mapquest/MapQuestPlugin.cpp:27
+#: src/plugins/runner/yours/YoursPlugin.cpp:22
+#: src/plugins/runner/mapquest/MapQuestPlugin.cpp:24
 msgid "This service requires an Internet connection."
 msgstr ""
 
-#: src/plugins/runner/openrouteservice/OpenRouteServicePlugin.cpp:28
+#: src/plugins/runner/openrouteservice/OpenRouteServicePlugin.cpp:29
+msgid "OpenRouteService"
+msgstr ""
+
+#: src/plugins/runner/openrouteservice/OpenRouteServicePlugin.cpp:34
 msgid "OpenRouteService Routing"
 msgstr ""
 
-#: src/plugins/runner/openrouteservice/OpenRouteServicePlugin.cpp:46
-#: src/plugins/runner/mapquest/MapQuestPlugin.cpp:46
+#: src/plugins/runner/openrouteservice/OpenRouteServicePlugin.cpp:49
+msgid "Routing in Europe using openrouteservice.org"
+msgstr ""
+
+#: src/plugins/runner/openrouteservice/OpenRouteServicePlugin.cpp:78
+#: src/plugins/runner/mapquest/MapQuestPlugin.cpp:78
 msgid "Car (fastest way)"
 msgstr ""
 
-#: src/plugins/runner/openrouteservice/OpenRouteServicePlugin.cpp:47
-#: src/plugins/runner/mapquest/MapQuestPlugin.cpp:47
+#: src/plugins/runner/openrouteservice/OpenRouteServicePlugin.cpp:79
+#: src/plugins/runner/mapquest/MapQuestPlugin.cpp:79
 msgid "Car (shortest way)"
 msgstr ""
 
-#: src/plugins/runner/openrouteservice/OpenRouteServicePlugin.cpp:48
+#: src/plugins/runner/openrouteservice/OpenRouteServicePlugin.cpp:80
 msgid "Pedestrian (shortest way)"
 msgstr ""
 
-#: src/plugins/runner/openrouteservice/OpenRouteServicePlugin.cpp:49
+#: src/plugins/runner/openrouteservice/OpenRouteServicePlugin.cpp:81
 msgid "Bicycle (shortest track)"
 msgstr ""
 
-#: src/plugins/runner/openrouteservice/OpenRouteServicePlugin.cpp:50
+#: src/plugins/runner/openrouteservice/OpenRouteServicePlugin.cpp:82
 msgid "Bicycle (Mountainbike)"
 msgstr ""
 
-#: src/plugins/runner/openrouteservice/OpenRouteServicePlugin.cpp:51
+#: src/plugins/runner/openrouteservice/OpenRouteServicePlugin.cpp:83
 msgid "Bicycle (Racer)"
 msgstr ""
 
-#: src/plugins/runner/openrouteservice/OpenRouteServicePlugin.cpp:52
+#: src/plugins/runner/openrouteservice/OpenRouteServicePlugin.cpp:84
 msgid "Bicycle (safest track)"
 msgstr ""
 
-#: src/plugins/runner/openrouteservice/OpenRouteServicePlugin.cpp:53
+#: src/plugins/runner/openrouteservice/OpenRouteServicePlugin.cpp:85
 msgid "Bicycle (preferred Cycleway/-route)"
 msgstr ""
 
-#: src/plugins/runner/routino/RoutinoPlugin.cpp:25
+#: src/plugins/runner/routino/RoutinoPlugin.cpp:29
 #, fuzzy
 #| msgid "Mountain"
 msgid "Routino"
 msgstr "Montinne"
 
-#: src/plugins/runner/routino/RoutinoPlugin.cpp:27
-msgid "Retrieves routes from routino"
-msgstr ""
-
-#: src/plugins/runner/routino/RoutinoPlugin.cpp:28
+#: src/plugins/runner/routino/RoutinoPlugin.cpp:34
 #, fuzzy
 #| msgid "Mountain"
 msgid "Routino Routing"
 msgstr "Montinne"
+
+#: src/plugins/runner/routino/RoutinoPlugin.cpp:49
+msgid "Retrieves routes from routino"
+msgstr ""
 
 #: src/plugins/runner/traveling-salesman/TravelingSalesmanPlugin.cpp:22
 msgid "Traveling Salesman"
@@ -2229,118 +2229,127 @@ msgstr ""
 msgid "Traveling Salesman Routing"
 msgstr ""
 
-#: src/plugins/runner/yours/YoursPlugin.cpp:22
+#: src/plugins/runner/yours/YoursPlugin.cpp:27
 msgid "Yours"
 msgstr ""
 
-#: src/plugins/runner/yours/YoursPlugin.cpp:24
-msgid "Worldwide routing using a YOURS server"
-msgstr ""
-
-#: src/plugins/runner/yours/YoursPlugin.cpp:26
+#: src/plugins/runner/yours/YoursPlugin.cpp:32
 #, fuzzy
 #| msgid "Mountain"
 msgid "Yours Routing"
 msgstr "Montinne"
 
-#: src/plugins/runner/cache/CachePlugin.cpp:19
+#: src/plugins/runner/yours/YoursPlugin.cpp:47
+msgid "Worldwide routing using a YOURS server"
+msgstr ""
+
+#: src/plugins/runner/cache/CachePlugin.cpp:23
 msgid "Cache File Parser"
 msgstr ""
 
-#: src/plugins/runner/cache/CachePlugin.cpp:21
-msgid "Create GeoDataDocument from Cache Files"
-msgstr ""
-
-#: src/plugins/runner/cache/CachePlugin.cpp:22
+#: src/plugins/runner/cache/CachePlugin.cpp:28
 msgid "Cache Parser"
 msgstr ""
 
-#: src/plugins/runner/gpx/GpxPlugin.cpp:19
+#: src/plugins/runner/cache/CachePlugin.cpp:43
+msgid "Create GeoDataDocument from Cache Files"
+msgstr ""
+
+#: src/plugins/runner/gpx/GpxPlugin.cpp:23
 msgid "Gpx File Parser"
 msgstr ""
 
-#: src/plugins/runner/gpx/GpxPlugin.cpp:21
-msgid "Create GeoDataDocument from Gpx Files"
-msgstr ""
-
-#: src/plugins/runner/gpx/GpxPlugin.cpp:22
+#: src/plugins/runner/gpx/GpxPlugin.cpp:28
 msgid "Gpx Parser"
 msgstr ""
 
-#: src/plugins/runner/pnt/PntPlugin.cpp:19
+#: src/plugins/runner/gpx/GpxPlugin.cpp:43
+msgid "Create GeoDataDocument from Gpx Files"
+msgstr ""
+
+#: src/plugins/runner/pnt/PntPlugin.cpp:23
 msgid "Pnt File Parser"
 msgstr ""
 
-#: src/plugins/runner/pnt/PntPlugin.cpp:21
-msgid "Create GeoDataDocument from Pnt Files"
-msgstr ""
-
-#: src/plugins/runner/pnt/PntPlugin.cpp:22
+#: src/plugins/runner/pnt/PntPlugin.cpp:28
 msgid "Pnt Parser"
 msgstr ""
 
-#: src/plugins/runner/osm/OsmPlugin.cpp:19
+#: src/plugins/runner/pnt/PntPlugin.cpp:43
+msgid "Create GeoDataDocument from Pnt Files"
+msgstr ""
+
+#: src/plugins/runner/osm/OsmPlugin.cpp:23
 msgid "Osm File Parser"
 msgstr ""
 
-#: src/plugins/runner/osm/OsmPlugin.cpp:21
-msgid "Create GeoDataDocument from Osm Files"
-msgstr ""
-
-#: src/plugins/runner/osm/OsmPlugin.cpp:22
+#: src/plugins/runner/osm/OsmPlugin.cpp:28
 msgid "Osm Parser"
 msgstr ""
 
-#: src/plugins/runner/kml/KmlPlugin.cpp:19
+#: src/plugins/runner/osm/OsmPlugin.cpp:43
+msgid "Create GeoDataDocument from Osm Files"
+msgstr ""
+
+#: src/plugins/runner/kml/KmlPlugin.cpp:23
 msgid "Kml File Parser"
 msgstr ""
 
-#: src/plugins/runner/kml/KmlPlugin.cpp:21
-msgid "Create GeoDataDocument from Kml Files"
-msgstr ""
-
-#: src/plugins/runner/kml/KmlPlugin.cpp:22
+#: src/plugins/runner/kml/KmlPlugin.cpp:28
 msgid "Kml Parser"
 msgstr ""
 
-#: src/plugins/runner/mapquest/MapQuestPlugin.cpp:24
+#: src/plugins/runner/kml/KmlPlugin.cpp:43
+msgid "Create GeoDataDocument from Kml Files"
+msgstr ""
+
+#: src/plugins/runner/mapquest/MapQuestPlugin.cpp:29
 msgid "MapQuest"
 msgstr ""
 
-#: src/plugins/runner/mapquest/MapQuestPlugin.cpp:26
-msgid "Worldwide routing using mapquest.org"
-msgstr ""
-
-#: src/plugins/runner/mapquest/MapQuestPlugin.cpp:28
+#: src/plugins/runner/mapquest/MapQuestPlugin.cpp:34
 #, fuzzy
 #| msgid "Mountain"
 msgid "MapQuest Routing"
 msgstr "Montinne"
 
-#: src/plugins/runner/mapquest/MapQuestPlugin.cpp:48
+#: src/plugins/runner/mapquest/MapQuestPlugin.cpp:49
+msgid "Worldwide routing using mapquest.org"
+msgstr ""
+
+#: src/plugins/runner/mapquest/MapQuestPlugin.cpp:80
 #: src/lib/routing/RoutingProfilesModel.cpp:119
 msgid "Pedestrian"
 msgstr ""
 
-#: src/plugins/runner/mapquest/MapQuestPlugin.cpp:49
+#: src/plugins/runner/mapquest/MapQuestPlugin.cpp:81
 #: src/lib/routing/RoutingProfilesModel.cpp:117
 msgid "Bicycle"
 msgstr ""
 
-#: src/plugins/runner/mapquest/MapQuestPlugin.cpp:50
+#: src/plugins/runner/mapquest/MapQuestPlugin.cpp:82
 msgid "Transit (Public Transport)"
 msgstr ""
 
-#: src/plugins/runner/shp/ShpPlugin.cpp:19
+#: src/plugins/runner/shp/ShpPlugin.cpp:23
 msgid "Shp File Parser"
 msgstr ""
 
-#: src/plugins/runner/shp/ShpPlugin.cpp:21
+#: src/plugins/runner/shp/ShpPlugin.cpp:28
+msgid "Shp Parser"
+msgstr ""
+
+#: src/plugins/runner/shp/ShpPlugin.cpp:43
 msgid "Create GeoDataDocument from Shp Files"
 msgstr ""
 
-#: src/plugins/runner/shp/ShpPlugin.cpp:22
-msgid "Shp Parser"
+#: src/plugins/runner/log/LogPlugin.cpp:24
+#: src/plugins/runner/log/LogPlugin.cpp:29
+msgid ".log File Parser"
+msgstr ""
+
+#: src/plugins/runner/log/LogPlugin.cpp:44
+msgid "Create GeoDataDocument from TangoGPS .log Files"
 msgstr ""
 
 #: src/plugins/templates/floatitem/FITemplateFloatItem.cpp:53
@@ -3581,7 +3590,7 @@ msgctxt "the earth's moon"
 msgid "Moon"
 msgstr "Lune"
 
-#: src/lib/RenderPlugin.cpp:188
+#: src/lib/RenderPlugin.cpp:185
 #, fuzzy, qt-format
 msgid ""
 "<br/>(c) %1 The Marble Project<br /><br/><a href=\"http://edu.kde.org/marble"
