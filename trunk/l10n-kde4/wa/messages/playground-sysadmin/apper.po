@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-29 04:35+0200\n"
+"POT-Creation-Date: 2012-03-30 05:32+0200\n"
 "PO-Revision-Date: 2011-09-20 17:14+0200\n"
 "Last-Translator: Djan Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -579,7 +579,7 @@ msgstr "Oridjenes do programe"
 msgid "Display"
 msgstr "Håynaedje"
 
-#: ApperKCM/PackageDetails.cpp:80
+#: ApperKCM/PackageDetails.cpp:80 AppSetup/SetupWizard.cpp:217
 msgid "Description"
 msgstr "Discrijhaedje"
 
@@ -649,6 +649,7 @@ msgid "Action"
 msgstr "Accion"
 
 #: ApperKCM/TransactionModel.cpp:48 Sentinel/TransactionWatcher.cpp:308
+#: AppSetup/SetupWizard.cpp:189
 msgid "Details"
 msgstr "Detays"
 
@@ -917,7 +918,7 @@ msgid "Could not find any package to install in this catalog"
 msgstr "Dji n' a savou trover d' pacaedje a astaler dins ç' catalogue cial"
 
 #: Sentinel/SessionTask.cpp:66 libapper/Requirements.cpp:44
-#: AppSetup/SetupWizard.cpp:40
+#: AppSetup/SetupWizard.cpp:126
 msgid "Continue"
 msgstr "Tcheryî pus lon"
 
@@ -3314,6 +3315,7 @@ msgstr ""
 
 #: libapper/PkTransaction.cpp:129 libapper/PkTransaction.cpp:153
 #: libapper/PkTransaction.cpp:179 libapper/PkTransaction.cpp:202
+#: AppSetup/SetupWizard.cpp:98
 msgid "Error"
 msgstr "Aroke"
 
@@ -3401,40 +3403,136 @@ msgstr "Astaler"
 msgid "Remove"
 msgstr "Oister"
 
-#: AppSetup/main.cpp:30 AppSetup/main.cpp:31
+#: AppSetup/SetupWizard.cpp:83
+#, fuzzy
+#| msgctxt "The role of the transaction, in present tense"
+#| msgid "Installing file"
+msgid "Installation finished!"
+msgstr "Dj' astale li fitchî"
+
+#: AppSetup/SetupWizard.cpp:84
+#, fuzzy, kde-format
+#| msgid "File was installed successfully"
+#| msgid_plural "Files were installed successfully"
+msgid "%1 has been installed successfully!"
+msgstr "Li fitchî a stî astalé comifåt"
+
+#: AppSetup/SetupWizard.cpp:99
+#, fuzzy
+#| msgid "An internal system error has occurred"
+msgid "An error occured"
+msgstr "Ene divintrinne aroke sistinme s' a passé"
+
+#. i18n: file: ApperKCM/ApperKCM.ui:281
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: AppSetup/SetupWizard.cpp:128 rc.cpp:197
+msgid "Back"
+msgstr "Èn erî"
+
+#: AppSetup/SetupWizard.cpp:178
+msgid "Welcome!"
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:179
+#, kde-format
+msgid "Welcome to the installation of %1!"
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:180
+msgid ""
+"Please be careful while installing 3rd-party applications.<br>They may "
+"eventually <b>damage</b> your system or have <b>malicious behaviour</b>, "
+"like spying out your passwords.<br>Please do only install this software if "
+"you <b>trust the publisher and the author</b> of it."
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:190
+msgid "Details about this installation"
+msgstr ""
+
+#: AppSetup/SetupWizard.cpp:216
+#, fuzzy
+#| msgid "Applications"
+msgid "Application description"
+msgstr "Programes"
+
+#: AppSetup/SetupWizard.cpp:225
+#, fuzzy
+#| msgid "Software Origins"
+msgid "Software license"
+msgstr "Oridjenes do programe"
+
+#: AppSetup/SetupWizard.cpp:226
+#, fuzzy
+#| msgid "Please read the following important information before continuing:"
+msgid "Please read the following terms and conditions carefully!"
+msgstr ""
+"Léjhoz s' i vs plait les impôrtants pondants et djondants shuvants divant d' "
+"tcheryî pus lon :"
+
+#: AppSetup/SetupWizard.cpp:233
+#, fuzzy
+#| msgctxt "transaction state, scanning for running processes"
+#| msgid "Scanning installed applications"
+msgid "Running installation"
+msgstr "Dji corwaite les programes astalés"
+
+#: AppSetup/SetupWizard.cpp:234
+#, fuzzy, kde-format
+#| msgid "Installing"
+msgid "Installing %1..."
+msgstr "Dj' astale"
+
+#: AppSetup/main.cpp:33 AppSetup/main.cpp:34
 #, fuzzy
 #| msgid "Application Manager"
 msgid "KDE Application Installer"
 msgstr "Manaedjeu des programes"
 
-#: AppSetup/main.cpp:32
+#: AppSetup/main.cpp:35
 msgid "(C) 2012, Matthias Klumpp"
 msgstr ""
 
-#: AppSetup/main.cpp:34
+#: AppSetup/main.cpp:37
 #, fuzzy
 #| msgid "Daniel Nicoletti"
 msgctxt "@info:credit"
 msgid "Daniel Nicoletti"
 msgstr "Daniel Nicoletti"
 
-#: AppSetup/main.cpp:34 AppSetup/main.cpp:36
+#: AppSetup/main.cpp:37 AppSetup/main.cpp:39
 #, fuzzy
 #| msgid "Development"
 msgid "Developer"
 msgstr "Diswalpaedje"
 
-#: AppSetup/main.cpp:36
+#: AppSetup/main.cpp:39
 msgctxt "@info:credit"
 msgid "Matthias Klumpp"
 msgstr ""
 
-#: AppSetup/main.cpp:43
+#: AppSetup/main.cpp:46
 #, fuzzy
 #| msgctxt "transaction state, getting data from a server"
 #| msgid "Getting information"
 msgid "Show debugging information"
 msgstr "Dji cache après ls informåcions"
+
+#: AppSetup/main.cpp:47
+#, fuzzy
+#| msgid "Invalid package file"
+msgid "IPK package filename"
+msgstr "Fitchî pacaedje nén valåbe"
+
+#: AppSetup/main.cpp:69
+msgid "Sorry, we didn't get an existing IPK package as parameter."
+msgstr ""
+
+#: AppSetup/main.cpp:70
+#, fuzzy
+#| msgid "The package was not found"
+msgid "Package not found!"
+msgstr "Dji n' a nén trové l' pacaedje"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -3785,12 +3883,6 @@ msgstr "Trover des pacaedjes"
 msgid "Pending Changes"
 msgstr "Candjmints ki s' vont fé"
 
-#. i18n: file: ApperKCM/ApperKCM.ui:281
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: rc.cpp:197
-msgid "Back"
-msgstr "Èn erî"
-
 #. i18n: file: Sentinel/IntroDialog.ui:65
 #. i18n: ectx: property (text), widget (QLabel, descriptionL)
 #: rc.cpp:209
@@ -3865,6 +3957,18 @@ msgstr "imådjete"
 #: rc.cpp:248
 msgid "Downloading Packages"
 msgstr "Dj' aberwete  les pacaedjes"
+
+#. i18n: file: AppSetup/LicensePage.ui:98
+#. i18n: ectx: property (text), widget (QRadioButton, acceptedRB)
+#: rc.cpp:251
+msgid "I agree to the above terms and conditions"
+msgstr ""
+
+#. i18n: file: AppSetup/LicensePage.ui:111
+#. i18n: ectx: property (text), widget (QRadioButton, rejectedRB)
+#: rc.cpp:254
+msgid "I don't agree"
+msgstr ""
 
 #, fuzzy
 #~| msgid "Failed to start resolve transaction"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-29 02:52+0200\n"
+"POT-Creation-Date: 2012-03-30 03:08+0200\n"
 "PO-Revision-Date: 2011-01-17 21:35+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -1355,7 +1355,7 @@ msgstr "Ahiver coûtche HDR"
 
 #. i18n: file: plugins/extensions/bracketing2hdr/wdgbracketing2hdr.ui:162
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonCancel)
-#: rc.cpp:80 ui/kis_view2.cpp:507
+#: rc.cpp:80 ui/kis_view2.cpp:505
 msgid "Cancel"
 msgstr "Rinoncî"
 
@@ -3414,6 +3414,7 @@ msgstr "Sacwants ponts"
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbFill)
 #: rc.cpp:977 rc.cpp:3308 rc.cpp:4130
 #: plugins/paintops/libpaintop/kis_color_source_option.cpp:61
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:118
 msgid "Pattern"
 msgstr "Patron"
 
@@ -4001,7 +4002,7 @@ msgstr "W: 88% V: 888 PC: 88%"
 #. i18n: file: plugins/extensions/rotateimage/wdg_rotateimage.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgRotateImage)
 #: rc.cpp:1275 plugins/extensions/rotateimage/dlg_rotateimage.cc:31
-#: plugins/extensions/rotateimage/rotateimage.cc:117
+#: plugins/extensions/rotateimage/rotateimage.cc:115
 msgid "Rotate Image"
 msgstr "Tourner l' imådje"
 
@@ -4217,7 +4218,7 @@ msgstr "Rexhowe e coleur, pont d' liveas d' gris"
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgShearImage)
 #: rc.cpp:1371 image/kis_image.cc:690
 #: plugins/extensions/shearimage/dlg_shearimage.cc:32
-#: plugins/extensions/shearimage/shearimage.cc:90
+#: plugins/extensions/shearimage/shearimage.cc:88
 msgid "Shear Image"
 msgstr "Taeyî imådje"
 
@@ -4633,7 +4634,7 @@ msgstr "Reyon astampé :"
 
 #. i18n: file: plugins/filters/blur/wdgblur.ui:65
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:1527
+#: rc.cpp:1527 plugins/paintops/libpaintop/kis_texture_option.cpp:84
 msgid "Strength:"
 msgstr "Foice:"
 
@@ -6577,6 +6578,7 @@ msgstr "Shure cursoe"
 #. i18n: file: plugins/paintops/spray/wdgshapeoptions.ui:221
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:2516 rc.cpp:3112
+#: plugins/paintops/libpaintop/kis_paintop_option.cpp:36
 msgid "Texture"
 msgstr "Tecsteure"
 
@@ -10305,7 +10307,7 @@ msgstr "Candjî d' grandeu l' imådje"
 msgid "Crop Node"
 msgstr "Côper dvins l' imådje"
 
-#: image/kis_image.cc:617 plugins/extensions/rotateimage/rotateimage.cc:151
+#: image/kis_image.cc:617 plugins/extensions/rotateimage/rotateimage.cc:149
 msgid "Rotate Layer"
 msgstr "Tourner coûtche"
 
@@ -10573,10 +10575,6 @@ msgstr "Court"
 msgid "Float32 Histogram"
 msgstr "Istograme Flotant32"
 
-#: plugins/extensions/backgrounds/backgrounds.cpp:51
-msgid "Select Image Background..."
-msgstr ""
-
 #: plugins/extensions/backgrounds/dlg_backgrounds.cpp:35
 #, fuzzy
 msgid "Select a Background"
@@ -10595,6 +10593,10 @@ msgstr "Dobler l' coûtche ou masse tchoezi pol moumint"
 #, fuzzy
 msgid "Reset to default"
 msgstr "prémetou"
+
+#: plugins/extensions/backgrounds/backgrounds.cpp:49
+msgid "Select Image Background..."
+msgstr ""
 
 #: plugins/extensions/bigbrother/actionseditor/kis_actions_editor.cpp:105
 #, fuzzy
@@ -10619,83 +10621,83 @@ msgstr "Schaper macro"
 msgid "Discard changes"
 msgstr "Abandner les candjmints"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:87
+#: plugins/extensions/bigbrother/bigbrother.cc:85
 msgid "Open and play..."
 msgstr "Drovi eyet djouwer..."
 
-#: plugins/extensions/bigbrother/bigbrother.cc:91
+#: plugins/extensions/bigbrother/bigbrother.cc:89
 #, fuzzy
 msgid "Open and edit..."
 msgstr "Drovi eyet djouwer..."
 
-#: plugins/extensions/bigbrother/bigbrother.cc:95
+#: plugins/extensions/bigbrother/bigbrother.cc:93
 msgid "Save all actions"
 msgstr "Schaper tos les faitindjes"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:99
+#: plugins/extensions/bigbrother/bigbrother.cc:97
 msgid "Start recording macro"
 msgstr "Enonder eredjistraedje del macro"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:103
+#: plugins/extensions/bigbrother/bigbrother.cc:101
 msgid "Stop recording actions"
 msgstr "Arester l' eredjistraedje des faitindjes"
 
-#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:85
+#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:83
 msgid "HDR Layer from bracketing"
 msgstr "Coûtche HDR a pårti di l' åtchetaedje"
 
-#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:180
-#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:374
+#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:178
+#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:372
 msgid "HDR colorspace RGBAF32 not found, please check your installation."
 msgstr ""
 "Espåce di coleur HDR RGBAF32 nén trové, Waitîz vost astalaedje s' i vs plait "
 "bén."
 
-#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:180
+#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:178
 msgid "Layer Creation Error"
 msgstr "Aroke d' ahivaedje del coûtche"
 
-#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:183
+#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:181
 #: plugins/formats/exr/exr_converter.cc:313
 msgid "HDR Layer"
 msgstr "Coûtche HDR"
 
-#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:374
+#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:372
 #, fuzzy
 #| msgid "Calculate camera response"
 msgid "Compute Camera Response Error"
 msgstr "Carculer response di l' aparey"
 
-#: plugins/extensions/colorrange/colorrange.cc:66
+#: plugins/extensions/colorrange/colorrange.cc:64
 #, fuzzy
 #| msgid "&Color Range..."
 msgid "Select from Color Range..."
 msgstr "Fortchete di &coleurs..."
 
-#: plugins/extensions/colorrange/colorrange.cc:71
-#: plugins/extensions/colorrange/colorrange.cc:103
+#: plugins/extensions/colorrange/colorrange.cc:69
+#: plugins/extensions/colorrange/colorrange.cc:101
 #, fuzzy
 #| msgid "&Selection of page"
 msgid "Select Opaque"
 msgstr "Tchoe&s di pådjes"
 
-#: plugins/extensions/colorspaceconversion/colorspaceconversion.cc:78
+#: plugins/extensions/colorspaceconversion/colorspaceconversion.cc:75
 msgid "&Convert Image Type..."
 msgstr "&Kivierser sôre d' imådje..."
 
-#: plugins/extensions/colorspaceconversion/colorspaceconversion.cc:81
+#: plugins/extensions/colorspaceconversion/colorspaceconversion.cc:78
 msgid "&Convert Layer Type..."
 msgstr "&Kivierser sôre di coûtche..."
 
-#: plugins/extensions/colorspaceconversion/colorspaceconversion.cc:102
+#: plugins/extensions/colorspaceconversion/colorspaceconversion.cc:99
 msgid "Convert All Layers From "
 msgstr "Kivierser totes les coûtches a pårti"
 
-#: plugins/extensions/colorspaceconversion/colorspaceconversion.cc:127
+#: plugins/extensions/colorspaceconversion/colorspaceconversion.cc:124
 msgid "Convert Current Layer From"
 msgstr "Kivierser coûtche do moumint a pårti di"
 
-#: plugins/extensions/colorspaceconversion/colorspaceconversion.cc:135
+#: plugins/extensions/colorspaceconversion/colorspaceconversion.cc:132
 msgid "Convert Layer Type"
 msgstr "Kivierser sôre di coûtche"
 
@@ -10703,11 +10705,11 @@ msgstr "Kivierser sôre di coûtche"
 msgid "compose Layer"
 msgstr "compôzer coûtche"
 
-#: plugins/extensions/compose/kis_layer_compose_plugin.cpp:51
+#: plugins/extensions/compose/kis_layer_compose_plugin.cpp:49
 msgid "Compose Layer..."
 msgstr "Compôzer coûtche..."
 
-#: plugins/extensions/compose/kis_layer_compose_plugin.cpp:68
+#: plugins/extensions/compose/kis_layer_compose_plugin.cpp:66
 msgid "Compose Layer"
 msgstr "Compôzer coûtche"
 
@@ -10957,7 +10959,7 @@ msgstr "&Schaper dins les prédefinis"
 
 #: plugins/extensions/dropshadow/dlg_dropshadow.cc:42
 #: plugins/extensions/dropshadow/kis_dropshadow.cc:130
-#: plugins/extensions/dropshadow/kis_dropshadow_plugin.cc:83
+#: plugins/extensions/dropshadow/kis_dropshadow_plugin.cc:80
 msgid "Drop Shadow"
 msgstr "Ombion poirté"
 
@@ -10965,7 +10967,7 @@ msgstr "Ombion poirté"
 msgid "Add Drop Shadow"
 msgstr "Radjouter ombion poirté"
 
-#: plugins/extensions/dropshadow/kis_dropshadow_plugin.cc:60
+#: plugins/extensions/dropshadow/kis_dropshadow_plugin.cc:57
 msgid "Add Drop Shadow..."
 msgstr "Radjouter ombion poirté..."
 
@@ -10994,10 +10996,6 @@ msgstr ""
 msgid "Continue"
 msgstr "Continouwer"
 
-#: plugins/extensions/extensionsmanager/ExtensionsManagerPlugin.cc:50
-msgid "Extensions manager..."
-msgstr "Manaedjeu des rawetes..."
-
 #: plugins/extensions/extensionsmanager/ExtensionsManagerWindow.cpp:43
 msgid ""
 "The installation was successful, you will need to restart Krita to use the "
@@ -11008,39 +11006,43 @@ msgstr ""
 msgid "Success"
 msgstr "Succès"
 
-#: plugins/extensions/histogram/histogram.cc:67
-msgid "&Histogram..."
-msgstr "&Istograme..."
+#: plugins/extensions/extensionsmanager/ExtensionsManagerPlugin.cc:47
+msgid "Extensions manager..."
+msgstr "Manaedjeu des rawetes..."
 
 #: plugins/extensions/histogram/dlg_histogram.cc:46
 #: plugins/extensions/histogram/dlg_histogram.cc:53
 msgid "Histogram"
 msgstr "Istograme"
 
-#: plugins/extensions/imagesize/imagesize.cc:77
+#: plugins/extensions/histogram/histogram.cc:64
+msgid "&Histogram..."
+msgstr "&Istograme..."
+
+#: plugins/extensions/imagesize/imagesize.cc:75
 msgid "Scale To New Size..."
 msgstr "Mete al schåle al novele grandeu..."
 
-#: plugins/extensions/imagesize/imagesize.cc:81
+#: plugins/extensions/imagesize/imagesize.cc:79
 msgid "Size Canvas..."
 msgstr ""
 
-#: plugins/extensions/imagesize/imagesize.cc:85
+#: plugins/extensions/imagesize/imagesize.cc:83
 msgid "Scale &Layer..."
 msgstr "Mete &coûtche al schåle..."
 
-#: plugins/extensions/imagesize/imagesize.cc:91
+#: plugins/extensions/imagesize/imagesize.cc:89
 #, fuzzy
 #| msgid "&Scale"
 msgid "&Scale..."
 msgstr "&Schåle"
 
-#: plugins/extensions/imagesize/imagesize.cc:160
+#: plugins/extensions/imagesize/imagesize.cc:158
 msgid "Layer Size"
 msgstr "Grandeu del coûtche"
 
-#: plugins/extensions/imagesize/imagesize.cc:199
-#: plugins/extensions/imagesize/imagesize.cc:213
+#: plugins/extensions/imagesize/imagesize.cc:197
+#: plugins/extensions/imagesize/imagesize.cc:211
 msgid "Scale Selection"
 msgstr "Toes del schåle"
 
@@ -11050,13 +11052,13 @@ msgstr "Toes del schåle"
 msgid "Image Split"
 msgstr "Grandeu d' l' imådje"
 
-#: plugins/extensions/imagesplit/imagesplit.cpp:60
+#: plugins/extensions/imagesplit/imagesplit.cpp:59
 #, fuzzy
 #| msgid "Image Size"
 msgid "Image Split "
 msgstr "Grandeu d' l' imådje"
 
-#: plugins/extensions/imagesplit/imagesplit.cpp:145
+#: plugins/extensions/imagesplit/imagesplit.cpp:144
 #, fuzzy
 #| msgid "Scale Image"
 msgid "Save Image on Split"
@@ -11117,22 +11119,22 @@ msgstr "Tournaedje"
 msgid "Key"
 msgstr "Clé"
 
-#: plugins/extensions/metadataeditor/metadataeditor.cc:63
-msgid "&Edit metadata..."
-msgstr "&Candjî meta-dnêyes..."
-
 #: plugins/extensions/metadataeditor/kis_meta_data_editor.cc:141
 msgid "List"
 msgstr "Djivêye"
 
+#: plugins/extensions/metadataeditor/metadataeditor.cc:61
+msgid "&Edit metadata..."
+msgstr "&Candjî meta-dnêyes..."
+
 #: plugins/extensions/modify_selection/dlg_border_selection.cc:31
-#: plugins/extensions/modify_selection/modify_selection.cc:176
+#: plugins/extensions/modify_selection/modify_selection.cc:174
 #: ui/kis_selection_manager_p.h:237
 msgid "Border Selection"
 msgstr "Tchoes del boirdeure"
 
 #: plugins/extensions/modify_selection/dlg_feather_selection.cc:32
-#: plugins/extensions/modify_selection/modify_selection.cc:199
+#: plugins/extensions/modify_selection/modify_selection.cc:197
 #: ui/kis_selection_manager_p.h:458
 #, fuzzy
 #| msgid "Path Selection"
@@ -11140,36 +11142,36 @@ msgid "Feather Selection"
 msgstr "Tchoes do tchmin"
 
 #: plugins/extensions/modify_selection/dlg_grow_selection.cc:30
-#: plugins/extensions/modify_selection/modify_selection.cc:128
+#: plugins/extensions/modify_selection/modify_selection.cc:126
 #: ui/kis_selection_manager_p.h:507
 msgid "Grow Selection"
 msgstr "Agrandi tchoes"
 
 #: plugins/extensions/modify_selection/dlg_shrink_selection.cc:30
-#: plugins/extensions/modify_selection/modify_selection.cc:151
+#: plugins/extensions/modify_selection/modify_selection.cc:149
 #: ui/kis_selection_manager_p.h:636
 msgid "Shrink Selection"
 msgstr "Raptiti tchoes"
 
-#: plugins/extensions/modify_selection/modify_selection.cc:72
+#: plugins/extensions/modify_selection/modify_selection.cc:70
 #, fuzzy
 #| msgid "Grow selection..."
 msgid "Grow Selection..."
 msgstr "Agrandi tchoes..."
 
-#: plugins/extensions/modify_selection/modify_selection.cc:75
+#: plugins/extensions/modify_selection/modify_selection.cc:73
 #, fuzzy
 #| msgid "Shrink selection..."
 msgid "Shrink Selection..."
 msgstr "Raptiti tchoes..."
 
-#: plugins/extensions/modify_selection/modify_selection.cc:78
+#: plugins/extensions/modify_selection/modify_selection.cc:76
 #, fuzzy
 #| msgid "Border selection..."
 msgid "Border Selection..."
 msgstr "Tchoes del boirdeure..."
 
-#: plugins/extensions/modify_selection/modify_selection.cc:81
+#: plugins/extensions/modify_selection/modify_selection.cc:79
 #, fuzzy
 #| msgid "Path Selection"
 msgid "Feather Selection..."
@@ -11205,50 +11207,50 @@ msgstr "Éndjin KS%1"
 msgid "Painterly Color Mixer"
 msgstr "Maxheu d' coleurs pol pondaedje"
 
-#: plugins/extensions/rotateimage/rotateimage.cc:67
+#: plugins/extensions/rotateimage/rotateimage.cc:65
 msgid "&Rotate Image..."
 msgstr "Fé &tourner l' imådje..."
 
-#: plugins/extensions/rotateimage/rotateimage.cc:71
+#: plugins/extensions/rotateimage/rotateimage.cc:69
 #, fuzzy
 #| msgid "Rotate Image"
 msgctxt "rotate image 90 degrees to the right"
 msgid "Rotate Image 90° to the Right"
 msgstr "Tourner l' imådje"
 
-#: plugins/extensions/rotateimage/rotateimage.cc:75
+#: plugins/extensions/rotateimage/rotateimage.cc:73
 #, fuzzy
 #| msgid "Rotate Image"
 msgctxt "rotate image 180 degrees to the right"
 msgid "Rotate Image 180°"
 msgstr "Tourner l' imådje"
 
-#: plugins/extensions/rotateimage/rotateimage.cc:79
+#: plugins/extensions/rotateimage/rotateimage.cc:77
 #, fuzzy
 #| msgid "Rotate Image"
 msgctxt "rotate image 90 degrees to the left"
 msgid "Rotate Image 90° to the Left"
 msgstr "Tourner l' imådje"
 
-#: plugins/extensions/rotateimage/rotateimage.cc:83
+#: plugins/extensions/rotateimage/rotateimage.cc:81
 msgid "&Rotate Layer..."
 msgstr "Fé &tourner coûtche..."
 
-#: plugins/extensions/rotateimage/rotateimage.cc:87
+#: plugins/extensions/rotateimage/rotateimage.cc:85
 #, fuzzy
 #| msgid "Rotate Layer"
 msgctxt "rotate the layer 180 degrees"
 msgid "Rotate Layer 180°"
 msgstr "Tourner coûtche"
 
-#: plugins/extensions/rotateimage/rotateimage.cc:91
+#: plugins/extensions/rotateimage/rotateimage.cc:89
 #, fuzzy
 #| msgid "Rotate Layer"
 msgctxt "rotate the layer 90 degrees to the right"
 msgid "Rotate Layer 90° to the Right"
 msgstr "Tourner coûtche"
 
-#: plugins/extensions/rotateimage/rotateimage.cc:95
+#: plugins/extensions/rotateimage/rotateimage.cc:93
 #, fuzzy
 #| msgid "Rotate Layer"
 msgctxt "rotate the layer 90 degrees to the left"
@@ -11297,15 +11299,15 @@ msgstr ""
 msgid "Index out of bound"
 msgstr "Indecse foû des limites"
 
-#: plugins/extensions/scripting/scriptingpart.cpp:138
+#: plugins/extensions/scripting/scriptingpart.cpp:136
 #, kde-format
 msgid "&Show %1"
 msgstr "Mo&strer %1"
 
 #: plugins/extensions/separate_channels/dlg_separate.cc:40
 #: plugins/extensions/separate_channels/kis_channel_separator.cc:211
-#: plugins/extensions/separate_channels/kis_separate_channels_plugin.cc:86
-#: plugins/extensions/separate_channels/kis_separate_channels_plugin.cc:97
+#: plugins/extensions/separate_channels/kis_separate_channels_plugin.cc:84
+#: plugins/extensions/separate_channels/kis_separate_channels_plugin.cc:95
 msgid "Separate Image"
 msgstr "Distrocler imådje"
 
@@ -11314,19 +11316,19 @@ msgstr "Distrocler imådje"
 msgid "Export Layer"
 msgstr "Ebaguer coûtche"
 
-#: plugins/extensions/separate_channels/kis_separate_channels_plugin.cc:61
+#: plugins/extensions/separate_channels/kis_separate_channels_plugin.cc:59
 msgid "Separate Image..."
 msgstr "Distrocler imådje..."
 
-#: plugins/extensions/shearimage/shearimage.cc:64
+#: plugins/extensions/shearimage/shearimage.cc:62
 msgid "&Shear Image..."
 msgstr "&Taeyî imådje..."
 
-#: plugins/extensions/shearimage/shearimage.cc:68
+#: plugins/extensions/shearimage/shearimage.cc:66
 msgid "&Shear Layer..."
 msgstr "&Taeyî coûtche..."
 
-#: plugins/extensions/shearimage/shearimage.cc:109
+#: plugins/extensions/shearimage/shearimage.cc:107
 msgid "Shear Layer"
 msgstr "Taeyî coûtche"
 
@@ -11355,7 +11357,7 @@ msgstr "Reinhard 05"
 msgid "Trilateral"
 msgstr "Trilaterå"
 
-#: plugins/extensions/tonemapping/tonemapping.cc:53
+#: plugins/extensions/tonemapping/tonemapping.cc:51
 msgid "Tonemapping..."
 msgstr "Mapaedje des tons..."
 
@@ -11914,16 +11916,16 @@ msgstr "Dobler"
 msgid "Painting Mode"
 msgstr "Môde di pondaedje"
 
+#: plugins/paintops/deform/kis_deform_paintop_factory.h:45
+#, fuzzy
+msgid "Deform brush"
+msgstr "Reyon d' disformaedje"
+
 #: plugins/paintops/deform/kis_deform_option.cpp:34
 #, fuzzy
 #| msgid "Geometry Options"
 msgid "Deform Options"
 msgstr "Tchuzes del djeyometreye"
-
-#: plugins/paintops/deform/kis_deform_paintop_factory.h:45
-#, fuzzy
-msgid "Deform brush"
-msgstr "Reyon d' disformaedje"
 
 #: plugins/paintops/dynadraw/dyna_paintop_plugin.cpp:41
 msgid "Dyna brush"
@@ -12144,7 +12146,7 @@ msgstr "Noeri"
 
 #: plugins/paintops/libpaintop/kis_pressure_mirror_option.cpp:31
 #: plugins/tools/defaulttools/kis_tool_multihand.cpp:203
-#: ui/kis_paintop_box.cc:202
+#: ui/kis_paintop_box.cc:207
 #, fuzzy
 #| msgid "Crop Image"
 msgid "Mirror"
@@ -12331,6 +12333,60 @@ msgstr "Plome"
 #| msgid "Shear"
 msgid "Near"
 msgstr "Taeyaedje"
+
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:70
+msgid "Scale:"
+msgstr "Schåle :"
+
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:74
+#, fuzzy
+#| msgid "Horizontal:"
+msgid "Horizontal Offset:"
+msgstr "Di coûtchî:"
+
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:78
+#, fuzzy
+#| msgid "Vertical:"
+msgid "Vertical Offset:"
+msgstr "D' astampé:"
+
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:89
+msgid "Disregard Cutoff"
+msgstr ""
+
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:89
+#, fuzzy
+#| msgid "Mask Source"
+msgid "Mask Out"
+msgstr "Catchî sourdant"
+
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:89
+#, fuzzy
+#| msgid "Use as Pattern"
+msgid "Disregard Pattern"
+msgstr "Eployî come patron"
+
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:91
+#, fuzzy
+#| msgid "Cutoff"
+msgid "Cutoff Policy"
+msgstr "Côpeure"
+
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:97
+msgid ""
+"When pattern texture values are outside the range specified by the slider, "
+"the cut-off policy will be applied."
+msgstr ""
+
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:99
+msgid "Cutoff"
+msgstr "Côpeure"
+
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:103
+#, fuzzy
+#| msgid "Texture"
+msgid "Invert Texture:"
+msgstr "Tecsteure"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:81
 msgid ""
@@ -12877,7 +12933,7 @@ msgstr "Pincea dinamike"
 msgid "WateryMix options"
 msgstr "Pincea dinamike"
 
-#: plugins/paintops/waterymixbrush/waterymix_paintop_plugin.cpp:46
+#: plugins/paintops/waterymixbrush/waterymix_paintop_plugin.cpp:44
 #, fuzzy
 msgid "Watery Mixbrush"
 msgstr "Pincea dinamike"
@@ -13577,7 +13633,6 @@ msgid ""
 msgstr ""
 
 #: ui/dialogs/kis_dlg_preferences.cc:712 ui/kis_aboutdata.h:31
-#: ui/kis_clipboard.cc:155
 msgid "Krita"
 msgstr "Krita"
 
@@ -13823,12 +13878,6 @@ msgstr ""
 #, kde-format
 msgid "New configuration %1"
 msgstr "Novea apontiaedje %1"
-
-#: ui/kis_clipboard.cc:153
-msgid ""
-"You are putting more than 10 megapixels on the clipboard. Do you want to "
-"make this data available to other applications as well?"
-msgstr ""
 
 #: ui/kis_clipboard.cc:268
 msgid "Pasting data from simple source"
@@ -14163,43 +14212,43 @@ msgstr "Londjinnmint"
 msgid "Mode: "
 msgstr "Môde:"
 
-#: ui/kis_paintop_box.cc:161
+#: ui/kis_paintop_box.cc:164
 #, fuzzy
 #| msgid "&Save to Presets"
 msgid "Save to Palette"
 msgstr "&Schaper dins les prédefinis"
 
-#: ui/kis_paintop_box.cc:164
+#: ui/kis_paintop_box.cc:169
 #, fuzzy
 #| msgid "Colorspace"
 msgid "Choose workspace"
 msgstr "Espåce di coleurs"
 
-#: ui/kis_paintop_box.cc:185
+#: ui/kis_paintop_box.cc:190
 #, fuzzy
 #| msgid "Brush size"
 msgid "Brush composite"
 msgstr "Grandeu do pincea"
 
-#: ui/kis_paintop_box.cc:189
+#: ui/kis_paintop_box.cc:194
 #, fuzzy
 #| msgid "Bristles"
 msgid "Brush option slider 1"
 msgstr "Pwels"
 
-#: ui/kis_paintop_box.cc:193
+#: ui/kis_paintop_box.cc:198
 #, fuzzy
 #| msgid "Bristles"
 msgid "Brush option slider 2"
 msgstr "Pwels"
 
-#: ui/kis_paintop_box.cc:206
+#: ui/kis_paintop_box.cc:211
 #, fuzzy
 #| msgid "Add to palette:"
 msgid "Add to palette"
 msgstr "Radjouter al palete"
 
-#: ui/kis_paintop_box.cc:210
+#: ui/kis_paintop_box.cc:215
 #, fuzzy
 #| msgid "Colorspace"
 msgid "Workspaces"
@@ -14364,117 +14413,117 @@ msgstr "Nou tchoes"
 msgid "No profile"
 msgstr "Nou profil"
 
-#: ui/kis_view2.cpp:272
+#: ui/kis_view2.cpp:270
 #, fuzzy
 #| msgid "Incremental"
 msgid "Save Incremental &Version"
 msgstr "Incremintå"
 
-#: ui/kis_view2.cpp:277
+#: ui/kis_view2.cpp:275
 #, fuzzy
 #| msgid "Incremental"
 msgid "Save Incremental Backup"
 msgstr "Incremintå"
 
-#: ui/kis_view2.cpp:289
+#: ui/kis_view2.cpp:287
 msgid "Total Refresh"
 msgstr "Rafristaedje totå"
 
-#: ui/kis_view2.cpp:294
+#: ui/kis_view2.cpp:292
 msgid "&Create Template From Image..."
 msgstr "&Fé on modele a pårti d' ciste imådje  ci..."
 
-#: ui/kis_view2.cpp:298
+#: ui/kis_view2.cpp:296
 #, fuzzy
 #| msgid "Tutorials"
 msgid "Load Tutorial"
 msgstr "Tutoriels"
 
-#: ui/kis_view2.cpp:302
+#: ui/kis_view2.cpp:300
 #, fuzzy
 #| msgid "Crop Image"
 msgid "Mirror Image"
 msgstr "Côper dvins l' imådje"
 
-#: ui/kis_view2.cpp:308
+#: ui/kis_view2.cpp:306
 msgid "Rotate Canvas Right"
 msgstr ""
 
-#: ui/kis_view2.cpp:313
+#: ui/kis_view2.cpp:311
 #, fuzzy
 #| msgid "Rotate Image"
 msgid "Rotate Canvas Left"
 msgstr "Tourner l' imådje"
 
-#: ui/kis_view2.cpp:318
+#: ui/kis_view2.cpp:316
 #, fuzzy
 #| msgid "Perspective Transform"
 msgid "Reset Canvas Transformations"
 msgstr "Transformer perspective"
 
-#: ui/kis_view2.cpp:323
+#: ui/kis_view2.cpp:321
 #, fuzzy
 #| msgid "Show root layer"
 msgid "Show Status Bar"
 msgstr "Mostrer l' coûtche raecene"
 
-#: ui/kis_view2.cpp:324
+#: ui/kis_view2.cpp:322
 msgid "Hide Status Bar"
 msgstr ""
 
-#: ui/kis_view2.cpp:326
+#: ui/kis_view2.cpp:324
 msgid "Shows or hides the status bar"
 msgstr ""
 
-#: ui/kis_view2.cpp:330
+#: ui/kis_view2.cpp:328
 #, fuzzy
 #| msgid "Canvas color:"
 msgid "Show Canvas Only"
 msgstr "Coleur del toele:"
 
-#: ui/kis_view2.cpp:331
+#: ui/kis_view2.cpp:329
 msgid "Return to Window"
 msgstr ""
 
-#: ui/kis_view2.cpp:332
+#: ui/kis_view2.cpp:330
 msgid "Shows just the canvas or the whole window"
 msgstr ""
 
-#: ui/kis_view2.cpp:461
+#: ui/kis_view2.cpp:459
 #, fuzzy
 #| msgid "&Paint Layer"
 msgid "Pasted Layer"
 msgstr "Côutche &pondeure"
 
-#: ui/kis_view2.cpp:499
+#: ui/kis_view2.cpp:497
 msgid "Insert as New Layer"
 msgstr "Sitchî come novele coûtche"
 
-#: ui/kis_view2.cpp:500
+#: ui/kis_view2.cpp:498
 msgid "Insert as New Layers"
 msgstr "Sitchî come novelès coûtches"
 
-#: ui/kis_view2.cpp:502
+#: ui/kis_view2.cpp:500
 msgid "Open in New Document"
 msgstr "Drovi e novea documint"
 
-#: ui/kis_view2.cpp:503
+#: ui/kis_view2.cpp:501
 msgid "Open in New Documents"
 msgstr "Drovi e noveas documints"
 
-#: ui/kis_view2.cpp:505
+#: ui/kis_view2.cpp:503
 msgid "Replace Current Document"
 msgstr ""
 
-#: ui/kis_view2.cpp:723
+#: ui/kis_view2.cpp:721
 msgid "Edit Palette..."
 msgstr "Candjî palete..."
 
-#: ui/kis_view2.cpp:728
+#: ui/kis_view2.cpp:726
 msgid "&Themes"
 msgstr ""
 
-#: ui/kis_view2.cpp:859 ui/kis_view2.cpp:862
+#: ui/kis_view2.cpp:857 ui/kis_view2.cpp:860
 msgid "Edit Palette"
 msgstr "Candjî palete"
 
@@ -14597,7 +14646,7 @@ msgstr "Oister segmint"
 msgid "Choose meta data merge strategy"
 msgstr "Tchoezi stratedjeye di rfondaedje des meta-dnêyes"
 
-#: ui/widgets/kis_multipliers_double_slider_spinbox.cpp:60
+#: ui/widgets/kis_multipliers_double_slider_spinbox.cpp:62
 #, fuzzy, kde-format
 #| msgid "%1%"
 msgid "x%1"
@@ -15376,9 +15425,6 @@ msgstr "Fitchî(s) ou URL(s) a drovi"
 #~ msgid "Verical"
 #~ msgstr "D' astampé"
 
-#~ msgid "Scale:"
-#~ msgstr "Schåle :"
-
 #~ msgid "Start"
 #~ msgstr "Cominçmint"
 
@@ -15493,9 +15539,6 @@ msgstr "Fitchî(s) ou URL(s) a drovi"
 
 #~ msgid "Shift"
 #~ msgstr "Displaeçaedje"
-
-#~ msgid "Cutoff"
-#~ msgstr "Côpeure"
 
 #~ msgid "Seed"
 #~ msgstr "Kissemer"
