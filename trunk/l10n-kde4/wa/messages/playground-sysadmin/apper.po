@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-04-02 04:46+0200\n"
+"POT-Creation-Date: 2012-04-03 08:10+0200\n"
 "PO-Revision-Date: 2011-09-20 17:14+0200\n"
 "Last-Translator: Djan Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -86,6 +86,10 @@ msgstr "Oisteu d' mierseu pacaedje"
 msgid "Package file to install"
 msgstr "Fitchî d' pacaedje a-z astaler"
 
+#: ApperKCM/Settings/OriginModel.cpp:39 ApperKCM/Settings/OriginModel.cpp:52
+msgid "Origin of Packages"
+msgstr "Di wice ki les pacaedjes vinèt"
+
 #: ApperKCM/Settings/Settings.cpp:65
 msgctxt "Hourly refresh the package cache"
 msgid "Hourly"
@@ -131,10 +135,6 @@ msgstr "Vos n' avoz nén les droets k' i fåt po fé ç' faitindje la."
 #: ApperKCM/Settings/Settings.cpp:251
 msgid "Failed to set origin data"
 msgstr "Li definixhaedje di l' oridjinne des dnêyes a fwait berwete"
-
-#: ApperKCM/Settings/OriginModel.cpp:39 ApperKCM/Settings/OriginModel.cpp:52
-msgid "Origin of Packages"
-msgstr "Di wice ki les pacaedjes vinèt"
 
 #: ApperKCM/Updater/DistroUpgrade.cpp:39 Sentinel/DistroUpgrade.cpp:63
 msgid "Distribution upgrade available"
@@ -510,6 +510,10 @@ msgstr "Èn mostrer k' les programes"
 msgid "Hide packages that are not applications"
 msgstr "Catchî les pacaedjes k' i n' sont nén des programes"
 
+#: ApperKCM/ScreenShotViewer.cpp:90
+msgid "Could not find screen shot."
+msgstr "Dji n' a savou trover d' waitroûlêye."
+
 #: ApperKCM/ApperKCM.cpp:79
 msgid "Application Manager"
 msgstr "Manaedjeu des programes"
@@ -575,6 +579,26 @@ msgstr "Apontiaedjes djenerås"
 msgid "Software Origins"
 msgstr "Oridjenes do programe"
 
+#: ApperKCM/CategoryModel.cpp:47
+msgid "Installed Software"
+msgstr "Programe d' astalé"
+
+#: ApperKCM/CategoryModel.cpp:50 ApperKCM/CategoryModel.cpp:58
+msgid "Lists"
+msgstr "Djivêyes"
+
+#: ApperKCM/CategoryModel.cpp:55
+msgid "Updates"
+msgstr "Metaedjes a djoû"
+
+#: ApperKCM/CategoryModel.cpp:155 ApperKCM/CategoryModel.cpp:339
+msgid "Categories"
+msgstr "Categoreyes"
+
+#: ApperKCM/CategoryModel.cpp:208
+msgid "Groups"
+msgstr "Groupes"
+
 #: ApperKCM/PackageDetails.cpp:73
 msgid "Display"
 msgstr "Håynaedje"
@@ -607,30 +631,6 @@ msgstr "Dji n' sai cweri les detays do programe"
 msgid "Applications"
 msgstr "Programes"
 
-#: ApperKCM/CategoryModel.cpp:47
-msgid "Installed Software"
-msgstr "Programe d' astalé"
-
-#: ApperKCM/CategoryModel.cpp:50 ApperKCM/CategoryModel.cpp:58
-msgid "Lists"
-msgstr "Djivêyes"
-
-#: ApperKCM/CategoryModel.cpp:55
-msgid "Updates"
-msgstr "Metaedjes a djoû"
-
-#: ApperKCM/CategoryModel.cpp:155 ApperKCM/CategoryModel.cpp:339
-msgid "Categories"
-msgstr "Categoreyes"
-
-#: ApperKCM/CategoryModel.cpp:208
-msgid "Groups"
-msgstr "Groupes"
-
-#: ApperKCM/ScreenShotViewer.cpp:90
-msgid "Could not find screen shot."
-msgstr "Dji n' a savou trover d' waitroûlêye."
-
 #: ApperKCM/TransactionHistory.cpp:66
 msgid "Refresh transactions list"
 msgstr "Rafrister l' djivêye des tranzaccions"
@@ -661,14 +661,6 @@ msgstr "No di l' uzeu"
 #: ApperKCM/TransactionModel.cpp:50
 msgid "Application"
 msgstr "Programe"
-
-#: Sentinel/DistroUpgrade.cpp:69
-msgid "Start upgrade now"
-msgstr "Ataker l' metaedje a livea do côp"
-
-#: Sentinel/DistroUpgrade.cpp:114
-msgid "Distribution upgrade finished. "
-msgstr "Metaedje a livea del distribucion fini. "
 
 #: Sentinel/PkInstallProvideFiles.cpp:39
 msgid "Install Packages that Provides Files"
@@ -745,46 +737,6 @@ msgid "Could not find printer driver in any configured software source"
 msgstr ""
 "Dji n' a savou trover l' mineu del sicrirece dins nou sourdant des programes "
 "d' apontyî"
-
-#: Sentinel/UpdateIcon.cpp:160
-msgid "Review Updates"
-msgstr "Rilever metaedjes a djoû"
-
-#: Sentinel/UpdateIcon.cpp:163
-msgid "Configure"
-msgstr "Apontyî"
-
-#. i18n: file: ApperKCM/PackageDetails.ui:359
-#. i18n: ectx: property (text), widget (QToolButton, hideTB)
-#. i18n: file: ApperKCM/Updater/UpdateDetails.ui:20
-#. i18n: ectx: property (text), widget (QToolButton, hideTB)
-#: Sentinel/UpdateIcon.cpp:167 Sentinel/TransactionWatcher.cpp:186
-#: libapper/PkTransactionDialog.cpp:86 rc.cpp:137 rc.cpp:173
-msgid "Hide"
-msgstr "Catchî"
-
-#: Sentinel/UpdateIcon.cpp:177
-#, kde-format
-msgid "You have one update"
-msgid_plural "You have %1 updates"
-msgstr[0] "Vos avoz on metaedje a djoû"
-msgstr[1] "Vos avoz %1 metaedjes a djoû"
-
-#: Sentinel/UpdateIcon.cpp:230
-msgid "Updates are being automatically installed."
-msgstr "Les metaedjes a djoû sont-st astalés otomaticmint."
-
-#: Sentinel/UpdateIcon.cpp:251
-msgid "Security updates are being automatically installed."
-msgstr "Les metaedjes a djoû di såvrité sont-st astalés otomaticmint."
-
-#: Sentinel/UpdateIcon.cpp:278
-msgid "System update was successful."
-msgstr "Li metaedje a djoû do sistinme a stî fwait sins rujhe."
-
-#: Sentinel/UpdateIcon.cpp:287
-msgid "The automated software update failed."
-msgstr "Li metaedje a djoû otomatike do programe a fwait berwete."
 
 #: Sentinel/ReviewChanges.cpp:52
 msgid "The following package was found"
@@ -917,6 +869,54 @@ msgstr "Li catalogue est vude"
 msgid "Could not find any package to install in this catalog"
 msgstr "Dji n' a savou trover d' pacaedje a astaler dins ç' catalogue cial"
 
+#: Sentinel/PkInstallPackageFiles.cpp:38
+msgid "Install Packages Files"
+msgstr "Astaler les fitchîs di pacaedje"
+
+#: Sentinel/PkInstallPackageFiles.cpp:42
+#: Sentinel/PkRemovePackageByFiles.cpp:43
+msgid "You can drop more files in here"
+msgstr "Vos ploz poizer d' ôtes fitchîs cial"
+
+#: Sentinel/PkInstallPackageFiles.cpp:52
+msgid "Not Supported"
+msgstr "Nén sopoirté"
+
+#: Sentinel/PkInstallPackageFiles.cpp:53
+msgid "Your current backend does not support installing files"
+msgstr ""
+"Vosse programe fondmint do moumint n' sopoite nén l' astalaedje di fitchîs"
+
+#: Sentinel/PkInstallPackageFiles.cpp:68
+#: Sentinel/PkRemovePackageByFiles.cpp:64
+msgid "No supported files were provided"
+msgstr "Nou fitchî di sopoirté n' a stî dné"
+
+#: Sentinel/PkInstallPackageFiles.cpp:70
+msgid "Press <i>Continue</i> if you want to install this file"
+msgid_plural "Press <i>Continue</i> if you want to install these files"
+msgstr[0] "Tchôkî so <i>Tcheryî pus lon</i> si vs voloz astaler ç' fitchî la"
+msgstr[1] "Tchôkî so <i>Tcheryî pus lon</i> si vs voloz astaler ces fitchîs la"
+
+#: Sentinel/PkInstallPackageFiles.cpp:105
+msgid "Installation Complete"
+msgstr "Astalaedje tot fwait"
+
+#: Sentinel/PkInstallPackageFiles.cpp:106
+msgid "File was installed successfully"
+msgid_plural "Files were installed successfully"
+msgstr[0] "Li fitchî a stî astalé comifåt"
+msgstr[1] "Les fitchîs ont stî astalés comifåt"
+
+#: Sentinel/PkInstallPackageFiles.cpp:117
+msgid "Failed to install files"
+msgstr "L' astalaedje des fitchîs a fwait berwete"
+
+#: Sentinel/PkInstallPackageFiles.cpp:118
+#: Sentinel/PkInstallPackageFiles.cpp:120
+msgid "Could not install files"
+msgstr "Dji n' a savou astaler les fitchîs"
+
 #: Sentinel/SessionTask.cpp:66 libapper/Requirements.cpp:44
 #: AppSetup/SetupWizard.cpp:134
 msgid "Continue"
@@ -953,6 +953,72 @@ msgstr "Bouye tote fwaite"
 #: Sentinel/SessionTask.cpp:430
 msgid "All operations were committed successfully"
 msgstr "Totes les operåcions ont stî fwaites comifåt"
+
+#: Sentinel/UpdateIcon.cpp:160
+msgid "Review Updates"
+msgstr "Rilever metaedjes a djoû"
+
+#: Sentinel/UpdateIcon.cpp:163
+msgid "Configure"
+msgstr "Apontyî"
+
+#. i18n: file: ApperKCM/PackageDetails.ui:359
+#. i18n: ectx: property (text), widget (QToolButton, hideTB)
+#. i18n: file: ApperKCM/Updater/UpdateDetails.ui:20
+#. i18n: ectx: property (text), widget (QToolButton, hideTB)
+#: Sentinel/UpdateIcon.cpp:167 Sentinel/TransactionWatcher.cpp:186
+#: libapper/PkTransactionDialog.cpp:86 rc.cpp:137 rc.cpp:173
+msgid "Hide"
+msgstr "Catchî"
+
+#: Sentinel/UpdateIcon.cpp:177
+#, kde-format
+msgid "You have one update"
+msgid_plural "You have %1 updates"
+msgstr[0] "Vos avoz on metaedje a djoû"
+msgstr[1] "Vos avoz %1 metaedjes a djoû"
+
+#: Sentinel/UpdateIcon.cpp:230
+msgid "Updates are being automatically installed."
+msgstr "Les metaedjes a djoû sont-st astalés otomaticmint."
+
+#: Sentinel/UpdateIcon.cpp:251
+msgid "Security updates are being automatically installed."
+msgstr "Les metaedjes a djoû di såvrité sont-st astalés otomaticmint."
+
+#: Sentinel/UpdateIcon.cpp:278
+msgid "System update was successful."
+msgstr "Li metaedje a djoû do sistinme a stî fwait sins rujhe."
+
+#: Sentinel/UpdateIcon.cpp:287
+msgid "The automated software update failed."
+msgstr "Li metaedje a djoû otomatike do programe a fwait berwete."
+
+#: Sentinel/PkIsInstalled.cpp:36
+msgid "Querying if a Package is Installed"
+msgstr "Dji cwir après s' i gn on pacaedje est astalé"
+
+#: Sentinel/PkIsInstalled.cpp:67
+msgid "User canceled the transaction"
+msgstr "L' uzeu a rnoncî al tranzaccion"
+
+#: Sentinel/PkIsInstalled.cpp:69
+msgid "An unknown error happened"
+msgstr "Åk n' a nén stî, aroke nén cnoxhowe"
+
+#: Sentinel/TransactionTrayIcon.cpp:45
+msgid "Transactions"
+msgstr "Tranzaccions"
+
+#: Sentinel/TransactionTrayIcon.cpp:90
+#, kde-format
+msgid "%1% - %2"
+msgstr "%1% - %2"
+
+#: Sentinel/TransactionTrayIcon.cpp:92
+#, kde-format
+msgid "%1"
+msgstr "%1"
 
 #: Sentinel/TransactionWatcher.cpp:66 Sentinel/TransactionWatcher.cpp:265
 msgid "Hide this icon"
@@ -992,32 +1058,6 @@ msgstr "Mostrer messaedjes"
 #: Sentinel/TransactionWatcher.cpp:308
 msgid "Ignore"
 msgstr "Passer houte"
-
-#: Sentinel/PkIsInstalled.cpp:36
-msgid "Querying if a Package is Installed"
-msgstr "Dji cwir après s' i gn on pacaedje est astalé"
-
-#: Sentinel/PkIsInstalled.cpp:67
-msgid "User canceled the transaction"
-msgstr "L' uzeu a rnoncî al tranzaccion"
-
-#: Sentinel/PkIsInstalled.cpp:69
-msgid "An unknown error happened"
-msgstr "Åk n' a nén stî, aroke nén cnoxhowe"
-
-#: Sentinel/TransactionTrayIcon.cpp:45
-msgid "Transactions"
-msgstr "Tranzaccions"
-
-#: Sentinel/TransactionTrayIcon.cpp:90
-#, kde-format
-msgid "%1% - %2"
-msgstr "%1% - %2"
-
-#: Sentinel/TransactionTrayIcon.cpp:92
-#, kde-format
-msgid "%1"
-msgstr "%1"
 
 #: Sentinel/PkInstallPlasmaResources.cpp:40
 msgid "Install Plasma Resources"
@@ -1105,54 +1145,6 @@ msgstr "Gåre d' Apper"
 msgid "Trever Fischer"
 msgstr "Trever Fischer"
 
-#: Sentinel/PkInstallPackageFiles.cpp:38
-msgid "Install Packages Files"
-msgstr "Astaler les fitchîs di pacaedje"
-
-#: Sentinel/PkInstallPackageFiles.cpp:42
-#: Sentinel/PkRemovePackageByFiles.cpp:43
-msgid "You can drop more files in here"
-msgstr "Vos ploz poizer d' ôtes fitchîs cial"
-
-#: Sentinel/PkInstallPackageFiles.cpp:52
-msgid "Not Supported"
-msgstr "Nén sopoirté"
-
-#: Sentinel/PkInstallPackageFiles.cpp:53
-msgid "Your current backend does not support installing files"
-msgstr ""
-"Vosse programe fondmint do moumint n' sopoite nén l' astalaedje di fitchîs"
-
-#: Sentinel/PkInstallPackageFiles.cpp:68
-#: Sentinel/PkRemovePackageByFiles.cpp:64
-msgid "No supported files were provided"
-msgstr "Nou fitchî di sopoirté n' a stî dné"
-
-#: Sentinel/PkInstallPackageFiles.cpp:70
-msgid "Press <i>Continue</i> if you want to install this file"
-msgid_plural "Press <i>Continue</i> if you want to install these files"
-msgstr[0] "Tchôkî so <i>Tcheryî pus lon</i> si vs voloz astaler ç' fitchî la"
-msgstr[1] "Tchôkî so <i>Tcheryî pus lon</i> si vs voloz astaler ces fitchîs la"
-
-#: Sentinel/PkInstallPackageFiles.cpp:105
-msgid "Installation Complete"
-msgstr "Astalaedje tot fwait"
-
-#: Sentinel/PkInstallPackageFiles.cpp:106
-msgid "File was installed successfully"
-msgid_plural "Files were installed successfully"
-msgstr[0] "Li fitchî a stî astalé comifåt"
-msgstr[1] "Les fitchîs ont stî astalés comifåt"
-
-#: Sentinel/PkInstallPackageFiles.cpp:117
-msgid "Failed to install files"
-msgstr "L' astalaedje des fitchîs a fwait berwete"
-
-#: Sentinel/PkInstallPackageFiles.cpp:118
-#: Sentinel/PkInstallPackageFiles.cpp:120
-msgid "Could not install files"
-msgstr "Dji n' a savou astaler les fitchîs"
-
 #: Sentinel/PkRemovePackageByFiles.cpp:40
 msgid "Remove Packages that Provides Files"
 msgstr "Oister les pacaedjes ki dnèt les fitchîs"
@@ -1212,6 +1204,14 @@ msgstr "Trover des pacaedjes ki dnèt les fitchîs"
 #: Sentinel/PkSearchFile.cpp:80
 msgid "The file name could not be found in any software source"
 msgstr "Dji n' a savou trover l' no do fitchî dins nou sourdant di programes"
+
+#: Sentinel/DistroUpgrade.cpp:69
+msgid "Start upgrade now"
+msgstr "Ataker l' metaedje a livea do côp"
+
+#: Sentinel/DistroUpgrade.cpp:114
+msgid "Distribution upgrade finished. "
+msgstr "Metaedje a livea del distribucion fini. "
 
 #: Sentinel/PkInstallFontconfigResources.cpp:41
 msgid "Installs new Fonts"
@@ -3184,6 +3184,91 @@ msgstr "Dji n' a savou cåzer avou packagekitd."
 msgid "An unknown error happened."
 msgstr "Åk n' a nén stî, aroke nén cnoxhowe."
 
+#: libapper/PkTransaction.cpp:122
+msgid "Failed to simulate file install"
+msgstr "Li fijhaedje come s' on astaléve li fitchî a fwait berwete"
+
+#: libapper/PkTransaction.cpp:129
+msgid "Current backend does not support installing files."
+msgstr ""
+"Li programe fondmint do moumint n' sopoite nén l' astalaedje di fitchîs."
+
+#: libapper/PkTransaction.cpp:129 libapper/PkTransaction.cpp:153
+#: libapper/PkTransaction.cpp:179 libapper/PkTransaction.cpp:202
+#: AppSetup/SetupWizard.cpp:106
+msgid "Error"
+msgstr "Aroke"
+
+#: libapper/PkTransaction.cpp:146
+msgid "Failed to simulate package install"
+msgstr "Li fijhaedje come s' on astaléve li pacaedje a fwait berwete"
+
+#: libapper/PkTransaction.cpp:153
+msgid "Current backend does not support installing packages."
+msgstr ""
+"Li programe fondmint do moumint n' sopoite nén l' astalaedje di pacaedjes."
+
+#: libapper/PkTransaction.cpp:171
+msgid "Failed to simulate package removal"
+msgstr "Li fijhaedje come s' on oistéve li pacaedje a fwait berwete"
+
+#: libapper/PkTransaction.cpp:179
+msgid "The current backend does not support removing packages."
+msgstr ""
+"Li programe fondmint do moumint n' sopoite nén l' oistaedje des pacaedjes."
+
+#: libapper/PkTransaction.cpp:195
+msgid "Failed to simulate package update"
+msgstr "Li fijhaedje come s' on meteu a djoû li pacaedje a fwait berwete"
+
+#: libapper/PkTransaction.cpp:202
+msgid "The current backend does not support updating packages."
+msgstr ""
+"Li programe fondmint do moumint n' sopoite nén l' metaedje a djoû des "
+"pacaedjes."
+
+#: libapper/PkTransaction.cpp:213
+msgid "Failed to refresh package cache"
+msgstr "Li rafristaedje del muchete des pacaedjes a fwait berwete"
+
+#: libapper/PkTransaction.cpp:251
+msgid "Failed to install package"
+msgstr "L' astalaedje des pacaedjes a fwait berwete"
+
+#: libapper/PkTransaction.cpp:276
+msgid "Failed to remove package"
+msgstr "Li oistaedje des pacaedjes a fwait berwete"
+
+#: libapper/PkTransaction.cpp:288
+msgid "Failed to update package"
+msgstr "Li metaedje a djoû des pacaedjes a fwait berwete"
+
+#: libapper/PkTransaction.cpp:459
+#, kde-format
+msgid "Downloading packages at %1/s"
+msgstr "Dj' aberwete  les pacaedjes a %1/s"
+
+#: libapper/PkTransaction.cpp:507
+msgid ""
+"You are about to install unsigned packages that can compromise your system, "
+"as it is impossible to verify if the software came from a trusted source.\n"
+"\n"
+"Are you sure you want to proceed with the installation?"
+msgstr ""
+"Vos alez bén rade astaler des pacaedjes nén sinés k' pôrént rinde cron vosse "
+"sistinme ca ça n' est nén possibe di verifyî sel programe a vént d' sourdant "
+"fiyåve.\n"
+"\n"
+"Voloz vs fé cist astalaedje po do bon ?"
+
+#: libapper/PkTransaction.cpp:510
+msgid "Installing unsigned software"
+msgstr "Dj' astale on programe nén siné"
+
+#: libapper/PkTransaction.cpp:564 libapper/PkTransaction.cpp:618
+msgid "Failed to install signature"
+msgstr "L' astalaedje del sinateure a fwait berwete"
+
 #: libapper/PkTransactionDialog.cpp:88
 msgid ""
 "Allows you to hide the window whilst keeping the transaction task running."
@@ -3303,91 +3388,6 @@ msgid "1 package to update"
 msgid_plural "%1 packages to update"
 msgstr[0] "On pacaedje a mete a djoû"
 msgstr[1] "%1 pacaedjes a mete a djoû"
-
-#: libapper/PkTransaction.cpp:122
-msgid "Failed to simulate file install"
-msgstr "Li fijhaedje come s' on astaléve li fitchî a fwait berwete"
-
-#: libapper/PkTransaction.cpp:129
-msgid "Current backend does not support installing files."
-msgstr ""
-"Li programe fondmint do moumint n' sopoite nén l' astalaedje di fitchîs."
-
-#: libapper/PkTransaction.cpp:129 libapper/PkTransaction.cpp:153
-#: libapper/PkTransaction.cpp:179 libapper/PkTransaction.cpp:202
-#: AppSetup/SetupWizard.cpp:106
-msgid "Error"
-msgstr "Aroke"
-
-#: libapper/PkTransaction.cpp:146
-msgid "Failed to simulate package install"
-msgstr "Li fijhaedje come s' on astaléve li pacaedje a fwait berwete"
-
-#: libapper/PkTransaction.cpp:153
-msgid "Current backend does not support installing packages."
-msgstr ""
-"Li programe fondmint do moumint n' sopoite nén l' astalaedje di pacaedjes."
-
-#: libapper/PkTransaction.cpp:171
-msgid "Failed to simulate package removal"
-msgstr "Li fijhaedje come s' on oistéve li pacaedje a fwait berwete"
-
-#: libapper/PkTransaction.cpp:179
-msgid "The current backend does not support removing packages."
-msgstr ""
-"Li programe fondmint do moumint n' sopoite nén l' oistaedje des pacaedjes."
-
-#: libapper/PkTransaction.cpp:195
-msgid "Failed to simulate package update"
-msgstr "Li fijhaedje come s' on meteu a djoû li pacaedje a fwait berwete"
-
-#: libapper/PkTransaction.cpp:202
-msgid "The current backend does not support updating packages."
-msgstr ""
-"Li programe fondmint do moumint n' sopoite nén l' metaedje a djoû des "
-"pacaedjes."
-
-#: libapper/PkTransaction.cpp:213
-msgid "Failed to refresh package cache"
-msgstr "Li rafristaedje del muchete des pacaedjes a fwait berwete"
-
-#: libapper/PkTransaction.cpp:251
-msgid "Failed to install package"
-msgstr "L' astalaedje des pacaedjes a fwait berwete"
-
-#: libapper/PkTransaction.cpp:276
-msgid "Failed to remove package"
-msgstr "Li oistaedje des pacaedjes a fwait berwete"
-
-#: libapper/PkTransaction.cpp:288
-msgid "Failed to update package"
-msgstr "Li metaedje a djoû des pacaedjes a fwait berwete"
-
-#: libapper/PkTransaction.cpp:459
-#, kde-format
-msgid "Downloading packages at %1/s"
-msgstr "Dj' aberwete  les pacaedjes a %1/s"
-
-#: libapper/PkTransaction.cpp:507
-msgid ""
-"You are about to install unsigned packages that can compromise your system, "
-"as it is impossible to verify if the software came from a trusted source.\n"
-"\n"
-"Are you sure you want to proceed with the installation?"
-msgstr ""
-"Vos alez bén rade astaler des pacaedjes nén sinés k' pôrént rinde cron vosse "
-"sistinme ca ça n' est nén possibe di verifyî sel programe a vént d' sourdant "
-"fiyåve.\n"
-"\n"
-"Voloz vs fé cist astalaedje po do bon ?"
-
-#: libapper/PkTransaction.cpp:510
-msgid "Installing unsigned software"
-msgstr "Dj' astale on programe nén siné"
-
-#: libapper/PkTransaction.cpp:564 libapper/PkTransaction.cpp:618
-msgid "Failed to install signature"
-msgstr "L' astalaedje del sinateure a fwait berwete"
 
 #. i18n: file: libapper/RepoSig.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, RepoSig)
