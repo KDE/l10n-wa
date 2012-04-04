@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konsole\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-04-02 04:21+0200\n"
+"POT-Creation-Date: 2012-04-04 04:27+0200\n"
 "PO-Revision-Date: 2010-01-22 15:02+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -331,17 +331,27 @@ msgstr "Emiler a..."
 msgid "Copy Email Address"
 msgstr "Copyî adresse emile"
 
-#: HistorySizeDialog.cpp:41
+#: HistorySizeDialog.cpp:32
 #, fuzzy
 #| msgid "Scrollback"
+msgctxt "@title:window"
 msgid "Adjust Scrollback"
 msgstr "Erôlaedje en erî"
 
-#: HistorySizeDialog.cpp:52
-msgid "<center>The adjustment is only temporary</center>"
+#: HistorySizeDialog.cpp:45
+msgctxt "@info:status"
+msgid "Any adjustments are only temporary to this session."
 msgstr ""
 
-#: HistorySizeWidget.cpp:51
+#: HistorySizeWidget.cpp:44
+msgctxt "@info:status"
+msgid ""
+"When using this option, the scrollback data will be written unencrypted to "
+"temporary files. Those temporary files will be deleted automatically when "
+"quitting Konsole."
+msgstr ""
+
+#: HistorySizeWidget.cpp:60
 #, fuzzy
 #| msgid "lines"
 msgctxt "Unit of scrollback"
@@ -1584,7 +1594,7 @@ msgstr ""
 msgid "&Set as Default"
 msgstr "Mete come prémetou"
 
-#. i18n: file: HistorySizeWidget.ui:23
+#. i18n: file: HistorySizeWidget.ui:29
 #. i18n: ectx: property (toolTip), widget (QRadioButton, noHistoryButton)
 #: rc.cpp:341
 #, fuzzy
@@ -1592,19 +1602,19 @@ msgstr "Mete come prémetou"
 msgid "Do not remember previous output"
 msgstr "Dismete li bår d' acinseur et n' nén si sovni del rexhowe di dvant"
 
-#. i18n: file: HistorySizeWidget.ui:26
+#. i18n: file: HistorySizeWidget.ui:32
 #. i18n: ectx: property (text), widget (QRadioButton, noHistoryButton)
 #: rc.cpp:344
 msgid "No scrollback"
 msgstr "Pont d' erôlaedje en erî"
 
-#. i18n: file: HistorySizeWidget.ui:41
+#. i18n: file: HistorySizeWidget.ui:50
 #. i18n: ectx: property (toolTip), widget (QRadioButton, fixedSizeHistoryButton)
 #: rc.cpp:347
 msgid "Limit the remembered output to a fixed number of lines"
 msgstr "Limite a on dné nombe di royes li rexhowe a s' sovni"
 
-#. i18n: file: HistorySizeWidget.ui:44
+#. i18n: file: HistorySizeWidget.ui:53
 #. i18n: ectx: property (text), widget (QRadioButton, fixedSizeHistoryButton)
 #: rc.cpp:350
 #, fuzzy
@@ -1612,19 +1622,19 @@ msgstr "Limite a on dné nombe di royes li rexhowe a s' sovni"
 msgid "Fixed size scrollback:"
 msgstr "Erôlaedje en erî d' grandeu: "
 
-#. i18n: file: HistorySizeWidget.ui:51
+#. i18n: file: HistorySizeWidget.ui:60
 #. i18n: ectx: property (toolTip), widget (KIntSpinBox, historyLineSpinner)
 #: rc.cpp:353
 msgid "Number of lines of output to remember"
 msgstr "Nombe di royes di rexhowe a s' sovni"
 
-#. i18n: file: HistorySizeWidget.ui:85
+#. i18n: file: HistorySizeWidget.ui:94
 #. i18n: ectx: property (toolTip), widget (QRadioButton, unlimitedHistoryButton)
 #: rc.cpp:356
 msgid "Remember all output produced by the terminal"
 msgstr "Si sovin di tote li rexhowe fwaite på terminå"
 
-#. i18n: file: HistorySizeWidget.ui:88
+#. i18n: file: HistorySizeWidget.ui:97
 #. i18n: ectx: property (text), widget (QRadioButton, unlimitedHistoryButton)
 #: rc.cpp:359
 msgid "Unlimited scrollback"
@@ -2044,43 +2054,43 @@ msgid ""
 "kill it by force?"
 msgstr ""
 
-#: SessionController.cpp:1251
+#: SessionController.cpp:1255
 msgid "Save ZModem Download to..."
 msgstr ""
 
-#: SessionController.cpp:1259
+#: SessionController.cpp:1263
 msgid ""
 "<p>A ZModem file transfer attempt has been detected, but no suitable ZModem "
 "software was found on this system.</p><p>You may wish to install the 'rzsz' "
 "or 'lrzsz' package.</p>"
 msgstr ""
 
-#: SessionController.cpp:1271
+#: SessionController.cpp:1275
 msgid ""
 "<p>The current session already has a ZModem file transfer in progress.</p>"
 msgstr ""
 
-#: SessionController.cpp:1280
+#: SessionController.cpp:1284
 msgid ""
 "<p>No suitable ZModem software was found on this system.</p><p>You may wish "
 "to install the 'rzsz' or 'lrzsz' package.</p>"
 msgstr ""
 
-#: SessionController.cpp:1286
+#: SessionController.cpp:1290
 msgid "Select Files for ZModem Upload"
 msgstr ""
 
-#: SessionController.cpp:1354
+#: SessionController.cpp:1358
 #, kde-format
 msgid "Save Output From %1"
 msgstr "Schaper l' rexhowe di %1"
 
-#: SessionController.cpp:1365
+#: SessionController.cpp:1369
 #, kde-format
 msgid "%1 is an invalid URL, the output could not be saved."
 msgstr "%1 est ene hårdêye nén valide, li rexhowe èn pout nén esse schapêye."
 
-#: SessionController.cpp:1440
+#: SessionController.cpp:1444
 #, kde-format
 msgid ""
 "A problem occurred when saving the output.\n"
@@ -2152,14 +2162,14 @@ msgstr "Li programe « %1 » a moussî foû avou l' estat %2."
 msgid "ZModem Progress"
 msgstr "Avançmint di ZModem"
 
-#: SessionManager.cpp:388
+#: SessionManager.cpp:381
 #, fuzzy
 #| msgid "Number"
 msgctxt "@item:intable The session index"
 msgid "Number"
 msgstr "Limero"
 
-#: SessionManager.cpp:390
+#: SessionManager.cpp:383
 #, fuzzy
 #| msgid "Title"
 msgctxt "@item:intable The session title"
