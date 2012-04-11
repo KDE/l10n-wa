@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-04-06 02:46+0200\n"
+"POT-Creation-Date: 2012-04-11 02:34+0200\n"
 "PO-Revision-Date: 2011-01-17 21:35+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -1355,7 +1355,7 @@ msgstr "Ahiver coûtche HDR"
 
 #. i18n: file: plugins/extensions/bracketing2hdr/wdgbracketing2hdr.ui:162
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonCancel)
-#: rc.cpp:80 ui/kis_view2.cpp:519
+#: rc.cpp:80 ui/kis_view2.cpp:521
 msgid "Cancel"
 msgstr "Rinoncî"
 
@@ -10889,9 +10889,13 @@ msgstr "Istwere des coleurs"
 msgid "Image Docker"
 msgstr "Panea d' usteye palete"
 
-#: plugins/extensions/dockers/smallcolorselector/smallcolorselector_dock.cc:38
+#: plugins/extensions/dockers/smallcolorselector/smallcolorselector_dock.cc:45
 msgid "Small Color Selector"
 msgstr "Tchoezixheu d' pititès coleurs"
+
+#: plugins/extensions/dockers/specificcolorselector/specificcolorselector_dock.cc:31
+msgid "Specific Color Selector"
+msgstr "Tchoezixheu d'&nbsp;coleurs sipecifikes"
 
 #: plugins/extensions/dockers/specificcolorselector/kis_color_input.cc:47
 #, kde-format
@@ -10904,9 +10908,11 @@ msgstr "%1:"
 msgid "Color name:"
 msgstr "Espåce di coleurs:"
 
-#: plugins/extensions/dockers/specificcolorselector/specificcolorselector_dock.cc:31
-msgid "Specific Color Selector"
-msgstr "Tchoezixheu d'&nbsp;coleurs sipecifikes"
+#: plugins/extensions/dockers/specificcolorselector/kis_specific_color_selector_widget.cc:53
+#, fuzzy
+#| msgid "Color Selector"
+msgid "Show Colorspace Selector"
+msgstr "Tchoezixheu di coleur"
 
 #: plugins/extensions/dockers/tasksetdocker/tasksetdocker_dock.cpp:81
 #, fuzzy
@@ -12146,7 +12152,7 @@ msgstr "Noeri"
 
 #: plugins/paintops/libpaintop/kis_pressure_mirror_option.cpp:31
 #: plugins/tools/defaulttools/kis_tool_multihand.cpp:203
-#: ui/kis_paintop_box.cc:207
+#: ui/kis_paintop_box.cc:208
 #, fuzzy
 #| msgid "Crop Image"
 msgid "Mirror"
@@ -13006,10 +13012,6 @@ msgstr "Muzurer l' distance inte deus ponts"
 msgid "Paint with multibrushes"
 msgstr "Ponde avou des pinceas"
 
-#: plugins/tools/defaulttools/kis_tool_path.h:75
-msgid "Draw a path."
-msgstr "Dessiner on tchmin."
-
 #: plugins/tools/defaulttools/kis_tool_rectangle.h:61
 #, fuzzy
 #| msgid "Draw a rectangle"
@@ -13205,6 +13207,12 @@ msgid ""
 "Alt+Drag will move the origin of the currently displayed line around, Shift"
 "+Drag will force you to draw straight lines"
 msgstr ""
+
+#: plugins/tools/defaulttools/kis_tool_path.h:75
+#, fuzzy
+#| msgid "Draw a polygon. Shift-mouseclick ends the polygon."
+msgid "Draw a path. Shift-mouseclick ends the path."
+msgstr "Dessiner on poligone. MAJ+clitch del sori fini l' poligone."
 
 #: plugins/tools/selectiontools/kis_tool_select_contiguous.h:62
 msgid "Select a contiguous area of colors"
@@ -13919,7 +13927,7 @@ msgid "&Patterns"
 msgstr "&Patrons"
 
 #: ui/kis_control_frame.cpp:87 ui/kis_control_frame.cpp:88
-#: ui/kis_control_frame.cpp:193
+#: ui/kis_control_frame.cpp:191
 msgid "Gradients"
 msgstr "Gradyints"
 
@@ -13931,15 +13939,15 @@ msgstr "&Gradyints"
 msgid "&Color"
 msgstr "&Coleur"
 
-#: ui/kis_control_frame.cpp:118
+#: ui/kis_control_frame.cpp:116
 msgid "&Painter's Tools"
 msgstr "Usteyes då &pondeu"
 
-#: ui/kis_control_frame.cpp:153
+#: ui/kis_control_frame.cpp:151
 msgid "Patterns"
 msgstr "Patrons"
 
-#: ui/kis_control_frame.cpp:156 ui/kis_control_frame.cpp:158
+#: ui/kis_control_frame.cpp:154 ui/kis_control_frame.cpp:156
 msgid "Custom Pattern"
 msgstr "Patron da vosse"
 
@@ -14208,47 +14216,47 @@ msgstr "Môde di muzuraedje:"
 msgid "Flow:"
 msgstr "Londjinnmint"
 
-#: ui/kis_paintop_box.cc:158
+#: ui/kis_paintop_box.cc:159
 msgid "Mode: "
 msgstr "Môde:"
 
-#: ui/kis_paintop_box.cc:164
+#: ui/kis_paintop_box.cc:165
 #, fuzzy
 #| msgid "&Save to Presets"
 msgid "Save to Palette"
 msgstr "&Schaper dins les prédefinis"
 
-#: ui/kis_paintop_box.cc:169
+#: ui/kis_paintop_box.cc:170
 #, fuzzy
 #| msgid "Colorspace"
 msgid "Choose workspace"
 msgstr "Espåce di coleurs"
 
-#: ui/kis_paintop_box.cc:190
+#: ui/kis_paintop_box.cc:191
 #, fuzzy
 #| msgid "Brush size"
 msgid "Brush composite"
 msgstr "Grandeu do pincea"
 
-#: ui/kis_paintop_box.cc:194
+#: ui/kis_paintop_box.cc:195
 #, fuzzy
 #| msgid "Bristles"
 msgid "Brush option slider 1"
 msgstr "Pwels"
 
-#: ui/kis_paintop_box.cc:198
+#: ui/kis_paintop_box.cc:199
 #, fuzzy
 #| msgid "Bristles"
 msgid "Brush option slider 2"
 msgstr "Pwels"
 
-#: ui/kis_paintop_box.cc:211
+#: ui/kis_paintop_box.cc:212
 #, fuzzy
 #| msgid "Add to palette:"
 msgid "Add to palette"
 msgstr "Radjouter al palete"
 
-#: ui/kis_paintop_box.cc:215
+#: ui/kis_paintop_box.cc:216
 #, fuzzy
 #| msgid "Colorspace"
 msgid "Workspaces"
@@ -14489,35 +14497,35 @@ msgstr ""
 msgid "Shows just the canvas or the whole window"
 msgstr ""
 
-#: ui/kis_view2.cpp:511
+#: ui/kis_view2.cpp:513
 msgid "Insert as New Layer"
 msgstr "Sitchî come novele coûtche"
 
-#: ui/kis_view2.cpp:512
+#: ui/kis_view2.cpp:514
 msgid "Insert as New Layers"
 msgstr "Sitchî come novelès coûtches"
 
-#: ui/kis_view2.cpp:514
+#: ui/kis_view2.cpp:516
 msgid "Open in New Document"
 msgstr "Drovi e novea documint"
 
-#: ui/kis_view2.cpp:515
+#: ui/kis_view2.cpp:517
 msgid "Open in New Documents"
 msgstr "Drovi e noveas documints"
 
-#: ui/kis_view2.cpp:517
+#: ui/kis_view2.cpp:519
 msgid "Replace Current Document"
 msgstr ""
 
-#: ui/kis_view2.cpp:735
+#: ui/kis_view2.cpp:737
 msgid "Edit Palette..."
 msgstr "Candjî palete..."
 
-#: ui/kis_view2.cpp:740
+#: ui/kis_view2.cpp:742
 msgid "&Themes"
 msgstr ""
 
-#: ui/kis_view2.cpp:871 ui/kis_view2.cpp:874
+#: ui/kis_view2.cpp:873 ui/kis_view2.cpp:876
 msgid "Edit Palette"
 msgstr "Candjî palete"
 
@@ -14732,6 +14740,9 @@ msgstr ""
 #: main.cc:50
 msgid "File(s) or URL(s) to open"
 msgstr "Fitchî(s) ou URL(s) a drovi"
+
+#~ msgid "Draw a path."
+#~ msgstr "Dessiner on tchmin."
 
 #, fuzzy
 #~| msgid "&Paint Layer"
