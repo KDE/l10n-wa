@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-04-23 02:34+0200\n"
+"POT-Creation-Date: 2012-04-24 03:24+0200\n"
 "PO-Revision-Date: 2011-01-17 21:09+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -1135,18 +1135,6 @@ msgctxt "(qtundo-format)"
 msgid "Change page layout"
 msgstr "Candjî adjinçmint del pådje"
 
-#. i18n: file: main/rdf/KoRdfLocationEditWidgetMarble.ui:17
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#. i18n: file: main/rdf/KoRdfLocationViewWidgetMarble.ui:24
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: koreport/common/KoReportItemBase.cpp:28 rc.cpp:313 rc.cpp:337
-msgid "Name"
-msgstr "No:"
-
-#: koreport/common/KoReportItemBase.cpp:28
-msgid "Object Name"
-msgstr "No di l' objet"
-
 #: koreport/common/KoReportItemLine.cpp:67
 #: koreport/items/check/KoReportItemCheck.cpp:82
 #: koreport/items/field/KoReportItemField.cpp:107
@@ -1175,6 +1163,22 @@ msgstr "Stîle del roye"
 msgid "Position"
 msgstr "Eplaeçmint"
 
+#: koreport/common/krsize.cpp:26
+msgid "Size"
+msgstr "Grandeu"
+
+#. i18n: file: main/rdf/KoRdfLocationEditWidgetMarble.ui:17
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: file: main/rdf/KoRdfLocationViewWidgetMarble.ui:24
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: koreport/common/KoReportItemBase.cpp:28 rc.cpp:313 rc.cpp:337
+msgid "Name"
+msgstr "No:"
+
+#: koreport/common/KoReportItemBase.cpp:28
+msgid "Object Name"
+msgstr "No di l' objet"
+
 #: koreport/common/krsectiondata.cpp:109
 msgid "Height"
 msgstr "Hôteur"
@@ -1185,10 +1189,6 @@ msgstr "Hôteur"
 #: koreport/items/text/KoReportItemText.cpp:123
 msgid "Background Color"
 msgstr "Coleur do fond"
-
-#: koreport/common/krsize.cpp:26
-msgid "Size"
-msgstr "Grandeu"
 
 #: koreport/items/check/KoReportCheckPlugin.cpp:36
 msgid "Check"
@@ -1371,16 +1371,6 @@ msgstr "Åk n' a nén stî"
 msgid "Unable to add a new group because its name would not be unique"
 msgstr "Dji n' sai radjouter d' novea groupe pask' i nd onk k' a ddja s' no"
 
-#: koreport/wrtembed/KoReportDesignerItemBase.cpp:124
-#, kde-format
-msgctxt "<data-source>: <object>"
-msgid "%1: %2"
-msgstr "%1 : %2"
-
-#: koreport/wrtembed/reportsection.cpp:95
-msgid "Detail"
-msgstr "Sipepieus"
-
 #: koreport/wrtembed/KoReportDesigner.cpp:493
 msgid "Page Header (Any)"
 msgstr "Tiestire del pådje (tolminme)"
@@ -1511,6 +1501,16 @@ msgstr "Disfacer"
 #: koreport/wrtembed/KoReportDesigner.cpp:1187
 msgid "Line"
 msgstr "Roye"
+
+#: koreport/wrtembed/KoReportDesignerItemBase.cpp:124
+#, kde-format
+msgctxt "<data-source>: <object>"
+msgid "%1: %2"
+msgstr "%1 : %2"
+
+#: koreport/wrtembed/reportsection.cpp:95
+msgid "Detail"
+msgstr "Sipepieus"
 
 #: kotext/InsertTextLocator.cpp:33
 msgid "Index Reference"
@@ -2027,6 +2027,168 @@ msgstr "Dji n' a savou tcherdjî l' modele %1."
 msgid "Unknown Calligra MimeType %1. Check your installation."
 msgstr "Sôre Mime KOffice %1 nén cnoxhowe. Verifyîz vost astalaedje."
 
+#: main/KoView.cpp:505
+msgid "&New View"
+msgstr "&Novele vuwe"
+
+#: main/KoDocumentInfo.cpp:51
+msgid "Unknown"
+msgstr "Nén cnoxhou"
+
+#: main/KoDocumentInfoDlg.cpp:93 main/KoMainWindow.cpp:282
+msgid "Document Information"
+msgstr "Informåcion sol Documint"
+
+#: main/KoDocumentInfoDlg.cpp:108 main/KoDocumentInfoDlg.cpp:109
+msgid "General"
+msgstr "Djenerå"
+
+#: main/KoDocumentInfoDlg.cpp:127 main/KoDocumentInfoDlg.cpp:128
+msgid "Author"
+msgstr "Oteur"
+
+#: main/KoDocumentInfoDlg.cpp:143 main/KoDocumentInfoDlg.cpp:144
+msgid "Rdf"
+msgstr "Rdf"
+
+#: main/KoDocumentInfoDlg.cpp:192
+#, fuzzy
+#| msgid "Use ';' (Example: Office;KDE;KOffice)"
+msgid "Use ';' (Example: Office;KDE;Calligra)"
+msgstr "Si siervi d'  « ; » (Metans : Office;KDE;KOffice)"
+
+#: main/KoDocumentInfoDlg.cpp:222 main/KoDocumentInfoDlg.cpp:355
+msgid "This document will be decrypted"
+msgstr "Ci documint va esse discripté"
+
+#: main/KoDocumentInfoDlg.cpp:224 main/KoDocumentInfoDlg.cpp:357
+msgid "Do not decrypt"
+msgstr "Èn nén discripter"
+
+#: main/KoDocumentInfoDlg.cpp:227 main/KoDocumentInfoDlg.cpp:360
+msgid "This document is encrypted"
+msgstr "Ci documint est ecripté"
+
+#: main/KoDocumentInfoDlg.cpp:229 main/KoDocumentInfoDlg.cpp:362
+msgid "D&ecrypt"
+msgstr "D&iscripter"
+
+#: main/KoDocumentInfoDlg.cpp:234 main/KoDocumentInfoDlg.cpp:367
+msgid "This document will be encrypted."
+msgstr "Ci documint va esse ecripté."
+
+#: main/KoDocumentInfoDlg.cpp:236 main/KoDocumentInfoDlg.cpp:369
+msgid "Do not encrypt"
+msgstr "Èn nén ecripter"
+
+#: main/KoDocumentInfoDlg.cpp:239 main/KoDocumentInfoDlg.cpp:372
+msgid "This document is not encrypted"
+msgstr "Ci documint n' est nén ecripté"
+
+#. i18n: file: main/koDocumentInfoAboutWidget.ui:298
+#. i18n: ectx: property (text), widget (QPushButton, pbEncrypt)
+#: main/KoDocumentInfoDlg.cpp:241 main/KoDocumentInfoDlg.cpp:374 rc.cpp:406
+msgid "&Encrypt"
+msgstr "&Ecripter"
+
+#: main/KoDocumentInfoDlg.cpp:245
+msgid "This document does not support encryption"
+msgstr "Ci documint n' sopoite nén l' ecriptaedje"
+
+#: main/KoDocumentInfoDlg.cpp:409
+msgid ""
+"<qt>Decrypting the document will remove the password protection from it."
+"<p>Do you still want to decrypt the file?</qt>"
+msgstr ""
+"<qt>Discripter l' documint lyi oistêyrè l' waerantixhaedje do scret. "
+"<p>Voloz vs co discripter l' fitchî ?</qt>"
+
+#: main/KoDocumentInfoDlg.cpp:411
+msgid "Confirm Decrypt"
+msgstr "Acertiner l' discriptaedje"
+
+#: main/KoDocumentInfoDlg.cpp:412
+msgid "Decrypt"
+msgstr "Discripter"
+
+#: main/KoDocumentInfoDlg.cpp:423
+msgid ""
+"<qt>Your document could not be saved automatically.<p>To complete the "
+"decryption, please save the document.</qt>"
+msgstr ""
+"<qt>Dji n' a savou schaper otomaticmint vosse documint.<p>Po fini l' "
+"discriptaedje, schapez l' documint, s' i vs plait.</qt>"
+
+#: main/KoDocumentInfoDlg.cpp:425 main/KoDocumentInfoDlg.cpp:433
+#: main/KoDocumentInfoDlg.cpp:466 main/KoDocumentInfoDlg.cpp:474
+msgid "Save Document"
+msgstr "Schaper documint"
+
+#: main/KoDocumentInfoDlg.cpp:431
+msgid ""
+"<qt>The document has been changed since it was opened. To complete the "
+"decryption the document needs to be saved.<p>Do you want to save the "
+"document now?</qt>"
+msgstr ""
+"<qt>Li documint a stî candjî dispoy k' il  a stî drovou. Po fini l' "
+"discriptaedje i fåt schaper l' documint.<p>Voloz vs schaper l' documint sol "
+"côp ?<qt>"
+
+#: main/KoDocumentInfoDlg.cpp:445 main/KoMainWindow.cpp:757
+#, kde-format
+msgid "%1 (unknown file type)"
+msgstr "%1 (sôre di fitchî nén cnoxhowe)"
+
+#: main/KoDocumentInfoDlg.cpp:448
+#, kde-format
+msgid ""
+"<qt>The document is currently saved as %1. The document needs to be changed "
+"to <b>OASIS OpenDocument</b> to be encrypted.<p>Do you want to change the "
+"file to OASIS OpenDocument?</qt>"
+msgstr ""
+"<qt>Li documint est schapé pol moumint come %1. I fåt candjî l' documint e "
+"<b>OASIS OpenDocument</p> po l' ecripter.<p>Voloz vs candjî l' fitchî e "
+"OASIS OpenDocument ?<qt>"
+
+#: main/KoDocumentInfoDlg.cpp:450
+msgid "Change Filetype"
+msgstr "Candjî sôre di fitchî"
+
+#: main/KoDocumentInfoDlg.cpp:451
+msgid "Change"
+msgstr "Candjî"
+
+#: main/KoDocumentInfoDlg.cpp:464
+msgid ""
+"<qt>Your document could not be saved automatically.<p>To complete the "
+"encryption, please save the document.</qt>"
+msgstr ""
+"<qt>Dji n' a savou schaper vosse documint otomaticmint.<p>Po fini l' "
+"ecriptaedje, schapez l' documint s' i vs plait.</qt>"
+
+#: main/KoDocumentInfoDlg.cpp:472
+msgid ""
+"<qt>The document has been changed since it was opened. To complete the "
+"encryption the document needs to be saved.<p>Do you want to save the "
+"document now?</qt>"
+msgstr ""
+"<qt>Li documint a stî candjî dispoy k' il  a stî drovou. Po fini l' "
+"ecriptaedje i fåt schaper l' documint.<p>Voloz vs schaper l' documint sol "
+"côp ?<qt>"
+
+#: main/KoDocumentSectionDelegate.cpp:512
+#, kde-format
+msgid "%1 %"
+msgstr "%1 %"
+
+#: main/KoDocumentSectionToolTip.cpp:50
+msgid "Yes"
+msgstr "Oyi"
+
+#: main/KoDocumentSectionToolTip.cpp:50
+msgid "No"
+msgstr "Neni"
+
 #: main/KoDocument.cpp:513
 msgid "Making backup..."
 msgstr "Fijhant ene copeye di såvrité..."
@@ -2240,7 +2402,7 @@ msgstr ""
 ">Modêyes po drovi ene viye modêye."
 
 #: main/KoDocument.cpp:2159 main/KoMainWindow.cpp:1141
-#: pigment/resources/KoColorSet.cpp:174
+#: pigment/resources/KoColorSet.cpp:175
 msgid "Untitled"
 msgstr "Sins no"
 
@@ -2311,167 +2473,9 @@ msgstr "on grafike"
 msgid "a drawing"
 msgstr "on dessin"
 
-#: main/KoDocument.cpp:2757
+#: main/KoDocument.cpp:2752
 msgid "Embedding Object"
 msgstr "Ravalaedje d' objet"
-
-#: main/KoDocumentInfo.cpp:51
-msgid "Unknown"
-msgstr "Nén cnoxhou"
-
-#: main/KoDocumentInfoDlg.cpp:93 main/KoMainWindow.cpp:282
-msgid "Document Information"
-msgstr "Informåcion sol Documint"
-
-#: main/KoDocumentInfoDlg.cpp:108 main/KoDocumentInfoDlg.cpp:109
-msgid "General"
-msgstr "Djenerå"
-
-#: main/KoDocumentInfoDlg.cpp:127 main/KoDocumentInfoDlg.cpp:128
-msgid "Author"
-msgstr "Oteur"
-
-#: main/KoDocumentInfoDlg.cpp:143 main/KoDocumentInfoDlg.cpp:144
-msgid "Rdf"
-msgstr "Rdf"
-
-#: main/KoDocumentInfoDlg.cpp:192
-#, fuzzy
-#| msgid "Use ';' (Example: Office;KDE;KOffice)"
-msgid "Use ';' (Example: Office;KDE;Calligra)"
-msgstr "Si siervi d'  « ; » (Metans : Office;KDE;KOffice)"
-
-#: main/KoDocumentInfoDlg.cpp:222 main/KoDocumentInfoDlg.cpp:355
-msgid "This document will be decrypted"
-msgstr "Ci documint va esse discripté"
-
-#: main/KoDocumentInfoDlg.cpp:224 main/KoDocumentInfoDlg.cpp:357
-msgid "Do not decrypt"
-msgstr "Èn nén discripter"
-
-#: main/KoDocumentInfoDlg.cpp:227 main/KoDocumentInfoDlg.cpp:360
-msgid "This document is encrypted"
-msgstr "Ci documint est ecripté"
-
-#: main/KoDocumentInfoDlg.cpp:229 main/KoDocumentInfoDlg.cpp:362
-msgid "D&ecrypt"
-msgstr "D&iscripter"
-
-#: main/KoDocumentInfoDlg.cpp:234 main/KoDocumentInfoDlg.cpp:367
-msgid "This document will be encrypted."
-msgstr "Ci documint va esse ecripté."
-
-#: main/KoDocumentInfoDlg.cpp:236 main/KoDocumentInfoDlg.cpp:369
-msgid "Do not encrypt"
-msgstr "Èn nén ecripter"
-
-#: main/KoDocumentInfoDlg.cpp:239 main/KoDocumentInfoDlg.cpp:372
-msgid "This document is not encrypted"
-msgstr "Ci documint n' est nén ecripté"
-
-#. i18n: file: main/koDocumentInfoAboutWidget.ui:298
-#. i18n: ectx: property (text), widget (QPushButton, pbEncrypt)
-#: main/KoDocumentInfoDlg.cpp:241 main/KoDocumentInfoDlg.cpp:374 rc.cpp:406
-msgid "&Encrypt"
-msgstr "&Ecripter"
-
-#: main/KoDocumentInfoDlg.cpp:245
-msgid "This document does not support encryption"
-msgstr "Ci documint n' sopoite nén l' ecriptaedje"
-
-#: main/KoDocumentInfoDlg.cpp:409
-msgid ""
-"<qt>Decrypting the document will remove the password protection from it."
-"<p>Do you still want to decrypt the file?</qt>"
-msgstr ""
-"<qt>Discripter l' documint lyi oistêyrè l' waerantixhaedje do scret. "
-"<p>Voloz vs co discripter l' fitchî ?</qt>"
-
-#: main/KoDocumentInfoDlg.cpp:411
-msgid "Confirm Decrypt"
-msgstr "Acertiner l' discriptaedje"
-
-#: main/KoDocumentInfoDlg.cpp:412
-msgid "Decrypt"
-msgstr "Discripter"
-
-#: main/KoDocumentInfoDlg.cpp:423
-msgid ""
-"<qt>Your document could not be saved automatically.<p>To complete the "
-"decryption, please save the document.</qt>"
-msgstr ""
-"<qt>Dji n' a savou schaper otomaticmint vosse documint.<p>Po fini l' "
-"discriptaedje, schapez l' documint, s' i vs plait.</qt>"
-
-#: main/KoDocumentInfoDlg.cpp:425 main/KoDocumentInfoDlg.cpp:433
-#: main/KoDocumentInfoDlg.cpp:466 main/KoDocumentInfoDlg.cpp:474
-msgid "Save Document"
-msgstr "Schaper documint"
-
-#: main/KoDocumentInfoDlg.cpp:431
-msgid ""
-"<qt>The document has been changed since it was opened. To complete the "
-"decryption the document needs to be saved.<p>Do you want to save the "
-"document now?</qt>"
-msgstr ""
-"<qt>Li documint a stî candjî dispoy k' il  a stî drovou. Po fini l' "
-"discriptaedje i fåt schaper l' documint.<p>Voloz vs schaper l' documint sol "
-"côp ?<qt>"
-
-#: main/KoDocumentInfoDlg.cpp:445 main/KoMainWindow.cpp:757
-#, kde-format
-msgid "%1 (unknown file type)"
-msgstr "%1 (sôre di fitchî nén cnoxhowe)"
-
-#: main/KoDocumentInfoDlg.cpp:448
-#, kde-format
-msgid ""
-"<qt>The document is currently saved as %1. The document needs to be changed "
-"to <b>OASIS OpenDocument</b> to be encrypted.<p>Do you want to change the "
-"file to OASIS OpenDocument?</qt>"
-msgstr ""
-"<qt>Li documint est schapé pol moumint come %1. I fåt candjî l' documint e "
-"<b>OASIS OpenDocument</p> po l' ecripter.<p>Voloz vs candjî l' fitchî e "
-"OASIS OpenDocument ?<qt>"
-
-#: main/KoDocumentInfoDlg.cpp:450
-msgid "Change Filetype"
-msgstr "Candjî sôre di fitchî"
-
-#: main/KoDocumentInfoDlg.cpp:451
-msgid "Change"
-msgstr "Candjî"
-
-#: main/KoDocumentInfoDlg.cpp:464
-msgid ""
-"<qt>Your document could not be saved automatically.<p>To complete the "
-"encryption, please save the document.</qt>"
-msgstr ""
-"<qt>Dji n' a savou schaper vosse documint otomaticmint.<p>Po fini l' "
-"ecriptaedje, schapez l' documint s' i vs plait.</qt>"
-
-#: main/KoDocumentInfoDlg.cpp:472
-msgid ""
-"<qt>The document has been changed since it was opened. To complete the "
-"encryption the document needs to be saved.<p>Do you want to save the "
-"document now?</qt>"
-msgstr ""
-"<qt>Li documint a stî candjî dispoy k' il  a stî drovou. Po fini l' "
-"ecriptaedje i fåt schaper l' documint.<p>Voloz vs schaper l' documint sol "
-"côp ?<qt>"
-
-#: main/KoDocumentSectionDelegate.cpp:512
-#, kde-format
-msgid "%1 %"
-msgstr "%1 %"
-
-#: main/KoDocumentSectionToolTip.cpp:50
-msgid "Yes"
-msgstr "Oyi"
-
-#: main/KoDocumentSectionToolTip.cpp:50
-msgid "No"
-msgstr "Neni"
 
 #: main/KoExistingDocumentPane.cpp:45 main/KoMainWindow.cpp:1216
 #: main/KoOpenPane.cpp:359 main/KoOpenPane.cpp:363
@@ -2497,6 +2501,18 @@ msgstr "%1 (Ecripté)"
 #, kde-format
 msgid "%1 (%2 Compatible)"
 msgstr "(%1 (Copatibe avou %2)"
+
+#: main/KoRuler.cpp:1271
+msgid "First line indent"
+msgstr "Ritrait del prumire roye"
+
+#: main/KoRuler.cpp:1272
+msgid "Left indent"
+msgstr "Ritrait di hintche"
+
+#: main/KoRuler.cpp:1273
+msgid "Right indent"
+msgstr "Ritrait di droete"
 
 #: main/KoFilterManager.cpp:230 main/KoFilterManager.cpp:239
 msgid "Could not export file."
@@ -2787,18 +2803,6 @@ msgctxt "File access date and time. %1 is date time"
 msgid "<tr><td><b>Accessed:</b></td><td>%1</td></tr>"
 msgstr "<tr><td><b>Eployî:</b></td><td>%1</td></tr>"
 
-#: main/KoRuler.cpp:1271
-msgid "First line indent"
-msgstr "Ritrait del prumire roye"
-
-#: main/KoRuler.cpp:1272
-msgid "Left indent"
-msgstr "Ritrait di hintche"
-
-#: main/KoRuler.cpp:1273
-msgid "Right indent"
-msgstr "Ritrait di droete"
-
 #: main/KoStandardAction.cpp:31
 msgid "Show Guides"
 msgstr "Mostrer moennaedjes"
@@ -2950,6 +2954,22 @@ msgstr "Dji n' a savou radjouter ene novele modêye"
 msgid "Date: %1"
 msgstr "Date: %1"
 
+#: main/config/KoConfigDocumentPage.cpp:75
+msgid "Auto save (min):"
+msgstr "Schapaedje otomatike (mun):"
+
+#: main/config/KoConfigDocumentPage.cpp:76
+msgid "No auto save"
+msgstr "Nou schapaedje otomatike"
+
+#: main/config/KoConfigDocumentPage.cpp:77
+msgid "min"
+msgstr "mun"
+
+#: main/config/KoConfigDocumentPage.cpp:80
+msgid "Create backup file"
+msgstr "Ahiver copeye di såvrité"
+
 #: main/config/KoConfigGridPage.cpp:67
 msgid "Show grid:"
 msgstr "Mostrer grile:"
@@ -2976,41 +2996,25 @@ msgctxt "Vertical grid spacing"
 msgid "&Vertical:"
 msgstr "&Astampé:"
 
-#: main/config/KoConfigDocumentPage.cpp:75
-msgid "Auto save (min):"
-msgstr "Schapaedje otomatike (mun):"
-
-#: main/config/KoConfigDocumentPage.cpp:76
-msgid "No auto save"
-msgstr "Nou schapaedje otomatike"
-
-#: main/config/KoConfigDocumentPage.cpp:77
-msgid "min"
-msgstr "mun"
-
-#: main/config/KoConfigDocumentPage.cpp:80
-msgid "Create backup file"
-msgstr "Ahiver copeye di såvrité"
-
-#: main/config/KoConfigMiscPage.cpp:89
+#: main/config/KoConfigMiscPage.cpp:88
 msgid "Units:"
 msgstr "Unités :"
 
-#: main/config/KoConfigMiscPage.cpp:97
+#: main/config/KoConfigMiscPage.cpp:96
 msgid "Handle radius:"
 msgstr "Reyon del pougneye :"
 
-#: main/config/KoConfigMiscPage.cpp:105
+#: main/config/KoConfigMiscPage.cpp:104
 msgid "Grab sensitivity:"
 msgstr "Sinsiûlisté di l' apougnaedje :"
 
-#: main/config/KoConfigMiscPage.cpp:113
+#: main/config/KoConfigMiscPage.cpp:112
 #, fuzzy
 #| msgid "Copy offset:"
 msgid "Paste offset:"
 msgstr "Displaeçmint do copiaedje :"
 
-#: main/config/KoConfigMiscPage.cpp:122
+#: main/config/KoConfigMiscPage.cpp:121
 msgid "Paste at Cursor"
 msgstr ""
 
@@ -3195,10 +3199,6 @@ msgstr "Tchuzes des usteyes"
 #: main/KoToolDocker.cpp:223
 msgid "Toggles organising the options in tabs or not"
 msgstr ""
-
-#: main/KoView.cpp:505
-msgid "&New View"
-msgstr "&Novele vuwe"
 
 #: odf/KoEncryptedStore.cpp:165
 msgid ""
@@ -3433,39 +3433,39 @@ msgstr "Li môde do ridant n' est nén sopoirté po des eplaeçmints å lon."
 msgid "Calligra Storage"
 msgstr ""
 
-#: odf/KoUnit.cpp:53
+#: odf/KoUnit.cpp:48
 msgid "Millimeters (mm)"
 msgstr "Milimetes (mm)"
 
-#: odf/KoUnit.cpp:55
+#: odf/KoUnit.cpp:50
 msgid "Centimeters (cm)"
 msgstr "Cintimetes (cm)"
 
-#: odf/KoUnit.cpp:57
+#: odf/KoUnit.cpp:52
 msgid "Decimeters (dm)"
 msgstr "Decimetes (dm)"
 
-#: odf/KoUnit.cpp:59
+#: odf/KoUnit.cpp:54
 msgid "Inches (in)"
 msgstr "Pôces (in)"
 
-#: odf/KoUnit.cpp:61
+#: odf/KoUnit.cpp:56
 msgid "Pica (pi)"
 msgstr "Picas (pi)"
 
-#: odf/KoUnit.cpp:63
+#: odf/KoUnit.cpp:58
 msgid "Cicero (cc)"
 msgstr "Cicero (cc)"
 
-#: odf/KoUnit.cpp:65
+#: odf/KoUnit.cpp:60
 msgid "Points (pt)"
 msgstr "Ponts (pt)"
 
-#: odf/KoUnit.cpp:67
+#: odf/KoUnit.cpp:62
 msgid "Pixels (px)"
 msgstr "Picsels (px)"
 
-#: odf/KoUnit.cpp:69
+#: odf/KoUnit.cpp:64
 msgid "Error!"
 msgstr "Aroke!"
 
