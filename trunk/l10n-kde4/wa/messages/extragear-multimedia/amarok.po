@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-05-03 04:24+0200\n"
+"POT-Creation-Date: 2012-05-04 03:59+0200\n"
 "PO-Revision-Date: 2011-09-21 08:11+0200\n"
 "Last-Translator: Djan Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -261,7 +261,7 @@ msgid "<b>%1</b> on <b>%2</b>"
 msgstr "<b>%1</b> so <b>%2</b>"
 
 #: EngineController.cpp:1432
-#: core-impl/collections/ipodcollection/IpodMeta.cpp:201
+#: core-impl/collections/ipodcollection/IpodMeta.cpp:202
 #: core-impl/collections/mediadevicecollection/MediaDeviceMeta.cpp:95
 msgid "Unknown track"
 msgstr "Boket nén cnoxhou"
@@ -2082,7 +2082,7 @@ msgstr "Nén cnoxhou"
 
 #: browsers/CollectionTreeItemModelBase.cpp:316
 #: core-impl/collections/db/sql/SqlMeta.cpp:420
-#: core-impl/collections/ipodcollection/IpodMeta.cpp:95
+#: core-impl/collections/ipodcollection/IpodMeta.cpp:96
 #: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:155
 #: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:703
 #: core-impl/collections/support/ArtistHelper.cpp:40
@@ -2367,7 +2367,7 @@ msgid "Close"
 msgstr "Clôre"
 
 #: context/applets/currenttrack/CurrentTrack.h:38
-#: core-impl/collections/ipodcollection/IpodMeta.cpp:200
+#: core-impl/collections/ipodcollection/IpodMeta.cpp:201
 #: core-impl/collections/mediadevicecollection/MediaDeviceMeta.cpp:93
 #: core-impl/collections/mtpcollection/handler/MtpHandler.cpp:421
 #: core/meta/Meta.cpp:394 covermanager/CoverFetchUnit.cpp:596
@@ -3980,41 +3980,88 @@ msgstr ""
 msgid "Cannot initialize iPod due to an unreported error."
 msgstr ""
 
-#: core-impl/collections/ipodcollection/IpodMeta.cpp:199
+#: core-impl/collections/ipodcollection/support/IphoneMountPoint.cpp:54
+msgid "Connecting to iPhone, iPad or iPod touch failed."
+msgstr ""
+
+#: core-impl/collections/ipodcollection/IpodCollection.cpp:102
+#: core-impl/collections/umscollection/UmsCollection.cpp:235
+#, fuzzy
+#| msgid "Configure Media Device"
+msgid "&Configure Device"
+msgstr "Apontyî éndjin media"
+
+#: core-impl/collections/ipodcollection/IpodCollection.cpp:106
+#: core-impl/collections/umscollection/UmsCollection.cpp:243
+#, fuzzy
+#| msgid "&Read Device"
+msgid "&Eject Device"
+msgstr "&Lére l' éndjins"
+
+#: core-impl/collections/ipodcollection/IpodCollection.cpp:115
+#, fuzzy
+#| msgid "Transcoding tracks"
+msgid "Re-add orphaned and forget stale tracks"
+msgstr "Coviersaedje des bokets"
+
+#: core-impl/collections/ipodcollection/IpodCollection.cpp:438
+#, fuzzy
+#| msgid "iPod Initialization Failed"
+msgctxt "iPod was successfully initialized"
+msgid "Initialization successful."
+msgstr "L' inicialijhaedje di l' iPod a fwait berwete"
+
+#: core-impl/collections/ipodcollection/IpodCollection.cpp:646
+#, kde-format
+msgctxt "%1: iPod collection name"
+msgid "iTunes database successfully written to %1"
+msgstr ""
+
+#: core-impl/collections/ipodcollection/IpodCollection.cpp:654
+#, kde-format
+msgctxt "%1: iPod collection name"
+msgid "Writing iTunes database to %1 failed without an indication of error"
+msgstr ""
+
+#: core-impl/collections/ipodcollection/IpodCollection.cpp:658
+#, fuzzy, kde-format
+#| msgid "Failed to write scanner batch file \"%1\""
+msgctxt "%1: iPod collection name, %2: technical error from libgpod"
+msgid "Writing iTunes database to %1 failed: %2"
+msgstr ""
+"Li scrijhaedje do fitchî « %1 » d' traitmint pa lots do corwaitoe a fwait "
+"berwete"
+
+#: core-impl/collections/ipodcollection/IpodMeta.cpp:200
 #: core-impl/collections/mediadevicecollection/MediaDeviceMeta.cpp:92
 #, fuzzy
 #| msgid "Collection"
 msgid "Unknown Collection"
 msgstr "Ramexhnêye"
 
-#: core-impl/collections/ipodcollection/IpodPlaylistProvider.cpp:36
-#, fuzzy
-#| msgid "Transcoding tracks"
-msgid "Re-add orphaned and forget stale tracks"
-msgstr "Coviersaedje des bokets"
-
-#: core-impl/collections/ipodcollection/IpodPlaylistProvider.cpp:232
+#: core-impl/collections/ipodcollection/IpodPlaylistProvider.cpp:225
 #, fuzzy
 #| msgid "Selected Tracks"
 msgctxt "iPod playlist name"
 msgid "Stale tracks"
 msgstr "Bokets tchoezis"
 
-#: core-impl/collections/ipodcollection/IpodPlaylistProvider.cpp:241
+#: core-impl/collections/ipodcollection/IpodPlaylistProvider.cpp:234
 #, fuzzy
 #| msgid "Find Orphaned Tracks"
 msgctxt "iPod playlist name"
 msgid "Orphaned tracks"
 msgstr "Trover des bokets ôrfulins"
 
-#: core-impl/collections/ipodcollection/IpodPlaylistProvider.cpp:264
+#: core-impl/collections/ipodcollection/IpodPlaylistProvider.cpp:257
 #, kde-format
 msgid ""
-"Stale and/or orphaned tracks detected on %1. You can go to Saved Playlists "
-"to add orphaned tracks back to iTunes database and to remove stale entries."
+"Stale and/or orphaned tracks detected on %1. You can resolve the situation "
+"using the <b>%2</b> collection action. You can also view the tracks under "
+"the Saved Playlists tab."
 msgstr ""
 
-#: core-impl/collections/ipodcollection/IpodPlaylistProvider.cpp:381
+#: core-impl/collections/ipodcollection/IpodPlaylistProvider.cpp:369
 #, kde-format
 msgid ""
 "Failed to process one track. (more info about it is in the Amarok debugging "
@@ -4025,7 +4072,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: core-impl/collections/ipodcollection/IpodPlaylistProvider.cpp:386
+#: core-impl/collections/ipodcollection/IpodPlaylistProvider.cpp:374
 #, kde-format
 msgctxt ""
 "Infrequently displayed message, don't bother with singlar forms. %1 to %3 "
@@ -4035,54 +4082,6 @@ msgid ""
 "database entries, %2 stale database entries removed, %3 orphaned tracks "
 "added back to the iTunes database. %4"
 msgstr ""
-
-#: core-impl/collections/ipodcollection/IpodCollection.cpp:88
-msgid ""
-"Cannot connect to iPhone or iPad. More information is available in the "
-"Amarok debug log."
-msgstr ""
-
-#: core-impl/collections/ipodcollection/IpodCollection.cpp:105
-#: core-impl/collections/umscollection/UmsCollection.cpp:235
-#, fuzzy
-#| msgid "Configure Media Device"
-msgid "&Configure Device"
-msgstr "Apontyî éndjin media"
-
-#: core-impl/collections/ipodcollection/IpodCollection.cpp:109
-#: core-impl/collections/umscollection/UmsCollection.cpp:243
-#, fuzzy
-#| msgid "&Read Device"
-msgid "&Eject Device"
-msgstr "&Lére l' éndjins"
-
-#: core-impl/collections/ipodcollection/IpodCollection.cpp:434
-#, fuzzy
-#| msgid "iPod Initialization Failed"
-msgctxt "iPod was successfully initialized"
-msgid "Initialization successful."
-msgstr "L' inicialijhaedje di l' iPod a fwait berwete"
-
-#: core-impl/collections/ipodcollection/IpodCollection.cpp:642
-#, kde-format
-msgctxt "%1: iPod collection name"
-msgid "iTunes database successfully written to %1"
-msgstr ""
-
-#: core-impl/collections/ipodcollection/IpodCollection.cpp:650
-#, kde-format
-msgctxt "%1: iPod collection name"
-msgid "Writing iTunes database to %1 failed without an indication of error"
-msgstr ""
-
-#: core-impl/collections/ipodcollection/IpodCollection.cpp:654
-#, fuzzy, kde-format
-#| msgid "Failed to write scanner batch file \"%1\""
-msgctxt "%1: iPod collection name, %2: technical error from libgpod"
-msgid "Writing iTunes database to %1 failed: %2"
-msgstr ""
-"Li scrijhaedje do fitchî « %1 » d' traitmint pa lots do corwaitoe a fwait "
-"berwete"
 
 #: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:315
 msgid "Copying Tracks Failed"
@@ -4718,84 +4717,6 @@ msgstr "Aberwetaedje do media Podcasse"
 msgid "Downloading Podcast \"%1\""
 msgstr "Dj' aberwete li Podcasse «%1»"
 
-#: core/meta/support/MetaUtility.cpp:399
-msgctxt ""
-"the time format for a time length when the time is below 1 hour see QTime "
-"documentation."
-msgid "m:ss"
-msgstr ""
-
-#: core/meta/support/MetaUtility.cpp:406
-#, fuzzy, kde-format
-#| msgid " plays"
-msgctxt "number of days with spacing for the pretty time"
-msgid "%1 day, "
-msgid_plural "%1 days, "
-msgstr[0] " djouwaedjes"
-msgstr[1] " djouwaedjes"
-
-#: core/meta/support/MetaUtility.cpp:407
-msgctxt ""
-"the time format for a time length when the time is 1 hour or above see QTime "
-"documentation."
-msgid "h:mm:ss"
-msgstr ""
-
-#: core/meta/support/MetaUtility.cpp:421
-#, fuzzy, kde-format
-#| msgid "year"
-msgctxt "number of years for the pretty time"
-msgid "%1 year"
-msgid_plural "%1 years"
-msgstr[0] "anêye"
-msgstr[1] "anêye"
-
-#: core/meta/support/MetaUtility.cpp:423
-#, fuzzy, kde-format
-#| msgid "Months"
-msgctxt "number of months for the pretty time"
-msgid "%1 month"
-msgid_plural "%1 months"
-msgstr[0] "Moes"
-msgstr[1] "Moes"
-
-#: core/meta/support/MetaUtility.cpp:425
-#, fuzzy, kde-format
-#| msgid " plays"
-msgctxt "number of days for the pretty time"
-msgid "%1 day"
-msgid_plural "%1 days"
-msgstr[0] " djouwaedjes"
-msgstr[1] " djouwaedjes"
-
-#: core/meta/support/MetaUtility.cpp:427
-#, fuzzy, kde-format
-#| msgid "Hours"
-msgctxt "number of hours for the pretty time"
-msgid "%1 hour"
-msgid_plural "%1 hours"
-msgstr[0] "Eures"
-msgstr[1] "Eures"
-
-#: core/meta/support/MetaUtility.cpp:429
-#, fuzzy, kde-format
-#| msgid " minute"
-#| msgid_plural " minutes"
-msgctxt "number of minutes for the pretty time"
-msgid "%1 minute"
-msgid_plural "%1 minutes"
-msgstr[0] " munute"
-msgstr[1] " munutes"
-
-#: core/meta/support/MetaUtility.cpp:431
-#, fuzzy, kde-format
-#| msgid "Seconds"
-msgctxt "number of seconds for the pretty time"
-msgid "%1 second"
-msgid_plural "%1 seconds"
-msgstr[0] "Segondes"
-msgstr[1] "Segondes"
-
 #: core/meta/support/MetaConstants.cpp:170
 #, fuzzy
 #| msgid "rating"
@@ -5158,6 +5079,84 @@ msgstr "etikete"
 msgctxt "One word translation used in the collection filter"
 msgid "modified"
 msgstr "%1 (candjî) "
+
+#: core/meta/support/MetaUtility.cpp:407
+msgctxt ""
+"the time format for a time length when the time is below 1 hour see QTime "
+"documentation."
+msgid "m:ss"
+msgstr ""
+
+#: core/meta/support/MetaUtility.cpp:414
+#, fuzzy, kde-format
+#| msgid " plays"
+msgctxt "number of days with spacing for the pretty time"
+msgid "%1 day, "
+msgid_plural "%1 days, "
+msgstr[0] " djouwaedjes"
+msgstr[1] " djouwaedjes"
+
+#: core/meta/support/MetaUtility.cpp:415
+msgctxt ""
+"the time format for a time length when the time is 1 hour or above see QTime "
+"documentation."
+msgid "h:mm:ss"
+msgstr ""
+
+#: core/meta/support/MetaUtility.cpp:429
+#, fuzzy, kde-format
+#| msgid "year"
+msgctxt "number of years for the pretty time"
+msgid "%1 year"
+msgid_plural "%1 years"
+msgstr[0] "anêye"
+msgstr[1] "anêye"
+
+#: core/meta/support/MetaUtility.cpp:431
+#, fuzzy, kde-format
+#| msgid "Months"
+msgctxt "number of months for the pretty time"
+msgid "%1 month"
+msgid_plural "%1 months"
+msgstr[0] "Moes"
+msgstr[1] "Moes"
+
+#: core/meta/support/MetaUtility.cpp:433
+#, fuzzy, kde-format
+#| msgid " plays"
+msgctxt "number of days for the pretty time"
+msgid "%1 day"
+msgid_plural "%1 days"
+msgstr[0] " djouwaedjes"
+msgstr[1] " djouwaedjes"
+
+#: core/meta/support/MetaUtility.cpp:435
+#, fuzzy, kde-format
+#| msgid "Hours"
+msgctxt "number of hours for the pretty time"
+msgid "%1 hour"
+msgid_plural "%1 hours"
+msgstr[0] "Eures"
+msgstr[1] "Eures"
+
+#: core/meta/support/MetaUtility.cpp:437
+#, fuzzy, kde-format
+#| msgid " minute"
+#| msgid_plural " minutes"
+msgctxt "number of minutes for the pretty time"
+msgid "%1 minute"
+msgid_plural "%1 minutes"
+msgstr[0] " munute"
+msgstr[1] " munutes"
+
+#: core/meta/support/MetaUtility.cpp:439
+#, fuzzy, kde-format
+#| msgid "Seconds"
+msgctxt "number of seconds for the pretty time"
+msgid "%1 second"
+msgid_plural "%1 seconds"
+msgstr[0] "Segondes"
+msgstr[1] "Segondes"
 
 #: core/podcasts/PodcastReader.cpp:455
 #, kde-format
@@ -16630,7 +16629,7 @@ msgstr ""
 msgid "Verbosity from 0-3 (highest)"
 msgstr "Tchafiaedje di 0 a 3 (li pus hôt)"
 
-#: App.cpp:636
+#: App.cpp:635
 msgid ""
 "The embedded database was not found; you must set up a database server "
 "connection.\n"
@@ -16640,7 +16639,7 @@ msgstr ""
 "raloyaedje a on sierveu di båze di dnêyes.\n"
 "Vos dvoz renonder Amarok après awè fwait ça."
 
-#: App.cpp:637
+#: App.cpp:636
 msgid ""
 "The connection details for the database server were invalid.\n"
 "You must enter correct settings and restart Amarok after doing this."
@@ -16648,15 +16647,15 @@ msgstr ""
 "Les detays do raloyaedje å sierveu d' båze di dnêyes n' estént nén valåbe.\n"
 "Vos dvoz dner les bons apontiaedjes eyet renonder Amarok après awè fwait ça."
 
-#: App.cpp:638
+#: App.cpp:637
 msgid "Database Error"
 msgstr "Aroke del båze di dnêyes"
 
-#: App.cpp:683
+#: App.cpp:682
 msgid "Moving files to trash"
 msgstr "Tapaedje di fitchîs å batch"
 
-#: App.cpp:771
+#: App.cpp:770
 #, kde-format
 msgid ""
 "A music path, %1, is set in System Settings.\n"
