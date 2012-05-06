@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-05-05 03:16+0200\n"
+"POT-Creation-Date: 2012-05-06 03:53+0200\n"
 "PO-Revision-Date: 2011-09-21 08:11+0200\n"
 "Last-Translator: Djan Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -1271,7 +1271,7 @@ msgid "Navigate"
 msgstr "Naivyî"
 
 #: amarokurls/BookmarkModel.cpp:86
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:412
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:415
 msgid "Group"
 msgstr "Groupe"
 
@@ -1288,7 +1288,7 @@ msgstr "Groupe"
 #. i18n: file: services/ampache/NewServerWidget.ui:17
 #. i18n: ectx: property (text), widget (QLabel, labelName)
 #: amarokurls/BookmarkModel.cpp:265
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:411
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:414
 #: playlistgenerator/TreeModel.cpp:64
 #: services/amazon/AmazonItemTreeModel.cpp:168 rc.cpp:587 rc.cpp:1254
 #: rc.cpp:1994 rc.cpp:2000 rc.cpp:2386 rc.cpp:2398
@@ -1547,22 +1547,22 @@ msgstr "Copyî el ramexhnêye"
 
 #: browsers/filebrowser/FileView.cpp:362
 #: browsers/playlistbrowser/PlaylistBrowserModel.cpp:49
-#: browsers/CollectionTreeView.cpp:874
+#: browsers/CollectionTreeView.cpp:881
 #: context/applets/albums/AlbumsView.cpp:240
 #: services/lastfm/LastFmTreeView.cpp:111
 msgid "&Add to Playlist"
 msgstr "&Radjouter el djivêye a djouwer"
 
 #: browsers/filebrowser/FileView.cpp:374
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:57
-#: browsers/CollectionTreeView.cpp:883
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:60
+#: browsers/CollectionTreeView.cpp:892
 #: context/applets/albums/AlbumsView.cpp:241
 #: services/lastfm/LastFmTreeView.cpp:120
 msgctxt "Replace the currently loaded tracks with these"
 msgid "&Replace Playlist"
 msgstr "&Replaecî djivêye a djouwer"
 
-#: browsers/filebrowser/FileView.cpp:386 browsers/CollectionTreeView.cpp:961
+#: browsers/filebrowser/FileView.cpp:386 browsers/CollectionTreeView.cpp:970
 msgid "&Edit Track Details"
 msgstr "&Candjî detays do boket"
 
@@ -1606,7 +1606,7 @@ msgstr[1] "Tapaedje å batch : %1 fitchîs"
 msgid "Create empty playlist"
 msgstr "Ahiver malene djivêye a djouwer"
 
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:140
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:143
 #, kde-format
 msgctxt "number of playlists from one source"
 msgid "One Playlist"
@@ -1614,7 +1614,7 @@ msgid_plural "%1 playlists"
 msgstr[0] "Ene djivêye a djouwer"
 msgstr[1] "%1 djivêyes a djouwer"
 
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:182
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:185
 #, fuzzy, kde-format
 #| msgctxt "number of playlists from one source"
 #| msgid "One Playlist"
@@ -1625,7 +1625,7 @@ msgid_plural "%1 playlists"
 msgstr[0] "Ene djivêye a djouwer"
 msgstr[1] "%1 djivêyes a djouwer"
 
-#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:413
+#: browsers/playlistbrowser/PlaylistBrowserModel.cpp:416
 msgid "Source"
 msgstr "Sourdant"
 
@@ -1794,7 +1794,7 @@ msgstr "Tapez li no do novea ridant :"
 
 #: browsers/playlistbrowser/PlaylistsInFoldersProxy.cpp:333
 #: core-impl/collections/umscollection/podcasts/UmsPodcastProvider.cpp:254
-#: core-impl/playlists/providers/user/UserPlaylistProvider.cpp:130
+#: core-impl/playlists/providers/user/UserPlaylistProvider.cpp:140
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:98
 msgid "Confirm Delete"
 msgstr "Racertiner disfaçaedje"
@@ -2051,22 +2051,22 @@ msgstr "Albom"
 msgid "Collection"
 msgstr "Ramexhnêye"
 
-#: browsers/CollectionTreeView.cpp:581 services/lastfm/LastFmTreeView.cpp:201
+#: browsers/CollectionTreeView.cpp:588 services/lastfm/LastFmTreeView.cpp:201
 msgid "More..."
 msgstr "Pus..."
 
-#: browsers/CollectionTreeView.cpp:930
+#: browsers/CollectionTreeView.cpp:939
 msgctxt "Organize Files"
 msgid "Organize Files"
 msgstr "Assonrer fitchîs"
 
-#: browsers/CollectionTreeView.cpp:1108
+#: browsers/CollectionTreeView.cpp:1117
 #, fuzzy
 #| msgid "Moving files to trash"
 msgid "Move Tracks to Trash"
 msgstr "Tapaedje di fitchîs å batch"
 
-#: browsers/CollectionTreeView.cpp:1114
+#: browsers/CollectionTreeView.cpp:1125
 msgid "Delete Tracks"
 msgstr "Disfacer bokets"
 
@@ -3529,6 +3529,95 @@ msgstr "Pårtaedjî muzike a %1"
 msgid "%1 - %2"
 msgstr "%1 - %2"
 
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:548
+#, kde-format
+msgid "Could not create directory: %1"
+msgstr "Dji n' a savou ahiver l' ridant : %1"
+
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:625
+#, kde-format
+msgid "Transferring: %1"
+msgstr "Berwetaedje : %1"
+
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:627
+#, kde-format
+msgid "Transcoding: %1"
+msgstr "Coviersaedje  : %1"
+
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:671
+#: core-impl/collections/support/FileCollectionLocation.cpp:87
+#, kde-format
+msgid "Removing: %1"
+msgstr "Dji oistêye : %1"
+
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:695
+#, fuzzy
+#| msgid "Organize Files"
+msgid "Organizing files"
+msgstr "Assonrer fitchîs"
+
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:696
+#, fuzzy
+#| msgid "Organize Files"
+msgid "Organize files"
+msgstr "Assonrer fitchîs"
+
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:698
+#, fuzzy
+#| msgid "Transcoding tracks"
+msgid "Transcoding and organizing tracks"
+msgstr "Coviersaedje des bokets"
+
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:699
+#, fuzzy
+#| msgid "Transcoding tracks"
+msgid "Transcode and organize tracks"
+msgstr "Coviersaedje des bokets"
+
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:704
+msgid "Moving tracks"
+msgstr "Dji bodjes des bokets"
+
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:705
+#, fuzzy
+#| msgid "Repeat Track"
+msgid "Move tracks"
+msgstr "Repeter boket"
+
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:707
+#, fuzzy
+#| msgid "Transcoding tracks"
+msgid "Transcoding and moving tracks"
+msgstr "Coviersaedje des bokets"
+
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:708
+#, fuzzy
+#| msgid "Transcoding tracks"
+msgid "Transcode and move tracks"
+msgstr "Coviersaedje des bokets"
+
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:713
+msgid "Copying tracks"
+msgstr "Dji copeye des bokets"
+
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:714
+#, fuzzy
+#| msgid "Copying tracks"
+msgid "Copy tracks"
+msgstr "Dji copeye des bokets"
+
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:716
+#, fuzzy
+#| msgid "Transcoding tracks"
+msgid "Transcoding and copying tracks"
+msgstr "Coviersaedje des bokets"
+
+#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:717
+#, fuzzy
+#| msgid "Transcoding tracks"
+msgid "Transcode and copy tracks"
+msgstr "Coviersaedje des bokets"
+
 #: core-impl/collections/db/sql/SqlCollection.cpp:175
 #, kde-format
 msgid ""
@@ -3545,95 +3634,6 @@ msgstr ""
 #: core-impl/collections/db/sql/SqlCollection.cpp:331
 msgid "Scanning music"
 msgstr "Dji corwaite li muzike"
-
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:551
-#, kde-format
-msgid "Could not create directory: %1"
-msgstr "Dji n' a savou ahiver l' ridant : %1"
-
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:628
-#, kde-format
-msgid "Transferring: %1"
-msgstr "Berwetaedje : %1"
-
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:630
-#, kde-format
-msgid "Transcoding: %1"
-msgstr "Coviersaedje  : %1"
-
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:674
-#: core-impl/collections/support/FileCollectionLocation.cpp:87
-#, kde-format
-msgid "Removing: %1"
-msgstr "Dji oistêye : %1"
-
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:698
-#, fuzzy
-#| msgid "Organize Files"
-msgid "Organizing files"
-msgstr "Assonrer fitchîs"
-
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:699
-#, fuzzy
-#| msgid "Organize Files"
-msgid "Organize files"
-msgstr "Assonrer fitchîs"
-
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:701
-#, fuzzy
-#| msgid "Transcoding tracks"
-msgid "Transcoding and organizing tracks"
-msgstr "Coviersaedje des bokets"
-
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:702
-#, fuzzy
-#| msgid "Transcoding tracks"
-msgid "Transcode and organize tracks"
-msgstr "Coviersaedje des bokets"
-
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:707
-msgid "Moving tracks"
-msgstr "Dji bodjes des bokets"
-
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:708
-#, fuzzy
-#| msgid "Repeat Track"
-msgid "Move tracks"
-msgstr "Repeter boket"
-
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:710
-#, fuzzy
-#| msgid "Transcoding tracks"
-msgid "Transcoding and moving tracks"
-msgstr "Coviersaedje des bokets"
-
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:711
-#, fuzzy
-#| msgid "Transcoding tracks"
-msgid "Transcode and move tracks"
-msgstr "Coviersaedje des bokets"
-
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:716
-msgid "Copying tracks"
-msgstr "Dji copeye des bokets"
-
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:717
-#, fuzzy
-#| msgid "Copying tracks"
-msgid "Copy tracks"
-msgstr "Dji copeye des bokets"
-
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:719
-#, fuzzy
-#| msgid "Transcoding tracks"
-msgid "Transcoding and copying tracks"
-msgstr "Coviersaedje des bokets"
-
-#: core-impl/collections/db/sql/SqlCollectionLocation.cpp:720
-#, fuzzy
-#| msgid "Transcoding tracks"
-msgid "Transcode and copy tracks"
-msgstr "Coviersaedje des bokets"
 
 #: core-impl/collections/db/ScanManager.cpp:134
 msgid "Database import requested"
@@ -3984,54 +3984,6 @@ msgstr ""
 msgid "Connecting to iPhone, iPad or iPod touch failed."
 msgstr ""
 
-#: core-impl/collections/ipodcollection/IpodCollection.cpp:102
-#: core-impl/collections/umscollection/UmsCollection.cpp:235
-#, fuzzy
-#| msgid "Configure Media Device"
-msgid "&Configure Device"
-msgstr "Apontyî éndjin media"
-
-#: core-impl/collections/ipodcollection/IpodCollection.cpp:106
-#: core-impl/collections/umscollection/UmsCollection.cpp:243
-#, fuzzy
-#| msgid "&Read Device"
-msgid "&Eject Device"
-msgstr "&Lére l' éndjins"
-
-#: core-impl/collections/ipodcollection/IpodCollection.cpp:115
-#, fuzzy
-#| msgid "Transcoding tracks"
-msgid "Re-add orphaned and forget stale tracks"
-msgstr "Coviersaedje des bokets"
-
-#: core-impl/collections/ipodcollection/IpodCollection.cpp:438
-#, fuzzy
-#| msgid "iPod Initialization Failed"
-msgctxt "iPod was successfully initialized"
-msgid "Initialization successful."
-msgstr "L' inicialijhaedje di l' iPod a fwait berwete"
-
-#: core-impl/collections/ipodcollection/IpodCollection.cpp:646
-#, kde-format
-msgctxt "%1: iPod collection name"
-msgid "iTunes database successfully written to %1"
-msgstr ""
-
-#: core-impl/collections/ipodcollection/IpodCollection.cpp:654
-#, kde-format
-msgctxt "%1: iPod collection name"
-msgid "Writing iTunes database to %1 failed without an indication of error"
-msgstr ""
-
-#: core-impl/collections/ipodcollection/IpodCollection.cpp:658
-#, fuzzy, kde-format
-#| msgid "Failed to write scanner batch file \"%1\""
-msgctxt "%1: iPod collection name, %2: technical error from libgpod"
-msgid "Writing iTunes database to %1 failed: %2"
-msgstr ""
-"Li scrijhaedje do fitchî « %1 » d' traitmint pa lots do corwaitoe a fwait "
-"berwete"
-
 #: core-impl/collections/ipodcollection/IpodMeta.cpp:200
 #: core-impl/collections/mediadevicecollection/MediaDeviceMeta.cpp:92
 #, fuzzy
@@ -4082,6 +4034,54 @@ msgid ""
 "database entries, %2 stale database entries removed, %3 orphaned tracks "
 "added back to the iTunes database. %4"
 msgstr ""
+
+#: core-impl/collections/ipodcollection/IpodCollection.cpp:102
+#: core-impl/collections/umscollection/UmsCollection.cpp:236
+#, fuzzy
+#| msgid "Configure Media Device"
+msgid "&Configure Device"
+msgstr "Apontyî éndjin media"
+
+#: core-impl/collections/ipodcollection/IpodCollection.cpp:106
+#: core-impl/collections/umscollection/UmsCollection.cpp:244
+#, fuzzy
+#| msgid "&Read Device"
+msgid "&Eject Device"
+msgstr "&Lére l' éndjins"
+
+#: core-impl/collections/ipodcollection/IpodCollection.cpp:115
+#, fuzzy
+#| msgid "Transcoding tracks"
+msgid "Re-add orphaned and forget stale tracks"
+msgstr "Coviersaedje des bokets"
+
+#: core-impl/collections/ipodcollection/IpodCollection.cpp:438
+#, fuzzy
+#| msgid "iPod Initialization Failed"
+msgctxt "iPod was successfully initialized"
+msgid "Initialization successful."
+msgstr "L' inicialijhaedje di l' iPod a fwait berwete"
+
+#: core-impl/collections/ipodcollection/IpodCollection.cpp:646
+#, kde-format
+msgctxt "%1: iPod collection name"
+msgid "iTunes database successfully written to %1"
+msgstr ""
+
+#: core-impl/collections/ipodcollection/IpodCollection.cpp:654
+#, kde-format
+msgctxt "%1: iPod collection name"
+msgid "Writing iTunes database to %1 failed without an indication of error"
+msgstr ""
+
+#: core-impl/collections/ipodcollection/IpodCollection.cpp:658
+#, fuzzy, kde-format
+#| msgid "Failed to write scanner batch file \"%1\""
+msgctxt "%1: iPod collection name, %2: technical error from libgpod"
+msgid "Writing iTunes database to %1 failed: %2"
+msgstr ""
+"Li scrijhaedje do fitchî « %1 » d' traitmint pa lots do corwaitoe a fwait "
+"berwete"
 
 #: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:315
 msgid "Copying Tracks Failed"
@@ -4407,24 +4407,6 @@ msgstr "Oyi, disfacer di %1."
 msgid "&Delete Channel and Episodes"
 msgstr "&Disfacer canå eyet bokets"
 
-#: core-impl/collections/umscollection/UmsCollection.cpp:239
-#, fuzzy
-#| msgid "&Use as Collection"
-msgid "&Activate This Collection"
-msgstr "S' endè &siervi come ramexhnêye"
-
-#: core-impl/collections/umscollection/UmsCollection.cpp:423
-#, kde-format
-msgctxt ""
-"Name of the USB Mass Storage collection that has not yet been activated. See "
-"also the 'Activate This Collection' action; %1 is actual collection name"
-msgid "%1 (not activated)"
-msgstr ""
-
-#: core-impl/collections/umscollection/UmsCollection.cpp:652
-msgid "Configure USB Mass Storage Device"
-msgstr "Apontyî l' éndjin USB d' sitocaedje di dnêyes"
-
 #: core-impl/collections/umscollection/UmsCollectionLocation.cpp:99
 #, fuzzy, kde-format
 #| msgid "Copying tracks"
@@ -4449,6 +4431,24 @@ msgid "Removing one track from %2"
 msgid_plural "Removing %1 tracks from %2"
 msgstr[0] "Dji disface li boket di l' éndjin"
 msgstr[1] "Dji disface li boket di l' éndjin"
+
+#: core-impl/collections/umscollection/UmsCollection.cpp:240
+#, fuzzy
+#| msgid "&Use as Collection"
+msgid "&Activate This Collection"
+msgstr "S' endè &siervi come ramexhnêye"
+
+#: core-impl/collections/umscollection/UmsCollection.cpp:424
+#, kde-format
+msgctxt ""
+"Name of the USB Mass Storage collection that has not yet been activated. See "
+"also the 'Activate This Collection' action; %1 is actual collection name"
+msgid "%1 (not activated)"
+msgstr ""
+
+#: core-impl/collections/umscollection/UmsCollection.cpp:660
+msgid "Configure USB Mass Storage Device"
+msgstr "Apontyî l' éndjin USB d' sitocaedje di dnêyes"
 
 #: core-impl/collections/upnpcollection/UpnpBrowseCollection.cpp:118
 #, kde-format
@@ -4488,13 +4488,13 @@ msgstr "Floû (%1)"
 msgid "&Delete..."
 msgstr "&Disfacer"
 
-#: core-impl/playlists/providers/user/UserPlaylistProvider.cpp:38
+#: core-impl/playlists/providers/user/UserPlaylistProvider.cpp:42
 #, fuzzy
 #| msgid "&Rename"
 msgid "&Rename..."
 msgstr "&Rilomer"
 
-#: core-impl/playlists/providers/user/UserPlaylistProvider.cpp:104
+#: core-impl/playlists/providers/user/UserPlaylistProvider.cpp:114
 #, fuzzy, kde-format
 #| msgid "Remove From Playlist"
 msgctxt "Number of playlists is >= 2"
@@ -4503,7 +4503,7 @@ msgid_plural "Remove %1 tracks from %2 playlists"
 msgstr[0] "Oister del djivêye a djouwer"
 msgstr[1] "Oister del djivêye a djouwer"
 
-#: core-impl/playlists/providers/user/UserPlaylistProvider.cpp:110
+#: core-impl/playlists/providers/user/UserPlaylistProvider.cpp:120
 #, fuzzy, kde-format
 #| msgid "Removing Track from Device"
 #| msgid_plural "Removing Tracks from Device"
@@ -4513,7 +4513,7 @@ msgid_plural "Remove %1 tracks from %2"
 msgstr[0] "Dji disface li boket di l' éndjin"
 msgstr[1] "Dji disface li boket di l' éndjin"
 
-#: core-impl/playlists/providers/user/UserPlaylistProvider.cpp:132
+#: core-impl/playlists/providers/user/UserPlaylistProvider.cpp:142
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:100
 #, fuzzy, kde-format
 #| msgid "Are you sure you want to uninstall the script '%1'?"
@@ -4522,7 +4522,7 @@ msgid_plural "Are you sure you want to delete these %1 playlists?"
 msgstr[0] "Estoz seur di voleur disastaler l' sicripe «%1» podbon?"
 msgstr[1] "Estoz seur di voleur disastaler l' sicripe «%1» podbon?"
 
-#: core-impl/playlists/providers/user/UserPlaylistProvider.cpp:139
+#: core-impl/playlists/providers/user/UserPlaylistProvider.cpp:149
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:107
 #, fuzzy, kde-format
 #| msgid "Yes, delete from %1."
@@ -8408,7 +8408,7 @@ msgstr[1] "%1 bokets"
 msgid "No tracks"
 msgstr "bokets"
 
-#: playlist/PlaylistToolBar.cpp:39 playlist/PlaylistDock.cpp:54
+#: playlist/PlaylistToolBar.cpp:39 playlist/PlaylistDock.cpp:58
 #: MainWindow.cpp:1039
 msgid "&Playlist"
 msgstr "&Djivêye a djouwer"
@@ -8461,22 +8461,6 @@ msgstr "Dierin côp djouwé"
 msgid "Mood"
 msgstr "Umeur"
 
-#: playlist/PlaylistDock.cpp:105
-msgid "Dynamic Mode Enabled"
-msgstr ""
-
-#: playlist/PlaylistDock.cpp:175
-#, fuzzy
-#| msgid "Current Playlist"
-msgid "&Save Current Playlist"
-msgstr "Djivêye a djouwer do moumint"
-
-#: playlist/PlaylistDock.cpp:267
-#, fuzzy, kde-format
-#| msgid "Save playlist"
-msgid "&Save playlist to \"%1\""
-msgstr "Schaper djivêye a djouwer"
-
 #: playlist/PlaylistViewUrlGenerator.cpp:82
 #, fuzzy, kde-format
 #| msgid "Filter Action"
@@ -8498,6 +8482,24 @@ msgstr " djouwaedjes"
 #: playlist/PlaylistViewUrlGenerator.cpp:101 MainWindow.cpp:765
 msgid "Bookmark Playlist Setup"
 msgstr "Fé ene rimarke di l' apontiaedje del djivêye a djouwer"
+
+#: playlist/PlaylistDock.cpp:109
+#, kde-format
+msgid ""
+"Dynamic Mode Enabled. <a href='%1'>Repopulate</a> | <a href='%2'>Turn off</a>"
+msgstr ""
+
+#: playlist/PlaylistDock.cpp:183
+#, fuzzy
+#| msgid "Current Playlist"
+msgid "&Save Current Playlist"
+msgstr "Djivêye a djouwer do moumint"
+
+#: playlist/PlaylistDock.cpp:275
+#, fuzzy, kde-format
+#| msgid "Save playlist"
+msgid "&Save playlist to \"%1\""
+msgstr "Schaper djivêye a djouwer"
 
 #: playlistgenerator/PresetEditDialog.cpp:61
 #, fuzzy
@@ -10206,30 +10208,6 @@ msgctxt ""
 msgid "Amazon"
 msgstr "Etonant"
 
-#: services/amazon/AmazonItemTreeView.cpp:272
-#, fuzzy
-#| msgid "&Add to Playlist"
-msgid "Add to Cart"
-msgstr "&Radjouter el djivêye a djouwer"
-
-#: services/amazon/AmazonItemTreeView.cpp:281
-#, fuzzy
-#| msgid "&Add to Playlist"
-msgid "Add Preview to Playlist"
-msgstr "&Radjouter el djivêye a djouwer"
-
-#: services/amazon/AmazonItemTreeView.cpp:290
-#, fuzzy
-#| msgid "Loading Thumbnails..."
-msgid "Load Details..."
-msgstr "Dji tchedje les prévoeyaedjes..."
-
-#: services/amazon/AmazonItemTreeView.cpp:299
-#, fuzzy
-#| msgid "&Search"
-msgid "Search for Album..."
-msgstr "&Trover"
-
 #: services/amazon/AmazonShoppingCartView.cpp:65
 #, fuzzy
 #| msgid "Remove From Playlist"
@@ -10257,74 +10235,74 @@ msgstr ""
 msgid "<em>%1</em> has been added to your shopping cart."
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:215 services/amazon/AmazonStore.cpp:320
+#: services/amazon/AmazonStore.cpp:215 services/amazon/AmazonStore.cpp:346
 #, fuzzy
 #| msgid "Unable to parse avatar image data."
 msgid "Error: Unable to write temporary file. :-("
 msgstr "Dji n' a savou lére les dnêyes des imådjes di vizaedje."
 
-#: services/amazon/AmazonStore.cpp:278
+#: services/amazon/AmazonStore.cpp:304
 msgid "Select your Amazon locale - Amarok"
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:290
+#: services/amazon/AmazonStore.cpp:316
 msgid ""
 "<b>MP3 Music Store</b><br/><br/>Please select a valid country in the "
 "settings to make the store work."
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:410
+#: services/amazon/AmazonStore.cpp:436
 msgid "Select results page to show"
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:434
+#: services/amazon/AmazonStore.cpp:460
 #, fuzzy
 #| msgid "&Add to Playlist"
 msgctxt "Add selected item to your shopping cart"
 msgid "Add to Cart"
 msgstr "&Radjouter el djivêye a djouwer"
 
-#: services/amazon/AmazonStore.cpp:435
+#: services/amazon/AmazonStore.cpp:461
 msgid "Add selected item to your shopping cart"
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:442
+#: services/amazon/AmazonStore.cpp:468
 #, fuzzy
 #| msgid "View map"
 msgctxt "View your shopping cart contents"
 msgid "View Cart"
 msgstr "Vey li mape"
 
-#: services/amazon/AmazonStore.cpp:443
+#: services/amazon/AmazonStore.cpp:469
 msgid "View your shopping cart contents"
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:450
+#: services/amazon/AmazonStore.cpp:476
 #, fuzzy
 #| msgid " on <b>%1</b>"
 msgctxt "Checkout your shopping cart"
 msgid "Checkout"
 msgstr " so <b>%1</b>"
 
-#: services/amazon/AmazonStore.cpp:451
+#: services/amazon/AmazonStore.cpp:477
 msgid "Checkout your shopping cart"
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:471
+#: services/amazon/AmazonStore.cpp:498
 msgid "Error: Querying MP3 Music Store database failed. :-("
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:506
+#: services/amazon/AmazonStore.cpp:533
 msgid "Error: Received an invalid reply. :-("
 msgstr ""
 
-#: services/amazon/AmazonStore.cpp:526
+#: services/amazon/AmazonStore.cpp:553
 #, fuzzy
 #| msgid "Unable to parse avatar image data."
 msgid "Error: Unable to open temporary file. :-("
 msgstr "Dji n' a savou lére les dnêyes des imådjes di vizaedje."
 
-#: services/amazon/AmazonStore.cpp:546
+#: services/amazon/AmazonStore.cpp:573
 #, fuzzy
 #| msgid "Unable to parse avatar image data."
 msgid "Error: Unable to parse temporary file. :-("
@@ -10360,6 +10338,36 @@ msgstr "<b>%1</b>"
 #: services/amazon/AmazonItemTreeModel.cpp:171
 msgid "Price"
 msgstr ""
+
+#: services/amazon/AmazonItemTreeView.cpp:277
+#, fuzzy
+#| msgid "&Add to Playlist"
+msgid "Add to Cart"
+msgstr "&Radjouter el djivêye a djouwer"
+
+#: services/amazon/AmazonItemTreeView.cpp:286
+#, fuzzy
+#| msgid "&Add to Playlist"
+msgid "Add Preview to Playlist"
+msgstr "&Radjouter el djivêye a djouwer"
+
+#: services/amazon/AmazonItemTreeView.cpp:295
+#, fuzzy
+#| msgid "Loading Thumbnails..."
+msgid "Load Details..."
+msgstr "Dji tchedje les prévoeyaedjes..."
+
+#: services/amazon/AmazonItemTreeView.cpp:304
+#, fuzzy
+#| msgid " on <b>%1</b>"
+msgid "Direct Checkout"
+msgstr " so <b>%1</b>"
+
+#: services/amazon/AmazonItemTreeView.cpp:313
+#, fuzzy
+#| msgid "&Search"
+msgid "Search for Album..."
+msgstr "&Trover"
 
 #: statusbar/CompoundProgressBar.cpp:63 statusbar/CompoundProgressBar.cpp:186
 #: statusbar/ProgressBar.cpp:48
