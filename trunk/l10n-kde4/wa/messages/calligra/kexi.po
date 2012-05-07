@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-05-02 03:03+0200\n"
+"POT-Creation-Date: 2012-05-07 02:37+0200\n"
 "PO-Revision-Date: 2011-01-17 22:02+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -2183,7 +2183,7 @@ msgid "Name"
 msgstr "No"
 
 #: formeditor/form.cpp:440 formeditor/editlistviewdialog.cpp:120
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1759
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1764
 #: plugins/tables/kexitabledesignerview.cpp:390
 msgid "Caption"
 msgstr "Ledjinde"
@@ -2762,7 +2762,7 @@ msgstr ""
 
 #: kexidb/driver_p.cpp:63 plugins/importexport/csv/kexicsvwidgets.cpp:167
 #: plugins/importexport/csv/kexicsvwidgets.cpp:182
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1776
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1781
 #: plugins/tables/kexitabledesignerview.cpp:426
 msgid "None"
 msgstr "Nole"
@@ -2803,6 +2803,20 @@ msgstr ""
 msgid "Could not compact database \"%1\"."
 msgstr ""
 
+#: kexidb/drivers/sqlite/sqlitevacuum.cpp:129
+msgid "Compacting database"
+msgstr ""
+
+#: kexidb/drivers/sqlite/sqlitevacuum.cpp:130
+#, kde-format
+msgid "Compacting database \"%1\"..."
+msgstr ""
+
+#: kexidb/drivers/sqlite/sqlitevacuum.cpp:203
+#, kde-format
+msgid "The database has been compacted. Current size decreased by %1% to %2."
+msgstr ""
+
 #: kexidb/drivers/sqlite/sqliteconnection.cpp:242
 #, kde-format
 msgid "Do you want to open file \"%1\" as read-only?"
@@ -2837,20 +2851,6 @@ msgid ""
 msgstr ""
 "Verifyîz les droets då fitchî eyet s' il est ddja drovou eyet eclawé pa èn "
 "ôte programe"
-
-#: kexidb/drivers/sqlite/sqlitevacuum.cpp:129
-msgid "Compacting database"
-msgstr ""
-
-#: kexidb/drivers/sqlite/sqlitevacuum.cpp:130
-#, kde-format
-msgid "Compacting database \"%1\"..."
-msgstr ""
-
-#: kexidb/drivers/sqlite/sqlitevacuum.cpp:203
-#, kde-format
-msgid "The database has been compacted. Current size decreased by %1% to %2."
-msgstr ""
 
 #: kexidb/drivers/xbase/xbaseexport.cpp:263
 msgid "Data not set for migration"
@@ -2967,7 +2967,7 @@ msgstr ""
 msgid "Invalid identifier"
 msgstr ""
 
-#: sqlscanner.l:287 plugins/queries/kexiquerydesignerguieditor.cpp:1451
+#: sqlscanner.l:287 plugins/queries/kexiquerydesignerguieditor.cpp:1456
 msgid "Identifiers should start with a letter or '_' character"
 msgstr "Les idintifieus dvèt ataker avou ene lete ou on caractere « _ »"
 
@@ -3189,11 +3189,6 @@ msgstr ""
 
 #: kexidb/field.cpp:744
 msgid "Date/Time"
-msgstr ""
-
-#: kexidb/queryschema.cpp:266
-msgctxt "short for 'expression' word, e.g. 'expr' (only latin letters, please)"
-msgid "expr"
 msgstr ""
 
 #: kexidb/connection.cpp:114
@@ -3510,6 +3505,11 @@ msgstr ""
 #| msgid "Row deleting failed."
 msgid "Record deletion on the server failed."
 msgstr "Li disfaçaedje del roye a fwait berwete."
+
+#: kexidb/queryschema.cpp:266
+msgctxt "short for 'expression' word, e.g. 'expr' (only latin letters, please)"
+msgid "expr"
+msgstr ""
 
 #: kexiutils/identifier.cpp:92
 #, kde-format
@@ -6404,7 +6404,7 @@ msgid "Start at line:"
 msgstr "Ataker al roye :"
 
 #: plugins/importexport/csv/kexicsvimportdialog.cpp:1220
-#: plugins/queries/kexiquerydesignerguieditor.cpp:225
+#: plugins/queries/kexiquerydesignerguieditor.cpp:226
 msgid "Column"
 msgstr "Colone"
 
@@ -6533,164 +6533,6 @@ msgstr "Li rcweraedje « %1 » egzistêye dedja."
 msgid "Query executing failed."
 msgstr "Li fjhaedje do rcweraedje a fwait berwete."
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:168
-msgid "Query Columns"
-msgstr "Colones di rcweraedje"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:226
-msgid "Describes field name or expression for the designed query."
-msgstr ""
-"Discrît l' no do tchamp oudon-bén l' ratourneure pol ricweraedje atuzlé."
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:233
-#: widget/relations/KexiRelationsView.cpp:384
-msgid "Table"
-msgstr "Tåvlea"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:234
-msgid "Describes table for a given field. Can be empty."
-msgstr "Discrît l' tåvlea pos on tchamp dné. Pout esse vude."
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:239
-msgid "Visible"
-msgstr "Veyåve"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:240
-msgid "Describes visibility for a given field or expression."
-msgstr "Discrît l' veyåvisté d' on tchamp ou d' ene ratourneure dinêye."
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:246
-msgid "Totals"
-msgstr "Totås"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:247
-msgid "Describes a way of computing totals for a given field or expression."
-msgstr ""
-"Discrît ene façon d' fé les totås pos on tchamp ou ene ratourneure dinêye."
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:249
-msgid "Group by"
-msgstr "Grouper sol"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:250
-msgid "Sum"
-msgstr "Some"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:251
-msgid "Average"
-msgstr "Moyene"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:252
-msgid "Min"
-msgstr "Min"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:253
-msgid "Max"
-msgstr "Macs"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:259
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1778
-msgid "Sorting"
-msgstr "Rélijhaedje"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:260
-msgid "Describes a way of sorting for a given field."
-msgstr "Discrît ene façon d' relére pos ont tchamp dné."
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:263
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1776
-msgid "Ascending"
-msgstr "Crexhant"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:264
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1776
-msgid "Descending"
-msgstr "Discrexhant"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:268
-msgid "Criteria"
-msgstr "Critere"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:269
-msgid "Describes the criteria for a given field or expression."
-msgstr "Discrît l' critere d' on tchamp ou d' ene ratourneure dinêye."
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:373
-msgid ""
-"Cannot switch to data view, because query design is empty.\n"
-"First, please create your design."
-msgstr ""
-"Dji n' sai passer al vuwe des dnêyes paski l' atuzlaedje do rcweraedje est "
-"vude.\n"
-"Fijhoz vost atuzlaedje aprume, s' i vs plait."
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:408
-#, kde-format
-msgid "Select column for table \"%1\""
-msgstr "Tchoezi colone pol tåve « %1 »"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:430
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1679
-#, kde-format
-msgid "Invalid criteria \"%1\""
-msgstr "Critere « %1 » nén valåbes"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:451
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1470
-#, kde-format
-msgid "Invalid expression \"%1\""
-msgstr "Ratourneure « %1 » nén valåbe"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:636
-#: plugins/queries/kexiquerydesignerguieditor.cpp:650
-#: plugins/queries/kexiquerydesignerguieditor.cpp:672
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1081
-msgid "Query definition loading failed."
-msgstr "Li tcherdjaedje do definixha do rcweraedje a fwait berwete."
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:637
-msgid ""
-"Query design may be corrupted so it could not be opened even in text view.\n"
-"You can delete the query and create it again."
-msgstr ""
-"L' atuzlaedje do rcweraedje est motoit cron dabôrd k' i dj' n' l' a nén "
-"sepou drovi, minme e môde tecse.\n"
-"Vos ploz disfacer l' ricweraedje eyet l' rifé."
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1264
-msgctxt "short for 'expression' word (only latin letters, please)"
-msgid "expr"
-msgstr "rat"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1450
-#, kde-format
-msgid "Entered column alias \"%1\" is not a valid identifier."
-msgstr "Li no metou « %1 » del colone diné n' est nén èn idintifieu valåbe."
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1623
-#, kde-format
-msgid "Could not set sorting for multiple columns (%1)"
-msgstr "Dji n' a savou defini l' reléjhaedje po sacwantès colones (%1)"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1648
-#, kde-format
-msgid "Could not set criteria for \"%1\""
-msgstr "Dji n' a savou defini l' critere po « %1 »"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1651
-#, fuzzy
-#| msgid "Could not set criteria for empty row"
-msgid "Could not set criteria for empty record"
-msgstr "Dji n' a savou defini l' critere pol vude roye"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1748
-msgid "Query column"
-msgstr "Colone di rcweraedje"
-
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1764
-msgid "Alias"
-msgstr "No metou"
-
 #: plugins/queries/kexiquerydesignersqlhistory.cpp:50
 msgid "Copy to Clipboard"
 msgstr "Aclaper e presse-papî"
@@ -6763,6 +6605,164 @@ msgstr "Responde « Neni » vos permete di fé des coridjaedjes."
 #: plugins/queries/kexiquerydesignersql.cpp:569
 msgid "Do you want to save invalid query?"
 msgstr "Voloz vs schaper l' ricweraedje nén valåbe ?"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:169
+msgid "Query Columns"
+msgstr "Colones di rcweraedje"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:227
+msgid "Describes field name or expression for the designed query."
+msgstr ""
+"Discrît l' no do tchamp oudon-bén l' ratourneure pol ricweraedje atuzlé."
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:234
+#: widget/relations/KexiRelationsView.cpp:384
+msgid "Table"
+msgstr "Tåvlea"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:235
+msgid "Describes table for a given field. Can be empty."
+msgstr "Discrît l' tåvlea pos on tchamp dné. Pout esse vude."
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:240
+msgid "Visible"
+msgstr "Veyåve"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:241
+msgid "Describes visibility for a given field or expression."
+msgstr "Discrît l' veyåvisté d' on tchamp ou d' ene ratourneure dinêye."
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:247
+msgid "Totals"
+msgstr "Totås"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:248
+msgid "Describes a way of computing totals for a given field or expression."
+msgstr ""
+"Discrît ene façon d' fé les totås pos on tchamp ou ene ratourneure dinêye."
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:250
+msgid "Group by"
+msgstr "Grouper sol"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:251
+msgid "Sum"
+msgstr "Some"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:252
+msgid "Average"
+msgstr "Moyene"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:253
+msgid "Min"
+msgstr "Min"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:254
+msgid "Max"
+msgstr "Macs"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:260
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1783
+msgid "Sorting"
+msgstr "Rélijhaedje"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:261
+msgid "Describes a way of sorting for a given field."
+msgstr "Discrît ene façon d' relére pos ont tchamp dné."
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:264
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1781
+msgid "Ascending"
+msgstr "Crexhant"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:265
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1781
+msgid "Descending"
+msgstr "Discrexhant"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:269
+msgid "Criteria"
+msgstr "Critere"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:270
+msgid "Describes the criteria for a given field or expression."
+msgstr "Discrît l' critere d' on tchamp ou d' ene ratourneure dinêye."
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:374
+msgid ""
+"Cannot switch to data view, because query design is empty.\n"
+"First, please create your design."
+msgstr ""
+"Dji n' sai passer al vuwe des dnêyes paski l' atuzlaedje do rcweraedje est "
+"vude.\n"
+"Fijhoz vost atuzlaedje aprume, s' i vs plait."
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:413
+#, kde-format
+msgid "Select column for table \"%1\""
+msgstr "Tchoezi colone pol tåve « %1 »"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:435
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1684
+#, kde-format
+msgid "Invalid criteria \"%1\""
+msgstr "Critere « %1 » nén valåbes"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:456
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1475
+#, kde-format
+msgid "Invalid expression \"%1\""
+msgstr "Ratourneure « %1 » nén valåbe"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:641
+#: plugins/queries/kexiquerydesignerguieditor.cpp:655
+#: plugins/queries/kexiquerydesignerguieditor.cpp:677
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1086
+msgid "Query definition loading failed."
+msgstr "Li tcherdjaedje do definixha do rcweraedje a fwait berwete."
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:642
+msgid ""
+"Query design may be corrupted so it could not be opened even in text view.\n"
+"You can delete the query and create it again."
+msgstr ""
+"L' atuzlaedje do rcweraedje est motoit cron dabôrd k' i dj' n' l' a nén "
+"sepou drovi, minme e môde tecse.\n"
+"Vos ploz disfacer l' ricweraedje eyet l' rifé."
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1269
+msgctxt "short for 'expression' word (only latin letters, please)"
+msgid "expr"
+msgstr "rat"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1455
+#, kde-format
+msgid "Entered column alias \"%1\" is not a valid identifier."
+msgstr "Li no metou « %1 » del colone diné n' est nén èn idintifieu valåbe."
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1628
+#, kde-format
+msgid "Could not set sorting for multiple columns (%1)"
+msgstr "Dji n' a savou defini l' reléjhaedje po sacwantès colones (%1)"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1653
+#, kde-format
+msgid "Could not set criteria for \"%1\""
+msgstr "Dji n' a savou defini l' critere po « %1 »"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1656
+#, fuzzy
+#| msgid "Could not set criteria for empty row"
+msgid "Could not set criteria for empty record"
+msgstr "Dji n' a savou defini l' critere pol vude roye"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1753
+msgid "Query column"
+msgstr "Colone di rcweraedje"
+
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1769
+msgid "Alias"
+msgstr "No metou"
 
 #: plugins/reports/kexireportdesignview.cpp:51
 #, fuzzy
