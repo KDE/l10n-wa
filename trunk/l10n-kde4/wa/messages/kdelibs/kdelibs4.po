@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-05-10 04:26+0200\n"
+"POT-Creation-Date: 2012-06-11 04:48+0200\n"
 "PO-Revision-Date: 2011-07-17 17:38+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -807,7 +807,7 @@ msgstr "Us&teyes"
 
 #. i18n: file: kdeui/xmlgui/ui_standards.rc:148
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:442 khtml/ecma/debugger/debugwindow.cpp:240
+#: rc.cpp:442 khtml/ecma/debugger/debugwindow.cpp:243
 msgid "&Settings"
 msgstr "Tchu&zes"
 
@@ -2621,7 +2621,7 @@ msgctxt "@item Spelling dictionary"
 msgid "<application>Hunspell</application> Default"
 msgstr "<application>Hunspell</application> Prémetou"
 
-#: kde3support/kdeui/k3wizard.cpp:48
+#: kde3support/kdeui/k3wizard.cpp:48 kdeui/actions/kstandardaction_p.h:90
 msgid "&Back"
 msgstr "En &erî"
 
@@ -5360,27 +5360,6 @@ msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr "Otomatike"
 
-#: kdeui/actions/ktogglefullscreenaction.cpp:48
-#: kdeui/actions/ktogglefullscreenaction.cpp:55
-#: kdeui/actions/ktogglefullscreenaction.cpp:85
-#: kdeui/actions/kstandardaction_p.h:101
-msgid "F&ull Screen Mode"
-msgstr "Môde tote li &waitroûle"
-
-#: kdeui/actions/ktogglefullscreenaction.cpp:51
-#: kdeui/actions/ktogglefullscreenaction.cpp:58
-#: kdeui/actions/ktogglefullscreenaction.cpp:86
-msgid "Full Screen"
-msgstr "Môde tote li waitroûle"
-
-#: kdeui/actions/ktogglefullscreenaction.cpp:81
-msgid "Exit F&ull Screen Mode"
-msgstr "Cwiter li môde tote li &waitroûle"
-
-#: kdeui/actions/ktogglefullscreenaction.cpp:82
-msgid "Exit Full Screen"
-msgstr "Cwiter li môde tote li waitroûle"
-
 #: kdeui/actions/kaction.cpp:122
 #, kde-format
 msgid ""
@@ -5421,24 +5400,64 @@ msgctxt "show help"
 msgid "&Help"
 msgstr "&Aidance"
 
-#: kdeui/actions/kstandardaction.cpp:516 kdeui/actions/kstandardaction_p.h:98
+#: kdeui/actions/kstandardaction.cpp:521 kdeui/actions/kstandardaction_p.h:98
 msgid "Show &Menubar"
 msgstr "Mostrer l' bår di &menu"
 
-#: kdeui/actions/kstandardaction.cpp:522
+#: kdeui/actions/kstandardaction.cpp:527
 msgid "Show Menubar<p>Shows the menubar again after it has been hidden</p>"
 msgstr ""
 "Mostrer l' bår di menu<p>Rimostere li bår di menu après k' ele åye sitî "
 "catcheye</p>"
 
-#: kdeui/actions/kstandardaction.cpp:539 kdeui/actions/kstandardaction_p.h:100
+#: kdeui/actions/kstandardaction.cpp:544 kdeui/actions/kstandardaction_p.h:100
 msgid "Show St&atusbar"
 msgstr "Mostrer bår d' est&at"
 
-#: kdeui/actions/kstandardaction.cpp:542
+#: kdeui/actions/kstandardaction.cpp:547
 msgid ""
 "Show Statusbar<p>Shows the statusbar, which is the bar at the bottom of the "
 "window used for status information.</p>"
+msgstr ""
+
+#: kdeui/actions/ktogglefullscreenaction.cpp:48
+#, fuzzy
+#| msgid "Exit F&ull Screen Mode"
+msgctxt "@action:inmenu"
+msgid "Exit F&ull Screen Mode"
+msgstr "Cwiter li môde tote li &waitroûle"
+
+#: kdeui/actions/ktogglefullscreenaction.cpp:49
+#, fuzzy
+#| msgid "Exit Full Screen"
+msgctxt "@action:intoolbar"
+msgid "Exit Full Screen"
+msgstr "Cwiter li môde tote li waitroûle"
+
+#: kdeui/actions/ktogglefullscreenaction.cpp:50
+#, fuzzy
+#| msgid "Exit F&ull Screen Mode"
+msgctxt "@info:tooltip"
+msgid "Exit full screen mode"
+msgstr "Cwiter li môde tote li &waitroûle"
+
+#: kdeui/actions/ktogglefullscreenaction.cpp:53
+#, fuzzy
+#| msgid "F&ull Screen Mode"
+msgctxt "@action:inmenu"
+msgid "F&ull Screen Mode"
+msgstr "Môde tote li &waitroûle"
+
+#: kdeui/actions/ktogglefullscreenaction.cpp:54
+#, fuzzy
+#| msgid "Full Screen"
+msgctxt "@action:intoolbar"
+msgid "Full Screen"
+msgstr "Môde tote li waitroûle"
+
+#: kdeui/actions/ktogglefullscreenaction.cpp:55
+msgctxt "@info:tooltip"
+msgid "Display the window in full screen"
 msgstr ""
 
 #: kdeui/dialogs/kaboutapplicationdialog.cpp:84
@@ -5669,6 +5688,67 @@ msgctxt "@item Contributor name in about dialog."
 msgid "%1"
 msgstr "%1"
 
+#: kdeui/dialogs/kshortcutschemeseditor.cpp:41
+msgid "Shortcut Schemes"
+msgstr "Arindjmints d' rascourtis"
+
+#: kdeui/dialogs/kshortcutschemeseditor.cpp:59
+msgid "Current scheme:"
+msgstr "Arindjmint do moumint:"
+
+#: kdeui/dialogs/kshortcutschemeseditor.cpp:69
+msgid "New..."
+msgstr "Novea..."
+
+#: kdeui/dialogs/kshortcutschemeseditor.cpp:72
+msgid "Delete"
+msgstr "Disfacer"
+
+#: kdeui/dialogs/kshortcutschemeseditor.cpp:75
+msgid "More Actions"
+msgstr "Pus di faitindjes"
+
+#: kdeui/dialogs/kshortcutschemeseditor.cpp:79
+msgid "Save as Scheme Defaults"
+msgstr "Schaper come arindjmint prémetou"
+
+#: kdeui/dialogs/kshortcutschemeseditor.cpp:81
+msgid "Export Scheme..."
+msgstr "Ebaguer arandjmint..."
+
+#: kdeui/dialogs/kshortcutschemeseditor.cpp:98
+msgid "Name for New Scheme"
+msgstr "No do novea arindjmint"
+
+#: kdeui/dialogs/kshortcutschemeseditor.cpp:99
+msgid "Name for new scheme:"
+msgstr "No do novea arindjmint:"
+
+#: kdeui/dialogs/kshortcutschemeseditor.cpp:99
+msgid "New Scheme"
+msgstr "Novea arindjmint"
+
+#: kdeui/dialogs/kshortcutschemeseditor.cpp:105
+msgid "A scheme with this name already exists."
+msgstr "Èn arindjmint avou c' no la egzistêye dedja."
+
+#: kdeui/dialogs/kshortcutschemeseditor.cpp:133
+#, kde-format
+msgid ""
+"Do you really want to delete the scheme %1?\n"
+"Note that this will not remove any system wide shortcut schemes."
+msgstr ""
+"Voloz disfacer l' arindjmint %1 po do bon?\n"
+"Notez k' ça n' va nén oister d' arindjmints d' racourti po tot l' sistinme."
+
+#: kdeui/dialogs/kshortcutschemeseditor.cpp:162
+msgid "Export to Location"
+msgstr "Ebaguer a l' eplaeçmint"
+
+#: kdeui/dialogs/kshortcutschemeseditor.cpp:171
+msgid "Could not export shortcuts scheme because the location is invalid."
+msgstr ""
+
 #: kdeui/dialogs/kswitchlanguagedialog_p.cpp:98
 msgid "Switch Application Language"
 msgstr "Discandjî l' lingaedje do programe"
@@ -5854,67 +5934,6 @@ msgid "Please click and drag on the image to select the region of interest:"
 msgstr ""
 "Clitchîz eyet bodjîz l' imådje, s' i vs plait, po tchoezi l' redjon ki "
 "compete:"
-
-#: kdeui/dialogs/kshortcutschemeseditor.cpp:41
-msgid "Shortcut Schemes"
-msgstr "Arindjmints d' rascourtis"
-
-#: kdeui/dialogs/kshortcutschemeseditor.cpp:59
-msgid "Current scheme:"
-msgstr "Arindjmint do moumint:"
-
-#: kdeui/dialogs/kshortcutschemeseditor.cpp:69
-msgid "New..."
-msgstr "Novea..."
-
-#: kdeui/dialogs/kshortcutschemeseditor.cpp:72
-msgid "Delete"
-msgstr "Disfacer"
-
-#: kdeui/dialogs/kshortcutschemeseditor.cpp:75
-msgid "More Actions"
-msgstr "Pus di faitindjes"
-
-#: kdeui/dialogs/kshortcutschemeseditor.cpp:79
-msgid "Save as Scheme Defaults"
-msgstr "Schaper come arindjmint prémetou"
-
-#: kdeui/dialogs/kshortcutschemeseditor.cpp:81
-msgid "Export Scheme..."
-msgstr "Ebaguer arandjmint..."
-
-#: kdeui/dialogs/kshortcutschemeseditor.cpp:98
-msgid "Name for New Scheme"
-msgstr "No do novea arindjmint"
-
-#: kdeui/dialogs/kshortcutschemeseditor.cpp:99
-msgid "Name for new scheme:"
-msgstr "No do novea arindjmint:"
-
-#: kdeui/dialogs/kshortcutschemeseditor.cpp:99
-msgid "New Scheme"
-msgstr "Novea arindjmint"
-
-#: kdeui/dialogs/kshortcutschemeseditor.cpp:105
-msgid "A scheme with this name already exists."
-msgstr "Èn arindjmint avou c' no la egzistêye dedja."
-
-#: kdeui/dialogs/kshortcutschemeseditor.cpp:133
-#, kde-format
-msgid ""
-"Do you really want to delete the scheme %1?\n"
-"Note that this will not remove any system wide shortcut schemes."
-msgstr ""
-"Voloz disfacer l' arindjmint %1 po do bon?\n"
-"Notez k' ça n' va nén oister d' arindjmints d' racourti po tot l' sistinme."
-
-#: kdeui/dialogs/kshortcutschemeseditor.cpp:162
-msgid "Export to Location"
-msgstr "Ebaguer a l' eplaeçmint"
-
-#: kdeui/dialogs/kshortcutschemeseditor.cpp:171
-msgid "Could not export shortcuts scheme because the location is invalid."
-msgstr ""
 
 #: kdeui/dialogs/kshortcutsdialog.cpp:67
 msgid ""
@@ -6331,7 +6350,7 @@ msgid "Warning"
 msgstr "Adviertixhmint"
 
 #: kdeui/dialogs/kmessagebox.cpp:841 kdeui/dialogs/kmessagebox.cpp:871
-#: khtml/rendering/render_form.cpp:818 kjs/object.cpp:553
+#: khtml/rendering/render_form.cpp:872 kjs/object.cpp:553
 #: knewstuff/knewstuff3/uploaddialog.cpp:528
 msgid "Error"
 msgstr "Aroke"
@@ -8055,7 +8074,7 @@ msgstr "Drovi fitchî"
 msgid "&Quit"
 msgstr "C&witer"
 
-#: kdeui/util/kstandardguiitem.cpp:255
+#: kdeui/util/kstandardguiitem.cpp:255 kdeui/actions/kstandardaction_p.h:53
 msgid "Quit application"
 msgstr "Cwiter l' programe"
 
@@ -9389,7 +9408,7 @@ msgstr "&Monter"
 msgid "Move &Down"
 msgstr "&Dischinde"
 
-#: kdeui/widgets/khistorycombobox.cpp:177 khtml/rendering/render_form.cpp:941
+#: kdeui/widgets/khistorycombobox.cpp:177 khtml/rendering/render_form.cpp:995
 msgid "Clear &History"
 msgstr "Netyî l' &istwere"
 
@@ -10562,30 +10581,6 @@ msgstr ""
 msgid "GUI for the khtml regression tester"
 msgstr ""
 
-#: khtml/khtmlimage.cpp:202
-#, kde-format
-msgid "%1 (%2 - %3x%4 Pixels)"
-msgstr "%1 (%2 - %3x%4 picsels)"
-
-#: khtml/khtmlimage.cpp:204
-#, kde-format
-msgid "%1 - %2x%3 Pixels"
-msgstr "%1 - %2x%3 picsels"
-
-#: khtml/khtmlimage.cpp:209
-#, kde-format
-msgid "%1 (%2x%3 Pixels)"
-msgstr "%1 (%2x%3 picsels)"
-
-#: khtml/khtmlimage.cpp:211
-#, kde-format
-msgid "Image - %1x%2 Pixels"
-msgstr "Imådje - %1x%2 picsels"
-
-#: khtml/khtmlimage.cpp:217
-msgid "Done."
-msgstr "Fwait."
-
 #: khtml/test_regression.cpp:619
 msgid "Directory containing tests, basedir and output directories."
 msgstr ""
@@ -10642,6 +10637,30 @@ msgstr "TestRegression"
 msgid "Regression tester for khtml"
 msgstr "Sayeu di regression po khtml"
 
+#: khtml/khtmlimage.cpp:202
+#, kde-format
+msgid "%1 (%2 - %3x%4 Pixels)"
+msgstr "%1 (%2 - %3x%4 picsels)"
+
+#: khtml/khtmlimage.cpp:204
+#, kde-format
+msgid "%1 - %2x%3 Pixels"
+msgstr "%1 - %2x%3 picsels"
+
+#: khtml/khtmlimage.cpp:209
+#, kde-format
+msgid "%1 (%2x%3 Pixels)"
+msgstr "%1 (%2x%3 picsels)"
+
+#: khtml/khtmlimage.cpp:211
+#, kde-format
+msgid "Image - %1x%2 Pixels"
+msgstr "Imådje - %1x%2 picsels"
+
+#: khtml/khtmlimage.cpp:217
+msgid "Done."
+msgstr "Fwait."
+
 #: khtml/test_regression_gui_window.cpp:76
 msgid "Available Tests: 0"
 msgstr "Sayaedjes k' i gn a: 0"
@@ -10660,7 +10679,7 @@ msgid "Available Tests: %1 (ignored: %2)"
 msgstr ""
 
 #: khtml/test_regression_gui_window.cpp:563
-#: khtml/ecma/debugger/debugwindow.cpp:192
+#: khtml/ecma/debugger/debugwindow.cpp:195
 msgid "Continue"
 msgstr "Tcheryî pus lon"
 
@@ -10986,56 +11005,68 @@ msgstr ""
 msgid "Breakpoint"
 msgstr "Pont d' djocaedje"
 
+#: khtml/ecma/debugger/scriptsdock.cpp:43
+msgid "Loaded Scripts"
+msgstr "Tcherdjî scripe"
+
+#: khtml/ecma/debugger/localvariabledock.cpp:43
+msgid "Local Variables"
+msgstr "Locålès variåves"
+
+#: khtml/ecma/debugger/localvariabledock.cpp:51
+msgid "Reference"
+msgstr "Referince"
+
 #: khtml/ecma/debugger/debugwindow.cpp:111
 msgid "JavaScript Debugger"
 msgstr "Disbugueu JavaScript"
 
-#: khtml/ecma/debugger/debugwindow.cpp:186
+#: khtml/ecma/debugger/debugwindow.cpp:189
 msgid "&Break at Next Statement"
 msgstr "&Djoker a l' instruccion ki shût"
 
-#: khtml/ecma/debugger/debugwindow.cpp:187
+#: khtml/ecma/debugger/debugwindow.cpp:190
 msgid "Break at Next"
 msgstr "Djoker al shuvante"
 
-#: khtml/ecma/debugger/debugwindow.cpp:199
+#: khtml/ecma/debugger/debugwindow.cpp:202
 msgid "Step Over"
 msgstr "Etape dizeu"
 
-#: khtml/ecma/debugger/debugwindow.cpp:206
+#: khtml/ecma/debugger/debugwindow.cpp:209
 msgid "Step Into"
 msgstr "Etape divins"
 
-#: khtml/ecma/debugger/debugwindow.cpp:213
+#: khtml/ecma/debugger/debugwindow.cpp:216
 msgid "Step Out"
 msgstr "Etape foû"
 
-#: khtml/ecma/debugger/debugwindow.cpp:219
+#: khtml/ecma/debugger/debugwindow.cpp:222
 msgid "Reindent Sources"
 msgstr ""
 
-#: khtml/ecma/debugger/debugwindow.cpp:224
+#: khtml/ecma/debugger/debugwindow.cpp:227
 msgid "Report Exceptions"
 msgstr "Rapoirter foû rîles"
 
-#: khtml/ecma/debugger/debugwindow.cpp:232
+#: khtml/ecma/debugger/debugwindow.cpp:235
 msgid "&Debug"
 msgstr "&Disbuguer"
 
-#: khtml/ecma/debugger/debugwindow.cpp:266
+#: khtml/ecma/debugger/debugwindow.cpp:269
 msgid "Close source"
 msgstr "Clôre sourdant"
 
-#: khtml/ecma/debugger/debugwindow.cpp:272
+#: khtml/ecma/debugger/debugwindow.cpp:275
 msgid "Ready"
 msgstr "Presse"
 
-#: khtml/ecma/debugger/debugwindow.cpp:621
+#: khtml/ecma/debugger/debugwindow.cpp:624
 #, kde-format
 msgid "Parse error at %1 line %2"
 msgstr "Aroke d' analijhe del sintake dins %1 roye %2"
 
-#: khtml/ecma/debugger/debugwindow.cpp:658
+#: khtml/ecma/debugger/debugwindow.cpp:661
 #, kde-format
 msgid ""
 "An error occurred while attempting to run a script on this page.\n"
@@ -11048,28 +11079,16 @@ msgstr ""
 "%1 roye %2:\n"
 "%3"
 
-#: khtml/ecma/debugger/debugwindow.cpp:853
+#: khtml/ecma/debugger/debugwindow.cpp:856
 msgid ""
 "Do not know where to evaluate the expression. Please pause a script or open "
 "a source file."
 msgstr ""
 
-#: khtml/ecma/debugger/debugwindow.cpp:889
+#: khtml/ecma/debugger/debugwindow.cpp:892
 #, kde-format
 msgid "Evaluation threw an exception %1"
 msgstr ""
-
-#: khtml/ecma/debugger/scriptsdock.cpp:43
-msgid "Loaded Scripts"
-msgstr "Tcherdjî scripe"
-
-#: khtml/ecma/debugger/localvariabledock.cpp:43
-msgid "Local Variables"
-msgstr "Locålès variåves"
-
-#: khtml/ecma/debugger/localvariabledock.cpp:51
-msgid "Reference"
-msgstr "Referince"
 
 #: khtml/html/htmlparser.cpp:1938
 msgid "This is a searchable index. Enter search keywords: "
@@ -11237,28 +11256,28 @@ msgstr "Nou apougneu di trové po %1."
 msgid "Play"
 msgstr "Djouwer"
 
-#: khtml/rendering/render_form.cpp:797
+#: khtml/rendering/render_form.cpp:851
 msgid "New Web Shortcut"
 msgstr "Novea rascourti waibe"
 
-#: khtml/rendering/render_form.cpp:818
+#: khtml/rendering/render_form.cpp:872
 #, kde-format
 msgid "%1 is already assigned to %2"
 msgstr "%1 est ddja aroyî a %2"
 
-#: khtml/rendering/render_form.cpp:863
+#: khtml/rendering/render_form.cpp:917
 msgid "Search &provider name:"
 msgstr ""
 
-#: khtml/rendering/render_form.cpp:865
+#: khtml/rendering/render_form.cpp:919
 msgid "New search provider"
 msgstr "Novel ahesseu d' cweraedje"
 
-#: khtml/rendering/render_form.cpp:870
+#: khtml/rendering/render_form.cpp:924
 msgid "UR&I shortcuts:"
 msgstr "Rascourtis UR&I:"
 
-#: khtml/rendering/render_form.cpp:956
+#: khtml/rendering/render_form.cpp:1010
 msgid "Create Web Shortcut"
 msgstr "Ahiver rascourti waibe"
 
@@ -12128,11 +12147,16 @@ msgid "Upload failed: %1"
 msgstr "L' eberwetaedje a fwait berwete : %1"
 
 #: knewstuff/knewstuff3/attica/atticaprovider.cpp:286
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt ""
+#| "the price of a download item, parameter 1 is the currency, 2 is the price"
+#| msgid ""
+#| "This items costs %1 %2.\n"
+#| "Do you want to buy it?"
 msgctxt ""
 "the price of a download item, parameter 1 is the currency, 2 is the price"
 msgid ""
-"This items costs %1 %2.\n"
+"This item costs %1 %2.\n"
 "Do you want to buy it?"
 msgstr ""
 "Li cayet costêye %1 %2.\n"
@@ -12786,19 +12810,6 @@ msgstr "Aroke di comunicåcion"
 msgid "Invalid type in Database"
 msgstr "Sôre nén valide el båze di dnêyes"
 
-#: nepomuk/query/query.cpp:696
-#, kde-format
-msgctxt ""
-"@title UDS_DISPLAY_NAME for a KIO directory listing. %1 is the query the "
-"user entered."
-msgid "Query Results from '%1'"
-msgstr "Rizultats do cweraedje a pårti d' « %1 »"
-
-#: nepomuk/query/query.cpp:702
-msgctxt "@title UDS_DISPLAY_NAME for a KIO directory listing."
-msgid "Query Results"
-msgstr "Rizultats do cweraedje"
-
 #: nepomuk/query/queryparser.cpp:544
 msgctxt ""
 "Boolean AND keyword in desktop search strings. You can add several variants "
@@ -12816,6 +12827,19 @@ msgctxt ""
 "keyword."
 msgid "or"
 msgstr "ou"
+
+#: nepomuk/query/query.cpp:687
+#, kde-format
+msgctxt ""
+"@title UDS_DISPLAY_NAME for a KIO directory listing. %1 is the query the "
+"user entered."
+msgid "Query Results from '%1'"
+msgstr "Rizultats do cweraedje a pårti d' « %1 »"
+
+#: nepomuk/query/query.cpp:693
+msgctxt "@title UDS_DISPLAY_NAME for a KIO directory listing."
+msgid "Query Results"
+msgstr "Rizultats do cweraedje"
 
 #: nepomuk/rcgen/rcgen.cpp:49 nepomuk/rcgen/rcgen.cpp:51
 msgid "Nepomuk Resource Class Generator"
@@ -13302,6 +13326,10 @@ msgstr "-prémetou-"
 msgid "-unnamed-"
 msgstr "-sins no-"
 
+#: interfaces/terminal/example/main.cc:32
+msgid "TETest"
+msgstr "TETest"
+
 #: kdecore/services/kmimetypetrader.h:136
 #: kdecore/services/kmimetypetrader.h:169
 #: kdecore/services/kservicetypetrader.h:192
@@ -13321,37 +13349,114 @@ msgstr "Programe di saye di KDE"
 msgid "&New"
 msgstr "&Novea"
 
+#: kdeui/actions/kstandardaction_p.h:43
+#, fuzzy
+#| msgctxt "@label"
+#| msgid "Create new tag:"
+msgid "Create new document"
+msgstr "Ahiver novele etikete :"
+
+#: kdeui/actions/kstandardaction_p.h:44
+msgid "Open an existing document"
+msgstr ""
+
 #: kdeui/actions/kstandardaction_p.h:45
 msgid "Open &Recent"
 msgstr "Drovi les &dierins"
+
+#: kdeui/actions/kstandardaction_p.h:45
+msgid "Open a document which was recently opened"
+msgstr ""
+
+#: kdeui/actions/kstandardaction_p.h:46
+#, fuzzy
+#| msgid "Close Document"
+msgid "Save document"
+msgstr "Clôre li documint?"
+
+#: kdeui/actions/kstandardaction_p.h:47
+msgid "Save document under a new name"
+msgstr ""
 
 #: kdeui/actions/kstandardaction_p.h:48
 msgid "Re&vert"
 msgstr "&Rimete come divant"
 
+#: kdeui/actions/kstandardaction_p.h:48
+msgid "Revert unsaved changes made to document"
+msgstr ""
+
+#: kdeui/actions/kstandardaction_p.h:49
+#, fuzzy
+#| msgid "Close Document"
+msgid "Close document"
+msgstr "Clôre li documint?"
+
+#: kdeui/actions/kstandardaction_p.h:50
+#, fuzzy
+#| msgctxt "keyboard-key-name"
+#| msgid "PrintScreen"
+msgid "Print document"
+msgstr "PrintScreen"
+
 #: kdeui/actions/kstandardaction_p.h:51
 msgid "Print Previe&w"
 msgstr "Voe&yaedje divant d' imprimer"
+
+#: kdeui/actions/kstandardaction_p.h:51
+msgid "Show a print preview of document"
+msgstr ""
 
 #: kdeui/actions/kstandardaction_p.h:52
 msgid "&Mail..."
 msgstr "&Emiler..."
 
+#: kdeui/actions/kstandardaction_p.h:52
+msgid "Send document by mail"
+msgstr ""
+
+#: kdeui/actions/kstandardaction_p.h:55
+msgid "Undo last action"
+msgstr ""
+
 #: kdeui/actions/kstandardaction_p.h:56
 msgid "Re&do"
 msgstr "&Rifé"
+
+#: kdeui/actions/kstandardaction_p.h:56
+#, fuzzy
+#| msgctxt ""
+#| "A link to make a donation for a Get Hot New Stuff item (opens a web "
+#| "browser)"
+#| msgid "Make a donation"
+msgid "Redo last undone action"
+msgstr "Diner des cwårs"
 
 #: kdeui/actions/kstandardaction_p.h:57
 msgid "Cu&t"
 msgstr "Cô&per"
 
+#: kdeui/actions/kstandardaction_p.h:57
+msgid "Cut selection to clipboard"
+msgstr ""
+
 #: kdeui/actions/kstandardaction_p.h:58
 msgid "&Copy"
 msgstr "&Copyî"
 
+#: kdeui/actions/kstandardaction_p.h:58
+msgid "Copy selection to clipboard"
+msgstr ""
+
 #: kdeui/actions/kstandardaction_p.h:59 kdeui/actions/kstandardaction_p.h:60
 msgid "&Paste"
 msgstr "Ac&laper"
+
+#: kdeui/actions/kstandardaction_p.h:59 kdeui/actions/kstandardaction_p.h:60
+#, fuzzy
+#| msgid "Upload content"
+msgid "Paste clipboard content"
+msgstr "Eberweter l' ådvins"
 
 #: kdeui/actions/kstandardaction_p.h:62
 msgid "Select &All"
@@ -13377,17 +13482,33 @@ msgstr "Dis&candjî..."
 msgid "&Actual Size"
 msgstr "Vraiye &grandeu"
 
+#: kdeui/actions/kstandardaction_p.h:69
+msgid "View document at its actual size"
+msgstr ""
+
 #: kdeui/actions/kstandardaction_p.h:70
 msgid "&Fit to Page"
 msgstr "For&rimpli l' pådje"
+
+#: kdeui/actions/kstandardaction_p.h:70
+msgid "Zoom to fit page in window"
+msgstr ""
 
 #: kdeui/actions/kstandardaction_p.h:71
 msgid "Fit to Page &Width"
 msgstr "Al &lårdjeur del pådje"
 
+#: kdeui/actions/kstandardaction_p.h:71
+msgid "Zoom to fit page width in window"
+msgstr ""
+
 #: kdeui/actions/kstandardaction_p.h:72
 msgid "Fit to Page &Height"
 msgstr "Al &hôteur del pådje"
+
+#: kdeui/actions/kstandardaction_p.h:72
+msgid "Zoom to fit page height in window"
+msgstr ""
 
 #: kdeui/actions/kstandardaction_p.h:73
 msgid "Zoom &In"
@@ -13401,21 +13522,50 @@ msgstr "&Diszoumer"
 msgid "&Zoom..."
 msgstr "&Zoumer..."
 
+#: kdeui/actions/kstandardaction_p.h:75
+#, fuzzy
+#| msgid "Select a week"
+msgid "Select zoom level"
+msgstr "Tchoezixhoz ene samwinne"
+
 #: kdeui/actions/kstandardaction_p.h:76
 msgid "&Redisplay"
+msgstr "&Rihåyner"
+
+#: kdeui/actions/kstandardaction_p.h:76
+#, fuzzy
+#| msgid "&Redisplay"
+msgid "Redisplay document"
 msgstr "&Rihåyner"
 
 #: kdeui/actions/kstandardaction_p.h:78
 msgid "&Up"
 msgstr "&Monter"
 
+#: kdeui/actions/kstandardaction_p.h:78
+msgid "Go up"
+msgstr ""
+
 #: kdeui/actions/kstandardaction_p.h:83
 msgid "&Previous Page"
+msgstr "Pådje di d&vant"
+
+#: kdeui/actions/kstandardaction_p.h:83
+#, fuzzy
+#| msgid "&Previous Page"
+msgid "Go to previous page"
 msgstr "Pådje di d&vant"
 
 #: kdeui/actions/kstandardaction_p.h:84
 msgid "&Next Page"
 msgstr "Pådje &shuvante"
+
+#: kdeui/actions/kstandardaction_p.h:84
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to next page"
+msgstr "Potchî al roye"
 
 #: kdeui/actions/kstandardaction_p.h:85
 msgid "&Go To..."
@@ -13433,16 +13583,40 @@ msgstr "&Potchî al roye..."
 msgid "&First Page"
 msgstr "&Prumire pådje"
 
+#: kdeui/actions/kstandardaction_p.h:88
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Go to Line"
+msgid "Go to first page"
+msgstr "Potchî al roye"
+
 #: kdeui/actions/kstandardaction_p.h:89
 msgid "&Last Page"
 msgstr "&Dierinne pådje"
 
+#: kdeui/actions/kstandardaction_p.h:89
+#, fuzzy
+#| msgid "&Go to Page..."
+msgid "Go to last page"
+msgstr "&Potchî al pådje..."
+
 #: kdeui/actions/kstandardaction_p.h:90
-msgid "&Back in the Document"
+#, fuzzy
+#| msgid "&Back in the Document"
+msgid "Go back in document"
 msgstr "En &erî dins l' documint"
 
 #: kdeui/actions/kstandardaction_p.h:91
-msgid "&Forward in the Document"
+#, fuzzy
+#| msgctxt "go forward"
+#| msgid "&Forward"
+msgid "&Forward"
+msgstr "En &avant"
+
+#: kdeui/actions/kstandardaction_p.h:91
+#, fuzzy
+#| msgid "&Forward in the Document"
+msgid "Go forward in document"
 msgstr "En &avant dins l' documint"
 
 #: kdeui/actions/kstandardaction_p.h:93
@@ -13457,9 +13631,39 @@ msgstr "&Candjî rimåkes..."
 msgid "&Spelling..."
 msgstr "&Speli..."
 
+#: kdeui/actions/kstandardaction_p.h:96
+#, fuzzy
+#| msgid "Check Spelling"
+msgid "Check spelling in document"
+msgstr "Coridjî ortografeye"
+
+#: kdeui/actions/kstandardaction_p.h:98
+#, fuzzy
+#| msgid "Show &Menubar"
+msgid "Show or hide menubar"
+msgstr "Mostrer l' bår di &menu"
+
 #: kdeui/actions/kstandardaction_p.h:99
 msgid "Show &Toolbar"
 msgstr "Mostrer li bår ås us&teyes"
+
+#: kdeui/actions/kstandardaction_p.h:99
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Show Toolbar"
+msgid "Show or hide toolbar"
+msgstr "Mostrer bår ås usteyes"
+
+#: kdeui/actions/kstandardaction_p.h:100
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Show Statusbar"
+msgid "Show or hide statusbar"
+msgstr "Mostrer bår di racsegne"
+
+#: kdeui/actions/kstandardaction_p.h:101
+msgid "F&ull Screen Mode"
+msgstr "Môde tote li &waitroûle"
 
 #: kdeui/actions/kstandardaction_p.h:102
 msgid "&Save Settings"
@@ -13565,12 +13769,6 @@ msgstr "pm"
 #, fuzzy
 #~| msgctxt "@action"
 #~| msgid "Show Statusbar"
-#~ msgid "Show Statusbar"
-#~ msgstr "Mostrer bår di racsegne"
-
-#, fuzzy
-#~| msgctxt "@action"
-#~| msgid "Show Statusbar"
 #~ msgid "Hide Statusbar"
 #~ msgstr "Mostrer bår di racsegne"
 
@@ -13585,12 +13783,6 @@ msgstr "pm"
 #~ msgctxt "option:check A filter on file type - media files"
 #~ msgid "Media"
 #~ msgstr "Media"
-
-#, fuzzy
-#~| msgctxt "@action"
-#~| msgid "Show Toolbar"
-#~ msgid "Show Toolbar"
-#~ msgstr "Mostrer bår ås usteyes"
 
 #, fuzzy
 #~| msgid "HTML Toolbar"
@@ -13626,9 +13818,6 @@ msgstr "pm"
 
 #~ msgid "Test the Kross framework!"
 #~ msgstr "Sayîz l' evironmint Kross !"
-
-#~ msgid "TETest"
-#~ msgstr "TETest"
 
 #~ msgid "Find stopped."
 #~ msgstr "Cweraedje aresté."
