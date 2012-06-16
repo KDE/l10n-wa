@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-14 03:47+0200\n"
+"POT-Creation-Date: 2012-06-16 03:15+0200\n"
 "PO-Revision-Date: 2011-01-17 21:35+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -7654,13 +7654,13 @@ msgstr "Mostrer l' coûtche oridjinnåle"
 
 #. i18n: file: ui/forms/kis_previewwidgetbase.ui:122
 #. i18n: ectx: property (toolTip), widget (KPushButton, btnZoomOut)
-#: rc.cpp:3201
+#: rc.cpp:3201 ui/input/kis_zoom_action.cpp:49
 msgid "Zoom Out"
 msgstr "Diszoumer"
 
 #. i18n: file: ui/forms/kis_previewwidgetbase.ui:135
 #. i18n: ectx: property (toolTip), widget (KPushButton, btnZoomIn)
-#: rc.cpp:3204
+#: rc.cpp:3204 ui/input/kis_zoom_action.cpp:48
 msgid "Zoom In"
 msgstr "Zoumer"
 
@@ -13436,6 +13436,44 @@ msgid ""
 "<i>./0</i> represents the first child of the current layer"
 msgstr ""
 
+#: ui/tool/kis_tool_freehand_helper.cpp:127
+#, fuzzy
+#| msgid "Freehand tool"
+msgid "Freehand Stroke"
+msgstr "Usteye mwin libe"
+
+#: ui/tool/kis_tool_freehand.cc:90
+#, fuzzy
+#| msgid "Chinese Brush"
+msgid "Increase Brush Size"
+msgstr "Pincea chinwès"
+
+#: ui/tool/kis_tool_freehand.cc:96
+#, fuzzy
+#| msgid "Brush size"
+msgid "Decrease Brush Size"
+msgstr "Grandeu do pincea"
+
+#: ui/tool/kis_tool.cc:111
+#, fuzzy
+#| msgid "Foreground Color"
+msgid "Swap Foreground and Background Color"
+msgstr "Coleur di dvant"
+
+#: ui/tool/kis_tool.cc:117
+#, fuzzy
+#| msgid "Foreground Color"
+msgid "Reset Foreground and Background Color"
+msgstr "Coleur di dvant"
+
+#: ui/tool/kis_tool.cc:519
+msgid "Clear"
+msgstr "Netyî"
+
+#: ui/tool/kis_tool.cc:547
+msgid "No options"
+msgstr "Nole tchuze"
+
 #: ui/tool/kis_tool_paint.cc:92
 msgid "Make brush color lighter"
 msgstr ""
@@ -13455,44 +13493,6 @@ msgstr "Prévey opacité:"
 #| msgid "Preview opacity:"
 msgid "Decrease opacity"
 msgstr "Prévey opacité:"
-
-#: ui/tool/kis_tool_freehand_helper.cpp:127
-#, fuzzy
-#| msgid "Freehand tool"
-msgid "Freehand Stroke"
-msgstr "Usteye mwin libe"
-
-#: ui/tool/kis_tool.cc:111
-#, fuzzy
-#| msgid "Foreground Color"
-msgid "Swap Foreground and Background Color"
-msgstr "Coleur di dvant"
-
-#: ui/tool/kis_tool.cc:117
-#, fuzzy
-#| msgid "Foreground Color"
-msgid "Reset Foreground and Background Color"
-msgstr "Coleur di dvant"
-
-#: ui/tool/kis_tool.cc:595
-msgid "Clear"
-msgstr "Netyî"
-
-#: ui/tool/kis_tool.cc:623
-msgid "No options"
-msgstr "Nole tchuze"
-
-#: ui/tool/kis_tool_freehand.cc:90
-#, fuzzy
-#| msgid "Chinese Brush"
-msgid "Increase Brush Size"
-msgstr "Pincea chinwès"
-
-#: ui/tool/kis_tool_freehand.cc:96
-#, fuzzy
-#| msgid "Brush size"
-msgid "Decrease Brush Size"
-msgstr "Grandeu do pincea"
 
 #: ui/widgets/kis_channelflags_widget.cpp:39
 msgid ""
@@ -13617,6 +13617,139 @@ msgstr "Novea apontiaedje %1"
 msgid ""
 "Cannot start Colors Settings panel from KDE Control Center. Please check "
 "your system..."
+msgstr ""
+
+#: ui/input/kis_abstract_input_action.cpp:36
+#, fuzzy
+#| msgid "Active"
+msgid "Activate"
+msgstr "Ovrant"
+
+#: ui/input/kis_alternate_invocation_action.cpp:33
+#, fuzzy
+#| msgctxt "The gradient will repeat alternatingly"
+#| msgid "Alternating"
+msgid "Alternate Invocation"
+msgstr "Candjant"
+
+#: ui/input/kis_alternate_invocation_action.cpp:34
+msgid ""
+"Alternate Invocation performs an alternate action with the current tool. For "
+"example, using the brush tool it picks a color from the canvas."
+msgstr ""
+
+#: ui/input/kis_change_primary_setting_action.cpp:29
+msgid "Change Tool Primary Setting"
+msgstr ""
+
+#: ui/input/kis_change_primary_setting_action.cpp:30
+msgid ""
+"Changes a tool's \"Primary Setting\", for example the brush size for the "
+"brush tool."
+msgstr ""
+
+#: ui/input/kis_input_manager.cpp:100
+#, fuzzy
+#| msgid "Crop Image"
+msgid "Set Mirror Axis"
+msgstr "Côper dvins l' imådje"
+
+#: ui/input/kis_pan_action.cpp:47
+#, fuzzy
+#| msgid "Size Canvas"
+msgid "Pan Canvas"
+msgstr "Grandeu del toele"
+
+#: ui/input/kis_pan_action.cpp:50
+msgid "Toggle Pan Mode"
+msgstr ""
+
+#: ui/input/kis_pan_action.cpp:51
+#, fuzzy
+#| msgid "Left"
+msgid "Pan Left"
+msgstr "Hintche"
+
+#: ui/input/kis_pan_action.cpp:52
+#, fuzzy
+#| msgid "Right"
+msgid "Pan Right"
+msgstr "Droete"
+
+#: ui/input/kis_pan_action.cpp:53
+msgid "Pan Up"
+msgstr ""
+
+#: ui/input/kis_pan_action.cpp:54
+msgid "Pan Down"
+msgstr ""
+
+#: ui/input/kis_rotate_canvas_action.cpp:44
+#, fuzzy
+#| msgid "Rotate Image"
+msgid "Rotate Canvas"
+msgstr "Tourner l' imådje"
+
+#: ui/input/kis_rotate_canvas_action.cpp:46
+#, fuzzy
+#| msgid "Rotate Node"
+msgid "Toggle Rotate Mode"
+msgstr "Fé tourner nuk"
+
+#: ui/input/kis_rotate_canvas_action.cpp:47
+#, fuzzy
+#| msgid "Rotate Layer"
+msgid "Rotate Left"
+msgstr "Tourner coûtche"
+
+#: ui/input/kis_rotate_canvas_action.cpp:48
+#, fuzzy
+#| msgid "Rotate Image"
+msgid "Rotate Right"
+msgstr "Tourner l' imådje"
+
+#: ui/input/kis_rotate_canvas_action.cpp:49
+#, fuzzy
+#| msgid "Rotation"
+msgid "Reset Rotation"
+msgstr "Tournaedje"
+
+#: ui/input/kis_show_palette_action.cpp:31
+#, fuzzy
+#| msgid "Palette"
+msgid "Show Popup Palette"
+msgstr "Palete"
+
+#: ui/input/kis_tool_invocation_action.cpp:49
+#, fuzzy
+#| msgid "Tool information"
+msgid "Tool Invocation"
+msgstr "Pondants et djondants d' l' usteye"
+
+#: ui/input/kis_tool_invocation_action.cpp:50
+msgid ""
+"Tool Invocation invokes the current tool, for example, using the brush tool, "
+"it will start painting."
+msgstr ""
+
+#: ui/input/kis_zoom_action.cpp:44
+#, fuzzy
+#| msgid "Zoom In"
+msgid "Zoom Canvas"
+msgstr "Zoumer"
+
+#: ui/input/kis_zoom_action.cpp:47
+msgid "Toggle Zoom Mode"
+msgstr ""
+
+#: ui/input/kis_zoom_action.cpp:50
+#, fuzzy
+#| msgid "Reselect"
+msgid "Reset Zoom to 100%"
+msgstr "Tchoezi eco on côp"
+
+#: ui/input/kis_zoom_action.cpp:51
+msgid "Fit to Page"
 msgstr ""
 
 #: main.cc:50
@@ -14896,11 +15029,6 @@ msgstr "Fitchî(s) ou URL(s) a drovi"
 #~ msgstr "Haerna da l' årtisse"
 
 #, fuzzy
-#~| msgid "Crop Image"
-#~ msgid "Mirror: "
-#~ msgstr "Côper dvins l' imådje"
-
-#, fuzzy
 #~| msgid "Move a layer"
 #~ msgid "Move a layer (SHIFT+V)"
 #~ msgstr "Bodjî ene coûtche"
@@ -15201,9 +15329,6 @@ msgstr "Fitchî(s) ou URL(s) a drovi"
 
 #~ msgid "Pixel Eraser"
 #~ msgstr "Gome Picsel"
-
-#~ msgid "Size Canvas"
-#~ msgstr "Grandeu del toele"
 
 #, fuzzy
 #~| msgid "Filter Settings"
@@ -15919,11 +16044,6 @@ msgstr "Fitchî(s) ou URL(s) a drovi"
 
 #~ msgid "Spray Object"
 #~ msgstr "Cayet spitroûle"
-
-#, fuzzy
-#~| msgid "Palette"
-#~ msgid "&PopupPalette"
-#~ msgstr "Palete"
 
 #, fuzzy
 #~ msgid "All Images"
