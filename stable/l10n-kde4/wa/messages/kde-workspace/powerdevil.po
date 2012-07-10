@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerdevil\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-19 19:49+0200\n"
+"POT-Creation-Date: 2012-07-10 20:12+0200\n"
 "PO-Revision-Date: 2011-01-05 19:44+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -17,6 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 1.0\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: actions/bundled/brightnesscontrolconfig.cpp:63
+msgctxt "Brightness level, label for the slider"
+msgid "Level"
+msgstr "Livea"
 
 #: actions/bundled/dimdisplayconfig.cpp:63
 #: actions/bundled/runscriptconfig.cpp:80
@@ -31,6 +36,46 @@ msgstr " mun"
 #: actions/bundled/suspendsessionconfig.cpp:95
 msgid "After"
 msgstr "Après"
+
+#: actions/bundled/handlebuttoneventsconfig.cpp:77
+msgid "Do nothing"
+msgstr "Èn rén fé"
+
+#: actions/bundled/handlebuttoneventsconfig.cpp:79
+#: actions/bundled/suspendsessionconfig.cpp:80
+msgid "Sleep"
+msgstr "Doirmi"
+
+#: actions/bundled/handlebuttoneventsconfig.cpp:82
+#: actions/bundled/suspendsessionconfig.cpp:83
+msgid "Hibernate"
+msgstr "Fordoirmi"
+
+#: actions/bundled/handlebuttoneventsconfig.cpp:84
+#: actions/bundled/suspendsessionconfig.cpp:85
+msgid "Shutdown"
+msgstr "Arester"
+
+#: actions/bundled/handlebuttoneventsconfig.cpp:85
+#: actions/bundled/suspendsessionconfig.cpp:86
+msgid "Lock screen"
+msgstr "Eclawer waitroûle"
+
+#: actions/bundled/handlebuttoneventsconfig.cpp:87
+msgid "Prompt log out dialog"
+msgstr "Arinner l' purnea d' dislodjaedje"
+
+#: actions/bundled/handlebuttoneventsconfig.cpp:89
+msgid "Turn off screen"
+msgstr "Arester li waitroûle"
+
+#: actions/bundled/handlebuttoneventsconfig.cpp:100
+msgid "When laptop lid closed"
+msgstr "Cwand l' covieke do poirtåve est cloyou"
+
+#: actions/bundled/handlebuttoneventsconfig.cpp:101
+msgid "When power button pressed"
+msgstr "Cwand l' boutoe d' aloumaedje/distindaedje est tchôkî"
 
 #: actions/bundled/runscriptconfig.cpp:70
 msgid "Script"
@@ -52,51 +97,6 @@ msgstr "Enonder scripe"
 msgid "The screen is being locked"
 msgstr "Li waitroûle est a l' eclawaedje"
 
-#: actions/bundled/suspendsessionconfig.cpp:80
-#: actions/bundled/handlebuttoneventsconfig.cpp:79
-msgid "Sleep"
-msgstr "Doirmi"
-
-#: actions/bundled/suspendsessionconfig.cpp:83
-#: actions/bundled/handlebuttoneventsconfig.cpp:82
-msgid "Hibernate"
-msgstr "Fordoirmi"
-
-#: actions/bundled/suspendsessionconfig.cpp:85
-#: actions/bundled/handlebuttoneventsconfig.cpp:84
-msgid "Shutdown"
-msgstr "Arester"
-
-#: actions/bundled/suspendsessionconfig.cpp:86
-#: actions/bundled/handlebuttoneventsconfig.cpp:85
-msgid "Lock screen"
-msgstr "Eclawer waitroûle"
-
-#: actions/bundled/brightnesscontrolconfig.cpp:63
-msgctxt "Brightness level, label for the slider"
-msgid "Level"
-msgstr "Livea"
-
-#: actions/bundled/handlebuttoneventsconfig.cpp:77
-msgid "Do nothing"
-msgstr "Èn rén fé"
-
-#: actions/bundled/handlebuttoneventsconfig.cpp:87
-msgid "Prompt log out dialog"
-msgstr "Arinner l' purnea d' dislodjaedje"
-
-#: actions/bundled/handlebuttoneventsconfig.cpp:89
-msgid "Turn off screen"
-msgstr "Arester li waitroûle"
-
-#: actions/bundled/handlebuttoneventsconfig.cpp:100
-msgid "When laptop lid closed"
-msgstr "Cwand l' covieke do poirtåve est cloyou"
-
-#: actions/bundled/handlebuttoneventsconfig.cpp:101
-msgid "When power button pressed"
-msgstr "Cwand l' boutoe d' aloumaedje/distindaedje est tchôkî"
-
 #: actions/dpms/powerdevildpmsactionconfig.cpp:60
 msgid "Switch off after"
 msgstr "&Arester après"
@@ -104,6 +104,28 @@ msgstr "&Arester après"
 #: backends/upower/upowersuspendjob.cpp:74
 msgid "Unsupported suspend method"
 msgstr "Metôde di metaedje doirmi nén sopoirtêye "
+
+#: kdedpowerdevil.cpp:58
+msgid "KDE Power Management System"
+msgstr "Sistinme di manaedjmint di l' enerdjeye da KDE"
+
+#: kdedpowerdevil.cpp:59
+msgid ""
+"KDE Power Management System is PowerDevil, an advanced, modular and "
+"lightweight Power Management daemon"
+msgstr ""
+
+#: kdedpowerdevil.cpp:62
+msgid "(c) 2010 MetalWorkers Co."
+msgstr "(c) 2010 MetalWorkers Co."
+
+#: kdedpowerdevil.cpp:65
+msgid "Dario Freddi"
+msgstr "Dario Freddi"
+
+#: kdedpowerdevil.cpp:65
+msgid "Maintainer"
+msgstr "Mintneu"
 
 #: powerdevilcore.cpp:73
 msgid ""
@@ -265,28 +287,6 @@ msgstr ""
 #: powerdevilcore.cpp:560
 msgid "Your battery has reached a low level."
 msgstr "Vosse batreye a-st arivé a on bas livea."
-
-#: kdedpowerdevil.cpp:58
-msgid "KDE Power Management System"
-msgstr "Sistinme di manaedjmint di l' enerdjeye da KDE"
-
-#: kdedpowerdevil.cpp:59
-msgid ""
-"KDE Power Management System is PowerDevil, an advanced, modular and "
-"lightweight Power Management daemon"
-msgstr ""
-
-#: kdedpowerdevil.cpp:62
-msgid "(c) 2010 MetalWorkers Co."
-msgstr "(c) 2010 MetalWorkers Co."
-
-#: kdedpowerdevil.cpp:65
-msgid "Dario Freddi"
-msgstr "Dario Freddi"
-
-#: kdedpowerdevil.cpp:65
-msgid "Maintainer"
-msgstr "Mintneu"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
