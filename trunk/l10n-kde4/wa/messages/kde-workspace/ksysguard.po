@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksysguard\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-07 05:31+0200\n"
+"POT-Creation-Date: 2012-07-10 08:58+0200\n"
 "PO-Revision-Date: 2011-07-11 21:53+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -144,14 +144,14 @@ msgstr "Fortchete"
 #. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:16
 #. i18n: ectx: property (title), widget (QGroupBox, titleFrame)
 #: SensorDisplayLib/DancingBarsSettings.cpp:57 WorkSheetSettings.cpp:50
-#: rc.cpp:5 rc.cpp:92
+#: rc.cpp:5 rc.cpp:116
 msgid "Title"
 msgstr "Tite"
 
 #. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:35
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, m_title)
 #: SensorDisplayLib/DancingBarsSettings.cpp:62
-#: SensorDisplayLib/FancyPlotterSettings.cpp:73 rc.cpp:23
+#: SensorDisplayLib/FancyPlotterSettings.cpp:73 rc.cpp:47
 msgid "Enter the title of the display here."
 msgstr "Tapez cial li tite do håynaedje."
 
@@ -191,7 +191,7 @@ msgstr "Xhîletes"
 
 #. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:59
 #. i18n: ectx: property (title), widget (QGroupBox, GroupBox1)
-#: SensorDisplayLib/DancingBarsSettings.cpp:107 rc.cpp:68
+#: SensorDisplayLib/DancingBarsSettings.cpp:107 rc.cpp:92
 msgid "Alarm for Minimum Value"
 msgstr "Xhîlete pol valixhance minimom"
 
@@ -204,19 +204,19 @@ msgstr "Mete èn alaedje li xhîlete"
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, m_lowerLimitActive)
 #. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:71
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, m_lowerLimitActive)
-#: SensorDisplayLib/DancingBarsSettings.cpp:113 rc.cpp:32 rc.cpp:74
+#: SensorDisplayLib/DancingBarsSettings.cpp:113 rc.cpp:56 rc.cpp:98
 msgid "Enable the minimum value alarm."
 msgstr "Mete èn alaedje li xhîlete pol valixhance minimom."
 
 #. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:97
 #. i18n: ectx: property (text), widget (QLabel, m_lblLowerLimit)
-#: SensorDisplayLib/DancingBarsSettings.cpp:116 rc.cpp:77
+#: SensorDisplayLib/DancingBarsSettings.cpp:116 rc.cpp:101
 msgid "Lower limit:"
 msgstr "Limite do dzo :"
 
 #. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:123
 #. i18n: ectx: property (title), widget (QGroupBox, GroupBox1_2)
-#: SensorDisplayLib/DancingBarsSettings.cpp:130 rc.cpp:80
+#: SensorDisplayLib/DancingBarsSettings.cpp:130 rc.cpp:104
 msgid "Alarm for Maximum Value"
 msgstr "Xhîlete pol valixhance macsimom"
 
@@ -224,13 +224,13 @@ msgstr "Xhîlete pol valixhance macsimom"
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, m_upperLimitActive)
 #. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:135
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, m_upperLimitActive)
-#: SensorDisplayLib/DancingBarsSettings.cpp:136 rc.cpp:41 rc.cpp:86
+#: SensorDisplayLib/DancingBarsSettings.cpp:136 rc.cpp:65 rc.cpp:110
 msgid "Enable the maximum value alarm."
 msgstr "Mete èn alaedje li xhîlete pol valixhance macsimom."
 
 #. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:161
 #. i18n: ectx: property (text), widget (QLabel, m_lblUpperLimit)
-#: SensorDisplayLib/DancingBarsSettings.cpp:139 rc.cpp:89
+#: SensorDisplayLib/DancingBarsSettings.cpp:139 rc.cpp:113
 msgid "Upper limit:"
 msgstr "Limite do dzeu :"
 
@@ -249,14 +249,14 @@ msgstr "Coleur foû del fortchete :"
 
 #. i18n: file: SensorDisplayLib/ListViewSettingsWidget.ui:77
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#. i18n: file: SensorDisplayLib/LogFileSettings.ui:67
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
 #. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:228
 #. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
 #. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:64
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#. i18n: file: SensorDisplayLib/LogFileSettings.ui:67
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
 #: SensorDisplayLib/DancingBarsSettings.cpp:175
-#: SensorDisplayLib/LogFile.cpp:100 rc.cpp:17 rc.cpp:56 rc.cpp:101 rc.cpp:116
+#: SensorDisplayLib/LogFile.cpp:100 rc.cpp:17 rc.cpp:29 rc.cpp:80 rc.cpp:125
 msgid "Background color:"
 msgstr "Coleur di fond :"
 
@@ -316,6 +316,83 @@ msgid ""
 "and drop it here. A sensor display will appear that allows you to monitor "
 "the values of the sensor over time."
 msgstr ""
+
+#: SensorDisplayLib/FancyPlotter.cpp:178
+msgctxt "Largest axis title"
+msgid "99999 XXXX"
+msgstr "99999 XXXX"
+
+#: SensorDisplayLib/FancyPlotter.cpp:515 SensorDisplayLib/FancyPlotter.cpp:586
+#: SensorDisplayLib/FancyPlotter.cpp:649
+#, kde-format
+msgctxt "units"
+msgid "%1%"
+msgstr "%1%"
+
+#: SensorDisplayLib/FancyPlotter.cpp:523
+#, kde-format
+msgctxt "%1 is what is being shown statistics for, like 'Memory', 'Swap', etc."
+msgid "<p><b>%1:</b><br>"
+msgstr "<p><b>%1 :</b><br>"
+
+#: SensorDisplayLib/FancyPlotter.cpp:594
+#, kde-format
+msgid "%1 of %2%1"
+msgstr "%1 di %2%1"
+
+#: SensorDisplayLib/FancyPlotter.cpp:622
+#, kde-format
+msgctxt "units"
+msgid "%1 TiB"
+msgstr "%1 Tio"
+
+#: SensorDisplayLib/FancyPlotter.cpp:625
+#, kde-format
+msgctxt "units"
+msgid "%1 GiB"
+msgstr "%1 Gio"
+
+#: SensorDisplayLib/FancyPlotter.cpp:628
+#, kde-format
+msgctxt "units"
+msgid "%1 MiB"
+msgstr "%1 Mio"
+
+#: SensorDisplayLib/FancyPlotter.cpp:631
+#, kde-format
+msgctxt "units"
+msgid "%1 KiB"
+msgstr "%1 Kio"
+
+#: SensorDisplayLib/FancyPlotter.cpp:636
+#, kde-format
+msgctxt "units"
+msgid "%1 TiB/s"
+msgstr "%1 Tio/s"
+
+#: SensorDisplayLib/FancyPlotter.cpp:639
+#, kde-format
+msgctxt "units"
+msgid "%1 GiB/s"
+msgstr "%1 Gio/s"
+
+#: SensorDisplayLib/FancyPlotter.cpp:642
+#, kde-format
+msgctxt "units"
+msgid "%1 MiB/s"
+msgstr "%1 Mio/s"
+
+#: SensorDisplayLib/FancyPlotter.cpp:645
+#, kde-format
+msgctxt "units"
+msgid "%1 KiB/s"
+msgstr "%1 Kio/s"
+
+#: SensorDisplayLib/FancyPlotter.cpp:651
+#, kde-format
+msgctxt "unitless - just a number"
+msgid "%1"
+msgstr "%1"
 
 #: SensorDisplayLib/FancyPlotterSettings.cpp:51
 msgid "Plotter Settings"
@@ -444,189 +521,6 @@ msgstr "Monter"
 msgid "Move Down"
 msgstr "Dischinde"
 
-#: SensorDisplayLib/ListViewSettings.cpp:30
-msgid "List View Settings"
-msgstr "Apontiaedjes del vuwe e djivêye"
-
-#: SensorDisplayLib/MultiMeterSettings.cpp:31
-msgctxt ""
-"Multimeter is a sensor display that mimics 'digital multimeter' aparatus"
-msgid "Multimeter Settings"
-msgstr "Apontiaedjes do multimete"
-
-#: SensorDisplayLib/SensorDisplay.cpp:118
-#: SensorDisplayLib/SensorLogger.cpp:598
-msgid "&Properties"
-msgstr "&Prôpietés"
-
-#: SensorDisplayLib/SensorDisplay.cpp:123
-#: SensorDisplayLib/SensorLogger.cpp:603
-msgid "&Remove Display"
-msgstr "&Oister håynaedje"
-
-#: SensorDisplayLib/SensorDisplay.cpp:190
-#, kde-format
-msgid ""
-"<qt><p>This is a sensor display. To customize a sensor display click the "
-"right mouse button here and select the <i>Properties</i> entry from the "
-"popup menu. Select <i>Remove</i> to delete the display from the worksheet.</"
-"p>%1</qt>"
-msgstr ""
-
-#: SensorDisplayLib/SensorLoggerSettings.cpp:30
-msgid "Sensor Logger Settings"
-msgstr "Apontiaedjes di l' edjistreu e djournå do sinteu"
-
-#: SensorDisplayLib/SensorModel.cpp:166
-msgid "Host"
-msgstr "Lodjoe"
-
-#: SensorDisplayLib/SensorModel.cpp:169
-msgid "Sensor"
-msgstr "Sinteu"
-
-#: SensorDisplayLib/SensorModel.cpp:172
-msgid "Unit"
-msgstr "Unité"
-
-#: SensorDisplayLib/SensorModel.cpp:175
-msgid "Status"
-msgstr "Estat"
-
-#: SensorDisplayLib/SensorModel.cpp:178
-msgid "Label"
-msgstr "Etikete"
-
-#: SensorDisplayLib/LogFile.cpp:92
-msgid "File logging settings"
-msgstr "Apontiaedjes di l' eredjistraedje e djournå des fitchîs"
-
-#. i18n: file: SensorDisplayLib/LogFileSettings.ui:54
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: SensorDisplayLib/LogFile.cpp:98 rc.cpp:113
-msgid "Foreground color:"
-msgstr "Coleur di dvant :"
-
-#: SensorDisplayLib/SensorLogger.cpp:138
-msgid "Logging"
-msgstr "Edjîstraedje e djournå"
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:31
-#. i18n: ectx: property (title), widget (QGroupBox, timerFrame)
-#: SensorDisplayLib/SensorLogger.cpp:141 rc.cpp:62
-msgid "Timer Interval"
-msgstr "Munutreye totes les"
-
-#: SensorDisplayLib/SensorLogger.cpp:144
-msgid "Sensor Name"
-msgstr "No do sinteu"
-
-#: SensorDisplayLib/SensorLogger.cpp:147
-msgid "Host Name"
-msgstr "No do lodjoe"
-
-#: SensorDisplayLib/SensorLogger.cpp:150
-msgid "Log File"
-msgstr "Fitchî djournå"
-
-#: SensorDisplayLib/SensorLogger.cpp:429
-#: SensorDisplayLib/SensorLoggerDlg.cpp:32
-msgid "Sensor Logger"
-msgstr "Edjistreu e djournå do sinteu"
-
-#: SensorDisplayLib/SensorLogger.cpp:608
-msgid "&Remove Sensor"
-msgstr "&Oister sinteu"
-
-#: SensorDisplayLib/SensorLogger.cpp:613
-msgid "&Edit Sensor..."
-msgstr "&Candjî sinteu..."
-
-#: SensorDisplayLib/SensorLogger.cpp:621
-msgid "St&op Logging"
-msgstr "A&rester edjistraedje e djournå"
-
-#: SensorDisplayLib/SensorLogger.cpp:624
-msgid "S&tart Logging"
-msgstr "E&nonder edjistraedje e djournå"
-
-#: SensorDisplayLib/FancyPlotter.cpp:178
-msgctxt "Largest axis title"
-msgid "99999 XXXX"
-msgstr "99999 XXXX"
-
-#: SensorDisplayLib/FancyPlotter.cpp:515 SensorDisplayLib/FancyPlotter.cpp:586
-#: SensorDisplayLib/FancyPlotter.cpp:649
-#, kde-format
-msgctxt "units"
-msgid "%1%"
-msgstr "%1%"
-
-#: SensorDisplayLib/FancyPlotter.cpp:523
-#, kde-format
-msgctxt "%1 is what is being shown statistics for, like 'Memory', 'Swap', etc."
-msgid "<p><b>%1:</b><br>"
-msgstr "<p><b>%1 :</b><br>"
-
-#: SensorDisplayLib/FancyPlotter.cpp:594
-#, kde-format
-msgid "%1 of %2%1"
-msgstr "%1 di %2%1"
-
-#: SensorDisplayLib/FancyPlotter.cpp:622
-#, kde-format
-msgctxt "units"
-msgid "%1 TiB"
-msgstr "%1 Tio"
-
-#: SensorDisplayLib/FancyPlotter.cpp:625
-#, kde-format
-msgctxt "units"
-msgid "%1 GiB"
-msgstr "%1 Gio"
-
-#: SensorDisplayLib/FancyPlotter.cpp:628
-#, kde-format
-msgctxt "units"
-msgid "%1 MiB"
-msgstr "%1 Mio"
-
-#: SensorDisplayLib/FancyPlotter.cpp:631
-#, kde-format
-msgctxt "units"
-msgid "%1 KiB"
-msgstr "%1 Kio"
-
-#: SensorDisplayLib/FancyPlotter.cpp:636
-#, kde-format
-msgctxt "units"
-msgid "%1 TiB/s"
-msgstr "%1 Tio/s"
-
-#: SensorDisplayLib/FancyPlotter.cpp:639
-#, kde-format
-msgctxt "units"
-msgid "%1 GiB/s"
-msgstr "%1 Gio/s"
-
-#: SensorDisplayLib/FancyPlotter.cpp:642
-#, kde-format
-msgctxt "units"
-msgid "%1 MiB/s"
-msgstr "%1 Mio/s"
-
-#: SensorDisplayLib/FancyPlotter.cpp:645
-#, kde-format
-msgctxt "units"
-msgid "%1 KiB/s"
-msgstr "%1 Kio/s"
-
-#: SensorDisplayLib/FancyPlotter.cpp:651
-#, kde-format
-msgctxt "unitless - just a number"
-msgid "%1"
-msgstr "%1"
-
 #: SensorDisplayLib/ListView.cpp:45
 #, kde-format
 msgid "%1 K"
@@ -676,6 +570,112 @@ msgstr "Gigaoctets"
 msgid "Terabytes"
 msgstr "Tetraoctets"
 
+#: SensorDisplayLib/ListViewSettings.cpp:30
+msgid "List View Settings"
+msgstr "Apontiaedjes del vuwe e djivêye"
+
+#: SensorDisplayLib/LogFile.cpp:92
+msgid "File logging settings"
+msgstr "Apontiaedjes di l' eredjistraedje e djournå des fitchîs"
+
+#. i18n: file: SensorDisplayLib/LogFileSettings.ui:54
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: SensorDisplayLib/LogFile.cpp:98 rc.cpp:26
+msgid "Foreground color:"
+msgstr "Coleur di dvant :"
+
+#: SensorDisplayLib/MultiMeterSettings.cpp:31
+msgctxt ""
+"Multimeter is a sensor display that mimics 'digital multimeter' aparatus"
+msgid "Multimeter Settings"
+msgstr "Apontiaedjes do multimete"
+
+#: SensorDisplayLib/SensorDisplay.cpp:118
+#: SensorDisplayLib/SensorLogger.cpp:598
+msgid "&Properties"
+msgstr "&Prôpietés"
+
+#: SensorDisplayLib/SensorDisplay.cpp:123
+#: SensorDisplayLib/SensorLogger.cpp:603
+msgid "&Remove Display"
+msgstr "&Oister håynaedje"
+
+#: SensorDisplayLib/SensorDisplay.cpp:190
+#, kde-format
+msgid ""
+"<qt><p>This is a sensor display. To customize a sensor display click the "
+"right mouse button here and select the <i>Properties</i> entry from the "
+"popup menu. Select <i>Remove</i> to delete the display from the worksheet.</"
+"p>%1</qt>"
+msgstr ""
+
+#: SensorDisplayLib/SensorLogger.cpp:138
+msgid "Logging"
+msgstr "Edjîstraedje e djournå"
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:31
+#. i18n: ectx: property (title), widget (QGroupBox, timerFrame)
+#: SensorDisplayLib/SensorLogger.cpp:141 rc.cpp:86
+msgid "Timer Interval"
+msgstr "Munutreye totes les"
+
+#: SensorDisplayLib/SensorLogger.cpp:144
+msgid "Sensor Name"
+msgstr "No do sinteu"
+
+#: SensorDisplayLib/SensorLogger.cpp:147
+msgid "Host Name"
+msgstr "No do lodjoe"
+
+#: SensorDisplayLib/SensorLogger.cpp:150
+msgid "Log File"
+msgstr "Fitchî djournå"
+
+#: SensorDisplayLib/SensorLogger.cpp:429
+#: SensorDisplayLib/SensorLoggerDlg.cpp:32
+msgid "Sensor Logger"
+msgstr "Edjistreu e djournå do sinteu"
+
+#: SensorDisplayLib/SensorLogger.cpp:608
+msgid "&Remove Sensor"
+msgstr "&Oister sinteu"
+
+#: SensorDisplayLib/SensorLogger.cpp:613
+msgid "&Edit Sensor..."
+msgstr "&Candjî sinteu..."
+
+#: SensorDisplayLib/SensorLogger.cpp:621
+msgid "St&op Logging"
+msgstr "A&rester edjistraedje e djournå"
+
+#: SensorDisplayLib/SensorLogger.cpp:624
+msgid "S&tart Logging"
+msgstr "E&nonder edjistraedje e djournå"
+
+#: SensorDisplayLib/SensorLoggerSettings.cpp:30
+msgid "Sensor Logger Settings"
+msgstr "Apontiaedjes di l' edjistreu e djournå do sinteu"
+
+#: SensorDisplayLib/SensorModel.cpp:166
+msgid "Host"
+msgstr "Lodjoe"
+
+#: SensorDisplayLib/SensorModel.cpp:169
+msgid "Sensor"
+msgstr "Sinteu"
+
+#: SensorDisplayLib/SensorModel.cpp:172
+msgid "Unit"
+msgstr "Unité"
+
+#: SensorDisplayLib/SensorModel.cpp:175
+msgid "Status"
+msgstr "Estat"
+
+#: SensorDisplayLib/SensorModel.cpp:178
+msgid "Label"
+msgstr "Etikete"
+
 #: TimerSettings.cpp:38
 msgid "Timer Settings"
 msgstr "Apontiaedjes del munutreye"
@@ -690,7 +690,7 @@ msgstr "Mete a djoû totes les :"
 
 #. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:49
 #. i18n: ectx: property (suffix), widget (KIntNumInput, m_timerInterval)
-#: TimerSettings.cpp:58 WorkSheetSettings.cpp:94 rc.cpp:65
+#: TimerSettings.cpp:58 WorkSheetSettings.cpp:94 rc.cpp:89
 msgid " sec"
 msgstr " seg"
 
@@ -698,34 +698,6 @@ msgstr " seg"
 msgid "All displays of the sheet are updated at the rate specified here."
 msgstr ""
 "Tot çou k' est håyné sol tåvlea est metou a djoû sorlon frecwince dite cial."
-
-#: WorkSheetSettings.cpp:40
-msgid "Tab Properties"
-msgstr "Prôpietés del linwete"
-
-#: WorkSheetSettings.cpp:61
-msgid "Properties"
-msgstr "Prôpietés"
-
-#: WorkSheetSettings.cpp:70
-msgid "Rows:"
-msgstr "Royes :"
-
-#: WorkSheetSettings.cpp:79
-msgid "Columns:"
-msgstr "Colones :"
-
-#: WorkSheetSettings.cpp:87
-msgid "Enter the number of rows the sheet should have."
-msgstr "Dinez l' nombe di royes kel tåve duvreut aveur."
-
-#: WorkSheetSettings.cpp:88
-msgid "Enter the number of columns the sheet should have."
-msgstr "Dinez l' nombe di colones kel tåve duvreut aveur."
-
-#: WorkSheetSettings.cpp:101
-msgid "Enter the title of the worksheet here."
-msgstr "Tapez cial li tite do tåvlea."
 
 #: WorkSheet.cpp:88
 #, kde-format
@@ -791,6 +763,34 @@ msgstr "Oister håynaedje"
 #: WorkSheet.cpp:572
 msgid "Dummy"
 msgstr "Pitit no"
+
+#: WorkSheetSettings.cpp:40
+msgid "Tab Properties"
+msgstr "Prôpietés del linwete"
+
+#: WorkSheetSettings.cpp:61
+msgid "Properties"
+msgstr "Prôpietés"
+
+#: WorkSheetSettings.cpp:70
+msgid "Rows:"
+msgstr "Royes :"
+
+#: WorkSheetSettings.cpp:79
+msgid "Columns:"
+msgstr "Colones :"
+
+#: WorkSheetSettings.cpp:87
+msgid "Enter the number of rows the sheet should have."
+msgstr "Dinez l' nombe di royes kel tåve duvreut aveur."
+
+#: WorkSheetSettings.cpp:88
+msgid "Enter the number of columns the sheet should have."
+msgstr "Dinez l' nombe di colones kel tåve duvreut aveur."
+
+#: WorkSheetSettings.cpp:101
+msgid "Enter the title of the worksheet here."
+msgstr "Tapez cial li tite do tåvlea."
 
 #: Workspace.cpp:113
 #, kde-format
@@ -993,7 +993,7 @@ msgstr "jean.cayron@gmail.com"
 #. i18n: ectx: property (title), widget (QGroupBox, colorFrame)
 #. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:37
 #. i18n: ectx: property (title), widget (QGroupBox, colorFrame)
-#: rc.cpp:8 rc.cpp:95
+#: rc.cpp:8 rc.cpp:119
 msgid "Colors"
 msgstr "Coleurs"
 
@@ -1001,7 +1001,7 @@ msgstr "Coleurs"
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
 #. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:51
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:11 rc.cpp:98
+#: rc.cpp:11 rc.cpp:122
 msgid "Text color:"
 msgstr "Coleur do tecse:"
 
@@ -1011,87 +1011,15 @@ msgstr "Coleur do tecse:"
 msgid "Grid color:"
 msgstr ""
 
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:25
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:20
-#, fuzzy
-#| msgid "Title:"
-msgid "&Title:"
-msgstr "Tite:"
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:42
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_showUnit)
-#: rc.cpp:26
-msgid "Enable this to append the unit to the title of the display."
-msgstr ""
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:45
-#. i18n: ectx: property (text), widget (QCheckBox, m_showUnit)
-#: rc.cpp:29
-msgid "&Show unit"
-msgstr ""
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:59
-#. i18n: ectx: property (text), widget (QCheckBox, m_lowerLimitActive)
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:68
-#. i18n: ectx: property (text), widget (QCheckBox, m_lowerLimitActive)
-#: rc.cpp:35 rc.cpp:71
-msgid "&Enable alarm"
-msgstr ""
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:85
-#. i18n: ectx: property (text), widget (QLabel, m_lblLowerLimit)
-#: rc.cpp:38
-msgid "Lo&wer limit:"
-msgstr ""
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:118
-#. i18n: ectx: property (text), widget (QCheckBox, m_upperLimitActive)
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:132
-#. i18n: ectx: property (text), widget (QCheckBox, m_upperLimitActive)
-#: rc.cpp:44 rc.cpp:83
-msgid "E&nable alarm"
-msgstr ""
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:144
-#. i18n: ectx: property (text), widget (QLabel, m_lblUpperLimit)
-#: rc.cpp:47
-msgid "&Upper limit:"
-msgstr ""
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:174
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: rc.cpp:50
-msgid "Normal digit color:"
-msgstr ""
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:201
-#. i18n: ectx: property (text), widget (QLabel, textLabel2_2)
-#: rc.cpp:53
-msgid "Alarm digit color:"
-msgstr ""
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:16
-#. i18n: ectx: property (title), widget (QGroupBox, fileFrame)
-#: rc.cpp:59
-msgid "File"
-msgstr "Fitchî"
-
-#. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:77
-#. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:104
-msgid "Alarm color:"
-msgstr "Coleur do xhuflet:"
-
 #. i18n: file: SensorDisplayLib/LogFileSettings.ui:21
 #. i18n: ectx: attribute (title), widget (QWidget, textTab)
-#: rc.cpp:107
+#: rc.cpp:20
 msgid "&Text"
 msgstr "&Tecse"
 
 #. i18n: file: SensorDisplayLib/LogFileSettings.ui:29
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:110
+#: rc.cpp:23
 #, fuzzy
 #| msgid "Title:"
 msgid "T&itle:"
@@ -1099,27 +1027,99 @@ msgstr "Tite:"
 
 #. i18n: file: SensorDisplayLib/LogFileSettings.ui:139
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: rc.cpp:119
+#: rc.cpp:32
 msgid "Fi&lter"
 msgstr "&Passer al passete"
 
 #. i18n: file: SensorDisplayLib/LogFileSettings.ui:160
 #. i18n: ectx: property (text), widget (QPushButton, addButton)
-#: rc.cpp:122
+#: rc.cpp:35
 msgid "&Add"
 msgstr "&Radjouter"
 
 #. i18n: file: SensorDisplayLib/LogFileSettings.ui:167
 #. i18n: ectx: property (text), widget (QPushButton, deleteButton)
-#: rc.cpp:125
+#: rc.cpp:38
 msgid "&Delete"
 msgstr "&Disfacer"
 
 #. i18n: file: SensorDisplayLib/LogFileSettings.ui:174
 #. i18n: ectx: property (text), widget (QPushButton, changeButton)
-#: rc.cpp:128
+#: rc.cpp:41
 msgid "&Change"
 msgstr "&Candjî"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:25
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:44
+#, fuzzy
+#| msgid "Title:"
+msgid "&Title:"
+msgstr "Tite:"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:42
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_showUnit)
+#: rc.cpp:50
+msgid "Enable this to append the unit to the title of the display."
+msgstr ""
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:45
+#. i18n: ectx: property (text), widget (QCheckBox, m_showUnit)
+#: rc.cpp:53
+msgid "&Show unit"
+msgstr ""
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:59
+#. i18n: ectx: property (text), widget (QCheckBox, m_lowerLimitActive)
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:68
+#. i18n: ectx: property (text), widget (QCheckBox, m_lowerLimitActive)
+#: rc.cpp:59 rc.cpp:95
+msgid "&Enable alarm"
+msgstr ""
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:85
+#. i18n: ectx: property (text), widget (QLabel, m_lblLowerLimit)
+#: rc.cpp:62
+msgid "Lo&wer limit:"
+msgstr ""
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:118
+#. i18n: ectx: property (text), widget (QCheckBox, m_upperLimitActive)
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:132
+#. i18n: ectx: property (text), widget (QCheckBox, m_upperLimitActive)
+#: rc.cpp:68 rc.cpp:107
+msgid "E&nable alarm"
+msgstr ""
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:144
+#. i18n: ectx: property (text), widget (QLabel, m_lblUpperLimit)
+#: rc.cpp:71
+msgid "&Upper limit:"
+msgstr ""
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:174
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#: rc.cpp:74
+msgid "Normal digit color:"
+msgstr ""
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:201
+#. i18n: ectx: property (text), widget (QLabel, textLabel2_2)
+#: rc.cpp:77
+msgid "Alarm digit color:"
+msgstr ""
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:16
+#. i18n: ectx: property (title), widget (QGroupBox, fileFrame)
+#: rc.cpp:83
+msgid "File"
+msgstr "Fitchî"
+
+#. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:77
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#: rc.cpp:128
+msgid "Alarm color:"
+msgstr "Coleur do xhuflet:"
 
 #. i18n: file: ksysguardui.rc:4
 #. i18n: ectx: Menu (file)
