@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-14 06:04+0200\n"
+"POT-Creation-Date: 2012-08-07 21:36+0200\n"
 "PO-Revision-Date: 2011-07-17 15:37+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -830,28 +830,6 @@ msgstr ""
 msgid "Document to open"
 msgstr "Documint a drovi"
 
-#: app/kateviewspace.cpp:277 app/kateviewspace.cpp:389
-#, kde-format
-msgid " Line: %1 Col: %2 "
-msgstr " Roye : %1 Col: %2 "
-
-#: app/kateviewspace.cpp:285 app/kateviewspace.cpp:395
-#, kde-format
-msgid " Characters: %1 "
-msgstr ""
-
-#: app/kateviewspace.cpp:298
-msgid " INS "
-msgstr " STI "
-
-#: app/kateviewspace.cpp:303 app/kateviewspace.cpp:404
-msgid " LINE "
-msgstr " ROYE "
-
-#: app/kateviewspace.cpp:404
-msgid " BLOCK "
-msgstr " BLOK "
-
 #: app/katemdi.cpp:122
 msgid "Tool &Views"
 msgstr "&Vuwes des usteyes"
@@ -924,6 +902,36 @@ msgstr ""
 "dimandez <b>Finiesse &gt; Vuwe des usteyes &gt; Mostrer les båres di costé</"
 "b> el dressêye. Si c' est co possibe di mostrer/catchî les vuwes des usteyes "
 "avou les racourtis ki vont avou.</qt>"
+
+#: app/kateviewspace.cpp:277 app/kateviewspace.cpp:389
+#, kde-format
+msgid " Line: %1 Col: %2 "
+msgstr " Roye : %1 Col: %2 "
+
+#: app/kateviewspace.cpp:285 app/kateviewspace.cpp:395
+#, kde-format
+msgid " Characters: %1 "
+msgstr ""
+
+#: app/kateviewspace.cpp:298
+msgid " INS "
+msgstr " STI "
+
+#: app/kateviewspace.cpp:303 app/kateviewspace.cpp:404
+msgid " LINE "
+msgstr " ROYE "
+
+#: app/kateviewspace.cpp:404
+msgid " BLOCK "
+msgstr " BLOK "
+
+#: app/kateapp.cpp:226 app/kateapp.cpp:352
+#, kde-format
+msgid ""
+"The file '%1' could not be opened: it is not a normal file, it is a folder."
+msgstr ""
+"Li fitchî « %1 » ni sai nén esse drovi: çou n' est nén on normå fitchî, c' "
+"est on ridant."
 
 #: app/kateappcommands.cpp:89
 #, fuzzy
@@ -1045,6 +1053,63 @@ msgid ""
 "useful to re-edit the current file, when it has been changed by another "
 "program.</p>"
 msgstr ""
+
+#: app/katedocmanager.cpp:68
+msgid ""
+"A KDE text-editor component could not be found.\n"
+"Please check your KDE installation."
+msgstr ""
+
+#: app/katedocmanager.cpp:308
+#, kde-format
+msgid ""
+"The supposedly temporary file %1 has been modified. Do you want to delete it "
+"anyway?"
+msgstr ""
+"Li fitchî mutoit timporaire %1 a stî candjî. El voloz disfacer cwand minme ?"
+
+#: app/katedocmanager.cpp:310
+msgid "Delete File?"
+msgstr "Disfacer fitchî ?"
+
+#: app/katedocmanager.cpp:450
+#, kde-format
+msgid ""
+"<p>The document '%1' has been modified, but not saved.</p><p>Do you want to "
+"save your changes or discard them?</p>"
+msgstr ""
+"<p>Li documint '%1' a stî candjî, mins nén schapé.</p><p>Voloz vs schaper "
+"vos candjmints ou les passer?</p>"
+
+#: app/katedocmanager.cpp:452
+msgid "Close Document"
+msgstr "Clôre li documint"
+
+#: app/katedocmanager.cpp:459
+msgid "Save As"
+msgstr "Schaper eyet rlomer"
+
+#: app/katedocmanager.cpp:485 app/katemainwindow.cpp:432
+msgid "New file opened while trying to close Kate, closing aborted."
+msgstr ""
+"Novea fitchî drovou sol tins k' dji sayîve di clôre Kate. Clôre a stî "
+"abandné."
+
+#: app/katedocmanager.cpp:486 app/katemainwindow.cpp:433
+msgid "Closing Aborted"
+msgstr "Clôre a stî abandné"
+
+#: app/katedocmanager.cpp:558
+msgid "Starting Up"
+msgstr "Enondaedje"
+
+#: app/katedocmanager.cpp:559
+msgid "Reopening files from the last session..."
+msgstr "Ridrovi des fitchî del dierinne session..."
+
+#: app/katedocmanager.cpp:738
+msgid "Errors/Warnings while opening documents"
+msgstr "Arokes/Astemes å drovaedje des documints"
 
 #: app/katemainwindow.cpp:229
 msgid "Use this command to show or hide the view's statusbar"
@@ -1218,16 +1283,6 @@ msgstr ""
 msgid "Close all documents"
 msgstr "Clôre tos les documints di drovous."
 
-#: app/katemainwindow.cpp:432 app/katedocmanager.cpp:485
-msgid "New file opened while trying to close Kate, closing aborted."
-msgstr ""
-"Novea fitchî drovou sol tins k' dji sayîve di clôre Kate. Clôre a stî "
-"abandné."
-
-#: app/katemainwindow.cpp:433 app/katedocmanager.cpp:486
-msgid "Closing Aborted"
-msgstr "Clôre a stî abandné"
-
 #: app/katemainwindow.cpp:725
 msgid "&Other..."
 msgstr "&Ôte..."
@@ -1243,61 +1298,6 @@ msgstr "Li programe '%1' n' a nén stî trové!"
 #| msgid "Application not found!"
 msgid "Application not found"
 msgstr "Programe nén trové!"
-
-#: app/katedocmanager.cpp:68
-msgid ""
-"A KDE text-editor component could not be found.\n"
-"Please check your KDE installation."
-msgstr ""
-
-#: app/katedocmanager.cpp:308
-#, kde-format
-msgid ""
-"The supposedly temporary file %1 has been modified. Do you want to delete it "
-"anyway?"
-msgstr ""
-"Li fitchî mutoit timporaire %1 a stî candjî. El voloz disfacer cwand minme ?"
-
-#: app/katedocmanager.cpp:310
-msgid "Delete File?"
-msgstr "Disfacer fitchî ?"
-
-#: app/katedocmanager.cpp:450
-#, kde-format
-msgid ""
-"<p>The document '%1' has been modified, but not saved.</p><p>Do you want to "
-"save your changes or discard them?</p>"
-msgstr ""
-"<p>Li documint '%1' a stî candjî, mins nén schapé.</p><p>Voloz vs schaper "
-"vos candjmints ou les passer?</p>"
-
-#: app/katedocmanager.cpp:452
-msgid "Close Document"
-msgstr "Clôre li documint"
-
-#: app/katedocmanager.cpp:459
-msgid "Save As"
-msgstr "Schaper eyet rlomer"
-
-#: app/katedocmanager.cpp:558
-msgid "Starting Up"
-msgstr "Enondaedje"
-
-#: app/katedocmanager.cpp:559
-msgid "Reopening files from the last session..."
-msgstr "Ridrovi des fitchî del dierinne session..."
-
-#: app/katedocmanager.cpp:738
-msgid "Errors/Warnings while opening documents"
-msgstr "Arokes/Astemes å drovaedje des documints"
-
-#: app/kateapp.cpp:226 app/kateapp.cpp:352
-#, kde-format
-msgid ""
-"The file '%1' could not be opened: it is not a normal file, it is a folder."
-msgstr ""
-"Li fitchî « %1 » ni sai nén esse drovi: çou n' est nén on normå fitchî, c' "
-"est on ridant."
 
 #: app/katemwmodonhddialog.cpp:65
 msgid "Documents Modified on Disk"

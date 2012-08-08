@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_launcher\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-07-10 08:59+0200\n"
+"POT-Creation-Date: 2012-08-07 21:49+0200\n"
 "PO-Revision-Date: 2011-01-05 07:58+0100\n"
 "Last-Translator: Djan Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -45,6 +45,66 @@ msgctxt "General configuration page"
 msgid "General"
 msgstr "Djenerå"
 
+#: core/favoritesmodel.cpp:49 core/favoritesmodel.cpp:322
+#: simpleapplet/simpleapplet.cpp:193 ui/launcher.cpp:121 ui/launcher.cpp:191
+msgid "Favorites"
+msgstr "Colåds"
+
+#: core/models.cpp:121
+msgid "Home Folder"
+msgstr "Ridant Måjhon"
+
+#: core/models.cpp:124
+msgid "Network Folders"
+msgstr "Ridants rantoele"
+
+#: core/recentlyusedmodel.cpp:109
+msgid "Documents"
+msgstr "Documints"
+
+#: core/recentlyusedmodel.cpp:120 core/systemmodel.cpp:74
+#: simpleapplet/simpleapplet.cpp:195 ui/launcher.cpp:123 ui/launcher.cpp:236
+msgid "Applications"
+msgstr "Programes"
+
+#: core/recentlyusedmodel.cpp:186 simpleapplet/simpleapplet.cpp:197
+#: ui/launcher.cpp:124 ui/launcher.cpp:249
+msgid "Recently Used"
+msgstr "Eployîs dierinnmint"
+
+#: core/recentlyusedmodel.cpp:188 simpleapplet/simpleapplet.cpp:199
+msgid "Recently Used Documents"
+msgstr "Documints eployîs enawaire"
+
+#: core/recentlyusedmodel.cpp:190 simpleapplet/simpleapplet.cpp:198
+msgid "Recently Used Applications"
+msgstr "Programes eployîs enawaire"
+
+#: core/systemmodel.cpp:75
+msgid "Places"
+msgstr "Eplaeçmints"
+
+#: core/systemmodel.cpp:76
+msgid "Removable Storage"
+msgstr "Sitocaedjes oiståves"
+
+#: core/systemmodel.cpp:77
+msgid "Storage"
+msgstr "Sitocaedje"
+
+#: core/systemmodel.cpp:207 simpleapplet/simpleapplet.cpp:201
+msgid "Run Command..."
+msgstr "Enonder comande..."
+
+#: core/systemmodel.cpp:211
+msgid "Run a command or a search query"
+msgstr "Enonder en comande ou on cweraedje"
+
+#: core/systemmodel.cpp:319 simpleapplet/simpleapplet.cpp:196
+#: ui/launcher.cpp:123 ui/launcher.cpp:270
+msgid "Computer"
+msgstr "Copiutrece"
+
 #: core/applicationmodel.cpp:334
 msgid "Games"
 msgstr "Djeus"
@@ -52,11 +112,6 @@ msgstr "Djeus"
 #: core/applicationmodel.cpp:428 ui/launcher.cpp:976
 msgid "All Applications"
 msgstr "Tos les programes"
-
-#: core/favoritesmodel.cpp:49 core/favoritesmodel.cpp:322
-#: simpleapplet/simpleapplet.cpp:193 ui/launcher.cpp:121 ui/launcher.cpp:191
-msgid "Favorites"
-msgstr "Colåds"
 
 #: core/leavemodel.cpp:50 simpleapplet/simpleapplet.cpp:210
 msgid "Log out"
@@ -150,61 +205,6 @@ msgstr "Session"
 #: core/leavemodel.cpp:150
 msgid "System"
 msgstr "Sistinme"
-
-#: core/models.cpp:121
-msgid "Home Folder"
-msgstr "Ridant Måjhon"
-
-#: core/models.cpp:124
-msgid "Network Folders"
-msgstr "Ridants rantoele"
-
-#: core/recentlyusedmodel.cpp:109
-msgid "Documents"
-msgstr "Documints"
-
-#: core/recentlyusedmodel.cpp:120 core/systemmodel.cpp:74
-#: simpleapplet/simpleapplet.cpp:195 ui/launcher.cpp:123 ui/launcher.cpp:236
-msgid "Applications"
-msgstr "Programes"
-
-#: core/recentlyusedmodel.cpp:186 simpleapplet/simpleapplet.cpp:197
-#: ui/launcher.cpp:124 ui/launcher.cpp:249
-msgid "Recently Used"
-msgstr "Eployîs dierinnmint"
-
-#: core/recentlyusedmodel.cpp:188 simpleapplet/simpleapplet.cpp:199
-msgid "Recently Used Documents"
-msgstr "Documints eployîs enawaire"
-
-#: core/recentlyusedmodel.cpp:190 simpleapplet/simpleapplet.cpp:198
-msgid "Recently Used Applications"
-msgstr "Programes eployîs enawaire"
-
-#: core/systemmodel.cpp:75
-msgid "Places"
-msgstr "Eplaeçmints"
-
-#: core/systemmodel.cpp:76
-msgid "Removable Storage"
-msgstr "Sitocaedjes oiståves"
-
-#: core/systemmodel.cpp:77
-msgid "Storage"
-msgstr "Sitocaedje"
-
-#: core/systemmodel.cpp:207 simpleapplet/simpleapplet.cpp:201
-msgid "Run Command..."
-msgstr "Enonder comande..."
-
-#: core/systemmodel.cpp:211
-msgid "Run a command or a search query"
-msgstr "Enonder en comande ou on cweraedje"
-
-#: core/systemmodel.cpp:319 simpleapplet/simpleapplet.cpp:196
-#: ui/launcher.cpp:123 ui/launcher.cpp:270
-msgid "Computer"
-msgstr "Copiutrece"
 
 #: main.cpp:32
 msgid "Kickoff"
@@ -332,6 +332,11 @@ msgstr "Fé rexhe"
 msgid "Safely Remove"
 msgstr "Ositer e såvrité"
 
+#: ui/searchbar.cpp:70
+msgctxt "Label of the search bar textedit"
+msgid "Search:"
+msgstr "Trover :"
+
 #: ui/launcher.cpp:194
 msgid "Sort Alphabetically (A to Z)"
 msgstr "Relére alfabeticmint (A a Z)"
@@ -359,11 +364,6 @@ msgstr "Uzeu <b>%1</b> sol <b>%2</b>"
 msgctxt "full name, login name, hostname"
 msgid "<b>%1 (%2)</b> on <b>%3</b>"
 msgstr "<b>%1 (%2)</b> sol <b>%3</b>"
-
-#: ui/searchbar.cpp:70
-msgctxt "Label of the search bar textedit"
-msgid "Search:"
-msgstr "Trover :"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
