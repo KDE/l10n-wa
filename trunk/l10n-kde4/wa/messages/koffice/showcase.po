@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpresenter\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-18 04:28+0200\n"
+"POT-Creation-Date: 2012-08-19 05:51+0200\n"
 "PO-Revision-Date: 2012-07-04 17:36+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -328,12 +328,11 @@ msgstr "Mete en evidince sol prezintaedje..."
 msgid "Blackscreen on the presentation..."
 msgstr "Noere waitroûle sol prezintaedje..."
 
-#: part/SCViewModeSlidesSorter.cpp:325 part/ui/SCCustomSlideShowsDialog.cpp:82
-#: part/ui/SCCustomSlideShowsDialog.cpp:239
-#: part/ui/SCCustomSlideShowsDialog.cpp:257 part/ui/SCHtmlExportDialog.cpp:119
-#, kde-format
-msgid "Slide %1"
-msgstr "Diya %1"
+#. i18n: file: part/showcase.rc:91
+#. i18n: ectx: ToolBar (editToolBar)
+#: part/commands/SCSetCustomSlideShowsCommand.cpp:33 rc.cpp:119
+msgid "Edit"
+msgstr "Candjî"
 
 #: part/commands/SCAnimationCreateCommand.cpp:33
 msgid "Create shape animation"
@@ -351,12 +350,6 @@ msgstr "Candjî efet d' pådje"
 msgid "Delete page effect"
 msgstr "Disfacer efet d' pådje"
 
-#. i18n: file: part/showcase.rc:91
-#. i18n: ectx: ToolBar (editToolBar)
-#: part/commands/SCSetCustomSlideShowsCommand.cpp:33 rc.cpp:119
-msgid "Edit"
-msgstr "Candjî"
-
 #: part/dockers/SCPageLayoutDocker.cpp:46
 msgid "Slide Layouts"
 msgstr "Adjinçmints des dias"
@@ -368,6 +361,14 @@ msgstr "Fitchî a drovi"
 #: part/pagelayout/SCPlaceholders.cpp:58 part/pagelayout/SCPlaceholders.cpp:59
 msgid "Set Layout"
 msgstr "Defini adjinçmint"
+
+#: part/tools/SCAnimationToolFactory.cpp:32
+msgid "Animation tool"
+msgstr "Usteye d' animåcion"
+
+#: part/tools/SCPlaceholderToolFactory.cpp:28
+msgid "Layout Tool"
+msgstr "Usteye d' adjinçmint"
 
 #: part/tools/SCAnimationTool.cpp:69
 msgid "Transitions"
@@ -385,9 +386,9 @@ msgstr "Dji n' sai nén fé ça e 2.0"
 msgid "Shape Animation"
 msgstr "Animåcion des fômes"
 
-#: part/tools/SCAnimationToolFactory.cpp:32
-msgid "Animation tool"
-msgstr "Usteye d' animåcion"
+#: part/tools/SCPlaceholderTool.cpp:78
+msgid "Edit Shape"
+msgstr "Candjî fôme"
 
 #: part/tools/SCPageEffectDocker.cpp:57
 msgid "No Effect"
@@ -396,14 +397,6 @@ msgstr "Nol efet"
 #: part/tools/SCPageEffectDocker.cpp:80
 msgid " sec"
 msgstr " seg"
-
-#: part/tools/SCPlaceholderTool.cpp:78
-msgid "Edit Shape"
-msgstr "Candjî fôme"
-
-#: part/tools/SCPlaceholderToolFactory.cpp:28
-msgid "Layout Tool"
-msgstr "Usteye d' adjinçmint"
 
 #: part/ui/SCConfigurePresenterViewDialog.cpp:42
 #, kde-format
@@ -430,6 +423,14 @@ msgstr "Totes les dias"
 msgid "Configure Slide Show"
 msgstr "Apontyî diaporama"
 
+#: part/ui/SCCustomSlideShowsDialog.cpp:82
+#: part/ui/SCCustomSlideShowsDialog.cpp:239
+#: part/ui/SCCustomSlideShowsDialog.cpp:257 part/ui/SCHtmlExportDialog.cpp:119
+#: part/SCViewModeSlidesSorter.cpp:325
+#, kde-format
+msgid "Slide %1"
+msgstr "Diya %1"
+
 #: part/ui/SCCustomSlideShowsDialog.cpp:96
 #: part/ui/SCCustomSlideShowsDialog.cpp:100
 #: part/ui/SCCustomSlideShowsDialog.cpp:102
@@ -438,14 +439,14 @@ msgstr "Apontyî diaporama"
 msgid "New Slide Show %1"
 msgstr "Novea diaporama %1"
 
+#: part/ui/SCCustomSlideShowsDialog.cpp:133
+msgid "There cannot be two slideshows with the same name."
+msgstr "I n' pout nén aveur deus diaporamas avou l' minme no."
+
 #: part/ui/SCCustomSlideShowsDialog.cpp:133 part/ui/SCHtmlExportDialog.cpp:158
 #: part/ui/SCHtmlExportDialog.cpp:211
 msgid "Error"
 msgstr "Aroke"
-
-#: part/ui/SCCustomSlideShowsDialog.cpp:133
-msgid "There cannot be two slideshows with the same name."
-msgstr "I n' pout nén aveur deus diaporamas avou l' minme no."
 
 #: part/ui/SCCustomSlideShowsDialog.cpp:148
 msgid "Are you sure you want to delete the selected slide show?"
@@ -488,13 +489,13 @@ msgid "Add Template"
 msgstr "Radjouter modele"
 
 #: part/ui/SCHtmlExportDialog.cpp:322
+msgid "Confirm remove"
+msgstr "Racertiner l' oistaedje"
+
+#: part/ui/SCHtmlExportDialog.cpp:322
 #, kde-format
 msgid "Are you sure you want to remove \"%1\"?"
 msgstr "Voloz disfacer « %1 » po do bon ?"
-
-#: part/ui/SCHtmlExportDialog.cpp:322
-msgid "Confirm remove"
-msgstr "Racertiner l' oistaedje"
 
 #: plugins/eventactions/sound/SCSoundEventActionWidget.cpp:94
 msgid "Change sound action"

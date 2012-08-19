@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TextShape\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-18 03:05+0200\n"
+"POT-Creation-Date: 2012-08-19 02:38+0200\n"
 "PO-Revision-Date: 2010-06-06 15:05+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -17,139 +17,509 @@ msgstr ""
 "X-Generator: Lokalize 1.0\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: ReferencesTool.cpp:56
+#: TextToolFactory.cpp:29
 #, fuzzy
-#| msgid "Insert Table"
-msgid "Insert with label:"
-msgstr "Sititchî tåvlea"
+#| msgid "Text editing tool"
+msgid "Text editing"
+msgstr "Usteye d' aspougnaedje do tecse"
 
-#: ReferencesTool.cpp:94 TextTool.cpp:2122 dialogs/InsertCharacter.cpp:39
+#: commands/AcceptChangeCommand.cpp:45
+#, fuzzy
+#| msgid "Accept change"
+msgctxt "(qtundo-format)"
+msgid "Accept change"
+msgstr "Accepter candjmint"
+
+#: commands/AutoResizeCommand.cpp:37
+msgctxt "Enable Shrink To Fit"
+msgid "Enable"
+msgstr ""
+
+#: commands/AutoResizeCommand.cpp:37
+#, fuzzy
+#| msgid "Distance:"
+msgctxt "Disable Shrink To Fit"
+msgid "Disable"
+msgstr "Distance:"
+
+#: commands/AutoResizeCommand.cpp:40
+#, kde-format
+msgctxt "(qtundo-format) Enable/Disable Grow To Fit Width"
+msgid "%1 Grow To Fit Width"
+msgstr ""
+
+#: commands/AutoResizeCommand.cpp:43
+#, kde-format
+msgctxt "(qtundo-format) Enable/Disable Grow To Fit Height"
+msgid "%1 Grow To Fit Height"
+msgstr ""
+
+#: commands/AutoResizeCommand.cpp:46
+#, kde-format
+msgctxt "(qtundo-format) Enable/Disable Shrink To Fit"
+msgid "%1 Shrink To Fit"
+msgstr ""
+
+#: commands/RejectChangeCommand.cpp:47
+#, fuzzy
+#| msgid "Reject change"
+msgctxt "(qtundo-format)"
+msgid "Reject change"
+msgstr "Rifuzer candjmint"
+
+#: commands/ShowChangesCommand.cpp:53
+#, fuzzy
+#| msgid "Show Changes"
+msgctxt "(qtundo-format)"
+msgid "Show Changes"
+msgstr "Mostrer candjmints"
+
+#: commands/ShowChangesCommand.cpp:55
+#, fuzzy
+#| msgid "Hide Changes"
+msgctxt "(qtundo-format)"
+msgid "Hide Changes"
+msgstr "Catchî candjmints"
+
+#: commands/ChangeListLevelCommand.cpp:44
+#, fuzzy
+#| msgid "Change List Level"
+msgctxt "(qtundo-format)"
+msgid "Change List Level"
+msgstr "Candjî livea del djivêye"
+
+#: dialogs/BibliographyConfigureDialog.cpp:109
+msgid "Ascending"
+msgstr ""
+
+#: dialogs/BibliographyConfigureDialog.cpp:110
+msgid "Descending"
+msgstr ""
+
+#: dialogs/ChangeConfigureDialog.cpp:148
+msgid "This is a line of inserted text."
+msgstr "Çouci est ene roye di tecse sititchî."
+
+#: dialogs/ChangeConfigureDialog.cpp:154
+msgid "This is a line of deleted text."
+msgstr "Çouci est ene roye di tecse disfacé."
+
+#: dialogs/ChangeConfigureDialog.cpp:160
+msgid "This is a line of text whose format has been changed."
+msgstr "Çouci est ene roye di tecse k' ons a candjî l' cogne."
+
+#: dialogs/CitationInsertionDialog.cpp:38
+#, fuzzy
+#| msgid "Select Font"
+msgid "Select"
+msgstr "Tchoezi fonte"
+
+#: dialogs/CitationInsertionDialog.cpp:53 dialogs/StyleManager.cpp:411
+#: dialogs/StyleManager.cpp:428
+msgid "Warning"
+msgstr ""
+
+#: dialogs/CitationInsertionDialog.cpp:53
+msgid ""
+"The document already contains the bibliography entry with different data.\n"
+"Do you want to adjust existing entries?"
+msgstr ""
+
+#: dialogs/CitationInsertionDialog.cpp:66
+#: dialogs/CitationInsertionDialog.cpp:84
+#, fuzzy, kde-format
+#| msgid "Name:"
+msgid "Short name%1"
+msgstr "No:"
+
+#: dialogs/ParagraphDropCaps.cpp:33
+msgid "Whole Word"
+msgstr ""
+
+#: dialogs/FontDia.cpp:49
+msgid "Select Font"
+msgstr "Tchoezi fonte"
+
+#: dialogs/FontDia.cpp:83 dialogs/FormattingPreview.cpp:51
+#: dialogs/CharacterGeneral.cpp:72
+msgid "Font"
+msgstr "Fonte"
+
+#: dialogs/CharacterHighlighting.cpp:277 dialogs/CharacterHighlighting.cpp:288
+msgid "Normal"
+msgstr "Normå"
+
+#: dialogs/CharacterHighlighting.cpp:278
+msgid "Small Caps"
+msgstr "Pititès madjuscules"
+
+#: dialogs/CharacterHighlighting.cpp:279
+msgid "Uppercase"
+msgstr "Grandès letes"
+
+#: dialogs/CharacterHighlighting.cpp:280
+msgid "Lowercase"
+msgstr "Pititès letes"
+
+#: dialogs/CharacterHighlighting.cpp:281
+msgid "Capitalize"
+msgstr "Li prumire lete e madjuscule"
+
+#: dialogs/CharacterHighlighting.cpp:289 TextTool.cpp:269
+msgid "Superscript"
+msgstr "Dizeu l' roye"
+
+#: dialogs/CharacterHighlighting.cpp:290 TextTool.cpp:275
+msgid "Subscript"
+msgstr "Dizo l' roye"
+
+#: dialogs/InsertCharacter.cpp:29
+msgid "Special Characters"
+msgstr "Caracteres sipeciå"
+
+#: dialogs/InsertCharacter.cpp:39 TextTool.cpp:2122 ReferencesTool.cpp:94
 msgid "Insert"
 msgstr "Sititchî"
 
-#: ReferencesTool.cpp:96
-#, fuzzy
-#| msgid "Insert a table into the document."
-msgid "Insert a Table of Contents into the document."
-msgstr "Sititchî on tåvlea e documint."
+#: dialogs/InsertCharacter.cpp:41
+msgctxt "Close dialog"
+msgid "Close"
+msgstr "Clôre"
 
-#: ReferencesTool.cpp:98
-#, fuzzy
-#| msgid "Insert Table"
-msgid "Insert Custom ..."
-msgstr "Sititchî tåvlea"
-
-#: ReferencesTool.cpp:100
-#, fuzzy
-#| msgid "Insert a table into the document."
-msgid "Insert a custom Table of Contents into the document."
-msgstr "Sititchî on tåvlea e documint."
-
-#: ReferencesTool.cpp:102
-#, fuzzy
-#| msgid "Configure Change Tracking"
-msgid "Configure..."
-msgstr "Apontyî l' shuvaedje des candjmints"
-
-#: ReferencesTool.cpp:104
-#, fuzzy
-#| msgid "Include in table of contents"
-msgid "Configure the Table of Contents"
-msgstr "Meet dins l' tåve di l' ådvins"
-
-#: ReferencesTool.cpp:107 ReferencesTool.cpp:117
-msgid "Insert with auto number"
+#: dialogs/StyleManager.cpp:53
+msgid "Create a new style inheriting the current style"
 msgstr ""
 
-#: ReferencesTool.cpp:111
+#: dialogs/StyleManager.cpp:346 dialogs/StyleManager.cpp:354
 #, fuzzy
-#| msgid "Insert Table"
-msgid "Insert Labeled Footnote"
-msgstr "Sititchî tåvlea"
+#| msgid "Next style:"
+msgid "New Style"
+msgstr "Stîle shuvant:"
 
-#: ReferencesTool.cpp:121
+#: dialogs/StyleManager.cpp:411 dialogs/StyleManager.cpp:428
+#, kde-format
+msgid "Another style named '%1' already exist. Please choose another name."
+msgstr ""
+
+#: dialogs/NotesConfigurationDialog.cpp:35
 #, fuzzy
-#| msgid "Insert Table"
-msgid "Insert Labeled Endnote"
-msgstr "Sititchî tåvlea"
+#| msgid "Configure Change Tracking"
+msgid "Footnote Settings"
+msgstr "Apontyî l' shuvaedje des candjmints"
 
-#: ReferencesTool.cpp:127 ReferencesTool.cpp:131
+#: dialogs/NotesConfigurationDialog.cpp:38
 #, fuzzy
 #| msgid "Paragraph Settings"
-msgid "Settings..."
+msgid "Endnote Settings"
 msgstr "Apontiaedjes des hagnons"
 
-#. i18n: file: dialogs/SimpleCitationBibliographyWidget.ui:26
-#. i18n: ectx: property (text), widget (QToolButton, addCitation)
-#: ReferencesTool.cpp:135 rc.cpp:710
-#, fuzzy
-#| msgid "Insertion"
-msgid "Insert Citation"
-msgstr "Stitchaedje"
+#: dialogs/ParagraphGeneral.cpp:53
+msgid "Indent/Spacing"
+msgstr "Ritrait/Espåçmint"
 
-#: ReferencesTool.cpp:137
+#: dialogs/ParagraphGeneral.cpp:58
+msgid "General Layout"
+msgstr "Adjinçmint djenerå"
+
+#: dialogs/ParagraphGeneral.cpp:63
+msgid "Bullets/Numbers"
+msgstr "Tchikes/Limeros"
+
+#: dialogs/ParagraphGeneral.cpp:68
+msgid "Decorations"
+msgstr "Gåyotaedjes"
+
+#: dialogs/ParagraphGeneral.cpp:73
+msgid "Drop Caps"
+msgstr ""
+
+#: dialogs/ParagraphIndentSpacing.cpp:38
+msgctxt "Line spacing value"
+msgid "Single"
+msgstr "Simpe"
+
+#: dialogs/ParagraphIndentSpacing.cpp:39
+msgctxt "Line spacing value"
+msgid "1.5 Lines"
+msgstr "1,5 royes"
+
+#: dialogs/ParagraphIndentSpacing.cpp:40
+msgctxt "Line spacing value"
+msgid "Double"
+msgstr "Dobe"
+
+#: dialogs/ParagraphIndentSpacing.cpp:41
+msgctxt "Line spacing type"
+msgid "Proportional"
+msgstr "Proporcionel"
+
+#: dialogs/ParagraphIndentSpacing.cpp:42
+msgctxt "Line spacing type"
+msgid "Additional"
+msgstr "Di pus"
+
+#: dialogs/ParagraphIndentSpacing.cpp:43
+msgctxt "Line spacing type"
+msgid "Fixed"
+msgstr "Ewal"
+
+#: dialogs/ParagraphIndentSpacing.cpp:44
+msgctxt "Line spacing type"
+msgid "At least"
+msgstr ""
+
+#: dialogs/ParagraphSettingsDialog.cpp:39
+msgid "Paragraph Format"
+msgstr "Cogne do hagnon"
+
+#: dialogs/ParagraphSettingsDialog.cpp:83
+msgid "Paragraph Settings"
+msgstr "Apontiaedjes des hagnons"
+
+#: dialogs/QuickTableButton.cpp:160
+#, fuzzy
+#| msgid "Insert Table"
+msgid "Insert a table"
+msgstr "Sititchî tåvlea"
+
+#: dialogs/ParagraphBulletsNumbers.cpp:47
+msgid "Custom Bullet"
+msgstr "Tchike a vosse môde"
+
+#: dialogs/ParagraphBulletsNumbers.cpp:48
+msgid "No Bullet"
+msgstr "Nole tchike"
+
+#: dialogs/ParagraphBulletsNumbers.cpp:52
+msgctxt "Automatic horizontal alignment"
+msgid "Auto"
+msgstr "Otomatike"
+
+#: dialogs/ParagraphBulletsNumbers.cpp:53
+msgctxt "Text alignment"
+msgid "Left"
+msgstr "Hintche"
+
+#: dialogs/ParagraphBulletsNumbers.cpp:54
+msgctxt "Text alignment"
+msgid "Right"
+msgstr "Droete"
+
+#: dialogs/ParagraphBulletsNumbers.cpp:55
+msgctxt "Text alignment"
+msgid "Centered"
+msgstr "Å mitan"
+
+#: dialogs/ParagraphBulletsNumbers.cpp:57
+msgctxt "Tab follows the bullet or number"
+msgid "Tab Stop"
+msgstr ""
+
+#: dialogs/ParagraphBulletsNumbers.cpp:58
+msgctxt "Space"
+msgid "Space"
+msgstr ""
+
+#: dialogs/ParagraphBulletsNumbers.cpp:59
+msgctxt "None"
+msgid "Nothing"
+msgstr ""
+
+#: dialogs/SimpleCharacterWidget.cpp:62
+msgid "Change font format"
+msgstr ""
+
+#: dialogs/SimpleFootEndNotesWidget.cpp:40
 #, fuzzy
 #| msgid "Insert a table into the document."
-msgid "Insert a citation into the document."
+msgid "Inserts a footnote at the current cursor position"
 msgstr "Sititchî on tåvlea e documint."
 
-#. i18n: file: dialogs/InsertBibliographyDialog.ui:17
-#. i18n: ectx: property (windowTitle), widget (QDialog, InsertBibliographyDialog)
-#. i18n: file: dialogs/SimpleCitationBibliographyWidget.ui:36
-#. i18n: ectx: property (text), widget (FormattingButton, addBibliography)
-#: ReferencesTool.cpp:140 rc.cpp:403 rc.cpp:713
-#, fuzzy
-#| msgid "Insert Linebreak"
-msgid "Insert Bibliography"
-msgstr "Sititchî on djocaedje di roye"
-
-#: ReferencesTool.cpp:142
+#: dialogs/SimpleFootEndNotesWidget.cpp:45
 #, fuzzy
 #| msgid "Insert a table into the document."
-msgid "Insert a bibliography into the document."
+msgid "Inserts an endnote at the current cursor position"
 msgstr "Sititchî on tåvlea e documint."
 
-#: ReferencesTool.cpp:144
+#: dialogs/SimpleParagraphWidget.cpp:81
 #, fuzzy
-#| msgid "Insert Linebreak"
-msgid "Insert Custom Bibliography"
-msgstr "Sititchî on djocaedje di roye"
+#| msgid "Paragraph Format"
+msgid "Change paragraph format"
+msgstr "Cogne do hagnon"
 
-#: ReferencesTool.cpp:146
+#: dialogs/SimpleParagraphWidget.cpp:166
 #, fuzzy
-#| msgid "Insert a table into the document."
-msgid "Insert a custom Bibliography into the document."
-msgstr "Sititchî on tåvlea e documint."
+#| msgid "Change List Level"
+msgid "Change List Level"
+msgstr "Candjî livea del djivêye"
 
-#: ReferencesTool.cpp:147 dialogs/TableOfContentsConfigure.cpp:80
+#: dialogs/SimpleTableWidget.cpp:50
+msgid "Select a border style and paint that style onto a table"
+msgstr ""
+
+#: dialogs/SimpleTableWidget.cpp:60
+#, fuzzy
+#| msgid "Text Color..."
+msgid "Set Border Color..."
+msgstr "Coleur do Tecse..."
+
+#: dialogs/SimpleTableWidget.cpp:183
+#, fuzzy
+#| msgctxt "Text list-style"
+#| msgid "None"
+msgctxt "No border - has to fit in 48pixels"
+msgid "None"
+msgstr "Nouk"
+
+#: dialogs/SimpleTableWidget.cpp:184
+msgid "No Border"
+msgstr ""
+
+#: dialogs/StylesComboPreview.cpp:80
+msgid "Create a new style with the current properties"
+msgstr ""
+
+#: dialogs/StylesComboPreview.cpp:191
+#, fuzzy
+#| msgid "Next style:"
+msgid "New style"
+msgstr "Stîle shuvant:"
+
+#: dialogs/StyleManagerDialog.cpp:33
+msgid "Style Manager"
+msgstr "Manaedjeu des stîles"
+
+#: dialogs/StyleManagerDialog.cpp:62
+#, fuzzy
+#| msgid "Hide Changes"
+msgid "Save Changes"
+msgstr "Catchî candjmints"
+
+#: dialogs/StyleManagerDialog.cpp:62
+msgid ""
+"You have changes that are not applied. What do you want to do with those "
+"changes?"
+msgstr ""
+
+#: dialogs/StylesModel.cpp:52 dialogs/StylesModel.cpp:120
+#: dialogs/StylesModel.cpp:229
+#, fuzzy
+#| msgctxt "Text list-style"
+#| msgid "None"
+msgid "None"
+msgstr "Nouk"
+
+#: dialogs/TableDialog.cpp:27
+msgid "Insert Table"
+msgstr "Sititchî tåvlea"
+
+#: dialogs/TableOfContentsConfigure.cpp:75
+#, fuzzy
+#| msgid "Include in table of contents"
+msgid "Table of Contents - Configure"
+msgstr "Meet dins l' tåve di l' ådvins"
+
+#: dialogs/TableOfContentsConfigure.cpp:77
+#, fuzzy
+#| msgid "Table..."
+msgid "Table Title"
+msgstr "Tåvlea..."
+
+#: dialogs/TableOfContentsConfigure.cpp:78
+msgid "Use outline"
+msgstr ""
+
+#: dialogs/TableOfContentsConfigure.cpp:79
+#, fuzzy
+#| msgid "new style"
+msgid "Use styles"
+msgstr "novea stîle"
+
+#: dialogs/TableOfContentsConfigure.cpp:80 ReferencesTool.cpp:147
 #, fuzzy
 #| msgid "Configure Change Tracking"
 msgid "Configure"
 msgstr "Apontyî l' shuvaedje des candjmints"
 
-#: ReferencesTool.cpp:149
+#: dialogs/TableOfContentsConfigure.cpp:81
 #, fuzzy
-#| msgid "Insert Linebreak"
-msgid "Configure the bibliography"
-msgstr "Sititchî on djocaedje di roye"
+#| msgid "Indent"
+msgid "Index"
+msgstr "Ritrait"
 
-#: ReferencesTool.cpp:181
+#: dialogs/TableOfContentsConfigure.cpp:82
+#: dialogs/TableOfContentsStyleModel.cpp:245
+msgid "Styles"
+msgstr "Stîles"
+
+#. i18n: file: dialogs/TableOfContentsConfigure.ui:57
+#. i18n: ectx: property (text), widget (QLabel, labelTitle)
+#: dialogs/TableOfContentsEntryModel.cpp:40 rc.cpp:790
+msgid "Title"
+msgstr ""
+
+#: dialogs/TableOfContentsEntryModel.cpp:43
+#, kde-format
+msgid "Level %1"
+msgstr ""
+
+#: dialogs/TableOfContentsEntryModel.cpp:150
+#: dialogs/TableOfContentsStyleModel.cpp:247
+msgid "Level"
+msgstr ""
+
+#: dialogs/TableOfContentsEntryModel.cpp:152
+#, fuzzy
+#| msgid "Styles"
+msgid "Style"
+msgstr "Stîles"
+
+#: dialogs/TableOfContentsStyleConfigure.cpp:39
 #, fuzzy
 #| msgid "Include in table of contents"
-msgid "Table of Contents"
+msgid "Table of Contents - Configure Styles"
 msgstr "Meet dins l' tåve di l' ådvins"
 
-#: ReferencesTool.cpp:184
-msgid "Footnotes and Endnotes"
-msgstr ""
+#: dialogs/TableOfContentsStyleConfigure.cpp:43
+#, fuzzy
+#| msgid "Style Manager"
+msgid "Styles available"
+msgstr "Manaedjeu des stîles"
 
-#: ReferencesTool.cpp:187
-msgid "Citations and Bibliography"
-msgstr ""
+#: dialogs/TableOfContentsStyleDelegate.cpp:54
+#: dialogs/TableOfContentsStyleModel.cpp:110
+#, fuzzy
+#| msgid "Distance:"
+msgid "Disabled"
+msgstr "Distance:"
 
-#: ReferencesToolFactory.cpp:31 dialogs/BibliographyTemplate.cpp:53
+#: dialogs/BibliographyTemplate.cpp:41
+#, fuzzy
+#| msgid "Insert Linebreak"
+msgid "Bibliography"
+msgstr "Sititchî on djocaedje di roye"
+
+#: dialogs/BibliographyTemplate.cpp:53 ReferencesToolFactory.cpp:31
 msgid "References"
 msgstr ""
+
+#: dialogs/TableOfContentsTemplate.cpp:40
+#, fuzzy
+#| msgid "Include in table of contents"
+msgid "Table Of Contents"
+msgstr "Meet dins l' tåve di l' ådvins"
+
+#: dialogs/TableOfContentsTemplate.cpp:51
+#, fuzzy
+#| msgid "Include in table of contents"
+msgid "Contents"
+msgstr "Meet dins l' tåve di l' ådvins"
+
+#: ReviewToolFactory.cpp:33
+#, fuzzy
+#| msgid "Text tool"
+msgid "Review"
+msgstr "Usteye di scrijhaedje"
 
 #: ReviewTool.cpp:73
 msgid "Tracked change manager"
@@ -198,12 +568,6 @@ msgstr ""
 #: ReviewTool.cpp:371
 msgid "Comments"
 msgstr ""
-
-#: ReviewToolFactory.cpp:33
-#, fuzzy
-#| msgid "Text tool"
-msgid "Review"
-msgstr "Usteye di scrijhaedje"
 
 #: TextShapeFactory.cpp:42 TextShapeFactory.cpp:52
 msgid "Text"
@@ -265,14 +629,6 @@ msgstr ""
 #| msgid "Change Tracking tool"
 msgid "Change writing direction"
 msgstr "Usteye di shuvaedje des candjmints"
-
-#: TextTool.cpp:269 dialogs/CharacterHighlighting.cpp:289
-msgid "Superscript"
-msgstr "Dizeu l' roye"
-
-#: TextTool.cpp:275 dialogs/CharacterHighlighting.cpp:290
-msgid "Subscript"
-msgstr "Dizo l' roye"
 
 #: TextTool.cpp:283
 msgid "Increase Indent"
@@ -614,13 +970,13 @@ msgstr "Hagnon..."
 msgid "Table"
 msgstr "Tåvlea..."
 
-#: TextTool.cpp:2442 TextTool.cpp:2447
-msgid "Autocorrection"
-msgstr "Coridjaedje tot seu"
-
 #: TextTool.cpp:2442
 msgid "Key Press"
 msgstr "Tchôcaedje di tape"
+
+#: TextTool.cpp:2442 TextTool.cpp:2447
+msgid "Autocorrection"
+msgstr "Coridjaedje tot seu"
 
 #. i18n: file: dialogs/StyleManager.ui:84
 #. i18n: ectx: property (text), widget (QPushButton, bDelete)
@@ -642,482 +998,6 @@ msgstr ""
 #: TextTool.cpp:2718
 msgid "Open Link?"
 msgstr "Drovi hårdêye?"
-
-#: TextToolFactory.cpp:29
-#, fuzzy
-#| msgid "Text editing tool"
-msgid "Text editing"
-msgstr "Usteye d' aspougnaedje do tecse"
-
-#: commands/AcceptChangeCommand.cpp:45
-#, fuzzy
-#| msgid "Accept change"
-msgctxt "(qtundo-format)"
-msgid "Accept change"
-msgstr "Accepter candjmint"
-
-#: commands/AutoResizeCommand.cpp:37
-#, fuzzy
-#| msgid "Distance:"
-msgctxt "Disable Shrink To Fit"
-msgid "Disable"
-msgstr "Distance:"
-
-#: commands/AutoResizeCommand.cpp:37
-msgctxt "Enable Shrink To Fit"
-msgid "Enable"
-msgstr ""
-
-#: commands/AutoResizeCommand.cpp:40
-#, kde-format
-msgctxt "(qtundo-format) Enable/Disable Grow To Fit Width"
-msgid "%1 Grow To Fit Width"
-msgstr ""
-
-#: commands/AutoResizeCommand.cpp:43
-#, kde-format
-msgctxt "(qtundo-format) Enable/Disable Grow To Fit Height"
-msgid "%1 Grow To Fit Height"
-msgstr ""
-
-#: commands/AutoResizeCommand.cpp:46
-#, kde-format
-msgctxt "(qtundo-format) Enable/Disable Shrink To Fit"
-msgid "%1 Shrink To Fit"
-msgstr ""
-
-#: commands/ChangeListLevelCommand.cpp:44
-#, fuzzy
-#| msgid "Change List Level"
-msgctxt "(qtundo-format)"
-msgid "Change List Level"
-msgstr "Candjî livea del djivêye"
-
-#: commands/RejectChangeCommand.cpp:47
-#, fuzzy
-#| msgid "Reject change"
-msgctxt "(qtundo-format)"
-msgid "Reject change"
-msgstr "Rifuzer candjmint"
-
-#: commands/ShowChangesCommand.cpp:53
-#, fuzzy
-#| msgid "Show Changes"
-msgctxt "(qtundo-format)"
-msgid "Show Changes"
-msgstr "Mostrer candjmints"
-
-#: commands/ShowChangesCommand.cpp:55
-#, fuzzy
-#| msgid "Hide Changes"
-msgctxt "(qtundo-format)"
-msgid "Hide Changes"
-msgstr "Catchî candjmints"
-
-#: dialogs/BibliographyConfigureDialog.cpp:109
-msgid "Ascending"
-msgstr ""
-
-#: dialogs/BibliographyConfigureDialog.cpp:110
-msgid "Descending"
-msgstr ""
-
-#: dialogs/BibliographyTemplate.cpp:41
-#, fuzzy
-#| msgid "Insert Linebreak"
-msgid "Bibliography"
-msgstr "Sititchî on djocaedje di roye"
-
-#: dialogs/ChangeConfigureDialog.cpp:148
-msgid "This is a line of inserted text."
-msgstr "Çouci est ene roye di tecse sititchî."
-
-#: dialogs/ChangeConfigureDialog.cpp:154
-msgid "This is a line of deleted text."
-msgstr "Çouci est ene roye di tecse disfacé."
-
-#: dialogs/ChangeConfigureDialog.cpp:160
-msgid "This is a line of text whose format has been changed."
-msgstr "Çouci est ene roye di tecse k' ons a candjî l' cogne."
-
-#: dialogs/CharacterGeneral.cpp:72 dialogs/FontDia.cpp:83
-#: dialogs/FormattingPreview.cpp:51
-msgid "Font"
-msgstr "Fonte"
-
-#: dialogs/CharacterHighlighting.cpp:277 dialogs/CharacterHighlighting.cpp:288
-msgid "Normal"
-msgstr "Normå"
-
-#: dialogs/CharacterHighlighting.cpp:278
-msgid "Small Caps"
-msgstr "Pititès madjuscules"
-
-#: dialogs/CharacterHighlighting.cpp:279
-msgid "Uppercase"
-msgstr "Grandès letes"
-
-#: dialogs/CharacterHighlighting.cpp:280
-msgid "Lowercase"
-msgstr "Pititès letes"
-
-#: dialogs/CharacterHighlighting.cpp:281
-msgid "Capitalize"
-msgstr "Li prumire lete e madjuscule"
-
-#: dialogs/CitationInsertionDialog.cpp:38
-#, fuzzy
-#| msgid "Select Font"
-msgid "Select"
-msgstr "Tchoezi fonte"
-
-#: dialogs/CitationInsertionDialog.cpp:53
-msgid ""
-"The document already contains the bibliography entry with different data.\n"
-"Do you want to adjust existing entries?"
-msgstr ""
-
-#: dialogs/CitationInsertionDialog.cpp:53 dialogs/StyleManager.cpp:411
-#: dialogs/StyleManager.cpp:428
-msgid "Warning"
-msgstr ""
-
-#: dialogs/CitationInsertionDialog.cpp:66
-#: dialogs/CitationInsertionDialog.cpp:84
-#, fuzzy, kde-format
-#| msgid "Name:"
-msgid "Short name%1"
-msgstr "No:"
-
-#: dialogs/FontDia.cpp:49
-msgid "Select Font"
-msgstr "Tchoezi fonte"
-
-#: dialogs/InsertCharacter.cpp:29
-msgid "Special Characters"
-msgstr "Caracteres sipeciå"
-
-#: dialogs/InsertCharacter.cpp:41
-msgctxt "Close dialog"
-msgid "Close"
-msgstr "Clôre"
-
-#: dialogs/NotesConfigurationDialog.cpp:35
-#, fuzzy
-#| msgid "Configure Change Tracking"
-msgid "Footnote Settings"
-msgstr "Apontyî l' shuvaedje des candjmints"
-
-#: dialogs/NotesConfigurationDialog.cpp:38
-#, fuzzy
-#| msgid "Paragraph Settings"
-msgid "Endnote Settings"
-msgstr "Apontiaedjes des hagnons"
-
-#: dialogs/ParagraphBulletsNumbers.cpp:47
-msgid "Custom Bullet"
-msgstr "Tchike a vosse môde"
-
-#: dialogs/ParagraphBulletsNumbers.cpp:48
-msgid "No Bullet"
-msgstr "Nole tchike"
-
-#: dialogs/ParagraphBulletsNumbers.cpp:52
-msgctxt "Automatic horizontal alignment"
-msgid "Auto"
-msgstr "Otomatike"
-
-#: dialogs/ParagraphBulletsNumbers.cpp:53
-msgctxt "Text alignment"
-msgid "Left"
-msgstr "Hintche"
-
-#: dialogs/ParagraphBulletsNumbers.cpp:54
-msgctxt "Text alignment"
-msgid "Right"
-msgstr "Droete"
-
-#: dialogs/ParagraphBulletsNumbers.cpp:55
-msgctxt "Text alignment"
-msgid "Centered"
-msgstr "Å mitan"
-
-#: dialogs/ParagraphBulletsNumbers.cpp:57
-msgctxt "Tab follows the bullet or number"
-msgid "Tab Stop"
-msgstr ""
-
-#: dialogs/ParagraphBulletsNumbers.cpp:58
-msgctxt "Space"
-msgid "Space"
-msgstr ""
-
-#: dialogs/ParagraphBulletsNumbers.cpp:59
-msgctxt "None"
-msgid "Nothing"
-msgstr ""
-
-#: dialogs/ParagraphDropCaps.cpp:33
-msgid "Whole Word"
-msgstr ""
-
-#: dialogs/ParagraphGeneral.cpp:53
-msgid "Indent/Spacing"
-msgstr "Ritrait/Espåçmint"
-
-#: dialogs/ParagraphGeneral.cpp:58
-msgid "General Layout"
-msgstr "Adjinçmint djenerå"
-
-#: dialogs/ParagraphGeneral.cpp:63
-msgid "Bullets/Numbers"
-msgstr "Tchikes/Limeros"
-
-#: dialogs/ParagraphGeneral.cpp:68
-msgid "Decorations"
-msgstr "Gåyotaedjes"
-
-#: dialogs/ParagraphGeneral.cpp:73
-msgid "Drop Caps"
-msgstr ""
-
-#: dialogs/ParagraphIndentSpacing.cpp:38
-msgctxt "Line spacing value"
-msgid "Single"
-msgstr "Simpe"
-
-#: dialogs/ParagraphIndentSpacing.cpp:39
-msgctxt "Line spacing value"
-msgid "1.5 Lines"
-msgstr "1,5 royes"
-
-#: dialogs/ParagraphIndentSpacing.cpp:40
-msgctxt "Line spacing value"
-msgid "Double"
-msgstr "Dobe"
-
-#: dialogs/ParagraphIndentSpacing.cpp:41
-msgctxt "Line spacing type"
-msgid "Proportional"
-msgstr "Proporcionel"
-
-#: dialogs/ParagraphIndentSpacing.cpp:42
-msgctxt "Line spacing type"
-msgid "Additional"
-msgstr "Di pus"
-
-#: dialogs/ParagraphIndentSpacing.cpp:43
-msgctxt "Line spacing type"
-msgid "Fixed"
-msgstr "Ewal"
-
-#: dialogs/ParagraphIndentSpacing.cpp:44
-msgctxt "Line spacing type"
-msgid "At least"
-msgstr ""
-
-#: dialogs/ParagraphSettingsDialog.cpp:39
-msgid "Paragraph Format"
-msgstr "Cogne do hagnon"
-
-#: dialogs/ParagraphSettingsDialog.cpp:83
-msgid "Paragraph Settings"
-msgstr "Apontiaedjes des hagnons"
-
-#: dialogs/QuickTableButton.cpp:160
-#, fuzzy
-#| msgid "Insert Table"
-msgid "Insert a table"
-msgstr "Sititchî tåvlea"
-
-#: dialogs/SimpleCharacterWidget.cpp:62
-msgid "Change font format"
-msgstr ""
-
-#: dialogs/SimpleFootEndNotesWidget.cpp:40
-#, fuzzy
-#| msgid "Insert a table into the document."
-msgid "Inserts a footnote at the current cursor position"
-msgstr "Sititchî on tåvlea e documint."
-
-#: dialogs/SimpleFootEndNotesWidget.cpp:45
-#, fuzzy
-#| msgid "Insert a table into the document."
-msgid "Inserts an endnote at the current cursor position"
-msgstr "Sititchî on tåvlea e documint."
-
-#: dialogs/SimpleParagraphWidget.cpp:81
-#, fuzzy
-#| msgid "Paragraph Format"
-msgid "Change paragraph format"
-msgstr "Cogne do hagnon"
-
-#: dialogs/SimpleParagraphWidget.cpp:166
-#, fuzzy
-#| msgid "Change List Level"
-msgid "Change List Level"
-msgstr "Candjî livea del djivêye"
-
-#: dialogs/SimpleTableWidget.cpp:50
-msgid "Select a border style and paint that style onto a table"
-msgstr ""
-
-#: dialogs/SimpleTableWidget.cpp:60
-#, fuzzy
-#| msgid "Text Color..."
-msgid "Set Border Color..."
-msgstr "Coleur do Tecse..."
-
-#: dialogs/SimpleTableWidget.cpp:183
-#, fuzzy
-#| msgctxt "Text list-style"
-#| msgid "None"
-msgctxt "No border - has to fit in 48pixels"
-msgid "None"
-msgstr "Nouk"
-
-#: dialogs/SimpleTableWidget.cpp:184
-msgid "No Border"
-msgstr ""
-
-#: dialogs/StyleManager.cpp:53
-msgid "Create a new style inheriting the current style"
-msgstr ""
-
-#: dialogs/StyleManager.cpp:346 dialogs/StyleManager.cpp:354
-#, fuzzy
-#| msgid "Next style:"
-msgid "New Style"
-msgstr "Stîle shuvant:"
-
-#: dialogs/StyleManager.cpp:411 dialogs/StyleManager.cpp:428
-#, kde-format
-msgid "Another style named '%1' already exist. Please choose another name."
-msgstr ""
-
-#: dialogs/StyleManagerDialog.cpp:33
-msgid "Style Manager"
-msgstr "Manaedjeu des stîles"
-
-#: dialogs/StyleManagerDialog.cpp:62
-#, fuzzy
-#| msgid "Hide Changes"
-msgid "Save Changes"
-msgstr "Catchî candjmints"
-
-#: dialogs/StyleManagerDialog.cpp:62
-msgid ""
-"You have changes that are not applied. What do you want to do with those "
-"changes?"
-msgstr ""
-
-#: dialogs/StylesComboPreview.cpp:80
-msgid "Create a new style with the current properties"
-msgstr ""
-
-#: dialogs/StylesComboPreview.cpp:191
-#, fuzzy
-#| msgid "Next style:"
-msgid "New style"
-msgstr "Stîle shuvant:"
-
-#: dialogs/StylesModel.cpp:52 dialogs/StylesModel.cpp:120
-#: dialogs/StylesModel.cpp:229
-#, fuzzy
-#| msgctxt "Text list-style"
-#| msgid "None"
-msgid "None"
-msgstr "Nouk"
-
-#: dialogs/TableDialog.cpp:27
-msgid "Insert Table"
-msgstr "Sititchî tåvlea"
-
-#: dialogs/TableOfContentsConfigure.cpp:75
-#, fuzzy
-#| msgid "Include in table of contents"
-msgid "Table of Contents - Configure"
-msgstr "Meet dins l' tåve di l' ådvins"
-
-#: dialogs/TableOfContentsConfigure.cpp:77
-#, fuzzy
-#| msgid "Table..."
-msgid "Table Title"
-msgstr "Tåvlea..."
-
-#: dialogs/TableOfContentsConfigure.cpp:78
-msgid "Use outline"
-msgstr ""
-
-#: dialogs/TableOfContentsConfigure.cpp:79
-#, fuzzy
-#| msgid "new style"
-msgid "Use styles"
-msgstr "novea stîle"
-
-#: dialogs/TableOfContentsConfigure.cpp:81
-#, fuzzy
-#| msgid "Indent"
-msgid "Index"
-msgstr "Ritrait"
-
-#: dialogs/TableOfContentsConfigure.cpp:82
-#: dialogs/TableOfContentsStyleModel.cpp:245
-msgid "Styles"
-msgstr "Stîles"
-
-#. i18n: file: dialogs/TableOfContentsConfigure.ui:57
-#. i18n: ectx: property (text), widget (QLabel, labelTitle)
-#: dialogs/TableOfContentsEntryModel.cpp:40 rc.cpp:790
-msgid "Title"
-msgstr ""
-
-#: dialogs/TableOfContentsEntryModel.cpp:43
-#, kde-format
-msgid "Level %1"
-msgstr ""
-
-#: dialogs/TableOfContentsEntryModel.cpp:150
-#: dialogs/TableOfContentsStyleModel.cpp:247
-msgid "Level"
-msgstr ""
-
-#: dialogs/TableOfContentsEntryModel.cpp:152
-#, fuzzy
-#| msgid "Styles"
-msgid "Style"
-msgstr "Stîles"
-
-#: dialogs/TableOfContentsStyleConfigure.cpp:39
-#, fuzzy
-#| msgid "Include in table of contents"
-msgid "Table of Contents - Configure Styles"
-msgstr "Meet dins l' tåve di l' ådvins"
-
-#: dialogs/TableOfContentsStyleConfigure.cpp:43
-#, fuzzy
-#| msgid "Style Manager"
-msgid "Styles available"
-msgstr "Manaedjeu des stîles"
-
-#: dialogs/TableOfContentsStyleDelegate.cpp:54
-#: dialogs/TableOfContentsStyleModel.cpp:110
-#, fuzzy
-#| msgid "Distance:"
-msgid "Disabled"
-msgstr "Distance:"
-
-#: dialogs/TableOfContentsTemplate.cpp:40
-#, fuzzy
-#| msgid "Include in table of contents"
-msgid "Table Of Contents"
-msgstr "Meet dins l' tåve di l' ådvins"
-
-#: dialogs/TableOfContentsTemplate.cpp:51
-#, fuzzy
-#| msgid "Include in table of contents"
-msgid "Contents"
-msgstr "Meet dins l' tåve di l' ådvins"
 
 #. i18n: file: dialogs/AcceptRejectChangeDialog.ui:26
 #. i18n: ectx: property (windowTitle), widget (QDialog, AcceptRejectChangeDialog)
@@ -1977,6 +1857,16 @@ msgstr "Eplaeçmint"
 msgid "Automatic hyphenation"
 msgstr "Côpaedje otomatike des mots avou loyeure"
 
+#. i18n: file: dialogs/InsertBibliographyDialog.ui:17
+#. i18n: ectx: property (windowTitle), widget (QDialog, InsertBibliographyDialog)
+#. i18n: file: dialogs/SimpleCitationBibliographyWidget.ui:36
+#. i18n: ectx: property (text), widget (FormattingButton, addBibliography)
+#: rc.cpp:403 rc.cpp:713 ReferencesTool.cpp:140
+#, fuzzy
+#| msgid "Insert Linebreak"
+msgid "Insert Bibliography"
+msgstr "Sititchî on djocaedje di roye"
+
 #. i18n: file: dialogs/InsertBibliographyDialog.ui:26
 #. i18n: ectx: property (title), widget (QGroupBox, titlegroupBox)
 #: rc.cpp:406
@@ -2494,6 +2384,14 @@ msgstr "Di pus"
 msgid "Insert citation at current position"
 msgstr "Sititchî on tåvlea e documint."
 
+#. i18n: file: dialogs/SimpleCitationBibliographyWidget.ui:26
+#. i18n: ectx: property (text), widget (QToolButton, addCitation)
+#: rc.cpp:710 ReferencesTool.cpp:135
+#, fuzzy
+#| msgid "Insertion"
+msgid "Insert Citation"
+msgstr "Stitchaedje"
+
 #. i18n: file: dialogs/SimpleCitationBibliographyWidget.ui:55
 #. i18n: ectx: property (text), widget (QToolButton, configureBibliography)
 #: rc.cpp:719
@@ -2668,6 +2566,108 @@ msgstr "Nombe di royes :"
 #| msgid "Number of columns:"
 msgid "Number of lines it covers:"
 msgstr "Nombe di colones :"
+
+#: ReferencesTool.cpp:56
+#, fuzzy
+#| msgid "Insert Table"
+msgid "Insert with label:"
+msgstr "Sititchî tåvlea"
+
+#: ReferencesTool.cpp:96
+#, fuzzy
+#| msgid "Insert a table into the document."
+msgid "Insert a Table of Contents into the document."
+msgstr "Sititchî on tåvlea e documint."
+
+#: ReferencesTool.cpp:98
+#, fuzzy
+#| msgid "Insert Table"
+msgid "Insert Custom ..."
+msgstr "Sititchî tåvlea"
+
+#: ReferencesTool.cpp:100
+#, fuzzy
+#| msgid "Insert a table into the document."
+msgid "Insert a custom Table of Contents into the document."
+msgstr "Sititchî on tåvlea e documint."
+
+#: ReferencesTool.cpp:102
+#, fuzzy
+#| msgid "Configure Change Tracking"
+msgid "Configure..."
+msgstr "Apontyî l' shuvaedje des candjmints"
+
+#: ReferencesTool.cpp:104
+#, fuzzy
+#| msgid "Include in table of contents"
+msgid "Configure the Table of Contents"
+msgstr "Meet dins l' tåve di l' ådvins"
+
+#: ReferencesTool.cpp:107 ReferencesTool.cpp:117
+msgid "Insert with auto number"
+msgstr ""
+
+#: ReferencesTool.cpp:111
+#, fuzzy
+#| msgid "Insert Table"
+msgid "Insert Labeled Footnote"
+msgstr "Sititchî tåvlea"
+
+#: ReferencesTool.cpp:121
+#, fuzzy
+#| msgid "Insert Table"
+msgid "Insert Labeled Endnote"
+msgstr "Sititchî tåvlea"
+
+#: ReferencesTool.cpp:127 ReferencesTool.cpp:131
+#, fuzzy
+#| msgid "Paragraph Settings"
+msgid "Settings..."
+msgstr "Apontiaedjes des hagnons"
+
+#: ReferencesTool.cpp:137
+#, fuzzy
+#| msgid "Insert a table into the document."
+msgid "Insert a citation into the document."
+msgstr "Sititchî on tåvlea e documint."
+
+#: ReferencesTool.cpp:142
+#, fuzzy
+#| msgid "Insert a table into the document."
+msgid "Insert a bibliography into the document."
+msgstr "Sititchî on tåvlea e documint."
+
+#: ReferencesTool.cpp:144
+#, fuzzy
+#| msgid "Insert Linebreak"
+msgid "Insert Custom Bibliography"
+msgstr "Sititchî on djocaedje di roye"
+
+#: ReferencesTool.cpp:146
+#, fuzzy
+#| msgid "Insert a table into the document."
+msgid "Insert a custom Bibliography into the document."
+msgstr "Sititchî on tåvlea e documint."
+
+#: ReferencesTool.cpp:149
+#, fuzzy
+#| msgid "Insert Linebreak"
+msgid "Configure the bibliography"
+msgstr "Sititchî on djocaedje di roye"
+
+#: ReferencesTool.cpp:181
+#, fuzzy
+#| msgid "Include in table of contents"
+msgid "Table of Contents"
+msgstr "Meet dins l' tåve di l' ådvins"
+
+#: ReferencesTool.cpp:184
+msgid "Footnotes and Endnotes"
+msgstr ""
+
+#: ReferencesTool.cpp:187
+msgid "Citations and Bibliography"
+msgstr ""
 
 #, fuzzy
 #~| msgid "Normal"
