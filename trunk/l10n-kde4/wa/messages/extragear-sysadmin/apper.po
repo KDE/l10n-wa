@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-11-01 03:51+0100\n"
+"POT-Creation-Date: 2012-11-02 03:54+0100\n"
 "PO-Revision-Date: 2011-09-20 17:14+0200\n"
 "Last-Translator: Djan Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -596,7 +596,7 @@ msgstr "Licince :"
 
 #. i18n: ectx: property (text), widget (QToolButton, hideTB)
 #: ApperKCM/PackageDetails.ui:359 ApperKCM/Updater/UpdateDetails.ui:20
-#: Sentinel/TransactionWatcher.cpp:183 Sentinel/UpdateIcon.cpp:123
+#: Sentinel/TransactionWatcher.cpp:172 Sentinel/UpdateIcon.cpp:123
 msgid "Hide"
 msgstr "Catchî"
 
@@ -717,7 +717,7 @@ msgid "Action"
 msgstr "Accion"
 
 #: ApperKCM/TransactionModel.cpp:48 AppSetup/SetupWizard.cpp:199
-#: Sentinel/TransactionWatcher.cpp:314
+#: Sentinel/TransactionWatcher.cpp:249
 msgid "Details"
 msgstr "Detays"
 
@@ -1040,8 +1040,8 @@ msgstr "Dj' astale li fitchî"
 msgid "%1 has been installed successfully!"
 msgstr "Li fitchî a stî astalé comifåt"
 
-#: AppSetup/SetupWizard.cpp:102 libapper/PkTransaction.cpp:122
-#: libapper/PkTransaction.cpp:142 libapper/PkTransaction.cpp:163
+#: AppSetup/SetupWizard.cpp:102 libapper/PkTransaction.cpp:127
+#: libapper/PkTransaction.cpp:145 libapper/PkTransaction.cpp:164
 #: libapper/PkTransaction.cpp:182
 msgid "Error"
 msgstr "Aroke"
@@ -2045,7 +2045,8 @@ msgstr "Li pacaedje n' est nén compatibe avou ç' sistinme cial"
 msgid "No space is left on the disk"
 msgstr "I gn a pupont d' plaece sol plake"
 
-#: libapper/PkStrings.cpp:456 libapper/PkTransactionWidget.cpp:366
+#: libapper/PkStrings.cpp:456 libapper/PkTransaction.cpp:385
+#: libapper/PkTransactionWidget.cpp:343
 msgid "A media change is required"
 msgstr "I fåt on candjmint d' media"
 
@@ -3078,29 +3079,29 @@ msgstr "Dji n' a savou cåzer avou packagekitd."
 msgid "An unknown error happened."
 msgstr "Åk n' a nén stî, aroke nén cnoxhowe."
 
-#: libapper/PkTransaction.cpp:118
+#: libapper/PkTransaction.cpp:123
 msgid "Failed to simulate file install"
 msgstr "Li fijhaedje come s' on astaléve li fitchî a fwait berwete"
 
-#: libapper/PkTransaction.cpp:122
+#: libapper/PkTransaction.cpp:127
 msgid "Current backend does not support installing files."
 msgstr ""
 "Li programe fondmint do moumint n' sopoite nén l' astalaedje di fitchîs."
 
-#: libapper/PkTransaction.cpp:138
+#: libapper/PkTransaction.cpp:141
 msgid "Failed to simulate package install"
 msgstr "Li fijhaedje come s' on astaléve li pacaedje a fwait berwete"
 
-#: libapper/PkTransaction.cpp:142
+#: libapper/PkTransaction.cpp:145
 msgid "Current backend does not support installing packages."
 msgstr ""
 "Li programe fondmint do moumint n' sopoite nén l' astalaedje di pacaedjes."
 
-#: libapper/PkTransaction.cpp:159
+#: libapper/PkTransaction.cpp:160
 msgid "Failed to simulate package removal"
 msgstr "Li fijhaedje come s' on oistéve li pacaedje a fwait berwete"
 
-#: libapper/PkTransaction.cpp:163
+#: libapper/PkTransaction.cpp:164
 msgid "The current backend does not support removing packages."
 msgstr ""
 "Li programe fondmint do moumint n' sopoite nén l' oistaedje des pacaedjes."
@@ -3115,48 +3116,25 @@ msgstr ""
 "Li programe fondmint do moumint n' sopoite nén l' metaedje a djoû des "
 "pacaedjes."
 
-#: libapper/PkTransaction.cpp:233
+#: libapper/PkTransaction.cpp:223
 msgid "Failed to install package"
 msgstr "L' astalaedje des pacaedjes a fwait berwete"
 
-#: libapper/PkTransaction.cpp:245 Sentinel/PkInstallProvideFiles.cpp:101
+#: libapper/PkTransaction.cpp:233 Sentinel/PkInstallProvideFiles.cpp:101
 msgid "Failed to install file"
 msgid_plural "Failed to install files"
 msgstr[0] "L' astalaedje do fitchî a fwait berwete"
 msgstr[1] "L' astalaedje des fitchîs a fwait berwete"
 
-#: libapper/PkTransaction.cpp:258
+#: libapper/PkTransaction.cpp:244
 msgid "Failed to remove package"
 msgstr "Li oistaedje des pacaedjes a fwait berwete"
 
-#: libapper/PkTransaction.cpp:270
+#: libapper/PkTransaction.cpp:254
 msgid "Failed to update package"
 msgstr "Li metaedje a djoû des pacaedjes a fwait berwete"
 
-#: libapper/PkTransaction.cpp:537 libapper/PkTransaction.cpp:591
-#: libapper/PkTransactionWidget.cpp:351 libapper/PkTransactionWidget.cpp:405
-msgid "Failed to install signature"
-msgstr "L' astalaedje del sinateure a fwait berwete"
-
-#: libapper/PkTransactionWidget.cpp:239
-#, fuzzy, kde-format
-#| msgid "Downloading packages at %1/s"
-msgid "Downloading at %1/s, %2 remaining"
-msgstr "Dj' aberwete  les pacaedjes a %1/s"
-
-#: libapper/PkTransactionWidget.cpp:243
-#, fuzzy, kde-format
-#| msgid "Downloading packages at %1/s"
-msgid "Downloading at %1/s"
-msgstr "Dj' aberwete  les pacaedjes a %1/s"
-
-#: libapper/PkTransactionWidget.cpp:246
-#, fuzzy, kde-format
-#| msgid "Downloading packages at %1/s"
-msgid "Downloading, %1 remaining"
-msgstr "Dj' aberwete  les pacaedjes a %1/s"
-
-#: libapper/PkTransactionWidget.cpp:294
+#: libapper/PkTransaction.cpp:314 libapper/PkTransactionWidget.cpp:271
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
 "as it is impossible to verify if the software came from a trusted source.\n"
@@ -3169,9 +3147,32 @@ msgstr ""
 "\n"
 "Voloz vs fé cist astalaedje po do bon ?"
 
-#: libapper/PkTransactionWidget.cpp:297
+#: libapper/PkTransaction.cpp:317 libapper/PkTransactionWidget.cpp:274
 msgid "Installing unsigned software"
 msgstr "Dj' astale on programe nén siné"
+
+#: libapper/PkTransaction.cpp:370 libapper/PkTransaction.cpp:430
+#: libapper/PkTransactionWidget.cpp:328 libapper/PkTransactionWidget.cpp:382
+msgid "Failed to install signature"
+msgstr "L' astalaedje del sinateure a fwait berwete"
+
+#: libapper/PkTransactionWidget.cpp:207
+#, fuzzy, kde-format
+#| msgid "Downloading packages at %1/s"
+msgid "Downloading at %1/s, %2 remaining"
+msgstr "Dj' aberwete  les pacaedjes a %1/s"
+
+#: libapper/PkTransactionWidget.cpp:211
+#, fuzzy, kde-format
+#| msgid "Downloading packages at %1/s"
+msgid "Downloading at %1/s"
+msgstr "Dj' aberwete  les pacaedjes a %1/s"
+
+#: libapper/PkTransactionWidget.cpp:214
+#, fuzzy, kde-format
+#| msgid "Downloading packages at %1/s"
+msgid "Downloading, %1 remaining"
+msgstr "Dj' aberwete  les pacaedjes a %1/s"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: libapper/PkTransactionWidget.ui:38
@@ -3843,56 +3844,23 @@ msgstr "Bouye tote fwaite"
 msgid "All operations were committed successfully"
 msgstr "Totes les operåcions ont stî fwaites comifåt"
 
-#: Sentinel/TransactionTrayIcon.cpp:45
-msgid "Transactions"
-msgstr "Tranzaccions"
-
-#: Sentinel/TransactionTrayIcon.cpp:90
-#, kde-format
-msgid "%1% - %2"
-msgstr "%1% - %2"
-
-#: Sentinel/TransactionTrayIcon.cpp:92
-#, kde-format
-msgid "%1"
-msgstr "%1"
-
-#: Sentinel/TransactionWatcher.cpp:63 Sentinel/TransactionWatcher.cpp:271
-msgid "Hide this icon"
-msgstr "Catchî ciste imådjete cial"
-
-#: Sentinel/TransactionWatcher.cpp:165
+#: Sentinel/TransactionWatcher.cpp:154
 msgid "The system update has completed"
 msgstr "Li metaedje a djoû do sistinme est tot fwait"
 
-#: Sentinel/TransactionWatcher.cpp:171
+#: Sentinel/TransactionWatcher.cpp:160
 #, kde-format
 msgid "Packages: %1"
 msgstr "Pacaedjes : %1"
 
-#: Sentinel/TransactionWatcher.cpp:198
+#: Sentinel/TransactionWatcher.cpp:187
 #, kde-format
 msgid "Package: %2"
 msgid_plural "Packages: %2"
 msgstr[0] "Pacaedje : %2"
 msgstr[1] "Pacaedjes : %2"
 
-#: Sentinel/TransactionWatcher.cpp:253 Sentinel/TransactionWatcher.cpp:293
-msgid "Software Manager Messages"
-msgstr "Messaedjes do Manaedjeu des programes"
-
-#: Sentinel/TransactionWatcher.cpp:254
-#, kde-format
-msgid "One message from the software manager"
-msgid_plural "%1 messages from the software manager"
-msgstr[0] "On messaedje do manaedjeu des programes"
-msgstr[1] "%1 messaedjes do manaedjeu des programes"
-
-#: Sentinel/TransactionWatcher.cpp:262
-msgid "Show messages"
-msgstr "Mostrer messaedjes"
-
-#: Sentinel/TransactionWatcher.cpp:314
+#: Sentinel/TransactionWatcher.cpp:249
 msgid "Ignore"
 msgstr "Passer houte"
 
@@ -3919,6 +3887,29 @@ msgstr "Li metaedje a djoû do sistinme a stî fwait sins rujhe."
 #: Sentinel/UpdateIcon.cpp:247
 msgid "The automated software update failed."
 msgstr "Li metaedje a djoû otomatike do programe a fwait berwete."
+
+#~ msgid "Transactions"
+#~ msgstr "Tranzaccions"
+
+#~ msgid "%1% - %2"
+#~ msgstr "%1% - %2"
+
+#~ msgid "%1"
+#~ msgstr "%1"
+
+#~ msgid "Hide this icon"
+#~ msgstr "Catchî ciste imådjete cial"
+
+#~ msgid "Software Manager Messages"
+#~ msgstr "Messaedjes do Manaedjeu des programes"
+
+#~ msgid "One message from the software manager"
+#~ msgid_plural "%1 messages from the software manager"
+#~ msgstr[0] "On messaedje do manaedjeu des programes"
+#~ msgstr[1] "%1 messaedjes do manaedjeu des programes"
+
+#~ msgid "Show messages"
+#~ msgstr "Mostrer messaedjes"
 
 #~ msgid "Failed to refresh package cache"
 #~ msgstr "Li rafristaedje del muchete des pacaedjes a fwait berwete"
