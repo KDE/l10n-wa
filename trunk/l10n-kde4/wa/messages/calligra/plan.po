@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplato\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-11-09 01:47+0100\n"
+"POT-Creation-Date: 2012-11-10 01:47+0100\n"
 "PO-Revision-Date: 2011-01-06 22:28+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -171,7 +171,7 @@ msgid "File-Format Error"
 msgstr "Problinme dins l' cogne do fitchî"
 
 #: KPlatoXmlLoader.cpp:73 KPlatoXmlLoader.cpp:85 KPlatoXmlLoader.cpp:127
-#: kptpart.cpp:220 kptpart.cpp:496
+#: kptmaindocument.cpp:219 kptmaindocument.cpp:495
 msgid "Continue"
 msgstr "Tcheryî pus lon"
 
@@ -191,8 +191,8 @@ msgstr ""
 "modêye: %1)\n"
 "El drovi dins cisse modêye ci di KPlato lyi frè piede des informåcions."
 
-#: KPlatoXmlLoader.cpp:85 KPlatoXmlLoader.cpp:127 kptpart.cpp:220
-#: kptpart.cpp:496
+#: KPlatoXmlLoader.cpp:85 KPlatoXmlLoader.cpp:127 kptmaindocument.cpp:219
+#: kptmaindocument.cpp:495
 msgid "File-Format Mismatch"
 msgstr "Problinme dins l' cogne do fitchî"
 
@@ -601,11 +601,11 @@ msgstr ""
 msgid "Insert after current node"
 msgstr "Sititchî documint"
 
-#: kptpart.cpp:184 kptpart.cpp:470
+#: kptmaindocument.cpp:183 kptmaindocument.cpp:469
 msgid "Invalid document. No mimetype specified."
 msgstr "Documint nén valåbe. I gn a nole sôre mime di specifieye."
 
-#: kptpart.cpp:211
+#: kptmaindocument.cpp:210
 #, fuzzy, kde-format
 #| msgid ""
 #| "Invalid document. Expected mimetype application/x-vnd.kde.kplato, got %1"
@@ -614,7 +614,7 @@ msgstr ""
 "Documint nén valåbe. Dji ratindeu l' sôre mime application/x-vnd.kde.kplato, "
 "dj' a yeu %1"
 
-#: kptpart.cpp:218
+#: kptmaindocument.cpp:217
 #, fuzzy, kde-format
 #| msgid ""
 #| "This document was created with a newer version of KPlato (syntax version: "
@@ -628,22 +628,22 @@ msgstr ""
 "modêye: %1)\n"
 "El drovi dins cisse modêye ci di KPlato lyi frè piede des informåcions."
 
-#: kptpart.cpp:361
+#: kptmaindocument.cpp:360
 #, kde-format
 msgid "Could not create the workpackage file for saving: %1"
 msgstr ""
 "Dji n' a savou ahiver l' fitchî di pacaedje d' ovraedje pol schapaedje: %1"
 
-#: kptpart.cpp:369
+#: kptmaindocument.cpp:368
 #, kde-format
 msgid "Not able to write '%1'. Partition full?"
 msgstr "Dji n' sai sicrire « %1 ». Pårticion rimpleye?"
 
-#: kptpart.cpp:396
+#: kptmaindocument.cpp:395
 msgid "Saving..."
 msgstr "Dji schape..."
 
-#: kptpart.cpp:487
+#: kptmaindocument.cpp:486
 #, fuzzy, kde-format
 #| msgid ""
 #| "Invalid document. Expected mimetype application/x-vnd.kde.kplato.work, "
@@ -654,7 +654,7 @@ msgstr ""
 "Documint nén valåbe. Dji ratindeu l' sôre mime application/x-vnd.kde.kplato."
 "work, dj' a yeu %1"
 
-#: kptpart.cpp:494
+#: kptmaindocument.cpp:493
 #, fuzzy, kde-format
 #| msgid ""
 #| "This document was created with a newer version of KPlatoWork (syntax "
@@ -669,22 +669,26 @@ msgstr ""
 "del modêye: %1)\n"
 "El drovi dins cisse modêye ci di KPlatoWork lyi frè piede des informåcions."
 
-#: kptpart.cpp:650
+#: kptmaindocument.cpp:649
 msgid "New work packages detected. Merge data with existing tasks?"
 msgstr ""
 
-#: kptpart.cpp:744
+#: kptmaindocument.cpp:743
 #, kde-format
 msgid ""
 "The package owner '%1' is not a resource in this project. You must handle "
 "this manually."
 msgstr ""
 
-#: kptpart.cpp:810
+#: kptmaindocument.cpp:809
 msgid "Nothing to save from this package"
 msgstr ""
 
-#: kptpart.cpp:984
+#: kptmaindocument.cpp:957
+msgid "Internal error, failed to insert file."
+msgstr ""
+
+#: kptmaindocument.cpp:985
 #, fuzzy
 #| msgid "Insert project"
 msgctxt "(qtundo-format)"
@@ -699,271 +703,286 @@ msgstr "Tchoezixheu d' programaedje"
 msgid "&Create Template From Document..."
 msgstr "&Ahiver modele a pårti do documint..."
 
-#: kptview.cpp:284
+#: kptview.cpp:276
+#, fuzzy
+#| msgid "Create Report..."
+msgid "&Create New Project..."
+msgstr "Ahiver rapoirt..."
+
+#: kptview.cpp:288
 msgid "Show Selector"
 msgstr "Mostrer tchoezixheu"
 
-#: kptview.cpp:291
+#: kptview.cpp:295
 msgid "Edit Main Project..."
 msgstr "Candjî mwaisse pordjet..."
 
-#: kptview.cpp:295
+#: kptview.cpp:299
 msgid "Define Estimate Conversions..."
 msgstr ""
 
-#: kptview.cpp:301
+#: kptview.cpp:305
 msgid "Define WBS Pattern..."
 msgstr "Defini patron WBS..."
 
-#: kptview.cpp:305
+#: kptview.cpp:309
 msgid "Insert Project File..."
 msgstr "Sititchî fitchî pordjet..."
 
-#: kptview.cpp:310
+#: kptview.cpp:314
 #, fuzzy
 #| msgid "Configure KPlato..."
 msgid "Configure Plan..."
 msgstr "Apontyî KPlato"
 
-#: kptview.cpp:314
+#: kptview.cpp:318
 msgid "Define Currency..."
 msgstr "Defini manoyr..."
 
-#: kptview.cpp:318
+#: kptview.cpp:322
 msgid "Open Report Definition File..."
 msgstr ""
 
-#: kptview.cpp:323
+#: kptview.cpp:327
 msgid "Introduction to Plan"
 msgstr ""
 
-#: kptview.cpp:328
+#: kptview.cpp:332
 msgid "Edit..."
 msgstr "Candjî..."
 
-#: kptview.cpp:331
+#: kptview.cpp:335
 msgid "Progress..."
 msgstr "Avançmint..."
 
-#: kptview.cpp:334
+#: kptview.cpp:338
 msgid "Delete Task"
 msgstr "Disfacer bouye"
 
-#: kptview.cpp:337
+#: kptview.cpp:341
 msgid "Description..."
 msgstr "Discrijhaedje..."
 
-#: kptview.cpp:340
+#: kptview.cpp:344
 msgid "Indent Task"
 msgstr "Mete e rtrait li bouye"
 
-#: kptview.cpp:343
+#: kptview.cpp:347
 msgid "Unindent Task"
 msgstr "Oister l' ritrait del bouye"
 
-#: kptview.cpp:346
+#: kptview.cpp:350
 msgid "Move Task Up"
 msgstr "Monter bouye"
 
-#: kptview.cpp:349
+#: kptview.cpp:353
 msgid "Move Task Down"
 msgstr "Baxhî bouye"
 
-#: kptview.cpp:353
+#: kptview.cpp:357
 msgid "Edit Resource..."
 msgstr "Candjî rissource..."
 
-#: kptview.cpp:357
+#: kptview.cpp:361
 msgid "Edit Dependency..."
 msgstr "Candjî aloyance..."
 
-#: kptview.cpp:360
+#: kptview.cpp:364
 msgid "Delete Dependency"
 msgstr "Disfacer aloyance"
 
-#: kptview.cpp:563 kptview.cpp:3062
+#: kptview.cpp:468
+msgctxt "@info"
+msgid ""
+"<note>This action cannot be undone.</note><nl/><nl/>Create a new Project "
+"from the current project with new project- and task identities.<nl/"
+">Resource- and calendar identities are not changed.<nl/>All scheduling "
+"information is removed.<nl/><nl/>Do you want to continue?"
+msgstr ""
+
+#: kptview.cpp:584 kptview.cpp:3084
 msgid "Task Status Report"
 msgstr "Rapoirt so l' estat del bouye"
 
-#: kptview.cpp:634
+#: kptview.cpp:655
 msgid "Work & Vacation"
 msgstr "Ovraedje eyet condjî"
 
-#: kptview.cpp:635
+#: kptview.cpp:656
 msgctxt "@info:tooltip"
 msgid "Edit working- and vacation days for resources"
 msgstr "Candjî les djoûs d' ovraedje eyet d' condjî po les rsources"
 
-#: kptview.cpp:637
+#: kptview.cpp:658
 msgid "Cost Breakdown Structure"
 msgstr "Tcherpinte di discôpaedje des costindjes"
 
-#: kptview.cpp:638
+#: kptview.cpp:659
 msgctxt "@info:tooltip"
 msgid "Edit cost breakdown structure."
 msgstr "Candjî li tcherpinte di discôpaedje des costindjes"
 
-#: kptview.cpp:640
+#: kptview.cpp:661
 msgid "Resources"
 msgstr "Rissources"
 
-#: kptview.cpp:641
+#: kptview.cpp:662
 msgctxt "@info:tooltip"
 msgid "Edit resource breakdown structure"
 msgstr "Candjî li tcherpinte di discôpaedje des rsources."
 
-#: kptview.cpp:643
+#: kptview.cpp:664
 msgid "Tasks"
 msgstr "Bouyes"
 
-#: kptview.cpp:644
+#: kptview.cpp:665
 msgctxt "@info:tooltip"
 msgid "Edit work breakdown structure"
 msgstr "Candjî li tcherpinte di discôpaedje di l' ovraedje"
 
-#: kptview.cpp:646
+#: kptview.cpp:667
 msgid "Dependencies (Graphic)"
 msgstr "Aloyances (graficmint)"
 
-#: kptview.cpp:647 kptview.cpp:650
+#: kptview.cpp:668 kptview.cpp:671
 msgctxt "@info:tooltip"
 msgid "Edit task dependencies"
 msgstr "Candjî les aloyances des bouyes"
 
-#: kptview.cpp:649
+#: kptview.cpp:670
 msgid "Dependencies (List)"
 msgstr "Aloyances (djivêyes)"
 
-#: kptview.cpp:653 kptview.cpp:656
+#: kptview.cpp:674 kptview.cpp:677
 msgid "Schedules"
 msgstr "Programaedjes"
 
-#: kptview.cpp:657
+#: kptview.cpp:678
 msgctxt "@info:tooltip"
 msgid "Calculate and analyze project schedules"
 msgstr "Carculer eyet analijhî les programaedjes do pordjet"
 
-#: kptview.cpp:659 kptviewlistdialog.cpp:112
+#: kptview.cpp:680 kptviewlistdialog.cpp:112
 msgid "Project Performance Chart"
 msgstr "Grafike del performance des pordjets"
 
-#: kptview.cpp:660
+#: kptview.cpp:681
 msgctxt "@info:tooltip"
 msgid "View project status information"
 msgstr "Vey les pondants et djondants so l' estat do pordjet"
 
-#: kptview.cpp:662 kptviewlistdialog.cpp:104
+#: kptview.cpp:683 kptviewlistdialog.cpp:104
 msgid "Task Status"
 msgstr "Estat del bouye"
 
-#: kptview.cpp:663
+#: kptview.cpp:684
 msgctxt "@info:tooltip"
 msgid "View task progress information"
 msgstr "Vey les pondants et djondants so l' avançmint del bouye"
 
-#: kptview.cpp:665
+#: kptview.cpp:686
 msgid "Task Execution"
 msgstr "Fijhaedje del bouye"
 
-#: kptview.cpp:666
+#: kptview.cpp:687
 msgctxt "@info:tooltip"
 msgid "View task execution information"
 msgstr "Vey les pondants et djondants so l' fijhaedje del bouye"
 
-#: kptview.cpp:668 kptviewlistdialog.cpp:106
+#: kptview.cpp:689 kptviewlistdialog.cpp:106
 msgid "Work Package View"
 msgstr "Vuwe sol pacaedje d' ovraedje"
 
-#: kptview.cpp:669
+#: kptview.cpp:690
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "View task work package information"
 msgstr "Vey les pondants et djondants sol progrès del bouye"
 
-#: kptview.cpp:671
+#: kptview.cpp:692
 msgid "Gantt"
 msgstr "Gantt"
 
-#: kptview.cpp:672
+#: kptview.cpp:693
 msgctxt "@info:tooltip"
 msgid "View gantt chart"
 msgstr "Vey li grafike gantt"
 
-#: kptview.cpp:674
+#: kptview.cpp:695
 msgid "Milestone Gantt"
 msgstr "Gantt des etapes"
 
-#: kptview.cpp:675
+#: kptview.cpp:696
 msgctxt "@info:tooltip"
 msgid "View milestone gantt chart"
 msgstr "Vey li grafike gantt des etapes"
 
-#: kptview.cpp:677 kptviewlistdialog.cpp:109
+#: kptview.cpp:698 kptviewlistdialog.cpp:109
 msgid "Resource Assignments"
 msgstr "Aroyaedjes des rsources"
 
-#: kptview.cpp:678
+#: kptview.cpp:699
 msgctxt "@info:tooltip"
 msgid "View resource assignments in a table"
 msgstr "Vey l' aroyaedje des rsources dins on tåvlea"
 
-#: kptview.cpp:680 kptviewlistdialog.cpp:110
+#: kptview.cpp:701 kptviewlistdialog.cpp:110
 msgid "Resource Assignments (Gantt)"
 msgstr "Aroyaedjes des rsources (Gantt)"
 
-#: kptview.cpp:681
+#: kptview.cpp:702
 msgctxt "@info:tooltip"
 msgid "View resource assignments in gantt chart"
 msgstr "Vey l' aroyaedje des rsources dins on grafike gantt"
 
-#: kptview.cpp:683 kptviewlistdialog.cpp:111
+#: kptview.cpp:704 kptviewlistdialog.cpp:111
 msgid "Cost Breakdown"
 msgstr "Discôpaedje des costindjes"
 
-#: kptview.cpp:684
+#: kptview.cpp:705
 msgctxt "@info:tooltip"
 msgid "View planned and actual cost"
 msgstr "Vey les vraiy eyet planifiés costindjes"
 
-#: kptview.cpp:686 kptviewlistdialog.cpp:113
+#: kptview.cpp:707 kptviewlistdialog.cpp:113
 msgid "Tasks Performance Chart"
 msgstr "Grafike del performance des bouyes"
 
-#: kptview.cpp:687
+#: kptview.cpp:708
 msgctxt "@info:tooltip"
 msgid "View tasks performance status information"
 msgstr "Vey les pondants et djondants di l' estat del performance des bouyes"
 
-#: kptview.cpp:689 kptview.cpp:3035 kptviewlistdialog.cpp:114
+#: kptview.cpp:710 kptview.cpp:3057 kptviewlistdialog.cpp:114
 #: kptviewlistdialog.cpp:533
 msgid "Report"
 msgstr "Rapoirt"
 
-#: kptview.cpp:690
+#: kptview.cpp:711
 msgctxt "@info:tooltip"
 msgid "View report"
 msgstr "Vey li rapoirt"
 
-#: kptview.cpp:701
+#: kptview.cpp:722
 msgid "Editors"
 msgstr "Candjeus"
 
-#: kptview.cpp:703
+#: kptview.cpp:724
 msgid "Views"
 msgstr "Vuwes"
 
-#: kptview.cpp:705
+#: kptview.cpp:726
 #, fuzzy
 #| msgid "Task Execution"
 msgctxt "Project execution views"
 msgid "Execution"
 msgstr "Fijhaedje del bouye"
 
-#: kptview.cpp:707
+#: kptview.cpp:728
 msgid "Reports"
 msgstr "Rapoirts"
 
-#: kptview.cpp:1650
+#: kptview.cpp:1672
 #, fuzzy, kde-format
 #| msgctxt "@info:status 1=schedule name"
 #| msgid "Calculate %1"
@@ -971,78 +990,78 @@ msgctxt "(qtundo-format) @info:status 1=schedule name"
 msgid "Calculate %1"
 msgstr "Carculer %1"
 
-#: kptview.cpp:1669
+#: kptview.cpp:1691
 msgid "Cannot baseline. The project is already baselined."
 msgstr "Dji n' sai fé l' referince. Li pordjet a ddja ene referince."
 
-#: kptview.cpp:1674
+#: kptview.cpp:1696
 msgid "This schedule is baselined. Do you want to remove the baseline?"
 msgstr "Li programaedje est referincé. Voloz oister l' referince?"
 
-#: kptview.cpp:1678
+#: kptview.cpp:1700
 #, fuzzy, kde-format
 #| msgid "Reset baseline %1"
 msgctxt "(qtundo-format)"
 msgid "Reset baseline %1"
 msgstr "Rimete li referince %1 a zero"
 
-#: kptview.cpp:1680
+#: kptview.cpp:1702
 #, fuzzy, kde-format
 #| msgid "Baseline %1"
 msgctxt "(qtundo-format)"
 msgid "Baseline %1"
 msgstr "Referince %1"
 
-#: kptview.cpp:1691
+#: kptview.cpp:1713
 #, fuzzy, kde-format
 #| msgid "Add schedule %1"
 msgctxt "(qtundo-format)"
 msgid "Add schedule %1"
 msgstr "Radjouter programaedje %1"
 
-#: kptview.cpp:1700
+#: kptview.cpp:1722
 #, fuzzy, kde-format
 #| msgid "Delete schedule %1"
 msgctxt "(qtundo-format)"
 msgid "Delete schedule %1"
 msgstr "Disfacer programaedje %1"
 
-#: kptview.cpp:1709
+#: kptview.cpp:1731
 #, fuzzy, kde-format
 #| msgid "Add schedule %1"
 msgctxt "(qtundo-format)"
 msgid "Move schedule %1"
 msgstr "Radjouter programaedje %1"
 
-#: kptview.cpp:1778
+#: kptview.cpp:1800
 #, fuzzy
 #| msgid "Add milestone"
 msgctxt "(qtundo-format)"
 msgid "Add milestone"
 msgstr "Radjouter etape"
 
-#: kptview.cpp:1804
+#: kptview.cpp:1826
 #, fuzzy
 #| msgid "Add sub-milestone"
 msgctxt "(qtundo-format)"
 msgid "Add sub-milestone"
 msgstr "Radjouter etape efant"
 
-#: kptview.cpp:1845
+#: kptview.cpp:1867
 msgid "Task Defaults"
 msgstr "Prémetous des bouyes"
 
-#: kptview.cpp:1846
+#: kptview.cpp:1868
 #, fuzzy
 #| msgid "Task Editor"
 msgid "Task Colors"
 msgstr "Candjeu d' bouye"
 
-#: kptview.cpp:1847
+#: kptview.cpp:1869
 msgid "Work Package"
 msgstr "Pacaedje d' ovraedje"
 
-#: kptview.cpp:2169
+#: kptview.cpp:2191
 msgid ""
 "A task that has been scheduled will be deleted. This will invalidate the "
 "schedule."
@@ -1050,7 +1069,7 @@ msgstr ""
 "Ene bouye k' a stî programêye va esse disfacêye. Çoula va rinde nén valåbe "
 "li programaedje."
 
-#: kptview.cpp:2177 kptview.cpp:2181 kptview.cpp:2197 kptview.cpp:2221
+#: kptview.cpp:2199 kptview.cpp:2203 kptview.cpp:2219 kptview.cpp:2243
 #, fuzzy
 #| msgid "Delete task"
 #| msgid_plural "Delete tasks"
@@ -1060,54 +1079,54 @@ msgid_plural "Delete tasks"
 msgstr[0] "Disfacer bouye"
 msgstr[1] "Disfacer bouyes"
 
-#: kptview.cpp:2216
+#: kptview.cpp:2238
 msgid "This task has been scheduled. This will invalidate the schedule."
 msgstr ""
 "Cisse bouye a stî programêye. Çoula va rinde nén valåbe li programaedje"
 
-#: kptview.cpp:2240
+#: kptview.cpp:2262
 #, fuzzy
 #| msgid "Indent task"
 msgctxt "(qtundo-format)"
 msgid "Indent task"
 msgstr "Mete e rtrait li bouye"
 
-#: kptview.cpp:2254
+#: kptview.cpp:2276
 #, fuzzy
 #| msgid "Unindent task"
 msgctxt "(qtundo-format)"
 msgid "Unindent task"
 msgstr "Oister l' ritrait del bouye"
 
-#: kptview.cpp:2276
+#: kptview.cpp:2298
 #, fuzzy
 #| msgid "Move task up"
 msgctxt "(qtundo-format)"
 msgid "Move task up"
 msgstr "Monter bouye"
 
-#: kptview.cpp:2297
+#: kptview.cpp:2319
 #, fuzzy
 #| msgid "Move task down"
 msgctxt "(qtundo-format)"
 msgid "Move task down"
 msgstr "Baxhî bouye"
 
-#: kptview.cpp:2335
+#: kptview.cpp:2357
 #, fuzzy
 #| msgid "Add task dependency"
 msgctxt "(qtundo-format)"
 msgid "Add task dependency"
 msgstr "Radjouter aloyance del bouye"
 
-#: kptview.cpp:2398
+#: kptview.cpp:2420
 #, fuzzy
 #| msgid "Delete task dependency"
 msgctxt "(qtundo-format)"
 msgid "Delete task dependency"
 msgstr "Disfacer aloyance del bouye"
 
-#: kptview.cpp:2437
+#: kptview.cpp:2459
 #, fuzzy
 #| msgid "Delete resource"
 #| msgid_plural "Delete resources"
@@ -1115,7 +1134,7 @@ msgctxt "(qtundo-format)"
 msgid "Delete resource"
 msgstr "Disfacer rissource"
 
-#: kptview.cpp:2442
+#: kptview.cpp:2464
 #, fuzzy
 #| msgid "Delete resourcegroup"
 #| msgid_plural "Delete resourcegroups"
@@ -1123,7 +1142,7 @@ msgctxt "(qtundo-format)"
 msgid "Delete resourcegroup"
 msgstr "Disfacer groupe di rsources"
 
-#: kptview.cpp:2451 kptview.cpp:2459
+#: kptview.cpp:2473 kptview.cpp:2481
 msgid ""
 "A resource that has been scheduled will be deleted. This will invalidate the "
 "schedule."
@@ -1131,23 +1150,23 @@ msgstr ""
 "Ene rissource k' a stî programêye va esse disfacêye. Çoula va rinde nén "
 "valåbe li programaedje."
 
-#: kptview.cpp:2496
+#: kptview.cpp:2518
 msgid "Delete resourcegroups and resources"
 msgstr "Disfacer groupes di rsources eyet rsources"
 
-#: kptview.cpp:2498
+#: kptview.cpp:2520
 msgid "Delete resource"
 msgid_plural "Delete resources"
 msgstr[0] "Disfacer rissource"
 msgstr[1] "Disfacer rissources"
 
-#: kptview.cpp:2500
+#: kptview.cpp:2522
 msgid "Delete resourcegroup"
 msgid_plural "Delete resourcegroups"
 msgstr[0] "Disfacer groupe di rsources"
 msgstr[1] "Disfacer groupes di rsources"
 
-#: kptview.cpp:2684
+#: kptview.cpp:2706
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "Cannot open file:</br><filename>%1</filename>"
@@ -1155,36 +1174,36 @@ msgctxt "@info"
 msgid "Cannot open file:<br/><filename>%1</filename>"
 msgstr "Dji n' sai drovi li fitchî :</br><filename>%1</filename>"
 
-#: kptview.cpp:2814
+#: kptview.cpp:2836
 msgid "Modify name"
 msgstr "Candjî no"
 
-#: kptview.cpp:2816
+#: kptview.cpp:2838
 msgid "Modify task name"
 msgstr "Candjî no del bouye"
 
-#: kptview.cpp:2817
+#: kptview.cpp:2839
 msgid "Modify milestone name"
 msgstr "Candjî no d' l' etape"
 
-#: kptview.cpp:2818
+#: kptview.cpp:2840
 msgid "Modify summarytask name"
 msgstr "Candjî no del bouye racourti"
 
-#: kptview.cpp:2819
+#: kptview.cpp:2841
 msgid "Modify project name"
 msgstr "Candjî no do pordjet"
 
-#: kptview.cpp:2905
+#: kptview.cpp:2927
 msgctxt "@info:status"
 msgid "Not scheduled"
 msgstr "Nén programé"
 
-#: kptview.cpp:2921 kptview.cpp:2961
+#: kptview.cpp:2943 kptview.cpp:2983
 msgid "Failed to open temporary file"
 msgstr "Li drovaedje do fitchî timporaire a fwait berwete"
 
-#: kptview.cpp:2928
+#: kptview.cpp:2950
 #, kde-format
 msgctxt "@info"
 msgid "Failed to save to temporary file:<br/> <filename>%1</filename>"
@@ -1192,12 +1211,12 @@ msgstr ""
 "Li drovaedje do fitchî timporaire a fwait berwete :<br/> <filename>%1</"
 "filename>"
 
-#: kptview.cpp:2936
+#: kptview.cpp:2958
 #, kde-format
 msgid "Work Package: %1"
 msgstr "Pacaedje d' ovraedje: %1"
 
-#: kptview.cpp:2937
+#: kptview.cpp:2959
 #, kde-format
 msgctxt "1=project name, 2=task name"
 msgid ""
@@ -1207,42 +1226,42 @@ msgstr ""
 "%1\n"
 "%2"
 
-#: kptview.cpp:2951
+#: kptview.cpp:2973
 #, fuzzy, kde-format
 msgid "Work Package for project: %1"
 msgstr "Pacaedje d' ovraedje: %1"
 
-#: kptview.cpp:2968
+#: kptview.cpp:2990
 #, fuzzy, kde-format
 #| msgid "Failed to save to temporary file: %1"
 msgctxt "@info"
 msgid "Failed to save to temporary file:<br><filename>%1</filename>"
 msgstr "Li drovaedje do fitchî timporaire a fwait berwete: %1"
 
-#: kptview.cpp:3045
+#: kptview.cpp:3067
 msgctxt "Project manager"
 msgid "Manager:"
 msgstr "Manaedjeu :"
 
-#: kptview.cpp:3053
+#: kptview.cpp:3075
 msgid "Project:"
 msgstr "Pordjet :"
 
-#: kptview.cpp:3076
+#: kptview.cpp:3098
 msgctxt "As in: Page 1 of 2"
 msgid "of"
 msgstr "di"
 
-#: kptview.cpp:3080
+#: kptview.cpp:3102
 msgid "Page"
 msgstr "Pådje"
 
-#: kptview.cpp:3091
+#: kptview.cpp:3113
 msgctxt "Task name"
 msgid "Name"
 msgstr "No"
 
-#: kptview.cpp:3099
+#: kptview.cpp:3121
 msgctxt "Task completion"
 msgid "Completion (%)"
 msgstr "Completaedje (%)"
@@ -1490,37 +1509,37 @@ msgid "&File"
 msgstr "&Fitchî"
 
 #. i18n: ectx: Menu (edit)
-#: plan.rc:8
+#: plan.rc:9
 msgid "&Edit"
 msgstr "&Candjî"
 
 #. i18n: ectx: Menu (view)
-#: plan.rc:34 plan_readonly.rc:3
+#: plan.rc:35 plan_readonly.rc:3
 msgid "&View"
 msgstr "&Vey"
 
 #. i18n: ectx: Menu (project)
-#: plan.rc:41
+#: plan.rc:42
 msgid "&Project"
 msgstr "&Pordjet"
 
 #. i18n: ectx: Menu (tools)
-#: plan.rc:48
+#: plan.rc:49
 msgid "&Tools"
 msgstr "Us&teyes"
 
 #. i18n: ectx: Menu (settings)
-#: plan.rc:55
+#: plan.rc:56
 msgid "&Settings"
 msgstr "Tchu&zes"
 
 #. i18n: ectx: Menu (help)
-#: plan.rc:58
+#: plan.rc:59
 msgid "&Help"
 msgstr "&Aidance"
 
 #. i18n: ectx: ToolBar (project)
-#: plan.rc:62
+#: plan.rc:63
 msgid "Project"
 msgstr "Pordjet"
 
@@ -1698,9 +1717,6 @@ msgstr ""
 #: plansettings.kcfg:180
 msgid "The largest duration unit allowed"
 msgstr ""
-
-#~ msgid "Create Report..."
-#~ msgstr "Ahiver rapoirt..."
 
 #~ msgid "Open File..."
 #~ msgstr "Drovi fitchî..."
