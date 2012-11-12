@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin_effects\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-11-11 07:57+0100\n"
+"POT-Creation-Date: 2012-09-07 12:30+0200\n"
 "PO-Revision-Date: 2011-01-14 09:24+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -32,7 +32,7 @@ msgstr "Ledjire"
 msgid "Strong"
 msgstr "Foite"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_CacheTexture)
+#. i18n: ectx: property (text), widget (QCheckBox, checkBox)
 #: blur/blur_config.ui:83
 msgid "Safe intermediate rendering results."
 msgstr ""
@@ -52,15 +52,26 @@ msgstr "&Mete pus hôt l' finiesse di tchoezeye"
 msgid "&Animate walk through windows"
 msgstr "Rotaedje &animé ttavå les fniesses"
 
-#: coverswitch/coverswitch.cpp:1020 flipswitch/flipswitch.cpp:986
+#: coverswitch/coverswitch.cpp:1015 flipswitch/flipswitch.cpp:984
 #, fuzzy
 #| msgid "Show desktop"
 msgctxt "Special entry in alt+tab list for minimizing all windows"
 msgid "Show Desktop"
 msgstr "Mostrer scribanne"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_WindowTitle)
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DrawWindowCaptions)
+#: coverswitch/coverswitch_config.cpp:72 cube/cube_config.cpp:124
+#: desktopgrid/desktopgrid_config.cpp:109 magiclamp/magiclamp_config.cpp:58
+#, fuzzy
+#| msgid " millisecond"
+#| msgid_plural " milliseconds"
+msgid " millisecond"
+msgid_plural " milliseconds"
+msgstr[0] " milisegonde"
+msgstr[1] " milisegonde"
+
+#. i18n: ectx: property (text), widget (QCheckBox, checkWindowTitle)
+#. i18n: ectx: property (text), widget (QCheckBox, windowTitleBox)
+#. i18n: ectx: property (text), widget (QCheckBox, displayTitleBox)
 #: coverswitch/coverswitch_config.ui:17 flipswitch/flipswitch_config.ui:191
 #: presentwindows/presentwindows_config.ui:408
 msgid "Display window &titles"
@@ -68,22 +79,22 @@ msgstr "Håyner les &tites des fniesses"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: coverswitch/coverswitch_config.ui:29 cube/cube_config.ui:341
+#: coverswitch/coverswitch_config.ui:29 cube/cube_config.ui:340
 msgid "Zoom"
 msgstr "Zoumer"
 
-#. i18n: ectx: property (toolTip), widget (QSlider, kcfg_zPosition)
+#. i18n: ectx: property (toolTip), widget (QSlider, zPositionSlider)
 #: coverswitch/coverswitch_config.ui:39
 msgid "Define how far away the windows should appear"
 msgstr "Defini a kéne distance les fniesses dvrént aparexhe"
 
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: coverswitch/coverswitch_config.ui:66 cube/cube_config.ui:347
+#: coverswitch/coverswitch_config.ui:66 cube/cube_config.ui:346
 msgid "Near"
 msgstr "Près"
 
 #. i18n: ectx: property (text), widget (QLabel, label_9)
-#: coverswitch/coverswitch_config.ui:86 cube/cube_config.ui:354
+#: coverswitch/coverswitch_config.ui:86 cube/cube_config.ui:353
 msgid "Far"
 msgstr "Lon"
 
@@ -92,132 +103,124 @@ msgstr "Lon"
 msgid "Animation"
 msgstr "Animåcion"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AnimateSwitch)
+#. i18n: ectx: property (text), widget (QCheckBox, checkAnimateSwitch)
 #: coverswitch/coverswitch_config.ui:116
 msgid "Animate switch"
 msgstr "Di&scandjaedje animé"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AnimateStart)
+#. i18n: ectx: property (text), widget (QCheckBox, checkAnimateStart)
 #: coverswitch/coverswitch_config.ui:123
 msgid "Animation on tab box open"
 msgstr "Abimåcion å drovaedje di boesse di linwete"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AnimateStop)
+#. i18n: ectx: property (text), widget (QCheckBox, checkAnimateStop)
 #: coverswitch/coverswitch_config.ui:130
 msgid "Animation on tab box close"
 msgstr "Animåcion å cloyaedje d' ene linwete"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: coverswitch/coverswitch_config.ui:139 magiclamp/magiclamp_config.ui:17
+#: coverswitch/coverswitch_config.ui:139 magiclamp/magiclamp_config.ui:16
 msgid "Animation duration:"
 msgstr "Tins k' deure l' animåcion:"
 
-#. i18n: ectx: property (specialValueText), widget (KIntSpinBox, kcfg_Duration)
-#. i18n: ectx: property (specialValueText), widget (KIntSpinBox, kcfg_RotationDuration)
-#. i18n: ectx: property (specialValueText), widget (QSpinBox, kcfg_AnimationDuration)
-#: coverswitch/coverswitch_config.ui:158 cube/cube_config.ui:146
-#: cube/cubeslide_config.ui:49 magiclamp/magiclamp_config.ui:36
+#. i18n: ectx: property (specialValueText), widget (KIntSpinBox, spinDuration)
+#. i18n: ectx: property (specialValueText), widget (KIntSpinBox, rotationDurationSpin)
+#. i18n: ectx: property (specialValueText), widget (KIntSpinBox, animationDurationSpin)
+#: coverswitch/coverswitch_config.ui:158 cube/cube_config.ui:145
+#: cube/cubeslide_config.ui:49 magiclamp/magiclamp_config.ui:35
 msgctxt "Duration of rotation"
 msgid "Default"
 msgstr "Prémetou"
 
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, kcfg_Duration)
-#: coverswitch/coverswitch_config.ui:161
-#, fuzzy
-#| msgid " millisecond"
-#| msgid_plural " milliseconds"
-msgid " milliseconds"
-msgstr " milisegonde"
-
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: coverswitch/coverswitch_config.ui:177
+#: coverswitch/coverswitch_config.ui:174
 msgid "Thumbnail Bar"
 msgstr "Bår di prévoeyaedje"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_Thumbnails)
-#: coverswitch/coverswitch_config.ui:183
+#. i18n: ectx: property (text), widget (QCheckBox, checkThumbnails)
+#: coverswitch/coverswitch_config.ui:180
 msgid "Use additional thumbnail bar"
 msgstr "Si siervi d' ene ôte båre di prévoeyaedje"
 
-#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_DynamicThumbnails)
-#: coverswitch/coverswitch_config.ui:190
+#. i18n: ectx: property (toolTip), widget (QCheckBox, checkDynamicThumbnails)
+#: coverswitch/coverswitch_config.ui:187
 msgid ""
 "Only show thumbnail bar if there are at least specified number of windows"
 msgstr ""
 "Èn mostrer l' bår des prévoeyaedjes s' i gn a pol moens l' nombe di fniesses "
 "di specifieyes"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DynamicThumbnails)
-#: coverswitch/coverswitch_config.ui:193
+#. i18n: ectx: property (text), widget (QCheckBox, checkDynamicThumbnails)
+#: coverswitch/coverswitch_config.ui:190
 msgid "Dynamic mode"
 msgstr "Môde dinamike"
 
 #. i18n: ectx: property (text), widget (QLabel, labelThumbnailWindows)
-#: coverswitch/coverswitch_config.ui:202
+#: coverswitch/coverswitch_config.ui:199
 msgid "Number of windows:"
 msgstr "Nombe di fniesses :"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_3)
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_Reflection)
-#: coverswitch/coverswitch_config.ui:221 coverswitch/coverswitch_config.ui:227
+#. i18n: ectx: property (text), widget (QCheckBox, checkReflection)
+#: coverswitch/coverswitch_config.ui:218 coverswitch/coverswitch_config.ui:224
 msgid "Reflections"
 msgstr "Riflets"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: coverswitch/coverswitch_config.ui:239
+#: coverswitch/coverswitch_config.ui:236
 msgid "Rear color"
 msgstr "Coleur do drî"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: coverswitch/coverswitch_config.ui:249
+#: coverswitch/coverswitch_config.ui:246
 msgid "Front color"
 msgstr "Coleur do dvant"
 
-#: cube/cube.cpp:195 cube/cube_config.cpp:63
+#: cube/cube.cpp:197 cube/cube_config.cpp:60
 msgid "Desktop Cube"
 msgstr "Cube di scribannes"
 
-#: cube/cube.cpp:199 cube/cube_config.cpp:67
+#: cube/cube.cpp:201 cube/cube_config.cpp:64
 msgid "Desktop Cylinder"
 msgstr "Cilinde di scribannes"
 
-#: cube/cube.cpp:203 cube/cube_config.cpp:71
+#: cube/cube.cpp:205 cube/cube_config.cpp:68
 msgid "Desktop Sphere"
 msgstr "Bole di scribannes"
 
-#: cube/cube_config.cpp:53
+#: cube/cube_config.cpp:50
 msgctxt "@title:tab Basic Settings"
 msgid "Basic"
 msgstr "Di båze"
 
-#: cube/cube_config.cpp:54
+#: cube/cube_config.cpp:51
 msgctxt "@title:tab Advanced Settings"
 msgid "Advanced"
 msgstr "Sipepieus"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: cube/cube_config.ui:21
+#: cube/cube_config.ui:20
 msgid "Tab 1"
 msgstr "Linwete 1"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_5)
-#: cube/cube_config.ui:27
+#: cube/cube_config.ui:26
 msgid "Background"
 msgstr "Fond"
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: cube/cube_config.ui:33
+#: cube/cube_config.ui:32
 msgid "Background color:"
 msgstr "Coleur di fond:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: cube/cube_config.ui:56
+#: cube/cube_config.ui:55
 msgid "Wallpaper:"
 msgstr "Tapisreye:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_8)
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: cube/cube_config.ui:82 desktopgrid/desktopgrid_config.ui:200
+#: cube/cube_config.ui:81 desktopgrid/desktopgrid_config.ui:200
 #: flipswitch/flipswitch_config.ui:204
 #: presentwindows/presentwindows_config.ui:17
 msgid "Activation"
@@ -225,41 +228,41 @@ msgstr "Metaedje en alaedje"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_7)
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: cube/cube_config.ui:101 desktopgrid/desktopgrid_config.ui:17
-#: flipswitch/flipswitch_config.ui:17 mousemark/mousemark_config.ui:17
+#: cube/cube_config.ui:100 desktopgrid/desktopgrid_config.ui:17
+#: flipswitch/flipswitch_config.ui:17 mousemark/mousemark_config.ui:8
 #: presentwindows/presentwindows_config.ui:389
-#: thumbnailaside/thumbnailaside_config.ui:17
+#: thumbnailaside/thumbnailaside_config.ui:16
 msgid "Appearance"
 msgstr "Rivnance"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DisplayDesktopName)
-#: cube/cube_config.ui:107
+#. i18n: ectx: property (text), widget (QCheckBox, displayDesktopNameBox)
+#: cube/cube_config.ui:106
 msgid "Display desktop name"
 msgstr "Håyner l' no do scribanne"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_Reflection)
-#: cube/cube_config.ui:114
+#. i18n: ectx: property (text), widget (QCheckBox, reflectionBox)
+#: cube/cube_config.ui:113
 msgid "Reflection"
 msgstr "Riflet"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: cube/cube_config.ui:121 cube/cubeslide_config.ui:72
+#: cube/cube_config.ui:120 cube/cubeslide_config.ui:72
 msgid "Rotation duration:"
 msgstr "Tins do tournaedje:"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ZOrdering)
-#: cube/cube_config.ui:172
+#. i18n: ectx: property (text), widget (QCheckBox, zOrderingBox)
+#: cube/cube_config.ui:171
 msgid "Windows hover above cube"
 msgstr "Les fniesses passèt pa dzeu l' cube"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
-#: cube/cube_config.ui:182
+#: cube/cube_config.ui:181
 msgid "Opacity"
 msgstr "Zeroveyaedje"
 
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, kcfg_OpacitySpin)
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, kcfg_Opacity)
-#: cube/cube_config.ui:222 thumbnailaside/thumbnailaside_config.ui:87
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, cubeOpacitySpin)
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, spinOpacity)
+#: cube/cube_config.ui:221 thumbnailaside/thumbnailaside_config.ui:99
 #, no-c-format
 msgid " %"
 msgstr " %"
@@ -267,7 +270,7 @@ msgstr " %"
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: cube/cube_config.ui:235 translucency/translucency_config.ui:260
+#: cube/cube_config.ui:234 translucency/translucency_config.ui:260
 #: translucency/translucency_config.ui:456
 msgid "Transparent"
 msgstr "Transparint"
@@ -275,53 +278,53 @@ msgstr "Transparint"
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: cube/cube_config.ui:242 translucency/translucency_config.ui:273
+#: cube/cube_config.ui:241 translucency/translucency_config.ui:273
 #: translucency/translucency_config.ui:469
 msgid "Opaque"
 msgstr "Opake"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_OpacityDesktopOnly)
-#: cube/cube_config.ui:252
+#. i18n: ectx: property (text), widget (QCheckBox, desktopOpacityOnlyBox)
+#: cube/cube_config.ui:251
 msgid "Do not change opacity of windows"
 msgstr "Èn nén candjî l' zerovoeyaedje des fniesses"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: cube/cube_config.ui:276
+#: cube/cube_config.ui:275
 msgid "Tab 2"
 msgstr "Linwete 2"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: cube/cube_config.ui:282
+#: cube/cube_config.ui:281
 msgid "Caps"
 msgstr "Difinmints"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_Caps)
-#: cube/cube_config.ui:288
+#. i18n: ectx: property (text), widget (QCheckBox, cubeCapsBox)
+#: cube/cube_config.ui:287
 msgid "Show caps"
 msgstr "Moster les difinmints"
 
 #. i18n: ectx: property (text), widget (QLabel, capColorLabel)
-#: cube/cube_config.ui:295
+#: cube/cube_config.ui:294
 msgid "Cap color:"
 msgstr "Coleur do difinmint:"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_TexturedCaps)
-#: cube/cube_config.ui:318
+#. i18n: ectx: property (text), widget (QCheckBox, capsImageBox)
+#: cube/cube_config.ui:317
 msgid "Display image on caps"
 msgstr "Mostrer l' imådje so les difinmints"
 
-#. i18n: ectx: property (toolTip), widget (QSlider, kcfg_ZPosition)
-#: cube/cube_config.ui:364
+#. i18n: ectx: property (toolTip), widget (QSlider, zPositionSlider)
+#: cube/cube_config.ui:363
 msgid "Define how far away the object should appear"
 msgstr "Defini a kene distance les objets dvrant aparete"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_9)
-#: cube/cube_config.ui:405
+#: cube/cube_config.ui:404
 msgid "Additional Options"
 msgstr "Ôtès tchuzes"
 
-#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_CloseOnMouseRelease)
-#: cube/cube_config.ui:412
+#. i18n: ectx: property (toolTip), widget (QCheckBox, closeOnMouseReleaseBox)
+#: cube/cube_config.ui:411
 msgid ""
 "If enabled the effect will be deactivated after rotating the cube with the "
 "mouse,\n"
@@ -331,63 +334,62 @@ msgstr ""
 "sori,\n"
 "ôtrumint i dmorrè en alaedje"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_CloseOnMouseRelease)
-#: cube/cube_config.ui:415
+#. i18n: ectx: property (text), widget (QCheckBox, closeOnMouseReleaseBox)
+#: cube/cube_config.ui:414
 msgid "Close after mouse dragging"
 msgstr "Clôre après kel sori l' åye bodjî"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_TabBox)
-#: cube/cube_config.ui:422
+#. i18n: ectx: property (text), widget (QCheckBox, walkThroughDesktopBox)
+#: cube/cube_config.ui:421
 msgid "Use this effect for walking through the desktops"
 msgstr "Siervoz vs di cist efet po roter pattavå les scribannes"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_InvertKeys)
-#: cube/cube_config.ui:429
+#. i18n: ectx: property (text), widget (QCheckBox, invertKeysBox)
+#: cube/cube_config.ui:428
 msgid "Invert cursor keys"
 msgstr "Tapes do cursoe å rvier"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_InvertMouse)
-#: cube/cube_config.ui:436
+#. i18n: ectx: property (text), widget (QCheckBox, invertMouseBox)
+#: cube/cube_config.ui:435
 msgid "Invert mouse"
 msgstr "Sori å rvier"
 
 #. i18n: ectx: property (title), widget (QGroupBox, capDeformationGroupBox)
-#: cube/cube_config.ui:446
+#: cube/cube_config.ui:445
 msgid "Sphere Cap Deformation"
 msgstr "Disfoirmaedje do difinmint del bole"
 
 #. i18n: ectx: property (text), widget (QLabel, capDeformationSphereLabel)
-#: cube/cube_config.ui:468
+#: cube/cube_config.ui:467
 msgid "Sphere"
 msgstr "Bole"
 
 #. i18n: ectx: property (text), widget (QLabel, capDeformationPlaneLabel)
-#: cube/cube_config.ui:475
+#: cube/cube_config.ui:474
 msgid "Plane"
 msgstr "Mape"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DontSlideStickyWindows)
+#. i18n: ectx: property (text), widget (QCheckBox, dontSlideStickyWindowsBox)
 #: cube/cubeslide_config.ui:17
 msgid "Do not animate windows on all desktops"
 msgstr "Èn nén animer les fniesses so tos les scribannes"
 
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, kcfg_RotationDuration)
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, kcfg_RingLife)
-#: cube/cubeslide_config.ui:52 mouseclick/mouseclick_config.ui:132
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, rotationDurationSpin)
+#: cube/cubeslide_config.ui:52
 msgid " msec"
 msgstr " mseg"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DontSlidePanels)
+#. i18n: ectx: property (text), widget (QCheckBox, dontSlidePanelsBox)
 #: cube/cubeslide_config.ui:65
 msgid "Do not animate panels"
 msgstr "Èn nén animer les scriftôrs"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_UsePagerLayout)
+#. i18n: ectx: property (text), widget (QCheckBox, usePagerBox)
 #: cube/cubeslide_config.ui:85
 msgid "Use pager layout for animation"
 msgstr "Si siervi di l' adjinçmint do pådjeu po l' animåcion"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_UseWindowMoving)
+#. i18n: ectx: property (text), widget (QCheckBox, windowsMovingBox)
 #: cube/cubeslide_config.ui:92
 msgid "Start animation when moving windows towards screen edges"
 msgstr ""
@@ -436,29 +438,29 @@ msgstr "Durêye do fondou :"
 msgid "ms"
 msgstr "ms"
 
-#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_Blur)
+#. i18n: ectx: property (toolTip), widget (QCheckBox, blur)
 #: dashboard/dashboard_config.ui:193
 msgid "The blur effect must be enabled before it can be used."
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_Blur)
+#. i18n: ectx: property (text), widget (QCheckBox, blur)
 #: dashboard/dashboard_config.ui:196
 #, fuzzy
 #| msgid "Apply effect to &groups"
 msgid "Apply blur effect to background"
 msgstr "Mete en ouve l' efet po les &groupes"
 
-#: desktopgrid/desktopgrid.cpp:74 desktopgrid/desktopgrid_config.cpp:60
+#: desktopgrid/desktopgrid.cpp:72 desktopgrid/desktopgrid_config.cpp:57
 msgid "Show Desktop Grid"
 msgstr "Mostrer grile do scribanne"
 
-#: desktopgrid/desktopgrid_config.cpp:66
+#: desktopgrid/desktopgrid_config.cpp:64
 msgctxt "Desktop name alignment:"
 msgid "Disabled"
 msgstr "Essocté"
 
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: desktopgrid/desktopgrid_config.cpp:67 flipswitch/flipswitch_config.ui:160
+#: desktopgrid/desktopgrid_config.cpp:66 flipswitch/flipswitch_config.ui:160
 msgid "Top"
 msgstr "Al copete"
 
@@ -467,44 +469,56 @@ msgid "Top-Right"
 msgstr "Hôt droet"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: desktopgrid/desktopgrid_config.cpp:69 flipswitch/flipswitch_config.ui:125
-#: mouseclick/mouseclick.cpp:52
+#: desktopgrid/desktopgrid_config.cpp:70 flipswitch/flipswitch_config.ui:125
 msgid "Right"
 msgstr "Droete"
 
-#: desktopgrid/desktopgrid_config.cpp:70
+#: desktopgrid/desktopgrid_config.cpp:72
 msgid "Bottom-Right"
 msgstr "Bas droet"
 
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: desktopgrid/desktopgrid_config.cpp:71 flipswitch/flipswitch_config.ui:180
+#: desktopgrid/desktopgrid_config.cpp:74 flipswitch/flipswitch_config.ui:180
 msgid "Bottom"
 msgstr "Bas"
 
-#: desktopgrid/desktopgrid_config.cpp:72
+#: desktopgrid/desktopgrid_config.cpp:76
 msgid "Bottom-Left"
 msgstr "Bas hintche"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: desktopgrid/desktopgrid_config.cpp:73 flipswitch/flipswitch_config.ui:105
-#: mouseclick/mouseclick.cpp:51
+#: desktopgrid/desktopgrid_config.cpp:78 flipswitch/flipswitch_config.ui:105
 msgid "Left"
 msgstr "Hintche"
 
-#: desktopgrid/desktopgrid_config.cpp:74
+#: desktopgrid/desktopgrid_config.cpp:80
 msgid "Top-Left"
 msgstr "Hôt hintche"
 
-#: desktopgrid/desktopgrid_config.cpp:75
+#: desktopgrid/desktopgrid_config.cpp:82
 msgid "Center"
 msgstr "Mitan"
+
+#: desktopgrid/desktopgrid_config.cpp:111 mousemark/mousemark_config.cpp:90
+#: thumbnailaside/thumbnailaside_config.cpp:90
+#: thumbnailaside/thumbnailaside_config.cpp:92
+msgid " pixel"
+msgid_plural " pixels"
+msgstr[0] " picsel"
+msgstr[1] " picsels"
+
+#: desktopgrid/desktopgrid_config.cpp:121
+msgid " row"
+msgid_plural " rows"
+msgstr[0] " roye"
+msgstr[1] " royes"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: desktopgrid/desktopgrid_config.ui:23
 msgid "Zoom &duration:"
 msgstr "Tins k' &deure li zoumaedje:"
 
-#. i18n: ectx: property (specialValueText), widget (KIntSpinBox, kcfg_ZoomDuration)
+#. i18n: ectx: property (specialValueText), widget (KIntSpinBox, zoomDurationSpin)
 #: desktopgrid/desktopgrid_config.ui:42
 msgctxt "Duration of zoom"
 msgid "Default"
@@ -525,17 +539,17 @@ msgstr "Aroymint do &no do scribanne:"
 msgid "&Layout mode:"
 msgstr "Môde d' &adjinçmint:"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LayoutMode)
+#. i18n: ectx: property (text), item, widget (KComboBox, layoutCombo)
 #: desktopgrid/desktopgrid_config.ui:127
 msgid "Pager"
 msgstr "Pager"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LayoutMode)
+#. i18n: ectx: property (text), item, widget (KComboBox, layoutCombo)
 #: desktopgrid/desktopgrid_config.ui:132
 msgid "Automatic"
 msgstr "Otomatike"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LayoutMode)
+#. i18n: ectx: property (text), item, widget (KComboBox, layoutCombo)
 #: desktopgrid/desktopgrid_config.ui:137
 msgid "Custom"
 msgstr "A vosse môde"
@@ -545,41 +559,41 @@ msgstr "A vosse môde"
 msgid "Number of &rows:"
 msgstr "Nombe di &royes:"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_PresentWindows)
+#. i18n: ectx: property (text), widget (QCheckBox, presentWindowsCheckBox)
 #: desktopgrid/desktopgrid_config.ui:190
 msgid "Use Present Windows effect to layout the windows"
 msgstr "Si siervi di cist efet d' finiesses ci pos adjinçner les fniesses"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DimPanels)
-#: diminactive/diminactive_config.ui:17
+#. i18n: ectx: property (text), widget (QCheckBox, checkPanel)
+#: diminactive/diminactive_config.ui:16
 msgid "Apply effect to &panels"
 msgstr "Mete en ouve l' efet po les &scriftôrs"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DimDesktop)
-#: diminactive/diminactive_config.ui:24
+#. i18n: ectx: property (text), widget (QCheckBox, checkDesktop)
+#: diminactive/diminactive_config.ui:23
 msgid "Apply effect to the desk&top"
 msgstr "Mete en ouve l' efet po les scri&bannes"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DimKeepAbove)
-#: diminactive/diminactive_config.ui:31
+#. i18n: ectx: property (text), widget (QCheckBox, checkKeepAbove)
+#: diminactive/diminactive_config.ui:30
 msgid "Apply effect to &keep-above windows"
 msgstr "Mete en ouve l' efet po les &wårder finiesses pa dzeu"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DimGroup)
-#: diminactive/diminactive_config.ui:38
+#. i18n: ectx: property (text), widget (QCheckBox, checkGroup)
+#: diminactive/diminactive_config.ui:37
 msgid "Apply effect to &groups"
 msgstr "Mete en ouve l' efet po les &groupes"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: diminactive/diminactive_config.ui:45
+#: diminactive/diminactive_config.ui:44
 msgid "&Strength:"
 msgstr "&Foice:"
 
-#: flipswitch/flipswitch.cpp:61 flipswitch/flipswitch_config.cpp:54
+#: flipswitch/flipswitch.cpp:60 flipswitch/flipswitch_config.cpp:51
 msgid "Toggle Flip Switch (Current desktop)"
 msgstr "(Dis)mete discandjeu d' finiesse (Sicribanne do moumint)"
 
-#: flipswitch/flipswitch.cpp:67 flipswitch/flipswitch_config.cpp:57
+#: flipswitch/flipswitch.cpp:66 flipswitch/flipswitch_config.cpp:54
 msgid "Toggle Flip Switch (All desktops)"
 msgstr "(Dis)mete discandjeu d' finiesse (Tos les scribannes)"
 
@@ -588,7 +602,7 @@ msgstr "(Dis)mete discandjeu d' finiesse (Tos les scribannes)"
 msgid "Flip animation duration:"
 msgstr "Tins k' deure l' animåcion d' discandjaedje:"
 
-#. i18n: ectx: property (specialValueText), widget (KIntSpinBox, kcfg_Duration)
+#. i18n: ectx: property (specialValueText), widget (KIntSpinBox, durationSpin)
 #: flipswitch/flipswitch_config.ui:42
 msgctxt "Duration of flip animation"
 msgid "Default"
@@ -599,7 +613,7 @@ msgstr "Prémetou"
 msgid "Angle:"
 msgstr "Inglêye:"
 
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, kcfg_Angle)
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, angleSpin)
 #: flipswitch/flipswitch_config.ui:71
 msgid " °"
 msgstr " °"
@@ -630,17 +644,17 @@ msgid "Out"
 msgstr "Rexhant"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: glide/glide_config.ui:93
+#: glide/glide_config.ui:87
 msgid "Glide Angle:"
 msgstr "Inglêye do ridaedje :"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: glide/glide_config.ui:118
+#: glide/glide_config.ui:112
 msgid "-90"
 msgstr "-90"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: glide/glide_config.ui:147
+#: glide/glide_config.ui:141
 msgid "90"
 msgstr "90"
 
@@ -652,188 +666,77 @@ msgstr "(Dis)mete l' efet Årvier"
 msgid "Toggle Invert Effect on Window"
 msgstr "(Dis)mete l' efet Årvier sol finiesse"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_FadeToBlack)
+#. i18n: ectx: property (text), widget (QCheckBox, fadetoblackBox)
 #: login/login_config.ui:17
 msgid "Fade to black (fullscreen splash screens only)"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: lookingglass/lookingglass_config.ui:20
+#: lookingglass/lookingglass_config.ui:19
 msgid "&Radius:"
 msgstr "&Reyon:"
 
-#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_AnimationDuration)
-#: magiclamp/magiclamp_config.ui:39
-#, fuzzy
-#| msgid " millisecond"
-#| msgid_plural " milliseconds"
-msgid "milliseconds"
-msgstr " milisegonde"
-
 #. i18n: ectx: property (title), widget (QGroupBox, groupSize)
-#: magnifier/magnifier_config.ui:17
+#: magnifier/magnifier_config.ui:16
 msgid "Size"
 msgstr "Grandeu"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: magnifier/magnifier_config.ui:23 mousemark/mousemark_config.ui:23
+#: magnifier/magnifier_config.ui:22 mousemark/mousemark_config.ui:14
 msgid "&Width:"
 msgstr "&Lårdjeur:"
 
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, kcfg_Width)
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, kcfg_Height)
-#: magnifier/magnifier_config.ui:42 magnifier/magnifier_config.ui:74
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, spinWidth)
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, spinHeight)
+#: magnifier/magnifier_config.ui:41 magnifier/magnifier_config.ui:73
 msgid " px"
 msgstr " px"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: magnifier/magnifier_config.ui:55
+#: magnifier/magnifier_config.ui:54
 msgid "&Height:"
 msgstr "aHôteur:"
-
-#: mouseclick/mouseclick.cpp:44 mouseclick/mouseclick_config.cpp:57
-#, fuzzy
-#| msgid "Toggle Invert Effect"
-msgid "Toggle Effect"
-msgstr "(Dis)mete l' efet Årvier"
-
-#: mouseclick/mouseclick.cpp:53
-#, fuzzy
-#| msgid "Middle button:"
-msgid "Middle"
-msgstr "Boton do mitan:"
-
-#. i18n: ectx: attribute (title), widget (QWidget, basic_tab)
-#: mouseclick/mouseclick_config.ui:21
-msgid "Basic Settings"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, button1_label)
-#: mouseclick/mouseclick_config.ui:37
-#, fuzzy
-#| msgid "Left button:"
-msgid "Left Mouse Button Color:"
-msgstr "Boton d' hintche:"
-
-#. i18n: ectx: property (text), widget (QLabel, button2_label)
-#: mouseclick/mouseclick_config.ui:50
-#, fuzzy
-#| msgid "Middle button:"
-msgid "Middle Mouse Button Color:"
-msgstr "Boton do mitan:"
-
-#. i18n: ectx: property (text), widget (QLabel, button3_label)
-#: mouseclick/mouseclick_config.ui:70
-#, fuzzy
-#| msgid "Right button:"
-msgid "Right Mouse Button Color:"
-msgstr "Boton d' droete:"
-
-#. i18n: ectx: attribute (title), widget (QWidget, advanced_tab)
-#: mouseclick/mouseclick_config.ui:91
-#, fuzzy
-#| msgid "Advanced"
-msgid "Advanced Settings"
-msgstr "Po les spepieus"
-
-#. i18n: ectx: property (title), widget (QGroupBox, rings)
-#: mouseclick/mouseclick_config.ui:97
-msgid "Rings"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, ring_line_width_label)
-#: mouseclick/mouseclick_config.ui:103
-#, fuzzy
-#| msgid "&Width:"
-msgid "Line Width:"
-msgstr "&Lårdjeur:"
-
-#. i18n: ectx: property (suffix), widget (KDoubleNumInput, kcfg_LineWidth)
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, kcfg_RingSize)
-#: mouseclick/mouseclick_config.ui:119 mouseclick/mouseclick_config.ui:171
-#: mousemark/mousemark_config.cpp:51
-msgid " pixel"
-msgid_plural " pixels"
-msgstr[0] " picsel"
-msgstr[1] " picsels"
-
-#. i18n: ectx: property (text), widget (QLabel, ring_duration_label)
-#: mouseclick/mouseclick_config.ui:145
-#, fuzzy
-#| msgid "Fading duration:"
-msgid "Ring Duration:"
-msgstr "Durêye do fondou:"
-
-#. i18n: ectx: property (text), widget (QLabel, ring_radius_label)
-#: mouseclick/mouseclick_config.ui:155
-#, fuzzy
-#| msgid "&Radius:"
-msgid "Ring Radius:"
-msgstr "&Reyon:"
-
-#. i18n: ectx: property (text), widget (QLabel, ring_count_label)
-#: mouseclick/mouseclick_config.ui:184
-msgid "Ring Count:"
-msgstr ""
-
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#. i18n: ectx: property (title), widget (QGroupBox, font)
-#: mouseclick/mouseclick_config.ui:210 showfps/showfps_config.ui:17
-msgid "Text"
-msgstr "Tecse"
-
-#. i18n: ectx: property (text), widget (QLabel, font_label)
-#: mouseclick/mouseclick_config.ui:216
-msgid "Font:"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, showtext_label)
-#: mouseclick/mouseclick_config.ui:233
-#, fuzzy
-#| msgid "Show desktop"
-msgid "Show Text:"
-msgstr "Mostrer scribanne"
 
 #: mousemark/mousemark.cpp:49
 msgid "Clear All Mouse Marks"
 msgstr "Neteye totes les markes di sori"
 
-#: mousemark/mousemark.cpp:53 mousemark/mousemark_config.cpp:68
+#: mousemark/mousemark.cpp:53 mousemark/mousemark_config.cpp:66
 msgid "Clear Last Mouse Mark"
 msgstr "Netyî l' dierinne marke del sori"
 
-#: mousemark/mousemark_config.cpp:63
+#: mousemark/mousemark_config.cpp:61
 msgid "Clear Mouse Marks"
 msgstr "Netyî les markes del sori"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: mousemark/mousemark_config.ui:55
+#: mousemark/mousemark_config.ui:46
 msgid "&Color:"
 msgstr "&Coleur:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: mousemark/mousemark_config.ui:84
+#: mousemark/mousemark_config.ui:75
 msgid "Draw with the mouse by holding Shift+Meta keys and moving the mouse."
 msgstr ""
 "Dessinez avou l' sori e wårdant tchôkeyes les tapes Maj+Meta eyet bodjî l' "
 "sori."
 
 #: presentwindows/presentwindows.cpp:81
-#: presentwindows/presentwindows_config.cpp:64
+#: presentwindows/presentwindows_config.cpp:62
 msgid "Toggle Present Windows (Current desktop)"
 msgstr "(Dis)mete les fniesses ki sont la (Sicribannes do moumint)"
 
 #: presentwindows/presentwindows.cpp:87
-#: presentwindows/presentwindows_config.cpp:59
+#: presentwindows/presentwindows_config.cpp:57
 msgid "Toggle Present Windows (All desktops)"
 msgstr "(Dis)mete les fniesse ki sont la (Tos les scribannes)"
 
 #: presentwindows/presentwindows.cpp:93
-#: presentwindows/presentwindows_config.cpp:69
+#: presentwindows/presentwindows_config.cpp:67
 msgid "Toggle Present Windows (Window class)"
 msgstr "(Dis)mete les fniesses ki sont la (Classe di fniesse)"
 
-#: presentwindows/presentwindows.cpp:1624
+#: presentwindows/presentwindows.cpp:1637
 #, kde-format
 msgid ""
 "Filter:\n"
@@ -847,7 +750,7 @@ msgstr ""
 msgid "Natural Layout Settings"
 msgstr "Tchuzes d' adjinçmint naturel"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_FillGaps)
+#. i18n: ectx: property (text), widget (QCheckBox, fillGapsBox)
 #: presentwindows/presentwindows_config.ui:42
 msgid "Fill &gaps"
 msgstr "Rimpli les &trôs"
@@ -874,12 +777,12 @@ msgstr "Finiesses"
 msgid "Left button:"
 msgstr "Boton d' hintche:"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonDesktop)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonDesktop)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonDesktop)
+#. i18n: ectx: property (text), item, widget (KComboBox, leftButtonWindowCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, middleButtonWindowCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, rightButtonWindowCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, leftButtonDesktopCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, middleButtonDesktopCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, rightButtonDesktopCombo)
 #: presentwindows/presentwindows_config.ui:136
 #: presentwindows/presentwindows_config.ui:185
 #: presentwindows/presentwindows_config.ui:234
@@ -889,12 +792,12 @@ msgstr "Boton d' hintche:"
 msgid "No action"
 msgstr "Nou faitindje"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonDesktop)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonDesktop)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonDesktop)
+#. i18n: ectx: property (text), item, widget (KComboBox, leftButtonWindowCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, middleButtonWindowCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, rightButtonWindowCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, leftButtonDesktopCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, middleButtonDesktopCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, rightButtonDesktopCombo)
 #: presentwindows/presentwindows_config.ui:141
 #: presentwindows/presentwindows_config.ui:190
 #: presentwindows/presentwindows_config.ui:239
@@ -904,12 +807,12 @@ msgstr "Nou faitindje"
 msgid "Activate window"
 msgstr "Mete en alaedje finiesse"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonDesktop)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonDesktop)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonDesktop)
+#. i18n: ectx: property (text), item, widget (KComboBox, leftButtonWindowCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, middleButtonWindowCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, rightButtonWindowCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, leftButtonDesktopCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, middleButtonDesktopCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, rightButtonDesktopCombo)
 #: presentwindows/presentwindows_config.ui:146
 #: presentwindows/presentwindows_config.ui:195
 #: presentwindows/presentwindows_config.ui:244
@@ -919,36 +822,36 @@ msgstr "Mete en alaedje finiesse"
 msgid "End effect"
 msgstr "Fini l' efet"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonWindow)
+#. i18n: ectx: property (text), item, widget (KComboBox, leftButtonWindowCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, middleButtonWindowCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, rightButtonWindowCombo)
 #: presentwindows/presentwindows_config.ui:151
 #: presentwindows/presentwindows_config.ui:200
 #: presentwindows/presentwindows_config.ui:249
 msgid "Bring window to current desktop"
 msgstr "Apoirter li fniesse sol sicribanne do moumint"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonWindow)
+#. i18n: ectx: property (text), item, widget (KComboBox, leftButtonWindowCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, middleButtonWindowCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, rightButtonWindowCombo)
 #: presentwindows/presentwindows_config.ui:156
 #: presentwindows/presentwindows_config.ui:205
 #: presentwindows/presentwindows_config.ui:254
 msgid "Send window to all desktops"
 msgstr "Evoyî li fniesse so tos les scribannes"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonWindow)
+#. i18n: ectx: property (text), item, widget (KComboBox, leftButtonWindowCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, middleButtonWindowCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, rightButtonWindowCombo)
 #: presentwindows/presentwindows_config.ui:161
 #: presentwindows/presentwindows_config.ui:210
 #: presentwindows/presentwindows_config.ui:259
 msgid "(Un-)Minimize window"
 msgstr "Finiesse å pus ptit (ou nén)"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonWindow)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonWindow)
+#. i18n: ectx: property (text), item, widget (KComboBox, leftButtonWindowCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, middleButtonWindowCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, rightButtonWindowCombo)
 #: presentwindows/presentwindows_config.ui:166
 #: presentwindows/presentwindows_config.ui:215
 #: presentwindows/presentwindows_config.ui:264
@@ -975,9 +878,9 @@ msgctxt "@title:group actions when clicking on desktop"
 msgid "Desktop"
 msgstr "Sicribanne"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftButtonDesktop)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MiddleButtonDesktop)
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_RightButtonDesktop)
+#. i18n: ectx: property (text), item, widget (KComboBox, leftButtonDesktopCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, middleButtonDesktopCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, rightButtonDesktopCombo)
 #: presentwindows/presentwindows_config.ui:310
 #: presentwindows/presentwindows_config.ui:344
 #: presentwindows/presentwindows_config.ui:378
@@ -989,132 +892,127 @@ msgstr "Mostrer scribanne"
 msgid "Layout mode:"
 msgstr "Môde d' adjinçmint:"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_DrawWindowIcons)
+#. i18n: ectx: property (text), widget (QCheckBox, displayIconBox)
 #: presentwindows/presentwindows_config.ui:415
 msgid "Display window &icons"
 msgstr "Håyner les &imådjetes des fniesses"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_IgnoreMinimized)
+#. i18n: ectx: property (text), widget (QCheckBox, ignoreMinimizedBox)
 #: presentwindows/presentwindows_config.ui:422
 msgid "Ignore &minimized windows"
 msgstr "Passer houte des fniesses metowes å pus &ptit"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowPanel)
+#. i18n: ectx: property (text), widget (QCheckBox, showPanelBox)
 #: presentwindows/presentwindows_config.ui:429
 msgid "Show &panels"
 msgstr "Moster &scriftôrs"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LayoutMode)
+#. i18n: ectx: property (text), item, widget (KComboBox, layoutCombo)
 #: presentwindows/presentwindows_config.ui:443
 msgid "Natural"
 msgstr "Naturel"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LayoutMode)
+#. i18n: ectx: property (text), item, widget (KComboBox, layoutCombo)
 #: presentwindows/presentwindows_config.ui:448
 msgid "Regular Grid"
 msgstr "Grile normåle"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LayoutMode)
+#. i18n: ectx: property (text), item, widget (KComboBox, layoutCombo)
 #: presentwindows/presentwindows_config.ui:453
 msgid "Flexible Grid"
 msgstr "Grile ployante"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AllowClosingWindows)
+#. i18n: ectx: property (text), widget (QCheckBox, allowClosing)
 #: presentwindows/presentwindows_config.ui:461
 msgid "Provide buttons to close the windows"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_TextureScale)
+#. i18n: ectx: property (text), widget (QCheckBox, scaleBox)
 #: resize/resize_config.ui:17
 msgid "Scale window"
 msgstr "Mete finiesse al schåle"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_Outline)
+#. i18n: ectx: property (text), widget (QCheckBox, outlineBox)
 #: resize/resize_config.ui:24
 msgid "Show outline"
 msgstr ""
 
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: showfps/showfps_config.ui:16
+msgid "Text"
+msgstr "Tecse"
+
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: showfps/showfps_config.ui:23
+#: showfps/showfps_config.ui:22
 msgid "Text position:"
 msgstr "Plaece do tecse:"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TextPosition)
-#: showfps/showfps_config.ui:43
+#. i18n: ectx: property (text), item, widget (KComboBox, textPosition)
+#: showfps/showfps_config.ui:42
 msgid "Inside Graph"
 msgstr "E grafike"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TextPosition)
-#: showfps/showfps_config.ui:48
+#. i18n: ectx: property (text), item, widget (KComboBox, textPosition)
+#: showfps/showfps_config.ui:47
 msgid "Nowhere"
 msgstr "Nole pårt"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TextPosition)
-#: showfps/showfps_config.ui:53
+#. i18n: ectx: property (text), item, widget (KComboBox, textPosition)
+#: showfps/showfps_config.ui:52
 msgid "Top Left"
 msgstr "Copete di hintche"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TextPosition)
-#: showfps/showfps_config.ui:58
+#. i18n: ectx: property (text), item, widget (KComboBox, textPosition)
+#: showfps/showfps_config.ui:57
 msgid "Top Right"
 msgstr "Copete di droete"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TextPosition)
-#: showfps/showfps_config.ui:63
+#. i18n: ectx: property (text), item, widget (KComboBox, textPosition)
+#: showfps/showfps_config.ui:62
 msgid "Bottom Left"
 msgstr "Valêye di hintche"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_TextPosition)
-#: showfps/showfps_config.ui:68
+#. i18n: ectx: property (text), item, widget (KComboBox, textPosition)
+#: showfps/showfps_config.ui:67
 msgid "Bottom Right"
 msgstr "Valêye di droete"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: showfps/showfps_config.ui:76
+#: showfps/showfps_config.ui:75
 msgid "Text font:"
 msgstr "Fonte do tecse:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: showfps/showfps_config.ui:96
+#: showfps/showfps_config.ui:95
 msgid "Text color:"
 msgstr "Coleur do tecse:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: showfps/showfps_config.ui:119
+#: showfps/showfps_config.ui:118
 msgid "Text alpha:"
 msgstr "Alfa do tecse:"
 
-#: thumbnailaside/thumbnailaside.cpp:39
-#: thumbnailaside/thumbnailaside_config.cpp:67
+#: thumbnailaside/thumbnailaside.cpp:38
+#: thumbnailaside/thumbnailaside_config.cpp:66
 msgid "Toggle Thumbnail for Current Window"
 msgstr "(Dis)mete li prévoeyaedje pol purna do moumint"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: thumbnailaside/thumbnailaside_config.ui:23
+#: thumbnailaside/thumbnailaside_config.ui:22
 msgid "Maximum &width:"
 msgstr "&Lårdjeur macsimom:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: thumbnailaside/thumbnailaside_config.ui:36
+#: thumbnailaside/thumbnailaside_config.ui:51
 msgid "&Spacing:"
 msgstr "E&spåçmint:"
 
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, kcfg_Spacing)
-#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_MaxWidth)
-#: thumbnailaside/thumbnailaside_config.ui:55
-#: thumbnailaside/thumbnailaside_config.ui:106
-#, fuzzy
-#| msgid " pixel"
-#| msgid_plural " pixels"
-msgid " pixels"
-msgstr " picsel"
-
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: thumbnailaside/thumbnailaside_config.ui:68
+#: thumbnailaside/thumbnailaside_config.ui:80
 msgid "&Opacity:"
 msgstr "&Zero-voeyaedje:"
 
-#: trackmouse/trackmouse.cpp:65 trackmouse/trackmouse_config.cpp:63
+#: trackmouse/trackmouse.cpp:63 trackmouse/trackmouse_config.cpp:64
 msgid "Track mouse"
 msgstr "Shut l' sori"
 
@@ -1128,24 +1026,24 @@ msgstr ""
 msgid "Modifiers"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_Alt)
+#. i18n: ectx: property (text), widget (QCheckBox, alt)
 #: trackmouse/trackmouse_config.ui:43
 msgid "Alt"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_Control)
+#. i18n: ectx: property (text), widget (QCheckBox, control)
 #: trackmouse/trackmouse_config.ui:50
 #, fuzzy
 #| msgid "Center"
 msgid "Ctrl"
 msgstr "Mitan"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_Shift)
+#. i18n: ectx: property (text), widget (QCheckBox, shift)
 #: trackmouse/trackmouse_config.ui:57
 msgid "Shift"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_Meta)
+#. i18n: ectx: property (text), widget (QCheckBox, meta)
 #: trackmouse/trackmouse_config.ui:64
 msgid "Meta"
 msgstr ""
@@ -1195,7 +1093,7 @@ msgstr "Aspitants purneas di djivêye di dressêye disrôlante :"
 msgid "Menus:"
 msgstr "Dressêyes:"
 
-#. i18n: ectx: property (title), widget (QGroupBox, kcfg_IndividualMenuConfig)
+#. i18n: ectx: property (title), widget (QGroupBox, individualmenuconfig)
 #: translucency/translucency_config.ui:305
 msgid "Set menu translucency independently"
 msgstr "Defini a pårt li transparince del dressêye"
@@ -1215,22 +1113,22 @@ msgstr "Aspitantès dressêyes:"
 msgid "Torn-off menus:"
 msgstr "Dressêyes di distindaedje:"
 
-#: windowgeometry/windowgeometry.cpp:63
+#: windowgeometry/windowgeometry.cpp:60
 msgid "Toggle window geometry display (effect only)"
 msgstr ""
 
-#: windowgeometry/windowgeometry_config.cpp:49
+#: windowgeometry/windowgeometry_config.cpp:46
 msgid "Toggle KWin composited geometry display"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_Move)
+#. i18n: ectx: property (text), widget (QCheckBox, handleMove)
 #: windowgeometry/windowgeometry_config.ui:17
 #, fuzzy
 #| msgid "Display window &icons"
 msgid "Display for moving windows"
 msgstr "Håyner les &imådjetes des  purneas"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_Resize)
+#. i18n: ectx: property (text), widget (QCheckBox, handleResize)
 #: windowgeometry/windowgeometry_config.ui:24
 #, fuzzy
 #| msgid "Display window &icons"
@@ -1238,81 +1136,81 @@ msgid "Display for resizing windows"
 msgstr "Håyner les &imådjetes des  purneas"
 
 #. i18n: ectx: property (title), widget (QGroupBox, advancedGroup)
-#: wobblywindows/wobblywindows_config.ui:20
+#: wobblywindows/wobblywindows_config.ui:16
 msgid "Advanced"
 msgstr "Po les spepieus"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: wobblywindows/wobblywindows_config.ui:26
+#: wobblywindows/wobblywindows_config.ui:22
 msgid "&Stiffness:"
 msgstr "&Roedeuristé:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: wobblywindows/wobblywindows_config.ui:68
+#: wobblywindows/wobblywindows_config.ui:64
 msgid "Dra&g:"
 msgstr "Bod&jî:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: wobblywindows/wobblywindows_config.ui:81
+#: wobblywindows/wobblywindows_config.ui:77
 msgid "&Move factor:"
 msgstr "Facteur di &bodjaedje:"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_MoveWobble)
-#: wobblywindows/wobblywindows_config.ui:155
+#. i18n: ectx: property (text), widget (QCheckBox, moveBox)
+#: wobblywindows/wobblywindows_config.ui:151
 msgid "Wo&bble when moving"
 msgstr "Dis&foirmer cwand on l' bodje"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ResizeWobble)
-#: wobblywindows/wobblywindows_config.ui:162
+#. i18n: ectx: property (text), widget (QCheckBox, resizeBox)
+#: wobblywindows/wobblywindows_config.ui:158
 msgid "Wobble when &resizing"
 msgstr "Disfoirmer cwand on &candje li grandeu"
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AdvancedMode)
-#: wobblywindows/wobblywindows_config.ui:182
+#. i18n: ectx: property (text), widget (QCheckBox, advancedBox)
+#: wobblywindows/wobblywindows_config.ui:178
 msgid "Enable &advanced mode"
 msgstr "Mete en alaedje li &spepieus môde"
 
 #. i18n: ectx: property (title), widget (QGroupBox, basicGroup)
-#: wobblywindows/wobblywindows_config.ui:192
+#: wobblywindows/wobblywindows_config.ui:188
 msgid "&Wobbliness"
 msgstr "&Disfoirmaedje"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: wobblywindows/wobblywindows_config.ui:201
+#: wobblywindows/wobblywindows_config.ui:197
 msgid "Less"
 msgstr "Moens"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: wobblywindows/wobblywindows_config.ui:224
+#: wobblywindows/wobblywindows_config.ui:220
 msgid "More"
 msgstr "Pus"
 
-#: zoom/zoom.cpp:93 zoom/zoom_config.cpp:76
+#: zoom/zoom.cpp:90 zoom/zoom_config.cpp:79
 msgid "Move Left"
 msgstr "Bodjî viè l' hintche"
 
-#: zoom/zoom.cpp:98 zoom/zoom_config.cpp:82
+#: zoom/zoom.cpp:95 zoom/zoom_config.cpp:85
 msgid "Move Right"
 msgstr "Bodjî viè l' droete"
 
-#: zoom/zoom.cpp:103 zoom/zoom_config.cpp:88
+#: zoom/zoom.cpp:100 zoom/zoom_config.cpp:91
 msgid "Move Up"
 msgstr "Monter"
 
-#: zoom/zoom.cpp:108 zoom/zoom_config.cpp:94
+#: zoom/zoom.cpp:105 zoom/zoom_config.cpp:97
 msgid "Move Down"
 msgstr "Dischinde"
 
-#: zoom/zoom.cpp:113 zoom/zoom_config.cpp:100
+#: zoom/zoom.cpp:110 zoom/zoom_config.cpp:103
 msgid "Move Mouse to Focus"
 msgstr ""
 
-#: zoom/zoom.cpp:118 zoom/zoom_config.cpp:106
+#: zoom/zoom.cpp:115 zoom/zoom_config.cpp:109
 msgid "Move Mouse to Center"
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, label)
-#. i18n: ectx: property (whatsThis), widget (QDoubleSpinBox, kcfg_ZoomFactor)
+#. i18n: ectx: property (whatsThis), widget (QDoubleSpinBox, zoomStepsSpinBox)
 #: zoom/zoom_config.ui:25 zoom/zoom_config.ui:41
 msgid "On zoom-in and zoom-out change the zoom by the defined zoom-factor."
 msgstr ""
@@ -1322,24 +1220,24 @@ msgstr ""
 msgid "Zoom Factor:"
 msgstr "Facteur di zoumaedje :"
 
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_EnableFocusTracking)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, focusTrackingCheckBox)
 #: zoom/zoom_config.ui:66
 msgid ""
 "Enable tracking of the focused location. This needs QAccessible to be "
 "enabled per application (\"export QT_ACCESSIBILITY=1\")."
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnableFocusTracking)
+#. i18n: ectx: property (text), widget (QCheckBox, focusTrackingCheckBox)
 #: zoom/zoom_config.ui:69
 msgid "Enable Focus Tracking"
 msgstr ""
 
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_EnableFollowFocus)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, followFocusCheckBox)
 #: zoom/zoom_config.ui:79
 msgid "When the focus changes, move the zoom area to the focused location."
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnableFollowFocus)
+#. i18n: ectx: property (text), widget (QCheckBox, followFocusCheckBox)
 #: zoom/zoom_config.ui:82
 msgid "Follow Focus"
 msgstr ""
@@ -1349,47 +1247,47 @@ msgstr ""
 msgid "Mouse Pointer:"
 msgstr "Pwinteu del sori :"
 
-#. i18n: ectx: property (whatsThis), widget (QComboBox, kcfg_MousePointer)
+#. i18n: ectx: property (whatsThis), widget (QComboBox, mousePointerComboBox)
 #: zoom/zoom_config.ui:102
 msgid "Visibility of the mouse-pointer."
 msgstr ""
 
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MousePointer)
+#. i18n: ectx: property (text), item, widget (QComboBox, mousePointerComboBox)
 #: zoom/zoom_config.ui:106
 msgid "Scale"
 msgstr "Schåle"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MousePointer)
+#. i18n: ectx: property (text), item, widget (QComboBox, mousePointerComboBox)
 #: zoom/zoom_config.ui:111
 msgid "Keep"
 msgstr "Wårder"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MousePointer)
+#. i18n: ectx: property (text), item, widget (QComboBox, mousePointerComboBox)
 #: zoom/zoom_config.ui:116
 msgid "Hide"
 msgstr "Catchî"
 
-#. i18n: ectx: property (whatsThis), widget (QComboBox, kcfg_MouseTracking)
+#. i18n: ectx: property (whatsThis), widget (QComboBox, mouseTrackingComboBox)
 #: zoom/zoom_config.ui:124
 msgid "Track moving of the mouse."
 msgstr ""
 
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MouseTracking)
+#. i18n: ectx: property (text), item, widget (QComboBox, mouseTrackingComboBox)
 #: zoom/zoom_config.ui:128
 msgid "Proportional"
 msgstr "Proporcionel"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MouseTracking)
+#. i18n: ectx: property (text), item, widget (QComboBox, mouseTrackingComboBox)
 #: zoom/zoom_config.ui:133
 msgid "Centered"
 msgstr "Å mitan"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MouseTracking)
+#. i18n: ectx: property (text), item, widget (QComboBox, mouseTrackingComboBox)
 #: zoom/zoom_config.ui:138
 msgid "Push"
 msgstr ""
 
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MouseTracking)
+#. i18n: ectx: property (text), item, widget (QComboBox, mouseTrackingComboBox)
 #: zoom/zoom_config.ui:143
 msgid "Disabled"
 msgstr "Essocté"
@@ -1399,10 +1297,67 @@ msgstr "Essocté"
 msgid "Mouse Tracking:"
 msgstr "Shuvaedje del sori :"
 
-#~ msgid " row"
-#~ msgid_plural " rows"
-#~ msgstr[0] " roye"
-#~ msgstr[1] " royes"
+#, fuzzy
+#~| msgid " millisecond"
+#~| msgid_plural " milliseconds"
+#~ msgid "milliseconds"
+#~ msgstr " milisegonde"
+
+#, fuzzy
+#~| msgid "Toggle Invert Effect"
+#~ msgid "Toggle Effect"
+#~ msgstr "(Dis)mete l' efet Årvier"
+
+#, fuzzy
+#~| msgid "Middle button:"
+#~ msgid "Middle"
+#~ msgstr "Boton do mitan:"
+
+#, fuzzy
+#~| msgid "Left button:"
+#~ msgid "Left Mouse Button Color:"
+#~ msgstr "Boton d' hintche:"
+
+#, fuzzy
+#~| msgid "Middle button:"
+#~ msgid "Middle Mouse Button Color:"
+#~ msgstr "Boton do mitan:"
+
+#, fuzzy
+#~| msgid "Right button:"
+#~ msgid "Right Mouse Button Color:"
+#~ msgstr "Boton d' droete:"
+
+#, fuzzy
+#~| msgid "Advanced"
+#~ msgid "Advanced Settings"
+#~ msgstr "Po les spepieus"
+
+#, fuzzy
+#~| msgid "&Width:"
+#~ msgid "Line Width:"
+#~ msgstr "&Lårdjeur:"
+
+#, fuzzy
+#~| msgid "Fading duration:"
+#~ msgid "Ring Duration:"
+#~ msgstr "Durêye do fondou:"
+
+#, fuzzy
+#~| msgid "&Radius:"
+#~ msgid "Ring Radius:"
+#~ msgstr "&Reyon:"
+
+#, fuzzy
+#~| msgid "Show desktop"
+#~ msgid "Show Text:"
+#~ msgstr "Mostrer scribanne"
+
+#, fuzzy
+#~| msgid " pixel"
+#~| msgid_plural " pixels"
+#~ msgid " pixels"
+#~ msgstr " picsel"
 
 #~ msgctxt "Duration of fading"
 #~ msgid "Default"
