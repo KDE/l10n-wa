@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-12-19 02:23+0100\n"
+"POT-Creation-Date: 2012-12-20 02:23+0100\n"
 "PO-Revision-Date: 2012-11-02 23:12+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -351,15 +351,29 @@ msgstr ""
 msgid "Details"
 msgstr "Detays"
 
-#: apperd/Updater.cpp:180
+#: apperd/Updater.cpp:161
 msgid "Updates are being automatically installed."
 msgstr "Les metaedjes a djoû sont-st astalés otomaticmint."
 
-#: apperd/Updater.cpp:203
+#: apperd/Updater.cpp:171
 msgid "Security updates are being automatically installed."
 msgstr "Les metaedjes a djoû di såvrité sont-st astalés otomaticmint."
 
-#: apperd/Updater.cpp:228
+#: apperd/Updater.cpp:181
+#, fuzzy
+#| msgid "Updates are being automatically installed."
+msgid "Updates are being automatically downloaded."
+msgstr "Les metaedjes a djoû sont-st astalés otomaticmint."
+
+#: apperd/Updater.cpp:215
+msgid "System update was successful."
+msgstr "Li metaedje a djoû do sistinme a stî fwait sins rujhe."
+
+#: apperd/Updater.cpp:222
+msgid "The automated software update failed."
+msgstr "Li metaedje a djoû otomatike do programe a fwait berwete."
+
+#: apperd/Updater.cpp:264
 #, fuzzy, kde-format
 #| msgid "Check for new Updates"
 msgid "There is one new update"
@@ -367,19 +381,11 @@ msgid_plural "There are %1 new updates"
 msgstr[0] "Cachî après des noveas metaedjes a djoû"
 msgstr[1] "Cachî après des noveas metaedjes a djoû"
 
-#: apperd/Updater.cpp:237
+#: apperd/Updater.cpp:273
 #, fuzzy
 #| msgid "Review Updates"
 msgid "Review"
 msgstr "Rilever metaedjes a djoû"
-
-#: apperd/Updater.cpp:257
-msgid "System update was successful."
-msgstr "Li metaedje a djoû do sistinme a stî fwait sins rujhe."
-
-#: apperd/Updater.cpp:266
-msgid "The automated software update failed."
-msgstr "Li metaedje a djoû otomatike do programe a fwait berwete."
 
 #: ApperKCM/ApperKCM.cpp:84
 msgid "Application Manager"
@@ -736,23 +742,29 @@ msgid "Never"
 msgstr "Måy"
 
 #: ApperKCM/Settings/Settings.cpp:96
-msgid "Security only"
-msgstr "Såvrité seulmint"
-
-#: ApperKCM/Settings/Settings.cpp:97
-msgid "All updates"
-msgstr "Tos les metaedjes a djoû"
-
-#: ApperKCM/Settings/Settings.cpp:98
 msgctxt "No updates will be automatically installed"
 msgid "None"
 msgstr "Nouk"
 
-#: ApperKCM/Settings/Settings.cpp:297 libapper/PkStrings.cpp:968
+#: ApperKCM/Settings/Settings.cpp:97
+#, fuzzy
+#| msgid "Downloading"
+msgid "Download only"
+msgstr "Dj' aberwete "
+
+#: ApperKCM/Settings/Settings.cpp:98
+msgid "Security only"
+msgstr "Såvrité seulmint"
+
+#: ApperKCM/Settings/Settings.cpp:99
+msgid "All updates"
+msgstr "Tos les metaedjes a djoû"
+
+#: ApperKCM/Settings/Settings.cpp:298 libapper/PkStrings.cpp:968
 msgid "You do not have the necessary privileges to perform this action."
 msgstr "Vos n' avoz nén les droets k' i fåt po fé ç' faitindje la."
 
-#: ApperKCM/Settings/Settings.cpp:298
+#: ApperKCM/Settings/Settings.cpp:299
 msgid "Failed to set origin data"
 msgstr "Li definixhaedje di l' oridjinne des dnêyes a fwait berwete"
 
@@ -777,7 +789,9 @@ msgstr "cwand dj' so sol batreye"
 
 #. i18n: ectx: property (text), widget (QLabel, autoInsL)
 #: ApperKCM/Settings/Settings.ui:117
-msgid "Automatically install:"
+#, fuzzy
+#| msgid "Automatically install:"
+msgid "Automatically update:"
 msgstr "Astaler otomaticmint :"
 
 #. i18n: ectx: property (text), widget (QCheckBox, appLauncherCB)
@@ -1081,7 +1095,7 @@ msgstr "%1 a stî astalé comifåt !"
 
 #: AppSetup/SetupWizard.cpp:102 libapper/PkTransaction.cpp:138
 #: libapper/PkTransaction.cpp:156 libapper/PkTransaction.cpp:175
-#: libapper/PkTransaction.cpp:193
+#: libapper/PkTransaction.cpp:196
 msgid "Error"
 msgstr "Aroke"
 
@@ -2087,7 +2101,7 @@ msgstr "Li pacaedje n' est nén compatibe avou ç' sistinme cial"
 msgid "No space is left on the disk"
 msgstr "I gn a pupont d' plaece sol plake"
 
-#: libapper/PkStrings.cpp:474 libapper/PkTransaction.cpp:418
+#: libapper/PkStrings.cpp:474 libapper/PkTransaction.cpp:421
 msgid "A media change is required"
 msgstr "I fåt on candjmint d' media"
 
@@ -3164,35 +3178,35 @@ msgid "The current backend does not support removing packages."
 msgstr ""
 "Li programe fondmint do moumint n' sopoite nén l' oistaedje des pacaedjes."
 
-#: libapper/PkTransaction.cpp:189
+#: libapper/PkTransaction.cpp:192
 msgid "Failed to simulate package update"
 msgstr "Li fijhaedje come s' on meteu a djoû li pacaedje a fwait berwete"
 
-#: libapper/PkTransaction.cpp:193
+#: libapper/PkTransaction.cpp:196
 msgid "The current backend does not support updating packages."
 msgstr ""
 "Li programe fondmint do moumint n' sopoite nén l' metaedje a djoû des "
 "pacaedjes."
 
-#: libapper/PkTransaction.cpp:234
+#: libapper/PkTransaction.cpp:237
 msgid "Failed to install package"
 msgstr "L' astalaedje des pacaedjes a fwait berwete"
 
-#: libapper/PkTransaction.cpp:244 PkSession/PkInstallProvideFiles.cpp:101
+#: libapper/PkTransaction.cpp:247 PkSession/PkInstallProvideFiles.cpp:101
 msgid "Failed to install file"
 msgid_plural "Failed to install files"
 msgstr[0] "L' astalaedje do fitchî a fwait berwete"
 msgstr[1] "L' astalaedje des fitchîs a fwait berwete"
 
-#: libapper/PkTransaction.cpp:255
+#: libapper/PkTransaction.cpp:258
 msgid "Failed to remove package"
 msgstr "Li oistaedje des pacaedjes a fwait berwete"
 
-#: libapper/PkTransaction.cpp:265
+#: libapper/PkTransaction.cpp:268
 msgid "Failed to update package"
 msgstr "Li metaedje a djoû des pacaedjes a fwait berwete"
 
-#: libapper/PkTransaction.cpp:331
+#: libapper/PkTransaction.cpp:334
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
 "as it is impossible to verify if the software came from a trusted source.\n"
@@ -3205,11 +3219,11 @@ msgstr ""
 "\n"
 "Voloz vs fé cist astalaedje po do bon ?"
 
-#: libapper/PkTransaction.cpp:334
+#: libapper/PkTransaction.cpp:337
 msgid "Installing unsigned software"
 msgstr "Dj' astale on programe nén siné"
 
-#: libapper/PkTransaction.cpp:379 libapper/PkTransaction.cpp:463
+#: libapper/PkTransaction.cpp:382 libapper/PkTransaction.cpp:466
 msgid "Failed to install signature"
 msgstr "L' astalaedje del sinateure a fwait berwete"
 
