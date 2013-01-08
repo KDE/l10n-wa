@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin_clients\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-11-12 03:00+0100\n"
+"POT-Creation-Date: 2013-01-08 12:37+0100\n"
 "PO-Revision-Date: 2011-01-14 08:45+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -37,20 +37,23 @@ msgid "Title &Alignment"
 msgstr "&Aroymint do tite"
 
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_titleAlignLeft)
+#. i18n: ectx: property (text), item, widget (KComboBox, titleAlignment)
 #: aurorae/themes/plastik/package/contents/ui/config.ui:29
-#: oxygen/oxygenconfiguration.cpp:247
+#: oxygen/config/ui/oxygenconfigurationui.ui:115
 msgid "Left"
 msgstr "A hintche"
 
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_titleAlignCenter)
+#. i18n: ectx: property (text), item, widget (KComboBox, titleAlignment)
 #: aurorae/themes/plastik/package/contents/ui/config.ui:36
-#: oxygen/oxygenconfiguration.cpp:252
+#: oxygen/config/ui/oxygenconfigurationui.ui:120
 msgid "Center"
 msgstr "Å mitan"
 
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_titleAlignRight)
+#. i18n: ectx: property (text), item, widget (KComboBox, titleAlignment)
 #: aurorae/themes/plastik/package/contents/ui/config.ui:43
-#: oxygen/oxygenconfiguration.cpp:255
+#: oxygen/config/ui/oxygenconfigurationui.ui:130
 msgid "Right"
 msgstr "A droete"
 
@@ -102,19 +105,19 @@ msgstr "Nén so tos les scribannes"
 msgid "On all desktops"
 msgstr "So tos les scribannes"
 
-#: b2/b2client.cpp:406 oxygen/oxygenclient.cpp:224
+#: b2/b2client.cpp:406 oxygen/oxygenclient.cpp:226
 msgid "Minimize"
 msgstr "Å pus ptit"
 
-#: b2/b2client.cpp:406 b2/b2client.cpp:901 oxygen/oxygenclient.cpp:227
+#: b2/b2client.cpp:406 b2/b2client.cpp:901 oxygen/oxygenclient.cpp:229
 msgid "Maximize"
 msgstr "Å pus grand"
 
-#: b2/b2client.cpp:407 oxygen/oxygenclient.cpp:230
+#: b2/b2client.cpp:407 oxygen/oxygenclient.cpp:232
 msgid "Close"
 msgstr "Clôre"
 
-#: b2/b2client.cpp:407 oxygen/oxygenclient.cpp:221
+#: b2/b2client.cpp:407 oxygen/oxygenclient.cpp:223
 msgid "Help"
 msgstr "Aidance"
 
@@ -206,7 +209,7 @@ msgstr ""
 "Ene accion pout esse associeye å dobe clitchaedje sol boton di menu. Leyîz "
 "l' a nouk si vos avoz des dotances."
 
-#: laptop/laptopclient.cpp:370
+#: laptop/laptopclient.cpp:376
 msgid "Laptop"
 msgstr "Poirtåve"
 
@@ -246,42 +249,29 @@ msgstr ""
 msgid "Configure window titlebar animations when windows are grouped/ungrouped"
 msgstr ""
 
-#: oxygen/config/oxygenconfigurationui.cpp:144
+#: oxygen/config/oxygenconfigwidget.cpp:160
 #, fuzzy
 #| msgid "Decoration Options"
 msgid "Hide Advanced Configuration Options"
 msgstr "Tchuzes do gåyotaedje"
 
-#: oxygen/config/oxygenconfigurationui.cpp:144
+#: oxygen/config/oxygenconfigwidget.cpp:160
 #, fuzzy
 #| msgid "Decoration Options"
 msgid "Show Advanced Configuration Options"
 msgstr "Tchuzes do gåyotaedje"
 
-#: oxygen/config/oxygenconfigurationui.cpp:162
+#: oxygen/config/oxygenconfigwidget.cpp:177
 #, fuzzy
 #| msgid "Animate buttons"
 msgid "Animations"
 msgstr "Botons animés"
 
-#: oxygen/config/oxygenexceptiondialog.cpp:92
-#: oxygen/config/oxygenexceptiondialog.cpp:118
-#: oxygen/config/oxygenexceptiondialog.cpp:146
-msgctxt "outline window title"
-msgid "Enabled"
-msgstr "Èn alaedje"
-
-#: oxygen/config/oxygenexceptiondialog.cpp:92
-#: oxygen/config/oxygenexceptiondialog.cpp:118
-msgctxt "outline window title"
-msgid "Disabled"
-msgstr "Essocté"
-
-#: oxygen/config/oxygenexceptionlistwidget.cpp:201
+#: oxygen/config/oxygenexceptionlistwidget.cpp:190
 msgid "Remove selected exception?"
 msgstr "Disfacer l' foû rîle tchoezi ?"
 
-#: oxygen/config/oxygenexceptionlistwidget.cpp:340
+#: oxygen/config/oxygenexceptionlistwidget.cpp:331
 msgid "Regular Expression syntax is incorrect"
 msgstr "Li sintake di l' erîlêye ratourneure est mwaijhe"
 
@@ -293,7 +283,19 @@ msgstr "Sôre di foû rîle"
 msgid "Regular Expression"
 msgstr "Erîlêye ratourneure"
 
-#: oxygen/config/oxygenexceptionmodel.cpp:67
+#. i18n: ectx: property (text), item, widget (KComboBox, exceptionType)
+#: oxygen/config/oxygenexceptionmodel.cpp:61
+#: oxygen/config/ui/oxygenexceptiondialog.ui:69
+msgid "Window Title"
+msgstr "Tite del finiesse"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, exceptionType)
+#: oxygen/config/oxygenexceptionmodel.cpp:65
+#: oxygen/config/ui/oxygenexceptiondialog.ui:64
+msgid "Window Class Name"
+msgstr "No del classe di fniesse "
+
+#: oxygen/config/oxygenexceptionmodel.cpp:81
 msgid "Enable/disable this exception"
 msgstr "Mete èn alaedje/essocter c' foû rîle la"
 
@@ -305,100 +307,228 @@ msgstr "Djenerå"
 #. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: ectx: property (text), widget (QCheckBox, frameBorderCheckBox)
 #: oxygen/config/ui/oxygenconfigurationui.ui:39
-#: oxygen/config/ui/oxygenexceptiondialog.ui:75
+#: oxygen/config/ui/oxygenexceptiondialog.ui:86
 msgid "Border size:"
 msgstr "Grandeu del boirdeure :"
 
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorder)
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorderComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:53
+#: oxygen/config/ui/oxygenexceptiondialog.ui:142
+#, fuzzy
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "No Border"
+msgid "No Border"
+msgstr "Pont d' boirdeure"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorder)
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorderComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:58
+#: oxygen/config/ui/oxygenexceptiondialog.ui:147
+#, fuzzy
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "No Side Border"
+msgid "No Side Borders"
+msgstr "Pont d' boirdeure des costés"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorder)
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorderComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:63
+#: oxygen/config/ui/oxygenexceptiondialog.ui:152
+#, fuzzy
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Tiny"
+msgid "Tiny"
+msgstr "Tote pitite"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorder)
+#. i18n: ectx: property (text), item, widget (KComboBox, buttonSize)
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorderComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:68
+#: oxygen/config/ui/oxygenconfigurationui.ui:170
+#: oxygen/config/ui/oxygenexceptiondialog.ui:157
+#, fuzzy
+#| msgctxt "@item:inlistbox Button size:"
+#| msgid "Normal"
+msgid "Normal"
+msgstr "Normå"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorder)
+#. i18n: ectx: property (text), item, widget (KComboBox, buttonSize)
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorderComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:73
+#: oxygen/config/ui/oxygenconfigurationui.ui:175
+#: oxygen/config/ui/oxygenexceptiondialog.ui:162
+msgid "Large"
+msgstr "Grande"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorder)
+#. i18n: ectx: property (text), item, widget (KComboBox, buttonSize)
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorderComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:78
+#: oxygen/config/ui/oxygenconfigurationui.ui:180
+#: oxygen/config/ui/oxygenexceptiondialog.ui:167
+#, fuzzy
+#| msgctxt "@item:inlistbox Button size:"
+#| msgid "Very Large"
+msgid "Very Large"
+msgstr "Foirt grand"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorder)
+#. i18n: ectx: property (text), item, widget (KComboBox, buttonSize)
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorderComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:83
+#: oxygen/config/ui/oxygenconfigurationui.ui:185
+#: oxygen/config/ui/oxygenexceptiondialog.ui:172
+#, fuzzy
+#| msgctxt "@item:inlistbox Button size:"
+#| msgid "Huge"
+msgid "Huge"
+msgstr "Foû grand"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorder)
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorderComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:88
+#: oxygen/config/ui/oxygenexceptiondialog.ui:177
+#, fuzzy
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Very Huge"
+msgid "Very Huge"
+msgstr "Vormint foû grande"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorder)
+#. i18n: ectx: property (text), item, widget (KComboBox, frameBorderComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:93
+#: oxygen/config/ui/oxygenexceptiondialog.ui:182
+#, fuzzy
+#| msgctxt "@item:inlistbox Border size:"
+#| msgid "Oversized"
+msgid "Oversized"
+msgstr "Foû mzeure"
+
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: oxygen/config/ui/oxygenconfigurationui.ui:55
+#: oxygen/config/ui/oxygenconfigurationui.ui:101
 msgid "Title alignment:"
 msgstr "Aroymint do tite :"
 
+#. i18n: ectx: property (text), item, widget (KComboBox, titleAlignment)
+#: oxygen/config/ui/oxygenconfigurationui.ui:125
+msgid "Center (Full Width)"
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: oxygen/config/ui/oxygenconfigurationui.ui:84
+#: oxygen/config/ui/oxygenconfigurationui.ui:151
 msgid "Button size:"
 msgstr "Grandeu do boton :"
 
+#. i18n: ectx: property (text), item, widget (KComboBox, buttonSize)
+#: oxygen/config/ui/oxygenconfigurationui.ui:165
+msgid "Small"
+msgstr "Pitite"
+
 #. i18n: ectx: property (text), widget (QCheckBox, animationsEnabled)
-#: oxygen/config/ui/oxygenconfigurationui.ui:100
+#: oxygen/config/ui/oxygenconfigurationui.ui:206
 msgid "Enable animations"
 msgstr "Mete èn alaedje les animåcions"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: oxygen/config/ui/oxygenconfigurationui.ui:121
+#: oxygen/config/ui/oxygenconfigurationui.ui:214
 msgid "Fine Tuning"
 msgstr "Fén apontiaedje"
 
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#. i18n: ectx: property (text), widget (QCheckBox, separatorCheckBox)
-#: oxygen/config/ui/oxygenconfigurationui.ui:130
-#: oxygen/config/ui/oxygenexceptiondialog.ui:96
-msgid "Separator display:"
-msgstr "Håynaedje do separateu :"
-
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: oxygen/config/ui/oxygenconfigurationui.ui:143
-msgid "Background style: "
-msgstr "Stîle do fond : "
-
-#. i18n: ectx: property (text), widget (QCheckBox, titleOutline)
-#: oxygen/config/ui/oxygenconfigurationui.ui:172
-msgid "Outline active window title"
-msgstr "Cotoû do tite del finiesse ovrante"
-
-#. i18n: ectx: property (text), widget (QCheckBox, narrowButtonSpacing)
-#: oxygen/config/ui/oxygenconfigurationui.ui:192
-msgid "Use narrow space between decoration buttons"
-msgstr "Si siervi d' on stroet espåce inte les botons do gåyotaedje"
-
-#. i18n: ectx: property (text), widget (QLabel, sizeGripModeLabel)
-#: oxygen/config/ui/oxygenconfigurationui.ui:202
-msgid "Extra size grip display: "
-msgstr "Pus grande grandeu do håynaedje del pougnêye : "
-
 #. i18n: ectx: property (text), item, widget (KComboBox, separatorMode)
 #. i18n: ectx: property (text), item, widget (KComboBox, separatorComboBox)
-#: oxygen/config/ui/oxygenconfigurationui.ui:216
-#: oxygen/config/ui/oxygenexceptiondialog.ui:140
+#: oxygen/config/ui/oxygenconfigurationui.ui:224
+#: oxygen/config/ui/oxygenexceptiondialog.ui:250
 msgid "Never Draw Separator"
 msgstr "Èn måy dessiner d' separateu"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, separatorMode)
 #. i18n: ectx: property (text), item, widget (KComboBox, separatorComboBox)
-#: oxygen/config/ui/oxygenconfigurationui.ui:221
-#: oxygen/config/ui/oxygenexceptiondialog.ui:145
+#: oxygen/config/ui/oxygenconfigurationui.ui:229
+#: oxygen/config/ui/oxygenexceptiondialog.ui:255
 msgid "Draw Separator When Window is Active"
 msgstr "Dessiner separateu cwand l' finiesse overe"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, separatorMode)
 #. i18n: ectx: property (text), item, widget (KComboBox, separatorComboBox)
-#: oxygen/config/ui/oxygenconfigurationui.ui:226
-#: oxygen/config/ui/oxygenexceptiondialog.ui:150
+#: oxygen/config/ui/oxygenconfigurationui.ui:234
+#: oxygen/config/ui/oxygenexceptiondialog.ui:260
 msgid "Always Draw Separator"
 msgstr "Tofer dessiner l' separateu"
 
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#. i18n: ectx: property (text), widget (QCheckBox, separatorCheckBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:242
+#: oxygen/config/ui/oxygenexceptiondialog.ui:107
+msgid "Separator display:"
+msgstr "Håynaedje do separateu :"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: oxygen/config/ui/oxygenconfigurationui.ui:255
+msgid "Background style: "
+msgstr "Stîle do fond : "
+
+#. i18n: ectx: property (text), item, widget (KComboBox, blendColor)
+#. i18n: ectx: property (text), item, widget (KComboBox, blendColorComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:269
+#: oxygen/config/ui/oxygenexceptiondialog.ui:194
+msgid "Solid Color"
+msgstr "Coleur li minme"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, blendColor)
+#. i18n: ectx: property (text), item, widget (KComboBox, blendColorComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:274
+#: oxygen/config/ui/oxygenexceptiondialog.ui:199
+msgid "Radial Gradient"
+msgstr "Digradé d' coleur"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, blendColor)
+#. i18n: ectx: property (text), item, widget (KComboBox, blendColorComboBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:279
+#: oxygen/config/ui/oxygenexceptiondialog.ui:204
+msgid "Follow Style Hint"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, titleOutline)
+#: oxygen/config/ui/oxygenconfigurationui.ui:300
+msgid "Outline active window title"
+msgstr "Cotoû do tite del finiesse ovrante"
+
+#. i18n: ectx: property (text), widget (QCheckBox, narrowButtonSpacing)
+#: oxygen/config/ui/oxygenconfigurationui.ui:307
+msgid "Use narrow space between decoration buttons"
+msgstr "Si siervi d' on stroet espåce inte les botons do gåyotaedje"
+
+#. i18n: ectx: property (text), widget (QCheckBox, drawSizeGrip)
+#. i18n: ectx: property (text), widget (QCheckBox, sizeGripCheckBox)
+#: oxygen/config/ui/oxygenconfigurationui.ui:314
+#: oxygen/config/ui/oxygenexceptiondialog.ui:93
+msgid "Add handle to resize windows with no border"
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QCheckBox, closeFromMenuButton)
-#: oxygen/config/ui/oxygenconfigurationui.ui:234
+#: oxygen/config/ui/oxygenconfigurationui.ui:321
 msgid "Close windows by double clicking the menu button"
 msgstr "Clôre les fniesses avou on dobe-clitche sol boton del dressêye"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_3)
-#: oxygen/config/ui/oxygenconfigurationui.ui:242
+#: oxygen/config/ui/oxygenconfigurationui.ui:342
 msgid "Shadows"
 msgstr "Ombions"
 
-#. i18n: ectx: property (title), widget (Oxygen::ShadowConfigurationUi, inactiveShadowConfiguration)
-#: oxygen/config/ui/oxygenconfigurationui.ui:250
+#. i18n: ectx: property (title), widget (Oxygen::ShadowConfigWidget, inactiveShadowConfiguration)
+#: oxygen/config/ui/oxygenconfigurationui.ui:350
 msgid "Window Drop-Down Shadow"
 msgstr "Ombion del djivêye disrôlante"
 
-#. i18n: ectx: property (title), widget (Oxygen::ShadowConfigurationUi, activeShadowConfiguration)
-#: oxygen/config/ui/oxygenconfigurationui.ui:260
+#. i18n: ectx: property (title), widget (Oxygen::ShadowConfigWidget, activeShadowConfiguration)
+#: oxygen/config/ui/oxygenconfigurationui.ui:360
 msgid "Active Window Glow"
 msgstr "Reyonaedje del finiesse ovrante"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_4)
-#: oxygen/config/ui/oxygenconfigurationui.ui:286
+#: oxygen/config/ui/oxygenconfigurationui.ui:386
 msgid "Window-Specific Overrides"
 msgstr "Sipotchaedjes sipecifikes al finiesse"
 
@@ -453,29 +583,53 @@ msgid "Detect Window Properties"
 msgstr "Detecter prôpietés del finiesse"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: oxygen/config/ui/oxygenexceptiondialog.ui:69
+#: oxygen/config/ui/oxygenexceptiondialog.ui:80
 msgid "Decoration Options"
 msgstr "Tchuzes do gåyotaedje"
 
-#. i18n: ectx: property (text), widget (QCheckBox, sizeGripCheckBox)
-#: oxygen/config/ui/oxygenexceptiondialog.ui:82
-msgid "Extra size grip display:"
-msgstr "Pus grande grandeu do håynaedje del pougnêye :"
-
 #. i18n: ectx: property (text), widget (QCheckBox, titleOutlineCheckBox)
-#: oxygen/config/ui/oxygenexceptiondialog.ui:89
+#: oxygen/config/ui/oxygenexceptiondialog.ui:100
 msgid "Outline active window title:"
 msgstr "Cotoû do tite del finiesse ovrante :"
 
 #. i18n: ectx: property (text), widget (QCheckBox, blendColorCheckBox)
-#: oxygen/config/ui/oxygenexceptiondialog.ui:103
+#: oxygen/config/ui/oxygenexceptiondialog.ui:114
 msgid "Background style:"
 msgstr "Stîle do fond :"
 
 #. i18n: ectx: property (text), widget (QCheckBox, hideTitleBar)
-#: oxygen/config/ui/oxygenexceptiondialog.ui:110
+#: oxygen/config/ui/oxygenexceptiondialog.ui:121
 msgid "Hide window title bar"
 msgstr "Catchî l' bår di tite del finiesse"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, sizeGripComboBox)
+#: oxygen/config/ui/oxygenexceptiondialog.ui:216
+#, fuzzy
+#| msgid "Disabled"
+msgctxt "Add handle to resize windows with no border"
+msgid "Disabled"
+msgstr "Essocté"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, sizeGripComboBox)
+#: oxygen/config/ui/oxygenexceptiondialog.ui:221
+#, fuzzy
+#| msgctxt "outline window title"
+#| msgid "Enabled"
+msgctxt "Add handle to resize windows with no border"
+msgid "Enabled"
+msgstr "Èn alaedje"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, titleOutlineComboBox)
+#: oxygen/config/ui/oxygenexceptiondialog.ui:233
+msgctxt "outline window title"
+msgid "Disabled"
+msgstr "Essocté"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, titleOutlineComboBox)
+#: oxygen/config/ui/oxygenexceptiondialog.ui:238
+msgctxt "outline window title"
+msgid "Enabled"
+msgstr "Èn alaedje"
 
 #. i18n: ectx: property (text), widget (KPushButton, moveUpButton)
 #: oxygen/config/ui/oxygenexceptionlistwidget.ui:29
@@ -502,34 +656,7 @@ msgstr "Oister"
 msgid "Edit"
 msgstr "Candjî"
 
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: oxygen/config/ui/oxygenshadowconfigurationui.ui:23
-msgid "Inner Color:"
-msgstr "Divintrinne coleur :"
-
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: oxygen/config/ui/oxygenshadowconfigurationui.ui:42
-msgid "Outer Color:"
-msgstr "Difoûtrinne coleur :"
-
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: oxygen/config/ui/oxygenshadowconfigurationui.ui:69
-msgid "Vertical Offset:"
-msgstr "Displaeçmint d' astampé :"
-
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: oxygen/config/ui/oxygenshadowconfigurationui.ui:82
-msgid "Size: "
-msgstr "Grandeu : "
-
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, shadowSize)
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, verticalOffset)
-#: oxygen/config/ui/oxygenshadowconfigurationui.ui:95
-#: oxygen/config/ui/oxygenshadowconfigurationui.ui:102
-msgid "px"
-msgstr ""
-
-#: oxygen/demo/main.cpp:42 oxygen/demo/oxygenshadowdemodialog.cpp:47
+#: oxygen/demo/main.cpp:42 oxygen/demo/oxygenshadowdemodialog.cpp:46
 #, fuzzy
 #| msgid "Use Oxygen Shadows"
 msgid "Oxygen Shadow Demo"
@@ -547,17 +674,17 @@ msgstr ""
 msgid "Hugo Pereira Da Costa"
 msgstr ""
 
-#: oxygen/demo/oxygenshadowdemodialog.cpp:50
+#: oxygen/demo/oxygenshadowdemodialog.cpp:49
 #, fuzzy
 #| msgid "Shade"
 msgid "Save"
 msgstr "Ombion"
 
-#: oxygen/demo/oxygenshadowdemodialog.cpp:52
+#: oxygen/demo/oxygenshadowdemodialog.cpp:51
 msgid "Save shadows as pixmaps in provided directory"
 msgstr ""
 
-#: oxygen/demo/oxygenshadowdemodialog.cpp:72
+#: oxygen/demo/oxygenshadowdemodialog.cpp:71
 #, fuzzy
 #| msgid "Enable window grouping"
 msgid "Draw window background"
@@ -581,133 +708,79 @@ msgstr "Mete li purnea å pus ptit"
 msgid "Oxygen"
 msgstr "Ocsidjinne"
 
-#: oxygen/oxygenclient.cpp:215
+#: oxygen/oxygenclient.cpp:217
 #, fuzzy
 #| msgid "Window Identification"
 msgid "Window Actions Menu"
 msgstr "Idintifiaedje del finiesse"
 
-#: oxygen/oxygenclient.cpp:218
+#: oxygen/oxygenclient.cpp:220
 msgid "Application Menu"
 msgstr ""
 
-#: oxygen/oxygenclient.cpp:233
+#: oxygen/oxygenclient.cpp:235
 msgid "Keep Above Others"
 msgstr "Mete pa dzeu les ôtes"
 
-#: oxygen/oxygenclient.cpp:236
+#: oxygen/oxygenclient.cpp:238
 msgid "Keep Below Others"
 msgstr "Mete pa dzo les ôtes"
 
-#: oxygen/oxygenclient.cpp:239
+#: oxygen/oxygenclient.cpp:241
 msgid "On All Desktops"
 msgstr "So tos les scribannes"
 
-#: oxygen/oxygenclient.cpp:242
+#: oxygen/oxygenclient.cpp:244
 msgid "Shade Button"
 msgstr "Boton avou ombion"
 
-#: oxygen/oxygenconfiguration.cpp:251
-msgid "Center (Full Width)"
-msgstr ""
+#~ msgid "Extra size grip display: "
+#~ msgstr "Pus grande grandeu do håynaedje del pougnêye : "
 
-#: oxygen/oxygenconfiguration.cpp:278
-msgctxt "@item:inlistbox Button size:"
-msgid "Small"
-msgstr "Pitit"
+#~ msgid "Extra size grip display:"
+#~ msgstr "Pus grande grandeu do håynaedje del pougnêye :"
 
-#: oxygen/oxygenconfiguration.cpp:279
-msgctxt "@item:inlistbox Button size:"
-msgid "Normal"
-msgstr "Normå"
+#~ msgid "Inner Color:"
+#~ msgstr "Divintrinne coleur :"
 
-#: oxygen/oxygenconfiguration.cpp:280
-msgctxt "@item:inlistbox Button size:"
-msgid "Large"
-msgstr "Grand"
+#~ msgid "Outer Color:"
+#~ msgstr "Difoûtrinne coleur :"
 
-#: oxygen/oxygenconfiguration.cpp:281
-msgctxt "@item:inlistbox Button size:"
-msgid "Very Large"
-msgstr "Foirt grand"
+#~ msgid "Vertical Offset:"
+#~ msgstr "Displaeçmint d' astampé :"
 
-#: oxygen/oxygenconfiguration.cpp:282
-msgctxt "@item:inlistbox Button size:"
-msgid "Huge"
-msgstr "Foû grand"
+#~ msgid "Size: "
+#~ msgstr "Grandeu : "
 
-#: oxygen/oxygenconfiguration.cpp:322
-msgctxt "@item:inlistbox Border size:"
-msgid "No Border"
-msgstr "Pont d' boirdeure"
+#~ msgctxt "@item:inlistbox Button size:"
+#~ msgid "Small"
+#~ msgstr "Pitit"
 
-#: oxygen/oxygenconfiguration.cpp:323
-msgctxt "@item:inlistbox Border size:"
-msgid "No Side Border"
-msgstr "Pont d' boirdeure des costés"
+#~ msgctxt "@item:inlistbox Button size:"
+#~ msgid "Large"
+#~ msgstr "Grand"
 
-#: oxygen/oxygenconfiguration.cpp:324
-msgctxt "@item:inlistbox Border size:"
-msgid "Tiny"
-msgstr "Tote pitite"
+#~ msgctxt "@item:inlistbox Border size:"
+#~ msgid "Normal"
+#~ msgstr "Normåle"
 
-#: oxygen/oxygenconfiguration.cpp:325
-msgctxt "@item:inlistbox Border size:"
-msgid "Normal"
-msgstr "Normåle"
+#~ msgctxt "@item:inlistbox Border size:"
+#~ msgid "Large"
+#~ msgstr "Grande"
 
-#: oxygen/oxygenconfiguration.cpp:326
-msgctxt "@item:inlistbox Border size:"
-msgid "Large"
-msgstr "Grande"
+#~ msgctxt "@item:inlistbox Border size:"
+#~ msgid "Very Large"
+#~ msgstr "Foirt grande"
 
-#: oxygen/oxygenconfiguration.cpp:327
-msgctxt "@item:inlistbox Border size:"
-msgid "Very Large"
-msgstr "Foirt grande"
+#~ msgctxt "@item:inlistbox Border size:"
+#~ msgid "Huge"
+#~ msgstr "Foû grande"
 
-#: oxygen/oxygenconfiguration.cpp:328
-msgctxt "@item:inlistbox Border size:"
-msgid "Huge"
-msgstr "Foû grande"
+#~ msgid "Always Hide Extra Size Grip"
+#~ msgstr "Tofer catchî l' pus grande grandeu del pougnêye"
 
-#: oxygen/oxygenconfiguration.cpp:329
-msgctxt "@item:inlistbox Border size:"
-msgid "Very Huge"
-msgstr "Vormint foû grande"
-
-#: oxygen/oxygenconfiguration.cpp:330
-msgctxt "@item:inlistbox Border size:"
-msgid "Oversized"
-msgstr "Foû mzeure"
-
-#: oxygen/oxygenconfiguration.cpp:359
-msgid "Solid Color"
-msgstr "Coleur li minme"
-
-#: oxygen/oxygenconfiguration.cpp:360
-msgid "Radial Gradient"
-msgstr "Digradé d' coleur"
-
-#: oxygen/oxygenconfiguration.cpp:361
-msgid "Follow Style Hint"
-msgstr ""
-
-#: oxygen/oxygenconfiguration.cpp:384
-msgid "Always Hide Extra Size Grip"
-msgstr "Tofer catchî l' pus grande grandeu del pougnêye"
-
-#: oxygen/oxygenconfiguration.cpp:385
-msgid "Show Extra Size Grip When Needed"
-msgstr "Håyner l' pus grande grandeu del pougnêye cwand on nd a mezåjhe"
-
-#: oxygen/oxygenexception.cpp:79
-msgid "Window Title"
-msgstr "Tite del finiesse"
-
-#: oxygen/oxygenexception.cpp:80
-msgid "Window Class Name"
-msgstr "No del classe di fniesse "
+#~ msgid "Show Extra Size Grip When Needed"
+#~ msgstr "Håyner l' pus grande grandeu del pougnêye cwand on nd a mezåjhe"
 
 #~ msgid "Plastik"
 #~ msgstr "Plastik"
@@ -758,9 +831,6 @@ msgstr "No del classe di fniesse "
 
 #~ msgid "Enable title transition animations"
 #~ msgstr "Mete èn alaedje les animåcions di passaedje des tites"
-
-#~ msgid "Disabled"
-#~ msgstr "Essocté"
 
 #~ msgid "Variable"
 #~ msgstr "Variåve"
@@ -827,14 +897,8 @@ msgstr "No del classe di fniesse "
 #~ "Vaici, vos poloz tchoezi li kéne grandeu k' i fåt eployî pol pougnêye a "
 #~ "rcandjî l' grandeu do purnea."
 
-#~ msgid "Small"
-#~ msgstr "Pitite"
-
 #~ msgid "Medium"
 #~ msgstr "Moyene"
-
-#~ msgid "Large"
-#~ msgstr "Grande"
 
 #~ msgid "Modern System"
 #~ msgstr "Sistinme modiene"
