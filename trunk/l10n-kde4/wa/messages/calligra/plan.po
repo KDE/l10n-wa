@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplato\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-02-11 02:40+0100\n"
+"POT-Creation-Date: 2012-11-16 02:04+0100\n"
 "PO-Revision-Date: 2011-01-06 22:28+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -283,21 +283,335 @@ msgid ""
 "note></para>"
 msgstr ""
 
-#: kptcolorsconfigpanel.cpp:34
+#. i18n: ectx: label, entry (ColorGradientType), group (TaskColors)
+#: kptcolorsconfigpanel.cpp:34 plansettings.kcfg:93
 #, fuzzy
 #| msgid "Lines"
 msgid "Linear"
 msgstr "Royes"
 
-#: kptcolorsconfigpanel.cpp:35
+#. i18n: ectx: label, entry (ColorGradientType), group (TaskColors)
+#: kptcolorsconfigpanel.cpp:35 plansettings.kcfg:94
 #, fuzzy
 #| msgid "KPlato"
 msgid "Flat"
 msgstr "KPlato"
 
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: kptcolorsconfigpanel.ui:28
+#, fuzzy
+#| msgid "Gantt"
+msgid "Gradient:"
+msgstr "Gantt"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: kptcolorsconfigpanel.ui:57
+msgctxt "@title:tab"
+msgid "Summary task"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: kptcolorsconfigpanel.ui:69
+#, fuzzy
+#| msgid "Task Defaults"
+msgctxt "@label:chooser"
+msgid "Default:"
+msgstr "Prémetous des bouyes"
+
+#. i18n: ectx: property (title), widget (QGroupBox, kcfg_SummaryTaskLevelColorsEnabled)
+#: kptcolorsconfigpanel.ui:92
+msgctxt "@title:group"
+msgid "Use level colors"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: kptcolorsconfigpanel.ui:110
+msgctxt "@label:chooser"
+msgid "Level 1"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: kptcolorsconfigpanel.ui:139
+msgctxt "@label:chooser"
+msgid "Level 2"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: kptcolorsconfigpanel.ui:168
+msgctxt "@label:chooser"
+msgid "Level 3"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_10)
+#: kptcolorsconfigpanel.ui:197
+msgctxt "@label:chooser"
+msgid "Level 4"
+msgstr ""
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
+#: kptcolorsconfigpanel.ui:231
+#, fuzzy
+#| msgid "Tasks"
+msgctxt "@title:tab"
+msgid "Task"
+msgstr "Bouyes"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: ectx: property (text), widget (QLabel, label_12)
+#: kptcolorsconfigpanel.ui:243 kptcolorsconfigpanel.ui:373
+msgctxt "@label:chooser"
+msgid "Normal:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#. i18n: ectx: property (text), widget (QLabel, label_14)
+#: kptcolorsconfigpanel.ui:272 kptcolorsconfigpanel.ui:402
+msgctxt "@label:chooser"
+msgid "Critical:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#. i18n: ectx: property (text), widget (QLabel, label_13)
+#: kptcolorsconfigpanel.ui:301 kptcolorsconfigpanel.ui:431
+msgctxt "@label:chooser"
+msgid "Finished:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#. i18n: ectx: property (text), widget (QLabel, label_11)
+#: kptcolorsconfigpanel.ui:330 kptcolorsconfigpanel.ui:460
+msgctxt "@label:chooser"
+msgid "Error:"
+msgstr ""
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_3)
+#: kptcolorsconfigpanel.ui:361
+#, fuzzy
+#| msgid "Milestone Gantt"
+msgctxt "@title:tab"
+msgid "Milestone"
+msgstr "Gantt des etapes"
+
+#. i18n: ectx: property (title), widget (QButtonGroup)
+#: kptconfigbehaviorpanelbase.ui:25
+msgid "Calculation"
+msgstr "Carcul"
+
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: kptconfigbehaviorpanelbase.ui:36
+msgid "Manual"
+msgstr "Al mwin"
+
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: kptconfigbehaviorpanelbase.ui:44
+msgid "Immediate on change"
+msgstr "Tot d' shûte ås candjmints"
+
+#. i18n: ectx: property (title), widget (QGroupBox)
+#: kptconfigbehaviorpanelbase.ui:54
+msgid "Constraints"
+msgstr "Sitronnas"
+
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: kptconfigbehaviorpanelbase.ui:65
+msgid "Allow overbooking of resources"
+msgstr "Permete li forrezervaedje dirsources"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: kptconfigtaskpanelbase.ui:25
+msgid "General"
+msgstr "Djenerå"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, leaderlabel)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_Leader)
+#: kptconfigtaskpanelbase.ui:41 kptconfigtaskpanelbase.ui:65
+msgid ""
+"The person responsible for this task.\n"
+"\n"
+"This is not limited to persons available in a resource group but can be "
+"anyone. You can even directly access your address book with the Choose "
+"button."
+msgstr ""
+"Li djin responsåve po cisse bouye.\n"
+"Ça n' est nén limité åzès djins k' i gn a dins on groupe di rsources mins ça "
+"pout esse tolminme kî. Vos ploz minme arinner direk vosse calpin d' adresses "
+"avou l' boton Tchoezi."
+
+#. i18n: ectx: property (text), widget (QLabel, leaderlabel)
+#: kptconfigtaskpanelbase.ui:44
+msgid "Responsible:"
+msgstr "Responsåve:"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, chooseLeader)
+#: kptconfigtaskpanelbase.ui:72
+msgid "Insert a person from your address book"
+msgstr "Sititchî ene djin di vosse calpin d' adresses"
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, chooseLeader)
+#: kptconfigtaskpanelbase.ui:75
+msgid "Insert a person from your address book."
+msgstr "Sititchî ene djin di vosse calpin d' adresses."
+
+#. i18n: ectx: property (text), widget (QPushButton, chooseLeader)
+#: kptconfigtaskpanelbase.ui:78
+msgid "Choose..."
+msgstr "Tchoezi..."
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#: kptconfigtaskpanelbase.ui:96
+msgid "Scheduling constraint:"
+msgstr "Stronna d' programaedje"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_ConstraintType)
+#: kptconfigtaskpanelbase.ui:116
+msgid "As Soon as Possible"
+msgstr "Totossu rade ki possibe"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_ConstraintType)
+#: kptconfigtaskpanelbase.ui:121
+msgid "As Late as Possible"
+msgstr "Totossu tård ki possibe"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_ConstraintType)
+#: kptconfigtaskpanelbase.ui:126
+msgid "Must Start On"
+msgstr "Doet ataker l'"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_ConstraintType)
+#: kptconfigtaskpanelbase.ui:131
+msgid "Must Finish On"
+msgstr "Doet fini l'"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_ConstraintType)
+#: kptconfigtaskpanelbase.ui:136
+msgid "Start Not Earlier Than"
+msgstr "En nén ataker pus timpe ki"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_ConstraintType)
+#: kptconfigtaskpanelbase.ui:141
+msgid "Finish Not Later Than"
+msgstr "En nén fini pus tård ki"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_ConstraintType)
+#: kptconfigtaskpanelbase.ui:146
+msgid "Fixed Interval"
+msgstr "Tinte ewal inte les deus"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_5)
+#: kptconfigtaskpanelbase.ui:160
+#, fuzzy
+#| msgid "Constraint start time:"
+msgid "Constraint Start time usage:"
+msgstr "Stronna d' eure di cmince :"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_StartTimeUsage)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_EndTimeUsage)
+#: kptconfigtaskpanelbase.ui:180 kptconfigtaskpanelbase.ui:250
+#, fuzzy
+msgid "Current date and time"
+msgstr "Sitronnas"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_StartTimeUsage)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_EndTimeUsage)
+#: kptconfigtaskpanelbase.ui:185 kptconfigtaskpanelbase.ui:255
+#, fuzzy
+msgid "Current date, specified time"
+msgstr "Sitronnas"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_StartTimeUsage)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_EndTimeUsage)
+#: kptconfigtaskpanelbase.ui:190 kptconfigtaskpanelbase.ui:260
+#, fuzzy
+msgid "Specified date and time"
+msgstr "Sitronnas"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_3)
+#: kptconfigtaskpanelbase.ui:204
+msgid "Constraint start time:"
+msgstr "Stronna d' eure di cmince :"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_6)
+#: kptconfigtaskpanelbase.ui:230
+#, fuzzy
+#| msgid "Constraint end time:"
+msgid "Constraint End time usage:"
+msgstr "Stronna d' eure di dfén :"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_4)
+#: kptconfigtaskpanelbase.ui:274
+msgid "Constraint end time:"
+msgstr "Stronna d' eure di dfén :"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_7)
+#: kptconfigtaskpanelbase.ui:307
+msgid "Estimate type:"
+msgstr "Sôre d' avirance :"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_EstimateType)
+#: kptconfigtaskpanelbase.ui:330
+msgid "Effort"
+msgstr "Efoirt"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_EstimateType)
+#: kptconfigtaskpanelbase.ui:335
+msgid "Duration"
+msgstr "Tins k' ça dure"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_8)
+#: kptconfigtaskpanelbase.ui:349
+msgid "Expected estimate:"
+msgstr "Avirance ratindowe :"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
+#: kptconfigtaskpanelbase.ui:378
+msgid "Optimistic estimate:"
+msgstr "Avirance optimisse :"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_OptimisticRatio)
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_PessimisticRatio)
+#: kptconfigtaskpanelbase.ui:391 kptconfigtaskpanelbase.ui:426
+#, no-c-format
+msgid "%"
+msgstr "%"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel2_2)
+#: kptconfigtaskpanelbase.ui:410
+msgid "Pessimistic estimate:"
+msgstr "Avirance pessimisse :"
+
+#. i18n: ectx: attribute (title), widget (QWidget, widget)
+#: kptconfigtaskpanelbase.ui:457
+msgid "Description"
+msgstr "Discrijhaedje"
+
 #: kptinsertfiledlg.cpp:36
 msgid "Insert File"
 msgstr "Sititchî fitchî"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: kptinsertfilepanel.ui:40
+#, fuzzy
+msgid "Current node:"
+msgstr "Sitronnas"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_useProject)
+#: kptinsertfilepanel.ui:68
+#, fuzzy
+#| msgid "Insert File"
+msgid "Insert on top level"
+msgstr "Sititchî fitchî"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_isParent)
+#: kptinsertfilepanel.ui:75
+#, fuzzy
+msgid "Insert as children to current node"
+msgstr "Sititchî documint"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_isAfter)
+#: kptinsertfilepanel.ui:82
+#, fuzzy
+msgid "Insert after current node"
+msgstr "Sititchî documint"
 
 #: kptpart.cpp:184 kptpart.cpp:492
 msgid "Invalid document. No mimetype specified."
@@ -994,6 +1308,34 @@ msgctxt "@action:inmenu Insert View"
 msgid "Insert..."
 msgstr "Sititchî..."
 
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: kptviewlistaddview.ui:20 kptviewlisteditview.ui:20
+msgid "Category:"
+msgstr "Categoreye:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: kptviewlistaddview.ui:43 kptviewlisteditcategory.ui:20
+#: kptviewlisteditview.ui:43
+msgid "After"
+msgstr "Après"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: kptviewlistaddview.ui:63
+msgid "View type:"
+msgstr "Sôre di vuwe:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: kptviewlistaddview.ui:80 kptviewlisteditcategory.ui:40
+#: kptviewlisteditview.ui:63
+msgid "Name:"
+msgstr "No:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: kptviewlistaddview.ui:93 kptviewlisteditcategory.ui:53
+#: kptviewlisteditview.ui:76
+msgid "Tip:"
+msgstr "Racsegne::"
+
 #: kptviewlistdialog.cpp:36
 msgctxt "@title:window"
 msgid "Add View"
@@ -1069,239 +1411,309 @@ msgctxt "@title:window"
 msgid "View Selector"
 msgstr "Tchoezixheu d' vuwe"
 
+#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
+#: kptviewlistdocker.ui:22
+msgid "Words"
+msgstr "Mots"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
+#: kptviewlistdocker.ui:27
+msgid "Sentences"
+msgstr "Fråzes"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
+#: kptviewlistdocker.ui:32
+msgid "Syllables"
+msgstr "Sillabes"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
+#: kptviewlistdocker.ui:37
+msgid "Lines"
+msgstr "Royes"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
+#: kptviewlistdocker.ui:42
+msgid "Characters incl. spaces"
+msgstr "Caracteres (avou espåces)"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
+#: kptviewlistdocker.ui:47
+msgid "Characters without spaces"
+msgstr "Caracteres (sins ls espåces)"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
+#: kptviewlistdocker.ui:52
+msgid "Flesch reading ease"
+msgstr "Åjhisté d' lijaedhe Flesch:"
+
+#. i18n: ectx: property (text), widget (QLineEdit, count)
+#: kptviewlistdocker.ui:63
+msgid "0"
+msgstr "0"
+
+#. i18n: ectx: property (text), widget (QToolButton, refresh)
+#: kptviewlistdocker.ui:73
+msgid "..."
+msgstr "..."
+
+#. i18n: ectx: property (text), widget (QCheckBox, footEndNotes)
+#: kptviewlistdocker.ui:84
+msgid "Include text from foot- and endnotes"
+msgstr "Mete divins tecse des notes di pî d' pådje et d' difén"
+
+#. i18n: ectx: property (text), widget (QCheckBox, autoRefresh)
+#: kptviewlistdocker.ui:91
+msgid "Automatically refresh data"
+msgstr "Rafrister otomaticmint les dnêyes"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_CheckForWorkPackages)
+#: kptworkpackageconfigpanel.ui:20
+#, fuzzy
+msgid "Check for work packages"
+msgstr "Mete a djoû a pårti do pacaedje d' ovraedje"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: kptworkpackageconfigpanel.ui:27
+msgid "Retrieve URL:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, kcfg_DeleteFile)
+#: kptworkpackageconfigpanel.ui:37
+msgid "Delete file after it has been retrieved"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, kcfg_SaveFile)
+#: kptworkpackageconfigpanel.ui:44
+msgid "Save file after it has been retrieved"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: kptworkpackageconfigpanel.ui:51
+msgid "Save URL:"
+msgstr ""
+
 #: main.cpp:32
 msgid "File to open"
 msgstr "Fitchî a drovi"
 
+#. i18n: ectx: Menu (file)
+#: plan.rc:4
+msgid "&File"
+msgstr "&Fitchî"
+
+#. i18n: ectx: Menu (edit)
+#: plan.rc:8
+msgid "&Edit"
+msgstr "&Candjî"
+
+#. i18n: ectx: Menu (view)
+#: plan.rc:34 plan_readonly.rc:3
+msgid "&View"
+msgstr "&Vey"
+
+#. i18n: ectx: Menu (project)
+#: plan.rc:41
+msgid "&Project"
+msgstr "&Pordjet"
+
+#. i18n: ectx: Menu (tools)
+#: plan.rc:48
+msgid "&Tools"
+msgstr "Us&teyes"
+
+#. i18n: ectx: Menu (settings)
+#: plan.rc:55
+msgid "&Settings"
+msgstr "Tchu&zes"
+
+#. i18n: ectx: Menu (help)
+#: plan.rc:58
+msgid "&Help"
+msgstr "&Aidance"
+
+#. i18n: ectx: ToolBar (project)
+#: plan.rc:62
+msgid "Project"
+msgstr "Pordjet"
+
+#. i18n: ectx: label, entry (Leader), group (Task defaults)
+#: plansettings.kcfg:9
+msgid "Name of task responsible"
+msgstr ""
+
+#. i18n: ectx: label, entry (ConstraintType), group (Task defaults)
+#: plansettings.kcfg:12
 #, fuzzy
-#~| msgid "Task Defaults"
-#~ msgctxt "@label:chooser"
-#~ msgid "Default:"
-#~ msgstr "Prémetous des bouyes"
+#| msgid "Scheduling constraint:"
+msgid "Scheduling constraint type"
+msgstr "Stronna d' programaedje"
 
+#. i18n: ectx: label, entry (StartTimeUsage), group (Task defaults)
+#: plansettings.kcfg:25
+msgid "Defines how start constraint time is used"
+msgstr ""
+
+#. i18n: ectx: label, entry (ConstraintStartTime), group (Task defaults)
+#: plansettings.kcfg:34
 #, fuzzy
-#~| msgid "Tasks"
-#~ msgctxt "@title:tab"
-#~ msgid "Task"
-#~ msgstr "Bouyes"
+msgid "Constraint start date and time"
+msgstr "Sitronnas"
 
+#. i18n: ectx: label, entry (EndTimeUsage), group (Task defaults)
+#: plansettings.kcfg:37
+msgid "Defines how end constraint time is used"
+msgstr ""
+
+#. i18n: ectx: label, entry (ConstraintEndTime), group (Task defaults)
+#: plansettings.kcfg:46
 #, fuzzy
-#~| msgid "Milestone Gantt"
-#~ msgctxt "@title:tab"
-#~ msgid "Milestone"
-#~ msgstr "Gantt des etapes"
+msgid "Constraint end date and time"
+msgstr "Sitronnas"
 
-#~ msgid "Calculation"
-#~ msgstr "Carcul"
+#. i18n: ectx: label, entry (EstimateType), group (Task defaults)
+#: plansettings.kcfg:50
+msgid "Type of estimate"
+msgstr "Sôre d' avirance"
 
-#~ msgid "Manual"
-#~ msgstr "Al mwin"
-
-#~ msgid "Immediate on change"
-#~ msgstr "Tot d' shûte ås candjmints"
-
-#~ msgid "Constraints"
-#~ msgstr "Sitronnas"
-
-#~ msgid "Allow overbooking of resources"
-#~ msgstr "Permete li forrezervaedje dirsources"
-
-#~ msgid "General"
-#~ msgstr "Djenerå"
-
-#~ msgid ""
-#~ "The person responsible for this task.\n"
-#~ "\n"
-#~ "This is not limited to persons available in a resource group but can be "
-#~ "anyone. You can even directly access your address book with the Choose "
-#~ "button."
-#~ msgstr ""
-#~ "Li djin responsåve po cisse bouye.\n"
-#~ "Ça n' est nén limité åzès djins k' i gn a dins on groupe di rsources mins "
-#~ "ça pout esse tolminme kî. Vos ploz minme arinner direk vosse calpin d' "
-#~ "adresses avou l' boton Tchoezi."
-
-#~ msgid "Responsible:"
-#~ msgstr "Responsåve:"
-
-#~ msgid "Insert a person from your address book"
-#~ msgstr "Sititchî ene djin di vosse calpin d' adresses"
-
-#~ msgid "Insert a person from your address book."
-#~ msgstr "Sititchî ene djin di vosse calpin d' adresses."
-
-#~ msgid "Choose..."
-#~ msgstr "Tchoezi..."
-
-#~ msgid "Scheduling constraint:"
-#~ msgstr "Stronna d' programaedje"
-
-#~ msgid "As Soon as Possible"
-#~ msgstr "Totossu rade ki possibe"
-
-#~ msgid "As Late as Possible"
-#~ msgstr "Totossu tård ki possibe"
-
-#~ msgid "Must Start On"
-#~ msgstr "Doet ataker l'"
-
-#~ msgid "Must Finish On"
-#~ msgstr "Doet fini l'"
-
-#~ msgid "Start Not Earlier Than"
-#~ msgstr "En nén ataker pus timpe ki"
-
-#~ msgid "Finish Not Later Than"
-#~ msgstr "En nén fini pus tård ki"
-
-#~ msgid "Fixed Interval"
-#~ msgstr "Tinte ewal inte les deus"
-
+#. i18n: ectx: label, entry (Unit), group (Task defaults)
+#: plansettings.kcfg:58
 #, fuzzy
-#~ msgid "Current date and time"
-#~ msgstr "Sitronnas"
+#| msgid "Estimate type:"
+msgid "Estimate time unit"
+msgstr "Sôre d' avirance :"
 
-#~ msgid "Constraint start time:"
-#~ msgstr "Stronna d' eure di cmince :"
+#. i18n: ectx: label, entry (ExpectedEstimate), group (Task defaults)
+#: plansettings.kcfg:72
+msgid "Expected estimate"
+msgstr "Avirance ratindowe "
 
-#~ msgid "Constraint end time:"
-#~ msgstr "Stronna d' eure di dfén :"
+#. i18n: ectx: label, entry (OptimisticRatio), group (Task defaults)
+#: plansettings.kcfg:76
+msgid "Optimistic estimate"
+msgstr "Avirance optimisse"
 
-#~ msgid "Estimate type:"
-#~ msgstr "Sôre d' avirance :"
+#. i18n: ectx: label, entry (PessimisticRatio), group (Task defaults)
+#: plansettings.kcfg:80
+msgid "Pessimistic estimate"
+msgstr "Avirance pessimisse"
 
-#~ msgid "Effort"
-#~ msgstr "Efoirt"
+#. i18n: ectx: label, entry (Description), group (Task defaults)
+#: plansettings.kcfg:85
+msgid "Task description"
+msgstr "Discrijhaedje del bouye"
 
-#~ msgid "Duration"
-#~ msgstr "Tins k' ça dure"
-
-#~ msgid "Expected estimate:"
-#~ msgstr "Avirance ratindowe :"
-
-#~ msgid "Optimistic estimate:"
-#~ msgstr "Avirance optimisse :"
-
-#~ msgid "%"
-#~ msgstr "%"
-
-#~ msgid "Pessimistic estimate:"
-#~ msgstr "Avirance pessimisse :"
-
-#~ msgid "Description"
-#~ msgstr "Discrijhaedje"
-
+#. i18n: ectx: label, entry (ColorGradientType), group (TaskColors)
+#: plansettings.kcfg:91
 #, fuzzy
-#~ msgid "Insert after current node"
-#~ msgstr "Sititchî documint"
+#| msgid "Gantt"
+msgid "Gradient"
+msgstr "Gantt"
 
-#~ msgid "Category:"
-#~ msgstr "Categoreye:"
+#. i18n: ectx: label, entry (SummaryTaskLevelColorsEnabled), group (TaskColors)
+#: plansettings.kcfg:99
+msgid "Enable summary task level colors"
+msgstr ""
 
-#~ msgid "After"
-#~ msgstr "Après"
+#. i18n: ectx: label, entry (SummaryTaskDefaultColor), group (TaskColors)
+#: plansettings.kcfg:103
+msgid "Summary task default color"
+msgstr ""
 
-#~ msgid "View type:"
-#~ msgstr "Sôre di vuwe:"
+#. i18n: ectx: label, entry (SummaryTaskLevelColor_1), group (TaskColors)
+#: plansettings.kcfg:107
+msgid "Summary task color, level 1"
+msgstr ""
 
-#~ msgid "Name:"
-#~ msgstr "No:"
+#. i18n: ectx: label, entry (SummaryTaskLevelColor_2), group (TaskColors)
+#: plansettings.kcfg:111
+msgid "Summary task color, level 2"
+msgstr ""
 
-#~ msgid "Tip:"
-#~ msgstr "Racsegne::"
+#. i18n: ectx: label, entry (SummaryTaskLevelColor_3), group (TaskColors)
+#: plansettings.kcfg:115
+msgid "Summary task color, level 3"
+msgstr ""
 
-#~ msgid "Words"
-#~ msgstr "Mots"
+#. i18n: ectx: label, entry (SummaryTaskLevelColor_4), group (TaskColors)
+#: plansettings.kcfg:119
+msgid "Summary task color, level 4"
+msgstr ""
 
-#~ msgid "Sentences"
-#~ msgstr "Fråzes"
+#. i18n: ectx: label, entry (TaskNormalColor), group (TaskColors)
+#: plansettings.kcfg:123
+msgid "Task color in normal state"
+msgstr ""
 
-#~ msgid "Syllables"
-#~ msgstr "Sillabes"
+#. i18n: ectx: label, entry (TaskCriticalColor), group (TaskColors)
+#: plansettings.kcfg:127
+msgid "Task color in critical state"
+msgstr ""
 
-#~ msgid "Lines"
-#~ msgstr "Royes"
+#. i18n: ectx: label, entry (TaskFinishedColor), group (TaskColors)
+#: plansettings.kcfg:131
+msgid "Task color in finished state"
+msgstr ""
 
-#~ msgid "Characters incl. spaces"
-#~ msgstr "Caracteres (avou espåces)"
+#. i18n: ectx: label, entry (TaskErrorColor), group (TaskColors)
+#: plansettings.kcfg:135
+msgid "Task color in error state"
+msgstr ""
 
-#~ msgid "Characters without spaces"
-#~ msgstr "Caracteres (sins ls espåces)"
+#. i18n: ectx: label, entry (MilestoneNormalColor), group (TaskColors)
+#: plansettings.kcfg:139
+msgid "Milestone color in normal state"
+msgstr ""
 
-#~ msgid "Flesch reading ease"
-#~ msgstr "Åjhisté d' lijaedhe Flesch:"
+#. i18n: ectx: label, entry (MilestoneCriticalColor), group (TaskColors)
+#: plansettings.kcfg:143
+msgid "Milestone color in critical state"
+msgstr ""
 
-#~ msgid "0"
-#~ msgstr "0"
+#. i18n: ectx: label, entry (MilestoneFinishedColor), group (TaskColors)
+#: plansettings.kcfg:147
+msgid "Milestone color in finished state"
+msgstr ""
 
-#~ msgid "..."
-#~ msgstr "..."
+#. i18n: ectx: label, entry (MilestoneErrorColor), group (TaskColors)
+#: plansettings.kcfg:151
+msgid "Milestone color in error state"
+msgstr ""
 
-#~ msgid "Include text from foot- and endnotes"
-#~ msgstr "Mete divins tecse des notes di pî d' pådje et d' difén"
-
-#~ msgid "Automatically refresh data"
-#~ msgstr "Rafrister otomaticmint les dnêyes"
-
+#. i18n: ectx: label, entry (CheckForWorkPackages), group (Work Package)
+#: plansettings.kcfg:158
 #, fuzzy
-#~ msgid "Check for work packages"
-#~ msgstr "Mete a djoû a pårti do pacaedje d' ovraedje"
+msgid "Automatically check for new work packages"
+msgstr "Rafrister otomaticmint les dnêyes"
 
-#~ msgid "&File"
-#~ msgstr "&Fitchî"
+#. i18n: ectx: label, entry (RetrieveUrl), group (Work Package)
+#: plansettings.kcfg:161
+msgid "Directory where Plan retrieves work packages from project members"
+msgstr ""
 
-#~ msgid "&Edit"
-#~ msgstr "&Candjî"
+#. i18n: ectx: label, entry (DeleteFile), group (Work Package)
+#: plansettings.kcfg:164
+msgid "If set, Plan will delete the file after it has been read"
+msgstr ""
 
-#~ msgid "&View"
-#~ msgstr "&Vey"
+#. i18n: ectx: label, entry (SaveFile), group (Work Package)
+#: plansettings.kcfg:167
+msgid "If set, Plan will save the file after it has been read"
+msgstr ""
 
-#~ msgid "&Project"
-#~ msgstr "&Pordjet"
+#. i18n: ectx: label, entry (SaveUrl), group (Work Package)
+#: plansettings.kcfg:170
+msgid "Directory where Plan saves work packages when the package has been read"
+msgstr ""
 
-#~ msgid "&Tools"
-#~ msgstr "Us&teyes"
+#. i18n: ectx: label, entry (MinimumDurationUnit), group (Miscellaneous)
+#: plansettings.kcfg:176
+msgid "The smallest duration unit allowed"
+msgstr ""
 
-#~ msgid "&Settings"
-#~ msgstr "Tchu&zes"
-
-#~ msgid "&Help"
-#~ msgstr "&Aidance"
-
-#~ msgid "Project"
-#~ msgstr "Pordjet"
-
-#, fuzzy
-#~ msgid "Constraint start date and time"
-#~ msgstr "Sitronnas"
-
-#, fuzzy
-#~ msgid "Constraint end date and time"
-#~ msgstr "Sitronnas"
-
-#~ msgid "Type of estimate"
-#~ msgstr "Sôre d' avirance"
-
-#~ msgid "Expected estimate"
-#~ msgstr "Avirance ratindowe "
-
-#~ msgid "Optimistic estimate"
-#~ msgstr "Avirance optimisse"
-
-#~ msgid "Pessimistic estimate"
-#~ msgstr "Avirance pessimisse"
-
-#~ msgid "Task description"
-#~ msgstr "Discrijhaedje del bouye"
-
-#, fuzzy
-#~| msgid "Gantt"
-#~ msgid "Gradient"
-#~ msgstr "Gantt"
-
-#, fuzzy
-#~ msgid "Automatically check for new work packages"
-#~ msgstr "Rafrister otomaticmint les dnêyes"
+#. i18n: ectx: label, entry (MaximumDurationUnit), group (Miscellaneous)
+#: plansettings.kcfg:180
+msgid "The largest duration unit allowed"
+msgstr ""
 
 #, fuzzy
 #~| msgid "Create Report..."
