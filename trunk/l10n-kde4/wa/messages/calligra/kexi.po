@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-02-16 02:18+0100\n"
+"POT-Creation-Date: 2013-02-26 02:23+0100\n"
 "PO-Revision-Date: 2011-01-17 22:02+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -17,27 +17,27 @@ msgstr ""
 "X-Generator: Lokalize 1.0\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: core/kexi.cpp:141
+#: core/kexi.cpp:140
 msgid "&No View"
 msgstr "&Nole vuwe"
 
-#: core/kexi.cpp:143
+#: core/kexi.cpp:142
 msgid "&Data View"
 msgstr "Vuwe des &dnêyes"
 
-#: core/kexi.cpp:145
+#: core/kexi.cpp:144
 msgid "D&esign View"
 msgstr "Vuwe di l' &atuzlaedje"
 
-#: core/kexi.cpp:147
+#: core/kexi.cpp:146
 msgid "&Text View"
 msgstr "Vuwe e môde &tecse"
 
-#: core/kexi.cpp:149
+#: core/kexi.cpp:148
 msgid "&Unknown"
 msgstr "&Nén cnoxhou"
 
-#: core/kexi.cpp:168
+#: core/kexi.cpp:167
 #, fuzzy
 #| msgid ""
 #| "You can correct data in this row or use \"Cancel row changes\" function."
@@ -48,12 +48,12 @@ msgstr ""
 "Vos savoz coridjî les dnêyes di cisse roye e vs siervant del fonccion "
 "« Rinoncî ås candjmints del roye »."
 
-#: core/kexi.cpp:321
+#: core/kexi.cpp:320
 #, kde-format
 msgid "This function is not available for version %1 of %2 application."
 msgstr "Cisse fonccion n' est nén disponibe pol modêye %1 do programe %2."
 
-#: core/kexi.cpp:326
+#: core/kexi.cpp:325
 #, kde-format
 msgid "\"%1\" function is not available for version %2 of %3 application."
 msgstr "Li fonccion « %1 » n' est nén disponibe pol modêye %2 do programe %3."
@@ -533,7 +533,7 @@ msgid ""
 "project on a server to open."
 msgstr ""
 
-#: core/kexiguimsghandler.cpp:123 core/kexitextmsghandler.cpp:53
+#: core/kexiguimsghandler.cpp:123 core/kexitextmsghandler.cpp:73
 #: migration/importtablewizard.cpp:351
 msgid "Unknown error"
 msgstr "Aroke nén cnoxhowe"
@@ -546,7 +546,7 @@ msgstr "Adviertixhmint"
 msgid "Do not show this message again"
 msgstr "Ni pus måy mostrer ci messaedje ci"
 
-#: core/kexiinternalpart.cpp:53 core/kexipartmanager.cpp:138
+#: core/kexiinternalpart.cpp:57 core/kexipartmanager.cpp:172
 #, kde-format
 msgid ""
 "Incompatible plugin \"%1\" version: found version %2, expected version %3."
@@ -554,7 +554,7 @@ msgstr ""
 "Modêye do tchôke-divins « %1 » nén côpatibe : dj' a trové l' modêye %2, dji "
 "ratindeu l' modêye %3."
 
-#: core/kexiinternalpart.cpp:68
+#: core/kexiinternalpart.cpp:72
 #, kde-format
 msgid "Could not load \"%1\" plugin."
 msgstr "Dji n' a savou tcherdjî l' tchôke-divins « %1 »."
@@ -625,25 +625,34 @@ msgstr "Ahiver novea objet del sôre « %1 »"
 msgid "Creates new object of type \"%1\""
 msgstr "Ahive on novea objet del sôre « %1 »"
 
-#: core/kexipartmanager.cpp:67
+#: core/kexipartmanager.cpp:93
 #, kde-format
+msgctxt "@info"
 msgid ""
-"No \"%1\" service type installed. Check your Kexi installation. Aborting."
+"No <resource>%1</resource> service type installed. Check your <application>"
+"%2</application> installation. The application will be closed."
 msgstr ""
-"I gn a  pont d' sôre di siervice « %1 » d' astalêye. Verifyîz vost "
-"astalaedje di Kexi. Dj' abandene."
 
-#: core/kexipartmanager.cpp:151
+#: core/kexipartmanager.cpp:104
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Missing or invalid default <application>%1</application> configuration (no "
+"<resource>%2</resource> key). Check your <application>%1</application> "
+"installation. The application will be closed."
+msgstr ""
+
+#: core/kexipartmanager.cpp:185
 #, kde-format
 msgid "Error while loading plugin \"%1\""
 msgstr "Åk n' a nén stî tot tcherdjant l' tchôke-divins « %1 »"
 
-#: core/kexipartmanager.cpp:193
+#: core/kexipartmanager.cpp:227
 #, kde-format
 msgid "No plugin for class \"%1\""
 msgstr "Nou tchôke-divins pol classe « %1 »"
 
-#: core/kexiproject.cpp:130 main/KexiMainWindow.cpp:3578
+#: core/kexiproject.cpp:130 main/KexiMainWindow.cpp:3413
 msgid "Could not set empty name for this object."
 msgstr "Dji n' a savou mete on vude no po cist objet."
 
@@ -712,11 +721,11 @@ msgstr "Ci pordjet est drovou e lére seulmint."
 msgid "Could not remove object's user data."
 msgstr "Dji n' a savou oister l' objet."
 
-#: core/kexiproject.cpp:1108
+#: core/kexiproject.cpp:1109
 msgid "Warning: entire project's data will be removed."
 msgstr "Asteme : totes les dnêyes do pordjet tot etir vont-st esse oistêyes."
 
-#: core/kexiproject.cpp:1122
+#: core/kexiproject.cpp:1123
 #, kde-format
 msgid ""
 "The project %1 already exists.\n"
@@ -725,16 +734,16 @@ msgstr ""
 "I gn a ddja on pordjet %1.\n"
 "El voloz rcandjî avou on novea et vude pordjet ?"
 
-#: core/kexiproject.cpp:1125 main/kexifinddialog.cpp:228
+#: core/kexiproject.cpp:1126 main/kexifinddialog.cpp:228
 msgid "Replace"
 msgstr "Mete al plaece"
 
-#: core/kexiproject.cpp:1149
+#: core/kexiproject.cpp:1150
 #, kde-format
 msgid "Do you want to drop the project \"%1\"?"
 msgstr "Voloz vs låtchî l' pordjet « %1 » ?"
 
-#: core/kexiproject.cpp:1159
+#: core/kexiproject.cpp:1160
 msgid ""
 "Could not drop this project. Database connection for this project has been "
 "opened as read only."
@@ -780,66 +789,80 @@ msgstr ""
 "Relé les dnêyes èn ôre discrexhant (di Z a A eyet d' 9 a 0). Les dnêyes del "
 "colone di tchoezeye sont-st eployeyes po relére."
 
-#: core/KexiView.cpp:66
+#: core/KexiView.cpp:71
 msgid "Switch to data view"
 msgstr "Passer al vuwe des dnêyes"
 
-#: core/KexiView.cpp:67
+#: core/KexiView.cpp:72
 msgid "Switches to data view."
 msgstr "Passe al vuwe des dnêyes."
 
-#: core/KexiView.cpp:70
+#: core/KexiView.cpp:75
 msgid "Switch to design view"
 msgstr "Passer al vuwe di l' atuzlaedje"
 
-#: core/KexiView.cpp:71
+#: core/KexiView.cpp:76
 msgid "Switches to design view."
 msgstr "Passe al vuwe di l' atuzlaedje."
 
-#: core/KexiView.cpp:74
+#: core/KexiView.cpp:79
 msgid "Switch to text view"
 msgstr "Passer al vuwe e môde tecse"
 
-#: core/KexiView.cpp:75
+#: core/KexiView.cpp:80
 msgid "Switches to text view."
 msgstr "Passe al vuwe e môde tecse."
 
-#: core/KexiView.cpp:232
+#: core/KexiView.cpp:149
+#, fuzzy
+#| msgid "Switches to the next window."
+msgid "Menu for the current window"
+msgstr "Passe al finiesse shuvante."
+
+#: core/KexiView.cpp:150
+#, fuzzy
+#| msgid "Switches to the next window."
+msgid "Shows menu for the current window."
+msgstr "Passe al finiesse shuvante."
+
+#: core/KexiView.cpp:303
 msgid "Save"
 msgstr "Schaper"
 
-#: core/KexiView.cpp:233
+#: core/KexiView.cpp:304
 msgid "Save current design"
 msgstr "Schaper l' atuzlaedje do moumint"
 
-#: core/KexiView.cpp:234
+#: core/KexiView.cpp:305
 msgid "Saves changes made to the current design."
 msgstr "Schape les candjmints fwaits a l' atuzlaedje do moumint."
 
-#: core/KexiView.cpp:592
-msgid "Show:"
-msgstr "Mostrer :"
-
-#: core/KexiView.cpp:603 main/KexiMainWindow_p.h:980
+#: core/KexiView.cpp:695 main/KexiMainWindow_p.h:983
 msgid "Data"
 msgstr "Dinêyes"
 
-#: core/KexiView.cpp:614
+#: core/KexiView.cpp:699
 msgid "Design"
 msgstr "Atuzlaedje"
 
-#: core/KexiWindow.cpp:576 widget/kexidbconnectionwidget.cpp:90
+#: core/KexiWindow.cpp:94
+#, fuzzy
+#| msgid "Could not remove object."
+msgid "Could not create new object."
+msgstr "Dji n' a savou oister l' objet."
+
+#: core/KexiWindow.cpp:431 widget/kexidbconnectionwidget.cpp:100
 msgid "Save Changes"
 msgstr "Schaper candjmints"
 
-#: core/KexiWindow.cpp:579
+#: core/KexiWindow.cpp:434
 #, fuzzy
 #| msgctxt "Do Not Add Database Primary Key to a Table"
 #| msgid "Do Not Add"
 msgid "Do Not Switch"
 msgstr "Èn nén radjouter"
 
-#: core/KexiWindow.cpp:582
+#: core/KexiWindow.cpp:437
 #, fuzzy, kde-format
 #| msgid ""
 #| "Design has been changed. You must save it before switching to other view."
@@ -849,34 +872,28 @@ msgid ""
 msgstr ""
 "L' atuzlaedje a candjî. Vos l' divoz schaper divant d' passer a l' ôte vuwe."
 
-#: core/KexiWindow.cpp:585
+#: core/KexiWindow.cpp:440
 #, fuzzy
 #| msgid "Save Changes"
 msgid "Confirm Saving Changes"
 msgstr "Schaper candjmints"
 
-#: core/KexiWindow.cpp:606
+#: core/KexiWindow.cpp:461
 msgid ""
 "Design has been changed. You must save it before switching to other view."
 msgstr ""
 "L' atuzlaedje a candjî. Vos l' divoz schaper divant d' passer a l' ôte vuwe."
 
-#: core/KexiWindow.cpp:671 main/KexiMainWindow.cpp:2891
+#: core/KexiWindow.cpp:527 main/KexiMainWindow.cpp:2670
 #, kde-format
 msgid "Switching to other view failed (%1)."
 msgstr "Li passaedje a l' ôte vuwe a fwait berwete (%1)."
 
-#: core/KexiWindow.cpp:852
-#, fuzzy
-#| msgid "Could not remove object."
-msgid "Could not create new object."
-msgstr "Dji n' a savou oister l' objet."
-
-#: core/KexiWindow.cpp:863
+#: core/KexiWindow.cpp:679 core/KexiWindow.cpp:766
 msgid "Saving object's definition failed."
 msgstr "Li schapaedje do definixha da l' objet a fwait berwete."
 
-#: core/KexiWindow.cpp:947
+#: core/KexiWindow.cpp:707
 msgid "Saving object's data failed."
 msgstr "Li schapaedje des dinêyes da l' objet a fwait berwete."
 
@@ -1085,7 +1102,7 @@ msgctxt "(qtundo-format)"
 msgid "Add Page"
 msgstr "Dierinne pådje"
 
-#: formeditor/commands.cpp:2219 formeditor/WidgetTreeWidget.cpp:97
+#: formeditor/commands.cpp:2219 formeditor/WidgetTreeWidget.cpp:119
 #, kde-format
 msgid "Page %1"
 msgstr "Pådje %1"
@@ -1097,69 +1114,65 @@ msgctxt "(qtundo-format)"
 msgid "Remove Page"
 msgstr "Oister cayet"
 
-#: formeditor/connectiondialog.cpp:55
+#: formeditor/connectiondialog.cpp:80
 msgid "Edit Form Connections"
 msgstr ""
 
-#: formeditor/connectiondialog.cpp:97
+#: formeditor/connectiondialog.cpp:122
 msgid "&New Connection"
 msgstr ""
 
-#: formeditor/connectiondialog.cpp:101
+#: formeditor/connectiondialog.cpp:126
 msgid "&Remove Connection"
 msgstr ""
 
-#: formeditor/connectiondialog.cpp:120
+#: formeditor/connectiondialog.cpp:146
 msgid "OK?"
 msgstr ""
 
-#: formeditor/connectiondialog.cpp:123
+#: formeditor/connectiondialog.cpp:149
 msgid "Connection correctness"
 msgstr ""
 
-#: formeditor/connectiondialog.cpp:126
+#: formeditor/connectiondialog.cpp:152
 msgid "Sender"
 msgstr ""
 
-#: formeditor/connectiondialog.cpp:131
+#: formeditor/connectiondialog.cpp:157
 msgid "Signal"
 msgstr ""
 
-#: formeditor/connectiondialog.cpp:136
+#: formeditor/connectiondialog.cpp:162
 msgid "Receiver"
 msgstr ""
 
-#: formeditor/connectiondialog.cpp:140
+#: formeditor/connectiondialog.cpp:166
 msgid "Slot"
 msgstr ""
 
-#: formeditor/connectiondialog.cpp:228
+#: formeditor/connectiondialog.cpp:254
 msgid "<qt><h2>The connection is OK.</h2></qt>"
 msgstr ""
 
-#: formeditor/connectiondialog.cpp:247
+#: formeditor/connectiondialog.cpp:273
 msgid "<qt><h2>The connection is invalid.</h2></qt>"
 msgstr ""
 
-#: formeditor/connectiondialog.cpp:338
+#: formeditor/connectiondialog.cpp:364
 #, kde-format
 msgid "<qt>You have not selected item: <b>%1</b>.</qt>"
 msgstr ""
 
-#: formeditor/connectiondialog.cpp:351
+#: formeditor/connectiondialog.cpp:377
 msgid "The signal/slot arguments are not compatible."
 msgstr ""
 
-#: formeditor/connectiondialog.cpp:412
+#: formeditor/connectiondialog.cpp:438
 msgid "Do you want to delete this connection?"
 msgstr ""
 
-#: formeditor/connectiondialog.cpp:414
+#: formeditor/connectiondialog.cpp:440
 msgid "&Delete Connection"
-msgstr ""
-
-#: formeditor/container.cpp:1503
-msgid "Move multiple widgets"
 msgstr ""
 
 #: formeditor/editlistviewdialog.cpp:51
@@ -1195,7 +1208,7 @@ msgid "Contents"
 msgstr "Ådvins"
 
 #: formeditor/editlistviewdialog.cpp:120 formeditor/form.cpp:443
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1769
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1770
 #: plugins/tables/kexitabledesignerview.cpp:390
 msgid "Caption"
 msgstr "Ledjinde"
@@ -1640,7 +1653,7 @@ msgid "Push Button"
 msgstr ""
 
 #: formeditor/factories/stdwidgetfactory.cpp:259
-#: plugins/forms/kexidbfactory.cpp:310
+#: plugins/forms/kexidbfactory.cpp:254
 msgctxt ""
 "Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters."
@@ -1764,12 +1777,12 @@ msgid "A simple single-page rich text editor"
 msgstr ""
 
 #: formeditor/factories/stdwidgetfactory.cpp:348
-#: plugins/forms/kexidbfactory.cpp:331
+#: plugins/forms/kexidbfactory.cpp:275
 msgid "Slider"
 msgstr ""
 
 #: formeditor/factories/stdwidgetfactory.cpp:350
-#: plugins/forms/kexidbfactory.cpp:334
+#: plugins/forms/kexidbfactory.cpp:278
 msgctxt ""
 "Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters."
@@ -1781,12 +1794,12 @@ msgid "A horizontal slider"
 msgstr ""
 
 #: formeditor/factories/stdwidgetfactory.cpp:357
-#: plugins/forms/kexidbfactory.cpp:342
+#: plugins/forms/kexidbfactory.cpp:286
 msgid "Progress Bar"
 msgstr ""
 
 #: formeditor/factories/stdwidgetfactory.cpp:359
-#: plugins/forms/kexidbfactory.cpp:345
+#: plugins/forms/kexidbfactory.cpp:289
 msgctxt ""
 "Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters."
@@ -1906,7 +1919,7 @@ msgid "Indent"
 msgstr ""
 
 #: formeditor/factories/stdwidgetfactory.cpp:426
-#: plugins/forms/kexidbfactory.cpp:365
+#: plugins/forms/kexidbfactory.cpp:309
 msgid "Orientation"
 msgstr ""
 
@@ -1954,7 +1967,7 @@ msgid "Open Ext. Links"
 msgstr ""
 
 #: formeditor/factories/stdwidgetfactory.cpp:443
-msgctxt "Property: \"Click Me\" message for line edit"
+msgctxt "Property: \"Click Me\",message for line edit"
 msgid "Click Message"
 msgstr ""
 
@@ -2460,220 +2473,220 @@ msgstr ""
 msgid "*.ui|Qt Designer UI Files"
 msgstr ""
 
-#: formeditor/kexiactionselectiondialog.cpp:204
+#: formeditor/kexiactionselectiondialog.cpp:205
 msgid "No action"
 msgstr ""
 
-#: formeditor/kexiactionselectiondialog.cpp:210
+#: formeditor/kexiactionselectiondialog.cpp:211
 msgid "Application actions"
 msgstr ""
 
-#: formeditor/kexiactionselectiondialog.cpp:231
-#: formeditor/kexiactionselectiondialog.cpp:233
+#: formeditor/kexiactionselectiondialog.cpp:232
+#: formeditor/kexiactionselectiondialog.cpp:234
 msgctxt "Current form's actions"
 msgid "Current"
 msgstr "Do moumint"
 
-#: formeditor/kexiactionselectiondialog.cpp:273
+#: formeditor/kexiactionselectiondialog.cpp:274
 msgid "Open in Data View"
 msgstr ""
 
-#: formeditor/kexiactionselectiondialog.cpp:278
-#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:161
+#: formeditor/kexiactionselectiondialog.cpp:279
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:126
 #: plugins/scripting/kexiscripting/kexiscriptpart.cpp:126
-#: widget/navigator/KexiProjectNavigator.cpp:170
+#: widget/navigator/KexiProjectNavigator.cpp:216
 msgid "Execute"
 msgstr "Enonder"
 
-#: formeditor/kexiactionselectiondialog.cpp:285
+#: formeditor/kexiactionselectiondialog.cpp:286
 #: plugins/reports/kexireportview.cpp:82
 msgid "Print"
 msgstr ""
 
-#: formeditor/kexiactionselectiondialog.cpp:293
+#: formeditor/kexiactionselectiondialog.cpp:294
 msgid "Show Page Setup"
 msgstr ""
 
-#: formeditor/kexiactionselectiondialog.cpp:301
+#: formeditor/kexiactionselectiondialog.cpp:302
 msgctxt "Note: use multiple rows if needed"
 msgid ""
 "Export to File\n"
 "As Data Table"
 msgstr ""
 
-#: formeditor/kexiactionselectiondialog.cpp:307
+#: formeditor/kexiactionselectiondialog.cpp:308
 msgctxt "Note: use multiple rows if needed"
 msgid ""
 "Copy to Clipboard\n"
 "As Data Table"
 msgstr ""
 
-#: formeditor/kexiactionselectiondialog.cpp:312
+#: formeditor/kexiactionselectiondialog.cpp:313
 msgid "Create New Object"
 msgstr ""
 
-#: formeditor/kexiactionselectiondialog.cpp:317
+#: formeditor/kexiactionselectiondialog.cpp:318
 msgid "Open in Design View"
 msgstr ""
 
-#: formeditor/kexiactionselectiondialog.cpp:322
+#: formeditor/kexiactionselectiondialog.cpp:323
 msgid "Open in Text View"
 msgstr ""
 
-#: formeditor/kexiactionselectiondialog.cpp:327
+#: formeditor/kexiactionselectiondialog.cpp:328
 msgid "Close View"
 msgstr ""
 
-#: formeditor/kexiactionselectiondialog.cpp:364
+#: formeditor/kexiactionselectiondialog.cpp:365
 #, kde-format
 msgid "&Select macro to be executed after clicking \"%1\" button:"
 msgstr ""
 
-#: formeditor/kexiactionselectiondialog.cpp:367
+#: formeditor/kexiactionselectiondialog.cpp:368
 #, kde-format
 msgid "&Select script to be executed after clicking \"%1\" button:"
 msgstr ""
 
-#: formeditor/kexiactionselectiondialog.cpp:371
+#: formeditor/kexiactionselectiondialog.cpp:372
 #, kde-format
 msgid "&Select object to be opened after clicking \"%1\" button:"
 msgstr ""
 
-#: formeditor/kexiactionselectiondialog.cpp:409
+#: formeditor/kexiactionselectiondialog.cpp:410
 #, fuzzy
 #| msgid "&Assign Action..."
 msgid "Assigning Action to Button"
 msgstr "&Aroyî accion..."
 
-#: formeditor/kexiactionselectiondialog.cpp:413
+#: formeditor/kexiactionselectiondialog.cpp:414
 msgctxt "Assign action"
 msgid "&Assign"
 msgstr ""
 
-#: formeditor/kexiactionselectiondialog.cpp:413
+#: formeditor/kexiactionselectiondialog.cpp:414
 msgid "Assign action"
 msgstr ""
 
-#: formeditor/kexiactionselectiondialog.cpp:447
+#: formeditor/kexiactionselectiondialog.cpp:448
 msgid "Action category:"
 msgstr ""
 
-#: formeditor/kexiactionselectiondialog.cpp:503
+#: formeditor/kexiactionselectiondialog.cpp:504
 msgid "Action to execute:"
 msgstr ""
 
-#: formeditor/kexiactionselectiondialog.cpp:606
+#: formeditor/kexiactionselectiondialog.cpp:607
 #, kde-format
 msgid "&Select action to be executed after clicking \"%1\" button:"
 msgstr ""
 
-#: formeditor/richtextdialog.cpp:45
+#: formeditor/richtextdialog.cpp:72
 msgid "Edit Rich Text"
 msgstr ""
 
-#: formeditor/richtextdialog.cpp:67
+#: formeditor/richtextdialog.cpp:94
 msgid "Bold"
 msgstr ""
 
-#: formeditor/richtextdialog.cpp:69
+#: formeditor/richtextdialog.cpp:96
 msgid "Italic"
 msgstr ""
 
-#: formeditor/richtextdialog.cpp:71
+#: formeditor/richtextdialog.cpp:98
 msgid "Underline"
 msgstr ""
 
-#: formeditor/richtextdialog.cpp:75
+#: formeditor/richtextdialog.cpp:102
 msgid "Superscript"
 msgstr ""
 
-#: formeditor/richtextdialog.cpp:77
+#: formeditor/richtextdialog.cpp:104
 msgid "Subscript"
 msgstr ""
 
-#: formeditor/richtextdialog.cpp:82
+#: formeditor/richtextdialog.cpp:109
 msgid "Left Align"
 msgstr ""
 
-#: formeditor/richtextdialog.cpp:85
+#: formeditor/richtextdialog.cpp:112
 msgid "Centered"
 msgstr ""
 
-#: formeditor/richtextdialog.cpp:88
+#: formeditor/richtextdialog.cpp:115
 msgid "Right Align"
 msgstr ""
 
-#: formeditor/richtextdialog.cpp:91
+#: formeditor/richtextdialog.cpp:118
 msgid "Justified"
 msgstr ""
 
-#: formeditor/tabstopdialog.cpp:49
+#: formeditor/tabstopdialog.cpp:70
 msgid "Edit Tab Order"
 msgstr ""
 
-#: formeditor/tabstopdialog.cpp:78
+#: formeditor/tabstopdialog.cpp:96
 msgid "Move Up"
 msgstr ""
 
-#: formeditor/tabstopdialog.cpp:79
+#: formeditor/tabstopdialog.cpp:97
 msgid "Move widget up"
 msgstr ""
 
-#: formeditor/tabstopdialog.cpp:83
+#: formeditor/tabstopdialog.cpp:101
 msgid "Move Down"
 msgstr ""
 
-#: formeditor/tabstopdialog.cpp:84
+#: formeditor/tabstopdialog.cpp:102
 msgid "Move widget down"
 msgstr ""
 
-#: formeditor/tabstopdialog.cpp:89
+#: formeditor/tabstopdialog.cpp:107
 msgid "Handle tab order automatically"
 msgstr ""
 
-#: formeditor/widgetfactory.cpp:133
+#: formeditor/widgetfactory.cpp:159
 #, kde-format
 msgid "Edit Contents of %1"
 msgstr ""
 
-#: formeditor/widgetlibrary.cpp:248
+#: formeditor/widgetlibrary.cpp:222
 #, kde-format
 msgid ""
 "Incompatible database driver's \"%1\" version: found version %2, expected "
 "version %3."
 msgstr ""
 
-#: formeditor/widgetlibrary.cpp:771
+#: formeditor/widgetlibrary.cpp:681
 msgctxt "Insert Horizontal Widget"
 msgid "Insert Horizontal"
 msgstr ""
 
-#: formeditor/widgetlibrary.cpp:777
+#: formeditor/widgetlibrary.cpp:687
 msgctxt "Insert Vertical Widget"
 msgid "Insert Vertical"
 msgstr ""
 
-#: formeditor/widgetlibrary.cpp:781
+#: formeditor/widgetlibrary.cpp:691
 #, kde-format
 msgid "Insert Widget: %1"
 msgstr ""
 
-#: formeditor/widgetlibrary.cpp:785
+#: formeditor/widgetlibrary.cpp:695
 msgid "Cancel"
 msgstr ""
 
-#: formeditor/WidgetTreeWidget.cpp:105
+#: formeditor/WidgetTreeWidget.cpp:127
 #, fuzzy
 #| msgid "Last Page"
 msgctxt "Tab widget's page"
 msgid "Tab Page"
 msgstr "Dierinne pådje"
 
-#: formeditor/WidgetTreeWidget.cpp:274
+#: formeditor/WidgetTreeWidget.cpp:231
 msgid "Widget name"
 msgstr ""
 
-#: formeditor/WidgetTreeWidget.cpp:274
+#: formeditor/WidgetTreeWidget.cpp:231
 msgctxt "Widget's type"
 msgid "Type"
 msgstr "Sôre"
@@ -2712,7 +2725,7 @@ msgstr ""
 msgid "Could not export back to destination database"
 msgstr ""
 
-#: kexidb/drivers/xbase/xbaseexport.cpp:279 migration/keximigrate.cpp:140
+#: kexidb/drivers/xbase/xbaseexport.cpp:279 migration/keximigrate.cpp:199
 #, kde-format
 msgid "Could not connect to data source \"%1\"."
 msgstr ""
@@ -2728,7 +2741,7 @@ msgid ""
 "Could not create table in destination \"%1\". Error reading table \"%2\"."
 msgstr ""
 
-#: kexidb/drivers/xbase/xbaseexport.cpp:333 migration/keximigrate.cpp:386
+#: kexidb/drivers/xbase/xbaseexport.cpp:333 migration/keximigrate.cpp:445
 #, kde-format
 msgid "Could not copy table \"%1\" to destination database."
 msgstr ""
@@ -2803,8 +2816,8 @@ msgid "Fi&nd:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (KPushButton, m_btnReplace)
-#: main/kexifinddialog.ui:103 migration/importwizard.cpp:809
-#: widget/KexiNameDialog.cpp:135 widget/utils/kexicontextmenuutils.cpp:234
+#: main/kexifinddialog.ui:103 migration/importwizard.cpp:865
+#: widget/KexiNameDialog.cpp:168 widget/utils/kexicontextmenuutils.cpp:234
 msgid "&Replace"
 msgstr "&Mete al plaece"
 
@@ -2891,88 +2904,88 @@ msgstr ""
 msgid "Prompt on replace"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:177
+#: main/KexiMainWindow.cpp:170
 #, fuzzy
 #| msgid "&Clear"
 msgid "&Close Tab"
 msgstr "&Disfacer"
 
-#: main/KexiMainWindow.cpp:178
+#: main/KexiMainWindow.cpp:171
 msgid "Close the current tab"
 msgstr "Clôre li linwete do moumint"
 
-#: main/KexiMainWindow.cpp:179
+#: main/KexiMainWindow.cpp:172
 #, fuzzy
 #| msgid "Close the current tab"
 msgid "Closes the current tab."
 msgstr "Clôre li linwete do moumint"
 
-#: main/KexiMainWindow.cpp:414
+#: main/KexiMainWindow.cpp:415
 #, kde-format
 msgctxt "Action name with three dots..."
 msgid "%1..."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:456
+#: main/KexiMainWindow.cpp:455
 msgid "Create a new project"
 msgstr "Ahiver on novea pordjet"
 
-#: main/KexiMainWindow.cpp:458
+#: main/KexiMainWindow.cpp:457
 msgid "Creates a new project. Currently opened project is not affected."
 msgstr "Ahive on noû pordjet. On n' toutche nén å pordjet drovou pol moumint."
 
-#: main/KexiMainWindow.cpp:464
+#: main/KexiMainWindow.cpp:463
 msgid "Open an existing project"
 msgstr "Drovi on pordjet egzistant"
 
-#: main/KexiMainWindow.cpp:466
+#: main/KexiMainWindow.cpp:465
 msgid "Opens an existing project. Currently opened project is not affected."
 msgstr ""
 "Drove on pordjet egzistant. On n' toutche nén å pordjet drovou pol moumint."
 
-#: main/KexiMainWindow.cpp:472
+#: main/KexiMainWindow.cpp:471
 msgid "&Download Example Databases..."
 msgstr "Aberweter båzes di dnêyes d' egzimpe..."
 
-#: main/KexiMainWindow.cpp:473
+#: main/KexiMainWindow.cpp:472
 msgid "Download example databases from the Internet"
 msgstr "Aberweter båzes di dnêyes d' egzimpe del Daegntoele"
 
-#: main/KexiMainWindow.cpp:474
+#: main/KexiMainWindow.cpp:473
 msgid "Downloads example databases from the Internet."
 msgstr "Aberwete des båzes di dnêyes d' egzimpe del Daegntoele."
 
-#: main/KexiMainWindow.cpp:481
+#: main/KexiMainWindow.cpp:480
 msgid "Welcome"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:485
+#: main/KexiMainWindow.cpp:484
 msgid "Show Welcome page"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:487
+#: main/KexiMainWindow.cpp:486
 msgid ""
 "Shows Welcome page with list of recently opened projects and other "
 "information. "
 msgstr ""
 
-#: main/KexiMainWindow.cpp:492
+#: main/KexiMainWindow.cpp:491
 msgid "Save object changes"
 msgstr "Schaper candjmints des objets"
 
-#: main/KexiMainWindow.cpp:493
+#: main/KexiMainWindow.cpp:492
 msgid "Saves object changes from currently selected window."
 msgstr "Schape les candjmints des objet del finiesse drovowe pol moumint."
 
-#: main/KexiMainWindow.cpp:497
+#: main/KexiMainWindow.cpp:495
 msgid "Save &As..."
 msgstr "Sch&aper et rlomer..."
 
-#: main/KexiMainWindow.cpp:498 main/KexiMainWindow.cpp:2745
+#: main/KexiMainWindow.cpp:496
 msgid "Save object as"
 msgstr "Schaper l' objet eyet l' rilomer"
 
-#: main/KexiMainWindow.cpp:500
+#: main/KexiMainWindow.cpp:498
 msgid ""
 "Saves object changes from currently selected window under a new name (within "
 "the same project)."
@@ -2980,89 +2993,89 @@ msgstr ""
 "Schape les candjmints des objet del finiesse drovowe pol moumint avou on "
 "novea no (dins l' minme pordjet)."
 
-#: main/KexiMainWindow.cpp:506
+#: main/KexiMainWindow.cpp:505
 msgid "Project Properties"
 msgstr "Prôpietés do pordjet"
 
-#: main/KexiMainWindow.cpp:521
+#: main/KexiMainWindow.cpp:519
 msgid "&Import, Export or Send..."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:522
+#: main/KexiMainWindow.cpp:520
 #, fuzzy
 #| msgid "Import entire database as a Kexi project"
 msgid "Import, export or send project"
 msgstr "Abaguer tote ene båze di dnêyes come pordjet Kexi"
 
-#: main/KexiMainWindow.cpp:524
+#: main/KexiMainWindow.cpp:522
 #, fuzzy
 #| msgid "Imports entire database as a Kexi project."
 msgid "Imports, exports or sends project."
 msgstr "Abague tote ene båze di dnêyes come pordjet Kexi."
 
-#: main/KexiMainWindow.cpp:530
+#: main/KexiMainWindow.cpp:528
 #, fuzzy
 #| msgid "&Clear"
 msgctxt "Close Project"
 msgid "&Close"
 msgstr "&Disfacer"
 
-#: main/KexiMainWindow.cpp:531
+#: main/KexiMainWindow.cpp:529
 msgid "Close the current project"
 msgstr "Clôre li pordjet do moumint"
 
-#: main/KexiMainWindow.cpp:532
+#: main/KexiMainWindow.cpp:530
 msgid "Closes the current project."
 msgstr "Clôt l' pordjet do moumint."
 
-#: main/KexiMainWindow.cpp:539
+#: main/KexiMainWindow.cpp:537
 #, fuzzy
 #| msgid "Could not start Kexi application this way."
 msgid "Quits Kexi application."
 msgstr "Dji n' a savou enonder l' programe Kexi di cisse manire chal."
 
-#: main/KexiMainWindow.cpp:544
+#: main/KexiMainWindow.cpp:542
 msgid "&Relationships..."
 msgstr "&Loyaedjes..."
 
-#: main/KexiMainWindow.cpp:545
+#: main/KexiMainWindow.cpp:543
 msgid "Project relationships"
 msgstr "Loyaedjes do pordjet"
 
-#: main/KexiMainWindow.cpp:546
+#: main/KexiMainWindow.cpp:544
 msgid "Shows project relationships."
 msgstr "Mostere les loyaedjes do pordjet."
 
-#: main/KexiMainWindow.cpp:554
+#: main/KexiMainWindow.cpp:552
 msgid "&Import Database..."
 msgstr "&Abaguer båze di dnêyes..."
 
-#: main/KexiMainWindow.cpp:555
+#: main/KexiMainWindow.cpp:553
 msgid "Import entire database as a Kexi project"
 msgstr "Abaguer tote ene båze di dnêyes come pordjet Kexi"
 
-#: main/KexiMainWindow.cpp:557
+#: main/KexiMainWindow.cpp:555
 msgid "Imports entire database as a Kexi project."
 msgstr "Abague tote ene båze di dnêyes come pordjet Kexi."
 
-#: main/KexiMainWindow.cpp:562
+#: main/KexiMainWindow.cpp:560
 msgid "Import Tables"
 msgstr "Abaguer tåves"
 
-#: main/KexiMainWindow.cpp:563 main/KexiMainWindow.cpp:564
+#: main/KexiMainWindow.cpp:561 main/KexiMainWindow.cpp:562
 msgid "Import data from an external source into this database"
 msgstr ""
 "Abaguer des dnêyes d' on dfoûtrin sourdant dins cisse båze di dnêyes ci"
 
-#: main/KexiMainWindow.cpp:569
+#: main/KexiMainWindow.cpp:567
 msgid "&Compact Database..."
 msgstr "&Rastrinde båze di dnêyes..."
 
-#: main/KexiMainWindow.cpp:570
+#: main/KexiMainWindow.cpp:568
 msgid "Compact the current database project"
 msgstr "Rastrinde li pordjet d' båze di dnêyes do moumint"
 
-#: main/KexiMainWindow.cpp:572
+#: main/KexiMainWindow.cpp:570
 msgid ""
 "Compacts the current database project, so it will take less space and work "
 "faster."
@@ -3070,379 +3083,379 @@ msgstr ""
 "Rastrind l' pordjet d' båze di dnêyes do moumint po k' i prinde moens di "
 "plaece eyet overe pus abeye."
 
-#: main/KexiMainWindow.cpp:582
+#: main/KexiMainWindow.cpp:580
 msgctxt "Import->Table Data From File..."
 msgid "Import Data From &File..."
 msgstr "Abaguer dnêyes d' on &fitchî..."
 
-#: main/KexiMainWindow.cpp:583
+#: main/KexiMainWindow.cpp:581
 msgid "Import table data from a file"
 msgstr "Abaguer des dnêyes d' ene tåve a pårti d' on fitchî"
 
-#: main/KexiMainWindow.cpp:584
+#: main/KexiMainWindow.cpp:582
 msgid "Imports table data from a file."
 msgstr "Abague des dnêyes d' ene tåve a pårti d' on fitchî."
 
-#: main/KexiMainWindow.cpp:592
+#: main/KexiMainWindow.cpp:590
 msgctxt "Export->Table or Query Data to File..."
 msgid "Export Data to &File..."
 msgstr "Ebaguer dnêyes èn on &fitchî..."
 
-#: main/KexiMainWindow.cpp:594
+#: main/KexiMainWindow.cpp:592
 #, fuzzy
 #| msgid "Export data from the active table or query data to a file"
 msgid "Export data from the active table or query to a file"
 msgstr "Ebaguer des dnêyes del tåve ou do rcweraedje èn alaedje èn on fitchî"
 
-#: main/KexiMainWindow.cpp:596
+#: main/KexiMainWindow.cpp:594
 #, fuzzy
 #| msgid "Exports data from the active table or query data to a file."
 msgid "Exports data from the active table or query to a file."
 msgstr "Ebague des dnêyes del tåve ou do rcweraedje èn alaedje èn on fitchî."
 
-#: main/KexiMainWindow.cpp:608
+#: main/KexiMainWindow.cpp:606
 msgid "Print data from the active table or query"
 msgstr "Imprimer des dnêyes del tåve ou do rcweraedje èn alaedje"
 
-#: main/KexiMainWindow.cpp:609
+#: main/KexiMainWindow.cpp:607
 msgid "Prints data from the active table or query."
 msgstr "Imprime des dnêyes del tåve ou do rcweraedje èn alaedje."
 
-#: main/KexiMainWindow.cpp:615
+#: main/KexiMainWindow.cpp:613
 msgid "Show print preview for the active table or query"
 msgstr ""
 "Mostrer l' voeyaedje divant d' imprimer pol tåve ou l' cweraedje èn alaedje"
 
-#: main/KexiMainWindow.cpp:617
+#: main/KexiMainWindow.cpp:615
 msgid "Shows print preview for the active table or query."
 msgstr ""
 "Mostere l' voeyaedje divant d' imprimer pol tåve ou l' cweraedje èn alaedje."
 
-#: main/KexiMainWindow.cpp:620
+#: main/KexiMainWindow.cpp:618
 msgid "Page Set&up..."
 msgstr "Epåd&jnaedje..."
 
-#: main/KexiMainWindow.cpp:622
+#: main/KexiMainWindow.cpp:620
 msgid "Show page setup for printing the active table or query"
 msgstr ""
 "Mostrer l' epådjnaedje po l' imprimaedje del tåve ou do rcweraedje ovrant"
 
-#: main/KexiMainWindow.cpp:624 widget/navigator/KexiProjectNavigator.cpp:200
+#: main/KexiMainWindow.cpp:622 widget/navigator/KexiProjectNavigator.cpp:246
 msgid "Shows page setup for printing the active table or query."
 msgstr ""
 "Mostere l' epådjnaedje po l' imprimaedje del tåve ou do rcweraedje ovrant."
 
-#: main/KexiMainWindow.cpp:639
+#: main/KexiMainWindow.cpp:637
 msgctxt "Paste Special->As Data &Table..."
 msgid "Paste Special..."
 msgstr "Aclapaedje sipeciå..."
 
-#: main/KexiMainWindow.cpp:641
+#: main/KexiMainWindow.cpp:639
 msgid "Paste clipboard data as a table"
 msgstr "Aclaper les dnêyes do presse-papî come on tåvlea"
 
-#: main/KexiMainWindow.cpp:643
+#: main/KexiMainWindow.cpp:641
 msgid "Pastes clipboard data to a table."
 msgstr "Aclape les dnêyes do presse-papî come on tåvlea."
 
-#: main/KexiMainWindow.cpp:650
+#: main/KexiMainWindow.cpp:648
 msgctxt "Copy Special->Table or Query Data..."
 msgid "Copy Special..."
 msgstr "Copiaedje sipeciå..."
 
-#: main/KexiMainWindow.cpp:652
+#: main/KexiMainWindow.cpp:650
 msgid "Copy selected table or query data to clipboard"
 msgstr "Copyî les dnêyes del tåve ou do cweraedje di tchoezi e presse-papî"
 
-#: main/KexiMainWindow.cpp:654
+#: main/KexiMainWindow.cpp:652
 msgid "Copies selected table or query data to clipboard."
 msgstr "Copeye les dnêyes del tåve ou do cweraedje di tchoezi e presse-papî."
 
-#: main/KexiMainWindow.cpp:659
+#: main/KexiMainWindow.cpp:657
 msgid "Reverts the most recent editing action."
 msgstr "Disfwait les dierins faitindjes d' aspougnaedje."
 
-#: main/KexiMainWindow.cpp:661
+#: main/KexiMainWindow.cpp:659
 msgid "Reverts the most recent undo action."
 msgstr "Disfwait les dierins faitindjes di disfijhaedje."
 
-#: main/KexiMainWindow.cpp:673
+#: main/KexiMainWindow.cpp:664
 #, fuzzy
 #| msgid "Find"
 msgid "Find text"
 msgstr "Trover"
 
-#: main/KexiMainWindow.cpp:674
+#: main/KexiMainWindow.cpp:665
 msgid "Looks up the first occurrence of a piece of text."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:692
+#: main/KexiMainWindow.cpp:683
 msgid "&Delete"
 msgstr "&Disfacer"
 
-#: main/KexiMainWindow.cpp:694
+#: main/KexiMainWindow.cpp:685
 msgid "Delete selected object"
 msgstr "Disfacer objet d' tchoezi"
 
-#: main/KexiMainWindow.cpp:695
+#: main/KexiMainWindow.cpp:686
 msgid "Deletes currently selected object."
 msgstr "Disface l' objet tchoezi pol moumint."
 
-#: main/KexiMainWindow.cpp:697
+#: main/KexiMainWindow.cpp:688
 #, fuzzy
 #| msgid "Delete Row"
 msgid "Delete Record"
 msgstr "Disfacer roye"
 
-#: main/KexiMainWindow.cpp:699
+#: main/KexiMainWindow.cpp:690
 #, fuzzy
 #| msgid "Delete currently selected row"
 msgid "Delete currently selected record"
 msgstr "Disface li roye tchoezeye pol moumint"
 
-#: main/KexiMainWindow.cpp:700
+#: main/KexiMainWindow.cpp:691
 #, fuzzy
 #| msgid "Deletes currently selected row."
 msgid "Deletes currently selected record."
 msgstr "Disface li roye tchoezeye pol moumint."
 
-#: main/KexiMainWindow.cpp:702
+#: main/KexiMainWindow.cpp:693
 msgid "Clear Table Contents"
 msgstr "Disfacer çou k' i gn a el tåve"
 
-#: main/KexiMainWindow.cpp:704
+#: main/KexiMainWindow.cpp:695
 msgid "Clear table contents"
 msgstr "Disfacer çou k' i gn a el tåve"
 
-#: main/KexiMainWindow.cpp:705
+#: main/KexiMainWindow.cpp:696
 msgid "Clears table contents."
 msgstr "Disface çou k' i gn a el tåve."
 
-#: main/KexiMainWindow.cpp:708
+#: main/KexiMainWindow.cpp:699
 msgid "Edit Item"
 msgstr "Candjî cayet"
 
-#: main/KexiMainWindow.cpp:711
+#: main/KexiMainWindow.cpp:702
 msgid "Edit currently selected item"
 msgstr "Candjî cayet tchoezi pol moumint"
 
-#: main/KexiMainWindow.cpp:712
+#: main/KexiMainWindow.cpp:703
 msgid "Edits currently selected item."
 msgstr "Candje li cayet tchoezi pol moumint."
 
-#: main/KexiMainWindow.cpp:714
+#: main/KexiMainWindow.cpp:705
 msgid "&Insert Empty Row"
 msgstr "S&ititchî vude roye"
 
-#: main/KexiMainWindow.cpp:718
+#: main/KexiMainWindow.cpp:709
 msgid "Insert one empty row above"
 msgstr "Sititche ene vude roye pa dzeu"
 
-#: main/KexiMainWindow.cpp:720
+#: main/KexiMainWindow.cpp:711
 msgid "Inserts one empty row above currently selected table row."
 msgstr "Sititche ene vude roye pa dzeu l' roye del tåve tchoezeye pol moumint."
 
-#: main/KexiMainWindow.cpp:777
+#: main/KexiMainWindow.cpp:768
 #, fuzzy
 #| msgid "Project Navigator"
 msgid "Switch to Project Navigator"
 msgstr "Naivieu e pordjet"
 
-#: main/KexiMainWindow.cpp:779
+#: main/KexiMainWindow.cpp:770
 #, fuzzy
 #| msgid "Go to project navigator panel"
 msgid "Switch to Project Navigator panel"
 msgstr "Potchî sol sicriftôr do naivieu e pordjet"
 
-#: main/KexiMainWindow.cpp:780
+#: main/KexiMainWindow.cpp:771
 #, fuzzy
 #| msgid "Goes to project navigator panel."
 msgid "Switches to Project Navigator panel."
 msgstr "Potche sol sicriftôr do naivieu e pordjet."
 
-#: main/KexiMainWindow.cpp:787
+#: main/KexiMainWindow.cpp:778
 #, fuzzy
 #| msgid "Switch to design view"
 msgid "Switch to Main Area"
 msgstr "Passer al vuwe di l' atuzlaedje"
 
-#: main/KexiMainWindow.cpp:788
+#: main/KexiMainWindow.cpp:779
 #, fuzzy
 #| msgid "Go to main area"
 msgid "Switch to main area"
 msgstr "Potchî al mwaisse redjon"
 
-#: main/KexiMainWindow.cpp:789
+#: main/KexiMainWindow.cpp:780
 #, fuzzy
 #| msgid "Goes to main area."
 msgid "Switches to main area."
 msgstr "Potche al mwaisse redjon."
 
-#: main/KexiMainWindow.cpp:795
+#: main/KexiMainWindow.cpp:786
 #, fuzzy
 #| msgid "Property Editor"
 msgid "Switch to Property Editor"
 msgstr "Aspougneu des prôpietés"
 
-#: main/KexiMainWindow.cpp:796
+#: main/KexiMainWindow.cpp:787
 #, fuzzy
 #| msgid "Go to property editor panel"
 msgid "Switch to Property Editor panel"
 msgstr "Potchî sol sicriftôr di l' aspougneu des prôpietés"
 
-#: main/KexiMainWindow.cpp:797
+#: main/KexiMainWindow.cpp:788
 #, fuzzy
 #| msgid "Goes to property editor panel."
 msgid "Switches to Property Editor panel."
 msgstr "Potche sol sicriftôr di l' aspougneu des prôpietés."
 
-#: main/KexiMainWindow.cpp:804
+#: main/KexiMainWindow.cpp:795
 #, fuzzy
 #| msgid "Switch to data view"
 msgid "Switch to Global Search"
 msgstr "Passer al vuwe des dnêyes"
 
-#: main/KexiMainWindow.cpp:805
+#: main/KexiMainWindow.cpp:796
 msgid "Switch to Global Search box"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:806
+#: main/KexiMainWindow.cpp:797
 #, fuzzy
 #| msgid "Switches to data view."
 msgid "Switches to Global Search box."
 msgstr "Passe al vuwe des dnêyes."
 
-#: main/KexiMainWindow.cpp:810
+#: main/KexiMainWindow.cpp:801
 #, fuzzy
 #| msgid "&Save Row"
 msgid "&Save Record"
 msgstr "&Schaper roye"
 
-#: main/KexiMainWindow.cpp:812
+#: main/KexiMainWindow.cpp:803
 #, fuzzy
 #| msgid "Save changes made to the current row"
 msgid "Save changes made to the current record"
 msgstr "Schaper les candjmints fwaits al roye do moumint"
 
-#: main/KexiMainWindow.cpp:813
+#: main/KexiMainWindow.cpp:804
 #, fuzzy
 #| msgid "Saves changes made to the current row."
 msgid "Saves changes made to the current record."
 msgstr "Schape les candjmints fwaits al roye do moumint."
 
-#: main/KexiMainWindow.cpp:816
+#: main/KexiMainWindow.cpp:807
 #, fuzzy
 #| msgid "&Cancel Row Changes"
 msgid "&Cancel Record Changes"
 msgstr "&Rinoncî ås candjmints del roye"
 
-#: main/KexiMainWindow.cpp:819
+#: main/KexiMainWindow.cpp:810
 #, fuzzy
 #| msgid "Cancel changes made to the current row"
 msgid "Cancel changes made to the current record"
 msgstr "Rinoncî åzès candjmints fwaits al roye do moumint"
 
-#: main/KexiMainWindow.cpp:821
+#: main/KexiMainWindow.cpp:812
 #, fuzzy
 #| msgid "Cancels changes made to the current row."
 msgid "Cancels changes made to the current record."
 msgstr "Rinonce åzès candjmints fwaits al roye do moumint."
 
-#: main/KexiMainWindow.cpp:825
+#: main/KexiMainWindow.cpp:816
 msgid "&Execute"
 msgstr "&Enonder"
 
-#: main/KexiMainWindow.cpp:830
+#: main/KexiMainWindow.cpp:821
 msgid "&Filter"
 msgstr "&Passer al passete"
 
-#: main/KexiMainWindow.cpp:856
+#: main/KexiMainWindow.cpp:847
 msgid "&Font..."
 msgstr "&Fonte..."
 
-#: main/KexiMainWindow.cpp:858
+#: main/KexiMainWindow.cpp:849
 msgid "Change font for selected object"
 msgstr "Candjî fonte po l' objet di tchoezi"
 
-#: main/KexiMainWindow.cpp:859
+#: main/KexiMainWindow.cpp:850
 msgid "Changes font for selected object."
 msgstr "Candje li fonte po l' objet di tchoezi."
 
-#: main/KexiMainWindow.cpp:866
+#: main/KexiMainWindow.cpp:857
 msgid "&Next Window"
 msgstr "Finiesse &shuvante"
 
-#: main/KexiMainWindow.cpp:873
+#: main/KexiMainWindow.cpp:864
 msgid "Next window"
 msgstr "Finiesse shuvante"
 
-#: main/KexiMainWindow.cpp:874
+#: main/KexiMainWindow.cpp:865
 msgid "Switches to the next window."
 msgstr "Passe al finiesse shuvante."
 
-#: main/KexiMainWindow.cpp:879
+#: main/KexiMainWindow.cpp:870
 msgid "&Previous Window"
 msgstr "Finiesse di &dvant"
 
-#: main/KexiMainWindow.cpp:886
+#: main/KexiMainWindow.cpp:877
 msgid "Previous window"
 msgstr "Finiesse di dvant"
 
-#: main/KexiMainWindow.cpp:887
+#: main/KexiMainWindow.cpp:878
 msgid "Switches to the previous window."
 msgstr "Passe al finiesse di dvant."
 
-#: main/KexiMainWindow.cpp:912
+#: main/KexiMainWindow.cpp:903
 msgid "Lets you configure shortcut keys."
 msgstr "Vos leye apontyî les tapes di rascourti."
 
-#: main/KexiMainWindow.cpp:944
+#: main/KexiMainWindow.cpp:935
 msgid "Settings..."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:945
+#: main/KexiMainWindow.cpp:936
 #, fuzzy
 #| msgctxt "\"executing object\" action"
 #| msgid "executing"
 msgid "Kexi settings"
 msgstr "dj' enonde"
 
-#: main/KexiMainWindow.cpp:946
+#: main/KexiMainWindow.cpp:937
 msgid "Lets you to view and change Kexi settings."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:956
+#: main/KexiMainWindow.cpp:947
 msgid "This shows useful tips on the use of this application."
 msgstr ""
 "Çouchal mostere des ahessåvès racsegnes so l' eployaedje di c' programe."
 
-#: main/KexiMainWindow.cpp:962
+#: main/KexiMainWindow.cpp:953
 msgid "Give Feedback..."
 msgstr "Diner on rtour d' esperyince..."
 
-#: main/KexiMainWindow.cpp:969
+#: main/KexiMainWindow.cpp:960
 #, fuzzy
 #| msgid "Show view menu"
 msgid "Show Help Menu"
 msgstr "Mostrer l' dressêye vey"
 
-#: main/KexiMainWindow.cpp:970
+#: main/KexiMainWindow.cpp:961
 #, fuzzy
 #| msgid "Show view menu"
 msgid "Show Help menu"
 msgstr "Mostrer l' dressêye vey"
 
-#: main/KexiMainWindow.cpp:971
+#: main/KexiMainWindow.cpp:962
 #, fuzzy
 #| msgid "Show view menu"
 msgid "Shows Help menu."
 msgstr "Mostrer l' dressêye vey"
 
-#: main/KexiMainWindow.cpp:1349
+#: main/KexiMainWindow.cpp:1296
 msgid "reason:"
 msgstr "råjhon :"
 
-#: main/KexiMainWindow.cpp:1381
+#: main/KexiMainWindow.cpp:1328
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>Database project %1 does not appear to have been created using Kexi."
@@ -3454,84 +3467,84 @@ msgstr ""
 "<qt>Li pordjet d' Båze di dnêyes %1 ni shonne nén awè stî ahivé avou Kexi. "
 "<br><br>Voloz vs l' abaguer come novea pordjet Kexi ?</qt>"
 
-#: main/KexiMainWindow.cpp:1384
+#: main/KexiMainWindow.cpp:1331
 msgctxt "Import Database"
 msgid "&Import..."
 msgstr "&Abaguer..."
 
-#: main/KexiMainWindow.cpp:1445
+#: main/KexiMainWindow.cpp:1389
 msgid "Select New Project's Location"
 msgstr "Tchoezi eplaeçmint då novea pordjet"
 
-#: main/KexiMainWindow.cpp:1519
+#: main/KexiMainWindow.cpp:1463
 #, kde-format
 msgid "cannot create object - unknown object type \"%1\""
 msgstr "dji n' sai ahiver l' objet - sôre d' objet « %1 » nén cnoxhowe"
 
-#: main/KexiMainWindow.cpp:1521
+#: main/KexiMainWindow.cpp:1465
 #, kde-format
 msgid "unknown object type \"%1\""
 msgstr "sôre d' objet « %1 » nén cnoxhowe"
 
-#: main/KexiMainWindow.cpp:1529
+#: main/KexiMainWindow.cpp:1473
 #, kde-format
 msgid "cannot create object of type \"%1\""
 msgstr "dji n' sai ahiver l' objet del sôre « %1 »"
 
-#: main/KexiMainWindow.cpp:1541
+#: main/KexiMainWindow.cpp:1485
 msgctxt "\"executing object\" action"
 msgid "executing"
 msgstr "dj' enonde"
 
-#: main/KexiMainWindow.cpp:1544
+#: main/KexiMainWindow.cpp:1488
 msgid "making print preview for"
 msgstr "dji fwait l' voeyaedje divant d' imprimer po"
 
-#: main/KexiMainWindow.cpp:1546
+#: main/KexiMainWindow.cpp:1490
 msgid "printing"
 msgstr "dj' imprime"
 
-#: main/KexiMainWindow.cpp:1549
+#: main/KexiMainWindow.cpp:1493
 msgid "opening"
 msgstr "dji drove"
 
-#: main/KexiMainWindow.cpp:1553
+#: main/KexiMainWindow.cpp:1497
 msgid "table not found"
 msgstr "tåve nén trovêye"
 
-#: main/KexiMainWindow.cpp:1555
+#: main/KexiMainWindow.cpp:1499
 msgid "query not found"
 msgstr "cweraedje nén trové"
 
-#: main/KexiMainWindow.cpp:1557
+#: main/KexiMainWindow.cpp:1501
 msgid "macro not found"
 msgstr "macro nén trovêye"
 
-#: main/KexiMainWindow.cpp:1559
+#: main/KexiMainWindow.cpp:1503
 msgid "script not found"
 msgstr "scripe nén trové"
 
-#: main/KexiMainWindow.cpp:1561
+#: main/KexiMainWindow.cpp:1505
 msgid "object not found"
 msgstr "objet nén trové"
 
-#: main/KexiMainWindow.cpp:1569
+#: main/KexiMainWindow.cpp:1513
 msgid "cannot execute object"
 msgstr "dji n' sai enonder l' objet"
 
-#: main/KexiMainWindow.cpp:1578
+#: main/KexiMainWindow.cpp:1522
 msgid "cannot print object"
 msgstr "dji n' sai imprimer l' objet"
 
-#: main/KexiMainWindow.cpp:1586
+#: main/KexiMainWindow.cpp:1530
 msgid "cannot make print preview of object"
 msgstr "dji n' sai fé on voeyaedje divant d' imprimer di l' objet"
 
-#: main/KexiMainWindow.cpp:1608
+#: main/KexiMainWindow.cpp:1552
 msgid "cannot open object"
 msgstr "dji n' sai drovi l' objet"
 
-#: main/KexiMainWindow.cpp:1622
+#: main/KexiMainWindow.cpp:1565
 msgid ""
 "You have requested selected objects to be automatically opened or processed "
 "on startup. Several objects cannot be opened or processed."
@@ -3539,54 +3552,56 @@ msgstr ""
 "Vos avoz dmandé k' les objets tchoezis soeyexhe drovous otomaticmint ou "
 "traitî a l' enondaedje. Dji n' sai drovi ou traitî sacwants objets."
 
-#: main/KexiMainWindow.cpp:2035
+#: main/KexiMainWindow.cpp:1950
 msgid "Property Editor"
 msgstr "Aspougneu des prôpietés"
 
-#: main/KexiMainWindow.cpp:2063
+#: main/KexiMainWindow.cpp:1977
 #: widget/properties/KexiPropertyEditorView.cpp:46
 #: widget/utils/kexicontextmenuutils.cpp:98
 msgid "Properties"
 msgstr "Prôpietés"
 
-#: main/KexiMainWindow.cpp:2822
+#: main/KexiMainWindow.cpp:2601
 msgid "From File..."
 msgstr "D' on fitchî..."
 
-#: main/KexiMainWindow.cpp:2827
+#: main/KexiMainWindow.cpp:2606
 msgid "From Server..."
 msgstr "D' on sierveu..."
 
-#: main/KexiMainWindow.cpp:2877
+#: main/KexiMainWindow.cpp:2656
 #, kde-format
 msgid "Selected view is not supported for \"%1\" object."
 msgstr "Li vuwe di tchoezeye n' est nén sopoirtêye pa l' objet « %1 »."
 
-#: main/KexiMainWindow.cpp:2879
+#: main/KexiMainWindow.cpp:2658
 #, kde-format
 msgid "Selected view (%1) is not supported by this object type (%2)."
 msgstr ""
 "Li vuwe di tchoezeye (%1) n' est nén sopoirtêye pa cisse sôre d' objet (%2)."
 
-#: main/KexiMainWindow.cpp:2955
+#: main/KexiMainWindow.cpp:2729
+msgctxt "Could not save object under the original name."
+msgid "Could not save under the original name."
+msgstr ""
+
+#: main/KexiMainWindow.cpp:2755
 msgid "Save Object As"
 msgstr "Schaper l' objet eyet l' rilomer"
 
-#: main/KexiMainWindow.cpp:2979
-#, kde-format
-msgid "Saving \"%1\" object failed."
+#: main/KexiMainWindow.cpp:2791
+#, fuzzy, kde-format
+#| msgid "Saving \"%1\" object failed."
+msgctxt "@info Saving object failed"
+msgid "Saving <resource>%1</resource> object failed."
 msgstr "Li schapaedje di l' objet « %1 » a fwait berwete."
 
-#: main/KexiMainWindow.cpp:3000
-#, kde-format
-msgid "Saving new \"%1\" object failed."
-msgstr "Li schapaedje do novea objet « %1 » a fwait berwete."
-
-#: main/KexiMainWindow.cpp:3065 main/KexiMainWindow.cpp:4217
+#: main/KexiMainWindow.cpp:2911 main/KexiMainWindow.cpp:3976
 msgid "Save changes"
 msgstr "Schaper candjmints"
 
-#: main/KexiMainWindow.cpp:3067 main/KexiMainWindow.cpp:4219
+#: main/KexiMainWindow.cpp:2913 main/KexiMainWindow.cpp:3978
 #, kde-format
 msgid ""
 "Pressing this button will save all recent changes made in \"%1\" object."
@@ -3594,7 +3609,7 @@ msgstr ""
 "Si vs clitchîz so ç' boton ci, vos schapez tos les candjmints k' vos avoz "
 "fwaits dierinmint dins l' objet « %1 »."
 
-#: main/KexiMainWindow.cpp:3071
+#: main/KexiMainWindow.cpp:2917
 #, kde-format
 msgid ""
 "Pressing this button will discard all recent changes made in \"%1\" object."
@@ -3602,28 +3617,28 @@ msgstr ""
 "Si vs clitchîz so ç' boton ci, vos rnoncî a tos les candjmints k' vos avoz "
 "fwaits dierinmint dins l' objet « %1 »."
 
-#: main/KexiMainWindow.cpp:3093
+#: main/KexiMainWindow.cpp:2939
 msgid "Do you want to save changes?"
 msgstr "Voloz vs schaper les candjmints ?"
 
-#: main/KexiMainWindow.cpp:3277
+#: main/KexiMainWindow.cpp:3121
 #, kde-format
 msgctxt "opening is not allowed in \"data view/design view/text view\" mode"
 msgid "opening is not allowed in \"%1\" mode"
 msgstr "li drovaedje n' est nén permetou e môde « %1 »"
 
-#: main/KexiMainWindow.cpp:3327
+#: main/KexiMainWindow.cpp:3171
 #, kde-format
 msgid "Tab for \"%1\" (%2)."
 msgstr ""
 
-#: main/KexiMainWindow.cpp:3331
+#: main/KexiMainWindow.cpp:3175
 #, fuzzy, kde-format
 #| msgid "Table field \"%1\""
 msgid "Tab for \"%1\"."
 msgstr "Tchamp do tåvlea « %1 »"
 
-#: main/KexiMainWindow.cpp:3506
+#: main/KexiMainWindow.cpp:3344
 #, kde-format
 msgid ""
 "Do you want to permanently delete:\n"
@@ -3634,71 +3649,67 @@ msgstr ""
 "%1\n"
 "Si vs clitchîz so « Disfacer », vos n' sårîz nén disfé l' disfaçaedje."
 
-#: main/KexiMainWindow.cpp:3510
+#: main/KexiMainWindow.cpp:3348
 msgid "Delete"
 msgstr "Disfacer"
 
-#: main/KexiMainWindow.cpp:3564
+#: main/KexiMainWindow.cpp:3399
 msgid "Could not remove object."
 msgstr "Dji n' a savou oister l' objet."
 
-#: main/KexiMainWindow.cpp:3585
+#: main/KexiMainWindow.cpp:3420
 #, kde-format
 msgid ""
 "<para>Before renaming object <resource>%1</resource> it should be closed.</"
 "para><para>Do you want to close it?</para>"
 msgstr ""
 
-#: main/KexiMainWindow.cpp:3589
+#: main/KexiMainWindow.cpp:3424
 #, fuzzy
 #| msgid "Close windows"
 msgid "Close window"
 msgstr "Clôre finiesses"
 
-#: main/KexiMainWindow.cpp:3600
+#: main/KexiMainWindow.cpp:3435
 #, kde-format
 msgid "Renaming object \"%1\" failed."
 msgstr "Li rlomaedje di l' objet « %1 » a fwait berwete."
 
-#: main/KexiMainWindow.cpp:3617
+#: main/KexiMainWindow.cpp:3452
 #, fuzzy, kde-format
 #| msgid "Renaming object \"%1\" failed."
 msgid "Setting caption for object \"%1\" failed."
 msgstr "Li rlomaedje di l' objet « %1 » a fwait berwete."
 
-#: main/KexiMainWindow.cpp:3758
-msgid "Important Information"
-msgstr "Impôrtante informåcion"
-
-#: main/KexiMainWindow.cpp:3817
+#: main/KexiMainWindow.cpp:3593
 #, kde-format
 msgid "Could not start project \"%1\" in Final Mode."
 msgstr "Dji n' a savou enonder l' pordjet « %1 » e môde finå."
 
-#: main/KexiMainWindow.cpp:3821
+#: main/KexiMainWindow.cpp:3597
 msgid "No Final Mode data found."
 msgstr "Dji n' a trové nole dinêye di môde finå."
 
-#: main/KexiMainWindow.cpp:3828
+#: main/KexiMainWindow.cpp:3604
 msgid "Error reading Final Mode data."
 msgstr "Åk n' a nén stî come dji léjheu les dnêyes do môde finå."
 
-#: main/KexiMainWindow.cpp:3857
+#: main/KexiMainWindow.cpp:3633
 msgid "Specified plugin does not exist."
 msgstr "Li tchôke-divins di specifyî n' egzistêye nén."
 
-#: main/KexiMainWindow.cpp:3866
+#: main/KexiMainWindow.cpp:3642
 msgid "Specified object could not be opened."
 msgstr "Dji n' a savou drovi l' objet di specifyî."
 
-#: main/KexiMainWindow.cpp:3953
+#: main/KexiMainWindow.cpp:3712
 #, kde-format
 msgid "Compacting database file <nobr>\"%1\"</nobr> is not supported."
 msgstr ""
 "Li rastrindaedje do fitchî d' båze di dnêyes <nobr>\"%1\"</nobr> n' est nén "
 "sopoirté."
 
-#: main/KexiMainWindow.cpp:3965
+#: main/KexiMainWindow.cpp:3724
 msgid ""
 "The current project has to be closed before compacting the database. It will "
 "be open again after compacting.\n"
@@ -3710,7 +3721,7 @@ msgstr ""
 "\n"
 "Voloz vs tcheryî pus lon ?"
 
-#: main/KexiMainWindow.cpp:4223
+#: main/KexiMainWindow.cpp:3982
 #, kde-format
 msgid ""
 "Pressing this button will ignore all unsaved changes made in \"%1\" object."
@@ -3718,87 +3729,87 @@ msgstr ""
 "Si vs clitchîz so ç' boton ci, vos passez houte di tos les candjmints nén "
 "schapés k' vos avoz fwaits dins l' objet « %1 »."
 
-#: main/KexiMainWindow.cpp:4228
+#: main/KexiMainWindow.cpp:3987
 msgid "Do you want to save changes before printing?"
 msgstr "Voloz vs schaper les candjmints divant d' imprimer ?"
 
-#: main/KexiMainWindow.cpp:4230
+#: main/KexiMainWindow.cpp:3989
 msgid "Do you want to save changes before making print preview?"
 msgstr ""
 "Voloz vs schaper les candjmints divant l' prévoeyaedje di l' imprimaedje ?"
 
-#: main/KexiMainWindow.cpp:4232
+#: main/KexiMainWindow.cpp:3991
 msgid "Do you want to save changes before showing page setup?"
 msgstr "Voloz vs schaper les candjmints divant d' mostrer l' epådjnaedje ?"
 
-#: main/KexiMainWindow_p.h:897
+#: main/KexiMainWindow_p.h:899
 msgid "Task-based tabbed toolbar groups commands for application using tabs."
 msgstr ""
 "Li bår ås usteyes a linwetes båzé so les bouyes groupe les comandes po les "
 "programes eployant les linwetes."
 
-#: main/KexiMainWindow_p.h:934
+#: main/KexiMainWindow_p.h:936
 msgid "Shows bug reporting tool for Kexi application."
 msgstr "Mostere l' usteye di rapoirt di bug pol programe Kexi."
 
-#: main/KexiMainWindow_p.h:936
+#: main/KexiMainWindow_p.h:938
 #, fuzzy
 #| msgid "Shows \"What's This\" tool."
 msgid "Activates \"What's This\" tool."
 msgstr "Moster l' usteye « Cwè çki c' est d' ça »."
 
-#: main/KexiMainWindow_p.h:938 migration/importwizard.cpp:968
-#: migration/importwizard.cpp:975 migration/importwizard.cpp:977
-#: migration/importwizard.cpp:979 migration/importwizard.cpp:981
-#: migration/importwizard.cpp:983
+#: main/KexiMainWindow_p.h:940 migration/importwizard.cpp:1024
+#: migration/importwizard.cpp:1031 migration/importwizard.cpp:1033
+#: migration/importwizard.cpp:1035 migration/importwizard.cpp:1037
+#: migration/importwizard.cpp:1039
 msgid "Help"
 msgstr "Aidance"
 
-#: main/KexiMainWindow_p.h:939
+#: main/KexiMainWindow_p.h:941
 msgid "Shows Kexi Handbook."
 msgstr "Mostere les esplikêyes di Kexi."
 
-#: main/KexiMainWindow_p.h:941
+#: main/KexiMainWindow_p.h:943
 msgid "Shows information about Kexi application."
 msgstr "Mostere des informåcions åd fwait do programe Kexi."
 
-#: main/KexiMainWindow_p.h:943
+#: main/KexiMainWindow_p.h:945
 msgid "Shows information about K Desktop Environment."
 msgstr "Mostere des informåcions åd fwait d' K Desktop Environment."
 
-#: main/KexiMainWindow_p.h:971
+#: main/KexiMainWindow_p.h:974
 #, fuzzy
 #| msgid "File"
 msgctxt "File menu"
 msgid "&File"
 msgstr "Fitchî"
 
-#: main/KexiMainWindow_p.h:977 main/startup/KexiNewProjectAssistant.cpp:361
+#: main/KexiMainWindow_p.h:980 main/startup/KexiNewProjectAssistant.cpp:372
 msgid "Create"
 msgstr "Ahiver"
 
-#: main/KexiMainWindow_p.h:995
+#: main/KexiMainWindow_p.h:998
 msgid "External Data"
 msgstr "Difoûtrinnès dnêyes"
 
-#: main/KexiMainWindow_p.h:1023
+#: main/KexiMainWindow_p.h:1026
 msgid "Tools"
 msgstr "Usteyes"
 
-#: main/KexiMainWindow_p.h:1027
+#: main/KexiMainWindow_p.h:1030
 msgid "Form Design"
 msgstr "Atuzlaedje do formulaire"
 
-#: main/KexiMainWindow_p.h:1030
+#: main/KexiMainWindow_p.h:1033
 msgid "Report Design"
 msgstr "Atuzlaedje do rapoirt"
 
-#: main/KexiMainWindow_p.h:1756
+#: main/KexiMainWindow_p.h:1755
 #, kde-format
 msgid "Could not start %1 application."
 msgstr "Dji n' a savou enonder l' programe %1."
 
-#: main/KexiMainWindow_p.h:1757
+#: main/KexiMainWindow_p.h:1756
 #, kde-format
 msgid "Command \"%1\" failed."
 msgstr "Li cmande « %1 » a fwait berwete."
@@ -3812,7 +3823,7 @@ msgstr ""
 msgid "Choose Directory Where to Install Example Database"
 msgstr "Tchoezi l' ridant ewou astaler l' båze di dnêyes egzimpe"
 
-#: main/KexiSearchLineEdit.cpp:372
+#: main/KexiSearchLineEdit.cpp:376
 msgid "Search"
 msgstr ""
 
@@ -3846,124 +3857,124 @@ msgstr " Roye : %1 Col : %2 "
 msgid "Read only"
 msgstr "Lére seulmint"
 
-#: main/startup/KexiNewProjectAssistant.cpp:88
+#: main/startup/KexiNewProjectAssistant.cpp:89
 #, fuzzy
 #| msgid "Open Project"
 msgid "New Project"
 msgstr "Drovi pordjet"
 
-#: main/startup/KexiNewProjectAssistant.cpp:89
+#: main/startup/KexiNewProjectAssistant.cpp:90
 #, fuzzy
 #| msgid "Kexi will create a new blank database project."
 msgid ""
 "Kexi will create a new database project. Select blank database or template."
 msgstr "Kexi va ahiver on novea pordjet di vude båze di dnêyes."
 
-#: main/startup/KexiNewProjectAssistant.cpp:107
+#: main/startup/KexiNewProjectAssistant.cpp:108
 #, fuzzy
 #| msgid "Open Project"
 msgid "Blank Projects"
 msgstr "Drovi pordjet"
 
-#: main/startup/KexiNewProjectAssistant.cpp:111
+#: main/startup/KexiNewProjectAssistant.cpp:112
 #, fuzzy
 #| msgctxt "Keep this text narrow: split to multiple rows if needed"
 #| msgid "Blank Database"
 msgid "Blank database"
 msgstr "Vude båze di dnêyes"
 
-#: main/startup/KexiNewProjectAssistant.cpp:112
+#: main/startup/KexiNewProjectAssistant.cpp:113
 msgid "Database project without any objects"
 msgstr ""
 
-#: main/startup/KexiNewProjectAssistant.cpp:119
+#: main/startup/KexiNewProjectAssistant.cpp:120
 msgid "Office Templates"
 msgstr ""
 
-#: main/startup/KexiNewProjectAssistant.cpp:124
+#: main/startup/KexiNewProjectAssistant.cpp:125
 #, fuzzy
 #| msgid "Contents"
 msgid "Contacts"
 msgstr "Ådvins"
 
-#: main/startup/KexiNewProjectAssistant.cpp:125
+#: main/startup/KexiNewProjectAssistant.cpp:126
 msgid "Database for collecting and managing contacts"
 msgstr ""
 
-#: main/startup/KexiNewProjectAssistant.cpp:132
+#: main/startup/KexiNewProjectAssistant.cpp:133
 msgid "Movie catalog"
 msgstr ""
 
-#: main/startup/KexiNewProjectAssistant.cpp:133
+#: main/startup/KexiNewProjectAssistant.cpp:134
 #, fuzzy
 #| msgid "Database Connection"
 msgid "Database for collecting movies"
 msgstr "Raloyaedje al båze di dnêyes"
 
-#: main/startup/KexiNewProjectAssistant.cpp:162
+#: main/startup/KexiNewProjectAssistant.cpp:163
 msgid "Templates"
 msgstr ""
 
-#: main/startup/KexiNewProjectAssistant.cpp:168
+#: main/startup/KexiNewProjectAssistant.cpp:169
 #, fuzzy
 #| msgid "Select Storage Method"
 msgid "Storage Method"
 msgstr "Tchoezi metôde di stocaedje"
 
-#: main/startup/KexiNewProjectAssistant.cpp:169
+#: main/startup/KexiNewProjectAssistant.cpp:170
 msgid "Select a storage method which will be used to store the new project."
 msgstr ""
 
-#: main/startup/KexiNewProjectAssistant.cpp:202
+#: main/startup/KexiNewProjectAssistant.cpp:203
 msgid "New database"
 msgstr "Novele båze di dnêyes"
 
-#: main/startup/KexiNewProjectAssistant.cpp:206
+#: main/startup/KexiNewProjectAssistant.cpp:207
 #, fuzzy
 #| msgid "New Project Stored in File"
 msgid "Project Title & Filename"
 msgstr "Novea pordjet wårdé èn on fitchî"
 
-#: main/startup/KexiNewProjectAssistant.cpp:207
+#: main/startup/KexiNewProjectAssistant.cpp:208
 msgid ""
 "Enter title for the new project. Filename will be created automatically "
 "based on the title. You can change the filename too."
 msgstr ""
 
-#: main/startup/KexiNewProjectAssistant.cpp:227
+#: main/startup/KexiNewProjectAssistant.cpp:228
 #, fuzzy
 #| msgid "Save Object As"
 msgid "Save New Project As"
 msgstr "Schaper l' objet eyet l' rilomer"
 
-#: main/startup/KexiNewProjectAssistant.cpp:271
-#: main/startup/KexiNewProjectAssistant.cpp:461
+#: main/startup/KexiNewProjectAssistant.cpp:272
+#: main/startup/KexiNewProjectAssistant.cpp:472
 #, fuzzy
 #| msgid "Enter project caption."
 msgid "Enter project title."
 msgstr "Tapez l' ledjinde do pordjet."
 
-#: main/startup/KexiNewProjectAssistant.cpp:279
+#: main/startup/KexiNewProjectAssistant.cpp:280
 msgid ""
 "Enter valid project filename. The file should be located on this computer."
 msgstr ""
 
-#: main/startup/KexiNewProjectAssistant.cpp:292
+#: main/startup/KexiNewProjectAssistant.cpp:293
 #, fuzzy
 #| msgid "Creating New Project"
 msgid "Creating Project"
 msgstr "Dj' ahive on novea pordjet"
 
-#: main/startup/KexiNewProjectAssistant.cpp:293
+#: main/startup/KexiNewProjectAssistant.cpp:294
 msgid "Please wait while the project is created."
 msgstr ""
 
-#: main/startup/KexiNewProjectAssistant.cpp:315
-#: widget/kexidbconnectionwidget.cpp:139
+#: main/startup/KexiNewProjectAssistant.cpp:316
+#: widget/kexidbconnectionwidget.cpp:149
 msgid "Database Connection"
 msgstr "Raloyaedje al båze di dnêyes"
 
-#: main/startup/KexiNewProjectAssistant.cpp:316
+#: main/startup/KexiNewProjectAssistant.cpp:317
 msgid ""
 "Select database server's connection you wish to use to create a new Kexi "
 "project. <p>Here you may also add, edit or remove connections from the list."
@@ -3972,19 +3983,19 @@ msgstr ""
 "ahiver on novea pordjet Kexi. </p>Vos ploz chal eto radjouter, candjî ou "
 "disfacer des raloyaedjes del djivêye."
 
-#: main/startup/KexiNewProjectAssistant.cpp:349
+#: main/startup/KexiNewProjectAssistant.cpp:360
 #, fuzzy
 #| msgid "Select Project's Caption & Database Name"
 msgid "Project Title & Database Name"
 msgstr "Tchoezixhoz l' ledjinde do pordjet eyet l' no del båze di dnêyes"
 
-#: main/startup/KexiNewProjectAssistant.cpp:350
+#: main/startup/KexiNewProjectAssistant.cpp:361
 msgid ""
 "Enter title for the new project. Database name will be created automatically "
 "based on the title. You can change the database name too."
 msgstr ""
 
-#: main/startup/KexiNewProjectAssistant.cpp:421
+#: main/startup/KexiNewProjectAssistant.cpp:432
 #, fuzzy, kde-format
 #| msgid "Existing project databases on <b>%1</b> database server:"
 msgid "Existing project databases on <b>%1 (%2)</b> database server:"
@@ -3992,13 +4003,13 @@ msgstr ""
 "Båze di dnêyes do pordjet egzistantes sol sierveu di båze di dnêyes <b>%1</"
 "b> :"
 
-#: main/startup/KexiNewProjectAssistant.cpp:469
+#: main/startup/KexiNewProjectAssistant.cpp:480
 #, fuzzy
 #| msgid "Enter project's database name."
 msgid "Enter database name."
 msgstr "Dinez l' no del båze di dnêyes do pordjet."
 
-#: main/startup/KexiNewProjectAssistant.cpp:480
+#: main/startup/KexiNewProjectAssistant.cpp:491
 #, fuzzy
 #| msgid ""
 #| "<b>A project with database name \"%1\" already exists</b><p>Do you want "
@@ -4010,12 +4021,12 @@ msgstr ""
 "<p>On pordjet avou l' no d' båze di dnêyes « %1 » egzistêye dedja</"
 "b><p>Voloz vs li disfacer eyet nd ahiver èn ôte ?"
 
-#: main/startup/KexiNewProjectAssistant.cpp:483
+#: main/startup/KexiNewProjectAssistant.cpp:494
 msgid "Delete and Create New"
 msgstr ""
 
-#: main/startup/KexiNewProjectAssistant.cpp:680
-#: main/startup/KexiOpenProjectAssistant.cpp:283
+#: main/startup/KexiNewProjectAssistant.cpp:691
+#: main/startup/KexiOpenProjectAssistant.cpp:315
 msgid "Try Again"
 msgstr ""
 
@@ -4036,30 +4047,30 @@ msgid ""
 "server rather than a file."
 msgstr ""
 
-#: main/startup/KexiOpenProjectAssistant.cpp:38
-#: widget/KexiProjectSelectorWidget.cpp:304
+#: main/startup/KexiOpenProjectAssistant.cpp:39
+#: widget/KexiProjectSelectorWidget.cpp:321
 msgid "Open Project"
 msgstr "Drovi pordjet"
 
-#: main/startup/KexiOpenProjectAssistant.cpp:39
+#: main/startup/KexiOpenProjectAssistant.cpp:40
 msgid ""
 "Select project to open. You can choose project stored in file or on database "
 "server."
 msgstr ""
 
-#: main/startup/KexiOpenProjectAssistant.cpp:52
+#: main/startup/KexiOpenProjectAssistant.cpp:55
 #, fuzzy
 #| msgid "New Project Stored in File"
 msgid "Projects Stored in File"
 msgstr "Novea pordjet wårdé èn on fitchî"
 
-#: main/startup/KexiOpenProjectAssistant.cpp:68
+#: main/startup/KexiOpenProjectAssistant.cpp:71
 #, fuzzy
 #| msgid "New Project Stored on Database Server"
 msgid "Projects Stored on Database Server"
 msgstr "Novea pordjet wårdé èn on sierveu di båze di dnêyes"
 
-#: main/startup/KexiOpenProjectAssistant.cpp:89
+#: main/startup/KexiOpenProjectAssistant.cpp:106
 #, fuzzy
 #| msgid ""
 #| "Select database server's connection you wish to use to create a new Kexi "
@@ -4073,19 +4084,19 @@ msgstr ""
 "ahiver on novea pordjet Kexi. </p>Vos ploz chal eto radjouter, candjî ou "
 "disfacer des raloyaedjes del djivêye."
 
-#: main/startup/KexiOpenProjectAssistant.cpp:116
+#: main/startup/KexiOpenProjectAssistant.cpp:148
 #, fuzzy
 #| msgid "New Project Stored on Database Server"
 msgid "Open Project on Database Server"
 msgstr "Novea pordjet wårdé èn on sierveu di båze di dnêyes"
 
-#: main/startup/KexiOpenProjectAssistant.cpp:121
+#: main/startup/KexiOpenProjectAssistant.cpp:153
 #, fuzzy
 #| msgid "&Open"
 msgid "Open"
 msgstr "&Drovi"
 
-#: main/startup/KexiOpenProjectAssistant.cpp:158
+#: main/startup/KexiOpenProjectAssistant.cpp:190
 #, fuzzy, kde-format
 #| msgid "Select a project on <b>%1</b> database server to open:"
 msgid "Select project on database server <b>%1 (%2)</b> to open."
@@ -4197,44 +4208,44 @@ msgstr "Ledjinde do pordjet"
 msgid "Project's database name:"
 msgstr "Dinez l' no del båze di dnêyes do pordjet."
 
-#: main/startup/KexiStartup.cpp:147
+#: main/startup/KexiStartup.cpp:168
 msgid "Opening database"
 msgstr "Dji drove li båze di dnêyes"
 
-#: main/startup/KexiStartup.cpp:148
+#: main/startup/KexiStartup.cpp:169
 msgid "Please enter the password."
 msgstr "Dinez l' sicret s' i vs plait."
 
-#: main/startup/KexiStartup.cpp:155
+#: main/startup/KexiStartup.cpp:176
 msgid "local database server"
 msgstr "sierveu di båze di dnêyes coinrece"
 
-#: main/startup/KexiStartup.cpp:157
+#: main/startup/KexiStartup.cpp:178
 #, kde-format
 msgid "Database server: %1"
 msgstr "Sierveu di båze di dnêyes : %1"
 
-#: main/startup/KexiStartup.cpp:161
+#: main/startup/KexiStartup.cpp:182
 msgctxt "unspecified user"
 msgid "(unspecified)"
 msgstr "(nén specifyî)"
 
-#: main/startup/KexiStartup.cpp:165
+#: main/startup/KexiStartup.cpp:186
 #, kde-format
 msgid "Username: %1"
 msgstr "No di l' uzeu : %1"
 
-#: main/startup/KexiStartup.cpp:171
+#: main/startup/KexiStartup.cpp:192
 msgid "&Details"
 msgstr "&Po les spepieus"
 
-#: main/startup/KexiStartup.cpp:173 widget/kexidbconnectionwidget.cpp:401
-#: widget/KexiProjectSelectorWidget.cpp:308
-#: widget/navigator/KexiProjectNavigator.cpp:112
+#: main/startup/KexiStartup.cpp:194 widget/kexidbconnectionwidget.cpp:411
+#: widget/KexiProjectSelectorWidget.cpp:325
+#: widget/navigator/KexiProjectNavigator.cpp:158
 msgid "&Open"
 msgstr "&Drovi"
 
-#: main/startup/KexiStartup.cpp:296
+#: main/startup/KexiStartup.cpp:316
 #, kde-format
 msgid ""
 "Could not read connection information from connection shortcut file <nobr>"
@@ -4244,7 +4255,7 @@ msgstr ""
 "raloyaedje <nobr>« %1 »</nobr>.<br><br>Verifyîz kel fitchî a-st èn ådvins "
 "valåbe."
 
-#: main/startup/KexiStartup.cpp:309
+#: main/startup/KexiStartup.cpp:329
 #, kde-format
 msgid ""
 "You have specified invalid argument (\"%1\") for \"type\" command-line "
@@ -4287,7 +4298,7 @@ msgstr ""
 "Dji n' a savou oister l' pordjet.\n"
 "Li fitchî « %1 » n' egzistêye nén."
 
-#: main/startup/KexiStartup.cpp:490
+#: main/startup/KexiStartup.cpp:491
 #, kde-format
 msgid ""
 "Could not open shortcut file\n"
@@ -4296,7 +4307,7 @@ msgstr ""
 "Dji n' a savou drovi l' fitchî d' rascourti\n"
 "« %1 »."
 
-#: main/startup/KexiStartup.cpp:520
+#: main/startup/KexiStartup.cpp:522
 #, kde-format
 msgid ""
 "Could not open connection data file\n"
@@ -4305,7 +4316,7 @@ msgstr ""
 "Dji n' a savou drovi l' fitchî di raloyaedje ås dnêyes\n"
 "« %1 »."
 
-#: main/startup/KexiStartup.cpp:604
+#: main/startup/KexiStartup.cpp:607
 #, fuzzy
 #| msgid ""
 #| "You have specified a few database objects to be opened automatically, "
@@ -4323,27 +4334,27 @@ msgstr ""
 "Dji pasrè houte di ces tchuzes pask' ele ni sont nén disponibes cwand "
 "dj' ahive ou dj' disface des pordjets."
 
-#: main/startup/KexiStartup.cpp:620
+#: main/startup/KexiStartup.cpp:623
 #, kde-format
 msgid "Project \"%1\" created successfully."
 msgstr "Li pordjet « %1 » a stî askepyî comifåt."
 
-#: main/startup/KexiStartup.cpp:629
+#: main/startup/KexiStartup.cpp:632
 #, kde-format
 msgid "Project \"%1\" dropped successfully."
 msgstr "Li pordjet « %1 » a stî disfacé comifåt."
 
-#: main/startup/KexiStartup.cpp:758 main/startup/KexiStartup.cpp:790
+#: main/startup/KexiStartup.cpp:754 main/startup/KexiStartup.cpp:786
 msgid "<p>Could not open project.</p>"
 msgstr "<p>Dji n' a savou drovi l' pordjet.</p>"
 
-#: main/startup/KexiStartup.cpp:759
+#: main/startup/KexiStartup.cpp:755
 #, kde-format
 msgid "<p>The file <nobr>\"%1\"</nobr> does not exist or is not readable.</p>"
 msgstr ""
 "<p>Li fitchî <nobr>« %1 »</nobr> n' egzistêye nén ou n' est nén léjhåve.</p>"
 
-#: main/startup/KexiStartup.cpp:761 main/startup/KexiStartup.cpp:793
+#: main/startup/KexiStartup.cpp:757 main/startup/KexiStartup.cpp:789
 msgid ""
 "Check the file's permissions and whether it is already opened and locked by "
 "another application."
@@ -4351,12 +4362,12 @@ msgstr ""
 "Verifyîz les droets då fitchî eyet s' il est ddja drovou eyet eclawé pa èn "
 "ôte programe"
 
-#: main/startup/KexiStartup.cpp:791
+#: main/startup/KexiStartup.cpp:787
 #, kde-format
 msgid "<p>The file <nobr>\"%1\"</nobr> is not readable.</p>"
 msgstr "<p>Li fitchî <nobr>« %1 »</nobr> n' est nén léjhåve.</p>"
 
-#: main/startup/KexiStartup.cpp:813
+#: main/startup/KexiStartup.cpp:809
 #, kde-format
 msgid ""
 "\"%1\" is an external file of type:\n"
@@ -4367,15 +4378,15 @@ msgstr ""
 "« %2 ».\n"
 "Voloz vs abaguer l' fitchî come pordjet Kexi ?"
 
-#: main/startup/KexiStartup.cpp:816
+#: main/startup/KexiStartup.cpp:812
 msgid "Open External File"
 msgstr "Drovi dfoûtrin fitchî"
 
-#: main/startup/KexiStartup.cpp:816
+#: main/startup/KexiStartup.cpp:812
 msgid "Import..."
 msgstr "Abaguer..."
 
-#: main/startup/KexiStartup.cpp:837
+#: main/startup/KexiStartup.cpp:833
 #, kde-format
 msgid ""
 "The project file \"%1\" is recognized as compatible with \"%2\" database "
@@ -4387,7 +4398,7 @@ msgstr ""
 "di dnêyes « %3 ».\n"
 "Voloz vs eployî l' mineu d' båze di dnêyes « %4 » ?"
 
-#: main/startup/KexiStartup.cpp:860
+#: main/startup/KexiStartup.cpp:856
 #, kde-format
 msgid ""
 "Previous version of database file format (\"%1\") is detected in the \"%2\" "
@@ -4398,7 +4409,7 @@ msgstr ""
 "detectêye e fitchî do pordjet « %2 ».\n"
 "Voloz vs kivierser l' pordjet dins ene novele cogne « %3 » (ricmandé) ?"
 
-#: main/startup/KexiStartup.cpp:869
+#: main/startup/KexiStartup.cpp:865
 #, kde-format
 msgid ""
 "Failed to convert project file \"%1\" to a new \"%2\" format.\n"
@@ -4408,16 +4419,16 @@ msgstr ""
 "fwait berwete.\n"
 "Li fitchî n' a nén stî candjî."
 
-#: main/startup/KexiStartup.cpp:882
+#: main/startup/KexiStartup.cpp:878
 msgid "Possible problems:"
 msgstr "Possibes problinmes :"
 
-#: main/startup/KexiStartup.cpp:887
+#: main/startup/KexiStartup.cpp:883
 #, kde-format
 msgid "The file \"%1\" is not recognized as being supported by Kexi."
 msgstr "Li fitchî « %1 » n' est nén rconoxhou come sopoirté pa Kexi."
 
-#: main/startup/KexiStartup.cpp:890
+#: main/startup/KexiStartup.cpp:886
 #, kde-format
 msgid ""
 "Database driver for this file type not found.\n"
@@ -4426,7 +4437,7 @@ msgstr ""
 "Mineu d' båze di dnêyes po cisse sôre di fitchî nén trové.\n"
 "Sôre MIME detectêye : %1"
 
-#: main/startup/KexiStartup.cpp:926 main/startup/KexiStartup.cpp:930
+#: main/startup/KexiStartup.cpp:922 main/startup/KexiStartup.cpp:926
 #, kde-format
 msgid ""
 "Could not load list of available projects for <b>%1</b> database server."
@@ -4434,7 +4445,7 @@ msgstr ""
 "Dji n' a savou tcherdjî l' djivêye des pordjets k' i gn a pol sierveu di "
 "båze di dnêyes <b>%1</b>."
 
-#: main/startup/KexiStartup.cpp:967
+#: main/startup/KexiStartup.cpp:963
 #, kde-format
 msgid ""
 "Failed saving connection data to\n"
@@ -4462,7 +4473,7 @@ msgstr "Drovi pordjet egzistant"
 
 #: main/startup/KexiStartupDialog.cpp:150
 #: main/startup/KexiStartupDialog.cpp:708
-#: widget/KexiProjectSelectorWidget.cpp:295
+#: widget/KexiProjectSelectorWidget.cpp:311
 msgid "Open Recent Project"
 msgstr "Drovi dierins pordjets"
 
@@ -4590,8 +4601,8 @@ msgid "Share"
 msgstr ""
 
 #: migration/AlterSchemaWidget.cpp:51 migration/AlterSchemaWidget.cpp:113
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:154
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1068
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:167
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1404
 #, kde-format
 msgid "Column %1"
 msgstr "Colone %1"
@@ -4660,7 +4671,7 @@ msgid ""
 "database into the current Kexi database."
 msgstr ""
 
-#: migration/importtablewizard.cpp:142 migration/importwizard.cpp:191
+#: migration/importtablewizard.cpp:142 migration/importwizard.cpp:247
 msgid ""
 "Click \"Next\" button to continue or \"Cancel\" button to exit this wizard."
 msgstr ""
@@ -4669,11 +4680,11 @@ msgstr ""
 msgid "Welcome to the Table Importing Wizard"
 msgstr ""
 
-#: migration/importtablewizard.cpp:176 migration/importwizard.cpp:223
+#: migration/importtablewizard.cpp:176 migration/importwizard.cpp:279
 msgid "Select Location for Source Database"
 msgstr ""
 
-#: migration/importtablewizard.cpp:186 migration/importwizard.cpp:235
+#: migration/importtablewizard.cpp:186 migration/importwizard.cpp:291
 msgid "Select Source Database"
 msgstr ""
 
@@ -4681,11 +4692,11 @@ msgstr ""
 msgid "Select the Table to Import"
 msgstr ""
 
-#: migration/importtablewizard.cpp:236 migration/importwizard.cpp:384
+#: migration/importtablewizard.cpp:236 migration/importwizard.cpp:440
 msgid "Advanced Options"
 msgstr ""
 
-#: migration/importtablewizard.cpp:245 migration/importwizard.cpp:396
+#: migration/importtablewizard.cpp:245 migration/importwizard.cpp:452
 msgid "Importing"
 msgstr ""
 
@@ -4693,12 +4704,12 @@ msgstr ""
 msgid "Alter the Detected Design"
 msgstr ""
 
-#: migration/importtablewizard.cpp:278 migration/importwizard.cpp:420
-#: migration/importwizard.cpp:830
+#: migration/importtablewizard.cpp:278 migration/importwizard.cpp:476
+#: migration/importwizard.cpp:886
 msgid "Success"
 msgstr ""
 
-#: migration/importtablewizard.cpp:323 migration/importwizard.cpp:492
+#: migration/importtablewizard.cpp:323 migration/importwizard.cpp:548
 msgid "Select source database you wish to import:"
 msgstr ""
 
@@ -4713,12 +4724,13 @@ msgid ""
 "\n"
 msgstr ""
 
-#: migration/importtablewizard.cpp:471 migration/importwizard.cpp:709
+#: migration/importtablewizard.cpp:471 migration/importwizard.cpp:765
 msgid "No appropriate migration driver found."
 msgstr ""
 
 #: migration/importtablewizard.cpp:560
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1497
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:500
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1857
 msgid "No project available."
 msgstr "I gn a pont d' pordjet."
 
@@ -4731,97 +4743,97 @@ msgstr ""
 msgid "Unable to create table [%1]"
 msgstr ""
 
-#: migration/importwizard.cpp:69
+#: migration/importwizard.cpp:130
 msgid "Import Database"
 msgstr ""
 
-#: migration/importwizard.cpp:174
+#: migration/importwizard.cpp:230
 #, kde-format
 msgid ""
 "<qt>Database Importing wizard is about to import \"%1\" database <nobr>"
 "(connection %2)</nobr> into a Kexi database.</qt>"
 msgstr ""
 
-#: migration/importwizard.cpp:183
+#: migration/importwizard.cpp:239
 #, kde-format
 msgid ""
 "<qt>Database Importing wizard is about to import <nobr>\"%1\"</nobr> file of "
 "type \"%2\" into a Kexi database.</qt>"
 msgstr ""
 
-#: migration/importwizard.cpp:187
+#: migration/importwizard.cpp:243
 msgid ""
 "Database Importing wizard allows you to import an existing database into a "
 "Kexi database."
 msgstr ""
 
-#: migration/importwizard.cpp:194
+#: migration/importwizard.cpp:250
 msgid "Welcome to the Database Importing Wizard"
 msgstr ""
 
-#: migration/importwizard.cpp:254
+#: migration/importwizard.cpp:310
 msgid "Destination database type:"
 msgstr ""
 
-#: migration/importwizard.cpp:260
+#: migration/importwizard.cpp:316
 msgid "Database project stored in a file"
 msgstr ""
 
-#: migration/importwizard.cpp:261
+#: migration/importwizard.cpp:317
 msgid "Database project stored on a server"
 msgstr ""
 
-#: migration/importwizard.cpp:275
+#: migration/importwizard.cpp:331
 msgid "Select Destination Database Type"
 msgstr ""
 
-#: migration/importwizard.cpp:283
+#: migration/importwizard.cpp:339
 msgid "Destination project's title:"
 msgstr ""
 
-#: migration/importwizard.cpp:288
+#: migration/importwizard.cpp:344
 #, fuzzy
 #| msgid "New Blank Database Project"
 msgid "Select Destination Database Project's Title"
 msgstr "Novea pordjet di vude båze di dnêyes"
 
-#: migration/importwizard.cpp:323
+#: migration/importwizard.cpp:379
 msgid "Select Location for Destination Database"
 msgstr ""
 
-#: migration/importwizard.cpp:340
+#: migration/importwizard.cpp:396
 msgid "Structure and data"
 msgstr ""
 
-#: migration/importwizard.cpp:344
+#: migration/importwizard.cpp:400
 msgid "Structure only"
 msgstr ""
 
-#: migration/importwizard.cpp:349
+#: migration/importwizard.cpp:405
 msgid "Select Type of Import"
 msgstr ""
 
-#: migration/importwizard.cpp:413
+#: migration/importwizard.cpp:469
 msgid "Open imported project"
 msgstr ""
 
-#: migration/importwizard.cpp:431
+#: migration/importwizard.cpp:487
 msgid "No new database name was entered."
 msgstr ""
 
-#: migration/importwizard.cpp:437
+#: migration/importwizard.cpp:493
 msgid "Source database is the same as destination."
 msgstr ""
 
-#: migration/importwizard.cpp:441
+#: migration/importwizard.cpp:497
 msgid "Following problems were found with the data you entered:"
 msgstr ""
 
-#: migration/importwizard.cpp:443
+#: migration/importwizard.cpp:499
 msgid "Please click 'Back' button and correct these errors."
 msgstr ""
 
-#: migration/importwizard.cpp:553
+#: migration/importwizard.cpp:609
 msgid ""
 "All required information has now been gathered. Click \"Next\" button to "
 "start importing.\n"
@@ -4829,111 +4841,111 @@ msgid ""
 "Depending on size of the database this may take some time."
 msgstr ""
 
-#: migration/importwizard.cpp:806
+#: migration/importwizard.cpp:862
 #, kde-format
 msgid "Database %1 already exists.<p>Do you want to replace it with a new one?"
 msgstr ""
 
-#: migration/importwizard.cpp:809
+#: migration/importwizard.cpp:865
 msgid "No"
 msgstr "Neni"
 
-#: migration/importwizard.cpp:844
+#: migration/importwizard.cpp:900
 msgid "Failure"
 msgstr ""
 
-#: migration/importwizard.cpp:847
+#: migration/importwizard.cpp:903
 #, kde-format
 msgid ""
 "<p>Import failed.</p>%1<p>%2</p><p>You can click \"Back\" button and try "
 "again.</p>"
 msgstr ""
 
-#: migration/importwizard.cpp:868
+#: migration/importwizard.cpp:924
 msgid "Select source database filename."
 msgstr ""
 
-#: migration/importwizard.cpp:873
+#: migration/importwizard.cpp:929
 msgid "Select source database."
 msgstr ""
 
-#: migration/importwizard.cpp:887
+#: migration/importwizard.cpp:943
 msgid "Could not import database. This type is not supported."
 msgstr ""
 
-#: migration/importwizard.cpp:888
+#: migration/importwizard.cpp:944
 #, kde-format
 msgid "Could not import database \"%1\". This type is not supported."
 msgstr ""
 
-#: migration/importwizard.cpp:902
+#: migration/importwizard.cpp:958
 msgid "Importing in progress..."
 msgstr ""
 
-#: migration/importwizard.cpp:906
+#: migration/importwizard.cpp:962
 #, kde-format
 msgid "Database has been imported into Kexi database project \"%1\"."
 msgstr ""
 
-#: migration/importwizard.cpp:968 migration/importwizard.cpp:983
+#: migration/importwizard.cpp:1024 migration/importwizard.cpp:1039
 msgid "No help is available for this page."
 msgstr ""
 
-#: migration/importwizard.cpp:975
+#: migration/importwizard.cpp:1031
 msgid "Here you can choose the location to import data from."
 msgstr ""
 
-#: migration/importwizard.cpp:977
+#: migration/importwizard.cpp:1033
 msgid "Here you can choose the actual database to import data from."
 msgstr ""
 
-#: migration/importwizard.cpp:979
+#: migration/importwizard.cpp:1035
 msgid "Here you can choose the location to save the data."
 msgstr ""
 
-#: migration/importwizard.cpp:981
+#: migration/importwizard.cpp:1037
 msgid ""
 "Here you can choose the location to save the data in and the new database "
 "name."
 msgstr ""
 
-#: migration/keximigrate.cpp:78 migration/keximigrate.cpp:128
-#: migration/keximigrate.cpp:237 migration/keximigrate.cpp:308
+#: migration/keximigrate.cpp:137 migration/keximigrate.cpp:187
+#: migration/keximigrate.cpp:296 migration/keximigrate.cpp:367
 #, kde-format
 msgid "Could not create database \"%1\"."
 msgstr ""
 
-#: migration/keximigrate.cpp:151
+#: migration/keximigrate.cpp:210
 #, kde-format
 msgid "Could not get a list of table names for data source \"%1\"."
 msgstr ""
 
-#: migration/keximigrate.cpp:161
+#: migration/keximigrate.cpp:220
 #, kde-format
 msgid "No tables to import found in data source \"%1\"."
 msgstr ""
 
-#: migration/keximigrate.cpp:208
+#: migration/keximigrate.cpp:267
 #, kde-format
 msgid ""
 "Could not import project from data source \"%1\". Error reading table \"%2\"."
 msgstr ""
 
-#: migration/keximigrate.cpp:336
+#: migration/keximigrate.cpp:395
 #, kde-format
 msgid "Could not import project from data source \"%1\"."
 msgstr ""
 
-#: migration/keximigrate.cpp:410
+#: migration/keximigrate.cpp:469
 #, kde-format
 msgid "Could not import data from data source \"%1\"."
 msgstr ""
 
-#: migration/keximigrate.cpp:490
+#: migration/keximigrate.cpp:549
 msgid "Field Type"
 msgstr ""
 
-#: migration/keximigrate.cpp:491
+#: migration/keximigrate.cpp:550
 #, kde-format
 msgid ""
 "The data type for %1 could not be determined. Please select one of the "
@@ -4944,11 +4956,11 @@ msgstr ""
 msgid "Kexi Migrate Test"
 msgstr ""
 
-#: migration/mdb/src/keximdb/mdbmigrate.cpp:48
+#: migration/mdb/src/keximdb/mdbmigrate.cpp:47
 msgid "Source Database Has Non-Unicode Encoding"
 msgstr ""
 
-#: migration/mdb/src/keximdb/mdbmigrate.cpp:51
+#: migration/mdb/src/keximdb/mdbmigrate.cpp:49
 msgid "Source Database Non-Unicode Encoding"
 msgstr ""
 
@@ -5065,7 +5077,7 @@ msgstr "Sititchî les tchamps di tchoezi e formulaire"
 msgid "Inserts selected fields into form"
 msgstr "Sititche les tchamps di tchoezi e formulaire"
 
-#: plugins/forms/kexidbfactory.cpp:89 plugins/forms/kexiformview.cpp:252
+#: plugins/forms/kexidbfactory.cpp:89 plugins/forms/kexiformview.cpp:302
 msgctxt ""
 "Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters."
@@ -5146,7 +5158,7 @@ msgstr ""
 "Ene ahesse k' a èn aspougneu tchoezi otomaticmint eyet ene etikete pos "
 "candjî l' valixhance d' on tchamp d' båze di dnêyes di tolminme kéne sôre."
 
-#: plugins/forms/kexidbfactory.cpp:307
+#: plugins/forms/kexidbfactory.cpp:251
 #, fuzzy
 #| msgctxt ""
 #| "Widget name. This string will be used to name widgets of this class. It "
@@ -5155,13 +5167,13 @@ msgstr ""
 msgid "Button"
 msgstr "boton"
 
-#: plugins/forms/kexidbfactory.cpp:311
+#: plugins/forms/kexidbfactory.cpp:255
 #, fuzzy
 #| msgid "A command button to execute actions"
 msgid "A button for executing actions"
 msgstr "On boton d' comande pos enonder des accions"
 
-#: plugins/forms/kexidbfactory.cpp:320
+#: plugins/forms/kexidbfactory.cpp:264
 #, fuzzy
 #| msgctxt ""
 #| "Widget name. This string will be used to name widgets of this class. It "
@@ -5170,7 +5182,7 @@ msgstr "On boton d' comande pos enonder des accions"
 msgid "Link Button"
 msgstr "boton"
 
-#: plugins/forms/kexidbfactory.cpp:323
+#: plugins/forms/kexidbfactory.cpp:267
 #, fuzzy
 #| msgctxt ""
 #| "Widget name. This string will be used to name widgets of this class. It "
@@ -5182,203 +5194,203 @@ msgctxt ""
 msgid "linkButton"
 msgstr "boton"
 
-#: plugins/forms/kexidbfactory.cpp:324
+#: plugins/forms/kexidbfactory.cpp:268
 #, fuzzy
 #| msgid "A command button to execute actions"
 msgid "A Link button for executing actions"
 msgstr "On boton d' comande pos enonder des accions"
 
-#: plugins/forms/kexidbfactory.cpp:335
+#: plugins/forms/kexidbfactory.cpp:279
 #, fuzzy
 #| msgid "A simple frame widget"
 msgid "A Slider widget"
 msgstr "Ene simpe ahesse di cåde"
 
-#: plugins/forms/kexidbfactory.cpp:346
+#: plugins/forms/kexidbfactory.cpp:290
 msgid "A Progress Bar widget"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:353
+#: plugins/forms/kexidbfactory.cpp:297
 msgid "Date Picker"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:356
+#: plugins/forms/kexidbfactory.cpp:300
 msgctxt ""
 "Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters."
 msgid "datePicker"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:357
+#: plugins/forms/kexidbfactory.cpp:301
 #, fuzzy
 #| msgid "A simple frame widget"
 msgid "A Date Picker widget"
 msgstr "Ene simpe ahesse di cåde"
 
-#: plugins/forms/kexidbfactory.cpp:361
+#: plugins/forms/kexidbfactory.cpp:305
 msgid "Inverted"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:362
+#: plugins/forms/kexidbfactory.cpp:306
 msgid "Minimum"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:363
+#: plugins/forms/kexidbfactory.cpp:307
 msgid "Maximum"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:364
+#: plugins/forms/kexidbfactory.cpp:308
 #, fuzzy
 #| msgid "Form"
 msgid "Format"
 msgstr "Formulaire"
 
-#: plugins/forms/kexidbfactory.cpp:366
+#: plugins/forms/kexidbfactory.cpp:310
 #, fuzzy
 #| msgid "Layout Widgets"
 msgid "Text Direction"
 msgstr "Adjinçner ahesses"
 
-#: plugins/forms/kexidbfactory.cpp:367
+#: plugins/forms/kexidbfactory.cpp:311
 #, fuzzy
 #| msgid "Visible"
 msgid "Text Visible"
 msgstr "Veyåve"
 
-#: plugins/forms/kexidbfactory.cpp:368
+#: plugins/forms/kexidbfactory.cpp:312
 msgid "Value"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:369
+#: plugins/forms/kexidbfactory.cpp:313
 msgid "Date"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:370
+#: plugins/forms/kexidbfactory.cpp:314
 #, fuzzy
 #| msgid "Visible"
 msgid "Arrow Visible"
 msgstr "Veyåve"
 
 #. i18n: ectx: property (title), widget (QGroupBox, descGroupBox)
-#: plugins/forms/kexidbfactory.cpp:371 widget/KexiConnectionSelector.ui:115
+#: plugins/forms/kexidbfactory.cpp:315 widget/KexiConnectionSelector.ui:115
 msgid "Description"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:372
+#: plugins/forms/kexidbfactory.cpp:316
 #, fuzzy
 #| msgid "Page Setup..."
 msgid "Page Step"
 msgstr "Epådjnaedje..."
 
-#: plugins/forms/kexidbfactory.cpp:373
+#: plugins/forms/kexidbfactory.cpp:317
 msgid "Single Step"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:374
+#: plugins/forms/kexidbfactory.cpp:318
 msgid "Tick Interval"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:375
+#: plugins/forms/kexidbfactory.cpp:319
 #, fuzzy
 #| msgid "Label Position"
 msgid "Tick Position"
 msgstr "Eplaeçmint di l' etikete"
 
-#: plugins/forms/kexidbfactory.cpp:376
+#: plugins/forms/kexidbfactory.cpp:320
 #, fuzzy
 #| msgid "Show SQL History"
 msgid "Show Editor"
 msgstr "Mostrer l' istwere SQL"
 
-#: plugins/forms/kexidbfactory.cpp:377
+#: plugins/forms/kexidbfactory.cpp:321
 msgid "Form Name"
 msgstr "No do formulaire"
 
-#: plugins/forms/kexidbfactory.cpp:378
+#: plugins/forms/kexidbfactory.cpp:322
 msgid "On Click"
 msgstr "Å clitch"
 
-#: plugins/forms/kexidbfactory.cpp:379
+#: plugins/forms/kexidbfactory.cpp:323
 msgid "On Click Option"
 msgstr "Al tchuze do clitch"
 
-#: plugins/forms/kexidbfactory.cpp:380
+#: plugins/forms/kexidbfactory.cpp:324
 msgid "Auto Tab Order"
 msgstr "Ôre des linwetes otomatikes"
 
-#: plugins/forms/kexidbfactory.cpp:381
+#: plugins/forms/kexidbfactory.cpp:325
 msgid "Shadow Enabled"
 msgstr "Ombion metou èn alaedje"
 
-#: plugins/forms/kexidbfactory.cpp:382
+#: plugins/forms/kexidbfactory.cpp:326
 msgctxt "On: button"
 msgid "On"
 msgstr "Eclitchî"
 
-#: plugins/forms/kexidbfactory.cpp:384
+#: plugins/forms/kexidbfactory.cpp:328
 msgid "Editor Type"
 msgstr "Sôre d' aspougneu"
 
-#: plugins/forms/kexidbfactory.cpp:386
+#: plugins/forms/kexidbfactory.cpp:330
 msgctxt "AutoField editor's type"
 msgid "Auto"
 msgstr "Otomatike"
 
-#: plugins/forms/kexidbfactory.cpp:394
+#: plugins/forms/kexidbfactory.cpp:338
 msgctxt "AutoField editor's type"
 msgid "Multiline Text"
 msgstr "Tecse multi-roye"
 
-#: plugins/forms/kexidbfactory.cpp:395
+#: plugins/forms/kexidbfactory.cpp:339
 msgctxt "AutoField editor's type"
 msgid "Drop-Down List"
 msgstr "Djivêye disrôlante"
 
-#: plugins/forms/kexidbfactory.cpp:396
+#: plugins/forms/kexidbfactory.cpp:340
 msgctxt "AutoField editor's type"
 msgid "Image"
 msgstr "Imådje"
 
-#: plugins/forms/kexidbfactory.cpp:398
+#: plugins/forms/kexidbfactory.cpp:342
 msgid "No Ticks"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:399
+#: plugins/forms/kexidbfactory.cpp:343
 msgid "Above"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:400
+#: plugins/forms/kexidbfactory.cpp:344
 #, fuzzy
 #| msgctxt "Left (HINT: for Align)"
 #| msgid "Left"
 msgid "Left"
 msgstr "Hintche"
 
-#: plugins/forms/kexidbfactory.cpp:401
+#: plugins/forms/kexidbfactory.cpp:345
 msgid "Below"
 msgstr ""
 
-#: plugins/forms/kexidbfactory.cpp:402
+#: plugins/forms/kexidbfactory.cpp:346
 #, fuzzy
 #| msgid "To Right"
 msgid "Right"
 msgstr "A droete"
 
-#: plugins/forms/kexidbfactory.cpp:403
+#: plugins/forms/kexidbfactory.cpp:347
 #, fuzzy
 #| msgid "To Widest"
 msgid "Both Sides"
 msgstr "Å pus lådje"
 
-#: plugins/forms/kexidbfactory.cpp:406
+#: plugins/forms/kexidbfactory.cpp:349
 msgid "Auto Label"
 msgstr "Etikete otomatike"
 
-#: plugins/forms/kexidbfactory.cpp:407
+#: plugins/forms/kexidbfactory.cpp:350
 msgid "Label Text Color"
 msgstr "Coleur do tecse di l' etikete"
 
-#: plugins/forms/kexidbfactory.cpp:409
+#: plugins/forms/kexidbfactory.cpp:352
 msgctxt "(a property name, keep the text narrow!)"
 msgid ""
 "Label Background\n"
@@ -5387,51 +5399,51 @@ msgstr ""
 "Fond di l' etikete\n"
 "Coleur"
 
-#: plugins/forms/kexidbfactory.cpp:411
+#: plugins/forms/kexidbfactory.cpp:354
 msgid "Label Position"
 msgstr "Eplaeçmint di l' etikete"
 
-#: plugins/forms/kexidbfactory.cpp:412
+#: plugins/forms/kexidbfactory.cpp:355
 msgctxt "Label Position"
 msgid "Left"
 msgstr "Hintche"
 
-#: plugins/forms/kexidbfactory.cpp:413
+#: plugins/forms/kexidbfactory.cpp:356
 msgctxt "Label Position"
 msgid "Top"
 msgstr "Al copete"
 
-#: plugins/forms/kexidbfactory.cpp:414
+#: plugins/forms/kexidbfactory.cpp:357
 msgctxt "Label Position"
 msgid "No Label"
 msgstr "Pont d' etikete"
 
-#: plugins/forms/kexidbfactory.cpp:416
+#: plugins/forms/kexidbfactory.cpp:359
 msgid "Size"
 msgstr "Grandeu"
 
-#: plugins/forms/kexidbfactory.cpp:417
+#: plugins/forms/kexidbfactory.cpp:360
 #: widget/utils/kexicontextmenuutils.cpp:294
 msgid "Image"
 msgstr "Imådje"
 
-#: plugins/forms/kexidbfactory.cpp:418
+#: plugins/forms/kexidbfactory.cpp:361
 msgid "Scaled Contents"
 msgstr "Ådvins al schåle"
 
-#: plugins/forms/kexidbfactory.cpp:419
+#: plugins/forms/kexidbfactory.cpp:362
 #, fuzzy
 #| msgid "Sorting"
 msgctxt "Smoothing when contents are scaled"
 msgid "Smoothing"
 msgstr "Rélijhaedje"
 
-#: plugins/forms/kexidbfactory.cpp:420
+#: plugins/forms/kexidbfactory.cpp:363
 msgctxt "Keep Aspect Ratio (short)"
 msgid "Keep Ratio"
 msgstr "Wårder rapoirt"
 
-#: plugins/forms/kexidbfactory.cpp:429
+#: plugins/forms/kexidbfactory.cpp:372
 msgctxt ""
 "Drop-Down Button for Image Box Visible (a property name, keep the text "
 "narrow!)"
@@ -5442,31 +5454,31 @@ msgstr ""
 "Disrôlant\n"
 "Boton veyåve"
 
-#: plugins/forms/kexidbfactory.cpp:432
+#: plugins/forms/kexidbfactory.cpp:375
 msgctxt "Tristate checkbox, default"
 msgid "Default"
 msgstr "Prémetou"
 
-#: plugins/forms/kexidbfactory.cpp:433
+#: plugins/forms/kexidbfactory.cpp:376
 msgctxt "Tristate checkbox, yes"
 msgid "Yes"
 msgstr "Oyi"
 
-#: plugins/forms/kexidbfactory.cpp:434
+#: plugins/forms/kexidbfactory.cpp:377
 msgctxt "Tristate checkbox, no"
 msgid "No"
 msgstr "Neni"
 
-#: plugins/forms/kexidbfactory.cpp:437
+#: plugins/forms/kexidbfactory.cpp:380
 msgctxt "Editable combobox"
 msgid "Editable"
 msgstr "Aspougnåve"
 
-#: plugins/forms/kexidbfactory.cpp:533
+#: plugins/forms/kexidbfactory.cpp:466
 msgid "&Image"
 msgstr "&Imådje"
 
-#: plugins/forms/kexidbfactory.cpp:555
+#: plugins/forms/kexidbfactory.cpp:488
 msgid "&Assign Action..."
 msgstr "&Aroyî accion..."
 
@@ -5653,11 +5665,11 @@ msgstr "Li formulaire « %1 » egzistêye dedja."
 msgid "Widgets"
 msgstr "Ahesses"
 
-#: plugins/forms/kexiformview.cpp:1264
+#: plugins/forms/kexiformview.cpp:1336
 msgid "Insert AutoField widget"
 msgstr "Sititchî ahesse Oto-tchamp"
 
-#: plugins/forms/kexiformview.cpp:1264
+#: plugins/forms/kexiformview.cpp:1336
 #, kde-format
 msgid "Insert %1 AutoField widgets"
 msgstr "Sititchî %1 ahesses Oto-tchamp"
@@ -5692,7 +5704,7 @@ msgid "Copy"
 msgstr "Copyî"
 
 #: plugins/importexport/csv/kexicsvexportwizard.cpp:66
-#: widget/navigator/KexiProjectNavigator.cpp:176
+#: widget/navigator/KexiProjectNavigator.cpp:222
 msgid "Export"
 msgstr "Ebaguer"
 
@@ -5759,12 +5771,12 @@ msgid "Show Options >>"
 msgstr "Mostrer tchuzes >>"
 
 #: plugins/importexport/csv/kexicsvexportwizard.cpp:188
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:345
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:685
 msgid "Delimiter:"
 msgstr "Pårtixhant :"
 
 #: plugins/importexport/csv/kexicsvexportwizard.cpp:197
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:374
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:714
 msgid "Text quote:"
 msgstr "Dirreye di tecse :"
 
@@ -5798,101 +5810,230 @@ msgstr "Dj' ebague"
 msgid "Hide Options <<"
 msgstr "Catchî tchuzes <<"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:290
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:179
+#, fuzzy
+#| msgid "Column name"
+msgctxt "@title:row"
+msgid "Column name"
+msgstr "No del colone"
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:319
 msgid "no"
 msgstr "neni"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:292
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:321
 msgid "false"
 msgstr "fås"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:297
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:330
 msgid "Import CSV Data From File"
 msgstr "Abaguer dnêyes CSV d' on fitchî"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:297
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:330
 msgid "Paste CSV Data From Clipboard"
 msgstr "Aclaper dnêyes CSV då presse-papî"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:305
-msgid "&Options"
-msgstr "&Tchuzes"
-
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:308
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:341
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:160
 msgid "&Import..."
 msgstr "&Abaguer..."
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:330
-msgid "Preview of data from file:"
-msgstr "Prévoeyaedje des dnêyes do fitchî :"
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:343
+#, fuzzy
+#| msgid "Next Page"
+msgctxt "Opposite to Back"
+msgid "Next"
+msgstr "Pådje shuvante"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:331
-msgid "Preview of data from clipboard"
-msgstr "Prévoeyaedje des dnêyes do presse-papî"
-
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:366
-msgid "Primary key"
-msgstr "Clé prumaire"
-
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:398
-msgid "Ignore duplicated delimiters"
-msgstr "Passer houte les pårtixhant e dobe"
-
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:403
-msgid "First row contains column names"
-msgstr "Les nos des colones sont-st el prumire roye"
-
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:450
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:419
 msgid "Open CSV Data File"
 msgstr "Drovi fitchî di dnêyes CSV"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:502
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:480
+#, fuzzy
+#| msgid "Enter a filename."
+msgctxt "@info"
+msgid "Select source filename."
+msgstr "Dinez on no d' fitchî."
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:493
+msgid "Data set contains no rows. Do you want to import empty table?"
+msgstr "I gn a pont d' roye e djeu di dnêyes. Voloz abaguer on vude tåvlea ?"
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:506
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1862
+msgid "No database connection available."
+msgstr "I gn a pont d' raloyaedje a ene båze di dnêyes."
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:524
+#: widget/KexiNameDialog.cpp:159
+msgid "Please choose other name."
+msgstr "Tchoezixhoz èn ôte no s' i vs plait."
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:575
+#, fuzzy
+#| msgid "Loading CSV Data"
+msgctxt "@title:window"
 msgid "Loading CSV Data"
 msgstr "Dji tchedje des dnêyes CSV"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:503
-#, kde-format
-msgid "Loading CSV Data from \"%1\"..."
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:576
+#, fuzzy, kde-format
+#| msgid "Loading CSV Data from \"%1\"..."
+msgctxt "@info"
+msgid "Loading CSV Data from <filename>%1</filename>..."
 msgstr "Dji tchedje des dnêyes CSV di « %1 »..."
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:591
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:642
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:858
+#, fuzzy
+#| msgid "Table:"
+msgid "To table:"
+msgstr "Tåve :"
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:659
+msgid "Select file name for import"
+msgstr ""
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:671
+msgid "Preview of data from file:"
+msgstr "Prévoeyaedje des dnêyes do fitchî :"
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:672
+msgid "Preview of data from clipboard"
+msgstr "Prévoeyaedje des dnêyes do presse-papî"
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:706
+msgid "Primary key"
+msgstr "Clé prumaire"
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:738
+msgid "Ignore duplicated delimiters"
+msgstr "Passer houte les pårtixhant e dobe"
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:743
+msgid "First row contains column names"
+msgstr "Les nos des colones sont-st el prumire roye"
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:761
+#, fuzzy
+#| msgid "CSV Import Options"
+msgid "Import Options"
+msgstr "Tchuzes d' abagaedje CSV"
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:770
+#, fuzzy
+#| msgid "New database"
+msgctxt "@action:button"
+msgid "New table"
+msgstr "Novele båze di dnêyes"
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:771
+msgctxt "CSV import: data will be appended to a new table"
+msgid "Data will be appended to a new table"
+msgstr ""
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:773
+#, fuzzy
+#| msgctxt "Keep this text narrow: split to multiple rows if needed"
+#| msgid ""
+#| "Import Existing\n"
+#| "Database"
+msgctxt "@action:button"
+msgid "Existing table"
+msgstr ""
+"Abaguer båze di\n"
+"dnêyes egzistante"
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:774
+msgctxt "CSV import: data will be appended to existing table"
+msgid "Data will be appended to existing table"
+msgstr ""
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:785
+msgid "Choose Method of Saving Imported Data"
+msgstr ""
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:816
+#, fuzzy
+#| msgid "Caption:"
+msgctxt "@label"
+msgid "Caption:"
+msgstr "Ledjinde :"
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:817
+#, fuzzy
+#| msgid "Name:"
+msgctxt "@label"
+msgid "Name:"
+msgstr "No :"
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:818
+msgctxt "@label"
+msgid "Row count:"
+msgstr ""
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:819
+#, fuzzy
+#| msgid "Bound column:"
+msgctxt "@label"
+msgid "Column count:"
+msgstr "Colone loyeye :"
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:845
+msgctxt "@label"
+msgid "Choose Name of Destination Table"
+msgstr ""
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:853
+#, fuzzy
+#| msgid "To CSV file:"
+msgid "From CSV file:"
+msgstr "E fitchî CSV :"
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:853
+#, fuzzy
+#| msgid "To clipboard:"
+msgid "From Clipboard"
+msgstr "E presse-papî :"
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:872
+#, fuzzy
+#| msgid "Import..."
+msgid "Importing..."
+msgstr "Abaguer..."
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:930
 #, kde-format
 msgid "Cannot open input file <nobr>\"%1\"</nobr>."
 msgstr "Dji n' sai drovi l' fitchî en intrêye <nobr>\"%1\"</nobr>."
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:673
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1012
 #, kde-format
 msgid "Start at line (1-%1):"
 msgstr "Ataker al roye (1-%1) :"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:674
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:682
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1013
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1021
 msgid "Start at line:"
 msgstr "Ataker al roye :"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1343
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1679
 #: plugins/queries/kexiquerydesignerguieditor.cpp:226
 msgid "Column"
 msgstr "Colone"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1356
-msgid "Column name"
-msgstr "No del colone"
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1719
+msgctxt "@info"
+msgid "An error occurred during insert record."
+msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1451
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1805
 #, kde-format
 msgid "Format for column %1:"
 msgstr "Cogne del colone %1 :"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1491
-msgid "Data set contains no rows. Do you want to import empty table?"
-msgstr "I gn a pont d' roye e djeu di dnêyes. Voloz abaguer on vude tåvlea ?"
-
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1502
-msgid "No database connection available."
-msgstr "I gn a pont d' raloyaedje a ene båze di dnêyes."
-
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1558
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1877
 msgid ""
 "No Primary Key (autonumber) has been defined.\n"
 "Should it be automatically defined on import (recommended)?\n"
@@ -5906,60 +6047,68 @@ msgstr ""
 "Note : Ene tåve abaguêye sins clé prumaire pôreut n' nén esse aspougnåve "
 "(sorlon l' sôre di båze di dnêyes)."
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1562
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1881
 msgctxt "Add Database Primary Key to a Table"
 msgid "Add Primary Key"
 msgstr "Radjouter clé prumaire"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1563
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1882
 msgctxt "Do Not Add Database Primary Key to a Table"
 msgid "Do Not Add"
 msgstr "Èn nén radjouter"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1666
-msgid "Importing CSV Data"
-msgstr "Dj' abague des dnêyes CSV"
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1966
+msgid "<p>Fields count does not match!</p><p>Please choose another table.</p>"
+msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1671
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2006
 #, kde-format
 msgid "Importing CSV Data from <nobr>\"%1\"</nobr> into \"%2\" table..."
 msgstr ""
 "Dj' abague des dnêyes CSV di <nobr>« %1 »</nobr> e tåvlea <nobr>« %2 »</"
 "nobr>..."
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1722
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2022
+msgid "Import has been canceled."
+msgstr ""
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2024
+msgid "Error occurred during import."
+msgstr ""
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2058
 #, kde-format
 msgid "Data has been successfully imported to table \"%1\"."
 msgstr "Les dnêyes ont stî abaguêyes comifåt e tåvlea « %1 »."
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1743
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2084
 msgctxt "Text type for column"
 msgid "Text"
 msgstr "Tecse"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1745
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2086
 msgctxt "Numeric type for column"
 msgid "Number"
 msgstr "Nombe"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1747
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2088
 msgctxt "Currency type for column"
 msgid "Currency"
 msgstr "Manoye"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1828
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2169
 #, kde-format
 msgctxt "row count"
 msgid "(rows: %1)"
 msgstr "(royes : %1)"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1832
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2173
 #, kde-format
 msgctxt "row count"
 msgid "(rows: more than %1)"
 msgstr "(royes : pus di %1)"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1833
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2174
 msgid "Not all rows are visible on this preview"
 msgstr "Totes les royes ni sont nén veyåves so ç' prévoeyaedje"
 
@@ -6010,29 +6159,29 @@ msgstr "Cogne del date :"
 msgid "Strip leading and trailing blanks off of text values"
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvwidgets.cpp:71
+#: plugins/importexport/csv/kexicsvwidgets.cpp:80
 msgid "Comma \",\""
 msgstr "Coma « , »"
 
-#: plugins/importexport/csv/kexicsvwidgets.cpp:72
+#: plugins/importexport/csv/kexicsvwidgets.cpp:81
 msgid "Semicolon \";\""
 msgstr "Dimey colone « ; »"
 
-#: plugins/importexport/csv/kexicsvwidgets.cpp:73
+#: plugins/importexport/csv/kexicsvwidgets.cpp:82
 msgid "Tabulator"
 msgstr "Tabulåcion"
 
-#: plugins/importexport/csv/kexicsvwidgets.cpp:74
+#: plugins/importexport/csv/kexicsvwidgets.cpp:83
 msgid "Space \" \""
 msgstr "Espåce «   »"
 
-#: plugins/importexport/csv/kexicsvwidgets.cpp:75
+#: plugins/importexport/csv/kexicsvwidgets.cpp:84
 msgid "Other"
 msgstr "Ôte"
 
-#: plugins/importexport/csv/kexicsvwidgets.cpp:167
-#: plugins/importexport/csv/kexicsvwidgets.cpp:179
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1786
+#: plugins/importexport/csv/kexicsvwidgets.cpp:176
+#: plugins/importexport/csv/kexicsvwidgets.cpp:188
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1787
 #: plugins/tables/kexitabledesignerview.cpp:427
 msgid "None"
 msgstr "Nole"
@@ -6093,7 +6242,7 @@ msgid "Max"
 msgstr "Macs"
 
 #: plugins/queries/kexiquerydesignerguieditor.cpp:260
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1788
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1789
 msgid "Sorting"
 msgstr "Rélijhaedje"
 
@@ -6102,12 +6251,12 @@ msgid "Describes a way of sorting for a given field."
 msgstr "Discrît ene façon d' relére pos ont tchamp dné."
 
 #: plugins/queries/kexiquerydesignerguieditor.cpp:264
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1786
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1787
 msgid "Ascending"
 msgstr "Crexhant"
 
 #: plugins/queries/kexiquerydesignerguieditor.cpp:265
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1786
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1787
 msgid "Descending"
 msgstr "Discrexhant"
 
@@ -6134,13 +6283,13 @@ msgid "Select column for table \"%1\""
 msgstr "Tchoezi colone pol tåve « %1 »"
 
 #: plugins/queries/kexiquerydesignerguieditor.cpp:435
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1689
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1690
 #, kde-format
 msgid "Invalid criteria \"%1\""
 msgstr "Critere « %1 » nén valåbes"
 
 #: plugins/queries/kexiquerydesignerguieditor.cpp:456
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1480
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1481
 #, kde-format
 msgid "Invalid expression \"%1\""
 msgstr "Ratourneure « %1 » nén valåbe"
@@ -6148,7 +6297,7 @@ msgstr "Ratourneure « %1 » nén valåbe"
 #: plugins/queries/kexiquerydesignerguieditor.cpp:641
 #: plugins/queries/kexiquerydesignerguieditor.cpp:655
 #: plugins/queries/kexiquerydesignerguieditor.cpp:677
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1091
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1092
 msgid "Query definition loading failed."
 msgstr "Li tcherdjaedje do definixha do rcweraedje a fwait berwete."
 
@@ -6161,41 +6310,41 @@ msgstr ""
 "sepou drovi, minme e môde tecse.\n"
 "Vos ploz disfacer l' ricweraedje eyet l' rifé."
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1274
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1275
 msgctxt "short for 'expression' word (only latin letters, please)"
 msgid "expr"
 msgstr "rat"
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1460
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1461
 #, kde-format
 msgid "Entered column alias \"%1\" is not a valid identifier."
 msgstr "Li no metou « %1 » del colone diné n' est nén èn idintifieu valåbe."
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1461
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1462
 msgid "Identifiers should start with a letter or '_' character"
 msgstr "Les idintifieus dvèt ataker avou ene lete ou on caractere « _ »"
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1633
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1634
 #, kde-format
 msgid "Could not set sorting for multiple columns (%1)"
 msgstr "Dji n' a savou defini l' reléjhaedje po sacwantès colones (%1)"
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1658
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1659
 #, kde-format
 msgid "Could not set criteria for \"%1\""
 msgstr "Dji n' a savou defini l' critere po « %1 »"
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1661
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1662
 #, fuzzy
 #| msgid "Could not set criteria for empty row"
 msgid "Could not set criteria for empty record"
 msgstr "Dji n' a savou defini l' critere pol vude roye"
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1758
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1759
 msgid "Query column"
 msgstr "Colone di rcweraedje"
 
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1774
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1775
 msgid "Alias"
 msgstr "No metou"
 
@@ -6239,7 +6388,7 @@ msgstr "Voloz vs rinoncî å candjmints fwaits a ç' tecse SQL ?"
 msgid "Answering \"No\" allows you to make corrections."
 msgstr "Responde « Neni » vos permete di fé des coridjaedjes."
 
-#: plugins/queries/kexiquerydesignersql.cpp:399
+#: plugins/queries/kexiquerydesignersql.cpp:398
 msgid "Do you want to save invalid query?"
 msgstr "Voloz vs schaper l' ricweraedje nén valåbe ?"
 
@@ -6465,23 +6614,23 @@ msgstr ""
 msgid "Opening failed"
 msgstr "Li drovaedje di l' objet « %1 » a fwait berwete."
 
-#: plugins/reports/kexisourceselector.cpp:52
+#: plugins/reports/kexisourceselector.cpp:85
 #, fuzzy
 #| msgid "Data"
 msgid "Set Data"
 msgstr "Dinêyes"
 
-#: plugins/reports/kexisourceselector.cpp:56
+#: plugins/reports/kexisourceselector.cpp:89
 msgid "Internal"
 msgstr ""
 
-#: plugins/reports/kexisourceselector.cpp:57
+#: plugins/reports/kexisourceselector.cpp:90
 #, fuzzy
 #| msgid "External Data"
 msgid "External"
 msgstr "Difoûtrinnès dnêyes"
 
-#: plugins/reports/kexisourceselector.cpp:63
+#: plugins/reports/kexisourceselector.cpp:96
 #, fuzzy
 #| msgid ""
 #| "Row Source\n"
@@ -6491,100 +6640,137 @@ msgstr ""
 "Sourdant del roye\n"
 "Sôre"
 
-#: plugins/reports/kexisourceselector.cpp:71
+#: plugins/reports/kexisourceselector.cpp:104
 #, fuzzy
 #| msgid "Data Source"
 msgid "Internal Source:"
 msgstr "Sourdant di dnêyes"
 
-#: plugins/reports/kexisourceselector.cpp:76
+#: plugins/reports/kexisourceselector.cpp:109
 #, fuzzy
 #| msgid "Data Source"
 msgid "External Source:"
 msgstr "Sourdant di dnêyes"
 
-#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:125
-#: widget/KexiConnectionSelectorWidget.cpp:90
-msgid "File"
-msgstr "Fitchî"
-
-#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:127
 #: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:128
-#, fuzzy
-#| msgid "Field Caption"
-msgid "File actions"
-msgstr "Ledjinde do tchamp"
+msgid "Execute the scripting code"
+msgstr ""
 
 #: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:129
 #, fuzzy
-#| msgid "&New..."
-msgid "New"
-msgstr "&Novea..."
+#| msgid "Execute"
+msgid "Executes the scripting code."
+msgstr "Enonder"
 
-#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:133
-#, fuzzy
-#| msgid "&Open"
-msgid "Open..."
-msgstr "&Drovi"
-
-#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:137
-#, fuzzy
-#| msgid "Save &As..."
-msgid "Save As..."
-msgstr "Sch&aper et rlomer..."
-
-#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:143
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:138
 #, fuzzy
 #| msgid "&Edit..."
 msgid "Edit"
 msgstr "&Candjî..."
 
-#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:145
-#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:146
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:140
 #, fuzzy
 #| msgid "Edit Collection..."
 msgid "Edit actions"
 msgstr "Candjî ramexhnêye..."
 
-#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:152
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:141
+msgid "Provides Edit menu."
+msgstr ""
+
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:148
 #: plugins/scripting/kexiscripting/kexiscriptpart.cpp:235
 msgid "Configure Editor..."
 msgstr ""
 
-#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:154
-#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:155
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:150
 msgid "Configure the scripting editor"
 msgstr ""
 
-#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:163
-#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:164
-msgid "Execute the scripting code"
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:151
+msgid "Configures the scripting editor."
 msgstr ""
 
-#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:275
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:162
+#, fuzzy
+#| msgid "&Description:"
+msgid "Import script"
+msgstr "&Discrijhaedje :"
+
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:163
+#, fuzzy
+#| msgid "Imports table data from a file."
+msgid "Imports script from a file."
+msgstr "Abague des dnêyes d' ene tåve a pårti d' on fitchî."
+
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:176
+#, fuzzy
+#| msgid "&Import..."
+msgid "&Export..."
+msgstr "&Abaguer..."
+
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:178
+#, fuzzy
+#| msgid "Execute"
+msgid "Export script"
+msgstr "Enonder"
+
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:179
+#, fuzzy
+#| msgid "Export data to a file"
+msgid "Exports script to a file."
+msgstr "Ebaguer dnêyes èn on fitchî"
+
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:223
+#, fuzzy
+#| msgid "&Import"
+msgctxt "@title:window"
+msgid "Import Script"
+msgstr "&Abaguer"
+
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:229
+#, kde-format
+msgctxt "@info"
+msgid "Could not read <filename>%1</filename>."
+msgstr ""
+
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:244
+#, fuzzy
+#| msgid "Export"
+msgctxt "@title:window"
+msgid "Export Script"
+msgstr "Ebaguer"
+
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:250
+#, kde-format
+msgctxt "@info"
+msgid "Could not write <filename>%1</filename>."
+msgstr ""
+
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:295
 #, fuzzy
 #| msgid "Editor Type"
 msgid "Script Type"
 msgstr "Sôre d' aspougneu"
 
-#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:276
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:296
 msgid "The type of script"
 msgstr ""
 
-#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:290
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:310
 msgid "Interpreter"
 msgstr ""
 
-#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:291
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:311
 msgid "The used scripting interpreter."
 msgstr ""
 
-#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:355
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:375
 #, kde-format
 msgid "Execution of the script \"%1\" started."
 msgstr ""
 
-#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:371
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:391
 #, no-c-format, kde-format
 msgid "Successfully executed. Time elapsed: %1ms"
 msgstr ""
@@ -6664,7 +6850,7 @@ msgid "A kexi relation design shape"
 msgstr ""
 
 #: plugins/shapes/relationdesign/kexirelationdesigntool.cpp:101
-#: widget/kexidbconnectionwidget.cpp:374
+#: widget/kexidbconnectionwidget.cpp:382
 msgid "Open Database"
 msgstr "Drovi båze di dnêyes"
 
@@ -6731,6 +6917,7 @@ msgid "Describes caption for the field"
 msgstr "Discrît l' ledjinde pol tchamp"
 
 #: plugins/tables/kexitabledesignerview.cpp:144
+#: widget/fields/KexiFieldListModel.cpp:139
 msgid "Data Type"
 msgstr "Sôre di dnêyes"
 
@@ -6979,7 +7166,7 @@ msgstr ""
 "Vos avoz radjouté deus côp l' tchamp « %1 ».\n"
 "On n' pout nén repeter les nos des tchamps. Coridjîz l' no do tchamp."
 
-#: plugins/tables/kexitabledesignerview.cpp:1477
+#: plugins/tables/kexitabledesignerview.cpp:1503
 #, kde-format
 msgid ""
 "You are about to change the design of table \"%1\" but following objects "
@@ -6988,12 +7175,12 @@ msgstr ""
 "Vos alez candjî l' atuzlaedje do tåvlea « %1 » mins les objets shuvants s' "
 "siervant di ç' tåvlea la sont drovous :"
 
-#: plugins/tables/kexitabledesignerview.cpp:1668
+#: plugins/tables/kexitabledesignerview.cpp:1694
 #, kde-format
 msgid "Table field \"%1\""
 msgstr "Tchamp do tåvlea « %1 »"
 
-#: plugins/tables/kexitabledesignerview.cpp:1670
+#: plugins/tables/kexitabledesignerview.cpp:1696
 msgctxt "Empty table row"
 msgid "Empty Row"
 msgstr "Vudî roye"
@@ -7045,31 +7232,31 @@ msgstr ""
 "Vos alez oister l' tåvlea « %1 » mins les objets shuvants ki siervèt di ç' "
 "tåvlea la sont drovous :"
 
-#: plugins/tables/kexitablepart.cpp:196
+#: plugins/tables/kexitablepart.cpp:197
 msgid "Do you want to close all windows for these objects?"
 msgstr "Voloz clôre totes les finiesses po ces objets la ?"
 
-#: plugins/tables/kexitablepart.cpp:198
+#: plugins/tables/kexitablepart.cpp:199
 msgid "Close windows"
 msgstr "Clôre finiesses"
 
-#: plugins/tables/kexitablepart.cpp:216
+#: plugins/tables/kexitablepart.cpp:217
 #, kde-format
 msgid "Design of table \"%1\" has been modified."
 msgstr "L' atuzlaedje do tåvlea « %1 » a stî candjî."
 
-#: plugins/tables/kexitablepart.cpp:219
+#: plugins/tables/kexitablepart.cpp:220
 #, kde-format
 msgid "Table \"%1\" already exists."
 msgstr "Li tåvlea « %1 » egzistêye dedja."
 
-#: plugins/tables/kexitablepart.cpp:223
+#: plugins/tables/kexitablepart.cpp:224
 msgid "Warning! Any data in this table will be removed upon design's saving!"
 msgstr ""
 "Asteme ! Totes les dnêyes dins ç' tåvlea ci sront oistêyes å schapaedje di "
 "l' atuzlaedje !"
 
-#: plugins/tables/kexitablepart.cpp:253
+#: plugins/tables/kexitablepart.cpp:254
 msgid "Lookup column"
 msgstr "Cweri colone"
 
@@ -7176,15 +7363,15 @@ msgstr "Li candjaedje del roye a fwait berwete."
 msgid "Record deleting failed."
 msgstr "Li disfaçaedje del roye a fwait berwete."
 
-#: widget/fields/KexiFieldListModel.cpp:136
+#: widget/fields/KexiFieldListModel.cpp:137
 msgid "Field Name"
 msgstr "No do tchamp"
 
-#: widget/fields/KexiFieldListModelItem.cpp:44
+#: widget/fields/KexiFieldListModelItem.cpp:61
 msgid "* (All Columns)"
 msgstr "* (Totes les colones)"
 
-#: widget/kexicharencodingcombobox.cpp:66
+#: widget/kexicharencodingcombobox.cpp:73
 #, kde-format
 msgctxt "Text encoding: Default"
 msgid "Default: %1"
@@ -7229,43 +7416,47 @@ msgstr "&Candjî..."
 msgid "&Remove"
 msgstr "&Oister"
 
-#: widget/KexiConnectionSelectorWidget.cpp:64
+#: widget/KexiConnectionSelectorWidget.cpp:65
 msgid "Add a new database connection"
 msgstr "Radjouter on novea raloyaedje a ene båze di dnêyes"
 
-#: widget/KexiConnectionSelectorWidget.cpp:65
+#: widget/KexiConnectionSelectorWidget.cpp:66
 msgid "Edit selected database connection"
 msgstr "Candjî raloyaedje al båze di dnêyes di tchoezi"
 
-#: widget/KexiConnectionSelectorWidget.cpp:66
+#: widget/KexiConnectionSelectorWidget.cpp:67
 msgid "Remove selected database connections"
 msgstr "Disfacer les raloyaedjes ås båzes di dnêyes di tchoezis"
 
-#: widget/KexiConnectionSelectorWidget.cpp:405
+#: widget/KexiConnectionSelectorWidget.cpp:91
+msgid "File"
+msgstr "Fitchî"
+
+#: widget/KexiConnectionSelectorWidget.cpp:424
 msgid "&Add"
 msgstr "R&adjouter"
 
-#: widget/KexiConnectionSelectorWidget.cpp:405
+#: widget/KexiConnectionSelectorWidget.cpp:424
 msgid "Add database connection"
 msgstr "Radjouter raloyaedje a ene båze di dnêyes"
 
-#: widget/KexiConnectionSelectorWidget.cpp:406
+#: widget/KexiConnectionSelectorWidget.cpp:425
 msgid "Add New Database Connection"
 msgstr "Radjouter on novea raloyaedje a ene båze di dnêyes"
 
-#: widget/KexiConnectionSelectorWidget.cpp:434
+#: widget/KexiConnectionSelectorWidget.cpp:453
 msgid "&Save"
 msgstr "&Schaper"
 
-#: widget/KexiConnectionSelectorWidget.cpp:435
+#: widget/KexiConnectionSelectorWidget.cpp:454
 msgid "Save changes made to this database connection"
 msgstr "Schape les candjmints fwaits a c' raloyaedje al båze di dnêyes"
 
-#: widget/KexiConnectionSelectorWidget.cpp:436
+#: widget/KexiConnectionSelectorWidget.cpp:455
 msgid "Edit Database Connection"
 msgstr "Candjî raloyaedje al båze di dnêyes"
 
-#: widget/KexiConnectionSelectorWidget.cpp:461
+#: widget/KexiConnectionSelectorWidget.cpp:480
 #, kde-format
 msgid ""
 "Do you want to remove database connection \"%1\" from the list of available "
@@ -7278,11 +7469,11 @@ msgstr ""
 msgid "Define Query..."
 msgstr "Defini rcweraedje"
 
-#: widget/kexidbconnectionwidget.cpp:82
+#: widget/kexidbconnectionwidget.cpp:92
 msgid "Load database list from the server"
 msgstr "Tcherdjî djivêye des båzes di dnêyes a pårti do sierveu"
 
-#: widget/kexidbconnectionwidget.cpp:84
+#: widget/kexidbconnectionwidget.cpp:94
 msgid ""
 "Loads database list from the server, so you can select one using the \"Name"
 "\" combo box."
@@ -7290,11 +7481,11 @@ msgstr ""
 "Tchedje li djivêye des båzes di dnêyes a pårti do sierveu po vos ndè ploxhe "
 "tchoezi ene e s' siervant del dressêye disrôlante « No »."
 
-#: widget/kexidbconnectionwidget.cpp:91
+#: widget/kexidbconnectionwidget.cpp:101
 msgid "Save all changes made to this connection information"
 msgstr "Schape tos les candjmints fwaits a ciste informåcion d' raloyaedje"
 
-#: widget/kexidbconnectionwidget.cpp:92
+#: widget/kexidbconnectionwidget.cpp:102
 msgid ""
 "Save all changes made to this connection information. You can later reuse "
 "this information."
@@ -7302,15 +7493,15 @@ msgstr ""
 "Schape tos les candjmints fwaits a ciste informåcion d' raloyaedje. Vos vs "
 "endè rpoloz siervi pu tård."
 
-#: widget/kexidbconnectionwidget.cpp:103
+#: widget/kexidbconnectionwidget.cpp:113
 msgid "&Test Connection"
 msgstr "&Sayî l' raloyaedje"
 
-#: widget/kexidbconnectionwidget.cpp:104
+#: widget/kexidbconnectionwidget.cpp:114
 msgid "Test database connection"
 msgstr "Sayî l' raloyaedje del båze di dnêyes"
 
-#: widget/kexidbconnectionwidget.cpp:105
+#: widget/kexidbconnectionwidget.cpp:115
 msgid ""
 "Tests database connection. You can ensure that valid connection information "
 "is provided."
@@ -7320,25 +7511,25 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QTreeWidget, list)
 #. i18n: ectx: property (title), widget (Q3GroupBox, dbGroupBox)
-#: widget/kexidbconnectionwidget.cpp:147 widget/kexidbconnectionwidget.ui:289
+#: widget/kexidbconnectionwidget.cpp:157 widget/kexidbconnectionwidget.ui:289
 #: widget/KexiProjectSelector.ui:85
 msgid "Database"
 msgstr "Båze di dnêyes"
 
-#: widget/kexidbconnectionwidget.cpp:247
+#: widget/kexidbconnectionwidget.cpp:261
 msgid "Parameters"
 msgstr "Parametes"
 
-#: widget/kexidbconnectionwidget.cpp:257
+#: widget/kexidbconnectionwidget.cpp:265
 msgid "Details"
 msgstr "Detays"
 
-#: widget/kexidbconnectionwidget.cpp:385
+#: widget/kexidbconnectionwidget.cpp:394
 msgid "Connect to a Database Server"
 msgstr "Si raloyî a on sierveu di båze di dnêyes"
 
-#: widget/kexidbconnectionwidget.cpp:401
-#: widget/KexiProjectSelectorWidget.cpp:309
+#: widget/kexidbconnectionwidget.cpp:411
+#: widget/KexiProjectSelectorWidget.cpp:326
 msgid "Open Database Connection"
 msgstr "Drovi raloyaedje al båze di dnêyes"
 
@@ -7451,37 +7642,33 @@ msgstr ""
 "Li fitchî « %1 » egzistêye dedja.\n"
 "El voloz vs sipotchî ?"
 
-#: widget/KexiNameDialog.cpp:126
-msgid "Please choose other name."
-msgstr "Tchoezixhoz èn ôte no s' i vs plait."
-
-#: widget/KexiNameDialog.cpp:133
+#: widget/KexiNameDialog.cpp:166
 msgid "Do you want to replace it?"
 msgstr "El voloz vs ricandjî ?"
 
-#: widget/KexiNameDialog.cpp:136
+#: widget/KexiNameDialog.cpp:169
 #, fuzzy
 #| msgid "Rename object"
 msgid "Replace object"
 msgstr "Rilomer objet"
 
-#: widget/KexiNameDialog.cpp:139
+#: widget/KexiNameDialog.cpp:172
 msgid "&Choose Other Name..."
 msgstr "&Tchoezi èn ôte no..."
 
-#: widget/KexiNameWidget.cpp:75
+#: widget/KexiNameWidget.cpp:98
 msgid "Caption:"
 msgstr "Ledjinde :"
 
-#: widget/KexiNameWidget.cpp:80
+#: widget/KexiNameWidget.cpp:103
 msgid "Name:"
 msgstr "No :"
 
-#: widget/KexiNameWidget.cpp:107
+#: widget/KexiNameWidget.cpp:130
 msgid "Please enter the name."
 msgstr "Tapez l' no s' i vs plait."
 
-#: widget/KexiNameWidget.cpp:108
+#: widget/KexiNameWidget.cpp:131
 msgid "Please enter the caption."
 msgstr "Tapez l' ledjinde s' i vs plait."
 
@@ -7526,13 +7713,13 @@ msgstr "Ledjinde do pordjet"
 msgid "Connection"
 msgstr "&Sayî l' raloyaedje"
 
-#: widget/KexiProjectSelectorWidget.cpp:75
+#: widget/KexiProjectSelectorWidget.cpp:87
 #, fuzzy, kde-format
 #| msgid "File"
 msgid "File (%1)"
 msgstr "Fitchî"
 
-#: widget/KexiProjectSelectorWidget.cpp:85
+#: widget/KexiProjectSelectorWidget.cpp:97
 #, fuzzy, kde-format
 #| msgctxt "Object name : Object type"
 #| msgid "%1 : %2"
@@ -7540,7 +7727,7 @@ msgctxt "caption: server_info"
 msgid "%1: %2"
 msgstr "%1 : %2"
 
-#: widget/KexiProjectSelectorWidget.cpp:311
+#: widget/KexiProjectSelectorWidget.cpp:328
 #, kde-format
 msgid "Select a project on <b>%1</b> database server to open:"
 msgstr ""
@@ -7561,11 +7748,11 @@ msgctxt "Boolean False - No"
 msgid "No"
 msgstr "Neni"
 
-#: widget/kexiscrollview.cpp:360
+#: widget/kexiscrollview.cpp:401
 msgid "Outer Area"
 msgstr "Difoûtrinne redjon"
 
-#: widget/kexiscrollview.cpp:361
+#: widget/kexiscrollview.cpp:402
 msgid ""
 "Outer\n"
 "Area"
@@ -7573,141 +7760,154 @@ msgstr ""
 "Difoûtrinne\n"
 "Redjon"
 
-#: widget/navigator/KexiProjectNavigator.cpp:74
+#: widget/KexiServerDriverNotFoundMessage.cpp:27
+msgctxt "@info"
+msgid ""
+"<title>No database server drivers found</title>                 "
+"<para>Connection to a database server requires an appropriate driver which "
+"you do not have installed.</para>                 <subtitle>Details</"
+"subtitle>                 <para>To obtain database drivers please use your "
+"Package Manager to search and install packages named "
+"<filename>                 calligra-kexi-xxxx-driver</filename>. Please note "
+"that your package names could vary slightly according to the distribution "
+"you use.</para>"
+msgstr ""
+
+#: widget/navigator/KexiProjectNavigator.cpp:120
 msgid "Project Navigator"
 msgstr "Naivieu e pordjet"
 
-#: widget/navigator/KexiProjectNavigator.cpp:113
+#: widget/navigator/KexiProjectNavigator.cpp:159
 msgid "Open object"
 msgstr "Drovi objet"
 
-#: widget/navigator/KexiProjectNavigator.cpp:113
+#: widget/navigator/KexiProjectNavigator.cpp:159
 msgid "Opens object selected in the list."
 msgstr "Drove l' objet tchoezi el djivêye."
 
-#: widget/navigator/KexiProjectNavigator.cpp:131
+#: widget/navigator/KexiProjectNavigator.cpp:177
 #, fuzzy
 #| msgid "&Delete"
 msgid "&Delete..."
 msgstr "&Disfacer"
 
-#: widget/navigator/KexiProjectNavigator.cpp:132
+#: widget/navigator/KexiProjectNavigator.cpp:178
 msgid "Delete object"
 msgstr "Disfacer objet"
 
-#: widget/navigator/KexiProjectNavigator.cpp:133
+#: widget/navigator/KexiProjectNavigator.cpp:179
 msgid "Deletes the object selected in the list."
 msgstr "Disface l' objet tchoezi el djivêye."
 
-#: widget/navigator/KexiProjectNavigator.cpp:136
+#: widget/navigator/KexiProjectNavigator.cpp:182
 #, fuzzy
 #| msgid "&Rename"
 msgid "&Rename..."
 msgstr "&Rilomer"
 
-#: widget/navigator/KexiProjectNavigator.cpp:137
+#: widget/navigator/KexiProjectNavigator.cpp:183
 msgid "Rename object"
 msgstr "Rilomer objet"
 
-#: widget/navigator/KexiProjectNavigator.cpp:138
+#: widget/navigator/KexiProjectNavigator.cpp:184
 msgid "Renames the object selected in the list."
 msgstr "Rilome l' objet tchoezi el djivêye."
 
-#: widget/navigator/KexiProjectNavigator.cpp:147
+#: widget/navigator/KexiProjectNavigator.cpp:193
 msgid "&Design"
 msgstr "&Atuzlaedje"
 
-#: widget/navigator/KexiProjectNavigator.cpp:148
+#: widget/navigator/KexiProjectNavigator.cpp:194
 msgid "Design object"
 msgstr "Atuzler objet"
 
-#: widget/navigator/KexiProjectNavigator.cpp:149
+#: widget/navigator/KexiProjectNavigator.cpp:195
 msgid "Starts designing of the object selected in the list."
 msgstr "Atake l' atuzlaedje di l' objet tchoezi el djivêye."
 
-#: widget/navigator/KexiProjectNavigator.cpp:157
+#: widget/navigator/KexiProjectNavigator.cpp:203
 #, fuzzy
 #| msgid "Open in &Text View"
 msgid "Design in &Text View"
 msgstr "Drovi e môde &tecse"
 
-#: widget/navigator/KexiProjectNavigator.cpp:158
+#: widget/navigator/KexiProjectNavigator.cpp:204
 #, fuzzy
 #| msgid "Open object in text view"
 msgid "Design object in text view"
 msgstr "Drovi objet e môde tecse"
 
-#: widget/navigator/KexiProjectNavigator.cpp:159
+#: widget/navigator/KexiProjectNavigator.cpp:205
 #, fuzzy
 #| msgid "Starts designing of the object selected in the list."
 msgid "Starts designing of the object in the list in text view."
 msgstr "Atake l' atuzlaedje di l' objet tchoezi el djivêye."
 
-#: widget/navigator/KexiProjectNavigator.cpp:178
+#: widget/navigator/KexiProjectNavigator.cpp:224
 msgctxt "Export->To Clipboard as Data... "
 msgid "To &Clipboard..."
 msgstr "E &presse-papî..."
 
-#: widget/navigator/KexiProjectNavigator.cpp:179
+#: widget/navigator/KexiProjectNavigator.cpp:225
 msgid "Export data to clipboard"
 msgstr "Ebaguer les dnêyes e presse-papî"
 
-#: widget/navigator/KexiProjectNavigator.cpp:180
+#: widget/navigator/KexiProjectNavigator.cpp:226
 msgid "Exports data from the currently selected table or query to clipboard."
 msgstr ""
 "Ebague les dnêyes del tåve ou do rcweraedje tchoezeye pol moumint e presse-"
 "papî."
 
-#: widget/navigator/KexiProjectNavigator.cpp:185
+#: widget/navigator/KexiProjectNavigator.cpp:231
 msgctxt "Export->To File As Data &Table... "
 msgid "To &File As Data Table..."
 msgstr "Dins on &fitchî e tåve di dnêyes..."
 
-#: widget/navigator/KexiProjectNavigator.cpp:186
+#: widget/navigator/KexiProjectNavigator.cpp:232
 msgid "Export data to a file"
 msgstr "Ebaguer dnêyes èn on fitchî"
 
-#: widget/navigator/KexiProjectNavigator.cpp:187
+#: widget/navigator/KexiProjectNavigator.cpp:233
 msgid "Exports data from the currently selected table or query to a file."
 msgstr ""
 "Ebague les dnêyes del tåve ou do rcweraedje tchoezi pol moumint èn on fitchî."
 
-#: widget/navigator/KexiProjectNavigator.cpp:192
+#: widget/navigator/KexiProjectNavigator.cpp:238
 msgid "&Print..."
 msgstr "&Imprimer..."
 
-#: widget/navigator/KexiProjectNavigator.cpp:193
+#: widget/navigator/KexiProjectNavigator.cpp:239
 msgid "Print data"
 msgstr "Imprimer dnêyes"
 
-#: widget/navigator/KexiProjectNavigator.cpp:194
+#: widget/navigator/KexiProjectNavigator.cpp:240
 msgid "Prints data from the currently selected table or query."
 msgstr "Imprime les dnêyes del tåve ou do rcweraedje tchoezi pol moumint."
 
-#: widget/navigator/KexiProjectNavigator.cpp:198
+#: widget/navigator/KexiProjectNavigator.cpp:244
 msgid "Page Setup..."
 msgstr "Epådjnaedje..."
 
-#: widget/navigator/KexiProjectNavigator.cpp:199
+#: widget/navigator/KexiProjectNavigator.cpp:245
 msgid "Page setup for data"
 msgstr "Epådjnaedje des dnêyes"
 
-#: widget/navigator/KexiProjectNavigator.cpp:369
+#: widget/navigator/KexiProjectNavigator.cpp:415
 #, kde-format
 msgid "&Create Object: %1..."
 msgstr "&Ahiver objet : %1..."
 
-#: widget/navigator/KexiProjectNavigator.cpp:382
+#: widget/navigator/KexiProjectNavigator.cpp:428
 msgid "&Create Object..."
 msgstr "&Ahiver objet..."
 
-#: widget/navigator/KexiProjectNavigator.cpp:487
+#: widget/navigator/KexiProjectNavigator.cpp:533
 #, kde-format
 msgctxt "@info Rename object %1:"
 msgid "Rename <resource>%1</resource>:"
 msgstr ""
 
-#: widget/navigator/KexiProjectNavigator.cpp:498
+#: widget/navigator/KexiProjectNavigator.cpp:544
 #, kde-format
 msgctxt "@title:window Rename Object %1."
 msgid "Rename <resource>%1</resource>"
@@ -7877,7 +8077,7 @@ msgctxt "Object name : Object type"
 msgid "%1 : %2"
 msgstr "%1 : %2"
 
-#: widget/utils/kexidatetimeformatter.cpp:303
+#: widget/utils/kexidatetimeformatter.cpp:376
 msgid "pm"
 msgstr ""
 
@@ -8004,6 +8204,47 @@ msgstr "Bodje li cursoe al dierinne roye."
 #| msgid "Moves cursor to new row and allows inserting."
 msgid "Moves cursor to new record and allows inserting."
 msgstr "Bodje li cursoe al novele roye et permete di stitchî."
+
+#~ msgid ""
+#~ "No \"%1\" service type installed. Check your Kexi installation. Aborting."
+#~ msgstr ""
+#~ "I gn a  pont d' sôre di siervice « %1 » d' astalêye. Verifyîz vost "
+#~ "astalaedje di Kexi. Dj' abandene."
+
+#~ msgid "Show:"
+#~ msgstr "Mostrer :"
+
+#~ msgid "Saving new \"%1\" object failed."
+#~ msgstr "Li schapaedje do novea objet « %1 » a fwait berwete."
+
+#~ msgid "Important Information"
+#~ msgstr "Impôrtante informåcion"
+
+#~ msgid "&Options"
+#~ msgstr "&Tchuzes"
+
+#~ msgid "Importing CSV Data"
+#~ msgstr "Dj' abague des dnêyes CSV"
+
+#, fuzzy
+#~| msgid "Field Caption"
+#~ msgid "File actions"
+#~ msgstr "Ledjinde do tchamp"
+
+#, fuzzy
+#~| msgid "&New..."
+#~ msgid "New"
+#~ msgstr "&Novea..."
+
+#, fuzzy
+#~| msgid "&Open"
+#~ msgid "Open..."
+#~ msgstr "&Drovi"
+
+#, fuzzy
+#~| msgid "Save &As..."
+#~ msgid "Save As..."
+#~ msgstr "Sch&aper et rlomer..."
 
 #~ msgid "Column Width"
 #~ msgstr "Lårdjeur del colone"
@@ -8150,9 +8391,6 @@ msgstr "Bodje li cursoe al novele roye et permete di stitchî."
 #~ msgid "&Insert"
 #~ msgstr "&Sititchî"
 
-#~ msgid "&Import"
-#~ msgstr "&Abaguer"
-
 #~ msgid "Paste &Special"
 #~ msgstr "Aclapaedje &sipeciå"
 
@@ -8188,11 +8426,6 @@ msgstr "Bodje li cursoe al novele roye et permete di stitchî."
 #, fuzzy
 #~| msgid "Export"
 #~ msgid "Not Exported"
-#~ msgstr "Ebaguer"
-
-#, fuzzy
-#~| msgid "Export"
-#~ msgid "Export Style"
 #~ msgstr "Ebaguer"
 
 #~ msgid "Main Area"
