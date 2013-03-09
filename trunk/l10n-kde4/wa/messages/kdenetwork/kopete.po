@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kopete\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-02-17 03:37+0100\n"
+"POT-Creation-Date: 2013-03-09 03:44+0100\n"
 "PO-Revision-Date: 2011-01-14 17:46+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -1277,7 +1277,7 @@ msgstr "No d' famile:"
 #: kopete/config/status/statusconfig_manager.ui:53
 #: kopete/contactlist/kopetecontactlistview.cpp:401
 #: kopete/contactlist/kopetecontactlistview.cpp:416
-#: kopete/contactlist/kopetecontactlistview.cpp:858
+#: kopete/contactlist/kopetecontactlistview.cpp:863
 #: libkopete/kopetecontact.cpp:461 plugins/highlight/highlightprefsbase.ui:66
 #: plugins/privacy/privacydialog.ui:92 plugins/privacy/privacydialog.ui:176
 #: protocols/jabber/jabberprotocol.cpp:464
@@ -2943,81 +2943,93 @@ msgid ""
 "list?"
 msgstr "Estoz vs seur di voleur oister les sourdants shuvants?"
 
-#: kopete/contactlist/kopetecontactlistview.cpp:538
+#: kopete/contactlist/kopetecontactlistview.cpp:446
+#, fuzzy, kde-format
+#| msgid "Select the meta contact to which you want to move this contact:"
+msgid "Account %1 is offline. Do you really want to move this metacontact?"
+msgstr "Tchoezixhoz li metasoçon ki vos vloz bodjî c' soçon ci:"
+
+#: kopete/contactlist/kopetecontactlistview.cpp:447
+#, fuzzy
+#| msgid "Move Contact"
+msgid "Move contact"
+msgstr "Displaecî soçon"
+
+#: kopete/contactlist/kopetecontactlistview.cpp:543
 msgid "There is no email address set for this contact in the KDE address book."
 msgstr ""
 "I gn a pont d' adresse emile di defineye po c' soçon dins l' calpin d' "
 "adresses di KDE."
 
-#: kopete/contactlist/kopetecontactlistview.cpp:538
+#: kopete/contactlist/kopetecontactlistview.cpp:543
 msgid "No Email Address in Address Book"
 msgstr "I n' a nole adresse emile e calpin d' adresses"
 
-#: kopete/contactlist/kopetecontactlistview.cpp:542
+#: kopete/contactlist/kopetecontactlistview.cpp:547
 msgid ""
 "This contact was not found in the KDE address book. Check that a contact is "
 "selected in the properties dialog."
 msgstr ""
 
-#: kopete/contactlist/kopetecontactlistview.cpp:542
+#: kopete/contactlist/kopetecontactlistview.cpp:547
 msgid "Not Found in Address Book"
 msgstr "Nén trové e calpin d' adresses"
 
-#: kopete/contactlist/kopetecontactlistview.cpp:836
+#: kopete/contactlist/kopetecontactlistview.cpp:841
 msgid "Rename Contact"
 msgstr "Rilomer soçon"
 
-#: kopete/contactlist/kopetecontactlistview.cpp:837
+#: kopete/contactlist/kopetecontactlistview.cpp:842
 #: libkopete/kopetecontact.cpp:461
 msgid "Remove Contact"
 msgstr "Oister soçon"
 
-#: kopete/contactlist/kopetecontactlistview.cpp:838
+#: kopete/contactlist/kopetecontactlistview.cpp:843
 msgid "Send Single Message..."
 msgstr "Evoyî on seu messaedje..."
 
-#: kopete/contactlist/kopetecontactlistview.cpp:841
+#: kopete/contactlist/kopetecontactlistview.cpp:846
 msgid "&Add Subcontact"
 msgstr "&Radjouter soçon aclapé"
 
-#: kopete/contactlist/kopetecontactlistview.cpp:846
+#: kopete/contactlist/kopetecontactlistview.cpp:851
 msgid "Rename Group"
 msgstr "Rilomer l' groupe"
 
-#: kopete/contactlist/kopetecontactlistview.cpp:847
+#: kopete/contactlist/kopetecontactlistview.cpp:852
 msgid "Remove Group"
 msgstr "Oister groupe"
 
-#: kopete/contactlist/kopetecontactlistview.cpp:848
+#: kopete/contactlist/kopetecontactlistview.cpp:853
 msgid "Send Message to Group"
 msgstr "Evoyî messaedje å groupe"
 
-#: kopete/contactlist/kopetecontactlistview.cpp:852
+#: kopete/contactlist/kopetecontactlistview.cpp:857
 msgid "&Add Contact to Group"
 msgstr "&Radjouter soçon å groupe"
 
-#: kopete/contactlist/kopetecontactlistview.cpp:857
+#: kopete/contactlist/kopetecontactlistview.cpp:862
 #, fuzzy
 #| msgid "Rename..."
 msgid "Rename"
 msgstr "Rilomer..."
 
-#: kopete/contactlist/kopetecontactlistview.cpp:862
+#: kopete/contactlist/kopetecontactlistview.cpp:867
 msgid "Make Meta Contact"
 msgstr "Fé on meta-soçon"
 
-#: kopete/contactlist/kopetecontactlistview.cpp:980
+#: kopete/contactlist/kopetecontactlistview.cpp:985
 #: kopete/kopetewindow.cpp:1384
 msgid "Add Contact"
 msgstr "Radjouter soçon"
 
-#: kopete/contactlist/kopetecontactlistview.cpp:1061
+#: kopete/contactlist/kopetecontactlistview.cpp:1066
 #, kde-format
 msgctxt "Translators: format: '<nickname> (<online status>)'"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: kopete/contactlist/kopetecontactlistview.cpp:1089
+#: kopete/contactlist/kopetecontactlistview.cpp:1094
 #, kde-format
 msgctxt "Translators: format: '<displayName> (<id>)'"
 msgid "%2 <%1>"
@@ -7016,7 +7028,7 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLineEdit, kcfg_Conjunction)
 #: plugins/nowlistening/nowlisteningconfig.kcfg:22
-#: plugins/nowlistening/nowlisteningprefs.ui:156
+#: plugins/nowlistening/nowlisteningprefs.ui:149
 msgid ", and "
 msgstr "eyet "
 
@@ -7090,28 +7102,28 @@ msgid "Unknown player"
 msgstr "Sôre nén cnoxhowe"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, NowListeningPrefsUI)
-#: plugins/nowlistening/nowlisteningprefs.ui:13
+#: plugins/nowlistening/nowlisteningprefs.ui:14
 msgid "Now Listening"
 msgstr "Schoûté asteure"
 
 #. i18n: ectx: property (text), widget (QLabel, advertiseNewMediaToBuddiesLabel)
-#: plugins/nowlistening/nowlisteningprefs.ui:25
+#: plugins/nowlistening/nowlisteningprefs.ui:26
 msgid "<b>Share Your Musical Taste</b>"
 msgstr "<b>Partaedjîz vos gosses muzikåles</b>"
 
 #. i18n: ectx: attribute (title), widget (QWidget, TabPage)
-#: plugins/nowlistening/nowlisteningprefs.ui:57
+#: plugins/nowlistening/nowlisteningprefs.ui:50
 msgid "Messa&ge"
 msgstr "Messae&dje"
 
 #. i18n: ectx: property (text), widget (QLabel, useThisMessageLabel)
-#: plugins/nowlistening/nowlisteningprefs.ui:77
+#: plugins/nowlistening/nowlisteningprefs.ui:70
 #, fuzzy
 msgid "Use this message when advertising:"
 msgstr "Mete ci messaedje chal el cawêye po l' evoyî pus tård"
 
 #. i18n: ectx: property (text), widget (QLabel, helperLabel)
-#: plugins/nowlistening/nowlisteningprefs.ui:85
+#: plugins/nowlistening/nowlisteningprefs.ui:78
 #, no-c-format
 msgid ""
 "%track, %artist, %album, %player will be substituted if known.\n"
@@ -7121,38 +7133,38 @@ msgstr ""
 "Les ratourneures inte åtchetes sont fwaites s' on candjaedje sait esse fwait."
 
 #. i18n: ectx: property (text), widget (QLabel, m_headerLabel)
-#: plugins/nowlistening/nowlisteningprefs.ui:103
+#: plugins/nowlistening/nowlisteningprefs.ui:96
 msgid "Start with:"
 msgstr "Ataker avou:"
 
 #. i18n: ectx: property (text), widget (QLineEdit, kcfg_Header)
-#: plugins/nowlistening/nowlisteningprefs.ui:116
+#: plugins/nowlistening/nowlisteningprefs.ui:109
 msgid "Now Listening To: "
 msgstr "Schoûté asteure:"
 
 #. i18n: ectx: property (text), widget (QLabel, m_perTrackLabel)
-#: plugins/nowlistening/nowlisteningprefs.ui:123
+#: plugins/nowlistening/nowlisteningprefs.ui:116
 msgid "For each track:"
 msgstr "Po tchaeke djive:"
 
 #. i18n: ectx: property (text), widget (QLineEdit, kcfg_PerTrack)
-#: plugins/nowlistening/nowlisteningprefs.ui:136
+#: plugins/nowlistening/nowlisteningprefs.ui:129
 #, no-c-format
 msgid "%track (by %artist)(on %album)"
 msgstr "%track (pa %artist)(so %album)"
 
 #. i18n: ectx: property (text), widget (QLabel, m_conjunctionLabel)
-#: plugins/nowlistening/nowlisteningprefs.ui:143
+#: plugins/nowlistening/nowlisteningprefs.ui:136
 msgid "Conjunction (if >1 track):"
 msgstr "Etroclaedje (s' i gn a pus k' ene djive):"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: plugins/nowlistening/nowlisteningprefs.ui:192
+#: plugins/nowlistening/nowlisteningprefs.ui:177
 msgid "A&dvertising Mode"
 msgstr "Môde d' anonçae&dje"
 
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_ExplicitAdvertising)
-#: plugins/nowlistening/nowlisteningprefs.ui:206
+#: plugins/nowlistening/nowlisteningprefs.ui:191
 msgid ""
 "Explicit &via \"Tools->Send Media Info\",\n"
 "or by typing \"/media\" in the chat\n"
@@ -7160,30 +7172,30 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_ChatAdvertising)
-#: plugins/nowlistening/nowlisteningprefs.ui:213
+#: plugins/nowlistening/nowlisteningprefs.ui:198
 #, fuzzy
 msgid "&Show in chat window (automatic)"
 msgstr "Håyner l' mwaisse purnea a l' enondaedje"
 
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_StatusAdvertising)
-#: plugins/nowlistening/nowlisteningprefs.ui:221
+#: plugins/nowlistening/nowlisteningprefs.ui:206
 msgid ""
 "Show &the music you are listening to \n"
 "in place of your status message."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_AppendStatusAdvertising)
-#: plugins/nowlistening/nowlisteningprefs.ui:228
+#: plugins/nowlistening/nowlisteningprefs.ui:213
 msgid "Appe&nd to your status message"
 msgstr ""
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: plugins/nowlistening/nowlisteningprefs.ui:260
+#: plugins/nowlistening/nowlisteningprefs.ui:237
 msgid "Media Pla&yer"
 msgstr "Djou&weu multimedia"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_UseSpecifiedMediaPlayer)
-#: plugins/nowlistening/nowlisteningprefs.ui:280
+#: plugins/nowlistening/nowlisteningprefs.ui:257
 msgid "Use &specified media player"
 msgstr "Si siervi do djouweu media &specifyî"
 
