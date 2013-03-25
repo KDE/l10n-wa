@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwincompositing\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-03-05 05:22+0100\n"
+"POT-Creation-Date: 2013-03-25 03:44+0100\n"
 "PO-Revision-Date: 2011-01-09 11:18+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -70,29 +70,79 @@ msgstr ""
 msgid "Use GLSL shaders"
 msgstr ""
 
-#: main.cpp:190
+#: main.cpp:139
+msgid "None"
+msgstr ""
+
+#: main.cpp:140
+msgid "The painting is not synchronized with the screen."
+msgstr ""
+
+#: main.cpp:141
+msgid "Automatic"
+msgstr ""
+
+#: main.cpp:142
+msgid ""
+"Tries to re-use older buffers and if that is not possible,\n"
+"picks a stragtegy matching your hardware."
+msgstr ""
+
+#: main.cpp:143
+msgid "Only when Cheap"
+msgstr ""
+
+#: main.cpp:144
+msgid ""
+"When major regions of the screen are updated,\n"
+"the entire screen will be repainted.\n"
+"Can cause tearing with small updates."
+msgstr ""
+
+#: main.cpp:145
+msgid "Full scene repaints"
+msgstr ""
+
+#: main.cpp:146
+msgid ""
+"The complete screen is repainted for every frame.\n"
+"Can be slow with large blurred areas."
+msgstr ""
+
+#: main.cpp:147
+msgid "Re-use screen content"
+msgstr ""
+
+#: main.cpp:148
+msgid ""
+"WARNING:\n"
+"This strategy is usually slow with Open Source drivers.\n"
+"Undamaged pixels will be copied from GL_FRONT to GL_BACK"
+msgstr ""
+
+#: main.cpp:202
 msgid "kcmkwincompositing"
 msgstr "kcmkwincompositing"
 
-#: main.cpp:191
+#: main.cpp:203
 msgid "KWin Desktop Effects Configuration Module"
 msgstr "Module d' apontiaedje des efets compôzites do scribanne di KWin"
 
-#: main.cpp:192
+#: main.cpp:204
 msgid "(c) 2007 Rivo Laks"
 msgstr "© 2007 Rivo Laks"
 
-#: main.cpp:193
+#: main.cpp:205
 msgid "Rivo Laks"
 msgstr "Rivo Laks"
 
-#: main.cpp:211
+#: main.cpp:223
 #, fuzzy
 #| msgid "No Effect"
 msgid "No effect"
 msgstr "Nou efet"
 
-#: main.cpp:234
+#: main.cpp:246
 msgid ""
 "Failed to activate desktop effects using the given configuration options. "
 "Settings will be reverted to their previous values.\n"
@@ -107,39 +157,39 @@ msgstr ""
 "Verifyîz vost apontiaedje di X. Vos pôrîz ossu tuzer a candjî les spepieusès "
 "tchuzes, sortot candjî l' sôre di môde compôzite."
 
-#: main.cpp:271
+#: main.cpp:283
 msgid "Appearance"
 msgstr "Rivnance"
 
-#: main.cpp:272
+#: main.cpp:284
 msgid "Accessibility"
 msgstr "Accessibilité"
 
-#: main.cpp:273
+#: main.cpp:285
 msgid "Focus"
 msgstr "Focusse"
 
-#: main.cpp:274
+#: main.cpp:286
 msgid "Window Management"
 msgstr "Manaedjmint des purneas"
 
-#: main.cpp:275
+#: main.cpp:287
 msgid "Candy"
 msgstr "Tot djoli"
 
-#: main.cpp:276
+#: main.cpp:288
 msgid "Demos"
 msgstr "Mostraedjes"
 
-#: main.cpp:277
+#: main.cpp:289
 msgid "Tests"
 msgstr "Sayes"
 
-#: main.cpp:278
+#: main.cpp:290
 msgid "Tools"
 msgstr "Usteyes"
 
-#: main.cpp:436
+#: main.cpp:455
 msgid ""
 "Desktop effects are not available on this system due to the following "
 "technical issues:"
@@ -147,14 +197,14 @@ msgstr ""
 "Les efets d' sicribanne ni sont nén disponibes so cisse sistinme ci a cåze "
 "des rujhes tecnikes shuvantes :"
 
-#: main.cpp:439
+#: main.cpp:458
 msgctxt ""
 "Reason shown when trying to activate desktop effects and KWin (most likely) "
 "crashes"
 msgid "Window Manager seems not to be running"
 msgstr ""
 
-#: main.cpp:611
+#: main.cpp:630
 msgid ""
 "Your settings have been saved but as KDE is currently running in failsafe "
 "mode desktop effects cannot be enabled at this time.\n"
@@ -168,7 +218,7 @@ msgstr ""
 "Moussîz foû do môde sins rujhe s' i vs plait po mete en alaedje les efets d' "
 "sicribanne."
 
-#: main.cpp:653
+#: main.cpp:672
 #, fuzzy, kde-format
 #| msgid "The following desktop effects could not be activated:"
 msgctxt "Error Message shown when a desktop effect could not be loaded"
@@ -177,45 +227,45 @@ msgid_plural "%1 desktop effects could not be loaded."
 msgstr[0] "Dji n' a savou mete èn alaedje les efets d' sicribanne shuvants :"
 msgstr[1] "Dji n' a savou mete èn alaedje les efets d' sicribanne shuvants :"
 
-#: main.cpp:672
+#: main.cpp:691
 #, kde-format
 msgctxt "Effect with given name could not be activated due to unknown reason"
 msgid "%1 effect failed to load due to unknown reason."
 msgstr ""
 
-#: main.cpp:674
+#: main.cpp:693
 #, kde-format
 msgctxt ""
 "Effect with given name could not be activated as it requires hardware shaders"
 msgid "%1 effect requires hardware support."
 msgstr ""
 
-#: main.cpp:676
+#: main.cpp:695
 #, kde-format
 msgctxt "Effect with given name could not be activated as it requires OpenGL"
 msgid "%1 effect requires OpenGL."
 msgstr ""
 
-#: main.cpp:678
+#: main.cpp:697
 #, kde-format
 msgctxt "Effect with given name could not be activated as it requires OpenGL 2"
 msgid "%1 effect requires OpenGL 2."
 msgstr ""
 
-#: main.cpp:680
+#: main.cpp:699
 #, fuzzy
 #| msgid "The following desktop effects could not be activated:"
 msgctxt "Window title"
 msgid "List of effects which could not be loaded"
 msgstr "Dji n' a savou mete èn alaedje les efets d' sicribanne shuvants :"
 
-#: main.cpp:687
+#: main.cpp:706
 msgid ""
 "For technical reasons it is not possible to determine all possible error "
 "causes."
 msgstr ""
 
-#: main.cpp:753
+#: main.cpp:772
 #, fuzzy
 #| msgid "Desktop effects are active"
 msgctxt ""
@@ -223,7 +273,7 @@ msgctxt ""
 msgid "Desktop effect system is not running."
 msgstr "Les efets d' sicribanne sont-st ovrants"
 
-#: main.cpp:830
+#: main.cpp:849
 msgid "<h1>Desktop Effects</h1>"
 msgstr "<h1>Efets d' sicribanne</h1>"
 
@@ -362,77 +412,56 @@ msgstr "Nou efet"
 msgid "Advanced"
 msgstr "Sipepieus"
 
-#. i18n: ectx: property (text), widget (QLabel, label_7)
-#: main.ui:528
-msgid "Compositing type:"
-msgstr "Sôre di compôzite:"
+#. i18n: ectx: property (title), widget (QGroupBox, glGroup)
+#: main.ui:552
+msgid "OpenGL Options"
+msgstr "Tchuzes d' OpenGL"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, compositingType)
-#: main.ui:548
-msgid "OpenGL"
-msgstr "OpenGL"
-
-#. i18n: ectx: property (text), item, widget (KComboBox, compositingType)
-#: main.ui:553
-msgid "XRender"
-msgstr "XRender"
-
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: main.ui:561
-msgid "Qt graphics system:"
+#. i18n: ectx: property (text), widget (QLabel, glSwapStrategyLabel)
+#: main.ui:563
+msgid "Tearing Prevention (VSync)"
 msgstr ""
 
-#. i18n: ectx: property (toolTip), widget (QComboBox, graphicsSystem)
-#: main.ui:577
+#. i18n: ectx: property (toolTip), widget (QCheckBox, glShaders)
+#: main.ui:582
 msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Segoe'; font-size:8pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\">It is <span style=\" font-"
-"weight:600;\">strongly recommended</span> to use the <span style=\" font-"
-"weight:600;\">native</span> system when using the <span style=\" font-"
-"weight:600;\">XRender</span> backend.</p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></"
-"p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\">On the other hand, many "
-"decorations perform better with the <span style=\" font-weight:600;"
-"\">raster</span> system on the <span style=\" font-weight:600;\">default and "
-"generally preferred OpenGL</span> backend (though some don't - also the "
-"impact here can be anything between \"slight\" and \"incredible\" depending "
-"on the GPU and driver)</p></body></html>"
+"If enabled all rendering will be performed with Shaders written in the "
+"OpenGL Shading Language.\n"
+"On legacy hardware disabling Shaders can improve the performance."
 msgstr ""
 
-#. i18n: ectx: property (text), item, widget (QComboBox, graphicsSystem)
-#: main.ui:581
-msgid "Native"
+#. i18n: ectx: property (text), widget (QCheckBox, glShaders)
+#: main.ui:585
+msgid "Use OpenGL 2 Shaders"
 msgstr ""
 
-#. i18n: ectx: property (text), item, widget (QComboBox, graphicsSystem)
-#: main.ui:586
-msgid "Raster"
+#. i18n: ectx: property (toolTip), widget (QCheckBox, glColorCorrection)
+#: main.ui:595
+msgid ""
+"<p>Activates color correction if possible, using the Kolor-Manager. Requires "
+"OpenGL 2 Shaders to be enabled and Kolor-Manager to be installed. May fail "
+"silently.</p><p><strong>Experimental</strong>.</p>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, glColorCorrection)
+#: main.ui:598
+msgid "Enable color correction (experimental)"
 msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: main.ui:615
+#: main.ui:640
 #, fuzzy
 #| msgid "XRender Options"
 msgid "General Options"
 msgstr "Tchuzes d' XRender"
 
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: main.ui:630
+#: main.ui:655
 msgid "Keep window thumbnails:"
 msgstr "Wårder prévoeyaedjes des purneas:"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, windowThumbnails)
-#: main.ui:650
+#: main.ui:675
 #, fuzzy
 #| msgid "Always (Breaks minimization)"
 msgctxt ""
@@ -443,7 +472,7 @@ msgid "Always (Breaks minimization)"
 msgstr "Todi (skete li metaedje å pus ptit)"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, windowThumbnails)
-#: main.ui:655
+#: main.ui:680
 #, fuzzy
 #| msgid "Only for Shown Windows"
 msgctxt ""
@@ -453,7 +482,7 @@ msgid "Only for Shown Windows"
 msgstr "Ki po les purneas mostrés"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, windowThumbnails)
-#: main.ui:660
+#: main.ui:685
 #, fuzzy
 #| msgid "Never"
 msgctxt ""
@@ -463,12 +492,12 @@ msgid "Never"
 msgstr "Måy"
 
 #. i18n: ectx: property (text), widget (QLabel, scaleMethodLabel)
-#: main.ui:674
+#: main.ui:699
 msgid "Scale method:"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QComboBox, xrScaleFilter)
-#: main.ui:701
+#: main.ui:726
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -501,19 +530,19 @@ msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, xrScaleFilter)
 #. i18n: ectx: property (text), item, widget (QComboBox, glScaleFilter)
-#: main.ui:708 main.ui:741
+#: main.ui:733 main.ui:766
 msgid "Crisp"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, xrScaleFilter)
-#: main.ui:713
+#: main.ui:738
 #, fuzzy
 #| msgid "Smooth scaling (slower)"
 msgid "Smooth (slower)"
 msgstr "Doûs metaedje al schåle (pus londjin)"
 
 #. i18n: ectx: property (toolTip), widget (QComboBox, glScaleFilter)
-#: main.ui:734
+#: main.ui:759
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -556,56 +585,80 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, glScaleFilter)
-#: main.ui:746
+#: main.ui:771
 msgid "Smooth"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, glScaleFilter)
-#: main.ui:751
+#: main.ui:776
 msgid "Accurate"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, unredirectFullscreen)
-#: main.ui:761
+#: main.ui:786
 msgid "Suspend desktop effects for fullscreen windows"
 msgstr ""
 "Arester ls efets d' sicribanne po les purneas metous so tote li waitroûle"
 
-#. i18n: ectx: property (title), widget (QGroupBox, glGroup)
-#: main.ui:803
-msgid "OpenGL Options"
-msgstr "Tchuzes d' OpenGL"
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: main.ui:830
+msgid "Compositing type:"
+msgstr "Sôre di compôzite:"
 
-#. i18n: ectx: property (toolTip), widget (QCheckBox, glShaders)
-#: main.ui:813
+#. i18n: ectx: property (text), item, widget (KComboBox, compositingType)
+#: main.ui:850
+msgid "OpenGL"
+msgstr "OpenGL"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, compositingType)
+#: main.ui:855
+msgid "XRender"
+msgstr "XRender"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: main.ui:863
+msgid "Qt graphics system:"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QComboBox, graphicsSystem)
+#: main.ui:879
 msgid ""
-"If enabled all rendering will be performed with Shaders written in the "
-"OpenGL Shading Language.\n"
-"On legacy hardware disabling Shaders can improve the performance."
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Segoe'; font-size:8pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">It is <span style=\" font-"
+"weight:600;\">strongly recommended</span> to use the <span style=\" font-"
+"weight:600;\">native</span> system when using the <span style=\" font-"
+"weight:600;\">XRender</span> backend.</p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></"
+"p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">On the other hand, many "
+"decorations perform better with the <span style=\" font-weight:600;"
+"\">raster</span> system on the <span style=\" font-weight:600;\">default and "
+"generally preferred OpenGL</span> backend (though some don't - also the "
+"impact here can be anything between \"slight\" and \"incredible\" depending "
+"on the GPU and driver)</p></body></html>"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, glShaders)
-#: main.ui:816
-msgid "Use OpenGL 2 Shaders"
+#. i18n: ectx: property (text), item, widget (QComboBox, graphicsSystem)
+#: main.ui:883
+msgid "Native"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, glVSync)
-#: main.ui:823
-msgid "Use VSync"
-msgstr "Eployî VSync"
-
-#. i18n: ectx: property (toolTip), widget (QCheckBox, glColorCorrection)
-#: main.ui:836
-msgid ""
-"<p>Activates color correction if possible, using the Kolor-Manager. Requires "
-"OpenGL 2 Shaders to be enabled and Kolor-Manager to be installed. May fail "
-"silently.</p><p><strong>Experimental</strong>.</p>"
+#. i18n: ectx: property (text), item, widget (QComboBox, graphicsSystem)
+#: main.ui:888
+msgid "Raster"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, glColorCorrection)
-#: main.ui:839
-msgid "Enable color correction (experimental)"
-msgstr ""
+#~ msgid "Use VSync"
+#~ msgstr "Eployî VSync"
 
 #~ msgid "Effect for window switching:"
 #~ msgstr "Efet pol discandjaedje di purnea:"

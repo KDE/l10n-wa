@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-03-24 02:27+0100\n"
+"POT-Creation-Date: 2013-03-25 02:20+0100\n"
 "PO-Revision-Date: 2011-01-17 21:35+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -1210,7 +1210,7 @@ msgstr "Kivierser sôre d' imådje"
 msgid "Convert Projection Color Space"
 msgstr ""
 
-#: image/kis_image.cc:920 ui/kis_layer_manager.cc:772
+#: image/kis_image.cc:920 ui/kis_layer_manager.cc:770
 msgid "Flatten Image"
 msgstr "Asplati imådje"
 
@@ -1965,7 +1965,7 @@ msgstr "Prôpietés del novele coûtche"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: plugins/extensions/compose/wdg_compose.ui:22
-#: ui/dialogs/kis_dlg_adj_layer_props.cc:84
+#: ui/dialogs/kis_dlg_adj_layer_props.cc:82
 msgid "Layer name:"
 msgstr "No del coûtche:"
 
@@ -3154,7 +3154,7 @@ msgstr "Reyon di flou:"
 #. i18n: ectx: property (text), widget (QLabel, lblCanvasBorderColor)
 #. i18n: ectx: property (text), widget (QLabel, lblColor)
 #: plugins/extensions/dropshadow/wdg_dropshadow.ui:38
-#: plugins/filters/colors/wdgcolortoalphabase.ui:17
+#: plugins/filters/colors/wdgcolortoalphabase.ui:20
 #: ui/forms/wdgdisplaysettings.ui:38 ui/forms/wdgdisplaysettings.ui:131
 msgid "Color:"
 msgstr "Coleur:"
@@ -4274,7 +4274,7 @@ msgstr "Clé"
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: ectx: property (text), widget (QTreeWidget, listViewChannels)
 #: plugins/extensions/metadataeditor/kis_meta_data_model.cpp:108
-#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:120
+#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:119
 #: plugins/paintops/libpaintop/forms/wdgcoloroptions.ui:185
 #: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:35
 #: plugins/tools/defaulttools/wdgcolorpicker.ui:35
@@ -4523,7 +4523,7 @@ msgid "Separate Image"
 msgstr "Distrocler imådje"
 
 #: plugins/extensions/separate_channels/kis_channel_separator.cc:236
-#: ui/kis_layer_manager.cc:869
+#: ui/kis_layer_manager.cc:867
 msgid "Export Layer"
 msgstr "Ebaguer coûtche"
 
@@ -4838,7 +4838,7 @@ msgstr "Mete å pus bas li canå"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: plugins/filters/colors/wdgcolortoalphabase.ui:30
+#: plugins/filters/colors/wdgcolortoalphabase.ui:61
 #: plugins/filters/unsharp/wdgunsharp.ui:68
 msgid "Threshold:"
 msgstr "Soû:"
@@ -4871,7 +4871,7 @@ msgstr "Rilujhance / Contrasse"
 msgid "&HSV Adjustment..."
 msgstr "Metaedje a pont &HSV..."
 
-#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:124
+#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:123
 #, fuzzy
 #| msgid "Brightness"
 msgid "Lightness"
@@ -5057,7 +5057,7 @@ msgstr "Flou"
 msgid "&Emboss with Variable Depth..."
 msgstr "&Relief avou des candjantès parfondeus..."
 
-#: plugins/filters/embossfilter/kis_emboss_filter.cpp:163
+#: plugins/filters/embossfilter/kis_emboss_filter.cpp:162
 msgid "Depth"
 msgstr "Parfondeu"
 
@@ -5099,7 +5099,7 @@ msgstr "Raptitixheu do brut &Gausyin"
 
 #. i18n: ectx: property (text), widget (QCheckBox, thresholdCBox)
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: plugins/filters/imageenhancement/kis_simple_noise_reducer.cpp:55
+#: plugins/filters/imageenhancement/kis_simple_noise_reducer.cpp:54
 #: plugins/filters/imageenhancement/kis_wavelet_noise_reduction.cpp:52
 #: plugins/paintops/hairy/wdgbristleoptions.ui:116
 #: plugins/paintops/libpaintop/kis_pressure_sharpness_option_widget.cpp:37
@@ -5107,7 +5107,7 @@ msgstr "Raptitixheu do brut &Gausyin"
 msgid "Threshold"
 msgstr "Soû"
 
-#: plugins/filters/imageenhancement/kis_simple_noise_reducer.cpp:56
+#: plugins/filters/imageenhancement/kis_simple_noise_reducer.cpp:55
 msgid "Window size"
 msgstr "Grandeu del finiesse"
 
@@ -5808,10 +5808,20 @@ msgctxt "vertical resolution"
 msgid "Vertical:"
 msgstr "D' astampé:"
 
-#: plugins/formats/png/kis_png_export.cc:89
+#: plugins/formats/png/kis_png_export.cc:91
 #, fuzzy
 msgid "PNG Export Options"
 msgstr "Tchuzes del djeyometreye"
+
+#: plugins/formats/png/kis_png_export.cc:109
+#, fuzzy
+#| msgid "Cannot export images in %1.\n"
+msgid "Cannot export images in this colorspace or channel depth to PNG"
+msgstr "Dji n' sai ebaguer imådjes e %1.\n"
+
+#: plugins/formats/png/kis_png_export.cc:109
+msgid "Krita PNG Export"
+msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, KisWdgOptionsPNG)
 #: plugins/formats/png/kis_wdg_options_png.ui:14
@@ -8550,29 +8560,29 @@ msgstr "Magnetisse:"
 msgid "Paint with brushes"
 msgstr "Ponde avou des pinceas"
 
-#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:180
+#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:251
 msgid "Cannot pick a color as no layer is active."
 msgstr ""
 "Dji n' sai apicî d' coleur dabôrd k' i gn a pont d' coûtche en alaedje."
 
-#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:184
+#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:255
 msgid "Cannot pick a color as the active layer is not visible."
 msgstr ""
 "Dji n' sai apicî d' coleur dabôrd kel coûtche en alaedje n' est nén veyåve."
 
-#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:230
+#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:301
 #: ui/kis_custom_palette.cc:113 ui/kis_custom_palette.cc:152
 #, kde-format
 msgid "Cannot write to palette file %1. Maybe it is read-only."
 msgstr ""
 "Dji n' sai scrire e fitchî d' palete %1. Motoit k' c' est lére seulmint."
 
-#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:230
+#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:301
 #: ui/kis_custom_palette.cc:113 ui/kis_custom_palette.cc:152
 msgid "Palette"
 msgstr "Palete"
 
-#: plugins/tools/defaulttools/kis_tool_colorpicker.h:96
+#: plugins/tools/defaulttools/kis_tool_colorpicker.h:115
 #, fuzzy
 #| msgid "Select a color from the image or current layer"
 msgid "Select a color from the image or current layer"
@@ -9439,7 +9449,7 @@ msgstr "Catchî grile di perspective"
 msgid "Clear Perspective Grid"
 msgstr "Netyî grile di perspective"
 
-#: ui/dialogs/kis_dlg_adj_layer_props.cc:104
+#: ui/dialogs/kis_dlg_adj_layer_props.cc:103
 msgid "No configuration options are available for this filter"
 msgstr "I ng a pont d' tchuze d' apontiaedje po cisse passete"
 
@@ -11303,7 +11313,7 @@ msgstr "As&plati imådje"
 msgid "&Flatten Layer"
 msgstr "A&splati coûtche"
 
-#: ui/kis_layer_manager.cc:295 ui/kis_layer_manager.cc:841
+#: ui/kis_layer_manager.cc:295 ui/kis_layer_manager.cc:839
 #, fuzzy
 #| msgid "Rotate Layer"
 msgid "Rasterize Layer"
@@ -11329,47 +11339,47 @@ msgstr "Grandeu del toele come li cene del coûtche do moumint"
 msgid "Add new paint layer"
 msgstr "Côutche &pondeure"
 
-#: ui/kis_layer_manager.cc:372
+#: ui/kis_layer_manager.cc:370
 msgid "Filter Layer Properties"
 msgstr "Prôpietés del coûtche passete"
 
-#: ui/kis_layer_manager.cc:417
+#: ui/kis_layer_manager.cc:415
 msgid "Generator Layer Properties"
 msgstr "Prôpietés del coûtche djeneratresse"
 
-#: ui/kis_layer_manager.cc:475 ui/kis_layer_manager.cc:489
-#: ui/kis_layer_manager.cc:530 ui/kis_layer_manager.cc:561
-#: ui/kis_layer_manager.cc:662
+#: ui/kis_layer_manager.cc:473 ui/kis_layer_manager.cc:487
+#: ui/kis_layer_manager.cc:528 ui/kis_layer_manager.cc:559
+#: ui/kis_layer_manager.cc:660
 msgid "Could not add layer to image."
 msgstr "Dji n' a savou radjouter l' coûtche a l' imådje."
 
-#: ui/kis_layer_manager.cc:475 ui/kis_layer_manager.cc:489
-#: ui/kis_layer_manager.cc:530 ui/kis_layer_manager.cc:561
-#: ui/kis_layer_manager.cc:662
+#: ui/kis_layer_manager.cc:473 ui/kis_layer_manager.cc:487
+#: ui/kis_layer_manager.cc:528 ui/kis_layer_manager.cc:559
+#: ui/kis_layer_manager.cc:660
 msgid "Layer Error"
 msgstr "Aroke di coûtche"
 
-#: ui/kis_layer_manager.cc:585
+#: ui/kis_layer_manager.cc:583
 msgid "New Filter Layer"
 msgstr "Novele coûtche di passete"
 
-#: ui/kis_layer_manager.cc:729
+#: ui/kis_layer_manager.cc:727
 msgid "Scale Layer"
 msgstr "Mete al schåle coûtche"
 
-#: ui/kis_layer_manager.cc:771
+#: ui/kis_layer_manager.cc:769
 msgid "The image contains hidden layers that will be lost."
 msgstr "I gn a dins l' imådje des coûtches catcheyes: ele seront pierdowes."
 
-#: ui/kis_layer_manager.cc:773
+#: ui/kis_layer_manager.cc:771
 msgid "&Flatten Image"
 msgstr "&Asplati imådje"
 
-#: ui/kis_layer_manager.cc:929
+#: ui/kis_layer_manager.cc:927
 msgid "Convert Invisible Groups"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:932
+#: ui/kis_layer_manager.cc:930
 msgid "Export Only Toplevel Groups"
 msgstr ""
 
@@ -11381,36 +11391,36 @@ msgstr "Mete li masse sol tchoes"
 msgid "Create Layer from Mask"
 msgstr "Ahiver coûtche a pårti do masse"
 
-#: ui/kis_mask_manager.cc:139
+#: ui/kis_mask_manager.cc:138
 #, kde-format
 msgid "Selection <numid>%1</numid>"
 msgstr ""
 
-#: ui/kis_mask_manager.cc:155
+#: ui/kis_mask_manager.cc:152
 msgid "Transparency Mask"
 msgstr "Masse di transparince"
 
-#: ui/kis_mask_manager.cc:168
+#: ui/kis_mask_manager.cc:163
 msgid "New filter mask"
 msgstr "Novea masse di passete"
 
-#: ui/kis_mask_manager.cc:180
+#: ui/kis_mask_manager.cc:175
 msgid "New Filter Mask"
 msgstr "Novea masse di passete"
 
-#: ui/kis_mask_manager.cc:202
+#: ui/kis_mask_manager.cc:196
 msgid "Mask to Selection"
 msgstr "Mete li masse sol tchoes"
 
-#: ui/kis_mask_manager.cc:245
+#: ui/kis_mask_manager.cc:237
 msgid "Layer from Mask"
 msgstr "Coûtche a pårti do masse"
 
-#: ui/kis_mask_manager.cc:260
+#: ui/kis_mask_manager.cc:250
 msgid "Duplication of "
 msgstr "Dobleure di "
 
-#: ui/kis_mask_manager.cc:294
+#: ui/kis_mask_manager.cc:280
 msgid "Effect Mask Properties"
 msgstr "Prôpietés do masse d' efet"
 
@@ -12014,7 +12024,7 @@ msgstr ""
 msgid "Detach from Toolbar"
 msgstr ""
 
-#: ui/widgets/kis_wdg_generator.cpp:150 ui/widgets/kis_wdg_generator.cpp:164
+#: ui/widgets/kis_wdg_generator.cpp:138 ui/widgets/kis_wdg_generator.cpp:151
 msgid "No configuration options."
 msgstr "Nole tchuze d' apontiaedje."
 
