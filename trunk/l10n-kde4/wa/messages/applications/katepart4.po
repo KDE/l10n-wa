@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: katepart4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-04-05 02:07+0200\n"
+"POT-Creation-Date: 2013-04-06 02:13+0200\n"
 "PO-Revision-Date: 2011-07-06 18:12+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -190,15 +190,15 @@ msgstr "Prôpieté nén cnoxhowe"
 msgid "Auto Word Completion"
 msgstr "Oto-completaedje des mots"
 
-#: completion/katewordcompletion.cpp:336
+#: completion/katewordcompletion.cpp:355
 msgid "Shell Completion"
 msgstr "Completaedje do shell"
 
-#: completion/katewordcompletion.cpp:342
+#: completion/katewordcompletion.cpp:361
 msgid "Reuse Word Above"
 msgstr "Reployî l' mot pa dzeu"
 
-#: completion/katewordcompletion.cpp:347
+#: completion/katewordcompletion.cpp:366
 msgid "Reuse Word Below"
 msgstr "Reployî l' mot pa dzo"
 
@@ -2828,77 +2828,89 @@ msgstr ""
 msgid "Expand Quick Coding Abbreviation"
 msgstr ""
 
-#: script/data/commands/utils.js:298 utils/kateglobal.cpp:395
+#: script/data/commands/utils.js:330 utils/kateglobal.cpp:395
 msgid "Editing"
 msgstr ""
 
-#: script/data/commands/utils.js:301
+#: script/data/commands/utils.js:333
 msgid "Sort Selected Text"
 msgstr "Relére tecse tchoezi"
 
-#: script/data/commands/utils.js:304
+#: script/data/commands/utils.js:336
 msgid "Move Lines Down"
 msgstr "Dischinde les royes"
 
-#: script/data/commands/utils.js:307
+#: script/data/commands/utils.js:339
 msgid "Move Lines Up"
 msgstr "Monter les royes"
 
-#: script/data/commands/utils.js:310
+#: script/data/commands/utils.js:342
 msgid "Duplicate Selected Lines Up"
 msgstr "Dobler les royes di tchoezeyes pa dzeu"
 
-#: script/data/commands/utils.js:313
+#: script/data/commands/utils.js:345
 msgid "Duplicate Selected Lines Down"
 msgstr "Dobler les royes di tchoezeyes pa dzo"
 
-#: script/data/commands/utils.js:323
+#: script/data/commands/utils.js:348
+#, fuzzy
+#| msgid "Sort Selected Text"
+msgid "URI-encode Selected Text"
+msgstr "Relére tecse tchoezi"
+
+#: script/data/commands/utils.js:351
+#, fuzzy
+#| msgid "Sort Selected Text"
+msgid "URI-decode Selected Text"
+msgstr "Relére tecse tchoezi"
+
+#: script/data/commands/utils.js:361
 msgid "Sort the selected text or whole document."
 msgstr "Relére tecse tchoezi oudon-bén tot l' documint."
 
-#: script/data/commands/utils.js:325
+#: script/data/commands/utils.js:363
 msgid "Move selected lines down."
 msgstr "Dischinde les royes di tchoezeyes."
 
-#: script/data/commands/utils.js:327
+#: script/data/commands/utils.js:365
 msgid "Move selected lines up."
 msgstr "Monter les royes di tchoezeyes."
 
-#: script/data/commands/utils.js:329
+#: script/data/commands/utils.js:367
 msgid "Remove duplicate lines from the selected text or whole document."
 msgstr ""
 
-#: script/data/commands/utils.js:331
+#: script/data/commands/utils.js:369
 msgid ""
 "Sort the selected text or whole document in natural order.<br>Here is an "
 "example to show the difference to the normal sort method:<br>sort(a10, a1, "
 "a2) => a1, a10, a2<br>natsort(a10, a1, a2) => a1, a2, a10"
 msgstr ""
 
-#: script/data/commands/utils.js:333
+#: script/data/commands/utils.js:371
 msgid "Trims trailing whitespace from selection or whole document."
 msgstr ""
 
-#: script/data/commands/utils.js:335
+#: script/data/commands/utils.js:373
 msgid "Trims leading whitespace from selection or whole document."
 msgstr ""
 
-#: script/data/commands/utils.js:337
+#: script/data/commands/utils.js:375
 msgid "Trims leading and trailing whitespace from selection or whole document."
 msgstr ""
 
-#: script/data/commands/utils.js:339
+#: script/data/commands/utils.js:377
 msgid ""
 "Joins selected lines or whole document. Optionally pass a separator to put "
 "between each line:<br><code>join ', '</code> will e.g. join lines and "
 "separate them by a comma."
 msgstr ""
 
-#: script/data/commands/utils.js:341
+#: script/data/commands/utils.js:379
 msgid "Removes empty lines from selection or whole document."
 msgstr ""
 
-#: script/data/commands/utils.js:345
+#: script/data/commands/utils.js:383
 msgid ""
 "Given a JavaScript function as argument, call that for the list of "
 "(selected) lines and replace them with the return value of that callback."
@@ -2907,7 +2919,7 @@ msgid ""
 "this to achieve the same:<br><code>each 'lines.join(\", \")'</code>"
 msgstr ""
 
-#: script/data/commands/utils.js:347
+#: script/data/commands/utils.js:385
 msgid ""
 "Given a JavaScript function as argument, call that for the list of "
 "(selected) lines and remove those where the callback returns false."
@@ -2916,7 +2928,7 @@ msgid ""
 "this to achieve the same:<br><code>filter 'line.length > 0'</code>"
 msgstr ""
 
-#: script/data/commands/utils.js:349
+#: script/data/commands/utils.js:387
 msgid ""
 "Given a JavaScript function as argument, call that for the list of "
 "(selected) lines and replace the line with the return value of the callback."
@@ -2926,12 +2938,22 @@ msgid ""
 "+/, \"\")'</code>"
 msgstr ""
 
-#: script/data/commands/utils.js:351
+#: script/data/commands/utils.js:389
 msgid "Duplicates the selected lines up."
 msgstr ""
 
-#: script/data/commands/utils.js:353
+#: script/data/commands/utils.js:391
 msgid "Duplicates the selected lines down."
+msgstr ""
+
+#: script/data/commands/utils.js:393
+msgid ""
+"Encode special chars in a single line selection, so the result text can be "
+"used as URI."
+msgstr ""
+
+#: script/data/commands/utils.js:395
+msgid "Reverse action of URI encode."
 msgstr ""
 
 #: script/katecommandlinescript.cpp:56
@@ -3037,7 +3059,7 @@ msgstr "Dj' a-st arivé al valêye, dji racmince dispoy li copete"
 msgid "Not found"
 msgstr "Nén trové"
 
-#: search/katesearchbar.cpp:650
+#: search/katesearchbar.cpp:656
 #, fuzzy, kde-format
 #| msgid "1 match found"
 #| msgid_plural "%1 matches found"
@@ -3047,7 +3069,7 @@ msgid_plural "%1 matches found"
 msgstr[0] "%1 trové ki corespond"
 msgstr[1] "%1 trovés ki corespondèt"
 
-#: search/katesearchbar.cpp:894
+#: search/katesearchbar.cpp:906
 #, fuzzy, kde-format
 #| msgid "1 replacement done"
 #| msgid_plural "%1 replacements done"
@@ -3057,147 +3079,147 @@ msgid_plural "%1 replacements made"
 msgstr[0] "%1 replaeçmint di fwait."
 msgstr[1] "%1 replaeçmint di fwait."
 
-#: search/katesearchbar.cpp:1099
+#: search/katesearchbar.cpp:1111
 msgid "Beginning of line"
 msgstr "Comince del roye"
 
-#: search/katesearchbar.cpp:1100
+#: search/katesearchbar.cpp:1112
 msgid "End of line"
 msgstr "Fén del roye"
 
-#: search/katesearchbar.cpp:1102
+#: search/katesearchbar.cpp:1114
 msgid "Any single character (excluding line breaks)"
 msgstr ""
 
-#: search/katesearchbar.cpp:1104
+#: search/katesearchbar.cpp:1116
 msgid "One or more occurrences"
 msgstr ""
 
-#: search/katesearchbar.cpp:1105
+#: search/katesearchbar.cpp:1117
 msgid "Zero or more occurrences"
 msgstr ""
 
-#: search/katesearchbar.cpp:1106
+#: search/katesearchbar.cpp:1118
 msgid "Zero or one occurrences"
 msgstr ""
 
-#: search/katesearchbar.cpp:1107
+#: search/katesearchbar.cpp:1119
 msgid "<a> through <b> occurrences"
 msgstr ""
 
-#: search/katesearchbar.cpp:1109
+#: search/katesearchbar.cpp:1121
 msgid "Group, capturing"
 msgstr ""
 
-#: search/katesearchbar.cpp:1110
+#: search/katesearchbar.cpp:1122
 msgid "Or"
 msgstr ""
 
-#: search/katesearchbar.cpp:1111
+#: search/katesearchbar.cpp:1123
 #, fuzzy
 msgid "Set of characters"
 msgstr "Caractere"
 
-#: search/katesearchbar.cpp:1112
+#: search/katesearchbar.cpp:1124
 #, fuzzy
 msgid "Negative set of characters"
 msgstr "Tchoezi l' caractere al hintche"
 
-#: search/katesearchbar.cpp:1116
+#: search/katesearchbar.cpp:1128
 msgid "Whole match reference"
 msgstr ""
 
-#: search/katesearchbar.cpp:1129
+#: search/katesearchbar.cpp:1141
 msgid "Reference"
 msgstr "Referince"
 
-#: search/katesearchbar.cpp:1136
+#: search/katesearchbar.cpp:1148
 #, fuzzy
 msgid "Line break"
 msgstr "Mostrer les &limeros des royes"
 
-#: search/katesearchbar.cpp:1137
+#: search/katesearchbar.cpp:1149
 msgid "Tab"
 msgstr ""
 
-#: search/katesearchbar.cpp:1140
+#: search/katesearchbar.cpp:1152
 msgid "Word boundary"
 msgstr ""
 
-#: search/katesearchbar.cpp:1141
+#: search/katesearchbar.cpp:1153
 msgid "Not word boundary"
 msgstr ""
 
-#: search/katesearchbar.cpp:1142
+#: search/katesearchbar.cpp:1154
 msgid "Digit"
 msgstr "Chife"
 
-#: search/katesearchbar.cpp:1143
+#: search/katesearchbar.cpp:1155
 msgid "Non-digit"
 msgstr ""
 
-#: search/katesearchbar.cpp:1144
+#: search/katesearchbar.cpp:1156
 msgid "Whitespace (excluding line breaks)"
 msgstr ""
 
-#: search/katesearchbar.cpp:1145
+#: search/katesearchbar.cpp:1157
 msgid "Non-whitespace (excluding line breaks)"
 msgstr ""
 
-#: search/katesearchbar.cpp:1146
+#: search/katesearchbar.cpp:1158
 msgid "Word character (alphanumerics plus '_')"
 msgstr ""
 
-#: search/katesearchbar.cpp:1147
+#: search/katesearchbar.cpp:1159
 #, fuzzy
 msgid "Non-word character"
 msgstr "Caractere"
 
-#: search/katesearchbar.cpp:1150
+#: search/katesearchbar.cpp:1162
 msgid "Octal character 000 to 377 (2^8-1)"
 msgstr ""
 
-#: search/katesearchbar.cpp:1151
+#: search/katesearchbar.cpp:1163
 msgid "Hex character 0000 to FFFF (2^16-1)"
 msgstr ""
 
-#: search/katesearchbar.cpp:1152
+#: search/katesearchbar.cpp:1164
 msgid "Backslash"
 msgstr ""
 
-#: search/katesearchbar.cpp:1156
+#: search/katesearchbar.cpp:1168
 msgid "Group, non-capturing"
 msgstr ""
 
-#: search/katesearchbar.cpp:1157
+#: search/katesearchbar.cpp:1169
 msgid "Lookahead"
 msgstr ""
 
-#: search/katesearchbar.cpp:1158
+#: search/katesearchbar.cpp:1170
 msgid "Negative lookahead"
 msgstr ""
 
-#: search/katesearchbar.cpp:1163
+#: search/katesearchbar.cpp:1175
 msgid "Begin lowercase conversion"
 msgstr ""
 
-#: search/katesearchbar.cpp:1164
+#: search/katesearchbar.cpp:1176
 msgid "Begin uppercase conversion"
 msgstr ""
 
-#: search/katesearchbar.cpp:1165
+#: search/katesearchbar.cpp:1177
 msgid "End case conversion"
 msgstr ""
 
-#: search/katesearchbar.cpp:1166
+#: search/katesearchbar.cpp:1178
 msgid "Lowercase first character conversion"
 msgstr ""
 
-#: search/katesearchbar.cpp:1167
+#: search/katesearchbar.cpp:1179
 msgid "Uppercase first character conversion"
 msgstr ""
 
-#: search/katesearchbar.cpp:1168
+#: search/katesearchbar.cpp:1180
 msgid "Replacement counter (for Replace All)"
 msgstr ""
 
@@ -7459,17 +7481,17 @@ msgid "VI: REPLACE"
 msgstr ""
 
 #: vimode/kateviinsertmode.cpp:237 vimode/katevimodebase.cpp:873
-#: vimode/katevinormalmode.cpp:3230
+#: vimode/katevinormalmode.cpp:3232
 #, kde-format
 msgid "Nothing in register %1"
 msgstr ""
 
-#: vimode/katevinormalmode.cpp:1535
+#: vimode/katevinormalmode.cpp:1537
 #, kde-format
 msgid "'%1' %2,  Hex %3,  Octal %4"
 msgstr ""
 
-#: vimode/katevinormalmode.cpp:2333
+#: vimode/katevinormalmode.cpp:2335
 #, fuzzy, kde-format
 msgid "Mark not set: %1"
 msgstr " Roye: %1"
