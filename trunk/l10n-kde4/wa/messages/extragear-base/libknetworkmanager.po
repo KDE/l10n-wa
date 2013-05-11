@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: networkmanagement_openvpnui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-05-10 04:27+0200\n"
+"POT-Creation-Date: 2013-05-11 02:53+0200\n"
 "PO-Revision-Date: 2009-10-20 18:35+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -174,7 +174,7 @@ msgstr "Puxhance di berwetaedje"
 #. i18n: ectx: label, entry (macaddress), group (802-11-wireless)
 #. i18n: ectx: label, entry (macaddress), group (802-3-ethernet)
 #: libs/internals/schemas/802-11-wireless.kcfg:47
-#: libs/internals/schemas/802-3-ethernet.kcfg:38
+#: libs/internals/schemas/802-3-ethernet.kcfg:38 libs/ui/apitemmodel.cpp:127
 #: libs/ui/detailkeyseditor.cpp:95
 msgid "MAC Address"
 msgstr "Adresse MAC"
@@ -1010,12 +1010,12 @@ msgctxt "title of the interface widget in nm's popup"
 msgid "Serial Modem"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:169
+#: libs/internals/uiutils.cpp:168
 msgctxt "description of unknown network interface state"
 msgid "Unknown"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:172
+#: libs/internals/uiutils.cpp:171
 #, fuzzy
 #| msgctxt "description of unmanaged network interface state"
 #| msgid "is unmanaged"
@@ -1023,7 +1023,7 @@ msgctxt "description of unmanaged network interface state"
 msgid "Unmanaged"
 msgstr "n' est nén manaedjî"
 
-#: libs/internals/uiutils.cpp:175
+#: libs/internals/uiutils.cpp:174
 #, fuzzy
 #| msgctxt "description of unavailable network interface state"
 #| msgid "is unavailable"
@@ -1031,7 +1031,7 @@ msgctxt "description of unavailable network interface state"
 msgid "Unavailable"
 msgstr "n' est nén disponibe"
 
-#: libs/internals/uiutils.cpp:178
+#: libs/internals/uiutils.cpp:177
 #, fuzzy
 #| msgctxt "description of unconnected network interface state"
 #| msgid "is not connected"
@@ -1039,7 +1039,7 @@ msgctxt "description of unconnected network interface state"
 msgid "Not connected"
 msgstr "n' est nén raloyî"
 
-#: libs/internals/uiutils.cpp:181
+#: libs/internals/uiutils.cpp:180
 #, fuzzy
 #| msgctxt "description of preparing to connect network interface state"
 #| msgid "is preparing to connect"
@@ -1047,12 +1047,12 @@ msgctxt "description of preparing to connect network interface state"
 msgid "Preparing to connect"
 msgstr "s' aprestêye a s' raloyî"
 
-#: libs/internals/uiutils.cpp:184
+#: libs/internals/uiutils.cpp:183
 msgctxt "description of configuring hardware network interface state"
 msgid "Configuring interface"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:187
+#: libs/internals/uiutils.cpp:186
 #, fuzzy
 #| msgctxt "description of waiting for authentication network interface state"
 #| msgid "is waiting for authorization"
@@ -1060,7 +1060,7 @@ msgctxt "description of waiting for authentication network interface state"
 msgid "Waiting for authorization"
 msgstr "ratind l' otorijhåcion"
 
-#: libs/internals/uiutils.cpp:190
+#: libs/internals/uiutils.cpp:189
 #, fuzzy
 #| msgctxt "network interface doing dhcp request in most cases"
 #| msgid "is setting network address"
@@ -1068,12 +1068,12 @@ msgctxt "network interface doing dhcp request in most cases"
 msgid "Setting network address"
 msgstr "defini l' adresse rantoele"
 
-#: libs/internals/uiutils.cpp:193
+#: libs/internals/uiutils.cpp:192
 msgctxt "is other action required to fully connect? captive portals, etc."
 msgid "Checking further connectivity"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:196
+#: libs/internals/uiutils.cpp:195
 #, fuzzy
 #| msgctxt "description of waiting for authentication network interface state"
 #| msgid "is waiting for authorization"
@@ -1082,7 +1082,7 @@ msgctxt ""
 msgid "Waiting for a secondary connection"
 msgstr "ratind l' otorijhåcion"
 
-#: libs/internals/uiutils.cpp:200
+#: libs/internals/uiutils.cpp:199
 #, fuzzy
 #| msgctxt "network interface connected state label"
 #| msgid "is connected"
@@ -1090,7 +1090,7 @@ msgctxt "network interface connected state label"
 msgid "Connected"
 msgstr "est raloyî"
 
-#: libs/internals/uiutils.cpp:202
+#: libs/internals/uiutils.cpp:201
 #, fuzzy, kde-format
 #| msgctxt "network interface connected state label"
 #| msgid "is connected"
@@ -1098,7 +1098,7 @@ msgctxt "network interface connected state label"
 msgid "Connected to %1"
 msgstr "est raloyî"
 
-#: libs/internals/uiutils.cpp:206
+#: libs/internals/uiutils.cpp:205
 #, fuzzy
 #| msgctxt "Menu item for CDMA connections"
 #| msgid "CDMA Connection"
@@ -1106,17 +1106,17 @@ msgctxt "network interface disconnecting state label"
 msgid "Deactivating connection"
 msgstr "Raloyaedje CDMA"
 
-#: libs/internals/uiutils.cpp:209
+#: libs/internals/uiutils.cpp:208
 msgctxt "network interface connection failed state label"
 msgid "Connection Failed"
 msgstr "Li raloyaedje a fwait berwete"
 
-#: libs/internals/uiutils.cpp:212
+#: libs/internals/uiutils.cpp:211
 msgctxt "interface state"
 msgid "Error: Invalid state"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:270
+#: libs/internals/uiutils.cpp:269
 #, fuzzy, kde-format
 #| msgctxt ""
 #| "@info:status Notification when an interface (%1) connection state (%2) "
@@ -1126,277 +1126,277 @@ msgctxt "Format for <Vendor> <Product>"
 msgid "%1 - %2"
 msgstr "%1 %2"
 
-#: libs/internals/uiutils.cpp:357
+#: libs/internals/uiutils.cpp:356
 msgctxt "wireless network operation mode"
 msgid "Unknown"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:360
+#: libs/internals/uiutils.cpp:359
 #, fuzzy
 #| msgid "Ad-hoc"
 msgctxt "wireless network operation mode"
 msgid "Adhoc"
 msgstr "Ad-hoc"
 
-#: libs/internals/uiutils.cpp:363
+#: libs/internals/uiutils.cpp:362
 #, fuzzy
 #| msgid "Infrastructure"
 msgctxt "wireless network operation mode"
 msgid "Infrastructure"
 msgstr "Infrastructeure"
 
-#: libs/internals/uiutils.cpp:366
+#: libs/internals/uiutils.cpp:365
 msgctxt "wireless network operation mode"
 msgid "Ap mode"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:369
+#: libs/internals/uiutils.cpp:368
 msgid "INCORRECT MODE FIX ME"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:391
+#: libs/internals/uiutils.cpp:390
 #, fuzzy
 #| msgid "Pairwise"
 msgctxt "wireless network cipher"
 msgid "Pairwise WEP40"
 msgstr "Tchifraedje pa deus (pairwise)"
 
-#: libs/internals/uiutils.cpp:393
+#: libs/internals/uiutils.cpp:392
 #, fuzzy
 #| msgid "Pairwise"
 msgctxt "wireless network cipher"
 msgid "Pairwise WEP104"
 msgstr "Tchifraedje pa deus (pairwise)"
 
-#: libs/internals/uiutils.cpp:395
+#: libs/internals/uiutils.cpp:394
 #, fuzzy
 #| msgid "Pairwise"
 msgctxt "wireless network cipher"
 msgid "Pairwise TKIP"
 msgstr "Tchifraedje pa deus (pairwise)"
 
-#: libs/internals/uiutils.cpp:397
+#: libs/internals/uiutils.cpp:396
 #, fuzzy
 #| msgid "Pairwise"
 msgctxt "wireless network cipher"
 msgid "Pairwise CCMP"
 msgstr "Tchifraedje pa deus (pairwise)"
 
-#: libs/internals/uiutils.cpp:399
+#: libs/internals/uiutils.cpp:398
 #, fuzzy
 #| msgid "Group"
 msgctxt "wireless network cipher"
 msgid "Group WEP40"
 msgstr "Groupe"
 
-#: libs/internals/uiutils.cpp:401
+#: libs/internals/uiutils.cpp:400
 msgctxt "wireless network cipher"
 msgid "Group WEP104"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:403
+#: libs/internals/uiutils.cpp:402
 #, fuzzy
 #| msgid "Group"
 msgctxt "wireless network cipher"
 msgid "Group TKIP"
 msgstr "Groupe"
 
-#: libs/internals/uiutils.cpp:405
+#: libs/internals/uiutils.cpp:404
 #, fuzzy
 #| msgid "Group"
 msgctxt "wireless network cipher"
 msgid "Group CCMP"
 msgstr "Groupe"
 
-#: libs/internals/uiutils.cpp:407
+#: libs/internals/uiutils.cpp:406
 #, fuzzy
 #| msgid "PSK"
 msgctxt "wireless network cipher"
 msgid "PSK"
 msgstr "PSK"
 
-#: libs/internals/uiutils.cpp:409
+#: libs/internals/uiutils.cpp:408
 msgctxt "wireless network cipher"
 msgid "802.1x"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:418
+#: libs/internals/uiutils.cpp:417
 #, kde-format
 msgctxt "connection speed"
 msgid "<numid>%1</numid> Bit/s"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:420
+#: libs/internals/uiutils.cpp:419
 #, kde-format
 msgctxt "connection speed"
 msgid "<numid>%1</numid> MBit/s"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:422
+#: libs/internals/uiutils.cpp:421
 #, kde-format
 msgctxt "connection speed"
 msgid "<numid>%1</numid> GBit/s"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:508 libs/internals/uiutils.cpp:513
+#: libs/internals/uiutils.cpp:507 libs/internals/uiutils.cpp:512
 msgctxt "Unknown cellular type"
 msgid "Unknown"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:509
+#: libs/internals/uiutils.cpp:508
 msgctxt "Gsm cellular type"
 msgid "Gsm"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:510
+#: libs/internals/uiutils.cpp:509
 msgctxt "Cdma cellular type"
 msgid "Cdma"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:519 libs/internals/uiutils.cpp:535
+#: libs/internals/uiutils.cpp:518 libs/internals/uiutils.cpp:534
 msgctxt "Unknown cellular frequency band"
 msgid "Unknown"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:520
+#: libs/internals/uiutils.cpp:519
 #, fuzzy
 #| msgid "Any"
 msgctxt "Any cellular frequency band"
 msgid "Any"
 msgstr "Tolminme li kék"
 
-#: libs/internals/uiutils.cpp:521
+#: libs/internals/uiutils.cpp:520
 msgctxt "Cellular frequency band"
 msgid "GSM/GPRS/EDGE 900 MHz"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:522
+#: libs/internals/uiutils.cpp:521
 msgctxt "Cellular frequency band"
 msgid "GSM/GPRS/EDGE 1800 MHz"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:523
+#: libs/internals/uiutils.cpp:522
 msgctxt "Cellular frequency band"
 msgid "GSM/GPRS/EDGE 1900 MHz"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:524
+#: libs/internals/uiutils.cpp:523
 msgctxt "Cellular frequency band"
 msgid "GSM/GPRS/EDGE 850 MHz"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:525
+#: libs/internals/uiutils.cpp:524
 msgctxt "Cellular frequency band"
 msgid "WCDMA 2100 MHz (Class I)"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:526
+#: libs/internals/uiutils.cpp:525
 msgctxt "Cellular frequency band"
 msgid "WCDMA 3GPP 1800 MHz (Class III)"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:527
+#: libs/internals/uiutils.cpp:526
 msgctxt "Cellular frequency band"
 msgid "WCDMA 3GPP AWS 1700/2100 MHz (Class IV)"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:528
+#: libs/internals/uiutils.cpp:527
 msgctxt "Cellular frequency band"
 msgid "WCDMA 3GPP UMTS 800 MHz (Class VI)"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:529
+#: libs/internals/uiutils.cpp:528
 msgctxt "Cellular frequency band"
 msgid "WCDMA 3GPP UMTS 850 MHz (Class V)"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:530
+#: libs/internals/uiutils.cpp:529
 msgctxt "Cellular frequency band"
 msgid "WCDMA 3GPP UMTS 900 MHz (Class VIII)"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:531
+#: libs/internals/uiutils.cpp:530
 msgctxt "Cellular frequency band"
 msgid "WCDMA 3GPP UMTS 1700 MHz (Class IX)"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:532
+#: libs/internals/uiutils.cpp:531
 msgctxt "Cellular frequency band"
 msgid "WCDMA 3GPP UMTS 1900 MHz (Class II)"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:541 libs/internals/uiutils.cpp:548
+#: libs/internals/uiutils.cpp:540 libs/internals/uiutils.cpp:547
 #, fuzzy
 #| msgid "Any"
 msgctxt "Allowed Gsm modes (2G/3G/any)"
 msgid "Any"
 msgstr "Tolminme li kék"
 
-#: libs/internals/uiutils.cpp:542
+#: libs/internals/uiutils.cpp:541
 #, fuzzy
 #| msgid "Prefer 2G"
 msgctxt "Allowed Gsm modes (2G/3G/any)"
 msgid "Prefer 2G"
 msgstr "Pus rade 2G"
 
-#: libs/internals/uiutils.cpp:543
+#: libs/internals/uiutils.cpp:542
 #, fuzzy
 #| msgid "Prefer 3G"
 msgctxt "Allowed Gsm modes (2G/3G/any)"
 msgid "Prefer 3G"
 msgstr "Pus rade 3G"
 
-#: libs/internals/uiutils.cpp:544
+#: libs/internals/uiutils.cpp:543
 msgctxt "Allowed Gsm modes (2G/3G/any)"
 msgid "Only 2G"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:545
+#: libs/internals/uiutils.cpp:544
 msgctxt "Allowed Gsm modes (2G/3G/any)"
 msgid "Only 3G"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:554 libs/internals/uiutils.cpp:565
+#: libs/internals/uiutils.cpp:553 libs/internals/uiutils.cpp:564
 msgctxt "Unknown cellular access technology"
 msgid "Unknown"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:555
+#: libs/internals/uiutils.cpp:554
 msgctxt "Cellular access technology"
 msgid "GSM"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:556
+#: libs/internals/uiutils.cpp:555
 msgctxt "Cellular access technology"
 msgid "Compact GSM"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:557
+#: libs/internals/uiutils.cpp:556
 msgctxt "Cellular access technology"
 msgid "GPRS"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:558
+#: libs/internals/uiutils.cpp:557
 msgctxt "Cellular access technology"
 msgid "EDGE"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:559
+#: libs/internals/uiutils.cpp:558
 msgctxt "Cellular access technology"
 msgid "UMTS"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:560
+#: libs/internals/uiutils.cpp:559
 msgctxt "Cellular access technology"
 msgid "HSDPA"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:561
+#: libs/internals/uiutils.cpp:560
 msgctxt "Cellular access technology"
 msgid "HSUPA"
 msgstr ""
 
-#: libs/internals/uiutils.cpp:562
+#: libs/internals/uiutils.cpp:561
 msgctxt "Cellular access technology"
 msgid "HSPA"
 msgstr ""
@@ -2617,6 +2617,36 @@ msgstr "No d' uzeu"
 #| msgid "CDMA Connection"
 msgid "Users allowed to activate the connection"
 msgstr "Raloyaedje CDMA"
+
+#: libs/ui/apitemmodel.cpp:101
+msgid "Yes"
+msgstr ""
+
+#: libs/ui/apitemmodel.cpp:101
+#, fuzzy
+#| msgctxt "Text for connection list entry that is currently in used"
+#| msgid "Now"
+msgid "No"
+msgstr "Sol côp"
+
+#: libs/ui/apitemmodel.cpp:121
+#, fuzzy
+#| msgid "Number"
+msgid "Name"
+msgstr "Nombe"
+
+#: libs/ui/apitemmodel.cpp:123
+#, fuzzy
+#| msgctxt " The signal strength of the wifi network"
+#| msgid "Strength"
+msgid "Signal Strength"
+msgstr "Foice"
+
+#: libs/ui/apitemmodel.cpp:125
+#, fuzzy
+#| msgid "&Encryption Method:"
+msgid "Encrypted"
+msgstr "Metôde d' &ecriptaedje:"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, Bluetooth)
 #: libs/ui/bluetooth.ui:14
@@ -6568,10 +6598,6 @@ msgstr ""
 
 #~ msgid "New PPPoE Connection"
 #~ msgstr "Novea raloyaedje PPPoE"
-
-#~ msgctxt "Text for connection list entry that is currently in used"
-#~ msgid "Now"
-#~ msgstr "Sol côp"
 
 #, fuzzy
 #~| msgid "Store"
