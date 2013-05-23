@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-05-20 03:43+0200\n"
+"POT-Creation-Date: 2013-05-23 01:32+0000\n"
 "PO-Revision-Date: 2013-03-12 17:15+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -4782,7 +4782,7 @@ msgctxt "Message->"
 msgid "&Reply"
 msgstr "&Responde"
 
-#: messageactions.cpp:83 searchwindow.cpp:297
+#: messageactions.cpp:83 searchwindow.cpp:236
 msgid "&Reply..."
 msgstr "&Responde..."
 
@@ -4790,11 +4790,11 @@ msgstr "&Responde..."
 msgid "Reply to A&uthor..."
 msgstr "Responde a l' &oteur..."
 
-#: messageactions.cpp:97 searchwindow.cpp:301
+#: messageactions.cpp:97 searchwindow.cpp:240
 msgid "Reply to &All..."
 msgstr "Responde a &tertos..."
 
-#: messageactions.cpp:104 searchwindow.cpp:305
+#: messageactions.cpp:104 searchwindow.cpp:244
 msgid "Reply to Mailing-&List..."
 msgstr "Responde a ene &copinreye..."
 
@@ -4842,7 +4842,7 @@ msgstr "Aspou&gnî li messaedje"
 msgid "Add Note..."
 msgstr "Radjouter note..."
 
-#: messageactions.cpp:168 searchwindow.cpp:309
+#: messageactions.cpp:168 searchwindow.cpp:248
 msgctxt "Message->"
 msgid "&Forward"
 msgstr "&Ricassî"
@@ -4955,74 +4955,50 @@ msgctxt "@action:button Search for messages"
 msgid "&Search"
 msgstr "&Trover"
 
-#: searchwindow.cpp:111
-msgid "Search in &all folders"
-msgstr "Cweri dins &tos les ridants"
-
-#: searchwindow.cpp:115
-msgid "Search &only in:"
-msgstr "Cweri &seulmint dvins:"
-
-#: searchwindow.cpp:122
-msgid "I&nclude sub-folders"
-msgstr "Mete divi&ns les ridants efants"
-
-#: searchwindow.cpp:218
-msgid "Search folder &name:"
-msgstr "&No do ridant do cweraedje :"
-
-#: searchwindow.cpp:228 searchwindow.cpp:456
+#: searchwindow.cpp:188 searchwindow.cpp:395
 msgid "Last Search"
 msgstr "Dierin cweraedje"
 
-#: searchwindow.cpp:238
-msgid "Op&en Search Folder"
-msgstr "Drovi ridant do cweraedje"
-
-#: searchwindow.cpp:247
-msgid "Open &Message"
-msgstr "Drovi &messaedje"
-
-#: searchwindow.cpp:258
+#: searchwindow.cpp:207
 msgid "AMiddleLengthText..."
 msgstr "OnTecseDiLongueuMoyene..."
 
-#: searchwindow.cpp:259
+#: searchwindow.cpp:208
 msgctxt "@info:status finished searching."
 msgid "Ready."
 msgstr "Presse."
 
-#: searchwindow.cpp:314
+#: searchwindow.cpp:253
 msgctxt "@action:inmenu Forward message inline."
 msgid "&Inline..."
 msgstr "&Dins l' messaedje..."
 
-#: searchwindow.cpp:319
+#: searchwindow.cpp:258
 msgctxt "Message->Forward->"
 msgid "As &Attachment..."
 msgstr "Come &ataetchmint..."
 
-#: searchwindow.cpp:333
+#: searchwindow.cpp:272
 msgid "Save Attachments..."
 msgstr "Schaper ataetchmints..."
 
-#: searchwindow.cpp:339
+#: searchwindow.cpp:278
 msgid "Clear Selection"
 msgstr "Netyî l' tchoes"
 
-#: searchwindow.cpp:423
+#: searchwindow.cpp:362
 #, kde-format
 msgid "%1 match"
 msgid_plural "%1 matches"
 msgstr[0] "%1 trové"
 msgstr[1] "%1 trovés"
 
-#: searchwindow.cpp:524
+#: searchwindow.cpp:463
 #, kde-format
 msgid "Can not get search result. %1"
 msgstr "Dji n' sai rçure les rzultats do cweraedje. %1"
 
-#: searchwindow.cpp:639
+#: searchwindow.cpp:578
 msgid ""
 "There was a problem renaming your search folder. A common reason for this is "
 "that another search folder with the same name already exists."
@@ -5031,14 +5007,14 @@ msgstr ""
 "råjhon k' esplikêye çoula c' est k' i gn a ddja èn ôte ridant d' ricweraedje "
 "avou l' minme no."
 
-#: searchwindow.cpp:746
+#: searchwindow.cpp:685
 #, kde-format
 msgid "Copy Message"
 msgid_plural "Copy %1 Messages"
 msgstr[0] "Copyî messaedje"
 msgstr[1] "Copyî %1 messaedjes"
 
-#: searchwindow.cpp:749
+#: searchwindow.cpp:688
 #, kde-format
 msgid "Cut Message"
 msgid_plural "Cut %1 Messages"
@@ -5492,6 +5468,40 @@ msgstr "Vudi l' ridant do ba&tch cwand on mousse foû do programe"
 #: ui/miscpagemaintab.ui:187
 msgid "Print only selected text"
 msgstr "N' imprimer k' el tecse di tchoezi"
+
+#. i18n: ectx: property (text), widget (QRadioButton, mChkbxAllFolders)
+#: ui/searchwindow.ui:17
+msgid "Search in &all folders"
+msgstr "Cweri dins &tos les ridants"
+
+#. i18n: ectx: property (text), widget (QRadioButton, mChkbxSpecificFolders)
+#: ui/searchwindow.ui:26
+msgid "Search &only in:"
+msgstr "Cweri &seulmint dvins:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, mChkSubFolders)
+#: ui/searchwindow.ui:39
+#, fuzzy
+#| msgid "I&nclude sub-folders"
+msgid "&Include sub-folders"
+msgstr "Mete divi&ns les ridants efants"
+
+#. i18n: ectx: property (text), widget (QLabel, mSearchFolderLbl)
+#: ui/searchwindow.ui:93
+msgid "Search folder &name:"
+msgstr "&No do ridant do cweraedje :"
+
+#. i18n: ectx: property (text), widget (KPushButton, mSearchFolderOpenBtn)
+#: ui/searchwindow.ui:113
+#, fuzzy
+#| msgid "Op&en Search Folder"
+msgid "Open &Search Folder"
+msgstr "Drovi ridant do cweraedje"
+
+#. i18n: ectx: property (text), widget (KPushButton, mSearchResultOpenBtn)
+#: ui/searchwindow.ui:123
+msgid "Open &Message"
+msgstr "Drovi &messaedje"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: ui/securitypagegeneraltab.ui:17
