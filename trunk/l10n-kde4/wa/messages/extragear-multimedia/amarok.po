@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-05-24 01:26+0000\n"
+"POT-Creation-Date: 2013-05-25 01:37+0000\n"
 "PO-Revision-Date: 2012-11-14 23:15+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -27,6 +27,27 @@ msgstr "Djan Cayron"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "jean.cayron@gmail.com"
+
+#. i18n: tag layout attribute name
+#: ../data/DefaultPlaylistLayouts.xml:3
+msgid "Default"
+msgstr "Prémetou"
+
+#. i18n: tag layout attribute name
+#: ../data/DefaultPlaylistLayouts.xml:36
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:507
+msgid "No Grouping"
+msgstr "Pont d' groupaedje"
+
+#. i18n: tag layout attribute name
+#: ../data/DefaultPlaylistLayouts.xml:60
+msgid "No Grouping (Single Line)"
+msgstr "Pont d' groupaedje (ene seule roye)"
+
+#. i18n: tag layout attribute name
+#: ../data/DefaultPlaylistLayouts.xml:77
+msgid "Verbose"
+msgstr "Badjawe"
 
 #: aboutdialog/ExtendedAboutDialog.cpp:73
 msgid ""
@@ -312,7 +333,7 @@ msgid "Stop after current track: On"
 msgstr "Arester après l' boket do moumint : eclitchî"
 
 #: ActionClasses.cpp:496 context/engines/current/CurrentEngine.cpp:143
-#: EngineController.cpp:1405 mac/GrowlInterface.cpp:43 widgets/Osd.cpp:679
+#: EngineController.cpp:1409 mac/GrowlInterface.cpp:43 widgets/Osd.cpp:679
 msgid "No track playing"
 msgstr "Nou boket di djouwé"
 
@@ -1093,17 +1114,35 @@ msgstr "Divintrin: URL do boket a rprinde a l' enondaedje."
 
 #. i18n: ectx: label, entry, group (Session)
 #: amarokconfig.kcfg:410
+#, fuzzy
+#| msgid "&Resume playback on start"
+msgid "Resume playback in paused state"
+msgstr "&Riprinde li djouwaedje a l' enondaedje"
+
+#. i18n: ectx: whatsthis, entry, group (Session)
+#: amarokconfig.kcfg:411
+#, fuzzy
+#| msgid "If set, Amarok resumes playback of the last played track on startup."
+msgid ""
+"If set, Amarok resumes playback of the last played track on startup, in "
+"paused state."
+msgstr ""
+"Si clitchî, Amarok riprind li djouwaedje do dierin boket djouwé a l' "
+"enondaedje."
+
+#. i18n: ectx: label, entry, group (Session)
+#: amarokconfig.kcfg:415
 msgid "Time to resume at, in milliseconds"
 msgstr "Tins ewou rprinde, e milisegondes"
 
 #. i18n: ectx: whatsthis, entry, group (Session)
-#: amarokconfig.kcfg:411
+#: amarokconfig.kcfg:416
 msgid "Internal: Playback position in the track to resume on startup."
 msgstr ""
 "Divintrin: Eplaeçmint do djouwaedje e boket po rprinde a l' enondaedje."
 
 #. i18n: ectx: label, entry, group (Session)
-#: amarokconfig.kcfg:414
+#: amarokconfig.kcfg:419
 msgid ""
 "List of bools describing which browsers are visible, from top to bottom."
 msgstr ""
@@ -1111,70 +1150,70 @@ msgstr ""
 "valêye."
 
 #. i18n: ectx: label, entry, group (Session)
-#: amarokconfig.kcfg:417
+#: amarokconfig.kcfg:422
 msgid "Track playing on last exit. Value is -1 if no track was playing."
 msgstr ""
 "Boket di djouwé å dierin moussaedje foû. Li valixhance est -1 s' i gn aveut "
 "pont d' boket di djouwé."
 
 #. i18n: ectx: label, entry, group (Session)
-#: amarokconfig.kcfg:421
+#: amarokconfig.kcfg:426
 msgid "Number (from the top) of the last active browser."
 msgstr "Limero (a pårti del copete) do dierin ovrant betchteu."
 
 #. i18n: ectx: label, entry, group (Collection)
-#: amarokconfig.kcfg:427
+#: amarokconfig.kcfg:432
 msgid "Whether Collections folders are scanned recursively"
 msgstr "Si les ridants des Ramexhnêyes sont corwaitîs avou leus ridants efants"
 
 #. i18n: ectx: label, entry, group (Collection)
-#: amarokconfig.kcfg:431
+#: amarokconfig.kcfg:436
 msgid "Whether Collection folders are rescanned on change"
 msgstr "Si les ridants del Ramexhnêye sont rcorwaitîs ås candjmints"
 
 #. i18n: ectx: label, entry, group (Collection)
-#: amarokconfig.kcfg:435
+#: amarokconfig.kcfg:440
 #, fuzzy
 #| msgid "Whether the album cover should be shown"
 msgid "Whether meta data changes are written back"
 msgstr "Sel potchete di l' albom doet esse mostré"
 
 #. i18n: ectx: label, entry, group (Collection)
-#: amarokconfig.kcfg:439
+#: amarokconfig.kcfg:444
 #, fuzzy
 #| msgid "Whether the album cover should be shown"
 msgid "Whether changes to the track statistics are written back"
 msgstr "Sel potchete di l' albom doet esse mostré"
 
 #. i18n: ectx: label, entry, group (Collection)
-#: amarokconfig.kcfg:443
+#: amarokconfig.kcfg:448
 #, fuzzy
 #| msgid "Whether the album cover should be shown"
 msgid "Whether changes to the album cover are written back"
 msgstr "Sel potchete di l' albom doet esse mostré"
 
 #. i18n: ectx: label, entry, group (Collection)
-#: amarokconfig.kcfg:447
+#: amarokconfig.kcfg:452
 msgid "Maximum embedded cover dimensions"
 msgstr "Grandeus macsimom des ravalêyès potchetes"
 
 #. i18n: ectx: label, entry, group (Collection)
-#: amarokconfig.kcfg:451
+#: amarokconfig.kcfg:456
 msgid "List of folders in the Collection"
 msgstr "Djivêye des ridants el Ramexhnêye"
 
 #. i18n: ectx: label, entry, group (Collection)
-#: amarokconfig.kcfg:454
+#: amarokconfig.kcfg:459
 msgid "Whether track numbers are shown in the collection browser."
 msgstr "Si les limeros d' bokets sont mostrés e betchteu del ramexhnêye."
 
 #. i18n: ectx: label, entry, group (Collection)
-#: amarokconfig.kcfg:458
+#: amarokconfig.kcfg:463
 msgid "Whether years are shown in the collection browser."
 msgstr "Si les anêyes sont mostrêyes e betchteu del ramexhnêye."
 
 #. i18n: ectx: label, entry, group (Collection)
-#: amarokconfig.kcfg:462
+#: amarokconfig.kcfg:467
 #, fuzzy
 #| msgid ""
 #| "If selected, Amarok will use Mozilla's Character Set Detector to attempt "
@@ -1188,30 +1227,30 @@ msgstr ""
 "ls etiketes ID3."
 
 #. i18n: ectx: label, entry, group (Scrobbler)
-#: amarokconfig.kcfg:469
+#: amarokconfig.kcfg:474
 msgid "Submit played songs"
 msgstr "Evoyî tchansons djouwêyes"
 
 #. i18n: ectx: whatsthis, entry, group (Scrobbler)
-#: amarokconfig.kcfg:470
+#: amarokconfig.kcfg:475
 msgid "Whether played songs are submitted to Audioscrobbler"
 msgstr "Si les tchansons djouwêyes sont evoyeyes as Audioscrobbler"
 
 #. i18n: ectx: label, entry, group (Scrobbler)
-#: amarokconfig.kcfg:474
+#: amarokconfig.kcfg:479
 msgctxt "Username for audioscrobbler login"
 msgid "Username"
 msgstr "No d' uzeu"
 
 #. i18n: ectx: whatsthis, entry, group (Scrobbler)
-#: amarokconfig.kcfg:475
+#: amarokconfig.kcfg:480
 msgid "The username to use for connecting to Audioscrobbler"
 msgstr "Li no d' uzeu as eployî po raloyî as Audioscrobbler"
 
 #. i18n: ectx: property (text), widget (QLabel, labelPassword)
 #. i18n: ectx: property (text), widget (QTableWidget, serverList)
 #. i18n: ectx: label, entry, group (Scrobbler)
-#: amarokconfig.kcfg:479
+#: amarokconfig.kcfg:484
 #: databaseimporter/amarok14/FastForwardImporterConfig.cpp:57
 #: services/ampache/AmpacheConfigWidget.ui:68
 #: services/ampache/NewServerWidget.ui:60
@@ -1219,77 +1258,77 @@ msgid "Password"
 msgstr "Sicret"
 
 #. i18n: ectx: whatsthis, entry, group (Scrobbler)
-#: amarokconfig.kcfg:480
+#: amarokconfig.kcfg:485
 msgid "The password to use for connecting to Audioscrobbler"
 msgstr "Li scret as eployî po raloyî as Audioscrobbler"
 
 #. i18n: ectx: label, entry, group (Scrobbler)
-#: amarokconfig.kcfg:484
+#: amarokconfig.kcfg:489
 msgid "Send composer data"
 msgstr "Evoyî dinêyes do compôzeu"
 
 #. i18n: ectx: whatsthis, entry, group (Scrobbler)
-#: amarokconfig.kcfg:485
+#: amarokconfig.kcfg:490
 msgid "Use composer data in Last.fm as artist"
 msgstr "Si siervi des dnêyes do compôzeu e Last.fm come årtisse"
 
 #. i18n: ectx: label, entry, group (Scrobbler)
-#: amarokconfig.kcfg:489
+#: amarokconfig.kcfg:494
 msgid "Retrieve similar artists"
 msgstr "Obtini des årtisses k' î rshonnèt"
 
 #. i18n: ectx: whatsthis, entry, group (Scrobbler)
-#: amarokconfig.kcfg:490
+#: amarokconfig.kcfg:495
 msgid "Whether similar songs are retrieved from Audioscrobbler"
 msgstr "Si les tchansons k' î rshonnèt sont prinses da Audioscrobbler"
 
 #. i18n: ectx: label, entry, group (MediaDevice)
-#: amarokconfig.kcfg:497
+#: amarokconfig.kcfg:502
 msgid "Device type"
 msgstr "Sôre d' éndjin"
 
 #. i18n: ectx: whatsthis, entry, group (MediaDevice)
-#: amarokconfig.kcfg:498
+#: amarokconfig.kcfg:503
 msgid "The type of media device."
 msgstr "Li sôre d' éndjin media."
 
 #. i18n: ectx: label, entry, group (MediaDevice)
-#: amarokconfig.kcfg:501
+#: amarokconfig.kcfg:506
 msgid "Mount point"
 msgstr "Pont d' montaedje"
 
 #. i18n: ectx: whatsthis, entry, group (MediaDevice)
-#: amarokconfig.kcfg:502
+#: amarokconfig.kcfg:507
 msgid "The mount point used for the media device connection."
 msgstr "Li pont d' montaedje eployî pol raloyaedje di l' éndjin media."
 
 #. i18n: ectx: label, entry, group (MediaDevice)
-#: amarokconfig.kcfg:505
+#: amarokconfig.kcfg:510
 msgid "Mount command"
 msgstr "Comande di montaedje"
 
 #. i18n: ectx: whatsthis, entry, group (MediaDevice)
-#: amarokconfig.kcfg:506
+#: amarokconfig.kcfg:511
 msgid "The mount command used for the media device connection."
 msgstr "Li comande di montaedje eployeye pol raloyaedje di l' éndjin media."
 
 #. i18n: ectx: label, entry, group (MediaDevice)
-#: amarokconfig.kcfg:509
+#: amarokconfig.kcfg:514
 msgid "UmountCommand"
 msgstr "Comande di dismontaedje"
 
 #. i18n: ectx: whatsthis, entry, group (MediaDevice)
-#: amarokconfig.kcfg:510
+#: amarokconfig.kcfg:515
 msgid "The umount command used for the media device connection."
 msgstr "Li comande di dismontaedje eployeye pol raloyaedje di l' éndjin media."
 
 #. i18n: ectx: label, entry, group (MediaDevice)
-#: amarokconfig.kcfg:513
+#: amarokconfig.kcfg:518
 msgid "Auto delete podcasts"
 msgstr "Disfacer otomaticmint les podcasses"
 
 #. i18n: ectx: whatsthis, entry, group (MediaDevice)
-#: amarokconfig.kcfg:514
+#: amarokconfig.kcfg:519
 msgid ""
 "Whether podcast shows already played are automatically deleted when media "
 "device is connected."
@@ -1298,12 +1337,12 @@ msgstr ""
 "cwand l' éndjin media est raloyî."
 
 #. i18n: ectx: label, entry, group (MediaDevice)
-#: amarokconfig.kcfg:517
+#: amarokconfig.kcfg:522
 msgid "Sync stats"
 msgstr "Stats di sincro"
 
 #. i18n: ectx: whatsthis, entry, group (MediaDevice)
-#: amarokconfig.kcfg:518
+#: amarokconfig.kcfg:523
 msgid ""
 "Whether Amarok statistics should be synchronized with play count/ratings on "
 "device and whether tracks played should be submitted to Last.fm."
@@ -1313,113 +1352,113 @@ msgstr ""
 "esse evoyîs a Last.fm."
 
 #. i18n: ectx: label, entry, group (Daap)
-#: amarokconfig.kcfg:524
+#: amarokconfig.kcfg:529
 msgid "Manually added servers"
 msgstr "Sierveus radjoutés al mwin"
 
 #. i18n: ectx: whatsthis, entry, group (Daap)
-#: amarokconfig.kcfg:525
+#: amarokconfig.kcfg:530
 msgid "Music Sharing servers added by the user."
 msgstr "Sierveus di pårtaedje del muzike radjoutés pa l' uzeu."
 
 #. i18n: ectx: label, entry, group (Daap)
-#: amarokconfig.kcfg:528
+#: amarokconfig.kcfg:533
 msgid "Server passwords"
 msgstr "Sicrets do sierveu"
 
 #. i18n: ectx: whatsthis, entry, group (Daap)
-#: amarokconfig.kcfg:529
+#: amarokconfig.kcfg:534
 msgid "Passwords stored by hostname."
 msgstr "Sicrets wårdés pa no do lodjoe."
 
 #. i18n: ectx: label, entry, group (Playlist Search)
-#: amarokconfig.kcfg:535
+#: amarokconfig.kcfg:540
 msgid "Include track names in matching"
 msgstr "Mete les nos d' bokets dins ç' ki corespond"
 
 #. i18n: ectx: label, entry, group (Playlist Search)
-#: amarokconfig.kcfg:539
+#: amarokconfig.kcfg:544
 msgid "Include album names in matching"
 msgstr "Mete les nos d' alboms dins ç' ki corespond"
 
 #. i18n: ectx: label, entry, group (Playlist Search)
-#: amarokconfig.kcfg:543
+#: amarokconfig.kcfg:548
 msgid "Include artist names in matching"
 msgstr "Mete les nos d' årtisses dins ç' ki corespond"
 
 #. i18n: ectx: label, entry, group (Playlist Search)
-#: amarokconfig.kcfg:547
+#: amarokconfig.kcfg:552
 msgid "Include genre names in matching"
 msgstr "Mete les nos d' djinres dins ç' ki corespond"
 
 #. i18n: ectx: label, entry, group (Playlist Search)
-#: amarokconfig.kcfg:551
+#: amarokconfig.kcfg:556
 msgid "Include composer names in matching"
 msgstr "Mete les nos d' compôzeus dins ç' ki corespond"
 
 #. i18n: ectx: label, entry, group (Playlist Search)
-#: amarokconfig.kcfg:555 amarokconfig.kcfg:559
+#: amarokconfig.kcfg:560 amarokconfig.kcfg:564
 msgid "Include years in matching"
 msgstr "Mete les anêyes dins ç' ki corespond"
 
 #. i18n: ectx: label, entry, group (Playlist Layout)
-#: amarokconfig.kcfg:566
+#: amarokconfig.kcfg:571
 msgid "The name of the layout that will be loaded on startup"
 msgstr "Li no d' l' adjinçmint ki srè tcherdjî a l' enondaedje"
 
 #. i18n: ectx: label, entry, group (MySQL)
-#: amarokconfig.kcfg:573
+#: amarokconfig.kcfg:578
 msgid ""
 "Whether Amarok uses its own internal database, as opposed to an external "
 "engine."
 msgstr ""
 
 #. i18n: ectx: label, entry, group (MySQL)
-#: amarokconfig.kcfg:577
+#: amarokconfig.kcfg:582
 msgid "The hostname of the external server to connect to."
 msgstr "Li no do lodjoe do dfoûtrin sierveu k' i s' fåt raloyî avou."
 
 #. i18n: ectx: label, entry, group (MySQL)
-#: amarokconfig.kcfg:581
+#: amarokconfig.kcfg:586
 msgid "Which server port to connect to the database engine."
 msgstr "A ké pôrt do sierveu i s' fåt raloyî so l' éndjin d' båze di dnêyes."
 
 #. i18n: ectx: label, entry, group (MySQL)
-#: amarokconfig.kcfg:585
+#: amarokconfig.kcfg:590
 msgid ""
 "The name of the database Amarok will use. The user should have sufficient "
 "access permissions."
 msgstr ""
 
 #. i18n: ectx: label, entry, group (MySQL)
-#: amarokconfig.kcfg:589
+#: amarokconfig.kcfg:594
 msgid "Username used to access the external database."
 msgstr "No d' uzeu eployî po moussî el difoûtrinne båze di dnêyes."
 
 #. i18n: ectx: label, entry, group (MySQL)
-#: amarokconfig.kcfg:593
+#: amarokconfig.kcfg:598
 msgid "Password for the external database user."
 msgstr "Sicret di l' uzeu pol difoûtrinne båze di dnêyes."
 
 #. i18n: ectx: label, entry, group (MySQL)
-#: amarokconfig.kcfg:597
+#: amarokconfig.kcfg:602
 msgid "Keeps a running count to know when run a CHECK."
 msgstr "Wåde on contaedje a l' ovraedje saveur cwand enonder on CHECK."
 
 #. i18n: ectx: label, entry, group (ScriptManager)
-#: amarokconfig.kcfg:604
+#: amarokconfig.kcfg:609
 msgid "Whether to automatically update built-in scripts"
 msgstr "S' i fåt mete a djoû otomaticmint les scripes divintrinnmint bastis"
 
 #. i18n: ectx: whatsthis, entry, group (ScriptManager)
-#: amarokconfig.kcfg:605
+#: amarokconfig.kcfg:610
 msgid "Enable/Disable automatic update for built-in scripts."
 msgstr ""
 "Mete èn alaedje/Essocter l' metaedje a djoû otomatike po les scripes "
 "divintrinnmint bastis"
 
 #. i18n: ectx: label, entry, group (Moodbar)
-#: amarokconfig.kcfg:612
+#: amarokconfig.kcfg:617
 #, fuzzy
 #| msgid ""
 #| "Enable/Disable showing moodbar, if available, in the progress slider."
@@ -1431,24 +1470,24 @@ msgstr ""
 "avançmint."
 
 #. i18n: ectx: whatsthis, entry, group (Moodbar)
-#: amarokconfig.kcfg:613
+#: amarokconfig.kcfg:618
 msgid "Enable/Disable showing moodbar, if available, in the progress slider."
 msgstr ""
 "Mete èn alaedje/essocter l' mostraedje del båre d' umeur, e l' acinseu d' "
 "avançmint."
 
 #. i18n: ectx: label, entry, group (Moodbar)
-#: amarokconfig.kcfg:617
+#: amarokconfig.kcfg:622
 msgid "The style to use when painting the moodbar"
 msgstr "Li stîle a eployî cwand on ponde li båre d' umeur"
 
 #. i18n: ectx: label, entry, group (PlaylistGenerator)
-#: amarokconfig.kcfg:624
+#: amarokconfig.kcfg:629
 msgid "Quality factor for Automated Playlist Generator"
 msgstr "Facteur di cwålité pol djenerateu d' djivêyes a djouwer otomatijhî"
 
 #. i18n: ectx: whatsthis, entry, group (PlaylistGenerator)
-#: amarokconfig.kcfg:625
+#: amarokconfig.kcfg:630
 msgid ""
 "A value between 0 and 10 that controls whether the Automated Playlist "
 "Generator tries to optimize for speed (0) or accuracy (10)."
@@ -1528,25 +1567,25 @@ msgstr "Novea groupe"
 msgid "none"
 msgstr "nouk"
 
-#: amarokurls/BookmarkTreeView.cpp:112
+#: amarokurls/BookmarkTreeView.cpp:111
 msgctxt "Load the view represented by this bookmark"
 msgid "&Load"
 msgstr "&Tcherdjî"
 
-#: amarokurls/BookmarkTreeView.cpp:118 browsers/filebrowser/FileView.cpp:413
+#: amarokurls/BookmarkTreeView.cpp:117 browsers/filebrowser/FileView.cpp:416
 msgid "&Delete"
 msgstr "&Disfacer"
 
-#: amarokurls/BookmarkTreeView.cpp:125
+#: amarokurls/BookmarkTreeView.cpp:124
 msgid "&Create timecode track"
 msgstr "&Ahiver on boket timecode"
 
-#: amarokurls/BookmarkTreeView.cpp:376
+#: amarokurls/BookmarkTreeView.cpp:372
 msgid "New Timecode Track"
 msgstr "Novea boket timecode"
 
-#: amarokurls/BookmarkTreeView.cpp:377 amarokurls/BookmarkTreeView.cpp:378
-#: amarokurls/BookmarkTreeView.cpp:379 context/applets/albums/AlbumItem.cpp:99
+#: amarokurls/BookmarkTreeView.cpp:373 amarokurls/BookmarkTreeView.cpp:374
+#: amarokurls/BookmarkTreeView.cpp:375 context/applets/albums/AlbumItem.cpp:99
 #: core-impl/collections/audiocd/AudioCdCollection.cpp:464
 #: core-impl/collections/audiocd/AudioCdCollection.cpp:465
 #: core-impl/collections/audiocd/AudioCdCollection.cpp:466
@@ -1616,75 +1655,75 @@ msgctxt ""
 msgid "Play"
 msgstr "Djouwer"
 
-#: App.cpp:358
+#: App.cpp:359
 msgid "Files/URLs to open"
 msgstr "Fitchîs/URL a drovi"
 
-#: App.cpp:359
+#: App.cpp:360
 msgid "Immediately start playing an audio cd"
 msgstr "Ataker tot d' shûte e djouwant ene plake lazer cd"
 
-#: App.cpp:361
+#: App.cpp:362
 msgid "Skip backwards in playlist"
 msgstr "Passer å shuvant el djivêye a djouwer"
 
-#: App.cpp:363
+#: App.cpp:364
 msgid "Start playing current playlist"
 msgstr "Ataker a djouwer l' djivêye a djouwer do moumint"
 
-#: App.cpp:365
+#: App.cpp:366
 msgid "Play if stopped, pause if playing"
 msgstr "Djouwer si aresté, djoker si tot djouwant"
 
-#: App.cpp:366
+#: App.cpp:367
 msgid "Pause playback"
 msgstr "Djoker djouwaedje"
 
-#: App.cpp:368
+#: App.cpp:369
 msgid "Stop playback"
 msgstr "Arester djouwaedje"
 
-#: App.cpp:370
+#: App.cpp:371
 msgid "Skip forwards in playlist"
 msgstr "Passer å shuvant el djivêye a djouwer"
 
-#: App.cpp:371
+#: App.cpp:372
 msgid "Additional options:"
 msgstr "Ôtès tchuzes:"
 
-#: App.cpp:373
+#: App.cpp:374
 msgid "Append files/URLs to playlist"
 msgstr "Adjouter fitchîs/URL al djivêye a djouwer"
 
-#: App.cpp:374
+#: App.cpp:375
 msgid "Queue URLs after the currently playing track"
 msgstr "Mete al cawêye des URL après l' boket djouwé pol moumint"
 
-#: App.cpp:376
+#: App.cpp:377
 msgid "Load URLs, replacing current playlist"
 msgstr "Tcherdjî des URL, e rplaeçant l' djivêye a djouwer do moumint"
 
-#: App.cpp:378
+#: App.cpp:379
 msgid "Print verbose debugging information"
 msgstr "Rexhe vierbeusmint des informåcions di disbugaedje"
 
-#: App.cpp:379
+#: App.cpp:380
 msgid "Print verbose debugging information from the audio system"
 msgstr "Rexhe vierbeusmint des informåcions di disbugaedje do sistinme odio"
 
-#: App.cpp:381
+#: App.cpp:382
 msgid "Disable colorization for debug output."
 msgstr "Essocter li metaedje e coleur des rexhowes di disbugaedje."
 
-#: App.cpp:383
+#: App.cpp:384
 msgid "Allow running multiple Amarok instances"
 msgstr "Permet l' alaedje di sacwantès instances d' Amarok"
 
-#: App.cpp:384
+#: App.cpp:385
 msgid "Base for relative filenames/URLs"
 msgstr "Båze po nos d' fitchî/URL relatifs"
 
-#: App.cpp:529
+#: App.cpp:530
 msgid ""
 "The embedded database was not found; you must set up a database server "
 "connection.\n"
@@ -1694,7 +1733,7 @@ msgstr ""
 "raloyaedje a on sierveu di båze di dnêyes.\n"
 "Vos dvoz renonder Amarok après awè fwait ça."
 
-#: App.cpp:530
+#: App.cpp:531
 msgid ""
 "The connection details for the database server were invalid.\n"
 "You must enter correct settings and restart Amarok after doing this."
@@ -1702,15 +1741,15 @@ msgstr ""
 "Les detays do raloyaedje å sierveu d' båze di dnêyes n' estént nén valåbe.\n"
 "Vos dvoz dner les bons apontiaedjes eyet renonder Amarok après awè fwait ça."
 
-#: App.cpp:531
+#: App.cpp:532
 msgid "Database Error"
 msgstr "Aroke del båze di dnêyes"
 
-#: App.cpp:576
+#: App.cpp:577
 msgid "Moving files to trash"
 msgstr "Tapaedje di fitchîs å batch"
 
-#: App.cpp:655
+#: App.cpp:646
 #, kde-format
 msgid ""
 "A music path, %1, is set in System Settings.\n"
@@ -1861,7 +1900,7 @@ msgstr "Nén cnoxhou"
 #: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:153
 #: core-impl/collections/mediadevicecollection/handler/MediaDeviceHandler.cpp:701
 #: core-impl/collections/support/ArtistHelper.cpp:40
-#: core/support/Amarok.cpp:213 covermanager/CoverManager.cpp:841
+#: core/support/Amarok.cpp:213 covermanager/CoverManager.cpp:821
 #: dialogs/TrackOrganizer.cpp:56 widgets/AlbumBreadcrumbWidget.cpp:62
 msgid "Various Artists"
 msgstr "Sacwants årtisses"
@@ -1943,14 +1982,14 @@ msgstr "Disfacer bokets"
 msgid "More..."
 msgstr "Pus..."
 
-#: browsers/CollectionTreeView.cpp:894 browsers/filebrowser/FileView.cpp:379
+#: browsers/CollectionTreeView.cpp:894 browsers/filebrowser/FileView.cpp:382
 #: browsers/playlistbrowser/PlaylistBrowserView.cpp:71
 #: context/applets/albums/AlbumsView.cpp:241
 #: services/lastfm/LastFmTreeView.cpp:97
 msgid "&Add to Playlist"
 msgstr "&Radjouter el djivêye a djouwer"
 
-#: browsers/CollectionTreeView.cpp:908 browsers/filebrowser/FileView.cpp:392
+#: browsers/CollectionTreeView.cpp:908 browsers/filebrowser/FileView.cpp:395
 #: browsers/playlistbrowser/PlaylistBrowserView.cpp:78
 #: context/applets/albums/AlbumsView.cpp:242
 #: services/lastfm/LastFmTreeView.cpp:106
@@ -1963,15 +2002,19 @@ msgctxt "Organize Files"
 msgid "Organize Files"
 msgstr "Assonrer fitchîs"
 
-#: browsers/CollectionTreeView.cpp:990 browsers/filebrowser/FileView.cpp:425
+#: browsers/CollectionTreeView.cpp:990 browsers/filebrowser/FileView.cpp:428
 msgid "&Edit Track Details"
 msgstr "&Candjî detays do boket"
 
-#: browsers/filebrowser/FileBrowser.cpp:77
+#: browsers/filebrowser/FileBrowser.cpp:70
+msgid "Refresh"
+msgstr ""
+
+#: browsers/filebrowser/FileBrowser.cpp:80
 msgid "Filter Files"
 msgstr "Passer al passete les fitchîs"
 
-#: browsers/filebrowser/FileBrowser.cpp:216
+#: browsers/filebrowser/FileBrowser.cpp:219
 msgid ""
 "The file browser lets you browse files anywhere on your system, regardless "
 "of whether these files are part of your local collection. You can then add "
@@ -1982,32 +2025,32 @@ msgstr ""
 "ou nonna. Vos savoz adon radjouter ces fitchîs la al djivêye a djouwer mins "
 "eto fé des operåcions d' båze so les fitchîs."
 
-#: browsers/filebrowser/FileView.cpp:401
+#: browsers/filebrowser/FileView.cpp:404
 #, fuzzy
 #| msgid "&Send to Trash"
 msgid "&Move to Trash"
 msgstr "&Taper å batch"
 
-#: browsers/filebrowser/FileView.cpp:570
+#: browsers/filebrowser/FileView.cpp:573
 #: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:40
 msgctxt "@title:window"
 msgid "Confirm Delete"
 msgstr "Racertiner disfaçaedje"
 
-#: browsers/filebrowser/FileView.cpp:571
+#: browsers/filebrowser/FileView.cpp:574
 #, kde-format
 msgid "Are you sure you want to delete this item?"
 msgid_plural "Are you sure you want to delete these %1 items?"
 msgstr[0] "Voloz vs disfacer c' cayet la po do bon ?"
 msgstr[1] "Voloz vs disfacer ces %1 cayets la po do bon ?"
 
-#: browsers/filebrowser/FileView.cpp:577
+#: browsers/filebrowser/FileView.cpp:580
 #: core-impl/collections/support/CollectionLocationDelegateImpl.cpp:53
 msgctxt "@title:window"
 msgid "Confirm Move to Trash"
 msgstr "Racertiner taper å batch"
 
-#: browsers/filebrowser/FileView.cpp:578
+#: browsers/filebrowser/FileView.cpp:581
 #, kde-format
 msgid "Are you sure you want to move this item to trash?"
 msgid_plural "Are you sure you want to move these %1 items to trash?"
@@ -4687,16 +4730,6 @@ msgstr "Zoumer"
 msgid "Track rating: %1"
 msgstr "Préjhaedje do boket : %1"
 
-#: context/widgets/TrackWidget.cpp:39
-msgctxt "Score of a track"
-msgid "Score:"
-msgstr "Ponts :"
-
-#: context/widgets/TrackWidget.cpp:162
-#, kde-format
-msgid "%1 - %2 (%3)"
-msgstr "%1 - %2 (%3)"
-
 #: core-impl/capabilities/AlbumActionsCapability.cpp:38
 msgid "Do not show under Various Artists"
 msgstr "Èn nén håyner dins Sacwants årtisses"
@@ -4957,7 +4990,7 @@ msgstr "Ramexhnêye"
 
 #: core-impl/collections/ipodcollection/IpodMeta.cpp:183
 #: core-impl/collections/mediadevicecollection/MediaDeviceMeta.cpp:93
-#: EngineController.cpp:1383
+#: EngineController.cpp:1387
 msgid "Unknown track"
 msgstr "Boket nén cnoxhou"
 
@@ -7631,90 +7664,90 @@ msgstr "Dji cwîr"
 msgid "Loading"
 msgstr "Dji tchedjePréjhaedje"
 
-#: covermanager/CoverManager.cpp:632
+#: covermanager/CoverManager.cpp:612
 msgctxt "The fetching is done."
 msgid "Finished."
 msgstr "Fini."
 
-#: covermanager/CoverManager.cpp:634
+#: covermanager/CoverManager.cpp:614
 #, kde-format
 msgid " Cover not found"
 msgid_plural " <b>%1</b> covers not found"
 msgstr[0] " Potchete nén trovêye"
 msgstr[1] " <b>%1</b> potchetes nén trovêyes"
 
-#: covermanager/CoverManager.cpp:652
+#: covermanager/CoverManager.cpp:632
 #, kde-format
 msgid "Fetching cover for %1 - %2..."
 msgstr "Cweraedje di potchete po %1 - %2..."
 
-#: covermanager/CoverManager.cpp:658
+#: covermanager/CoverManager.cpp:638
 #, kde-format
 msgid "Fetching cover for %1..."
 msgstr "Cweraedje di potchete po %1..."
 
-#: covermanager/CoverManager.cpp:664
+#: covermanager/CoverManager.cpp:644
 #, kde-format
 msgid "Fetching 1 cover: "
 msgid_plural "Fetching <b>%1</b> covers... : "
 msgstr[0] "Cweraedje d' 1 potchete"
 msgstr[1] "Cweraedje di <b>%1</b> potchetes... :"
 
-#: covermanager/CoverManager.cpp:666
+#: covermanager/CoverManager.cpp:646
 #, kde-format
 msgid "1 fetched"
 msgid_plural "%1 fetched"
 msgstr[0] "1 trové"
 msgstr[1] "%1 trovés"
 
-#: covermanager/CoverManager.cpp:670
+#: covermanager/CoverManager.cpp:650
 msgid " - "
 msgstr " - "
 
-#: covermanager/CoverManager.cpp:671
+#: covermanager/CoverManager.cpp:651
 #, kde-format
 msgid "1 not found"
 msgid_plural "%1 not found"
 msgstr[0] "1 nén trové"
 msgstr[1] "%1 nén trovés"
 
-#: covermanager/CoverManager.cpp:674
+#: covermanager/CoverManager.cpp:654
 msgid "Connecting..."
 msgstr "Raloyaedje..."
 
-#: covermanager/CoverManager.cpp:697
+#: covermanager/CoverManager.cpp:677
 #, kde-format
 msgid "1 result for \"%2\""
 msgid_plural "%1 results for \"%2\""
 msgstr[0] "1 rizultat po «%2»"
 msgstr[1] "%1 rizultats po «%2»"
 
-#: covermanager/CoverManager.cpp:701
+#: covermanager/CoverManager.cpp:681
 #, kde-format
 msgid "1 album"
 msgid_plural "%1 albums"
 msgstr[0] "1 albom"
 msgstr[1] "%1 alboms"
 
-#: covermanager/CoverManager.cpp:713
+#: covermanager/CoverManager.cpp:693
 msgid " by "
 msgstr " di "
 
-#: covermanager/CoverManager.cpp:718
+#: covermanager/CoverManager.cpp:698
 #, kde-format
 msgid " - ( <b>%1</b> without cover )"
 msgstr " - ( <b>%1</b> sins potchete )"
 
-#: covermanager/CoverManager.cpp:767
+#: covermanager/CoverManager.cpp:747
 msgid "Cover Image"
 msgstr "Imådje del potchete"
 
-#: covermanager/CoverManager.cpp:842
+#: covermanager/CoverManager.cpp:822
 #, kde-format
 msgid "%1 - %2"
 msgstr "%1 - %2"
 
-#: covermanager/CoverManager.cpp:860
+#: covermanager/CoverManager.cpp:840
 msgid "No Artist"
 msgstr "Nol årtisse"
 
@@ -9804,7 +9837,7 @@ msgctxt "Name of a dynamic playlist"
 msgid "Rating"
 msgstr "Préjhaedje"
 
-#: EngineController.cpp:814
+#: EngineController.cpp:818
 msgid ""
 "%0\n"
 "Hz"
@@ -9812,7 +9845,7 @@ msgstr ""
 "%0\n"
 "Hz"
 
-#: EngineController.cpp:816
+#: EngineController.cpp:820
 msgid ""
 "%0\n"
 "kHz"
@@ -9820,30 +9853,30 @@ msgstr ""
 "%0\n"
 "kHz"
 
-#: EngineController.cpp:1172
+#: EngineController.cpp:1176
 msgid "Too many errors encountered in playlist. Playback stopped."
 msgstr ""
 "I gn a yeu trop d' arokes el djivêye a djouwer. Li djouwaedje est aresté."
 
-#: EngineController.cpp:1373
+#: EngineController.cpp:1377
 #, kde-format
 msgctxt "track by artist on album"
 msgid "<b>%1</b> by <b>%2</b> on <b>%3</b>"
 msgstr "<b>%1</b> di <b>%2</b> so <b>%3</b>"
 
-#: EngineController.cpp:1375
+#: EngineController.cpp:1379
 #, kde-format
 msgctxt "track by artist"
 msgid "<b>%1</b> by <b>%2</b>"
 msgstr "<b>%1</b> di <b>%2</b>"
 
-#: EngineController.cpp:1378
+#: EngineController.cpp:1382
 #, kde-format
 msgctxt "track on album"
 msgid "<b>%1</b> on <b>%2</b>"
 msgstr "<b>%1</b> so <b>%2</b>"
 
-#: EngineController.cpp:1390
+#: EngineController.cpp:1394
 #, kde-format
 msgctxt "track from source"
 msgid "from <b>%1</b>"
@@ -11658,10 +11691,6 @@ msgstr ""
 msgid "Default Layout"
 msgstr "Adjinçmints d' djivêye a djouwer"
 
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:507
-msgid "No Grouping"
-msgstr "Pont d' groupaedje"
-
 #. i18n: ectx: property (windowTitle), widget (QDialog, PlaylistLayoutEditDialog)
 #: playlist/layouts/PlaylistLayoutEditDialog.ui:20
 msgid "Playlist Layout Editor"
@@ -11757,21 +11786,21 @@ msgstr "Li nombe di liveas po \"Disfé\" el djivêye a djouwer."
 msgid "Shuffle"
 msgstr "Comaxhî"
 
-#: playlist/PlaylistController.cpp:129
+#: playlist/PlaylistController.cpp:119
 #, fuzzy
 #| msgid "&Add to playlist"
 msgctxt "name of the action in undo stack"
 msgid "Add tracks to playlist"
 msgstr "&Radjouter el djivêye a djouwer"
 
-#: playlist/PlaylistController.cpp:131
+#: playlist/PlaylistController.cpp:121
 #, fuzzy
 #| msgid "Queue Track"
 msgctxt "name of the action in undo stack"
 msgid "Queue tracks"
 msgstr "Mete boket el cawêye"
 
-#: playlist/PlaylistController.cpp:133
+#: playlist/PlaylistController.cpp:123
 #, fuzzy
 #| msgctxt "Replace the currently loaded tracks with these"
 #| msgid "&Replace Playlist"
@@ -16279,14 +16308,12 @@ msgstr "vude"
 msgid "Volume: %1%"
 msgstr "Volume : %1%"
 
-#~ msgid "Default"
-#~ msgstr "Prémetou"
+#~ msgctxt "Score of a track"
+#~ msgid "Score:"
+#~ msgstr "Ponts :"
 
-#~ msgid "No Grouping (Single Line)"
-#~ msgstr "Pont d' groupaedje (ene seule roye)"
-
-#~ msgid "Verbose"
-#~ msgstr "Badjawe"
+#~ msgid "%1 - %2 (%3)"
+#~ msgstr "%1 - %2 (%3)"
 
 #~ msgid "Create Smart Playlist"
 #~ msgstr "Ahiver malene djivêye a djouwer"
