@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-05-06 03:50+0200\n"
+"POT-Creation-Date: 2013-05-30 01:55+0000\n"
 "PO-Revision-Date: 2012-07-04 14:20+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -203,22 +203,22 @@ msgstr "Dji n' a trové nol ahesseu di cweraedje."
 msgid "Search F&ilters"
 msgstr "&Passetes di cweraedje"
 
-#: searchproviderdlg.cpp:49
+#: searchproviderdlg.cpp:50
 #, fuzzy
 #| msgid "Default"
 msgctxt "@item:inlistbox The default character set"
 msgid "Default"
 msgstr "Prémetou"
 
-#: searchproviderdlg.cpp:53
+#: searchproviderdlg.cpp:54
 msgid "Modify Web Shortcut"
 msgstr "Candjî rascourti waibe"
 
-#: searchproviderdlg.cpp:63
+#: searchproviderdlg.cpp:64
 msgid "New Web Shortcut"
 msgstr "Novea rascourti waibe"
 
-#: searchproviderdlg.cpp:116
+#: searchproviderdlg.cpp:117
 #, kde-format
 msgid ""
 "The shortcut \"%1\" is already assigned to \"%2\". Please choose a different "
@@ -227,13 +227,13 @@ msgstr ""
 "Li rascourti « %1 » est ddja aroyî a « %2 ». Tchoezixhoz èn ôte, s' i vs "
 "plait."
 
-#: searchproviderdlg.cpp:121
+#: searchproviderdlg.cpp:122
 #, kde-format
 msgctxt "- web short cut (e.g. gg): what it refers to (e.g. Google)"
 msgid "- %1: \"%2\""
 msgstr "- %1: « %2 »"
 
-#: searchproviderdlg.cpp:125
+#: searchproviderdlg.cpp:126
 #, kde-format
 msgid ""
 "The following shortcuts are already assigned. Please choose different ones.\n"
@@ -243,7 +243,7 @@ msgstr ""
 "plait.\n"
 "%1"
 
-#: searchproviderdlg.cpp:137
+#: searchproviderdlg.cpp:138
 msgid ""
 "The Shortcut URL does not contain a \\{...} placeholder for the user query.\n"
 "This means that the same page is always going to be visited, regardless of "
@@ -253,7 +253,7 @@ msgstr ""
 "Ça fwait ki l' minme pådje serè todi vizitêye, tolminme ké tecse k' on taprè "
 "avou l' rascourti."
 
-#: searchproviderdlg.cpp:140
+#: searchproviderdlg.cpp:141
 msgid "Keep It"
 msgstr "El wårder"
 
@@ -265,25 +265,15 @@ msgstr ""
 "djins."
 
 #. i18n: ectx: property (text), widget (QLabel, lbName)
-#: searchproviderdlg_ui.ui:20
+#: searchproviderdlg_ui.ui:23
 msgid "Shortcut &name:"
 msgstr "&No do rascourti :"
-
-#. i18n: ectx: property (toolTip), widget (KLineEdit, leName)
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, leName)
-#: searchproviderdlg_ui.ui:33 searchproviderdlg_ui.ui:36
-msgid ""
-"<html><head/><body><p>Enter the human-readable name of the web shortcut here."
-"</p></body></html>"
-msgstr ""
-"<html><head/><body><p>Tapez chal li no do rascourti waibe dins ene cogne "
-"léjhåve påzès djins.</p></body></html>"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, lbQuery)
 #. i18n: ectx: property (toolTip), widget (KLineEdit, leQuery)
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, leQuery)
-#: searchproviderdlg_ui.ui:46 searchproviderdlg_ui.ui:65
-#: searchproviderdlg_ui.ui:71
+#: searchproviderdlg_ui.ui:42 searchproviderdlg_ui.ui:64
+#: searchproviderdlg_ui.ui:70
 msgid ""
 "<qt>\n"
 "Enter the URI that is used to perform a search on the search engine here.<br/"
@@ -301,15 +291,22 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, lbQuery)
-#: searchproviderdlg_ui.ui:49
+#: searchproviderdlg_ui.ui:48
 msgid "Shortcut &URL:"
 msgstr "&URL rascourti :"
 
-#. i18n: ectx: property (whatsThis), widget (QLabel, lbShortcut)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, cbCharset)
+#: searchproviderdlg_ui.ui:86
+msgid "Select the character set that will be used to encode your search query."
+msgstr ""
+"Tchoezixhoz l' djeu d' caracteres ki srè eployî po l' ecôdaedje di vosse "
+"cweraedje sol waibe."
+
 #. i18n: ectx: property (toolTip), widget (KLineEdit, leShortcut)
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, leShortcut)
-#: searchproviderdlg_ui.ui:83 searchproviderdlg_ui.ui:101
-#: searchproviderdlg_ui.ui:106
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbShortcut)
+#: searchproviderdlg_ui.ui:95 searchproviderdlg_ui.ui:100
+#: searchproviderdlg_ui.ui:122
 msgid ""
 "<qt>\n"
 "The shortcuts entered here can be used as a pseudo-URI scheme in KDE. For "
@@ -318,29 +315,37 @@ msgid ""
 "</qt>"
 msgstr ""
 
+#. i18n: ectx: property (toolTip), widget (KLineEdit, leName)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, leName)
+#: searchproviderdlg_ui.ui:110 searchproviderdlg_ui.ui:113
+msgid ""
+"<html><head/><body><p>Enter the human-readable name of the web shortcut here."
+"</p></body></html>"
+msgstr ""
+"<html><head/><body><p>Tapez chal li no do rascourti waibe dins ene cogne "
+"léjhåve påzès djins.</p></body></html>"
+
 #. i18n: ectx: property (text), widget (QLabel, lbShortcut)
-#: searchproviderdlg_ui.ui:86
+#: searchproviderdlg_ui.ui:125
 msgid "&Shortcuts:"
 msgstr "Ra&scourtis :"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, lbCharset)
-#: searchproviderdlg_ui.ui:116
+#: searchproviderdlg_ui.ui:138
 msgid "Select the character set that will be used to encode your search query"
 msgstr ""
 "Tchoezixhoz l' djeu d' caracteres ki srè eployî po l' ecôdaedje di vosse "
 "cweraedje sol waibe"
 
 #. i18n: ectx: property (text), widget (QLabel, lbCharset)
-#: searchproviderdlg_ui.ui:119
+#: searchproviderdlg_ui.ui:141
 msgid "&Charset:"
 msgstr "E&côdaedje des caracteres :"
 
-#. i18n: ectx: property (whatsThis), widget (KComboBox, cbCharset)
-#: searchproviderdlg_ui.ui:138
-msgid "Select the character set that will be used to encode your search query."
+#. i18n: ectx: property (toolTip), widget (QPushButton, pbPaste)
+#: searchproviderdlg_ui.ui:164
+msgid "Insert query placeholder"
 msgstr ""
-"Tchoezixhoz l' djeu d' caracteres ki srè eployî po l' ecôdaedje di vosse "
-"cweraedje sol waibe."
 
 #~ msgid "UR&I shortcuts:"
 #~ msgstr "Rascourtis UR&I :"

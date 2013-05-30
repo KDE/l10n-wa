@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_launcher\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-10-20 05:02+0200\n"
+"POT-Creation-Date: 2013-05-30 01:57+0000\n"
 "PO-Revision-Date: 2011-01-05 07:58+0100\n"
 "Last-Translator: Djan Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -40,7 +40,7 @@ msgstr ""
 "Colåds, programes, eplaeçmints sol copiutrece, dierins cayets eployîs eyet "
 "sessions d' sicribanne"
 
-#: applet/applet.cpp:108 simpleapplet/simpleapplet.cpp:340
+#: applet/applet.cpp:108 simpleapplet/simpleapplet.cpp:343
 msgid "Edit Applications..."
 msgstr "Candjî programes..."
 
@@ -68,15 +68,28 @@ msgstr "&Imådjete :"
 msgid "Switch &tabs on hover:"
 msgstr "Passer d' &linwetes e passant pa dzeu :"
 
-#: core/applicationmodel.cpp:334
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: applet/kickoffConfig.ui:106 simpleapplet/simpleapplet.cpp:491
+#, fuzzy
+#| msgid "Recently Used"
+msgid "Show 'Recently Installed':"
+msgstr "Eployîs dierinnmint"
+
+#: core/applicationmodel.cpp:291
+#, fuzzy
+#| msgid "Recently Used"
+msgid "Recently Installed"
+msgstr "Eployîs dierinnmint"
+
+#: core/applicationmodel.cpp:382
 msgid "Games"
 msgstr "Djeus"
 
-#: core/applicationmodel.cpp:428 ui/launcher.cpp:1037
+#: core/applicationmodel.cpp:476 ui/launcher.cpp:1055
 msgid "All Applications"
 msgstr "Tos les programes"
 
-#: core/favoritesmodel.cpp:49 simpleapplet/simpleapplet.cpp:193
+#: core/favoritesmodel.cpp:49 simpleapplet/simpleapplet.cpp:196
 #: ui/launcher.cpp:123 ui/launcher.cpp:193
 msgid "Favorites"
 msgstr "Colåds"
@@ -88,7 +101,7 @@ msgctxt "@title:column"
 msgid "Favorites"
 msgstr "Colåds"
 
-#: core/leavemodel.cpp:50 simpleapplet/simpleapplet.cpp:210
+#: core/leavemodel.cpp:50 simpleapplet/simpleapplet.cpp:213
 msgid "Log out"
 msgstr "Dislodjî"
 
@@ -116,7 +129,7 @@ msgstr "Discandjî uzeu"
 msgid "Start a parallel session as a different user"
 msgstr "Enonder ene session paralele come on ôte uzeu"
 
-#: core/leavemodel.cpp:62 simpleapplet/simpleapplet.cpp:209
+#: core/leavemodel.cpp:62 simpleapplet/simpleapplet.cpp:212
 msgid "Shut down"
 msgstr "Arester"
 
@@ -135,7 +148,7 @@ msgstr "Renonder"
 msgid "Restart computer"
 msgstr "Renonder l' copiutrece"
 
-#: core/leavemodel.cpp:70 simpleapplet/simpleapplet.cpp:203
+#: core/leavemodel.cpp:70 simpleapplet/simpleapplet.cpp:206
 msgid "Save Session"
 msgstr "Schaper session"
 
@@ -143,7 +156,7 @@ msgstr "Schaper session"
 msgid "Save current session for next login"
 msgstr "Schaper session en alaedje po l' elodjaedje shuvant"
 
-#: core/leavemodel.cpp:74 simpleapplet/simpleapplet.cpp:205
+#: core/leavemodel.cpp:74 simpleapplet/simpleapplet.cpp:208
 msgctxt "Puts the system on standby"
 msgid "Standby"
 msgstr "Mete ratinde"
@@ -152,7 +165,7 @@ msgstr "Mete ratinde"
 msgid "Pause without logging out"
 msgstr "Djoker sins moussî foû"
 
-#: core/leavemodel.cpp:78 simpleapplet/simpleapplet.cpp:206
+#: core/leavemodel.cpp:78 simpleapplet/simpleapplet.cpp:209
 msgid "Hibernate"
 msgstr "Fordoirmi"
 
@@ -160,7 +173,7 @@ msgstr "Fordoirmi"
 msgid "Suspend to disk"
 msgstr "Mete fordoirmi sol plake"
 
-#: core/leavemodel.cpp:82 simpleapplet/simpleapplet.cpp:207
+#: core/leavemodel.cpp:82 simpleapplet/simpleapplet.cpp:210
 msgid "Sleep"
 msgstr "Doirmi"
 
@@ -168,7 +181,7 @@ msgstr "Doirmi"
 msgid "Suspend to RAM"
 msgstr "Mete doirmi sol RAM"
 
-#: core/leavemodel.cpp:107 simpleapplet/simpleapplet.cpp:211
+#: core/leavemodel.cpp:107 simpleapplet/simpleapplet.cpp:214
 #: ui/launcher.cpp:181
 msgid "Leave"
 msgstr "End aler"
@@ -194,20 +207,20 @@ msgid "Documents"
 msgstr "Documints"
 
 #: core/recentlyusedmodel.cpp:120 core/systemmodel.cpp:74
-#: simpleapplet/simpleapplet.cpp:195 ui/launcher.cpp:125 ui/launcher.cpp:241
+#: simpleapplet/simpleapplet.cpp:198 ui/launcher.cpp:125 ui/launcher.cpp:241
 msgid "Applications"
 msgstr "Programes"
 
-#: core/recentlyusedmodel.cpp:186 simpleapplet/simpleapplet.cpp:197
+#: core/recentlyusedmodel.cpp:186 simpleapplet/simpleapplet.cpp:200
 #: ui/launcher.cpp:126 ui/launcher.cpp:254
 msgid "Recently Used"
 msgstr "Eployîs dierinnmint"
 
-#: core/recentlyusedmodel.cpp:188 simpleapplet/simpleapplet.cpp:199
+#: core/recentlyusedmodel.cpp:188 simpleapplet/simpleapplet.cpp:202
 msgid "Recently Used Documents"
 msgstr "Documints eployîs enawaire"
 
-#: core/recentlyusedmodel.cpp:190 simpleapplet/simpleapplet.cpp:198
+#: core/recentlyusedmodel.cpp:190 simpleapplet/simpleapplet.cpp:201
 msgid "Recently Used Applications"
 msgstr "Programes eployîs enawaire"
 
@@ -223,7 +236,7 @@ msgstr "Sitocaedjes oiståves"
 msgid "Storage"
 msgstr "Sitocaedje"
 
-#: core/systemmodel.cpp:207 simpleapplet/simpleapplet.cpp:201
+#: core/systemmodel.cpp:207 simpleapplet/simpleapplet.cpp:204
 msgid "Run Command..."
 msgstr "Enonder comande..."
 
@@ -231,7 +244,7 @@ msgstr "Enonder comande..."
 msgid "Run a command or a search query"
 msgstr "Enonder en comande ou on cweraedje"
 
-#: core/systemmodel.cpp:319 simpleapplet/simpleapplet.cpp:196
+#: core/systemmodel.cpp:319 simpleapplet/simpleapplet.cpp:199
 #: ui/launcher.cpp:125 ui/launcher.cpp:275
 msgid "Computer"
 msgstr "Copiutrece"
@@ -244,59 +257,59 @@ msgstr "Kickoff"
 msgid "Application Launcher"
 msgstr "Enondeu d' programe"
 
-#: simpleapplet/simpleapplet.cpp:194
+#: simpleapplet/simpleapplet.cpp:197
 msgid "Bookmarks"
 msgstr "Rimarkes"
 
-#: simpleapplet/simpleapplet.cpp:200
+#: simpleapplet/simpleapplet.cpp:203
 msgid "System Settings"
 msgstr "Apontiaedjes do sistinme"
 
-#: simpleapplet/simpleapplet.cpp:202
+#: simpleapplet/simpleapplet.cpp:205
 msgid "Switch User"
 msgstr "Discandjî uzeu"
 
-#: simpleapplet/simpleapplet.cpp:204
+#: simpleapplet/simpleapplet.cpp:207
 msgid "Lock Screen"
 msgstr "Eclawer waitroûle"
 
-#: simpleapplet/simpleapplet.cpp:208
+#: simpleapplet/simpleapplet.cpp:211
 msgctxt "Restart Computer"
 msgid "Restart"
 msgstr "Renonder"
 
-#: simpleapplet/simpleapplet.cpp:267
+#: simpleapplet/simpleapplet.cpp:270
 msgid "Application Launcher Menu"
 msgstr "Dressêye d' enondaedje di programes"
 
-#: simpleapplet/simpleapplet.cpp:346
+#: simpleapplet/simpleapplet.cpp:349
 msgid "Switch to Application Launcher Style"
 msgstr "Passer å stîle Enondeu d' programes"
 
-#: simpleapplet/simpleapplet.cpp:445
+#: simpleapplet/simpleapplet.cpp:448
 msgid "View"
 msgstr "Vuwe"
 
-#: simpleapplet/simpleapplet.cpp:452
+#: simpleapplet/simpleapplet.cpp:455
 msgid "Icon:"
 msgstr "Imådjete :"
 
-#: simpleapplet/simpleapplet.cpp:459
+#: simpleapplet/simpleapplet.cpp:462
 msgctxt "@label:listbox How to present applications in a KMenu-like menu"
 msgid "Format:"
 msgstr "Cogne :"
 
-#: simpleapplet/simpleapplet.cpp:463
+#: simpleapplet/simpleapplet.cpp:466
 msgctxt "@item:inlistbox Format:"
 msgid "Name Only"
 msgstr "Ki l' no"
 
-#: simpleapplet/simpleapplet.cpp:464
+#: simpleapplet/simpleapplet.cpp:467
 msgctxt "@item:inlistbox Format:"
 msgid "Description Only"
 msgstr "Ki l' discrijhaedje"
 
-#: simpleapplet/simpleapplet.cpp:465
+#: simpleapplet/simpleapplet.cpp:468
 #, fuzzy
 #| msgctxt "@item:inlistbox Format:"
 #| msgid "Name Description"
@@ -304,29 +317,29 @@ msgctxt "@item:inlistbox Format:"
 msgid "Name (Description)"
 msgstr "Discrijhaedje do no"
 
-#: simpleapplet/simpleapplet.cpp:466
+#: simpleapplet/simpleapplet.cpp:469
 msgctxt "@item:inlistbox Format:"
 msgid "Description (Name)"
 msgstr "Discrijhaedje (no)"
 
-#: simpleapplet/simpleapplet.cpp:467
+#: simpleapplet/simpleapplet.cpp:470
 msgctxt "@item:inlistbox Format:"
 msgid "Name - Description"
 msgstr "No - discrijhaedje"
 
-#: simpleapplet/simpleapplet.cpp:472
+#: simpleapplet/simpleapplet.cpp:475
 msgid "Recently used applications:"
 msgstr "Programes eployîs enawaire :"
 
-#: simpleapplet/simpleapplet.cpp:482
+#: simpleapplet/simpleapplet.cpp:485
 msgid "Show menu titles:"
 msgstr "Mostrer les tites del dressêye :"
 
-#: simpleapplet/simpleapplet.cpp:489
+#: simpleapplet/simpleapplet.cpp:498
 msgid "Options"
 msgstr "Tchuzes"
 
-#: simpleapplet/simpleapplet.cpp:626
+#: simpleapplet/simpleapplet.cpp:644
 msgid "Actions"
 msgstr "Faitindjes"
 
