@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-06-26 01:41+0000\n"
+"POT-Creation-Date: 2013-06-27 01:36+0000\n"
 "PO-Revision-Date: 2013-03-12 17:15+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -126,18 +126,6 @@ msgstr "On cliyint d' emilaedje po KDE"
 #: aboutdata.cpp:242
 msgid "Copyright © 1997–2013, KMail authors"
 msgstr "Copyright © 1997–2013, les oteurs di KMail"
-
-#: addressvalidationjob.cpp:81
-#, kde-format
-msgid "Distribution list %2 is empty, it cannot be used."
-msgid_plural "Distribution lists %2 are empty, they cannot be used."
-msgstr[0] "Li djivêye d' emilaedje %2 est vude, on nel sait eployî."
-msgstr[1] "Les djivêyes d' emilaedje %2 sont vudes, on n' les sait eployî."
-
-#: addressvalidationjob.cpp:84 addressvalidationjob.cpp:93
-#: identity/identitydialog.cpp:654
-msgid "Invalid Email Address"
-msgstr "Adresse emile nén valåbe"
 
 #: antispamwizard.cpp:116
 msgid "Anti-Spam Wizard"
@@ -1581,23 +1569,6 @@ msgstr "Radjouter"
 msgid "Remove"
 msgstr "Oister"
 
-#: createnewcontactjob.cpp:80 kmreaderwin.cpp:174
-msgid "Add to Address Book"
-msgstr "Radjouter å calpin d' adresses"
-
-#: createnewcontactjob.cpp:132
-msgid "Contact created successfully"
-msgstr "Contak ahivé comifåt"
-
-#: createnewcontactjob.cpp:137 kmreaderwin.cpp:776
-#, kde-format
-msgid "Contact cannot be stored: %1"
-msgstr "Dji n' sait schaper l' contak : %1"
-
-#: createnewcontactjob.cpp:137 kmreaderwin.cpp:776
-msgid "Failed to store contact"
-msgstr "Dji n' a savou schaper l' contak"
-
 #: foldershortcutactionmanager.cpp:138 foldershortcutactionmanager.cpp:139
 #, kde-format
 msgid "Folder Shortcut %1"
@@ -1887,6 +1858,11 @@ msgstr "Imådje"
 msgid "Invalid Email Alias \"%1\""
 msgstr "Aliasse d' emile « %1 » nén valåbe"
 
+#: identity/identitydialog.cpp:654 job/addressvalidationjob.cpp:84
+#: job/addressvalidationjob.cpp:93
+msgid "Invalid Email Address"
+msgstr "Adresse emile nén valåbe"
+
 #: identity/identitydialog.cpp:689
 #, kde-format
 msgid ""
@@ -2129,6 +2105,30 @@ msgstr "Nole imådje"
 #: identity/xfaceconfigurator.cpp:280 identity/xfaceconfigurator.cpp:290
 msgid "No picture set for your address book entry."
 msgstr "Nole imådje defineye por vos e calpin d' adresses."
+
+#: job/addressvalidationjob.cpp:81
+#, kde-format
+msgid "Distribution list %2 is empty, it cannot be used."
+msgid_plural "Distribution lists %2 are empty, they cannot be used."
+msgstr[0] "Li djivêye d' emilaedje %2 est vude, on nel sait eployî."
+msgstr[1] "Les djivêyes d' emilaedje %2 sont vudes, on n' les sait eployî."
+
+#: job/createnewcontactjob.cpp:80 kmreaderwin.cpp:174
+msgid "Add to Address Book"
+msgstr "Radjouter å calpin d' adresses"
+
+#: job/createnewcontactjob.cpp:132
+msgid "Contact created successfully"
+msgstr "Contak ahivé comifåt"
+
+#: job/createnewcontactjob.cpp:137 kmreaderwin.cpp:776
+#, kde-format
+msgid "Contact cannot be stored: %1"
+msgstr "Dji n' sait schaper l' contak : %1"
+
+#: job/createnewcontactjob.cpp:137 kmreaderwin.cpp:776
+msgid "Failed to store contact"
+msgstr "Dji n' a savou schaper l' contak"
 
 #. i18n: ectx: whatsthis, entry (ExcludeImportantMailFromExpiry), group (Behaviour)
 #: kmail.kcfg.cmake:49
@@ -3688,8 +3688,10 @@ msgid "Notification"
 msgstr "Notifiaedje"
 
 #: kmmainwidget.cpp:325
-msgid ""
-"An other mailer was found on system. Do you want to import data from it?"
+#, fuzzy
+#| msgid ""
+#| "An other mailer was found on system. Do you want to import data from it?"
+msgid "Another mailer was found on system. Do you want to import data from it?"
 msgstr ""
 "Èn ôte emileu a stî trové sol sistinme. Voloz vs abaguer des dnêyes di ci "
 "ci ?"

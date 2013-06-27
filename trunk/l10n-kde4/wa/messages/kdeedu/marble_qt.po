@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: marble_qt\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-26 01:37+0000\n"
+"POT-Creation-Date: 2013-06-27 01:32+0000\n"
 "PO-Revision-Date: 2011-01-14 10:24+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -552,6 +552,7 @@ msgid "Name"
 msgstr "No"
 
 #: src/lib/MapViewWidget.cpp:80 src/lib/MapViewWidget.cpp:81
+#: src/plugins/render/satellites/SatellitesConfigDialog.cpp:45
 #, fuzzy
 #| msgctxt "the earth's moon"
 #| msgid "Moon"
@@ -1354,6 +1355,12 @@ msgstr "Vuwe do fitchî"
 msgid "Current Location"
 msgstr "Eplaeçmint do moumint"
 
+#: src/lib/MarbleGlobal.h:233
+#, fuzzy
+#| msgid "not available"
+msgid "not available"
+msgstr "nén disponibe"
+
 #: src/lib/MarbleLineEdit.cpp:58
 #, fuzzy
 msgid "Clear"
@@ -1950,11 +1957,22 @@ msgstr "&Apontiaedjes"
 msgid "Directions - Marble"
 msgstr "Montinne"
 
+#: src/lib/routing/RoutingWidget.cpp:394
+#, fuzzy, qt-format
+#| msgid "Placemarks Plugin"
+msgid "placemarks found: %1"
+msgstr "Tchôke-divins des Markes di plaeces"
+
 #: src/lib/routing/RoutingWidget.cpp:400
 #, fuzzy
 #| msgid "Placemarks Plugin"
 msgid "No placemark found"
 msgstr "Tchôke-divins des Markes di plaeces"
+
+#: src/lib/routing/RoutingWidget.cpp:604
+#, qt-format
+msgid "routes found: %1"
+msgstr ""
 
 #: src/lib/routing/RoutingWidget.cpp:669
 msgid "No route found"
@@ -2426,43 +2444,43 @@ msgstr "&Grile des cordinêyes"
 msgid "A plugin that shows a coordinate grid."
 msgstr "On tchôke-divins k' håyene ene grile des cordinêyes."
 
-#: src/plugins/render/graticule/GraticulePlugin.cpp:209
+#: src/plugins/render/graticule/GraticulePlugin.cpp:207
 msgid "Please choose the color for the coordinate grid."
 msgstr ""
 
-#: src/plugins/render/graticule/GraticulePlugin.cpp:220
+#: src/plugins/render/graticule/GraticulePlugin.cpp:218
 msgid "Please choose the color for the tropic circles."
 msgstr ""
 
-#: src/plugins/render/graticule/GraticulePlugin.cpp:231
+#: src/plugins/render/graticule/GraticulePlugin.cpp:229
 msgid "Please choose the color for the equator."
 msgstr ""
 
-#: src/plugins/render/graticule/GraticulePlugin.cpp:356
+#: src/plugins/render/graticule/GraticulePlugin.cpp:354
 msgid "Equator"
 msgstr ""
 
-#: src/plugins/render/graticule/GraticulePlugin.cpp:361
+#: src/plugins/render/graticule/GraticulePlugin.cpp:359
 msgid "Prime Meridian"
 msgstr ""
 
-#: src/plugins/render/graticule/GraticulePlugin.cpp:362
+#: src/plugins/render/graticule/GraticulePlugin.cpp:360
 msgid "Antimeridian"
 msgstr ""
 
-#: src/plugins/render/graticule/GraticulePlugin.cpp:377
+#: src/plugins/render/graticule/GraticulePlugin.cpp:375
 msgid "Tropic of Cancer"
 msgstr "Tropike do Crantche"
 
-#: src/plugins/render/graticule/GraticulePlugin.cpp:378
+#: src/plugins/render/graticule/GraticulePlugin.cpp:376
 msgid "Tropic of Capricorn"
 msgstr "Tropike do Gadot"
 
-#: src/plugins/render/graticule/GraticulePlugin.cpp:381
+#: src/plugins/render/graticule/GraticulePlugin.cpp:379
 msgid "Arctic Circle"
 msgstr "Ceje årtike"
 
-#: src/plugins/render/graticule/GraticulePlugin.cpp:382
+#: src/plugins/render/graticule/GraticulePlugin.cpp:380
 msgid "Antarctic Circle"
 msgstr "Ceke antårtike"
 
@@ -3007,6 +3025,97 @@ msgstr "Montinne"
 msgid "Routing information and navigation controls"
 msgstr ""
 
+#: src/plugins/render/satellites/SatellitesConfigDialog.cpp:38
+msgid "Comets"
+msgstr ""
+
+#: src/plugins/render/satellites/SatellitesConfigDialog.cpp:39
+#, fuzzy
+#| msgctxt "the earth's moon"
+#| msgid "Moon"
+msgid "Moons"
+msgstr "Lune"
+
+#: src/plugins/render/satellites/SatellitesConfigDialog.cpp:40
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:399
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:419
+#, fuzzy
+msgid "Other"
+msgstr "Traitoe"
+
+#: src/plugins/render/satellites/SatellitesConfigDialog.cpp:41
+msgid "Spacecrafts"
+msgstr ""
+
+#: src/plugins/render/satellites/SatellitesConfigDialog.cpp:42
+msgid "Spaceprobes"
+msgstr ""
+
+#: src/plugins/render/satellites/SatellitesConfigDialog.cpp:46
+#: src/plugins/render/sun/SunPlugin.cpp:52
+#: src/plugins/render/sun/SunPlugin.cpp:57
+#, fuzzy
+#| msgctxt "the earth's star"
+#| msgid "Sun"
+msgid "Sun"
+msgstr "Solea"
+
+#: src/plugins/render/satellites/SatellitesConfigDialog.cpp:47
+#, fuzzy
+#| msgctxt "the planet"
+#| msgid "Mercury"
+msgid "Mercury"
+msgstr "Mercure"
+
+#: src/plugins/render/satellites/SatellitesConfigDialog.cpp:48
+#, fuzzy
+#| msgctxt "the planet"
+#| msgid "Venus"
+msgid "Venus"
+msgstr "Venus"
+
+#: src/plugins/render/satellites/SatellitesConfigDialog.cpp:49
+#, fuzzy
+#| msgctxt "the planet"
+#| msgid "Earth"
+msgid "Earth"
+msgstr "Daegne"
+
+#: src/plugins/render/satellites/SatellitesConfigDialog.cpp:50
+#, fuzzy
+#| msgctxt "the planet"
+#| msgid "Mars"
+msgid "Mars"
+msgstr "Måss"
+
+#: src/plugins/render/satellites/SatellitesConfigDialog.cpp:51
+#, fuzzy
+#| msgctxt "the planet"
+#| msgid "Jupiter"
+msgid "Jupiter"
+msgstr "Djupiter"
+
+#: src/plugins/render/satellites/SatellitesConfigDialog.cpp:52
+#, fuzzy
+#| msgctxt "the planet"
+#| msgid "Saturn"
+msgid "Saturn"
+msgstr "Satûne"
+
+#: src/plugins/render/satellites/SatellitesConfigDialog.cpp:53
+#, fuzzy
+#| msgctxt "the planet"
+#| msgid "Uranus"
+msgid "Uranus"
+msgstr "Uranus"
+
+#: src/plugins/render/satellites/SatellitesConfigDialog.cpp:54
+#, fuzzy
+#| msgctxt "the planet"
+#| msgid "Neptune"
+msgid "Neptune"
+msgstr "Neptune"
+
 #: src/plugins/render/satellites/SatellitesConfigDialog.cpp:145
 #: src/plugins/render/satellites/SatellitesPlugin.cpp:91
 msgid "&Satellites"
@@ -3107,12 +3216,111 @@ msgstr ""
 msgid "Special-Interest Satellites"
 msgstr ""
 
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:372
+msgid "Last 30 Days' Launches"
+msgstr ""
+
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:373
+msgid "Space Stations"
+msgstr ""
+
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:374
+msgid "100 (or so) Brightest"
+msgstr ""
+
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:375
+msgid "FENGYUN 1C Debris"
+msgstr ""
+
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:376
+msgid "IRIDIUM 33 Debris"
+msgstr ""
+
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:377
+msgid "COSMOS 2251 Debris"
+msgstr ""
+
 #: src/plugins/render/satellites/SatellitesPlugin.cpp:379
 msgid "Weather & Earth Resources Satellites"
 msgstr ""
 
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:380
+#: src/plugins/render/weather/WeatherItem.cpp:59
+#: src/plugins/render/weather/WeatherPlugin.cpp:80
+#, fuzzy
+msgid "Weather"
+msgstr "Traitoe"
+
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:381
+msgid "NOAA"
+msgstr ""
+
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:382
+msgid "GOES"
+msgstr ""
+
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:383
+#, fuzzy
+#| msgctxt "the planet"
+#| msgid "Earth"
+msgid "Earth Resources"
+msgstr "Daegne"
+
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:384
+msgid "Search & Rescue (SARSAT)"
+msgstr ""
+
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:385
+msgid "Disaster Monitoring"
+msgstr ""
+
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:386
+msgid "Tracking and Data Relay Satellite System (TDRSS)"
+msgstr ""
+
 #: src/plugins/render/satellites/SatellitesPlugin.cpp:388
 msgid "Communications Satellites"
+msgstr ""
+
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:389
+#, fuzzy
+msgid "Geostationary"
+msgstr "Schaper fitchî"
+
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:390
+msgid "Intelsat"
+msgstr ""
+
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:391
+msgid "Gorizont"
+msgstr ""
+
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:392
+msgid "Raduga"
+msgstr ""
+
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:393
+msgid "Molniya"
+msgstr ""
+
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:394
+msgid "Iridium"
+msgstr ""
+
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:395
+msgid "Orbcomm"
+msgstr ""
+
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:396
+msgid "Globalstar"
+msgstr ""
+
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:397
+msgid "Amateur radio"
+msgstr ""
+
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:398
+msgid "Experimental"
 msgstr ""
 
 #: src/plugins/render/satellites/SatellitesPlugin.cpp:401
@@ -3121,14 +3329,72 @@ msgstr ""
 msgid "Navigation Satellites"
 msgstr "Mostrer l' panea di naiviaedje"
 
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:402
+msgid "GPS Operational"
+msgstr ""
+
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:403
+msgid "Glonass Operational"
+msgstr ""
+
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:404
+msgid "Galileo"
+msgstr ""
+
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:405
+msgid "Satellite-Based Augmentation System (WAAS/EGNOS/MSAS)"
+msgstr ""
+
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:406
+#, fuzzy
+#| msgid "Show Navigation Panel"
+msgid "Navy Navigation Satellite System (NNSS)"
+msgstr "Mostrer l' panea di naiviaedje"
+
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:407
+#, fuzzy
+#| msgid "Navigation"
+msgid "Russian LEO Navigation"
+msgstr "Naiviaedje"
+
 #: src/plugins/render/satellites/SatellitesPlugin.cpp:409
 #, fuzzy
 #| msgid "Satellites"
 msgid "Scientific Satellites"
 msgstr "Satelites"
 
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:410
+msgid "Space & Earth Science"
+msgstr ""
+
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:411
+msgid "Geodetic"
+msgstr ""
+
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:412
+msgid "Engineering"
+msgstr ""
+
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:413
+#, fuzzy
+#| msgid "Location"
+msgid "Education"
+msgstr "Eplaeçmint"
+
 #: src/plugins/render/satellites/SatellitesPlugin.cpp:415
 msgid "Miscellaneous Satellites"
+msgstr ""
+
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:416
+msgid "Miscellaneous Military"
+msgstr ""
+
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:417
+msgid "Radar Calibration"
+msgstr ""
+
+#: src/plugins/render/satellites/SatellitesPlugin.cpp:418
+msgid "CubeSats"
 msgstr ""
 
 #: src/plugins/render/speedometer/Speedometer.cpp:56
@@ -3561,14 +3827,6 @@ msgstr ""
 msgid "Show &Sun"
 msgstr "Mostrer l' panea di naiviaedje"
 
-#: src/plugins/render/sun/SunPlugin.cpp:52
-#: src/plugins/render/sun/SunPlugin.cpp:57
-#, fuzzy
-#| msgctxt "the earth's star"
-#| msgid "Sun"
-msgid "Sun"
-msgstr "Solea"
-
 #: src/plugins/render/sun/SunPlugin.cpp:72
 #, fuzzy
 #| msgid "A plugin that shows the Starry Sky."
@@ -3836,12 +4094,6 @@ msgstr ""
 #, qt-format
 msgid "Humidity: %1<br>"
 msgstr ""
-
-#: src/plugins/render/weather/WeatherItem.cpp:59
-#: src/plugins/render/weather/WeatherPlugin.cpp:80
-#, fuzzy
-msgid "Weather"
-msgstr "Traitoe"
 
 #: src/plugins/render/weather/WeatherItem.cpp:113
 #, qt-format
