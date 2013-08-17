@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-08-15 01:39+0000\n"
+"POT-Creation-Date: 2013-08-17 01:40+0000\n"
 "PO-Revision-Date: 2013-07-06 02:07+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -4378,7 +4378,7 @@ msgctxt "Message->"
 msgid "&Reply"
 msgstr "&Responde"
 
-#: messageactions.cpp:84 searchdialog/searchwindow.cpp:227
+#: messageactions.cpp:84 searchdialog/searchwindow.cpp:231
 msgid "&Reply..."
 msgstr "&Responde..."
 
@@ -4386,11 +4386,11 @@ msgstr "&Responde..."
 msgid "Reply to A&uthor..."
 msgstr "Responde a l' &oteur..."
 
-#: messageactions.cpp:98 searchdialog/searchwindow.cpp:231
+#: messageactions.cpp:98 searchdialog/searchwindow.cpp:235
 msgid "Reply to &All..."
 msgstr "Responde a &tertos..."
 
-#: messageactions.cpp:105 searchdialog/searchwindow.cpp:235
+#: messageactions.cpp:105 searchdialog/searchwindow.cpp:239
 msgid "Reply to Mailing-&List..."
 msgstr "Responde a ene &copinreye..."
 
@@ -4438,7 +4438,7 @@ msgstr "Aspou&gnî li messaedje"
 msgid "Add Note..."
 msgstr "Radjouter note..."
 
-#: messageactions.cpp:174 searchdialog/searchwindow.cpp:239
+#: messageactions.cpp:174 searchdialog/searchwindow.cpp:243
 msgctxt "Message->"
 msgid "&Forward"
 msgstr "&Ricassî"
@@ -4567,54 +4567,128 @@ msgctxt "@title:column, folder (e.g. email)"
 msgid "Folder"
 msgstr "Ridant"
 
-#: searchdialog/searchwindow.cpp:90
+#: searchdialog/searchdebugdialog.cpp:35
+msgid "Search query debug"
+msgstr ""
+
+#: searchdialog/searchdebugdialog.cpp:37
+msgid "Save As..."
+msgstr "Schaper et rlomer..."
+
+#: searchdialog/searchdebugdialog.cpp:71
+msgid "all files (*)"
+msgstr ""
+
+#: searchdialog/searchdebugdialog.cpp:81
+#, kde-format
+msgid ""
+"Could not write the file %1:\n"
+"\"%2\" is the detailed error description."
+msgstr ""
+"Dji n' sai scrire li fitchî %1:\n"
+"« %2 » est li spepieus discrijhaedje di l' aroke."
+
+#: searchdialog/searchdebugdialog.cpp:85
+msgid "Sieve Editor Error"
+msgstr ""
+
+#: searchdialog/searchdebugwidget.cpp:52
+msgid "UIDS:"
+msgstr ""
+
+#: searchdialog/searchdebugwidget.cpp:53
+#, fuzzy
+#| msgid "Messages"
+msgid "Message:"
+msgstr "Messaedjes"
+
+#: searchdialog/searchdebugwidget.cpp:57 searchdialog/searchwindow.cpp:410
+#: searchdialog/searchwindow.cpp:438 searchdialog/searchwindow.cpp:441
+#, fuzzy
+#| msgctxt "Search for messages."
+#| msgid "Search"
+msgid "Search"
+msgstr "Trover"
+
+#: searchdialog/searchdebugwidget.cpp:176
+#, fuzzy, kde-format
+#| msgid " message"
+#| msgid_plural " messages"
+msgid "1 message found"
+msgid_plural "%1 messages found"
+msgstr[0] " messaedje"
+msgstr[1] " messaedjes"
+
+#: searchdialog/searchdebugwidget.cpp:195
+#, fuzzy
+#| msgid "Error connecting to server %1"
+msgid "Error on fetching item"
+msgstr "Aroke, dji n' mi sai raloyî å sierveu %1"
+
+#: searchdialog/searchwindow.cpp:91
 msgid "Find Messages"
 msgstr "Trover des messaedjes"
 
-#: searchdialog/searchwindow.cpp:102
+#: searchdialog/searchwindow.cpp:103
 msgctxt "@action:button Search for messages"
 msgid "&Search"
 msgstr "&Trover"
 
-#: searchdialog/searchwindow.cpp:189 searchdialog/searchwindow.cpp:382
+#: searchdialog/searchwindow.cpp:108
+msgid "Debug query"
+msgstr ""
+
+#: searchdialog/searchwindow.cpp:193 searchdialog/searchwindow.cpp:386
 msgid "Last Search"
 msgstr "Dierin cweraedje"
 
-#: searchdialog/searchwindow.cpp:244
+#: searchdialog/searchwindow.cpp:248
 msgctxt "@action:inmenu Forward message inline."
 msgid "&Inline..."
 msgstr "&Dins l' messaedje..."
 
-#: searchdialog/searchwindow.cpp:249
+#: searchdialog/searchwindow.cpp:253
 msgctxt "Message->Forward->"
 msgid "As &Attachment..."
 msgstr "Come &ataetchmint..."
 
-#: searchdialog/searchwindow.cpp:263
+#: searchdialog/searchwindow.cpp:267
 msgid "Save Attachments..."
 msgstr "Schaper ataetchmints..."
 
-#: searchdialog/searchwindow.cpp:269
+#: searchdialog/searchwindow.cpp:273
 msgid "Clear Selection"
 msgstr "Netyî l' tchoes"
 
-#: searchdialog/searchwindow.cpp:353
+#: searchdialog/searchwindow.cpp:357
 #, kde-format
 msgid "%1 match"
 msgid_plural "%1 matches"
 msgstr[0] "%1 trové"
 msgstr[1] "%1 trovés"
 
-#: searchdialog/searchwindow.cpp:443
+#: searchdialog/searchwindow.cpp:410
+msgid "You did not selected a valid folder."
+msgstr ""
+
+#: searchdialog/searchwindow.cpp:438
+msgid "You forgot to define condition."
+msgstr ""
+
+#: searchdialog/searchwindow.cpp:441
+msgid "All folders selected are empty or were not indexed."
+msgstr ""
+
+#: searchdialog/searchwindow.cpp:463
 msgid "Searching..."
 msgstr "Dji cwîre..."
 
-#: searchdialog/searchwindow.cpp:451
+#: searchdialog/searchwindow.cpp:471
 #, kde-format
 msgid "Can not get search result. %1"
 msgstr "Dji n' sai rçure les rzultats do cweraedje. %1"
 
-#: searchdialog/searchwindow.cpp:562
+#: searchdialog/searchwindow.cpp:582
 msgid ""
 "There was a problem renaming your search folder. A common reason for this is "
 "that another search folder with the same name already exists."
@@ -4623,14 +4697,14 @@ msgstr ""
 "råjhon k' esplikêye çoula c' est k' i gn a ddja èn ôte ridant d' ricweraedje "
 "avou l' minme no."
 
-#: searchdialog/searchwindow.cpp:665
+#: searchdialog/searchwindow.cpp:685
 #, kde-format
 msgid "Copy Message"
 msgid_plural "Copy %1 Messages"
 msgstr[0] "Copyî messaedje"
 msgstr[1] "Copyî %1 messaedjes"
 
-#: searchdialog/searchwindow.cpp:668
+#: searchdialog/searchwindow.cpp:688
 #, kde-format
 msgid "Cut Message"
 msgid_plural "Cut %1 Messages"
@@ -6584,13 +6658,6 @@ msgstr "Li dfoûtrin aspougneu di tecse a stî enondé"
 #~ "prindèt pus ki cisse limite la, les pus viyès dnêyes seront oistêyes "
 #~ "disk' a rivni pa dzo l' limite. "
 
-#~ msgid ""
-#~ "Could not write the file %1:\n"
-#~ "\"%2\" is the detailed error description."
-#~ msgstr ""
-#~ "Dji n' sai scrire li fitchî %1:\n"
-#~ "« %2 » est li spepieus discrijhaedje di l' aroke."
-
 #~ msgid "Not enough free disk space?"
 #~ msgstr "Pont d' plaece sol plake assez?"
 
@@ -8256,9 +8323,6 @@ msgstr "Li dfoûtrin aspougneu di tecse a stî enondé"
 #~ msgid "&Save Attachment As..."
 #~ msgstr "Schaper et r&lomer ataetchmint..."
 
-#~ msgid "Save As..."
-#~ msgstr "Schaper et rlomer..."
-
 #~ msgid "Attachment Pr&operties"
 #~ msgstr "P&rôpietés di l' ataetchmint"
 
@@ -9387,9 +9451,6 @@ msgstr "Li dfoûtrin aspougneu di tecse a stî enondé"
 #~ msgid "<qt>Failed to create folder <b>%1</b>, folder already exists.</qt>"
 #~ msgstr "Dji n' sai fé l' ridant '%1' ca il egzistêye dedja."
 
-#~ msgid "Error connecting to server %1"
-#~ msgstr "Aroke, dji n' mi sai raloyî å sierveu %1"
-
 #~ msgid "&New Folder..."
 #~ msgstr "&Novea ridant..."
 
@@ -9932,13 +9993,6 @@ msgstr "Li dfoûtrin aspougneu di tecse a stî enondé"
 #~ msgctxt "type of folder storage"
 #~ msgid "Disconnected IMAP"
 #~ msgstr "Sôre di conte: Conte IMAP nén raloyî"
-
-#, fuzzy
-#~| msgctxt "Search for messages."
-#~| msgid "Search"
-#~ msgctxt "type of folder storage"
-#~ msgid "Search"
-#~ msgstr "Trover"
 
 #, fuzzy
 #~| msgid "Unknown"
@@ -10924,11 +10978,6 @@ msgstr "Li dfoûtrin aspougneu di tecse a stî enondé"
 #~ "mins c' est dmandé po leyî des messaedjes sol sierveu.\n"
 #~ "Come certins sierveus n' anoncèt nén comifåt çou k' i savèt fé, vos ploz "
 #~ "todi"
-
-#~ msgid " message"
-#~ msgid_plural " messages"
-#~ msgstr[0] " messaedje"
-#~ msgstr[1] " messaedjes"
 
 #~ msgid " byte"
 #~ msgid_plural " bytes"
