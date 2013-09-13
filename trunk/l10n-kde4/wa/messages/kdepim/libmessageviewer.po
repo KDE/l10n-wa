@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-12 01:42+0000\n"
+"POT-Creation-Date: 2013-09-13 01:39+0000\n"
 "PO-Revision-Date: 2011-08-15 08:58+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -95,13 +95,13 @@ msgid "[vCard]"
 msgstr "[vCard]"
 
 #: header/briefheaderstyle.cpp:106 header/customheaderstyle.cpp:110
-#: header/entrepriseheaderstyle.cpp:147 header/fancyheaderstyle.cpp:151
+#: header/entrepriseheaderstyle.cpp:147 header/fancyheaderstyle.cpp:164
 #: header/plainheaderstyle.cpp:105
 msgid "CC: "
 msgstr "Cc : "
 
 #: header/briefheaderstyle.cpp:109 header/customheaderstyle.cpp:115
-#: header/entrepriseheaderstyle.cpp:158 header/fancyheaderstyle.cpp:161
+#: header/entrepriseheaderstyle.cpp:158 header/fancyheaderstyle.cpp:174
 #: header/plainheaderstyle.cpp:109
 msgid "BCC: "
 msgstr "Bcc : "
@@ -132,7 +132,7 @@ msgstr "&Candjî..."
 msgid "Header:"
 msgstr "Tiestires"
 
-#: header/customheaderstyle.cpp:92 header/fancyheaderstyle.cpp:167
+#: header/customheaderstyle.cpp:92 header/fancyheaderstyle.cpp:180
 #: header/plainheaderstyle.cpp:80
 msgid "Date: "
 msgstr "Date : "
@@ -165,24 +165,29 @@ msgstr "Po :  "
 msgid "(resent from %1)"
 msgstr "(revoyî d' %1)"
 
-#: header/fancyheaderstyle.cpp:141
+#: header/fancyheaderstyle.cpp:143
+#, kde-format
+msgid "(receiver was %1)"
+msgstr ""
+
+#: header/fancyheaderstyle.cpp:156
 msgctxt "To-field of the mail header."
 msgid "To: "
 msgstr "Po: "
 
-#: header/fancyheaderstyle.cpp:175
+#: header/fancyheaderstyle.cpp:188
 msgid "User-Agent: "
 msgstr "Idintité do cliyint:"
 
-#: header/fancyheaderstyle.cpp:184
+#: header/fancyheaderstyle.cpp:197
 msgid "X-Mailer: "
 msgstr "X-Mailer: "
 
-#: header/fancyheaderstyle.cpp:196
+#: header/fancyheaderstyle.cpp:209
 msgid "Bugzilla: "
 msgstr ""
 
-#: header/fancyheaderstyle.cpp:208 header/grantleeheaderformatter.cpp:140
+#: header/fancyheaderstyle.cpp:221 header/grantleeheaderformatter.cpp:140
 msgid "Spam Status:"
 msgstr "Sitatut spam: "
 
@@ -241,13 +246,21 @@ msgstr "Date : "
 msgid "resent from"
 msgstr "(revoyî d' %1)"
 
-#: header/grantleeheaderformatter.cpp:175
+#: header/grantleeheaderformatter.cpp:167
+#, fuzzy
+#| msgid "Receiver"
+msgid "receiver was"
+msgid_plural "receivers were"
+msgstr[0] "Riçuveu"
+msgstr[1] "Riçuveu"
+
+#: header/grantleeheaderformatter.cpp:181
 #, fuzzy
 #| msgid "Printing Output"
 msgid "Printing mode"
 msgstr "Imprimaedje del rexhowe"
 
-#: header/grantleeheaderformatter.cpp:212
+#: header/grantleeheaderformatter.cpp:218
 #, fuzzy
 #| msgid "[vCard]"
 msgid "[vcard]"
@@ -9092,9 +9105,6 @@ msgstr "Messaedje di d&vant"
 #~| msgid "Four Weeks Ago"
 #~ msgid "Five Weeks Ago"
 #~ msgstr "Gn a cwate samwinnes"
-
-#~ msgid "Receiver"
-#~ msgstr "Riçuveu"
 
 #~ msgid "Sender"
 #~ msgstr "Evoyeu"
