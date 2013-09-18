@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gwenview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-12 01:40+0000\n"
+"POT-Creation-Date: 2013-09-18 01:44+0000\n"
 "PO-Revision-Date: 2010-08-10 23:36+0200\n"
 "Last-Translator: Jean Cayron et Odile Lambert <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -66,7 +66,7 @@ msgstr "Istwere :"
 msgid "Remember folders and URLs"
 msgstr "Si sovni des ridants eyet URL"
 
-#: app/browsemainpage.cpp:117 app/mainwindow.cpp:348 app/viewmainpage.cpp:430
+#: app/browsemainpage.cpp:117 app/mainwindow.cpp:357 app/viewmainpage.cpp:431
 #: lib/documentview/documentviewcontroller.cpp:92
 msgctxt "@title actions category - means actions changing smth in interface"
 msgid "View"
@@ -134,7 +134,7 @@ msgid "Rating"
 msgstr "Préjhaedje"
 
 #: app/browsemainpage.cpp:156 app/fileopscontextmanageritem.cpp:165
-#: app/mainwindow.cpp:347
+#: app/mainwindow.cpp:356
 msgctxt "@title actions category"
 msgid "File"
 msgstr "Fitchî"
@@ -496,11 +496,6 @@ msgstr ""
 msgid "Go back to the original"
 msgstr ""
 
-#: app/gvcore.cpp:367 lib/document/documentjob.cpp:79
-msgctxt "@info"
-msgid "Gwenview cannot edit this kind of image."
-msgstr "Gwenview n' sai candjî les imådjes di c' djinre la."
-
 #. i18n: ectx: Menu (rating)
 #: app/gwenviewui.rc:47
 msgid "&Rating"
@@ -528,54 +523,59 @@ msgctxt "@title:window"
 msgid "Image Information"
 msgstr "Meta-informåcion"
 
-#: app/imageopscontextmanageritem.cpp:81
+#: app/imageopscontextmanageritem.cpp:82
 msgctxt "@title actions category - means actions changing image"
 msgid "Edit"
 msgstr "Candjî"
 
-#: app/imageopscontextmanageritem.cpp:84
+#: app/imageopscontextmanageritem.cpp:85
 msgid "Rotate Left"
 msgstr "Fé tourner a hintche"
 
-#: app/imageopscontextmanageritem.cpp:85
+#: app/imageopscontextmanageritem.cpp:86
 #, fuzzy
 #| msgid "Rotate Right"
 msgctxt "@info:tooltip"
 msgid "Rotate image to the left"
 msgstr "Fé tourné a droete"
 
-#: app/imageopscontextmanageritem.cpp:91
+#: app/imageopscontextmanageritem.cpp:92
 msgid "Rotate Right"
 msgstr "Fé tourné a droete"
 
-#: app/imageopscontextmanageritem.cpp:92
+#: app/imageopscontextmanageritem.cpp:93
 msgctxt "@info:tooltip"
 msgid "Rotate image to the right"
 msgstr ""
 
-#: app/imageopscontextmanageritem.cpp:97
+#: app/imageopscontextmanageritem.cpp:98
 msgid "Mirror"
 msgstr "Muroe"
 
-#: app/imageopscontextmanageritem.cpp:101
+#: app/imageopscontextmanageritem.cpp:102
 msgid "Flip"
 msgstr "Sititchî"
 
-#: app/imageopscontextmanageritem.cpp:105 lib/resize/resizeimagedialog.cpp:51
+#: app/imageopscontextmanageritem.cpp:106 lib/resize/resizeimagedialog.cpp:51
 msgid "Resize"
 msgstr "Candjî di grandeu"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, CropWidget)
-#: app/imageopscontextmanageritem.cpp:110 lib/crop/cropimageoperation.cpp:71
+#: app/imageopscontextmanageritem.cpp:111 lib/crop/cropimageoperation.cpp:71
 #: lib/crop/cropwidget.cpp:191 lib/crop/cropwidget.ui:20
 msgid "Crop"
 msgstr "Côper dvins"
 
-#: app/imageopscontextmanageritem.cpp:115
+#: app/imageopscontextmanageritem.cpp:116
 msgid "Red Eye Reduction"
 msgstr "Ridujhaedje des rodjes ouys"
 
-#: app/imageopscontextmanageritem.cpp:142
+#: app/imageopscontextmanageritem.cpp:142 lib/document/documentjob.cpp:79
+msgctxt "@info"
+msgid "Gwenview cannot edit this kind of image."
+msgstr "Gwenview n' sai candjî les imådjes di c' djinre la."
+
+#: app/imageopscontextmanageritem.cpp:154
 msgid "Image Operations"
 msgstr "Operåcions so ls imådjes"
 
@@ -664,24 +664,24 @@ msgstr "Astampé"
 msgid "Row count:"
 msgstr "Contaedje des royes :"
 
-#: app/infocontextmanageritem.cpp:176
+#: app/infocontextmanageritem.cpp:181
 #, kde-format
 msgctxt ""
 "@item:intext %1 is a key, we append a colon to it. A value is displayed after"
 msgid "%1:"
 msgstr "%1:"
 
-#: app/infocontextmanageritem.cpp:253
+#: app/infocontextmanageritem.cpp:268
 msgctxt "@action show more image meta info"
 msgid "More..."
 msgstr "Pus..."
 
-#: app/infocontextmanageritem.cpp:264
+#: app/infocontextmanageritem.cpp:279
 msgctxt "@title:group"
 msgid "Meta Information"
 msgstr "Meta-informåcion"
 
-#: app/infocontextmanageritem.cpp:357
+#: app/infocontextmanageritem.cpp:372
 #, kde-format
 msgctxt "@label"
 msgid "%1 file selected"
@@ -689,7 +689,7 @@ msgid_plural "%1 files selected"
 msgstr[0] "%1 fitchî tchoezi"
 msgstr[1] "%1 fitchîs tchoezis"
 
-#: app/infocontextmanageritem.cpp:359
+#: app/infocontextmanageritem.cpp:374
 #, kde-format
 msgctxt "@label"
 msgid "%1 folder selected"
@@ -697,21 +697,21 @@ msgid_plural "%1 folders selected"
 msgstr[0] "%1 ridant tchoezi"
 msgstr[1] "%1 ridants tchoezis"
 
-#: app/infocontextmanageritem.cpp:362
+#: app/infocontextmanageritem.cpp:377
 #, kde-format
 msgid "%1 folder"
 msgid_plural "%1 folders"
 msgstr[0] "%1 ridant"
 msgstr[1] "%1 ridants"
 
-#: app/infocontextmanageritem.cpp:362
+#: app/infocontextmanageritem.cpp:377
 #, kde-format
 msgid "%1 file"
 msgid_plural "%1 files"
 msgstr[0] "%1 fitchî"
 msgstr[1] "%1 fitchîs"
 
-#: app/infocontextmanageritem.cpp:362
+#: app/infocontextmanageritem.cpp:377
 #, kde-format
 msgctxt "@label. The two parameters are strings like '2 folders' and '1 file'."
 msgid "%1 and %2 selected"
@@ -831,12 +831,12 @@ msgstr "Enonder e môde diaporama"
 msgid "A starting file or folder"
 msgstr "On fitchî oudonbén on ridant d' kimince"
 
-#: app/mainwindow.cpp:357
+#: app/mainwindow.cpp:366
 msgctxt "@action reload the currently viewed image"
 msgid "Reload"
 msgstr "Ritcherdjî"
 
-#: app/mainwindow.cpp:362
+#: app/mainwindow.cpp:371
 #, fuzzy
 #| msgctxt "@action Switch to file list"
 #| msgid "Browse"
@@ -844,12 +844,12 @@ msgctxt "@action:intoolbar Switch to file list"
 msgid "Browse"
 msgstr "Foyter"
 
-#: app/mainwindow.cpp:363
+#: app/mainwindow.cpp:372
 msgctxt "@info:tooltip"
 msgid "Browse folders for images"
 msgstr ""
 
-#: app/mainwindow.cpp:371
+#: app/mainwindow.cpp:380
 #, fuzzy
 #| msgctxt "@title actions category - means actions changing smth in interface"
 #| msgid "View"
@@ -857,45 +857,45 @@ msgctxt "@action:intoolbar Switch to image view"
 msgid "View"
 msgstr "Vuwe"
 
-#: app/mainwindow.cpp:372
+#: app/mainwindow.cpp:381
 #, fuzzy
 #| msgid "Loop on images"
 msgctxt "@info:tooltip"
 msgid "View selected images"
 msgstr "Tourner el blouke so ls imådjes"
 
-#: app/mainwindow.cpp:395
+#: app/mainwindow.cpp:404
 #, fuzzy
 #| msgid "Start in fullscreen mode"
 msgctxt "@action"
 msgid "Leave Fullscreen Mode"
 msgstr "Enonder e môde tote li waitroûle"
 
-#: app/mainwindow.cpp:400
+#: app/mainwindow.cpp:409
 msgctxt "@action Go to previous image"
 msgid "Previous"
 msgstr "Di dvant"
 
-#: app/mainwindow.cpp:401
+#: app/mainwindow.cpp:410
 #, fuzzy
 #| msgid "Go to Previous Image"
 msgctxt "@info:tooltip"
 msgid "Go to previous image"
 msgstr "Potchî a l' imådje di dvant"
 
-#: app/mainwindow.cpp:407
+#: app/mainwindow.cpp:416
 msgctxt "@action Go to next image"
 msgid "Next"
 msgstr "Shuvante"
 
-#: app/mainwindow.cpp:408
+#: app/mainwindow.cpp:417
 #, fuzzy
 #| msgid "Go to Next Image"
 msgctxt "@info:tooltip"
 msgid "Go to next image"
 msgstr "Potchî a l' imådje shuvante"
 
-#: app/mainwindow.cpp:413
+#: app/mainwindow.cpp:422
 #, fuzzy
 #| msgctxt ""
 #| "@action:button Zoom to fit, shown in status bar, keep it short please"
@@ -904,14 +904,14 @@ msgctxt "@action Go to first image"
 msgid "First"
 msgstr "Forrimpli"
 
-#: app/mainwindow.cpp:414
+#: app/mainwindow.cpp:423
 #, fuzzy
 #| msgid "Go to Next Image"
 msgctxt "@info:tooltip"
 msgid "Go to first image"
 msgstr "Potchî a l' imådje shuvante"
 
-#: app/mainwindow.cpp:419
+#: app/mainwindow.cpp:428
 #, fuzzy
 #| msgctxt "@action:inmenu"
 #| msgid "Date"
@@ -919,62 +919,62 @@ msgctxt "@action Go to last image"
 msgid "Last"
 msgstr "Date"
 
-#: app/mainwindow.cpp:420
+#: app/mainwindow.cpp:429
 #, fuzzy
 #| msgid "Go to Next Image"
 msgctxt "@info:tooltip"
 msgid "Go to last image"
 msgstr "Potchî a l' imådje shuvante"
 
-#: app/mainwindow.cpp:430
+#: app/mainwindow.cpp:439
 msgctxt "@action"
 msgid "Start Page"
 msgstr "Pådje d' enondaedje"
 
-#: app/mainwindow.cpp:431
+#: app/mainwindow.cpp:440
 msgctxt "@info:tooltip"
 msgid "Open the start page"
 msgstr ""
 
-#: app/mainwindow.cpp:438
+#: app/mainwindow.cpp:447
 msgctxt "@action"
 msgid "Sidebar"
 msgstr "Bår di costé"
 
-#: app/mainwindow.cpp:473
+#: app/mainwindow.cpp:482
 msgctxt "@title actions category - means actions changing smth in interface"
 msgid "Edit"
 msgstr "Candjî"
 
-#: app/mainwindow.cpp:478
+#: app/mainwindow.cpp:487
 msgid "Redo"
 msgstr "Rifé "
 
-#: app/mainwindow.cpp:485
+#: app/mainwindow.cpp:494
 msgid "Undo"
 msgstr "Disfé"
 
-#: app/mainwindow.cpp:530
+#: app/mainwindow.cpp:532
 msgid "Folders"
 msgstr "Ridants"
 
-#: app/mainwindow.cpp:536
+#: app/mainwindow.cpp:538
 msgid "Information"
 msgstr "Infôrmåcion"
 
-#: app/mainwindow.cpp:547
+#: app/mainwindow.cpp:549
 msgid "Operations"
 msgstr "Operåcions"
 
-#: app/mainwindow.cpp:622
+#: app/mainwindow.cpp:616
 msgid "Last document reached, continuing on first document."
 msgstr ""
 
-#: app/mainwindow.cpp:623
+#: app/mainwindow.cpp:617
 msgid "First document reached, continuing on last document."
 msgstr ""
 
-#: app/mainwindow.cpp:1214
+#: app/mainwindow.cpp:1107
 #, fuzzy
 #| msgctxt "@action"
 #| msgid "Sidebar"
@@ -982,7 +982,7 @@ msgctxt "@info:tooltip"
 msgid "Hide sidebar"
 msgstr "Bår di costé"
 
-#: app/mainwindow.cpp:1214
+#: app/mainwindow.cpp:1107
 #, fuzzy
 #| msgctxt "@action"
 #| msgid "Sidebar"
@@ -990,35 +990,35 @@ msgctxt "@info:tooltip"
 msgid "Show sidebar"
 msgstr "Bår di costé"
 
-#: app/mainwindow.cpp:1452
+#: app/mainwindow.cpp:1352
 msgctxt "@title:window"
 msgid "Open Image"
 msgstr "Drovi imådje"
 
-#: app/mainwindow.cpp:1509
+#: app/mainwindow.cpp:1408
 msgid "Stop Slideshow"
 msgstr "Arester diaporama"
 
-#: app/mainwindow.cpp:1512
+#: app/mainwindow.cpp:1411
 msgid "Start Slideshow"
 msgstr "Enonder diaporama"
 
-#: app/mainwindow.cpp:1526
+#: app/mainwindow.cpp:1425
 msgid "Save All Changes"
 msgstr "Schaper tos les candjmints"
 
-#: app/mainwindow.cpp:1527
+#: app/mainwindow.cpp:1426
 msgid "Discard Changes"
 msgstr "Abandner les candjmints"
 
-#: app/mainwindow.cpp:1528
+#: app/mainwindow.cpp:1427
 #, kde-format
 msgid "One image has been modified."
 msgid_plural "%1 images have been modified."
 msgstr[0] "Ene imådje a stî candjeye."
 msgstr[1] "%1 imådjes ont stî candjeyes."
 
-#: app/mainwindow.cpp:1530
+#: app/mainwindow.cpp:1429
 msgid "If you quit now, your changes will be lost."
 msgstr "Si vs cwitez sol côp, vos candjmints sront pierdous."
 
@@ -1188,20 +1188,20 @@ msgstr ""
 "Dji rgrete mins l' foytaedje pas etikete n' est nén disponibe. Soeyoz seur "
 "ki Nepomuk est astalé comifåt so vosse copiutrece."
 
-#: app/viewmainpage.cpp:307 app/viewmainpage.cpp:442
+#: app/viewmainpage.cpp:307 app/viewmainpage.cpp:443
 msgid "Synchronize"
 msgstr ""
 
-#: app/viewmainpage.cpp:433
+#: app/viewmainpage.cpp:434
 msgid "Thumbnail Bar"
 msgstr "Bår di prévoeyaedje"
 
-#: app/viewmainpage.cpp:720
+#: app/viewmainpage.cpp:721
 msgctxt "@action:button"
 msgid "Discard Changes and Reload"
 msgstr "Abandner les candjmints eyet ritcherdjî"
 
-#: app/viewmainpage.cpp:722
+#: app/viewmainpage.cpp:723
 msgctxt "@info"
 msgid ""
 "This image has been modified. Reloading it will discard all your changes."
@@ -1580,7 +1580,7 @@ msgstr ""
 "Dji n' a savou spotchî l' fitchî, waitîz k' vos avoz les bons droets dins "
 "<filename>%1</filename>."
 
-#: lib/documentview/documentview.cpp:176
+#: lib/documentview/documentview.cpp:178
 #, fuzzy
 #| msgctxt "Verb"
 #| msgid "Trash"
@@ -1588,14 +1588,14 @@ msgctxt "@info:tooltip"
 msgid "Trash"
 msgstr "Batch"
 
-#: lib/documentview/documentview.cpp:177
+#: lib/documentview/documentview.cpp:179
 #, fuzzy
 #| msgid "Delete"
 msgctxt "@action:button"
 msgid "Deselect"
 msgstr "Disfacer"
 
-#: lib/documentview/documentview.cpp:366
+#: lib/documentview/documentview.cpp:368
 msgid "Gwenview does not know how to display this kind of document"
 msgstr "Gwenview n' sai comint håyner les documints di c' djinre la."
 
