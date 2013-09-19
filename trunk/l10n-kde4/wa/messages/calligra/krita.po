@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-15 01:33+0000\n"
+"POT-Creation-Date: 2013-09-19 01:29+0000\n"
 "PO-Revision-Date: 2011-01-17 21:35+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -940,8 +940,8 @@ msgctxt "(qtundo-format)"
 msgid "Deselect"
 msgstr "Distchoezi"
 
-#: image/commands/kis_image_layer_add_command.cpp:27
-#: image/commands/kis_image_layer_add_command.cpp:35
+#: image/commands/kis_image_layer_add_command.cpp:32
+#: image/commands/kis_image_layer_add_command.cpp:48
 #, fuzzy
 #| msgid "Add Layer"
 msgctxt "(qtundo-format)"
@@ -1125,7 +1125,7 @@ msgstr "Eclawé"
 msgid "Last used"
 msgstr "Dierin eployî"
 
-#: image/kis_clone_layer.cpp:252
+#: image/kis_clone_layer.cpp:264
 msgid "Copy From"
 msgstr "Copyî di"
 
@@ -1718,6 +1718,147 @@ msgstr "Edjîstraedje"
 msgid "Macros"
 msgstr "Macros"
 
+#: plugins/extensions/clonesarray/clonesarray.cpp:38
+msgid "Clones &Array..."
+msgstr ""
+
+#. i18n: ectx: Menu (Layer)
+#: plugins/extensions/clonesarray/clonesarray.rc:5
+#: plugins/extensions/colorspaceconversion/colorspaceconversion.rc:7
+#: plugins/extensions/dropshadow/dropshadow.rc:4
+#: plugins/extensions/gmic/gmic.rc:5
+#: plugins/extensions/metadataeditor/metadataeditor.rc:4
+#: plugins/extensions/offsetimage/offsetimage.rc:10
+#: plugins/extensions/rotateimage/rotateimage.rc:17
+#: plugins/extensions/shearimage/shearimage.rc:7
+msgid "La&yer"
+msgstr "Coûtc&he"
+
+#: plugins/extensions/clonesarray/dlg_clonesarray.cpp:43
+msgid "Create Clones Array"
+msgstr ""
+
+#: plugins/extensions/clonesarray/dlg_clonesarray.cpp:224
+#, fuzzy, kde-format
+#| msgid "Copy From"
+msgid "+ Array of %1"
+msgstr "Copyî di"
+
+#: plugins/extensions/clonesarray/dlg_clonesarray.cpp:231
+#, fuzzy, kde-format
+#| msgid "Copy From"
+msgid "- Array of %1"
+msgstr "Copyî di"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, WdgRotateImage)
+#. i18n: ectx: property (windowTitle), widget (QWidget, WdgClonesArray)
+#. i18n: ectx: property (windowTitle), widget (QWidget, WdgOffsetImage)
+#: plugins/extensions/clonesarray/wdg_clonesarray.ui:14
+#: plugins/extensions/offsetimage/wdg_offsetimage.ui:14
+#: plugins/extensions/rotateimage/dlg_rotateimage.cc:31
+#: plugins/extensions/rotateimage/rotateimage.cc:108
+#: plugins/extensions/rotateimage/wdg_rotateimage.ui:16
+msgid "Rotate Image"
+msgstr "Tourner l' imådje"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: plugins/extensions/clonesarray/wdg_clonesarray.ui:28
+#, fuzzy
+#| msgid "Placement"
+msgid "- Elements"
+msgstr "Plaeçmint"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: plugins/extensions/clonesarray/wdg_clonesarray.ui:44
+#, fuzzy
+#| msgid "Placement"
+msgid "+ Elements"
+msgstr "Plaeçmint"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/extensions/clonesarray/wdg_clonesarray.ui:60
+#, fuzzy
+#| msgid "X offset:"
+msgid "X offset"
+msgstr "Displaeçmint X :"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: plugins/extensions/clonesarray/wdg_clonesarray.ui:76
+#, fuzzy
+#| msgid "Y offset:"
+msgid "Y offset"
+msgstr "Displaeçmint Y :"
+
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: plugins/extensions/clonesarray/wdg_clonesarray.ui:92
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:41
+#, fuzzy
+#| msgid "Distance: "
+msgid "Distance"
+msgstr "Distance: "
+
+#. i18n: ectx: property (title), widget (QGroupBox, grpAngle)
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#. i18n: ectx: property (label), widget (KIntNumInput, blurAngleSlider)
+#: plugins/extensions/clonesarray/wdg_clonesarray.ui:108
+#: plugins/extensions/rotateimage/wdg_rotateimage.ui:129
+#: plugins/filters/blur/wdg_motion_blur.ui:55
+msgid "Angle"
+msgstr "Inglêye"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: plugins/extensions/clonesarray/wdg_clonesarray.ui:118
+msgid "Columns:"
+msgstr ""
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, popupSize)
+#. i18n: ectx: property (suffix), widget (QSpinBox, lastUsedColorsWidth)
+#. i18n: ectx: property (suffix), widget (QSpinBox, lastUsedColorsHeight)
+#. i18n: ectx: property (suffix), widget (QSpinBox, commonColorsWidth)
+#. i18n: ectx: property (suffix), widget (QSpinBox, commonColorsHeight)
+#. i18n: ectx: property (suffix), widget (QSpinBox, columnXOffset)
+#. i18n: ectx: property (suffix), widget (QSpinBox, columnYOffset)
+#. i18n: ectx: property (suffix), widget (QSpinBox, rowXOffset)
+#. i18n: ectx: property (suffix), widget (QSpinBox, rowYOffset)
+#. i18n: ectx: property (suffix), widget (QDoubleSpinBox, columnDistance)
+#. i18n: ectx: property (suffix), widget (QDoubleSpinBox, rowDistance)
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, intX)
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, intY)
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, intWidth)
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, intHeight)
+#: plugins/extensions/clonesarray/wdg_clonesarray.ui:170
+#: plugins/extensions/clonesarray/wdg_clonesarray.ui:183
+#: plugins/extensions/clonesarray/wdg_clonesarray.ui:232
+#: plugins/extensions/clonesarray/wdg_clonesarray.ui:245
+#: plugins/extensions/clonesarray/wdg_clonesarray.ui:284
+#: plugins/extensions/clonesarray/wdg_clonesarray.ui:294
+#: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:107
+#: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:468
+#: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:481
+#: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:670
+#: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:683
+#: plugins/paintops/experiment/kis_experimentop_option.cpp:36
+#: plugins/paintops/libpaintop/sensors/SensorDistanceConfiguration.ui:73
+#: plugins/tools/tool_crop/wdg_tool_crop.ui:57
+#: plugins/tools/tool_crop/wdg_tool_crop.ui:83
+#: plugins/tools/tool_crop/wdg_tool_crop.ui:141
+#: plugins/tools/tool_crop/wdg_tool_crop.ui:164
+msgid "px"
+msgstr "px"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: plugins/extensions/clonesarray/wdg_clonesarray.ui:212
+msgid "Rows:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, columnPreference)
+#: plugins/extensions/clonesarray/wdg_clonesarray.ui:308
+#, fuzzy
+#| msgid "Preferences"
+msgid "Column Preference"
+msgstr "Preferinces"
+
 #: plugins/extensions/colorrange/colorrange.cc:49
 #, fuzzy
 #| msgid "&Color Range..."
@@ -1855,17 +1996,6 @@ msgstr "Kivierser coûtche do moumint a pårti di"
 #: plugins/extensions/colorspaceconversion/colorspaceconversion.cc:123
 msgid "Convert Layer Type"
 msgstr "Kivierser sôre di coûtche"
-
-#. i18n: ectx: Menu (Layer)
-#: plugins/extensions/colorspaceconversion/colorspaceconversion.rc:7
-#: plugins/extensions/dropshadow/dropshadow.rc:4
-#: plugins/extensions/gmic/gmic.rc:5
-#: plugins/extensions/metadataeditor/metadataeditor.rc:4
-#: plugins/extensions/offsetimage/offsetimage.rc:10
-#: plugins/extensions/rotateimage/rotateimage.rc:17
-#: plugins/extensions/shearimage/shearimage.rc:7
-msgid "La&yer"
-msgstr "Coûtc&he"
 
 #. i18n: ectx: property (title), widget (QGroupBox, grpImage)
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgImageSize)
@@ -2068,30 +2198,6 @@ msgstr "måy"
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:100
 msgid "zoom to size"
 msgstr "zoumer al grandeu"
-
-#. i18n: ectx: property (suffix), widget (QSpinBox, popupSize)
-#. i18n: ectx: property (suffix), widget (QSpinBox, lastUsedColorsWidth)
-#. i18n: ectx: property (suffix), widget (QSpinBox, lastUsedColorsHeight)
-#. i18n: ectx: property (suffix), widget (QSpinBox, commonColorsWidth)
-#. i18n: ectx: property (suffix), widget (QSpinBox, commonColorsHeight)
-#. i18n: ectx: property (text), widget (QLabel, label)
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, intX)
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, intY)
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, intWidth)
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, intHeight)
-#: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:107
-#: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:468
-#: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:481
-#: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:670
-#: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:683
-#: plugins/paintops/experiment/kis_experimentop_option.cpp:36
-#: plugins/paintops/libpaintop/sensors/SensorDistanceConfiguration.ui:73
-#: plugins/tools/tool_crop/wdg_tool_crop.ui:57
-#: plugins/tools/tool_crop/wdg_tool_crop.ui:83
-#: plugins/tools/tool_crop/wdg_tool_crop.ui:141
-#: plugins/tools/tool_crop/wdg_tool_crop.ui:164
-msgid "px"
-msgstr "px"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_5)
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:139
@@ -4381,15 +4487,6 @@ msgstr "&Taeyî coûtche..."
 msgid "Offset Layer"
 msgstr "Displaeçmint X:"
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, WdgRotateImage)
-#. i18n: ectx: property (windowTitle), widget (QWidget, WdgOffsetImage)
-#: plugins/extensions/offsetimage/wdg_offsetimage.ui:14
-#: plugins/extensions/rotateimage/dlg_rotateimage.cc:31
-#: plugins/extensions/rotateimage/rotateimage.cc:108
-#: plugins/extensions/rotateimage/wdg_rotateimage.ui:16
-msgid "Rotate Image"
-msgstr "Tourner l' imådje"
-
 #. i18n: ectx: property (text), widget (QLabel, xLabel)
 #: plugins/extensions/offsetimage/wdg_offsetimage.ui:31
 msgid "X:"
@@ -4489,13 +4586,6 @@ msgstr "Dins &l' sins des aweyes"
 #: plugins/extensions/rotateimage/wdg_rotateimage.ui:119
 msgid "Cou&nter-clockwise"
 msgstr "Dins l' sins co&ntraire des aweyes"
-
-#. i18n: ectx: property (title), widget (QGroupBox, grpAngle)
-#. i18n: ectx: property (label), widget (KIntNumInput, blurAngleSlider)
-#: plugins/extensions/rotateimage/wdg_rotateimage.ui:129
-#: plugins/filters/blur/wdg_motion_blur.ui:55
-msgid "Angle"
-msgstr "Inglêye"
 
 #. i18n: ectx: property (text), widget (QRadioButton, radio90)
 #: plugins/extensions/rotateimage/wdg_rotateimage.ui:135
@@ -7651,12 +7741,6 @@ msgstr ""
 #: plugins/paintops/libpaintop/kis_dynamic_sensor.h:38
 msgid "Fuzzy"
 msgstr "A l' avirance"
-
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:41
-#, fuzzy
-#| msgid "Distance: "
-msgid "Distance"
-msgstr "Distance: "
 
 #: plugins/paintops/libpaintop/kis_dynamic_sensor.h:42
 msgid "Time"
@@ -11391,6 +11475,22 @@ msgstr "Tourner l' imådje"
 msgid "Reset Rotation"
 msgstr "Tournaedje"
 
+#: ui/input/kis_select_layer_action.cpp:44
+#, fuzzy
+#| msgid "Scale Layer"
+msgid "Select Layer"
+msgstr "Mete al schåle coûtche"
+
+#: ui/input/kis_select_layer_action.cpp:45
+msgid "Selects a layer under cursor position"
+msgstr ""
+
+#: ui/input/kis_select_layer_action.cpp:48
+#, fuzzy
+#| msgid "Rotate Node"
+msgid "Toggle Select Layer Mode"
+msgstr "Fé tourner nuk"
+
 #: ui/input/kis_shortcut_configuration.cpp:238
 #, fuzzy
 #| msgid "Left"
@@ -14442,16 +14542,6 @@ msgstr "Espåce di coleurs"
 
 #~ msgid "R&atio:"
 #~ msgstr "R&apoirt:"
-
-#, fuzzy
-#~| msgid "X offset:"
-#~ msgid "X offset"
-#~ msgstr "Displaeçmint X :"
-
-#, fuzzy
-#~| msgid "Y offset:"
-#~ msgid "Y offset"
-#~ msgstr "Displaeçmint Y :"
 
 #, fuzzy
 #~| msgid "Shear"
