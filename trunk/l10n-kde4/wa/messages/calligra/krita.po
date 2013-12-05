@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-12-03 01:21+0000\n"
+"POT-Creation-Date: 2013-12-05 01:22+0000\n"
 "PO-Revision-Date: 2011-01-17 21:35+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -5718,7 +5718,7 @@ msgstr "Wache astampêye"
 msgid "HDR Layer"
 msgstr "Coûtche HDR"
 
-#: plugins/formats/exr/exr_export.cc:66
+#: plugins/formats/exr/exr_export.cc:72
 #, fuzzy
 msgid "OpenEXR Export Options"
 msgstr "Tchuzes del djeyometreye"
@@ -5739,60 +5739,36 @@ msgstr "Asplati l' &imådje"
 
 #: plugins/formats/jp2/jp2_converter.cc:345
 #: plugins/formats/jp2/jp2_converter.cc:356
-#: plugins/formats/tiff/kis_tiff_writer_visitor.cpp:66
+#: plugins/formats/tiff/kis_tiff_writer_visitor.cpp:67
 #, kde-format
 msgid "Cannot export images in %1.\n"
 msgstr "Dji n' sai ebaguer imådjes e %1.\n"
 
-#: plugins/formats/jp2/jp2_export.cc:74
+#: plugins/formats/jp2/jp2_export.cc:76
 #, fuzzy
 msgid "JPEG 2000 Export Options"
 msgstr "Tchuzes del djeyometreye"
 
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: ectx: property (text), widget (QLabel, label)
 #: plugins/formats/jp2/kis_wdg_options_jp2.ui:19
-msgid "File size:"
-msgstr "Grandeu do fitchî:"
-
-#. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: plugins/formats/jp2/kis_wdg_options_jp2.ui:34
-msgctxt "the file will be much compressed, thus small, but quality will be bad"
-msgid "Small"
-msgstr "Pitit"
-
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: plugins/formats/jp2/kis_wdg_options_jp2.ui:57
-msgctxt "the file will be good quality, but big"
-msgid "Big"
-msgstr "Grand"
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:29
+#, fuzzy
+#| msgid "Compress:"
+msgid "Compression"
+msgstr "Rastrinde:"
 
 #. i18n: ectx: property (toolTip), widget (QSlider, qualityLevel)
-#: plugins/formats/jp2/kis_wdg_options_jp2.ui:68
-#: plugins/formats/tiff/kis_wdg_options_tiff.ui:275
+#: plugins/formats/jp2/kis_wdg_options_jp2.ui:26
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:36
 msgid ""
-"These settings determine how much information is lost during compression"
+"<html><head/><body><p>These settings determine how much information is lost "
+"during compression. Low: small files, bad quality. High: big files, good "
+"quality.</p></body></html>"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: plugins/formats/jp2/kis_wdg_options_jp2.ui:101
-#: plugins/formats/tiff/kis_wdg_options_tiff.ui:260
-msgid "Quality:"
-msgstr "Cwålité:"
-
-#. i18n: ectx: property (text), widget (QLabel, textLabel4_2)
-#: plugins/formats/jp2/kis_wdg_options_jp2.ui:116
-msgctxt "the file will be much compressed, so the quality will be bad"
-msgid "Bad"
-msgstr "Mwaijhe"
-
-#. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#: plugins/formats/jp2/kis_wdg_options_jp2.ui:142
-msgctxt "the quality will be good but the file will not be much compressed"
-msgid "Good"
-msgstr "Boune"
-
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: plugins/formats/jp2/kis_wdg_options_jp2.ui:159
+#: plugins/formats/jp2/kis_wdg_options_jp2.ui:74
 msgid "Number of resolutions:"
 msgstr "Nombe di fintés :"
 
@@ -5804,7 +5780,7 @@ msgid ""
 "Will save as RGB."
 msgstr "Dji n' sai ebaguer imådjes e %1.\n"
 
-#: plugins/formats/jpeg/kis_jpeg_export.cc:75
+#: plugins/formats/jpeg/kis_jpeg_export.cc:81
 #, fuzzy
 msgid "JPEG Export Options"
 msgstr "Tchuzes del djeyometreye"
@@ -5813,21 +5789,6 @@ msgstr "Tchuzes del djeyometreye"
 #: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:21
 msgid "Basic"
 msgstr "Di båze"
-
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:29
-#, fuzzy
-#| msgid "Compress:"
-msgid "Compression"
-msgstr "Rastrinde:"
-
-#. i18n: ectx: property (toolTip), widget (QSlider, qualityLevel)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:36
-msgid ""
-"<html><head/><body><p>These settings determine how much information is lost "
-"during compression. Low: small files, bad quality. High: big files, good "
-"quality.</p></body></html>"
-msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, progressive)
 #: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:82
@@ -5933,13 +5894,13 @@ msgstr "Passetes:"
 msgid "Vector Layer"
 msgstr "Taeyî coûtche"
 
-#: plugins/formats/ora/ora_export.cc:97
+#: plugins/formats/ora/ora_export.cc:100
 msgid ""
 "This image contains vector, clone or generated layers..\n"
 "These layers will be saved as raster layers."
 msgstr ""
 
-#: plugins/formats/ora/ora_export.cc:98
+#: plugins/formats/ora/ora_export.cc:101
 #, fuzzy
 #| msgid "Warning!"
 msgid "Warning"
@@ -6018,13 +5979,13 @@ msgstr ""
 msgid "PNG Export Options"
 msgstr "Tchuzes del djeyometreye"
 
-#: plugins/formats/png/kis_png_export.cc:109
+#: plugins/formats/png/kis_png_export.cc:112
 #, fuzzy
 #| msgid "Cannot export images in %1.\n"
 msgid "Cannot export images in this colorspace or channel depth to PNG"
 msgstr "Dji n' sai ebaguer imådjes e %1.\n"
 
-#: plugins/formats/png/kis_png_export.cc:109
+#: plugins/formats/png/kis_png_export.cc:112
 msgid "Krita PNG Export"
 msgstr ""
 
@@ -6312,6 +6273,17 @@ msgstr "Wårder &canå alfa (weyoûte)"
 #: plugins/formats/tiff/kis_wdg_options_tiff.ui:254
 msgid "JPEG Compression Options"
 msgstr "Tchuzes do strindaedje JPEG"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#: plugins/formats/tiff/kis_wdg_options_tiff.ui:260
+msgid "Quality:"
+msgstr "Cwålité:"
+
+#. i18n: ectx: property (toolTip), widget (QSlider, qualityLevel)
+#: plugins/formats/tiff/kis_wdg_options_tiff.ui:275
+msgid ""
+"These settings determine how much information is lost during compression"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
 #: plugins/formats/tiff/kis_wdg_options_tiff.ui:308
@@ -12971,6 +12943,26 @@ msgstr "Espåce di coleurs"
 #| msgid "Colorspace"
 msgid "Workspace %1"
 msgstr "Espåce di coleurs"
+
+#~ msgid "File size:"
+#~ msgstr "Grandeu do fitchî:"
+
+#~ msgctxt ""
+#~ "the file will be much compressed, thus small, but quality will be bad"
+#~ msgid "Small"
+#~ msgstr "Pitit"
+
+#~ msgctxt "the file will be good quality, but big"
+#~ msgid "Big"
+#~ msgstr "Grand"
+
+#~ msgctxt "the file will be much compressed, so the quality will be bad"
+#~ msgid "Bad"
+#~ msgstr "Mwaijhe"
+
+#~ msgctxt "the quality will be good but the file will not be much compressed"
+#~ msgid "Good"
+#~ msgstr "Boune"
 
 #~ msgctxt ""
 #~ "Show a preview of the image after saving to assess the quality difference"
