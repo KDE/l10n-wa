@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-01-17 01:42+0000\n"
+"POT-Creation-Date: 2014-01-18 01:33+0000\n"
 "PO-Revision-Date: 2013-07-06 02:07+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -821,7 +821,7 @@ msgstr "Djivêye des messaedjes - Messaedjes Afwaire a fé"
 
 #. i18n: ectx: label, entry (FolderList), group (Geometry)
 #: configuredialog/configureappearancepage.cpp:140
-#: settings/kmail.kcfg.cmake:376
+#: settings/kmail.kcfg.cmake:382
 msgid "Folder List"
 msgstr "Djivêye des ridants"
 
@@ -1673,11 +1673,16 @@ msgstr "nou procsi"
 msgid "(Current system setting: %1)"
 msgstr "(Apontiaedje do sistinme do moumint: %1)"
 
-#: configuredialog/configurestorageservicewidget.cpp:34
+#: configuredialog/configurestorageservicewidget.cpp:35
+msgid "Offer to share for files larger than"
+msgstr ""
+
+#: configuredialog/configurestorageservicewidget.cpp:40
 #, fuzzy
-#| msgid "Save Attachment As"
-msgid "Use Storage Service for Attachments"
-msgstr "Schaper et rlomer l' ataetchmint"
+#| msgid "MB"
+msgctxt "mega bytes"
+msgid " MB"
+msgstr "Mo"
 
 #: dialog/addemailtoexistingcontactdialog.cpp:38
 #, fuzzy
@@ -5269,13 +5274,20 @@ msgstr ""
 msgid "Use storage service for big attachment"
 msgstr "Schaper et rlomer l' ataetchmint"
 
-#. i18n: ectx: label, entry (AutosaveInterval), group (Composer)
+#. i18n: ectx: label, entry (StorageServiceLimit), group (Composer)
 #: settings/kmail.kcfg.cmake:262
+#, fuzzy
+#| msgid "Save Attachment As"
+msgid "Use storage service when attachment is larger than this limit"
+msgstr "Schaper et rlomer l' ataetchmint"
+
+#. i18n: ectx: label, entry (AutosaveInterval), group (Composer)
+#: settings/kmail.kcfg.cmake:268
 msgid "Autosave interval:"
 msgstr "Schaper otomaticmint totes les :"
 
 #. i18n: ectx: whatsthis, entry (AutosaveInterval), group (Composer)
-#: settings/kmail.kcfg.cmake:263
+#: settings/kmail.kcfg.cmake:269
 msgid ""
 "A backup copy of the text in the composer window can be created regularly. "
 "The interval used to create the backups is set here. You can disable "
@@ -5283,111 +5295,111 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: label, entry (ShowSnippetManager), group (Composer)
-#: settings/kmail.kcfg.cmake:275
+#: settings/kmail.kcfg.cmake:281
 msgid "Show the Text Snippet Management and Insertion Panel in the composer."
 msgstr ""
 "Mostrer li manaedjmint di bokets di tecse eyet l' sicriftôr di stitchaedje e "
 "purnea po scrire."
 
 #. i18n: ectx: label, entry (CryptoShowEncryptionResult), group (Composer)
-#: settings/kmail.kcfg.cmake:281
+#: settings/kmail.kcfg.cmake:287
 msgid "Show signed/encrypted text after composing"
 msgstr "Mostrer tecse siné/ecripté après scrijhaedje"
 
 #. i18n: ectx: label, entry (CryptoStoreEncrypted), group (Composer)
-#: settings/kmail.kcfg.cmake:285
+#: settings/kmail.kcfg.cmake:291
 msgid "When check, sent messages will be stored in the encrypted form"
 msgstr ""
 "Si clitchî, les messaedjes evoyîs seront wårdés dzo ene cogne ecriptêye"
 
 #. i18n: ectx: label, entry (RecentUrls), group (Composer)
-#: settings/kmail.kcfg.cmake:289
+#: settings/kmail.kcfg.cmake:295
 msgid "A list of all the recently used URLs"
 msgstr "Ene djivêye des URL eployîs dierinnmint"
 
 #. i18n: ectx: label, entry (RecentEncodings), group (Composer)
-#: settings/kmail.kcfg.cmake:295
+#: settings/kmail.kcfg.cmake:301
 msgid "A list of all the recently used encodings"
 msgstr "Ene djivêye des ecôdaedjes eployîs dierinnmint"
 
 #. i18n: ectx: label, entry (FilterDialogSize), group (Geometry)
-#: settings/kmail.kcfg.cmake:314
+#: settings/kmail.kcfg.cmake:320
 msgid "The size of the filter dialog (for internal use only)"
 msgstr "Li grandeu do purnea del passete (po divintrin uzaedje seulmint)"
 
 #. i18n: ectx: label, entry (IdentityDialogSize), group (Geometry)
-#: settings/kmail.kcfg.cmake:318
+#: settings/kmail.kcfg.cmake:324
 msgid "The size of the identity dialog (for internal use only)"
 msgstr "Li grandeu do purnea d' idintité (po divintrin uzaedje seulmint)"
 
 #. i18n: ectx: label, entry (SearchWidgetWidth), group (Geometry)
-#: settings/kmail.kcfg.cmake:322
+#: settings/kmail.kcfg.cmake:328
 msgid "The width of the search window (for internal use only)"
 msgstr "Li lårdjeur do purnea di cweraedje (po divintrin uzaedje seulmint)"
 
 #. i18n: ectx: label, entry (SearchWidgetHeight), group (Geometry)
-#: settings/kmail.kcfg.cmake:326
+#: settings/kmail.kcfg.cmake:332
 msgid "The height of the search window (for internal use only)"
 msgstr "Li hôteur do purnea di cweraedje (po divintrin uzaedje seulmint)"
 
 #. i18n: ectx: label, entry (ConfigureDialogWidth), group (Geometry)
-#: settings/kmail.kcfg.cmake:330
+#: settings/kmail.kcfg.cmake:336
 msgid "The width of the Configure KMail dialog (for internal use only)"
 msgstr ""
 "Li lårdjeur do purnea d' Apontiaedje di KMail (po divintrin uzaedje seulmint)"
 
 #. i18n: ectx: label, entry (ConfigureDialogHeight), group (Geometry)
-#: settings/kmail.kcfg.cmake:334
+#: settings/kmail.kcfg.cmake:340
 msgid "The height of the Configure KMail dialog (for internal use only)"
 msgstr ""
 "Li hôteur do purnea d' Apontiaedje di KMail (po divintrin uzaedje seulmint)"
 
 #. i18n: ectx: label, entry (readerWindowMode), group (Geometry)
-#: settings/kmail.kcfg.cmake:360
+#: settings/kmail.kcfg.cmake:366
 msgid "Message Preview Pane"
 msgstr "Panea d' prévoeyaedje des messaedjes"
 
 #. i18n: ectx: label, entry (readerWindowMode), group (Geometry)
-#: settings/kmail.kcfg.cmake:363
+#: settings/kmail.kcfg.cmake:369
 msgid "Do not show a message preview pane"
 msgstr "Èn nén mostrer on panea d' prévoeyaedje des messaedjes"
 
 #. i18n: ectx: label, entry (readerWindowMode), group (Geometry)
-#: settings/kmail.kcfg.cmake:366
+#: settings/kmail.kcfg.cmake:372
 msgid "Show the message preview pane below the message list"
 msgstr ""
 "Mostrer l' panea d' prévoeyaedje des messaedjes pa dzo l' djivêye des "
 "messaedjes"
 
 #. i18n: ectx: label, entry (readerWindowMode), group (Geometry)
-#: settings/kmail.kcfg.cmake:369
+#: settings/kmail.kcfg.cmake:375
 msgid "Show the message preview pane next to the message list"
 msgstr ""
 "Mostrer l' panea d' prévoeyaedje des messaedjes a costé del djivêye des "
 "messaedjes"
 
 #. i18n: ectx: label, entry (FolderList), group (Geometry)
-#: settings/kmail.kcfg.cmake:379
+#: settings/kmail.kcfg.cmake:385
 msgid "Long folder list"
 msgstr "Longue djivêye des ridants"
 
 #. i18n: ectx: label, entry (FolderList), group (Geometry)
-#: settings/kmail.kcfg.cmake:382
+#: settings/kmail.kcfg.cmake:388
 msgid "Short folder list"
 msgstr "Coûte djivêye des ridants"
 
 #. i18n: ectx: label, entry (CloseAfterReplyOrForward), group (Reader)
-#: settings/kmail.kcfg.cmake:391
+#: settings/kmail.kcfg.cmake:397
 msgid "Close message window after replying or forwarding"
 msgstr "Clôre li fniesse do messaedje après aveur respondou ou ricassî"
 
 #. i18n: ectx: label, entry (SendMDNsWithEmptySender), group (MDN)
-#: settings/kmail.kcfg.cmake:399
+#: settings/kmail.kcfg.cmake:405
 msgid "Send Message Disposition Notifications with an empty sender."
 msgstr "Evoyî les Notifiaedje di lijhaedje avou on vude evoyeu."
 
 #. i18n: ectx: whatsthis, entry (SendMDNsWithEmptySender), group (MDN)
-#: settings/kmail.kcfg.cmake:400
+#: settings/kmail.kcfg.cmake:406
 msgid ""
 "Send Message Disposition Notifications with an empty sender string. Some "
 "servers might be configure to reject such messages, so if you are "
@@ -5395,43 +5407,43 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: label, entry (TemplateNewMessage), group (GlobalTemplates)
-#: settings/kmail.kcfg.cmake:406
+#: settings/kmail.kcfg.cmake:412
 msgid "Message template for new message"
 msgstr "Modele di messaedje po novea messaedje"
 
 #. i18n: ectx: label, entry (TemplateReply), group (GlobalTemplates)
-#: settings/kmail.kcfg.cmake:411
+#: settings/kmail.kcfg.cmake:417
 msgid "Message template for reply"
 msgstr "Modele di messaedje po response"
 
 #. i18n: ectx: label, entry (TemplateReplyAll), group (GlobalTemplates)
-#: settings/kmail.kcfg.cmake:416
+#: settings/kmail.kcfg.cmake:422
 msgid "Message template for reply to all"
 msgstr "Modele di messaedje po response a tertos"
 
 #. i18n: ectx: label, entry (TemplateForward), group (GlobalTemplates)
-#: settings/kmail.kcfg.cmake:421
+#: settings/kmail.kcfg.cmake:427
 msgid "Message template for forward"
 msgstr "Modele di messaedje po rcassaedje"
 
 #. i18n: ectx: label, entry (QuoteString), group (GlobalTemplates)
-#: settings/kmail.kcfg.cmake:426
+#: settings/kmail.kcfg.cmake:432
 msgid "Quote characters"
 msgstr "Wiyemets"
 
 #. i18n: ectx: label, entry (UpdateLevel), group (Startup)
-#: settings/kmail.kcfg.cmake:441
+#: settings/kmail.kcfg.cmake:447
 msgid "Specifies the number of updates to perform (for internal use only)"
 msgstr ""
 "Specifeye li nombe di metaedjes a djoû a fé (po divintrin uzaedje seulmint)"
 
 #. i18n: ectx: label, entry (ToolTipDisplayPolicy), group (MainFolderView)
-#: settings/kmail.kcfg.cmake:448
+#: settings/kmail.kcfg.cmake:454
 msgid "Specifies the policy used when displaying policy"
 msgstr "Specifeye li politike eployeye å håynaedje del politike"
 
 #. i18n: ectx: label, entry (CollectionWidth), group (SearchDialog)
-#: settings/kmail.kcfg.cmake:456
+#: settings/kmail.kcfg.cmake:462
 msgid ""
 "Specifies the width of the collection field in the Search Window dialog (for "
 "internal use only)"
@@ -5440,7 +5452,7 @@ msgstr ""
 "divintrin uzaedje seulmint)"
 
 #. i18n: ectx: label, entry (SubjectWidth), group (SearchDialog)
-#: settings/kmail.kcfg.cmake:460
+#: settings/kmail.kcfg.cmake:466
 msgid ""
 "Specifies the width of the subject field in the Search Window dialog (for "
 "internal use only)"
@@ -5449,7 +5461,7 @@ msgstr ""
 "divintrin uzaedje seulmint)"
 
 #. i18n: ectx: label, entry (SenderWidth), group (SearchDialog)
-#: settings/kmail.kcfg.cmake:464
+#: settings/kmail.kcfg.cmake:470
 msgid ""
 "Specifies the width of the sender field in the Search Window dialog (for "
 "internal use only)"
@@ -5458,7 +5470,7 @@ msgstr ""
 "divintrin uzaedje seulmint)"
 
 #. i18n: ectx: label, entry (ReceiverWidth), group (SearchDialog)
-#: settings/kmail.kcfg.cmake:468
+#: settings/kmail.kcfg.cmake:474
 msgid ""
 "Specifies the width of the receiver field in the Search Window dialog (for "
 "internal use only)"
@@ -5467,7 +5479,7 @@ msgstr ""
 "divintrin uzaedje seulmint)"
 
 #. i18n: ectx: label, entry (DateWidth), group (SearchDialog)
-#: settings/kmail.kcfg.cmake:472
+#: settings/kmail.kcfg.cmake:478
 msgid ""
 "Specifies the width of the date field in the Search Window dialog (for "
 "internal use only)"
@@ -5476,7 +5488,7 @@ msgstr ""
 "uzaedje seulmint)"
 
 #. i18n: ectx: label, entry (FolderWidth), group (SearchDialog)
-#: settings/kmail.kcfg.cmake:476
+#: settings/kmail.kcfg.cmake:482
 msgid ""
 "Specifies the width of the folder field in the Search Window dialog (for "
 "internal use only)"
@@ -6637,6 +6649,11 @@ msgid "Out of office reply active on server"
 msgid_plural "Out of office reply active on servers"
 msgstr[0] "Response foû do buro e-n alaedje"
 msgstr[1] "Response foû do buro e-n alaedje"
+
+#, fuzzy
+#~| msgid "Save Attachment As"
+#~ msgid "Use Storage Service for Attachments"
+#~ msgstr "Schaper et rlomer l' ataetchmint"
 
 #, fuzzy
 #~| msgid "Send Later"
@@ -10390,9 +10407,6 @@ msgstr[1] "Response foû do buro e-n alaedje"
 
 #~ msgid "KB"
 #~ msgstr "Ko"
-
-#~ msgid "MB"
-#~ msgstr "Mo"
 
 #~ msgid "GB"
 #~ msgstr "Go"
