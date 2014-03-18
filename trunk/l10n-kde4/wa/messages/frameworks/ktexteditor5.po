@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: katepart4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-03-16 01:41+0000\n"
+"POT-Creation-Date: 2014-03-18 01:35+0000\n"
 "PO-Revision-Date: 2011-07-06 18:12+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -21,12 +21,12 @@ msgstr ""
 "X-Generator: Lokalize 1.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: completion/katecompletionconfig.cpp:41
+#: completion/katecompletionconfig.cpp:42
 msgid "Code Completion Configuration"
 msgstr "Apontiaedje do completaedje do côde"
 
-#: completion/katecompletionconfig.cpp:115
-#: completion/katecompletionconfig.cpp:144
+#: completion/katecompletionconfig.cpp:116
+#: completion/katecompletionconfig.cpp:145
 msgid "Always"
 msgstr "Tofer"
 
@@ -80,7 +80,7 @@ msgstr "Poirtêye"
 
 #. i18n: ectx: property (text), widget (QTreeWidget, treeWidget)
 #: completion/katecompletionmodel.cpp:1334
-#: dialogs/commandmenuconfigwidget.ui:22 dialogs/katedialogs.cpp:971
+#: dialogs/commandmenuconfigwidget.ui:22 dialogs/katedialogs.cpp:1048
 msgid "Name"
 msgstr "No"
 
@@ -258,7 +258,7 @@ msgid "Main Toolbar"
 msgstr "Mwaisse bår ås usteyes"
 
 #. i18n: ectx: property (title), widget (QGroupBox, gbBorders)
-#: dialogs/bordersappearanceconfigwidget.ui:9 dialogs/katedialogs.cpp:578
+#: dialogs/bordersappearanceconfigwidget.ui:9 dialogs/katedialogs.cpp:624
 msgid "Borders"
 msgstr "Boirdeures"
 
@@ -364,7 +364,7 @@ msgid "Scrollbars visibility:"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbShowScrollbars)
-#: dialogs/bordersappearanceconfigwidget.ui:168 dialogs/katedialogs.cpp:582
+#: dialogs/bordersappearanceconfigwidget.ui:168 dialogs/katedialogs.cpp:628
 msgid "Always On"
 msgstr "Tofer eclitchî"
 
@@ -500,8 +500,8 @@ msgstr "&Categoreye:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, gbGeneral)
 #. i18n: ectx: property (title), widget (QGroupBox, gbViInputMode)
-#: dialogs/completionconfigtab.ui:12 dialogs/katedialogs.cpp:497
-#: dialogs/katedialogs.cpp:574 dialogs/katedialogs.cpp:745
+#: dialogs/completionconfigtab.ui:12 dialogs/katedialogs.cpp:507
+#: dialogs/katedialogs.cpp:620 dialogs/katedialogs.cpp:807
 #: vimode/viinputmodeconfigwidget.ui:29
 msgid "General"
 msgstr "Djenerå"
@@ -1056,7 +1056,26 @@ msgctxt "suffix for spinbox >1"
 msgid " characters"
 msgstr " caractere"
 
-#: dialogs/katedialogs.cpp:476
+#: dialogs/katedialogs.cpp:231
+msgid "Indentation"
+msgstr "Ritrait"
+
+#: dialogs/katedialogs.cpp:301
+msgid "Auto Completion"
+msgstr "Oto-completaedje"
+
+#: dialogs/katedialogs.cpp:365
+msgid "Spellcheck"
+msgstr "Waitî l' ôrtografeye"
+
+#: dialogs/katedialogs.cpp:441
+#, fuzzy
+#| msgctxt "Language Section"
+#| msgid "Configuration"
+msgid "Text Navigation"
+msgstr "Fitchîs d' apontiaedje"
+
+#: dialogs/katedialogs.cpp:500
 #, fuzzy
 #| msgid " character"
 #| msgid_plural " characters"
@@ -1064,160 +1083,153 @@ msgctxt "suffix for spinbox >1 wrap words at (value is at 20 or larger)"
 msgid " characters"
 msgstr " caractere"
 
-#: dialogs/katedialogs.cpp:498
-#, fuzzy
-#| msgctxt "Language Section"
-#| msgid "Configuration"
-msgid "Text Navigation"
-msgstr "Fitchîs d' apontiaedje"
+#: dialogs/katedialogs.cpp:592 script/data/commands/utils.js:330
+msgid "Editing"
+msgstr ""
 
-#: dialogs/katedialogs.cpp:499
-msgid "Indentation"
-msgstr "Ritrait"
+#: dialogs/katedialogs.cpp:597
+msgid "Editing Options"
+msgstr ""
 
-#: dialogs/katedialogs.cpp:500
-msgid "Auto Completion"
-msgstr "Oto-completaedje"
-
-#: dialogs/katedialogs.cpp:501 utils/kateglobal.cpp:103
-msgid "Vi Input Mode"
-msgstr "Môde d' intrêye Vi"
-
-#: dialogs/katedialogs.cpp:502
-msgid "Spellcheck"
-msgstr "Waitî l' ôrtografeye"
-
-#: dialogs/katedialogs.cpp:580
+#: dialogs/katedialogs.cpp:626
 msgid "Off"
 msgstr "Dismetou"
 
-#: dialogs/katedialogs.cpp:581
+#: dialogs/katedialogs.cpp:627
 msgid "Follow Line Numbers"
 msgstr "Shure les limeros des royes"
 
+#: dialogs/katedialogs.cpp:737 dialogs/katedialogs.cpp:742
+msgid "Appearance"
+msgstr "Rivnance"
+
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: dialogs/katedialogs.cpp:746 dialogs/textareaappearanceconfigwidget.ui:102
+#: dialogs/katedialogs.cpp:808 dialogs/textareaappearanceconfigwidget.ui:102
 msgid "Advanced"
 msgstr "Sipepieus"
 
-#: dialogs/katedialogs.cpp:747
-msgid "Modes && Filetypes"
-msgstr "Môdes et sôres di fitchîs"
-
-#: dialogs/katedialogs.cpp:801
+#: dialogs/katedialogs.cpp:863
 msgid ""
 "You did not provide a backup suffix or prefix. Using default suffix: '~'"
 msgstr ""
 "Vos n' avoz nén dné d' cawete ou d' betchete po les copeyes di såvrité. Dji "
 "m' sievrè del cawete tchoezeye por vos : « ~ »"
 
-#: dialogs/katedialogs.cpp:802
+#: dialogs/katedialogs.cpp:864
 msgid "No Backup Suffix or Prefix"
 msgstr "Pont d' cawete ou d' betchete po les copeyes di såvrité"
 
-#: dialogs/katedialogs.cpp:813
+#: dialogs/katedialogs.cpp:875
 msgid ""
 "Selected directory for swap file storage does not exist. Do you want to "
 "create it?"
 msgstr ""
 
-#: dialogs/katedialogs.cpp:814
+#: dialogs/katedialogs.cpp:876
 msgid "Missing Swap File Directory"
 msgstr ""
 
-#: dialogs/katedialogs.cpp:871
+#: dialogs/katedialogs.cpp:933
 msgid "KDE Default"
 msgstr "Prémetous KDE"
 
-#: dialogs/katedialogs.cpp:959
+#: dialogs/katedialogs.cpp:1017
+msgid "Open/Save"
+msgstr "Drovi/Schaper"
+
+#: dialogs/katedialogs.cpp:1022
+msgid "File Opening & Saving"
+msgstr ""
+
+#: dialogs/katedialogs.cpp:1036
 msgid "Highlight Download"
 msgstr "Mete èn evidince l' aberwetaedje"
 
-#: dialogs/katedialogs.cpp:966
+#: dialogs/katedialogs.cpp:1043
 msgid "Select the syntax highlighting files you want to update:"
 msgstr ""
 
-#: dialogs/katedialogs.cpp:971
+#: dialogs/katedialogs.cpp:1048
 msgid "Installed"
 msgstr "Astalé(s)"
 
-#: dialogs/katedialogs.cpp:971
+#: dialogs/katedialogs.cpp:1048
 msgid "Latest"
 msgstr "Dierin"
 
-#: dialogs/katedialogs.cpp:978
+#: dialogs/katedialogs.cpp:1055
 msgid "<b>Note:</b> New versions are selected automatically."
 msgstr ""
 
-#: dialogs/katedialogs.cpp:985
+#: dialogs/katedialogs.cpp:1062
 msgid "&Install"
 msgstr "&Astaler"
 
-#: dialogs/katedialogs.cpp:1028
+#: dialogs/katedialogs.cpp:1105
 msgid ""
 "The list of highlightings could not be found on / retrieved from the server"
 msgstr ""
 
-#: dialogs/katedialogs.cpp:1136
+#: dialogs/katedialogs.cpp:1213
 msgid "&Go to line:"
 msgstr "&Potchî al roye"
 
-#: dialogs/katedialogs.cpp:1142
+#: dialogs/katedialogs.cpp:1219
 msgid "Go"
 msgstr "Potchî"
 
-#: dialogs/katedialogs.cpp:1204
+#: dialogs/katedialogs.cpp:1281
 msgid "Dictionary:"
 msgstr "Motî :"
 
-#: dialogs/katedialogs.cpp:1252
+#: dialogs/katedialogs.cpp:1329
 msgid "File Was Deleted on Disk"
 msgstr "Li fitchî a stî disfacé sol plake"
 
-#: dialogs/katedialogs.cpp:1253
+#: dialogs/katedialogs.cpp:1330
 msgid "&Save File As..."
 msgstr "Schaper et r&lomer..."
 
-#: dialogs/katedialogs.cpp:1255
+#: dialogs/katedialogs.cpp:1332
 msgid "Lets you select a location and save the file again."
 msgstr ""
 
-#: dialogs/katedialogs.cpp:1257
+#: dialogs/katedialogs.cpp:1334
 msgid "File Changed on Disk"
 msgstr "Li fitchî a candjî sol plake"
 
-#: dialogs/katedialogs.cpp:1258 document/katedocument.cpp:3939
+#: dialogs/katedialogs.cpp:1335 document/katedocument.cpp:3939
 msgid "&Reload File"
 msgstr "&Ritcherdjî l' fitchî"
 
-#: dialogs/katedialogs.cpp:1260
+#: dialogs/katedialogs.cpp:1337
 msgid ""
 "Reload the file from disk. If you have unsaved changes, they will be lost."
 msgstr ""
 
-#: dialogs/katedialogs.cpp:1274 document/katedocument.cpp:3937
+#: dialogs/katedialogs.cpp:1351 document/katedocument.cpp:3937
 msgid "What do you want to do?"
 msgstr "Cwè voloz vs fé?"
 
-#: dialogs/katedialogs.cpp:1285 document/katedocument.cpp:3940
+#: dialogs/katedialogs.cpp:1362 document/katedocument.cpp:3940
 msgid "&Ignore Changes"
 msgstr ""
 
-#: dialogs/katedialogs.cpp:1286
+#: dialogs/katedialogs.cpp:1363
 msgid "Ignore the changes. You will not be prompted again."
 msgstr ""
 
-#: dialogs/katedialogs.cpp:1292
+#: dialogs/katedialogs.cpp:1369
 msgid ""
 "Do nothing. Next time you focus the file, or try to save it or close it, you "
 "will be prompted again."
 msgstr ""
 
-#: dialogs/katedialogs.cpp:1301
+#: dialogs/katedialogs.cpp:1378
 msgid "Overwrite the disk file with the editor content."
 msgstr ""
 
-#: dialogs/katedialogs.cpp:1375 swapfile/kateswapdiffcreator.cpp:137
+#: dialogs/katedialogs.cpp:1452 swapfile/kateswapdiffcreator.cpp:137
 msgid ""
 "The diff command failed. Please make sure that diff(1) is installed and in "
 "your PATH."
@@ -1225,33 +1237,33 @@ msgstr ""
 "Li cmande diff a fwait berwete. Verifyîz ki diff(1) est astalé et est dins "
 "vosse PATH."
 
-#: dialogs/katedialogs.cpp:1377 swapfile/kateswapdiffcreator.cpp:139
+#: dialogs/katedialogs.cpp:1454 swapfile/kateswapdiffcreator.cpp:139
 msgid "Error Creating Diff"
 msgstr "Aroke en ahivant Diff"
 
-#: dialogs/katedialogs.cpp:1386 swapfile/kateswapdiffcreator.cpp:147
+#: dialogs/katedialogs.cpp:1463 swapfile/kateswapdiffcreator.cpp:147
 msgid "The files are identical."
 msgstr ""
 
-#: dialogs/katedialogs.cpp:1387 dialogs/katedialogs.cpp:1391
+#: dialogs/katedialogs.cpp:1464 dialogs/katedialogs.cpp:1468
 #: swapfile/kateswapdiffcreator.cpp:148
 msgid "Diff Output"
 msgstr "Rexhowe di Diff"
 
-#: dialogs/katedialogs.cpp:1390
+#: dialogs/katedialogs.cpp:1467
 #, fuzzy
 #| msgid "Besides white space changes, the files are identical."
 msgid "Ignoring amount of white space changed, the files are identical."
 msgstr "A pårt des candjmints dins ls espåces, les fitchîs sont les minmes."
 
-#: dialogs/katedialogs.cpp:1415
+#: dialogs/katedialogs.cpp:1492
 msgid ""
 "Ignoring means that you will not be warned again (unless the disk file "
 "changes once more): if you save the document, you will overwrite the file on "
 "disk; if you do not save then the disk file (if present) is what you have."
 msgstr ""
 
-#: dialogs/katedialogs.cpp:1419
+#: dialogs/katedialogs.cpp:1496
 msgid "You Are on Your Own"
 msgstr "Vos estoz mierseu"
 
@@ -1336,7 +1348,7 @@ msgid "Text selection mode:"
 msgstr "&Seccion:"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, cbTextSelectionMode)
-#: dialogs/navigationconfigwidget.ui:103
+#: dialogs/navigationconfigwidget.ui:103 view/kateview.cpp:1170
 #, fuzzy
 #| msgid "Normal"
 msgid "Normal"
@@ -2012,6 +2024,10 @@ msgstr ""
 #: mode/katemodeconfigpage.cpp:290
 msgid "Select Mime Types"
 msgstr "Tchoezixhoz les sôres MIME"
+
+#: mode/katemodeconfigpage.cpp:307
+msgid "Modes && Filetypes"
+msgstr "Môdes et sôres di fitchîs"
 
 #: printing/printconfigwidgets.cpp:49
 msgid "Te&xt Settings"
@@ -2727,6 +2743,15 @@ msgid ""
 "</p>"
 msgstr ""
 
+#: schema/kateschemaconfig.cpp:1376
+#, fuzzy
+msgid "Fonts & Colors"
+msgstr "Coleurs"
+
+#: schema/kateschemaconfig.cpp:1381
+msgid "Font & Color Schemas"
+msgstr ""
+
 #: schema/katestyletreewidget.cpp:137
 #, fuzzy
 #| msgid "Context"
@@ -3051,10 +3076,6 @@ msgstr ""
 
 #: script/data/commands/quickcoding.js:32
 msgid "Expand Quick Coding Abbreviation"
-msgstr ""
-
-#: script/data/commands/utils.js:330 utils/kateglobal.cpp:373
-msgid "Editing"
 msgstr ""
 
 #: script/data/commands/utils.js:333
@@ -6222,6 +6243,10 @@ msgstr "Joseph Wenninger"
 msgid "Erlend Hamberg"
 msgstr ""
 
+#: utils/kateglobal.cpp:103 vimode/kateviinputmodeconfigtab.cpp:235
+msgid "Vi Input Mode"
+msgstr "Môde d' intrêye Vi"
+
 #: utils/kateglobal.cpp:104
 msgid "Bernhard Beschow"
 msgstr ""
@@ -6498,34 +6523,9 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "jean.cayron@gmail.com,laurent.hendschel@skynet.be,pablo@walon.org"
 
-#: utils/kateglobal.cpp:293
+#: utils/kateglobal.cpp:252
 msgid "Configure"
 msgstr "Apontyî"
-
-#: utils/kateglobal.cpp:367 utils/kateglobal.cpp:389
-msgid "Appearance"
-msgstr "Rivnance"
-
-#: utils/kateglobal.cpp:370
-#, fuzzy
-msgid "Fonts & Colors"
-msgstr "Coleurs"
-
-#: utils/kateglobal.cpp:376
-msgid "Open/Save"
-msgstr "Drovi/Schaper"
-
-#: utils/kateglobal.cpp:392
-msgid "Font & Color Schemas"
-msgstr ""
-
-#: utils/kateglobal.cpp:395
-msgid "Editing Options"
-msgstr ""
-
-#: utils/kateglobal.cpp:398
-msgid "File Opening & Saving"
-msgstr ""
 
 #: utils/katesedcmd.cpp:273
 #, fuzzy, kde-format
@@ -7448,228 +7448,232 @@ msgid ""
 "information into a HTML document."
 msgstr ""
 
-#: view/kateview.cpp:717
+#: view/kateview.cpp:714
 msgid "Move Word Left"
 msgstr "Potchî å mot d' hintche"
 
-#: view/kateview.cpp:723
+#: view/kateview.cpp:720
 msgid "Select Character Left"
 msgstr "Tchoezi l' caractere al hintche"
 
-#: view/kateview.cpp:729
+#: view/kateview.cpp:726
 msgid "Select Word Left"
 msgstr "Tchoezi l' mot al hintche"
 
-#: view/kateview.cpp:735
+#: view/kateview.cpp:732
 msgid "Move Word Right"
 msgstr "Potchî å mot d' droete"
 
-#: view/kateview.cpp:741
+#: view/kateview.cpp:738
 msgid "Select Character Right"
 msgstr "Tchoezi l' caractere al droete"
 
-#: view/kateview.cpp:747
+#: view/kateview.cpp:744
 msgid "Select Word Right"
 msgstr "Tchoezi l' mot al droete"
 
-#: view/kateview.cpp:753
+#: view/kateview.cpp:750
 msgid "Move to Beginning of Line"
 msgstr "Potchî å cmince del roye"
 
-#: view/kateview.cpp:759
+#: view/kateview.cpp:756
 msgid "Move to Beginning of Document"
 msgstr "Potchî å cmince do documint"
 
-#: view/kateview.cpp:765
+#: view/kateview.cpp:762
 msgid "Select to Beginning of Line"
 msgstr "Tchoezi disk' å cmince del roye"
 
-#: view/kateview.cpp:771
+#: view/kateview.cpp:768
 msgid "Select to Beginning of Document"
 msgstr "Tchoezi disk' å cmince do documint"
 
-#: view/kateview.cpp:777
+#: view/kateview.cpp:774
 msgid "Move to End of Line"
 msgstr "Potchî al fén del roye"
 
-#: view/kateview.cpp:783
+#: view/kateview.cpp:780
 msgid "Move to End of Document"
 msgstr "Potchî al fén do documint"
 
-#: view/kateview.cpp:789
+#: view/kateview.cpp:786
 msgid "Select to End of Line"
 msgstr "Tchoezi disk' al fén del roye"
 
-#: view/kateview.cpp:795
+#: view/kateview.cpp:792
 msgid "Select to End of Document"
 msgstr "Tchoezi disk' al fén do documint"
 
-#: view/kateview.cpp:801
+#: view/kateview.cpp:798
 msgid "Select to Previous Line"
 msgstr "Tchoezi disk' al roye di dvant"
 
-#: view/kateview.cpp:807
+#: view/kateview.cpp:804
 msgid "Scroll Line Up"
 msgstr ""
 
-#: view/kateview.cpp:813
+#: view/kateview.cpp:810
 msgid "Move to Next Line"
 msgstr "Potchî al roye shuvante"
 
-#: view/kateview.cpp:819
+#: view/kateview.cpp:816
 msgid "Move to Previous Line"
 msgstr "Potchî al roye di dvant"
 
-#: view/kateview.cpp:825
+#: view/kateview.cpp:822
 #, fuzzy
 #| msgid "Move Word Right"
 msgid "Move Cursor Right"
 msgstr "Potchî å mot d' droete"
 
-#: view/kateview.cpp:831
+#: view/kateview.cpp:828
 #, fuzzy
 #| msgid "Move Word Left"
 msgid "Move Cursor Left"
 msgstr "Potchî å mot d' hintche"
 
-#: view/kateview.cpp:837
+#: view/kateview.cpp:834
 msgid "Select to Next Line"
 msgstr "Tchoezi disk' al roye shuvante"
 
-#: view/kateview.cpp:843
+#: view/kateview.cpp:840
 msgid "Scroll Line Down"
 msgstr ""
 
-#: view/kateview.cpp:849
+#: view/kateview.cpp:846
 msgid "Scroll Page Up"
 msgstr ""
 
-#: view/kateview.cpp:855
+#: view/kateview.cpp:852
 msgid "Select Page Up"
 msgstr ""
 
-#: view/kateview.cpp:861
+#: view/kateview.cpp:858
 msgid "Move to Top of View"
 msgstr ""
 
-#: view/kateview.cpp:867
+#: view/kateview.cpp:864
 msgid "Select to Top of View"
 msgstr ""
 
-#: view/kateview.cpp:873
+#: view/kateview.cpp:870
 msgid "Scroll Page Down"
 msgstr ""
 
-#: view/kateview.cpp:879
+#: view/kateview.cpp:876
 msgid "Select Page Down"
 msgstr ""
 
-#: view/kateview.cpp:885
+#: view/kateview.cpp:882
 msgid "Move to Bottom of View"
 msgstr ""
 
-#: view/kateview.cpp:891
+#: view/kateview.cpp:888
 msgid "Select to Bottom of View"
 msgstr ""
 
-#: view/kateview.cpp:897
+#: view/kateview.cpp:894
 msgid "Move to Matching Bracket"
 msgstr ""
 
-#: view/kateview.cpp:903
+#: view/kateview.cpp:900
 msgid "Select to Matching Bracket"
 msgstr "Tchoezi disk' al riwaitante åtchete"
 
-#: view/kateview.cpp:911
+#: view/kateview.cpp:908
 msgid "Transpose Characters"
 msgstr ""
 
-#: view/kateview.cpp:917
+#: view/kateview.cpp:914
 msgid "Delete Line"
 msgstr "Disfacer l' roye"
 
-#: view/kateview.cpp:923
+#: view/kateview.cpp:920
 msgid "Delete Word Left"
 msgstr "Disfacer l' mot al hintche"
 
-#: view/kateview.cpp:929
+#: view/kateview.cpp:926
 msgid "Delete Word Right"
 msgstr "Disfacer l' mot al droete"
 
-#: view/kateview.cpp:935
+#: view/kateview.cpp:932
 msgid "Delete Next Character"
 msgstr "Disfacer l' caractere shuvant"
 
-#: view/kateview.cpp:941
+#: view/kateview.cpp:938
 msgid "Backspace"
 msgstr "Backspace (Erî)"
 
-#: view/kateview.cpp:950
+#: view/kateview.cpp:947
 msgid "Insert Tab"
 msgstr ""
 
-#: view/kateview.cpp:955
+#: view/kateview.cpp:952
 msgid "Insert Smart Newline"
 msgstr ""
 
-#: view/kateview.cpp:956
+#: view/kateview.cpp:953
 msgid ""
 "Insert newline including leading characters of the current line which are "
 "not letters or numbers."
 msgstr ""
 
-#: view/kateview.cpp:966
+#: view/kateview.cpp:963
 msgid "&Indent"
 msgstr ""
 
-#: view/kateview.cpp:967
+#: view/kateview.cpp:964
 msgid ""
 "Use this to indent a selected block of text.<br /><br />You can configure "
 "whether tabs should be honored and used or replaced with spaces, in the "
 "configuration dialog."
 msgstr ""
 
-#: view/kateview.cpp:974
+#: view/kateview.cpp:971
 msgid "&Unindent"
 msgstr ""
 
-#: view/kateview.cpp:975
+#: view/kateview.cpp:972
 msgid "Use this to unindent a selected block of text."
 msgstr ""
 
-#: view/kateview.cpp:995
+#: view/kateview.cpp:992
 #, fuzzy
 #| msgid "Current line:"
 msgid "Fold Toplevel Nodes"
 msgstr "Roye do moumint:"
 
-#: view/kateview.cpp:1013
+#: view/kateview.cpp:1010
 #, fuzzy
 #| msgid "Current line:"
 msgid "Fold Current Node"
 msgstr "Roye do moumint:"
 
-#: view/kateview.cpp:1017
+#: view/kateview.cpp:1014
 msgid "Unfold Current Node"
 msgstr ""
 
-#: view/kateview.cpp:1122
+#: view/kateview.cpp:1119
 msgid "OVERWRITE"
 msgstr ""
 
-#: view/kateview.cpp:1122
+#: view/kateview.cpp:1119
 msgid "INSERT"
 msgstr ""
 
-#: view/kateview.cpp:1135
+#: view/kateview.cpp:1132
 #, fuzzy
 #| msgid "E&ncoding"
 msgid "recording"
 msgstr "E&côdaedje"
 
-#: view/kateview.cpp:1157
+#: view/kateview.cpp:1154
 #, kde-format
 msgid "(R/O) %1"
+msgstr ""
+
+#: view/kateview.cpp:1170
+msgid "vi-mode"
 msgstr ""
 
 #: view/kateviewhelpers.cpp:197 view/kateviewhelpers.cpp:244
@@ -7735,7 +7739,7 @@ msgstr ""
 msgid "Set Default Mark Type"
 msgstr ""
 
-#: view/kateviewhelpers.cpp:2125
+#: view/kateviewhelpers.cpp:2122
 msgid "Disable Annotation Bar"
 msgstr ""
 
@@ -7901,38 +7905,38 @@ msgstr "Dji n' sai drovi l' fitchî d' apontiaedje pol lére."
 msgid "Unable to open file"
 msgstr "Dji n' sai drovi l' fitchî"
 
-#: vimode/kateviinputmodemanager.cpp:759
+#: vimode/kateviinputmodemanager.cpp:778
 #, fuzzy, kde-format
 msgid "Mark set: %1"
 msgstr " Roye: %1"
 
-#: vimode/kateviinputmodemanager.cpp:801
+#: vimode/kateviinputmodemanager.cpp:820
 #, fuzzy
 #| msgid "Go to the next bookmark."
 msgid "There are no more chars for the next bookmark."
 msgstr "Potchî al rimåke shuvante."
 
-#: vimode/kateviinputmodemanager.cpp:869
+#: vimode/kateviinputmodemanager.cpp:888
 msgid "VI: INSERT MODE"
 msgstr ""
 
-#: vimode/kateviinputmodemanager.cpp:872
+#: vimode/kateviinputmodemanager.cpp:891
 msgid "VI: NORMAL MODE"
 msgstr ""
 
-#: vimode/kateviinputmodemanager.cpp:875
+#: vimode/kateviinputmodemanager.cpp:894
 msgid "VI: VISUAL"
 msgstr ""
 
-#: vimode/kateviinputmodemanager.cpp:878
+#: vimode/kateviinputmodemanager.cpp:897
 msgid "VI: VISUAL BLOCK"
 msgstr ""
 
-#: vimode/kateviinputmodemanager.cpp:881
+#: vimode/kateviinputmodemanager.cpp:900
 msgid "VI: VISUAL LINE"
 msgstr ""
 
-#: vimode/kateviinputmodemanager.cpp:884
+#: vimode/kateviinputmodemanager.cpp:903
 msgid "VI: REPLACE"
 msgstr ""
 
