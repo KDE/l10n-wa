@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-05-09 08:42+0000\n"
+"POT-Creation-Date: 2014-05-10 01:33+0000\n"
 "PO-Revision-Date: 2011-01-17 21:35+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -98,7 +98,9 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: ectx: property (text), widget (QLabel, label)
 #: crashreporter/wdg_crash_reporter.ui:49
+#: plugins/paintops/resourcemanager/wdg_dlgcreatebundle.ui:100
 msgid "Email:"
 msgstr ""
 
@@ -3595,7 +3597,9 @@ msgstr "Radjouter novele coleur..."
 msgid "Patterns"
 msgstr "Patrons"
 
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbResourceType)
 #: plugins/extensions/dockers/presetdocker/presetdocker_dock.cpp:37
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:56
 #, fuzzy
 #| msgid "Presets"
 msgid "Brush Presets"
@@ -4130,7 +4134,9 @@ msgstr "Tite:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: ectx: property (text), widget (QLabel, description)
 #: plugins/extensions/metadataeditor/editors/dublincore.ui:99
+#: plugins/paintops/resourcemanager/wdg_dlgcreatebundle.ui:87
 #: ui/forms/wdgmetadatamergestrategychooser.ui:49
 msgid "Description:"
 msgstr "Discrijhaedje:"
@@ -9278,46 +9284,13 @@ msgstr "iteråcions"
 msgid "Gravity:"
 msgstr "gravité"
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, KoBundleCreationWidget)
-#: plugins/paintops/resourcemanager/KoBundleCreationWidget.ui:20
-msgid "New Bundle..."
+#: plugins/paintops/resourcemanager/KoDlgCreateBundle.cpp:82
+msgid "The resource bundle name cannot be empty."
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, bundleName)
-#: plugins/paintops/resourcemanager/KoBundleCreationWidget.ui:29
-#, fuzzy
-#| msgid "Layer name:"
-msgid "Bundle Name "
-msgstr "No del coûtche:"
-
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#. i18n: ectx: property (text), widget (QLabel, author)
-#: plugins/paintops/resourcemanager/KoBundleCreationWidget.ui:39
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:727
-#: ui/dialogs/kis_dlg_preferences.cc:701
-msgid "Author"
+#: plugins/paintops/resourcemanager/KoDlgCreateBundle.cpp:92
+msgid "A bundle with this name already exists."
 msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#. i18n: ectx: property (text), widget (QLabel, website)
-#: plugins/paintops/resourcemanager/KoBundleCreationWidget.ui:59
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:656
-msgid "Website"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#. i18n: ectx: property (text), widget (QLabel, license)
-#: plugins/paintops/resourcemanager/KoBundleCreationWidget.ui:73
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:703
-msgid "License"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, description)
-#: plugins/paintops/resourcemanager/KoBundleCreationWidget.ui:87
-#, fuzzy
-#| msgid "Description:"
-msgid "Description"
-msgstr "Discrijhaedje:"
 
 #: plugins/paintops/resourcemanager/KoResourceManagerWidget.cpp:45
 #, fuzzy
@@ -9364,13 +9337,6 @@ msgstr "Pincea"
 #: ui/kis_control_frame.cpp:88 ui/kis_control_frame.cpp:188
 msgid "Gradients"
 msgstr "Gradyints"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, cmbResourceType)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:56
-#, fuzzy
-#| msgid "Edit Presets"
-msgid "Pt. Presets"
-msgstr "Candjî prézapontiaedjes"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbRemoveWorkspaces)
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbResourceType)
@@ -9467,12 +9433,22 @@ msgstr "Abaguer imådje"
 msgid "Export"
 msgstr "Ebaguer"
 
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:656
+msgid "Website"
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:696
 #, fuzzy
 #| msgid "Create"
 msgid "Created"
 msgstr "Ahiver"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:703
+msgid "License"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:713
@@ -9484,6 +9460,12 @@ msgstr "Mete a djoû"
 #. i18n: ectx: property (text), widget (QLabel, label_8)
 #: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:720
 msgid "Tags"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:727
+#: ui/dialogs/kis_dlg_preferences.cc:701
+msgid "Author"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLineEdit, txtWebsite)
@@ -9507,6 +9489,40 @@ msgstr "&Oister"
 #| msgid "&Resources"
 msgid "Resource Manager..."
 msgstr "&Rissourses"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, WdgDlgCreateBundle)
+#: plugins/paintops/resourcemanager/wdg_dlgcreatebundle.ui:20
+msgid "New Bundle..."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, bundleName)
+#: plugins/paintops/resourcemanager/wdg_dlgcreatebundle.ui:29
+#, fuzzy
+#| msgid "Layer name:"
+msgid "Bundle Name:"
+msgstr "No del coûtche:"
+
+#. i18n: ectx: property (text), widget (QLabel, author)
+#: plugins/paintops/resourcemanager/wdg_dlgcreatebundle.ui:39
+#, fuzzy
+#| msgid "Anchor"
+msgid "Author:"
+msgstr "Anke"
+
+#. i18n: ectx: property (text), widget (QLabel, website)
+#: plugins/paintops/resourcemanager/wdg_dlgcreatebundle.ui:59
+msgid "Website:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLineEdit, editWebsite)
+#: plugins/paintops/resourcemanager/wdg_dlgcreatebundle.ui:66
+msgid "http://"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, license)
+#: plugins/paintops/resourcemanager/wdg_dlgcreatebundle.ui:73
+msgid "License:"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, densityRadioButton)
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -14183,6 +14199,16 @@ msgstr ""
 #| msgid "Close"
 msgid "&Close"
 msgstr "Clôre"
+
+#, fuzzy
+#~| msgid "Description:"
+#~ msgid "Description"
+#~ msgstr "Discrijhaedje:"
+
+#, fuzzy
+#~| msgid "Edit Presets"
+#~ msgid "Pt. Presets"
+#~ msgstr "Candjî prézapontiaedjes"
 
 #, fuzzy
 #~| msgid "&OK"
