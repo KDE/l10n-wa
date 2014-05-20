@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-05-19 01:27+0000\n"
+"POT-Creation-Date: 2014-05-20 01:29+0000\n"
 "PO-Revision-Date: 2011-01-17 21:35+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -1418,13 +1418,6 @@ msgstr "Côutche &pondeure"
 
 #: image/brushengine/kis_paintop_factory.cpp:66
 #, fuzzy
-#| msgid "Experimental Params"
-msgctxt "Category of brush engines"
-msgid "Experimental"
-msgstr "Parametes esperimintås"
-
-#: image/brushengine/kis_paintop_factory.cpp:71
-#, fuzzy
 #| msgid "Scale"
 msgctxt "Category of brush engines"
 msgid "Stable"
@@ -1595,7 +1588,7 @@ msgid "Generator"
 msgstr "Djenerateu"
 
 #. i18n: ectx: property (text), widget (QLabel, label_10)
-#: image/kis_adjustment_layer.cc:127
+#: image/kis_adjustment_layer.cc:127 plugins/paintops/filterop/filterop.cpp:45
 #: plugins/paintops/libpaintop/kis_filter_option.cpp:50
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:844
 #: ui/dialogs/kis_dlg_filter.cpp:105
@@ -1614,15 +1607,19 @@ msgstr ""
 msgid "Default"
 msgstr "Prémetou"
 
+#. i18n: ectx: property (text), item, widget (QComboBox, editSharpness)
+#. i18n: ectx: property (text), item, widget (QComboBox, editContrast)
 #: image/kis_base_mask_generator.h:33
-#, fuzzy
-msgid "Soft brush"
-msgstr "Pincea dinamike"
+#: plugins/extensions/metadataeditor/editors/exif.ui:860
+#: plugins/extensions/metadataeditor/editors/exif.ui:892
+#: plugins/paintops/libpaintop/kis_pressure_softness_option.cpp:31
+msgid "Soft"
+msgstr "Doûce"
 
 #: image/kis_base_mask_generator.h:34
 #, fuzzy
 #| msgid "Gaussian Blur"
-msgid "Gaussian brush"
+msgid "Gaussian"
 msgstr "Flou di Gauss"
 
 #: image/kis_base_node.cpp:141 ui/kis_node_model.cpp:420
@@ -2735,6 +2732,7 @@ msgstr "Sôre"
 
 #. i18n: ectx: property (text), widget (QRadioButton, shadeSelectorTypeMyPaint)
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:234
+#: plugins/paintops/mypaint/mypaint_paintop_factory.h:55
 msgid "MyPaint"
 msgstr "MiPondeure"
 
@@ -3682,7 +3680,7 @@ msgstr "No do masse"
 #. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: ectx: property (text), widget (QLabel, brushNameLbl)
 #: plugins/extensions/dockers/tasksetdocker/tasksetdocker_dock.cpp:188
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:31
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:22
 #: ui/forms/wdgfilternodecreation.ui:17 ui/forms/wdgflipbookselector.ui:28
 #: ui/forms/wdgpaintopsettings.ui:93
 msgid "Name:"
@@ -4209,6 +4207,7 @@ msgstr "Môde d' espozicion:"
 #: plugins/extensions/metadataeditor/editors/exif.ui:101
 #: plugins/extensions/metadataeditor/editors/exif.ui:919
 #: plugins/paintops/libpaintop/forms/wdgbrushchooser.ui:88
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:58
 msgid "Auto"
 msgstr "Otomatike"
 
@@ -4635,14 +4634,6 @@ msgstr "Normå"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, editSharpness)
 #. i18n: ectx: property (text), item, widget (QComboBox, editContrast)
-#: plugins/extensions/metadataeditor/editors/exif.ui:860
-#: plugins/extensions/metadataeditor/editors/exif.ui:892
-#: plugins/paintops/libpaintop/kis_pressure_softness_option.cpp:31
-msgid "Soft"
-msgstr "Doûce"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, editSharpness)
-#. i18n: ectx: property (text), item, widget (QComboBox, editContrast)
 #: plugins/extensions/metadataeditor/editors/exif.ui:865
 #: plugins/extensions/metadataeditor/editors/exif.ui:897
 #: plugins/paintops/libpaintop/kis_pressure_softness_option.cpp:32
@@ -4662,6 +4653,8 @@ msgstr "Balance des blancs:"
 #. i18n: ectx: property (text), item, widget (QComboBox, editWhiteBalance)
 #. i18n: ectx: property (text), widget (QRadioButton, customRadioButton)
 #: plugins/extensions/metadataeditor/editors/exif.ui:924
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:64
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:66
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1037
 msgid "Custom"
 msgstr "A vosse môde"
@@ -6935,7 +6928,7 @@ msgstr "Coleur"
 
 #: plugins/paintops/chalk/chalk_paintop_plugin.cpp:43
 #, fuzzy
-msgid "Chalk brush"
+msgid "Chalk"
 msgstr "Pincea dinamike"
 
 #. i18n: ectx: attribute (title), widget (QWidget, inkTab)
@@ -6959,7 +6952,7 @@ msgstr "Discrexhaedje do saturaedje"
 #: plugins/paintops/colorsmudge/colorsmudge_paintop_plugin.cpp:44
 #, fuzzy
 #| msgid "Smudge Brush"
-msgid "Color Smudge Brush"
+msgid "Color Smudge"
 msgstr "Pincea d' dåboraedje"
 
 #: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:52
@@ -7029,8 +7022,9 @@ msgstr "Pincea d' dåboraedje"
 
 #: plugins/paintops/curvebrush/curve_paintop_plugin.cpp:43
 #, fuzzy
-msgid "Curve brush"
-msgstr "Pincea Sumi-e"
+#| msgid "Curved"
+msgid "Curve"
+msgstr "E coube"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, selectMainStyle)
 #. i18n: ectx: property (text), item, widget (KComboBox, selectSubdivisionStyle)
@@ -7107,14 +7101,19 @@ msgstr "Raloyaedje di pondaedje"
 msgid "Smoothing"
 msgstr "Radoûci"
 
+#. i18n: ectx: property (text), item, widget (QComboBox, shapeBox)
+#. i18n: ectx: property (text), item, widget (QComboBox, shapeCBox)
 #: plugins/paintops/defaultpaintops/defaultpaintops_plugin.cc:47
-msgid "Pixel Brush"
-msgstr "Pincea Picsel"
+#: plugins/paintops/experiment/wdgshapeoptions.ui:75
+#: plugins/paintops/gridbrush/wdgshapeoptions.ui:51
+#: plugins/paintops/spray/wdgshapeoptions.ui:75
+msgid "Pixel"
+msgstr "Picsel"
 
 #: plugins/paintops/defaultpaintops/duplicate/kis_duplicateop_factory.h:50
-msgctxt "duplicate paintbrush"
-msgid "Duplicate"
-msgstr "Dobler"
+msgctxt "clone paintbrush (previously \"Duplicate\")"
+msgid "Clone"
+msgstr ""
 
 #: plugins/paintops/defaultpaintops/duplicate/kis_duplicateop_option.cpp:45
 #: plugins/paintops/libpaintop/kis_paint_action_type_option.cpp:37
@@ -7146,8 +7145,9 @@ msgstr "Tchuzes del djeyometreye"
 
 #: plugins/paintops/deform/kis_deform_paintop_factory.h:45
 #, fuzzy
-msgid "Deform brush"
-msgstr "Reyon d' disformaedje"
+#| msgid "Deform Mode"
+msgid "Deform"
+msgstr "Môde di disfoirmaedje"
 
 #. i18n: ectx: property (text), widget (QLabel, deformLabel)
 #: plugins/paintops/deform/wdgdeformoptions.ui:35
@@ -7219,8 +7219,10 @@ msgid "Use undeformed image"
 msgstr "Eployî imådje nén disfoirmêye"
 
 #: plugins/paintops/dynadraw/dyna_paintop_plugin.cpp:41
-msgid "Dyna brush"
-msgstr "Pincea dinamike"
+#, fuzzy
+#| msgid "Dyna"
+msgid "Dyna"
+msgstr "Dinamike"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
 #: plugins/paintops/dynadraw/wdgdynaoptions.ui:51
@@ -7254,6 +7256,7 @@ msgstr "Fortchete di lårdjeur:"
 #. i18n: ectx: attribute (title), widget (QWidget, ShapeTab)
 #. i18n: ectx: property (title), widget (QGroupBox, shapeGroup)
 #: plugins/paintops/dynadraw/wdgdynaoptions.ui:160
+#: plugins/paintops/experiment/experiment_paintop_plugin.cpp:45
 #: plugins/paintops/hairy/wdghairyeoptions.ui:43
 #: plugins/paintops/hairy/wdgshapeoptions.ui:84
 msgid "Shape"
@@ -7304,12 +7307,6 @@ msgstr "Diamete:"
 #: plugins/paintops/dynadraw/wdgdynaoptions.ui:296
 msgid "Fixed angle"
 msgstr "Ewale inglêye"
-
-#: plugins/paintops/experiment/experiment_paintop_plugin.cpp:42
-#, fuzzy
-#| msgid "Experimental Params"
-msgid "Experiment brush"
-msgstr "Parametes esperimintås"
 
 #: plugins/paintops/experiment/kis_experiment_shape_option.cpp:36
 #: plugins/paintops/gridbrush/kis_grid_shape_option.cpp:33
@@ -7379,14 +7376,6 @@ msgstr "Dilé les boirds:"
 msgid "Anti-aliased pixel"
 msgstr "Picsel discrenlé"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, shapeBox)
-#. i18n: ectx: property (text), item, widget (QComboBox, shapeCBox)
-#: plugins/paintops/experiment/wdgshapeoptions.ui:75
-#: plugins/paintops/gridbrush/wdgshapeoptions.ui:51
-#: plugins/paintops/spray/wdgshapeoptions.ui:75
-msgid "Pixel"
-msgstr "Picsel"
-
 #. i18n: ectx: property (text), widget (QCheckBox, proportionalBox)
 #: plugins/paintops/experiment/wdgshapeoptions.ui:213
 #: plugins/paintops/spray/wdgshapeoptions.ui:218
@@ -7412,7 +7401,7 @@ msgstr "Tournaedje"
 #. i18n: ectx: property (text), widget (QCheckBox, fixedRotation)
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
 #: plugins/paintops/experiment/wdgshapeoptions.ui:241
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:77
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:59
 #: plugins/paintops/spray/wdgshapedynamicsoptions.ui:48
 msgid "Constant"
 msgstr "Erîlé"
@@ -7420,7 +7409,7 @@ msgstr "Erîlé"
 #. i18n: ectx: property (text), widget (QCheckBox, randomRotation)
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
 #: plugins/paintops/experiment/wdgshapeoptions.ui:289
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:82
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:64
 #: plugins/paintops/spray/wdgshapedynamicsoptions.ui:58
 msgid "Random"
 msgstr "A l' astcheyance"
@@ -7439,14 +7428,11 @@ msgstr "Shure cursoe"
 msgid "Texture:"
 msgstr "Tecsteure"
 
-#: plugins/paintops/filterop/filterop.cpp:45
-msgid "Filter Brush"
-msgstr "Pincea passete"
-
 #: plugins/paintops/gridbrush/grid_paintop_plugin.cpp:41
-#, fuzzy
-msgid "Grid brush"
-msgstr "Pincea dinamike"
+#: ui/canvas/kis_grid_manager.cpp:47 ui/dialogs/kis_dlg_preferences.cc:673
+#: ui/dialogs/kis_dlg_preferences.cc:674
+msgid "Grid"
+msgstr "Grile"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: plugins/paintops/gridbrush/wdggridoptions.ui:38
@@ -7512,7 +7498,7 @@ msgstr "Roye"
 
 #: plugins/paintops/hairy/hairy_paintop_plugin.cpp:44
 #, fuzzy
-msgid "Hairy brush"
+msgid "Hairy"
 msgstr "Pincea dinamike"
 
 #: plugins/paintops/hairy/kis_hairy_bristle_option.cpp:46
@@ -7696,7 +7682,7 @@ msgstr "Rispåmer l' intche"
 
 #: plugins/paintops/hatching/hatching_paintop_plugin.cpp:43
 #, fuzzy
-msgid "Hatching brush"
+msgid "Hatching"
 msgstr "Pincea dinamike"
 
 #: plugins/paintops/hatching/kis_hatching_options.cpp:57
@@ -7865,7 +7851,7 @@ msgstr "Livea d' astcheyance :"
 #: plugins/paintops/libpaintop/forms/wdgautobrush.ui:266
 #: plugins/paintops/libpaintop/forms/wdgBrushSizeOptions.ui:152
 #: plugins/paintops/libpaintop/forms/wdgclipboardbrush.ui:85
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:207
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:180
 #: plugins/paintops/libpaintop/forms/wdgtextbrush.ui:72
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:112
 #: plugins/paintops/spray/wdgsprayoptions.ui:204
@@ -7932,7 +7918,7 @@ msgstr "Arloxhaedje do prindaedje di mosses"
 #. i18n: ectx: property (text), widget (QCheckBox, colorAsMask)
 #. i18n: ectx: property (text), widget (QCheckBox, colorAsmask)
 #: plugins/paintops/libpaintop/forms/wdgclipboardbrush.ui:19
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:131
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:113
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:119
 msgid "Use color as mask"
 msgstr "Eployî coleur come masse"
@@ -7940,8 +7926,9 @@ msgstr "Eployî coleur come masse"
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: plugins/paintops/libpaintop/forms/wdgclipboardbrush.ui:102
 #, fuzzy
-msgid "Save brush:"
-msgstr "Pincea Sumi-e"
+#| msgid "Save macro"
+msgid "Save Tip:"
+msgstr "Schaper macro"
 
 #. i18n: ectx: property (text), widget (QPushButton, saveBrush)
 #. i18n: ectx: property (text), widget (QPushButton, bnSave)
@@ -8031,51 +8018,55 @@ msgstr "Grandeu del coube"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
 #. i18n: ectx: property (text), widget (QLabel, labelStyle)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:60
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:42
 #: plugins/tools/tool_text/wdgtextoptions.ui:71
 msgid "Style:"
 msgstr "Stîle:"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:87
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:69
 msgid "Incremental"
 msgstr "Incremintå"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:92
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:74
 #: plugins/paintops/libpaintop/kis_dynamic_sensor.h:47
 #: plugins/tools/defaulttools/kis_tool_line.cc:70
 msgid "Pressure"
 msgstr "Pression"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:97
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:79
 msgid "Angular"
 msgstr "Ingulaire"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:105
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:87
 msgid "Selection mode:"
 msgstr "Môde di tchoes:"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, brushStyle)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:116
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:98
 msgid "Regular"
 msgstr "Erîlé"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, brushStyle)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:121
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:103
 msgid "Animated"
 msgstr "Candjant"
 
 #. i18n: ectx: property (text), widget (QPushButton, brushButton)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:236
-msgid "Use as Brush"
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:200
+#, fuzzy
+#| msgid "Use as Brush"
+msgid "Use as Tip"
 msgstr "Eployî come pincea"
 
 #. i18n: ectx: property (text), widget (QPushButton, addButton)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:243
-msgid "Add to Predefined Brushes"
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:207
+#, fuzzy
+#| msgid "Add to Predefined Brushes"
+msgid "Add to Predefined Tips"
 msgstr "Radjouter ås pinceas prédefinis"
 
 #. i18n: ectx: property (text), widget (QCheckBox, checkBoxSmudgeMode)
@@ -8190,9 +8181,9 @@ msgstr ""
 
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:156
 #, fuzzy
-#| msgid "Remove Mask"
-msgid "Reset Brush"
-msgstr "Oister masse"
+#| msgid "Predefined Brushes"
+msgid "Reset Predefined Tip"
+msgstr "Pinceas prédefinis"
 
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:157
 msgid ""
@@ -8205,30 +8196,25 @@ msgstr ""
 msgid "Brush Tip"
 msgstr "Racsegne sol pincea"
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:58
-msgid "Autobrush"
-msgstr "Pincea otomatike"
-
 #: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:62
-msgid "Predefined Brushes"
+#, fuzzy
+#| msgid "Predefined Brushes"
+msgid "Predefined"
 msgstr "Pinceas prédefinis"
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:64
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:66
-msgid "Custom Brush"
-msgstr "Pincea da vosse"
-
+#. i18n: ectx: property (title), widget (QGroupBox, grpClipboard)
 #: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:68
 #: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:70
+#: ui/forms/wdgnewimage.ui:331
 #, fuzzy
-#| msgid "Smudge Brush"
-msgid "Clipboard Brush"
-msgstr "Pincea d' dåboraedje"
+#| msgid "Cork board"
+msgid "Clipboard"
+msgstr "Plantche di lidje"
 
 #: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:72
 #: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:74
-msgid "Text Brush"
-msgstr "Pincea scrijhaedje"
+msgid "Text"
+msgstr "Tecse"
 
 #: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:98
 msgid ""
@@ -9269,17 +9255,11 @@ msgid ""
 "will make it smoother"
 msgstr ""
 
-#: plugins/paintops/mypaint/mypaint_paintop_factory.h:55
-#, fuzzy
-#| msgid "Paint with brushes"
-msgid "MyPaint brush"
-msgstr "Ponde avou des pinceas"
-
 #: plugins/paintops/particle/particle_paintop_plugin.cpp:42
 #, fuzzy
-#| msgid "particles"
-msgid "Particle brush"
-msgstr "pårticules"
+#| msgid "Particles"
+msgid "Particle"
+msgstr "Pårticules"
 
 #. i18n: ectx: property (text), widget (QLabel, particlesLbl)
 #: plugins/paintops/particle/wdgparticleoptions.ui:50
@@ -9674,7 +9654,7 @@ msgstr "Displaeçmint X:"
 
 #: plugins/paintops/sketch/sketch_paintop_plugin.cpp:43
 #, fuzzy
-msgid "Sketch brush"
+msgid "Sketch"
 msgstr "Pincea dinamike"
 
 #. i18n: ectx: property (suffix), widget (KDoubleNumInput, lineWidthSPBox)
@@ -9746,7 +9726,7 @@ msgstr "Pincea dinamike"
 
 #: plugins/paintops/spray/spray_paintop_plugin.cpp:41
 #, fuzzy
-msgid "Spray brush"
+msgid "Spray"
 msgstr "Pincea dinamike"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
@@ -10754,11 +10734,6 @@ msgid ""
 "You are activating wrap-around mode, but have not enabled OpenGL.\n"
 "To visualize wrap-around mode, enable OpenGL."
 msgstr ""
-
-#: ui/canvas/kis_grid_manager.cpp:47 ui/dialogs/kis_dlg_preferences.cc:673
-#: ui/dialogs/kis_dlg_preferences.cc:674
-msgid "Grid"
-msgstr "Grile"
 
 #: ui/canvas/kis_grid_manager.cpp:70
 msgid "Snap To Grid"
@@ -12070,13 +12045,6 @@ msgstr "Wache"
 msgid "&Predefined:"
 msgstr "Pinceas prédefinis"
 
-#. i18n: ectx: property (title), widget (QGroupBox, grpClipboard)
-#: ui/forms/wdgnewimage.ui:331
-#, fuzzy
-#| msgid "Cork board"
-msgid "Clipboard"
-msgstr "Plantche di lidje"
-
 #. i18n: ectx: property (title), widget (QGroupBox, grpContents)
 #: ui/forms/wdgnewimage.ui:373
 msgid "Contents"
@@ -12275,7 +12243,7 @@ msgid "No Outline"
 msgstr "Nou cotoû"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbOutline)
-#: ui/forms/wdgshapeoptions.ui:38 ui/kis_paintop_option.cpp:26
+#: ui/forms/wdgshapeoptions.ui:38
 msgid "Brush"
 msgstr "Pincea"
 
@@ -13619,6 +13587,12 @@ msgstr ""
 msgid "Select Favorite Presets..."
 msgstr "Pincea passete"
 
+#: ui/kis_paintop_option.cpp:26
+#, fuzzy
+#| msgid "Named Colors"
+msgid "Common"
+msgstr "Lomêyès coleurs"
+
 #: ui/kis_paintop_option.cpp:36
 msgid "Texture"
 msgstr "Tecsteure"
@@ -14176,13 +14150,13 @@ msgstr "Tchoes &locå"
 msgid "Freehand Stroke"
 msgstr "Usteye mwin libe"
 
-#: ui/tool/kis_tool_paint.cc:89
+#: ui/tool/kis_tool_paint.cc:105
 #, fuzzy
 #| msgid "Chinese Brush"
 msgid "Increase Brush Size"
 msgstr "Pincea chinwès"
 
-#: ui/tool/kis_tool_paint.cc:95
+#: ui/tool/kis_tool_paint.cc:111
 #, fuzzy
 #| msgid "Brush size"
 msgid "Decrease Brush Size"
@@ -14319,6 +14293,91 @@ msgstr ""
 #| msgid "Close"
 msgid "&Close"
 msgstr "Clôre"
+
+#, fuzzy
+#~| msgid "Experimental Params"
+#~ msgctxt "Category of brush engines"
+#~ msgid "Experimental"
+#~ msgstr "Parametes esperimintås"
+
+#, fuzzy
+#~ msgid "Soft brush"
+#~ msgstr "Pincea dinamike"
+
+#, fuzzy
+#~| msgid "Gaussian Blur"
+#~ msgid "Gaussian brush"
+#~ msgstr "Flou di Gauss"
+
+#, fuzzy
+#~ msgid "Curve brush"
+#~ msgstr "Pincea Sumi-e"
+
+#~ msgid "Pixel Brush"
+#~ msgstr "Pincea Picsel"
+
+#~ msgctxt "duplicate paintbrush"
+#~ msgid "Duplicate"
+#~ msgstr "Dobler"
+
+#, fuzzy
+#~ msgid "Deform brush"
+#~ msgstr "Reyon d' disformaedje"
+
+#~ msgid "Dyna brush"
+#~ msgstr "Pincea dinamike"
+
+#, fuzzy
+#~| msgid "Experimental Params"
+#~ msgid "Experiment brush"
+#~ msgstr "Parametes esperimintås"
+
+#~ msgid "Filter Brush"
+#~ msgstr "Pincea passete"
+
+#, fuzzy
+#~ msgid "Grid brush"
+#~ msgstr "Pincea dinamike"
+
+#, fuzzy
+#~ msgid "Save brush:"
+#~ msgstr "Pincea Sumi-e"
+
+#, fuzzy
+#~| msgid "Remove Mask"
+#~ msgid "Reset Brush"
+#~ msgstr "Oister masse"
+
+#~ msgid "Autobrush"
+#~ msgstr "Pincea otomatike"
+
+#~ msgid "Predefined Brushes"
+#~ msgstr "Pinceas prédefinis"
+
+#~ msgid "Custom Brush"
+#~ msgstr "Pincea da vosse"
+
+#, fuzzy
+#~| msgid "Smudge Brush"
+#~ msgid "Clipboard Brush"
+#~ msgstr "Pincea d' dåboraedje"
+
+#~ msgid "Text Brush"
+#~ msgstr "Pincea scrijhaedje"
+
+#, fuzzy
+#~| msgid "Paint with brushes"
+#~ msgid "MyPaint brush"
+#~ msgstr "Ponde avou des pinceas"
+
+#, fuzzy
+#~| msgid "particles"
+#~ msgid "Particle brush"
+#~ msgstr "pårticules"
+
+#, fuzzy
+#~ msgid "Spray brush"
+#~ msgstr "Pincea dinamike"
 
 #~ msgid "Total Refresh"
 #~ msgstr "Rafristaedje totå"
@@ -14752,9 +14811,6 @@ msgstr "Clôre"
 
 #~ msgid "A -99ZZ END"
 #~ msgstr "A -99ZZ DIFÉN"
-
-#~ msgid "Text"
-#~ msgstr "Tecse"
 
 #~ msgid "Initial width"
 #~ msgstr "Lårdjeur di cmince"
@@ -16268,11 +16324,6 @@ msgstr "Clôre"
 #~ msgid "Last Used Colors"
 #~ msgstr "Lomêyès coleurs"
 
-#, fuzzy
-#~| msgid "Named Colors"
-#~ msgid "Common Colors"
-#~ msgstr "Lomêyès coleurs"
-
 #~ msgid "KisRandomGenerator Test/Demo"
 #~ msgstr "Asprouvadje/Mostraedje di KisRandomGenerator"
 
@@ -16309,16 +16360,6 @@ msgstr "Clôre"
 
 #~ msgid "Ink amount"
 #~ msgstr "Cwantité d' intche"
-
-#, fuzzy
-#~| msgid "Curved"
-#~ msgid "Curve"
-#~ msgstr "E coube"
-
-#, fuzzy
-#~| msgid "Gaussian Blur"
-#~ msgid "Gaussian"
-#~ msgstr "Flou di Gauss"
 
 #, fuzzy
 #~ msgid "soft brush"
