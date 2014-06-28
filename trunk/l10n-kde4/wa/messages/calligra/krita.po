@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-06-26 01:29+0000\n"
+"POT-Creation-Date: 2014-06-28 01:33+0000\n"
 "PO-Revision-Date: 2011-01-17 21:35+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -2278,13 +2278,13 @@ msgstr "Coûtc&he"
 msgid "Create Clones Array"
 msgstr ""
 
-#: plugins/extensions/clonesarray/dlg_clonesarray.cpp:224
+#: plugins/extensions/clonesarray/dlg_clonesarray.cpp:226
 #, fuzzy, kde-format
 #| msgid "Copy From"
 msgid "+ Array of %1"
 msgstr "Copyî di"
 
-#: plugins/extensions/clonesarray/dlg_clonesarray.cpp:231
+#: plugins/extensions/clonesarray/dlg_clonesarray.cpp:233
 #, fuzzy, kde-format
 #| msgid "Copy From"
 msgid "- Array of %1"
@@ -10275,6 +10275,7 @@ msgstr "Pincea dinamike"
 #. i18n: ectx: property (suffix), widget (QDoubleSpinBox, shearXBox)
 #. i18n: ectx: property (suffix), widget (QDoubleSpinBox, shearYBox)
 #: plugins/paintops/sketch/wdgsketchoptions.ui:68
+#: plugins/tools/defaulttools/kis_tool_brush.cc:236
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:592
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:633
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:687
@@ -10363,72 +10364,90 @@ msgctxt "(qtundo-format)"
 msgid "Freehand Brush Stroke"
 msgstr "Usteye mwin libe"
 
-#: plugins/tools/defaulttools/kis_tool_brush.cc:167
+#: plugins/tools/defaulttools/kis_tool_brush.cc:209
 #, fuzzy
 #| msgctxt "smooth out the painting strokes the filter creates"
 #| msgid "Smooth"
 msgid "No Smoothing"
 msgstr "Radoûci"
 
-#: plugins/tools/defaulttools/kis_tool_brush.cc:168
+#: plugins/tools/defaulttools/kis_tool_brush.cc:210
 #, fuzzy
 #| msgctxt "smooth out the painting strokes the filter creates"
 #| msgid "Smooth"
 msgid "Basic Smoothing"
 msgstr "Radoûci"
 
-#: plugins/tools/defaulttools/kis_tool_brush.cc:169
+#: plugins/tools/defaulttools/kis_tool_brush.cc:211
 #, fuzzy
 #| msgctxt "smooth out the painting strokes the filter creates"
 #| msgid "Smooth"
 msgid "Weighted Smoothing"
 msgstr "Radoûci"
 
-#: plugins/tools/defaulttools/kis_tool_brush.cc:170
+#: plugins/tools/defaulttools/kis_tool_brush.cc:212
 #, fuzzy
 #| msgid "Scale"
 msgid "Stabilizer"
 msgstr "Schåle"
 
-#: plugins/tools/defaulttools/kis_tool_brush.cc:179
+#: plugins/tools/defaulttools/kis_tool_brush.cc:221
 #, fuzzy
 #| msgid "Distance: "
 msgid "Distance:"
 msgstr "Distance: "
 
-#: plugins/tools/defaulttools/kis_tool_brush.cc:186
+#: plugins/tools/defaulttools/kis_tool_brush.cc:229
+msgid "Delay:"
+msgstr ""
+
+#: plugins/tools/defaulttools/kis_tool_brush.cc:230
+msgid "Delay the brush stroke to make the line smoother"
+msgstr ""
+
+#: plugins/tools/defaulttools/kis_tool_brush.cc:234
+msgid "Radius where the brush is blocked"
+msgstr ""
+
+#: plugins/tools/defaulttools/kis_tool_brush.cc:241
+#, fuzzy
+#| msgid "&Finish Polyline"
+msgid "Finish line:"
+msgstr "&Fini poliroye"
+
+#: plugins/tools/defaulttools/kis_tool_brush.cc:252
 #, fuzzy
 #| msgid "Saturation"
 msgid "Stroke Ending:"
 msgstr "Saturaedje"
 
-#: plugins/tools/defaulttools/kis_tool_brush.cc:191
+#: plugins/tools/defaulttools/kis_tool_brush.cc:257
 #, fuzzy
 #| msgid "Pressure"
 msgid "Smooth Pressure"
 msgstr "Pression"
 
-#: plugins/tools/defaulttools/kis_tool_brush.cc:196
+#: plugins/tools/defaulttools/kis_tool_brush.cc:262
 #, fuzzy
 #| msgid "Subject distance:"
 msgid "Scalable Distance"
 msgstr "Distance do sudjet:"
 
-#: plugins/tools/defaulttools/kis_tool_brush.cc:202
+#: plugins/tools/defaulttools/kis_tool_brush.cc:268
 msgid "Assistant:"
 msgstr "Macrea:"
 
-#: plugins/tools/defaulttools/kis_tool_brush.cc:203
+#: plugins/tools/defaulttools/kis_tool_brush.cc:269
 msgid "You need to add Ruler Assistants before this tool will work."
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_brush.cc:206
+#: plugins/tools/defaulttools/kis_tool_brush.cc:272
 #, fuzzy
 #| msgid "Magnetism:"
 msgid "Assistant Magnetism"
 msgstr "Magnetisse:"
 
-#: plugins/tools/defaulttools/kis_tool_brush.h:96
+#: plugins/tools/defaulttools/kis_tool_brush.h:121
 #, fuzzy
 #| msgid "Freehand tool"
 msgid "Freehand Brush Tool"
@@ -18182,9 +18201,6 @@ msgstr "Clôre"
 
 #~ msgid "broom"
 #~ msgstr "ramon"
-
-#~ msgid "&Finish Polyline"
-#~ msgstr "&Fini poliroye"
 
 #~ msgid "Press shift-mouseclick to end the polyline."
 #~ msgstr "Tchôkî MAJ+clitch del sori po fini l' poliroye."
