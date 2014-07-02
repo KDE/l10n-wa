@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-07-01 01:42+0000\n"
+"POT-Creation-Date: 2014-07-02 01:43+0000\n"
 "PO-Revision-Date: 2011-01-17 21:35+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -125,7 +125,7 @@ msgstr "Clôre"
 msgid "&Restart Krita"
 msgstr ""
 
-#: gemini/desktopviewproxy.cpp:124 gemini/MainWindow.cpp:534
+#: gemini/desktopviewproxy.cpp:124 gemini/MainWindow.cpp:545
 #, fuzzy
 #| msgid "Open in New Documents"
 msgid "Open Document"
@@ -217,7 +217,7 @@ msgstr "Apontiaedjes"
 msgid "Brushes and Stuff"
 msgstr "Pincea eyet stofes"
 
-#: gemini/main.cpp:70 gemini/MainWindow.cpp:245 gemini/MainWindow.cpp:287
+#: gemini/main.cpp:70 gemini/MainWindow.cpp:251 gemini/MainWindow.cpp:293
 #, fuzzy
 #| msgid "Krita %1"
 msgid "Krita Gemini"
@@ -249,14 +249,18 @@ msgstr ""
 msgid "Use full-screen display"
 msgstr "pwès del pression "
 
-#: gemini/MainWindow.cpp:286 gemini/MainWindow.cpp:625
+#: gemini/main.cpp:85
+msgid "Start with the Sketch interface"
+msgstr ""
+
+#: gemini/MainWindow.cpp:292 gemini/MainWindow.cpp:636
 #: sketch/MainWindow.cpp:150
 #, fuzzy
 #| msgid "untitled-1"
 msgid "Untitled"
 msgstr "sins no-1"
 
-#: gemini/MainWindow.cpp:628
+#: gemini/MainWindow.cpp:639
 #, kde-format
 msgid ""
 "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save it?"
@@ -7936,7 +7940,6 @@ msgstr "Grandeu a l' astcheyance"
 #: plugins/paintops/libpaintop/kis_dynamic_sensor.h:46
 #: plugins/paintops/libpaintop/kis_pressure_rotation_option.cpp:29
 #: plugins/paintops/spray/wdgshapedynamicsoptions.ui:42
-#: plugins/tools/defaulttools/kis_tool_line.cc:72
 msgid "Rotation"
 msgstr "Tournaedje"
 
@@ -8565,7 +8568,6 @@ msgstr "Incremintå"
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
 #: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:74
 #: plugins/paintops/libpaintop/kis_dynamic_sensor.h:47
-#: plugins/tools/defaulttools/kis_tool_line.cc:70
 msgid "Pressure"
 msgstr "Pression"
 
@@ -10703,38 +10705,26 @@ msgstr "Soû do discrenlaedje:"
 msgid "Draw a gradient."
 msgstr "Dessiner on gradyint"
 
-#: plugins/tools/defaulttools/kis_tool_line.cc:71
-#, fuzzy
-#| msgid "X-Tilt"
-msgid "Tilt"
-msgstr "Xhil X"
-
-#: plugins/tools/defaulttools/kis_tool_line.cc:73
-#, fuzzy
-#| msgid "Z- Test pressure"
-msgid "Tangential Pressure"
-msgstr "Z- Asprouver pression"
-
-#: plugins/tools/defaulttools/kis_tool_line.cc:74
-#, fuzzy
-#| msgid "Clear Points"
-msgid "Varying End-Points"
-msgstr "Disfacer ponts"
-
-#: plugins/tools/defaulttools/kis_tool_line.cc:186
+#: plugins/tools/defaulttools/kis_tool_line.cc:54
 #, fuzzy
 #| msgid "Dashed Lines"
 msgctxt "(qtundo-format)"
 msgid "Draw Line"
 msgstr "Royes a pontiaedjes"
 
-#: plugins/tools/defaulttools/kis_tool_line.cc:259
+#: plugins/tools/defaulttools/kis_tool_line.cc:79
+#, fuzzy
+#| msgid "Color"
+msgid "Use sensors"
+msgstr "Coleur"
+
+#: plugins/tools/defaulttools/kis_tool_line.cc:240
 msgid ""
 "Alt+Drag will move the origin of the currently displayed line around, Shift"
 "+Drag will force you to draw straight lines"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_line.h:85
+#: plugins/tools/defaulttools/kis_tool_line.h:93
 #, fuzzy
 #| msgid "&Painter's Tools"
 msgid "Line Tool"
@@ -13291,7 +13281,7 @@ msgid "Edit Mouse Wheel Input"
 msgstr ""
 
 #: ui/input/kis_abstract_input_action.cpp:44
-#: ui/input/kis_tool_invocation_action.cpp:49
+#: ui/input/kis_tool_invocation_action.cpp:50
 #, fuzzy
 #| msgid "Active"
 msgid "Activate"
@@ -13654,27 +13644,33 @@ msgstr "Palete"
 msgid "The <i>Show Popup Palette</i> displays the popup palette."
 msgstr ""
 
-#: ui/input/kis_tool_invocation_action.cpp:45
+#: ui/input/kis_tool_invocation_action.cpp:46
 #, fuzzy
 #| msgid "Tool information"
 msgid "Tool Invocation"
 msgstr "Pondants et djondants d' l' usteye"
 
-#: ui/input/kis_tool_invocation_action.cpp:46
+#: ui/input/kis_tool_invocation_action.cpp:47
 msgid ""
 "The <i>Tool Invocation</i> action invokes the current tool, for example, "
 "using the brush tool, it will start painting."
 msgstr ""
 
-#: ui/input/kis_tool_invocation_action.cpp:50
+#: ui/input/kis_tool_invocation_action.cpp:51
 #, fuzzy
 #| msgid "Confetti"
 msgid "Confirm"
 msgstr "Confeti"
 
-#: ui/input/kis_tool_invocation_action.cpp:51 ui/kis_view2.cpp:570
+#: ui/input/kis_tool_invocation_action.cpp:52 ui/kis_view2.cpp:570
 msgid "Cancel"
 msgstr "Rinoncî"
+
+#: ui/input/kis_tool_invocation_action.cpp:53
+#, fuzzy
+#| msgid "Active Layer"
+msgid "Activate Line Tool"
+msgstr "Coûtche en alaedje"
 
 #: ui/input/kis_zoom_action.cpp:112
 #, fuzzy
@@ -15416,6 +15412,21 @@ msgstr ""
 #| msgid "Close"
 msgid "&Close"
 msgstr "Clôre"
+
+#, fuzzy
+#~| msgid "X-Tilt"
+#~ msgid "Tilt"
+#~ msgstr "Xhil X"
+
+#, fuzzy
+#~| msgid "Z- Test pressure"
+#~ msgid "Tangential Pressure"
+#~ msgstr "Z- Asprouver pression"
+
+#, fuzzy
+#~| msgid "Clear Points"
+#~ msgid "Varying End-Points"
+#~ msgstr "Disfacer ponts"
 
 #, fuzzy
 #~| msgid "Gradient"
