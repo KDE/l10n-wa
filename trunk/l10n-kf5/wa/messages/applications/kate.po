@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-03-03 01:29+0000\n"
+"POT-Creation-Date: 2014-07-26 08:27+0000\n"
 "PO-Revision-Date: 2011-07-17 15:37+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -27,7 +27,59 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "LorintHendschel@skynet.be,jean.cayron@gmail.com"
 
-#: app/kateapp.cpp:222 app/kateapp.cpp:350
+#. i18n: ectx: Menu (file)
+#: data/kateui.rc:6
+msgid "&File"
+msgstr "&Fitchî"
+
+#. i18n: ectx: Menu (edit)
+#: data/kateui.rc:32
+msgid "&Edit"
+msgstr "&Candjî"
+
+#. i18n: ectx: Menu (view)
+#: data/kateui.rc:43
+msgid "&View"
+msgstr "&Vey"
+
+#. i18n: ectx: Menu (view-split)
+#: data/kateui.rc:51
+#, fuzzy
+#| msgid "Split Ve&rtical"
+msgid "Split View"
+msgstr "Dispårti l' vuwe &hintche/droete"
+
+#. i18n: ectx: Menu (tools)
+#: data/kateui.rc:77
+msgid "&Tools"
+msgstr "&Usteyes"
+
+#. i18n: ectx: Menu (sessions)
+#: data/kateui.rc:85
+msgid "Sess&ions"
+msgstr "&Sessions"
+
+#. i18n: ectx: Menu (settings)
+#: data/kateui.rc:96
+msgid "&Settings"
+msgstr "A&pontiaedjes"
+
+#. i18n: ectx: Menu (help)
+#: data/kateui.rc:101
+msgid "&Help"
+msgstr "&Aidance"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: data/kateui.rc:106
+msgid "Main Toolbar"
+msgstr "&Mwaisse bår ås usteyes"
+
+#. i18n: ectx: Menu (viewspace_popup_statusbar)
+#: data/kateui.rc:139
+msgid "&Status Bar Items"
+msgstr ""
+
+#: src/kateapp.cpp:203 src/kateapp.cpp:316
 #, kde-format
 msgid ""
 "The file '%1' could not be opened: it is not a normal file, it is a folder."
@@ -35,114 +87,35 @@ msgstr ""
 "Li fitchî « %1 » ni sai nén esse drovi: çou n' est nén on normå fitchî, c' "
 "est on ridant."
 
-#: app/kateappcommands.cpp:91
-#, fuzzy
-#| msgid "Documents Modified on Disk"
-msgid "All documents written to disk"
-msgstr "Documints candjîs sol plake"
-
-#: app/kateappcommands.cpp:94
-#, fuzzy
-#| msgid "Documents Modified on Disk"
-msgid "Document written to disk"
-msgstr "Documints candjîs sol plake"
-
-#: app/kateappcommands.cpp:201
-msgid ""
-"<p><b>w/wa &mdash; write document(s) to disk</b></p><p>Usage: <tt><b>w[a]</"
-"b></tt></p><p>Writes the current document(s) to disk. It can be called in "
-"two ways:<br /> <tt>w</tt> &mdash; writes the current document to disk<br /> "
-"<tt>wa</tt> &mdash; writes all documents to disk.</p><p>If no file name is "
-"associated with the document, a file dialog will be shown.</p>"
-msgstr ""
-
-#: app/kateappcommands.cpp:212
-msgid ""
-"<p><b>q/qa/wq/wqa &mdash; [write and] quit</b></p><p>Usage: <tt><b>[w]q[a]</"
-"b></tt></p><p>Quits the application. If <tt>w</tt> is prepended, it also "
-"writes the document(s) to disk. This command can be called in several ways:"
-"<br /> <tt>q</tt> &mdash; closes the current view.<br /> <tt>qa</tt> &mdash; "
-"closes all views, effectively quitting the application.<br /> <tt>wq</tt> "
-"&mdash; writes the current document to disk and closes its view.<br /> "
-"<tt>wqa</tt> &mdash; writes all documents to disk and quits.</p><p>In all "
-"cases, if the view being closed is the last view, the application quits. If "
-"no file name is associated with the document and it should be written to "
-"disk, a file dialog will be shown.</p>"
-msgstr ""
-
-#: app/kateappcommands.cpp:227
-msgid ""
-"<p><b>x/xa &mdash; write and quit</b></p><p>Usage: <tt><b>x[a]</b></tt></"
-"p><p>Saves document(s) and quits (e<b>x</b>its). This command can be called "
-"in two ways:<br /> <tt>x</tt> &mdash; closes the current view.<br /> <tt>xa</"
-"tt> &mdash; closes all views, effectively quitting the application.</p><p>In "
-"all cases, if the view being closed is the last view, the application quits. "
-"If no file name is associated with the document and it should be written to "
-"disk, a file dialog will be shown.</p><p>Unlike the 'w' commands, this "
-"command only writes the document if it is modified.</p>"
-msgstr ""
-
-#: app/kateappcommands.cpp:241
-msgid ""
-"<p><b>sp,split&mdash; Split horizontally the current view into two</b></"
-"p><p>Usage: <tt><b>sp[lit]</b></tt></p><p>The result is two views on the "
-"same document.</p>"
-msgstr ""
-
-#: app/kateappcommands.cpp:247
-msgid ""
-"<p><b>vs,vsplit&mdash; Split vertically the current view into two</b></"
-"p><p>Usage: <tt><b>vs[plit]</b></tt></p><p>The result is two views on the "
-"same document.</p>"
-msgstr ""
-
-#: app/kateappcommands.cpp:253
-msgid ""
-"<p><b>[v]new &mdash; split view and create new document</b></p><p>Usage: "
-"<tt><b>[v]new</b></tt></p><p>Splits the current view and opens a new "
-"document in the new view. This command can be called in two ways:<br /> "
-"<tt>new</tt> &mdash; splits the view horizontally and opens a new document."
-"<br /> <tt>vnew</tt> &mdash; splits the view vertically and opens a new "
-"document.<br /></p>"
-msgstr ""
-
-#: app/kateappcommands.cpp:263
-msgid ""
-"<p><b>e[dit] &mdash; reload current document</b></p><p>Usage: <tt><b>e[dit]</"
-"b></tt></p><p>Starts <b>e</b>diting the current document again. This is "
-"useful to re-edit the current file, when it has been changed by another "
-"program.</p>"
-msgstr ""
-
-#: app/kateconfigdialog.cpp:59
+#: src/kateconfigdialog.cpp:57
 msgid "Configure"
 msgstr "Apontyî"
 
-#: app/kateconfigdialog.cpp:70
+#: src/kateconfigdialog.cpp:66
 msgid "Application"
 msgstr "Programe"
 
-#: app/kateconfigdialog.cpp:72
+#: src/kateconfigdialog.cpp:68
 msgid "Application Options"
 msgstr "Tchuzes do programe"
 
-#: app/kateconfigdialog.cpp:77
+#: src/kateconfigdialog.cpp:73
 msgid "General"
 msgstr "Djenerå"
 
-#: app/kateconfigdialog.cpp:78
+#: src/kateconfigdialog.cpp:74
 msgid "General Options"
 msgstr "Tchuzes djeneråles"
 
-#: app/kateconfigdialog.cpp:86
+#: src/kateconfigdialog.cpp:82
 msgid "&Behavior"
 msgstr "&Dujhance"
 
-#: app/kateconfigdialog.cpp:92
+#: src/kateconfigdialog.cpp:88
 msgid "Wa&rn about files modified by foreign processes"
 msgstr "&Prévni cwand des fitchîs sont candjîs pa des etrindjirs processus"
 
-#: app/kateconfigdialog.cpp:95
+#: src/kateconfigdialog.cpp:91
 msgid ""
 "If enabled, when Kate receives focus you will be asked what to do with files "
 "that have been modified on the hard disk. If not enabled, you will be asked "
@@ -150,84 +123,54 @@ msgid ""
 "that file is tried to be saved."
 msgstr ""
 
-#: app/kateconfigdialog.cpp:106
+#: src/kateconfigdialog.cpp:102
 msgid "Meta-Information"
 msgstr "Meta-informåcion"
 
-#: app/kateconfigdialog.cpp:112
+#: src/kateconfigdialog.cpp:108
 msgid "Keep &meta-information past sessions"
 msgstr "Wårder l' &meta-informåcion des sessions di passêyes"
 
-#: app/kateconfigdialog.cpp:115
+#: src/kateconfigdialog.cpp:111
 msgid ""
 "Check this if you want document configuration like for example bookmarks to "
 "be saved past editor sessions. The configuration will be restored if the "
 "document has not changed when reopened."
 msgstr ""
 
-#: app/kateconfigdialog.cpp:125
+#: src/kateconfigdialog.cpp:123
 msgid "&Delete unused meta-information after:"
 msgstr "D&isfacer les meta-informåcion nén eployeyes après:"
 
-#: app/kateconfigdialog.cpp:128
+#: src/kateconfigdialog.cpp:127
 msgid "(never)"
 msgstr "(måy)"
 
-#: app/kateconfigdialog.cpp:143
+#: src/kateconfigdialog.cpp:142
 msgid "Sessions"
 msgstr "Sessions"
 
-#: app/kateconfigdialog.cpp:144
+#: src/kateconfigdialog.cpp:143
 msgid "Session Management"
 msgstr "Manaedjmint des sessions"
 
-#: app/kateconfigdialog.cpp:151
-msgid "Elements of Sessions"
-msgstr "Elemints des sessions"
-
-#: app/kateconfigdialog.cpp:157
-msgid "Include &window configuration"
-msgstr "Mete divins l' apontiaedje del &finiesse"
-
-#: app/kateconfigdialog.cpp:159
-msgid ""
-"Check this if you want all your views and frames restored each time you open "
-"Kate"
-msgstr ""
-
-#: app/kateconfigdialog.cpp:165
-msgid "Behavior on Application Startup"
-msgstr "Dujhance a l' enondaedje do programe"
-
-#: app/kateconfigdialog.cpp:169
-msgid "&Start new session"
-msgstr "&Enonder ene novele session"
-
-#: app/kateconfigdialog.cpp:170
-msgid "&Load last-used session"
-msgstr "&Tcherdjî li dierinne session d' eployeye"
-
-#: app/kateconfigdialog.cpp:171
-msgid "&Manually choose a session"
-msgstr "Tchoezi al &mwin ene session"
-
-#: app/kateconfigdialog.cpp:199
+#: src/kateconfigdialog.cpp:179
 msgid "Plugins"
 msgstr "Tchôkes-divins"
 
-#: app/kateconfigdialog.cpp:200
+#: src/kateconfigdialog.cpp:180
 msgid "Plugin Manager"
 msgstr "Manaedjeu des tchôkes-divins"
 
-#: app/kateconfigdialog.cpp:213
+#: src/kateconfigdialog.cpp:192
 msgid "Editor Component"
 msgstr "Componint d' aspougnaedje"
 
-#: app/kateconfigdialog.cpp:215
+#: src/kateconfigdialog.cpp:194
 msgid "Editor Component Options"
 msgstr "Tchuzes do componint d' aspougnaedje"
 
-#: app/kateconfigdialog.cpp:378
+#: src/kateconfigdialog.cpp:359
 #, fuzzy
 #| msgid " day(s)"
 msgctxt "The suffix of 'Delete unused meta-information after'"
@@ -236,27 +179,21 @@ msgid_plural " days"
 msgstr[0] " djoû(s)"
 msgstr[1] " djoû(s)"
 
-#: app/kateconfigplugindialogpage.cpp:71
+#: src/kateconfigplugindialogpage.cpp:78
 msgid "Name"
 msgstr "No"
 
-#: app/kateconfigplugindialogpage.cpp:71
+#: src/kateconfigplugindialogpage.cpp:78
 msgid "Comment"
 msgstr "Rawete di tecse"
 
-#: app/kateconfigplugindialogpage.cpp:73
+#: src/kateconfigplugindialogpage.cpp:80
 msgid ""
 "Here you can see all available Kate plugins. Those with a check mark are "
 "loaded, and will be loaded again the next time Kate is started."
 msgstr ""
 
-#: app/katedocmanager.cpp:67
-msgid ""
-"A KDE text-editor component could not be found.\n"
-"Please check your KDE installation."
-msgstr ""
-
-#: app/katedocmanager.cpp:326
+#: src/katedocmanager.cpp:227
 #, kde-format
 msgid ""
 "The supposedly temporary file %1 has been modified. Do you want to delete it "
@@ -264,11 +201,11 @@ msgid ""
 msgstr ""
 "Li fitchî mutoit timporaire %1 a stî candjî. El voloz disfacer cwand minme ?"
 
-#: app/katedocmanager.cpp:328
+#: src/katedocmanager.cpp:229
 msgid "Delete File?"
 msgstr "Disfacer fitchî ?"
 
-#: app/katedocmanager.cpp:469
+#: src/katedocmanager.cpp:336
 #, kde-format
 msgid ""
 "<p>The document '%1' has been modified, but not saved.</p><p>Do you want to "
@@ -277,370 +214,81 @@ msgstr ""
 "<p>Li documint '%1' a stî candjî, mins nén schapé.</p><p>Voloz vs schaper "
 "vos candjmints ou les passer?</p>"
 
-#: app/katedocmanager.cpp:471
+#: src/katedocmanager.cpp:338 src/katetabbutton.cpp:44
 msgid "Close Document"
 msgstr "Clôre li documint"
 
-#: app/katedocmanager.cpp:478
+#: src/katedocmanager.cpp:345
 msgid "Save As"
 msgstr "Schaper eyet rlomer"
 
-#: app/katedocmanager.cpp:504 app/katemainwindow.cpp:461
+#: src/katedocmanager.cpp:369 src/katemainwindow.cpp:475
 msgid "New file opened while trying to close Kate, closing aborted."
 msgstr ""
 "Novea fitchî drovou sol tins k' dji sayîve di clôre Kate. Clôre a stî "
 "abandné."
 
-#: app/katedocmanager.cpp:505 app/katemainwindow.cpp:462
+#: src/katedocmanager.cpp:370 src/katemainwindow.cpp:476
 msgid "Closing Aborted"
 msgstr "Clôre a stî abandné"
 
-#: app/katedocmanager.cpp:586
+#: src/katedocmanager.cpp:445
 msgid "Starting Up"
 msgstr "Enondaedje"
 
-#: app/katedocmanager.cpp:587
+#: src/katedocmanager.cpp:446
 msgid "Reopening files from the last session..."
 msgstr "Ridrovi des fitchî del dierinne session..."
 
-#: app/katedocmanager.cpp:773
+#: src/katedocmanager.cpp:614
 msgid "Errors/Warnings while opening documents"
 msgstr "Arokes/Astemes å drovaedje des documints"
 
-#: app/katemain.cpp:81
-msgid "Kate"
-msgstr "Kate"
-
-#: app/katemain.cpp:82
-msgid "Kate - Advanced Text Editor"
-msgstr "Kata - Aspougneu di tecse po spepieus"
-
-#: app/katemain.cpp:83
-#, fuzzy
-#| msgid "(c) 2000-2005 The Kate Authors"
-msgid "(c) 2000-2013 The Kate Authors"
-msgstr "© 2000-2005 Les oteurs di Kate"
-
-#: app/katemain.cpp:85
-msgid "Christoph Cullmann"
-msgstr "Christophe Cullmann"
-
-#: app/katemain.cpp:85
-msgid "Maintainer"
-msgstr "Mintneu"
-
-#: app/katemain.cpp:86
-msgid "Anders Lund"
-msgstr "Anders Lund"
-
-#: app/katemain.cpp:86 app/katemain.cpp:87 app/katemain.cpp:88
-#: app/katemain.cpp:95
-msgid "Core Developer"
-msgstr "Mwaisse diswalpeu"
-
-#: app/katemain.cpp:87
-msgid "Joseph Wenninger"
-msgstr "Joseph Wenninger"
-
-#: app/katemain.cpp:88
-msgid "Hamish Rodda"
-msgstr "Hamish Rodda"
-
-#: app/katemain.cpp:89
-msgid "Dominik Haumann"
-msgstr "Dominik Haumann"
-
-#: app/katemain.cpp:89
-msgid "Developer & Highlight wizard"
-msgstr "Programeu, metaedje en evidince del sintacse"
-
-#: app/katemain.cpp:90
-#, fuzzy
-#| msgid "Anders Lund"
-msgid "Alexander Neundorf"
-msgstr "Anders Lund"
-
-#: app/katemain.cpp:90
-#, fuzzy
-#| msgid "Core Developer"
-msgid "Developer"
-msgstr "Mwaisse diswalpeu"
-
-#: app/katemain.cpp:91
-msgid "Waldo Bastian"
-msgstr "Waldo Bastian"
-
-#: app/katemain.cpp:91
-msgid "The cool buffersystem"
-msgstr "Li clapant sistinme di tampon"
-
-#: app/katemain.cpp:92
-msgid "Charles Samuels"
-msgstr "Charles Samuels"
-
-#: app/katemain.cpp:92
-msgid "The Editing Commands"
-msgstr "Les comandes d' aspougnaedje"
-
-#: app/katemain.cpp:93
-msgid "Matt Newell"
-msgstr "Matt Newell"
-
-#: app/katemain.cpp:93
-msgid "Testing, ..."
-msgstr "Sayaedjes, ..."
-
-#: app/katemain.cpp:94
-msgid "Michael Bartl"
-msgstr "Michael Bartl"
-
-#: app/katemain.cpp:94
-msgid "Former Core Developer"
-msgstr "Ancyin mwaisse diswalpeu"
-
-#: app/katemain.cpp:95
-msgid "Michael McCallum"
-msgstr "Michael McCallum"
-
-#: app/katemain.cpp:96
-msgid "Jochen Wilhemly"
-msgstr "Jochen Wilhemly"
-
-#: app/katemain.cpp:96
-msgid "KWrite Author"
-msgstr "Oteur di KWrite"
-
-#: app/katemain.cpp:97
-msgid "Michael Koch"
-msgstr "Michael Koch"
-
-#: app/katemain.cpp:97
-msgid "KWrite port to KParts"
-msgstr "Poirtaedje KParts po KWrite"
-
-#: app/katemain.cpp:98
-msgid "Christian Gebauer"
-msgstr "Christian Gebauer"
-
-#: app/katemain.cpp:99
-msgid "Simon Hausmann"
-msgstr "Simon Hausmann"
-
-#: app/katemain.cpp:100
-msgid "Glen Parker"
-msgstr "Glen Parker"
-
-#: app/katemain.cpp:100
-msgid "KWrite Undo History, Kspell integration"
-msgstr "Istwere des disfijhaedjes, eployaedje di Kspell"
-
-#: app/katemain.cpp:101
-msgid "Scott Manson"
-msgstr "Scott Manson"
-
-#: app/katemain.cpp:101
-msgid "KWrite XML Syntax highlighting support"
-msgstr "Metaedje e valeur del sintacse XML"
-
-#: app/katemain.cpp:102
-msgid "John Firebaugh"
-msgstr "John Firebaugh"
-
-#: app/katemain.cpp:102
-msgid "Patches and more"
-msgstr "Coridjaedjes et co d' pus"
-
-#: app/katemain.cpp:103
-msgid "Pablo Martín"
-msgstr ""
-
-#: app/katemain.cpp:103
-#, fuzzy
-#| msgid "Plugins"
-msgid "Python Plugin Developer"
-msgstr "Tchôkes-divins"
-
-#: app/katemain.cpp:104
-msgid "Gerald Senarclens de Grancy"
-msgstr ""
-
-#: app/katemain.cpp:104
-msgid "QA and Scripting"
-msgstr ""
-
-#: app/katemain.cpp:106
-msgid "Matteo Merli"
-msgstr "Matteo Merli"
-
-#: app/katemain.cpp:106
-msgid "Highlighting for RPM Spec-Files, Perl, Diff and more"
-msgstr ""
-"Metaedje en evidince po les fitchîs spec des RPM, Perl, Diff eyet co d' pus"
-
-#: app/katemain.cpp:107
-msgid "Rocky Scaletta"
-msgstr "Rocky Scaletta"
-
-#: app/katemain.cpp:107
-msgid "Highlighting for VHDL"
-msgstr "Metaedje en evidince po VHDL"
-
-#: app/katemain.cpp:108
-msgid "Yury Lebedev"
-msgstr "Youri Lebedev"
-
-#: app/katemain.cpp:108
-msgid "Highlighting for SQL"
-msgstr "Metaedje en evidince po SQL"
-
-#: app/katemain.cpp:109
-msgid "Chris Ross"
-msgstr "Chris Ross"
-
-#: app/katemain.cpp:109
-msgid "Highlighting for Ferite"
-msgstr "Metaedje en evidince po Ferite"
-
-#: app/katemain.cpp:110
-msgid "Nick Roux"
-msgstr "Nick Roux"
-
-#: app/katemain.cpp:110
-msgid "Highlighting for ILERPG"
-msgstr "Metaedje en evidince po ILERPG"
-
-#: app/katemain.cpp:111
-msgid "Carsten Niehaus"
-msgstr "Carsten Niehaus"
-
-#: app/katemain.cpp:111
-msgid "Highlighting for LaTeX"
-msgstr "Metaedje en evidince po LaTeX"
-
-#: app/katemain.cpp:112
-msgid "Per Wigren"
-msgstr "Per Wigren"
-
-#: app/katemain.cpp:112
-msgid "Highlighting for Makefiles, Python"
-msgstr "Metaedje en evidince po les fitchîs Makefile eyet Python"
-
-#: app/katemain.cpp:113
-msgid "Jan Fritz"
-msgstr "Jan Fritz"
-
-#: app/katemain.cpp:113
-msgid "Highlighting for Python"
-msgstr "Metaedje en evidince po Python"
-
-#: app/katemain.cpp:114
-msgid "Daniel Naber"
-msgstr "Daniel Naber"
-
-#: app/katemain.cpp:115
-msgid "Roland Pabel"
-msgstr "Roland Pabel"
-
-#: app/katemain.cpp:115
-msgid "Highlighting for Scheme"
-msgstr "Metaedje en evidince po Scheme"
-
-#: app/katemain.cpp:116
-msgid "Cristi Dumitrescu"
-msgstr "Cristi Dumitrescu"
-
-#: app/katemain.cpp:116
-msgid "PHP Keyword/Datatype list"
-msgstr "Djivêye des mots clés et sôres di dnêyes PHP"
-
-#: app/katemain.cpp:117
-msgid "Carsten Pfeiffer"
-msgstr "Carsten Pfeiffer"
-
-#: app/katemain.cpp:117
-msgid "Very nice help"
-msgstr "Clapante aidance"
-
-#: app/katemain.cpp:118
-msgid "All people who have contributed and I have forgotten to mention"
-msgstr "Totes les djins k' ont aidî et k' dj' a rovyî d' dire li no"
-
-#: app/katemain.cpp:125
-msgid "Start Kate with a given session"
-msgstr "Enonder Kate avou ene session dinêye"
-
-#: app/katemain.cpp:126
-#, fuzzy
-#| msgid "Start Kate with a given session"
-msgid "Start Kate with a new anonymous session, implies '-n'"
-msgstr "Enonder Kate avou ene session dinêye"
-
-#: app/katemain.cpp:128
-msgid ""
-"Force start of a new kate instance (is ignored if start is used and another "
-"kate instance already has the given session opened), forced if no parameters "
-"and no URLs are given at all"
-msgstr ""
-
-#: app/katemain.cpp:130
-msgid ""
-"If using an already running kate instance, block until it exits, if URLs "
-"given to open"
-msgstr ""
-
-#: app/katemain.cpp:132
-msgid ""
-"Only try to reuse kate instance with this pid (is ignored if start is used "
-"and another kate instance already has the given session opened)"
-msgstr ""
-
-#: app/katemain.cpp:134
-msgid "Set encoding for the file to open"
-msgstr "Defini l' ecôdaedje pol fitchî a drovi"
-
-#: app/katemain.cpp:136
-msgid "Navigate to this line"
-msgstr "Potchî a cisse roye"
-
-#: app/katemain.cpp:138
-msgid "Navigate to this column"
-msgstr "Potchî a cisse colone"
-
-#: app/katemain.cpp:140
-msgid "Read the contents of stdin"
-msgstr "Lére çou k' i gn a dins stdin"
-
-#: app/katemain.cpp:142
-msgid "Reuse existing Kate instance; default, only for compatibility"
-msgstr ""
-
-#: app/katemain.cpp:143
-msgid "Document to open"
-msgstr "Documint a drovi"
-
-#: app/katemainwindow.cpp:230
+#: src/katemainwindow.cpp:241
 msgid "Use this command to show or hide the view's statusbar"
 msgstr "Eployî cisse comande po mostrer ou catchî l' bår d' estat del vuwe"
 
-#: app/katemainwindow.cpp:233
+#: src/katemainwindow.cpp:244
+#, fuzzy
+#| msgid "Show Side&bars"
+msgid "Show &Tabs"
+msgstr "Mostrer les &båres di costé"
+
+#: src/katemainwindow.cpp:247
+#, fuzzy
+#| msgid "Use this command to show or hide the view's statusbar"
+msgid "Use this command to show or hide the tabs for the views"
+msgstr "Eployî cisse comande po mostrer ou catchî l' bår d' estat del vuwe"
+
+#: src/katemainwindow.cpp:249
 #, fuzzy
 #| msgid "Sho&w Path"
 msgid "Sho&w Path in Titlebar"
 msgstr "Mostrer l' &tchimin"
 
-#: app/katemainwindow.cpp:236
+#: src/katemainwindow.cpp:252
 msgid "Show the complete document path in the window caption"
 msgstr "Mostere tot l' tchimin do documint el finiesse"
 
-#: app/katemainwindow.cpp:270
+#: src/katemainwindow.cpp:257
+msgid "&Quick Open"
+msgstr "&Rade drovi"
+
+#: src/katemainwindow.cpp:263
+#, fuzzy
+#| msgid "Close other open documents."
+msgid "Open a form to quick open documents."
+msgstr "Clôre les ôtes documints di drovous."
+
+#: src/katemainwindow.cpp:296
 msgid "Create a new document"
 msgstr "Ahiver on novea documint"
 
-#: app/katemainwindow.cpp:272
+#: src/katemainwindow.cpp:298
 msgid "Open an existing document for editing"
 msgstr "Drovi on documint egzistant po l' aspougnî"
 
-#: app/katemainwindow.cpp:276
+#: src/katemainwindow.cpp:303
 msgid ""
 "This lists files which you have opened recently, and allows you to easily "
 "open them again."
@@ -648,242 +296,228 @@ msgstr ""
 "Çoula mostere ene djivêye des fitchîs ki vos avoz dierinnmint drovou, et vs "
 "permete delzès rdrovi åjheymint."
 
-#: app/katemainwindow.cpp:280
+#: src/katemainwindow.cpp:307
 msgid "Save A&ll"
 msgstr "Schaper &ttafwait"
 
-#: app/katemainwindow.cpp:283
+#: src/katemainwindow.cpp:310
 msgid "Save all open, modified documents to disk."
 msgstr "Schape el deure plake tos les documints drovous et candjîs."
 
-#: app/katemainwindow.cpp:286
+#: src/katemainwindow.cpp:313
 msgid "&Reload All"
 msgstr "&Ritcherdjî ttafwait"
 
-#: app/katemainwindow.cpp:288
+#: src/katemainwindow.cpp:315
 msgid "Reload all open documents."
 msgstr "Ritcherdjî tos les documints di drovous."
 
-#: app/katemainwindow.cpp:291
+#: src/katemainwindow.cpp:318
 msgid "Close Orphaned"
 msgstr "Clôre orfulins"
 
-#: app/katemainwindow.cpp:293
+#: src/katemainwindow.cpp:320
 msgid ""
 "Close all documents in the file list that could not be reopened, because "
 "they are not accessible anymore."
 msgstr ""
 
-#: app/katemainwindow.cpp:296 filetree/katefiletree.cpp:58
+#: src/katemainwindow.cpp:323
 msgid "Close the current document."
 msgstr "Clôre li documint do moumint."
 
-#: app/katemainwindow.cpp:299
+#: src/katemainwindow.cpp:326
 msgid "Close Other"
 msgstr "Clôre ls ôtes"
 
-#: app/katemainwindow.cpp:301
+#: src/katemainwindow.cpp:328
 msgid "Close other open documents."
 msgstr "Clôre les ôtes documints di drovous."
 
-#: app/katemainwindow.cpp:304
+#: src/katemainwindow.cpp:331
 msgid "Clos&e All"
 msgstr "Clôr&e totafwait"
 
-#: app/katemainwindow.cpp:306
+#: src/katemainwindow.cpp:333
 msgid "Close all open documents."
 msgstr "Clôre tos les documints di drovous."
 
-#: app/katemainwindow.cpp:311
+#: src/katemainwindow.cpp:338
 msgid "Close this window"
 msgstr "Clôre cisse finiesse chal"
 
-#: app/katemainwindow.cpp:315
+#: src/katemainwindow.cpp:342
 msgid "&New Window"
 msgstr "&Novele finiesse"
 
-#: app/katemainwindow.cpp:317
+#: src/katemainwindow.cpp:344
 msgid "Create a new Kate view (a new window with the same document list)."
 msgstr ""
 "Ahiver ene novele vuwe di Kate (ene novele finiesse avou l' minme djivêye "
 "des documints)."
 
-#: app/katemainwindow.cpp:321
-msgid "&Quick Open"
-msgstr "&Rade drovi"
-
-#: app/katemainwindow.cpp:327
-#, fuzzy
-#| msgid "Close other open documents."
-msgid "Open a form to quick open documents."
-msgstr "Clôre les ôtes documints di drovous."
-
-#: app/katemainwindow.cpp:333
+#: src/katemainwindow.cpp:350
 msgid "Open W&ith"
 msgstr "Drovi a&vou"
 
-#: app/katemainwindow.cpp:335
+#: src/katemainwindow.cpp:352
 msgid ""
 "Open the current document using another application registered for its file "
 "type, or an application of your choice."
 msgstr ""
 
-#: app/katemainwindow.cpp:340
+#: src/katemainwindow.cpp:357
 msgid "Configure the application's keyboard shortcut assignments."
 msgstr "Apontyî les aroyaedjes des rascourti programe del taprece."
 
-#: app/katemainwindow.cpp:343
+#: src/katemainwindow.cpp:360
 msgid "Configure which items should appear in the toolbar(s)."
 msgstr "Aponteye kés cayets duvrént aparete el båre(s) ås usteye."
 
-#: app/katemainwindow.cpp:346
+#: src/katemainwindow.cpp:363
 msgid ""
 "Configure various aspects of this application and the editing component."
 msgstr ""
 
-#: app/katemainwindow.cpp:350
-msgid "This shows useful tips on the use of this application."
-msgstr ""
-
-#: app/katemainwindow.cpp:355
+#: src/katemainwindow.cpp:367
 msgid "&Plugins Handbook"
 msgstr "&Live des tchôkes-divins"
 
-#: app/katemainwindow.cpp:357
+#: src/katemainwindow.cpp:369
 msgid "This shows help files for various available plugins."
 msgstr ""
 
-#: app/katemainwindow.cpp:361
+#: src/katemainwindow.cpp:373
 msgid "&About Editor Component"
 msgstr "Åd fw&ait do componint aspougneu"
 
-#: app/katemainwindow.cpp:376
+#: src/katemainwindow.cpp:390
 msgctxt "Menu entry Session->New"
 msgid "&New"
 msgstr "&Novea"
 
-#: app/katemainwindow.cpp:381
+#: src/katemainwindow.cpp:395
 #, fuzzy
 #| msgid "Open Session"
 msgid "&Open Session"
 msgstr "Drovi ene session"
 
-#: app/katemainwindow.cpp:386
+#: src/katemainwindow.cpp:400
 #, fuzzy
 #| msgid "&Save session"
 msgid "&Save Session"
 msgstr "&Schaper l' session"
 
-#: app/katemainwindow.cpp:390
+#: src/katemainwindow.cpp:404
 #, fuzzy
 #| msgid "Save Session?"
 msgid "Save Session &As..."
 msgstr "Schaper li session?"
 
-#: app/katemainwindow.cpp:394
+#: src/katemainwindow.cpp:408
 #, fuzzy
 #| msgid "Manage Sessions"
 msgid "&Manage Sessions..."
 msgstr "Manaedjî les sessions"
 
-#: app/katemainwindow.cpp:399
+#: src/katemainwindow.cpp:413
 #, fuzzy
 #| msgid "Open Session"
 msgid "&Quick Open Session"
 msgstr "Drovi ene session"
 
-#: app/katemainwindow.cpp:406
+#: src/katemainwindow.cpp:420
 msgid "This will close all open documents. Are you sure you want to continue?"
 msgstr ""
 
-#: app/katemainwindow.cpp:407
+#: src/katemainwindow.cpp:421
 #, fuzzy
 #| msgid "Close all open documents."
 msgid "Close all documents"
 msgstr "Clôre tos les documints di drovous."
 
-#: app/katemainwindow.cpp:577
+#: src/katemainwindow.cpp:592
 #, kde-format
 msgid ""
 "This will hide the menu bar completely. You can show it again by typing %1."
 msgstr ""
 
-#: app/katemainwindow.cpp:579
+#: src/katemainwindow.cpp:594
 msgid "Hide menu bar"
 msgstr ""
 
-#: app/katemainwindow.cpp:800 filetree/katefiletree.cpp:244
+#: src/katemainwindow.cpp:837
 msgid "&Other..."
 msgstr "&Ôte..."
 
-#: app/katemainwindow.cpp:826 filetree/katefiletree.cpp:275
+#: src/katemainwindow.cpp:860
 #, fuzzy, kde-format
 #| msgid "Application '%1' not found!"
 msgid "Application '%1' not found."
 msgstr "Li programe '%1' n' a nén stî trové!"
 
-#: app/katemainwindow.cpp:826 filetree/katefiletree.cpp:275
+#: src/katemainwindow.cpp:860
 #, fuzzy
 #| msgid "Application not found!"
 msgid "Application not found"
 msgstr "Programe nén trové!"
 
-#: app/katemainwindow.cpp:921
+#: src/katemainwindow.cpp:961
 msgid " [read only]"
 msgstr ""
 
-#: app/katemdi.cpp:122
+#: src/katemdi.cpp:112
 msgid "Tool &Views"
 msgstr "&Vuwes des usteyes"
 
-#: app/katemdi.cpp:124
+#: src/katemdi.cpp:114
 msgid "Show Side&bars"
 msgstr "Mostrer les &båres di costé"
 
-#: app/katemdi.cpp:163
+#: src/katemdi.cpp:158
 #, kde-format
 msgid "Show %1"
 msgstr "Mostrer %1"
 
-#: app/katemdi.cpp:493
+#: src/katemdi.cpp:487
 #, fuzzy
 #| msgid "Configure Paths..."
 msgid "Configure ..."
 msgstr "Apontyî les tchmins..."
 
-#: app/katemdi.cpp:497
+#: src/katemdi.cpp:491
 msgid "Behavior"
 msgstr "Dujhance"
 
-#: app/katemdi.cpp:500
+#: src/katemdi.cpp:494
 msgid "Make Non-Persistent"
 msgstr "Ni nén wårder toltins"
 
-#: app/katemdi.cpp:500
+#: src/katemdi.cpp:494
 msgid "Make Persistent"
 msgstr "Wårder toltins"
 
-#: app/katemdi.cpp:502
+#: src/katemdi.cpp:496
 msgid "Move To"
 msgstr "Bodjî viè"
 
-#: app/katemdi.cpp:505
+#: src/katemdi.cpp:499
 msgid "Left Sidebar"
 msgstr "Hintche båre di costé"
 
-#: app/katemdi.cpp:508
+#: src/katemdi.cpp:503
 msgid "Right Sidebar"
 msgstr "Droete båre di costé"
 
-#: app/katemdi.cpp:511
+#: src/katemdi.cpp:507
 msgid "Top Sidebar"
 msgstr "Båre di costé di pa dzeu"
 
-#: app/katemdi.cpp:514
+#: src/katemdi.cpp:511
 msgid "Bottom Sidebar"
 msgstr "Båre di costé di pa dzo"
 
-#: app/katemdi.cpp:838
+#: src/katemdi.cpp:852
 #, fuzzy
 #| msgid ""
 #| "<qt>You are about to hide the sidebars. With hidden sidebars it is not "
@@ -905,35 +539,11 @@ msgstr ""
 "b> el dressêye. Si c' est co possibe di mostrer/catchî les vuwes des usteyes "
 "avou les racourtis ki vont avou.</qt>"
 
-#: app/katemwmodonhddialog.cpp:65
+#: src/katemwmodonhddialog.cpp:66
 msgid "Documents Modified on Disk"
 msgstr "Documints candjîs sol plake"
 
-#: app/katemwmodonhddialog.cpp:67
-#, fuzzy
-#| msgid "&Ignore"
-msgid "&Ignore Changes"
-msgstr "&Passer houte"
-
-#: app/katemwmodonhddialog.cpp:69
-msgid "&Reload"
-msgstr "&Ritcherdjî"
-
-#: app/katemwmodonhddialog.cpp:76
-msgid "Remove modified flag from selected documents"
-msgstr ""
-
-#: app/katemwmodonhddialog.cpp:78
-msgid "Overwrite selected documents, discarding disk changes"
-msgstr ""
-
-#: app/katemwmodonhddialog.cpp:80
-#, fuzzy
-#| msgid "Close other open documents."
-msgid "Reload selected documents from disk"
-msgstr "Clôre les ôtes documints di drovous."
-
-#: app/katemwmodonhddialog.cpp:93
+#: src/katemwmodonhddialog.cpp:83
 #, fuzzy
 #| msgid ""
 #| "<qt>The documents listed below have changed on disk.<p>Select one or more "
@@ -946,38 +556,62 @@ msgstr ""
 "ou sacwants eyet tchôkîz on boton d' accion djusk' a ç' kel djivêye soeye "
 "vude.</p></qt>"
 
-#: app/katemwmodonhddialog.cpp:100
+#: src/katemwmodonhddialog.cpp:92
 msgid "Filename"
 msgstr "No do fitchî"
 
-#: app/katemwmodonhddialog.cpp:100
+#: src/katemwmodonhddialog.cpp:92
 msgid "Status on Disk"
 msgstr "Estat sol plake"
 
-#: app/katemwmodonhddialog.cpp:106
+#: src/katemwmodonhddialog.cpp:97
 msgid "Modified"
 msgstr "Candjî"
 
-#: app/katemwmodonhddialog.cpp:106
+#: src/katemwmodonhddialog.cpp:97
 msgid "Created"
 msgstr "Ahivé"
 
-#: app/katemwmodonhddialog.cpp:106
+#: src/katemwmodonhddialog.cpp:97
 msgid "Deleted"
 msgstr "Disfacé"
 
-#: app/katemwmodonhddialog.cpp:121
+#: src/katemwmodonhddialog.cpp:111
 msgid "&View Difference"
 msgstr "&Vey les diferinces"
 
-#: app/katemwmodonhddialog.cpp:124
+#: src/katemwmodonhddialog.cpp:113
 msgid ""
 "Calculates the difference between the editor contents and the disk file for "
 "the selected document, and shows the difference with the default "
 "application. Requires diff(1)."
 msgstr ""
 
-#: app/katemwmodonhddialog.cpp:184
+#: src/katemwmodonhddialog.cpp:123
+#, fuzzy
+#| msgid "&Ignore"
+msgid "&Ignore Changes"
+msgstr "&Passer houte"
+
+#: src/katemwmodonhddialog.cpp:124
+msgid "Remove modified flag from selected documents"
+msgstr ""
+
+#: src/katemwmodonhddialog.cpp:130
+msgid "Overwrite selected documents, discarding disk changes"
+msgstr ""
+
+#: src/katemwmodonhddialog.cpp:133
+msgid "&Reload"
+msgstr "&Ritcherdjî"
+
+#: src/katemwmodonhddialog.cpp:135
+#, fuzzy
+#| msgid "Close other open documents."
+msgid "Reload selected documents from disk"
+msgstr "Clôre les ôtes documints di drovous."
+
+#: src/katemwmodonhddialog.cpp:187
 #, kde-format
 msgid ""
 "Could not save the document \n"
@@ -986,7 +620,7 @@ msgstr ""
 "Dji n' a sepou schapé l' documint \n"
 "'%1'"
 
-#: app/katemwmodonhddialog.cpp:284
+#: src/katemwmodonhddialog.cpp:292
 msgid ""
 "The diff command failed. Please make sure that diff(1) is installed and in "
 "your PATH."
@@ -994,48 +628,48 @@ msgstr ""
 "Li cmande diff a fwait berwete. Verifyîz ki diff(1) est astalé et est dins "
 "vosse PATH."
 
-#: app/katemwmodonhddialog.cpp:286
+#: src/katemwmodonhddialog.cpp:294
 msgid "Error Creating Diff"
 msgstr "Aroke en ahivant Diff"
 
-#: app/katemwmodonhddialog.cpp:295
+#: src/katemwmodonhddialog.cpp:302
 #, fuzzy
 #| msgid "Besides white space changes, the files are identical."
 msgid "Ignoring amount of white space changed, the files are identical."
 msgstr "A pårt des candmints dins ls espåces, les fitchîs sont les minmes."
 
-#: app/katemwmodonhddialog.cpp:296
+#: src/katemwmodonhddialog.cpp:303
 msgid "Diff Output"
 msgstr "Rexhowe di Diff"
 
-#: app/katequickopen.cpp:63
+#: src/katequickopen.cpp:64
 #, fuzzy
 #| msgid "Open Session"
 msgid "Quick Open Search"
 msgstr "Drovi ene session"
 
-#: app/katesavemodifieddialog.cpp:91
+#: src/katesavemodifieddialog.cpp:84
 #, kde-format
 msgid "Save As (%1)"
 msgstr "Schaper et rlomer (%1)"
 
-#: app/katesavemodifieddialog.cpp:103
+#: src/katesavemodifieddialog.cpp:94
 #, kde-format
 msgid ""
 "A file named \"%1\" already exists. Are you sure you want to overwrite it?"
 msgstr ""
 
-#: app/katesavemodifieddialog.cpp:105
+#: src/katesavemodifieddialog.cpp:96
 #, fuzzy
 #| msgid "Delete File?"
 msgid "Overwrite File?"
 msgstr "Disfacer fitchî ?"
 
-#: app/katesavemodifieddialog.cpp:181
+#: src/katesavemodifieddialog.cpp:155
 msgid "Save Documents"
 msgstr "Schaper documints"
 
-#: app/katesavemodifieddialog.cpp:198
+#: src/katesavemodifieddialog.cpp:163
 msgid ""
 "<qt>The following documents have been modified. Do you want to save them "
 "before closing?</qt>"
@@ -1043,20 +677,19 @@ msgstr ""
 "<qt>Les documints shuvants ont stî candjîs. Les voloz vs schaper divant d' "
 "les clôre?</qt>"
 
-#: app/katesavemodifieddialog.cpp:201 filetree/katefiletreeplugin.cpp:105
-#: filetree/katefiletreeplugin.cpp:179
+#: src/katesavemodifieddialog.cpp:170
 msgid "Documents"
 msgstr "Documints"
 
-#: app/katesavemodifieddialog.cpp:201
+#: src/katesavemodifieddialog.cpp:170
 msgid "Location"
 msgstr "Eplaeçmint"
 
-#: app/katesavemodifieddialog.cpp:210
+#: src/katesavemodifieddialog.cpp:180
 msgid "Se&lect All"
 msgstr "Tchoe&zi ttafwait"
 
-#: app/katesavemodifieddialog.cpp:262
+#: src/katesavemodifieddialog.cpp:252
 msgid ""
 "Data you requested to be saved could not be written. Please choose how you "
 "want to proceed."
@@ -1064,35 +697,628 @@ msgstr ""
 "Les dnêyes ki vs avoz dmandé d' schaper n' polèt nén esse sicrîtes. "
 "Tchoezixhoz, s' i vs plait, comint vs voloz fé."
 
-#: app/katesession.cpp:270
+#: src/katetabbutton.cpp:191
+#, fuzzy
+#| msgid "Highlighting for Scheme"
+msgid "&Highlight Tab"
+msgstr "Metaedje en evidince po Scheme"
+
+#: src/katetabbutton.cpp:192
+msgid "&None"
+msgstr ""
+
+#: src/katetabbutton.cpp:195
+msgid "&Red"
+msgstr ""
+
+#: src/katetabbutton.cpp:197
+msgid "&Yellow"
+msgstr ""
+
+#: src/katetabbutton.cpp:199
+msgid "&Green"
+msgstr ""
+
+#: src/katetabbutton.cpp:201
+msgid "&Cyan"
+msgstr ""
+
+#: src/katetabbutton.cpp:203
+msgid "&Blue"
+msgstr ""
+
+#: src/katetabbutton.cpp:205
+msgid "&Magenta"
+msgstr ""
+
+#: src/katetabbutton.cpp:208
+msgid "C&ustom Color..."
+msgstr ""
+
+#: src/katetabbutton.cpp:211
+#, fuzzy
+#| msgid "Close Document"
+msgid "&Close Document"
+msgstr "Clôre li documint"
+
+#: src/kateviewmanager.cpp:133
+msgid "Split Ve&rtical"
+msgstr "Dispårti l' vuwe &hintche/droete"
+
+#: src/kateviewmanager.cpp:137
+msgid "Split the currently active view vertically into two views."
+msgstr ""
+
+#: src/kateviewmanager.cpp:141
+msgid "Split &Horizontal"
+msgstr "Dispårti l' vuwe di&zeu/dizo"
+
+#: src/kateviewmanager.cpp:145
+msgid "Split the currently active view horizontally into two views."
+msgstr ""
+
+#: src/kateviewmanager.cpp:149
+msgid "Cl&ose Current View"
+msgstr "C&lôre li vuwe do moumint"
+
+#: src/kateviewmanager.cpp:153
+#, fuzzy
+#| msgid "Close the current document."
+msgid "Close the currently active split view"
+msgstr "Clôre li documint do moumint."
+
+#: src/kateviewmanager.cpp:157
+#, fuzzy
+#| msgid "Cl&ose Current View"
+msgid "Close Inactive Views"
+msgstr "C&lôre li vuwe do moumint"
+
+#: src/kateviewmanager.cpp:160
+msgid "Close every view but the active one"
+msgstr ""
+
+#: src/kateviewmanager.cpp:164
+#, fuzzy
+#| msgid "Cl&ose Current View"
+msgid "Hide Inactive Views"
+msgstr "C&lôre li vuwe do moumint"
+
+#: src/kateviewmanager.cpp:168
+msgid "Hide every view but the active one"
+msgstr ""
+
+#: src/kateviewmanager.cpp:171
+#, fuzzy
+#| msgid "Next View"
+msgid "Next Split View"
+msgstr "Vuwe shuvante"
+
+#: src/kateviewmanager.cpp:175
+msgid "Make the next split view the active one."
+msgstr ""
+
+#: src/kateviewmanager.cpp:178
+#, fuzzy
+#| msgid "Previous View"
+msgid "Previous Split View"
+msgstr "Vuwe di dvant"
+
+#: src/kateviewmanager.cpp:182
+msgid "Make the previous split view the active one."
+msgstr ""
+
+#: src/kateviewmanager.cpp:185
+msgid "Move Splitter Right"
+msgstr ""
+
+#: src/kateviewmanager.cpp:188
+msgid "Move the splitter of the current view to the right"
+msgstr ""
+
+#: src/kateviewmanager.cpp:191
+msgid "Move Splitter Left"
+msgstr ""
+
+#: src/kateviewmanager.cpp:194
+msgid "Move the splitter of the current view to the left"
+msgstr ""
+
+#: src/kateviewmanager.cpp:197
+msgid "Move Splitter Up"
+msgstr ""
+
+#: src/kateviewmanager.cpp:200
+msgid "Move the splitter of the current view up"
+msgstr ""
+
+#: src/kateviewmanager.cpp:203
+msgid "Move Splitter Down"
+msgstr ""
+
+#: src/kateviewmanager.cpp:206
+msgid "Move the splitter of the current view down"
+msgstr ""
+
+#: src/kateviewmanager.cpp:232
+msgid "Open File"
+msgstr "Drovi fitchî"
+
+#: src/kateviewmanager.cpp:248
+#, kde-format
+msgid ""
+"<p>You are attempting to open one or more large files:</p><ul>%1</ul><p>Do "
+"you want to proceed?</p><p><strong>Beware that kate may stop responding for "
+"some time when opening large files.</strong></p>"
+msgstr ""
+
+#: src/kateviewmanager.cpp:250
+#, fuzzy
+#| msgid "Open File"
+msgid "Opening Large File"
+msgstr "Drovi fitchî"
+
+#: src/kateviewspace.cpp:78 src/kateviewspace.cpp:529
+#, kde-format
+msgctxt "indicator for more documents"
+msgid "+%1"
+msgstr ""
+
+#: src/kateviewspace.cpp:83 src/kateviewspace.cpp:145
+msgid "Click here to switch to the Quick Open view."
+msgstr ""
+
+#: src/kateviewspace.cpp:96
+msgid "Control view space splitting"
+msgstr ""
+
+#: src/kateviewspace.cpp:146
+#, kde-format
+msgid ""
+"Currently, there is one more document open. To see all open documents, "
+"switch to the Quick Open view by clicking here."
+msgid_plural ""
+"Currently, there are %1 more documents open. To see all open documents, "
+"switch to the Quick Open view by clicking here."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/main.cpp:51
+msgid "Kate"
+msgstr "Kate"
+
+#: src/main.cpp:52
+msgid "Kate - Advanced Text Editor"
+msgstr "Kata - Aspougneu di tecse po spepieus"
+
+#: src/main.cpp:53
+#, fuzzy
+#| msgid "(c) 2000-2005 The Kate Authors"
+msgid "(c) 2000-2014 The Kate Authors"
+msgstr "© 2000-2005 Les oteurs di Kate"
+
+#: src/main.cpp:60
+msgid "Christoph Cullmann"
+msgstr "Christophe Cullmann"
+
+#: src/main.cpp:60
+msgid "Maintainer"
+msgstr "Mintneu"
+
+#: src/main.cpp:61
+msgid "Anders Lund"
+msgstr "Anders Lund"
+
+#: src/main.cpp:61 src/main.cpp:62 src/main.cpp:63 src/main.cpp:70
+msgid "Core Developer"
+msgstr "Mwaisse diswalpeu"
+
+#: src/main.cpp:62
+msgid "Joseph Wenninger"
+msgstr "Joseph Wenninger"
+
+#: src/main.cpp:63
+msgid "Hamish Rodda"
+msgstr "Hamish Rodda"
+
+#: src/main.cpp:64
+msgid "Dominik Haumann"
+msgstr "Dominik Haumann"
+
+#: src/main.cpp:64
+msgid "Developer & Highlight wizard"
+msgstr "Programeu, metaedje en evidince del sintacse"
+
+#: src/main.cpp:65
+#, fuzzy
+#| msgid "Anders Lund"
+msgid "Alexander Neundorf"
+msgstr "Anders Lund"
+
+#: src/main.cpp:65
+#, fuzzy
+#| msgid "Core Developer"
+msgid "Developer"
+msgstr "Mwaisse diswalpeu"
+
+#: src/main.cpp:66
+msgid "Waldo Bastian"
+msgstr "Waldo Bastian"
+
+#: src/main.cpp:66
+msgid "The cool buffersystem"
+msgstr "Li clapant sistinme di tampon"
+
+#: src/main.cpp:67
+msgid "Charles Samuels"
+msgstr "Charles Samuels"
+
+#: src/main.cpp:67
+msgid "The Editing Commands"
+msgstr "Les comandes d' aspougnaedje"
+
+#: src/main.cpp:68
+msgid "Matt Newell"
+msgstr "Matt Newell"
+
+#: src/main.cpp:68
+msgid "Testing, ..."
+msgstr "Sayaedjes, ..."
+
+#: src/main.cpp:69
+msgid "Michael Bartl"
+msgstr "Michael Bartl"
+
+#: src/main.cpp:69
+msgid "Former Core Developer"
+msgstr "Ancyin mwaisse diswalpeu"
+
+#: src/main.cpp:70
+msgid "Michael McCallum"
+msgstr "Michael McCallum"
+
+#: src/main.cpp:71
+msgid "Jochen Wilhemly"
+msgstr "Jochen Wilhemly"
+
+#: src/main.cpp:71
+msgid "KWrite Author"
+msgstr "Oteur di KWrite"
+
+#: src/main.cpp:72
+msgid "Michael Koch"
+msgstr "Michael Koch"
+
+#: src/main.cpp:72
+msgid "KWrite port to KParts"
+msgstr "Poirtaedje KParts po KWrite"
+
+#: src/main.cpp:73
+msgid "Christian Gebauer"
+msgstr "Christian Gebauer"
+
+#: src/main.cpp:74
+msgid "Simon Hausmann"
+msgstr "Simon Hausmann"
+
+#: src/main.cpp:75
+msgid "Glen Parker"
+msgstr "Glen Parker"
+
+#: src/main.cpp:75
+msgid "KWrite Undo History, Kspell integration"
+msgstr "Istwere des disfijhaedjes, eployaedje di Kspell"
+
+#: src/main.cpp:76
+msgid "Scott Manson"
+msgstr "Scott Manson"
+
+#: src/main.cpp:76
+msgid "KWrite XML Syntax highlighting support"
+msgstr "Metaedje e valeur del sintacse XML"
+
+#: src/main.cpp:77
+msgid "John Firebaugh"
+msgstr "John Firebaugh"
+
+#: src/main.cpp:77
+msgid "Patches and more"
+msgstr "Coridjaedjes et co d' pus"
+
+#: src/main.cpp:78
+msgid "Pablo Martín"
+msgstr ""
+
+#: src/main.cpp:78
+#, fuzzy
+#| msgid "Plugins"
+msgid "Python Plugin Developer"
+msgstr "Tchôkes-divins"
+
+#: src/main.cpp:79
+msgid "Gerald Senarclens de Grancy"
+msgstr ""
+
+#: src/main.cpp:79
+msgid "QA and Scripting"
+msgstr ""
+
+#: src/main.cpp:81
+msgid "Matteo Merli"
+msgstr "Matteo Merli"
+
+#: src/main.cpp:81
+msgid "Highlighting for RPM Spec-Files, Perl, Diff and more"
+msgstr ""
+"Metaedje en evidince po les fitchîs spec des RPM, Perl, Diff eyet co d' pus"
+
+#: src/main.cpp:82
+msgid "Rocky Scaletta"
+msgstr "Rocky Scaletta"
+
+#: src/main.cpp:82
+msgid "Highlighting for VHDL"
+msgstr "Metaedje en evidince po VHDL"
+
+#: src/main.cpp:83
+msgid "Yury Lebedev"
+msgstr "Youri Lebedev"
+
+#: src/main.cpp:83
+msgid "Highlighting for SQL"
+msgstr "Metaedje en evidince po SQL"
+
+#: src/main.cpp:84
+msgid "Chris Ross"
+msgstr "Chris Ross"
+
+#: src/main.cpp:84
+msgid "Highlighting for Ferite"
+msgstr "Metaedje en evidince po Ferite"
+
+#: src/main.cpp:85
+msgid "Nick Roux"
+msgstr "Nick Roux"
+
+#: src/main.cpp:85
+msgid "Highlighting for ILERPG"
+msgstr "Metaedje en evidince po ILERPG"
+
+#: src/main.cpp:86
+msgid "Carsten Niehaus"
+msgstr "Carsten Niehaus"
+
+#: src/main.cpp:86
+msgid "Highlighting for LaTeX"
+msgstr "Metaedje en evidince po LaTeX"
+
+#: src/main.cpp:87
+msgid "Per Wigren"
+msgstr "Per Wigren"
+
+#: src/main.cpp:87
+msgid "Highlighting for Makefiles, Python"
+msgstr "Metaedje en evidince po les fitchîs Makefile eyet Python"
+
+#: src/main.cpp:88
+msgid "Jan Fritz"
+msgstr "Jan Fritz"
+
+#: src/main.cpp:88
+msgid "Highlighting for Python"
+msgstr "Metaedje en evidince po Python"
+
+#: src/main.cpp:89
+msgid "Daniel Naber"
+msgstr "Daniel Naber"
+
+#: src/main.cpp:90
+msgid "Roland Pabel"
+msgstr "Roland Pabel"
+
+#: src/main.cpp:90
+msgid "Highlighting for Scheme"
+msgstr "Metaedje en evidince po Scheme"
+
+#: src/main.cpp:91
+msgid "Cristi Dumitrescu"
+msgstr "Cristi Dumitrescu"
+
+#: src/main.cpp:91
+msgid "PHP Keyword/Datatype list"
+msgstr "Djivêye des mots clés et sôres di dnêyes PHP"
+
+#: src/main.cpp:92
+msgid "Carsten Pfeiffer"
+msgstr "Carsten Pfeiffer"
+
+#: src/main.cpp:92
+msgid "Very nice help"
+msgstr "Clapante aidance"
+
+#: src/main.cpp:93
+msgid "All people who have contributed and I have forgotten to mention"
+msgstr "Totes les djins k' ont aidî et k' dj' a rovyî d' dire li no"
+
+#: src/main.cpp:119
+#, fuzzy
+#| msgid "Start Kate with a given session"
+msgid "Start Kate with a given session."
+msgstr "Enonder Kate avou ene session dinêye"
+
+#: src/main.cpp:123
+#, fuzzy
+#| msgid "Start Kate with a given session"
+msgid "Start Kate with a new anonymous session, implies '-n'."
+msgstr "Enonder Kate avou ene session dinêye"
+
+#: src/main.cpp:127
+msgid ""
+"Force start of a new kate instance (is ignored if start is used and another "
+"kate instance already has the given session opened), forced if no parameters "
+"and no URLs are given at all."
+msgstr ""
+
+#: src/main.cpp:131
+msgid ""
+"If using an already running kate instance, block until it exits, if URLs "
+"given to open."
+msgstr ""
+
+#: src/main.cpp:135
+msgid ""
+"Only try to reuse kate instance with this pid (is ignored if start is used "
+"and another kate instance already has the given session opened)."
+msgstr ""
+
+#: src/main.cpp:139
+#, fuzzy
+#| msgid "Set encoding for the file to open"
+msgid "Set encoding for the file to open."
+msgstr "Defini l' ecôdaedje pol fitchî a drovi"
+
+#: src/main.cpp:143
+#, fuzzy
+#| msgid "Navigate to this line"
+msgid "Navigate to this line."
+msgstr "Potchî a cisse roye"
+
+#: src/main.cpp:147
+#, fuzzy
+#| msgid "Navigate to this column"
+msgid "Navigate to this column."
+msgstr "Potchî a cisse colone"
+
+#: src/main.cpp:151
+#, fuzzy
+#| msgid "Read the contents of stdin"
+msgid "Read the contents of stdin."
+msgstr "Lére çou k' i gn a dins stdin"
+
+#: src/main.cpp:155
+msgid "The files/URLs opened by the application will be deleted after use"
+msgstr ""
+
+#: src/main.cpp:159
+#, fuzzy
+#| msgid "Document to open"
+msgid "Documents to open."
+msgstr "Documint a drovi"
+
+#: src/session/katesessionchooser.cpp:44
+msgid "Session Chooser"
+msgstr "Tchoes del session"
+
+#: src/session/katesessionchooser.cpp:51
+#: src/session/katesessionmanagedialog.cpp:55
+#: src/session/katesessionopendialog.cpp:49
+msgid "Session Name"
+msgstr "No del session"
+
+#: src/session/katesessionchooser.cpp:52
+#: src/session/katesessionmanagedialog.cpp:56
+#: src/session/katesessionopendialog.cpp:50
+msgctxt "The number of open documents"
+msgid "Open Documents"
+msgstr "Drovi documints"
+
+#: src/session/katesessionchooser.cpp:75
+#, fuzzy
+#| msgid "No session selected to open."
+msgid "Clone session settings"
+msgstr "Nole session tchoezeye a drovi."
+
+#: src/session/katesessionchooser.cpp:78
+#, fuzzy
+#| msgid "Default Session"
+msgid "Delete this session"
+msgstr "Prémetowe session"
+
+#: src/session/katesessionchooser.cpp:97
+msgid "&Always use this choice"
+msgstr "&Todi s' siervi d' ci tchoes la"
+
+#: src/session/katesessionchooser.cpp:109
+#: src/session/katesessionopendialog.cpp:39
+msgid "Open Session"
+msgstr "Drovi ene session"
+
+#: src/session/katesessionchooser.cpp:116
+msgid "New Session"
+msgstr "Novele session"
+
+#: src/session/katesessionmanagedialog.cpp:42
+msgid "Manage Sessions"
+msgstr "Manaedjî les sessions"
+
+#: src/session/katesessionmanagedialog.cpp:74
+msgid "&Rename..."
+msgstr "&Rilomer..."
+
+#: src/session/katesessionmanagedialog.cpp:93
+#: src/session/katesessionopendialog.cpp:79
+msgid "&Open"
+msgstr "&Drovi"
+
+#: src/session/katesessionmanagedialog.cpp:128
+msgid "Specify New Name for Session"
+msgstr "Sipecifyîz on novea no pol session"
+
+#: src/session/katesessionmanagedialog.cpp:128
+#: src/session/katesessionmanager.cpp:454
+msgid "Session name:"
+msgstr "No del session :"
+
+#: src/session/katesessionmanagedialog.cpp:136
+#: src/session/katesessionmanager.cpp:462
+msgid "To save a session, you must specify a name."
+msgstr "Po schaper ene session, vos dvoz specifyî on no."
+
+#: src/session/katesessionmanagedialog.cpp:136
+#: src/session/katesessionmanager.cpp:462
+msgid "Missing Session Name"
+msgstr "Li no del session manke"
+
+#: src/session/katesessionmanager.cpp:123
 msgid ""
 "Internal error: there is more than one instance open for a given session."
 msgstr ""
 
-#: app/katesession.cpp:276
+#: src/session/katesessionmanager.cpp:128
 #, kde-format
 msgid ""
 "Session '%1' is already opened in another kate instance, change there "
 "instead of reopening?"
 msgstr ""
 
-#: app/katesession.cpp:482
-msgid "No session selected to open."
-msgstr "Nole session tchoezeye a drovi."
+#: src/session/katesessionmanager.cpp:266
+#, kde-format
+msgid ""
+"The session could not be renamed to \"%1\", there already exists another "
+"session with the same name"
+msgstr ""
+"Li session n' pout nén esse rilomêye « %1 », i gn a ddja yene k' a l' minme "
+"no"
 
-#: app/katesession.cpp:482 app/katesession.cpp:507
-msgid "No Session Selected"
-msgstr "Nole session tchoezeye"
+#: src/session/katesessionmanager.cpp:267
+#: src/session/katesessionmanager.cpp:280
+msgid "Session Renaming"
+msgstr "Rilomaedje del session"
 
-#: app/katesession.cpp:507
-msgid "No session selected to copy."
-msgstr "Nole session tchoezeye a copyî."
+#: src/session/katesessionmanager.cpp:279
+#, fuzzy, kde-format
+#| msgid ""
+#| "The session could not be renamed to \"%1\", there already exists another "
+#| "session with the same name"
+msgid "The session could not be renamed to \"%1\". Failed to write to \"%2\""
+msgstr ""
+"Li session n' pout nén esse rilomêye « %1 », i gn a ddja yene k' a l' minme "
+"no"
 
-#: app/katesession.cpp:593
+#: src/session/katesessionmanager.cpp:453
 msgid "Specify New Name for Current Session"
 msgstr "Sipecifyîz on novea no pol session do moumint"
 
-#: app/katesession.cpp:594
+#: src/session/katesessionmanager.cpp:454
 msgid ""
 "There is already an existing session with your chosen name.\n"
 "Please choose a different one\n"
@@ -1102,663 +1328,219 @@ msgstr ""
 "Tchoezixhoz ndè diferin, s' i vs plait\n"
 "No del session :"
 
-#: app/katesession.cpp:594 app/katesession.cpp:910
-msgid "Session name:"
-msgstr "No del session :"
-
-#: app/katesession.cpp:601 app/katesession.cpp:917
-msgid "To save a session, you must specify a name."
-msgstr "Po schaper ene session, vos dvoz specifyî on no."
-
-#: app/katesession.cpp:601 app/katesession.cpp:917
-msgid "Missing Session Name"
-msgstr "Li no del session manke"
-
-#: app/katesession.cpp:640
-msgid "Session Chooser"
-msgstr "Tchoes del session"
-
-#: app/katesession.cpp:643 app/katesession.cpp:753
-msgid "Open Session"
-msgstr "Drovi ene session"
-
-#: app/katesession.cpp:644
-msgid "New Session"
-msgstr "Novele session"
-
-#: app/katesession.cpp:655 app/katesession.cpp:774 app/katesession.cpp:851
-msgid "Session Name"
-msgstr "No del session"
-
-#: app/katesession.cpp:656 app/katesession.cpp:775 app/katesession.cpp:852
-msgctxt "The number of open documents"
-msgid "Open Documents"
-msgstr "Drovi documints"
-
-#: app/katesession.cpp:668
-msgid "Use selected session as template"
-msgstr "Si siervi del session tchoezeye come modele"
-
-#: app/katesession.cpp:684
-msgid "&Always use this choice"
-msgstr "&Todi s' siervi d' ci tchoes la"
-
-#: app/katesession.cpp:757 app/katesession.cpp:837
-msgid "&Open"
-msgstr "&Drovi"
-
-#: app/katesession.cpp:833
-msgid "Manage Sessions"
-msgstr "Manaedjî les sessions"
-
-#: app/katesession.cpp:869
-msgid "&Rename..."
-msgstr "&Rilomer..."
-
-#: app/katesession.cpp:910
-msgid "Specify New Name for Session"
-msgstr "Sipecifyîz on novea no pol session"
-
-#: app/katesession.cpp:928
-#, kde-format
-msgid ""
-"The session could not be renamed to \"%1\", there already exists another "
-"session with the same name"
-msgstr ""
-"Li session n' pout nén esse rilomêye « %1 », i gn a ddja yene k' a l' minme "
-"no"
-
-#: app/katesession.cpp:928
-msgid "Session Renaming"
-msgstr "Rilomaedje del session"
-
-#: app/kateviewmanager.cpp:127
-msgid "Split Ve&rtical"
-msgstr "Dispårti l' vuwe &hintche/droete"
-
-#: app/kateviewmanager.cpp:131
-msgid "Split the currently active view vertically into two views."
-msgstr ""
-
-#: app/kateviewmanager.cpp:135
-msgid "Split &Horizontal"
-msgstr "Dispårti l' vuwe di&zeu/dizo"
-
-#: app/kateviewmanager.cpp:139
-msgid "Split the currently active view horizontally into two views."
-msgstr ""
-
-#: app/kateviewmanager.cpp:143
-msgid "Cl&ose Current View"
-msgstr "C&lôre li vuwe do moumint"
-
-#: app/kateviewmanager.cpp:147
+#. i18n: ectx: property (title), widget (QGroupBox, gbElements)
+#: src/ui/sessionconfigwidget.ui:17
 #, fuzzy
-#| msgid "Close the current document."
-msgid "Close the currently active split view"
-msgstr "Clôre li documint do moumint."
+#| msgid "Session Management"
+msgid "Session elements"
+msgstr "Manaedjmint des sessions"
 
-#: app/kateviewmanager.cpp:151
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: src/ui/sessionconfigwidget.ui:23
+msgid ""
+"The session contains the list of open documents, recently opened files list, "
+"bookmarks, cursor position etc. When the session is loaded all elements are "
+"restored."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: src/ui/sessionconfigwidget.ui:35
+msgid "Maximum number of entries in recent file list:"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, restoreVC)
+#: src/ui/sessionconfigwidget.ui:63
+msgid ""
+"Check this if you want all your views and frames restored each time you open "
+"Kate."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, restoreVC)
+#: src/ui/sessionconfigwidget.ui:66
+msgid "Include &window configuration"
+msgstr "Mete divins l' apontiaedje del &finiesse"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gbAppStartup)
+#: src/ui/sessionconfigwidget.ui:76
 #, fuzzy
-#| msgid "Cl&ose Current View"
-msgid "Close Inactive Views"
-msgstr "C&lôre li vuwe do moumint"
+#| msgid "Behavior on Application Startup"
+msgid "Behaviour on Application Startup"
+msgstr "Dujhance a l' enondaedje do programe"
 
-#: app/kateviewmanager.cpp:154
-msgid "Close every view but the active one"
-msgstr ""
+#. i18n: ectx: property (text), widget (QRadioButton, startNewSessionRadioButton)
+#: src/ui/sessionconfigwidget.ui:82
+msgid "&Start new session"
+msgstr "&Enonder ene novele session"
 
-#: app/kateviewmanager.cpp:157
+#. i18n: ectx: property (text), widget (QRadioButton, loadLastUserSessionRadioButton)
+#: src/ui/sessionconfigwidget.ui:89
 #, fuzzy
-#| msgid "Next View"
-msgid "Next Split View"
-msgstr "Vuwe shuvante"
+#| msgid "&Load last-used session"
+msgid "&Load last used session"
+msgstr "&Tcherdjî li dierinne session d' eployeye"
 
-#: app/kateviewmanager.cpp:161
-msgid "Make the next split view the active one."
-msgstr ""
+#. i18n: ectx: property (text), widget (QRadioButton, manuallyChooseSessionRadioButton)
+#: src/ui/sessionconfigwidget.ui:96
+msgid "&Manually choose a session"
+msgstr "Tchoezi al &mwin ene session"
 
-#: app/kateviewmanager.cpp:164
 #, fuzzy
-#| msgid "Previous View"
-msgid "Previous Split View"
-msgstr "Vuwe di dvant"
+#~| msgid "Documents Modified on Disk"
+#~ msgid "All documents written to disk"
+#~ msgstr "Documints candjîs sol plake"
 
-#: app/kateviewmanager.cpp:168
-msgid "Make the previous split view the active one."
-msgstr ""
-
-#: app/kateviewmanager.cpp:171
-msgid "Move Splitter Right"
-msgstr ""
-
-#: app/kateviewmanager.cpp:174
-msgid "Move the splitter of the current view to the right"
-msgstr ""
-
-#: app/kateviewmanager.cpp:177
-msgid "Move Splitter Left"
-msgstr ""
-
-#: app/kateviewmanager.cpp:180
-msgid "Move the splitter of the current view to the left"
-msgstr ""
-
-#: app/kateviewmanager.cpp:183
-msgid "Move Splitter Up"
-msgstr ""
-
-#: app/kateviewmanager.cpp:186
-msgid "Move the splitter of the current view up"
-msgstr ""
-
-#: app/kateviewmanager.cpp:189
-msgid "Move Splitter Down"
-msgstr ""
-
-#: app/kateviewmanager.cpp:192
-msgid "Move the splitter of the current view down"
-msgstr ""
-
-#: app/kateviewmanager.cpp:197
-msgid "Show Cursor Position"
-msgstr ""
-
-#: app/kateviewmanager.cpp:202
-msgid "Show Characters Count"
-msgstr ""
-
-#: app/kateviewmanager.cpp:207
-msgid "Show Insertion Mode"
-msgstr ""
-
-#: app/kateviewmanager.cpp:212
-msgid "Show Selection Mode"
-msgstr ""
-
-#: app/kateviewmanager.cpp:217
-msgid "Show Encoding"
-msgstr ""
-
-#: app/kateviewmanager.cpp:222
 #, fuzzy
-#| msgid "Document Name"
-msgid "Show Document Name"
-msgstr "No do documint"
+#~| msgid "Documents Modified on Disk"
+#~ msgid "Document written to disk"
+#~ msgstr "Documints candjîs sol plake"
 
-#: app/kateviewmanager.cpp:255
-msgid "Open File"
-msgstr "Drovi fitchî"
+#~ msgid "Elements of Sessions"
+#~ msgstr "Elemints des sessions"
 
-#: app/kateviewmanager.cpp:274
-#, kde-format
-msgid ""
-"<p>You are attempting to open one or more large files:</p><ul>%1</ul><p>Do "
-"you want to proceed?</p><p><strong>Beware that kate may stop responding for "
-"some time when opening large files.</strong></p>"
-msgstr ""
+#~ msgid "No Session Selected"
+#~ msgstr "Nole session tchoezeye"
 
-#: app/kateviewmanager.cpp:276
+#~ msgid "No session selected to copy."
+#~ msgstr "Nole session tchoezeye a copyî."
+
+#~ msgid "Use selected session as template"
+#~ msgstr "Si siervi del session tchoezeye come modele"
+
 #, fuzzy
-#| msgid "Open File"
-msgid "Opening Large File"
-msgstr "Drovi fitchî"
+#~| msgid "Document Name"
+#~ msgid "Show Document Name"
+#~ msgstr "No do documint"
 
-#: app/kateviewspace.cpp:277
-#, kde-format
-msgid " Line: %1 Col: %2 "
-msgstr " Roye : %1 Col: %2 "
+#~ msgid " Line: %1 Col: %2 "
+#~ msgstr " Roye : %1 Col: %2 "
 
-#: app/kateviewspace.cpp:285 app/kateviewspace.cpp:401
-#, kde-format
-msgid " Characters: %1 "
-msgstr ""
+#~ msgid " LINE "
+#~ msgstr " ROYE "
 
-#: app/kateviewspace.cpp:298 app/kateviewspace.cpp:410
-msgid " LINE "
-msgstr " ROYE "
+#~ msgid " INS "
+#~ msgstr " STI "
 
-#: app/kateviewspace.cpp:303
-msgid " INS "
-msgstr " STI "
-
-#: app/kateviewspace.cpp:391
-#, fuzzy, kde-format
-#| msgid " Line: %1 Col: %2 "
-msgid " Line: %1 of %2 Col: %3 "
-msgstr " Roye : %1 Col: %2 "
-
-#: app/kateviewspace.cpp:410
-msgid " BLOCK "
-msgstr " BLOK "
-
-#. i18n: ectx: Menu (file)
-#: data/kateui.rc:5
-msgid "&File"
-msgstr "&Fitchî"
-
-#. i18n: ectx: Menu (edit)
-#: data/kateui.rc:36
-msgid "&Edit"
-msgstr "&Candjî"
-
-#. i18n: ectx: Menu (view)
-#: data/kateui.rc:47 filetree/ui.rc:6
-msgid "&View"
-msgstr "&Vey"
-
-#. i18n: ectx: Menu (view-split)
-#: data/kateui.rc:54
 #, fuzzy
-#| msgid "Split Ve&rtical"
-msgid "Split View"
-msgstr "Dispårti l' vuwe &hintche/droete"
+#~| msgid " Line: %1 Col: %2 "
+#~ msgid " Line: %1 of %2 Col: %3 "
+#~ msgstr " Roye : %1 Col: %2 "
 
-#. i18n: ectx: Menu (tools)
-#: data/kateui.rc:80
-msgid "&Tools"
-msgstr "&Usteyes"
+#~ msgid " BLOCK "
+#~ msgstr " BLOK "
 
-#. i18n: ectx: Menu (sessions)
-#: data/kateui.rc:88
-msgid "Sess&ions"
-msgstr "&Sessions"
+#~ msgid "Close"
+#~ msgstr "Clôre"
 
-#. i18n: ectx: Menu (settings)
-#: data/kateui.rc:99
-msgid "&Settings"
-msgstr "A&pontiaedjes"
-
-#. i18n: ectx: Menu (help)
-#: data/kateui.rc:103
-msgid "&Help"
-msgstr "&Aidance"
-
-#. i18n: ectx: ToolBar (mainToolBar)
-#: data/kateui.rc:108 filetree/ui.rc:14
-msgid "Main Toolbar"
-msgstr "&Mwaisse bår ås usteyes"
-
-#. i18n: ectx: Menu (viewspace_popup_statusbar)
-#: data/kateui.rc:142
-msgid "&Status Bar Items"
-msgstr ""
-
-#: filetree/katefiletree.cpp:56
-msgid "Close"
-msgstr "Clôre"
-
-#: filetree/katefiletree.cpp:60
 #, fuzzy
-#| msgid "Filename"
-msgid "Copy Filename"
-msgstr "No do fitchî"
+#~| msgid "Filename"
+#~ msgid "Copy Filename"
+#~ msgstr "No do fitchî"
 
-#: filetree/katefiletree.cpp:62
-msgid "Copy the filename of the file."
-msgstr ""
+#~ msgid "Document Name"
+#~ msgstr "No do documint"
 
-#: filetree/katefiletree.cpp:66
-msgid "Tree Mode"
-msgstr ""
-
-#: filetree/katefiletree.cpp:67
-msgid "Set view style to Tree Mode"
-msgstr ""
-
-#: filetree/katefiletree.cpp:70
-msgid "List Mode"
-msgstr ""
-
-#: filetree/katefiletree.cpp:71
-msgid "Set view style to List Mode"
-msgstr ""
-
-#: filetree/katefiletree.cpp:76 filetree/katefiletreeconfigpage.cpp:87
-msgid "Document Name"
-msgstr "No do documint"
-
-#: filetree/katefiletree.cpp:77
 #, fuzzy
-#| msgid "Document Name"
-msgid "Sort by Document Name"
-msgstr "No do documint"
+#~| msgid "Document Name"
+#~ msgid "Sort by Document Name"
+#~ msgstr "No do documint"
 
-#: filetree/katefiletree.cpp:81
 #, fuzzy
-#| msgid "Document List"
-msgid "Document Path"
-msgstr "Djivêye des documints"
+#~| msgid "Document List"
+#~ msgid "Document Path"
+#~ msgstr "Djivêye des documints"
 
-#: filetree/katefiletree.cpp:82
-msgid "Sort by Document Path"
-msgstr ""
+#~ msgid "Opening Order"
+#~ msgstr "Ôre di drovaedje"
 
-#: filetree/katefiletree.cpp:85 filetree/katefiletreeconfigpage.cpp:86
-msgid "Opening Order"
-msgstr "Ôre di drovaedje"
-
-#: filetree/katefiletree.cpp:86
 #, fuzzy
-#| msgid "Opening Order"
-msgid "Sort by Opening Order"
-msgstr "Ôre di drovaedje"
+#~| msgid "Opening Order"
+#~ msgid "Sort by Opening Order"
+#~ msgstr "Ôre di drovaedje"
 
-#: filetree/katefiletree.cpp:197
 #, fuzzy
-#| msgid "Open W&ith"
-msgid "Open With"
-msgstr "Drovi a&vou"
+#~| msgid "Open W&ith"
+#~ msgid "Open With"
+#~ msgstr "Drovi a&vou"
 
-#: filetree/katefiletree.cpp:202
-msgid "View Mode"
-msgstr ""
-
-#: filetree/katefiletree.cpp:206
 #, fuzzy
-#| msgid "Sort &By"
-msgid "Sort By"
-msgstr "Relére &so"
+#~| msgid "Sort &By"
+#~ msgid "Sort By"
+#~ msgstr "Relére &so"
 
-#: filetree/katefiletreeconfigpage.cpp:60
-msgid "Background Shading"
-msgstr "Ombion do fond"
+#~ msgid "Background Shading"
+#~ msgstr "Ombion do fond"
 
-#: filetree/katefiletreeconfigpage.cpp:67
-msgid "&Viewed documents' shade:"
-msgstr "Ombe des documints &veyous :"
+#~ msgid "&Viewed documents' shade:"
+#~ msgstr "Ombe des documints &veyous :"
 
-#: filetree/katefiletreeconfigpage.cpp:73
-msgid "&Modified documents' shade:"
-msgstr "Ombe des documints &candjîs :"
+#~ msgid "&Modified documents' shade:"
+#~ msgstr "Ombe des documints &candjîs :"
 
-#: filetree/katefiletreeconfigpage.cpp:81
-msgid "&Sort by:"
-msgstr "&Relére so :"
+#~ msgid "&Sort by:"
+#~ msgstr "&Relére so :"
 
-#: filetree/katefiletreeconfigpage.cpp:88
-msgid "Url"
-msgstr "Url"
+#~ msgid "Url"
+#~ msgstr "Url"
 
-#: filetree/katefiletreeconfigpage.cpp:94
 #, fuzzy
-#| msgid "&View"
-msgid "&View Mode:"
-msgstr "&Vey"
+#~| msgid "&View"
+#~ msgid "&View Mode:"
+#~ msgstr "&Vey"
 
-#: filetree/katefiletreeconfigpage.cpp:99
 #, fuzzy
-#| msgid "Tool &Views"
-msgid "Tree View"
-msgstr "&Vuwes des usteyes"
+#~| msgid "Tool &Views"
+#~ msgid "Tree View"
+#~ msgstr "&Vuwes des usteyes"
 
-#: filetree/katefiletreeconfigpage.cpp:100
 #, fuzzy
-#| msgid "Split Ve&rtical"
-msgid "List View"
-msgstr "Dispårti l' vuwe &hintche/droete"
+#~| msgid "Split Ve&rtical"
+#~ msgid "List View"
+#~ msgstr "Dispårti l' vuwe &hintche/droete"
 
-#: filetree/katefiletreeconfigpage.cpp:105
 #, fuzzy
-#| msgid "Sho&w Path"
-msgid "&Show Full Path"
-msgstr "Mostrer l' &tchimin"
+#~| msgid "Sho&w Path"
+#~ msgid "&Show Full Path"
+#~ msgstr "Mostrer l' &tchimin"
 
-#: filetree/katefiletreeconfigpage.cpp:111
-msgid ""
-"When background shading is enabled, documents that have been viewed or "
-"edited within the current session will have a shaded background. The most "
-"recent documents have the strongest shade."
-msgstr ""
+#~ msgid "Set the color for shading viewed documents."
+#~ msgstr "Defini l' coleur po l' ombion des documints veyous."
 
-#: filetree/katefiletreeconfigpage.cpp:115
-msgid "Set the color for shading viewed documents."
-msgstr "Defini l' coleur po l' ombion des documints veyous."
-
-#: filetree/katefiletreeconfigpage.cpp:117
-msgid ""
-"Set the color for modified documents. This color is blended into the color "
-"for viewed files. The most recently edited documents get most of this color."
-msgstr ""
-
-#: filetree/katefiletreeconfigpage.cpp:122
-msgid ""
-"When enabled, in tree mode, top level folders will show up with their full "
-"path rather than just the last folder name."
-msgstr ""
-
-#: filetree/katefiletreemodel.cpp:509
-#, kde-format
-msgctxt "%1 is the full path"
-msgid ""
-"<p><b>%1</b></p><p>The document has been modified by another application.</p>"
-msgstr ""
-
-#: filetree/katefiletreeplugin.cpp:48
 #, fuzzy
-#| msgid "Document Name"
-msgid "Document Tree"
-msgstr "No do documint"
+#~| msgid "Document Name"
+#~ msgid "Document Tree"
+#~ msgstr "No do documint"
 
-#: filetree/katefiletreeplugin.cpp:48
-msgid "Show open documents in a tree"
-msgstr ""
-
-#: filetree/katefiletreeplugin.cpp:113
 #, fuzzy
-#| msgid "Close Document"
-msgid "Configure Documents"
-msgstr "Clôre li documint"
+#~| msgid "Close Document"
+#~ msgid "Configure Documents"
+#~ msgstr "Clôre li documint"
 
-#: filetree/katefiletreeplugin.cpp:230
-msgid "&Show Active"
-msgstr ""
-
-#: filetree/katefiletreeplugin.cpp:237
 #, fuzzy
-#| msgid "&Document"
-msgid "Previous Document"
-msgstr "&Documint"
+#~| msgid "&Document"
+#~ msgid "Previous Document"
+#~ msgstr "&Documint"
 
-#: filetree/katefiletreeplugin.cpp:238
 #, fuzzy
-#| msgid "&Document"
-msgid "Next Document"
-msgstr "&Documint"
+#~| msgid "&Document"
+#~ msgid "Next Document"
+#~ msgstr "&Documint"
 
-#: filetree/katefiletreeplugin.cpp:506
-msgid ""
-"<p><b>b,buffer &mdash; Edit document N from the document list</b></"
-"p><p>Usage: <tt><b>b[uffer] [N]</b></tt></p>"
-msgstr ""
+#~ msgid ""
+#~ "<p>You can repeat your last search by just pressing <strong>F3</strong>, "
+#~ "or\n"
+#~ "<strong>Shift+F3</strong> if you want to search backwards.</p>\n"
+#~ msgstr ""
+#~ "<p>Vos ploz rfé vosse dierin cweraedje djusse tapant so <strong>F3</"
+#~ "strong>,\n"
+#~ "ou co so <strong>MAJ+F3</strong> si vos vloz fé l' cweraedje en erî.</p>\n"
 
-#: filetree/katefiletreeplugin.cpp:511
-msgid ""
-"<p><b>bp,bprev &mdash; previous buffer</b></p><p>Usage: <tt><b>bp[revious] "
-"[N]</b></tt></p><p>Goes to <b>[N]</b>th previous document (\"<b>b</b>uffer"
-"\") in document list. </p><p> <b>[N]</b> defaults to one. </p><p>Wraps "
-"around the start of the document list.</p>"
-msgstr ""
-
-#: filetree/katefiletreeplugin.cpp:519
-msgid ""
-"<p><b>bn,bnext &mdash; switch to next document</b></p><p>Usage: <tt><b>bn"
-"[ext] [N]</b></tt></p><p>Goes to <b>[N]</b>th next document (\"<b>b</b>uffer"
-"\") in document list.<b>[N]</b> defaults to one. </p><p>Wraps around the end "
-"of the document list.</p>"
-msgstr ""
-
-#: filetree/katefiletreeplugin.cpp:527
-msgid ""
-"<p><b>bf,bfirst &mdash; first document</b></p><p>Usage: <tt><b>bf[irst]</b></"
-"tt></p><p>Goes to the <b>f</b>irst document (\"<b>b</b>uffer\") in document "
-"list.</p>"
-msgstr ""
-
-#: filetree/katefiletreeplugin.cpp:533
-msgid ""
-"<p><b>bl,blast &mdash; last document</b></p><p>Usage: <tt><b>bl[ast]</b></"
-"tt></p><p>Goes to the <b>l</b>ast document (\"<b>b</b>uffer\") in document "
-"list.</p>"
-msgstr ""
-
-#. i18n: ectx: @info:tipoftheday
-#: tips:2
-msgid ""
-"<p>Kate comes with a nice set of plugins, providing simple\n"
-"and advanced features of all sorts.</p>\n"
-"<p>You can enable/disable plugins to suit your needs in the configuration "
-"dialog,\n"
-"choose <strong>Settings -&gt;configure</strong> to launch that.</p>\n"
-msgstr ""
-
-#. i18n: ectx: @info:tipoftheday
-#: tips:10
-msgid ""
-"<p>You can swap the characters on each side of the cursor just by pressing\n"
-"<strong>Ctrl+T</strong></p>\n"
-msgstr ""
-
-#. i18n: ectx: @info:tipoftheday
-#: tips:16
-msgid ""
-"<p>You can export the current document as a HTML file, including\n"
-"syntax highlighting.</p>\n"
-"<p>Just choose <strong>File -&gt; Export -&gt; HTML...</strong></p>\n"
-msgstr ""
-
-#. i18n: ectx: @info:tipoftheday
-#: tips:23
-msgid ""
-"<p>You can split the Kate editor as many times as you like and\n"
-"in either direction. Each frame has its own status bar and\n"
-"can display any open document.</p>\n"
-"<p>Just choose <br><strong>View -&gt; Split View -&gt; Split [ Horizontal | "
-"Vertical ]</strong></p>\n"
-msgstr ""
-
-#. i18n: ectx: @info:tipoftheday
-#: tips:31
-msgid ""
-"<p>You can move the Tool views to any side of the main window through the\n"
-"context menu.</p>\n"
-msgstr ""
-
-#. i18n: ectx: @info:tipoftheday
-#: tips:37
-msgid ""
-"<p>Kate has a built-in terminal emulator, just click on <strong>\"Terminal"
-"\"</strong> at\n"
-"the bottom to show or hide it as you desire.</p>\n"
-msgstr ""
-
-#. i18n: ectx: @info:tipoftheday
-#: tips:43
-msgid ""
-"<p>Kate can highlight the current line with a\n"
-"<table bgcolor=\"yellow\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" "
-"width=\"100%\"><tr><td>different\n"
-"background color.<strong>|</strong></td></tr></table></p>\n"
-"<p>You can set the color in the <em>Colors</em> page of the configuration\n"
-"dialog.</p>\n"
-msgstr ""
-
-#. i18n: ectx: @info:tipoftheday
-#: tips:52
-msgid ""
-"<p>You can open the currently edited file in any other application from "
-"within\n"
-"Kate.</p>\n"
-"<p>Choose <strong>File -&gt; Open With</strong> for the list of programs\n"
-"configured\n"
-"for the document type. There is also an option <strong>Other...</strong> to\n"
-"choose any application on your system.</p>\n"
-msgstr ""
-
-#. i18n: ectx: @info:tipoftheday
-#: tips:62
-msgid ""
-"<p>You can configure the editor to always display the line numbers and/or\n"
-"bookmark panes when started from the <strong>Appearance</strong> page of "
-"the\n"
-"configuration dialog.</p>\n"
-msgstr ""
-
-#. i18n: ectx: @info:tipoftheday
-#: tips:69
-msgid ""
-"<p>You can download new or updated <em>Syntax highlight definitions</em> "
-"from\n"
-"the <strong>Open/Save</strong> page in the configuration dialog.</p>\n"
-"<p>Just click the <em>Download...</em> button on the <em>Open/Save -&gt; "
-"Modes &amp; Filetypes</em>\n"
-"tab (You have to be online, of course...).</p>\n"
-msgstr ""
-
-#. i18n: ectx: @info:tipoftheday
-#: tips:77
-msgid ""
-"<p>You can cycle through all open documents by pressing <strong>Alt+Left</"
-"strong>\n"
-"or <strong>Alt+Right</strong>. The next/previous document will immediately "
-"be displayed\n"
-"in the active frame.</p>\n"
-msgstr ""
-
-#. i18n: ectx: @info:tipoftheday
-#: tips:84
-msgid ""
-"<p>You can do cool sed-like regular expression replacements using "
-"<em>Command Line</em>.</p>\n"
-"<p>For example, press <strong>F7</strong> and enter <code>s /oldtext/newtext/"
-"g</code>\n"
-"to replace &quot;oldtext&quot; with &quot;newtext&quot; throughout the "
-"current\n"
-"line.</p>\n"
-msgstr ""
-
-#. i18n: ectx: @info:tipoftheday
-#: tips:92
-msgid ""
-"<p>You can repeat your last search by just pressing <strong>F3</strong>, or\n"
-"<strong>Shift+F3</strong> if you want to search backwards.</p>\n"
-msgstr ""
-"<p>Vos ploz rfé vosse dierin cweraedje djusse tapant so <strong>F3</"
-"strong>,\n"
-"ou co so <strong>MAJ+F3</strong> si vos vloz fé l' cweraedje en erî.</p>\n"
-
-#. i18n: ectx: @info:tipoftheday
-#: tips:98
-msgid ""
-"<p>You can filter the files displayed in the <em>Filesystem Browser</em> "
-"tool view.\n"
-"</p>\n"
-"<p>Simply enter your filter in the filter entry at the bottom, for example:\n"
-"<code>*.html *.php</code> if you only want to see HTML and PHP files in the\n"
-"current folder.</p>\n"
-"<p>The Filesystem Browser will even remember your filters for you.</p>\n"
-msgstr ""
-
-#. i18n: ectx: @info:tipoftheday
-#: tips:108
-msgid ""
-"<p>You can have two views - or even more - of the same document in Kate. "
-"Editing\n"
-"in either will be reflected in both.</p>\n"
-"<p>So if you find yourself scrolling up and down to look at text at the "
-"other\n"
-"end of a document, just press <strong>Ctrl+Shift+T</strong> to split\n"
-"horizontally.</p>\n"
-msgstr ""
-
-#. i18n: ectx: @info:tipoftheday
-#: tips:117
-msgid ""
-"<p>Press <strong>F8</strong> or <strong>Shift+F8</strong> to switch to the\n"
-"next/previous frame.</p>\n"
-msgstr ""
-"<p>Tapez <strong>F8</strong> ou <strong>MAJ+F8</strong> po potchî\n"
-"å cåde shuvant/di dvant.</p>\n"
+#~ msgid ""
+#~ "<p>Press <strong>F8</strong> or <strong>Shift+F8</strong> to switch to "
+#~ "the\n"
+#~ "next/previous frame.</p>\n"
+#~ msgstr ""
+#~ "<p>Tapez <strong>F8</strong> ou <strong>MAJ+F8</strong> po potchî\n"
+#~ "å cåde shuvant/di dvant.</p>\n"
 
 #~ msgctxt "@item:inmenu"
 #~ msgid "C++ Source File (GPL)"
@@ -1892,11 +1674,6 @@ msgstr ""
 #~ msgstr "No do fitchî"
 
 #, fuzzy
-#~| msgid "Highlighting for Scheme"
-#~ msgid "Highlight Matches"
-#~ msgstr "Metaedje en evidince po Scheme"
-
-#, fuzzy
 #~| msgctxt "@item:inmenu"
 #~| msgid "Kate Highlight Definition"
 #~ msgid "Highlight definitions using etags(1):"
@@ -1987,9 +1764,6 @@ msgstr ""
 #~| msgid "Save As &Default..."
 #~ msgid "Save Session as &Default..."
 #~ msgstr "Schaper come li &prémetou..."
-
-#~ msgid "Default Session"
-#~ msgstr "Prémetowe session"
 
 #, fuzzy
 #~| msgid "Plugins"
