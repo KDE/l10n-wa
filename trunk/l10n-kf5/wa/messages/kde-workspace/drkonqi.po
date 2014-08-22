@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: drkonqi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-08-08 08:30+0000\n"
+"POT-Creation-Date: 2014-08-22 08:18+0000\n"
 "PO-Revision-Date: 2013-07-06 01:28+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -511,8 +511,10 @@ msgid "If you wish, you can go back and change your answers. "
 msgstr ""
 
 #: bugzillaintegration/reportassistantpages_base.cpp:407
-#, kde-format
-msgctxt "@info/plain report to url/mail address"
+#, fuzzy, kde-format
+#| msgctxt "@info/plain report to url/mail address"
+#| msgid "Report to %1"
+msgctxt "@info report to url/mail address"
 msgid "Report to %1"
 msgstr "Rapoirter a %1"
 
@@ -600,7 +602,10 @@ msgid "Performing login at %1 as %2..."
 msgstr "Dji m' elodje so %1 come %2..."
 
 #: bugzillaintegration/reportassistantpages_bugzilla.cpp:352
-msgctxt "@info:status/rich"
+#, fuzzy
+#| msgctxt "@info:status/rich"
+#| msgid "<b>Error: Invalid username or password</b>"
+msgctxt "@info:status"
 msgid "<b>Error: Invalid username or password</b>"
 msgstr "<b>Aroke : mwais no d' uzeu oudonbén mwais sicret</b>"
 
@@ -827,10 +832,12 @@ msgid "Sending crash report... (please wait)"
 msgstr ""
 
 #: bugzillaintegration/reportassistantpages_bugzilla.cpp:758
-#, kde-format
-msgctxt "@info/plain report to KDE bugtracker address"
+#, fuzzy, kde-format
+#| msgctxt "@info/plain report to url/mail address"
+#| msgid "Report to %1"
+msgctxt "@info report to KDE bugtracker address"
 msgid "Report to %1"
-msgstr ""
+msgstr "Rapoirter a %1"
 
 #: bugzillaintegration/reportassistantpages_bugzilla.cpp:777
 msgctxt "@title:window"
@@ -981,37 +988,58 @@ msgid "Showing results from %1 to %2"
 msgstr ""
 
 #: bugzillaintegration/reportassistantpages_bugzilla_duplicates.cpp:320
-msgctxt "@info/plain bug status"
+#, fuzzy
+#| msgctxt "@info/plain bug status"
+#| msgid "[Open]"
+msgctxt "@info bug status"
 msgid "[Open]"
 msgstr "[Drovou]"
 
 #: bugzillaintegration/reportassistantpages_bugzilla_duplicates.cpp:323
-msgctxt "@info/plain bug resolution"
+#, fuzzy
+#| msgctxt "@info/plain bug resolution"
+#| msgid "[Fixed]"
+msgctxt "@info bug resolution"
 msgid "[Fixed]"
 msgstr "[Coridjî]"
 
 #: bugzillaintegration/reportassistantpages_bugzilla_duplicates.cpp:325
-msgctxt "@info/plain bug resolution"
+#, fuzzy
+#| msgctxt "@info/plain bug resolution"
+#| msgid "[Non-reproducible]"
+msgctxt "@info bug resolution"
 msgid "[Non-reproducible]"
 msgstr "[Nén rfijhåve]"
 
 #: bugzillaintegration/reportassistantpages_bugzilla_duplicates.cpp:327
-msgctxt "@info/plain bug resolution"
+#, fuzzy
+#| msgctxt "@info/plain bug resolution"
+#| msgid "[Duplicate report]"
+msgctxt "@info bug resolution"
 msgid "[Duplicate report]"
 msgstr "[Rapoirt e dobe]"
 
 #: bugzillaintegration/reportassistantpages_bugzilla_duplicates.cpp:329
-msgctxt "@info/plain bug resolution"
+#, fuzzy
+#| msgctxt "@info/plain bug resolution"
+#| msgid "[Invalid]"
+msgctxt "@info bug resolution"
 msgid "[Invalid]"
 msgstr "[Nén valåbe]"
 
 #: bugzillaintegration/reportassistantpages_bugzilla_duplicates.cpp:332
-msgctxt "@info/plain bug resolution"
+#, fuzzy
+#| msgctxt "@info/plain bug resolution"
+#| msgid "[External problem]"
+msgctxt "@info bug resolution"
 msgid "[External problem]"
 msgstr "[Difoûtrin problinme]"
 
 #: bugzillaintegration/reportassistantpages_bugzilla_duplicates.cpp:335
-msgctxt "@info/plain bug status"
+#, fuzzy
+#| msgctxt "@info/plain bug status"
+#| msgid "[Incomplete]"
+msgctxt "@info bug status"
 msgid "[Incomplete]"
 msgstr "[Nén complet]"
 
@@ -1098,11 +1126,18 @@ msgid ""
 msgstr ""
 
 #: bugzillaintegration/reportassistantpages_bugzilla_duplicates.cpp:640
-msgctxt "@info/plain"
+#, fuzzy
+#| msgctxt ""
+#| "@option:check user must check this to preview the own backtrace (in order "
+#| "to compare it with the one in the showed report)"
+#| msgid "Show the backtrace of the crash I experienced to compare (advanced)"
+msgctxt "@info"
 msgid ""
 "Backtrace of the crash I experienced:\n"
 "\n"
 msgstr ""
+"Mostrer l' passêye e-n erî do tcheyaedje e rak ki dj' a yeu po comparer "
+"(spepieusmint)"
 
 #: bugzillaintegration/reportassistantpages_bugzilla_duplicates.cpp:668
 msgctxt "@action:button let the user to choose to read the main report"
@@ -1249,6 +1284,11 @@ msgstr ""
 msgctxt "@action:button continue with the selected option and close the dialog"
 msgid "Continue"
 msgstr "Continouwer"
+
+#: bugzillaintegration/reportassistantpages_bugzilla_duplicates.cpp:906
+#, kde-format
+msgid "You are going to mark your crash as related to bug %1"
+msgstr ""
 
 #: bugzillaintegration/reportassistantpages_bugzilla_duplicates.cpp:919
 #, kde-format
@@ -1574,8 +1614,8 @@ msgstr "Li platfôme KDE est compilêye a pårti des sourdants."
 #| "bug report.</note>"
 msgctxt "@info"
 msgid ""
-"<note>The crash and system information will be automatically added to the "
-"bug report.</note>"
+"<i>Note</i>: The crash and system information will be automatically added to "
+"the bug report."
 msgstr ""
 "<note>Les pondants et les djondants do tchyaedje e rak eyet do sistinme vont "
 "esse radjoutêyes otomaticmint å rapoirt di bug.</note>"
@@ -1601,10 +1641,16 @@ msgstr ""
 "KDE"
 
 #. i18n: ectx: property (text), widget (QLabel, m_previewDescriptionLabel)
-#: bugzillaintegration/ui/assistantpage_bugzilla_preview.ui:18
+#: bugzillaintegration/ui/assistantpage_bugzilla_preview.ui:19
+#, fuzzy
+#| msgctxt "@label"
+#| msgid ""
+#| "This is a preview of the report's contents which will be sent. <nl />\n"
+#| "If you want to modify it go to the previous pages."
 msgctxt "@label"
 msgid ""
-"This is a preview of the report's contents which will be sent. <nl />\n"
+"This is a preview of the report's contents which will be sent. \n"
+"\n"
 "If you want to modify it go to the previous pages."
 msgstr ""
 "Çouchal est on prévoeyaedje di çou k' i gn a e raoirt di bug ki va esse "
@@ -1640,12 +1686,19 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, m_warningLabel)
 #: bugzillaintegration/ui/assistantpage_introduction.ui:77
+#, fuzzy
+#| msgctxt "@info note before starting the bug reporting process"
+#| msgid ""
+#| "<p><note>Since communication between you and the developers is required "
+#| "for effective debugging, to continue reporting this bug <strong>it is "
+#| "required for you to agree that developers may contact you.</strong></"
+#| "note></p><p>Feel free to close this dialog if you do not accept this.</p>"
 msgctxt "@info note before starting the bug reporting process"
 msgid ""
-"<p><note>Since communication between you and the developers is required for "
-"effective debugging, to continue reporting this bug <strong>it is required "
-"for you to agree that developers may contact you.</strong></note></p><p>Feel "
-"free to close this dialog if you do not accept this.</p>"
+"<p><i>Note</i>: Since communication between you and the developers is "
+"required for effective debugging, to continue reporting this bug <strong>it "
+"is required for you to agree that developers may contact you.</strong></"
+"p><p>Feel free to close this dialog if you do not accept this.</p>"
 msgstr ""
 "<p><note>Come i fåt kel cominicåcion inte vos eyet les programeus soeye "
 "possibe po saveur disbuguer comifåt, po continouwer a rapoirter ç' bug chal, "
