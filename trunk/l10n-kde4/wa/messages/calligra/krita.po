@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-10-20 01:40+0000\n"
+"POT-Creation-Date: 2014-10-21 01:37+0000\n"
 "PO-Revision-Date: 2011-01-17 21:35+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -1434,14 +1434,14 @@ msgctxt "./data/patterns/HR_Wall_Paper.pat"
 msgid "HR Wall Paper"
 msgstr "Côutche &pondeure"
 
-#: image/brushengine/kis_paintop_factory.cpp:66
+#: image/brushengine/kis_paintop_factory.cpp:65
 #, fuzzy
 #| msgid "Brush size"
 msgctxt "Category of brush engines"
 msgid "Brush engines"
 msgstr "Grandeu do pincea"
 
-#: image/brushengine/kis_paintop_registry.cc:132
+#: image/brushengine/kis_paintop_registry.cc:131
 msgid "default"
 msgstr "prémetou"
 
@@ -3131,7 +3131,7 @@ msgstr "Mostrer"
 #: plugins/formats/heightmap/kis_wdg_options_heightmap.ui:30
 #: plugins/formats/pdf/pdfimportwidgetbase.ui:214
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:103
-#: ui/forms/wdgdisplaysettings.ui:65 ui/kis_paintop_box.cc:153
+#: ui/forms/wdgdisplaysettings.ui:65 ui/kis_paintop_box.cc:172
 msgid "Size:"
 msgstr "Grandeu :"
 
@@ -3804,7 +3804,7 @@ msgstr "Disfacer l' coûtche ou masse"
 #: plugins/filters/randompickfilter/wdgrandompickoptions.ui:65
 #: plugins/paintops/libpaintop/forms/wdgflowopacityoption.ui:38
 #: ui/forms/wdganimationselector.ui:220 ui/forms/wdgautogradient.ui:81
-#: ui/forms/wdgpaintactioneditor.ui:89 ui/kis_paintop_box.cc:151
+#: ui/forms/wdgpaintactioneditor.ui:89 ui/kis_paintop_box.cc:170
 msgid "Opacity:"
 msgstr "Opacité:"
 
@@ -3900,11 +3900,19 @@ msgstr ""
 msgid "Load flipbook"
 msgstr ""
 
-#: plugins/extensions/dockers/historydocker/HistoryDock.cpp:25
+#: plugins/extensions/dockers/historydocker/HistoryDock.cpp:27
 #, fuzzy
 #| msgid "Color History"
 msgid "Undo History"
 msgstr "Istwere des coleurs"
+
+#: plugins/extensions/dockers/historydocker/KisUndoView.cpp:307
+msgid "Disable Cumulative Undo"
+msgstr ""
+
+#: plugins/extensions/dockers/historydocker/KisUndoView.cpp:307
+msgid "Enable Cumulative Undo"
+msgstr ""
 
 #. i18n: ectx: attribute (title), widget (QWidget, imgBrowserTab)
 #: plugins/extensions/dockers/imagedocker/forms/wdgimagedocker.ui:42
@@ -4211,7 +4219,7 @@ msgstr "No del coûtche:"
 #: plugins/extensions/resourcemanager/wdgdlgbundlemanager.ui:131
 #: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:22
 #: ui/forms/wdgautogradient.ui:25 ui/forms/wdgfilternodecreation.ui:17
-#: ui/forms/wdgflipbookselector.ui:28 ui/forms/wdgpaintopsettings.ui:93
+#: ui/forms/wdgflipbookselector.ui:28 ui/forms/wdgpaintopsettings.ui:166
 msgid "Name:"
 msgstr "No:"
 
@@ -5591,7 +5599,7 @@ msgstr "Pincea"
 #. i18n: ectx: property (text), widget (QCheckBox, cbRemoveWorkspaces)
 #: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:197
 #: plugins/extensions/resourcemanager/dlg_create_bundle.cpp:104
-#: ui/forms/wdgdlgblacklistcleanup.ui:26 ui/kis_paintop_box.cc:254
+#: ui/forms/wdgdlgblacklistcleanup.ui:26 ui/kis_paintop_box.cc:279
 #, fuzzy
 #| msgid "Colorspace"
 msgid "Workspaces"
@@ -5772,11 +5780,11 @@ msgstr "Novea apontiaedje %1"
 msgid "Could not load bundle %1."
 msgstr "Dji n' a savou radjouter l' coûtche a l' imådje."
 
-#: plugins/extensions/resourcemanager/resourcemanager.cpp:299
+#: plugins/extensions/resourcemanager/resourcemanager.cpp:300
 msgid "Could not create the new bundle."
 msgstr ""
 
-#: plugins/extensions/resourcemanager/resourcemanager.cpp:299
+#: plugins/extensions/resourcemanager/resourcemanager.cpp:300
 #, fuzzy
 #| msgid "Crop Image"
 msgid "Error"
@@ -7688,13 +7696,23 @@ msgstr ""
 msgid "Vector Layer"
 msgstr "Taeyî coûtche"
 
-#: plugins/formats/ora/ora_export.cc:98
+#: plugins/formats/ora/ora_export.cc:106
+#, fuzzy
+#| msgid "Cannot export images in %1.\n"
+msgid "Cannot export images in this colorspace or channel depth to OpenRaster"
+msgstr "Dji n' sai ebaguer imådjes e %1.\n"
+
+#: plugins/formats/ora/ora_export.cc:106
+msgid "Krita OpenRaster Export"
+msgstr ""
+
+#: plugins/formats/ora/ora_export.cc:114
 msgid ""
 "This image contains vector, clone or fill layers.\n"
 "These layers will be saved as raster layers."
 msgstr ""
 
-#: plugins/formats/ora/ora_export.cc:99
+#: plugins/formats/ora/ora_export.cc:115
 #, fuzzy
 #| msgid "Warning!"
 msgid "Warning"
@@ -9401,7 +9419,7 @@ msgstr "Apontiaedjes del passete"
 
 #. i18n: ectx: property (text), widget (QLabel, flowLabel)
 #: plugins/paintops/libpaintop/forms/wdgflowopacityoption.ui:58
-#: ui/kis_paintop_box.cc:152
+#: ui/kis_paintop_box.cc:171
 #, fuzzy
 #| msgctxt ""
 #| "The compression will take a long time; saving the file will be slow."
@@ -9756,7 +9774,7 @@ msgstr "Fortchete di coleurs"
 
 #: plugins/paintops/libpaintop/kis_pressure_mirror_option.cpp:30
 #: plugins/tools/defaulttools/kis_tool_multihand.cpp:243
-#: ui/kis_paintop_box.cc:250
+#: ui/kis_paintop_box.cc:275
 #, fuzzy
 #| msgid "Crop Image"
 msgid "Mirror"
@@ -10577,7 +10595,7 @@ msgctxt "(qtundo-format)"
 msgid "Draw Line"
 msgstr "Royes a pontiaedjes"
 
-#: plugins/tools/defaulttools/kis_tool_line.cc:81
+#: plugins/tools/defaulttools/kis_tool_line.cc:88
 #, fuzzy
 #| msgid "Color"
 msgid "Use sensors"
@@ -10585,18 +10603,18 @@ msgstr "Coleur"
 
 #. i18n: ectx: property (text), widget (QCheckBox, checkBoxPreview)
 #. i18n: ectx: property (title), widget (QGroupBox, m_groupBox)
-#: plugins/tools/defaulttools/kis_tool_line.cc:85
+#: plugins/tools/defaulttools/kis_tool_line.cc:91
 #: ui/forms/kis_previewwidgetbase.ui:36 ui/forms/wdgfilterdialog.ui:64
 msgid "Preview"
 msgstr "Prévey"
 
-#: plugins/tools/defaulttools/kis_tool_line.cc:250
+#: plugins/tools/defaulttools/kis_tool_line.cc:277
 msgid ""
 "Alt+Drag will move the origin of the currently displayed line around, Shift"
 "+Drag will force you to draw straight lines"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_line.h:96
+#: plugins/tools/defaulttools/kis_tool_line.h:103
 #, fuzzy
 #| msgid "&Painter's Tools"
 msgid "Line Tool"
@@ -10614,7 +10632,7 @@ msgstr "Inglêye:"
 msgid "Measure the distance between two points"
 msgstr "Muzurer l' distance inte deus ponts"
 
-#: plugins/tools/defaulttools/kis_tool_move.h:115
+#: plugins/tools/defaulttools/kis_tool_move.h:121
 #, fuzzy
 #| msgid "Move Layer"
 msgid "Move a layer"
@@ -12990,28 +13008,38 @@ msgid "Preset Collection"
 msgstr "Ramexhnêye des prédefinis"
 
 #. i18n: ectx: property (toolTip), widget (QLineEdit, txtPreset)
-#: ui/forms/wdgpaintopsettings.ui:103
-#, fuzzy
-#| msgid "Current preset"
-msgid "Current brush preset"
-msgstr "Prédefinixha do moumint"
+#: ui/forms/wdgpaintopsettings.ui:176
+msgid ""
+"Current Brush Preset. Pink in Color whenever the preset has modified "
+"settings. Stays the same if original settings are loaded."
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, bnSave)
-#: ui/forms/wdgpaintopsettings.ui:110
+#: ui/forms/wdgpaintopsettings.ui:183
 #, fuzzy
 #| msgid "save the current brush definition under this name"
 msgid "Save the current brush settings under this name"
 msgstr "schaper l' definixha do pincea do moumint avou ç' no ci"
 
 #. i18n: ectx: property (text), widget (QPushButton, bnSave)
-#: ui/forms/wdgpaintopsettings.ui:113
+#: ui/forms/wdgpaintopsettings.ui:186
 msgid "&Save to Presets"
 msgstr "&Schaper dins les prédefinis"
 
+#. i18n: ectx: property (text), widget (QPushButton, reload)
+#: ui/forms/wdgpaintopsettings.ui:193
+msgid "Reload"
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QPushButton, bnDefaultPreset)
-#: ui/forms/wdgpaintopsettings.ui:130
+#: ui/forms/wdgpaintopsettings.ui:234
 msgid "Default preset"
 msgstr "Prédefinixha prémetou"
+
+#. i18n: ectx: property (text), widget (QCheckBox, dirtyPresetCheckBox)
+#: ui/forms/wdgpaintopsettings.ui:247
+msgid "Temporarily Save Tweaks To Presets"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1)
 #. i18n: ectx: property (whatsThis), widget (KIntNumInput, m_maxTiles)
@@ -14485,93 +14513,97 @@ msgstr "Mostrer aidants di pondaedje"
 msgid "Show Assistant Previews"
 msgstr "Mostrer aidants di pondaedje"
 
-#: ui/kis_paintop_box.cc:96
+#: ui/kis_paintop_box.cc:105
 msgid "Painter's Toolchest"
 msgstr "Ahessaedje då pondeu"
 
-#: ui/kis_paintop_box.cc:102
+#: ui/kis_paintop_box.cc:111
 #, fuzzy
 #| msgid "Edit brush preset"
 msgid "Edit brush settings"
 msgstr "Candjî prédefinixhas des pinceas"
 
-#: ui/kis_paintop_box.cc:107
+#: ui/kis_paintop_box.cc:116
 #, fuzzy
 #| msgid "Edit brush preset"
 msgid "Choose brush preset"
 msgstr "Candjî prédefinixhas des pinceas"
 
-#: ui/kis_paintop_box.cc:114
+#: ui/kis_paintop_box.cc:123
 #, fuzzy
 #| msgid "Metering mode:"
 msgid "Set eraser mode"
 msgstr "Môde di muzuraedje:"
 
-#: ui/kis_paintop_box.cc:124
+#: ui/kis_paintop_box.cc:134
+msgid "Reload Original Preset"
+msgstr ""
+
+#: ui/kis_paintop_box.cc:143
 #, fuzzy
 #| msgid "ignore alpha"
 msgid "Preserve Alpha"
 msgstr "passer houte alfa"
 
-#: ui/kis_paintop_box.cc:133
+#: ui/kis_paintop_box.cc:152
 #, fuzzy
 #| msgid "Horizontal border"
 msgid "Set horizontal mirror mode"
 msgstr "Boirdeure coutcheye"
 
-#: ui/kis_paintop_box.cc:142
+#: ui/kis_paintop_box.cc:161
 #, fuzzy
 #| msgid "Metering mode:"
 msgid "Set vertical mirror mode"
 msgstr "Môde di muzuraedje:"
 
-#: ui/kis_paintop_box.cc:176
+#: ui/kis_paintop_box.cc:196
 msgid "Mode: "
 msgstr "Môde:"
 
-#: ui/kis_paintop_box.cc:187
+#: ui/kis_paintop_box.cc:207
 #, fuzzy
 #| msgid "Colorspace"
 msgid "Choose workspace"
 msgstr "Espåce di coleurs"
 
-#: ui/kis_paintop_box.cc:211
+#: ui/kis_paintop_box.cc:236
 #, fuzzy
 #| msgid "Brush size"
 msgid "Brush composite"
 msgstr "Grandeu do pincea"
 
-#: ui/kis_paintop_box.cc:215
+#: ui/kis_paintop_box.cc:240
 #, fuzzy
 #| msgid "Bristles"
 msgid "Brush option slider 1"
 msgstr "Pwels"
 
-#: ui/kis_paintop_box.cc:220
+#: ui/kis_paintop_box.cc:245
 #, fuzzy
 #| msgid "Bristles"
 msgid "Brush option slider 2"
 msgstr "Pwels"
 
-#: ui/kis_paintop_box.cc:225
+#: ui/kis_paintop_box.cc:250
 #, fuzzy
 #| msgid "Bristles"
 msgid "Brush option slider 3"
 msgstr "Pwels"
 
-#: ui/kis_paintop_box.cc:230
+#: ui/kis_paintop_box.cc:255
 #, fuzzy
 #| msgid "Filter Brush"
 msgid "Next Favourite Preset"
 msgstr "Pincea passete"
 
-#: ui/kis_paintop_box.cc:235
+#: ui/kis_paintop_box.cc:260
 #, fuzzy
 #| msgid "Filter Brush"
 msgid "Previous Favourite Preset"
 msgstr "Pincea passete"
 
-#: ui/kis_paintop_box.cc:240
+#: ui/kis_paintop_box.cc:265
 msgid "Switch to Previous Preset"
 msgstr ""
 
@@ -15169,6 +15201,20 @@ msgctxt "(qtundo-format)"
 msgid "Filter \"%1\""
 msgstr "Passete:"
 
+#: ui/widgets/kis_categorized_list_view.cpp:113
+#, fuzzy
+#| msgid "Locked"
+msgid "Lock"
+msgstr "Eclawé"
+
+#: ui/widgets/kis_categorized_list_view.cpp:113
+msgid "Unlock (Drop Locked)"
+msgstr ""
+
+#: ui/widgets/kis_categorized_list_view.cpp:116
+msgid "Unlock (keep locked)"
+msgstr ""
+
 #: ui/widgets/kis_channelflags_widget.cpp:38
 msgid ""
 "Check the active channels in this layer. Only these channels will be "
@@ -15379,45 +15425,45 @@ msgstr "Tchoezi stratedjeye di rfondaedje des meta-dnêyes"
 msgid "x%1"
 msgstr "%1%"
 
-#: ui/widgets/kis_paintop_presets_chooser_popup.cpp:55
+#: ui/widgets/kis_paintop_presets_chooser_popup.cpp:56
 #, fuzzy
 #| msgid "Thumbnail View"
 msgid "Thumbnails"
 msgstr "Prévoeyaedjes"
 
-#: ui/widgets/kis_paintop_presets_chooser_popup.cpp:60
+#: ui/widgets/kis_paintop_presets_chooser_popup.cpp:61
 #, fuzzy
 #| msgid "Detailed View"
 msgid "Details"
 msgstr "Sipepieuse vuwe"
 
-#: ui/widgets/kis_paintop_presets_popup.cpp:205
+#: ui/widgets/kis_paintop_presets_popup.cpp:220
 #, fuzzy
 #| msgid "edit presets"
 msgid "Overwrite Preset"
 msgstr "candjî prédefinis"
 
-#: ui/widgets/kis_paintop_presets_popup.cpp:209
+#: ui/widgets/kis_paintop_presets_popup.cpp:225
 #, fuzzy
 #| msgid "&Save to Presets"
 msgid "Save to Presets"
 msgstr "&Schaper dins les prédefinis"
 
-#: ui/widgets/kis_paintop_presets_popup.cpp:228
+#: ui/widgets/kis_paintop_presets_popup.cpp:246
 msgid "Attach to Toolbar"
 msgstr ""
 
-#: ui/widgets/kis_paintop_presets_popup.cpp:228
+#: ui/widgets/kis_paintop_presets_popup.cpp:246
 msgid "Detach from Toolbar"
 msgstr ""
 
-#: ui/widgets/kis_paintop_presets_popup.cpp:230
+#: ui/widgets/kis_paintop_presets_popup.cpp:248
 #, fuzzy
 #| msgid "Show Perspective Grid"
 msgid "Show Preset Strip"
 msgstr "Håyner grile di perspective"
 
-#: ui/widgets/kis_paintop_presets_popup.cpp:234
+#: ui/widgets/kis_paintop_presets_popup.cpp:252
 #, fuzzy
 #| msgid "Show root layer"
 msgid "Show Scratchpad"
@@ -15464,6 +15510,11 @@ msgstr ""
 #| msgid "Close"
 msgid "&Close"
 msgstr "Clôre"
+
+#, fuzzy
+#~| msgid "Current preset"
+#~ msgid "Current brush preset"
+#~ msgstr "Prédefinixha do moumint"
 
 #, fuzzy
 #~| msgid "Use custom curve"
