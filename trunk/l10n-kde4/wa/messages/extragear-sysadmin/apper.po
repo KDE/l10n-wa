@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-08-21 01:47+0000\n"
+"POT-Creation-Date: 2014-11-17 01:52+0000\n"
 "PO-Revision-Date: 2012-12-30 11:08+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -360,7 +360,7 @@ msgstr[0] "Pacaedje : %2"
 msgstr[1] "Pacaedjes : %2"
 
 #: apperd/TransactionWatcher.cpp:240 ApperKCM/TransactionModel.cpp:45
-#: AppSetup/SetupWizard.cpp:204
+#: AppSetup/SetupWizard.cpp:149
 msgid "Details"
 msgstr "Detays"
 
@@ -395,7 +395,7 @@ msgstr[1] "I gn a %1 noveas metaedjes a djoû"
 msgid "Review"
 msgstr "Rilever"
 
-#: apperd/Updater.cpp:290 AppSetup/SetupWizard.cpp:339
+#: apperd/Updater.cpp:290 AppSetup/SetupWizard.cpp:270
 #: libapper/ApplicationsDelegate.cpp:40
 msgid "Install"
 msgstr "Astaler"
@@ -498,7 +498,7 @@ msgid "Software Origins"
 msgstr "Oridjenes do programe"
 
 #. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: ApperKCM/ApperKCM.ui:267 AppSetup/SetupWizard.cpp:153
+#: ApperKCM/ApperKCM.ui:267 AppSetup/SetupWizard.cpp:87
 msgid "Back"
 msgstr "Èn erî"
 
@@ -662,7 +662,7 @@ msgstr "Catchî les pacaedjes k' i n' sont nén des programes"
 msgid "Display"
 msgstr "Håynaedje"
 
-#: ApperKCM/PackageDetails.cpp:87 AppSetup/SetupWizard.cpp:261
+#: ApperKCM/PackageDetails.cpp:87 AppSetup/SetupWizard.cpp:196
 msgid "Description"
 msgstr "Discrijhaedje"
 
@@ -1032,93 +1032,84 @@ msgstr "Grandeu d' aberwetaedje a l' avirance : %1"
 msgid "Check for new updates"
 msgstr "Cachî après des noveas metaedjes a djoû"
 
-#. i18n: ectx: property (text), widget (QRadioButton, acceptedRB)
-#: AppSetup/LicensePage.ui:98
-msgid "I agree to the above terms and conditions"
-msgstr "Dji so d' acoird so les termes eyet condicions cial pa dzeu"
-
-#. i18n: ectx: property (text), widget (QRadioButton, rejectedRB)
-#: AppSetup/LicensePage.ui:111
-msgid "I don't agree"
-msgstr "Dji n' so nén d' acoird"
-
-#: AppSetup/main.cpp:34 AppSetup/main.cpp:35
+#: AppSetup/main.cpp:33 AppSetup/main.cpp:34
 msgid "KDE Application Installer"
 msgstr "Astaleu des programes di KDE"
 
-#: AppSetup/main.cpp:36
-msgid "(C) 2012, Matthias Klumpp"
+#: AppSetup/main.cpp:35
+#, fuzzy
+#| msgid "(C) 2012, Matthias Klumpp"
+msgid "(C) 2014, Matthias Klumpp"
 msgstr "© 2012, Matthias Klumpp"
 
-#: AppSetup/main.cpp:38
+#: AppSetup/main.cpp:37
 msgctxt "@info:credit"
 msgid "Daniel Nicoletti"
 msgstr "Daniel Nicoletti"
 
-#: AppSetup/main.cpp:38 AppSetup/main.cpp:40
+#: AppSetup/main.cpp:37 AppSetup/main.cpp:39
 msgid "Developer"
 msgstr "Diswalpeu"
 
-#: AppSetup/main.cpp:40
+#: AppSetup/main.cpp:39
 msgctxt "@info:credit"
 msgid "Matthias Klumpp"
 msgstr "Matthias Klumpp"
 
-#: AppSetup/main.cpp:47
+#: AppSetup/main.cpp:46
 msgid "Show verbose information"
 msgstr "Mostrer l' infôrmåcion vierbeuse"
 
-#: AppSetup/main.cpp:48
+#: AppSetup/main.cpp:47
 msgid "IPK package filename"
 msgstr "No do fitchî IPK"
 
-#: AppSetup/main.cpp:72
-msgid "Sorry, we didn't get an existing IPK package as parameter."
+#: AppSetup/main.cpp:67
+#, fuzzy
+#| msgid "Sorry, we didn't get an existing IPK package as parameter."
+msgid "We did not receive a path to an IPK package as parameter."
 msgstr "Dji rgrete mins nos n' avans yeu nou pacaedje IPK come paramete."
 
-#: AppSetup/main.cpp:73
+#: AppSetup/main.cpp:68
 msgid "Package not found!"
 msgstr "Pacaedje nén trové !"
 
-#: AppSetup/SetupWizard.cpp:88
-msgid "Installation finished!"
-msgstr "Astalaedje fini !"
+#: AppSetup/SetupWizard.cpp:85 libapper/Requirements.cpp:59
+#: PkSession/SessionTask.cpp:71
+msgid "Continue"
+msgstr "Tcheryî pus lon"
 
-#: AppSetup/SetupWizard.cpp:89
-#, kde-format
-msgid "%1 has been installed successfully!"
-msgstr "%1 a stî astalé comifåt !"
-
-#: AppSetup/SetupWizard.cpp:103 libapper/PkTransaction.cpp:118
+#: AppSetup/SetupWizard.cpp:109 libapper/PkTransaction.cpp:118
 #: libapper/PkTransaction.cpp:131 libapper/PkTransaction.cpp:145
 #: libapper/PkTransaction.cpp:163
 msgid "Error"
 msgstr "Aroke"
 
-#: AppSetup/SetupWizard.cpp:104 AppSetup/SetupWizard.cpp:118
+#: AppSetup/SetupWizard.cpp:110
 msgid "An error occurred"
 msgstr "Åk n' a nén stî"
 
-#: AppSetup/SetupWizard.cpp:151 libapper/Requirements.cpp:59
-#: PkSession/SessionTask.cpp:71
-msgid "Continue"
-msgstr "Tcheryî pus lon"
-
-#: AppSetup/SetupWizard.cpp:192
+#: AppSetup/SetupWizard.cpp:137
 msgid "Welcome!"
 msgstr "Wilicome !"
 
-#: AppSetup/SetupWizard.cpp:193
+#: AppSetup/SetupWizard.cpp:138
 #, kde-format
 msgid "Welcome to the installation of %1!"
 msgstr "Bénvou a l' astalaedje di %1 !"
 
-#: AppSetup/SetupWizard.cpp:194
+#: AppSetup/SetupWizard.cpp:139
+#, fuzzy
+#| msgid ""
+#| "Please be careful while installing 3rd-party applications.<br>They may "
+#| "eventually <b>damage</b> your system or have <b>malicious behaviour</b>, "
+#| "like spying out your passwords.<br>Please do only install this software "
+#| "if you <b>trust the publisher and the author</b> of it."
 msgid ""
 "Please be careful while installing 3rd-party applications.<br>They may "
 "eventually <b>damage</b> your system or have <b>malicious behaviour</b>, "
 "like spying out your passwords.<br>Please do only install this software if "
-"you <b>trust the publisher and the author</b> of it."
+"you <b>trust its publisher</b>."
 msgstr ""
 "Waitîz a vos cwand vs astalez des programes viant d' ticès djins.<br>I "
 "pôrent pa des côps <b>fé do må</b> a vosse sistinme oudon-bén aveur des "
@@ -1126,75 +1117,43 @@ msgstr ""
 "<br>N' astalez ci programa cial, s' i vs plait, ki si <b>vos avoz fiyate e "
 "l' eplaideu ey e l' oteur</b> di ci cial."
 
-#: AppSetup/SetupWizard.cpp:205
+#: AppSetup/SetupWizard.cpp:150
 msgid "Details about this installation"
 msgstr "Detays åd fwait di l' astalaedje"
 
-#: AppSetup/SetupWizard.cpp:242
-msgid "Install for all users"
-msgstr "Astaler po tos les uzeus"
-
-#: AppSetup/SetupWizard.cpp:260
+#: AppSetup/SetupWizard.cpp:195
 msgid "Application description"
 msgstr "Discrijhaedje do programe"
 
-#: AppSetup/SetupWizard.cpp:272
-msgid "Software license"
-msgstr "Licince do programe"
-
-#: AppSetup/SetupWizard.cpp:273
-msgid "Please read the following terms and conditions carefully!"
-msgstr "Lijhoz bén s' i vs plait les termes eyet condicions shuvants !"
-
-#: AppSetup/SetupWizard.cpp:282
+#: AppSetup/SetupWizard.cpp:203
 msgid "Running installation"
 msgstr "Dji boute a l' astalaedje"
 
-#: AppSetup/SetupWizard.cpp:283
+#: AppSetup/SetupWizard.cpp:204
 #, kde-format
 msgid "Installing %1..."
 msgstr "Dj' astale %1..."
 
-#: AppSetup/SetupWizard.cpp:318
-msgid ""
-"Installing this package will make the following native packages obsolete. "
-"You might consider removing them manually."
-msgstr ""
-"L' astalaedje di ç' pacaedje cial rindrè forpassés les pacaedjes shuvants "
-"askepyîs pol sistinme. Vos dvrîz tuzer a lzès oister al mwin."
+#: AppSetup/SetupWizard.cpp:244
+msgid "Installation finished!"
+msgstr "Astalaedje fini !"
 
-#: AppSetup/SetupWizard.cpp:319
-msgid "Similar native packages found"
-msgstr "Minmes pacaedjes, mins askepyîs pols sistinme, trovés"
+#: AppSetup/SetupWizard.cpp:245
+#, kde-format
+msgid "%1 has been installed successfully!"
+msgstr "%1 a stî astalé comifåt !"
 
-#: AppSetup/SetupWizard.cpp:419
-msgid ""
-"You want to install this application as root!\n"
-"This can damage your system or install malicious software for all users.\n"
-"Please only proceed, if you really know what you're doing!\n"
-"Continue?"
-msgstr ""
-"Vos vloz astalez ç' programe cial come root !\n"
-"Çoucial pôreut fé sketer vosse sistinme oudon-bén astaler des måhaitîs "
-"programes po tos les uzeus.\n"
-"Nel fijhoz ki si vos savoz vormint çou k' vos estoz a fé !\n"
-"Tcheryî pus lon ?"
-
-#: AppSetup/SetupWizard.cpp:422
-msgid "Really install as superuser?"
-msgstr "Astaler po do bon come super-uzeu ?"
-
-#: AppSetup/SetupWizard.cpp:440
+#: AppSetup/SetupWizard.cpp:352
 #, kde-format
 msgid "This package has the following security level: <b>%1</b>"
 msgstr "Çou pacaejde ci a l' livea di såvrité shuvant : <b>%1</b>"
 
-#: AppSetup/SetupWizard.cpp:442
+#: AppSetup/SetupWizard.cpp:354
 #, kde-format
 msgid "It was signed with a key belonging to these user-ids: %1"
 msgstr "Il a stî siné avou ene clé apårtinant a ces id d' uzeu : %1"
 
-#: AppSetup/SetupWizard.cpp:446
+#: AppSetup/SetupWizard.cpp:359
 msgid "Security hints"
 msgstr "Propôzucions di såvrité"
 
@@ -3916,6 +3875,46 @@ msgstr "Bouye tote fwaite"
 #: PkSession/SessionTask.cpp:436
 msgid "All operations were committed successfully"
 msgstr "Totes les operåcions ont stî fwaites comifåt"
+
+#~ msgid "I agree to the above terms and conditions"
+#~ msgstr "Dji so d' acoird so les termes eyet condicions cial pa dzeu"
+
+#~ msgid "I don't agree"
+#~ msgstr "Dji n' so nén d' acoird"
+
+#~ msgid "Install for all users"
+#~ msgstr "Astaler po tos les uzeus"
+
+#~ msgid "Software license"
+#~ msgstr "Licince do programe"
+
+#~ msgid "Please read the following terms and conditions carefully!"
+#~ msgstr "Lijhoz bén s' i vs plait les termes eyet condicions shuvants !"
+
+#~ msgid ""
+#~ "Installing this package will make the following native packages obsolete. "
+#~ "You might consider removing them manually."
+#~ msgstr ""
+#~ "L' astalaedje di ç' pacaedje cial rindrè forpassés les pacaedjes shuvants "
+#~ "askepyîs pol sistinme. Vos dvrîz tuzer a lzès oister al mwin."
+
+#~ msgid "Similar native packages found"
+#~ msgstr "Minmes pacaedjes, mins askepyîs pols sistinme, trovés"
+
+#~ msgid ""
+#~ "You want to install this application as root!\n"
+#~ "This can damage your system or install malicious software for all users.\n"
+#~ "Please only proceed, if you really know what you're doing!\n"
+#~ "Continue?"
+#~ msgstr ""
+#~ "Vos vloz astalez ç' programe cial come root !\n"
+#~ "Çoucial pôreut fé sketer vosse sistinme oudon-bén astaler des måhaitîs "
+#~ "programes po tos les uzeus.\n"
+#~ "Nel fijhoz ki si vos savoz vormint çou k' vos estoz a fé !\n"
+#~ "Tcheryî pus lon ?"
+
+#~ msgid "Really install as superuser?"
+#~ msgstr "Astaler po do bon come super-uzeu ?"
 
 #~ msgid "Upgrade System"
 #~ msgstr "Mete a livea l' sistinme"
