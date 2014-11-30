@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: processui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-09-27 09:14+0000\n"
+"POT-Creation-Date: 2014-11-30 09:26+0000\n"
 "PO-Revision-Date: 2011-01-14 10:19+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -659,6 +659,17 @@ msgstr "<br/>Groupe setuid: %1"
 msgid "<br/>File System Group: %1"
 msgstr "<br/>Groupe do sistinme di fitchî: %1"
 
+#: ProcessModel.cpp:1144
+#, kde-format
+msgctxt "Short description of a process. PID, name, user"
+msgid "<numid>%1</numid>: %2, owned by user %3"
+msgstr "<numid>%1</numid>: %2, propiyeté di l' uzeu %3"
+
+#: ProcessModel.cpp:1151
+#, kde-format
+msgid "%1 (gid: <numid>%2</numid>)"
+msgstr "%1 (gid: <numid>%2</numid>)"
+
 #: ProcessModel.cpp:1172
 #, kde-format
 msgid "%1 (uid: %2)"
@@ -704,6 +715,12 @@ msgstr "(IA) %1"
 msgid "%1/s"
 msgstr "%1/s"
 
+#: ProcessModel.cpp:1345
+#, kde-format
+msgctxt "tooltip. name,pid "
+msgid "This process is being debugged by %1 (<numid>%2</numid>)"
+msgstr "Ci processus a stî disbugué pa %1 (<numid>%2</numid>)"
+
 #: ProcessModel.cpp:1366
 msgid ""
 "<b>Init</b> is the parent of all other processes and cannot be killed.<br/>"
@@ -714,6 +731,42 @@ msgid ""
 "<b>KThreadd</b> manages kernel threads. The children processes run in the "
 "kernel, controlling hard disk access, etc.<br/>"
 msgstr ""
+
+#: ProcessModel.cpp:1370
+#, fuzzy, kde-format
+#| msgctxt "name column tooltip. first item is the name"
+#| msgid "<b>%1</b><br />Process ID: <numid>%2</numid><br />Command: %3"
+msgctxt "name column tooltip. first item is the name"
+msgid "<b>%1</b><br />Process ID: <numid>%2</numid>"
+msgstr "<b>%1</b><br />ID processus: <numid>%2</numid><br />Commande: %3"
+
+#: ProcessModel.cpp:1375
+#, fuzzy, kde-format
+#| msgctxt "name column tooltip. first item is the name"
+#| msgid ""
+#| "<b>%1</b><br />Process ID: <numid>%2</numid><br />Parent's ID: <numid>%3</"
+#| "numid><br />Command: %4"
+msgctxt "name column tooltip. first item is the name"
+msgid ""
+"<b>%1</b><br />Process ID: <numid>%2</numid><br />Parent: %3<br />Parent's "
+"ID: <numid>%4</numid>"
+msgstr ""
+"<b>%1</b><br />ID processus: <numid>%2</numid><br />ID då parint: <numid>%3</"
+"numid><br />Commande: %4"
+
+#: ProcessModel.cpp:1377
+#, fuzzy, kde-format
+#| msgctxt "name column tooltip. first item is the name"
+#| msgid ""
+#| "<b>%1</b><br />Process ID: <numid>%2</numid><br />Parent's ID: <numid>%3</"
+#| "numid><br />Command: %4"
+msgctxt "name column tooltip. first item is the name"
+msgid ""
+"<b>%1</b><br />Process ID: <numid>%2</numid><br />Parent's ID: <numid>%3</"
+"numid>"
+msgstr ""
+"<b>%1</b><br />ID processus: <numid>%2</numid><br />ID då parint: <numid>%3</"
+"numid><br />Commande: %4"
 
 #: ProcessModel.cpp:1381 ProcessModel.cpp:1445
 #, kde-format
@@ -1410,50 +1463,6 @@ msgstr "Hôte prumiristé"
 #~ msgstr ""
 #~ "Vos n' avoz nén l' droet di touwer l' processus eyet gn yeu on problinme "
 #~ "e sayant d' enonder come root"
-
-#~ msgctxt "Short description of a process. PID, name, user"
-#~ msgid "<numid>%1</numid>: %2, owned by user %3"
-#~ msgstr "<numid>%1</numid>: %2, propiyeté di l' uzeu %3"
-
-#~ msgid "%1 (gid: <numid>%2</numid>)"
-#~ msgstr "%1 (gid: <numid>%2</numid>)"
-
-#~ msgctxt "tooltip. name,pid "
-#~ msgid "This process is being debugged by %1 (<numid>%2</numid>)"
-#~ msgstr "Ci processus a stî disbugué pa %1 (<numid>%2</numid>)"
-
-#, fuzzy
-#~| msgctxt "name column tooltip. first item is the name"
-#~| msgid "<b>%1</b><br />Process ID: <numid>%2</numid><br />Command: %3"
-#~ msgctxt "name column tooltip. first item is the name"
-#~ msgid "<b>%1</b><br />Process ID: <numid>%2</numid>"
-#~ msgstr "<b>%1</b><br />ID processus: <numid>%2</numid><br />Commande: %3"
-
-#, fuzzy
-#~| msgctxt "name column tooltip. first item is the name"
-#~| msgid ""
-#~| "<b>%1</b><br />Process ID: <numid>%2</numid><br />Parent's ID: <numid>"
-#~| "%3</numid><br />Command: %4"
-#~ msgctxt "name column tooltip. first item is the name"
-#~ msgid ""
-#~ "<b>%1</b><br />Process ID: <numid>%2</numid><br />Parent: %3<br /"
-#~ ">Parent's ID: <numid>%4</numid>"
-#~ msgstr ""
-#~ "<b>%1</b><br />ID processus: <numid>%2</numid><br />ID då parint: <numid>"
-#~ "%3</numid><br />Commande: %4"
-
-#, fuzzy
-#~| msgctxt "name column tooltip. first item is the name"
-#~| msgid ""
-#~| "<b>%1</b><br />Process ID: <numid>%2</numid><br />Parent's ID: <numid>"
-#~| "%3</numid><br />Command: %4"
-#~ msgctxt "name column tooltip. first item is the name"
-#~ msgid ""
-#~ "<b>%1</b><br />Process ID: <numid>%2</numid><br />Parent's ID: <numid>%3</"
-#~ "numid>"
-#~ msgstr ""
-#~ "<b>%1</b><br />ID processus: <numid>%2</numid><br />ID då parint: <numid>"
-#~ "%3</numid><br />Commande: %4"
 
 #, fuzzy
 #~| msgid "Renice Process..."
