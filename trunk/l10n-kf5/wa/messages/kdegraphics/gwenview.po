@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gwenview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-11-29 08:06+0000\n"
+"POT-Creation-Date: 2014-11-30 07:50+0000\n"
 "PO-Revision-Date: 2010-08-10 23:36+0200\n"
 "Last-Translator: Jean Cayron et Odile Lambert <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -228,6 +228,15 @@ msgstr "Rinoncî"
 msgctxt "@title:window"
 msgid "Rename"
 msgstr "No do fitchî"
+
+#: app/fileoperations.cpp:206
+#, fuzzy, kde-format
+#| msgctxt ""
+#| "@info %1 is the name of the document which failed to save, %2 is the "
+#| "reason for the failure"
+#| msgid "<filename>%1</filename>: %2"
+msgid "Rename <filename>%1</filename> to:"
+msgstr "<filename>%1</filename>: %2"
 
 #: app/fileopscontextmanageritem.cpp:158
 msgid "File Operations"
@@ -462,6 +471,22 @@ msgstr "Schaper avou ene ôte cogne"
 #, kde-format
 msgid "Gwenview cannot save images in '%1' format."
 msgstr "Gwenview n' sai schaper les imådjes el cogne « %1 »."
+
+#: app/gvcore.cpp:262
+#, kde-format
+msgctxt "@info"
+msgid ""
+"A file named <filename>%1</filename> already exists.\n"
+"Are you sure you want to overwrite it?"
+msgstr ""
+"On fitchî <filename>%1</filename> egzistêye dedja.\n"
+"Estoz seur(e) ki vos l' voloz spotchî?"
+
+#: app/gvcore.cpp:277 app/gvcore.cpp:300
+#, kde-format
+msgctxt "@info"
+msgid "<b>Saving <filename>%1</filename> failed:</b><br>%2"
+msgstr "<b>Li schapaedje di <filename>%1</filename> a fwait berwete:</b><br>%2"
 
 #: app/gvcore.cpp:320
 msgid "You are now viewing the new document."
@@ -1058,6 +1083,14 @@ msgid_plural "%1 documents could not be saved:"
 msgstr[0] "Dji n' a savou schaper on documint:"
 msgstr[1] "Dji n' a savou schaper %1 documints:"
 
+#: app/saveallhelper.cpp:108
+#, kde-format
+msgctxt ""
+"@info %1 is the name of the document which failed to save, %2 is the reason "
+"for the failure"
+msgid "<filename>%1</filename>: %2"
+msgstr "<filename>%1</filename>: %2"
+
 #: app/savebar.cpp:87
 msgid ""
 "You have modified many images. To avoid memory problems, you should save "
@@ -1563,6 +1596,26 @@ msgstr "Li tcherdjaedje di l' imådje a fwait berwete."
 msgid "Could not load document %1"
 msgstr "Dji n' a savou eberweter l' fitchî."
 
+#: lib/document/savejob.cpp:107
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Could not open file for writing, check that you have the necessary rights in "
+"<filename>%1</filename>."
+msgstr ""
+"Dji n' a savou drovi l' fitchî pos î scrire, waitîz k' vos avoz les bons "
+"droets dins <filename>%1</filename>."
+
+#: lib/document/savejob.cpp:132
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Could not overwrite file, check that you have the necessary rights to write "
+"in <filename>%1</filename>."
+msgstr ""
+"Dji n' a savou spotchî l' fitchî, waitîz k' vos avoz les bons droets dins "
+"<filename>%1</filename>."
+
 #: lib/documentview/documentview.cpp:178
 #, fuzzy
 #| msgctxt "Verb"
@@ -1581,6 +1634,11 @@ msgstr "Disfacer"
 #: lib/documentview/documentview.cpp:369
 msgid "Gwenview does not know how to display this kind of document"
 msgstr "Gwenview n' sai comint håyner les documints di c' djinre la."
+
+#: lib/documentview/documentview.cpp:467
+#, kde-format
+msgid "Loading <filename>%1</filename> failed"
+msgstr "Li tcherdjaedje di <filename>%1</filename> a fwait berwete"
 
 #: lib/documentview/documentviewcontroller.cpp:97
 msgid "Zoom to Fit"
@@ -1988,52 +2046,6 @@ msgstr "&Vey"
 
 #~ msgid "Size"
 #~ msgstr "Grandeu"
-
-#, fuzzy
-#~| msgctxt ""
-#~| "@info %1 is the name of the document which failed to save, %2 is the "
-#~| "reason for the failure"
-#~| msgid "<filename>%1</filename>: %2"
-#~ msgid "Rename <filename>%1</filename> to:"
-#~ msgstr "<filename>%1</filename>: %2"
-
-#~ msgctxt "@info"
-#~ msgid ""
-#~ "A file named <filename>%1</filename> already exists.\n"
-#~ "Are you sure you want to overwrite it?"
-#~ msgstr ""
-#~ "On fitchî <filename>%1</filename> egzistêye dedja.\n"
-#~ "Estoz seur(e) ki vos l' voloz spotchî?"
-
-#~ msgctxt "@info"
-#~ msgid "<b>Saving <filename>%1</filename> failed:</b><br>%2"
-#~ msgstr ""
-#~ "<b>Li schapaedje di <filename>%1</filename> a fwait berwete:</b><br>%2"
-
-#~ msgctxt ""
-#~ "@info %1 is the name of the document which failed to save, %2 is the "
-#~ "reason for the failure"
-#~ msgid "<filename>%1</filename>: %2"
-#~ msgstr "<filename>%1</filename>: %2"
-
-#~ msgctxt "@info"
-#~ msgid ""
-#~ "Could not open file for writing, check that you have the necessary rights "
-#~ "in <filename>%1</filename>."
-#~ msgstr ""
-#~ "Dji n' a savou drovi l' fitchî pos î scrire, waitîz k' vos avoz les bons "
-#~ "droets dins <filename>%1</filename>."
-
-#~ msgctxt "@info"
-#~ msgid ""
-#~ "Could not overwrite file, check that you have the necessary rights to "
-#~ "write in <filename>%1</filename>."
-#~ msgstr ""
-#~ "Dji n' a savou spotchî l' fitchî, waitîz k' vos avoz les bons droets dins "
-#~ "<filename>%1</filename>."
-
-#~ msgid "Loading <filename>%1</filename> failed"
-#~ msgstr "Li tcherdjaedje di <filename>%1</filename> a fwait berwete"
 
 #, fuzzy
 #~| msgid "Copyright 2000-2008 Aurélien Gâteau"
