@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkclock\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-12-29 07:54+0000\n"
+"POT-Creation-Date: 2015-02-28 09:47+0000\n"
 "PO-Revision-Date: 2011-07-17 15:41+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -37,9 +37,11 @@ msgstr "Date et eure"
 msgid "Set date and time &automatically:"
 msgstr "Defini &otomaticmint li date et l' eure:"
 
-#. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: ectx: property (text), widget (QLabel, timeServerLabel)
 #: dateandtime.ui:53
-msgid "Time server:"
+#, fuzzy
+#| msgid "Time server:"
+msgid "&Time server:"
 msgstr "Sierveu d' eure :"
 
 #. i18n: ectx: property (whatsThis), widget (KDatePicker, cal)
@@ -69,7 +71,7 @@ msgstr "Coisse ås eures coinrece do moumint :"
 msgid "Search"
 msgstr ""
 
-#: dtime.cpp:77
+#: dtime.cpp:81
 msgid ""
 "No NTP utility has been found. Install 'ntpdate' or 'rdate' command to "
 "enable automatic updating of date and time."
@@ -78,7 +80,7 @@ msgstr ""
 "« rdate » po mete èn alaedje li metaedje a djoû otomatike del date eyet d' "
 "l' eure."
 
-#: dtime.cpp:107
+#: dtime.cpp:112
 msgid ""
 "Here you can change the system time. Click into the hours, minutes or "
 "seconds field to change the relevant value, either using the up and down "
@@ -88,46 +90,50 @@ msgstr ""
 "tchamps des eures, munutes ou segondes po candjî les valixhances, soeye-t i "
 "avou les botons fletches, soeye-t i tot tapant ene nouve valixhance."
 
-#: dtime.cpp:129
+#: dtime.cpp:134
 #, fuzzy, kde-format
 #| msgid "Current local time zone:"
 msgctxt "%1 is name of time zone"
 msgid "Current local time zone: %1"
 msgstr "Coisse ås eures coinrece do moumint :"
 
-#: dtime.cpp:133
+#: dtime.cpp:138
 #, fuzzy, kde-format
 #| msgid "Current local time zone: %1 (%2)"
 msgctxt "%1 is name of time zone, %2 is its abbreviation"
 msgid "Current local time zone: %1 (%2)"
 msgstr "Coisse ås eures coinrece do moumint: %1 (%2)"
 
-#: dtime.cpp:201
+#: dtime.cpp:218
+#, fuzzy
+#| msgid ""
+#| "Public Time Server (pool.ntp.org),asia.pool.ntp.org,europe.pool.ntp.org,"
+#| "north-america.pool.ntp.org,oceania.pool.ntp.org"
 msgid ""
-"Public Time Server (pool.ntp.org),asia.pool.ntp.org,europe.pool.ntp.org,"
-"north-america.pool.ntp.org,oceania.pool.ntp.org"
+"Public Time Server (pool.ntp.org),        asia.pool.ntp.org,        europe."
+"pool.ntp.org,        north-america.pool.ntp.org,        oceania.pool.ntp.org"
 msgstr ""
 "Sierveu d' eure publike (pool.ntp.org),asia.pool.ntp.org,europe.pool.ntp.org,"
 "north-america.pool.ntp.org,oceania.pool.ntp.org"
 
-#: dtime.cpp:283
+#: dtime.cpp:288
 #, kde-format
 msgid "Unable to contact time server: %1."
 msgstr "Dji n' a savou m' raloyî å sierveu d' eure: %1."
 
-#: dtime.cpp:287
+#: dtime.cpp:292
 msgid "Can not set date."
 msgstr "Dji n' sai defini l' date."
 
-#: dtime.cpp:290
+#: dtime.cpp:295
 msgid "Error setting new time zone."
 msgstr "Åk n' a nén stî come dji definixheut ene novele coisse d' eurêye."
 
-#: dtime.cpp:291
+#: dtime.cpp:296
 msgid "Time zone Error"
 msgstr "Aroke pol coisse d' eurêye"
 
-#: dtime.cpp:308
+#: dtime.cpp:313
 msgid ""
 "<h1>Date & Time</h1> This system settings module can be used to set the "
 "system date and time. As these settings do not only affect you as a user, "
@@ -144,39 +150,39 @@ msgstr ""
 "pinsez ki l' eure ou l' date do sistinme divèt esse candjeyes, atôtchîz "
 "l' manaedjeu do sistinme."
 
-#: main.cpp:50
+#: main.cpp:62
 msgid "KDE Clock Control Module"
 msgstr "Module di contrôle di l' ôrlodje di KDE"
 
-#: main.cpp:52
+#: main.cpp:64
 msgid "(c) 1996 - 2001 Luca Montecchiani"
 msgstr "© 1996 - 2001 Luca Montecchiani"
 
-#: main.cpp:54
+#: main.cpp:66
 msgid "Luca Montecchiani"
 msgstr "Luca Montecchiani"
 
-#: main.cpp:54
+#: main.cpp:66
 msgid "Original author"
 msgstr "Prumî oteur"
 
-#: main.cpp:55
+#: main.cpp:67
 msgid "Paul Campbell"
 msgstr "Paul Campbell"
 
-#: main.cpp:55
+#: main.cpp:67
 msgid "Current Maintainer"
 msgstr "Mintneu pol moumint"
 
-#: main.cpp:56
+#: main.cpp:68
 msgid "Benjamin Meyer"
 msgstr "Benjamin Meyer"
 
-#: main.cpp:56
+#: main.cpp:68
 msgid "Added NTP support"
 msgstr "Radjouté sopoirt NTP"
 
-#: main.cpp:58
+#: main.cpp:70
 msgid ""
 "<h1>Date & Time</h1> This control module can be used to set the system date "
 "and time. As these settings do not only affect you as a user, but rather the "
@@ -191,10 +197,26 @@ msgstr ""
 "Si vos n' kinoxhoz nén li scret da root, mins k' vos pinsez ki l' eure ou "
 "l' date do sistinme divèt esse candjeyes, atôchîz l' manaedjeu do sistinme."
 
-#: main.cpp:92
+#: main.cpp:125
 #, kde-format
 msgid "Unable to authenticate/execute the action: %1, %2"
 msgstr "Dji n' sai otintifyî/enonder l' faitindje : %1, %2"
+
+#: main.cpp:144
+msgid "Unable to change NTP settings"
+msgstr ""
+
+#: main.cpp:156
+#, fuzzy
+#| msgid "Unable to contact time server: %1."
+msgid "Unable to set current time"
+msgstr "Dji n' a savou m' raloyî å sierveu d' eure: %1."
+
+#: main.cpp:166
+#, fuzzy
+#| msgid "Unable to contact time server: %1."
+msgid "Unable to set timezone"
+msgstr "Dji n' a savou m' raloyî å sierveu d' eure: %1."
 
 #~ msgid "kcmclock"
 #~ msgstr "kcmclock"
