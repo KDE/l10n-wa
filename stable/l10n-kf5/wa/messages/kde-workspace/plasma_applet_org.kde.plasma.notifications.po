@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-03-13 11:00+0000\n"
+"POT-Creation-Date: 2015-04-07 11:43+0000\n"
 "PO-Revision-Date: 2011-01-09 11:22+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -21,15 +21,21 @@ msgstr ""
 msgid "Information"
 msgstr "Infôrmåcion"
 
-#: contents/ui/configNotifications.qml:36
+#: contents/ui/configNotifications.qml:42
 #, fuzzy
+#| msgid "Application notifications"
 msgid "Show application and system notifications"
 msgstr "Notifiaedjes des programes"
 
-#: contents/ui/configNotifications.qml:41
+#: contents/ui/configNotifications.qml:47
 #, fuzzy
+#| msgid "File transfers and other jobs"
 msgid "Track file transfers and other jobs"
 msgstr "Berwetaedjes di fitchîs eyet ôtès bouyes"
+
+#: contents/ui/configNotifications.qml:51
+msgid "Use custom position for the notification popup"
+msgstr ""
 
 #: contents/ui/JobDetailsItem.qml:51
 msgctxt ""
@@ -38,14 +44,21 @@ msgid "%1 of %2"
 msgstr ""
 
 #: contents/ui/JobDetailsItem.qml:59
-msgctxt "m of n files are being processed"
-msgid "files"
-msgstr ""
+#, fuzzy
+#| msgid "%2 / 1 file"
+#| msgid_plural "%2 / %1 files"
+msgctxt "Either just 1 file or m of n files are being processed"
+msgid "1 file"
+msgid_plural "%2 of %1 files"
+msgstr[0] "%2 / 1 fitchî"
+msgstr[1] "%2 / %1 fitchîs"
 
 #: contents/ui/JobDetailsItem.qml:61
-msgctxt "m of n dirs are being processed"
-msgid "dirs"
-msgstr ""
+msgctxt "Either just 1 dir or m of n dirs are being processed"
+msgid "1 dir"
+msgid_plural "%2 of %1 dirs"
+msgstr[0] ""
+msgstr[1] ""
 
 #: contents/ui/JobDetailsItem.qml:64
 msgid "%1 of %2 %3"
@@ -58,38 +71,58 @@ msgstr ""
 
 #: contents/ui/JobDetailsItem.qml:141
 #, fuzzy
+#| msgid "%1 (%2 remaining)"
 msgctxt "Speed and estimated time to completion"
 msgid "%1 (%2 remaining)"
 msgstr "%1 (i ndè dmeure %2)"
 
-#: contents/ui/Jobs.qml:68
+#: contents/ui/Jobs.qml:64
 #, fuzzy
+#| msgid "%1 [Finished]"
 msgctxt "the job, which can be anything, has finished"
 msgid "%1: Finished"
 msgstr "%1 [Fini]"
 
-#: contents/ui/Jobs.qml:68
+#: contents/ui/Jobs.qml:64
 #, fuzzy
+#| msgid "%1 [Finished]"
 msgid "Job Finished"
 msgstr "%1 [Fini]"
 
-#: contents/ui/Jobs.qml:74
+#: contents/ui/Jobs.qml:67
 #, fuzzy
+#| msgid "%1 [Finished]"
+msgctxt "the job, which can be anything, failed to complete"
+msgid "%1: Failed"
+msgstr "%1 [Fini]"
+
+#: contents/ui/Jobs.qml:67
+#, fuzzy
+#| msgid "%1 [Finished]"
+msgid "Job Failed"
+msgstr "%1 [Fini]"
+
+#: contents/ui/Jobs.qml:80
+#, fuzzy
+#| msgid "Open"
 msgid "Open..."
 msgstr "Drovi"
 
 #: contents/ui/main.qml:84
 #, fuzzy
+#| msgid "Notifications and jobs"
 msgid "Notifications and Jobs"
 msgstr "Nou notifiaedje et nole bouye"
 
 #: contents/ui/main.qml:87
 #, fuzzy
+#| msgid "No notifications and no jobs"
 msgid "No notifications or jobs"
 msgstr "Nou notifiaedje et nole bouye"
 
 #: contents/ui/main.qml:89 contents/ui/main.qml:93
 #, fuzzy
+#| msgid "no running jobs"
 msgid "%1 running job"
 msgid_plural "%1 running jobs"
 msgstr[0] "nole bouye a l' ovraedje"
@@ -103,6 +136,8 @@ msgstr[1] "%1 notifiaedjes"
 
 #: contents/ui/main.qml:115
 #, fuzzy
+#| msgid "%1 notification"
+#| msgid_plural "%1 notifications"
 msgid "No new notifications."
 msgstr "%1 notifiaedje"
 
@@ -153,10 +188,12 @@ msgstr[0] ""
 msgstr[1] ""
 
 #, fuzzy
+#~| msgid "Application notifications"
 #~ msgid "&Application notifications:"
 #~ msgstr "Notifiaedjes des programes"
 
 #, fuzzy
+#~| msgid "File transfers and other jobs"
 #~ msgid "&File transfers and jobs:"
 #~ msgstr "Berwetaedjes di fitchîs eyet ôtès bouyes"
 
@@ -167,6 +204,8 @@ msgstr[1] ""
 #~ msgstr "Notifiaedjes"
 
 #, fuzzy
+#~| msgctxt "Show all  notifications"
+#~| msgid "All"
 #~ msgid "All"
 #~ msgstr "Totafwait"
 
@@ -184,6 +223,8 @@ msgstr[1] ""
 #~ msgstr[1] "%1 bouyes a l' ovraedje (i nd è dmeure %2)"
 
 #, fuzzy
+#~| msgid "%1 running job"
+#~| msgid_plural "%1 running jobs"
 #~ msgctxt "Number of jobs and the speed at which they are downloading"
 #~ msgid "%1 running job (%2/s)"
 #~ msgid_plural "%1 running jobs (%2/s)"
@@ -236,11 +277,6 @@ msgstr[1] ""
 #~ msgid_plural "%2 / %1 folders"
 #~ msgstr[0] "%2 / 1 ridant"
 #~ msgstr[1] "%2 / %1 ridants"
-
-#~ msgid "%2 / 1 file"
-#~ msgid_plural "%2 / %1 files"
-#~ msgstr[0] "%2 / 1 fitchî"
-#~ msgstr[1] "%2 / %1 fitchîs"
 
 #~ msgid "Less"
 #~ msgstr "Moens"
