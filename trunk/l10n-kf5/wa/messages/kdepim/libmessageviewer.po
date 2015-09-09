@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-09-08 10:44+0000\n"
+"POT-Creation-Date: 2015-09-09 08:20+0000\n"
 "PO-Revision-Date: 2011-08-15 08:58+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -542,6 +542,17 @@ msgstr ""
 msgid "Configure..."
 msgstr "Apontyî..."
 
+#: header/allheaderstyleplugin/allheaderstyleinterface.cpp:36
+#: viewer/viewer_p.cpp:1627
+msgctxt "View->headers->"
+msgid "&All Headers"
+msgstr "&Totes les Tiestires"
+
+#: header/allheaderstyleplugin/allheaderstyleinterface.cpp:39
+#: viewer/viewer_p.cpp:1630
+msgid "Show all message headers"
+msgstr "Håyner totes les tiestires do messaedje"
+
 #: header/briefheaderstyle.cpp:99 header/customheaderstyle.cpp:92
 #: header/enterpriseheaderstyle.cpp:118 header/fancyheaderstyle.cpp:128
 #: header/plainheaderstyle.cpp:92
@@ -559,6 +570,17 @@ msgstr "Cc : "
 #: header/plainheaderstyle.cpp:110
 msgid "BCC: "
 msgstr "Bcc : "
+
+#: header/briefheaderstyleplugin/briefheaderstyleinterface.cpp:37
+#: viewer/viewer_p.cpp:1606
+msgctxt "View->headers->"
+msgid "&Brief Headers"
+msgstr "&Coûtès Tiestires"
+
+#: header/briefheaderstyleplugin/briefheaderstyleinterface.cpp:40
+#: viewer/viewer_p.cpp:1609
+msgid "Show brief list of message headers"
+msgstr ""
 
 #: header/customheadersettingwidget.cpp:40
 msgid "Only show the headers listed below"
@@ -610,9 +632,39 @@ msgstr "Responde a : "
 msgid "%1: "
 msgstr ""
 
+#: header/customheaderstyleplugin/customheaderstyleinterface.cpp:37
+#: viewer/viewer_p.cpp:1634
+#, fuzzy
+#| msgctxt "View->headers->"
+#| msgid "&Long Headers"
+msgctxt "View->headers->"
+msgid "&Custom Headers"
+msgstr "&Longuès Tiestires"
+
+#: header/customheaderstyleplugin/customheaderstyleinterface.cpp:40
+#: viewer/viewer_p.cpp:1637
+#, fuzzy
+#| msgid "Show all message headers"
+msgid "Show custom headers"
+msgstr "Håyner totes les tiestires do messaedje"
+
 #: header/enterpriseheaderstyle.cpp:133
 msgid "To: "
 msgstr "Po :  "
+
+#: header/enterpriseheaderstyleplugin/enterpriseheaderstyleinterface.cpp:36
+#: viewer/viewer_p.cpp:1592
+#, fuzzy
+#| msgctxt "View->headers->"
+#| msgid "&Brief Headers"
+msgctxt "View->headers->"
+msgid "&Enterprise Headers"
+msgstr "&Coûtès Tiestires"
+
+#: header/enterpriseheaderstyleplugin/enterpriseheaderstyleinterface.cpp:40
+#: viewer/viewer_p.cpp:1595
+msgid "Show the list of headers in Enterprise style"
+msgstr ""
 
 #: header/fancyheaderstyle.cpp:123
 #, kde-format
@@ -650,6 +702,17 @@ msgstr "Po :  "
 #: header/fancyheaderstyle.cpp:226 header/grantleeheaderformatter.cpp:154
 msgid "Spam Status:"
 msgstr "Sitatut spam: "
+
+#: header/fancyheaderstyleplugin/fancyheaderstyleinterface.cpp:37
+#: viewer/viewer_p.cpp:1599
+msgctxt "View->headers->"
+msgid "&Fancy Headers"
+msgstr "&Tiestires Personeles"
+
+#: header/fancyheaderstyleplugin/fancyheaderstyleinterface.cpp:40
+#: viewer/viewer_p.cpp:1602
+msgid "Show the list of headers in a fancy format"
+msgstr ""
 
 #: header/grantleeheaderformatter.cpp:83
 #, fuzzy, kde-format
@@ -791,6 +854,37 @@ msgstr ""
 "\n"
 "Totafwait l' rapoirt :\n"
 "%2"
+
+#: header/headerstylemenu.cpp:58 viewer/viewer_p.cpp:1587
+msgctxt "View->"
+msgid "&Headers"
+msgstr "&Tiestires"
+
+#: header/headerstylemenu.cpp:60 viewer/viewer_p.cpp:1589
+msgid "Choose display style of message headers"
+msgstr ""
+
+#: header/longheaderstyleplugin/longheaderstyleinterface.cpp:37
+#: viewer/viewer_p.cpp:1620
+msgctxt "View->headers->"
+msgid "&Long Headers"
+msgstr "&Longuès Tiestires"
+
+#: header/longheaderstyleplugin/longheaderstyleinterface.cpp:40
+#: viewer/viewer_p.cpp:1623
+msgid "Show long list of message headers"
+msgstr ""
+
+#: header/standardsheaderstyleplugin/standardsheaderstyleinterface.cpp:37
+#: viewer/viewer_p.cpp:1613
+msgctxt "View->headers->"
+msgid "&Standard Headers"
+msgstr "Tiestires &Sitandård"
+
+#: header/standardsheaderstyleplugin/standardsheaderstyleinterface.cpp:40
+#: viewer/viewer_p.cpp:1616
+msgid "Show standard list of message headers"
+msgstr ""
 
 #: job/attachmenteditjob.cpp:46
 msgid ""
@@ -2095,13 +2189,13 @@ msgstr "Fén do messaedje ecripté"
 msgid "End of encapsulated message"
 msgstr "Fén do messaedje ecapsulé"
 
-#: viewer/pluginloaderbase.cpp:89
+#: viewer/pluginloaderbase.cpp:90
 #, fuzzy
 #| msgid "Unread Column"
 msgid "Unnamed plugin"
 msgstr "Colone nén léjhou"
 
-#: viewer/pluginloaderbase.cpp:95
+#: viewer/pluginloaderbase.cpp:96
 #, fuzzy
 msgid "No description available"
 msgstr "I gn a pupont d' lingaedjes"
@@ -2360,86 +2454,6 @@ msgstr "Fé 'ne &passete"
 #, kde-format
 msgid "View Attachment: %1"
 msgstr "Mostrer l' ataetchmint : %1"
-
-#: viewer/viewer_p.cpp:1587
-msgctxt "View->"
-msgid "&Headers"
-msgstr "&Tiestires"
-
-#: viewer/viewer_p.cpp:1589
-msgid "Choose display style of message headers"
-msgstr ""
-
-#: viewer/viewer_p.cpp:1592
-#, fuzzy
-#| msgctxt "View->headers->"
-#| msgid "&Brief Headers"
-msgctxt "View->headers->"
-msgid "&Enterprise Headers"
-msgstr "&Coûtès Tiestires"
-
-#: viewer/viewer_p.cpp:1595
-msgid "Show the list of headers in Enterprise style"
-msgstr ""
-
-#: viewer/viewer_p.cpp:1599
-msgctxt "View->headers->"
-msgid "&Fancy Headers"
-msgstr "&Tiestires Personeles"
-
-#: viewer/viewer_p.cpp:1602
-msgid "Show the list of headers in a fancy format"
-msgstr ""
-
-#: viewer/viewer_p.cpp:1606
-msgctxt "View->headers->"
-msgid "&Brief Headers"
-msgstr "&Coûtès Tiestires"
-
-#: viewer/viewer_p.cpp:1609
-msgid "Show brief list of message headers"
-msgstr ""
-
-#: viewer/viewer_p.cpp:1613
-msgctxt "View->headers->"
-msgid "&Standard Headers"
-msgstr "Tiestires &Sitandård"
-
-#: viewer/viewer_p.cpp:1616
-msgid "Show standard list of message headers"
-msgstr ""
-
-#: viewer/viewer_p.cpp:1620
-msgctxt "View->headers->"
-msgid "&Long Headers"
-msgstr "&Longuès Tiestires"
-
-#: viewer/viewer_p.cpp:1623
-msgid "Show long list of message headers"
-msgstr ""
-
-#: viewer/viewer_p.cpp:1627
-msgctxt "View->headers->"
-msgid "&All Headers"
-msgstr "&Totes les Tiestires"
-
-#: viewer/viewer_p.cpp:1630
-msgid "Show all message headers"
-msgstr "Håyner totes les tiestires do messaedje"
-
-#: viewer/viewer_p.cpp:1634
-#, fuzzy
-#| msgctxt "View->headers->"
-#| msgid "&Long Headers"
-msgctxt "View->headers->"
-msgid "&Custom Headers"
-msgstr "&Longuès Tiestires"
-
-#: viewer/viewer_p.cpp:1637
-#, fuzzy
-#| msgid "Show all message headers"
-msgid "Show custom headers"
-msgstr "Håyner totes les tiestires do messaedje"
 
 #: viewer/viewer_p.cpp:1645
 msgctxt "View->"
