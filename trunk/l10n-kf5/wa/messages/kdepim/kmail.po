@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-10-10 09:33+0000\n"
+"POT-Creation-Date: 2015-10-15 09:16+0000\n"
 "PO-Revision-Date: 2013-07-06 02:07+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -123,8 +123,8 @@ msgid "Multiple encryption keys per address"
 msgstr "sacwantès clés d' ecriptaedje pa -z adresse"
 
 #: aboutdata.cpp:364 collectionpage/collectionmailinglistpage.cpp:104
-#: editor/kmcomposewin.cpp:2126 kmmainwin.cpp:66 kmsystemtray.cpp:73
-#: kmsystemtray.cpp:114
+#: editor/kmcomposewin.cpp:2126 kmmainwin.cpp:66 kmreaderwin.cpp:315
+#: kmsystemtray.cpp:73 kmsystemtray.cpp:114
 msgid "KMail"
 msgstr "KMail"
 
@@ -3062,12 +3062,12 @@ msgstr "Radjouter å calpin d' adresses"
 msgid "Contact created successfully"
 msgstr "Contak ahivé comifåt"
 
-#: job/createnewcontactjob.cpp:136 kmreaderwin.cpp:830
+#: job/createnewcontactjob.cpp:136 kmreaderwin.cpp:796
 #, kde-format
 msgid "Contact cannot be stored: %1"
 msgstr "Dji n' sait schaper l' contak : %1"
 
-#: job/createnewcontactjob.cpp:136 kmreaderwin.cpp:830
+#: job/createnewcontactjob.cpp:136 kmreaderwin.cpp:796
 msgid "Failed to store contact"
 msgstr "Dji n' a savou schaper l' contak"
 
@@ -4442,101 +4442,59 @@ msgstr ""
 "Moens d' edjalaedjes di l' eterface uzeu, li veriaedje des emiles si fwait "
 "dins l' fond"
 
-#: kmreaderwin.cpp:316
-msgid ""
-"<h2 style='margin-top: 0px;'>Retrieving Folder Contents</h2><p>Please "
-"wait . . .</p>&nbsp;"
-msgstr ""
-"<h2 style='margin-top: 0px;'>Dj' obtén çou k' i gn a e ridant</h2><p>Tårdjîz "
-"s' i vs plait . . .</p>&nbsp;"
+#: kmreaderwin.cpp:318
+#, fuzzy
+#| msgid "KDE Email Client"
+msgid "The KDE Mail Client"
+msgstr "On cliyint d' emilaedje po KDE"
 
-#: kmreaderwin.cpp:324
+#: kmreaderwin.cpp:327
+#, fuzzy
+#| msgid "Retrieving folder properties"
+msgid "Retrieving Folder Contents"
+msgstr "Dj' obtén les prôpietés des ridants"
+
+#: kmreaderwin.cpp:328
+#, fuzzy
+#| msgid "Please wait"
+msgid "Please wait . . ."
+msgstr "Tårdjîz s' i vs plait"
+
+#: kmreaderwin.cpp:334 kmreaderwin.cpp:343
+#, fuzzy
+#| msgid "offline"
+msgid "Offline"
+msgstr "disraloyî"
+
+#: kmreaderwin.cpp:335
+#, fuzzy
+#| msgid ""
+#| "<h2 style='margin-top: 0px;'>Offline</h2><p>KMail is currently in offline "
+#| "mode. Click <a href=\"kmail:goOnline\">here</a> to go online . . .</"
+#| "p>&nbsp;"
 msgid ""
-"<h2 style='margin-top: 0px;'>Offline</h2><p>KMail is currently in offline "
-"mode. Click <a href=\"kmail:goOnline\">here</a> to go online . . .</p>&nbsp;"
+"KMail is currently in offline mode. Click <a href=\"kmail:goOnline\">here</"
+"a> to go online . . .</p>"
 msgstr ""
 "<h2 style='margin-top: 0px;'>Disraloyî</h2><p>KMail est pol moumint e môde "
 "disraloyî. Clitchîz <a href=\"kmail:goOnline\">chal</a> po vs raloyî . . .</"
 "p>&nbsp;"
 
-#: kmreaderwin.cpp:333
+#: kmreaderwin.cpp:344
+#, fuzzy
+#| msgid ""
+#| "<h2 style='margin-top: 0px;'>Offline</h2><p>Account is currently in "
+#| "offline mode. Click <a href=\"kmail:goResourceOnline\">here</a> to go "
+#| "online . . .</p>&nbsp;"
 msgid ""
-"<h2 style='margin-top: 0px;'>Offline</h2><p>Account is currently in offline "
-"mode. Click <a href=\"kmail:goResourceOnline\">here</a> to go online . . .</"
-"p>&nbsp;"
+"Account is currently in offline mode. Click <a href=\"kmail:goResourceOnline"
+"\">here</a> to go online . . .</p>"
 msgstr ""
 "<h2 style='margin-top: 0px;'>Disraloyî</h2><p>Li conte est pol moumint e "
 "môde disraloyî. Clitchîz <a href=\"kmail:goResourceOnline\">chal</a> po vs "
 "raloyî . . .</p>&nbsp;"
 
-#: kmreaderwin.cpp:347
-#, kde-format
-msgctxt ""
-"%1: KMail version; %2: help:// URL; %3: generated list of new features; %4: "
-"First-time user text (only shown on first start); %5: generated list of "
-"important changes; --- end of comment ---"
-msgid ""
-"<h2 style='margin-top: 0px;'>Welcome to KMail %1</h2><p>KMail is the email "
-"client by KDE. It is designed to be fully compatible with Internet mailing "
-"standards including MIME, SMTP, POP3, and IMAP.</p>\n"
-"<ul><li>KMail has many powerful features which are described in the <a href="
-"\"%2\">documentation</a></li>\n"
-"%5\n"
-"%3\n"
-"%4\n"
-"<p>We hope that you will enjoy KMail.</p>\n"
-"<p>Thank you,</p>\n"
-"<p style='margin-bottom: 0px'>&nbsp; &nbsp; The KMail Team</p>"
-msgstr ""
-"<h2 style='margin-top: 0px;'>Bénvnowe dins KMail %1</h2><p>KMail est "
-"l' cliyint emile di KDE. Il est atuzlé po esse totafwait compatibe avou les "
-"standårds d' emilaedje avou dvins MIME, SMTP, POP3 eyet IMAP.</p>\n"
-"<ul><li>KMail a tot plin d' pouxhantès fonccionålités ki sont discrîtes ezès "
-"<a href=\"%2\">esplikêyes</a></li>\n"
-"%5\n"
-"%3\n"
-"%4\n"
-"<p>Nos vs sohaitans bråmint do plaijhi avou KMail.</p>\n"
-"<p>Merci bråmint des côps,</p>\n"
-"<p style='margin-bottom: 0px'>&nbsp; &nbsp; L' ekipe di KMail</p>"
-
-#: kmreaderwin.cpp:364
-#, kde-format
-msgid ""
-"<p>Some of the new features in this release of KMail include (compared to "
-"KMail %1, which is part of KDE Software Compilation %2):</p>\n"
-msgstr ""
-"<p>I gn a ezès novelès fonccionålités di cisse rexhowe ci di KMail (s' on "
-"ravize KMail %1, ki fjheut pårteye del Ramexhnêye di programes KDE %2) :</"
-"p>\n"
-
-#: kmreaderwin.cpp:378
-msgid ""
-"<p>Please take a moment to fill in the KMail configuration panel at Settings-"
-"&gt;Configure KMail.\n"
-"You need to create at least a default identity and an incoming as well as "
-"outgoing mail account.</p>\n"
-msgstr ""
-"<p>Purdoz ene munute po rimpli l' sicriftôr d' apontiaedje di KMAil dins "
-"Apontiaedjes-&gt;Apontyî KMail.\n"
-"Vos dvoz ahiver pol moens ene idintité prémetowe eyet on conte emile "
-"rintrant et rexhant.</p>\n"
-
-#: kmreaderwin.cpp:390
-#, kde-format
-msgid ""
-"<p><span style='font-size:125%; font-weight:bold;'>Important changes</span> "
-"(compared to KMail %1):</p>\n"
-msgstr ""
-"<p><span style='font-size:125%; font-weight:bold;'>Impôrtants candjmints</"
-"span> (s' on ravize KMail %1) :</p>\n"
-
-#: kmreaderwin.cpp:395
-#, kde-format
-msgid "<li>%1</li>\n"
-msgstr "<li>%1</li>\n"
-
-#: kmreaderwin.cpp:836
+#: kmreaderwin.cpp:802
 msgid "Contact modified successfully"
 msgstr "Contak candjî comifåt"
 
@@ -6458,6 +6416,71 @@ msgid_plural "Out of office reply active on servers"
 msgstr[0] "Response foû do buro e-n alaedje"
 msgstr[1] "Response foû do buro e-n alaedje"
 
+#~ msgid ""
+#~ "<h2 style='margin-top: 0px;'>Retrieving Folder Contents</h2><p>Please "
+#~ "wait . . .</p>&nbsp;"
+#~ msgstr ""
+#~ "<h2 style='margin-top: 0px;'>Dj' obtén çou k' i gn a e ridant</"
+#~ "h2><p>Tårdjîz s' i vs plait . . .</p>&nbsp;"
+
+#~ msgctxt ""
+#~ "%1: KMail version; %2: help:// URL; %3: generated list of new features; "
+#~ "%4: First-time user text (only shown on first start); %5: generated list "
+#~ "of important changes; --- end of comment ---"
+#~ msgid ""
+#~ "<h2 style='margin-top: 0px;'>Welcome to KMail %1</h2><p>KMail is the "
+#~ "email client by KDE. It is designed to be fully compatible with Internet "
+#~ "mailing standards including MIME, SMTP, POP3, and IMAP.</p>\n"
+#~ "<ul><li>KMail has many powerful features which are described in the <a "
+#~ "href=\"%2\">documentation</a></li>\n"
+#~ "%5\n"
+#~ "%3\n"
+#~ "%4\n"
+#~ "<p>We hope that you will enjoy KMail.</p>\n"
+#~ "<p>Thank you,</p>\n"
+#~ "<p style='margin-bottom: 0px'>&nbsp; &nbsp; The KMail Team</p>"
+#~ msgstr ""
+#~ "<h2 style='margin-top: 0px;'>Bénvnowe dins KMail %1</h2><p>KMail est "
+#~ "l' cliyint emile di KDE. Il est atuzlé po esse totafwait compatibe avou "
+#~ "les standårds d' emilaedje avou dvins MIME, SMTP, POP3 eyet IMAP.</p>\n"
+#~ "<ul><li>KMail a tot plin d' pouxhantès fonccionålités ki sont discrîtes "
+#~ "ezès <a href=\"%2\">esplikêyes</a></li>\n"
+#~ "%5\n"
+#~ "%3\n"
+#~ "%4\n"
+#~ "<p>Nos vs sohaitans bråmint do plaijhi avou KMail.</p>\n"
+#~ "<p>Merci bråmint des côps,</p>\n"
+#~ "<p style='margin-bottom: 0px'>&nbsp; &nbsp; L' ekipe di KMail</p>"
+
+#~ msgid ""
+#~ "<p>Some of the new features in this release of KMail include (compared to "
+#~ "KMail %1, which is part of KDE Software Compilation %2):</p>\n"
+#~ msgstr ""
+#~ "<p>I gn a ezès novelès fonccionålités di cisse rexhowe ci di KMail (s' on "
+#~ "ravize KMail %1, ki fjheut pårteye del Ramexhnêye di programes KDE %2) :</"
+#~ "p>\n"
+
+#~ msgid ""
+#~ "<p>Please take a moment to fill in the KMail configuration panel at "
+#~ "Settings-&gt;Configure KMail.\n"
+#~ "You need to create at least a default identity and an incoming as well as "
+#~ "outgoing mail account.</p>\n"
+#~ msgstr ""
+#~ "<p>Purdoz ene munute po rimpli l' sicriftôr d' apontiaedje di KMAil dins "
+#~ "Apontiaedjes-&gt;Apontyî KMail.\n"
+#~ "Vos dvoz ahiver pol moens ene idintité prémetowe eyet on conte emile "
+#~ "rintrant et rexhant.</p>\n"
+
+#~ msgid ""
+#~ "<p><span style='font-size:125%; font-weight:bold;'>Important changes</"
+#~ "span> (compared to KMail %1):</p>\n"
+#~ msgstr ""
+#~ "<p><span style='font-size:125%; font-weight:bold;'>Impôrtants candjmints</"
+#~ "span> (s' on ravize KMail %1) :</p>\n"
+
+#~ msgid "<li>%1</li>\n"
+#~ msgstr "<li>%1</li>\n"
+
 #~ msgid "OpenPGP Message - Encrypted"
 #~ msgstr "Messaedje OpenPGP - ecripté"
 
@@ -6770,9 +6793,6 @@ msgstr[1] "Response foû do buro e-n alaedje"
 
 #~ msgid "online"
 #~ msgstr "raloyî"
-
-#~ msgid "offline"
-#~ msgstr "disraloyî"
 
 #, fuzzy
 #~| msgid "Account Name"
