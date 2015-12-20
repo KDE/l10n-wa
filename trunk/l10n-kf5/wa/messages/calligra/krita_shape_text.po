@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TextShape\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-11-29 06:49+0000\n"
+"POT-Creation-Date: 2015-12-20 06:37+0000\n"
 "PO-Revision-Date: 2010-06-06 15:05+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -1912,7 +1912,8 @@ msgid "&New"
 msgstr "&Novea"
 
 #. i18n: ectx: property (text), widget (QPushButton, bDelete)
-#: dialogs/StyleManager.ui:75 TextTool.cpp:2651
+#: dialogs/StyleManager.ui:75
+#: kotext/commands/ChangeTrackedDeleteCommand.cpp:277 TextTool.cpp:2651
 msgid "Delete"
 msgstr "Disfacer"
 
@@ -2140,6 +2141,457 @@ msgstr "Distance:"
 msgid "Table Of Contents"
 msgstr "Meet dins l' tåve di l' ådvins"
 
+#: kotext/commands/ChangeListCommand.cpp:41
+#: kotext/commands/ChangeListCommand.cpp:88
+#: kotext/commands/ChangeListCommand.cpp:101
+#, fuzzy
+#| msgid "Change List"
+msgctxt "(qtundo-format)"
+msgid "Change List"
+msgstr "Candjî djivêye"
+
+#: kotext/commands/ChangeStylesMacroCommand.cpp:37
+#, fuzzy
+#| msgid "Change List"
+msgctxt "(qtundo-format)"
+msgid "Change Styles"
+msgstr "Candjî djivêye"
+
+#: kotext/commands/ChangeTrackedDeleteCommand.cpp:77
+#: kotext/commands/DeleteCommand.cpp:68
+#, fuzzy
+#| msgid "Delete"
+msgctxt "(qtundo-format)"
+msgid "Delete"
+msgstr "Disfacer"
+
+#: kotext/commands/ChangeTrackedDeleteCommand.cpp:193 TextTool.cpp:2645
+msgid "Key Press"
+msgstr "Tchôcaedje di tape"
+
+#: kotext/commands/ChangeTrackedDeleteCommand.cpp:332
+#: kotext/commands/DeleteCommand.cpp:517 kotext/KoTextEditor_undo.cpp:87
+#: kotext/KoTextEditor_undo.cpp:166 kotext/KoTextEditor_undo.cpp:201
+#: kotext/KoTextEditor_undo.cpp:218 kotext/KoTextEditor_undo.cpp:260
+#, fuzzy
+#| msgid "Text"
+msgctxt "(qtundo-format)"
+msgid "Text"
+msgstr "Tecse"
+
+#: kotext/commands/DeleteTableColumnCommand.cpp:38
+#, fuzzy
+#| msgid "Deletion"
+msgctxt "(qtundo-format)"
+msgid "Delete Column"
+msgstr "Disfaçaedje"
+
+#: kotext/commands/DeleteTableRowCommand.cpp:38
+#, fuzzy
+#| msgid "Delete"
+msgctxt "(qtundo-format)"
+msgid "Delete Row"
+msgstr "Disfacer"
+
+#: kotext/commands/InsertNoteCommand.cpp:36
+#, fuzzy
+#| msgid "Insert Table"
+msgctxt "(qtundo-format)"
+msgid "Insert Footnote"
+msgstr "Sititchî tåvlea"
+
+#: kotext/commands/InsertNoteCommand.cpp:38
+#, fuzzy
+#| msgid "Insert Table"
+msgctxt "(qtundo-format)"
+msgid "Insert Endnote"
+msgstr "Sititchî tåvlea"
+
+#: kotext/commands/InsertTableColumnCommand.cpp:40
+#, fuzzy
+#| msgid "Insert Table"
+msgctxt "(qtundo-format)"
+msgid "Insert Column Right"
+msgstr "Sititchî tåvlea"
+
+#: kotext/commands/InsertTableColumnCommand.cpp:42
+#, fuzzy
+#| msgid "Insert Table"
+msgctxt "(qtundo-format)"
+msgid "Insert Column Left"
+msgstr "Sititchî tåvlea"
+
+#: kotext/commands/InsertTableRowCommand.cpp:40
+#, fuzzy
+#| msgid "Insert Table"
+msgctxt "(qtundo-format)"
+msgid "Insert Row Below"
+msgstr "Sititchî tåvlea"
+
+#: kotext/commands/InsertTableRowCommand.cpp:42
+#, fuzzy
+#| msgid "Insert Table"
+msgctxt "(qtundo-format)"
+msgid "Insert Row Above"
+msgstr "Sititchî tåvlea"
+
+#: kotext/commands/ListItemNumberingCommand.cpp:35
+#, fuzzy
+#| msgid "Change List Numbering"
+msgctxt "(qtundo-format)"
+msgid "Change List Numbering"
+msgstr "Candjî l' limerotaedje del djivêye"
+
+#: kotext/commands/NewSectionCommand.cpp:37
+#, fuzzy
+#| msgid "Deletion"
+msgctxt "(qtundo-format)"
+msgid "New Section"
+msgstr "Disfaçaedje"
+
+#: kotext/commands/ParagraphFormattingCommand.cpp:56
+#: kotext/KoTextEditor_format.cpp:510 kotext/KoTextEditor_format.cpp:531
+#, fuzzy
+#| msgid "Formatting"
+msgctxt "(qtundo-format)"
+msgid "Formatting"
+msgstr "Epådjnaedje"
+
+#: kotext/commands/ParagraphFormattingCommand.cpp:93
+#, fuzzy
+#| msgid "Paragraph Format"
+msgctxt "(qtundo-format)"
+msgid "Direct Paragraph Formatting"
+msgstr "Cogne do hagnon"
+
+#: kotext/commands/RenameSectionCommand.cpp:35
+#, fuzzy
+#| msgid "Insertion"
+msgctxt "(qtundo-format)"
+msgid "Rename Section"
+msgstr "Stitchaedje"
+
+#: kotext/commands/ResizeTableCommand.cpp:45 TextTool.cpp:1402
+#, fuzzy
+#| msgid "Fixed column width:"
+msgctxt "(qtundo-format)"
+msgid "Adjust Column Width"
+msgstr "Lårdjeur del colone ewale :"
+
+#: kotext/commands/ResizeTableCommand.cpp:47 TextTool.cpp:1447
+msgctxt "(qtundo-format)"
+msgid "Adjust Row Height"
+msgstr ""
+
+#: kotext/commands/SplitSectionsCommand.cpp:39
+#, fuzzy
+#| msgid "Configure Change Tracking"
+msgctxt "(qtundo-format)"
+msgid "Split sections startings"
+msgstr "Apontyî l' shuvaedje des candjmints"
+
+#: kotext/commands/SplitSectionsCommand.cpp:41
+#, fuzzy
+#| msgid "Configure Change Tracking"
+msgctxt "(qtundo-format)"
+msgid "Split sections endings"
+msgstr "Apontyî l' shuvaedje des candjmints"
+
+#: kotext/commands/TextPasteCommand.cpp:66
+msgctxt "(qtundo-format)"
+msgid "Paste As Text"
+msgstr ""
+
+#: kotext/commands/TextPasteCommand.cpp:68
+#, fuzzy
+#| msgid "Paste"
+msgctxt "(qtundo-format)"
+msgid "Paste"
+msgstr "Aclaper"
+
+#: kotext/InsertTextLocator.cpp:27
+msgid "Index Reference"
+msgstr ""
+
+#: kotext/InsertTextReferenceAction.cpp:35
+#: kotext/InsertTextReferenceAction.cpp:63
+msgid "Text Reference"
+msgstr ""
+
+#: kotext/InsertTextReferenceAction.cpp:44
+msgid "Please create an index to reference first."
+msgstr ""
+
+#: kotext/InsertTextReferenceAction.cpp:53
+msgid "Select the index you want to reference"
+msgstr ""
+
+#: kotext/InsertTextReferenceAction.cpp:63 kotext/InsertVariableAction.cpp:58
+#, fuzzy, kde-format
+#| msgid "Capitalization"
+msgid "%1 Options"
+msgstr "Metaedje e grandès letes"
+
+#: kotext/KoSectionModel.cpp:87
+#, fuzzy, kde-format
+#| msgid "Insertion"
+msgctxt "new numbered section name"
+msgid "New section %1"
+msgstr "Stitchaedje"
+
+#: kotext/KoText.cpp:32
+#, fuzzy
+#| msgctxt "Text list-style"
+#| msgid "None"
+msgctxt "Underline Style"
+msgid "None"
+msgstr "Nouk"
+
+#: kotext/KoText.cpp:33
+#, fuzzy
+#| msgctxt "Line spacing value"
+#| msgid "Single"
+msgctxt "Underline Style"
+msgid "Single"
+msgstr "Simpe"
+
+#: kotext/KoText.cpp:34
+#, fuzzy
+#| msgctxt "Line spacing value"
+#| msgid "Double"
+msgctxt "Underline Style"
+msgid "Double"
+msgstr "Dobe"
+
+#: kotext/KoTextEditor.cpp:193 kotext/KoTextEditor.cpp:1559
+#: kotext/KoTextEditor.cpp:1561
+#, fuzzy
+#| msgid "Paragraph..."
+msgctxt "(qtundo-format)"
+msgid "New Paragraph"
+msgstr "Hagnon..."
+
+#: kotext/KoTextEditor.cpp:483
+#, fuzzy
+#| msgid "Insert Index"
+msgctxt "(qtundo-format)"
+msgid "Add Bookmark"
+msgstr "Sititchî indecse"
+
+#: kotext/KoTextEditor.cpp:502
+#, fuzzy
+#| msgctxt "Line spacing type"
+#| msgid "Additional"
+msgctxt "(qtundo-format)"
+msgid "Add Annotation"
+msgstr "Di pus"
+
+#: kotext/KoTextEditor.cpp:526
+#, fuzzy
+#| msgid "Insert Index"
+msgctxt "(qtundo-format)"
+msgid "Insert Index"
+msgstr "Sititchî indecse"
+
+#: kotext/KoTextEditor.cpp:552
+#, fuzzy
+#| msgid "Insert Table"
+msgctxt "(qtundo-format)"
+msgid "Insert Variable"
+msgstr "Sititchî tåvlea"
+
+#: kotext/KoTextEditor.cpp:619
+#, fuzzy
+#| msgid "Insert Index"
+msgctxt "(qtundo-format)"
+msgid "Insert Break"
+msgstr "Sititchî indecse"
+
+#: kotext/KoTextEditor.cpp:940 kotext/KoTextEditor.cpp:942
+#: kotext/KoTextEditor.cpp:957
+#, fuzzy
+#| msgid "Insert Table"
+msgctxt "(qtundo-format)"
+msgid "Insert Table"
+msgstr "Sititchî tåvlea"
+
+#: kotext/KoTextEditor.cpp:1097
+msgctxt "(qtundo-format)"
+msgid "Merge Cells"
+msgstr ""
+
+#: kotext/KoTextEditor.cpp:1114
+#, fuzzy
+#| msgid "Configure Change Tracking"
+msgctxt "(qtundo-format)"
+msgid "Split Cells"
+msgstr "Apontyî l' shuvaedje des candjmints"
+
+#: kotext/KoTextEditor.cpp:1143
+#, fuzzy
+#| msgid "Fixed column width:"
+msgctxt "(qtundo-format)"
+msgid "Adjust Table Width"
+msgstr "Lårdjeur del colone ewale :"
+
+#: kotext/KoTextEditor.cpp:1160 TextTool.cpp:911
+msgctxt "(qtundo-format)"
+msgid "Change Border Formatting"
+msgstr ""
+
+#: kotext/KoTextEditor.cpp:1207 kotext/KoTextEditor.cpp:1209
+#: kotext/KoTextEditor.cpp:1227
+#, fuzzy
+#| msgid "Include in table of contents"
+msgctxt "(qtundo-format)"
+msgid "Insert Table Of Contents"
+msgstr "Meet dins l' tåve di l' ådvins"
+
+#: kotext/KoTextEditor.cpp:1266
+#, fuzzy
+#| msgid "Include in table of contents"
+msgctxt "(qtundo-format)"
+msgid "Modify Table Of Contents"
+msgstr "Meet dins l' tåve di l' ådvins"
+
+#: kotext/KoTextEditor.cpp:1283 kotext/KoTextEditor.cpp:1285
+#: kotext/KoTextEditor.cpp:1304
+#, fuzzy
+#| msgid "Insert Linebreak"
+msgctxt "(qtundo-format)"
+msgid "Insert Bibliography"
+msgstr "Sititchî on djocaedje di roye"
+
+#: kotext/KoTextEditor.cpp:1341 kotext/KoTextEditor.cpp:1343
+#, fuzzy
+#| msgid "Capitalization"
+msgctxt "(qtundo-format)"
+msgid "Add Citation"
+msgstr "Metaedje e grandès letes"
+
+#: kotext/KoTextEditor.cpp:1370 kotext/KoTextEditor.cpp:1372
+#: kotext/KoTextEditor.cpp:1410
+msgctxt "(qtundo-format)"
+msgid "Typing"
+msgstr ""
+
+#: kotext/KoTextEditor_format.cpp:67
+#, fuzzy
+#| msgid "Bold"
+msgctxt "(qtundo-format)"
+msgid "Bold"
+msgstr "Cråsses"
+
+#: kotext/KoTextEditor_format.cpp:80
+#, fuzzy
+#| msgid "Italic"
+msgctxt "(qtundo-format)"
+msgid "Italic"
+msgstr "Clintcheyes"
+
+#: kotext/KoTextEditor_format.cpp:93
+#, fuzzy
+#| msgctxt "Text formatting"
+#| msgid "Underline"
+msgctxt "(qtundo-format)"
+msgid "Underline"
+msgstr "Sorlignî"
+
+#: kotext/KoTextEditor_format.cpp:112
+#, fuzzy
+#| msgid "Strike Out"
+msgctxt "(qtundo-format)"
+msgid "Strike Out"
+msgstr "Båré"
+
+#: kotext/KoTextEditor_format.cpp:145 kotext/KoTextEditor_format.cpp:146
+#, fuzzy
+#| msgid "Alignment"
+msgctxt "(qtundo-format)"
+msgid "Change Alignment"
+msgstr "Aroymint"
+
+#: kotext/KoTextEditor_format.cpp:163
+msgctxt "(qtundo-format)"
+msgid "Set Vertical Alignment"
+msgstr ""
+
+#: kotext/KoTextEditor_format.cpp:197 kotext/KoTextEditor_format.cpp:198
+#, fuzzy
+#| msgid "Decrease Indent"
+msgctxt "(qtundo-format)"
+msgid "Decrease Indent"
+msgstr "Ritrait pus ptit"
+
+#: kotext/KoTextEditor_format.cpp:233 kotext/KoTextEditor_format.cpp:234
+#, fuzzy
+#| msgid "Increase Indent"
+msgctxt "(qtundo-format)"
+msgid "Increase Indent"
+msgstr "Ritrait pus grand"
+
+#: kotext/KoTextEditor_format.cpp:269 kotext/KoTextEditor_format.cpp:271
+#, fuzzy
+#| msgid "Decrease Font Size"
+msgctxt "(qtundo-format)"
+msgid "Decrease font size"
+msgstr "Raptiti l' fonte"
+
+#: kotext/KoTextEditor_format.cpp:282 kotext/KoTextEditor_format.cpp:284
+#, fuzzy
+#| msgid "Increase Font Size"
+msgctxt "(qtundo-format)"
+msgid "Increase font size"
+msgstr "Ragrandi l' fonte"
+
+#: kotext/KoTextEditor_format.cpp:295
+#, fuzzy
+#| msgid "Select Font"
+msgctxt "(qtundo-format)"
+msgid "Set Font"
+msgstr "Tchoezi fonte"
+
+#: kotext/KoTextEditor_format.cpp:308
+#, fuzzy
+#| msgid "Font Size"
+msgctxt "(qtundo-format)"
+msgid "Set Font Size"
+msgstr "Grandeu del fonte"
+
+#: kotext/KoTextEditor_format.cpp:321
+#, fuzzy
+#| msgid "Background Color"
+msgctxt "(qtundo-format)"
+msgid "Set Background Color"
+msgstr "Coleur do fond"
+
+#: kotext/KoTextEditor_format.cpp:334
+#, fuzzy
+#| msgid "Text Color..."
+msgctxt "(qtundo-format)"
+msgid "Set Text Color"
+msgstr "Coleur do Tecse..."
+
+#: kotext/KoTextEditor_format.cpp:362 kotext/KoTextEditor_format.cpp:401
+#, fuzzy
+#| msgid "Edit Character Style"
+msgctxt "(qtundo-format)"
+msgid "Set Character Style"
+msgstr "Candjî stîle do caractere"
+
+#: kotext/KoTextEditor_format.cpp:468
+#, fuzzy
+#| msgid "Edit Paragraph Style"
+msgctxt "(qtundo-format)"
+msgid "Set Paragraph Style"
+msgstr "Candjî stîle del hagnon"
+
+#: kotext/styles/KoStyleManager.cpp:106 kotext/styles/KoStyleManager.cpp:111
+#, fuzzy
+#| msgid "Default Format"
+msgid "Default"
+msgstr "Prémetowe cogne"
+
 #: ReferencesTool.cpp:143
 #, fuzzy
 #| msgid "Insert Table"
@@ -2221,6 +2673,130 @@ msgstr "Meet dins l' tåve di l' ådvins"
 msgid "Review"
 msgstr "Usteye di scrijhaedje"
 
+#: textlayout/ListItemsHelper.cpp:223
+#, fuzzy
+#| msgctxt "Text list-style"
+#| msgid "None"
+msgctxt "Text list-style"
+msgid "None"
+msgstr "Nouk"
+
+#: textlayout/ListItemsHelper.cpp:224
+#, fuzzy
+#| msgid "Ballot X Bullet"
+msgid "Small Bullet"
+msgstr "Tchike a clitchî"
+
+#: textlayout/ListItemsHelper.cpp:225
+msgid "Circle Bullet"
+msgstr "Tchike e ceke"
+
+#: textlayout/ListItemsHelper.cpp:226
+msgid "Square Bullet"
+msgstr "Cwårêyès tchikes"
+
+#: textlayout/ListItemsHelper.cpp:227
+msgid "Rhombus Bullet"
+msgstr "Tchike e lozindje"
+
+#: textlayout/ListItemsHelper.cpp:228
+msgid "Check Mark Bullet"
+msgstr "Tchike marke di verifiaedje"
+
+#: textlayout/ListItemsHelper.cpp:229
+msgid "Rightwards Arrow Bullet"
+msgstr "Tchike fletche viè l' droete"
+
+#: textlayout/ListItemsHelper.cpp:230
+msgid "Arabic"
+msgstr "Arabe"
+
+#: textlayout/ListItemsHelper.cpp:231
+msgid "Lower Alphabetical"
+msgstr "Bas åbécé"
+
+#: textlayout/ListItemsHelper.cpp:232
+msgid "Upper Alphabetical"
+msgstr "Hôt åbécé"
+
+#: textlayout/ListItemsHelper.cpp:233
+msgid "Lower Roman"
+msgstr "Bas Roman"
+
+#: textlayout/ListItemsHelper.cpp:234
+msgid "Upper Roman"
+msgstr "Hôt Roman"
+
+#: textlayout/ListItemsHelper.cpp:241
+#, fuzzy
+#| msgid "Square Bullet"
+msgid "Large Bullet"
+msgstr "Cwårêyès tchikes"
+
+#: textlayout/ListItemsHelper.cpp:242
+msgid "Ballot X Bullet"
+msgstr "Tchike a clitchî"
+
+#: textlayout/ListItemsHelper.cpp:243
+msgid "Rightwards Arrow Head Bullet"
+msgstr "Tchike ponte di fletche viè l' droete"
+
+#: textlayout/ListItemsHelper.cpp:244
+msgid "Bengali"
+msgstr "Béngali"
+
+#: textlayout/ListItemsHelper.cpp:245
+msgid "Gujarati"
+msgstr "Goudjarati"
+
+#: textlayout/ListItemsHelper.cpp:246
+msgid "Gurumukhi"
+msgstr "Gouroumoukhi"
+
+#: textlayout/ListItemsHelper.cpp:247
+msgid "Kannada"
+msgstr "Kannada"
+
+#: textlayout/ListItemsHelper.cpp:248
+msgid "Malayalam"
+msgstr "Malayalam"
+
+#: textlayout/ListItemsHelper.cpp:249
+msgid "Oriya"
+msgstr "Oriya"
+
+#: textlayout/ListItemsHelper.cpp:250
+msgid "Tamil"
+msgstr "Tamoul"
+
+#: textlayout/ListItemsHelper.cpp:251
+msgid "Telugu"
+msgstr "Telougou"
+
+#: textlayout/ListItemsHelper.cpp:252
+msgid "Tibetan"
+msgstr "Tibetin"
+
+#: textlayout/ListItemsHelper.cpp:253
+msgid "Thai"
+msgstr "Taylandès"
+
+#: textlayout/ListItemsHelper.cpp:254
+msgid "Abjad"
+msgstr "Abjad"
+
+#: textlayout/ListItemsHelper.cpp:255
+msgid "AbjadMinor"
+msgstr "Abjad Mineur"
+
+#: textlayout/ListItemsHelper.cpp:256
+msgid "ArabicAlphabet"
+msgstr "Åbécé arabe"
+
+#: textlayout/ListItemsHelper.cpp:257
+msgid "Image"
+msgstr ""
+
 #: TextShapeFactory.cpp:44 TextShapeFactory.cpp:54
 msgid "Text"
 msgstr "Tecse"
@@ -2281,29 +2857,12 @@ msgstr ""
 msgid "Press shift to not resize this"
 msgstr ""
 
-#: TextTool.cpp:911
-msgctxt "(qtundo-format)"
-msgid "Change Border Formatting"
-msgstr ""
-
 #: TextTool.cpp:1139
 #, fuzzy
 #| msgid "Cut"
 msgctxt "(qtundo-format)"
 msgid "Cut"
 msgstr "Côper"
-
-#: TextTool.cpp:1402
-#, fuzzy
-#| msgid "Fixed column width:"
-msgctxt "(qtundo-format)"
-msgid "Adjust Column Width"
-msgstr "Lårdjeur del colone ewale :"
-
-#: TextTool.cpp:1447
-msgctxt "(qtundo-format)"
-msgid "Adjust Row Height"
-msgstr ""
 
 #: TextTool.cpp:2239
 #, fuzzy
@@ -2314,10 +2873,6 @@ msgstr "Tåvlea..."
 #: TextTool.cpp:2645 TextTool.cpp:2651
 msgid "Autocorrection"
 msgstr "Coridjaedje tot seu"
-
-#: TextTool.cpp:2645
-msgid "Key Press"
-msgstr "Tchôcaedje di tape"
 
 #: TextToolFactory.cpp:31
 #, fuzzy
@@ -2407,23 +2962,8 @@ msgstr "Usteye d' aspougnaedje do tecse"
 
 #, fuzzy
 #~| msgid "Insertion"
-#~ msgid "Insert new section"
-#~ msgstr "Stitchaedje"
-
-#, fuzzy
-#~| msgid "Insertion"
 #~ msgid "Insert paragraph between sections"
 #~ msgstr "Stitchaedje"
-
-#~ msgid "Bold"
-#~ msgstr "Cråsses"
-
-#~ msgid "Italic"
-#~ msgstr "Clintcheyes"
-
-#~ msgctxt "Text formatting"
-#~ msgid "Underline"
-#~ msgstr "Sorlignî"
 
 #, fuzzy
 #~| msgid "Strikethrough:"
@@ -2447,31 +2987,16 @@ msgstr "Usteye d' aspougnaedje do tecse"
 #~ msgid "Change writing direction"
 #~ msgstr "Usteye di shuvaedje des candjmints"
 
-#~ msgid "Increase Indent"
-#~ msgstr "Ritrait pus grand"
-
-#~ msgid "Decrease Indent"
-#~ msgstr "Ritrait pus ptit"
-
 #, fuzzy
 #~| msgid "No Bullet"
 #~ msgid "Bullet list"
 #~ msgstr "Nole tchike"
-
-#~ msgid "Increase Font Size"
-#~ msgstr "Ragrandi l' fonte"
-
-#~ msgid "Decrease Font Size"
-#~ msgstr "Raptiti l' fonte"
 
 #~ msgid "Insert Non-Breaking Space"
 #~ msgstr "Sititchî espåce nén côpåve"
 
 #~ msgid "Insert Non-Breaking Hyphen"
 #~ msgstr "Sititchî loyeure nén côpåve"
-
-#~ msgid "Insert Index"
-#~ msgstr "Sititchî indecse"
 
 #~ msgid "Insert Soft Hyphen"
 #~ msgstr "Sititchî loyeure condicionele"
@@ -2503,11 +3028,6 @@ msgstr "Usteye d' aspougnaedje do tecse"
 #~ msgid "Text Color..."
 #~ msgstr "Coleur do Tecse..."
 
-#, fuzzy
-#~| msgid "Text Color..."
-#~ msgid "Text Color"
-#~ msgstr "Coleur do Tecse..."
-
 #~ msgid "Background Color..."
 #~ msgstr "Coleur do fond..."
 
@@ -2515,34 +3035,14 @@ msgstr "Usteye d' aspougnaedje do tecse"
 #~ msgstr "Sititchî on tåvlea e documint."
 
 #, fuzzy
-#~| msgid "Insert Table"
-#~ msgid "Insert Row Above"
-#~ msgstr "Sititchî tåvlea"
-
-#, fuzzy
 #~| msgid "Align Left"
 #~ msgid "Column Left"
 #~ msgstr "Aroymint a hintche"
 
 #, fuzzy
-#~| msgid "Insert Table"
-#~ msgid "Insert Column Left"
-#~ msgstr "Sititchî tåvlea"
-
-#, fuzzy
 #~| msgid "Align Right"
 #~ msgid "Column Right"
 #~ msgstr "Aroymint a droete"
-
-#, fuzzy
-#~| msgid "Deletion"
-#~ msgid "Delete Column"
-#~ msgstr "Disfaçaedje"
-
-#, fuzzy
-#~| msgid "Delete"
-#~ msgid "Delete Row"
-#~ msgstr "Disfacer"
 
 #~ msgid "Paragraph..."
 #~ msgstr "Hagnon..."
@@ -2637,11 +3137,6 @@ msgstr "Usteye d' aspougnaedje do tecse"
 #~ msgid "Configure Change Tracking..."
 #~ msgstr "Apontyî l' shuvaedje des candjmints"
 
-#, fuzzy
-#~| msgid "Change List"
-#~ msgid "Changes"
-#~ msgstr "Candjî djivêye"
-
 #~ msgid "Paragraph Settings"
 #~ msgstr "Apontiaedjes des hagnons"
 
@@ -2685,9 +3180,6 @@ msgstr "Usteye d' aspougnaedje do tecse"
 
 #~ msgid "<b>Paragraph style properties</b>"
 #~ msgstr "<b>Prôpietés do stîle del hagnon</b>"
-
-#~ msgid "Strike Out"
-#~ msgstr "Båré"
 
 #~ msgid "Type:"
 #~ msgstr "Sôre:"
@@ -2755,9 +3247,6 @@ msgstr "Usteye d' aspougnaedje do tecse"
 #~ msgid "Custom"
 #~ msgstr "A vosse môde"
 
-#~ msgid "Default Format"
-#~ msgstr "Prémetowe cogne"
-
 #~ msgid "Change text attributes to their default values"
 #~ msgstr "Candjî les atributs d' tecse viè leus prémetowès valixhances"
 
@@ -2800,134 +3289,9 @@ msgstr "Usteye d' aspougnaedje do tecse"
 #~ msgstr "Fôme tecse"
 
 #, fuzzy
-#~| msgid "Capitalization"
-#~ msgid "Citation"
-#~ msgstr "Metaedje e grandès letes"
-
-#, fuzzy
-#~| msgid "Change List Numbering"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change List Numbering"
-#~ msgstr "Candjî l' limerotaedje del djivêye"
-
-#, fuzzy
-#~| msgid "Change List"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change List"
-#~ msgstr "Candjî djivêye"
-
-#, fuzzy
-#~| msgid "Delete"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete"
-#~ msgstr "Disfacer"
-
-#, fuzzy
-#~| msgid "Text"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Text"
-#~ msgstr "Tecse"
-
-#, fuzzy
-#~| msgid "Paste"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Paste"
-#~ msgstr "Aclaper"
-
-#, fuzzy
 #~| msgid "Include in table of contents"
 #~ msgid "Table of Contents..."
 #~ msgstr "Meet dins l' tåve di l' ådvins"
-
-#, fuzzy
-#~| msgid "Capitalization"
-#~ msgid "Captions"
-#~ msgstr "Metaedje e grandès letes"
-
-#~ msgid "Arabic"
-#~ msgstr "Arabe"
-
-#~ msgid "Lower Alphabetical"
-#~ msgstr "Bas åbécé"
-
-#~ msgid "Upper Alphabetical"
-#~ msgstr "Hôt åbécé"
-
-#~ msgid "Lower Roman"
-#~ msgstr "Bas Roman"
-
-#~ msgid "Upper Roman"
-#~ msgstr "Hôt Roman"
-
-#, fuzzy
-#~| msgid "Ballot X Bullet"
-#~ msgid "Small Bullet"
-#~ msgstr "Tchike a clitchî"
-
-#, fuzzy
-#~| msgid "Square Bullet"
-#~ msgid "Large Bullet"
-#~ msgstr "Cwårêyès tchikes"
-
-#~ msgid "Circle Bullet"
-#~ msgstr "Tchike e ceke"
-
-#~ msgid "Square Bullet"
-#~ msgstr "Cwårêyès tchikes"
-
-#~ msgid "Rhombus Bullet"
-#~ msgstr "Tchike e lozindje"
-
-#~ msgid "Check Mark Bullet"
-#~ msgstr "Tchike marke di verifiaedje"
-
-#~ msgid "Ballot X Bullet"
-#~ msgstr "Tchike a clitchî"
-
-#~ msgid "Rightwards Arrow Bullet"
-#~ msgstr "Tchike fletche viè l' droete"
-
-#~ msgid "Rightwards Arrow Head Bullet"
-#~ msgstr "Tchike ponte di fletche viè l' droete"
-
-#~ msgid "Bengali"
-#~ msgstr "Béngali"
-
-#~ msgid "Gujarati"
-#~ msgstr "Goudjarati"
-
-#~ msgid "Gurumukhi"
-#~ msgstr "Gouroumoukhi"
-
-#~ msgid "Kannada"
-#~ msgstr "Kannada"
-
-#~ msgid "Malayalam"
-#~ msgstr "Malayalam"
-
-#~ msgid "Oriya"
-#~ msgstr "Oriya"
-
-#~ msgid "Tamil"
-#~ msgstr "Tamoul"
-
-#~ msgid "Telugu"
-#~ msgstr "Telougou"
-
-#~ msgid "Tibetan"
-#~ msgstr "Tibetin"
-
-#~ msgid "Thai"
-#~ msgstr "Taylandès"
-
-#~ msgid "Abjad"
-#~ msgstr "Abjad"
-
-#~ msgid "AbjadMinor"
-#~ msgstr "Abjad Mineur"
-
-#~ msgid "ArabicAlphabet"
-#~ msgstr "Åbécé arabe"
 
 #~ msgid "Disc Bullet"
 #~ msgstr "Rondès tchikes"
@@ -2937,12 +3301,6 @@ msgstr "Usteye d' aspougnaedje do tecse"
 
 #~ msgid "Create New Style"
 #~ msgstr "Ahiver on novea stîle"
-
-#~ msgid "Edit Paragraph Style"
-#~ msgstr "Candjî stîle del hagnon"
-
-#~ msgid "Edit Character Style"
-#~ msgstr "Candjî stîle do caractere"
 
 #~ msgid "Apply selected style to text"
 #~ msgstr "Mete en ouve li stîle tchoezi å tecse"
