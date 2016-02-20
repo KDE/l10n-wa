@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-02-19 07:33+0000\n"
+"POT-Creation-Date: 2016-02-20 07:52+0000\n"
 "PO-Revision-Date: 2011-08-15 08:58+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -1475,39 +1475,290 @@ msgstr ""
 msgid "Unable to edit attachment"
 msgstr "Dji n' a sepou aspougnî l' ataetchmint"
 
-#: viewer/messagepart.cpp:174 viewer/messagepart.cpp:176
+#: viewer/messagepart.cpp:178 viewer/messagepart.cpp:180
 msgid "Encapsulated message"
 msgstr "Messaedje ecapsulé"
 
-#: viewer/messagepart.cpp:192
+#: viewer/messagepart.cpp:199
 msgid "End of encapsulated message"
 msgstr "Fén do messaedje ecapsulé"
 
-#: viewer/messagepart.cpp:219
+#: viewer/messagepart.cpp:221
 #, fuzzy
 #| msgid "Please wait while the message is transferred"
 #| msgid_plural "Please wait while the %1 messages are transferred"
 msgid "Please wait while the message is being decrypted..."
 msgstr "Tårdjîz s' i vs plait tins kel messaedje est berweté"
 
-#: viewer/messagepart.cpp:221
+#: viewer/messagepart.cpp:223
 msgid "Encrypted message"
 msgstr "Messaedje ecripté"
 
-#: viewer/messagepart.cpp:223
+#: viewer/messagepart.cpp:225
 msgid "Encrypted message (decryption not possible)"
 msgstr ""
 
-#: viewer/messagepart.cpp:225
+#: viewer/messagepart.cpp:227
 #, fuzzy, kde-format
 msgid "Reason: %1"
 msgstr "råjhon:"
 
-#: viewer/messagepart.cpp:239
+#: viewer/messagepart.cpp:244
 msgid "End of encrypted message"
 msgstr "Fén do messaedje ecripté"
 
-#: viewer/messagepart.cpp:806
+#: viewer/messagepart.cpp:289
+msgid "Error: Signature not verified"
+msgstr "Aroke: Sinateure nén verifieye"
+
+#: viewer/messagepart.cpp:292
+msgid "Good signature"
+msgstr "Boune sinateure"
+
+#: viewer/messagepart.cpp:295
+msgid "<b>Bad</b> signature"
+msgstr "<b>Mwaijhe</b> sinateure"
+
+#: viewer/messagepart.cpp:298
+msgid "No public key to verify the signature"
+msgstr "Pont d' clé publike po verifyî l' sinateure"
+
+#: viewer/messagepart.cpp:301
+msgid "No signature found"
+msgstr "Nole sinateure di trovêye"
+
+#: viewer/messagepart.cpp:304
+msgid "Error verifying the signature"
+msgstr "Åk n' a nén stî tot verifiant l' sinateure"
+
+#: viewer/messagepart.cpp:307
+msgid "Different results for signatures"
+msgstr "Diferin rzultat po les sinateures"
+
+#: viewer/messagepart.cpp:326
+msgid "No status information available."
+msgstr ""
+
+#: viewer/messagepart.cpp:333 viewer/messagepart.cpp:419
+msgid "Good signature."
+msgstr "Boune sinateure."
+
+#: viewer/messagepart.cpp:354
+msgid "One key has expired."
+msgstr ""
+
+#: viewer/messagepart.cpp:358
+msgid "The signature has expired."
+msgstr ""
+
+#: viewer/messagepart.cpp:363
+msgid "Unable to verify: key missing."
+msgstr ""
+
+#: viewer/messagepart.cpp:370
+msgid "CRL not available."
+msgstr ""
+
+#: viewer/messagepart.cpp:374
+msgid "Available CRL is too old."
+msgstr ""
+
+#: viewer/messagepart.cpp:378
+msgid "A policy was not met."
+msgstr ""
+
+#: viewer/messagepart.cpp:382
+msgid "A system error occurred."
+msgstr ""
+
+#: viewer/messagepart.cpp:393
+msgid "One key has been revoked."
+msgstr ""
+
+#: viewer/messagepart.cpp:421
+msgid "<b>Bad</b> signature."
+msgstr "<b>Mwaijhe</b> sinateure."
+
+#: viewer/messagepart.cpp:447
+#, fuzzy
+#| msgid "&Enable signature"
+msgid "Invalid signature."
+msgstr "M&ete en alaedje sinateure"
+
+#: viewer/messagepart.cpp:450
+msgid "Not enough information to check signature validity."
+msgstr ""
+
+#: viewer/messagepart.cpp:464
+#, fuzzy
+#| msgid "Signatures"
+msgid "Signature is valid."
+msgstr "Sinateures"
+
+#: viewer/messagepart.cpp:466
+#, kde-format
+msgid "Signed by <a href=\"mailto:%1\">%2</a>."
+msgstr ""
+
+#: viewer/messagepart.cpp:471
+msgid "Unknown signature state"
+msgstr ""
+
+#: viewer/messagepart.cpp:479
+#, fuzzy
+#| msgctxt "EMAIL OF TRANSLATORS"
+#| msgid "Your emails"
+msgid "Show Details"
+msgstr "lorint.hendschel@skynet.be"
+
+#: viewer/messagepart.cpp:502
+#, fuzzy
+msgid "No Audit Log available"
+msgstr "I gn a pupont d' lingaedjes"
+
+#: viewer/messagepart.cpp:504
+#, fuzzy, kde-format
+msgid "Error Retrieving Audit Log: %1"
+msgstr "Disfacer les emiles oistés sol sierveu"
+
+#: viewer/messagepart.cpp:515
+msgctxt "The Audit Log is a detailed error log from the gnupg backend"
+msgid "Show Audit Log"
+msgstr ""
+
+#: viewer/messagepart.cpp:526
+msgid "Hide Details"
+msgstr ""
+
+#: viewer/messagepart.cpp:547
+#, fuzzy
+#| msgid "Please wait while the message is transferred"
+#| msgid_plural "Please wait while the %1 messages are transferred"
+msgid "Please wait while the signature is being verified..."
+msgstr "Tårdjîz s' i vs plait tins kel messaedje est berweté"
+
+#: viewer/messagepart.cpp:638 viewer/messagepart.cpp:640
+#, fuzzy
+#| msgid "Certificates"
+msgid "certificate"
+msgstr "Acertineures"
+
+#: viewer/messagepart.cpp:646 viewer/messagepart.cpp:672
+#, fuzzy
+#| msgid "Warning:"
+msgctxt "Start of warning message."
+msgid "Warning:"
+msgstr "Advertixhmint:"
+
+#: viewer/messagepart.cpp:648
+#, kde-format
+msgid "Sender's mail address is not stored in the %1 used for signing."
+msgstr ""
+
+#: viewer/messagepart.cpp:651
+msgid "sender: "
+msgstr "evoyeu: "
+
+#: viewer/messagepart.cpp:654
+msgid "stored: "
+msgstr "wårdé: "
+
+#: viewer/messagepart.cpp:674
+#, kde-format
+msgid ""
+"No mail address is stored in the %1 used for signing, so we cannot compare "
+"it to the sender's address %2."
+msgstr ""
+
+#: viewer/messagepart.cpp:697
+#, kde-format
+msgid "Not enough information to check signature. %1"
+msgstr ""
+
+#: viewer/messagepart.cpp:713 viewer/messagepart.cpp:779
+msgid "Message was signed with unknown key."
+msgstr "Li messaedje a stî siné avou ene clé nén cnoxhowe."
+
+#: viewer/messagepart.cpp:715 viewer/messagepart.cpp:809
+#: viewer/messagepart.cpp:842
+#, kde-format
+msgid "Message was signed by %1."
+msgstr "Li messaedje a stî siné di %1."
+
+#: viewer/messagepart.cpp:721 viewer/messagepart.cpp:728
+#: viewer/messagepart.cpp:737
+#, kde-format
+msgid "Message was signed with key %1."
+msgstr "Li messaedje a stî siné avou l' clé %1."
+
+#: viewer/messagepart.cpp:723
+#, fuzzy, kde-format
+msgid "Message was signed on %1 with key %2."
+msgstr "Li messaedje a stî siné di %2, avou l' clé %1."
+
+#: viewer/messagepart.cpp:730
+#, fuzzy, kde-format
+msgid "Message was signed by %3 on %1 with key %2"
+msgstr "Li messaedje a stî siné di %2, avou l' clé %1."
+
+#: viewer/messagepart.cpp:739
+#, kde-format
+msgid "Message was signed by %2 with key %1."
+msgstr "Li messaedje a stî siné di %2, avou l' clé %1."
+
+#: viewer/messagepart.cpp:748 viewer/messagepart.cpp:786
+#: viewer/messagepart.cpp:1854
+msgid "Status: "
+msgstr "Sitatut: "
+
+#: viewer/messagepart.cpp:772
+#, fuzzy, kde-format
+msgid "Message was signed on %1 with unknown key %2."
+msgstr "Li messaedje a stî siné avou l' clé nén cnoxhowe %1."
+
+#: viewer/messagepart.cpp:776
+#, kde-format
+msgid "Message was signed with unknown key %1."
+msgstr "Li messaedje a stî siné avou l' clé nén cnoxhowe %1."
+
+#: viewer/messagepart.cpp:782
+msgid "The validity of the signature cannot be verified."
+msgstr ""
+
+#: viewer/messagepart.cpp:805 viewer/messagepart.cpp:838
+#, kde-format
+msgid "Message was signed by %2 (Key ID: %1)."
+msgstr "Li messaedje a stî siné di %2 (ID del clé: %1)."
+
+#: viewer/messagepart.cpp:815
+msgid "The signature is valid, but the key's validity is unknown."
+msgstr "Li sinateure est valide, mins dji n' sai l' livea d' fiyate del clé."
+
+#: viewer/messagepart.cpp:819
+msgid "The signature is valid and the key is marginally trusted."
+msgstr "Li sinateure est valide et on-z a fiyate dins l' clé."
+
+#: viewer/messagepart.cpp:823
+msgid "The signature is valid and the key is fully trusted."
+msgstr "Li sinateure est valide et on-z a foirt fiyate dins l' clé."
+
+#: viewer/messagepart.cpp:827
+msgid "The signature is valid and the key is ultimately trusted."
+msgstr "Li sinateure est valide et on-z a pår fiyate dins l' clé."
+
+#: viewer/messagepart.cpp:831
+msgid "The signature is valid, but the key is untrusted."
+msgstr "Li sinateure est valide, mins on n' a nén fiyate dins l' clé."
+
+#: viewer/messagepart.cpp:845
+msgid "Warning: The signature is bad."
+msgstr "Asteme: Li sinateure est mwaijhe."
+
+#: viewer/messagepart.cpp:877
+msgid "End of signed message"
+msgstr "Fén do messaedje siné"
+
+#: viewer/messagepart.cpp:1441
 msgid ""
 "<b>Note:</b> This HTML message may contain external references to images "
 "etc. For security/privacy reasons external references are not loaded. If you "
@@ -1515,7 +1766,7 @@ msgid ""
 "for this message <a href=\"kmail:loadExternal\">by clicking here</a>."
 msgstr ""
 
-#: viewer/messagepart.cpp:819
+#: viewer/messagepart.cpp:1454
 msgid ""
 "<b>Note:</b> This is an HTML message. For security reasons, only the raw "
 "HTML code is shown. If you trust the sender of this message then you can "
@@ -1523,29 +1774,24 @@ msgid ""
 "\">by clicking here</a>."
 msgstr ""
 
-#: viewer/messagepart.cpp:1022 viewer/objecttreeparser.cpp:1995
+#: viewer/messagepart.cpp:1657 viewer/objecttreeparser.cpp:1347
 msgid "Wrong Crypto Plug-In."
 msgstr "Mwais tchôke-divins di criptografeye."
 
-#: viewer/messagepart.cpp:1183
+#: viewer/messagepart.cpp:1818
 #, fuzzy
 msgid "This message is encrypted."
 msgstr "Wårder &ecriptés les messaedjes schapés"
 
-#: viewer/messagepart.cpp:1188
+#: viewer/messagepart.cpp:1823
 msgid "Decrypt Message"
 msgstr "Discripter li messaedje"
 
-#: viewer/messagepart.cpp:1216
+#: viewer/messagepart.cpp:1851
 msgid "The crypto engine returned no cleartext data."
 msgstr "L' éndjin d' criptografeye n' a nén rtourner des dnêyes cleartext."
 
-#: viewer/messagepart.cpp:1219 viewer/objecttreeparser.cpp:1828
-#: viewer/objecttreeparser.cpp:1870
-msgid "Status: "
-msgstr "Sitatut: "
-
-#: viewer/messagepart.cpp:1225
+#: viewer/messagepart.cpp:1860
 msgctxt "Status of message unknown."
 msgid "(unknown)"
 msgstr "(nén cnoxhou)"
@@ -1646,7 +1892,7 @@ msgstr "Li tchôke-divins di discriptaedje %1 èn sait discripter nou messaedje.
 msgid "Error: %1"
 msgstr "Aroke: %1"
 
-#: viewer/objecttreeparser.cpp:754 viewer/objecttreeparser.cpp:2064
+#: viewer/objecttreeparser.cpp:754 viewer/objecttreeparser.cpp:1416
 #, fuzzy, kde-format
 msgid "Crypto plug-in \"%1\" is not initialized."
 msgstr "Li tchôke-divins di discriptaedje %1 èn sait discripter nou messaedje."
@@ -1656,7 +1902,7 @@ msgstr "Li tchôke-divins di discriptaedje %1 èn sait discripter nou messaedje.
 msgid "Crypto plug-in \"%1\" cannot decrypt messages."
 msgstr "Li tchôke-divins di discriptaedje %1 èn sait discripter nou messaedje."
 
-#: viewer/objecttreeparser.cpp:762 viewer/objecttreeparser.cpp:2073
+#: viewer/objecttreeparser.cpp:762 viewer/objecttreeparser.cpp:1425
 #, fuzzy
 msgid "No appropriate crypto plug-in was found."
 msgstr "Nol apontiaedje di tchôke-divins di criptografeye di trové."
@@ -1666,264 +1912,18 @@ msgctxt "display name for an unnamed attachment"
 msgid "Unnamed"
 msgstr "Co nou no"
 
-#: viewer/objecttreeparser.cpp:1351
-msgid "Error: Signature not verified"
-msgstr "Aroke: Sinateure nén verifieye"
-
-#: viewer/objecttreeparser.cpp:1354
-msgid "Good signature"
-msgstr "Boune sinateure"
-
-#: viewer/objecttreeparser.cpp:1357
-msgid "<b>Bad</b> signature"
-msgstr "<b>Mwaijhe</b> sinateure"
-
-#: viewer/objecttreeparser.cpp:1360
-msgid "No public key to verify the signature"
-msgstr "Pont d' clé publike po verifyî l' sinateure"
-
-#: viewer/objecttreeparser.cpp:1363
-msgid "No signature found"
-msgstr "Nole sinateure di trovêye"
-
-#: viewer/objecttreeparser.cpp:1366
-msgid "Error verifying the signature"
-msgstr "Åk n' a nén stî tot verifiant l' sinateure"
-
-#: viewer/objecttreeparser.cpp:1369
-msgid "Different results for signatures"
-msgstr "Diferin rzultat po les sinateures"
-
-#: viewer/objecttreeparser.cpp:1388
-msgid "No status information available."
-msgstr ""
-
-#: viewer/objecttreeparser.cpp:1395 viewer/objecttreeparser.cpp:1481
-msgid "Good signature."
-msgstr "Boune sinateure."
-
-#: viewer/objecttreeparser.cpp:1416
-msgid "One key has expired."
-msgstr ""
-
 #: viewer/objecttreeparser.cpp:1420
-msgid "The signature has expired."
-msgstr ""
-
-#: viewer/objecttreeparser.cpp:1425
-msgid "Unable to verify: key missing."
-msgstr ""
-
-#: viewer/objecttreeparser.cpp:1432
-msgid "CRL not available."
-msgstr ""
-
-#: viewer/objecttreeparser.cpp:1436
-msgid "Available CRL is too old."
-msgstr ""
-
-#: viewer/objecttreeparser.cpp:1440
-msgid "A policy was not met."
-msgstr ""
-
-#: viewer/objecttreeparser.cpp:1444
-msgid "A system error occurred."
-msgstr ""
-
-#: viewer/objecttreeparser.cpp:1455
-msgid "One key has been revoked."
-msgstr ""
-
-#: viewer/objecttreeparser.cpp:1483
-msgid "<b>Bad</b> signature."
-msgstr "<b>Mwaijhe</b> sinateure."
-
-#: viewer/objecttreeparser.cpp:1511
-#, fuzzy
-#| msgid "&Enable signature"
-msgid "Invalid signature."
-msgstr "M&ete en alaedje sinateure"
-
-#: viewer/objecttreeparser.cpp:1514
-msgid "Not enough information to check signature validity."
-msgstr ""
-
-#: viewer/objecttreeparser.cpp:1528
-#, fuzzy
-#| msgid "Signatures"
-msgid "Signature is valid."
-msgstr "Sinateures"
-
-#: viewer/objecttreeparser.cpp:1530
-#, kde-format
-msgid "Signed by <a href=\"mailto:%1\">%2</a>."
-msgstr ""
-
-#: viewer/objecttreeparser.cpp:1535
-msgid "Unknown signature state"
-msgstr ""
-
-#: viewer/objecttreeparser.cpp:1541
-#, fuzzy
-#| msgctxt "EMAIL OF TRANSLATORS"
-#| msgid "Your emails"
-msgid "Show Details"
-msgstr "lorint.hendschel@skynet.be"
-
-#: viewer/objecttreeparser.cpp:1564
-#, fuzzy
-msgid "No Audit Log available"
-msgstr "I gn a pupont d' lingaedjes"
-
-#: viewer/objecttreeparser.cpp:1566
-#, fuzzy, kde-format
-msgid "Error Retrieving Audit Log: %1"
-msgstr "Disfacer les emiles oistés sol sierveu"
-
-#: viewer/objecttreeparser.cpp:1577
-msgctxt "The Audit Log is a detailed error log from the gnupg backend"
-msgid "Show Audit Log"
-msgstr ""
-
-#: viewer/objecttreeparser.cpp:1588
-msgid "Hide Details"
-msgstr ""
-
-#: viewer/objecttreeparser.cpp:1614
-#, fuzzy
-#| msgid "Please wait while the message is transferred"
-#| msgid_plural "Please wait while the %1 messages are transferred"
-msgid "Please wait while the signature is being verified..."
-msgstr "Tårdjîz s' i vs plait tins kel messaedje est berweté"
-
-#: viewer/objecttreeparser.cpp:1711 viewer/objecttreeparser.cpp:1713
-#, fuzzy
-#| msgid "Certificates"
-msgid "certificate"
-msgstr "Acertineures"
-
-#: viewer/objecttreeparser.cpp:1720 viewer/objecttreeparser.cpp:1746
-#, fuzzy
-#| msgid "Warning:"
-msgctxt "Start of warning message."
-msgid "Warning:"
-msgstr "Advertixhmint:"
-
-#: viewer/objecttreeparser.cpp:1722
-#, kde-format
-msgid "Sender's mail address is not stored in the %1 used for signing."
-msgstr ""
-
-#: viewer/objecttreeparser.cpp:1725
-msgid "sender: "
-msgstr "evoyeu: "
-
-#: viewer/objecttreeparser.cpp:1728
-msgid "stored: "
-msgstr "wårdé: "
-
-#: viewer/objecttreeparser.cpp:1748
-#, kde-format
-msgid ""
-"No mail address is stored in the %1 used for signing, so we cannot compare "
-"it to the sender's address %2."
-msgstr ""
-
-#: viewer/objecttreeparser.cpp:1772
-#, kde-format
-msgid "Not enough information to check signature. %1"
-msgstr ""
-
-#: viewer/objecttreeparser.cpp:1789 viewer/objecttreeparser.cpp:1863
-msgid "Message was signed with unknown key."
-msgstr "Li messaedje a stî siné avou ene clé nén cnoxhowe."
-
-#: viewer/objecttreeparser.cpp:1791 viewer/objecttreeparser.cpp:1901
-#: viewer/objecttreeparser.cpp:1943
-#, kde-format
-msgid "Message was signed by %1."
-msgstr "Li messaedje a stî siné di %1."
-
-#: viewer/objecttreeparser.cpp:1798 viewer/objecttreeparser.cpp:1806
-#: viewer/objecttreeparser.cpp:1816
-#, kde-format
-msgid "Message was signed with key %1."
-msgstr "Li messaedje a stî siné avou l' clé %1."
-
-#: viewer/objecttreeparser.cpp:1801
-#, fuzzy, kde-format
-msgid "Message was signed on %1 with key %2."
-msgstr "Li messaedje a stî siné di %2, avou l' clé %1."
-
-#: viewer/objecttreeparser.cpp:1809
-#, fuzzy, kde-format
-msgid "Message was signed by %3 on %1 with key %2"
-msgstr "Li messaedje a stî siné di %2, avou l' clé %1."
-
-#: viewer/objecttreeparser.cpp:1819
-#, kde-format
-msgid "Message was signed by %2 with key %1."
-msgstr "Li messaedje a stî siné di %2, avou l' clé %1."
-
-#: viewer/objecttreeparser.cpp:1856
-#, fuzzy, kde-format
-msgid "Message was signed on %1 with unknown key %2."
-msgstr "Li messaedje a stî siné avou l' clé nén cnoxhowe %1."
-
-#: viewer/objecttreeparser.cpp:1860
-#, kde-format
-msgid "Message was signed with unknown key %1."
-msgstr "Li messaedje a stî siné avou l' clé nén cnoxhowe %1."
-
-#: viewer/objecttreeparser.cpp:1866
-msgid "The validity of the signature cannot be verified."
-msgstr ""
-
-#: viewer/objecttreeparser.cpp:1897 viewer/objecttreeparser.cpp:1939
-#, kde-format
-msgid "Message was signed by %2 (Key ID: %1)."
-msgstr "Li messaedje a stî siné di %2 (ID del clé: %1)."
-
-#: viewer/objecttreeparser.cpp:1907
-msgid "The signature is valid, but the key's validity is unknown."
-msgstr "Li sinateure est valide, mins dji n' sai l' livea d' fiyate del clé."
-
-#: viewer/objecttreeparser.cpp:1911
-msgid "The signature is valid and the key is marginally trusted."
-msgstr "Li sinateure est valide et on-z a fiyate dins l' clé."
-
-#: viewer/objecttreeparser.cpp:1915
-msgid "The signature is valid and the key is fully trusted."
-msgstr "Li sinateure est valide et on-z a foirt fiyate dins l' clé."
-
-#: viewer/objecttreeparser.cpp:1919
-msgid "The signature is valid and the key is ultimately trusted."
-msgstr "Li sinateure est valide et on-z a pår fiyate dins l' clé."
-
-#: viewer/objecttreeparser.cpp:1923
-msgid "The signature is valid, but the key is untrusted."
-msgstr "Li sinateure est valide, mins on n' a nén fiyate dins l' clé."
-
-#: viewer/objecttreeparser.cpp:1946
-msgid "Warning: The signature is bad."
-msgstr "Asteme: Li sinateure est mwaijhe."
-
-#: viewer/objecttreeparser.cpp:1971
-msgid "End of signed message"
-msgstr "Fén do messaedje siné"
-
-#: viewer/objecttreeparser.cpp:2068
 #, fuzzy, kde-format
 msgid "Crypto plug-in \"%1\" cannot verify signatures."
 msgstr "Li tchôke-divins di discriptaedje %1 èn sait discripter nou messaedje."
 
-#: viewer/objecttreeparser.cpp:2076
+#: viewer/objecttreeparser.cpp:1428
 #, kde-format
 msgctxt "%1 is either 'OpenPGP' or 'S/MIME'"
 msgid "No %1 plug-in was found."
 msgstr ""
 
-#: viewer/objecttreeparser.cpp:2081
+#: viewer/objecttreeparser.cpp:1433
 #, kde-format
 msgid ""
 "The message is signed, but the validity of the signature cannot be verified."
