@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_battery\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-07-28 12:31+0000\n"
+"POT-Creation-Date: 2016-03-10 07:59+0000\n"
 "PO-Revision-Date: 2011-01-09 11:21+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -19,32 +19,32 @@ msgstr ""
 "X-Generator: Lokalize 1.0\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: package/contents/code/logic.js:44
+#: package/contents/code/logic.js:25
 #, fuzzy
 #| msgid "%1% (charging)"
 msgid "Not Charging"
 msgstr "%1% (si tchedje)"
 
-#: package/contents/code/logic.js:45
+#: package/contents/code/logic.js:26
 #, fuzzy
 #| msgctxt "Shown when a time estimate is not available"
 #| msgid "%1% (discharging)"
 msgid "Discharging"
 msgstr "%1% (si distchedje)"
 
-#: package/contents/code/logic.js:46 package/contents/code/logic.js:66
+#: package/contents/code/logic.js:27 package/contents/ui/batterymonitor.qml:58
 #, fuzzy
 #| msgid "<b>Battery:</b> %1% (fully charged)<br />"
 msgid "Fully Charged"
 msgstr "<b>Batreye :</b> %1% (totafwaitmint tcherdjeye)<br />"
 
-#: package/contents/code/logic.js:47
+#: package/contents/code/logic.js:28
 #, fuzzy
 #| msgid "%1% (charging)"
 msgid "Charging"
 msgstr "%1% (si tchedje)"
 
-#: package/contents/code/logic.js:50
+#: package/contents/code/logic.js:31
 #, fuzzy
 #| msgctxt "Battery is not plugged in"
 #| msgid "Not present"
@@ -52,46 +52,19 @@ msgctxt "Battery is currently not present in the bay"
 msgid "Not present"
 msgstr "Nén la"
 
-#: package/contents/code/logic.js:56
-#, fuzzy
-#| msgid "Power Management"
-msgid "Power management is disabled"
-msgstr "Manaedjmint di l' enerdjeye"
-
-#: package/contents/code/logic.js:63
-msgid "No Batteries Available"
-msgstr ""
-
-#: package/contents/code/logic.js:69
-#, fuzzy, kde-format
-#| msgid "%1% (charging)"
-msgid "%1%. Charging"
-msgstr "%1% (si tchedje)"
-
-#: package/contents/code/logic.js:74
-#, kde-format
-msgctxt "%1 is remaining time, %2 is percentage"
-msgid "%1 Remaining (%2%)"
-msgstr ""
-
-#: package/contents/code/logic.js:78
-#, kde-format
-msgid "%1% Battery Remaining"
-msgstr ""
-
-#: package/contents/code/logic.js:87
+#: package/contents/code/logic.js:39
 msgid "Time To Full:"
 msgstr ""
 
-#: package/contents/code/logic.js:87
+#: package/contents/code/logic.js:39
 msgid "Time To Empty:"
 msgstr ""
 
-#: package/contents/code/logic.js:92
+#: package/contents/code/logic.js:44
 msgid "Capacity:"
 msgstr ""
 
-#: package/contents/code/logic.js:93
+#: package/contents/code/logic.js:45
 #, fuzzy, kde-format
 #| msgctxt "overlay on the battery, needs to be really tiny"
 #| msgid "%1%"
@@ -99,11 +72,11 @@ msgctxt "Placeholder is battery capacity"
 msgid "%1%"
 msgstr "%1%"
 
-#: package/contents/code/logic.js:99
+#: package/contents/code/logic.js:51
 msgid "Vendor:"
 msgstr ""
 
-#: package/contents/code/logic.js:104
+#: package/contents/code/logic.js:56
 msgid "Model:"
 msgstr ""
 
@@ -122,13 +95,40 @@ msgctxt "Placeholder is battery percentage"
 msgid "%1%"
 msgstr "%1%"
 
-#: package/contents/ui/batterymonitor.qml:83
+#: package/contents/ui/batterymonitor.qml:56
+msgid "No Batteries Available"
+msgstr ""
+
+#: package/contents/ui/batterymonitor.qml:60
+#, fuzzy, kde-format
+#| msgid "%1% (charging)"
+msgid "%1%. Charging"
+msgstr "%1% (si tchedje)"
+
+#: package/contents/ui/batterymonitor.qml:63
+#, kde-format
+msgctxt "%1 is remaining time, %2 is percentage"
+msgid "%1 Remaining (%2%)"
+msgstr ""
+
+#: package/contents/ui/batterymonitor.qml:67
+#, kde-format
+msgid "%1% Battery Remaining"
+msgstr ""
+
+#: package/contents/ui/batterymonitor.qml:71
+#, fuzzy
+#| msgid "Power Management"
+msgid "Power management is disabled"
+msgstr "Manaedjmint di l' enerdjeye"
+
+#: package/contents/ui/batterymonitor.qml:117
 #, fuzzy
 #| msgid "More..."
 msgid "&Configure Power Saving..."
 msgstr "Pus..."
 
-#: package/contents/ui/batterymonitor.qml:195
+#: package/contents/ui/batterymonitor.qml:221
 msgid "The battery applet has enabled system-wide inhibition"
 msgstr ""
 
@@ -156,10 +156,6 @@ msgstr "Rilujhance del waitroûle"
 #| msgid "Screen Brightness"
 msgid "Keyboard Brightness"
 msgstr "Rilujhance del waitroûle"
-
-#: package/contents/ui/PopupDialog.qml:114
-msgid "No screen or keyboard brightness controls available"
-msgstr ""
 
 #: package/contents/ui/PowerManagementItem.qml:46
 msgid ""
