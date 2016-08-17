@@ -64,7 +64,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-08-16 07:43+0000\n"
+"POT-Creation-Date: 2016-08-17 06:28+0000\n"
 "PO-Revision-Date: 2011-01-17 21:35+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -9325,7 +9325,7 @@ msgstr "Pos-traitmint"
 
 #. i18n: ectx: property (text), widget (QLineEdit, palettename)
 #: libs/image/kis_psd_layer_style.cpp:99 libs/ui/forms/wdgcustompalette.ui:18
-#: libs/ui/KisDocument.cpp:2264 libs/ui/KisMainWindow.cpp:1021
+#: libs/ui/KisDocument.cpp:2310 libs/ui/KisMainWindow.cpp:1021
 #: libs/ui/KisMainWindow.cpp:1393 libs/ui/KisMainWindow.cpp:1412
 #: libs/ui/kra/kis_kra_saver.cpp:80
 msgid "Unnamed"
@@ -9738,7 +9738,7 @@ msgstr "Nén cnoxhou"
 msgid "No store backend"
 msgstr "Nou programe fondmint di stocaedje"
 
-#: libs/odf/KoOdfReadStore.cpp:111 libs/ui/KisDocument.cpp:1331
+#: libs/odf/KoOdfReadStore.cpp:111 libs/ui/KisDocument.cpp:1376
 #, fuzzy, kde-format
 msgid "Could not find %1"
 msgstr "Dji n' a savou radjouter l' coûtche a l' imådje."
@@ -11354,17 +11354,17 @@ msgstr "fond"
 #: libs/ui/kis_filter_manager.cc:225 libs/ui/kis_layer_manager.cc:767
 #: libs/ui/KisApplication.cpp:659 libs/ui/KisApplication.cpp:662
 #: libs/ui/KisApplication.cpp:688 libs/ui/KisApplication.cpp:714
-#: libs/ui/KisApplication.cpp:735 libs/ui/KisDocument.cpp:724
-#: libs/ui/KisDocument.cpp:726 libs/ui/KisDocument.cpp:1126
-#: libs/ui/KisDocument.cpp:1172 libs/ui/KisDocument.cpp:1220
-#: libs/ui/KisDocument.cpp:1869 libs/ui/KisDocument.cpp:1872
+#: libs/ui/KisApplication.cpp:735 libs/ui/KisDocument.cpp:770
+#: libs/ui/KisDocument.cpp:772 libs/ui/KisDocument.cpp:1171
+#: libs/ui/KisDocument.cpp:1217 libs/ui/KisDocument.cpp:1265
+#: libs/ui/KisDocument.cpp:1914 libs/ui/KisDocument.cpp:1917
 #: libs/ui/KisImportExportManager.cpp:198
 #: libs/ui/KisImportExportManager.cpp:210
 #: libs/ui/KisImportExportManager.cpp:266 libs/ui/KisMainWindow.cpp:791
 #: libs/ui/KisMainWindow.cpp:865 libs/ui/KisMainWindow.cpp:879
 #: libs/ui/KisMainWindow.cpp:1695 libs/ui/KisMainWindow.cpp:1727
 #: libs/ui/KisMainWindow.cpp:1751 libs/ui/KisMainWindow.cpp:1898
-#: libs/ui/KisMainWindow.cpp:1910 libs/ui/KisRemoteFileFetcher.cpp:57
+#: libs/ui/KisMainWindow.cpp:1910 libs/ui/KisRemoteFileFetcher.cpp:56
 #: libs/ui/KisTemplateCreateDia.cpp:297 libs/ui/KisView.cpp:699
 #: libs/ui/opengl/kis_opengl_canvas2.cpp:590
 #: libs/ui/opengl/kis_opengl_image_textures.cpp:610
@@ -14973,26 +14973,51 @@ msgstr "Palete"
 msgid "Palette %1"
 msgstr "Palete"
 
-#: libs/ui/KisDocument.cpp:677
+#: libs/ui/KisDocument.cpp:675
 #, fuzzy
 msgid "Saving Document"
 msgstr "Schaper documint"
 
-#: libs/ui/KisDocument.cpp:724
+#: libs/ui/KisDocument.cpp:722
+#, fuzzy, kde-format
+msgid "Could not rename original file to %1: %2"
+msgstr "Dji n' a savou radjouter l' coûtche a l' imådje."
+
+#: libs/ui/KisDocument.cpp:730
+#, kde-format
+msgid "Copying the temporary file failed: %1 to %2: %3"
+msgstr ""
+
+#: libs/ui/KisDocument.cpp:735
+#, fuzzy, kde-format
+msgid "Could not remove temporary file %1: %2"
+msgstr "Dji n' a savou radjouter l' coûtche a l' imådje."
+
+#: libs/ui/KisDocument.cpp:740
+#, fuzzy, kde-format
+msgid "Could not remove saved original file: %1"
+msgstr "Dji n' a savou radjouter l' coûtche a l' imådje."
+
+#: libs/ui/KisDocument.cpp:746
+#, kde-format
+msgid "The temporary file %1 is gone before we could copy it!"
+msgstr ""
+
+#: libs/ui/KisDocument.cpp:770
 #, fuzzy, kde-format
 msgid ""
 "Could not save\n"
 "%1"
 msgstr "Dji n' a savou radjouter l' coûtche a l' imådje."
 
-#: libs/ui/KisDocument.cpp:726
+#: libs/ui/KisDocument.cpp:772
 #, fuzzy, kde-format
 msgid ""
 "Could not save %1\n"
 "Reason: %2"
 msgstr "Tchoes del roye"
 
-#: libs/ui/KisDocument.cpp:830
+#: libs/ui/KisDocument.cpp:875
 msgid ""
 "The password of this encrypted document is not known. Autosave aborted! "
 "Please save your work manually."
@@ -15000,31 +15025,31 @@ msgstr ""
 "Li scret di c' documint ecripté n' est nén cnoxhou. Schapaedje otomatike "
 "abandné ! Schapez vost ovraedje al mwin, s' i vs plait."
 
-#: libs/ui/KisDocument.cpp:833
+#: libs/ui/KisDocument.cpp:878
 msgid "Autosaving..."
 msgstr "Schapaedje otomatike..."
 
-#: libs/ui/KisDocument.cpp:845
+#: libs/ui/KisDocument.cpp:890
 msgid "Error during autosave! Partition full?"
 msgstr ""
 "Åk n' a nén stî tot rlomant dji schapéve otomaticmint ! Li pårticion est ele "
 "rimpleye ?"
 
-#: libs/ui/KisDocument.cpp:914
+#: libs/ui/KisDocument.cpp:959
 msgid "Could not create the file for saving"
 msgstr "Dji n' a savou ahiver l' fitchî pol schapaedje"
 
-#: libs/ui/KisDocument.cpp:922
+#: libs/ui/KisDocument.cpp:967
 #, fuzzy
 msgid "Saving document..."
 msgstr "Schaper documint"
 
-#: libs/ui/KisDocument.cpp:941
+#: libs/ui/KisDocument.cpp:986
 #, kde-format
 msgid "Not able to write '%1'. Partition full?"
 msgstr "Dji n' sai scrire « %1 ». Li pårticion est ele rimpleye ?"
 
-#: libs/ui/KisDocument.cpp:1110
+#: libs/ui/KisDocument.cpp:1155
 #, kde-format
 msgid ""
 "Malformed URL\n"
@@ -15033,7 +15058,7 @@ msgstr ""
 "URL må basti\n"
 "%1"
 
-#: libs/ui/KisDocument.cpp:1127
+#: libs/ui/KisDocument.cpp:1172
 msgid ""
 "An autosaved file exists for this document.\n"
 "Do you want to open it instead?"
@@ -15041,17 +15066,17 @@ msgstr ""
 "On fitchî ki dj' a schapé tot seu egzistêye po ci documint ci\n"
 "Voloz vs ki djel drove ?"
 
-#: libs/ui/KisDocument.cpp:1172
+#: libs/ui/KisDocument.cpp:1217
 #, kde-format
 msgid "File %1 does not exist."
 msgstr ""
 
-#: libs/ui/KisDocument.cpp:1207
+#: libs/ui/KisDocument.cpp:1252
 #, fuzzy
 msgid "Opening Document"
 msgstr "Drovi e noveas documints"
 
-#: libs/ui/KisDocument.cpp:1219
+#: libs/ui/KisDocument.cpp:1264
 #, fuzzy, kde-format
 msgid ""
 "Could not open %2.\n"
@@ -15059,7 +15084,7 @@ msgid ""
 "%3"
 msgstr "Dji n' a savou radjouter l' coûtche a l' imådje."
 
-#: libs/ui/KisDocument.cpp:1343
+#: libs/ui/KisDocument.cpp:1388
 #, kde-format
 msgid ""
 "Parsing error in %1 at line %2, column %3\n"
@@ -15068,27 +15093,27 @@ msgstr ""
 "Aroke d' analijhe del sintake dins %1 al roye %2, colone %3\n"
 "Messaedje d' aroke: %4"
 
-#: libs/ui/KisDocument.cpp:1358 libs/ui/KisMainWindow.cpp:791
+#: libs/ui/KisDocument.cpp:1403 libs/ui/KisMainWindow.cpp:791
 #, kde-format
 msgid "The file %1 does not exist."
 msgstr "Li fitchî %1 n' egzistêye nén."
 
-#: libs/ui/KisDocument.cpp:1365
+#: libs/ui/KisDocument.cpp:1410
 #, fuzzy, kde-format
 msgid "%1 is not a file."
 msgstr "Grandeu del coûtche"
 
-#: libs/ui/KisDocument.cpp:1380
+#: libs/ui/KisDocument.cpp:1425
 msgid "Could not open the file for reading (check read permissions)."
 msgstr ""
 "Dji n' a savou drovi l' fitchî pol lére (waitîz les droets d' léjhadje)."
 
-#: libs/ui/KisDocument.cpp:1391
+#: libs/ui/KisDocument.cpp:1436
 #, fuzzy
 msgid "Could not read the beginning of the file."
 msgstr "Tchoezi l' eshonna d' canås en alaedje."
 
-#: libs/ui/KisDocument.cpp:1421
+#: libs/ui/KisDocument.cpp:1466
 #, kde-format
 msgid ""
 "parsing error in the main document at line %1, column %2\n"
@@ -15097,74 +15122,74 @@ msgstr ""
 "aroke d' analijhe del sintake e mwaisse documint al roye %1, colone %2\n"
 "Messaedje d' aroke: %3"
 
-#: libs/ui/KisDocument.cpp:1437
+#: libs/ui/KisDocument.cpp:1482
 #, fuzzy, kde-format
 msgid "Not a valid Krita file: %1"
 msgstr "Grandeu del coûtche"
 
-#: libs/ui/KisDocument.cpp:1502
+#: libs/ui/KisDocument.cpp:1547
 msgid "Invalid document: no file 'maindoc.xml'."
 msgstr "Documint nén valåbe : pont d' fitchî « maindoc.xml »."
 
-#: libs/ui/KisDocument.cpp:1559 libs/ui/KisDocument.cpp:1567
+#: libs/ui/KisDocument.cpp:1604 libs/ui/KisDocument.cpp:1612
 msgid "Krita does not support the OpenDocument file format."
 msgstr ""
 
-#: libs/ui/KisDocument.cpp:1676 libs/ui/KisDocument.cpp:1795
+#: libs/ui/KisDocument.cpp:1721 libs/ui/KisDocument.cpp:1840
 #, fuzzy
 msgid "Unknown error."
 msgstr "Nén cnoxhou"
 
-#: libs/ui/KisDocument.cpp:1770
+#: libs/ui/KisDocument.cpp:1815
 msgid "The format is not supported or the file is corrupted"
 msgstr ""
 
-#: libs/ui/KisDocument.cpp:1776
+#: libs/ui/KisDocument.cpp:1821
 #, kde-format
 msgid "The file is too new for this version of Krita (%1)."
 msgstr ""
 
-#: libs/ui/KisDocument.cpp:1781
+#: libs/ui/KisDocument.cpp:1826
 msgid "The file has no layers."
 msgstr ""
 
-#: libs/ui/KisDocument.cpp:1806
+#: libs/ui/KisDocument.cpp:1851
 msgid "The file does not contain an image."
 msgstr ""
 
-#: libs/ui/KisDocument.cpp:1869
+#: libs/ui/KisDocument.cpp:1914
 #, fuzzy, kde-format
 msgid ""
 "Could not open\n"
 "%1"
 msgstr "Dji n' a savou radjouter l' coûtche a l' imådje."
 
-#: libs/ui/KisDocument.cpp:1872
+#: libs/ui/KisDocument.cpp:1917
 #, fuzzy, kde-format
 msgid ""
 "Could not open %1\n"
 "Reason: %2"
 msgstr "Dji n' a savou radjouter l' coûtche a l' imådje."
 
-#: libs/ui/KisDocument.cpp:1936
+#: libs/ui/KisDocument.cpp:1981
 #, fuzzy
 msgid "a word processing"
 msgstr "Pos-traitmint"
 
-#: libs/ui/KisDocument.cpp:1937
+#: libs/ui/KisDocument.cpp:1982
 msgid "a spreadsheet"
 msgstr "on tåvlea"
 
-#: libs/ui/KisDocument.cpp:1938
+#: libs/ui/KisDocument.cpp:1983
 #, fuzzy
 msgid "a presentation"
 msgstr "Ashidaedje"
 
-#: libs/ui/KisDocument.cpp:1939
+#: libs/ui/KisDocument.cpp:1984
 msgid "a chart"
 msgstr "on grafike"
 
-#: libs/ui/KisDocument.cpp:1940
+#: libs/ui/KisDocument.cpp:1985
 msgid "a drawing"
 msgstr "on dessin"
 
@@ -15184,90 +15209,90 @@ msgstr "Iptc"
 msgid "XMP"
 msgstr "XMP"
 
-#: libs/ui/KisImportExportFilter.cpp:87
+#: libs/ui/KisImportExportFilter.cpp:86
 #, fuzzy
 msgid "Could not create the filter plugin"
 msgstr "Dji n' a savou ahiver l' fitchî pol schapaedje"
 
-#: libs/ui/KisImportExportFilter.cpp:90
+#: libs/ui/KisImportExportFilter.cpp:89
 #, fuzzy
 msgid "Could not create the output document"
 msgstr "Dji n' a savou ahiver l' fitchî pol schapaedje"
 
-#: libs/ui/KisImportExportFilter.cpp:93
+#: libs/ui/KisImportExportFilter.cpp:92
 #, fuzzy
 msgid "File not found"
 msgstr "Indecse foû des limites"
 
-#: libs/ui/KisImportExportFilter.cpp:96
+#: libs/ui/KisImportExportFilter.cpp:95
 msgid "Cannot create storage"
 msgstr "Dji n' sai ahiver l' sitocaedje"
 
-#: libs/ui/KisImportExportFilter.cpp:99
+#: libs/ui/KisImportExportFilter.cpp:98
 msgid "Bad MIME type"
 msgstr "Mwaijhe sôre MIME"
 
-#: libs/ui/KisImportExportFilter.cpp:102
+#: libs/ui/KisImportExportFilter.cpp:101
 msgid "Error in embedded document"
 msgstr "Åk ni va nén dins l' ravalé documint"
 
-#: libs/ui/KisImportExportFilter.cpp:105
+#: libs/ui/KisImportExportFilter.cpp:104
 msgid "Format not recognized"
 msgstr "Cogne nén rconoxhowe"
 
-#: libs/ui/KisImportExportFilter.cpp:108
+#: libs/ui/KisImportExportFilter.cpp:107
 #, fuzzy
 msgid "Not implemented"
 msgstr "Nén rimpli"
 
-#: libs/ui/KisImportExportFilter.cpp:111
+#: libs/ui/KisImportExportFilter.cpp:110
 msgid "Parsing error"
 msgstr "Aroke d' analijhe del sintake"
 
-#: libs/ui/KisImportExportFilter.cpp:114
+#: libs/ui/KisImportExportFilter.cpp:113
 msgid "Document is password protected"
 msgstr "Li documint est waeranti pas on scret"
 
-#: libs/ui/KisImportExportFilter.cpp:117
+#: libs/ui/KisImportExportFilter.cpp:116
 #, fuzzy
 msgid "Invalid file format"
 msgstr "Grandeu d' imådje nén valåbe"
 
-#: libs/ui/KisImportExportFilter.cpp:124
+#: libs/ui/KisImportExportFilter.cpp:123
 #, fuzzy
 msgid "Internal error"
 msgstr "Eterlaeçaedje"
 
-#: libs/ui/KisImportExportFilter.cpp:127
+#: libs/ui/KisImportExportFilter.cpp:126
 #, fuzzy
 msgid "Out of memory"
 msgstr "Foû del game"
 
-#: libs/ui/KisImportExportFilter.cpp:130
+#: libs/ui/KisImportExportFilter.cpp:129
 #, fuzzy
 msgid "Empty Filter Plugin"
 msgstr "Eco mete en ouve li passete"
 
-#: libs/ui/KisImportExportFilter.cpp:133
+#: libs/ui/KisImportExportFilter.cpp:132
 msgid "Trying to load into the wrong kind of document"
 msgstr ""
 
-#: libs/ui/KisImportExportFilter.cpp:136
+#: libs/ui/KisImportExportFilter.cpp:135
 #, fuzzy
 msgid "Failed to download remote file"
 msgstr "Dji n' a savou drovi li fitchî %1"
 
-#: libs/ui/KisImportExportFilter.cpp:139
+#: libs/ui/KisImportExportFilter.cpp:138
 #, fuzzy
 msgid "Cancelled by user"
 msgstr "Orandje"
 
-#: libs/ui/KisImportExportFilter.cpp:143
+#: libs/ui/KisImportExportFilter.cpp:142
 #, fuzzy
 msgid "Unknown file type"
 msgstr "%1 (sôre di fitchî nén cnoxhowe)"
 
-#: libs/ui/KisImportExportFilter.cpp:150
+#: libs/ui/KisImportExportFilter.cpp:149
 #, fuzzy
 msgid "Unknown error"
 msgstr "Nén cnoxhou"
