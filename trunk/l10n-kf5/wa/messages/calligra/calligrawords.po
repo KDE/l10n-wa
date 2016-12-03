@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-12-02 03:12+0100\n"
+"POT-Creation-Date: 2016-12-03 13:49+0100\n"
 "PO-Revision-Date: 2011-09-21 20:33+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -93,6 +93,34 @@ msgstr "Candjî l' valixhance del variåve e"
 #, kde-format
 msgid "&Tools"
 msgstr "&Usteyes"
+
+#: part/commands/KWChangePageStyleCommand.cpp:24
+#, fuzzy
+#| msgid "Set Page Style"
+msgctxt "(qtundo-format)"
+msgid "Set Page Style"
+msgstr "Defini stîle del pådje"
+
+#: part/commands/KWNewPageStyleCommand.cpp:25
+#, fuzzy
+#| msgid "Insert Page Style"
+msgctxt "(qtundo-format)"
+msgid "Insert Page Style"
+msgstr "Sititchî stîle del pådje"
+
+#: part/commands/KWPageStylePropertiesCommand.cpp:29
+#, fuzzy
+#| msgid "Page Properties"
+msgctxt "(qtundo-format)"
+msgid "Page Properties"
+msgstr "Prôpietés del pådje"
+
+#: part/commands/KWShapeCreateCommand.cpp:55
+#, fuzzy
+#| msgid "Create Frame"
+msgctxt "(qtundo-format)"
+msgid "Create shape"
+msgstr "Ahiver cåde"
 
 #: part/dialogs/KWAnchoringProperties.cpp:434
 #, fuzzy, kde-format
@@ -378,6 +406,13 @@ msgstr "Tecse åtoû"
 msgid "Connect Text Frames"
 msgstr "Raloyî les cådes di tecse"
 
+#: part/dialogs/KWFrameDialog.cpp:79
+#, fuzzy
+#| msgid "Change Page Properties"
+msgctxt "(qtundo-format)"
+msgid "Change Shape Properties"
+msgstr "Candjî prôpietés del pådje"
+
 #. i18n: ectx: property (title), widget (QGroupBox, grpAnchor)
 #: part/dialogs/KWInsertImage.ui:17
 #, kde-format
@@ -547,16 +582,23 @@ msgstr "Cloyant"
 msgid "Delete"
 msgstr "Disfacer"
 
-#: part/dialogs/KWPageSettingsDialog.cpp:224
-#, fuzzy, kde-format
+#: part/dialogs/KWPageSettingsDialog.cpp:150
+#, fuzzy
 #| msgid "Set Page Style"
-msgid "Clone Page Style"
+msgctxt "(qtundo-format)"
+msgid "Change Page Style"
 msgstr "Defini stîle del pådje"
 
 #: part/dialogs/KWPageSettingsDialog.cpp:224
 #, kde-format
 msgid "Add a new page style with the name:"
 msgstr ""
+
+#: part/dialogs/KWPageSettingsDialog.cpp:224
+#, fuzzy, kde-format
+#| msgid "Set Page Style"
+msgid "Clone Page Style"
+msgstr "Defini stîle del pådje"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
 #: part/dialogs/KWRunAroundProperties.ui:17
@@ -676,15 +718,15 @@ msgstr "Salutåcion"
 
 #: part/dockers/KWNavigationWidget.cpp:108
 #, fuzzy, kde-format
-#| msgid "Functions"
-msgid "Section"
-msgstr "Fonccions"
-
-#: part/dockers/KWNavigationWidget.cpp:108
-#, fuzzy, kde-format
 #| msgid "Pages"
 msgid "Page #"
 msgstr "Pådjes"
+
+#: part/dockers/KWNavigationWidget.cpp:108
+#, fuzzy, kde-format
+#| msgid "Functions"
+msgid "Section"
+msgstr "Fonccions"
 
 #: part/dockers/KWRdfDocker.cpp:52
 #, kde-format
@@ -1097,14 +1139,14 @@ msgstr "Aspougneu d' tecse di KOffice"
 msgid "Copyright 1998-%1, The Words Team"
 msgstr "© 1998-2009, L' ekipe KWord"
 
-#: part/KWAboutData.h:45
-#, kde-format
-msgid "Pierre Ducroquet"
-msgstr ""
-
 #: part/KWAboutData.h:45 part/KWAboutData.h:46
 #, kde-format
 msgid "Co maintainer"
+msgstr ""
+
+#: part/KWAboutData.h:45
+#, kde-format
+msgid "Pierre Ducroquet"
 msgstr ""
 
 #: part/KWAboutData.h:46
@@ -1112,15 +1154,15 @@ msgstr ""
 msgid "C. Boemann"
 msgstr ""
 
-#: part/KWAboutData.h:47
-#, kde-format
-msgid "Sebastian Sauer"
-msgstr ""
-
 #: part/KWAboutData.h:47 part/KWAboutData.h:48 part/KWAboutData.h:49
 #: part/KWAboutData.h:51
 #, kde-format
 msgid "Everything"
+msgstr ""
+
+#: part/KWAboutData.h:47
+#, kde-format
+msgid "Sebastian Sauer"
 msgstr ""
 
 #: part/KWAboutData.h:48
@@ -1134,24 +1176,19 @@ msgid "Pierre Stirnweiss"
 msgstr ""
 
 #: part/KWAboutData.h:50
-#, kde-format
-msgid "Inge Wallin"
-msgstr ""
-
-#: part/KWAboutData.h:50
 #, fuzzy, kde-format
 #| msgid "Formatting Characters"
 msgid "Formatting stuff"
 msgstr "Abwesnaedje des caracteres"
 
+#: part/KWAboutData.h:50
+#, kde-format
+msgid "Inge Wallin"
+msgstr ""
+
 #: part/KWAboutData.h:51
 #, kde-format
 msgid "Thorsten Zachmann"
-msgstr ""
-
-#: part/KWAboutData.h:52
-#, kde-format
-msgid "Matus Uzak"
 msgstr ""
 
 #: part/KWAboutData.h:52 part/KWAboutData.h:58 part/KWAboutData.h:59
@@ -1164,14 +1201,19 @@ msgstr ""
 msgid "Filter"
 msgstr "&Fitchî"
 
-#: part/KWAboutData.h:53
+#: part/KWAboutData.h:52
 #, kde-format
-msgid "Pavol Korinek"
+msgid "Matus Uzak"
 msgstr ""
 
 #: part/KWAboutData.h:53
 #, kde-format
 msgid "Layout and Painting"
+msgstr ""
+
+#: part/KWAboutData.h:53
+#, kde-format
+msgid "Pavol Korinek"
 msgstr ""
 
 #: part/KWAboutData.h:54
@@ -1198,12 +1240,12 @@ msgstr "Sititchî pînote"
 
 #: part/KWAboutData.h:56
 #, kde-format
-msgid "Smit Patel"
+msgid "Bibliography"
 msgstr ""
 
 #: part/KWAboutData.h:56
 #, kde-format
-msgid "Bibliography"
+msgid "Smit Patel"
 msgstr ""
 
 #: part/KWAboutData.h:57
@@ -1288,13 +1330,13 @@ msgstr "Nash Hoogwater"
 
 #: part/KWAboutData.h:71
 #, kde-format
-msgid "Ulrich Kuettler"
-msgstr "Ulrich Kuettler"
+msgid "KFormula"
+msgstr "KFormula"
 
 #: part/KWAboutData.h:71
 #, kde-format
-msgid "KFormula"
-msgstr "KFormula"
+msgid "Ulrich Kuettler"
+msgstr "Ulrich Kuettler"
 
 #: part/KWAboutData.h:72
 #, kde-format
@@ -2303,30 +2345,6 @@ msgstr "Ôtès pådjes"
 #~ msgstr "&Usteyes"
 
 #, fuzzy
-#~| msgid "Set Page Style"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Set Page Style"
-#~ msgstr "Defini stîle del pådje"
-
-#, fuzzy
-#~| msgid "Insert Page Style"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Insert Page Style"
-#~ msgstr "Sititchî stîle del pådje"
-
-#, fuzzy
-#~| msgid "Page Properties"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Page Properties"
-#~ msgstr "Prôpietés del pådje"
-
-#, fuzzy
-#~| msgid "Create Frame"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Create shape"
-#~ msgstr "Ahiver cåde"
-
-#, fuzzy
 #~| msgid "Make inline"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Baseline"
@@ -2456,12 +2474,6 @@ msgstr "Ôtès pådjes"
 #~ msgstr "Raloyî les cådes di tecse"
 
 #, fuzzy
-#~| msgid "Change Page Properties"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change Shape Properties"
-#~ msgstr "Candjî prôpietés del pådje"
-
-#, fuzzy
 #~| msgid "Columns"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Columns"
@@ -2484,12 +2496,6 @@ msgstr "Ôtès pådjes"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Delete"
 #~ msgstr "Disfacer"
-
-#, fuzzy
-#~| msgid "Set Page Style"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change Page Style"
-#~ msgstr "Defini stîle del pådje"
 
 #, fuzzy
 #~| msgid "Set Page Style"

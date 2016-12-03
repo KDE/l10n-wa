@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpresenter\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-12-02 03:12+0100\n"
+"POT-Creation-Date: 2016-12-03 13:49+0100\n"
 "PO-Revision-Date: 2012-07-04 16:58+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -63,6 +63,97 @@ msgstr "&Diaporama"
 msgid "&Settings"
 msgstr "Tchu&zes"
 
+#: part/commands/KPrAddCustomSlideShowCommand.cpp:32
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Add custom slide show"
+msgstr "Potchî al Pådje..."
+
+#: part/commands/KPrAnimationCreateCommand.cpp:32
+#, fuzzy
+#| msgid "Create shape animation"
+msgctxt "(qtundo-format)"
+msgid "Create shape animation"
+msgstr "Ahiver animåcion d' fôme"
+
+#: part/commands/KPrAnimationEditNodeTypeCommand.cpp:35
+#, fuzzy
+#| msgid "Animation tool"
+msgctxt "(qtundo-format)"
+msgid "Edit animation trigger event"
+msgstr "Usteye d' animåcion"
+
+#: part/commands/KPrAnimationRemoveCommand.cpp:30
+#, fuzzy
+#| msgid "Create shape animation"
+msgctxt "(qtundo-format)"
+msgid "Remove shape animation"
+msgstr "Ahiver animåcion d' fôme"
+
+#: part/commands/KPrDelCustomSlideShowCommand.cpp:33
+#, fuzzy
+#| msgid "Delete slideshow"
+msgctxt "(qtundo-format)"
+msgid "Delete custom slide show"
+msgstr "Disfacer diaporama"
+
+#: part/commands/KPrDeleteSlidesCommand.cpp:38
+#: part/commands/KPrDeleteSlidesCommand.cpp:57
+#, fuzzy
+#| msgid "Delete Slide"
+msgctxt "(qtundo-format)"
+msgid "Delete slide"
+msgid_plural "Delete slides"
+msgstr[0] "Disfacer dia"
+msgstr[1] "Disfacer dia"
+
+#: part/commands/KPrEditAnimationTimeLineCommand.cpp:37
+#, fuzzy
+#| msgid "Animation tool"
+msgctxt "(qtundo-format)"
+msgid "Edit animation delay/duration"
+msgstr "Usteye d' animåcion"
+
+#: part/commands/KPrEditCustomSlideShowsCommand.cpp:32
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Edit custom slide show"
+msgstr "Potchî al Pådje..."
+
+#: part/commands/KPrPageEffectSetCommand.cpp:38
+#, fuzzy
+#| msgid "Create page effect"
+msgctxt "(qtundo-format)"
+msgid "Create Slide Effect"
+msgstr "Ahiver efet d' pådje"
+
+#: part/commands/KPrPageEffectSetCommand.cpp:41
+#, fuzzy
+#| msgid "Modify page effect"
+msgctxt "(qtundo-format)"
+msgid "Modify Slide Effect"
+msgstr "Candjî efet d' pådje"
+
+#: part/commands/KPrPageEffectSetCommand.cpp:45
+#, fuzzy
+#| msgid "Delete Slide"
+msgctxt "(qtundo-format)"
+msgid "Delete Slide Effect"
+msgstr "Disfacer dia"
+
+#: part/commands/KPrRenameCustomSlideShowCommand.cpp:33
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Rename custom slide show"
+msgstr "Potchî al Pådje..."
+
+#: part/commands/KPrReorderAnimationCommand.cpp:33
+#, fuzzy
+#| msgid "Transitions"
+msgctxt "(qtundo-format)"
+msgid "Reorder animations"
+msgstr "Passaedjes"
+
 #: part/KPrAboutData.h:34
 #, fuzzy, kde-format
 #| msgid "Configure Slide Show..."
@@ -89,15 +180,15 @@ msgstr ""
 msgid "Copyright 1998-%1, The Stage Team"
 msgstr "© 1998-2008, L' ekipe di KPresenter"
 
-#: part/KPrAboutData.h:48
-#, kde-format
-msgid "Thorsten Zachmann"
-msgstr "Thorsten Zachmann"
-
 #: part/KPrAboutData.h:48 part/KPrAboutData.h:49
 #, kde-format
 msgid "Former maintainer"
 msgstr "Mintneu di dvant"
+
+#: part/KPrAboutData.h:48
+#, kde-format
+msgid "Thorsten Zachmann"
+msgstr "Thorsten Zachmann"
 
 #: part/KPrAboutData.h:49
 #, kde-format
@@ -106,13 +197,13 @@ msgstr "Laurent Montel"
 
 #: part/KPrAboutData.h:50
 #, kde-format
-msgid "Reginald Stadlbauer"
-msgstr "Reginald Stadlbauer"
+msgid "Original author"
+msgstr "Prumî oteur"
 
 #: part/KPrAboutData.h:50
 #, kde-format
-msgid "Original author"
-msgstr "Prumî oteur"
+msgid "Reginald Stadlbauer"
+msgstr "Reginald Stadlbauer"
 
 #: part/KPrAboutData.h:51
 #, kde-format
@@ -252,6 +343,13 @@ msgstr ""
 #, kde-format
 msgid "Installation Error"
 msgstr "Aroke d' astalaedje"
+
+#: part/KPrPicturesImport.cpp:75
+#, fuzzy
+#| msgid "Insert Pictures"
+msgctxt "(qtundo-format)"
+msgid "Insert Pictures"
+msgstr "Sititchî imådjes"
 
 #: part/KPrPlaceholderShapeFactory.cpp:32
 #, kde-format
@@ -685,16 +783,24 @@ msgstr "Diaporama"
 msgid "All slides"
 msgstr "Totes les dias"
 
-#: part/KPrViewModeSlidesSorter.cpp:699
-#, kde-format
-msgid "There cannot be two slideshows with the same name."
-msgstr "I n' pout nén aveur deus diaporamas avou l' minme no."
-
 #: part/KPrViewModeSlidesSorter.cpp:699 part/ui/KPrHtmlExportDialog.cpp:162
 #: part/ui/KPrHtmlExportDialog.cpp:216
 #, kde-format
 msgid "Error"
 msgstr "Aroke"
+
+#: part/KPrViewModeSlidesSorter.cpp:699
+#, kde-format
+msgid "There cannot be two slideshows with the same name."
+msgstr "I n' pout nén aveur deus diaporamas avou l' minme no."
+
+#: part/pagelayout/KPrPlaceholders.cpp:59
+#: part/pagelayout/KPrPlaceholders.cpp:60
+#, fuzzy
+#| msgid "Set Layout"
+msgctxt "(qtundo-format)"
+msgid "Set Layout"
+msgstr "Defini adjinçmint"
 
 #: part/tools/animationtool/KPrAnimationSelectorWidget.cpp:67
 #, kde-format
@@ -785,6 +891,13 @@ msgstr " seg"
 #, fuzzy, kde-format
 #| msgid "All slides"
 msgid "Apply To All Slides"
+msgstr "Totes les dias"
+
+#: part/tools/animationtool/KPrPageEffectDocker.cpp:236
+#, fuzzy
+#| msgid "All slides"
+msgctxt "(qtundo-format)"
+msgid "Apply Slide Effect to all Slides"
 msgstr "Totes les dias"
 
 #: part/tools/animationtool/KPrPredefinedAnimationsLoader.cpp:178
@@ -947,6 +1060,13 @@ msgstr "Imådje"
 #, kde-format
 msgid "&Crop"
 msgstr "&Côper dvins"
+
+#: part/tools/KPrPlaceholderTool.cpp:92
+#, fuzzy
+#| msgid "Edit Shape"
+msgctxt "(qtundo-format)"
+msgid "Edit Shape"
+msgstr "Candjî fôme"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: part/ui/KPrConfigurePresenterView.ui:16
@@ -1121,13 +1241,20 @@ msgstr "Radjouter modele"
 
 #: part/ui/KPrHtmlExportDialog.cpp:330
 #, kde-format
-msgid "Confirm remove"
-msgstr "Racertiner l' oistaedje"
+msgid "Are you sure you want to remove \"%1\"?"
+msgstr "Voloz disfacer « %1 » po do bon ?"
 
 #: part/ui/KPrHtmlExportDialog.cpp:330
 #, kde-format
-msgid "Are you sure you want to remove \"%1\"?"
-msgstr "Voloz disfacer « %1 » po do bon ?"
+msgid "Confirm remove"
+msgstr "Racertiner l' oistaedje"
+
+#: plugins/eventactions/sound/KPrSoundEventActionWidget.cpp:95
+#, fuzzy
+#| msgid "Change sound action"
+msgctxt "(qtundo-format)"
+msgid "Change sound action"
+msgstr "Candjî l' accion son"
 
 #: plugins/eventactions/sound/KPrSoundEventActionWidget.cpp:118
 #, kde-format
@@ -2531,71 +2658,6 @@ msgstr "Pî del pådje"
 #~ msgstr "Mete en alaedje li vuwe do prezinteu"
 
 #, fuzzy
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add custom slide show"
-#~ msgstr "Potchî al Pådje..."
-
-#, fuzzy
-#~| msgid "Create shape animation"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Create shape animation"
-#~ msgstr "Ahiver animåcion d' fôme"
-
-#, fuzzy
-#~| msgid "Create shape animation"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Remove shape animation"
-#~ msgstr "Ahiver animåcion d' fôme"
-
-#, fuzzy
-#~| msgid "Delete slideshow"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete custom slide show"
-#~ msgstr "Disfacer diaporama"
-
-#, fuzzy
-#~| msgid "Delete Slide"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete slide"
-#~ msgid_plural "Delete slides"
-#~ msgstr[0] "Disfacer dia"
-#~ msgstr[1] "Disfacer dia"
-
-#, fuzzy
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Edit custom slide show"
-#~ msgstr "Potchî al Pådje..."
-
-#, fuzzy
-#~| msgid "Create page effect"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Create Slide Effect"
-#~ msgstr "Ahiver efet d' pådje"
-
-#, fuzzy
-#~| msgid "Modify page effect"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Modify Slide Effect"
-#~ msgstr "Candjî efet d' pådje"
-
-#, fuzzy
-#~| msgid "Delete Slide"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete Slide Effect"
-#~ msgstr "Disfacer dia"
-
-#, fuzzy
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Rename custom slide show"
-#~ msgstr "Potchî al Pådje..."
-
-#, fuzzy
-#~| msgid "Transitions"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Reorder animations"
-#~ msgstr "Passaedjes"
-
-#, fuzzy
 #~| msgid "Configure Slide Show..."
 #~ msgctxt "(qtundo-format) application name"
 #~ msgid "Calligra Stage"
@@ -2788,12 +2850,6 @@ msgstr "Pî del pådje"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Installation Error"
 #~ msgstr "Aroke d' astalaedje"
-
-#, fuzzy
-#~| msgid "Insert Pictures"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Insert Pictures"
-#~ msgstr "Sititchî imådjes"
 
 #, fuzzy
 #~| msgid "Placeholder shape"
@@ -3266,12 +3322,6 @@ msgstr "Pî del pådje"
 #~ msgstr "I n' pout nén aveur deus diaporamas avou l' minme no."
 
 #, fuzzy
-#~| msgid "Set Layout"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Set Layout"
-#~ msgstr "Defini adjinçmint"
-
-#, fuzzy
 #~| msgid "Presentation"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Preview animation"
@@ -3391,12 +3441,6 @@ msgstr "Pî del pådje"
 #~ msgstr "Disfacer l' diya do moumint"
 
 #, fuzzy
-#~| msgid "Edit Shape"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Edit Shape"
-#~ msgstr "Candjî fôme"
-
-#, fuzzy
 #~| msgid "Monitor %1 (primary)"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Monitor %1 (primary)"
@@ -3479,12 +3523,6 @@ msgstr "Pî del pådje"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Confirm remove"
 #~ msgstr "Racertiner l' oistaedje"
-
-#, fuzzy
-#~| msgid "Change sound action"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change sound action"
-#~ msgstr "Candjî l' accion son"
 
 #, fuzzy
 #~| msgid "No sound"

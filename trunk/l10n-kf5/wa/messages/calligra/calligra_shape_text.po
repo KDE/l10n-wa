@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TextShape\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-12-02 03:12+0100\n"
+"POT-Creation-Date: 2016-12-03 13:49+0100\n"
 "PO-Revision-Date: 2010-06-06 15:05+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -36,11 +36,12 @@ msgstr ""
 msgid "Annotation Shape"
 msgstr "Di pus"
 
-#: commands/AutoResizeCommand.cpp:36
-#, kde-format
-msgctxt "Enable Shrink To Fit"
-msgid "Enable"
-msgstr ""
+#: commands/AcceptChangeCommand.cpp:45
+#, fuzzy
+#| msgid "Accept change"
+msgctxt "(qtundo-format)"
+msgid "Accept change"
+msgstr "Accepter candjmint"
 
 #: commands/AutoResizeCommand.cpp:36
 #, fuzzy, kde-format
@@ -48,6 +49,58 @@ msgstr ""
 msgctxt "Disable Shrink To Fit"
 msgid "Disable"
 msgstr "Distance:"
+
+#: commands/AutoResizeCommand.cpp:36
+#, kde-format
+msgctxt "Enable Shrink To Fit"
+msgid "Enable"
+msgstr ""
+
+#: commands/AutoResizeCommand.cpp:39
+#, kde-format
+msgctxt "(qtundo-format) Enable/Disable Grow To Fit Width"
+msgid "%1 Grow To Fit Width"
+msgstr ""
+
+#: commands/AutoResizeCommand.cpp:42
+#, kde-format
+msgctxt "(qtundo-format) Enable/Disable Grow To Fit Height"
+msgid "%1 Grow To Fit Height"
+msgstr ""
+
+#: commands/AutoResizeCommand.cpp:45
+#, kde-format
+msgctxt "(qtundo-format) Enable/Disable Shrink To Fit"
+msgid "%1 Shrink To Fit"
+msgstr ""
+
+#: commands/ChangeListLevelCommand.cpp:42
+#, fuzzy
+#| msgid "Change List Level"
+msgctxt "(qtundo-format)"
+msgid "Change List Level"
+msgstr "Candjî livea del djivêye"
+
+#: commands/RejectChangeCommand.cpp:47
+#, fuzzy
+#| msgid "Reject change"
+msgctxt "(qtundo-format)"
+msgid "Reject change"
+msgstr "Rifuzer candjmint"
+
+#: commands/ShowChangesCommand.cpp:53
+#, fuzzy
+#| msgid "Show Changes"
+msgctxt "(qtundo-format)"
+msgid "Show Changes"
+msgstr "Mostrer candjmints"
+
+#: commands/ShowChangesCommand.cpp:55
+#, fuzzy
+#| msgid "Hide Changes"
+msgctxt "(qtundo-format)"
+msgid "Hide Changes"
+msgstr "Catchî candjmints"
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, AcceptRejectChangeDialog)
 #. i18n: ectx: property (windowTitle), widget (QDialog, TableOfContentsConfigure)
@@ -536,16 +589,16 @@ msgstr "Eplaeçmint"
 msgid "Select"
 msgstr "Tchoezi fonte"
 
-#: dialogs/CitationInsertionDialog.cpp:52 dialogs/StyleManager.cpp:440
-#, kde-format
-msgid "Warning"
-msgstr ""
-
 #: dialogs/CitationInsertionDialog.cpp:52
 #, kde-format
 msgid ""
 "The document already contains the bibliography entry with different data.\n"
 "Do you want to adjust existing entries?"
+msgstr ""
+
+#: dialogs/CitationInsertionDialog.cpp:52 dialogs/StyleManager.cpp:440
+#, kde-format
+msgid "Warning"
 msgstr ""
 
 #: dialogs/CitationInsertionDialog.cpp:67
@@ -993,6 +1046,13 @@ msgstr "Côpaedje otomatike des mots avou loyeure"
 #, kde-format
 msgid "Select Font"
 msgstr "Tchoezi fonte"
+
+#: dialogs/FontDia.cpp:81
+#, fuzzy
+#| msgid "Font"
+msgctxt "(qtundo-format)"
+msgid "Font"
+msgstr "Fonte"
 
 #. i18n: ectx: property (text), widget (FormattingButton, addBibliography)
 #. i18n: ectx: property (windowTitle), widget (QDialog, InsertBibliographyDialog)
@@ -3073,21 +3133,49 @@ msgstr ""
 msgid "Press shift to not resize this"
 msgstr ""
 
+#: TextTool.cpp:950
+#, fuzzy
+#| msgid "Paragraph Format"
+msgctxt "(qtundo-format)"
+msgid "Change Border Formatting"
+msgstr "Cogne do hagnon"
+
+#: TextTool.cpp:1169
+#, fuzzy
+#| msgid "Cut"
+msgctxt "(qtundo-format)"
+msgid "Cut"
+msgstr "Côper"
+
+#: TextTool.cpp:1429
+#, fuzzy
+#| msgid "Fixed column width:"
+msgctxt "(qtundo-format)"
+msgid "Adjust Column Width"
+msgstr "Lårdjeur del colone ewale :"
+
+#: TextTool.cpp:1472
+#, fuzzy
+#| msgid "Fixed column width:"
+msgctxt "(qtundo-format)"
+msgid "Adjust Row Height"
+msgstr "Lårdjeur del colone ewale :"
+
 #: TextTool.cpp:2245
 #, fuzzy, kde-format
 #| msgid "Table..."
 msgid "Table"
 msgstr "Tåvlea..."
 
-#: TextTool.cpp:2604
-#, kde-format
-msgid "Key Press"
-msgstr "Tchôcaedje di tape"
-
 #: TextTool.cpp:2604 TextTool.cpp:2609
 #, kde-format
 msgid "Autocorrection"
 msgstr "Coridjaedje tot seu"
+
+#: TextTool.cpp:2604
+#, kde-format
+msgid "Key Press"
+msgstr "Tchôcaedje di tape"
 
 #: TextTool.cpp:2894
 #, kde-format
@@ -4099,12 +4187,6 @@ msgstr "Usteye d' aspougnaedje do tecse"
 #~ msgstr "Di pus"
 
 #, fuzzy
-#~| msgid "Accept change"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Accept change"
-#~ msgstr "Accepter candjmint"
-
-#, fuzzy
 #~| msgid "Distance:"
 #~ msgctxt "(qtundo-format) Disable Shrink To Fit"
 #~ msgid "Disable"
@@ -4115,30 +4197,6 @@ msgstr "Usteye d' aspougnaedje do tecse"
 #~ msgctxt "(qtundo-format) Enable Shrink To Fit"
 #~ msgid "Enable"
 #~ msgstr "Tåvlea..."
-
-#, fuzzy
-#~| msgid "Change List Level"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change List Level"
-#~ msgstr "Candjî livea del djivêye"
-
-#, fuzzy
-#~| msgid "Reject change"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Reject change"
-#~ msgstr "Rifuzer candjmint"
-
-#, fuzzy
-#~| msgid "Show Changes"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Show Changes"
-#~ msgstr "Mostrer candjmints"
-
-#, fuzzy
-#~| msgid "Hide Changes"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Hide Changes"
-#~ msgstr "Catchî candjmints"
 
 #, fuzzy
 #~| msgid "Insert Linebreak"
@@ -4163,12 +4221,6 @@ msgstr "Usteye d' aspougnaedje do tecse"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "This is a line of text whose format has been changed."
 #~ msgstr "Çouci est ene roye di tecse k' ons a candjî l' cogne."
-
-#, fuzzy
-#~| msgid "Font"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Font"
-#~ msgstr "Fonte"
 
 #, fuzzy
 #~| msgid "Normal"
@@ -4400,12 +4452,6 @@ msgstr "Usteye d' aspougnaedje do tecse"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Configure sections"
 #~ msgstr "Apontyî l' shuvaedje des candjmints"
-
-#, fuzzy
-#~| msgid "Paragraph Format"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change font format"
-#~ msgstr "Cogne do hagnon"
 
 #, fuzzy
 #~| msgid "Insert a table into the document."
@@ -5133,18 +5179,6 @@ msgstr "Usteye d' aspougnaedje do tecse"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Formatting"
 #~ msgstr "Epådjnaedje"
-
-#, fuzzy
-#~| msgid "Cut"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Cut"
-#~ msgstr "Côper"
-
-#, fuzzy
-#~| msgid "Fixed column width:"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Adjust Column Width"
-#~ msgstr "Lårdjeur del colone ewale :"
 
 #, fuzzy
 #~| msgid "Character style"

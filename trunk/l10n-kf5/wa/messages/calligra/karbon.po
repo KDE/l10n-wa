@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: karbon\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-12-02 03:12+0100\n"
+"POT-Creation-Date: 2016-12-03 13:48+0100\n"
 "PO-Revision-Date: 2010-11-18 17:47+0100\n"
 "Last-Translator: Djan Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -17,6 +17,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 1.0\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: common/commands/KarbonBooleanCommand.cpp:68 ui/KarbonView.cpp:917
+#, fuzzy
+#| msgid "Boolean Operation"
+msgctxt "(qtundo-format)"
+msgid "Boolean Operation"
+msgstr "Operåcion bouleyinne"
 
 #. i18n: ectx: Menu (object_order)
 #: data/karbon.rc:16 data/karbon.rc:77
@@ -131,6 +138,20 @@ msgstr "Prôpietés"
 msgid "Flatness:"
 msgstr "Asplatixhaedje:"
 
+#: plugins/flattenpath/KarbonPathFlattenCommand.cpp:163
+#, fuzzy
+#| msgid "Flatten path"
+msgctxt "(qtundo-format)"
+msgid "Flatten path"
+msgstr "Asplati tchmin"
+
+#: plugins/refinepath/KarbonPathRefineCommand.cpp:41
+#, fuzzy
+#| msgid "Refine path"
+msgctxt "(qtundo-format)"
+msgid "Refine path"
+msgstr "Afiner tchmin"
+
 #: plugins/refinepath/RefinePathPlugin.cpp:64
 #, kde-format
 msgid "&Refine Path..."
@@ -145,6 +166,14 @@ msgstr "Afiner tchmin"
 #, kde-format
 msgid "Subdivisions:"
 msgstr "Sordivizions:"
+
+#: plugins/roundcorners/RoundCornersCommand.cpp:41
+#: plugins/roundcorners/RoundCornersPlugin.cpp:95
+#, fuzzy
+#| msgid "Round Corners"
+msgctxt "(qtundo-format)"
+msgid "Round Corners"
+msgstr "Arondeyès coines"
 
 #: plugins/roundcorners/RoundCornersPlugin.cpp:66
 #, kde-format
@@ -161,6 +190,13 @@ msgstr "Arondeyès coines"
 #, kde-format
 msgid "Radius:"
 msgstr "Radius:"
+
+#: plugins/whirlpinch/KarbonWhirlPinchCommand.cpp:108
+#, fuzzy
+#| msgid "Whirl & pinch"
+msgctxt "(qtundo-format)"
+msgid "Whirl & pinch"
+msgstr "Zigzonzece eyet splincaedje"
 
 #: plugins/whirlpinch/WhirlPinchPlugin.cpp:68
 #, kde-format
@@ -195,6 +231,22 @@ msgstr "Inglêye:"
 #, kde-format
 msgid "Pinch:"
 msgstr "Splincaedje:"
+
+#: ui/commands/KarbonLayerReorderCommand.cpp:37
+#: ui/commands/KarbonLayerReorderCommand.cpp:46
+#, fuzzy
+#| msgid "Raise Layer"
+msgctxt "(qtundo-format)"
+msgid "Raise Layer"
+msgstr "Rimonter l' coûtche"
+
+#: ui/commands/KarbonLayerReorderCommand.cpp:39
+#: ui/commands/KarbonLayerReorderCommand.cpp:48
+#, fuzzy
+#| msgid "Lower Layer"
+msgctxt "(qtundo-format)"
+msgid "Lower Layer"
+msgstr "Baxhî l' coûtche"
 
 #: ui/dialogs/KarbonConfigureDialog.cpp:45
 #, kde-format
@@ -302,6 +354,20 @@ msgstr "Sititchîz l' no del novele coûtche:"
 msgid "New layer"
 msgstr "Novele coûtche"
 
+#: ui/dockers/KarbonLayerDocker.cpp:293
+#, fuzzy
+#| msgid "Create Layer"
+msgctxt "(qtundo-format)"
+msgid "Create Layer"
+msgstr "Ahiver coûtche"
+
+#: ui/dockers/KarbonLayerDocker.cpp:317
+#, fuzzy
+#| msgid "Delete Layer"
+msgctxt "(qtundo-format)"
+msgid "Delete Layer"
+msgstr "Disfacer coûtche"
+
 #: ui/dockers/KarbonLayerDocker.cpp:319
 #, kde-format
 msgid "Could not delete all layers. At least one layer is required."
@@ -361,15 +427,22 @@ msgstr ""
 
 #: ui/dockers/KarbonLayerModel.cpp:263
 #, fuzzy, kde-format
+#| msgid "Info"
+msgid "no"
+msgstr "Informåcions"
+
+#: ui/dockers/KarbonLayerModel.cpp:263
+#, fuzzy, kde-format
 #| msgid "Styles"
 msgid "yes"
 msgstr "Stîles"
 
-#: ui/dockers/KarbonLayerModel.cpp:263
-#, fuzzy, kde-format
-#| msgid "Info"
-msgid "no"
-msgstr "Informåcions"
+#: ui/dockers/KarbonLayerModel.cpp:464
+#, fuzzy
+#| msgid "Reparent shapes"
+msgctxt "(qtundo-format)"
+msgid "Reparent shapes"
+msgstr "Ramete fômes"
 
 #: ui/KarbonAboutData.h:35
 #, fuzzy, kde-format
@@ -495,6 +568,13 @@ msgstr "Fitchî OASIS nén valåbe. Dji n' a trové pont d' etikete draw:page."
 msgid "Master Page"
 msgstr "Mwaisse pådje"
 
+#: ui/KarbonDocumentMergeCommand.cpp:59 ui/KarbonView.cpp:560
+#, fuzzy
+#| msgid "Insert graphics"
+msgctxt "(qtundo-format)"
+msgid "Insert graphics"
+msgstr "Sititchî imådjes"
+
 #: ui/KarbonView.cpp:491
 #, kde-format
 msgid "Choose Graphic to Add"
@@ -514,6 +594,37 @@ msgstr "Abaguer imådje"
 #, kde-format
 msgid "Could not create image shape."
 msgstr "Dji n' a savou ahiver l' fôme d' imådje."
+
+#: ui/KarbonView.cpp:791
+#, fuzzy
+#| msgctxt "Horizontal grid spacing"
+#| msgid "&Horizontal:"
+msgctxt "(qtundo-format)"
+msgid "Mirror Horizontally"
+msgstr "D' &astampé:"
+
+#: ui/KarbonView.cpp:793
+#, fuzzy
+#| msgctxt "Horizontal grid spacing"
+#| msgid "&Horizontal:"
+msgctxt "(qtundo-format)"
+msgid "Mirror Vertically"
+msgstr "D' &astampé:"
+
+#: ui/KarbonView.cpp:795
+#, fuzzy
+#| msgctxt "Horizontal grid spacing"
+#| msgid "&Horizontal:"
+msgctxt "(qtundo-format)"
+msgid "Mirror Horizontally and Vertically"
+msgstr "D' &astampé:"
+
+#: ui/KarbonView.cpp:850
+#, fuzzy
+#| msgid "Se&parate Path"
+msgctxt "(qtundo-format)"
+msgid "Separate paths"
+msgstr "Se&parer tchmin"
 
 #: ui/KarbonView.cpp:1028
 #, kde-format
@@ -868,12 +979,6 @@ msgstr "Rimplixhaedje:"
 #~ msgstr "Vey"
 
 #, fuzzy
-#~| msgid "Boolean Operation"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Boolean Operation"
-#~ msgstr "Operåcion bouleyinne"
-
-#, fuzzy
 #~| msgid "&Flatten Path..."
 #~ msgctxt "(qtundo-format)"
 #~ msgid "&Flatten Path..."
@@ -898,18 +1003,6 @@ msgstr "Rimplixhaedje:"
 #~ msgstr "Asplatixhaedje:"
 
 #, fuzzy
-#~| msgid "Flatten path"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Flatten path"
-#~ msgstr "Asplati tchmin"
-
-#, fuzzy
-#~| msgid "Refine path"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Refine path"
-#~ msgstr "Afiner tchmin"
-
-#, fuzzy
 #~| msgid "&Refine Path..."
 #~ msgctxt "(qtundo-format)"
 #~ msgid "&Refine Path..."
@@ -928,12 +1021,6 @@ msgstr "Rimplixhaedje:"
 #~ msgstr "Sordivizions:"
 
 #, fuzzy
-#~| msgid "Round Corners"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Round Corners"
-#~ msgstr "Arondeyès coines"
-
-#, fuzzy
 #~| msgid "&Round Corners..."
 #~ msgctxt "(qtundo-format)"
 #~ msgid "&Round Corners..."
@@ -944,12 +1031,6 @@ msgstr "Rimplixhaedje:"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Radius:"
 #~ msgstr "Radius:"
-
-#, fuzzy
-#~| msgid "Whirl & pinch"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Whirl & pinch"
-#~ msgstr "Zigzonzece eyet splincaedje"
 
 #, fuzzy
 #~| msgid "&Whirl/Pinch..."
@@ -992,18 +1073,6 @@ msgstr "Rimplixhaedje:"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Pinch:"
 #~ msgstr "Splincaedje:"
-
-#, fuzzy
-#~| msgid "Raise Layer"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Raise Layer"
-#~ msgstr "Rimonter l' coûtche"
-
-#, fuzzy
-#~| msgid "Lower Layer"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Lower Layer"
-#~ msgstr "Baxhî l' coûtche"
 
 #, fuzzy
 #~| msgid "Configure"
@@ -1115,18 +1184,6 @@ msgstr "Rimplixhaedje:"
 #~ msgstr "Novele coûtche"
 
 #, fuzzy
-#~| msgid "Create Layer"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Create Layer"
-#~ msgstr "Ahiver coûtche"
-
-#, fuzzy
-#~| msgid "Delete Layer"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete Layer"
-#~ msgstr "Disfacer coûtche"
-
-#, fuzzy
 #~| msgid "Could not delete all layers. At least one layer is required."
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Could not delete all layers. At least one layer is required."
@@ -1197,12 +1254,6 @@ msgstr "Rimplixhaedje:"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "yes"
 #~ msgstr "Stîles"
-
-#, fuzzy
-#~| msgid "Reparent shapes"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Reparent shapes"
-#~ msgstr "Ramete fômes"
 
 #, fuzzy
 #~| msgid "Karbon14"
@@ -1341,12 +1392,6 @@ msgstr "Rimplixhaedje:"
 #~ msgstr "Mwaisse pådje"
 
 #, fuzzy
-#~| msgid "Insert graphics"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Insert graphics"
-#~ msgstr "Sititchî imådjes"
-
-#, fuzzy
 #~| msgid "Choose Graphic to Add"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Choose Graphic to Add"
@@ -1369,33 +1414,6 @@ msgstr "Rimplixhaedje:"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Could not create image shape."
 #~ msgstr "Dji n' a savou ahiver l' fôme d' imådje."
-
-#, fuzzy
-#~| msgctxt "Horizontal grid spacing"
-#~| msgid "&Horizontal:"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Mirror Horizontally"
-#~ msgstr "D' &astampé:"
-
-#, fuzzy
-#~| msgctxt "Horizontal grid spacing"
-#~| msgid "&Horizontal:"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Mirror Vertically"
-#~ msgstr "D' &astampé:"
-
-#, fuzzy
-#~| msgctxt "Horizontal grid spacing"
-#~| msgid "&Horizontal:"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Mirror Horizontally and Vertically"
-#~ msgstr "D' &astampé:"
-
-#, fuzzy
-#~| msgid "Se&parate Path"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Separate paths"
-#~ msgstr "Se&parer tchmin"
 
 #, fuzzy
 #~| msgid "Outline &Mode"

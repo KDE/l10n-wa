@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicShape\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-12-02 03:12+0100\n"
+"POT-Creation-Date: 2016-12-03 13:49+0100\n"
 "PO-Revision-Date: 2012-08-26 14:23+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -117,13 +117,13 @@ msgstr "Ôte"
 
 #: actions/NoteEntryAction.cpp:68
 #, kde-format
-msgid "rest"
-msgstr "silince"
+msgid "note"
+msgstr "note"
 
 #: actions/NoteEntryAction.cpp:68
 #, kde-format
-msgid "note"
-msgstr "note"
+msgid "rest"
+msgstr "silince"
 
 #: actions/NoteEntryAction.cpp:70
 #, kde-format
@@ -172,13 +172,13 @@ msgstr "128inme"
 
 #: actions/NoteEntryAction.cpp:80
 #, kde-format
-msgid "Unknown rest"
-msgstr "Silince nén cnoxhou"
+msgid "Unknown note"
+msgstr "Note nén cnoxhowe"
 
 #: actions/NoteEntryAction.cpp:80
 #, kde-format
-msgid "Unknown note"
-msgstr "Note nén cnoxhowe"
+msgid "Unknown rest"
+msgstr "Silince nén cnoxhou"
 
 #: actions/RemoveBarAction.cpp:35
 #, kde-format
@@ -235,11 +235,117 @@ msgstr "Clé nén cnoxhowe"
 msgid "Tied notes"
 msgstr "Notes raloyeyes"
 
+#: commands/AddBarsCommand.cpp:30
+msgctxt "(qtundo-format)"
+msgid "Add measures"
+msgstr "Radjouter des muzures"
+
+#: commands/AddDotCommand.cpp:30
+msgctxt "(qtundo-format)"
+msgid "Add dot"
+msgstr "Radjouter pondowe"
+
+#: commands/AddNoteCommand.cpp:42
+msgctxt "(qtundo-format)"
+msgid "Set chord duration"
+msgstr "Defini l' longueur di l' acoird"
+
+#: commands/AddNoteCommand.cpp:44
+msgctxt "(qtundo-format)"
+msgid "Add note"
+msgstr "Radjouter note"
+
+#: commands/AddPartCommand.cpp:38
+msgctxt "(qtundo-format)"
+msgid "Add part"
+msgstr "Radjouter pårteye"
+
 #: commands/AddPartCommand.cpp:39
 #, fuzzy, kde-format
 #| msgid "Parts"
 msgid "Part %1"
 msgstr "Pårteyes"
+
+#: commands/ChangePartDetailsCommand.cpp:43
+msgctxt "(qtundo-format)"
+msgid "Change part details"
+msgstr "Candjî les detays del pårteye"
+
+#: commands/CreateChordCommand.cpp:33
+msgctxt "(qtundo-format)"
+msgid "Add chord"
+msgstr "Radjouter en acoird"
+
+#: commands/CreateChordCommand.cpp:41
+msgctxt "(qtundo-format)"
+msgid "Add rest"
+msgstr "Radjouter on silince"
+
+#: commands/MakeRestCommand.cpp:32
+msgctxt "(qtundo-format)"
+msgid "Convert chord to rest"
+msgstr "Covierser acoird e silince"
+
+#: commands/RemoveBarCommand.cpp:31
+msgctxt "(qtundo-format)"
+msgid "Remove bar"
+msgstr "Oister båre"
+
+#: commands/RemoveChordCommand.cpp:32
+msgctxt "(qtundo-format)"
+msgid "Remove rest"
+msgstr "Oister silince"
+
+#: commands/RemoveChordCommand.cpp:34
+msgctxt "(qtundo-format)"
+msgid "Remove chord"
+msgstr "Oister l' acoird"
+
+#: commands/RemoveNoteCommand.cpp:32
+msgctxt "(qtundo-format)"
+msgid "Remove note"
+msgstr "Oister note"
+
+#: commands/RemovePartCommand.cpp:34
+msgctxt "(qtundo-format)"
+msgid "Remove part"
+msgstr "Oister l' pårteye"
+
+#: commands/RemoveStaffElementCommand.cpp:35
+msgctxt "(qtundo-format)"
+msgid "Remove clef"
+msgstr "Oister clé"
+
+#: commands/RemoveStaffElementCommand.cpp:37
+msgctxt "(qtundo-format)"
+msgid "Remove staff element"
+msgstr "Oister elemint del pårticion"
+
+#: commands/SetAccidentalsCommand.cpp:32
+msgctxt "(qtundo-format)"
+msgid "Set accidentals"
+msgstr "Defini les accidints"
+
+#: commands/SetClefCommand.cpp:32
+msgctxt "(qtundo-format)"
+msgid "Change clef"
+msgstr "Candjî l' clé"
+
+#: commands/SetKeySignatureCommand.cpp:38
+#: commands/SetKeySignatureCommand.cpp:85
+msgctxt "(qtundo-format)"
+msgid "Change key signature"
+msgstr "Candjî d' årmeure"
+
+#: commands/SetTimeSignatureCommand.cpp:34
+msgctxt "(qtundo-format)"
+msgid "Change time signature"
+msgstr "Candjî l' chife di muzures"
+
+#: commands/ToggleTiedNoteCommand.cpp:32
+msgctxt "(qtundo-format)"
+msgid "Toggle Note Tie"
+msgstr "(Dis)mete li loyaedje des notes"
 
 #: dialogs/KeySignatureDialog.cpp:28
 #, kde-format
@@ -735,10 +841,6 @@ msgstr "Usteye d' aspougnaedje di muzike"
 #~ msgid "Unknown rest"
 #~ msgstr "Silince nén cnoxhou"
 
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Remove bar"
-#~ msgstr "Oister båre"
-
 #, fuzzy
 #~| msgid "Select"
 #~ msgctxt "(qtundo-format)"
@@ -798,91 +900,11 @@ msgstr "Usteye d' aspougnaedje di muzike"
 #~ msgid "Tied notes"
 #~ msgstr "Notes raloyeyes"
 
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add measures"
-#~ msgstr "Radjouter des muzures"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add dot"
-#~ msgstr "Radjouter pondowe"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Set chord duration"
-#~ msgstr "Defini l' longueur di l' acoird"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add note"
-#~ msgstr "Radjouter note"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add part"
-#~ msgstr "Radjouter pårteye"
-
 #, fuzzy
 #~| msgid "Parts"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Part %1"
 #~ msgstr "Pårteyes"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change part details"
-#~ msgstr "Candjî les detays del pårteye"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add chord"
-#~ msgstr "Radjouter en acoird"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add rest"
-#~ msgstr "Radjouter on silince"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Convert chord to rest"
-#~ msgstr "Covierser acoird e silince"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Remove rest"
-#~ msgstr "Oister silince"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Remove chord"
-#~ msgstr "Oister l' acoird"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Remove note"
-#~ msgstr "Oister note"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Remove part"
-#~ msgstr "Oister l' pårteye"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Remove clef"
-#~ msgstr "Oister clé"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Remove staff element"
-#~ msgstr "Oister elemint del pårticion"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Set accidentals"
-#~ msgstr "Defini les accidints"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change clef"
-#~ msgstr "Candjî l' clé"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change key signature"
-#~ msgstr "Candjî d' årmeure"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change time signature"
-#~ msgstr "Candjî l' chife di muzures"
-
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Toggle Note Tie"
-#~ msgstr "(Dis)mete li loyaedje des notes"
 
 #, fuzzy
 #~| msgid "Set key signature"
