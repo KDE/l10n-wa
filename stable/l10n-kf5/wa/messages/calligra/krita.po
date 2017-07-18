@@ -64,7 +64,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-07-17 05:18+0200\n"
+"POT-Creation-Date: 2017-07-18 05:14+0200\n"
 "PO-Revision-Date: 2011-01-17 21:35+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -30365,7 +30365,7 @@ msgid ""
 "Will save as RGB."
 msgstr "Dji n' sai ebaguer imådjes e %1.\n"
 
-#: plugins/impex/jpeg/kis_jpeg_export.cc:83
+#: plugins/impex/jpeg/kis_jpeg_export.cc:110
 #, fuzzy, kde-format
 msgid "JPEG Export Options"
 msgstr "Tchuzes del djeyometreye"
@@ -30590,20 +30590,20 @@ msgctxt "horizontal resolution"
 msgid "Resolution:"
 msgstr "Finté:"
 
-#: plugins/impex/png/kis_png_export.cc:98
+#: plugins/impex/png/kis_png_export.cc:124
 #, kde-format
 msgctxt "@title:window"
 msgid "Krita PNG Export"
 msgstr ""
 
-#: plugins/impex/png/kis_png_export.cc:98
+#: plugins/impex/png/kis_png_export.cc:124
 #, kde-format
 msgid ""
 "You can only save 8 and 16 bits integer/channel grayscale and RGB images to "
 "PNG. Your image will be saved as 8 bits/channel RGB."
 msgstr ""
 
-#: plugins/impex/png/kis_png_export.cc:120
+#: plugins/impex/png/kis_png_export.cc:146
 #, fuzzy, kde-format
 msgid "PNG Export Options"
 msgstr "Tchuzes del djeyometreye"
@@ -30699,8 +30699,44 @@ msgctxt "The file will save fast but will not be compressed a lot"
 msgid "Large file size"
 msgstr "Grandeu del pîce"
 
-#. i18n: ectx: property (toolTip), widget (QCheckBox, alpha)
+#. i18n: ectx: property (toolTip), widget (QCheckBox, interlacing)
 #: plugins/impex/png/kis_wdg_options_png.ui:110
+#, kde-format
+msgid "Use interlacing when publishing on the Internet."
+msgstr "Eployîz l' eterlaeçaedje cwand vs eplaidîz sol Daegntoele."
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, interlacing)
+#: plugins/impex/png/kis_wdg_options_png.ui:114
+#, kde-format
+msgid ""
+"<p>Interlacing is useful if you intend to publish your image on the Internet."
+"<br>\n"
+"Enabling interlacing will cause the image to be displayed by the browser "
+"even while downloading.</p>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, interlacing)
+#: plugins/impex/png/kis_wdg_options_png.ui:117
+#, kde-format
+msgid "Interlacing"
+msgstr "Eterlaeçaedje"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, tryToSaveAsIndexed)
+#: plugins/impex/png/kis_wdg_options_png.ui:124
+#, kde-format
+msgid ""
+"Indexed PNG images are smaller. If you enabled this option, your image will "
+"be analyzed to see whether it is possible to save as an indexed PNG."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, tryToSaveAsIndexed)
+#: plugins/impex/png/kis_wdg_options_png.ui:127
+#, kde-format
+msgid "Save as indexed PNG, if possible"
+msgstr "Schaper come PNG indecsé, si possibe"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, alpha)
+#: plugins/impex/png/kis_wdg_options_png.ui:137
 #: plugins/impex/tiff/kis_wdg_options_tiff.ui:149
 #, kde-format
 msgid "Disable to get smaller files if your image has no transparency"
@@ -30709,7 +30745,7 @@ msgstr ""
 "voeyaedje houte"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, alpha)
-#: plugins/impex/png/kis_wdg_options_png.ui:114
+#: plugins/impex/png/kis_wdg_options_png.ui:141
 #: plugins/impex/tiff/kis_wdg_options_tiff.ui:153
 #, kde-format
 msgid ""
@@ -30721,46 +30757,10 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, alpha)
-#: plugins/impex/png/kis_wdg_options_png.ui:117
+#: plugins/impex/png/kis_wdg_options_png.ui:144
 #, kde-format
 msgid "Store alpha channel (transparency)"
 msgstr "Wårder canå alfa (weyoûte)"
-
-#. i18n: ectx: property (toolTip), widget (QCheckBox, interlacing)
-#: plugins/impex/png/kis_wdg_options_png.ui:127
-#, kde-format
-msgid "Use interlacing when publishing on the Internet."
-msgstr "Eployîz l' eterlaeçaedje cwand vs eplaidîz sol Daegntoele."
-
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, interlacing)
-#: plugins/impex/png/kis_wdg_options_png.ui:131
-#, kde-format
-msgid ""
-"<p>Interlacing is useful if you intend to publish your image on the Internet."
-"<br>\n"
-"Enabling interlacing will cause the image to be displayed by the browser "
-"even while downloading.</p>"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, interlacing)
-#: plugins/impex/png/kis_wdg_options_png.ui:134
-#, kde-format
-msgid "Interlacing"
-msgstr "Eterlaeçaedje"
-
-#. i18n: ectx: property (toolTip), widget (QCheckBox, tryToSaveAsIndexed)
-#: plugins/impex/png/kis_wdg_options_png.ui:141
-#, kde-format
-msgid ""
-"Indexed PNG images are smaller. If you enabled this option, your image will "
-"be analyzed to see whether it is possible to save as an indexed PNG."
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, tryToSaveAsIndexed)
-#: plugins/impex/png/kis_wdg_options_png.ui:144
-#, kde-format
-msgid "Save as indexed PNG, if possible"
-msgstr "Schaper come PNG indecsé, si possibe"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: plugins/impex/png/kis_wdg_options_png.ui:154
