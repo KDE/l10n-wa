@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-08-31 02:55+0200\n"
+"POT-Creation-Date: 2017-09-30 03:21+0200\n"
 "PO-Revision-Date: 2009-08-20 10:18+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -28,13 +28,13 @@ msgid "Account"
 msgstr "Conte"
 
 #: kernel/kptcalendar.cpp:98 kernel/kptcalendar.cpp:110
-#: ui/kptcalendareditor.cpp:203 ui/kptcalendareditor.cpp:647
+#: ui/kptcalendareditor.cpp:203 ui/kptcalendareditor.cpp:662
 #, kde-format
 msgid "Undefined"
 msgstr "Nén defini"
 
 #: kernel/kptcalendar.cpp:100 kernel/kptcalendar.cpp:110
-#: ui/kptcalendareditor.cpp:201 ui/kptcalendareditor.cpp:645
+#: ui/kptcalendareditor.cpp:201 ui/kptcalendareditor.cpp:660
 #, kde-format
 msgid "Non-working"
 msgstr "Nén ovråve"
@@ -483,7 +483,7 @@ msgstr "Programer en erî les bouyes"
 msgid "Finished scheduling backward: %1 ms"
 msgstr ""
 
-#: kernel/kptproject.cpp:2546
+#: kernel/kptproject.cpp:2550
 #, fuzzy, kde-format
 msgid "Plan"
 msgstr "Parint"
@@ -864,7 +864,7 @@ msgstr "No"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
 #: models/kptaccountsmodel.cpp:125 models/kptaccountsmodel.cpp:1031
-#: ui/kptmainprojectpanelbase.ui:291
+#: ui/kptmainprojectpanelbase.ui:304
 #, kde-format
 msgid "Description"
 msgstr "Discrijhaedje"
@@ -4324,7 +4324,7 @@ msgstr "Radjouter on conte"
 msgid "Add Subaccount"
 msgstr "Radjouter conte efant"
 
-#: ui/kptaccountseditor.cpp:270 ui/kptcalendareditor.cpp:634
+#: ui/kptaccountseditor.cpp:270 ui/kptcalendareditor.cpp:649
 #: ui/kptdependencyeditor.cpp:2326 ui/kptresourceeditor.cpp:287
 #: ui/kptscheduleeditor.cpp:290 ui/kpttaskeditor.cpp:729
 #, fuzzy, kde-format, kde-kuit-format
@@ -4453,7 +4453,7 @@ msgstr "Tchoezi l' djoû d' ouy"
 msgid "Project end"
 msgstr "Pordjet"
 
-#: ui/kptcalendareditor.cpp:199 ui/kptcalendareditor.cpp:643
+#: ui/kptcalendareditor.cpp:199 ui/kptcalendareditor.cpp:658
 #, kde-format
 msgid "Work..."
 msgstr "Ovraedje..."
@@ -4483,31 +4483,31 @@ msgid ""
 "working resource, when the resources calendar is not explicitly set.</para>"
 msgstr ""
 
-#: ui/kptcalendareditor.cpp:624
+#: ui/kptcalendareditor.cpp:639
 #, kde-format
 msgid "Add Calendar"
 msgstr "Radjouter calindrî"
 
-#: ui/kptcalendareditor.cpp:629
+#: ui/kptcalendareditor.cpp:644
 #, kde-format
 msgid "Add Subcalendar"
 msgstr "Radjouter calindrî efant"
 
-#: ui/kptcalendareditor.cpp:791 ui/kptcalendareditor.cpp:825
+#: ui/kptcalendareditor.cpp:816 ui/kptcalendareditor.cpp:850
 #, fuzzy
 #| msgid "Modify Calendar"
 msgctxt "(qtundo-format)"
 msgid "Modify Calendar"
 msgstr "Candjî calindrî"
 
-#: ui/kptcalendareditor.cpp:800 ui/kptcalendareditor.cpp:806
+#: ui/kptcalendareditor.cpp:825 ui/kptcalendareditor.cpp:831
 #, fuzzy, kde-format
 #| msgid "%1: Set to Non-Working"
 msgctxt "(qtundo-format)"
 msgid "%1: Set to Non-Working"
 msgstr "%1 Defini so nén ovråve"
 
-#: ui/kptcalendareditor.cpp:832
+#: ui/kptcalendareditor.cpp:857
 #, fuzzy, kde-format
 #| msgid "Set %1 to Undefined"
 msgctxt "(qtundo-format)"
@@ -5010,7 +5010,7 @@ msgstr "Candjî estat do documint"
 msgid "Project Settings"
 msgstr "Apontiaedjes do pordjet"
 
-#: ui/kptmainprojectdialog.cpp:66 ui/kptmainprojectpanel.cpp:111
+#: ui/kptmainprojectdialog.cpp:77 ui/kptmainprojectpanel.cpp:134
 #, fuzzy
 #| msgid "Modify main project"
 msgctxt "(qtundo-format)"
@@ -5028,8 +5028,37 @@ msgid ""
 "the Tools menu."
 msgstr ""
 
+#: ui/kptmainprojectpanel.cpp:86
+#, fuzzy, kde-kuit-format
+#| msgid "Resource %1 available from %2 to %3"
+msgctxt "@info:tooltip"
+msgid "Enables sharing resources with other projects"
+msgstr "Rissource %1 disponibe di %2 a %3"
+
+#: ui/kptmainprojectpanel.cpp:88
+#, kde-kuit-format
+msgctxt "@info:whatsthis"
+msgid ""
+"<title>Shared resources</title>Resources can be shared between projects to "
+"avoid overbooking resources across projects. Shared resources must be "
+"defined in a separate file, and you must have at least read access to it. "
+"The projects that share the resources must also be accessible by you."
+msgstr ""
+
+#: ui/kptmainprojectpanel.cpp:96
+#, fuzzy, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "File where shared resources are defined"
+msgstr "Candjî rissource"
+
+#: ui/kptmainprojectpanel.cpp:101
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "Directory where all the projects that share resources can be found"
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QLabel, wbslabel)
-#: ui/kptmainprojectpanelbase.ui:57 ui/kptsummarytaskgeneralpanelbase.ui:32
+#: ui/kptmainprojectpanelbase.ui:45 ui/kptsummarytaskgeneralpanelbase.ui:32
 #: ui/kpttaskgeneralpanelbase.ui:26
 #, kde-format
 msgid "WBS:"
@@ -5037,14 +5066,14 @@ msgstr "WBS:"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1)
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, namefield)
-#: ui/kptmainprojectpanelbase.ui:92 ui/kptmainprojectpanelbase.ui:117
+#: ui/kptmainprojectpanelbase.ui:80 ui/kptmainprojectpanelbase.ui:105
 #, fuzzy, kde-format
 #| msgid "Project manager"
 msgid "The project name."
 msgstr "Manaedjeu di pordjet"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: ui/kptmainprojectpanelbase.ui:95
+#: ui/kptmainprojectpanelbase.ui:83
 #, fuzzy, kde-format
 #| msgid "Name:"
 msgid "&Name:"
@@ -5052,69 +5081,89 @@ msgstr "No:"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel2)
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, leaderfield)
-#: ui/kptmainprojectpanelbase.ui:124 ui/kptmainprojectpanelbase.ui:149
+#: ui/kptmainprojectpanelbase.ui:112 ui/kptmainprojectpanelbase.ui:137
 #, fuzzy, kde-format
 #| msgid "Project manager"
 msgid "The project leader."
 msgstr "Manaedjeu di pordjet"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: ui/kptmainprojectpanelbase.ui:127
+#: ui/kptmainprojectpanelbase.ui:115
 #, fuzzy, kde-format
 #| msgid "Manager:"
 msgid "&Manager:"
 msgstr "Manaedjeu:"
 
 #. i18n: ectx: property (whatsThis), widget (QPushButton, chooseLeader)
-#: ui/kptmainprojectpanelbase.ui:156
+#: ui/kptmainprojectpanelbase.ui:144
 #, fuzzy, kde-format
 #| msgid "Insert a person from your address book."
 msgid "Choose a project leader from your address book."
 msgstr "Sititchî ene djin di vosse calpin d' adresses."
 
 #. i18n: ectx: property (text), widget (QPushButton, chooseLeader)
-#: ui/kptmainprojectpanelbase.ui:159
+#: ui/kptmainprojectpanelbase.ui:147
 #, kde-format
 msgid "&Choose..."
 msgstr "Tchoe&zi..."
 
 #. i18n: ectx: property (title), widget (QGroupBox, schedulingGroup)
-#: ui/kptmainprojectpanelbase.ui:168
+#: ui/kptmainprojectpanelbase.ui:156
 #, fuzzy, kde-format
 #| msgid "Scheduling Log"
 msgid "Scheduling Range"
 msgstr "Djournå d' programaedje"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: ui/kptmainprojectpanelbase.ui:176
+#: ui/kptmainprojectpanelbase.ui:164
 #, fuzzy, kde-format
 msgid "Earliest start:"
 msgstr "Ataker-Ataker"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: ui/kptmainprojectpanelbase.ui:196
+#: ui/kptmainprojectpanelbase.ui:184
 #, fuzzy, kde-format
 msgid "Latest finish:"
 msgstr "Doet fini li"
 
 #. i18n: ectx: property (title), widget (QGroupBox, useSharedResources)
-#: ui/kptmainprojectpanelbase.ui:234
+#: ui/kptmainprojectpanelbase.ui:222
 #, fuzzy, kde-format
 msgid "&Use shared resources"
 msgstr "Candjî rissource"
 
+#. i18n: ectx: property (text), widget (QLabel, resourcesLabel)
+#: ui/kptmainprojectpanelbase.ui:237
+#, fuzzy, kde-format
+msgid "Resources:"
+msgstr "&Rissourses"
+
 #. i18n: ectx: property (text), item, widget (QComboBox, resourcesType)
-#: ui/kptmainprojectpanelbase.ui:250
+#: ui/kptmainprojectpanelbase.ui:245
 #, kde-format
 msgid "File"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, resourcesBrowseBtn)
-#: ui/kptmainprojectpanelbase.ui:261
+#. i18n: ectx: property (text), widget (QPushButton, projectsBrowseBtn)
+#: ui/kptmainprojectpanelbase.ui:256 ui/kptmainprojectpanelbase.ui:279
 #, fuzzy, kde-format
 #| msgid "Choose..."
 msgid "Browse..."
 msgstr "Tchoezi..."
+
+#. i18n: ectx: property (text), item, widget (QComboBox, projectsType)
+#: ui/kptmainprojectpanelbase.ui:268
+#, fuzzy, kde-format
+msgid "Directory"
+msgstr "Durêye"
+
+#. i18n: ectx: property (text), widget (QLabel, projectsLabel)
+#: ui/kptmainprojectpanelbase.ui:290
+#, fuzzy, kde-format
+#| msgid "Project:"
+msgid "Projects:"
+msgstr "Pordjet:"
 
 #: ui/kptmilestoneprogressdialog.cpp:38
 #, kde-format
@@ -6983,7 +7032,16 @@ msgstr ""
 msgid "Hours per day:"
 msgstr "Eures pa djoû:"
 
-#: ui/welcome/WelcomeView.cpp:213
+#: ui/welcome/WelcomeView.cpp:93
+#, kde-kuit-format
+msgctxt "@info:whatsthis"
+msgid ""
+"<title>Shared resources</title>Create a shared resources file.Resources can "
+"be shared between projects to avoid overbooking resources across projects. "
+"Shared resources must be defined in a separate file."
+msgstr ""
+
+#: ui/welcome/WelcomeView.cpp:232
 #, fuzzy, kde-format
 #| msgid "Documents"
 msgid "Open Document"
@@ -7012,8 +7070,14 @@ msgstr ""
 msgid "New project"
 msgstr "Pordjet"
 
+#. i18n: ectx: property (text), widget (QPushButton, createResourceFileBtn)
+#: ui/welcome/WelcomeView.ui:91
+#, fuzzy, kde-format
+msgid "Create Shared Resources"
+msgstr "Candjî rissource"
+
 #. i18n: ectx: property (whatsThis), widget (QPushButton, openProjectBtn)
-#: ui/welcome/WelcomeView.ui:95
+#: ui/welcome/WelcomeView.ui:136
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -7023,14 +7087,14 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, openProjectBtn)
-#: ui/welcome/WelcomeView.ui:98
+#: ui/welcome/WelcomeView.ui:139
 #, fuzzy, kde-format
 #| msgid "Project"
 msgid "Open Project..."
 msgstr "Pordjet"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: ui/welcome/WelcomeView.ui:124
+#: ui/welcome/WelcomeView.ui:165
 #, kde-format
 msgid ""
 "<html><head/><body><p><span style=\" font-size:8pt; font-style:italic;"
@@ -7038,7 +7102,7 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QTableView, recentProjects)
-#: ui/welcome/WelcomeView.ui:134
+#: ui/welcome/WelcomeView.ui:175
 #, kde-format
 msgctxt ""
 "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <ui version=\"4.0\">  <widget "
@@ -7063,7 +7127,7 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QPushButton, introductionBtn)
-#: ui/welcome/WelcomeView.ui:175
+#: ui/welcome/WelcomeView.ui:216
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -7073,14 +7137,14 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, introductionBtn)
-#: ui/welcome/WelcomeView.ui:178
+#: ui/welcome/WelcomeView.ui:219
 #, fuzzy, kde-format
 #| msgid "Product"
 msgid "Introduction"
 msgstr "Prodût"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: ui/welcome/WelcomeView.ui:204
+#: ui/welcome/WelcomeView.ui:245
 #, kde-format
 msgid ""
 "<html><head/><body><p><span style=\" font-size:11pt; font-weight:600;"
