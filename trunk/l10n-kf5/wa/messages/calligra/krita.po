@@ -64,7 +64,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-10-05 03:20+0200\n"
+"POT-Creation-Date: 2017-10-06 03:21+0200\n"
 "PO-Revision-Date: 2011-01-17 21:35+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -6442,14 +6442,14 @@ msgstr "Abaguer imådje"
 msgid "Import"
 msgstr "Abaguer imådje"
 
-#: krita/krita4.xmlgui:194 plugins/dockers/defaultdockers/kis_layer_box.cpp:581
+#: krita/krita4.xmlgui:194 plugins/dockers/defaultdockers/kis_layer_box.cpp:619
 #, fuzzy, kde-format
 msgid "&Convert"
 msgstr "Dins l' ôte s&ins"
 
 #. i18n: ectx: property (text), widget (QPushButton, bnSelect)
 #: krita/krita4.xmlgui:204 krita/krita4.xmlgui:260
-#: plugins/dockers/defaultdockers/kis_layer_box.cpp:557
+#: plugins/dockers/defaultdockers/kis_layer_box.cpp:595
 #: plugins/extensions/colorrange/wdg_colorrange.ui:130
 #: plugins/extensions/imagesize/imagesize.xmlgui:12
 #: plugins/extensions/modify_selection/modify_selection.xmlgui:4
@@ -6457,7 +6457,7 @@ msgstr "Dins l' ôte s&ins"
 msgid "&Select"
 msgstr "&Tchoezi"
 
-#: krita/krita4.xmlgui:212 plugins/dockers/defaultdockers/kis_layer_box.cpp:563
+#: krita/krita4.xmlgui:212 plugins/dockers/defaultdockers/kis_layer_box.cpp:601
 #, fuzzy, kde-format
 #| msgid "Group:"
 msgid "&Group"
@@ -6473,7 +6473,7 @@ msgstr "Transformer"
 msgid "S&plit"
 msgstr "Coleur viè alfa"
 
-#: krita/krita4.xmlgui:236 plugins/dockers/defaultdockers/kis_layer_box.cpp:587
+#: krita/krita4.xmlgui:236 plugins/dockers/defaultdockers/kis_layer_box.cpp:625
 #, fuzzy, kde-format
 msgid "S&plit Alpha"
 msgstr "Coleur viè alfa"
@@ -9447,7 +9447,7 @@ msgstr " px"
 #: libs/image/brushengine/kis_standard_uniform_properties_factory.h:31
 #: libs/image/kis_keyframe_channel.cpp:30 libs/image/kis_layer.cc:222
 #: libs/widgets/KoColorPopupAction.cpp:89
-#: plugins/dockers/defaultdockers/kis_layer_box.cpp:159
+#: plugins/dockers/defaultdockers/kis_layer_box.cpp:197
 #: plugins/paintops/chalk/kis_chalk_paintop_settings_widget.cpp:37
 #: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:51
 #: plugins/paintops/curvebrush/kis_curve_paintop_settings_widget.cpp:35
@@ -20417,6 +20417,11 @@ msgstr "Coleur do djocaedje."
 msgid "&Add to Predefined Gradients"
 msgstr "&Radjouter a on gradyint prédefini"
 
+#: libs/widgets/KoIconToolTip.cpp:53
+#, kde-format
+msgid "Tags"
+msgstr ""
+
 #: libs/widgets/KoPageLayoutDialog.cpp:46
 #, kde-format
 msgid "Page Layout"
@@ -20605,11 +20610,6 @@ msgstr "Oister on pont"
 #, fuzzy, kde-format
 msgid "Remove from other tag"
 msgstr "Oister rawete"
-
-#: libs/widgets/KoResourceModel.cpp:90
-#, kde-format
-msgid "Tags"
-msgstr ""
 
 #: libs/widgets/KoResourceTaggingManager.cpp:157
 #, kde-format
@@ -23625,34 +23625,34 @@ msgstr "No:"
 msgid "Composition"
 msgstr "Môde compozite"
 
-#: plugins/dockers/defaultdockers/kis_layer_box.cpp:114
+#: plugins/dockers/defaultdockers/kis_layer_box.cpp:150
 #, kde-format
 msgid "Layers"
 msgstr "Coûtches"
 
-#: plugins/dockers/defaultdockers/kis_layer_box.cpp:169
+#: plugins/dockers/defaultdockers/kis_layer_box.cpp:207
 #, fuzzy, kde-format
 msgid "&Select Opaque"
 msgstr "Tchoe&s di pådjes"
 
-#: plugins/dockers/defaultdockers/kis_layer_box.cpp:196
+#: plugins/dockers/defaultdockers/kis_layer_box.cpp:234
 #, fuzzy, kde-format
 msgid "&Show Global Selection Mask"
 msgstr "Masse di tchoes..."
 
-#: plugins/dockers/defaultdockers/kis_layer_box.cpp:199
+#: plugins/dockers/defaultdockers/kis_layer_box.cpp:237
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
 "Shows global selection as a usual selection mask in <b>Layers</b> docker"
 msgstr ""
 
-#: plugins/dockers/defaultdockers/kis_layer_box.cpp:567
+#: plugins/dockers/defaultdockers/kis_layer_box.cpp:605
 #, fuzzy, kde-format
 msgid "&Toggle Locks && Visibility"
 msgstr "Prumire coûtche a pårti do presse-papî"
 
-#: plugins/dockers/defaultdockers/kis_layer_box.cpp:574
+#: plugins/dockers/defaultdockers/kis_layer_box.cpp:612
 #, kde-format
 msgid "&Add"
 msgstr ""
@@ -27009,6 +27009,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: plugins/filters/blur/wdg_gaussian_blur.ui:68
 #: plugins/filters/blur/wdgblur.ui:65
+#: plugins/filters/convertheightnormalmap/kis_wdg_convert_height_to_normal_map.cpp:51
 #: plugins/filters/edgedetection/kis_wdg_edge_detection.cpp:49
 #, kde-format
 msgid "Vertical Radius:"
@@ -27018,6 +27019,7 @@ msgstr "Reyon astampé :"
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: plugins/filters/blur/wdg_gaussian_blur.ui:78
 #: plugins/filters/blur/wdgblur.ui:29
+#: plugins/filters/convertheightnormalmap/kis_wdg_convert_height_to_normal_map.cpp:47
 #: plugins/filters/edgedetection/kis_wdg_edge_detection.cpp:45
 #, kde-format
 msgid "Horizontal Radius:"
@@ -27461,7 +27463,7 @@ msgstr "Logaritmike"
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #. i18n: ectx: property (text), widget (QLabel, labelOut)
 #: plugins/filters/colorsfilters/wdg_perchannel.ui:289
-#: plugins/filters/edgedetection/wdg_edge_detection.ui:73
+#: plugins/filters/edgedetection/wdg_edge_detection.ui:70
 #, kde-format
 msgid "Output:"
 msgstr "Rexhowe :"
@@ -27471,6 +27473,41 @@ msgstr "Rexhowe :"
 #, kde-format
 msgid "Input:"
 msgstr "Intrêye :"
+
+#: plugins/filters/convertheightnormalmap/kis_convert_height_to_normal_map_filter.cpp:40
+#, kde-format
+msgid "&Height to Normal Map..."
+msgstr ""
+
+#: plugins/filters/convertheightnormalmap/kis_convert_height_to_normal_map_filter.h:41
+#, fuzzy, kde-format
+msgid "Height to Normal Map"
+msgstr "Normå"
+
+#: plugins/filters/convertheightnormalmap/kis_wdg_convert_height_to_normal_map.cpp:32
+#: plugins/filters/edgedetection/kis_wdg_edge_detection.cpp:31
+#, kde-format
+msgid "Prewitt"
+msgstr ""
+
+#: plugins/filters/convertheightnormalmap/kis_wdg_convert_height_to_normal_map.cpp:32
+#: plugins/filters/edgedetection/kis_wdg_edge_detection.cpp:31
+#, fuzzy, kde-format
+#| msgid "simple"
+msgid "Simple"
+msgstr "simpz"
+
+#: plugins/filters/convertheightnormalmap/kis_wdg_convert_height_to_normal_map.cpp:32
+#: plugins/filters/edgedetection/kis_wdg_edge_detection.cpp:31
+#, kde-format
+msgid "Sobol"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/filters/convertheightnormalmap/wdg_convert_height_to_normal_map.ui:51
+#, kde-format
+msgid "XYZ"
+msgstr "XYZ"
 
 #: plugins/filters/convolutionfilters/convolutionfilters.cpp:64
 #, kde-format
@@ -27573,22 +27610,6 @@ msgstr "Môde"
 msgid "&Edge Detection..."
 msgstr "Deteccion des boirds"
 
-#: plugins/filters/edgedetection/kis_wdg_edge_detection.cpp:31
-#, kde-format
-msgid "Prewitt"
-msgstr ""
-
-#: plugins/filters/edgedetection/kis_wdg_edge_detection.cpp:31
-#, fuzzy, kde-format
-#| msgid "simple"
-msgid "Simple"
-msgstr "simpz"
-
-#: plugins/filters/edgedetection/kis_wdg_edge_detection.cpp:31
-#, kde-format
-msgid "Sobol"
-msgstr ""
-
 #: plugins/filters/edgedetection/kis_wdg_edge_detection.cpp:33
 #, fuzzy, kde-format
 #| msgid "Small Tiles"
@@ -27623,20 +27644,14 @@ msgstr "Boird di hintche:"
 msgid "Direction in Radians"
 msgstr "Direccion :"
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, WidgetEdgeDetection)
-#: plugins/filters/edgedetection/wdg_edge_detection.ui:14
-#, fuzzy, kde-format
-msgid "Form"
-msgstr "Cognes:"
-
 #. i18n: ectx: property (toolTip), widget (QComboBox, cmbOutput)
-#: plugins/filters/edgedetection/wdg_edge_detection.ui:20
+#: plugins/filters/edgedetection/wdg_edge_detection.ui:17
 #, kde-format
 msgid "Output decides what type of information you want from the lines."
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QComboBox, cmbType)
-#: plugins/filters/edgedetection/wdg_edge_detection.ui:27
+#: plugins/filters/edgedetection/wdg_edge_detection.ui:24
 #, kde-format
 msgid ""
 "The formula decides how the kernel is created, so different formulas choose "
@@ -27644,7 +27659,7 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, chkTransparent)
-#: plugins/filters/edgedetection/wdg_edge_detection.ui:53
+#: plugins/filters/edgedetection/wdg_edge_detection.ui:50
 #, kde-format
 msgid ""
 "This will take a desaturated result and use it to determine what is "
@@ -27652,14 +27667,14 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkTransparent)
-#: plugins/filters/edgedetection/wdg_edge_detection.ui:56
+#: plugins/filters/edgedetection/wdg_edge_detection.ui:53
 #, fuzzy, kde-format
 #| msgid "Discard alpha channel"
 msgid "Apply result to alpha channel"
 msgstr "Abandner l' canå alfa"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: plugins/filters/edgedetection/wdg_edge_detection.ui:63
+#: plugins/filters/edgedetection/wdg_edge_detection.ui:60
 #, fuzzy, kde-format
 msgid "Formula:"
 msgstr "Normå"
@@ -38717,6 +38732,10 @@ msgstr "Mostrer gåyotaedjes"
 msgid "Work Recursively"
 msgstr ""
 
+#, fuzzy
+#~ msgid "Form"
+#~ msgstr "Cognes:"
+
 #~ msgid "Out of Gamut"
 #~ msgstr "Foû del game"
 
@@ -39113,9 +39132,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Render location:"
 #~ msgstr "Ashidaedje"
-
-#~ msgid "XYZ"
-#~ msgstr "XYZ"
 
 #~ msgid "CMYK"
 #~ msgstr "CMYK"
