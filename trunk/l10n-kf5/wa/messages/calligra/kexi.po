@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-12-19 02:59+0100\n"
+"POT-Creation-Date: 2018-01-07 03:03+0100\n"
 "PO-Revision-Date: 2011-01-17 22:02+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -5071,8 +5071,8 @@ msgstr "Potchî å sourdant di dnêyes då formulaire di tchoezi"
 msgid "Goes to selected form's data source"
 msgstr "Potchî å sourdant di dnêyes då formulaire di tchoezi"
 
-#: plugins/forms/kexidbfactorybase.cpp:49 plugins/forms/kexiformpart.cpp:365
-#: plugins/reports/kexireportpart.cpp:175
+#: plugins/forms/kexidbfactorybase.cpp:49 plugins/forms/kexiformpart.cpp:366
+#: plugins/reports/kexireportpart.cpp:210
 #, kde-kuit-format
 msgid "Data Source"
 msgstr "Sourdant di dnêyes"
@@ -5234,24 +5234,31 @@ msgstr "Å pus stroet"
 msgid "To Widest"
 msgstr "Å pus lådje"
 
-#: plugins/forms/kexiformpart.cpp:319
+#: plugins/forms/kexiformpart.cpp:320
 #, fuzzy, kde-format
 #| msgid "Design of form \"%1\" has been modified."
 msgctxt "@info"
 msgid "Design of form <resource>%1</resource> has been modified."
 msgstr "L' atuzlaedje do formulaire « %1 » a stî candjî."
 
-#: plugins/forms/kexiformpart.cpp:321
+#: plugins/forms/kexiformpart.cpp:322
 #, fuzzy, kde-format
 #| msgid "Saving \"%1\" object failed."
 msgctxt "@info"
 msgid "Form <resource>%1</resource> already exists."
 msgstr "Li schapaedje di l' objet « %1 » a fwait berwete."
 
-#: plugins/forms/kexiformpart.cpp:376
+#: plugins/forms/kexiformpart.cpp:377
 #, kde-kuit-format
 msgid "Widgets"
 msgstr "Ahesses"
+
+#: plugins/forms/kexiformpart.cpp:446
+#, fuzzy, kde-kuit-format
+#| msgid "Saving \"%1\" object failed."
+msgctxt "@info"
+msgid "Form <resource>%1</resource>"
+msgstr "Li schapaedje di l' objet « %1 » a fwait berwete."
 
 #: plugins/forms/kexiformview.cpp:246
 #: plugins/forms/widgets/main/KexiMainFormWidgetsFactory.cpp:86
@@ -7323,7 +7330,7 @@ msgid "<para>This query is invalid.</para><para>Do you want to save it?</para>"
 msgstr ""
 "I gn a ddja on fitchî lomé « %1 ».</p>El voloz vs ricandjî avou on novea ?"
 
-#: plugins/queries/kexiquerypart.cpp:45
+#: plugins/queries/kexiquerypart.cpp:48
 #, kde-kuit-format
 msgctxt ""
 "Translate this word using only lowercase alphanumeric characters (a..z, "
@@ -7333,38 +7340,79 @@ msgctxt ""
 msgid "query"
 msgstr "ricweraedje"
 
-#: plugins/queries/kexiquerypart.cpp:46
+#: plugins/queries/kexiquerypart.cpp:49
 #, kde-kuit-format
 msgctxt "tooltip"
 msgid "Create new query"
 msgstr "Ahiver novea rcweraedje"
 
-#: plugins/queries/kexiquerypart.cpp:47
+#: plugins/queries/kexiquerypart.cpp:50
 #, kde-kuit-format
 msgctxt "what's this"
 msgid "Creates new query."
 msgstr "Ahive on novea rcweraedje."
 
-#: plugins/queries/kexiquerypart.cpp:50
+#: plugins/queries/kexiquerypart.cpp:53
 #, kde-kuit-format
 msgid "SQL"
 msgstr "SQL"
 
-#: plugins/queries/kexiquerypart.cpp:174
+#: plugins/queries/kexiquerypart.cpp:108
+#, fuzzy, kde-kuit-format
+#| msgid ""
+#| "You are about to remove table \"%1\" but following objects using this "
+#| "table are opened:"
+msgid ""
+"<para>You are about to delete query <resource>%1</resource> but it is used "
+"by following opened windows:</para>"
+msgstr ""
+"Vos alez oister l' tåvlea « %1 » mins les objets shuvants ki siervèt di ç' "
+"tåvlea la sont drovous :"
+
+#: plugins/queries/kexiquerypart.cpp:186
 #, fuzzy, kde-format
 #| msgid "Design of query \"%1\" has been modified."
 msgctxt "@info"
 msgid "Design of query <resource>%1</resource> has been modified."
 msgstr "L' atuzlaedje do rcweraedje « %1 » a stî candjî."
 
-#: plugins/queries/kexiquerypart.cpp:176
+#: plugins/queries/kexiquerypart.cpp:188
 #, fuzzy, kde-format
 #| msgid "Saving \"%1\" object failed."
 msgctxt "@info"
 msgid "Query <resource>%1</resource> already exists."
 msgstr "Li schapaedje di l' objet « %1 » a fwait berwete."
 
-#: plugins/queries/kexiquerypart.cpp:202
+#: plugins/queries/kexiquerypart.cpp:236 plugins/tables/kexitablepart.cpp:207
+#, kde-format
+msgctxt "@info/plain Sentence1 Sentence2 Sentence3"
+msgid "%1%2%3"
+msgstr ""
+
+#: plugins/queries/kexiquerypart.cpp:239 plugins/tables/kexitablepart.cpp:210
+#, fuzzy, kde-kuit-format
+#| msgid "Do you want to save the design now?"
+msgctxt "@info"
+msgid ""
+"<para>Do you want to close these windows and save the design or cancel "
+"saving?</para>"
+msgstr "Voloz vs schaper l' atuzlaedje do côp ?"
+
+#: plugins/queries/kexiquerypart.cpp:244 plugins/tables/kexitablepart.cpp:215
+#, fuzzy, kde-kuit-format
+#| msgid "Close windows"
+msgctxt "@action:button Close all windows and save"
+msgid "Close Windows and Save"
+msgstr "Clôre finiesses"
+
+#: plugins/queries/kexiquerypart.cpp:246 plugins/tables/kexitablepart.cpp:217
+#, fuzzy, kde-kuit-format
+#| msgid "Close windows"
+msgctxt "@info:tooltip Close all windows and save design"
+msgid "Close all windows and save design"
+msgstr "Clôre finiesses"
+
+#: plugins/queries/kexiquerypart.cpp:273
 #, fuzzy, kde-kuit-format
 #| msgid "Saving \"%1\" object failed."
 msgctxt "@info"
@@ -7376,23 +7424,23 @@ msgstr "Li schapaedje di l' objet « %1 » a fwait berwete."
 msgid "Query executing failed."
 msgstr "Li fjhaedje do rcweraedje a fwait berwete."
 
-#: plugins/reports/kexireportdesignview.cpp:57
+#: plugins/reports/kexireportdesignview.cpp:58
 #, fuzzy, kde-kuit-format
 #| msgid "Edit Collection..."
 msgid "Edit Sections"
 msgstr "Candjî ramexhnêye..."
 
-#: plugins/reports/kexireportdesignview.cpp:60
+#: plugins/reports/kexireportdesignview.cpp:61
 #, kde-kuit-format
 msgid "Raise"
 msgstr ""
 
-#: plugins/reports/kexireportdesignview.cpp:62
+#: plugins/reports/kexireportdesignview.cpp:63
 #, kde-kuit-format
 msgid "Lower"
 msgstr ""
 
-#: plugins/reports/kexireportpart.cpp:64
+#: plugins/reports/kexireportpart.cpp:65
 #, fuzzy, kde-kuit-format
 #| msgid "Export"
 msgctxt ""
@@ -7403,7 +7451,7 @@ msgctxt ""
 msgid "report"
 msgstr "Ebaguer"
 
-#: plugins/reports/kexireportpart.cpp:65
+#: plugins/reports/kexireportpart.cpp:66
 #, fuzzy, kde-kuit-format
 #| msgctxt "tooltip"
 #| msgid "Create new form"
@@ -7411,7 +7459,7 @@ msgctxt "tooltip"
 msgid "Create new report"
 msgstr "Ahiver novea formulaire"
 
-#: plugins/reports/kexireportpart.cpp:66
+#: plugins/reports/kexireportpart.cpp:67
 #, fuzzy, kde-kuit-format
 #| msgctxt "what's this"
 #| msgid "Creates new form."
@@ -7419,257 +7467,264 @@ msgctxt "what's this"
 msgid "Creates new report."
 msgstr "Ahive on novea formulaire."
 
-#: plugins/reports/kexireportpart.cpp:85
+#: plugins/reports/kexireportpart.cpp:86
 #, fuzzy, kde-format
 #| msgid "Design of form \"%1\" has been modified."
 msgctxt "@info"
 msgid "Design of report <resource>%1</resource> has been modified."
 msgstr "L' atuzlaedje do formulaire « %1 » a stî candjî."
 
-#: plugins/reports/kexireportpart.cpp:87
+#: plugins/reports/kexireportpart.cpp:88
 #, fuzzy, kde-format
 #| msgid "Saving \"%1\" object failed."
 msgctxt "@info"
 msgid "Report <resource>%1</resource> already exists."
 msgstr "Li schapaedje di l' objet « %1 » a fwait berwete."
 
-#: plugins/reports/kexireportview.cpp:68
+#: plugins/reports/kexireportpart.cpp:183
+#, fuzzy, kde-kuit-format
+#| msgid "Saving \"%1\" object failed."
+msgctxt "@info"
+msgid "Report <resource>%1</resource>"
+msgstr "Li schapaedje di l' objet « %1 » a fwait berwete."
+
+#: plugins/reports/kexireportview.cpp:64
 #, fuzzy, kde-kuit-format
 #| msgid "Page %1"
 msgctxt "Page selector label"
 msgid "Page:"
 msgstr "Pådje %1"
 
-#: plugins/reports/kexireportview.cpp:69
+#: plugins/reports/kexireportview.cpp:65
 #, fuzzy, kde-kuit-format
 #| msgid "Go to first row"
 msgid "Go to first page"
 msgstr "Potchî al prumire roye"
 
-#: plugins/reports/kexireportview.cpp:70
+#: plugins/reports/kexireportview.cpp:66
 #, fuzzy, kde-kuit-format
 #| msgid "Go to first row"
 msgid "Goes to first page"
 msgstr "Potchî al prumire roye"
 
-#: plugins/reports/kexireportview.cpp:71
+#: plugins/reports/kexireportview.cpp:67
 #, fuzzy, kde-kuit-format
 #| msgid "Go to previous row"
 msgid "Go to previous page"
 msgstr "Potchî al roye di dvant"
 
-#: plugins/reports/kexireportview.cpp:72
+#: plugins/reports/kexireportview.cpp:68
 #, fuzzy, kde-kuit-format
 #| msgid "Go to previous row"
 msgid "Goes to previous page"
 msgstr "Potchî al roye di dvant"
 
-#: plugins/reports/kexireportview.cpp:73
+#: plugins/reports/kexireportview.cpp:69
 #, fuzzy, kde-kuit-format
 #| msgid "Go to next row"
 msgid "Go to next page"
 msgstr "Potchî al roye shuvante"
 
-#: plugins/reports/kexireportview.cpp:74
+#: plugins/reports/kexireportview.cpp:70
 #, fuzzy, kde-kuit-format
 #| msgid "Go to next row"
 msgid "Goes to next page"
 msgstr "Potchî al roye shuvante"
 
-#: plugins/reports/kexireportview.cpp:75
+#: plugins/reports/kexireportview.cpp:71
 #, fuzzy, kde-kuit-format
 #| msgid "Go to last row"
 msgid "Go to last page"
 msgstr "Potchî al dierinne roye"
 
-#: plugins/reports/kexireportview.cpp:76
+#: plugins/reports/kexireportview.cpp:72
 #, fuzzy, kde-kuit-format
 #| msgid "Go to last row"
 msgid "Goes to last page"
 msgstr "Potchî al dierinne roye"
 
-#: plugins/reports/kexireportview.cpp:77
+#: plugins/reports/kexireportview.cpp:73
 #, fuzzy, kde-kuit-format
 #| msgid "Current row number"
 msgid "Current page number"
 msgstr "Limero del roye do moumint"
 
-#: plugins/reports/kexireportview.cpp:77
+#: plugins/reports/kexireportview.cpp:73
 #, fuzzy, kde-kuit-format
 #| msgid "Number of rows"
 msgid "Number of pages"
 msgstr "Nombe di royes"
 
-#: plugins/reports/kexireportview.cpp:86
+#: plugins/reports/kexireportview.cpp:82
 #, kde-kuit-format
 msgid "Print"
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:88
+#: plugins/reports/kexireportview.cpp:84
 #, fuzzy, kde-kuit-format
 #| msgid "Export"
 msgid "Print report"
 msgstr "Ebaguer"
 
-#: plugins/reports/kexireportview.cpp:89
+#: plugins/reports/kexireportview.cpp:85
 #, fuzzy, kde-kuit-format
 #| msgid "Closes the current project."
 msgid "Prints the current report."
 msgstr "Clôt l' pordjet do moumint."
 
-#: plugins/reports/kexireportview.cpp:92
+#: plugins/reports/kexireportview.cpp:88
 #, fuzzy, kde-kuit-format
 #| msgid "Export"
 msgctxt "@title:menu"
 msgid "E&xport As"
 msgstr "Ebaguer"
 
-#: plugins/reports/kexireportview.cpp:99
+#: plugins/reports/kexireportview.cpp:95
 #, fuzzy, kde-kuit-format
 #| msgid "Export"
 msgid "Export:"
 msgstr "Ebaguer"
 
-#: plugins/reports/kexireportview.cpp:106
+#: plugins/reports/kexireportview.cpp:102
 #, fuzzy, kde-kuit-format
 #| msgid "Set Font..."
 msgctxt "open dialog to export as text document"
 msgid "Text Document..."
 msgstr "Defini l' fonte..."
 
-#: plugins/reports/kexireportview.cpp:109
+#: plugins/reports/kexireportview.cpp:105
 #, kde-kuit-format
 msgid "Export the report as a text document (in OpenDocument Text format)"
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:110
+#: plugins/reports/kexireportview.cpp:106
 #, kde-kuit-format
 msgid "Exports the report as a text document (in OpenDocument Text format)."
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:119
+#: plugins/reports/kexireportview.cpp:115
 #, kde-kuit-format
 msgctxt "Portable Document Format..."
 msgid "PDF..."
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:122
+#: plugins/reports/kexireportview.cpp:118
 #, fuzzy, kde-kuit-format
 #| msgid "Export data to a file"
 msgid "Export as PDF"
 msgstr "Ebaguer dnêyes èn on fitchî"
 
-#: plugins/reports/kexireportview.cpp:123
+#: plugins/reports/kexireportview.cpp:119
 #, fuzzy, kde-kuit-format
 #| msgid "Closes the current project."
 msgid "Exports the current report as PDF."
 msgstr "Clôt l' pordjet do moumint."
 
-#: plugins/reports/kexireportview.cpp:132
+#: plugins/reports/kexireportview.cpp:128
 #, fuzzy, kde-kuit-format
 #| msgid "&Save Row"
 msgctxt "open dialog to export as spreadsheet"
 msgid "Spreadsheet..."
 msgstr "&Schaper roye"
 
-#: plugins/reports/kexireportview.cpp:135
+#: plugins/reports/kexireportview.cpp:131
 #, kde-kuit-format
 msgid "Export the report as a spreadsheet (in OpenDocument Spreadsheet format)"
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:136
+#: plugins/reports/kexireportview.cpp:132
 #, kde-kuit-format
 msgid ""
 "Exports the report as a spreadsheet (in OpenDocument Spreadsheet format)."
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:146
+#: plugins/reports/kexireportview.cpp:142
 #, fuzzy, kde-kuit-format
 #| msgid "Last Page"
 msgctxt "open dialog to export as web page"
 msgid "Web Page..."
 msgstr "Dierinne pådje"
 
-#: plugins/reports/kexireportview.cpp:149
+#: plugins/reports/kexireportview.cpp:145
 #, fuzzy, kde-kuit-format
 #| msgid "Export data to a file"
 msgid "Export the report as a web page (in HTML format)"
 msgstr "Ebaguer dnêyes èn on fitchî"
 
-#: plugins/reports/kexireportview.cpp:150
+#: plugins/reports/kexireportview.cpp:146
 #, fuzzy, kde-kuit-format
 #| msgid "Export data to a file"
 msgid "Exports the report as a web page (in HTML format)."
 msgstr "Ebaguer dnêyes èn on fitchî"
 
-#: plugins/reports/kexireportview.cpp:185
+#: plugins/reports/kexireportview.cpp:181
 #, fuzzy, kde-kuit-format
 #| msgid "Row inserting failed."
 msgid "Printing the report failed."
 msgstr "Li stitchaedje del roye a fwait berwete."
 
-#: plugins/reports/kexireportview.cpp:186
+#: plugins/reports/kexireportview.cpp:182
 #, fuzzy, kde-kuit-format
 #| msgid "Exporting"
 msgid "Print Failed"
 msgstr "Dj' ebague"
 
-#: plugins/reports/kexireportview.cpp:198
+#: plugins/reports/kexireportview.cpp:194
 #, fuzzy, kde-kuit-format
 #| msgid "Export data to a file"
 msgid "Export Report as PDF"
 msgstr "Ebaguer dnêyes èn on fitchî"
 
-#: plugins/reports/kexireportview.cpp:217
+#: plugins/reports/kexireportview.cpp:213
 #, fuzzy, kde-kuit-format
 #| msgid "Export data to a file"
 msgid "Exporting the report as PDF to %1 failed."
 msgstr "Ebaguer dnêyes èn on fitchî"
 
-#: plugins/reports/kexireportview.cpp:218
-#: plugins/reports/kexireportview.cpp:274
-#: plugins/reports/kexireportview.cpp:299
-#: plugins/reports/kexireportview.cpp:339
+#: plugins/reports/kexireportview.cpp:214
+#: plugins/reports/kexireportview.cpp:270
+#: plugins/reports/kexireportview.cpp:295
+#: plugins/reports/kexireportview.cpp:335
 #, fuzzy, kde-kuit-format
 #| msgid "Exporting"
 msgid "Export Failed"
 msgstr "Dj' ebague"
 
-#: plugins/reports/kexireportview.cpp:246
+#: plugins/reports/kexireportview.cpp:242
 #, fuzzy, kde-kuit-format
 #| msgid "Do you want to open it in Text View?"
 msgid "Do you want to open exported document?"
 msgstr "El voloz drovi e vuwe môde tecse ?"
 
-#: plugins/reports/kexireportview.cpp:264
+#: plugins/reports/kexireportview.cpp:260
 #, fuzzy, kde-kuit-format
 #| msgid "Export data to a file"
 msgid "Export Report as Spreadsheet"
 msgstr "Ebaguer dnêyes èn on fitchî"
 
-#: plugins/reports/kexireportview.cpp:273
+#: plugins/reports/kexireportview.cpp:269
 #, fuzzy, kde-kuit-format
 #| msgid "Export data to a file"
 msgid "Failed to export the report as spreadsheet to %1."
 msgstr "Ebaguer dnêyes èn on fitchî"
 
-#: plugins/reports/kexireportview.cpp:289
+#: plugins/reports/kexireportview.cpp:285
 #, kde-kuit-format
 msgid "Export Report as Text Document"
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:298
+#: plugins/reports/kexireportview.cpp:294
 #, kde-kuit-format
 msgid "Exporting the report as text document to %1 failed."
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:309
+#: plugins/reports/kexireportview.cpp:305
 #, fuzzy, kde-kuit-format
 #| msgid "Export data to a file"
 msgid "Export Report as Web Page"
 msgstr "Ebaguer dnêyes èn on fitchî"
 
-#: plugins/reports/kexireportview.cpp:323
+#: plugins/reports/kexireportview.cpp:319
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -7678,37 +7733,37 @@ msgid ""
 "original.</note></para>"
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:327
+#: plugins/reports/kexireportview.cpp:323
 #, kde-kuit-format
 msgctxt "@action:button"
 msgid "Use CSS"
 msgstr ""
 
-#: plugins/reports/kexireportview.cpp:328
+#: plugins/reports/kexireportview.cpp:324
 #, fuzzy, kde-kuit-format
 #| msgid "Table"
 msgctxt "@action:button"
 msgid "Use Table"
 msgstr "Tåvlea"
 
-#: plugins/reports/kexireportview.cpp:338
+#: plugins/reports/kexireportview.cpp:334
 #, fuzzy, kde-kuit-format
 #| msgid "Export data to a file"
 msgid "Exporting the report as web page to %1 failed."
 msgstr "Ebaguer dnêyes èn on fitchî"
 
-#: plugins/reports/kexireportview.cpp:400
+#: plugins/reports/kexireportview.cpp:396
 #, fuzzy, kde-kuit-format
 #| msgid "Opening object \"%1\" failed."
 msgid "Opening failed"
 msgstr "Li drovaedje di l' objet « %1 » a fwait berwete."
 
-#: plugins/reports/kexireportview.cpp:400
+#: plugins/reports/kexireportview.cpp:396
 #, kde-kuit-format
 msgid "Report schema appears to be invalid or corrupt"
 msgstr ""
 
-#: plugins/reports/kexisourceselector.cpp:60
+#: plugins/reports/kexisourceselector.cpp:59
 #, fuzzy, kde-kuit-format
 #| msgid "Form's data source"
 msgid "Report's data source:"
@@ -8312,20 +8367,20 @@ msgstr "Id%1"
 #| "table are opened:"
 msgctxt "@info"
 msgid ""
-"You are about to change the design of table <resource>%1</resource> but "
-"following objects using this table are opened:"
+"<para>You are about to change the design of table <resource>%1</resource> "
+"but following objects using this table are open:</para>"
 msgstr ""
 "Vos alez oister l' tåvlea « %1 » mins les objets shuvants ki siervèt di ç' "
 "tåvlea la sont drovous :"
 
-#: plugins/tables/kexitabledesignerview.cpp:1622
+#: plugins/tables/kexitabledesignerview.cpp:1627
 #, fuzzy, kde-kuit-format
 #| msgid "Saving \"%1\" object failed."
 msgctxt "@info"
 msgid "Table field <resource>%1</resource>"
 msgstr "Li schapaedje di l' objet « %1 » a fwait berwete."
 
-#: plugins/tables/kexitabledesignerview.cpp:1624
+#: plugins/tables/kexitabledesignerview.cpp:1629
 #, kde-kuit-format
 msgctxt "Empty table row"
 msgid "Empty Row"
@@ -8338,7 +8393,7 @@ msgctxt "@info"
 msgid "<para>Do you want to save the design now?</para>%1"
 msgstr "Voloz vs schaper l' atuzlaedje do côp ?"
 
-#: plugins/tables/kexitablepart.cpp:62
+#: plugins/tables/kexitablepart.cpp:63
 #, kde-kuit-format
 msgctxt ""
 "Translate this word using only lowercase alphanumeric characters (a..z, "
@@ -8348,75 +8403,57 @@ msgctxt ""
 msgid "table"
 msgstr "tåvlea"
 
-#: plugins/tables/kexitablepart.cpp:63
+#: plugins/tables/kexitablepart.cpp:64
 #, kde-kuit-format
 msgctxt "tooltip"
 msgid "Create new table"
 msgstr "Ahiver noû tåvlea"
 
-#: plugins/tables/kexitablepart.cpp:64
+#: plugins/tables/kexitablepart.cpp:65
 #, kde-kuit-format
 msgctxt "what's this"
 msgid "Creates new table."
 msgstr "Ahive on noû tåvlea."
 
-#: plugins/tables/kexitablepart.cpp:136
+#: plugins/tables/kexitablepart.cpp:137
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "You are about to remove table \"%1\" but following objects using this "
 #| "table are opened:"
 msgid ""
-"You are about to remove table <resource>%1</resource> but following objects "
-"using this table are opened:"
+"<para>You are about to delete table <resource>%1</resource> but it is used "
+"by following opened windows:</para>"
 msgstr ""
 "Vos alez oister l' tåvlea « %1 » mins les objets shuvants ki siervèt di ç' "
 "tåvlea la sont drovous :"
 
-#: plugins/tables/kexitablepart.cpp:156
-#, fuzzy, kde-kuit-format
+#: plugins/tables/kexitablepart.cpp:158
+#, fuzzy, kde-format
 #| msgid ""
 #| "You are about to remove table \"%1\" but following objects using this "
 #| "table are opened:"
 msgid ""
-"You are about to rename table <resource>%1</resource> but following objects "
-"using this table are opened:"
+"<para>You are about to rename table <resource>%1</resource> but it is used "
+"by following opened windows:"
 msgstr ""
 "Vos alez oister l' tåvlea « %1 » mins les objets shuvants ki siervèt di ç' "
 "tåvlea la sont drovous :"
 
-#: plugins/tables/kexitablepart.cpp:203
-#, kde-format
-msgctxt "@info"
-msgid "<para>%1</para><para>%2</para>"
-msgstr ""
-
-#: plugins/tables/kexitablepart.cpp:205
-#, kde-kuit-format
-msgid "Do you want to close all windows for these objects?"
-msgstr "Voloz clôre totes les finiesses po ces objets la ?"
-
-#: plugins/tables/kexitablepart.cpp:207
-#, fuzzy, kde-kuit-format
-#| msgid "Close windows"
-msgctxt "@action:button Close All Windows"
-msgid "Close Windows"
-msgstr "Clôre finiesses"
-
-#: plugins/tables/kexitablepart.cpp:225
+#: plugins/tables/kexitablepart.cpp:239
 #, fuzzy, kde-format
 #| msgid "Design of table \"%1\" has been modified."
 msgctxt "@info"
 msgid "Design of table <resource>%1</resource> has been modified."
 msgstr "L' atuzlaedje do tåvlea « %1 » a stî candjî."
 
-#: plugins/tables/kexitablepart.cpp:228
+#: plugins/tables/kexitablepart.cpp:242
 #, fuzzy, kde-format
 #| msgid "Saving \"%1\" object failed."
 msgctxt "@info"
 msgid "Table <resource>%1</resource> already exists."
 msgstr "Li schapaedje di l' objet « %1 » a fwait berwete."
 
-#: plugins/tables/kexitablepart.cpp:232
+#: plugins/tables/kexitablepart.cpp:246
 #, fuzzy, kde-format
 #| msgid ""
 #| "Warning! Any data in this table will be removed upon design's saving!"
@@ -8428,12 +8465,12 @@ msgstr ""
 "Asteme ! Totes les dnêyes dins ç' tåvlea ci sront oistêyes å schapaedje di "
 "l' atuzlaedje !"
 
-#: plugins/tables/kexitablepart.cpp:261
+#: plugins/tables/kexitablepart.cpp:275
 #, kde-kuit-format
 msgid "Lookup column"
 msgstr "Cweri colone"
 
-#: plugins/tables/kexitablepart.cpp:290
+#: plugins/tables/kexitablepart.cpp:304
 #, fuzzy, kde-kuit-format
 #| msgid "Saving \"%1\" object failed."
 msgctxt "@info"
@@ -9666,6 +9703,15 @@ msgstr "Bodje li cursoe al dierinne roye."
 #| msgid "Moves cursor to new row and allows inserting."
 msgid "Moves cursor to new record and allows inserting."
 msgstr "Bodje li cursoe al novele roye et permete di stitchî."
+
+#~ msgid "Do you want to close all windows for these objects?"
+#~ msgstr "Voloz clôre totes les finiesses po ces objets la ?"
+
+#, fuzzy
+#~| msgid "Close windows"
+#~ msgctxt "@action:button Close All Windows"
+#~ msgid "Close Windows"
+#~ msgstr "Clôre finiesses"
 
 #, fuzzy
 #~| msgid "Data"
