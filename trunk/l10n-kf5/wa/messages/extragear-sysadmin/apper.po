@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-01-17 03:17+0100\n"
+"POT-Creation-Date: 2018-01-18 03:12+0100\n"
 "PO-Revision-Date: 2012-12-30 11:08+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -78,42 +78,63 @@ msgstr "Oisteu d' mierseu pacaedje"
 msgid "Package file to install"
 msgstr "Fitchî d' pacaedje a-z astaler"
 
-#: Apper/ApperKCM.cpp:122 Apper/ApperKCM.cpp:303
+#: Apper/ApperKCM.cpp:95 Apper/ApperKCM.cpp:294
 #, kde-format
 msgid "Find"
 msgstr "Trover"
 
-#: Apper/ApperKCM.cpp:212 Apper/ApperKCM.cpp:559
+#: Apper/ApperKCM.cpp:176
+#, fuzzy, kde-format
+#| msgid "Software Manager Messages"
+msgid "Some software changes were made"
+msgstr "Messaedjes do Manaedjeu des programes"
+
+#: Apper/ApperKCM.cpp:177 apperd/Updater.cpp:287
+#, kde-format
+msgid "Review"
+msgstr "Rilever"
+
+#: Apper/ApperKCM.cpp:180
+#, kde-format
+msgid "Discard"
+msgstr ""
+
+#: Apper/ApperKCM.cpp:183
+#, kde-format
+msgid "Apply"
+msgstr ""
+
+#: Apper/ApperKCM.cpp:207 Apper/ApperKCM.cpp:564
 #, kde-format
 msgid "History"
 msgstr "Istwere"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, Settings)
-#: Apper/ApperKCM.cpp:216 Apper/ApperKCM.cpp:520 Apper/Settings/Settings.ui:14
+#: Apper/ApperKCM.cpp:211 Apper/ApperKCM.cpp:521 Apper/Settings/Settings.ui:14
 #, kde-format
 msgid "Settings"
 msgstr "Apontiaedjes"
 
-#: Apper/ApperKCM.cpp:280 Apper/ApperKCM.cpp:281 Apper/ApperKCM.cpp:282
-#: Apper/ApperKCM.cpp:283
+#: Apper/ApperKCM.cpp:271 Apper/ApperKCM.cpp:272 Apper/ApperKCM.cpp:273
+#: Apper/ApperKCM.cpp:274
 #, kde-format
 msgid "&Cancel"
 msgstr "&Rinoncî"
 
-#. i18n: ectx: property (text), widget (CategorizedView, changesView)
-#: Apper/ApperKCM.cpp:290 Apper/ApperKCM.ui:425
+#. i18n: ectx: property (text), widget (KMessageWidget, reviewMessage)
+#: Apper/ApperKCM.cpp:281 Apper/ApperKCM.ui:427
 #, kde-format
 msgid "Find by &name"
 msgstr "Trover sol &no"
 
-#. i18n: ectx: property (text), widget (CategorizedView, changesView)
-#: Apper/ApperKCM.cpp:291 Apper/ApperKCM.ui:435
+#. i18n: ectx: property (text), widget (KMessageWidget, reviewMessage)
+#: Apper/ApperKCM.cpp:282 Apper/ApperKCM.ui:437
 #, kde-format
 msgid "Find by f&ile name"
 msgstr "Trover sol &no do fitchî"
 
-#. i18n: ectx: property (text), widget (CategorizedView, changesView)
-#: Apper/ApperKCM.cpp:292 Apper/ApperKCM.ui:430
+#. i18n: ectx: property (text), widget (KMessageWidget, reviewMessage)
+#: Apper/ApperKCM.cpp:283 Apper/ApperKCM.ui:432
 #, kde-format
 msgid "Find by &description"
 msgstr "Trover sol &discrijhaedje"
@@ -132,23 +153,22 @@ msgstr ""
 msgid "Apply Settings"
 msgstr "Mete èn ouve les apontiaedjes"
 
-#: Apper/ApperKCM.cpp:543 Apper/CategoryModel.cpp:59
+#: Apper/ApperKCM.cpp:548 Apper/CategoryModel.cpp:59
 #, kde-format
 msgid "Updates"
 msgstr "Metaedjes a djoû"
 
-#. i18n: ectx: property (text), widget (QPushButton, changesPB)
-#: Apper/ApperKCM.cpp:614 Apper/ApperKCM.ui:154
+#: Apper/ApperKCM.cpp:617
 #, kde-format
 msgid "Pending Changes"
 msgstr "Candjmints ki s' vont fé"
 
-#: Apper/ApperKCM.cpp:677 Apper/CategoryModel.cpp:51
+#: Apper/ApperKCM.cpp:680 Apper/CategoryModel.cpp:51
 #, kde-format
 msgid "Installed Software"
 msgstr "Programe d' astalé"
 
-#: Apper/ApperKCM.cpp:689
+#: Apper/ApperKCM.cpp:692
 #, kde-format
 msgid "Could not find an application that matched this category"
 msgstr ""
@@ -160,44 +180,51 @@ msgstr ""
 msgid "Add and Remove Software"
 msgstr "Radjouter eyet oister des programes"
 
+#. i18n: ectx: property (text), widget (QToolButton, backTB)
+#: Apper/ApperKCM.ui:47 AppSetup/SetupWizard.cpp:87
+#, kde-format
+msgid "Back"
+msgstr "Èn erî"
+
 #. i18n: ectx: property (clickMessage), widget (QLineEdit, searchKLE)
-#: Apper/ApperKCM.ui:76
+#: Apper/ApperKCM.ui:188
 #, kde-format
 msgid "Search packages"
 msgstr "Trover des pacaedjes"
 
 #. i18n: ectx: property (text), widget (QToolButton, filtersTB)
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: Apper/ApperKCM.ui:125 Apper/BackendDetails.ui:373
+#: Apper/ApperKCM.ui:237 Apper/BackendDetails.ui:373
 #, kde-format
 msgid "Filters"
 msgstr "Passetes"
 
+#. i18n: ectx: property (text), widget (QPushButton, updatePB)
+#: Apper/ApperKCM.ui:299
+#, fuzzy, kde-format
+#| msgid "Updates"
+msgid "Update"
+msgstr "Metaedjes a djoû"
+
 #. i18n: ectx: property (text), widget (QPushButton, checkUpdatesPB)
-#: Apper/ApperKCM.ui:197
+#: Apper/ApperKCM.ui:312
 #, kde-format
 msgid "Check for new Updates"
 msgstr "Cachî après des noveas metaedjes a djoû"
 
 #. i18n: ectx: property (text), widget (QPushButton, generalSettingsPB)
-#: Apper/ApperKCM.ui:231
+#: Apper/ApperKCM.ui:346
 #, kde-format
 msgid "General Settings"
 msgstr "Apontiaedjes djenerås"
 
 #. i18n: ectx: property (text), widget (QPushButton, repoSettingsPB)
-#: Apper/ApperKCM.ui:250
+#: Apper/ApperKCM.ui:365
 #, kde-format
 msgid "Software Origins"
 msgstr "Oridjenes do programe"
 
-#. i18n: ectx: property (text), widget (QToolButton, backTB)
-#: Apper/ApperKCM.ui:312 AppSetup/SetupWizard.cpp:87
-#, kde-format
-msgid "Back"
-msgstr "Èn erî"
-
-#: Apper/BackendDetails.cpp:34
+#: Apper/BackendDetails.cpp:36
 #, kde-format
 msgid "Backend Details"
 msgstr "Totafwait sol bouye di fond"
@@ -215,7 +242,7 @@ msgid "Get Updates"
 msgstr "Aler cweri les metaedjes a djoû"
 
 #. i18n: ectx: property (text), widget (QCheckBox, refreshCacheCB)
-#: Apper/BackendDetails.ui:42 Apper/Settings/Settings.cpp:58
+#: Apper/BackendDetails.ui:42 Apper/Settings/Settings.cpp:60
 #, kde-format
 msgid "Refresh Cache"
 msgstr "Rafrister l' muchete"
@@ -445,22 +472,22 @@ msgstr "Sopoirtés"
 msgid "Only native"
 msgstr "Seulmint askepieye pol sistinme"
 
-#: Apper/BrowseView.cpp:89 Apper/Updater/Updater.cpp:106
+#: Apper/BrowseView.cpp:89 Apper/Updater/Updater.cpp:105
 #, kde-format
 msgid "Show Versions"
 msgstr "Mostrer modêyes"
 
-#: Apper/BrowseView.cpp:96 Apper/Updater/Updater.cpp:120
+#: Apper/BrowseView.cpp:96 Apper/Updater/Updater.cpp:119
 #, kde-format
 msgid "Show Architectures"
 msgstr "Mostrer årtchitecteures"
 
-#: Apper/BrowseView.cpp:103 Apper/Updater/Updater.cpp:127
+#: Apper/BrowseView.cpp:103 Apper/Updater/Updater.cpp:126
 #, kde-format
 msgid "Show Origins"
 msgstr "Mostrer oridjenes"
 
-#: Apper/BrowseView.cpp:110 Apper/Updater/Updater.cpp:134
+#: Apper/BrowseView.cpp:110 Apper/Updater/Updater.cpp:133
 #, kde-format
 msgid "Show Sizes"
 msgstr "Mostrer grandeus"
@@ -650,16 +677,22 @@ msgstr "Èn mostrer k' les programes"
 msgid "Hide packages that are not applications"
 msgstr "Catchî les pacaedjes k' i n' sont nén des programes"
 
+#: Apper/main.cpp:44 Apper/MainUi.cpp:41
+#, kde-format
+msgid "Apper"
+msgstr "Apper"
+
 #: Apper/main.cpp:46
 #, fuzzy, kde-format
 #| msgid "Apper is an Application to Get and Manage Software"
 msgid "Apper is an application to get and manage software"
 msgstr "Apper est on programe po cweri eyet manaedjî ses programes"
 
-#: Apper/main.cpp:48 PkSession/main.cpp:51
-#, kde-format
-msgid "Daniel Nicoletti"
-msgstr "Daniel Nicoletti"
+#: Apper/main.cpp:48
+#, fuzzy, kde-format
+#| msgid "(C) 2008-2011 Daniel Nicoletti"
+msgid "(C) 2008-2018 Daniel Nicoletti"
+msgstr "© 2008-2011 Daniel Nicoletti"
 
 #: Apper/main.cpp:49 PkSession/main.cpp:54
 #, kde-format
@@ -670,6 +703,13 @@ msgstr "Adrien Bustany"
 #, kde-format
 msgid "libpackagekit-qt and other stuff"
 msgstr "libpackagekit-qt eyet d' ôtès afwaires"
+
+#: Apper/main.cpp:50
+#, fuzzy, kde-format
+#| msgctxt "@info:credit"
+#| msgid "Matthias Klumpp"
+msgid "Matthias Klumpp"
+msgstr "Matthias Klumpp"
 
 #: Apper/PackageDetails.cpp:87
 #, kde-format
@@ -739,115 +779,115 @@ msgstr "Dji n' a savou trover d' waitroûlêye."
 msgid "Origin of Packages"
 msgstr "Di wice ki les pacaedjes vinèt"
 
-#: Apper/Settings/Settings.cpp:62
+#: Apper/Settings/Settings.cpp:64
 #, kde-format
 msgid "A repository was changed, it's highly recommended to refresh the cache"
 msgstr ""
 
-#: Apper/Settings/Settings.cpp:92
+#: Apper/Settings/Settings.cpp:94
 #, kde-format
 msgctxt "Inform about distribution upgrades"
 msgid "Never"
 msgstr "Måy"
 
-#: Apper/Settings/Settings.cpp:95
+#: Apper/Settings/Settings.cpp:97
 #, kde-format
 msgctxt "Inform about distribution upgrades"
 msgid "Only stable"
 msgstr "Stocasse seulmint"
 
-#: Apper/Settings/Settings.cpp:100
+#: Apper/Settings/Settings.cpp:102
 #, kde-format
 msgctxt "Inform about distribution upgrades"
 msgid "Stable and development"
 msgstr "Stocasse et diswalpaedje"
 
-#: Apper/Settings/Settings.cpp:104
+#: Apper/Settings/Settings.cpp:106
 #, kde-format
 msgctxt "Hourly refresh the package cache"
 msgid "Hourly"
 msgstr "Totes les eures"
 
-#: Apper/Settings/Settings.cpp:105
+#: Apper/Settings/Settings.cpp:107
 #, kde-format
 msgctxt "Daily refresh the package cache"
 msgid "Daily"
 msgstr "Tos les djoûs"
 
-#: Apper/Settings/Settings.cpp:106
+#: Apper/Settings/Settings.cpp:108
 #, kde-format
 msgctxt "Weekly refresh the package cache"
 msgid "Weekly"
 msgstr "Totes les samwinnes"
 
-#: Apper/Settings/Settings.cpp:107
+#: Apper/Settings/Settings.cpp:109
 #, kde-format
 msgctxt "Monthly refresh the package cache"
 msgid "Monthly"
 msgstr "Tos les moes"
 
-#: Apper/Settings/Settings.cpp:108
+#: Apper/Settings/Settings.cpp:110
 #, kde-format
 msgctxt "Never refresh package cache"
 msgid "Never"
 msgstr "Måy"
 
-#: Apper/Settings/Settings.cpp:110
+#: Apper/Settings/Settings.cpp:112
 #, kde-format
 msgctxt "No updates will be automatically installed"
 msgid "None"
 msgstr "Nouk"
 
-#: Apper/Settings/Settings.cpp:111
+#: Apper/Settings/Settings.cpp:113
 #, kde-format
 msgid "Download only"
 msgstr "Ni fé k' aberweter"
 
-#: Apper/Settings/Settings.cpp:112
+#: Apper/Settings/Settings.cpp:114
 #, kde-format
 msgid "Security only"
 msgstr "Såvrité seulmint"
 
-#: Apper/Settings/Settings.cpp:113
+#: Apper/Settings/Settings.cpp:115
 #, kde-format
 msgid "All updates"
 msgstr "Tos les metaedjes a djoû"
 
 #. i18n: ectx: property (text), widget (QLabel, intervalL)
-#: Apper/Settings/Settings.ui:53
+#: Apper/Settings/Settings.ui:74
 #, kde-format
 msgid "Check for new updates:"
 msgstr "Cachî après des noveas metaedjes a djoû :"
 
 #. i18n: ectx: property (text), widget (QCheckBox, checkUpdatesMobileCB)
 #. i18n: ectx: property (text), widget (QCheckBox, installUpdatesMobileCB)
-#: Apper/Settings/Settings.ui:94 Apper/Settings/Settings.ui:162
+#: Apper/Settings/Settings.ui:115 Apper/Settings/Settings.ui:183
 #, kde-format
 msgid "when on a mobile broadband network connection"
 msgstr "cwand dj' so on raloyaedje al rantoele sins fyi a lådje binde"
 
 #. i18n: ectx: property (text), widget (QCheckBox, checkUpdatesBatteryCB)
 #. i18n: ectx: property (text), widget (QCheckBox, installUpdatesBatteryCB)
-#: Apper/Settings/Settings.ui:101 Apper/Settings/Settings.ui:155
+#: Apper/Settings/Settings.ui:122 Apper/Settings/Settings.ui:176
 #, kde-format
 msgid "when running on battery"
 msgstr "cwand dj' so sol batreye"
 
 #. i18n: ectx: property (text), widget (QLabel, autoInsL)
-#: Apper/Settings/Settings.ui:120
+#: Apper/Settings/Settings.ui:141
 #, kde-format
 msgid "Automatically update:"
 msgstr "Mete a djoû otomaticmint :"
 
 #. i18n: ectx: property (text), widget (QCheckBox, appLauncherCB)
-#: Apper/Settings/Settings.ui:178
+#: Apper/Settings/Settings.ui:199
 #, kde-format
 msgid "Show application launcher after installing new applications"
 msgstr ""
 "Mostrer l' enondeu des programes après aveur astalé des noveas programes"
 
 #. i18n: ectx: property (text), widget (QCheckBox, autoConfirmCB)
-#: Apper/Settings/Settings.ui:185
+#: Apper/Settings/Settings.ui:206
 #, kde-format
 msgid "Show confirmation dialog when installing or updating packages"
 msgstr ""
@@ -855,19 +895,19 @@ msgstr ""
 "pacaedjes"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: Apper/Settings/Settings.ui:192
+#: Apper/Settings/Settings.ui:213
 #, kde-format
 msgid "Check for distribution upgrades:"
 msgstr "Cachî après les metaedjes a livea del distribucion :"
 
 #. i18n: ectx: property (text), widget (QCheckBox, showOriginsCB)
-#: Apper/Settings/Settings.ui:233
+#: Apper/Settings/Settings.ui:270
 #, kde-format
 msgid "&Show origins of debug and development packages"
 msgstr "Mo&strer les oridjenes des pacaedjes di disbugaedje ou d' diswalpaedje"
 
 #. i18n: ectx: property (text), widget (QPushButton, editOriginsPB)
-#: Apper/Settings/Settings.ui:253
+#: Apper/Settings/Settings.ui:290
 #, kde-format
 msgid "Edit Origins"
 msgstr "Candjî oridjenes"
@@ -887,7 +927,7 @@ msgstr "Tins dispoy li dierin rafristaedje del muchete : %1"
 msgid "Date"
 msgstr "Date"
 
-#: Apper/TransactionModel.cpp:44 libapper/PackageModel.cpp:213
+#: Apper/TransactionModel.cpp:44 libapper/PackageModel.cpp:208
 #, kde-format
 msgid "Action"
 msgstr "Accion"
@@ -977,28 +1017,28 @@ msgstr ""
 "Li processus di metaedje a livea del distribucion a fwait berwete avou ene "
 "aroke nén cnoxhowe."
 
-#: Apper/Updater/UpdateDetails.cpp:185
+#: Apper/Updater/UpdateDetails.cpp:183
 #, kde-format
 msgid "This update will add new features and expand functionality."
 msgstr ""
 "Ci metaedje a djoû cial radjoutrè des novelès fonccions eyet stindrè ses "
 "fonccionålités."
 
-#: Apper/Updater/UpdateDetails.cpp:189
+#: Apper/Updater/UpdateDetails.cpp:187
 #, kde-format
 msgid "This update will fix bugs and other non-critical problems."
 msgstr ""
 "Ci metaedje a djoû cial coridjrè des bugs eyet d' ôtes problinmes nén "
 "critikes."
 
-#: Apper/Updater/UpdateDetails.cpp:193
+#: Apper/Updater/UpdateDetails.cpp:191
 #, kde-format
 msgid "This update is important as it may solve critical problems."
 msgstr ""
 "Ci metaedje a djoû cial est impôrtant ca i pôreut rezoude des problinmes "
 "critikes."
 
-#: Apper/Updater/UpdateDetails.cpp:197
+#: Apper/Updater/UpdateDetails.cpp:195
 #, kde-format
 msgid ""
 "This update is needed to fix a security vulnerability with this package."
@@ -1006,23 +1046,23 @@ msgstr ""
 "I fåt ç' metaedje a djoû cial po coridjî ene craeye dins l' såvrité avou ç' "
 "pacaedje la."
 
-#: Apper/Updater/UpdateDetails.cpp:201
+#: Apper/Updater/UpdateDetails.cpp:199
 #, kde-format
 msgid "This update is blocked."
 msgstr "Ci metaedje a djoû cial est ehåyî."
 
-#: Apper/Updater/UpdateDetails.cpp:208
+#: Apper/Updater/UpdateDetails.cpp:206
 #, kde-format
 msgid "This notification was issued on %1 and last updated on %2."
 msgstr ""
 "Ci notifiaedje la a stî eplaidî so %1 eyet metou a djoû pol dierin côp li %2."
 
-#: Apper/Updater/UpdateDetails.cpp:214
+#: Apper/Updater/UpdateDetails.cpp:212
 #, kde-format
 msgid "This notification was issued on %1."
 msgstr "Ci notifiaedje la a stî eplaidî so %1."
 
-#: Apper/Updater/UpdateDetails.cpp:233
+#: Apper/Updater/UpdateDetails.cpp:231
 #, kde-format
 msgid "For more information about this update please visit this website:"
 msgid_plural ""
@@ -1033,7 +1073,7 @@ msgstr[1] ""
 "Po ndè saveur di dpus so ç' metaedje a djoû cial, alez viziter ces waibes "
 "lale :"
 
-#: Apper/Updater/UpdateDetails.cpp:243
+#: Apper/Updater/UpdateDetails.cpp:241
 #, kde-format
 msgid ""
 "For more information about bugs fixed by this update please visit this "
@@ -1048,7 +1088,7 @@ msgstr[1] ""
 "Po ndè saveur di dpus so les bugs rezoudous pa ç' metaedje a djoû cial, alez "
 "viziter ces waibes lale :"
 
-#: Apper/Updater/UpdateDetails.cpp:253
+#: Apper/Updater/UpdateDetails.cpp:251
 #, kde-format
 msgid ""
 "For more information about this security update please visit this website:"
@@ -1061,7 +1101,7 @@ msgstr[1] ""
 "Po ndè saveur di dpus so ç' metaedje a djoû d' såvrité cial, alez viziter "
 "ces waibes lale :"
 
-#: Apper/Updater/UpdateDetails.cpp:263
+#: Apper/Updater/UpdateDetails.cpp:261
 #, kde-format
 msgid ""
 "The computer will have to be restarted after the update for the changes to "
@@ -1070,7 +1110,7 @@ msgstr ""
 "I fårè renonder l' copiutrece après l' metaedje a djoû po les candjmints "
 "esse efectifs."
 
-#: Apper/Updater/UpdateDetails.cpp:267
+#: Apper/Updater/UpdateDetails.cpp:265
 #, kde-format
 msgid ""
 "You will need to log out and back in after the update for the changes to "
@@ -1079,7 +1119,7 @@ msgstr ""
 "Vos vs divoz dislodjî eyet relodjî après l' metaedje a djoû po les "
 "candjmints esse efectifs."
 
-#: Apper/Updater/UpdateDetails.cpp:274
+#: Apper/Updater/UpdateDetails.cpp:272
 #, kde-format
 msgid ""
 "The classification of this update is unstable which means it is not designed "
@@ -1088,7 +1128,7 @@ msgstr ""
 "Li classifiaedje di ç' metaedje a djoû cial est nén stocasse, ça vout dire "
 "ki ça n' est nén fwait po esse eployî pol produccion."
 
-#: Apper/Updater/UpdateDetails.cpp:278
+#: Apper/Updater/UpdateDetails.cpp:276
 #, kde-format
 msgid ""
 "This is a test update, and is not designed for normal use. Please report any "
@@ -1098,7 +1138,7 @@ msgstr ""
 "èn eployaedje normå. Evoyîz on rapoirt po tolminme ké problinme ou "
 "regression k' vos resconterrîz."
 
-#: Apper/Updater/UpdateDetails.cpp:288
+#: Apper/Updater/UpdateDetails.cpp:286
 #, kde-format
 msgid ""
 "The developer logs will be shown as no description is available for this "
@@ -1107,27 +1147,27 @@ msgstr ""
 "Les djournås do diswalpeu seront mostrés s' i gn a nou discrijhaedje po ç' "
 "metaedje a djoû cial :"
 
-#: Apper/Updater/UpdateDetails.cpp:296
+#: Apper/Updater/UpdateDetails.cpp:294
 #, kde-format
 msgid "Updates:"
 msgstr "Metaedjes a djoû :"
 
-#: Apper/Updater/UpdateDetails.cpp:306
+#: Apper/Updater/UpdateDetails.cpp:304
 #, kde-format
 msgid "Obsoletes:"
 msgstr "Obsoletes :"
 
-#: Apper/Updater/UpdateDetails.cpp:316
+#: Apper/Updater/UpdateDetails.cpp:314
 #, kde-format
 msgid "Repository: %1"
 msgstr "Depot : %1"
 
-#: Apper/Updater/UpdateDetails.cpp:338
+#: Apper/Updater/UpdateDetails.cpp:336
 #, kde-format
 msgid "No update description was found."
 msgstr "Nou discrijhaedje trové po l' metaedje a djoû."
 
-#: Apper/Updater/Updater.cpp:113
+#: Apper/Updater/Updater.cpp:112
 #, kde-format
 msgid "Show Current Versions"
 msgstr "Mostrer modêyes do moumint"
@@ -1206,11 +1246,6 @@ msgid_plural "There are %1 new updates"
 msgstr[0] "I gn a on novea metaedje a djoû"
 msgstr[1] "I gn a %1 noveas metaedjes a djoû"
 
-#: apperd/Updater.cpp:287
-#, kde-format
-msgid "Review"
-msgstr "Rilever"
-
 #: apperd/Updater.cpp:289 AppSetup/SetupWizard.cpp:260
 #: libapper/ApplicationsDelegate.cpp:44
 #, kde-format
@@ -1260,7 +1295,7 @@ msgstr "Dji rgrete mins nos n' avans yeu nou pacaedje IPK come paramete."
 msgid "Package not found!"
 msgstr "Pacaedje nén trové !"
 
-#: AppSetup/SetupWizard.cpp:85 libapper/Requirements.cpp:62
+#: AppSetup/SetupWizard.cpp:85 libapper/Requirements.cpp:61
 #, kde-format
 msgid "Continue"
 msgstr "Tcheryî pus lon"
@@ -1402,37 +1437,37 @@ msgstr ""
 "Léjhoz s' i vs plait les impôrtants pondants et djondants shuvants divant d' "
 "tcheryî pus lon :"
 
-#: libapper/PackageModel.cpp:194
+#: libapper/PackageModel.cpp:189
 #, kde-format
 msgid "Name"
 msgstr "No"
 
-#: libapper/PackageModel.cpp:198
+#: libapper/PackageModel.cpp:193
 #, kde-format
 msgid "Version"
 msgstr "Modêye"
 
-#: libapper/PackageModel.cpp:201
+#: libapper/PackageModel.cpp:196
 #, kde-format
 msgid "Installed Version"
 msgstr "Modêye d' astalêye"
 
-#: libapper/PackageModel.cpp:204
+#: libapper/PackageModel.cpp:199
 #, kde-format
 msgid "Arch"
 msgstr "Årtch"
 
-#: libapper/PackageModel.cpp:207
+#: libapper/PackageModel.cpp:202
 #, kde-format
 msgid "Origin"
 msgstr "Oridjene"
 
-#: libapper/PackageModel.cpp:210
+#: libapper/PackageModel.cpp:205
 #, kde-format
 msgid "Size"
 msgstr "Grandeu"
 
-#: libapper/PackageModel.cpp:325
+#: libapper/PackageModel.cpp:320
 #, kde-format
 msgid ""
 "Version: %1\n"
@@ -1441,12 +1476,12 @@ msgstr ""
 "Modêye : %1\n"
 "Årtchitecteure : %2"
 
-#: libapper/PackageModel.cpp:372
+#: libapper/PackageModel.cpp:367
 #, kde-format
 msgid "To be Removed"
 msgstr "A oister"
 
-#: libapper/PackageModel.cpp:374
+#: libapper/PackageModel.cpp:369
 #, kde-format
 msgid "To be Installed"
 msgstr "A-z astaler"
@@ -3727,55 +3762,55 @@ msgstr "Est çki ciste oridjene di pacaedjes la est fiyåve ?"
 msgid "Additional changes"
 msgstr "Ôtes candjmints"
 
-#: libapper/Requirements.cpp:88
+#: libapper/Requirements.cpp:86
 #, kde-format
 msgid "1 package to remove"
 msgid_plural "%1 packages to remove"
 msgstr[0] "On pacaedje a oister"
 msgstr[1] "%1 pacaedjes a oister"
 
-#: libapper/Requirements.cpp:103
+#: libapper/Requirements.cpp:101
 #, kde-format
 msgid "1 package to downgrade"
 msgid_plural "%1 packages to downgrade"
 msgstr[0] "On pacaedje a dismete a djoû"
 msgstr[1] "%1 pacaedjes a dismete a djoû"
 
-#: libapper/Requirements.cpp:118
+#: libapper/Requirements.cpp:116
 #, kde-format
 msgid "1 package to reinstall"
 msgid_plural "%1 packages to reinstall"
 msgstr[0] "On pacaedje a rastaler"
 msgstr[1] "%1 pacaedjes a rastaler"
 
-#: libapper/Requirements.cpp:131
+#: libapper/Requirements.cpp:129
 #, kde-format
 msgid "1 package to install"
 msgid_plural "%1 packages to install"
 msgstr[0] "On pacaedje a-z astaler"
 msgstr[1] "%1 pacaedjes a-z astaler"
 
-#: libapper/Requirements.cpp:144
+#: libapper/Requirements.cpp:142
 #, kde-format
 msgid "1 package to update"
 msgid_plural "%1 packages to update"
 msgstr[0] "On pacaedje a mete a djoû"
 msgstr[1] "%1 pacaedjes a mete a djoû"
 
-#: libapper/Requirements.cpp:157
+#: libapper/Requirements.cpp:155
 #, kde-format
 msgid "1 untrusted package"
 msgid_plural "%1 untrusted packages"
 msgstr[0] "On pacaedjes nén fiyåve"
 msgstr[1] "%1 pacaedjes nén fiyåves"
 
-#: libapper/Requirements.cpp:208
+#: libapper/Requirements.cpp:203
 #, kde-format
 msgctxt "how many bytes are required for download"
 msgid "Need to get %1 of archives"
 msgstr ""
 
-#: libapper/Requirements.cpp:266
+#: libapper/Requirements.cpp:262
 #, kde-format
 msgid ""
 "You are about to install unsigned packages that can compromise your system, "
@@ -3785,18 +3820,18 @@ msgstr ""
 "sistinme ca i n' est nén possibe di verifyî sel programe vént d' on sourdant "
 "fiyåve."
 
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: libapper/Requirements.ui:28
+#, kde-format
+msgid "Additional changes are required to complete the task"
+msgstr "I fårè fé ls ôtes candjmints shuvants po fini l' bouye"
+
 #. i18n: ectx: property (text), widget (QCheckBox, confirmCB)
-#: libapper/Requirements.ui:80
+#: libapper/Requirements.ui:101
 #, kde-format
 msgid "Do not confirm when installing or updating additional packages"
 msgstr ""
 "Èn nén racertiner cwand on-z astale ou met a djoû des ôtes pacaedjes di dpus"
-
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: libapper/Requirements.ui:98
-#, kde-format
-msgid "Additional changes are required to complete the task"
-msgstr "I fårè fé ls ôtes candjmints shuvants po fini l' bouye"
 
 #. i18n: ectx: property (text), widget (QLabel, descriptionL)
 #: PkSession/IntroDialog.ui:65
@@ -3808,6 +3843,11 @@ msgstr "Etikete tecse"
 #, kde-format
 msgid "Apper PackageKit Session helper"
 msgstr "Aidant del session PackageKit d' Apper"
+
+#: PkSession/main.cpp:51
+#, kde-format
+msgid "Daniel Nicoletti"
+msgstr "Daniel Nicoletti"
 
 #: PkSession/main.cpp:52
 #, kde-format
@@ -4433,17 +4473,6 @@ msgstr "Totes les operåcions ont stî fwaites comifåt"
 #~ msgid "KDE interface for managing software"
 #~ msgstr "Eterface di KDE po manaedjî les programes"
 
-#, fuzzy
-#~| msgid "(C) 2008-2011 Daniel Nicoletti"
-#~ msgid "(C) 2008-2013 Daniel Nicoletti"
-#~ msgstr "© 2008-2011 Daniel Nicoletti"
-
-#, fuzzy
-#~| msgctxt "@info:credit"
-#~| msgid "Matthias Klumpp"
-#~ msgid "Matthias Klumpp"
-#~ msgstr "Matthias Klumpp"
-
 #~ msgid "Accept Agreement"
 #~ msgstr "Accepter l' acoird"
 
@@ -4494,9 +4523,6 @@ msgstr "Totes les operåcions ont stî fwaites comifåt"
 
 #~ msgid "Other updates have been held back"
 #~ msgstr "D' ôtes metaedjes a djoû ont stî wårdés"
-
-#~ msgid "Apper"
-#~ msgstr "Apper"
 
 #~ msgid "Application Manager"
 #~ msgstr "Manaedjeu des programes"
@@ -4663,9 +4689,6 @@ msgstr "Totes les operåcions ont stî fwaites comifåt"
 
 #~ msgid "Hide this icon"
 #~ msgstr "Catchî ciste imådjete cial"
-
-#~ msgid "Software Manager Messages"
-#~ msgstr "Messaedjes do Manaedjeu des programes"
 
 #~ msgid "One message from the software manager"
 #~ msgid_plural "%1 messages from the software manager"
