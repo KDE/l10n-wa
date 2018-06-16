@@ -64,7 +64,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-06-15 03:32+0200\n"
+"POT-Creation-Date: 2018-06-16 03:32+0200\n"
 "PO-Revision-Date: 2011-01-17 21:35+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -2586,8 +2586,8 @@ msgstr "Pincea"
 #: krita/krita.action:1313 krita/krita.action:1315
 #, fuzzy, kde-format
 msgctxt "action"
-msgid "Lazy Brush Tool"
-msgstr "A - 2 Pincea dinamike"
+msgid "Colorize Mask Tool"
+msgstr "&Coleur"
 
 #. i18n: context: Action (KritaShape/KisToolSmartPatch), Actions (tool-shortcuts), ActionCollection (Krita)
 #. i18n: context: Action (KritaShape/KisToolSmartPatch), Actions (tool-shortcuts), ActionCollection (Krita)
@@ -7934,6 +7934,8 @@ msgstr "Diszoumer"
 #: plugins/flake/textshape/dialogs/SimpleTableWidget.ui:144
 #: plugins/flake/textshape/dialogs/SimpleTableWidget.ui:176
 #: plugins/paintops/libpaintop/forms/wdgtextbrush.ui:87
+#: plugins/python/exportlayers/uiexportlayers.py:38
+#: plugins/python/tenscripts/uitenscripts.py:61
 #: plugins/tools/karbonplugins/tools/filterEffectTool/FilterEffectEditWidget.ui:57
 #: plugins/tools/karbonplugins/tools/filterEffectTool/FilterEffectEditWidget.ui:67
 #: plugins/tools/karbonplugins/tools/filterEffectTool/FilterEffectEditWidget.ui:74
@@ -8760,8 +8762,8 @@ msgid "Processing"
 msgstr "Pos-traitmint"
 
 #: libs/image/kis_psd_layer_style.cpp:99
-#: libs/ui/KisApplicationArguments.cpp:335 libs/ui/KisMainWindow.cpp:1112
-#: libs/ui/KisMainWindow.cpp:1418 libs/ui/KisMainWindow.cpp:1437
+#: libs/ui/KisApplicationArguments.cpp:335 libs/ui/KisMainWindow.cpp:1113
+#: libs/ui/KisMainWindow.cpp:1419 libs/ui/KisMainWindow.cpp:1438
 #: plugins/impex/libkra/kis_kra_saver.cpp:83
 #, kde-format
 msgid "Unnamed"
@@ -9606,7 +9608,7 @@ msgstr ""
 
 #: libs/pigment/colorspaces/KoAlphaColorSpace.cpp:58
 #: libs/pigment/compositeops/KoCompositeOps.h:148
-#: libs/pigment/KoCompositeOpRegistry.cpp:50
+#: libs/pigment/KoCompositeOpRegistry.cpp:51
 #: plugins/paintops/libpaintop/kis_texture_chooser.cpp:49
 #: plugins/tools/karbonplugins/filtereffects/BlendEffectConfigWidget.cpp:39
 #, fuzzy, kde-format
@@ -9684,8 +9686,8 @@ msgstr "L*a*b* (16-bit etir/canå, nén manaedjî)"
 
 #. i18n: ectx: property (text), widget (QCheckBox, csl_hslL)
 #: libs/pigment/colorspaces/KoLabColorSpace.cpp:43
-#: libs/pigment/compositeops/KoCompositeOps.h:215
-#: libs/pigment/KoCompositeOpRegistry.cpp:126
+#: libs/pigment/compositeops/KoCompositeOps.h:220
+#: libs/pigment/KoCompositeOpRegistry.cpp:127
 #: plugins/color/lcms2engine/colorspaces/lab_f32/LabF32ColorSpace.cpp:38
 #: plugins/color/lcms2engine/colorspaces/lab_u16/LabColorSpace.cpp:33
 #: plugins/color/lcms2engine/colorspaces/lab_u8/LabU8ColorSpace.cpp:33
@@ -9799,48 +9801,48 @@ msgid "Alpha darken"
 msgstr "Alfa noeri"
 
 #: libs/pigment/compositeops/KoCompositeOpBehind.h:39
-#: libs/pigment/KoCompositeOpRegistry.cpp:80
+#: libs/pigment/KoCompositeOpRegistry.cpp:81
 #, kde-format
 msgid "Behind"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOpCopy.h:37
 #: libs/pigment/compositeops/KoCompositeOpCopy2.h:45
-#: libs/pigment/KoCompositeOpRegistry.cpp:102
+#: libs/pigment/KoCompositeOpRegistry.cpp:103
 #: libs/ui/widgets/kis_paintop_presets_save.cpp:84
 #, kde-format
 msgid "Copy"
 msgstr "Copyî"
 
 #: libs/pigment/compositeops/KoCompositeOpDestinationAtop.h:42
-#: libs/pigment/KoCompositeOpRegistry.cpp:92
+#: libs/pigment/KoCompositeOpRegistry.cpp:93
 #, fuzzy, kde-format
 #| msgid "Destination"
 msgid "Destination Atop"
 msgstr "Såme"
 
 #: libs/pigment/compositeops/KoCompositeOpDestinationIn.h:42
-#: libs/pigment/KoCompositeOpRegistry.cpp:93
+#: libs/pigment/KoCompositeOpRegistry.cpp:94
 #, fuzzy, kde-format
 #| msgid "Destination"
 msgid "Destination In"
 msgstr "Såme"
 
 #: libs/pigment/compositeops/KoCompositeOpDissolve.h:61
-#: libs/pigment/KoCompositeOpRegistry.cpp:98
+#: libs/pigment/KoCompositeOpRegistry.cpp:99
 #: plugins/color/lcms2engine/compositeops/RgbCompositeOpDissolve.h:33
 #, fuzzy, kde-format
 msgid "Dissolve"
 msgstr "Disassoçner"
 
 #: libs/pigment/compositeops/KoCompositeOpErase.h:40
-#: libs/pigment/KoCompositeOpRegistry.cpp:83
+#: libs/pigment/KoCompositeOpRegistry.cpp:84
 #, fuzzy, kde-format
 msgid "Erase"
 msgstr "Gome Picsel"
 
 #: libs/pigment/compositeops/KoCompositeOpGreater.h:43
-#: libs/pigment/KoCompositeOpRegistry.cpp:81
+#: libs/pigment/KoCompositeOpRegistry.cpp:82
 #, fuzzy, kde-format
 msgid "Greater"
 msgstr "Ahiver"
@@ -9850,8 +9852,8 @@ msgstr "Ahiver"
 #: libs/pigment/compositeops/KoCompositeOpOver.h:62
 #: libs/pigment/compositeops/KoOptimizedCompositeOpOver128.h:251
 #: libs/pigment/compositeops/KoOptimizedCompositeOpOver32.h:248
-#: libs/pigment/KoCompositeOpRegistry.cpp:79
-#: libs/pigment/KoCompositeOpRegistry.cpp:149
+#: libs/pigment/KoCompositeOpRegistry.cpp:80
+#: libs/pigment/KoCompositeOpRegistry.cpp:155
 #: plugins/extensions/metadataeditor/editors/exif.ui:855
 #: plugins/extensions/metadataeditor/editors/exif.ui:887
 #: plugins/flake/textshape/dialogs/CharacterHighlighting.cpp:286
@@ -9862,81 +9864,81 @@ msgid "Normal"
 msgstr "Normå"
 
 #: libs/pigment/compositeops/KoCompositeOps.h:118
-#: libs/pigment/KoCompositeOpRegistry.cpp:82
+#: libs/pigment/KoCompositeOpRegistry.cpp:83
 #, kde-format
 msgid "Overlay"
 msgstr "Ricovri"
 
 #: libs/pigment/compositeops/KoCompositeOps.h:119
-#: libs/pigment/KoCompositeOpRegistry.cpp:87
+#: libs/pigment/KoCompositeOpRegistry.cpp:88
 #, kde-format
 msgid "Grain Merge"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:120
-#: libs/pigment/KoCompositeOpRegistry.cpp:88
+#: libs/pigment/KoCompositeOpRegistry.cpp:89
 #, kde-format
 msgid "Grain Extract"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:121
-#: libs/pigment/KoCompositeOpRegistry.cpp:85
+#: libs/pigment/KoCompositeOpRegistry.cpp:86
 #, fuzzy, kde-format
 msgid "Hard Mix"
 msgstr "Foite loumire"
 
 #: libs/pigment/compositeops/KoCompositeOps.h:122
-#: libs/pigment/KoCompositeOpRegistry.cpp:86
+#: libs/pigment/KoCompositeOpRegistry.cpp:87
 #, fuzzy, kde-format
 msgid "Hard Mix (Photoshop)"
 msgstr "Doûce loumire"
 
 #: libs/pigment/compositeops/KoCompositeOps.h:123
-#: libs/pigment/KoCompositeOpRegistry.cpp:91
+#: libs/pigment/KoCompositeOpRegistry.cpp:92
 #, kde-format
 msgid "Geometric Mean"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:124
-#: libs/pigment/KoCompositeOpRegistry.cpp:89
+#: libs/pigment/KoCompositeOpRegistry.cpp:90
 #, fuzzy, kde-format
 msgid "Parallel"
 msgstr "Variåve"
 
 #: libs/pigment/compositeops/KoCompositeOps.h:125
-#: libs/pigment/KoCompositeOpRegistry.cpp:90
+#: libs/pigment/KoCompositeOpRegistry.cpp:91
 #, kde-format
 msgid "Allanon"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:126
-#: libs/pigment/KoCompositeOpRegistry.cpp:94
+#: libs/pigment/KoCompositeOpRegistry.cpp:95
 #, fuzzy, kde-format
 msgid "Hard Overlay"
 msgstr "Ricovraedje al môde pondeure"
 
 #: libs/pigment/compositeops/KoCompositeOps.h:128
-#: libs/pigment/KoCompositeOpRegistry.cpp:64
+#: libs/pigment/KoCompositeOpRegistry.cpp:65
 #: plugins/tools/karbonplugins/filtereffects/BlendEffectConfigWidget.cpp:40
 #, kde-format
 msgid "Screen"
 msgstr "Waitroûle"
 
 #: libs/pigment/compositeops/KoCompositeOps.h:129
-#: libs/pigment/KoCompositeOpRegistry.cpp:60
+#: libs/pigment/KoCompositeOpRegistry.cpp:61
 #, fuzzy, kde-format
 msgid "Color Dodge"
 msgstr "Tchoezixheu di coleur"
 
 #: libs/pigment/compositeops/KoCompositeOps.h:130
-#: libs/pigment/KoCompositeOpRegistry.cpp:61
+#: libs/pigment/KoCompositeOpRegistry.cpp:62
 #, fuzzy, kde-format
 msgid "Linear Dodge"
 msgstr "Boirdeure del roye"
 
 #: libs/pigment/compositeops/KoCompositeOps.h:131
 #: libs/pigment/KoCompositeOp.cpp:36 libs/pigment/KoCompositeOpRegistry.cpp:39
-#: libs/pigment/KoCompositeOpRegistry.cpp:62
+#: libs/pigment/KoCompositeOpRegistry.cpp:63
 #: plugins/color/lcms2engine/compositeops/RgbCompositeOpLighten.h:33
 #: plugins/tools/karbonplugins/filtereffects/BlendEffectConfigWidget.cpp:42
 #, kde-format
@@ -9944,43 +9946,43 @@ msgid "Lighten"
 msgstr "Raclairi"
 
 #: libs/pigment/compositeops/KoCompositeOps.h:132
-#: libs/pigment/KoCompositeOpRegistry.cpp:67
+#: libs/pigment/KoCompositeOpRegistry.cpp:68
 #, fuzzy, kde-format
 msgid "Hard Light"
 msgstr "Foite loumire"
 
 #: libs/pigment/compositeops/KoCompositeOps.h:133
-#: libs/pigment/KoCompositeOpRegistry.cpp:69
+#: libs/pigment/KoCompositeOpRegistry.cpp:70
 #, fuzzy, kde-format
 msgid "Soft Light (SVG)"
 msgstr "Doûce loumire"
 
 #: libs/pigment/compositeops/KoCompositeOps.h:134
-#: libs/pigment/KoCompositeOpRegistry.cpp:68
+#: libs/pigment/KoCompositeOpRegistry.cpp:69
 #, fuzzy, kde-format
 msgid "Soft Light (Photoshop)"
 msgstr "Doûce loumire"
 
 #: libs/pigment/compositeops/KoCompositeOps.h:135
-#: libs/pigment/KoCompositeOpRegistry.cpp:70
+#: libs/pigment/KoCompositeOpRegistry.cpp:71
 #, fuzzy, kde-format
 msgid "Gamma Light"
 msgstr "Clair"
 
 #: libs/pigment/compositeops/KoCompositeOps.h:136
-#: libs/pigment/KoCompositeOpRegistry.cpp:66
+#: libs/pigment/KoCompositeOpRegistry.cpp:67
 #, fuzzy, kde-format
 msgid "Vivid Light"
 msgstr "Clair"
 
 #: libs/pigment/compositeops/KoCompositeOps.h:137
-#: libs/pigment/KoCompositeOpRegistry.cpp:65
+#: libs/pigment/KoCompositeOpRegistry.cpp:66
 #, fuzzy, kde-format
 msgid "Pin Light"
 msgstr "Clair"
 
 #: libs/pigment/compositeops/KoCompositeOps.h:138
-#: libs/pigment/KoCompositeOpRegistry.cpp:63
+#: libs/pigment/KoCompositeOpRegistry.cpp:64
 #, fuzzy, kde-format
 msgid "Linear Light"
 msgstr "Pwès del roye"
@@ -9991,14 +9993,14 @@ msgid "Color Burn"
 msgstr "Coleur"
 
 #: libs/pigment/compositeops/KoCompositeOps.h:141
-#: libs/pigment/KoCompositeOpRegistry.cpp:55
+#: libs/pigment/KoCompositeOpRegistry.cpp:56
 #, fuzzy, kde-format
 msgid "Linear Burn"
 msgstr "Djocaedje di roye"
 
 #: libs/pigment/compositeops/KoCompositeOps.h:142
 #: libs/pigment/KoCompositeOp.cpp:37 libs/pigment/KoCompositeOpRegistry.cpp:38
-#: libs/pigment/KoCompositeOpRegistry.cpp:56
+#: libs/pigment/KoCompositeOpRegistry.cpp:57
 #: plugins/color/lcms2engine/compositeops/RgbCompositeOpDarken.h:33
 #: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:76
 #: plugins/tools/karbonplugins/filtereffects/BlendEffectConfigWidget.cpp:41
@@ -10007,19 +10009,19 @@ msgid "Darken"
 msgstr "Noeri"
 
 #: libs/pigment/compositeops/KoCompositeOps.h:143
-#: libs/pigment/KoCompositeOpRegistry.cpp:57
+#: libs/pigment/KoCompositeOpRegistry.cpp:58
 #, kde-format
 msgid "Gamma Dark"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:145
-#: libs/pigment/KoCompositeOpRegistry.cpp:48
+#: libs/pigment/KoCompositeOpRegistry.cpp:49
 #, fuzzy, kde-format
 msgid "Addition"
 msgstr "Eplaeçmint"
 
 #: libs/pigment/compositeops/KoCompositeOps.h:146
-#: libs/pigment/KoCompositeOpRegistry.cpp:49
+#: libs/pigment/KoCompositeOpRegistry.cpp:50
 #: plugins/paintops/libpaintop/kis_texture_chooser.cpp:49
 #, kde-format
 msgid "Subtract"
@@ -10031,31 +10033,31 @@ msgid "Inversed-Subtract"
 msgstr "Sostraire å rvier"
 
 #: libs/pigment/compositeops/KoCompositeOps.h:149
-#: libs/pigment/KoCompositeOpRegistry.cpp:51
+#: libs/pigment/KoCompositeOpRegistry.cpp:52
 #, kde-format
 msgid "Divide"
 msgstr "Pårti"
 
 #: libs/pigment/compositeops/KoCompositeOps.h:151
-#: libs/pigment/KoCompositeOpRegistry.cpp:77
+#: libs/pigment/KoCompositeOpRegistry.cpp:78
 #, kde-format
 msgid "Arcus Tangent"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:152
-#: libs/pigment/KoCompositeOpRegistry.cpp:73
+#: libs/pigment/KoCompositeOpRegistry.cpp:74
 #, fuzzy, kde-format
 msgid "Difference"
 msgstr "Referince"
 
 #: libs/pigment/compositeops/KoCompositeOps.h:153
-#: libs/pigment/KoCompositeOpRegistry.cpp:76
+#: libs/pigment/KoCompositeOpRegistry.cpp:77
 #, kde-format
 msgid "Exclusion"
 msgstr ""
 
 #: libs/pigment/compositeops/KoCompositeOps.h:154
-#: libs/pigment/KoCompositeOpRegistry.cpp:74
+#: libs/pigment/KoCompositeOpRegistry.cpp:75
 #, kde-format
 msgid "Equivalence"
 msgstr ""
@@ -10065,31 +10067,58 @@ msgstr ""
 msgid "Additive-Subtractive"
 msgstr "Rascourti"
 
-#: libs/pigment/compositeops/KoCompositeOps.h:184
-#: libs/pigment/KoCompositeOpRegistry.cpp:99
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbGradientRepeat)
+#: libs/pigment/compositeops/KoCompositeOps.h:157
+#: libs/pigment/KoCompositeOpRegistry.cpp:142
+#: libs/ui/widgets/KoFillConfigWidget.ui:268
+#: libs/widgets/KoGradientEditWidget.cpp:179
+#, kde-format
+msgid "Reflect"
+msgstr "Riflet"
+
+#: libs/pigment/compositeops/KoCompositeOps.h:158
+#: libs/pigment/KoCompositeOpRegistry.cpp:143
+#, kde-format
+msgid "Glow"
+msgstr ""
+
+#: libs/pigment/compositeops/KoCompositeOps.h:159
+#: libs/pigment/KoCompositeOpRegistry.cpp:144
+#, kde-format
+msgid "Freeze"
+msgstr ""
+
+#: libs/pigment/compositeops/KoCompositeOps.h:160
+#: libs/pigment/KoCompositeOpRegistry.cpp:145
+#, kde-format
+msgid "Heat"
+msgstr ""
+
+#: libs/pigment/compositeops/KoCompositeOps.h:189
+#: libs/pigment/KoCompositeOpRegistry.cpp:100
 #, fuzzy, kde-format
 msgid "Copy Red"
 msgstr "Copyî pådje"
 
-#: libs/pigment/compositeops/KoCompositeOps.h:185
-#: libs/pigment/KoCompositeOpRegistry.cpp:100
+#: libs/pigment/compositeops/KoCompositeOps.h:190
+#: libs/pigment/KoCompositeOpRegistry.cpp:101
 #, fuzzy, kde-format
 msgid "Copy Green"
 msgstr "Vert"
 
-#: libs/pigment/compositeops/KoCompositeOps.h:186
-#: libs/pigment/KoCompositeOpRegistry.cpp:101
+#: libs/pigment/compositeops/KoCompositeOps.h:191
+#: libs/pigment/KoCompositeOpRegistry.cpp:102
 #, fuzzy, kde-format
 msgid "Copy Blue"
 msgstr "Copyî pådje"
 
-#: libs/pigment/compositeops/KoCompositeOps.h:187
-#: libs/pigment/KoCompositeOpRegistry.cpp:103
+#: libs/pigment/compositeops/KoCompositeOps.h:192
+#: libs/pigment/KoCompositeOpRegistry.cpp:104
 #, kde-format
 msgid "Tangent Normalmap"
 msgstr ""
 
-#: libs/pigment/compositeops/KoCompositeOps.h:188
+#: libs/pigment/compositeops/KoCompositeOps.h:193
 #, fuzzy, kde-format
 msgid "Combine Normal Maps"
 msgstr "Combiner tchmins"
@@ -10099,8 +10128,8 @@ msgstr "Combiner tchmins"
 #. i18n: ectx: property (text), widget (KColorButton, colorFillSelector)
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbFillType)
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: libs/pigment/compositeops/KoCompositeOps.h:190
-#: libs/pigment/KoCompositeOp.cpp:31 libs/pigment/KoCompositeOpRegistry.cpp:105
+#: libs/pigment/compositeops/KoCompositeOps.h:195
+#: libs/pigment/KoCompositeOp.cpp:31 libs/pigment/KoCompositeOpRegistry.cpp:106
 #: libs/ui/dialogs/kis_dlg_preferences.cc:1173 libs/ui/forms/wdgnewimage.ui:66
 #: libs/ui/forms/wdgstrokeselectionproperties.ui:150
 #: libs/ui/forms/wdgstrokeselectionproperties.ui:188
@@ -10118,8 +10147,8 @@ msgstr "Coleur"
 #. i18n: ectx: property (text), widget (QCheckBox, csl_hslH)
 #. i18n: ectx: property (text), widget (QCheckBox, csl_hsiH)
 #. i18n: ectx: property (text), widget (QCheckBox, csl_hsyH)
-#: libs/pigment/compositeops/KoCompositeOps.h:191
-#: libs/pigment/KoCompositeOpRegistry.cpp:106
+#: libs/pigment/compositeops/KoCompositeOps.h:196
+#: libs/pigment/KoCompositeOpRegistry.cpp:107
 #: plugins/color/lcms2engine/compositeops/RgbCompositeOpHue.h:37
 #: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1248
 #: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1278
@@ -10145,8 +10174,8 @@ msgstr "Tinte"
 #. i18n: ectx: property (text), widget (QCheckBox, csl_hslS)
 #. i18n: ectx: property (text), widget (QCheckBox, csl_hsiS)
 #. i18n: ectx: property (text), widget (QCheckBox, csl_hsyS)
-#: libs/pigment/compositeops/KoCompositeOps.h:192
-#: libs/pigment/KoCompositeOpRegistry.cpp:107
+#: libs/pigment/compositeops/KoCompositeOps.h:197
+#: libs/pigment/KoCompositeOpRegistry.cpp:108
 #: libs/ui/forms/wdgapplyprofile.ui:116 libs/ui/forms/wdgcolorsettings.ui:204
 #: libs/ui/forms/wdgcolorsettings.ui:289
 #: libs/ui/forms/wdgimageproperties.ui:251
@@ -10170,173 +10199,173 @@ msgstr "Tinte"
 msgid "Saturation"
 msgstr "Saturaedje"
 
-#: libs/pigment/compositeops/KoCompositeOps.h:193
-#: libs/pigment/KoCompositeOpRegistry.cpp:110
+#: libs/pigment/compositeops/KoCompositeOps.h:198
+#: libs/pigment/KoCompositeOpRegistry.cpp:111
 #, fuzzy, kde-format
 msgid "Increase Saturation"
 msgstr "Saturaedje"
 
-#: libs/pigment/compositeops/KoCompositeOps.h:194
-#: libs/pigment/KoCompositeOpRegistry.cpp:109
+#: libs/pigment/compositeops/KoCompositeOps.h:199
+#: libs/pigment/KoCompositeOpRegistry.cpp:110
 #, fuzzy, kde-format
 msgid "Decrease Saturation"
 msgstr "Saturaedje"
 
-#: libs/pigment/compositeops/KoCompositeOps.h:195
-#: libs/pigment/KoCompositeOpRegistry.cpp:108
+#: libs/pigment/compositeops/KoCompositeOps.h:200
+#: libs/pigment/KoCompositeOpRegistry.cpp:109
 #, kde-format
 msgid "Luminosity"
 msgstr ""
 
-#: libs/pigment/compositeops/KoCompositeOps.h:196
-#: libs/pigment/KoCompositeOpRegistry.cpp:112
+#: libs/pigment/compositeops/KoCompositeOps.h:201
+#: libs/pigment/KoCompositeOpRegistry.cpp:113
 #, fuzzy, kde-format
 msgid "Increase Luminosity"
 msgstr "Ragrandi l' fonte"
 
-#: libs/pigment/compositeops/KoCompositeOps.h:197
-#: libs/pigment/KoCompositeOpRegistry.cpp:111
+#: libs/pigment/compositeops/KoCompositeOps.h:202
+#: libs/pigment/KoCompositeOpRegistry.cpp:112
 #, fuzzy, kde-format
 msgid "Decrease Luminosity"
 msgstr "Raptiti l' fonte"
 
-#: libs/pigment/compositeops/KoCompositeOps.h:198
-#: libs/pigment/KoCompositeOpRegistry.cpp:58
+#: libs/pigment/compositeops/KoCompositeOps.h:203
+#: libs/pigment/KoCompositeOpRegistry.cpp:59
 #, fuzzy, kde-format
 msgid "Darker Color"
 msgstr "Coleur do fond"
 
-#: libs/pigment/compositeops/KoCompositeOps.h:199
-#: libs/pigment/KoCompositeOpRegistry.cpp:71
+#: libs/pigment/compositeops/KoCompositeOps.h:204
+#: libs/pigment/KoCompositeOpRegistry.cpp:72
 #, fuzzy, kde-format
 msgid "Lighter Color"
 msgstr "Coleur del roye"
 
-#: libs/pigment/compositeops/KoCompositeOps.h:201
-#: libs/pigment/KoCompositeOpRegistry.cpp:114
+#: libs/pigment/compositeops/KoCompositeOps.h:206
+#: libs/pigment/KoCompositeOpRegistry.cpp:115
 #, fuzzy, kde-format
 msgid "Color HSI"
 msgstr "Coleur"
 
-#: libs/pigment/compositeops/KoCompositeOps.h:202
-#: libs/pigment/KoCompositeOpRegistry.cpp:115
+#: libs/pigment/compositeops/KoCompositeOps.h:207
+#: libs/pigment/KoCompositeOpRegistry.cpp:116
 #, fuzzy, kde-format
 msgid "Hue HSI"
 msgstr "Tinte"
 
-#: libs/pigment/compositeops/KoCompositeOps.h:203
-#: libs/pigment/KoCompositeOpRegistry.cpp:116
+#: libs/pigment/compositeops/KoCompositeOps.h:208
+#: libs/pigment/KoCompositeOpRegistry.cpp:117
 #, fuzzy, kde-format
 msgid "Saturation HSI"
 msgstr "Saturaedje"
 
-#: libs/pigment/compositeops/KoCompositeOps.h:204
-#: libs/pigment/KoCompositeOpRegistry.cpp:119
+#: libs/pigment/compositeops/KoCompositeOps.h:209
+#: libs/pigment/KoCompositeOpRegistry.cpp:120
 #, fuzzy, kde-format
 msgid "Increase Saturation HSI"
 msgstr "Saturaedje"
 
-#: libs/pigment/compositeops/KoCompositeOps.h:205
-#: libs/pigment/KoCompositeOpRegistry.cpp:118
+#: libs/pigment/compositeops/KoCompositeOps.h:210
+#: libs/pigment/KoCompositeOpRegistry.cpp:119
 #, fuzzy, kde-format
 msgid "Decrease Saturation HSI"
 msgstr "Saturaedje"
 
 #. i18n: ectx: property (text), widget (QCheckBox, csl_hsiI)
-#: libs/pigment/compositeops/KoCompositeOps.h:206
-#: libs/pigment/KoCompositeOpRegistry.cpp:117
+#: libs/pigment/compositeops/KoCompositeOps.h:211
+#: libs/pigment/KoCompositeOpRegistry.cpp:118
 #: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1322
 #: plugins/dockers/colorslider/kis_color_slider_input.cpp:75
 #, fuzzy, kde-format
 msgid "Intensity"
 msgstr "Dinsité"
 
-#: libs/pigment/compositeops/KoCompositeOps.h:207
-#: libs/pigment/KoCompositeOpRegistry.cpp:121
+#: libs/pigment/compositeops/KoCompositeOps.h:212
+#: libs/pigment/KoCompositeOpRegistry.cpp:122
 #, fuzzy, kde-format
 msgid "Increase Intensity"
 msgstr "Ritrait pus grand"
 
-#: libs/pigment/compositeops/KoCompositeOps.h:208
-#: libs/pigment/KoCompositeOpRegistry.cpp:120
+#: libs/pigment/compositeops/KoCompositeOps.h:213
+#: libs/pigment/KoCompositeOpRegistry.cpp:121
 #, fuzzy, kde-format
 msgid "Decrease Intensity"
 msgstr "Ritrait pus ptit"
 
-#: libs/pigment/compositeops/KoCompositeOps.h:210
-#: libs/pigment/KoCompositeOpRegistry.cpp:123
+#: libs/pigment/compositeops/KoCompositeOps.h:215
+#: libs/pigment/KoCompositeOpRegistry.cpp:124
 #, fuzzy, kde-format
 msgid "Color HSL"
 msgstr "Coleur"
 
-#: libs/pigment/compositeops/KoCompositeOps.h:211
-#: libs/pigment/KoCompositeOpRegistry.cpp:124
+#: libs/pigment/compositeops/KoCompositeOps.h:216
+#: libs/pigment/KoCompositeOpRegistry.cpp:125
 #, fuzzy, kde-format
 msgid "Hue HSL"
 msgstr "Tinte"
 
-#: libs/pigment/compositeops/KoCompositeOps.h:212
-#: libs/pigment/KoCompositeOpRegistry.cpp:125
+#: libs/pigment/compositeops/KoCompositeOps.h:217
+#: libs/pigment/KoCompositeOpRegistry.cpp:126
 #, fuzzy, kde-format
 msgid "Saturation HSL"
 msgstr "Saturaedje"
 
-#: libs/pigment/compositeops/KoCompositeOps.h:213
-#: libs/pigment/KoCompositeOpRegistry.cpp:128
+#: libs/pigment/compositeops/KoCompositeOps.h:218
+#: libs/pigment/KoCompositeOpRegistry.cpp:129
 #, fuzzy, kde-format
 msgid "Increase Saturation HSL"
 msgstr "Saturaedje"
 
-#: libs/pigment/compositeops/KoCompositeOps.h:214
-#: libs/pigment/KoCompositeOpRegistry.cpp:127
+#: libs/pigment/compositeops/KoCompositeOps.h:219
+#: libs/pigment/KoCompositeOpRegistry.cpp:128
 #, fuzzy, kde-format
 msgid "Decrease Saturation HSL"
 msgstr "Saturaedje"
 
-#: libs/pigment/compositeops/KoCompositeOps.h:216
-#: libs/pigment/KoCompositeOpRegistry.cpp:130
+#: libs/pigment/compositeops/KoCompositeOps.h:221
+#: libs/pigment/KoCompositeOpRegistry.cpp:131
 #, fuzzy, kde-format
 msgid "Increase Lightness"
 msgstr "Ritrait pus grand"
 
-#: libs/pigment/compositeops/KoCompositeOps.h:217
-#: libs/pigment/KoCompositeOpRegistry.cpp:129
+#: libs/pigment/compositeops/KoCompositeOps.h:222
+#: libs/pigment/KoCompositeOpRegistry.cpp:130
 #, fuzzy, kde-format
 msgid "Decrease Lightness"
 msgstr "Ritrait pus ptit"
 
-#: libs/pigment/compositeops/KoCompositeOps.h:219
-#: libs/pigment/KoCompositeOpRegistry.cpp:132
+#: libs/pigment/compositeops/KoCompositeOps.h:224
+#: libs/pigment/KoCompositeOpRegistry.cpp:133
 #, fuzzy, kde-format
 msgid "Color HSV"
 msgstr "Coleur"
 
-#: libs/pigment/compositeops/KoCompositeOps.h:220
-#: libs/pigment/KoCompositeOpRegistry.cpp:133
+#: libs/pigment/compositeops/KoCompositeOps.h:225
+#: libs/pigment/KoCompositeOpRegistry.cpp:134
 #, fuzzy, kde-format
 msgid "Hue HSV"
 msgstr "Tinte"
 
-#: libs/pigment/compositeops/KoCompositeOps.h:221
-#: libs/pigment/KoCompositeOpRegistry.cpp:134
+#: libs/pigment/compositeops/KoCompositeOps.h:226
+#: libs/pigment/KoCompositeOpRegistry.cpp:135
 #, fuzzy, kde-format
 msgid "Saturation HSV"
 msgstr "Saturaedje"
 
-#: libs/pigment/compositeops/KoCompositeOps.h:222
-#: libs/pigment/KoCompositeOpRegistry.cpp:137
+#: libs/pigment/compositeops/KoCompositeOps.h:227
+#: libs/pigment/KoCompositeOpRegistry.cpp:138
 #, fuzzy, kde-format
 msgid "Increase Saturation HSV"
 msgstr "Saturaedje"
 
-#: libs/pigment/compositeops/KoCompositeOps.h:223
-#: libs/pigment/KoCompositeOpRegistry.cpp:136
+#: libs/pigment/compositeops/KoCompositeOps.h:228
+#: libs/pigment/KoCompositeOpRegistry.cpp:137
 #, fuzzy, kde-format
 msgid "Decrease Saturation HSV"
 msgstr "Saturaedje"
 
-#: libs/pigment/compositeops/KoCompositeOps.h:224
-#: libs/pigment/KoCompositeOpRegistry.cpp:135
+#: libs/pigment/compositeops/KoCompositeOps.h:229
+#: libs/pigment/KoCompositeOpRegistry.cpp:136
 #: plugins/color/lcms2engine/compositeops/RgbCompositeOpValue.h:37
 #: plugins/dockers/colorslider/kis_color_slider_input.cpp:69
 #: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:69
@@ -10347,14 +10376,14 @@ msgctxt "HSV Value"
 msgid "Value"
 msgstr "Valixhance"
 
-#: libs/pigment/compositeops/KoCompositeOps.h:225
-#: libs/pigment/KoCompositeOpRegistry.cpp:139
+#: libs/pigment/compositeops/KoCompositeOps.h:230
+#: libs/pigment/KoCompositeOpRegistry.cpp:140
 #, fuzzy, kde-format
 msgid "Increase Value"
 msgstr "Ritrait pus grand"
 
-#: libs/pigment/compositeops/KoCompositeOps.h:226
-#: libs/pigment/KoCompositeOpRegistry.cpp:138
+#: libs/pigment/compositeops/KoCompositeOps.h:231
+#: libs/pigment/KoCompositeOpRegistry.cpp:139
 #, fuzzy, kde-format
 msgid "Decrease Value"
 msgstr "Ritrait pus ptit"
@@ -10526,34 +10555,40 @@ msgstr "Maxheu"
 msgid "Misc"
 msgstr "Totes sôres"
 
-#: libs/pigment/KoCompositeOpRegistry.cpp:52
+#: libs/pigment/KoCompositeOp.cpp:44 libs/pigment/KoCompositeOpRegistry.cpp:47
+#, fuzzy, kde-format
+#| msgid "Gujarati"
+msgid "Quadratic"
+msgstr "Goudjarati"
+
+#: libs/pigment/KoCompositeOpRegistry.cpp:53
 #, fuzzy, kde-format
 msgid "Inverse Subtract"
 msgstr "Sostraire å rvier"
 
-#: libs/pigment/KoCompositeOpRegistry.cpp:54
+#: libs/pigment/KoCompositeOpRegistry.cpp:55
 #: plugins/filters/dodgeburn/DodgeBurnPlugin.cpp:31
 #, fuzzy, kde-format
 msgid "Burn"
 msgstr "Flou"
 
-#: libs/pigment/KoCompositeOpRegistry.cpp:75
+#: libs/pigment/KoCompositeOpRegistry.cpp:76
 #, fuzzy, kde-format
 msgid "Additive Subtractive"
 msgstr "Rascourti"
 
-#: libs/pigment/KoCompositeOpRegistry.cpp:84
+#: libs/pigment/KoCompositeOpRegistry.cpp:85
 #, fuzzy, kde-format
 msgid "Alpha Darken"
 msgstr "Alfa noeri"
 
-#: libs/pigment/KoCompositeOpRegistry.cpp:96
+#: libs/pigment/KoCompositeOpRegistry.cpp:97
 #: plugins/color/lcms2engine/compositeops/RgbCompositeOpBumpmap.h:33
 #, kde-format
 msgid "Bumpmap"
 msgstr "Mape e relief"
 
-#: libs/pigment/KoCompositeOpRegistry.cpp:97
+#: libs/pigment/KoCompositeOpRegistry.cpp:98
 #, fuzzy, kde-format
 msgid "Combine Normal Map"
 msgstr "Combiner tchmins"
@@ -11039,7 +11074,7 @@ msgid "Numerical"
 msgstr "D' astampé"
 
 #: libs/ui/dialogs/kis_dlg_import_image_sequence.cpp:125
-#: libs/ui/KisMainWindow.cpp:897
+#: libs/ui/KisMainWindow.cpp:898
 #, fuzzy, kde-format
 msgid "Import Images"
 msgstr "Abaguer imådje"
@@ -11091,7 +11126,7 @@ msgctxt "@title:window"
 msgid "Enter new style name"
 msgstr ""
 
-#: libs/ui/dialogs/kis_dlg_layer_style.cpp:251 libs/ui/KisMainWindow.cpp:2152
+#: libs/ui/dialogs/kis_dlg_layer_style.cpp:251 libs/ui/KisMainWindow.cpp:2153
 #, fuzzy, kde-format
 msgctxt "@label:textbox"
 msgid "Name:"
@@ -11297,16 +11332,16 @@ msgstr "fond"
 #: libs/ui/KisApplication.cpp:833 libs/ui/KisDocument.cpp:620
 #: libs/ui/KisDocument.cpp:1086 libs/ui/KisDocument.cpp:1168
 #: libs/ui/KisDocument.cpp:1209 libs/ui/KisDocument.cpp:1217
-#: libs/ui/KisMainWindow.cpp:818 libs/ui/KisMainWindow.cpp:920
-#: libs/ui/KisMainWindow.cpp:933 libs/ui/KisMainWindow.cpp:993
-#: libs/ui/KisMainWindow.cpp:1793 libs/ui/KisMainWindow.cpp:1823
-#: libs/ui/KisMainWindow.cpp:1898 libs/ui/KisMainWindow.cpp:1910
+#: libs/ui/KisMainWindow.cpp:819 libs/ui/KisMainWindow.cpp:921
+#: libs/ui/KisMainWindow.cpp:934 libs/ui/KisMainWindow.cpp:994
+#: libs/ui/KisMainWindow.cpp:1794 libs/ui/KisMainWindow.cpp:1824
+#: libs/ui/KisMainWindow.cpp:1899 libs/ui/KisMainWindow.cpp:1911
 #: libs/ui/KisPart.cpp:489 libs/ui/KisPart.cpp:492
 #: libs/ui/KisRemoteFileFetcher.cpp:56 libs/ui/KisTemplateCreateDia.cpp:298
 #: libs/ui/KisTemplateCreateDia.cpp:404 libs/ui/KisView.cpp:721
 #: libs/ui/opengl/kis_opengl_canvas2.cpp:342
 #: libs/ui/opengl/kis_opengl_image_textures.cpp:560
-#: libs/ui/widgets/kis_custom_image_widget.cc:275
+#: libs/ui/widgets/kis_custom_image_widget.cc:276
 #: plugins/assistants/Assistants/kis_assistant_tool.cc:816
 #: plugins/assistants/Assistants/kis_assistant_tool.cc:819
 #: plugins/extensions/animationrenderer/AnimationRenderer.cpp:159
@@ -11785,6 +11820,7 @@ msgstr "Finté Y:"
 #: libs/ui/forms/wdg_resolution.ui:106 libs/ui/forms/wdgimageproperties.ui:90
 #: libs/ui/forms/wdgnewimage.ui:223
 #: plugins/extensions/imagesize/wdg_imagesize.ui:240
+#: plugins/python/exportlayers/uiexportlayers.py:87
 #, kde-format
 msgid "Resolution:"
 msgstr "Finté:"
@@ -13612,7 +13648,7 @@ msgstr "Pincea Sumi-e"
 #. i18n: ectx: property (text), widget (QPushButton, savePresetButton)
 #: libs/ui/forms/wdgpaintopsettings.ui:184
 #: libs/ui/forms/wdgsavebrushpreset.ui:215 libs/ui/KisColorsetChooser.cpp:106
-#: libs/ui/KisMainWindow.cpp:782 libs/ui/widgets/kis_workspace_chooser.cpp:121
+#: libs/ui/KisMainWindow.cpp:783 libs/ui/widgets/kis_workspace_chooser.cpp:121
 #: plugins/extensions/resourcemanager/dlg_create_bundle.cpp:61
 #, fuzzy, kde-format
 msgid "Save"
@@ -14200,6 +14236,7 @@ msgstr "Radjouter (rascourti R)"
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: libs/ui/forms/wdgselectionoptions.ui:107
 #: plugins/extensions/metadataeditor/editors/exif.ui:555
+#: plugins/python/highpass/highpass.py:48
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1974
 #, kde-format
 msgid "Mode:"
@@ -15925,37 +15962,7 @@ msgid ""
 "html>"
 msgstr ""
 
-#: libs/ui/kis_statusbar.cc:249
-#, fuzzy, kde-format
-msgctxt "very shortened 'byte' suffix (for statusbar)"
-msgid "b"
-msgstr "Cb"
-
-#: libs/ui/kis_statusbar.cc:254
-#, fuzzy, kde-format
-msgctxt "very shortened KiB suffix (for statusbar)"
-msgid "K"
-msgstr "&I va"
-
-#: libs/ui/kis_statusbar.cc:259
-#, fuzzy, kde-format
-msgctxt "very shortened MiB suffix (for statusbar)"
-msgid "M"
-msgstr "M"
-
-#: libs/ui/kis_statusbar.cc:264
-#, kde-format
-msgctxt "very shortened GiB suffix (for statusbar)"
-msgid "G"
-msgstr ""
-
-#: libs/ui/kis_statusbar.cc:269
-#, kde-format
-msgctxt "very shortened TiB suffix (for statusbar)"
-msgid "T"
-msgstr ""
-
-#: libs/ui/kis_statusbar.cc:283
+#: libs/ui/kis_statusbar.cc:256
 #, kde-format
 msgctxt "tooltip on statusbar memory reporting button (image stats)"
 msgid ""
@@ -15965,7 +15972,7 @@ msgid ""
 "  - instant preview:\t %4\n"
 msgstr ""
 
-#: libs/ui/kis_statusbar.cc:294
+#: libs/ui/kis_statusbar.cc:267
 #, kde-format
 msgctxt "tooltip on statusbar memory reporting button (total stats)"
 msgid ""
@@ -15977,7 +15984,7 @@ msgid ""
 "Swap used:\t %8"
 msgstr ""
 
-#: libs/ui/kis_statusbar.cc:324
+#: libs/ui/kis_statusbar.cc:297
 #, kde-format
 msgctxt "tooltip on statusbar memory reporting button"
 msgid ""
@@ -15987,35 +15994,35 @@ msgid ""
 "\t\tPlease configure more RAM for Krita in Settings dialog"
 msgstr ""
 
-#: libs/ui/kis_statusbar.cc:353
+#: libs/ui/kis_statusbar.cc:326
 #, kde-format
 msgid "Hidden"
 msgstr ""
 
-#: libs/ui/kis_statusbar.cc:355
+#: libs/ui/kis_statusbar.cc:328
 #, kde-format
 msgid "Ants"
 msgstr ""
 
-#: libs/ui/kis_statusbar.cc:355
+#: libs/ui/kis_statusbar.cc:328
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:339
 #, fuzzy, kde-format
 msgid "Mask"
 msgstr "&Masse"
 
-#: libs/ui/kis_statusbar.cc:358
+#: libs/ui/kis_statusbar.cc:331
 #, fuzzy, kde-format
 msgid ""
 "Selection: x = %1 y = %2 width = %3 height = %4\n"
 "Display Mode: %5"
 msgstr "Tchoes en alaedje: x = %1 y = %2 lårdjeur = %3 hôteur = %4"
 
-#: libs/ui/kis_statusbar.cc:363
+#: libs/ui/kis_statusbar.cc:336
 #, kde-format
 msgid "No Selection"
 msgstr "Nou tchoes"
 
-#: libs/ui/kis_statusbar.cc:382
+#: libs/ui/kis_statusbar.cc:355
 #, kde-format
 msgid "No profile"
 msgstr "Nou profil"
@@ -16588,76 +16595,76 @@ msgstr ""
 msgid "Also save your image as a Krita file."
 msgstr ""
 
-#: libs/ui/KisMainWindow.cpp:177
+#: libs/ui/KisMainWindow.cpp:178
 #, fuzzy, kde-format
 msgctxt "@action:inmenu"
 msgid "&Dockers"
 msgstr "Paneas d' usteyes"
 
-#: libs/ui/KisMainWindow.cpp:178
+#: libs/ui/KisMainWindow.cpp:179
 #, fuzzy, kde-format
 msgctxt "@action:inmenu"
 msgid "&Window"
 msgstr "Côutche &pondeure"
 
-#: libs/ui/KisMainWindow.cpp:179
+#: libs/ui/KisMainWindow.cpp:180
 #, fuzzy, kde-format
 msgctxt "@action:inmenu"
 msgid "New &View"
 msgstr "Grandeu d' l' imådje"
 
-#: libs/ui/KisMainWindow.cpp:180
+#: libs/ui/KisMainWindow.cpp:181
 #, fuzzy, kde-format
 msgctxt "@action:inmenu"
 msgid "Wor&kspace"
 msgstr "Espåce di coleurs"
 
-#: libs/ui/KisMainWindow.cpp:467
+#: libs/ui/KisMainWindow.cpp:468
 #: plugins/tools/svgtexttool/SvgTextEditor.cpp:134
 #, fuzzy, kde-format
 msgid "Show %1 Toolbar"
 msgstr "Mostrer l' coûtche raecene"
 
-#: libs/ui/KisMainWindow.cpp:469
+#: libs/ui/KisMainWindow.cpp:470
 #: plugins/tools/svgtexttool/SvgTextEditor.cpp:136
 #, fuzzy, kde-format
 msgid "Hide %1 Toolbar"
 msgstr "Usteyes"
 
-#: libs/ui/KisMainWindow.cpp:746
+#: libs/ui/KisMainWindow.cpp:747
 #, fuzzy, kde-format
 #| msgid "(write protected)"
 msgid "Write Protected"
 msgstr "(waeranti sconte li scrijhaedje)"
 
-#: libs/ui/KisMainWindow.cpp:750
+#: libs/ui/KisMainWindow.cpp:751
 #, fuzzy, kde-format
 #| msgid "coverage"
 msgid "Recovered"
 msgstr "covraedje"
 
-#: libs/ui/KisMainWindow.cpp:759
+#: libs/ui/KisMainWindow.cpp:760
 #, fuzzy, kde-format
 #| msgid "Modified:"
 msgid "Modified"
 msgstr "Candjî :"
 
-#: libs/ui/KisMainWindow.cpp:780
+#: libs/ui/KisMainWindow.cpp:781
 #, fuzzy, kde-format
 msgid "Save as %1"
 msgstr "Fômes ploumion %1"
 
-#: libs/ui/KisMainWindow.cpp:818
+#: libs/ui/KisMainWindow.cpp:819
 #, kde-format
 msgid "The file %1 does not exist."
 msgstr "Li fitchî %1 n' egzistêye nén."
 
-#: libs/ui/KisMainWindow.cpp:897
+#: libs/ui/KisMainWindow.cpp:898
 #, fuzzy, kde-format
 msgid "Open Images"
 msgstr "Imådje"
 
-#: libs/ui/KisMainWindow.cpp:994
+#: libs/ui/KisMainWindow.cpp:995
 #, kde-format
 msgid ""
 "You are saving a file while the image is still rendering. The saved file may "
@@ -16666,43 +16673,43 @@ msgid ""
 "Please select a location where the original file will not be overridden!"
 msgstr ""
 
-#: libs/ui/KisMainWindow.cpp:1059
+#: libs/ui/KisMainWindow.cpp:1060
 #, fuzzy, kde-format
 msgid "Exporting"
 msgstr "Ebaguer"
 
-#: libs/ui/KisMainWindow.cpp:1059
+#: libs/ui/KisMainWindow.cpp:1060
 #, fuzzy, kde-format
 msgid "Saving As"
 msgstr "Cogne do hagnon"
 
-#: libs/ui/KisMainWindow.cpp:1397
+#: libs/ui/KisMainWindow.cpp:1398
 #: libs/widgetutils/config/kstandardaction_p.h:41
 #, fuzzy, kde-format
 msgid "Create new document"
 msgstr "Ahiver on documint vude"
 
-#: libs/ui/KisMainWindow.cpp:1439
+#: libs/ui/KisMainWindow.cpp:1440
 #, fuzzy, kde-format
 msgid "Create from Clipboard"
 msgstr "Prumire coûtche a pårti do presse-papî"
 
-#: libs/ui/KisMainWindow.cpp:1751
+#: libs/ui/KisMainWindow.cpp:1752
 #, fuzzy, kde-format
 msgid "Export as PDF"
 msgstr "Ebaguer coûtche"
 
-#: libs/ui/KisMainWindow.cpp:1793
+#: libs/ui/KisMainWindow.cpp:1794
 #, kde-format
 msgid "Cannot export to the specified file"
 msgstr ""
 
-#: libs/ui/KisMainWindow.cpp:1815
+#: libs/ui/KisMainWindow.cpp:1816
 #, fuzzy, kde-format
 msgid "Import frames"
 msgstr "Abaguer imådje"
 
-#: libs/ui/KisMainWindow.cpp:1823
+#: libs/ui/KisMainWindow.cpp:1824
 #, fuzzy, kde-format
 msgid ""
 "Could not finish import animation:\n"
@@ -16711,7 +16718,7 @@ msgstr ""
 "Dji n' a savou abaguer\n"
 "%1"
 
-#: libs/ui/KisMainWindow.cpp:1899
+#: libs/ui/KisMainWindow.cpp:1900
 #, kde-format
 msgid ""
 "You will lose all changes made since your last save\n"
@@ -16720,87 +16727,87 @@ msgstr ""
 "Vos aloz piede tos les candjmints fwaits dispoy vosse dierin schapaedje\n"
 "Voloz tcheryî pus lon ?"
 
-#: libs/ui/KisMainWindow.cpp:1910
+#: libs/ui/KisMainWindow.cpp:1911
 #, fuzzy, kde-format
 msgid "Error: Could not reload this document"
 msgstr "Dji n' a savou radjouter l' coûtche a l' imådje."
 
-#: libs/ui/KisMainWindow.cpp:2130
+#: libs/ui/KisMainWindow.cpp:2131
 #, fuzzy, kde-format
 msgctxt "@action:inmenu"
 msgid "&Import Workspace..."
 msgstr "&Abaguer imådje..."
 
-#: libs/ui/KisMainWindow.cpp:2142 libs/widgets/KoResourceItemChooser.cpp:209
+#: libs/ui/KisMainWindow.cpp:2143 libs/widgets/KoResourceItemChooser.cpp:209
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "Choose File to Add"
 msgstr "Tchoezi fitchî a radjouter"
 
-#: libs/ui/KisMainWindow.cpp:2148
+#: libs/ui/KisMainWindow.cpp:2149
 #, fuzzy, kde-format
 msgctxt "@action:inmenu"
 msgid "&New Workspace..."
 msgstr "&Abaguer imådje..."
 
-#: libs/ui/KisMainWindow.cpp:2151
+#: libs/ui/KisMainWindow.cpp:2152
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "New Workspace..."
 msgstr "&Abaguer imådje..."
 
-#: libs/ui/KisMainWindow.cpp:2165 libs/ui/widgets/kis_workspace_chooser.cpp:164
+#: libs/ui/KisMainWindow.cpp:2166 libs/ui/widgets/kis_workspace_chooser.cpp:164
 #, fuzzy, kde-format
 msgid "Workspace"
 msgstr "Espåce di coleurs"
 
-#: libs/ui/KisMainWindow.cpp:2176 libs/ui/widgets/kis_workspace_chooser.cpp:175
+#: libs/ui/KisMainWindow.cpp:2177 libs/ui/widgets/kis_workspace_chooser.cpp:175
 #, fuzzy, kde-format
 msgid "Workspace %1"
 msgstr "Espåce di coleurs"
 
-#: libs/ui/KisMainWindow.cpp:2204
+#: libs/ui/KisMainWindow.cpp:2205
 #, kde-format
 msgid "&%1 %2"
 msgstr ""
 
-#: libs/ui/KisMainWindow.cpp:2207
+#: libs/ui/KisMainWindow.cpp:2208
 #, kde-format
 msgid "%1 %2"
 msgstr ""
 
-#: libs/ui/KisMainWindow.cpp:2316
+#: libs/ui/KisMainWindow.cpp:2317
 #, kde-format
 msgid ""
 "The Krita LittleCMS color management plugin is not installed. Krita will "
 "quit now."
 msgstr ""
 
-#: libs/ui/KisMainWindow.cpp:2324
+#: libs/ui/KisMainWindow.cpp:2325
 #, fuzzy, kde-format
 msgid "Krita cannot find any brush presets! Krita will quit now."
 msgstr ""
 "L' espåce di coleurs %1 n' est nén disponibe, waitîz vost astalaedje s' i vs "
 "plait bén."
 
-#: libs/ui/KisMainWindow.cpp:2333
+#: libs/ui/KisMainWindow.cpp:2334
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "Installation error"
 msgstr "Aroke d' ahivaedje del coûtche"
 
-#: libs/ui/KisMainWindow.cpp:2394
+#: libs/ui/KisMainWindow.cpp:2395
 #, kde-format
 msgid "%1 unsaved document (%2)"
 msgstr "%1 documint nén schapé (%2)"
 
-#: libs/ui/KisMainWindow.cpp:2462
+#: libs/ui/KisMainWindow.cpp:2463
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "&Themes"
 msgstr ""
 
-#: libs/ui/KisMainWindow.cpp:2498
+#: libs/ui/KisMainWindow.cpp:2499
 #, kde-format
 msgid "Expanding Spacer"
 msgstr ""
@@ -16860,6 +16867,7 @@ msgid ""
 msgstr ""
 
 #: libs/ui/KisTemplateCreateDia.cpp:101
+#: plugins/python/comics_project_management_tools/comics_template_dialog.py:103
 #, fuzzy, kde-format
 msgid "Create Template"
 msgstr "Ahiver"
@@ -18927,12 +18935,12 @@ msgstr "%1:"
 msgid "Color name:"
 msgstr "Espåce di coleurs:"
 
-#: libs/ui/widgets/kis_custom_image_widget.cc:112
+#: libs/ui/widgets/kis_custom_image_widget.cc:113
 #, fuzzy, kde-format
-msgid "Create"
+msgid "&Create"
 msgstr "Ahiver"
 
-#: libs/ui/widgets/kis_custom_image_widget.cc:276
+#: libs/ui/widgets/kis_custom_image_widget.cc:277
 #, kde-format
 msgid ""
 "Linear gamma RGB color spaces are not supposed to be used in 8-bit integer "
@@ -18943,40 +18951,14 @@ msgid ""
 "to return to the settings dialog."
 msgstr ""
 
-#: libs/ui/widgets/kis_custom_image_widget.cc:502
-#, kde-format
-msgid "bytes"
-msgstr ""
-
-#: libs/ui/widgets/kis_custom_image_widget.cc:505
-#, fuzzy, kde-format
-#| msgid "B"
-msgctxt "Abbreviation for kilobyte"
-msgid "KB"
-msgstr "B"
-
-#: libs/ui/widgets/kis_custom_image_widget.cc:509
-#, fuzzy, kde-format
-#| msgid "B"
-msgctxt "Abbreviation for megabyte"
-msgid "MB"
-msgstr "B"
-
-#: libs/ui/widgets/kis_custom_image_widget.cc:513
-#, fuzzy, kde-format
-#| msgid "RGB"
-msgctxt "Abbreviation for gigabyte"
-msgid "GB"
-msgstr "RVB"
-
-#: libs/ui/widgets/kis_custom_image_widget.cc:516
+#: libs/ui/widgets/kis_custom_image_widget.cc:504
 #, kde-format
 msgctxt ""
 "arg1: width. arg2: height. arg3: colorspace name. arg4: size of a channel in "
-"bits. arg5: size in unites of arg6. Arg6: KB, MB or GB"
+"bits. arg5: image size"
 msgid ""
 "This document will be %1 pixels by %2 pixels in %3, which means the pixel "
-"size is %4 bit. A single paint layer will thus take up %5 %6 of RAM."
+"size is %4 bit. A single paint layer will thus take up %5 of RAM."
 msgstr ""
 
 #: libs/ui/widgets/kis_filter_selector_widget.cc:165
@@ -19314,13 +19296,6 @@ msgstr "Repeter:"
 #, kde-format
 msgid "Repeat"
 msgstr "Repeter"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, cmbGradientRepeat)
-#: libs/ui/widgets/KoFillConfigWidget.ui:268
-#: libs/widgets/KoGradientEditWidget.cpp:179
-#, kde-format
-msgid "Reflect"
-msgstr "Riflet"
 
 #. i18n: ectx: property (text), widget (QLabel, presetLabel)
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -22309,6 +22284,7 @@ msgstr "Tchoezixheu d' ombion"
 
 #. i18n: ectx: property (text), widget (QLabel, myPaintColorModelLabel)
 #: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:530
+#: plugins/python/colorspace/uicolorspace.py:62
 #, fuzzy, kde-format
 msgid "Color model:"
 msgstr "Espåce di coleurs:"
@@ -30654,6 +30630,7 @@ msgstr "Drovi e noveas documints"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: plugins/impex/jpeg/kis_wdg_options_jpeg.ui:339
+#: plugins/python/filtermanager/uifiltermanager.py:50
 #, kde-format
 msgid "Filters:"
 msgstr "Passetes:"
@@ -35085,10 +35062,79 @@ msgstr ""
 msgid "Direction/Tilt Mix Value"
 msgstr "Direccion :"
 
+#: plugins/python/assignprofiledialog/assignprofiledialog.py:26
+#, fuzzy
+#| msgid "Apply Profile"
+msgid "Assign Profile"
+msgstr "Mete en ouve profil"
+
+#: plugins/python/assignprofiledialog/assignprofiledialog.py:26
+#, fuzzy
+msgid "There is no active document."
+msgstr "Schaper documint"
+
+#: plugins/python/assignprofiledialog/assignprofiledialog.py:56
+#, fuzzy
+#| msgid "Apply Profile"
+msgid "Assign Profile to Image"
+msgstr "Mete en ouve profil"
+
+#: plugins/python/colorspace/colorspace.py:25
+#: plugins/python/colorspace/uicolorspace.py:75
+#, fuzzy
+#| msgid "Color space:"
+msgid "Color Space"
+msgstr "Espåce di coleurs:"
+
+#: plugins/python/colorspace/colorspace.py:26
+msgid "Plugin to change color space of selected documents."
+msgstr ""
+
+#: plugins/python/colorspace/uicolorspace.py:31
+#: plugins/python/documenttools/uidocumenttools.py:28
+#: plugins/python/exportlayers/uiexportlayers.py:35
+#, fuzzy
+#| msgid "Total Refresh"
+msgid "Refresh"
+msgstr "Rafristaedje totå"
+
+#: plugins/python/colorspace/uicolorspace.py:61
+#: plugins/python/documenttools/uidocumenttools.py:51
+#: plugins/python/exportlayers/uiexportlayers.py:84
+#, fuzzy
+msgid "Documents:"
+msgstr "Drovi e noveas documints"
+
+#: plugins/python/colorspace/uicolorspace.py:63
+#, fuzzy
+msgid "Color depth:"
+msgstr "Espåce di coleurs:"
+
+#: plugins/python/colorspace/uicolorspace.py:64
+#, fuzzy
+#| msgid "Monitor profile: "
+msgid "Color profile:"
+msgstr "Profil del waitroûle:"
+
+#: plugins/python/colorspace/uicolorspace.py:120
+msgid "The selected documents has been converted."
+msgstr ""
+
+#: plugins/python/colorspace/uicolorspace.py:122
+#: plugins/python/documenttools/uidocumenttools.py:106
+#, fuzzy
+msgid "Select at least one document."
+msgstr "Ahiver on documint vude"
+
+#: plugins/python/comics_project_management_tools/comics_export_dialog.py:43
+#, fuzzy
+msgid "Adjust Working File"
+msgstr "Metaedje a pont &HSV..."
+
 #: plugins/python/comics_project_management_tools/comics_export_dialog.py:46
 #, fuzzy
 #| msgid "&Crop layers on image resize"
-msgid "Crop files before resize."
+msgid "Crop files before resize"
 msgstr "&Côper dvins les coûtches cwand on candje li grandeu l' imådje"
 
 #: plugins/python/comics_project_management_tools/comics_export_dialog.py:50
@@ -35133,14 +35179,15 @@ msgid "Percentage:"
 msgstr "grandeus come åcintaedjes %"
 
 #: plugins/python/comics_project_management_tools/comics_export_dialog.py:220
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:270
 #, fuzzy
-msgid "Export settings"
-msgstr "Ebaguer"
+msgid "Export Settings"
+msgstr "Apontyî l' shuvaedje des candjmints"
 
 #: plugins/python/comics_project_management_tools/comics_export_dialog.py:233
 #, fuzzy
 #| msgid "Color Settings"
-msgid "Crop settings"
+msgid "Crop Settings"
 msgstr "Tchuzes des coleurs"
 
 #: plugins/python/comics_project_management_tools/comics_export_dialog.py:236
@@ -35157,7 +35204,7 @@ msgstr ""
 #: plugins/python/comics_project_management_tools/comics_export_dialog.py:240
 #, fuzzy
 #| msgid "Set line width of actual selection"
-msgid "Set margins from active selection"
+msgid "Set Margins from Active Selection"
 msgstr "Defini l' lårdjeur del roye do tchoes"
 
 #: plugins/python/comics_project_management_tools/comics_export_dialog.py:259
@@ -35175,14 +35222,14 @@ msgstr ""
 #: plugins/python/comics_project_management_tools/comics_export_dialog.py:266
 msgid ""
 "These are keywords that can be used to identify text layers. A layer only "
-"needs to contain the keyword to be recognised. Keywords should be comma "
+"needs to contain the keyword to be recognized. Keywords should be comma "
 "separated."
 msgstr ""
 
 #: plugins/python/comics_project_management_tools/comics_export_dialog.py:268
 msgid ""
 "These are keywords that can be used to identify panel layers. A layer only "
-"needs to contain the keyword to be recognised. Keywords should be comma "
+"needs to contain the keyword to be recognized. Keywords should be comma "
 "separated."
 msgstr ""
 
@@ -35204,8 +35251,12 @@ msgstr "Ebaguer"
 #: plugins/python/comics_project_management_tools/comics_export_dialog.py:284
 #, fuzzy
 #| msgid "Metadata"
-msgid "Metadata to add"
+msgid "Metadata to Add"
 msgstr "Meta-dnêyes"
+
+#: plugins/python/comics_project_management_tools/comics_export_dialog.py:288
+msgid "CBZ"
+msgstr ""
 
 #: plugins/python/comics_project_management_tools/comics_export_dialog.py:295
 #, fuzzy
@@ -35226,17 +35277,17 @@ msgid ""
 "The ID by itself is merely so that comic book library management programs "
 "can figure out if this particular comic is already in their database and "
 "whether it has been rated. Of course, the UUID can be changed into something "
-"else by manually changing the json, but this is advanced usage."
+"else by manually changing the JSON, but this is advanced usage."
 msgstr ""
 
 #: plugins/python/comics_project_management_tools/comics_export_dialog.py:305
 #, fuzzy
-msgid "Add history entry"
+msgid "Add History Entry"
 msgstr "No:"
 
 #: plugins/python/comics_project_management_tools/comics_export_dialog.py:308
 #, fuzzy
-msgid "Include Translator's Comments"
+msgid "Include translator's comments"
 msgstr "No del coûtche:"
 
 #: plugins/python/comics_project_management_tools/comics_export_dialog.py:309
@@ -35251,12 +35302,12 @@ msgstr ""
 
 #: plugins/python/comics_project_management_tools/comics_export_dialog.py:315
 #, fuzzy
-msgid "Version History:"
+msgid "Version history:"
 msgstr "Modêye"
 
 #: plugins/python/comics_project_management_tools/comics_export_dialog.py:318
 #, fuzzy
-msgid "Translator Header:"
+msgid "Translator header:"
 msgstr "Triyangue"
 
 #: plugins/python/comics_project_management_tools/comics_export_dialog.py:322
@@ -35289,18 +35340,20 @@ msgid "Family Name"
 msgstr "No de&l coûtche:"
 
 #: plugins/python/comics_project_management_tools/comics_export_dialog.py:336
+#: plugins/python/comics_project_management_tools/comics_metadata_dialog.py:363
 #, fuzzy
-msgid "Add author"
+msgid "Add Author"
 msgstr "Anke"
 
 #: plugins/python/comics_project_management_tools/comics_export_dialog.py:339
+#: plugins/python/comics_project_management_tools/comics_metadata_dialog.py:365
 #, fuzzy
-msgid "Remove author"
-msgstr "Usteyes då &pondeu"
+msgid "Remove Author"
+msgstr "Oister tchimin efant"
 
 #: plugins/python/comics_project_management_tools/comics_export_dialog.py:352
 #, fuzzy
-msgid "Use Font"
+msgid "Use font"
 msgstr "Defini fonte"
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkBoldKeyword)
@@ -35376,13 +35429,22 @@ msgstr ""
 msgid "Export to EPUB"
 msgstr "Ebaguer"
 
+#: plugins/python/comics_project_management_tools/comics_export_dialog.py:414
+msgid "EPUB"
+msgstr ""
+
 #: plugins/python/comics_project_management_tools/comics_export_dialog.py:419
 #, fuzzy
 msgid "Export to TIFF"
 msgstr "Ebaguer"
 
+#: plugins/python/comics_project_management_tools/comics_export_dialog.py:424
+msgid "TIFF"
+msgstr ""
+
 #: plugins/python/comics_project_management_tools/comics_export_dialog.py:437
-msgid "in this version..."
+#, python-brace-format
+msgid "v{version}-in this version..."
 msgstr ""
 
 #: plugins/python/comics_project_management_tools/comics_export_dialog.py:460
@@ -35404,16 +35466,48 @@ msgstr "John Califf"
 msgid "Doe"
 msgstr "Môde"
 
+#: plugins/python/comics_project_management_tools/comics_exporter.py:149
+#, fuzzy
+#| msgid "Export Layer"
+msgid "Preparing export."
+msgstr "Ebaguer coûtche"
+
+#: plugins/python/comics_project_management_tools/comics_exporter.py:150
+#, fuzzy
+msgid "Exporting Comic..."
+msgstr "Môde compozite"
+
+#: plugins/python/comics_project_management_tools/comics_exporter.py:168
+msgid ""
+"Saving out ACBF and\n"
+"ACBF standalone"
+msgstr ""
+
+#: plugins/python/comics_project_management_tools/comics_exporter.py:179
+#, fuzzy
+msgid "Saving out EPUB"
+msgstr "Schaper documint"
+
 #: plugins/python/comics_project_management_tools/comics_exporter.py:184
 #: plugins/python/comics_project_management_tools/comics_exporter.py:377
 #, fuzzy
-msgid "Export not possible"
+msgid "Export not Possible"
 msgstr "Môde compozite"
 
 #: plugins/python/comics_project_management_tools/comics_exporter.py:184
+msgid "Nothing to export, URL not set."
+msgstr ""
+
+#: plugins/python/comics_project_management_tools/comics_exporter.py:197
 msgid ""
-"Nothing to export,\n"
-"url not set."
+"Saving out CoMet\n"
+"metadata file"
+msgstr ""
+
+#: plugins/python/comics_project_management_tools/comics_exporter.py:202
+msgid ""
+"Saving out Comicrack\n"
+"metadata file"
 msgstr ""
 
 #: plugins/python/comics_project_management_tools/comics_exporter.py:234
@@ -35445,9 +35539,17 @@ msgid "Exporting for {key}"
 msgstr "Ebaguer"
 
 #: plugins/python/comics_project_management_tools/comics_exporter.py:377
+msgid "Export not happening because there are no pages."
+msgstr ""
+
+#: plugins/python/comics_project_management_tools/comics_exporter.py:634
 msgid ""
-"Export not happening because\n"
-"there aren't any pages."
+"Saving out Comicbook\n"
+"info metadata file"
+msgstr ""
+
+#: plugins/python/comics_project_management_tools/comics_exporter.py:644
+msgid "Packaging CBZ"
 msgstr ""
 
 #: plugins/python/comics_project_management_tools/comics_metadata_dialog.py:226
@@ -35666,7 +35768,7 @@ msgstr ""
 msgid ""
 "The genre of the work. Prefilled values are from the ACBF, but you can fill "
 "in your own. Separate genres with commas. Try to limit the amount to about "
-"two or three"
+"two or three."
 msgstr ""
 
 #: plugins/python/comics_project_management_tools/comics_metadata_dialog.py:281
@@ -35679,10 +35781,18 @@ msgid ""
 "If this is part of a series, enter the name of the series and the number."
 msgstr ""
 
+#: plugins/python/comics_project_management_tools/comics_metadata_dialog.py:302
+msgid "No. "
+msgstr ""
+
+#: plugins/python/comics_project_management_tools/comics_metadata_dialog.py:304
+msgid "Vol. "
+msgstr ""
+
 #: plugins/python/comics_project_management_tools/comics_metadata_dialog.py:316
 msgid ""
-"Other keywords that don't fit in the previously mentioned sets. As always, "
-"comma-separated"
+"Other keywords that do not fit in the previously mentioned sets. As always, "
+"comma-separated."
 msgstr ""
 
 #: plugins/python/comics_project_management_tools/comics_metadata_dialog.py:322
@@ -35698,13 +35808,13 @@ msgid "Right to Left"
 msgstr "Di droete a hintche"
 
 #: plugins/python/comics_project_management_tools/comics_metadata_dialog.py:326
-msgid "Which page is the cover page? This will be empty if there's no pages."
+msgid "Which page is the cover page? This will be empty if there are no pages."
 msgstr ""
 
 #: plugins/python/comics_project_management_tools/comics_metadata_dialog.py:329
 #, fuzzy
 #| msgid "Page"
-msgid "Cover Page:"
+msgid "Cover page:"
 msgstr "Pådje"
 
 #: plugins/python/comics_project_management_tools/comics_metadata_dialog.py:330
@@ -35719,7 +35829,7 @@ msgstr "Lingaedje:"
 #: plugins/python/comics_project_management_tools/comics_metadata_dialog.py:333
 #, fuzzy
 #| msgid "Direction:"
-msgid "Reading Direction:"
+msgid "Reading direction:"
 msgstr "Direccion:"
 
 #: plugins/python/comics_project_management_tools/comics_metadata_dialog.py:334
@@ -35760,8 +35870,8 @@ msgstr "Espåce di coleurs"
 #: plugins/python/comics_project_management_tools/comics_metadata_dialog.py:346
 msgid ""
 "The following is a table of the authors that contributed to this comic. You "
-"can set their nickname, proper names (first, middle, last), Role (Penciller, "
-"Inker, etc), email and homepage."
+"can set their nickname, proper names (first, middle, last), role (penciller, "
+"inker, etc), email and homepage."
 msgstr ""
 
 #: plugins/python/comics_project_management_tools/comics_metadata_dialog.py:349
@@ -35772,16 +35882,6 @@ msgstr ""
 #, fuzzy
 msgid "Language"
 msgstr "Lingaedje:"
-
-#: plugins/python/comics_project_management_tools/comics_metadata_dialog.py:363
-#, fuzzy
-msgid "Add Author"
-msgstr "Anke"
-
-#: plugins/python/comics_project_management_tools/comics_metadata_dialog.py:365
-#, fuzzy
-msgid "Remove Author"
-msgstr "Oister tchimin efant"
 
 #: plugins/python/comics_project_management_tools/comics_metadata_dialog.py:379
 msgid ""
@@ -35806,7 +35906,7 @@ msgstr ""
 
 #: plugins/python/comics_project_management_tools/comics_metadata_dialog.py:396
 msgid ""
-"If there's an entry in a comics data base, that should be added here. It is "
+"If there is an entry in a comics data base, that should be added here. It is "
 "unlikely to be a factor for comics from scratch, but useful when doing a "
 "conversion."
 msgstr ""
@@ -35875,11 +35975,6 @@ msgstr "Apontyî l' shuvaedje des candjmints"
 msgid "Meta Data"
 msgstr "Meta-dnêyes"
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:270
-#, fuzzy
-msgid "Export Settings"
-msgstr "Apontyî l' shuvaedje des candjmints"
-
 #: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:286
 #, fuzzy
 #| msgid "Adrian Page"
@@ -35887,8 +35982,9 @@ msgid "Add Page"
 msgstr "Adrian Page"
 
 #: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:288
-msgid "Add Page From Template"
-msgstr ""
+#, fuzzy
+msgid "Add Page from Template"
+msgstr "No del coûtche:"
 
 #: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:290
 #, fuzzy
@@ -35919,7 +36015,7 @@ msgstr ""
 #: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:300
 msgid ""
 "Search for author information in documents and add it to the author list. "
-"This doesn't check for duplicates."
+"This does not check for duplicates."
 msgstr ""
 
 #: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:302
@@ -35944,18 +36040,18 @@ msgid ""
 msgstr ""
 
 #: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:345
-msgid "Please select the json comic config file."
+msgid "Please select the JSON comic config file."
 msgstr ""
 
 #: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:345
 #, fuzzy
 #| msgid "&Profiles:"
-msgid "json files"
+msgid "JSON files"
 msgstr "&Profils:"
 
 #: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:377
 #, fuzzy
-msgid "Loading pages..."
+msgid "Loading Pages..."
 msgstr "Candjî palete..."
 
 #: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:525
@@ -35983,9 +36079,18 @@ msgstr ""
 msgid "Which image should be the basis the new page?"
 msgstr ""
 
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:787
+#, fuzzy
+msgid "Export success"
+msgstr "Môde d' espozicion:"
+
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:787
+msgid "The files have been written to the export folder."
+msgstr ""
+
 #: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:836
 #, fuzzy
-msgid "Risize all pages."
+msgid "Resize all Pages"
 msgstr "Candjî l' grandeu des cognes"
 
 #: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:847
@@ -35996,7 +36101,7 @@ msgstr "Tourner l' imådje"
 #: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:848
 #, fuzzy
 #| msgid "Facing pages"
-msgid "Resizing pages."
+msgid "Resizing Pages"
 msgstr "Pådjes pa deus:"
 
 #: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:862
@@ -36008,11 +36113,14 @@ msgid ""
 msgstr ""
 
 #: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:910
-msgid "Scraping success!"
-msgstr ""
+#, fuzzy
+#| msgid "Success"
+msgid "Scraping success"
+msgstr "Succès"
 
 #: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:910
-msgid "POT file has been written to: "
+#, python-brace-format
+msgid "POT file has been written to: {file}"
 msgstr ""
 
 #: plugins/python/comics_project_management_tools/comics_project_settings_dialog.py:35
@@ -36050,55 +36158,58 @@ msgstr ""
 
 #: plugins/python/comics_project_management_tools/comics_project_settings_dialog.py:129
 msgid ""
-"The location for extra autocompletion keys in the meta-data editor. Point "
+"The location for extra autocompletion keys in the metadata editor. Point "
 "this at a folder containing key_characters/key_format/key_genre/key_rating/"
-"key_author_roles/key_other with inside txt files(csv for tating) containing "
+"key_author_roles/key_other with inside txt files (csv for rating) containing "
 "the extra auto-completion keys, each on a new line. This path is stored in "
-"the krita configuration, and not the project configuration."
+"the Krita configuration, and not the project configuration."
 msgstr ""
 
 #: plugins/python/comics_project_management_tools/comics_project_settings_dialog.py:132
 #: plugins/python/comics_project_management_tools/comics_project_setup_wizard.py:120
 #, fuzzy
 #| msgid "Project"
-msgid "Project Name:"
+msgid "Project name:"
 msgstr "Pordjet"
 
 #: plugins/python/comics_project_management_tools/comics_project_settings_dialog.py:133
 #, fuzzy
 #| msgid "Direction:"
-msgid "Project Concept:"
+msgid "Project concept:"
 msgstr "Direccion :"
 
 #: plugins/python/comics_project_management_tools/comics_project_settings_dialog.py:134
 #, fuzzy
 #| msgid "Page Edge:"
-msgid "Pages Folder:"
+msgid "Pages folder:"
 msgstr "Boird del pådje"
 
 #: plugins/python/comics_project_management_tools/comics_project_settings_dialog.py:135
 #, fuzzy
 #| msgid "Export Layer"
-msgid "Export Folder:"
+msgid "Export folder:"
 msgstr "Ebaguer coûtche"
 
 #: plugins/python/comics_project_management_tools/comics_project_settings_dialog.py:136
-msgid "Template Folder:"
-msgstr ""
+#, fuzzy
+msgid "Template folder:"
+msgstr "Tchoezi ene redjon rectangulåre"
 
 #: plugins/python/comics_project_management_tools/comics_project_settings_dialog.py:137
 #, fuzzy
-msgid "Translation Folder:"
+msgid "Translation folder:"
 msgstr "Triyangue"
 
 #: plugins/python/comics_project_management_tools/comics_project_settings_dialog.py:138
 #, fuzzy
-msgid "Default Template:"
+msgid "Default template:"
 msgstr "Ahiver"
 
 #: plugins/python/comics_project_management_tools/comics_project_settings_dialog.py:139
-msgid "Extra Keys Folder:"
-msgstr ""
+#, fuzzy
+#| msgid "Page Edge:"
+msgid "Extra keys folder:"
+msgstr "Boird del pådje"
 
 #: plugins/python/comics_project_management_tools/comics_project_setup_wizard.py:62
 msgid "Where should the comic project go?"
@@ -36131,7 +36242,7 @@ msgstr ""
 
 #: plugins/python/comics_project_management_tools/comics_project_setup_wizard.py:88
 msgid ""
-"What is your comic about? This is mostly for your own convenience so don't "
+"What is your comic about? This is mostly for your own convenience so do not "
 "worry about what it says too much."
 msgstr ""
 
@@ -36159,7 +36270,7 @@ msgstr "Pådjes"
 
 #: plugins/python/comics_project_management_tools/comics_project_setup_wizard.py:108
 msgid ""
-"The name for the folder where the pages are contained. If it doesn't exist, "
+"The name for the folder where the pages are contained. If it does not exist, "
 "it will be created."
 msgstr ""
 
@@ -36170,7 +36281,7 @@ msgstr "Ebaguer"
 
 #: plugins/python/comics_project_management_tools/comics_project_setup_wizard.py:111
 msgid ""
-"The name for the folder where the export is put. If it doesn't exist, it "
+"The name for the folder where the export is put. If it does not exist, it "
 "will be created."
 msgstr ""
 
@@ -36189,12 +36300,14 @@ msgid "translations"
 msgstr "Triyangue"
 
 #: plugins/python/comics_project_management_tools/comics_project_setup_wizard.py:119
-msgid "Comic Concept:"
-msgstr ""
+#, fuzzy
+#| msgid "Direction:"
+msgid "Comic concept:"
+msgstr "Direccion :"
 
 #: plugins/python/comics_project_management_tools/comics_project_setup_wizard.py:121
 #, fuzzy
-msgid "Main Language:"
+msgid "Main language:"
 msgstr "Lingaedje:"
 
 #: plugins/python/comics_project_management_tools/comics_project_setup_wizard.py:130
@@ -36203,27 +36316,27 @@ msgstr ""
 
 #: plugins/python/comics_project_management_tools/comics_project_setup_wizard.py:133
 #, fuzzy
-msgid "Project Directory:"
+msgid "Project directory:"
 msgstr "Tchoezi ene redjon rectangulåre"
 
 #: plugins/python/comics_project_management_tools/comics_project_setup_wizard.py:135
 #, fuzzy
-msgid "Pages Directory"
+msgid "Pages directory"
 msgstr "Tchoezi ene redjon rectangulåre"
 
 #: plugins/python/comics_project_management_tools/comics_project_setup_wizard.py:136
 #, fuzzy
-msgid "Export Directory"
+msgid "Export directory"
 msgstr "Tchoezi ene redjon rectangulåre"
 
 #: plugins/python/comics_project_management_tools/comics_project_setup_wizard.py:137
 #, fuzzy
-msgid "Template Directory"
+msgid "Template directory"
 msgstr "Tchoezi ene redjon rectangulåre"
 
 #: plugins/python/comics_project_management_tools/comics_project_setup_wizard.py:138
 #, fuzzy
-msgid "Translation Directory"
+msgid "Translation directory"
 msgstr "Tchoezi ene redjon rectangulåre"
 
 #: plugins/python/comics_project_management_tools/comics_template_dialog.py:36
@@ -36250,17 +36363,12 @@ msgstr "Milimetes (mm)"
 
 #: plugins/python/comics_project_management_tools/comics_template_dialog.py:87
 #, fuzzy
-msgid "Add new template"
+msgid "Add new Template"
 msgstr "No del coûtche:"
-
-#: plugins/python/comics_project_management_tools/comics_template_dialog.py:103
-#, fuzzy
-msgid "Create a template"
-msgstr "Ahiver"
 
 #: plugins/python/comics_project_management_tools/comics_template_dialog.py:105
 #, fuzzy
-msgid "Import templates"
+msgid "Import Templates"
 msgstr "Abaguer imådje"
 
 #: plugins/python/comics_project_management_tools/comics_template_dialog.py:129
@@ -36269,7 +36377,7 @@ msgstr ""
 
 #: plugins/python/comics_project_management_tools/comics_template_dialog.py:145
 #, fuzzy
-msgid "Create new template"
+msgid "Create new Template"
 msgstr "Ahiver"
 
 #: plugins/python/comics_project_management_tools/comics_template_dialog.py:151
@@ -36283,6 +36391,107 @@ msgstr ""
 #: plugins/python/comics_project_management_tools/comics_template_dialog.py:252
 msgid "Bleeds"
 msgstr ""
+
+#: plugins/python/documenttools/documenttools.py:25
+#: plugins/python/documenttools/uidocumenttools.py:63
+#, fuzzy
+#| msgid "Document Information"
+msgid "Document Tools"
+msgstr "Informåcion sol Documint"
+
+#: plugins/python/documenttools/documenttools.py:26
+msgid "Plugin to manipulate properties of selected documents."
+msgstr ""
+
+#: plugins/python/documenttools/uidocumenttools.py:104
+msgid "The selected documents has been modified."
+msgstr ""
+
+#: plugins/python/exportlayers/exportlayers.py:25
+#: plugins/python/exportlayers/uiexportlayers.py:99
+#, fuzzy
+#| msgid "Export Layer"
+msgid "Export Layers"
+msgstr "Ebaguer coûtche"
+
+#: plugins/python/exportlayers/exportlayers.py:26
+msgid "Plugin to export layers from a document."
+msgstr ""
+
+#: plugins/python/exportlayers/uiexportlayers.py:39
+#, fuzzy
+msgid "Export filter layers"
+msgstr "Abaguer imådje"
+
+#: plugins/python/exportlayers/uiexportlayers.py:40
+#, fuzzy
+msgid "Export in batchmode"
+msgstr "Ebaguer come vcard..."
+
+#: plugins/python/exportlayers/uiexportlayers.py:41
+#, fuzzy
+msgid "Ignore invisible layers"
+msgstr "Côutche p&assete..."
+
+#: plugins/python/exportlayers/uiexportlayers.py:68
+msgid "JPEG"
+msgstr ""
+
+#: plugins/python/exportlayers/uiexportlayers.py:69
+msgid "PNG"
+msgstr ""
+
+#: plugins/python/exportlayers/uiexportlayers.py:85
+#, fuzzy
+#| msgid "Initial width:"
+msgid "Initial directory:"
+msgstr "Lårdjeur di cmince:"
+
+#: plugins/python/exportlayers/uiexportlayers.py:86
+#, fuzzy
+msgid "Export options:"
+msgstr "Tchuzes del djeyometreye"
+
+#: plugins/python/exportlayers/uiexportlayers.py:88
+#, fuzzy
+#| msgid "&Image Selection"
+msgid "Images extensions:"
+msgstr "Tchoes d' l' &imådje"
+
+#: plugins/python/exportlayers/uiexportlayers.py:121
+#, fuzzy
+msgid "Select one document."
+msgstr "Ahiver on documint vude"
+
+#: plugins/python/exportlayers/uiexportlayers.py:123
+#, fuzzy
+msgid "Select the initial directory."
+msgstr "Tchoezi ene redjon rectangulåre"
+
+#: plugins/python/exportlayers/uiexportlayers.py:126
+msgid "All layers has been exported."
+msgstr ""
+
+#: plugins/python/exportlayers/uiexportlayers.py:178
+#, fuzzy
+msgid "Select a Folder"
+msgstr "Tchoe&s di pådjes"
+
+#: plugins/python/filtermanager/filtermanager.py:25
+#: plugins/python/filtermanager/uifiltermanager.py:62
+#, fuzzy
+msgid "Filter Manager"
+msgstr "Côutche p&assete..."
+
+#: plugins/python/filtermanager/filtermanager.py:26
+msgid "Plugin to filters management."
+msgstr ""
+
+#: plugins/python/filtermanager/uifiltermanager.py:45
+#, fuzzy
+#| msgid "Document Information"
+msgid "Document Tree Model"
+msgstr "Informåcion sol Documint"
 
 #. i18n: context: Actions (Hello), ActionCollection (Hello)
 #: plugins/python/hello/hello.action:4
@@ -36309,6 +36518,32 @@ msgstr ""
 #, python-format
 msgid "Hello! This is Krita version %s"
 msgstr ""
+
+#: plugins/python/highpass/highpass.py:27
+#, fuzzy
+msgid "High Pass"
+msgstr "Pression"
+
+#: plugins/python/highpass/highpass.py:33
+#, fuzzy
+msgid "High Pass Filter"
+msgstr "Rindou di hôte cwålité"
+
+#: plugins/python/highpass/highpass.py:33
+#, fuzzy
+#| msgid "The file %1 does not exist."
+msgid "There is no active image."
+msgstr "Li fitchî %1 n' egzistêye nén."
+
+#: plugins/python/highpass/highpass.py:44
+#, fuzzy
+msgid "Keep original layer"
+msgstr "Mostrer l' coûtche oridjinnåle"
+
+#: plugins/python/highpass/highpass.py:47
+#, fuzzy
+msgid "Filter radius:"
+msgstr "Reyon do specimen:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: plugins/python/krita_script_starter/bbdkss.ui:39
@@ -36402,6 +36637,12 @@ msgstr "Efets d' coûtche"
 msgid "Create Script"
 msgstr "Ahiver èn objet"
 
+#: plugins/python/scripter/scripter.py:32
+#, fuzzy
+#| msgid "Subscript"
+msgid "Scripter"
+msgstr "Dizo li Roye"
+
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonSave)
 #: plugins/python/selectionsbagdocker/selectionsbagdocker.ui:23
 #, kde-format
@@ -36485,6 +36726,26 @@ msgctxt "action"
 msgid "Activate Brush Preset 10"
 msgstr "Prédefinis"
 
+#: plugins/python/tenbrushes/tenbrushes.py:30
+#, fuzzy
+msgid "Ten Brushes"
+msgstr "Pincea"
+
+#: plugins/python/tenbrushes/tenbrushes.py:31
+msgid "Assign ten brush presets to ten shortcuts."
+msgstr ""
+
+#: plugins/python/tenbrushes/tenbrushes.py:54
+#, fuzzy, python-brace-format
+msgid "Activate Brush Preset {num}"
+msgstr "Prédefinis"
+
+#: plugins/python/tenbrushes/uitenbrushes.py:43
+msgid ""
+"Select the brush preset, then click on the button you want to use to select "
+"the preset"
+msgstr ""
+
 #. i18n: context: Actions (Scripts), ActionCollection (Scripts)
 #: plugins/python/tenscripts/tenscripts.action:4
 #, fuzzy, kde-format
@@ -36562,6 +36823,48 @@ msgstr ""
 msgctxt "action"
 msgid "Execute Script 10"
 msgstr ""
+
+#: plugins/python/tenscripts/tenscripts.py:36
+#, fuzzy
+#| msgid "Subscript"
+msgid "Ten Scripts"
+msgstr "Dizo li Roye"
+
+#: plugins/python/tenscripts/tenscripts.py:37
+msgid "Assign ten scripts to ten shortcuts."
+msgstr ""
+
+#: plugins/python/tenscripts/tenscripts.py:58
+#, fuzzy, python-brace-format
+#| msgid "Create object"
+msgid "Execute Script {num}"
+msgstr "Ahiver èn objet"
+
+#: plugins/python/tenscripts/tenscripts.py:81
+#, python-brace-format
+msgid "Script {0} executed"
+msgstr ""
+
+#: plugins/python/tenscripts/tenscripts.py:85
+msgid "You did not assign a script to that action"
+msgstr ""
+
+#: plugins/python/tenscripts/uitenscripts.py:65
+#, fuzzy
+msgid "Selected path"
+msgstr "Tchoe&s di pådjes"
+
+#: plugins/python/tenscripts/uitenscripts.py:66
+#, fuzzy
+#| msgid "Delete the current action"
+msgid "Select the script"
+msgstr "Disfacer l' faitindje do moumint"
+
+#: plugins/python/tenscripts/uitenscripts.py:87
+#, fuzzy
+#| msgid "Small Tiles"
+msgid "Python files (*.py)"
+msgstr "Pitits cwåreas"
 
 #: plugins/tools/basictools/kis_tool_brush.cc:68
 #, fuzzy
@@ -39668,6 +39971,64 @@ msgid "Work Recursively"
 msgstr ""
 
 #, fuzzy
+#~ msgctxt "action"
+#~ msgid "Lazy Brush Tool"
+#~ msgstr "A - 2 Pincea dinamike"
+
+#, fuzzy
+#~ msgctxt "very shortened 'byte' suffix (for statusbar)"
+#~ msgid "b"
+#~ msgstr "Cb"
+
+#, fuzzy
+#~ msgctxt "very shortened KiB suffix (for statusbar)"
+#~ msgid "K"
+#~ msgstr "&I va"
+
+#, fuzzy
+#~ msgctxt "very shortened MiB suffix (for statusbar)"
+#~ msgid "M"
+#~ msgstr "M"
+
+#, fuzzy
+#~ msgid "Create"
+#~ msgstr "Ahiver"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "Abbreviation for kilobyte"
+#~ msgid "KB"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "B"
+#~ msgctxt "Abbreviation for megabyte"
+#~ msgid "MB"
+#~ msgstr "B"
+
+#, fuzzy
+#~| msgid "RGB"
+#~ msgctxt "Abbreviation for gigabyte"
+#~ msgid "GB"
+#~ msgstr "RVB"
+
+#, fuzzy
+#~ msgid "Export settings"
+#~ msgstr "Ebaguer"
+
+#, fuzzy
+#~ msgid "Add author"
+#~ msgstr "Anke"
+
+#, fuzzy
+#~ msgid "Remove author"
+#~ msgstr "Usteyes då &pondeu"
+
+#, fuzzy
+#~ msgid "Create a template"
+#~ msgstr "Ahiver"
+
+#, fuzzy
 #~ msgid "Open..."
 #~ msgstr "Drovi"
 
@@ -40750,10 +41111,6 @@ msgstr ""
 #~ msgstr "Cominçi a:"
 
 #, fuzzy
-#~ msgid "Document"
-#~ msgstr "Drovi e noveas documints"
-
-#, fuzzy
 #~ msgid "Continuation Notice:"
 #~ msgstr "Novea apontiaedje %1"
 
@@ -41544,15 +41901,6 @@ msgstr ""
 #~ msgstr "Krita"
 
 #, fuzzy
-#~| msgid "Export Layer"
-#~ msgid "Preparing to export frames..."
-#~ msgstr "Ebaguer coûtche"
-
-#, fuzzy
-#~ msgid "Export frames"
-#~ msgstr "Abaguer imådje"
-
-#, fuzzy
 #~ msgid "Enable OpenGL logging"
 #~ msgstr "Mete en alaedje OpenGL"
 
@@ -41565,10 +41913,6 @@ msgstr ""
 #~ msgctxt "action"
 #~ msgid "Lock/unlock layer"
 #~ msgstr "Mostrer paneas d' usteyes"
-
-#, fuzzy
-#~ msgid "Saving Document"
-#~ msgstr "Schaper documint"
 
 #, fuzzy
 #~ msgid ""
@@ -41894,10 +42238,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Naming Prefix:"
 #~ msgstr "Betchete:"
-
-#, fuzzy
-#~ msgid "Export sequence"
-#~ msgstr "Môde d' espozicion:"
 
 #, fuzzy
 #~ msgid "Render location:"
@@ -42982,11 +43322,6 @@ msgstr ""
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Reset the image background color in the Image Properties dialog"
 #~ msgstr "candjmint del coleur do fond"
-
-#, fuzzy
-#~ msgctxt "(qtundo-format)"
-#~ msgid "&Create"
-#~ msgstr "Ahiver"
 
 #, fuzzy
 #~ msgctxt "(qtundo-format)"
@@ -62094,10 +62429,6 @@ msgstr ""
 #~ msgstr "Coûtche %1"
 
 #, fuzzy
-#~ msgid "PNG Export Options"
-#~ msgstr "Tchuzes del djeyometreye"
-
-#, fuzzy
 #~ msgctxt "(qtundo-format)"
 #~ msgid "PNG Export Options"
 #~ msgstr "Tchuzes del djeyometreye"
@@ -65110,11 +65441,6 @@ msgstr ""
 #~ msgstr "Candjî passete"
 
 #, fuzzy
-#~| msgid "Small Tiles"
-#~ msgid "All files (*.*)"
-#~ msgstr "Pitits cwåreas"
-
-#, fuzzy
 #~| msgid "Move layer or mask down"
 #~ msgctxt "action"
 #~ msgid "Move Layer or Mask down"
@@ -66097,9 +66423,6 @@ msgstr ""
 #~ msgid "Limit to Color"
 #~ msgstr "Limiter al coleur"
 
-#~ msgid "Monitor profile: "
-#~ msgstr "Profil del waitroûle:"
-
 #~ msgid "&Monitor profile: "
 #~ msgstr "Profil del &waitroûle:"
 
@@ -66412,11 +66735,6 @@ msgstr ""
 #~| msgid "Filename"
 #~ msgid "Filename"
 #~ msgstr "No do fitchî"
-
-#, fuzzy
-#~| msgid "Total Refresh"
-#~ msgid "Refresh"
-#~ msgstr "Rafristaedje totå"
 
 #, fuzzy
 #~| msgid "Uninstall"
@@ -67386,9 +67704,6 @@ msgstr ""
 #~ msgid "Continue"
 #~ msgstr "Continouwer"
 
-#~ msgid "Success"
-#~ msgstr "Succès"
-
 #~ msgid "Painterly Color Space, %1 wavelengths"
 #~ msgstr "Espåce di coleurs di pondaedje, %1 wachlires"
 
@@ -67488,11 +67803,6 @@ msgstr ""
 #~| msgid "&Finish Polygon"
 #~ msgid "&Finish"
 #~ msgstr "&Fini poligone"
-
-#, fuzzy
-#~| msgid "Apply Profile"
-#~ msgid "Assign Profile"
-#~ msgstr "Mete en ouve profil"
 
 #~ msgid "X angle:"
 #~ msgstr "Inglêye X:"
