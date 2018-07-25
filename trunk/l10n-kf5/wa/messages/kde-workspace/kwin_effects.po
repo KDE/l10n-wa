@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin_effects\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-07-01 03:48+0200\n"
+"POT-Creation-Date: 2018-07-25 03:44+0200\n"
 "PO-Revision-Date: 2011-01-14 09:24+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -143,7 +143,8 @@ msgid "Default"
 msgstr "Prémetou"
 
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_Duration)
-#: coverswitch/coverswitch_config.ui:161 slide/slide_config.ui:35
+#: coverswitch/coverswitch_config.ui:161 glide/glide_config.ui:35
+#: slide/slide_config.ui:35
 #, fuzzy, kde-format
 #| msgid " millisecond"
 #| msgid_plural " milliseconds"
@@ -450,8 +451,11 @@ msgctxt "Desktop name alignment:"
 msgid "Disabled"
 msgstr "Essocté"
 
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_InRotationEdge)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_OutRotationEdge)
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #: desktopgrid/desktopgrid_config.cpp:77 flipswitch/flipswitch_config.ui:160
+#: glide/glide_config.ui:70 glide/glide_config.ui:168
 #, kde-format
 msgid "Top"
 msgstr "Al copete"
@@ -461,8 +465,11 @@ msgstr "Al copete"
 msgid "Top-Right"
 msgstr "Hôt droet"
 
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_InRotationEdge)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_OutRotationEdge)
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: desktopgrid/desktopgrid_config.cpp:79 flipswitch/flipswitch_config.ui:125
+#: glide/glide_config.ui:75 glide/glide_config.ui:173
 #, kde-format
 msgid "Right"
 msgstr "Droete"
@@ -472,8 +479,11 @@ msgstr "Droete"
 msgid "Bottom-Right"
 msgstr "Bas droet"
 
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_InRotationEdge)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_OutRotationEdge)
 #. i18n: ectx: property (text), widget (QLabel, label_8)
 #: desktopgrid/desktopgrid_config.cpp:81 flipswitch/flipswitch_config.ui:180
+#: glide/glide_config.ui:80 glide/glide_config.ui:178
 #, kde-format
 msgid "Bottom"
 msgstr "Bas"
@@ -483,8 +493,11 @@ msgstr "Bas"
 msgid "Bottom-Left"
 msgstr "Bas hintche"
 
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_InRotationEdge)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_OutRotationEdge)
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: desktopgrid/desktopgrid_config.cpp:83 flipswitch/flipswitch_config.ui:105
+#: glide/glide_config.ui:85 glide/glide_config.ui:183
 #, kde-format
 msgid "Left"
 msgstr "Hintche"
@@ -1141,41 +1154,58 @@ msgstr "Eplaeçmint di coutchî do dvant:"
 msgid "Vertical position of front:"
 msgstr "Eplaeçmint d' astampé do dvant:"
 
-#. i18n: ectx: property (text), widget (QLabel, glideEffectLabel)
-#: glide/glide_config.ui:17
-#, kde-format
-msgid "Glide Effect:"
-msgstr "Efet d' ridaedje :"
+#. i18n: ectx: property (text), widget (QLabel, label_Duration)
+#: glide/glide_config.ui:19 slide/slide_config.ui:19
+#, fuzzy, kde-format
+#| msgid "Duration"
+msgid "Duration:"
+msgstr "Durêye"
 
-#. i18n: ectx: property (text), widget (QLabel, inGlideEffectLabel)
-#: glide/glide_config.ui:42
-#, kde-format
-msgid "In"
-msgstr "Intrant"
+#. i18n: Duration of the slide animation.
+#. i18n: ectx: property (specialValueText), widget (QSpinBox, kcfg_Duration)
+#: glide/glide_config.ui:32 slide/slide_config.ui:32
+#, fuzzy, kde-format
+#| msgctxt "Duration of rotation"
+#| msgid "Default"
+msgid "Default"
+msgstr "Prémetou"
 
-#. i18n: ectx: property (text), widget (QLabel, outGlideEffectLabel)
-#: glide/glide_config.ui:71
-#, kde-format
-msgid "Out"
-msgstr "Rexhant"
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_InAnimation)
+#: glide/glide_config.ui:50
+#, fuzzy, kde-format
+#| msgid "Animation"
+msgid "Window Open Animation"
+msgstr "Animåcion"
 
-#. i18n: ectx: property (text), widget (QLabel, glideAngleLabel)
-#: glide/glide_config.ui:93
-#, kde-format
-msgid "Glide Angle:"
-msgstr "Inglêye do ridaedje :"
+#. i18n: ectx: property (text), widget (QLabel, label_InRotationEdge)
+#. i18n: ectx: property (text), widget (QLabel, label_OutRotationEdge)
+#: glide/glide_config.ui:56 glide/glide_config.ui:154
+#, fuzzy, kde-format
+#| msgid "Rotation duration:"
+msgid "Rotation edge:"
+msgstr "Tins do tournaedje:"
 
-#. i18n: ectx: property (text), widget (QLabel, glideAnglenegLabel)
-#: glide/glide_config.ui:118
-#, kde-format
-msgid "-90"
-msgstr "-90"
+#. i18n: ectx: property (text), widget (QLabel, label_InRotationAngle)
+#. i18n: ectx: property (text), widget (QLabel, label_OutRotationAngle)
+#: glide/glide_config.ui:93 glide/glide_config.ui:191
+#, fuzzy, kde-format
+#| msgid "Rotation duration:"
+msgid "Rotation angle:"
+msgstr "Tins do tournaedje:"
 
-#. i18n: ectx: property (text), widget (QLabel, glideAngleposLabel)
-#: glide/glide_config.ui:147
+#. i18n: ectx: property (text), widget (QLabel, label_InDistance)
+#. i18n: ectx: property (text), widget (QLabel, label_OutDistance)
+#: glide/glide_config.ui:119 glide/glide_config.ui:198
 #, kde-format
-msgid "90"
-msgstr "90"
+msgid "Distance:"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_OutAnimation)
+#: glide/glide_config.ui:148
+#, fuzzy, kde-format
+#| msgid "Animation"
+msgid "Window Close Animation"
+msgstr "Animåcion"
 
 #: invert/invert.cpp:45 invert/invert_config.cpp:52
 #, kde-format
@@ -1718,22 +1748,6 @@ msgstr "Coleur do tecse:"
 msgid "Text alpha:"
 msgstr "Alfa do tecse:"
 
-#. i18n: ectx: property (text), widget (QLabel, label_Duration)
-#: slide/slide_config.ui:19
-#, fuzzy, kde-format
-#| msgid "Duration"
-msgid "Duration:"
-msgstr "Durêye"
-
-#. i18n: Duration of the slide animation.
-#. i18n: ectx: property (specialValueText), widget (QSpinBox, kcfg_Duration)
-#: slide/slide_config.ui:32
-#, fuzzy, kde-format
-#| msgctxt "Duration of rotation"
-#| msgid "Default"
-msgid "Default"
-msgstr "Prémetou"
-
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_Gaps)
 #: slide/slide_config.ui:50
 #, kde-format
@@ -2153,6 +2167,24 @@ msgstr "Essocté"
 #, kde-format
 msgid "Mouse Tracking:"
 msgstr "Shuvaedje del sori :"
+
+#~ msgid "Glide Effect:"
+#~ msgstr "Efet d' ridaedje :"
+
+#~ msgid "In"
+#~ msgstr "Intrant"
+
+#~ msgid "Out"
+#~ msgstr "Rexhant"
+
+#~ msgid "Glide Angle:"
+#~ msgstr "Inglêye do ridaedje :"
+
+#~ msgid "-90"
+#~ msgstr "-90"
+
+#~ msgid "90"
+#~ msgstr "90"
 
 #, fuzzy
 #~| msgctxt "Duration of rotation"
