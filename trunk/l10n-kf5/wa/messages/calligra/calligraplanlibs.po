@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2019-01-24 02:51+0100\n"
+"POT-Creation-Date: 2019-01-29 02:56+0100\n"
 "PO-Revision-Date: 2009-08-20 10:18+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -299,8 +299,9 @@ msgstr "Tins ewal inte les deus"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, estimateType)
 #. i18n: ectx: property (title), widget (QGroupBox, ui_effort)
-#: kernel/kptnode.cpp:1609 ui/kptperformancestatusviewsettingspanel.ui:142
-#: ui/kpttaskgeneralpanelbase.ui:447 ui/TasksGeneralPanel.ui:396
+#: kernel/kptnode.cpp:1609 ui/kpttaskgeneralpanelbase.ui:447
+#: ui/performance/PerformanceStatusViewSettingsPanel.ui:142
+#: ui/TasksGeneralPanel.ui:396
 #, kde-format
 msgid "Effort"
 msgstr "Efoirt"
@@ -1472,7 +1473,8 @@ msgstr ""
 #: ui/kptaccountsviewconfigdialog.cpp:89 ui/kptdependencyeditor.cpp:1980
 #: ui/kptganttview.cpp:147 ui/kptganttview.cpp:978 ui/kptganttview.cpp:1268
 #: ui/kptitemviewsettup.cpp:201 ui/kptitemviewsettup.cpp:285
-#: ui/kptresourceappointmentsview.cpp:105 ui/kpttaskstatusview.cpp:1478
+#: ui/kptresourceappointmentsview.cpp:105
+#: ui/performance/ProjectStatusView.cpp:148
 #, fuzzy, kde-format
 msgid "Printing"
 msgstr "Pordjet"
@@ -5383,7 +5385,8 @@ msgstr "Apontiaedjes"
 #: ui/kptdependencyeditor.cpp:1981 ui/kptganttview.cpp:147
 #: ui/kptganttview.cpp:978 ui/kptganttview.cpp:1268
 #: ui/kptitemviewsettup.cpp:201 ui/kptitemviewsettup.cpp:285
-#: ui/kptresourceappointmentsview.cpp:106 ui/kpttaskstatusview.cpp:1479
+#: ui/kptresourceappointmentsview.cpp:106
+#: ui/performance/ProjectStatusView.cpp:149
 #, fuzzy, kde-format
 #| msgid "Options"
 msgid "Printing Options"
@@ -5970,8 +5973,8 @@ msgstr ""
 msgid "Divide chart on multiple pages"
 msgstr ""
 
-#: ui/kptganttview.cpp:137 ui/kpttaskstatusview.cpp:1448
-#: ui/kpttaskstatusview.cpp:1463
+#: ui/kptganttview.cpp:137 ui/performance/PerformanceStatusView.cpp:319
+#: ui/performance/ProjectStatusView.cpp:133
 #, kde-format
 msgid "Chart"
 msgstr "Grafike"
@@ -6362,109 +6365,6 @@ msgstr "Avançmint des etapes"
 msgctxt "(qtundo-format)"
 msgid "Modify milestone completion"
 msgstr "Candjî completaedje di l' etape"
-
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: ui/kptperformancestatusviewsettingspanel.ui:17
-#, fuzzy, kde-format
-#| msgid "Chart"
-msgid "Chart type"
-msgstr "Grafike"
-
-#. i18n: ectx: property (text), widget (QRadioButton, ui_linechart)
-#: ui/kptperformancestatusviewsettingspanel.ui:23
-#, fuzzy, kde-format
-#| msgid "Chart"
-msgid "Line chart"
-msgstr "Grafike"
-
-#. i18n: ectx: property (text), widget (QRadioButton, ui_barchart)
-#: ui/kptperformancestatusviewsettingspanel.ui:33
-#, fuzzy, kde-format
-#| msgid "Chart"
-msgid "Bar chart"
-msgstr "Grafike"
-
-#. i18n: ectx: property (text), widget (QRadioButton, ui_table)
-#: ui/kptperformancestatusviewsettingspanel.ui:40
-#, kde-format
-msgid "Table"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QRadioButton, ui_showbasevalues)
-#: ui/kptperformancestatusviewsettingspanel.ui:59
-#, fuzzy, kde-format
-#| msgid "Baseline"
-msgid "Base values"
-msgstr "Referince"
-
-#. i18n: ectx: property (text), widget (QRadioButton, ui_showindices)
-#: ui/kptperformancestatusviewsettingspanel.ui:69
-#, kde-format
-msgid "Indices"
-msgstr ""
-
-#. i18n: ectx: property (title), widget (QGroupBox, ui_cost)
-#. i18n: ectx: property (title), widget (QGroupBox, ui_costgroup)
-#: ui/kptperformancestatusviewsettingspanel.ui:91 ui/resourcedialogbase.ui:414
-#, kde-format
-msgid "Cost"
-msgstr "Costindje"
-
-#. i18n: ectx: property (text), widget (QCheckBox, ui_bcwsCost)
-#. i18n: ectx: property (text), widget (QCheckBox, ui_bcwsEffort)
-#: ui/kptperformancestatusviewsettingspanel.ui:106
-#: ui/kptperformancestatusviewsettingspanel.ui:154
-#, fuzzy, kde-format
-#| msgctxt "Budgeted Cost of Work Scheduled"
-#| msgid "BCWS (Cost)"
-msgid "Show BCWS plot"
-msgstr "BCWS (costindje)"
-
-#. i18n: ectx: property (text), widget (QCheckBox, ui_bcwpCost)
-#. i18n: ectx: property (text), widget (QCheckBox, ui_bcwpEffort)
-#: ui/kptperformancestatusviewsettingspanel.ui:116
-#: ui/kptperformancestatusviewsettingspanel.ui:164
-#, fuzzy, kde-format
-#| msgid "Project"
-msgid "Show BCWP plot"
-msgstr "Pordjet"
-
-#. i18n: ectx: property (text), widget (QCheckBox, ui_acwpCost)
-#. i18n: ectx: property (text), widget (QCheckBox, ui_acwpEffort)
-#: ui/kptperformancestatusviewsettingspanel.ui:126
-#: ui/kptperformancestatusviewsettingspanel.ui:174
-#, fuzzy, kde-format
-#| msgid "Project"
-msgid "Show ACWP plot"
-msgstr "Pordjet"
-
-#. i18n: ectx: property (text), widget (QCheckBox, ui_spicost)
-#: ui/kptperformancestatusviewsettingspanel.ui:194
-#, fuzzy, kde-format
-#| msgctxt "Budgeted Cost of Work Scheduled"
-#| msgid "BCWS (Cost)"
-msgid "SPI Cost"
-msgstr "BCWS (costindje)"
-
-#. i18n: ectx: property (text), widget (QCheckBox, ui_spieffort)
-#: ui/kptperformancestatusviewsettingspanel.ui:204
-#, fuzzy, kde-format
-msgid "SPI Effort"
-msgstr "Efoirt"
-
-#. i18n: ectx: property (text), widget (QCheckBox, ui_cpieffort)
-#: ui/kptperformancestatusviewsettingspanel.ui:211
-#, fuzzy, kde-format
-msgid "CPI Effort"
-msgstr "Efoirt"
-
-#. i18n: ectx: property (text), widget (QCheckBox, ui_cpicost)
-#: ui/kptperformancestatusviewsettingspanel.ui:218
-#, fuzzy, kde-format
-#| msgctxt "Budgeted Cost of Work Performed"
-#| msgid "BCWP (Cost)"
-msgid "CPI Cost"
-msgstr "BCWP (costindje)"
 
 #: ui/kptperteditor.cpp:165
 #, fuzzy
@@ -6945,7 +6845,7 @@ msgctxt "(qtundo-format)"
 msgid "Modify project description"
 msgstr "Candjî completaedje del bouye"
 
-#: ui/kpttaskdescriptiondialog.cpp:137
+#: ui/kpttaskdescriptiondialog.cpp:142
 #, fuzzy, kde-format
 msgid "Task Description"
 msgstr "Discrijhaedje"
@@ -7395,45 +7295,6 @@ msgstr ""
 msgid "General Settings"
 msgstr "Apontiaedjes djenerås"
 
-#: ui/kpttaskstatusview.cpp:478
-#, kde-kuit-format
-msgctxt "@info:whatsthis"
-msgid ""
-"<title>Project Performance View</title><para>Displays performance data "
-"aggregated to the project level.</para><para>This view supports "
-"configuration and printing using the context menu.<nl/><link url='%1'>More..."
-"</link></para>"
-msgstr ""
-
-#: ui/kpttaskstatusview.cpp:1005 ui/kpttaskstatusview.cpp:1008
-#, fuzzy, kde-format
-#| msgid "Cost"
-msgctxt "Chart axis title 1=currency symbol"
-msgid "Cost (%1)"
-msgstr "Costindje"
-
-#: ui/kpttaskstatusview.cpp:1006 ui/kpttaskstatusview.cpp:1009
-#, fuzzy, kde-format
-#| msgid "Effort"
-msgctxt "Chart axis title"
-msgid "Effort (hours)"
-msgstr "Efoirt"
-
-#: ui/kpttaskstatusview.cpp:1231
-#, kde-kuit-format
-msgctxt "@info:whatsthis"
-msgid ""
-"<title>Task Performance View</title><para>Displays performance data "
-"aggregated to the selected task.</para><para>This view supports "
-"configuration and printing using the context menu.<nl/><link url='%1'>More..."
-"</link></para>"
-msgstr ""
-
-#: ui/kpttaskstatusview.cpp:1448 ui/kpttaskstatusview.cpp:1464
-#, kde-format
-msgid "Chart Settings"
-msgstr "Apontiaedjes do grafike"
-
 #. i18n: ectx: property (title), widget (QGroupBox, periodGroupBox)
 #: ui/kpttaskstatusviewsettingspanel.ui:16
 #, fuzzy, kde-format
@@ -7698,6 +7559,152 @@ msgstr ""
 #: ui/locale/localemon.ui:32
 #, kde-format
 msgid "Fractional digits:"
+msgstr ""
+
+#: ui/performance/PerformanceStatusBase.cpp:513
+#: ui/performance/PerformanceStatusBase.cpp:516
+#, fuzzy, kde-format
+#| msgid "Cost"
+msgctxt "Chart axis title 1=currency symbol"
+msgid "Cost (%1)"
+msgstr "Costindje"
+
+#: ui/performance/PerformanceStatusBase.cpp:514
+#: ui/performance/PerformanceStatusBase.cpp:517
+#, fuzzy, kde-format
+#| msgid "Effort"
+msgctxt "Chart axis title"
+msgid "Effort (hours)"
+msgstr "Efoirt"
+
+#: ui/performance/PerformanceStatusView.cpp:203
+#, kde-kuit-format
+msgctxt "@info:whatsthis"
+msgid ""
+"<title>Task Performance View</title><para>Displays performance data "
+"aggregated to the selected task.</para><para>This view supports "
+"configuration and printing using the context menu.<nl/><link url='%1'>More..."
+"</link></para>"
+msgstr ""
+
+#: ui/performance/PerformanceStatusView.cpp:319
+#: ui/performance/ProjectStatusView.cpp:134
+#, kde-format
+msgid "Chart Settings"
+msgstr "Apontiaedjes do grafike"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: ui/performance/PerformanceStatusViewSettingsPanel.ui:17
+#, fuzzy, kde-format
+#| msgid "Chart"
+msgid "Chart type"
+msgstr "Grafike"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_linechart)
+#: ui/performance/PerformanceStatusViewSettingsPanel.ui:23
+#, fuzzy, kde-format
+#| msgid "Chart"
+msgid "Line chart"
+msgstr "Grafike"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_barchart)
+#: ui/performance/PerformanceStatusViewSettingsPanel.ui:33
+#, fuzzy, kde-format
+#| msgid "Chart"
+msgid "Bar chart"
+msgstr "Grafike"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_table)
+#: ui/performance/PerformanceStatusViewSettingsPanel.ui:40
+#, kde-format
+msgid "Table"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_showbasevalues)
+#: ui/performance/PerformanceStatusViewSettingsPanel.ui:59
+#, fuzzy, kde-format
+#| msgid "Baseline"
+msgid "Base values"
+msgstr "Referince"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_showindices)
+#: ui/performance/PerformanceStatusViewSettingsPanel.ui:69
+#, kde-format
+msgid "Indices"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, ui_cost)
+#. i18n: ectx: property (title), widget (QGroupBox, ui_costgroup)
+#: ui/performance/PerformanceStatusViewSettingsPanel.ui:91
+#: ui/resourcedialogbase.ui:414
+#, kde-format
+msgid "Cost"
+msgstr "Costindje"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_bcwsCost)
+#. i18n: ectx: property (text), widget (QCheckBox, ui_bcwsEffort)
+#: ui/performance/PerformanceStatusViewSettingsPanel.ui:106
+#: ui/performance/PerformanceStatusViewSettingsPanel.ui:154
+#, fuzzy, kde-format
+#| msgctxt "Budgeted Cost of Work Scheduled"
+#| msgid "BCWS (Cost)"
+msgid "Show BCWS plot"
+msgstr "BCWS (costindje)"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_bcwpCost)
+#. i18n: ectx: property (text), widget (QCheckBox, ui_bcwpEffort)
+#: ui/performance/PerformanceStatusViewSettingsPanel.ui:116
+#: ui/performance/PerformanceStatusViewSettingsPanel.ui:164
+#, fuzzy, kde-format
+#| msgid "Project"
+msgid "Show BCWP plot"
+msgstr "Pordjet"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_acwpCost)
+#. i18n: ectx: property (text), widget (QCheckBox, ui_acwpEffort)
+#: ui/performance/PerformanceStatusViewSettingsPanel.ui:126
+#: ui/performance/PerformanceStatusViewSettingsPanel.ui:174
+#, fuzzy, kde-format
+#| msgid "Project"
+msgid "Show ACWP plot"
+msgstr "Pordjet"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_spicost)
+#: ui/performance/PerformanceStatusViewSettingsPanel.ui:194
+#, fuzzy, kde-format
+#| msgctxt "Budgeted Cost of Work Scheduled"
+#| msgid "BCWS (Cost)"
+msgid "SPI Cost"
+msgstr "BCWS (costindje)"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_spieffort)
+#: ui/performance/PerformanceStatusViewSettingsPanel.ui:204
+#, fuzzy, kde-format
+msgid "SPI Effort"
+msgstr "Efoirt"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_cpieffort)
+#: ui/performance/PerformanceStatusViewSettingsPanel.ui:211
+#, fuzzy, kde-format
+msgid "CPI Effort"
+msgstr "Efoirt"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_cpicost)
+#: ui/performance/PerformanceStatusViewSettingsPanel.ui:218
+#, fuzzy, kde-format
+#| msgctxt "Budgeted Cost of Work Performed"
+#| msgid "BCWP (Cost)"
+msgid "CPI Cost"
+msgstr "BCWP (costindje)"
+
+#: ui/performance/ProjectStatusView.cpp:61
+#, kde-kuit-format
+msgctxt "@info:whatsthis"
+msgid ""
+"<title>Project Performance View</title><para>Displays performance data "
+"aggregated to the project level.</para><para>This view supports "
+"configuration and printing using the context menu.<nl/><link url='%1'>More..."
+"</link></para>"
 msgstr ""
 
 #: ui/projectview/ProjectView.cpp:52
