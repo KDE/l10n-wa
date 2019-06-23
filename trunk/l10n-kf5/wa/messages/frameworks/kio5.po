@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkio\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-06-22 02:53+0200\n"
+"POT-Creation-Date: 2019-06-23 02:55+0200\n"
 "PO-Revision-Date: 2012-07-04 22:08+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -294,7 +294,7 @@ msgid ""
 "Root privileges are required to complete renaming. Do you want to continue?"
 msgstr ""
 
-#: core/job.cpp:318 filewidgets/knewfilemenu.cpp:549
+#: core/job.cpp:318 filewidgets/knewfilemenu.cpp:529
 #, fuzzy, kde-format
 #| msgid "Could Not Create Symbolic Link"
 msgid "Create Symlink"
@@ -3810,13 +3810,13 @@ msgstr ""
 "da vosse el boesse di tecse.</p><p>Vos poloz bén eployî des djokers come * "
 "ou ? </p></qt>"
 
-#: filewidgets/knewfilemenu.cpp:389
+#: filewidgets/knewfilemenu.cpp:395
 #, fuzzy, kde-format
 #| msgid "Store"
 msgid "Sorry"
 msgstr "Wårder"
 
-#: filewidgets/knewfilemenu.cpp:398
+#: filewidgets/knewfilemenu.cpp:404
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>Unable to run the command specified. The file or folder <b>%1</b> "
@@ -3826,65 +3826,38 @@ msgstr ""
 "<qt>Nén moyén d' enonder li cmande ki vos djhoz. Motoit ki l' fitchî ou "
 "l' ridant <b>%1</b> n' egzistêye nén.</qt>"
 
-#: filewidgets/knewfilemenu.cpp:416
+#: filewidgets/knewfilemenu.cpp:526 filewidgets/knewfilemenu.cpp:607
 #, fuzzy, kde-format
-#| msgctxt "@title job"
-#| msgid "Creating directory"
-msgctxt "@action:button"
-msgid "Create directory"
-msgstr "Ahivant ridant"
+#| msgid "Device name"
+msgid "File name:"
+msgstr "No d' l' éndjine"
 
-#: filewidgets/knewfilemenu.cpp:418 filewidgets/knewfilemenu.cpp:867
+#: filewidgets/knewfilemenu.cpp:611
+#, fuzzy, kde-format
+#| msgid "C&reate"
+msgid "Create link to URL"
+msgstr "A&hiver"
+
+#: filewidgets/knewfilemenu.cpp:657 filewidgets/knewfilemenu.cpp:714
+#, kde-format
+msgctxt "@item:inmenu Create New"
+msgid "%1"
+msgstr ""
+
+#: filewidgets/knewfilemenu.cpp:847
 #, fuzzy, kde-format
 #| msgid "Ru&n as a different user"
 msgctxt "@action:button"
 msgid "Enter a Different Name"
 msgstr "Enonder come èn ôte &uzeu"
 
-#: filewidgets/knewfilemenu.cpp:422
-#, fuzzy, kde-format
-#| msgctxt "@title job"
-#| msgid "Creating directory"
-msgid "Create hidden directory?"
-msgstr "Ahivant ridant"
-
-#: filewidgets/knewfilemenu.cpp:432
-#, kde-format
-msgid ""
-"The name \"%1\" starts with a dot, so the directory will be hidden by "
-"default."
-msgstr ""
-
-#: filewidgets/knewfilemenu.cpp:434 widgets/executablefileopendialog.cpp:36
-#, kde-format
-msgid "Do not ask again"
-msgstr ""
-
-#: filewidgets/knewfilemenu.cpp:546 filewidgets/knewfilemenu.cpp:627
-#, fuzzy, kde-format
-#| msgid "Device name"
-msgid "File name:"
-msgstr "No d' l' éndjine"
-
-#: filewidgets/knewfilemenu.cpp:631
-#, fuzzy, kde-format
-#| msgid "C&reate"
-msgid "Create link to URL"
-msgstr "A&hiver"
-
-#: filewidgets/knewfilemenu.cpp:677 filewidgets/knewfilemenu.cpp:734
-#, kde-format
-msgctxt "@item:inmenu Create New"
-msgid "%1"
-msgstr ""
-
-#: filewidgets/knewfilemenu.cpp:871
+#: filewidgets/knewfilemenu.cpp:851
 #, fuzzy, kde-format
 #| msgid "Invalid Filenames"
 msgid "Invalid Directory Name"
 msgstr "Måva no(s) di fitchî(s)"
 
-#: filewidgets/knewfilemenu.cpp:880
+#: filewidgets/knewfilemenu.cpp:860
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -3892,36 +3865,80 @@ msgid ""
 "it is reserved for use by the operating system."
 msgstr ""
 
-#: filewidgets/knewfilemenu.cpp:1140
+#: filewidgets/knewfilemenu.cpp:1060
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"The name <filename>%1</filename> cannot be used because it is reserved for "
+"use by the operating system."
+msgstr ""
+
+#: filewidgets/knewfilemenu.cpp:1068
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"The name <filename>%1</filename> starts with a dot, so it will be hidden by "
+"default."
+msgstr ""
+
+#: filewidgets/knewfilemenu.cpp:1085
+#, kde-format
+msgid "Using slashes in folder names will create sub-folders, like so:"
+msgstr ""
+
+#: filewidgets/knewfilemenu.cpp:1095
+#, kde-format
+msgid "Using slashes in folder names will create sub-folders."
+msgstr ""
+
+#: filewidgets/knewfilemenu.cpp:1107
+#, kde-format
+msgid "Slashes cannot be used in file and folder names."
+msgstr ""
+
+#: filewidgets/knewfilemenu.cpp:1113
+#, kde-format
+msgid "Backslashes cannot be used in file and folder names."
+msgstr ""
+
+#: filewidgets/knewfilemenu.cpp:1122
+#, kde-format
+msgid ""
+"Starting a file or folder name with a tilde is not recommended because it "
+"may be confusing or dangerous when using the terminal to delete things."
+msgstr ""
+
+#: filewidgets/knewfilemenu.cpp:1195
 #, fuzzy, kde-format
 #| msgid "C&reate"
 msgid "Create New"
 msgstr "A&hiver"
 
-#: filewidgets/knewfilemenu.cpp:1155
+#: filewidgets/knewfilemenu.cpp:1210
 #, fuzzy, kde-format
 #| msgid "Device"
 msgid "Link to Device"
 msgstr "Éndjin"
 
-#: filewidgets/knewfilemenu.cpp:1209
+#: filewidgets/knewfilemenu.cpp:1264
 #, fuzzy, kde-format
 #| msgid "New Folder"
 msgctxt "Default name for a new folder"
 msgid "New Folder"
 msgstr "Novea ridant"
 
-#: filewidgets/knewfilemenu.cpp:1219
+#: filewidgets/knewfilemenu.cpp:1275
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "Novea ridant"
 
-#: filewidgets/knewfilemenu.cpp:1222
-#, kde-format
-msgid ""
-"Create new folder in:\n"
-"%1"
+#: filewidgets/knewfilemenu.cpp:1285
+#, fuzzy, kde-format
+#| msgid ""
+#| "Create new folder in:\n"
+#| "%1"
+msgid "Create new folder in %1:"
 msgstr ""
 "Fé on novea ridant dins:\n"
 "%1"
@@ -7149,6 +7166,11 @@ msgstr ""
 msgid "What do you wish to do with this executable file?"
 msgstr ""
 
+#: widgets/executablefileopendialog.cpp:36
+#, kde-format
+msgid "Do not ask again"
+msgstr ""
+
 #: widgets/executablefileopendialog.cpp:39
 #, fuzzy, kde-format
 #| msgid "Exec"
@@ -9267,6 +9289,19 @@ msgid ""
 "The remote host did not send any SSL certificates.\n"
 "Aborting because the identity of the host cannot be established."
 msgstr ""
+
+#, fuzzy
+#~| msgctxt "@title job"
+#~| msgid "Creating directory"
+#~ msgctxt "@action:button"
+#~ msgid "Create directory"
+#~ msgstr "Ahivant ridant"
+
+#, fuzzy
+#~| msgctxt "@title job"
+#~| msgid "Creating directory"
+#~ msgid "Create hidden directory?"
+#~ msgstr "Ahivant ridant"
 
 #~ msgid "Show Aside Preview"
 #~ msgstr "Mostrer prévoeyaedje l' onk a costé di l' ôte"
