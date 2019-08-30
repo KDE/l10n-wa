@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksysguard\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-08-29 07:24+0200\n"
+"POT-Creation-Date: 2019-08-30 07:51+0200\n"
 "PO-Revision-Date: 2011-07-11 21:53+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -133,162 +133,205 @@ msgstr ""
 msgid "e.g. ssh -l root remote.host.org ksysguardd"
 msgstr "metans ssh -l root remote.host.org ksysguardd"
 
-#: ksysguard.cpp:74
+#: ksysguard.cpp:76
 #, kde-format
 msgid "KDE System Monitor"
 msgstr "Corwaitoe sistinme da KDE"
 
-#: ksysguard.cpp:161 ksysguard.cpp:536
+#: ksysguard.cpp:159
+#, kde-format
+msgid ""
+"This will hide the menu bar completely. You can show it again by typing %1."
+msgstr ""
+
+#: ksysguard.cpp:161
+#, kde-format
+msgid "Hide menu bar"
+msgstr ""
+
+#: ksysguard.cpp:179 ksysguard.cpp:571
 #, kde-format
 msgid "System Monitor"
 msgstr "Corwaitoe do sistinme"
 
-#: ksysguard.cpp:162
+#: ksysguard.cpp:180
 #, kde-format
 msgid "&Refresh Tab"
 msgstr "&Ritcherdjî linwete"
 
-#: ksysguard.cpp:163
+#: ksysguard.cpp:181
 #, kde-format
 msgid "&New Tab..."
 msgstr "&Novele linwete..."
 
-#: ksysguard.cpp:164
+#: ksysguard.cpp:182
 #, kde-format
 msgid "Import Tab Fr&om File..."
 msgstr "Abaguer linwete a pårti d' on fitchî"
 
-#: ksysguard.cpp:165
+#: ksysguard.cpp:183
 #, kde-format
 msgid "Save Tab &As..."
 msgstr "Sch&aper et rlomer linwete..."
 
-#: ksysguard.cpp:166
+#: ksysguard.cpp:184
 #, kde-format
 msgid "&Close Tab"
 msgstr "&Clôre linwete"
 
-#: ksysguard.cpp:167
+#: ksysguard.cpp:185
 #, kde-format
 msgid "Monitor &Remote Machine..."
 msgstr "Corwaitî des éndjoles då &lon..."
 
-#: ksysguard.cpp:168
+#: ksysguard.cpp:186
 #, kde-format
 msgid "&Download New Tabs..."
 msgstr "&Aberweter novelès linwetes..."
 
-#: ksysguard.cpp:169
+#: ksysguard.cpp:187
 #, kde-format
 msgid "&Upload Current Tab..."
 msgstr "Eberweter linwete do moumint..."
 
-#: ksysguard.cpp:171
+#: ksysguard.cpp:189
 #, kde-format
 msgid "Tab &Properties"
 msgstr "&Prôpietés del linwete"
 
-#: ksysguard.cpp:366
+#: ksysguard.cpp:386
 #, fuzzy, kde-format
 #| msgid "1 process1"
 #| msgid_plural "%1 processes%1"
-msgid "1 process1"
-msgid_plural "%1 processes%1"
+msgid "1 process"
+msgid_plural "%1 processes"
 msgstr[0] "1 processus1"
 msgstr[1] "%1 processus%1"
 
-#: ksysguard.cpp:445
+#: ksysguard.cpp:467
 #, fuzzy, kde-format
 #| msgid "CPU: %1%%1%"
-msgid "CPU: %1%%1%"
+msgid "CPU: %1%"
 msgstr "CPU : %1%%1%"
 
-#: ksysguard.cpp:460
-#, kde-format
-msgctxt "Arguments are formatted byte sizes (used/total)"
-msgid "Memory: %1 / %2Mem: %1 / %2Mem: %1%1"
-msgstr "Memwere : %1 / %2Mem : %1 / %2Mem : %1%1"
+#: ksysguard.cpp:467
+#, fuzzy, kde-format
+#| msgctxt "units"
+#| msgid "%1%"
+msgctxt "This is the shorter version of CPU: %1%"
+msgid "%1%"
+msgstr "%1%"
 
-#: ksysguard.cpp:487
+#: ksysguard.cpp:486
+#, fuzzy, kde-format
+#| msgid " Memory: %1 / %2 "
+msgctxt "Arguments are formatted byte sizes (used/total)"
+msgid "Memory: %1 / %2"
+msgstr " Memwere: %1 / %2 "
+
+#: ksysguard.cpp:488
+#, fuzzy, kde-format
+#| msgid " Memory: %1 / %2 "
+msgctxt ""
+"Arguments are formatted byte sizes (used/total) This should be a shorter "
+"version of the previous Memory: %1 / %2"
+msgid "Mem: %1 / %2"
+msgstr " Memwere: %1 / %2 "
+
+#: ksysguard.cpp:490
+#, fuzzy, kde-format
+#| msgid " Memory: %1 / %2 "
+msgctxt ""
+"Arguments is formatted byte sizes (used) This should be a shorter version of "
+"the previous Mem: %1 / %2"
+msgid "Mem: %1"
+msgstr " Memwere: %1 / %2 "
+
+#: ksysguard.cpp:518
 #, kde-format
 msgid " No swap space available "
 msgstr " Gn a pont espåce sol swap "
 
-#: ksysguard.cpp:489
+#: ksysguard.cpp:522
 #, fuzzy, kde-format
-#| msgctxt "Arguments are formatted byte sizes (used/total)"
-#| msgid "Swap: %1 / %2Swap: %1%1"
+#| msgid " Memory: %1 / %2 "
 msgctxt "Arguments are formatted byte sizes (used/total)"
-msgid "Swap: %1 / %2Swap: %1%1"
-msgstr "Swap : %1 / %2Swap : %1%1"
+msgid "Swap: %1 / %2"
+msgstr " Memwere: %1 / %2 "
 
-#: ksysguard.cpp:538
+#: ksysguard.cpp:524
+#, kde-format
+msgctxt "Arguments is formatted byte sizes (used)"
+msgid "Swap: %1"
+msgstr ""
+
+#: ksysguard.cpp:573
 #, fuzzy, kde-format
 #| msgid "(c) 1996-2008 The KDE System Monitor Developers"
 msgid "(c) 1996-2016 The KDE System Monitor Developers"
 msgstr "© 1996-2008 Les programeus do Corwaitoe do sistinme da KDE"
 
-#: ksysguard.cpp:540
+#: ksysguard.cpp:575
 #, kde-format
 msgid "John Tapsell"
 msgstr "John Tapsell"
 
-#: ksysguard.cpp:540
+#: ksysguard.cpp:575
 #, kde-format
 msgid "Current Maintainer"
 msgstr "Mintneu do moumint"
 
-#: ksysguard.cpp:541
+#: ksysguard.cpp:576
 #, kde-format
 msgid "Chris Schlaeger"
 msgstr "Chris Schlaeger"
 
-#: ksysguard.cpp:541
+#: ksysguard.cpp:576
 #, kde-format
 msgid "Previous Maintainer"
 msgstr "Mintneu di dvant"
 
-#: ksysguard.cpp:542
+#: ksysguard.cpp:577
 #, kde-format
 msgid "Greg Martyn"
 msgstr "Greg Martyn"
 
-#: ksysguard.cpp:543
+#: ksysguard.cpp:578
 #, kde-format
 msgid "Tobias Koenig"
 msgstr "Tobias Koenig"
 
-#: ksysguard.cpp:544
+#: ksysguard.cpp:579
 #, kde-format
 msgid "Nicolas Leclercq"
 msgstr "Nicolas Leclercq"
 
-#: ksysguard.cpp:545
+#: ksysguard.cpp:580
 #, kde-format
 msgid "Alex Sanda"
 msgstr "Alex Sanda"
 
-#: ksysguard.cpp:546
+#: ksysguard.cpp:581
 #, kde-format
 msgid "Bernd Johannes Wuebben"
 msgstr "Bernd Johannes Wuebben"
 
-#: ksysguard.cpp:547
+#: ksysguard.cpp:582
 #, kde-format
 msgid "Ralf Mueller"
 msgstr "Ralf Mueller"
 
-#: ksysguard.cpp:548
+#: ksysguard.cpp:583
 #, kde-format
 msgid "Hamish Rodda"
 msgstr "Hamish Rodda"
 
-#: ksysguard.cpp:549
+#: ksysguard.cpp:584
 #, kde-format
 msgid "Torsten Kasch"
 msgstr "Torsten Kasch"
 
-#: ksysguard.cpp:549
+#: ksysguard.cpp:584
 #, kde-format
 msgid ""
 "Solaris Support\n"
@@ -299,7 +342,7 @@ msgstr ""
 "Pårteyes ki vnèt (avou l' permission) do module\n"
 "sunos5 di l' usteye « top » då William LeFebvre."
 
-#: ksysguard.cpp:558
+#: ksysguard.cpp:593
 #, kde-format
 msgid "Optional worksheet files to load"
 msgstr "Fitchîs di tåvlea nén rekis a tcherdjî"
@@ -599,7 +642,7 @@ msgstr "<p><b>%1 :</b><br>"
 #: SensorDisplayLib/FancyPlotter.cpp:597
 #, fuzzy, kde-format
 #| msgid "%1 of %2%1"
-msgid "%1 of %2%1"
+msgid "%1 of %2"
 msgstr "%1 di %2%1"
 
 #: SensorDisplayLib/FancyPlotter.cpp:625
@@ -1014,12 +1057,12 @@ msgstr "Coleur do xhuflet:"
 msgid "Bac&kground color:"
 msgstr "Coleur di fond :"
 
-#: SensorDisplayLib/SensorDisplay.cpp:116 SensorDisplayLib/SensorLogger.cpp:597
+#: SensorDisplayLib/SensorDisplay.cpp:116 SensorDisplayLib/SensorLogger.cpp:588
 #, kde-format
 msgid "&Properties"
 msgstr "&Prôpietés"
 
-#: SensorDisplayLib/SensorDisplay.cpp:121 SensorDisplayLib/SensorLogger.cpp:602
+#: SensorDisplayLib/SensorDisplay.cpp:121 SensorDisplayLib/SensorLogger.cpp:593
 #, kde-format
 msgid "&Remove Display"
 msgstr "&Oister håynaedje"
@@ -1033,63 +1076,63 @@ msgid ""
 "p>%1</qt>"
 msgstr ""
 
-#: SensorDisplayLib/SensorLogger.cpp:137
+#: SensorDisplayLib/SensorLogger.cpp:133
 #, fuzzy, kde-format
 #| msgid "Logging"
 msgctxt "@title:column"
 msgid "Logging"
 msgstr "Edjîstraedje e djournå"
 
-#: SensorDisplayLib/SensorLogger.cpp:140
+#: SensorDisplayLib/SensorLogger.cpp:135
 #, fuzzy, kde-format
 #| msgid "Timer Interval"
 msgctxt "@title:column"
 msgid "Timer Interval"
 msgstr "Munutreye totes les"
 
-#: SensorDisplayLib/SensorLogger.cpp:143
+#: SensorDisplayLib/SensorLogger.cpp:137
 #, fuzzy, kde-format
 #| msgid "Sensor Name"
 msgctxt "@title:column"
 msgid "Sensor Name"
 msgstr "No do sinteu"
 
-#: SensorDisplayLib/SensorLogger.cpp:146
+#: SensorDisplayLib/SensorLogger.cpp:139
 #, fuzzy, kde-format
 #| msgid "Host Name"
 msgctxt "@title:column"
 msgid "Host Name"
 msgstr "No do lodjoe"
 
-#: SensorDisplayLib/SensorLogger.cpp:149
+#: SensorDisplayLib/SensorLogger.cpp:141
 #, fuzzy, kde-format
 #| msgid "Log File"
 msgctxt "@title:column"
 msgid "Log File"
 msgstr "Fitchî djournå"
 
-#: SensorDisplayLib/SensorLogger.cpp:428
+#: SensorDisplayLib/SensorLogger.cpp:419
 #: SensorDisplayLib/SensorLoggerDlg.cpp:30
 #, kde-format
 msgid "Sensor Logger"
 msgstr "Edjistreu e djournå do sinteu"
 
-#: SensorDisplayLib/SensorLogger.cpp:607
+#: SensorDisplayLib/SensorLogger.cpp:598
 #, kde-format
 msgid "&Remove Sensor"
 msgstr "&Oister sinteu"
 
-#: SensorDisplayLib/SensorLogger.cpp:612
+#: SensorDisplayLib/SensorLogger.cpp:603
 #, kde-format
 msgid "&Edit Sensor..."
 msgstr "&Candjî sinteu..."
 
-#: SensorDisplayLib/SensorLogger.cpp:620
+#: SensorDisplayLib/SensorLogger.cpp:611
 #, kde-format
 msgid "St&op Logging"
 msgstr "A&rester edjistraedje e djournå"
 
-#: SensorDisplayLib/SensorLogger.cpp:623
+#: SensorDisplayLib/SensorLogger.cpp:614
 #, kde-format
 msgid "S&tart Logging"
 msgstr "E&nonder edjistraedje e djournå"
@@ -1109,8 +1152,7 @@ msgid "Timer Interval"
 msgstr "Munutreye totes les"
 
 #. i18n: ectx: property (suffix), widget (QSpinBox, m_timerInterval)
-#: SensorDisplayLib/SensorLoggerDlgWidget.ui:59 TimerSettings.cpp:57
-#: WorkSheetSettings.cpp:111
+#: SensorDisplayLib/SensorLoggerDlgWidget.ui:59 WorkSheetSettings.cpp:111
 #, kde-format
 msgid " sec"
 msgstr " seg"
@@ -1126,27 +1168,27 @@ msgstr "Apontiaedjes di l' edjistreu e djournå do sinteu"
 msgid "Alarm color:"
 msgstr "Coleur do xhuflet:"
 
-#: SensorDisplayLib/SensorModel.cpp:166
+#: SensorDisplayLib/SensorModel.cpp:161
 #, kde-format
 msgid "Host"
 msgstr "Lodjoe"
 
-#: SensorDisplayLib/SensorModel.cpp:169
+#: SensorDisplayLib/SensorModel.cpp:163
 #, kde-format
 msgid "Sensor"
 msgstr "Sinteu"
 
-#: SensorDisplayLib/SensorModel.cpp:172
+#: SensorDisplayLib/SensorModel.cpp:165
 #, kde-format
 msgid "Unit"
 msgstr "Unité"
 
-#: SensorDisplayLib/SensorModel.cpp:175
+#: SensorDisplayLib/SensorModel.cpp:167
 #, kde-format
 msgid "Status"
 msgstr "Estat"
 
-#: SensorDisplayLib/SensorModel.cpp:178
+#: SensorDisplayLib/SensorModel.cpp:169
 #, kde-format
 msgid "Label"
 msgstr "Etikete"
@@ -1201,38 +1243,17 @@ msgstr "Riçuveu"
 msgid "Sending"
 msgstr ""
 
-#: TimerSettings.cpp:37
-#, kde-format
-msgid "Timer Settings"
-msgstr "Apontiaedjes del munutreye"
-
-#: TimerSettings.cpp:47
-#, kde-format
-msgid "Use update interval of worksheet"
-msgstr "Si siervi do metaedje a djoû totes les X segondes do tåvlea"
-
-#: TimerSettings.cpp:50 WorkSheetSettings.cpp:104
-#, kde-format
-msgid "Update interval:"
-msgstr "Mete a djoû totes les :"
-
-#: TimerSettings.cpp:60 WorkSheetSettings.cpp:117
-#, kde-format
-msgid "All displays of the sheet are updated at the rate specified here."
-msgstr ""
-"Tot çou k' est håyné sol tåvlea est metou a djoû sorlon frecwince dite cial."
-
-#: WorkSheet.cpp:83
+#: WorkSheet.cpp:87
 #, kde-format
 msgid "Cannot open the file %1."
 msgstr "Dji n' sai drovi fitchî %1."
 
-#: WorkSheet.cpp:91
+#: WorkSheet.cpp:95
 #, kde-format
 msgid "The file %1 does not contain valid XML."
 msgstr "I gn a pont d' XML valåbe e fitchî %1."
 
-#: WorkSheet.cpp:98
+#: WorkSheet.cpp:102
 #, kde-format
 msgid ""
 "The file %1 does not contain a valid worksheet definition, which must have a "
@@ -1241,57 +1262,57 @@ msgstr ""
 "I gn a pont d' definixha valåbe d' on tåvlea e fitchî %1, i doet esse del "
 "sôre di documint « KSysGuardWorkSheet »."
 
-#: WorkSheet.cpp:110
+#: WorkSheet.cpp:114
 #, kde-format
 msgid "The file %1 has an invalid worksheet size."
 msgstr "Li fitchî %1 a ene mwaijhe grandeu d' tåvlea."
 
-#: WorkSheet.cpp:235
+#: WorkSheet.cpp:239
 #, kde-format
 msgid "Cannot save file %1"
 msgstr "Dji n' sai schaper fitchî %1"
 
-#: WorkSheet.cpp:281
+#: WorkSheet.cpp:285
 #, kde-format
 msgid "The clipboard does not contain a valid display description."
 msgstr "I gn a pont d' discrijhaedje do håynaedje di valåbe e presse-papî"
 
-#: WorkSheet.cpp:381
+#: WorkSheet.cpp:385
 #, kde-format
 msgid "Select Display Type"
 msgstr "Tchoezi sôre di håynaedje"
 
-#: WorkSheet.cpp:382
+#: WorkSheet.cpp:386
 #, kde-format
 msgid "&Line graph"
 msgstr "Grafike di &royes"
 
-#: WorkSheet.cpp:383
+#: WorkSheet.cpp:387
 #, kde-format
 msgid "&Digital display"
 msgstr "Håynaedje &limerike"
 
-#: WorkSheet.cpp:384
+#: WorkSheet.cpp:388
 #, kde-format
 msgid "&Bar graph"
 msgstr "Grafike di båres"
 
-#: WorkSheet.cpp:385
+#: WorkSheet.cpp:389
 #, kde-format
 msgid "Log to a &file"
 msgstr "Sicrire djournå e &fitchî"
 
-#: WorkSheet.cpp:541
+#: WorkSheet.cpp:545
 #, kde-format
 msgid "Remove this display?"
 msgstr "&Oister ç' håynaedje cial ?"
 
-#: WorkSheet.cpp:542
+#: WorkSheet.cpp:546
 #, kde-format
 msgid "Remove Display"
 msgstr "Oister håynaedje"
 
-#: WorkSheet.cpp:583
+#: WorkSheet.cpp:587
 #, kde-format
 msgid "Dummy"
 msgstr "Pitit no"
@@ -1325,6 +1346,17 @@ msgstr "Dinez l' nombe di royes kel tåve duvreut aveur."
 #, kde-format
 msgid "Enter the number of columns the sheet should have."
 msgstr "Dinez l' nombe di colones kel tåve duvreut aveur."
+
+#: WorkSheetSettings.cpp:104
+#, kde-format
+msgid "Update interval:"
+msgstr "Mete a djoû totes les :"
+
+#: WorkSheetSettings.cpp:117
+#, kde-format
+msgid "All displays of the sheet are updated at the rate specified here."
+msgstr ""
+"Tot çou k' est håyné sol tåvlea est metou a djoû sorlon frecwince dite cial."
 
 #: WorkSheetSettings.cpp:118
 #, kde-format
@@ -1379,26 +1411,22 @@ msgstr ""
 msgid "Upload custom System Monitor tab"
 msgstr "Corwaitoe sistinme da KDE"
 
-#, fuzzy
-#~| msgctxt "units"
-#~| msgid "%1%"
-#~ msgctxt "This is the shorter version of CPU: %1%"
-#~ msgid "%1%"
-#~ msgstr "%1%"
-
-#, fuzzy
-#~| msgid " Memory: %1 / %2 "
 #~ msgctxt "Arguments are formatted byte sizes (used/total)"
-#~ msgid "Memory: %1 / %2"
-#~ msgstr " Memwere: %1 / %2 "
+#~ msgid "Memory: %1 / %2Mem: %1 / %2Mem: %1%1"
+#~ msgstr "Memwere : %1 / %2Mem : %1 / %2Mem : %1%1"
 
 #, fuzzy
-#~| msgid " Memory: %1 / %2 "
-#~ msgctxt ""
-#~ "Arguments are formatted byte sizes (used/total) This should be a shorter "
-#~ "version of the previous Memory: %1 / %2"
-#~ msgid "Mem: %1 / %2"
-#~ msgstr " Memwere: %1 / %2 "
+#~| msgctxt "Arguments are formatted byte sizes (used/total)"
+#~| msgid "Swap: %1 / %2Swap: %1%1"
+#~ msgctxt "Arguments are formatted byte sizes (used/total)"
+#~ msgid "Swap: %1 / %2Swap: %1%1"
+#~ msgstr "Swap : %1 / %2Swap : %1%1"
+
+#~ msgid "Timer Settings"
+#~ msgstr "Apontiaedjes del munutreye"
+
+#~ msgid "Use update interval of worksheet"
+#~ msgstr "Si siervi do metaedje a djoû totes les X segondes do tåvlea"
 
 #~ msgid "*.sgrd|Sensor Files (*.sgrd)"
 #~ msgstr "*.sgrd|Fitchîs sinteu (*.sgrd)"
