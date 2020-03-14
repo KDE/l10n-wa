@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_battery\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-01-06 03:52+0100\n"
+"POT-Creation-Date: 2020-03-14 03:45+0100\n"
 "PO-Revision-Date: 2011-01-09 11:21+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -39,72 +39,63 @@ msgctxt "Placeholder is battery percentage"
 msgid "%1%"
 msgstr "%1%"
 
-#: package/contents/ui/batterymonitor.qml:53
-#, kde-format
-msgid "No Batteries Available"
-msgstr ""
-
-#: package/contents/ui/batterymonitor.qml:57
-#, fuzzy, kde-format
-#| msgid "Screen Brightness"
-msgid "Battery and Brightness"
-msgstr "Rilujhance del waitroûle"
-
-#: package/contents/ui/batterymonitor.qml:59 package/contents/ui/logic.js:26
+#: package/contents/ui/batterymonitor.qml:55 package/contents/ui/logic.js:26
 #, fuzzy, kde-format
 #| msgid "<b>Battery:</b> %1% (fully charged)<br />"
 msgid "Fully Charged"
 msgstr "<b>Batreye :</b> %1% (totafwaitmint tcherdjeye)<br />"
 
-#: package/contents/ui/batterymonitor.qml:64
+#: package/contents/ui/batterymonitor.qml:59
 #, fuzzy, kde-format
 #| msgid "%1% (charging)"
-msgid "%1% Charging"
+msgid "Battery at %1%, not Charging"
 msgstr "%1% (si tchedje)"
 
-#: package/contents/ui/batterymonitor.qml:66
+#: package/contents/ui/batterymonitor.qml:62
 #, fuzzy, kde-format
-#| msgid "%1% (charging)"
-msgid "%1% Plugged in, not Charging"
-msgstr "%1% (si tchedje)"
+#| msgctxt "Placeholder is the battery ID"
+#| msgid "Battery %1:"
+msgid "Battery at %1%"
+msgstr "Batreye %1 :"
 
-#: package/contents/ui/batterymonitor.qml:68
+#: package/contents/ui/batterymonitor.qml:75
 #, fuzzy, kde-format
-#| msgctxt "tooltip"
-#| msgid "Plugged in"
-msgid "%1% Plugged in"
-msgstr "Tchôkî "
+#| msgid "<b>Battery:</b> %1% (fully charged)<br />"
+msgctxt "time until fully charged - HH:MM"
+msgid "%1 until fully charged"
+msgstr "<b>Batreye :</b> %1% (totafwaitmint tcherdjeye)<br />"
 
-#: package/contents/ui/batterymonitor.qml:72
+#: package/contents/ui/batterymonitor.qml:77
 #, kde-format
-msgctxt "%1 is remaining time, %2 is percentage"
-msgid "%1 Remaining (%2%)"
-msgstr ""
-
-#: package/contents/ui/batterymonitor.qml:76
-#, kde-format
-msgid "%1% Battery Remaining"
+msgctxt "remaining time left of battery usage - HH:MM"
+msgid "%1 remaining"
 msgstr ""
 
 #: package/contents/ui/batterymonitor.qml:80
+#, fuzzy, kde-format
+#| msgid "%1% (charging)"
+msgid "Not charging"
+msgstr "%1% (si tchedje)"
+
+#: package/contents/ui/batterymonitor.qml:84
 #, fuzzy, kde-format
 #| msgid "Power Management"
 msgid "Power management is disabled"
 msgstr "Manaedjmint di l' enerdjeye"
 
-#: package/contents/ui/batterymonitor.qml:149
+#: package/contents/ui/batterymonitor.qml:157
 #, fuzzy, kde-format
 #| msgid "Show charge &information"
 msgid "&Show Energy Information..."
 msgstr "Mostrer &informåcions sol tchedje"
 
-#: package/contents/ui/batterymonitor.qml:152
+#: package/contents/ui/batterymonitor.qml:160
 #, fuzzy, kde-format
 #| msgid "More..."
 msgid "&Configure Power Saving..."
 msgstr "Pus..."
 
-#: package/contents/ui/batterymonitor.qml:241
+#: package/contents/ui/batterymonitor.qml:249
 #, kde-format
 msgid "The battery applet has enabled system-wide inhibition"
 msgstr ""
@@ -250,6 +241,22 @@ msgid "%1 is currently suppressing power management: %2"
 msgstr ""
 
 #, fuzzy
+#~| msgid "Screen Brightness"
+#~ msgid "Battery and Brightness"
+#~ msgstr "Rilujhance del waitroûle"
+
+#, fuzzy
+#~| msgid "%1% (charging)"
+#~ msgid "%1% Charging"
+#~ msgstr "%1% (si tchedje)"
+
+#, fuzzy
+#~| msgctxt "tooltip"
+#~| msgid "Plugged in"
+#~ msgid "%1% Plugged in"
+#~ msgstr "Tchôkî "
+
+#, fuzzy
 #~| msgctxt "overlay on the battery, needs to be really tiny"
 #~| msgid "%1%"
 #~ msgctxt "Placeholder is battery's capacity degradation"
@@ -365,13 +372,6 @@ msgstr ""
 #~ msgctxt "Battery is not plugged in"
 #~ msgid "<b>Not present</b>"
 #~ msgstr "<b>Nén la</b>"
-
-#, fuzzy
-#~| msgctxt "Placeholder is the battery ID"
-#~| msgid "Battery %1:"
-#~ msgctxt "tooltip: placeholder is the battery ID"
-#~ msgid "Battery %1:"
-#~ msgstr "Batreye %1 :"
 
 #~ msgid "Show the state for &each battery present"
 #~ msgstr "Mostrer l' estat po t&chaeke batreye k' i gn a"
