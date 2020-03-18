@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-03-12 03:37+0100\n"
+"POT-Creation-Date: 2020-03-18 08:52+0100\n"
 "PO-Revision-Date: 2013-03-24 10:49+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -536,13 +536,11 @@ msgid "Configure the view"
 msgstr "Apontyî l' vuwe"
 
 #: actionmanager.cpp:552 actionmanager.cpp:1301 actionmanager.cpp:1337
-#: koeventpopupmenu.cpp:55
 #, kde-format
 msgid "&Show"
 msgstr "&Mostrer"
 
 #: actionmanager.cpp:557 actionmanager.cpp:1304 actionmanager.cpp:1338
-#: koeventpopupmenu.cpp:58
 #, kde-format
 msgid "&Edit..."
 msgstr "&Candjî..."
@@ -1625,57 +1623,63 @@ msgstr "T&ite:"
 msgid "Text:"
 msgstr "Rifé : %1"
 
-#: dialog/searchdialog.cpp:54
+#: dialog/searchdialog.cpp:55
 #, fuzzy, kde-format
 #| msgid "New Calendar"
 msgctxt "@title:window"
 msgid "Search Calendar"
 msgstr "Novea calindrî"
 
-#: dialog/searchdialog.cpp:85
+#: dialog/searchdialog.cpp:86
 #, fuzzy, kde-format
 #| msgctxt "@label in QuickSearchLine"
 #| msgid "Search"
-msgctxt "search in calendar"
+msgctxt "@action:button search in calendar"
 msgid "&Search"
 msgstr "Trover"
 
-#: dialog/searchdialog.cpp:87
-#, kde-format
-msgid "Start searching"
-msgstr ""
+#: dialog/searchdialog.cpp:88
+#, fuzzy, kde-format
+#| msgid "Start Date"
+msgctxt "@info:tooltip"
+msgid "Start the search"
+msgstr "Date di cominçmint"
 
-#: dialog/searchdialog.cpp:90
+#: dialog/searchdialog.cpp:91
 #, fuzzy, kde-format
 #| msgid "Press this button to define a new filter."
 msgctxt "@info:whatsthis"
 msgid "Press this button to start the search."
 msgstr "Tchôkîz c' boton po defini ene novele passete."
 
-#: dialog/searchdialog.cpp:131
+#: dialog/searchdialog.cpp:151
 #, kde-format
+msgctxt "@info"
 msgid ""
 "Invalid search expression, cannot perform the search. Please enter a search "
 "expression using the wildcard characters '*' and '?' where needed."
 msgstr ""
 
-#: dialog/searchdialog.cpp:143
+#: dialog/searchdialog.cpp:163
 #, kde-format
+msgctxt "@info"
 msgid "No items were found that match your search pattern."
 msgstr ""
 
-#: dialog/searchdialog.cpp:144
+#: dialog/searchdialog.cpp:164
 #, fuzzy, kde-format
 #| msgctxt "@label in QuickSearchLine"
 #| msgid "Search"
+msgctxt "@title:window"
 msgid "Search Results"
 msgstr "Trover"
 
-#: dialog/searchdialog.cpp:147
+#: dialog/searchdialog.cpp:167
 #, fuzzy, kde-format
 #| msgctxt "@item@intable alarm offset specified in minutes"
 #| msgid "1 minute"
 #| msgid_plural "%1 minutes"
+msgctxt "@label"
 msgid "%1 item"
 msgid_plural "%1 items"
 msgstr[0] "1 munute"
@@ -1885,80 +1889,133 @@ msgstr "R&adjouter"
 msgid "&Cancel"
 msgstr "&Rinoncî"
 
-#: koeventpopupmenu.cpp:61
-#, kde-format
-msgid "&Print..."
-msgstr "&Rexhe"
-
-#: koeventpopupmenu.cpp:64
+#: koeventpopupmenu.cpp:69
 #, fuzzy, kde-format
-#| msgid "&Print..."
-msgid "Print Previe&w..."
-msgstr "&Rexhe"
-
-#: koeventpopupmenu.cpp:70
-#, kde-format
-msgctxt "cut this event"
-msgid "C&ut"
-msgstr "Cô&per"
+#| msgid "&Show"
+msgctxt "@action:inmenu"
+msgid "&Show"
+msgstr "&Mostrer"
 
 #: koeventpopupmenu.cpp:73
-#, kde-format
-msgctxt "copy this event"
-msgid "&Copy"
-msgstr "&Copyî"
+#, fuzzy, kde-format
+#| msgid "&Edit..."
+msgctxt "@action:inmenu"
+msgid "&Edit..."
+msgstr "&Candjî..."
 
 #: koeventpopupmenu.cpp:77
-#, kde-format
-msgid "&Paste"
-msgstr "Ac&laper"
-
-#: koeventpopupmenu.cpp:80
-#, kde-format
-msgctxt "delete this incidence"
+#, fuzzy, kde-format
+#| msgid "&Delete"
+msgctxt "@action:inmenu delete this incidence"
 msgid "&Delete"
 msgstr "&Disfacer"
 
-#: koeventpopupmenu.cpp:85
+#: koeventpopupmenu.cpp:83
+#, fuzzy, kde-format
+#| msgid "&Print..."
+msgctxt "@action:inmenu"
+msgid "&Print..."
+msgstr "&Rexhe"
+
+#: koeventpopupmenu.cpp:87
+#, fuzzy, kde-format
+#| msgid "&Print..."
+msgctxt "@action:inmenu"
+msgid "Print Previe&w..."
+msgstr "&Rexhe"
+
+#: koeventpopupmenu.cpp:109
+#, fuzzy, kde-format
+#| msgctxt "cut this event"
+#| msgid "C&ut"
+msgctxt "@action:inmenu cut this incidence"
+msgid "C&ut"
+msgstr "Cô&per"
+
+#: koeventpopupmenu.cpp:112
+#, fuzzy, kde-format
+#| msgid "&Copy"
+msgctxt "@action:inmenu copy this incidence"
+msgid "&Copy"
+msgstr "&Copyî"
+
+#: koeventpopupmenu.cpp:115
+#, fuzzy, kde-format
+#| msgid "&Paste"
+msgctxt "@action:inmenu"
+msgid "&Paste"
+msgstr "Ac&laper"
+
+#: koeventpopupmenu.cpp:124
 #, fuzzy, kde-format
 #| msgid "Delete To-do"
-msgid "Create To-do"
+msgctxt "@action:inmenu"
+msgid "Create To-do from Event"
 msgstr "Disfacer afé"
 
-#: koeventpopupmenu.cpp:91
+#: koeventpopupmenu.cpp:128
 #, fuzzy, kde-format
 #| msgid "Create a new Event"
-msgid "Create Event"
+msgctxt "@action:inmenu"
+msgid "Create Note for Event"
 msgstr "Ahiver on novea evenmint"
 
-#: koeventpopupmenu.cpp:97
-#, fuzzy, kde-format
-#| msgid "Delete To-do"
-msgid "Create Note"
-msgstr "Disfacer afé"
-
-#: koeventpopupmenu.cpp:103
+#: koeventpopupmenu.cpp:137
 #, fuzzy, kde-format
 #| msgctxt "delete completed to-dos"
 #| msgid "Pur&ge Completed"
+msgctxt "@action:inmenu"
 msgid "Togg&le To-do Completed"
 msgstr "Netiae&dje tot fwait"
 
-#: koeventpopupmenu.cpp:106
-#, kde-format
+#: koeventpopupmenu.cpp:141
+#, fuzzy, kde-format
+#| msgid "Create a new Event"
+msgctxt "@action:inmenu"
+msgid "Create Event from To-do"
+msgstr "Ahiver on novea evenmint"
+
+#: koeventpopupmenu.cpp:145
+#, fuzzy, kde-format
+#| msgid "Delete To-do"
+msgctxt "@action:inmenu"
+msgid "Create Note for To-do"
+msgstr "Disfacer afé"
+
+#: koeventpopupmenu.cpp:154
+#, fuzzy, kde-format
+#| msgid "&Toggle Reminder"
+msgctxt "@action:inmenu"
 msgid "&Toggle Reminder"
 msgstr "(Dis)me&te rimimbreu"
 
-#: koeventpopupmenu.cpp:110
+#: koeventpopupmenu.cpp:163
 #, fuzzy, kde-format
 #| msgid "&Dissociate This Occurrence"
+msgctxt "@action:inmenu"
 msgid "&Dissociate From Recurrence..."
 msgstr "&Disassocyî ciste ocurince"
 
-#: koeventpopupmenu.cpp:116
-#, kde-format
-msgid "Send as iCalendar..."
+#: koeventpopupmenu.cpp:172
+#, fuzzy, kde-format
+#| msgid "Send as iCalendar..."
+msgctxt "@action:inmenu"
+msgid "Email as iCalendar..."
 msgstr "Evoyî come iCalendar..."
+
+#: koeventpopupmenu.cpp:224
+#, fuzzy, kde-format
+#| msgid "&Toggle Reminder"
+msgctxt "@action:inmenu"
+msgid "&Toggle Reminder Off"
+msgstr "(Dis)me&te rimimbreu"
+
+#: koeventpopupmenu.cpp:225
+#, fuzzy, kde-format
+#| msgid "&Toggle Reminder"
+msgctxt "@action:inmenu"
+msgid "&Toggle Reminder On"
+msgstr "(Dis)me&te rimimbreu"
 
 #: kohelper.cpp:75
 #, kde-format
@@ -5633,6 +5690,19 @@ msgctxt "4 digit year"
 msgid "%1"
 msgstr ""
 
+#~ msgctxt "copy this event"
+#~ msgid "&Copy"
+#~ msgstr "&Copyî"
+
+#~ msgctxt "delete this incidence"
+#~ msgid "&Delete"
+#~ msgstr "&Disfacer"
+
+#, fuzzy
+#~| msgid "Delete To-do"
+#~ msgid "Create Note"
+#~ msgstr "Disfacer afé"
+
 #, fuzzy
 #~| msgid "Loading…"
 #~ msgid "searching..."
@@ -7000,12 +7070,6 @@ msgstr ""
 #~ msgctxt "@option sort by title"
 #~ msgid "Title"
 #~ msgstr "T&ite:"
-
-#, fuzzy
-#~| msgid "Start Date"
-#~ msgctxt "@option sort by start date/time"
-#~ msgid "Start Date"
-#~ msgstr "Date di cominçmint"
 
 #, fuzzy
 #~| msgid "Due Date"
