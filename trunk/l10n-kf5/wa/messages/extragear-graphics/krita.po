@@ -64,7 +64,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-03-27 02:51+0100\n"
+"POT-Creation-Date: 2020-03-29 03:56+0200\n"
 "PO-Revision-Date: 2011-01-17 21:35+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -9785,6 +9785,7 @@ msgstr ""
 msgid "Invalid value."
 msgstr "Grandeu d' imådje nén valåbe"
 
+#. i18n: ectx: attribute (title), widget (QWidget, tab_hsx)
 #. i18n: ectx: property (text), widget (QLabel, lblCurrentRenderer)
 #. i18n: ectx: property (text), item, widget (QComboBox, editMeteringMode)
 #. i18n: ectx: property (text), item, widget (QComboBox, editSubjectDistanceRange)
@@ -9795,6 +9796,8 @@ msgstr "Grandeu d' imådje nén valåbe"
 #: libs/ui/dialogs/kis_dlg_preferences.cc:1256
 #: libs/ui/forms/wdgdisplaysettings.ui:168
 #: libs/ui/kis_paintop_options_model.cpp:52
+#: libs/widgets/KisDlgInternalColorSelector.cpp:329
+#: libs/widgets/WdgDlgInternalColorSelector.ui:85
 #: plugins/extensions/metadataeditor/editors/exif.ui:407
 #: plugins/extensions/metadataeditor/editors/exif.ui:464
 #: plugins/extensions/metadataeditor/editors/exif.ui:569
@@ -11194,6 +11197,7 @@ msgstr "HSV CW"
 
 #. i18n: ectx: property (text), widget (QRadioButton, bnHsi)
 #: libs/pigment/KoCompositeOp.cpp:41 libs/pigment/KoCompositeOpRegistry.cpp:48
+#: libs/widgets/KisDlgInternalColorSelector.cpp:323
 #: plugins/dockers/advancedcolorselector/kis_color_selector_settings.cpp:78
 #: plugins/dockers/advancedcolorselector/kis_color_selector_settings.cpp:87
 #: plugins/dockers/artisticcolorselector/forms/wdgARCSSettings.ui:81
@@ -11203,6 +11207,7 @@ msgstr "HSV CW"
 
 #. i18n: ectx: property (text), widget (QRadioButton, bnHsl)
 #: libs/pigment/KoCompositeOp.cpp:42 libs/pigment/KoCompositeOpRegistry.cpp:49
+#: libs/widgets/KisDlgInternalColorSelector.cpp:320
 #: plugins/dockers/advancedcolorselector/kis_color_selector_settings.cpp:77
 #: plugins/dockers/advancedcolorselector/kis_color_selector_settings.cpp:86
 #: plugins/dockers/artisticcolorselector/forms/wdgARCSSettings.ui:71
@@ -11211,6 +11216,7 @@ msgid "HSL"
 msgstr "HSV CW"
 
 #: libs/pigment/KoCompositeOp.cpp:43 libs/pigment/KoCompositeOpRegistry.cpp:50
+#: libs/widgets/KisDlgInternalColorSelector.cpp:317
 #: plugins/dockers/advancedcolorselector/kis_color_selector_settings.cpp:76
 #: plugins/dockers/advancedcolorselector/kis_color_selector_settings.cpp:85
 #, fuzzy, kde-format
@@ -17701,17 +17707,17 @@ msgctxt "option category"
 msgid "Masked Brush"
 msgstr "Maxhant pincea"
 
-#: libs/ui/kis_popup_palette.cpp:228
+#: libs/ui/kis_popup_palette.cpp:229
 #, fuzzy, kde-format
 msgid "Mirror Canvas"
 msgstr "Masse muroe X"
 
-#: libs/ui/kis_popup_palette.cpp:234
+#: libs/ui/kis_popup_palette.cpp:235
 #, fuzzy, kde-format
 msgid "Canvas Only"
 msgstr "Coleur del toele:"
 
-#: libs/ui/kis_popup_palette.cpp:238
+#: libs/ui/kis_popup_palette.cpp:239
 #: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:55
 #: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:56
 #: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:69
@@ -17748,12 +17754,12 @@ msgstr "Coleur del toele:"
 msgid "100%"
 msgstr "10x10"
 
-#: libs/ui/kis_popup_palette.cpp:241
+#: libs/ui/kis_popup_palette.cpp:242
 #, fuzzy, kde-format
 msgid "Zoom to 100%"
 msgstr "Tchoezi eco on côp"
 
-#: libs/ui/kis_popup_palette.cpp:832
+#: libs/ui/kis_popup_palette.cpp:833
 #, kde-format
 msgid ""
 "There are no tags available to show in this popup. To add presets, you need "
@@ -21223,6 +21229,7 @@ msgstr "%1%"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: libs/ui/widgets/kis_paintop_preset_icon_library.cpp:36
+#: libs/widgets/KisSpinboxHSXSelector.cpp:46
 #: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:71
 #: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:72
 #: plugins/paintops/libpaintop/forms/wdgcoloroptions.ui:38
@@ -21232,6 +21239,7 @@ msgstr "Tinte:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: libs/ui/widgets/kis_paintop_preset_icon_library.cpp:40
+#: libs/widgets/KisSpinboxHSXSelector.cpp:47
 #: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:71
 #: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:72
 #: plugins/paintops/libpaintop/forms/wdgcoloroptions.ui:58
@@ -21758,11 +21766,18 @@ msgctxt "Part of default name for a new group"
 msgid "Color Group"
 msgstr "Coleur:"
 
-#: libs/widgets/KisDlgInternalColorSelector.cpp:150
+#: libs/widgets/KisDlgInternalColorSelector.cpp:153
 #, kde-format
 msgid ""
 "This is a hexcode input, for webcolors. It can only get colors in the sRGB "
 "space."
+msgstr ""
+
+#: libs/widgets/KisDlgInternalColorSelector.cpp:326
+#: plugins/dockers/advancedcolorselector/kis_color_selector_settings.cpp:79
+#: plugins/dockers/advancedcolorselector/kis_color_selector_settings.cpp:88
+#, kde-format
+msgid "HSY'"
 msgstr ""
 
 #: libs/widgets/KisGradientSliderWidget.cpp:48
@@ -21809,6 +21824,34 @@ msgstr "Ebaguer coûtche"
 #: libs/widgets/KisPaletteModel.cpp:429
 #, kde-format
 msgid "Empty slot"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: libs/widgets/KisSpinboxHSXSelector.cpp:77
+#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:77
+#: plugins/paintops/libpaintop/forms/wdgcoloroptions.ui:78
+#, kde-format
+msgid "Value:"
+msgstr "Valixhance:"
+
+#: libs/widgets/KisSpinboxHSXSelector.cpp:80
+#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:79
+#, fuzzy, kde-format
+msgid "Lightness:"
+msgstr "Rilujhance"
+
+#: libs/widgets/KisSpinboxHSXSelector.cpp:83
+#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:81
+#, fuzzy, kde-format
+msgid "Intensity:"
+msgstr "Dinsité"
+
+#: libs/widgets/KisSpinboxHSXSelector.cpp:86
+#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:83
+#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:85
+#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:86
+#, kde-format
+msgid "Luma:"
 msgstr ""
 
 #: libs/widgets/KoColorSetWidget.cpp:91
@@ -22460,6 +22503,13 @@ msgstr "Tchoezi"
 #, fuzzy, kde-format
 msgid "Select file name..."
 msgstr "Tchoezi ttafwait"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_channel)
+#: libs/widgets/WdgDlgInternalColorSelector.ui:53
+#: plugins/dockers/channeldocker/channeldocker_dock.cpp:40
+#, fuzzy, kde-format
+msgid "Channels"
+msgstr "Canå"
 
 #: libs/widgetutils/config/klanguagebutton.cpp:194
 #, fuzzy, kde-format
@@ -24292,12 +24342,6 @@ msgstr "cwand l' sori est pa dzeu."
 msgid "Never"
 msgstr "måy"
 
-#: plugins/dockers/advancedcolorselector/kis_color_selector_settings.cpp:79
-#: plugins/dockers/advancedcolorselector/kis_color_selector_settings.cpp:88
-#, kde-format
-msgid "HSY'"
-msgstr ""
-
 #: plugins/dockers/advancedcolorselector/kis_color_selector_settings.cpp:92
 #, kde-format
 msgid "MyPaint"
@@ -25393,11 +25437,6 @@ msgstr "Saturaedje"
 #, fuzzy, kde-format
 msgid "Reset to default"
 msgstr "prémetou"
-
-#: plugins/dockers/channeldocker/channeldocker_dock.cpp:40
-#, fuzzy, kde-format
-msgid "Channels"
-msgstr "Canå"
 
 #: plugins/dockers/compositiondocker/compositiondocker_dock.cpp:56
 #, fuzzy, kde-format
@@ -29837,30 +29876,6 @@ msgstr "&Dissaturer"
 #, kde-format
 msgid "Desaturate"
 msgstr "Dissaturer"
-
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:77
-#: plugins/paintops/libpaintop/forms/wdgcoloroptions.ui:78
-#, kde-format
-msgid "Value:"
-msgstr "Valixhance:"
-
-#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:79
-#, fuzzy, kde-format
-msgid "Lightness:"
-msgstr "Rilujhance"
-
-#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:81
-#, fuzzy, kde-format
-msgid "Intensity:"
-msgstr "Dinsité"
-
-#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:83
-#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:85
-#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:86
-#, kde-format
-msgid "Luma:"
-msgstr ""
 
 #: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:85
 #: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:86
