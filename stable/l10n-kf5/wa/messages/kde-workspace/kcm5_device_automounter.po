@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-20 03:25+0200\n"
+"POT-Creation-Date: 2020-03-11 03:57+0100\n"
 "PO-Revision-Date: 2010-10-22 18:27+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -27,38 +27,38 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "jean.cayron@gmail.com"
 
-#: DeviceAutomounterKCM.cpp:46
+#: DeviceAutomounterKCM.cpp:48
 #, kde-format
 msgid "Device Automounter"
 msgstr "Oto-monteu d' éndjin"
 
-#: DeviceAutomounterKCM.cpp:50
+#: DeviceAutomounterKCM.cpp:52
 #, fuzzy, kde-format
 #| msgid "(c) 2009 Trever Fischer"
 msgid "(c) 2009 Trever Fischer, (c) 2015 Kai Uwe Broulik"
 msgstr "© 2009 Trever Fischer"
 
-#: DeviceAutomounterKCM.cpp:51
+#: DeviceAutomounterKCM.cpp:53
 #, kde-format
 msgid "Trever Fischer"
 msgstr "Trever Fischer"
 
-#: DeviceAutomounterKCM.cpp:51
+#: DeviceAutomounterKCM.cpp:53
 #, kde-format
 msgid "Original Author"
 msgstr ""
 
-#: DeviceAutomounterKCM.cpp:52
+#: DeviceAutomounterKCM.cpp:54
 #, kde-format
 msgid "Kai Uwe Broulik"
 msgstr ""
 
-#: DeviceAutomounterKCM.cpp:52
+#: DeviceAutomounterKCM.cpp:54
 #, kde-format
 msgid "Plasma 5 Port"
 msgstr ""
 
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, automountEnabled)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AutomountEnabled)
 #: DeviceAutomounterKCM.ui:17
 #, kde-format
 msgid ""
@@ -69,13 +69,13 @@ msgstr ""
 "kéne sôre ki s' ferè, minme s' i gn a åk di tchoezi el seccion "
 "\"Spotchaedjes d' éndjin\"."
 
-#. i18n: ectx: property (text), widget (QCheckBox, automountEnabled)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutomountEnabled)
 #: DeviceAutomounterKCM.ui:20
 #, kde-format
 msgid "Enable automatic mounting of removable media"
 msgstr "Mete en alaedje li montaedje otomatike des medias bodjåves"
 
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, automountUnknownDevices)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AutomountUnknownDevices)
 #: DeviceAutomounterKCM.ui:45
 #, kde-format
 msgid ""
@@ -87,7 +87,7 @@ msgid ""
 "contents will be automatically made available to the system."
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, automountUnknownDevices)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutomountUnknownDevices)
 #: DeviceAutomounterKCM.ui:48
 #, kde-format
 msgid ""
@@ -96,7 +96,7 @@ msgid ""
 msgstr ""
 "Ni monter otomaticmint k' les medias bodjåves k' ont ddja stî montés al mwin"
 
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, automountOnLogin)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AutomountOnLogin)
 #: DeviceAutomounterKCM.ui:55
 #, kde-format
 msgid ""
@@ -105,13 +105,14 @@ msgid ""
 "system for other programs to read."
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, automountOnLogin)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutomountOnLogin)
 #: DeviceAutomounterKCM.ui:58
-#, kde-format
-msgid "Mount all removable media at login"
+#, fuzzy, kde-format
+#| msgid "Mount all removable media at login"
+msgid "Automatically mount all removable media at login"
 msgstr "Monter tos les medias bodjåves a l' elodjaedje"
 
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, automountOnPlugin)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AutomountOnPlugin)
 #: DeviceAutomounterKCM.ui:65
 #, kde-format
 msgid ""
@@ -119,17 +120,18 @@ msgid ""
 "be made available to the system when it is plugged in or attached."
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, automountOnPlugin)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutomountOnPlugin)
 #: DeviceAutomounterKCM.ui:68
-#, kde-format
-msgid "Automatically mount removable media when attached"
+#, fuzzy, kde-format
+#| msgid "Automatically mount removable media when attached"
+msgid "Automatically mount all removable media when attached"
 msgstr "Monter otomaticmint les medias bodjåves cwand i sont stitchîs"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: DeviceAutomounterKCM.ui:90
 #, kde-format
-msgid "Device Overrides"
-msgstr "Spotchaedjes d' éndjin"
+msgid "Automatic mount"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QTreeView, deviceView)
 #: DeviceAutomounterKCM.ui:98
@@ -161,55 +163,66 @@ msgstr ""
 msgid "Forget Device"
 msgstr "Rovyî éndjin"
 
-#: DeviceModel.cpp:62
+#: DeviceModel.cpp:64
 #, kde-format
 msgid "Device"
 msgstr "Éndjin"
 
-#: DeviceModel.cpp:63
+#: DeviceModel.cpp:65
 #, kde-format
-msgid "Automount on Login"
-msgstr "Oto-monter a l' elodjaedje"
+msgctxt "As in automount on login"
+msgid "On Login"
+msgstr ""
 
-#: DeviceModel.cpp:64
+#: DeviceModel.cpp:66
 #, kde-format
-msgid "Automount on Attach"
-msgstr "Oto-monter å stitchaedje"
+msgctxt "As in automoount on attach"
+msgid "On Attach"
+msgstr ""
 
-#: DeviceModel.cpp:235 DeviceModel.cpp:274
+#: DeviceModel.cpp:278 DeviceModel.cpp:317
 #, kde-format
 msgid "UDI: %1"
 msgstr "UDI: %1"
 
-#: DeviceModel.cpp:245 DeviceModel.cpp:284
+#: DeviceModel.cpp:288 DeviceModel.cpp:327
 #, kde-format
 msgid "This device will be automatically mounted at login."
 msgstr "Cist éndjin srè monté otomaticmint a l' elodjaedje."
 
-#: DeviceModel.cpp:246 DeviceModel.cpp:285
+#: DeviceModel.cpp:289 DeviceModel.cpp:328
 #, kde-format
 msgid "This device will not be automatically mounted at login."
 msgstr "Cist éndjin n' serè nén monté otomaticmint a l' elodjaedje."
 
-#: DeviceModel.cpp:254 DeviceModel.cpp:293
+#: DeviceModel.cpp:297 DeviceModel.cpp:336
 #, kde-format
 msgid "This device will be automatically mounted when attached."
 msgstr "Cist éndjin srè monté otomaticmint cwand i srè stitchî."
 
-#: DeviceModel.cpp:255 DeviceModel.cpp:294
+#: DeviceModel.cpp:298 DeviceModel.cpp:337
 #, kde-format
 msgid "This device will not be automatically mounted when attached."
 msgstr "Cist éndjin n' serè nén monté otomaticmint cwand i srè stitchî."
 
-#: DeviceModel.cpp:301
+#: DeviceModel.cpp:344
 #, kde-format
 msgid "Attached Devices"
 msgstr "Éndjins stitchîs"
 
-#: DeviceModel.cpp:303
+#: DeviceModel.cpp:346
 #, kde-format
 msgid "Disconnected Devices"
 msgstr "Éndjins disraloyîs"
+
+#~ msgid "Device Overrides"
+#~ msgstr "Spotchaedjes d' éndjin"
+
+#~ msgid "Automount on Login"
+#~ msgstr "Oto-monter a l' elodjaedje"
+
+#~ msgid "Automount on Attach"
+#~ msgstr "Oto-monter å stitchaedje"
 
 #~ msgid "Automatically mounts devices at login or when attached"
 #~ msgstr ""
