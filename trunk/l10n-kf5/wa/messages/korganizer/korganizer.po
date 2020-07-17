@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-07-16 02:15+0200\n"
+"POT-Creation-Date: 2020-07-17 02:17+0200\n"
 "PO-Revision-Date: 2013-03-24 10:49+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -97,7 +97,7 @@ msgstr "Preston Brown"
 msgid "Original Author"
 msgstr "Oteur d' oridjene"
 
-#: aboutdata.cpp:54 prefs/koprefsdialog.cpp:1763
+#: aboutdata.cpp:54 prefs/koprefsuserfeedback.cpp:54
 #, kde-format
 msgid "Laurent Montel"
 msgstr ""
@@ -1944,14 +1944,14 @@ msgctxt "@info:whatsthis"
 msgid "Press this button to remove the currently active filter."
 msgstr "Tchôkîz c' boton po oister l' passete en alaedje pol moumint."
 
-#: dialog/filtereditdialog.cpp:246
+#: dialog/filtereditdialog.cpp:247
 #, fuzzy, kde-format
 #| msgid "New Filter %1"
 msgctxt "@label default filter name"
 msgid "New Filter %1"
 msgstr "Novele passete %1"
 
-#: dialog/filtereditdialog.cpp:272
+#: dialog/filtereditdialog.cpp:273
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "Do you really want to cancel?"
@@ -1959,7 +1959,7 @@ msgctxt "@info"
 msgid "Do you really want to permanently remove the filter \"%1\"?"
 msgstr "Voloz vs rinoncî podbon ?"
 
-#: dialog/filtereditdialog.cpp:273
+#: dialog/filtereditdialog.cpp:274
 #, fuzzy, kde-format
 #| msgid "Delete Old Items"
 msgctxt "@title:window"
@@ -3534,43 +3534,116 @@ msgid ""
 "preferences."
 msgstr ""
 
-#: prefs/koprefsdialog.cpp:101
+#: prefs/koprefsdialogcolorsandfonts.cpp:57
+#, kde-format
+msgid "Choose..."
+msgstr ""
+
+#: prefs/koprefsdialogcolorsandfonts.cpp:98
+#, kde-format
+msgctxt "@title:tab"
+msgid "Colors"
+msgstr "Coleurs"
+
+#: prefs/koprefsdialogcolorsandfonts.cpp:144
+#, kde-format
+msgctxt "@title:group"
+msgid "Categories"
+msgstr "Categoreyes"
+
+#: prefs/koprefsdialogcolorsandfonts.cpp:157
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Select here the event category you want to modify. You can change the "
+"selected category color using the button below."
+msgstr ""
+
+#: prefs/koprefsdialogcolorsandfonts.cpp:167
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose here the color of the event category selected using the combo box "
+"above."
+msgstr ""
+
+#: prefs/koprefsdialogcolorsandfonts.cpp:176
+#, kde-format
+msgctxt "@title:group"
+msgid "Resources"
+msgstr "Rissources"
+
+#: prefs/koprefsdialogcolorsandfonts.cpp:192
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Select the calendar you want to modify. You can change the selected calendar "
+"color using the button below."
+msgstr ""
+
+#: prefs/koprefsdialogcolorsandfonts.cpp:202
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose here the color of the calendar selected using the combo box above."
+msgstr ""
+
+#: prefs/koprefsdialogcolorsandfonts.cpp:212
+#, kde-format
+msgctxt "@title:tab"
+msgid "Fonts"
+msgstr "Fontes"
+
+#: prefs/koprefsdialogcolorsandfonts.cpp:223
+#: prefs/koprefsdialogcolorsandfonts.cpp:228
+#, kde-format
+msgctxt "@label"
+msgid "Event text"
+msgstr "Tecse di l' envenmint"
+
+#: prefs/koprefsdialoggroupscheduling.cpp:57
+#, kde-format
+msgctxt "@label"
+msgid "Mail transport:"
+msgstr ""
+
+#: prefs/koprefsdialogmain.cpp:57
 #, kde-format
 msgctxt "@title:tab personal settings"
 msgid "Personal"
 msgstr "Personel"
 
-#: prefs/koprefsdialog.cpp:108
+#: prefs/koprefsdialogmain.cpp:64
 #, kde-format
 msgctxt "@title:group email settings"
 msgid "Email Settings"
 msgstr "Tchuzes d' emilaedje"
 
 #. i18n: ectx: label, entry (DefaultTodoAttachMethod), group (Hidden Options)
-#: prefs/koprefsdialog.cpp:127 settings/korganizer.kcfg:435
+#: prefs/koprefsdialogmain.cpp:83 settings/korganizer.kcfg:435
 #, kde-format
 msgid "Always ask"
 msgstr ""
 
-#: prefs/koprefsdialog.cpp:138
+#: prefs/koprefsdialogmain.cpp:94
 #, kde-format
 msgctxt "@title:tab"
 msgid "Save"
 msgstr "Schaper"
 
-#: prefs/koprefsdialog.cpp:152
+#: prefs/koprefsdialogmain.cpp:108
 #, kde-format
 msgctxt "@title:tab systray settings"
 msgid "System Tray"
 msgstr "Boesse ås imådjetes sistinme"
 
-#: prefs/koprefsdialog.cpp:155
+#: prefs/koprefsdialogmain.cpp:111
 #, kde-format
 msgctxt "@title:group"
 msgid "Show/Hide Options"
 msgstr "Mostrer/catchî les tchuzes"
 
-#: prefs/koprefsdialog.cpp:163
+#: prefs/koprefsdialogmain.cpp:119
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -3578,7 +3651,7 @@ msgid ""
 "tray (recommended)."
 msgstr ""
 
-#: prefs/koprefsdialog.cpp:168
+#: prefs/koprefsdialogmain.cpp:124
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -3586,14 +3659,14 @@ msgid ""
 "tray.</note>"
 msgstr ""
 
-#: prefs/koprefsdialog.cpp:177
+#: prefs/koprefsdialogmain.cpp:133
 #, fuzzy, kde-format
 #| msgid "Calendar"
 msgctxt "@title:tab calendar account settings"
 msgid "Calendars"
 msgstr "Calindrî"
 
-#: prefs/koprefsdialog.cpp:181
+#: prefs/koprefsdialogmain.cpp:137
 #, fuzzy, kde-format
 #| msgctxt "@title:group"
 #| msgid "Calendar Decorations"
@@ -3601,32 +3674,88 @@ msgctxt "@title"
 msgid "Calendar Accounts"
 msgstr "Gåliotaedjes do calindrî"
 
-#: prefs/koprefsdialog.cpp:248
+#: prefs/koprefsdialogplugins.cpp:75
+#, kde-format
+msgctxt "@title:column plugin name"
+msgid "Name"
+msgstr "No"
+
+#: prefs/koprefsdialogplugins.cpp:95
+#, kde-format
+msgctxt "@action:button"
+msgid "Configure &Plugin..."
+msgstr "Apontyî &tchôke-divins..."
+
+#: prefs/koprefsdialogplugins.cpp:98
+#, kde-format
+msgctxt "@info:whatsthis"
+msgid ""
+"This button allows you to configure the plugin that you have selected in the "
+"list above"
+msgstr ""
+
+#: prefs/koprefsdialogplugins.cpp:104
+#, kde-format
+msgctxt "@title:group"
+msgid "Position"
+msgstr "Plaece"
+
+#: prefs/koprefsdialogplugins.cpp:108
+#, kde-format
+msgctxt "@option:check"
+msgid "Show at the top of the agenda views"
+msgstr "Mostrer al copete des vuwes adjinda"
+
+#: prefs/koprefsdialogplugins.cpp:110
+#, kde-format
+msgctxt "@option:check"
+msgid "Show at the bottom of the agenda views"
+msgstr "Mostrer al valêye des vuwes adjinda"
+
+#: prefs/koprefsdialogplugins.cpp:156
+#, kde-format
+msgctxt "@title:group"
+msgid "Calendar Decorations"
+msgstr "Gåliotaedjes do calindrî"
+
+#: prefs/koprefsdialogplugins.cpp:158
+#, kde-format
+msgctxt "@title:group"
+msgid "Other Plugins"
+msgstr "Ôtes tchôkes-divins"
+
+#: prefs/koprefsdialogplugins.cpp:236
+#, kde-format
+msgctxt "@info"
+msgid "Unable to configure this plugin"
+msgstr "Dji n' a sepou apontyî ci tchôke-divins"
+
+#: prefs/koprefsdialogtime.cpp:61
 #, kde-format
 msgctxt "@title:tab"
 msgid "Regional"
 msgstr "Payis"
 
-#: prefs/koprefsdialog.cpp:253
+#: prefs/koprefsdialogtime.cpp:66
 #, kde-format
 msgctxt "@title:group"
 msgid "General Time and Date"
 msgstr ""
 
-#: prefs/koprefsdialog.cpp:264
+#: prefs/koprefsdialogtime.cpp:77
 #, fuzzy, kde-format
 #| msgid "Holiday"
 msgctxt "@title:group"
 msgid "Holidays"
 msgstr "Condjî"
 
-#: prefs/koprefsdialog.cpp:275
+#: prefs/koprefsdialogtime.cpp:88
 #, kde-format
 msgctxt "@label"
 msgid "Use holiday region:"
 msgstr "Eployî payis po les condjîs:"
 
-#: prefs/koprefsdialog.cpp:300
+#: prefs/koprefsdialogtime.cpp:113
 #, fuzzy, kde-format
 #| msgctxt "weekOfYear (year)"
 #| msgid "%1 (%2)"
@@ -3634,7 +3763,7 @@ msgctxt "@item:inlistbox Holiday region, region language"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: prefs/koprefsdialog.cpp:308
+#: prefs/koprefsdialogtime.cpp:121
 #, fuzzy, kde-format
 #| msgctxt "@label"
 #| msgid "Use holiday region:"
@@ -3642,7 +3771,7 @@ msgctxt "@item:inlistbox"
 msgid "Select Holiday Regions"
 msgstr "Eployî payis po les condjîs:"
 
-#: prefs/koprefsdialog.cpp:320
+#: prefs/koprefsdialogtime.cpp:133
 #, fuzzy, kde-format
 #| msgctxt "@title:group"
 #| msgid "Working Hours"
@@ -3650,7 +3779,7 @@ msgctxt "@title:group"
 msgid "Working Period"
 msgstr "Eures d' ovraedje"
 
-#: prefs/koprefsdialog.cpp:338
+#: prefs/koprefsdialogtime.cpp:151
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -3659,56 +3788,56 @@ msgid ""
 "will not be marked with color."
 msgstr ""
 
-#: prefs/koprefsdialog.cpp:356
+#: prefs/koprefsdialogtime.cpp:169
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Monday"
 msgstr ""
 
-#: prefs/koprefsdialog.cpp:357
+#: prefs/koprefsdialogtime.cpp:170
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Tuesday"
 msgstr ""
 
-#: prefs/koprefsdialog.cpp:358
+#: prefs/koprefsdialogtime.cpp:171
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Wednesday"
 msgstr ""
 
-#: prefs/koprefsdialog.cpp:359
+#: prefs/koprefsdialogtime.cpp:172
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Thursday"
 msgstr ""
 
-#: prefs/koprefsdialog.cpp:360
+#: prefs/koprefsdialogtime.cpp:173
 #, fuzzy, kde-format
 #| msgid "Holiday"
 msgctxt "@item:inlistbox"
 msgid "Friday"
 msgstr "Condjî"
 
-#: prefs/koprefsdialog.cpp:361
+#: prefs/koprefsdialogtime.cpp:174
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Saturday"
 msgstr ""
 
-#: prefs/koprefsdialog.cpp:362
+#: prefs/koprefsdialogtime.cpp:175
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Sunday"
 msgstr ""
 
-#: prefs/koprefsdialog.cpp:393
+#: prefs/koprefsdialogtime.cpp:206
 #, kde-format
 msgctxt "@title:tab"
 msgid "Default Values"
 msgstr "Prémetowès valixhances"
 
-#: prefs/koprefsdialog.cpp:397
+#: prefs/koprefsdialogtime.cpp:210
 #, fuzzy, kde-format
 #| msgctxt "incidence category: appointment"
 #| msgid "Appointment"
@@ -3716,7 +3845,7 @@ msgctxt "@title:group"
 msgid "Appointments"
 msgstr "Radjoû"
 
-#: prefs/koprefsdialog.cpp:417
+#: prefs/koprefsdialogtime.cpp:230
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Reminders"
@@ -3724,13 +3853,13 @@ msgctxt "@title:group"
 msgid "Reminders"
 msgstr "Rimimbreus"
 
-#: prefs/koprefsdialog.cpp:423
+#: prefs/koprefsdialogtime.cpp:236
 #, kde-format
 msgctxt "@label"
 msgid "Default reminder time:"
 msgstr "Prémetou tårdjaedje pol rimimbraedje:"
 
-#: prefs/koprefsdialog.cpp:444
+#: prefs/koprefsdialogtime.cpp:257
 #, fuzzy, kde-format
 #| msgctxt "@item:inlistbox alarm expressed in minutes"
 #| msgid "minute(s)"
@@ -3738,7 +3867,7 @@ msgctxt "@item:inlistbox reminder units in minutes"
 msgid "minute(s)"
 msgstr "munute(s)"
 
-#: prefs/koprefsdialog.cpp:446
+#: prefs/koprefsdialogtime.cpp:259
 #, fuzzy, kde-format
 #| msgctxt "@item:inlistbox alarm expressed in hours"
 #| msgid "hour(s)"
@@ -3746,7 +3875,7 @@ msgctxt "@item:inlistbox reminder time units in hours"
 msgid "hour(s)"
 msgstr "eure(s)"
 
-#: prefs/koprefsdialog.cpp:448
+#: prefs/koprefsdialogtime.cpp:261
 #, fuzzy, kde-format
 #| msgctxt "@label recurrence expressed in days"
 #| msgid "day(s)"
@@ -3754,45 +3883,45 @@ msgctxt "@item:inlistbox reminder time units in days"
 msgid "day(s)"
 msgstr "djoû(s)"
 
-#: prefs/koprefsdialog.cpp:459
+#: prefs/koprefsdialogtime.cpp:272
 #, kde-format
 msgid ""
 "*.ogg *.wav *.mp3 *.wma *.flac *.aiff *.raw *.au *.ra|Audio Files (*.ogg *."
 "wav *.mp3 *.wma *.flac *.aiff *.raw *.au *.ra)"
 msgstr ""
 
-#: prefs/koprefsdialog.cpp:637
+#: prefs/koprefsdialogviews.cpp:67
 #, kde-format
 msgctxt "@title:tab general settings"
 msgid "General"
 msgstr "Djenerå"
 
-#: prefs/koprefsdialog.cpp:643 prefs/koprefsdialog.cpp:690
-#: prefs/koprefsdialog.cpp:746 prefs/koprefsdialog.cpp:781
+#: prefs/koprefsdialogviews.cpp:73 prefs/koprefsdialogviews.cpp:120
+#: prefs/koprefsdialogviews.cpp:176 prefs/koprefsdialogviews.cpp:211
 #, kde-format
 msgctxt "@title:group"
 msgid "Display Options"
 msgstr ""
 
-#: prefs/koprefsdialog.cpp:650
+#: prefs/koprefsdialogviews.cpp:80
 #, kde-format
 msgctxt "@label suffix in the N days spin box"
 msgid " days"
 msgstr " djoûs"
 
-#: prefs/koprefsdialog.cpp:666
+#: prefs/koprefsdialogviews.cpp:96
 #, kde-format
 msgctxt "@title:group"
 msgid "Date Navigator"
 msgstr "Naivieu d' dates"
 
-#: prefs/koprefsdialog.cpp:684
+#: prefs/koprefsdialogviews.cpp:114
 #, kde-format
 msgctxt "@title:tab"
 msgid "Agenda View"
 msgstr "Vuwe adjinda"
 
-#: prefs/koprefsdialog.cpp:697
+#: prefs/koprefsdialogviews.cpp:127
 #, fuzzy, kde-format
 #| msgctxt "@label suffix in the hour size spin box"
 #| msgid " pixel"
@@ -3800,19 +3929,19 @@ msgctxt "@label suffix in the hour size spin box"
 msgid " pixels"
 msgstr " picsel"
 
-#: prefs/koprefsdialog.cpp:740
+#: prefs/koprefsdialogviews.cpp:170
 #, kde-format
 msgctxt "@title:tab"
 msgid "Month View"
 msgstr "Vuwe pås moes"
 
-#: prefs/koprefsdialog.cpp:775
+#: prefs/koprefsdialogviews.cpp:205
 #, kde-format
 msgctxt "@title:tab"
 msgid "Todo View"
 msgstr "Vuwe pås afé"
 
-#: prefs/koprefsdialog.cpp:789
+#: prefs/koprefsdialogviews.cpp:219
 #, fuzzy, kde-format
 #| msgctxt "@title:group"
 #| msgid "Other Plugins"
@@ -3820,141 +3949,18 @@ msgctxt "@title:group"
 msgid "Other Options"
 msgstr "Ôtes tchôkes-divins"
 
-#: prefs/koprefsdialog.cpp:909
-#, kde-format
-msgctxt "@title:tab"
-msgid "Colors"
-msgstr "Coleurs"
-
-#: prefs/koprefsdialog.cpp:955
-#, kde-format
-msgctxt "@title:group"
-msgid "Categories"
-msgstr "Categoreyes"
-
-#: prefs/koprefsdialog.cpp:968
-#, kde-format
-msgctxt "@info:whatsthis"
-msgid ""
-"Select here the event category you want to modify. You can change the "
-"selected category color using the button below."
-msgstr ""
-
-#: prefs/koprefsdialog.cpp:978
-#, kde-format
-msgctxt "@info:whatsthis"
-msgid ""
-"Choose here the color of the event category selected using the combo box "
-"above."
-msgstr ""
-
-#: prefs/koprefsdialog.cpp:987
-#, kde-format
-msgctxt "@title:group"
-msgid "Resources"
-msgstr "Rissources"
-
-#: prefs/koprefsdialog.cpp:1003
-#, kde-format
-msgctxt "@info:whatsthis"
-msgid ""
-"Select the calendar you want to modify. You can change the selected calendar "
-"color using the button below."
-msgstr ""
-
-#: prefs/koprefsdialog.cpp:1013
-#, kde-format
-msgctxt "@info:whatsthis"
-msgid ""
-"Choose here the color of the calendar selected using the combo box above."
-msgstr ""
-
-#: prefs/koprefsdialog.cpp:1023
-#, kde-format
-msgctxt "@title:tab"
-msgid "Fonts"
-msgstr "Fontes"
-
-#: prefs/koprefsdialog.cpp:1037 prefs/koprefsdialog.cpp:1045
-#, kde-format
-msgctxt "@label"
-msgid "Event text"
-msgstr "Tecse di l' envenmint"
-
-#: prefs/koprefsdialog.cpp:1211
-#, kde-format
-msgctxt "@label"
-msgid "Mail transport:"
-msgstr ""
-
-#: prefs/koprefsdialog.cpp:1420
-#, kde-format
-msgctxt "@title:column plugin name"
-msgid "Name"
-msgstr "No"
-
-#: prefs/koprefsdialog.cpp:1440
-#, kde-format
-msgctxt "@action:button"
-msgid "Configure &Plugin..."
-msgstr "Apontyî &tchôke-divins..."
-
-#: prefs/koprefsdialog.cpp:1443
-#, kde-format
-msgctxt "@info:whatsthis"
-msgid ""
-"This button allows you to configure the plugin that you have selected in the "
-"list above"
-msgstr ""
-
-#: prefs/koprefsdialog.cpp:1449
-#, kde-format
-msgctxt "@title:group"
-msgid "Position"
-msgstr "Plaece"
-
-#: prefs/koprefsdialog.cpp:1453
-#, kde-format
-msgctxt "@option:check"
-msgid "Show at the top of the agenda views"
-msgstr "Mostrer al copete des vuwes adjinda"
-
-#: prefs/koprefsdialog.cpp:1455
-#, kde-format
-msgctxt "@option:check"
-msgid "Show at the bottom of the agenda views"
-msgstr "Mostrer al valêye des vuwes adjinda"
-
-#: prefs/koprefsdialog.cpp:1501
-#, kde-format
-msgctxt "@title:group"
-msgid "Calendar Decorations"
-msgstr "Gåliotaedjes do calindrî"
-
-#: prefs/koprefsdialog.cpp:1503
-#, kde-format
-msgctxt "@title:group"
-msgid "Other Plugins"
-msgstr "Ôtes tchôkes-divins"
-
-#: prefs/koprefsdialog.cpp:1581
-#, kde-format
-msgctxt "@info"
-msgid "Unable to configure this plugin"
-msgstr "Dji n' a sepou apontyî ci tchôke-divins"
-
-#: prefs/koprefsdialog.cpp:1758
+#: prefs/koprefsuserfeedback.cpp:49
 #, kde-format
 msgid "KCMUserFeedBack"
 msgstr ""
 
-#: prefs/koprefsdialog.cpp:1760
+#: prefs/koprefsuserfeedback.cpp:51
 #, fuzzy, kde-format
 #| msgid "KOrganizer Confirmation"
 msgid "KOrganizer Configure User FeedBack"
 msgstr "Acertinaedje di KOrganizer"
 
-#: prefs/koprefsdialog.cpp:1762
+#: prefs/koprefsuserfeedback.cpp:53
 #, kde-format
 msgid "(c) 2020 Laurent Montel"
 msgstr ""
