@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkio\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-07-26 02:02+0200\n"
+"POT-Creation-Date: 2020-07-27 02:03+0200\n"
 "PO-Revision-Date: 2012-07-04 22:08+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -2401,7 +2401,7 @@ msgstr ""
 msgid "Undocumented Error"
 msgstr "Aroke nén documintêye"
 
-#: core/kcoredirlister.cpp:396 gui/openurljob.cpp:152 widgets/krun.cpp:419
+#: core/kcoredirlister.cpp:396 gui/openurljob.cpp:168 widgets/krun.cpp:419
 #: widgets/paste.cpp:278 widgets/renamedialog.cpp:595
 #, kde-format
 msgid ""
@@ -2667,7 +2667,7 @@ msgid "The procedure to set the client certificate for the session failed."
 msgstr ""
 "Li metaedje e plaece di l' acertineure cliyint pol session a fwait berwete."
 
-#: core/tcpslavebase.cpp:698 widgets/jobuidelegate.cpp:395
+#: core/tcpslavebase.cpp:698 widgets/jobuidelegate.cpp:399
 #, kde-format
 msgid "SSL"
 msgstr "SSL"
@@ -2788,9 +2788,9 @@ msgstr "Ritcherdjî"
 msgid "New Folder..."
 msgstr "Novea ridant..."
 
-#: filewidgets/kdiroperator.cpp:2004 widgets/jobuidelegate.cpp:286
-#: widgets/jobuidelegate.cpp:287 widgets/jobuidelegate.cpp:295
-#: widgets/jobuidelegate.cpp:296
+#: filewidgets/kdiroperator.cpp:2004 widgets/jobuidelegate.cpp:290
+#: widgets/jobuidelegate.cpp:291 widgets/jobuidelegate.cpp:299
+#: widgets/jobuidelegate.cpp:300
 #, kde-format
 msgid "Move to Trash"
 msgstr "Taper å batch"
@@ -3980,7 +3980,7 @@ msgid ""
 "%2."
 msgstr ""
 
-#: gui/applicationlauncherjob.cpp:262 gui/openurljob.cpp:613
+#: gui/applicationlauncherjob.cpp:262 gui/openurljob.cpp:744
 #: widgets/krun.cpp:210
 #, kde-format
 msgid "You are not authorized to select an application to open this file."
@@ -4023,12 +4023,12 @@ msgstr ""
 msgid "Launching %1"
 msgstr "Enondaedje di %1"
 
-#: gui/openurljob.cpp:166
+#: gui/openurljob.cpp:182
 #, kde-format
 msgid "Failed to open %1"
 msgstr ""
 
-#: gui/openurljob.cpp:414 widgets/kdesktopfileactions.cpp:138
+#: gui/openurljob.cpp:430 widgets/kdesktopfileactions.cpp:138
 #, kde-format
 msgid ""
 "The desktop entry file\n"
@@ -4039,25 +4039,32 @@ msgstr ""
 "%1\n"
 "est del sôre «Link» (hårdêye) mins n' a nole roye «URL=...»."
 
-#: gui/openurljob.cpp:481
+#: gui/openurljob.cpp:484
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>The file <b>%1</b> is an executable program. For safety it will not "
 #| "be started.</qt>"
 msgid ""
-"The file \"%1\" is an executable program. For safety it will not be started."
+"The executable file \"%1\" is located on a remote filesystem. For safety "
+"reasons it will not be started."
 msgstr ""
 "<qt>Li fitchî <b>%1</b> est on programe enondåve. Po-z esse e såvrité i "
 "n' serè enondé.</qt>"
 
-#: gui/openurljob.cpp:504
+#: gui/openurljob.cpp:528
+#, kde-format
+msgid ""
+"For security reasons, launching executables is not allowed in this context."
+msgstr ""
+
+#: gui/openurljob.cpp:555
 #, kde-format
 msgid ""
 "The program \"%1\" needs to have executable permission before it can be "
 "launched."
 msgstr ""
 
-#: gui/openurljob.cpp:515
+#: gui/openurljob.cpp:566
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>Unable to run the command specified. The file or folder <b>%1</b> "
@@ -4069,16 +4076,22 @@ msgstr ""
 "<qt>Nén moyén d' enonder li cmande ki vos djhoz. Motoit ki l' fitchî ou "
 "l' ridant <b>%1</b> n' egzistêye nén.</qt>"
 
-#: gui/openurljob.cpp:573 widgets/kdesktopfileactions.cpp:71
+#: gui/openurljob.cpp:654 widgets/kdesktopfileactions.cpp:71
 #, kde-format
 msgid "The desktop entry file %1 has no Type=... entry."
 msgstr "Li fitchî d' apontiaedje do scribanne %1 n' a nole roye « Sôre=... »."
 
-#: gui/openurljob.cpp:624
+#: gui/openurljob.cpp:755
 #, fuzzy, kde-format
 #| msgid "Cannot open file"
 msgid "Failed to open the file."
 msgstr "Dji n' sai drovi li fitchî"
+
+#: gui/openurljob.cpp:789
+#, fuzzy, kde-format
+#| msgid "The file %1 could not be found"
+msgid "The program \"%1\" could not be launched."
+msgstr "Dji n' a savou trover l' fitchî %1"
 
 #: ioslaves/file/file.cpp:188
 #, kde-format
@@ -7421,7 +7434,7 @@ msgstr ""
 msgid "Undo File Copy Confirmation"
 msgstr "Metaedje a djoû di l' apontiaedje do sistinme"
 
-#: widgets/jobuidelegate.cpp:254
+#: widgets/jobuidelegate.cpp:258
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -7430,14 +7443,14 @@ msgid ""
 "emphasis>"
 msgstr ""
 
-#: widgets/jobuidelegate.cpp:255 widgets/jobuidelegate.cpp:264
-#: widgets/jobuidelegate.cpp:274
+#: widgets/jobuidelegate.cpp:259 widgets/jobuidelegate.cpp:268
+#: widgets/jobuidelegate.cpp:278
 #, fuzzy, kde-format
 #| msgid "Delete Entry"
 msgid "Delete Permanently"
 msgstr "Disfacer intrêye"
 
-#: widgets/jobuidelegate.cpp:262
+#: widgets/jobuidelegate.cpp:266
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -7449,7 +7462,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: widgets/jobuidelegate.cpp:273
+#: widgets/jobuidelegate.cpp:277
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -7457,13 +7470,13 @@ msgid ""
 "><emphasis strong='true'>This action cannot be undone.</emphasis>"
 msgstr ""
 
-#: widgets/jobuidelegate.cpp:275
+#: widgets/jobuidelegate.cpp:279
 #, kde-format
 msgctxt "@action:button"
 msgid "Empty Trash"
 msgstr "Vudî li batch"
 
-#: widgets/jobuidelegate.cpp:285
+#: widgets/jobuidelegate.cpp:289
 #, fuzzy, kde-kuit-format
 #| msgid "Do you really want to move this item to the trash?"
 #| msgid_plural "Do you really want to move these %1 items to the trash?"
@@ -7473,7 +7486,7 @@ msgid ""
 "filename>"
 msgstr "Voloz vs po do bon taper c' cayet ci å batch?"
 
-#: widgets/jobuidelegate.cpp:293
+#: widgets/jobuidelegate.cpp:297
 #, fuzzy, kde-format
 #| msgid "Do you really want to move this item to the trash?"
 #| msgid_plural "Do you really want to move these %1 items to the trash?"
@@ -7482,7 +7495,7 @@ msgid_plural "Do you really want to move these %1 items to the Trash?"
 msgstr[0] "Voloz vs po do bon taper c' cayet ci å batch?"
 msgstr[1] "Voloz vs po do bon taper c' cayet ci å batch?"
 
-#: widgets/jobuidelegate.cpp:394
+#: widgets/jobuidelegate.cpp:398
 #, fuzzy, kde-format
 #| msgid "The peer SSL certificate appears to be corrupt."
 msgid "The peer SSL certificate chain appears to be corrupt."
