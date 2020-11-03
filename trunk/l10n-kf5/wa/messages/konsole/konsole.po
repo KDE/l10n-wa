@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konsole\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-10-30 02:47+0100\n"
+"POT-Creation-Date: 2020-11-03 02:38+0100\n"
 "PO-Revision-Date: 2010-01-22 15:02+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -3702,27 +3702,36 @@ msgstr ""
 msgid "Allow escape sequences for links"
 msgstr ""
 
-#. i18n: ectx: property (toolTip), widget (QCheckBox, enableMouseWheelZoomButton)
+#. i18n: ectx: property (text), widget (QLabel, allowLinkEscapeSequenceButtonWarning)
 #: widgets/EditProfileMousePage.ui:359
+#, kde-format
+msgid ""
+"<b>WARNING</b>: This has security implications as it allows malicious URLs "
+"to be shown as another URL or hidden.<br>Make sure you understand the "
+"implications before turning this on."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, enableMouseWheelZoomButton)
+#: widgets/EditProfileMousePage.ui:375
 #, kde-format
 msgid "Pressing Ctrl+scrollwheel will increase/decrease the text size."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, enableMouseWheelZoomButton)
-#: widgets/EditProfileMousePage.ui:362
+#: widgets/EditProfileMousePage.ui:378
 #, kde-format
 msgid "Allow Ctrl+scrollwheel to zoom text size"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: widgets/EditProfileMousePage.ui:369
+#: widgets/EditProfileMousePage.ui:385
 #, fuzzy, kde-format
 #| msgid "Allow blinking text"
 msgid "Allowed link formats"
 msgstr "Permete li tecse clignotant"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, openLinksByDirectClickButton)
-#: widgets/EditProfileMousePage.ui:385
+#: widgets/EditProfileMousePage.ui:401
 #, kde-format
 msgid ""
 "Text recognized as a file, link or an email address can be opened by direct "
@@ -3730,7 +3739,7 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, openLinksByDirectClickButton)
-#: widgets/EditProfileMousePage.ui:388
+#: widgets/EditProfileMousePage.ui:404
 #, kde-format
 msgid "Open by direct click"
 msgstr ""
@@ -4183,7 +4192,7 @@ msgctxt "@info:tooltip"
 msgid "Insert remote title format"
 msgstr "Cogne pol tite des linwetes då lon :"
 
-#: widgets/TerminalHeaderBar.cpp:95
+#: widgets/TerminalHeaderBar.cpp:95 widgets/TerminalHeaderBar.cpp:196
 #, fuzzy, kde-format
 #| msgid "&Close Tab"
 msgctxt "@info:tooltip"
@@ -4195,6 +4204,13 @@ msgstr "&Clôre linwete"
 #| msgid "&Close Tab"
 msgctxt "@info:tooltip"
 msgid "Close terminal"
+msgstr "&Clôre linwete"
+
+#: widgets/TerminalHeaderBar.cpp:194
+#, fuzzy, kde-format
+#| msgid "&Close Tab"
+msgctxt "@info:tooltip"
+msgid "Restore terminal"
 msgstr "&Clôre linwete"
 
 #: widgets/ViewContainer.cpp:73
