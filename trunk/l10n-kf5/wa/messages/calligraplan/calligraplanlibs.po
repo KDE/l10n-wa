@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-12-30 02:46+0100\n"
+"POT-Creation-Date: 2021-01-14 02:48+0100\n"
 "PO-Revision-Date: 2009-08-20 10:18+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -1507,10 +1507,10 @@ msgstr ""
 msgid "Stop"
 msgstr ""
 
-#: main/KoPrintingDialog.cpp:188 ui/gantt/GanttViewBase.cpp:158
+#: main/KoPrintingDialog.cpp:188 ui/gantt/GanttViewBase.cpp:163
 #: ui/kptaccountseditor.cpp:73 ui/kptaccountsviewconfigdialog.cpp:89
-#: ui/kptdependencyeditor.cpp:2015 ui/kptganttview.cpp:771
-#: ui/kptganttview.cpp:1208 ui/kptitemviewsettup.cpp:202
+#: ui/kptdependencyeditor.cpp:2015 ui/kptganttview.cpp:774
+#: ui/kptganttview.cpp:1211 ui/kptitemviewsettup.cpp:202
 #: ui/kptitemviewsettup.cpp:286 ui/kptresourceappointmentsview.cpp:105
 #: ui/performance/ProjectStatusView.cpp:184
 #, fuzzy, kde-format
@@ -5574,20 +5574,20 @@ msgstr ""
 msgid "Calligra Storage"
 msgstr ""
 
-#: ui/gantt/GanttViewBase.cpp:148 ui/performance/PerformanceStatusView.cpp:392
+#: ui/gantt/GanttViewBase.cpp:146 ui/performance/PerformanceStatusView.cpp:392
 #: ui/performance/ProjectStatusView.cpp:169
 #, kde-format
 msgid "Chart"
 msgstr "Grafike"
 
-#: ui/gantt/GanttViewBase.cpp:148
+#: ui/gantt/GanttViewBase.cpp:146
 #, kde-format
 msgid "Gantt Chart Settings"
 msgstr "Apontiaedjes do grafike Gantt"
 
-#: ui/gantt/GanttViewBase.cpp:158 ui/kptaccountseditor.cpp:74
+#: ui/gantt/GanttViewBase.cpp:163 ui/kptaccountseditor.cpp:74
 #: ui/kptaccountsviewconfigdialog.cpp:90 ui/kptdependencyeditor.cpp:2016
-#: ui/kptganttview.cpp:771 ui/kptganttview.cpp:1208
+#: ui/kptganttview.cpp:774 ui/kptganttview.cpp:1211
 #: ui/kptitemviewsettup.cpp:202 ui/kptitemviewsettup.cpp:286
 #: ui/kptresourceappointmentsview.cpp:106
 #: ui/performance/ProjectStatusView.cpp:185
@@ -5596,7 +5596,7 @@ msgstr "Apontiaedjes do grafike Gantt"
 msgid "Printing Options"
 msgstr "Tchuzes"
 
-#: ui/gantt/GanttViewBase.cpp:204
+#: ui/gantt/GanttViewBase.cpp:247
 #, fuzzy, kde-kuit-format
 #| msgid "Chart"
 msgctxt "@title:tab"
@@ -5833,23 +5833,83 @@ msgctxt "@info:tooltip"
 msgid "Name: %1<nl/>Planned: %2 - %3"
 msgstr ""
 
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: ui/gantt/kptganttprintingoptions.ui:17
+#, fuzzy, kde-format
+#| msgid "Header"
+msgid "Headers"
+msgstr "Tiestire"
+
 #. i18n: ectx: property (text), widget (QCheckBox, ui_printRowLabels)
-#: ui/gantt/kptganttprintingoptions.ui:16
+#: ui/gantt/kptganttprintingoptions.ui:23
+#, fuzzy, kde-format
+#| msgid "Modify Task"
+msgid "Print task names"
+msgstr "Candjî bouye"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_printColumnLabels)
+#: ui/gantt/kptganttprintingoptions.ui:30
 #, kde-format
-msgid "Print row labels"
+msgid "Print time scale header"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QRadioButton, ui_singlePage)
-#: ui/gantt/kptganttprintingoptions.ui:35
-#, kde-format
-msgid "Print chart on a single page"
-msgstr ""
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: ui/gantt/kptganttprintingoptions.ui:40
+#, fuzzy, kde-format
+#| msgid "Scheduling Log"
+msgid "Scaling"
+msgstr "Djournå d' programaedje"
 
-#. i18n: ectx: property (text), widget (QRadioButton, ui_multiplePages)
-#: ui/gantt/kptganttprintingoptions.ui:45
+#. i18n: ectx: property (text), widget (QRadioButton, ui_noFitting)
+#: ui/gantt/kptganttprintingoptions.ui:46
 #, kde-format
 msgid "Divide chart on multiple pages"
 msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_fitVertical)
+#: ui/gantt/kptganttprintingoptions.ui:53
+#, kde-format
+msgid "Fit chart to page height"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_fitSingle)
+#: ui/gantt/kptganttprintingoptions.ui:60
+#, kde-format
+msgid "Fit chart to a single page"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_5)
+#: ui/gantt/kptganttprintingoptions.ui:73
+#, fuzzy, kde-format
+#| msgid "Change..."
+msgid "Range"
+msgstr "Candjî..."
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_projectstartBtn)
+#. i18n: ectx: property (text), widget (QRadioButton, ui_projectStartBtn)
+#: ui/gantt/kptganttprintingoptions.ui:88
+#: ui/kptaccountsviewconfigurepanelbase.ui:107
+#, fuzzy, kde-format
+#| msgid "Project manager"
+msgid "Project start"
+msgstr "Manaedjeu di pordjet"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_startTimeBtn)
+#. i18n: ectx: property (text), widget (QRadioButton, ui_endTimeBtn)
+#: ui/gantt/kptganttprintingoptions.ui:97
+#: ui/gantt/kptganttprintingoptions.ui:130
+#, fuzzy, kde-format
+msgid "Time:"
+msgstr "Durêye"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_projectendBtn)
+#. i18n: ectx: property (text), widget (QRadioButton, ui_projectEndBtn)
+#: ui/gantt/kptganttprintingoptions.ui:121
+#: ui/kptaccountsviewconfigurepanelbase.ui:158
+#, fuzzy, kde-format
+#| msgid "Project"
+msgid "Project end"
+msgstr "Pordjet"
 
 #: ui/GroupAllocationPanel.cpp:66 ui/GroupAllocationPanel.cpp:95
 #, fuzzy
@@ -5989,13 +6049,6 @@ msgstr "Durêye"
 msgid "Start date"
 msgstr "Ataké"
 
-#. i18n: ectx: property (text), widget (QRadioButton, ui_projectstartBtn)
-#: ui/kptaccountsviewconfigurepanelbase.ui:107
-#, fuzzy, kde-format
-#| msgid "Project manager"
-msgid "Project start"
-msgstr "Manaedjeu di pordjet"
-
 #. i18n: ectx: property (text), widget (QRadioButton, ui_startdateBtn)
 #. i18n: ectx: property (text), widget (QRadioButton, ui_enddateBtn)
 #. i18n: ectx: property (text), widget (QCheckBox, ui_headerDate)
@@ -6020,13 +6073,6 @@ msgstr "Durêye"
 #| msgid "Select the current day"
 msgid "Current date"
 msgstr "Tchoezi l' djoû d' ouy"
-
-#. i18n: ectx: property (text), widget (QRadioButton, ui_projectendBtn)
-#: ui/kptaccountsviewconfigurepanelbase.ui:158
-#, fuzzy, kde-format
-#| msgid "Project"
-msgid "Project end"
-msgstr "Pordjet"
 
 #: ui/kptcalendareditor.cpp:203 ui/kptcalendareditor.cpp:661
 #, kde-format
@@ -6367,7 +6413,7 @@ msgstr "Drovi"
 msgid "Ctrl+O"
 msgstr ""
 
-#: ui/kptganttview.cpp:392
+#: ui/kptganttview.cpp:395
 #, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -6379,64 +6425,64 @@ msgid ""
 "><link url='%1'>More...</link></para>"
 msgstr ""
 
-#: ui/kptganttview.cpp:438 ui/kpttaskeditor.cpp:926 ui/kpttaskeditor.cpp:1451
+#: ui/kptganttview.cpp:441 ui/kpttaskeditor.cpp:926 ui/kpttaskeditor.cpp:1451
 #, fuzzy, kde-format
 #| msgid "Project"
 msgid "Show Project"
 msgstr "Pordjet"
 
-#: ui/kptganttview.cpp:446
+#: ui/kptganttview.cpp:449
 #, fuzzy, kde-format
 #| msgid "Not scheduled"
 msgid "Show Unscheduled Tasks"
 msgstr "Nén programé"
 
-#: ui/kptganttview.cpp:457 ui/kptganttview.cpp:1022 ui/kptganttview.cpp:1360
+#: ui/kptganttview.cpp:460 ui/kptganttview.cpp:1025 ui/kptganttview.cpp:1363
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Auto"
 msgstr ""
 
-#: ui/kptganttview.cpp:464 ui/kptganttview.cpp:1029 ui/kptganttview.cpp:1367
+#: ui/kptganttview.cpp:467 ui/kptganttview.cpp:1032 ui/kptganttview.cpp:1370
 #, fuzzy, kde-format
 #| msgid "Month"
 msgctxt "@action:inmenu"
 msgid "Month"
 msgstr "Moes"
 
-#: ui/kptganttview.cpp:470 ui/kptganttview.cpp:1035 ui/kptganttview.cpp:1373
+#: ui/kptganttview.cpp:473 ui/kptganttview.cpp:1038 ui/kptganttview.cpp:1376
 #, fuzzy, kde-format
 #| msgid "Week"
 msgctxt "@action:inmenu"
 msgid "Week"
 msgstr "Samwinne"
 
-#: ui/kptganttview.cpp:476 ui/kptganttview.cpp:1041 ui/kptganttview.cpp:1379
+#: ui/kptganttview.cpp:479 ui/kptganttview.cpp:1044 ui/kptganttview.cpp:1382
 #, fuzzy, kde-format
 #| msgid "Day"
 msgctxt "@action:inmenu"
 msgid "Day"
 msgstr "Djoû"
 
-#: ui/kptganttview.cpp:482 ui/kptganttview.cpp:1047 ui/kptganttview.cpp:1385
+#: ui/kptganttview.cpp:485 ui/kptganttview.cpp:1050 ui/kptganttview.cpp:1388
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Hour"
 msgstr ""
 
-#: ui/kptganttview.cpp:488 ui/kptganttview.cpp:1053 ui/kptganttview.cpp:1391
+#: ui/kptganttview.cpp:491 ui/kptganttview.cpp:1056 ui/kptganttview.cpp:1394
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Zoom In"
 msgstr ""
 
-#: ui/kptganttview.cpp:493 ui/kptganttview.cpp:1058 ui/kptganttview.cpp:1396
+#: ui/kptganttview.cpp:496 ui/kptganttview.cpp:1061 ui/kptganttview.cpp:1399
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Zoom Out"
 msgstr ""
 
-#: ui/kptganttview.cpp:842
+#: ui/kptganttview.cpp:845
 #, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -6448,7 +6494,7 @@ msgid ""
 "url='%1'>More...</link></para>"
 msgstr ""
 
-#: ui/kptganttview.cpp:1275
+#: ui/kptganttview.cpp:1278
 #, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -10289,10 +10335,6 @@ msgstr ""
 #~ msgctxt "Actual Cost of Work Performed"
 #~ msgid "ACWP (Effort)"
 #~ msgstr "Efoirt"
-
-#, fuzzy
-#~ msgid "Time"
-#~ msgstr "Durêye"
 
 #~ msgid "%1: Set to Working"
 #~ msgstr "%1: Defini sos ovråve"
