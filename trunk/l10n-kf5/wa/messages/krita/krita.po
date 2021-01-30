@@ -64,7 +64,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-01-29 02:56+0100\n"
+"POT-Creation-Date: 2021-01-30 02:47+0100\n"
 "PO-Revision-Date: 2011-01-17 21:35+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -8335,7 +8335,7 @@ msgstr "Distchoezi"
 
 #: libs/image/commands/kis_image_layer_add_command.cpp:20
 #: libs/image/commands/kis_image_layer_add_command.cpp:36
-#: libs/ui/kis_layer_manager.cc:665 libs/ui/kis_layer_manager.cc:717
+#: libs/ui/kis_layer_manager.cc:597 libs/ui/kis_layer_manager.cc:649
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Add Layer"
@@ -8618,7 +8618,7 @@ msgstr ""
 msgid "Imported Image"
 msgstr "Abaguer imådje"
 
-#: libs/image/kis_image.cc:609 libs/image/kis_layer_utils.cpp:1629
+#: libs/image/kis_image.cc:609 libs/image/kis_layer_utils.cpp:1805
 #: libs/impex/KisExportCheckRegistry.cpp:108
 #, fuzzy, kde-format
 msgid "Selection Mask"
@@ -8629,7 +8629,7 @@ msgstr "Masse di tchoes..."
 msgid "background"
 msgstr "fond"
 
-#: libs/image/kis_image.cc:673 libs/ui/kis_layer_manager.cc:608
+#: libs/image/kis_image.cc:673 libs/ui/kis_layer_manager.cc:540
 #, fuzzy, kde-format
 msgid "Paint Layer"
 msgstr "Côutche &pondeure"
@@ -8912,71 +8912,77 @@ msgstr "Istwere des coleurs"
 msgid "Open File"
 msgstr "Drovi palete"
 
-#: libs/image/kis_layer_utils.cpp:428
+#: libs/image/kis_layer_utils.cpp:572
 #, fuzzy, kde-format
 msgid "Merged"
 msgstr "Côper dvins l' imådje"
 
-#: libs/image/kis_layer_utils.cpp:1135
+#: libs/image/kis_layer_utils.cpp:1311
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Merge Down"
 msgstr "Disfacer ponts"
 
-#: libs/image/kis_layer_utils.cpp:1359
+#: libs/image/kis_layer_utils.cpp:1535
 #, fuzzy, kde-format
 msgid "Copy of"
 msgstr "Copyî di"
 
-#: libs/image/kis_layer_utils.cpp:1432
+#: libs/image/kis_layer_utils.cpp:1608
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Change projection color"
 msgstr "Candjî raloyaedje"
 
-#: libs/image/kis_layer_utils.cpp:1592
+#: libs/image/kis_layer_utils.cpp:1768
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Merge Selected Nodes"
 msgstr "Oister coleur tchoezeye"
 
-#: libs/image/kis_layer_utils.cpp:1600
+#: libs/image/kis_layer_utils.cpp:1776
 #, fuzzy
 #| msgid "Profile"
 msgctxt "(qtundo-format)"
 msgid "New From Visible"
 msgstr "Profil"
 
-#: libs/image/kis_layer_utils.cpp:1600
+#: libs/image/kis_layer_utils.cpp:1776
 #, fuzzy, kde-format
 #| msgid "Visible"
 msgctxt "New layer created from all the visible layers"
 msgid "Visible"
 msgstr "Veyåve"
 
-#: libs/image/kis_layer_utils.cpp:1678
+#: libs/image/kis_layer_utils.cpp:1854
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Merge Selection Masks"
 msgstr "Masse di tchoes..."
 
-#: libs/image/kis_layer_utils.cpp:1701
+#: libs/image/kis_layer_utils.cpp:1877
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Flatten Layer"
 msgstr "Asplati coûtche"
 
-#: libs/image/kis_layer_utils.cpp:1714
+#: libs/image/kis_layer_utils.cpp:1890
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Flatten Image"
 msgstr "Asplati imådje"
 
-#: libs/image/kis_layer_utils.cpp:1901
+#: libs/image/kis_layer_utils.cpp:2077
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Split Alpha into a Mask"
 msgstr "Tchuzes alfa"
+
+#: libs/image/kis_layer_utils.cpp:2103
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Convert to a Paint Layer"
+msgstr "Kivierser coûtche do moumint a pårti di"
 
 #: libs/image/kis_processing_visitor.cpp:22
 #, fuzzy, kde-format
@@ -9367,13 +9373,13 @@ msgid ""
 "The image contains <b>Exif</b> metadata. The metadata will not be saved."
 msgstr ""
 
-#: libs/impex/KisExportCheckRegistry.cpp:88 libs/ui/kis_layer_manager.cc:637
+#: libs/impex/KisExportCheckRegistry.cpp:88 libs/ui/kis_layer_manager.cc:569
 #, fuzzy, kde-format
 msgid "Clone Layer"
 msgstr "Coûtche &djermale"
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: libs/impex/KisExportCheckRegistry.cpp:90 libs/ui/kis_layer_manager.cc:621
+#: libs/impex/KisExportCheckRegistry.cpp:90 libs/ui/kis_layer_manager.cc:553
 #: libs/ui/kis_node_manager.cpp:1500 libs/ui/KisPaletteEditor.cpp:408
 #: libs/widgets/kis_palette_view.cpp:113
 #: plugins/dockers/arrangedocker/arrange_docker_widget.ui:254
@@ -9382,18 +9388,18 @@ msgstr "Coûtche &djermale"
 msgid "Group"
 msgstr "Hopea:"
 
-#: libs/impex/KisExportCheckRegistry.cpp:92 libs/ui/kis_layer_manager.cc:950
+#: libs/impex/KisExportCheckRegistry.cpp:92 libs/ui/kis_layer_manager.cc:882
 #, fuzzy, kde-format
 msgid "File Layer"
 msgstr "Côutche p&assete..."
 
-#: libs/impex/KisExportCheckRegistry.cpp:94 libs/ui/kis_layer_manager.cc:650
+#: libs/impex/KisExportCheckRegistry.cpp:94 libs/ui/kis_layer_manager.cc:582
 #: plugins/impex/svg/kis_svg_import.cc:79
 #, fuzzy, kde-format
 msgid "Vector Layer"
 msgstr "Taeyî coûtche"
 
-#: libs/impex/KisExportCheckRegistry.cpp:96 libs/ui/kis_layer_manager.cc:672
+#: libs/impex/KisExportCheckRegistry.cpp:96 libs/ui/kis_layer_manager.cc:604
 #, fuzzy, kde-format
 msgid "Filter Layer"
 msgstr "Côutche p&assete..."
@@ -11744,7 +11750,7 @@ msgstr "Fitchîs sourdants:"
 #: libs/ui/dialogs/kis_dlg_preferences.cc:523
 #: libs/ui/input/kis_tablet_debugger.cpp:96 libs/ui/kis_filter_manager.cc:235
 #: libs/ui/kis_filter_manager.cc:244 libs/ui/kis_layer_manager.cc:302
-#: libs/ui/kis_layer_manager.cc:958 libs/ui/kis_node_manager.cpp:1215
+#: libs/ui/kis_layer_manager.cc:890 libs/ui/kis_node_manager.cpp:1215
 #: libs/ui/kis_node_manager.cpp:1278 libs/ui/KisApplication.cpp:898
 #: libs/ui/KisApplication.cpp:901 libs/ui/KisApplication.cpp:926
 #: libs/ui/KisApplication.cpp:958 libs/ui/KisApplication.cpp:972
@@ -14480,7 +14486,7 @@ msgid "Session name:"
 msgstr "Môde di tchoes:"
 
 #: libs/ui/dialogs/KisSessionManagerDialog.cpp:89
-#: libs/ui/KisMainWindow.cpp:2372 libs/ui/widgets/kis_gradient_chooser.cc:527
+#: libs/ui/KisMainWindow.cpp:2372 libs/ui/widgets/kis_gradient_chooser.cc:523
 #: libs/ui/widgets/KoFillConfigWidget.cpp:651
 #: plugins/dockers/gamutmask/gamutmask_dock.cpp:366
 #: plugins/dockers/tasksetdocker/tasksetdocker_dock.cpp:202
@@ -14490,7 +14496,7 @@ msgid "Name Already Exists"
 msgstr ""
 
 #: libs/ui/dialogs/KisSessionManagerDialog.cpp:90
-#: libs/ui/KisMainWindow.cpp:2373 libs/ui/widgets/kis_gradient_chooser.cc:528
+#: libs/ui/KisMainWindow.cpp:2373 libs/ui/widgets/kis_gradient_chooser.cc:524
 #: libs/ui/widgets/KoFillConfigWidget.cpp:652
 #: plugins/dockers/gamutmask/gamutmask_dock.cpp:367
 #: plugins/dockers/tasksetdocker/tasksetdocker_dock.cpp:203
@@ -18929,7 +18935,7 @@ msgstr "Prôpietés del coûtche passete"
 msgid "File Layer Properties"
 msgstr "Prôpietés del coûtche passete"
 
-#: libs/ui/kis_layer_manager.cc:302 libs/ui/kis_layer_manager.cc:958
+#: libs/ui/kis_layer_manager.cc:302 libs/ui/kis_layer_manager.cc:890
 #, kde-format
 msgid "No file name specified"
 msgstr ""
@@ -18939,60 +18945,54 @@ msgstr ""
 msgid "Change Clone Layer"
 msgstr "Candjî passete"
 
-#: libs/ui/kis_layer_manager.cc:443
-#, fuzzy
-msgctxt "(qtundo-format)"
-msgid "Convert to a Paint Layer"
-msgstr "Kivierser coûtche do moumint a pårti di"
-
-#: libs/ui/kis_layer_manager.cc:471
+#: libs/ui/kis_layer_manager.cc:403
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Convert to an animated layer"
 msgstr "Kivierser coûtche do moumint a pårti di"
 
-#: libs/ui/kis_layer_manager.cc:491
+#: libs/ui/kis_layer_manager.cc:423
 #, fuzzy, kde-format
 msgid "Save layers to..."
 msgstr "Schaper coûtche come imådje..."
 
-#: libs/ui/kis_layer_manager.cc:492
+#: libs/ui/kis_layer_manager.cc:424
 #, kde-format
 msgid ""
 "Choose the location where the layer will be saved to. The new file layer "
 "will then reference this location."
 msgstr ""
 
-#: libs/ui/kis_layer_manager.cc:555
+#: libs/ui/kis_layer_manager.cc:487
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Convert to a file layer"
 msgstr "Kivierser coûtche do moumint a pårti di"
 
-#: libs/ui/kis_layer_manager.cc:672
+#: libs/ui/kis_layer_manager.cc:604
 #, kde-format
 msgid "New Filter Layer"
 msgstr "Novele coûtche di passete"
 
-#: libs/ui/kis_layer_manager.cc:721
+#: libs/ui/kis_layer_manager.cc:653
 #, fuzzy, kde-format
 msgid "Fill Layer"
 msgstr "Côutche p&assete..."
 
-#: libs/ui/kis_layer_manager.cc:748
+#: libs/ui/kis_layer_manager.cc:680
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "Flatten Image"
 msgstr "Asplati imådje"
 
-#: libs/ui/kis_layer_manager.cc:749
+#: libs/ui/kis_layer_manager.cc:681
 #, fuzzy, kde-format
 msgid ""
 "The image contains hidden layers that will be lost. Do you want to flatten "
 "the image?"
 msgstr "I gn a dins l' imådje des coûtches catcheyes: ele seront pierdowes."
 
-#: libs/ui/kis_layer_manager.cc:827 libs/ui/kis_layer_manager.cc:848
+#: libs/ui/kis_layer_manager.cc:759 libs/ui/kis_layer_manager.cc:780
 #, fuzzy, kde-format
 msgctxt "floating message in layer manager"
 msgid "Layer is locked "
@@ -19000,12 +19000,12 @@ msgid_plural "Layers are locked"
 msgstr[0] "Grandeu del coûtche"
 msgstr[1] "Grandeu del coûtche"
 
-#: libs/ui/kis_layer_manager.cc:906
+#: libs/ui/kis_layer_manager.cc:838
 #, kde-format
 msgid "Convert Invisible Groups"
 msgstr ""
 
-#: libs/ui/kis_layer_manager.cc:909
+#: libs/ui/kis_layer_manager.cc:841
 #, kde-format
 msgid "Export Only Toplevel Groups"
 msgstr ""
@@ -22836,70 +22836,70 @@ msgstr "Gradyint da vosse"
 msgid "Custom Segmented Gradient"
 msgstr "Gradyints prédefinis"
 
-#: libs/ui/widgets/kis_gradient_chooser.cc:169
+#: libs/ui/widgets/kis_gradient_chooser.cc:170
 #, fuzzy, kde-format
 msgctxt "Set the gradient chooser to show icons instead of a list"
 msgid "Icon view"
 msgstr "Defini grandeu del fonte"
 
-#: libs/ui/widgets/kis_gradient_chooser.cc:175
+#: libs/ui/widgets/kis_gradient_chooser.cc:176
 #, fuzzy, kde-format
 #| msgid "Distant view"
 msgctxt "Set the gradient chooser to show a list instead of icons"
 msgid "List view"
 msgstr "Lådje plan"
 
-#: libs/ui/widgets/kis_gradient_chooser.cc:184
+#: libs/ui/widgets/kis_gradient_chooser.cc:185
 #, fuzzy, kde-format
 #| msgid "Small Tiles"
 msgctxt "Set the gradient chooser to show small items"
 msgid "Small items"
 msgstr "Pitits cwåreas"
 
-#: libs/ui/widgets/kis_gradient_chooser.cc:190
+#: libs/ui/widgets/kis_gradient_chooser.cc:191
 #, fuzzy, kde-format
 #| msgid "Cursor Resize Vert"
 msgctxt "Set the gradient chooser to show medium size items"
 msgid "Medium size items"
 msgstr "Coursoe di candjaedje del grandeu D' astampé"
 
-#: libs/ui/widgets/kis_gradient_chooser.cc:196
+#: libs/ui/widgets/kis_gradient_chooser.cc:197
 #, fuzzy, kde-format
 msgctxt "Set the gradient chooser to show large items"
 msgid "Large items"
 msgstr "Grandeu del pîce"
 
-#: libs/ui/widgets/kis_gradient_chooser.cc:202
+#: libs/ui/widgets/kis_gradient_chooser.cc:203
 #, fuzzy, kde-format
 #| msgid "Cursor Resize Vert"
 msgctxt "Set the gradient chooser to show custom size items"
 msgid "Custom size items"
 msgstr "Coursoe di candjaedje del grandeu D' astampé"
 
-#: libs/ui/widgets/kis_gradient_chooser.cc:225
+#: libs/ui/widgets/kis_gradient_chooser.cc:226
 #, fuzzy, kde-format
 msgid "Add..."
 msgstr "&Radjouter..."
 
-#: libs/ui/widgets/kis_gradient_chooser.cc:230
+#: libs/ui/widgets/kis_gradient_chooser.cc:231
 #, fuzzy, kde-format
 #| msgid "gradient"
 msgid "Stop gradient"
 msgstr "gradyint"
 
-#: libs/ui/widgets/kis_gradient_chooser.cc:232
+#: libs/ui/widgets/kis_gradient_chooser.cc:233
 #, fuzzy, kde-format
 #| msgid "Predefined Gradients"
 msgid "Segmented gradient"
 msgstr "Gradyints prédefinis"
 
-#: libs/ui/widgets/kis_gradient_chooser.cc:239
+#: libs/ui/widgets/kis_gradient_chooser.cc:240
 #, fuzzy, kde-format
 msgid "Edit..."
 msgstr "Candjî"
 
-#: libs/ui/widgets/kis_gradient_chooser.cc:482
-#: libs/ui/widgets/kis_gradient_chooser.cc:491
+#: libs/ui/widgets/kis_gradient_chooser.cc:478
+#: libs/ui/widgets/kis_gradient_chooser.cc:487
 #, fuzzy, kde-format
 msgid "unnamed"
 msgstr "Sins no"
