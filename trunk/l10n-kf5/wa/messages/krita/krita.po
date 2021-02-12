@@ -64,7 +64,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-02-11 02:27+0100\n"
+"POT-Creation-Date: 2021-02-12 02:41+0100\n"
 "PO-Revision-Date: 2011-01-17 21:35+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -9005,8 +9005,8 @@ msgid "Processing"
 msgstr "Pos-traitmint"
 
 #: libs/image/kis_psd_layer_style.cpp:91
-#: libs/ui/KisApplicationArguments.cpp:336 libs/ui/KisMainWindow.cpp:1377
-#: libs/ui/KisMainWindow.cpp:1644 libs/ui/KisMainWindow.cpp:1663
+#: libs/ui/KisApplicationArguments.cpp:336 libs/ui/KisMainWindow.cpp:1378
+#: libs/ui/KisMainWindow.cpp:1645 libs/ui/KisMainWindow.cpp:1664
 #: plugins/impex/libkra/kis_kra_saver.cpp:86
 #, kde-format
 msgid "Unnamed"
@@ -9675,7 +9675,7 @@ msgctxt "description of a file type"
 msgid "SeExpr script package"
 msgstr ""
 
-#: libs/libkis/Document.cpp:910 libs/ui/KisMainWindow.cpp:1967
+#: libs/libkis/Document.cpp:910 libs/ui/KisMainWindow.cpp:1991
 #, fuzzy, kde-format
 msgid "Import frames"
 msgstr "Abaguer imådje"
@@ -11753,6 +11753,7 @@ msgid "Local Resources"
 msgstr "Fitchîs sourdants:"
 
 #: libs/resources/KisResourceCacheDb.cpp:136
+#: libs/resourcewidgets/KisStorageChooserWidget.cpp:140
 #: libs/ui/animation/KisAnimationRender.cpp:48
 #: libs/ui/animation/KisAnimationRender.cpp:100
 #: libs/ui/animation/KisDlgAnimationRenderer.cpp:473
@@ -11771,10 +11772,11 @@ msgstr "Fitchîs sourdants:"
 #: libs/ui/KisApplication.cpp:956 libs/ui/KisApplication.cpp:970
 #: libs/ui/KisApplication.cpp:998 libs/ui/KisDocument.cpp:856
 #: libs/ui/KisDocument.cpp:1631 libs/ui/KisDocument.cpp:1673
-#: libs/ui/KisDocument.cpp:1681 libs/ui/KisMainWindow.cpp:875
-#: libs/ui/KisMainWindow.cpp:1032 libs/ui/KisMainWindow.cpp:1157
-#: libs/ui/KisMainWindow.cpp:1170 libs/ui/KisMainWindow.cpp:1265
-#: libs/ui/KisMainWindow.cpp:1974 libs/ui/KisPart.cpp:537
+#: libs/ui/KisDocument.cpp:1681 libs/ui/KisMainWindow.cpp:876
+#: libs/ui/KisMainWindow.cpp:1033 libs/ui/KisMainWindow.cpp:1158
+#: libs/ui/KisMainWindow.cpp:1171 libs/ui/KisMainWindow.cpp:1266
+#: libs/ui/KisMainWindow.cpp:1851 libs/ui/KisMainWindow.cpp:1860
+#: libs/ui/KisMainWindow.cpp:1998 libs/ui/KisPart.cpp:537
 #: libs/ui/KisPart.cpp:540 libs/ui/KisReferenceImage.cpp:178
 #: libs/ui/KisRemoteFileFetcher.cpp:42 libs/ui/KisTemplateCreateDia.cpp:284
 #: libs/ui/KisTemplateCreateDia.cpp:390 libs/ui/KisView.cpp:703
@@ -11797,6 +11799,10 @@ msgstr "Fitchîs sourdants:"
 #: plugins/extensions/qmic/kis_qmic_interface.cpp:137
 #: plugins/extensions/qmic/kis_qmic_interface.cpp:208
 #: plugins/extensions/qmic/QMic.cpp:52 plugins/extensions/qmic/QMic.cpp:78
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:179
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:184
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:235
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:240
 #: plugins/extensions/resourcemanager/dlg_create_bundle.cpp:284
 #: plugins/extensions/resourcemanager/resourcemanager.cpp:217
 #: plugins/filters/colorsfilters/kis_multichannel_filter_base.cpp:393
@@ -11819,8 +11825,8 @@ msgstr "Krita"
 #: libs/resources/KisResourceCacheDb.cpp:136
 #, kde-format
 msgid ""
-"The resource database scheme is changed. Krita will backup your database and "
-"create a new database. Your local tags will be lost."
+"The resource database scheme has changed. Krita will backup your database "
+"and create a new database. Your local tags will be lost."
 msgstr ""
 
 #: libs/resources/KisResourceLocator.cpp:88
@@ -12225,7 +12231,7 @@ msgid "Storage Resources"
 msgstr "&Rissourses"
 
 #: libs/resourcewidgets/KisResourceItemChooser.cpp:215
-#: libs/ui/KisMainWindow.cpp:2384
+#: libs/ui/KisMainWindow.cpp:2408
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "Choose File to Add"
@@ -12245,6 +12251,19 @@ msgstr "Oister on pont"
 #, fuzzy, kde-format
 msgid "Remove from other tag"
 msgstr "Oister rawete"
+
+#: libs/resourcewidgets/KisStorageChooserWidget.cpp:133
+#, kde-format
+msgid "All bundles have been deactivated."
+msgstr ""
+
+#: libs/resourcewidgets/KisStorageChooserWidget.cpp:139
+#, kde-format
+msgid ""
+"\n"
+"There are no brush presets available. Please re-enable a bundle that "
+"provides brusb presets."
+msgstr ""
 
 #: libs/resourcewidgets/KisTagChooserWidget.cpp:59
 #, fuzzy, kde-format
@@ -12449,7 +12468,7 @@ msgid "Failed to render animation frames!"
 msgstr "Ahiver on novea faitindje"
 
 #: libs/ui/animation/KisDlgAnimationRenderer.cpp:51
-#: libs/ui/KisMainWindow.cpp:1992
+#: libs/ui/KisMainWindow.cpp:2016
 #, fuzzy, kde-format
 msgid "Render Animation"
 msgstr "Ashidaedje"
@@ -13680,7 +13699,7 @@ msgid "Numerical"
 msgstr "D' astampé"
 
 #: libs/ui/dialogs/kis_dlg_import_image_sequence.cpp:124
-#: libs/ui/KisMainWindow.cpp:1134
+#: libs/ui/KisMainWindow.cpp:1135
 #, fuzzy, kde-format
 msgid "Import Images"
 msgstr "Abaguer imådje"
@@ -13783,7 +13802,7 @@ msgctxt "@title:window"
 msgid "Enter new style name"
 msgstr "Tapez li no do hopea:"
 
-#: libs/ui/dialogs/kis_dlg_layer_style.cpp:269 libs/ui/KisMainWindow.cpp:2407
+#: libs/ui/dialogs/kis_dlg_layer_style.cpp:269 libs/ui/KisMainWindow.cpp:2431
 #: plugins/dockers/gamutmask/gamutmask_dock.cpp:360
 #, fuzzy, kde-format
 msgctxt "@label:textbox"
@@ -14501,7 +14520,7 @@ msgid "Session name:"
 msgstr "Môde di tchoes:"
 
 #: libs/ui/dialogs/KisSessionManagerDialog.cpp:89
-#: libs/ui/KisMainWindow.cpp:2413 libs/ui/widgets/kis_gradient_chooser.cc:523
+#: libs/ui/KisMainWindow.cpp:2437 libs/ui/widgets/kis_gradient_chooser.cc:523
 #: libs/ui/widgets/KoFillConfigWidget.cpp:651
 #: plugins/dockers/gamutmask/gamutmask_dock.cpp:366
 #: plugins/dockers/tasksetdocker/tasksetdocker_dock.cpp:202
@@ -14511,7 +14530,7 @@ msgid "Name Already Exists"
 msgstr ""
 
 #: libs/ui/dialogs/KisSessionManagerDialog.cpp:90
-#: libs/ui/KisMainWindow.cpp:2414 libs/ui/widgets/kis_gradient_chooser.cc:524
+#: libs/ui/KisMainWindow.cpp:2438 libs/ui/widgets/kis_gradient_chooser.cc:524
 #: libs/ui/widgets/KoFillConfigWidget.cpp:652
 #: plugins/dockers/gamutmask/gamutmask_dock.cpp:367
 #: plugins/dockers/tasksetdocker/tasksetdocker_dock.cpp:203
@@ -14762,7 +14781,7 @@ msgstr "Hôteur d' imprimaedje:"
 #: libs/ui/widgets/KoFillConfigWidget.ui:222
 #: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:558
 #: plugins/dockers/griddocker/grid_config_widget.ui:90
-#: plugins/extensions/resourcemanager/wdgdlgbundlemanager.ui:365
+#: plugins/extensions/resourcemanager/wdgdlgbundlemanager.ui:359
 #: plugins/extensions/resourcemanager/wdgdlgcreatebundle.ui:58
 #: plugins/extensions/resourcemanager/wdgdlgembedtags.ui:58
 #: plugins/flake/pathshapes/ellipse/EllipseShapeConfigWidget.ui:39
@@ -14790,7 +14809,7 @@ msgstr "Limero d' rivizion:"
 #. i18n: ectx: property (text), widget (QLabel, lblCreatedDesc)
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: libs/ui/forms/koDocumentInfoAboutWidget.ui:128
-#: plugins/extensions/resourcemanager/wdgdlgbundlemanager.ui:289
+#: plugins/extensions/resourcemanager/wdgdlgbundlemanager.ui:283
 #, fuzzy, kde-format
 msgid "Created:"
 msgstr "Ahiver"
@@ -17049,7 +17068,7 @@ msgstr "Prédefinixha do moumint"
 #. i18n: ectx: property (text), widget (QPushButton, savePresetButton)
 #. i18n: ectx: property (toolTip), widget (QPushButton, bnSaveMask)
 #: libs/ui/forms/wdgpaintopsettings.ui:188
-#: libs/ui/forms/wdgsavebrushpreset.ui:219 libs/ui/KisMainWindow.cpp:1011
+#: libs/ui/forms/wdgsavebrushpreset.ui:219 libs/ui/KisMainWindow.cpp:1012
 #: libs/ui/widgets/kis_workspace_chooser.cpp:110
 #: plugins/dockers/gamutmask/forms/wdgGamutMaskChooser.ui:232
 #: plugins/extensions/resourcemanager/dlg_create_bundle.cpp:49
@@ -19346,8 +19365,8 @@ msgstr "Espåce di coleurs"
 msgid "Brush composite"
 msgstr "Grandeu do pincea"
 
-#: libs/ui/kis_paintop_box.cc:1208 libs/ui/kis_paintop_box.cc:1230
-#: libs/ui/kis_paintop_box.cc:1244
+#: libs/ui/kis_paintop_box.cc:1212 libs/ui/kis_paintop_box.cc:1234
+#: libs/ui/kis_paintop_box.cc:1248
 #, fuzzy, kde-format
 msgid ""
 "%1\n"
@@ -20493,81 +20512,81 @@ msgstr "Macrea des rîles"
 msgid "Also save your image as a Krita file."
 msgstr ""
 
-#: libs/ui/KisMainWindow.cpp:175
+#: libs/ui/KisMainWindow.cpp:177
 #, fuzzy, kde-format
 msgctxt "@action:inmenu"
 msgid "Styles"
 msgstr "Stîle"
 
-#: libs/ui/KisMainWindow.cpp:176
+#: libs/ui/KisMainWindow.cpp:178
 #, fuzzy, kde-format
 msgctxt "@action:inmenu"
 msgid "&Dockers"
 msgstr "Paneas d' usteyes"
 
-#: libs/ui/KisMainWindow.cpp:177
+#: libs/ui/KisMainWindow.cpp:179
 #, fuzzy, kde-format
 msgctxt "@action:inmenu"
 msgid "&Window"
 msgstr "Côutche &pondeure"
 
-#: libs/ui/KisMainWindow.cpp:178
+#: libs/ui/KisMainWindow.cpp:180
 #, fuzzy, kde-format
 msgctxt "@action:inmenu"
 msgid "New &View"
 msgstr "Grandeu d' l' imådje"
 
-#: libs/ui/KisMainWindow.cpp:179
+#: libs/ui/KisMainWindow.cpp:181
 #, fuzzy, kde-format
 msgctxt "@action:inmenu"
 msgid "Wor&kspace"
 msgstr "Espåce di coleurs"
 
-#: libs/ui/KisMainWindow.cpp:555
+#: libs/ui/KisMainWindow.cpp:557
 #: plugins/tools/svgtexttool/SvgTextEditor.cpp:306
 #, fuzzy, kde-format
 msgid "Show %1 Toolbar"
 msgstr "Mostrer l' coûtche raecene"
 
-#: libs/ui/KisMainWindow.cpp:557
+#: libs/ui/KisMainWindow.cpp:559
 #: plugins/tools/svgtexttool/SvgTextEditor.cpp:308
 #, fuzzy, kde-format
 msgid "Hide %1 Toolbar"
 msgstr "Usteyes"
 
-#: libs/ui/KisMainWindow.cpp:875
+#: libs/ui/KisMainWindow.cpp:876
 #, kde-format
 msgid "The chosen file's location could not be found. Does it exist?"
 msgstr ""
 
-#: libs/ui/KisMainWindow.cpp:980
+#: libs/ui/KisMainWindow.cpp:981
 #, fuzzy, kde-format
 #| msgid "(write protected)"
 msgid "Write Protected"
 msgstr "(waeranti sconte li scrijhaedje)"
 
-#: libs/ui/KisMainWindow.cpp:984
+#: libs/ui/KisMainWindow.cpp:985
 #, fuzzy, kde-format
 #| msgid "coverage"
 msgid "Recovered"
 msgstr "covraedje"
 
-#: libs/ui/KisMainWindow.cpp:1008
+#: libs/ui/KisMainWindow.cpp:1009
 #, fuzzy, kde-format
 msgid "Save as %1"
 msgstr "Fômes ploumion %1"
 
-#: libs/ui/KisMainWindow.cpp:1032
+#: libs/ui/KisMainWindow.cpp:1033
 #, kde-format
 msgid "The file %1 does not exist."
 msgstr "Li fitchî %1 n' egzistêye nén."
 
-#: libs/ui/KisMainWindow.cpp:1134
+#: libs/ui/KisMainWindow.cpp:1135
 #, fuzzy, kde-format
 msgid "Open Images"
 msgstr "Imådje"
 
-#: libs/ui/KisMainWindow.cpp:1266
+#: libs/ui/KisMainWindow.cpp:1267
 #, kde-format
 msgid ""
 "You are saving a file while the image is still rendering. The saved file may "
@@ -20576,38 +20595,62 @@ msgid ""
 "Please select a location where the original file will not be overridden!"
 msgstr ""
 
-#: libs/ui/KisMainWindow.cpp:1322
+#: libs/ui/KisMainWindow.cpp:1323
 #, fuzzy, kde-format
 msgid "Exporting"
 msgstr "Ebaguer"
 
-#: libs/ui/KisMainWindow.cpp:1322
+#: libs/ui/KisMainWindow.cpp:1323
 #, fuzzy, kde-format
 msgid "Saving As"
 msgstr "Cogne do hagnon"
 
-#: libs/ui/KisMainWindow.cpp:1623
+#: libs/ui/KisMainWindow.cpp:1624
 #: libs/widgetutils/config/kstandardaction_p.h:29
 #, fuzzy, kde-format
 msgid "Create new document"
 msgstr "Ahiver on documint vude"
 
-#: libs/ui/KisMainWindow.cpp:1647
+#: libs/ui/KisMainWindow.cpp:1648
 #, fuzzy, kde-format
 msgid "Custom Document"
 msgstr "Gradyint da vosse"
 
-#: libs/ui/KisMainWindow.cpp:1665
+#: libs/ui/KisMainWindow.cpp:1666
 #, fuzzy, kde-format
 msgid "Create from Clipboard"
 msgstr "Prumire coûtche a pårti do presse-papî"
 
-#: libs/ui/KisMainWindow.cpp:1830
+#: libs/ui/KisMainWindow.cpp:1831
 #, fuzzy, kde-format
 msgid "Layers/Masks"
 msgstr "Schaper coûtche come imådje..."
 
-#: libs/ui/KisMainWindow.cpp:1974
+#: libs/ui/KisMainWindow.cpp:1846
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:174
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:228
+#, fuzzy, kde-format
+msgid "You don't have any resource bundles enabled."
+msgstr "Dji n' a savou ahiver l' fitchî pol schapaedje"
+
+#: libs/ui/KisMainWindow.cpp:1850
+#, kde-format
+msgid ""
+"\n"
+"There are no brush presets available. Please enable a bundle that has "
+"presets before continuing.\n"
+msgstr ""
+
+#: libs/ui/KisMainWindow.cpp:1860
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:184
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:240
+#, kde-format
+msgid ""
+"\n"
+"Only your local resources are available."
+msgstr ""
+
+#: libs/ui/KisMainWindow.cpp:1998
 #, fuzzy, kde-format
 msgid ""
 "Could not finish import animation:\n"
@@ -20616,63 +20659,56 @@ msgstr ""
 "Dji n' a savou abaguer\n"
 "%1"
 
-#: libs/ui/KisMainWindow.cpp:2376
+#: libs/ui/KisMainWindow.cpp:2400
 #, fuzzy, kde-format
 msgctxt "@action:inmenu"
 msgid "&Import Workspace..."
 msgstr "&Abaguer imådje..."
 
-#: libs/ui/KisMainWindow.cpp:2390
+#: libs/ui/KisMainWindow.cpp:2414
 #, fuzzy, kde-format
 msgctxt "@action:inmenu"
 msgid "&New Workspace..."
 msgstr "&Abaguer imådje..."
 
-#: libs/ui/KisMainWindow.cpp:2406
+#: libs/ui/KisMainWindow.cpp:2430
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "New Workspace..."
 msgstr "&Abaguer imådje..."
 
-#: libs/ui/KisMainWindow.cpp:2450
+#: libs/ui/KisMainWindow.cpp:2474
 #, fuzzy, kde-format
 #| msgid "%1 %"
 msgid "&%1 %2"
 msgstr "%1 %"
 
-#: libs/ui/KisMainWindow.cpp:2453
+#: libs/ui/KisMainWindow.cpp:2477
 #, fuzzy, kde-format
 #| msgid "%1 %"
 msgid "%1 %2"
 msgstr "%1 %"
 
-#: libs/ui/KisMainWindow.cpp:2627
+#: libs/ui/KisMainWindow.cpp:2651
 #, kde-format
 msgid ""
 "The Krita LittleCMS color management plugin is not installed. Krita will "
 "quit now."
 msgstr ""
 
-#: libs/ui/KisMainWindow.cpp:2635
-#, fuzzy, kde-format
-msgid "Krita cannot find any brush presets! Krita will quit now."
-msgstr ""
-"L' espåce di coleurs %1 n' est nén disponibe, waitîz vost astalaedje s' i vs "
-"plait bén."
-
-#: libs/ui/KisMainWindow.cpp:2650
+#: libs/ui/KisMainWindow.cpp:2667
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "Installation error"
 msgstr "Aroke d' ahivaedje del coûtche"
 
-#: libs/ui/KisMainWindow.cpp:2756
+#: libs/ui/KisMainWindow.cpp:2773
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "&Themes"
 msgstr ""
 
-#: libs/ui/KisMainWindow.cpp:2809
+#: libs/ui/KisMainWindow.cpp:2826
 #, kde-format
 msgid "Expanding Spacer"
 msgstr ""
@@ -22171,37 +22207,37 @@ msgstr ""
 msgid "Selection Actions"
 msgstr "Gåyotaedje do tchoes"
 
-#: libs/ui/tool/kis_tool.cc:551
+#: libs/ui/tool/kis_tool.cc:561
 #, kde-format
 msgid "No options"
 msgstr "Nole tchuze"
 
-#: libs/ui/tool/kis_tool.cc:641
+#: libs/ui/tool/kis_tool.cc:655
 #, fuzzy, kde-format
 msgid "Layer is locked and invisible."
 msgstr "Grandeu del coûtche"
 
-#: libs/ui/tool/kis_tool.cc:643
+#: libs/ui/tool/kis_tool.cc:657
 #, fuzzy, kde-format
 msgid "Layer is locked."
 msgstr "Grandeu del coûtche"
 
-#: libs/ui/tool/kis_tool.cc:645
+#: libs/ui/tool/kis_tool.cc:659
 #, fuzzy, kde-format
 msgid "Layer is invisible."
 msgstr "Grandeu del coûtche"
 
-#: libs/ui/tool/kis_tool.cc:647
+#: libs/ui/tool/kis_tool.cc:661
 #, kde-format
 msgid "Layer can be painted in Wash Mode only."
 msgstr ""
 
-#: libs/ui/tool/kis_tool.cc:649
+#: libs/ui/tool/kis_tool.cc:663
 #, fuzzy, kde-format
 msgid "Group not editable."
 msgstr "Grandeu del coûtche"
 
-#: libs/ui/tool/kis_tool.cc:664
+#: libs/ui/tool/kis_tool.cc:678
 #, fuzzy, kde-format
 msgid "Local selection is locked."
 msgstr "Tchoes &locå"
@@ -30940,25 +30976,25 @@ msgstr ""
 "L' espåce di coleurs %1 n' est nén disponibe, waitîz vost astalaedje s' i vs "
 "plait bén."
 
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:126
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:129
 #, fuzzy, kde-format
 msgid "Manage Resource Libraries"
 msgstr "&Rissourses"
 
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:132
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:135
 #, fuzzy, kde-format
 msgctxt "In bundle manager; press button to import a bundle"
 msgid "Import"
 msgstr "Abaguer imådje"
 
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:136
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:139
 #, fuzzy, kde-format
 msgctxt "In bundle manager; press button to create a new bundle"
 msgid "Create"
 msgstr "Ahiver"
 
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:141
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:228
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:144
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:285
 #, fuzzy, kde-format
 msgctxt ""
 "In bundle manager; press button to deactivate the bundle (remove resources "
@@ -30966,17 +31002,27 @@ msgctxt ""
 msgid "Deactivate"
 msgstr "Ovrant"
 
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:165
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:178
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:234
+#, kde-format
+msgid ""
+"\n"
+"There are no brush presets available. Please enable a bundle that has "
+"presets before continuing.\n"
+"If there are no bundles, please import a bundle before continuing."
+msgstr ""
+
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:192
 #, kde-format
 msgid "Choose the bundle to import"
 msgstr ""
 
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:168
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:195
 #, fuzzy, kde-format
 msgid "Select the bundle"
 msgstr "Tchoezi"
 
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:232
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:289
 #, fuzzy, kde-format
 msgctxt ""
 "In bundle manager; press button to activate the bundle (add resources from "
@@ -30984,12 +31030,12 @@ msgctxt ""
 msgid "Activate"
 msgstr "Ovrant"
 
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:282
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:338
 #, kde-format
 msgid "New name for the bundle"
 msgstr ""
 
-#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:282
+#: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:338
 #, fuzzy, kde-format
 #| msgid "The file %1 does not exist."
 msgid ""
@@ -31135,26 +31181,26 @@ msgid "Import a resource library"
 msgstr "Abaguer on documint"
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, bnNew)
-#: plugins/extensions/resourcemanager/wdgdlgbundlemanager.ui:64
+#: plugins/extensions/resourcemanager/wdgdlgbundlemanager.ui:62
 #, fuzzy, kde-format
 msgid "Create a resource library"
 msgstr "Fitchîs sourdants:"
 
-#. i18n: ectx: property (toolTip), widget (QPushButton, bnDelete)
-#: plugins/extensions/resourcemanager/wdgdlgbundlemanager.ui:80
+#. i18n: ectx: property (toolTip), widget (QPushButton, bnToggle)
+#: plugins/extensions/resourcemanager/wdgdlgbundlemanager.ui:76
 #, fuzzy, kde-format
 msgid "Delete a resource library"
 msgstr "Disfacer"
 
 #. i18n: ectx: property (text), widget (QLabel, lblName)
-#: plugins/extensions/resourcemanager/wdgdlgbundlemanager.ui:151
+#: plugins/extensions/resourcemanager/wdgdlgbundlemanager.ui:145
 #, fuzzy, kde-format
 msgid "Bundle Name"
 msgstr "No del coûtche:"
 
 #. i18n: ectx: property (text), widget (QLabel, website)
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: plugins/extensions/resourcemanager/wdgdlgbundlemanager.ui:256
+#: plugins/extensions/resourcemanager/wdgdlgbundlemanager.ui:250
 #: plugins/extensions/resourcemanager/wdgdlgcreatebundle.ui:290
 #, fuzzy, kde-format
 msgid "Website:"
@@ -31162,7 +31208,7 @@ msgstr "Balance des blancs:"
 
 #. i18n: ectx: property (text), widget (QLabel, author)
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: plugins/extensions/resourcemanager/wdgdlgbundlemanager.ui:276
+#: plugins/extensions/resourcemanager/wdgdlgbundlemanager.ui:270
 #: plugins/extensions/resourcemanager/wdgdlgcreatebundle.ui:260
 #, fuzzy, kde-format
 msgid "Author:"
@@ -31170,21 +31216,21 @@ msgstr "Anke"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: plugins/extensions/resourcemanager/wdgdlgbundlemanager.ui:303
+#: plugins/extensions/resourcemanager/wdgdlgbundlemanager.ui:297
 #: plugins/extensions/resourcemanager/wdgdlgcreatebundle.ui:280
 #, kde-format
 msgid "Email:"
 msgstr "Emile:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: plugins/extensions/resourcemanager/wdgdlgbundlemanager.ui:337
+#: plugins/extensions/resourcemanager/wdgdlgbundlemanager.ui:331
 #, fuzzy, kde-format
 msgid "Updated:"
 msgstr "Mete a djoû"
 
 #. i18n: ectx: property (text), widget (QLabel, license)
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: plugins/extensions/resourcemanager/wdgdlgbundlemanager.ui:358
+#: plugins/extensions/resourcemanager/wdgdlgbundlemanager.ui:352
 #: plugins/extensions/resourcemanager/wdgdlgcreatebundle.ui:304
 #: plugins/python/comics_project_management_tools/comics_metadata_dialog.py:410
 #, fuzzy, kde-format
@@ -45155,6 +45201,12 @@ msgstr ""
 #, kde-format
 msgid "Work Recursively"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Krita cannot find any brush presets! Krita will quit now."
+#~ msgstr ""
+#~ "L' espåce di coleurs %1 n' est nén disponibe, waitîz vost astalaedje s' i "
+#~ "vs plait bén."
 
 #, fuzzy
 #~ msgid "Add to Toolbar"
