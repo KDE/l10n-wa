@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-03-06 02:52+0100\n"
+"POT-Creation-Date: 2021-03-11 02:56+0100\n"
 "PO-Revision-Date: 2009-08-20 10:18+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -215,11 +215,11 @@ msgstr "Djournå d' programaedje"
 #. i18n: ectx: property (text), item, widget (KComboBox, risk)
 #: kernel/kptnode.cpp:154 kernel/kptnode.cpp:1659 kernel/kpttask.cpp:3863
 #: models/kptcalendarmodel.cpp:431 models/kptcalendarmodel.cpp:451
-#: models/kptnodeitemmodel.cpp:425 models/kptnodeitemmodel.cpp:441
-#: models/kptnodeitemmodel.cpp:451 models/kptnodeitemmodel.cpp:664
-#: models/kptnodeitemmodel.cpp:681 models/kptnodeitemmodel.cpp:699
-#: models/kptnodeitemmodel.cpp:717 models/kptnodeitemmodel.cpp:752
-#: models/kptnodeitemmodel.cpp:769 models/kptresourceallocationmodel.cpp:889
+#: models/kptnodeitemmodel.cpp:436 models/kptnodeitemmodel.cpp:452
+#: models/kptnodeitemmodel.cpp:462 models/kptnodeitemmodel.cpp:675
+#: models/kptnodeitemmodel.cpp:692 models/kptnodeitemmodel.cpp:710
+#: models/kptnodeitemmodel.cpp:728 models/kptnodeitemmodel.cpp:763
+#: models/kptnodeitemmodel.cpp:780 models/kptresourceallocationmodel.cpp:889
 #: models/kptresourceallocationmodel.cpp:964 models/kptschedulemodel.cpp:618
 #: models/kpttreecombobox.cpp:123 models/ResourceModel.cpp:200
 #: models/ResourceModel.cpp:232 models/ResourceModel.cpp:353
@@ -570,10 +570,10 @@ msgid "Warning"
 msgstr "Asteme"
 
 #: kernel/kptschedule.cpp:1587 kernel/kptschedule.cpp:1922
-#: models/kptnodeitemmodel.cpp:1682 models/kptnodeitemmodel.cpp:1715
-#: models/kptnodeitemmodel.cpp:1748 models/kptnodeitemmodel.cpp:1781
-#: models/kptnodeitemmodel.cpp:1814 models/kptnodeitemmodel.cpp:1847
-#: models/kptnodeitemmodel.cpp:1880
+#: models/kptnodeitemmodel.cpp:1693 models/kptnodeitemmodel.cpp:1726
+#: models/kptnodeitemmodel.cpp:1759 models/kptnodeitemmodel.cpp:1792
+#: models/kptnodeitemmodel.cpp:1825 models/kptnodeitemmodel.cpp:1858
+#: models/kptnodeitemmodel.cpp:1891
 #, kde-format
 msgid "Error"
 msgstr "Aroke:"
@@ -1781,7 +1781,7 @@ msgid ""
 "style:italic;\">Recent portfolios:</span></p></body></html>"
 msgstr ""
 
-#: models/AllocatedResourceItemModel.cpp:148 models/kptnodeitemmodel.cpp:2301
+#: models/AllocatedResourceItemModel.cpp:148 models/kptnodeitemmodel.cpp:2312
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Allocation"
@@ -2117,8 +2117,8 @@ msgctxt "(qtundo-format)"
 msgid "Modify calendar holiday region"
 msgstr "Candjî calindrî"
 
-#: models/kptcalendarmodel.cpp:545 models/kptnodeitemmodel.cpp:2298
-#: models/kptnodeitemmodel.cpp:5164
+#: models/kptcalendarmodel.cpp:545 models/kptnodeitemmodel.cpp:2309
+#: models/kptnodeitemmodel.cpp:5175
 #, fuzzy, kde-kuit-format
 #| msgid "Name"
 msgctxt "@title:column"
@@ -3202,7 +3202,7 @@ msgctxt "@info:tooltip"
 msgid "Effort based Cost Performance Index (BCWP/ACWS)"
 msgstr "Programer l' indecse di performance (BCWP/BCWS)"
 
-#: models/kptnodechartmodel.cpp:524 models/kptnodeitemmodel.cpp:2374
+#: models/kptnodechartmodel.cpp:524 models/kptnodeitemmodel.cpp:2385
 #: models/reportgenerator/ReportGeneratorOdt.cpp:174
 #, fuzzy, kde-kuit-format
 #| msgctxt "Budgeted Cost of Work Scheduled"
@@ -3211,7 +3211,7 @@ msgctxt "@title:column Budgeted Cost of Work Scheduled"
 msgid "BCWS"
 msgstr "BCWS"
 
-#: models/kptnodechartmodel.cpp:525 models/kptnodeitemmodel.cpp:2375
+#: models/kptnodechartmodel.cpp:525 models/kptnodeitemmodel.cpp:2386
 #: models/reportgenerator/ReportGeneratorOdt.cpp:175
 #, fuzzy, kde-kuit-format
 #| msgctxt "Budgeted Cost of Work Performed"
@@ -3220,7 +3220,7 @@ msgctxt "@title:column Budgeted Cost of Work Performed"
 msgid "BCWP"
 msgstr "BCWP"
 
-#: models/kptnodechartmodel.cpp:526 models/kptnodeitemmodel.cpp:2376
+#: models/kptnodechartmodel.cpp:526 models/kptnodeitemmodel.cpp:2387
 #: models/reportgenerator/ReportGeneratorOdt.cpp:176
 #, fuzzy, kde-kuit-format
 #| msgctxt "Actual Cost of Work Performed"
@@ -3229,7 +3229,7 @@ msgctxt "@title:column Actual Cost of Work Performed"
 msgid "ACWP"
 msgstr "ACWP"
 
-#: models/kptnodechartmodel.cpp:527 models/kptnodeitemmodel.cpp:2377
+#: models/kptnodechartmodel.cpp:527 models/kptnodeitemmodel.cpp:2388
 #: models/reportgenerator/ReportGeneratorOdt.cpp:177
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column Schedule Performance Index"
@@ -3289,411 +3289,422 @@ msgstr ""
 msgid "<p><strong>%1: %2</strong></p><p>%3</p>"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:180
+#: models/kptnodeitemmodel.cpp:184
 #, fuzzy, kde-kuit-format
 #| msgid "No resource allocated"
 msgctxt "@info:tooltip"
 msgid "No resources has been allocated"
 msgstr "Nole rissource acoirdêye"
 
-#: models/kptnodeitemmodel.cpp:187
-#, fuzzy, kde-kuit-format
-#| msgctxt "1=page number, 2=last page number"
-#| msgid "%1 (%2)"
-msgctxt "@info:tooltip 1=resource name, 2=list of required resources"
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
+#: models/kptnodeitemmodel.cpp:194
+#, kde-format
+msgctxt "list of alternative resources"
+msgid " [%1]"
+msgstr ""
 
-#: models/kptnodeitemmodel.cpp:191
+#: models/kptnodeitemmodel.cpp:197
+#, fuzzy, kde-format
+#| msgid "Cost"
+msgctxt "list of required resources"
+msgid " (%1)"
+msgstr "Costindje"
+
+#: models/kptnodeitemmodel.cpp:199
+#, kde-format
+msgctxt "1=resource name 2=list of alternatives 3=list of required"
+msgid "%1%2%3"
+msgstr ""
+
+#: models/kptnodeitemmodel.cpp:202
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip 1=resource name"
 msgid "Allocated resource:<nl/>%1"
 msgstr "Radjouter rissource..."
 
-#: models/kptnodeitemmodel.cpp:193
+#: models/kptnodeitemmodel.cpp:204
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip 1=list of resources"
 msgid "Allocated resources:<nl/>%1"
 msgstr "Radjouter rissource..."
 
-#: models/kptnodeitemmodel.cpp:256
+#: models/kptnodeitemmodel.cpp:267
 #, fuzzy, kde-format
 msgid "Target times"
 msgstr "Ataké"
 
-#: models/kptnodeitemmodel.cpp:258
+#: models/kptnodeitemmodel.cpp:269
 #, fuzzy, kde-kuit-format
 #| msgid "Finishing later than late finish"
 msgctxt "@info:tooltip"
 msgid "Earliest start and latest finish"
 msgstr "Finixhaedje pus tård kel tårdfinixhaedje"
 
-#: models/kptnodeitemmodel.cpp:431
+#: models/kptnodeitemmodel.cpp:442
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Not applicable, estimate type is Effort"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:497 models/kptnodeitemmodel.cpp:548
-#: models/kptnodeitemmodel.cpp:595
+#: models/kptnodeitemmodel.cpp:508 models/kptnodeitemmodel.cpp:559
+#: models/kptnodeitemmodel.cpp:606
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Not applicable, constraint is Fixed Interval"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:499
+#: models/kptnodeitemmodel.cpp:510
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Estimated effort: %1"
 msgstr "Avirance:"
 
-#: models/kptnodeitemmodel.cpp:501
+#: models/kptnodeitemmodel.cpp:512
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Estimated duration: %1"
 msgstr "Avirance:"
 
-#: models/kptnodeitemmodel.cpp:550
+#: models/kptnodeitemmodel.cpp:561
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Optimistic effort: %1"
 msgstr "Optimisse:"
 
-#: models/kptnodeitemmodel.cpp:552
+#: models/kptnodeitemmodel.cpp:563
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Optimistic duration: %1"
 msgstr "Optimisse:"
 
-#: models/kptnodeitemmodel.cpp:597
+#: models/kptnodeitemmodel.cpp:608
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Pessimistic effort: %1"
 msgstr "Pessimisse:"
 
-#: models/kptnodeitemmodel.cpp:599
+#: models/kptnodeitemmodel.cpp:610
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Pessimistic duration: %1"
 msgstr "Pessimisse:"
 
-#: models/kptnodeitemmodel.cpp:670
+#: models/kptnodeitemmodel.cpp:681
 #, fuzzy, kde-kuit-format
 #| msgid "Account for running costs"
 msgctxt "@info:tooltip"
 msgid "Account for resource cost: %1"
 msgstr "Conte po les costindjes en alaedje"
 
-#: models/kptnodeitemmodel.cpp:671
+#: models/kptnodeitemmodel.cpp:682
 #, fuzzy, kde-kuit-format
 #| msgid "Account for running costs"
 msgctxt "@info:tooltip"
 msgid "Account for resource cost"
 msgstr "Conte po les costindjes en alaedje"
 
-#: models/kptnodeitemmodel.cpp:706
+#: models/kptnodeitemmodel.cpp:717
 #, fuzzy, kde-kuit-format
 #| msgid "Account for running costs"
 msgctxt "@info:tooltip"
 msgid "Account for task startup cost: %1"
 msgstr "Conte po les costindjes en alaedje"
 
-#: models/kptnodeitemmodel.cpp:707
+#: models/kptnodeitemmodel.cpp:718
 #, fuzzy, kde-kuit-format
 #| msgid "Account for running costs"
 msgctxt "@info:tooltip"
 msgid "Account for task startup cost"
 msgstr "Conte po les costindjes en alaedje"
 
-#: models/kptnodeitemmodel.cpp:758
+#: models/kptnodeitemmodel.cpp:769
 #, fuzzy, kde-kuit-format
 #| msgid "Account for cost incurred at shutdown of the task"
 msgctxt "@info:tooltip"
 msgid "Account for task shutdown cost: %1"
 msgstr "Conte po les costindjes passés al difén del bouye"
 
-#: models/kptnodeitemmodel.cpp:759
+#: models/kptnodeitemmodel.cpp:770
 #, fuzzy, kde-kuit-format
 #| msgid "Account for running costs"
 msgctxt "@info:tooltip"
 msgid "Account for task shutdown cost"
 msgstr "Conte po les costindjes en alaedje"
 
-#: models/kptnodeitemmodel.cpp:805
+#: models/kptnodeitemmodel.cpp:816
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Scheduled start: %1"
 msgstr "Programaedje:"
 
-#: models/kptnodeitemmodel.cpp:822
+#: models/kptnodeitemmodel.cpp:833
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Scheduled finish: %1"
 msgstr "Programaedje:"
 
-#: models/kptnodeitemmodel.cpp:850 models/kptnodeitemmodel.cpp:854
+#: models/kptnodeitemmodel.cpp:861 models/kptnodeitemmodel.cpp:865
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Scheduled duration: %1"
 msgstr "Programaedje:"
 
-#: models/kptnodeitemmodel.cpp:887
+#: models/kptnodeitemmodel.cpp:898
 #, fuzzy, kde-kuit-format
 #| msgid "Calculated estimate variance"
 msgctxt "@info:tooltip"
 msgid "PERT duration variance: %1"
 msgstr "Variance ratindowe cårculêye"
 
-#: models/kptnodeitemmodel.cpp:921
+#: models/kptnodeitemmodel.cpp:932
 #, fuzzy, kde-kuit-format
 #| msgid "Calculated estimate variance"
 msgctxt "@info:tooltip"
 msgid "PERT estimate variance: %1"
 msgstr "Variance ratindowe cårculêye"
 
-#: models/kptnodeitemmodel.cpp:963
+#: models/kptnodeitemmodel.cpp:974
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "PERT optimistic duration: %1"
 msgstr "Optimisse:"
 
-#: models/kptnodeitemmodel.cpp:995
+#: models/kptnodeitemmodel.cpp:1006
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Optimistic estimate: %1"
 msgstr "Optimisse:"
 
-#: models/kptnodeitemmodel.cpp:1028
+#: models/kptnodeitemmodel.cpp:1039
 #, fuzzy, kde-kuit-format
 #| msgid "Calculated expected estimate"
 msgctxt "@info:tooltip"
 msgid "PERT expected estimate: %1"
 msgstr "Avirance ratindowe cårculêye"
 
-#: models/kptnodeitemmodel.cpp:1069
+#: models/kptnodeitemmodel.cpp:1080
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "PERT pessimistic duration: %1"
 msgstr "Pessimisse:"
 
-#: models/kptnodeitemmodel.cpp:1101
+#: models/kptnodeitemmodel.cpp:1112
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Pessimistic estimate: %1"
 msgstr "Pessimisse:"
 
-#: models/kptnodeitemmodel.cpp:1303
+#: models/kptnodeitemmodel.cpp:1314
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip 1=list of resources"
 msgid "Assigned resources:<nl/>%1"
 msgstr "Radjouter rissource..."
 
-#: models/kptnodeitemmodel.cpp:1327
+#: models/kptnodeitemmodel.cpp:1338
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Task is %1% completed"
 msgstr "% fwait"
 
-#: models/kptnodeitemmodel.cpp:1349
+#: models/kptnodeitemmodel.cpp:1360
 #, fuzzy, kde-format
 msgid "Finished late"
 msgstr "Fini"
 
-#: models/kptnodeitemmodel.cpp:1352
+#: models/kptnodeitemmodel.cpp:1363
 #, fuzzy, kde-format
 msgid "Finished early"
 msgstr "Fini"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #. i18n: ectx: property (text), widget (QCheckBox, finished)
-#: models/kptnodeitemmodel.cpp:1354 models/kpttaskstatusmodel.cpp:61
+#: models/kptnodeitemmodel.cpp:1365 models/kpttaskstatusmodel.cpp:61
 #: ui/kptmilestoneprogresspanelbase.ui:23 ui/kptworkpackagemergepanel.ui:156
 #, kde-format
 msgid "Finished"
 msgstr "Fini"
 
-#: models/kptnodeitemmodel.cpp:1358 models/kptnodeitemmodel.cpp:1370
+#: models/kptnodeitemmodel.cpp:1369 models/kptnodeitemmodel.cpp:1381
 #, fuzzy, kde-format
 #| msgid "Running"
 msgid "Running late"
 msgstr "En alaedje"
 
 #. i18n: ectx: property (title), widget (QGroupBox, runningGroup)
-#: models/kptnodeitemmodel.cpp:1360 models/kpttaskstatusmodel.cpp:57
+#: models/kptnodeitemmodel.cpp:1371 models/kpttaskstatusmodel.cpp:57
 #: ui/kpttaskcostpanelbase.ui:21
 #, kde-format
 msgid "Running"
 msgstr "En alaedje"
 
-#: models/kptnodeitemmodel.cpp:1364
+#: models/kptnodeitemmodel.cpp:1375
 #, fuzzy, kde-format
 msgid "Started late"
 msgstr "Ataké"
 
-#: models/kptnodeitemmodel.cpp:1367
+#: models/kptnodeitemmodel.cpp:1378
 #, fuzzy, kde-format
 msgid "Started early"
 msgstr "Ataké"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: models/kptnodeitemmodel.cpp:1372 ui/kptworkpackagemergepanel.ui:133
+#: models/kptnodeitemmodel.cpp:1383 ui/kptworkpackagemergepanel.ui:133
 #, kde-format
 msgid "Started"
 msgstr "Ataké"
 
-#: models/kptnodeitemmodel.cpp:1376 models/kptnodeitemmodel.cpp:1386
+#: models/kptnodeitemmodel.cpp:1387 models/kptnodeitemmodel.cpp:1397
 #, fuzzy, kde-format
 msgid "Not started"
 msgstr "Nén co ataké"
 
-#: models/kptnodeitemmodel.cpp:1378
+#: models/kptnodeitemmodel.cpp:1389
 #, kde-format
 msgid "Can start"
 msgstr "Sait ataker"
 
-#: models/kptnodeitemmodel.cpp:1382
+#: models/kptnodeitemmodel.cpp:1393
 #, fuzzy, kde-format
 msgid "Delayed"
 msgstr "Disfacer"
 
-#: models/kptnodeitemmodel.cpp:1384
+#: models/kptnodeitemmodel.cpp:1395
 #, fuzzy, kde-format
 msgid "Cannot start"
 msgstr "Nén co ataké"
 
-#: models/kptnodeitemmodel.cpp:1397
+#: models/kptnodeitemmodel.cpp:1408
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Finished %1 late"
 msgstr "Fini"
 
-#: models/kptnodeitemmodel.cpp:1401
+#: models/kptnodeitemmodel.cpp:1412
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Finished %1 early"
 msgstr "Fini"
 
-#: models/kptnodeitemmodel.cpp:1403
+#: models/kptnodeitemmodel.cpp:1414
 #, fuzzy, kde-kuit-format
 #| msgid "Finished"
 msgctxt "@info:tooltip"
 msgid "Finished"
 msgstr "Fini"
 
-#: models/kptnodeitemmodel.cpp:1408
+#: models/kptnodeitemmodel.cpp:1419
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Started %1 late"
 msgstr "Ataké"
 
-#: models/kptnodeitemmodel.cpp:1412
+#: models/kptnodeitemmodel.cpp:1423
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Started %1 early"
 msgstr "Ataké"
 
-#: models/kptnodeitemmodel.cpp:1414
+#: models/kptnodeitemmodel.cpp:1425
 #, fuzzy, kde-kuit-format
 #| msgid "Started"
 msgctxt "@info:tooltip"
 msgid "Started"
 msgstr "Ataké"
 
-#: models/kptnodeitemmodel.cpp:1417
+#: models/kptnodeitemmodel.cpp:1428
 #, fuzzy, kde-kuit-format
 #| msgid "Running"
 msgctxt "@info:tooltip"
 msgid "Running"
 msgstr "En alaedje"
 
-#: models/kptnodeitemmodel.cpp:1420
+#: models/kptnodeitemmodel.cpp:1431
 #, fuzzy, kde-kuit-format
 #| msgid "Can start"
 msgctxt "@info:tooltip"
 msgid "Can start"
 msgstr "Sait ataker"
 
-#: models/kptnodeitemmodel.cpp:1423
+#: models/kptnodeitemmodel.cpp:1434
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Cannot start"
 msgstr "Nén co ataké"
 
-#: models/kptnodeitemmodel.cpp:1425
+#: models/kptnodeitemmodel.cpp:1436
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Not started"
 msgstr "Nén co ataké"
 
-#: models/kptnodeitemmodel.cpp:1451
+#: models/kptnodeitemmodel.cpp:1462
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Actual start: %1"
 msgstr "Cominçmint: %1"
 
-#: models/kptnodeitemmodel.cpp:1478
+#: models/kptnodeitemmodel.cpp:1489
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "The task started at: %1"
 msgstr "Ataker-Ataker"
 
-#: models/kptnodeitemmodel.cpp:1480
+#: models/kptnodeitemmodel.cpp:1491
 #, fuzzy, kde-kuit-format
 #| msgid "The node has not been scheduled"
 msgctxt "@info:tooltip"
 msgid "The task is not started"
 msgstr "Li nuk n' a nén stî programé"
 
-#: models/kptnodeitemmodel.cpp:1502
+#: models/kptnodeitemmodel.cpp:1513
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Actual finish: %1"
 msgstr "Fén: %1"
 
-#: models/kptnodeitemmodel.cpp:1529
+#: models/kptnodeitemmodel.cpp:1540
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "The task finished at: %1"
 msgstr "Doet fini li"
 
-#: models/kptnodeitemmodel.cpp:1531
+#: models/kptnodeitemmodel.cpp:1542
 #, fuzzy, kde-kuit-format
 #| msgid "The node has not been scheduled"
 msgctxt "@info:tooltip"
 msgid "The task is not finished"
 msgstr "Li nuk n' a nén stî programé"
 
-#: models/kptnodeitemmodel.cpp:1545
+#: models/kptnodeitemmodel.cpp:1556
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Planned effort until %1: %2"
 msgstr "Efoirt planifyî"
 
-#: models/kptnodeitemmodel.cpp:1564
+#: models/kptnodeitemmodel.cpp:1575
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Actual effort used up to %1: %2"
 msgstr "Efoirt planifyî"
 
-#: models/kptnodeitemmodel.cpp:1589
+#: models/kptnodeitemmodel.cpp:1600
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Remaining effort: %1"
 msgstr "Efoirt ki dmeure"
 
-#: models/kptnodeitemmodel.cpp:1616
+#: models/kptnodeitemmodel.cpp:1627
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Planned cost until %1: %2"
 msgstr "Efoirt planifyî"
 
-#: models/kptnodeitemmodel.cpp:1633
+#: models/kptnodeitemmodel.cpp:1644
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Actual cost until %1: %2"
 msgstr "Efoirt planifyî"
 
-#: models/kptnodeitemmodel.cpp:1689
+#: models/kptnodeitemmodel.cpp:1700
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -3701,20 +3712,20 @@ msgid ""
 "<emphasis>Effort</emphasis>"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:1722
+#: models/kptnodeitemmodel.cpp:1733
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "A resource has been overbooked"
 msgstr "Rissource forrezervêye"
 
-#: models/kptnodeitemmodel.cpp:1755
+#: models/kptnodeitemmodel.cpp:1766
 #, fuzzy, kde-kuit-format
 #| msgid "Resource %1 available from %2 to %3"
 msgctxt "@info:tooltip"
 msgid "No resource is available for this task"
 msgstr "Rissource %1 disponibe di %2 a %3"
 
-#: models/kptnodeitemmodel.cpp:1788
+#: models/kptnodeitemmodel.cpp:1799
 #, fuzzy, kde-kuit-format
 #| msgctxt "1=type of constraint"
 #| msgid "%1: Failed to meet constraint"
@@ -3722,461 +3733,461 @@ msgctxt "@info:tooltip"
 msgid "Failed to comply with a timing constraint"
 msgstr "%1: Li passaedje do stronna a fwait berwete"
 
-#: models/kptnodeitemmodel.cpp:1821
+#: models/kptnodeitemmodel.cpp:1832
 #, fuzzy, kde-kuit-format
 #| msgid "The node has not been scheduled"
 msgctxt "@info:tooltip"
 msgid "This task has not been scheduled"
 msgstr "Li nuk n' a nén stî programé"
 
-#: models/kptnodeitemmodel.cpp:1854
+#: models/kptnodeitemmodel.cpp:1865
 #, fuzzy, kde-kuit-format
 #| msgid "The assigned resource could not meet the estimated effort"
 msgctxt "@info:tooltip"
 msgid "The assigned resources cannot deliver the required estimated effort"
 msgstr "Li rissource aroyeye n' a nén savou rescontrer l' efoirt aviré"
 
-#: models/kptnodeitemmodel.cpp:1887
+#: models/kptnodeitemmodel.cpp:1898
 #, fuzzy, kde-kuit-format
 #| msgid "Scheduling Log"
 msgctxt "@info:tooltip"
 msgid "Scheduling error"
 msgstr "Djournå d' programaedje"
 
-#: models/kptnodeitemmodel.cpp:1915
+#: models/kptnodeitemmodel.cpp:1926
 #, fuzzy, kde-kuit-format
 #| msgid "Work Breakdown Structure Code"
 msgctxt "@info:tooltip"
 msgid "Work breakdown structure code: %1"
 msgstr "Côde distructeure di discôpaedje dil' ovraedje"
 
-#: models/kptnodeitemmodel.cpp:1932
+#: models/kptnodeitemmodel.cpp:1943
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Task level: %1"
 msgstr "Bouye 1"
 
-#: models/kptnodeitemmodel.cpp:1948
+#: models/kptnodeitemmodel.cpp:1959
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Budgeted Cost of Work Scheduled at %1: %2"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:1964
+#: models/kptnodeitemmodel.cpp:1975
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Budgeted Cost of Work Performed at %1: %2"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:1980
+#: models/kptnodeitemmodel.cpp:1991
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Actual Cost of Work Performed at %1: %2"
 msgstr "Efoirt planifyî"
 
-#: models/kptnodeitemmodel.cpp:1996
+#: models/kptnodeitemmodel.cpp:2007
 #, fuzzy, kde-kuit-format
 #| msgid "Schedule performance index (BCWP/BCWS)"
 msgctxt "@info:tooltip"
 msgid "Schedule Performance Index at %1: %2"
 msgstr "Programer l' indecse di performance (BCWP/BCWS)"
 
-#: models/kptnodeitemmodel.cpp:2066 models/kptnodeitemmodel.cpp:2101
-#: models/kptnodeitemmodel.cpp:2130
+#: models/kptnodeitemmodel.cpp:2077 models/kptnodeitemmodel.cpp:2112
+#: models/kptnodeitemmodel.cpp:2141
 #, kde-kuit-format
 msgctxt "Not available"
 msgid "NA"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:2078
+#: models/kptnodeitemmodel.cpp:2089
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Latest work package sent to %1 at %2"
 msgstr "Tård cominçmint cårculé: %1"
 
-#: models/kptnodeitemmodel.cpp:2081
+#: models/kptnodeitemmodel.cpp:2092
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Latest work package received from %1 at %2"
 msgstr "Tård cominçmint cårculé: %1"
 
-#: models/kptnodeitemmodel.cpp:2083 models/kptnodeitemmodel.cpp:2147
+#: models/kptnodeitemmodel.cpp:2094 models/kptnodeitemmodel.cpp:2158
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Not available"
 msgstr "Nou pordjet disponibe"
 
-#: models/kptnodeitemmodel.cpp:2142
+#: models/kptnodeitemmodel.cpp:2153
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Latest work package sent: %1"
 msgstr "Tård cominçmint cårculé: %1"
 
-#: models/kptnodeitemmodel.cpp:2145
+#: models/kptnodeitemmodel.cpp:2156
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Latest work package received: %1"
 msgstr "Tård cominçmint cårculé: %1"
 
-#: models/kptnodeitemmodel.cpp:2299 ui/RelationEditorDialog.cpp:257
+#: models/kptnodeitemmodel.cpp:2310 ui/RelationEditorDialog.cpp:257
 #, fuzzy, kde-kuit-format
 #| msgid "Type"
 msgctxt "@title:column"
 msgid "Type"
 msgstr "Sôre"
 
-#: models/kptnodeitemmodel.cpp:2300
+#: models/kptnodeitemmodel.cpp:2311
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Responsible"
 msgstr "Responsåve:"
 
-#: models/kptnodeitemmodel.cpp:2302
+#: models/kptnodeitemmodel.cpp:2313
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Estimate Type"
 msgstr "Avirance:"
 
-#: models/kptnodeitemmodel.cpp:2303
+#: models/kptnodeitemmodel.cpp:2314
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Calendar"
 msgstr "Radjouter calindrî"
 
-#: models/kptnodeitemmodel.cpp:2304
+#: models/kptnodeitemmodel.cpp:2315
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Estimate"
 msgstr "Avirance:"
 
-#: models/kptnodeitemmodel.cpp:2305 models/kptnodeitemmodel.cpp:2322
+#: models/kptnodeitemmodel.cpp:2316 models/kptnodeitemmodel.cpp:2333
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Optimistic"
 msgstr "Optimisse:"
 
-#: models/kptnodeitemmodel.cpp:2306 models/kptnodeitemmodel.cpp:2323
+#: models/kptnodeitemmodel.cpp:2317 models/kptnodeitemmodel.cpp:2334
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Pessimistic"
 msgstr "Pessimisse:"
 
-#: models/kptnodeitemmodel.cpp:2307
+#: models/kptnodeitemmodel.cpp:2318
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Risk"
 msgstr "Risse:"
 
-#: models/kptnodeitemmodel.cpp:2308
+#: models/kptnodeitemmodel.cpp:2319
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Priority"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:2309
+#: models/kptnodeitemmodel.cpp:2320
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Constraint"
 msgstr "Soçons:"
 
-#: models/kptnodeitemmodel.cpp:2310
+#: models/kptnodeitemmodel.cpp:2321
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Constraint Start"
 msgstr "Stronna"
 
-#: models/kptnodeitemmodel.cpp:2311
+#: models/kptnodeitemmodel.cpp:2322
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Constraint End"
 msgstr "Soçons:"
 
-#: models/kptnodeitemmodel.cpp:2312
+#: models/kptnodeitemmodel.cpp:2323
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Running Account"
 msgstr "En alaedje"
 
-#: models/kptnodeitemmodel.cpp:2313
+#: models/kptnodeitemmodel.cpp:2324
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Startup Account"
 msgstr "Enondaedje"
 
-#: models/kptnodeitemmodel.cpp:2314
+#: models/kptnodeitemmodel.cpp:2325
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Startup Cost"
 msgstr "Enondaedje"
 
-#: models/kptnodeitemmodel.cpp:2315
+#: models/kptnodeitemmodel.cpp:2326
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Shutdown Account"
 msgstr "Radjouter on conte"
 
-#: models/kptnodeitemmodel.cpp:2316
+#: models/kptnodeitemmodel.cpp:2327
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Shutdown Cost"
 msgstr "Distinde"
 
-#: models/kptnodeitemmodel.cpp:2317
+#: models/kptnodeitemmodel.cpp:2328
 #, fuzzy, kde-kuit-format
 #| msgid "Description"
 msgctxt "@title:column"
 msgid "Description"
 msgstr "Discrijhaedje"
 
-#: models/kptnodeitemmodel.cpp:2320
+#: models/kptnodeitemmodel.cpp:2331
 #, fuzzy, kde-kuit-format
 #| msgid "Expected"
 msgctxt "@title:column"
 msgid "Expected"
 msgstr "Ratindou "
 
-#: models/kptnodeitemmodel.cpp:2321
+#: models/kptnodeitemmodel.cpp:2332
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Variance (Est)"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:2326
+#: models/kptnodeitemmodel.cpp:2337
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Start Time"
 msgstr "Ataké"
 
-#: models/kptnodeitemmodel.cpp:2327
+#: models/kptnodeitemmodel.cpp:2338
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "End Time"
 msgstr "Durêye"
 
-#: models/kptnodeitemmodel.cpp:2328
+#: models/kptnodeitemmodel.cpp:2339
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Early Start"
 msgstr "Ataker-Ataker"
 
-#: models/kptnodeitemmodel.cpp:2329
+#: models/kptnodeitemmodel.cpp:2340
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Early Finish"
 msgstr "Fini"
 
-#: models/kptnodeitemmodel.cpp:2330
+#: models/kptnodeitemmodel.cpp:2341
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Late Start"
 msgstr "Nén co ataké"
 
-#: models/kptnodeitemmodel.cpp:2331
+#: models/kptnodeitemmodel.cpp:2342
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Late Finish"
 msgstr "Doet fini li"
 
-#: models/kptnodeitemmodel.cpp:2332
+#: models/kptnodeitemmodel.cpp:2343
 #, fuzzy, kde-kuit-format
 #| msgid "Project:"
 msgctxt "@title:column"
 msgid "Positive Float"
 msgstr "Pordjet:"
 
-#: models/kptnodeitemmodel.cpp:2333
+#: models/kptnodeitemmodel.cpp:2344
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Free Float"
 msgstr "Flotant"
 
-#: models/kptnodeitemmodel.cpp:2334
+#: models/kptnodeitemmodel.cpp:2345
 #, fuzzy, kde-kuit-format
 #| msgid "Tentative"
 msgctxt "@title:column"
 msgid "Negative Float"
 msgstr "Esprouve"
 
-#: models/kptnodeitemmodel.cpp:2335
+#: models/kptnodeitemmodel.cpp:2346
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Start Float"
 msgstr "Ataker-Ataker"
 
-#: models/kptnodeitemmodel.cpp:2336
+#: models/kptnodeitemmodel.cpp:2347
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Finish Float"
 msgstr "Fini-Ataker"
 
-#: models/kptnodeitemmodel.cpp:2337
+#: models/kptnodeitemmodel.cpp:2348
 #, fuzzy, kde-kuit-format
 #| msgid "Resource Assignments View Settings"
 msgctxt "@title:column"
 msgid "Assignments"
 msgstr "Tchuzes del vuwe di l' aroymint des rsources"
 
-#: models/kptnodeitemmodel.cpp:2340
+#: models/kptnodeitemmodel.cpp:2351
 #, fuzzy, kde-kuit-format
 #| msgid "Duration"
 msgctxt "@title:column"
 msgid "Duration"
 msgstr "Durêye"
 
-#: models/kptnodeitemmodel.cpp:2341
+#: models/kptnodeitemmodel.cpp:2352
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Variance (Dur)"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:2342
+#: models/kptnodeitemmodel.cpp:2353
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Optimistic (Dur)"
 msgstr "Optimisse:"
 
-#: models/kptnodeitemmodel.cpp:2343
+#: models/kptnodeitemmodel.cpp:2354
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Pessimistic (Dur)"
 msgstr "Pessimisse:"
 
-#: models/kptnodeitemmodel.cpp:2346 models/kptnodeitemmodel.cpp:2383
+#: models/kptnodeitemmodel.cpp:2357 models/kptnodeitemmodel.cpp:2394
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Status"
 msgstr "Enondaedje"
 
-#: models/kptnodeitemmodel.cpp:2348
+#: models/kptnodeitemmodel.cpp:2359
 #, fuzzy, no-c-format, kde-kuit-format
 #| msgid "% Completed"
 msgctxt "@title:column"
 msgid "% Completed"
 msgstr "% fwait"
 
-#: models/kptnodeitemmodel.cpp:2349
+#: models/kptnodeitemmodel.cpp:2360
 #, fuzzy, kde-kuit-format
 #| msgid "Planned Effort"
 msgctxt "@title:column"
 msgid "Planned Effort"
 msgstr "Efoirt planifyî"
 
-#: models/kptnodeitemmodel.cpp:2350
+#: models/kptnodeitemmodel.cpp:2361
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Actual Effort"
 msgstr "Efoirt"
 
-#: models/kptnodeitemmodel.cpp:2351
+#: models/kptnodeitemmodel.cpp:2362
 #, fuzzy, kde-kuit-format
 #| msgid "Remaining Effort"
 msgctxt "@title:column"
 msgid "Remaining Effort"
 msgstr "Efoirt ki dmeure"
 
-#: models/kptnodeitemmodel.cpp:2352
+#: models/kptnodeitemmodel.cpp:2363
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Planned Cost"
 msgstr "Efoirt planifyî"
 
-#: models/kptnodeitemmodel.cpp:2353
+#: models/kptnodeitemmodel.cpp:2364
 #, fuzzy, kde-kuit-format
 #| msgid "Actual Cost"
 msgctxt "@title:column"
 msgid "Actual Cost"
 msgstr "Vraiy costindje"
 
-#: models/kptnodeitemmodel.cpp:2354
+#: models/kptnodeitemmodel.cpp:2365
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Actual Start"
 msgstr "Nén co ataké"
 
-#: models/kptnodeitemmodel.cpp:2355
+#: models/kptnodeitemmodel.cpp:2366
 #, fuzzy, kde-kuit-format
 #| msgid "Started"
 msgctxt "@title:column"
 msgid "Started"
 msgstr "Ataké"
 
-#: models/kptnodeitemmodel.cpp:2356
+#: models/kptnodeitemmodel.cpp:2367
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Actual Finish"
 msgstr "Fén: %1"
 
-#: models/kptnodeitemmodel.cpp:2357
+#: models/kptnodeitemmodel.cpp:2368
 #, fuzzy, kde-kuit-format
 #| msgid "Finished"
 msgctxt "@title:column"
 msgid "Finished"
 msgstr "Fini"
 
-#: models/kptnodeitemmodel.cpp:2358
+#: models/kptnodeitemmodel.cpp:2369
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Status Note"
 msgstr "Enondaedje"
 
-#: models/kptnodeitemmodel.cpp:2361
+#: models/kptnodeitemmodel.cpp:2372
 #, fuzzy, kde-kuit-format
 #| msgid "Scheduling Log"
 msgctxt "@title:column"
 msgid "Scheduling Status"
 msgstr "Djournå d' programaedje"
 
-#: models/kptnodeitemmodel.cpp:2362
+#: models/kptnodeitemmodel.cpp:2373
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Not Scheduled"
 msgstr "Nén programé"
 
-#: models/kptnodeitemmodel.cpp:2363
+#: models/kptnodeitemmodel.cpp:2374
 #, kde-kuit-format
 msgctxt "@title:column"
 msgid "Assignment Missing"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:2364
+#: models/kptnodeitemmodel.cpp:2375
 #, fuzzy, kde-kuit-format
 #| msgid "Resource Overbooked"
 msgctxt "@title:column"
 msgid "Resource Overbooked"
 msgstr "Rissource forrezervêye"
 
-#: models/kptnodeitemmodel.cpp:2365
+#: models/kptnodeitemmodel.cpp:2376
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Resource Unavailable"
 msgstr "Nou pordjet disponibe"
 
-#: models/kptnodeitemmodel.cpp:2366
+#: models/kptnodeitemmodel.cpp:2377
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Constraints Error"
 msgstr "Soçons:"
 
-#: models/kptnodeitemmodel.cpp:2367
+#: models/kptnodeitemmodel.cpp:2378
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Effort Not Met"
 msgstr "Efoirt"
 
-#: models/kptnodeitemmodel.cpp:2368
+#: models/kptnodeitemmodel.cpp:2379
 #, fuzzy, kde-kuit-format
 #| msgid "Scheduling Log"
 msgctxt "@title:column"
 msgid "Scheduling Error"
 msgstr "Djournå d' programaedje"
 
-#: models/kptnodeitemmodel.cpp:2370
+#: models/kptnodeitemmodel.cpp:2381
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "WBS Code"
 msgstr "Côde"
 
-#: models/kptnodeitemmodel.cpp:2371
+#: models/kptnodeitemmodel.cpp:2382
 #, fuzzy, kde-kuit-format
 #| msgctxt "Node level"
 #| msgid "Level"
@@ -4184,287 +4195,287 @@ msgctxt "@title:column Node level"
 msgid "Level"
 msgstr "Livea"
 
-#: models/kptnodeitemmodel.cpp:2378
+#: models/kptnodeitemmodel.cpp:2389
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Critical"
 msgstr "Tchimin critike"
 
-#: models/kptnodeitemmodel.cpp:2379
+#: models/kptnodeitemmodel.cpp:2390
 #, fuzzy, kde-kuit-format
 #| msgid "Critical Path"
 msgctxt "@title:column"
 msgid "Critical Path"
 msgstr "Tchimin critike"
 
-#: models/kptnodeitemmodel.cpp:2382
+#: models/kptnodeitemmodel.cpp:2393
 #, fuzzy, kde-kuit-format
 #| msgid "Low"
 msgctxt "@title:column"
 msgid "Owner"
 msgstr "Bas"
 
-#: models/kptnodeitemmodel.cpp:2384
+#: models/kptnodeitemmodel.cpp:2395
 #, fuzzy, kde-kuit-format
 msgctxt "@title:column"
 msgid "Time"
 msgstr "Durêye"
 
-#: models/kptnodeitemmodel.cpp:2565
+#: models/kptnodeitemmodel.cpp:2576
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Work package owner"
 msgstr "Controle do pacaedje d' ovraedje"
 
-#: models/kptnodeitemmodel.cpp:2566
+#: models/kptnodeitemmodel.cpp:2577
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Work package status"
 msgstr "Controle do pacaedje d' ovraedje"
 
-#: models/kptnodeitemmodel.cpp:2567
+#: models/kptnodeitemmodel.cpp:2578
 #, fuzzy, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Work package send/receive time"
 msgstr "Controle do pacaedje d' ovraedje"
 
-#: models/kptnodeitemmodel.cpp:2703
+#: models/kptnodeitemmodel.cpp:2714
 #, fuzzy
 #| msgid "Modify Task"
 msgctxt "(qtundo-format)"
 msgid "Modify name"
 msgstr "Candjî bouye"
 
-#: models/kptnodeitemmodel.cpp:2705
+#: models/kptnodeitemmodel.cpp:2716
 #, fuzzy
 #| msgid "Modify Task"
 msgctxt "(qtundo-format)"
 msgid "Modify task name"
 msgstr "Candjî bouye"
 
-#: models/kptnodeitemmodel.cpp:2706
+#: models/kptnodeitemmodel.cpp:2717
 #, fuzzy
 #| msgid "Modify milestone completion"
 msgctxt "(qtundo-format)"
 msgid "Modify milestone name"
 msgstr "Candjî completaedje di l' etape"
 
-#: models/kptnodeitemmodel.cpp:2707
+#: models/kptnodeitemmodel.cpp:2718
 #, fuzzy
 #| msgid "Modify Summary Task"
 msgctxt "(qtundo-format)"
 msgid "Modify summarytask name"
 msgstr "Candjî bouye di racourti"
 
-#: models/kptnodeitemmodel.cpp:2708
+#: models/kptnodeitemmodel.cpp:2719
 #, fuzzy
 #| msgid "Modify main project"
 msgctxt "(qtundo-format)"
 msgid "Modify project name"
 msgstr "Candjî mwaisse pordjet"
 
-#: models/kptnodeitemmodel.cpp:2721
+#: models/kptnodeitemmodel.cpp:2732
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Modify responsible"
 msgstr "Responsåve:"
 
-#: models/kptnodeitemmodel.cpp:2746 ui/kpttaskdescriptiondialog.cpp:51
+#: models/kptnodeitemmodel.cpp:2757 ui/kpttaskdescriptiondialog.cpp:51
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Modify task description"
 msgstr "Candjî completaedje del bouye"
 
-#: models/kptnodeitemmodel.cpp:2769
+#: models/kptnodeitemmodel.cpp:2780
 #, fuzzy
 #| msgid "Modify Document Type"
 msgctxt "(qtundo-format)"
 msgid "Modify constraint type"
 msgstr "Candjî sôre di documint"
 
-#: models/kptnodeitemmodel.cpp:2786
+#: models/kptnodeitemmodel.cpp:2797
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Modify constraint start time"
 msgstr "Stronna"
 
-#: models/kptnodeitemmodel.cpp:2803
+#: models/kptnodeitemmodel.cpp:2814
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Modify constraint end time"
 msgstr "Stronna"
 
-#: models/kptnodeitemmodel.cpp:2828
+#: models/kptnodeitemmodel.cpp:2839
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Modify estimate type"
 msgstr "Candjî estat do djoû del samwinne"
 
-#: models/kptnodeitemmodel.cpp:2854
+#: models/kptnodeitemmodel.cpp:2865
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Modify estimate calendar"
 msgstr "Candjî estat do djoû del samwinne"
 
-#: models/kptnodeitemmodel.cpp:2887 models/kptnodeitemmodel.cpp:2891
+#: models/kptnodeitemmodel.cpp:2898 models/kptnodeitemmodel.cpp:2902
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Modify estimate"
 msgstr "Candjî estat do djoû del samwinne"
 
-#: models/kptnodeitemmodel.cpp:2913
+#: models/kptnodeitemmodel.cpp:2924
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Modify optimistic estimate"
 msgstr "Optimisse:"
 
-#: models/kptnodeitemmodel.cpp:2930
+#: models/kptnodeitemmodel.cpp:2941
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Modify pessimistic estimate"
 msgstr "Pessimisse:"
 
-#: models/kptnodeitemmodel.cpp:2954
+#: models/kptnodeitemmodel.cpp:2965
 #, fuzzy
 #| msgid "Modify Task"
 msgctxt "(qtundo-format)"
 msgid "Modify risk type"
 msgstr "Candjî bouye"
 
-#: models/kptnodeitemmodel.cpp:2969
+#: models/kptnodeitemmodel.cpp:2980
 #, fuzzy
 #| msgid "Modify Task"
 msgctxt "(qtundo-format)"
 msgid "Modify priority"
 msgstr "Candjî bouye"
 
-#: models/kptnodeitemmodel.cpp:2989
+#: models/kptnodeitemmodel.cpp:3000
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Modify running account"
 msgstr "Candjî standårdès eures ovråves"
 
-#: models/kptnodeitemmodel.cpp:3011
+#: models/kptnodeitemmodel.cpp:3022
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Modify startup account"
 msgstr "Candjî standårdès eures ovråves"
 
-#: models/kptnodeitemmodel.cpp:3028
+#: models/kptnodeitemmodel.cpp:3039
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Modify startup cost"
 msgstr "Candjî costindje del bouye"
 
-#: models/kptnodeitemmodel.cpp:3048
+#: models/kptnodeitemmodel.cpp:3059
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Modify shutdown account"
 msgstr "Candjî documints"
 
-#: models/kptnodeitemmodel.cpp:3065
+#: models/kptnodeitemmodel.cpp:3076
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Modify shutdown cost"
 msgstr "Candjî costindje del bouye"
 
-#: models/kptnodeitemmodel.cpp:3090 models/kpttaskstatusmodel.cpp:453
+#: models/kptnodeitemmodel.cpp:3101 models/kpttaskstatusmodel.cpp:453
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Modify remaining effort"
 msgstr "Efoirt ki dmeure"
 
-#: models/kptnodeitemmodel.cpp:3102 models/kpttaskstatusmodel.cpp:466
+#: models/kptnodeitemmodel.cpp:3113 models/kpttaskstatusmodel.cpp:466
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Modify actual effort"
 msgstr "Candjî costindje del bouye"
 
-#: models/kptnodeitemmodel.cpp:3115 models/kpttaskstatusmodel.cpp:480
+#: models/kptnodeitemmodel.cpp:3126 models/kpttaskstatusmodel.cpp:480
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Modify actual start time"
 msgstr "Candjî standårdès eures ovråves"
 
-#: models/kptnodeitemmodel.cpp:3144 models/kpttaskstatusmodel.cpp:508
+#: models/kptnodeitemmodel.cpp:3155 models/kpttaskstatusmodel.cpp:508
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Modify actual finish time"
 msgstr "Candjî standårdès eures ovråves"
 
-#: models/kptnodeitemmodel.cpp:3616
+#: models/kptnodeitemmodel.cpp:3627
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Add resource allocation"
 msgstr "Apontiaedjes del rissource"
 
-#: models/kptnodeitemmodel.cpp:3618
+#: models/kptnodeitemmodel.cpp:3629
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Removed resource allocation"
 msgstr "Apontiaedjes del rissource"
 
-#: models/kptnodeitemmodel.cpp:3641 models/kpttaskstatusmodel.cpp:403
+#: models/kptnodeitemmodel.cpp:3652 models/kpttaskstatusmodel.cpp:403
 #, fuzzy, no-c-format
 #| msgid "Modify task completion"
 msgctxt "(qtundo-format)"
 msgid "Modify completion"
 msgstr "Candjî completaedje del bouye"
 
-#: models/kptnodeitemmodel.cpp:3670 models/kpttaskstatusmodel.cpp:432
+#: models/kptnodeitemmodel.cpp:3681 models/kpttaskstatusmodel.cpp:432
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Set finished"
 msgstr "Fini"
 
-#: models/kptnodeitemmodel.cpp:4040
+#: models/kptnodeitemmodel.cpp:4051
 #, fuzzy
 #| msgid "Modify Task"
 msgctxt "(qtundo-format)"
 msgid "Insert tasks"
 msgstr "Candjî bouye"
 
-#: models/kptnodeitemmodel.cpp:4065
+#: models/kptnodeitemmodel.cpp:4076
 #, fuzzy, kde-kuit-format
 msgctxt "@title:window"
 msgid "Task Module Parameters"
 msgstr "Avançmint del bouye"
 
-#: models/kptnodeitemmodel.cpp:4071
+#: models/kptnodeitemmodel.cpp:4082
 #, fuzzy
 #| msgid "Modify Task"
 msgctxt "(qtundo-format)"
 msgid "Insert task module"
 msgstr "Candjî bouye"
 
-#: models/kptnodeitemmodel.cpp:4129
+#: models/kptnodeitemmodel.cpp:4140
 #, kde-format
 msgctxt "(qtundo-format)"
 msgid "Insert %1"
 msgstr ""
 
-#: models/kptnodeitemmodel.cpp:4136 ui/kptrequestresourcespanel.cpp:114
+#: models/kptnodeitemmodel.cpp:4147 ui/kptrequestresourcespanel.cpp:114
 #: ui/ResourceAllocationView.cpp:154
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Modify resource allocations"
 msgstr "Candjî loyaedje"
 
-#: models/kptnodeitemmodel.cpp:4192 models/kptnodeitemmodel.cpp:4976
+#: models/kptnodeitemmodel.cpp:4203 models/kptnodeitemmodel.cpp:4987
 #, fuzzy
 #| msgid "Modify Task"
 msgctxt "(qtundo-format)"
 msgid "Move tasks"
 msgstr "Candjî bouye"
 
-#: models/kptnodeitemmodel.cpp:4260 ui/kpttaskdialog.cpp:179
+#: models/kptnodeitemmodel.cpp:4271 ui/kpttaskdialog.cpp:179
 #: ui/kpttaskdialog.cpp:216
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Add task"
 msgstr "Radjouter bouye..."
 
-#: models/kptnodeitemmodel.cpp:4275 ui/kpttaskdialog.cpp:214
+#: models/kptnodeitemmodel.cpp:4286 ui/kpttaskdialog.cpp:214
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Add sub-task"
@@ -10230,6 +10241,13 @@ msgstr "Discrijhaedje"
 #, kde-format
 msgid "All supported formats"
 msgstr ""
+
+#, fuzzy
+#~| msgctxt "1=page number, 2=last page number"
+#~| msgid "%1 (%2)"
+#~ msgctxt "@info:tooltip 1=resource name, 2=list of required resources"
+#~ msgid "%1 (%2)"
+#~ msgstr "%1 (%2)"
 
 #, fuzzy
 #~ msgid "No template found for: %1"
