@@ -64,7 +64,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-04-16 00:18+0000\n"
+"POT-Creation-Date: 2021-04-17 00:18+0000\n"
 "PO-Revision-Date: 2011-01-17 21:35+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -8482,7 +8482,7 @@ msgid "Imported Image"
 msgstr "Abaguer imådje"
 
 #: libs/image/kis_image.cc:626 libs/image/kis_layer_utils.cpp:1840
-#: libs/impex/KisExportCheckRegistry.cpp:108
+#: libs/impex/KisExportCheckRegistry.cpp:113
 #, fuzzy, kde-format
 msgid "Selection Mask"
 msgstr "Masse di tchoes..."
@@ -9235,13 +9235,13 @@ msgid ""
 "The image contains <b>Exif</b> metadata. The metadata will not be saved."
 msgstr ""
 
-#: libs/impex/KisExportCheckRegistry.cpp:88 libs/ui/kis_layer_manager.cc:570
+#: libs/impex/KisExportCheckRegistry.cpp:93 libs/ui/kis_layer_manager.cc:570
 #, fuzzy, kde-format
 msgid "Clone Layer"
 msgstr "Coûtche &djermale"
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: libs/impex/KisExportCheckRegistry.cpp:90 libs/ui/kis_layer_manager.cc:554
+#: libs/impex/KisExportCheckRegistry.cpp:95 libs/ui/kis_layer_manager.cc:554
 #: libs/ui/kis_node_manager.cpp:1499 libs/ui/KisPaletteEditor.cpp:409
 #: libs/widgets/kis_palette_view.cpp:114
 #: plugins/dockers/arrangedocker/arrange_docker_widget.ui:338
@@ -9250,44 +9250,44 @@ msgstr "Coûtche &djermale"
 msgid "Group"
 msgstr "Hopea:"
 
-#: libs/impex/KisExportCheckRegistry.cpp:92 libs/ui/kis_layer_manager.cc:879
+#: libs/impex/KisExportCheckRegistry.cpp:97 libs/ui/kis_layer_manager.cc:879
 #, fuzzy, kde-format
 msgid "File Layer"
 msgstr "Côutche p&assete..."
 
-#: libs/impex/KisExportCheckRegistry.cpp:94 libs/ui/kis_layer_manager.cc:583
+#: libs/impex/KisExportCheckRegistry.cpp:99 libs/ui/kis_layer_manager.cc:583
 #: plugins/impex/svg/kis_svg_import.cc:79
 #, fuzzy, kde-format
 msgid "Vector Layer"
 msgstr "Taeyî coûtche"
 
-#: libs/impex/KisExportCheckRegistry.cpp:96 libs/ui/kis_layer_manager.cc:605
+#: libs/impex/KisExportCheckRegistry.cpp:101 libs/ui/kis_layer_manager.cc:605
 #, fuzzy, kde-format
 msgid "Filter Layer"
 msgstr "Côutche p&assete..."
 
-#: libs/impex/KisExportCheckRegistry.cpp:98
+#: libs/impex/KisExportCheckRegistry.cpp:103
 #, fuzzy, kde-format
 msgid "Generator Layer"
 msgstr "Coûtche dj&eneratresse"
 
-#: libs/impex/KisExportCheckRegistry.cpp:100 libs/ui/kis_mask_manager.cc:274
+#: libs/impex/KisExportCheckRegistry.cpp:105 libs/ui/kis_mask_manager.cc:274
 #, fuzzy, kde-format
 msgid "Colorize Mask"
 msgstr "&Coleur"
 
-#: libs/impex/KisExportCheckRegistry.cpp:102
+#: libs/impex/KisExportCheckRegistry.cpp:107
 #: libs/ui/dialogs/kis_dlg_filter.cpp:210 libs/ui/kis_mask_manager.cc:223
 #, fuzzy, kde-format
 msgid "Filter Mask"
 msgstr "Masse di passete..."
 
-#: libs/impex/KisExportCheckRegistry.cpp:104 libs/ui/kis_mask_manager.cc:286
+#: libs/impex/KisExportCheckRegistry.cpp:109 libs/ui/kis_mask_manager.cc:286
 #, fuzzy, kde-format
 msgid "Transform Mask"
 msgstr "Transformer"
 
-#: libs/impex/KisExportCheckRegistry.cpp:106 libs/ui/kis_mask_manager.cc:210
+#: libs/impex/KisExportCheckRegistry.cpp:111 libs/ui/kis_mask_manager.cc:210
 #: libs/ui/kis_node_manager.cpp:1290
 #: plugins/impex/libkra/kis_kra_load_visitor.cpp:211
 #: plugins/impex/psd/psd_loader.cpp:288
@@ -9302,6 +9302,15 @@ msgctxt "image conversion warning"
 msgid ""
 "The image has <b>more than one layer or a mask or an active selection</b>. "
 "Only the flattened image will be saved."
+msgstr ""
+
+#: libs/impex/MultiTransparencyMaskCheck.h:25
+#, kde-format
+msgctxt "image conversion warning"
+msgid ""
+"The image has <b>more than one transparency mask on a layer</b>. For all "
+"layers that have multiple transparency masks, only the rendered result will "
+"be saved."
 msgstr ""
 
 #: libs/impex/NodeTypeCheck.h:25
@@ -9824,6 +9833,7 @@ msgstr ""
 #: libs/pigment/compositeops/KoCompositeOpCopy2.h:32
 #: libs/ui/dialogs/KisDlgSavePreset.cpp:74
 #: plugins/generators/seexpr/kis_wdg_seexpr_presets_save.cpp:67
+#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:310
 #, kde-format
 msgid "Copy"
 msgstr "Copyî"
@@ -11691,11 +11701,11 @@ msgstr "Fitchîs sourdants:"
 #: plugins/tools/basictools/kis_tool_colorsampler.cc:150
 #: plugins/tools/basictools/kis_tool_colorsampler.cc:198
 #: plugins/tools/defaulttool/referenceimagestool/KisReferenceImageCollection.cpp:95
-#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:122
-#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:157
-#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:179
-#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:206
-#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:215
+#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:124
+#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:159
+#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:181
+#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:208
+#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:217
 #: plugins/tools/svgtexttool/SvgTextEditor.cpp:1098
 #: plugins/tools/tool_transform2/kis_free_transform_strategy_gsl_helpers.cpp:346
 #, fuzzy, kde-format
@@ -13886,20 +13896,20 @@ msgstr "Catchî moennaedjes"
 msgid "Y: %1 px"
 msgstr " px"
 
-#: libs/ui/canvas/kis_guides_manager.cpp:544
+#: libs/ui/canvas/kis_guides_manager.cpp:543
 #: libs/ui/canvas/kis_mirror_axis.cpp:268
 #, fuzzy, kde-format
 msgid "X: %1 px"
 msgstr " px"
 
-#: libs/ui/canvas/kis_guides_manager.cpp:771
+#: libs/ui/canvas/kis_guides_manager.cpp:770
 #, fuzzy, kde-format
 msgid "Snap to:"
 msgstr "Claper sol grile:"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
 #. i18n: ectx: property (text), widget (QRadioButton, btnGridMode)
-#: libs/ui/canvas/kis_guides_manager.cpp:772
+#: libs/ui/canvas/kis_guides_manager.cpp:771
 #: plugins/dockers/griddocker/grid_config_widget.ui:43
 #: plugins/dockers/storyboarddocker/wdgarrangemenu.ui:49
 #, kde-format
@@ -13907,7 +13917,7 @@ msgid "Grid"
 msgstr "Grile"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: libs/ui/canvas/kis_guides_manager.cpp:773
+#: libs/ui/canvas/kis_guides_manager.cpp:772
 #: plugins/dockers/griddocker/grid_config_widget.ui:536
 #, fuzzy, kde-format
 msgid "Guides"
@@ -13915,44 +13925,44 @@ msgstr "Mostrer moennaedjes"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, shapeBox)
 #. i18n: ectx: property (text), item, widget (QComboBox, shapeCBox)
-#: libs/ui/canvas/kis_guides_manager.cpp:774
+#: libs/ui/canvas/kis_guides_manager.cpp:773
 #: plugins/paintops/gridbrush/wdggridbrushshapeoptions.ui:56
 #: plugins/paintops/spray/wdgsprayshapeoptions.ui:85
 #, kde-format
 msgid "Pixel"
 msgstr "Picsel"
 
-#: libs/ui/canvas/kis_guides_manager.cpp:775
+#: libs/ui/canvas/kis_guides_manager.cpp:774
 #, kde-format
 msgid "Orthogonal"
 msgstr "Ortogonå"
 
-#: libs/ui/canvas/kis_guides_manager.cpp:777
+#: libs/ui/canvas/kis_guides_manager.cpp:776
 #, fuzzy, kde-format
 msgid "Node"
 msgstr "Nuks"
 
-#: libs/ui/canvas/kis_guides_manager.cpp:778
+#: libs/ui/canvas/kis_guides_manager.cpp:777
 #, fuzzy, kde-format
 msgid "Extension"
 msgstr "Manaedjeu des rawetes"
 
-#: libs/ui/canvas/kis_guides_manager.cpp:779
+#: libs/ui/canvas/kis_guides_manager.cpp:778
 #, fuzzy, kde-format
 msgid "Intersection"
 msgstr "Croejhler"
 
-#: libs/ui/canvas/kis_guides_manager.cpp:781
+#: libs/ui/canvas/kis_guides_manager.cpp:780
 #, fuzzy, kde-format
 msgid "Bounding Box"
 msgstr "Ewalpaedje djeyometrike del cogne"
 
-#: libs/ui/canvas/kis_guides_manager.cpp:782
+#: libs/ui/canvas/kis_guides_manager.cpp:781
 #, fuzzy, kde-format
 msgid "Image Bounds"
 msgstr "Imådje"
 
-#: libs/ui/canvas/kis_guides_manager.cpp:783
+#: libs/ui/canvas/kis_guides_manager.cpp:782
 #, fuzzy, kde-format
 msgid "Image Center"
 msgstr "Mitan:"
@@ -22924,6 +22934,7 @@ msgstr "Gåyotaedje do tchoes"
 #: libs/ui/tool/kis_selection_tool_helper.cpp:370
 #: plugins/generators/pattern/wdgpatternoptions.ui:51
 #: plugins/tools/defaulttool/defaulttool/DefaultTool.cpp:1834
+#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:295
 #, fuzzy, kde-format
 msgid "Transform"
 msgstr "Transformer"
@@ -22963,14 +22974,6 @@ msgstr "Grandeu del coûtche"
 msgid "Local selection is locked."
 msgstr "Tchoes &locå"
 
-#: libs/ui/tool/kis_tool_ellipse_base.cpp:35
-#: libs/ui/tool/kis_tool_rectangle_base.cpp:314
-#, kde-format
-msgid ""
-"Width: %1 px\n"
-"Height: %2 px"
-msgstr ""
-
 #: libs/ui/tool/kis_tool_freehand.cc:193
 #, kde-format
 msgid ""
@@ -22980,7 +22983,7 @@ msgstr ""
 
 #: libs/ui/tool/kis_tool_freehand.cc:198
 #: libs/ui/tool/kis_tool_polyline_base.cpp:81
-#: libs/ui/tool/kis_tool_rectangle_base.cpp:116
+#: libs/ui/tool/kis_tool_rectangle_base.cpp:125
 #: plugins/tools/basictools/kis_tool_line.cc:175
 #: plugins/tools/basictools/kis_tool_path.cc:72
 #: plugins/tools/basictools/kis_tool_pencil.cc:41
@@ -22995,11 +22998,27 @@ msgid "%1 %2 px"
 msgstr "%1 %"
 
 #: libs/ui/tool/kis_tool_polyline_base.cpp:75
-#: libs/ui/tool/kis_tool_rectangle_base.cpp:110
+#: libs/ui/tool/kis_tool_rectangle_base.cpp:119
 #, kde-format
 msgid ""
 "This tool cannot paint on clone layers.  Please select a paint or vector "
 "layer or mask."
+msgstr ""
+
+#: libs/ui/tool/kis_tool_rectangle_base.cpp:75
+#, kde-format
+msgid ""
+"Width: %1 px\n"
+"Height: %2 px"
+msgstr ""
+
+#: libs/ui/tool/kis_tool_rectangle_base.cpp:251
+#: plugins/tools/basictools/kis_tool_line.cc:251
+#: plugins/tools/basictools/kis_tool_multihand.cpp:499
+#, kde-format
+msgid ""
+"X: %1 px\n"
+"Y: %2 px"
 msgstr ""
 
 #: libs/ui/tool/kis_tool_utils.cpp:129
@@ -43656,20 +43675,20 @@ msgstr "Prévey"
 msgid "Show Guideline"
 msgstr "Mostrer moennaedjes"
 
-#: plugins/tools/basictools/kis_tool_line.cc:363
+#: plugins/tools/basictools/kis_tool_line.cc:365
 #, fuzzy, kde-format
 #| msgid "Length:"
 msgid "Length: %1 px"
 msgstr "Longueur:"
 
-#: plugins/tools/basictools/kis_tool_line.cc:369
+#: plugins/tools/basictools/kis_tool_line.cc:383
 #, kde-format
 msgid ""
 "Alt+Drag will move the origin of the currently displayed line around, Shift"
 "+Drag will force you to draw straight lines"
 msgstr ""
 
-#: plugins/tools/basictools/kis_tool_line.h:104
+#: plugins/tools/basictools/kis_tool_line.h:105
 #, fuzzy, kde-format
 msgid "Line Tool"
 msgstr "Usteyes då &pondeu"
@@ -43743,13 +43762,6 @@ msgstr ""
 #, fuzzy, kde-format
 msgid "Copy Translate"
 msgstr "Triyangue"
-
-#: plugins/tools/basictools/kis_tool_multihand.cpp:499
-#, kde-format
-msgid ""
-"X: %1 px\n"
-"Y: %2 px"
-msgstr ""
 
 #: plugins/tools/basictools/kis_tool_multihand.h:91
 #, fuzzy, kde-format
@@ -44361,49 +44373,64 @@ msgid ""
 "%1"
 msgstr ""
 
-#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:87
+#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:89
 #, fuzzy, kde-format
 msgid "Select a Reference Image"
 msgstr "Imådje di royes"
 
-#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:122
+#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:124
 #, fuzzy, kde-format
 msgid "Could not load reference image from clipboard"
 msgstr "Dji n' a savou radjouter l' coûtche a l' imådje."
 
-#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:144
+#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:146
 #, fuzzy, kde-format
 msgid "Load Reference Images"
 msgstr "Imådje di referince:"
 
-#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:157
+#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:159
 #, fuzzy, kde-format
 msgid "Could not open '%1'."
 msgstr "Dji n' a savou radjouter l' coûtche a l' imådje."
 
-#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:179
+#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:181
 #, fuzzy, kde-format
 msgid "Could not load reference images from '%1'."
 msgstr "Dji n' a savou radjouter l' coûtche a l' imådje."
 
-#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:194
+#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:196
 #, fuzzy, kde-format
 msgid "Save Reference Images"
 msgstr "Imådje di referince:"
 
-#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:206
+#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:208
 #, fuzzy, kde-format
 #| msgid "Could not create the file for saving"
 msgid "Could not open '%1' for saving."
 msgstr "Dji n' a savou ahiver l' fitchî pol schapaedje"
 
-#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:215
+#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:217
 #, fuzzy, kde-format
 #| msgid "Reference image:"
 msgid "Failed to save reference images."
 msgstr "Imådje di referince:"
 
-#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.h:80
+#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:292
+#, fuzzy, kde-format
+msgid "Reference Image Actions"
+msgstr "Imådje di referince:"
+
+#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:308
+#, fuzzy, kde-format
+msgid "Cut"
+msgstr "Côper"
+
+#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:312
+#, fuzzy, kde-format
+msgid "Paste"
+msgstr "Aclaper"
+
+#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.h:87
 #, fuzzy, kde-format
 msgid "Reference Images Tool"
 msgstr "Imådje di referince:"
@@ -45537,12 +45564,19 @@ msgstr "Loumire do djoû"
 msgid "Lock Ratio"
 msgstr "Tournaedje"
 
-#: plugins/tools/tool_crop/kis_tool_crop.cc:243
+#: plugins/tools/tool_crop/kis_tool_crop.cc:246
 #, fuzzy, kde-format
 msgid "Crop Tool Actions"
 msgstr "Agrandi tchoes"
 
-#: plugins/tools/tool_crop/kis_tool_crop.cc:711
+#: plugins/tools/tool_crop/kis_tool_crop.cc:715
+#, fuzzy, kde-format
+msgid ""
+"X: %1\n"
+"Y: %2"
+msgstr " px"
+
+#: plugins/tools/tool_crop/kis_tool_crop.cc:720
 #, fuzzy, kde-format
 msgid ""
 "Width: %1\n"
@@ -48559,11 +48593,6 @@ msgstr "Imådje di referince:"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Paste As Text"
 #~ msgstr "Displaeçmint do copiaedje :"
-
-#, fuzzy
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Paste"
-#~ msgstr "Aclaper"
 
 #~ msgid "Index Reference"
 #~ msgstr "Referince di l' indecse"
