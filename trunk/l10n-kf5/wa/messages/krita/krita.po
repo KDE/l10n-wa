@@ -64,7 +64,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-08-23 00:16+0000\n"
+"POT-Creation-Date: 2021-08-24 00:16+0000\n"
 "PO-Revision-Date: 2011-01-17 21:35+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -8130,7 +8130,10 @@ msgid "Smooth point"
 msgstr "Radoûci"
 
 #. i18n: context: Actions (General), ActionCollection (Krita)
-#: krita/krita.action:4
+#. i18n: context: Actions (General), ActionCollection (Krita)
+#. i18n: context: Actions (General), ActionCollection (Krita)
+#. i18n: context: Actions (General), ActionCollection (Krita)
+#: krita/krita.action:4 libs/resourcewidgets/dbexplorer/dbexplorer.action:4
 #, fuzzy, kde-format
 msgctxt "action"
 msgid "General"
@@ -15390,7 +15393,7 @@ msgctxt "property of a filter layer, noun"
 msgid "Filter"
 msgstr "Passete"
 
-#: libs/image/kis_asl_layer_style_serializer.cpp:1272
+#: libs/image/kis_asl_layer_style_serializer.cpp:1260
 #, kde-format
 msgctxt "Auto-generated layer style name for embedded styles (style itself)"
 msgid "<%1> (embedded)"
@@ -16310,6 +16313,7 @@ msgstr "Transformer"
 #: libs/ui/kis_node_manager.cpp:1290
 #: plugins/impex/libkra/kis_kra_load_visitor.cpp:214
 #: plugins/impex/psd/psd_loader.cpp:288
+#: plugins/impex/tiff/kis_tiff_converter.cc:1189
 #: plugins/impex/xcf/kis_xcf_import.cpp:273
 #, kde-format
 msgid "Transparency Mask"
@@ -17858,6 +17862,22 @@ msgstr "sins no-1"
 msgid "SVG Gradient"
 msgstr "Gradyint SVG"
 
+#: libs/psd/psd_layer_section.cpp:381
+#, fuzzy, kde-format
+msgctxt "Automatically created layer name when saving into PSD"
+msgid "Background"
+msgstr "fond"
+
+#: libs/psd/psd_layer_section.cpp:633 libs/psd/psd_layer_section.cpp:778
+#, fuzzy, kde-format
+msgid "Unnamed Layer"
+msgstr "Coûtche &djermale"
+
+#: libs/psd/psd_resource_block.h:109
+#, fuzzy, kde-format
+msgid "Unparsed Resource Block"
+msgstr "&Rissourses"
+
 #: libs/resources/KisFolderStorage.cpp:251
 #, fuzzy, kde-format
 msgid "Local Resources"
@@ -18288,21 +18308,14 @@ msgstr "&Rissourses"
 msgid "All Untagged Resources"
 msgstr "&Rissourses"
 
-#. i18n: context: Actions (DbExplorer), ActionCollection (DbExplorer)
-#: libs/resourcewidgets/dbexplorer/dbexplorer.action:4
-#, kde-format
-msgctxt "action"
-msgid "Database Explorer"
-msgstr ""
-
-#. i18n: context: Action (dbexplorer), Actions (DbExplorer), ActionCollection (DbExplorer)
+#. i18n: context: Action (dbexplorer), Actions (General), ActionCollection (Krita)
 #: libs/resourcewidgets/dbexplorer/dbexplorer.action:7
 #, kde-format
 msgctxt "action"
 msgid "&Explore Resources Cache Database..."
 msgstr ""
 
-#. i18n: context: Action (dbexplorer), Actions (DbExplorer), ActionCollection (DbExplorer)
+#. i18n: context: Action (dbexplorer), Actions (General), ActionCollection (Krita)
 #: libs/resourcewidgets/dbexplorer/dbexplorer.action:9
 #, kde-format
 msgctxt "action"
@@ -18607,38 +18620,20 @@ msgctxt "Dialog title"
 msgid "Can't create the tag"
 msgstr "Dji n' sai ahiver l' sitocaedje"
 
-#: libs/resourcewidgets/KisTagFilterWidget.cpp:48
+#: libs/resourcewidgets/KisTagFilterWidget.cpp:46
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "<p>Enter search terms to filter by name</p>"
 msgstr ""
 
-#: libs/resourcewidgets/KisTagFilterWidget.cpp:52
-#, kde-format
-msgctxt "@info:tooltip"
-msgid ""
-"<p>Filter results cannot be saved for the <b>All Presets</b> view. In this "
-"view, pressing <b>Enter</b> or clearing the filter box will restore all "
-"items. Create and/or switch to a different tag if you want to save filtered "
-"resources into named sets.</p>"
-msgstr ""
-
-#: libs/resourcewidgets/KisTagFilterWidget.cpp:58
-#, kde-format
-msgctxt "@info:tooltip"
-msgid ""
-"<p>Pressing <b>Enter</b> or clicking the <b>Save</b> button will save the "
-"changes.</p>"
-msgstr ""
-
 #. i18n: ectx: property (placeholderText), widget (QLineEdit, lneFilterText)
-#: libs/resourcewidgets/KisTagFilterWidget.cpp:65
+#: libs/resourcewidgets/KisTagFilterWidget.cpp:53
 #: plugins/extensions/resourcemanager/WdgDlgResourceManager.ui:52
 #, fuzzy, kde-format
 msgid "Search"
 msgstr "Prédefinixha do cweraedje"
 
-#: libs/resourcewidgets/KisTagFilterWidget.cpp:80
+#: libs/resourcewidgets/KisTagFilterWidget.cpp:68
 #, fuzzy, kde-format
 msgctxt ""
 "It appears in the checkbox next to the filter box in resources dockers; must "
@@ -20816,7 +20811,7 @@ msgstr "Prôpietés del coûtche"
 #: plugins/generators/screentone/KisScreentoneConfigWidget.cpp:38
 #: plugins/impex/jpeg/kis_jpeg_export.cc:217
 #: plugins/impex/jpeg/kis_jpeg_export.cc:219
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:278
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:314
 #: plugins/impex/webp/dlg_webp_export.ui:79
 #: plugins/impex/webp/dlg_webp_export.ui:317
 #: plugins/impex/webp/dlg_webp_export.ui:340
@@ -29111,7 +29106,7 @@ msgstr ""
 #: libs/ui/layerstyles/wdgdropshadow.ui:50
 #: libs/ui/layerstyles/wdgInnerGlow.ui:279
 #: plugins/impex/jpeg/kis_wdg_options_jpeg.ui:75
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:237
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:273
 #: plugins/impex/webp/dlg_webp_export.ui:68
 #, fuzzy, kde-format
 msgid "Quality"
@@ -42770,7 +42765,7 @@ msgstr ""
 #. i18n: ectx: property (toolTip), widget (QCheckBox, chkLossless)
 #: plugins/impex/exr/exr_export_widget.ui:27
 #: plugins/impex/heif/WdgHeifExport.ui:148
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:145
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:181
 #, kde-format
 msgid ""
 "This option will merge all layers. It is advisable to check this option, "
@@ -42780,7 +42775,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, flatten)
 #. i18n: ectx: property (text), widget (QCheckBox, chkFlatten)
 #: plugins/impex/exr/exr_export_widget.ui:30
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:148
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:184
 #, kde-format
 msgid "Flatten the &image"
 msgstr "Asplati l' &imådje"
@@ -43252,7 +43247,7 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkSaveProfile)
 #: plugins/impex/jpeg/kis_wdg_options_jpeg.ui:132
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:158
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:194
 #, fuzzy, kde-format
 msgid "Save ICC Profile"
 msgstr "Profil del coûtche:"
@@ -43882,7 +43877,7 @@ msgstr "Oister profil"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, alpha)
 #: plugins/impex/png/kis_wdg_options_png.ui:73
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:128
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:164
 #, kde-format
 msgid "Disable to get smaller files if your image has no transparency"
 msgstr ""
@@ -43891,7 +43886,7 @@ msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, alpha)
 #: plugins/impex/png/kis_wdg_options_png.ui:77
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:132
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:168
 #, kde-format
 msgid ""
 "<p>The Portable Network Graphics (PNG) file format allows transparency in "
@@ -43940,14 +43935,14 @@ msgstr "Mete en ouve profil"
 #: plugins/impex/png/kis_wdg_options_png.ui:186
 #: plugins/impex/qimageio/kis_wdg_options_qimageio.ui:42
 #: plugins/impex/qimageio/kis_wdg_options_qimageio.ui:62
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:340
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:359
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:373
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:393
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:452
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:471
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:485
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:505
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:376
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:395
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:409
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:429
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:488
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:507
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:521
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:541
 #, fuzzy, kde-format
 msgid ""
 "<p>Adjust the compression time. Better compression takes longer.\n"
@@ -43999,10 +43994,10 @@ msgstr "Schaper come PNG indecsé, si possibe"
 #. i18n: ectx: property (toolTip), widget (KisDoubleSliderSpinBox, compressionLevel)
 #: plugins/impex/png/kis_wdg_options_png.ui:144
 #: plugins/impex/png/kis_wdg_options_png.ui:182
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:336
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:389
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:448
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:501
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:372
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:425
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:484
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:537
 #, kde-format
 msgid "Note: the compression level does not change the quality of the result"
 msgstr "Note : li livea d' rastrindaedje ni candje nén l' cwålité do rzultat"
@@ -44062,26 +44057,10 @@ msgid ""
 "from the image."
 msgstr ""
 
-#: plugins/impex/psd/psd_layer_section.cpp:298
-#, fuzzy, kde-format
-msgctxt "Automatically created layer name when saving into PSD"
-msgid "Background"
-msgstr "fond"
-
-#: plugins/impex/psd/psd_layer_section.cpp:542
-#, fuzzy, kde-format
-msgid "Unnamed Layer"
-msgstr "Coûtche &djermale"
-
 #: plugins/impex/psd/psd_loader.cpp:149
 #, kde-format
 msgid "Duotone Colormode Block"
 msgstr ""
-
-#: plugins/impex/psd/psd_resource_block.h:92
-#, fuzzy, kde-format
-msgid "Unparsed Resource Block"
-msgstr "&Rissourses"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, KisWdgOptionsQImageIO)
 #: plugins/impex/qimageio/kis_wdg_options_qimageio.ui:18
@@ -44977,81 +44956,105 @@ msgstr "Fijhaedje di diferince di coutchî:"
 msgid "Floating Point Horizontal Differencing"
 msgstr "Fijhaedje di diferince di flotant coma di coutchî"
 
+#. i18n: ectx: property (title), widget (QGroupBox, chkPhotoshop)
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:116
+#, fuzzy, kde-format
+msgid "Save layers as Photoshop"
+msgstr "Schaper coûtche come imådje..."
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:125
+#, fuzzy, kde-format
+msgid "Layer compression"
+msgstr "Rastrinde:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kComboBoxPSDCompressionType)
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:136
+#, kde-format
+msgid "RLE"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kComboBoxPSDCompressionType)
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:141
+#, kde-format
+msgid "ZIP"
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QCheckBox, alpha)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:135
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:171
 #, kde-format
 msgid "Store alpha &channel (transparency)"
 msgstr "Wårder &canå alfa (weyoûte)"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBoxJPEG)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:231
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:267
 #, kde-format
 msgid "JPEG Compression Options"
 msgstr "Tchuzes do strindaedje JPEG"
 
 #. i18n: ectx: property (text), widget (QLabel, lblSmallest)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:252
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:288
 #, kde-format
 msgid "Smallest"
 msgstr "Li pus ptit"
 
 #. i18n: ectx: property (text), widget (QLabel, lblBest)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:262
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:298
 #: plugins/impex/webp/dlg_webp_export.ui:443
 #, kde-format
 msgid "Best"
 msgstr "Li meyeus"
 
 #. i18n: ectx: property (toolTip), widget (KisSliderSpinBox, qualityLevel)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:275
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:311
 #, kde-format
 msgid ""
 "These settings determine how much information is lost during compression"
 msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBoxDeflate)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:330
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:366
 #, kde-format
 msgid "Deflate Compression Options"
 msgstr "Tchuzes do strindaedje Deflate"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:343
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:455
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:379
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:491
 #, kde-format
 msgid "Compress:"
 msgstr "Rastrinde:"
 
 #. i18n: ectx: property (text), widget (QLabel, lblFast)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:362
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:398
 #, kde-format
 msgctxt "save the file quickly, but do not compress very well"
 msgid "Fast"
 msgstr "Roed"
 
 #. i18n: ectx: property (text), widget (QLabel, lblSmall)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:376
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:412
 #, kde-format
 msgctxt "make the file small, at the price of a longer saving time"
 msgid "Small"
 msgstr "Pitit"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBoxPixarLog)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:442
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:478
 #, kde-format
 msgid "Pixar Log Compression Options"
 msgstr "Tchuzes do strindaedje Pixar Log"
 
 #. i18n: ectx: property (text), widget (QLabel, lblFast_2)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:474
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:510
 #, kde-format
 msgctxt "save quickly, but do not compress a lot"
 msgid "Fast"
 msgstr "Roed"
 
 #. i18n: ectx: property (text), widget (QLabel, lblSmall_2)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:488
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:524
 #, kde-format
 msgctxt "make a very small file, but take a long time saving"
 msgid "Small"
@@ -47702,7 +47705,7 @@ msgctxt "Context: dynamic sensors"
 msgid "Tangential pressure"
 msgstr "Z- Asprouver pression"
 
-#: plugins/paintops/libpaintop/kis_filter_option.cpp:197
+#: plugins/paintops/libpaintop/kis_filter_option.cpp:198
 #, kde-format
 msgctxt "PaintOp instant preview limitation"
 msgid "\"%1\" does not support scaled preview (non-linear filter)"
