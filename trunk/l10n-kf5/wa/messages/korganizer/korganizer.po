@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-09-07 00:20+0000\n"
+"POT-Creation-Date: 2021-09-08 00:21+0000\n"
 "PO-Revision-Date: 2013-03-24 10:49+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -1987,10 +1987,10 @@ msgstr "Mostrer dins l' contecse"
 
 #: dialog/searchdialog.cpp:32
 #, fuzzy, kde-format
-#| msgid "New Calendar"
+#| msgid "Calendar"
 msgctxt "@title:window"
-msgid "Search Calendar"
-msgstr "Novea calindrî"
+msgid "Find in Calendars"
+msgstr "Calindrî"
 
 #: dialog/searchdialog.cpp:62
 #, fuzzy, kde-format
@@ -5514,16 +5514,18 @@ msgstr ""
 #. i18n: ectx: property (toolTip), widget (QLineEdit, searchEdit)
 #: ui/searchdialog_base.ui:49
 #, kde-format
-msgid "Search pattern, use wildcards '*' and '?' as desired."
+msgid "Search pattern. Use wildcards “*” and “?” as desired."
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QLineEdit, searchEdit)
 #: ui/searchdialog_base.ui:52
 #, kde-format
 msgid ""
-"Enter your search pattern here. Wildcards '*' (matches any string) and "
-"'?' (matches any character) are supported.  For example, to match any string "
-"starting with the letter 'a', use the search pattern a*."
+"Examine various fields to see if they contain the search pattern: The "
+"pattern “meet” would match “kick-off meeting”. Wildcards “*” (matches any "
+"number of characters) and “?” (matches any single character) are supported.  "
+"For example, the search pattern “meet*boss” matches “Meeting with boss”. The "
+"pattern “c?t” would match “cat”, “cot”, and so on."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLineEdit, searchEdit)
@@ -5541,16 +5543,18 @@ msgstr ""
 #. i18n: ectx: property (toolTip), widget (QCheckBox, eventsCheck)
 #: ui/searchdialog_base.ui:73
 #, kde-format
-msgid "Search for Events with matching criteria"
+msgid "Search for events with matching criteria."
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, eventsCheck)
 #: ui/searchdialog_base.ui:76
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@option:check"
+#| msgid "Show in the month view"
 msgid ""
-"Check this box if you want to search for Event items that match the search "
-"criteria."
-msgstr ""
+"Check this box if you want to search for events that match the search "
+"pattern and have start dates or end dates in the given date range."
+msgstr "Mostrer el vuwe pås moes"
 
 #. i18n: ectx: property (text), widget (QCheckBox, eventsCheck)
 #: ui/searchdialog_base.ui:79
@@ -5561,16 +5565,18 @@ msgstr ""
 #. i18n: ectx: property (toolTip), widget (QCheckBox, journalsCheck)
 #: ui/searchdialog_base.ui:89
 #, kde-format
-msgid "Search for Journals with matching criteria"
+msgid "Search for journal entries with matching criteria."
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, journalsCheck)
 #: ui/searchdialog_base.ui:92
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@option:check"
+#| msgid "Show in the month view"
 msgid ""
-"Check this box if you want to search for Journal items that match the search "
-"criteria."
-msgstr ""
+"Check this box if you want to search for journal entries that match the "
+"search pattern and have start dates in the given date range."
+msgstr "Mostrer el vuwe pås moes"
 
 #. i18n: ectx: property (text), widget (QCheckBox, journalsCheck)
 #: ui/searchdialog_base.ui:95
@@ -5581,16 +5587,18 @@ msgstr ""
 #. i18n: ectx: property (toolTip), widget (QCheckBox, todosCheck)
 #: ui/searchdialog_base.ui:102
 #, kde-format
-msgid "Search for To-dos with matching criteria"
+msgid "Search for to-dos with matching criteria."
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, todosCheck)
 #: ui/searchdialog_base.ui:105
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@option:check"
+#| msgid "Show in the month view"
 msgid ""
-"Check this box if you want to search To-do items that match the search "
-"criteria."
-msgstr ""
+"Check this box if you want to search for to-dos that match the search "
+"pattern and have due dates in the given date range."
+msgstr "Mostrer el vuwe pås moes"
 
 #. i18n: ectx: property (text), widget (QCheckBox, todosCheck)
 #: ui/searchdialog_base.ui:108
@@ -5608,7 +5616,7 @@ msgstr ""
 #: ui/searchdialog_base.ui:127
 #, fuzzy, kde-format
 #| msgid "Description"
-msgid "Include item tags in your search"
+msgid "Include tags in your search."
 msgstr "Discrijhaedje"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, categoryCheck)
@@ -5616,8 +5624,7 @@ msgstr "Discrijhaedje"
 #, fuzzy, kde-format
 #| msgctxt "@option:check"
 #| msgid "Show in the month view"
-msgid ""
-"Check this box if you want to match item tags against your search pattern."
+msgid "Check this box if you want to match tags against your search pattern."
 msgstr "Mostrer el vuwe pås moes"
 
 #. i18n: ectx: property (text), widget (QCheckBox, categoryCheck)
@@ -5628,17 +5635,19 @@ msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, locationCheck)
 #: ui/searchdialog_base.ui:140
-#, kde-format
-msgid "Include item locations in your search"
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Description"
+msgid "Include locations in your search."
+msgstr "Discrijhaedje"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, locationCheck)
 #: ui/searchdialog_base.ui:143
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@option:check"
+#| msgid "Show in the month view"
 msgid ""
-"Check this box if you want to match item locations against your search "
-"pattern."
-msgstr ""
+"Check this box if you want to match locations against your search pattern."
+msgstr "Mostrer el vuwe pås moes"
 
 #. i18n: ectx: property (text), widget (QCheckBox, locationCheck)
 #: ui/searchdialog_base.ui:146
@@ -5650,16 +5659,17 @@ msgstr ""
 #: ui/searchdialog_base.ui:153
 #, fuzzy, kde-format
 #| msgid "Description"
-msgid "Include item descriptions in your search"
+msgid "Include descriptions in your search."
 msgstr "Discrijhaedje"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, descriptionCheck)
 #: ui/searchdialog_base.ui:156
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@option:check"
+#| msgid "Show in the month view"
 msgid ""
-"Check this box if you want to match item descriptions against your search "
-"pattern."
-msgstr ""
+"Check this box if you want to match descriptions against your search pattern."
+msgstr "Mostrer el vuwe pås moes"
 
 #. i18n: ectx: property (text), widget (QCheckBox, descriptionCheck)
 #: ui/searchdialog_base.ui:159
@@ -5669,17 +5679,19 @@ msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, summaryCheck)
 #: ui/searchdialog_base.ui:166
-#, kde-format
-msgid "Include item summaries in your search"
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Description"
+msgid "Include summaries in your search."
+msgstr "Discrijhaedje"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, summaryCheck)
 #: ui/searchdialog_base.ui:169
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@option:check"
+#| msgid "Show in the month view"
 msgid ""
-"Check this box if you want to match item summaries against your search "
-"pattern."
-msgstr ""
+"Check this box if you want to match summaries against your search pattern."
+msgstr "Mostrer el vuwe pås moes"
 
 #. i18n: ectx: property (text), widget (QCheckBox, summaryCheck)
 #: ui/searchdialog_base.ui:172
@@ -5691,7 +5703,7 @@ msgstr ""
 #: ui/searchdialog_base.ui:182
 #, fuzzy, kde-format
 #| msgid "Description"
-msgid "Include item attendees in your search"
+msgid "Include attendees in your search."
 msgstr "Discrijhaedje"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, attendeeCheck)
@@ -5700,8 +5712,7 @@ msgstr "Discrijhaedje"
 #| msgctxt "@option:check"
 #| msgid "Show in the month view"
 msgid ""
-"Check this box if you want to match item attendees against your search "
-"pattern."
+"Check this box if you want to match attendees against your search pattern."
 msgstr "Mostrer el vuwe pås moes"
 
 #. i18n: ectx: property (text), widget (QCheckBox, attendeeCheck)
@@ -5727,14 +5738,13 @@ msgstr ""
 #: ui/searchdialog_base.ui:225
 #, fuzzy, kde-format
 #| msgid "Sets the Title of this event or to-do."
-msgid "Include items with a starting date on or after this date"
+msgid "The starting date of the period to search."
 msgstr "Defini l' tite di cist envenmint ou d' cist afé."
 
 #. i18n: ectx: property (whatsThis), widget (KDateComboBox, startDate)
 #: ui/searchdialog_base.ui:228
 #, kde-format
-msgid ""
-"Search for items with a starting date on or after the date you specify here."
+msgid "Search for items in the time period starting at the date given here."
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (KDateComboBox, startDate)
@@ -5752,59 +5762,62 @@ msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (KDateComboBox, endDate)
 #: ui/searchdialog_base.ui:263
-#, fuzzy, kde-format
-#| msgid "Sets the Title of this event or to-do."
-msgid "Include items with ending date on or before this date"
-msgstr "Defini l' tite di cist envenmint ou d' cist afé."
+#, kde-format
+msgid "The ending date of the period to search."
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (KDateComboBox, endDate)
 #: ui/searchdialog_base.ui:266
 #, kde-format
-msgid ""
-"Search for items with an ending date on or before the date you specify here."
+msgid "Search for items in the time period ending at the date given here."
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, inclusiveCheck)
 #: ui/searchdialog_base.ui:280
 #, kde-format
 msgid ""
-"Include Events only if their date range falls into the range specified above"
+"Display events only if their start date and end date are both in the date "
+"range specified."
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, inclusiveCheck)
 #: ui/searchdialog_base.ui:283
 #, kde-format
 msgid ""
-"Check this box if you want to include Events that occur within the date "
-"range specified.  Events that do not fall completely within the date range "
-"will be excluded from the search results."
+"Check this box if you only want to find events that occur entirely within "
+"the date range specified.  Events that start during the date range but end "
+"after it, or end during the date range but start before it, will be excluded "
+"from the search results."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, inclusiveCheck)
 #: ui/searchdialog_base.ui:286
 #, kde-format
-msgid "Include E&vents within the specified date range"
+msgid "Exclude e&vents that extend outside the specified date range"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, includeUndatedTodos)
 #: ui/searchdialog_base.ui:293
 #, kde-format
-msgid "Include To-dos in the search that do not have a due date"
+msgid ""
+"Include to-dos that have a start date, due date,  or completion date in the "
+"date range specified, or have neither a start date nor an end date."
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, includeUndatedTodos)
 #: ui/searchdialog_base.ui:296
-#, fuzzy, kde-format
-#| msgctxt "@option:check"
-#| msgid "Show in the month view"
+#, kde-format
 msgid ""
-"Check this box to include To-dos without a due date in the search results."
-msgstr "Mostrer el vuwe pås moes"
+"Check this box to search for to-dos that have a start date, due date, or "
+"completion date in the date range specified, or have neither a start date "
+"nor an end date.  If the box is unchecked, only to-dos that have a due date "
+"in the date range will be displayed."
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, includeUndatedTodos)
 #: ui/searchdialog_base.ui:299
 #, kde-format
-msgid "Include To-dos &without a due date"
+msgid "Include all to-dos &within the specified date range"
 msgstr ""
 
 #: views/collectionview/quickview.cpp:73 views/collectionview/quickview.cpp:77
@@ -6067,6 +6080,29 @@ msgstr ""
 msgctxt "4 digit year"
 msgid "%1"
 msgstr ""
+
+#, fuzzy
+#~| msgid "New Calendar"
+#~ msgctxt "@title:window"
+#~ msgid "Search Calendar"
+#~ msgstr "Novea calindrî"
+
+#, fuzzy
+#~| msgid "Sets the Title of this event or to-do."
+#~ msgid "Include items with a starting date on or after this date"
+#~ msgstr "Defini l' tite di cist envenmint ou d' cist afé."
+
+#, fuzzy
+#~| msgid "Sets the Title of this event or to-do."
+#~ msgid "Include items with ending date on or before this date"
+#~ msgstr "Defini l' tite di cist envenmint ou d' cist afé."
+
+#, fuzzy
+#~| msgctxt "@option:check"
+#~| msgid "Show in the month view"
+#~ msgid ""
+#~ "Check this box to include To-dos without a due date in the search results."
+#~ msgstr "Mostrer el vuwe pås moes"
 
 #~ msgctxt "@title:group"
 #~ msgid "Other Plugins"
@@ -7703,11 +7739,6 @@ msgstr ""
 #~| msgid "%1 after the start"
 #~ msgid "Name for this to-do list"
 #~ msgstr "%1 après l' cominçmint"
-
-#, fuzzy
-#~| msgid "Sets the Title of this event or to-do."
-#~ msgid "Starting date for the print"
-#~ msgstr "Defini l' tite di cist envenmint ou d' cist afé."
 
 #~ msgctxt "@title:window"
 #~ msgid "Reminders"
