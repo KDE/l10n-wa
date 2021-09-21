@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-06-26 00:19+0000\n"
+"POT-Creation-Date: 2021-09-21 00:18+0000\n"
 "PO-Revision-Date: 2010-10-22 18:27+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -58,46 +58,8 @@ msgstr ""
 msgid "Plasma 5 Port"
 msgstr ""
 
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AutomountEnabled)
-#: DeviceAutomounterKCM.ui:17
-#, kde-format
-msgid ""
-"When this is unchecked, no device automounting of any kind will happen, "
-"regardless of anything selected in the \"Device Overrides\" section."
-msgstr ""
-"Cwand çouci est disclitchî, i gn åré nou dismontaedje d' éndjin di tolminme "
-"kéne sôre ki s' ferè, minme s' i gn a åk di tchoezi el seccion "
-"\"Spotchaedjes d' éndjin\"."
-
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutomountEnabled)
-#: DeviceAutomounterKCM.ui:20
-#, kde-format
-msgid "Enable automatic mounting of removable media"
-msgstr "Mete en alaedje li montaedje otomatike des medias bodjåves"
-
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AutomountUnknownDevices)
-#: DeviceAutomounterKCM.ui:45
-#, kde-format
-msgid ""
-"When this is checked, only remembered devices will be automatically mounted. "
-"A device is 'remembered' if it has ever been mounted before. For instance, "
-"plugging in a USB media player to charge is not sufficient to 'remember' it "
-"- if the files are not accessed, it will not be automatically mounted the "
-"next time it is seen. Once they have been accessed, however, the device's "
-"contents will be automatically made available to the system."
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutomountUnknownDevices)
-#: DeviceAutomounterKCM.ui:48
-#, kde-format
-msgid ""
-"Only automatically mount removable media that has been manually mounted "
-"before"
-msgstr ""
-"Ni monter otomaticmint k' les medias bodjåves k' ont ddja stî montés al mwin"
-
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AutomountOnLogin)
-#: DeviceAutomounterKCM.ui:55
+#: DeviceAutomounterKCM.ui:19
 #, kde-format
 msgid ""
 "If any removable storage devices are connected to your system when you login "
@@ -106,14 +68,14 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutomountOnLogin)
-#: DeviceAutomounterKCM.ui:58
+#: DeviceAutomounterKCM.ui:22
 #, fuzzy, kde-format
 #| msgid "Mount all removable media at login"
-msgid "Automatically mount all removable media at login"
+msgid "Automatically mount removable medias at login"
 msgstr "Monter tos les medias bodjåves a l' elodjaedje"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AutomountOnPlugin)
-#: DeviceAutomounterKCM.ui:65
+#: DeviceAutomounterKCM.ui:29
 #, kde-format
 msgid ""
 "When this is checked, the contents of any storage device will automatically "
@@ -121,20 +83,42 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutomountOnPlugin)
-#: DeviceAutomounterKCM.ui:68
+#: DeviceAutomounterKCM.ui:32
 #, fuzzy, kde-format
 #| msgid "Automatically mount removable media when attached"
-msgid "Automatically mount all removable media when attached"
+msgid "Automatically mount removable medias when attached"
 msgstr "Monter otomaticmint les medias bodjåves cwand i sont stitchîs"
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: DeviceAutomounterKCM.ui:90
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AutomountUnknownDevices)
+#: DeviceAutomounterKCM.ui:39
+#, kde-format
+msgid ""
+"When this is not checked, only remembered devices will be automatically "
+"mounted. A device is 'remembered' if it has ever been mounted before. For "
+"instance, plugging in a USB media player to charge is not sufficient to "
+"'remember' it - if the files are not accessed, it will not be automatically "
+"mounted the next time it is seen. Once they have been accessed, however, the "
+"device's contents will be automatically made available to the system."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutomountUnknownDevices)
+#: DeviceAutomounterKCM.ui:42
+#, fuzzy, kde-format
+#| msgid ""
+#| "Only automatically mount removable media that has been manually mounted "
+#| "before"
+msgid "Automatically mount removable media that have never been mounted before"
+msgstr ""
+"Ni monter otomaticmint k' les medias bodjåves k' ont ddja stî montés al mwin"
+
+#. i18n: ectx: property (title), widget (QGroupBox, deviceGroupBox)
+#: DeviceAutomounterKCM.ui:80
 #, kde-format
 msgid "Automatic mount"
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QTreeView, deviceView)
-#: DeviceAutomounterKCM.ui:98
+#: DeviceAutomounterKCM.ui:88
 #, kde-format
 msgid ""
 "This list contains the storage devices known to the system. If \"Automount "
@@ -147,7 +131,7 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QPushButton, forgetDevice)
-#: DeviceAutomounterKCM.ui:137
+#: DeviceAutomounterKCM.ui:130
 #, kde-format
 msgid ""
 "Clicking this button causes the selected devices to be 'forgotten'. This is "
@@ -158,7 +142,7 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, forgetDevice)
-#: DeviceAutomounterKCM.ui:140
+#: DeviceAutomounterKCM.ui:133
 #, kde-format
 msgid "Forget Device"
 msgstr "Rovyî éndjin"
@@ -176,7 +160,7 @@ msgstr ""
 
 #: DeviceModel.cpp:56
 #, kde-format
-msgctxt "As in automoount on attach"
+msgctxt "As in automount on attach"
 msgid "On Attach"
 msgstr ""
 
@@ -214,6 +198,17 @@ msgstr "Éndjins stitchîs"
 #, kde-format
 msgid "Disconnected Devices"
 msgstr "Éndjins disraloyîs"
+
+#~ msgid ""
+#~ "When this is unchecked, no device automounting of any kind will happen, "
+#~ "regardless of anything selected in the \"Device Overrides\" section."
+#~ msgstr ""
+#~ "Cwand çouci est disclitchî, i gn åré nou dismontaedje d' éndjin di "
+#~ "tolminme kéne sôre ki s' ferè, minme s' i gn a åk di tchoezi el seccion "
+#~ "\"Spotchaedjes d' éndjin\"."
+
+#~ msgid "Enable automatic mounting of removable media"
+#~ msgstr "Mete en alaedje li montaedje otomatike des medias bodjåves"
 
 #~ msgid "Device Overrides"
 #~ msgstr "Spotchaedjes d' éndjin"
