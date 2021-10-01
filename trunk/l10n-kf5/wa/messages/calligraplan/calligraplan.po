@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplato\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-09-29 00:17+0000\n"
+"POT-Creation-Date: 2021-10-01 00:19+0000\n"
 "PO-Revision-Date: 2011-01-06 22:28+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -534,86 +534,69 @@ msgstr ""
 msgid "List of paths to project templates"
 msgstr ""
 
-#: config/ConfigDialog.cpp:34
+#. i18n: ectx: label, entry (AutoSave), group (Interface)
+#: calligraplansettings.kcfg:387
+#, kde-format
+msgid "Autosave interval"
+msgstr ""
+
+#. i18n: ectx: label, entry (CreateBackupFile), group (Interface)
+#: calligraplansettings.kcfg:391
+#, kde-format
+msgid "Create a backup file"
+msgstr ""
+
+#: config/ConfigDialog.cpp:36
 #, fuzzy, kde-format
 #| msgid "Task Defaults"
 msgid "Project Defaults"
 msgstr "Prémetous des bouyes"
 
-#: config/ConfigDialog.cpp:35 kptview.cpp:621
+#: config/ConfigDialog.cpp:37 kptview.cpp:621
 #, kde-format
 msgid "Work & Vacation"
 msgstr "Ovraedje eyet condjî"
 
-#: config/ConfigDialog.cpp:36
+#: config/ConfigDialog.cpp:38
 #, kde-format
 msgid "Task Defaults"
 msgstr "Prémetous des bouyes"
 
-#: config/ConfigDialog.cpp:37
+#: config/ConfigDialog.cpp:39
 #, fuzzy, kde-format
 #| msgid "Task Editor"
 msgid "Task Colors"
 msgstr "Candjeu d' bouye"
 
-#: config/ConfigDialog.cpp:39
+#: config/ConfigDialog.cpp:41
 #, fuzzy, kde-format
 #| msgid "Task Editor"
 msgid "Task Modules"
 msgstr "Candjeu d' bouye"
 
-#: config/ConfigDialog.cpp:43
+#: config/ConfigDialog.cpp:45
 #, kde-format
 msgid "Work Package"
 msgstr "Pacaedje d' ovraedje"
 
-#: config/ConfigDialog.cpp:44
-#, fuzzy, kde-format
-#| msgid "Duration"
-msgid "Documentation"
-msgstr "Tins k' ça dure"
-
-#: config/ConfigDialog.cpp:47
+#: config/ConfigDialog.cpp:48
 #, fuzzy, kde-format
 #| msgid "Create Report..."
 msgid "Project Templates"
 msgstr "Ahiver rapoirt..."
 
-#. i18n: ectx: property (whatsThis), widget (QLabel, leaderlabel)
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_Leader)
-#: config/ConfigDocumentationPanel.ui:40 config/kptconfigtaskpanelbase.ui:33
-#: config/kptconfigtaskpanelbase.ui:65
-#, kde-format
-msgid ""
-"The person responsible for this task.\n"
-"\n"
-"This is not limited to persons available in a resource group but can be "
-"anyone. You can even directly access your address book with the Choose "
-"button."
-msgstr ""
-"Li djin responsåve po cisse bouye.\n"
-"Ça n' est nén limité åzès djins k' i gn a dins on groupe di rsources mins ça "
-"pout esse tolminme kî. Vos ploz minme arinner direk vosse calpin d' adresses "
-"avou l' boton Tchoezi."
+#: config/ConfigDialog.cpp:54
+#, fuzzy, kde-format
+#| msgid "Documents"
+msgctxt "@title:tab Document settings page"
+msgid "Document"
+msgstr "Documints"
 
-#. i18n: ectx: property (text), widget (QLabel, leaderlabel)
-#: config/ConfigDocumentationPanel.ui:43
+#: config/ConfigDialog.cpp:58
 #, fuzzy, kde-format
 #| msgid "Duration"
-msgid "Documentation:"
+msgid "Documentation"
 msgstr "Tins k' ça dure"
-
-#. i18n: ectx: property (text), widget (QLabel, contextlabel)
-#: config/ConfigDocumentationPanel.ui:79
-#, kde-format
-msgid "Context help:"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, languageLabel)
-#: config/ConfigDocumentationPanel.ui:95
-#, kde-format
-msgid "Context language"
-msgstr ""
 
 #: config/ConfigProjectPanel.cpp:36
 #, kde-kuit-format
@@ -761,8 +744,8 @@ msgid "Week"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_GenerateHolidays)
-#: config/ConfigWorkVacationPanel.ui:73 kptmaindocument.cpp:1663
-#: kptmaindocument.cpp:1667
+#: config/ConfigWorkVacationPanel.ui:73 kptmaindocument.cpp:1680
+#: kptmaindocument.cpp:1684
 #, kde-format
 msgid "Holidays"
 msgstr ""
@@ -956,6 +939,22 @@ msgstr ""
 msgctxt "@title:tab"
 msgid "Milestone"
 msgstr "Gantt des etapes"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, leaderlabel)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_Leader)
+#: config/kptconfigtaskpanelbase.ui:33 config/kptconfigtaskpanelbase.ui:65
+#, kde-format
+msgid ""
+"The person responsible for this task.\n"
+"\n"
+"This is not limited to persons available in a resource group but can be "
+"anyone. You can even directly access your address book with the Choose "
+"button."
+msgstr ""
+"Li djin responsåve po cisse bouye.\n"
+"Ça n' est nén limité åzès djins k' i gn a dins on groupe di rsources mins ça "
+"pout esse tolminme kî. Vos ploz minme arinner direk vosse calpin d' adresses "
+"avou l' boton Tchoezi."
 
 #. i18n: ectx: property (text), widget (QLabel, leaderlabel)
 #: config/kptconfigtaskpanelbase.ui:36
@@ -1438,42 +1437,58 @@ msgstr ""
 "del modêye: %1)\n"
 "El drovi dins cisse modêye ci di KPlatoWork lyi frè piede des informåcions."
 
-#: kptmaindocument.cpp:1068 kptmaindocument.cpp:1116 kptmaindocument.cpp:1263
+#: kptmaindocument.cpp:1069 kptmaindocument.cpp:1280
 #, kde-format
 msgid "Internal error, failed to insert file."
 msgstr ""
 
-#: kptmaindocument.cpp:1294
+#: kptmaindocument.cpp:1131
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"Failed to load shared resources into project %1:<nl/>Internal error, failed "
+"to insert file."
+msgstr ""
+
+#: kptmaindocument.cpp:1141
+#, fuzzy, kde-kuit-format
+#| msgid "Delete resource"
+#| msgid_plural "Delete resources"
+msgctxt "@info"
+msgid "Failed to load shared resources into project %1:<nl/>%2"
+msgstr "Disfacer rissource"
+
+#: kptmaindocument.cpp:1311
 #, fuzzy
 #| msgid "Insert project"
 msgctxt "(qtundo-format)"
 msgid "Insert project"
 msgstr "Sititchî pordjet"
 
-#: kptmaindocument.cpp:1374
+#: kptmaindocument.cpp:1391
 #, kde-format
 msgid "Group: %1"
 msgstr ""
 
-#: kptmaindocument.cpp:1381
+#: kptmaindocument.cpp:1398
 #, fuzzy, kde-format
 #| msgid "Resources"
 msgid "Resource: %1"
 msgstr "Rissources"
 
-#: kptmaindocument.cpp:1386
+#: kptmaindocument.cpp:1403
 #, kde-format
 msgid "Calendar: %1"
 msgstr ""
 
-#: kptmaindocument.cpp:1393
+#: kptmaindocument.cpp:1410
 #, kde-format
 msgid ""
 "Shared resources has been removed from the shared resources file.\n"
 "Select how they shall be treated in this project."
 msgstr ""
 
-#: kptmaindocument.cpp:1396
+#: kptmaindocument.cpp:1413
 #, fuzzy, kde-kuit-format
 #| msgid "Delete resource"
 #| msgid_plural "Delete resources"
@@ -1481,17 +1496,17 @@ msgctxt "@title:window"
 msgid "Shared resources"
 msgstr "Disfacer rissource"
 
-#: kptmaindocument.cpp:1398
+#: kptmaindocument.cpp:1415
 #, kde-format
 msgid "Convert"
 msgstr ""
 
-#: kptmaindocument.cpp:1399
+#: kptmaindocument.cpp:1416
 #, kde-format
 msgid "Keep"
 msgstr ""
 
-#: kptmaindocument.cpp:1633
+#: kptmaindocument.cpp:1650
 #, kde-format
 msgctxt "Base calendar name"
 msgid "Base"
@@ -2351,6 +2366,11 @@ msgid "The description of the category"
 msgstr "Sôre d' avirance"
 
 #, fuzzy
+#~| msgid "Duration"
+#~ msgid "Documentation:"
+#~ msgstr "Tins k' ça dure"
+
+#, fuzzy
 #~| msgid "Delete resource"
 #~| msgid_plural "Delete resources"
 #~ msgid "Directory that contains projects that share resources"
@@ -2408,11 +2428,6 @@ msgstr "Sôre d' avirance"
 
 #~ msgid "Description..."
 #~ msgstr "Discrijhaedje..."
-
-#, fuzzy
-#~| msgid "Documents"
-#~ msgid "Documents..."
-#~ msgstr "Documints"
 
 #~ msgid "Indent Task"
 #~ msgstr "Mete e rtrait li bouye"
