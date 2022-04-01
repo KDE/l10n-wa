@@ -64,7 +64,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-03-31 00:41+0000\n"
+"POT-Creation-Date: 2022-04-01 00:47+0000\n"
 "PO-Revision-Date: 2011-01-17 21:35+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -14475,13 +14475,9 @@ msgctxt "The raw line data"
 msgid "Raw"
 msgstr "Airdiè"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, angularDistCombo)
-#. i18n: ectx: property (text), item, widget (QComboBox, radialDistCombo)
 #: libs/basicflakes/tools/KoPencilTool.cpp:302
 #: plugins/flake/pathshapes/spiral/SpiralShapeConfigWidget.cpp:16
 #: plugins/paintops/curvebrush/curve_paintop_plugin.cpp:29
-#: plugins/paintops/spray/wdgsprayoptions.ui:267
-#: plugins/paintops/spray/wdgsprayoptions.ui:362
 #, fuzzy, kde-format
 msgid "Curve"
 msgstr "E coube"
@@ -15619,9 +15615,7 @@ msgstr "Prémetou"
 msgid "Soft"
 msgstr "Doûce"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, radialDistCombo)
 #: libs/image/kis_base_mask_generator.h:25
-#: plugins/paintops/spray/wdgsprayoptions.ui:352
 #, fuzzy, kde-format
 msgid "Gaussian"
 msgstr "Flou di Gauss"
@@ -18073,7 +18067,7 @@ msgstr "Foû"
 msgid "Untitled"
 msgstr "sins no-1"
 
-#: libs/pigment/resources/KoStopGradient.cpp:377
+#: libs/pigment/resources/KoStopGradient.cpp:372
 #, kde-format
 msgid "SVG Gradient"
 msgstr "Gradyint SVG"
@@ -18116,9 +18110,9 @@ msgstr "Fitchîs sourdants:"
 #: libs/ui/animation/KisDlgImportVideoAnimation.cpp:579
 #: libs/ui/animation/KisDlgImportVideoAnimation.cpp:600
 #: libs/ui/animation/KisDlgImportVideoAnimation.cpp:607
-#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:708
-#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:766
-#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:791
+#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:676
+#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:716
+#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:776
 #: libs/ui/dialogs/kis_dlg_layer_style.cpp:354
 #: libs/ui/dialogs/kis_dlg_preferences.cc:664
 #: libs/ui/input/kis_tablet_debugger.cpp:96 libs/ui/kis_clipboard.cc:675
@@ -19429,28 +19423,28 @@ msgstr ""
 msgid "No FFMpeg found!"
 msgstr ""
 
-#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:708
-#, kde-format
-msgid "No video stream could be found!"
-msgstr ""
-
-#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:766
-#, fuzzy, kde-format
-msgid "Failed to load video information"
-msgstr "Dji n' a savou drovi li fitchî %1"
-
-#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:791
+#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:676
 #, fuzzy, kde-format
 #| msgid "Undefined operation in the %1 color space"
 msgid "Your FFMpeg version does not support this format"
 msgstr "Operåcion nén defineye dins l' espåce di coleurs %1"
 
-#: libs/ui/animation/KisFFMpegWrapper.cpp:305
+#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:716
+#, kde-format
+msgid "No video stream could be found!"
+msgstr ""
+
+#: libs/ui/animation/KisDlgImportVideoAnimation.cpp:776
+#, fuzzy, kde-format
+msgid "Failed to load video information"
+msgstr "Dji n' a savou drovi li fitchî %1"
+
+#: libs/ui/animation/KisFFMpegWrapper.cpp:329
 #, kde-format
 msgid "FFMpeg Crashed"
 msgstr ""
 
-#: libs/ui/animation/KisFFMpegWrapper.cpp:518
+#: libs/ui/animation/KisFFMpegWrapper.cpp:535
 #, kde-format
 msgctxt "Video information probing dialog. arg1: frame number."
 msgid "Loading video data... %1 frames examined."
@@ -26956,7 +26950,7 @@ msgstr "Lårdjeur d' imprimaedje:"
 msgid "Fit to Height"
 msgstr "Forrimpli l' lårdjeur del pådje"
 
-#: libs/ui/input/kis_zoom_and_rotate_action.cpp:33
+#: libs/ui/input/kis_zoom_and_rotate_action.cpp:34
 #, fuzzy, kde-format
 msgid "Zoom and Rotate Canvas"
 msgstr "Tourner l' imådje"
@@ -50279,8 +50273,18 @@ msgstr "Ingulaire"
 #: plugins/paintops/spray/wdgsprayoptions.ui:347
 #, fuzzy, kde-format
 #| msgid "Uniform random"
+msgctxt "Uniform distribution in spray engine"
 msgid "Uniform"
 msgstr "Erîlé a l' astcheyance"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, angularDistCombo)
+#. i18n: ectx: property (text), item, widget (QComboBox, radialDistCombo)
+#: plugins/paintops/spray/wdgsprayoptions.ui:267
+#: plugins/paintops/spray/wdgsprayoptions.ui:362
+#, fuzzy, kde-format
+msgctxt "Custom curve based distribution in spray engine"
+msgid "Curve"
+msgstr "E coube"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBoxRadialDistribution)
 #: plugins/paintops/spray/wdgsprayoptions.ui:322
@@ -50292,8 +50296,16 @@ msgid "Radial"
 msgstr "Radiå"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, radialDistCombo)
+#: plugins/paintops/spray/wdgsprayoptions.ui:352
+#, fuzzy, kde-format
+msgctxt "Gaussian distribution in spray engine"
+msgid "Gaussian"
+msgstr "Flou di Gauss"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, radialDistCombo)
 #: plugins/paintops/spray/wdgsprayoptions.ui:357
 #, fuzzy, kde-format
+msgctxt "Clustering based distribution in spray engine"
 msgid "Cluster"
 msgstr "Aclaper"
 
