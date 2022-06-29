@@ -64,7 +64,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-06-28 02:09+0000\n"
+"POT-Creation-Date: 2022-06-29 02:09+0000\n"
 "PO-Revision-Date: 2011-01-17 21:35+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -17398,7 +17398,7 @@ msgid "Onion Skins"
 msgstr "&Wårder li rapoirt lådjeur/hôteur"
 
 #: libs/image/kis_layer_properties_icons.cpp:27
-#: libs/resources/KisResourceModel.cpp:142
+#: libs/resources/KisResourceModel.cpp:143
 #: libs/resources/KisStorageModel.cpp:429
 #: libs/resourcewidgets/dbexplorer/DlgDbExplorer.cpp:72
 #, kde-format
@@ -17980,7 +17980,7 @@ msgstr "Transformer"
 #: libs/ui/kis_node_manager.cpp:1294
 #: plugins/impex/libkra/kis_kra_load_visitor.cpp:214
 #: plugins/impex/psd/psd_loader.cpp:380
-#: plugins/impex/tiff/kis_tiff_converter.cc:1296
+#: plugins/impex/tiff/kis_tiff_import.cc:541
 #: plugins/impex/xcf/kis_xcf_import.cpp:273
 #, kde-format
 msgid "Transparency Mask"
@@ -19704,19 +19704,19 @@ msgstr "Abaguer on documint"
 msgid "Could not synchronize %1 with the database"
 msgstr "Dji n' a savou radjouter l' coûtche a l' imådje."
 
-#: libs/resources/KisResourceModel.cpp:124
+#: libs/resources/KisResourceModel.cpp:125
 #: libs/resources/KisStorageModel.cpp:419
 #: libs/resourcewidgets/dbexplorer/DlgDbExplorer.cpp:66
 #, kde-format
 msgid "Id"
 msgstr ""
 
-#: libs/resources/KisResourceModel.cpp:126
+#: libs/resources/KisResourceModel.cpp:127
 #, kde-format
 msgid "Storage ID"
 msgstr ""
 
-#: libs/resources/KisResourceModel.cpp:128
+#: libs/resources/KisResourceModel.cpp:129
 #: libs/resources/KisStorageModel.cpp:433
 #: libs/resourcewidgets/dbexplorer/DlgDbExplorer.cpp:70
 #: plugins/python/filtermanager/components/filtermanagertreemodel.py:18
@@ -19726,20 +19726,20 @@ msgstr ""
 msgid "Name"
 msgstr "No"
 
-#: libs/resources/KisResourceModel.cpp:130
+#: libs/resources/KisResourceModel.cpp:131
 #, fuzzy, kde-format
 #| msgid "Filename"
 msgid "File Name"
 msgstr "No do fitchî"
 
-#: libs/resources/KisResourceModel.cpp:132
+#: libs/resources/KisResourceModel.cpp:133
 #, fuzzy, kde-format
 msgid "Tooltip"
 msgstr "&Usteyes"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, shapeBox)
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbType)
-#: libs/resources/KisResourceModel.cpp:134 libs/ui/imagesize/imagesize.xmlgui:4
+#: libs/resources/KisResourceModel.cpp:135 libs/ui/imagesize/imagesize.xmlgui:4
 #: plugins/extensions/imagesplit/imagesplit.xmlgui:4
 #: plugins/extensions/separate_channels/imageseparate.xmlgui:4
 #: plugins/paintops/libpaintop/kis_predefined_brush_chooser.cpp:404
@@ -19749,12 +19749,12 @@ msgstr "&Usteyes"
 msgid "Image"
 msgstr "Imådje"
 
-#: libs/resources/KisResourceModel.cpp:136
+#: libs/resources/KisResourceModel.cpp:137
 #, fuzzy, kde-format
 msgid "Status"
 msgstr "Mostrer l' coûtche raecene"
 
-#: libs/resources/KisResourceModel.cpp:138
+#: libs/resources/KisResourceModel.cpp:139
 #: libs/resources/KisStorageModel.cpp:423
 #: libs/resourcewidgets/KisIconToolTip.cpp:104
 #, fuzzy, kde-format
@@ -19763,19 +19763,19 @@ msgid "Location"
 msgstr "Tournaedje"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: libs/resources/KisResourceModel.cpp:140
+#: libs/resources/KisResourceModel.cpp:141
 #: libs/resourcewidgets/dbexplorer/WdgDbExplorer.ui:49
 #, fuzzy, kde-format
 msgid "Resource Type"
 msgstr "&Rissourses"
 
-#: libs/resources/KisResourceModel.cpp:144
+#: libs/resources/KisResourceModel.cpp:145
 #, fuzzy, kde-format
 #| msgid "For images"
 msgid "Storage Active"
 msgstr "Po ls imådjes"
 
-#: libs/resources/KisResourceModel.cpp:146
+#: libs/resources/KisResourceModel.cpp:147
 #, kde-format
 msgid "md5sum"
 msgstr ""
@@ -22710,7 +22710,7 @@ msgstr "Prôpietés del coûtche"
 #: plugins/impex/jxl/kis_wdg_options_jpegxl.ui:463
 #: plugins/impex/jxl/kis_wdg_options_jpegxl.ui:515
 #: plugins/impex/jxl/kis_wdg_options_jpegxl.ui:662
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:314
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:277
 #: plugins/impex/webp/dlg_webp_export.ui:79
 #: plugins/impex/webp/dlg_webp_export.ui:320
 #: plugins/impex/webp/dlg_webp_export.ui:343
@@ -27272,15 +27272,11 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QToolButton, btnNoFill)
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbGradientRepeat)
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbDecor)
-#. i18n: ectx: property (text), item, widget (KComboBox, kComboBoxCompressionType)
-#. i18n: ectx: property (text), item, widget (KComboBox, kComboBoxPredictor)
 #. i18n: ectx: property (text), widget (QLabel, lblNone)
 #: libs/ui/forms/wdgstrokeselectionproperties.ui:204
 #: libs/ui/widgets/KoFillConfigWidget.ui:41
 #: libs/ui/widgets/KoFillConfigWidget.ui:275
 #: plugins/filters/halftone/KisHalftoneConfigPageWidget.cpp:36
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:53
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:98
 #: plugins/impex/webp/dlg_webp_export.ui:439
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:441
 #, kde-format
@@ -31459,7 +31455,7 @@ msgstr ""
 #: libs/ui/layerstyles/wdgdropshadow.ui:50
 #: libs/ui/layerstyles/wdgInnerGlow.ui:279
 #: plugins/impex/jpeg/kis_wdg_options_jpeg.ui:75
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:273
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:236
 #: plugins/impex/webp/dlg_webp_export.ui:68
 #, fuzzy, kde-format
 msgid "Quality"
@@ -33869,44 +33865,44 @@ msgstr "Coleur di dvant"
 msgid "Background color selector"
 msgstr "Coleur do fond"
 
-#: libs/ui/widgets/KoFillConfigWidget.cpp:271
+#: libs/ui/widgets/KoFillConfigWidget.cpp:260
 #, fuzzy, kde-format
 msgid "Change the filling color"
 msgstr "Candjî mwaisse pådje"
 
-#: libs/ui/widgets/KoFillConfigWidget.cpp:304
+#: libs/ui/widgets/KoFillConfigWidget.cpp:293
 #, fuzzy, kde-format
 msgid "Change filling gradient"
 msgstr "Candjî mwaisse pådje"
 
-#: libs/ui/widgets/KoFillConfigWidget.cpp:653
+#: libs/ui/widgets/KoFillConfigWidget.cpp:637
 #, fuzzy, kde-format
 #| msgid "Gradient"
 msgctxt "default prefix for the saved gradient"
 msgid "gradient"
 msgstr "Gradyint"
 
-#: libs/ui/widgets/KoFillConfigWidget.cpp:662
+#: libs/ui/widgets/KoFillConfigWidget.cpp:646
 #, fuzzy, kde-format
 #| msgid "SVG Gradient"
 msgctxt "@title:window"
 msgid "Save Gradient"
 msgstr "Gradyint SVG"
 
-#: libs/ui/widgets/KoFillConfigWidget.cpp:663
+#: libs/ui/widgets/KoFillConfigWidget.cpp:647
 #, fuzzy, kde-format
 #| msgid "Enter group name:"
 msgid "Enter gradient name:"
 msgstr "Tapez li no do hopea:"
 
-#: libs/ui/widgets/KoFillConfigWidget.cpp:670
+#: libs/ui/widgets/KoFillConfigWidget.cpp:654
 #: plugins/dockers/tasksetdocker/tasksetdocker_dock.cpp:204
 #, kde-format
 msgctxt "@title:window"
 msgid "Name Already Exists"
 msgstr ""
 
-#: libs/ui/widgets/KoFillConfigWidget.cpp:671
+#: libs/ui/widgets/KoFillConfigWidget.cpp:655
 #: plugins/dockers/tasksetdocker/tasksetdocker_dock.cpp:205
 #, fuzzy, kde-format
 #| msgid ""
@@ -45814,7 +45810,7 @@ msgstr ""
 #. i18n: ectx: property (toolTip), widget (QCheckBox, chkLossless)
 #: plugins/impex/exr/exr_export_widget.ui:27
 #: plugins/impex/heif/WdgHeifExport.ui:148
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:181
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:144
 #, kde-format
 msgid ""
 "This option will merge all layers. It is advisable to check this option, "
@@ -45824,7 +45820,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, flatten)
 #. i18n: ectx: property (text), widget (QCheckBox, chkFlatten)
 #: plugins/impex/exr/exr_export_widget.ui:30
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:184
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:147
 #, kde-format
 msgid "Flatten the &image"
 msgstr "Asplati l' &imådje"
@@ -46296,7 +46292,7 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkSaveProfile)
 #: plugins/impex/jpeg/kis_wdg_options_jpeg.ui:132
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:194
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:157
 #, fuzzy, kde-format
 msgid "Save ICC Profile"
 msgstr "Profil del coûtche:"
@@ -46421,22 +46417,28 @@ msgstr ""
 msgid "Sign with Author Profile Data"
 msgstr "Mete en ouve profil"
 
-#: plugins/impex/jxl/JPEGXLImport.cpp:244
+#: plugins/impex/jxl/JPEGXLImport.cpp:245
 #, fuzzy, kde-format
 msgctxt "JPEG-XL errors"
 msgid "Unable to read the image profile."
 msgstr "Dji n' a savou radjouter l' coûtche a l' imådje."
 
-#: plugins/impex/jxl/JPEGXLImport.cpp:256
+#: plugins/impex/jxl/JPEGXLImport.cpp:257
 #, kde-format
 msgctxt "JPEG-XL errors"
 msgid "JPEG-XL encoded profile not implemented"
 msgstr ""
 
-#: plugins/impex/jxl/JPEGXLImport.cpp:300
+#: plugins/impex/jxl/JPEGXLImport.cpp:292
 #, kde-format
 msgctxt "JPEG-XL errors"
 msgid "JPEG-XL image is animated, but cannot retrieve animation frame header."
+msgstr ""
+
+#: plugins/impex/jxl/JPEGXLImport.cpp:320
+#, kde-format
+msgctxt "JPEG-XL errors"
+msgid "The animation declares a frame rate of more than 240 FPS."
 msgstr ""
 
 #: plugins/impex/jxl/kis_wdg_options_jpegxl.cpp:22
@@ -47647,7 +47649,7 @@ msgstr "Oister profil"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, alpha)
 #: plugins/impex/png/kis_wdg_options_png.ui:73
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:164
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:127
 #, kde-format
 msgid "Disable to get smaller files if your image has no transparency"
 msgstr ""
@@ -47656,7 +47658,7 @@ msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, alpha)
 #: plugins/impex/png/kis_wdg_options_png.ui:77
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:168
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:131
 #, kde-format
 msgid ""
 "<p>The Portable Network Graphics (PNG) file format allows transparency in "
@@ -47705,14 +47707,14 @@ msgstr "Mete en ouve profil"
 #: plugins/impex/png/kis_wdg_options_png.ui:186
 #: plugins/impex/qimageio/kis_wdg_options_qimageio.ui:42
 #: plugins/impex/qimageio/kis_wdg_options_qimageio.ui:62
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:376
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:395
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:409
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:429
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:488
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:507
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:521
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:541
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:339
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:358
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:372
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:392
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:451
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:470
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:484
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:504
 #, fuzzy, kde-format
 msgid ""
 "<p>Adjust the compression time. Better compression takes longer.\n"
@@ -47764,10 +47766,10 @@ msgstr "Schaper come PNG indecsé, si possibe"
 #. i18n: ectx: property (toolTip), widget (KisDoubleSliderSpinBox, compressionLevel)
 #: plugins/impex/png/kis_wdg_options_png.ui:144
 #: plugins/impex/png/kis_wdg_options_png.ui:182
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:372
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:425
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:484
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:537
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:335
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:388
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:447
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:500
 #, kde-format
 msgid "Note: the compression level does not change the quality of the result"
 msgstr "Note : li livea d' rastrindaedje ni candje nén l' cwålité do rzultat"
@@ -48661,6 +48663,72 @@ msgstr "Abaguer imådje"
 msgid "Enter preferred resolution (PPI) for \"%1\""
 msgstr ""
 
+#: plugins/impex/tiff/kis_dlg_options_tiff.cpp:38
+#: plugins/impex/tiff/kis_dlg_options_tiff.cpp:58
+#, fuzzy, kde-format
+#| msgid "None"
+msgctxt "TIFF options"
+msgid "None"
+msgstr "Nouk"
+
+#: plugins/impex/tiff/kis_dlg_options_tiff.cpp:40
+#, fuzzy, kde-format
+#| msgid "JPEG DCT Compression"
+msgctxt "TIFF options"
+msgid "JPEG DCT compression"
+msgstr "Strindaedje JPEG DCT"
+
+#: plugins/impex/tiff/kis_dlg_options_tiff.cpp:42
+#, fuzzy, kde-format
+#| msgid "Deflate (ZIP)"
+msgctxt "TIFF options"
+msgid "Deflate (ZIP)"
+msgstr "Deflate (ZIP)"
+
+#: plugins/impex/tiff/kis_dlg_options_tiff.cpp:45
+#, fuzzy, kde-format
+#| msgid "Lempel-Ziv & Welch (LZW)"
+msgctxt "TIFF options"
+msgid "Lempel-Ziv & Welch"
+msgstr "Lempel-Ziv & Welch (LZW)"
+
+#: plugins/impex/tiff/kis_dlg_options_tiff.cpp:47
+#, fuzzy, kde-format
+#| msgid "Pixar Log"
+msgctxt "TIFF options"
+msgid "Pixar Log"
+msgstr "Pixar Log"
+
+#: plugins/impex/tiff/kis_dlg_options_tiff.cpp:60
+#, fuzzy, kde-format
+#| msgid "Horizontal Differencing"
+msgctxt "TIFF options"
+msgid "Horizontal Differencing"
+msgstr "Fijhaedje di diferince di coutchî:"
+
+#: plugins/impex/tiff/kis_dlg_options_tiff.cpp:63
+#, fuzzy, kde-format
+#| msgid "Floating Point Horizontal Differencing"
+msgctxt "TIFF options"
+msgid "Floating Point Horizontal Differencing"
+msgstr "Fijhaedje di diferince di flotant coma di coutchî"
+
+#: plugins/impex/tiff/kis_tiff_import.cc:1017
+#, kde-format
+msgctxt "TIFF errors"
+msgid ""
+"This TIFF file is compressed with JPEG, but libjpeg-turbo could not load its "
+"coefficient quantization and/or Huffman coding tables. Please upgrade your "
+"version of libjpeg-turbo and try again."
+msgstr ""
+
+#: plugins/impex/tiff/kis_tiff_import.cc:1120
+#: plugins/impex/tiff/kis_tiff_import.cc:1303
+#, kde-format
+msgctxt "TIFF"
+msgid "Subsampled YCbCr TIFF files compressed with JPEG cannot be loaded."
+msgstr ""
+
 #. i18n: ectx: property (windowTitle), widget (QWidget, KisWdgOptionsTIFF)
 #. i18n: ectx: property (title), widget (QGroupBox, tiffOptions)
 #: plugins/impex/tiff/kis_wdg_options_tiff.ui:30
@@ -48676,156 +48744,120 @@ msgstr "Tchuzes TIFF"
 msgid "Compression type"
 msgstr "Sôre di strindaedje:"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kComboBoxCompressionType)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:58
-#, kde-format
-msgid "JPEG DCT Compression"
-msgstr "Strindaedje JPEG DCT"
-
-#. i18n: ectx: property (text), item, widget (KComboBox, kComboBoxCompressionType)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:63
-#, kde-format
-msgid "Deflate (ZIP)"
-msgstr "Deflate (ZIP)"
-
-#. i18n: ectx: property (text), item, widget (KComboBox, kComboBoxCompressionType)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:68
-#, kde-format
-msgid "Lempel-Ziv & Welch (LZW)"
-msgstr "Lempel-Ziv & Welch (LZW)"
-
-#. i18n: ectx: property (text), item, widget (KComboBox, kComboBoxCompressionType)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:73
-#, kde-format
-msgid "Pixar Log"
-msgstr "Pixar Log"
-
 #. i18n: ectx: property (text), widget (QLabel, lblPredictor)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:81
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:56
 #, fuzzy, kde-format
 #| msgid "Predictor:"
 msgctxt "TIFF encoder options"
 msgid "Predictor"
 msgstr "Predijheu:"
 
-#. i18n: ectx: property (toolTip), widget (KComboBox, kComboBoxPredictor)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:91
+#. i18n: ectx: property (toolTip), widget (QComboBox, kComboBoxPredictor)
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:69
 #, kde-format
 msgid ""
 "Using a predictor can improve the compression (mostly for LZW and deflate.)"
 msgstr ""
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kComboBoxPredictor)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:103
-#, kde-format
-msgid "Horizontal Differencing"
-msgstr "Fijhaedje di diferince di coutchî:"
-
-#. i18n: ectx: property (text), item, widget (KComboBox, kComboBoxPredictor)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:108
-#, kde-format
-msgid "Floating Point Horizontal Differencing"
-msgstr "Fijhaedje di diferince di flotant coma di coutchî"
-
 #. i18n: ectx: property (title), widget (QGroupBox, chkPhotoshop)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:116
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:79
 #, fuzzy, kde-format
 msgid "Save layers as Photoshop"
 msgstr "Schaper coûtche come imådje..."
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:125
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:88
 #, fuzzy, kde-format
 msgid "Layer compression"
 msgstr "Rastrinde:"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kComboBoxPSDCompressionType)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:136
+#. i18n: ectx: property (text), item, widget (QComboBox, kComboBoxPSDCompressionType)
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:99
 #, kde-format
 msgid "RLE"
 msgstr ""
 
-#. i18n: ectx: property (text), item, widget (KComboBox, kComboBoxPSDCompressionType)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:141
+#. i18n: ectx: property (text), item, widget (QComboBox, kComboBoxPSDCompressionType)
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:104
 #, kde-format
 msgid "ZIP"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, alpha)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:171
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:134
 #, kde-format
 msgid "Store alpha &channel (transparency)"
 msgstr "Wårder &canå alfa (weyoûte)"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBoxJPEG)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:267
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:230
 #, kde-format
 msgid "JPEG Compression Options"
 msgstr "Tchuzes do strindaedje JPEG"
 
 #. i18n: ectx: property (text), widget (QLabel, lblSmallest)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:288
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:251
 #, kde-format
 msgid "Smallest"
 msgstr "Li pus ptit"
 
 #. i18n: ectx: property (text), widget (QLabel, lblBest)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:298
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:261
 #: plugins/impex/webp/dlg_webp_export.ui:446
 #, kde-format
 msgid "Best"
 msgstr "Li meyeus"
 
 #. i18n: ectx: property (toolTip), widget (KisSliderSpinBox, qualityLevel)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:311
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:274
 #, kde-format
 msgid ""
 "These settings determine how much information is lost during compression"
 msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBoxDeflate)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:366
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:329
 #, kde-format
 msgid "Deflate Compression Options"
 msgstr "Tchuzes do strindaedje Deflate"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:379
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:491
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:342
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:454
 #, kde-format
 msgid "Compress:"
 msgstr "Rastrinde:"
 
 #. i18n: ectx: property (text), widget (QLabel, lblFast)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:398
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:361
 #, kde-format
 msgctxt "save the file quickly, but do not compress very well"
 msgid "Fast"
 msgstr "Roed"
 
 #. i18n: ectx: property (text), widget (QLabel, lblSmall)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:412
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:375
 #, kde-format
 msgctxt "make the file small, at the price of a longer saving time"
 msgid "Small"
 msgstr "Pitit"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBoxPixarLog)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:478
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:441
 #, kde-format
 msgid "Pixar Log Compression Options"
 msgstr "Tchuzes do strindaedje Pixar Log"
 
 #. i18n: ectx: property (text), widget (QLabel, lblFast_2)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:510
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:473
 #, kde-format
 msgctxt "save quickly, but do not compress a lot"
 msgid "Fast"
 msgstr "Roed"
 
 #. i18n: ectx: property (text), widget (QLabel, lblSmall_2)
-#: plugins/impex/tiff/kis_wdg_options_tiff.ui:524
+#: plugins/impex/tiff/kis_wdg_options_tiff.ui:487
 #, kde-format
 msgctxt "make a very small file, but take a long time saving"
 msgid "Small"
