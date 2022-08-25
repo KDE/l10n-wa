@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-07-29 00:46+0000\n"
+"POT-Creation-Date: 2022-08-25 00:47+0000\n"
 "PO-Revision-Date: 2009-08-20 10:18+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -205,7 +205,7 @@ msgstr "ms"
 msgid "Deleted"
 msgstr "Disfacer"
 
-#: kernel/kptglobal.cpp:20 kernel/kptnode.cpp:668 kernel/kptschedule.cpp:1905
+#: kernel/kptglobal.cpp:20 kernel/kptnode.cpp:668 kernel/kptschedule.cpp:1906
 #: models/kptschedulemodel.cpp:840
 #, kde-format
 msgid "Not scheduled"
@@ -249,8 +249,14 @@ msgstr "Efoirt"
 msgid "Scheduling error"
 msgstr "Djournå d' programaedje"
 
+#: kernel/kptglobal.cpp:36
+#, kde-format
+msgctxt "project scheduling canceled by user"
+msgid "Canceled"
+msgstr ""
+
 #. i18n: ectx: property (text), item, widget (KComboBox, risk)
-#: kernel/kptnode.cpp:142 kernel/kptnode.cpp:1706 kernel/WorkPackage.cpp:132
+#: kernel/kptnode.cpp:142 kernel/kptnode.cpp:1705 kernel/WorkPackage.cpp:132
 #: models/kptcalendarmodel.cpp:418 models/kptcalendarmodel.cpp:438
 #: models/kptnodeitemmodel.cpp:423 models/kptnodeitemmodel.cpp:439
 #: models/kptnodeitemmodel.cpp:449 models/kptnodeitemmodel.cpp:672
@@ -354,7 +360,7 @@ msgstr ""
 
 #. i18n: ectx: property (text), item, widget (KComboBox, estimateType)
 #. i18n: ectx: property (title), widget (QGroupBox, ui_effort)
-#: kernel/kptnode.cpp:1673 ui/kpttaskgeneralpanelbase.ui:462
+#: kernel/kptnode.cpp:1672 ui/kpttaskgeneralpanelbase.ui:462
 #: ui/performance/PerformanceStatusViewSettingsPanel.ui:142
 #: ui/TasksGeneralPanel.ui:414
 #, kde-format
@@ -362,208 +368,214 @@ msgid "Effort"
 msgstr "Efoirt"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, estimateType)
-#: kernel/kptnode.cpp:1674 ui/kpttaskgeneralpanelbase.ui:467
+#: kernel/kptnode.cpp:1673 ui/kpttaskgeneralpanelbase.ui:467
 #: ui/TasksGeneralPanel.ui:419
 #, kde-format
 msgid "Duration"
 msgstr "Durêye"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, risk)
-#: kernel/kptnode.cpp:1707 ui/kpttaskgeneralpanelbase.ui:391
+#: kernel/kptnode.cpp:1706 ui/kpttaskgeneralpanelbase.ui:391
 #: ui/TasksGeneralPanel.ui:343
 #, kde-format
 msgid "Low"
 msgstr "Bas"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, risk)
-#: kernel/kptnode.cpp:1708 ui/kpttaskgeneralpanelbase.ui:396
+#: kernel/kptnode.cpp:1707 ui/kpttaskgeneralpanelbase.ui:396
 #: ui/TasksGeneralPanel.ui:348
 #, kde-format
 msgid "High"
 msgstr "Hôt"
 
-#: kernel/kptproject.cpp:275 kernel/kptproject.cpp:381
-#: kernel/kptproject.cpp:411
+#: kernel/kptproject.cpp:277 kernel/kptproject.cpp:389
+#: kernel/kptproject.cpp:421
 #, fuzzy, kde-format
 msgid "Init"
 msgstr "Iniciåles:"
 
-#: kernel/kptproject.cpp:276
+#: kernel/kptproject.cpp:278
 #, kde-format
 msgid "Schedule project from: %1"
 msgstr "Programer pordjet a pårti di: %1"
 
-#: kernel/kptproject.cpp:281 kernel/kptproject.cpp:387
-#: kernel/kptproject.cpp:421
+#: kernel/kptproject.cpp:283 kernel/kptproject.cpp:395
+#: kernel/kptproject.cpp:431
 #, fuzzy, kde-format
 msgctxt "Schedule project forward"
 msgid "Forward"
 msgstr "En avant"
 
-#: kernel/kptproject.cpp:282
+#: kernel/kptproject.cpp:284
 #, fuzzy, kde-format
 msgid "Calculate finish"
 msgstr "Cårculer"
 
-#: kernel/kptproject.cpp:287 kernel/kptproject.cpp:393
-#: kernel/kptproject.cpp:415
+#: kernel/kptproject.cpp:289 kernel/kptproject.cpp:401
+#: kernel/kptproject.cpp:425
 #, kde-format
 msgctxt "Schedule project backward"
 msgid "Backward"
 msgstr "En erî"
 
-#: kernel/kptproject.cpp:288
+#: kernel/kptproject.cpp:290
 #, fuzzy, kde-format
 msgid "Calculate start"
 msgstr "Cårculer"
 
-#: kernel/kptproject.cpp:291 kernel/kptproject.cpp:396
-#: kernel/kptproject.cpp:425 models/reportgenerator/ReportGeneratorOdt.cpp:161
+#: kernel/kptproject.cpp:293 kernel/kptproject.cpp:405
+#: kernel/kptproject.cpp:435 models/reportgenerator/ReportGeneratorOdt.cpp:161
 #, fuzzy, kde-format
 msgid "Schedule"
 msgstr "Programaedje:"
 
-#: kernel/kptproject.cpp:292 kernel/kptproject.cpp:397
+#: kernel/kptproject.cpp:294 kernel/kptproject.cpp:406
 #, kde-format
 msgid "Schedule tasks forward"
 msgstr "Programer bouyes en avant"
 
-#: kernel/kptproject.cpp:294 kernel/kptproject.cpp:400
+#: kernel/kptproject.cpp:297 kernel/kptproject.cpp:467
+#, fuzzy, kde-format
+#| msgid "Scheduling Log"
+msgid "Scheduling canceled"
+msgstr "Djournå d' programaedje"
+
+#: kernel/kptproject.cpp:299 kernel/kptproject.cpp:409
 #, fuzzy, kde-format
 msgid "Scheduled finish: %1"
 msgstr "Programaedje:"
 
-#: kernel/kptproject.cpp:296 kernel/kptproject.cpp:403
+#: kernel/kptproject.cpp:301 kernel/kptproject.cpp:412
 #, kde-format
 msgid "Could not finish project in time: %1"
 msgstr "Dji n' a savou fini l' pordjet a tinzayeure: %1"
 
-#: kernel/kptproject.cpp:298 kernel/kptproject.cpp:405
+#: kernel/kptproject.cpp:303 kernel/kptproject.cpp:414
 #, kde-format
 msgid "Finished project exactly on time: %1"
 msgstr "Pordjet fini ttafwaitmint a tinzayeure: %1"
 
-#: kernel/kptproject.cpp:300 kernel/kptproject.cpp:407
+#: kernel/kptproject.cpp:305 kernel/kptproject.cpp:416
 #, kde-format
 msgid "Finished project before time: %1"
 msgstr "Pordjet fini divant tins: %1"
 
-#: kernel/kptproject.cpp:382
+#: kernel/kptproject.cpp:390
 #, kde-format
 msgid "Schedule project forward from: %1"
 msgstr "Programer en avant li pordjet di: %1"
 
-#: kernel/kptproject.cpp:388 kernel/kptproject.cpp:422
+#: kernel/kptproject.cpp:396 kernel/kptproject.cpp:432
 #, fuzzy, kde-format
 msgid "Calculate late finish"
 msgstr "Cårculer"
 
-#: kernel/kptproject.cpp:391 kernel/kptproject.cpp:424
+#: kernel/kptproject.cpp:399 kernel/kptproject.cpp:434
 #, fuzzy, kde-format
 #| msgid "Early finish calculated: %1"
 msgid "Late finish calculated: %1"
 msgstr "Timpe finixhaedje cårculé: %1"
 
-#: kernel/kptproject.cpp:394 kernel/kptproject.cpp:416
+#: kernel/kptproject.cpp:402 kernel/kptproject.cpp:426
 #, fuzzy, kde-format
 msgid "Calculate early start"
 msgstr "Cårculer"
 
-#: kernel/kptproject.cpp:412
+#: kernel/kptproject.cpp:422
 #, kde-format
 msgid "Schedule project backward from: %1"
 msgstr "Programer en erî li pordjet di: %1"
 
-#: kernel/kptproject.cpp:419
+#: kernel/kptproject.cpp:429
 #, fuzzy, kde-format
 #| msgid "Late start calculated: %1"
 msgid "Early start calculated: %1"
 msgstr "Tård cominçmint cårculé: %1"
 
-#: kernel/kptproject.cpp:426
+#: kernel/kptproject.cpp:436
 #, kde-format
 msgid "Schedule tasks backward"
 msgstr "Programer en erî les bouyes"
 
-#: kernel/kptproject.cpp:440
+#: kernel/kptproject.cpp:451
 #, kde-format
 msgid "Failed to finish project within target time"
 msgstr "Li finixhaedje do pordjet divant l' date/eure såme a fwait berwete"
 
-#: kernel/kptproject.cpp:443
+#: kernel/kptproject.cpp:454
 #, kde-format
 msgid "Scheduled start: %1, target time: %2"
 msgstr "Date/eure di cominçmint: %1, date/eure såme: %2"
 
-#: kernel/kptproject.cpp:446
+#: kernel/kptproject.cpp:457
 #, kde-format
 msgid "Must start project early in order to finish in time: %1"
 msgstr "I fåt ataker l' pordjet timpe po fini a tinzayeure: %1"
 
-#: kernel/kptproject.cpp:448
+#: kernel/kptproject.cpp:459
 #, kde-format
 msgid "Start project exactly on time: %1"
 msgstr "Ataker pordjet ttafwaitmint a tinzayeure: %1"
 
-#: kernel/kptproject.cpp:450
+#: kernel/kptproject.cpp:461
 #, kde-format
 msgid "Can start project later than time: %1"
 msgstr "On n' sait ataker l' pordjet pus tård kel date/eure: %1"
 
-#: kernel/kptproject.cpp:454
+#: kernel/kptproject.cpp:469
 #, kde-format
 msgid "Calculation took: %1"
 msgstr ""
 
-#: kernel/kptproject.cpp:855
+#: kernel/kptproject.cpp:871
 #, fuzzy, kde-format
 #| msgid "Schedule tasks forward"
 msgid "Start calculating forward"
 msgstr "Programer bouyes en avant"
 
-#: kernel/kptproject.cpp:916
+#: kernel/kptproject.cpp:932
 #, fuzzy, kde-format
 #| msgid "Early finish calculated: %1"
 msgid "Finished calculating forward: %1 ms"
 msgstr "Timpe finixhaedje cårculé: %1"
 
-#: kernel/kptproject.cpp:934
+#: kernel/kptproject.cpp:950
 #, fuzzy, kde-format
 #| msgid "Schedule tasks backward"
 msgid "Start calculating backward"
 msgstr "Programer en erî les bouyes"
 
-#: kernel/kptproject.cpp:991
+#: kernel/kptproject.cpp:1007
 #, fuzzy, kde-format
 #| msgid "Early finish calculated: %1"
 msgid "Finished calculating backward: %1 ms"
 msgstr "Timpe finixhaedje cårculé: %1"
 
-#: kernel/kptproject.cpp:1007
+#: kernel/kptproject.cpp:1023
 #, fuzzy, kde-format
 #| msgid "Schedule tasks forward"
 msgid "Start scheduling forward"
 msgstr "Programer bouyes en avant"
 
-#: kernel/kptproject.cpp:1041
+#: kernel/kptproject.cpp:1057
 #, fuzzy, kde-format
 #| msgid "Early finish calculated: %1"
 msgid "Finished scheduling forward: %1 ms"
 msgstr "Timpe finixhaedje cårculé: %1"
 
-#: kernel/kptproject.cpp:1061
+#: kernel/kptproject.cpp:1077
 #, fuzzy, kde-format
 #| msgid "Schedule tasks backward"
 msgid "Start scheduling backward"
 msgstr "Programer en erî les bouyes"
 
-#: kernel/kptproject.cpp:1082
+#: kernel/kptproject.cpp:1098
 #, fuzzy, kde-format
 #| msgid "Early finish calculated: %1"
 msgid "Finished scheduling backward: %1 ms"
 msgstr "Timpe finixhaedje cårculé: %1"
 
-#: kernel/kptproject.cpp:3356
+#: kernel/kptproject.cpp:3383
 #, fuzzy, kde-format
 msgid "Plan"
 msgstr "Parint"
@@ -596,13 +608,13 @@ msgstr ""
 msgid "Deviation match: granularity: %1, deviation: %2"
 msgstr ""
 
-#: kernel/kptresourcerequest.cpp:1004
+#: kernel/kptresourcerequest.cpp:1005
 #, fuzzy, kde-format
 #| msgid "Could not match effort. Want: %1 got: %2"
 msgid "Could not match effort. Want: %1 got: %2 (%3)"
 msgstr "Dji n' a savou fé coresponde l' efoirt. Djovleu: %1, dj' a yeu: %2"
 
-#: kernel/kptresourcerequest.cpp:1007
+#: kernel/kptresourcerequest.cpp:1008
 #, kde-format
 msgid "Resource %1 available from %2 to %3"
 msgstr "Rissource %1 disponibe di %2 a %3"
@@ -612,22 +624,22 @@ msgstr "Rissource %1 disponibe di %2 a %3"
 msgid "Expected"
 msgstr "Ratindou "
 
-#: kernel/kptschedule.cpp:1571
+#: kernel/kptschedule.cpp:1572
 #, kde-format
 msgid "Debug"
 msgstr ""
 
-#: kernel/kptschedule.cpp:1572
+#: kernel/kptschedule.cpp:1573
 #, kde-format
 msgid "Info"
 msgstr "Informåcion"
 
-#: kernel/kptschedule.cpp:1573 main/KoMainWindow.cpp:1757
+#: kernel/kptschedule.cpp:1574 main/KoMainWindow.cpp:1759
 #, kde-format
 msgid "Warning"
 msgstr "Asteme"
 
-#: kernel/kptschedule.cpp:1574 kernel/kptschedule.cpp:1909
+#: kernel/kptschedule.cpp:1575 kernel/kptschedule.cpp:1910
 #: models/kptnodeitemmodel.cpp:1699 models/kptnodeitemmodel.cpp:1732
 #: models/kptnodeitemmodel.cpp:1765 models/kptnodeitemmodel.cpp:1798
 #: models/kptnodeitemmodel.cpp:1831 models/kptnodeitemmodel.cpp:1864
@@ -636,12 +648,12 @@ msgstr "Asteme"
 msgid "Error"
 msgstr "Aroke:"
 
-#: kernel/kptschedule.cpp:1899
+#: kernel/kptschedule.cpp:1900
 #, fuzzy, kde-format
 msgid "Baselined"
 msgstr "Referince"
 
-#: kernel/kptschedule.cpp:1902
+#: kernel/kptschedule.cpp:1903
 #, fuzzy, kde-format
 #| msgid "Scheduling Log"
 msgid "Scheduling"
@@ -654,16 +666,16 @@ msgstr "Cårculer finixhaedje timpe"
 
 #: kernel/kpttask.cpp:1296 kernel/kpttask.cpp:1314 kernel/kpttask.cpp:1331
 #: kernel/kpttask.cpp:1354 kernel/kpttask.cpp:1380 kernel/kpttask.cpp:1387
-#: kernel/kpttask.cpp:1397 kernel/kpttask.cpp:1567 kernel/kpttask.cpp:1590
-#: kernel/kpttask.cpp:1605 kernel/kpttask.cpp:1628 kernel/kpttask.cpp:1637
-#: kernel/kpttask.cpp:1646 kernel/kpttask.cpp:1654
+#: kernel/kpttask.cpp:1397 kernel/kpttask.cpp:1570 kernel/kpttask.cpp:1593
+#: kernel/kpttask.cpp:1608 kernel/kpttask.cpp:1631 kernel/kpttask.cpp:1640
+#: kernel/kpttask.cpp:1649 kernel/kpttask.cpp:1657
 #, kde-format
 msgctxt "1=type of constraint"
 msgid "%1: Failed to meet constraint"
 msgstr "%1: Li passaedje do stronna a fwait berwete"
 
-#: kernel/kpttask.cpp:1426 kernel/kpttask.cpp:1676 kernel/kpttask.cpp:2076
-#: kernel/kpttask.cpp:2450
+#: kernel/kpttask.cpp:1426 kernel/kpttask.cpp:1679 kernel/kpttask.cpp:2082
+#: kernel/kpttask.cpp:2464
 #, kde-format
 msgid "Resource %1 booked from %2 to %3"
 msgstr "Rissource %1 rezervé di %2 a %3"
@@ -673,86 +685,86 @@ msgstr "Rissource %1 rezervé di %2 a %3"
 msgid "Early finish calculated: %1"
 msgstr "Timpe finixhaedje cårculé: %1"
 
-#: kernel/kpttask.cpp:1529
+#: kernel/kpttask.cpp:1532
 #, fuzzy, kde-format
 msgid "Calculate late start"
 msgstr "Cårculer"
 
-#: kernel/kpttask.cpp:1682
+#: kernel/kpttask.cpp:1685
 #, kde-format
 msgid "Late start calculated: %1"
 msgstr "Tård cominçmint cårculé: %1"
 
-#: kernel/kpttask.cpp:1776
+#: kernel/kpttask.cpp:1782
 #, fuzzy, kde-format
 #| msgid "Schedule project forward from: %1"
 msgid "Start schedule forward: %1 "
 msgstr "Programer en avant li pordjet di: %1"
 
-#: kernel/kpttask.cpp:1778
+#: kernel/kpttask.cpp:1784
 #, kde-format
 msgid "Schedule from start %1"
 msgstr "Programer a pårti do cominçmint %1"
 
-#: kernel/kpttask.cpp:1825
+#: kernel/kpttask.cpp:1831
 #, kde-format
 msgid "%1: Scheduling failed using late finish, trying early finish instead."
 msgstr ""
 
-#: kernel/kpttask.cpp:1860 kernel/kpttask.cpp:1884 kernel/kpttask.cpp:1910
-#: kernel/kpttask.cpp:1934 kernel/kpttask.cpp:1952 kernel/kpttask.cpp:2023
-#: kernel/kpttask.cpp:2040 kernel/kpttask.cpp:2052 kernel/kpttask.cpp:2258
-#: kernel/kpttask.cpp:2277 kernel/kpttask.cpp:2299 kernel/kpttask.cpp:2315
-#: kernel/kpttask.cpp:2334 kernel/kpttask.cpp:2398 kernel/kpttask.cpp:2411
-#: kernel/kpttask.cpp:2428
+#: kernel/kpttask.cpp:1866 kernel/kpttask.cpp:1890 kernel/kpttask.cpp:1916
+#: kernel/kpttask.cpp:1940 kernel/kpttask.cpp:1958 kernel/kpttask.cpp:2029
+#: kernel/kpttask.cpp:2046 kernel/kpttask.cpp:2058 kernel/kpttask.cpp:2272
+#: kernel/kpttask.cpp:2291 kernel/kpttask.cpp:2313 kernel/kpttask.cpp:2329
+#: kernel/kpttask.cpp:2348 kernel/kpttask.cpp:2412 kernel/kpttask.cpp:2425
+#: kernel/kpttask.cpp:2442
 #, kde-format
 msgctxt "1=type of constraint"
 msgid "%1: Failed to meet constraint. Negative float=%2"
 msgstr "%1: Li passaedje do stronna a fwait berwete. Flotant negatif=%2"
 
-#: kernel/kpttask.cpp:1976 kernel/kpttask.cpp:2356
+#: kernel/kpttask.cpp:1982 kernel/kpttask.cpp:2370
 #, kde-format
 msgid "Effort deviation. Estimate: %1, scheduled: %2, granularity: %3"
 msgstr ""
 
-#: kernel/kpttask.cpp:1984 kernel/kpttask.cpp:2364
+#: kernel/kpttask.cpp:1990 kernel/kpttask.cpp:2378
 #, kde-format
 msgid "Effort not met. Estimate: %1, scheduled: %2"
 msgstr ""
 
-#: kernel/kpttask.cpp:2072 kernel/kpttask.cpp:2446
+#: kernel/kpttask.cpp:2078 kernel/kpttask.cpp:2460
 #, kde-format
 msgid "Failed to schedule within project target time"
 msgstr "Li programaedje do pordjet divant l' date/eure såme a fwait berwete"
 
-#: kernel/kpttask.cpp:2079 kernel/kpttask.cpp:2453
+#: kernel/kpttask.cpp:2085 kernel/kpttask.cpp:2467
 #, kde-format
 msgid "Starting earlier than early start"
 msgstr "Cominçmint pus timpe kel timpe cominçmint"
 
-#: kernel/kpttask.cpp:2082 kernel/kpttask.cpp:2456
+#: kernel/kpttask.cpp:2088 kernel/kpttask.cpp:2470
 #, kde-format
 msgid "Finishing later than late finish"
 msgstr "Finixhaedje pus tård kel tårdfinixhaedje"
 
-#: kernel/kpttask.cpp:2084 kernel/kpttask.cpp:2458
+#: kernel/kpttask.cpp:2090 kernel/kpttask.cpp:2472
 #, fuzzy, kde-format
 msgid "Scheduled: %1 to %2"
 msgstr "Programaedje:"
 
-#: kernel/kpttask.cpp:2087
+#: kernel/kpttask.cpp:2093
 #, fuzzy, kde-format
 #| msgid "Early finish calculated: %1"
 msgid "Finished schedule forward: %1 ms"
 msgstr "Timpe finixhaedje cårculé: %1"
 
-#: kernel/kpttask.cpp:2177
+#: kernel/kpttask.cpp:2191
 #, fuzzy, kde-format
 #| msgid "Schedule from start %1"
 msgid "Schedule from end time: %1"
 msgstr "Programer a pårti do cominçmint %1"
 
-#: kernel/kpttask.cpp:2201
+#: kernel/kpttask.cpp:2215
 #, fuzzy, kde-format
 #| msgctxt "1=type of constraint"
 #| msgid "%1: Failed to schedule within late finish. Negative float=%2"
@@ -762,7 +774,7 @@ msgstr ""
 "%1: Li programaedje divant l' tård finixhaedje a fwait berwete. Flotant "
 "negatif=%2"
 
-#: kernel/kpttask.cpp:2207
+#: kernel/kpttask.cpp:2221
 #, kde-format
 msgctxt "1=type of constraint"
 msgid "%1: Failed to schedule within successors start time"
@@ -770,7 +782,7 @@ msgstr ""
 "%1: Li programaedje divant l' tins d' enondaedje do ci d' après a fwait "
 "berwete"
 
-#: kernel/kpttask.cpp:2234 kernel/kpttask.cpp:2372
+#: kernel/kpttask.cpp:2248 kernel/kpttask.cpp:2386
 #, fuzzy, kde-format
 #| msgctxt "1=type of constraint"
 #| msgid "%1: Failed to schedule after early start. Negative float=%2"
@@ -780,13 +792,13 @@ msgstr ""
 "%1: Li programaedje après l' timpe cominçmint a fwait berwete. Flotant "
 "negatif=%2 "
 
-#: kernel/kpttask.cpp:2524
+#: kernel/kpttask.cpp:2543
 #, fuzzy, kde-format
 #| msgid "No resource allocated"
 msgid "No resource has been allocated"
 msgstr "Nole rissource acoirdêye"
 
-#: kernel/kpttask.cpp:2685
+#: kernel/kpttask.cpp:2708
 #, kde-format
 msgid "Could not match work duration. Want: %1 got: %2"
 msgstr ""
@@ -910,13 +922,13 @@ msgstr ""
 msgid "<empty>"
 msgstr ""
 
-#: kundo2/kundo2stack.cpp:1347 main/KoMainWindow.cpp:1573
+#: kundo2/kundo2stack.cpp:1347 main/KoMainWindow.cpp:1575
 #: main/KoUndoStackAction.cpp:34
 #, kde-format
 msgid "Redo"
 msgstr ""
 
-#: kundo2/kundo2stack.cpp:1366 main/KoMainWindow.cpp:1572
+#: kundo2/kundo2stack.cpp:1366 main/KoMainWindow.cpp:1574
 #: main/KoUndoStackAction.cpp:26
 #, kde-format
 msgid "Undo"
@@ -1258,7 +1270,7 @@ msgid ""
 "Do you want to open it instead?"
 msgstr ""
 
-#: main/KoDocument.cpp:1309 main/KoDocument.cpp:1630 main/KoMainWindow.cpp:712
+#: main/KoDocument.cpp:1309 main/KoDocument.cpp:1630 main/KoMainWindow.cpp:714
 #, kde-format
 msgid "The file %1 does not exist."
 msgstr ""
@@ -1449,12 +1461,12 @@ msgid ""
 "an old version."
 msgstr ""
 
-#: main/KoDocument.cpp:2039 main/KoDocument.cpp:2532 main/KoMainWindow.cpp:1242
+#: main/KoDocument.cpp:2039 main/KoDocument.cpp:2532 main/KoMainWindow.cpp:1244
 #, fuzzy, kde-format
 msgid "Untitled"
 msgstr "Iniciåles:"
 
-#: main/KoDocument.cpp:2042 main/KoMainWindow.cpp:1245
+#: main/KoDocument.cpp:2042 main/KoMainWindow.cpp:1247
 #, kde-format
 msgid ""
 "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save it?"
@@ -1554,95 +1566,95 @@ msgstr "Pî del pådje"
 msgid "Choose Filter"
 msgstr "Grafike"
 
-#: main/KoMainWindow.cpp:157
+#: main/KoMainWindow.cpp:158
 #, kde-format
 msgid "%1 unsaved document (%2)"
 msgstr ""
 
-#: main/KoMainWindow.cpp:269 ui/kptviewbase.cpp:756
+#: main/KoMainWindow.cpp:271 ui/kptviewbase.cpp:756
 #, fuzzy, kde-format
 #| msgid "Options"
 msgid "Print to PDF..."
 msgstr "Tchuzes"
 
-#: main/KoMainWindow.cpp:279
+#: main/KoMainWindow.cpp:281
 #, kde-format
 msgid "Reload"
 msgstr ""
 
-#: main/KoMainWindow.cpp:283
+#: main/KoMainWindow.cpp:285
 #, fuzzy, kde-format
 #| msgid "Effort"
 msgid "Import..."
 msgstr "Efoirt"
 
-#: main/KoMainWindow.cpp:287
+#: main/KoMainWindow.cpp:289
 #, fuzzy, kde-format
 #| msgid "Effort"
 msgid "E&xport..."
 msgstr "Efoirt"
 
-#: main/KoMainWindow.cpp:291
+#: main/KoMainWindow.cpp:293
 #, fuzzy, kde-format
 #| msgid "Documents"
 msgid "En&crypt Document"
 msgstr "Documints"
 
-#: main/KoMainWindow.cpp:296
+#: main/KoMainWindow.cpp:298
 #, fuzzy, kde-format
 msgid "&Uncompress to Directory"
 msgstr "Durêye"
 
-#: main/KoMainWindow.cpp:301
+#: main/KoMainWindow.cpp:303
 #, fuzzy, kde-format
 #| msgid "Tree View"
 msgid "&New View"
 msgstr "Vuwe e coxhlaedje"
 
-#: main/KoMainWindow.cpp:308 widgets/KoDocumentInfoDlg.cpp:89
+#: main/KoMainWindow.cpp:310 widgets/KoDocumentInfoDlg.cpp:89
 #, fuzzy, kde-format
 #| msgid "ForInformation"
 msgid "Document Information"
 msgstr "Pos informåcion"
 
-#: main/KoMainWindow.cpp:334
+#: main/KoMainWindow.cpp:336
 #, kde-format
 msgid "Full Screen Mode"
 msgstr ""
 
-#: main/KoMainWindow.cpp:339
+#: main/KoMainWindow.cpp:341
 #, kde-format
 msgid "Show Dockers"
 msgstr ""
 
-#: main/KoMainWindow.cpp:344
+#: main/KoMainWindow.cpp:346
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Show Docker Titlebars"
 msgstr ""
 
-#: main/KoMainWindow.cpp:351
+#: main/KoMainWindow.cpp:353
 #, kde-format
 msgid "Dockers"
 msgstr ""
 
-#: main/KoMainWindow.cpp:661
+#: main/KoMainWindow.cpp:663
 #, kde-format
 msgid "(write protected)"
 msgstr ""
 
-#: main/KoMainWindow.cpp:666
+#: main/KoMainWindow.cpp:668
 #, kde-format
 msgid "Save as %1"
 msgstr ""
 
-#: main/KoMainWindow.cpp:668
+#: main/KoMainWindow.cpp:670
 #, fuzzy, kde-format
 #| msgid "Not Started"
 msgid "Save"
 msgstr "Nén co ataké"
 
-#: main/KoMainWindow.cpp:706 main/KoMainWindow.cpp:734
+#: main/KoMainWindow.cpp:708 main/KoMainWindow.cpp:736
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -1651,98 +1663,98 @@ msgid ""
 "Project Template...</interface>."
 msgstr ""
 
-#: main/KoMainWindow.cpp:880 widgets/KoDocumentInfoDlg.cpp:395
+#: main/KoMainWindow.cpp:882 widgets/KoDocumentInfoDlg.cpp:395
 #: widgets/KoDocumentInfoDlg.cpp:439
 #, kde-format
 msgid "%1 (unknown file type)"
 msgstr ""
 
-#: main/KoMainWindow.cpp:888
+#: main/KoMainWindow.cpp:890
 #, kde-format
 msgid ""
 "<qt>Saving as a %1 may result in some loss of formatting.<p>Do you still "
 "want to save in this format?</qt>"
 msgstr ""
 
-#: main/KoMainWindow.cpp:891
+#: main/KoMainWindow.cpp:893
 #, fuzzy, kde-format
 #| msgid "Not Started"
 msgid "Confirm Save"
 msgstr "Nén co ataké"
 
-#: main/KoMainWindow.cpp:900
+#: main/KoMainWindow.cpp:902
 #, kde-format
 msgid ""
 "<qt>Exporting as a %1 may result in some loss of formatting.<p>Do you still "
 "want to export to this format?</qt>"
 msgstr ""
 
-#: main/KoMainWindow.cpp:903
+#: main/KoMainWindow.cpp:905
 #, fuzzy, kde-format
 #| msgid "Not Started"
 msgid "Confirm Export"
 msgstr "Nén co ataké"
 
-#: main/KoMainWindow.cpp:904 ui/reports/reportview.cpp:381
+#: main/KoMainWindow.cpp:906 ui/reports/reportview.cpp:381
 #: ui/reports/reportview.cpp:401 ui/reports/reportview.cpp:423
 #, fuzzy, kde-format
 #| msgid "Effort"
 msgid "Export"
 msgstr "Efoirt"
 
-#: main/KoMainWindow.cpp:1022
+#: main/KoMainWindow.cpp:1024
 #, fuzzy, kde-format
 msgid "untitled"
 msgstr "Iniciåles:"
 
-#: main/KoMainWindow.cpp:1314 main/WelcomeView.cpp:274
+#: main/KoMainWindow.cpp:1316 main/WelcomeView.cpp:274
 #, fuzzy, kde-format
 #| msgid "Documents"
 msgid "Open Document"
 msgstr "Documints"
 
-#: main/KoMainWindow.cpp:1323
+#: main/KoMainWindow.cpp:1325
 #, fuzzy, kde-format
 #| msgid "Documents"
 msgid "Import Document"
 msgstr "Documints"
 
-#: main/KoMainWindow.cpp:1513
+#: main/KoMainWindow.cpp:1515
 #, fuzzy, kde-format
 #| msgid "Effort"
 msgid "Export as PDF"
 msgstr "Efoirt"
 
-#: main/KoMainWindow.cpp:1550
+#: main/KoMainWindow.cpp:1552
 #, kde-format
 msgid "Cannot export to the specified file"
 msgstr ""
 
-#: main/KoMainWindow.cpp:1726
+#: main/KoMainWindow.cpp:1728
 #, fuzzy, kde-format
 #| msgid "&Documents"
 msgid "Document"
 msgstr "&Documints"
 
-#: main/KoMainWindow.cpp:1734
+#: main/KoMainWindow.cpp:1736
 #, fuzzy, kde-format
 #| msgid "&Documents"
 msgid "Document - %1"
 msgstr "&Documints"
 
-#: main/KoMainWindow.cpp:1755
+#: main/KoMainWindow.cpp:1757
 #, kde-format
 msgid ""
 "You will lose all changes made since your last save\n"
 "Do you want to continue?"
 msgstr ""
 
-#: main/KoMainWindow.cpp:2115
+#: main/KoMainWindow.cpp:2117
 #, kde-format
 msgid "Show %1 Toolbar"
 msgstr ""
 
-#: main/KoMainWindow.cpp:2117
+#: main/KoMainWindow.cpp:2119
 #, kde-format
 msgid "Hide %1 Toolbar"
 msgstr ""
@@ -1755,7 +1767,7 @@ msgstr ""
 #: main/KoPrintingDialog.cpp:175 ui/gantt/BasicGanttViewSettingsDialog.cpp:32
 #: ui/gantt/GanttViewBase.cpp:178 ui/kptaccountseditor.cpp:53
 #: ui/kptaccountsviewconfigdialog.cpp:76 ui/kptdependencyeditor.cpp:2014
-#: ui/kptganttview.cpp:1052 ui/kptganttview.cpp:1775
+#: ui/kptganttview.cpp:1061 ui/kptganttview.cpp:1784
 #: ui/kptitemviewsettup.cpp:189 ui/kptitemviewsettup.cpp:273
 #: ui/performance/ProjectStatusView.cpp:170
 #, fuzzy, kde-format
@@ -3264,7 +3276,7 @@ msgstr "Enondaedje"
 msgid "Parent"
 msgstr "Pordjet"
 
-#: models/kptitemmodelbase.cpp:236
+#: models/kptitemmodelbase.cpp:242
 #, fuzzy, kde-format
 #| msgctxt "1=page number, 2=last page number"
 #| msgid "%1 (%2)"
@@ -6087,8 +6099,8 @@ msgstr ""
 
 #: ui/gantt/BasicGanttViewSettingsDialog.cpp:32 ui/gantt/GanttViewBase.cpp:178
 #: ui/kptaccountseditor.cpp:54 ui/kptaccountsviewconfigdialog.cpp:77
-#: ui/kptdependencyeditor.cpp:2015 ui/kptganttview.cpp:1052
-#: ui/kptganttview.cpp:1775 ui/kptitemviewsettup.cpp:189
+#: ui/kptdependencyeditor.cpp:2015 ui/kptganttview.cpp:1061
+#: ui/kptganttview.cpp:1784 ui/kptitemviewsettup.cpp:189
 #: ui/kptitemviewsettup.cpp:273 ui/performance/ProjectStatusView.cpp:171
 #, fuzzy, kde-format
 #| msgid "Options"
@@ -6792,7 +6804,7 @@ msgid "Add Sub-Milestone..."
 msgstr "Radjouter etape..."
 
 #: ui/kptdependencyeditor.cpp:2413 ui/kptdocumentseditor.cpp:203
-#: ui/kptganttview.cpp:506 ui/kptganttview.cpp:1357 ui/kptganttview.cpp:1972
+#: ui/kptganttview.cpp:506 ui/kptganttview.cpp:1366 ui/kptganttview.cpp:1981
 #: ui/kptpertresult.cpp:151 ui/kptscheduleeditor.cpp:682
 #: ui/kpttaskeditor.cpp:689 ui/kpttaskeditor.cpp:948 ui/kpttaskeditor.cpp:1808
 #: ui/performance/PerformanceStatusView.cpp:323
@@ -6801,7 +6813,7 @@ msgid "Edit..."
 msgstr "Candjî..."
 
 #: ui/kptdependencyeditor.cpp:2417 ui/kptganttview.cpp:510
-#: ui/kptganttview.cpp:1361 ui/kptganttview.cpp:1976
+#: ui/kptganttview.cpp:1370 ui/kptganttview.cpp:1985
 #: ui/kptresourceappointmentsview.cpp:286 ui/kpttaskeditor.cpp:952
 #: ui/kpttaskeditor.cpp:1812 ui/kpttaskeditor.cpp:2407
 #: ui/kpttaskstatusview.cpp:357 ui/performance/PerformanceStatusView.cpp:327
@@ -6811,7 +6823,7 @@ msgid "Progress..."
 msgstr "Avançmint del bouye"
 
 #: ui/kptdependencyeditor.cpp:2421 ui/kptganttview.cpp:514
-#: ui/kptganttview.cpp:1365 ui/kptganttview.cpp:1980
+#: ui/kptganttview.cpp:1374 ui/kptganttview.cpp:1989
 #: ui/kptresourceappointmentsview.cpp:290 ui/kpttaskeditor.cpp:956
 #: ui/kpttaskeditor.cpp:1816 ui/kpttaskeditor.cpp:2411
 #: ui/kpttaskstatusview.cpp:361 ui/performance/PerformanceStatusView.cpp:331
@@ -6821,7 +6833,7 @@ msgid "Description..."
 msgstr "Discrijhaedje"
 
 #: ui/kptdependencyeditor.cpp:2425 ui/kptganttview.cpp:518
-#: ui/kptganttview.cpp:1369 ui/kptganttview.cpp:1984
+#: ui/kptganttview.cpp:1378 ui/kptganttview.cpp:1993
 #: ui/kptresourceappointmentsview.cpp:294 ui/kpttaskeditor.cpp:960
 #: ui/kpttaskeditor.cpp:1820 ui/kpttaskeditor.cpp:2415
 #: ui/kpttaskstatusview.cpp:365 ui/performance/PerformanceStatusView.cpp:335
@@ -7054,52 +7066,52 @@ msgstr "Pordjet"
 msgid "Show Unscheduled Tasks"
 msgstr "Nén programé"
 
-#: ui/kptganttview.cpp:465 ui/kptganttview.cpp:1316 ui/kptganttview.cpp:1931
+#: ui/kptganttview.cpp:465 ui/kptganttview.cpp:1325 ui/kptganttview.cpp:1940
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Auto"
 msgstr ""
 
-#: ui/kptganttview.cpp:472 ui/kptganttview.cpp:1323 ui/kptganttview.cpp:1938
+#: ui/kptganttview.cpp:472 ui/kptganttview.cpp:1332 ui/kptganttview.cpp:1947
 #, fuzzy, kde-format
 #| msgid "Month"
 msgctxt "@action:inmenu"
 msgid "Month"
 msgstr "Moes"
 
-#: ui/kptganttview.cpp:478 ui/kptganttview.cpp:1329 ui/kptganttview.cpp:1944
+#: ui/kptganttview.cpp:478 ui/kptganttview.cpp:1338 ui/kptganttview.cpp:1953
 #, fuzzy, kde-format
 #| msgid "Week"
 msgctxt "@action:inmenu"
 msgid "Week"
 msgstr "Samwinne"
 
-#: ui/kptganttview.cpp:484 ui/kptganttview.cpp:1335 ui/kptganttview.cpp:1950
+#: ui/kptganttview.cpp:484 ui/kptganttview.cpp:1344 ui/kptganttview.cpp:1959
 #, fuzzy, kde-format
 #| msgid "Day"
 msgctxt "@action:inmenu"
 msgid "Day"
 msgstr "Djoû"
 
-#: ui/kptganttview.cpp:490 ui/kptganttview.cpp:1341 ui/kptganttview.cpp:1956
+#: ui/kptganttview.cpp:490 ui/kptganttview.cpp:1350 ui/kptganttview.cpp:1965
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Hour"
 msgstr ""
 
-#: ui/kptganttview.cpp:496 ui/kptganttview.cpp:1347 ui/kptganttview.cpp:1962
+#: ui/kptganttview.cpp:496 ui/kptganttview.cpp:1356 ui/kptganttview.cpp:1971
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Zoom In"
 msgstr ""
 
-#: ui/kptganttview.cpp:501 ui/kptganttview.cpp:1352 ui/kptganttview.cpp:1967
+#: ui/kptganttview.cpp:501 ui/kptganttview.cpp:1361 ui/kptganttview.cpp:1976
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Zoom Out"
 msgstr ""
 
-#: ui/kptganttview.cpp:1123
+#: ui/kptganttview.cpp:1132
 #, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -7111,7 +7123,7 @@ msgid ""
 "url='%1'>More...</link></para>"
 msgstr ""
 
-#: ui/kptganttview.cpp:1845
+#: ui/kptganttview.cpp:1854
 #, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
