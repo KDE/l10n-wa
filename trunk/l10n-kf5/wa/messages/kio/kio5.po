@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkio\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-06 00:42+0000\n"
+"POT-Creation-Date: 2022-09-16 00:41+0000\n"
 "PO-Revision-Date: 2012-07-04 22:08+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -2619,28 +2619,32 @@ msgstr ""
 msgid "&No"
 msgstr ""
 
-#: core/slaveinterface.cpp:421 core/tcpslavebase.cpp:535 widgets/sslui.cpp:69
+#: core/slaveinterface.cpp:421 core/tcpslavebase.cpp:535
+#: core/tcpworkerbase.cpp:530 widgets/sslui.cpp:69
 #, kde-format
 msgid "&Details"
 msgstr "&Po les spepieus"
 
-#: core/slaveinterface.cpp:423 core/tcpslavebase.cpp:548 widgets/sslui.cpp:105
+#: core/slaveinterface.cpp:423 core/tcpslavebase.cpp:548
+#: core/tcpworkerbase.cpp:543 widgets/sslui.cpp:105
 #, kde-format
 msgid "&Forever"
 msgstr "&Tofer"
 
-#: core/slaveinterface.cpp:427 core/tcpslavebase.cpp:535 widgets/sslui.cpp:70
+#: core/slaveinterface.cpp:427 core/tcpslavebase.cpp:535
+#: core/tcpworkerbase.cpp:530 widgets/sslui.cpp:70
 #, kde-format
 msgid "Co&ntinue"
 msgstr "&Continouwer"
 
-#: core/slaveinterface.cpp:429 core/tcpslavebase.cpp:549 widgets/sslui.cpp:106
+#: core/slaveinterface.cpp:429 core/tcpslavebase.cpp:549
+#: core/tcpworkerbase.cpp:544 widgets/sslui.cpp:106
 #, fuzzy, kde-format
 #| msgid "&Current Sessions Only"
 msgid "&Current Session only"
 msgstr "Session do &moumint seulmint"
 
-#: core/tcpslavebase.cpp:285
+#: core/tcpslavebase.cpp:285 core/tcpworkerbase.cpp:278
 #, kde-format
 msgid ""
 "You are about to leave secure mode. Transmissions will no longer be "
@@ -2652,23 +2656,24 @@ msgstr ""
 "Ça vout dire k' ene sakî d' ôte såreut lére les dnêyes ki vos evoyîz."
 
 #: core/tcpslavebase.cpp:291 core/tcpslavebase.cpp:486
+#: core/tcpworkerbase.cpp:284 core/tcpworkerbase.cpp:480
 #, kde-format
 msgid "Security Information"
 msgstr "Infôrmåcion sol såvrité"
 
-#: core/tcpslavebase.cpp:292
+#: core/tcpslavebase.cpp:292 core/tcpworkerbase.cpp:285
 #, kde-format
 msgid "C&ontinue Loading"
 msgstr "C&ontinouwer a tcherdjî"
 
-#: core/tcpslavebase.cpp:345
+#: core/tcpslavebase.cpp:345 core/tcpworkerbase.cpp:338
 #, fuzzy, kde-format
 #| msgid "Authentication Failed."
 msgctxt "%1 is a host name"
 msgid "%1: SSL negotiation failed"
 msgstr "L' otintifiaedje a fwait berwete!"
 
-#: core/tcpslavebase.cpp:480
+#: core/tcpslavebase.cpp:480 core/tcpworkerbase.cpp:474
 #, kde-format
 msgid ""
 "You are about to enter secure mode. All transmissions will be encrypted "
@@ -2681,17 +2686,17 @@ msgstr ""
 "Ça vout dire ki nolu n' sårè loukî vos dnêyes come ele passèt, ou nén "
 "åjheymint, todi."
 
-#: core/tcpslavebase.cpp:487
+#: core/tcpslavebase.cpp:487 core/tcpworkerbase.cpp:481
 #, kde-format
 msgid "Display SSL &Information"
 msgstr "&Mostrer l' infôrmåcion SSL"
 
-#: core/tcpslavebase.cpp:488
+#: core/tcpslavebase.cpp:488 core/tcpworkerbase.cpp:482
 #, kde-format
 msgid "C&onnect"
 msgstr "Si ralo&yî"
 
-#: core/tcpslavebase.cpp:526 widgets/sslui.cpp:58
+#: core/tcpslavebase.cpp:526 core/tcpworkerbase.cpp:521 widgets/sslui.cpp:58
 #, fuzzy, kde-format
 #| msgid "The server certificate failed the authenticity test (%1)."
 msgid ""
@@ -2700,13 +2705,14 @@ msgid ""
 msgstr ""
 "L' acertineure do sierveu n' a nén a fwait berwete po l' aveurixhmint (%1)."
 
-#: core/tcpslavebase.cpp:535 core/tcpslavebase.cpp:547 widgets/sslui.cpp:68
+#: core/tcpslavebase.cpp:535 core/tcpslavebase.cpp:547
+#: core/tcpworkerbase.cpp:530 core/tcpworkerbase.cpp:542 widgets/sslui.cpp:68
 #: widgets/sslui.cpp:104
 #, kde-format
 msgid "Server Authentication"
 msgstr "Aveurixhmint do sierveu"
 
-#: core/tcpslavebase.cpp:544 widgets/sslui.cpp:101
+#: core/tcpslavebase.cpp:544 core/tcpworkerbase.cpp:539 widgets/sslui.cpp:101
 #, kde-format
 msgid ""
 "Would you like to accept this certificate forever without being prompted?"
@@ -3654,7 +3660,7 @@ msgstr ""
 "</qt>"
 
 #. i18n: ectx: property (text), widget (QLabel, nameLabel)
-#: filewidgets/kfilewidget.cpp:1350 widgets/kpropertiesdesktopbase.ui:17
+#: filewidgets/kfilewidget.cpp:1350 widgets/kpropertiesdesktopbase.ui:25
 #, kde-format
 msgid "&Name:"
 msgstr "&No:"
@@ -4343,83 +4349,83 @@ msgstr "Dji n' a savou awè l' id di l' uzeu pol no d' uzeu %1 di dné"
 msgid "Could not get group id for given group name %1"
 msgstr "Dji n' a savou awè l' id do groupe pol no do groupe %1 di dné"
 
-#: ioslaves/http/http.cpp:584
+#: ioslaves/http/http.cpp:586
 #, kde-format
 msgid "No host specified."
 msgstr "Nou lodjoe di dné."
 
-#: ioslaves/http/http.cpp:1561
+#: ioslaves/http/http.cpp:1555
 #, kde-format
 msgid "Otherwise, the request would have succeeded."
 msgstr "Ôtrumint, li dmande åreut yeu stî comifåt."
 
-#: ioslaves/http/http.cpp:1565
+#: ioslaves/http/http.cpp:1559
 #, kde-format
 msgctxt "request type"
 msgid "retrieve property values"
 msgstr "obtini valixhances di prôpieté"
 
-#: ioslaves/http/http.cpp:1568
+#: ioslaves/http/http.cpp:1562
 #, kde-format
 msgctxt "request type"
 msgid "set property values"
 msgstr "defini valixhances di prôpieté"
 
-#: ioslaves/http/http.cpp:1571
+#: ioslaves/http/http.cpp:1565
 #, kde-format
 msgctxt "request type"
 msgid "create the requested folder"
 msgstr "fé l' ridant dmandé"
 
-#: ioslaves/http/http.cpp:1574
+#: ioslaves/http/http.cpp:1568
 #, kde-format
 msgctxt "request type"
 msgid "copy the specified file or folder"
 msgstr "copyî l' fitchî ou ridant specifyî"
 
-#: ioslaves/http/http.cpp:1577
+#: ioslaves/http/http.cpp:1571
 #, kde-format
 msgctxt "request type"
 msgid "move the specified file or folder"
 msgstr "bodjî li fitchî ou ridant specifyî"
 
-#: ioslaves/http/http.cpp:1580
+#: ioslaves/http/http.cpp:1574
 #, kde-format
 msgctxt "request type"
 msgid "search in the specified folder"
 msgstr "cweri e ridant specifyî"
 
-#: ioslaves/http/http.cpp:1583
+#: ioslaves/http/http.cpp:1577
 #, kde-format
 msgctxt "request type"
 msgid "lock the specified file or folder"
 msgstr "esserer l' fitchî ou ridant specifyî"
 
-#: ioslaves/http/http.cpp:1586
+#: ioslaves/http/http.cpp:1580
 #, kde-format
 msgctxt "request type"
 msgid "unlock the specified file or folder"
 msgstr "disserer l' fitchî ou ridant specifyî"
 
-#: ioslaves/http/http.cpp:1589
+#: ioslaves/http/http.cpp:1583
 #, kde-format
 msgctxt "request type"
 msgid "delete the specified file or folder"
 msgstr "disfacer l' fitchî ou ridant specifyî"
 
-#: ioslaves/http/http.cpp:1592
+#: ioslaves/http/http.cpp:1586
 #, kde-format
 msgctxt "request type"
 msgid "query the server's capabilities"
 msgstr "cweri les ahessaedjes do sierveu"
 
-#: ioslaves/http/http.cpp:1595
+#: ioslaves/http/http.cpp:1589
 #, kde-format
 msgctxt "request type"
 msgid "retrieve the contents of the specified file or folder"
 msgstr "obtini les ådvins do fitchî ou ridant specifyî"
 
-#: ioslaves/http/http.cpp:1598
+#: ioslaves/http/http.cpp:1592
 #, fuzzy, kde-format
 #| msgctxt "request type"
 #| msgid "search in the specified folder"
@@ -4427,18 +4433,18 @@ msgctxt "request type"
 msgid "run a report in the specified folder"
 msgstr "cweri e ridant specifyî"
 
-#: ioslaves/http/http.cpp:1610
+#: ioslaves/http/http.cpp:1604
 #, kde-format
 msgctxt "%1: code, %2: request type"
 msgid "An unexpected error (%1) occurred while attempting to %2."
 msgstr "Ene aroke nén ratindowe s' apassé (%1) come dji sayive di %2."
 
-#: ioslaves/http/http.cpp:1619
+#: ioslaves/http/http.cpp:1613
 #, kde-format
 msgid "The server does not support the WebDAV protocol."
 msgstr "Li sierveu n' sopoite nén l' protocole WebDAV."
 
-#: ioslaves/http/http.cpp:1660
+#: ioslaves/http/http.cpp:1657
 #, kde-format
 msgctxt "%1: request type, %2: url"
 msgid ""
@@ -4448,13 +4454,13 @@ msgstr ""
 "Åk n' a nén stî come dji sayive di %1, %2. On rascourti del råjhon est chal "
 "pa dzo."
 
-#: ioslaves/http/http.cpp:1678 ioslaves/http/http.cpp:1814
+#: ioslaves/http/http.cpp:1675 ioslaves/http/http.cpp:1811
 #, kde-format
 msgctxt "%1: request type"
 msgid "Access was denied while attempting to %1."
 msgstr "L' accès a stî rfuzé tot sayant di %1."
 
-#: ioslaves/http/http.cpp:1692 ioslaves/http/http.cpp:1821
+#: ioslaves/http/http.cpp:1689 ioslaves/http/http.cpp:1818
 #, kde-format
 msgid ""
 "A resource cannot be created at the destination until one or more "
@@ -4463,7 +4469,7 @@ msgstr ""
 "Ene rissoûce ni pout nén esse ahivêye al destinåcion ttossu lontins ki yene "
 "ou sacwantès ramexhnêyes (ridant) inte les deus n' ont nén stî ahivêyes."
 
-#: ioslaves/http/http.cpp:1701
+#: ioslaves/http/http.cpp:1698
 #, fuzzy, kde-format
 #| msgid ""
 #| "The server was unable to maintain the liveness of the properties listed "
@@ -4480,28 +4486,28 @@ msgstr ""
 "djivêye e l' elemint XML propertybehavior oudonbén vs avoz sayî d' sipotchî "
 "on fitchî tot dmandant ki ces fitchîs n' fuxhexhe nén spotchî. %1"
 
-#: ioslaves/http/http.cpp:1709
+#: ioslaves/http/http.cpp:1706
 #, kde-format
 msgid "The requested lock could not be granted. %1"
 msgstr "L' esseraedje dimandé n' a nén polou esse waeranti. %1"
 
-#: ioslaves/http/http.cpp:1715
+#: ioslaves/http/http.cpp:1712
 #, kde-format
 msgid "The server does not support the request type of the body."
 msgstr "Li sierveu n' sopoite nén li sôre di coir dimandêye."
 
-#: ioslaves/http/http.cpp:1720 ioslaves/http/http.cpp:1829
+#: ioslaves/http/http.cpp:1717 ioslaves/http/http.cpp:1826
 #, kde-format
 msgctxt "%1: request type"
 msgid "Unable to %1 because the resource is locked."
 msgstr "Dji n' sai fé %1 paski l' rissoûce est serêye."
 
-#: ioslaves/http/http.cpp:1724
+#: ioslaves/http/http.cpp:1721
 #, kde-format
 msgid "This action was prevented by another error."
 msgstr "Ci faitindje a stî espaitchî pas ene ôte aroke."
 
-#: ioslaves/http/http.cpp:1731 ioslaves/http/http.cpp:1836
+#: ioslaves/http/http.cpp:1728 ioslaves/http/http.cpp:1833
 #, kde-format
 msgctxt "%1: request type"
 msgid ""
@@ -4511,7 +4517,7 @@ msgstr ""
 "Nén moyén di %1, la kel sierveu såme rifuze d' accepter l' fitchî ou "
 "l' ridant."
 
-#: ioslaves/http/http.cpp:1740 ioslaves/http/http.cpp:1845
+#: ioslaves/http/http.cpp:1737 ioslaves/http/http.cpp:1842
 #, kde-format
 msgid ""
 "The destination resource does not have sufficient space to record the state "
@@ -4520,29 +4526,29 @@ msgstr ""
 "Li rsoûce såme n' a pont d' plaece assez pos eredjistrî l' estat del "
 "rissoûce après l' fijhaedje di cisse metôde."
 
-#: ioslaves/http/http.cpp:1792
+#: ioslaves/http/http.cpp:1789
 #, kde-format
 msgid "The resource cannot be deleted."
 msgstr "Dji n' sai disfacer li rsoûce."
 
-#: ioslaves/http/http.cpp:1805
+#: ioslaves/http/http.cpp:1802
 #, kde-format
 msgctxt "request type"
 msgid "upload %1"
 msgstr "eberwetaedje %1"
 
-#: ioslaves/http/http.cpp:1856
+#: ioslaves/http/http.cpp:1853
 #, kde-format
 msgctxt "%1: response code, %2: request type"
 msgid "An unexpected error (%1) occurred while attempting to %2."
 msgstr "Ene aroke nén ratindowe (%1) s' a passé come dji sayive di %2."
 
-#: ioslaves/http/http.cpp:2665
+#: ioslaves/http/http.cpp:2658
 #, kde-format
 msgid "%1 contacted. Waiting for reply..."
 msgstr "%1 atotchî. Tot ratindant k' on m' responde..."
 
-#: ioslaves/http/http.cpp:2993
+#: ioslaves/http/http.cpp:2984
 #, kde-format
 msgctxt "@info Security check on url being accessed"
 msgid ""
@@ -4551,28 +4557,28 @@ msgid ""
 "you.</p><p>Is \"%1\" the site you want to visit?</p>"
 msgstr ""
 
-#: ioslaves/http/http.cpp:3000
+#: ioslaves/http/http.cpp:2991
 #, kde-format
 msgctxt "@title:window"
 msgid "Confirm Website Access"
 msgstr ""
 
-#: ioslaves/http/http.cpp:3089
+#: ioslaves/http/http.cpp:3082
 #, kde-format
 msgid "Server processing request, please wait..."
 msgstr "Li sierveu overe li dmande, tårdjîz s' i vs plait..."
 
-#: ioslaves/http/http.cpp:3787 ioslaves/http/http.cpp:3846
+#: ioslaves/http/http.cpp:3777 ioslaves/http/http.cpp:3832
 #, kde-format
 msgid "Sending data to %1"
 msgstr "Evoyaedje des dnêyes a %1"
 
-#: ioslaves/http/http.cpp:4300
+#: ioslaves/http/http.cpp:4277
 #, kde-format
 msgid "Retrieving %1 from %2..."
 msgstr "Riçuvaedje di %1 a pårti di %2..."
 
-#: ioslaves/http/http.cpp:5194 ioslaves/http/http.cpp:5328
+#: ioslaves/http/http.cpp:5167 ioslaves/http/http.cpp:5302
 #: kioworkers/ftp/ftp.cpp:2509
 #, kde-format
 msgid ""
@@ -4582,45 +4588,45 @@ msgstr ""
 "Vos dvoz dner on no d' uzeu eyet on scret pol sierveu procsi chal pa dzo "
 "dvant di poleur aveur accès a on site."
 
-#: ioslaves/http/http.cpp:5198 ioslaves/http/http.cpp:5331
+#: ioslaves/http/http.cpp:5171 ioslaves/http/http.cpp:5305
 #: kioworkers/ftp/ftp.cpp:2513
 #, kde-format
 msgid "Proxy:"
 msgstr "Procsi:"
 
-#: ioslaves/http/http.cpp:5199 ioslaves/http/http.cpp:5435
+#: ioslaves/http/http.cpp:5172 ioslaves/http/http.cpp:5409
 #, kde-format
 msgid "<b>%1</b> at <b>%2</b>"
 msgstr "<b>%1</b> a <b>%2</b>"
 
-#: ioslaves/http/http.cpp:5201 ioslaves/http/http.cpp:5346
+#: ioslaves/http/http.cpp:5174 ioslaves/http/http.cpp:5320
 #: kioworkers/ftp/ftp.cpp:2516
 #, kde-format
 msgid "Proxy Authentication Failed."
 msgstr "L' otintifiaedje do procsi a fwait berwete."
 
-#: ioslaves/http/http.cpp:5313 kioworkers/ftp/ftp.cpp:561
+#: ioslaves/http/http.cpp:5287 kioworkers/ftp/ftp.cpp:561
 #, kde-format
 msgid "You need to supply a username and a password to access this site."
 msgstr ""
 "Vos dvoz dner on no d' uzeu eyet on scret po-z aveur accès a ç' site ci."
 
-#: ioslaves/http/http.cpp:5315 kioworkers/ftp/ftp.cpp:563
+#: ioslaves/http/http.cpp:5289 kioworkers/ftp/ftp.cpp:563
 #, kde-format
 msgid "Site:"
 msgstr "Site:"
 
-#: ioslaves/http/http.cpp:5346
+#: ioslaves/http/http.cpp:5320
 #, kde-format
 msgid "Authentication Failed."
 msgstr "L' otintifiaedje a fwait berwete."
 
-#: ioslaves/http/http.cpp:5473
+#: ioslaves/http/http.cpp:5447
 #, kde-format
 msgid "Authorization failed."
 msgstr "L' otorijhåcion a fwait berwete"
 
-#: ioslaves/http/http.cpp:5490
+#: ioslaves/http/http.cpp:5464
 #, fuzzy, kde-format
 #| msgid "Authorization Dialog"
 msgid "Unknown Authorization method."
@@ -7376,7 +7382,7 @@ msgstr "Prôpietaire"
 msgid "Owning Group"
 msgstr "Groupe prôpietaire"
 
-#: widgets/kacleditwidget.cpp:410 widgets/kpropertiesdialog.cpp:2134
+#: widgets/kacleditwidget.cpp:410 widgets/kpropertiesdialog.cpp:2135
 #, kde-format
 msgid "Others"
 msgstr "Ôtes"
@@ -8017,7 +8023,7 @@ msgstr "Edjîstraedje &D-Bus"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, nameLabel)
 #. i18n: ectx: property (whatsThis), widget (QLineEdit, nameEdit)
-#: widgets/kpropertiesdesktopbase.ui:14 widgets/kpropertiesdesktopbase.ui:27
+#: widgets/kpropertiesdesktopbase.ui:22 widgets/kpropertiesdesktopbase.ui:35
 #, kde-format
 msgid ""
 "Type the name you want to give to this application here. This application "
@@ -8026,7 +8032,7 @@ msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel2)
 #. i18n: ectx: property (whatsThis), widget (QLineEdit, genNameEdit)
-#: widgets/kpropertiesdesktopbase.ui:34 widgets/kpropertiesdesktopbase.ui:47
+#: widgets/kpropertiesdesktopbase.ui:42 widgets/kpropertiesdesktopbase.ui:55
 #, kde-format
 msgid ""
 "Type the description of this application, based on its use, here. Examples: "
@@ -8034,27 +8040,27 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: widgets/kpropertiesdesktopbase.ui:37
+#: widgets/kpropertiesdesktopbase.ui:45
 #, kde-format
 msgid "&Description:"
 msgstr "&Discrijhaedje:"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel3)
 #. i18n: ectx: property (whatsThis), widget (QLineEdit, commentEdit)
-#: widgets/kpropertiesdesktopbase.ui:54 widgets/kpropertiesdesktopbase.ui:67
+#: widgets/kpropertiesdesktopbase.ui:62 widgets/kpropertiesdesktopbase.ui:75
 #, fuzzy, kde-format
 msgid "Type any comment you think is useful here."
 msgstr "Dinez on tecse di rawete po ç' pårtaedje ci, s' i vs plait."
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: widgets/kpropertiesdesktopbase.ui:57
+#: widgets/kpropertiesdesktopbase.ui:65
 #, kde-format
 msgid "Comm&ent:"
 msgstr "&Rawete:"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel4)
-#. i18n: ectx: property (whatsThis), widget (QLineEdit, commandEdit)
-#: widgets/kpropertiesdesktopbase.ui:84 widgets/kpropertiesdesktopbase.ui:109
+#. i18n: ectx: property (whatsThis), widget (QLineEdit, programEdit)
+#: widgets/kpropertiesdesktopbase.ui:92 widgets/kpropertiesdesktopbase.ui:117
 #, no-c-format, kde-format
 msgid ""
 "Type the command to start this application here.\n"
@@ -8072,13 +8078,13 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#: widgets/kpropertiesdesktopbase.ui:87
+#: widgets/kpropertiesdesktopbase.ui:95
 #, kde-format
-msgid "Co&mmand:"
-msgstr "Ki&mande:"
+msgid "Program:"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QPushButton, browseButton)
-#: widgets/kpropertiesdesktopbase.ui:116
+#: widgets/kpropertiesdesktopbase.ui:124
 #, kde-format
 msgid ""
 "Click here to browse your file system in order to find the desired "
@@ -8086,27 +8092,34 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, browseButton)
-#: widgets/kpropertiesdesktopbase.ui:119
+#: widgets/kpropertiesdesktopbase.ui:127
 #, kde-format
 msgid "&Browse..."
 msgstr "&Foyter..."
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel5)
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, pathEdit)
-#: widgets/kpropertiesdesktopbase.ui:128 widgets/kpropertiesdesktopbase.ui:141
+#: widgets/kpropertiesdesktopbase.ui:136 widgets/kpropertiesdesktopbase.ui:149
 #, fuzzy, kde-format
 msgid "Sets the working directory for your application."
 msgstr "Tchinne d' ID a-z eployî po ci programe chal"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel5)
-#: widgets/kpropertiesdesktopbase.ui:131
+#: widgets/kpropertiesdesktopbase.ui:139
 #, kde-format
 msgid "&Work path:"
 msgstr "Tchimin di l' &ovraedje:"
 
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: widgets/kpropertiesdesktopbase.ui:156
+#, fuzzy, kde-format
+#| msgid "FIXME: Document this"
+msgid "Arguments:"
+msgstr "A FÉ: documinter çouchal"
+
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel7)
 #. i18n: ectx: property (whatsThis), widget (QTreeWidget, filetypeList)
-#: widgets/kpropertiesdesktopbase.ui:155 widgets/kpropertiesdesktopbase.ui:176
+#: widgets/kpropertiesdesktopbase.ui:173 widgets/kpropertiesdesktopbase.ui:194
 #, kde-format
 msgid ""
 "<qt><p>This list should show the types of file that your application can "
@@ -8126,25 +8139,25 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel7)
-#: widgets/kpropertiesdesktopbase.ui:158
+#: widgets/kpropertiesdesktopbase.ui:176
 #, kde-format
 msgid "&Supported file types:"
 msgstr "Sôres di fitchîs &sopoirtêyes:"
 
 #. i18n: ectx: property (text), widget (QTreeWidget, filetypeList)
-#: widgets/kpropertiesdesktopbase.ui:189
+#: widgets/kpropertiesdesktopbase.ui:207
 #, kde-format
 msgid "Mimetype"
 msgstr "Sôre MIME"
 
 #. i18n: ectx: property (text), widget (QTreeWidget, filetypeList)
-#: widgets/kpropertiesdesktopbase.ui:194
+#: widgets/kpropertiesdesktopbase.ui:212
 #, kde-format
 msgid "Description"
 msgstr "Discrijhaedje"
 
 #. i18n: ectx: property (whatsThis), widget (QPushButton, addFiletypeButton)
-#: widgets/kpropertiesdesktopbase.ui:204
+#: widgets/kpropertiesdesktopbase.ui:222
 #, kde-format
 msgid ""
 "Click on this button if you want to add a type of file (mimetype) that your "
@@ -8152,13 +8165,13 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, addFiletypeButton)
-#: widgets/kpropertiesdesktopbase.ui:207
+#: widgets/kpropertiesdesktopbase.ui:225
 #, kde-format
 msgid "Add..."
 msgstr "Radjouter..."
 
 #. i18n: ectx: property (whatsThis), widget (QPushButton, delFiletypeButton)
-#: widgets/kpropertiesdesktopbase.ui:214
+#: widgets/kpropertiesdesktopbase.ui:232
 #, kde-format
 msgid ""
 "If you want to remove a type of file (mimetype) that your application cannot "
@@ -8166,13 +8179,13 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, delFiletypeButton)
-#: widgets/kpropertiesdesktopbase.ui:217
+#: widgets/kpropertiesdesktopbase.ui:235
 #, kde-format
 msgid "Remove"
 msgstr "Oister"
 
 #. i18n: ectx: property (whatsThis), widget (QPushButton, advancedButton)
-#: widgets/kpropertiesdesktopbase.ui:240
+#: widgets/kpropertiesdesktopbase.ui:258
 #, kde-format
 msgid ""
 "Click here to modify the way this application will run, launch feedback, D-"
@@ -8180,12 +8193,12 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, advancedButton)
-#: widgets/kpropertiesdesktopbase.ui:243
+#: widgets/kpropertiesdesktopbase.ui:261
 #, kde-format
 msgid "Ad&vanced Options"
 msgstr "&Sipepieusès tchuzes"
 
-#: widgets/kpropertiesdialog.cpp:175
+#: widgets/kpropertiesdialog.cpp:176
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "<qt>Could not save properties. You do not have sufficient access to write "
@@ -8198,64 +8211,64 @@ msgstr ""
 "<qt>Dji n' sai schaper les prôpietés. Vos n' avoz nén l' droet di scrire "
 "dins<b>%1</b>.</qt>"
 
-#: widgets/kpropertiesdialog.cpp:232 widgets/kpropertiesdialog.cpp:247
-#: widgets/kpropertiesdialog.cpp:259 widgets/kpropertiesdialog.cpp:277
-#: widgets/kpropertiesdialog.cpp:295 widgets/kpropertiesdialog.cpp:319
+#: widgets/kpropertiesdialog.cpp:233 widgets/kpropertiesdialog.cpp:248
+#: widgets/kpropertiesdialog.cpp:260 widgets/kpropertiesdialog.cpp:278
+#: widgets/kpropertiesdialog.cpp:296 widgets/kpropertiesdialog.cpp:320
 #, kde-format
 msgid "Properties for %1"
 msgstr "Prôpietés po %1"
 
-#: widgets/kpropertiesdialog.cpp:257 widgets/kpropertiesdialog.cpp:293
+#: widgets/kpropertiesdialog.cpp:258 widgets/kpropertiesdialog.cpp:294
 #, kde-format
 msgid "Properties for 1 item"
 msgid_plural "Properties for %1 Selected Items"
 msgstr[0] "Prôpietés po %1 cayet tchoezi"
 msgstr[1] "Prôpietés po %1 cayets tchoezis"
 
-#: widgets/kpropertiesdialog.cpp:449
+#: widgets/kpropertiesdialog.cpp:450
 #, kde-format
 msgctxt "@title:tab"
 msgid "Share"
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:916
+#: widgets/kpropertiesdialog.cpp:917
 #, fuzzy, kde-format
 #| msgid "&General"
 msgctxt "@title:tab File properties"
 msgid "&General"
 msgstr "&Djenerå"
 
-#: widgets/kpropertiesdialog.cpp:1114
+#: widgets/kpropertiesdialog.cpp:1115
 #, kde-format
 msgctxt "@action:button"
 msgid "Explore in %1"
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:1125 widgets/kpropertiesdialog.cpp:1390
+#: widgets/kpropertiesdialog.cpp:1126 widgets/kpropertiesdialog.cpp:1391
 #, kde-format
 msgid "Refresh"
 msgstr "Rafrister"
 
-#: widgets/kpropertiesdialog.cpp:1240
+#: widgets/kpropertiesdialog.cpp:1241
 #, fuzzy, kde-format
 #| msgid "%1 (%2)"
 msgid "%1:"
 msgstr "%1 (%2)"
 
-#: widgets/kpropertiesdialog.cpp:1350
+#: widgets/kpropertiesdialog.cpp:1351
 #, kde-format
 msgctxt "Available space out of total partition size (percent used)"
 msgid "%1 free of %2 (%3% used)"
 msgstr "%1 libe so %2 (%3% d' eployî)"
 
-#: widgets/kpropertiesdialog.cpp:1357
+#: widgets/kpropertiesdialog.cpp:1358
 #, fuzzy, kde-format
 #| msgid "Unknown Host"
 msgctxt "@info:status"
 msgid "Unknown size"
 msgstr "Lodjoe nén cnoxhou"
 
-#: widgets/kpropertiesdialog.cpp:1367
+#: widgets/kpropertiesdialog.cpp:1368
 #, kde-format
 msgid ""
 "Calculating... %1 (%2)\n"
@@ -8264,111 +8277,111 @@ msgstr ""
 "Dji carcule... %1 (%2)\n"
 "%3, %4"
 
-#: widgets/kpropertiesdialog.cpp:1370 widgets/kpropertiesdialog.cpp:1385
+#: widgets/kpropertiesdialog.cpp:1371 widgets/kpropertiesdialog.cpp:1386
 #, kde-format
 msgid "1 file"
 msgid_plural "%1 files"
 msgstr[0] "%1 fitchî"
 msgstr[1] "%1 fitchîs"
 
-#: widgets/kpropertiesdialog.cpp:1371 widgets/kpropertiesdialog.cpp:1386
+#: widgets/kpropertiesdialog.cpp:1372 widgets/kpropertiesdialog.cpp:1387
 #, kde-format
 msgid "1 sub-folder"
 msgid_plural "%1 sub-folders"
 msgstr[0] "%1 dzo-ridan"
 msgstr[1] "%1 dizo-ridants"
 
-#: widgets/kpropertiesdialog.cpp:1399
+#: widgets/kpropertiesdialog.cpp:1400
 #, fuzzy, kde-format
 #| msgid "Calculating..."
 msgid "Calculating...\n"
 msgstr "Dji carcule..."
 
-#: widgets/kpropertiesdialog.cpp:1422
+#: widgets/kpropertiesdialog.cpp:1423
 #, fuzzy, kde-format
 #| msgid "At least %1"
 msgid "At least %1\n"
 msgstr "%1 pol moens"
 
-#: widgets/kpropertiesdialog.cpp:1468
+#: widgets/kpropertiesdialog.cpp:1469
 #, kde-format
 msgid "The new file name is empty."
 msgstr "Li novea no d' fitchî est vude."
 
-#: widgets/kpropertiesdialog.cpp:1666
+#: widgets/kpropertiesdialog.cpp:1667
 #, fuzzy, kde-format
 #| msgid "&Supported file types:"
 msgid "No registered file type"
 msgstr "Sôres di fitchîs &sopoirtêyes:"
 
-#: widgets/kpropertiesdialog.cpp:1668
+#: widgets/kpropertiesdialog.cpp:1669
 #, fuzzy, kde-format
 #| msgid "Choose Application"
 msgid "No associated application"
 msgstr "Tchoezi on programe"
 
-#: widgets/kpropertiesdialog.cpp:1674
+#: widgets/kpropertiesdialog.cpp:1675
 #, fuzzy, kde-format
 #| msgid "Created:"
 msgctxt "@action:button Create new file type"
 msgid "Create…"
 msgstr "Fwait:"
 
-#: widgets/kpropertiesdialog.cpp:1677
+#: widgets/kpropertiesdialog.cpp:1678
 #, fuzzy, kde-format
 #| msgid "C&hange..."
 msgctxt "@action:button"
 msgid "Change…"
 msgstr "Cand&jî..."
 
-#: widgets/kpropertiesdialog.cpp:1753 widgets/kpropertiesdialog.cpp:1754
-#: widgets/kpropertiesdialog.cpp:1756
+#: widgets/kpropertiesdialog.cpp:1754 widgets/kpropertiesdialog.cpp:1755
+#: widgets/kpropertiesdialog.cpp:1757
 #, fuzzy
 #| msgid "Accessed:"
 msgid "No Access"
 msgstr "Eployî:"
 
-#: widgets/kpropertiesdialog.cpp:1753
+#: widgets/kpropertiesdialog.cpp:1754
 msgid "Can Only View"
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:1753
+#: widgets/kpropertiesdialog.cpp:1754
 #, fuzzy
 #| msgid "Can View & Modify Content"
 msgid "Can View & Modify"
 msgstr "Li contnou pout esse veyou eyet candjî"
 
-#: widgets/kpropertiesdialog.cpp:1754
+#: widgets/kpropertiesdialog.cpp:1755
 #, fuzzy
 #| msgid "Can View Content"
 msgid "Can Only View Content"
 msgstr "Li contnou pout esse veyou"
 
-#: widgets/kpropertiesdialog.cpp:1754
+#: widgets/kpropertiesdialog.cpp:1755
 msgid "Can View & Modify Content"
 msgstr "Li contnou pout esse veyou eyet candjî"
 
-#: widgets/kpropertiesdialog.cpp:1756
+#: widgets/kpropertiesdialog.cpp:1757
 #, fuzzy
 #| msgid "Can View Content"
 msgid "Can Only View/Read Content"
 msgstr "Li contnou pout esse veyou"
 
-#: widgets/kpropertiesdialog.cpp:1756
+#: widgets/kpropertiesdialog.cpp:1757
 msgid "Can View/Read & Modify/Write"
 msgstr "Pout esse veyou/léjhou eyet candjî/scrît"
 
-#: widgets/kpropertiesdialog.cpp:1855
+#: widgets/kpropertiesdialog.cpp:1856
 #, kde-format
 msgid "&Permissions"
 msgstr "&Droets"
 
-#: widgets/kpropertiesdialog.cpp:1867 widgets/kpropertiesdialog.cpp:2063
+#: widgets/kpropertiesdialog.cpp:1868 widgets/kpropertiesdialog.cpp:2064
 #, kde-format
 msgid "Access Permissions"
 msgstr "Droets po-z eployî"
 
-#: widgets/kpropertiesdialog.cpp:1876
+#: widgets/kpropertiesdialog.cpp:1877
 #, kde-format
 msgid "This file is a link and does not have permissions."
 msgid_plural "All files are links and do not have permissions."
@@ -8376,37 +8389,37 @@ msgstr[0] "Ci fitchî est on loyén et n' a nén d' permissions da lu."
 msgstr[1] ""
 "Tos les fitchîs sont des loyéns et n' ont nén des permissions da zels."
 
-#: widgets/kpropertiesdialog.cpp:1878
+#: widgets/kpropertiesdialog.cpp:1879
 #, kde-format
 msgid "Only the owner can change permissions."
 msgstr "Seulmin l' prôpietaire pout candjî les permissions."
 
-#: widgets/kpropertiesdialog.cpp:1882
+#: widgets/kpropertiesdialog.cpp:1883
 #, kde-format
 msgid "O&wner:"
 msgstr "&Prôpietaire:"
 
-#: widgets/kpropertiesdialog.cpp:1888
+#: widgets/kpropertiesdialog.cpp:1889
 #, kde-format
 msgid "Specifies the actions that the owner is allowed to do."
 msgstr "Les accions ki l' prôpietaire pout fé."
 
-#: widgets/kpropertiesdialog.cpp:1890
+#: widgets/kpropertiesdialog.cpp:1891
 #, kde-format
 msgid "Gro&up:"
 msgstr "Gro&upe:"
 
-#: widgets/kpropertiesdialog.cpp:1896
+#: widgets/kpropertiesdialog.cpp:1897
 #, kde-format
 msgid "Specifies the actions that the members of the group are allowed to do."
 msgstr "Les accions ki les mimbes do groupe polèt fé."
 
-#: widgets/kpropertiesdialog.cpp:1898
+#: widgets/kpropertiesdialog.cpp:1899
 #, kde-format
 msgid "O&thers:"
 msgstr "Ô&tes:"
 
-#: widgets/kpropertiesdialog.cpp:1905
+#: widgets/kpropertiesdialog.cpp:1906
 #, kde-format
 msgid ""
 "Specifies the actions that all users, who are neither owner nor in the "
@@ -8415,17 +8428,17 @@ msgstr ""
 "Les accions ki tos ls uzesu, ki n' sont ni l' prôpietaire ni dins l' groupe, "
 "polèt fé."
 
-#: widgets/kpropertiesdialog.cpp:1909
+#: widgets/kpropertiesdialog.cpp:1910
 #, kde-format
 msgid "Only own&er can rename and delete folder content"
 msgstr "Seulmint l' &prôpietaire pout rlomer et disfacer l' contnou do ridant"
 
-#: widgets/kpropertiesdialog.cpp:1909
+#: widgets/kpropertiesdialog.cpp:1910
 #, kde-format
 msgid "Is &executable"
 msgstr "Est &enondåve"
 
-#: widgets/kpropertiesdialog.cpp:1912
+#: widgets/kpropertiesdialog.cpp:1913
 #, kde-format
 msgid ""
 "Enable this option to allow only the folder's owner to delete or rename the "
@@ -8433,50 +8446,50 @@ msgid ""
 "requires the 'Modify Content' permission."
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:1916
+#: widgets/kpropertiesdialog.cpp:1917
 #, kde-format
 msgid ""
 "Enable this option to mark the file as executable. This only makes sense for "
 "programs and scripts. It is required when you want to execute them."
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:1923
+#: widgets/kpropertiesdialog.cpp:1924
 #, kde-format
 msgid "A&dvanced Permissions"
 msgstr "&Sipepieusès permissions"
 
-#: widgets/kpropertiesdialog.cpp:1931
+#: widgets/kpropertiesdialog.cpp:1932
 #, kde-format
 msgid "Ownership"
 msgstr "Prôpieté"
 
-#: widgets/kpropertiesdialog.cpp:1938
+#: widgets/kpropertiesdialog.cpp:1939
 #, kde-format
 msgid "User:"
 msgstr "Uzeu:"
 
-#: widgets/kpropertiesdialog.cpp:1977
+#: widgets/kpropertiesdialog.cpp:1978
 #, kde-format
 msgid "Group:"
 msgstr "Groupe:"
 
-#: widgets/kpropertiesdialog.cpp:2012
+#: widgets/kpropertiesdialog.cpp:2013
 #, kde-format
 msgid "Apply changes to all subfolders and their contents"
 msgstr ""
 "Mete en ouve les candjmints po tos les sorridants et les fitchîs å dvins"
 
-#: widgets/kpropertiesdialog.cpp:2054
+#: widgets/kpropertiesdialog.cpp:2055
 #, kde-format
 msgid "Advanced Permissions"
 msgstr "Sipepieusès permissions"
 
-#: widgets/kpropertiesdialog.cpp:2071
+#: widgets/kpropertiesdialog.cpp:2072
 #, kde-format
 msgid "Class"
 msgstr "Classe"
 
-#: widgets/kpropertiesdialog.cpp:2078
+#: widgets/kpropertiesdialog.cpp:2079
 #, kde-format
 msgid ""
 "Show\n"
@@ -8485,22 +8498,22 @@ msgstr ""
 "Mostrer\n"
 "les Intrêyes"
 
-#: widgets/kpropertiesdialog.cpp:2079
+#: widgets/kpropertiesdialog.cpp:2080
 #, kde-format
 msgid "This flag allows viewing the content of the folder."
 msgstr "Ci drapea chal permete di vey çou k' i gn a å dvins do ridant"
 
-#: widgets/kpropertiesdialog.cpp:2081
+#: widgets/kpropertiesdialog.cpp:2082
 #, kde-format
 msgid "Read"
 msgstr "Lére"
 
-#: widgets/kpropertiesdialog.cpp:2082
+#: widgets/kpropertiesdialog.cpp:2083
 #, kde-format
 msgid "The Read flag allows viewing the content of the file."
 msgstr "Li drapea d' lijhaedje permete di vey çou k' i gn a å dvins do fitchî."
 
-#: widgets/kpropertiesdialog.cpp:2088
+#: widgets/kpropertiesdialog.cpp:2089
 #, kde-format
 msgid ""
 "Write\n"
@@ -8509,196 +8522,196 @@ msgstr ""
 "Sicrire\n"
 "les Intrêyes"
 
-#: widgets/kpropertiesdialog.cpp:2090
+#: widgets/kpropertiesdialog.cpp:2091
 #, kde-format
 msgid ""
 "This flag allows adding, renaming and deleting of files. Note that deleting "
 "and renaming can be limited using the Sticky flag."
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:2093
+#: widgets/kpropertiesdialog.cpp:2094
 #, kde-format
 msgid "Write"
 msgstr "Sicrire"
 
-#: widgets/kpropertiesdialog.cpp:2094
+#: widgets/kpropertiesdialog.cpp:2095
 #, kde-format
 msgid "The Write flag allows modifying the content of the file."
 msgstr "Li drapea di scrijhaedje permete di candjî l' contnou do fitchî."
 
-#: widgets/kpropertiesdialog.cpp:2100
+#: widgets/kpropertiesdialog.cpp:2101
 #, kde-format
 msgctxt "Enter folder"
 msgid "Enter"
 msgstr "Intrer"
 
-#: widgets/kpropertiesdialog.cpp:2101
+#: widgets/kpropertiesdialog.cpp:2102
 #, kde-format
 msgid "Enable this flag to allow entering the folder."
 msgstr "Metoz ci drapea chal po permete d' intrer e l' ridant."
 
-#: widgets/kpropertiesdialog.cpp:2103
+#: widgets/kpropertiesdialog.cpp:2104
 #, kde-format
 msgid "Exec"
 msgstr "Enonder"
 
-#: widgets/kpropertiesdialog.cpp:2104
+#: widgets/kpropertiesdialog.cpp:2105
 #, kde-format
 msgid "Enable this flag to allow executing the file as a program."
 msgstr "Metoz ci drapea chal po permete d' enonder l' fitchî come on programe."
 
-#: widgets/kpropertiesdialog.cpp:2112
+#: widgets/kpropertiesdialog.cpp:2113
 #, kde-format
 msgid "Special"
 msgstr "Speciå"
 
-#: widgets/kpropertiesdialog.cpp:2117
+#: widgets/kpropertiesdialog.cpp:2118
 #, kde-format
 msgid ""
 "Special flag. Valid for the whole folder, the exact meaning of the flag can "
 "be seen in the right hand column."
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:2121
+#: widgets/kpropertiesdialog.cpp:2122
 #, kde-format
 msgid ""
 "Special flag. The exact meaning of the flag can be seen in the right hand "
 "column."
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:2126
+#: widgets/kpropertiesdialog.cpp:2127
 #, kde-format
 msgid "User"
 msgstr "Uzeu"
 
-#: widgets/kpropertiesdialog.cpp:2130
+#: widgets/kpropertiesdialog.cpp:2131
 #, kde-format
 msgid "Group"
 msgstr "Groupe"
 
-#: widgets/kpropertiesdialog.cpp:2141
+#: widgets/kpropertiesdialog.cpp:2142
 #, kde-format
 msgid ""
 "If this flag is set, the owner of this folder will be the owner of all new "
 "files."
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:2145
+#: widgets/kpropertiesdialog.cpp:2146
 #, kde-format
 msgid ""
 "If this file is an executable and the flag is set, it will be executed with "
 "the permissions of the owner."
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:2152
+#: widgets/kpropertiesdialog.cpp:2153
 #, kde-format
 msgid ""
 "If this flag is set, the group of this folder will be set for all new files."
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:2156
+#: widgets/kpropertiesdialog.cpp:2157
 #, kde-format
 msgid ""
 "If this file is an executable and the flag is set, it will be executed with "
 "the permissions of the group."
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:2163
+#: widgets/kpropertiesdialog.cpp:2164
 #, kde-format
 msgid ""
 "If the Sticky flag is set on a folder, only the owner and root can delete or "
 "rename files. Otherwise everybody with write permissions can do this."
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:2168
+#: widgets/kpropertiesdialog.cpp:2169
 #, kde-format
 msgid ""
 "The Sticky flag on a file is ignored on Linux, but may be used on some "
 "systems"
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:2229
+#: widgets/kpropertiesdialog.cpp:2230
 #, kde-format
 msgid "Set UID"
 msgstr "Tchoezi l' UID"
 
-#: widgets/kpropertiesdialog.cpp:2233
+#: widgets/kpropertiesdialog.cpp:2234
 #, kde-format
 msgid "Set GID"
 msgstr "Tchoezi li GID"
 
-#: widgets/kpropertiesdialog.cpp:2237
+#: widgets/kpropertiesdialog.cpp:2238
 #, kde-format
 msgctxt "File permission"
 msgid "Sticky"
 msgstr "Eclawåve"
 
-#: widgets/kpropertiesdialog.cpp:2342
+#: widgets/kpropertiesdialog.cpp:2345
 #, kde-format
 msgid "Link"
 msgstr "Loyén"
 
-#: widgets/kpropertiesdialog.cpp:2362
+#: widgets/kpropertiesdialog.cpp:2365
 #, fuzzy, kde-format
 msgid "Varying (No Change)"
 msgstr "Nou candjmint"
 
-#: widgets/kpropertiesdialog.cpp:2473
+#: widgets/kpropertiesdialog.cpp:2476
 #, kde-format
 msgid "This file uses advanced permissions"
 msgid_plural "These files use advanced permissions."
 msgstr[0] "Ci fitchî si sieve di spepieus droets"
 msgstr[1] "Ces fitchîs si siervèt di spepieus droets."
 
-#: widgets/kpropertiesdialog.cpp:2495
+#: widgets/kpropertiesdialog.cpp:2498
 #, kde-format
 msgid "This folder uses advanced permissions."
 msgid_plural "These folders use advanced permissions."
 msgstr[0] "Ci ridant si sieve di spepieus droets."
 msgstr[1] "Ces ridants si siervèt di spepieus droets."
 
-#: widgets/kpropertiesdialog.cpp:2509
+#: widgets/kpropertiesdialog.cpp:2512
 #, kde-format
 msgid "These files use advanced permissions."
 msgstr "Ces fitchîs si siervèt di spepieus droets."
 
-#: widgets/kpropertiesdialog.cpp:2755
+#: widgets/kpropertiesdialog.cpp:2758
 #, kde-format
 msgctxt "@title:tab"
 msgid "C&hecksums"
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:2820 widgets/kpropertiesdialog.cpp:2831
-#: widgets/kpropertiesdialog.cpp:2842 widgets/kpropertiesdialog.cpp:2853
+#: widgets/kpropertiesdialog.cpp:2823 widgets/kpropertiesdialog.cpp:2834
+#: widgets/kpropertiesdialog.cpp:2845 widgets/kpropertiesdialog.cpp:2856
 #, fuzzy, kde-format
 #| msgid "Calculating..."
 msgctxt "@action:button"
 msgid "Calculating..."
 msgstr "Dji carcule..."
 
-#: widgets/kpropertiesdialog.cpp:3009
+#: widgets/kpropertiesdialog.cpp:3012
 #, kde-format
 msgid "Invalid checksum."
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:3012
+#: widgets/kpropertiesdialog.cpp:3015
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "The given input is not a valid MD5, SHA1 or SHA256 checksum."
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:3023
+#: widgets/kpropertiesdialog.cpp:3026
 #, kde-format
 msgid "Checksums match."
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:3026
+#: widgets/kpropertiesdialog.cpp:3029
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "The computed checksum and the expected checksum match."
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:3038
+#: widgets/kpropertiesdialog.cpp:3041
 #, kde-format
 msgid ""
 "<p>Checksums do not match.</p>This may be due to a faulty download. Try re-"
@@ -8706,29 +8719,29 @@ msgid ""
 "source of the file."
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:3043
+#: widgets/kpropertiesdialog.cpp:3046
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "The computed checksum and the expected checksum differ."
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:3051
+#: widgets/kpropertiesdialog.cpp:3054
 #, kde-format
 msgctxt "notify the user about a computation in the background"
 msgid "Verifying checksum..."
 msgstr ""
 
-#: widgets/kpropertiesdialog.cpp:3140
+#: widgets/kpropertiesdialog.cpp:3143
 #, kde-format
 msgid "U&RL"
 msgstr "U&RL"
 
-#: widgets/kpropertiesdialog.cpp:3147
+#: widgets/kpropertiesdialog.cpp:3150
 #, kde-format
 msgid "URL:"
 msgstr "Hårdeye"
 
-#: widgets/kpropertiesdialog.cpp:3216 widgets/kpropertiesdialog.cpp:3485
+#: widgets/kpropertiesdialog.cpp:3219 widgets/kpropertiesdialog.cpp:3499
 #, fuzzy, kde-format
 #| msgid "Only executables on local file systems are supported."
 msgid ""
@@ -8736,28 +8749,28 @@ msgid ""
 msgstr ""
 "Gn a k' les programes so les sistinmes di fitchîs locås ki sont sopoirtés"
 
-#: widgets/kpropertiesdialog.cpp:3290
+#: widgets/kpropertiesdialog.cpp:3294
 #, kde-format
 msgid "&Application"
 msgstr "Progr&ame"
 
-#: widgets/kpropertiesdialog.cpp:3423
+#: widgets/kpropertiesdialog.cpp:3437
 #, kde-format
 msgid "Add File Type for %1"
 msgstr "Radjouter sôre di fitchî po %1"
 
-#: widgets/kpropertiesdialog.cpp:3424
+#: widgets/kpropertiesdialog.cpp:3438
 #, kde-format
 msgid "Select one or more file types to add:"
 msgstr "Tchoezixhoz onk ou di pus di sôres di fitchîs a radjouter:"
 
-#: widgets/kpropertiesdialog.cpp:3570
+#: widgets/kpropertiesdialog.cpp:3584
 #, kde-format
 msgid "Only executables on local file systems are supported."
 msgstr ""
 "Gn a k' les programes so les sistinmes di fitchîs locås ki sont sopoirtés"
 
-#: widgets/kpropertiesdialog.cpp:3585
+#: widgets/kpropertiesdialog.cpp:3599
 #, kde-format
 msgid "Advanced Options for %1"
 msgstr "Sipepieusès tchuzes po %1"
@@ -9381,6 +9394,9 @@ msgstr ""
 #, kde-format
 msgid "If you do not trust this program, click Cancel"
 msgstr ""
+
+#~ msgid "Co&mmand:"
+#~ msgstr "Ki&mande:"
 
 #~ msgid "Zoom out"
 #~ msgstr "Diszoumer"
