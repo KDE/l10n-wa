@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-05 02:37+0000\n"
+"POT-Creation-Date: 2025-08-02 00:45+0000\n"
 "PO-Revision-Date: 2011-07-14 09:21+0200\n"
 "Last-Translator: Jean Cayron <jean.cayron@base.be>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -41,77 +41,110 @@ msgctxt "@title:window"
 msgid "Directory with the wallpaper to show slides from"
 msgstr ""
 
-#: imagepackage/contents/ui/config.qml:128
+#: imagepackage/contents/ui/config.qml:156
 #, fuzzy, kde-format
 #| msgid "&Positioning:"
 msgctxt "@label:listbox"
 msgid "Positioning:"
 msgstr "&Plaeçmint:"
 
-#: imagepackage/contents/ui/config.qml:131
+#: imagepackage/contents/ui/config.qml:159
 #, fuzzy, kde-format
 #| msgid "Scaled & Cropped"
 msgctxt "@item:inlistbox"
 msgid "Scaled and cropped"
 msgstr "Al schåle eyet discôpé"
 
-#: imagepackage/contents/ui/config.qml:135
+#: imagepackage/contents/ui/config.qml:163
 #, fuzzy, kde-format
 #| msgid "Scaled"
 msgctxt "@item:inlistbox"
 msgid "Scaled"
 msgstr "Al schåle"
 
-#: imagepackage/contents/ui/config.qml:139
+#: imagepackage/contents/ui/config.qml:167
 #, fuzzy, kde-format
 #| msgid "Scaled, keep proportions"
 msgctxt "@item:inlistbox"
 msgid "Scaled, keep proportions"
 msgstr "Al schåle, wårder li rapoirt lådjeur/hôteur"
 
-#: imagepackage/contents/ui/config.qml:143
+#: imagepackage/contents/ui/config.qml:171
 #, fuzzy, kde-format
 #| msgid "Centered"
 msgctxt "@item:inlistbox"
 msgid "Centered"
 msgstr "Å mitan"
 
-#: imagepackage/contents/ui/config.qml:147
+#: imagepackage/contents/ui/config.qml:175
 #, fuzzy, kde-format
 #| msgid "Tiled"
 msgctxt "@item:inlistbox"
 msgid "Tiled"
 msgstr "A schayes"
 
-#: imagepackage/contents/ui/config.qml:175
+#: imagepackage/contents/ui/config.qml:203
+#, fuzzy, kde-format
+#| msgid "Get New Wallpapers..."
+msgctxt ""
+"@label:listbox part of a sentence: 'Switch dynamic wallpapers [based on]'"
+msgid "Switch dynamic wallpapers:"
+msgstr "Prinde des ôtès tapisreyes..."
+
+#: imagepackage/contents/ui/config.qml:211
+#, kde-format
+msgctxt "@item:inlistbox part of a sentence: 'Switch dynamic wallpapers'"
+msgid "Based on whether the color scheme is dark or light"
+msgstr ""
+
+#: imagepackage/contents/ui/config.qml:213
+#, kde-format
+msgctxt "@item:inlistbox part of a sentence: 'Switch dynamic wallpapers'"
+msgid "Based on the day-night cycle"
+msgstr ""
+
+#: imagepackage/contents/ui/config.qml:217
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Always use light variant"
+msgstr ""
+
+#: imagepackage/contents/ui/config.qml:221
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Always use dark variant"
+msgstr ""
+
+#: imagepackage/contents/ui/config.qml:231
+#, kde-format
+msgctxt "@action:button Configure day-night cycle times"
+msgid "Configure…"
+msgstr ""
+
+#: imagepackage/contents/ui/config.qml:242
 #, kde-format
 msgid "Background:"
 msgstr ""
 
-#: imagepackage/contents/ui/config.qml:176
+#: imagepackage/contents/ui/config.qml:243
 #, kde-format
 msgid "Blur"
 msgstr ""
 
-#: imagepackage/contents/ui/config.qml:185
+#: imagepackage/contents/ui/config.qml:252
 #, kde-format
 msgid "Solid color"
 msgstr ""
 
-#: imagepackage/contents/ui/config.qml:196
+#: imagepackage/contents/ui/config.qml:263
 #, kde-format
 msgid "Select Background Color"
 msgstr ""
 
-#: imagepackage/contents/ui/main.qml:35
+#: imagepackage/contents/ui/main.qml:37
 #, kde-format
 msgid "Open Wallpaper Image"
 msgstr "Drovi l' imådje del tapisreye"
-
-#: imagepackage/contents/ui/main.qml:41
-#, kde-format
-msgid "Next Wallpaper Image"
-msgstr "Imådje di tapisreye shuvante"
 
 #: imagepackage/contents/ui/ThumbnailsComponent.qml:60
 #, fuzzy, kde-format
@@ -146,18 +179,18 @@ msgctxt "@action:button"
 msgid "Get New Wallpaper Images…"
 msgstr "Imådje di tapisreye shuvante"
 
-#: imagepackage/contents/ui/WallpaperDelegate.qml:32
+#: imagepackage/contents/ui/WallpaperDelegate.qml:34
 #, kde-format
 msgid "Open Containing Folder"
 msgstr ""
 
-#: imagepackage/contents/ui/WallpaperDelegate.qml:38
+#: imagepackage/contents/ui/WallpaperDelegate.qml:40
 #, fuzzy, kde-format
 #| msgid "&System wallpapers:"
 msgid "Restore wallpaper"
 msgstr "Tapisreyes do &sistinme :"
 
-#: imagepackage/contents/ui/WallpaperDelegate.qml:43
+#: imagepackage/contents/ui/WallpaperDelegate.qml:45
 #, fuzzy, kde-format
 #| msgid "&System wallpapers:"
 msgid "Remove Wallpaper"
@@ -217,8 +250,13 @@ msgid ""
 "it as a wallpaper: %1"
 msgstr ""
 
+#: plugin/imagebackend.cpp:38
+#, kde-format
+msgid "Next Wallpaper Image"
+msgstr "Imådje di tapisreye shuvante"
+
 #. i18n people, this isn't a "word puzzle". there is a specific string format for QFileDialog::setNameFilters
-#: plugin/imagebackend.cpp:340
+#: plugin/imagebackend.cpp:349
 #, kde-format
 msgid "Media Files"
 msgstr ""
